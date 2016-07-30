@@ -1,0 +1,502 @@
+﻿l_english:
+ ####################################
+ #	Pop factions
+ ####################################
+ # Demand TITLES are run straight from a pop faction with no
+ # assembled event scope, [Owner.GetName] to get country name.
+ # Tooltips, DESCS and events use the usual [Root.Owner.GetName]
+
+ FACTION_COUNTRY_SEPARATIST:0 "[parameter:owner.GetSpeciesAdj] Separatists"
+
+ # Generic Actions
+ FACTION_ACTION_SUPPRESS_FOLLOWERS:0 "Suppress Followers"
+ FACTION_ACTION_SUPPRESS_FOLLOWERS_DESC:0 "Making life difficult for sympathizers can be an effective deterrent."
+ FACTION_ACTION_SUPPRESS_FOLLOWERS_VALID:0 ""
+ FACTION_ACTION_ASSASSINATE_LEADER:0 "Assassinate Leader"
+ FACTION_ACTION_ASSASSINATE_LEADER_DESC:0 "Rendering the Faction leaderless is sure to quiet it, for a time."
+ FACTION_ACTION_ASSASSINATE_LEADER_INVALID:1 "No assassination attempts made against Faction leaders in the past three months."
+ FACTION_ACTION_BRIBE_LEADERS:0 "Bribe Leaders"
+ FACTION_ACTION_BRIBE_LEADERS_DESC:0 "Mutual abrading of spinal columns."
+ FACTION_ACTION_FAVOR:0 "Favor"
+ FACTION_ACTION_FAVOR_DESC:0 "Bestow favor upon those loyal to the regime."
+ FACTION_ACTION_FAVOR_TOOLTIP:0 "Adds the §YFavored§! modifier to all Pops of the §Y[Root.GetName]§!, slightly increasing Happiness."
+ FACTION_ACTION_FAVOR_INVALID:0 "Our favor may only be bestowed once a year, lest it become an ineffective tool."
+ FACTION_ACTION_TYRANNIZE:0 "Tyrannize"
+ FACTION_ACTION_TYRANNIZE_DESC:0 "Willfully lower popular support for the regime."
+ FACTION_ACTION_TYRANNIZE_TOOLTIP:0 "Adds the §YTyrannized§! modifier to all Pops of the §Y[Root.GetName]§!, severely decreasing Happiness.\n"
+ FACTION_ACTION_TYRANNIZE_INVALID:0 "We may only tyrannize our subject once every six months, lest it become an ineffective tool."
+ ACCEPT_DEMANDS_NO_ACTIVE_DEMANDS:0 "§RThis Faction has no Demands§!"
+
+ # Generic Support Effects
+ SUPPORT_EFFECT_RADICALIZATION:0 "Radicalization Risk"
+ SUPPORT_EFFECT_RADICALIZATION_DESC:0 "A surge in radical rhetoric increases the faction's Militancy."
+ SUPPORT_EFFECT_REVOLT:0 "Rebellion Risk"
+ SUPPORT_EFFECT_REVOLT_DESC:0 "The faction stages an armed uprising on a colony."
+ SUPPORT_EFFECT_RIOT:0 "Riot Risk"
+ SUPPORT_EFFECT_RIOT_DESC:1 "The faction riots, ruining property on a colony."
+
+ # No Demands
+ POP_FACTION_NO_DEMANDS:0 "No demands"
+ POP_FACTION_NO_DEMANDS_DESC:0 "The $FACTION$ are devoted to the $COUNTRY$ and will never place demands."
+ POP_FACTION_NO_CURRENT_DEMANDS:0 "No current demands"
+ POP_FACTION_NO_CURRENT_DEMANDS_DESC:0 "The $FACTION$ have no demands at this time."
+
+# No effects
+ POP_FACTION_NO_EFFECTS:0 "No effects"
+ POP_FACTION_NO_EFFECTS_DESC:0 "The $FACTION$ will never have any effects."
+ POP_FACTION_NO_CURRENT_EFFECTS:0 "No current effects"
+ POP_FACTION_NO_CURRENT_EFFECTS_DESC:0 "The $FACTION$ have no effects at this time."
+
+ ### LOYALISTS
+ pft_loyalist:1 "Loyalists"
+ pft_loyalist_desc:1 "The Loyalist Faction contains your most satisfied population. They want for nothing, and are satisfied with the status quo."
+ 
+ ### SEPARATIST
+
+ # Separatist Demands
+ POP_FACTION_SEPARATIST_DEMAND_TITLE_1:0 "§H[parameter:planet.GetName]ian§! autonomy"
+ POP_FACTION_SEPARATIST_DEMAND_DESC_1:0 "Establish a new Sector with §H[parameter:planet.GetName]§! as its capital."
+ POP_FACTION_SEPARATIST_DEMAND_TITLE_2:0 "§H[parameter:planet.GetName]ian§! independence"
+ POP_FACTION_SEPARATIST_DEMAND_DESC_2:0 "Release §H[parameter:planet.GetName]§! as the capital of an independent Empire"
+ 
+ ### PLANET SEPARATISTS
+ POP_FACTION_PLANET_SEPARATIST_DEMAND_TITLE:1 "Independent [parameter:Planet.GetName]"
+ POP_FACTION_PLANET_SEPARATIST_DEMAND_DESC:0 "The Separatists want an independent §Y[parameter:Planet.GetName]§!."
+ POP_FACTION_PLANET_SEPARATIST_STRIKES_TITLE:0 "Strike"
+ POP_FACTION_PLANET_SEPARATIST_STRIKES_DESC:0 "Planet output reduced due to a lack of manpower."
+ POP_FACTION_PLANET_SEPARATIST_REBELLION_TITLE:0 "Rebellion"
+ POP_FACTION_PLANET_SEPARATIST_OCCUPIED:0 "Planet is occupied"
+ POP_FACTION_PLANET_SEPARATIST_COMBAT:0 "Ground Combat"
+ POP_FACTION_PLANET_SEPARATIST_LEADER_IS_RULER:0 "Faction leader is Ruler"
+ POP_FACTION_PLANET_SEPARATIST_REBELLION_DESC:1 "Every member Pop spawns a §RDefense Army§! and attempts to take control of the planet."
+ POP_FACTION_PLANET_SEPARATIST_GATHER_SUPPORT:0 "Consolidate Support"
+ POP_FACTION_PLANET_SEPARATIST_GATHER_SUPPORT_DESC:0 "The Separatists build Support, either by changing the Ethos or reducing the Happiness of other Pops."
+ POP_FACTION_PLANET_SEPARATIST_REORGANIZING:0 "Reorganizing"
+ POP_FACTION_PLANET_SEPARATIST_RECENTLY_FULL_SUPPORT:1 "All pops on planet in faction"
+ POP_FACTION_PLANET_SEPARATIST_IS_NOT_OCCUPIED:0 "Planet is not occupied"
+ POP_FACTION_PLANET_SEPARATIST_NO_GROUND_COMBAT:0 "Planet doesn't have ground combat"
+ POP_FACTION_PLANET_SEPARATIST_GRANT_INDEPENDENCE_TITLE:0 "Grant Independence"
+ POP_FACTION_PLANET_SEPARATIST_GRANT_INDEPENDENCE_DESC:0 "Grant the colony on §Y[parameter:Planet.GetName]§! independence as a Vassal Empire."
+ POP_FACTION_PLANET_SEPARATIST_SABOTAGE_TITLE:0 "Riots"
+ POP_FACTION_PLANET_SEPARATIST_RECENT_SABOTAGE:0 "Recent Riots"
+ POP_FACTION_PLANET_SEPARATIST_SABOTAGE_DESC:0 "Riots on the planet §Rruin§! a Building."
+ POP_FACTION_PLANET_SEPARATIST_NOTHING_TO_RUIN:0 "No Unruined Buildings"
+ 
+ ### Sector separatists
+ pft_sector_separatists:0 "Sector Separatists"
+ pft_sector_separatists_desc:0 "Sector Separatists may appear on worlds in sectors, seeking to free their stellar neighborhood from imperial rule. Given enough popular Support, they may even take up arms.\n\n§HSector Separatists will never appear in our core sector.§!"
+ POP_FACTION_SECTOR_SEPARATIST_DEMAND_TITLE:1 "Independent [parameter:sector.GetName] Sector"
+ POP_FACTION_SECTOR_SEPARATIST_DEMAND_DESC:0 "The sector separatists want an independent §Y[parameter:sector.GetName] Sector§!."
+ POP_FACTION_SECTOR_SEPARATIST_GRANT_INDEPENDENCE_TITLE:0 "Grant Independence"
+ POP_FACTION_SECTOR_SEPARATIST_GRANT_INDEPENDENCE_DESC:0 "Grant independence to the colonies of the §Y[parameter:sector.GetName] Sector§!"
+ POP_FACTION_SECTOR_SEPARATIST_IS_NOT_OCCUPIED:0 "No Sector Planet is occupied"
+ POP_FACTION_SECTOR_SEPARATIST_NO_GROUND_COMBAT:0 "No Sector Planet has ground combat"
+ 
+ 
+ 
+ ### NATIONALISTS
+
+ pft_nationalist:0 "Repatriation Faction"
+ pft_nationalist_desc:0 "Pops in Repatriation Factions seek to be released from our Empire as independent nations, so they can be re-integrated by the Empire they hail from. Other Pops may also join them, if they find foreign rule more enticing than ours."
+
+ POP_FACTION_NATIONALIST_DEMAND_TITLE:0 "Return to the §Y[parameter:country.GetName]§!"
+ POP_FACTION_NATIONALIST_DEMAND_DESC:0 "Return all planets with pops belong to this faction to the §H[parameter:country.GetName]§!."
+ POP_FACTION_NATIONALIST_SABOTAGE_TITLE:0 "Sabotage"
+ POP_FACTION_NATIONALIST_SABOTAGE_DESC:0 "Members of this Faction §Rruin§! a Building."
+ POP_FACTION_NATIONALIST_CORRUPTION_TITLE:0 "Corruption"
+ POP_FACTION_NATIONALIST_CORRUPTION_DESC:1 "Output reduced on all planets with Pops belonging to this Faction."
+ POP_FACTION_NATIONALIST_REBELLION_TITLE:0 "Rebellion"
+ POP_FACTION_NATIONALIST_REBELLION_DESC:1 "$POP_FACTION_PLANET_SEPARATIST_REBELLION_DESC$"
+ POP_FACTION_NATIONALIST_LEADER_IS_RULER:1 "Faction leader is Ruler"
+ POP_FACTION_NATIONALIST_RECENT_SABOTAGE:0 "Recent Sabotage"
+ POP_FACTION_NATIONALIST_MEMBERS_OCCUPIED:0 "Occupations"
+ POP_FACTION_NATIONALIST_MEMBERS_GROUND_COMBAT:0 "Ground Combat"
+ POP_FACTION_NATIONALIST_INTEGRATION_CAMPAIGN_1_TITLE:0 "Integration Campaign 1"
+ POP_FACTION_NATIONALIST_INTEGRATION_CAMPAIGN_1_DESC:0 "Reduce the frustrations of the nationalists by helping them integrate into their new society"
+ POP_FACTION_NATIONALIST_INTEGRATION_CAMPAIGN_2_TITLE:0 "Integration Campaign 2"
+ POP_FACTION_NATIONALIST_INTEGRATION_CAMPAIGN_2_DESC:0 "Reduce the frustrations of the nationalists by helping them integrate into their new society"
+ POP_FACTION_NATIONALIST_INTEGRATION_CAMPAIGN_3_TITLE:0 "Integration Campaign 3"
+ POP_FACTION_NATIONALIST_INTEGRATION_CAMPAIGN_3_DESC:0 "Reduce the frustrations of the nationalists by helping them integrate into their new society"
+ POP_FACTION_NATIONALIST_RELEASE_PLANETS_TITLE:0 "Return Planets"
+ POP_FACTION_NATIONALIST_RELEASE_PLANETS_DESC:0 "Return all planets with pops belong to this faction back to the §Y[parameter:country.GetName]§!"
+ POP_FACTION_NATIONALIST_RELEASE_PLANETS_OCCUPIED:0 "None of the planets is occupied"
+ POP_FACTION_NATIONALIST_RELEASE_PLANETS_COMBAT:0 "None of the planets has ground combat"
+
+ ### SLAVES
+
+ slave_attraction_title:0 "§R---§!"
+ docile_slaves_attraction_desc:0 "Enslaved Pops will always belong to a Slave Faction, excepting non-sentient robotic Pops. No other Pops will join.\n\n§HThis value shows enslaved Pops' attraction to the Docile Slaves.§!"
+
+ malcontent_slaves_attraction_desc:0 "Enslaved Pops will always belong to a Slave Faction, excepting non-sentient robotic Pops. No other Pops will join.\n\n§HThis value shows enslaved Pops' attraction to the Malcontent Slaves.§!"
+
+ purged_attraction_title:1 "§R---§!"
+ purged_attraction_desc:1 "Pops being Purged will always belong to the Anti-Purge Faction, excepting robotic Pops.\n\nNo other Pops will join."
+
+ # Slave Demands
+ pft_slave:1 "Slave Faction"
+ pft_slave_desc:1 "The Slave Faction is made up of our Empire's enslaved Pops. Their primary demand is to be emancipated.\n\n§HAll Enslaved Pops automatically join this Faction.§!"
+
+ pft_docile_slaves:0 "Docile Slaves Faction"
+ pft_docile_slaves_desc:0 "The Docile Slaves Faction is made up of part or all of our Empire's enslaved Pops. They are generally obedient and only wish for improved working conditions.\n\n§HAll slaves belong to either the Docile Slaves or Malcontent Slaves.§!"
+
+ pft_malcontent_slaves:0 "Malcontent Slaves Faction"
+ pft_malcontent_slaves_desc:0 "The Malcontent Slaves Faction is made up of part or all of our Empire's enslaved Pops. They are rebellious and seek emancipation.\n\n§HAll slaves belong to either the Docile Slaves or Malcontent Slaves.§!"
+
+ pft_emancipation:0 "$POP_FACTION_SLAVE_DEMAND_TITLE_1$"
+ pft_emancipation_desc:1 "This faction seeks an end to slavery."
+
+ POP_FACTION_DOCILE_SLAVES_DEMAND_TITLE_1:0 "Regulated Slavery"
+ POP_FACTION_DOCILE_SLAVES_DEMAND_DESC_1:0 "The Pops in this faction desire a slightly more comfortable life of servitude under the §HRegulated Slavery§! policy."
+
+ POP_FACTION_MALCONTENT_SLAVES_DEMAND_TITLE_1:0 "$POP_FACTION_SLAVE_DEMAND_TITLE_1$"
+ POP_FACTION_MALCONTENT_SLAVES_DEMAND_DESC_1:0 "$POP_FACTION_SLAVE_DEMAND_DESC_1$"
+
+ POP_FACTION_SLAVE_DEMAND_TITLE_1:1 "Emancipation"
+ POP_FACTION_SLAVE_DEMAND_DESC_1:1 "The Pops in this faction have only a single demand; to be free."
+ FACTION_ACTION_SLAVE_EMANCIPATE_ALL:0 "Emancipate Slaves"
+ FACTION_ACTION_SLAVE_EMANCIPATE_ALL_DESC:1 "Emancipate every enslaved Pop."
+
+ # Slave Actions
+
+ FACTION_ACTION_DOCILE_SLAVES_SPECIAL_TREATMENT:0 "Special Treatment"
+ FACTION_ACTION_DOCILE_SLAVES_SPECIAL_TREATMENT_DESC:0 "Covertly ease the burden of key figures among the slaves for a time to lessen their zeal."
+ recent_special_treatment_tooltip:0 "We must restrict our use of this tool to once every few months, so as not to dull its edge."
+
+ FACTION_ACTION_DOCILE_SLAVES_SCARE_TACTICS:0 "Scare Tactics"
+ FACTION_ACTION_DOCILE_SLAVES_SCARE_TACTICS_DESC:0 "Targeted propaganda campaigns and intimidation tactics remind the slaves that their situation could be so much worse."
+
+ FACTION_ACTION_MALCONTENT_SLAVES_HARSH_TREATMENT:0 "$FACTION_ACTION_SLAVE_HARSH_TREATMENT$"
+ FACTION_ACTION_MALCONTENT_SLAVES_HARSH_TREATMENT_DESC:0 "Worsen living and working conditions for troublesome slaves to break their spirit."
+
+ FACTION_ACTION_MALCONTENT_SLAVES_MAKE_AN_EXAMPLE:0 "Make an Example"
+ FACTION_ACTION_MALCONTENT_SLAVES_MAKE_AN_EXAMPLE_DESC:0 "Make a harsh example of a particularly troublesome Pop, instantly Purging it."
+ FACTION_ACTION_MALCONTENT_SLAVES_MAKE_AN_EXAMPLE_TOOLTIP:0 "There must be at least §R4§! Pops in the Malcontent Slaves faction."
+ FACTION_ACTION_MALCONTENT_SLAVES_INTERSTELLAR_RAILROAD_TOOLTIP_2:0 "There are §R6§! Pops in the faction."
+ FACTION_ACTION_MALCONTENT_SLAVES_INTERSTELLAR_RAILROAD_TOOLTIP_3:0 "There are §R7§! Pops in the faction."
+ FACTION_ACTION_MALCONTENT_SLAVES_INTERSTELLAR_RAILROAD_TOOLTIP_4:0 "There are more than §R8§! Pops in the faction."
+
+ FACTION_ACTION_SLAVE_HARSH_TREATMENT:0 "Harsh Treatment"
+ FACTION_ACTION_SLAVE_HARSH_TREATMENT_DESC:0 "Put the thralls in their place."
+ FACTION_ACTION_SLAVE_FORCE_FEEDING:0 "Force Feeding"
+ FACTION_ACTION_SLAVE_FORCE_FEEDING_DESC:0 "Forcibly provide the necessary nutrients to any hunger strikers."
+
+ docile_slaves_demand_fulfilled:0 "With their demands fulfilled, this Faction will no longer have any Effects and no Actions be taken against them."
+
+ # Slave Support Effects
+
+ POP_FACTION_DOCILE_SLAVES_UNREST:0 "Unrest"
+ POP_FACTION_DOCILE_SLAVES_UNREST_DESC:0 "Dissatisfied voices within the slaves' ranks reduce productivity and happiness on a slave-worked planet."
+ POP_FACTION_DOCILE_SLAVES_RECENT_UNREST:0 "The embers of turmoil past still smoulder."
+
+ POP_FACTION_DOCILE_SLAVES_ROVING_GANGS:0 "Violent Mobs"
+ POP_FACTION_DOCILE_SLAVES_ROVING_GANGS_DESC:0 "Disaffected slaves abandon their work, frequently getting into violent encounters with other Pops."
+ POP_FACTION_DOCILE_SLAVES_RECENT_ROVING_GANGS:0 "The discontented slaves have yet to regroup."
+
+ POP_FACTION_DOCILE_SLAVES_RADICALIZATION:0 "Radicalization"
+ POP_FACTION_DOCILE_SLAVES_RADICALIZATION_DESC:0 "Several slaves radicalize, joining a dangerous Malcontent Slaves faction."
+ POP_FACTION_DOCILE_SLAVES_RECENT_RADICALIZATION:0 "Dissatisfaction has yet to reach critical levels since the last departure of radicalized slaves from this faction."
+
+ POP_FACTION_MALCONTENT_SLAVES_INTERSTELLAR_RAILROAD:0 "Interstellar Railroad"
+ POP_FACTION_MALCONTENT_SLAVES_INTERSTELLAR_RAILROAD_DESC:0 "Slaves organize to smuggle several enslaved Pops out of our Empire."
+ POP_FACTION_MALCONTENT_SLAVES_RECENT_INTERSTELLAR_RAILROAD:0 "Faction operatives are laying low following the last succesful slave-smuggling operation."
+
+ POP_FACTION_MALCONTENT_SLAVES_RIOTS:0 "Slave Riots"
+ POP_FACTION_MALCONTENT_SLAVES_RIOTS_DESC:0 "Rebellious slaves riot, causing widespread destruction."
+ POP_FACTION_MALCONTENT_SLAVES_RECENT_RIOTS:0 "The malcontent slaves have yet to reorganize after the last riot outbreak."
+
+ POP_FACTION_MALCONTENT_SLAVES_REVOLT:0 "Slave Revolt"
+ POP_FACTION_MALCONTENT_SLAVES_REVOLT_DESC:0 "The Malcontent Slaves organize an armed rebellion, attempting to seize any colonies they are working on."
+ POP_FACTION_MALCONTENT_SLAVES_RECENT_REVOLT:0 "The malcontent slaves have yet to consolidate sufficient strength after the last uprising."
+
+ SUPPORT_EFFECT_SLAVE_UPRISING:0 "Slave Uprising Risk"
+ SUPPORT_EFFECT_SLAVE_UPRISING_DESC:0 "The slaves take up arms and form a rebel militia."
+ SUPPORT_EFFECT_HUNGER_STRIKE:0 "Hunger Strike Risk"
+ SUPPORT_EFFECT_HUNGER_STRIKE_DESC:0 "The slaves starve themselves with deadly intent, greatly diminishing their productivity."
+
+ ### EMANCIPATION MOVEMENT
+
+ # Emancipation Movement Demands
+ POP_FACTION_EMANCIPATION_DEMAND_TITLE_1:0 "Six-hour slave workday"
+ POP_FACTION_EMANCIPATION_DEMAND_TITLE_2:0 "Free all slaves"
+ POP_FACTION_EMANCIPATION_DEMAND_TITLE_3:0 "Ban slavery"
+ POP_FACTION_EMANCIPATION_DEMAND_DESC_1:0 "Lengthen mandated rest periods."
+ POP_FACTION_EMANCIPATION_DEMAND_DESC_2:0 "Release all current slaves in the [Root.Owner.GetName] from bondage."
+ POP_FACTION_EMANCIPATION_DEMAND_DESC_3:0 "Disable the §YAllow Slavery§! policy."
+
+ # Emancipation Movement Actions
+
+ # Emancipation Movement Support Effects
+
+ POP_FACTION_EMANCIPATION_STOKING_THE_FIRE:0 "Stoking the Fire"
+ POP_FACTION_EMANCIPATION_STOKING_THE_FIRE_DESC:0 "Faction agents work to radicalize and arm enslaved pops."
+ POP_FACTION_EMANCIPATION_RECENT_STOKING_THE_FIRE:0 "The movement is still laying low after a successful radicalization effort."
+ SUPPORT_EFFECT_EMANCIPATION_RADICALIZE_SLAVES:0 "Radicalize Slaves"
+ SUPPORT_EFFECT_EMANCIPATION_RADICALIZE_SLAVES_DESC:0 "A clandestine but coordinated attempt to instigate a slave uprising."
+ SUPPORT_EFFECT_EMANCIPATION_SMUGGLE_OFF_WORLD:0 "Interstellar Railroad"
+ SUPPORT_EFFECT_EMANCIPATION_SMUGGLE_OFF_WORLD_DESC:0 "An enslaved Pop is smuggled off-world, never to be seen again."
+
+ ### PEACE MOVEMENT
+
+ # Demands
+ POP_FACTION_PEACE_DEMAND_TITLE_1:0 "End the war"
+ POP_FACTION_PEACE_DEMAND_DESC_1:0 "Sever any diplomatic ties necessitating participation in the conflict with [parameter:enemy.GetName] and declare white peace."
+
+ # Actions
+
+ # Support Effects
+ SUPPORT_EFFECT_PEACE_STRIKE:0 "Strike"
+ SUPPORT_EFFECT_PEACE_STRIKE_DESC:0 "Peace protesters may refuse to work, resulting in a temporary loss of overall productivity."
+ SUPPORT_EFFECT_PEACE_SABOTAGE:0 "Sabotage"
+ SUPPORT_EFFECT_PEACE_SABOTAGE_DESC:0 "Listen all y'all it's a sabotage."
+
+ ### PURGED
+
+ pft_purged:0 "Anti-Purge Faction"
+ pft_purged_desc:1 "An Anti-Purge Faction is made up of all the Pops our Empire is currently Purging as well as those sympathetic to their plight. Their primary demand is to be allowed to live.\n\n§HAll Pops being Purged automatically join this Faction.§!"
+
+ # Demands
+ POP_FACTION_PURGED_DEMAND_TITLE_1:0 "Cease all Purges"
+ POP_FACTION_PURGED_DEMAND_DESC_1:0 "End all systematic extermination campaigns against Pops in the [Root.Owner.GetName]."
+
+ # Actions
+ FACTION_ACTION_SUPPRESS_MEDIA:0 "Suppress Media"
+ FACTION_ACTION_SUPPRESS_MEDIA_DESC:0 "Reduce a faction's popular support by reducing their footprint in the public consciousness."
+
+ # Support Effects
+
+ SUPPORT_EFFECT_PURGED_DEATH_STRUGGLE:0 "Death Struggle"
+ SUPPORT_EFFECT_PURGED_DEATH_STRUGGLE_DESC:0 "Those about to be purged and their supporters may commit random acts of destruction."
+ SUPPORT_EFFECT_PURGED_DEATH_REBELLION:0 "Purge Revolt"
+ SUPPORT_EFFECT_PURGED_DEATH_REBELLION_DESC:0 "Those about to be purged may not go silently into the night, instead forming a rebel militia."
+
+ ### LIBERATE
+
+ # Demands
+ POP_FACTION_LIBERATE_DEMAND_TITLE_1:0 "Liberate §H[parameter:planet.GetName]§!"
+ POP_FACTION_LIBERATE_DEMAND_DESC_1:0 "Declare war on the [parameter.enemy.GetName] in order to reclaim [parameter:planet.GetName]."
+
+ # Support Effects
+ SUPPORT_EFFECT_LIBERATE_INSULT_HIJACK:0 "Comms Hijack"
+ SUPPORT_EFFECT_LIBERATE_INSULT_HIJACK_DESC:0 "The [Root.GetName] poisons our diplomatic relations with §H[parameter:enemy.GetName]§!."
+ SUPPORT_EFFECT_LIBERATE_HAWKISH_REBELS:0 "Hawkish Rebellion Risk"
+ SUPPORT_EFFECT_LIBERATE_HAWKISH_REBELS_DESC:0 "The [Root.GetName] rises up against the milquetoast [Root.Owner.GetSpeciesAdj] government."
+
+ ### XENOSLAVER
+
+ # Demands
+ POP_FACTION_XENOSLAVER_DEMAND_TITLE_1:0 "Enslave Xenos"
+ POP_FACTION_XENOSLAVER_DEMAND_DESC_1:0 "Enslave all §H[parameter:xeno.GetSpeciesAdj]§! §YPops§!."
+
+ # Actions
+
+ # Support Effects
+ SUPPORT_EFFECT_XENOSLAVER_TAKE_SLAVES:0 "Extralegal Enslavement"
+ SUPPORT_EFFECT_XENOSLAVER_TAKE_SLAVES_DESC:0 "Militant faction members may illegally force Pops into their service."
+ SUPPORT_EFFECT_XENOSLAVER_SLAVER_CONFEDERACY:0 "Confederacy of Slavers"
+ SUPPORT_EFFECT_XENOSLAVER_SLAVER_CONFEDERACY_DESC:0 "The faction mobilizes to stage an armed uprising."
+
+ ### CRUSADER
+
+ # Demands
+ POP_FACTION_CRUSADE_DEMAND_TITLE_1:0 "Crusade"
+ POP_FACTION_CRUSADE_DEMAND_DESC_1:0 "Start a holy war against the heathen [parameter:heathens.GetName]."
+
+ # Actions
+
+ # Support Effects
+ SUPPORT_EFFECT_CRUSADE_INSULT:0 "Pointed Sacrilege"
+ SUPPORT_EFFECT_CRUSADE_INSULT_DESC:0 "The [Root.GetName] denounce the [parameter:heathens.GetName], worsening diplomatic relations."
+ SUPPORT_EFFECT_CRUSADE_INSURRECTION:0 "Cult Insurrection"
+ SUPPORT_EFFECT_CRUSADE_INSURRECTION_DESC:0 "The [Root.GetName] stage a coup on a colony."
+
+ ### CONQUEROR
+
+ # Support Effects
+ SUPPORT_EFFECT_CONQUER_INSULT:0 "Insulting Communiqué"
+ SUPPORT_EFFECT_CONQUER_INSULT_DESC:0 "The [Root.GetName] send an insulting communiqué, increasing tension between us and the §H[parameter:foreign_power.GetName]§!."
+
+ ### PRETENDER
+
+ pft_pretender:0 "Pretender Faction"
+ pft_pretender_desc:0 "Supporters of the current Pretender are drawn to this Faction, and they work to instate them as ruler."
+
+ POP_FACTION_PRETENDER_ATTRITION_TITLE:0 "Attrition"
+ POP_FACTION_PRETENDER_ATTRITION_DESC:0 "A Pop loses interest in the cause, §Gdeserting the Faction§!."
+ POP_FACTION_PRETENDER_DEMAND_TITLE:0 "Surrender the throne to §Y[parameter:pretender.GetName]§!"
+ POP_FACTION_PRETENDER_DEMAND_DESC:0 "[Root.Owner.GetRulerTitle] §Y[Root.Owner.GetRulerName]§! will be exiled and §Y[parameter:pretender.GetName]§! will assume the throne."
+ POP_FACTION_PRETENDER_INSTALL_TITLE:0 "Install Pretender"
+ POP_FACTION_PRETENDER_INSTALL_DESC:0 "Install §Y[parameter:pretender.GetName]§! as the new Ruler"
+ 
+ ########################################
+ # FACTION EVENTS
+ ########################################
+
+ ### Loyalists
+ faction.4.title:0 "Loyalist Demands"
+ faction.4.desc:0 "The Loyalists are devoted to [Root.Owner.GetRulerTitle] [Root.Owner.GetRulerName] of the [Root.Owner.GetName], and have no demands."
+
+ ### Slaves
+ faction.6.title:0 "Hunger Strike!"
+ faction.6.desc:0 "The slaves of the [Root.Owner.GetName] have organized to sabotage our means of production - their bodies - through willing starvation. The [Root.GetName] faction members are effectively §YPurging§! themselves from the [Root.Owner.GetName].\n\nIf this situation goes unchecked for long, we risk losing a significant portion of our enslaved pops. We can either let the wretches die, or find some other way of dealing with this rogue faction."
+
+ faction.7.title:0 "Slave Uprising!"
+ faction.7.desc:0 "The slaves of [slave_planet.GetName] have risen up against their masters, forming an illegal rebel coalition intending to break the [Root.Owner.GetName]'s lawful hold on them!"
+
+ faction.8.title:0 "Force Feeding"
+ faction.8.desc:0 "The body of a slave is not theirs to damage or withhold.\n\nTheir careless purge is ended, and all affected who still live have been dosed with appropriate amounts of nutrients."
+
+ faction.10.title:0 "Slave Unrest!"
+ faction.10.desc:0 "Widespread unrest among the slaves on [unrest_planet.GetName]negatively affects their output."
+ faction.10.desc.colle:0 "A queasiness spreads within the enslaved aspects of the [Root.Owner.GetName], centered on the [unrest_planet.GetPlanetMoon] of [unrest_planet.GetName]."
+ faction.10.a.tooltip:0 "§HEnslaved Pops§! on §H[unrest_planet.GetName]§! gain the §RSlave Unrest§! modifier for §Y4 years§!."
+
+ faction.15.title:0 "Slave Violence!"
+ faction.15.desc:0 "Roving mobs - comprised of derelict slaves - have gotten into violent confrontations with other members of the populace on [roving_gangs_planet.GetName], resulting in the untimely death of a Pop.\n\nIt remains to be seen how the associates of the deceased will react to this incident."
+ faction.15.a.tooltip:0 "[roving_gangs_planet]:\n§Y1 Pop§! §Rdies§!."
+
+ faction.50.title:0 "Interstellar Railroad!"
+ faction.50.desc:0 "It appears that some of the more radical elements in our slave population have banded together to, essentially, remove slaves from [Root.Owner.GetAdj] territories.\n\nWe do not know how a crime on this scale was committed, but we are fairly certain that the slaves are now free, somewhere outside of [Root.Owner.GetAdj] space."
+ faction.50.desc.colle:0 "A misguided faction has seen fit to wound the [Root.Owner.GetName] by removing several slaves from their duties and smuggling them out of [Root.Owner.GetAdj] borders.\n\nWe will heal in time, and we hope that the lost eventually find their way back to the [Root.Owner.GetName] and their purpose in life."
+ faction.50.a:0 "Unfortunate."
+ faction.50.1.tooltip:0 "[Root.Owner.GetName]:\nEnslaved Pops: §R-1§!"
+ faction.50.3.tooltip:0 "[Root.Owner.GetName]:\nEnslaved Pops: §R-3§!"
+ faction.50.4.tooltip:0 "[Root.Owner.GetName]:\nEnslaved Pops: §R-4§!"
+ faction.50.5.tooltip:0 "[Root.Owner.GetName]:\nEnslaved Pops: §R-5§!"
+
+ faction.55.title:0 "Malcontent Slaves Riot!"
+ faction.55.desc.colle:0 "Some elements in the [Root.GetName] faction have been gripped by a desire to hurt the [Root.Owner.GetName] by destroying a productive facility on [riots_planet.GetName]. We can only assume that whatever impairment it is that prevents them from accepting their place in the [Root.Owner.GetAdj] order also drives them to this roundabout form of self-harm."
+ faction.55.desc:0 "Rioting slaves have ruined a building on [riots_planet.GetName] - it must be repaired before production can resume."
+
+ faction.60.title:0 "Malcontent Slaves Revolt!"
+ faction.60.desc:0 "The more radical elements among our slave populace have - not unexpectedly, some would say - taken up arms against our lawful rule.\n\nReports indicate that the unrest started on [revolt_planet.GetName], and may already have spread."
+ faction.60.desc.colle:0 "Dissent among those assigned menial tasks for the glory and betterment of the [Root.Owner.GetName] has reached a catastrophic boiling point.\n\nTheir inability to grasp the bigger picture and their place within it has driven them to open rebellion on the [revolt_planet.GetPlanetMoon] [revolt_planet.GetName] - and other worlds may soon follow, if they have not already."
+ faction.60.a:0 "Disaster."
+ faction.60.b:0 "Ignorant fools..."
+ faction.60.a.tooltip:0 "The §HMalcontent Slaves§! faction §Yrevolts§!!"
+
+ faction.80.title:0 "Slaves Radicalized!"
+ faction.80.desc:0 "Members of a local [Root.GetName] chapter appear to have successfully radicalized several [Root.Owner.GetAdj] slaves, strengthening the ranks of the malcontent slaves."
+
+ ### Separatists
+ # From = pop faction
+ # Parameters = planet
+
+ pft_planet_separatists:0 "Planetary Separatist Faction"
+ pft_planet_separatists_desc:0 "Planetary separatists may appear on colonized worlds and seek to free the planet from imperial rule. Given enough popular Support, they may even take up arms.\n\n§HPlanetary Separatists will only appear on directly-controlled planets.§!"
+
+ # Separatists rebel
+ faction.100.title:0 "Separatists Rebel!"
+ faction.100.desc:3 "The unrest on [planet.GetName] has reached critical mass. The local separatist faction has risen up in an armed attempt to take the planet."
+
+ # Separatists riot
+ faction.101.title:1 "Separatist Riot!"
+ faction.101.desc:1 "The civil unrest on §Y[planet.GetName]§! has reached a boiling point and members of the §Y[Root.GetName]§! have taken to the streets, looting and burning.\n\nReports indicate that a major colony facility has been ruined."
+
+ # Separatist leader assassinated
+ faction.102.title:1 "Faction Leader Assassinated!"
+ faction.102.desc:1 "The [Root.GetName] is in disarray following the sudden death of their leader, [Root.Leader.GetName].\n\nAs far as the [Root.Owner.GetSpeciesAdj] public is concerned, this is the outcome of an internal power struggle within the [Root.GetName]. While another figurehead has already emerged, the incident has resulted in a loss of popular support."
+
+ # Separatist sector created
+ faction.103.title:0 "Sector Created!"
+ faction.103.desc:0 "The [Root.GetName] has been granted a quasi-independent sector, with local government based on [parameter:planet.GetName]."
+
+ faction.104.title:0 "Empire Released!"
+ faction.104.desc:0 "To appease and effectively eliminate the separatists, the colony on [parameter:planet.GetName] has been released from the [Root.Owner.GetName].\n\nThe [Root.GetName] have formed their own nation."
+
+ ### Crusaders
+
+ # Crusaders want to a crusade to against the heathens, conquer their capital
+ faction.200.title:0 "[Root.GetName] Brand the Heathen [parameter:heathens.GetName]!"
+ faction.200.desc:0 "they designate a PoI on a foreign power's capital and want it taken over."
+
+ holy_war_title:0 "Holy War"
+ holy_war_desc:0 "Lead a crusade against the [parameter:heathens.GetName]."
+ holy_war_1_poi:0 "Capital System"
+ holy_war_1_poi_desc:0 "The heathens' planet."
+ profane_planets_seized:0 "Profane Planets Cleansed"
+
+ # Capital conquered
+ faction.201.title:0 "Heathen Capital Conquered!"
+ faction.201.desc:0 "Their temples defaced, their gods have abandoned them."
+
+ faction.202.title:0 "[parameter:heathens.GetName] Insulted"
+ faction.202.desc:0 "As a consequence of an embarrassing lapse in security, the [Root.GetName] gained brief access to our diplomatic communication channels. They used this opportunity to condemn and insult the [parameter:heathens.GetName] for various heresies committed and moral failings inherent in their beliefs.\n\nThe incident did not go over well with the deeply religious [parameter:heathens.GetSpeciesPlural]."
+ faction.202.a:0 "How embarrassing."
+ faction.202.a.tooltip:0 "§Y[parameter:enemy.GetName]§! adds the §YFaction Insult§! opinion modifier towards §Your Empire§!."
+ faction.203.title:0 "Attempted Insult"
+ faction.203.desc:0 "As a consequence of yet another, intensely embarrassing lapse in security, the [Root.GetName] gained brief access to our diplomatic communication channels. They used this opportunity to once again belittle the heathen beliefs of the [parameter:heathens.GetName].\n\nHowever, the [parameter:heathens.GetSpeciesPlural] were understandably not taken off-guard by this repeated incident, and appear to have shrugged it off."
+ faction.203.a:0 "Sigh..."
+
+ faction.204.title:0 "Religious Insurrection!"
+ faction.204.desc:0 "We have received reports that radical elements of the [Root.GetName] are staging an armed insurrection on [planet.GetName].\n\nTheir rebellion is still in its infancy, and it would be advisable to nip this in the bud."
+ faction.204.a:0 "Very well."
+ faction.204.a.tooltip:0 "[planet.GetName]:\nInsurrection!"
+
+ ### Nationalists
+ faction.301.title:2 "Nationalist Sabotage!"
+ faction.301.desc:2 "Radical members of the [Root.GetName] have ruined a building has on the [planet.GetPlanetMoon] of [planet.GetName]."
+ faction.301.desc.phobe:0 "The xeno brutes of the [Root.GetName] have ruined a building on [planet.GetName] in a calculated attempt to hurt [Root.Owner.GetAdj] interests, with the apparent goal of destroying our way of life."
+ faction.301.desc.phile:0 "The otherwise lovely members of the [Root.GetName] have seen fit to express their dissatisfaction with our rule by disabling - some would say sabotaging - an installation on [planet.GetName]."
+
+ faction.302.title:1 "Nationalist Rebellion!"
+ faction.302.desc:3 "Emboldened by popular support, the [Root.GetName] has taken up arms in an effort to take back their territory by force."
+ faction.302.desc.phobe:0 "The revolting xenos of the [Root.GetName] seek to overthrow [Root.Owner.GetAdj] rule in open rebellion!"
+ faction.302.desc.phile:0 "Recognizing our continued failure to accede to their demands, the [Root.GetName] has risen up in open revolt."
+
+ ### Peace Movement
+
+ faction.400.title:0 "Fleet Sabotaged!"
+ faction.400.desc:0 "At some point, radical members of the [From.GetName] successfully infiltrated at least one [Root.Owner.GetSpeciesAdj] military vessel to plant explosives. These explosives have now been detonated, destroying the entirety of the [Root.GetName].\n\n[From.Leader.GetName], leader of the [From.GetName], has issued a statement declaring this action to be demonstrative of the abhorrent nature of violence in general, and the [Root.Owner.GetName]'s armed conflict with the [From.parameter:enemy.GetName] in particular."
+ faction.400.a:0 "Hypocrites."
+ faction.400.a.tooltip:0 "§R[Root.GetName] destroyed.§!"
+
+ faction.401.title:0 "Ceasing Hostilities"
+ faction.401.desc:0 "All diplomatic ties requiring continued conflict with [From.parameter:enemy.GetName] have been cut, and we have made an offer of white peace."
+ faction.401.a:0 "We hope they are happy with this."
+
+ faction.402.title:0 "Ceasing Hostilities"
+ faction.402.desc:0 "We have made an offer of white peace to [From.parameter:enemy.GetName], hopefully ending the war."
+ faction.402.a:0 "What is it good for?"
+
+ ### Liberation Faction
+
+ faction.501.title:0 "[parameter:enemy.GetName] Insulted"
+ faction.501.desc:0 "As a consequence of an embarrassing lapse in security, the [Root.GetName] gained brief access to our diplomatic communication channels. They used this opportunity to gravely insult the [parameter:enemy.GetName] and demand the immediate return of [parameter:planet.GetName].\n\nIt did not go over well with the [parameter:enemy.GetSpeciesPlural]."
+ faction.501.a:0 "How embarrassing."
+ faction.501.a.tooltip:0 "§Y[parameter:enemy.GetName]§! adds the §YFaction Insult§! opinion modifier towards §Your Empire§!."
+ faction.502.title:0 "Attempted Insult"
+ faction.502.desc:0 "As a consequence of yet another, intensely embarrassing lapse in security, the [Root.GetName] gained brief access to our diplomatic communication channels. They used this opportunity to once again gravely insult the [parameter:enemy.GetName] and demand the immediate return of [parameter:planet.GetName].\n\nHowever, the [parameter:enemy.GetSpeciesPlural] were understandably not taken off-guard by this repeated incident, and appear to have shrugged it off."
+ faction.502.a:0 "Sigh..."
+ faction.503.title:0 "Hawkish Rebels!"
+ faction.503.desc:0 "We have received reports that radical elements of the [Root.GetName] have formed highly-organized rebel militias on [planet.GetName].\n\nTheir rebellion is still in its infancy, and it would be advisable to nip this in the bud."
+ faction.503.a:0 "Very well."
+ faction.503.a.tooltip:0 "[planet.GetName]:\n§RRebellion!§!"
+
+ ### Emancipation Faction
+ faction.600.title:0 "Radicalized Slaves"
+ faction.600.desc:0 "Members of the [Root.GetName] are allegedly sowing dissent among the enslaved populace. According to some rumors, they are training and even arming fringe elements of the [parameter:slave_faction.GetName], though this seems far too outrageous to be true."
+ faction.600.a:0 "Worrying, nonetheless."
+ faction.600.a.tooltip:0 "[parameter:slave_faction.GetName]:\n§R+50%§! Militancy\n§R+30%§! Support"
+ faction.601.title:0 "The Interstellar Railroad"
+ faction.601.desc:0 "Word has reached up that some of the more radical members of the [Root.GetName] have freed a group of slaves on [railroad_planet.GetName] and spirited them out of the [Root.Owner.GetName]'s reach."
+ faction.601.a:0 "We need to watch them more closely."
+ faction.601.a.tooltip:0 "[railroad_planet.GetName]:\nEnslaved Pops: §R-1§!"
+
+ ### Xenoslaver Faction
+ faction.700.title:0 "Slaves Taken!"
+ faction.700.desc:0 "The rabid [Root.GetName] have allegedly forced some of the [Root.Owner.GetName] non-[Root.Owner.GetSpeciesAdj] populations into indentured servitude."
+ faction.700.a:0 "This is an outrage."
+ faction.700.a.tooltip:0 "Slaves:\n§Y+2§! Pops"
+
+ faction.701.title:0 "The [parameter:rebelling_faction.GetName] Rebel!"
+ faction.701.desc:0 "Supposedly fed up with the [Root.Owner.GetName]'s soft stance on the brutish aliens amongst us, the would-be slave owners of [parameter:planet.GetName] have come together, as a confederation of communities, to declare their independence."
+ faction.701.a:0 "Truly, truly, truly outrageous."
+
+ ### Purged Faction
+ faction.801.title:0 "Death Struggles"
+ faction.801.desc:0 "Fueled by desperation, some individuals currently subject to purges on [riot_planet.GetName] have seen fit to attack and raze one of the facilities on the planet."
+
+ faction.803.title:0 "The [Root.GetName] Revolt!"
+ faction.803.desc:0 "Fueled by desperation, demographics currently subject to purges on [death_planet.GetName] have taken up arms against the [Root.Owner.GetName], forming a ramshackle rebel force."
+ #mockup: "\n\n\n§HSuppress Followers§!\nCost: £influence §R150§!\n--------------\n§Y<FactionName>§!:\nMilitancy: §R+10%§!\nSupport: §G-30%§!"
+ #mockup2: "\n\n\n§HSuppress Followers§!\nCost: £influence §Y150§!\n--------------\n§Y<FactionName>§!:\nMilitancy: §R+10%§!\nSupport: §G-30%§!"

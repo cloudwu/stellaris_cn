@@ -100,6 +100,9 @@
  tech_crystal_armor_2:0 "Crystal-Forged Plating"
  tech_crystal_armor_2_desc:1 "Introducing Crystalline matter into the forging process further improves the ultra-hard qualities of crystal-infused metals.\n\n"
 
+ tech_dragon_armor:0 "Artificial Dragonscales"
+ tech_dragon_armor_desc:0 "The Ether Drake's scales are made up of multiple layers of unique mineral nanostructures. Unorthodox manufacturing techniques allow us to closely emulate these self-repairing structures."
+
 # Thruster Components
  tech_thrusters_1:0 "Chemical Thrusters"
  tech_thrusters_1_desc:0 "Simple yet moderately effective chemical thrusters that rely on combustible propellant to function.\n\n"
@@ -109,7 +112,12 @@
  tech_thrusters_3_desc:0 "An advanced form of electric propulsion, plasma thrusters afford ships greater sublight speeds and maneuverability.\n\n"
  tech_thrusters_4:0 "Impulse Thrusters"
  tech_thrusters_4_desc:0 "These highly advanced fusion-powered thrusters provide ships with unmatched maneuverability and speed under sublight conditions.\n\n"
-
+ 
+ tech_afterburners_1:0 "Afterburners"
+ tech_afterburners_1_desc:0 "These powerful thrusters provide additional combat speed but consume a great deal of power."
+ tech_afterburners_2:0 "Advanced Afterburners"
+ tech_afterburners_2_desc:0 "This improved version of the standard afterburners provide an even greater boost to a ship's combat speed."
+ 
  # Military Stations
  tech_space_defense_station_1:0 "Deep Space Outposts"
  tech_space_defense_station_1_desc:0 "This will enable the construction of defensive deep space platforms far from the gravity wells of a planetary body.\n\n"
@@ -203,6 +211,10 @@
  tech_kinetic_artillery_1_desc:0 "Very long-range artillery capable of hurling powerful rounds over extreme distances with a large degree of accuracy.\n\n"
  tech_kinetic_artillery_2:0 "Kinetic Artillery"
  tech_kinetic_artillery_2_desc:0 "An even more powerful long-range, ship-based artillery cannon, equipped with a new barrel and an upgraded fire control computer.\n\n"
+ tech_mass_accelerator_1:0 "Mega Cannon"
+ tech_mass_accelerator_1_desc:0 "An enormous mass accelerator cannon that can only be placed in a spinal mount and fires monstrously powerful rounds over vast distances.\n\n"
+ tech_mass_accelerator_2:0 "Giga Cannon"
+ tech_mass_accelerator_2_desc:0 "An even more powerful mass accelerator cannon that can rip through even the toughest shields.\n\n"
 
  # Auto-Cannon Branch
  tech_autocannons_1:0 "Autocannons"
@@ -288,6 +300,8 @@
  tech_cryostasis_1_desc:0 "By giving control of the colony ship to an Artificial Intelligence, the crew and colonists can be suspended in a deep sleep."
  tech_cryostasis_2:0 "Self-Aware Colony Ships"
  tech_cryostasis_2_desc:1 "Sufficiently advanced systems are capable of optimizing themselves if they are made acutely aware of the purpose for which they were made."
+ tech_automated_exploration:0 "Automated Exploration Protocols"
+ tech_automated_exploration_desc:0 "An advanced AI will aid science officers in their task to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no Blorg has gone before. The Science Ship will be able to explore the galaxy with help from an AI."
  
  # Resources
  tech_lythuric_gas:1 "Lythuric Gas Refining"
@@ -310,7 +324,9 @@
  tech_antimatter_power_desc:0 "By harnessing the energy produced by matter/antimatter annihilations, our efficiency at generating power will be orders of magnitude better than fusion.\n\n"
  tech_zero_point_power:0 "Zero Point Power"
  tech_zero_point_power_desc:0 "These generators extract vacuum energy, providing an almost limitless supply of power. There is no more efficient way to generate energy.\n\n"
-
+ tech_enigmatic_power_core:0 "Enigmatic Power Generation"
+ tech_enigmatic_power_core_desc:0 "These generators cause particles to interact with each other in ways that seem to defy nature. Somehow they can put out more power than what would seem possibe."
+ 
  # Shield Components
  tech_shields_1:0 "Deflectors"
  tech_shields_1_desc:0 "Energy deflector screens can stop a limited amount of incoming enemy fire before overloading. Their main drawback is that they consume large amounts of power.\n\n"
@@ -326,7 +342,9 @@
  tech_shield_rechargers_1_desc:0 "These capacitors store surplus energy which can quickly be transferred in the event of shield failure. This will greatly increase the rate at which shields recharge.\n\n"
  tech_planetary_shield_generator:0 "Planetary Shields"
  tech_planetary_shield_generator_desc:0 "Generating a strong energy shield within a planetary atmosphere is a greater challenge than in the vacuum of space, but it offers a potent defense against orbital bombardment."
-
+ tech_enigmatic_deflector:0 "Enigmatic Deflectors"
+ tech_enigmatic_deflector_desc:0 "These deflectors operate in ways that seem to defy the laws of nature. Somehow they can manage to muster a protective field many times greater than what could seem possible."
+ 
  # Sensor Components
  tech_sensors_2:0 "Gravitic Sensors"
  tech_sensors_2_desc:0 "These sensors have been tuned to look for any gravitational changes in space, such as those produced by the presence of a starship.\n\n"
@@ -388,6 +406,14 @@
  #tech_aura_shield_dampener_desc:0 ""
  tech_aura_quantum_destabilizer:1 "Quantum Destabilizer"
  tech_aura_quantum_destabilizer_desc:1 "Quantum Destabilizers agitate the local quantum field, disturbing sensitive targeting equipment aboard hostile ships.\n\n"
+ tech_enigmatic_disruption_field:0 "Enigmatic Disruption Field"
+ tech_enigmatic_disruption_field_desc:1 "By flooding a localized area with weak, randomly-modulated electromagnetic pulses, enemy shield and weapons systems can be partially disrupted."
+ 
+ # Aux
+ tech_enigmatic_encoder:0 "Enigmatic Encoder"
+ tech_enigmatic_encoder_desc:1 "The Enigmatic Encoder scrambles flight path data according to some indeterminable design before feeding it back to fleet command."
+ tech_enigmatic_decoder:0 "Enigmatic Decoder"
+ tech_enigmatic_decoder_desc:1 "While producing average results in standard tests, the accuracy of Enigmatic Decoder's prediction algorithms seemingly increases as the target's flight path grows more erratic."
  
  # ###################################
  # Physics - Weapons
@@ -530,6 +556,8 @@
  tech_continental_colonization_desc:1 "$tech_arctic_colonization_desc$"
  tech_frontier_health:0 "Frontier Health"
  tech_frontier_health_desc:1 "The colonization of alien worlds has opened up an entirely new field of biomedical research.\n\n"
+ tech_frontier_hospital:0 "Frontier Hospital"
+ tech_frontier_hospital_desc:0 "As a colony grows, so does it medical needs. Larger colonies are potentially exposed to more dangerous pathogens in alien worlds.\n\n"
  tech_tb_mountain_range:0 "Mountain Range Removal"
  tech_tb_mountain_range_desc:1 "Sometimes there is very little difference between terraformation and demolition.\n\n"
  tech_tb_volcano:0 "Volcano Removal"
@@ -555,6 +583,10 @@
  tech_terrestrial_sculpting_desc:1 "There is no simple solution to the problem of macro-scale reshaping of planetary crusts - only bigger trowels and orbitally-deployed drills.\n\n"
  tech_atmospheric_manipulation:0 "Atmospheric Manipulation"
  tech_atmospheric_manipulation_desc:1 "Humidity regulators and chemical dispersal units are the first step towards a fundamentally altered atmosphere.\n\n"
+ tech_climate_restoration:0 "Climate Restoration"
+ tech_climate_restoration_desc:0 "By advancing our understanding of atmopsheric manipulation, we will be able to terraform even the most ecologically devastated worlds.\n\n"
+ tech_gaia_creation:0 "Gaia Creation"
+ tech_gaia_creation_desc:0 "The creation of Gaia planets, worlds eminently suitable to almost all forms of life, is the ultimate proof of a species' mastery in the art of terraforming.\n\n"
 
  # Genetics
  tech_genome_mapping:0 "Genome Mapping"
@@ -579,7 +611,9 @@
  tech_capacity_boosters_desc:1 "We leave nothing to chance, no matter the cost. Through exacting curation of DNA banks do we build the leaders of tomorrow.\n\n"
  tech_regenerative_hull_tissue:0 "Regenerative Hull Tissue"
  tech_regenerative_hull_tissue_desc:0 "A genetically altered version of silicon-based bacteria could potentially be manipulated to regenerate non-organic materials.\n\n"
-
+ tech_vitality_boosters:0 "Vitality Boosters"
+ tech_vitality_boosters_desc:0 ""
+ 
  # Fleet Organization
  tech_doctrine_fleet_size_1:0 "Doctrine: Space Combat"
  tech_doctrine_fleet_size_1_desc:1 "Gradual adaptation to the realities of deep-space combat allows us to effectively coordinate larger maneuvers.\n\n"
@@ -798,3 +832,20 @@
  #tech_event_renewable_energy_desc:0 ""
  #tech_event_super_sensors:0 ""
  #tech_event_super_sensors_desc:0 ""
+ 
+ #####################################
+ # Gateways
+ #####################################
+ gateway_capital:0 "§HAdministrative Path§!\n§EThis technology will lead to further advancements in capital buildings and £influence  §HInfluence§! gain. Upgraded planetary capitals are required for §Hhigh-level buildings§!.§!"
+ gateway_biological:0 "§HBiological Path§!\n§EThis technology will lead to further advancements in biological enhancement and adaptation.§!"
+ gateway_ship:0 "§HShip Path§!\n§EThis technology will lead to further advancements in the construction of larger Spaceports and more powerful warships."
+ gateway_psionics:0 "§HPsionic Path§!\n§EThis technology will lead to further advancements in the field of psionics."
+ gateway_robotics:0 "§HRobotic Path§!\n§EThis technology will lead to further advancements in the field of robotics."
+ 
+ #####################################
+ # Enclave Techs
+ #####################################
+ tech_curator_lab:0 "Curator Exploration Lab"
+ tech_curator_lab_desc:0 "These shipboard lab facilities incorporates advanced technologies from the ancient Curator Order to further increase survey speeds.\n\n"
+ tech_archeology_lab:0 "Curator Archeology Lab"
+ tech_archeology_lab_desc:0 "A shipboard lab with advanced archaeological equipment, including a vast database supplied by the Curator Order where new discoveries can easily be cross-referenced.\n\n"

@@ -18,9 +18,9 @@
  MOD_COUNTRY_EDICT_LENGTH_MULT:2 "Edict Duration"
  MOD_COUNTRY_EDICT_LENGTH_MULT_DESC:1 "Affects the duration of all Planetary Edicts enacted within the Empire, increasing or reducing the amount of time they are active."
  MOD_COUNTRY_ALL_TECH_RESEARCH_SPEED:0 "Research Speed"
- MOD_COUNTRY_PHYSICS_TECH_RESEARCH_SPEED:0 "Research Speed (Physics)"
- MOD_COUNTRY_SOCIETY_TECH_RESEARCH_SPEED:0 "Research Speed (Society)"
- MOD_COUNTRY_ENGINEERING_TECH_RESEARCH_SPEED:0 "Research Speed (Engineering)"
+ MOD_COUNTRY_PHYSICS_TECH_RESEARCH_SPEED:0 "Research Speed (£physics  Physics)"
+ MOD_COUNTRY_SOCIETY_TECH_RESEARCH_SPEED:0 "Research Speed (£society  Society)"
+ MOD_COUNTRY_ENGINEERING_TECH_RESEARCH_SPEED:0 "Research Speed (£engineering  Engineering)"
  MOD_COUNTRY_MINING_STATION_COST_MULT:0 "Mining Station Cost"
  MOD_COUNTRY_RESEARCH_STATION_COST_MULT:0 "Research Station Cost"
  MOD_COUNTRY_SHIP_UPGRADE_COST_MULT:0 "Ship Upgrade Cost"
@@ -55,6 +55,9 @@
  MOD_POP_PEACE_HAPPINESS:0 "Peace Happiness"
  MOD_POP_XENOPHOBIA:0 "Xenophobia"
  MOD_POP_ETHIC_SHIFT:0 "Ethics Divergence"
+ MOD_COUNTRY_COLONY_INFLUENCE_COST_MULT:0 "Colony Influence Cost"
+ MOD_COUNTRY_FACTION_SURPRESSION_COST_MULT:0 "Faction Suppression Cost"
+ MOD_COUNTRY_POLICY_HAPPINESS_MULT:0 "Policy Happiness Impact"
  MOD_POP_ETHIC_SHIFT_DESC:0 "The likelihood of Pops within the Empire spontaneously changing ethics is increased or reduced by this value."
  MOD_POP_SLOTS:0 "Pop Slots"
  MOD_POP_FOOD_REQ:1 "Food Consumption"
@@ -105,7 +108,7 @@
  MOD_SHIP_REPARATION_COST_MULT:0 "Ship Repair Cost"
  MOD_SHIP_WEAPON_RANGE_MULT:0 "Weapons Range"
  MOD_SHIP_FIRE_RATE_MULT:0 "Fire Rate"
- MOD_SHIP_COMBAT_SPEED_MULT:1 "Speed"
+ MOD_SHIP_COMBAT_SPEED_MULT:2 "Combat Speed"
  MOD_SHIP_EVASION_MULT:0 "Evasion"
  MOD_SHIP_EVASION_ADD:1 "Chance to Evade"
  MOD_SHIP_ACCURACY_MULT:0 "Accuracy"
@@ -113,13 +116,15 @@
  MOD_SHIP_SENSOR_RANGE_MULT:0 "Sensor Range"
  MOD_SHIP_WINDDOWN_MULT:0 "Jump Cooldown"
  MOD_SHIP_WINDUP_MULT:0 "Jump Charge Time"
- MOD_SHIP_INTERSTELLAR_SPEED_MULT:0 "Warp Speed"
+ MOD_SHIP_INTERSTELLAR_SPEED_MULT:1 "FTL Speed"
  MOD_SHIP_EMERGENCY_FTL:1 "Emergency FTL Damage"
  EMERGENCY_JUMP:0 "Emergency Jump"
  MOD_SHIP_ANOMALY_FAIL_RISK:0 "Anomaly Fail Risk"
  MOD_SHIP_ANOMALY_RESEARCH_SPEED:0 "Anomaly Research Speed"
  MOD_SHIP_ANOMALY_GENERATION_CHANCE:0 "Anomaly Discovery Chance"
  MOD_SHIP_SCIENCE_SURVEY_SPEED:0 "Survey Speed"
+ MOD_SHIP_TRACKING_ADD:0 "Tracking"
+ MOD_SHIP_TRACKING_MULT:0 "Tracking"
 
  #Army
  MOD_ARMY_UPKEEP_MULT:0 "Army Upkeep"
@@ -288,6 +293,7 @@
  weapon_type_energy_weapon_fire_rate_mult:0 "Energy Weapon Attack Speed"
  weapon_type_strike_craft_weapon_damage_mult:0 "Strike Craft Damage"
  weapon_type_strike_craft_weapon_fire_rate_mult:0 "Strike Craft Attack Speed"
+ weapon_type_strike_craft_speed_mult:0 "Strike Craft Speed"
 
  #vultaum_asteroid_category_research_speed_mult: "Anomaly Research Speed (Precursor - ADD CATEGORIES PROPER)"
  #vultaum_asteroid_category_research_fail_risk_mult: "Anomaly Fail Risk (Precursor - ADD CATEGORIES PROPER)"
@@ -442,6 +448,17 @@
 
  nomad_strength:0 "Galactic Nomads"
 
+ pirate_power:0 "Pirate Power"
+ cloud_power:0 "Cloud Power"
+ enigmatic_power:0 "Enigmatic Power"
+ technosphere_power:0 "Techno-Power"
+ dreadnought_power:0 "Dreadnought Power"
+
+ curator_insight:0 "Curator Insight"
+ curator_insight_desc:0 "The Curators have shared their knowledge with you. Although requiring extensive interpretation, this will surely advance your understanding."
+ fallen_empire_gift_databanks:0 "Precursor Data Cache"
+ fallen_empire_gift_databanks_desc:0 "We have been gifted a cache of scientific data by a Fallen Empire. This will greatly enhance our research."
+ 
  ####################################
  # Pop Modifiers
  ####################################
@@ -503,6 +520,8 @@
  pc_ai_habitability:1 "AI World Habitability"
  pc_gaia_habitability:1 "Perfect World Habitability"
  pc_ringworld_habitable_habitability:1 "Ring World Habitability"
+ pc_savannah_habitability:0 "Savanna World Habitability"
+ pc_alpine_habitability:0 "Alpine World Habitability"
 
  ####################################
  # Triggered Modifiers
@@ -525,8 +544,8 @@
  ####################################
  
  ## SPECIES
- opinion_repugnant_species:0 "Repugnant"
- opinion_charismatic_species:0 "Charismatic"
+ opinion_repugnant_species:1 "Repugnant Ruler"
+ opinion_charismatic_species:1 "Charismatic Ruler"
 
  ## ETHOS
  opinion_xenophobia:0 "Xenophobia"
@@ -588,7 +607,7 @@
  opinion_broke_non_aggression_pact:0 "Broke Non-Aggression Pact"
  opinion_broke_migration_pact:0 "Broke Migration Treaty"
  opinion_broke_guarantee:0 "Broke Guarantee"
- opinion_demanded_subjectization:0 "Demanded Subjugation"
+ opinion_demanded_subjectization:1 "Refused Subjugation"
  opinion_changed_alliance:0 "Changed Alliance"
  opinion_kicked_from_alliance:0 "Kicked us from Alliance"
  opinion_tried_to_kick:0 "Tried to kick us from Alliance"
@@ -607,6 +626,7 @@
  opinion_declared_rival:0 "Rivaling Us"
  opinion_mutual_threat:0 "Mutual Threats"
  opinion_mutual_rival:0 "Mutual Rivals"
+ opinion_ally_of_ally:0 "Ally of Ally"
  opinion_allied_to_rival:0 "Allied to Rivals"
  opinion_rivals_with_ally:0 "Rivals with Allies"
  opinion_insult:0 "Insulted"
@@ -651,13 +671,23 @@
 
  opinion_primitive_violation:0 "Annexed Primitives"
  
+ opinion_fallen_empire_gift:0 "Given Gift"
  opinion_put_in_their_place:0 "Put in their place"
  opinion_accepted_fallen_empire_demand:0 "Accepted Demands"
  opinion_refused_fallen_empire_demand:0 "Refused Demands"
+ opinion_accepted_fallen_empire_request:0 "Accepted Request"
+ opinion_refused_fallen_empire_request:0 "Refused Request"
+ opinion_refused_fallen_empire_task:0 "Refused Task"
+ opinion_failed_fallen_empire_task:0 "Failed Task"
+ opinion_majorly_failed_fallen_empire_task:0 "Failed us Greatly"
+ opinion_spurned_fallen_empire_gift:0 "Spurned Gift"
+ opinion_completed_fallen_empire_task:0 "Completed Task"
 
  opinion_heretical_research:0 "Heretical Research"
- encroaching_colony:1 "Encroaching Colony"
- encroaching_scientists:1 "Encroaching Scientists"
+ encroaching_colony:0 "Encroaching Colony"
+ encroaching_scientists:0 "Encroaching Scientists"
+
+ opinion_shade_giver:0 "Shade-Giver"
 
  ####################################
  # Planet Modifiers
@@ -767,7 +797,7 @@
  upliftable_species:0 "Upliftable Species"
  upliftable_species_desc:0 "There are species here which can be uplifted, creating a colony on this planet would remove our option to uplift them."
  production_targets:0 "Production Targets"
- production_targets_desc:2 ""
+ production_targets_desc:1 ""
  biochemical_suppression:0 "Biochemical Suppression"
  biochemical_suppression_desc:0 ""
  slave_production_output_increase:0 "Slave Production"
@@ -792,8 +822,8 @@
  high_gravity_desc:0 "This planet is unusually dense and so has uncomfortably high gravity."
  hollow_planet:0 "Hollow Planet"
  hollow_planet_desc:0 "This planet has either been artificially created or was somehow hollowed out. How or why we do not know, but investigating it promises to be fascinating."
- mineral_rich:0 "Mineral Rich"
- mineral_rich_desc:0 "An abundance of easily accessible minerals in this planet's crust makes mining here a lucrative business."
+ mineral_rich:1 "High Quality Minerals"
+ mineral_rich_desc:1 "An abundance of high quality minerals in this planet's crust makes mining here a lucrative business."
  titanic_life:0 "Titanic Life"
  titanic_life_desc:0 "The lifeforms of this planet are built on a massive scale and can be incredibly dangerous even without meaning any harm."
  eat_the_titans:0 "Delicious Titans"
@@ -826,10 +856,10 @@
  holy_planet_desc:0 "This planet is considered sacred by a nearby Fallen Empire. Colonizing it will anger them greatly."
  ancient_weapon:0 "Ancient Orbital Weapon"
  ancient_weapon_desc:0 "It seems that some long-forgotten race once build some kind of huge weapon in orbit above this world. While it doesn't work, indeed it doesn't appear to have been completed, we can likely learn a few things by studying it."
- ultra_rich:0 "Ultra Rich"
- ultra_rich_desc:0 "The cornucopia of easily accessible minerals in this planet's crust provides a truly staggering opportunity for mining."
- mineral_poor:0 "Mineral Poor"
- mineral_poor_desc:0 "It is unknown if this planet simply formed this way, or if some unknown race once stripped it of resources. However, we do know that there are very few minerals to be found here."
+ ultra_rich:1 "Exceptional Quality Minerals"
+ ultra_rich_desc:1 "The exceptional quality of the minerals in this planet's crust provides a truly staggering opportunity for mining."
+ mineral_poor:1 "Poor Quality Minerals"
+ mineral_poor_desc:1 "It is unknown if this planet simply formed this way, or if some unknown race once stripped it of its more valuable resources. However, we do know that the minerals present on this planet are of unusally poor quality."
  planet_uncertain_past:0 "Uncertain history"
  planet_uncertain_past_desc:0 "The people of this planet are troubled by not knowing what caused the disaster which befell it long ago, and are driven to try to find out."
  recent_quake:0 "Recent Tectonic Event"
@@ -883,3 +913,7 @@
 
  subterranean_tech_transaction:0 "Subterranean Tech Provision"
  subterranean_tech_transation_desc:0 "A portion of our research materials and funds are earmarked for use by the subterranean civilization living inside one of our colonized planets."
+ stellarite_high_temp:0 "Increased Temperature"
+ stellarite_high_temp_desc:0 "A radiant monstrosity present in this system is increasing the surface temperature of the planet."
+ stellarite_low_temp:0 "Lowered Temperature"
+ stellarite_low_temp_desc:0 "A radiant monstrosity has devoured part of the star in this system, making the planetary bodies in orbit colder than usual."

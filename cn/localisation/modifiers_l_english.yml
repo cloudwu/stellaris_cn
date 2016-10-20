@@ -18,9 +18,9 @@
  MOD_COUNTRY_EDICT_LENGTH_MULT:2 "法令持续时间"
  MOD_COUNTRY_EDICT_LENGTH_MULT_DESC:1 "影响到帝国内部法令实施的持续时间，增加或减少起效的时间。"
  MOD_COUNTRY_ALL_TECH_RESEARCH_SPEED:0 "研究速度"
- MOD_COUNTRY_PHYSICS_TECH_RESEARCH_SPEED:0 "研究速度（物理）"
- MOD_COUNTRY_SOCIETY_TECH_RESEARCH_SPEED:0 "研究速度（社会）"
- MOD_COUNTRY_ENGINEERING_TECH_RESEARCH_SPEED:0 "研究速度（工程）"
+ MOD_COUNTRY_PHYSICS_TECH_RESEARCH_SPEED:0 "研究速度（£physics 物理）"
+ MOD_COUNTRY_SOCIETY_TECH_RESEARCH_SPEED:0 "研究速度（£society 社会）"
+ MOD_COUNTRY_ENGINEERING_TECH_RESEARCH_SPEED:0 "研究速度（£engineering 工程）"
  MOD_COUNTRY_MINING_STATION_COST_MULT:0 "采矿站花费"
  MOD_COUNTRY_RESEARCH_STATION_COST_MULT:0 "研究站花费"
  MOD_COUNTRY_SHIP_UPGRADE_COST_MULT:0 "飞船升级花费"
@@ -55,6 +55,9 @@
  MOD_POP_PEACE_HAPPINESS:0 "和平幸福值"
  MOD_POP_XENOPHOBIA:0 "排外"
  MOD_POP_ETHIC_SHIFT:0 "道德分歧"
+ MOD_COUNTRY_COLONY_INFLUENCE_COST_MULT:0 "Colony Influence Cost"
+ MOD_COUNTRY_FACTION_SURPRESSION_COST_MULT:0 "Faction Suppression Cost"
+ MOD_COUNTRY_POLICY_HAPPINESS_MULT:0 "Policy Happiness Impact"
  MOD_POP_ETHIC_SHIFT_DESC:0 "这种价值使得帝国内部人口大跨度改变道德标准的可能性增加或减少。"
  MOD_POP_SLOTS:0 "人口空缺"
  MOD_POP_FOOD_REQ:1 "食物消耗"
@@ -105,7 +108,7 @@
  MOD_SHIP_REPARATION_COST_MULT:0 "飞船维修价格"
  MOD_SHIP_WEAPON_RANGE_MULT:0 "武器范围"
  MOD_SHIP_FIRE_RATE_MULT:0 "射速"
- MOD_SHIP_COMBAT_SPEED_MULT:1 "速度"
+ MOD_SHIP_COMBAT_SPEED_MULT:2 "格斗速度"
  MOD_SHIP_EVASION_MULT:0 "回避"
  MOD_SHIP_EVASION_ADD:1 "闪避率"
  MOD_SHIP_ACCURACY_MULT:0 "命中率"
@@ -113,13 +116,15 @@
  MOD_SHIP_SENSOR_RANGE_MULT:0 "探测范围"
  MOD_SHIP_WINDDOWN_MULT:0 "跳跃冷却"
  MOD_SHIP_WINDUP_MULT:0 "跳跃蓄力时间"
- MOD_SHIP_INTERSTELLAR_SPEED_MULT:0 "曲速"
+ MOD_SHIP_INTERSTELLAR_SPEED_MULT:0 "超光速速度"
  MOD_SHIP_EMERGENCY_FTL:1 "紧急超光速伤害"
  EMERGENCY_JUMP:0 "紧急跳跃"
  MOD_SHIP_ANOMALY_FAIL_RISK:0 "异常失败风险"
  MOD_SHIP_ANOMALY_RESEARCH_SPEED:0 "异常研究速度"
  MOD_SHIP_ANOMALY_GENERATION_CHANCE:0 "异常发现机会"
  MOD_SHIP_SCIENCE_SURVEY_SPEED:0 "调查速度"
+ MOD_SHIP_TRACKING_ADD:0 "Tracking"
+ MOD_SHIP_TRACKING_MULT:0 "Tracking"
 
  #Army
  MOD_ARMY_UPKEEP_MULT:0 "陆战队保养"
@@ -288,6 +293,7 @@
  weapon_type_energy_weapon_fire_rate_mult:0 "能量武器攻击速度"
  weapon_type_strike_craft_weapon_damage_mult:0 "突击船伤害"
  weapon_type_strike_craft_weapon_fire_rate_mult:0 "突击船攻击速度"
+ weapon_type_strike_craft_speed_mult:0 "突击船速度"
 
  #vultaum_asteroid_category_research_speed_mult: "Anomaly Research Speed (Precursor - ADD CATEGORIES PROPER)"
  #vultaum_asteroid_category_research_fail_risk_mult: "Anomaly Fail Risk (Precursor - ADD CATEGORIES PROPER)"
@@ -442,6 +448,17 @@
 
  nomad_strength:0 "银河游牧民"
 
+ pirate_power:0 "Pirate Power"
+ cloud_power:0 "Cloud Power"
+ enigmatic_power:0 "Enigmatic Power"
+ technosphere_power:0 "Techno-Power"
+ dreadnought_power:0 "Dreadnought Power"
+
+ curator_insight:0 "Curator Insight"
+ curator_insight_desc:0 "The Curators have shared their knowledge with you. Although requiring extensive interpretation, this will surely advance your understanding."
+ fallen_empire_gift_databanks:0 "Precursor Data Cache"
+ fallen_empire_gift_databanks_desc:0 "We have been gifted a cache of scientific data by a Fallen Empire. This will greatly enhance our research."
+
  ####################################
  # Pop Modifiers
  ####################################
@@ -503,6 +520,8 @@
  pc_ai_habitability:1 "人工智能适居性"
  pc_gaia_habitability:1 "盖娅适居性"
  pc_ringworld_habitable_habitability:1 "环形世界适居性"
+ pc_savannah_habitability:0 "Savanna World Habitability"
+ pc_alpine_habitability:0 "Alpine World Habitability"
 
  ####################################
  # Triggered Modifiers
@@ -525,8 +544,8 @@
  ####################################
  
  ## SPECIES
- opinion_repugnant_species:0 "令人厌恶"
- opinion_charismatic_species:0 "魅力非凡"
+ opinion_repugnant_species:1 "令人厌恶的统治者"
+ opinion_charismatic_species:1 "魅力非凡的统治者"
 
  ## ETHOS
  opinion_xenophobia:0 "排外"
@@ -588,7 +607,7 @@
  opinion_broke_non_aggression_pact:0 "违反互不侵犯条约"
  opinion_broke_migration_pact:0 "违反移民合约"
  opinion_broke_guarantee:0 "违反保证"
- opinion_demanded_subjectization:0 "要求进行镇压"
+ opinion_demanded_subjectization:0 "拒绝镇压"
  opinion_changed_alliance:0 "改变联盟"
  opinion_kicked_from_alliance:0 "将我方踢出了联盟"
  opinion_tried_to_kick:0 "曾试图将我方踢出联盟"
@@ -607,6 +626,7 @@
  opinion_declared_rival:0 "与我们竞争"
  opinion_mutual_threat:0 "共同的威胁"
  opinion_mutual_rival:0 "共同敌人"
+ opinion_ally_of_ally:0 "盟友的盟友"
  opinion_allied_to_rival:0 "与敌人结盟"
  opinion_rivals_with_ally:0 "与盟友为敌"
  opinion_insult:0 "受到侵略"
@@ -651,13 +671,23 @@
 
  opinion_primitive_violation:0 "附属基元"
  
+ opinion_fallen_empire_gift:0 "Given Gift"
  opinion_put_in_their_place:0 "放在他们的位置"
  opinion_accepted_fallen_empire_demand:0 "接受要求"
  opinion_refused_fallen_empire_demand:0 "拒绝要求"
+ opinion_accepted_fallen_empire_request:0 "Accepted Request"
+ opinion_refused_fallen_empire_request:0 "Refused Request"
+ opinion_refused_fallen_empire_task:0 "Refused Task"
+ opinion_failed_fallen_empire_task:0 "Failed Task"
+ opinion_majorly_failed_fallen_empire_task:0 "Failed us Greatly"
+ opinion_spurned_fallen_empire_gift:0 "Spurned Gift"
+ opinion_completed_fallen_empire_task:0 "Completed Task"
 
  opinion_heretical_research:0 "异端研究"
- encroaching_colony:1 "侵占殖民地"
- encroaching_scientists:1 "侵占科学家"
+ encroaching_colony:0 "侵占殖民地"
+ encroaching_scientists:0 "侵占科学家"
+
+ opinion_shade_giver:0 "Shade-Giver"
 
  ####################################
  # Planet Modifiers
@@ -767,7 +797,7 @@
  upliftable_species:0 "可协助发展物种"
  upliftable_species_desc:0 "这个星球上的智慧种族可在我们的协助下提前发展太空文明，如果在这里建立殖民地的话就等于直接放弃了这个选择。"
  production_targets:0 "生产指标"
- production_targets_desc:2 ""
+ production_targets_desc:1 ""
  biochemical_suppression:0 "生化抑制"
  biochemical_suppression_desc:0 ""
  slave_production_output_increase:0 "奴隶生产"
@@ -792,8 +822,8 @@
  high_gravity_desc:0 "这颗星球有着异常高的密度，因此形成了令人难受的高重力。"
  hollow_planet:0 "中空行星"
  hollow_planet_desc:0 "这颗星球可能经过人工开发或天然侵蚀，只可惜其原因和方法都尚不清楚，但我们很期待对这里开展考察工作。"
- mineral_rich:0 "矿藏丰富"
- mineral_rich_desc:0 "该星球的地表富含矿物且开采方法简单，因此采矿业成了这个地区的一棵大摇钱树。"
+ mineral_rich:1 "高质量矿藏"
+ mineral_rich_desc:1 "该星球的地表富含高质矿物，因此采矿业成了这个地区的一棵大摇钱树。"
  titanic_life:0 "泰坦巨人"
  titanic_life_desc:0 "这个星球的生物有着庞大的体型，即便它们本身没有恶意也是相当危险的存在。"
  eat_the_titans:0 "美味巨兽"
@@ -826,10 +856,10 @@
  holy_planet_desc:0 "这颗星球被某个帝国视为圣地，在这里殖民会激怒他们。"
  ancient_weapon:0 "古代轨道武器"
  ancient_weapon_desc:0 "这颗星球的原文明种族似乎在其轨道上建造了某种巨型武器。尽管无法使用且看上去也是尚未完成的状态，不过也可以作研究之用。"
- ultra_rich:0 "矿产丰富"
- ultra_rich_desc:0 "这颗星球的矿量储存极为丰富且开采简单，任何人都有机会在这里靠采矿赚一笔钱。"
- mineral_poor:0 "矿产贫乏"
- mineral_poor_desc:0 "不知道是天然形成还是被某个种族开采完的缘故，现在这颗星球已经几乎看不到矿物了。"
+ ultra_rich:1 "矿产质量卓越"
+ ultra_rich_desc:1 "这颗星球的矿藏质量极为卓越，任何人都有机会在这里靠采矿赚一笔钱。"
+ mineral_poor:1 "矿产低劣"
+ mineral_poor_desc:1 "不知道是天然形成还是被某个种族开采完的缘故，现在这颗星球已经几乎看不到矿物了。"
  planet_uncertain_past:0 "未知历史"
  planet_uncertain_past_desc:0 "这颗星球上的人对于多年前一场灾难的发生原因一无所知，如今他们迫切地想要找出答案。"
  recent_quake:0 "现代地质运动"
@@ -883,3 +913,7 @@
 
  subterranean_tech_transaction:0 "地底文明的科技供应"
  subterranean_tech_transation_desc:0 "我们有一部分的研究材料和资金是专门为殖民星球里的地底文明提供的。"
+ stellarite_high_temp:0 "Increased Temperature"
+ stellarite_high_temp_desc:0 "A radiant monstrosity present in this system is increasing the surface temperature of the planet."
+ stellarite_low_temp:0 "Lowered Temperature"
+ stellarite_low_temp_desc:0 "A radiant monstrosity has devoured part of the star in this system, making the planetary bodies in orbit colder than usual."

@@ -544,7 +544,7 @@
  BEING_REPAIRED:0 "正在修理：$VALUE|Y%0$"
  TERRAFORMING:0 "正在地面改造行星中，$PROGRESS|Y%0$（$DAYS_REMAINING|Y$天）"
  SHIP_MODIFIERS:0 "舰船加成系数"
- DOCKED_FLEET_MAINT:0 "§H维护消耗§!\n停驻舰队：$VALUE|0$"
+ DOCKED_FLEET_MAINT:0 "§H维护消耗§!\n入坞舰队：$VALUE|0$"
  POP_MODIFIERS:0 "人口加成系数"
  ARMY_MODIFIERS:0 "陆战队加成系数"
  ARMY_CANNOT_ATTACH_NO_SLOTS:0 "陆战队无法装备更多附件。"
@@ -1587,7 +1587,7 @@
  SYSTEM_CAP_TITLE:0 "直接控制的殖民星系"
  SYSTEM_CAP_TOOLTIP:0 "我们可以有效地控制$MAX|Y$殖民星系。"
  SYSTEM_OVER_CAP_TOOLTIP:0 "§R超过限制！§!\n$MODIFIER$"
- SYSTEM_CAP_DESC:0 "§E我们的官僚体系限制了我们能够有效直接控制的殖民星系。此限制可以通过科技、建筑、和政府体制来提升。§!"
+ SYSTEM_CAP_DESC:0 "§E我们的官僚体系限制了我们能够有效直接控制的殖民星系数量。此限制可以通过科技、建筑、和政府体制来提升。§!"
  TRIGGER_REQUIRES:0 "§R需要：§!"
  ACCEPT_OR_DECLINE_HOTJOIN:0 "$NAME|Y$ 并未被认可或拒绝。"
 
@@ -3731,7 +3731,7 @@
  NAVY_SIZE_POPS_VALUE:0 "来自人口：$VALUE$"
  NAVY_SIZE_PLANETS_VALUE:0 "来自空间站：$VALUE$"
  NAVY_SIZE_ALLIANCE:0 "降低$VALUE$事因$FEDERATION$的原因。"
- NAVY_SIZE_TOOLTIP:0 "我们可以有效支持相当于$MAX|0Y$单位$NAVY_SIZE_TITLE$的数量的舰船。"
+ NAVY_SIZE_TOOLTIP:0 "我们可以有效维持相当于$MAX|0Y$单位$NAVY_SIZE_TITLE$的数量的舰船。"
  NAVY_SIZE_MAX:1 "§R最大：$VALUE|0$§!"
  NAVY_SIZE_MAX_REACHED:1 "§R已达到最大舰队规模。§!"
 
@@ -5209,19 +5209,19 @@
  # Basic Resources
  ####################################
  energy:0 "能量点数"
- energy_desc:1 "§E§H能源点数§! (£energy )是全宇宙居民间使用的通用能源单位。通过以下途径可以获得能源：\n§Y1.§!在殖民星球表面建造或改造§H发电站§!。\n§Y2.§!在能源丰富的星球上利用§H工程船§!建设§H采矿站§!。§!"
+ energy_desc:1 "§E§H能源点数§! (£energy )是全宇宙居民间使用的通用能源单位。通过以下途径可以获得能源：\n§Y1.§!在殖民星球表面建造或改造§H发电站§!。\n§Y2.§!利用§H工程船§!环绕能源丰富星球的上空修建§H采矿站§!。§!"
  influence:0 "影响力"
- influence_desc:1 "§E§H影响力§! (£influence )表示政治凝聚力，在许多方面都有运用，比如颁布§H法令§!, 招募§H领袖§!, 建设§H开拓地据点§! 以及§H派系斗争§!等。在游戏流程中能够持续获得，可通过以下方法稍微增加获得量：\n§Y1.§! 升级§H行星都城§!的建筑至最高等级。\n§Y2.§! 宣布其他帝国为§H敌对势力§!。§!"
+ influence_desc:1 "§E§H影响力§! (£influence )表示政治凝聚力，在许多方面都有运用，比如颁布§H法令§!, 招募§H领袖§!, 建设§H开拓地据点§! 以及§H派系斗争§!等。在游戏流程中能够持续获得，可通过以下方法稍微增加获得量：\n§Y1.§! 升级§H行星都城§!的建筑至最高等级。\n§Y2.§! 宣布其他帝国为§H竞争对手§!。§!"
  food:0 "食物"
  food_desc:1 "§E§H食物§! (£food ) 表示维持§H人民§!生计的各种所需的营养物质，并在每颗独立的星球附近。在星球表面建造§H农场§!可以收获额外的食物。§!"
  minerals:0 "矿物"
- minerals_desc:1 "§E§H矿物§! (£minerals ) 是建造船只，站点和建筑时所需物资的统一名称。可以通过以下途径增加每月的矿物产量： \n§Y1.§!建造或升级在殖民星球表面的§H复合矿场§!。\n§Y2.§!在矿产资源丰富的星球附近利用§H工程船§!建设§H采矿站§!。§!"
+ minerals_desc:1 "§E§H矿物§! (£minerals )是建造舰船、站点和建筑时所需物资的统一名称。可以通过以下途径增加每月的矿物产量：\n§Y1.§!建造或升级在殖民星球表面的§H复合矿场§!。\n§Y2.§!利用§H工程船§!环绕矿产资源丰富星球的上空修建§H采矿站§!。§!"
  physics_research:0 "物理研究"
- physics_research_desc:1 "§E§H物理研究§! (£physics )用于研究新兴技术。在殖民星球表面建造§H物理实验室§!或者§H研究站§!可以增加产值。§!"
+ physics_research_desc:1 "§E§H物理研究§! (£physics )用于研究新技术。在殖民星球表面建造§H物理实验室§!或修建环特定星球的§H研究站§!可以增加产值。§!"
  society_research:0 "社会研究"
- society_research_desc:1 "§E§H社会研究§! (£society )用于研究新技术。在殖民星球表面建造§H生物实验室§!或者§H研究站§!可以增加产值。§!"
+ society_research_desc:1 "§E§H社会研究§! (£society )用于研究新技术。在殖民星球表面建造§H生物实验室§!或修建环特定星球的§H研究站§!可以增加产值。§!"
  engineering_research:0 "工程研究"
- engineering_research_desc:1 "§E工程研究(£engineering )用于研究新技术。在殖民星球表面建造§H工程设施§!和§H研究站§!可以增加产值。§!"
+ engineering_research_desc:1 "§E工程研究(£engineering )用于研究新技术。在殖民星球表面建造§H工程设施§!或修建环特定星球的§H研究站§!可以增加产值。§!"
 
  ENERGY_DEFICIT_DESC:1 "§R帝国正遭受$DEFICIT|E$，因为所使用的§H能源点数§!远远超出了产出量，积蓄全都用光了。§!"
 

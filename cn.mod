@@ -4,5 +4,5 @@ tags={
 	"Translation"
 }
 picture="stellaris_cn.jpg"
-remote_file_id="734129025"
+remote_file_id="785263047"
 supported_version="1.3.0"

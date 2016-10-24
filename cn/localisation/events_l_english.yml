@@ -44,7 +44,7 @@
  ####################################
  action.1.name:0 "与§H [contact_empire.GetName]§!的首次接触"
  action.1.message:0 "我们已和§H [contact_empire.GetName]§!打过交道"
- action.1.desc_01:0 "我谨代表 [contact_empire.GetRulerTitle] [contact_empire.GetRulerName]送上问候， [contact_empire.GetName]无可争议的统治者。尊重我们的领土并避免干涉我们的国家事务，我们或许可以考虑让我们战无不胜的舰队绕开你们的世界。"
+ action.1.desc_01:0 "我谨代表 [contact_empire.GetRulerTitle] [contact_empire.GetRulerName] ，[contact_empire.GetName]无可争议的统治者，送上诚挚的问候。尊重我们的领土、不要干涉我们的国家事务，这样我们战无不胜的舰队就不大会拜访你们的世界。"
  action.1.desc_02:0 "您好，我谨代表 [contact_empire.GetName]， [contact_empire.GetRulerTitle] [contact_empire.GetRulerName]治下的帝国向您致以问候。我们遵照神明的旨意统治着属于我们的领土。只要您不干涉我们的宗教事务，相信我们的关系会十分密切。"
  action.1.desc_03:0 "我们来自 [contact_empire.GetName]，是伟大的 [contact_empire.GetRulerTitle] [contact_empire.GetRulerName]的仆从。我们希望通过科技提高自身，无论你对此是否赞同，我们都相信您会是一位友邻。"
  action.1.desc_04:0 " [contact_empire.GetName]致以问候。我们是一个崇尚和平的国家，由我们敬爱的 [contact_empire.GetRulerTitle] [contact_empire.GetRulerName]公正地统治着。无论我们两国人民将来发生什么冲突，希望我们都能够通过语言而非暴力解决。"
@@ -224,8 +224,8 @@
  action.10.desc:0 "在 [From.From.From.GetName]系统遭遇来源未知的飞船！这些奇怪的船上插着§Y [From.GetName]§!的旗帜，其余信息正待进一步调查。\n\n应做好对方有敌意时的对策。"
  action.10.a:0 "真是有趣。"
  action.11.name:1 "通讯已建立"
- action.11.desc:1 "成功建立对方语言的翻译机制，已与§Y[From.From.GetName]§! 建立了通讯。外交频道已建立，所有威胁已终结。"
- action.11.abandoned.desc:0 "成功建立对方语言的翻译机制，已与 §Y[From.From.GetName]§! 建立了通讯。外交频道已建立，已§Y识别§!对方为我们曾经遗弃的难民，目前所有威胁已终结。"
+ action.11.desc:1 "成功建立与对方语言的翻译机制，已与§Y[From.From.GetName]§! 建立了通讯。外交频道建立，所有威胁已消除。"
+ action.11.abandoned.desc:0 "成功建立对方语言的翻译机制，已与 §Y[From.From.GetName]§! 建立了通讯。外交频道建立，已§Y识别§!对方为我们曾经遗弃的难民，目前所有威胁已消除。"
  action.11.a:0 "不错"
  action.13.name:2 "通讯已建立"
  action.13.desc:1 "我们收到了来自§Y[From.Owner.GetName]§!的通讯！他们似乎已成功翻译了我们的语言。目前已建立了外交渠道，我们与他们之间一切的敌对行动都已暂停。"
@@ -1536,7 +1536,7 @@
  observation.3136.desc:0 "我方未对此次事件作出回应，但坚持了对 [From.From.GetName]民众的监视。不幸的是，事态却越变越糟了。被民众们称为“天启者”的科研队伍神秘地出现，而又神秘地再也不见踪影，而 [From.From.GetPlanetMoon]也因此陷入了水深火热的宗教战争。\n\n战争的一派势力重新树立了新的神明，并为其又建造了一座金字塔。战况激烈，死伤无数。"
  observation.3136.a.tooltip:0 "§Y2Pops§!被杀戮，位于 [From.From.GetName]。\n\n$observation.3136.c.tooltip$"
  observation.3136.b.tooltip:0 "§Y1Pop§!被杀戮，位于 [From.From.GetName]。\n\n$observation.3136.c.tooltip$"
- observation.3136.c.tooltip:0 "另外一座 £building §S$building_great_pyramid$§!在 [From.From.GetName]出现了。\n\n [From.From.GetName]获得了§R$pyramid_wars$§!加成系数，持续§Y720§!天。效果如下：\n£happiness 幸福度 §R-40%§!\n\n"
+ observation.3136.c.tooltip:0 "另外一座 £building §S$building_great_pyramid$§!在 [From.From.GetName]出现了。\n\n [From.From.GetName]获得了§R$pyramid_wars$§!调整因素，持续§Y720§!天。效果如下：\n£happiness 幸福度 §R-40%§!\n\n"
  observation.3137.desc:0 "虽然我方与 [From.From.GetName]的民众进行了计划外的接触，但事态并没有变得更糟。人们渐渐将“天启者”当做了神话传说，并没有因为金字塔而形成任何教派。而现在，民众们运用金字塔作为知识分子的学习场所，专门研究其构造。\n\n此次事件也给了我们意想不到的宝贵数据：原始生物们在面对不寻常的大事件时，会对其逻辑思考造成怎样的影响。"
  observation.3137.a:0 "还真是幸运。"
  
@@ -2067,9 +2067,9 @@
  # Pirate Events
  #############################
  pirate.1.name:0 "太空海盗的诞生"
- pirate.1.desc_01:0 "一大群来自 [Root.Capital.GetName]道德沦丧的罪犯使用非法手段将若干公民舰船改造成战舰。这些异端在空间的边缘游移，自称“§S [pirate_band.GetName]§!”并宣布对数次航线攻击负责。\n\n他们的下流手段不能再继续下去！"
+ pirate.1.desc_01:0 "一大群来自 [Root.Capital.GetName]道德沦丧的罪犯使用非法手段将若干公民舰船改造成战舰。这些异端在空间的边缘游移，自称“§S[pirate_band.GetName]§!”并宣布对数次航线攻击负责。\n\n他们的下流手段不能再继续下去！"
  pirate.1.desc_02:0 "情报局报告了过去几月中数起航线攻击事件。犯罪分子似乎是 [Root.Capital.GetName]的逃兵和叛徒。\n\n这些罪犯拼凑了一艘由民用船体大幅改装制成的战舰，并且自称为“§S [pirate_band.GetName]§!”。他们的船只虽然粗糙简陋，但也不容小觑。"
- pirate.1.desc_03:0 "几名罪犯已经离开 [Root.Capital.GetName]开始了遥远空间的亡命之旅。这些强盗将大量民用舰船改装后，竟然惊人地十分精巧。\n\n我们的民用航线遭受这一临时舰队的掠夺，他们自称为“§S [pirate_band.GetName]§!”。需要对此作出快速回应。"
+ pirate.1.desc_03:0 "几名罪犯已经离开[Root.Capital.GetName]开始了迈向遥远空间的亡命之旅。这些强盗改造武装了大量民用星舰，这在方面，他们展露出惊人的创造力。\n\n我们的民用航线遭受了这一临时拼凑出来的舰队掠夺，他们自称为“§S[pirate_band.GetName]§!”。需要对此作出快速回应。"
  pirate.1.desc_04:0 "前线传来警告。自从我们开始空间旅行， [Root.Capital.GetName]上的边缘分子不断地离开我们的家园，公然蔑视我们的和谐社会。\n\n这些失足分子自称为“§S [pirate_band.GetName]§!”，将数只民用船只改装为战舰。他们劫掠民用航线，导致许多公民死亡。必须采取严厉措施来保护我们的人民。"
  pirate.1.desc_05:0 "叛军和乱党逃离 [Root.Capital.GetName]到我们的太空国土边境利用数艘改造过的民用船只打造了一支舰队。他们自称为“§S [pirate_band.GetName]§!，”不断地袭击我们的平民船只。\n\n他们犯下了人神共愤的恶行，罪该万死。无论如何，我们必须尽快恢复社会秩序。"
  pirate.1.desc_06:0 "寄生物总会涌到新市场，想要不劳而获，获取诚实商人的盈利——就算是太空也一样。 [Root.Capital.GetName]将他门的民用运输舰改造成了战舰，试图将触手伸到太空中。\n\n这些不法分子自称为“§S [pirate_band.GetName]§!”而他们的船只开始肆虐民用商路。我们必须尽快应对，免得情况失控。"

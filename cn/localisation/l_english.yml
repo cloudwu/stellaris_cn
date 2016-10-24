@@ -1297,7 +1297,7 @@
  awakened_fallen_empire_ruler:0 "统治者"
 
  neutral_faction_admiral:0 "舰长"
- pirate_admiral:1 "船长"
+ pirate_admiral:1 "海盗船长"
  swarm_admiral:0 "完全体"
 
  LEADER_IDLING_IN:1 "§G可用§!"
@@ -1854,7 +1854,7 @@
 
  #Flag category keys are generated like "FLAG_CATEGORY_" + <name of folder in common/flags/>
  FLAG_CATEGORY_ornate:0 "精致"
- FLAG_CATEGORY_pirate:0 "海岛"
+ FLAG_CATEGORY_pirate:0 "海盗"
  FLAG_CATEGORY_blocky:0 "方"
  FLAG_CATEGORY_spherical:0 "圆"
  FLAG_CATEGORY_pointy:0 "尖"
@@ -1951,7 +1951,7 @@
  pc_ocean_desc:0 "有大量水源和氮氧大气层的岩石世界，海洋覆盖了§Y90%§!的表面积，绝大部分陆地是岛屿。"
  pc_arctic:0 "极地世界"
  pc_arctic_desc:0 "主要由极地组成的岩石世界，冰雪覆盖了大部分的表边，但仍然有四季变化，同时也有部分植被。"
- pc_alpine:0 "高山世界"
+ pc_alpine:0 "高山冻土世界"
  pc_alpine_desc:0 "拥有氮氧大气的山区世界。冰雪覆盖着的群山、峡谷中遍布着冰封湖泊。对于植物来说，季节变化微乎其微，但湖泊的冰面以下任然有液态水，这维持着耐寒植被的生存。"
  pc_savannah:0 "热带草原世界"
  pc_savannah_desc:0 "拥有氮氧大气层的沙石世界，一望无际的干燥平原。小规模的水文圈带来了短暂湿季，围绕着浅滩绿洲青草蔓布。"
@@ -1977,7 +1977,7 @@
  pc_pulsar_desc:0 "脉冲星是旋转的中子星，能够发出电磁辐射，由于只有直接对观测器发出的电磁辐射才能被检测到，许多科学家利用这一点来检测时间通道。"
  pc_infested:0 "感染世界"
  pc_infested_desc:0 "这个世界的表面被生化污染所覆盖。"
- pc_gaia:0 "盖娅世界"
+ pc_gaia:0 "盖亚世界"
  pc_gaia_desc:0 "一个理想中的有氮氧大气层和持续的生态系统的世界，对于高级生命体来说最好的生存空间。"
  pc_nuked:0 "废土世界"
  pc_nuked_desc:0 "有氮氧大气层的岩石世界，表面存在强烈的核辐射，鲜有生命迹象。"
@@ -2018,9 +2018,9 @@
  pc_arctic_tile_desc:0 "覆盖着冰雪，没有植被的地貌"
  pc_savannah_tile:0 "热带草原地形"
  pc_savannah_tile_desc:0 "温暖干燥的土地上间隙生长着灌木和树木。"
- pc_alpine_tile:0 "高山地形"
+ pc_alpine_tile:0 "高山冻土地形"
  pc_alpine_tile_desc:0 "冰雪覆盖着起伏的地表。"
- pc_gaia_tile:0 "盖娅地形"
+ pc_gaia_tile:0 "盖亚地形"
  pc_gaia_tile_desc:0 "适合绝大多数生命繁荣发展的地形。"
  pc_nuked_tile:0 "废土地形"
  pc_nuked_tile_desc:0 "被战乱摧毁的地貌，辐射很低，可以生存一些生命。"
@@ -2638,7 +2638,7 @@
  ####################################
  # Habitability Traits
  ####################################
- trait_pc_alpine_preference:0 "高山偏好"
+ trait_pc_alpine_preference:0 "高山冻土偏好"
  trait_pc_alpine_preference_desc:1 "§L气候偏好是在基因层面上决定的，要么经过了常年累月的进化，要么使用技术手段改变。§!"
  trait_pc_savannah_preference:0 "热带草原偏好"
  trait_pc_savannah_preference_desc:1 "§L气候偏好是在基因层面上决定的，要么经过了常年累月的进化，要么使用技术手段改变。§!"
@@ -2658,7 +2658,7 @@
  trait_pc_tropical_preference_desc:1 "$trait_pc_arctic_preference_desc$"
  trait_pc_nuked_preference:0 "废土偏好"
  trait_pc_nuked_preference_desc:1 "$trait_pc_arctic_preference_desc$"
- trait_pc_gaia_preference:0 "盖娅偏好"
+ trait_pc_gaia_preference:0 "盖亚偏好"
  trait_pc_gaia_preference_desc:1 "$trait_pc_arctic_preference_desc$"
  trait_pc_ai_preference:0 "AI 世界偏好"
  trait_pc_ai_preference_desc:1 "$trait_pc_arctic_preference_desc$"
@@ -4285,8 +4285,8 @@
  TECH_UNLOCK_COMBAT_COMPUTER_PRECOG_DESC:0 "§H预知界面§!\n"
  TECH_UNLOCK_TERRAFORMING_TEMP_CHANGE_TITLE:0 "§H解锁功能：§! 大气层操控"
  TECH_UNLOCK_TERRAFORMING_TEMP_CHANGE_DESC:1 "§H大气层操控§!\n允许我们通过地表改造改变星球的气候。"
- TECH_UNLOCK_TERRAFORMING_GAIA_CHANGE_TITLE:0 "§H解锁特性：§! 创造盖娅"
- TECH_UNLOCK_TERRAFORMING_GAIA_CHANGE_DESC:0 "§H创造盖娅§!\n允许我们通过地表改造创造一个盖娅星球。"
+ TECH_UNLOCK_TERRAFORMING_GAIA_CHANGE_TITLE:0 "§H解锁特性：§! 创造盖亚"
+ TECH_UNLOCK_TERRAFORMING_GAIA_CHANGE_DESC:0 "§H创造盖亚§!\n允许我们通过地表改造创造一个盖亚星球。"
  TECH_UNLOCK_TERRAFORMING_NUKED_CHANGE_TITLE:0 "§H解锁特性：§! 气候修复"
  TECH_UNLOCK_TERRAFORMING_NUKED_CHANGE_DESC:1 "§H气候修复§!\n允许我们通过地表改造生态混乱的废土世界。"
  TECH_UNLOCK_SPACEPORT_CONSTRUCTION_TITLE:0 "§H解锁空间站：§! 空间站"

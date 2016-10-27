@@ -93,7 +93,6 @@
  AURA_APPLY_ON_FRIENDLY:0 "对友方舰船的效果："
  AURA_APPLY_ON_HOSTILE:0 "对敌方舰船的效果："
  ENERGY_COST:0 "£energy $VALUE|1Y$"
- TRADE_NOT_OWNER_OF_SYSTEM:0 "$COUNTRY$不能拿 $SYSTEM$ 星系做交易"
  INFLUENCE_COST:0 "£influence $VALUE|0Y$"
  INFLUENCE_COST_FRACTIONS:0 "£influence $VALUE|2Y$"
  FTL_MAGNET:0 "超光速(FTL)拦截器"
@@ -849,7 +848,7 @@
  MANUAL_RESETTLEMENT_VIEW_COST:0 "花费"
  MANUAL_RESETTLEMENT_VIEW_COST_DESC:0 "这是安置所需要的资源量。"
  MANUAL_RESETTLEMENT_VIEW_RESETTLE_NUMPOPS:0 "安置$POPS|Y$人口"
- MANUAL_RESETTLEMENT_VIEW_DRAGDROP_INFO:1 "在行星间拖拽人口来进行安置。\n\n行星上应有§Y$building_capital_1$§!来作为有效地安置目标。"
+ MANUAL_RESETTLEMENT_VIEW_DRAGDROP_INFO:1 "在行星间拖拽人口来进行安置。"
  RESETTLE_POP_IS_GROWING:1 "人口已发展完全"
  RESETTLE_PLANET_UNDER_COLONIZATION:0 "行星已被完全殖民"
  BASE_COLON:0 "基础值：$VALUE|Y$"
@@ -1013,6 +1012,7 @@
  MP_GAMESETUP_DESIGN_READY:0 "在编辑种族前请选择未就绪。"
  player_locations_normal:0 "正常"
  player_locations_normal_desc:1 "将在聚簇中随机防止各个帝国。"
+ player_locations_random:0 "随机"
  player_locations_random_desc:1 "将随机摆放帝国的位置，忽略聚簇在一起。"
  player_locations_clustered:0 "分散玩家"
  player_locations_clustered_desc:0 "会将玩家平均分布在聚簇中。"
@@ -1193,6 +1193,10 @@
  TRADE_ITEM_WORMHOLE_STATION_ACCESS_WE_SUBJECT:0 "因为$COUNTRY$是$SUBJECT$所以无法达成贸易。"
  SUPPORT_INDEPENDENCE_ALREADY_SUPPORTING:0 "已经在支持"
  
+ TRADE_NOT_OWNER_OF_SYSTEM:0 "$COUNTRY$不能拿 $SYSTEM$ 星系做交易"
+ TRADE_LACKING_RESOURCES: "$COUNTRY|H$ 无法交易资源"
+ TRADE_LACKING_STRATEGIC_RESOURCES: "$COUNTRY|H$ 无法交易战略资源"
+
  HAS_TRADE_ITEM_US:0 "§R我们已有了该物品的贸易。§!"
  HAS_TRADE_ITEM_THEM:0 "§R他们已发起该物品的贸易。§!"
  TRADE_ITEM_THREATEN_WAR:0 "威胁战争"
@@ -3486,6 +3490,7 @@
  SPECIAL_PROJECT_STATUS_HALTED:0 "已停止"
  SPECIAL_PROJECT_STATUS_COMPLETED:0 "已完成"
  SPECIAL_PROJECT_STATUS_FAILED:0 "已失败"
+ SPECIAL_PROJECT_STATUS_TIMED_OUT:0 "已过期"
  SITUATION_LOG_NAVIGATE_TO:0 "前往"
  SITUATION_LOG_NAVIGATE_TO_DESC:0 "§G点击后视角快速切换至该计划§!"
  SITUATION_LOG_COST_VALUE:0 "所需：$VALUE$"
@@ -3803,6 +3808,7 @@
  SECTION_ENTRY_WEAPON_SLOTS:0 "武器位"
  SECTION_ENTRY_UTILITY_SLOTS:0 "通用位"
  TYPE_OF_NEW_DESIGN:0 "选择想要设计的船只类型："
+
 
  SHIP_STAT_COST:1 "花费"
  SHIP_STAT_BUILD_TIME:1 "建造时间"
@@ -4185,6 +4191,7 @@
  PROJECT_ALREADY_FINISHED:0 "项目已研究完毕。"
  PROJECT_ALREADY_FAILED:0 "项目已失败。"
  PROJECT_CHOSEN_OTHER:0 "我们已选择了其他项目。"
+ PROJECT_ALREADY_TIMED_OUT:0 "项目已过期。"
  PROJECT_ESTIMATED_TIME:3 "开启项目\n§E项目将耗时$MONTHS|Y$个月。§!"
  PROJECT_ESTIMATED_TIME_WARNING:0 "\n\n§R任何当前正在进行的£$KEY$  §H$AREA$研究§!在此期间都将暂停！§!"
  SPECIAL_PROJECT_STATUS_DAYS:0 "进度：$CURRENT|0Y$/$MAX|0Y$ ( +$PROGRESS|0Y$每日 )。\n"
@@ -5089,7 +5096,6 @@
  ACTION_INSULT_TITLE:0 "侮辱"
  ACTION_INSULT_DESC:0 "侮辱对方将会极大地降低对方对我们的好感度。"
 
-
  ACTION_OFFER_FEDERATION_ASSOCIATION_TITLE:0 "邀请成为联邦协从国"
  ACTION_OFFER_FEDERATION_ASSOCIATION_DESC:0 "我们可以为他们在联邦中提供一个协从国席位。"
  ACTION_OFFER_FEDERATION_ASSOCIATION_LONG_DESC:0 "[Actor.GetName] 希望为 [Recipient.GetName] 提供一个联邦协从国席位。"
@@ -5111,7 +5117,6 @@
  ACTION_OFFER_FEDERATION_ASSOCIATION_STATUS_PROPOSAL_FAILED_ACTOR:0 "我们为 §H[Third_party.GetName]§! 发出的协从国邀请意愿被拒绝。"
  ACTION_OFFER_FEDERATION_ASSOCIATION_STATUS_PROPOSAL_FAILED_ALLIANCE:0 "§H[Actor.GetName]§! 成为 §H[Third_party.GetName]§! 协从国的提议被拒绝。"
  ACTION_OFFER_FEDERATION_ASSOCIATION_STATUS_PROPOSAL_FAILED_RECIPIENT:0 "§H[Actor.GetName]§! 成为 §H[Third_party.GetName]§! 协从国的提议被自动拒绝。"
-
  ACTION_OFFER_FEDERATION_ASSOCIATION_PROPOSAL_FAILED_RECIPIENT:0 "$ACTION_OFFER_FEDERATION_ASSOCIATION_STATUS_PROPOSAL_FAILED_RECIPIENT$"
  ACTION_REVOKE_FEDERATION_ASSOCIATION_STATUS_PROPOSAL_FAILED_ACTOR:0 "我们对 §H[Third_party.GetName]§! 的协从国席位废除提议被拒绝。"
  ACTION_REVOKE_FEDERATION_ASSOCIATION_STATUS_PROPOSAL_FAILED_ALLIANCE:0 "§H[Actor.GetName]§! 对 §H[Third_party.GetName]§! 发起的协从国席位废除提议被拒绝。"
@@ -5125,6 +5130,7 @@
  ACTION_ASK_FOR_FEDERATION_ASSOCIATION_STATUS_VOTE_FAILED:0 "让 §H[Actor.GetName]§! 成为 §H[Recipient.GetAllianceName]§! 协从国的提议未投票通过。"
  ACTION_OFFER_FEDERATION_ASSOCIATION_STATUS_VOTE_FAILED:0 "邀请 §H[Recipient.GetName]§! 成为 §H[Actor.GetAllianceName]§! 协从国的提议未投票通过。"
  ACTION_REVOKE_FEDERATION_ASSOCIATION_STATUS_VOTE_FAILED:0 "废除 §H[Recipient.GetName]§ 在 §H[Actor.GetAllianceName]§! 中的协从国席位提议未投票通过。"
+ ACTION_OFFER_FEDERATION_ASSOCIATION_VOTE_PASSED:0 "§H[Actor.GetAllianceName]§! 投票决定吸纳 §H[Recipient.GetName]§! 为联邦协从国。"
  ACTION_ASK_FOR_FEDERATION_ASSOCIATION_VOTE_PASSED:0 "§H[Recipient.GetAllianceName]§! 投票通过吸纳 §H[Actor.GetName]§! 为协从国。"
  ACTION_REVOKE_FEDERATION_ASSOCIATION_VOTE_PASSED:0 "§H[Actor.GetAllianceName]§! 投票通过废除 §H[Recipient.GetName]§! 的协从国席位。"
  ACTION_ASK_FOR_FEDERATION_ASSOCIATION_VOTE_FAILED:0 "吸纳 §H[Actor.GetName]§! 成为 §H[Recipient.GetAllianceName]§! 协从国的提议未投票通过。"

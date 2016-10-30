@@ -68,7 +68,7 @@
  POP_FACTION_PLANET_SEPARATIST_LEADER_IS_RULER:0 "派系领袖成为统治者"
  POP_FACTION_PLANET_SEPARATIST_REBELLION_DESC:1 "民众成立了§R防卫军§!，试图占领整个行星。"
  POP_FACTION_PLANET_SEPARATIST_GATHER_SUPPORT:0 "联合各方支持"
- POP_FACTION_PLANET_SEPARATIST_GATHER_SUPPORT_DESC:0 "分裂派人士在其他殖民地采用改变民心和降低人口幸福度的方式获得了各方支持。"
+ POP_FACTION_PLANET_SEPARATIST_GATHER_SUPPORT_DESC:0 "分裂派人士在其他殖民地采用改变道德准则和降低人口幸福度的方式获得了各方支持。"
  POP_FACTION_PLANET_SEPARATIST_REORGANIZING:0 "重组"
  POP_FACTION_PLANET_SEPARATIST_RECENTLY_FULL_SUPPORT:1 "星球上所有属于此派系的人口"
  POP_FACTION_PLANET_SEPARATIST_IS_NOT_OCCUPIED:0 "这个星球未被占领"
@@ -128,7 +128,7 @@
  malcontent_slaves_attraction_desc:0 "被奴役的人口将会隶属于奴隶派别之一，但没有个人意识的机械人口除外。其他人口将不会加入。\n\n§H该数值表明了奴役人口对反叛奴隶派别的吸引度。§!"
 
  purged_attraction_title:1 "§R---§!"
- purged_attraction_desc:1 "除机械外的所有被施行种族净化的人口都会归入反净化派系\n\n其他人口不会加入该派系。"
+ purged_attraction_desc:1 "除机械外的所有被施行种族清洗的人口都会归入反清洗派系\n\n其他人口不会加入该派系。"
 
  # Slave Demands
  pft_slave:1 "奴隶派系"
@@ -155,10 +155,11 @@
  FACTION_ACTION_SLAVE_EMANCIPATE_ALL_DESC:1 "解放所有奴役人口"
 
  # Slave Actions
-
- FACTION_ACTION_MALCONTENT_SLAVES_INTERSTELLAR_RAILROAD_TOOLTIP_2:0 "派别中当前有§R6§!人口。"
- FACTION_ACTION_MALCONTENT_SLAVES_INTERSTELLAR_RAILROAD_TOOLTIP_3:0 "派别中当前有§R8§!人口。"
+ FACTION_ACTION_MALCONTENT_SLAVES_INTERSTELLAR_RAILROAD_TOOLTIP_1: "派别中当前至少有§R4§!人口。"
+ FACTION_ACTION_MALCONTENT_SLAVES_INTERSTELLAR_RAILROAD_TOOLTIP_2:1 "派别中当前至少有§R6§!人口。"
+ FACTION_ACTION_MALCONTENT_SLAVES_INTERSTELLAR_RAILROAD_TOOLTIP_3:1 "派别中当前至少有§R8§!人口。"
  FACTION_ACTION_MALCONTENT_SLAVES_INTERSTELLAR_RAILROAD_TOOLTIP_4:0 "派别中当前有§R10§!以上人口。"
+
 
  FACTION_ACTION_SLAVE_HARSH_TREATMENT:0 "残酷奴役"
  FACTION_ACTION_SLAVE_HARSH_TREATMENT_DESC:0 "让所有奴隶乖乖听话。"
@@ -236,19 +237,19 @@
 
  ### PURGED
 
- pft_purged:0 "反净化派系"
- pft_purged_desc:1 "反净化派系由要被帝国施行种族净化以及同情其遭遇的人口组成。他们的主要诉求是获得生存的权利。\n\n§H所有被净化的人都会自动归入该派系。§!"
+ pft_purged:0 "反清洗派系"
+ pft_purged_desc:1 "反清洗派系由要被帝国施行种族清洗以及同情其遭遇的人口组成。他们的主要诉求是获得生存的权利。\n\n§H所有被清洗的人都会自动归入该派系。§!"
 
  # Demands
- POP_FACTION_PURGED_DEMAND_TITLE_1:0 "终止所有净化行动"
+ POP_FACTION_PURGED_DEMAND_TITLE_1:0 "终止所有清洗行动"
  POP_FACTION_PURGED_DEMAND_DESC_1:0 "终止所有对 [Root.Owner.GetName]人口的种族灭绝行动。"
 
  # Support Effects
 
  SUPPORT_EFFECT_PURGED_DEATH_STRUGGLE:0 "垂死挣扎"
- SUPPORT_EFFECT_PURGED_DEATH_STRUGGLE_DESC:0 "即将被净化和其支持者可能会进行破坏活动。"
- SUPPORT_EFFECT_PURGED_DEATH_REBELLION:0 "被净化者起义"
- SUPPORT_EFFECT_PURGED_DEATH_REBELLION_DESC:0 "被净化者在夜里密谋着建立一支反抗军。"
+ SUPPORT_EFFECT_PURGED_DEATH_STRUGGLE_DESC:0 "即将被清洗和其支持者可能会进行破坏活动。"
+ SUPPORT_EFFECT_PURGED_DEATH_REBELLION:0 "被清洗者起义"
+ SUPPORT_EFFECT_PURGED_DEATH_REBELLION_DESC:0 "被清洗者在夜里密谋着建立一支反抗军。"
 
  ### LIBERATE
 
@@ -318,7 +319,7 @@
 
  ### Slaves
  faction.6.title:0 "绝食示威！"
- faction.6.desc:0 " [Root.Owner.GetName]的奴隶用绝食的方式来破坏我们的生产手段——他们的身体。 [Root.GetName]派系的成员实际上是要将自己§Y净化§!，以挣脱 [Root.Owner.GetName]的枷锁。\n\n如果长期不制止这种情况，我们就有可能会损失大量的奴役人口。要么眼睁睁地看着这群可怜的家伙死掉，要么另寻方法对付这个恶劣的派系。"
+ faction.6.desc:0 " [Root.Owner.GetName]的奴隶用绝食的方式来破坏我们的生产手段——他们的身体。 [Root.GetName]派系的成员实际上是要将自己§Y清洗§!，以挣脱 [Root.Owner.GetName]的枷锁。\n\n如果长期不制止这种情况，我们就有可能会损失大量的奴役人口。要么眼睁睁地看着这群可怜的家伙死掉，要么另寻方法对付这个恶劣的派系。"
 
  faction.7.title:0 "奴隶革命！"
  faction.7.desc:0 " [slave_planet.GetName]的奴隶对其主人发动了革命，他们组织了一支非法的反抗军来破坏 [Root.Owner.GetName]对他们的合法约束！"
@@ -329,7 +330,7 @@
  faction.10.title:0 "奴隶骚动！"
  faction.10.desc:0 "奴隶们在[unrest_planet.GetName]行星上进行的大规模骚动对其生产力造成了一定程度的破坏。"
  faction.10.desc.colle:0 "[Root.Owner.GetName]上被奴役的人民渐渐感觉有些惧怕，是关于[unrest_planet.GetPlanetMoon]一直围绕着[unrest_planet.GetName]的动态。"
- faction.10.a.tooltip:0 "§HEnslaved Pops§!位于§H[unrest_planet.GetName]§!，获得了§RSlave Unrest§!加成系数，持续§Y4年§!。"
+ faction.10.a.tooltip:0 "§HEnslaved Pops§!位于§H[unrest_planet.GetName]§!，获得了§RSlave Unrest§!调整因素，持续§Y4年§!。"
 
  faction.15.title:0 "奴隶暴力！"
  faction.15.desc:0 "暴乱的奴隶们与[roving_gangs_planet.GetName]星球上的其他人口产生了武力冲突，导致对方人口死亡。\n\n死者的家属要如何对此反应，还有待观察。"
@@ -387,14 +388,14 @@
  ### Crusaders
 
  # Crusaders want to a crusade to against the heathens, conquer their capital
- faction.200.title:0 " [Root.GetName] Brand the Heathen  [parameter:heathens.GetName]!"
+ faction.200.title:0 "[Root.GetName]将[parameter:heathens.GetName]视为异教徒！"
  faction.200.desc:0 "他们将矛头指向了一颗异族星球，企图占领之。"
 
  holy_war_title:0 "圣战"
  holy_war_desc:0 "讨伐 [parameter:heathens.GetName]。"
  holy_war_1_poi:0 "资本制度"
  holy_war_1_poi_desc:0 "异教徒的行星。"
- profane_planets_seized:0 "净化亵渎的星球"
+ profane_planets_seized:0 "清洗亵渎的星球"
 
  # Capital conquered
  faction.201.title:0 "异教徒的首府被占领了！"
@@ -475,9 +476,9 @@
 
  ### Purged Faction
  faction.801.title:0 "垂死挣扎"
- faction.801.desc:0 "一些因为净化而陷入绝望的人在 [riot_planet.GetName]发起暴动，并将一座设施摧毁了。"
+ faction.801.desc:0 "一些因为清洗而陷入绝望的人在 [riot_planet.GetName]发起暴动，并将一座设施摧毁了。"
 
  faction.803.title:0 " [Root.GetName]叛变！"
- faction.803.desc:0 " [death_planet.GetName]上那些因净化而陷入绝望的人向 [Root.Owner.GetName]发起了武装叛变，并组建了一支涣散的反叛军。"
+ faction.803.desc:0 " [death_planet.GetName]上那些因清洗而陷入绝望的人向 [Root.Owner.GetName]发起了武装叛变，并组建了一支涣散的反叛军。"
  #mockup: "\n\n\n§HSuppress Followers§!\nCost: £influence §R150§!\n--------------\n§Y<FactionName>§!:\nMilitancy: §R+10%§!\nSupport: §G-30%§!"
  #mockup2: "\n\n\n§HSuppress Followers§!\nCost: £influence §Y150§!\n--------------\n§Y<FactionName>§!:\nMilitancy: §R+10%§!\nSupport: §G-30%§!"

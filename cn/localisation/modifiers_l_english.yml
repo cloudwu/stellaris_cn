@@ -7,8 +7,8 @@
  #Country
  MOD_COUNTRY_FORTIFICATION_STRENGTH:0 "繁衍韧性"
  MOD_COUNTRY_BORDER_MULT:0 "边界范围"
- MOD_COUNTRY_INFLUENCE_GAIN_ADD:0 "每月影响"
- MOD_COUNTRY_INFLUENCE_GAIN_MULT:0 "每月影响"
+ MOD_COUNTRY_INFLUENCE_GAIN_ADD:0 "每月影响力"
+ MOD_COUNTRY_INFLUENCE_GAIN_MULT:0 "每月影响力"
  MOD_COUNTRY_TRUST_GROWTH:0 "信任度增长"
  MOD_COUNTRY_EDICT_INFLUENCE_COST:0 "法令费用"
  MOD_COUNTRY_EDICT_INFLUENCE_COST_DESC:0 "影响到帝国内部法令实施的代价，增加或减少实施的代价。"
@@ -38,8 +38,8 @@
  MOD_COUNTRY_MAX_EMBASSIES:0 "最大化外交"
  MOD_COUNTRY_TRADE_ATTRACTIVENESS:0 "商业吸引力"
  WAR_ECONOMY_MOD:0 "§H防御战点数系数§R-100§!：§!"
- MOD_COUNTRY_RESETTLEMENT_COST_MULT:1 "重新安置价格"
- MOD_POP_RESETTLEMENT_COST_MULT:0 "重新安置价格"
+ MOD_COUNTRY_RESETTLEMENT_COST_MULT:1 "重新安置费用"
+ MOD_POP_RESETTLEMENT_COST_MULT:0 "重新安置费用"
 
  #Pop
  MOD_POP_FERTILITY:0 "繁衍韧性"
@@ -132,7 +132,7 @@
  MOD_ARMY_HEALTH:0 "陆战队生命值"
  MOD_ARMY_DAMAGE_MULT:0 "陆战队造成的伤害"
  MOD_ARMY_MORALE_DAMAGE_MULT:0 "斗志损伤"
- MOD_ARMY_GARRISON_HEALTH:1 "驻防健康"
+ MOD_ARMY_GARRISON_HEALTH:1 "卫戍部队生命值"
  MOD_ARMY_BUILD_SPEED_MULT:0 "陆战队建设速度"
  MOD_ARMY_MORALE:0 "陆战队斗志"
  MOD_ARMY_DEFENSE_MORALE_MULT:0 "防御时的陆战队斗志"
@@ -193,11 +193,11 @@
 
  #Spaceport
  MOD_SPACEPORT_SHIP_BUILD_COST_MULT:0 "飞船成本"
- MOD_SPACEPORT_SHIP_BUILD_COST_MULT_DESC:0 "影响工程船消耗的资源，增加或减少建设费用"
+ MOD_SPACEPORT_SHIP_BUILD_COST_MULT_DESC:0 "影响造船消耗的资源，增加或减少建造费用"
  MOD_SPACEPORT_SHIP_BUILD_TIME_MULT:1 "飞船建造时间"
- MOD_SPACEPORT_SHIP_BUILD_TIME_MULT_DESC:0 "影响工程船需要花费的时间。"
- MOD_SPACEPORT_MODULE_COST_MULT:0 "空间站模组成本"
- MOD_SPACEPORT_MODULE_COST_MULT_DESC:0 "修正向空间站添加模组的费用，增加或减少需要的资源。"
+ MOD_SPACEPORT_SHIP_BUILD_TIME_MULT_DESC:0 "影响造船需要花费的时间。"
+ MOD_SPACEPORT_MODULE_COST_MULT:0 "空间站模块成本"
+ MOD_SPACEPORT_MODULE_COST_MULT_DESC:0 "修正向空间站添加模块的费用，增加或减少需要的资源。"
 
  ####################################
  # Economy Modifiers
@@ -253,7 +253,7 @@
  shipsize_mining_station_build_cost_mult:0 "采矿站建造费用"
  shipsize_research_station_build_cost_mult:0 "研究站建造费用"
  shipsize_science_build_cost_mult:0 "科研船建造费用"
- shipsize_constructor_build_cost_mult:0 "构造器建造费用"
+ shipsize_constructor_build_cost_mult:0 "工程船建造费用"
  shipsize_colonizer_build_cost_mult:0 "殖民船建造费用"
  shipsize_military_station_small_build_cost_mult:0 "防御平台建造费用"
  shipsize_military_station_medium_build_cost_mult:0 "防御站建造费用"
@@ -271,7 +271,7 @@
  shipsize_mining_station_upkeep_mult:0 "采矿站维护"
  shipsize_research_station_upkeep_mult:0 "研究站维护"
  shipsize_science_upkeep_mult:0 "科研船维护"
- shipsize_constructor_upkeep_mult:0 "构造器维护"
+ shipsize_constructor_upkeep_mult:0 "工程船维护"
  shipsize_colonizer_upkeep_mult:0 "殖民船维护"
  shipsize_military_station_small_upkeep_mult:1 "防御平台维护"
  shipsize_military_station_medium_upkeep_mult:1 "防御站维护"
@@ -608,7 +608,7 @@
  opinion_broke_non_aggression_pact:0 "违反互不侵犯条约"
  opinion_broke_migration_pact:0 "违反移民合约"
  opinion_broke_guarantee:0 "违反保证"
- opinion_demanded_subjectization:0 "拒绝镇压"
+ opinion_demanded_subjectization:0 "拒绝征服"
  opinion_changed_alliance:0 "改变联盟"
  opinion_kicked_from_alliance:0 "将我方踢出了联盟"
  opinion_tried_to_kick:0 "曾试图将我方踢出联盟"

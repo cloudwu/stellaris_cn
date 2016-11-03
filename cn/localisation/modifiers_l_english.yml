@@ -7,8 +7,8 @@
  #Country
  MOD_COUNTRY_FORTIFICATION_STRENGTH:0 "繁衍韧性"
  MOD_COUNTRY_BORDER_MULT:0 "边界范围"
- MOD_COUNTRY_INFLUENCE_GAIN_ADD:0 "每月影响"
- MOD_COUNTRY_INFLUENCE_GAIN_MULT:0 "每月影响"
+ MOD_COUNTRY_INFLUENCE_GAIN_ADD:0 "每月影响力"
+ MOD_COUNTRY_INFLUENCE_GAIN_MULT:0 "每月影响力"
  MOD_COUNTRY_TRUST_GROWTH:0 "信任度增长"
  MOD_COUNTRY_EDICT_INFLUENCE_COST:0 "法令费用"
  MOD_COUNTRY_EDICT_INFLUENCE_COST_DESC:0 "影响到帝国内部法令实施的代价，增加或减少实施的代价。"
@@ -196,8 +196,8 @@
  MOD_SPACEPORT_SHIP_BUILD_COST_MULT_DESC:0 "影响造船消耗的资源，增加或减少建造费用"
  MOD_SPACEPORT_SHIP_BUILD_TIME_MULT:1 "飞船建造时间"
  MOD_SPACEPORT_SHIP_BUILD_TIME_MULT_DESC:0 "影响造船需要花费的时间。"
- MOD_SPACEPORT_MODULE_COST_MULT:0 "空间站模组成本"
- MOD_SPACEPORT_MODULE_COST_MULT_DESC:0 "修正向空间站添加模组的费用，增加或减少需要的资源。"
+ MOD_SPACEPORT_MODULE_COST_MULT:0 "太空港模块成本"
+ MOD_SPACEPORT_MODULE_COST_MULT_DESC:0 "修正向太空港添加模块的费用，增加或减少需要的资源。"
 
  ####################################
  # Economy Modifiers
@@ -209,7 +209,7 @@
  ####################################
  # Resource Modifiers
  ####################################
- tile_resource_energy_mult:0 "能量点数"
+ tile_resource_energy_mult:0 "能源点数"
  tile_resource_energy_mult_DESC:0 "帝国所有人口的能源额度产量都受到这种价值的调整。"
  tile_resource_minerals_mult:0 "矿物"
  tile_resource_minerals_mult_DESC:0 "帝国所有人口的矿物生产输出都受到这种价值的调整。"
@@ -222,7 +222,7 @@
  tile_resource_food_mult:0 "食物"
  tile_resource_food_mult_DESC:0 "帝国所有人口生产的食物都受到这种价值的调整。"
  tile_resource_influence_mult:1 "影响产出"
- resource_energy_add:0 "能量点数"
+ resource_energy_add:0 "能源点数"
  resource_minerals_add:0 "矿物产出"
  resource_physics_research_add:0 "物理研究"
  resource_society_research_add:0 "社会研究"
@@ -249,7 +249,7 @@
  shipsize_destroyer_build_cost_mult:0 "驱逐舰建造费用"
  shipsize_cruiser_build_cost_mult:0 "巡洋舰建造费用"
  shipsize_battleship_build_cost_mult:0 "战巡舰建造费用"
- shipsize_orbital_station_build_cost_mult:0 "空间站建造费用"
+ shipsize_orbital_station_build_cost_mult:0 "太空港建造费用"
  shipsize_mining_station_build_cost_mult:0 "采矿站建造费用"
  shipsize_research_station_build_cost_mult:0 "研究站建造费用"
  shipsize_science_build_cost_mult:0 "科研船建造费用"
@@ -267,7 +267,7 @@
  shipsize_destroyer_upkeep_mult:0 "驱逐舰维护"
  shipsize_cruiser_upkeep_mult:0 "巡洋舰维护"
  shipsize_battleship_upkeep_mult:0 "战巡舰维护"
- shipsize_spaceport_upkeep_mult:0 "空间站维护"
+ shipsize_spaceport_upkeep_mult:0 "太空港维护"
  shipsize_mining_station_upkeep_mult:0 "采矿站维护"
  shipsize_research_station_upkeep_mult:0 "研究站维护"
  shipsize_science_upkeep_mult:0 "科研船维护"
@@ -491,12 +491,12 @@
  pop_xenophobes_vs_migration:0 "移民政策"
  pop_xenophiles_vs_migration:0 "移民政策"
  pop_uplifted:0 "升变"
- pop_species_purging:0 "种族大清洗"
- pop_colony_purging:0 "邻国清洗"
- pop_purging:0 "清洗"
- pop_had_purge:0 "试图清洗"
- pop_species_had_purge:0 "种族大清洗"
- pop_colony_had_purge:0 "邻国被清洗"
+ pop_species_purging:0 "同族遭肃清"
+ pop_colony_purging:0 "邻居遭肃清"
+ pop_purging:0 "肃清"
+ pop_had_purge:0 "试图肃清"
+ pop_species_had_purge:0 "同族曾遭肃清"
+ pop_colony_had_purge:0 "邻居曾遭肃清"
  pop_happiness_from_other_species:0 "来自邻国"
  pop_planet_terraforming:0 "正在进行地面改造"
  pop_recently_conquered:0 "刚刚被征服"
@@ -569,7 +569,7 @@
  ## POLICIES
  opinion_policy_interference:0 "干预政策"
  opinion_policy_slavery:0 "奴隶政策"
- opinion_policy_purge:0 "清洗政策"
+ opinion_policy_purge:0 "大清洗政策"
  opinion_policy_orbital_bombardment:0 "轰炸政策"
  opinion_policy_voting_rights:0 "投票权政策"
  opinion_policy_leadership:0 "领导层政策"
@@ -591,7 +591,7 @@
  ## ACTIONS
  opinion_warmonger:0 "好战者"
  opinion_genocidal:0 "种族灭绝"
- opinion_genocidal_our_species:1 "清洗种族"
+ opinion_genocidal_our_species:1 "肃清我族"
  opinion_slaver:0 "奴隶犯子"
  opinion_nuker:0 "恐怖性爆炸"
 

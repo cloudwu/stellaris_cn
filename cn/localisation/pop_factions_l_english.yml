@@ -128,7 +128,7 @@
  malcontent_slaves_attraction_desc:0 "被奴役的人口将会隶属于奴隶派别之一，但没有个人意识的机械人口除外。其他人口将不会加入。\n\n§H该数值表明了奴役人口对反叛奴隶派别的吸引度。§!"
 
  purged_attraction_title:1 "§R---§!"
- purged_attraction_desc:1 "除机械外的所有被施行种族清洗的人口都会归入反清洗派系\n\n其他人口不会加入该派系。"
+ purged_attraction_desc:1 "除机器人外所有遭肃清的人口都会隶属于反肃清派系。\n\n其他人口不会加入该派系。"
 
  # Slave Demands
  pft_slave:1 "奴隶派系"
@@ -237,19 +237,19 @@
 
  ### PURGED
 
- pft_purged:0 "反清洗派系"
- pft_purged_desc:1 "反清洗派系由要被帝国施行种族清洗以及同情其遭遇的人口组成。他们的主要诉求是获得生存的权利。\n\n§H所有被清洗的人都会自动归入该派系。§!"
+ pft_purged:0 "反肃清派系"
+ pft_purged_desc:1 "反肃清派系由帝国正在肃清的人口以及同情其遭遇的人口组成。他们的主要诉求是获得生存的权利。\n\n§H所有遭肃清的人口会自动归入该派系。§!"
 
  # Demands
- POP_FACTION_PURGED_DEMAND_TITLE_1:0 "终止所有清洗行动"
- POP_FACTION_PURGED_DEMAND_DESC_1:0 "终止所有对 [Root.Owner.GetName]人口的种族灭绝行动。"
+ POP_FACTION_PURGED_DEMAND_TITLE_1:0 "终止所有肃清行动"
+ POP_FACTION_PURGED_DEMAND_DESC_1:0 "终止所有对[Root.Owner.GetName]人口的系统性灭绝行动。"
 
  # Support Effects
 
  SUPPORT_EFFECT_PURGED_DEATH_STRUGGLE:0 "垂死挣扎"
- SUPPORT_EFFECT_PURGED_DEATH_STRUGGLE_DESC:0 "即将被清洗和其支持者可能会进行破坏活动。"
- SUPPORT_EFFECT_PURGED_DEATH_REBELLION:0 "被清洗者起义"
- SUPPORT_EFFECT_PURGED_DEATH_REBELLION_DESC:0 "被清洗者在夜里密谋着建立一支反抗军。"
+ SUPPORT_EFFECT_PURGED_DEATH_STRUGGLE_DESC:0 "即将被肃清者和其支持者可能会进行破坏活动。"
+ SUPPORT_EFFECT_PURGED_DEATH_REBELLION:0 "反肃清起义"
+ SUPPORT_EFFECT_PURGED_DEATH_REBELLION_DESC:0 "即将被肃清的人不会在沉默中死亡，他们正建立一支反抗军。"
 
  ### LIBERATE
 
@@ -319,7 +319,7 @@
 
  ### Slaves
  faction.6.title:0 "绝食示威！"
- faction.6.desc:0 " [Root.Owner.GetName]的奴隶用绝食的方式来破坏我们的生产手段——他们的身体。 [Root.GetName]派系的成员实际上是要将自己§Y清洗§!，以挣脱 [Root.Owner.GetName]的枷锁。\n\n如果长期不制止这种情况，我们就有可能会损失大量的奴役人口。要么眼睁睁地看着这群可怜的家伙死掉，要么另寻方法对付这个恶劣的派系。"
+ faction.6.desc:0 " [Root.Owner.GetName]的奴隶用绝食的方式来破坏我们的生产手段——他们的身体。 [Root.GetName]派系的成员实际上是要自我§Y肃清§!，以挣脱 [Root.Owner.GetName]的枷锁。\n\n如果长期不制止这种情况，我们就有可能会损失大量的奴役人口。要么眼睁睁地看着这群可怜的家伙死掉，要么另寻方法对付这个恶劣的派系。"
 
  faction.7.title:0 "奴隶革命！"
  faction.7.desc:0 " [slave_planet.GetName]的奴隶对其主人发动了革命，他们组织了一支非法的反抗军来破坏 [Root.Owner.GetName]对他们的合法约束！"
@@ -476,9 +476,9 @@
 
  ### Purged Faction
  faction.801.title:0 "垂死挣扎"
- faction.801.desc:0 "一些因为清洗而陷入绝望的人在 [riot_planet.GetName]发起暴动，并将一座设施摧毁了。"
+ faction.801.desc:0 "一些因大清洗而陷入绝望的人在 [riot_planet.GetName]发起暴动，并将一座设施摧毁了。"
 
- faction.803.title:0 " [Root.GetName]叛变！"
- faction.803.desc:0 " [death_planet.GetName]上那些因清洗而陷入绝望的人向 [Root.Owner.GetName]发起了武装叛变，并组建了一支涣散的反叛军。"
+ faction.803.title:0 " [Root.GetName]起义！"
+ faction.803.desc:0 " [death_planet.GetName]上那些因大清洗而陷入绝望的人向 [Root.Owner.GetName]发起了武装叛变，并组建了一支涣散的反叛军。"
  #mockup: "\n\n\n§HSuppress Followers§!\nCost: £influence §R150§!\n--------------\n§Y<FactionName>§!:\nMilitancy: §R+10%§!\nSupport: §G-30%§!"
  #mockup2: "\n\n\n§HSuppress Followers§!\nCost: £influence §Y150§!\n--------------\n§Y<FactionName>§!:\nMilitancy: §R+10%§!\nSupport: §G-30%§!"

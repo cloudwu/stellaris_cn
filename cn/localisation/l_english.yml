@@ -2910,7 +2910,7 @@
  OWNER_CAPITAL:0 "$OWNER$首都"
  OWNER_COLONY:0 "$OWNER$殖民地"
  OWNER_OUTPOST:0 "$OWNER$哨所"
- SORT_BY:0 "排序"
+ SORT_BY:0 "排序方式"
  UNEMPLOYED:0 "失业"
  CONSUMPTION:0 "消耗"
  PRODUCTION:0 "生产"
@@ -4038,9 +4038,9 @@
  GOVERNMENT_CHANGE_YEARS:1 "§R* 必须等上至少$YEARS|Y$年($DATE|Y$)§!"
  GOVERNMENT_CHANGE_MONTHS:0 "§R* $MONTHS|Y$月后($DATE|Y$)方可对政府进行改革§!"
  GOVERNMENT_CHANGE_CANNOT_AFFORD:0 "§R* 我们无力支付£influence  $COST|Y$影响力！§!"
- BUDGET_EFFECTS:0 "经济影响"
- EMPIRE_EFFECTS:0 "帝国影响"
- POP_EFFECTS:0 "人口影响"
+ BUDGET_EFFECTS:0 "经济效应"
+ EMPIRE_EFFECTS:0 "帝国效应"
+ POP_EFFECTS:0 "人口效应"
  POP_EFFECTS_DESC:0 "这些效应将对你帝国中的全部人口起效。单个人口也会在当地层面受其他调整因素的影响。"
 
 
@@ -4599,6 +4599,7 @@
  MUTUAL_THREAT_ACCEPTANCE_FACTOR:2 "共同的威胁"
  ALLIANCE_SPONSOR_FACTOR:0 "由提供$SPONSOR|H$"
  ALLIANCE_ACCEPTANCE_FACTOR:0 "已是联盟"
+ FEDERATION_ACCEPTANCE_FACTOR:0 "共处联邦"  # 此处是原版 bug ，缺少这个条目，误删。
  ALLIANCE_ACCEPTANCE_SWARM_THREAT:0 "大量威胁"
  ALLIANCE_ACCEPTANCE_THREAT:0 "其他帝国的威胁"
  VOTE:0 "投票"
@@ -7956,3 +7957,8 @@
  EXPANSION_PLANNER_COLONIZE_SOURCE_DESC:0 "§G点击选择地表板块§!"
  EXPANSION_PLANNER_SURFACE_VIEW:0 "殖民 $TARGET_PLANET$"
  EXPANSION_PLANNER_ALREADY_HAD_EXPANSION_ENTRY:0 "§R星球已列入殖民计划。§!"
+
+ Size:0 "大小"  # 以下四条是原本 Bug ，显示在行星扩张计划面板上。补上这四条才能正确翻译。
+ Cost:0 "费用"
+ Modifiers:0 "修正因子"
+ Status:0 "状态"

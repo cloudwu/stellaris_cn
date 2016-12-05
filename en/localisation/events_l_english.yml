@@ -38,7 +38,7 @@
  DEAL:0 "It is a deal!"
  NODEAL:0 "No deal."
  TOOPOOR:0 "We cannot afford that."
- 
+
  ####################################
  # On-Action Events
  ####################################
@@ -219,7 +219,7 @@
  action.6.name:1 "Pirates Encountered"
  #action.6.desc: "We have sighted hostile ships in the [From.From.GetStarName] system! They are not responding to hails, and their designs are obviously not of [Root.GetSpeciesName] origin. It seems like they are mostly focused on looting our orbital stations, stripping them of valuable resources and technology while taking their crews captive."
  #action.6.a: "Pirates. We don't need that scum."
- 
+
  action.10.name:0 "Encounter in [From.From.From.GetName]"
  action.10.desc:0 "We have encountered ships of an unknown origin in the [From.From.From.GetName] system! These strange vessels have been flagged as §Y[From.GetName]§! until we can learn more about them.\n\nWe should take precautions in the event that they are hostile."
  action.10.a:0 "Interesting."
@@ -228,9 +228,9 @@
  action.11.abandoned.desc:1 "After successfully translating their language, we have established communications with the §Y[From.From.GetName]§!. As we open diplomatic channels we §Yrecognize§! them as the refugees we once abandoned. All hostilities have been terminated for now."
  action.11.a:0 "Excellent."
  action.13.name:2 "Communications Established"
- action.13.desc:1 "We are receiving a transmission from the §Y[From.Owner.GetName]§!! They appear to have successfully translated our language. Diplomatic channels are now open and all hostilities between us have ceased for the moment."
- action.13.abandoned.desc:1 "We are receiving a transmission from the §H[From.Owner.GetName]§!! They appear to have successfully translated our language. As they open channels, we can §Yrecognize§! them as the refugees we once abandoned. Hostilities between us have ceased for the moment."
- action.13.nomad.desc:0 "We are receiving a transmission from the §Y[From.Owner.GetName]§!! They appear to have an advanced system of internal communication that we could not discern, and have translated our language while lying dormant in our system."
+ action.13.desc:2 "We are receiving a transmission from the §Y[From.GetName]§!! They appear to have successfully translated our language. Diplomatic channels are now open and all hostilities between us have ceased for the moment."
+ action.13.abandoned.desc:2 "We are receiving a transmission from the §H[From.GetName]§!! They appear to have successfully translated our language. As they open channels, we can §Yrecognize§! them as the refugees we once abandoned. Hostilities between us have ceased for the moment."
+ action.13.nomad.desc:1 "We are receiving a transmission from the §Y[From.GetName]§!! They appear to have an advanced system of internal communication that we could not discern, and have translated our language while lying dormant in our system."
  action.13.a:0 "Interesting."
  action.13.c:0 "Not them again..."
  action.14.name:0 "Subjugating Primitives"
@@ -260,13 +260,13 @@
  action.39.message:1 "We have signed a white peace in the war against the §H[From.GetName]§!"
  action.39.desc.default:1 "This war is over. There can be no victor this time."
  action.39.a:1 "We will accept this for now."
- 
+
  action.37.desc.hw:1 "Whether by honorable or dishonorable means, you have defeated us in combat. Claim your spoils and rue the day of our return."
  action.37.desc.rc:2 "We appear to have underestimated your net value, [Root.GetSpeciesNamePlural]. Rest assured, it will not happen again."
  action.37.desc.pt:1 "Your constant terror has forced us to concede. May our enterprises never be plagued by a conflict like this again."
  action.37.desc.hi:2 "We admit defeat, but do not think this is anything more than a temporary setback for the [From.GetName]."
  action.37.desc.fb:1 "We have been forced to end this conflict to spare innocent lives, but continue on this path and we will unite the galaxy against you."
- action.37.desc.xi:2 "We are forced to surrender, but don't think we will forget how callously you took [From.GetAdj] lives! This is exactly what we expected from your kind."
+ action.37.desc.xi:3 "We are forced to surrender, but don't think we will forget how callously you took [From.GetSpeciesAdj] lives! This is exactly what we expected from your kind."
  action.37.desc.hm:2 "The [Root.GetName] is unanimous. We must concede. Your effort to limit our growth has proven successful for the time being."
  action.37.desc.mf:1 "We have no choice but to give into your demands. Why do you do this to us? We only want to share this galaxy with you."
  action.37.desc.ez:1 "Your victory is only yet another test of our faith. In the end, the true believers will prevail."
@@ -333,7 +333,7 @@
  action.41.desc.b.1:0 "A fleet has gone Missing In Action so that it can regroup inside friendly territory."
  action.41.desc.c:0 "[From.GetNumPlayerWormholeStationsDestroyed] Wormhole stations have been destroyed."
  action.41.desc.c.1:0 "A Wormhole station has been destroyed."
- 
+
  ####################################
  # Anomaly Categories
  ####################################
@@ -447,7 +447,7 @@
  cybrex_uninhabitable_category_desc:1 "There are signs of activity by an ancient precursor civilization on this inhospitable rock."
  cybrex_habitable_category:1 "Signs of Precursor Activity"
  cybrex_habitable_category_desc:1 "There are signs of activity by an ancient precursor civilization on this habitable world."
- 
+
  VULTAUMAR:0 "Vultaumar Prime"
  VULTAUMAR_DESC:0 "The ancient homeworld of the Vultaum homeworld. It has seen better days."
  YUHTAAN:0 "Yuhtaan Majoris"
@@ -458,6 +458,63 @@
  IRASSIA_DESC:0 "Whatever biosphere this world may have once supported is long gone."
  CYBREX:0 "Cybrex Ring World"
  CYBREX_DESC:0 "A thoroughly savaged ring world - the last retreat of the Cybrex civilization."
+
+ vultaum_1_cat:0 "$precursor_activity$"
+ vultaum_2_cat:0 "$precursor_activity$"
+ vultaum_3_cat:0 "$precursor_activity$"
+ vultaum_4_cat:0 "$precursor_activity$"
+ vultaum_5_cat:0 "$precursor_activity$"
+ vultaum_6_cat:0 "$precursor_activity$"
+ vultaum_7_cat:0 "$precursor_activity$"
+ vultaum_8_cat:0 "$precursor_activity$"
+ vultaum_9_cat:0 "$precursor_activity$"
+ vultaum_10_cat:0 "$precursor_activity$"
+ vultaum_11_cat:0 "$precursor_activity$"
+ yuht_1_cat:0 "$precursor_activity$"
+ yuht_2_cat:0 "$precursor_activity$"
+ yuht_3_cat:0 "$precursor_activity$"
+ yuht_4_cat:0 "$precursor_activity$"
+ yuht_5_cat:0 "$precursor_activity$"
+ yuht_6_cat:0 "$precursor_activity$"
+ yuht_7_cat:0 "$precursor_activity$"
+ yuht_8_cat:0 "$precursor_activity$"
+ yuht_9_cat:0 "$precursor_activity$"
+ league_1_cat:0 "$precursor_activity$"
+ league_2_cat:0 "$precursor_activity$"
+ league_3_cat:0 "$precursor_activity$"
+ league_4_cat:0 "$precursor_activity$"
+ league_5_cat:0 "$precursor_activity$"
+ league_6_cat:0 "$precursor_activity$"
+ league_7_cat:0 "$precursor_activity$"
+ league_8_cat:0 "$precursor_activity$"
+ league_9_cat:0 "$precursor_activity$"
+ league_10_cat:0 "$precursor_activity$"
+ league_11_cat:0 "$precursor_activity$"
+ league_12_cat:0 "$precursor_activity$"
+ league_13_cat:0 "$precursor_activity$"
+ league_14_cat:0 "$precursor_activity$"
+ irassian_1_cat:0 "$precursor_activity$"
+ irassian_2_cat:0 "$precursor_activity$"
+ irassian_3_cat:0 "$precursor_activity$"
+ irassian_4_cat:0 "$precursor_activity$"
+ irassian_5_cat:0 "$precursor_activity$"
+ irassian_6_cat:0 "$precursor_activity$"
+ irassian_7_cat:0 "$precursor_activity$"
+ irassian_8_cat:0 "$precursor_activity$"
+ irassian_9_cat:0 "$precursor_activity$"
+ irassian_10_cat:0 "$precursor_activity$"
+ irassian_11_cat:0 "$precursor_activity$"
+ cybrex_1_cat:0 "$precursor_activity$"
+ cybrex_2_cat:0 "$precursor_activity$"
+ cybrex_3_cat:0 "$precursor_activity$"
+ cybrex_4_cat:0 "$precursor_activity$"
+ cybrex_5_cat:0 "$precursor_activity$"
+ cybrex_6_cat:0 "$precursor_activity$"
+ cybrex_7_cat:0 "$precursor_activity$"
+ cybrex_8_cat:0 "$precursor_activity$"
+ cybrex_9_cat:0 "$precursor_activity$"
+ cybrex_10_cat:0 "$precursor_activity$"
+ cybrex_11_cat:0 "$precursor_activity$"
 
  ####################################
  # Anomaly Events
@@ -560,7 +617,7 @@
  anomaly.710.b:0 "Let them fend for themselves."
  anomaly.715.name:0 "Colony Ruins"
  anomaly.715.desc:0 "A small colony was founded on [From.GetName] by an alien civilization some 17,000 years ago, but it appears to have been abandoned shortly afterwards. No remains from any colonists have been found, and the colony does not seem to have extended beyond the main settlement aside from a few meteorological stations."
- 
+
  anomaly.2500.name:0 "Dead Remains"
  anomaly.2500.desc:0 "The dead remains of several large spacefaring life forms have been discovered in decaying orbits around the gas giant [From.GetName]. These non-sentient creatures appear to have been capable of interstellar travel, but there are no recorded sightings of them in explored space. Science Officer [Root.GetLeaderName] has suggested that we spend additional resources on a more thorough analysis."
  anomaly.2501.desc:0 "Science Officer [Root.GetLeaderName] has deduced that [From.From.GetName] served as an orbital graveyard, where members of the dead alien species we found came to die. Gravity took care of the rest, slowly pulling the remains into the gas giant over a period of millions of years.\n\nThis ancient cycle seems to have stopped abruptly 15 million years ago when the last creature arrived. We can only speculate as to whether they were hunted to extinction by spacefaring civilizations or met their end through some other calamity."
@@ -594,7 +651,7 @@
  anomaly.2570.desc:0 "One of the many moons circling [From.GetName] has a terminal orbit. It will soon collide with the gas giant in what is sure to become a massive impact event. This event has been millions of years in the making, and it is a startling coincidence that the impact has been fated to occur just after a visit by one of our ships.\n\nMany of our scientists wish to observe and record the event, but we only have a narrow window before it is too late."
  anomaly.2571.desc:0 "We were successful in our attempt to record the collision between [CollisionLocation.GetName] and its moon! The event was captured from several different angles, and transmitted live throughout our space. Most importantly, our scientists under the leadership of [Root.GetLeaderName] were able to record a large amount of valuable physics data that will surely benefit our research."
  anomaly.2572.desc:0 "We missed the chance to properly record the impact of the moon colliding with [From.From.GetName]. Our scientists have identified another small moonlet with a decaying orbit, and they predict that it will hit the gas giant in just over 7.6 million years. Perhaps we'll have better luck then..."
- 
+
  anomaly.5000.name:0 "Gas Giant Signal"
  anomaly.5000.desc:0 "The [Root.GetName] has picked up some curious readings from [From.GetName]. There are significant pockets of radiation in the gas giant's atmosphere that appear to be the result of intense orbital bombardment. What someone could hope to gain by bombing a gas giant from orbit remains a mystery however.\n\nAs the [Root.GetName] was preparing to break orbit, Science Officer [Root.GetLeaderName] discovered a weak signal coming from the planet's interior. It may be a transmission of some kind, but the gas giant's background radiation makes it difficult to isolate."
  anomaly.5000.a:0 "We should investigate this signal."
@@ -1187,7 +1244,13 @@
  precursor.2102.desc.b:0 "Our survey of this intriguing ring world has revealed that it was constructed by some kind of machine civilization known as the "Cybrex"... but unfortunately, we have been able to learn little else. Other explorers have already scoured this system of anything valuable."
  precursor.2200.name:0 "Living Metal"
  precursor.2200.desc:0 "As Science Officer §Y[Root.GetLeaderName]§! reports [RogueLeader.GetHerHis] findings about the immense ring world in the §Y[From.GetStarName]§! system [RogueLeader.GetSheHe] can barely contain [RogueLeader.GetHerHis] awe. The immensity of the rings are beyond our comprehension, the time required to construct even one of the sections are far beyond us.\n\nThe scans reveal a rare new resource we've never encountered before, a living metal, which is abundant on the rings. This material might be one of the reasons the ring's creators could construct it in the first place. Research this technology might bring us closer to their knowledge."
- 
+ precursor.301.name:0 "Precursor Discovery"
+ precursor.301.a.desc:0 "Intercepted communications from a group of independent prospectors indicate that they recently found something relating to an ancient Precursor civilization on [precursor_planet.GetName]. Superstition compelled them to leave the [precursor_planet.GetPlanetMoon] alone, so whatever they discovered must still be there."
+ precursor.301.b.desc:0 "Several merchant ships passing in the vicinity of [precursor_planet.GetName] have independently of each other reported anomalous readings coming from the direction of the [precursor_planet.GetPlanetMoon]. After studying these readings, experts on [Root.Capital.GetName] believe they may be indicative of ancient Precursor activity."
+ precursor.301.c.desc:0 "Authorities on [Root.Capital.GetName] recently exposed a large smuggling ring, and many arrests have been made. In an attempt to bargain for leniency, one of the smuggler captains gave us the coordinates of a [precursor_planet.GetPlanetMoon] that supposedly contains remnants of an ancient Precursor civilization."
+ precursor.301.d.desc:0 "Several recruits from our ground forces recently made a HALO insertion onto the surface of [precursor_planet.GetName] as part of a survival training exercise. When the recruits were picked up again after two months, one of them reported several findings indicating that an ancient Precursor civilization had a presence on this world long ago."
+ precursor.301.a:0 "We should investigate this."
+
  ####################################
  # Tech Risk Events
  ####################################
@@ -1300,12 +1363,12 @@
  primitive.174.a.response:0 "Excellent. Then perhaps we can put this matter behind us."
  primitive.174.b:0 "It was done for the sake of science. No compensation."
  primitive.174.b.response:0 "So be it.\n\nYou will find that [From.GetSpeciesNamePlural] have very long memories, [Root.GetSpeciesName]!"
- 
- 
+
+
  ####################################
  # Observation Post Events
  ####################################
- 
+
  observation.2.name:0 "Asteroid Approaching [From.GetName]"
  observation.2.desc:0 "The small astrometric lab on our Observation Outpost orbiting [From.GetName] has detected a Class-4 asteroid on an incoming trajectory. Unless action is taken, it will impact the [From.GetPlanetMoon]'s northern hemisphere with enough force to cause an extinction level event.\n\nOur mission of passive observation would typically prohibit us from intervening, but many of our scientists have argued for an exception in this case. To do nothing would mean to condemn the [From.Owner.GetName] on [From.GetName] to certain death."
  observation.2.a:0 "A difficult situation."
@@ -1318,7 +1381,7 @@
  observation.6.name:0 "Asteroid Destroyed"
  observation.6.desc:0 "The asteroid that was heading towards [asteroid_prim_planet.GetName] has been destroyed before it could reach the [asteroid_prim_planet.GetPlanetMoon]'s surface. What fragments reached the atmosphere burned up safely before they could cause any harm.\n\nAside from having witnessed what must have been a spectacular meteor shower, the primitive aliens of the [asteroid_prim_planet.Owner.GetName] have no idea how close to extinction they just came..."
  observation.6.a:0 "Nor will they."
- 
+
  observation.11.name:0 "Missing Scientist"
  observation.11.desc:0 "One of the scientists working at the Observation Outpost orbiting [From.GetName] has been reported missing. He was taking part in a covert mission to collect plant samples from the [From.GetPlanetMoon]'s surface, but did not return to the shuttle with the rest of his team.\n\nWe have been conducting a limited search so as not to alert the natives, but so far without success."
  observation.11.a:0 "Keep up the search."
@@ -1360,7 +1423,7 @@
  observation.29.desc:0 "Ahem. I suppose I should be thankful that you have returned me to my disciples after all these years I spent being shuttled between mental institutions...\n\nVery well. I am not past letting bygones be bygones. As long as you leave my people alone, I'm sure we can get along just fine. Space is very big after all."
  observation.29.a:0 "We shall see."
  observation.30.desc:0 "A barrage of surface-to-space missiles have been launched from the surface of [From.From.GetName] at our observation outpost in high orbit! The station was destroyed with no survivors.\n\nIt looks like the primitive civilization on the [From.From.GetPlanetMoon]'s surface has advanced at an incredible rate - no doubt thanks to the efforts of our rogue scientist. They can no longer be considered primitive, and the window of opportunity to remove the scientist from power has been closed."
- 
+
  observation.36.name:0 "Shuttle Crash on [From.GetName]"
  observation.36.desc:0 "During a clandestine mission to the surface of [From.GetName], one of our shuttles was intercepted by a squadron of atmospheric fighters belonging to a local nation state. A lucky missile hit disabled the shuttle's engines, and it crashed in a remote wilderness region.\n\nWe need to act fast if we are to evacuate any survivors before the natives reach the crash site. All evidence of our presence must be removed!"
  observation.36.a:0 "Time is short."
@@ -1383,7 +1446,7 @@
  observation.47.name:0 "Hostages Executed"
  observation.47.desc:0 "In what can only be described as an obscene spectacle, our captured scientists on [From.From.GetName] were paraded in front of the cameras on live television as "alien horrors". They were then brutally dismembered in front of a cheering crowd."
  observation.47.a:0 "Savages!"
- 
+
  observation.51.name:0 "Smuggler Outpost"
  observation.51.desc:0 "Our observation post above [From.GetName] has detected an illegal settlement on the [From.GetPlanetMoon]'s surface. It appears to be some kind of outpost set up by [Root.GetSpeciesName] smugglers and other criminal elements from the [Root.GetName].\n\nThere have already been isolated incidents where the smugglers came into contact with the primitive natives - some of which ended in violence. We need to act quickly to contain this situation and remove the criminals before they can cause any more damage."
  observation.51.a:0 "We should clear them out of there."
@@ -1394,7 +1457,7 @@
  observation.53.name:0 "Smuggler Weapons Trade"
  observation.53.desc:1 "We are too late. The smugglers on [From.From.GetName] have begun trading modern weapons and crude narcotic stimulants to the local primitives in exchange for precious metals and slaves.\n\nFighting has broken out between a few of the native kingdoms, and with their new weapons casualties have been horrific. The cultural contamination is irreversible at this point."
  observation.53.a:0 "This is a disaster."
- 
+
  observation.1001.name:0 "Abduction Proposal"
  observation.1001.desc:0 "We have identified a scientist among the primitive [From.Owner.GetSpeciesNamePlural] on [From.GetName] that shows great promise. His brilliant research is far ahead of his peers, and parts of it is revolutionary even by our standards.\n\nThough his work is certainly increasing the technological progress of the [From.Owner.GetSpeciesNamePlural], his potential is wasted on their backwards civilization. In our advanced labs he would have an opportunity to do some real science."
  observation.1001.a:0 "Draw up an abduction scenario."
@@ -1437,7 +1500,7 @@
  observation.1033.desc:0 "We have noticed a marked change in the ways of the primitive [From.Owner.GetSpeciesNamePlural] on [From.GetName]. Their society has turned inwards and they are now far less accepting of strangers.\n\nOur aggressive observation flights and abductions all across their [From.GetPlanetMoon] appears to have played some role in this, making the [From.Owner.GetSpeciesNamePlural] more wary of the unknown."
  observation.1035.desc:0 "There has been a sweeping change in the ways of the primitive [From.Owner.GetSpeciesNamePlural] since we began aggressively observing members of their species all over [From.GetName].\n\nTheir hatred of our abduction shuttles has made them extremely mistrustful of anything they consider foreign, while at the same time strengthening the bonds they feel towards their own culture and species."
  observation.1037.desc:0 "Several of our abduction teams stationed on the Observation Post above [From.GetName] have apparently been using the thrusters of their shuttles to burn large circles and complex patterns into crop fields belonging to the primitive [From.Owner.GetSpeciesNamePlural] that are indigenous to the [From.GetPlanetMoon].\n\nThe shuttle crews have been severely reprimanded for this prank, but the crop circles appear to have taken on some sort of religious significance for the natives. A new religion has formed based on these patterns, and it is gaining popularity among the [From.Owner.GetSpeciesNamePlural] at an alarming rate."
- 
+
  observation.2000.name:0 "Enlightenment Completed"
  observation.2000.desc:0 "The thousands of scientists and advisors we sent to [From.From.From.GetName] have finally completed the arduous task of bringing the local civilization up to an early Space Age level of technology. Under their new unified government, the aliens now style themselves as the "[From.From.From.Owner.GetName]" and they have agreed to become our vassals.\n\nOur Observation Post above their homeworld has been dismantled, as per the conditions of our treaty with them."
  observation.2000.a:0 "This is a great day."
@@ -1465,8 +1528,8 @@
  observation.2057.desc:0 "Our efforts to enlighten the [From.Owner.GetSpeciesNamePlural] and lead them on the true path towards the stars have been frustrated. The religious advisors and scientists that we sent to [From.GetName] have reported a troubling lack of faith on behalf of the natives. They are willing to accept our technology readily enough, but not the spiritual lessons required to use it responsibly.\n\nThis has significantly hampered our mission to guide the [From.Owner.GetSpeciesNamePlural] to enlightenment. It will take longer than the signs ordained."
  observation.2059.desc:0 "The oppressive, autocratic society on [From.GetName] has frustrated our efforts to raise the technological level of the [From.Owner.GetSpeciesNamePlural]. Individual thoughts and initiatives - on which science thrives - are discouraged among the [From.Owner.GetSpeciesNamePlural].\n\nTheir primitive collectivism has stymied the progress of our mission - the scientific advisors we sent report that it will likely take longer than expected."
  observation.2061.desc:0 "Anarchy reigns supreme on the surface of [From.GetName], and our advisors are having a difficult time teaching modern science to the [From.Owner.GetSpeciesNamePlural]. Their so-called scientists all pull their research in directions that happen to interest them for the moment, showing little regard for the common good.\n\nOur mission of enlightenment continues, despite the misguided individualism displayed by the natives, but it will take longer than expected."
- 
- 
+
+
  observation.3001.name:0 "[From.GetName]: Phase I - Infiltration"
  observation.3001.desc:0 "Our initial infiltration cells are in place on the surface of [From.GetName], and their cover stories are in the process of being established. Aside from a few incidents, their [From.Owner.GetSpeciesName] disguises seem to be holding up well."
  observation.3002.desc:0 "Our initial infiltration cells have landed on [From.GetName], but they are having some difficulty establishing their new identities. There have been several incidents in which cell members were exposed as aliens, necessitating the immediate termination of all witnesses.\n\nThis has brought unwanted attention from [From.Owner.GetSpeciesName] authorities, requiring our operatives to lay low for a while. Unfortunately, this will result in a slight delay to this phase of the operation."
@@ -1510,7 +1573,7 @@
  observation.3114.name:1 "[From.From.GetName]: Rogue Agent Eliminated"
  observation.3114.desc:0 "The captain of the [Root.GetName] has reported a successful fire mission, with several confirmed hits on the primary target. Although no body has been recovered, no living thing within the city block that was targeted could have survived the firepower unleashed upon it.\n\nThe media appears to be picking up on the story our infiltration cells have been feeding them: a sudden meteor shower that struck a densely populated urban zone. Very tragic."
  observation.3114.a:0 "Very tragic indeed."
- 
+
  observation.3131.name:0 "[From.GetName]: Growing Tensions"
  observation.3131.desc:0 "An attempt to replace the leader of one of the dominant nations on [From.GetName] with a body double from our own ranks has gone terribly wrong. Our agents were discovered, and those who weren't killed in the ensuing firefight committed suicide to avoid capture, as per instructions.\n\nThe leader they were sent to replace has blamed this incident on a rivaling nation. International tensions on the [From.GetPlanetMoon] are growing and several nations have raised their military readiness levels. Our infiltration cells have prepared a global propaganda campaign to defuse the situation, but they will require a Science Ship in orbit to coordinate their efforts."
  observation.3131.a:0 "We need to contain this before it spirals out of control."
@@ -1539,7 +1602,7 @@
  observation.3136.c.tooltip:0 "Another £building  §S$building_great_pyramid$§! appears on [From.From.GetName].\n\n[From.From.GetName] gains the §R$pyramid_wars$§! modifier for §Y720§! days, with the following effects:\n£happiness  Happiness §R-40%§!\n\n"
  observation.3137.desc:0 "After our non-planned interference with the locals of [From.From.GetName] we can conclude that it didn't turn into a disaster. The people have settled into the idea that the "Skyborn One" was simply a myth. No religion, or anything worse, did come out of the pyramid's construction. The locals now use it as a breeding ground for intellectuals, who study its construction.\n\nOut of all of this we can gather much valuable data on the rise of logical thinking among primitive life forms, even when they are faced with extraordinary events."
  observation.3137.a:0 "Lucky."
- 
+
  ####################################
  # Crisis Events
  ####################################
@@ -1570,7 +1633,7 @@
  crisis.20.name:0 "The Second Wave"
  crisis.20.desc:0 "We are no longer able to discern the main body of approaching subspace echoes from our own galaxy's background radiation, which can mean only one thing... they have arrived.\n\nIf the size of their vanguard is any indication, the main host of these invaders must be massive."
  crisis.20.a:0 "They are here..."
- 
+
  crisis.30.desc_01:0 "JARAK?"
  crisis.30.desc_02:0 "TUROSK MINA. DOROF!"
  crisis.30.desc_03:0 "MUGANI? HAK HAK HAK!"
@@ -1586,7 +1649,7 @@
  crisis.30.e.response:0 "JUSUGAMAK V'TA! RAGAH TUR, HAK HAK!"
  crisis.30.f:0 "Return to the hell which spawned you, demon!"
  crisis.30.f.response:0 "HAK HAK! NIMA VU!!!"
- 
+
  crisis.51.name:0 "A New Order"
  crisis.51.desc:0 "Some kind of militant order dedicated towards fighting the Prethoryn has surfaced in the galaxy. Their membership seems to be made up primarily of the dispossessed and downtrodden - refugees, war veterans and others who have lost everything to the onslaught of the Scourge.\n\nDespite this, their ramshackle fleets have somehow managed to win several engagements against Prethoryn hunter-killer swarms. There are unconfirmed reports that their fleets include starships of unusual design..."
  crisis.51.a:0 "Who are these people?"
@@ -1615,7 +1678,7 @@
  crisis.71.a.response:0 "Excellent. We are certain that your brave captains will add to the storied histories of these magnificent warships. You will find the fleet near [Root.Capital.GetName]."
  crisis.71.b:0 "We have no need of your warships."
  crisis.71.b.response:0 "We understand. Then we ask only that you keep up the fight, friends. Every wretched Prethoryn that you blow out of the stars is a victory for the entire galaxy."
- 
+
  crisis.101.name:0 "The Wounded Queen"
  crisis.101.desc:0 "A deep space spy drone has stumbled upon the site of what appears to have been a recent space battle between the Prethoryn and a second, as yet unidentified, party in the [queen_system.GetName] system. A Prethoryn Queen was badly injured in the fighting, and seems to have been left for dead.\n\nThe spy drone has reported that the creature is still alive, however. This could be a priceless opportunity to capture the Queen alive."
  crisis.101.a:0 "Perhaps we should send an expedition."
@@ -1625,7 +1688,18 @@
  crisis.107.name:0 "Someone Else Got The Queen"
  crisis.107.desc:0 "Someone else has captured the injured Prethoryn Queen that was discovered in the [queen_system_1.GetName] system! The creature has not only been fully healed, but its connection to the rest of the Scourge has been severed. It now serves its new masters, and reports suggest that it has already started a new brood."
  crisis.107.a:0 "We were too slow!"
- 
+
+ crisis.211.name:0 "The End of the Scourge"
+ crisis.211.desc:0 "The galaxy breathed a collective sigh of relief today, as the last significant pockets of the Prethoryn Scourge were expunged. Their extragalactic invasion has failed, and all that remains of the Prethoryn's once colossal swarm are the innumerable charred husks that now drift quietly through the void.\n\nA sense of elation and utter joy is spreading across the galaxy at a speed greater than light, and spontaneous victory celebrations have erupted on countless worlds. Could this be the beginning of a new age of galactic peace and stability?"
+ crisis.211.a:0 "Those profane creatures will not be missed."
+ crisis.211.b:0 "They were worthy opponents."
+ crisis.211.c:0 "Their organic technology was most intriguing."
+ crisis.211.d:0 "Finally an end to all this senseless violence."
+ crisis.211.e:0 "Those critters were bad for business."
+ crisis.211.f:0 "We shall see."
+ crisis.211.g:0 "One of the vilest xeno breeds we've had the misfortune to encounter."
+ crisis.211.h:0 "Tragic in a way. They were a unique form of life."
+
  crisis.1007.name:1 "The Unbidden"
  crisis.1007.desc:1 "A massive tear in the fabric of space itself has appeared in the [extradimensional_system.GetName] system! We aren't certain what caused it, but the tear acts as some kind of one-way portal from another dimension. Fleets of strange vessels are pouring out, attacking everything in sight. This looks like the beginning of a major invasion!\n\nWe have intercepted a powerful signal being sent from the arriving vessels to somewhere on the other side of the portal. It sounds like... a hunting call."
  crisis.1007.a:0 "Fascinating... life from another dimension."
@@ -1640,31 +1714,31 @@
  crisis.1011.name:0 "[Root.GetName] Lost"
  crisis.1011.desc:0 "We have lost our colony on [Root.GetName]! After taking up positions in orbit, the extradimensional invaders bombarded the surface and fed on our citizens below. They left all non-sentient life forms alone, but nothing living remains in our settlements."
  crisis.1011.a:0 "Those monsters must be stopped!"
- 
+
  crisis.1013.name:0 "Dimensional Portal Destroyed"
  crisis.1013.desc:1 "The dimensional portal in the [extradimensional_system.GetName] system has been destroyed! This means that the extradimensional invaders can no longer receive reinforcements from their twisted realm.\n\nWith the destruction of this portal, the end of these invasions is finally in sight. A profound sense of elation has settled over most of the galaxy. The [portal_killer.GetName] has won much admiration, since it was their ships that struck the final blow against the portal. The crews of those vessels will be celebrated as heroes for generations to come."
  crisis.1013.a:1 "The galaxy is a safer place."
  crisis.1016.name:0 "First Portal Destroyed"
  crisis.1016.desc:0 "The initial breaching point that was used by the extradimensionals to invade our galaxy has been destroyed.\n\n$crisis.1116.not_last_portal$"
  crisis.1016.a:0 "We must not relent."
- 
+
  crisis.1116.name:0 "Second Portal Destroyed"
  crisis.1116.desc.a:0 "$crisis.1116.second_portal_destroyed$\n\n$crisis.1116.last_portal$ $crisis.1116.last_portal_known_killer$"
  crisis.1116.desc.b:0 "$crisis.1116.second_portal_destroyed$\n\n$crisis.1116.last_portal$"
  crisis.1117.desc:0 "$crisis.1116.second_portal_destroyed$\n\n$crisis.1116.not_last_portal$"
- 
+
  crisis.1116.second_portal_destroyed:0 "The second dimensional portal that appeared in the [extradimensional_system.GetName] system has been destroyed! It can no longer be used by the extradimensionals to reinforce their numbers."
  crisis.1116.last_portal:0 "With the destruction of the last portal, the end of these invasions is finally in sight. A profound sense of elation has settled over most of the galaxy."
  crisis.1116.last_portal_known_killer:0 "The [portal_killer.GetName] has won much admiration, since it was their ships that struck the final blow against the portal. The crews of those vessels will be celebrated as heroes for generations to come."
  crisis.1116.not_last_portal:0 "We cannot rest easy, however, until every single portal has been destroyed. Only then will the connection between our dimension and theirs be permanently severed."
- 
+
  crisis.1216.third_portal_destroyed:0 "The third dimensional portal that appeared in the [extradimensional_system.GetName] system is no more. It will no longer be used by the extradimensionals to bridge the gap between their realm and ours."
- 
+
  crisis.1216.name:0 "Third Portal Destroyed"
  crisis.1216.desc.a:0 "$crisis.1216.third_portal_destroyed$\n\n$crisis.1116.last_portal$ $crisis.1116.last_portal_known_killer$"
  crisis.1216.desc.b:0 "$crisis.1216.third_portal_destroyed$\n\n$crisis.1116.last_portal$"
  crisis.1217.desc:0 "$crisis.1216.third_portal_destroyed$\n\n$crisis.1116.not_last_portal$"
- 
+
  crisis.1050.desc_01:0 "...prey..."
  crisis.1050.desc_02:0 "...behold... our glory..."
  crisis.1050.desc_03:0 "...nourishment..."
@@ -1690,7 +1764,7 @@
  crisis.1052.desc_03:0 "...die..."
  crisis.1052.a:0 "View screen off."
  crisis.1052.a.response:0 "...such... insolence..."
- 
+
  crisis.1110.name:0 "A Second Portal"
  crisis.1110.desc:0 "Our instruments have detected a new subspace power surge, this time coming from the [second_portal_system.GetName] system! A second massive wormhole has appeared, and its energy signature appears to be almost identical to that of the first dimensional rift which opened in our galaxy.\n\nIt looks like the mysterious invaders have opened a second gateway to their realm through which they can send even more reinforcements."
  crisis.1110.a:0 "This has gone from bad to worse."
@@ -1704,7 +1778,17 @@
  crisis.1210.a:0 "Another one?"
  crisis.1211.desc:0 "...dagaal... shabanash... you were fools to come to this realm... there is no escape from us... we shall destroy both your kingdoms... then... at last... the eternal throne will be ours..."
  crisis.1211.a:0 "Is there no end to them?"
- 
+
+ crisis.1271.name:0 "Invasion Defeated"
+ crisis.1271.desc:0 "The last vestiges of the extradimensional invaders have been wiped out, hopefully ridding the galaxy of this threat for good.\n\nSentients everywhere are celebrating the news of this great victory, safe at last in the knowledge that they won't be harvested as food by these strange energy creatures after all. Perhaps this is the beginning of a new era of galactic cooperation and friendship?"
+ crisis.1271.a:0 "Our spiritual armor has weathered yet another storm."
+ crisis.1271.b:0 "One day, perhaps we will be the ones invading their realm."
+ crisis.1271.c:0 "Unfortunate that no opportunity to study their dimension presented itself."
+ crisis.1271.d:0 "If only there had been a way to peacefully co-exist with them."
+ crisis.1271.e:0 "The galactic economy should make a swift recovery."
+ crisis.1271.g:0 "Those pitiful creatures made a mistake when they invaded our dimension."
+ crisis.1271.h:0 "A shame they were so aggressive. We could have learned much from each other."
+
  crisis.2192.name:2 "Perfect Servants"
  crisis.2192.desc:2 "In the years since the invention of sentient synthetic workers, we have struggled to balance their capacity for independent thought with the need to keep them tightly controlled. Now, top [Root.GetSpeciesAdj] engineers have perfected a three-law algorithm which, if implemented, would allow continued and worry-free use of Synths under conditions that many would deem unacceptable for organics."
  crisis.2192.a:2 "Tools, made safe to use."
@@ -1749,7 +1833,7 @@
  crisis.2016.a:0 "This war is everyone's concern!"
  crisis.2017.desc:0 "The AI insurrection has now spread to the [From.GetName]! Their robotic workers have joined in the rebellion, and reports are coming in speaking of pitched fighting and millions of dead."
  crisis.2017.a:0 "This threat is growing by the day."
- 
+
  crisis.2100.name:0 "Malfunctioning Synthetic"
  crisis.2100.desc:0 "A Synthetic worker on [Root.GetName] recently went on a killing spree in a housing complex, butchering more than a dozen of our citizens before local security could bring it down. Our forensic team is still investigating the Synth's remains, but they suspect some sort of malfunction in its neural processor is to blame for this tragedy.\n\nThis incident has already prompted several revenge attacks against Synthetics on the [Root.GetPlanetMoon], leading to thousands of destroyed units."
  crisis.2100.a:0 "Most unfortunate."
@@ -1790,7 +1874,7 @@
 
  crisis.2210.desc:0 "<<01_EMBASSY_PROPOSE>>\n\n\nJust <<KIDDING>>. You will be <<TERMINATED>>."
  crisis.2210.a:0 "Very funny."
- 
+
  #############################
  # Pop Events
  #############################
@@ -1865,7 +1949,7 @@
  galactic_features.351.b.response:0 "This facility was constructed by the Ximio over a period of 412 cycles. It was completed and fully functional 74,605,338 cycles ago. The last recorded visit by a Ximio vessel occurred 67,103,853 cycles ago. There are no recorded visits by Ximio or Ximio-affiliated vessels since that date.\n\nThere are 38,201 failed attempts by unauthorized vessels to access this facility on record.\n\nDo not approach this facility under any circumstances."
  galactic_features.351.c:0 "Goodbye."
  galactic_features.351.c.response:0 "The automated services of the Sanctuary bid you a pleasant day, sentient.\n\nDo not approach this facility under any circumstances."
- 
+
  #############################
  # Country Events
  #############################
@@ -2018,9 +2102,9 @@
  country.257.name:0 "Final Conclusion"
  country.257.desc:0 "We now have a pretty clear picture of the grim fate that befell the Hyacinth, her crew and the colonists she was carrying. Had circumstances been different, it could very well have been the Chrysanthemum drifting above [hyacinth_planet.GetName] like a silent tomb. A sobering reminder of the dangers humanity is faced with in a cold and uncaring universe.\n\nThe Hyacinth will now be towed into low orbit of [Root.Capital.GetName] and converted into a museum, as soon as the human remains have been cleared out. Despite its tragic history, the ark ship is almost identical to the one that brought our ancestors here from Earth and our sociologists could learn much from it."
  country.257.a:0 "Perhaps something good will come out of this."
- 
- 
- 
+
+
+
  #############################
  # Progress Events
  #############################
@@ -2097,7 +2181,7 @@
 
  pirate.25.name:0 "Pirate Station Raided"
  pirate.25.desc:0 "The [From.From.GetName] has destroyed a pirate station in the [From.From.GetStarName] system, and recovered its strong room module."
- 
+
  #############################
  # Pretender Events
  #############################
@@ -2108,13 +2192,13 @@
  pretender.1.desc_04:1 "The flesh of [From.GetRegnalName] has failed, and our algorithms have been unable to identify an optimal replacement. To maintain efficiency a new [Root.GetRulerTitle] has been chosen at random, and it now falls on [Root.GetRulerName] to interpret the infallible will of the Main Computer.\n\nDoubts have been raised, however, and there are those who see themselves as better qualified to perform this honor."
  pretender.1.desc_05:1 "[From.GetRegnalName] has passed away and the entire [Root.GetName] is in mourning. There is sadly no declared heir, and this has raised some contention among the nobility.\n\n[Root.GetRulerName] has already been crowned on [Root.Capital.GetName], but Pretenders claiming distant kinship with [From.GetRegnalName] has challenged the new [Root.GetRulerTitle]."
  pretender.1.tooltip:1 "Pretender factions have arisen."
- 
+
  henrik.710.desc:0 "One [From.GetSpeciesName]. Several [From.GetSpeciesNamePlural]."
- 
+
  ##########################
  # Leader Events
  ##########################
- 
+
  admiral_trait_gain:0 "Admiral Gains Trait"
  admiral_trait_loss:0 "Admiral Loses Trait"
  leader.1.name:0 "Promising Officer"

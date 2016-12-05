@@ -106,6 +106,8 @@
  HAS_NOT_NUM_OWNED_PLANETS:0 "Number of owned planets is NOT $COMPARATOR$ $NUM|Y$"
  HAS_NUM_POPS:0 "Number of Pops is $COMPARATOR$ $NUM|Y$"
  HAS_NOT_NUM_POPS:0 "Number of Pops is NOT $COMPARATOR$ $NUM|Y$"
+ HAS_NUM_STRATEGIC_RESOURCES:0 "Has access to $COMPARATOR$ $NUM|Y$ Strategic Resources"
+ HAS_NOT_NUM_STRATEGIC_RESOURCES:0 "Does NOT have access to $COMPARATOR$ $NUM|Y$ Strategic Resources"
  HAS_NUM_POP_FACTIONS:0 "Number of Pop Factions is $COMPARATOR$ $NUM|Y$"
  HAS_NOT_NUM_POP_FACTIONS:0 "Number of Pop Factions is NOT $COMPARATOR$ $NUM|Y$"
  HAS_GOVERNMENT:0 "Has $GOV|Y$"
@@ -475,6 +477,17 @@
  CAN_JOIN_FACTIONS_TRIGGER:0 "Is able to join a faction"
  IS_CUSTOM_CAPITAL_LOCATION_NOT_TRIGGER:0 "Is NOT a custom capital location"
  IS_CUSTOM_CAPITAL_LOCATION_TRIGGER:0 "Is a custom capital location"
+ NUM_SPECIES_NOT_TRIGGER:0 "Number of species is NOT $COMPARATOR$ $NUM|Y$"
+ NUM_SPECIES_TRIGGER:0 "Number of species is $COMPARATOR$ $NUM|Y$"
+ NUM_SPECIES_UNIQUE_NOT_TRIGGER:0 "Number of unique species is NOT $COMPARATOR$ $NUM|Y$"
+ NUM_SPECIES_UNIQUE_TRIGGER:0 "Number of unique species is $COMPARATOR$ $NUM|Y$"
+ 
+ HAS_NOT_NUM_COUNTRIES:0 "Number of Empires is NOT $COMPARATOR$ $NUM|Y$"
+ HAS_NUM_COUNTRIES:0 "Number of Empires is $COMPARATOR$ $NUM|Y$"
+ HAS_NOT_POP_PERCENTAGE:0 "Number of Pops is NOT $COMPARATOR$ $NUM|Y%$"
+ HAS_POP_PERCENTAGE:0 "Number of Pops is $COMPARATOR$ $NUM|Y%$"
+ HAS_NOT_MIGRATION_TREATY:0 "Does NOT have a migration treaty with $COUNTRY|Y$"
+ HAS_MIGRATION_TREATY:0 "Has a migration treaty with $COUNTRY|Y$"
  
  ####################################
  # Effects
@@ -519,6 +532,7 @@
  SET_PRIMITIVE_EFFECT_YES:0 "Set primitive status\n"
  SET_PRIMITIVE_EFFECT_NO:0 "Removes primitive status\n"
  CREATE_POP:0 "One Pop is created\n"
+ BUILD_POP:0 "One buildable Pop is built\n"
  MODIFY_DEVELOPMENT_POS:0 "Increase infrastructure by $VALUE|Y$\n"
  MODIFY_DEVELOPMENT_NEG:0 "Reduce infrastructure by $VALUE|Y$\n"
  CREATE_COLONY_EFFECT:0 "A colony is created\n"
@@ -825,3 +839,4 @@
  SET_PLANET_NAME_EFFECT:0 "Is now known as $NEW_NAME|Y$"
  SET_SECTOR_NAME_EFFECT:0 "Is now known as $NEW_NAME|Y$"
  CLOSEST_SYSTEM:0 "§HNearby System§!:"
+ effect_every_owned_pop:0 "All Pops:\n"

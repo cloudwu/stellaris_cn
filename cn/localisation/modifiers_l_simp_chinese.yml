@@ -397,7 +397,9 @@
  category_psionics_research_speed_mult:0 "研究速度（灵能）"
 
  hydroponics_farm_build_cost_mult:0 "水培农场建造花费"
+ hydroponics_farm_construction_speed_mult:0 "水培农场建筑速度"
  mining_network_build_cost_mult:0 "复合矿场建造花费"
+ mining_network_construction_speed_mult:0 "复合矿场建筑速度"
 
  ####################################
  # Static Modifiers
@@ -448,6 +450,18 @@
 
  nomad_strength:0 "银河游牧民"
 
+ pirate_power:0 "海盗势力"
+ cloud_power:0 "虚空云怪"
+ enigmatic_power:0 "神秘势力"
+ technosphere_power:0 "科技领域势力"
+ dreadnought_power:0 "无畏舰势力"
+ sanctuary_power:0 "避难所实力"
+
+ curator_insight:0 "馆长的智慧"
+ curator_insight_desc:0 "馆长跟你分享了他们的知识。虽然需要巨量的翻译和解析工作，但是这些知识无疑能够增强你的认知。"
+ fallen_empire_gift_databanks:0 "先驱者数据缓存"
+ fallen_empire_gift_databanks_desc:0 "我们获得了来自某个堕落帝国的礼物——科技数据缓存。这些数据可以大幅推进我们的科研水平。"
+ 
  ####################################
  # Pop Modifiers
  ####################################
@@ -615,6 +629,7 @@
  opinion_declared_rival:0 "与我们敌对"
  opinion_mutual_threat:0 "共同的威胁"
  opinion_mutual_rival:0 "共同敌人"
+ opinion_ally_of_ally:0 "对待盟友"
  opinion_allied_to_rival:0 "化敌为友"
  opinion_rivals_with_ally:0 "反目成仇"
  opinion_insult:0 "受辱"
@@ -659,9 +674,17 @@
 
  opinion_primitive_violation:0 "附属基元"
  
+ opinion_fallen_empire_gift:0 "被馈赠的礼物"
  opinion_put_in_their_place:0 "放在他们那里"
  opinion_accepted_fallen_empire_demand:0 "接受要求"
  opinion_refused_fallen_empire_demand:0 "拒绝要求"
+ opinion_accepted_fallen_empire_request:0 "已接受的请求"
+ opinion_refused_fallen_empire_request:0 "已拒绝的请求"
+ opinion_refused_fallen_empire_task:0 "已拒绝的任务"
+ opinion_failed_fallen_empire_task:0 "已失败的任务"
+ opinion_majorly_failed_fallen_empire_task:0 "令我们极度失望"
+ opinion_spurned_fallen_empire_gift:0 "被蔑视的礼物"
+ opinion_completed_fallen_empire_task:0 "已完成的任务"
 
  opinion_heretical_research:0 "异端研究"
  encroaching_colony:0 "蚕食殖民地"
@@ -897,32 +920,15 @@
  stellarite_high_temp_desc:0 "这个星系中出现的怪物变导致这颗行星的温度不断升高。"
  stellarite_low_temp:0 "降温"
  stellarite_low_temp_desc:0 "这个星系中出现的怪物吞噬了该星系恒星的一部分，导致轨道上的小行星比通常情况下寒冷得多。"
- pirate_power:0 "海盗势力"
- cloud_power:0 "虚空云怪"
- enigmatic_power:0 "神秘势力"
- technosphere_power:0 "科技领域势力"
- dreadnought_power:0 "无畏舰势力"
- curator_insight:0 "馆长的智慧"
- curator_insight_desc:0 "馆长跟你分享了他们的知识。虽然需要巨量的翻译和解析工作，但是这些知识无疑能够增强你的认知。"
- fallen_empire_gift_databanks:0 "先驱者数据缓存"
- fallen_empire_gift_databanks_desc:0 "我们获得了来自某个堕落帝国的礼物——科技数据缓存。这些数据可以大幅推进我们的科研水平。"
- opinion_fallen_empire_gift:0 "被馈赠的礼物"
- opinion_accepted_fallen_empire_request:0 "已接受的请求"
- opinion_refused_fallen_empire_request:0 "已拒绝的请求"
- opinion_refused_fallen_empire_task:0 "已拒绝的任务"
- opinion_failed_fallen_empire_task:0 "已失败的任务"
- opinion_majorly_failed_fallen_empire_task:0 "令我们极度失望"
- opinion_spurned_fallen_empire_gift:0 "被蔑视的礼物"
- opinion_completed_fallen_empire_task:0 "已完成的任务"
- hydroponics_farm_construction_speed_mult:0 "水培农场建筑速度"
- mining_network_construction_speed_mult:0 "复合矿场建筑速度"
- opinion_ally_of_ally:0 "对待盟友"
- sanctuary_power:0 "避难所实力"
+
  ed_anchor_buildspeed:0 "船锚建筑"
  shipsize_anchor_station_construction_speed_mult:0 "船锚建筑"
+ 
  EVENT_LOCKED_FLEET:0 "§Y无法被攻击§!"
+ 
  precursor_research_speed:0 "异常现象研究速度（先驱）"
  precursor_fail_risk:0 "异常现象失败风险（先驱）"
+ 
  vultaum_1_cat_research_speed_mult:0 "$precursor_research_speed$"
  vultaum_1_cat_research_fail_risk_add:0 "$precursor_fail_risk$"
  vultaum_2_cat_research_speed_mult:0 "$precursor_research_speed$"

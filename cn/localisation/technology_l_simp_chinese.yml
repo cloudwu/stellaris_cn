@@ -300,6 +300,8 @@
  tech_cryostasis_1_desc:0 "这艘殖民船由人工智能控制，船员和居民都可以处于深度睡眠之中。"
  tech_cryostasis_2:0 "有自我意识的殖民船"
  tech_cryostasis_2_desc:1 "这是一个相当先进的系统，可以在知道目标的前提下自动选择并执行最优方案。"
+ tech_automated_exploration:0 "自动探索协议"
+ tech_automated_exploration_desc:0 "先进的人工智能可以辅助科学官探索新的世界、寻找新的生命和新的文明、以及前往从未有任何布洛葛去过的地方。通过人工智能的帮助，科学船可以探索宇宙。"
  
  # Resources
  tech_lythuric_gas:1 "莱素气体精炼"
@@ -322,7 +324,9 @@
  tech_antimatter_power_desc:0 "通过利用正反物质结合产生的能源，我们生成能源的效率将会超过核聚变。"
  tech_zero_point_power:0 "零点能源"
  tech_zero_point_power_desc:0 "这种发电机可以抽取真空能量，提供近乎无尽的能源。这是已知的最有效的能源产生方式。"
-
+ tech_enigmatic_power_core:0 "神秘发电"
+ tech_enigmatic_power_core_desc:0 "这些发电机可以让粒子以违背自然规律的方式相互互动。而且它们能够生产出比一般发电机更多的电力。"
+ 
  # Shield Components
  tech_shields_1:0 "偏导护盾"
  tech_shields_1_desc:0 "能量屏蔽罩可以在最大负荷内抵挡所有的敌方火力。它们的主要缺点是会耗费大量能量。"
@@ -338,7 +342,9 @@
  tech_shield_rechargers_1_desc:0 "这些电容里面储存着护盾的余能，可以在护盾被攻破的时候迅速转化为新的护盾。这会极大提升护盾的重新充能速度。"
  tech_planetary_shield_generator:0 "行星护盾"
  tech_planetary_shield_generator_desc:0 "在一个行星的大气层中制造出一层强大的护盾甚至比在真空中还要困难，但这能够在遭受轨道轰炸的时候工强有力的保护。"
-
+ tech_enigmatic_deflector:0 "神秘偏导护盾"
+ tech_enigmatic_deflector_desc:0 "这些偏导护盾的运作方式似乎有些违反自然法则。它们不知如何竟能够生成出比一般护盾强大好几倍的防护力场。"
+ 
  # Sensor Components
  tech_sensors_2:0 "重力探测器"
  tech_sensors_2_desc:0 "这些传感器一直在监测空间中的引力波动，比如星际飞船等物体的存在造成的引力变化。"
@@ -400,6 +406,14 @@
  #tech_aura_shield_dampener_desc:0 ""
  tech_aura_quantum_destabilizer:1 "量子去稳定剂"
  tech_aura_quantum_destabilizer_desc:1 "量子失稳装置会针对当地的量子场，干扰敌方船只上的敏感设备。"
+ tech_enigmatic_disruption_field:0 "神秘干扰力场"
+ tech_enigmatic_disruption_field_desc:1 "如果将弱性随机电磁波发射至当地区域时，将会暂且打断敌方的护盾与武器系统。"
+ 
+ # Aux
+ tech_enigmatic_encoder:0 "神秘编码器"
+ tech_enigmatic_encoder_desc:1 "神秘编码器可以随机打乱飞行路线数据，然后将其发送回舰队指挥处。"
+ tech_enigmatic_decoder:0 "神秘解码器"
+ tech_enigmatic_decoder_desc:1 "进行标准测试时，神秘编码器的预测准确率似乎随着目标飞行路线的随机度提升而提升。"
  
  # ###################################
  # Physics - Weapons
@@ -504,6 +518,12 @@
  tech_colonization_2_desc:1 "通过大气过滤，根据每个地方的基础更好地过滤掉不受欢迎的元素，殖民生活条件可能会有所改善。"
  tech_colonization_3:0 "适应敌对环境"
  tech_colonization_3_desc:1 "一步研究其他行星上发现的危险环境有助于缓解殖民者在日常生活中遇到的困难。"
+ tech_colonization_4:0 "外星土壤强化"
+ tech_colonization_4_desc:1 "对多种土壤的种类及适合作物进行研究后，我们可以提升殖民者在其他星球上的生存条件。\n\n"
+ tech_colonization_5:0 "恶劣气候研究"
+ tech_colonization_5_desc:1 "对不同星球的气候进行研究后，可以在拥有恶劣环境的星球上进行殖民。\n\n"
+ tech_tomb_world_adaption:0 "辐射伤害研究"
+ tech_tomb_world_adaption_desc:0 "对经过辐射的环境进行研究后，可以在被核冬天影响的星球上进行殖民。"
  tech_free_enterprises:0 "自由事业"
  #tech_free_enterprises_desc:0 ""
  tech_frontier_initiatives:0 "边界主动权"
@@ -542,6 +562,8 @@
  tech_continental_colonization_desc:1 "$tech_arctic_colonization_desc$"
  tech_frontier_health:0 "边界健康"
  tech_frontier_health_desc:1 "外星殖民开启了一个全新的医学研究领域。"
+ tech_frontier_hospital:0 "边境医院"
+ tech_frontier_hospital_desc:0 "随着殖民地的成长，它所需的医疗服务也随之增多。越大型的殖民地，面对的外星病原体就越多，也越致命。"
  tech_tb_mountain_range:0 "清除山脉"
  tech_tb_mountain_range_desc:1 "有时候，把外星地球化和拆迁没什么太大的区别。"
  tech_tb_volcano:0 "清除火山"
@@ -567,6 +589,10 @@
  tech_terrestrial_sculpting_desc:1 "没有简单的可以改变星球表面宏观尺度上的构造的办法 - 只能用更大的铲子 -或者完全部署好的钻头。"
  tech_atmospheric_manipulation:0 "大气操纵"
  tech_atmospheric_manipulation_desc:1 "湿度修正和化学分散单元是从根本上改变大气的第一步。"
+ tech_climate_restoration:0 "气候复苏"
+ tech_climate_restoration_desc:0 "通过增强对大气层操控的理解，哪怕是环境遭到最严重破坏的星球我们都一样能够改造。"
+ tech_gaia_creation:0 "创造盖亚"
+ tech_gaia_creation_desc:0 "创造盖亚星球这种适合几乎所有生命体居住的星星，是一个种族对改造术的掌握度的至高证明。\n\n"
 
  # Genetics
  tech_genome_mapping:0 "基因组作图"
@@ -591,7 +617,9 @@
  tech_capacity_boosters_desc:1 "我们不留漏洞，不计成本。通过严格管理DNA库，我们才能造就未来的领导人。"
  tech_regenerative_hull_tissue:0 "再生式船体组织"
  tech_regenerative_hull_tissue_desc:0 "转基因的硅基细菌可能能造出无机材料。"
-
+ tech_vitality_boosters:0 "生命力增强"
+ tech_vitality_boosters_desc:0 " "
+ 
  # Fleet Organization
  tech_doctrine_fleet_size_1:0 "学说：空间战争"
  tech_doctrine_fleet_size_1_desc:1 "逐步适应深空作战的现实使我们能够有效地协调大演习。"
@@ -810,38 +838,20 @@
  #tech_event_renewable_energy_desc:0 ""
  #tech_event_super_sensors:0 ""
  #tech_event_super_sensors_desc:0 ""
- tech_automated_exploration:0 "自动探索协议"
- tech_automated_exploration_desc:0 "先进的人工智能可以辅助科学官探索新的世界、寻找新的生命和新的文明、以及前往从未有任何布洛葛去过的地方。通过人工智能的帮助，科学船可以探索宇宙。"
- tech_enigmatic_power_core:0 "神秘发电"
- tech_enigmatic_power_core_desc:0 "这些发电机可以让粒子以违背自然规律的方式相互互动。而且它们能够生产出比一般发电机更多的电力。"
- tech_enigmatic_deflector:0 "神秘偏导护盾"
- tech_enigmatic_deflector_desc:0 "这些偏导护盾的运作方式似乎有些违反自然法则。它们不知如何竟能够生成出比一般护盾强大好几倍的防护力场。"
- tech_enigmatic_disruption_field:0 "神秘干扰力场"
- tech_enigmatic_disruption_field_desc:1 "如果将弱性随机电磁波发射至当地区域时，将会暂且打断敌方的护盾与武器系统。"
- tech_enigmatic_encoder:0 "神秘编码器"
- tech_enigmatic_encoder_desc:1 "神秘编码器可以随机打乱飞行路线数据，然后将其发送回舰队指挥处。"
- tech_enigmatic_decoder:0 "神秘解码器"
- tech_enigmatic_decoder_desc:1 "进行标准测试时，神秘编码器的预测准确率似乎随着目标飞行路线的随机度提升而提升。"
- tech_frontier_hospital:0 "边境医院"
- tech_frontier_hospital_desc:0 "随着殖民地的成长，它所需的医疗服务也随之增多。越大型的殖民地，面对的外星病原体就越多，也越致命。"
- tech_climate_restoration:0 "气候复苏"
- tech_climate_restoration_desc:0 "通过增强对大气层操控的理解，哪怕是环境遭到最严重破坏的星球我们都一样能够改造。"
- tech_gaia_creation:0 "创造盖亚"
- tech_gaia_creation_desc:0 "创造盖亚星球这种适合几乎所有生命体居住的星星，是一个种族对改造术的掌握度的至高证明。\n\n"
- tech_vitality_boosters:0 "生命力增强"
- tech_vitality_boosters_desc:0 " "
+ 
+ #####################################
+ # Gateways
+ #####################################
  gateway_capital:0 "§H管理之道§!\n§E此科技可允许进一步升级首都建筑以及获得更多£influence  §H影响力§!。升级星球首都是建造§H高级建筑§!的先决条件。§!"
  gateway_biological:0 "§H生物学之道§!\n§E此科技可允许进一步升级生物强化和进化。§!"
  gateway_ship:0 "§H舰船之道§!\n§E此科技可允许建造更大型的太空港以及更强大的战舰。§!"
  gateway_psionics:0 "§H灵能之道§!\n§E此科技可允许进一步升级心灵能力相关的研究。§!"
  gateway_robotics:0 "§H机器人之道§!\n§E此科技可允许进一步升级机器人相关的研究。§!"
+ 
+ #####################################
+ # Enclave Techs
+ #####################################
  tech_curator_lab:0 "馆长探索实验室"
  tech_curator_lab_desc:0 "这些船载实验中心使用了来自古老的馆长组织的先进科技来加快勘察速度。"
  tech_archeology_lab:0 "馆长考古实验室"
  tech_archeology_lab_desc:0 "这些船载实验中心在识别考古发现时会使用来自馆长组织的庞大数据库以及先进的考古装备。"
- tech_colonization_4:0 "外星土壤强化"
- tech_colonization_4_desc:1 "对多种土壤的种类及适合作物进行研究后，我们可以提升殖民者在其他星球上的生存条件。\n\n"
- tech_colonization_5:0 "恶劣气候研究"
- tech_colonization_5_desc:1 "对不同星球的气候进行研究后，可以在拥有恶劣环境的星球上进行殖民。\n\n"
- tech_tomb_world_adaption:0 "辐射伤害研究"
- tech_tomb_world_adaption_desc:0 "对经过辐射的环境进行研究后，可以在被核冬天影响的星球上进行殖民。"

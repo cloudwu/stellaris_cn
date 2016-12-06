@@ -8,6 +8,7 @@
  MESSAGE_CONSTRUCTION_FINISH:0 "$PLANET|Y$行星已完成其建造队列。"
  MESSAGE_CONSTRUCTION_FINISH_SPACEPORT:0 "$PLANET|Y$的太空港已完成其建造队列。"
  MESSAGE_ORDER_FINISH_COLONIZE_PLANET:0 "我们已在$SYSTEM|Y$星系建立了$COLONY|Y$殖民地。"
+ MESSAGE_SPACEPORT_CONSTRUCTION_MESSAGE_TYPE_TITLE:0 "建造完成"
  MESSAGE_ARMY_RECRUITMENT_TITLE:0 "军队招募完成"
  MESSAGE_ARMY_RECRUITMENT:0 "$PLANET|Y$上的军队招募已完成。"
 
@@ -22,6 +23,8 @@
  MESSAGE_FLEET_SYSTEM_FULLY_SURVEYED:0 "$SYSTEM|Y$星系已勘测完毕。"
  MESSAGE_FLEET_ORDER_FINISH_MESSAGE_TYPE_TITLE:0 "飞船命令已完成"
  MESSAGE_SYSTEM_SURVEYED_TITLE:0 "星系勘测完毕"
+ AUTO_EXPLORE_CANCELLED_MESSAGE_TYPE_TITLE:0 "已取消舰队命令"
+ MESSAGE_FLEET_ORDER_AUTO_EXPLORE_CANCELLED:0 "§H$FLEET$§!已取消了自动探索命令。它无法抵达或寻找不到任何可被勘察的星系。"
 
  ####################################
  # Misc Fleet
@@ -89,6 +92,8 @@
  ACTION_KICK_FROM_FEDERATION_PROPOSAL_FAILED_RECIPIENT:0 "§H[Actor.GetName]§!提出将我方踢出联邦的提议被自动拒绝了。"
  ACTION_INVITE_TO_FEDERATION_PROPOSAL_FAILED_ACTOR:0 "我们邀请§H[Recipient.GetName]§!加入同盟被他们拒绝了。"
  ACTION_INVITE_TO_FEDERATION_PROPOSAL_FAILED_RECIPIENT:0 "来自§H[Actor.GetName]§!的同盟邀请被自动拒绝了。"
+ ACTION_ASK_FOR_FEDERATION_ASSOCIATION_PROPOSAL_FAILED_ACTOR:0 "我们请求成为§H[Recipient.GetAllianceName]§!协作国的请求被拒绝。"
+ ACTION_ASK_FOR_FEDERATION_ASSOCIATION_PROPOSAL_FAILED_RECIPIENT:0 "§H[Actor.GetName]§!请求成为§H[Recipient.GetAllianceName]§!协作国的请求被自动拒绝。"
  ACTION_DEMAND_VASSALIZATION_PROPOSAL_FAILED_ACTOR:0 "我们附庸§H[Recipient.GetName]§!的要求被拒绝了。"
  ACTION_DEMAND_VASSALIZATION_PROPOSAL_FAILED_RECIPIENT:0 "来自§H[Actor.GetName]§!的附庸要求被自动拒绝了。"
  ACTION_DEMAND_PROTECTORATE_PROPOSAL_FAILED_ACTOR:0 "我们给予§H[Recipient.GetName]§!保护国地位的提议被拒绝了。"
@@ -210,6 +215,7 @@
  ACTION_INVITE_TO_FEDERATION_NOTIFICATION:2 "§H[From.GetName]§!加入了§H[From.GetAllianceName]§!。\n\n统一战线，同仇忾敌。"
  ACTION_ASK_TO_JOIN_FEDERATION_NOTIFICATION:2 "§H[Root.GetName]§!加入了§H[From.GetAllianceName]§!。\n\n统一战线，同仇敌忾。"
  ACTION_LEAVE_FEDERATION_NOTIFICATION:2 "§H[From.GetName]§!离开了§H[Root.GetAllianceName]§!。\n\n或许我们可以趁机谋利……"
+ ACTION_KICK_FROM_FEDERATION_NOTIFICATION:1 "§H[From.GetAllianceName]§!投票将§H[Root.GetName]§!踢出联盟。"
  ACTION_ASK_TO_BE_RELEASED_SUBJECT_NOTIFICATION:2 "§H[Root.GetName]§!将自主权还给了§H[From.GetName]§!。\n\n看来他们已经没落到无法掌控附属国了。"
  ACTION_RELEASE_SUBJECT_NOTIFICATION:2 "§H[From.GetName]§!将自主权还给了§H[Root.GetName]§!。\n\n看来他们已经没落到无法掌控附属国了。"
  ACTION_INSULT_NOTIFICATION:2 "§H[From.GetName]§!侮辱了§H[Root.GetName]§!。\n\n两国之间真是暗流涌动啊……"
@@ -236,6 +242,7 @@
  ACTION_REVOKE_FEDERATION_ASSOCIATION_NOTIFICATION:2 "§H[Root.GetName]§!的协作国地位被§H[From.GetAllianceName]§!撤回。\n\n他们这是要大动干戈了吗？"
  MESSAGE_END_FEDERATION_ASSOCIATION_TITLE:0 "联邦协作关系结束"
  ACTION_END_FEDERATION_ASSOCIATION_NOTIFICATION:2 "§H[From.GetName]§!决定结束与§H[Root.GetAllianceName]§!达成的协作关系。\n\n他们这是要大动干戈了吗？"
+ DIPLO_ACTION_END_FEDERATION_ASSOCIATION_DESC:0 "§H$COUNTRY$§!决定结束他们与§H$ALLIANCE$§!的合作关系。\n\n这或许是战争的先兆？"
    
  
  MESSAGE_DIPLOMACY_TITLE:0 "外交"
@@ -446,10 +453,3 @@
  ####################################
  MESSAGE_INVALIDATED_EDICT_TITLE:0 "法令已取消"
  COUNTRY_EDICT_BECAME_INVALID:0 "由于未满足所需条件，$EDICT|Y$法令已经失效。"
- MESSAGE_SPACEPORT_CONSTRUCTION_MESSAGE_TYPE_TITLE:0 "建造完成"
- AUTO_EXPLORE_CANCELLED_MESSAGE_TYPE_TITLE:0 "已取消舰队命令"
- MESSAGE_FLEET_ORDER_AUTO_EXPLORE_CANCELLED:0 "§H$FLEET$§!已取消了自动探索命令。它无法抵达或寻找不到任何可被勘察的星系。"
- ACTION_ASK_FOR_FEDERATION_ASSOCIATION_PROPOSAL_FAILED_ACTOR:0 "我们请求成为§H[Recipient.GetAllianceName]§!协作国的请求被拒绝。"
- ACTION_ASK_FOR_FEDERATION_ASSOCIATION_PROPOSAL_FAILED_RECIPIENT:0 "§H[Actor.GetName]§!请求成为§H[Recipient.GetAllianceName]§!协作国的请求被自动拒绝。"
- ACTION_KICK_FROM_FEDERATION_NOTIFICATION:1 "§H[From.GetAllianceName]§!投票将§H[Root.GetName]§!踢出联盟。"
- DIPLO_ACTION_END_FEDERATION_ASSOCIATION_DESC:0 "§H$COUNTRY$§!决定结束他们与§H$ALLIANCE$§!的合作关系。\n\n这或许是战争的先兆？"

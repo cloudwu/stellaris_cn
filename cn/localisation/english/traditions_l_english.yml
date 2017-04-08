@@ -8,17 +8,17 @@
  TRADITIONS_DESC:0 "传统是从传统树上收集来的加成。一旦我们的帝国积累了足够多的凝聚力后就可以解锁一项传统。不同的因素，例如殖民地数量太多或是意识形态分裂都会增加解锁新传统需要的凝聚力。"
  TRADITIONS_PROGRESS:0 "$KEY$ 进程"
  TRADITIONS_PROGRESS_TITLE:0 "进程"
- TRADITIONS_PROGRESS_DESC:0 "我们需要更多的 £unity $MISSING|Y$ 来树立新的传统。以现在的速率我们将于 $DATE|Y$ 达成。"
+ TRADITIONS_PROGRESS_DESC:0 "我们尚需 £unity $MISSING|Y$ 来树立新的传统。以现在的速率这将于 $DATE|Y$ 达成。"
  UNLOCK_TRADITION_DESC:0 "我们有了足够的 £unity 来树立新传统"
  TRADITIONS_TIME_TO_NEXT:0 "剩余月份"
  TRADITIONS_TIME_TO_NEXT_DESC:0 "尚需 $MONTHS$ 。"
  TRADITIONS_UNLOCKED:0 "我们解锁了这棵树上 $MAX|Y$ 项传统中的 $COUNT|Y$ 项。"
  TRADITION_ADOPT_BUTTON:0 "采纳"
  TRADITIONS_ADOPT:0 "采纳效应"
- TRADITIONS_FINISH:0 "终结效应"
+ TRADITIONS_FINISH:0 "完成效应"
  TRADITIONS_FINISH_AP:0 " 另外，我们将解锁 §Y1§! 个飞升特典槽位。"
  TRADITION_COST:0 "传统开销"
- TRADITIONS_UNAFFORDABLE:0 "§R我们需要额外的 §Y$RESOURCES$§! 来解锁这项传统。§!"
+ TRADITIONS_UNAFFORDABLE:0 "§R我们尚需 §Y$RESOURCES$§! 来解锁这项传统。§!"
  MUST_ADOPT_TRADITION_CATEGORY:0 "$TRIGGER_FAIL$采纳了 $CATEGORY|Y$ 传统"
  MUST_ACTIVATE_ALL_TRADITIONS:0 "$TRIGGER_FAIL$采纳了这一组中所有的传统"
  TRADITION_ADOPT_CONFIRM:0 "采纳传统"
@@ -38,7 +38,7 @@
 
  tradition_expansion:0 "扩张"
  #tradition_expansion_desc: "We must spread our civilization to new systems and planets if we are to survive. As other empires emerge on the galactic scene, competition will be fierce. The faster we can establish new colonies, the better."
- tradition_expansion_desc:0 "We must expand our civilization to new systems and planets or risk eventual extinction."
+ tradition_expansion_desc:0 "我们必须将我们的文明向新的星系和星球扩张，不然等着我们的将是种族灭亡。"
  tr_expansion_adopt:0 "Expansion Traditions"
  tr_expansion_adopt_desc:0 "$tradition_expansion_desc$\n\n$tr_expansion_adopt_effect$\n\n$tr_expansion_finish_effect$"
  tr_expansion_adopt_effect:0 "§E$TRADITIONS_ADOPT$:§!\nNew colonies start with §Y1§! additional £pops  Pop."
@@ -68,7 +68,7 @@
  ################################################################
 
  tradition_domination:0 "统御"
- tradition_domination_desc:0 "If we do not impose our will on others, they will inevitably impose theirs on us."
+ tradition_domination_desc:0 "如果我们无法将自己的意志加于他人，就必然被他人强加意志。"
  tr_domination_adopt:0 "Domination Traditions"
  tr_domination_adopt_desc:0 "$tradition_domination_desc$\n\n$tr_domination_adopt_effect$\n\n$tr_domination_finish_effect$"
  tr_domination_adopt_effect:0 "§E$TRADITIONS_ADOPT$:§!\nThe War Demand cost to subjugate other empires is reduced by §Y25%§!."
@@ -95,7 +95,7 @@
  ################################################################
 
  tradition_harmony:0 "和谐"
- tradition_harmony_desc:0 "Few things can match the strength of a content populace working towards a common goal."
+ tradition_harmony_desc:0 "没什么东西比让民众朝着一个共同目标奋斗更重要。"
  tr_harmony_adopt:0 "Harmony Traditions"
  tr_harmony_adopt_desc:0 "$tradition_harmony_desc$\n\n$tr_harmony_adopt_effect$\n\n$tr_harmony_finish_effect$"
  tr_harmony_adopt_effect:0 "§E$TRADITIONS_ADOPT$:§!\nThe £happiness  §Y$MOD_POP_HAPPINESS$§! of all £pops  Pops is increased by §G+10%§!."
@@ -151,7 +151,7 @@
 ################################################################
 
  tradition_supremacy:0 "至高"
- tradition_supremacy_desc:0 "The future of this galaxy belongs to those who are strong enough to seize it."
+ tradition_supremacy_desc:0 "银河的未来属于那些足够强大到能夺取它的人们。"
  tr_supremacy_adopt:0 "Supremacy Traditions"
  tr_supremacy_adopt_desc:0 "$tradition_supremacy_desc$\n\n$tr_supremacy_adopt_effect$\n\n$tr_supremacy_finish_effect$"
  tr_supremacy_adopt_effect:0 "§E$TRADITIONS_ADOPT$:§!\n§Y$MOD_COUNTRY_BORDER_MULT$§! increased by §G+20%§!."
@@ -177,7 +177,7 @@
 # DIPLOMACY
 ################################################################
  tradition_diplomacy:0 "外交"
- tradition_diplomacy_desc:0 "The surest way to destroy your enemies is to make them your friends."
+ tradition_diplomacy_desc:0 "摧毁敌人的最佳方式是把他们变成朋友。"
  tr_diplomacy_adopt:0 "Diplomacy Traditions"
  tr_diplomacy_adopt_desc:0 "$tradition_diplomacy_desc$\n\n$tr_diplomacy_adopt_effect$\n\n$tr_diplomacy_finish_effect$"
  tr_diplomacy_adopt_effect:1 "§E$TRADITIONS_ADOPT$:§!\n§Y$MOD_COUNTRY_DIPLOMACY_INFLUENCE_COST$§! reduced by §G-50%§! and your §Y$MOD_COUNTRY_TRUST_GROWTH$§! increased by §G+33%§!."
@@ -205,7 +205,7 @@
 
  tradition_discovery:0 "探索"
  #tradition_discovery_desc: "For the first time in the history of our civilization, we live in an age where our reach extends beyond the confines of our homeworld. Our insatiable curiosity about the universe is what got us this far, and there is still so much left to discover."
- tradition_discovery_desc:0 "Our curiosity about the universe is what got us this far, and there is still so much left to discover."
+ tradition_discovery_desc:0 "对宇宙的好奇心引领我们来到如此之远，而尚有诸多事物亟待探索。"
  tr_discovery_adopt:0 "Discovery Traditions"
  tr_discovery_adopt_desc:0 "$tradition_discovery_desc$\n\n$tr_discovery_adopt_effect$\n\n$tr_discovery_finish_effect$"
  tr_discovery_adopt_effect:0 "§E$TRADITIONS_ADOPT$:§!\n§YResearch Station Build Cost§! reduced by §G-33%§!."
@@ -232,7 +232,7 @@
 ################################################################
 
  tradition_prosperity:0 "繁荣"
- tradition_prosperity_desc:0 "There is no better indicator of the success or failure of a star nation than the strength of its economy."
+ tradition_prosperity_desc:0 "没有什么指标比经济力量更能衡量一个星际国家的成败。"
  tr_prosperity_adopt:0 "Prosperity Traditions"
  tr_prosperity_adopt_desc:0 "$tradition_prosperity_desc$\n\n$tr_prosperity_adopt_effect$\n\n$tr_prosperity_finish_effect$"
  tr_prosperity_adopt_effect:0 "§E$TRADITIONS_ADOPT$:§!\n§YMining Station Build Cost§! reduced by §G-33%§!."

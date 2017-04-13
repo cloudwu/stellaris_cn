@@ -5,19 +5,19 @@
  SEPARATOR:0 "---"
 
  STATION:0 "基地"
- TRIGGER_PASS:1 "(§RX§!)"
- TRIGGER_FAIL:1 "(§G*§!)"
+ TRIGGER_PASS:1 "£trigger_yes "
+ TRIGGER_FAIL:1 "£trigger_no "
  ICON_COLOR_VALUE:0 "£$ICON$ $VALUE|0$"
  ICON_VALUE_POSITIVE:0 "£$ICON$ $VALUE|0+=$"
  ICON_VALUE_NEGATIVE:0 "£$ICON$ $VALUE|0-$"
- 
- SPECIES_LACKS_OPTION:0 "§R你所选的种族外观在此分类中没有次级选项。§!"
- 
- ALL:0 "全部"
 
+ SPECIES_LACKS_OPTION:0 "§R你所选的种族外观在此分类中没有次级选项。§!"
+
+ ALL:0 "全部"
+ 
  FALLEN_EMPIRE_LETHARGY_1:0 "§E无法建造新舰船。§!"
  FALLEN_EMPIRE_LETHARGY_2:0 "§E无法征服或殖民行星。§!"
- 
+
  lonely_hive_mind_pops_kill_them_selves_citizenship:0 "这些没有思想的工蜂无法融入社会。"
  lonely_hive_mind_pops_kill_them_selves_purge_type:0 "这个物种的人口离开了他们的集团意识以后便无法生存。"
  HIVE_MIND_MAIN_SPECIES_ALWAYS_CITIZEN:0 "我们是一体的。我们永远具有§Y完整市民权§!。"
@@ -26,7 +26,7 @@
  HIVE_MIND_PURGE_ALWAYS_PROCESSING:0 "看起来真美味！"
  
  EMBRACE_FACTION_COOLDOWN:0 "我们最近才§Y拥纳§!过一个派系。此操作每§Y20§!年才能进行一次。"
-
+ 
  embraced_another_faction:0 "拥纳其他派系"
  embraced_faction:0 "派系得到拥纳"
  suppressed_faction:0 "派系遭到镇压"
@@ -105,9 +105,9 @@
 
  HABITABILTIY_TOO_LOW:0 "§R殖民种族适居性至少需要达到 §Y$MIN|0$%§!.§!"
  RESETTLE_HABITABILTIY_TOO_LOW:0 "§R定居人口适居性至少需要达到 §Y$MIN|0$%§!.§!"
-
+ 
  ROOM_BACKGROUND:0 "Room"
-
+ 
  #MAP_MODE_TOOLTIP variables: "FROM" source country, "TARGET" tooltiped country, "MAP_MODE_NAME" name of current map mode, "MAP_MODE_TIP" tip generated from map mode
  MAP_MODE_TOOLTIP:0 "$TARGET|H$\n$MAP_MODE_TIP$"
  MAP_MODE_BUTTON_TOOLTIP:1 "$MAP_MODE|H$\n$DESC$\n§G点击选择此地图模式§!"
@@ -146,7 +146,7 @@
  DIPLOMATIC_MAP_MODE_DEFENSIVE_PACT:0 "§H[This.GetName]§!\n跟§H[From.GetName]§!签署了防御条约"
  DIPLOMATIC_MAP_MODE_MIGRATION_PACT:0 "§H[This.GetName]§!\n跟§H[From.GetName]§!签署了移民条约"
  MAP_MODE_NO_CONTACT:0 "§H[This.GetName]§!\n跟§H[From.GetName]§!尚未建立外交关系"
-
+ 
  MAP_MODE_NEIGHBOR:0 "§H[From.GetName]§! is considered a neighbor of §H[This.GetName]§!."
  MAP_MODE_NOT_NEIGHBOR:0 "§H[From.GetName]§! is NOT considered a neighbor of §H[This.GetName]§!."
 
@@ -298,16 +298,16 @@
  FILTER:1 "筛选"
  MESSAGE_OK:0 "确认"
  MESSAGE_GOTO:0 "显示"
- FRONT_START:0 "§HN§!新游戏"
- FRONT_LOAD:0 "§HL§!载入游戏"
- FRONT_CREDITS:0 "§HC§!制作人员表"
- FRONT_SETTINGS:0 "§HS§!设置"
- FRONT_QUIT:0 "§HE§!退出"
+ FRONT_START:0 "新游戏 (§HN§!)"
+ FRONT_LOAD:0 "载入游戏 (§HL§!)"
+ FRONT_CREDITS:0 "制作人员表 (§HC§!)"
+ FRONT_SETTINGS:0 "设置 (§HS§!)"
+ FRONT_QUIT:0 "退出 (§HE§!)"
  FRONT_BACK:0 "返回"
  FRONT_SAVE_GAMES:0 "选择游戏存档"
  FRONT_LAUNCH:0 "启动"
- FRONT_MULTIPLAYER:0 "§HM§!多人游戏"
- FRONT_MULTIPLAYER_DISABLED:0 "§G多人游戏§!"
+ FRONT_MULTIPLAYER:0 "多人游戏 (§HM§!)"
+ FRONT_MULTIPLAYER_DISABLED:0 "§G多人游戏 (M)§!"
  LOAD_SAVE_GAME:0 "正在载入存档"
  CALCULATING_CACHE:0 "正在准备游戏"
  LOGIN_REQUIRED:0 "需要登录"
@@ -375,7 +375,7 @@
  EDIT:0 "编辑"
  PREV:0 "上一页"
  NEXT:0 "下一页"
- EXIT:0 "Exit"
+ EXIT:0 "退出"
  RANDOM:0 "随机"
  RANDOM_RULER:0 "随机统治者"
  AND:0 "和"
@@ -473,7 +473,7 @@
  MOVE_CAPITAL_DESC_INVALID_NOT_OWNER:0 "无法迁都到不属于你的行星。"
  MOVE_CAPITAL_DESC_INVALID_OCCUPIED:0 "无法迁都到已被占领的行星。"
  MOVE_CAPITAL_DESC_INVALID_NOT_CORE:0 "无法迁都到星域控制的行星。"
- MOVE_CAPITAL_DESC_INVALID_BEING_COLONIZED:0 "Not possible to move capital to a planet that is under colonization."
+ MOVE_CAPITAL_DESC_INVALID_BEING_COLONIZED:0 "无法迁都到正在殖民的行星。"
  MOVE_CAPITAL_DESC_INVALID_AT_WAR:0 "无法在战争期间迁都。"
  MOVE_CAPITAL_DESC_INVALID_COOLDOWN:0 "无法在$DATE|H$之前迁都。"
  MOVE_CAPITAL_CONFIRM:0 "你确定要迁都到$PLANET|H$？\n\n此举会消耗£influence $COST|Y0$。"
@@ -708,7 +708,7 @@
  CDV_RESET:0 "重置"
  SUBJECT_TAX_DESCRIPTION:0 "身为一个$SUBJECT$，你必须上缴月度税金给你的宗主国。"
  TRADE_DEAL_LENGTH:0 "交易年长："
- TRADE_DEAL_LENGTH_NONE:0 "None"
+ TRADE_DEAL_LENGTH_NONE:0 "无"
  TRADE_DEAL_LENGTH_VALUE:0 "$TRADE_DEAL_LENGTH$ $VALUE|Y$"
  TOOLTIP_DELETE_ITEM:0 "删除该项"
  TOOLTIP_CLONE_ITEM:0 "复制该项"
@@ -834,9 +834,9 @@
  PRIMITIVE:0 "§H原始文明($AGE|Y$)§!"
  MERGE:0 "合并"
  LEVEL_X:0 "等级：$LEVEL|Y$"
- ADD_RALLY_POINT:0 "Add Rally Point"
- REMOVE_RALLY_POINT:0 "Remove Rally Point"
- ORBITING_FLEETS:0 "Orbiting Fleets"
+ ADD_RALLY_POINT:0 "添加集结点"
+ REMOVE_RALLY_POINT:0 "移除集结点"
+ ORBITING_FLEETS:0 "在轨舰队"
  DETAILS:0 "细节"
  DISMANTLE:0 "拆除"
  SPACEPORT_DISMANTLE:0 "拆除太空港"
@@ -913,12 +913,12 @@
  BUILD_STATION_ORDER_COST:0 "成本：$VAL|Y2$"
  BUILD_STATION_ORDER_MAINTENANCE:0 "月度维护消耗：£energy $VAL|Y2$"
  BUILD_ORBITAL_STATION_ORDER_MAINTENANCE:0 "月度维护消耗：$RESOURCES$"
- BUILD_MEGASTRUCTURE_ORDER:0 "Build Megastructure"
- BUILD_MEGASTRUCTURE_DESC:1 "§YMegastructures§! are truly massive construction projects only possible in the zero-g environment of space."
- BUILD_MEGASTRUCTURE_SPACE_TARGET_DESC:0 "Construct a megastructure here."
- BUILD_MEGASTRUCTURE_PLANET_TARGET_DESC:0 "Construct a megastructure around this stellar body."
- BUILD_MEGASTRUCTURE_ORDER_COST:0 "Cost: $VAL|Y2$"
- BUILD_MEGASTRUCTURE_ORDER_MAINTENANCE:0 "Monthly Maintenance: £energy $VAL|Y2$"
+ BUILD_MEGASTRUCTURE_ORDER:0 "建造巨型结构"
+ BUILD_MEGASTRUCTURE_DESC:1 "§Y巨型结构§!是真正的大工程，只有在零重力的太空下才能实现。"
+ BUILD_MEGASTRUCTURE_SPACE_TARGET_DESC:0 "在这里建造一个巨型结构。"
+ BUILD_MEGASTRUCTURE_PLANET_TARGET_DESC:0 "围绕此天体建造一个巨型结构。"
+ BUILD_MEGASTRUCTURE_ORDER_COST:0 "成本：$VAL|Y2$"
+ BUILD_MEGASTRUCTURE_ORDER_MAINTENANCE:0 "每月维护：£energy $VAL|Y2$"
  BUILD_ORDER_NOT_OWNER:0 "不是舰队控制者"
  BUILD_ORDER_NOT_OWNER_MULT:0 "不是这些舰队的控制者"
  BUILD_ORDER_NO_FLEETS:0 "没有舰队"
@@ -1007,7 +1007,7 @@
  CUSTOMIZATION_NO_ETHICS_SELECTED:0 "未选择道德观"
  CUSTOMIZATION_NO_ETHICS_SELECTED_DESC:0 "在左侧列表中选择道德观。"
  NOT_ENOUGH_ETHIC_POINTS:0 "所选道德观成本过高。"
- CUSTOMIZATION_TOO_FEW_ETHIC_POINTS:0 "You must select more Ethics."
+ CUSTOMIZATION_TOO_FEW_ETHIC_POINTS:0 "必须选择更多道德观。"
  SHORTCUT:0 "§G热键：$KEY$ §!"
  NAMELIST:0 "名称列表"
  CANCEL_SPACEPORT_CONSTRUCTION_DESC:0 "可以取消建造该太空港以获得全额退款。"
@@ -1023,12 +1023,12 @@
  PLANET_MODIFIER:0 "行星调整因素"
  STATION_MODIFIER:0 "基地调整因素"
  SHIP_MODIFIER:0 "舰船调整因素"
- BUILD_SPACEPORT_WITH_INITIAL_MODULE:0 "Build Spaceport With Initial Module"
- SPACEPORT_NOT_SUPPORTED_BY_PLANET_CLASS:0 "This Planet can't support an orbital Spaceport."
- ORBITAL_STATION_NOT_SUPPORTED_BY_PLANET:0 "§RThis Planet can't support an orbital Station.§!"
- ORBITAL_STATION_ALREADY_EXISTS:0 "§RAn orbital station is already orbiting this Planet.§!"
+ BUILD_SPACEPORT_WITH_INITIAL_MODULE:0 "从初始模块建造太空港。"
+ SPACEPORT_NOT_SUPPORTED_BY_PLANET_CLASS:0 "此行星不能建造轨道太空港。"
+ ORBITAL_STATION_NOT_SUPPORTED_BY_PLANET:0 "§R此行星不能建造轨道空间站。§!"
+ ORBITAL_STATION_ALREADY_EXISTS:0 "§R此行星已有围绕运行的轨道空间站。§!"
  PLANETVIEW_SPACEPORT_NOT_SUPPORTED_BY_PLANET_CLASS:0 "§R$SPACEPORT_NOT_SUPPORTED_BY_PLANET_CLASS$§!"
- PLANETVIEW_SPACEPORT_TAB_NOT_OWNER:0 "§RWe are not the owner of this Planet.§!"
+ PLANETVIEW_SPACEPORT_TAB_NOT_OWNER:0 "§R我们不是此行星的拥有者。§!"
  SELECT_INITIAL_MODULE:0 "选择初始模块"
  SPACEPORT_UPGRADE:0 "太空港升级"
  SPACEPORT_UPGRADE_NAMED:0 "升级至等级$LEVEL|Y$"
@@ -1150,9 +1150,9 @@
  FLEETORDER_BUILD_MILITARY_STATION_DESC:0 "建造军事基地防守此地"
  FLEETORDER_BUILD_RULER_MILITARY_STATION:0 "建造统治者专用军事基地"
  FLEETORDER_BUILD_RULER_MILITARY_STATION_DESC:0 "建造统治者专用军事基地防守此地"
- MEGASTRUCTURE:0 "Megastructure"
- FLEETORDER_BUILD_LABEL_MEGASTRUCTURE:0 "Build $MEGASTRUCTURE$"
- MEGASTRUCTURE_CONSTRUCTION_OR_UPGRADE_IN_PROGRESS:0 "$TRIGGER_FAIL$Due to the immense requirements in qualified technical personnel, we can only build or upgrade one Megastructure at a time."
+ MEGASTRUCTURE:0 "巨型结构"
+ FLEETORDER_BUILD_LABEL_MEGASTRUCTURE:0 "建造$MEGASTRUCTURE$"
+ MEGASTRUCTURE_CONSTRUCTION_OR_UPGRADE_IN_PROGRESS:0 "$TRIGGER_FAIL$由于巨型结构对合格技术员的要求巨量，我们同时只能建造或升级一个巨型结构。"
  GOVERNMENT_VIEW_NO_HEIR:0 "没有继承人"
  GOVERNMENT_VIEW_NO_HEIR_DESC:0 "你的统治者当前没有继承人。每天中有$CHANCE|0Y%$的可能性会有继承人被提名。如果统治者在找到继承人前就死去的话，可能会爆发王位继承战。"
  WILL_MAKE_YOU_LEAVE_CURRENT_ALLIANCE:0 "接受后你将会离开$ALLIANCE|Y$"
@@ -1203,7 +1203,7 @@
  US:0 "我们"
  CANNOT_FIND_PATH_TO_TARGET_LOCATION:0 "寻找不到前往目的地的路径"
 
- CAN_BUILD_MEGASTRUCTURE_NONE_AVAILABLE:0 "No Megastructures available to build."
+ CAN_BUILD_MEGASTRUCTURE_NONE_AVAILABLE:0 "没有可以建造的巨型结构。"
 
  EFFECTS:0 "§E效应：§!"
  REQUIREMENTS:0 "§E需求：§!"
@@ -1220,8 +1220,8 @@
  RELATIVE_POWER_5:0 "§R宛若天神§!"
  RELATIVE_POWER_5_DESC:0 "他们远比我们强大。除非我方有强力的盟友，否则应该避免与他们发生冲突。"
 
- stone_age:0 "Stone Age"
- stone_age_desc:0 "This civilization is currently in the equivalent of a Stone Age. They have mastered fire and developed a rudimentary spoken language, but we have yet to see any evidence of metallurgy or written communication."
+ stone_age:0 "石器时代"
+ stone_age_desc:0 "这一文明当前的发展水平相当于石器时代。他们已有了一些粗糙的口语，但还没有金属冶炼或书面交流的迹象。"
  bronze_age:0 "青铜时代"
  bronze_age_desc:0 "这一文明当前的发展水平相当于青铜时代。早期的金属加工技术以及首个书面语言已经出现，城市以及更大的社群正在逐渐形成。"
  iron_age:0 "铁器时代"
@@ -1263,19 +1263,19 @@
 
  TOOLTIP_GAL_OBJ_STATION_ICON:1 "$CLASS|H$\n$OWNERS|Y$至少有一个$CLASS$安放于该星系中"
  TOOLTIP_GAL_OBJ_STATIONS_ICON:0 "$CLASS|H$\n以下帝国在该星系中拥有$CLASS$：\n$OWNERS|Y$"
- TOOLTIP_GAL_OBJ_STATION_UNCLAIMED:0 "$CLASS|H$\nThis system has at least one unclaimed $CLASS$"
+ TOOLTIP_GAL_OBJ_STATION_UNCLAIMED:0 "$CLASS|H$\n此星系有最少一个无人声明所有权的$CLASS$"
 
  EMPIRE_COLONIES:0 "帝国殖民地"
  EMPIRE_COLONIES_UNKNOWN:0 "帝国没有我们所知的殖民地。"
  EMPIRE_POPULATION:0 "帝国人口"
 
- UPGRADING_SHIP_DESIGN_TO:0 "升级至§H$CLASS$-class§!"
+ UPGRADING_SHIP_DESIGN_TO:0 "升级至§H$CLASS$级§!"
 
- POPUP_LOAD_GAME_CONFIRMATION_NAME:0 "Load Game"
- POPUP_LOAD_GAME_CONFIRMATION_DESC:0 "Are you sure you want to load this game?"
+ POPUP_LOAD_GAME_CONFIRMATION_NAME:0 "载入游戏"
+ POPUP_LOAD_GAME_CONFIRMATION_DESC:0 "确定要载入此游戏吗？"
 
- POPUP_START_GAME_CONFIRMATION_NAME:0 "Start Game"
- POPUP_START_GAME_CONFIRMATION_DESC:0 "Are you sure you want to start?"
+ POPUP_START_GAME_CONFIRMATION_NAME:0 "开始游戏"
+ POPUP_START_GAME_CONFIRMATION_DESC:0 "确定要开始游戏吗？"
 
  ###################################
  # Trade View
@@ -1395,16 +1395,16 @@
  PURGE_NOT_ALLOWED_POLICY:0 "§R$COUNTRY|H$禁止肃清政策§!"
  SLAVERY_NOT_ALLOWED_POLICY:0 "§R$COUNTRY|H$禁止奴隶制度§!"
 
- TOGGLE_TRADE_VIEW_FOCUS_AREA_GAMEPAD_INDICATOR:0 "£gamepad_y Toggle focus"
+ TOGGLE_TRADE_VIEW_FOCUS_AREA_GAMEPAD_INDICATOR:0 "£gamepad_y 切换焦点"
 
- TRADE_OFFER_QUANTITY:0 "Quantity"
- 
+ TRADE_OFFER_QUANTITY:0 "数量"
+
  ###################################
  # Outliner
  ####################################
  OUTLINER:0 "信息缩略表"
  OUTLINER_PLANETS:0 "行星"
- OUTLINER_SPECIAL_PLANETS:0 "Habitats"
+ OUTLINER_SPECIAL_PLANETS:0 "轨道栖所"
  OUTLINER_SPACEPORT_CONSTRUCTION:0 "太空港建设"
  OUTLINER_NEW_SPACEPORT_CONSTRUCTION:0 "太空港建设中"
  OUTLINER_COMPLETION:0 "将在$MONTHS|Y$月内完成"
@@ -1419,8 +1419,8 @@
  OUTLINER_ARMY:0 "军队"
  OUTLINER_ARMY_DESC:0 "$NUM|Y$部队部署于这一地点。"
  OUTLINER_MEMBER_SELECT_DESC:0 "§G单击选中\n双击或点击鼠标右键前往§!"
- OUTLINER_MEMBER_SELECT_DESC_GAMEPAD:0 "\n§G£gamepad_a to Select £gamepad_rs to Go To§!"
- OUTLINER_MEMBER_SELECT_DESC_GAMEPAD_MULTI:0 "\n§G£gamepad_a to Select £gamepad_rs to Go To\nHold £gamepad_lt for multi select§!"
+ OUTLINER_MEMBER_SELECT_DESC_GAMEPAD:0 "\n§G£gamepad_a 以选中 £gamepad_rs 以前往§!"
+ OUTLINER_MEMBER_SELECT_DESC_GAMEPAD_MULTI:0 "\n§G£gamepad_a 以选中 £gamepad_rs 以前往\n按住 £gamepad_lt 以多选§!"
  OUTLINER_FLEET_STATUS:0 "状态"
  OUTLINER_OPTIONS:0 "信息缩略表选项"
  OUTLINER_OPTIONS_TOOLTIP:0 "§H信息缩略表选项§!\n§G点击并设置信息缩略表§!"
@@ -1440,7 +1440,7 @@
  OUTLINER_ICON_FEDERATION_DESC:0 "这支舰队属于我们的联邦。当联邦总统是我方领袖之一时舰队可以被我方控制。"
  OUTLINER_SECTORS:0 "星域"
  OUTLINER_INTEGRATION:0 "整合"
- OUTLINER_TERRAFORMING:0 "Terraforming"
+ OUTLINER_TERRAFORMING:0 "环境改造"
 
  ###################################
  # Leaders
@@ -1644,7 +1644,7 @@
  RIVALRY:0 "敌对"
  opinion_federation_associate:0 "联盟"
  TRUST_TOOLTIP:0 "§H信任§!\n他们对我们的信任每月变化$VALUE|+=$，事因："
- TRUST_TOOLTIP_PLAYER:0 "§H信任§!\n信任度无法为玩家所用。"
+ TRUST_TOOLTIP_PLAYER:0 "§H信任§!\n玩家之间的信任度无法用数字来衡量。"
  TRUST_NO_ALLIANCE:1 "没有显著外交影响。"
  TRUST_DESC:0 "§H信任§!是我们跟此帝国之间的长期关系的指标，会直接影响他们对我们的评价。维持外交关系和贸易协议可以增长此指数。\n\n他们对我们的§H信任§!上限是$VALUE|Y$，事因$KEYWORD$。"
  TRUST_FROM_BASE:0 "基础消退：$VALUE|+=$"
@@ -1700,10 +1700,10 @@
  TOGGLE_MAPMODE_DETAILS_INFO:0 "§H细节地图模式§!\n在开启细节地图模式后，银河系地图上将会显示更详细的信息，同时也会增加与你所选舰队所对应的信息。\n§G单击切换地图模式§!\n§G按住£alt 暂时打开/关闭§!"
  TOGGLE_MAPMODE_SECTORS_INFO:0 "§H星域地图模式§!\n激活星域地图模式将显示你的帝国内的星域边界。\n§G点击切换地图模式§!"
  UNCLAIMED_RESOURCES:0 "$SYSTEM|H$星系里的$NUM|0Y$£$KEY$。"
- UNCLAIMED_RESOURCES_MINING_STATION:1 "Build a §HMining Station§! in orbit around $OBJECT$ to acquire them."
- UNCLAIMED_RESOURCES_RESEARCH_STATION:1 "Build a §HResearch Station§! in orbit around $OBJECT$ to acquire them."
- UNCLAIMED_RESOURCES_SYSTEM_MINING_STATION:0 "Build §HMining Station(s)§! in this system to acquire them."
- UNCLAIMED_RESOURCES_SYSTEM_RESEARCH_STATION:0 "Build §HResearch Station(s)§! in this system to acquire them."
+ UNCLAIMED_RESOURCES_MINING_STATION:0 "在$OBJECT$周围建造一个§H轨道采矿站§!来采集此资源。"
+ UNCLAIMED_RESOURCES_RESEARCH_STATION:0 "在$OBJECT$周围建造一个§H轨道研究站§!来采集此资源。"
+ UNCLAIMED_RESOURCES_SYSTEM_MINING_STATION:0 "在此恒星系建造§H轨道采矿站§!来采集该些资源。"
+ UNCLAIMED_RESOURCES_SYSTEM_RESEARCH_STATION:0 "在此恒星系建造§H轨道研究站§!来采集该些资源。"
  GROUND_COMBAT_ATTACKER_PROGRESS_DESC:0 "$ATTACKER|H$占领行星的进度已达$PROGRESS|Y%$。如果他们胜利，就能取得行星的控制权。"
  GROUND_COMBAT_DEFENDER_PROGRESS_DESC:0 "$DEFENDER|H$守住行星的进度为$PROGRESS|Y%$。如果他们胜利，就能守住行星的控制权。"
  BORDERS_WITHIN_DESC:1 "在'$COUNTRY|Y$'境内。"
@@ -1777,7 +1777,7 @@
  RESOURCES_STORED:0 "已存储：$VALUE|Y0$"
  RESOURCES_STORED_MAX:0 "已存储：$VALUE|Y0$/$MAX|Y0$"
  GALACTIC_OBJECT_HABITABILITY:1 "$NAME|H$\n$CLASS$, £planetsize $SIZE|Y$, $VALUE$"
- PLANET_MAP_ICON_TERRAFORMING:0 "Terraforming to $CLASS$, $VALUE$"
+ PLANET_MAP_ICON_TERRAFORMING:0 "改造为 $CLASS$，$VALUE$"
  CLOSE_SECTOR_MANAGEMENT:0 "关闭星域管理"
  TOOLTIP_CLOSE_SECTOR_MANAGEMENT:0 "§H关闭星域管理§!\n返回普通地图模式"
  SECTOR_MANAGEMENT_MODE:0 "§H星域管理模式§!"
@@ -1804,12 +1804,12 @@
  MATCHMAKING_NOCHAT:0 "你当前没有连接到线上，无法进行全球聊天！"
  MATCHMAKING_CHATWELCOME:0 "欢迎来到匹配聊天系统！"
  MATCHMAKING_QUICK_REFRESH:0 "刷新"
- MATCHMAKING_REFRESH_LAN:0 "扫描 §H局§!域网"
- MATCHMAKING_REFRESH_LAN_STOP:0 "停止扫描 §H局§!域网"
- MATCHMAKING_REFRESH_INTERNET:0 "扫描§H互§!联网"
- MATCHMAKING_HOST_NEWGAME:0 "主持§H新§!游戏"
- MATCHMAKING_HOST_SAVEGAME:0 "§HH主§!持保存游戏"
- MATCHMAKING_JOIN_SERVER:0 "§HJ加§!入游戏"
+ MATCHMAKING_REFRESH_LAN:0 "扫描局域网 (§HL§!)"
+ MATCHMAKING_REFRESH_LAN_STOP:0 "停止扫描局域网 (§HL§!)"
+ MATCHMAKING_REFRESH_INTERNET:0 "扫描互联网 (§HI§!)"
+ MATCHMAKING_HOST_NEWGAME:0 "主持新游戏 (§HN§!)"
+ MATCHMAKING_HOST_SAVEGAME:0 "主持保存游戏 (§HH§!)"
+ MATCHMAKING_JOIN_SERVER:0 "加入游戏 (§HJ§!)"
  MATCHMAKING_SERVERS_SEARCHING:0 "正在寻找匹配的服务器……"
  MATCHMAKING_SERVERS_NOSERVERS:0 "没有找到匹配的服务器！"
  MATCHMAKING_SERVERS_DOSEARCH:0 "未搜索到任何服务器。"
@@ -1849,7 +1849,7 @@
  MATCHMAKING_REFRESH_SERVERS:1 "§H扫§!描服务器"
  MATCHMAKING_SERVER_MOD:0 "模组"
  MATCHMAKING_SERVER_VERSION:0 "版本"
- MATCHMAKING_JOIN_DIRECT:1 "§H直§!接加入"
+ MATCHMAKING_JOIN_DIRECT:1 "直接加入 (§HD§!)"
  MATCHMAKING_PASSWORD_REQUESTED:1 "请输入密码"
  ALLOW_HOTJOIN:0 "允许其他玩家中途加入"
  HOST_GAME:0 "作为游戏主机"
@@ -1970,7 +1970,7 @@
  TRAIT_DESC_INSTANT:0 "成本： $COST|H$"
  TRAIT_DESC_DELAYED:0 "$DESC$\n$MODIFIER$"
  COMMUNICATIONS_REQUIRED:0 "我们尚未建立通讯。"
- COMMUNICATIONS_WITH_SELF_NOT_VALID:0 "Can't start communications with yourself."
+ COMMUNICATIONS_WITH_SELF_NOT_VALID:0 "不能和您自己建立联系。"
  TRAITS:0 "特质"
  TRAITS_LIST:0 "特质："
  ETHICS:0 "道德观"
@@ -2116,7 +2116,7 @@
  TOOLTIP_SETUP_WEAPONS:1 "§H$STARTING_WEAPONS$§!\n选择你的帝国舰船的初始武器。\n\n你可以在游戏过程中在§Y飞船设计§!中更改飞船的武器组件。"
  TOOLTIP_SETUP_FTL:1 "§H$FTL_LABEL$§!\n选择你的旅行方式，在你解锁某些特别稀有的科技之前，你将无法修改你的移动方式。同时你的基础超光速(FTL)移动方式是永远都不会更改的。"
  TOOLTIP_SETUP_SHIP_APPEARANCE:1 "§H$SHIP_GRAPHICS$§!\n选择你的飞船的外观，这对游戏性没有影响。"
- 
+
  ####################################
  # Hotjoin View
  ####################################
@@ -2752,7 +2752,7 @@
  FLEETORDER_FOLLOW_FRIENDLIES_DESC:0 "这支舰队可以担任前锋，盟军舰队会跟随其后。"
  FLEETORDER_FOLLOW_FRIENDLIES_ON:0 "当前设置：§Y鼓励§!盟军舰队跟随。"
  FLEETORDER_FOLLOW_FRIENDLIES_OFF:0 "当前设置：§Y不鼓励§!盟军舰队跟随。"
- FLEETORDER_BUILD_MEGASTRUCTURE:1 "Building $MEGASTRUCTURE|H$ in $SYSTEM|H$: $PROGRESS|Y%0$"
+ FLEETORDER_BUILD_MEGASTRUCTURE:1 "在 $SYSTEM|H$ 建造中的 $MEGASTRUCTURE|H$ ： $PROGRESS|Y%0$"
  IN_COMBAT:0 "战斗中"
  COMBAT:0 "战斗"
  SHIP_STATS:0 "飞船数据"
@@ -2919,7 +2919,7 @@
  trait_pc_ringworld_habitable_preference_desc:0 "$trait_pc_arctic_preference_desc$"
  trait_pc_habitat_preference:0 "Habitat Preference"
  trait_pc_habitat_preference_desc:0 "$trait_pc_arctic_preference_desc$"
- 
+
  ####################################
  # Leader Traits
  ####################################
@@ -3096,7 +3096,7 @@
  trait_ruler_space_miner_desc:1 "这位领袖深知矿物开采对于一个恒星国的重要性。"
  trait_ruler_explorer:0 "探索者"
  trait_ruler_explorer_desc:1 "这位领袖有着无尽的好奇心，认为太空探索重于一切。"
-
+ 
  # Event Special
  leader_trait_sentinel:0 "星际护卫出身"
  leader_trait_sentinel_desc:0 "星际护卫队指挥官对普雷索林虫群构造及其战术了如指掌。"
@@ -4121,7 +4121,7 @@
  ####################################
  # Megastructure Selection GUI
  ####################################
- MEGASTRUCTURE_SELECTION_PICK_TYPE:1 "Megastructures"
+ MEGASTRUCTURE_SELECTION_PICK_TYPE:1 "巨型结构"
 
  ####################################
  # Combat View
@@ -4551,7 +4551,7 @@
  TECH_UNLOCK_SPACEPORT_MODULE:0 "§H解锁模块：§! $NAME$"
  TECH_UNLOCK_DIPLOMATIC_ACTION:0 "§H解锁外交：§! $NAME$"
  TECH_UNLOCK_INTEL:0 "§H解锁情报：§! $NAME$"
- TECH_UNLOCK_MEGASTRUCTURE:1 "§HUnlocks Megastructure:§! $NAME$"
+ TECH_UNLOCK_MEGASTRUCTURE:1 "§H解锁巨型结构：§! $NAME$"
  UNLOCKS_COLONIZATION:0 "解锁对这些种类行星的殖民。"
  TAB_PROJECTS:0 "特殊项目"
  CAN_CONTINUE_SUBJECT_INTEGRATION_AT_WAR:0 "附属国与宗主国交战时，整合进度将中止"
@@ -5493,7 +5493,7 @@
  DEMANDS_OPINION_DIFF:0 "对方对你的评价将改变$OPINION|Y$"
  ACTION_INVITE_TO_FEDERATION_TYPE:0 "邀请加入联邦"
  ACTION_INVITE_TO_FEDERATION_TYPE_DESC:0 "我们可以邀请别人加入我们的联邦。"
- 
+
  ####################################
  # Diplomatic Actions
  ####################################
@@ -5743,7 +5743,7 @@
  ACTION_FORM_MIGRATION_PACT_DESC:0 "与此帝国签订移民条约。我们的人口可以在双方帝国之间自由移动。"
  ACTION_BREAK_MIGRATION_PACT_TITLE:0 "撕毁移民条约"
  ACTION_BREAK_MIGRATION_PACT_DESC:0 "与此帝国撕毁移民条约。"
-  
+
  ALLIANCE_NAME_01:0 "同盟国"
  ALLIANCE_NAME_02:0 "轴心国"
  ALLIANCE_NAME_03:0 "协约国"
@@ -5779,7 +5779,7 @@
  requires_target_not_fanatic_purifiers:0 "§RWe are §Y$civic_fanatic_purifiers$§!! We do not engage in diplomacy with other species!"
  requires_actor_not_hive_mind:0 "§RNot possible because we are a §HHive Mind§!.§!"
  requires_target_not_hive_mind:0 "§RNot possible because they are a §HHive Mind§!.§!"
-
+ 
  ####################################
  # Basic Resources
  ####################################
@@ -5840,7 +5840,7 @@
  ETHIC_HIVE_MIND_ASCENSION_RESTRICTIONS:0 "§E不能追随 §H灵能§! 及 §H合成飞升之路§!§!"
  ETHIC_HIVE_MIND_GENEMODDING:0 "§E一旦§H生物学飞升之路§!完成，就可以通过基因修饰将种族转化为蜂群思维。§!"
  ETHIC_HIVE_MIND_NO_TUTORIAL:0 "§R关闭教学§!"
- 
+
  ####################################
  # Strategic Resources
  ####################################
@@ -6053,13 +6053,13 @@
  building_hypercomms_forum_desc:0 "这座拥有前卫的人际沟通设备的庞大设施，让人们可以在休闲讨论中交换多感官的想法，可以在辩论中快速达成共识。"
  building_autocurating_vault:0 "自展穹窟"
  building_autocurating_vault_desc:0 "一坐高度专业化的计算机网络，其从那些我们现在看来是家常便饭的东西中自动获取、分析、评估和展示那些它认为将来会有历史意义的文物。这创造出一个活着的现代博物馆，打开了前往时代精神的窗口。"
- building_temple:0 "祠堂"
- building_temple_desc:0 "虽然是自古以来就有的简单建筑物，祠堂是我们可以安静地沉思和交流的地方，凝聚我们所有人。"
- building_holotemple:0 "全息祠堂"
- building_holotemple_desc:0 "粗糙的传统祠堂的升级形式。最新的精神主义科技在全息祠堂中创造出了可以被改变的现实——所有这些都是为了更深入的冥想和更强烈的奉献精神。"
+ building_temple:0 "寺庙"
+ building_temple_desc:0 "虽然是自古以来就有的简单建筑物，寺庙是我们可以安静地沉思和交流的地方，凝聚我们所有人。"
+ building_holotemple:0 "全息寺庙"
+ building_holotemple_desc:0 "粗糙的传统寺庙的升级形式。最新的精神主义科技在全息寺庙中创造出了可以被改变的现实——所有这些都是为了更深入的冥想和更强烈的奉献精神。"
  building_citadel_of_faith:0 "真信之垒"
  building_citadel_of_faith_desc:0 "一个为所有前来的人提供从物质世界中逃避、隔离的巨大复杂设施。"
- 
+
  ####################################
  # Wonders
  ####################################
@@ -6120,7 +6120,7 @@
  building_alien_sanctuary_desc:0 "$tech_alien_sanctuary_desc$"
  building_psi_corps:0 "灵团修行所" # 原文只有psi corps两个单词，结合描述补上修行所让它看起来像个设施会比较好的感觉
  building_psi_corps_desc:0 "所有具有灵能天赋的个体从我们帝国的各处前来此所磨练本领。\n\n§Y灵团是你的朋友。相信灵团。§!"
- 
+
  ####################################
  # Building requirement custom descs
  ####################################
@@ -6244,9 +6244,9 @@
  primitive_feudalism_desc:0 "§L这是一种原始的统治形式，由分散的分封领地构成。为了争夺地域统治权，各领地之间存在不断的竞争。§!"
  fragmented_nations:0 "多国各自为政"
  fragmented_nations_desc:0 "多个各自为政的国家相互竞争，争夺军事主导权和经济主导权。还不存在统一的全球政府。"
- stagnated_ascendancy:0 "停滞帝国"
+ stagnated_ascendancy:0 "停滞上国"
  stagnated_ascendancy_desc:0 "§L这是一种发展停滞的政府形式，基于某些古老的传统和被遗忘的原则。§!"
- awakened_ascendancy:0 "觉醒帝国"
+ awakened_ascendancy:0 "觉醒上国"
  awakened_ascendancy_desc:0 "§L曾经陷入发展停滞的堕落帝国已经觉醒，准备夺回他们的遗产。§!"
  machine_consciousness:0 "机器意识统治"
  machine_consciousness_desc:2 "§L奇异而古怪的政府系统，由机械文明采用。§!"
@@ -6276,69 +6276,69 @@
  gov_holy_tribunal:0 "神圣法庭"
  gov_holy_tribunal_desc:0 "这是一种精神主义的寡头政府，由神职人员组成的委员会控制着整个国家。国家与主导宗教组织是一体的。"
  gov_star_empire:0 "星海帝国"
- gov_star_empire_desc:0 "这是一种军国主义的世袭制的专制政府，由同时操控政府和军队的唯一君王统治。"
+ gov_star_empire_desc:0 "这是一种军国主义的世袭专制政府，由同时操控政府和军队的唯一君王统治。"
  gov_military_dictatorship:0 "军事独裁制"
  gov_military_dictatorship_desc:0 "这是一种军国主义专制政府，其统治者是无可置疑的军事头领，同时也坚定地控制着国家机器。"
  gov_military_junta:0 "军事执政团"
- gov_military_junta_desc:0 "这种政府 is a 军国主义 form of oligarchy, where power rests with a council of high-ranking military officers who oversee all matters of state."
+ gov_military_junta_desc:0 "这是一种军国主义的寡头政府，权力掌握在监督所有国家事务的高级军官理事会手中。"
  gov_military_commissariat:0 "军事委员会"
- gov_military_commissariat_desc:0 "这种政府 is nominally democratic, with the dividing line between the civil administration and the military having blurred to the point where they have largely become one and the same."
+ gov_military_commissariat_desc:0 "这是一种名义上的民主政府，民政和军事的分界线已经模糊到两者大抵是一物的地步。"
  gov_martial_empire:0 "勇武帝国"
- gov_martial_empire_desc:0 "这种政府 is a 军国主义 form of 世袭 autocracy, where the state exists largely to support the military. Martial ability is highly valued, and all citizens are regularly drilled in matters of war."
+ gov_martial_empire_desc:0 "这是一种军国主义的世袭专制政府，国家的存在很大程度上依赖于军队。武术能力被高度重视，所有公民日常地钻研战争之道。"
  gov_martial_dictatorship:0 "勇武独裁制"
- gov_martial_dictatorship_desc:0 "这种政府 is a 军国主义 form of autocracy, where the warrior who is considered the strongest leader rules with absolute power. "
+ gov_martial_dictatorship_desc:0 "这是一种军国主义的独裁政府，其领袖被视为最强的战士，以绝对的权力来统治。"
  gov_war_council:0 "战争议会"
- gov_war_council_desc:0 "这种政府 is a 军国主义 form of oligarchy, where all decisions concerning the state are taken by a council of the nation's strongest warlords."
+ gov_war_council_desc:0 "这是一种军国主义的寡头政府，所有关于国家的决定由国家最强大的战领组成的议会决定。"
  gov_assembly_of_clans:0 "氏族集会"
- gov_assembly_of_clans_desc:0 "这种政府 is a 军国主义 form of democracy, where all free clan warriors can make their voices heard."
+ gov_assembly_of_clans_desc:0 "这是一种军国主义的民主政府，所有自由的氏族战士都可以畅所欲言。"
  gov_citizen_stratocracy:0 "市民军政制"
- gov_citizen_stratocracy_desc:0 "这种政府 is an advanced form of 军国主义 oligarchy, where the military has subsumed all aspects of civilian administration. All government offices are held by military officers."
+ gov_citizen_stratocracy_desc:0 "这是一种高级的军国主义寡头政府，军队已经纳入民政的各个方面。所有政府官员皆由军官担任。"
  gov_citizen_republic:0 "市民共和国"
- gov_citizen_republic_desc:0 "这种政府 is a 军国主义 form of democracy, where full citizenship can only be gained through military service. The voting franchise is limited to full citizens, and they are the only ones allowed to hold public offices."
+ gov_citizen_republic_desc:0 "这是一种军国主义的民主政府，在这里只有通过服军役才能获得完整市民权。投票资格也仅限于拥有完整市民权之人，也只有这些人才能担任公职。"
  gov_irenic_monarchy:0 "安泰君主制"
- gov_irenic_monarchy_desc:0 "这种政府 is a 和平主义 form of 世袭 autocracy, where the ruler is regarded as a benevolent guardian that is striving to protect the citizens from a violent galaxy."
+ gov_irenic_monarchy_desc:0 "这是一种和平主义的世袭专制政府，统治者被看作仁慈的守护者，力图保护公民免受银河暴力的侵袭。"
  gov_irenic_dictatorship:0 "安泰独裁制"
- gov_irenic_dictatorship_desc:0 "这种政府 is a 和平主义 form of autocracy, where the state is charged with protecting the citizenry from their own violent tendencies as well as any external threats."
+ gov_irenic_dictatorship_desc:0 "这是一种和平主义的专制政府，国家负责保护公民免受他们自己的暴力倾向所害，还有多种外部威胁。"
  gov_irenic_bureaucracy:0 "安泰官僚制"
- gov_irenic_bureaucracy_desc:0 "这种政府 is a 和平主义 form of oligarchy, where a complicated system of bureaucracy governs all aspects of society to ensure the safety of the citizenry."
- gov_celestial_empire:0 "神天帝国"
- gov_celestial_empire_desc:0 "这种政府 is a 世袭 monarchy, where the ruler is seen as a child of heaven in a largely pacifist and isolationist society."
+ gov_irenic_bureaucracy_desc:0 "这是一种和平主义的寡头政府，一个复杂的官僚体系管理社会的方方面面，以确保公民安全。"
+ gov_celestial_empire:0 "天人帝国"
+ gov_celestial_empire_desc:0 "这是一种世袭的君主制政府，在这个大体上主张和平主义和孤立主义的社会中，统治者被视为上天的孩子。"
  gov_moral_democracy:0 "道德民主制"
- gov_moral_democracy_desc:0 "这种政府 is a 和平主义 form of democracy, firmly guided by moralist principles and non-violence."
+ gov_moral_democracy_desc:0 "这是一种和平主义的民主政府，坚持以道德准则和非暴力为座右铭。"
  gov_despotic_hegemony:0 "霸权专制"
- gov_despotic_hegemony_desc:0 "这种政府 is a 物质主义 form of 世袭 autocracy, where citizens are viewed as little more than cogs in the state machinery. Efficiency and technological progress are valued above all things."
+ gov_despotic_hegemony_desc:0 "这是一种物质主义的世袭专制政府，公民被视为国家机器的齿轮。效率和技术进步比一切都重要。"
  gov_totalitarian_regime:0 "极权专制"
- gov_totalitarian_regime_desc:0 "这种政府 is a 物质主义 form of autocracy, where the state aspires towards full control over the lives of its citizens in the name of efficiency."
+ gov_totalitarian_regime_desc:0 "这是一种物质主义的专制政府，为了效率，国家渴望完全掌控公民的生活。"
  gov_executive_committee:0 "执行委员会"
- gov_executive_committee_desc:0 "这种政府 is a 物质主义 form of oligarchy, where a powerful bureaucracy governs the state and guides the citizenry towards productive and meaningful goals."
+ gov_executive_committee_desc:0 "这是一种物质主义的寡头政府，强大的官僚统治着国家，引导公民走向成效和有意义的目标。"
  gov_direct_democracy:0 "直接民主制"
- gov_direct_democracy_desc:0 "这种政府 is a 物质主义 form of democracy, where citizens use computer networks to vote directly on most matters regarding the state."
+ gov_direct_democracy_desc:0 "这是一种物质主义的民主政府，公民使用计算机网络直接对国家的大部分事项进行投票。"
  gov_illuminated_autocracy:0 "明光专制"
- gov_illuminated_autocracy_desc:0 "这种政府 is a 物质主义 form of 世袭 autocracy, based on technocratic principles that the sovereign is sworn to uphold. Nothing is valued more highly than scientific knowledge and the advancement of technology."
+ gov_illuminated_autocracy_desc:0 "这是一种物质主义的世袭专制政府，统治者宣誓效忠于技术官僚原则。没有任何东西比科学支持和技术进步更有价值。"
  gov_technocratic_dictatorship:0 "技官独裁制"
- gov_technocratic_dictatorship_desc:0 "这种政府 is a 物质主义 form of autocracy, where the scientific elite has assumed control over the state in the name of efficiency and technological progress."
+ gov_technocratic_dictatorship_desc:0 "这是一种物质主义的专制政府，科学精英以效率和技术进步之名义来控制整个国家。"
  gov_science_directorate:0 "科学理事会"
- gov_science_directorate_desc:0 "这种政府 is a 物质主义 form of oligarchy, where a committee of scientists supervises the government apparatus for maximum efficiency."
+ gov_science_directorate_desc:0 "这是一种物质主义的寡头政府，科学委员会监督政府机构以获得最大效率。"
  gov_rational_consensus:0 "理性共识制"
- gov_rational_consensus_desc:0 "The government is a 物质主义 form of democracy, governed according to principles based on rationality and scientific theory."
+ gov_rational_consensus_desc:0 "这是一种物质主义的民主政府，根据理性与科学的原则来统治。"
  gov_megacorporation:0 "巨型企业"
- gov_megacorporation_desc:0 "这种政府 is a form of plutocratic oligarchy, where the entire state has been organized as a massive commercial enterprise overseen by a board of directors."
+ gov_megacorporation_desc:0 "这是一种富豪统治的寡头政府，整个国家由一个受到董事会监督的大型商业企业来管理。"
  gov_enlightened_monarchy:0 "开明君主制"
- gov_enlightened_monarchy_desc:0 "这种政府 is a 世袭 form of enlightened autocracy, where a strong emphasis is put on the knowledge and qualifications of the ruling monarch."
+ gov_enlightened_monarchy_desc:0 "这是一种开明的世袭专制政府，十分强调君主的知识和资格。"
  gov_enlightened_dictatorship:0 "开明独裁制"
- gov_enlightened_dictatorship_desc:0 "这种政府 is a form of enlightened autocracy, where a strong emphasis is put on the knowledge and qualifications of the ruling dictator."
+ gov_enlightened_dictatorship_desc:0 "这是一种开明的专制政府，十分强调统治者的知识和资格。"
  gov_hive_mind:0 "蜂群思维"
- gov_hive_mind_desc:0 "这种政府 operates as a single consciousness, with the population having no individual desires whatsoever beyond fulfilling the needs of the Hive Mind."
- gov_stagnant_ascendancy:0 "停滞的优越国"
- gov_stagnant_ascendancy_desc:0 "A stagnant form of government based on ancient traditions and long-forgotten principles."
- gov_awakened_ascendancy:0 "觉醒的优越国"
- gov_awakened_ascendancy_desc:0 "A formely stagnant empire that has risen from its slumber and set out to reclaim their heritage."
+ gov_hive_mind_desc:0 "这种政府如同单一的意识一样运行，在蜂群思维的欲望以外，人口没有任何个人欲望。"
+ gov_stagnant_ascendancy:0 "停滞上国"
+ gov_stagnant_ascendancy_desc:0 "一种停滞的政府，基于古代的传统以及早被遗忘的原则。"
+ gov_awakened_ascendancy:0 "觉醒上国"
+ gov_awakened_ascendancy_desc:0 "从前停滞不前的帝国已经从沉睡中醒来，准备收回自己的遗产。"
  gov_tribal_society:0 "部落社会"
- gov_tribal_society_desc:0 "A society that lacks any organized government, its people instead being organized into primitive tribes and clans."
- gov_feudal_realms:0 "封建分封制"
- gov_feudal_realms_desc:0 "A primitive form of government made up of decentralized feudal realms, constantly vying with each other for regional dominance."
+ gov_tribal_society_desc:0 "一个缺乏有组织的政府的社会，其人民按照原始的部落和氏族来划分阵营。"
+ gov_feudal_realms:0 "封建诸国"
+ gov_feudal_realms_desc:0 "一种原始的政府形式，由分散的封建诸国构成，其不断互相争斗追求地区统一。"
  gov_fragmented_nation_states:0 "分裂国家"
- gov_fragmented_nation_states_desc:0 "A collection of fragmented nation states that contend with each other for military dominance and economic advantages. No unified global government exists."
+ gov_fragmented_nation_states_desc:0 "一系列分散的国家互相争夺军事优势和经济优势。不存在统一的全球政府。"
  gov_curator_enclave:0 "Curator Enclave"
  gov_curator_enclave_desc:0 "An ancient scholarly order dedicated towards the preservation of knowledge and technology."
  gov_trader_enclave:0 "Trader Enclave"
@@ -6346,17 +6346,17 @@
  gov_artist_enclave:0 "Artist Enclave"
  gov_artist_enclave_desc:0 "An interstellar union of artists unified in their wish to create art higher than any other."
  gov_military_order:0 "军事修会"
- gov_military_order_desc:0 "A weird but apparently highly effective militaristic government type."
+ gov_military_order_desc:0 "一个奇怪但非常有效的军国主义政府。"
  gov_machine_consciousness:0 "机器意识统治"
- gov_machine_consciousness_desc:0 "An utterly alien and bizarre system of government employed by machine civilizations."
+ gov_machine_consciousness_desc:0 "机器文明使用的一个完全陌生的古怪政府系统。"
  gov_blood_court:0 "鲜血法庭"
- gov_blood_court_desc:0 "这种政府 is a 世袭 form of 狂妄排外 autocracy, where the ultimate responsibility of the monarch is to oversee the extermination of all lesser species in the galaxy."
+ gov_blood_court_desc:0 "这是一种狂妄排外的世袭专制政府，君主的终极职责就是监管银河中的所有劣等物种的灭绝。"
  gov_purity_order:0 "纯净修会"
- gov_purity_order_desc:0 "这种政府 is a form of 狂妄排外 autocracy, where a single ruler has sworn to oversee the extermination of all lesser species in the galaxy."
+ gov_purity_order_desc:0 "这是一种狂妄排外的专制政府，唯一的统治者以宣誓要监管银河中的所有劣等物种的灭绝。"
  gov_purification_committee:0 "净化委员会"
- gov_purification_committee_desc:0 "这种政府 is a form of 狂妄排外 oligarchy, where a political committee has been set up to oversee the extermination of all lesser species in the galaxy."
+ gov_purification_committee_desc:0 "这是一种狂妄排外的寡头政府，建立了一个政治委员会来监管银河中的所有劣等物种的灭绝。"
  gov_purity_assembly:0 "纯净大会"
- gov_purity_assembly_desc:0 "这种政府 is a form of 狂妄排外 democracy, where an elected assembly has been charged with overseeing the extermination of all lesser species in the galaxy."
+ gov_purity_assembly_desc:0 "这是一种狂妄排外的民主政府，选举制度的议会全力奔赴监管银河中的所有劣等物种的灭绝。"
 
 
  ####################################
@@ -6426,9 +6426,9 @@
  HT_DEPUTY_OVERLORD_FEMALE:0 "$HT_DEPUTY_OVERLORD$"
  HT_SENIOR_TECHNICIAN:0 "高等技师"
  RT_GRAND_MASTER:0 "大团长"
-
- RT_CELESTIAL_EMPEROR:0 "神天帝"
- RT_CELESTIAL_EMPRESS:0 "神天女帝"
+ 
+ RT_CELESTIAL_EMPEROR:0 "天帝"
+ RT_CELESTIAL_EMPRESS:0 "女天帝"
  RT_WARLORD:0 "战领"
  RT_WARLORD_FEMALE:0 "$RT_WARLORD$"
  RT_CLAN_SPEAKER:0 "族群发言者"
@@ -6529,13 +6529,13 @@
  civic_syncretic_evolution_desc:0 "第二个物种是这个社会不可分割的一部分。该物种高大强壮，而智力和愚笨的孩童相当。古代的战争已经剔除了它们的侵略倾向，使得它们相当恭顺。"
  civic_fanatic_purifiers:0 "狂心肃清者"
  civic_fanatic_purifiers_desc:0 "此社会为涤清此银河的所有其他智能物种而奋斗。不管怎样，他们不会留下任何异族活口。"
- civic_lethargic_leadership:0 "无力领导"
+ civic_lethargic_leadership:0 "昏睡先导"
  civic_lethargic_leadership_desc:0 ""
  civic_empire_in_decline:0 "衰退帝国"
  civic_empire_in_decline_desc:0 ""
- civic_revanchist_fervor:0 "复国狂热"
+ civic_revanchist_fervor:0 "复国热忱"
  civic_revanchist_fervor_desc:0 ""
- civic_ancient_caches_of_technology:0 "古老的高科技"
+ civic_ancient_caches_of_technology:0 "古老技术"
  civic_ancient_caches_of_technology_desc:0 ""
  civic_secret_of_fire:0 "火焰的秘密"
  civic_secret_of_fire_desc:0 ""
@@ -6579,7 +6579,7 @@
  civic_tooltip_agrarian_idyll_effects:0 "£building  §Y水培农场§!额外多产出§Y1§!点 £unity  凝聚力。"
  civic_tooltip_mechanists_effects:1 "以能建造机器人的科技开始游戏，并有§Y4§!个 £pop  起始人口替换为机器人。"
  civic_tooltip_syncretic_evolution_effects:1 "以一个额外的奴仆物种开始游戏，并有§Y4§!个 £pop  起始人口替换为该奴仆物种。"
- civic_tooltip_fanatic_purifiers_effects:1 "无法和其他物种的帝国进行§Y外交§!！\n§Y外星人口§!必定会被肃清，而且外星人口不影响传统成本。\n肃清 £pop  外星人口能获得 £unity  §Y凝聚力§!。\n可以使用§Y$GROUND_SUPPORT_STANCE_ARMAGEDDON$§!轨道轰炸模式。\n§Y$MOD_SHIP_FIRE_RATE_MULT$§!: §G+33%§!\n§Y$MOD_ARMY_DAMAGE_MULT$§!: §G+33%§!"
+ civic_tooltip_fanatic_purifiers_effects:1 "无法和其他物种的帝国进行§Y外交§!！\n§Y外星人口§!必定会被肃清，而且外星人口不影响传统成本。\n肃清 £pop  外星人口能获得 £unity  §Y凝聚力§!。\n可以使用§Y$GROUND_SUPPORT_STANCE_ARMAGEDDON$§!轨道轰炸模式。\n§Y$MOD_SHIP_FIRE_RATE_MULT$§!获得§G+33%§!\n§Y$MOD_ARMY_DAMAGE_MULT$§!获得§G+33%§!"
  
  civic_tooltip_spiritualist:0 "拥有§Y精神主义§!"
  civic_tooltip_materialist:0 "拥有§Y物质主义§!"
@@ -6676,7 +6676,7 @@
 
  PSIONIC_BLAST_1:0 "灵能震爆"
  PSIONIC_BLAST_1_DESC:0 ""
-
+ 
  EXTRADIMENSIONAL_1:0 "物质粉碎炮"
  EXTRADIMENSIONAL_1_DESC:1 "物质粉碎炮是来自另一个次元的武器，其核心技术可以扭曲物理法则、带来破坏性结果。"
 
@@ -7157,7 +7157,7 @@
  CORVETTE_COMBAT_COMPUTER_3:0 "高级战斗计算机（护卫舰）"
  CORVETTE_COMBAT_COMPUTER_4:0 "觉醒战斗计算机（护卫舰）"
  CORVETTE_COMBAT_COMPUTER_PRECOG:0 "预知接口（护卫舰）"
- 
+
  DESTROYER_COMBAT_COMPUTER_1:0 "初级战斗计算机（驱逐舰）"
  DESTROYER_COMBAT_COMPUTER_2:0 "中级战斗计算机（驱逐舰）"
  DESTROYER_COMBAT_COMPUTER_3:0 "高级战斗计算机（驱逐舰）"
@@ -7300,7 +7300,7 @@
  SMALL_ENIGMATIC_POWER_CORE:0 "小型$ENIGMATIC_POWER_CORE$"
  MEDIUM_ENIGMATIC_POWER_CORE:0 "中型$ENIGMATIC_POWER_CORE$"
  LARGE_ENIGMATIC_POWER_CORE:0 "大型$ENIGMATIC_POWER_CORE$"
- 
+
  ENIGMATIC_SHIELD:0 "神秘偏转器"
  ENIGMATIC_SHIELD_DESC:0 "$tech_enigmatic_power_core_desc$"
  SMALL_ENIGMATIC_SHIELD:0 "小型$ENIGMATIC_SHIELD$"
@@ -7312,7 +7312,7 @@
 
  ENIGMATIC_DECODER:0 "神秘解码器"
  ENIGMATIC_DECODER_DESC:1 "$tech_enigmatic_decoder_desc$"
- 
+
  ENIGMATIC_ENCODER:0 "神秘编码器"
  ENIGMATIC_ENCODER_DESC:1 "$tech_enigmatic_encoder_desc$"
 
@@ -7470,7 +7470,7 @@
  alert_unrest_title:0 "动乱"
  alert_unrest_instant:0 "至少有一颗我们的星球遭受动乱！"
  alert_unrest_instruction:0 "§G点击循环切换星球§!"
- 
+
  ####################################
  # Demands
  ####################################
@@ -7612,7 +7612,7 @@
  edict_share_the_burden:0 "分担负担"
  edict_share_the_burden_desc:1 "该法令强制契约工依据作息时间表轮班工作，他们做的各种各样的苦力能够小幅提高生产力。"
  # edict_share_the_burden_desc: "This Edict dictates that the various burdens of society should be given to those best suited to handle them. Manual labour is best left to those used to such tasks..."
- 
+
  # Planet Edicts
  edict_production_targets:0 "生产指标"
  edict_production_targets_desc:1 "该法令着眼于生产目标的二次评估和优化，进行行政调控，优先提高矿物产出。"
@@ -7875,7 +7875,9 @@
 
  ai_accord_servitude_disallowed:2 "人工智能条约§R永久禁止§!§H非法§!和§H服务§!的政策。"
  ai_perfect_servants_rights_disallowed:2 "三法则算法§R永久禁止§!§H公民§!的政策。"
- 
+
+ is_a_synthetic_empire: "Is a §YSynthetic Empire§!"
+
  policy_war_philosophy:0 "战争哲学"
  policy_war_philosophy_desc:0 "战争是很复杂的，宇宙星际国家质检的战争就更是复杂。如何对待星际国家之间的武装冲突是外交事务的重要课题。"
  unrestricted_wars:0 "无限制战争"
@@ -7900,7 +7902,7 @@
  food_stockpiling_3_name:0 "大量储备"
  food_stockpiling_3_desc:0 "我们永远不会知道疾病和灾难何时降临。大量储备的食物能让我们度过糟糕的境遇而不必让人民遭受苦难。"
 
-
+ 
  policy_war_economy:0 "战争经济"
  policy_war_economy_desc:0 "当面临亡国危机时，我们可以通过从民用部门获取资产的方式来弥补防卫战的经济和工业损耗。这些政策的不利之处在于，在赢得进攻战后将会受到相应的惩罚……"
  static_we:0 "静态"
@@ -7938,10 +7940,10 @@
  feature_federations_created_desc:0 "允许和同盟国和附庸国一起创建联邦"
  feature_modify_traits:0 "基因修饰"
  feature_modify_traits_desc:0 "允许对我们帝国内的某个种族基因特质进行修改"
- feature_advanced_gene_modding:0 "Genetic Resequencing"
- feature_advanced_gene_modding_desc:0 "Allows us to remove beneficial Traits and add detrimental traits to Species when modifying them."
- feature_add_advanced_traits:0 "Advanced Traits"
- feature_add_advanced_traits_desc:0 "Unlocks additional Traits that we can add to Species when modifying them."
+ feature_advanced_gene_modding:0 "基因重组"
+ feature_advanced_gene_modding_desc:0 "允许我们在基因修饰时移除有利特质或添加负面特质。"
+ feature_add_advanced_traits:0 "高级特质"
+ feature_add_advanced_traits_desc:0 "允许我们在基因修饰时插入一些新的高级特质。"
  feature_colonization:0 "殖民"
  feature_colonization_desc:0 "允许建造用于在行星殖民的殖民船"
  feature_colony_ship_rushed:0 "私人殖民船"
@@ -7978,18 +7980,18 @@
  feature_build_terraform_station_desc:1 "允许我们的建设专用船在行星的轨道上建造环境改造站。"
  feature_assist_research:0 "辅助研究"
  feature_assist_research_desc:1 "允许我们的科研船对殖民地的研究进行协助。\n\n$feature_assist_research$ $PLANET_MODIFIER$:"
- feature_xeno_integration:0 "Xeno Integration"
- feature_xeno_integration_desc:1 "Allows us to grant Full Citizenship rights to alien species."
+ feature_xeno_integration:0 "异族整合"
+ feature_xeno_integration_desc:1 "允许我们给所有物种设置完整的市民权。"
  feature_spaceport_level_2:0 "太空港等级 II"
- feature_spaceport_level_2_desc:0 "太空港可被升级为支持§Y2§!的模组，并且可以建造驱逐舰。"
+ feature_spaceport_level_2_desc:0 "太空港可被升级为支持§Y2§!个模组，并且可以建造驱逐舰。"
  feature_spaceport_level_3:0 "太空港等级 III"
- feature_spaceport_level_3_desc:0 "太空港可升级为支持§Y3§!的模组。"
+ feature_spaceport_level_3_desc:0 "太空港可升级为支持§Y3§!个模组。"
  feature_spaceport_level_4:0 "太空港等级 IV"
- feature_spaceport_level_4_desc:0 "太空港可升级为支持§Y4§!的模组，并且可以建造巡洋舰。"
+ feature_spaceport_level_4_desc:0 "太空港可升级为支持§Y4§!个模组，并且可以建造巡洋舰。"
  feature_spaceport_level_5:0 "太空港等级 V"
- feature_spaceport_level_5_desc:0 "太空港可升级为支持§Y5§!的模组。"
+ feature_spaceport_level_5_desc:0 "太空港可升级为支持§Y5§!个模组。"
  feature_spaceport_level_6:0 "太空港等级 VI"
- feature_spaceport_level_6_desc:0 "太空港可以升级为支持§Y6§!的模组，并且能够建造战列舰。"
+ feature_spaceport_level_6_desc:0 "太空港可以升级为支持§Y6§!个模组，并且能够建造战列舰。"
  feature_tech_automated_exploration:0 "$AUTO_EXPLORE_ORDER$"
  feature_tech_automated_exploration_desc:0 "$AUTO_EXPLORE_ORDER_DESC$"
  feature_bliss_standard:0 "化合极乐"
@@ -8006,32 +8008,32 @@
  mission_passive_observation:0 "被动观测"
  mission_passive_observation_desc:0 "为了让当地人不知情，在对其进行研究时保持安全距离，尽可能的避免文化污染。"
  mission_specimen_collection:0 "主动观测"
- mission_specimen_collection_desc:0 "为了尽可能的了解原住民的生物特性与文化特征，因此对他们进行主动的研究，并经常收集活体样本。\n\n§EThis mission can have unintended consequenses.§!\n\n"
- native_indoctrination:0 "$mission_native_indoctrination$ Mission"
- mission_native_indoctrination:0 "Indoctrination"
- mission_native_indoctrination_desc:0 "Through subtle influencing of their society and culture the natives can be brought around to our way of thinking.\n\n§EThis mission will make the natives adopt our Governing Ethics over time.§!\n\n"
- mission_technological_enlightenment_0:0 "Technological Enlightenment"
- mission_technological_enlightenment_0_desc:2 "An effort is made to rapidly elevate the native civilization to the Space Age. The time this takes is dependent on their current level of technology.\n\n§EWhen complete, this mission will turn them into a spacefaring civilization that is our Protectorate.§!\n\n"
+ mission_specimen_collection_desc:0 "为了尽可能的了解原住民的生物特性与文化特征，因此对他们进行主动的研究，并经常收集活体样本。\n\n§E此任务可能产生意想不到的后果。§!\n\n"
+ native_indoctrination:0 "$mission_native_indoctrination$任务"
+ mission_native_indoctrination:0 "教化"
+ mission_native_indoctrination_desc:0 "通过对社会和文化的微妙影响，我们可以给土著人带来我们的思考方式。\n\n§E随着时间推移，他们会逐渐接受我们的执政道德观。§!\n\n"
+ mission_technological_enlightenment_0:0 "技术启蒙"
+ mission_technological_enlightenment_0_desc:2 "努力将原住民的文明程度迅速提升到太空时代。完成这一目标所需要的时间取决于原住民当前的技术水平。\n\n§E当完成时，他们会变成一个太空文明，并成为我们的保护国。§!\n\n"
  mission_technological_enlightenment_1:0 "技术启蒙"
- mission_technological_enlightenment_1_desc:0 "努力将原住民的文明程度迅速提升到太空时代。完成这一目标所需要的时间取决于原住民当前的技术水平。\n\n§EWhen complete, this mission will turn them into a spacefaring civilization that is our Protectorate.§!\n\n"
+ mission_technological_enlightenment_1_desc:0 "努力将原住民的文明程度迅速提升到太空时代。完成这一目标所需要的时间取决于原住民当前的技术水平。\n\n§E当完成时，他们会变成一个太空文明，并成为我们的保护国。§!\n\n"
  mission_technological_enlightenment_2:0 "技术启蒙"
- mission_technological_enlightenment_2_desc:0 "努力将原住民的文明程度迅速提升到太空时代。完成这一目标所需要的时间取决于原住民当前的技术水平。\n\n§EWhen complete, this mission will turn them into a spacefaring civilization that is our Protectorate.§!\n\n"
+ mission_technological_enlightenment_2_desc:0 "努力将原住民的文明程度迅速提升到太空时代。完成这一目标所需要的时间取决于原住民当前的技术水平。\n\n§E当完成时，他们会变成一个太空文明，并成为我们的保护国。§!\n\n"
  mission_technological_enlightenment_3:0 "技术启蒙"
- mission_technological_enlightenment_3_desc:0 "努力将原住民的文明程度迅速提升到太空时代。完成这一目标所需要的时间取决于原住民当前的技术水平。\n\n§EWhen complete, this mission will turn them into a spacefaring civilization that is our Protectorate.§!\n\n"
+ mission_technological_enlightenment_3_desc:0 "努力将原住民的文明程度迅速提升到太空时代。完成这一目标所需要的时间取决于原住民当前的技术水平。\n\n§E当完成时，他们会变成一个太空文明，并成为我们的保护国。§!\n\n"
  mission_technological_enlightenment_4:0 "技术启蒙"
- mission_technological_enlightenment_4_desc:0 "努力将原住民的文明程度迅速提升到太空时代。完成这一目标所需要的时间取决于原住民当前的技术水平。\n\n§EWhen complete, this mission will turn them into a spacefaring civilization that is our Protectorate.§!\n\n"
+ mission_technological_enlightenment_4_desc:0 "努力将原住民的文明程度迅速提升到太空时代。完成这一目标所需要的时间取决于原住民当前的技术水平。\n\n§E当完成时，他们会变成一个太空文明，并成为我们的保护国。§!\n\n"
  mission_technological_enlightenment_5:0 "技术启蒙"
- mission_technological_enlightenment_5_desc:0 "努力将原住民的文明程度迅速提升到太空时代。完成这一目标所需要的时间取决于原住民当前的技术水平。\n\n§EWhen complete, this mission will turn them into a spacefaring civilization that is our Protectorate.§!\n\n"
+ mission_technological_enlightenment_5_desc:0 "努力将原住民的文明程度迅速提升到太空时代。完成这一目标所需要的时间取决于原住民当前的技术水平。\n\n§E当完成时，他们会变成一个太空文明，并成为我们的保护国。§!\n\n"
  mission_technological_enlightenment_6:0 "技术启蒙"
- mission_technological_enlightenment_6_desc:0 "努力将原住民的文明程度迅速提升到太空时代。完成这一目标所需要的时间取决于原住民当前的技术水平。\n\n§EWhen complete, this mission will turn them into a spacefaring civilization that is our Protectorate.§!\n\n"
+ mission_technological_enlightenment_6_desc:0 "努力将原住民的文明程度迅速提升到太空时代。完成这一目标所需要的时间取决于原住民当前的技术水平。\n\n§E当完成时，他们会变成一个太空文明，并成为我们的保护国。§!\n\n"
  mission_technological_enlightenment_7:0 "技术启蒙"
- mission_technological_enlightenment_7_desc:0 "努力将原住民的文明程度迅速提升到太空时代。完成这一目标所需要的时间取决于原住民当前的技术水平。\n\n§EWhen complete, this mission will turn them into a spacefaring civilization that is our Protectorate.§!\n\n"
+ mission_technological_enlightenment_7_desc:0 "努力将原住民的文明程度迅速提升到太空时代。完成这一目标所需要的时间取决于原住民当前的技术水平。\n\n§E当完成时，他们会变成一个太空文明，并成为我们的保护国。§!\n\n"
  mission_technological_enlightenment_8:0 "技术启蒙"
- mission_technological_enlightenment_8_desc:0 "努力将原住民的文明程度迅速提升到太空时代。完成这一目标所需要的时间取决于原住民当前的技术水平。\n\n§EWhen complete, this mission will turn them into a spacefaring civilization that is our Protectorate.§!\n\n"
+ mission_technological_enlightenment_8_desc:0 "努力将原住民的文明程度迅速提升到太空时代。完成这一目标所需要的时间取决于原住民当前的技术水平。\n\n§E当完成时，他们会变成一个太空文明，并成为我们的保护国。§!\n\n"
  mission_technological_enlightenment_9:0 "技术启蒙"
- mission_technological_enlightenment_9_desc:0 "努力将原住民的文明程度迅速提升到太空时代。完成这一目标所需要的时间取决于原住民当前的技术水平。\n\n§EWhen complete, this mission will turn them into a spacefaring civilization that is our Protectorate.§!\n\n"
+ mission_technological_enlightenment_9_desc:0 "努力将原住民的文明程度迅速提升到太空时代。完成这一目标所需要的时间取决于原住民当前的技术水平。\n\n§E当完成时，他们会变成一个太空文明，并成为我们的保护国。§!\n\n"
  mission_covert_infiltration:0 "秘密渗透"
- mission_covert_infiltration_desc:0 "把特工基因改造为原住民的样子，然后混入原住民中并逐渐渗透他们的社会。这些特工会逐渐取代原住民的领导，为我们占领该行星做好准备。\n\n只有对工业文明世界才值得使用如此复杂的手段。\n\n§EWhen complete, this mission will annex the planet and give the natives a large but temporary happiness boost.§!\n\n"
+ mission_covert_infiltration_desc:0 "把特工基因改造为原住民的样子，然后混入原住民中并逐渐渗透他们的社会。这些特工会逐渐取代原住民的领导，为我们占领该行星做好准备。\n\n只有对工业文明世界才值得使用如此复杂的手段。\n\n§E当完成时，我们会吞并该行星并且提供巨大的幸福度加成。§!\n\n"
 
  MISSION_HALTED:1 "§R任务终止：§! 缺少 §Y$MISSING$§!"
  MISSION:0 "任务："
@@ -8321,9 +8323,9 @@
  st_research:0 "专注于研究"
  st_research_desc:0 "该星域将集中精力进行研究工作。"
  st_financial:0 "专注于金融"
- st_financial_desc:0 "该星域将集中生产能源点数"
- st_agricultural:0 "Agricultural Focus"
- st_agricultural_desc:0 "The Sector will focus on producing Food."
+ st_financial_desc:0 "该星域将集中生产能源点数。"
+ st_agricultural:0 "专注于农业"
+ st_agricultural_desc:0 "该星域将集中生产食物。"
 
  ####################################
  # Start Screen Parts
@@ -8508,7 +8510,7 @@
  personality_erudite_explorers_desc:0 "博学探索者们最重视探索与发现的过程。他们乐于用商品换取那些自己正在寻求的知识，必要情况下甚至不惜采用武力。"
  personality_spiritual_seekers_desc:0 "神灵追寻者相信一切生命都是由某种更高级的力量所联系在一起的，而通过研究这种高级力量所创造的生物就可以理解它的奥妙。为了研究其他帝国与神明的关系，他们会寻求和平合作的方式。"
  personality_harmonious_hierarchy_desc:2 "和谐集体国致力于构建一个和睦的威权主义社会，在该社会中，人们不需要被强迫就能自愿的为国家服务，该社会中的人们不过问其他国家的事情，但并不抗拒贸易往来。"
- 
+
  ####################################
  # Budget Groups
  ####################################
@@ -8534,7 +8536,7 @@
  budget_group_overlord_income:0 "附属国税收"
  budget_group_subject_tax:0 "附属国缴税"
  budget_group_country_modifier:0 "来自调整因素"
- budget_group_megastructure_maintenance:0 "Megastructure Maintenance"
+ budget_group_megastructure_maintenance:0 "巨型结构维护"
 
  ####################################
  # AI
@@ -8876,14 +8878,14 @@
  INTEGRATE_SUBJECT_CAP_REACHED:0 "一次只能整合一个附属国"
  INTEGRATE_SUBJECT_ALREADY_INTEGRATING:0 "已经在整合中"
  INTEGRATE_SUBJECT_MIN_TIME:0 "必须成为附属国长达$DAYS|Y$天（$DATE$）"
- SUBJECT_INTEGRATION_COMPLETE_TITLE:0 "Subject Integration Complete"
- SUBJECT_INTEGRATION_COMPLETE_DESC:0 "Subject $SUBJECT|Y$ has been successfully integrated into our Empire"
+ SUBJECT_INTEGRATION_COMPLETE_TITLE:0 "附属国整合完成"
+ SUBJECT_INTEGRATION_COMPLETE_DESC:0 "附属国$SUBJECT|Y$已成功整合进我们的帝国。"
  
 # Subjects
  SUBJECT_vassal:0 "附庸国"
  SUBJECT_DESC_vassal:0 "附庸国臣服于他们的宗主国，他们只有有限的外交特权，而且必须与宗主国并肩作战。"
  SUBJECT_protectorate:0 "保护国"
- SUBJECT_DESC_protectorate:3 "Protectorates have an independence guarantee from their overlord, pay §Y90%§! reduced tech costs for any tech their Overlord knows, and turn into vassals once they research §Y50%§! of the amount of techs compared to their overlords."
+ SUBJECT_DESC_protectorate:3 "保护国得到宗主国的独立保障，而且研究宗主国已有的科技时所要的成本减少§Y90%§!，在研究宗主国已有的科技的§Y50%§!以后就会转化为附庸国。"
  SUBJECT_DESC_tributary:0 "藩属国是大致保持独立的附属国，但每月都需要向宗主国支付§Y25%§!的能源点数与矿物。"
  OPEN_COMBAT_STATS:0 "§G点击来打开战斗状态§!"
  SUBJECT_tributary:0 "藩属国"
@@ -8895,6 +8897,7 @@
  SUBJECT_DESC_signatory:0 "签约国是外交受限的附属国，受到宗主国的保护，但被允许进行殖民。"
  SUBJECT_satellite:0 "卫星国"
  SUBJECT_DESC_satellite:0 "卫星国是外交独立的附属国，但每月都要向宗主国支付§Y25%§!的研究点数。他们还被迫规定人工智能为非法。"
+ RELATIVE_TECH_TO_OVERLORD:0 "They have currently researched §Y$RATIO|1$%§! of their Overlords' technologies."
 
 # Game setup
  EDIT_SPECIES_PORTRAIT_TITLE:0 "外表"
@@ -9051,6 +9054,6 @@
  EXPANSION_PLANNER_COLONIZE_SOURCE_DESC:0 "§G点击选择地表地块§!"
  EXPANSION_PLANNER_SURFACE_VIEW:0 "殖民$TARGET_PLANET$"
  EXPANSION_PLANNER_ALREADY_HAD_EXPANSION_ENTRY:0 "§R星球已列入殖民计划。§!"
- EXPANSION_PLANNER_TARGET_UNREACHABLE:0 "§RThe colony ship has no valid route to this planet.§!"
+ EXPANSION_PLANNER_TARGET_UNREACHABLE:0 "§R此殖民船没有到达此恒星系的路径！§!"
  
- SHIPS_NOT_UPGRADABLE:0 "§REvent ships are not upgradable§!"
+ SHIPS_NOT_UPGRADABLE:0 "§R事件舰船不能升级§!"

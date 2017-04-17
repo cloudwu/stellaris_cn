@@ -41,9 +41,9 @@
  ring_world_3_intermediate_DESC:0 "一个完整的可居住的环世界功能区，其上覆盖着已经激活的大气层，居民已经可以移民至其中了。"
  
  habitat_0_MEGASTRUCTURE_DETAILS:0 "§Y$pc_habitat$§! 是一个理论上可以自我维持永久居住的空间站。"
- habitat_0_CONSTRUCTION_INFO_DELAYED:0 "§EA Habitat can only house habitat-specific £building  §YBuildings§! and is limited to §Y12§! tiles.§!"
+ habitat_0_CONSTRUCTION_INFO_DELAYED:0 "§E轨道栖所只能建设轨道栖所专属 £building§Y建筑§!，并且最多只能有 §Y12§! 地块§!"
  habitat_0:0 "轨道栖所"
- habitat_0_DESC:0 "可栖息的空间站轨道环绕着一颗不可栖息的星球，能够支持一定数量的§HPops§! 和 §HBuildings§! 远离星球表面。"
+ habitat_0_DESC:0 "环绕着无法栖息的星球的轨道空间站，它能在远离星球表面的地方支持一定数量的§H人口§! 和 §H建筑§! 。"
 
  cant_build_on_habitat:0 "§R不能在轨道栖所上建造。§!"
  think_tank_0_MEGASTRUCTURE_DETAILS:0 "§Y$think_tank_3$§! 的研究实验室以及数据中心源源不断的产生大量新鲜未投入实用的科学成果。"
@@ -69,7 +69,7 @@
  ALLOW_PSI_CORPS:0 "可以建造建筑§H$building_psi_corps$§!。"
  ALLOW_PSI_ARMIES:0 "可以征募§H$psionic_army_plural$§!。"
  
- dyson_sphere_0_MEGASTRUCTURE_DETAILS:0 "A §Y$dyson_sphere_5$§! fully envelops a given star, converting all solar output directly to £energy  Energy Credits."
+ dyson_sphere_0_MEGASTRUCTURE_DETAILS:0 "§Y$dyson_sphere_5$§! 会完全笼罩恒星，并直接将所有的恒星能量转化为 £energy 能源点。"
  dyson_sphere_0_CONSTRUCTION_INFO_DELAYED:1 "§E升级至：\n\n$dyson_sphere_1$\n成本：£minerals  §Y40000§! £time  §H3600§!\n\n$dyson_sphere_2$\n产出 £energy  §G100§!\n成本：£minerals  §Y40000§! £time  §H3600§!\n\n$dyson_sphere_3$\n产出 £energy  §G200§!\n成本：£minerals  §Y40000§! £time  §H3600§!\n\n$dyson_sphere_4$\n产出 £energy  §G300§!\n成本：£minerals  §Y40000§! £time  §H3600§!\n\n$dyson_sphere_5$\n产出 £energy  §G400§!\n成本：£minerals  §Y40000§! £time  §H3600§!\n\nA $dyson_sphere_5$ 将完全遮住太阳，因此会把该恒星系中的所有行星变成$pc_barren_cold$或$pc_frozen$。§!"
  dyson_sphere_0:0 "戴森球基址"
  dyson_sphere_0_DESC:0 "这一初始站点将会作为未来搭建戴森球的基址。"
@@ -84,7 +84,7 @@
  dyson_sphere_5:0 "戴森球"
  dyson_sphere_5_DESC:0 "一个完整的戴森球 - §G100%§!能源产生效率"
  
- spy_orb_0_MEGASTRUCTURE_DETAILS:0 "The stages of the §Y$spy_orb_4$§! gradually expand sensor range, eventually covering the entire galaxy."
+ spy_orb_0_MEGASTRUCTURE_DETAILS:0 "不同阶段的 §Y$spy_orb_4$§! 将逐步提高传感器的范围，最终覆盖整个银河。"
  spy_orb_0_CONSTRUCTION_INFO_DELAYED:1 "§E升级至：\n\n$spy_orb_1$\n成本：£minerals  §Y15000§! £time  §H1800§!\n\n$spy_orb_2$\n成本：£minerals  §Y15000§! £time  §H1800§!\n\n$spy_orb_3$\n成本：£minerals  §Y15000§! £time  §H1800§!\n\n$spy_orb_4$\n成本：£minerals  §Y15000§! £time  §H1800§!§!"
  spy_orb_0:0 "监探阵列基址"
  spy_orb_0_DESC:0 "这一初始站点将会作为未来搭建监探阵列的基址。"
@@ -129,17 +129,17 @@
  requires_no_black_hole_neutron_star_pulsar:0 "$TRIGGER_FAIL$不能将戴森球建造在黑洞、中子星或脉冲星上。"
  requires_no_anomaly:0 "$TRIGGER_FAIL$不能建造在还有未研究的异常现象的行星上。"
 
- progress.3.desc_08:0 "Our colony ship has gently touched down on the sprawling savanna that covers most of §Y[Root.GetName]§!. The shimmering air is dry yet pleasant, and a large herd of docile herbivores can be seen observing from a distance as our first landing site is established.\n\nThe ship has been permanently converted into the administrative headquarters of the new settlement, and its reactor core is in the process of being removed so that it may serve as the colony's temporary power source.\n\nHundreds of small tents and prefab shelters have sprung up around the former starship's massive hull as colonists begin to disembark in large numbers - the first [Root.Owner.GetSpeciesName] city on an alien world."
- progress.3.desc_09:0 "Our colony ship managed, with surprising grace, to maneuver between the massive peaks that are so prevalent in the jagged landscape of §Y[Root.GetName]§!. It touched down in a sheltered valley that will serve as an ideal first landing site.\n\nThe ship has been permanently converted into the administrative headquarters of the new settlement, and its reactor core is in the process of being removed so that it may serve as the colony's temporary power source.\n\nHundreds of small tents and prefab shelters have sprung up around the former starship's massive hull as colonists begin to disembark in large numbers - the first [Root.Owner.GetSpeciesName] city on an alien world."
+ progress.3.desc_08:0 "我们的殖民船已经轻轻地降落在大部分被广阔的草原所覆盖的§Y[Root.GetName]§!。 这里的空气干燥而令人愉快，在我们的着陆点向周围望去，可以看到一大群食草动物\n\n殖民船已经转换为新的行政总部，它的反应堆被用于殖民地临时供电的电源。\n\n上百个小帐篷和避难所已经围着由殖民船改造而来的行政总部搭建起来，我们第一个 [Root.Owner.GetSpeciesName] 城市已经在外星建立。"
+ progress.3.desc_09:0 "我们的殖民船敏捷而优雅地穿梭在§Y[Root.GetName]§!的巨峰之间，最终着陆在理想的着陆点：一个平静安详的小山谷中。\n\n殖民船已经转换为新的行政总部，它的反应堆被用于殖民地临时供电的电源。\n\n上百个小帐篷和避难所已经围着由殖民船改造而来的行政总部搭建起来，我们第一个 [Root.Owner.GetSpeciesName] 城市已经在外星建立。"
  
- fleet_maneuvers_recruitment:0 "Fleet Recruitment Drive"
- fleet_maneuvers_recruitment_desc:0 "§LThe recent naval drills have spurred a great deal of interest in the fleet among the public. We have no shortage of new recruits, which means that we will have to spend less resources to find crews for our starships.§!"
+ fleet_maneuvers_recruitment:0 "舰队招募"
+ fleet_maneuvers_recruitment_desc:0 "§L最近的海军演习吸引了许多人的兴趣，招募新兵变得容易，这意味着我们可以花更少的资源来获得船员。§!"
  fleet_maneuvers:0 "舰队演习"
- fleet_maneuvers_desc:0 "§LAs a result of the large fleet maneuvers we recently held, our well-trained naval crews are able to maintain a higher rate of fire.§!"
+ fleet_maneuvers_desc:0 "§L经大规模舰队演习，船员素质提高，我们可以以更快的速度进行射击了。§!"
  maneuvers_cancelled:0 "取消舰队演习"
- maneuvers_cancelled_desc:0 "§LLarge segments of our military leadership are disgruntled due to the recent cancellation of our planned fleet maneuvers. They feel that it is an unacceptable sign of weakness that our neighbors are sure to take advantage of.§!"
+ maneuvers_cancelled_desc:0 "§L因舰队演习被取消，造成了许多军队领导不满，他们觉得这是一种软弱的表现。我们的邻居一定会趁虚而入。§!"
  maneuvers_no_protest:0 "未能保护舰队演习"
- maneuvers_no_protest_desc:0 "§LA large segment of our military is furious over the fact that we failed to diplomatically object to the massive foreign fleet exercise that recently took place close to our borders.§!"
+ maneuvers_no_protest_desc:0 "§L因为我们没有与邻国建立良好的关系，大量外国舰队在我国边境附近演戏，这激怒了许多我国的军人。§!"
  
  standardized_colony_ships:0 "标准化殖民船"
  

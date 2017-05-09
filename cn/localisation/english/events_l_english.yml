@@ -250,6 +250,10 @@
  action.20.desc:0 "人工智能，不论何种型号设计，在[Root.GetName]境内都是不合法的。相关当局已经将违反该法令的机器人单位进行了拆解。\n\n相关的机器人组装工厂也被重新整改为只能生产无思考回路的机器人。"
  action.20.a:0 "好，必须尽快处理掉这些令人憎恶的东西。"
  action.20.tooltip:0 "所有的智能人和合成人人口必须被清除。\n智能人和合成人组装工厂转变为机器人组装工厂。"
+ action.62.name:1 "The [LastKilledCountryName] has expired"
+ action.62.desc:0 "The nation formerly known as the [LastKilledCountryName] has expired. How this will affect the political climate of the galaxy remains to be seen."
+ action.63.name:0 "$action.62.name$"
+ action.63.desc:0 "The Fallen Empire, the [LastKilledCountryName], has been dissolved. What their demise will mean for galactic politics remains to be seen. Surely their absence will be felt."
 
  # End of War messages
  action.37.name:1 "战胜§H[From.GetName]§!"
@@ -1742,7 +1746,7 @@
  crisis.1010.desc:0 "……到达觅食区域……猎物很多……终于……可以大吃一顿……"
  crisis.1010.a:0 "这些东西到底是什么？"
  crisis.1011.name:0 "[Root.GetName]殖民地被毁"
- crisis.1011.desc:0 "我们失去了位于[Root.GetName]的殖民地！这些异次元侵略者进入星球的轨道后，开始疯狂轰炸星球表面，并大肆吞食星球住民。他们离开后，行星上只剩下了不具备感知能力的人口，没有留下任何活物。"
+ #crisis.1011.desc:0 "我们失去了位于[Root.GetName]的殖民地！这些异次元侵略者进入星球的轨道后，开始疯狂轰炸星球表面，并大肆吞食星球住民。他们离开后，行星上只剩下了不具备感知能力的人口，没有留下任何活物。"
  crisis.1011.a:0 "这些该死的怪物，一定要阻止他们！"
 
  crisis.1013.name:0 "摧毁异次元传送门"
@@ -1816,13 +1820,21 @@
 
  crisis.1271.name:0 "击败入侵"
  crisis.1271.desc:0 "最后残存的异次元入侵者也已被彻底消灭，希望我们这回算是一劳永逸地消除了这些家伙对宇宙的威胁。\n\n全宇宙的智能生物都在庆祝这一伟大的胜利，心中满是得知自己不再需要恐惧某一天会变成这些能量生物口中餐时的轻松与愉悦。也许，这会成为宇宙新一轮全面合作与友谊的开端呢？"
+ #crisis.1271.a:0 "Our spiritual armor has weathered yet another storm."
+ #crisis.1271.b:0 "One day, perhaps we will be the ones invading their realm."
+ #crisis.1271.c:0 "Unfortunate that no opportunity to study their dimension presented itself."
+ #crisis.1271.d:0 "If only there had been a way to peacefully co-exist with them."
+ #crisis.1271.e:0 "The galactic economy should make a swift recovery."
+ #crisis.1271.g:0 "Those pitiful creatures made a mistake when they invaded our dimension."
+ #crisis.1271.h:0 "A shame they were so aggressive. We could have learned much from each other."
+
  crisis.1271.a:0 "我们的精神又经历了一次严峻的考研。"
  crisis.1271.b:0 "某一天，也许会轮到我们来入侵他们的世界吧。"
- crisis.1271.c:0 "可惜，并没有发现能够研究他们那个次元的好机会呢。"
+ crisis.1271.c:0 "可惜我们没有机会研究他们那个次元。"
  crisis.1271.d:0 "多希望能和他们和平共处啊。"
  crisis.1271.e:0 "宇宙经济应该很快就会恢复元气的。"
- crisis.1271.g:0 "这些可悲的生物决定入侵我们的次元本就是个愚蠢的错误。"
- crisis.1271.h:0 "他们攻击性如此之高真是遗憾。我们本可以互相学习借鉴的。"
+ crisis.1271.g:0 "Those creatures made a mistake when they invaded our dimension."
+ crisis.1271.h:0 "They were a fascinating, if dangerous, form of life."
 
  crisis.2192.name:2 "完美仆人"
  crisis.2192.desc:2 "在发明了有感知能力的合成人后，我们一直在努力寻找一个平衡点，既让他们具有独立思考能力，又不让他们脱离我们的控制。现在，[Root.GetSpeciesAdj]顶级工程师已经创造了三定律算法，如果付诸实施，我们就能毫无顾忌地使用合成人来完成有机体无法承受的工作。"
@@ -2255,6 +2267,7 @@
  leader.18.desc:0 "在指挥[Root.GetName]时，[officer.GetName]舰队司令学会了如何精挑细算[officer.GetHisHer]的补给以便大幅减少船只的维护费用。"
  leader.19.desc:0 "随着最近[officer.GetName]舰队司令探索[system.GetName]星系的成功，[officer.GetHerHis]掌握了如何部署[officer.GetHerHis]的单位以便最大化他们传感器的扫描范围。很少有舰队指挥官能够掌握如此复杂的操作。"
  leader.21.name:0 "科学家-获得特性"
+ leader.21.fallback: "Leader [From.From.GetName] has leveled up and gained a new trait."
  leader.21.desc.base:0 "科学家[From.From.GetName]已升级并获得特性："
  leader.21.desc.adaptable:0 "$leader.21.desc.base$§G$leader_trait_adaptable$§!"
  leader.21.desc.resilient:0 "$leader.21.desc.base$§G$leader_trait_resilient$§!"

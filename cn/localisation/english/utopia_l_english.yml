@@ -28,6 +28,7 @@
  MEGASTRUCTURE_TOOLTIP_PRODUCTION_HEADER:0 "每月产出："
  MEGASTRUCTURE_TOOLTIP_MAINTENANCE_HEADER:0 "每月维持费用："
  MEGASTRUCTURE_UPGRADE_REMAINING:0 "还剩 £time $DAYS|Y0$ 天"
+ MEGASTRUCTURE_UPGRADES_TO:0 "升级至："
 
  ring_world_1_MEGASTRUCTURE_DETAILS:0 "§Y$pc_ringworld_habitable$§!拥有数块如同行星一样的区域，同时需要破碎同一系统内其他所有行星天体作为原材料。"
  ring_world_1_CONSTRUCTION_INFO_DELAYED:3 "一座完整的环形世界拥有四个区块，每个都相当于一颗25格的$pc_gaia$。"
@@ -63,13 +64,13 @@
  allow_think_tank:0 "§H解锁巨型结构：§!研究中枢"
  allow_habitats:0 "§H解锁基地：§!轨道栖所"
  allow_edict_consectrated_worlds:2 "§H解锁法令：§!宣为圣地"
- describe_edict_consectrated_worlds:0 "§E这是一个持续§Y100§!年的行星法令，会提高人口的§Y$MOD_POP_HAPPINESS$§!和§Y$MOD_POP_GROWTH_SPEED$§!。§!"
+ describe_edict_consectrated_worlds:2 "§E这是一个持续§Y100§!年的行星法令，会提高人口的§Y$MOD_POP_HAPPINESS$§!和§Y$MOD_POP_GROWTH_SPEED$§!，并提升 £unity  凝聚力§Y产出§!。§!"
  
  ALLOW_PSI_CORPS:0 "可以建造建筑§H$building_psi_corps$§!。"
  ALLOW_PSI_ARMIES:0 "可以征募§H$psionic_army_plural$§!。"
  
  dyson_sphere_0_MEGASTRUCTURE_DETAILS:0 "§Y$dyson_sphere_5$§! 会完全笼罩恒星，并直接将所有的恒星能量转化为 £energy 能源点。"
- dyson_sphere_0_CONSTRUCTION_INFO_DELAYED:1 "$dyson_sphere_5$ 将完全遮住太阳，因此会把该恒星系中的所有行星变成$pc_barren_cold$或$pc_frozen$。"
+ dyson_sphere_0_CONSTRUCTION_INFO_DELAYED:3 "$dyson_sphere_5$ 将完全遮住太阳，把该恒星系中的所有行星变成$pc_barren_cold$或$pc_frozen$。"
  dyson_sphere_0:0 "戴森球基址"
  dyson_sphere_0_DESC:0 "这一初始站点将会作为未来搭建戴森球的基址。"
  dyson_sphere_1:0 "戴森球骨架"
@@ -84,7 +85,7 @@
  dyson_sphere_5_DESC:0 "一个完整的戴森球 - §G100%§!能源产生效率"
  
  spy_orb_0_MEGASTRUCTURE_DETAILS:0 "不同阶段的 §Y$spy_orb_4$§! 将逐步提高传感器的范围，最终覆盖整个银河。"
- spy_orb_0_CONSTRUCTION_INFO_DELAYED:1 "$spy_orb_4$阶段提供的传感器范围最终覆盖整个银河。"
+ spy_orb_0_CONSTRUCTION_INFO_DELAYED:3 "$spy_orb_4$阶段提供的传感器范围最终覆盖整个银河。"
  spy_orb_0:0 "监探阵列基址"
  spy_orb_0_DESC:0 "这一初始站点将会作为未来搭建监探阵列的基址。"
  spy_orb_1:0 "监探核心"
@@ -126,7 +127,7 @@
  requires_not_star:1 "$TRIGGER_FAIL$不能建造在恒星周围。"
  requires_no_existing_spyorb:0 "$TRIGGER_FAIL$监探阵列只能建造一个。"
  requires_no_black_hole_neutron_star_pulsar:0 "$TRIGGER_FAIL$不能将戴森球建造在黑洞、中子星或脉冲星上。"
- requires_no_anomaly:0 "$TRIGGER_FAIL$不能建造在还有我们或者其他帝国未研究的异常现象的行星上。"
+ requires_no_anomaly:1 "$TRIGGER_FAIL$不能建造在还有我们或者其他帝国未研究的异常现象的行星上。"
  requires_not_ring_world:0 "$TRIGGER_FAIL$不能在环形世界上建造。"
 
  progress.3.desc_08:0 "我们的殖民船已经轻轻地降落在大部分被广阔的草原所覆盖的§Y[Root.GetName]§!。 这里的空气干燥而令人愉快，在我们的着陆点向周围望去，可以看到一大群食草动物\n\n殖民船已经转换为新的行政总部，它的反应堆被用于殖民地临时供电的电源。\n\n上百个小帐篷和避难所已经围着由殖民船改造而来的行政总部搭建起来，我们第一个 [Root.Owner.GetSpeciesName] 城市已经在外星建立。"

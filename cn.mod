@@ -5,4 +5,4 @@ tags={
 }
 picture="stellaris_cn.jpg"
 remote_file_id="734129025"
-supported_version="1.7.*"
+supported_version="1.6.*"

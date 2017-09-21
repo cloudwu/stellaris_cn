@@ -63,8 +63,10 @@
  allow_spy_orb:0 "§H解锁巨型结构：§!监探阵列"
  allow_think_tank:0 "§H解锁巨型结构：§!研究中枢"
  allow_habitats:0 "§H解锁基地：§!轨道栖所"
- allow_edict_consectrated_worlds:2 "§H解锁法令：§!$edict_consecrated_worlds$"
- describe_edict_consectrated_worlds:2 "§E这是一个持续§Y100§!年的行星法令，会提高£pop 人口的§Y$MOD_POP_HAPPINESS$§!和§Y$MOD_POP_GROWTH_SPEED$§!，并提升 £unity 凝聚力§Y产出§!。§!"
+ allow_edict_consectrated_worlds:3 "§H解锁行星法令：§!$edict_consecrated_worlds$"
+ describe_edict_consectrated_worlds:3 "§E这是一个持续§Y100§!年的行星法令，会提高£pop 人口的§Y$MOD_POP_HAPPINESS$§!，§YSpiritualist Ethics Attraction§!和§Y$MOD_POP_GROWTH_SPEED$§!，并提升 £unity 凝聚力§Y产出§!。§!"
+ allow_machine_worlds:2 "§HUnlocks Terraforming Option:§! Machine World"
+ describe_machine_worlds:0 "§YMachine Worlds§! are a special planet class that is uninhabitable for organics. §YMachine Pops§! living on §YMachine Worlds§! have their resource output increased by §G+15%§!."
  
  ALLOW_PSI_CORPS:0 "可以建造建筑§H$building_psi_corps$§!。"
  ALLOW_PSI_ARMIES:0 "可以征募§H$psionic_army_plural$§!。"
@@ -109,7 +111,7 @@
  action.1.ad:0 "§E你族不会威胁我们的[From.GetRulerTitle]。§!"
  action.1.ar:1 "§E[From.GetRulerName]代表[From.GetAdj]人民讲话。§!"
  
- anomaly.168.d.tooltip:1 "开始一场宗教复兴。"
+ anomaly.168.d.tooltip:2 "开始一场宗教复兴，shifting empire ethics towards §YSpiritualist§!。"
  precursor.2200.desc.b:0 "在勘探了§Y[From.GetStarName]§!系中发现的巨大环形世界后，科学官§Y[Root.GetLeaderName]§!报告了其设计在诸多方面和我们自己的环形世界设计相似，虽然它比较古老。\n\n然而，有一个关键的区别是，环的部分区块似乎是由我们未知的新资源构成的。初步报告将它描述为某种“活金属”。不管怎样，应该进一步研究。"
  
  requires_planets_for_material:0 "$TRIGGER_FAIL$没有行星作为材料！"
@@ -127,6 +129,8 @@
  requires_not_minor_planetary_body:1 "$TRIGGER_FAIL$不能建造在小天体周围（小行星或月球）。"
  requires_not_star:1 "$TRIGGER_FAIL$不能建造在恒星周围。"
  requires_no_existing_spyorb:0 "$TRIGGER_FAIL$监探阵列只能建造一个。"
+ requires_no_existing_think_tank:0 "$TRIGGER_FAIL$Cannot build more than one Science Nexus."
+ requires_no_existing_dyson_sphere:0 "$TRIGGER_FAIL$Cannot build more than one Dyson Sphere."
  requires_no_black_hole_neutron_star_pulsar:0 "$TRIGGER_FAIL$不能将戴森球建造在黑洞、中子星或脉冲星上。"
  requires_no_anomaly:1 "$TRIGGER_FAIL$不能建造在有我们或者其他帝国发现但尚未研究的异常现象的行星上。"
  requires_not_ring_world:0 "$TRIGGER_FAIL$不能建造在环形世界上。"
@@ -160,7 +164,9 @@
  trait_latent_psionic_desc:0 "§L此种族拥有潜在的灵能能力，虽然在大部分个体之中都是休眠状态。尽管非常稀有，但这些力量会在一些领袖身上体现。§!\n"
  trait_psionic:0 "灵能"
  trait_psionic_desc:0 "§L此种族的所有个体都拥有强大的灵能。他们通常通过心灵感应来相互沟通。§!\n"
- 
+ trait_self_modified:0 "Self-Modified"
+ trait_self_modified_desc:0 "§LMembers of this offshoot species have spontaneously altered their genetic makeup to give themselves an advantage.§!"
+
  leader_trait_admiral_cyborg:0 "赛博人"
  leader_trait_admiral_cyborg_desc:0 "此领袖配备了军事升级内植部件，可以直接操控舰队指挥与控制系统。"
  leader_trait_general_cyborg:0 "$leader_trait_admiral_cyborg$"

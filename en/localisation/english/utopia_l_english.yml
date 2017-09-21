@@ -49,7 +49,7 @@
  cant_build_on_habitat:0 "§RCan't be built on Habitats§!"
  think_tank_0_MEGASTRUCTURE_DETAILS:1 "The research labs and databanks of a §Y$think_tank_3$§! generate an immense flow of raw, undiluted science."
  think_tank_0:0 "Science Nexus Site"
- think_tank_0_DESC:0 "The initial site will serve as the base for the future construction of a Science Nexus."
+ think_tank_0_DESC:0 "This initial site will serve as the base for the future construction of a Science Nexus."
  think_tank_1:0 "Science Nexus Hub"
  think_tank_1_DESC:0 "Equipped with a state of the art singularity reactor, the central core will cover most of the Nexus' energy needs. It will also connect the future research facilities."
  think_tank_2:0 "Science Nexus Research Wings"
@@ -63,8 +63,10 @@
  allow_spy_orb:0 "§HUnlocks Megastructure:§! Sentry Array"
  allow_think_tank:0 "§HUnlocks Megastructure:§! Science Nexus"
  allow_habitats:0 "§HUnlocks Station:§! Habitat"
- allow_edict_consectrated_worlds:2 "§HUnlocks Edict:§! Consecrate World"
- describe_edict_consectrated_worlds:2 "§EThis is a Planetary Edict that lasts for §Y100§! years and increases £pop  Pop §Y$MOD_POP_HAPPINESS$§!, increases §Y$MOD_POP_GROWTH_SPEED$§!, and boosts £unity  Unity §YGeneration§!.§!"
+ allow_edict_consectrated_worlds:3 "§HUnlocks Planetary Edict:§! Consecrate World"
+ describe_edict_consectrated_worlds:3 "§EThis is a Planetary Edict that lasts for §Y100§! years and increases £pop  Pop §Y$MOD_POP_HAPPINESS$§!, increases §YSpiritualist Ethics Attraction§!, increases §Y$MOD_POP_GROWTH_SPEED$§!, and boosts £unity  Unity §YGeneration§!.§!"
+ allow_machine_worlds:2 "§HUnlocks Terraforming Option:§! Machine World"
+ describe_machine_worlds:0 "§YMachine Worlds§! are a special planet class that is uninhabitable for organics. §YMachine Pops§! living on §YMachine Worlds§! have their resource output increased by §G+15%§!."
  
  ALLOW_PSI_CORPS:0 "The §H$building_psi_corps$§! building is now available."
  ALLOW_PSI_ARMIES:0 "§H$psionic_army_plural$§! can now be recruited."
@@ -109,7 +111,7 @@
  action.1.ad:0 "§EYour kind will not threaten our [From.GetRulerTitle].§!"
  action.1.ar:1 "§E[From.GetRulerName] speaks on behalf of the [From.GetAdj] people.§!"
  
- anomaly.168.d.tooltip:1 "Start a religious renaissance."
+ anomaly.168.d.tooltip:2 "Start a religious renaissance, shifting empire ethics towards §YSpiritualist§!."
  precursor.2200.desc.b:0 "After surveying the immense ring world found in the §Y[From.GetStarName]§! system, Science Officer §Y[Root.GetLeaderName]§! has reported that it is similar in many ways to our own ring designs, despite its age.\n\nThere is one critical difference, however - the ring sections appear to have been constructed partly out of a new resource that is unknown to us. Initial reports describe it as some kind of "living metal." Whatever it is, it should be studied more closely."
  
  requires_planets_for_material:0 "$TRIGGER_FAIL$Cannot build in systems without planetary bodies for material."
@@ -127,6 +129,8 @@
  requires_not_minor_planetary_body:1 "$TRIGGER_FAIL$Cannot build on a minor planetary body (asteroid or moon)."
  requires_not_star:1 "$TRIGGER_FAIL$Cannot build around a star."
  requires_no_existing_spyorb:0 "$TRIGGER_FAIL$Cannot build more than one Sentry Array."
+ requires_no_existing_think_tank:0 "$TRIGGER_FAIL$Cannot build more than one Science Nexus."
+ requires_no_existing_dyson_sphere:0 "$TRIGGER_FAIL$Cannot build more than one Dyson Sphere."
  requires_no_black_hole_neutron_star_pulsar:0 "$TRIGGER_FAIL$Cannot build Dyson Spheres around Black Holes, Neutron Stars or Pulsars."
  requires_no_anomaly:1 "$TRIGGER_FAIL$Cannot build on planets that have unresearched anomalies discovered by us or any other Empire."
  requires_not_ring_world:0 "$TRIGGER_FAIL$Cannot build on Ring Worlds."
@@ -160,7 +164,9 @@
  trait_latent_psionic_desc:0 "§LThis species has latent psionic abilities, which are dormant in most of its members. Although quite rare, these powers will manifest in some leaders.§!\n"
  trait_psionic:0 "Psionic"
  trait_psionic_desc:0 "§LAll members of this species possess powerful psionic abilities. They typically communicate with each other through telepathy.§!\n"
- 
+ trait_self_modified:0 "Self-Modified"
+ trait_self_modified_desc:0 "§LMembers of this offshoot species have spontaneously altered their genetic makeup to give themselves an advantage.§!"
+
  leader_trait_admiral_cyborg:0 "Cyborg"
  leader_trait_admiral_cyborg_desc:0 "This leader is equipped with military-grade cybernetic implants that can interface directly with fleet command and control systems."
  leader_trait_general_cyborg:0 "$leader_trait_admiral_cyborg$"

@@ -1,6 +1,6 @@
 群星中文校对 Mod
 ============
-当前支持游戏版本： 群星 Stellaris 1.7.2
+当前支持游戏版本： 群星 Stellaris 1.8.0
 
 你可以直接在创意工坊订阅本 mod:
 http://steamcommunity.com/sharedfiles/filedetails/?id=734129025
@@ -13,7 +13,7 @@ http://steamcommunity.com/sharedfiles/filedetails/?id=734129025
 * term_list.txt 是术语列表，参加翻译时请参考这里统一术语。
 * script 是一些实用工具脚本，用来检查错误。
 
-### 本汉化需另加载 字库 / 字体 mod 才能正常使用:
+### 本汉化 Mod 引用尚未公开的官方中文字体，如果需要其它字体可以单独订阅 字体 mod :
 
 * 悦黑 http://steamcommunity.com/workshop/filedetails/?id=784471286  （群星汉化最早使用的字体）
 * 粗圆 http://steamcommunity.com/workshop/filedetails/?id=826928128  （低分辨率下可能更清晰一些）

@@ -270,6 +270,7 @@
 
  #Unrest
  MOD_PLANET_UNREST_ADD:0 "动乱"
+ MOD_PLANET_UNREST_MULT:0 "$MOD_PLANET_UNREST_ADD$"
  MOD_COUNTRY_UNREST_HAPPY_POP_EFFECT_MULT:0 "人口动乱削减"
  MOD_COUNTRY_UNREST_UNHAPPY_POP_EFFECT_MULT:0 "人口动乱"
  MOD_COUNTRY_UNREST_HAPPY_SLAVE_EFFECT_MULT:0 "奴隶动乱削减"
@@ -352,8 +353,7 @@
  country_strategic_resources_resource_unity_max_mult:0 "$tr_versatility_material_analysis$ Max Effect"
  country_planet_classes_resource_unity_mult:0 "$tr_adaptability_environmental_diversification$"
  country_planet_classes_resource_unity_max_mult:0 "$tr_adaptability_environmental_diversification$ Max Effect"
-
-
+ 
  ####################################
  # Dynamic Modifiers
  ####################################
@@ -400,9 +400,9 @@
  shipsize_mining_station_upkeep_mult:0 "采矿基地维护"
  shipsize_research_station_upkeep_mult:0 "科研基地维护"
  shipsize_science_upkeep_mult:0 "科研船维护"
+ shipclass_science_ship_evasion_add:0 "Science Ship Combat Evasion"
  shipsize_constructor_upkeep_mult:0 "工程船维护"
  shipsize_colonizer_upkeep_mult:0 "殖民船维护"
- shipclass_science_ship_evasion_add:0 "Science Ship Combat Evasion"
  shipsize_military_station_small_upkeep_mult:1 "防御平台维护"
  shipsize_military_station_medium_upkeep_mult:1 "防御基地维护"
  shipsize_military_station_large_upkeep_mult:1 "要塞维护"
@@ -700,7 +700,7 @@
  triggered_opinion_robot_emotion_emulators:0 "Emotion Emulators"
  triggered_opinion_robot_uncanny:0 "Uncanny"
  triggered_opinion_robot_a_little_uncanny:0 "$triggered_opinion_robot_uncanny$"
- 
+
  ## Machine Empires
  triggered_organic_opinion_of_machine_empires:0 "Machine Intelligence"
  triggered_terminators_opinion_of_servitors:0 "Biophiles"

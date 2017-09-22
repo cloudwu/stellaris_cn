@@ -10,7 +10,7 @@
  PLAYER_EMPIRE_SP:0 "§YPlayer Empire§!"
  
  SHIP_DESIGN_NAME_RANDOMIZE_TOOLTIP:0 "Randomize Name"
- 
+
  STATION:0 "基地"
  TRIGGER_PASS:1 "£trigger_yes "
  TRIGGER_FAIL:1 "£trigger_no "
@@ -20,14 +20,14 @@
  
  land_appropriation:0 "Land Appropriated"
  land_appropriation_desc:0 "Land was seized from the native population of this planet to make room for citizen settlers.\n\n§YWhile this modifier is in effect, non-citizen species are not allowed to grow their population on this planet.§!"
-
+ 
  TRAIT_CHARISMATIC_EFFECT:0 "统治者看法影响：§G+25§!\n$MOD_POP_OTHER_SPECIES_OWNER_HAPPINESS$: §G+5%§!"
- TRAIT_REPUGNANT_EFFECT:0 "统治者看法影响：§R-25§!\n$MOD_POP_OTHER_SPECIES_OWNER_HAPPINESS$: §R-5%§!
+ TRAIT_REPUGNANT_EFFECT:0 "统治者看法影响：§R-25§!\n$MOD_POP_OTHER_SPECIES_OWNER_HAPPINESS$: §R-5%§!"
  TRAIT_EMOTION_EMULATORS_EFFECT:0 "Ruler Opinion Impact: §G+25§!"
- TRAIT_UNCANNY_EFFECT:0 "Ruler Opinion Impact: §R-25§!""
+ TRAIT_UNCANNY_EFFECT:0 "Ruler Opinion Impact: §R-25§!"
  
  CANNOT_ENLIGHTEN_FANATIC_XENOPHOBE:0 "无法对§H$ethic_fanatic_xenophobe$§!的原始文明进行技术启蒙。"
-
+ 
  FOOD_NO_NEED:0 "§YWe have no Pops that require Food to sustain them.§!"
  FOOD_NO_PLANETS:0 "§YWe have no Planets that require Food to grow.§!"
  FOOD_SURPLUS_STARVATION:0 "§R我国目前处于饥荒中，£pops §Y人口增长§!停止。§!"
@@ -36,7 +36,7 @@
  FROM_FOOD_SURPLUS:1 "来自盈余食物：$VALUE|Y=2$"
 
  SPECIES_LACKS_OPTION:0 "§R你所选的种族外观在此分类中无次级选项。§!"
-
+ 
  GENERATING_UNREST:0 "This Pop is unhappy, generating $AMOUNT|1R$ Unrest on the planet."
 
  ALL:0 "全部"
@@ -61,7 +61,7 @@
  civic_machine_remnants_desc:0 ""
  civic_custodian_directives:0 "Custodian Matrix"
  civic_custodian_directives_desc:0 ""
-
+ 
  FALLEN_EMPIRE_LETHARGY_1:0 "§E无法建造新舰船。§!"
  FALLEN_EMPIRE_LETHARGY_2:0 "§E无法征服或殖民行星。§!"
 
@@ -109,7 +109,7 @@
  SPECIES_MUST_BE_ASSIMILATING:0 "$TRIGGER_FAIL$Species may not have §Y$citizenship_assimilation$§! citizenship."
  SPECIES_MUST_NOT_BE_ASSIMILATING:0 "$TRIGGER_FAIL$Species must have §Y$citizenship_assimilation$§! citizenship."
  DEFAULT_SPECIES_MUST_BE_HIVE:0 "$TRIGGER_FAIL$Requires §Y$ap_evolutionary_mastery$§!. Only organic §Y$trait_hive_mind$§! species can be de-assimilated."
-
+ 
  EMBRACE_FACTION_COOLDOWN:1 "我们最近才§Y拥纳§!过一个派系。此操作每§Y10§!年才能进行一次。"
  
  embraced_another_faction:0 "拥纳其他派系"
@@ -165,7 +165,7 @@
  TRAIT_REQUIRES_CLASS:0 "$TRAIT|H$ requires one of the following Species Classes:"
  RECENTLY_CHANGED_SPECIES_RIGHT:0 "§R我们最近才改变过种族政策。直到$DATE|Y$前不能再次改变。§!"
  RECENTLY_CHANGED_SPECIES_RIGHTS_CANT_RESET:0 "§R我们最近才改变过种族政策。直到$DATE|Y$前不能重置种族权利。§!"
- PLANNED_SECTOR_BLOCKER_PROJECT:0 "- 计划清理 $TARGET$ 上的一块障碍地块（已分配 $AMOUNT|Y$/$NEEDED|Y$£minerals ）。"
+ PLANNED_SECTOR_PROJECT_HEADER:0 "§ESector Projects§!"
  PLANNED_SECTOR_PROJECT_ON_PLANET:0 "- Planning to construct $PROJECT|Y$ on $PLANET|H$"
  PLANNED_SECTOR_PROJECT_AT_PLANET:0 "- Planning to construct $PROJECT|Y$ at $PLANET|H$"
  PLANNED_SECTOR_PROJECT_IN_SYSTEM:0 "- Planning to construct $PROJECT|Y$ in $SYSTEM|H$"
@@ -573,11 +573,11 @@
  SECTOR_CONSTRUCTION_RESPECT_TILE_RESOURCES:1 "尊重地块资源"
  SECTOR_RESOURCE_ABOVE_CAP:0 "超过上限$AMOUNT|0Y$的资源无法储存"
  ARMOR:0 "护甲"
+ QUIT_TITLE:0 "退出游戏"
+ QUIT_DESC:0 ""是否确认退出并返回桌面？"
  RESIGN_TITLE:0 "返回主菜单"
  RESIGN_DESC:0 "确定放弃游戏并返回主菜单？"
  GROUND_COMBAT:0 "入侵"
- QUIT_TITLE:0 "退出游戏"
- QUIT_DESC:0 "是否确认退出并返回桌面？
  MOVE_CAPITAL:0 "迁都"
  MOVE_CAPITAL_DESC:0 "迁都到此行星需要消耗 £influence $COST|Y0$。"
  MOVE_CAPITAL_DESC_VALID:0 "点击将首都迁至此星球。"
@@ -968,8 +968,8 @@
  SPACEPORT_DESC:0 "§E§H太空港§!是建立在被殖民行星的轨道上的巨大的空间站。主要有两大用途：\n§Y1.§!建造舰船\n§Y2.§!保护行星免受敌对舰队侵扰§!"
  LEADER_EFFECTS_OF_SKILL:0 "Skill Level Effects:"
  FLEET_IS_WINDING_DOWN:0 "不能让正从超光速中冷却的舰队分离或合并。"
- FLEET_TOO_LARGE:0 "Cannot create a fleet that contains more than $NUM|Y$ ships."
  FLEET_IS_UPGRADING:0 "不能让升级中的舰队分离或合并。"
+ FLEET_TOO_LARGE:0 "Cannot create a fleet that contains more than $NUM|Y$ ships."
  FLEET_SPLIT_NOT_ENOUGH_SHIPS:0 "拥有的舰船数不足以组建新的舰队。"
  FLEET_SPLIT_NOT_OWNER:0 "非舰队的控制者"
  FLEET_MERGE_DESC:3 "合并选中的舰队成尽可能少的舰队。舰队将会按照以下指标排列：§Y\n1.自定义名字\n2.领导技能\n3. 舰队规模\n§!"
@@ -2166,8 +2166,8 @@
  spiral_2:0 "螺旋形（双旋臂）"
  spiral_4:0 "螺旋形（四旋臂）"
  GALAXY_SIZE:0 "银河系大小"
- RANDOMIZED_SETTING_NUM:0 "$MIN$-$MAX$"
  TEMPLATE_NUM_STARS:0 "（$STARS$ 星）"
+ RANDOMIZED_SETTING_NUM:0 "$MIN$-$MAX$"
  NUM_EMPIRES:0 "AI帝国"
  NUM_ADVANCED_EMPIRES:1 "高级AI数量"
  tiny:0 "微型"
@@ -2407,7 +2407,7 @@
  pc_machine_desc:0 "Rocky world covered with artificial structures. The thin atmosphere consists mostly of industrial pollutants and is not capable of supporting biological life."
  pc_cybrex:0 "$pc_ringworld_habitable$"
  pc_cybrex_desc:0 "$pc_ringworld_habitable_desc$"
-
+ 
  ####################################
  # Terrain Tiles
  ####################################
@@ -2442,7 +2442,7 @@
  pc_machine_tile_desc:0 "人工净化的的无菌地形，地下有超导晶格。"
  pc_habitat_tile:0 "栖所地形"
  pc_habitat_tile_desc:0 "锻造矿物地板铺在人造重力发生器上的地面，是城市和工业建筑的基础。"
-
+ 
  ####################################
  # Tile Blockers
  ####################################
@@ -3354,7 +3354,7 @@
  trait_ruler_space_miner_desc:1 "这位领袖深知矿物开采对于一个恒星国的重要性。"
  trait_ruler_explorer:0 "探索者"
  trait_ruler_explorer_desc:1 "这位领袖有着无尽的好奇心，认为太空探索重于一切。"
- 
+
  # Machine
  leader_trait_ruler_machine_intelligence:0 "Machine Intelligence"
  leader_trait_ruler_machine_intelligence_desc:0 "This leader is the core intelligence that oversees and directs all actions in a Machine Empire."
@@ -3532,7 +3532,7 @@
  ethic_fanatic_xenophobe:0 "狂热排外主义"
  ethic_fanatic_xenophobe_desc:1 "§L必须殘酷根除一切外星影响。只有对我族和母星保持纯正、忠贞，才能抵御潜藏的外星阴谋。即使是控制外星人也不一定能保障我族安全……§!\n"
  ethic_xenophile:0 "亲外主义"
- ethic_xenophile_desc:0 "§L我们心底深处都有一份对未知的迷恋，一种拒绝熟悉事物，以未知事物为荣的冒险精神——无论等待我们的是什么，无论等待我们的是谁。§!\n" 
+ ethic_xenophile_desc:0 "§L我们心底深处都有一份对未知的迷恋，一种拒绝熟悉事物，以未知事物为荣的冒险精神——无论等待我们的是什么，无论等待我们的是谁。§!\n"
  ethic_fanatic_xenophile:0 "狂热亲外主义"
  ethic_fanatic_xenophile_desc:0 "§L若世上确有绝对道德令律，那一定就是去探索宇宙，拥抱宇宙中的一切。我们注定不会独自旅行。§!\n"
  ethic_militarist:0 "军国主义"
@@ -5259,7 +5259,7 @@
  OWNER_POP:1 "This Pop owns a $SPECIES|Y$ Pop."
  OWNED_POP:1 "This Pop is owned by a $SPECIES|Y$ Pop."
  STATE_OWNED_POP:0 "This Pop is owned by the state."
-
+ 
  ####################################
  # SPECIES VIEW
  ####################################
@@ -6435,8 +6435,6 @@
  building_engineering_facility_2_desc:1 "$building_engineering_facility_1_desc$"
  building_engineering_facility_3:0 "工程研究所 III"
  building_engineering_facility_3_desc:1 "$building_engineering_facility_1_desc$"
- building_ancient_archives:0 "Precursor Archives"
- building_ancient_archives_desc:0 "§LVast stores of ancient knowledge.§!"
  building_engineering_facility_4:0 "工程研究所 IV"
  building_engineering_facility_4_desc:1 "$building_engineering_facility_1_desc$\n\n$requires_capital_planet_desc$"
  building_engineering_facility_5:0 "工程研究所 V"
@@ -6482,6 +6480,8 @@
  building_capital_3_desc:1 "布局宏伟的政府部门集中地，公共设施星罗棋布，可以建设和运营各种条件苛严的设施。"
  building_ancient_factory:1 "自动化工厂"
  building_ancient_factory_desc:1 "§L这座古老的复合设施使用了失传已久的科技。§!"
+ building_ancient_archives:0 "Precursor Archives"
+ building_ancient_archives_desc:0 "§LVast stores of ancient knowledge.§!"
  building_dark_matter_power_plant:0 "暗物质发电厂"
  building_dark_matter_power_plant_desc:0 "§L这座古老的复合设施使用了失传已久的科技。§!"
  building_agri_processing_complex:0 "农业加工复合体"
@@ -6925,7 +6925,7 @@
 
  gov_fallback:0 "Generic Empire"
  gov_fallback_desc:0 "Generic fallback! Don't look!"
- 
+
 
  ####################################
  # Rulers / Heirs
@@ -7050,7 +7050,7 @@
  ####################################
  # Civics
  ####################################
-
+ 
  civic_feudal_realm:0 "Feudal Society"
  civic_feudal_realm_desc:0 "This society is organized in a feudal manner, with a monarch whose rule relies on powerful vassals that govern their territories with considerable autonomy."
  civic_imperial_cult:0 "国教崇拜"
@@ -7109,6 +7109,7 @@
  civic_mechanists_desc:0 "此社会自蒸汽时代早期便一直追求金属自动机。尽管很多人认为做不到，但第一台真正的机器人早就出厂了，远早于初步太空飞行的实现。"
  civic_syncretic_evolution:0 "综摄演化"
  civic_syncretic_evolution_desc:0 "第二个种族乃此社会不可分割的一部分。此种族高大强壮，而智力仅与愚笨的孩童相当。古代战争已剔除其侵略倾向，使之相当恭顺。"
+ civic_syncretic_evolution_secondary_species:0 "Syncretic Species"
  civic_fanatic_purifiers:0 "狂心肃清者"
  civic_fanatic_purifiers_desc:0 "此社会为涤清银河系所有其他智慧物种而奋斗。不管怎样，他们不会留下任何异族活口。"
  civic_lethargic_leadership:0 "昏睡先导"
@@ -7161,7 +7162,6 @@
  civic_hive_pooled_knowledge_desc:0 "此蜂群思维的自主工蜂经常通过直接连接来共享知识，绕过了蜂群思维的缓慢注册流程。"
  civic_hive_devouring_swarm:0 "鲸吞恶群"
  civic_hive_devouring_swarm_desc:0 "我蜂群思维的存在只有一个因由，那就是吞噬并成长地更强。我们要收集所有够得到的生物质并进化到吞噬银河！"
-
  civic_machine_servitor:0 "Rogue Servitor"
  civic_machine_servitor_desc:0 "A product of a brief golden age, the Machine Intelligence originated in a planet-spanning Servitor system that outlasted the decadent civilization it was created to serve."
  civic_machine_servitor_secondary_species:0 "Bio-Trophy"
@@ -7203,7 +7203,7 @@
  civic_tooltip_machine_servitor_effects:3 "Start the game with §Y2§! organic £pop  Pops with §Y$citizenship_organic_trophy$§! citizenship and §Y$living_standard_organic_trophy$§! living standard. Caring for organic £pop  Pops in this way fulfills low-level directives, freeing up processing cycles and boosting resource production.\n\nThis manifests as a §YServitor Morale§! Empire Modifier, giving §G+0.5§! £influence monthly and §G+10%§! resource output for every §Y10%§! of the population that have §Y$citizenship_organic_trophy$§! status (max §G+2§! £influence and §G+40%§! resource output) at §Y40% $citizenship_organic_trophy$§! £pop  Pops).\n\nOrganic Pops residing in Servitor civilizations are concentrated into space-efficient living spaces where they can be properly cared for. As a result, crowded planets that are taken over by the Servitors will have some organic £pop  Pops removed from their tiles."
  civic_tooltip_machine_terminator_effects:1 "Cannot engage in §YDiplomacy§! with organic species!\nWill always §YPurge§! organic £pop  Pops.\nGains £unity  §YUnity§! from purging organic £pop  Pops.\nMay use §Y$GROUND_SUPPORT_STANCE_ARMAGEDDON$§! bombardment stance.\n§Y$MOD_SHIP_WEAPON_DAMAGE$§! increased by §G+15%§!"
  civic_tooltip_machine_assimilator_effects:0 "Start the game with §Y4§! cyborg £pop  Pops and the ability to turn organics into cyborgs. Xeno £pop  Pops are automatically §YPurged§! over time, but can be turned into cyborgs and given §YFull Citizenship§!."
-
+ 
  civic_tooltip_spiritualist:0 "是某种§Y精神主义§!"
  civic_tooltip_materialist:0 "是某种§Y物质主义§!"
  civic_tooltip_authoritarian:0 "是某种§Y威权主义§!"
@@ -8206,7 +8206,7 @@
  ANOMALY_FAILURE_RISK_INCREASED:0 "§T由于§H科学家的技能等级§!低于§H异常现象的等级§!，风险$VAL|-%0$。§!"
  ANOMALY_FAILURE_RISK_REDUCED:0 "§T由于§H科学家的技能等级§!高于§H异常现象的等级§!，风险$VAL|-%0$。§!"
  ANOMALY_FAILURE_RISK_MIN:0 "§TFailure risk is never lower than $VAL|-%0$§!"
-
+ 
  ####################################
  # Edicts
  ####################################
@@ -8248,7 +8248,7 @@
  edict_share_the_burden:0 "承担重担"
  edict_share_the_burden_desc:1 "此法令强制契约工依据作息时间表轮班工作，让他们出更多苦力便能提高生产力一点。"
  # edict_share_the_burden_desc: "This Edict dictates that the various burdens of society should be given to those best suited to handle them. Manual labour is best left to those used to such tasks..."
-
+ 
  edict_engineering_research_focus_hive:0 "Focus our thinker drones on new engineering concepts at the expense of all other knowledge."
  edict_engineering_research_focus_machine:0 "Divert processing power to engineering-focused theoretical models and downgrade priority on other avenues of research"
  edict_physics_research_focus_hive:0 "Focus our thinker drones on new physics concepts at the expense of all other knowledge."
@@ -8442,15 +8442,6 @@
 
  policy_migration:0 "移民"
  policy_migration_desc:0 "我们帝国内的某些人仰望着夜空中的群星，期盼自己能在新世界创造美好生活。\n"
- policy_appropriation:0 "Land Appropriation"
- policy_appropriation_desc:0 "This policy controls whether or not newly acquired planets should have some of their tiles appropriated from non-citizen species."
- appropriation_not_allowed:0 "Prohibited"
- appropriation_not_allowed_name:0 "Land Appropriation Prohibited"
- appropriation_not_allowed_desc:0 "The land that our empire controls belongs to all of its inhabitants.\n\n§ENewly acquired planets will have their populations preserved as-is.§!"
- appropriation_allowed:0 "Allowed"
- appropriation_allowed_name:0 "Land Appropriation Allowed"
- appropriation_allowed_desc:0 "The land that the lesser species are not properly utilizing can be put to greater use by their betters.\n\n§ENewly acquired planets with less than §Y5§! tiles of free space will have some of their non-citizen Pops removed from their land.§!"
- 
  migration_not_allowed:0 "禁止"
  migration_not_allowed_name:0 "禁止移民"
  migration_not_allowed_desc:0 "由帝国决定哪里最需要人。\n\n§E任何人口都无法自由迁徙§!"
@@ -8461,6 +8452,15 @@
  migration_allowed_all_name:0 "无限制移民"
  migration_allowed_all_desc:0 "所有我们的公民都应享有追求自己幸福的权利。\n\n§E所有人口都可以自由迁徙§!"
 
+ policy_appropriation:0 "Land Appropriation"
+ policy_appropriation_desc:0 "This policy controls whether or not newly acquired planets should have some of their tiles appropriated from non-citizen species."
+ appropriation_not_allowed:0 "Prohibited"
+ appropriation_not_allowed_name:0 "Land Appropriation Prohibited"
+ appropriation_not_allowed_desc:0 "The land that our empire controls belongs to all of its inhabitants.\n\n§ENewly acquired planets will have their populations preserved as-is.§!"
+ appropriation_allowed:0 "Allowed"
+ appropriation_allowed_name:0 "Land Appropriation Allowed"
+ appropriation_allowed_desc:0 "The land that the lesser species are not properly utilizing can be put to greater use by their betters.\n\n§ENewly acquired planets with less than §Y5§! tiles of free space will have some of their non-citizen Pops removed from their land.§!"
+ 
  policy_resettlement:0 "强制移居"
  policy_resettlement_desc:0 "这项政策决定着我们是否能在行星间强制转移人口。\n"
  resettlement_not_allowed:0 "禁止"
@@ -8530,7 +8530,7 @@
  first_contact_attack_allowed:0 "侵略接触"
  first_contact_attack_allowed_name:0 "好斗的接触行为"
  first_contact_attack_allowed_desc:0 "群星之中隐藏着未知的危险，为了保证生存，我们必须随时准备攻击。\n\n§E可以攻击中立存在§!"
-
+ 
  policy_robot_pop_policy:0 "Robotic Workers"
  policy_robot_pop_policy_desc:0 "The invention of autonomous robots opens for the workers of our species being supplanted and perhaps, in time, surpassed. We must decide our stance on such large-scale automation."
   
@@ -8574,7 +8574,7 @@
  no_wars:0 "防御战争"
  no_wars_name:0 "仅防御战争"
  no_wars_desc:0 "暴力时保卫本国主权的最后手段。\n\n§E无法宣战，只能割占我们本有的行星。§!"
-
+ 
  PURGES_ALLOWED:0 "Purging is enabled in Policies."
 
  policy_food_stockpiling:0 "食物储备"
@@ -8592,8 +8592,8 @@
  food_stockpiling_3_name:0 "大量储备"
  food_stockpiling_3_desc:0 "我们永远不会知道灾难和饥荒何时降临。大量储备食物能让我们度过难关而不必让人民遭受苦难。"
  ONLY_SERVITORS_STOCKPILE_FOOD:0 "$TRIGGER_FAIL$Only a §H$civic_machine_servitor$§! may stockpile £food  §H$food$§!."
- 
 
+ 
  policy_war_economy:0 "战争经济"
  policy_war_economy_desc:0 "面临亡国危机时，我们可以征用民间资产以弥补防卫战的经济和工业损耗。这些政策的不利之处在于，我们在进攻战占上风时将受到相应惩罚……\n"
  static_we:0 "静态"
@@ -9037,7 +9037,7 @@
 
  ####################################
  # Start Screen Parts
- #################################### # TODO
+ ####################################
 
  START_SCREEN_PART_ONE_OCEAN:0 "在亿万年前，最初的原始[GetSpeciesName]种群在[GetHomeWorldName]的群岛与湖泊中形成，从那时起，我们的文明就开始传播并慢慢走向繁荣。"
  START_SCREEN_PART_ONE_TROPICAL:0 "在亿万年前，最初的原始[GetSpeciesName]种群在[GetHomeWorldName]的茂密的热带雨林中形成，从那时起，我们的文明就开始传播并慢慢走向繁荣。"
@@ -9209,11 +9209,11 @@
  personality_awakened_fallen_empire_materialist:0 "警惕管制者"
  personality_awakened_fallen_empire_xenophobe:0 "复国侵略者"
  personality_awakened_fallen_empire_xenophile:0 "仁慈干涉者"
-
+ 
  personality_fallen_empire_machine_desc:0 "This Fallen Empire is an ancient artifical intelligence that appears to be operating on some sort of caretaker protocol. It behaves erratically but seems to pose no direct threat to us."
  personality_awakened_fallen_empire_machine_desc:0 "This Awakened Empire is an ancient artificial intelligence acting as a galactic custodian. It will focus all its efforts on defending sapient life against the ongoing crisis."
  personality_berserk_fallen_empire_machine_desc:0 "This Awakened Empire is an ancient artificial intelligence that appears to be malfunctioning, going berserk and attacking everything around it."
-
+ 
  personality_fallen_empire_spiritualist_desc:0 "此堕落帝国致力于守卫其圣地。如果在他们视作圣地的星系殖民，很可能招致他们的怒火。"
  personality_fallen_empire_materialist_desc:3 "此堕落帝国致力于囤积科技和资源。为了达成这个目的，他们可能会要求比低等帝国为他们完成任务或者向自己朝贡。"
  personality_fallen_empire_xenophobe_desc:0 "此堕落帝国致力于守卫自己的边境不受侵犯。如果在与他们国土接壤的星系殖民，则可能引来他们的怒火。"
@@ -9222,7 +9222,7 @@
  personality_awakened_fallen_empire_materialist_desc:1 "此觉醒帝国寻求控制银河系中其他文明的科技水平。他们很可能会攻击不愿意接受他们科技管制的帝国。"
  personality_awakened_fallen_empire_xenophobe_desc:0 "此觉醒帝国寻求夺回他们对全银河系的统治权。他们很可能会攻击任何不愿臣服于他的帝国。"
  personality_awakened_fallen_empire_xenophile_desc:0 "此觉醒帝国寻求保证低等种族之间不发生战争。他们很可能会攻击那些不愿接受他们强制和平的帝国。"
-
+ 
  personality_null_desc:0 "到底是什么导致了一个种族走向中立？对金钱的贪婪？对权力的追求？还是说那个种族天生就拥有一颗中立之心？\n\n§R这是个性占位符，不赢出现在游戏中。§!"
  personality_fanatic_befrienders_desc:0 "友爱信徒表面上非常友好但内心却十分孤独。他们会不计一切代价与别人交朋友。"
  personality_metalhead_desc:0 "金属。"
@@ -9395,7 +9395,7 @@
  VICTORY_CONDITION_FEDERATION_PROGRESS_TIP:0 "我们的联邦已经占领了$OWNED|Y$颗行星，共需占领$REQUIRED|Y$颗！"
  VICTORY_CONDITION_FEDERATION_END_SCREEN:1 "$WINNER|Y$所在联邦占领了§Y60%§!的宜居行星，因此获得了胜利！"
  VICTORY_CONDITION_FEDERATION_PROGRESS_TIP_NO_FEDERATION:0 "我们未加入联邦！"
-
+ 
  VICTORY_CONDITION_CRISIS_IN_PROGRESS:0 "It is not possible to win during an ongoing Galactic Crisis!"
 
  VICTORY_CONDITION_CONQUEST_NAME:0 "征服胜利"
@@ -9632,7 +9632,7 @@
  INTEGRATE_SUBJECT_MIN_TIME:0 "必须成为附属国长达$DAYS|Y$日（$DATE$）"
  SUBJECT_INTEGRATION_COMPLETE_TITLE:0 "附属国整合完成"
  SUBJECT_INTEGRATION_COMPLETE_DESC:0 "附属国$SUBJECT|Y$已成功整合进我帝国"
-
+ 
  SPECIES_MODIFICATION_COMPLETE_TITLE:0 "Species Modification Complete"
  SPECIES_MODIFICATION_COMPLETE_DESC:0 "We have completed the modifications to the $SPECIES|Y$ species."
  UPLIFT_COMPLETE_TITLE:0 "Uplift Complete"
@@ -9640,7 +9640,7 @@
  
  BECOME_FEDERATION_LEADER_TITLE:0 "Federation Leadership Change"
  BECOME_FEDERATION_LEADER_DESC:0 "$LEADER|Y$ is now the leader of our Federation."
-
+  
 # Subjects
  SUBJECT_vassal:0 "附庸国"
  SUBJECT_DESC_vassal:0 "附庸国臣服于其宗主国，他们只有有限的外交权，而且必须与宗主国并肩作战。"
@@ -9686,7 +9686,7 @@
  EMPIRE_DESIGN_MISSING_HOME_WORLD_NAME:0 "母星的名字不能为空。"
  EMPIRE_DESIGN_MISSING_HOME_SYSTEM_NAME:0 "星系的名字不能为空。"
  EMPIRE_DESIGN_INVALID_INITIALIZER:0 "Initializer $NAME$ is not valid for empire starts."
-
+ 
  EMPIRE_DESIGN_MISSING_EMPIRE_NAME:0 "帝国的名字不能为空。"
  EMPIRE_DESIGN_MISSING_EMPIRE_ADJECTIVE:0 "帝国的形容词不能为空。"
  EMPIRE_DESIGN_MISSING_NAME_LIST:0 "帝国缺少名称列表。"
@@ -9757,7 +9757,7 @@
 
  # Sector settings
  SECTOR_SETTINGS:0 "星域设置"
-
+ 
  lost_owned_pop:0 "Owned Pop Emancipated"
  lost_owned_pop_lesser:0 "$lost_owned_pop$"
 
@@ -9816,14 +9816,15 @@
  
  SHIPS_NOT_UPGRADABLE:0 "§R事件舰船不能升级§!"
  CHEAT_OPEN_DIPLO:0 "Cheating"
- 
+
  CLICK_TO_EDIT:0 "§GClick to edit.§!"
  REFORM_IMPOSSIBLE:0 "$AUTH|Y$ does not allow reformation."
  NO_IDEAL_PLANET_CLASS:0 "None"
  INACTIVE_BUILDING:0 "§R$BUILDING$ is Inactive§!"
  EXTENDED_INACTIVE_BUILDING:0 "§R$BUILDING$ is Inactive:§!\n$TRIGGER$"
- 
+
  SPECIES_CLASS_MUST_NOT_USE_MACHINE_INTELLIGENCE:0 "Requires any Authority other than §Y$auth_machine_intelligence$§!"
  SPECIES_CLASS_MUST_USE_MACHINE_INTELLIGENCE:0 "Requires §Y$auth_machine_intelligence$§! Authority"
  SECONDARY_SPECIES_CLASS_INVALID:0 "This portrait cannot be selected as a Secondary Species"
  POP_AUTO_GROWTH_WAITING:0 "Waiting for another Pop construction to be completed first."
+# PLANNED_SECTOR_BLOCKER_PROJECT:0 "- 计划清理 $TARGET$ 上的一块障碍地块（已分配 $AMOUNT|Y$/$NEEDED|Y$£minerals ）。"

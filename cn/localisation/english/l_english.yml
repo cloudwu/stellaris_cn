@@ -5811,7 +5811,7 @@
  SETTINGS_AUDIO_GROUP_l_simp_chinese:0 "华语"
  SETTINGS_VOICE_TYPE_default_advisor_voice_type:0 "原始"
  SETTINGS_VOICE_TYPE_auto_advisor_voice_type:2 "基于政府"
- SETTINGS_VOICE_TYPE_auto_advisor_voice_type_DESC:0 "自动基于帝国创建选项顾问语音"
+ SETTINGS_VOICE_TYPE_auto_advisor_voice_type_DESC:0 "自动基于帝国创建选项选择顾问语音"
  SETTINGS_VOICE_TYPE_specified_advisor_voice_type:0 "$CUSTOM$"
  SETTINGS_VOICE_TYPE_specified_advisor_voice_type_DESC:0 "从右表选择自定义顾问语音"
  PLAY_SAMPLE:0 "Play Sample"
@@ -6300,22 +6300,22 @@
  ETHIC_CHEAPER_WARGOALS:0 "§E减少§H战争诉求§!花费§!"
  ETHIC_NO_REFUGEES:0 "§E不能使用§H$refugees_allowed$§!种族政策§!"
  ETHIC_ALWAYS_REFUGEES:0 "§E不能使用§H$refugees_not_allowed$§!种族政策§!"
- ETHIC_GESTALT_CONSCIOUSNESS_AUTHORITY:1 "§E不能使用§H民主制§!，§H寡头制§!，§H独裁制§!，以及§H君主制§! 权力制度§!"
- ETHIC_GESTALT_CONSCIOUSNESS_IMMORTAL_RULER:0 "§E统治者§H永生§!§!"
- ETHIC_GESTALT_CONSCIOUSNESS_DOMESTIC_POP_SURVIVAL:0 "§E原生人口无法在非§H完型意识§!帝国中存活§!"
- ETHIC_GESTALT_CONSCIOUSNESS_NO_FACTIONS:0 "§E原生人口不受§H幸福度§!的影响，也不会加入§H派系§!§!"
- ETHIC_GESTALT_CONSCIOUSNESS_NO_TUTORIAL:0 "§R关闭教学§!"
- AUTH_HIVE_MIND_FOREIGN_POP_SURVIVAL:1 "非§H蜂群思维§! £pop 人口必须被同化，奴役或是肃清"
- AUTH_HIVE_MIND_GENEMODDING:0 "§H生物飞升之路§!一旦完成，就可以通过基因改造将§H£pop 人口§! 同化成§H蜂群思维§!"
- AUTH_HIVE_MIND_ASCENSION_RESTRICTIONS:0 "无法迈向§H灵能§! 或§H合成飞升之路§!"
- AUTH_HIVE_MIND_AI_RESTRICTIONS:0 "不能研究制造§H机器人§!人口"
- AUTH_MACHINE_INTELLIGENCE_IMMORTAL_LEADERS:0 "Leaders are §HImmortal§!"
- AUTH_MACHINE_INTELLIGENCE_EXPENSIVE_NATIVE_LEADERS:0 "Machine Leader Recruitment Cost: §R+100%§!"
- AUTH_MACHINE_TECH_ADDITIONS:0 "Has access to special §HMachine§! technologies"
- AUTH_MACHINE_TECH_RESTRICTIONS:0 "Cannot research §HRobot§! or §HFood§! technologies"
- AUTH_MACHINE_ASCENSION_RESTRICTIONS:0 "Cannot follow §HPsionic§!, §HBiological§!, or §HSynthetic Ascension Paths§!"
- AUTH_MACHINE_FOREIGN_POP_SURVIVAL:0 "Non-§HMachine§! £pop  Pops must be assimilated, enslaved or purged"
- AUTH_MACHINE_NATIVE_POPS:0 "§HMachine§! £pop  Pops do not grow but are built"
+ ETHIC_GESTALT_CONSCIOUSNESS_AUTHORITY:1 "§E不能使用§H民主制§!、§H寡头制§!、§H独裁制§!或§H君主制§!权力制度§!"
+ ETHIC_GESTALT_CONSCIOUSNESS_IMMORTAL_RULER:0 "§E领袖§H永生§!"
+ ETHIC_GESTALT_CONSCIOUSNESS_DOMESTIC_POP_SURVIVAL:0 "§E本土人口无法在非§H$ethic_gestalt_consciousness$§!帝国生存§!"
+ ETHIC_GESTALT_CONSCIOUSNESS_NO_FACTIONS:0 "§E本土人口不受§H幸福度§!影响，而且不会加入§H派系§!§!"
+ ETHIC_GESTALT_CONSCIOUSNESS_NO_TUTORIAL:0 "§R关闭教程§!"
+ AUTH_HIVE_MIND_FOREIGN_POP_SURVIVAL:1 "非§H蜂群思维§!£pop 人口必须被同化、奴役或肃清"
+ AUTH_HIVE_MIND_GENEMODDING:0 "一旦完成§H生物飞升之路§!，可以基因修饰§H£pop 人口§!与§H蜂群思维§!相容"
+ AUTH_HIVE_MIND_ASCENSION_RESTRICTIONS:0 "不能开启§H灵能§!或§H机械飞升之路§!"
+ AUTH_HIVE_MIND_AI_RESTRICTIONS:0 "不能研究或建造§H机器人§!人口"
+ AUTH_MACHINE_INTELLIGENCE_IMMORTAL_LEADERS:0 "领袖§H永生§!"
+ AUTH_MACHINE_INTELLIGENCE_EXPENSIVE_NATIVE_LEADERS:0 "Machine 领袖招募花费：§R+100%§!" # TODO
+ AUTH_MACHINE_TECH_ADDITIONS:0 "可以研究特殊§HMachine§!科技" # TODO
+ AUTH_MACHINE_TECH_RESTRICTIONS:0 "不能研究§H机器人§!或§H食物§!科技"
+ AUTH_MACHINE_ASCENSION_RESTRICTIONS:0 "不能开启§H灵能§!、§H生物§!或§H机械飞升之路§!"
+ AUTH_MACHINE_FOREIGN_POP_SURVIVAL:0 "非§HMachine§! £pop 人口必须被同化、奴役或肃清" # TODO
+ AUTH_MACHINE_NATIVE_POPS:0 "§HMachine§! £pop 人口不增长而需要建造" # TODO
 
  ####################################
  # Strategic Resources
@@ -7052,7 +7052,7 @@
  ####################################
  
  civic_feudal_realm:0 "封建社会"
- civic_feudal_realm_desc:0 "此社会以封建的方式组织，君主的统治依赖管理自己领土并有很强自主权的强大封臣"
+ civic_feudal_realm_desc:0 "此社会以封建的方式组织，君主的统治依赖管理自己领土并有很强自主权的强大封臣。"
  civic_imperial_cult:0 "国教崇拜"
  civic_imperial_cult_desc:0 "此社会有一个主导的国教，其统治者被尊为在世神明。"
  civic_corvee_system:0 "徭役系统"
@@ -7173,7 +7173,7 @@
  civic_machine_builder:0 "Constructobot" # TODO
  civic_machine_builder_desc:0 "自建成起负责组织所有的行星建设，此机器智能能高效执行各种设施建设项目。"
  civic_machine_unitary_cohesion:0 "单一内聚力"
- civic_machine_unitary_cohesion_desc:0 "卓越的内聚工程标准使得各种专精机器智能单元以更高水平的效率一起工作。" #NOT LIKE THIS
+ civic_machine_unitary_cohesion_desc:0 "卓越的内聚工程标准使得各种特化机器智能单元以更高水平的效率一起工作。" #NOT LIKE THIS
  civic_machine_factory_overclock:0 "工厂超频"
  civic_machine_factory_overclock_desc:0 "此机器智能注意维护其生产设施，定期更新现有模板并调整装配线上的独立单元。"
  civic_machine_rockbreakers:0 "破石者"
@@ -7182,27 +7182,27 @@
  civic_machine_built_to_last_desc:0 "此机器帝国的独立单位建立在一个特殊标准之上，只需要最低限度的运行维护。"
  civic_machine_ota_updates:0 "OTA更新"
  civic_machine_ota_updates_desc:0 "此机器帝国的单位使用无线接收器实时接收行为更新。"
- civic_machine_warbots:0 "Warbots"
- civic_machine_warbots_desc:0 "With a significant number of its corpus originally designed for warfare, the Machine Intelligence retains the ability to field powerful and reliable combat drones."
- civic_machine_introspective:0 "Introspective"
- civic_machine_introspective_desc:0 "A fascination with its own internals both motivates and aids the Machine Intelligence's foray into the sciences."
- civic_machine_delegated_functions:0 "Delegated Functions"
- civic_machine_delegated_functions_desc:0 "The Machine Intelligence works to reduce vulnerability by increasing modularity, reducing the strain of deploying additional semi-independent Units."
- civic_machine_predictive_analysis:0 "Static Research Analysis"
- civic_machine_predictive_analysis_desc:0 "The Machine Intelligence seeks to broaden its available avenues of scientific research through low-level evaluation of research methodologies."
- civic_machine_replication:0 "Rapid Replicator"
- civic_machine_replication_desc:0 "The Units that constitute the Machine Intelligence were originally designed for rapid proliferation. The Machine Intelligence retains many of these early production pipeline optimizations."
+ civic_machine_warbots:0 "Warbots" # TODO
+ civic_machine_warbots_desc:0 "其主体的大部分起初设计用于战争，此机器帝国保留了部署强大可靠的战斗无人机的能力。"
+ civic_machine_introspective:0 "内省"
+ civic_machine_introspective_desc:0 "对自己内部的迷恋激励并帮助此机器智能打入科学领域。"
+ civic_machine_delegated_functions:0 "Delegated Functions" # TODO
+ civic_machine_delegated_functions_desc:0 "层次机器智能通过增加模块化减少漏洞，减轻了部署其他半独立单元的压力。"
+ civic_machine_predictive_analysis:0 "静态研究分析"
+ civic_machine_predictive_analysis_desc:0 "此机器智能寻求通过对研究方法的低级评估扩大其可用的科学研究途径。"
+ civic_machine_replication:0 "快速复制器"
+ civic_machine_replication_desc:0 "组成此机器智能的单元起初设计用于快速扩散。此机器智能保留了许多早期的生产线优化。"
  
- civic_tooltip_inward_perfection_effects:0 "Cannot have §HRivals§!\nCannot form §HDefensive Pacts§!\nCannot form §HMigration Treaties§!\nCannot §HGuarantee Independence§!\nCannot join §HFederations§!\nCan only have §HTributary§! subjects\nCannot §HInfiltrate§! primitives\n£unity  §Y$country_resource_unity_mult$§! increased by §G+20%§!\n£influence  §Y$country_resource_influence_add$§! increased by §G+1§!\n£pops  §YPop $MOD_POP_GROWTH_SPEED$§! increased by §G+25%§!\n£happiness  §Y$MOD_POP_CITIZEN_HAPPINESS$§! increased by §G+5%§!"
- civic_tooltip_feudal_realm_effects:0 "The effects of §YSubject Power§! on relations is reduced by §G-50%§!, but all Subjects are allowed to colonize planets outside their borders."
+ civic_tooltip_inward_perfection_effects:0 "无法拥有§H宿敌§!\n无法签订§H防御条约§!\n无法签订§H移民条约§!\n无法§H保证独立§!\n无法加入§H联邦§!\n只能拥有§H藩属国§!附属\n无法§H渗透§!原始文明\n£unity §Y$country_resource_unity_mult$§!增加§G+20%§!\n£influence §Y$country_resource_influence_add$§!增加§G+1§!\n£pops §Y人口$MOD_POP_GROWTH_SPEED$§!增加§G+25%§!\n£happiness §Y$MOD_POP_CITIZEN_HAPPINESS$§!增加§G+5%§!"
+ civic_tooltip_feudal_realm_effects:0 "§Y附属国实力§!对关系的影响减少§G-50%§!，但所有附属国可以在境外殖民行星。"
  civic_tooltip_agrarian_idyll_effects:0 "£building §Y水培农场§!额外产出§Y1§!£unity $unity$。"
- civic_tooltip_mechanists_effects:5 "以能建造机器人的科技开始游戏，并有§Y2§!£pop 起始人口替换为机器人。\n§Y$MOD_POP_ROBOT_UPKEEP_MULT$§!下降§G-5%§!。"
+ civic_tooltip_mechanists_effects:5 "以能建造机器人的科技开始游戏，并有§Y2§!£pop 起始人口替换为机器人。\n§Y$MOD_POP_ROBOT_UPKEEP_MULT$§!减少§G-5%§!。"
  civic_tooltip_syncretic_evolution_effects:1 "§Y4§!£pop 起始人口替换为一额外的奴仆种族。"
- civic_tooltip_fanatic_purifiers_effects:2 "无法与其他种族的帝国进行§Y外交§!！\n只能使用 §Y割占星球§! 和 §Y肃清星球§! 战争诉求。\n§Y外星人口§!必定会被肃清，而且不影响传统花费。\n肃清外星£pop 人口能获得£unity §Y$unity$§!。\n可以使用§Y$GROUND_SUPPORT_STANCE_ARMAGEDDON$§!轨道轰炸姿态。\n§Y$MOD_SHIP_FIRE_RATE_MULT$§!上升§G+33%§!。\n§Y$MOD_ARMY_DAMAGE_MULT$§!上升§G+33%§!\n$MOD_TRADITION_COST_NUM_XENO_SLAVES_MULT$：§G-100%§!"
- civic_tooltip_devouring_swarm_effects:2 "无法同其他种族进行§Y外交§!！\n只能使用§Y割占星球§! 战争诉求\n§Y异族人口§!总是会被吃掉，且不会影响传统的开销。\n在食用异族 £pop 人口的过程中获得 £society §Y$society_research$§! 。\n§Y$MOD_SHIP_HITPOINTS_MULT$§! 增加§G+25%§!\n§Y$MOD_SHIP_AUTO_REPAIR_ADD$§! 增加§G+0.5%§!\n§Y$MOD_ARMY_DAMAGE_MULT$§! 增加§G+40%§!\n§Y$category_biology_research_speed_mult$§! 增加§G+20%§!"
- civic_tooltip_machine_servitor_effects:3 "Start the game with §Y2§! organic £pop  Pops with §Y$citizenship_organic_trophy$§! citizenship and §Y$living_standard_organic_trophy$§! living standard. Caring for organic £pop  Pops in this way fulfills low-level directives, freeing up processing cycles and boosting resource production.\n\nThis manifests as a §YServitor Morale§! Empire Modifier, giving §G+0.5§! £influence monthly and §G+10%§! resource output for every §Y10%§! of the population that have §Y$citizenship_organic_trophy$§! status (max §G+2§! £influence and §G+40%§! resource output) at §Y40% $citizenship_organic_trophy$§! £pop  Pops).\n\nOrganic Pops residing in Servitor civilizations are concentrated into space-efficient living spaces where they can be properly cared for. As a result, crowded planets that are taken over by the Servitors will have some organic £pop  Pops removed from their tiles."
- civic_tooltip_machine_terminator_effects:1 "Cannot engage in §YDiplomacy§! with organic species!\nWill always §YPurge§! organic £pop  Pops.\nGains £unity  §YUnity§! from purging organic £pop  Pops.\nMay use §Y$GROUND_SUPPORT_STANCE_ARMAGEDDON$§! bombardment stance.\n§Y$MOD_SHIP_WEAPON_DAMAGE$§! increased by §G+15%§!"
- civic_tooltip_machine_assimilator_effects:0 "Start the game with §Y4§! cyborg £pop  Pops and the ability to turn organics into cyborgs. Xeno £pop  Pops are automatically §YPurged§! over time, but can be turned into cyborgs and given §YFull Citizenship§!."
+ civic_tooltip_fanatic_purifiers_effects:2 "无法与其他种族的帝国开展§Y外交§!！\n只能使用 §Y割占行星§! 和 §Y肃清行星§! 战争诉求。\n§Y异种人口§!必定会被肃清，而且不影响传统花费。\n肃清异种£pop 人口能获得£unity §Y$unity$§!。\n可以使用§Y$GROUND_SUPPORT_STANCE_ARMAGEDDON$§!轨道轰炸姿态。\n§Y$MOD_SHIP_FIRE_RATE_MULT$§!增加§G+33%§!。\n§Y$MOD_ARMY_DAMAGE_MULT$§!增加§G+33%§!\n$MOD_TRADITION_COST_NUM_XENO_SLAVES_MULT$：§G-100%§!"
+ civic_tooltip_devouring_swarm_effects:2 "无法与其他种族开展§Y外交§!！\n只能使用 §Y割占行星§! 战争诉求。\n§Y异种人口§!必定会被吃掉，而且不影响传统花费。\n吃掉异种£pop 人口能获得£society §Y$society_research$§!。\n§Y$MOD_SHIP_HITPOINTS_MULT$§!增加§G+25%§!\n§Y$MOD_SHIP_AUTO_REPAIR_ADD$§!增加§G+0.5%§!\n§Y$MOD_ARMY_DAMAGE_MULT$§!增加§G+40%§!\n§Y$category_biology_research_speed_mult$§!增加G+20%§!"
+ civic_tooltip_machine_servitor_effects:3 "游戏开局拥有§Y2§! organic £pop 人口，这些人口拥有§Y$citizenship_organic_trophy$§!公民权和§Y$living_standard_organic_trophy$§!生活标准。以这种方式照料 organic £pop 人口能用低级指令完成，能够解放处理周期并促进资源生产。\n\n这以§YServitor Morale§!帝国调整因素展现，每§Y10%§!拥有§Y$citizenship_organic_trophy$§!公民权人口每月给予§G+0.5§!£influence 和§G+10%§!资源产出（至多§G+2§!£influence 和§G+40%§!资源产出（§Y40%£pop 人口拥有$citizenship_organic_trophy$§!））。\n\n居住于从仆文明的organic 人口被集中于空间集约型生活空间以得到恰当的照料。因此，由从仆接管的拥挤行星将会从地块中移除一些organic £pop 人口。" # TODO
+ civic_tooltip_machine_terminator_effects:1 "无法与organic种族开展§Y外交§!！\n总是会§Y肃清§! organic £pop 人口。\n肃清organic £pop 人口能获得£unity §Y$unity$§!。\n可以使用§Y$GROUND_SUPPORT_STANCE_ARMAGEDDON$§!轨道轰炸模式。\n§Y$MOD_SHIP_WEAPON_DAMAGE$§!增加§G+15%§!" # TODO
+ civic_tooltip_machine_assimilator_effects:0 "游戏开局拥有§Y4§! cyborg £pop 人口和将 organics 转化为 cyborgs 的能力。异种£pop 人口会随时间自动被§Y肃清§!，但可以被转化为 cyborgs 并获得§Y$完整公民权$§!。" # TODO
  
  civic_tooltip_spiritualist:0 "是某种§Y精神主义§!"
  civic_tooltip_materialist:0 "是某种§Y物质主义§!"
@@ -8698,8 +8698,8 @@
  feature_cheaper_wardemands:0 "廉价战争诉求"
  feature_cheaper_wardemands_desc:0 "战争诉求开销减少§Y25%§!。"
  feature_modify_robots:0 "Robomodding"
- feature_modify_robots_desc:0 "Allows us to design and build specialized $trait_mechanical$ Pops."
- feature_modify_robots_desc_machine_intelligence:0 "Allows us to design and build specialized $trait_machine_unit$ and $trait_mechanical$ Pops."
+ feature_modify_robots_desc:0 "Allows us to design and build 特化 $trait_mechanical$ Pops."
+ feature_modify_robots_desc_machine_intelligence:0 "Allows us to design and build 特化 $trait_machine_unit$ and $trait_mechanical$ Pops."
 
  ####################################
  # Mission
@@ -8721,7 +8721,7 @@
  mission_technological_enlightenment_3:0 "技术启蒙"
  mission_technological_enlightenment_3_desc:0 "努力将原住民的文明程度迅速提升至太空时代。完成这一目标所需要的时间取决于原住民当前的技术水平。\n\n§E任务完成时，他们将步入太空文明，并成为我们的保护国。§!\n\n"
  mission_technological_enlightenment_4:0 "技术启蒙"
- mission_technological_enlightenment_4_desc:0 "努力将原住民的文明程度迅速提升到太空时代。完成这一目标所需要的时间取决于原住民当前的技术水平。\n\n§E当完成时，他们会变成一个太空文明，并成为我们的保护国。§!\n\n"
+ mission_technological_enlightenment_4_desc:0 "努力将原住民的文明程度迅速提升到太空时代。完成这一目标所需要的时间取决于原住民当前的技术水平。\n\n§E任务完成时，他们将步入太空文明，并成为我们的保护国。§!\n\n"
  mission_technological_enlightenment_5:0 "技术启蒙"
  mission_technological_enlightenment_5_desc:0 "努力将原住民的文明程度迅速提升至太空时代。完成这一目标所需要的时间取决于原住民当前的技术水平。\n\n§E任务完成时，他们将步入太空文明，并成为我们的保护国。§!\n\n"
  mission_technological_enlightenment_6:0 "技术启蒙"
@@ -9614,7 +9614,7 @@
  COMBAT_STAT_DAMAGE_ARMOR:0 "装甲损伤"
  COMBAT_STAT_DAMAGE_SHIELDS:0 "护盾损伤"
  COMBAT_STAT_HIT_RATIO:0 "命中率"
- COMBAT_STAT_EVASION_RATIO:0 "回避率"
+ COMBAT_STAT_EVASION_RATIO:0 "闪避率"
  COMBAT_STAT_POINT_DEFENCE:1 "点防御击杀数"
  COMBAT_STAT_KILLED_STRIKE_CRAFTS:1 "舰载机击杀数"
  COMBAT_LOCATION_DESC:0 "$SYSTEM|Y$恒星系舰队作战（$DATE$）"

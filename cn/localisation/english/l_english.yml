@@ -3450,10 +3450,10 @@
  POP_ATTRACTION_MILITARIST_NEG:0 "§R- 军国主义执政道德观§!"
  POP_ATTRACTION_SLAVERY_POS:0 "§G+ 奴隶人口§!"
  POP_ATTRACTION_SLAVERY_NEG:0 "§R- 奴隶人口§!"
- POP_ATTRACTION_ROBOTS_POS:0 "§G+ 机器人口§!"
- POP_ATTRACTION_ROBOTS_NEG:0 "§R- 机器人口§!"
- POP_ATTRACTION_CYBORGS_POS:0 "§G+ Cyborg Pops§!"
- POP_ATTRACTION_CYBORGS_NEG:0 "§R- Cyborg Pops§!"
+ POP_ATTRACTION_ROBOTS_POS:0 "§G+ 机器人人口§!"
+ POP_ATTRACTION_ROBOTS_NEG:0 "§R- 机器人人口§!"
+ POP_ATTRACTION_CYBORGS_POS:0 "§G+ 半机械人人口§!"
+ POP_ATTRACTION_CYBORGS_NEG:0 "§R- 半机械人人口§!"
  POP_ATTRACTION_ENSLAVED_POS:0 "§G+ 奴役§!"
  POP_ATTRACTION_ENSLAVED_NEG:0 "§R- 奴役§!"
  POP_ATTRACTION_IS_ROBOT_POS:0 "§G+ 是机器人§!"
@@ -3954,7 +3954,7 @@
  MISSING_FEATURE_FLAG:0 "需要：$TECH|H$"
 
  ASSIMILATION_CITIZENSHIP_ENABLED:0 "Gain access to the §YAssimilation§! Citizenship §HSpecies Right§!, allowing future additions to the populace to be turned into"
- CYBORG_ASSIMILATION_CITIZENSHIP_ENABLED:0 "$ASSIMILATION_CITIZENSHIP_ENABLED$ §YCyborgs§!."
+ CYBORG_ASSIMILATION_CITIZENSHIP_ENABLED:0 "$ASSIMILATION_CITIZENSHIP_ENABLED$ §Y半机械人§!。"
  SYNTH_ASSIMILATION_CITIZENSHIP_ENABLED:0 "$ASSIMILATION_CITIZENSHIP_ENABLED$ §YSynths§!."
  HIVE_ASSIMILATION_CITIZENSHIP_ENABLED:0 "$ASSIMILATION_CITIZENSHIP_ENABLED$ §YHive-Minded Pops§!."
 
@@ -6682,8 +6682,8 @@
  building_nutrient_paste_facility:0 "营养糊工厂"
  building_nutrient_paste_facility_desc:0 "此设施使用各种工业副产品，创造浓糊。这浓糊是有机体营养的极佳来源。通过添加化学调味剂，营养糊可以模制成最精致食品组合物的近似品。十个有机体中有七个不能辨别。"
  building_neuro_electric_amplifier:0 "神经电放大器"
- building_neuro_electric_amplifier_desc:0 "此设施放大了我们控制之下的cybernetic单元间传输的神经信号，提高了他们的生产率。" # TODO
- building_neuro_electric_amplifier_triggered_effect:0 "Cybernetic 人口：\n   $minerals$：§G+15%§!\n   $energy$：§G+15%§!" # TODO
+ building_neuro_electric_amplifier_desc:0 "此设施放大了我们控制之下的半机械单元间传输的神经信号，提高了他们的生产率。" # TODO
+ building_neuro_electric_amplifier_triggered_effect:0 "半机械人口：\n   $minerals$：§G+15%§!\n   $energy$：§G+15%§!" # TODO
  building_war_factory:0 "战争工厂"
  building_war_factory_desc:0 "一家大型warbot工厂，受先进AI控制，拥有优化生产流程。" # TODO
  building_deployment_post:0 "部署驻地"
@@ -7202,7 +7202,7 @@
  civic_tooltip_devouring_swarm_effects:2 "无法与其他种族开展§Y外交§!！\n只能使用 §Y割占行星§! 战争诉求。\n§Y异种人口§!必定会被吃掉，而且不影响传统花费。\n吃掉异种£pop 人口能获得£society §Y$society_research$§!。\n§Y$MOD_SHIP_HITPOINTS_MULT$§!增加§G+25%§!\n§Y$MOD_SHIP_AUTO_REPAIR_ADD$§!增加§G+0.5%§!\n§Y$MOD_ARMY_DAMAGE_MULT$§!增加§G+40%§!\n§Y$category_biology_research_speed_mult$§!增加G+20%§!"
  civic_tooltip_machine_servitor_effects:3 "游戏开局拥有§Y2§! organic £pop 人口，这些人口拥有§Y$citizenship_organic_trophy$§!公民权和§Y$living_standard_organic_trophy$§!生活标准。以这种方式照料 organic £pop 人口能用低级指令完成，能够解放处理周期并促进资源生产。\n\n这以§YServitor Morale§!帝国调整因素展现，每§Y10%§!拥有§Y$citizenship_organic_trophy$§!公民权人口每月给予§G+0.5§!£influence 和§G+10%§!资源产出（至多§G+2§!£influence 和§G+40%§!资源产出（§Y40%£pop 人口拥有$citizenship_organic_trophy$§!））。\n\n居住于从仆文明的organic 人口被集中于空间集约型生活空间以得到恰当的照料。因此，由从仆接管的拥挤行星将会从地块中移除一些organic £pop 人口。" # TODO
  civic_tooltip_machine_terminator_effects:1 "无法与organic种族开展§Y外交§!！\n总是会§Y肃清§! organic £pop 人口。\n肃清organic £pop 人口能获得£unity §Y$unity$§!。\n可以使用§Y$GROUND_SUPPORT_STANCE_ARMAGEDDON$§!轨道轰炸模式。\n§Y$MOD_SHIP_WEAPON_DAMAGE$§!增加§G+15%§!" # TODO
- civic_tooltip_machine_assimilator_effects:0 "游戏开局拥有§Y4§! cyborg £pop 人口和将 organics 转化为 cyborgs 的能力。异种£pop 人口会随时间自动被§Y肃清§!，但可以被转化为 cyborgs 并获得§Y$完整公民权$§!。" # TODO
+ civic_tooltip_machine_assimilator_effects:0 "游戏开局拥有§Y4§!半机械人£pop 人口和将 organics 转化为半机械人的能力。异种£pop 人口会随时间自动被§Y肃清§!，但可以被转化为半机械人并获得§Y$完整公民权$§!。" # TODO
  
  civic_tooltip_spiritualist:0 "是某种§Y精神主义§!"
  civic_tooltip_materialist:0 "是某种§Y物质主义§!"
@@ -8660,7 +8660,7 @@
  feature_evasion:0 "闪避"
  feature_evasion_desc:0 "所有飞船的紧急闪避能力得到增强。"
  feature_mechanical_trait:0 "机械特质"
- feature_mechanical_trait_desc:0 "由拥有半机械人特质的种族所组成的军队也会得到机械特质。"
+ feature_mechanical_trait_desc:0 "由拥有$trait_cybernetic$特质的种族所组成的军队也会得到机械特质。"
  feature_rebel_armies:0 "叛军"
  feature_rebel_armies_desc:0 "由奴隶暴动所形成的叛军部队，实力将会大大增强。"
  feature_ftl_travel:0 "超光速航行"
@@ -8811,8 +8811,8 @@
  army_attachment_advanced_power_armor_desc:0 "§L这些力量装甲的成本几乎和制造基因战士一样昂贵。它们可以进一步提升使用者的力量，其飞行装置也给使用者带去了难以想象的机动能力。为了操作装甲，使用者需要与装甲建立神经链接。§!"
  army_attachment_environmental_augmentations:0 "环境强化装置"
  army_attachment_environmental_augmentations_desc:0 "§L对肺部以及免疫系统进行改进，使基因战士可以在严苛环境中正常发挥功用——甚至可以短期内在真空中运行。§!"
- army_attachment_cybernetic_replacements:0 "机械改装的身体部件"
- army_attachment_cybernetic_replacements_desc:0 "§L可以用来替代在战斗中损伤的器官和四肢，让残疾的战士在替换肢体后可以继续战斗。§!"
+ army_attachment_cybernetic_replacements:0 "半机械化身体部件"
+ army_attachment_cybernetic_replacements_desc:0 "§L在战斗中损伤的器官和四肢被机械内植体替代，残疾的战士在替换肢体后可以继续战斗。§!"
 
  #### NAMELIST EMPIRE NAMES
  name_list_AI:0 "人工智能"

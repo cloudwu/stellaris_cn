@@ -56,9 +56,9 @@
  tr_expansion_adopt_desc:0 "$tradition_expansion_desc$\n\n$tr_expansion_adopt_effect$\n\n$tr_expansion_finish_effect$"
  tr_expansion_adopt_machine_desc:0 "$tradition_expansion_machine_desc$\n\n$tr_expansion_adopt_machine_effect$\n\n$tr_expansion_finish_machine_effect$"
  tr_expansion_adopt_hive_desc:0 "$tradition_expansion_hive_desc$\n\n$tr_expansion_adopt_hive_effect$\n\n$tr_expansion_finish_hive_effect$"
- tr_expansion_adopt_effect:3 "§E$TRADITIONS_ADOPT$：§!\n§Y$MOD_PLANET_COLONY_DEVELOPMENT_SPEED_MULT$§!提升§G+100%§!。"
- tr_expansion_adopt_machine_effect:0 "§E$TRADITIONS_ADOPT$：§!\n§Y$MOD_PLANET_COLONY_DEVELOPMENT_SPEED_MULT$§!提升§G+100%§!."
- tr_expansion_adopt_hive_effect:0 "§E$TRADITIONS_ADOPT$：§!\n§Y$MOD_PLANET_COLONY_DEVELOPMENT_SPEED_MULT$§!提升§G+100%§!。"
+ tr_expansion_adopt_effect:3 "§E$TRADITIONS_ADOPT$：§!\n§Y$MOD_PLANET_COLONY_DEVELOPMENT_SPEED_MULT$§!增加§G+100%§!。"
+ tr_expansion_adopt_machine_effect:0 "§E$TRADITIONS_ADOPT$：§!\n§Y$MOD_PLANET_COLONY_DEVELOPMENT_SPEED_MULT$§!增加§G+100%§!."
+ tr_expansion_adopt_hive_effect:0 "§E$TRADITIONS_ADOPT$：§!\n§Y$MOD_PLANET_COLONY_DEVELOPMENT_SPEED_MULT$§!增加§G+100%§!。"
  tr_expansion_colonization_fever:0 "殖民狂热"
  tr_expansion_colonization_fever_machine:0 "分布计算" #TODO Distributed Computing 分布计算
  tr_expansion_colonization_fever_hive:0 "万众一心" #TODO One Mind 万众一心
@@ -83,7 +83,7 @@
  tr_expansion_courier_network:0 "快递网络"
  tr_expansion_courier_network_machine:0 "扩展软件" #TODO Extensible Software 扩展软件
  tr_expansion_courier_network_hive:0 "突变抑制" #TODO Divergence Suppression 突变抑制
- tr_expansion_courier_network_desc:1 "由殖民地数量导致的§Y$TRADITION_COST$§!增长降低§G-20%§!。"
+ tr_expansion_courier_network_desc:1 "由殖民地数量导致的§Y$TRADITION_COST$§!增长减少§G-20%§!。"
  tr_expansion_courier_network_machine_desc:0 "$tr_expansion_courier_network_desc$"
  tr_expansion_courier_network_hive_desc:0 "$tr_expansion_courier_network_desc$"
  tr_expansion_courier_network_delayed:0 "一个由诸多小型快递船构成的网络，用于运送 VIP 或是取代分发不能依赖超光速通讯的邮件。这将距离遥远的殖民地更加紧密的联系在一起。"
@@ -101,7 +101,7 @@
  tr_expansion_galactic_ambition:0 "银河野望"
  tr_expansion_galactic_ambition_machine:0 "Cogs in the Machine" #TODO Cogs in the Machine 
  tr_expansion_galactic_ambition_hive:0 "吞噬星空" #TODO Blot out the Stars 吞噬星空
- tr_expansion_galactic_ambition_desc:1 "§Y$shipsize_outpost_station_upkeep_mult$§!降低§G-50%§!。"
+ tr_expansion_galactic_ambition_desc:1 "§Y$shipsize_outpost_station_upkeep_mult$§!减少§G-50%§!。"
  tr_expansion_galactic_ambition_machine_desc:0 "$tr_expansion_galactic_ambition_desc$"
  tr_expansion_galactic_ambition_hive_desc:0 "$tr_expansion_galactic_ambition_desc$"
  tr_expansion_galactic_ambition_delayed:0 "我们伟大帝国的旗帜总有一天会像氢原子那样于银河中无处不在。"
@@ -109,8 +109,8 @@
  tr_expansion_galactic_ambition_hive_delayed:0 "自从远离我们的家园和哺育我们的母巢，第一次尝试迈入黑暗虚空，原始的恐惧便始终萦绕四周。只有征服乃至培育这种恐惧，我们才能继续成长。无数的工蜂化为尸骸，而蜂巢将在尸骸中永生。"
  tr_expansion_finish:0 "扩张传统完成"
  tr_expansion_finish_machine:0 "扩张传统完成"
- tr_expansion_finish_effect:0 "§E$TRADITIONS_FINISH$：§!\n采纳所有的$tr_expansion_adopt$会将§Y$MOD_COUNTRY_CORE_SECTOR_SYSTEM_CAP$§!提升§Y2§!。"
- tr_expansion_finish_machine_effect:0 "§E$TRADITIONS_FINISH$:§!\n采纳所有的$tr_expansion_adopt_machine$会将§Y$MOD_COUNTRY_CORE_SECTOR_SYSTEM_CAP$§!提升§Y2§!."
+ tr_expansion_finish_effect:0 "§E$TRADITIONS_FINISH$：§!\n采纳所有的$tr_expansion_adopt$会将§Y$MOD_COUNTRY_CORE_SECTOR_SYSTEM_CAP$§!增加§Y2§!。"
+ tr_expansion_finish_machine_effect:0 "§E$TRADITIONS_FINISH$:§!\n采纳所有的$tr_expansion_adopt_machine$会将§Y$MOD_COUNTRY_CORE_SECTOR_SYSTEM_CAP$§!增加§Y2§!."
  tr_expansion_finish_hive_effect:0 "$tr_expansion_finish_machine_effect$"
  
  ################################################################
@@ -127,7 +127,7 @@
  tr_domination_adopt_machine:2 "统御传统"
  tr_domination_adopt_desc:0 "$tradition_domination_desc$\n\n$tr_domination_adopt_effect$\n\n$tr_domination_finish_effect$"
  tr_domination_adopt_machine_desc:0 "$tradition_domination_machine_desc$\n\n$tr_domination_adopt_machine_effect$\n\n$tr_domination_finish_machine_effect$"
- tr_domination_adopt_effect:1 "§E$TRADITIONS_ADOPT$：§!\n将其他帝国纳为附属国的战争诉求花费降低§Y25%§! 。此外，纳其他帝国为附属国的被接受度提升§G+20§!。"
+ tr_domination_adopt_effect:1 "§E$TRADITIONS_ADOPT$：§!\n将其他帝国纳为附属国的战争诉求花费减少§Y25%§! 。此外，纳其他帝国为附属国的被接受度增加§G+20§!。"
  tr_domination_adopt_machine_effect:0 "$tr_domination_adopt_effect$"
  tr_domination_colonial_viceroys:0 "殖民总督"
  tr_domination_colonial_viceroys_machine:0 "自主AI"
@@ -141,7 +141,7 @@
  tr_domination_fleet_levies:0 "征募舰队"
  tr_domination_fleet_levies_machine:0 "操控软件" # TODO Command and Control Software 操控软件
  tr_domination_fleet_levies_hive:0 "思维操控" # TODO Thought Control Symbionts 思维操控
- tr_domination_fleet_levies_desc:1 "每个§Y$SUBJECT_vassal$§!会提升你的§Y$NAVY_SIZE_TITLE$§!，大小相当于他们的§Y50%§!。"
+ tr_domination_fleet_levies_desc:1 "每个§Y$SUBJECT_vassal$§!会增加你的§Y$NAVY_SIZE_TITLE$§!，大小相当于他们的§Y50%§!。"
  tr_domination_fleet_levies_machine_desc:0 "$tr_domination_fleet_levies_desc$"
  tr_domination_fleet_levies_hive_desc:0 "$tr_domination_fleet_levies_desc$"
  tr_domination_fleet_levies_delayed:0 "附庸国效忠领主的重要责任就是提供军事支持。我们将从那些侍奉我们的国家中征募人手来填充我们舰队中的低阶职位。"
@@ -150,7 +150,7 @@
  tr_domination_protection_racket:0 "保护费"
  tr_domination_protection_racket_machine:0 "贫困协议" # TODO Destitution Protocols 贫困协议
  tr_domination_protection_racket_hive:0 "生化贡品" # TODO Bio-Tribute 生化贡品
- tr_domination_protection_racket_desc:2 "来自藩属国的收入提升§G+50%§!"
+ tr_domination_protection_racket_desc:2 "来自藩属国的收入增加§G+50%§!"
  tr_domination_protection_racket_machine_desc:0 "$tr_domination_protection_racket_desc$"
  tr_domination_protection_racket_hive_desc:0 "$tr_domination_protection_racket_desc$"
  tr_domination_protection_racket_delayed:0 "我们很认真地履行保护我们臣属国的安全职责。唉，看起来守护他们的世界从来都不便宜……"
@@ -159,7 +159,7 @@
  tr_domination_star_lords:0 "星际霸主"
  tr_domination_star_lords_machine:0 "慈悲模拟" # TODO Benevolence Emulation 慈悲模拟
  tr_domination_star_lords_hive:0 "催眠信息素" # TODO Soporific Pheromones 催眠信息素
- tr_domination_star_lords_desc:5 "附庸 £opinion  §Y评价§!提升§G+20§!，§Y信任度上限§!提升§G+50§!。"
+ tr_domination_star_lords_desc:5 "附庸 £opinion  §Y评价§!增加§G+20§!，§Y信任度上限§!增加§G+50§!。"
  tr_domination_star_lords_machine_desc:0 "$tr_domination_star_lords_desc$"
  tr_domination_star_lords_hive_desc:0 "$tr_domination_star_lords_desc$"
  tr_domination_star_lords_delayed:0 "统辖弱小是我们的天命。宣誓效忠我们伟大帝国者可以存续……只要我们同意。"
@@ -168,7 +168,7 @@
  tr_domination_vassal_acculturation:0 "臣属国文化渗透"
  tr_domination_vassal_acculturation_machine:0 "自由泡影" # TODO Symbolic Liberty 自由泡影
  tr_domination_vassal_acculturation_hive:0 "脑力枯竭" # TODO Brain Drain 脑力枯竭
- tr_domination_vassal_acculturation_desc:3 "每个附庸使我们的 £unity §凝聚力§!产出提升§G+5%§!,最多§G+30%§!。"
+ tr_domination_vassal_acculturation_desc:3 "每个附庸使我们的 £unity §凝聚力§!产出增加§G+5%§!,最多§G+30%§!。"
  tr_domination_vassal_acculturation_machine_desc:0 "$tr_domination_vassal_acculturation_desc$"
  tr_domination_vassal_acculturation_hive_desc:0 "$tr_domination_vassal_acculturation_desc$"
  tr_domination_vassal_acculturation_delayed:2 "忠诚和服务都很好，但作为负责任的宗主，我们也必须采取措施向臣属国引进我们的文化。他们最终会来感谢我们的。"
@@ -225,7 +225,7 @@
  tr_harmony_the_greater_good_desc:1 "我们所有星球的§Y$MOD_PLANET_UNREST_ADD$§!减少§G-20%§!。"
  tr_harmony_the_greater_good_delayed:0 "整个帝国的人民都知晓我们为了一个共同的伟大目标而奋斗，每个人都是集体里虽微小却重要的一部分，这一信念无疑让所有人都倍感安心。"
  tr_harmony_kinship:0 "手足之情"
- tr_harmony_kinship_desc:0 "因为与首都距离过远所导致的§Y$MOD_POP_GOVERNMENT_ETHIC_ATTRACTION$§!下降的惩罚降低§G-50%§!。"
+ tr_harmony_kinship_desc:0 "因为与首都距离过远所导致的§Y$MOD_POP_GOVERNMENT_ETHIC_ATTRACTION$§!下降的惩罚减少§G-50%§!。"
  tr_harmony_kinship_delayed:0 "我们伟大星际帝国管辖下的所有公民都发展出了一种超越血缘的手足之情，不管他们居住在我们帝国的核心地带还是遥远的边疆。"
  tr_harmony_bulwark_of_harmony:0 "和谐壁垒"
  tr_harmony_bulwark_of_harmony_desc:0 "防御战争时，§Y$MOD_SPACEPORT_SHIP_BUILD_SPEED_MULT$§!增加§G+33%§!。此外，只在自己的国界内舰队的§Y$MOD_SHIP_FIRE_RATE_MULT$§!增加§G+15%§!。"

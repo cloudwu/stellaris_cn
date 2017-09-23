@@ -11,6 +11,8 @@
  MESSAGE_SPACEPORT_CONSTRUCTION_MESSAGE_TYPE_TITLE:0 "Construction Complete"
  MESSAGE_ARMY_RECRUITMENT_TITLE:0 "Army Recruitment Finished"
  MESSAGE_ARMY_RECRUITMENT:0 "Recruitment of armies has been completed on $PLANET|Y$."
+ MESSAGE_POP_CONSTRUCTION_MESSAGE_TYPE_TITLE:0 "$MESSAGE_CONSTRUCTION_MESSAGE_TYPE_TITLE$"
+ MESSAGE_POP_CONSTRUCTION_FINISH:0 "Pop construction has been completed on $PLANET|Y$."
 
  ####################################
  # Fleet Orders
@@ -258,6 +260,8 @@
  WAR_END_DEFEAT:0 "We have Lost this war"
  WAR_DEMANDS:0 " with the following demands:\n"
  WAR_DEMANDS_NONE:0 ". No demands have been enforced."
+ WAR_DEMANDS_2:0 "The following demands were enforced:\n"
+ WAR_DEMANDS_2_NONE:0 "No demands have been enforced."
  WAR_END_WHITEPEACE:0 "The war has ended with a White Peace"
  MESSAGE_OUR_SURRENDER_TITLE:0 "We Surrender"
  MESSAGE_THEIR_SURRENDER_TITLE:0 "They Surrender"
@@ -282,7 +286,7 @@
  MESSAGE_OFFENSIVE_PACT_DECLARED_WAR_DESC:1 "$CALLER|Y$, who we agreed to support in their offensive war, has declared war on $DEFENDER|Y$!"
  MESSAGE_WAR_ENDED:0 "War Ended"
  MESSAGE_WAR_ENDED_DESC_1:1 "The war between $ATTACKER|Y$ and $DEFENDER|Y$ has ended due to $DEFENDER|Y$ being vassalized or annexed by a third party."
- MESSAGE_WAR_ENDED_DESC_2:1 "Our war with $ENEMY|Y$ has ended due to them being vassalized or annexed by $OVERLORD|Y$. We have not entered a truce."
+ MESSAGE_WAR_ENDED_DESC_2:2 "Our war with $ENEMY|Y$ has ended due to them being vassalized or annexed by $OVERLORD|Y$. We have not entered a truce."
  MESSAGE_WAR_ENDED_DESC_3:1 "We have left the war against $ENEMY|Y$ due to being vassalized by $OVERLORD|Y$."
  MESSAGE_VASSAL_ENTER_WAR:0 "Subject Enters War"
  MESSAGE_VASSAL_ENTER_WAR_DESC_1:1 "$VASSAL|Y$, the vassal of one of our allies has entered the war against $ENEMY|Y$."
@@ -290,7 +294,7 @@
  MESSAGE_ENEMY_VASSAL_ENTER_WAR:0 "Enemy Subject Enters War"
  MESSAGE_ENEMY_VASSAL_ENTER_WAR_DESC:1 "$ENEMY|Y$, the subject of one of our enemies has entered the war against us."
  MESSAGE_ENEMY_LEAVES_WAR:0 "Enemy Leaves War"
- MESSAGE_ENEMY_LEAVES_WAR_DESC:1 "$ENEMY|Y$ has left the war due to being vassalized or annexed by $OVERLORD|Y$."
+ MESSAGE_ENEMY_LEAVES_WAR_DESC:2 "$ENEMY|Y$ has left the war due to being vassalized or annexed by $OVERLORD|Y$."
  
  ####################################
  # Fleet Detected
@@ -410,7 +414,7 @@
  MESSAGE_UPLIFTING_FAILED_TITLE:0 "Uplift Special Project Failed"
  MESSAGE_UPLIFTING_FAILED:1 "Our project to Uplift the $SPECIES|Y$ on $PLANET|Y$ has failed."
  MESSAGE_SPECIES_MODIFICATION_FAILED_TITLE:0 "Modify Species Special Project Failed"
- MESSAGE_SPECIES_MODIFICATION_FAILED:0 "Our project to Modify the Traits of the $SPECIES|Y$ has failed."
+ MESSAGE_SPECIES_MODIFICATION_FAILED:3 "Our project to Modify $POPS|Y$ Pops on $PLANETS|Y$ planets to match the $TEMPLATE|Y$ template has failed."
  MESSAGE_SPECIAL_PROJECT_AVAILABLE_TITLE:0 "Special Project Available"
  SPECIAL_PROJECT_AVAILABLE:0 "Special Project Available for research."
 

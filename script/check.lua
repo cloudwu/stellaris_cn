@@ -26,19 +26,44 @@ local function check(text)
 	end
 end
 
+-- 检查是否是合法的 yml 文件
+local function checkyml(text)
+	text = text:sub(4)	-- skip BOM
+	local lno = 1
+	for line in text:gmatch "([^\r\n]*)\r?\n?" do
+		if lno > 1 and not line:match("%s*#") then
+			local comment = line:match '([^"]*)$'
+			local shape = comment:match "%s*(.)"
+			if shape and shape ~= "#" and shape ~= " " then
+				return string.format('Line %s missing "', lno)
+			end
+			line = line:sub(1, #line - #comment)
+			if line ~= "" then
+				local key, value = line:match ' ([%w%._%-]+:%d) *"(.*)"$'
+				if key == nil or value == nil then
+					print(line, comment)
+					return string.format("Line %s is invalid", lno)
+				end
+			end
+		end
+		lno = lno + 1
+	end
+end
+
 local filename = ...
 if filename == nil then
-	return check
+	return function(text)
+		return check(text) or checkyml(text)
+	end
 else
 	-- standalone
 	local f = assert(io.open((filename)), "Can't open " .. filename)
 	local text = f:read "a"
 	f:close()
-	local err = check(text)
+	local err = check(text) or checkyml(text)
 	if err then
 		print("ERR:", filename, err)
 	else
 		print("OK:", filename)
 	end
 end
-

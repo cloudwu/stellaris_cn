@@ -12,6 +12,7 @@ http://steamcommunity.com/sharedfiles/filedetails/?id=734129025
 * en 是当前英文原文文本。
 * term_list.txt 是术语列表，参加翻译时请参考这里统一术语。
 * script 是一些实用工具脚本，用来检查错误。
+* [workflow.md](https://github.com/cloudwu/stellaris_cn/blob/master/workflow.md)  想参与的同学，如果不熟悉 github 的工作流，可以参考。
 
 ### 本汉化 Mod 引用尚未公开的官方中文字体，如果需要其它字体可以单独订阅 字体 mod :
 

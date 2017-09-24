@@ -13,8 +13,9 @@ git clone git@github.com:username/stellaris_cn.git
 
 3. 加一个本地分支跟踪原始仓库：
 ```
-git remote add cloudwu https://github.com/cloudwu/stellaris_cn.git
-git checkout -b cloudwu cloudwu/master
+git remote add cloudwu https://github.com/cloudwu/stellaris_cn.git	# 添加远程仓库
+git fetch cloudwu	# 将远程仓库取到本地
+git checkout -b cloudwu cloudwu/master	# 创建一个本地分支跟踪远程仓库
 ```
 
 4. 在自己的仓库修改提交

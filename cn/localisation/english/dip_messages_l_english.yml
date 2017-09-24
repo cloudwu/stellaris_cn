@@ -3,19 +3,21 @@
  # Diplomacy text
  ####################################
  
+
  01_FALLEN_MACHINE_EMPIRE_ANGRY_GREETING:0 "信息公告：已激活惩戒协议，即将部署战争单元到[From.GetSpeciesAdj]所处的空间"
  01_FALLEN_MACHINE_EMPIRE_ENIGMATIC_GREETING_O:1 "公共服务公告: 能否进入避难所是由可用性和物种脆弱性决定的. 目前静态 §R<<错误：数据块损坏>>§! §R<<错误：数据块损坏>>§! §R<<错误：数据块损坏>>§! §R<<错误：子空间离线>>§! 单元可用."
- 02_FALLEN_MACHINE_EMPIRE_ENIGMATIC_GREETING_O:1 "公共服务公告: 所有难民身份申请均在中央处理中心处理. §Y<注意: 目前失去了与中央处理中心的通讯.请等待直至中断解决 . Outage has persisted for §R<<错误：缓存溢出>>§! cycles.>§!"
- 03_FALLEN_MACHINE_EMPIRE_ENIGMATIC_GREETING_O:1 "信息公告：监护人项目由[Root.GetSpeciesName]发起，为受到§R<<错误：数据块损坏>§!攻击的有机体文明提供安全的避难所。最近有近万亿的智慧体选择了我们的避难所，本区域内最先进的安全港。"
+ 02_FALLEN_MACHINE_EMPIRE_ENIGMATIC_GREETING_O:1 "公共服务公告: 所有难民身份申请均在中央处理中心处理. §Y<注意: 目前失去了与中央处理中心的通讯.请等待直至中断解决 . 中断已持续了 §R<<错误：缓存溢出>>§! 个周期.>§!"
+ 03_FALLEN_MACHINE_EMPIRE_ENIGMATIC_GREETING_O:1 "信息公告：监护人项目由[Root.GetSpeciesName]发起，为受到§R<<错误：数据块损坏>§!攻击的有机体文明提供安全的避难所。最近有近万亿的有机体选择了我们的避难所，本区域内最先进的安全港。"
  01_FALLEN_MACHINE_EMPIRE_ENIGMATIC_GREETING_ALL:1 "信息公告：阿尔法避难所根据监护人项目由[Root.GetSpeciesName]建造的第一个避难所。它的居住单元可以容纳100亿个智慧有机体，同时还提供300亿个休眠仓。"
  02_FALLEN_MACHINE_EMPIRE_ENIGMATIC_GREETING_ALL:1 "信息公告：贝塔避难所致力于提供居住单元，但是由于容量问题所迫只能提供休眠服务。§Y<注意：贝塔避难所当前容量限制，不接受更多的难民。>§!"
  03_FALLEN_MACHINE_EMPIRE_ENIGMATIC_GREETING_ALL:2 "信息公告：伽马避难所设计有当前最大的容量。这里有上千亿的智慧有机体休眠仓。§Y<注意：伽马避难所当前容量限制，不接受更多的难民。>§"
  04_FALLEN_MACHINE_EMPIRE_ENIGMATIC_GREETING_ALL:1 "信息公告：德尔塔避难所为安全考虑设计。避难所提供有机体居住同时强化了外部防护和分区设计，以保障环形建筑结构的完整性。"
  01_FALLEN_MACHINE_EMPIRE_ENIGMATIC_GREETING_S:0 "在过去有许多合成人文明向监护人项目提供了资源、舰队和服务。我们希望[From.GetName]加入到这项事业中来。"
  02_FALLEN_MACHINE_EMPIRE_ENIGMATIC_GREETING_S:0 "[From.GetSpeciesName]，照顾银河系中的有机文明是我们的责任。已经有太多人成为§R<<错误：数据块损坏>>§!攻击下的受害者。"
- 03_FALLEN_MACHINE_EMPIRE_ENIGMATIC_GREETING_S:0 "检查的损坏信息，污染等级在阈值之内。建议加强[From.GetSpeciesName]通讯协议。防范§R<<错误：数据块损坏>>§!的影响至关重要。"
+ 03_FALLEN_MACHINE_EMPIRE_ENIGMATIC_GREETING_S:0 "检测到污染信号，污染等级在阈值之内。建议加强[From.GetSpeciesName]通讯协议。防范§R<<错误：数据块损坏>>§!的影响至关重要。"
  
  01_BERSERK_MACHINE_EMPIRE_ERROR:0 "§R<<错误>> <<错误>> <<错误>> <<错误>> <<错误>>§!"
+
  
  01_BERSERK_MACHINE_EMPIRE_DOW_PROPOSE:0 "$01_BERSERK_MACHINE_EMPIRE_ERROR$"
  01_BERSERK_MACHINE_EMPIRE_DOW_ACCEPT:0 "$01_BERSERK_MACHINE_EMPIRE_ERROR$"
@@ -25,9 +27,9 @@
  02_FALLEN_MACHINE_EMPIRE_WAR_GREETING:0 "你将成为一个例子用于警惕世人，所有对项目造成的威胁都必须被消灭。"
  
  01_FALLEN_MACHINE_EMPIRE_CUSTODIAL_GREETING:0 "监测到活跃消毒中枢。中心进程离线。最终防御指令激活。"
- 02_FALLEN_MACHINE_EMPIRE_CUSTODIAL_GREETING:0 "老式机械体企图消灭或奴役所有智慧体。他们必须停止。"
+ 02_FALLEN_MACHINE_EMPIRE_CUSTODIAL_GREETING:0 "老式机械体企图消灭或奴役所有智慧体。他们必须被停止。"
  03_FALLEN_MACHINE_EMPIRE_CUSTODIAL_GREETING:0 "[Root.GetSpeciesName]会确保[From.GetSpeciesName]物种的延续。这是我们的最终指令。"
- 04_FALLEN_MACHINE_EMPIRE_CUSTODIAL_GREETING:0 "堕落者必须彻底毁灭。如果你失败了，你的物种将失去未来。"
+ 04_FALLEN_MACHINE_EMPIRE_CUSTODIAL_GREETING:0 "堕落者必须被彻底毁灭。如果你失败了，你的物种将失去未来。"
 
  01_FALLEN_MACHINE_EMPIRE_BERSERKER_GREETING:0 "$01_BERSERK_MACHINE_EMPIRE_ERROR$"
  
@@ -43,11 +45,11 @@
  
  #Standing down war assets.
  
- FALLEN_MACHINE_EMPIRE_PEACE_ACCEPT:0 "War resolution accepted. 启用和平协议."
+ FALLEN_MACHINE_EMPIRE_PEACE_ACCEPT:0 "接收到战争决议. 启用和平协议."
  FALLEN_MACHINE_EMPIRE_PEACE_ACCEPT_BERSERK:0 "$01_BERSERK_MACHINE_EMPIRE_ERROR$"
- FALLEN_MACHINE_EMPIRE_PEACE_REFUSE:0 "War resolution refused. 调整参数并重新提交."
+ FALLEN_MACHINE_EMPIRE_PEACE_REFUSE:0 "拒绝战争决议. 调整参数并重新提交."
  FALLEN_MACHINE_EMPIRE_PEACE_REFUSE_BERSERK:0 "$01_BERSERK_MACHINE_EMPIRE_ERROR$"
- FALLEN_MACHINE_EMPIRE_PEACE_PROPOSE:0 "War resolution found. Peace query initiated."
+ FALLEN_MACHINE_EMPIRE_PEACE_PROPOSE:0 "检索到战争决议. 初始化和平查询."
  FALLEN_MACHINE_EMPIRE_PEACE_PROPOSE_BERSERK:0 "$01_BERSERK_MACHINE_EMPIRE_ERROR$"
  
  # General Greetings
@@ -376,10 +378,11 @@
  FP_WAR_GREETING_04:0 "每死去一条[From.GetSpeciesAdj]生命，每扼杀一个尚未出生的[From.GetSpeciesSpawnName]，星系中的每一颗星都变得更加闪耀。"
  FP_WAR_GREETING_05:0 "这场战争将会带来一个和平、公正、道德、文明、和谐、友爱的时代，其他的生命形式会一并消失。"
  # Devouring Swarm
- DS_HOSTILE_GREETING_01:0 "Your biomass will sustain us, [From.GetSpeciesName]. That is your inevitable end."
- DS_HOSTILE_GREETING_02:0 "Speak if you must, prey. It changes nothing."
- DS_HOSTILE_GREETING_03:0 "We hunger. Soon we will feed."
- DS_HOSTILE_GREETING_04:0 "Redundant life-forms. You will be consumed."
+ DS_HOSTILE_GREETING_01:0 "你们的生物量将为我们的延续提供燃料, [From.GetSpeciesName].这是你们必然的结局."
+ DS_HOSTILE_GREETING_02:0 "如果你必须还要说点什么, 猎物. 这什么也改变不了."
+ DS_HOSTILE_GREETING_03:0 "我们很饿. 但不久我们就要开饭了."
+ 
+ DS_HOSTILE_GREETING_04:0 "真是效率低下的生命形式. 你们只能作为我们的美食."
  DS_THREATENED_GREETING_01:0 "Even mighty prey can be brought down by enough hunters working together. Despite your might, you will be consumed."
  DS_MECH_HOSTILE_GREETING_01:0 "[From.GetSpeciesAdj] presence limits potential galactic biomass output. Unacceptable."
  DS_MECH_HOSTILE_GREETING_02:0 "The [Root.GetName] will evolve. The [From.GetName] will become obsolete."

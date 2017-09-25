@@ -28,9 +28,10 @@ end
 
 -- 检查是否是合法的 yml 文件
 local function checkyml(text)
-	text = text:sub(4)	-- skip BOM
 	local lno = 1
-	for line in text:gmatch "([^\r\n]*)\r?\n?" do
+	local iter = text:gmatch "([^\r\n]*)\r?\n?"
+	iter()	-- skip first line
+	for line in iter do
 		if lno > 1 and not line:match("%s*#") then
 			local comment = line:match '([^"]*)$'
 			local shape = comment:match "%s*(.)"

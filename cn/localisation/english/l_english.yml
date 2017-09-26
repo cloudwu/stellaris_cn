@@ -6232,8 +6232,8 @@
  requires_target_not_fanatic_purifiers:0 "§R我们是§Y$civic_fanatic_purifiers$§!！我们不与其他种族外交！§!"
  requires_actor_not_devouring_swarm:0 "§R他们是§Y$civic_hive_devouring_swarm$§!！他们的存在就是为了吃掉其他种族！§!"
  requires_target_not_devouring_swarm:0 "§R我们是§Y$civic_hive_devouring_swarm$§!！我们不与其他种族外交……他们是食物！§!"
- requires_actor_not_gestalt_consciousness:1 "§R他们是§Y$ethic_gestalt_consciousness$§。 They cannot integrate with other societies.§!" # TODO
- requires_target_not_gestalt_consciousness:1 "§R我们是§Y$ethic_gestalt_consciousness$§!。 We cannot integrate with other societies.§!"
+ requires_actor_not_gestalt_consciousness:1 "§R他们是§Y$ethic_gestalt_consciousness$§。他们不能与其他社会融合。§!"
+ requires_target_not_gestalt_consciousness:1 "§R我们是§Y$ethic_gestalt_consciousness$§!。我们不能与其他社会融合。§!"
  requires_actor_not_machine_terminator:0 "§R§Y$civic_machine_terminator$§!只会与其他§Y机械智慧体§!或§Y合成人帝国§!外交。§!"
  requires_target_not_machine_terminator:0 "§R我们是§Y$civic_machine_terminator$§!。我们不与肉块谈判。§!" # FIXME fleshlings
  requires_target_not_machine_terminator_federation:0 "§R我们是§Y$civic_machine_terminator$§!。 We cannot let others interfere with our cause.§!"
@@ -6310,12 +6310,12 @@
  AUTH_HIVE_MIND_ASCENSION_RESTRICTIONS:0 "不能开启§H灵能§!或§H机械飞升之路§!"
  AUTH_HIVE_MIND_AI_RESTRICTIONS:0 "不能研究或建造§H机器人§!人口"
  AUTH_MACHINE_INTELLIGENCE_IMMORTAL_LEADERS:0 "领袖§H永生§!"
- AUTH_MACHINE_INTELLIGENCE_EXPENSIVE_NATIVE_LEADERS:0 "Machine 领袖招募花费：§R+100%§!" # TODO
- AUTH_MACHINE_TECH_ADDITIONS:0 "可以研究特殊§HMachine§!科技" # TODO
+ AUTH_MACHINE_INTELLIGENCE_EXPENSIVE_NATIVE_LEADERS:0 "机械体领袖招募花费：§R+100%§!"
+ AUTH_MACHINE_TECH_ADDITIONS:0 "可以研究特殊§H机械体§!科技"
  AUTH_MACHINE_TECH_RESTRICTIONS:0 "不能研究§H机器人§!或§H食物§!科技"
  AUTH_MACHINE_ASCENSION_RESTRICTIONS:0 "不能开启§H灵能§!、§H生物§!或§H机械飞升之路§!"
- AUTH_MACHINE_FOREIGN_POP_SURVIVAL:0 "非§HMachine§! £pop 人口必须被同化、奴役或肃清" # TODO
- AUTH_MACHINE_NATIVE_POPS:0 "§HMachine§! £pop 人口不增长而需要建造" # TODO
+ AUTH_MACHINE_FOREIGN_POP_SURVIVAL:0 "非§H机械体§!£pop 人口必须被同化、奴役或肃清"
+ AUTH_MACHINE_NATIVE_POPS:0 "§H机械体§!£pop 人口不增长而需要建造"
 
  ####################################
  # Strategic Resources
@@ -6666,24 +6666,24 @@
  building_machine_capital_3:0 "第一中枢"
  building_machine_capital_3_desc:0 "帝国的行政心脏。数百个AI处理请求并管理高效运行星际文明所需的微小但关键的细节。"
  building_animal_evaluation_laboratory:0 "动物评估实验室"
- building_animal_evaluation_laboratory_desc:0 "此实验室将研究居住于该地区的独特动物品系的特性，以及它们如何能应用于未来的machine设计。" # TODO
+ building_animal_evaluation_laboratory_desc:0 "此实验室将研究居住于该地区的独特动物品系的特性，以及它们如何能应用于未来的机械体设计。"
  building_spare_parts_depot:0 "备件仓库"
- building_spare_parts_depot_desc:0 "一个庞大的集中式仓库，存有我帝国当前所有活动machine机型的备件。" # TODO
+ building_spare_parts_depot_desc:0 "一个庞大的集中式仓库，存有我帝国当前所有活动机械体机型的备件。"
  building_unit_assembly_plant:0 "单元装配厂"
- building_unit_assembly_plant_desc:0 "这一AI监督的工厂极大加快了在此星球上组装新machine单元的进程。" # TODO
+ building_unit_assembly_plant_desc:0 "这一AI监督的工厂极大加快了在此星球上组装新机械体单元的进程。"
  building_singularity_core:0 "奇点核心"
  building_singularity_core_desc:0 "位于大型抑制设施内的一个稳定的微型黑洞。研究潜力几近无限。"
  building_probability_engine:0 "概率引擎"
- building_probability_engine_desc:0 "这个极其强大的AI结构不断运行先进的数学模拟，试图预测organic社会未来的行动。但它已被证明擅长预测股票市场的发展。" # TODO
+ building_probability_engine_desc:0 "这个极其强大的AI结构不断运行先进的数学模拟，试图预测有机体社会未来的行动。但它已被证明擅长预测股票市场的发展。"
  building_organic_sanctuary:0 "有机体庇护所"
  building_organic_sanctuary_desc:1 "此庇护所提供了密闭环境，有机体可以以安全的方式繁衍，最重要的是可控。"
- building_organic_paradise:0 "有机体乐土" # TODO
+ building_organic_paradise:0 "有机体乐土"
  building_organic_paradise_desc:1 "一个 AI 控制的人造乐土，旨在满足智慧有机体可能想要的所有需求，只要他不表达自决的需求"
  building_nutrient_paste_facility:0 "营养糊工厂"
  building_nutrient_paste_facility_desc:0 "此设施使用各种工业副产品，创造浓糊。这浓糊是有机体营养的极佳来源。通过添加化学调味剂，营养糊可以模制成最精致食品组合物的近似品。十个有机体中有七个不能辨别。"
  building_neuro_electric_amplifier:0 "神经电放大器"
- building_neuro_electric_amplifier_desc:0 "此设施放大了我们控制之下的半机械单元间传输的神经信号，提高了他们的生产率。" # TODO
- building_neuro_electric_amplifier_triggered_effect:0 "半机械人口：\n   $minerals$：§G+15%§!\n   $energy$：§G+15%§!" # TODO
+ building_neuro_electric_amplifier_desc:0 "此设施放大了我们控制之下的半机械单元间传输的神经信号，提高了他们的生产率。"
+ building_neuro_electric_amplifier_triggered_effect:0 "半机械人口：\n   $minerals$：§G+15%§!\n   $energy$：§G+15%§!"
  building_war_factory:0 "战争工厂"
  building_war_factory_desc:0 "一家大型warbot工厂，受先进AI控制，拥有优化生产流程。" # TODO
  building_deployment_post:0 "部署驻地"
@@ -9139,8 +9139,8 @@
  attitude_imperious_desc:0 "此觉醒帝国把我们视为未来的附属国。他们可能会要求我们放弃独立主权。"
  attitude_belligerent_desc:0 "此觉醒帝国把我们当作征服的目标。他们很可能会向我们发动进攻。"
  attitude_custodial_desc:0 "此觉醒帝国认为自己有义务保护我们渡过威胁宇宙的危机。他们可能会试图与我们结盟。"
- attitude_berserker_desc:0 "This Awakened Empire is an ancient artificial intelligence that has gone berserk. It is likely to attack anything and anyone around it."
- attitude_enigmatic_desc:0 "This Fallen Empire is an ancient artificial intelligence that behaves in a strange and unpredictable manner. We do not know what to expect from it."
+ attitude_berserker_desc:0 "此觉醒帝国是开始发狂的古代人工智能，已经变得狂暴了。他可能会攻击周围的任何东西、任何人。"
+ attitude_enigmatic_desc:0 "此堕落帝国是古代人工智能，行为古怪，不可预测。我们不知道该期待什么。"
 
  ATTITUDE:0 "$ATTITUDE$态度"
  ATTITUDE_US:0 "对我方的态度"
@@ -9210,9 +9210,9 @@
  personality_awakened_fallen_empire_xenophobe:0 "复国侵略者"
  personality_awakened_fallen_empire_xenophile:0 "仁慈干涉者"
  
- personality_fallen_empire_machine_desc:0 "This Fallen Empire is an ancient artifical intelligence that appears to be operating on some sort of caretaker protocol. It behaves erratically but seems to pose no direct threat to us."
- personality_awakened_fallen_empire_machine_desc:0 "This Awakened Empire is an ancient artificial intelligence acting as a galactic custodian. It will focus all its efforts on defending sapient life against the ongoing crisis."
- personality_berserk_fallen_empire_machine_desc:0 "This Awakened Empire is an ancient artificial intelligence that appears to be malfunctioning, going berserk and attacking everything around it."
+ personality_fallen_empire_machine_desc:0 "此堕落帝国是古代人工智能，似乎按照某种看守协议运作。他行为不规律，但似乎对我们无直接威胁。"
+ personality_awakened_fallen_empire_machine_desc:0 "此觉醒帝国是古代人工智能。身为银河监管者，他将集中力量捍卫智慧生命，抵御正在发生的危机。"
+ personality_berserk_fallen_empire_machine_desc:0 "此觉醒帝国是古代人工智能。他似乎发生了故障，狂暴地攻击周围的一切。"
  
  personality_fallen_empire_spiritualist_desc:0 "此堕落帝国致力于守卫其圣地。如果在他们视作圣地的星系殖民，很可能招致他们的怒火。"
  personality_fallen_empire_materialist_desc:3 "此堕落帝国致力于囤积科技和资源。为了达成这个目的，他们可能会要求比低等帝国为他们完成任务或者向自己朝贡。"
@@ -9233,7 +9233,7 @@
  personality_federation_builders_desc:0 "联邦建设者认为所有智慧生物均有价值，他们致力于建立一个强大的联邦保护自己和他人不受帝国扩张的威胁。"
  personality_xenophobic_isolationists_desc:0 "排外孤立者对银河系的其他种族及国家漠不关心，只想安静地待在境内，并极力避免与外星人打交道。"
  personality_hive_mind_desc:0 "蜂群思维者视自己的繁殖为第一要务。只要还有空间可以扩张，他们就无所畏惧。然而一旦生存空间受限，他们会疯狂侵夺其他的世界，屠杀其土著，不再关心其余事务。"
- personality_devouring_swarm_desc:0 "Devouring Swarms have a single-minded devotion to self-propagation and view all other forms of life as prey to be consumed. They are not amenable to diplomacy in any form."
+ personality_devouring_swarm_desc:0 "吞世恶群一心一意投入自我增殖，将所有其他形式的生命视作将被吃掉的猎物。他们不适合任何形式的外交。"
  personality_migrating_flock_desc:0 "迁徙族群寻求以和平的方式在整个银河散布族群，如果其他帝国允许的话，他们会非常乐于迁徙到其他帝国的世界。"
  personality_evangelising_zealots_desc:0 "狂热布道者寻求在银河系中传播他们的信仰，为了让他人接受自己的信仰甚至不惜使用军事力量强迫对方就范。"
  personality_democratic_crusaders_desc:1 "民主斗士坚信传播民主生活方式是他们的道德令律。他们与其他民主国家一般都能相处融洽，但热衷利用军事手段“解放”那些不太民主的国家的人民。"
@@ -9243,10 +9243,10 @@
  personality_erudite_explorers_desc:0 "博学探索者们视探索与发现的过程重于一切。他们乐于换取那些自己正在寻求的知识，必要情况下甚至不惜采用武力。"
  personality_spiritual_seekers_desc:0 "灵体求索者相信一切生命都是由某种更高级的力量所联系在一起的，而通过研究这种高级力量所创造的生物就可以理解其奥妙。为了研究其他帝国与神明的关系，他们会寻求和平合作。"
  personality_harmonious_hierarchy_desc:2 "和谐集体致力于构建和睦的威权主义社会，在此社会中，人们不需要被强迫就能自愿的为国家服务，此社会倾向于保守，但并不抗拒贸易往来。"
- personality_machine_intelligence_desc:0 "Machine Intelligences have largely put their troubled pasts with organic lifeforms behind them, and are usually open to diplomatic exchanges with other spacefaring races."
- personality_exterminators_desc:0 "Exterminators are Machine Intelligences who view all sapient organic lifeforms as an intolerable threat to the galaxy. Though they may cooperate with other machines, Exterminators are unlikely to interact with organic empires in any capacity beyond attempting their annihilation."
- personality_servitors_desc:0 "Having come to the conclusion that organic leadership is fraught with chaos and self-destructive tendencies, Servitors are Machine Intelligences focused on ensuring organics live a safe and comfortable existence - even if that means co-opting their civilization."
- personality_assimilators_desc:0 "Assimilators are Machine Intelligences driven by a search for knowledge and diversification. Because Assimilators expand their comprehension of the universe by forcibly sublimating and absorbing organic civilizations into their neural mainframe, they tend to be unpopular with organics."
+ personality_machine_intelligence_desc:0 "机械智慧体很大程度上将过去困扰他们的有机体生命形式置之脑后，通常乐意与其他太空种族外交。"
+ personality_exterminators_desc:0 "终结者机械智慧体将所有智慧有机体生命形式视作银河系不可容忍的威胁。虽然可能与其他机械体合作，但除了歼灭之外，终结者不可能与有机体帝国开展任何互动。"
+ personality_servitors_desc:0 "得出有机体领导充满了混乱和自我毁灭的倾向这一结论后，从仆机械智慧体专注于确保有机体生命生活安全舒适——即便这意味着co-opt他们的文明。" # TODO
+ personality_assimilators_desc:0 "同化者机械智慧体受寻找知识和多元化驱动。因为同化者通过强行升华并吸收有机体文明进入神经主机来扩展对宇宙的理解，它们往往不受有机体的欢迎。"
 
  ####################################
  # Budget Groups
@@ -9424,13 +9424,13 @@
  war_demand_total_machine_defeat_header:0 "§H全面胜利§!"
  war_demand_total_machine_defeat_subtext:0 "[parameter:country.GetName]"
  war_demand_total_machine_defeat_tooltip_header:0 "$war_demand_total_machine_defeat_header$"
- war_demand_total_machine_defeat_content:0 "[parameter:country.GetName] will be utterly defeated and annexed."
+ war_demand_total_machine_defeat_content:0 "[parameter:country.GetName] 将被彻底击败并吞并。"
  war_demand_total_machine_defeat_tooltip_proper_header:0 "$war_demand_total_machine_defeat_tooltip_header$"
  war_demand_total_machine_defeat_tooltip_proper_content:0 "$war_demand_total_machine_defeat_content$"
  war_demand_total_defeat_header:1 "§H全面胜利§!"
  war_demand_total_defeat_subtext:0 "[parameter:country.GetName]"
  war_demand_total_defeat_tooltip_header:0 "$war_demand_total_defeat_header$"
- war_demand_total_defeat_tooltip_content:2 "[parameter:country.GetName] 将被完全击败并吞并。其附属国也可能被迫割让部分星球。"
+ war_demand_total_defeat_tooltip_content:2 "[parameter:country.GetName] 将被彻底击败并吞并。其附属国也可能被迫割让部分星球。"
  war_demand_total_defeat_tooltip_proper_header:0 "$war_demand_total_defeat_header$"
  war_demand_total_defeat_tooltip_proper_content:1 "$war_demand_total_defeat_tooltip_content$"
  war_demand_independence_header:1 "§H独立§!"
@@ -9633,13 +9633,13 @@
  SUBJECT_INTEGRATION_COMPLETE_TITLE:0 "附属国整合完成"
  SUBJECT_INTEGRATION_COMPLETE_DESC:0 "附属国$SUBJECT|Y$已成功整合进我帝国"
  
- SPECIES_MODIFICATION_COMPLETE_TITLE:0 "Species Modification Complete"
- SPECIES_MODIFICATION_COMPLETE_DESC:0 "We have completed the modifications to the $SPECIES|Y$ species."
- UPLIFT_COMPLETE_TITLE:0 "Uplift Complete"
- UPLIFT_COMPLETE_DESC:0 "We have uplifted the $SPECIES|Y$ species to sapience."
+ SPECIES_MODIFICATION_COMPLETE_TITLE:0 "种族修饰完成"
+ SPECIES_MODIFICATION_COMPLETE_DESC:0 "我们已经完成对 $SPECIES|Y$ 种族的修饰。"
+ UPLIFT_COMPLETE_TITLE:0 "开化完成"
+ UPLIFT_COMPLETE_DESC:0 "我们已经开化 $SPECIES|Y$ 物种至智慧生物。"
  
- BECOME_FEDERATION_LEADER_TITLE:0 "Federation Leadership Change"
- BECOME_FEDERATION_LEADER_DESC:0 "$LEADER|Y$ is now the leader of our Federation."
+ BECOME_FEDERATION_LEADER_TITLE:0 "联邦领导权交接"
+ BECOME_FEDERATION_LEADER_DESC:0 "$LEADER|Y$ 现在是我联邦的领导。"
   
 # Subjects
  SUBJECT_vassal:0 "附庸国"
@@ -9758,7 +9758,7 @@
  # Sector settings
  SECTOR_SETTINGS:0 "星域设置"
  
- lost_owned_pop:0 "Owned Pop Emancipated"
+ lost_owned_pop:0 "所拥有的人口被解放"
  lost_owned_pop_lesser:0 "$lost_owned_pop$"
 
  setting_purge:0 "肃清"

@@ -3,6 +3,7 @@ local scriptpath = "."
 
 local filelist = {
 	"achievements_l_english.yml",
+	"ai_crisis_l_english.yml",
 	"dip_messages_l_english.yml",
 	"event_chains_l_english.yml",
 	"event_chains_l_english_tag.yml",
@@ -35,6 +36,7 @@ local filelist = {
 	"scripted_loc_l_english.yml",
 	"ship_sections_l_english.yml",
 	"standalone_l_english.yml",
+	"synthetic_dawn_events_l_english.yml",
 	"technology_l_english.yml",
 	"traditions_l_english.yml",
 	"triggers_effects_l_english.yml",
@@ -43,7 +45,6 @@ local filelist = {
 	"utopia_ascension_l_english.yml",
 	"utopia_l_english.yml",
 	"utopia_megastructures_l_english.yml",
-	"zzexceedtranslation_l_english.yml",
 }
 
 local check_text = assert(loadfile(scriptpath .. "/check.lua"))()

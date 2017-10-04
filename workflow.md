@@ -26,13 +26,30 @@ git commit
 git push
 ```
 
-5. 同步原始仓库
+5. 同步上游仓库
 ```
 git checkout cloudwu	# 切换到上游跟踪分支
 git pull	# 拉取上游仓库
 git checkout master	# 切换到自己的分支
-git merge cloudwu	# 和上游仓库合并
+git rebase cloudwu	# 和上游仓库合并, 注意 rebase 之后可能需要 push -f
+```
+
+6. 合并上游仓库（可选）
+
+如果你确定自己的仓库和上游原始仓库内容完全相同，只是因为合并提交等原因有差异。
+为了减少 rebase 过程中的冲突，可以在每次基于上游版本做翻译前（确定你之前的 pr 已经被合并，或已放在独立分支）使用：
+```
+git checkout cloudwu
+git pull
+git checkout master
+git reset cloudwu
+git push -f
+```
+这样可以直接和原始仓库分支保持严格一致。但注意，这样会丢失你的本地提交。如果误操作，可以通过 git reflog 查询历史版本，再 git reset 恢复。
+
 
 ----
 
-在第四步骤做修改时，可以随时进行第五步同步上游。
+在第四步骤做修改时，可以随时进行第五步同步上游。第五步最后的 rebase 阶段，如果发生冲突，git 会有提示，手工解决冲突后可回到第四步继续。
+
+

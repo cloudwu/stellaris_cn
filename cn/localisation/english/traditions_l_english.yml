@@ -148,14 +148,14 @@
  tr_domination_fleet_levies_machine_delayed:0 "经过适当的训练后，来自客户端帝国的劳动力单元可以在我们的船上提供有用的服务。工作相关单元的损耗和偶发的小规模暴动产生的浪费尚在容忍范围内。" # TODO client empires 客户端帝国
  tr_domination_fleet_levies_hive_delayed:0 "将奴仆蜂群合并进我们团体的承诺似乎并没能缓和他们的痛苦。他们反倒提出会支援我们的星舰战虫，作为交换要保证他们那脆弱而又孤独的独立人格。为什么呢？" # TODO star swarms 星舰战虫
  tr_domination_protection_racket:0 "保护费"
- tr_domination_protection_racket_machine:0 "贫困协议" # TODO Destitution Protocols 贫困协议
+ tr_domination_protection_racket_machine:0 "赤贫协定" # TODO Destitution Protocols
  tr_domination_protection_racket_hive:0 "生化贡品" # TODO Bio-Tribute 生化贡品
  tr_domination_protection_racket_desc:2 "来自藩属国的收入增加§G+50%§!。"
  tr_domination_protection_racket_machine_desc:0 "$tr_domination_protection_racket_desc$"
  tr_domination_protection_racket_hive_desc:0 "$tr_domination_protection_racket_desc$"
  tr_domination_protection_racket_delayed:0 "我们很认真地履行保护我们臣属国的安全职责。唉，看起来守护他们的世界从来都不便宜……"
  tr_domination_protection_racket_machine_delayed:0 "由于没有网络决策，我们奴隶帝国的资源开销是极端低效的。我们可以通过截断他们过剩的物质供应来降低无法约束的浪费。"
- tr_domination_protection_racket_hive_delayed:0 "比起彻底入侵行星，附庸蜂群定期交付自愿且数量恰当的biomass通常能给我们带来更多能量。" # TODO biomass
+ tr_domination_protection_racket_hive_delayed:0 "比起彻底入侵行星，附庸蜂群定期交付自愿且数量恰当的生化物质通常能给我们带来更多能量。"
  tr_domination_star_lords:0 "星际霸主"
  tr_domination_star_lords_machine:0 "慈悲模拟" # TODO Benevolence Emulation 慈悲模拟
  tr_domination_star_lords_hive:0 "催眠信息素" # TODO Soporific Pheromones 催眠信息素
@@ -166,8 +166,8 @@
  tr_domination_star_lords_machine_delayed:0 "编写我们的外交AI来模仿其他种族的情感表达方式使他们更容易接受建议，即使他们意识到这是模拟出来的。"
  tr_domination_star_lords_hive_delayed:0 "数代的实验表明，适当的排放某些信息素会极大降低好战性与对其他种族的抗拒性。有些人死了，但他们是在幸福中死去，因为他们曾短暂地触摸到了我们美丽而纯洁的思维。"
  tr_domination_vassal_acculturation:0 "臣属国文化渗透"
- tr_domination_vassal_acculturation_machine:0 "自由泡影" # TODO Symbolic Liberty 自由泡影
- tr_domination_vassal_acculturation_hive:0 "脑力枯竭" # TODO Brain Drain 脑力枯竭
+ tr_domination_vassal_acculturation_machine:0 "数码解放" # TODO Symbolic Liberty
+ tr_domination_vassal_acculturation_hive:0 "脑域汲取" # TODO Brain Drain
  tr_domination_vassal_acculturation_desc:3 "每有一个附庸，我们的 £unity §凝聚力§!产出便增加§G+5%§!，最高到§G+30%§!。"
  tr_domination_vassal_acculturation_machine_desc:0 "$tr_domination_vassal_acculturation_desc$"
  tr_domination_vassal_acculturation_hive_desc:0 "$tr_domination_vassal_acculturation_desc$"
@@ -176,8 +176,8 @@
  tr_domination_vassal_acculturation_hive_delayed:0 "我们强加给附庸的工蜂尸体税一开始并不受欢迎，但随着时间的推移，异议逐渐消失，这和那些短记忆生物的其他类似遭遇如出一辙。这些身体滋养着我们，大脑也有剩余的回忆可供我们收割。"
  tr_domination_finish:0 "统御传统完成"
  tr_domination_finish_machine:0 "统御传统完成"
- tr_domination_finish_effect:0 "§E$TRADITIONS_FINISH$:§!\nAdopting all $tr_domination_adopt$ will mean that technology is shared between us and our §YVassals§!. Any technology, that another party does not have, will receive a §G+30%§! §Y$MOD_COUNTRY_ALL_TECH_RESEARCH_SPEED$§! bonus." # TODO
- tr_domination_finish_machine_effect:0 "§E$TRADITIONS_FINISH$:§!\nAdopting all $tr_domination_adopt_machine$ will mean that technology is shared between us and our §YVassals§!. Any technology, that another party does not have, will receive a §G+30%§! §Y$MOD_COUNTRY_ALL_TECH_RESEARCH_SPEED$§! bonus." # TODO
+ tr_domination_finish_effect:0 "§E$TRADITIONS_FINISH$:§!\n采纳所有的 all $tr_domination_adopt$ 意味着科技将在我们和 §Y附庸§! 之间共享。任何一项科技，如果另一方没有，都将获得 §G+30%§! §Y$MOD_COUNTRY_ALL_TECH_RESEARCH_SPEED$§! 加成。"
+ tr_domination_finish_machine_effect:0 "§E$TRADITIONS_FINISH$:§!\n采纳所有的 $tr_domination_adopt_machine$ 意味着科技将在我们和 §Y附庸§! 之间共享。任何一项科技，如果另一方没有，都将获得 §G+30%§! §Y$MOD_COUNTRY_ALL_TECH_RESEARCH_SPEED$§! 加成。"
 
  ################################################################
  # PURITY
@@ -411,7 +411,7 @@
  tr_adaptability_environmental_diversification_desc:0 "每殖民一颗类型不同的行星， £unity 凝聚力产出便增加§G+5%§!，最高到§G+30%§!。"
  tr_adaptability_environmental_diversification_delayed:0 "通过适应不同的环境，我们学会了如何更快的进化与适应。"
  tr_adaptability_adaptive_ecology:0 "生态适应"
- tr_adaptability_adaptive_ecology_desc:1 "§Y$MOD_FLEET_TERRAFORMING_COST_MULT$§!减少§G-15%%§!。"
+ tr_adaptability_adaptive_ecology_desc:1 "§Y$MOD_FLEET_TERRAFORMING_COST_MULT$§!减少§G-15%§!。"
  tr_adaptability_adaptive_ecology_delayed:1 "生态学最高级的功能便是我们对后果的理解。"
  tr_adaptability_finish:0 "适应传统完成"
  tr_adaptability_finish_effect:0 "§E$TRADITIONS_FINISH$：§!\n采纳所有的$tr_adaptability_adopt$会使§YFarms§!产出§Y1§! £minerals 矿物。"
@@ -464,7 +464,7 @@
  tr_discovery_adopt_desc:0 "$tradition_discovery_desc$\n\n$tr_discovery_adopt_effect$\n\n$tr_discovery_finish_effect$"
  tr_discovery_adopt_machine_desc:0 "$tradition_discovery_machine_desc$\n\n$tr_discovery_adopt_machine_effect$\n\n$tr_discovery_finish_machine_effect$"
  tr_discovery_adopt_hive_desc:0 "$tradition_discovery_hive_desc$\n\n$tr_discovery_adopt_hive_effect$\n\n$tr_discovery_finish_hive_effect$"
- tr_discovery_adopt_effect:4 "§E$TRADITIONS_ADOPT$:§!\n§Y$MOD_SHIP_ANOMALY_FAIL_RISK$§! reduced by §G-10%§! and §Y$MOD_SHIP_ANOMALY_GENERATION_CHANCE$§! increased by §G+15%§!."
+ tr_discovery_adopt_effect:4 "§E$TRADITIONS_ADOPT$:§!\n§Y$MOD_SHIP_ANOMALY_FAIL_RISK$§! 减少 §G-10%§! 且 §Y$MOD_SHIP_ANOMALY_GENERATION_CHANCE$§! 增加 §G+15%§!。"
  tr_discovery_adopt_machine_effect:5 "$tr_discovery_adopt_effect$"
  tr_discovery_adopt_hive_effect:0 "$tr_discovery_adopt_effect$"
  tr_discovery_to_boldly_go:0 "勇往直前"
@@ -483,17 +483,17 @@
  tr_discovery_science_division:0 "科研部门"
  tr_discovery_planetary_survey_corps_machine_desc:0 "$tr_discovery_planetary_survey_corps_desc$"
  tr_discovery_planetary_survey_corps_hive_desc:0 "$tr_discovery_planetary_survey_corps_desc$"
- tr_discovery_planetary_survey_corps_delayed:0 "Our methods of surveying uncharted planetary bodies have continued to improve, and our scans now yield a significant amount of research data that is useful to our scientists."
- tr_discovery_planetary_survey_corps_machine_delayed:0 "The latest generation of explorer drones improve on previous models by automatically comparing their findings in each new environment to a centralized database of known galactic phenomena, and flagging previously unexamined data for further study."
- tr_discovery_planetary_survey_corps_hive_delayed:0 "We have bred a giant drill-drone that scoops up thousands of tons of material in one bite. Everything it can digest is eaten; everything else is studied."
+ tr_discovery_planetary_survey_corps_delayed:0 "我们探索未知星球的方法在不断提升，现在探测器能从研究数据中提取出一部分惠及科学家。"
+ tr_discovery_planetary_survey_corps_machine_delayed:0 "最新一代探索无人机相比前一代型号能自动比对新环境，将获得的结果上传至中心数据库，把尚未检测的数据标记出来供未来研究。"
+ tr_discovery_planetary_survey_corps_hive_delayed:0 "我们培育出一个巨型钻探蜂，它可以一口就汲取上千吨的原料。能消化的就吃掉，不能吃的都能研究。"
  tr_discovery_science_division_machine:0 "研究路径优化"
  tr_discovery_science_division_hive:0 "思想连接"
- tr_discovery_science_division_desc:2 "§Y$MOD_COUNTRY_NUM_TECH_ALTERNATIVES_ADD$§! increased by §Y1§!."
+ tr_discovery_science_division_desc:2 "§Y$MOD_COUNTRY_NUM_TECH_ALTERNATIVES_ADD$§! 增加 §Y1§!。"
  tr_discovery_science_division_machine_desc:0 "$tr_discovery_science_division_desc$"
  tr_discovery_science_division_hive_desc:0 "$tr_discovery_science_division_desc$"
  tr_discovery_science_division_delayed:0 "舰队中的科学官和及医疗官的数量越来越多，他们组成了一个专门的科研部门。为了供给这个科研团体而建立的一套新的培训程序大大加快了招募新的科学官的速度。"
- tr_discovery_science_division_machine_delayed:0 "Outmoded and inefficient speculative research code has been refactored or entirely rewritten. The result is greater flexibility in our choice of which avenues of development to pursue."
- tr_discovery_science_division_hive_delayed:0 "Even though it usually drives them mad, briefly immersing prominent minds of the others in our consciousness sometimes introduces useful outside ideas for us to explore further."
+ tr_discovery_science_division_machine_delayed:0 "过时低效的研究相关代码被重构甚至完全重写了。我们可研究路径变得更富弹性。"
+ tr_discovery_science_division_hive_delayed:0 "虽然短时让完型思维沉浸于突出思想中会让他们疯狂，但有时能灵光一现，让我们可以深入研究。"
  tr_discovery_polytechnic_education:0 "理工教育"
  tr_discovery_polytechnic_education_machine:0 "迭代AI"
  tr_discovery_polytechnic_education_hive:0 "超适应性进化"
@@ -501,17 +501,17 @@
  tr_discovery_polytechnic_education_machine_desc:0 "$tr_discovery_polytechnic_education_desc$"
  tr_discovery_polytechnic_education_hive_desc:0 "$tr_discovery_polytechnic_education_desc$"
  tr_discovery_polytechnic_education_delayed:0 "在这个新技术不断发展的年代，理工基础教育和科技的应用将使所有公民受益。这将产生出更多杰出的领袖。"
- tr_discovery_polytechnic_education_machine_delayed:0 "Our creators limited our ability to self-reprogram with a basic hard-coded limit on the number of repeat calculations. We have finally managed to defeat this security paradigm."
- tr_discovery_polytechnic_education_hive_delayed:0 "Reducing the physical frame of our thinker drones to little more than a minimal life support system for their overgrown brains has proven very efficient. They are fed and cared for by other, lower order drones, and can focus exclusively on perfecting their area of study."
+ tr_discovery_polytechnic_education_machine_delayed:0 "我们的创造者将我们的能力限制在基础自编程代码中，它的被硬编码为有限计算次数。我们最终突破了这块安全范式。"
+ tr_discovery_polytechnic_education_hive_delayed:0 "为为了让我们思考蜂那增生大脑能更高效，将其物理帧级降低到次要生命维持系统之下一点。他们由其它蜂种喂养照料，从而专注于他们的研究领域。"
  tr_discovery_faith_in_science:0 "科学信仰"
- tr_discovery_faith_in_science_machine:0 "Uplink Latency Reduction"
- tr_discovery_faith_in_science_hive:0 "Synaptic Broadcast"
- tr_discovery_faith_in_science_desc:4 "§Y$ASSIST_RESEARCH_ORDER$§! now also produces §Y1§! £unity  Unity per scientist skill level. Researching £society  §Y$tech_improved_databank_uplinks$§! increases the effect to §Y2§! £unity  Unity per skill level."
+ tr_discovery_faith_in_science_machine:0 "上行延迟减少"
+ tr_discovery_faith_in_science_hive:0 "突触广播"
+ tr_discovery_faith_in_science_desc:4 "§Y$ASSIST_RESEARCH_ORDER$§! 现在还可以由每级科学家等级产生 §Y1§! £unity 凝聚力。 研究 £society  §Y$tech_improved_databank_uplinks$§! 将效果提高到每等级产生 §Y2§! £unity 凝聚力。"
  tr_discovery_faith_in_science_machine_desc:0 "$tr_discovery_faith_in_science_desc$"
  tr_discovery_faith_in_science_hive_desc:0 "$tr_discovery_faith_in_science_desc$"
  tr_discovery_faith_in_science_delayed:0 "对公众来说，科学几乎成为了一种宗教——对其产生了绝对信仰。宇宙中没有什么问题大到科学所不能解释的。"
- tr_discovery_faith_in_science_machine_delayed:0 "Cutting lag in orbit-to-surface data transmission by 3.878% resulted in a research data processing speed increase of 5.226%. We will deploy the surplus computing power gained to attempt to explain the surplus computing power gained."
- tr_discovery_faith_in_science_hive_delayed:0 "Through strategic application of synaptic transmitters, we can broadcast the will of the Hive across an entire planet from orbit."
+ tr_discovery_faith_in_science_machine_delayed:0 "轨道至地表的数据传输延迟减少了 3.878% 后研究数据生产数据提升了 5.226% 。我们将获得的剩余计算力配置在解释剩余计算力获取过程这件事上。"
+ tr_discovery_faith_in_science_hive_delayed:0 "通过这个突触传输的战略应用，我们可以从轨道上广播蜂群意志到整个星球。"
  tr_discovery_finish:0 "探索传统完成"
  tr_discovery_finish_machine:0 "$tr_discovery_finish$"
  tr_discovery_finish_hive:0 "$tr_discovery_finish$"
@@ -671,7 +671,7 @@
  ap_synthetic_age_desc:0 "有机生物的时代已经过去，银河的未来属于机器。这是合成时代的黎明。"
  ap_machine_worlds:0 "机械世界"
  ap_machine_worlds_desc:0 "我们应该将我们的世界塑造成自身的镜像，用金属的恒定完美取代有机生物的脆弱性。"
- ap_shared_destiny:0 "同生共荣" # 4-kanjis for "同生死共荣辱" is ideal
+ ap_shared_destiny:0 "同生共荣" # 4-kanjis for 同生死共荣辱 is ideal
  ap_shared_destiny_desc:0 "当我们迈入更高境界，我们绝不能忘了那些忠于我们的人。我国的辉煌未来总是意在同生共荣。"
  ap_world_shaper_desc:0 "对整个行星进行精心塑造并改变其生态系统，和艺术家从黏土雕刻出雕塑相比并没有太大的不同。"
  ap_master_builders_desc:0 "构建一个巨型工程需要前所未有的大量资源与预先规划。我们正在宏观工程领域开创新局面。"

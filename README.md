@@ -19,3 +19,5 @@ http://steamcommunity.com/sharedfiles/filedetails/?id=734129025
 * 悦黑 http://steamcommunity.com/workshop/filedetails/?id=784471286  （群星汉化最早使用的字体）
 * 粗圆 http://steamcommunity.com/workshop/filedetails/?id=826928128  （低分辨率下可能更清晰一些）
 * 创意工坊中搜索关键字 `font` 查找其他字体mod。
+
+本地修改的文件.

@@ -20,4 +20,11 @@ http://steamcommunity.com/sharedfiles/filedetails/?id=734129025
 * 粗圆 http://steamcommunity.com/workshop/filedetails/?id=826928128  （低分辨率下可能更清晰一些）
 * 创意工坊中搜索关键字 `font` 查找其他字体mod。
 
+<<<<<<< HEAD
 本地修改的文件.
+=======
+### License
+
+* 本文本的的原文版本属于 Paradox Interactive ( https://www.paradoxplaza.com/ ) 
+* 翻译文本基于 CREATIVE COMMONS BY-SA 创作 ( https://creativecommons.org/licenses/by-sa/3.0/deed.zh ) 转载请附上 github 仓库地址：https://github.com/cloudwu/stellaris_cn 
+>>>>>>> cloudwu/master

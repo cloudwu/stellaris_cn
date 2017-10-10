@@ -19,3 +19,8 @@ http://steamcommunity.com/sharedfiles/filedetails/?id=734129025
 * 悦黑 http://steamcommunity.com/workshop/filedetails/?id=784471286  （群星汉化最早使用的字体）
 * 粗圆 http://steamcommunity.com/workshop/filedetails/?id=826928128  （低分辨率下可能更清晰一些）
 * 创意工坊中搜索关键字 `font` 查找其他字体mod。
+
+### License
+
+* 本文本的的原文版本属于 Paradox Interactive ( https://www.paradoxplaza.com/ ) 
+* 翻译文本基于 CREATIVE COMMONS BY-SA 创作 ( https://creativecommons.org/licenses/by-sa/3.0/deed.zh ) 转载请附上 github 仓库地址：https://github.com/cloudwu/stellaris_cn 

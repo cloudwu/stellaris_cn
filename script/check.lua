@@ -40,9 +40,10 @@ local function checkyml(text)
 			end
 			line = line:sub(1, #line - #comment)
 			if line ~= "" then
-				local key, value = line:match ' ([%w%._%-]+:%d) *"(.*)"$'
+				local key, value = line:match ' ([%w%._%-]+:%d?) *"(.*)"$'
 				if key == nil or value == nil then
-					print(line, comment)
+					print("line = ", line)
+					print("comment =", comment)
 					return string.format("Line %s is invalid", lno)
 				end
 			end

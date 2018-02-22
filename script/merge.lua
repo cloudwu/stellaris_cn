@@ -1,8 +1,6 @@
 local en_path = "../en/localisation/english/"
 local cn_path = "../cn/localisation/english/"
-local new_path = "../new/"
 local diff_path = "../diff/"
-local cn2_path = "../cn2.0/"
 
 local function readfile(filename)
 	local f = io.open(filename, "rb")
@@ -11,7 +9,7 @@ local function readfile(filename)
 	end
 	local dict = {}
 	for line in f:lines() do
-		local key,dig,value = line:match("^ ([%w%._]+):(%d*) (.*)")
+		local key,dig,value = line:match(" ([%w%._]+):(%d*) (.*)")
 		if key then
 			dict[key] = { d = dig , v = value }
 		end
@@ -20,63 +18,47 @@ local function readfile(filename)
 	return dict
 end
 
-local function diff(filename, cn2)
-	local f = io.open(diff_path .. filename .. ".diff" , "wb")
-	local en = readfile(en_path .. filename)
-	local cn = readfile(cn_path .. filename)
-	for line in io.lines(new_path .. filename) do
+local function readdiff(filename)
+	local diff = {}
+	for line in io.lines(filename) do
+		local command, key, dig, v = line:match("(%w+) +([%w%._]+):(%d*) (.*)")
+		local value = diff[key]
+		if value == nil then
+			value = {}
+			diff[key] = value
+		end
+		value[command] = { d = dig, v = v }
+	end
+	return diff
+end
+
+local function merge(filename)
+	local diff = readdiff(diff_path .. filename .. ".diff")
+	local cn = readfile(cn_path ..  filename)
+	local f = io.open(cn_path .. filename, "wb")
+	for line in io.lines(en_path .. filename) do
 		local key,dig,value = line:match("^ ([%w%._]+):(%d*) (.*)")
-		if key then
-			local e = en[key]
-			local c = cn[key]
-			if not e then
-				-- new item
-				f:write("ADD ", key, ":", dig, " " , value, "\n")
-				if cn2[key] then
-					f:write("CN2 ", key, ":", dig, " ", cn2[key].v, "\n")
+		if not key then
+			f:write(line, "\n")
+		else
+			local d = diff[key]
+			if not d then
+				-- not change
+				if cn[key] == nil then
+					print(filename, line, key)
 				end
+				f:write(" ", key, ":", dig, " ", cn[key].v, "\n")	-- use 1.9 translation
+			elseif d.CHANGE then
+				-- use new translation
+				f:write(" ", key, ":", dig, " ", d.CHANGE.v, "\n")	-- use current translation
+			elseif d.CN2 then
+				f:write(" ", key, ":", dig, " ", d.CN2.v, "\n")	-- use 2.0 offical translation
 			else
-				if value == e.v then
-					if dig ~= e.d then
-						-- only dig changes
-						f:write("CHANGE ", key, ":", dig, " ", c.v, "\n")
-					end
-				else
-					f:write("NEW ", key, ":", dig, " ", value, "\n")
-					f:write("OLD ", key, ":", e.d, " ", e.v, "\n")
-					f:write("CN  ", key, ":", dig, " ", c.v, "\n")
-					if cn2[key] then
-						f:write("CN2 ", key, ":", dig, " ", cn2[key].v, "\n")
-					end
-				end
-				en[key] = nil
+				f:write(line, "\n")	-- use english original text
 			end
 		end
 	end
-	for k,v in pairs(en) do
-		f:write("RM  ", k, ":", v.d, " " , v.v, "\n")
-	end
-
 	f:close()
-end
-
-local function readcn()
-	local cn2_list = {
-		"apocalypse_l_simp_chinese.yml",
-		"l_simp_chinese.yml",
-		"marauder_l_simp_chinese.yml",
-		"messages_l_simp_chinese.yml",
-		"modifiers_l_simp_chinese.yml",
-	}
-	local dict = {}
-	for _, file in ipairs(cn2_list) do
-		local filename = cn2_path .. file
-		local r = readfile(filename)
-		for k,v in pairs(r) do
-			dict[k] = v
-		end
-	end
-	return dict
 end
 
 local list = {
@@ -124,8 +106,6 @@ local list = {
 "utopia_megastructures_l_english.yml",
 }
 
-local cn2 = readcn()
-
 for _,file in ipairs(list) do
-	diff(file, cn2)
+	merge(file)
 end

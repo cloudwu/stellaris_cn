@@ -26,7 +26,7 @@
  MEGASTRUCTURE_IS_UPGRADING:0 "Upgrading to $TYPE|H$\nEstimated completion date: $DATE|H$"
  MEGASTRUCTURE_ALREADY_UPGRADING:0 "§RUpgrade in Progress!§!"
  MEGASTRUCTURE_TOOLTIP_PRODUCTION_HEADER:0 "Monthly Production:"
- MEGASTRUCTURE_TOOLTIP_MAINTENANCE_HEADER:0 "Monthly Maintenance:"
+ MEGASTRUCTURE_TOOLTIP_MAINTENANCE_HEADER:1 "Monthly Upkeep:"
  MEGASTRUCTURE_UPGRADE_REMAINING:0 "£time $DAYS|Y0$ Days Remaining"
  MEGASTRUCTURE_UPGRADES_TO:0 "Upgrades to:"
 
@@ -66,7 +66,7 @@
  allow_edict_consectrated_worlds:3 "§HUnlocks Planetary Edict:§! Consecrate World"
  describe_edict_consectrated_worlds:3 "§EThis is a Planetary Edict that lasts for §Y100§! years and increases £pop  Pop §Y$MOD_POP_HAPPINESS$§!, increases §YSpiritualist Ethics Attraction§!, increases §Y$MOD_POP_GROWTH_SPEED$§!, and boosts £unity  Unity §YGeneration§!.§!"
  allow_machine_worlds:2 "§HUnlocks Terraforming Option:§! Machine World"
- describe_machine_worlds:0 "§YMachine Worlds§! are a special planet class that is uninhabitable for organics. §YMachine Pops§! living on §YMachine Worlds§! have their resource output increased by §G+15%§!."
+ describe_machine_worlds:2 "§YMachine Worlds§! are a special planet class that is uninhabitable for organics. §YMachine Pops§! living on §YMachine Worlds§! have their resource output increased by §G+20%§!."
  
  ALLOW_PSI_CORPS:0 "The §H$building_psi_corps$§! building is now available."
  ALLOW_PSI_ARMIES:0 "§H$psionic_army_plural$§! can now be recruited."
@@ -116,6 +116,7 @@
  
  requires_planets_for_material:0 "$TRIGGER_FAIL$Cannot build in systems without planetary bodies for material."
  requires_no_existing_megastructure:1 "$TRIGGER_FAIL$Cannot build due to existing Megastructure."
+ requires_no_existing_gateway:0 "$TRIGGER_FAIL$Cannot build due to existing Gateway."
  requires_no_orbital_station:1 "$TRIGGER_FAIL$Cannot build due to existing Orbital Station."
  requires_no_habitable_planets:1 "$TRIGGER_FAIL$Cannot build in systems with habitable planets."
  requires_surveyed_system:1 "Cannot build in systems that have not been surveyed."
@@ -126,6 +127,7 @@
  requires_borders_survey_no_habitable:1 "$TRIGGER_FAIL$Cannot build in systems that contain habitable planets or black holes, are not completely surveyed, or are outside Empire borders."
  requires_borders_survey_no_habitable_dyson:1 "$TRIGGER_FAIL$Cannot build in systems that contain habitable planets, black holes, neutron stars or pulsars, are not completely surveyed, or are outside Empire borders."
  requires_survey_not_habitable:1 "$TRIGGER_FAIL$Cannot build on an unsurveyed or habitable planet."
+ requires_surveyed_planet:0 "$TRIGGER_FAIL$Cannot build on an unsurveyed planet."
  requires_not_minor_planetary_body:1 "$TRIGGER_FAIL$Cannot build on a minor planetary body (asteroid or moon)."
  requires_not_star:1 "$TRIGGER_FAIL$Cannot build around a star."
  requires_no_existing_spyorb:0 "$TRIGGER_FAIL$Cannot build more than one Sentry Array."
@@ -134,7 +136,7 @@
  requires_no_black_hole_neutron_star_pulsar:0 "$TRIGGER_FAIL$Cannot build Dyson Spheres around Black Holes, Neutron Stars or Pulsars."
  requires_no_anomaly:1 "$TRIGGER_FAIL$Cannot build on planets that have unresearched anomalies discovered by us or any other Empire."
  requires_not_ring_world:0 "$TRIGGER_FAIL$Cannot build on Ring Worlds."
-
+ 
  progress.3.desc_08:0 "Our colony ship has gently touched down on the sprawling savanna that covers most of §Y[Root.GetName]§!. The shimmering air is dry yet pleasant, and a large herd of docile herbivores can be seen observing from a distance as our first landing site is established.\n\nThe ship has been permanently converted into the administrative headquarters of the new settlement, and its reactor core is in the process of being removed so that it may serve as the colony's temporary power source.\n\nHundreds of small tents and prefab shelters have sprung up around the former starship's massive hull as colonists begin to disembark in large numbers - the first [Root.Owner.GetSpeciesName] city on an alien world."
  progress.3.desc_09:0 "Our colony ship managed, with surprising grace, to maneuver between the massive peaks that are so prevalent in the jagged landscape of §Y[Root.GetName]§!. It touched down in a sheltered valley that will serve as an ideal first landing site.\n\nThe ship has been permanently converted into the administrative headquarters of the new settlement, and its reactor core is in the process of being removed so that it may serve as the colony's temporary power source.\n\nHundreds of small tents and prefab shelters have sprung up around the former starship's massive hull as colonists begin to disembark in large numbers - the first [Root.Owner.GetSpeciesName] city on an alien world."
  

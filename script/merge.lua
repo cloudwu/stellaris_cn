@@ -80,7 +80,6 @@ local list = {
 "projects_4_l_english.yml",
 "projects_l_english.yml",
 "scripted_loc_l_english.yml",
-"ship_sections_l_english.yml",
 "synthetic_dawn_events_l_english.yml",
 "technology_l_english.yml",
 "traditions_l_english.yml",

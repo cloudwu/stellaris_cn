@@ -1881,7 +1881,7 @@
  topbar_button_traditions_delayed:0 "§E开启传统界面§!"
  topbar_button_claims_name:0 "$CLAIMS_VIEW$"
  topbar_button_claims_instant:0 "§H$topbar_button_claims_name$§!"
- topbar_button_claims_delayed:0 "§E打开宣称所有权界面§!"
+ topbar_button_claims_delayed:0 "§E打开领土主张界面§!"
  TOPBAR_HELP:0 "§H帮助§!"
  TOPBAR_HELP_DESC:0 "§E显示游戏帮助。§!"
  TOPBAR_MENU:0 "§H主菜单§!\n§G点击开启主菜单，显示设置和保存、载入或离开游戏等选项§!"
@@ -3245,8 +3245,8 @@
  trait_conservational:0 "环保主义"
  trait_conservational_desc:0 "§L这个种族的成员笃信资源必须被保护和再利用。§!"
  HIVE_MIND_NO_FACTIONS:0 "§R完形意识永远不会产生派系。§!"
- NO_POTENTIAL_CLAIM:0 "§R我们不知道任何能够宣称所有权的星系。§!"
- NO_POTENTIAL_CLAIM_ON_RECIPIENT:0 "§R我们不能对他们的任何星系宣称所有权。§!"
+ NO_POTENTIAL_CLAIM:0 "§R我们尚未发现任何能够提出领土主张的星系。§!"
+ NO_POTENTIAL_CLAIM_ON_RECIPIENT:0 "§R我们不能对他们的任何星系提出领土主张。§!"
  trait_wasteful:0 "穷奢极侈"
  trait_wasteful_desc:0 "§L这个种族的成员似乎没有节俭的概念，喜欢进行无意义的消费。§!\n"
  trait_hive_mind:0 "蜂群思维"
@@ -4368,8 +4368,8 @@
  DECLARE_WAR:0 "$ACTION_DECLARE_WAR_TITLE$"
  WAR_GOALS_VIEW_UNSET_ENEMY_WAR_GOAL:0 "未知战争诉求"
  WAR_GOALS_VIEW_UNSET_ENEMY_WAR_GOAL_DESC:0 "我们的敌人尚未选定战争诉求。"
- WAR_GOALS_VIEW_MANAGE_CLAIMS:0 "管理宣称所有权"
- WAR_GOALS_VIEW_MANAGE_CLAIMS_DESC:0 "管理我们对敌人宣称的所有权。"
+ WAR_GOALS_VIEW_MANAGE_CLAIMS:0 "管理领土主张"
+ WAR_GOALS_VIEW_MANAGE_CLAIMS_DESC:0 "管理我们对敌人的领土主张。"
  WAR_GOALS_VIEW_CLICK_SET_WAR_GOAL:0 "点击对我们的敌人设置战争诉求"
  WAR_GOALS_VIEW_CLICK_DECLARE_WAR:0 "点击对我们的敌人宣战"
  OUR_CLAIMS_ON_ENEMY:0 "我们对$COUNT|H$个星系宣称所有权，正尽力从敌人手中夺取过来。"
@@ -6238,7 +6238,7 @@
  # Claims View
  ####################################
 
- CLAIMS_VIEW:0 "所有权"
+ CLAIMS_VIEW:0 "领土主张"
  FILTERED:0 "过滤"
  MAKE_CLAIMS:0 "宣布所有权"
  MAKE_CLAIMS_COST:0 "$MAKE_CLAIMS$ $CLAIMS_COST$"
@@ -10055,7 +10055,7 @@
  GDR_IND_REFL:0 "他们自己"
 
  # Casus Belli
- casus_belli_cb_claim:0 "所有权"
+ casus_belli_cb_claim:0 "领土主张"
  casus_belli_cb_claim_acquire_hint:0 "\n§E对目标的一个星系宣称§H所有权§!将获得§Y$casus_belli_cb_claim$§! §H战争理由§!。§!"
  casus_belli_cb_subjugation:0 "征服"
  casus_belli_cb_subjugation_acquire_hint:0 "\n§E尝试在外交上降服目标将获得§Y$casus_belli_cb_subjugation$§! §H战争理由§!。§!"
@@ -10074,12 +10074,12 @@
  casus_belli_cb_stop_colossus:0 "阻止巨像"
  MISSING_CASUS_BELLI:0 "我们对$COUNTRY|H$没有任何$NAME|H$战争理由."
  
- INVALID_RIVAL_DESC:0 "只有那些力量介于§G不值一提§!和§R宛若天神§!之间的邻近部落可以作为我们的宿敌。"
+ INVALID_RIVAL_DESC:0 "只有相对力量超过§G不值一提§!且低于§R宛若天神§!的邻近帝国才可以作为我们的宿敌。"
 
  # War Goals
  war_goal_wg_conquest:0 "征服"
  #war_goal_wg_conquest_desc: "Wage war to seize enemy systems that we have claims on."
- war_goal_wg_conquest_desc:1 "战争是为了占据已经有宣称所有权的敌人的星系。使用此战争目标每个征服的星系会少产生§Y25%§!§Y威胁§!。"
+ war_goal_wg_conquest_desc:1 "战争是为了夺回那些我们宣称过所有权的敌方星系。使用此战争目标，征服的星系若提出过领土主张则会少产生§Y25%§!§Y威胁§!。"
  war_goal_wg_liberation:0 "解放"
  #war_goal_wg_liberation_desc: "Wage war to extricate a number of planets from the enemy, forming an independent and friendly Empire."
  war_goal_wg_liberation_desc:0 "战争的目的是从敌人手中解放数个星球，组成一个单独的友好部落。"
@@ -10138,13 +10138,13 @@
  war_goal_wg_end_threat_colossus:0 "$war_goal_wg_end_threat$"
  war_goal_wg_end_threat_colossus_desc:0 "战争的目的是为了阻止敌人使用他们的巨像。"
  
- wg_independence_accept:1 "§Y[Root.GetName]§!从§Y[From.GetName]§!中自主出来\n§Y[From.GetName]§!撤销所有对§Y[Root.GetAdj]§!的宣称所有权。"
+ wg_independence_accept:1 "§Y[Root.GetName]§!从§Y[From.GetName]§!中自主出来\n§Y[From.GetName]§!撤销所有对§Y[Root.GetAdj]§!的领土主张。"
  wg_independence_status_quo:1 "§Y[Root.GetName]§!从§Y[From.GetName]§!中独立出来"
  wg_assert_overlordship_accept:1 "§Y[From.GetName]§!依然是§Y[Root.GetName]§!的附属族"
  wg_force_ideology_accept:1 "§Y[From.GetName]§!被强迫施行§Y[Root.GetName]§!的种族心理和管理形式"
  wg_humiliation_fe_accept:1 "$wg_humiliation_accept$\n$wg_revoke_claims_accept$"
  wg_humiliation_accept:1 "§Y[From.GetName]§!被羞辱了，降低了他们的§Y$country_resource_influence_mult$§!和成员幸福度，持续§Y10§!年\n§Y[Root.GetName]§!获得§G+100§! £influence"
- wg_revoke_claims_accept:1 "§Y[From.GetName]§!被强迫撤销他们所有对§Y[Root.GetName]§!的宣称所有权"
+ wg_revoke_claims_accept:1 "§Y[From.GetName]§!被强迫撤销他们所有对§Y[Root.GetName]§!的领土主张"
  wg_plunder_accept:1 "§Y[From.GetName]§!遭受了劫掠，减少他们§Y$country_resource_influence_mult$§!和成员幸福度，持续§Y10§!年\n§Y[Root.GetName]§!获得§G+500§! £energy"
  fallen_empire_humiliate_effect_tooltip: "§Y[Root.GetName]§!被羞辱，减少了 §Y$country_resource_influence_mult$§! 和流行快乐 §Y10§!年\n§Y[From.GetName]§!获得§G+100§! £influence\n§Y[Root.GetName]§!被迫撤销所有§Y[From.GetName]§!上的所有权宣称"
  

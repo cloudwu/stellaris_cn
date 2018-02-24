@@ -1,7 +1,7 @@
 ADD TRIGGER_CAPITAL_STAR:0 "Capital Star"
-CHANGE TRIGGER_CAPITAL_STAR:0 "首都行星"
+CHANGE TRIGGER_CAPITAL_STAR:0 "首都主星"
 ADD SOLAR_SYSTEM_STAR:0 "System Star"
-CHANGE SOLAR_SYSTEM_STAR:0 "系统星球" #TODO
+CHANGE SOLAR_SYSTEM_STAR:0 "星系主星" #TODO
 ADD END_RIVALRY_EFFECT:0 "End rivalry with $COUNTRY$."
 CHANGE END_RIVALRY_EFFECT:0 "结束与$COUNTRY$的敌对状态。"
 ADD TRIGGER_IS_DESIGNABLE:0 "Is a designable ship size"
@@ -13,15 +13,13 @@ CHANGE HAS_NUM_FREE_ARMY_SLOTS:0 "军队剩余容量充足$COMPARATOR$ $NUM|Y$"
 ADD HAS_NOT_NUM_FREE_ARMY_SLOTS:0 "Number of free Army Slots is NOT $COMPARATOR$ $NUM|Y$"
 CHANGE HAS_NOT_NUM_FREE_ARMY_SLOTS:0 "军队剩余容量不足$COMPARATOR$ $NUM|Y$"
 ADD any_system_trigger:0 "$ANY_SYSTEM$"
-ADD count_system_trigger:0 "Count Systems"
-CHANGE count_system_trigger:0 "所选星系" #TODO：Count System
+ADD count_system_trigger:0 "Count Systems"#TODO
 ADD effect_every_system:0 "Every System"
 CHANGE effect_every_system:0 "所有星系"
 ADD effect_random_system:0 "Random System"
 CHANGE effect_random_system:0 "随机星系"
 ADD any_system_within_border_trigger:0 "$ANY_SYSTEM_WITHIN_BORDERS$"
-ADD count_system_within_border_trigger:0 "Count Systems within borders"
-CHANGE count_system_within_border_trigger:0 "国境内所选星系" #同17行 count systems
+ADD count_system_within_border_trigger:0 "Count Systems within borders"#TODO
 ADD effect_every_system_within_border:0 "Every System within borders"
 CHANGE effect_every_system_within_border:0 "境内所有星系"
 ADD effect_random_system_within_border:0 "Random System within borders"

@@ -66,7 +66,6 @@ local list = {
 "events_2_l_english.yml",
 "events_3_l_english.yml",
 "events_4_l_english.yml",
-"horizonsignal_l_english.yml",
 "l_english.yml",
 "marauder_l_english.yml",
 "messages_l_english.yml",

@@ -2,7 +2,7 @@ local cn_path = "../cn/localisation/english/"
 local fr_path = "../cn/localisation/french/"
 
 local function french(filename)
-	local f = io.open(fr_path .. filename , "wb")
+	local f = io.open(fr_path .. filename:gsub("_english", "_french") , "wb")
 	local replace
 	for line in io.lines(cn_path .. filename) do
 		if not replace then

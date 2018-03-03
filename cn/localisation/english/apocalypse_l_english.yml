@@ -30,7 +30,7 @@
  is_not_hostile:0 "§R$TRIGGER_FAIL$目标未被敌对帝国占领§!"
  is_unpopulated:0 "§R$TRIGGER_FAIL$目标无人居住§!"
  is_not_hostile_cracker:0 "目标属于敌对§H帝国§!"
- not_barren_molten_frozen_toxic_test_fire:1 "目标是§Y$pc_barren$§!，§Y$pc_molten$§!，§Y$pc_frozen$§!，或§Y$pc_toxic$§!试射目标"
+ not_barren_molten_frozen_toxic_test_fire:2 §YHabitable§!，"目标是§Y$pc_barren$§!，§Y$pc_molten$§!，§Y$pc_frozen$§!，或§Y$pc_toxic$§!试射目标"
  not_owned_test_fire:0 "目标是一个§Y己方殖民地§!试射目标"
  primitives_not_in_borders:0 "§R$TRIGGER_FAIL$原始文明目标不在我方边境线内§!"
  no_assimilatable_pops:0 "§R$TRIGGER_FAIL$目标没有适合纳米植入的人口§!"
@@ -232,7 +232,8 @@
  requires_starfortress:0 "§R需要§Y$starbase_starfortress$§!升级。§!"
  requires_citadel:0 "§R需要§Y$starbase_citadel$§!升级。§!"
  
- requires_colonized_planet:0 "§R需要星系中有一个已移民的行星或§Y贸易飞地§!。§!"
+ requires_colonized_planet:0 "需要在星系中拥有一个行星。"
+ requires_trade_planet: "§R需要星系中有一个已移民的行星或§Y贸易飞地§!。§!"
  requires_black_hole:0 "§R需要星系中有一个§Y$pc_black_hole$§!。§!"
  requires_nebula:0 "§R需要星系位于一个§Y星云§!内部§!"
  requires_curator:0 "§R需要星系中有一个§Y典藏研究所飞地§!。§!"
@@ -264,6 +265,7 @@
 
  FLEET_MANAGER_VIEW:0 "舰队管理器"
  FLEET_MANAGER_SHIP_DESIGN_COUNT:0 "$FLEET_COUNT$/$TEMPLATE_COUNT$"
+ FLEET_MANAGER_SHIP_DESIGN_UPGRADABLE_COUNT: "£fleet_status|2 $FLEET_COUNT|Y$/$TEMPLATE_COUNT$"
  FLEET_MANAGER_SHIP_DESIGN_COUNT_FULL:0 "$TEMPLATE_COUNT$"
  FLEET_MANAGER_SHIP_OFFENSIVE_POWER:1 "£military_power $FLEET_POWER$/$TEMPLATE_POWER$"
  FLEET_MANAGER_SHIP_OFFENSIVE_POWER_FULL:0 "£military_power $TEMPLATE_POWER$"
@@ -284,9 +286,9 @@
  topbar_button_fleet_manager_name:0 "$FLEET_MANAGER_VIEW$"
  topbar_button_fleet_manager_instant:0 "§H$FLEET_MANAGER_VIEW$§!"
  topbar_button_fleet_manager_delayed:0 "§E开启$FLEET_MANAGER_VIEW$.§!"
- FLEET_MANAGER_DELETE_TEMPLATE:0 "§H删除模板§!§G点击删除此模板§!"
- FLEET_MANAGER_DELETE_TEMPLATE_DIALOG_TITLE:0 "$FLEET_MANAGER_DELETE_TEMPLATE$"
- FLEET_MANAGER_DELETE_TEMPLATE_DIALOG_DESC:0 "§G删除此模板将使得与之相关的所有舰队都被遣散。§!"
+ FLEET_MANAGER_DELETE_TEMPLATE:1 "§H删除模板§!§G点击删除此模板并解散与之关联的舰队和船只§!"
+ FLEET_MANAGER_DELETE_TEMPLATE_DIALOG_TITLE:1 "删除模板"
+ FLEET_MANAGER_DELETE_TEMPLATE_DIALOG_DESC:1 "你想删除此模板？\n\n§R警告：删除此模板将解散与之关联的舰队和船只。§!"
  FLEET_MANAGER_FLEET_NAME_FORMAT:0 "£military_ship $FLEET$"
  FLEET_MANAGER_NO_TEMPLATE_SELECTED_HINT:0 "§E未选择模板§!"
  DISBAND_FM:0 "§H解散§!§G点击以解散此舰队§!"
@@ -446,8 +448,8 @@
  crisis.51.2.name:0 "哨兵崛起"
  sentinel_fleet_gift:0 "一艘哨兵飞船出现在[Root.Capital.GetName]附近，并交由你控制。"
 
- pirate.6.desc:0 "少量的成员发生了罕见的基因突变，可使其部分与主宰的断开精神链接而不会陷入昏迷。由于这些离群的成员离开主宰太远就会灭亡，所以它们在我们边境附近建立巢穴。它们打算在那里以海盗的方式继续生活，用他们粗劣的小型船只来袭击我们的空域。"
- pirate.7.desc:0 "一小群故障的单元将自身从[Root.GetName]的主核心失联，并藏身于我们的边境外围。这些单元已经无法修复了，现在它们用粗劣的飞船袭击我们的空域，以获取零件与资源。"
+ pirate.6.desc:1 "少量的成员发生了罕见的基因突变，可使其部分与主宰的断开精神链接而不会陷入昏迷。由于这些离群的成员离开主宰太远就会灭亡，所以它们在我们边境附近的§H[pirate_system.GetName]§! 星系建立巢穴。它们打算在那里以海盗的方式继续生活，用他们粗劣的小型船只来袭击我们的空域。"
+ pirate.7.desc:1 "一小群故障的单元将自身从[Root.GetName]的主核心失联，并藏身于我们的边境外围的§H[pirate_system.GetName]§!星系。这些单元已经无法修复了，现在它们用粗劣的飞船袭击我们的空域，以获取零件与资源。"
  pirate.50.name:0 "发现海盗！"
  pirate.50.a.desc:0 "无法无天的§H[pirate_system.GetName]§!星系已经聚集了越来越多的海盗，走私者以及其他各种不法分子。这些法外之徒盘踞在文明空间的范围之外，但他们经常踏入我们的星系寻找牺牲者。"
  pirate.50.b.desc:0 "一群海盗已经盘踞了无人居住的§H[pirate_system.GetName]§!星系，并处于我们的控制之外。他们正利用这不受法律约束的星系作为基地，来袭击我们的空间！"
@@ -549,3 +551,5 @@
 
  action.91.name:0 "重建哨站！"
  action.91.desc:0 "我们已经重新夺回了对§Y[Root.GetStarName]§!星系的控制权，在恒星轨道重建了我们的§Y$starbase_outpost$§!。"
+
+ DAILY_PROGRESS: "每日进程 $VAL|Y$"

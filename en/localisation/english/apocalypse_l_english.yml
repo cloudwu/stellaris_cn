@@ -30,7 +30,7 @@
  is_not_hostile:0 "§R$TRIGGER_FAIL$Target is not owned by a hostile Empire§!"
  is_unpopulated:0 "§R$TRIGGER_FAIL$Target is unpopulated§!"
  is_not_hostile_cracker:0 "Target is owned by a hostile §HEmpire§!"
- not_barren_molten_frozen_toxic_test_fire:1 "Target is a §Y$pc_barren$§!, §Y$pc_molten$§!, §Y$pc_frozen$§!, or §Y$pc_toxic$§! test fire target"
+ not_barren_molten_frozen_toxic_test_fire:2 "Target is a §YHabitable§!, §Y$pc_barren$§!, §Y$pc_molten$§!, §Y$pc_frozen$§!, or §Y$pc_toxic$§! test fire target"
  not_owned_test_fire:0 "Target is an §Yowned colony§! test fire target"
  primitives_not_in_borders:0 "§R$TRIGGER_FAIL$Primitive target is not within our borders§!"
  no_assimilatable_pops:0 "§R$TRIGGER_FAIL$Target does not house any Pops suitable for cybernetic assimilation§!"
@@ -232,7 +232,8 @@
  requires_starfortress:0 "§RRequires §Y$starbase_starfortress$§! upgrade.§!"
  requires_citadel:0 "§RRequires §Y$starbase_citadel$§! upgrade.§!"
  
- requires_colonized_planet:0 "§RRequires a colonized planet or a §YTrader Enclave§! in the system.§!"
+ requires_colonized_planet:0 "§RRequires an owned planet in the system.§!"
+ requires_trade_planet: "§RRequires a colonized planet or a §YTrader Enclave§! in the system.§!"
  requires_black_hole:0 "§RRequires a §Y$pc_black_hole$§! in the system.§!"
  requires_nebula:0 "§RRequires the system to be inside a §YNebula§!.§!"
  requires_curator:0 "§RRequires a §YCurator Enclave§! in the system.§!"
@@ -264,6 +265,7 @@
 
  FLEET_MANAGER_VIEW:0 "Fleet Manager"
  FLEET_MANAGER_SHIP_DESIGN_COUNT:0 "$FLEET_COUNT$/$TEMPLATE_COUNT$"
+ FLEET_MANAGER_SHIP_DESIGN_UPGRADABLE_COUNT: "£fleet_status|2 $FLEET_COUNT|Y$/$TEMPLATE_COUNT$"
  FLEET_MANAGER_SHIP_DESIGN_COUNT_FULL:0 "$TEMPLATE_COUNT$"
  FLEET_MANAGER_SHIP_OFFENSIVE_POWER:1 "£military_power $FLEET_POWER$/$TEMPLATE_POWER$"
  FLEET_MANAGER_SHIP_OFFENSIVE_POWER_FULL:0 "£military_power $TEMPLATE_POWER$"
@@ -284,9 +286,9 @@
  topbar_button_fleet_manager_name:0 "$FLEET_MANAGER_VIEW$"
  topbar_button_fleet_manager_instant:0 "§H$FLEET_MANAGER_VIEW$§!"
  topbar_button_fleet_manager_delayed:0 "§EOpens the $FLEET_MANAGER_VIEW$.§!"
- FLEET_MANAGER_DELETE_TEMPLATE:0 "§HDelete Template§!\n§GClick to delete this template§!"
- FLEET_MANAGER_DELETE_TEMPLATE_DIALOG_TITLE:0 "$FLEET_MANAGER_DELETE_TEMPLATE$"
- FLEET_MANAGER_DELETE_TEMPLATE_DIALOG_DESC:0 "§GDelete this template, this will also disband any fleet associated with it.§!"
+ FLEET_MANAGER_DELETE_TEMPLATE:1 "§HDelete Template§!\n§GClick to delete this template and disband any fleet and ships associated with it§!"
+ FLEET_MANAGER_DELETE_TEMPLATE_DIALOG_TITLE:1 "Delete Template"
+ FLEET_MANAGER_DELETE_TEMPLATE_DIALOG_DESC:1 "Do you wish to delete this template?\n\n§RWARNING: Deleting a template will also disband any fleet and ships associated with said template.§!"
  FLEET_MANAGER_FLEET_NAME_FORMAT:0 "£military_ship $FLEET$"
  FLEET_MANAGER_NO_TEMPLATE_SELECTED_HINT:0 "§ENo template selected§!"
  DISBAND_FM:0 "§HDisband§!\n§GClick to disband this fleet§!"
@@ -446,8 +448,8 @@
  crisis.51.2.name:0 "Rise of the Sentinels"
  sentinel_fleet_gift:0 "A Sentinel fleet appears near [Root.Capital.GetName] and is transferred over to your control."
 
- pirate.6.desc:0 "A rare genetic mutation present in a small number of drones has allowed them to partly sever their connection to the Mind without being rendered comatose. As these rogue drones would perish if they ventured too far from the Mind's influence, they have established a lair near our borders. From there they intend to sustain themselves by living as pirates, using their small fleet of crude spacecraft to raid our space."
- pirate.7.desc:0 "A small group of malfunctioning units have separated themselves from the main intelligence of the [Root.GetName], and sought refuge on the periphery of our space. These units have become irredeemably corrupted, and they now use crude spacecraft to raid our space for spare parts and resources."
+ pirate.6.desc:1 "A rare genetic mutation present in a small number of drones has allowed them to partly sever their connection to the Mind without being rendered comatose. As these rogue drones would perish if they ventured too far from the Mind's influence, they have established a lair in the §H[pirate_system.GetName]§! system, near our borders. From there they intend to sustain themselves by living as pirates, using their small fleet of crude spacecraft to raid our space."
+ pirate.7.desc:1 "A small group of malfunctioning units have separated themselves from the main intelligence of the [Root.GetName], and sought refuge in the §H[pirate_system.GetName]§! system, on the periphery of our space. These units have become irredeemably corrupted, and they now use crude spacecraft to raid our space for spare parts and resources."
  pirate.50.name:0 "Pirates Sighted!"
  pirate.50.a.desc:0 "The lawless §H[pirate_system.GetName]§! system has become a safe haven for an increasing number of pirates, smugglers and various other criminal elements. These outlaws are based beyond the current boundaries of civilized space, but they frequently venture into our systems in search of victims."
  pirate.50.b.desc:0 "A roving band of pirates has settled down in the uninhabited §H[pirate_system.GetName]§! system, which lies outside of our control. They are using this lawless system as a base from which to raid our space! "
@@ -549,3 +551,6 @@
 
  action.91.name:0 "Outpost Rebuilt!"
  action.91.desc:0 "We have once again gained control of the §Y[Root.GetStarName]§! system and rebuilt our §Y$starbase_outpost$§! in orbit around the star."
+
+ DAILY_PROGRESS: "Daily Progress $VAL|Y$"
+ 

@@ -24,6 +24,7 @@
  SYSTEM_IS_RESTRICTED: "§RSystem Restricted§!\nOur fleets will avoid traveling through $SYSTEM|Y$."
  SYSTEM_NOT_RESTRICTED:0 "§GSystem Not Restricted§!\nOur fleets may freely travel through $SYSTEM|Y$."
  SYSTEM_RESTRICTION_TOOLTIP:0 "§EClick to toggle the restriction status of $SYSTEM|Y$. Systems that are set as restricted will always be avoided by our fleets.§!"
+
  
  fleet_force_disparity_effect:0 "Force Disparity"
  
@@ -32,6 +33,9 @@
  
  STARBASE_COMPONENT_SLOT_AVAILABLE:0 "This Starbase has unused Module/Building slots."
  STARBASE_PLATFORM_UPGRADE_AVAILABLE:0 "This Starbase has Defense Platforms that can be upgraded."
+ 
+ piracy_risk: "Piracy Risk"
+ PIRACY_LABEL: "$piracy_risk$:"
 
  STATION:0 "Station"
  TRIGGER_PASS:1 "£trigger_yes "
@@ -431,6 +435,7 @@
  YELLOW_COLOR:0 "$KEY|Y$"
  ENEMY:0 " (Hostile)"
  BASE:0 "Base"
+ PERCENT: "$PERC|%0$"
  BASE_VALUE:0 "Base: $VALUE|Y1$"
  BASE_PERCENT:0 "Base: $VALUE|0%Y$"
  POPS_VALUE:0 "From Pops: $VALUE$"
@@ -1478,6 +1483,7 @@
  COUNTRY_NO_DIPLOMACY:0 "This civilization is incapable of participating in diplomacy."
  COUNTRY_FLAG_TOOLTIP_LEFT_CLICK:0 "§GClick to open Diplomacy§!"
  COUNTRY_FLAG_TOOLTIP_LEFT_CLICK_OWN_FLAG:0 "§GClick to open $GOVERNMENT_VIEW$§!"
+ COUNTRY_FLAG_TOOLTIP_LEFT_CLICK_OWN_SYSTEM: "§GClick to cycle between colonies in $SYSTEM$§!"
  COUNTRY_FLAG_TOOLTIP_RIGHT_CLICK:0 "§GRight-click to Go To $HOME|H$ (Homeworld)§!"
  EVENT_OPTION_EFFECT_DESC:0 "$NAME|H$:\n--------------\n$EFFECTS$"
 
@@ -7659,7 +7665,7 @@
  civic_barbaric_despoilers:0 "Barbaric Despoilers"
  civic_barbaric_despoilers_desc:0 "This society holds few things sacred. To fight is to live, and the strongest may seize whatever they covet."
  
- civic_tooltip_inward_perfection_effects:1 "Cannot have §HRivals§!\nCannot form §HDefensive Pacts§!\nCannot form §HMigration Treaties§!\nCannot §HGuarantee Independence§!\nCannot join §HFederations§!\nCan only have §HTributary§! subjects\nCannot §HInfiltrate§! primitives\n£unity  §Y$country_resource_unity_mult$§! increased by §G+20%§!\n£pops  §YPop $MOD_POP_GROWTH_SPEED$§! increased by §G+25%§!\n£happiness  §Y$MOD_POP_CITIZEN_HAPPINESS$§! increased by §G+5%§!\n§Y$MOD_COUNTRY_EDICT_LENGTH_MULT$§! increased by §G+10%§!"
+ civic_tooltip_inward_perfection_effects:2 "Cannot have §HRivals§!\nCannot form §HDefensive Pacts§!\nCannot form §HMigration Treaties§!\nCannot §HGuarantee Independence§!\nCannot join §HFederations§!\nCan only have §HTributary§! subjects\nCannot §HInfiltrate§! primitives\n£unity  §Y$country_resource_unity_mult$§! increased by §G+20%§!\n£pops  §Y$MOD_POP_GROWTH_SPEED$§! increased by §G+25%§!\n£happiness  §Y$MOD_POP_CITIZEN_HAPPINESS$§! increased by §G+5%§!\n§Y$MOD_COUNTRY_EDICT_LENGTH_MULT$§! increased by §G+10%§!"
  civic_tooltip_feudal_realm_effects:2 "The effects of §YSubject Power§! on relations is reduced by §Y50%§!, but all Subjects are allowed to expand into unclaimed systems"
  civic_tooltip_agrarian_idyll_effects:1 "£building  §YFarms§! also produce §Y1§! £unity  Unity"
  civic_tooltip_mechanists_effects:6 "Start the game with §Y2§! £pop  Pops being robots, and with the technology to build more\n§Y$MOD_POP_ROBOT_UPKEEP_MULT$§! reduced by §G-5%§!"
@@ -8719,6 +8725,10 @@
  alert_unrest_instruction:0 "§GClick to cycle between planets§!"
  alert_high_war_exhaustion_title:0 "High War Exhaustion"
  alert_high_war_exhaustion_instant:1 "We have reached §R100%§! War Exhaustion in at least one of our wars.\n\nUntil we make peace, our §YInfluence§! and §YUnity§! gain will be reduced to §R0§! and we will suffer the following penalties:"
+ alert_high_piracy_risk_title: "High $piracy_risk$"
+ alert_high_piracy_risk_instant: "Our §Y$piracy_risk$§! is currently at $RISK|%0R$\n\nHaving a high §Y$piracy_risk$§! makes Pirates more likely to spawn near our borders."
+ alert_high_piracy_risk_effects: "It also has the following effects:"
+ alert_high_piracy_risk_delayed: "§E$piracy_risk$ is caused by bordering systems that are not controlled by any galactic power. It is reduced by having a contigious empire and by upgrading Starbases.§!"
  high_war_exhaustion: "High War Exhaustion"
  NO_GAIN_HIGH_WAR_EXHAUSTION: "§R$high_war_exhaustion$§! is reducing $RESOURCE$ gain to §R0§!"
 
@@ -9335,7 +9345,7 @@
  feature_terraform_inhabited:0 "Ecological Adaptation"
  feature_terraform_inhabited_desc:0 "Allows us to terraform inhabited planets."
  feature_assist_research:0 "Assist Research"
- feature_assist_research_desc:1 "Allows our Science Ship to assist with the research on a colony. \n\n$feature_assist_research$ $PLANET_MODIFIER$:"
+ feature_assist_research_desc:2 "Allows §YScience Ships§! to §YAssist Research§! on colonies, increasing planetary research production by an amount determined by the skill of the commanding Scientist."
  feature_xeno_integration:0 "Xeno Integration"
  feature_xeno_integration_desc:1 "Allows us to grant Full Citizenship rights to alien species."
  feature_spaceport_level_2:0 "Spaceport Level II"

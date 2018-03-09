@@ -25,6 +25,7 @@
  SYSTEM_NOT_RESTRICTED:0 "§G星系行动自由§!\n我们的船队可自由通过$SYSTEM|Y$。"
  SYSTEM_RESTRICTION_TOOLTIP:0 "§E点击切换$SYSTEM|Y$星系的管制状态。我们的船队将回避设为管制状态的星系。§!"
  
+
  fleet_force_disparity_effect:0 "实力差距"
  
  feature_war_doctrines:0 "战争学说"
@@ -32,6 +33,9 @@
  
  STARBASE_COMPONENT_SLOT_AVAILABLE:0 "太空基地有未用的模块或建筑槽。"
  STARBASE_PLATFORM_UPGRADE_AVAILABLE:0 "太空基地有可升级的防御平台。"
+
+ piracy_risk: "海盗风险"
+ PIRACY_LABEL: "$piracy_risk$:"
 
  STATION:0 "基地"
  TRIGGER_PASS:1 "£trigger_yes "
@@ -431,6 +435,7 @@
  YELLOW_COLOR:0 "$KEY|Y$"
  ENEMY:0 "（敌对）"
  BASE:0 "基础值"
+ PERCENT: "$PERC|%0$"
  BASE_VALUE:0 "基础值：$VALUE$"
  BASE_PERCENT:0 "基础值：$VALUE|0%Y$"
  POPS_VALUE:0 "来自人口：$VALUE$"
@@ -1478,6 +1483,7 @@
  COUNTRY_NO_DIPLOMACY:0 "此文明尚不能参与外交。"
  COUNTRY_FLAG_TOOLTIP_LEFT_CLICK:0 "§G点击开启外交界面§!"
  COUNTRY_FLAG_TOOLTIP_LEFT_CLICK_OWN_FLAG:0 "§G点击开启$GOVERNMENT_VIEW$§!"
+ COUNTRY_FLAG_TOOLTIP_LEFT_CLICK_OWN_SYSTEM: "§G点击循环切换 $SYSTEM$ 内的殖民地§!"
  COUNTRY_FLAG_TOOLTIP_RIGHT_CLICK:0 "§G右击前往$HOME|H$（母星）§!"
  EVENT_OPTION_EFFECT_DESC:0 "$NAME|H$:\n--------------\n$EFFECTS$"
 
@@ -7659,7 +7665,7 @@
  civic_barbaric_despoilers:0 "野蛮掠夺者"
  civic_barbaric_despoilers_desc:0 "这个群体几乎没有信仰，对他们来说，战斗就是生存，胜者可以得到一切。 "
  
- civic_tooltip_inward_perfection_effects:1 "无法拥有§H宿敌§!\n无法签订§H防御条约§!\n无法签订§H移民条约§!\n无法§H保证独立§!\n无法加入§H联邦§!\n只能拥有§H藩属国§!附属\n无法§H渗透§!原始文明\n£unity §Y$country_resource_unity_mult$§!增加§G+20%§!\n£pops  §Y人口$MOD_POP_GROWTH_SPEED$§!增加§G+25%§!\n£happiness  §Y$MOD_POP_CITIZEN_HAPPINESS$§! 增加§G+5%§!\n§Y$MOD_COUNTRY_EDICT_LENGTH_MULT$§! 增加§G+10%§!"
+ civic_tooltip_inward_perfection_effects:1 "无法拥有§H宿敌§!\n无法签订§H防御条约§!\n无法签订§H移民条约§!\n无法§H保证独立§!\n无法加入§H联邦§!\n只能拥有§H藩属国§!附属\n无法§H渗透§!原始文明\n£unity §Y$country_resource_unity_mult$§!增加§G+20%§!\n£pops  §Y$MOD_POP_GROWTH_SPEED$§!增加§G+25%§!\n£happiness  §Y$MOD_POP_CITIZEN_HAPPINESS$§! 增加§G+5%§!\n§Y$MOD_COUNTRY_EDICT_LENGTH_MULT$§! 增加§G+10%§!"
  civic_tooltip_feudal_realm_effects:2 "§Y附属国实力§!对关系的影响减少§G50%§!，但所有附属国可以对未宣称所有权的星系殖民。"
  civic_tooltip_agrarian_idyll_effects:1 "£building §Y水培农场§!额外产出§Y1§!£unity 凝聚力。"
  civic_tooltip_mechanists_effects:6 "以能建造机器人的科技开始游戏，并有§Y2§!£pop 起始人口替换为机器人。\n§Y$MOD_POP_ROBOT_UPKEEP_MULT$§!减少§G-5%§!。"
@@ -8719,6 +8725,10 @@
  alert_unrest_instruction:0 "§G点击以循环查看星球§!"
  alert_high_war_exhaustion_title:0 "战争之殇程度高"
  alert_high_war_exhaustion_instant:1 "We have reached §R100%§! War Exhaustion in at least one of our wars.\n\nUntil we make peace, our §YInfluence§! and §YUnity§! gain will be reduced to §R0§! and we will suffer the following penalties:"
+ alert_high_piracy_risk_title: "高$piracy_risk$"
+ alert_high_piracy_risk_instant: "Our §Y$piracy_risk$§! is currently at $RISK|%0R$\n\nHaving a high §Y$piracy_risk$§! makes Pirates more likely to spawn near our borders."
+ alert_high_piracy_risk_effects: "It also has the following effects:"
+ alert_high_piracy_risk_delayed: "§E$piracy_risk$ is caused by bordering systems that are not controlled by any galactic power. It is reduced by having a contigious empire and by upgrading Starbases.§!"
  high_war_exhaustion: "High War Exhaustion"
  NO_GAIN_HIGH_WAR_EXHAUSTION: "§R$high_war_exhaustion$§! is reducing $RESOURCE$ gain to §R0§!"
 
@@ -9335,7 +9345,7 @@
  feature_terraform_inhabited:0 "生态适应"
  feature_terraform_inhabited_desc:0 "允许我们改造已殖民行星的环境。"
  feature_assist_research:0 "辅助研究"
- feature_assist_research_desc:1 "允许我们的科研船协助殖民地的研究。\n\n$feature_assist_research$ $PLANET_MODIFIER$："
+ feature_assist_research_desc:2 "允许§Y科研船§在殖民地上进行§Y辅助研究§，根据执行科学家的技能等级增加地面科研产量。"
  feature_xeno_integration:0 "异族整合"
  feature_xeno_integration_desc:1 "允许我们赋予所有种族完整公民权。"
  feature_spaceport_level_2:0 "太空港等级 II"

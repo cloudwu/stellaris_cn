@@ -1,0 +1,132 @@
+﻿l_english:
+
+ ####################################
+ #	COMMON STRINGS
+ ####################################
+
+ mandate_unity_reward:0 "£unity  §G(50 - 1000)§!"
+
+ ####################################
+ #	MANDATES
+ ####################################
+
+ MANDATE_mandate_planet_separatist:0 "Separatist Sympathizer"
+ MANDATE_mandate_planet_separatist_DESC:1 "Release [Root.GetPopFactionName] as an independent empire.\n\nReward:\n$mandate_influence_reward_t3$"
+ MANDATE_mandate_emancipation:0 "Great Emancipator"
+ MANDATE_mandate_emancipation_DESC:1 "Eliminate the practice of slavery from the [Root.Owner.GetName].\n\nReward:\n$mandate_influence_reward_t3$\n$mandate_happiness_reward_t1$"
+ MANDATE_mandate_emancipation2:0 "Populist Emancipator"
+ MANDATE_mandate_emancipation2_DESC:1 "Free all slaves on at least one [Root.Owner.GetSpeciesAdj] world.\n\nReward:\n$mandate_influence_reward_t3$\n$mandate_happiness_reward_t1$"
+ MANDATE_mandate_orbital_researcher:0 "Orbital Researcher"
+ MANDATE_mandate_orbital_researcher_DESC:1 "Strengthen the [Root.Owner.GetName]'s research output by beginning construction of at least 4 new orbital research stations.\n\nReward:\n$mandate_influence_reward_t5$"
+ MANDATE_mandate_miner:0 "Off-World Miner"
+ MANDATE_mandate_miner_DESC:1 "Bolster the [Root.Owner.GetName]'s mineral stockpiles by constructing at least four new orbital mining stations.\n\nReward:\n$mandate_influence_reward_t5$"
+ MANDATE_mandate_shipwright:0 "Shipwright"
+ MANDATE_mandate_shipwright_DESC:2 "Ensure the safety and security of the [Root.Owner.GetSpeciesAdj] people by maintaining a fleet that's using at least 75% of our total Naval Capacity by the end of their reign.\n\nReward:\n$mandate_influence_reward_t5$"
+ MANDATE_mandate_peacemaker:0 "Peacemaker"
+ MANDATE_mandate_peacemaker_DESC:1 "Stand down from any and all wars the [Root.Owner.GetName] is involved in, by the end of their reign.\n\nReward:\n$mandate_influence_reward_t5$"
+ MANDATE_mandate_slaver:0 "Slaver"
+ MANDATE_mandate_slaver_DESC:1 "Ensure the continued prosperity of the [Root.Owner.GetName] by legalizing slavery.\n\nReward:\n$mandate_influence_reward_t2$"
+ MANDATE_mandate_xenopurger:0 "Xenopurger"
+ MANDATE_mandate_xenopurger_DESC:1 "Purge the alien menace that lives amongst us from §Yat least one colony§! during their reign.\n\nReward:\n$mandate_influence_reward_t2$\n$mandate_happiness_reward_t1$"
+ MANDATE_mandate_nationalist:0 "Repatriator"
+ MANDATE_mandate_nationalist_DESC:1 "Return the planets belonging to the §Y[parameter:country.GetName]§!.\n\nReward:\n$mandate_influence_reward_t3$"
+
+ ####################################
+ #	MANDATE CHAINS
+ ####################################
+
+ mandate_miner_chain_title:0 "Miner Mandate"
+ mandate_miner_chain_desc:3 "[This.GetRulerTitle] [This.GetRulerName] was elected on a platform of increasing £minerals §YMineral output§! by building §YMining Stations§! in orbit around suitable planetoids.\n\nReward:\n$mandate_unity_reward$"
+ mining_stations_built:0 "Mining Stations Built"
+
+ mandate_orbresearch_chain_title:0 "Orbital Research Mandate"
+ mandate_orbresearch_chain_desc:3 "[This.GetRulerTitle] [This.GetRulerName] was elected on a platform of increasing §YResearch output§! by building §YResearch Stations§! in orbit around suitable planets.\n\nReward:\n$mandate_unity_reward$"
+ orbresearch_built:0 "Research Stations Built"
+
+ mandate_xenopurge_chain_title:0 "Xenopurge Mandate"
+ mandate_xenopurge_chain_desc:2 "[This.GetRulerTitle] [This.GetRulerName] was elected on a platform of §YPurging§! §H[purge_planet.GetName]§! of all §Ynon-[Root.GetSpeciesAdj] Pops§!.\n\nReward:\n$mandate_influence_reward_t2$\n$mandate_happiness_reward_t1$"
+ world_purged:0 "World Purged"
+
+ mandate_shipwright_chain_title:0 "Shipwright Mandate"
+ mandate_shipwright_chain_desc:2 "[This.GetRulerTitle] [This.GetRulerName] was elected on a platform of increasing military spending, guaranteeing that we are §Yat least using 75% of our Naval Capacity by the end of their reign§!.\n\nReward:\n$mandate_influence_reward_t2$"
+ military_presence_maintained:0 "Mandate Fulfilled"
+
+ mandate_fiscal_reserve_chain_title:0 "Fiscal Reserve Mandate"
+ mandate_fiscal_reserve_chain_desc:1 "[This.GetRulerTitle] [This.GetRulerName] was elected on a platform of §Ythrift§! and §Ycarefully deliberated spending§!, guaranteeing that the §H[Root.GetName]§! will enjoy reserves of §Yat least £energy 1000§! Energy Credits §Yby the end of their reign§!."
+
+ mandate_emancipation_chain_title:0 "Great Emancipation Mandate"
+ mandate_emancipation_chain_desc:2 "[This.GetRulerTitle] [This.GetRulerName] was elected on a platform of §Yabolishing slavery§!, promising to make the practice §Yillegal§! during their reign.\n\nReward:\n$mandate_influence_reward_t3$\n$mandate_happiness_reward_t1$"
+ mandate_fulfilled:0 "Mandate Fulfilled"
+
+ mandate_emancipation2_chain_title:0 "Populist Emancipation Mandate"
+ mandate_emancipation2_chain_desc:2 "[This.GetRulerTitle] [This.GetRulerName] was elected on a platform of §Yfreeing all slaves§! on planet §H[free_planet.GetName]§! at some point during their reign.\n\nReward:\n$mandate_influence_reward_t3$\n$mandate_happiness_reward_t1$"
+ planet_freed:0 "Planet Freed"
+
+ mandate_separatist_chain_title:0 "Separatist Mandate"
+ mandate_separatist_chain_desc:2 "[This.GetRulerTitle] [This.GetRulerName] was elected on a platform of §Yreleasing§! the planet of §H[release_planet.GetName]§! as an Independent Empire. Consult the §YFactions list§! for details.\n\nReward:\n$mandate_influence_reward_t3$"
+ empire_released:0 "Empire Released"
+
+ mandate_peacemaker_chain_title:0 "Peacemaker Mandate"
+ mandate_peacemaker_chain_desc:2 "[This.GetRulerTitle] [This.GetRulerName] was elected on a platform of §Yending [Root.GetSpeciesAdj] involvement§! in all wars by the end of their reign.\n\nReward:\n$mandate_influence_reward_t2$"
+ no_engagements:0 "All Hostilities Ceased"
+
+ mandate_slaver_chain_title:0 "Slaver Mandate"
+ mandate_slaver_chain_desc:2 "[This.GetRulerTitle] [This.GetRulerName] was elected on a platform of §Yenslaving§! at least §Y5 Pops§! by the end of their reign.\n\nReward:\n$mandate_influence_reward_t2$"
+ pops_enslaved:0 "Pops Enslaved"
+
+ mandate_nationalist_chain_title:0 "Repatriator Mandate"
+ mandate_nationalist_chain_desc:2 "[This.GetRulerTitle] [This.GetRulerName] was elected on a platform of §Yceding§! the colonies belonging to the §H[ceding_empire.GetName]§! by the end of their reign. This action can be taken in the factions list.\n\nReward:\n$mandate_influence_reward_t3$"
+ planet_ceded:0 "Planet Ceded"
+
+ ####################################
+ #	MANDATE EVENTS
+ ####################################
+
+ mandate.1.title:0 "New Ruler Mandate"
+ mandate.1.desc:0 "[Root.GetRulerName] has been elected as §Y[Root.GetRulerTitle]§! of the §H[Root.GetName]§!.\n\nConsult the §YSituation Log§! for details on their §YMandate§!."
+ mandate.2.title:0 "Mandate Unfulfilled"
+ mandate.2.desc:1 "Our [Root.GetRulerTitle]'s reign has come to an end, with their election campaign promises unfulfilled."
+
+ # Separatist
+ mandate.100.title:0 "Separatist Sympathizer Mandate Fulfilled"
+ mandate.100.desc:0 "As per [Root.GetRulerTitle] [Root.GetRulerName]'s mandate, §H[released_planet.GetName]§! has been released as an empire §Yvassalized§! to the §H[Root.GetName].§!"
+
+ # Miner
+ mandate.111.title:0 "Miner Mandate Fulfilled"
+ mandate.111.desc:0 "As per [Root.GetRulerTitle] [Root.GetRulerName]'s mandate, additional mining stations have been constructed."
+
+ # Orbital Researcher
+ mandate.121.title:0 "Orbital Researcher Mandate Fulfilled"
+ mandate.121.desc:0 "As per [Root.GetRulerTitle] [Root.GetRulerName]'s mandate, additional research stations have been constructed."
+
+ # Xenopurger
+ mandate.132.title:0 "Xenopurger Mandate Fulfilled"
+ mandate.132.desc:0 "As per [Root.GetRulerTitle] [Root.GetRulerName]'s mandate, the colony on [From.GetName] has been purged of non-[Root.GetSpeciesAdj] elements."
+
+ # Shipwright
+ mandate.141.title:0 "Shipwright Mandate Fulfilled"
+ mandate.141.desc:1 "As per [Root.GetRulerTitle] [Root.GetRulerName]'s mandate, we are currently using at least 75% of our Naval Capacity."
+ mandate.142.title:0 "Mandate Unfulfilled"
+ mandate.142.desc:0 "[Root.GetRulerTitle] [Root.GetRulerName] has failed to achieve their mandated goals within the appropriate timeframe."
+
+ # Emancipator 1
+ mandate.150.title:0 "Great Emancipator Mandate Fulfilled"
+ mandate.150.desc:0 "As per [Root.GetRulerTitle] [Root.GetRulerName]'s mandate, §YSlavery§! is now illegal in the [Root.GetName]."
+
+ # Emancipator 2
+ mandate.155.title:0 "Populist Emancipator Mandate Fulfilled"
+ mandate.155.desc:0 "As per [Root.GetRulerTitle] [Root.GetRulerName]'s mandate, no Pops remain enslaved on [From.GetName]."
+
+ # Peacemaker
+ mandate.161.title:0 "Peacemaker Mandate Fulfilled"
+ mandate.161.desc:0 "As per [Root.GetRulerTitle] [Root.GetRulerName]'s mandate, the §H[Root.GetName]§! is no longer embroiled in any ongoing conflicts."
+ mandate.162.title:0 "Mandate Unfulfilled"
+ mandate.162.desc:0 "[Root.GetRulerTitle] [Root.GetRulerName] has failed to achieve their mandated goals within the appropriate timeframe."
+
+ # Slaver
+ mandate.171.title:0 "Slaver Mandate Fulfilled"
+ mandate.171.desc:0 "As per [Root.GetRulerTitle] [Root.GetRulerName]'s mandate, the §H5 Pops§! have been enslaved."
+
+ # Nationalist
+ mandate.180.title:0 "Repatriator Mandate Fulfilled"
+ mandate.180.desc:0 "As per [Root.GetRulerTitle] §Y[Root.GetRulerName]§!'s mandate, the colonies conquered from have been returned to the §H[ceding_empire.GetName]§!."

@@ -7,8 +7,10 @@
  MESSAGE_BUILDING_CONSTRUCTION_MESSAGE_TYPE_TITLE:2 "Construction Complete"
  MESSAGE_CONSTRUCTION_FINISH:0 "Planet $PLANET|Y$ has finished its construction queue."
  MESSAGE_CONSTRUCTION_FINISH_SPACEPORT:0 "The Spaceport of $PLANET|Y$ has finished its construction queue."
+ MESSAGE_CONSTRUCTION_FINISH_STARBASE:0 "The $SYSTEM|Y$ Starbase has finished its construction queue."
  MESSAGE_ORDER_FINISH_COLONIZE_PLANET:0 "We have established the colony $COLONY|Y$ in the $SYSTEM|Y$ system."
  MESSAGE_SPACEPORT_CONSTRUCTION_MESSAGE_TYPE_TITLE:0 "Construction Complete"
+ MESSAGE_STARBASE_CONSTRUCTION_MESSAGE_TYPE_TITLE:0 "Construction Complete"
  MESSAGE_ARMY_RECRUITMENT_TITLE:0 "Army Recruitment Finished"
  MESSAGE_ARMY_RECRUITMENT:0 "Recruitment of armies has been completed on $PLANET|Y$."
  MESSAGE_POP_CONSTRUCTION_MESSAGE_TYPE_TITLE:0 "$MESSAGE_CONSTRUCTION_MESSAGE_TYPE_TITLE$"
@@ -29,6 +31,8 @@
  MESSAGE_FLEET_ORDER_AUTO_EXPLORE_CANCELLED:0 "§H$FLEET$§! cancelled its Auto Exploration order. It cannot reach or find any other unsurveyed systems."
  FLEET_BUILD_ORDER_CANCELLED_MESSAGE_TYPE_TITLE:0 "$AUTO_EXPLORE_CANCELLED_MESSAGE_TYPE_TITLE$"
  MESSAGE_FLEET_BUILD_ORDER_CANCELLED_MESSAGE:0 "$FLEET|H$ was unable to build a $STATION|H$ in $SYSTEM|H$. Resources have been refunded."
+ MESSAGE_BYPASS_EXPLORED:0 "Wormhole Explored"
+ BYPASS_EXPLORED_MESSAGE:0 "The Wormhole in $SYSTEM1|Y$ has been explored. It connects to the $SYSTEM2|Y$ system."
 
  ####################################
  # Misc Fleet
@@ -38,11 +42,13 @@
  MESSAGE_FLEET_UPGRADE_DONE_MESSAGE_TYPE_TITLE:0 "Fleet Upgraded"
  MESSAGE_UPGRADE_DONE:0 "The $FLEET|Y$ fleet has been fully upgraded."
  MESSAGE_EMERGENCY_FTL_CASUALTIES_TITLE:0 "Emergency FTL Casualties"
- EMERGENCY_FTL_CASUALTIES_DESC:0 "Fleet suffered casualties.\n\nShips lost: $LOST$\nShips critically damaged: $NEAR_LOST$"
+ EMERGENCY_FTL_CASUALTIES_DESC:1 "Fleet suffered casualties.\n\nShips lost: $LOST$\nShip damaged: $NEAR_LOST$"
 
  ####################################
  # Diplomacy
  ####################################
+ RIVALRY_INVALID_TITLE:0 "Rivalry Invalidated"
+ RIVALRY_INVALID_DESC:0 "$COUNTRY|Y$ is no longer a valid rival for our empire"
  MESSAGE_MADE_FIRST_CONTACT_WE:0 "We have encountered the §H$WHO$§! in the §H$STAR$§! system!"
  MESSAGE_MADE_FIRST_CONTACT_THEM:0 "Contact has been established with the §H$WHO$§! in the §H$STAR$§! system!"
  ACTION_DECLARE_WAR_VOTE_PASSED:0 "The §H[Actor.GetAllianceName]§! war declaration vote has passed, and we are now §Yat war§! with the §H[Recipient.GetName]§!!"
@@ -73,70 +79,74 @@
  MESSAGE_TRADE_DEAL_END_SUBJECT_ACCESS_THEM_TITLE:0 "Trade Deal Ended, they became subjects"
  MESSAGE_TRADE_DEAL_END_CANCELLED_TITLE:0 "Trade Deal Canceled"
  MESSAGE_TRADE_DEAL_END_TIMEOUT_TITLE:1 "Trade Deal Duration Expired"
- MESSAGE_CANCEL_SUBJECT_INTEGRATION_TITLE:0 "Integration Cancelled"
+ MESSAGE_CANCEL_SUBJECT_INTEGRATION_TITLE:0 "Integration Canceled"
  ACTION_REQUEST_WAR_PROPOSAL_FAILED_ACTOR:0 "Our war proposal on §H[Third_party.GetName]§! was declined."
- ACTION_REQUEST_WAR_PROPOSAL_FAILED_ALLIANCE:0 "The war proposal from §H[Actor.GetName]§! on §H[Third_party.GetName]§! was declined."
- ACTION_REQUEST_WAR_PROPOSAL_FAILED_RECIPIENT:0 "The war proposal from §H[Actor.GetName]§! on §H[Third_party.GetName]§! was auto declined."
+ ACTION_REQUEST_WAR_PROPOSAL_FAILED_ALLIANCE:0 "The war proposal from §H[Actor.GetName]§! regarding §H[Third_party.GetName]§! was declined."
+ ACTION_REQUEST_WAR_PROPOSAL_FAILED_RECIPIENT:1 "The war proposal from §H[Actor.GetName]§! regarding §H[Third_party.GetName]§! timed out and was auto-declined."
  ACTION_PROPOSE_INVITE_PROPOSAL_FAILED_ACTOR:0 "Our invitation proposal of §H[Third_party.GetName]§! was declined."
  ACTION_PROPOSE_INVITE_PROPOSAL_FAILED_ALLIANCE:0 "The invitation proposal from §H[Actor.GetName]§! on §H[Third_party.GetName]§! was declined."
- ACTION_PROPOSE_INVITE_PROPOSAL_FAILED_RECIPIENT:0 "The invitation proposal from §H[Actor.GetName]§! on §H[Third_party.GetName]§! was auto declined."
- ACTION_OFFER_PEACE_PROPOSAL_FAILED_ACTOR:0 "Our peace offer to §H[Recipient.GetName]§! was auto declined."
- ACTION_OFFER_PEACE_PROPOSAL_FAILED_RECIPIENT:0 "The peace offer from §H[Actor.GetName]§! was auto declined."
- ACTION_FORM_DEFENSIVE_PACT_PROPOSAL_FAILED_ACTOR:0 "Our offer to form a Defensive Pact with §H[Recipient.GetName]§! was auto declined."
- ACTION_FORM_DEFENSIVE_PACT_PROPOSAL_FAILED_RECIPIENT:0 "The offer to form a Defensive Pact with §H[Actor.GetName]§! was auto declined."
- ACTION_FORM_NON_AGGRESSION_PACT_PROPOSAL_FAILED_ACTOR:0 "Our offer to form a Non-Aggression Pact  with §H[Recipient.GetName]§! was auto declined."
- ACTION_FORM_NON_AGGRESSION_PACT_PROPOSAL_FAILED_RECIPIENT:0 "The offer to form a Non-Aggression Pact with §H[Actor.GetName]§! was auto declined."
- ACTION_FORM_MIGRATION_PACT_PROPOSAL_FAILED_ACTOR:0 "Our offer to form a Migration Treaty with §H[Recipient.GetName]§! was auto declined."
- ACTION_FORM_MIGRATION_PACT_PROPOSAL_FAILED_RECIPIENT:0 "The offer to form a Migration Treaty from §H[Actor.GetName]§! was auto declined."
- ACTION_INVITE_TO_ALLIANCE_PROPOSAL_FAILED_ACTOR:0 "Our invitation to §H[Recipient.GetName]§! to the alliance was declined."
- ACTION_INVITE_TO_ALLIANCE_PROPOSAL_FAILED_RECIPIENT:0 "The invite to join an alliance from §H[Actor.GetName]§! was auto declined."
+ ACTION_PROPOSE_INVITE_PROPOSAL_FAILED_RECIPIENT:1 "The invitation proposal from §H[Actor.GetName]§! on §H[Third_party.GetName]§! timed out and was auto-declined."
+ ACTION_OFFER_PEACE_PROPOSAL_FAILED_ACTOR:1 "Our peace offer to §H[Recipient.GetName]§! timed out and was auto-declined."
+ ACTION_OFFER_PEACE_PROPOSAL_FAILED_RECIPIENT:1 "The peace offer from §H[Actor.GetName]§! timed out and was auto-declined."
+ ACTION_OFFER_PEACE_DIPLOMACY_VIEW_PROPOSAL_FAILED_ACTOR:0 "$ACTION_OFFER_PEACE_PROPOSAL_FAILED_ACTOR$" # Should never be shown in-game
+ ACTION_OFFER_PEACE_DIPLOMACY_VIEW_PROPOSAL_FAILED_RECIPIENT:0 "$ACTION_OFFER_PEACE_PROPOSAL_FAILED_RECIPIENT$" # Should never be shown in-game
+ ACTION_MAKE_CLAIMS_DIPLOMACY_VIEW_PROPOSAL_FAILED_ACTOR:0 "Our attempt to make claims on §H[Recipient.GetName]§! timed out and was auto-declined." # Should never be shown in-game
+ ACTION_MAKE_CLAIMS_DIPLOMACY_VIEW_PROPOSAL_FAILED_RECIPIENT:0 "The attempt to make claims by §H[Actor.GetName]§! timed out and was auto-declined." # Should never be shown in-game
+ ACTION_FORM_DEFENSIVE_PACT_PROPOSAL_FAILED_ACTOR:1 "Our offer to form a Defensive Pact with §H[Recipient.GetName]§! timed out and was auto-declined."
+ ACTION_FORM_DEFENSIVE_PACT_PROPOSAL_FAILED_RECIPIENT:1 "The offer to form a Defensive Pact with §H[Actor.GetName]§! timed out and was auto-declined."
+ ACTION_FORM_NON_AGGRESSION_PACT_PROPOSAL_FAILED_ACTOR:1 "Our offer to form a Non-Aggression Pact  with §H[Recipient.GetName]§! timed out and was auto-declined."
+ ACTION_FORM_NON_AGGRESSION_PACT_PROPOSAL_FAILED_RECIPIENT:1 "The offer to form a Non-Aggression Pact with §H[Actor.GetName]§! timed out and was auto-declined."
+ ACTION_FORM_MIGRATION_PACT_PROPOSAL_FAILED_ACTOR:1 "Our offer to form a Migration Treaty with §H[Recipient.GetName]§! timed out and was auto-declined."
+ ACTION_FORM_MIGRATION_PACT_PROPOSAL_FAILED_RECIPIENT:1 "The offer to form a Migration Treaty from §H[Actor.GetName]§! timed out and was auto-declined."
+ ACTION_INVITE_TO_ALLIANCE_PROPOSAL_FAILED_ACTOR:0 "Our invitation to §H[Recipient.GetName]§! to join the alliance was declined."
+ ACTION_INVITE_TO_ALLIANCE_PROPOSAL_FAILED_RECIPIENT:1 "The invite to join an alliance from §H[Actor.GetName]§! timed out and was auto-declined."
  ACTION_KICK_FROM_ALLIANCE_PROPOSAL_FAILED_ACTOR:0 "Our proposal to kick §H[Recipient.GetName]§! from the Alliance was declined."
- ACTION_KICK_FROM_ALLIANCE_PROPOSAL_FAILED_RECIPIENT:0 "The proposal from §H[Actor.GetName]§! to kick us from the Alliance was auto declined."
+ ACTION_KICK_FROM_ALLIANCE_PROPOSAL_FAILED_RECIPIENT:1 "The proposal from §H[Actor.GetName]§! to kick us from the Alliance timed out and was auto-declined."
  ACTION_KICK_FROM_FEDERATION_PROPOSAL_FAILED_ACTOR:0 "Our proposal to kick §H[Recipient.GetName]§! from the Federation was declined."
- ACTION_KICK_FROM_FEDERATION_PROPOSAL_FAILED_RECIPIENT:0 "The proposal from §H[Actor.GetName]§! to kick us from the Federation was auto declined."
- ACTION_INVITE_TO_FEDERATION_PROPOSAL_FAILED_ACTOR:0 "Our invite of §H[Recipient.GetName]§! to alliance was declined."
- ACTION_INVITE_TO_FEDERATION_PROPOSAL_FAILED_RECIPIENT:0 "The invite to alliance from §H[Actor.GetName]§! was auto declined."
+ ACTION_KICK_FROM_FEDERATION_PROPOSAL_FAILED_RECIPIENT:1 "The proposal from §H[Actor.GetName]§! to kick us from the Federation timed out and was auto-declined."
+ ACTION_INVITE_TO_FEDERATION_PROPOSAL_FAILED_ACTOR:0 "Our invite to §H[Recipient.GetName]§! to join the Alliance was declined."
+ ACTION_INVITE_TO_FEDERATION_PROPOSAL_FAILED_RECIPIENT:1 "The invite to join the Alliance from §H[Actor.GetName]§! timed out and was auto-declined."
  ACTION_ASK_FOR_FEDERATION_ASSOCIATION_PROPOSAL_FAILED_ACTOR:0 "Our request for association status with the §H[Recipient.GetAllianceName]§! was declined."
- ACTION_ASK_FOR_FEDERATION_ASSOCIATION_PROPOSAL_FAILED_RECIPIENT:0 "The request from §H[Actor.GetName]§! for association status with the §H[Recipient.GetAllianceName]§! was auto declined."
+ ACTION_ASK_FOR_FEDERATION_ASSOCIATION_PROPOSAL_FAILED_RECIPIENT:1 "The request from §H[Actor.GetName]§! for association status with the §H[Recipient.GetAllianceName]§! timed out and was auto-declined."
  ACTION_DEMAND_VASSALIZATION_PROPOSAL_FAILED_ACTOR:0 "Our demand to vassalize §H[Recipient.GetName]§! was declined."
- ACTION_DEMAND_VASSALIZATION_PROPOSAL_FAILED_RECIPIENT:0 "The demand of vassalization from §H[Actor.GetName]§! was auto declined."
+ ACTION_DEMAND_VASSALIZATION_PROPOSAL_FAILED_RECIPIENT:1 "The demand of vassalization from §H[Actor.GetName]§! timed out and was auto-declined."
  ACTION_DEMAND_PROTECTORATE_PROPOSAL_FAILED_ACTOR:0 "Our offer to give Protectorate status to §H[Recipient.GetName]§! was declined."
- ACTION_DEMAND_PROTECTORATE_PROPOSAL_FAILED_RECIPIENT:0 "The offer of Protectorate status from §H[Actor.GetName]§! was auto declined."
- ACTION_DEMAND_TRIBUTARY_PROPOSAL_FAILED_ACTOR:0 "Our offer to give Tribuatry status to §H[Recipient.GetName]§! was declined."
- ACTION_DEMAND_TRIBUTARY_PROPOSAL_FAILED_RECIPIENT:0 "The offer of Tributuary status from §H[Actor.GetName]§! was auto declined."
+ ACTION_DEMAND_PROTECTORATE_PROPOSAL_FAILED_RECIPIENT:1 "The offer of Protectorate status from §H[Actor.GetName]§! timed out and was auto-declined."
+ ACTION_DEMAND_TRIBUTARY_PROPOSAL_FAILED_ACTOR:0 "Our offer to give Tributary status to §H[Recipient.GetName]§! was declined."
+ ACTION_DEMAND_TRIBUTARY_PROPOSAL_FAILED_RECIPIENT:1 "The offer of Tributary status from §H[Actor.GetName]§! timed out and was auto-declined."
  ACTION_DEMAND_THRALL_PROPOSAL_FAILED_ACTOR:0 "Our offer to give Thrall status to §H[Recipient.GetName]§! was declined."
- ACTION_DEMAND_THRALL_PROPOSAL_FAILED_RECIPIENT:0 "The offer of Thrall status from §H[Actor.GetName]§! was auto declined."
+ ACTION_DEMAND_THRALL_PROPOSAL_FAILED_RECIPIENT:1 "The offer of Thrall status from §H[Actor.GetName]§! timed out and was auto-declined."
  ACTION_DEMAND_DOMINION_PROPOSAL_FAILED_ACTOR:0 "Our offer to give Dominion status to §H[Recipient.GetName]§! was declined."
- ACTION_DEMAND_DOMINION_PROPOSAL_FAILED_RECIPIENT:0 "The offer of Dominion status from §H[Actor.GetName]§! was auto declined."
+ ACTION_DEMAND_DOMINION_PROPOSAL_FAILED_RECIPIENT:1 "The offer of Dominion status from §H[Actor.GetName]§! timed out and was auto-declined."
  ACTION_DEMAND_SIGNATORY_PROPOSAL_FAILED_ACTOR:0 "Our offer to give Signatory status to §H[Recipient.GetName]§! was declined."
- ACTION_DEMAND_SIGNATORY_PROPOSAL_FAILED_RECIPIENT:0 "The offer of Signatory status from §H[Actor.GetName]§! was auto declined."
+ ACTION_DEMAND_SIGNATORY_PROPOSAL_FAILED_RECIPIENT:1 "The offer of Signatory status from §H[Actor.GetName]§! timed out and was auto-declined."
  ACTION_DEMAND_SATELLITE_PROPOSAL_FAILED_ACTOR:0 "Our offer to give Satellite status to §H[Recipient.GetName]§! was declined."
- ACTION_DEMAND_SATELLITE_PROPOSAL_FAILED_RECIPIENT:0 "The offer of Satellite status from §H[Actor.GetName]§! was auto declined."
+ ACTION_DEMAND_SATELLITE_PROPOSAL_FAILED_RECIPIENT:1 "The offer of Satellite status from §H[Actor.GetName]§! timed out and was auto-declined."
  ACTION_ASK_TO_BECOME_VASSALIZED_PROPOSAL_FAILED_ACTOR:0 "Our request to become vassalized by §H[Recipient.GetName]§! was declined."
- ACTION_ASK_TO_BECOME_VASSALIZED_PROPOSAL_FAILED_RECIPIENT:0 "The request to become vassalized from §H[Actor.GetName]§! was auto declined."
+ ACTION_ASK_TO_BECOME_VASSALIZED_PROPOSAL_FAILED_RECIPIENT:1 "The request to become vassalized from §H[Actor.GetName]§! timed out and was auto-declined."
  ACTION_ASK_TO_BECOME_PROTECTORATE_PROPOSAL_FAILED_ACTOR:0 "Our request to become a Protectorate of §H[Recipient.GetName]§! was declined."
- ACTION_ASK_TO_BECOME_PROTECTORATE_PROPOSAL_FAILED_RECIPIENT:0 "The request to become a Protectorate of §H[Actor.GetName]§! was auto declined."
+ ACTION_ASK_TO_BECOME_PROTECTORATE_PROPOSAL_FAILED_RECIPIENT:1 "The request to become a Protectorate of §H[Actor.GetName]§! timed out and was auto-declined."
  ACTION_ASK_TO_BECOME_TRIBUTARY_PROPOSAL_FAILED_ACTOR:0 "Our request to become a Tributary of §H[Recipient.GetName]§! was declined."
- ACTION_ASK_TO_BECOME_TRIBUTARY_PROPOSAL_FAILED_RECIPIENT:0 "The request to become a Tributary of §H[Actor.GetName]§! was auto declined."
+ ACTION_ASK_TO_BECOME_TRIBUTARY_PROPOSAL_FAILED_RECIPIENT:1 "The request to become a Tributary of §H[Actor.GetName]§! timed out and was auto-declined."
  ACTION_ASK_TO_BECOME_THRALL_PROPOSAL_FAILED_ACTOR:0 "Our request to become a Thrall of §H[Recipient.GetName]§! was declined."
- ACTION_ASK_TO_BECOME_THRALL_PROPOSAL_FAILED_RECIPIENT:0 "The request to become a Thrall of §H[Actor.GetName]§! was auto declined."
+ ACTION_ASK_TO_BECOME_THRALL_PROPOSAL_FAILED_RECIPIENT:1 "The request to become a Thrall of §H[Actor.GetName]§! timed out and was auto-declined."
  ACTION_ASK_TO_BECOME_DOMINION_PROPOSAL_FAILED_ACTOR:0 "Our request to become a Dominion of §H[Recipient.GetName]§! was declined."
- ACTION_ASK_TO_BECOME_DOMINION_PROPOSAL_FAILED_RECIPIENT:0 "The request to become a Dominion of §H[Actor.GetName]§! was auto declined."
+ ACTION_ASK_TO_BECOME_DOMINION_PROPOSAL_FAILED_RECIPIENT:1 "The request to become a Dominion of §H[Actor.GetName]§! timed out and was auto-declined."
  ACTION_ASK_TO_BECOME_SATELLITE_PROPOSAL_FAILED_ACTOR:0 "Our request to become a Satellite of §H[Recipient.GetName]§! was declined."
- ACTION_ASK_TO_BECOME_SATELLITE_PROPOSAL_FAILED_RECIPIENT:0 "The request to become a Satellite of §H[Actor.GetName]§! was auto declined."
+ ACTION_ASK_TO_BECOME_SATELLITE_PROPOSAL_FAILED_RECIPIENT:1 "The request to become a Satellite of §H[Actor.GetName]§! timed out and was auto-declined."
  ACTION_ASK_TO_BECOME_SIGNATORY_PROPOSAL_FAILED_ACTOR:0 "Our request to become a Signatory of §H[Recipient.GetName]§! was declined."
- ACTION_ASK_TO_BECOME_SIGNATORY_PROPOSAL_FAILED_RECIPIENT:0 "The request to become a Signatory of §H[Actor.GetName]§!'s galactic peace treaty was auto declined."
+ ACTION_ASK_TO_BECOME_SIGNATORY_PROPOSAL_FAILED_RECIPIENT:1 "The request to become a Signatory of §H[Actor.GetName]§!'s galactic peace treaty timed out and was auto-declined."
  ACTION_ASK_TO_BE_RELEASED_SUBJECT_PROPOSAL_FAILED_ACTOR:0 "Our request to be released from subjugation of §H[Recipient.GetName]§!'s galactic peace treaty was declined."
- ACTION_ASK_TO_BE_RELEASED_SUBJECT_PROPOSAL_FAILED_RECIPIENT:0 "The request to be released from subjugation of §H[Actor.GetName]§! was auto declined."
+ ACTION_ASK_TO_BE_RELEASED_SUBJECT_PROPOSAL_FAILED_RECIPIENT:1 "The request to be released from subjugation of §H[Actor.GetName]§! timed out and was auto-declined."
  ACTION_ASK_TO_JOIN_FEDERATION_PROPOSAL_FAILED_ACTOR:0 "Our request to join the §H[Recipient.GetAllianceName]§! was declined."
  ACTION_ASK_TO_JOIN_FEDERATION_PROPOSAL_FAILED_ALLIANCE:0 "The request of §H[Actor.GetName]§! to join §H[Recipient.GetAllianceName]§! was declined."
- ACTION_ASK_TO_JOIN_FEDERATION_PROPOSAL_FAILED_RECIPIENT:0 "The request from §H[Actor.GetName]§! to join the §H[Recipient.GetAllianceName]§! was auto declined."
+ ACTION_ASK_TO_JOIN_FEDERATION_PROPOSAL_FAILED_RECIPIENT:0 "The request from §H[Actor.GetName]§! to join the §H[Recipient.GetAllianceName]§! timed out and was auto-declined."
  ACTION_ASK_TO_JOIN_ALLIANCE_PROPOSAL_FAILED_ACTOR:0 "Our request to join the §H[Recipient.GetAllianceName]§! was declined."
- ACTION_ASK_TO_JOIN_ALLIANCE_PROPOSAL_FAILED_RECIPIENT:0 "The request from §H[Actor.GetName]§! to join the §H[Recipient.GetAllianceName]§! was auto declined."
+ ACTION_ASK_TO_JOIN_ALLIANCE_PROPOSAL_FAILED_RECIPIENT:0 "The request from §H[Actor.GetName]§! to join the §H[Recipient.GetAllianceName]§! timed out and was auto-declined."
  ACTION_ASK_TO_BECOME_RELEASED_VASSAL_PROPOSAL_FAILED_ACTOR:0 "Our request to be released from §H[Recipient.GetName]§! was declined."
- ACTION_ASK_TO_BECOME_RELEASED_VASSAL_PROPOSAL_FAILED_RECIPIENT:0 "The request to be released from §H[Actor.GetName]§! was auto declined."
+ ACTION_ASK_TO_BECOME_RELEASED_VASSAL_PROPOSAL_FAILED_RECIPIENT:1 "The request to be released from §H[Actor.GetName]§! timed out and was auto-declined."
  ACTION_OFFER_TRADE_DEAL_PROPOSAL_FAILED_ACTOR:0 "Our trade deal offer to §H[Recipient.GetName]§! was declined."
- ACTION_OFFER_TRADE_DEAL_PROPOSAL_FAILED_RECIPIENT:0 "The trade deal offer from §H[Actor.GetName]§! was auto declined."
+ ACTION_OFFER_TRADE_DEAL_PROPOSAL_FAILED_RECIPIENT:1 "The trade deal offer from §H[Actor.GetName]§! timed out and was auto-declined."
  
  MESSAGE_MAKE_RIVAL_TITLE:0 "$RIVALRY$"
  MESSAGE_RECALL_EMBASSY_TITLE:0 "Embassy Recalled"
@@ -258,15 +268,11 @@
  SURRENDER_THEIR_SIDE:0 "Their warleader has surrendered unconditionally, cease fire has been established. We now have six months to decide our demands."
  WAR_END_VICTORY:0 "We have Won this war"
  WAR_END_DEFEAT:0 "We have Lost this war"
- WAR_DEMANDS:0 " with the following demands:\n"
- WAR_DEMANDS_NONE:0 ". No demands have been enforced."
- WAR_DEMANDS_2:0 "The following demands were enforced:\n"
- WAR_DEMANDS_2_NONE:0 "No demands have been enforced."
- WAR_END_WHITEPEACE:0 "The war has ended with a White Peace"
+ WAR_END_STATUS_QUO:0 "The war has ended with a Status Quo"
  MESSAGE_OUR_SURRENDER_TITLE:0 "We Surrender"
  MESSAGE_THEIR_SURRENDER_TITLE:0 "They Surrender"
- MESSAGE_VICTORY_TITLE:0 "Victory"
- MESSAGE_DEFEAT_TITLE:0 "Defeat"
+ MESSAGE_VICTORY_TITLE:1 "§GVictory§!"
+ MESSAGE_DEFEAT_TITLE:1 "§RDefeat§!"
  MESSAGE_ALLIED_ENTERED_WAR:1 "The $ATTACKER|Y$ has declared war on our ally, the $CALLER|Y$.\n\nConsequently, we are now §Yat war§! with the $ATTACKER|Y$!"
  MESSAGE_GUARANTEED_ENTERED_WAR:0 "Guaranteed is under attack"
  MESSAGE_GUARANTEER_ENTERED_WAR_DESC:1 "The $ATTACKER|Y$ has declared war on $CALLER|Y$, whose independence we have guaranteed.\n\nConsequently, we are now §Yat war§! with the $ATTACKER|Y$!"
@@ -380,6 +386,12 @@
  ####################################
  MESSAGE_REVOLT:0 "The population on planet $PLANET|Y$! are revolting!"
  MESSAGE_PLANET_REVOLT_TITLE:0 "Revolt!"
+ 
+ ####################################
+ # Planet Destruction
+ ####################################
+ MESSAGE_PLANET_DESTROYED: "Planet Devastated"
+ MESSAGE_PLANET_DESTROYED_DESC: "$PLANET|Y$ $WEAPON_DESC$ the $WEAPON_NAME|R$ on $ADJ$ Colossus."
 
  ####################################
  # Terraforming
@@ -432,6 +444,10 @@
  MESSAGE_INVASION_ATTACKER_LOSE:0 "Our invasion of $PLANET|H$ has failed."
  MESSAGE_INVASION_DEFENDER_WIN:0 "We successfully fended off the invaders on $PLANET|H$!"
  MESSAGE_INVASION_DEFENDER_LOSE:0 "We failed to fend off the invaders on $PLANET|H$."
+ MESSAGE_RETREAT_CASUALTIES_TITLE:0 "Retreating Armies Lost"
+ RETREAT_CASUALTIES_DESC:0 "We lost $NUM|Y$ of our $TOTAL|Y$ armies while attempting to retreat from $PLANET|H$\n$LOST$"
+ MESSAGE_LOST_ARMY:0 "$NUMBER$. $NAME|R$"
+
 
  ####################################
  # Subject changes
@@ -458,7 +474,10 @@
  # Edicts
  ####################################
  MESSAGE_INVALIDATED_EDICT_TITLE:0 "Edict Cancelled"
- COUNTRY_EDICT_BECAME_INVALID:0 "The Edict $EDICT|Y$ was invalidated since it no longer fulfills the required conditions."
+ COUNTRY_EDICT_BECAME_INVALID:1 "The $EDICT|Y$ Edict was invalidated since it no longer fulfills the required conditions."
+ MESSAGE_EXPIRED_EDICT_TITLE:0 "Edict Expired"
+ COUNTRY_EDICT_EXPIRED:0 "The $EDICT|Y$ Edict affecting our empire has expired."
+ PLANET_EDICT_EXPIRED:0 "The $EDICT|Y$ Edict affecting $PLANET$ has expired."
 
 #####################################
 # Megastructures
@@ -468,3 +487,21 @@
  MESSAGE_MEGASTRUCTURE_BUILT:1 "$FLEET|H$ completed the construction of a $MEGASTRUCTURE|H$ in $SYSTEM|H$"
  MESSAGE_MEGASTRUCTURE_UPGRADED_TITLE:0 "Megastructure Upgraded"
  MESSAGE_MEGASTRUCTURE_UPGRADED:1 "Completed upgrading $MEGASTRUCTURE|H$ in $SYSTEM|H$"
+
+ #####################################
+# Casus Belli
+#####################################
+ MESSAGE_NEW_CASUS_BELLI_HOLDER_TITLE:1 "New Casus Belli"
+ MESSAGE_NEW_CASUS_BELLI_HOLDER:1 "We can now use the $CASUS_BELLI|H$ Casus Belli against the $COUNTRY|H$"
+
+ MESSAGE_NEW_CASUS_BELLI_TARGET_TITLE:1 "Target of Casus Belli"
+ MESSAGE_NEW_CASUS_BELLI_TARGET:1 "The $COUNTRY|H$ can now use the $CASUS_BELLI|H$ Casus Belli against us!"
+
+ MESSAGE_LOST_CASUS_BELLI_TITLE:0 "Casus Belli Lost"
+ MESSAGE_LOST_CASUS_BELLI:1 "We can no longer use the $CASUS_BELLI|H$ Casus Belli on the $COUNTRY|H$"
+
+ #####################################
+# Claims
+#####################################
+ MESSAGE_NEW_CLAIM_ON_SYSTEM_TITLE:1 "Foreign Empire Claims Our System"
+ MESSAGE_NEW_CLAIM_ON_SYSTEM:1 "Though it rightfully belongs to us, the $COUNTRY|H$ has audaciously laid claim to the $SYSTEM|H$ system!"

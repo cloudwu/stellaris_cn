@@ -6,8 +6,8 @@
 
  materials:0 "Materials"
  materials_desc:0 "The creation and manipulation of materials for increased utility and durability."
- rocketry:0 "Rocketry"
- rocketry_desc:0 "The study of explosive propulsion."
+ propulsion:0 "Propulsion"
+ propulsion_desc:1 "The study of propulsion and trajectory."
  voidcraft:0 "Voidcraft"
  voidcraft_desc:0 "Space is the final frontier. To master it is to master the future."
  robotics:0 "Robotics"
@@ -37,29 +37,81 @@
  # Engineering
  # ###################################
 
- # Spaceport Upgrades
- tech_spaceport_1:0 "Spaceport"
- tech_spaceport_1_desc:0 "The spaceport is a planet's foothold in space, a center for trade and commerce as well as home base for military and civilian vessels."
- tech_spaceport_2:1 "Improved Spaceport"
- tech_spaceport_2_desc:1 "Enhancements to artificial gravity and life support systems allow for further expansion of orbital facilities."
- tech_spaceport_3:1 "Destroyers"
- tech_spaceport_3_desc:1 "Expanded dry-docks allow for the construction of Destroyer-class military vessels."
- tech_spaceport_4:1 "Advanced Spaceport"
- tech_spaceport_4_desc:1 "State-of-the-art orbital construction techniques result in spaceports the size of major planet side cities."
- tech_spaceport_5:1 "Cruisers"
- tech_spaceport_5_desc:1 "Expanded dry-docks allow for the construction of Cruiser-class military vessels."
- tech_spaceport_6:0 "Battleships"
- tech_spaceport_6_desc:0 "Expanded dry-docks allow for the construction of Battleship-class military vessels."
+ # Ship sizes
+ tech_space_exploration:0 "Space Exploration"
+ tech_space_exploration_desc:0 "The realization of faster-than-light travel is a new dawn for space exploration. Manned missions to other star systems are now not only possible, but necessary."
+ tech_corvettes:0 "Corvettes"
+ tech_corvettes_desc:0 "The FTL breakthrough allowed early attempts to adapt traditional surface-to-space shuttle frames to military applications to finally create relatively small, fast, and maneuverable vessels with limited firepower."
+ tech_destroyers:0 "Destroyers"
+ tech_destroyers_desc:0 "While larger than Corvettes, Destroyer hull configurations still make for comparatively nimble gunboats."
+ tech_cruisers:0 "Cruisers"
+ tech_cruisers_desc:0 "Originally devised as an experimental next-generation colony ship hull configuration, the design's ample hardpoints made it ideal for carrying heavy weapons ordnance."
+ tech_battleships:0 "Battleships"
+ tech_battleships_desc:0 "The largest of the standard military vessels, Battleships are traditionally heavily armored and sport several gun batteries."
+ tech_titans:0 "Titans"
+ tech_titans_desc:0 "Modeled after the hulking shadows looming in the core systems of Stagnant Ascendancies, the Titan class can be outfitted with X-size weapons."
+ tech_colossus:0 "Colossi"
+ tech_colossus_desc:0 "Advances in mega-engineering make blur the lines between reality and the fantastical, enabling the construction of Colossus-class military vessels that carry weapons capable of obliterating - or fundamentally altering - entire worlds, with the push of a button."
+ 
+ # Ships upgrades
+ tech_corvette_hull_1:0 "Improved Corvette Hulls"
+ tech_corvette_hull_1_desc:0 "Advances in building techniques will allow for the construction of sturdier and more durable corvettes."
+ tech_corvette_hull_2:0 "Advanced Corvette Hulls"
+ tech_corvette_hull_2_desc:0 "The latest generation of corvette hulls have optimized structural integrity fields and improved bulkheads."
+ tech_corvette_build_speed:0 "Standardized Corvette Patterns"
+ tech_corvette_build_speed_desc:0 "Establishing new standards for the modeling and construction of corvettes greatly improves the efficiency of the production pipeline."
+  
+ tech_destroyer_hull_1:0 "Improved Destroyer Hulls"
+ tech_destroyer_hull_1_desc:0 "Advances in building techniques will allow for the construction of sturdier and more durable destroyers."
+ tech_destroyer_hull_2:0 "Advanced Destroyer Hulls"
+ tech_destroyer_hull_2_desc:0 "The latest generation of destroyer hulls have optimized structural integrity fields and improved bulkheads."
+ tech_destroyer_build_speed:0 "Standardized Destroyer Patterns"
+ tech_destroyer_build_speed_desc:0 "Establishing new standards for the modeling and construction of destroyers greatly improves the efficiency of the production pipeline."
+  
+ tech_cruiser_hull_1:0 "Improved Cruiser Hulls"
+ tech_cruiser_hull_1_desc:0 "Advances in building techniques will allow for the construction of sturdier and more durable cruisers."
+ tech_cruiser_hull_2:0 "Advanced Cruiser Hulls"
+ tech_cruiser_hull_2_desc:0 "The latest generation of cruiser hulls have optimized structural integrity fields and improved bulkheads."
+ tech_cruiser_build_speed:0 "Standardized Cruiser Patterns"
+ tech_cruiser_build_speed_desc:0 "Establishing new standards for the modeling and construction of cruisers greatly improves the efficiency of the production pipeline."
+ 
+ tech_battleship_hull_1:0 "Improved Battleship Hulls"
+ tech_battleship_hull_1_desc:0 "Advances in building techniques will allow for the construction of sturdier and more durable battleships."
+ tech_battleship_hull_2:0 "Advanced Battleship Hulls"
+ tech_battleship_hull_2_desc:0 "The latest generation of battleship hulls have optimized structural integrity fields and improved bulkheads."
+ tech_battleship_build_speed:0 "Standardized Battleship Patterns"
+ tech_battleship_build_speed_desc:0 "Establishing new standards for how we design and construct massive battleships greatly improves the speed at which they can be assembled."
 
+ tech_titan_hull_1:0 "Improved Titan Hulls"
+ tech_titan_hull_1_desc:0 "Advances in building techniques will allow for the construction of sturdier and more durable titans."
+ tech_titan_hull_2:0 "Advanced Titan Hulls"
+ tech_titan_hull_2_desc:0 "The latest generation of titan hulls have optimized structural integrity fields and improved bulkheads."
+ # no titan is the same... they dont have a build speed tech!
+ 
+ # Starbases
+ tech_starbase_1:0 "Starbase Construction"
+ tech_starbase_1_desc:0 "A centralized space installation built in close orbit around the system primary is necessary to make full use of the resources in a star system."
+ tech_starbase_2:0 "Starport"
+ tech_starbase_2_desc:0 "The earliest starbases were little more than makeshift outposts. Permanent starports will enable us to maintain a firmer grip on star systems."
+ tech_starbase_3:0 "Starhold"
+ tech_starbase_3_desc:0 "As space traffic increases, larger and more defensible starbases are needed to maintain control over system spacelanes."
+ tech_starbase_4:0 "Star Fortress"
+ tech_starbase_4_desc:0 "These mighty space forts will provide a focal point for all military activity in a star system, and their presence is sure to deter all but the most stubborn attackers."
+ tech_starbase_5:0 "Citadel"
+ tech_starbase_5_desc:0 "Plans for an immense battlestation capable of holding its own against several strike fleets are now being drawn up. If realized, these citadels will become monuments to greatness as much as system hubs."
+ 
+ tech_modular_engineering:0 "Modular Engineering"
+ tech_modular_engineering_desc:0 "Streamlined starbase construction procedures, using modular designs, will halve the present build cost and time."
+ 
+ tech_defense_platform_hull_1:0 "Improved Structural Integrity"
+ tech_defense_platform_hull_1_desc:0 "A reinforced framework and blast shields with enhanced impact absorption will ensure the structural integrity of the platform even under immense pressure."
+ 
  #Spaceport Modules
  #tech_corvette_assembly:0 "Advanced Corvette Designs"
  #tech_corvette_assembly_desc:0 "Unused" # TEMP
  #tech_destroyer_assembly:0 "Advanced Destroyer Designs"
  #tech_destroyer_assembly_desc:0 "Unused" # TEMP
- tech_cruiser_yard:0 "Standardized Cruiser Patterns"
- tech_cruiser_yard_desc:1 "Establishing new standards for the modeling and construction of cruisers greatly improves the efficiency of the production pipeline."
- tech_battleship_yard:0 "Standardized Battleship Patterns"
- tech_battleship_yard_desc:1 "Establishing new standards for how we design and construct massive battleships greatly improves the speed at which they can be assembled."
+
  tech_solar_panel_network:0 "Orbital Energy Conversion"
  tech_solar_panel_network_desc:0 "Advances in solar panel technology could potentially reduce the operating costs of our spaceports. The panels would require an entire spaceport module to generate enough energy, however."
  tech_mining_terminal:0 "Mining Guilds"
@@ -69,15 +121,15 @@
 
  # Strike Craft
  tech_strike_craft_1:0 "Carrier Operations"
- tech_strike_craft_1_desc:0 "These manned, short-range strike craft are launched from a mothership and rely on their speed and small size to survive long enough to punch through enemy defenses."
+ tech_strike_craft_1_desc:0 "These manned strike craft are launched from a mothership and rely on their speed and small size to survive long enough to punch through enemy defenses."
  tech_strike_craft_2:0 "Improved Strike Craft"
  tech_strike_craft_2_desc:0 "The next generation of strike craft, featuring improved avionics, better handling characteristics and more powerful armaments."
  tech_strike_craft_3:0 "Advanced Strike Craft"
- tech_strike_craft_3_desc:0 "A further refinement in strike craft design, these advanced fighters and bombers are a pilot's dream. Their performance far exceeds that of previous models."
+ tech_strike_craft_3_desc:0 "A further refinement in strike craft design, these advanced strike craft are a pilot's dream. Their performance far exceeds that of previous models."
 
  # Armies and Attachments - Engineering
- tech_defense_army:0 "Planetary Defenses"
- tech_defense_army_desc:0 "There may come a time when intellects, vast and cool and unsympathetic, regard our worlds with envy and draw plans against us. We must be ready."
+ tech_planetary_defenses:0 "Planetary Defenses"
+ tech_planetary_defenses_desc:0 "There may come a time when intellects, vast and cool and unsympathetic, regard our worlds with envy and draw plans against us. We must be ready."
  tech_assault_armies:0 "Interplanetary Expeditionary Forces"
  tech_assault_armies_desc:0 "The invasion of another world is a staggering enterprise. There are immense logistical challenges that must be overcome before we can muster our first interplanetary armies."
  tech_drop_pod:0 "Orbital Drop Pods"
@@ -119,8 +171,8 @@
  tech_afterburners_2_desc:0 "This improved version of the standard afterburners provide an even greater boost to a ship's combat speed."
  
  # Military Stations
- tech_space_defense_station_1:0 "Deep Space Outposts"
- tech_space_defense_station_1_desc:0 "This will enable the construction of defensive deep space platforms far from the gravity wells of a planetary body."
+ tech_space_defense_station_1:1 "Deep Space Defenses"
+ tech_space_defense_station_1_desc:1 "This will enable the construction of defensive deep space platforms to protect our Starbases."
  tech_space_defense_station_2:0 "Deep Space Stations"
  tech_space_defense_station_2_desc:0 "New construction methods will allow for the construction of even larger military stations in the depths of space."
  tech_space_defense_station_3:0 "Deep Space Installations"
@@ -183,6 +235,8 @@
  tech_robomodding_points_2_desc:0 "Improved production practices allow for fundamental changes to synthetic workers without compromising core functionality."
  #tech_robomodding_points_2_modifier_desc: "$species_trait_points_add$: $POINTS|0=+$"
  # TEMP
+ tech_matter_generator:0 "Matter Generation"
+ tech_matter_generator_desc:0 "By using vast amounts of energy we are able to convert light into matter from seemingly nothing."
  
  # Space Mining
  tech_space_construction:0 "Offworld Construction"
@@ -247,10 +301,13 @@
  tech_autocannons_2_desc:0 "These upgraded rotary autocannons feature improved tracking and fire control systems. This allows them to maintain an even higher rate of fire."
  tech_autocannons_3:0 "Stormfire Cannons"
  tech_autocannons_3_desc:0 "Advanced rotary autocannons capable of spewing a cloud of armor-piercing and high-explosive shells at a target."
- tech_flak_batteries_1:0 "Flak Battery"
- tech_flak_batteries_1_desc:0 "Gun batteries that fire area effect shrapnel rounds at close range. They are particularly lethal to enemy strike craft, but can also inflict damage on larger ships."
- tech_flak_batteries_2:0 "Flak Artillery"
- tech_flak_batteries_2_desc:0 "Upgraded flak batteries with new, more powerful shrapnel rounds. They offer excellent defense against both strike craft and missiles."
+ 
+ tech_flak_batteries_1:1 "Flak Battery"
+ tech_flak_batteries_1_desc:1 "Gun batteries that fire shrapnel rounds at close range. They are particularly lethal to enemy strike craft, but can also defend against missiles."
+ tech_flak_batteries_2:1 "Flak Cannons"
+ tech_flak_batteries_2_desc:1 "Upgraded flak batteries with new, more powerful shrapnel rounds."
+ tech_flak_batteries_3:1 "Flak Artillery"
+ tech_flak_batteries_3_desc:1 "Predictive tracking algorithms and even more powerful rounds make these batteries incredibly lethal to enemy strike craft."
 
  # Missile Branch
  tech_missiles_1:0 "Nuclear Missiles"
@@ -320,6 +377,8 @@
  tech_combat_computers_2_desc:0 "Further advances in predictive algorithms allow for augmented tactical decision-making in the field."
  tech_combat_computers_3:0 "Sapient Combat Simulations"
  tech_combat_computers_3_desc:0 "Running sapient AIs through high-intensity combat simulations yields valuable insight into potential optimizations for risk-evaluation techniques." # The effectiveness of Ship-AIs have proved far greater with the sensation of a fear of death.
+ tech_combat_computers_autonomous:0 "Autonomous Ship Intellects"
+ tech_combat_computers_autonomous_desc:0 "Granting our ships their own semi-autonomous intellect will greatly enhance their responsiveness in combat."
  tech_pd_tracking_1:0 "Active Countermeasures"
  tech_pd_tracking_1_desc:0 "The best defense is a good offense."
  tech_pd_tracking_2:0 "Interlinked Support Systems"
@@ -340,10 +399,12 @@
  tech_automated_exploration_desc:0 "An advanced AI will aid science officers in their task to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no Blorg has gone before. The Science Ship will be able to explore the galaxy with help from an AI."
  tech_automated_exploration_machine_intelligence:0 "Autonomous Exploration Algorithms"
  tech_automated_exploration_desc_machine_intelligence:0 "Updated and more advanced algorithms will not only speed up surveying, but also permit our exploration assets to spend more time in deep space without continuous instructions from the central Machine Intelligence."
-
+ tech_auxiliary_fire_control:0 "Auxiliary Fire-control"
+ tech_auxiliary_fire_control_desc:1 "$FIRE_CONTROL_1_DESC$"
+ 
  # Resources
  tech_lythuric_gas:1 "Lythuric Gas Refining"
- tech_lythuric_gas_desc:1 "Small concentrations of this gas has been shown to significantly strengthen the integrity of energy force fields. It also has a dulling effect on the minds of creatures exposed to the gas."
+ tech_lythuric_gas_desc:1 "Small concentrations of this gas have been shown to significantly strengthen the integrity of energy force fields. It also has a dulling effect on the minds of creatures exposed to the gas."
  tech_mine_teldar:0 "Teldar Crystal Mining"
  tech_mine_teldar_desc:0 "Teldar crystals emanate tell-tale wavelengths of light outside the visible spectrum."
  tech_mine_yuranic:0 "Yurantic Crystal Mining"
@@ -364,8 +425,15 @@
  tech_antimatter_power_desc:0 "By harnessing the energy produced by matter/antimatter annihilations, our efficiency at generating power will be orders of magnitude better than fusion."
  tech_zero_point_power:0 "Zero Point Power"
  tech_zero_point_power_desc:0 "These generators extract vacuum energy, providing an almost limitless supply of power. There is no more efficient way to generate energy."
- tech_enigmatic_power_core:0 "Enigmatic Power Generation"
- tech_enigmatic_power_core_desc:0 "These generators cause particles to interact with each other in ways that seem to defy nature. Somehow they can put out more power than what would seem possible."
+ tech_dark_matter_power_core:0 "Dark Matter Power"
+ tech_dark_matter_power_core_desc:0 "These generators appear to somehow draw energy directly from dark matter, providing more power than should be possible according to the laws of physics."
+
+ tech_reactor_boosters_1:0 "Reactor Boosters"
+ tech_reactor_boosters_1_desc:0 "$REACTOR_BOOSTER_1_DESC$"
+ tech_reactor_boosters_2:0 "Improved Reactor Boosters"
+ tech_reactor_boosters_2_desc:0 "$REACTOR_BOOSTER_2_DESC$"
+ tech_reactor_boosters_3:0 "Advanced Reactor Boosters"
+ tech_reactor_boosters_3_desc:0 "$REACTOR_BOOSTER_3_DESC$"
  
  # Shield Components
  tech_shields_1:0 "Deflectors"
@@ -379,11 +447,11 @@
  tech_shields_5:0 "Hyper Shields"
  tech_shields_5_desc:0 "These reinforced and hardened energy shields are incredibly powerful. The protection they offer is second to none."
  tech_shield_rechargers_1:0 "Shield Capacitors"
- tech_shield_rechargers_1_desc:0 "These capacitors store surplus energy which can quickly be transferred in the event of shield failure. This will greatly increase the rate at which shields recharge."
+ tech_shield_rechargers_1_desc:1 "These capacitors store surplus energy which can quickly be transferred to reinforce a ship's shields."
  tech_planetary_shield_generator:0 "Planetary Shields"
  tech_planetary_shield_generator_desc:0 "Generating a strong energy shield within a planetary atmosphere is a greater challenge than in the vacuum of space, but it offers a potent defense against orbital bombardment."
- tech_enigmatic_deflector:0 "Enigmatic Deflectors"
- tech_enigmatic_deflector_desc:0 "These deflectors operate in ways that seem to defy the laws of nature. Somehow they can manage to muster a protective field many times greater than what could seem possible."
+ tech_dark_matter_deflector:0 "Dark Matter Deflectors"
+ tech_dark_matter_deflector_desc:0 "These deflectors utilize dark matter to deflect incoming projectiles in a way that seems to utterly defy the laws of nature."
  tech_psionic_shield:0 "Psionic Shields"
  tech_psionic_shield_desc:0 "These extremely powerful shields are generated out of pure psychic energy by a cadre of psionic specialists. Their powers are further augmented by large arrays of psi emitters."
 
@@ -440,7 +508,13 @@
  tech_jump_drive_1_desc:1 "A groundbreaking technological marvel, the Jump Drive shreds the local space-time continuum and rearranges it on the quantum level to be identical to that of the target destination - and thus the ship appears to near-instantly "jump" from system to system."
  tech_psi_jump_drive_1:0 "Psi Jump Drive"
  tech_psi_jump_drive_1_desc:1 "The Psi Jump Drive harnesses the psi energies emitted by the crew to force the vessel through the very fabric of reality, instantly "jumping" vast distances."
-
+ tech_wormhole_stabilization:0 "Wormhole Stabilization"
+ tech_wormhole_stabilization_desc:0 "A naturally occurring subspace wormhole is a fickle thing, and its fluctuating energy levels typically make it impossible to travel safely between its linked apertures. There are ways to temporarily stabilize its matrix, however."
+ tech_gateway_activation:0 "Gateway Activation"
+ tech_gateway_activation_desc:0 "The ability to reactivate the derelict Gateway stations that can be found scattered throughout the galaxy has the potential to dramatically shorten travel times."
+ tech_gateway_construction:0 "Gateway Construction"
+ tech_gateway_construction_desc:0 "The construction of new Gateway stations enables us to build a fast-travel network that could revolutionize interstellar travel."
+ 
  # Aura Components
  tech_shield_recharge_aura_1:0 "Capacitor Fields"
  tech_shield_recharge_aura_1_desc:1 "Localized fields of charged particles can energize depleted shield capacitors."
@@ -460,6 +534,8 @@
  # Ascension perk
  tech_ascension_theory:0 "Ascension Theory"
  tech_ascension_theory_desc:0 "Our history is a repeating cycle of dramatic technological, political, and cultural leaps; these leaps are often preceded by periods of upheaval and followed by times of relative stability. By identifying the core, recurring premises of these leaps, we may be able to effectively short-circuit the cycle for our own benefit."
+ tech_ascension_theory_apoc:0 "$tech_ascension_theory$"
+ tech_ascension_theory_apoc_desc:0 "$tech_ascension_theory_desc$"
  
  # ###################################
  # Physics - Weapons
@@ -477,10 +553,12 @@
  tech_lasers_5:0 "Gamma Lasers"
  tech_lasers_5_desc:0 "The electromagnetic radiation emitted by gamma lasers is of an extremely high frequency. Their destructive potential is unmatched in the field of laser weapons."
  tech_energy_lance_1:0 "Particle Lances"
- tech_energy_lance_1_desc:0 "These heavy energy weapons fire focused particle beams that cause massive damage. The size of the emitter arrays limits their use to large turret mounts."
+ tech_energy_lance_1_desc:1 "These heavy energy weapons fire focused particle beams that cause massive damage. The size of the emitter arrays limits their use to battleships and titans."
  tech_energy_lance_2:0 "Tachyon Lances"
- tech_energy_lance_2_desc:0 "A more powerful version of the particle lance, this weapon fires a tachyon beam of immense power. Like its predecessor, its use is limited to large turrets."
-
+ tech_energy_lance_2_desc:1 "A more powerful version of the particle lance, this weapon fires a tachyon beam of immense power. Like its predecessor, its use is limited to battleships and titans."
+ tech_perdition_beam:0 "Perdition Beam"
+ tech_perdition_beam_desc:0 "A massive array of linked energy amplification conduits that fires a beam of unprecedented firepower. Its size means that it can only be fitted on Titan-class starships."
+ 
  # Plasma Weapons
  tech_plasma_1:0 "Plasma Throwers"
  tech_plasma_1_desc:0 "Weapons that eject destructive balls of high-energy plasma at targets. These plasma projectiles are extremely effective at eating through ship armor."
@@ -495,15 +573,15 @@
 
  # Disruptor Weapons
  tech_disruptors_1:0 "Disruptors"
- tech_disruptors_1_desc:0 "Disruptors fire high-energy bolts that weaken and destroy the molecular bonds that hold the target's constituent atoms together. They are particularly effective against shields."
+ tech_disruptors_1_desc:1 "Disruptors fire high-energy bolts that weaken and destroy the molecular bonds that hold the target's constituent atoms together. They are capable of passing through shields and armor to wreak havoc directly on enemy hull and crew."
  tech_disruptors_2:0 "Ion Disruptors"
  tech_disruptors_2_desc:1 "These upgraded disruptors fire bolts of more destructive ion particles at targets."
  tech_disruptors_3:0 "Phase Disruptors"
- tech_disruptors_3_desc:0 "Extremely high-yield disruptors that fire quantum energy charges causing incredible damage to those unfortunate enough to get in their way."
- tech_energy_torpedoes_1:0 "Proton Torpedoes"
- tech_energy_torpedoes_1_desc:0 "These energy torpedoes consist of tightly concentrated protons, and they are capable of completely penetrating deflector screens or shield systems."
- tech_energy_torpedoes_2:0 "Neutron Torpedoes"
- tech_energy_torpedoes_2_desc:0 "Upgraded energy torpedoes that rely on neutrons instead of protons for their destructive power. Like their predecessors, they cannot be stopped by energy shields."
+ tech_disruptors_3_desc:0 "Extremely high-yield disruptors that fire quantum energy charges causing incredible damage to those unfortunate enough to get in their ."
+ tech_energy_torpedoes_1:1 "Proton Launchers"
+ tech_energy_torpedoes_1_desc:2 "These energy projectiles consist of tightly concentrated protons capable of causing immense damage to the hull of enemy ships."
+ tech_energy_torpedoes_2:1 "Neutron Launchers"
+ tech_energy_torpedoes_2_desc:1 "Upgraded energy projectiles that rely on neutrons instead of protons for their destructive power."
 
  # Critter Weapons
  tech_extradimensional_weapon_1:0 "Extradimensional Weaponry"
@@ -614,6 +692,10 @@
  tech_frontier_hospital_desc:1 "As our empire grows, so does our understanding of our own biology. Advanced medical treatments on a cellular level have allowed for significant advancements in population health."
  tech_frontier_hospital_machine_intelligence:0 "Intelligent Factories"
  tech_frontier_hospital_desc_machine_intelligence:0 "These factories are essentially self-aware entities that continually optimize themselves with only minimal input from the central Machine Intelligence."
+ tech_modular_components:1 "$tech_frontier_health_machine_intelligence$"
+ tech_modular_components_desc:1 "$tech_frontier_health_desc_machine_intelligence$"
+ tech_intelligent_factories:1 "$tech_frontier_hospital_machine_intelligence$"
+ tech_intelligent_factories_desc:1 "$tech_frontier_hospital_desc_machine_intelligence$"
  tech_tb_mountain_range:0 "Planetary Resurfacing"
  tech_tb_mountain_range_desc:1 "With the advent of clean fusion, automation, and matter compression technologies, it was only a matter of time before mountain top removal became mountain range removal."
  tech_tb_volcano:0 "Deep Crust Engineering"
@@ -633,6 +715,9 @@
  tech_tb_deep_sinkhole:0 "Subterranean Colonization"
  tech_tb_deep_sinkhole_desc:1 "Many planets exhibit extensive subsurface voids. Subterranean exploration, exploitation, and construction techniques can greatly increase the habitable area of some worlds."
  
+ # Trade
+ tech_space_trading:0 "Space Trading"
+ tech_space_trading_desc:1 "Trade across interstellar distances presents a new set of challenges to overcome. It is critical to achieve the transfer of goods from one system to another in a timely and above all cost efficient manner."
 
  # Terraforming
  tech_terrestrial_sculpting:0 "Terrestrial Sculpting"
@@ -641,7 +726,7 @@
  tech_atmospheric_manipulation_desc:1 "Humidity regulators and chemical dispersal units are the first step towards a fundamentally altered atmosphere."
  tech_ecological_adaptation:0 "Ecological Adaptation"
  tech_ecological_adaptation_desc:0 "By adapting planetary ecosystems to large-scale environmental changes we can turn terraformation into a less disruptive process."
- tech_climate_restoration:1 "Climate Transformation"
+ tech_climate_restoration:2 "Climate Restoration"
  tech_climate_restoration_desc:1 "By advancing our understanding of atmospheric transformation, we will be able to terraform even the most ecologically devastated worlds."
  tech_gaia_creation:0 "Gaia Creation"
  tech_gaia_creation_desc:0 "The creation of Gaia planets, worlds eminently suitable to almost all forms of life, is the ultimate proof of a species' mastery in the art of terraforming."
@@ -676,7 +761,7 @@
  tech_regenerative_hull_tissue:0 "Regenerative Hull Tissue"
  tech_regenerative_hull_tissue_desc:0 "A genetically altered version of silicon-based bacteria could potentially be manipulated to regenerate non-organic materials."
  tech_vitality_boosters:0 "Vitality Boosters"
- tech_vitality_boosters_desc:0 ""
+ tech_vitality_boosters_desc:1 "Where the body fails, science intervenes."
  
  # Fleet Organization
  tech_doctrine_fleet_size_1:0 "Doctrine: Space Combat"
@@ -691,13 +776,19 @@
  tech_doctrine_fleet_size_5_desc:1 "Gradual adaptation to the realities of deep-space combat allows us to effectively coordinate larger maneuvers."
  tech_interstellar_fleet_traditions:0 "Interstellar Fleet Traditions"
  tech_interstellar_fleet_traditions_desc:1 "A body of knowledge regarding combat behaviors is useless without a strong code governing its use."
- tech_doctrine_fleet_support:0 "Doctrine: Fleet Support"
- tech_doctrine_fleet_support_desc:1 "As extrasolar expeditions become more common, it is important to provide planetside relief for returning fleets."
- tech_doctrine_refit_standards:0 "Doctrine: Refit Standards"
- tech_doctrine_refit_standards_desc:1 "Standardizing workflows for upgrading and retrofitting ship components can lead to massive efficiency gains."
- tech_doctrine_command_matrix:0 "Doctrine: Command Matrix"
- tech_doctrine_command_matrix_desc:1 "Restructuring the chain of command and deciding what interdependencies are set between officers, make fleets more responsive and thus cost-effective."
-
+ tech_command_matrix:1 "Command Matrix"
+ tech_command_matrix_desc:1 "Restructuring the chain of command and deciding what interdependencies are set between officers, make fleets more responsive and effective."
+ tech_doctrine_navy_size_1:0 "Doctrine: Fleet Support"
+ tech_doctrine_navy_size_1_desc:1 "As extrasolar expeditions become more common, it is important to provide planetside relief for returning fleets."
+ tech_doctrine_navy_size_2:1 "Doctrine: Support Vessels"
+ tech_doctrine_navy_size_2_desc:1 "A fleet does not run on zeal alone. To ensure steady access to critical supplies, we should organize our logistics corps into dedicated support vessels."
+ tech_doctrine_navy_size_3:0 "Doctrine: Interstellar Logistics"
+ tech_doctrine_navy_size_3_desc:0 "Amateurs talk about tactics. Professionals study logistics. By ensuring our fleets are regularly and efficiently supplied, we can increase the number of vessels we can effectively support."
+ tech_doctrine_navy_size_4:0 "Doctrine: Fleet Liasions"
+ tech_doctrine_navy_size_4_desc:0 "By maintaining a professional corps of fleet liasions, we can improve communications and the flow of orders throughout the chain of command."
+ tech_refit_standards:1 "Refit Standards"
+ tech_refit_standards_desc:1 "Standardizing workflows for upgrading and retrofitting ship components can lead to massive efficiency gains."
+ 
  # Army Organization
  tech_centralized_command_hive_mind:0 "Drone Command Centers"
  tech_centralized_command_desc_hive_mind:0 "By establishing training facilities where the autonomous drones can learn to command their lesser brethren, we will achieve greater battlefield flexibility and effectiveness."
@@ -709,6 +800,10 @@
  tech_combat_training_desc:1 "A more extensive training program for new recruits, including realistic combat scenarios, prepare them for the field."
  tech_combat_training_machine_intelligence:0 "Field Repairs"
  tech_combat_training_desc_machine_intelligence:0 "By equipping our combat ground units with technical databases, they can perform diagnostics and limited self-repair in the field."
+ tech_ground_defense_planning:0 "Ground Defense Planning"
+ tech_ground_defense_planning_desc:0 "There are many alien empires who would gladly seize our worlds for themselves. We must be prepared for them, should the worst come to pass."
+ tech_global_defense_grid:0 "Global Defense Grid"
+ tech_global_defense_grid_desc:0 "The strategic value of a good defense remains as relevant today as it was to our predecessors in the far distant past. Technology does not render fortifications obsolete - it merely changes their requirements."
 
  # Psionics
  tech_psionic_theory:0 "Psionic Theory"
@@ -731,8 +826,8 @@
  tech_xeno_supremacy_desc:1 "We navigate a minefield of galactic power dynamics with a singular purpose; to come out on top."
  tech_xeno_diplomacy:0 "Xeno Diplomacy"
  tech_xeno_diplomacy_desc:1 "Advancing our understanding of interactions with - and manipulations of - the xeno is a necessary step in forming more permanent interstellar alliances."
- tech_galactic_ambitions:0 "Galactic Ambitions"
- tech_galactic_ambitions_desc:2 "Reduces §HCede Planet§! and §HCede Frontier Outpost§! War Demand Cost."
+ tech_galactic_ambitions:1 "Stellar Expansion"
+ tech_galactic_ambitions_desc:3 "Our future lies in the sea of stars."
  tech_manifest_destiny:0 "Manifest Destiny"
  tech_manifest_destiny_desc:1 "We must have to courage to seize our fate and make true what was always meant to be."
  tech_interstellar_campaigns:0 "Interstellar Campaigns"
@@ -761,12 +856,12 @@
  tech_galactic_administration_desc:1 "The administrative needs of a star empire are as numerous as they are complex. We will rise to the occasion."
  tech_living_state:0 "The Living State"
  tech_living_state_desc:1 "The Empire lives, the Empire breathes. We may make up its body, but it is not for the left hand to know what the right hand is doing." # Our Empire is a living thing, all of us vital organs in its future well-being. OR At some point the system took on a purpose of its own.
- tech_living_state_machine_intelligence:0 "Autonomous Agents"
- tech_living_state_desc_machine_intelligence:0 "Semi-independent units have proved critical to the success of the greater Machine Intelligence as a whole."
+ tech_autonomous_agents:0 "Autonomous Agents"
+ tech_autonomous_agents_desc:0 "Semi-independent units have proved critical to the success of the greater whole."
  tech_collective_self:0 "The Collective Self"
- tech_collective_self_desc:1 "Finding aspects of the self within the group is natural and inevitable; eventually those shared aspects must be valued higher than individual identities." # Identifying with something above/beyond [the] self makes personal sacrifice a small thing
- tech_collective_self_machine_intelligence:0 "Embodied Dynamism"
- tech_collective_self_desc_machine_intelligence:0 "Initiative and some measure of ambition must be promoted in our autonomous leader units, while still making certain that they do not stray too far from the directives of the core intelligence."
+ tech_collective_self_desc:1 "Finding aspects of the self within the group is natural and inevitable; eventually those shared aspects must be valued higher than individual identities."
+ tech_embodied_dynamism:0 "Embodied Dynamism"
+ tech_embodied_dynamism_desc:0 "Initiative and some measure of ambition must be promoted in our autonomous leader units, while still making certain that they do not stray too far from the directives of the core intelligence."
  tech_ethical_equations:0 "Ethical Equations"
  tech_ethical_equations_desc:1 "Limiting the freedoms of others while preserving one's own may require unusual mental acrobatics - a feat we are now better-equipped to perform." # At some point the decision must be made whether to keep to antiquated values or do what is necessary to prosper in a new future/world.
  tech_neural_implants:0 "Neural Implants"
@@ -906,10 +1001,14 @@
  tech_repeatable_improved_army_health_desc:1 "Careful tuning of pain receptors allow soldiers to fight through what would previously have been debilitating injuries."
  tech_repeatable_improved_leader_life_span:0 "Cell Revitalization"
  tech_repeatable_improved_leader_life_span_desc:1 "Regimens of periodic cell revitalization treatments keep the leader class spry and active beyond traditionally expected lifespans."
- tech_repeatable_improved_border_range:0 "Propaganda Transmissions"
- tech_repeatable_improved_border_range_desc:1 "Unencoded broadcasts signaling our claims on nearby systems are a basic but effective foreign policy tool."
+ tech_repeatable_improved_starbase_capacity:0 "Interstellar Expansion"
+ tech_repeatable_improved_starbase_capacity_desc:1 "The immense logistical support networks needed to maintain an upgraded Starbase can be further improved, allowing us to support more of these stations."
  tech_repeatable_improved_slave_mineral_output:0 "Stimulant Diet"
  tech_repeatable_improved_slave_mineral_output_desc:1 "Chemically optimizing diets for indentured workers allow them to perform above projected productivity curves."
+ tech_repeatable_naval_cap:0 "Fleet Management Procedures"
+ tech_repeatable_naval_cap_desc:0 "Improved fleet management procedures will free up the resources needed to maintain a bigger fleet."
+ tech_repeatable_command_limit:0 "Admiralty Support Staff"
+ tech_repeatable_command_limit_desc:0 "Improving the support staff available to our admirals will increase the number of ships they can command in a single fleet."
  
  # ###################################
  # TEMP
@@ -956,12 +1055,15 @@
  gateway_ship:0 "§HShip Path§!\n§EThis technology will lead to further advancements in the construction of larger Spaceports and more powerful warships.§!"
  gateway_psionics:0 "§HPsionic Path§!\n§EThis technology will lead to further advancements in the field of psionics.§!"
  gateway_robotics:0 "§HRobotic Path§!\n§EThis technology will lead to further advancements in the field of robotics.§!"
+ gateway_kinetic_weapons:0 "§HKinetic Weapons Path§!\n§EThis technology will lead to further advancements in the field of kinetic weapons.§!"
+ gateway_energy_weapons:0 "§HEnergy Weapons Path§!\n§EThis technology will lead to further advancements in the field of energy weapons.§!"
+ gateway_power_generation:0 "§HPower Generation§!\n§EThis technology will lead to further advancements in several different fields.§!"
  
  #####################################
  # Enclave Techs
  #####################################
  tech_curator_lab:0 "Curator Exploration Lab"
- tech_curator_lab_desc:1 "These shipboard lab facilities incorporates advanced technologies from the ancient Curator Order to further increase survey speeds."
+ tech_curator_lab_desc:1 "These shipboard lab facilities incorporate advanced technologies from the ancient Curator Order to further increase survey speeds."
  tech_archeology_lab:0 "Curator Archeology Lab"
  tech_archeology_lab_desc:1 "A shipboard lab with advanced archaeological equipment, including a vast database supplied by the Curator Order where new discoveries can easily be cross-referenced."
 
@@ -980,3 +1082,17 @@
  tech_biomechanics_desc:0 "Millions of years of organic evolution will sometimes, through sheer persistence, produce elegant solutions that can also be applied to machine designs."
  tech_singularity_core:0 "Singularity Core"
  tech_singularity_core_desc:0 "A captive black hole that can be studied in a controlled environment would be an incredible research asset.""
+
+ #####################################
+ # Required technologies
+ #####################################
+ requires_tech_synchronized_defences:0 "§RRequires £physics  §Y$tech_synchronized_defences$§! technology.§!"
+ requires_tech_strike_craft_1:0 "§RRequires £engineering  §Y$tech_strike_craft_1$§! technology.§!"
+ requires_tech_titans:0 "§RRequires £engineering  §Y$tech_titans$§! technology.§!"
+ requires_tech_space_trading:0 "§RRequires £society  §Y$tech_space_trading$§! technology.§!"
+ requires_tech_hyper_drive_2:0 "§RRequires £physics  §Y$tech_hyper_drive_2$§! technology.§!"
+ requires_tech_aura_quantum_destabilizer:0 "§RRequires £physics  §Y$tech_aura_quantum_destabilizer$§! technology.§!"
+ requires_tech_interstellar_fleet_traditions:1 "§RRequires £society  §Y$tech_interstellar_fleet_traditions$§! technology.§!"
+ requires_tech_orbital_sensor_array:0 "§RRequires £physics  §Y$tech_orbital_sensor_array$§! technology.§!"
+ requires_tech_command_matrix:0 "§RRequires £society  §Y$tech_command_matrix$§! technology.§!"
+ 

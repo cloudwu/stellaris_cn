@@ -4,6 +4,7 @@ local scriptpath = "."
 local filelist = {
 	"achievements_l_english.yml",
 	"ai_crisis_l_english.yml",
+	"apocalypse_l_english.yml",
 	"dip_messages_l_english.yml",
 	"event_chains_l_english.yml",
 	"event_chains_l_english_tag.yml",
@@ -19,6 +20,7 @@ local filelist = {
 	"l_english.yml",
 	"l_english_tag.yml",
 	"mandates_l_english.yml",
+	"marauder_l_english.yml",
 	"messages_l_english.yml",
 	"modifiers_2_l_english.yml",
 	"modifiers_3_l_english.yml",

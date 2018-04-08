@@ -123,7 +123,7 @@
  MOD_POP_FOOD_REQ_DESC:0 "帝国内所有人口的食物需求都将依据此数值调整。"
  MOD_POP_FOOD_REQ_MULT:0 "$MOD_POP_FOOD_REQ$"
  MOD_POP_FOOD_REQ_MULT_DESC:0 "帝国内所有人口的食物需求都将依据此数值调整。"
- MOD_POP_GROWTH_SPEED_REDUCTION:0 "成员增长减少"
+ MOD_POP_GROWTH_SPEED_REDUCTION:0 "人口增长减少"
  MOD_POP_GROWTH_SPEED:1 "人口增长速率"
  MOD_POP_GROWTH_SPEED_DESC:0 "此数值影响新人口的增长速率。"
  MOD_POP_GROWTH_REQ:1 "增长时间"
@@ -275,11 +275,11 @@
  #Fleet
  MOD_COUNTRY_NAVAL_CAP_ADD:0 "$NAVY_SIZE_TITLE$"
  MOD_COUNTRY_NAVAL_CAP_MULT:0 "$MOD_COUNTRY_NAVAL_CAP_ADD$"
- MOD_COUNTRY_NAVAL_CAP_ADD_DESC:0 "§E§H$MOD_COUNTRY_NAVAL_CAP_ADD$§!决定着帝国可以进行有效补给的舰船的数量。越大的船，需要的§H$MOD_COUNTRY_NAVAL_CAP_ADD$§!也就越多。§!"
+ MOD_COUNTRY_NAVAL_CAP_ADD_DESC:0 "§E§H$MOD_COUNTRY_NAVAL_CAP_ADD$§!决定着帝国可以有效补给的舰船数量。大型舰船需要更多的§H$MOD_COUNTRY_NAVAL_CAP_ADD$§!。§!"
  MOD_COUNTRY_TERRAFORMING_COST_MULT:0 "环境改造费用"
  MOD_SHIP_EMERGENCY_FTL_MIN_DAYS_ADD:1 "紧急超光速跃迁冷却"
  MOD_SHIP_EMERGENCY_FTL_MIN_DAYS_MULT:0 "$MOD_SHIP_EMERGENCY_FTL_MIN_DAYS_ADD$"
- MOD_COUNTRY_FEDERATION_NAVAL_CAP_CONTRIBUTION_MULT:0 "联邦舰队规模上限贡献"
+ MOD_COUNTRY_FEDERATION_NAVAL_CAP_CONTRIBUTION_MULT:0 "联邦军舰容量贡献"
  
  MOD_COUNTRY_COMMAND_LIMIT_ADD:0 "舰队指挥上限"
  MOD_COUNTRY_COMMAND_LIMIT_MULT:0 "$MOD_FLEET_COMMAND_LIMIT_ADD$"
@@ -416,8 +416,8 @@
  tile_resource_influence_mult:1 "$tile_resource_influence_add$"
  country_resource_influence_mult:0 "帝国影响力获取"
  country_resource_physics_research_mult:0 "物理研究"
- country_resource_society_research_mult:0 "群体学研究"
- country_resource_engineering_research_mult:0 "工程学研究"
+ country_resource_society_research_mult:0 "社会研究"
+ country_resource_engineering_research_mult:0 "工程研究"
  
  country_subjects_resource_unity_mult:0 "$tr_domination_vassal_acculturation$"
  country_subjects_resource_unity_max_mult:0 "$tr_domination_vassal_acculturation$最大效果"
@@ -706,7 +706,7 @@
  fallen_empire_gift_databanks:0 "先驱者数据缓存"
  fallen_empire_gift_databanks_desc:0 "我们获得了来自某个堕落帝国的礼物——科技数据缓存。这些数据可以大幅推进我们的科研水平。"
 
- ship_orbit_repair:0 "轨道修复"
+ ship_orbit_repair:0 "轨道修理"
  ship_max_damaged_effect:0 "伤害惩罚"
  station_self_repair:0 "自我修复"
  jump_drive_cooldown:0 "跃迁引擎冷却"
@@ -995,8 +995,8 @@
  encroaching_scientists:0 "侵犯科学家"
 
  opinion_shade_giver:0 "心理阴影制造者"
- opinion_ceded_starbase:0 "边境被承认"
- opinion_not_ceded_starbase:0 "边境被无视"
+ opinion_ceded_starbase:0 "边界受尊重"
+ opinion_not_ceded_starbase:0 "边界被无视"
 
  triggered_opinion_tr_versatility_universal_compatibility:0 "$tr_versatility_universal_compatibility$"
  triggered_opinion_tr_domination_star_lords:0 "$tr_domination_star_lords$"
@@ -1385,8 +1385,8 @@
  ROBOT_species_trait_points_add:0 "$ROBOT$调整点数"
  MACHINE_species_trait_points_add:0 "$MACHINE$调整点数"
  BIOLOGICAL_species_trait_points_add:0 "$species_trait_points_add$"
- pc_machine_habitability:0 "机械世界宜居度"
+ pc_machine_habitability:0 "机械世界适居性"
  MOD_POSTFIX_PERCENT:0 "§G%§!"
 
- MOD_COUNTRY_SENSOR_RANGE_ADD:0 "族群传感器范围"
+ MOD_COUNTRY_SENSOR_RANGE_ADD:0 "国家传感器范围"
  MOD_SHIP_SENSOR_RANGE_ADD:0 "探测范围"

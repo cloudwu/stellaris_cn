@@ -1,6 +1,6 @@
 群星中文校对 Mod
 ============
-当前支持游戏版本： 群星 Stellaris 2.0.2 。
+当前支持游戏版本： 群星 Stellaris 2.0.3 。
 
 你可以直接在创意工坊订阅本 mod:
 http://steamcommunity.com/sharedfiles/filedetails/?id=734129025

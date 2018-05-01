@@ -377,7 +377,7 @@
  planet_destruction.301.nobots.desc:0 "在横扫[From.GetName]的地表之后，[From.From.GetName]的中子卷流逐渐消失了。扫描结果显示没有幸存的智慧生命，而植物生命尽管受损，却可以随着时间恢复。有人会说彻底消灭智慧生命，却同时保存无生命的物质，是一种乖张的战争罪行.\n\n而我们称之为高效。"
  planet_destruction.301.bots.desc:0 "在横扫[From.GetName]的地表之后，[From.From.GetName]的中子卷流逐渐消失了。\n\n声波传感器中只传来风声，以及幸存的合成人成员的微弱滴答声。所有有机智慧生命都已被消灭了。"
  planet_destruction.301.infested.desc: "在横扫[From.GetName]的地表之后，[From.From.GetName]的中子卷流逐渐消失了。\n\n对那曾经被生化污染的地表做了次快速扫描，之前那里有着海量混乱蠕动着的有机体，现只剩荒芜的岩石。"
- 
+
  planet_destruction.401.name:0 "强制信仰"
  planet_destruction.401.desc:0 "随着[From.From.GetName]精神线圈的崇高嗡鸣声逐渐褪去，一切陷入了短暂的沉寂。在[From.GetName]上，人们精神恍惚，沉浸在精神束从他们自身脑海中解放出来的，强烈且个人的真理之中。\n\n如果他们之前并未理解的话，现在他们已经发自内心地明白，我们都是某些更伟大事物的一部分。"
  planet_destruction.401.tooltip:0 "任何§Y$trait_mechanical$§!，§Y$trait_machine_unit$§!或是§Y$trait_hive_mind$§!成员都被精神共鸣§R摧毁了§!。\n\n所有剩余的§Y有机体§!成员成为§Y$ethic_spiritualist$§!。\n\n添加§Y$god_rayed$§!修正至[This.GetName]，持续§Y10年§!：\n注重精神的种族心理吸引力：§Y+999%§!。"
@@ -425,6 +425,10 @@
  apoc.10.a: "任何时候都能让一些东西通过！"
  apoc.11.name:0 "星门已建成"
  apoc.11.desc:0 "我们在[gateway_system.GetName]建成了我们第一个可以投入实际使用的星门，这真是科学和工程的重大成就！设备已经生成了一个稳定的亚空间通道，并成功连接了银河系的星门网络。"
+ apoc.12.desc: "§H[gateway_system.GetName]§!恒星系内发现的废弃星门的电力已经恢复。它已经连接到了星门网络的其余部分，现在已经完全运转了。"
+ apoc.13.desc: "§H[gateway_system.GetName]§!恒星系内新星门的建设已经结束。与星门网络其余部分的稳定亚空间连接已经建立，星门现在已经完全运转了。"
+ apoc.14.name: "星门建设站就绪Gateway Construction Site Ready"
+ apoc.14.desc: "§H[gateway_system.GetName]§!恒星系内计划的星门的深空建设站现已到位。一旦我们有了必要的资源，星门的实际建设就可随时开始。"
 
 
  planet_destruction.111.name:0 "超空间支路"
@@ -481,6 +485,13 @@
  guardian.509.e:0 "不，目前我们没有兴趣。"
  enclave_mineral_trade_1_xur:0 "旭然集团贸易协议"
  enclave_mineral_trade_1_xur_desc:0 "这是一份我们与旭然集团约定的每月进行资源互换的贸易协议。\n\n§Y你可以随时在旭然集团交流菜单里终止它。§!"
+ end_trade_1:0 "这将终止我们目前与旭然集团进行的资源贸易协议。"
+ enclave_mineral_trade_1_rig:0 "瑞柑贸易协议"
+ enclave_mineral_trade_1_rig_desc:0 "这是一份我们与瑞柑约定的每月进行资源互换的贸易协议。\n\n§Y你可以随时在瑞柑交流菜单里终止它。§!"
+ end_trade_2:0 "这将终止我们目前与瑞柑进行的资源贸易协议。"
+ enclave_mineral_trade_1_mut:0 "穆塔钢贸易协议"
+ enclave_mineral_trade_1_mut_desc:0 "这是一份我们与穆塔钢约定的每月进行资源互换的贸易协议。\n\n§Y你可以随时在穆塔钢交流菜单里终止它。§!"
+ 
  enclave_mineral_trade_2_xur:0 "$enclave_mineral_trade_1_xur$"
  enclave_mineral_trade_2_xur_desc:0 "$enclave_mineral_trade_1_xur_desc$"
  enclave_mineral_trade_3_xur:0 "$enclave_mineral_trade_1_xur$"
@@ -515,9 +526,6 @@
  enclave_food_energy_trade_2_xur_desc: "$enclave_mineral_trade_1_xur_desc$"
  enclave_food_energy_trade_3_xur: "$enclave_mineral_trade_1_xur$"
  enclave_food_energy_trade_3_xur_desc: "$enclave_mineral_trade_1_xur_desc$"
- end_trade_1:0 "这将终止我们目前与旭然集团进行的资源贸易协议。"
- enclave_mineral_trade_1_rig:0 "瑞柑贸易协议"
- enclave_mineral_trade_1_rig_desc:0 "这是一份我们与瑞柑约定的每月进行资源互换的贸易协议。\n\n§Y你可以随时在瑞柑交流菜单里终止它。§!"
  enclave_mineral_trade_2_rig:0 "$enclave_mineral_trade_1_rig$"
  enclave_mineral_trade_2_rig_desc:0 "$enclave_mineral_trade_1_rig_desc$"
  enclave_mineral_trade_3_rig:0 "$enclave_mineral_trade_1_rig$"
@@ -552,9 +560,6 @@
  enclave_food_energy_trade_2_rig_desc: "$enclave_mineral_trade_1_rig_desc$"
  enclave_food_energy_trade_3_rig: "$enclave_mineral_trade_1_rig$"
  enclave_food_energy_trade_3_rig_desc: "$enclave_mineral_trade_1_rig_desc$"
- end_trade_2:0 "这将终止我们目前与瑞柑进行的资源贸易协议。"
- enclave_mineral_trade_1_mut:0 "穆塔钢贸易协议"
- enclave_mineral_trade_1_mut_desc:0 "这是一份我们与穆塔钢约定的每月进行资源互换的贸易协议。\n\n§Y你可以随时在穆塔钢交流菜单里终止它。§!"
  enclave_mineral_trade_2_mut:0 "$enclave_mineral_trade_1_mut$"
  enclave_mineral_trade_2_mut_desc:0 "$enclave_mineral_trade_1_mut_desc$"
  enclave_mineral_trade_3_mut:0 "$enclave_mineral_trade_1_mut$"
@@ -589,6 +594,7 @@
  enclave_food_energy_trade_2_mut_desc: "$enclave_mineral_trade_1_mut_desc$"
  enclave_food_energy_trade_3_mut: "$enclave_mineral_trade_1_mut$"
  enclave_food_energy_trade_3_mut_desc: "$enclave_mineral_trade_1_mut_desc$"
+ 
  end_trade_3:0 "这将终止我们目前与穆塔钢进行的资源贸易协议。"
  guardian.105.e:1 "我们希望中止资源贸易协议。"
  guardian.105.e.response:0 "好吧。我们将立即给我们的货船发送指令，令其停止并返回基地。\n\n如果你改变主意了，记得通知我们！"
@@ -640,6 +646,8 @@
 
  DAILY_PROGRESS: "每日进程 $VAL|Y$"
  SHIP_DESIGNER_NAME_USED: "§R这个设计方案的名字已经用于另一尺寸的舰船§!"
+ DESIGN_IS_BUILDING: "§RA Ship of this Design is currently being built§!"
+ DESIGN_BLOCKED_BY_AUTO_BUILD: "§RCannot manually design ships while auto design is turned on.§!"
 
  opinion_dead_captives: "被杀死的俘虏"
 
@@ -667,3 +675,15 @@
  irassian_minerals_desc: "这里曾经是伊瑞森太空舰队的一个主要泊地，被毁坏的舰队泊地散落在这个行星轨道上，并在行星表面沉积了大量的矿产资源。"
  irassian_energy: "能量生产基地"
  irassian_energy_desc: "这个气体巨行星是伊瑞森同盟星际扩张初期的重要能源生产基地。一条由古代发电站密集组成轨道仍然环绕着这个行星。"
+ 
+ ARMIES_LOST: "军队损失造成的战争之殇"
+ ARMIES_LOST_LONG: "$ARMIES|R$支部队损失造成的$ATTR|R$"
+ SHIPS_LOST: "舰船损毁造成的战争之殇"
+ SHIPS_LOST_LONG: "$SHIPS|R$艘舰船损毁造成的$ATTR|R$"
+ WAROVERVIEW_BATTLE_OUR_SHIPS_LOST: "$NUM|R$艘舰船损毁"
+ WAROVERVIEW_BATTLE_OUR_ARMIES_LOST: "$NUM|R$支部队损失"
+ WAROVERVIEW_BATTLE_THEIR_SHIPS_LOST: "$NUM|G$艘舰船损毁"
+ WAROVERVIEW_BATTLE_THEIR_ARMIES_LOST: "$NUM|G$支部队损失"
+ OCCUPATION_SUMMARY: "占领"
+ OCCUPATION_SUMMARY_LONG: "$SYSTEMS|R$个被占领恒星系和$PLANETS|R$颗被占领行星造成的占领$ATTR|R$";
+ 

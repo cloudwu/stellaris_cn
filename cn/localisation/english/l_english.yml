@@ -3565,7 +3565,7 @@
  leader_trait_rigid_programming_desc:0 "这位领袖的程序非常刚愎，很少允许行为修改，即使那些修改会提高效率。"
  leader_trait_newboot:0 "新机" # statement for “recently launched” is ideal
  leader_trait_newboot_desc:0 "这位领袖最近才升级到其自治水平足以担任指挥职位的状态。"
- leader_trait_warbot_tinkerer:0 "战械工匠" # todo warbot
+ leader_trait_warbot_tinkerer:0 "战械工匠"
  leader_trait_warbot_tinkerer_desc:0 "这位领袖对于战械设计有着不同寻常的兴趣，不断改进和修补我们已有的型号。"
  leader_trait_ai_aided_design:0 "AI辅助设计"
  leader_trait_ai_aided_design_desc:0 "这位领袖不断在二级记忆体上运行理论模型，以提高舰船建造效率。"
@@ -4773,12 +4773,12 @@
  SHIP_CLASS:0 "$CLASS$级"
  SHIP_ICON_CLASS:0 "$ICON$$SHIP_CLASS$"
  SHIP_SIZE_NAME:0 "$SHIP_NAME$ 号$SHIP_SIZE$"
- SHIP_SIZE_NAME_CLASS:0 "$SHIP_SIZE_NAME$ \n$SHIP_CLASS$"
+ SHIP_SIZE_NAME_CLASS:0 "$SHIP_SIZE_NAME$\n$SHIP_CLASS$"
 
- STATION_NAME:0 "§H$TYPE$§! $NAME$"
- MILITARY_STATION_NAME:1 "§H$SIZE$§! $RULERNAME$ \n$SHIP_CLASS$"
+ STATION_NAME:0 "$NAME$ §H$TYPE$§!"
+ MILITARY_STATION_NAME:1 "$RULERNAME$ §H$SIZE$§!\n$SHIP_CLASS$"
 
- ARMY_MILITARY_POWER_TIP:3 "$ARMY_POWER_HEADER$: £army_power $VALUE|0Y$"
+ ARMY_MILITARY_POWER_TIP:3 "$ARMY_POWER_HEADER$：£army_power $VALUE|0Y$"
  MILITARY_POWER_TIP:1 "军事力量：£military_power $VALUE|0Y$"
  MILITARY_POWER_TIP_BOSS:0 "军事力量：£military_power_boss "
 
@@ -4811,7 +4811,7 @@
  STARBASE_CAPACITY_MAX:0 "§R最大：$VALUE|0$§!"
  STARBASE_CAPACITY_MAX_REACHED:0 "§R已达到最大太空基地容量。§!"
  
- STARBASE_COST_DISCLAIMER:1 "整体花费由被宣称所有权的恒星系决定。"
+ STARBASE_COST_DISCLAIMER:1 "整体开销由被宣称所有权的恒星系决定。"
 
  ####################################
  # Station Selection GUI
@@ -5761,7 +5761,7 @@
  living_standard_ego_assimilation:0 "身份升华"
  living_standard_ego_assimilation_tooltip:1 "此种族正成为统一思维的一份子。"
  living_standard_ego_assimilation_tooltip_delayed:1 "§L自我意识活不过这一进程。但这就是它的目标。§!"
- living_standard_tech_assimilation:0 "圣体合成" # TODO
+ living_standard_tech_assimilation:0 "圣体合成"
  living_standard_tech_assimilation_tooltip:1 "此种族融合了机械体特征。"
  living_standard_tech_assimilation_tooltip_delayed:1 "§L更刚。更优。更快。更强。§!"
  living_standard_psi_assimilation:0 "超然觉醒"
@@ -6192,7 +6192,7 @@
  ####################################
 
  DEMOCRATIC_ELECTION_VIEW_TITLE:0 "民主统治者选举"
- DEMOCRATIC_ELECTION_VIEW_NEXT_ELECTION:0 "下届选举：$DATE$ （$TIME_LEFT$月之后）"
+ DEMOCRATIC_ELECTION_VIEW_NEXT_ELECTION:0 "下届选举：$DATE$（$TIME_LEFT$月之后）"
  DEMOCRATIC_ELECTION_VIEW_DESCRIPTION:0 "每个参选的候选人都有各自的§Y当选承诺§!并受某一党派支持，他们凭此为自己赢得选票。在选举日，所有拥有选举权的人口都将投票，胜出者将被选为$TITLE|Y$。"
  DEMOCRATIC_ELECTION_SUPPORT:0 "支持"
  DEMOCRATIC_ELECTION_SUPPORT_DESC:0 "支持此候选人将花费£influence $INFLUENCE|H$。"
@@ -6423,7 +6423,7 @@
  ACTION_DECLARE_WAR_TITLE:0 "宣战"
  ACTION_DECLARE_WAR_DESC:0 "向§H[Recipient.GetName]§!宣战。"
  ACTION_DECLARE_WAR_LONG_DESC:0 "[Actor.GetName]希望向[Recipient.GetName]宣战！"
- WILL_VOTE_YES_WAR_GOAL_HUMAN:0 "该帝国由一名玩家控制，投票结果不可预测"
+ WILL_VOTE_YES_WAR_GOAL_HUMAN:0 "此帝国由玩家控制，投票结果不可预测"
  WILL_VOTE_YES:0 "将投票支持"
  WILL_VOTE_NO:0 "将投票反对"
  ACTION_OFFER_PEACE_TITLE:0 "讲和"
@@ -7084,7 +7084,7 @@
  building_pitharan_plant_desc:1 "铍烯兰肥料厂生产添加铍烯兰粉末的肥料，可以提高作物产值。"
  building_military_academy:0 "军事学院"
  building_military_academy_desc:1 "军事学院可以提高当地的征募率，并能提供更高规格的训练。"
- building_symbol_unity:0 "凝聚之证"
+ building_symbol_unity:0 "凝聚之徽"
  building_symbol_unity_desc:0 "$tech_symbol_unity_desc$"
  building_visitor_center:0 "游客中心"
  building_visitor_center_desc:0 "$tech_visitor_center_desc$"

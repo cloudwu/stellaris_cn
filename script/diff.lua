@@ -1,6 +1,6 @@
-local en_path = "../en/localisation/english/"
+local en_path = "../en2.0/localisation/english/"
 local cn_path = "../cn/localisation/english/"
-local new_path = "../new/"
+local new_path = "../en/localisation/english/"
 local diff_path = "../diff/"
 local cn2_path = "../cn2.0/"
 
@@ -20,8 +20,26 @@ local function readfile(filename)
 	return dict
 end
 
+local function new_diff(name)
+	local file = { __name = name }
+	function file:write(...)
+		self.__file = assert(io.open(self.__name, "wb"))
+		function file:write(...)
+			return self.__file:write(...)
+		end
+		self:write(...)
+	end
+	function file:close()
+		if self.__file then
+			self.__file:close()
+		end
+	end
+
+	return file
+end
+
 local function diff(filename, cn2)
-	local f = io.open(diff_path .. filename .. ".diff" , "wb")
+	local f = new_diff(diff_path .. filename .. ".diff")
 	local en = readfile(en_path .. filename)
 	local cn = readfile(cn_path .. filename)
 	for line in io.lines(new_path .. filename) do
@@ -124,7 +142,8 @@ local list = {
 "utopia_megastructures_l_english.yml",
 }
 
-local cn2 = readcn()
+--local cn2 = readcn()
+local cn2 = {}
 
 for _,file in ipairs(list) do
 	diff(file, cn2)

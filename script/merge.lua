@@ -64,11 +64,13 @@ end
 local list = {
 "apocalypse_l_english.yml",
 "dip_messages_l_english.yml",
+"distant_stars_l_english.yml",
 "events_2_l_english.yml",
 "events_3_l_english.yml",
 "events_5_l_english.yml",
 "events_l_english.yml",
 "l_english.yml",
+"leviathans_l_english.yml",
 "messages_l_english.yml",
 "modifiers_2_l_english.yml",
 "modifiers_l_english.yml",

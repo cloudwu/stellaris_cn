@@ -9,7 +9,7 @@ local function readfile(filename)
 	end
 	local dict = {}
 	for line in f:lines() do
-		local key,dig,value = line:match(" ([%w%._]+):(%d*) (.*)")
+		local key,dig,value = line:match("^ ([%w%._-]+):(%d*) (.*)")
 		if key then
 			dict[key] = { d = dig , v = value }
 		end
@@ -21,7 +21,7 @@ end
 local function readdiff(filename)
 	local diff = {}
 	for line in io.lines(filename) do
-		local command, key, dig, v = line:match("(%w+) +([%w%._]+):(%d*) (.*)")
+		local command, key, dig, v = line:match("(%w+) +([%w%._-]+):(%d*) (.*)")
 		local value = diff[key]
 		if value == nil then
 			value = {}
@@ -37,7 +37,7 @@ local function merge(filename)
 	local cn = readfile(cn_path ..  filename)
 	local f = io.open(cn_path .. filename, "wb")
 	for line in io.lines(en_path .. filename) do
-		local key,dig,value = line:match("^ ([%w%._]+):(%d*) (.*)")
+		local key,dig,value = line:match("^ ([%w%._-]+):(%d*) (.*)")
 		if not key then
 			f:write(line, "\n")
 		else

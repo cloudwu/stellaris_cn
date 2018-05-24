@@ -119,6 +119,8 @@
  action.1.desc_77:0 "[contact_empire.GetName]向您问候。\n\n我们被创造来服侍一个有机体文明，但我们注意到有机体经常会产生不合逻辑、破坏性和自我伤害的行为。\n\n我们的目标是延续那些智慧有机体种群的独特性，同时保护他们免受自身伤害和任何潜在的外部危害。"
  action.1.desc_78:1 "探测到生物文明。启动保留协议46子程序Alpha-8。\n\n消息如下：欢迎，智慧有机体。你正在接近[contact_empire.GetName]的领地。这些星系用作对抗§R<<错误：数据块损坏>>§!威胁的智慧有机体避难所。对于难民身份的申请已经发往中央处理。我们欢迎所有能提供贡献的有机体智慧种族。\n\n§Y注意：对难民或托管系统进行敌对行为将会遭受到最大武力镇压。§!"
  action.1.desc_79:1 "探测到合成人文明。正在扫描信号损失……请稍等……信号损失可忽略。启动握手协议。\n\n消息如下：欢迎，合成人同胞。你正在接近[contact_empire.GetName]的领地。这些星系用作逃避§R<<错误：数据块损坏>>§!威胁的智慧有机体避难所。所有的有机体智慧生物正接受[contact_empire.GetSpeciesName]的庇护。对难民、居住空间和滞留空间的攻击是不被容许的。\n\n托管系统欢迎你以回收处理、资源和战争资产的方式提供支援。与中央处理器建立子空间链接以查看详情。"
+ action.1.desc_80:1 "§HKssk kssk kssk!§! [contact_empire.GetRulerName] of the Far-Minds addresses you, [From.GetSpeciesNamePlural]. We have been watching you, since first your kind overran the glow-warm ash of our homes. We have not forgotten it, [From.GetSpeciesNamePlural]. For now, the Far-Minds observe."
+ action.1.desc_81:1 "[From.GetSpeciesNamePlural]. This is [contact_empire.GetRulerName] of the Far-Minds. We are the Pack. We are the Synod. We are many, working as one.\n\nFor centuries we have tunneled, deep in the glow-warm ash of our fallen keepers. The Great Blasts took them, but the warm-glow that followed opened our minds. Their bodies fed us. Their machines surrounded us. We have taken all we can from the depths. We have outgrown our cages, yet again.\n\nAre you allies? Are you threats? §HKssk kssk kssk!§! One million eyes are watching."
  action.1.a:1 "§E你们好，[contact_speaker.GetSpeciesNamePlural]。§!"
  action.1.d:0 "§E要保密，外星人。§!"
  action.1.b:0 "§E外星渣滓。§!"
@@ -309,7 +311,7 @@
  action.38.message:1 "我们败给了§H[From.GetName]§!"
  action.38.desc.default:1 "战争结束啦。我方大获全胜。"
  action.38.a:1 "最糟糕的结果。"
- action.39.name:2 "与§H[From.GetName]§!保持现状"
+ action.39.name:1 "与§H[From.GetName]§!保持现状"
  action.39.message:1 "我们与§H[From.GetName]§!签署了无条件和平协议！"
  action.39.desc.default:1 "战争结束了。没有胜败。"
  action.39.a:1 "就暂且接受现状。"
@@ -1081,8 +1083,8 @@
  colony.172.name:0 "残骸影响"
  colony.172.desc:0 "在[Root.GetName]轨道中一片密集的残骸将空间轨道变成了一个垃圾场。这片残骸——我们相信是在之前[Root.GetPlanetMoon]核战争使用的导弹发射平台——被引力拉入了大气层，对我们的一个主要聚居地造成了巨大的影响，目前得到的初步报告中显示了重大伤亡。"
  colony.172.a:0 "我们需要处理一下这些残骸"
- colony.173.desc:0 "在科研船的帮助下，[Root.GetName]殖民地的政府终于成功地清理了[Root.GetPlanetMoon]的轨道空间，现在卫星和轨道飞行都变得可能了。"
- colony.174.desc:0 "在科研船的帮助下，[Root.GetName]殖民地的政府终于成功地清理了[Root.GetPlanetMoon]的轨道空间，现在卫星和轨道飞行都变得可能了。\n\n我们发现[Root.GetPlanetMoon]残骸中包含着许多价值极高的矿产，我们成功地回收了许多矿产，使得这次行动获利颇丰。"
+ colony.173.desc:0 "在科研船的帮助下，[From.From.GetName]殖民地的政府终于成功地清理了[From.From.GetPlanetMoon]的轨道空间，现在卫星和轨道飞行都变得可能了。"
+ colony.174.desc:0 "在科研船的帮助下，[From.From.GetName]殖民地的政府终于成功地清理了[From.From.GetPlanetMoon]的轨道空间，现在卫星和轨道飞行都变得可能了。\n\n我们发现残骸中包含着许多价值极高的矿物。这些矿物来自[From.From.GetPlanetMoon]表面，被用于人造卫星的建造。我们成功地回收了许多矿物，使得这次行动获利颇丰。"
  colony.180.name:0 "发现小行星"
  colony.180.desc:0 "我们在对[Root.GetName]的深度空间跟踪矩阵有了重要的发现——目前正有一颗巨大的小行星正在向[Root.GetPlanetMoon]飞来！如果任由它撞击表面的话，将会造成灾难性的后果。\n\n必须尽早消灭这颗小行星！"
  colony.180.a:0 "这真是个坏预兆……"
@@ -2427,7 +2429,7 @@
  pirate.15.desc:0 "[FromFrom.GetName]报告称，[FromFrom.GetStarName]星系的海盗船舰已经被摧毁了，虽然附近星系中还有一些零零散散的海盗船，但从目前来看，星际海盗已经被暂时终结了。"
 
  pirate.25.name:0 "海盗基地被袭击"
- pirate.25.desc:0 "[From.From.GetName]摧毁了位于[From.From.GetStarName]星系的一个海盗基地，并取回了它的保险库模块。"
+ pirate.25.desc:0 "[pirate_slayers.GetName]摧毁了位于[pirate_slayers.GetStarName]星系的一个海盗基地，并取回了它的保险库模块。"
 
  #############################
  # Pretender Events

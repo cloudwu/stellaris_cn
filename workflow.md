@@ -9,6 +9,7 @@
 2. 在本地 clone 你的仓库：
 ```
 git clone git@github.com:username/stellaris_cn.git
+cd stellaris_cn  # 进入 clone 下的仓库目录，方便进行下列操作
 ```
 
 3. 加一个本地分支跟踪原始仓库：

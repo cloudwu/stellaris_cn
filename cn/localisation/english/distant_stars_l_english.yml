@@ -949,7 +949,7 @@
  GENERATION_SHIP:0 "世代飞船"
  GENERATION_SHIP_DESC:0 "一艘属于早已逝去的外星种族的巨大世代飞船可能在导航装置内存有一颗乌托邦行星的加密位置。"
  HIDDEN_PLANET:0 "抓住稻草"
- HIDDEN_PLANET_DESC:0 "向行星表面发送探针能让我们一次性彻底探明我们面前的荒芜世界是否就是马尔达克·沃尔人神话中的乐土仅剩的残余。"
+ HIDDEN_PLANET_DESC:1 "向行星表面发送探针能让我们一次性彻底探明我们面前的荒芜世界是否就是马尔达克·沃尔人神话中的乐土仅剩的残余。"
  STAR_LIFTING:0 "废弃的恒星平台"
  STAR_LIFTING_DESC:0 "一个有着外星设计的破旧平台运行在环 [star_lifting_star.GetName] 的轨道上。如果我们能够修好它，它将能让我们增强并利用这颗恒星的太阳风外流。"
  STAR_LIFTING_WEAPONS:0 "废弃的恒星平台"
@@ -1024,7 +1024,7 @@
  distar.1002.a:0 "这不可能！再检查一次那些座标！！"
  distar.1002.b:0 "回到现实世界……"
  distar.1003.name:0 "明信片般完美"
- distar.1003.desc:1 "我们终于揭开了马尔达克·沃尔人的秘密！\n\n在我们发向这颗行星表面的探针被它的大气弹开后，船组开始怀疑 [utopian_planet.GetName] 并非如所见那样。进一步研究发现，看起来像是行星表面的东西实际上是个能量护盾，上面投影了一层荒芜世界的纹理。藏在它下面的是一个丰饶的盖娅世界，这这让我们回想起马尔达克的预言。\n\n但还有更多发现！当船组去除了护盾之后，他们发现了一个平静的石器时代文明，由哺乳类与真菌类的共生联合组成，生活在简陋的小屋里，与世隔绝。噩梦般的存在“船只”只在他们的传说中存在。"
+ distar.1003.desc:2 "我们终于揭开了马尔达克·沃尔人的秘密！\n\n在我们发向这颗行星表面的探针被它的大气弹开后，船组开始怀疑 [utopian_planet.GetName] 并非如所见那样。进一步研究发现，看起来像是行星表面的东西实际上是个能量护盾，上面投影了一层荒芜世界的纹理。藏在它下面的是一个丰饶的盖娅世界，这这让我们回想起马尔达克的预言。\n\n但还有更多发现！当船组去除了护盾之后，他们发现了一个平静的石器时代文明，由哺乳类与真菌类的共生联合组成，生活在简陋的小屋里，与世隔绝。噩梦般的存在“船只”只在他们的传说中存在。"
  distar.1003.a:0 "马尔达克·沃尔人活了下来！"
  distar.1003.b:0 "那真是个美好的行星……"
  distar.1004.name:0 "秘密乐土"
@@ -2006,6 +2006,12 @@
  country_resource_food_mult_DESC:0 "我帝国总体食物生产将依据此数值调整。"
  country_resource_influence_mult_DESC:0 "我帝国总体影响力生产将依据此数值调整。"
  country_resource_influence_add_DESC:1 "我帝国产生了这么多额外的基础影响力。"
+ country_resource_physics_research_mult_DESC: "我帝国物理研究产量将依据此数值调整。"
+ country_resource_physics_add_DESC: "我帝国产生了这么多额外的基础物理研究点。"
+ country_resource_society_research_mult_DESC: "我帝国社会研究产量将依据此数值调整。"
+ country_resource_society_add_DESC: "我帝国产生了这么多额外的基础社会研究点。"
+ country_resource_engineering_research_mult_DESC: "我帝国工程研究产量将依据此数值调整。"
+ country_resource_engineering_add_DESC: "我帝国产生了这么多额外的基础工程研究点。"
 
  NAME_Ancient_Drones:0 "古代无人机"
  NAME_Nivlac:0 "尼弗拉克" # TODO Nivlac
@@ -2173,6 +2179,7 @@
  amoeba_speed_boost:0 "被收养变形虫的速度"
  building_blocks:0 "生命的熔炉"
  building_blocks_desc:0 "这颗行星充满了各种气体和分子，它们被认为是构成碳基和氨基生物的关键元素和重要条件。虽然未在表面上发现真正意义上的有机生命体，但它可能是演化出生物生命的完美熔炉。"
+
 
 ## IN initializer_names.yml
  elderly_tiyanki_dead_object:0 "$NAME_Elderly_Tiyanki$的尸体"

@@ -11,7 +11,7 @@ local function readfile(filename)
 	end
 	local dict = {}
 	for line in f:lines() do
-		local key,dig,value = line:match("^ ([%w%._]+):(%d*) (.*)")
+		local key,dig,value = line:match("^ ([%w%._%-]+):(%d*) (.*)")
 		if key then
 			dict[key] = { d = dig , v = value }
 		end
@@ -52,7 +52,7 @@ local function diff(filename, cn2)
 	local en = readfile(en_path .. filename)
 	local cn = readfile(cn_path .. filename)
 	for line in io.lines(new_path .. filename) do
-		local key,dig,value = line:match("^ ([%w%._]+):(%d*) (.*)")
+		local key,dig,value = line:match("^ ([%w%._%-]+):(%d*) (.*)")
 		if key then
 			local e = en[key]
 			local c = cn[key]
@@ -71,6 +71,9 @@ local function diff(filename, cn2)
 				else
 					f:write("NEW ", key, ":", dig, " ", value, "\n")
 					f:write("OLD ", key, ":", e.d, " ", e.v, "\n")
+					if c == nil then
+						print(filename, key, line)
+					end
 					local ct = diff_icon(value, e.v, c.v)
 					if ct then
 						f:write("CHANGE ", key, ":", dig, " ", ct, "\n")

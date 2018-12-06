@@ -2,16 +2,6 @@
 
  ### Utopia
 
- # Unrest
- UNREST:0 "Unrest"
- UNREST_DESC:1 "§E§HUnrest§! represents the level of discontent and political instability on this planet. §HUnhappy§! Pops and Slaves increase §HUnrest§!, while §HStrongholds§! and §HFortresses§! decrease it.\n\nHigh §HUnrest§! can have direct and negative consequences.§!"
- UNREST_VALUE_POP_DESC:0 "$NAME$: $VALUE$"
- UNREST_HAPPY_POPS:0 "Happy Pops"
- UNREST_UNHAPPY_POPS:0 "Unhappy Pops"
- UNREST_HAPPY_SLAVES:0 "Happy Slaves"
- UNREST_UNHAPPY_SLAVES:0 "Unhappy Slaves"
- planet_unrest:0 "Planet Unrest"
-
  MEGASTRUCTURE_MODIFIERS:0 "Megastructure Modifiers"
 
  BUILD_MEGASTRUCTURE_WITHIN_INNER_CIRCLE:0 "§RCannot build this Megastructure within a system's gravity well§!"
@@ -27,7 +17,7 @@
  MEGASTRUCTURE_ALREADY_UPGRADING:0 "§RUpgrade in Progress!§!"
  MEGASTRUCTURE_TOOLTIP_PRODUCTION_HEADER:0 "Monthly Production:"
  MEGASTRUCTURE_TOOLTIP_MAINTENANCE_HEADER:1 "Monthly Upkeep:"
- MEGASTRUCTURE_UPGRADE_REMAINING:0 "£time $DAYS|Y0$ Days Remaining"
+ MEGASTRUCTURE_UPGRADE_REMAINING:0 "£time£ $DAYS|Y0$ Days Remaining"
  MEGASTRUCTURE_UPGRADES_TO:0 "Upgrades to:"
 
  ring_world_1_MEGASTRUCTURE_DETAILS:1 "A §Y$pc_ringworld_habitable$§! allows for multiple planet-like zones, cannibalizing all other planets in the system for materials."
@@ -42,7 +32,7 @@
  ring_world_3_intermediate_DESC:0 "A fully functional habitable Ring World section, complete with an active biosphere, that is ready for settlement."
  
  habitat_0_MEGASTRUCTURE_DETAILS:1 "An §Y$pc_habitat$§! is a theoretically self-sustaining space station designed for permanent habitation."
- habitat_0_CONSTRUCTION_INFO_DELAYED:2 "A Habitat can only house habitat-specific £building  §YBuildings§! and is limited to §Y12§! tiles."
+ habitat_0_CONSTRUCTION_INFO_DELAYED:3 "A Habitat can only house habitat-specific £building£ §YBuildings§!."
  habitat_0:0 "Habitat"
  habitat_0_DESC:0 "A Habitation Station orbiting an uninhabitable planet, capable of housing a number of §HPops§! and §HBuildings§! away from the surface."
 
@@ -58,21 +48,23 @@
  think_tank_3_DESC:0 "A fully equipped and operational Science Nexus."
  think_tank_4:0 "The Groik Nexus"
  think_tank_4_DESC:0 "Named after its inventor, this Science Nexus has a neural bank containing the brain of one of our finest researchers integrated into its main drive, allowing it to operate at an increased speed."
- allow_dysons_sphere:0 "§HUnlocks Megastructure:§! Dyson Sphere"
+ #allow_dysons_sphere:0 "§HUnlocks Megastructure:§! Dyson Sphere"
  allow_ring_world:0 "§HUnlocks Megastructure:§! Ring World"
  allow_spy_orb:0 "§HUnlocks Megastructure:§! Sentry Array"
  allow_think_tank:0 "§HUnlocks Megastructure:§! Science Nexus"
  allow_habitats:0 "§HUnlocks Station:§! Habitat"
- ap_master_builders_habitat_size:0 "§HHabitats§! owned by our Empire will have an additional §Y3§! tiles of space."
- allow_edict_consectrated_worlds:3 "§HUnlocks Planetary Edict:§! Consecrate World"
- describe_edict_consectrated_worlds:3 "§EThis is a Planetary Edict that lasts for §Y100§! years and increases £pop  Pop §Y$MOD_POP_HAPPINESS$§!, increases §YSpiritualist Ethics Attraction§!, increases §Y$MOD_POP_GROWTH_SPEED$§!, and boosts £unity  Unity §YGeneration§!.§!"
+ ap_master_builders_habitat_size:1 "§HHabitats§! owned by our Empire have space for an additional §Y2§! districts."
+ allow_edict_consectrated_worlds:5 "§HUnlocks Decision:§! Consecrate World\n"
+ describe_edict_consectrated_worlds:5 "§EConsecrating uninhabited planets (up to §Y3§!) increases §YSpiritualist Ethics Attraction§! and §YEmpire-Wide Amenities§! as well as £unity£ §YUnity Generation§!, scaling to the spiritual significance of the worlds consecrated.§!"
  allow_machine_worlds:2 "§HUnlocks Terraforming Option:§! Machine World"
- describe_machine_worlds:2 "§YMachine Worlds§! are a special planet class that is uninhabitable for organics. §YMachine Pops§! living on §YMachine Worlds§! have their resource output increased by §G+20%§!."
+ describe_machine_worlds:6 "§YMachine Worlds§! are a special planet class that is uninhabitable for most organics, but are not limited by Planetary Features in how many £district£ §YGenerator§! and §YMining Districts§! they can support. £pop£ §YPops§! living on §YMachine Worlds§! have their §YResource Output§! increased by §G+10%§! and §YHousing Usage§! reduced by §G10%§!. Any existing  £district£ §YAgriculture Districts§! on the planet will be destroyed."
+ allow_hive_worlds:0 "§HUnlocks Terraforming Option:§! Hive World"
+ describe_hive_worlds:0 "§YHive Worlds§! are a special planet class that is uninhabitable for non-Hive Minded Pops, but are not limited by Planetary Features in how many £district£ §YGenerator§!, §YMining§! and §YAgriculture Districts§! they can support. £pop£ §YPops§! living on §YHive Worlds§! have their §YResource Output§! increased by §G+10%§!."
  
  ALLOW_PSI_CORPS:0 "The §H$building_psi_corps$§! building is now available."
  ALLOW_PSI_ARMIES:0 "§H$psionic_army_plural$§! can now be recruited."
  
- dyson_sphere_0_MEGASTRUCTURE_DETAILS:1 "A §Y$dyson_sphere_5$§! fully envelops a given star, converting all solar output directly to £energy  Energy Credits."
+ dyson_sphere_0_MEGASTRUCTURE_DETAILS:1 "A §Y$dyson_sphere_5$§! fully envelops a given star, converting all solar output directly to £energy£ Energy Credits."
  dyson_sphere_0_CONSTRUCTION_INFO_DELAYED:3 "A $dyson_sphere_5$ will blot out the sun, turning all planets in the system into Barren or Frozen Worlds."
  dyson_sphere_0:0 "Dyson Sphere Site"
  dyson_sphere_0_DESC:0 "The construction site station serves as the base for the future construction of a Dyson Sphere."
@@ -145,8 +137,8 @@
  fleet_maneuvers_recruitment_desc:0 "§LThe recent naval drills have spurred a great deal of interest in the fleet among the public. We have no shortage of new recruits, which means that we will have to spend less resources to find crews for our starships.§!"
  fleet_maneuvers:0 "Fleet Maneuvers"
  fleet_maneuvers_desc:0 "§LAs a result of the large fleet maneuvers we recently held, our well-trained naval crews are able to maintain a higher rate of fire.§!"
- maneuvers_cancelled:0 "Canceled Fleet Maneuvers"
- maneuvers_cancelled_desc:0 "§LLarge segments of our military leadership are disgruntled due to the recent cancellation of our planned fleet maneuvers. They feel that it is an unacceptable sign of weakness that our neighbors are sure to take advantage of.§!"
+ maneuvers_canceled:0 "Canceled Fleet Maneuvers"
+ maneuvers_canceled_desc:0 "§LLarge segments of our military leadership are disgruntled due to the recent cancellation of our planned fleet maneuvers. They feel that it is an unacceptable sign of weakness that our neighbors are sure to take advantage of.§!"
  maneuvers_no_protest:0 "Did Not Protest Maneuvers"
  maneuvers_no_protest_desc:0 "§LA large segment of our military is furious over the fact that we failed to diplomatically object to the massive foreign fleet exercise that recently took place close to our borders.§!"
  
@@ -154,7 +146,7 @@
  
  opinion_maneuvers_hardline:0 "Fleet Maneuvers"
  opinion_maneuvers_conciliatory:0 "$opinion_maneuvers_hardline$"
- opinion_maneuvers_cancelled:0 "Cancelled Fleet Maneuvers"
+ opinion_maneuvers_canceled:0 "Canceled Fleet Maneuvers"
  
  FLESH_IS_WEAK_PROJECT:0 "The Flesh is Weak"
  FLESH_IS_WEAK_PROJECT_DESC:0 "It is a fool who persists in clinging to a worn, decrepit instrument when a more efficient alternative presents itself.\n\nWe now possess the technology to make cybernetic implants available to the population of the [Root.GetName] at large. Our citizens will be stronger, faster and more intelligent as limbs and organs are replaced with improved mechanical versions."
@@ -299,10 +291,12 @@
  anomaly.2576.name:0 "A New Metal"
  anomaly.2576.desc:0 "Detailed surface scans of [From.GetName] have identified a large impact crater containing the wreckage of several ancient starships of unknown design. The ships appear to be completely devoid of life support systems, leading us to suspect that they were either unusually large drones or controlled by some form of artificial intelligence.\n\nInterestingly, the hull of the ships was constructed out of §HLiving Metal§!, an exceedingly rare and inorganic material with many unique properties. This metal can be "programmed" to assume a certain shape or form, and it will slowly regrow itself if damaged. Over a period of several millennia, the surviving metal from the wrecked ships was fused into a large and extremely dense deposit that could potentially be mined for centuries to come."
  living_metal_category:0 "Peculiar Crater"
- living_metal_category_desc:0 "A large impact crater has been discovered that does not seem to be a natural occurance."
+ living_metal_category_desc:0 "A large impact crater has been discovered that does not seem to be a natural occurrence."
 
  crisis.1011.desc:0 "We have lost our colony on [Root.GetName]! After taking up positions in orbit, the extradimensional invaders bombarded the surface and feasted on all life forms below. The [Root.GetPlanetMoon]'s entire biosphere was consumed by the creatures - not a single trace of anything living remains."
 
  utopia.61.name:0 "[From.From.From.Planet.GetName] Habitat Complete"
  utopia.61.desc.a:0 "We have completed the construction of our first habitat and it is finally time to ready a colony vessel and make landfall on a world we ourselves have created.\n\nFrom its mechanized core to its highest mountains, every nut, bolt, creek and cranny has been designed to fit our needs perfectly in our new home among the stars."
  utopia.61.desc.b:0 "The [From.From.From.Planet.GetName] habitat is now complete and ready for colonization."
+
+ allow_dyson_sphere:0 "§HUnlocks Megastructure:§! Dyson Sphere"

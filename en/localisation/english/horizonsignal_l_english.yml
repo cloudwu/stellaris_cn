@@ -16,6 +16,8 @@
 
  waiting_world_ruins:0 "Forlorn Ruins"
  waiting_world_ruins_desc:0 "The wind sighs in the ruins. No-one goes there."
+ d_mothballed_facilities:0 "Mothballed Facilities"
+ d_mothballed_facilities_desc:0 "Districts and buildings finished to the latest colonial standard, but obviously left in disuse and partial disrepair for years."
 
  loop_debris_01_object:0 "Horizon Signal Debris"
  loop_debris_02_object:0 "Spiraling Pod"
@@ -38,6 +40,8 @@
  TECH_UNLOCK_AKX_WORM_3_TITLE:0 "$tech_akx_worm_3$"
  TECH_UNLOCK_AKX_WORM_3_DESC:0 "$tech_akx_worm_3_desc$"
 
+ tech_akx_worm_partial_custom:0 "§HFuture Glimpse:§! $tech_akx_worm_3$"
+ tech_akx_worm_partial_custom_desc:0 "An inkling of coming perspectives and past affections.\n\nHalf of a whole, useless on its own; when complete may allow our scientists to stumble upon the §H$tech_akx_worm_3$§! technology."
 
  ### BUILDINGS
  building_akx_worm_1:0 "Spiral-Feed Power Hub"
@@ -376,38 +380,37 @@
  ##THE WAITING WORLD: Worm-related event
  
  akx.9500.name:0 "The Waiting World"
- akx.9500.desc:0 "It appears this is not the first [Root.Owner.GetSpeciesAdj] settlement on this planet. A number of facilities and residences have been carefully moth-balled and, with a little restoration, will serve our new colony well. But all records have been erased. Possibly this was a smugglers' port, or a haven for political exiles."
- akx.9500.a:0 "Excellent! Make arrangements to restore the buildings."
- akx.9500.b:0 "This is too good to be true. Demolish the buildings."
+ akx.9500.desc:1 "It appears this is not the first [Root.Owner.GetSpeciesAdj] settlement on this planet. A number of facilities and districts have been carefully moth-balled and, with a little restoration, will serve our new colony well. But all records have been erased. Possibly this was a smugglers' port, or a haven for political exiles."
+ akx.9500.a:1 "Excellent! Make arrangements to restore the facilities."
+ akx.9500.b:1 "This is too good to be true. Demolish the districts."
  akx.9500.b.tooltip:0 "This will cause unhappiness in the colony."
 
  akx.9505.name:0 "The Waiting World: Demolition"
- akx.9505.desc:0 "Our engineers set charges and retire to a safe distance. The buildings are reduced to ruins. Eventually, the ruins will crack and crumble to boulders, pebbles, dust, under the assault of wind, roots, rain. But their shell will endure for centuries yet; and there will be stories, we'll hear, of shadows in the stone by day, blue lights by night. Our colonists will avoid them. They'll attract no visitors."
+ akx.9505.desc:1 "Our engineers set charges and retire to a safe distance. The sites are reduced to ruins. Eventually, the ruins will crack and crumble to boulders, pebbles, dust, under the assault of wind, roots, rain. But their shell will endure for centuries yet; and there will be stories, we'll hear, of shadows in the stone by day, blue lights by night. Our colonists will avoid them. They'll attract no visitors."
  akx.9505.a:0 "Everything ends."
- akx.9505.a.tooltip:0 "The ruined buildings are demolished."
+ akx.9505.a.tooltip:1 "The old facilities are demolished."
  akx.9505.b:0 "Nothing is forgotten."
  akx.9505.c:0 "I love those boomy noises."
 
  akx.9510.name:0 "The Waiting World: Shadows in the Walls"
- akx.9510.desc:0 "Our settlers were initially happy to make use the buildings on [waiting_world.GetName]. Their existence jump-started the colony. But now they've grown nervous. There are rumors that the buildings may still have occupants, or active security systems, although no evidence of either has been found. Some colonists insist, enigmatically, that there are "shadows in the walls.""
- akx.9510.a:0 "Discourage this superstition. The buildings represent years of effort."
+ akx.9510.desc:1 "Our settlers were initially happy to make use the districts on [waiting_world.GetName]. Their existence jump-started the colony. But now they've grown nervous. There are rumors that the facilities may still have occupants, or active security systems, although no evidence of either has been found. Some colonists insist, enigmatically, that there are "shadows in the walls.""
+ akx.9510.a:1 "Discourage this superstition. The districts represent years of effort."
  akx.9510.b:0 "Why take the risk? They're only buildings. Have them demolished."
  akx.9510.b.tooltip:0 "This will cause unhappiness in the colony."
 
  akx.9520.name:0 "The Waiting World: Too Many"
- akx.9520.desc:0 "Interesting news from [waiting_world.GetName], where we found those abandoned buildings. A census shows too many settlers. Records on a new colony are always unreliable, but as far as we can tell they have authentic citizen IDs - and no-one on the world has suggested there are any mysterious strangers. But the birth rate must have been extraordinarily high, or we have unlicensed migration, or... something. Somehow, the population is higher than we might reasonably expect."
- akx.9520.a:0 "Destroy those buildings. We should have done it much sooner."
+ akx.9520.desc:1 "Interesting news from [waiting_world.GetName], where we found those abandoned districts. A census shows too many settlers. Records on a new colony are always unreliable, but as far as we can tell they have authentic citizen IDs - and no-one on the world has suggested there are any mysterious strangers. But the birth rate must have been extraordinarily high, or we have unlicensed migration, or... something. Somehow, the population is higher than we might reasonably expect."
+ akx.9520.a:1 "Destroy those districts. We should have done it much sooner."
  akx.9520.b:0 "Investigate as best we can; keep an eye on the situation."
 
  akx.9525.name:0 "The Waiting World: And Still They Come"
- akx.9525.desc:0 "Another update from [waiting_world.GetName], where we found those abandoned buildings. The number of colonists continues to increase, and now we're finding irregularities in the records - family groups that shouldn't exist, birth dates that make no sense. There must be secret migration from a lost colony, or else some peculiar sabotage by the colonists."
- akx.9525.a:0 "Destroy those buildings. We should have done it much sooner."
+ akx.9525.desc:1 "Another update from [waiting_world.GetName], where we found those abandoned facilities. The number of colonists continues to increase, and now we're finding irregularities in the records - family groups that shouldn't exist, birth dates that make no sense. There must be secret migration from a lost colony, or else some peculiar sabotage by the colonists."
+ akx.9525.a:1 "Destroy those districts. We should have done it much sooner."
  akx.9525.b:0 "Peculiar! But we can always use more citizens. Monitor and continue."
 
  akx.9530.name:0 "The Waiting World: Exit"
  akx.9530.desc:0 "An abrupt and total communications blackout from [waiting_world.GetName]. We somehow had too many people there. Now, it appears, we have no-one at all. The entire population has simply vanished overnight. Have they left the world? Gone into hiding? Engaged in planet-wide genocide?"
  akx.9530.a:0 "Send a team to investigate."
- ##create the project WAITING_WORLD_DISAPPEARANCE
  akx.9530.b:0 "Abandon and quarantine the world immediately."
  akx.9530.b.tooltip:0 "This will put the planet permanently beyond use."
 

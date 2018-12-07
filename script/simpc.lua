@@ -1,12 +1,12 @@
-local path1 = "../cn/localisation/simp_chinese/"
-local path2 = "../cn/localisation/english/"
+local path1 = "../cn/localisation/english/"
+local path2 = "../cn/localisation/simp_chinese/"
 
 local function convert(filename)
-	local f = io.open(path2 .. filename, "wb")
+	local f = io.open(path2 .. filename:gsub("_english", "_simp_chinese"), "wb")
 	local replace
-	for line in io.lines(path1 .. filename:gsub("_english", "_simp_chinese")) do
+	for line in io.lines(path1 .. filename) do
 		if not replace then
-			local sc_line = line:gsub("l_simp_chinese:", "l_english:")
+			local sc_line = line:gsub("l_english:", "l_simp_chinese:")
 			f:write(sc_line, "\n")
 			replace = true
 		else

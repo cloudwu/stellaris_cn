@@ -1,5 +1,5 @@
 local en_path = "../en/localisation/english/"
-local cn_path = "../cn/localisation/simp_chinese/"
+local cn_path = "../cn/localisation/english/"
 local diff_path = "../diff/"
 
 local function readfile(filename)
@@ -34,15 +34,15 @@ end
 
 local function merge(filename)
 	local diff = readdiff(diff_path .. filename .. ".diff")
-	local cn_filename = filename:gsub("_english", "_simp_chinese")
+	local cn_filename = filename	-- :gsub("_english", "_simp_chinese")
 	local cn = readfile(cn_path ..  cn_filename)
 	local f = io.open(cn_path .. cn_filename, "wb")
 	for line in io.lines(en_path .. filename) do
 		local key,dig,value = line:match("^ ([%w%._%-]+):(%d*) (.*)")
 		if not key then
-			if line:find "l_english" then
-				line = line:gsub("english", "simp_chinese")
-			end
+--			if line:find "l_english" then
+--				line = line:gsub("english", "simp_chinese")
+--			end
 			f:write(line, "\n")
 		else
 			local d = diff[key]

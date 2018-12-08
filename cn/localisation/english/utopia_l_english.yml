@@ -17,7 +17,7 @@
  MEGASTRUCTURE_ALREADY_UPGRADING:0 "§R升级进行中！§!"
  MEGASTRUCTURE_TOOLTIP_PRODUCTION_HEADER:0 "每月产出："
  MEGASTRUCTURE_TOOLTIP_MAINTENANCE_HEADER:1 "每月维持费："
- MEGASTRUCTURE_UPGRADE_REMAINING:0 "还剩 £time£ $DAYS|Y0$ 天"
+ MEGASTRUCTURE_UPGRADE_REMAINING:0 "还剩£time£ $DAYS|Y0$ 日"
  MEGASTRUCTURE_UPGRADES_TO:0 "升级至："
 
  ring_world_1_MEGASTRUCTURE_DETAILS:1 "§Y$pc_ringworld_habitable$§!拥有数块如同行星一样的区域，同时需要破碎同一星系内其他所有行星天体作为原材料。"
@@ -32,7 +32,7 @@
  ring_world_3_intermediate_DESC:0 "一个完整的可居住的环形世界区块，其上覆盖着已经激活的大气层，居民已经可以移民至其中了。"
  
  habitat_0_MEGASTRUCTURE_DETAILS:1 "§Y$pc_habitat$§!是一个理论上可以自我维持永久居住的基地。"
- habitat_0_CONSTRUCTION_INFO_DELAYED:3 "居住站只可以建造居住站特有的£building §Y建筑§!并且限制使用§Y12§!个地块。"
+ habitat_0_CONSTRUCTION_INFO_DELAYED:3 "轨道栖所只能建设轨道栖所专属£building£ §Y建筑§!。"
  habitat_0:0 "轨道栖所"
  habitat_0_DESC:0 "环绕着无法栖息的星球的轨道基地，它能在远离星球表面的地方支持一定数量的§H人口§!和§H建筑§! 。"
 
@@ -53,13 +53,13 @@
  allow_spy_orb:0 "§H解锁巨型结构：§!监探阵列"
  allow_think_tank:0 "§H解锁巨型结构：§!研究中枢"
  allow_habitats:0 "§H解锁基地：§!轨道栖所"
- ap_master_builders_habitat_size:1 "帝国所拥有的§H居住地§!额外拥有§Y2§!个闲置区划。"
- allow_edict_consectrated_worlds:5 "§H解锁决策：§!封为圣地"
- describe_edict_consectrated_worlds:5 "§E将无人居住的星球封为圣地（最多§Y3§!个）可增加§Y唯心主义种族心理吸引力§!、§Y帝国舒适度§!以及£unity£ §Y凝聚力产出§!，具体效果视乎于该行星的宗教影响力。§!"
+ ap_master_builders_habitat_size:1 "我帝国的§H轨道栖所§!将额外拥有§Y2§!个闲置行政区。"
+ allow_edict_consectrated_worlds:5 "§H解锁决策：§!$decision_consecrated_worlds$"
+ describe_edict_consectrated_worlds:5 "§E祝圣无人居住的行星（最多§Y3§!颗），增强§Y精神主义道德吸引力§!和§Y全帝国内的舒适度§!，并提升£unity£ §Y凝聚力产出§!，具体效果取决于祝圣星球在宗教中的重要程度。§!"
  allow_machine_worlds:2 "§H解锁环境改造方案:§!机械世界"
- describe_machine_worlds:6 "§Y机械星球§!是一种特殊的星球类型，大多数有机生物都无法居住，但£district£ §Y发电§!和§Y采矿§!区划的数量不受星球特征的限制。居住在§Y机械星球§!上的£pop£ §Y人口§!的 §Y资源产出§! 增加§G+10%§!并且 §Y住房使用§! 减少§G10%§!。星球上任何现存的£district£ §Y农业区划§!都将被摧毁。"
- allow_hive_worlds:0 "§H解锁环境改造选项：§!蜂巢星球"
- describe_hive_worlds:0 "§Y蜂巢星球§!是一种特别的星球划分，对非蜂巢思维人口来说不宜居，但是不会受限于星球特性带来的£district£  §Y发电机§!，§Y采矿§!以及§Y农业区划§!限制。£pop£  §Y人口§!居住在§Y蜂巢星球§!能够将他们的§Y资源产出§!提升§G+10%§!。"
+ describe_machine_worlds:6 "§Y机械世界§!是一种不适合大多数有机体居住的特殊行星类别，但不受行星地貌带来的£district£ §Y电力§!和§Y采矿行政区§!数量限制。居住在§Y机械世界§!上的£pop£ §Y人口§!§Y资源产出§!增加§G+10%§!，§Y住房使用§!减少§G10%§!。行星上所有现存的£district£ §Y农业行政区§!都将被摧毁。"
+ allow_hive_worlds:0 "§H解锁环境改造选项：§!蜂巢世界"
+ describe_hive_worlds:0 "§Y蜂巢世界§!是一种不适合非蜂群思维人口居住的特殊行星类别，但不受行星地貌带来的£district£  §Y电力§!、§Y矿业§!和§Y农业行政区§!数量限制。居住在§Y蜂巢世界§!上的£pop£ §Y人口§!§Y资源产出§!增加§G+10%§!。"
  
  ALLOW_PSI_CORPS:0 "可以建造建筑§H$building_psi_corps$§!。"
  ALLOW_PSI_ARMIES:0 "可以征募§H$psionic_army_plural$§!。"
@@ -137,8 +137,8 @@
  fleet_maneuvers_recruitment_desc:0 "§L最近的舰队演习吸引了许多人的兴趣，招募新兵变得容易，这意味着我们可以花更少的资源来获得船员。§!"
  fleet_maneuvers:0 "舰队演习"
  fleet_maneuvers_desc:0 "§L经大规模舰队演习，船员素质提高，我们可以以更快的速度射击了。§!"
- maneuvers_canceled:0 "已取消舰队机动指令"
- maneuvers_canceled_desc:0 "§L我们的军队领导层的大部分成员都就最近被撤销的舰队机动指令而表达不满。他们认为此行为是在向邻国示弱，很可能会引致对方得寸进尺。§!"
+ maneuvers_canceled:0 "取消舰队演习"
+ maneuvers_canceled_desc:0 "§L我军领导层大量成员就最近舰队演习的取消表达了不满。他们觉得这是一种软弱的表现。我们的邻居一定会趁虚而入。§!"
  maneuvers_no_protest:0 "未能阻止舰队演习"
  maneuvers_no_protest_desc:0 "§L因为我们没有与邻国建立良好的关系，大量外星舰队在我们边境附近演习，这激怒了我们的许多军人。§!"
  
@@ -146,7 +146,7 @@
  
  opinion_maneuvers_hardline:0 "舰队演习"
  opinion_maneuvers_conciliatory:0 "$opinion_maneuvers_hardline$"
- opinion_maneuvers_canceled:0 "已取消舰队机动指令"
+ opinion_maneuvers_canceled:0 "取消舰队演习"
  
  FLESH_IS_WEAK_PROJECT:0 "$ap_the_flesh_is_weak$"
  FLESH_IS_WEAK_PROJECT_DESC:0 "当更有效的身体替代品出现时，非要留恋那些破旧衰老的仪器的人都是傻瓜。\n\n我们现在拥有大范围为[Root.GetName]的人口加装机械内植体的技术。我们的公民将会更强大、更迅速、更智能，因为四肢和器官都被先进的机械版本取代。"
@@ -291,7 +291,7 @@
  anomaly.2576.name:0 "新金属"
  anomaly.2576.desc:0 "对 [From.GetName] 表面的细致扫描发现了一个大的陨石坑中有几艘从未见过的古老星舰残骸。这些星舰上完全没有生命维持系统，这表明它们要么是及其巨大的无人机，要么是由某种形式的人工智能来操控的。\n\n有趣的是，星舰的装甲全部由§H活金属§!制造,这是一种罕见的无机材料，拥有许多独特的特性。这种金属可以被“编程”来呈现为指定的形状和结构，当损坏后可以自己再生。经过了数千年，星舰残骸中剩下的金属沉积下来，可供我们开采几百年。"
  living_metal_category:0 "古怪的环形山"
- living_metal_category_desc:0 "发现一个大型撞击坑，但迹象显示它并非是自然产物。"
+ living_metal_category_desc:0 "发现了一个巨大的冲击造成的环形山，看起来绝非自然形成。"
 
  crisis.1011.desc:0 "我们失去了在 [Root.GetName] 上的殖民地！在抢占了星球轨道后，异次元入侵者轰炸了星球表面，吞噬了上面一切生命形式。[Root.GetPlanetMoon] 的整个生态圈都被生物消耗殆尽 — 没有留下任何的生命痕迹。"
 
@@ -299,4 +299,4 @@
  utopia.61.desc.a:0 "我们完成了第一个轨道栖所结构物，现在是时候准备一艘殖民船登陆上我们自己创建的这个世界上去了。\n\n从机械核心到表面的最高峰、每一颗螺钉、每一条溪流、每一处裂隙，都是为了我们在群星之中安放一个完美的家园而设计的。"
  utopia.61.desc.b:0 "[From.From.From.Planet.GetName] 轨道栖所现已完工、准备殖民。"
 
- allow_dyson_sphere:0 "§H解锁巨构建筑：§!戴森球"
+ allow_dyson_sphere:0 "§H解锁巨型结构：§!戴森球"

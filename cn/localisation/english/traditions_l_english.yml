@@ -101,7 +101,7 @@
  
  tr_expansion_finish:0 "扩张传统完成"
  tr_expansion_finish_machine:0 "扩张传统完成"
- tr_expansion_finish_effect:4 "§E$TRADITIONS_FINISH$：§!\n树立全部$tr_expansion_adopt$后，除轨道栖所外的所有行星上可以多建造§Y1§!个额外的区域。"
+ tr_expansion_finish_effect:4 "§E$TRADITIONS_FINISH$：§!\n树立全部$tr_expansion_adopt$后，除轨道栖所外的所有行星上可以多建造§Y1§!个地区。"
  tr_expansion_finish_hive_effect:0 "$tr_expansion_finish_machine_effect$"
  
  ################################################################
@@ -460,7 +460,7 @@
  tr_versatility_universal_compatibility_desc:0 "§H解锁外交功能：§!成立联邦\n\n§Y$MOD_COUNTRY_TRUST_CAP_ADD$§!增加§G+50§!，£opinion£ §Y评价§!增加§G+20§!，但只对同为$机械智慧体$的帝国有效。"
  tr_versatility_universal_compatibility_delayed:1 "通过深入分析控制有机体和其他机械智慧体行为的各种刺激和心理因素，我们将减少外交摩擦。"
  tr_versatility_finish:0 "通用传统完成"
- tr_versatility_finish_effect:0 "§E$TRADITIONS_FINISH$：§!\n采纳全部$tr_versatility_adopt$会增加我们机械£pops£人口§G+5%§!的资源产出。"
+ tr_versatility_finish_effect:0 "§E$TRADITIONS_FINISH$：§!\n树立全部$tr_versatility_adopt$将在拆除建筑或地区时获得§G50%§!退款。"
  
 ################################################################
 # DISCOVERY
@@ -556,7 +556,7 @@
  tr_prosperity_adopt_hive_effect:0 "$tr_prosperity_adopt_effect$"
  
  tr_prosperity_sct:0 "标准化建设模板"
- tr_prosperity_sct_desc:5 "§Y建筑§!和§Y区划§!的§Y建筑花费§!降低§G10%§!，并且§Y建造速度§!增加§G+25%§!。"
+ tr_prosperity_sct_desc:5 "§Y建筑§!和§Y地区§!的§Y建筑费用§!降低§G10%§!，§Y建造速度§!加快§G+25%§!。"
  tr_prosperity_sct_delayed:0 "随着科技发展，技术变得越来越复杂，劳动者需要面对各种新需求。利用标准化建设模板，工人可以不必理解细节就能造出东西来。"
 
  tr_prosperity_sct_machine:1 "合成建筑"
@@ -564,17 +564,17 @@
  tr_prosperity_sct_machine_delayed:1 "建造大量通用标准的建筑要比单独对房屋进行设计建造更加有效率。"
 
  tr_prosperity_public_works:0 "公共工程局"
- tr_prosperity_public_works_desc:0 "§Y城市区划§!可提供§Y1§!额外的£housing£§Y$MOD_PLANET_HOUSING_ADD$§!。"
+ tr_prosperity_public_works_desc:0 "§Y都市区§!可额外提供§Y1§!£housing£§Y$MOD_PLANET_HOUSING_ADD$§!。"
  tr_prosperity_public_works_delayed:1 "我们的城市增长将会因为前所未见规模的公共建设而增强。所以我们必须建立一个政府部门来对他们进行监管。"
- tr_prosperity_optimized_nexus:0 "强化中心"
- tr_prosperity_optimized_nexus_desc:0 "§Y枢纽区划§!可提供§Y1§!额外的£housing£§Y$MOD_PLANET_HOUSING_ADD$§!。"
- tr_prosperity_optimized_nexus_delayed:1 "不用操心个体的舒适与否，§Y联结区域§!里的各位可以用小身躯在垂直空间中迸发出大用处。"
- tr_prosperity_extended_hives:0 "扩充蜂巢"
- tr_prosperity_extended_hives_desc:0 "§Y蜂巢区划§!可提供§Y1§!额外的£housing£§Y$MOD_PLANET_HOUSING_ADD$§!。"
- tr_prosperity_extended_hives_delayed:1 "通过扩张地下§Y蜂巢区§!，可以安置更多的子成员。"
+ tr_prosperity_optimized_nexus:0 "优化中枢"
+ tr_prosperity_optimized_nexus_desc:0 "§Y中枢区§!可额外提供§Y1§!£housing£§Y$MOD_PLANET_HOUSING_ADD$§!。"
+ tr_prosperity_optimized_nexus_delayed:1 "不用操心个体舒适与否，§Y中枢区§!里的房间更小，也更充分利用了垂直空间。"
+ tr_prosperity_extended_hives:0 "扩张蜂巢"
+ tr_prosperity_extended_hives_desc:0 "§Y蜂巢区§!可额外提供§Y1§!£housing£§Y$MOD_PLANET_HOUSING_ADD$§!。"
+ tr_prosperity_extended_hives_delayed:1 "通过在地下扩张§Y蜂巢区§!，可以容纳更多的工蜂。"
  
  tr_prosperity_administrative_operations:0 "行政管理处"
- tr_prosperity_administrative_operations_desc:2 "§Y$MOD_COUNTRY_STARBASE_UPKEEP_MULT$§!§Y$MOD_PLANET_BUILDING_UPKEEP_MULT$§!减少§G-10%§!。"
+ tr_prosperity_administrative_operations_desc:2 "§Y$mod_planet_buildings_upkeep_mult$§!和§Y$mod_planet_districts_upkeep_mult$§!减少§G10%§!。"
  tr_prosperity_administrative_operations_delayed:0 "随着帝国成长，清除腐败和低效成了重中之重。这些吸血虫必须被拔除！"
  tr_prosperity_administrative_operations_machine:0 "超导能量传输"
  tr_prosperity_administrative_operations_machine_desc:0 "$tr_prosperity_administrative_operations_desc$"
@@ -584,7 +584,7 @@
  tr_prosperity_administrative_operations_hive_delayed:0 "从海洋般巨大的精炼池中捕获有机质，并从中提取出的树脂建材，比大多数无机材料都更可塑且更耐用。它甚至可以耐受寒冷的虚空。"
  
  tr_prosperity_interstellar_franchising:0 "星际特许经营"
- tr_prosperity_interstellar_franchising_desc:0 "§Y城市区划§!可提供§Y1§!额外的£job_clerk£§Y$job_clerk$职位§!。"
+ tr_prosperity_interstellar_franchising_desc:0 "§Y都市区§!可额外提供§Y1§!£job_clerk£§Y$job_clerk$职位§!。"
  tr_prosperity_interstellar_franchising_delayed:1 "开放经营权能够让最普通的星球也可以拥有最繁华的生意，不但提供当地工作也可以增加贸易值！"
  tr_prosperity_efficiency_algorithms:0 "高效算法"
  tr_prosperity_efficiency_algorithms_desc:0 "§Y£pops£人口维护花费§!减少§G-10%§!。"
@@ -643,7 +643,7 @@
  requires_ap_mind_over_matter:1 "$TRIGGER_FAIL$需要飞升特典§Y$ap_mind_over_matter$§!。"
  requires_not_ap_mind_over_matter:1 "$TRIGGER_FAIL$不能拥有飞升特典§Y$ap_mind_over_matter$§!。"
  allow_decision_mastery_of_nature:0 "§H解锁决策：§!自然支配"
- describe_decision_mastery_of_nature:0 "§E此决策将使星球所支持的区划数量上限永久性增加§Y2§!。此决策在每颗星球上只可实施一次。§!"
+ describe_decision_mastery_of_nature:0 "§E此决策将使行星上的最大地区数永久增加§Y2§!块。此决策在每颗行星上只可实施一次。§!"
  decision_mastery_of_nature:0 "自然支配"
  decision_mastery_of_nature_desc:0 "人口是需要空间方可增长的，所以我们必须腾出足够的空间，不能让大自然阻碍我们的步伐。"
  mastery_of_nature:0 "$decision_mastery_of_nature$"

@@ -26,7 +26,7 @@ CN2 allow_hive_worlds:0 "§H解锁环境改造选项：§!蜂巢星球"
 CHANGE allow_hive_worlds:0 "§H解锁环境改造选项：§!蜂巢世界"
 ADD describe_hive_worlds:0 "§YHive Worlds§! are a special planet class that is uninhabitable for non-Hive Minded Pops, but are not limited by Planetary Features in how many £district£ §YGenerator§!, §YMining§! and §YAgriculture Districts§! they can support. £pop£ §YPops§! living on §YHive Worlds§! have their §YResource Output§! increased by §G+10%§!."
 CN2 describe_hive_worlds:0 "§Y蜂巢星球§!是一种特别的星球划分，对非蜂巢思维人口来说不宜居，但是不会受限于星球特性带来的£district£  §Y发电机§!，§Y采矿§!以及§Y农业区划§!限制。£pop£  §Y人口§!居住在§Y蜂巢星球§!能够将他们的§Y资源产出§!提升§G+10%§!。"
-CHANGE describe_hive_worlds:0 "§Y蜂巢世界§!是一种不适合非蜂群思维人口居住的特殊行星类别，但不受行星地貌带来的£district£  §Y电力§!、§Y矿业§!和§Y农业区§!数量限制。居住在§Y蜂巢世界§!上的£pop£ §Y人口§!§Y资源产出§!增加§G+10%§!。"
+CHANGE describe_hive_worlds:0 "§Y蜂巢世界§!是一种不适合非蜂群思维人口居住的特殊行星类别，但不受行星地貌带来的 £district£§Y电力§!、§Y矿业§!和§Y农业区§!数量限制。居住在§Y蜂巢世界§!上的£pop£§Y人口§!§Y资源产出§!增加§G+10%§!。" # BUG 排版问题
 NEW dyson_sphere_0_MEGASTRUCTURE_DETAILS:1 "A §Y$dyson_sphere_5$§! fully envelops a given star, converting all solar output directly to £energy£ Energy Credits."
 OLD dyson_sphere_0_MEGASTRUCTURE_DETAILS:1 "A §Y$dyson_sphere_5$§! fully envelops a given star, converting all solar output directly to £energy  Energy Credits."
 CHANGE dyson_sphere_0_MEGASTRUCTURE_DETAILS:1 "§Y$dyson_sphere_5$§!会完全笼罩恒星，并直接将所有的恒星能量转化为£energy 能源点。" # bug 暂时去掉后面的 £
@@ -46,6 +46,7 @@ CN2 living_metal_category_desc:0 "发现一个大型撞击坑，但迹象显示�
 ADD allow_dyson_sphere:0 "§HUnlocks Megastructure:§! Dyson Sphere"
 CN2 allow_dyson_sphere:0 "§H解锁巨构建筑：§!戴森球"
 CHANGE allow_dyson_sphere:0 "§H解锁巨型结构：§!戴森球"
+CHANGE ADOPT_TRADITION_TREE_TO_UNLOCK_ASCENSION_PERK_SLOT:0 "树立一整棵传统树的所有传统以解锁一个飞升特典。"
 RM  UNREST_VALUE_POP_DESC:0 "$NAME$: $VALUE$"
 RM  maneuvers_cancelled:0 "Canceled Fleet Maneuvers"
 RM  opinion_maneuvers_cancelled:0 "Cancelled Fleet Maneuvers"

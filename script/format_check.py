@@ -8,7 +8,7 @@ root_path = Path("../")
 translation_en_path = root_path / Path("cn/localisation/english/")
 en_path = root_path / Path("en/localisation/english/")
 diff_path = root_path / Path("diff/")
-files_path = diff_path
+files_path = translation_en_path
 
 icon_pattern = r'£(?P<name>[a-zA-Z0-9_\|$]*?)(?P<end_char> |£|[^a-zA-Z0-9_\|$])'
 valid_icon_list = ['physics', 'opinion', 'fleet_status|2', 'military_power', 'minerals', 'ship_stats_hitpoints',

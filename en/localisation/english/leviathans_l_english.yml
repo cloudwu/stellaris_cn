@@ -204,7 +204,7 @@
  
  leviathans.150.desc:1 "Dearest customer, we regret to inform you that the trade deal we negotiated for the export of Exotic Gas to the worlds of the [Root.GetName] has run its course. We are of course more than willing to extend the deal for another ten years if you have the energy credits to spare..."
  leviathans.150.a:0 "Very well. We wish to extend the deal."
- leviathans.150.b:0 "We can do without your gel for now."
+ leviathans.150.b:1 "We can do without your gas for now."
  leviathans.150.c:0 "We can't afford to continue this deal."
  leviathans.151.desc:1 "We have reached the end of our agreement, [Root.GetSpeciesName]. We have shipped Volatile Motes to your worlds for ten years. Should we continue for another ten, or do you wish to end this arrangement?"
  leviathans.151.a:1 "Let us continue. The motes must flow."
@@ -229,7 +229,7 @@
  
  ### GUARDIAN 300-399 ARTIST
  leviathans.300.name:0 "The Artisan Troupe"
- leviathans.300.desc:0 "Greetings, [my_country.GetRulerName]. I, [artist_enclave.GetRulerName], headmaster of the Artisan Troupe, greet you.\n\nWhat can we do you for? Perhaps produce a work of art for you to enjoy? Or maybe you wish to sponsor our enclave in its creation of otherworldly beauty?"
+ leviathans.300.desc:0 "Greetings, [my_country.GetRulerName]. I, [artist_enclave_country.GetRulerName], headmaster of the Artisan Troupe, greet you.\n\nWhat can we do you for? Perhaps produce a work of art for you to enjoy? Or maybe you wish to sponsor our enclave in its creation of otherworldly beauty?"
  leviathans.300.desc.continued:0 "Very well. Then is there anything else we can do for you?"
  leviathans.300.a:0 "We want to commission an art piece."
  leviathans.300.a.reply:0 "Sadly we cannot offer any more, lest we come to believe that you didn't appreciate the ones you already purchased. We have our integrity to think about, you see."
@@ -246,9 +246,10 @@
  leviathans.300.f:0 "We want to invest in a Ministry of Culture."
  leviathans.316.name:0 "The Ministry of Culture"
  leviathans.316.desc:1 "Ah, the §YMinistry of Culture§!... It was designed to challenge divergent ideas and promote greater unity throughout your empire with art. A true masterpiece, if I may say so myself.\n\n All we ask is a mere §R£energy£ -2000§!."
- leviathans.302.desc:1 "Fabulous! We'd be glad to entrust you with one of our creations. It is sure to bring joy to the people of your empire.\n\nThis is our price:\n§R£energy£ -1000§!"
- leviathans.302.a.tooltip:2 "Gain access to an §S£building£ $building_artist$§! with the following planet effects:\n£unity£ Unity Output §G+8§!\nMigration Attraction: §G+50%§!"
- leviathans.302.a.reply:0 "Excellent! The piece will be sent to your storage immediately. Simply ask your builders to erect it on any planet you wish.\nWe humbly thank you for your patronage."
+ leviathans.302.desc:2 "Fabulous! We'd be glad to entrust you with one of our creations. It is sure to bring joy to the people of your empire.\n\nThis is our price:\n§R£energy£ -600§!"
+ leviathans.302.a.tooltip:3 "Gain access to an §S£decision£ $decision_art_monument$§! §YDecision§! that can be enacted on one planet with the following effects:\n£amenities£ $MOD_PLANET_AMENITIES_MULT$ §G+15%§!\n$MOD_PLANET_IMMIGRATION_PULL_MULT$: §G+50%§!"
+ leviathans.302.a.reply:1 "Excellent! The piece will be sent to your storage immediately. Simply ask your planetary administration to enact the §YDecision§! on any planet you wish.\n\nWe humbly thank you for your patronage."
+ leviathans.316.a.reply: "Excellent! The piece will be sent to your storage immediately. Simply ask your builders to erect it on any planet you wish.\nWe humbly thank you for your patronage."
  leviathans.303.desc:1 "Organizing a festival of that scale would require all of our artists to bring their talent. Not an easy job, or cheap.\n\nThis is our price:\n§R£energy£ -1000§!"
  leviathans.303.a.reply:0 "Excellent! We will be delighted to create this magnificent Festival of Worlds!"
  leviathans.304.desc:2 "That would be very helpful, allowing us to try new ideas and take more risks in our creation process. We have a §Yten year§! program with a one-time up-front cost."
@@ -490,8 +491,6 @@
  leviathans.670.desc.gesta:0 "The formidable Ether Drake has been slain.\n\nThe §Hplanetoid§! the beast guarded so jealously can now be safely exploited. What treasures might the creature have amassed over the eons?"
  leviathans.670.a:0 "Commendable."
  leviathans.670.b:0 "Necessary, but regrettable."
- leviathans.670.spiritphile.tooltip:0 "Gain access to the empire-unique §S£building£ Building§! $building_guardian_dragon_shrine$."
- leviathans.670.tooltip:0 "Gain access to the empire-unique §S£building£ Building§! $building_guardian_dragon_monument$."
  
  # STELLARITE
  leviathans.999.name:0 "Shrinking Star"

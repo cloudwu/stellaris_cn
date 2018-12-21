@@ -1,6 +1,6 @@
 群星中文校对 Mod
 ============
-当前支持游戏版本： 群星 Stellaris 2.2.1 。
+当前支持游戏版本： 群星 Stellaris 2.2.2 。
 
 你可以直接在创意工坊订阅本 mod:
 http://steamcommunity.com/sharedfiles/filedetails/?id=734129025
@@ -14,7 +14,7 @@ http://steamcommunity.com/sharedfiles/filedetails/?id=734129025
 * script 是一些实用工具脚本，用来检查错误。
 * [workflow.md](https://github.com/cloudwu/stellaris_cn/blob/master/workflow.md)  想参与的同学，如果不熟悉 github 的工作流，可以参考。
 
-### 本汉化 Mod 引用尚未公开的官方中文字体，如果需要其它字体可以单独订阅 字体 mod :
+### 本汉化 Mod 引用官方中文字体，如果需要其它字体可以单独订阅 字体 mod :
 
 * 悦黑 http://steamcommunity.com/workshop/filedetails/?id=784471286  （群星汉化最早使用的字体）
 * 粗圆 http://steamcommunity.com/workshop/filedetails/?id=826928128  （低分辨率下可能更清晰一些）

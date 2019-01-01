@@ -19,12 +19,12 @@
  PLANET_HOUSING_TITLE:0 "住房"
  PLANET_HOUSING_AVAILABLE:0 "可用住房：$VALUE|0$"
  PLANET_HOUSING_USAGE:0 "人口住房需求（£pop£$NUM_POPS|Y$）：$VALUE|R0$"
- PLANET_HOUSING_DESC:1 "§E§Y$PLANET_HOUSING_TITLE$§!代表行星上专供民众居住的基础设施。民众的§Y住房§!需求未得到满足的行星将受到 £stability£§Y$PLANET_STABILITY_TITLE$§!惩罚，并可能导致§Y迁出§!。你可以在行星上建设额外的£district£§Y地区§!以增加§Y住房§!。§!" # BUG 排版问题
+ PLANET_HOUSING_DESC:1 "§E§Y$PLANET_HOUSING_TITLE$§!代表行星上专供民众居住的基础设施。民众的§Y住房§!需求未得到满足的行星将受到£stability£§Y$PLANET_STABILITY_TITLE$§!惩罚，并可能导致§Y迁出§!。你可以在行星上建设额外的£district£§Y地区§!以增加§Y住房§!。§!"
  PLANET_HOUSING_NO_HAPPINESS_DESC:0 "§E$PLANET_HOUSING_TITLE$代表住宅、公寓和其它各种专供民众居住的基础设施。未满足人口住房需求的行星将受到£stability£§Y$PLANET_STABILITY_TITLE$§!惩罚。§!"
  PLANET_HOUSING:0 "住房：$VALUE|0Y$"
  UNLOCKED_AT_POPS:0 "$VALUE$"
  PLANET_STABILITY_TITLE:0 "稳定度"
- PLANET_STABILITY_DESC:0 "§E§Y$PLANET_STABILITY_TITLE$§!是衡量行星总体政治稳定性的指标。该指标主要由£happiness£§Y民众支持率§!决定\n\n稳定度会因为行星£housing£§R人满为患§!、£amenities£§R低舒适度§!和£crime£§R犯罪率§!等而下降。拥有高$PLANET_STABILITY_TITLE$的行星会获得资源生产加成，而拥有低$PLANET_STABILITY_TITLE$的行星则会受到惩罚，可能会发生负面事件甚至全面§R叛乱§!。§!"
+ PLANET_STABILITY_DESC:0 "§E§Y$PLANET_STABILITY_TITLE$§!是衡量行星总体政治稳定性的指标。该指标主要由£happiness£§Y民众支持率§!决定\n\n稳定度会因为行星£housing£§R人满为患§!、£amenities£§R低舒适度§!和 £crime£§R犯罪率§!等而下降。拥有高$PLANET_STABILITY_TITLE$的行星会获得资源生产加成，而拥有低$PLANET_STABILITY_TITLE$的行星则会受到惩罚，可能会发生负面事件甚至全面§R叛乱§!。§!" # BUG 排版问题
  PLANET_STABILITY_NO_HAPPINESS_DESC:0 "§E§Y$PLANET_STABILITY_TITLE$§!是衡量行星工蜂人口总体运转情况的指标。该指标主要由全体工蜂的§Y$PLANET_HOUSING_TITLE$§!和§Y$PLANET_AMENITIES_TITLE$§!基本需求满足程度决定。拥有高$PLANET_STABILITY_TITLE$的行星会获得资源生产加成，而拥有低$PLANET_STABILITY_TITLE$的行星则会受到惩罚，可能会发生负面事件甚至全面§R叛乱§!（如果行星上存在非工蜂人口）。§!" # NOTE 英语文本误用PLANET_AMENITIES_DESC
  NO_POPS_WITH_HAPPINESS_PRESENT:0 "行星上不存在拥有自由意志的人口。"
  STABILITY_IS_HIGH:0 "$PLANET_STABILITY_TITLE$超过§G$VALUE|0$%§!"
@@ -238,7 +238,7 @@
  TRADE_HUB_CONNECT:1 "§E要从这座§H太空基地§!创建一条§H贸易路线§!，右键点击我们的§Y贸易都城§!§H太空基地§!，或是任何其它有效的§Y贸易枢纽§!§H太空基地§!目的地§!。"
 
  TRADE_SYSTEM_COLLECTED:1 "§H贸易收集§!\n£trade_value£$VALUE|Y0$正被$SYSTEM|Y$贸易枢纽收集。"
- TRADE_SYSTEM_PROTECTED:2 "§H$MOD_STARBASE_TRADE_PROTECTION_ADD$§!\n该星系的£trade_protection£§H$MOD_STARBASE_TRADE_PROTECTION_ADD$§!值为$VALUE|Y0$，可保卫至多 £trade_value£$VALUE|Y0$免遭§H海盗§!掠夺。\n\n共$VALUE|Y2$\n" # BUG 排版问题
+ TRADE_SYSTEM_PROTECTED:2 "§H$MOD_STARBASE_TRADE_PROTECTION_ADD$§!\n该星系的£trade_protection£§H$MOD_STARBASE_TRADE_PROTECTION_ADD$§!值为$VALUE|Y0$，可保卫至多£trade_value£$VALUE|Y0$免遭§H海盗§!掠夺。\n\n共$VALUE|Y2$\n"
  TRADE_ROUTES_DISABLED:0 "§R无法拥有贸易路线§!"
  TRADE_BASE_PROTECTION:0 "基础保卫：$VALUE|+=2$"
  TRADE_HUB_DISABLED:1 "§R太空基地必须先升级才能设置贸易路线。§!"
@@ -764,7 +764,7 @@
  job_synapse_drone:0 "突触工蜂"
  job_synapse_drone_plural:0 "突触工蜂"
  job_synapse_drone_desc:1 "身为突触的宏观体现，这些工蜂专注于放大主思维不断传播的指令并清除干扰。"
- job_synapse_drone_effect_desc:0 "£job_synapse_drone£$job_synapse_drone_plural$消耗£energy£§Y$energy$§!和£food£§Y$food$§!产出 £unity£§Y$unity$§!和£society£§Y$society_research$§!" # BUG 排版问题
+ job_synapse_drone_effect_desc:0 "£job_synapse_drone£$job_synapse_drone_plural$消耗£energy£§Y$energy$§!和£food£§Y$food$§!产出£unity£§Y$unity$§!和£society£§Y$society_research$§!"
  mod_job_synapse_drone_add:0 "$job_synapse_drone$职位"
  mod_job_synapse_drone_per_pop:0 "每$VALUE$个人口§G+1§!个$job_synapse_drone$职位"
  mod_job_synapse_drone_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_synapse_drone_add£"
@@ -788,7 +788,7 @@
  job_brain_drone:0 "大脑工蜂"
  job_brain_drone_plural:0 "大脑工蜂"
  job_brain_drone_desc:1 "科学家、研究者和发明家——大脑工蜂负责国家的科技发展。"
- job_brain_drone_effect_desc:1 "£job_brain_drone£$job_brain_drone_plural$消耗£minerals£§Y$minerals$§!产出用于研发新科技的£physics£ £society£ £engineering£§Y研究点数§!" # BUG
+ job_brain_drone_effect_desc:1 "£job_brain_drone£$job_brain_drone_plural$消耗£minerals£§Y$minerals$§!产出用于研发新科技的 £physics£ £society£ £engineering£§Y研究点数§!" # BUG 排版问题、无空格图标无法显示
  mod_job_brain_drone_add:0 "$job_brain_drone$职位"
  mod_job_brain_drone_per_pop:0 "每$VALUE$个人口§G+1§!个$job_brain_drone$职位"
  mod_job_brain_drone_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_brain_Drone_add£ "
@@ -942,7 +942,7 @@
  job_enforcer:0 "执法者"
  job_enforcer_plural:0 "执法者"
  job_enforcer_desc:0 "执法者负责维护法律和秩序。"
- job_enforcer_effect_desc:1 "£job_enforcer£$job_enforcer_plural$产出£unity£§Y$unity$§!，降低£crime£§Y$PLANET_CRIME_TITLE$§!并生成£defense_army£§Y防御部队§!"
+ job_enforcer_effect_desc:1 "£job_enforcer£$job_enforcer_plural$产出£unity£§Y$unity$§!，降低£crime£§Y$PLANET_CRIME_TITLE$§!并生成 £defense_army£§Y防御部队§!" # BUG 排版问题
  mod_job_enforcer_add:0 "$job_enforcer$职位"
  mod_job_enforcer_per_pop:0 "每$VALUE$个人口§G+1§!个$job_enforcer$职位"
  mod_job_enforcer_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_enforcer_add£ "
@@ -1006,7 +1006,7 @@
  job_head_researcher:0 "科研主管"
  job_head_researcher_plural:0 "科研主管"
  job_head_researcher_desc:1 "这些专家是负责协调并管理新科学技术的研发过程。"
- job_head_researcher_effect_desc:1 "£job_head_researcher£$job_head_researcher_plural$增加£mod_planet_amenities_add£§Y$PLANET_AMENITIES_TITLE$§!和用于研发新科技的£physics£ £society£ £engineering£§Y研究点数§!" # BUG
+ job_head_researcher_effect_desc:1 "£job_head_researcher£$job_head_researcher_plural$增加£mod_planet_amenities_add£§Y$PLANET_AMENITIES_TITLE$§!和用于研发新科技的 £physics£ £society£ £engineering£§Y研究点数§!" # BUG 排版问题、无空格图标无法显示
  mod_job_head_researcher_add:0 "$job_head_researcher$职位"
  mod_job_head_researcher_per_pop:0 "每$VALUE$个人口§G+1§!个$job_head_researcher$职位"
  mod_job_head_researcher_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_head_researcher_add£ "
@@ -1014,7 +1014,7 @@
  job_researcher:0 "研究员"
  job_researcher_plural:0 "研究员"
  job_researcher_desc:0 "世界永恒的奥秘在于其可解释性。"
- job_researcher_effect_desc:0 "£job_researcher£$job_researcher_plural$消耗£consumer_goods£§Y$consumer_goods$§!产出用于研发新科技的£physics£ £society£ £engineering£§Y研究点数§!" # BUG
+ job_researcher_effect_desc:0 "£job_researcher£$job_researcher_plural$消耗£consumer_goods£§Y$consumer_goods$§!产出用于研发新科技的 £physics£ £society£ £engineering£§Y研究点数§!" # BUG 排版问题、无空格图标无法显示
  mod_job_researcher_add:0 "$job_researcher$职位"
  mod_job_researcher_per_pop:0 "每$VALUE$个人口§G+1§!个$job_researcher$职位"
  mod_job_researcher_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_researcher_add£ "
@@ -1070,7 +1070,7 @@
  job_manager:1 "管理者"
  job_manager_plural:1 "管理者"
  job_manager_desc:1 "中层管理者的职责是平衡高层与底层员工之间时刻爆发的需求冲突，因此很少有人羡慕。"
- job_manager_effect_desc:1 "£job_manager£$job_manager_plural$消耗£consumer_goods£§Y$consumer_goods$§!产出£unity£§Y$unity$§!、 £mod_trade_value_add£§Y$TRADE_VALUE$§!和£society£ §Y$society_research$§!" # BUG 排版问题
+ job_manager_effect_desc:1 "£job_manager£$job_manager_plural$消耗£consumer_goods£§Y$consumer_goods$§!产出£unity£§Y$unity$§!、£mod_trade_value_add£§Y$TRADE_VALUE$§!和£society£§Y$society_research$§!"
  mod_job_manager_add:0 "$job_manager$职位"
  mod_job_manager_per_pop:0 "每$VALUE$个人口§G+1§!个$job_manager$职位"
  mod_job_manager_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_manager_add£ "

@@ -229,6 +229,7 @@
  MOD_SHIP_ANOMALY_FAIL_RISK:0 "Anomaly Fail Risk"
  MOD_SHIP_ANOMALY_RESEARCH_SPEED:0 "Anomaly Research Speed"
  MOD_SHIP_ANOMALY_GENERATION_CHANCE:0 "Anomaly Discovery Chance"
+ MOD_SHIP_ANOMALY_GENERATION_CHANCE_MULT:0 "$MOD_SHIP_ANOMALY_GENERATION_CHANCE$"
  MOD_SHIP_SCIENCE_SURVEY_SPEED:0 "Survey Speed"
  MOD_SHIP_TRACKING_ADD:0 "Tracking"
  MOD_SHIP_TRACKING_MULT:0 "Tracking"
@@ -456,6 +457,10 @@
  mod_country_base_rare_crystals_produces_add:0 "Monthly £rare_crystals£ Rare Crystals"
  mod_country_base_volatile_motes_produces_add:0 "Monthly £volatile_motes£ Volatile Motes"
  mod_country_base_exotic_gases_produces_add:0 "Monthly £exotic_gases£ Exotic Gases"
+
+ mod_country_base_sr_living_metal_produces_add:0 "Monthly £sr_living_metal£ Living Metal"
+ mod_country_base_sr_dark_matter_produces_add:0 "Monthly £sr_dark_matter£ Dark Matter"
+ mod_country_base_sr_zro_produces_add:0 "Monthly £sr_zro£ Zro"
  
  ####################################
  # Dynamic Modifiers
@@ -1098,7 +1103,7 @@
  migrating_forests:0 "Migrating Forests"
  migrating_forests_desc:0 "The mobile forests of this world frequently migrate en masse to new regions, disrupting efforts at building roads, power lines and other infrastructure."
  migrating_forests_2:0 "Docile Migrating Forests"
- migrating_forests_2_desc:1 "§W£blocker£ §YWandering Forest Reserve§! added, improving £society£ §YResearch§! on neighboring tiles.§!\n\nThe wandering forests on this world now avoid populated areas and no longer cause damage to settlements. Their presence still limits the amount of free land available to colonists."
+ migrating_forests_2_desc:2 "§W§YMigrating Forest Reserve§! added, improving £society£ §YSociety Research§! on the planet.§!\n\nThe wandering forests on this world now avoid populated areas and no longer cause damage to settlements. Their presence still limits the amount of free land available to colonists."
  damaged_ecology:0 "Damaged Ecology"
  damaged_ecology_desc:0 "The destruction of the wandering forests on this world has had a significant effect on the ecology."
  friendly_trees:0 "Forest Adaptation"
@@ -1348,3 +1353,4 @@
  MOD_COUNTRY_IMMIGRATION_PULL_MULT:0 "$MOD_COUNTRY_IMMIGRATION_PULL_ADD$"
  MOD_COUNTRY_EMIGRATION_PUSH_ADD:0 "Empire Emigration Push"
  MOD_COUNTRY_EMIGRATION_PUSH_MULT:0 "$MOD_COUNTRY_EMIGRATION_PUSH_ADD$"
+ fe_ship_cost_modifier: "Ascendancy Shipwrights"

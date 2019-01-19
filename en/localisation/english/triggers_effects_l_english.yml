@@ -27,7 +27,7 @@
  ANY_POP:0 "Any Pop"
  ALL_POPS:0 "\nAll Pops:"
  ANY_PLANET:0 "Any Planet"
- ANY_PLANET_IN_SYSTEM: "Any Planet In System"
+ ANY_PLANET_IN_SYSTEM:0 "Any Planet In System"
  ANY_MEMBER:0 "Any Member"
  NEVER:0 "Never"
  ALWAYS:0 "Always"
@@ -905,7 +905,7 @@
  SET_EVENT_LOCKED_NO:0 "$FLEET|Y$ is unlocked."
  CLEAR_FLEET_ORDERS:0 "Clears orders of $FLEET|Y$."
  ORDER_FORCED_RETURN:0 "Forces $FLEET|Y$ to return to safe space."
- DECLARE_WAR_EFFECT:0 "$FIRST|Y$ declares war on $SECOND|Y$."
+ DECLARE_WAR_EFFECT:1 "$FIRST|Y$ declares war on $SECOND|Y$.\n"
  ADD_CLAIMS_EFFECT:0 "$COUNTRY|Y$ lays claim to $SYSTEM|Y$."
  REMOVE_CLAIMS_EFFECT:0 "$COUNTRY|Y$ loses their claim to $SYSTEM|Y$."
  JOIN_WAR_EFFECT:0 "$FIRST|Y$ joins $SECOND|Y$ as an ally in their wars."
@@ -1235,7 +1235,7 @@
  NUM_TRADE_ROTES_AT_LEAST:0 "Trade routes count is at least $COMPARE$ £trade_value£$VAL1|0Y$"
 
  HAS_SECTOR_TYPE:0 "Sector is $TYPE$"
- HAS_NOT_SECTOR_TYPE:0 "Sector is NOT $TYPE$"\
+ HAS_NOT_SECTOR_TYPE:0 "Sector is NOT $TYPE$"
 
  IS_ARCHETYPE:0 "Is $ARCHETYPE|Y$."
  IS_NOT_ARCHETYPE:0 "Is not $ARCHETYPE|Y$."
@@ -1243,13 +1243,13 @@
  HAS_NOT_NUM_SECTORS:0 "Number of Sectors is NOT $COMPARATOR$ $NUM|Y$"
  HAS_NUM_SECTORS:0 "Number of Sectors is $COMPARATOR$ $NUM|Y$"
 
- HAS_NOT_NUM_UNCLEARED_BLOCKERS: "Numbers of uncleared blockers is NOT $COMPARATOR$ $NUM|Y$"
- HAS_NUM_UNCLEARED_BLOCKERS: "Number of uncleared blockers is $COMPARATOR$ $NUM|Y$"
+ HAS_NOT_NUM_UNCLEARED_BLOCKERS:0 "Numbers of uncleared blockers is NOT $COMPARATOR$ $NUM|Y$"
+ HAS_NUM_UNCLEARED_BLOCKERS:0 "Number of uncleared blockers is $COMPARATOR$ $NUM|Y$"
  
  any_owned_sector_trigger:0 "Any owned sector:"
  any_sector_trigger:0 "Any sector:"
  
  effect_every_neighbor_country:0 "Every neighbor country: "
 
- RANDOM_OWNED_PLANET_EFFECT: "Random $ADJ$ planet ($PLANET|H$):\n\t"
- EVERY_OWNED_PLANET_EFFECT: "Every $ADJ$ planet:\n\t"
+ RANDOM_OWNED_PLANET_EFFECT:0 "Random $ADJ$ planet ($PLANET|H$):\n\t"
+ EVERY_OWNED_PLANET_EFFECT:0 "Every $ADJ$ planet:\n\t"

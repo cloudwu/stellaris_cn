@@ -27,6 +27,7 @@
  ANY_POP:0 "Any Pop"
  ALL_POPS:0 "\nAll Pops:"
  ANY_PLANET:0 "Any Planet"
+ ANY_PLANET_IN_SYSTEM: "Any Planet In System"
  ANY_MEMBER:0 "Any Member"
  NEVER:0 "Never"
  ALWAYS:0 "Always"
@@ -932,7 +933,7 @@
  ADD_EVENT_CHAIN_COUNTER_EFFECT:0 "+$AMOUNT|Y$ $COUNTER$\n"
  ADD_ANOMALY_EFFECT:0 "Add an Anomaly\n"
  SET_DISABLE_AT_HEALTH_EFFECT:0 "Will be disabled upon reaching $VALUE|%Y$ Health"
- ADD_DEPOSIT_EFFECT:1 "Add $DEPOSIT|Y$ to $PLANET|Y$"
+ ADD_DEPOSIT_EFFECT:1 "Add $DEPOSIT|Y$ to $PLANET|Y$\n"
  ADD_RANDOM_DEPOSIT_EFFECT:0 "Add a random deposit to $PLANET|Y$"
  REMOVE_DEPOSIT_EFFECT:0 "Remove $DEPOSIT|Y$ from $PLANET|Y$"
  CLEAR_DEPOSITS_EFFECT:1 "All planetary Features are removed"
@@ -1234,7 +1235,10 @@
  NUM_TRADE_ROTES_AT_LEAST:0 "Trade routes count is at least $COMPARE$ £trade_value£$VAL1|0Y$"
 
  HAS_SECTOR_TYPE:0 "Sector is $TYPE$"
- HAS_NOT_SECTOR_TYPE:0 "Sector is NOT $TYPE$"
+ HAS_NOT_SECTOR_TYPE:0 "Sector is NOT $TYPE$"\
+
+ IS_ARCHETYPE:0 "Is $ARCHETYPE|Y$."
+ IS_NOT_ARCHETYPE:0 "Is not $ARCHETYPE|Y$."
 
  HAS_NOT_NUM_SECTORS:0 "Number of Sectors is NOT $COMPARATOR$ $NUM|Y$"
  HAS_NUM_SECTORS:0 "Number of Sectors is $COMPARATOR$ $NUM|Y$"
@@ -1246,3 +1250,6 @@
  any_sector_trigger:0 "Any sector:"
  
  effect_every_neighbor_country:0 "Every neighbor country: "
+
+ RANDOM_OWNED_PLANET_EFFECT: "Random $ADJ$ planet ($PLANET|H$):\n\t"
+ EVERY_OWNED_PLANET_EFFECT: "Every $ADJ$ planet:\n\t"

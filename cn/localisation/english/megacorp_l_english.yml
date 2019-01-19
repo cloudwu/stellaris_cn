@@ -1,6 +1,6 @@
 ﻿l_english:
- BASE_JOB_INPUT: "职位基础维护费：$RESOURCES$"
- BASE_JOB_OUTPUT: "职位基础产出：$RESOURCES$"
+ BASE_JOB_INPUT:0 "职位基础维护费：$RESOURCES$"
+ BASE_JOB_OUTPUT:0 "职位基础产出：$RESOURCES$"
  PLANET_BUILDQUEUE_UP:0 "$STARBASE_BUILDQUEUE_UP$"
  PLANET_BUILDQUEUE_DOWN:0 "$STARBASE_BUILDQUEUE_DOWN$"
  NUM_MULT:0 "x$NUM$"
@@ -77,7 +77,7 @@
  BRANCH_OFFICE_TRADE_VALUE:0 "来自行星贸易价值：$VALUE$"
  BRANCH_OFFICE_TRADE_VALUE_CRIMINAL_SYNDICATE:0 "因行星上的£crime£§Y$PLANET_CRIME_TITLE$§!而乘以$MULT$。"
  EMPIRE_SIZE:0 "帝国规模" # FIXME urban sprawl is officially translated to 城市蔓延
- EMPIRE_SIZE_DESC:0 "§E§H$EMPIRE_SIZE$§!是衡量帝国疆域，包括控制的§H星系§!、§H殖民地§!和§H地区§!，的总体指标。§H$EMPIRE_SIZE$§!过大会对帝国的行政效率产生负面影响，同时增加§H科技§!、§H传统§!、§H领袖§!和§H$campaigns$§!的花费。§!"
+ EMPIRE_SIZE_DESC:1 "§E§H$EMPIRE_SIZE$§!是衡量帝国疆域，包括控制的§H星系§!、§H殖民地§!和§H地区§!，的总体指标。§H$EMPIRE_SIZE$§!过大会对帝国的行政效率产生负面影响，同时增加§H科技§!、§H传统§!、§H领袖§!、§H法令§!和§H$campaigns$§!的花费。§!"
  EMPIRE_SIZE_TOTAL:1 "帝国总规模：$VALUE|0Y$"
  EMPIRE_SIZE_COHESION_MULT:0 "因$COHESION|0Y%$$EMPIRE_COHESION$而乘以§R$VALUE|0%$§!"
  EMPIRE_SIZE_FROM_DISTRICTS:0 "来自$NUM|Y$块$DISTRICT_DISTRICTS$：$VALUE$"
@@ -588,7 +588,7 @@
  building_corporate_vault:0 "收购宝库"
  building_corporate_vault_desc:0 "一座巨大的地下宝库，既是商业指挥中心，也是纪念这家巨型企业悠久盈利史的公共博物馆。"
  building_nanite_transmuter:0 "纳米变形器"
- building_nanite_transmuter_desc:1 "这座工厂使用非常先进的纳米机器人量产各种稀有资源。"
+ building_nanite_transmuter_desc:2 "这座工厂使用非常先进的纳米机器人量产各种稀有资源。"
  
  building_hab_major_capital:0 "栖所控制中心"
  building_hab_major_capital_desc:1 "一座复杂的官僚机构，负责管理人口众多的栖所。"
@@ -1262,12 +1262,12 @@
  mod_job_underground_trade_worker_per_pop:0 "每$VALUE$个人口§G+1§!个$job_underground_trade_worker$职位"
  mod_job_underground_trade_worker_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_underground_trade_worker_add£ "
  
- job_underground_contact_drone: "地下联络成员" # FIXME drone for both 蜂群 and 机械体
- job_underground_contact_drone_plural: "地下联络成员" # FIXME drone for both 蜂群 and 机械体
- job_underground_contact_drone_desc: "这些成员生活在地下，为地下文明运输资源。"
- mod_job_underground_contact_drone_add: "$job_underground_contact_drone$职位"
- mod_job_underground_contact_drone_per_pop: "每$VALUE$个人口§G+1§!个$job_underground_contact_drone$职位"
- mod_job_underground_contact_drone_per_pop_short: "\n每$VALUE$£pop£§G+1§!£mod_job_underground_contact_drone_add£ "
+ job_underground_contact_drone:0 "地下联络成员" # FIXME drone for both 蜂群 and 机械体
+ job_underground_contact_drone_plural:0 "地下联络成员" # FIXME drone for both 蜂群 and 机械体
+ job_underground_contact_drone_desc:0 "这些成员生活在地下，为地下文明运输资源。"
+ mod_job_underground_contact_drone_add:0 "$job_underground_contact_drone$职位"
+ mod_job_underground_contact_drone_per_pop:0 "每$VALUE$个人口§G+1§!个$job_underground_contact_drone$职位"
+ mod_job_underground_contact_drone_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_underground_contact_drone_add£ "
  
  job_dimensional_portal_researcher:0 "异次元传送门研究员"
  job_dimensional_portal_researcher_plural:0 "异次元传送门研究员"
@@ -1541,9 +1541,9 @@
  edict_motes_armor_desc:0 "利用反应部件强化舰船的装甲，我们的舰船可以用受控的反向爆炸来降低受到的伤害。"
  edict_crystal_focus:0 "聚焦晶体"
  edict_crystal_focus_desc:0 "在舰船上使用更多$rare_crystals$，可以增强其能量武器的伤害。"
- edict_nanite_actuators: "纳米驱动器"
- edict_nanite_actuators_desc: "$sr_distar_nanoactuator_desc$"
- 
+ edict_nanite_actuators:0 "纳米驱动器"
+ edict_nanite_actuators_desc:0 "$sr_distar_nanoactuator_desc$"
+
  rare_edicts:0 "稀有法令"
  ship_edicts:0 "舰船法令"
  gas_edicts:0 "$exotic_gases$法令"
@@ -1755,6 +1755,8 @@
  d_dust_caverns_desc:1 "这些砂质洞穴和隐蔽坑洞中充满了稀有的高爆粉尘。"
  d_numas_breath:0 "努玛之息"
  d_numas_breath_desc:0 "这条深入行星地壳的稳定裂口是由$NAME_Caravaneer_Fleet2$制造的。"
+ d_nanosands:0 "Nanosands"
+ d_nanosands_desc:0 "The sand dunes on this planet are almost entirely composed of countless broken nanites. Their structure is degraded far beyond any chance for reactivation, but they do coat the planet in rare metal granulate."
  
  # Minerals
  d_crystal_forest:0 "水晶森林"
@@ -1774,7 +1776,7 @@
  d_crystalline_caverns:0 "水晶洞穴"
  d_crystalline_caverns_desc:1 "这些山洞犹如巨型的晶洞，里面布满了稀有水晶。"
  d_submerged_ore_veins:0 "深海矿脉"
- d_submerged_ore_veins_desc:1 "大量矿藏分布在海底的部分区域，很适合深海采矿。"
+ d_submerged_ore_veins_desc:2 "大量矿藏分布在海底的部分区域，很适合深海采矿。"
  
  # Food
  d_bountiful_plains:0 "丰茂平原"
@@ -1817,20 +1819,20 @@
  # Energy
  
  # Special 
- d_betharian_deposit:0 "贝塞里安田野"
- d_betharian_deposit_desc:1 "数万万块珍贵的贝塞里安石点缀着这些田野。"
+ d_betharian_deposit:0 "倍燃石沃野"
+ d_betharian_deposit_desc:1 "数万块珍贵的倍燃石点缀着这些田野。"
  d_alien_pets_deposit:0 "孑遗山谷"
  d_alien_pets_deposit_desc:1 "这个原始山谷为周围的山脉所遮蔽，因此这里的生物群没有遭受外来摧残。"
- d_dragon_monument: "$building_guardian_dragon_monument$"
- d_dragon_monument_desc: "$building_guardian_dragon_monument_desc$"
- d_stellarite_trophy: "$building_stellarite_trophy$"
- d_stellarite_trophy_desc: "$building_stellarite_trophy_desc$"
- d_buzzing_plains: "嘈杂平原"
- d_buzzing_plains_desc: "大风吹过，平原上静电噼啪作响。"
- d_mineral_striations: "矿脉辉纹"
- d_mineral_striations_desc: "浅层断层将丰富的矿脉带到了地表。"
- d_natural_farmland: "天然农田"
- d_natural_farmland_desc: "这些平原天然被细分成规则得惊人的几何形状，已经可以用于农业开发。"
+ d_dragon_monument:0 "$building_guardian_dragon_monument$"
+ d_dragon_monument_desc:0 "$building_guardian_dragon_monument_desc$"
+ d_stellarite_trophy:0 "$building_stellarite_trophy$"
+ d_stellarite_trophy_desc:0 "$building_stellarite_trophy_desc$"
+ d_buzzing_plains:0 "嘈杂平原"
+ d_buzzing_plains_desc:0 "大风吹过，平原上静电噼啪作响。"
+ d_mineral_striations:0 "矿脉辉纹"
+ d_mineral_striations_desc:0 "浅层断层将丰富的矿脉带到了地表。"
+ d_natural_farmland:0 "天然农田"
+ d_natural_farmland_desc:0 "这些平原天然被细分成规则得惊人的几何形状，已经可以用于农业开发。"
 
  # Earth
  d_scandinavian_reclamation_sector:0 "斯堪的纳维亚再生区域"
@@ -1954,11 +1956,11 @@
  d_fungoid_extermination_desc:0 "真菌生物被消灭后就剩下这些有毒粘液了。"
  d_ruined_arcology:0 "生态城废墟"
  d_ruined_arcology_desc:0 "覆盖这颗城市星球的生态城已化为废墟。尽管其地基仍然坚实，但在我们重建之前，大量腐朽的建筑结构需要先清理干净。"
- d_egg_cracking: "$egg_cracking$"
- d_egg_cracking_desc: "$egg_cracking_desc$"
+ d_egg_cracking:0 "$egg_cracking$"
+ d_egg_cracking_desc:0 "$egg_cracking_desc$"
 
  #Blockers
- SET_DEPOSIT_EFFECT:0 "添加$DEPOSIT$至$PLANET|Y$"
+ SET_DEPOSIT_EFFECT:1 "添加$DEPOSIT$至$PLANET|Y$\n"
 
  # Space
  d_minerals_1:0 "£minerals£ +1"
@@ -1989,6 +1991,7 @@
  d_engineering_6:0 "£engineering£ +6"
  d_engineering_7:0 "£engineering£ +7"
  d_engineering_8:0 "£engineering£ +8"
+ d_engineering_8_desc: "A vast plain covered in wreckage. Amazingly, some still seems to be semi-functional."
  d_engineering_9:0 "£engineering£ +9"
  d_engineering_10:0 "£engineering£ +10"
  d_physics_1:0 "£physics£ +1"
@@ -2031,7 +2034,7 @@
  d_alloys_3:0 "£alloys£ §Y+3§!"
  d_alloys_4:0 "£alloys£ §Y+4§!"
  d_alloys_5:0 "£alloys£ §Y+5§!"
- d_dark_matter_deposit_1: "£sr_dark_matter£ §Y+1§!"
+ d_dark_matter_deposit_1:0 "£sr_dark_matter£ §Y+1§!"
  
  d_terraforming_gas_deposit:0 "发现环境改造气体\n"
  d_terraforming_fluid_deposit:0 "发现环境改造液体\n"
@@ -2059,12 +2062,12 @@
  decision_caravaneer_bunkbeds_desc:0 "$bunkbeds_deployed_desc$"
  decision_caravaneer_atmospheric_deodorizer:0 "特利仨大气除臭器部署"
  decision_caravaneer_atmospheric_deodorizer_desc:0 "$atmospheric_deodorizer_deployed_desc$"
- decision_art_monument: "展览艺术纪念碑"
- decision_art_monument_desc: "展出艺术家团体为我国创作的振奋人心的艺术纪念碑。它肯定启迪并鼓舞我们的公民。"
- decision_demolish_art_monument: "拆除艺术纪念碑"
- decision_demolish_art_monument_desc: "移除艺术家团体为我国创作的艺术纪念碑。"
- artist_monument_erected: "艺术纪念碑展览中"
- artist_monument_erected_desc: "振奋人心的艺术纪念碑（作者：艺术家团体）正在这颗行星上展览"
+ decision_art_monument:0 "展览艺术纪念碑"
+ decision_art_monument_desc:0 "展出艺术家团体为我国创作的振奋人心的艺术纪念碑。它肯定启迪并鼓舞我们的公民。"
+ decision_demolish_art_monument:0 "拆除艺术纪念碑"
+ decision_demolish_art_monument_desc:0 "移除艺术家团体为我国创作的艺术纪念碑。"
+ artist_monument_erected:0 "艺术纪念碑展览中"
+ artist_monument_erected_desc:0 "振奋人心的艺术纪念碑（作者：艺术家团体）正在这颗行星上展览"
  
  tech_resort_colonies:0 "度假星球"
  tech_resort_colonies_desc:0 "经过仔细研究景观设计、气候控制和娱乐科学，创建完全为休闲而生的星球将成为可能。"
@@ -2152,14 +2155,14 @@
  decision_end_population_control_gestalt:1 "继续成员生产" # FIXME drone for both 蜂群 and 机械体
  decision_end_population_control_gestalt_desc:1 "我们再次需要成员。"
  decision_end_population_control_gestalt_effects_short:1 "行星上£pop£人口可以正常增长"
- decision_enact_robot_assembly_control: "停止机器人装配"
- decision_enact_robot_assembly_control_desc: "停止行星上机器人、智能人和合成人的装配。"
- decision_enact_robot_assembly_control_effects_short: "停止行星上机器人、智能人和合成人的装配。"
- decision_end_robot_assembly_control: "恢复机器人装配"
- decision_end_robot_assembly_control_desc: "恢复行星上机器人、智能人和合成人的装配。"
- decision_end_robot_assembly_control_effects_short: "恢复行星上机器人、智能人和合成人的装配。"
- planet_robot_assembly_control: "机器人装配已停止"
- planet_robot_assembly_control_desc: "目前停止装配机器人、智能人和合成人。"
+ decision_enact_robot_assembly_control:0 "停止机器人装配"
+ decision_enact_robot_assembly_control_desc:0 "停止行星上机器人、智能人和合成人的装配。"
+ decision_enact_robot_assembly_control_effects_short:0 "停止行星上机器人、智能人和合成人的装配。"
+ decision_end_robot_assembly_control:0 "恢复机器人装配"
+ decision_end_robot_assembly_control_desc:0 "恢复行星上机器人、智能人和合成人的装配。"
+ decision_end_robot_assembly_control_effects_short:0 "恢复行星上机器人、智能人和合成人的装配。"
+ planet_robot_assembly_control:0 "机器人装配已停止"
+ planet_robot_assembly_control_desc:0 "目前停止装配机器人、智能人和合成人。"
  decision_expel_population:0 "驱逐过剩人口"
  decision_expel_population_desc:1 "星球上人满为患，需要采取极端措施。行星上将举行一场大规模彩票活动，而“胜者”将被驱逐——如有必要将采用强制手段。"
  decision_expel_population_effects:3 "从行星上驱逐§Y至多10§!£pop£人口以缓解人满为患的问题。被驱逐的人口将成为难民，并可能在其它帝国定居。"
@@ -2268,7 +2271,7 @@
  planet_artisans:0 "工匠职位"
  planet_culture_workers:0 "文化职位"
  planet_nobles:0 "贵族职位"
- planet_merchants: "商人职位"
+ planet_merchants:0 "商人职位"
  planet_entertainers:0 "艺人职位"
  planet_priests:0 "牧师职位"
  planet_soldiers:0 "士兵职位"
@@ -2430,6 +2433,7 @@
  crime.1.a2:0 "启动该项目。"
  crime.1.b2:0 "区区几个叛逆工蜂并不足挂齿。"
  crime.1.a3:0 "启动待命模式。"
+ crime.1.a3.tooltip: "§YStandby Mode§! modifier added for §Y120§! months, giving the following effects: Unemployed Drone Energy Credit Upkeep: §R+2§!"
  crime.1.b3:0 "区区几个损坏无人机并不足挂齿。"
  crime.2.name:0 "[Root.GetName]的受贿官员"
  crime.2.desc:0 "最近收集到的证据表明，§H[Root.GetName]§!政府的一大部分成员都有接收贿赂。贿赂的来源是当地的犯罪组织，理由自然是为了让他们对该组织的行动视而不见。而经过调查发现，受贿官员的一部分竟然也同时是犯罪组织的成员！\n\n虽然我们逮捕了一部分官员，但也有不少人发现情势不对，就直接收拾细软逃走了。看来想要解决[Root.GetName]的受贿问题仍然困难重重。"
@@ -2601,7 +2605,7 @@
  # Megastructures
  matter_decompressor_0:1 "$matter_decompressor_4$位址"
  matter_decompressor_0_DESC:0 "这个建筑工地将会成为以后建造$matter_decompressor_1$的基础。"
- matter_decompressor_0_MEGASTRUCTURE_DETAILS:2 "§Y$matter_decompressor_4$§!集束一颗黑洞的重力，将其重新引导为一道巨大的重力钻，从奇点中获取物质并转换为£minerals£矿物。"
+ matter_decompressor_0_MEGASTRUCTURE_DETAILS:3 "§Y$matter_decompressor_4$§!集束一颗黑洞的重力，形成一个巨大的重力钻从奇点开采 £minerals£ 矿物。"
  matter_decompressor_1:1 "物质解压器：锚定"
  matter_decompressor_1_DESC:1 "使用先进的引力重定向引擎来将设施基地固定在黑洞的外围边缘上。"
  matter_decompressor_1_MEGASTRUCTURE_DETAILS:0 "$matter_decompressor_0_MEGASTRUCTURE_DETAILS$"
@@ -2929,8 +2933,8 @@
  fleet1product4:0 "上好的§G特利仨小玩意收藏套装§!！这里面全是时尚艳丽的小玩意儿，肯定会让你成为全场瞩目的焦点。"
  fleet1product4_addendum:1 "（在不同人眼里商品的价值可能会有所不同。）"
  fleet1product5:0 "§G范格利集团销售技术团队§!。将会部署于你的帝国的每一个行星基地，他们将会增长你所有星系的$TRADE_VALUE$收益。（酸民们可能会用“人为膨胀”来形容这一过程）"
- fleet1product5_addendum:0 "§H销售团队将会居住在你的太空基地之中，他们只吃特利仨牌营养面条，与他们对你的$TRADE_VALUE$影响比起来，他们造成的人口影响以及经济影响完全不值一提。这项任务的期限为§Y80年§!。在有效期内提升§Y$TRADE_VALUE$§!大约§G+10%§!。§!"
- fleet1product6:1 "§G特利仨牌孵化池刺激素§!！厌烦了等待你的幼虫，或是相当于幼虫的幼崽变成成虫，或是相当于成虫的成年生物了吗？用这些超级安全的刺激素来加速其成长吧！"
+ fleet1product5_addendum:1 "§H销售团队将会居住在你的太空基地之中，他们只吃范格利牌营养面条，与他们对你的$TRADE_VALUE$影响比起来，他们造成的人口影响以及经济影响完全不值一提。这项任务的期限为§Y80年§!。在有效期内提升§Y$TRADE_VALUE$§!大约§G+15%§!。§!"
+ fleet1product6:1 "§G范格利牌孵化池刺激素§!！厌烦了等待你的幼虫，或是相当于幼虫的幼崽变成成虫，或是相当于成虫的成年生物了吗？用这些超级安全的刺激素来加速其成长吧！"
  fleet1product6_addendum:0 "请注意，你的物种的身体免疫系统中的抗生素会导致此催化剂在§H十年§!期限后失效。不过在这十年间，你将会享有人口暴增的红利时期，§Y$MOD_POP_GROWTH_SPEED$§!大幅增长§G10%§!。"
  fleet1product7:0 "数个手提箱的£energy£ §Y$energy$§!！总共相当于£energy£ §G2000§!§Y$energy$§!。你和我们一样兴奋吗？但愿如此。"
  fleet1product7_addendum:0 "范格利集团：在对的地方帮助对的外星人。"
@@ -3389,8 +3393,8 @@
  6monthsocietycost_desc:0 "我们正在偿还欠范格利集团的债务。"
  galactic_market_founder:0 "市场中枢"
  galactic_market_founder_desc:0 "银河贸易市场空间站坐落于此。"
- consecrated_modifier_12: "$consecrated_modifier_0$"
- consecrated_modifier_11: "$consecrated_modifier_0$"
+ consecrated_modifier_12:0 "$consecrated_modifier_0$"
+ consecrated_modifier_11:0 "$consecrated_modifier_0$"
  consecrated_modifier_10:0 "$consecrated_modifier_0$"
  consecrated_modifier_9:0 "$consecrated_modifier_0$"
  consecrated_modifier_8:0 "$consecrated_modifier_0$"
@@ -3969,6 +3973,7 @@
  
  mod_station_gatherers_minerals_produces_mult:0 "$mining_station$矿物产出"
  activity_program_tooltip:0 "失业工蜂将需要1额外的£food£。"
+ standby_mode_tooltip: "Unemployed Drone Energy Credit Upkeep: §R+2§!"
 
  FEATURES:0 "特征"
  EXPANSION_PLANNER_RARE_DEPOSITS:0 "稀有矿藏"
@@ -4004,9 +4009,16 @@
  pre_sapients_count:0 "$pop_cat_pre_sapients_plural$：$COUNT|Y$ £pop£$POP_POPS$"
  NOT_COUNTED:0 "未统计"
 
- LOW_HABITABILITY_NAME: "低适居性"
- LOW_HABITABILITY_DESC: "这颗行星对于选中的种族适居性低，殖民虽然可行，但所有的人口将在维护费和资源消耗方面遭受惩罚。\n\n你依旧想殖民这颗行星吗？"
- requires_no_existing_matter_decompressor: "$TRIGGER_FAIL$只能建造一座$matter_decompressor_4$。"
- requires_no_existing_strategic_coordination_center: "$TRIGGER_FAIL$只能建造一座$strategic_coordination_center_3$。"
- requires_no_existing_mega_art_installation: "$TRIGGER_FAIL$只能建造一座$mega_art_installtion_3$。"
- requires_no_existing_interstellar_assembly: "$TRIGGER_FAIL$只能建造一座$interstellar_assembly_4$。"
+ LOW_HABITABILITY_NAME:0 "低适居性"
+ LOW_HABITABILITY_DESC:0 "这颗行星对于选中的种族适居性低，殖民虽然可行，但所有的人口将在维护费和资源消耗方面遭受惩罚。\n\n你依旧想殖民这颗行星吗？"
+ requires_no_existing_matter_decompressor:0 "$TRIGGER_FAIL$只能建造一座$matter_decompressor_4$。"
+ requires_no_existing_strategic_coordination_center:0 "$TRIGGER_FAIL$只能建造一座$strategic_coordination_center_3$。"
+ requires_no_existing_mega_art_installation:0 "$TRIGGER_FAIL$只能建造一座$mega_art_installtion_3$。"
+ requires_no_existing_interstellar_assembly:0 "$TRIGGER_FAIL$只能建造一座$interstellar_assembly_4$。"
+
+ observation.1011.b: "It is not our problem."
+
+ already_bought: "We have yet to purchase this product"
+
+ GetPurgeProcessingResource_food: "nutrient-rich food sources, boosting £food£ §HFood§!"
+ GetPurgeProcessingResource_minerals: "scrap metal, boosting £minerals£ §HMineral§!"

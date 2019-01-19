@@ -229,6 +229,7 @@
  MOD_SHIP_ANOMALY_FAIL_RISK:0 "异常现象失败风险"
  MOD_SHIP_ANOMALY_RESEARCH_SPEED:0 "异常现象研究速度"
  MOD_SHIP_ANOMALY_GENERATION_CHANCE:0 "异常现象发现机会"
+ MOD_SHIP_ANOMALY_GENERATION_CHANCE_MULT:0 "$MOD_SHIP_ANOMALY_GENERATION_CHANCE$"
  MOD_SHIP_SCIENCE_SURVEY_SPEED:0 "勘察速度"
  MOD_SHIP_TRACKING_ADD:0 "追踪"
  MOD_SHIP_TRACKING_MULT:0 "追踪"
@@ -456,7 +457,11 @@
  mod_country_base_rare_crystals_produces_add:0 "每月£rare_crystals£稀有水晶"
  mod_country_base_volatile_motes_produces_add:0 "每月£volatile_motes£高爆粉尘"
  mod_country_base_exotic_gases_produces_add:0 "每月£exotic_gases£奇异瓦斯"
- 
+
+ mod_country_base_sr_living_metal_produces_add:0 "每月£sr_living_metal£活金属"
+ mod_country_base_sr_dark_matter_produces_add:0 "每月£sr_dark_matter£暗物质"
+ mod_country_base_sr_zro_produces_add:0 "每月£sr_zro£卓气"
+
  ####################################
  # Dynamic Modifiers
  ####################################
@@ -1098,7 +1103,7 @@
  migrating_forests:0 "迁徙森林"
  migrating_forests_desc:0 "此星球上的移动森林频繁迁移到新地区，破坏了公路、电缆等基础设施的建设。"
  migrating_forests_2:0 "驯服迁徙森林"
- migrating_forests_2_desc:1 "§W£blocker£ §Y迁徙森林保护区§!已添加，改善相邻地块的£society£ §Y研究§!。§!\n\n此星球的迁徙森林现在会躲避居民区，也不会再对殖民地造成损害了，但其存在仍然限制了殖民者能够利用的土地。"
+ migrating_forests_2_desc:2 "§W§Y迁徙森林保护区§!已添加，改善该行星的 £society£ §Y社会研究§!。§!\n\n此星球的迁徙森林现在会躲避居民区，也不会再对殖民地造成损害了，但其存在仍然限制了殖民者能够利用的土地。"
  damaged_ecology:0 "生态受损"
  damaged_ecology_desc:0 "此星球的迁徙森林遭到人为破坏，将对生态造成显著影响。"
  friendly_trees:0 "顺应天道"
@@ -1348,3 +1353,4 @@
  MOD_COUNTRY_IMMIGRATION_PULL_MULT:0 "$MOD_COUNTRY_IMMIGRATION_PULL_ADD$"
  MOD_COUNTRY_EMIGRATION_PUSH_ADD:0 "帝国迁出推动力"
  MOD_COUNTRY_EMIGRATION_PUSH_MULT:0 "$MOD_COUNTRY_EMIGRATION_PUSH_ADD$"
+ fe_ship_cost_modifier: "优势造船工"

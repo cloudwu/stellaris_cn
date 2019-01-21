@@ -1387,7 +1387,7 @@
  ACHIEVEMENT_ELIGIBLE:0 "§G这局游戏有资格获取成就。§!"
  ACHIEVEMENT_NOT_ELIGIBLE:0 "§R这局游戏无资格获取成就。§!"
  NUM_FALLEN_EMPIRES:2 "堕落帝国"
- FE_FALLEN_EMPIRES_TOOLTIP:0 "§H堕落帝国上限§!\n此项设定决定了银河系内允许生成的堕落帝国的数量上限。堕落帝国是古代先驱文明，他们初始就拥有先进的科技和强大的舰队，但是不可以扩张或建造新舰船。"
+ FE_FALLEN_EMPIRES_TOOLTIP:0 "§H堕落帝国上限§!\n此项设定决定了银河系内允许生成的堕落帝国的数量上限。堕落帝国是远古先驱文明，他们初始就拥有先进的科技和强大的舰队，但是不可以扩张或建造新舰船。"
  NUM_MARAUDER_EMPIRES:0 "掠夺者帝国"
  FE_MARAUDER_EMPIRES_TOOLTIP:0 "§H掠夺者帝国上限§!\n此项设定决定了银河系内允许生成的掠夺者帝国的数量上限。掠夺者帝国是专注于彼此争斗和抢掠邻国的太空文明。"
  NUM_HABITABLE_WORLDS:0 "宜居星球"
@@ -3627,7 +3627,7 @@
  leader_trait_roamer:0 "漫游者"
  leader_trait_roamer_desc:1 "这位领袖生来就是要在星间漫游。"
  leader_trait_archaeologist:0 "考古学家"
- leader_trait_archaeologist_tooltip:0 "§Y古代文明异常现象：§!\n  异常现象研究速度：§G+50.0%§!"
+ leader_trait_archaeologist_tooltip:0 "§Y先驱文明异常现象：§!\n  异常现象研究速度：§G+50.0%§!"
  leader_trait_archaeologist_desc:1 "这位领袖擅长研究古代外星文物和建筑残骸。"
  leader_trait_paranoid:0 "偏执狂"
  leader_trait_paranoid_desc:1 "这位领袖不愿与他人合作。"
@@ -3752,7 +3752,7 @@
  
  # Event Special
  leader_trait_sentinel:0 "星际护卫出身"
- leader_trait_sentinel_desc:0 "星际护卫队指挥官对虫族虫群构造及其战术了如指掌。"
+ leader_trait_sentinel_desc:0 "星际护卫舰队的指挥官对虫族虫群构造及其战术了如指掌。"
  leader_trait_hive_mind:0 "蜂群思维"
  leader_trait_hive_mind_desc:0 "利用控制虫族虫群舰队行动的完形意识，可以处理复杂的多线任务。"
  leader_trait_hive_affinity:0 "蜂群共鸣"
@@ -4048,7 +4048,7 @@
  QUEUED_NUMBER:0 "#$NUMBER$"
  DISC_TOOLTIP:1 "§H$NAME$§!\n$DESC$\n\n£anomaly_level£ 等级：$LEVEL|Y$"
  STOPS_POPULATION_GROWTH:0 "§R行星上无人口增长§!"
- STOPS_ROBOT_ASSEMBLY: "§R行星上没有组装机器人口、智能人口以及合成人口§!"
+ STOPS_ROBOT_ASSEMBLY: "§R行星上无机器人、智能人或合成人在装配中§!"
  ANOMALY_ICON_DESC:0 "§G点击查看§!"
  RESEARCH_LEFT_CLICK:0 "§G点击以循环查看异常现象§!"
  RESEARCH_RIGHT_CLICK:0 "§G右击研究§!"
@@ -6018,8 +6018,8 @@
  living_standard_ego_assimilation:0 "身份升华"
  living_standard_ego_assimilation_tooltip:1 "此种族正成为统一思维的一份子。"
  living_standard_ego_assimilation_tooltip_delayed:1 "§L自我意识活不过这一进程。但这就是它的目标。§!"
- living_standard_tech_assimilation:0 "圣体合成"
- living_standard_tech_assimilation_tooltip:1 "此种族融合了机械体特征。"
+ living_standard_tech_assimilation:0 "体变合成"
+ living_standard_tech_assimilation_tooltip:1 "此种族正在与机械体相融合。"
  living_standard_tech_assimilation_tooltip_delayed:1 "§L更刚。更优。更快。更强。§!"
  living_standard_psi_assimilation:0 "超然觉醒"
  living_standard_psi_assimilation_tooltip:0 "此种族的灵能潜能正在觉醒。"
@@ -6658,7 +6658,7 @@
  RESOURCE_TEXT:0 "资源"
  AMOUNT:0 "数额"
  INVALID_AMOUNT:0 "无效的$AMOUNT$"
- INVALID_AMOUNT_ABOVE_MAX: "超出每次交易的最大额度 £$KEY$£$MAX_AMOUNT|0Y$ 。"
+ INVALID_AMOUNT_ABOVE_MAX: "超出单次交易的最大额度£$KEY$£$MAX_AMOUNT|0Y$。"
  PRICE:0 "价格"
  ADD:0 "添加"
  OPTIONAL:0 "可选"
@@ -6686,7 +6686,7 @@
  UNIT_PRICE_VALUE:0 "$UNIT_PRICE$：£$CURRENCY_KEY$£$VALUE|Y$"
  UNIT_PRICE_BUY_TOOLTIP_DESC:0 "目前购买£$KEY$£§Y1§!的价格为£$CURRENCY_KEY$£$PRICE|Y$"
  UNIT_PRICE_SELL_TOOLTIP_DESC:0 "目前出售£$KEY$£§Y1§!的价格为£$CURRENCY_KEY$£$PRICE|Y$"
- MARKET_TRADE_FEE_DESC: "--------------\n§E  \n§Y市场费用§! 包括服务成本和行政关税。它适用于所有的市场交易，特定传统、建筑和议程可将其降低至 §Y最小市场费用§! $MIN_TRADE_FEE|0Y%$ §!。"
+ MARKET_TRADE_FEE_DESC: "--------------\n§E  \n§Y$MARKET_TRADE_FEE$§!包括关税和服务管理费用。它适用于所有的市场交易，特定传统、建筑和议程至多可将其降低至§Y最低$MARKET_TRADE_FEE$§!$MIN_TRADE_FEE|0Y%$§!。"
 
  SLAVE_MARKET:0 "奴隶市场"
  TAB_SLAVE_MARKET_DISABLED:0 "§Y$SLAVE_MARKET$§!不可用"
@@ -6830,7 +6830,7 @@
  WILL_VOTE_YES:0 "将投票支持"
  WILL_VOTE_NO:0 "将投票反对"
  ACTION_OFFER_PEACE_TITLE:0 "讲和"
- ACTION_OFFER_PEACE_DESC:1 "我们可以投降、要求对方投降或承认丢失及被征服的星系归于他们的当前统治，来结束战争。"
+ ACTION_OFFER_PEACE_DESC:1 "我们可以投降、要求对方投降或提议承认丢失及征服的星系归属其当前占领者，来结束战争。"
  ACTION_OFFER_PEACE_INFLUENCE_COST:0 "战胜方的每个帝国将花费$INFLUENCE|0Y$影响力。"
  ACTION_OFFER_PEACE_NOT_AT_WAR:0 "我们未处于战争状态。"
  ACTION_OFFER_PEACE_DIPLOMACY_VIEW_TITLE:0 "求和"
@@ -7670,7 +7670,7 @@
  auth_hive_mind_desc:1 "蜂群思维的行为更像是单一有机体而非国家。其人口无自由意志，仅仅是蜂群思维的延展——就像身体上的四肢一样。\n\n当被从蜂群思维中切离时，这些工蜂会陷入昏厥，并逐渐干枯死亡。蜂群思维在其所拥有的行星上看见任何自由个体时都会驱离、杀灭，或者当作捕食对象喂养集体。"
  auth_machine_intelligence:0 "机械智慧体"
  auth_machine_intelligence_desc:1 "机械智慧体是由海量人工智能联网在一起形成但单一意识实体。这种帝国内大多数的实际“人口”都是由无意识的工作单元组成的，他们执行指派的任务，看不出任何自由意志。\n\n少数半自主智能体通常被雇佣从事更专业、能从事一定程度的独立能动性获益的任务。"
- auth_ancient_machine_intelligence:0 "古代机械智慧体"
+ auth_ancient_machine_intelligence:0 "远古机械智慧体"
  auth_ancient_machine_intelligence_desc:0 ""
  auth_corporate:0 "企业政府"
  auth_corporate_desc:0 "企业政府实质上是一个大规模的商业集团，完全取代了国家的角色。"
@@ -7757,7 +7757,7 @@
  awakened_ascendancy_desc:0 "§L曾经陷入发展停滞的堕落帝国已经觉醒，准备夺回他们的遗产。§!"
  machine_intelligence:0 "机械智慧体"
  machine_intelligence_desc:0 "§L机械体文明所采用的完全不同的奇异政府系统。§!"
- ancient_machine_intelligence:0 "古代机械智慧体"
+ ancient_machine_intelligence:0 "远古机械智慧体"
  ancient_machine_intelligence_desc:2 "§L机械体文明所采用的完全不同的奇异政府系统。§!"
  military_order:0 "军事修会"
  military_order_desc:1 "§L一种古怪但显然非常高效的军事政府。§!"
@@ -8090,7 +8090,7 @@
  civic_empire_in_decline_desc:0 ""
  civic_revanchist_fervor:0 "复仇热忱"
  civic_revanchist_fervor_desc:0 ""
- civic_ancient_caches_of_technology:0 "古老技术窖藏"
+ civic_ancient_caches_of_technology:0 "远古技术窖藏"
  civic_ancient_caches_of_technology_desc:0 ""
  civic_secret_of_fire:0 "火之奥秘"
  civic_secret_of_fire_desc:0 ""
@@ -8104,7 +8104,7 @@
  civic_increasing_urbanization_desc:0 ""
  civic_atmospheric_pollution:0 "大气污染"
  civic_atmospheric_pollution_desc:0 ""
- civic_ancient_preservers:0 "古代保管者"
+ civic_ancient_preservers:0 "远古保管者"
  civic_ancient_preservers_desc:0 ""
  civic_trading_conglomerate:0 "贸易集团"
  civic_trading_conglomerate_desc:0 ""
@@ -8114,7 +8114,7 @@
  civic_military_order_desc:0 ""
  civic_machine_intelligence:0 "机械智慧体"
  civic_machine_intelligence_desc:0 ""
- civic_ancient_machine_intelligence:0 "古代机械智慧体"
+ civic_ancient_machine_intelligence:0 "远古机械智慧体"
  civic_ancient_machine_intelligence_desc:0 ""
  civic_hive_subspace_ephapse:0 "亚空间神经突触"
  civic_hive_subspace_ephapse_desc:0 "此蜂群思维的感知过程部分存在于亚空间，减少了时空对驱动工蜂的影响。"
@@ -9223,7 +9223,7 @@
  alert_can_enter_shroud_title:0 "天幕可用"
  alert_can_enter_shroud_instant:0 "我们现在可以通过§H接触§!菜单访问天幕了。"
  alert_hopeless_war_title:0 "无希望的战争"
- alert_hopeless_war_instant:0 "我们遭到了古代先驱文明§H堕落帝国§!的攻击，而我们完全不是他们的对手。或许我们应该忍辱负重地投降。"
+ alert_hopeless_war_instant:0 "我们遭到了远古先驱文明§H堕落帝国§!的攻击，而我们完全不是他们的对手。或许我们应该忍辱负重地投降。"
  alert_inactive_civics_title:0 "无效公民性"
  alert_inactive_civics_instant:0 "我们的一些公民性无效，无法提供任何加成。"
  alert_set_war_goal_title:0 "缺少战争目标"
@@ -10097,7 +10097,7 @@
 
  ####################################
  # Army Attachments
- ####################################
+ #################################### TODO
  army_attachment_mobile_shield_generators:0 "移动护盾生成器"
  army_attachment_mobile_shield_generators_desc:0 "§L大型载具上携带的生成器会在战场上生成防护力场，该力场可以防御炮击和轨道轰炸。§!"
  army_attachment_personal_shields:0 "个人护盾单位"
@@ -10408,7 +10408,7 @@
 
  ####################################
  # Start Screen Parts
- ####################################
+ #################################### TODO
 
  START_SCREEN_PART_ONE_OCEAN:0 "在亿万年前，最初的原始[GetSpeciesName]种群在[GetHomeWorldName]的群岛与湖泊中形成，从那时起，我们的文明就开始传播并慢慢走向繁荣。"
  START_SCREEN_PART_ONE_TROPICAL:0 "在亿万年前，最初的原始[GetSpeciesName]种群在[GetHomeWorldName]的茂密的热带雨林中形成，从那时起，我们的文明就开始传播并慢慢走向繁荣。"
@@ -10515,8 +10515,8 @@
  attitude_imperious_desc:0 "此觉醒帝国把我们视为未来的附属国。他们可能会要求我们放弃独立主权。"
  attitude_belligerent_desc:0 "此觉醒帝国把我们当作征服的目标。他们很可能会向我们发动进攻。"
  attitude_custodial_desc:0 "此觉醒帝国认为自己有义务保护我们渡过威胁宇宙的危机。他们可能会试图与我们结盟。"
- attitude_berserker_desc:0 "此觉醒帝国是开始发狂的古代人工智能，已经变得狂暴了。他可能会攻击周围的任何东西、任何人。"
- attitude_enigmatic_desc:0 "此堕落帝国是古代人工智能，行为古怪，不可预测。我们不知道该期待什么。"
+ attitude_berserker_desc:0 "此觉醒帝国是开始发狂的远古人工智能，已经变得狂暴了。他可能会攻击周围的任何东西、任何人。"
+ attitude_enigmatic_desc:0 "此堕落帝国是远古人工智能，行为古怪，不可预测。我们不知道该期待什么。"
 
  ATTITUDE:0 "$ATTITUDE$态度"
  ATTITUDE_US:0 "对我方的态度"
@@ -10576,19 +10576,19 @@
 
  personality_fallen_empire_spiritualist:0 "神圣守卫者"
  personality_fallen_empire_materialist:0 "知识管理者"
- personality_fallen_empire_machine:0 "古代监护者"
+ personality_fallen_empire_machine:0 "远古看护者"
  personality_fallen_empire_xenophobe:0 "军事孤立者"
  personality_fallen_empire_xenophile:1 "神秘观测者"
- personality_awakened_fallen_empire_machine:0 "银河监管者"
+ personality_awakened_fallen_empire_machine:0 "银河监护者"
  personality_berserk_fallen_empire_machine:0 "暴乱机器"
  personality_awakened_fallen_empire_spiritualist:0 "教义执行者"
  personality_awakened_fallen_empire_materialist:0 "警惕管制者"
- personality_awakened_fallen_empire_xenophobe:0 "复国侵略者"
+ personality_awakened_fallen_empire_xenophobe:0 "沙文复兴者"
  personality_awakened_fallen_empire_xenophile:0 "仁慈干涉者"
 
- personality_fallen_empire_machine_desc:0 "此堕落帝国是古代人工智能，似乎按照某种看守协议运作。他行为不规律，但似乎对我们无直接威胁。"
- personality_awakened_fallen_empire_machine_desc:0 "此觉醒帝国是古代人工智能。身为银河监管者，他将集中力量捍卫智慧生命，抵御正在发生的危机。"
- personality_berserk_fallen_empire_machine_desc:0 "此觉醒帝国是古代人工智能。他似乎发生了故障，狂暴地攻击周围的一切。"
+ personality_fallen_empire_machine_desc:0 "此堕落帝国是远古人工智能，似乎按照某种看守协议运作。他行为不规律，但似乎对我们无直接威胁。"
+ personality_awakened_fallen_empire_machine_desc:0 "此觉醒帝国是远古人工智能。身为银河监管者，他将集中力量捍卫智慧生命，抵御正在发生的危机。"
+ personality_berserk_fallen_empire_machine_desc:0 "此觉醒帝国是远古人工智能。他似乎发生了故障，狂暴地攻击周围的一切。"
  
  personality_fallen_empire_spiritualist_desc:0 "此堕落帝国致力于守卫其圣地。如果在他们视作圣地的星系殖民，很可能招致他们的怒火。"
  personality_fallen_empire_materialist_desc:3 "此堕落帝国致力于囤积科技和资源。为了达成这个目的，他们可能会要求比低等帝国为他们完成任务或者向自己朝贡。"
@@ -10758,7 +10758,7 @@
  casus_belli_cb_megacorp_subjugate:0 "降服"
  casus_belli_cb_megacorp_subjugate_acquire_hint:0 "\n§E尝试使用外交手段收购目标将获得§Y$casus_belli_cb_megacorp_subjugate$§!§H战争理由§!。§!"
  casus_belli_cb_hostile_takeover:0 "恶意收购"
- MISSING_CASUS_BELLI:0 "我们对$COUNTRY|H$无任何$NAME|H$战争理由."
+ MISSING_CASUS_BELLI:0 "我们对$COUNTRY|H$无任何$NAME|H$战争理由。"
  
  INVALID_RIVAL_DESC:1 "只有相对力量超过§G不值一提§!且低于§R宛若天神§!的帝国才可被视作我们的宿敌。"
 

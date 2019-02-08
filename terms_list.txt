@@ -6,9 +6,12 @@ effect : 效应
 cost : 花费（v）；消耗（v）；费用（n）；成本（n）；开销（n）；
 upkeep : 维护费
 lifeform : 生命形式；生物
+lesser lifeform : 低级生物
+complex : 复合体；综合设施；建筑群
+nexus : 中枢；绊联
+hub : 枢纽
 (add/gain) {modifier} modifier (to {place}) (for {time}): （添加/获得）（持续{time}的）{modifier}调整因素（至{place}）
 (giving/with/cause) the following effect(s) : （带来/造成）下列效应
-lesser lifeform : 低级生物
 Xeno : 异星；异族；异种；异形
 Dimension(al) : 次元；维度（第n维度）
 Extradimension(al) : 异次元
@@ -46,17 +49,18 @@ Droid : 智能人
 Synthetic : 合成人
 
 # Pop
+drone : 工蜂（蜂群）；无人机（机械体）；成员（统称）
 Pop Approval Rating : 民众支持率
 Political Power : 政治权力
 Assembl(e/y) : 装配
 Disassemble : 拆解
+Pop Growth : 人口增长
+Pop Decline : 人口下降
 Migration : 移民
 Emigration : 迁出移民
 Emigration Push : 迁出推动力
 Immigration : 迁入移民
 Immigration Pull : 迁入吸引力
-Pop Growth : 人口增长
-Pop Decline : 人口下降
 
 Faction : 党；党派
 Faction Approval : 党派赞同度
@@ -68,10 +72,13 @@ Housing Usage : 住房使用
 Overcrowding : 人满为患
 Infrastructure : 基础设施
 Amenities : 舒适度
-Crime : 犯罪率
-Deviancy : 异常率
-deviant : 叛逆
-corrupted : 损坏
+crime :
+    Crime : 犯罪率
+    Deviancy : 异常率
+    deviant : 叛逆；异常
+    corrupt(-ed/-ion) : 损坏
+    criminal underworld : 黑社会
+    gang : 黑帮
 Stability : 稳定度
 Devastation : 破坏度
 District:
@@ -92,10 +99,6 @@ District:
     Leisure Arcology : 休闲生态城
     Nexus District : 中枢区
     Hive District : 蜂巢区
-## Building
-complex : 复合体；综合设施；建筑群
-nexus : 中枢；绊联
-hub : 枢纽
 ## Planetary Feature
 Planetary Feature : 行星地貌
 deposit : 矿藏；贮藏；沉积
@@ -121,7 +124,6 @@ Tomb World : 废土世界
 Machine World : 机械世界
 Hive World : 蜂巢世界
 Shattered World : 破碎世界
-(Orbital) Habitat : 轨道栖所
 Holy World : 圣星
 
 # Job
@@ -129,8 +131,6 @@ Job : 职位；职业；工作
 Stratum/-a : 阶级
 
 # 行为
-Survey : 勘察
-Jump : 跃迁
 Uplift : 开化
 Purge : 肃清；大清洗
 Purging : 肃清；肃清中；大清洗
@@ -159,23 +159,25 @@ Admiral : 舰队司令
 Deflector : 偏向器
 X-ray Laser : X射线激光
 Garrison : 驻军
-Drone : 无人机
 Projectile (weapon) : 投射武器
 Warp : 曲速
 HyperDrive : 超空间驱动
 JumpDrive : 折跃引擎
-Psionic : 灵能
 FTL : 超光速引擎(FTL)
 FTL travel : 超光速航行
 Hyperlane : 超空间航道
 Positronic : 正电子
 
 # Ship
-Ship : 舰船；军舰
+ship : 舰船；军舰；飞船
+starship : 星舰
 component : 部件
 section : 区块
 armor : 装甲
 shield : 护盾
+actions :
+    survey : 勘察
+    jump : 跃迁
 reinforce : 增援
 crew : 船组（全体船员）；船员；船员们
 Science Officer : 科学官
@@ -212,6 +214,7 @@ overmind : 主思维
 Machine Intelligence : 机械智慧体
 core intelligence : 核心智慧（体）
 Fallen Empire : 堕落帝国
+(Stagnant/Awakened) Ascendancy : （停滞/觉醒）上国
 Megacorporation : 巨型企业
 Corporate Empire : 企业帝国
 Corporate : 企业；企业政府
@@ -239,22 +242,22 @@ Stratification : 阶层社会
 
 Tradition : 传统
 Ascension Perk : 飞升特典
-Shroud : 天幕
 
 # 外交
 League of Non-Aligned Powers : 不结盟力量联合体
-Subject : 附属国
-Tributary : 藩属国
-Vassal : 附庸国
-Thrall : 仆从国
-Dominion : 自治领
-Signatory : 协约国
-Satellite : 卫星国
-Subsidiary : 子公司
-Lord : 宗主国
-Embassy : 大使馆；外交使节 # 未实际使用
+Embassy : 使馆；外交使节 # 未实际使用
 opinion : 评价
 Rival : 宿敌
+subjects :
+    Subject : 附属国
+    Tributary : 藩属国
+    Vassal : 附庸国
+    Thrall : 仆从国
+    Dominion : 自治领
+    Signatory : 协约国
+    Satellite : 卫星国
+    Subsidiary : 子公司
+    Lord : 宗主国
 Non-Aggression Pact : 互不侵犯条约
 Defensive Pact : 防御条约
 Truce : 停战协定
@@ -266,29 +269,20 @@ Trade Treaty/Deal : 贸易协定
 Federation : 联邦
 Alliance : 联盟
 
-Habitability : 适居性
-Subspace : 亚空间
-Homeworld : 母星
-Frontier : 边境
-Species : 种族
-Spaceport : 太空港
-Station : 基地
-Power : 能量
-
-# Resource
-Raw Resource : 原材料
-Food : 食物；粮食
-Mineral : 矿物
-Energy (credits) : 能源(点数)
-Manufacturing : 制造业
-Alloys : 合金
-Consumer Goods : 消费品
-Unity : 凝聚力
-Volatile Motes : 高爆粉尘
-Exotic Gases : 奇异瓦斯
-Rare Crystals : 稀有水晶
-Living Metal : 活金属
-Research : 研究
+resources :
+    Raw Resource : 原材料
+    Energy (credits) : 能源(点数)
+    Mineral : 矿物
+    Food : 食物；粮食
+    Manufacturing : 制造业
+    Alloys : 合金
+    Consumer Goods : 消费品
+    Unity : 凝聚力
+    Volatile Motes : 高爆粉尘
+    Exotic Gases : 奇异瓦斯
+    Rare Crystals : 稀有水晶
+    Living Metal : 活金属
+    Research : 研究
 
 # Trade
 Trade Value : 贸易价值
@@ -302,17 +296,17 @@ Market Leader : 市场领袖
 Trade : 贸易；交易
 Branch Office : 分公司
 
+Habitability : 适居性
+Subspace : 亚空间
+Homeworld : 母星
+Frontier : 边境
+Spaceport : 太空港
+Station : 基地
+Power : 能量
 
 organic creator : 有机创造者
 organic : 有机体
 Machine : 机械体
-
-cybernetics : 神经机械学
-cybernetic implant : 机械内植体
-implant : 内植物
-cyborg : 半机械人
-cybernetic unit : 半机械单元
-cybernetic : 半机械化
 
 Pre-Sapient : 亚智慧；亚智慧物种
 space-borne : 星际（生物/种族/国家 等等）
@@ -320,61 +314,30 @@ warform : 作战体
 
 Sensor : 传感器
 
-megastructure : 巨型结构
 Yurantic Crystals : 羽然水晶
 Aldar Crystals : 阿达尔水晶
 
-# 事件名词
-Migrating Forests : 迁徙森林
-Zanaam : 扎娜姆
-Ancient One : 旧日支配者
-Kuur : 克尔母
-space creatures:
-    Tiyanki : 天凯
-    Void Cloud : 虚空之云
-    Space Amoeba : 太空变形虫
-
-# precursor
-Cybrex : 赛博霸王
-Javorian Pox : 枫痘   # 原来翻译成 杰法利亚瘟疫 和 贾沃安瘟疫 不统一，所以干脆瞎起了个易读的名字。枫来自克罗地亚语中的 Javor 痘指 Pox 。
-
-# Crisis
-Prethoryn : 虫族（？）
-Sentinel : 星际护卫队；星际护卫；护卫
-Sentinel Alpha : 阿尔法哨站
-Unbidden : 破界者
-Aberrant : 畸变者
-Vehement : 咆哮者
-Contingency : 紧急预案
-
+Psionic : 灵能
+Shroud : 天幕
 Whisperers in the Void : 虚咽灵尊
 Composer of Strands : 谱命灵尊
 Eater of Worlds : 吞世灵尊
 Instrument of Desire : 极欲灵尊
 End of the Cycle : 终寰灵尊
 
-# Leviathan
-leviathans:
-    Leviathan : 利维坦
-    Drake : 龙兽
-    Gargantua : 高康大
-    Pantagruel : 庞大固埃
-    Stellar Devourer : 噬星者
-enclaves:
-    Curator : 典藏研究员/典藏研究所
-    Riggan : 瑞玵
-    XuraCorp : 旭然集团
-    Muutagan : 穆塔钢
+cybernetics : 神经机械学
+implant : 内植体
+cybernetic implant : 机械内植体
+cyborg : 半机械人
+cybernetic unit : 半机械单元
+cybernetic : 半机械化
 
-# Distant Stars
-L-cluster:
-    L-Gate : L星门
-    L-Cluster : L星团
-    Gray Goo : 灰胶
-    Gray Tempest : 灰色风暴
-    L-Drake : L龙兽
-    Dessanu Consonance : 德萨努协同体
-    Nanite : 纳米机器人
+# 事件名词
+Migrating Forests : 迁徙森林
+Zanaam : 扎娜姆
+Ancient One : 旧日支配者
+Kuur : 克尔母
+## Distant Stars
 superflare : 超耀发
 Kohtalo : 宿命号（飞船）
 Zone A : 甲区
@@ -389,12 +352,86 @@ Nivlac : 尼弗拉克
 Nefri : 妮芙莉
 Xvan Labs : 西凡实验室
 Sujin Empire : 崇神帝国
+precursors :
+    Cybrex : 赛博霸王
+    Javorian Pox : 枫痘   # 原来翻译成 杰法利亚瘟疫 和 贾沃安瘟疫 不统一，所以干脆瞎起了个易读的名字。枫来自克罗地亚语中的 Javor 痘指 Pox 。
+crises :
+    Prethoryn : 虫族（？）
+    Sentinel : 星际护卫队；星际护卫；护卫
+    Sentinel Alpha : 阿尔法哨站
+    Unbidden : 破界者
+    Aberrant : 畸变者
+    Vehement : 咆哮者
+    Contingency : 紧急预案
+space creatures:
+    Tiyanki : 天凯
+    Void Cloud : 虚空之云
+    Space Amoeba : 太空变形虫
+megastructures :
+    ## Utopia
+    Megastructure : 巨型结构
+    Site : 基址
+    Frame : 框架
+    Hub : 中轴
+    ruined : 毁坏
+    abandoned : 遗弃
+    Ring World : 环形世界
+    Habitat : 轨道栖所
+    Science Nexus : 研究中枢
+    neural bank : 神经库
+    Dyson Sphere : 戴森球
+    Sentry Array : 监探阵列
+    ## Megacorp
+    Matter Decompressor : 物质解压器
+    Strategic Coordination Center : 战略协调中心
+    Mega Art Installation : 巨型艺术奇观
+    Interstellar Assembly : 星际大会堂
 leviathans:
+    ## Leviathan
+    Leviathan : 利维坦
+    Drake : 龙兽
+    Gargantua : 高康大
+    Pantagruel : 庞大固埃
+    Stellar Devourer : 噬星者
+    ## Distant Stars
     Scavenger : 拾荒者
     Voidspawn : 虚空后裔
+## Leviathan
+enclaves:
+    Curator : 典藏研究员/典藏研究所
+    Riggan : 瑞玵
+    XuraCorp : 旭然集团
+    Muutagan : 穆塔钢
+## Distant Stars
+L-cluster:
+    L-Gate : L星门
+    L-Cluster : L星团
+    Gray Goo : 灰胶
+    Gray Tempest : 灰色风暴
+    L-Drake : L龙兽
+    Dessanu Consonance : 德萨努协同体
+    Nanite : 纳米机器人
+## Megacorp
+caravaneer :
+    Caravaneer : 旅商
+    kiosk : 贩卖便亭
+    Tradestation Tungle : 通革贸易站
+    Lunatic Broker : 发疯经纪人
+    Vengralian : 万格拉（人） # Varangian？
+    Trium : 特利仨；三和会
+    Orlan Star Merchant : 奥兰星商人
+    Numistic Order : 努玛修道会
+    Numistic : 努玛
+    Numa : 努玛
+    Wind of Fortune : 财富之风
+    Tessar Tarvil : 泰萨·塔维尔
+    Shakvah : 沙克瓦赫
+    Racket : 拉凯
+    MegaCorpse : 巨型尸业
+    Galatron : 银河之星
 
-# Caravaneer
-Numistic : 努玛神教；努玛
-Numa : 努玛
-Shakvah : 沙克瓦赫
-Trium : 特利仨
+TODO :
+    增加、增强、提高、加快、提升
+    减少、减弱、降低、减慢、降低
+    
+    最多（少）、至多（少）

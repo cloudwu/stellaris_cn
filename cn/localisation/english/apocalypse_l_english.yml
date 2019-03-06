@@ -194,7 +194,7 @@
  aura_starbase_warp_fluctuator:0 "$defensive_aura$——$sm_warp_fluctuator$"
  STARBASE_BUILDQUEUE_UP:0 "§G点击向上物品移动。\n按住£shift£ 点击将物品移动至顶部。§!"
  STARBASE_BUILDQUEUE_DOWN:0 "§G点击向下物品移动。\n按住£shift£ 点击将物品移动至底部。§!"
- STARBASE_MODIFIER_EFFECTS:0 "修正效果"
+ STARBASE_MODIFIER_EFFECTS:0 "调整因素效果"
 
   ##       ##      ###     ###     #   #      ##      #   #      ## 
  #        #  #      #      #       #   #     #  #      # #      #   
@@ -236,13 +236,13 @@
  requires_citadel:0 "§R需要§Y$starbase_citadel$§!升级。§!"
  
  requires_colonized_planet:0 "§R需要在星系内拥有行星。§!"
- requires_trade_planet:0 "§R需要星系内有已移民的行星或§Y贸易飞地§!。§!"
- requires_black_hole:0 "§R需要星系内有§Y$pc_black_hole$§!。§!"
- requires_nebula:0 "§R需要星系位于§Y星云§!里§!"
- requires_curator:0 "§R需要星系内有§Y典藏研究所飞地§!。§!"
+ requires_trade_planet:0 "§R星系内需要有已移民的行星或§Y贸易飞地§!。§!"
+ requires_black_hole:0 "§R星系内需要有§Y$pc_black_hole$§!。§!"
+ requires_nebula:0 "§R星系需要位于§Y星云§!里§!"
+ requires_curator:0 "§R星系内需要有§Y典藏研究所飞地§!。§!"
  requires_curator_agreement:0 "§R需要与当地典藏研究所飞地的§Y外交协议§!。§!"
  requires_artist_agreement:0 "§R需要与当地艺术飞地的§Y外交协议§!。§!"
- requires_artisans:0 "§R需要星系内有§Y艺术飞地§!。§!"
+ requires_artisans:0 "§R星系内需要有§Y艺术飞地§!。§!"
   
  requires_technology_gateway_activation:0 "$TRIGGER_FAIL$需要£physics£ §Y$tech_gateway_activation$§!科技。"
  requires_technology_gateway_construction:0 "$TRIGGER_FAIL$需要£physics£ §Y$tech_gateway_construction$§!科技。"
@@ -467,7 +467,7 @@
  sentinel_fleet_gift:0 "一支护卫舰队出现在[Root.Capital.GetName]附近，并交由你控制。"
 
  pirate.6.desc:2 "少量工蜂发生了罕见的基因突变，能够部分与蜂群思维断开精神链接而不会陷入昏迷。由于这些叛逆工蜂离开思维太远就会灭亡，所以它们盘踞在我领空内的 §H[pirate_system.GetName]§! 星系。\n\n它们打算在那里以海盗的方式维持生活，用他们简陋的小舰队劫掠途径那个星系的未设防贸易路线。"
- pirate.7.desc:2 "一小群失灵单元将自身从 [Root.GetName] 的主智能分离，并藏身于我领空内的 §H[pirate_system.GetName]§! 星系。这些单元已经无法修复了，现在它们用简陋的飞船劫掠途径那个星系的未设防贸易路线，夺取零件和资源。"
+ pirate.7.desc:2 "一小群失灵单元将自身从 [Root.GetName] 的主智能分离，并藏身于我领空内的 §H[pirate_system.GetName]§! 星系。这些单元已经无法修复了，现在它们用简陋的航天器劫掠途径那个星系的未设防贸易路线，夺取零件和资源。"
  pirate.50.name:0 "发现海盗！"
  pirate.50.a.desc:1 "我们在 §H[pirate_system.GetName]§! 的贸易线路没有受到什么保护，却穿过了那片几乎是无法之地的太空。星系内已经吸引了越来越多的海盗、走私犯以及其他各种不法分子。他们肆无忌惮地掠夺我们的货物。"
  pirate.50.b.desc:1 "途经 §H[pirate_system.GetName]§! 星系贸易路线缺乏保护，引起了一群游荡海盗的注意。这些匪徒集结了一支可观的舰队，拦截星系内的大部分贸易。"
@@ -478,7 +478,7 @@
  pirate.54.name:0 "外星海盗"
  pirate.54.desc:1 "一群外星海盗已经潜入并在我境内的 §H[pirate_system.GetName]§! 星系扎根。为了支持犯罪活动，他们似乎打算劫掠我们途径那个星系的未设防贸易路线。"
  pirate.56.name:0 "故障单元"
- pirate.56.desc:1 "一小群失灵单元将自身从 [Root.GetName] 的主智能分离，并藏身于我领空内的 §H[pirate_system.GetName]§! 星系。这些单元已经无法修复了，现在它们用简陋的飞船劫掠途径那个星系的缺乏保护贸易路线，夺取零件和资源。"
+ pirate.56.desc:1 "一小群失灵单元将自身从 [Root.GetName] 的主智能分离，并藏身于我领空内的 §H[pirate_system.GetName]§! 星系。这些单元已经无法修复了，现在它们用简陋的航天器劫掠途径那个星系的缺乏保护贸易路线，夺取零件和资源。"
  pirate.57.name:0 "有机体海盗"
  pirate.57.desc:1 "一小群有机体子单元，似乎是不法分子，已经设法潜入并在我境内的 §H[pirate_system.GetName]§! 星系扎根。他们似乎意图劫掠途径星系的缺乏防护的贸易路线。或许这些是有机体普遍的侥幸心理，错误地以为自己过于微不足道，不会引起我们武力回应。"
 

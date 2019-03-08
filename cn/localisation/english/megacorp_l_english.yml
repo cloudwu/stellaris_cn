@@ -466,7 +466,7 @@
  DISTRICTS_LOCKED:1 "如果障碍被清理，可以多建设$NUM|Y$块$TYPE$。"
  DISTRICTS_MAX:0 "这颗行星目前建设了§Y$NUM$/$MAX$§!块地区。"
  
- RULER_JOB_TRIGGER:0 "这类职位只有拥有§Y完整公民权§!的自由民可以从事"
+ RULER_JOB_TRIGGER:0 "$SPECIALIST_JOB_TRIGGER$"
  SPECIALIST_JOB_TRIGGER:0 "这类职位只有当前未遭肃清的自由民可以从事。"
  WORKER_JOB_TRIGGER:0 "这类职位只有当前未遭肃清的人口可以从事。"
  DRONE_JOB_TRIGGER:0 "这类职位只有当前未遭肃清的成员可以从事。" # FIXME drone for both 蜂群 and 机械体
@@ -772,7 +772,7 @@
  job_coordinator:0 "协调者"
  job_coordinator_plural:0 "协调者"
  job_coordinator_desc:1 "发至和发自核心的信号必须被放大、增强并清除静电和数据损坏。"
- job_coordinator_effect_desc:0 "£job_coordinator£$job_coordinator_plural$产出£unity£§Y$unity$§!和£society£§Y$society_research$§!"
+ job_coordinator_effect_desc:0 "£job_coordinator£$job_coordinator_plural$产出£unity£§Y$unity$§!和 £physics£ £society£ £engineering£ §Y研究点§!。"
  mod_job_coordinator_add:0 "$job_coordinator$职位"
  mod_job_coordinator_per_pop:0 "每$VALUE$个人口§G+1§!个$job_coordinator$职位"
  mod_job_coordinator_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_coordinator_add£ "
@@ -2530,6 +2530,14 @@
  crime.1002.desc:0 "由于当地政府的大规模逮捕行动，我们设立于§H[From.Owner.GetName]§!境内的§H[From.GetName]§!上的分公司最近被迫关闭。似乎是最近[From.GetPlanetMoon]犯罪率的下降使执法部门得以集中警力阻碍我们的活动。"
  crime.1002.tooltip:0 "我们在[From.GetName]上的分公司已被关闭。"
 
+ # Atomic Clock
+ atomic_clock_cat: "$AST_DEBRIS_FIELD_1_CAT$"
+ distar.330.name: "原子钟倒计时"
+ distar.330.desc: "在 [From.From.From.GetName] 上，每隔四十二年零三天，[Root.Capital.GetName] 上的研究者都等着神秘的原子钟的倒计时，它的精度高得惊人。\n\n如今，几十年的众说纷纭连同大部分[nuked_primitive_planet.GetName]瞬间烟消云散。\n\n当时钟到达它的最后期限时，它向 [nuked_primitive_planet.GetName]上的接收器发送了一个信号，引发了毁灭性的热核爆炸，毁灭了整个星球和居住在那里的原始社会。\n\n当我们的科学家们还在争论这一精心安排的灭绝行为背后的原因时，原子钟仍在滴答作响，丝毫没有受到下面这片荒凉景象的干扰。"
+ distar.330.a.phile: "我们到底做了些什么！？"
+ distar.335.name: "原子钟倒计时"
+ distar.335.desc: "在 [From.From.From.GetName] 上，每隔四十二年零三天，[Root.Capital.GetName] 上的研究者都等着神秘的原子钟的倒计时，它的精度高得惊人。\n\n如今，几十年的众说纷纭连同大部分[nuked_planet.GetName]瞬间烟消云散。\n\n当时钟到达它的最后期限时，它向 [nuked_planet.GetName]上的接收器发送了一个信号，引发了毁灭性的热核爆炸，毁灭了整个星球和居住在那里的原始社会。\n\n当我们的科学家们还在争论这一精心安排的灭绝行为背后的原因时，原子钟仍在滴答作响，丝毫没有受到下面这片荒凉景象的干扰。"
+
  planet_culture_shock:0 "$culture_shock_bronze_age$"
  planet_culture_shock_desc:0 "因为先进科技的突然出现，这一原本原始的星球无法立即适应，导致了一场混乱的动荡。在许多偏远区域仍旧存在大量抵抗这一变化的居民。"
 
@@ -3299,7 +3307,7 @@
  action.99.desc:0 "我们对[market_founder_planet.GetName]进行的推广宣传有了收获，而贸易巨头们决定将大部分商业活动集中在[market_founder_planet.GetStarName]星系内！"
  action.99.desc.phobe:0 "$action.99.desc$"
  action.101.name:0 "§H银河贸易市场§!：已成立"
- action.101.desc:0 "银河贸易的中心已经坐落在了§Y[galactic_market_station.GetName]§!星系，位于[From.GetName]境内。[From.GetAdj]政府已经正式将这一市场合法化，并可以通过中立的第三方进行资源买卖。"
+ action.101.desc:1 "银河贸易的中心已经坐落在了§Y[galactic_market_station.solar_system.GetName]§!星系，位于[From.GetName]境内。[From.GetAdj]政府已经正式将这一市场合法化，并可以通过中立的第三方进行资源买卖。"
  action.101.desc.phobe:0 "心怀鬼胎的§Y[From.GetName]§!外星人建立了一个外星商品的交易市场。尽管我们对此不屑一顾，但市场的大门仍对我们敞开。"
  action.101.desc.homicidal:0 "$action.96.desc.homicidal$"
  action.103.name:0 "§H银河贸易市场§!：已迁址"
@@ -4023,3 +4031,8 @@
 
  GetPurgeProcessingResource_food:0 "营养丰富的食物源，提升£food£§H食物§!产出"
  GetPurgeProcessingResource_minerals:0 "金属碎片，提升£minerals£§H矿物§!产出"
+
+ trait_pc_hive_preference: "蜂巢世界偏好"
+ trait_pc_hive_preference_desc: "$trait_pc_arctic_preference_desc$"
+ trait_pc_machine_preference: "机械世界偏好"
+ trait_pc_machine_preference_desc: "$trait_pc_arctic_preference_desc$"

@@ -466,7 +466,7 @@
  DISTRICTS_LOCKED:1 "$NUM|Y$ additional $TYPE$ can be built if their blockers are cleared."
  DISTRICTS_MAX:0 "This planet currently has §Y$NUM$/$MAX$§! total districts built."
  
- RULER_JOB_TRIGGER:0 "This job can only be worked by Free Pops with §YFull Citizenship§!"
+ RULER_JOB_TRIGGER:0 "$SPECIALIST_JOB_TRIGGER$"
  SPECIALIST_JOB_TRIGGER:0 "This job can only be worked by Free Pops that are not being purged."
  WORKER_JOB_TRIGGER:0 "This job can only be worked by Pops that are not being purged."
  DRONE_JOB_TRIGGER:0 "This job can only be worked by Drones that are not being purged."
@@ -772,7 +772,7 @@
  job_coordinator:0 "Coordinator"
  job_coordinator_plural:0 "Coordinators"
  job_coordinator_desc:1 "Signals to and from the Core must be amplified, boosted, and cleaned of static and data corruption."
- job_coordinator_effect_desc:0 "£job_coordinator£ $job_coordinator_plural$ produce £unity£ §Y$unity$§! and £society£ §Y$society_research$§!"
+ job_coordinator_effect_desc:0 "£job_coordinator£ $job_coordinator_plural$ produce £unity£ §Y$unity$§! and £physics£ £society£ £engineering£ §YResearch Points§!."
  mod_job_coordinator_add:0 "$job_coordinator$ Jobs"
  mod_job_coordinator_per_pop:0 "§G+1§! $job_coordinator$ Job per $VALUE$ Pops"
  mod_job_coordinator_per_pop_short:0 "\n§G+1§! £mod_job_coordinator_add£ per $VALUE$ £pop£"
@@ -2392,7 +2392,7 @@
  crime_boss_arrested:0 "Crime Boss Arrested"
  crime_boss_arrested_desc:0 "An important crime boss was recently arrested on this world, crippling a major criminal organization."
  leader_trait_righteous:0 "Righteous"
- leader_trait_righteous_desc:0 "This leader is incorruptable and harbors strong convictions regarding what is right and wrong."
+ leader_trait_righteous_desc:0 "This leader is incorruptible and harbors strong convictions regarding what is right and wrong."
  leader_trait_corrupt:0 "Corrupt"
  leader_trait_corrupt_desc:0 "This corrupt leader is willing to sell out anyone and anything if it increases their personal wealth."
  leader.corrupt:0 "Whispers and rumors concerning possible ties to organized crime have surrounded §H[From.From.GetTitle] [From.From.GetName]§! for some time now. The [From.From.GetTitle] has dismissed these claims as malicious libel invented by political rivals, but recent evidence suggests there may be more to it than that..."
@@ -2529,6 +2529,14 @@
  crime.1002.name:1 "Branch Office shut down on [From.GetName]"
  crime.1002.desc:0 "Our branch office on §H[From.GetName]§! inside the §H[From.Owner.GetName]§! was recently forced to close after mass arrests made by the local authorities. It seems that the recent reduction in crime on the [From.GetPlanetMoon] enabled their law enforcement agencies to focus their efforts on disrupting our operations."
  crime.1002.tooltip:0 "Our Branch Office on [From.GetName] has been closed."
+
+ # Atomic Clock 
+ atomic_clock_cat: "$AST_DEBRIS_FIELD_1_CAT$"
+ distar.330.name: "Atomic Countdown"
+ distar.330.desc: "For the past 42 years and 3 days, researchers on [Root.Capital.GetName] have eagerly anticipated the countdown of the mysterious atomic clock of prodigious precision, found on [From.From.From.GetName].\n\nNow several decades' worth of heated speculation and conjecture have evaporated in an instant, along with most of [nuked_primitive_planet.GetName].\n\nAs the clock reached its momentous deadline it transmitted a signal to a receiver on [nuked_primitive_planet.GetName], triggering a thermonuclear explosion of such devastating power it laid waste to the entire planet and the primitive society residing there.\n\nWhile our scientists debate the reason behind this carefully timed act of annihilation, the atomic clock continues to tick, undisturbed by the desolation below."
+ distar.330.a.phile: "WHAT HAVE WE DONE!?"
+ distar.335.name: "Atomic Countdown"
+ distar.335.desc: "For the past 42 years and 3 days, researchers on [Root.Capital.GetName] have eagerly anticipated the countdown of the mysterious atomic clock of prodigious precision, found on [From.From.From.GetName].\n\nNow several decades' worth of heated speculation and conjecture have evaporated in an instant, along with most of [nuked_planet.GetName].\n\nAs the clock reached its momentous deadline it transmitted a signal to a receiver on [nuked_planet.GetName], triggering a thermonuclear explosion of such devastating power it laid waste to the entire planet.\n\nWhile our scientists conjecture as to the reason behind this carefully timed act of annihilation the atomic clock continues to tick, undisturbed by the desolation below."
 
  planet_culture_shock:0 "$culture_shock_bronze_age$"
  planet_culture_shock_desc:0 "This formerly primitive world is undergoing a chaotic upheaval as it adapts to the abrupt introduction of advanced technology. There are still significant and disruptive holdouts in many isolated regions."
@@ -2937,7 +2945,7 @@
  fleet1product5_addendum:1 "§HThe contingent will live and work in your starbases, subsisting only on Trium-brand nutri-paste, and have no effect on your demographics or economy beyond their influence on $TRADE_VALUE$. The assignment will last for §Y80 years§! and no longer. Increases §Y$TRADE_VALUE$§! by §G+15%§! for the duration.§!"
  fleet1product6:1 "§GTrium-brand Spawning Pool Stimulators§!! Tired of waiting for your larvae or larvae-equivalent young to become imago or imago-equivalent adults? Increase their development speed with these super-safe stimulants!"
  fleet1product6_addendum:0 "Please note, antibodies found in your species' systems will render the stimulants ineffective within a §Hten year§! time-frame. But until those ten years are up, you will enjoy a population boom boon, raising §Y$MOD_POP_GROWTH_SPEED$§! by a whopping §G10%§!."
- fleet1product7:0 "Several suitcases worth of unmarked £energy£ §Y$energy$§!! That's £energy£ §G2000§! §Y$energy$§! in total. Are you as excited as we are? We hope so."
+ fleet1product7:0 "several suitcases worth of unmarked £energy£ §Y$energy$§!! That's £energy£ §G2000§! §Y$energy$§! in total. Are you as excited as we are? We hope so."
  fleet1product7_addendum:0 "The Vengralian Trium: helping put the right xenos in the right places."
 
  fleet1cost1:0 "§R4§! §H$pop_cat_specialist$§! £pop£ Pops! We need some help with the bookkeeping."
@@ -3299,7 +3307,7 @@
  action.99.desc:0 "Our marketing campaign on [market_founder_planet.GetName] has borne fruit, and the market-powers-that-be have seen fit to centralize much of their activity within the [market_founder_planet.GetStarName] system!"
  action.99.desc.phobe:0 "$action.99.desc$"
  action.101.name:0 "§HGalactic Market§!: Established"
- action.101.desc:0 "The center of galactic commerce has manifested in the §Y[galactic_market_station.GetName]§! system, within the borders of the [From.GetName]. The [From.GetAdj] administration has officially legitimized this marketplace, where resources can be bought and sold through unaffiliated third parties."
+ action.101.desc:1 "The center of galactic commerce has manifested in the §Y[galactic_market_station.solar_system.GetName]§! system, within the borders of the [From.GetName]. The [From.GetAdj] administration has officially legitimized this marketplace, where resources can be bought and sold through unaffiliated third parties."
  action.101.desc.phobe:0 "The dubious xenos of the §Y[From.GetName]§! have established a marketplace for the trade of alien goods. While we are naturally loath to take part in this exchange, the option is available to us."
  action.101.desc.homicidal:0 "$action.96.desc.homicidal$"
  action.103.name:0 "§HGalactic Market§!: Station Moved"
@@ -4023,3 +4031,8 @@
 
  GetPurgeProcessingResource_food: "nutrient-rich food sources, boosting £food£ §HFood§!"
  GetPurgeProcessingResource_minerals: "scrap metal, boosting £minerals£ §HMineral§!"
+
+ trait_pc_hive_preference: "Hive World Preference"
+ trait_pc_hive_preference_desc: "$trait_pc_arctic_preference_desc$"
+ trait_pc_machine_preference: "Machine World Preference"
+ trait_pc_machine_preference_desc: "$trait_pc_arctic_preference_desc$"

@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
  BASE_JOB_INPUT:0 "职位基础维护费：$RESOURCES$"
  BASE_JOB_OUTPUT:0 "职位基础产出：$RESOURCES$"
  PLANET_BUILDQUEUE_UP:0 "$STARBASE_BUILDQUEUE_UP$"
@@ -772,7 +772,7 @@
  job_coordinator:0 "协调者"
  job_coordinator_plural:0 "协调者"
  job_coordinator_desc:1 "发至和发自核心的信号必须被放大、增强并清除静电和数据损坏。"
- job_coordinator_effect_desc:0 "£job_coordinator£$job_coordinator_plural$产出£unity£§Y$unity$§!和 £physics£ £society£ £engineering£ §Y研究点§!。"
+ job_coordinator_effect_desc:0 "£job_coordinator£$job_coordinator_plural$产出£unity£§Y$unity$§!和£physics£ £society£ £engineering£ §Y研究点数§!" # BUG 无空格图标无法显示
  mod_job_coordinator_add:0 "$job_coordinator$职位"
  mod_job_coordinator_per_pop:0 "每$VALUE$个人口§G+1§!个$job_coordinator$职位"
  mod_job_coordinator_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_coordinator_add£ "
@@ -2530,13 +2530,13 @@
  crime.1002.desc:0 "由于当地政府的大规模逮捕行动，我们设立于§H[From.Owner.GetName]§!境内的§H[From.GetName]§!上的分公司最近被迫关闭。似乎是最近[From.GetPlanetMoon]犯罪率的下降使执法部门得以集中警力阻碍我们的活动。"
  crime.1002.tooltip:0 "我们在[From.GetName]上的分公司已被关闭。"
 
- # Atomic Clock
+ # Atomic Clock 
  atomic_clock_cat: "$AST_DEBRIS_FIELD_1_CAT$"
  distar.330.name: "原子钟倒计时"
- distar.330.desc: "在 [From.From.From.GetName] 上，每隔四十二年零三天，[Root.Capital.GetName] 上的研究者都等着神秘的原子钟的倒计时，它的精度高得惊人。\n\n如今，几十年的众说纷纭连同大部分[nuked_primitive_planet.GetName]瞬间烟消云散。\n\n当时钟到达它的最后期限时，它向 [nuked_primitive_planet.GetName]上的接收器发送了一个信号，引发了毁灭性的热核爆炸，毁灭了整个星球和居住在那里的原始社会。\n\n当我们的科学家们还在争论这一精心安排的灭绝行为背后的原因时，原子钟仍在滴答作响，丝毫没有受到下面这片荒凉景象的干扰。"
+ distar.330.desc: "在过去的四十二年零三日里，[Root.Capital.GetName]上的研究者热切期待着在[From.From.From.GetName]上发现的精度惊人的神秘原子钟倒计时。\n\n如今，数十载热烈的推测和猜想在瞬间沸腾了，连同大部分[nuked_primitive_planet.GetName]一起。\n\n钟到达其重要的归零时刻时，向[nuked_primitive_planet.GetName]上的接收器发送了一个信号，引发了毁灭性的热核爆炸，将整颗星球和居住在那里的原始社会炸为一片废土。\n\n当我们的科学家争论这一精心定时的灭绝行为背后的原因时，原子钟仍在滴答作响，丝毫不受下面这片荒凉景象的干扰。"
  distar.330.a.phile: "我们到底做了些什么！？"
  distar.335.name: "原子钟倒计时"
- distar.335.desc: "在 [From.From.From.GetName] 上，每隔四十二年零三天，[Root.Capital.GetName] 上的研究者都等着神秘的原子钟的倒计时，它的精度高得惊人。\n\n如今，几十年的众说纷纭连同大部分[nuked_planet.GetName]瞬间烟消云散。\n\n当时钟到达它的最后期限时，它向 [nuked_planet.GetName]上的接收器发送了一个信号，引发了毁灭性的热核爆炸，毁灭了整个星球和居住在那里的原始社会。\n\n当我们的科学家们还在争论这一精心安排的灭绝行为背后的原因时，原子钟仍在滴答作响，丝毫没有受到下面这片荒凉景象的干扰。"
+ distar.335.desc: "在过去的四十二年零三日里，[Root.Capital.GetName]上的研究者热切期待着在[From.From.From.GetName]上发现的精度惊人的神秘原子钟倒计时。\n\n如今，数十载热烈的推测和猜想在瞬间沸腾了，连同大部分[nuked_planet.GetName]一起。\n\n钟到达其重要的归零时刻时，向[nuked_planet.GetName]上的接收器发送了一个信号，引发了毁灭性的热核爆炸，将整颗星球炸为一片废土。\n\n当我们的科学家推测这一精心定时的灭绝行为背后的原因时，原子钟仍在滴答作响，丝毫不受下面这片荒凉景象的干扰。"
 
  planet_culture_shock:0 "$culture_shock_bronze_age$"
  planet_culture_shock_desc:0 "因为先进科技的突然出现，这一原本原始的星球无法立即适应，导致了一场混乱的动荡。在许多偏远区域仍旧存在大量抵抗这一变化的居民。"
@@ -2945,7 +2945,7 @@
  fleet1product5_addendum:1 "§H销售团队会在贵太空基地中生活和工作，他们只吃特利仨牌营养面条。与他们对您$TRADE_VALUE$的影响相比，他们对人口统计或经济的影响完全不值一提。这项任务的期限为§Y80年§!，不多不少。在有效期内增加§Y$TRADE_VALUE$§!§G+15%§!。§!"
  fleet1product6:1 "§G特利仨牌孵化池刺激素§!！厌烦了等待您的幼虫，或是相当于幼虫的幼崽变成成虫，或是相当于成虫的成年生物了吗？用这些超级安全的刺激素加快其成长吧！"
  fleet1product6_addendum:0 "请注意，在贵种族的系统里发现的的抗体会导致此催化剂在§H十年§!期限后失效。不过在这十年间，您将享受人口暴增的红利，加快§Y$MOD_POP_GROWTH_SPEED$§!高达§G10%§!。"
- fleet1product7:0 "数个手提箱的£energy£§Y$energy$§!！总共相当于£energy£§G2000§!§Y$energy$§!。您和我们一样兴奋吗？但愿如此。"
+ fleet1product7:0 "数个手提箱无法溯源的£energy£§Y$energy$§!！总共相当于£energy£§G2000§!§Y$energy$§!。您和我们一样兴奋吗？但愿如此。"
  fleet1product7_addendum:0 "万格拉三和会：帮助正确的外星人放在正确的地方。"
 
  fleet1cost1:0 "§R4§!§H$pop_cat_specialist$§!£pop£人口！我们需要人帮忙记账。"
@@ -3307,7 +3307,7 @@
  action.99.desc:0 "我们对[market_founder_planet.GetName]的推广宣传有了收获，贸易巨头们决定将大部分商业活动集中在[market_founder_planet.GetStarName]星系内！"
  action.99.desc.phobe:0 "$action.99.desc$"
  action.101.name:0 "§H银河市场§!：已成立"
- action.101.desc:0 "银河贸易的中心已经坐落在了§Y[galactic_market_station.GetName]§!星系，位于[From.GetName]境内。[From.GetAdj]政府已经正式合法化这一市场。人们可以通过中立的第三方开展资源买卖。"
+ action.101.desc:0 "银河贸易的中心已经坐落在了§Y[galactic_market_station.solar_system.GetName]§!星系，位于[From.GetName]境内。[From.GetAdj]政府已经正式合法化这一市场。人们可以通过中立的第三方开展资源买卖。"
  action.101.desc.phobe:0 "心怀鬼胎的§Y[From.GetName]§!异种成立了一个外星商品的交易市场。尽管我们对此不屑一顾，但市场的大门仍对我们敞开。"
  action.101.desc.homicidal:0 "$action.96.desc.homicidal$"
  action.103.name:0 "§H银河市场§!：已迁址"

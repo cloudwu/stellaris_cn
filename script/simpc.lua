@@ -43,6 +43,7 @@ local list = {
 "modifiers_utopia_l_english.yml",
 "musicplayer_l_english.yml",
 "name_lists_l_english.yml",
+"new_scripted_loc_l_english.yml",
 "observer_events_l_english.yml",
 "observer_l_english.yml",
 "pop_factions_l_english.yml",

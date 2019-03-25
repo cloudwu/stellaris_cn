@@ -407,8 +407,8 @@
  DEPOSITS_TOOLTIP:0 "显示行星地貌"
  TERRAFORM_TOOLTIP:0 "改造行星环境"
  PLANETARY_OUTPUT:0 "资源生产"
- PLANETARY_PRODUCTION:0 "星球生产"
- PLANETARY_DEFICIT:0 "星球赤字"
+ PLANETARY_PRODUCTION:0 "行星生产"
+ PLANETARY_DEFICIT:0 "行星赤字"
  PLANETARY_INPUT:0 "资源维护"
  DECISIONS_TITLE:0 "决策"
  GOVERNOR_TITLE:0 "总督"
@@ -590,7 +590,7 @@
  building_corporate_vault:0 "收购宝库"
  building_corporate_vault_desc:0 "一座巨大的地下宝库，既是商业指挥中心，也是纪念这家巨型企业悠久盈利史的公共博物馆。"
  building_nanite_transmuter:0 "纳米变形器"
- building_nanite_transmuter_desc:3 "这座工厂使用非常先进的纳米机器人量产各种稀有资源。缺乏纳米机器人会让生产停滞。"
+ building_nanite_transmuter_desc:3 "这座工厂使用非常先进的纳米机器人量产各种稀有资源。纳米机器人短缺会使生产停滞。"
  
  building_hab_major_capital:0 "栖所控制中心"
  building_hab_major_capital_desc:1 "一座复杂的官僚机构，负责管理人口众多的栖所。"
@@ -717,7 +717,7 @@
  
  job_mote_harvesting_drone:0 "粉尘采集成员" # FIXME drone for both 蜂群 and 机械体
  job_mote_harvesting_drone_plural:0 "粉尘采集成员"
- job_mote_harvesting_drone_desc:1 "因为这种超自然粉尘的易爆特性，专门捕捉并采集这些微粒的成员具有较高的周转率。"
+ job_mote_harvesting_drone_desc:1 "因为这种超自然粉尘固有的易爆特性，专门捕捉并采集这些微粒的成员具有较高的周转率。"
  job_mote_harvesting_drone_effect_desc:1 "£job_mote_harvesting_drone£$job_mote_harvesting_drone_plural$生产£volatile_motes£§Y$volatile_motes$§!"
  mod_job_mote_harvesting_drone_add:0 "$job_mote_harvesting_drone$职位"
  mod_job_mote_harvesting_drone_per_pop:0 "每$VALUE$个人口§G+1§!个$job_mote_harvesting_drone$职位"
@@ -991,16 +991,16 @@
  
  job_duelist:0 "斗士"
  job_duelist_plural:0 "斗士"
- job_duelist_desc:0 "为民众表演死亡艺术的武术家。"
- job_duelist_effect_desc:0 "£job_duelist£ $job_duelist_plural$ 将 £alloys£ §Y$alloys$§! 转换为 £unity£ §Y$unity$§!，£mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§! 以及 £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!"
- mod_job_duelist_add:0 "$job_duelist$ 职位"
- mod_job_duelist_per_pop:0 "每 $VALUE$ 人口 §G+1§! $job_duelist$ 职位"
- mod_job_duelist_per_pop_short:0 "\n每 $VALUE$ £pop£ §G+1§! £mod_job_duelist_add£"
+ job_duelist_desc:0 "表演致命艺术娱乐大众的武术家。"
+ job_duelist_effect_desc:0 "£job_duelist£$job_duelist_plural$消耗£alloys£§Y$alloys$§!产出£unity£§Y$unity$§!、£mod_planet_amenities_add£§Y$PLANET_AMENITIES_TITLE$§!和 £mod_country_naval_cap_add£§Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!" # BUG 排版问题
+ mod_job_duelist_add:0 "$job_duelist$职位"
+ mod_job_duelist_per_pop:0 "每$VALUE$人口§G+1§!个$job_duelist$职位"
+ mod_job_duelist_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_duelist_add£"
 
  job_healthcare:0 "医务工作者"
  job_healthcare_plural:0 "医务工作者"
  job_healthcare_desc:1 "微观预防胜于宏观治疗。不过有时候双管齐下才是最佳方案。"
- job_healthcare_effect_desc:0 "£job_healthcare£$job_healthcare_plural$消耗£consumer_goods£§Y$consumer_goods$§!增加 £mod_planet_amenities_add£§Y$PLANET_AMENITIES_TITLE$§!和 £mod_pop_growth_speed£§Y$MOD_POP_GROWTH_SPEED$§!"
+ job_healthcare_effect_desc:0 "£job_healthcare£$job_healthcare_plural$消耗£consumer_goods£§Y$consumer_goods$§!增加 £mod_planet_amenities_add£§Y$PLANET_AMENITIES_TITLE$§!和 £mod_pop_growth_speed£§Y$MOD_POP_GROWTH_SPEED$§!" # BUG 排版问题
  mod_job_healthcare_add:0 "$job_healthcare$职位"
  mod_job_healthcare_per_pop:0 "每$VALUE$个人口§G+1§!个$job_healthcare$职位"
  mod_job_healthcare_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_healthcare_add£ "
@@ -1008,7 +1008,7 @@
  job_culture_worker:0 "文化工作者"
  job_culture_worker_plural:0 "文化工作者"
  job_culture_worker_desc:1 "这些工作人员负责维护艺术，他们对公民的内在发展和社会表达至关重要。"
- job_culture_worker_effect_desc:0 "£job_culture_worker£$job_culture_worker_plural$消耗£consumer_goods£§Y$consumer_goods$§!产出£unity£§Y$unity$§!和 £society£§Y$society_research$§!" # 不要删除 £society£ 前的空格
+ job_culture_worker_effect_desc:0 "£job_culture_worker£$job_culture_worker_plural$消耗£consumer_goods£§Y$consumer_goods$§!产出£unity£§Y$unity$§!和 £society£§Y$society_research$§!" # BUG 排版问题
  mod_job_culture_worker_add:0 "$job_culture_worker$职位"
  mod_job_culture_worker_per_pop:0 "每$VALUE$个人口§G+1§!个$job_culture_worker$职位"
  mod_job_culture_worker_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_culture_worker_add£ "
@@ -3787,7 +3787,7 @@
  02_FORM_COMMERCIAL_PACT_SELECT:0 "有意思。[From.GetSpeciesNamePlural]打算寻找生意伙伴？再说说……"
  02_FORM_COMMERCIAL_PACT_PROPOSE:1 "永远不要觉得你的生活充满了不得不做的事情，而不是想要做的事情，[Root.GetSpeciesNamePlural]？在[From.GetName]这里，我们活着就是帮你做不想做的事情，这样你就可以不必亲力亲为。和我们签订一份商业合约可以最大化您的存在价值！"
  03_FORM_COMMERCIAL_PACT_PROPOSE:1 "在[From.GetName]这里，我们一贯以更低的价格提供更多的产品，今天我们想给您一个您无法拒绝的交易。一份我们之间的商业合约…… 承认吧，您无法拒绝！"
- 02_FORM_COMMERCIAL_PACT_ACCEPT:0 "[From.GetSpeciesNamePlural]，让我们开展自由贸易？有意思，我们答应了。"
+ 02_FORM_COMMERCIAL_PACT_ACCEPT:0 "[From.GetSpeciesNamePlural]，让我们开展自由贸易？有意思的愿景，我们答应了。"
  03_FORM_COMMERCIAL_PACT_ACCEPT:0 "商业合约？[From.GetSpeciesNamePlural]，听起来似乎是个双赢啊。我们接下来就起草文件吧。"
  02_FORM_COMMERCIAL_PACT_REFUSE:0 "[Root.GetSpeciesNamePlural]，我们已收到你们的请求，但是很抱歉[From.GetName]暂时不打算在新的星球扩张生意范围。"
  02_BREAK_COMMERCIAL_PACT_SELECT:0 "但是……对经济有什么影响呢？"
@@ -3866,7 +3866,7 @@
  CORP_OFFER_FEDERATION_ASSOCIATION_STATUS_ACCEPT_01:0 "[Root.GetName]感激地接受成为§Y[From.GetAllianceName]§!合作国的邀请，希望我们能够开展长期的有利合作。"
  CORP_OFFER_FEDERATION_ASSOCIATION_STATUS_REFUSE_01:0 "[Root.GetName]当前没有与§Y[From.GetAllianceName]§!进行密切合作的计划。"
  CORP_REVOKE_FEDERATION_ASSOCIATION_STATUS_SELECT_01:0 "请确认您希望撤销[Root.GetAdj]§Y[From.GetAllianceName]§!协作国地位。"
- CORP_REVOKE_FEDERATION_ASSOCIATION_STATUS_PROPOSE_01:0 "[From.GetName]遗憾地通知您，因合作上存在分歧，董事会一致投票决定撤销[Root.GetAdj]§Y[From.GetAllianceName]§!协作国地位。"
+ CORP_REVOKE_FEDERATION_ASSOCIATION_STATUS_PROPOSE_01:0 "[From.GetName]遗憾地通知您，因本质上的不兼容，董事会一致投票决定撤销[Root.GetAdj]§Y[From.GetAllianceName]§!协作国地位。"
  CORP_REVOKE_FEDERATION_ASSOCIATION_STATUS_ACCEPT_01:0 "尽管我们对撤销[Root.GetAdj]§Y[From.GetAllianceName]§!协作国地位这一决定表示惋惜，但我们仍将继续以合理的价格提供我们的服务。"
  CORP_ASK_FEDERATION_ASSOCIATION_STATUS_SELECT_01:0 "请确认您成为§Y[Root.GetAllianceName]§!的协作国的请求。"
  CORP_ASK_FEDERATION_ASSOCIATION_STATUS_PROPOSE_01:0 "尊敬的[Root.GetSpeciesNamePlural]！为了进一步巩固我们的双边关系，我们提议成为§Y[Root.GetAllianceName]§!的协作国。"

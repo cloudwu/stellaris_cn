@@ -8,7 +8,6 @@ root_path = Path("../")
 translation_en_path = root_path / Path("cn/localisation/english/")
 en_path = root_path / Path("en/localisation/english/")
 diff_path = root_path / Path("diff/")
-files_path = translation_en_path
 
 icon_pattern = r'£(?P<name>[a-zA-Z0-9_\|$]*?)(?P<end_char> |£|[^a-zA-Z0-9_\|$])'
 valid_icon_list = ['physics', 'opinion', 'fleet_status|2', 'military_power', 'minerals', 'ship_stats_hitpoints',
@@ -61,24 +60,38 @@ valid_icon_list = ['physics', 'opinion', 'fleet_status|2', 'military_power', 'mi
                    'job_livestock', 'society_research', 'physics_research', '$RESOURCE_KEY$', '$AREA_KEY$',
                    'mod_pop_amenities_usage_mult', 'mod_pop_amenities_usage_no_happiness_mult']
 
-# TODO use logging
-for file_name in os.listdir(files_path):
-    with (files_path / file_name).open(mode = 'r', encoding = 'utf8') as file:
-        print(file_name)
-        line_number = 0
-        for line in file:
-            line_number += 1
-            if files_path == diff_path:  # only check CHANGE and CN2
-                if not (line.startswith("CHANGE") or line.startswith("CN2")):
-                    continue
-            icons = re.finditer(icon_pattern, line)
-            for icon in icons:
-                # generate valid icons
-                # if not icon.group('name') in valid_icon_list:
-                #     valid_icon_list.append(icon.group('name'))
-                if not icon.group('name') in valid_icon_list:
-                    print(line_number, icon, "Unknown icon")
-                if not icon.group('end_char') == '£':
-                    print(line_number, icon, "Miss ending character")
-                # if icon.group('after_char') is not ' ':
-                #     print(line_number, icon)
+
+def main(mode: str):
+    # TODO use logging
+    if mode == "diff":
+        files_path = diff_path
+    elif mode == "init":
+        files_path = en_path
+    elif mode == "trans_en":
+        files_path = translation_en_path
+    else:
+        files_path = translation_en_path
+    for file_name in os.listdir(files_path):
+        with (files_path / file_name).open(mode = 'r', encoding = 'utf8') as file:
+            print(file_name)
+            line_number = 0
+            for line in file:
+                line_number += 1
+                if files_path == diff_path:  # only check CHANGE and CN2
+                    if not (line.startswith("CHANGE") or line.startswith("CN2")):
+                        continue
+                icons = re.finditer(icon_pattern, line)
+                for icon in icons:
+                    # generate valid icons
+                    # if not icon.group('name') in valid_icon_list:
+                    #     valid_icon_list.append(icon.group('name'))
+                    if not icon.group('name') in valid_icon_list:
+                        print(line_number, icon, "Unknown icon")
+                    elif not icon.group('end_char') == '£':
+                        print(line_number, icon, "Miss ending character")
+                    # if icon.group('after_char') is not ' ':
+                    #     print(line_number, icon)
+
+
+if __name__ == "__main__":
+    main("diff")

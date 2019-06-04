@@ -1,8 +1,8 @@
-local en_path = "../en2.1/localisation/english/"
+local en_path = "../en2.2/localisation/english/"
 local cn_path = "../cn/localisation/english/"
 local new_path = "../en/localisation/english/"
 local diff_path = "../diff/"
-local cn2_path = "../cn2.2/"
+local cn2_path = "../cn2.3/"
 
 local function readfile(filename)
 	local f = io.open(filename, "rb")
@@ -99,6 +99,8 @@ local function readcn()
 	local cn2_list = {
 "achievements_l_simp_chinese.yml",
 "ai_crisis_l_simp_chinese.yml",
+"ancient_relics_events_l_simp_chinese.yml",
+"ancient_relics_l_simp_chinese.yml",
 "apocalypse_l_simp_chinese.yml",
 "dip_messages_l_simp_chinese.yml",
 "distant_stars_l_simp_chinese.yml",
@@ -122,6 +124,7 @@ local function readcn()
 "modifiers_utopia_l_simp_chinese.yml",
 "musicplayer_l_simp_chinese.yml",
 "name_lists_l_simp_chinese.yml",
+"new_scripted_loc_l_simp_chinese.yml",
 "observer_events_l_simp_chinese.yml",
 "observer_l_simp_chinese.yml",
 "pop_factions_l_simp_chinese.yml",
@@ -162,6 +165,8 @@ end
 local list = {
 "achievements_l_english.yml",
 "ai_crisis_l_english.yml",
+"ancient_relics_events_l_english.yml",
+"ancient_relics_l_english.yml",
 "apocalypse_l_english.yml",
 "dip_messages_l_english.yml",
 "distant_stars_l_english.yml",
@@ -185,6 +190,7 @@ local list = {
 "modifiers_utopia_l_english.yml",
 "musicplayer_l_english.yml",
 "name_lists_l_english.yml",
+"new_scripted_loc_l_english.yml",
 "observer_events_l_english.yml",
 "observer_l_english.yml",
 "pop_factions_l_english.yml",

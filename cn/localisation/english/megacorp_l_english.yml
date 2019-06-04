@@ -76,7 +76,7 @@
  BRANCH_OFFICE_VALUE_EFFECTS:0 "分公司价值的效应："
  BRANCH_OFFICE_TRADE_VALUE:0 "来自行星贸易价值：$VALUE$"
  BRANCH_OFFICE_TRADE_VALUE_CRIMINAL_SYNDICATE:0 "因行星上的£crime£§Y$PLANET_CRIME_TITLE$§!而乘以$MULT$。"
- EMPIRE_SIZE:0 "帝国规模" # FIXME urban sprawl is officially translated to 城市蔓延
+ EMPIRE_SIZE:1 "帝国规模" # FIXME urban sprawl is officially translated to 城市蔓延
  EMPIRE_SIZE_DESC:1 "§E§H$EMPIRE_SIZE$§!是衡量帝国疆域，包括控制的§H星系§!、§H殖民地§!和§H地区§!，的总体指标。§H$EMPIRE_SIZE$§!过大会对帝国的行政效率产生负面影响，同时增加§H科技§!、§H传统§!、§H领袖§!、§H法令§!和§H运动§!的花费。§!"
  EMPIRE_SIZE_TOTAL:1 "帝国总规模：$VALUE|0Y$"
  EMPIRE_SIZE_COHESION_MULT:0 "因$COHESION|0Y%$$EMPIRE_COHESION$而乘以§R$VALUE|0%$§!"
@@ -143,7 +143,7 @@
  DISABLE_BUILDING:0 "停用建筑"
  DISABLE_BUILDING_DESC:0 "我们可以停用建筑以停止缴纳其维护费用。停用的建筑不会为行星提供任何增益。"
  CANNOT_DISABLE_BUILDING_NOT_OWNER:0 "§R该行星并不属于我们§!"
- CANNOT_DISABLE_BUILDING_RUINED:0 "§R建筑已损坏§!"
+ CANNOT_DISABLE_BUILDING_RUINED:1 "建筑已损毁"
  CANNOT_DISABLE_BUILDING_NOT_VALID:0 "§R无效建筑§!"
  CANNOT_DISABLE_BUILDING_WRONG_TYPE:0 "§R无法停用这类建筑§!"
  CANNOT_CHANGE_BUILDING_PRIO_COUNTRY:0 "§R建筑属于别国§!"
@@ -395,6 +395,7 @@
  NUM_DEPOSITS_WITH_NAME:0 "$DEPOSIT$：§Y（x$NUM$）§!"
  NUM_DEPOSITS:0 "§Y（x$NUM$）§!"
  PLANET_DETAILS_NOT_SURVEYED:0 "§R你必须先勘察行星才能了解到行星地貌的详细信息§!"
+
  DISTRICTS_TITLE:0 "地区"
  BUILDING_SLOT_OPEN:0 "§H打开建筑槽位§!"
  BUILDING_SLOT_OPTIONS_DESC:0 "§G点击查看建筑建造选项§!"
@@ -477,7 +478,7 @@
  planet_emigration:0 "行星迁出移民"
  new_colony:1 "新设殖民地"
  old_colony:0 "新设殖民地"
-
+ 
  buffer:0 "缓冲" # TODO find usage
  planet_livestock:0 "家畜"
  colonies:0 "殖民地"
@@ -486,7 +487,7 @@
  campaigns:0 "运动"
  monthly_trades:0 "每月贸易"
  claims:0 "领土主张" # TODO find usage
-
+  
  district_city:0 "都市区"
  district_city_plural:0 "都市区"
  district_city_desc:0 "这些密集的城市中心地带为文职人员提供了大量住房和办公区。"
@@ -605,10 +606,13 @@
  district_hab_cultural_desc:1 "有了这样的栖所娱乐中心，谁还需要大自然呢？"
  district_hab_energy:0 "反应堆区"
  district_hab_energy_plural:0 "反应堆区"
- district_hab_energy_desc:1 "栖所上的电力厂地区可生产能源点数，同时为栖所本身供电。" # NOTE 英语文本似有bug，使用了arcology
+ district_hab_energy_desc:1 "居住站上的发电区划可生产能量币，同时也为理想城自身供电。"
  district_hab_science:0 "研究区"
  district_hab_science_plural:0 "研究区"
  district_hab_science_desc:1 "栖所的这些地区是科学发现的中心，汇集了无数科研领域的$job_researcher_plural$。"
+ district_hab_mining:0 "$building_hab_astro_mining_facility$"
+ district_hab_mining_plural:0 "航天采矿湾"
+ district_hab_mining_desc:1 "$building_hab_astro_mining_facility_desc$"
  
  NO_POP_CATEGORY_TITLE:0 "没有类别"
  NO_POP_CATEGORY_TITLE_PLURAL:0 "没有类别"
@@ -996,7 +1000,7 @@
  mod_job_duelist_add:0 "$job_duelist$职位"
  mod_job_duelist_per_pop:0 "每$VALUE$人口§G+1§!个$job_duelist$职位"
  mod_job_duelist_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_duelist_add£"
-
+ 
  job_healthcare:0 "医务工作者"
  job_healthcare_plural:0 "医务工作者"
  job_healthcare_desc:1 "微观预防胜于宏观治疗。不过有时候双管齐下才是最佳方案。"
@@ -1267,6 +1271,10 @@
  job_odd_factory_worker_plural:0 "古怪工厂工人"
  job_odd_factory_worker_desc:1 "这些工人被分配到未知来源的神秘古老工厂中工作。难道会有什么问题吗？"
  mod_job_odd_factory_worker_add:0 "$job_odd_factory_worker$职位"
+ job_odd_factory_drone:0 "古怪工厂子个体"
+ job_odd_factory_drone_plural:0 "古怪工厂子个体"
+ job_odd_factory_drone_desc:0 "这些子个体在未知来源的古老神秘工厂中工作。这会出问题吗？"
+ mod_job_odd_factory_drone_add:0 "$job_odd_factory_drone$岗位"
  
  job_underground_trade_worker:0 "地下联络官"
  job_underground_trade_worker_plural:0 "地下联络官"
@@ -1478,6 +1486,7 @@
  mod_planet_researchers_society_research_produces_mult:0 "£job_researcher£$job_researcher_plural$产出的£society£$society_research$"
  mod_planet_researchers_society_research_produces_add:0 "$mod_planet_researchers_society_research_produces_mult$"
  mod_planet_researchers_produces_mult:1 "£job_researcher£$job_researcher_plural$产出"
+ mod_planet_culture_workers_produces_mult:0 "£job_culture_worker£ $job_culture_worker_plural$产出"
  mod_station_gatherers_produces_mult:0 "$mining_station$产出"
  mod_station_researchers_produces_mult:0 "$research_station$产出"
  MOD_COUNTRY_ADMIN_CAP_ADD:1 "行政管理能力"
@@ -1738,7 +1747,7 @@
  tech_orbital_trash_dispersal:0 "轨道垃圾散布"
  tech_orbital_trash_dispersal_desc:0 "这种轨道轰炸管理系统将会向目标星球同时发射上百万颗高速小型子弹，用垃圾信息过载行星的防御网络。装备该系统的军舰在轨道轰炸时会造成更多伤害。"
  tech_nanite_transmutation:0 "纳米变形"
- tech_nanite_transmutation_desc:1 "大规模生产各种稀有资源需要特别出色的纳米机器人。"
+ tech_nanite_transmutation_desc:2 "大规模生产各种稀有资源需要特别出色的纳米机器人。"
  
  ## DEPOSITS ##
  
@@ -1968,7 +1977,7 @@
  d_ancient_one_desc:0 "$ancient_one_desc$"
  d_fungoid_extermination:0 "真菌生物消灭残留物"
  d_fungoid_extermination_desc:0 "真菌生物被消灭后就剩下这些有毒粘液了。"
- d_ruined_arcology:0 "生态城废墟"
+ d_ruined_arcology:1 "理想城废墟"
  d_ruined_arcology_desc:0 "覆盖这颗城市星球的生态城已化为废墟。尽管其地基仍然坚实，但在我们重建之前，大量腐朽的建筑结构需要先清理干净。"
  d_egg_cracking:0 "$egg_cracking$"
  d_egg_cracking_desc:0 "$egg_cracking_desc$"
@@ -2049,6 +2058,17 @@
  d_alloys_4:0 "£alloys£ §Y+4§!"
  d_alloys_5:0 "£alloys£ §Y+5§!"
  d_dark_matter_deposit_1:0 "£sr_dark_matter£ §Y+1§!"
+
+ d_trade_value_1:0 "£trade_value£ +1"
+ d_trade_value_2:0 "£trade_value£ +2"
+ d_trade_value_3:0 "£trade_value£ +3"
+ d_trade_value_4:0 "£trade_value£ +4"
+ d_trade_value_5:0 "£trade_value£ +5"
+ d_trade_value_6:0 "£trade_value£ +6"
+ d_trade_value_7:0 "£trade_value£ +7"
+ d_trade_value_8:0 "£trade_value£ +8"
+ d_trade_value_9:0 "£trade_value£ +9"
+ d_trade_value_10:0 "£trade_value£ +10"
  
  d_terraforming_gas_deposit:0 "发现环境改造气体\n"
  d_terraforming_fluid_deposit:0 "发现环境改造液体\n"
@@ -2272,6 +2292,17 @@
  starbase_stations:0 "太空基地"
  planets:0 "行星"
  planet_districts:0 "地区"
+ planet_districts_cities:0 "城市区划"
+ planet_districts_farms:0 "农业区划"
+ planet_districts_mines:0 "采矿区划"
+ planet_districts_generators:0 "发电区划"
+ planet_districts_hab_research:0 "居住站研究区划"
+ planet_districts_hab_trade:0 "居住站贸易区划"
+ planet_districts_hab_leisure:0 "居住站休闲区划"
+ planet_districts_hab_mining:0 "居住站航天采矿湾"
+ planet_districts_hab_energy:0 "居住站反应堆区划"
+ planet_districts_arc_arms:0 "都市星球铸造区划"
+ planet_districts_arc_civilian:0 "都市星球工业区划"
  planet_jobs:0 "职位"
  planet_bio_trophies:0 "生化展品"
  planet_farmers:0 "农业职位"
@@ -2298,6 +2329,13 @@
  planet_structures:0 "行星建筑" # TODO find usage
  planet_branch_office_buildings:0 "$BRANCH_OFFICE_BUILDINGS$"
  planet_buildings:0 "建筑"
+ planet_buildings_commercialzones:0 "商业区"
+ planet_buildings_researchlabs:0 "研究实验室"
+ planet_buildings_maintenancedepots:0 "维护站"
+ planet_buildings_foundries:0 "合金铸造厂"
+ planet_buildings_factories:0 "工厂"
+ planet_buildings_refineries:0 "精炼厂"
+ planet_buildings_strongholds:0 "堡垒"
  planet_branch_offices:0 "分公司"
  planet_pops:0 "人口"
  pop_category_robot:0 "机器仆从"
@@ -2326,7 +2364,7 @@
  subject_integration:0 "整合附属国"
  pc_city:0 "寰球都市"
  pc_city_desc:0 "整颗星球都被工业都市蔓延所覆盖。从太空中已经无法辨认其天然岩石圈了。"
- trait_pc_city_preference:0 "AI世界偏好"
+ trait_pc_city_preference:1 "都市星球偏好"
  trait_pc_city_preference_desc:0 "$trait_pc_arctic_preference_desc$"
  leader_trait_nuumismatic_priest:1 "努玛商人"
  leader_trait_nuumismatic_priest_desc:0 "一位九级的沙克瓦赫，在心智集中和心灵凝视方面都有特殊的修成……"
@@ -2607,6 +2645,46 @@
  col_infested_desc:0 "此行星已被虫族天灾感染。"
  col_contingency:0 "紧急预案星球"
  col_contingency_desc:0 "此行星已被紧急预案接管。"
+ col_ecu_mix:0 "都市星球"
+ col_ecu_mix_desc:0 "这个都市星球尚未针对任一产业进行特化。"
+ col_ecu_foundry:0 "铸造型都市星球"
+ col_ecu_foundry_desc:0 "规模庞大的行星城市群，为时刻不停地生产合金进行了特化改造。"
+ col_ecu_factory:0 "工业型都市星球"
+ col_ecu_factory_desc:0 "规模庞大的行星城市群，为时刻不停地生产消费品进行了特化改造。"
+ col_ecu_research:0 "研究型都市星球"
+ col_ecu_research_desc:0 "规模庞大的行星城市群，为研发尖端科技进行了特化改造。"
+ col_mac:0 "机械星球"
+ col_mac_desc:0 "这个机械星球尚未针对任一生产类型进行特化。"
+ col_mac_foundry:0 "铸造型机械星球"
+ col_mac_foundry_desc:0 "一台行星规模的庞大机械，专门用于大规模生产合金。"
+ col_mac_factory:0 "工业型机械星球"
+ col_mac_factory_desc:0 "一个行星规模的庞大机械，专门用于大规模生产消费品。"
+ col_hiv:0 "蜂巢星球"
+ col_hiv_desc:0 "一个行星规模的有机体系，但尚未针对任一生产类型进行特化。"
+ col_hiv_foundry:0 "铸造型蜂巢星球"
+ col_hiv_foundry_desc:0 "一个行星规模的有机体系，专门用于大规模生产合金。"
+ col_habitat_research:0 "研究站"
+ col_habitat_research_desc:0 "人工建造的的深空理想城，专门用于科研。"
+ col_habitat_leisure:0 "休闲站"
+ col_habitat_leisure_desc:0 "人工建造的的深空理想城，专门用于休闲娱乐和文化活动。"
+ col_habitat_trade:0 "贸易站"
+ col_habitat_trade_desc:0 "人工建造的的深空理想城，专门用于贸易。"
+ col_habitat_fortress:0 "堡垒站"
+ col_habitat_fortress_desc:0 "人工建造的的深空理想城，专门配备了防御设施。"
+ col_habitat_foundry:0 "铸造站"
+ col_habitat_foundry_desc:0 "人工建造的的深空理想城，专门用于合金生产。"
+ col_habitat_factory:0 "工业站"
+ col_habitat_factory_desc:0 "人工建造的的深空理想城，专门用于消费品生产。"
+ col_habitat_refinery:0 "精炼站"
+ col_habitat_refinery_desc:0 "人工建造的的深空理想城，专门用于战略资源生产。"
+ col_habitat_mining:0 "开采站"
+ col_habitat_mining_desc:0 "人工建造的的深空理想城，专门用于开采矿物。"
+ col_habitat_energy:0 "发电站"
+ col_habitat_energy_desc:0 "人工建造的的深空理想城，专门用于发电。"
+ col_ring_mix:0 "环形世界"
+ col_ring_mix_desc:0 "一个巨大的环形世界，其巨大的区域内均匀分布着各种生产项目。"
+ col_default_machine:0 "殖民地"
+ col_default_machine_desc:0 "我们帝国的新殖民地，其上新单元的组装速率超过平均水平。"
  
  RESOURCE_GROUP_DEFAULT:0 "§W$STORED|*0$ +$BALANCE|*0$§!"
  RESOURCE_GROUP_DEFAULT_NEG:0 "§R$STORED|*0$ $BALANCE|*0$§!"
@@ -2614,8 +2692,8 @@
  RESOURCE_GROUP_DEFAULT_MAX:0 "§Y$STORED|*0$ +$BALANCE|*0$§!"
  RESOURCE_GROUP_DEFAULT_DEC:0 "§W$STORED|*1$ +$BALANCE|*0$§!"
  RESOURCE_GROUP_DEFAULT_NEG_DEC:0 "§R$STORED|*1$ $BALANCE|*0$§!"
- RESOURCE_GROUP_BALANCE_ONLY:0 "§W+$BALANCE|*0$§!"
  RESOURCE_GROUP_DEFAULT_NEG_DEC_TOTAL_POS:0 "§R$STORED|*1$ +$BALANCE|*0$§!"
+ RESOURCE_GROUP_BALANCE_ONLY:0 "§W+$BALANCE|*0$§!"
  RESOURCE_GROUP_BALANCE_ONLY_NEG:0 "§R$BALANCE|*0$§!"
  RESOURCE_GROUP_MULTI_TOOLTIP:0 "£$RESOURCE_KEY$£ $RESOURCE_NAME$：$AMOUNT$"
  LIMITED_GROUP:0 "$CURRENT$ / $LIMIT$"
@@ -2953,7 +3031,7 @@
  fleet1product2_addendum:1 "§H一次性交付到§Y一个殖民地§!。特利仨牌食品容器的使用期限为§Y80年§!，不多不少。在有效期内降低§Y$mod_planet_pops_organics_food_upkeep_mult$§!§G-10%§!。§!\n\n（使用100%万格拉容器型聚合物制造，经认证可容纳III级腐败物。洗碗机可用。）"
  fleet1product2_tooltip:0 "§G+1§!§Y部署特利仨食品容器§!决策"
  fleet1product3:0 "§G特利仨牌大气除臭器§!！贵农业星球是不是闻起来臭臭的？贵寰球都市是不是闻起来“呃，拜托，不要了！”贵殖民地§E臭§!吗？\n\n我们有解决方案！我们的微生物与气溶胶试剂混合的专利产品能够清理所有宜居对流层。坐好，放松，部署我们的除臭无人机，清新空气自然来。"
- fleet1product3_addendum:0 "§H一次性交付到§Y一个殖民地§!。除臭效果的质保期限为§Y80年§!，不多不少。在有效期内增强§Y$MOD_PLANET_IMMIGRATION_PULL_MULT$§!§G+30%§!并增加§Y$MOD_POP_GROWTH_FROM_IMMIGRATION$§!§G+10%§!。§!\n\n（“特利仨大层除臭器”品牌名称和“你以为你在呼吸的叫空气吗？”标语版权（C）2200年万格拉三和会版权所有。）"
+ fleet1product3_addendum:2 "§H一次性交付到§Y一个殖民地§!。除臭效果的质保期限为§Y80年§!，不多不少。在有效期内增强§Y$MOD_PLANET_IMMIGRATION_PULL_MULT$§!§G+30%§!并增加§Y$MOD_POP_GROWTH_FROM_IMMIGRATION$§!§G+10%§!。§!\n\n（“特利仨大层除臭器”品牌名称和“你以为你在呼吸的叫空气吗？”标语版权（C）2200年万格拉三和会版权所有。）"
  fleet1product3_tooltip:0 "§G+1§!§Y部署特利仨大气除臭器§!决策"
  fleet1product4:0 "独家§G特利仨小玩意收藏套装§!！这里面全是时尚艳丽的小玩意儿，肯定会让您成为全场瞩目的焦点。"
  fleet1product4_addendum:1 "（消费品的实际价值在旁观者眼中可能有所不同。）"
@@ -3042,6 +3120,8 @@
  fleet2dealdesc11.a:0 "$fleet2dealdesc11$\n\n答案是…另一艘警戒舰，对吧？"
  fleet2dealdesc11.b:0 "$fleet2dealdesc11$\n\n答案是…奇异瓦斯，对吧？嗯…它的气味真是令人陶醉！那是成功的气息！深吸一口气，您就能亲眼目睹努玛的庄容。但要小心，过量吸入可能会损害您的薄膜。"
  fleet2dealdesc11.c:0 "$fleet2dealdesc11$\n\n当然了！答案是…能源点数…一直都是能源点数。点数能扭转乾坤。我们在您的问题上撒点数，您的问题就会不见了。赞美努玛！"
+ # minor artifacts
+ fleet2dealdesc12:1 "通过奴玛的指导，我们发现这些古代文物对我们的冥想很有启发性。\n\n与它们分离的想法当然让我们感到痛苦，但我们认为你们[Root.GetSpeciesNamePlural]可以通过研究它们获得很多知识。\n\n我们需要一些高级物资，所以或许我们可以进行一个交易…？$fleetdeal_explanation$"
  cara_fleet2_deal:0 "让我们看看你的商品。"
  cara_fleet2_take_deal:0 "成交！"
  cara_fleet2_dealtaken:0 "祝福您，[Root.GetSpeciesNamePlural]，您的事业让我们离努玛更近了。"
@@ -3323,7 +3403,7 @@
  action.99.desc:0 "我们对[market_founder_planet.GetName]的推广宣传有了收获，贸易巨头们决定将大部分商业活动集中在[market_founder_planet.GetStarName]星系内！"
  action.99.desc.phobe:0 "$action.99.desc$"
  action.101.name:0 "§H银河市场§!：已成立"
- action.101.desc:0 "银河贸易的中心已经坐落在了§Y[galactic_market_station.solar_system.GetName]§!星系，位于[From.GetName]境内。[From.GetAdj]政府已经正式合法化这一市场。人们可以通过中立的第三方开展资源买卖。"
+ action.101.desc:1 "银河贸易的中心已经坐落在了§Y[galactic_market_station.solar_system.GetName]§!星系，位于[From.GetName]境内。[From.GetAdj]政府已经正式合法化这一市场。人们可以通过中立的第三方开展资源买卖。"
  action.101.desc.phobe:0 "心怀鬼胎的§Y[From.GetName]§!异种成立了一个外星商品的交易市场。尽管我们对此不屑一顾，但市场的大门仍对我们敞开。"
  action.101.desc.homicidal:0 "$action.96.desc.homicidal$"
  action.103.name:0 "§H银河市场§!：已迁址"
@@ -3508,6 +3588,10 @@
  market_founding_chain_title:0 "银河贸易市场的成立"
  market_founding_chain_desc:0 "国际贸易论坛即将成立，而其中央贸易空间站的控制者必将从中获益。\n\n如果我们希望竞争市场东道主的头衔，可以在几年的时间里用§H决策§!提名我们的一颗星球主持$galactic_market_station$。"
 
+ casus_belli_cb_steal_galatron:1 "声索银河之星"
+ war_goal_wg_steal_galatron:0 "夺取银河之星"
+ war_goal_wg_steal_galatron_desc:0 "拥有银河之星是我国崛起之路中至高无上的目标。除非银河之星被从那些不值当的附属品中解放出来并以其永恒长存庇佑我们的国家，我们永远不会停手。"
+
  # Mandates
  MANDATE_mandate_monthly_energy:0 "能源经济系统"
  MANDATE_mandate_monthly_energy_DESC:1 "[Root.GetRulerTitle][Root.GetRulerName]承诺将我们的£energy£§Y能源点数§!生产盈余增加到至少£energy£§Y+20§!/月，并因此当选。\n\n§E任期结束时的奖励：§!\n$mandate_unity_reward$"
@@ -3636,7 +3720,7 @@
  building_waste_reprocessing_center:0 "废物回收中心"
  building_waste_reprocessing_center_desc:0 "行星的一站式回收中心，可将工业和有机废物转换成可重新利用的清洁能源和矿物。由$NAME_Caravaneer_Fleet3$设计，它的构造似乎涉及一些奥术，而且几乎无法逆向工程。"
 
-# Megacorp TODO
+# Megacorp 
 
 # To Corporation Diplomacy
  DEMAND_SUBS_SELECT_01:0 "你是否提议[Root.GetName]成为你的子公司?"
@@ -3893,7 +3977,7 @@
 
 # Sectors
  core_sector:0 "核心星域"
- frontier_sector:0 "边境星域"
+ normal_sector:0 "星域"
 
  NO_DISTRICTS_ALLOWED:0 "§R无法在这颗行星上建设地区§!"
  EMPIRE_VIEW_DISTRICT_AMOUNT:0 "$CURRENT$/$MAX$"
@@ -3908,9 +3992,8 @@
  SECTOR_STOCKPILE:0 "储备"
  SECTOR_STOCKPILE_LABEL:0 "$SECTOR_STOCKPILE$："
  SECTOR_STOCKPILE_AMOUNT:0 "$AMOUNT|*0$"
- SECTOR_STOCKPILE_DESC:0 "该星域目前储备的资源。\n储备在星域内的资源只能用于当前星域专注的行星建设。"
  SECTOR_STOCKPILE_CONVERSION:0 "x$CONVERSION_RATE|1$"
- SECTOR_STOCKPILE_CONVERSION_DESC:0 "§H转移比率：1:$CONVERSION_RATE|1$§!\n\n点击转移£$RESOURCE_KEY$£$AMOUNT_SOURCE|1$至$AMOUNT_DEST|1$$SECTOR_STOCKPILE$。\n按住CTRL点击转移£$RESOURCE_KEY$£$LARGE_AMOUNT_SOURCE|1$至$LARGE_AMOUNT_DEST|1$$SECTOR_STOCKPILE$。"
+ SECTOR_STOCKPILE_CONVERSION_DESC:1 "§H转换比率：1：$CONVERSION_RATE|1$§!\n\n§G点击转移 £$RESOURCE_KEY$£$AMOUNT_SOURCE|0Y$至$AMOUNT_DEST|0Y$ $SECTOR_STOCKPILE$。\n按住CTRL同时点击转换 £$RESOURCE_KEY$£$LARGE_AMOUNT_SOURCE|0Y$至$LARGE_AMOUNT_DEST|0Y$ $SECTOR_STOCKPILE$。§!"
  SECTOR_TRANSFER_RESOURCE_NOT_ACCEPTED:0 "星域类型无法接纳其中一种或多种资源。"
  SECTOR_WRONG_OWNER:0 "国家非星域的所有者"
  INVALID_NAME:0 "名称无效"
@@ -4041,7 +4124,6 @@
  requires_no_existing_mega_art_installation:0 "$TRIGGER_FAIL$只能建造一座$mega_art_installtion_3$。"
  requires_no_existing_interstellar_assembly:0 "$TRIGGER_FAIL$只能建造一座$interstellar_assembly_4$。"
  
-
  observation.1011.b:0 "这不是我们的问题。"
 
  already_bought:0 "我们已经购买了这个产品"
@@ -4061,10 +4143,17 @@
  TOOLTIP_RESTORE_JOBS:0 "恢复$COUNT|Y$个被降低优先级的职位。"
  TOOLTIP_RESTORE_JOBS_NONE_TO_RESTORE:0 "£trigger_no£无职位被降低优先级。"
 
+ FAVORITE_JOB_DESC:0 "点击偏好一个岗位"
+ TOOLTIP_FAVORITE_JOB:0 "这会为所选岗位提供该阶层就职时的最高优先度。这个阶层的新人口将优先尝试就任该岗位。"
  CLICK_TO_FAVORITE:0 "§G点击将这个职位标注为喜爱，提升其优先级§!"
  DEVASTATION:0 "破坏度"
  AVAILABLE_JOBS:0 "£job£可用职位：$COUNT|Y$"
-
+ 
  nanites_deficit:0 "纳米机器人短缺"
  nanites_deficit_tooltip:0 "纳米机器人的缺乏导致了纳米变形器的停滞。"
  mod_pop_factions_produces_mult:0 "党派影响力收入"
+
+ CARAVANEERS_LABEL:0 "行商"
+ CARAVANEERS_LABEL_TOOLTIP:0 "行商的诞生——太空商人派遣舰队穿梭于星海间，与您进行大买卖！"
+
+ DIPLO_ACTION_ALREADY_REPLIED:0 "$COUNTRY|Y$已对$ACTION|Y$作出回应"

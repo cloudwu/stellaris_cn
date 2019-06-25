@@ -1,6 +1,9 @@
 Hotkey : 快捷键
 Click : 点击
 Right Click : 右键点击
+Are you sure you (wish/want) to : 您确定要
+Do you (wish/want) to : 您要
+How do you wish to proceed? : 您希望如何继续？
 modifier : 调整因素
 effect : 效应；效果
 cost : 花费（v）；消耗（v）；费用（n）；成本（n）；开销（n）；
@@ -17,6 +20,7 @@ Xeno : 异星；异族；异种；异形
 Dimension(al) : 次元；维度（第n维度）
 Extradimension(al) : 异次元
 avatar : 化身
+dismantle : 拆除；拆解
 
 # Ethic
 Ethic/Ethos : 道德观；道德；道德准则
@@ -60,7 +64,7 @@ actions :
     Purging : 肃清；肃清中；大清洗
     Displace : 驱离
     Assembl(e/y) : 装配
-    Disassemble : 拆解
+    Disassemble : 拆卸
 Pop Growth : 人口增长
 Pop Decline : 人口下降
 Migration : 移民
@@ -88,6 +92,7 @@ crime :
     gang : 黑帮
 Stability : 稳定度
 Devastation : 破坏度
+Designation : 规划
 districts:
     District : 地区
     City District : 都市区
@@ -99,6 +104,7 @@ districts:
     Leisure District : 休闲区
     Reactor District : 反应堆区
     Research District : 研究区
+    Astro-Mining Bays : 航天采矿湾
     Arcology : 生态城
     Residential Arcology : 居住生态城
     Foundry Arcology : 铸造生态城
@@ -106,13 +112,14 @@ districts:
     Leisure Arcology : 休闲生态城
     Nexus District : 中枢区
     Hive District : 蜂巢区
+    Segment : 区段
 planetary feature :
     Planetary Feature : 行星地貌
     deposit : 矿藏；贮藏；沉积
     blocker : 障碍
 Classis :
     planet class : 行星类别
-    Molten World : 熔岩世界
+    Molten World : 熔融世界
     Frozen World : 寒冰世界
     Barren World : 荒芜世界
     Desert World : 沙漠世界
@@ -131,6 +138,7 @@ Classis :
     Machine World : 机械世界
     Hive World : 蜂巢世界
     Shattered World : 破碎世界
+    Relic World : 遗迹世界
 Holy World : 圣星
 
 # Job
@@ -207,8 +215,10 @@ Gateway : 星门
 Empire Sprawl : 帝国规模
 Administrative Capacity : 行政容量
 Empire Cohesion : 帝国内聚度
-Capital : （行星）首府；（星域）治所；（帝国）首都；（帝国）都城；（泛）首府
+Capital : （行星）首府；（星域）首府；（帝国）首都；（帝国）都城；（泛）首府
 Sector : 星域
+    focus : （发展）重心
+    transfer : 转移（资源）
 
 # Government
 Government : 政体；政府
@@ -282,7 +292,8 @@ shroud :
 # 外交
 Embassy : 使馆；外交使节 # 未实际使用
 opinion : 评价
-Rival : 宿敌
+rival : 劲敌；竞争
+rivalry : 竞争；敌视
 subjects :
     Subject : 附属国
     Overlord : 宗主国
@@ -361,6 +372,9 @@ Migrating Forests : 迁徙森林
 Zanaam : 扎娜姆
 Ancient One : 旧日支配者
 Kuur : 克尔母
+## Synthetic Dawn
+machine uprising :
+    Machine Uprising : 机械起义
 ## Distant Stars
 superflare : 超耀发
 Kohtalo : 宿命号（飞船）
@@ -395,6 +409,9 @@ leviathans:
 precursors :
     Cybrex : 赛博霸王
     Javorian Pox : 枫痘   # 原来翻译成 杰法利亚瘟疫 和 贾沃安瘟疫 不统一，所以干脆瞎起了个易读的名字。枫来自克罗地亚语中的 Javor 痘指 Pox 。
+    ## Ancient Relics
+    Baol : 巴奥（族）
+    Zroni : 卓尼（族）
 crises :
     Prethoryn : 虫族（？）
     Sentinel : 星际护卫队；星际护卫；护卫
@@ -402,7 +419,11 @@ crises :
     Unbidden : 破界者
     Aberrant : 畸变者
     Vehement : 咆哮者
-    Contingency : 紧急预案
+    ## Synthetic Dawn
+    Contingency :
+        Contingency : 紧急预案
+        Ghost Signal : 幽灵信号
+        Sterilization : 消毒
 ## Leviathan
 enclaves:
     Curator : 典藏研究员/典藏研究所
@@ -472,9 +493,24 @@ megastructures :
     Strategic Coordination Center : 战略协调中心
     Mega Art Installation : 巨型艺术奇观
     Interstellar Assembly : 星际大会堂
+## Ancient Relics
+artifacts :
+    artifact : 文物
+    Relic : 遗珍
+    Minor Artifact : 小型文物
+    archaeology :
+        archaeology : 考古
+        archaeology site : 考古站点；遗迹
+        breakthrough : 突破
+        clue : 线索
+        excavate : 发掘
+        chapter : 阶段
+        phase : 时段
 
 TODO :
     增加、增强、提高、加快、提升、延长
     减少、减弱、降低、减慢、降低、缩短
     
     最多（少）、至多（少）
+    
+    station

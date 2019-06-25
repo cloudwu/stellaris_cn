@@ -101,7 +101,7 @@
  
  tr_expansion_finish:0 "扩张传统完成"
  tr_expansion_finish_machine:0 "扩张传统完成"
- tr_expansion_finish_effect:4 "§E$TRADITIONS_FINISH$：§!\n树立全部$tr_expansion_adopt$后，除轨道栖所外的所有行星上可以多建造§Y1§!个地区。"
+ tr_expansion_finish_effect:4 "§E$TRADITIONS_FINISH$：§!\n树立全部$tr_expansion_adopt$后，所有行星上可以多建造§Y1§!个地区。（这不会作用于轨道栖所和环形世界）"
  tr_expansion_finish_hive_effect:0 "$tr_expansion_finish_machine_effect$"
  
  ################################################################
@@ -208,7 +208,7 @@
  #tr_purity_appropriation_desc:1 "§Y$MOD_POP_RESETTLEMENT_COST_MULT$§! reduced by §G50%§!."
  #tr_purity_appropriation_delayed:1 "Land that is not being worked contributes nothing to our empire. Workers must be relocated in an efficient manner to those planets where they are needed most."
  #tr_purity_finish:0 "Purity Traditions Finished"
- #tr_purity_finish_effect:1 "§E$TRADITIONS_FINISH$:§!\nAdopting all $tr_purity_adopt$ will increase  £unity£ §Y$country_base_unity_produces_mult$§! by §G+10%§!."
+ #tr_purity_finish_effect:1 "§E$TRADITIONS_FINISH$:§!\nAdopting all $tr_purity_adopt$ will increase £unity£ §Y$country_base_unity_produces_mult$§! by §G+10%§!."
  
  ################################################################
  # HARMONY
@@ -518,7 +518,7 @@
 
  tr_discovery_faith_in_science:0 "科学信仰"
  tr_discovery_faith_in_science_desc:6 "§Y研究§!职位的£pop£人口§Y维护费§!减少§G20%§!。"
- #tr_discovery_faith_in_science_desc:6 "For every §Y20§!  £pop£ Pops, our planets will have §Y1§! £job_researcher£ §Y$job_researcher$ Job§!."
+ #tr_discovery_faith_in_science_desc:6 "For every §Y20§! £pop£ Pops, our planets will have §Y1§! £job_researcher£ §Y$job_researcher$ Job§!."
  tr_discovery_faith_in_science_delayed:0 "对公众来说，科学几乎成为了一种宗教——他们绝对信仰科学。宇宙中也没有什么问题困难到科学不能解释。"
  tr_discovery_faith_in_science_machine:0 "上行延迟减少"
  tr_discovery_faith_in_science_machine_desc:1 "我们的行星每§Y20§!£pop£人口增加§Y1§!个£job_calculator£§Y$job_calculator$职位§!。"
@@ -660,9 +660,11 @@
  requires_technology_gene_tailoring:1 "$TRIGGER_FAIL$需要£society£ §Y$tech_gene_tailoring$§!科技。"
  requires_technology_starbase_4:0 "$TRIGGER_FAIL$需要£engineering£ §Y$tech_starbase_4$§!科技。"
  requires_technology_starbase_5:0 "$TRIGGER_FAIL$需要£engineering£ §Y$tech_starbase_5$§!科技。"
+ requires_technology_habitat_1:0 "$TRIGGER_FAIL$需要£engineering£§Y$tech_habitat_1$§!科技。"
  requires_technology_battleships:0 "$TRIGGER_FAIL$需要£engineering£ §Y$tech_battleships$§!科技。"
  requires_technology_glandular_acclimation:0 "$TRIGGER_FAIL$需要£society£ §Y$tech_glandular_acclimation$§!科技。"
  requires_mega_engineering:1 "$TRIGGER_FAIL$需要£engineering£ §Y$tech_mega_engineering$§!科技。"
+ requires_built_or_repaired_megastructure:0 "$TRIGGER_FAIL$需要已经修复或完全升级任一巨型结构。"
  hive_mind_biological_ascension_only1:0 "$TRIGGER_FAIL$蜂群思维无法开启灵能飞升之路。"
  hive_mind_biological_ascension_only2:0 "$TRIGGER_FAIL$蜂群思维无法开启合成飞升之路。"
  requires_zero_point_power:1 "$TRIGGER_FAIL$需要£physics£ §Y$tech_zero_point_power$§!科技。"
@@ -743,7 +745,7 @@
  ap_galactic_contender_desc:0 "堕落帝国贪恋着他们衰朽文明的遗产，时而害怕着他们周围富有活力的年轻种族。他们的时代早已过去。"
  ap_technological_ascendancy_desc:0 "数代前与魔法并无区分的科技现在已经触手可及了。科技的新时代已然开始。"
  ap_mastery_of_nature_desc:0 "虽然我们很早以前就掌握了我们母星的自然环境，但每当遇到外星的生物群落时我们都会面临新挑战。它们也应当被克服。"
- ap_voidborn_desc:1 "曾被视为不可逾越的冷漠屏障的虚空，现在已经是我们的第二家园。永久居住在深空已成为可能。"
+ ap_voidborn_desc:1 "曾视为不可逾越的冰冷屏障，虚空已经成为我们的第二家园。我们已经适应了在深空永久居住，这将降低我们对基础设施的需求，同时栖所能提供更多空间用于其它功能。"
  ap_the_circle_of_life_desc:0 "一种巨大的建于恒星围绕轨道的环状巨型结构并带有人造栖息地。从理论上来说，它是可以做到的……"
  ap_galactic_wonders_desc:0 "巨型结构理所当然被视作我们这个时代的奇迹。仅仅是数代之前，这样规模的工程都是难以想象的。"
  ap_interstellar_dominion_desc:2 "群星在招手而我们紧随。我们和它们之间没有其他的东西。"
@@ -764,4 +766,4 @@
  ap_galactic_wonders_utopia_and_megacorp:2 "$ap_galactic_wonders$"
  ap_galactic_wonders_utopia_and_megacorp_desc:1 "$ap_galactic_wonders_desc$"
 
- ap_technological_ascendancy_rare:0 "§M稀有科技§!现在更常见，出现几率提高§G50%§!。"
+ ap_technological_ascendancy_rare:2 "§M稀有科技§!的出现几率现在是正常情况的§Y1.5§!倍。例如，§Y1%§!几率会变为§Y1.5%§!。"

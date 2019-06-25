@@ -1,6 +1,6 @@
 群星中文校对 Mod
 ============
-当前支持游戏版本： 群星 Stellaris 2.2.7 。
+当前支持游戏版本： 群星 Stellaris 2.3.1 。
 
 你可以直接在创意工坊订阅本 mod:
 http://steamcommunity.com/sharedfiles/filedetails/?id=734129025
@@ -8,7 +8,8 @@ http://steamcommunity.com/sharedfiles/filedetails/?id=734129025
 本项目目录结构：
 
 * cn 与 cn.mod 是最新的汉化 mod 文件。 
-* cn2.2 是 2.2 增加的官方中文（供参考）。
+* cn2.3 是 2.3 的官方中文（供参考）。
+* diff 目录是 2.2 到 2.3 的变更，目前的校对工作在这里完成。
 * en 是当前英文原文文本。
 * term_list.txt 是术语列表，参加翻译时请参考这里统一术语。
 * script 是一些实用工具脚本，用来检查错误。
@@ -22,5 +23,5 @@ http://steamcommunity.com/sharedfiles/filedetails/?id=734129025
 
 ### License
 
-* 本文本的的原文版本属于 Paradox Interactive ( https://www.paradoxplaza.com/ ) 
+* 本文本的的原文版权属于 Paradox Interactive ( https://www.paradoxplaza.com/ ) 
 * 翻译文本基于 CREATIVE COMMONS BY-SA 创作 ( https://creativecommons.org/licenses/by-sa/3.0/deed.zh ) 转载请附上 github 仓库地址：https://github.com/cloudwu/stellaris_cn 

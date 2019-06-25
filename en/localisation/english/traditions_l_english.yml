@@ -101,7 +101,7 @@
  
  tr_expansion_finish:0 "Expansion Traditions Finished"
  tr_expansion_finish_machine:0 "Expansion Traditions Finished"
- tr_expansion_finish_effect:4 "§E$TRADITIONS_FINISH$:§!\nAdopting all $tr_expansion_adopt$ will allow all your non-Habitat planets to build §Y1§! additional district."
+ tr_expansion_finish_effect:4 "§E$TRADITIONS_FINISH$:§!\nAdopting all $tr_expansion_adopt$ will allow all your planets to build §Y1§! additional district. (This will not affect Habitats or Ring Worlds.)"
  tr_expansion_finish_hive_effect:0 "$tr_expansion_finish_machine_effect$"
  
  ################################################################
@@ -660,9 +660,11 @@
  requires_technology_gene_tailoring:1 "$TRIGGER_FAIL$Requires the £society£ §Y$tech_gene_tailoring$§! technology."
  requires_technology_starbase_4:0 "$TRIGGER_FAIL$Requires the £engineering£ §Y$tech_starbase_4$§! technology."
  requires_technology_starbase_5:0 "$TRIGGER_FAIL$Requires the £engineering£ §Y$tech_starbase_5$§! technology."
+ requires_technology_habitat_1:0 "$TRIGGER_FAIL$Requires the £engineering£ §Y$tech_habitat_1$§! technology."
  requires_technology_battleships:0 "$TRIGGER_FAIL$Requires the £engineering£ §Y$tech_battleships$§! technology."
  requires_technology_glandular_acclimation:0 "$TRIGGER_FAIL$Requires the £society£ §Y$tech_glandular_acclimation$§! technology."
  requires_mega_engineering:1 "$TRIGGER_FAIL$Requires the £engineering£ §Y$tech_mega_engineering$§! technology."
+ requires_built_or_repaired_megastructure:0 "$TRIGGER_FAIL$Requires having repaired or fully upgraded any Megastructure."
  hive_mind_biological_ascension_only1:0 "$TRIGGER_FAIL$A Hive Mind is incapable of starting down the path to Psionic Ascension."
  hive_mind_biological_ascension_only2:0 "$TRIGGER_FAIL$A Hive Mind is incapable of starting down the path to Synthetic Ascension."
  requires_zero_point_power:1 "$TRIGGER_FAIL$Requires the £physics£ §Y$tech_zero_point_power$§! technology."
@@ -743,7 +745,7 @@
  ap_galactic_contender_desc:0 "The Fallen Empires cling to the ruins of their decrepit civilizations, ever fearful of the younger and more dynamic races that surround them. Their time has long since passed."
  ap_technological_ascendancy_desc:0 "Technologies that would have been indistinguishable from magic mere generations ago are now within our reach. A new age of technology has begun."
  ap_mastery_of_nature_desc:0 "Although we mastered the nature of our homeworld long ago, the alien biomes we have since encountered present new challenges. They too shall be overcome."
- ap_voidborn_desc:1 "The void, once seen as a cold and insurmountable barrier, has become a second home to us. Permanent habitation in the depths of space is now eminently possible."
+ ap_voidborn_desc:1 "The void, once seen as a cold and insurmountable barrier, has become a second home to us. We have adapted to permanent habitation in the depths of space, reducing our infrastructure needs and yielding more room on our habitats for other functions."
  ap_the_circle_of_life_desc:0 "A massive ring-shaped megastructure with artificial habitats built around the orbital circumference of a star. In theory, it could be done..."
  ap_galactic_wonders_desc:0 "Megastructures are rightfully regarded as the wonders of our time. The scope of such a project would have been unimaginable mere generations ago."
  ap_interstellar_dominion_desc:2 "The stars beckon and we follow. May nothing stand between us and them."
@@ -764,4 +766,4 @@
  ap_galactic_wonders_utopia_and_megacorp:2 "$ap_galactic_wonders$"
  ap_galactic_wonders_utopia_and_megacorp_desc:1 "$ap_galactic_wonders_desc$"
 
- ap_technological_ascendancy_rare:0 "§MRare technologies§! are now §G50%§! more common."
+ ap_technological_ascendancy_rare:2 "§MRare technologies§! now appear at §Y1.5§! times the normal rate. This effect would change a §Y1%§! chance into a §Y1.5%§! chance."

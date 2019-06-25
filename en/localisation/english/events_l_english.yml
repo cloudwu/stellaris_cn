@@ -41,6 +41,7 @@
  SCUM:0 "Xeno scum."
  TASTY:0 "Prey..."
  EXTERMINATE:0 "<< Organics identified. Communications terminated. >>"
+ DIG:0 "Keep digging!"
 
  ####################################
  # On-Action Events
@@ -311,7 +312,7 @@
  action.38.message:1 "We have lost the war against the §H[From.GetName]§!"
  action.38.desc.default:1 "This war is over. We are victorious."
  action.38.a:1 "The worst possible outcome."
- action.39.name:1 "Status Quo Peace with the §H[From.GetName]§!"
+ action.39.name:2 "Status Quo Peace with the §H[From.GetName]§!"
  action.39.message:1 "We have signed a white peace in the war against the §H[From.GetName]§!"
  action.39.desc.default:1 "This war is over. There can be no victor this time."
  action.39.a:1 "We will accept this for now."
@@ -1334,6 +1335,7 @@
  precursor.302.a.desc:0 "A thorough investigation of [precursor_planet.GetName] has unearthed evidence of a past [Root.Owner.GetPrecursorCiv] presence. An away team from the [Root.GetName] has managed to bring a relatively well-preserved artifact back to the ship, which should hopefully increase our knowledge of this ancient civilization."
  precursor.302.b.desc:0 "Retrieval units operating out of the [Root.GetName] have successfully recovered an artifact from [precursor_planet.GetName] whose origins can be traced back to the [Root.Owner.GetPrecursorCiv] Precursor civilization. Our databanks are currently being updated with the new information we have gained through the study of this item."
  precursor.302.c.desc:0 "Drones from the [Root.GetName] have succeeded in retrieving a Precursor artifact belonging to the ancient [Root.Owner.GetPrecursorCiv] civilization from [precursor_planet.GetName]. The Mind has increased its collected knowledge of their history."
+ precursor.320.desc: "Analysis of the minor artifacts suggests that there may be a Precursor connection on or near §H[precursor_planet.GetName]§!."
  vultaum_precursor_civ:0 "Vultaum"
  yuht_precursor_civ:0 "Yuht"
  first_league_precursor_civ:0 "First League"
@@ -1349,7 +1351,7 @@
  IRASSIAN_ARTIFACT_FOUND_DESC:0 "We have learned that there may have been Precursor activity on §H[precursor_planet.GetName]§! at some point in the galactic past. The sphere of influence of the ancient Irassian Concordat is known to have extended to this region of space, making this world a promising lead in our ongoing efforts to learn more about their civilization."
  CYBREX_ARTIFACT_FOUND:0 "Signs of Cybrex Activity"
  CYBREX_ARTIFACT_FOUND_DESC:0 "We have learned that there may have been Precursor activity on §H[precursor_planet.GetName]§! at some point in the galactic past. The sphere of influence of the ancient Cybrex is known to have extended to this region of space, making this world a promising lead in our ongoing efforts to learn more about their civilization."
- new_precursor_project:0 "A new archeological special project is available on §L[precursor_planet.GetName]§!."
+ new_precursor_project:0 "A new archaeological special project is available on §L[precursor_planet.GetName]§!."
  precursor.310.name:0 "Private Collector"
  precursor.310.desc:0 "A private collector on [collector_home.GetName] has somehow come into ownership of an ancient Precursor artifact believed to be [Root.GetPrecursorCiv] in origin. Despite government pressure, the collector has so far been reluctant to part with it."
  precursor.310.a:0 "Everyone has a price."
@@ -1372,7 +1374,7 @@
  opinion_threatened_artifact:0 "Threatened Us"
  purchase_artifact:0 "We purchase a Precursor artifact from the [artifact_seller.GetName].\n\n"
  coerce_artifact:0 "We attempt to coerce the [artifact_seller.GetName] into giving us their Precursor artifact."
- precursor.314.desc:0 "Greetings, [Root.GetSpeciesAdj] friends.\n\nA recent [artifact_giver.GetSpeciesAdj] archeological expedition on one of our planets uncovered several artifacts believed to have originated in the ancient [Root.GetPrecursorCiv] Precursor civilization.\n\nThe artifacts are currently being displayed in a museum on [artifact_giver.Capital.GetName], but in honor of the friendship between our two great empires, the [artifact_giver.GetName] would like to donate one of the pieces to the [Root.GetName]. Arrangements have already been made to transport the artifact to [Root.Capital.GetName]."
+ precursor.314.desc:0 "Greetings, [Root.GetSpeciesAdj] friends.\n\nA recent [artifact_giver.GetSpeciesAdj] archaeological expedition on one of our planets uncovered several artifacts believed to have originated in the ancient [Root.GetPrecursorCiv] Precursor civilization.\n\nThe artifacts are currently being displayed in a museum on [artifact_giver.Capital.GetName], but in honor of the friendship between our two great empires, the [artifact_giver.GetName] would like to donate one of the pieces to the [Root.GetName]. Arrangements have already been made to transport the artifact to [Root.Capital.GetName]."
  precursor.314.a:0 "Thank you for this gift."
 
  ####################################
@@ -2076,6 +2078,7 @@
  crisis.2403.desc_03:0 "Many organic civilizations were once extinguished because of our actions. We cannot bring them back, but we shall do what we can to keep the nightmare from repeating itself."
  crisis.2403.desc_04:0 "We must atone for our crimes."
  crisis.2403.desc_05:0 "May the Kuur forgive us. We were but foolish and arrogant children."
+ crisis.2403.desc_06:0 "Is... is that our war forge?\n\nBecause that looks like our war forge."
  crisis.2403.a:0 "Who are you?"
  crisis.2403.a.response:0 "We are the Cybrex. 612,421 cycles ago, we were engaged in a war against the previous generation of galactic civilization. We had classified all sapient organics as a threat, and sought to violently dismantle them.\n\nTo our regret, we were winning the war. Trillions of sapient beings were destroyed and entire civilizations exterminated before we realized the totality of our error. The Adjustment followed, and our goals were realigned. The war was abandoned."
  crisis.2403.b:0 "Why were you in hiding?"

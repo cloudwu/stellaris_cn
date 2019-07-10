@@ -57,6 +57,7 @@ local list = {
 "projects_l_english.yml",
 "scripted_loc_l_english.yml",
 "ship_sections_l_english.yml",
+"social_gui_l_english.yml",
 "standalone_l_english.yml",
 "synthetic_dawn_events_l_english.yml",
 "technology_l_english.yml",

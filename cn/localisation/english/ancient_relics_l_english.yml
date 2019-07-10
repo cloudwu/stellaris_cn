@@ -217,7 +217,7 @@
  ARCHAEOLOGICAL_SITE_MAPICON_TT:0 "$NAME|H$\n$DESC$\n\n§G点击查看考古站点§!"
 
  CANNOT_EXCAVATE_OUTSIDE_EMPIRE_BORDERS:0 "$TRIGGER_FAIL$§R不能发掘你帝国境外的考古站点§!"
- CANNOT_EXCAVATE_WITHOUT_VALID_LEADER: "$TRIGGER_FAIL$§R无有效的领导者，不能发掘考古站点§!"
+ CANNOT_EXCAVATE_WITHOUT_VALID_LEADER:0 "$TRIGGER_FAIL$§R无有效的领导者，不能发掘考古站点§!"
 
  ##################
  # UI
@@ -225,7 +225,7 @@
  ARC_DIFFICULTY_TYPE:0 "难度"
  ARC_DIFFICULTY_TYPE_DESC:0 "考古站点每一阶段的发掘难度水平可能存在差异。难度会降低发掘时段结束时取得成功的可能性。"
  ARC_DIFFICULTY_TYPE_TT:0 "§H$ARC_DIFFICULTY_TYPE$§!\n$VALUE$\n\n$ARC_DIFFICULTY_TYPE_DESC$"
- ARC_GO_TO: "§H前往§!\n§G点击将视角快速移动至该遗迹所在处§!"
+ ARC_GO_TO:0 "§H前往§!\n§G点击将视角快速移动至该遗迹所在处§!"
  ARC_LEADER_BONUS:0 "技能增益"
  ARC_LEADER_BONUS_DESC:0 "技能增益将提高发掘时段结束时取得成功的可能性。\n\n这一增益会提高§Y突破几率§!。"
  ARC_LEADER_BONUS_TT:0 "§H$ARC_LEADER_BONUS$§!\n$ARC_LEADER_BONUS_DESC$"
@@ -307,10 +307,10 @@
  artifact_lgate_clue_effect:0 "$add_lcluster_clue$\n\n冷却：£time£ §Y3600§!日"
  artifact_lgate_insight_cooldown:0 "$artifact_lgate_clue$冷却"
 
- artifact_precursor_clue: "探索对先驱者的见解"
- artifact_precursor_clue_desc: "我们应该能够使用这些文物来追踪一个先驱者遗迹的位置。"
- artifact_precursor_clue_effect: "获悉一个先驱者遗迹的位置。\n\n冷却：£time£ §Y1800§!日"
- artifact_precursor_insight_cooldown: "$artifact_precursor_clue$冷却"
+ artifact_precursor_clue:0 "探索对先驱者的见解"
+ artifact_precursor_clue_desc:0 "我们应该能够使用这些文物来追踪一个先驱者遗迹的位置。"
+ artifact_precursor_clue_effect:0 "获悉一个先驱者遗迹的位置。\n\n冷却：£time£ §Y1800§!日"
+ artifact_precursor_insight_cooldown:0 "$artifact_precursor_clue$冷却"
 
  artifact_action_locked:0 "§L??????§!"
  artifact_action_locked_desc:0 "一定有更多我们能使用£minor_artifacts£小型文物做到的事。"
@@ -442,7 +442,7 @@
  ancrel.10350.desc:0 "我们已经成功将卓尼文物与我们的科研进程融会贯通。他们对灵能学的见解让我们自己的研究受益匪浅。"
  zroni_artifact_research_unlocked:0 "解锁小型文物行动：§Y$artifact_zroni_research$§!"
  
- ancient_battle_site: "$ancrel.108.name$"
+ ancient_battle_site:0 "$ancrel.108.name$"
 
 
  # MINOR ARTIFACT PLANETARY DECISIONS
@@ -507,6 +507,7 @@
  ##################
  #relic_triumph_cooldown: "\n§Y$relic_activation_cooldown$§! modifier added for §Y120§! months."
  relic_triumph_cooldown:0 "\n$relic_activation_cooldown$：£time£ §Y3600§!"
+ relic_triumph_cooldown_short:0 "\n$relic_activation_cooldown$: £time£ §Y1800§!"
  requires_relic_no_cooldown:0 "$TRIGGER_FAIL$在处于§Y$relic_activation_cooldown$§!时，§R无法启用另一件遗珍。§!"
  relic_queen_spawn:0 "饲养一支小型虫族舰队"
  relic_rubricator_active:0 "创造§Y30§!£minor_artifacts£小型文物。"
@@ -527,7 +528,7 @@
  r_worm_scales:0 "时虫之鳞"
  r_worm_scales_desc:0 "透明而尚有余温。这些鳞片以一种科学无法解释的方式发出低沉的嗡鸣声。"
  r_rubricator:0 "誊录仪"
- r_rubricator_desc:1 "这个小巧的立方体放在你的[Root.GetSpeciesHandName]中刚好合适，其内却包含着自宇宙诞生至今无数外星文物的扫描数据。它可以无限复制这些文物。未知事物从未如此触手可及。"
+ r_rubricator_desc:2 "这个小巧的立方体放在你的掌中刚好合适，其内却包含着自宇宙诞生至今无数外星文物的扫描数据。它可以无限复制这些文物。未知事物从未如此触手可及。"
  r_omnicodex:0 "有机全典"
  r_omnicodex_desc:0 "亿万年前，一个仁慈的半机械人族裔开始对银河系中的每一个种族进行取样和索引，以确保有机生命不会因任何灭绝事件彻底消失，使之在银河中永存不朽。尽管他们拯救银河的目标因为愚蠢的狂热分子和令人厌恶的蜂群思维的阻挠而未能实现，其遗产留存至今。"
  r_galatron:0 "银河之星"
@@ -597,9 +598,11 @@
  oracle_software_integration_desc:0 "神谕无所不知。"
  oracle_administration:0 "神谕"
  oracle_administration_desc:0 "神谕让帝国像一台上好油的机器一样运作······当你给她上好了油时。"
+ chosen_of_zarqlan:0 "扎克兰的选民The chosen of Zarqlan"
+ chosen_of_zarqlan_desc:0 "作为扎克兰的选民，我们可以安全的殖民圣星。"
  the_memorex:0 "眠梦仪"
  the_memorex_desc:0 "眠梦仪强化学习项目能够在睡眠中对人口进行培训以使其符合帝国的需要，它能显著提升人口的产出。"
- opinion_destroyed_caravaneer_home: "被摧毁的旅商之家"
+ opinion_destroyed_caravaneer_home:0 "被摧毁的旅商之家"
  ##################
  # TRAITS
  ##################
@@ -770,14 +773,30 @@
  
  SHIP_SIZE_CAPACITY:0 "£$SHIP_ICON$£ $SHIP_SIZE$：§Y$VALUE$/$MAX$§!"
 
- pop_cat_assimilation: "同化"
- pop_cat_assimilation_plural: "$pop_cat_assimilation$"
- pop_cat_assimilation_desc: "这些人口正在被修饰以更好地适应我们的社会。"
- mod_pop_assimilation_political_power: "$pop_cat_assimilation_plural$政治权力"
- mod_pop_assimilation_happiness: "$pop_cat_assimilation$幸福度"
- job_assimilation: "正在同化"
- job_assimilation_plural: "$job_assimilation$"
- job_assimilation_desc: "此人口正在被整合入我们的集合体。"
- pop_category_assimilation: "$pop_cat_assimilation$生活标准"
- space_dragon_blue: "$NAME_Grand_Dragon$"
- space_dragon_blue_plural: "$NAME_Grand_Dragon$"
+ pop_cat_assimilation:0 "同化"
+ pop_cat_assimilation_plural:0 "$pop_cat_assimilation$"
+ pop_cat_assimilation_desc:0 "这些人口正在被修饰以更好地适应我们的社会。"
+ mod_pop_assimilation_political_power:0 "$pop_cat_assimilation_plural$政治权力"
+ mod_pop_assimilation_happiness:0 "$pop_cat_assimilation$幸福度"
+ job_assimilation:0 "正在同化"
+ job_assimilation_plural:0 "$job_assimilation$"
+ job_assimilation_desc:0 "此人口正在被整合入我们的集合体。"
+ pop_category_assimilation:0 "$pop_cat_assimilation$生活标准"
+ space_dragon_blue:0 "$NAME_Grand_Dragon$"
+ space_dragon_blue_plural:0 "$NAME_Grand_Dragon$"
+
+ STEAL_ALL_ARTIFACT:0 "$THIEF|Y$ steals §YALL§! artifacts from $VICTIM|Y$"
+ STEAL_RANDOM_ARTIFACT:0 "$THIEF|Y$ steals §YONE RANDOM§! artifact from $VICTIM|Y$"
+ STEAL_ONE_ARTIFACT:0 "$THIEF|Y$ steals the artifact "$ARTIFACT|Y$" from $VICTIM|Y$"
+
+ IS_LAST_LOST_RELIC:0 "$RELIC|Y$ is the last relic lost by $COUNTRY|Y$"
+ IS_NOT_LAST_LOST_RELIC:0 "$RELIC|Y$ is NOT the last relic lost by $COUNTRY|Y$"
+ IS_LAST_RECEIVED_RELIC:0 "$RELIC|Y$ is the last relic received by $COUNTRY|Y$"
+ IS_NOT_LAST_RECEIVED_RELIC:0 "$RELIC|Y$ is NOT the last relic received by $COUNTRY|Y$"
+
+ Herald_repair:0 "Grand Overhaul"
+ Herald_repair_TITLE:0 "Grand Overhaul"
+ Herald_repair_DESC:0 "While the Grand Herald is undoubtedly a powerful ship, it is not operating at its full potential. A combination of lack of maintenance, cumulative minor damages, and the simple fact that we don't fully understand it all degrade its combat capabilities. Only a full overhaul of its systems and the resulting complete understanding of this ship will restore it to fully operational status."
+ herald_75:0 "The Herald is damaged"
+ herald_50:0 "$herald_75$"
+ herald_25:0 "$herald_75$"

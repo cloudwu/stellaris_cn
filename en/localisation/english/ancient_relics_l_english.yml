@@ -217,7 +217,7 @@
  ARCHAEOLOGICAL_SITE_MAPICON_TT:0 "$NAME|H$\n$DESC$\n\n§GClick to view Archaeological Site§!"
 
  CANNOT_EXCAVATE_OUTSIDE_EMPIRE_BORDERS:0 "$TRIGGER_FAIL$§RCannot excavate archaeological sites outside of your empire§!"
- CANNOT_EXCAVATE_WITHOUT_VALID_LEADER: "$TRIGGER_FAIL$§RCannot excavate archaeological sites without a valid leader§!"
+ CANNOT_EXCAVATE_WITHOUT_VALID_LEADER:0 "$TRIGGER_FAIL$§RCannot excavate archaeological sites without a valid leader§!"
 
  ##################
  # UI
@@ -225,7 +225,7 @@
  ARC_DIFFICULTY_TYPE:0 "Difficulty"
  ARC_DIFFICULTY_TYPE_DESC:0 "Each chapter in an archaeological site can have a different difficulty value. Difficulty will reduce the likelihood of getting successful results at the end of an excavation phase."
  ARC_DIFFICULTY_TYPE_TT:0 "§H$ARC_DIFFICULTY_TYPE$§!\n$VALUE$\n\n$ARC_DIFFICULTY_TYPE_DESC$"
- ARC_GO_TO: "§HGo To§!\n§GClick to quickly navigate the camera to where this site is located§!"
+ ARC_GO_TO:0 "§HGo To§!\n§GClick to quickly navigate the camera to where this site is located§!"
  ARC_LEADER_BONUS:0 "Skill Bonus"
  ARC_LEADER_BONUS_DESC:0 "The skill bonus will increase the likelihood of getting successful results at the end of an excavation phase.\n\nThis bonus increases §YBreakthrough Chance§!."
  ARC_LEADER_BONUS_TT:0 "§H$ARC_LEADER_BONUS$§!\n$ARC_LEADER_BONUS_DESC$"
@@ -307,10 +307,10 @@
  artifact_lgate_clue_effect:0 "$add_lcluster_clue$\n\nCooldown: £time£ §Y3600§!"
  artifact_lgate_insight_cooldown:0 "$artifact_lgate_clue$ Cooldown"
 
- artifact_precursor_clue: "Discover Precursor Insight"
- artifact_precursor_clue_desc: "We should be able to track down the location of a precursor site using these artifacts."
- artifact_precursor_clue_effect: "Learn the location of a precursor site.\n\nCooldown: £time£ §Y1800§!"
- artifact_precursor_insight_cooldown: "$artifact_precursor_clue$ Cooldown"
+ artifact_precursor_clue:0 "Discover Precursor Insight"
+ artifact_precursor_clue_desc:0 "We should be able to track down the location of a precursor site using these artifacts."
+ artifact_precursor_clue_effect:0 "Learn the location of a precursor site.\n\nCooldown: £time£ §Y1800§!"
+ artifact_precursor_insight_cooldown:0 "$artifact_precursor_clue$ Cooldown"
 
  artifact_action_locked:0 "§L??????§!"
  artifact_action_locked_desc:0 "There must be something more we can do with our £minor_artifacts£Minor Artifacts."
@@ -368,10 +368,10 @@
  artifact_vultaum_research_completed_suppressed_desc:0 "The Vultaum archives have expanded our knowledge of computing considerably. We have used what we learned to create artificial virtual worlds for the enjoyment of all."
  artifact_vultaum_research_completed_public:0 "Deeper Secrets of the Vultaum"
  artifact_vultaum_research_completed_public_desc:0 "The Vultaum archives suggest that we live in a simulation. Now that we understand our reality, we can exploit certain loopholes to understand how it functions to our benefit."
- artifact_vultaum_research_completed_machine: "$artifact_vultaum_research_completed_suppressed$"
- artifact_vultaum_research_completed_machine_desc: "$ancrel.10100.desc_machine$"
- artifact_vultaum_research_completed_hive: "$artifact_vultaum_research_completed_suppressed$"
- artifact_vultaum_research_completed_hive_desc: "$ancrel.10100.desc_hive$"
+ artifact_vultaum_research_completed_machine:0 "$artifact_vultaum_research_completed_suppressed$"
+ artifact_vultaum_research_completed_machine_desc:0 "$ancrel.10100.desc_machine$"
+ artifact_vultaum_research_completed_hive:0 "$artifact_vultaum_research_completed_suppressed$"
+ artifact_vultaum_research_completed_hive_desc:0 "$ancrel.10100.desc_hive$"
 
  ancrel.10100.option.fm_enough:0 "We will put what we have already learned to good use."
  ancrel.10100.option.fm_delve_deeper:0 "Dig deeper. We must know everything they learned."
@@ -442,7 +442,7 @@
  ancrel.10350.desc:0 "We have successfully managed to integrate the Zroni artifacts into our research process. Their insights into psionic study will greatly aid our own."
  zroni_artifact_research_unlocked:0 "Minor Artifact Action Unlocked: §Y$artifact_zroni_research$§!"
  
- ancient_battle_site: "$ancrel.108.name$"
+ ancient_battle_site:0 "$ancrel.108.name$"
 
 
  # MINOR ARTIFACT PLANETARY DECISIONS
@@ -507,6 +507,7 @@
  ##################
  #relic_triumph_cooldown: "\n§Y$relic_activation_cooldown$§! modifier added for §Y120§! months."
  relic_triumph_cooldown:0 "\n$relic_activation_cooldown$: £time£ §Y3600§!"
+ relic_triumph_cooldown_short:0 "\n$relic_activation_cooldown$: £time£ §Y1800§!"
  requires_relic_no_cooldown:0 "$TRIGGER_FAIL$§RCannot activate another relic while §Y$relic_activation_cooldown$§! is active.§!"
  relic_queen_spawn:0 "Breed a small Prethoryn fleet"
  relic_rubricator_active:0 "Create §Y30§! £minor_artifacts£Minor Artifacts."
@@ -527,7 +528,7 @@
  r_worm_scales:0 "Scales of the Worm"
  r_worm_scales_desc:0 "Lucent and still warm to the touch. The scales emit a low-pitched hum which cannot be explained by way of science."
  r_rubricator:0 "The Rubricator"
- r_rubricator_desc:1 "This tiny cube fits snugly within your [Root.GetSpeciesHandName], yet holds a digital treasure of innumerable scanned alien artifacts dating back to the youth of the universe. And it can replicate them infinitely. Never before has the unknown been so close."
+ r_rubricator_desc:2 "This tiny cube fits snugly within your palm yet holds a digital treasure of innumerable scanned alien artifacts, dating back to the youth of the universe. And it can replicate them infinitely. Never before has the unknown been so close."
  r_omnicodex:0 "The Omnicodex"
  r_omnicodex_desc:0 "Eons ago a benevolent race of Cyborgs set out to ensure the perpetuation of biological life by sampling and indexing every race in the galaxy, to ensure that any extinction event need not be permanent. While their goal of galactic salvation was eventually thwarted by foolish zealots and a disgusting Hivemind, their legacy remains."
  r_galatron:0 "The Galatron"
@@ -597,9 +598,11 @@
  oracle_software_integration_desc:0 "The Oracle sees all."
  oracle_administration:0 "Oracle"
  oracle_administration_desc:0 "The Oracle operates the empire like a well-oiled machine... when you oil her."
+ chosen_of_zarqlan:0 "The chosen of Zarqlan"
+ chosen_of_zarqlan_desc:0 "As the chosen people of Zarqlan we can safely colonize Holy Worlds."
  the_memorex:0 "The Memorex"
  the_memorex_desc:0 "The Memorex Enhanced Learning Program trains the population to better fit the needs of the empire, as they sleep, improving their output significantly."
- opinion_destroyed_caravaneer_home: "Destroyed the Caravaneer's home"
+ opinion_destroyed_caravaneer_home:0 "Destroyed the Caravaneer's home"
  ##################
  # TRAITS
  ##################
@@ -770,14 +773,30 @@
  
  SHIP_SIZE_CAPACITY:0 "£$SHIP_ICON$£ $SHIP_SIZE$ : §Y$VALUE$/$MAX$§!"
 
- pop_cat_assimilation: "Assimilation"
- pop_cat_assimilation_plural: "$pop_cat_assimilation$"
- pop_cat_assimilation_desc: "These pops are being modified to better suit our society."
- mod_pop_assimilation_political_power: "$pop_cat_assimilation_plural$ Political Power"
- mod_pop_assimilation_happiness: "$pop_cat_assimilation$ Happiness"
- job_assimilation: "Undergoing Assimilation"
- job_assimilation_plural: "$job_assimilation$"
- job_assimilation_desc: "This pop is being integrated into our collective."
- pop_category_assimilation: "$pop_cat_assimilation$ Living Standards"
- space_dragon_blue: "$NAME_Grand_Dragon$"
- space_dragon_blue_plural: "$NAME_Grand_Dragon$"
+ pop_cat_assimilation:0 "Assimilation"
+ pop_cat_assimilation_plural:0 "$pop_cat_assimilation$"
+ pop_cat_assimilation_desc:0 "These pops are being modified to better suit our society."
+ mod_pop_assimilation_political_power:0 "$pop_cat_assimilation_plural$ Political Power"
+ mod_pop_assimilation_happiness:0 "$pop_cat_assimilation$ Happiness"
+ job_assimilation:0 "Undergoing Assimilation"
+ job_assimilation_plural:0 "$job_assimilation$"
+ job_assimilation_desc:0 "This pop is being integrated into our collective."
+ pop_category_assimilation:0 "$pop_cat_assimilation$ Living Standards"
+ space_dragon_blue:0 "$NAME_Grand_Dragon$"
+ space_dragon_blue_plural:0 "$NAME_Grand_Dragon$"
+
+ STEAL_ALL_ARTIFACT:0 "$THIEF|Y$ steals §YALL§! artifacts from $VICTIM|Y$"
+ STEAL_RANDOM_ARTIFACT:0 "$THIEF|Y$ steals §YONE RANDOM§! artifact from $VICTIM|Y$"
+ STEAL_ONE_ARTIFACT:0 "$THIEF|Y$ steals the artifact "$ARTIFACT|Y$" from $VICTIM|Y$"
+ 
+ IS_LAST_LOST_RELIC:0 "$RELIC|Y$ is the last relic lost by $COUNTRY|Y$"
+ IS_NOT_LAST_LOST_RELIC:0 "$RELIC|Y$ is NOT the last relic lost by $COUNTRY|Y$"
+ IS_LAST_RECEIVED_RELIC:0 "$RELIC|Y$ is the last relic received by $COUNTRY|Y$"
+ IS_NOT_LAST_RECEIVED_RELIC:0 "$RELIC|Y$ is NOT the last relic received by $COUNTRY|Y$"
+ 
+ Herald_repair:0 "Grand Overhaul"
+ Herald_repair_TITLE:0 "Grand Overhaul"
+ Herald_repair_DESC:0 "While the Grand Herald is undoubtedly a powerful ship, it is not operating at its full potential. A combination of lack of maintenance, cumulative minor damages, and the simple fact that we don't fully understand it all degrade its combat capabilities. Only a full overhaul of its systems and the resulting complete understanding of this ship will restore it to fully operational status."
+ herald_75:0 "The Herald is damaged"
+ herald_50:0 "$herald_75$"
+ herald_25:0 "$herald_75$"

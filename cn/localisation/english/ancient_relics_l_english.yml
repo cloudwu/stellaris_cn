@@ -368,10 +368,10 @@
  artifact_vultaum_research_completed_suppressed_desc:0 "沃陶姆的档案大大拓宽了我们对计算机领域的认知。我们学以致用，创造了人造虚拟世界造福大众。"
  artifact_vultaum_research_completed_public:0 "沃陶姆更深层的秘密"
  artifact_vultaum_research_completed_public_desc:0 "沃陶姆的档案表明我们生活在一个模拟世界中。既然我们理解了我们的现实，我们应该可以利用特定的漏洞，来研究它能如何为我们带来利益。"
- artifact_vultaum_research_completed_machine: "$artifact_vultaum_research_completed_suppressed$"
- artifact_vultaum_research_completed_machine_desc: "$ancrel.10100.desc_machine$"
- artifact_vultaum_research_completed_hive: "$artifact_vultaum_research_completed_suppressed$"
- artifact_vultaum_research_completed_hive_desc: "$ancrel.10100.desc_hive$"
+ artifact_vultaum_research_completed_machine:0 "$artifact_vultaum_research_completed_suppressed$"
+ artifact_vultaum_research_completed_machine_desc:0 "$ancrel.10100.desc_machine$"
+ artifact_vultaum_research_completed_hive:0 "$artifact_vultaum_research_completed_suppressed$"
+ artifact_vultaum_research_completed_hive_desc:0 "$ancrel.10100.desc_hive$"
 
  ancrel.10100.option.fm_enough:0 "我们会好好利用已经学到的知识。"
  ancrel.10100.option.fm_delve_deeper:0 "继续深挖，我们一定要学到他们知道的一切。"
@@ -507,7 +507,7 @@
  ##################
  #relic_triumph_cooldown: "\n§Y$relic_activation_cooldown$§! modifier added for §Y120§! months."
  relic_triumph_cooldown:0 "\n$relic_activation_cooldown$：£time£ §Y3600§!"
- relic_triumph_cooldown_short:0 "\n$relic_activation_cooldown$: £time£ §Y1800§!"
+ relic_triumph_cooldown_short:0 "\n$relic_activation_cooldown$：£time£ §Y1800§!"
  requires_relic_no_cooldown:0 "$TRIGGER_FAIL$在处于§Y$relic_activation_cooldown$§!时，§R无法启用另一件遗珍。§!"
  relic_queen_spawn:0 "饲养一支小型虫族舰队"
  relic_rubricator_active:0 "创造§Y30§!£minor_artifacts£小型文物。"
@@ -563,8 +563,8 @@
  ##################
  # Decisions
  ##################
- decision_machine_oracle:0 "激活神谕中枢"
- decision_machine_oracle_desc:0 "激活神谕中枢的合规性软件和预测模型以消除无人机的反常倾向。"
+ decision_machine_oracle:0 "激活神媒中枢"
+ decision_machine_oracle_desc:0 "激活神媒中枢的合规性软件和预测模型以消除无人机的损坏。"
 
  ##################
  # MODIFIERS
@@ -594,15 +594,15 @@
  reality_perforator_4:0 "$r_reality_perforator$"
  reality_perforator_4_desc:0 "$reality_perforator_1_desc$"
  ancient_sword:0 "$r_ancient_sword$"
- oracle_software_integration:0 "神谕中枢"
- oracle_software_integration_desc:0 "神谕无所不知。"
- oracle_administration:0 "神谕"
- oracle_administration_desc:0 "神谕让帝国像一台上好油的机器一样运作······当你给她上好了油时。"
- chosen_of_zarqlan:0 "扎克兰的选民The chosen of Zarqlan"
- chosen_of_zarqlan_desc:0 "作为扎克兰的选民，我们可以安全的殖民圣星。"
+ oracle_software_integration:0 "神媒中枢"
+ oracle_software_integration_desc:0 "神媒无所不知。"
+ oracle_administration:0 "神媒"
+ oracle_administration_desc:0 "神媒让帝国像一台膏好油的机器一样运作……当你给她膏了油后。"
+ chosen_of_zarqlan:0 "扎克兰的选民"
+ chosen_of_zarqlan_desc:0 "身为扎克兰的选民，我们可以安全地殖民圣地。"
  the_memorex:0 "眠梦仪"
- the_memorex_desc:0 "眠梦仪强化学习项目能够在睡眠中对人口进行培训以使其符合帝国的需要，它能显著提升人口的产出。"
- opinion_destroyed_caravaneer_home:0 "被摧毁的旅商之家"
+ the_memorex_desc:0 "眠梦仪增强学习项目能够在睡眠中培训人口使之更符合帝国的需要，显著增加人口的产出。"
+ opinion_destroyed_caravaneer_home:0 "摧毁了旅商之家"
  ##################
  # TRAITS
  ##################
@@ -616,8 +616,8 @@
  leader_trait_inspired_researcher_desc:0 "$leader_trait_inspired_archaeologist$"
  leader_trait_inspired_surveyor:0 "受启发的勘察员"
  leader_trait_inspired_surveyor_desc:0 "$leader_trait_inspired_archaeologist$"
- leader_trait_governor_oracle:0 "神谕"
- leader_trait_governor_oracle_desc:0 "神谕无所不知。"
+ leader_trait_governor_oracle:0 "神媒"
+ leader_trait_governor_oracle_desc:0 "神媒无所不知。"
  leader_trait_archaeologist_ancrel:0 "$leader_trait_archaeologist$"
  leader_trait_archaeologist_ancrel_desc:0 "$leader_trait_archaeologist_desc$"
 
@@ -794,9 +794,9 @@
  IS_LAST_RECEIVED_RELIC:0 "$RELIC|Y$ 是$COUNTRY|Y$ 接收的最后一件遗珍"
  IS_NOT_LAST_RECEIVED_RELIC:0 "$RELIC|Y$ 不是$COUNTRY|Y$ 接收的最后一件遗珍"
 
- Herald_repair:0 "翻修大船"
- Herald_repair_TITLE:0 "翻修大船"
- Herald_repair_DESC:0 "虽然巨大的先驱号无疑是一艘强大的船，但它并没有发挥其全部潜力。缺乏维护，累积了轻微损害。事实是我们还不完全了解它。这一切都降低了它的作战能力。只有对它的系统进行全面检修，并由此对这艘船有全面的了解，才能使它恢复到完全运行状态。"
+ Herald_repair:0 "伟大翻修"
+ Herald_repair_TITLE:0 "伟大翻修"
+ Herald_repair_DESC:0 "虽然伟大先驱号无疑是一艘强大的军舰，但它未发挥其全部潜力。缺乏维护，也累积了轻微损害，再加上我们还不完全了解它这一事实。这一切都降低了它的作战能力。只有对它的系统进行全面检修，全面了解这艘军舰，才能使它恢复到全力运行的状态。"
  herald_75:0 "先驱号已损坏"
  herald_50:0 "$herald_75$"
  herald_25:0 "$herald_75$"

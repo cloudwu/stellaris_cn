@@ -1,5 +1,5 @@
 name="Cloud Wu's Chinese Localisation"
-archive="cwcl.zip"
+path="734129025"
 tags={
 	"Translation"
 }

@@ -2,7 +2,7 @@
 
  aianom.0.name:0 "AI Anomaly Debug Info"
  aianom.0.desc:0 "§H[Root.GetName]§! has generated:\n\n£minerals£ (Lump Sum) §Y[Root.GetT1LumpMinerals]§! Tier 1, §Y[Root.GetT2LumpMinerals]§! Tier 2, §Y[Root.GetT3LumpMinerals]§! Tier 3, §Y[Root.GetT4LumpMinerals]§! Tier 4.\n£energy£ (Lump Sum) §Y[Root.GetT1LumpEnergy]§! Tier 1, §Y[Root.GetT2LumpEnergy]§! Tier 2, §Y[Root.GetT3LumpEnergy]§! Tier 3, §Y[Root.GetT4LumpEnergy]§! Tier 4.\n£physics£ (Lump Sum) §Y[Root.GetT1LumpPhysics]§! Tier 1, §Y[Root.GetT2LumpPhysics]§! Tier 2, §Y[Root.GetT3LumpPhysics]§! Tier 3, §Y[Root.GetT4LumpPhysics]§! Tier 4.\n£society  (Lump Sum) §Y[Root.GetT1LumpSociety]§! Tier 1, §Y[Root.GetT2LumpSociety]§! Tier 2, §Y[Root.GetT3LumpSociety]§! Tier 3, §Y[Root.GetT4LumpSociety]§! Tier 4.\n£engineering  (Lump Sum) §Y[Root.GetT1LumpEngineering]§! Tier 1, §Y[Root.GetT2LumpEngineering]§! Tier 2, §Y[Root.GetT3LumpEngineering]§! Tier 3, §Y[Root.GetT4LumpEngineering]§! Tier 4.\n\n£minerals£ (Deposit) §Y[Root.GetT1DepMinerals]§! Tier 1, §Y[Root.GetT2DepMinerals]§! Tier 2, §Y[Root.GetT3DepMinerals]§! Tier 3, §Y[Root.GetT4DepMinerals]§! Tier 4.\n£energy£ (Deposit) §Y[Root.GetT1DepEnergy]§! Tier 1, §Y[Root.GetT2DepEnergy]§! Tier 2, §Y[Root.GetT3DepEnergy]§! Tier 3, §Y[Root.GetT4DepEnergy]§! Tier 4.\n£physics£ (Deposit) §Y[Root.GetT1DepPhysics]§! Tier 1, §Y[Root.GetT2DepPhysics]§! Tier 2, §Y[Root.GetT3DepPhysics]§! Tier 3, §Y[Root.GetT4DepPhysics]§! Tier 4.\n£society  (Deposit) §Y[Root.GetT1DepSociety]§! Tier 1, §Y[Root.GetT2DepSociety]§! Tier 2, §Y[Root.GetT3DepSociety]§! Tier 3, §Y[Root.GetT4DepSociety]§! Tier 4.\n£engineering  (Deposit) §Y[Root.GetT1DepEngineering]§! Tier 1, §Y[Root.GetT2DepEngineering]§! Tier 2, §Y[Root.GetT3DepEngineering]§! Tier 3, §Y[Root.GetT4DepEngineering]§! Tier 4."
- 
+
  AIANOM_LUMP_CAT:0 "Orbital Debris"
  AIANOM_LUMP_CAT_desc:0 "Sensors register potentially interesting entities in orbit of [Root.GetName]."
  AIANOM_MININGDEPO_CAT:0 "Surface Pings"
@@ -117,11 +117,11 @@
  DISTAR_SIGNAL_CAT_DESC:1 "Ship sensors are picking up an unexplained pattern of interference in the [From.GetStarName] System."
  DISTAR_PUZZLE_CAT:1 "Unscannable Object"
  DISTAR_PUZZLE_CAT_DESC:1 "An object that reflects our sensors has been located in the [From.GetStarName] asteroid field, near [From.GetName]. Visual observation has identified the object as polygonal in shape, but due to lack of scanner data, little else is known."
- 
+
  ####################################
  # Anomaly Events
  ####################################
- 
+
  distar.1.name:0 "Wreckage Identified"
  distar.1.desc:0 "Our crew aboard the [Root.GetName] report that the [From.GetName] shipwreck appears to have been the result of an unexpected geomagnetic solar storm. The supply ship suffered a complete loss of life-support systems and sustained inoperable damage, drifting until it entered [From.GetName]'s gravity well. There are no survivors.\n\nThe ship's cargo-hold does indeed contain a notable amount of minerals - however, the captain of the [Root.GetName] cautions that the construction indicates §Y[wreckage_owner.GetAdj]§! design.\n\nIt is highly likely that the minerals belong to the §Y[wreckage_owner.GetName]§!, and they may be displeased should we lay claim to their shipment."
  distar.1.a:0 "We need those minerals."
@@ -136,7 +136,7 @@
  distar.3.name:0 "Wreckage Cargo Returned"
  distar.3.desc:0 "[Root.GetSpeciesNamePlural]! We have received word of our downed supply ship's cargo. We would like to extend our gratitude to you for taking the time to recover it, without the need for [wreckage_owner.GetAdj] intervention."
  distar.3.a:0 "Our pleasure, [wreckage_owner.GetSpeciesNamePlural]."
- 
+
  distar.6.name:0 "Frozen in Time"
  distar.6.desc:0 "The crew of the [Root.GetName] were intrigued to find the remnants of an industrial-age civilization on [From.GetName]. Investigation indicates [From.GetName] had sustained an atmosphere for millions of years, until massive superflares from the unstable surface of the star [From.GetStarName] led to runaway ionization and depletion of the planet's atmospheric gases.\n\nWith no atmosphere, the lifeless cities on [From.GetName] have been frozen in time for millennia, silent monuments to the mass extinction that happened there.\n\nScience Officer [Root.GetLeaderName] cautions that any colonies in the [From.GetStarName] system may be subject to the whims of the star's turbulence."
  distar.7.name:0 "Superflare"
@@ -148,13 +148,13 @@
  distar.9.desc:0 "Planetary administration is pleased to report that the development of a superflare shield matrix around [Root.GetName] was a complete success. Our colonists were not only safely shielded from the harmful ionizing radiation, but were treated to a spectacular auroral display as solar wind interacted with the new shield matrix."
  distar.10.name:0 "Superflare Strikes [fromfrom.GetName]"
  distar.10.desc:0 "A superflare from [fromfrom.GetStarName] has struck the upper atmosphere of [fromfrom.GetName], pending our failure to develop an appropriate shield matrix in time.\n\nIonizing plasma and magnetic storms have led to electronic disruptions planetside, interfering with energy production and blasting the populace with radiation. The effects will persist for some time."
- 
+
  distar.15.name:0 "Energetic Spectra"
  distar.15.desc:0 "The gaseous composition of the accretion disk surrounding [From.GetName] appears to be responsible for the chromatic aberration exhibited by the black hole. The disk refracts and reflects light on its surface, giving the impression of a rainbow in the dark.\n\nThough the rainbow itself is an optical illusion, the circumstances creating it are not. [From.GetName]'s accretion disk is highly energetic - a veritable hotbed of electrostatic discharge."
- 
+
  distar.20.name:0 "Hologram"
  distar.20.desc:0 "Investigation of the unrecognized fleet signatures in the [From.GetName] system revealed an unexpected discovery. The fleet is not, in fact, in safe orbit of the black hole, but rather crossing its event horizon.\n\nScience Officer [Root.GetLeaderName] conjectures that the fleet approached [From.GetName]'s event horizon centuries ago, whereupon time dilation left their image detectable on its surface.\n\nWhether the fleet's actions were intentional, or the result of some unhappy accident, we may never know. Their signatures match no known civilization on record."
- 
+
  distar.25.name:0 "Rudimentary Robots"
  distar.25.desc:0 "In studying the surface of [From.GetName], the crew of the [Root.GetName] discovered the ruins of an early space age civilization. Though no living members of this civilization remain, the planet is still inhabited by the rudimentary robots they constructed.\n\nThese robots still go about their tasks, tirelessly repairing the crumbling infrastructure of their long-dead makers.\n\nAny future colonists may be able to make use of this ancient robotic workforce. If nothing else, they've certainly proved themselves resilient."
  distar.25.a.tooltip:0 "§B3 £pops£ Robot Pops§! have been found on [From.GetName]"
@@ -206,15 +206,15 @@
  distar.35.a:0 "Time is of the essence!"
  distar.36.name:0 "Rage Virus Vaccine Developed"
  distar.36.desc:0 "The development of a vaccine to treat the epidemic affecting our populations on [Root.GetName] has successfully concluded. Distribution of the vaccine has begun, and life on [Root.GetName] should soon return to normal.\n\nResearch has revealed that the retrovirus behind this turmoil appears to have evolved on [Root.GetName] millions of years ago. Laying dormant in frozen biomatter, it resurfaced when the planet's icecaps melted.\n\nIt is very likely this led to the demise of the ancient robots' makers, centuries ago. Luckily, the [Owner.GetName] is better equipped to deal with viral contaminants. The development of this vaccine has even led to some advancements in the field of medicine."
- 
+
  distar.40.name:0 "Gray Goo"
  distar.40.desc:0 "After detailed analysis, Officer [Root.GetLeaderName] has discovered that the strange metallic substance coating the surface of [From.GetName] in fact comprises of billions upon billions of nanites! These nanites are microscopic, self-replicating micro-machines, perhaps created by a past civilization for some unknown purpose.\n\nThe volume and density of this nanite sludge is remarkable, adding billions of tons of mass to the underlying planet. It would appear these tiny self-replicators entered a state of runaway reproduction at some point in the past, engulfing the planet and everything on it.\n\nIn studying the nanites, the crew has made some exciting new findings that will undoubtedly aid us in our own research."
- 
+
  distar.45.name:0 "Gravitometric Abnormalities"
  distar.45.desc:0 "In studying the bizarre readings surrounding [From.GetName], the crew of the [Root.GetName] have discovered that the entire system's gravitometrics are off the charts. Science Officer [Root.GetLeaderName] suspects that the [From.GetName] gateway is somehow interfering with our sensor data, or otherwise responsible for the unaccounted-for mass in the system.\n\nA more detailed study of the gateway may yield more insight."
  distar.46.name:0 "Dark Flow"
  distar.46.desc:0 "Examination of the [From.GetStarName] gateway did not proceed as anticipated. With sensors registering gravitational influence orders of magnitude beyond expected values, Officer [Root.GetLeaderName] chased the source to the very center of the derelict spacetime conduit. What they found there appears to have changed them.\n\nFor days following their return, [Root.GetLeaderName] spoke of massive, indescribable structures of matter in the void of space far beyond any stars. Exerting an inexorable gravitational pull, [Root.GetLeaderName] claims our galaxy streams helplessly, inevitably towards them.\n\nThe mission has left the team shaken, no less for the fact that shortly after the experience in the conduit, the abnormal readings suddenly stopped."
- 
+
  distar.50.name:0 "Lost Amoeba"
  distar.50.desc:0 "The [Root.GetName] has located the source of the movement in the upper atmosphere of [From.GetName]. Surprisingly, there was no ship hidden in the clouds, but rather a young Space Amoeba, its mother nowhere to be seen.\n\nThere is no way of knowing how this juvenile was separated from its mother or others of its kind, but one thing is certain: it appears to have imprinted on the [Root.GetName]. As the crew completed their survey of [From.GetName], they found that the Amoeba was following them. It has proven difficult to shake, and [Root.GetLeaderName] has taken quite a shine to the youngster's determination.\n\nOur Science Officer suggests allowing the juvenile to follow the vessel, certain we may learn more about Space Amoebas in the process."
  distar.50.desc.first_enc:0 "The [Root.GetName] has located the source of the movement in the upper atmosphere of [From.GetName]. Surprisingly, there was no ship hidden in the clouds, but rather a docile alien lifeform. Despite its impressive size, the creature, which the [From.GetName] crew have dubbed a Space Amoeba, appears to be a juvenile.\n\nThere is no way of knowing how this juvenile was separated from its others of its kind, but one thing is certain: it appears to have imprinted on the [Root.GetName]. As the crew completed their survey of [From.GetName], it found that the creature was following them. It has proven difficult to shake, and [Root.GetLeaderName] has taken quite a shine to the juvenile's determination.\n\nOur Science Officer suggests allowing the juvenile to follow the vessel, certain we may learn more about the species in the process."
@@ -292,7 +292,7 @@
  distar.304.name:0 "Centenarian"
  distar.304.desc:0 "Exciting news from our fleet admirals is being broadcasted over [Root.Capital.GetName]. Our adopted Space Amoeba, [lost_amoeba_centenarian_fleet.GetName], has just reached an impressive one hundred years of age.\n\nThough a grizzled centenarian, it appears age has proven no impediment to our amoeboid ally. In fact, our fleets report [lost_amoeba_centenarian_fleet.GetName]'s presence on the battlefield has only grown more formidable over time. [lost_amoeba_centenarian_fleet.GetName] has become a force even the best-equipped battleship would have trouble contending with. Seeing her billowing flagella enter a system never fails to lift the [Root.GetSpeciesAdj] spirit."
  distar.304.a.tooltip:0 "[lost_amoeba_centenarian_fleet.GetName] has developed new combat skills!"
- 
+
  distar.60.name:0 "Blinding Fate"
  distar.60.desc:0 "The irradiated fragments the [Root.GetName] crew registered in close orbit of [From.GetName] are indeed the remains of a space-faring vessel. With a very distinctive design, it matches no known make on record.\n\nWe have extracted some data from the ship's damaged computers, recorded in an alien language like nothing we have ever seen before - and one we are unable to translate.\n\nBy studying the remains, Science Officer [Root.GetLeaderName] postulates that the craft, known as the 'Kohtalo', suffered a navigational error when exiting FTL, bringing it too close to the gamma-ray jets of [From.GetName]. Large portions of the ship were stripped apart through radiolysis. There are no survivors."
  distar.61.name:0 "Déjà Vu"
@@ -320,7 +320,7 @@
  distar.68.name:0 "Ouroboros"
  distar.68.desc:0 "System sensors indicate that the extradimensional exploration vessel Kohtalo exited FTL abruptly on the outskirts of the system, colliding head-on with an orbital comet! The collision was disastrous enough to kill everyone onboard, and has sent the remaining wreckage spiraling in towards the [ouroboros_system.GetName] pulsar.\n\nOur analysts conclude the Kohtalo's negative mass-based FTL drive was incapable of accurately predicting where (or when) they would exit subspace. Both wrecks now haunt the [ouroboros_system.GetName] pulsar."
  distar.68.a:0 "Perhaps it was unavoidable."
- 
+
  distar.70.name:0 "Clones in Cryostasis"
  distar.70.desc:0 "The murky vats located deep in the ruined storage sections of [From.GetName] ring world contain thousands of alien creatures in cryostasis. Some are still living, while many thousands more appear to have suffered cryochamber malfunctions, leaving them as organic sludge in varying stages of decomposition.\n\nRemarkably, all of the aliens are completely identical: analysis of their remains reveals them to be genetic clones. Science Officer [Root.GetLeaderName] suggests we could attempt to thaw out the living clones - though as their ring world is currently without life-support, we would have to give them some place to live."
  distar.70.a:0 "Thaw them out. This is exciting."
@@ -348,12 +348,12 @@
  distar.72.b:0 "Thaw them out. They can join our workforce."
  distar.72.b.servi:0 "Thaw them out. We will care for them."
  distar.72.c:0 "Eject them into space."
- 
+
  distar.75.name:0 "Secret Heart"
  distar.75.desc:0 "While unremarkable on the surface, the [From.GetName] asteroid has a hollow core lined with industrially valuable crystals - like a gigantic geode hung in the stars.\n\nWith special instructions prepared by Science Officer [Root.GetLeaderName], any future mining platform should be able to carefully harvest these crystals from the interior of the asteroid."
  distar.75.yurantic.tooltip:0 "Yurantic Crystals discovered"
  distar.75.teldar.tooltip:0 "Teldar Crystals discovered"
- 
+
  distar.80.name:0 "Silent Behemoth"
  distar.80.desc:0 "[Root.GetLeaderName] reports that the enormous structure located on [From.GetName] is in fact the gargantuan corpse of some unidentified alien creature. Not only is the corpse large enough to be seen with the naked eye from [primitive_planet.GetName], it also appears to be shedding large quantities of psychotropic chemicals that may have neurological side effects for organic life forms on the planet."
  distar.82.name:0 "God of Death"
@@ -362,10 +362,10 @@
  distar.82.b:0 "This is ridiculous. We will not play along."
  distar.82.c:0 "Yes, we come from your god. You will soon join him."
  distar.82.d:0 "Just get them off my planet!"
- 
+
  distar.85.name:0 "Life Electric"
  distar.85.desc:0 "Science Officer [Root.GetLeaderName] reports that [From.GetName] is covered pole-to-pole in a web-like network of electric impulses. These networks respond to external stimulus: the [Root.GetName] experimented with sending a low-voltage pulse onto the surface, resulting in a wave of illumination that rippled through the network like a circuitboard. Even more remarkable, the webs rearrange themselves! A secondary pulse revealed the filaments had organized into a new pattern, centered around where the previous pulse had contacted the surface of [From.GetName].\n\n[Root.GetLeaderName] concludes that the discovery has confirmed [Root.Leader.GetHisHer] long-held theory: that life can exist almost purely as electrical impulses, independent of cellular or viral structure."
- 
+
  distar.90.name:0 "Taste of Home"
  distar.90.desc:0 "Closer study of [From.GetName] has revealed that the planet's primary chemical composition is in fact identical to an ester found in berries on [Root.Owner.Capital.GetName], which the locals have been distilling into inebriants for thousands of years. The ester so prevalent on [From.GetName] likely comes from the nebula that cloaks the system, which contains billions of liters of the same substance.\n\nScience Officer [Root.GetLeaderName] has secured several samples of the familiar ester and after rigorous biohazard testing even sampled it, describing the scent and taste as a little bit of home in the chill of the void. The crew of the [Root.GetName] suggests that such an exotic variant of the well-known [Root.Owner.GetAdj] beverage could be quite popular among our citizens."
  distar.90.a:0 "Out of the question."
@@ -381,31 +381,31 @@
  distar.93.name:0 "Lost in Translation"
  distar.93.desc:0 "What is the meaning of this, [Root.GetSpeciesName]? You seek to poison us with this foul liquid? How facultatively challenged do you think we are?\n\nEnsign, airlock that entire odious shipment, and close the channel!"
  distar.93.a:0 "Error! A communication failure has occurred."
- 
+
  distar.95.name:0 "Soothing Resonance"
  distar.95.desc:0 "The unique crystals found on [From.GetName] possess quite exceptional properties. The [Root.GetName] crew reports to have found their visit to the planet's surface entirely soothing, leaving them refreshed and placated upon return to orbit. Apparently, the crystals resonate at a frequency known to be medically therapeutic for [Root.Owner.GetSpeciesNamePlural].\n\nIf ever we were to settle on [From.GetName], our populace would surely enjoy living in constant proximity to these resonant minerals."
  distar.100.name:0 "Conducive Frequencies"
  distar.100.desc:0 "Detailed study has revealed that [From.GetName]'s magnetic field was so attractive to drones in orbit due to the unique frequency at which it oscillates. It just so happens that the planet's magnetosphere resonates at a rate that produces a focusing effect on the [Root.Owner.GetAdj] neural network.\n\nShould we inhabit [From.GetName], any [Root.Owner.GetSpeciesNamePlural] on the surface would be able to constantly enjoy the benefits of this magnetic resonance."
  distar.100.a:0 "Information processed."
- 
+
  distar.105.name:0 "Invasive Exofungus"
  distar.105.desc:0 "After intense study and sampling of the growth blanketing entire biospheres on [From.GetName], [Root.GetLeaderName] reports that the substance is not native to the planet, but rather an invasive fungal lifeform of unknown origin. The fungus feeds on biomatter, choking out existing plant life and enveloping terrain.\n\nAny future settlers on the planet would have to deal with routinely burning back the exofungus - it is unknown at this point if it can be entirely eradicated."
- 
+
  distar.110.name:0 "White Hell"
  distar.110.desc:0 "Despite the seemingly frozen surface of [From.GetName], the planet's orbital path around [From.GetStarName] leaves it blistering at several hundred degrees. Under normal circumstances this would sublimate the ice on [From.GetName]'s surface. However, extreme gravitational pressure exerted by the planet's ultra-dense core keeps the water in a solid state, resulting in a planet of firey hot ice."
- 
+
  distar.115.name:0 "Heavy Metal Frost"
  distar.115.desc:0 "Boasting a scorching surface temperature and an atmosphere of corrosive mineral acids, [From.GetName] possesses extreme weather conditions responsible for reflecting certain bandwidths of electromagnetic radiation. Heavy metal compounds heated in the planet's troposphere rise in gaseous form to high elevations, whereupon they rapidly cool, solidify, and rain back down to the surface. Simply put, it snows metal on the surface of [From.GetName]."
- 
+
  distar.120.name:0 "Watery Grave"
  distar.120.desc:0 "The extensive system of burrows far below the waves of [From.GetName]'s turquoise waters are the remains of a widespread population of likely sapient alien lifeforms. These land-bound arthropoids constructed thousands upon thousands of interconnected termite-like mounds on [From.GetName]'s surface, at a time when most of the planet's water was contained in polar icecaps. Rising planetary temperatures, however, slowly doomed the species that had persisted for millennia to a watery grave. None remain today."
- 
+
  distar.125.name:0 "Particular Fears"
  distar.125.desc:0 "The station in orbit of [From.GetName] was once a massive particle accelerator orders of magnitude beyond the capabilities of our own, where an alien nation studied the very nature of the universe. Its records reveal the aliens came to believe our universe existed in a false vacuum bubble - an inherently unstable energy state that could collapse into true vacuum at any time. If ever an instance of true vacuum came into existence, it would catalyze the conversion of the entire universe into its lowest energy state at the speed of light, destroying everything in existence at an observable - but inescapable - rate.\n\nThe station logs indicate the aliens deduced this process could be triggered by extremely high energy concentrations - just like the ones in their massive particle accelerator. They decided to forsake this technology, retreating into simple lives made possible by the bounties of [From.GetName]. Over time, they became the primitive species now found on the planet's surface."
- 
+
  distar.131.name:0 "Old Foes"
  distar.131.desc:0 "Through the clandestine procurement of some of the primitives' remains, Science Officer [Root.GetLeaderName] has made an intriguing discovery. The aliens on [From.GetName] and [other_planet.GetName] are in fact recently diverged species with the same origin. By scanning the ruins left behind on both planets, the [Root.GetName] crew has concluded that both species originated on [other_planet.GetName], where they flourished into an early space age civilization. Some time after colonizing [From.GetName], their society fractured, and an interplanetary nuclear war broke out between the new colony and its home planet.\n\nIn the ensuing cataclysm, both planets were ravaged by fallout and the nuclear winter that followed on its heels, plunging their inhabitants back into the bronze age."
- 
+
  distar.135.name:0 "The Scavenger"
  distar.135.desc:0 "The [Root.GetStarName] system is a sprawling graveyard of mechanical debris. The wreckage of untold numbers of derelict ships circle its star. Swathes of fuel and liquid coolant cloud our sensors like ghosts, and creaking station remnants collide with the shattered carcasses of planets on their path around the sun.\n\nAn incredible construct stirs in the heart of this graveyard. It appears to be a gigantic machine - a robotic automaton larger than our greatest battleships, jury-rigged from the scraps and pieces of a thousand shipwrecks. The [Root.GetName] reports that this scavenging robot sifts through the debris fields with a fixed purpose, scrounging for useful parts to add to its patchwork configuration.\n\nIt is clear a battle of astronomical proportions once took place here, though whether the Scavenger is its sole survivor, or a scrap hunter from some distant nation remains unknown. We should exercise caution, as the construct bears heavy artillery from dozens of warships."
  distar.137.name:0 "The Scavenger's End"
@@ -413,19 +413,19 @@
  distar.137.a:0 "Analyze its remains."
  distar.137.paci:0 "A bittersweet victory. See what can be learned from the remains."
  distar.137.tooltip:0 "Gain two of the following Technologies:\n £engineering §Y$tech_ship_armor_5$§!\n £physics£ §Y$tech_shields_5$§!\n £engineering §Y$tech_mass_drivers_5$§!\n £engineering §Y$tech_missiles_5$§!\n £physics£ §Y$tech_lasers_5$§!"
- 
+
  distar.140.name:0 "Cosmic Diamond"
  distar.140.desc:0 "While on the surface [From.GetName] appears to be an ordinary white dwarf, the star hides an intriguing secret. By studying [From.GetName]'s pulsations, the [Root.GetName] crew has discovered its composition to be almost entirely crystallized carbon. This astronomical crystal lattice seems to have formed as the star cooled, originating in its gas-fusing core and growing outward over time. [From.GetName] is a diamond of cosmological proportions, glinting behind a white veil of oxygen and helium."
- 
+
  distar.145.name:0 "Extremophilia"
  distar.145.desc:0 "[Root.GetLeaderName] and [Root.Leader.GetHisHer] crew have made a surprising discovery on [From.GetName]: the molten planet is home to an exotic array of extremophilic microorganisms! These bacteria live deep inside the volcanic vents that scar the planet, thriving in the extremely high temperatures produced there.\n\nThis unprecedented find is our first known example of organic lifeforms flourishing on molten planets. Moreover, the extremophiles on [From.GetName] are in fact responsible for the rare gases detected in its thin atmosphere, producing these valuable compounds as a byproduct of their metabolic processes."
  distar.145.exotic_gases.tooltip:0 "$exotic_gases$ Discovered"
  distar.145.rare_crystals.tooltip:0 "$rare_crystals$ Discovered"
  distar.145.volatile_motes.tooltip:0 "$volatile_motes$ Discovered"
- 
+
  distar.150.name:0 "Living Metal Lakes"
  distar.150.desc:0 "Investigation of the caverns below the surface of [From.GetName] reveal them to be filled with a silvery liquid metal that flows from cavern to cavern in gleaming rivers, pooling into underground lakes. More surprising still is the discovery that this metal substance shares many key properties with organic lifeforms, including responding to environmental stimulus and exhibiting self-sustaining processes.\n\nIt remains to be seen whether this exceptional metal should be classified as truly alive - but it may have several practical applications for our engineering technology."
- 
+
  distar.155.name:0 "Corroding Warship"
  distar.155.desc:0 "[Root.GetLeaderName] reports that the artificial construction located on [From.GetName] is not a structure at all, but rather a colossal robot from a bygone age. This aging mechanical behemoth lies disabled in the mountains, slowly being corroded by the volatile acids that rain on [From.GetName]. It has notable weapons capabilities, and appears to be built as an unmanned spaceship.\n\nIf we want to make use of it, we will need to act swiftly, before the corrosive environment of [From.GetName] renders the robotic warship wholly inoperable."
  distar.155.a:0 "Pull it out."
@@ -477,7 +477,7 @@
  distar.167.desc:0 "It seems the recovered warship's AI did not exaggerate its warnings. When the [Root.GetName] crew attempted to access the AI's basic operative functions, it triggered what seems to be a built-in anti-tampering failsafe, frying all of the construct's crucial processors, switchboards, and data drives. It is now little more than an empty shell of disabled electronics."
  distar.167.a:0 "Strip it for parts. No sense letting them go to waste."
  distar.167.b:0 "Study its engineering from the remains."
- 
+
  distar.170.name:0 "Broken Union"
  distar.170.desc:0 "$distar.170.desc.machi$ [Root.GetLeaderName] requests permission to study these remarkable neural symbionts more closely."
  distar.170.desc.machi:0 "The [Root.GetName] crew have made some astonishing discoveries on [From.GetName]. The abandoned primitive settlements first seen from orbit were once inhabited by a society of reptiles that still populate the planet - but have since lost all capacity for sapient thought! In investigating how these creatures devolved from a tool-making agrarian society into mere beasts, [Root.GetLeaderName] made an unexpected find.\n\nThe burial remains of the settlement-dwelling reptiles possess a spinocranial organ not observed among their now-bestial counterparts. Testing has revealed these organs to be another species entirely - a sort of neural symbiont that connects with the host's brain stem via external attachment to the spine. These symbionts can still be found in hotsprings on the planet's surface. It seems the union between the two species triggered the temporary uplift of the reptiles.\n\nWhat later interrupted this symbiosis, however, remains unknown."
@@ -493,13 +493,13 @@
  distar.172.a.tooltip:0 "Several [Root.Owner.GetAdj] leaders and pops will gain the trait §Y$trait_brainslug$§!.\nAny future [Root.Owner.GetAdj] leaders, rulers, and pops will have a chance of gaining the trait §Y$trait_brainslug$§!."
  distar.172.b:0 "This has gone far enough."
  distar.172.b.tooltip:0 "Deny [Root.Owner.GetAdj] citizens knowledge of the brain slugs' offer."
- 
+
  distar.180.name:0 "Metamorphic Dehydration"
  distar.180.desc:0 "Following a thorough investigation of [From.GetName], the [Root.GetName] crew has confirmed that the planet used to be covered in flowing water, several billion years ago. However, the geochemical composition of the planet's basalt crust proved highly hydrophilic - so much so, that [From.GetName]'s thirsty rocks eventually absorbed and bound all of the water on its surface. Now all that remains of these vast oceans are salty brine streaks lining [From.GetName]'s numerous canyons.\n\nScience Officer [Root.GetLeaderName] adds that the mineral hydrates now dominating [From.GetName]'s landscape could have many valuable industrial applications."
- 
+
  distar.185.name:0 "Predacious Plantlife"
  distar.185.desc:0 "Science Officer [Root.GetLeaderName] has made some troubling finds on [From.GetName]. The planet's megaflora is not only widespread and gargantuan in proportion, but also predatory. Various species of carnivorous plants rest patiently on its surface, releasing aromatic lures into the air and waiting for prey to come near. Sensitive tendrils on the terminus of the plant's leaves register the approach of animals, resulting in the plants snapping shut around their hapless prey, which are left to be slowly corroded by digestive acids.\n\n[Root.GetLeaderName] warns that any future colonists will have to steer clear of these predatory plants, as they appear more than capable of trapping a lone adult [Root.Owner.GetSpeciesName]."
- 
+
  distar.190.name:0 "Unknown Contact"
  distar.190.desc:0 "The [Root.GetName] crew has returned from their research mission visible shaken. They provide vague, often conflicting reports of what they encountered on [From.GetName] - though in one matter they are all united: the still-flowing sea that wraps pole to pole around the planet is somehow alive.\n\nThough it bears no organs or corporeality we can identify, the planetary ocean seems to communicate with frequencies that affect the brain activity of the recipient. It is able to induce thoughts, images, emotions... and what is more, affects each individual differently. It is entirely unknown what effects prolonged contact with this sea might have, or how safe such an endeavor would be.\n\nScience Officer [Root.GetLeaderName] requests that a planetary §YDecision§! to study this strange sea be enacted on [From.GetName]."
  distar.190.desc.machi:0 "The [Root.GetName] units have returned from their research mission with inconclusive data. Though it bears no organs or corporeality we can identify, the still-flowing sea that wraps pole to pole around the planet appears to be a neural entity onto itself. It is possible this conscious entity was created by the random fluctuations of thermodynamic equilibrium, though the details escape us.\n\nFurthermore, the planetary ocean seems to communicate with frequencies that may affect the cognitive wetware of organic beings. Though it remains unknown what effects prolonged contact with this sea might have on organic species, [Root.Owner.GetSpeciesNamePlural] are unaffected by the output of this dispersed neural network."
@@ -529,7 +529,7 @@
  distar.196.desc:0 "Sensors report that Science Officer [living_planet_scientist.GetName] was registered dropping from orbit around [living_planet_tar.GetName] in a personal landing pod. Crashing into the ocean at maximum velocity, we cannot imagine [living_planet_scientist.GetSheHe] survived. There are no traces of the pod remaining."
  distar.198.name:0 "Dead Sea"
  distar.198.desc:0 "The terraforming of [From.GetName] into a sealess landscape has had a predictable, but unavoidable outcome. The strange sea of consciousness on the planet's surface has been completely disrupted by our terraforming process, and has lost the unique properties that qualified it as a living being to our survey team.\n\n[Root.GetAdj] scientists lament the missed research opportunities that the loss of such a unique galactic entity will entail."
- 
+
  distar.211.name:0 "The Matriarch"
  distar.211.desc:0 "A creature of legend swims languorously between the gas giants in the [Root.GetStarName] system. Larger than any Tiyanki on record - indeed, larger than any of our projections could have allowed for, a space whale of impossible proportions seems to have made her nest here. With tentacles longer than a [Root.Owner.GetAdj] battleship, this magnificent Matriarch's glowing hide stands out startlingly against the void of space. She is old, remarkably so, a veritable ancient covered end to end in battle scars and strange growths.\n\nA gigantic, unexploded proton torpedo is lodged in the venerable creature's back, and the fractured remains of ships in the system speak of what manner of fate befell any vessels that strayed too close."
  distar.211.desc.first_enc:0 "A creature of legend swims languorously between the gas giants dotting the [Root.GetStarName] system. With tentacles longer than a [Root.Owner.GetAdj] battleship, her gargantuan proportions defy all of our previous encounters with organic life. The creature's magnificent glowing hide stands out startlingly against the void of space. She appears to be quite old, remarkably so -- a veritable ancient covered end to end in battle scars and strange growths.\n\nA gigantic, unexploded proton torpedo is lodged in the venerable Matriarch's back, and the fractured remains of ships in the system speak of what manner of fate befell any vessels that strayed too close."
@@ -553,12 +553,12 @@
  distar.216.a.exter:0 "Exterminate!"
  distar.217.desc:0 "Out of the question. This ship has been my only lifeline for... what are you doing? You cannot just stuff me in an escape pod!\n\nStop! You haven't heard the last of me...!"
  distar.217.a:0 "Safe travels!"
- 
+
  distar.220.name:0 "Zone A"
  distar.220.desc:1 "As per initial findings, Science Officer [Root.GetLeaderName] confirms that the isolated ruin seen from orbit is indeed the only evidence of settlement on [From.GetName]. Unfortunately, the [Root.GetName] crew is little the wiser for having investigated the structures firsthand.\n\nDevoid of any other traces of sapient lifeforms, [From.GetName] possesses a zone of roughly thirteen by thirteen kilometers, dubbed Zone A, in which the remains of buildings can be found. Artifacts possessing bizarre properties litter this zone, from minute forcefield generators to viscous fluids that melt through steel and expand over time. Even more peculiar: the entire zone permeates its visitors with a deep-rooted sense of contentment, despite the often-dangerous mysteries of the objects found therein.\n\n[Root.GetLeaderName] posits the working theory that a space-faring civilization visited [From.GetName] some time in the past, leaving behind these objects - though who they were, why they landed, and why they left remain unknown."
  distar.220.desc.machi:1 "As per initial findings, Science Unit [Root.GetLeaderName] confirms that the isolated ruin seen from orbit is indeed the only evidence of settlement on [From.GetName].\n\nDevoid of any other traces of sapient lifeforms, [From.GetName] possesses a zone of approximately thirteen by thirteen kilometers, designation 'Zone A,' in which the remains of buildings can be found. Artifacts possessing unusual properties litter this zone, from miniaturized forcefield generators to viscous fluids that melt through steel and expand over time. Even more unexpectedly: the entire zone permeates emotional-emulators with high levels of contentment, despite the many potentially harmful properties of the objects found therein.\n\n[Root.GetLeaderName] posits the working theory that a space-faring organic civilization visited [From.GetName] some time in the past, leaving behind these objects - though who they were, why they landed, and why they left remain unknown factors."
  distar.220.a.tooltip:1 "§YZone A§! has been discovered on §Y[From.GetName].§!"
- 
+
  distar.225.name:0 "Junk Ball"
  distar.225.desc:0 "The [Root.GetName] crew report that what first appeared to our scanners as an asteroid is in fact a gigantic, floating ball of junk. Comprised of the broken remains of various vehicles, rockets and hazardous materials (many of them radioactive), the junk ball seems to be the detritus of an unknown alien nation in the early space age.\n\nIt would appear this nation was an interstellar litterer, ejecting dangerous industrial waste into orbit rather than disposing of it planetside. Radiometric dating suggests these remains are millions of years old, and have been floating through space from an unknown point of origin for most of that time.\n\nScience Officer [Root.GetLeaderName] notes that some of the materials found on this floating junk heap are quite rare, and could be refined into useful resources."
  distar.225.garanthium.tooltip:0 "Garanthium Ore Discovered"
@@ -953,7 +953,7 @@
  titanic_azizian_assault_army:0 "Azizian Army"
  titanic_azizian_assault_army_desc:0 "Murderous mega-slugs."
 
- # SHIPS & FLEETS: 
+ # SHIPS & FLEETS:
  enigmatic_cache:1 "Probe Entity"
  enigmatic_cache_plural:1 "Probe Entity"
 
@@ -968,7 +968,7 @@
  corrupt_data_investigated:0 "Anomalous Stars Investigated"
  star_crazy_chain_title:0 "Energy Emissions"
  star_crazy_chain_desc:0 "Energy Emissions"
-# PROJECTS: 
+# PROJECTS:
  GENERATION_SHIP:0 "Generation Ship"
  GENERATION_SHIP_DESC:0 "A massive generation ship belonging to a long dead race of aliens may hold the encrypted location of a utopian planet within its navigational drive."
  HIDDEN_PLANET:0 "Grasping at Straws"
@@ -1002,7 +1002,7 @@
  abandoned_observation_outpost_desc:0 "An observation post orbits [big_rip_planet.GetName] idly."
  abandoned_observation_outpost_tooltip:0 "$abandoned_observation_outpost_desc$"
 
-# ANOMALY CATEGORIES: 
+# ANOMALY CATEGORIES:
  debris_gasgiant_category_temp:0 "Ancient Hulk"
  debris_gasgiant_category_temp_desc:0 "A massive shipwreck of ancient design circles [From.GetName]."
  star_lifting_category:0 "Deserted Star Platform"
@@ -1031,7 +1031,7 @@
 #fake_character_1_name: "Bloop Bloop"
 #test_fake_char.desc: "This amazing new blorg I met called [root.fake_character_1.GetName]!"
 
-# ANOMALY EVENTS: 
+# ANOMALY EVENTS:
 # The Vechtar Zavonia Chain
  distar.1000.name:0 "The Vechtar Zavonia"
  distar.1000.desc:0 "The hulk orbiting [From.GetName] is all that remains of the Vechtar Zavonia, a massive sub-light generation ship belonging to a deeply religious alien race called the Mardak Vol.\n\nThough the ship has been ruthlessly purged of all life, the Mardaks' ill-fated journey has been detailed in the captain's logs. After being hunted to near extinction by nightmarish beings referred to as 'Vessels', they fled their homeworld in search of a distant paradise planet - the mythical promised land Paridayda, that would reveal itself only to the chosen ones. Judging by the state of their ship, however, their attackers caught up with them.\n\nShall we extract the ship's navigational drive and decrypt its destination?"
@@ -1117,6 +1117,7 @@
  # Eat or be Eaten
  distar.1050.name:0 "Eat or be Eaten"
  distar.1050.desc:0 "Floating on the outskirts of the debris field around [From.GetName] is the pitiful form of a crumpled-up science vessel of unidentifiable origin. The presence of bite-marks and digestive fluids on the hull suggest it was chewed up, then regurgitated by some large predator.\n\nIronically, the ship's crew were on a culinary odyssey of their own, in search of new exotic delicacies, when they themselves ended up on the menu.\n\nThey had rated a staggering number of lifeforms on everything from nutritional content to chewiness. Among their top picks were the [delicious_aliens.GetName], for their juicy [delicious_aliens.GetSpeciesOrganName] and spicy temperament. We have earned a mediocre placement at the bottom of the list thanks to the stringiness of our flesh and the lacklustre quarry we make. Some like to play with their food..."
+ distar.1050.desc_lithoid:0 "Floating on the outskirts of the debris field around [From.GetName] is the pitiful form of a crumpled-up science vessel of unidentifiable origin. The presence of bite-marks and digestive fluids on the hull suggest it was chewed up, then regurgitated by some large predator.\n\nIronically, the ship's crew were on a culinary odyssey of their own, in search of new exotic delicacies, when they themselves ended up on the menu.\n\nThey had rated a staggering number of lifeforms on everything from nutritional content to chewiness. Among their top picks were the [delicious_aliens.GetName], for their juicy [delicious_aliens.GetSpeciesOrganName] and spicy temperament. We have earned a special category at the bottom of the list surrounded by asterisks, thanks to the utter inedibility of our flesh and the lacklustre quarry we make. Some like to play with their food..."
  distar.1050.a:0 "Looks like they finally met their match..."
  # The Cube
  distar.1055.name:0 "The Cube"
@@ -1393,28 +1394,28 @@
 
  SUPERFLARE_PROJECT:0 "Superflare Shielding"
  SUPERFLARE_PROJECT_DESC:0 "Sensors on [Root.GetName] indicate that [From.GetStarName] is preparing for another superflare event, not unlike the one that destroyed the ancient civilization on [From.From.GetName]. We need to find a way to shield our colony before the flare erupts."
- 
+
  PRIMITIVE_ROBOT_PROJECT:0 "Missing Makers"
  PRIMITIVE_ROBOT_PROJECT_DESC:0 "Researchers are baffled by the lack of explanation for the disappearance of the past civilization on [From.GetName]. They propose a more intensive hardware analysis of the ancient robots they left behind, in an attempt to shed some light on this mystery.\n\nReward: £society  §GSociety Research§!"
- 
+
  RETROVIRUS_PROJECT:0 "Erratic Planetside Behavior"
  RETROVIRUS_PROJECT_DESC:0 "A streak of unexplained civil disobedience is sweeping across [From.GetName]. Colonists are exhibiting strange, erratic behavior that usually begins with general confusion and escalates over time to extreme agitation and violence. We must find the cause of this behavior, before things get out of hand."
- 
+
  DARK_FLOW_PROJECT:0 "Gravitometric Abnormalities"
  DARK_FLOW_PROJECT_DESC:0 "Impossible gravitational readings have been registered in the [from.GetStarName] system. Something must be interfering with our sensors."
- 
+
  DISSECTION_PROJECT:0 "Space Amoeba Dissection"
  DISSECTION_PROJECT_DESC:0 "We have decided to extract biological data from the lost juvenile Space Amoeba by fatal means. We will send a task force to capture the creature, and dissect its remains."
- 
+
  CRYO_CLONES_PROJECT:0 "Cryonic Ring World Clones"
  CRYO_CLONES_PROJECT_DESC:0 "There are hundreds of still-living clones sealed in cryostatis chambers on the ruined Ring World surrounding [From.GetName]. Rather than let them slowly die off like many of their comrades, our biologists propose thawing them out."
- 
+
  RECOVER_WARFORM_PROJECT:0 "Recover the Corroding Warship"
  RECOVER_WARFORM_PROJECT_DESC:0 "A disabled robotic warship has been found on [From.GetName], where it is slowly being dissolved by the planet's toxic atmosphere. We should attempt to recover it, before it is rendered wholly inoperable."
- 
+
  BRAINSLUG_PROJECT:0 "Neural Symbiont Study"
  BRAINSLUG_PROJECT_DESC:0 "A symbiotic relationship between a reptilian species and a slug-like creature that attaches to the brain stem of its host once flourished on the surface of [From.GetName], transforming the bestial reptiles into tool-using sapients. Something caused these creatures to terminate their symbiotic relationship, and the reptilian hosts reverted back into mere animals.\n\nOur scientists would like to study the neural slugs still found on the planet more closely, in order to better understand the history of the lost civilization they built together."
- 
+
  KETLING_PROJECT_1:0 "Study the $NAME_Ketlings$ on §Y[ratling_capital.GetName]§!"
  KETLING_PROJECT_1_DESC:1 "Sapient creatures have emerged from the scrap piles on §Y[ratling_capital.GetName]§!. Our scientists are curious whether these aliens, dubbed $NAME_Ketlings$, are descendants of the space-faring civilization that once spanned these systems, or if they have another origin entirely.\n\nWe should be able to choose any planet inhabited by autonomous $NAME_Ketlings$ to conduct this study."
  KETLING_PROJECT_2:0 "Study the $NAME_Ketlings$ on §Y[ratling_planet_2.GetName]§!"
@@ -1425,10 +1426,10 @@
  KETLING_PROJECT_4_DESC:1 "Sapient creatures have emerged from the scrap piles on §Y[ratling_planet_4.GetName]§!. Our scientists are curious whether these aliens, dubbed $NAME_Ketlings$, are descendants of the space-faring civilization that once spanned these systems, or if they have another origin entirely.\n\nWe should be able to choose any planet inhabited by autonomous $NAME_Ketlings$ to conduct this study."
  KETLING_PROJECT_5:0 "Study the $NAME_Ketlings$ on §Y[ratling_planet_5.GetName]§!"
  KETLING_PROJECT_5_DESC:1 "Sapient creatures have emerged from the scrap piles on §Y[ratling_planet_5.GetName]§!. Our scientists are curious whether these aliens, dubbed $NAME_Ketlings$, are descendants of the space-faring civilization that once spanned these systems, or if they have another origin entirely.\n\nWe should be able to choose any planet inhabited by autonomous $NAME_Ketlings$ to conduct this study."
- 
+
  SEALED_SYSTEM_PROJECT:0 "Abandoned Wormhole Station"
  SEALED_SYSTEM_PROJECT_DESC:0 "An abandoned station spins at the mouth of the §Y[From.GetName]§! System wormhole. Deeper investigation may explain who built it, and why the wormhole appears to be entirely intraversible."
- 
+
  PHASESHIFT_PROJECT:0 "Phase-Shift Freeze"
  PHASESHIFT_PROJECT_DESC:1 "§Y[phaseshift_planet.GetName]§!, a planet in the §Y[phaseshift_planet.GetStarName]§! System has been observed to phase-shift between a §Y$pc_shrouded$§! and §Y$pc_gaia$§! on a three month cycle.\n\nOur physicists should be able to devise a way to lock the planet in one of its states, freezing it as a §Y$pc_gaia$§!, and preventing it from shifting back."
 
@@ -1477,7 +1478,7 @@
  ###################################
  # Names
  ###################################
- 
+
  trait_nivlac:0 "Nivlac"
  trait_nivlac_desc:0 "§LThis species possesses perplexing adaptability, allowing it to thrive in most environments and survive virtually everywhere.§!"
  opinion_nurtured:0 "Nurtured Forebears"
@@ -1592,7 +1593,7 @@
  distar.3041.a:0 "How strange. Now take it apart."
  distar.3041.b:0 "Intriguing. Research the machine."
  distar.3041.b.tooltip:1 "Adds the §YAlien Machine§! modifier to [asteroid_target.GetName]:\n£physics£ §G+7§!"
- 
+
  distar.3042.name:0 "Energy Spike"
  distar.3042.desc:2 "As our scientists pulled the lever the machine emitted a huge blast of energy that multiplied in shockwaves, twisting and rippling through the void, tearing open a wormhole in §Y[system_one.GetName]§!.\n\nAfter the residuous energy diffused the wormhole and the immediate area around it settled and now appear to be stable enough for safe passage. As for what awaits us on the other side our scientists are not so sure.\n\nThe machine itself has since returned to its inactive state and no longer gives off any anomalous readings."
 
@@ -1908,7 +1909,7 @@
  lgate_disabled_MEGASTRUCTURE_DETAILS:0 "$lgate_disabled_DESC$"
  lgate:0 "L-Gate"
  lgates:0 "L-Gates"
- 
+
  l_cluster_chain_title:1 "The L-Cluster"
  l_cluster_chain_desc:0 "We have learned of a mysterious star cluster somewhere just beyond the periphery of our galaxy. It can only be accessed through §HL-Gates§!, artificial subspace portals found in certain systems.\n\nThese Gateways have been deliberately disabled by someone, and for now we lack the necessary insight into the subspace mechanics that govern their use to lift the lockdown."
  clues:1 "L-Gate Insights"
@@ -1941,7 +1942,7 @@
  d_nanoscale_deposit:0 "$volatile_motes$ discovered\n"
 
  requires_no_binary_trinary:0 "$TRIGGER_FAIL$Cannot build this in Binary or Trinary systems."
- 
+
  distar.10956.name:0 "The L-Cluster Beckons"
  distar.10956.desc:0 "Our spies report that the §H[lgate_warning_country.GetName]§! is close to possessing enough information about the L-Gates to unlock the one they control. This would give them access to the L-Cluster and its secrets!\n\nIf we are to get there first, we must double our efforts and find more insights into the L-Gates!"
  distar.10956.a:0 "We shall see who gets there first."
@@ -2039,7 +2040,7 @@
  graygoo.130.c:0 "Look, this is all a misunderstanding."
  graygoo.130.d:0 "There can still be peace between us."
  graygoo.130.e:0 "Goodbye then."
- 
+
  graygoo.150.name:0 "[From.From.GetName] Turns Into Dust"
  graygoo.150.a.desc:0 "When our invading ground forces defeated the last of the Dessanu defenders on §H[From.From.GetName]§!, everything on the [From.From.GetPlanetMoon]'s surface crumbled into dust! On closer inspection, the gray dust consists of billions upon billions of inert nanites.\n\nThe cities, the lush forests, the oceans and the Dessanu themselves - everything on the [From.From.GetPlanetMoon], aside from our own forces, had been wrought out of these nanomachines. Now that they have been rendered inert, [From.From.GetName] no longer supports life. Our ground forces are withdrawing back to orbit."
  graygoo.150.b.desc:0 "As before, the Dessanu defenders and everything else on §H[From.From.GetName]§! turned into dust as soon as our ground forces won the battle for control over the [From.From.GetPlanetMoon]'s surface. It is now a bleak world, hostile to life and constantly beset by storms of swirling nanites."
@@ -2208,7 +2209,7 @@
 
  MOD_PLANET_HYPERLANE_RANGE_ADD:0 "Planet Hyperlane Detection Range"
  MOD_SHIP_HYPERLANE_RANGE_ADD:0 "Ship Hyperlane Detection Range"
- 
+
  liquidated_7:0 "§Y7 $clues$§! Liquidated:\n §G+3500§! £engineering  Engineering Research\n §G+3500§! £energy£ Energy Credits"
  liquidated_6:0 "§Y6 $clues$§! Liquidated:\n §G+3000§! £engineering  Engineering Research\n §G+3000§! £energy£ Energy Credits"
  liquidated_5:0 "§Y5 $clues$§! Liquidated:\n §G+2500§! £engineering  Engineering Research\n §G+2500§! £energy£ Energy Credits"
@@ -2263,24 +2264,24 @@
  NAME_Nivlac_Circle:0 "Nivlac Circle"
 
  empire_xenophile:0 "$TRIGGER_FAIL$Our empire values xeno species too highly."
- 
+
  FLEET_RESEARCH_PROJECT_EFFECT:0 "Send fleet $FLEET$ to research $PROJECT$"
 
  LGATE_COUNTRY_CANNOT_USE:0 "$TRIGGER_FAIL$ We do not have the means to enter the §YL-Cluster§!."
  BYPASS_DESC_INACTIVE_LGATE_DISABLED:0 "Requires activation by gathering §Y$clues$§!."
  BYPASS_DESC_INACTIVE_LGATE:0 "Requires activation by gathering §Y$clues$§!."
- 
+
  FLEETORDER_RESEARCH_ANOMALIES:0 "Research Anomalies in system"
  NO_ANOMALIES_IN_SYSTEM:0 "No anomaly in $SYSTEM|Y$ can be researched"
  FLEETORDER_RESEARCH_ANOMALIES_IN_SYSTEM_DESC:0 "Research all anomalies in $SYSTEM|Y$"
  UKNOWN_FLEET:0 "Unknown Fleet"
 
  cannot_jump_to_system:0 "$TRIGGER_FAIL$ Due to roiling subspace tides we can only enter this system through conventional means."
- 
+
  MESSAGE_POP_ABDUCTED_TITLE:0 "Pop Abducted"
  MESSAGE_POP_ABDUCTED:0 "A £pop£ §Y$SPECIES$ Pop§! was abducted by our raiding fleet at $PLANET|Y$ and resettled on $TARGET_PLANET|Y$"
  MESSAGE_POP_ABDUCTED_FROM_US:0 "A £pop£ §Y$SPECIES$ Pop§! was abducted from $PLANET|Y$ by the raiding fleets of $ABDUCTER|Y$"
- 
+
  MESSAGE_PLANET_PROSPECTED_TITLE:0 "Planet Prospected"
  MESSAGE_PLANET_PROSPECTED:0 "$PLANET|Y$ was successfully prospected, revealing a new $DEPOSIT|Y$"
  MESSAGE_REFUGEES_ARRIVED_TITLE:0 "Refugees Arrived"
@@ -2315,7 +2316,7 @@
  distar.10901.a:0 "Then we shall secure an L-Gate."
  distar.10901.b:0 "An interesting diversion, but it ends now."
 
- # SHIPS & FLEETS: 
+ # SHIPS & FLEETS:
  leviathan_01_voidspawn:0 "Voidspawn"
  leviathan_01_voidspawn_plural:0 "Voidspawn"
 

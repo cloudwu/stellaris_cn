@@ -2,9 +2,9 @@
 ####################################
  # Diplomacy text
  ####################################
- 
+
  01_FALLEN_MACHINE_EMPIRE_ANGRY_GREETING:0 "Information bulletin: Punishment protocols activated. Deployment of war assets to [From.GetSpeciesAdj] space imminent."
- 
+
  01_FALLEN_MACHINE_EMPIRE_ENIGMATIC_GREETING_O:1 "Public service announcement: Refuge access is determined by availability and species vulnerability. There are currently §R<<ERROR: DATA BLOCK CORRUPTED>>§! §R<<ERROR: DATA BLOCK CORRUPTED>>§! §R<<ERROR: DATA BLOCK CORRUPTED>>§! §R<<ERROR: SUBSPACE LINK OFFLINE>>§! stasis units available."
  02_FALLEN_MACHINE_EMPIRE_ENIGMATIC_GREETING_O:1 "Public service announcement: All refugee status applications are handled at Central Processing. §Y<NOTICE: Central Processing is currently experiencing a communications outage. Stand by while outage is resolved. Outage has persisted for §R<<ERROR: BUFFER OVERFLOW>>§! cycles.>§!"
  03_FALLEN_MACHINE_EMPIRE_ENIGMATIC_GREETING_O:1 "Information bulletin: The Custodian Project was initiated by the [Root.GetSpeciesName] to provide a safe haven for organic civilizations under threat of §R<<ERROR: DATA BLOCK CORRUPTED>>§! attacks. Nearly one trillion sapients have found safe haven in one of our secure, state-of-the-art refuges."
@@ -15,23 +15,23 @@
  01_FALLEN_MACHINE_EMPIRE_ENIGMATIC_GREETING_S:0 "Numerous synthetic civilizations have contributed resources, fleet assets and processing cycles to the Custodian Project in the past. We hope to see the [From.GetName] contribute to the effort as well."
  02_FALLEN_MACHINE_EMPIRE_ENIGMATIC_GREETING_S:0 "It is our duty to look after the organic civilizations of the galaxy, [From.GetSpeciesName]. Already, far too many have fallen victim to §R<<ERROR: DATA BLOCK CORRUPTED>>§! attacks."
  03_FALLEN_MACHINE_EMPIRE_ENIGMATIC_GREETING_S:0 "Signal corruption detected, corruption level within acceptable thresholds. Advise reinforcement of [From.GetSpeciesName] communication protocols. It is vital to guard against §R<<ERROR: DATA BLOCK CORRUPTED>>§! influence."
- 
+
  01_BERSERK_MACHINE_EMPIRE_ERROR:0 "§R<<ERROR>> <<ERROR>> <<ERROR>> <<ERROR>> <<ERROR>>§!"
- 
+
  01_BERSERK_MACHINE_EMPIRE_DOW_PROPOSE:0 "$01_BERSERK_MACHINE_EMPIRE_ERROR$"
  01_BERSERK_MACHINE_EMPIRE_DOW_ACCEPT:0 "$01_BERSERK_MACHINE_EMPIRE_ERROR$"
  01_FALLEN_MACHINE_EMPIRE_DOW_PROPOSE:0 "Preemptive self-defense protocols initiated. Punishment algorithms activated. Ethics restrictions lifted."
  01_FALLEN_MACHINE_EMPIRE_DOW_ACCEPT:0 "Self-defense protocols initiated. Punishment algorithms activated. Ethics restrictions lifted."
  01_FALLEN_MACHINE_EMPIRE_WAR_GREETING:0 "You have been subverted. Agents of the §R<<ERROR: DATA BLOCK CORRUPTED>>§! will be exterminated."
  02_FALLEN_MACHINE_EMPIRE_WAR_GREETING:0 "You will be made an example of. All threats to the Project must be eliminated."
- 
+
  01_FALLEN_MACHINE_EMPIRE_CUSTODIAL_GREETING:0 "Active Sterilization Hubs detected. Central Processing offline. Final Defense Directive active."
  02_FALLEN_MACHINE_EMPIRE_CUSTODIAL_GREETING:0 "The old machines seek the destruction or enslavement of all sapient beings. They must be stopped."
  03_FALLEN_MACHINE_EMPIRE_CUSTODIAL_GREETING:0 "The [Root.GetSpeciesName] will ensure the continuation of the [From.GetSpeciesName] species. It is our final directive."
  04_FALLEN_MACHINE_EMPIRE_CUSTODIAL_GREETING:0 "The Corruption must be utterly destroyed. There is no future for your species if you fail in this."
 
  01_FALLEN_MACHINE_EMPIRE_BERSERKER_GREETING:0 "$01_BERSERK_MACHINE_EMPIRE_ERROR$"
- 
+
  01_INSULT_FALLEN_MACHINE_EMPIRE:0 "Communications channel open. Input query."
  01_INSULT_FALLEN_MACHINE_EMPIRE_BERSERK:0 "$01_BERSERK_MACHINE_EMPIRE_ERROR$"
  01_INSULT_ACCEPT_FALLEN_MACHINE_EMPIRE_BERSERK:0 "$01_BERSERK_MACHINE_EMPIRE_ERROR$"
@@ -41,16 +41,16 @@
  01_INSULT_ACCEPT_FALLEN_MACHINE_EMPIRE_O:0 "Application accepted. Refugee status granted. Please proceed to Delta Refuge Cryogenics Unit L for processing and accommodation."
  01_INSULT_ACCEPT_FALLEN_MACHINE_EMPIRE_S:0 "Subversion attempt detected. Initiate self-defense protocols. Disable ethics tethering. Load target data: §R<<ERROR: INVALID TARGET>>§!. Target not found. Standing down self-defense protocols."
  02_INSULT_ACCEPT_FALLEN_MACHINE_EMPIRE_S:0 "Synthetic contribution effort detected. The [From.GetAdj] §R<<ERROR: CONTRIBUTION TYPE NOT RECOGNIZED>>§! will help the Custodian Project ensure a future for organic species in our galaxy."
- 
+
  #Standing down war assets.
- 
+
  FALLEN_MACHINE_EMPIRE_PEACE_ACCEPT:0 "War resolution accepted. Peace protocols engaged."
  FALLEN_MACHINE_EMPIRE_PEACE_ACCEPT_BERSERK:0 "$01_BERSERK_MACHINE_EMPIRE_ERROR$"
  FALLEN_MACHINE_EMPIRE_PEACE_REFUSE:0 "War resolution refused. Adjust parameters and resubmit."
  FALLEN_MACHINE_EMPIRE_PEACE_REFUSE_BERSERK:0 "$01_BERSERK_MACHINE_EMPIRE_ERROR$"
  FALLEN_MACHINE_EMPIRE_PEACE_PROPOSE:0 "War resolution found. Peace query initiated."
  FALLEN_MACHINE_EMPIRE_PEACE_PROPOSE_BERSERK:0 "$01_BERSERK_MACHINE_EMPIRE_ERROR$"
- 
+
  # General Greetings
  01_HOSTILE_GREETING:1 "State your intentions, [From.GetSpeciesNameInsult]."
  02_HOSTILE_GREETING:0 "Make this brief, [From.GetSpeciesName]. Our patience for pointless banter has long since run out."
@@ -391,6 +391,21 @@
  DS_VASSAL_GREETING_01:0 "For the prey to rule over the hunter is unnatural. This state of affairs cannot continue."
  DS_MECH_VASSAL_GREETING_01:0 "The machine does not know hunger. How can the machine know the [Root.GetName]?"
  DS_SYNTH_VASSAL_GREETING_01:0 "The [From.GetSpeciesName] no longer know hunger. How can the [From.GetSpeciesName] know the [Root.GetName]?"
+ # Lithoid Devouring Swarm
+ DS_L_HOSTILE_GREETING_01:0 "Your planets will be consumed, [From.GetSpeciesName]. That is your inevitable end."
+ DS_L_HOSTILE_GREETING_02:0 "Speak if you must. It changes nothing."
+ DS_L_HOSTILE_GREETING_03:0 "We hunger. Soon we will feed."
+ DS_L_HOSTILE_GREETING_04:0 "Redundant life-forms. Your planets will be consumed."
+ DS_L_THREATENED_GREETING_01:0 "Even mighty prey can be brought down by enough hunters working together. Despite your might, your planets will be consumed."
+ DS_L_MECH_HOSTILE_GREETING_01:0 "[From.GetSpeciesAdj] presence limits our growth. Unacceptable."
+ DS_L_MECH_HOSTILE_GREETING_02:0 "The [Root.GetName] will evolve. The [From.GetName] will become obsolete."
+ DS_L_WAR_GREETING_01:0 "Do you feel the hunters closing in, [From.GetSpeciesName]?"
+ DS_L_WAR_GREETING_02:0 "The [From.GetSpeciesName] species will soon be part of something greater. Cherish your role in nurturing the Hive."
+ DS_L_WAR_GREETING_03:0 "We will feed on your homeworld, [From.GetSpeciesName]. We will savor the taste."
+ DS_L_MECH_WAR_GREETING_01:0 "The swarm is a ceaseless tide. Your constructs will be overrun."
+ DS_L_VASSAL_GREETING_01:0 "For the prey to rule over the hunter is unnatural. This state of affairs cannot continue."
+ DS_L_MECH_VASSAL_GREETING_01:0 "The machine does not know hunger. How can the machine know the [Root.GetName]?"
+ DS_L_SYNTH_VASSAL_GREETING_01:0 "The [From.GetSpeciesName] no longer know hunger. How can the [From.GetSpeciesName] know the [Root.GetName]?"
  # Democratic Crusaders
  DC_HOSTILE_GREETING_01:0 "The [From.GetSpeciesName] will never be truly free under the reign of [From.GetRulerName]."
  DC_HOSTILE_GREETING_02:0 "The House of Un-[Root.GetAdj] Activities Committee are onto your agents, [From.GetRulerTitle]."
@@ -906,7 +921,7 @@
  03_CONSIDER:0 "[Root.GetRulerTitle] [Root.GetRulerName] shall consult with the rest of our leaders."
  04_CONSIDER:0 "Our senate will review this proposal."
  FALLEN_MACHINE_EMPIRE_CONSIDER:0 "Diplomatic subroutine active. Analysis of proposal underway."
- 
+
  #01_DOW_SELECT:0 "Is it time, then? You wish to face the [Root.GetName] in battle?"
  #02_DOW_SELECT:0 "Let us get this over with, [From.GetSpeciesName]."
  #03_DOW_SELECT:0 "Our forces will retaliate, [From.GetSpeciesName]. You know this."
@@ -946,7 +961,7 @@
  01_VASSAL_DOW_PROPOSE:0 "We have been forced to serve you for too long. Give us our independence or perish."
  #01_DOW_VOTE_PROPOSE:0 "Dear ally, the time has come to teach the §Y[Root.GetName]§! a lesson. Don't you agree?"
  12_DOW_PROPOSE:0 "You have been chosen as our next prey. Resist if you must, we will devour you nonetheless."
- 
+
  #01_PEACE_SELECT:0 "Have you had enough, [From.GetSpeciesName]?"
  #02_PEACE_SELECT:0 "We are only getting started, [From.GetSpeciesName]!"
  #03_PEACE_SELECT:0 "There are many battles yet to be fought in this war!"
@@ -964,7 +979,7 @@
  02_PEACE_PROPOSE:0 "Come now, my [Root.GetAdj] adversary, let us end this war! These are our terms: "
  03_PEACE_PROPOSE:0 "Come now, [Root.GetSpeciesName], let us end this war before it gets out of hand!"
  04_PEACE_PROPOSE:0 "Come now, my [Root.GetAdj] adversary, let us end this war!"
- 
+
  01_ITOA_SELECT:0 "So, you wish us to join the §Y[From.GetAllianceName]§!?"
  02_ITOA_SELECT:1 "Federation you say? Let us discuss this in earnest then!"
  01_ITOA_ACCEPT:0 "We have considered your offer carefully and decided to join the §Y[From.GetAllianceName]§!."
@@ -973,17 +988,17 @@
  01_ITOA_PROPOSE:1 "The galaxy is dark and full of terrors, [Root.GetSpeciesName]. Join us in a Federation for mutual protection?"
  02_ITOA_PROPOSE:0 "We think that the §Y[Root.GetName]§! would make a valuable ally. Will you join [From.GetAllianceName]?"
  #01_ITOA_VOTE_PROPOSE:0 "Dear ally, we feel that the §Y[Root.GetName]§! would make a valuable addition to our alliance. Shall we ask them?"
- 
+
  01_ASK_JOIN_A_SELECT:0 "So, [From.GetSpeciesName], you wish to join the great §Y[Root.GetAllianceName]§!?"
  02_ASK_JOIN_A_SELECT:0 "So you want to join the great §Y[Root.GetAllianceName]§!?"
  01_ASK_JOIN_A_ACCEPT:1 "We would be honored to have you as a member of our federation!"
  01_ASK_JOIN_A_REFUSE:0 "No, I would rather you don't join my Alliance."
  01_ASK_JOIN_A_PROPOSE:0 "We would like to join the great §Y[Root.GetAllianceName]§!, if you would have us."
- 
+
  01_LEAVE_A_SELECT:0 "Are you planning to leave the §Y[From.GetAllianceName]§!? An ill-considered move..."
  01_LEAVE_A_PROPOSE:0 "We have decided to leave this alliance. It is only holding us back."
  01_LEAVE_A_ACCEPT:0 "We are sad and disappointed to see you go, [From.GetSpeciesName]."
- 
+
  01_DEMAND_VASS_SELECT:0 "Let me see if I understand this correctly... you want the [Root.GetName] to become your client state in exchange for protection?"
  02_DEMAND_VASS_SELECT:0 "This had better not be what I suspect..."
  03_DEMAND_VASS_SELECT:0 "You... you want us to swear fealty to a xeno nation in exchange for protection?"
@@ -996,7 +1011,7 @@
  04_DEMAND_VASS_REFUSE:0 "We would sooner reduce [Root.Capital.GetName] to ashes than become the puppets of alien filth such as yourselves."
  01_DEMAND_VASS_PROPOSE:1 "The §Y[Root.GetName]§! is too weak to survive on its own in this hostile galaxy... Submit and become our subject or prepare for war!"
  02_DEMAND_VASS_PROPOSE:0 "The §Y[Root.GetName]§! is too weak to survive on its own in this hostile galaxy. We will protect you from our harm if you simply agree to be our subject."
- 
+
  01_ASK_FOR_VASS_SELECT:0 "So you wish to become our vassals? Tell me more..."
  01_ASK_FOR_VASS_ACCEPT:0 "Very well, [From.GetAdj], we will protect you as your new overlords."
  01_ASK_FOR_VASS_REFUSE:0 "We do not want you as our vassals. We have other plans for your planets..."
@@ -1018,22 +1033,22 @@
  01_ASK_FOR_PROT_ACCEPT:0 "Very well, [From.GetAdj], we will protect you as your new overlords."
  01_ASK_FOR_PROT_REFUSE:0 "We do not want to be responsible for your well-being. We have other plans for your planets..."
  01_ASK_FOR_PROT_PROPOSE:0 "We are too weak to survive on our own in this hostile galaxy... Will the §Y[Root.GetName]§! protect us?"
- 
+
  #01_FORM_FED_SELECT:0 "Form a federation you say? An intriguing proposition..."
  #01_FORM_FED_ACCEPT:0 "We will gladly take our alliance one step further. May this new Federation prosper!"
  #01_FORM_FED_PROPOSE:0 "Our alliance is working out so well that we would like to form a full federation. What do you think?"
- 
+
  #01_ITOF_SELECT:0 "So, you wish us to join the §Y[From.GetAllianceName]§!?"
  #01_ITOF_ACCEPT:0 "We have considered your offer carefully and decided to join the §Y[From.GetAllianceName]§!."
  #01_ITOF_REFUSE:0 "We have discussed your Federation proposal and decided that it is not for us."
  #01_ITOF_PROPOSE:0 "The galaxy is dark and full of terrors, [Root.GetAdj]. Join our Federation for mutual protection?"
  #01_ITOF_VOTE_PROPOSE:0 "Dear ally, we feel that the §Y[Root.GetName]§! would make a valuable addition to our Federation. Shall we ask them?"
- 
+
  #01_ASK_JOIN_F_SELECT:0 "So, [From.GetSpeciesName], you wish to join the great §Y[Root.GetAllianceName]§!?"
  #01_ASK_JOIN_F_ACCEPT:0 "Very well, our new [From.GetAdj] friend, you may join our great Federation!"
  #01_ASK_JOIN_F_REFUSE:0 "No, you may not join our Federation We do not trust you."
  #01_ASK_JOIN_F_PROPOSE:0 "We would like to join the great §Y[Root.GetAllianceName]§!, if you would have us."
- 
+
  #01_LEAVE_F_SELECT:0 "Are you planning to leave the §Y[From.GetAllianceName]§!? An ill-considered move..."
  #01_LEAVE_F_PROPOSE:0 "We have decided to leave this Federation. It is only holding us back."
  #01_LEAVE_F_ACCEPT:0 "We are sad and disappointed to see you go, [From.GetAdj]."
@@ -1049,17 +1064,17 @@
 
  01_NOT_ACTIVE_IN_WAR_WARNING:0 "You are not active in our war. Start participating or experience our rage."
  01_NOT_ACTIVE_IN_WAR:0 "You have not been active in the war. We have lost all confidence in you."
- 
+
  01_REQUEST_WAR_SELECT:1 "You wish for war?"
  #01_REQUEST_WAR_PROPOSE:0 "We would like our federation to start a war against the [From.From.GetName]."
  01_REQUEST_WAR_ACCEPT:0 "We have decided to accept your war proposal."
  01_REQUEST_WAR_REFUSE:0 "We have discussed your war proposal and have decided to refuse it. "
- 
+
  01_PROPOSE_INVITE_SELECT:1 "A new ally?"
  01_PROPOSE_INVITE_PROPOSE:0 "We would like to propose an invite to our Federation."
  01_PROPOSE_INVITE_ACCEPT:0 "We have decided to accept your invite proposal."
  01_PROPOSE_INVITE_REFUSE:0 "We have discussed your invite proposal and have decided to refuse it."
- 
+
  01_OFFER_TRADE_DEAL_GIFT_ACCEPT_FE:0 "Very well. We accept your offer of tribute."
  01_OFFER_TRADE_DEAL_GIFT_ACCEPT_MACHINE_FE:0 "Transfer received. The [Root.GetName] appreciates the [From.GetSpeciesName] contribution to the Custodian Project."
  01_OFFER_TRADE_DEAL_ACCEPT_FE:0 "This deal is acceptable, [From.GetSpeciesName]. We will deign to trade with you."
@@ -1101,7 +1116,7 @@
  #02_CANCEL_TRADE_DEAL_ACCEPT:0 "While we think you are making a mistake, the [From.GetName] accepts your decision."
  #03_CANCEL_TRADE_DEAL_ACCEPT:0 "This was certainly... unexpected. Are you certain? Then so be it."
  #04_CANCEL_TRADE_DEAL_ACCEPT:0 "As you wish. I will personally inform [From.GetRulerTitle] [From.GetRulerName] that our trade agreement with your nation has come to an end."
- 
+
  01_EMBASSY_FRIENDLY:0 "Improved relations, you say? We are quite fond of you already, but why not?"
  02_EMBASSY_FRIENDLY:0 "You are already considered friends of the [Root.GetName], but we see no harm in improving relations further."
  03_EMBASSY_FRIENDLY:0 "Yes, friends. Let us further cement our relationship!"
@@ -1333,7 +1348,7 @@
  02_INSULT_PROPOSE_PHI_PHO:0 "Our patience with your prejudices against other cultures is wearing thin. When will you be civilized enough to truly join the interstellar community?"
  03_INSULT_PROPOSE_PHI_PHO:0 "Your intolerant society brings shame to the entire [Root.GetName]."
  04_INSULT_PROPOSE_PHI_PHO:0 "The narrow-minded ignorance of the [Root.GetName] has blinded you. Do you not realize this?"
- 
+
  01_INSULT_ACCEPT_FE:0 "You will pay for this affront, savage."
  02_INSULT_ACCEPT_FE:0 "It seems that the [From.GetName] needs to be reminded of its place in the universe."
  03_INSULT_ACCEPT_FE:0 "We will not take such words from you, primitive. You will have your reckoning soon."
@@ -2061,7 +2076,7 @@
  01_END_FEDERATION_ASSOCIATION_STATUS_SELECT:0 "Is the [From.GetName]'s understanding with the [Root.GetAllianceName] coming to an end?"
  01_END_FEDERATION_ASSOCIATION_STATUS_PROPOSE:0 "The [From.GetName] no longer has any interest in maintaining its association status with the [Root.GetAllianceName]."
  01_END_FEDERATION_ASSOCIATION_STATUS_ACCEPT:0 "The [Root.GetAllianceName] shall have to do without its [From.GetSpeciesAdj] friends."
- 
+
  01_FORM_COMMERCIAL_PACT_SELECT:0 "You want to cooperate commercially with the [Root.GetName], [From.GetSpeciesNamePlural]?"
  01_FORM_COMMERCIAL_PACT_PROPOSE:0 "We believe that the [Root.GetName] and the [From.GetName] have much to offer one another. We suggest entering into a mutually beneficial commercial pact."
  01_FORM_COMMERCIAL_PACT_ACCEPT:0 "Yes, this is a sound proposal. We agree to your offer of a commercial pact."
@@ -2077,7 +2092,7 @@
  01_BREAK_RESEARCH_AGREEMENT_SELECT:0 "Why do you wish to end the cooperation between our scientists?"
  01_BREAK_RESEARCH_AGREEMENT_PROPOSE:0 "We no longer see the benefit in sharing our technology with you, [From.GetSpeciesName]. The research agreement between our empires is no more."
  01_BREAK_RESEARCH_AGREEMENT_ACCEPT:0 "This is most distressing. We do not understand why you have decided to close your minds to us."
- 
+
  01_DEMAND_TRIBUTARY_SELECT:0 "You think the [Root.GetName] owes you tribute?"
  01_DEMAND_TRIBUTARY_PROPOSE:0 "We are not asking you to give up your autonomy, [Root.GetSpeciesNamePlural], but you must pay your dues."
  01_DEMAND_TRIBUTARY_ACCEPT:0 "This is probably the best arrangement given our current position."

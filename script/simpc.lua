@@ -68,6 +68,10 @@ local list = {
 "utopia_ascension_l_english.yml",
 "utopia_l_english.yml",
 "utopia_megastructures_l_english.yml",
+"diplo_stances_l_english.yml",
+"federations_l_english.yml",
+"federations_resolution_comments_l_english.yml",
+"lithoids_l_english.yml",
 }
 
 for _,file in ipairs(list) do

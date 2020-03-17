@@ -4,6 +4,13 @@
  # Modifiers
  ####################################
 
+ #Federation
+ MOD_FEDERATION_COHESION_ADD:0 "每月团结度"
+ MOD_FEDERATION_COHESION_ETHICS_PENALTY_MULT:0 "Cohesion Ethics Penalty"
+ MOD_FEDERATION_FLEET_COUNTRIBUTION_FACTOR:0 "舰队贡献"
+ MOD_FEDERATION_JOIN_MALUS_MULT:0 "因加入而造成的联邦团结度补正"
+ MOD_FEDERATION_LEAVE_MALUS_MULT:0 "因退出而造成的联邦团结度补正"
+
  #Country
  MOD_BLANK_MODIFIER:0 "空白调整因素"
  MOD_COUNTRY_OCCUPATION_ARMIES_ADD:0 "最大占领警备部队"
@@ -66,6 +73,15 @@
  MOD_MEGASTRUCTURE_BUILD_SPEED_ADD:0 "巨型结构建造速度"
  MOD_MEGASTRUCTURE_PRODUCTION_MULT:0 "巨型结构资源产量"
  MOD_MEGASTRUCTURE_BUILD_COST_MULT:0 "巨型结构建造成本"
+ MOD_DIPLO_WEIGHT_SPRAWL_MULT:0 "来自帝国规模的外交权重"
+ MOD_DIPLO_WEIGHT_NAVAL_MULT:0 "来自舰队实力的外交权重"
+ MOD_DIPLO_WEIGHT_ECONOMY_MULT:0 "来自经济的外交权重"
+ MOD_DIPLO_WEIGHT_TECHNOLOGY_MULT:0 "来自科技的外交权重"
+ MOD_DIPLO_WEIGHT_STANCE_MULT:0 "姿态对外交权重的影响"
+ MOD_DIPLO_WEIGHT_POPS_MULT:0 "来自人口数的外交权重"
+ MOD_DIPLO_WEIGHT_ENVOYS_MULT:0 "来自特使的外交权重"
+ MOD_DIPLO_WEIGHT_COUNCIL_MULT:0 "来自理事会的外交权重"
+ MOD_DIPLO_WEIGHT_MULT:0 "外交权重"
  MOD_DISTANCE_TO_CAPITAL_STATIC_MODIFIER_EFFICIENCY_MULT:0 "到首都的距离惩罚"
  MOD_COUNTRY_ASCENSION_PERKS_ADD:0 "飞升特典"
  MOD_COUNTRY_MODIFY_SPECIES_COST_MULT:0 "种族修饰特殊项目成本"
@@ -89,15 +105,15 @@
  MOD_COUNTRY_TRADE_FEE:0 "市场中介费"
  MOD_COUNTRY_SLAVE_MARKET_COST_MULT:0 "奴隶市场费用" # TODO Check in game
  MOD_COUNTRY_MEGASTRUCTURE_BUILD_CAP_ADD:0 "巨型结构建造上限"
- 
+
  #Pop
  MOD_POP_FERTILITY:0 "繁殖力"
  MOD_POP_HAPPINESS:0 "幸福度"
  MOD_POP_HAPPINESS_DESC:0 "帝国所有人口的幸福度都将依据此数值调整。"
  MOD_BIOLOGICAL_POP_HAPPINESS:0 "碳基生物人口幸福度"
  MOD_BIOLOGICAL_POP_HAPPINESS_DESC:1 "帝国所有碳基生物人口的幸福度都将依据此数值调整。"
- MOD_LITHOID_POP_HAPPINESS: "石质人口幸福度"
- MOD_LITHOID_POP_HAPPINESS_DESC: "石质人口的幸福度都将依据此数值调整。"
+ MOD_LITHOID_POP_HAPPINESS:0 "石质人口幸福度"
+ MOD_LITHOID_POP_HAPPINESS_DESC:0 "石质人口的幸福度都将依据此数值调整。"
  MOD_FACTION_APPROVAL:0 "党派赞同度"
  MOD_POP_RADIATION_HAPPINESS:0 "辐射所导致的幸福度"
  MOD_POP_RADIATION_HAPPINESS_DESC:0 "帝国所有机械人口的幸福度都将依据此数值调整。"
@@ -115,7 +131,7 @@
  MOD_POP_ROBOT_BUILD_SPEED_MULT:0 "机器人建造速度"
  MOD_POP_ROBOT_BUILD_SPEED_MULT_DESC:0 "影响机器人口的建造速度。"
  MOD_POP_ROBOT_BUILD_COST_MULT:0 "机器人建造成本"
- 
+
  MOD_COUNTRY_COLONY_INFLUENCE_COST_MULT:0 "殖民地影响力开销"
  MOD_COUNTRY_CLAIM_INFLUENCE_COST_MULT:0 "领土主张影响力开销"
  MOD_COUNTRY_FACTION_SURPRESSION_COST_MULT:0 "党派镇压开销"
@@ -130,12 +146,12 @@
  MOD_POP_GROWTH_SPEED_REDUCTION:0 "人口增长减少"
  MOD_POP_GROWTH_SPEED:1 "人口增长速率"
  MOD_POP_GROWTH_SPEED_DESC:0 "此数值影响新人口的增长速率。"
- MOD_BIO_POP_GROWTH_SPEED_REDUCTION: "碳基生物人口增长减少"
- MOD_BIO_POP_GROWTH_SPEED: "碳基生物人口增长速率"
- MOD_BIO_POP_GROWTH_SPEED_DESC: "此数值影响新碳基生物人口的增长速率。"
- MOD_LITH_POP_GROWTH_SPEED_REDUCTION: "石质生物增长减少"
- MOD_LITH_POP_GROWTH_SPEED: "石质生物增长速率"
- MOD_LITH_POP_GROWTH_SPEED_DESC: "此数值影响新石质生物人口的增长速率。"
+ MOD_BIO_POP_GROWTH_SPEED_REDUCTION:0 "碳基生物人口增长减少"
+ MOD_BIO_POP_GROWTH_SPEED:0 "碳基生物人口增长速率"
+ MOD_BIO_POP_GROWTH_SPEED_DESC:0 "此数值影响新碳基生物人口的增长速率。"
+ MOD_LITH_POP_GROWTH_SPEED_REDUCTION:0 "石质生物增长减少"
+ MOD_LITH_POP_GROWTH_SPEED:0 "石质生物增长速率"
+ MOD_LITH_POP_GROWTH_SPEED_DESC:0 "此数值影响新石质生物人口的增长速率。"
  MOD_POP_ASSEMBLY_SPEED:0 "人口装配速度"
  MOD_PLANET_POP_ASSEMBLY_ADD:0 "每月人口装配"
  MOD_PLANET_POP_ASSEMBLY_MULT:0 "$MOD_POP_ASSEMBLY_SPEED$"
@@ -143,8 +159,8 @@
  MOD_PLANET_MIGRATION_ALL_MULT:0 "全部移民"
  MOD_POP_DECLINE_FROM_EMIGRATION:0 "迁出移民导致的人口下降"
  MOD_POP_GROWTH_FROM_IMMIGRATION:0 "迁入移民导致的人口增长"
- MOD_BIO_POP_GROWTH_FROM_IMMIGRATION: "迁入移民导致的碳基生物人口增长"
- MOD_LITH_POP_GROWTH_FROM_IMMIGRATION: "迁入移民导致的石质生物人口增长"
+ MOD_BIO_POP_GROWTH_FROM_IMMIGRATION:0 "迁入移民导致的碳基生物人口增长"
+ MOD_LITH_POP_GROWTH_FROM_IMMIGRATION:0 "迁入移民导致的石质生物人口增长"
  MOD_PLANET_IMMIGRATION_PULL_ADD:0 "迁入吸引力"
  MOD_PLANET_IMMIGRATION_PULL_MULT:0 "$MOD_PLANET_IMMIGRATION_PULL_ADD$"
  MOD_PLANET_EMIGRATION_PUSH_ADD:0 "迁出推动力"
@@ -180,7 +196,7 @@
  MOD_POP_ENERGY_MULT:0 "$MOD_POP_ENERGY_ADD$"
  MOD_POP_MINERALS_ADD:0 "加工矿物产量"
  MOD_POP_MINERALS_MULT:0 "$MOD_POP_MINERALS_ADD$"
-  
+
  #Ship
  MOD_SHIP_ARMOR_ADD:1 "装甲生命值"
  MOD_SHIP_ARMOR_MULT:1 "装甲生命值"
@@ -221,6 +237,7 @@
  MOD_SHIP_BUILD_SPEED_MULT:0 "飞船建造速度"
  MOD_SHIP_REPARATION_COST_MULT:0 "飞船维修价格"
  MOD_SHIP_WEAPON_RANGE_MULT:1 "舰载武器射程"
+ MOD_SHIP_ENGAGEMENT_RANGE_MULT:0 "Ship Engagement Range"
  MOD_SHIP_FIRE_RATE_MULT:1 "舰载武器射速"
  MOD_FORCE_DISPARITY_FIRE_RATE_MULT:0 "实力差距带来的战斗加成"
  MOD_SHIP_HOME_TERRITORY_FIRE_RATE_MULT:0 "境内射速"
@@ -232,8 +249,8 @@
  MOD_SHIP_ACCURACY_MULT:0 "精度"
  MOD_SHIP_ACCURACY_ADD:0 "命中率"
  MOD_SHIP_SENSOR_RANGE_MULT:0 "探测范围"
- MOD_SHIP_WINDDOWN_MULT:0 "跃迁冷却时间"
- MOD_SHIP_WINDUP_MULT:0 "跃迁充能时间"
+ MOD_SHIP_WINDDOWN_MULT:1 "跃迁冷却"
+ MOD_SHIP_WINDUP_MULT:1 "跃迁充能时间"
  MOD_SHIP_INTERSTELLAR_SPEED_MULT:1 "超光速速度"
  MOD_SHIP_EMERGENCY_FTL:2 "紧急超光速伤害风险"
  EMERGENCY_JUMP:0 "紧急跃迁"
@@ -246,7 +263,8 @@
  MOD_SHIP_TRACKING_MULT:0 "追踪"
  MOD_SHIP_STARTING_EXPERIENCE_ADD:0 "舰船初始经验"
  MOD_SHIP_EXPERIENCE_GAIN_MULT:0 "舰船经验获得"
- 
+ MOD_SHIP_JUMPDRIVE_COOLDOWN_MULT:0 "Jump Drive Cooldown"
+
  #Army
  MOD_ARMY_DISENGAGE_CHANCE_MULT:0 "军队撤离几率"
  MOD_ARMY_UPKEEP_MULT:0 "军队维护费"
@@ -370,7 +388,7 @@
  mod_planet_district_arcology_civilian_industry_build_speed_mult:0 "工业生态城建造速度"
 
  MOD_PLANET_BUILD_UPKEEP_MULT:0 "行星维护费"
- 
+
  #Fleet
  MOD_COUNTRY_NAVAL_CAP_ADD:0 "$NAVY_SIZE_TITLE$"
  MOD_COUNTRY_NAVAL_CAP_MULT:0 "$MOD_COUNTRY_NAVAL_CAP_ADD$"
@@ -379,7 +397,7 @@
  MOD_SHIP_EMERGENCY_FTL_MIN_DAYS_ADD:1 "紧急超光速跃迁冷却"
  MOD_SHIP_EMERGENCY_FTL_MIN_DAYS_MULT:0 "$MOD_SHIP_EMERGENCY_FTL_MIN_DAYS_ADD$"
  MOD_COUNTRY_FEDERATION_NAVAL_CAP_CONTRIBUTION_MULT:0 "联邦军舰容量贡献"
- 
+
  MOD_COUNTRY_COMMAND_LIMIT_ADD:0 "舰队指挥上限"
  MOD_COUNTRY_COMMAND_LIMIT_MULT:0 "$MOD_FLEET_COMMAND_LIMIT_ADD$"
 
@@ -416,7 +434,7 @@
  MOD_SPACEPORT_MODULE_COST_MULT_DESC:0 "影响向太空港添加模块的费用，增加或减少需要的资源。"
  MOD_STARBASE_SHIP_BUILD_SPEED_MULT:0 "舰船建造速度"
  MOD_STARBASE_DEFENSIVE_WAR_SHIP_BUILD_SPEED_MULT:0 "舰船建造速度（防御战争）"
- 
+
  #Starbase
  STARBASE_MODIFIER:0 "太空基地调整因素"
  MOD_STARBASE_SHIPYARD_CAPACITY_ADD:0 "船坞容量"
@@ -446,7 +464,7 @@
 
  #Star System
  SYSTEM_MODIFIER:0 "星系调整因素"
- 
+
  ####################################
  # Economy Modifiers
  ####################################
@@ -491,14 +509,14 @@
  static_planet_resource_minerals_add:0 "$country_base_minerals_produces_add$"
  static_planet_resource_food_add:0 "$country_base_food_produces_add$"
  static_planet_resource_influence_add:0 "$country_base_influence_produces_add$"
- 
+
  mod_country_base_influence_produces_add:0 "每月影响力"
  mod_planet_resource_influence_add:0 "行星影响力产出"
  mod_country_base_influence_produces_mult:0 "帝国影响力获得"
  mod_country_resource_physics_research_mult:0 "物理研究"
  mod_country_resource_society_research_mult:0 "社会研究"
  mod_country_resource_engineering_research_mult:0 "工程研究"
- 
+
  mod_country_subjects_resource_unity_mult:0 "$tr_domination_vassal_acculturation$"
  mod_country_subjects_resource_unity_max_mult:0 "$tr_domination_vassal_acculturation$最大效果"
  mod_country_federation_member_resource_unity_mult:0 "$tr_diplomacy_federal_unity$"
@@ -515,11 +533,11 @@
  mod_country_base_sr_living_metal_produces_add:0 "每月£sr_living_metal£活金属"
  mod_country_base_sr_dark_matter_produces_add:0 "每月£sr_dark_matter£暗物质"
  mod_country_base_sr_zro_produces_add:0 "每月£sr_zro£卓尘"
- 
+
  ####################################
  # Dynamic Modifiers
  ####################################
- 
+
  mod_pop_ethic_pacifist_attraction_mult:0 "和平主义道德吸引力"
  mod_pop_ethic_militarist_attraction_mult:0 "军国主义道德吸引力"
  mod_pop_ethic_materialist_attraction_mult:0 "物质主义道德吸引力"
@@ -528,25 +546,25 @@
  mod_pop_ethic_xenophobe_attraction_mult:0 "排外主义道德吸引力"
  mod_pop_ethic_egalitarian_attraction_mult:0 "平等主义道德吸引力"
  mod_pop_ethic_authoritarian_attraction_mult:0 "威权主义道德吸引力"
- 
+
  mod_shipsize_starbase_outpost_build_speed_mult:0 "哨站建造速度"
  mod_shipsize_starbase_starport_build_speed_mult:0 "星港建造速度"
  mod_shipsize_starbase_starhold_build_speed_mult:0 "星寨建造速度"
  mod_shipsize_starbase_starfortress_build_speed_mult:0 "星堡建造速度"
  mod_shipsize_starbase_citadel_build_speed_mult:0 "卫城建造速度"
- 
+
  mod_ship_starbase_outpost_cost_mult:0 "哨站建造费用"
  mod_ship_starbase_starport_cost_mult:0 "星港建造费用"
  mod_ship_starbase_starhold_cost_mult:0 "星寨建造费用"
  mod_ship_starbase_starfortress_cost_mult:0 "星堡建造费用"
  mod_ship_starbase_citadel_cost_mult:0 "卫城建造费用"
- 
+
  mod_shipsize_starbase_outpost_upkeep_mult:0 "哨站维护费"
  mod_shipsize_starbase_starport_upkeep_mult:0 "星港维护费"
  mod_shipsize_starbase_starhold_upkeep_mult:0 "星寨维护费"
  mod_shipsize_starbase_starfortress_upkeep_mult:0 "星堡维护费"
  mod_shipsize_starbase_citadel_upkeep_mult:0 "卫城维护费"
- 
+
  mod_shipsize_corvette_build_speed_mult:0 "护卫舰建造速度"
  mod_shipsize_destroyer_build_speed_mult:0 "驱逐舰建造速度"
  mod_shipsize_cruiser_build_speed_mult:0 "巡洋舰建造速度"
@@ -572,23 +590,23 @@
  mod_shipsize_corvette_upkeep_mult:0 "护卫舰维护费"
  mod_shipsize_corvette_hull_mult:0 "护卫舰船体耐久值"
  mod_shipsize_corvette_hull_add:0 "$mod_shipsize_corvette_hull_mult$"
- 
+
  mod_shipsize_destroyer_upkeep_mult:0 "驱逐舰维护费"
  mod_shipsize_destroyer_hull_mult:0 "驱逐舰船体耐久值"
  mod_shipsize_destroyer_hull_add:0 "$mod_shipsize_destroyer_hull_mult$"
- 
+
  mod_shipsize_cruiser_upkeep_mult:0 "巡洋舰维护费"
  mod_shipsize_cruiser_hull_mult:0 "巡洋舰船体耐久值"
  mod_shipsize_cruiser_hull_add:0 "$mod_shipsize_cruiser_hull_mult$"
- 
+
  mod_shipsize_battleship_upkeep_mult:0 "战列舰维护费"
  mod_shipsize_battleship_hull_mult:0 "战列舰船体耐久值"
  mod_shipsize_battleship_hull_add:0 "$mod_shipsize_battleship_hull_mult$"
- 
+
  mod_shipsize_titan_upkeep_mult:0 "泰坦维护费"
  mod_shipsize_titan_hull_mult:0 "泰坦船体耐久值"
  mod_shipsize_titan_hull_add:0 "$mod_shipsize_titan_hull_mult$"
- 
+
  mod_shipsize_spaceport_upkeep_mult:0 "太空港维护费"
  mod_shipsize_mining_station_upkeep_mult:0 "采矿基地维护费"
  mod_shipsize_research_station_upkeep_mult:0 "科研基地维护费"
@@ -602,21 +620,21 @@
  mod_shipsize_terraform_station_upkeep_mult:0 "环境改造站维护费"
  mod_shipsize_wormhole_station_upkeep_mult:0 "虫洞站维护费"
  mod_shipsize_observation_station_upkeep_mult:0 "观测站维护费"
- 
+
  mod_ship_military_station_small_cost_mult:0 "防御平台建造费用"
  mod_shipsize_military_station_small_upkeep_mult:1 "防御平台维护费"
  mod_shipsize_military_station_small_hull_mult:0 "防御平台船体耐久值"
  mod_shipsize_military_station_small_hull_add:0 "$mod_shipsize_military_station_small_hull_mult$"
  mod_shipsize_military_station_small_build_speed_mult:0 "防御平台建造速度"
- 
+
  mod_shipclass_military_station_damage_mult:1 "防御平台伤害"
  mod_shipclass_military_station_hull_mult:1 "防御平台船体耐久值"
  mod_shipclass_military_station_build_cost_mult:1 "防御平台建造费用"
- 
+
  mod_shipclass_starbase_hull_mult:0 "太空基地船体耐久值"
  mod_shipclass_starbase_damage_mult:0 "太空基地伤害"
  mod_shipclass_starbase_build_cost_mult:0 "太空基地建造费用"
- 
+
  mod_weapon_type_explosive_weapon_damage_mult:0 "爆炸武器伤害"
  mod_weapon_type_explosive_weapon_fire_rate_mult:0 "爆炸武器攻击速度"
  mod_weapon_type_kinetic_weapon_damage_mult:0 "动能武器伤害"
@@ -733,7 +751,7 @@
 
  previous_deal_broken:0 "贸易协定破裂"
  previous_deal_ended:0 "贸易协定完成"
- 
+
  extradimensionals_defeated:0 "击败异次元"
  nationalist_corruption:1 "国家主义者的腐败"
  nationalist_corruption_desc:1 "此行星上国家主义激进分子使生产效率降低了。"
@@ -743,14 +761,14 @@
  planet_separatist_supporter_desc:0 "行星分离主义者的支持者"
  sector_separatist_supporter:0 "星域分离主义者的支持者"
  sector_separatist_supporter_desc:0 "星域分离主义者的支持者"
- 
+
  sponsored_rebels:0 "被赞助的叛乱"
  recently_liberated:0 "最近得解放"
 
  swarm_strength:0 "虫群力量"
  swarm_strength_hard:0 "$prethoryn_strength$"
  swarm_strength_insane:0 "$prethoryn_strength$"
- 
+
  exd_strength:0 "异次元力量"
  exd_strength_hard:0 "$exd_strength$"
  exd_strength_insane:0 "$exd_strength$"
@@ -777,8 +795,8 @@
  ship_orbit_repair:0 "轨道修理"
  ship_max_damaged_effect:0 "伤害惩罚"
  station_self_repair:0 "自我修复"
- jump_drive_cooldown:0 "跃迁引擎冷却"
- 
+ jump_drive_cooldown:1 "跃迁引擎冷却"
+
  ####################################
  # Pop Modifiers
  ####################################
@@ -883,7 +901,7 @@
  ####################################
  # Opinion Modifiers
  ####################################
- 
+
  ## SPECIES
  opinion_repugnant_species:1 "令人厌恶的统治者"
  opinion_charismatic_species:1 "魅力非凡的统治者"
@@ -995,8 +1013,8 @@
  opinion_threat:0 "威胁"
  opinion_trust:0 "信任度"
  opinion_relative_power:1 "附属国的相对实力"
- opinion_claims_on_us:1 "他们对我们的领土主张"
- opinion_their_claims:1 "我们对他们的领土主张"
+ opinion_claims_on_us:2 "他们对我们的宣称"
+ opinion_their_claims:2 "我们对他们的宣称"
  opinion_friction:0 "边境冲突"
  opinion_rivalry:0 "劲敌"
  opinion_declared_rival:0 "视我为劲敌"
@@ -1034,13 +1052,13 @@
 
  opinion_enlightened_us:0 "启迪我们"
  opinion_destroyed_portal:0 "被毁的次元传送门"
- 
+
  opinion_devouring_swarm:0 "$civic_hive_devouring_swarm$"
  opinion_swarm:0 "河外侵略者"
  opinion_prey:0 "猎物"
- 
+
  opinion_merciful:0 "仁慈"
- 
+
  opinion_took_station:0 "已掌握的资源站"
  opinion_liberated_us:0 "解放者"
  opinion_we_liberated:1 "已解放"
@@ -1048,7 +1066,7 @@
  opinion_broke_away_from:0 "原压迫者"
 
  opinion_primitive_violation:0 "吞并原始文明"
- 
+
  opinion_fallen_empire_gift:0 "受到馈赠"
  opinion_put_in_their_place:0 "让他们明白自己的地位"
  opinion_accepted_fallen_empire_demand:0 "接受要求"
@@ -1185,8 +1203,8 @@
  wasteland_infrastructure_desc:0 "此星球的原居民在一场核战争中自我毁灭，但仍有大量的基础设施得以保留。这将为我们建立新设施提供帮助。"
  forest_fire:0 "烈火干柴"
  forest_fire_desc:0 "此星球上的森林大火引发了迁徙林木的恐慌，对众多农业殖民地区造成了暂时性损害。"
- 
- 
+
+
  upliftable_species:0 "可开化的物种"
  upliftable_species_desc:0 "此星球上的物种可在我们的协助下发展出太空文明，如果在这里建立殖民地的话就等于直接放弃了这个选择。"
  production_targets:0 "生产指标"
@@ -1278,7 +1296,7 @@
  skill_admiral:1 "舰队司令技能"
  skill_general:1 "将军技能"
  skill_scientist:1 "科学家技能"
- skill_governor:1 "总督技能"
+ skill_governor:2 "总督技能"
  skill_ruler:1 "统治者技能"
  leader_skills_spawn:0 ""
  inhibition_relase:0 "抑制释放"
@@ -1317,12 +1335,12 @@
 
  ed_anchor_buildspeed:0 "船锚建筑"
  shipsize_anchor_station_construction_speed_mult:0 "船锚建筑"
- 
+
  EVENT_LOCKED_FLEET:0 "§R无法被攻击§!"
- 
+
  precursor_research_speed:0 "异常现象研究速度（先驱）"
  precursor_fail_risk:0 "异常现象失败风险（先驱）"
- 
+
  mod_vultaum_1_cat_research_speed_mult:0 "$precursor_research_speed$"
  mod_vultaum_2_cat_research_speed_mult:0 "$precursor_research_speed$"
  mod_vultaum_3_cat_research_speed_mult:0 "$precursor_research_speed$"
@@ -1410,3 +1428,13 @@
  MOD_COUNTRY_EMIGRATION_PUSH_ADD:0 "帝国迁出推动力"
  MOD_COUNTRY_EMIGRATION_PUSH_MULT:0 "$MOD_COUNTRY_EMIGRATION_PUSH_ADD$"
  fe_ship_cost_modifier:0 "上国造船工"
+ MOD_SHIP_FEDERATION_TERRITORY_SPEED_MULT:0 "联邦空间亚光速航速"
+ MOD_SHIP_FEDERATION_TERRITORY_SPEED_MULT_DESC:0 "影响联邦成员国所属恒星系内舰船的亚光速航速"
+ MOD_FEDERATION_RESEARCH_SHARING_MULT:0 "联邦科研共享"
+ MOD_FEDERATION_RESEARCH_SHARING_MULT_DESC:0 "提升研发联邦内另一成员国已研发科技时的科研速度"
+ MOD_FEDERATION_LEADER_FLEET_SCALE_MODIFIER:0 "舰队规模统一"
+ MOD_COUNTRY_FEDERATION_FLEET_CONTRIBUTION_DISCOUNT:0 "国家联邦舰队贡献折扣"
+ MOD_FEDERATION_DIPLO_WEIGHT_CONTRIBUTION_ADD:0 "联邦外交权重贡献"
+ MOD_FEDERATION_LEADER_DIPLO_WEIGHT_FROM_MEMBERS_MULT:0 "Diplomacy Weight from Federation Members"
+ MOD_COUNTRY_FEDERATION_FLEET_CONTRIBUTION_NAVAL_CAP_REDUCTION_DISCOUNT:0 "Country Naval Cap reduction of Fleet Contribution to Federation"
+ MOD_FEDERATION_FLEET_CAP_ADD:0 "Federation fleet cap modifier"

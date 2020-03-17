@@ -105,9 +105,9 @@
  d_former_relic_world:0 "Former Relic World"
  d_former_relic_world_desc:0 "This ecumenopolis was once an abandoned Relic World. Most of the old ruins were repurposed or cleared away when the planet-wide city was rebuilt, but there are still many sites that are of scientific value."
 
- CREATE_ARCHAEOLOGIC_SITE_TYPE:0 "Create a $TYPE$ archaeologic site at $WHERE|Y$"
- CREATE_ARCHAEOLOGIC_SITE_RANDOM:0 "Create a random archaeologic site at $WHERE|Y$"
- DESTROY_ARCHAEOLOGIC_SITE:0 "Destroy the $NAME|Y$ archaeologic site"
+ CREATE_ARCHAEOLOGIC_SITE_TYPE:0 "Create $TYPE$ archaeologic site at $WHERE|Y$\n"
+ CREATE_ARCHAEOLOGIC_SITE_RANDOM:0 "Create a random archaeologic site at $WHERE|Y$\n"
+ DESTROY_ARCHAEOLOGIC_SITE:0 "Destroy the $NAME|Y$ archaeologic site\n"
  FLEETORDER_EXCAVATE_BUTTON:0 "Excavate Site"
  FLEETORDER_EXCAVATE_SITE:0 "Excavating archaeological site."
  ADD_STAGE_CLUES_EFFECT:0 "Adds $CLUES$ clues"
@@ -304,7 +304,7 @@
  
  artifact_lgate_clue:0 "Discover L-Gate Insight"
  artifact_lgate_clue_desc:0 "We should be able to piece together more of the mysteries surrounding the L-Gates using these artifacts."
- artifact_lgate_clue_effect:0 "$add_lcluster_clue$\n\nCooldown: £time£ §Y3600§!"
+ artifact_lgate_clue_effect:0 "Cooldown: £time£ §Y3600§!"
  artifact_lgate_insight_cooldown:0 "$artifact_lgate_clue$ Cooldown"
 
  artifact_precursor_clue:0 "Discover Precursor Insight"
@@ -321,6 +321,9 @@
  artifact_find_military_applications_locked_desc:0 "$artifact_action_locked_desc$"
  artifact_arcane_deciphering_locked:0 "$artifact_action_locked$"
  artifact_arcane_deciphering_locked_desc:0 "$artifact_action_locked_desc$"
+
+ ancrel.10040.name:0 "Special Project Unlocked"
+ ancrel.10040.desc:0 "Our scientists have begun a special project to study the deeper secrets of the precursors."
 
  artifact_irassian_research:0 "Secrets of the Irassians"
  artifact_irassian_research_desc:0 "Delve deeper into the secrets of the Irassians."
@@ -571,7 +574,8 @@
  ##################
  lithoids_arc_site_minerals:0 "Archaeological Site"
  lithoids_arc_site_minerals_desc:0 "The excavation of an archaeological site within this world's mines is disrupting all planetside mining operations."
- 
+ evermore_science:0 "Ever More Science"
+ evermore_joy:0 "Ever More Joy"
  drums_of_war:0 "Drums of War"
  ether_drake_triumph:0 "Ether Drake Triumph"
  worm_scales:0 "Worm Scale Influence"
@@ -598,8 +602,8 @@
  oracle_software_integration_desc:0 "The Oracle sees all."
  oracle_administration:0 "Oracle"
  oracle_administration_desc:0 "The Oracle operates the empire like a well-oiled machine... when you oil her."
- chosen_of_zarqlan:0 "The chosen of Zarqlan"
- chosen_of_zarqlan_desc:0 "As the chosen people of Zarqlan we can safely colonize Holy Worlds."
+ chosen_of_zarqlan:0 "The Chosen of Zarqlan"
+ chosen_of_zarqlan_desc:0 "As the Chosen people of Zarqlan we can safely colonize Holy Worlds."
  the_memorex:0 "The Memorex"
  the_memorex_desc:0 "The Memorex Enhanced Learning Program trains the population to better fit the needs of the empire, as they sleep, improving their output significantly."
  opinion_destroyed_caravaneer_home:0 "Destroyed the Caravaneer's home"
@@ -677,7 +681,8 @@
  ##################
  d_archaeological_site:0 "£blocker£ Archaeological Site"
  d_archaeological_site_desc:0 "This area contains ancient archaeological finds that are being excavated."
-
+ d_sentinels:0 "£blocker£ Sentinels"
+ d_sentinels_desc:1 "The Sentinels guard this land; it may not be disturbed. The Sentinels counts as Defense Armies, and will come to the planet's aid if there's an invasion."
  d_hab_gas_1:0 "Exotic Gas Deposit"
  d_hab_gas_1_desc:0 "This habitat is built near an exploitable exotic gas deposit."
  d_hab_gas_2:0 "$d_hab_gas_1$"
@@ -732,7 +737,10 @@
  d_hab_dark_matter_3_desc:0 "$d_hab_dark_matter_1_desc$"
  d_hab_living_metal_1:0 "Living Metal Deposit"
  d_hab_living_metal_1_desc:0 "This habitat is built near an exploitable living metal deposit."
-
+ d_sentinels_monument:0 "$sentinels_planet_modifier$"
+ d_sentinels_monument_desc:0 "$sentinels_planet_modifier$"
+ d_sentinels_metal:0 "Sentinels"
+ d_sentinels_metal_desc:0 "The broken remains of nine monumental automatons made from an unusual metal alloy offer an ample supply of §HLiving Metal§!."
  ancrel.10001.name:0 "$tech_arcane_deciphering$"
  ancrel.10001.desc:0 "Study of the artifacts has advanced some of our research."
  ancrel.10002.name:0 "$tech_arcane_deciphering$"
@@ -800,3 +808,5 @@
  herald_75:0 "The Herald is damaged"
  herald_50:0 "$herald_75$"
  herald_25:0 "$herald_75$"
+ NAME_Sentinels:0 "Sentinels"
+ sentinel_army:0 "Sentinels"

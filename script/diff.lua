@@ -1,8 +1,8 @@
-local en_path = "../en2.2/localisation/english/"
+local en_path = "../en2.5/localisation/english/"
 local cn_path = "../cn/localisation/english/"
 local new_path = "../en/localisation/english/"
 local diff_path = "../diff/"
-local cn2_path = "../cn2.3/"
+local cn2_path = "../cn2.6/"
 
 local function readfile(filename)
 	local f = io.open(filename, "rb")
@@ -150,6 +150,10 @@ local function readcn()
 "utopia_maximilian_l_simp_chinese.yml",
 "utopia_megastructures_l_simp_chinese.yml",
 "utopia_miranda_l_simp_chinese.yml",
+"diplo_stances_l_simp_chinese.yml",
+"federations_l_simp_chinese.yml",
+"federations_resolution_comments_l_simp_chinese.yml",
+"lithoids_l_simp_chinese.yml",
 	}
 	local dict = {}
 	for _, file in ipairs(cn2_list) do
@@ -212,6 +216,10 @@ local list = {
 "utopia_ascension_l_english.yml",
 "utopia_l_english.yml",
 "utopia_megastructures_l_english.yml",
+"diplo_stances_l_english.yml",
+"federations_l_english.yml",
+"federations_resolution_comments_l_english.yml",
+"lithoids_l_english.yml",
 }
 
 local cn2 = readcn()

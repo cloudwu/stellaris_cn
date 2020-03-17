@@ -4,6 +4,13 @@
  # Modifiers
  ####################################
 
+ #Federation
+ MOD_FEDERATION_COHESION_ADD:0 "Monthly Cohesion"
+ MOD_FEDERATION_COHESION_ETHICS_PENALTY_MULT:0 "Cohesion Ethics Penalty"
+ MOD_FEDERATION_FLEET_COUNTRIBUTION_FACTOR:0 "Fleet Contribution"
+ MOD_FEDERATION_JOIN_MALUS_MULT:0 "Federation Cohesion malus on joining"
+ MOD_FEDERATION_LEAVE_MALUS_MULT:0 "Federation Cohesion malus on leaving"
+
  #Country
  MOD_BLANK_MODIFIER:0 "Blank Modifier"
  MOD_COUNTRY_OCCUPATION_ARMIES_ADD:0 "Max Occupation Garrisons"
@@ -66,6 +73,15 @@
  MOD_MEGASTRUCTURE_BUILD_SPEED_ADD:0 "Megastructure Build Speed"
  MOD_MEGASTRUCTURE_PRODUCTION_MULT:0 "Megastructure Resource Production"
  MOD_MEGASTRUCTURE_BUILD_COST_MULT:0 "Megastructure Build Cost"
+ MOD_DIPLO_WEIGHT_SPRAWL_MULT:0 "Diplomatic Weight From Empire Sprawl"
+ MOD_DIPLO_WEIGHT_NAVAL_MULT:0 "Diplomatic Weight From Fleet Power"
+ MOD_DIPLO_WEIGHT_ECONOMY_MULT:0 "Diplomatic Weight From Economy"
+ MOD_DIPLO_WEIGHT_TECHNOLOGY_MULT:0 "Diplomatic Weight From Tech"
+ MOD_DIPLO_WEIGHT_STANCE_MULT:0 "Diplomatic Weight Stance Effect"
+ MOD_DIPLO_WEIGHT_POPS_MULT:0 "Diplomatic Weight From Pops"
+ MOD_DIPLO_WEIGHT_ENVOYS_MULT:0 "Diplomatic Weight From Envoys"
+ MOD_DIPLO_WEIGHT_COUNCIL_MULT:0 "Diplomatic Weight From Council"
+ MOD_DIPLO_WEIGHT_MULT:0 "Diplomatic Weight"
  MOD_DISTANCE_TO_CAPITAL_STATIC_MODIFIER_EFFICIENCY_MULT:0 "Penalties due to Distance from Capital"
  MOD_COUNTRY_ASCENSION_PERKS_ADD:0 "Ascension Perks"
  MOD_COUNTRY_MODIFY_SPECIES_COST_MULT:0 "Modify Species Special Project Cost"
@@ -89,15 +105,15 @@
  MOD_COUNTRY_TRADE_FEE:0 "Market Fee"
  MOD_COUNTRY_SLAVE_MARKET_COST_MULT:0 "Slave Market Cost"
  MOD_COUNTRY_MEGASTRUCTURE_BUILD_CAP_ADD:0 "Megastructure Build Capacity"
- 
+
  #Pop
  MOD_POP_FERTILITY:0 "Fertility"
  MOD_POP_HAPPINESS:0 "Happiness"
  MOD_POP_HAPPINESS_DESC:0 "All Pops within the Empire will have their Happiness adjusted by this value."
  MOD_BIOLOGICAL_POP_HAPPINESS:0 "Biological Pop Happiness"
  MOD_BIOLOGICAL_POP_HAPPINESS_DESC:1 "Biological Pops have their Happiness adjusted by this value."
- MOD_LITHOID_POP_HAPPINESS: "Lithoid Pop Happiness"
- MOD_LITHOID_POP_HAPPINESS_DESC: "Lithoid Pops have their Happiness adjusted by this value."
+ MOD_LITHOID_POP_HAPPINESS:0 "Lithoid Pop Happiness"
+ MOD_LITHOID_POP_HAPPINESS_DESC:0 "Lithoid Pops have their Happiness adjusted by this value."
  MOD_FACTION_APPROVAL:0 "Faction Approval"
  MOD_POP_RADIATION_HAPPINESS:0 "Happiness due to radiation"
  MOD_POP_RADIATION_HAPPINESS_DESC:0 "All Mechanical Pops within the Empire will have their Happiness adjusted by this value."
@@ -115,7 +131,7 @@
  MOD_POP_ROBOT_BUILD_SPEED_MULT:0 "Robot Build Speed"
  MOD_POP_ROBOT_BUILD_SPEED_MULT_DESC:0 "Affects the speed at which robotic Pops are built."
  MOD_POP_ROBOT_BUILD_COST_MULT:0 "Robot Build Cost"
- 
+
  MOD_COUNTRY_COLONY_INFLUENCE_COST_MULT:0 "Colony Influence Cost"
  MOD_COUNTRY_CLAIM_INFLUENCE_COST_MULT:0 "Claim Influence Cost"
  MOD_COUNTRY_FACTION_SURPRESSION_COST_MULT:0 "Faction Suppression Cost"
@@ -130,12 +146,12 @@
  MOD_POP_GROWTH_SPEED_REDUCTION:0 "Pop Growth Reduction"
  MOD_POP_GROWTH_SPEED:1 "Pop Growth Speed"
  MOD_POP_GROWTH_SPEED_DESC:0 "This value affects the speed at which new Pops are grown."
- MOD_BIO_POP_GROWTH_SPEED_REDUCTION: "Biological Pop Growth Reduction"
- MOD_BIO_POP_GROWTH_SPEED: "Biological Pop Growth Speed"
- MOD_BIO_POP_GROWTH_SPEED_DESC: "This value affects the speed at which new Biological Pops are grown."
- MOD_LITH_POP_GROWTH_SPEED_REDUCTION: "Lithoid Pop Growth Reduction"
- MOD_LITH_POP_GROWTH_SPEED: "Lithoid Pop Growth Speed"
- MOD_LITH_POP_GROWTH_SPEED_DESC: "This value affects the speed at which new Lithoid Pops are grown."
+ MOD_BIO_POP_GROWTH_SPEED_REDUCTION:0 "Biological Pop Growth Reduction"
+ MOD_BIO_POP_GROWTH_SPEED:0 "Biological Pop Growth Speed"
+ MOD_BIO_POP_GROWTH_SPEED_DESC:0 "This value affects the speed at which new Biological Pops are grown."
+ MOD_LITH_POP_GROWTH_SPEED_REDUCTION:0 "Lithoid Pop Growth Reduction"
+ MOD_LITH_POP_GROWTH_SPEED:0 "Lithoid Pop Growth Speed"
+ MOD_LITH_POP_GROWTH_SPEED_DESC:0 "This value affects the speed at which new Lithoid Pops are grown."
  MOD_POP_ASSEMBLY_SPEED:0 "Pop Assembly Speed"
  MOD_PLANET_POP_ASSEMBLY_ADD:0 "Monthly Pop Assembly"
  MOD_PLANET_POP_ASSEMBLY_MULT:0 "$MOD_POP_ASSEMBLY_SPEED$"
@@ -143,8 +159,8 @@
  MOD_PLANET_MIGRATION_ALL_MULT:0 "All Migration"
  MOD_POP_DECLINE_FROM_EMIGRATION:0 "Pop Decline from Emigration"
  MOD_POP_GROWTH_FROM_IMMIGRATION:0 "Pop Growth from Immigration"
- MOD_BIO_POP_GROWTH_FROM_IMMIGRATION: "Biological Pop Growth from Immigration"
- MOD_LITH_POP_GROWTH_FROM_IMMIGRATION: "Lithoid Pop Growth from Immigration"
+ MOD_BIO_POP_GROWTH_FROM_IMMIGRATION:0 "Biological Pop Growth from Immigration"
+ MOD_LITH_POP_GROWTH_FROM_IMMIGRATION:0 "Lithoid Pop Growth from Immigration"
  MOD_PLANET_IMMIGRATION_PULL_ADD:0 "Immigration Pull"
  MOD_PLANET_IMMIGRATION_PULL_MULT:0 "$MOD_PLANET_IMMIGRATION_PULL_ADD$"
  MOD_PLANET_EMIGRATION_PUSH_ADD:0 "Emigration Push"
@@ -180,7 +196,7 @@
  MOD_POP_ENERGY_MULT:0 "$MOD_POP_ENERGY_ADD$"
  MOD_POP_MINERALS_ADD:0 "Processing Minerals Production"
  MOD_POP_MINERALS_MULT:0 "$MOD_POP_MINERALS_ADD$"
-  
+
  #Ship
  MOD_SHIP_ARMOR_ADD:1 "Armor Hit Points"
  MOD_SHIP_ARMOR_MULT:1 "Armor Hit Points"
@@ -221,6 +237,7 @@
  MOD_SHIP_BUILD_SPEED_MULT:0 "Ship Build Speed"
  MOD_SHIP_REPARATION_COST_MULT:0 "Ship Repair Cost"
  MOD_SHIP_WEAPON_RANGE_MULT:1 "Ship Weapons Range"
+ MOD_SHIP_ENGAGEMENT_RANGE_MULT:0 "Ship Engagement Range"
  MOD_SHIP_FIRE_RATE_MULT:1 "Ship Fire Rate"
  MOD_FORCE_DISPARITY_FIRE_RATE_MULT:0 "Force Disparity Combat Bonus"
  MOD_SHIP_HOME_TERRITORY_FIRE_RATE_MULT:0 "Home Territory Fire Rate"
@@ -232,8 +249,8 @@
  MOD_SHIP_ACCURACY_MULT:0 "Accuracy"
  MOD_SHIP_ACCURACY_ADD:0 "Chance to Hit"
  MOD_SHIP_SENSOR_RANGE_MULT:0 "Sensor Range"
- MOD_SHIP_WINDDOWN_MULT:0 "Jump Cooldown"
- MOD_SHIP_WINDUP_MULT:0 "Jump Charge Time"
+ MOD_SHIP_WINDDOWN_MULT:1 "Hyper Jump Cooldown"
+ MOD_SHIP_WINDUP_MULT:1 "Hyper Jump Charge Time"
  MOD_SHIP_INTERSTELLAR_SPEED_MULT:1 "FTL Speed"
  MOD_SHIP_EMERGENCY_FTL:2 "Emergency FTL Damage Risk"
  EMERGENCY_JUMP:0 "Emergency Jump"
@@ -246,7 +263,8 @@
  MOD_SHIP_TRACKING_MULT:0 "Tracking"
  MOD_SHIP_STARTING_EXPERIENCE_ADD:0 "Ship Starting Experience"
  MOD_SHIP_EXPERIENCE_GAIN_MULT:0 "Ship Experience Gain"
- 
+ MOD_SHIP_JUMPDRIVE_COOLDOWN_MULT:0 "Jump Drive Cooldown"
+
  #Army
  MOD_ARMY_DISENGAGE_CHANCE_MULT:0 "Army Disengagement Chance"
  MOD_ARMY_UPKEEP_MULT:0 "Army Upkeep"
@@ -370,7 +388,7 @@
  mod_planet_district_arcology_civilian_industry_build_speed_mult:0 "Industrial Arcology District Build Speed"
 
  MOD_PLANET_BUILD_UPKEEP_MULT:0 "Planet Upkeep"
- 
+
  #Fleet
  MOD_COUNTRY_NAVAL_CAP_ADD:0 "$NAVY_SIZE_TITLE$"
  MOD_COUNTRY_NAVAL_CAP_MULT:0 "$MOD_COUNTRY_NAVAL_CAP_ADD$"
@@ -379,7 +397,7 @@
  MOD_SHIP_EMERGENCY_FTL_MIN_DAYS_ADD:1 "Emergency FTL Jump Cooldown"
  MOD_SHIP_EMERGENCY_FTL_MIN_DAYS_MULT:0 "$MOD_SHIP_EMERGENCY_FTL_MIN_DAYS_ADD$"
  MOD_COUNTRY_FEDERATION_NAVAL_CAP_CONTRIBUTION_MULT:0 "Federation Naval Capacity Contribution"
- 
+
  MOD_COUNTRY_COMMAND_LIMIT_ADD:0 "Fleet Command Limit"
  MOD_COUNTRY_COMMAND_LIMIT_MULT:0 "$MOD_FLEET_COMMAND_LIMIT_ADD$"
 
@@ -416,7 +434,7 @@
  MOD_SPACEPORT_MODULE_COST_MULT_DESC:0 "Modifies the cost of adding Modules to a Spaceport, increasing or reducing the resources required."
  MOD_STARBASE_SHIP_BUILD_SPEED_MULT:0 "Ship Build Speed"
  MOD_STARBASE_DEFENSIVE_WAR_SHIP_BUILD_SPEED_MULT:0 "Ship Build Speed (Defensive War)"
- 
+
  #Starbase
  STARBASE_MODIFIER:0 "Starbase Modifier"
  MOD_STARBASE_SHIPYARD_CAPACITY_ADD:0 "Shipyard Capacity"
@@ -446,7 +464,7 @@
 
  #Star System
  SYSTEM_MODIFIER:0 "System Modifier"
- 
+
  ####################################
  # Economy Modifiers
  ####################################
@@ -491,14 +509,14 @@
  static_planet_resource_minerals_add:0 "$country_base_minerals_produces_add$"
  static_planet_resource_food_add:0 "$country_base_food_produces_add$"
  static_planet_resource_influence_add:0 "$country_base_influence_produces_add$"
- 
+
  mod_country_base_influence_produces_add:0 "Monthly Influence"
  mod_planet_resource_influence_add:0 "Planet Influence Output"
  mod_country_base_influence_produces_mult:0 "Empire Influence Gain"
  mod_country_resource_physics_research_mult:0 "Physics Research"
  mod_country_resource_society_research_mult:0 "Society Research"
  mod_country_resource_engineering_research_mult:0 "Engineering Research"
- 
+
  mod_country_subjects_resource_unity_mult:0 "$tr_domination_vassal_acculturation$"
  mod_country_subjects_resource_unity_max_mult:0 "$tr_domination_vassal_acculturation$ Max Effect"
  mod_country_federation_member_resource_unity_mult:0 "$tr_diplomacy_federal_unity$"
@@ -515,11 +533,11 @@
  mod_country_base_sr_living_metal_produces_add:0 "Monthly £sr_living_metal£ Living Metal"
  mod_country_base_sr_dark_matter_produces_add:0 "Monthly £sr_dark_matter£ Dark Matter"
  mod_country_base_sr_zro_produces_add:0 "Monthly £sr_zro£ Zro"
- 
+
  ####################################
  # Dynamic Modifiers
  ####################################
- 
+
  mod_pop_ethic_pacifist_attraction_mult:0 "Pacifist Ethics Attraction"
  mod_pop_ethic_militarist_attraction_mult:0 "Militarist Ethics Attraction"
  mod_pop_ethic_materialist_attraction_mult:0 "Materialist Ethics Attraction"
@@ -528,25 +546,25 @@
  mod_pop_ethic_xenophobe_attraction_mult:0 "Xenophobe Ethics Attraction"
  mod_pop_ethic_egalitarian_attraction_mult:0 "Egalitarian Ethics Attraction"
  mod_pop_ethic_authoritarian_attraction_mult:0 "Authoritarian Ethics Attraction"
- 
+
  mod_shipsize_starbase_outpost_build_speed_mult:0 "Outpost Build Speed"
  mod_shipsize_starbase_starport_build_speed_mult:0 "Starport Build Speed"
  mod_shipsize_starbase_starhold_build_speed_mult:0 "Starhold Build Speed"
  mod_shipsize_starbase_starfortress_build_speed_mult:0 "Star Fortress Build Speed"
  mod_shipsize_starbase_citadel_build_speed_mult:0 "Citadel Build Speed"
- 
+
  mod_ship_starbase_outpost_cost_mult:0 "Outpost Build Cost"
  mod_ship_starbase_starport_cost_mult:0 "Starport Build Cost"
  mod_ship_starbase_starhold_cost_mult:0 "Starhold Build Cost"
  mod_ship_starbase_starfortress_cost_mult:0 "Star Fortress Build Cost"
  mod_ship_starbase_citadel_cost_mult:0 "Citadel Build Cost"
- 
+
  mod_shipsize_starbase_outpost_upkeep_mult:0 "Outpost Upkeep"
  mod_shipsize_starbase_starport_upkeep_mult:0 "Starport Upkeep"
  mod_shipsize_starbase_starhold_upkeep_mult:0 "Starhold Upkeep"
  mod_shipsize_starbase_starfortress_upkeep_mult:0 "Star Fortress Upkeep"
  mod_shipsize_starbase_citadel_upkeep_mult:0 "Citadel Upkeep"
- 
+
  mod_shipsize_corvette_build_speed_mult:0 "Corvette Build Speed"
  mod_shipsize_destroyer_build_speed_mult:0 "Destroyer Build Speed"
  mod_shipsize_cruiser_build_speed_mult:0 "Cruiser Build Speed"
@@ -572,23 +590,23 @@
  mod_shipsize_corvette_upkeep_mult:0 "Corvette Upkeep"
  mod_shipsize_corvette_hull_mult:0 "Corvette Hull Points"
  mod_shipsize_corvette_hull_add:0 "$mod_shipsize_corvette_hull_mult$"
- 
+
  mod_shipsize_destroyer_upkeep_mult:0 "Destroyer Upkeep"
  mod_shipsize_destroyer_hull_mult:0 "Destroyer Hull Points"
  mod_shipsize_destroyer_hull_add:0 "$mod_shipsize_destroyer_hull_mult$"
- 
+
  mod_shipsize_cruiser_upkeep_mult:0 "Cruiser Upkeep"
  mod_shipsize_cruiser_hull_mult:0 "Cruiser Hull Points"
  mod_shipsize_cruiser_hull_add:0 "$mod_shipsize_cruiser_hull_mult$"
- 
+
  mod_shipsize_battleship_upkeep_mult:0 "Battleship Upkeep"
  mod_shipsize_battleship_hull_mult:0 "Battleship Hull Points"
  mod_shipsize_battleship_hull_add:0 "$mod_shipsize_battleship_hull_mult$"
- 
+
  mod_shipsize_titan_upkeep_mult:0 "Titan Upkeep"
  mod_shipsize_titan_hull_mult:0 "Titan Hull Points"
  mod_shipsize_titan_hull_add:0 "$mod_shipsize_titan_hull_mult$"
- 
+
  mod_shipsize_spaceport_upkeep_mult:0 "Spaceport Upkeep"
  mod_shipsize_mining_station_upkeep_mult:0 "Mining Station Upkeep"
  mod_shipsize_research_station_upkeep_mult:0 "Research Station Upkeep"
@@ -602,21 +620,21 @@
  mod_shipsize_terraform_station_upkeep_mult:0 "Terraforming Station Upkeep"
  mod_shipsize_wormhole_station_upkeep_mult:0 "Wormhole Station Upkeep"
  mod_shipsize_observation_station_upkeep_mult:0 "Observation Station Upkeep"
- 
+
  mod_ship_military_station_small_cost_mult:0 "Defense Platform Build Cost"
  mod_shipsize_military_station_small_upkeep_mult:1 "Defense Platform Upkeep"
  mod_shipsize_military_station_small_hull_mult:0 "Defense Platform Hull Points"
  mod_shipsize_military_station_small_hull_add:0 "$mod_shipsize_military_station_small_hull_mult$"
  mod_shipsize_military_station_small_build_speed_mult:0 "Defense Platform Build Speed"
- 
+
  mod_shipclass_military_station_damage_mult:1 "Defense Platform Damage"
  mod_shipclass_military_station_hull_mult:1 "Defense Platform Hull Points"
  mod_shipclass_military_station_build_cost_mult:1 "Defense Platform Build Cost"
- 
+
  mod_shipclass_starbase_hull_mult:0 "Starbase Hull Points"
  mod_shipclass_starbase_damage_mult:0 "Starbase Damage"
  mod_shipclass_starbase_build_cost_mult:0 "Starbase Build Cost"
- 
+
  mod_weapon_type_explosive_weapon_damage_mult:0 "Explosive Weapon Damage"
  mod_weapon_type_explosive_weapon_fire_rate_mult:0 "Explosive Weapon Attack Speed"
  mod_weapon_type_kinetic_weapon_damage_mult:0 "Kinetic Weapon Damage"
@@ -733,7 +751,7 @@
 
  previous_deal_broken:0 "Broken trade deals"
  previous_deal_ended:0 "Fulfilled trade deals"
- 
+
  extradimensionals_defeated:0 "Extradimensionals Defeated"
  nationalist_corruption:1 "Nationalist Corruption"
  nationalist_corruption_desc:1 "Subversive members of a Nationalist faction on this planet reduce output efficiency."
@@ -743,14 +761,14 @@
  planet_separatist_supporter_desc:0 "Planet separatist supporter"
  sector_separatist_supporter:0 "Sector separatist supporter"
  sector_separatist_supporter_desc:0 "Sector separatist supporter"
- 
+
  sponsored_rebels:0 "Sponsored Rebels"
  recently_liberated:0 "Recently Liberated"
 
  swarm_strength:0 "Swarm Strength"
  swarm_strength_hard:0 "$prethoryn_strength$"
  swarm_strength_insane:0 "$prethoryn_strength$"
- 
+
  exd_strength:0 "Extradimensional Power"
  exd_strength_hard:0 "$exd_strength$"
  exd_strength_insane:0 "$exd_strength$"
@@ -777,8 +795,8 @@
  ship_orbit_repair:0 "Orbit Repair"
  ship_max_damaged_effect:0 "Damaged Penalty"
  station_self_repair:0 "Self Repair"
- jump_drive_cooldown:0 "Jump Drive Cooldown"
- 
+ jump_drive_cooldown:1 "Jump Drive Cooldown"
+
  ####################################
  # Pop Modifiers
  ####################################
@@ -883,7 +901,7 @@
  ####################################
  # Opinion Modifiers
  ####################################
- 
+
  ## SPECIES
  opinion_repugnant_species:1 "Repugnant Ruler"
  opinion_charismatic_species:1 "Charismatic Ruler"
@@ -995,8 +1013,8 @@
  opinion_threat:0 "Threat"
  opinion_trust:0 "Trust"
  opinion_relative_power:1 "Relative Power of Subjects"
- opinion_claims_on_us:1 "Their Claims on Us"
- opinion_their_claims:1 "Our Claims on Them"
+ opinion_claims_on_us:2 "This Empire's Claims"
+ opinion_their_claims:2 "Opposing Empire's Claims"
  opinion_friction:0 "Border Friction"
  opinion_rivalry:0 "Our Rival"
  opinion_declared_rival:0 "Rivaling Us"
@@ -1034,13 +1052,13 @@
 
  opinion_enlightened_us:0 "Enlightened Us"
  opinion_destroyed_portal:0 "Destroyed Dimensional Portal"
- 
+
  opinion_devouring_swarm:0 "$civic_hive_devouring_swarm$"
  opinion_swarm:0 "Extragalactic Invaders"
  opinion_prey:0 "Prey"
- 
+
  opinion_merciful:0 "Merciful"
- 
+
  opinion_took_station:0 "Seized Resource Station"
  opinion_liberated_us:0 "Liberator"
  opinion_we_liberated:1 "Liberated"
@@ -1048,7 +1066,7 @@
  opinion_broke_away_from:0 "Former Oppressors"
 
  opinion_primitive_violation:0 "Annexed Primitives"
- 
+
  opinion_fallen_empire_gift:0 "Given Gift"
  opinion_put_in_their_place:0 "Put in their place"
  opinion_accepted_fallen_empire_demand:0 "Accepted Demands"
@@ -1185,8 +1203,8 @@
  wasteland_infrastructure_desc:0 "There is still a significant amount of infrastructure left on this world, built by its original inhabitants before they destroyed themselves in a nuclear war. This will aid in the construction of new buildings."
  forest_fire:0 "Forest Fire"
  forest_fire_desc:0 "A forest fire resulted in a stampede by this world's wandering forests, causing temporary damage to several farming regions."
- 
- 
+
+
  upliftable_species:0 "Upliftable Species"
  upliftable_species_desc:0 "There are species here which can be uplifted, creating a colony on this planet would remove our option to uplift them."
  production_targets:0 "Production Targets"
@@ -1317,12 +1335,12 @@
 
  ed_anchor_buildspeed:0 "Anchor Construction"
  shipsize_anchor_station_construction_speed_mult:0 "Anchor Construction"
- 
+
  EVENT_LOCKED_FLEET:0 "§RCannot be attacked§!"
- 
+
  precursor_research_speed:0 "Anomaly Research Speed (Precursors)"
  precursor_fail_risk:0 "Anomaly Fail Risk (Precursors)"
- 
+
  mod_vultaum_1_cat_research_speed_mult:0 "$precursor_research_speed$"
  mod_vultaum_2_cat_research_speed_mult:0 "$precursor_research_speed$"
  mod_vultaum_3_cat_research_speed_mult:0 "$precursor_research_speed$"
@@ -1410,3 +1428,13 @@
  MOD_COUNTRY_EMIGRATION_PUSH_ADD:0 "Empire Emigration Push"
  MOD_COUNTRY_EMIGRATION_PUSH_MULT:0 "$MOD_COUNTRY_EMIGRATION_PUSH_ADD$"
  fe_ship_cost_modifier:0 "Ascendancy Shipwrights"
+ MOD_SHIP_FEDERATION_TERRITORY_SPEED_MULT:0 "Federation Space Sublight Speed"
+ MOD_SHIP_FEDERATION_TERRITORY_SPEED_MULT_DESC:0 "Affects the sublight Speed of ships flying through systems belonging to a Federation member"
+ MOD_FEDERATION_RESEARCH_SHARING_MULT:0 "Federation Research Sharing"
+ MOD_FEDERATION_RESEARCH_SHARING_MULT_DESC:0 "Adds research speed for Technology researched by another member of the federation"
+ MOD_FEDERATION_LEADER_FLEET_SCALE_MODIFIER:0 "Fleet size to unity"
+ MOD_COUNTRY_FEDERATION_FLEET_CONTRIBUTION_DISCOUNT:0 "Discount to Country Fleet Contribution to Federation"
+ MOD_FEDERATION_DIPLO_WEIGHT_CONTRIBUTION_ADD:0 "Federation Diplomacy Weight Contribution"
+ MOD_FEDERATION_LEADER_DIPLO_WEIGHT_FROM_MEMBERS_MULT:0 "Diplomacy Weight from Federation Members"
+ MOD_COUNTRY_FEDERATION_FLEET_CONTRIBUTION_NAVAL_CAP_REDUCTION_DISCOUNT:0 "Country Naval Cap reduction of Fleet Contribution to Federation"
+ MOD_FEDERATION_FLEET_CAP_ADD:0 "Federation fleet cap modifier"

@@ -105,9 +105,9 @@
  d_former_relic_world:0 "前遗迹世界"
  d_former_relic_world_desc:0 "此寰球都市原本是废弃的遗迹世界。旧有的废墟大多已在重建行星城市时被重新利用或清理干净，但这里仍有许多具有科学价值的地点。"
 
- CREATE_ARCHAEOLOGIC_SITE_TYPE:0 "在$WHERE|Y$建立一个$TYPE$考古站点"
- CREATE_ARCHAEOLOGIC_SITE_RANDOM:0 "在$WHERE|Y$建立一个随机类型的考古站点"
- DESTROY_ARCHAEOLOGIC_SITE:0 "摧毁$NAME|Y$考古站点"
+ CREATE_ARCHAEOLOGIC_SITE_TYPE:0 "在$WHERE|Y$建立一个$TYPE$考古站点\n"
+ CREATE_ARCHAEOLOGIC_SITE_RANDOM:0 "在$WHERE|Y$建立一个类型随机的考古站点\n"
+ DESTROY_ARCHAEOLOGIC_SITE:0 "摧毁$NAME|Y$考古站点\n"
  FLEETORDER_EXCAVATE_BUTTON:0 "发掘遗迹"
  FLEETORDER_EXCAVATE_SITE:0 "发掘中的考古站点。"
  ADD_STAGE_CLUES_EFFECT:0 "获得$CLUES$条线索"
@@ -304,7 +304,7 @@
  
  artifact_lgate_clue:0 "探索对L星门的见解"
  artifact_lgate_clue_desc:0 "我们应该能够利用这些文物拼凑出更多关于L星门的秘密。"
- artifact_lgate_clue_effect:0 "$add_lcluster_clue$\n\n冷却：£time£ §Y3600§!日"
+ artifact_lgate_clue_effect:0 "冷却：£time£ §Y3600§!"
  artifact_lgate_insight_cooldown:0 "$artifact_lgate_clue$冷却"
 
  artifact_precursor_clue:0 "探索对先驱者的见解"
@@ -321,6 +321,9 @@
  artifact_find_military_applications_locked_desc:0 "$artifact_action_locked_desc$"
  artifact_arcane_deciphering_locked:0 "$artifact_action_locked$"
  artifact_arcane_deciphering_locked_desc:0 "$artifact_action_locked_desc$"
+
+ ancrel.10040.name:0 "特殊项目解锁"
+ ancrel.10040.desc:0 "我们的科学家开始了一个新的特殊项目，以探索先驱者更深处的秘密。"
 
  artifact_irassian_research:0 "伊瑞森的秘密"
  artifact_irassian_research_desc:0 "深入探究伊瑞森的秘密。"
@@ -571,7 +574,8 @@
  ##################
  lithoids_arc_site_minerals:0 "考古站点"
  lithoids_arc_site_minerals_desc:0 "对考古站点深入岩层的发掘使得行星上所有的矿物开采作业被迫中止。"
- 
+ evermore_science:0 "永恒科学"
+ evermore_joy:0 "永恒欢乐"
  drums_of_war:0 "战鼓"
  ether_drake_triumph:0 "以太龙兽凯旋式"
  worm_scales:0 "时虫之鳞"
@@ -599,7 +603,7 @@
  oracle_administration:0 "神媒"
  oracle_administration_desc:0 "神媒让帝国像一台膏好油的机器一样运作……当你给她膏了油后。"
  chosen_of_zarqlan:0 "扎克兰的选民"
- chosen_of_zarqlan_desc:0 "身为扎克兰的选民，我们可以安全地殖民圣地。"
+ chosen_of_zarqlan_desc:0 "作为扎克兰的选民，我们可以安全地殖民圣地。"
  the_memorex:0 "眠记霸王"
  the_memorex_desc:0 "眠记霸王增强学习项目能够在睡眠中培训人口，使之更符合帝国的需要，显著增加人口的产出。"
  opinion_destroyed_caravaneer_home:0 "摧毁了旅商之家"
@@ -677,7 +681,8 @@
  ##################
  d_archaeological_site:0 "£blocker£考古站点"
  d_archaeological_site_desc:0 "这块区域有正在发掘的考古发现。"
-
+ d_sentinels:0 "£blocker£ 哨站"
+ d_sentinels_desc:1 "哨兵守卫着这片土地。或许不要打扰他们比较好。"
  d_hab_gas_1:0 "奇异瓦斯矿藏"
  d_hab_gas_1_desc:0 "该栖所建造在一处可开采的奇异瓦斯气藏附近。"
  d_hab_gas_2:0 "$d_hab_gas_1$"
@@ -732,7 +737,10 @@
  d_hab_dark_matter_3_desc:0 "$d_hab_dark_matter_1_desc$"
  d_hab_living_metal_1:0 "活金属矿藏"
  d_hab_living_metal_1_desc:0 "该栖所建造在一处可开采的活金属矿藏附近。"
-
+ d_sentinels_monument:0 "$sentinels_planet_modifier$"
+ d_sentinels_monument_desc:0 "$sentinels_planet_modifier$"
+ d_sentinels_metal:0 "哨兵"
+ d_sentinels_metal_desc:0 "九个由一种不寻常的合金制成的巨型自动机器人的残片提供了充裕的§H活体金属§!供应。"
  ancrel.10001.name:0 "$tech_arcane_deciphering$"
  ancrel.10001.desc:0 "对文物的研究加快了我们的一些科研进度。"
  ancrel.10002.name:0 "$tech_arcane_deciphering$"
@@ -788,15 +796,17 @@
  STEAL_ALL_ARTIFACT:0 "$THIEF|Y$从$VICTIM|Y$处窃取了§Y所有§!文物"
  STEAL_RANDOM_ARTIFACT:0 "$THIEF|Y$从$VICTIM|Y$处窃取了§Y一件随机§!文物"
  STEAL_ONE_ARTIFACT:0 "$THIEF|Y$从$VICTIM|Y$处窃取了文物“$ARTIFACT|Y$”"
-
+ 
  IS_LAST_LOST_RELIC:0 "$RELIC|Y$是$COUNTRY|Y$最近一件丢失的遗珍"
  IS_NOT_LAST_LOST_RELIC:0 "$RELIC|Y$非$COUNTRY|Y$最近一件丢失的遗珍"
  IS_LAST_RECEIVED_RELIC:0 "$RELIC|Y$是$COUNTRY|Y$最近一件接收的遗珍"
  IS_NOT_LAST_RECEIVED_RELIC:0 "$RELIC|Y$非$COUNTRY|Y$最近一件接收的遗珍"
-
+ 
  Herald_repair:0 "伟大翻修"
  Herald_repair_TITLE:0 "伟大翻修"
  Herald_repair_DESC:0 "虽然伟大先驱号无疑是一艘强大的军舰，但它未发挥其全部潜力。缺乏维护，也累积了轻微损害，再加上我们还不完全了解它这一事实。这一切都降低了它的作战能力。只有对它的系统进行全面检修，全面了解这艘军舰，才能使它恢复到全力运行的状态。"
  herald_75:0 "先驱号已损坏"
  herald_50:0 "$herald_75$"
  herald_25:0 "$herald_75$"
+ NAME_Sentinels:0 "哨兵"
+ sentinel_army:0 "Sentinels"

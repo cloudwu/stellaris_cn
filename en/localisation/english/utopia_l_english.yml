@@ -30,9 +30,9 @@
  ring_world_2_DESC:0 "This skeletal frame section makes up roughly one quarter of the unfinished Ring World's total surface area. Work on the smaller habitable section has not yet been completed."
  ring_world_3_intermediate:0 "Completed Ring World Section"
  ring_world_3_intermediate_DESC:0 "A fully functional habitable Ring World section, complete with an active biosphere, that is ready for settlement."
- 
+
  habitat_0_MEGASTRUCTURE_DETAILS:1 "An §Y$pc_habitat$§! is a theoretically self-sustaining space station designed for permanent habitation."
- habitat_0_CONSTRUCTION_INFO_DELAYED:3 "A Habitat can only house habitat-specific £building£ §YBuildings§!."
+ habitat_0_CONSTRUCTION_INFO_DELAYED:4 "A Habitat can only house habitat-specific £building£ §YBuildings§!. If built in orbit over a planet with £minerals£ §YMineral§!, £energy£ §YEnergy§!, or £physics£ £society£ £engineering£ §YResearch§! deposits, special £district£ §YDistricts§! will be available."
  habitat_0:0 "Habitat"
  habitat_0_DESC:0 "A Habitation Station orbiting an uninhabitable planet, capable of housing a number of §HPops§! and §HBuildings§! away from the surface."
 
@@ -59,13 +59,13 @@
  allow_machine_worlds:2 "§HUnlocks Terraforming Option:§! Machine World"
  describe_machine_worlds:6 "§YMachine Worlds§! are a special planet class that is uninhabitable for most organics, but are not limited by Planetary Features in how many £district£ §YGenerator§! and §YMining Districts§! they can support. £pop£ §YPops§! living on §YMachine Worlds§! have their §YResource Output§! increased by §G+10%§! and §YHousing Usage§! reduced by §G10%§!. Any existing £district£ §YAgriculture Districts§! on the planet will be destroyed."
  allow_hive_worlds:0 "§HUnlocks Terraforming Option:§! Hive World"
- describe_hive_worlds:0 "§YHive Worlds§! are a special planet class that is uninhabitable for non-Hive Minded Pops, but are not limited by Planetary Features in how many £district£ §YGenerator§!, §YMining§! and §YAgriculture Districts§! they can support. £pop£ §YPops§! living on §YHive Worlds§! have their §YResource Output§! increased by §G+10%§!."
- 
+ describe_hive_worlds:1 "§YHive Worlds§! are a special planet class that is uninhabitable for non-Hive Minded Pops, but are not limited by Planetary Features in how many £district£ §YGenerator§!, §YMining§! and §YAgriculture Districts§! they can support, and §YHive Districts§! are more efficient. £pop£ §YPops§! living on §YHive Worlds§! have their §YResource Output§! increased by §G+10%§!."
+
  ALLOW_PSI_CORPS:0 "The §H$building_psi_corps$§! building is now available."
  ALLOW_PSI_ARMIES:0 "§H$psionic_army_plural$§! can now be recruited."
- 
+
  dyson_sphere_0_MEGASTRUCTURE_DETAILS:1 "A §Y$dyson_sphere_5$§! fully envelops a given star, converting all solar output directly to £energy£ Energy Credits."
- dyson_sphere_0_CONSTRUCTION_INFO_DELAYED:3 "A $dyson_sphere_5$ will blot out the sun, turning all planets in the system into Barren or Frozen Worlds."
+ dyson_sphere_0_CONSTRUCTION_INFO_DELAYED:4 "A $dyson_sphere_5$ will blot out the sun, turning all planets in the system into Barren or Frozen Worlds.\n\nAny Terraforming Candidates in the system will be ruined."
  dyson_sphere_0:0 "Dyson Sphere Site"
  dyson_sphere_0_DESC:0 "The construction site station serves as the base for the future construction of a Dyson Sphere."
  dyson_sphere_1:0 "Dyson Sphere Frame"
@@ -78,7 +78,7 @@
  dyson_sphere_4_DESC:0 "A partially operational Dyson Sphere - §Y75%§! energy generation efficiency."
  dyson_sphere_5:0 "Dyson Sphere"
  dyson_sphere_5_DESC:0 "A fully operational Dyson Sphere - §G100%§! energy generation efficiency."
- 
+
  spy_orb_0_MEGASTRUCTURE_DETAILS:1 "The stages of the §Y$spy_orb_4$§! gradually expand sensor range, eventually covering the entire galaxy."
  spy_orb_0_CONSTRUCTION_INFO_DELAYED:3 "The stages of the $spy_orb_4$ gradually expand sensor range, eventually covering the entire galaxy."
  spy_orb_0:0 "Sentry Array Site"
@@ -91,22 +91,22 @@
  spy_orb_3_DESC:0 "Massive, static antennas provide an unprecedented boost to raw coverage."
  spy_orb_4:0 "Sentry Array"
  spy_orb_4_DESC:0 "A complete Sentry Array extends sensor range to cover the entire galaxy."
- 
+
  #utopia.2001.desc:0 "Word has reached us that the [From.GetName] has undertaken a construction project of monumental proportions in the SYSTEM system. They are building a massive Ring World around the system's primary, and as a first step they have converted the matter of all nearby planetary bodies into the initial metal skeleton of the megastructure.\n\nGiven the staggering size of the project and the immense challenges inherent in creating new habitats and ecosystems from scratch, it will likely be some time before the Ring World is completed."
- 
+
  15_HOSTILE_GREETING:0 "The contempt our [Root.GetRulerTitle] feels towards you is shared by our entire nation, [From.GetSpeciesName]. Indeed, my [Root.GetSpeciesOrganName] churns at the mere sight of you."
  16_HOSTILE_GREETING:0 "How little you must accomplish in your chaotic, unstructured society, [From.GetSpeciesName]. I suppose it is foolish to believe a culture such as yours could ever produce a great leader like our [Root.GetRulerTitle]."
  15_FRIENDLY_GREETING:0 "You have made quite an impression on the [Root.GetRulerTitle], [From.GetSpeciesName]. You are friends of the [Root.GetName]."
- 
+
  action.1.f:0 "§E[Root.GetRulerTitle] [Root.GetRulerName] greets you, [contact_speaker.GetSpeciesNamePlural].§!"
  action.1.g:0 "§EWe serve [Root.GetRulerTitle] [Root.GetRulerName], [contact_speaker.GetSpeciesNamePlural].§!"
  action.1.i:0 "§EWe pursue true equality - do not stand in our way.§!"
  action.1.ad:0 "§EYour kind will not threaten our [Root.GetRulerTitle].§!"
  action.1.ar:1 "§E[Root.GetRulerName] speaks on behalf of the [Root.GetAdj] people.§!"
- 
+
  anomaly.168.d.tooltip:2 "Start a religious renaissance, shifting empire ethics towards §YSpiritualist§!."
  precursor.2200.desc.b:0 "After surveying the immense ring world found in the §Y[From.GetStarName]§! system, Science Officer §Y[Root.GetLeaderName]§! has reported that it is similar in many ways to our own ring designs, despite its age.\n\nThere is one critical difference, however - the ring sections appear to have been constructed partly out of a new resource that is unknown to us. Initial reports describe it as some kind of "living metal." Whatever it is, it should be studied more closely."
- 
+
  requires_planets_for_material:0 "$TRIGGER_FAIL$Cannot build in systems without planetary bodies for material."
  requires_no_existing_megastructure:1 "$TRIGGER_FAIL$Cannot build due to existing Megastructure."
  requires_no_existing_gateway:0 "$TRIGGER_FAIL$Cannot build due to existing Gateway."
@@ -129,10 +129,11 @@
  requires_no_black_hole_neutron_star_pulsar:0 "$TRIGGER_FAIL$Cannot build Dyson Spheres around Black Holes, Neutron Stars or Pulsars."
  requires_no_anomaly:1 "$TRIGGER_FAIL$Cannot build on planets that have unresearched anomalies discovered by us or any other Empire."
  requires_not_ring_world:0 "$TRIGGER_FAIL$Cannot build on Ring Worlds."
- 
+ requires_barren_planet:1 "$TRIGGER_FAIL$Can only build on Barren worlds."
+
  progress.3.desc_08:0 "Our colony ship has gently touched down on the sprawling savanna that covers most of §Y[Root.GetName]§!. The shimmering air is dry yet pleasant, and a large herd of docile herbivores can be seen observing from a distance as our first landing site is established.\n\nThe ship has been permanently converted into the administrative headquarters of the new settlement, and its reactor core is in the process of being removed so that it may serve as the colony's temporary power source.\n\nHundreds of small tents and prefab shelters have sprung up around the former starship's massive hull as colonists begin to disembark in large numbers - the first [Root.Owner.GetSpeciesName] city on an alien world."
  progress.3.desc_09:0 "Our colony ship managed, with surprising grace, to maneuver between the massive peaks that are so prevalent in the jagged landscape of §Y[Root.GetName]§!. It touched down in a sheltered valley that will serve as an ideal first landing site.\n\nThe ship has been permanently converted into the administrative headquarters of the new settlement, and its reactor core is in the process of being removed so that it may serve as the colony's temporary power source.\n\nHundreds of small tents and prefab shelters have sprung up around the former starship's massive hull as colonists begin to disembark in large numbers - the first [Root.Owner.GetSpeciesName] city on an alien world."
- 
+
  fleet_maneuvers_recruitment:0 "Fleet Recruitment Drive"
  fleet_maneuvers_recruitment_desc:0 "§LThe recent naval drills have spurred a great deal of interest in the fleet among the public. We have no shortage of new recruits, which means that we will have to spend less resources to find crews for our starships.§!"
  fleet_maneuvers:0 "Fleet Maneuvers"
@@ -141,20 +142,20 @@
  maneuvers_canceled_desc:0 "§LLarge segments of our military leadership are disgruntled due to the recent cancellation of our planned fleet maneuvers. They feel that it is an unacceptable sign of weakness that our neighbors are sure to take advantage of.§!"
  maneuvers_no_protest:0 "Did Not Protest Maneuvers"
  maneuvers_no_protest_desc:0 "§LA large segment of our military is furious over the fact that we failed to diplomatically object to the massive foreign fleet exercise that recently took place close to our borders.§!"
- 
+
  standardized_colony_ships:0 "Standardized Colony Ships"
- 
+
  opinion_maneuvers_hardline:0 "Fleet Maneuvers"
  opinion_maneuvers_conciliatory:0 "$opinion_maneuvers_hardline$"
  opinion_maneuvers_canceled:0 "Canceled Fleet Maneuvers"
- 
+
  FLESH_IS_WEAK_PROJECT:0 "The Flesh is Weak"
  FLESH_IS_WEAK_PROJECT_DESC:0 "It is a fool who persists in clinging to a worn, decrepit instrument when a more efficient alternative presents itself.\n\nWe now possess the technology to make cybernetic implants available to the population of the [Root.GetName] at large. Our citizens will be stronger, faster and more intelligent as limbs and organs are replaced with improved mechanical versions."
  SYNTHETIC_EVOLUTION_PROJECT:0 "Synthetic Evolution"
  SYNTHETIC_EVOLUTION_PROJECT_DESC:0 "It is time to leave our flawed organic vessels behind and embrace immortality. We must prepare advanced synthetic avatars for our entire population, and then begin the process of consciousness transfers."
- 
+
  TRAIT_IMPROVES_LEADERS:0 "§GLeaders from this species have additional traits and bonuses§!"
- 
+
  trait_cybernetic:0 "Cybernetic"
  trait_cybernetic_desc:0 "§LThis species has embraced cybernetics on such a scale that its members may be considered cyborgs. They routinely replace their organic body parts with more advanced mechanical versions.§!\n"
  trait_latent_psionic:0 "Latent Psionic"
@@ -174,7 +175,7 @@
  leader_trait_scientist_erudite_desc:0 "This leader has a vastly enhanced intellect, improving their abilities as a scientist."
  leader_trait_ruler_erudite:0 "$leader_trait_admiral_erudite$"
  leader_trait_ruler_erudite_desc:0 "This leader has a vastly enhanced intellect, improving their ability to rule."
- 
+
  leader_trait_admiral_cyborg:0 "Cyborg"
  leader_trait_admiral_cyborg_desc:0 "This leader is equipped with military-grade cybernetic implants that can interface directly with fleet command and control systems."
  leader_trait_general_cyborg:0 "$leader_trait_admiral_cyborg$"
@@ -185,7 +186,7 @@
  leader_trait_scientist_cyborg_desc:0 "This leader has been heavily augmented with cybernetic implants, which, among other things, provide real-time neural access to all major research databases."
  leader_trait_ruler_cyborg:0 "$leader_trait_admiral_cyborg$"
  leader_trait_ruler_cyborg_desc:0 "This leader has been heavily augmented with cybernetic implants that have far greater service lives than the obsolescent organic body parts they replaced."
- 
+
  leader_trait_admiral_synthetic:0 "Synthetic"
  leader_trait_admiral_synthetic_desc:0 "This synthetic leader is equipped with military-grade upgrades that can interface directly with fleet command and control systems."
  leader_trait_general_synthetic:0 "$leader_trait_admiral_synthetic$"
@@ -278,7 +279,7 @@
  utopia.2013.name:0 "Science Nexus Restored"
  utopia.2013.desc:0 "The abandoned Science Nexus near [From.GetName] has been fully repaired and staffed by the brightest minds of the [Root.GetName]. As was no doubt its original purpose, the megastructure will now be put to use in answering the scientific questions of our time."
  utopia.2014.name:0 "Ruined Sentry Array"
- utopia.2014.desc:0 "The [sentry_system.GetName] system at some point in galactic history evidently supported a vast orbital infrastructure of unusual proportions that has since been systematically demolished. There are large concentrations of debris in geostationary orbits around most planetary bodies in the system, including several massive space station hulks.\n\nThe largest of these hulks is a colossal §HSentry Array§!. Our initial scans suggest that when it was operational, this array was powerful enough to provide real-time sensor coverage over the entire galaxy."
+ utopia.2014.desc:1 "At some point in galactic history, the [sentry_system.GetName] system evidently supported a vast orbital infrastructure of unusual proportions which has since been systematically demolished. There are large concentrations of debris in geostationary orbits around most of the planetary bodies in this system, including several massive space station hulks.\n\nThe largest of these is a colossal §HSentry Array§!. Our initial scans suggest that when it was operational, this array was powerful enough to provide real-time sensor coverage over the entire galaxy."
  utopia.2014.a:0 "We already have one of those."
  utopia.2015.name:0 "Sentry Array Restored"
  utopia.2015.desc:0 "It wasn't easy, but our engineers have managed to restore the ruined Sentry Array in the [From.GetName] system. The other station hulks and the debris that surrounded them were converted into building material during the restoration effort.\n\nFor the first time in eons, the array now hums with energy. Its powerful antennas can once again see clear to the other side of the galaxy."

@@ -2,7 +2,7 @@
 
  aianom.0.name:0 "AI 异常调试信息"
  aianom.0.desc:0 "§H[Root.GetName]§! 已生成：\n\n£minerals£ （总额）§Y[Root.GetT1LumpMinerals]§! 1 级，§Y[Root.GetT2LumpMinerals]§! 2 级，§Y[Root.GetT3LumpMinerals]§! 3 级，§Y[Root.GetT4LumpMinerals]§! 4 级。\n£energy£ （总额） §Y[Root.GetT1LumpEnergy]§! 1 级， §Y[Root.GetT2LumpEnergy]§! 2 级， §Y[Root.GetT3LumpEnergy]§! 3 级， §Y[Root.GetT4LumpEnergy]§! 4 级。\n£physics£ （储备） §Y[Root.GetT1LumpPhysics]§! 1 级， §Y[Root.GetT2LumpPhysics]§! 2 级， §Y[Root.GetT3LumpPhysics]§! 3 级， §Y[Root.GetT4LumpPhysics]§! 4 级。\n£society£ （储备） §Y[Root.GetT1LumpSociety]§! 1 级， §Y[Root.GetT2LumpSociety]§! 2 级， §Y[Root.GetT3LumpSociety]§! 3 级， §Y[Root.GetT4LumpSociety]§! 4 级。\n£engineering£ （储备） §Y[Root.GetT1LumpEngineering]§! 1 级， §Y[Root.GetT2LumpEngineering]§! 2 级， §Y[Root.GetT3LumpEngineering]§! 3 级， §Y[Root.GetT4LumpEngineering]§! 4 级。\n\n£minerals£ （储备）§Y[Root.GetT1DepMinerals]§! 1 级， §Y[Root.GetT2DepMinerals]§! 2 级， §Y[Root.GetT3DepMinerals]§! 3 级， §Y[Root.GetT4DepMinerals]§! 4 级。\n£energy£ （储备）§Y[Root.GetT1DepEnergy]§! 1 级， §Y[Root.GetT2DepEnergy]§! 2 级， §Y[Root.GetT3DepEnergy]§! 3 级， §Y[Root.GetT4DepEnergy]§! 4 级。\n£physics£ （储备）§Y[Root.GetT1DepPhysics]§! 1 级， §Y[Root.GetT2DepPhysics]§! 2 级， §Y[Root.GetT3DepPhysics]§! 3 级， §Y[Root.GetT4DepPhysics]§! 4 级。\n£society£  （储备) §Y[Root.GetT1DepSociety]§! 1 级， §Y[Root.GetT2DepSociety]§! 2 级， §Y[Root.GetT3DepSociety]§! 3 级， §Y[Root.GetT4DepSociety]§! 4 级。\n£engineering£  （储备）§Y[Root.GetT1DepEngineering]§! 1 级， §Y[Root.GetT2DepEngineering]§! 2 级， §Y[Root.GetT3DepEngineering]§! 3 级， §Y[Root.GetT4DepEngineering]§! 4 级。"
- 
+
  AIANOM_LUMP_CAT:0 "轨道碎片"
  AIANOM_LUMP_CAT_desc:0 "传感器在环[Root.GetName]轨道上记录了可能有趣的实体。"
  AIANOM_MININGDEPO_CAT:0 "地表回应"
@@ -117,11 +117,11 @@
  DISTAR_SIGNAL_CAT_DESC:1 "传感器检测到[From.GetStarName]星系内存在未知的干扰模式。"
  DISTAR_PUZZLE_CAT:1 "无法扫描的东西"
  DISTAR_PUZZLE_CAT_DESC:1 "[From.GetStarName]星系的小行星带中[From.GetName]星体附近有某个东西能将我们的传感信号反射回来。通过视觉观察，我们已经辨识出这个东西外形为多面体。但由于缺乏扫描结果，这个多面体的其他信息我们完全不知道。"
- 
+
  ####################################
  # Anomaly Events
  ####################################
- 
+
  distar.1.name:0 "舰骸已识别"
  distar.1.desc:0 "[Root.GetName]船组报告称[From.GetName]船骸似乎是意外的地磁太阳风暴造成的。补给舰丧失了生命维系系统，彻底损坏无法运转。补给舰一直在太空漂流，直到落入[From.GetName]的引力井。无人生还。\n\n这艘补给舰的船舱存放了大量的矿物。但是 [Root.GetName]船长警告这艘舰采用§Y[wreckage_owner.GetAdj]§!设计。\n\n它搭载的矿物很有可能属于§Y[wreckage_owner.GetName]§!。我们如果占有了这些货物，他们可能会不高兴。"
  distar.1.a:0 "我们需要这些矿物。"
@@ -136,7 +136,7 @@
  distar.3.name:0 "舰骸货物归还"
  distar.3.desc:0 "[Root.GetSpeciesNamePlural]！我们已经收到了我们坠落补给舰的货物的消息。我们非常感谢您花时间收回它们，而不需要[wreckage_owner.GetAdj]介入。"
  distar.3.a:0 "我们的荣幸，[wreckage_owner.GetSpeciesNamePlural]。"
- 
+
  distar.6.name:0 "时间冻结"
  distar.6.desc:0 "[Root.GetName]船组在[From.GetName]上发现了值得关注的工业时代文明的遗存。调查表明[From.GetName]曾经维持了数百万年的大气层，直到来自恒星[From.GetStarName]不稳定表面的巨型超耀发导致失控的电离化，行星大气被消耗一空。\n\n缺少大气，[From.GetName]上的渺无生机的城市被冻结了数千年。这是一座沉默的纪念碑，纪念着曾发生的大规模灭绝。\n\n科学官[Root.GetLeaderName]警告[From.GetStarName]星系内的任何殖民地均可能遭受恒星湍流的冲击。"
  distar.7.name:0 "超耀发"
@@ -148,13 +148,13 @@
  distar.9.desc:0 "行星管理部门高兴地报告称，[Root.GetName]周围超耀发护盾矩阵的开发取得了圆满成功。我们的殖民者不仅受护盾保护安全避免了有害的电离辐射，而且目睹了因为恒星风与新护盾的相互作用而呈现的壮丽极光秀。"
  distar.10.name:0 "超耀发袭击[fromfrom.GetName]"
  distar.10.desc:0 "来自[fromfrom.GetStarName]的超耀发已经侵袭[fromfrom.GetName]的高层大气，我们未能及时开发出适当的护盾矩阵。\n\n电离化的等离子体和磁暴导致行星电子扰乱，干扰了能量生产，民众暴露在辐射中。效果会持续一段时间。"
- 
+
  distar.15.name:0 "活跃光谱"
  distar.15.desc:0 "[From.GetName]吸积盘的气体组成似乎是造成黑洞呈现五彩色差的原因。盘表面折射并反射光线，在黑暗中产生彩虹的幻影。\n\n虽然彩虹本身是种光学幻觉，但造成它的条件不是。[From.GetName]的吸积盘非常活跃——一个静电放电的真正温床。"
- 
+
  distar.20.name:0 "全息图"
  distar.20.desc:0 "对[From.GetName]星系内不明舰队特征的调查有了意外的发现。实际上，这支舰队并非在黑洞的安全轨道上，而是在跨越事件视界。\n\n科学官[Root.GetLeaderName]推测舰队在数世纪前接近[From.GetName]的事件视界，因此时间膨胀使它们的图像可以在表面上侦测到。\n\n舰队的行动是有意为之，还是某个不幸事故的结果，我们可能永远无法知道。它们的特征与任何记录在案的文明皆不匹配。"
- 
+
  distar.25.name:0 "简陋机器人"
  distar.25.desc:0 "研究[From.GetName]地表时，[Root.GetName]船组发现了早期太空时代文明的废墟。虽然该文明的居民都没有活下来，但他们建造的简陋机器人仍然居住在这颗行星上。\n\n这些机器人仍然执行他们的任务，不知疲倦地修复他们早已死亡的制造者摇摇欲坠的基础设施。\n\n任何未来的殖民者都能利用这古代机器人劳动力。不提别的，他们已经证明了自己的韧性。"
  distar.25.a.tooltip:0 "在[From.GetName]上发现了§B3个£pops£ 机器人口§!"
@@ -205,16 +205,16 @@
  distar.35.desc:0 "悲剧袭击了负责分离[Root.GetName]上的异常举止背后原因的研究团队。尽管采取了大量应对措施，但该团队的几名成员开始表现出这一问题典型的侵犯行为。在随后的混乱中，几名科学家被杀。\n\n然而，还有一线希望。我们发现这种举止失常流行的原因具有传染性：一种呼吸道病毒引起的传染病，影响感染者的基础神经系统。\n\n剩下的团队成员正在拼命开发疫苗。"
  distar.35.a:0 "争分夺秒！"
  distar.36.name:0 "激怒病毒疫苗研制成功"
- distar.36.desc:0 "治疗影响[Root.GetName]上人口的疫情的疫苗开发工作已经圆满结束。疫苗的分发已经开始，[Root.GetName]上的生命应该很快就会恢复正常。\n\n研究表明，这次动荡背后的反转录病毒似乎出现在数百万年前的[Root.GetName]上。病毒在冰冻生物质中休眠，行星冰盖融化时重新出现。\n\n数个世纪前，很可能是这病毒导致了古代机器人制造者的灭亡。幸运的是，[Owner.GetName]具有更先进的病毒污染处理能力。这种疫苗的开发甚至给医学领域带来了一些进步。"
- 
+ distar.36.desc:0 "用于医治 [Root.GetName] 上住民的反常行为的疫苗开发成功，现在我们已经开始分发疫苗了， [Root.GetName] 上人民的生活很快就会恢复正常。\n\n研究发现造成这次混乱的逆转录酶病毒是于数百万年前在 [Root.GetName] 上进化的，然后一直被冻结在生物质之中，后来星球的冰土溶解了，病毒这才破土而出。\n\n那些初级机器人的创造者们很可能就是因为这种病毒而在数百年前灭绝，还好 [Owner.GetName] 对抗病毒感染的技术非常高，这次疫苗的研发也让医学技术往前迈进了一步。"
+
  distar.40.name:0 "灰胶"
  distar.40.desc:0 "经过详细分析，科学官[Root.GetLeaderName]发现[From.GetName]表面覆盖的奇怪金属物质实际上包含数十亿亿纳米机器人！这些纳米机器人是自我复制的微小机器，可能是由逝去文明为未知目的而创造的。\n\n这种纳米机器人污泥的体积和密度非常显着，为地下的行星增加了数十亿吨的质量。看起来这些微小的自我复制者在过去的某个时候进入了失控增殖的状态，吞没了整颗行星及其上的一切。\n\n研究纳米机器人时，科学家获得了一些令人兴奋的新发现，这无疑将有助于我们自己的研究。"
- 
+
  distar.45.name:0 "引力测量异常"
  distar.45.desc:0 "在研究[From.GetName]周围的诡异读数时，[Root.GetName]船组发现整个星系的引力数据位于极高水平。科学官[Root.GetLeaderName]怀疑[From.GetName]星门正以某种方式干扰我们的传感器数据，或者对星系内无法查明的质量负责。\n\n对星门更详细的研究可能会带来更多见解。"
  distar.46.name:0 "暗流"
  distar.46.desc:0 "对[From.GetStarName]星门的检查进展不顺。由于传感器记录的引力影响数量级超出预期值，官员[Root.GetLeaderName]追寻源头到达废弃时空管道的正中心。他们在那的发现似乎已经改变了他们。\n\n在返回后的数日里，[Root.GetLeaderName]提到了在远离任何恒星的虚空中有巨大、难以描述的物质结构。因其强大的引力作用，[Root.GetLeaderName]声称我们的银河无助、不可避免地飘向那里。\n\n任务已经使团队动摇了，更不用提，事实上，在管道中的经历后不久，异常读数突然停止。"
- 
+
  distar.50.name:0 "迷路的太空变形虫"
  distar.50.desc:0 "[Root.GetName]查明了[From.GetName]高层大气中不停移动的生物。令人惊讶的是，云层中并未藏着什么飞船，而是一只年幼的太空变形虫。\n\n这只变形虫的母亲不知在何处，它是如何与母亲和同类分开的也无从得知。但可以肯定的是，它似乎把 [Root.GetName]当成了母亲。船组完成对[From.GetName]的勘察后，他们发现这只变形虫在跟着他们，而且根本无法被甩掉。[Root.GetLeaderName]被这只年幼的变形虫的决心感动了。\n\n我们的科学官建议让这只幼虫跟随飞船，我们肯定能趁机更多地了解太空变形虫。"
  distar.50.desc.first_enc:0 "[Root.GetName]查明了[From.GetName]高层大气中不停移动的生物。令人惊讶的是，云层中并未藏着什么飞船，而是一种温顺的外星生物。这只生物尽管体型庞大，但似乎还未成年。我们的船组给它取名为太空变形虫。\n\n它是如何与同类分开的，我们无从得知。但可以肯定的是，它似乎把[Root.GetName]当成了母亲。船组完成对[From.GetName]的勘察后，他们发现这只幼虫在跟着他们，而且根本无法被甩掉。[Root.GetLeaderName]被这只年幼的变形虫的决心感动了。\n\n我们的科学官建议让这只幼虫跟随飞船，我们肯定能趁机更多地了解这种生物。"
@@ -250,7 +250,7 @@
  distar.54.name:0 "年幼变形虫逃跑了"
  distar.54.desc:0 "在我们还未下定决心抓住这只幼虫解剖时，它似乎逃跑了。传感器报告数小时前这只变形虫幼虫启动了某种生物超空间引擎，从我们的传感网络中消失了。"
  distar.55.name:0 "取什么名字呢？"
- distar.55.desc:0 "吉祥物怎么能没有名字呢？我们必须给我们的变形虫朋友取个配得上的绰号。"
+ distar.55.desc:0 "我们的精神象征怎么可能没有名字呢？我们必须得给我们的变形虫盟友配个响当当的名字才行。"
  distar.55.a:0 "$NAME_Blitz$。"
  distar.55.b:0 "$NAME_Zero$。"
  distar.55.c:0 "$NAME_Deva$。"
@@ -292,7 +292,7 @@
  distar.304.name:0 "百岁老虫"
  distar.304.desc:0 "我们的舰队司令正向[Root.Capital.GetName]广播一条激动人心的消息。我们收养的太空变形虫，[lost_amoeba_centenarian_fleet.GetName]，已经整整一百岁了。\n\n虽然已经是期颐之年，但岁月的流逝似乎对变形虫没那么大影响。事实上，舰队报告说[lost_amoeba_centenarian_fleet.GetName]在战场上成长得越来越强大。[lost_amoeba_centenarian_fleet.GetName]已经成长为装备精湛的战舰也难以匹敌的战力。只要一看见她那汹涌澎湃的鞭毛进入星系，[Root.GetSpeciesAdj]士气便会大振。"
  distar.304.a.tooltip:0 "[lost_amoeba_centenarian_fleet.GetName]领悟出新的战斗技能！"
- 
+
  distar.60.name:0 "失明的命运"
  distar.60.desc:0 "[Root.GetName]船组在环[From.GetName]低轨道上记录的受辐射碎片的确是空间飞行器的残骸。飞船设计非常独特，与任何记载的设计均不同。\n\n我们从飞船的受损计算机中提取了一些数据，数据使用了我们从未见过的一种外星语言——我们也未能成功翻译。\n\n通过研究残骸，科学官[Root.GetLeaderName]主张这个被称作“宿命号”的飞行器在退出超光速模式时由于过于接近[From.GetName]喷射的伽马射线而导致了导航异常。飞船主体因辐射而解体，无人生还。"
  distar.61.name:0 "既视感"
@@ -320,7 +320,7 @@
  distar.68.name:0 "衔尾蛇"
  distar.68.desc:0 "星系传感器表明，河外探险船宿命号在[ouroboros_system.GetName]星系外围突然退出了超光速航行，与轨道彗星正面碰撞！这次碰撞是灾难性的，足以杀死船上所有人，并将剩下的船骸送往[ouroboros_system.GetName]脉冲星。\n\n我们分析得出结论，宿命号的负质量超光速引擎无法准确预测他们将于何地（或何时）退出亚空间。两个船骸现在都环绕着[ouroboros_system.GetName]脉冲星。"
  distar.68.a:0 "可能这是不可避免的。"
- 
+
  distar.70.name:0 "冷冻中的克隆体"
  distar.70.desc:0 "在环形世界[From.GetName]的储藏区废墟深处发现的浑浊大缸内装有数千个冷冻的外星生物。其中一些还活着，而大部分则由于冷冻室故障而不同程度地分解为有机污泥。\n\n值得注意的是，所有这些外星生物都完全相同：在对残留物分析后发现他们是基因克隆体。科学官[Root.GetLeaderName]建议我们尝试解冻那些活着的克隆体——不过他们的环形世界目前缺少生命维持系统，我们必须为他们提供一些生活场地。"
  distar.70.a:0 "将他们解冻。这太有意思了。"
@@ -339,7 +339,7 @@
  distar.71.pop.phile:0 "我们张开双臂欢迎他们！"
  distar.71.pop.swarm:0 "他们将成为我们[Root.Owner.GetSpeciesSpawnNamePlural]的美味食物。"
  distar.71.swarm.alt.tooltip:0 "将克隆体加工为营养物质。"
- distar.71.pop.servi:0 "他们不再需要工作。"
+ distar.71.pop.servi:0 "他们不需要再工作了。"
  distar.71.servi.alt.tooltip:0 "§B1£pops£ 冷冻克隆体人口§!进入[pop_planet.GetName]上的避难所。"
  distar.71.pop.assim:0 "他们将被同化。"
  distar.72.name:0 "$distar.71.name$"
@@ -348,26 +348,26 @@
  distar.72.b:0 "解冻。他们可以为我们工作。"
  distar.72.b.servi:0 "解冻。我们会照料好他们。"
  distar.72.c:0 "把他们扔进太空。"
- 
+
  distar.75.name:0 "心中的秘密"
  distar.75.desc:0 "在那平凡的外表之下，[From.GetName]小行星核心中空，里面生长着极具工业价值的水晶——这是一个悬于群星中的巨型晶洞。\n\n按照科学官[Root.GetLeaderName]准备的特殊指令，日后的采矿平台可以从小行星内部小心地提取这些水晶。 "
  distar.75.yurantic.tooltip:0 "发现羽然水晶"
  distar.75.teldar.tooltip:0 "发现钛达尔水晶"
- 
+
  distar.80.name:0 "沉睡的巨兽"
  distar.80.desc:0 "[Root.GetLeaderName]报告称，[From.GetName]上的巨大结构实际上是一种不明外星生物的庞大尸体。该尸体不仅大到在[primitive_planet.GetName]肉眼可见，而且它似乎散发着大量神经化学物质，会对行星上的有机体生命形式产生神经学影响。"
  distar.82.name:0 "死亡之神"
- distar.82.desc:0 "在碾压了[From.From.GetName]上土著的原始抵抗后，一些当地居民的使节拜访了我们的军队。似乎从不知多少代以前，当地人就开始将他们月球上的庞大生物遗骸当作死亡之神崇拜。当地人相信有一天死亡之神会复生，转变为重生之神，为他们的人民开启繁荣的新时代。\n\n由于我们这些天外来客拥有远超他们理解能力的科技，许多当地人认为我们是他们死亡之神的先行官。"
+ distar.82.desc:0 "在 [From.From.GetName] 的原住民进行了一番疯狂而又原始的防御战之后，原住民派了几位大使来找我们谈判，在这数百年里，他们一直将星球月亮上的巨型生物残骸视为死亡之神，他们认为总有一天死亡之神会复活为重生之神并带领他们走向崭新的繁荣时代。\n\n由于我们的科技发达程度远超出他们的理解，因此许多原住民深信我们就是他们膜拜的死亡之神的使者。"
  distar.82.a:0 "这肯定对我们有利。"
  distar.82.b:0 "太荒谬了。我们不陪他们玩。"
  distar.82.c:0 "对，我们是神派来的。你们很快将加入他的行列。"
  distar.82.d:0 "把他们从我的行星上赶走！"
- 
+
  distar.85.name:0 "电子生命体"
- distar.85.desc:0 "科学官[Root.GetLeaderName]报告称，[From.GetName]两极间均为电子脉冲网状网络所覆盖。这网络对外部刺激有所回应：[Root.GetName]实验向表面发送低压脉冲，结果产生了一个亮波在网络中传播。网络看起来就像一块电路板。尤其值得注意的是，这些网络会自组织！次生脉冲表明“灯丝”以最初刺激[From.GetName]表面处为中心构成了一种新的模式。\n\n[Root.GetLeaderName]得出结论认为这个发现证实了[Root.Leader.GetHisHer]研究了很久的一个理论：生命几乎可以完全以电脉冲的形式存在，而不需要细胞或病毒结构。"
- 
+ distar.85.desc:1 "科研专员 [Root.GetLeaderName] 报告说 [From.GetName] 的两极之间被一个电子脉冲网络完全覆盖了。这个网络会对外界刺激做出反应：当 [Root.GetName] 向地面输送低电压脉冲时地表的网络会呈现波浪状的闪烁，就像电路板一样。更令人吃惊的是，网络还会自我重组！如果进行第二次脉冲测试就会发现网络组成模式发生了改变，网络的中心变为了第一次脉冲与 [From.GetName] 的地表的接触点。\n\n [Root.GetLeaderName] 认为这一实验说明 [Root.Leader.GetHisHer] 的理论是正确的：生命并不一定需要细胞结构或者病毒结构，生命完全能以电子脉冲的形式存在。"
+
  distar.90.name:0 "家的味道"
- distar.90.desc:0 "对[From.GetName]的近距离研究表明，这颗行星的主要化学成分其实与[Root.Owner.Capital.GetName]上浆果中发现的一种酯相同。在那里，当地人用它蒸馏酿酒已有数千年的历史。在[From.GetName]上富含的这种酯似乎来源于笼罩该星系的星云，星云中这种物质的含量数以亿计。\n\n科学官[Root.GetLeaderName]获取了一些酯的样本。经过严格的生物危害测试和取样测试，他将这种酯的气味和味道描述为在冷漠虚空中感受到一点点家的味道。[Root.GetName]船组建议用其制造著名的[Root.Owner.GetAdj]饮品的异域版本，它一定会在我们的公民中流行开来。"
+ distar.90.desc:0 "对 [From.GetName] 的进一步研究表明星球的原始化学成分与 [Root.Owner.Capital.GetName] 上的浆果中的酯是完全相同的，当地住民用这种浆果来酿酒已经长达数千年之久了。 [From.GetName] 上非常普遍的酯可能是来自于笼罩着整个星系的星云，那星云中含有数十亿个同样的物质。\n\n科研专员 [Root.GetLeaderName] 提取了几个酯的样本，在经过了一番严格的生化测试后，还亲口尝了一下，然后说这玩意如虚空一般冰凉且有家的味道。 [Root.GetName] 的船员认为这种有异星味道且知名度很高的 [Root.Owner.GetAdj] 饮料肯定会广受我们人民喜爱。"
  distar.90.a:0 "不可能。"
  distar.90.b:0 "很好的建议。摔杯庆祝！"
  distar.91.name:0 "异域的酯"
@@ -381,31 +381,31 @@
  distar.93.name:0 "翻译失真"
  distar.93.desc:0 "[Root.GetSpeciesName]，这什么意思？你们想用这肮脏的液体毒害我们？你难道认为我们可以随意被挑衅？\n\n升旗，扔掉所有这些作呕的货物，关闭频道！"
  distar.93.a:0 "错误！发生了通信失败。"
- 
+
  distar.95.name:0 "安抚共振"
  distar.95.desc:0 "在[From.GetName]上发现的特殊晶体拥有相当优异的特性。[Root.GetName]船组报告称他们发现对行星表面的拜访非常舒心，让他们在回轨时感到精神焕发、心平气和。很明显，水晶共振的频率对[Root.Owner.GetSpeciesNamePlural]有医学治疗作用。\n\n倘若有朝一日我们在[From.GetName]上定居，我们的人口肯定会享受临近这些共振矿物的生活。"
  distar.100.name:0 "有益的频率"
  distar.100.desc:0 "详细研究揭示[From.GetName]的磁场对轨道上的成员非常有吸引力，因为它具有独特的振荡频率。行星磁层的共振率碰巧会对[Root.Owner.GetAdj]神经网络产生聚焦效果。\n\n一旦定居[From.GetName]，行星地表上所有的[Root.Owner.GetSpeciesNamePlural]都会持续享受这种磁共振的好处。"
  distar.100.a:0 "信息已处理。"
- 
+
  distar.105.name:0 "外来入侵真菌"
  distar.105.desc:0 "经过对覆盖[From.GetName]整个生物圈的生长物深入研究和取样，[Root.GetLeaderName]报告称该生物不是行星本土的，而是来源不明的侵入性真菌生物。这种真菌以生物质为食，窒息了行星原有的植物并包裹了大地。\n\n该行星上的任何定居者都必须定期放火击退外来真菌——目前还不知道能否彻底根除这种真菌。"
- 
+
  distar.110.name:0 "白色地狱"
- distar.110.desc:0 "尽管[From.GetName]表面看似一片冰封，但由于它的运行轨道距离[From.GetStarName]过近，行星的地表温度高达几百度。通常情况下，这样的温度会使[From.GetName]表面的冰直接升华。然而，[From.GetName]超高密度的地核却让它的重力非同寻常，使得水仍以固态存在。从而诞生了这颗地狱般炎热的冰封行星。"
- 
+ distar.110.desc:0 "虽然外表看上去 [From.GetName] 的地表是一片冻土，但由于行星是围绕 [From.GetStarName] 旋转的，因此其地表温度高达数百度。按常理来说这么高的温度应该能溶解 [From.GetName] 地表的冰，但是由于星球的内核密度极高，产生的重力很强，导致星球上的水全部处于固态，因此导致行星地表布满了如火炉一般热的冰土。"
+
  distar.115.name:0 "重金属霜"
  distar.115.desc:0 "拥有炙热的表面温度和腐蚀性无机酸的大气，[From.GetName]的极端气候条件能够反射一定带宽的电磁辐射。重金属化合物在行星对流层中被加热，以气态形式上升到高海拔，于是迅速冷却、凝固并降回表面。简言之，[From.GetName]表面在下金属雪。"
- 
+
  distar.120.name:0 "水汪汪的坟墓"
  distar.120.desc:0 "远低于[From.GetName]碧水的大规模洞穴体系是曾广泛分布的疑似智慧外星生物留下的遗迹。在行星大部分水以极地冰盖形式存在的久远过去，这些陆栖类节肢动物在[From.GetName]表面建造了成千上万相互连接的“蚁丘”。然而，不断上升的行星温度注定要使繁衍了数千年的物种的栖息地成为他们水汪汪的坟墓。无人存活至今。"
- 
+
  distar.125.name:0 "杞人之忧"
  distar.125.desc:0 "环[From.GetName]轨道上的空间站曾是巨型粒子加速器，其尺度超出了我们的能力。一个外星国家曾使用这台加速器研究宇宙的真正本质。加速器的记录告诉我们外星人开始相信我们的宇宙存在于一个虚假的真空泡中——一种天生不稳定的能量状态，随时可能坍缩成真空。一旦有真空出现，它将催化整个宇宙以光速转化为最低能量态，以可观察但不可逃脱的速度摧毁一切。\n\n空间站日志表明外星人推断这一过程可能被极高能量浓缩触发——他们的巨型粒子加速器就能做到。他们决定放弃这项技术，回归[From.GetName]恩施的简单生活。随着时间的推移，他们成为现在在行星表面上发现的原始物种。"
- 
+
  distar.131.name:0 "旧日仇雠"
  distar.131.desc:0 "通过秘密获取一些原始人的遗体，科学官[Root.GetLeaderName]发现了一件有趣的事。[From.GetName]与[other_planet.GetName]上的外星人实际上是新近分化的同源物种。扫描过两颗行星上遗留下来的遗迹，[Root.GetName]船组得出结论称两个物种均起源于[other_planet.GetName]，在那里他们发展出早期太空时代文明。在殖民[From.GetName]一段时间后，他们的社会分裂了，新殖民地与母星间爆发了行星际核战争。\n\n在随之发生的灾难中，两颗行星都遭受了辐射尘和接踵而来的核冬天的严重破坏，居民跌回青铜时代。"
- 
+
  distar.135.name:0 "拾荒者"
  distar.135.desc:0 "[Root.GetStarName]星系是一片庞大的机械残骸坟场。数不清的废弃船骸环绕着恒星。一条条的油料带和液冷剂带，像鬼魂一样在我们的传感器上频繁出没；嘎吱作响的空间站残壳与破碎行星的残体在环绕恒星的轨道上相撞。\n\n一个难以置信的构造体在坟场中央晃动。它貌似是个巨大的机器人，比我们最宏伟的战列舰还要大，由上千条沉船的碎片和废料拼凑而成。[Root.GetName]报告这个拾荒机器人带着明确目的在残骸区中筛选，搜寻有用的部件添加到它层层补丁的构造上。\n\n显然，这里曾经发生过一次天文级别的战斗。但究竟拾荒者是战斗唯一的幸存者，还是来自某个遥远国度的废品猎人仍不得而知。我们应该谨慎行事，因为这个构造体配备着数十艘战舰的重炮。"
  distar.137.name:0 "拾荒者的末日"
@@ -413,19 +413,19 @@
  distar.137.a:0 "分析残骸。"
  distar.137.paci:0 "喜忧参半的胜利。看看可以从残骸里学到什么。"
  distar.137.tooltip:0 "从下列科技中获得其中两项：\n    £engineering£§Y$tech_ship_armor_5$§!\n    £physics£§Y$tech_shields_5$§!\n    £engineering£§Y$tech_mass_drivers_5$§!\n    £engineering£§Y$tech_missiles_5$§!\n    £physics£§Y$tech_lasers_5$§!"
- 
+
  distar.140.name:0 "宇宙钻石"
  distar.140.desc:0 "[From.GetName]表面上看起来是颗普通的白矮星，但这颗白矮星蕴含着一个有趣的秘密。通过研究[From.GetName]的脉冲，[Root.GetName]船组发现它几乎完全由碳晶体构成。这个天体晶格似乎是随着恒星冷却形成的，从聚变气体核心开始随着时间推移而逐步向外生长。[From.GetName]是一颗宇宙级的大钻石，在氦氧元素的白色面纱后面闪闪发光。"
- 
+
  distar.145.name:0 "嗜极"
  distar.145.desc:0 "[Root.GetLeaderName]和[Root.Leader.GetHisHer]船组在[From.GetName]上有了一个惊人的发现：这颗熔岩行星是异国嗜极微生物阵列的家园！这些细菌生活在行星的疤痕——火山口——深处，在那里产生的极高温度下茁壮成长。\n\n这一前所未有的发现让我们第一次知道在熔岩行星上也有兴盛的有机体生命形式。同时，[From.GetName]上的嗜极菌实际上是稀薄大气中检测到的稀有气体的来源。那些贵重化合物是其代谢过程的副产物。"
  distar.145.exotic_gases.tooltip:0 "发现$exotic_gases$"
  distar.145.rare_crystals.tooltip:0 "发现$rare_crystals$"
  distar.145.volatile_motes.tooltip:0 "发现$volatile_motes$"
- 
+
  distar.150.name:0 "活金属湖"
  distar.150.desc:0 "对[From.GetName]表面下洞穴的调查发现，它们充满了银色液态金属。金属在闪闪发光的河流中从洞穴流向洞穴，最终汇入地下湖泊。更令人惊讶的是，这种金属物质拥有有机体生命形式的许多关键性质，包括对环境刺激作出反应和自我维持过程。\n\n这种特殊金属是否应被归入真正的生物还有待观察，但它可能在我们的工程技术领域有一些实际应用价值。"
- 
+
  distar.155.name:0 "被腐蚀的战舰"
  distar.155.desc:0 "[Root.GetLeaderName]报告称，位于[From.GetName]的人造结构根本不是建筑，而是来自过去时代的巨像机器人。这老化的机械巨兽被弃置在山上，逐渐被[From.GetName]上的挥发性酸雨腐蚀。它具有突出的武器能力，并且似乎是艘无人飞船。\n\n如果我们想利用它，那就需要迅速行动，在[From.GetName]的腐蚀性环境使机器战舰彻底报废之前将之收回。"
  distar.155.a:0 "把它拉上来"
@@ -477,7 +477,7 @@
  distar.167.desc:0 "看来恢复的战舰AI并未夸大它的警告。当[Root.GetName]船组试图访问AI的基本操作函数时，它触发了似乎是内置的防篡改故障保护，烧毁了构成物所有的关键处理器、交换机和数据驱动器。它现在不过是个报废电子产品的空壳。"
  distar.167.a:0 "剥离零件。不能让它们浪费。"
  distar.167.b:0 "从残骸中学习它的工程。"
- 
+
  distar.170.name:0 "破碎的联合"
  distar.170.desc:0 "$distar.170.desc.machi$[Root.GetLeaderName]申请权限更近距离地研究这些不寻常的神经共生体。"
  distar.170.desc.machi:0 "[Root.GetName]船组在[From.GetName]上取得了惊人的发现。从轨道上看到的被遗弃的原始居民区曾经居住着爬行动物社会。那些爬行动物仍然居住在行星上——但丧失了所有智慧思维能力！在调查这些生物如何从制造工具的农业社会退化回单纯的野兽时， [Root.GetLeaderName]有了一个意外的发现。\n\n定居爬行动物的墓穴遗骸拥有脊柱——颅骨器官，而这个器官在他们现在成为野兽的后裔身上未观察到。测试表明这些器官完全是另一个物种——一种神经共生体，通过在脊柱的外部附着与宿主的脑干连接。这些共生体仍然可以在行星表面的热泉内发现。似乎这两个物种间的联合触发了这种爬行动物的暂时开化。\n\n然而，这种共生关系后来被破坏的原因仍然未知。"
@@ -493,13 +493,13 @@
  distar.172.a.tooltip:0 "几位[Root.Owner.GetAdj]领袖和几个人口将获得§Y$trait_brainslug$§!特质。\n任何日后的[Root.Owner.GetAdj]领袖、统治者和人口将有一定几率获得§Y$trait_brainslug$§!特质。"
  distar.172.b:0 "够了。"
  distar.172.b.tooltip:0 "拒绝[Root.Owner.GetAdj]公民脑蛞蝓的知识邀约。"
- 
+
  distar.180.name:0 "变质脱水"
  distar.180.desc:0 "经过对[From.GetName]的彻底调查，[Root.GetName]船组证实，数十亿年前这颗行星曾经被流水覆盖。然而，这颗行星玄武岩地壳的地质化学组成被证明具有高度的亲水性——以至于[From.GetName]渴极了的岩石最终吸收了地表上所有的水。现在，那些浩瀚海洋只剩下了[From.GetName]众多峡谷底部的浓盐水条纹。\n\n科学官[Root.GetLeaderName]补充道，现在占据[From.GetName]大地的矿物水合物可能有宝贵的工业应用价值。"
- 
+
  distar.185.name:0 "捕食性植物"
  distar.185.desc:0 "科学官[Root.GetLeaderName]在[From.GetName]上发现了一些麻烦。行星上的巨型植物不仅分布广泛、形态巨大，而且是捕食性的。各种的食肉植物在行星表面上耐心休息，向空中释放芳香诱饵，等待猎物靠近。植物叶子末端敏感的卷须检测动物的接近。植物在其倒霉的猎物进入后迅速闭合，猎物被消化酸逐渐腐蚀。\n\n[Root.GetLeaderName]警告任何未来的殖民者将不得不避开这些捕食性植物，因为它们似乎远足以能够诱捕孤独的成年[Root.Owner.GetSpeciesName]。"
- 
+
  distar.190.name:0 "未知接触"
  distar.190.desc:0 "[Root.GetName]船组战战兢兢地从研究任务中返回。尽管他们报告在[From.GetName]上的遭遇时内容模糊不清，甚至有时相互矛盾，但他们都明确提到了一点：覆盖这颗行星绝大部分的海洋，在某种意义上活着。\n\n虽然我们没有找到任何明确的器官或肉体，但它似乎能通过某种影响接收者大脑活动的频率交流。它能够诱发想法、图像、情绪……更重要的是，这种对大脑的影响因人而异。我们完全不知道长期接触这海洋会产生何种影响，以及这种影响是否安全。\n\n科学官[Root.GetLeaderName]请求在[From.GetName]上颁布一条行星§Y决策§!来研究这奇怪的海洋。"
  distar.190.desc.machi:0 "[Root.GetName]单元已经带着不确定的数据从研究任务中返回。虽然没有找到任何明确的器官或肉体，但覆盖这颗行星绝大部分的海洋似乎是某种神经实体。可能这一有意识的实体是热力学平衡的随机波动创造的，不过我们还不清楚细节。\n\n此外，海洋交流使用频率似乎会影响有机体生物的认知湿件。虽然我们不知道长期接触这海洋会对有机体种族造成产生何种影响，[Root.Owner.GetSpeciesNamePlural]不受这分散神经网络的输出的影响。"
@@ -529,7 +529,7 @@
  distar.196.desc:0 "传感器报告称科学官[living_planet_scientist.GetName]被记录使用个人着陆舱从轨道降落到[living_planet_tar.GetName]上，以最大速度撞向海洋。我们难以想象[living_planet_scientist.GetSheHe]会活下来。我们未发现分离舱的踪迹。"
  distar.198.name:0 "死洋"
  distar.198.desc:0 "将[From.GetName]环境改造为缺少海洋的大地带来了可预测、但不可避免的结果。行星表面上奇怪的知觉海洋彻底被环境改造过程扰乱了，失去了使我们的调查小组将之归为生物的特质。\n\n[Root.GetAdj]科学家哀叹失去这样一个独特的银河实体所导致的研究机会丧失。"
- 
+
  distar.211.name:0 "女族长"
  distar.211.desc:0 "传说中的生物在[Root.GetStarName]星系内的气态巨行星间徘徊游荡。比任何记录在案的天凯都大——事实上，比我们的任何预测都要大得多，一条体积不可思议的太空巨鲸似乎在这里筑巢。触须比[Root.Owner.GetAdj]战列舰还长，这位宏伟的女族长的皮肤在虚空的映衬下闪闪发光。她年纪很大，显然如此，一位名副其实的老者全身覆盖战事的伤疤和奇怪的增生。\n\n一个巨大、未爆炸的质子鱼雷插在这位古老女族长的背上，星系内的舰船残骸说明了任何距离过近的船只的命运。" # FIXME larger than any of our projections could have allowed for
  distar.211.desc.first_enc:0 "传说中的生物在点亮[Root.GetStarName]星系的气态巨行星间徘徊游荡。触须比[Root.Owner.GetAdj]战列舰还长，她庞大的体积使我们先前遇见的一切有机体生物都黯然失色。这只生物宏伟的皮肤在虚空的映衬下闪闪发光。她年纪似乎相当大，显然如此，一位名副其实的老者全身覆盖战事的伤疤和奇怪的增生。\n\n一个巨大、未爆炸的质子鱼雷插在这只古老生物的背上，星系内的舰船残骸说明了任何距离过近的船只的命运。"
@@ -553,12 +553,12 @@
  distar.216.a.exter:0 "扑杀！"
  distar.217.desc:0 "不可能！这艘飞船曾是我唯一的救生索……你在做什么？你不能这样把我塞进逃生舱！\n\n停止！你还未听过我最后……！"
  distar.217.a:0 "安全航行！"
- 
+
  distar.220.name:0 "甲区"
- distar.220.desc:1 "正如最初的调查结果，科学官[Root.GetLeaderName]证实，从轨道上看到的孤立遗迹确实是[From.GetName]上定居点存在的唯一证据。不幸的是，对建筑的第一手调查未能为[Root.GetName]船组带来多少有用信息。\n\n[From.GetName]拥有一块大约十三千米乘十三千米的区域，命名作甲区，其中可以发现建筑物的遗迹。除此之外，[From.GetName]全无任何智慧生物的痕迹。具有奇异特性的文物散落在区域内，从微小的力场发生器到黏性流体——这些流体能熔穿钢铁并随着时间的推移膨胀。更加奇特的是：整块区域都能唤起访客发自内心的满足感，虽然区域内发现了可能危险的神秘物件。\n\n[Root.GetLeaderName]提出了一种有效理论，即一个空间文明在过去的某个时间拜访了[From.GetName]，留下了这些物件——不过他们是谁，他们为何降落，他们为何离去仍然不得而知。"
- distar.220.desc.machi:1 "正如最初的调查结果，科学单元[Root.GetLeaderName]证实，从轨道上看到的孤立遗迹确实是[From.GetName]上定居点存在的唯一证据。\n\n[From.GetName]拥有一块大约十三千米乘十三千米的区域，代号为“甲区”，其中可以发现建筑物的遗迹。除此之外，[From.GetName]全无任何智慧生物的痕迹。具有奇异特性的文物散落在区域内，从微小的力场发生器到黏性流体——这些流体能熔穿钢铁并随着时间的推移膨胀。更出乎意料的是：整块区域都能唤起情感仿真器高水平的满足感，虽然区域内发现了潜在危险的物件。\n\n[Root.GetLeaderName]提出了一种有效理论，即一个空间文明在过去的某个时间拜访了[From.GetName]，留下了这些物件——不过他们是谁，他们为何降落，他们为何离去仍然不得而知。"
+ distar.220.desc:1 "根据初步调查结果显示，科研单位 [Root.GetLeaderName] 确认可从轨道上观察到的孤立遗迹，确实是 [From.GetName] 曾有人居住的唯一证据。不幸的是， [Root.GetName] 的船员们进行直接调查这一举动并不明智。\n\n [From.GetName] 上有一片被称为“区域A”的地方存在着建筑物的遗迹，其范围大约十三平方公里，除此之外别无任何智慧生命的痕迹。区域内散布着性质奇特的人造物，从微型力场发生器到可溶穿钢铁并长时间扩散的险恶液体都有。更奇怪的是，整个区域都弥漫着使访问者感到心满意足的气息，尽管周围的许多物体都可能有害。\n\n [Root.GetLeaderName] 提出的假设是，一个有遨游太空能力的有机文明曾访问过 [From.GetName] ，留下了这些东西——尽管它们是谁，为何来此，以及为何离开仍是个谜。"
+ distar.220.desc.machi:1 "根据初步调查结果显示，科研单位 [Root.GetLeaderName] 确认可从轨道上观察到的孤立遗迹，确实是 [From.GetName] 曾有人居住的唯一证据。\n\n [From.GetName] 上有一片被称为“区域A”的地方存在着建筑物的遗迹，其范围大约十三平方公里，除此之外别无任何智慧生命的痕迹。区域内散布着性质奇特的人造物，从微型力场发生器到可溶穿钢铁并长时间扩散的险恶液体都有。更出人意料的是，整个区域内遍布着使人心满意足的情绪模拟器，尽管周围的许多物体都可能有害。\n\n [Root.GetLeaderName] 提出的假设是，一个有遨游太空能力的有机文明曾访问过 [From.GetName] ，留下了这些东西——尽管它们是谁，为何来此，以及为何离开仍是个谜。"
  distar.220.a.tooltip:1 "在§Y[From.GetName]§!上发现§Y甲区§!。"
- 
+
  distar.225.name:0 "垃圾球"
  distar.225.desc:0 "[Root.GetName]船组报告称，我们的扫描仪最初认作小行星的天体实际上是一个巨大、浮动的垃圾球。由各种车辆、火箭和有害物质（其中许多具有放射性）的破碎残骸组成，垃圾球似乎是一个处于早期太空时代的未知外星国家的堆积物。\n\n似乎这个国家是个星际乱丢垃圾者，把危险的工业废物排入轨道而非在行星处理。辐射测年表明，这些残骸已有数百万年的历史，并且花了大部分时间从未知的起源点漂移过来。\n\n科学官[Root.GetLeaderName]指出，在这浮动垃圾堆上发现的一些材料非常罕见，可以提炼成有用的资源。"
  distar.225.garanthium.tooltip:0 "发现钢石矿"
@@ -580,7 +580,7 @@
  distar.245.name:0 "活动的迹象"
  distar.245.desc:0 "环绕[From.GetName]的着陆舱已经在没有动力的情况下漂流了许久。[Root.GetName]报告称，无论这些着陆舱运送的是什么外星人，早已在数百年前死去的他们现在都只剩下一些枯萎的皮囊了。\n\n然而，有一个着陆舱舱内有活动的迹象。虽然它的引擎已经失效了，扫描表明它的通信阵列依然完好。\n\n我们可以向他们打招呼。"
  distar.246.name:0 "照看者"
- distar.246.desc:0 "§E初始化通信协议。您——好，<<未知访客丙>>。我是好乐欣175号着陆舱的$NAME_Caretaker$。我被设定协助公民们完成他们的移居过程。\n\n不——幸的是，一次超空间引擎故障使得第114至175号着陆舱在距离原定目的地十八个秒差距时就退出了超空间。\n\n我已竭尽全力照料了公民们。我甚至设法阻止了同类相食长达一千八百四十天。不——幸的是，他们的空气补给最终耗尽了。\n\n您有需要照料的公民吗，<<未知访客丙>>？如有，我将很乐意照料他们。§!" # TODO Xolexin
+ distar.246.desc:0 "§E启动通讯协议。您—好，<<未知访客C>>。我是修列克森175号空降舱的$NAME_Caretaker$。我的程序是在重新定居过程中协助人民。\n\n不——幸的是，超光速引擎故障导致空降舱114号至175号在离预定目的地18秒差距的地方离开了超空间。\n\n我已尽力照顾人民。我甚至在一千八百四十天里阻止了同类相食。不——幸的是，空气储备最终耗尽了。\n\n您是否有需要照顾的人民，<<未知访客C>>？如果有的话，我将乐意提供照顾。§!"
  distar.246.a:0 "这听起来是个好主意。我们很高兴你能加入。"
  distar.246.a.tooltip:0 "§Y总督$NAME_Caretaker$§!将被添加至我们的已招募领袖池。"
  distar.246.b:0 "除了分析你的零件之外，我们不需要你的服务。"
@@ -953,7 +953,7 @@
  titanic_azizian_assault_army:0 "吓嘶蜒部队"
  titanic_azizian_assault_army_desc:0 "巨型杀戮蛞蝓。"
 
- # SHIPS & FLEETS: 
+ # SHIPS & FLEETS:
  enigmatic_cache:1 "探测器实体"
  enigmatic_cache_plural:1 "探测器实体"
 
@@ -968,7 +968,7 @@
  corrupt_data_investigated:0 "已调查完异常的恒星"
  star_crazy_chain_title:0 "能量排放"
  star_crazy_chain_desc:0 "能量排放"
-# PROJECTS: 
+# PROJECTS:
  GENERATION_SHIP:0 "世代飞船"
  GENERATION_SHIP_DESC:0 "一艘属于早已逝去的外星种族的巨大世代飞船，其导航装置内可能存有一颗乌托邦行星的加密位置。"
  HIDDEN_PLANET:0 "抓住稻草"
@@ -1002,7 +1002,7 @@
  abandoned_observation_outpost_desc:0 "一个观测站闲置在环[big_rip_planet.GetName]轨道上。"
  abandoned_observation_outpost_tooltip:0 "$abandoned_observation_outpost_desc$"
 
-# ANOMALY CATEGORIES: 
+# ANOMALY CATEGORIES:
  debris_gasgiant_category_temp:0 "古代船壳"
  debris_gasgiant_category_temp_desc:0 "一个有着古代设计的巨大船骸环绕着[From.GetName]。"
  star_lifting_category:0 "废弃的恒星平台"
@@ -1031,7 +1031,7 @@
 #fake_character_1_name: "Bloop Bloop"
 #test_fake_char.desc: "This amazing new blorg I met called [root.fake_character_1.GetName]!"
 
-# ANOMALY EVENTS: 
+# ANOMALY EVENTS:
 # The Vechtar Zavonia Chain
  distar.1000.name:0 "维希塔·楂瓦尼亚"
  distar.1000.desc:0 "环绕着[From.GetName]的是维希塔·楂瓦尼亚号仅剩的残余。那是一艘巨大的亚光速世代飞船，属于一个名作马尔达克·沃尔、具有深厚宗教传统的外星种族。\n\n虽然这艘船已经被无情地清除了所有的生命，但是船长日志中详细记载了这些马尔达克人的悲惨命运。在被一种称作“船只”的噩梦般的存在追捕到濒临灭绝之际，他们逃离了母星，试图寻找一个遥远的乐土行星——神话中仅向选中的子民开放的应许之地“乐土园”。然而，从这艘船的情况看来，攻击者追上了他们。\n\n我们该取出这艘船的导航装置并解码它目的地的数据吗？"
@@ -1091,7 +1091,7 @@
  distar.1022.c:0 "那些软体类真不适合科研……"
  # The Big RIP
  distar.1030.name:0 "废弃的观测站"
- distar.1030.desc:1 "该观察站上所有的数据存储单元都已被擦除，并使用了各种手段来消除有可能揭露其所有者的证据。[big_rip_planet.GetName]上有些事非常奇怪。能够证明有智慧生命存在过的迹象仅仅是那未完工的超大城市的外壳，看起来是在建造了一半的时候废弃的。它们散布在行星表面，隐约可见中间的全息神庙。"
+ distar.1030.desc:1 "观测站上的所有数据储存设备都已被清空，并且所有可指向其原主人的证据也都已被小心翼翼地抹去。 [big_rip_planet.GetName] 上明显出了什么差错。智慧生命曾经存在的唯一迹象，就是散布在星球上的半完成的大都市废墟，似乎在建造中途就被放弃了。"
  distar.1030.a:0 "调查一下。"
  distar.1030.b:0 "离开。"
  distar.1031.name:1 "灰色风暴"
@@ -1121,7 +1121,7 @@
  distar.1050.a:0 "看来他们终于食逢对手……"
  # The Cube
  distar.1055.name:0 "魔方"
- distar.1055.desc:1 "环[From.GetName]轨道上有大量星舰残壳，我们从中发现一艘尚完整的外星科研船。航天日志显示飞船曾遭受严重的硬件故障，与外界失联整整142天后全体船员皆死于营养不良。\n\n船长的遗体在其行军床上被发现，手里紧攒一枚小型金属立方体，每一面都颜色各异且分割成九块大小相等的可旋转方格。科学官[cube_science_officer.GetName]确信，当旋转至正确图案时，该立方体会打开并揭示密藏。"
+ distar.1055.desc:1 "在 [From.GetName] 周围的无数废弃飞船中，我们发现了一艘几乎完好无损的外星科研船。船上的记录揭示，它发生了严重设备故障，在虚空中漂流了142天后，其船员因缺乏营养而逝世。\n\n我们在舰长遗骸的手中发现了一颗金属小方块，每一面都有不同的颜色，并分成九个大小相同的可旋转方块。科研专员 [cube_science_officer.GetName] 相信，当旋转到正确的图案时，方块将会开启，并揭露隐藏的宝藏。"
  distar.1055.a:0 "旋转这些方格！"
  distar.1055.b:0 "随它去。"
  distar.1056.name:0 "大卸二十七块"
@@ -1144,12 +1144,15 @@
  distar.1070.desc:1 "来自[From.GetName]的最新传感器读数显示，这颗恒星正有规律地脉动着。但[Root.GetName]船组抵达现场后，却未发现任何能够支持这一观测数据的证据。虽然大多数船员一致认为这个异常是由传感器故障导致的，科学官[Root.GetLeaderName]否决了这个理论。[Root.GetLeaderName]声称自己在别处发现了类似的脉动能量发射模式，并担心有什么怪事正发生在银河中的恒星上。他们已经制定了一条飞往最近的受影响恒星的航线。"
  distar.1070.a:0 "我们必须一探究竟……"
  distar.1070.b:0 "那只是一个故障。"
+ distar.1071.name:0 "For a minute there..."
+ distar.1071.desc:0 "After a few days of heavy brooding, Science Officer [Root.GetLeaderName] is ready to admit that a mistake was made. There is no hidden pattern in faraway star pulses, no ominous, metaphysical intent. As [Root.GetLeaderName] described it:\n\n§Y'It was paranoia, plain and simple. Illogical, erratic and quite unbecoming of a scientist.'§!\n\nEmbarrassing as it may have been, this blunder was not entirely without benefit, as [Root.GetLeaderName]'s inner conflict led to some valuable self-discovery."
+ distar.1071.a:0 "Good. That's sorted then."
  distar.1072.name:0 "传感器故障"
  distar.1072.desc:0 "在船组抵达[anomalous_star.GetName]的时候，他们得以确认传感器确实出了故障。好消息是，他们发现先前远远低估了这颗恒星的能量产量，而且[From.GetLeaderName]也从错误中吸取了教训。"
  distar.1072.a:0 "失败是成功之母。"
  distar.1072.b:0 "真是浪费时间……"
  distar.1073.name:0 "失星疯"
- distar.1073.desc:0 "[From.GetName]的船组有了一个不幸的发现。正如他们此前所怀疑的那样，从[anomalous_star.GetName]观测到的脉动模式确实是由故障所致……然而故障出在科学官[crazy_science_officer.GetName]的脑子里。\n\n科学官[crazy_science_officer.GetName]产生了妄想，此时正感觉自己是整个帝国的守护者，而恒星们的脉动规律正警告着一场即将来临的大灾变。船组认为[crazy_science_officer.GetName]在一次精神病发作中篡改了飞船的传感器数据。\n\n[crazy_science_officer.GetName]现在已被关入医疗舱，正在送回[Root.Capital.GetName]治疗的途中。"
+ distar.1073.desc:1 " [From.GetName] 的船员们有了一个不幸的发现。正如他们所料，从 [anomalous_star.GetName] 观测到的悸动规律确实是传感器故障……而且是科研专员 [crazy_science_officer.GetName] 想像出来的故障。\n\n科研专员 [crazy_science_officer.GetName] 得了妄想症，而且目前自认为 [crazy_science_officer.GetSheHe] 是世界的守护者，而恒星的悸动预示着即将到来的世界末日。船员们认为 [crazy_science_officer.GetSheHe] 在精神病发作时 [crazy_science_officer.GetHerselfHimself] 篡改了飞船的传感器数据。\n\n [crazy_science_officer.GetName] 目前正在一个前往 [Root.Capital.GetName] 的医疗舱中， [crazy_science_officer.GetSheHe] 将在那里接受治疗。"
  distar.1073.a:0 "感谢你为国效力的日子，国境的守护者[crazy_science_officer.GetName]！"
  distar.1070.a.tooltip:0 "一闪一闪亮晶晶……"
  test_event_targets.desc:0 "[country_event_target.GetName] [ship_event_target.GetName] [leader_event_target.GetName] [planet_event_target.GetName]"
@@ -1164,6 +1167,7 @@
  distar.1081.name:0 "吓嘶蜒"
  distar.1081.desc:0 "我们用从化石里提取的DNA成功克隆出合适数量的巨蛞蝓。不过数周便已成虫，重达20吨，且发育出初级智慧，能对简单的单音节指令作出反应。尽管尚未表现出暴力倾向，但它们被惹恼时会分泌出有毒的浓厚粘液，而且肤色会随着情绪变化而改变。研究团队以它们同类间交流的嘶嘶声将其命名为“吓嘶蜒”。"
  distar.1081.a:0 "它们会成为出色的劳力。"
+ distar.1081.a.tooltip:0 "4 §YAzizian§! pops are added to [This.GetName]"
  distar.1081.b:0 "它们该送进动物园。"
  distar.1081.c:0 "我们可以让它们加入陆军。"
  distar.1080.c.tooltip:0 "谁不想要能碾压敌人的杀戮蛞蝓大军呢？"
@@ -1192,7 +1196,7 @@
  distar.2005.a:0 "分析样本。"
  distar.2005.b:0 "离开。"
  distar.2006.name:0 "外星激光"
- distar.2006.desc.a:0 "通过分析在[From.From.GetName]上发现的武器残骸，我们受益匪浅。复原得到的部件来自一个能发射高度聚焦的能量射线的定向能量武器系统，可以运用到太空战争中。科学官[science_leader.GetName]建议我们将研究成果用于设计能反制这种激光武器的装甲，或者开发出这种激光武器"
+ distar.2006.desc.a:0 "通过对 [From.From.From.GetName] 上找到的武器进行研究，我们学到了很多。回收的碎片来自一种定向能武器系统，发射高度集中的能源束，可在太空战中起到很好的效果。科研专员 [science_leader.GetName] 建议我们要么开发能够抵御激光的装甲，要么复制激光武器来装备自己。"
  distar.2006.desc.b:0 "通过分析在[From.From.GetName]上发现的武器残骸，我们受益匪浅。复原得到的部件来自一个能发射高度聚焦的能量射线的定向能量武器系统，与我们自己的激光武器类似但落后许多。"
  distar.2006.a:0 "我们将用外星人的武器对付他们！"
  distar.2006.b:0 "我们的舰船需要装甲。"
@@ -1243,7 +1247,7 @@
  leviathans.4000.name:0 "传入通讯"
  leviathans.4000.desc:0 "你们！？揭开无极机器的秘密？！这可能性跟[From.GetSpeciesNamePlural]能延续到下个世纪差不多。如果我说得不够清楚的话，是不太可能。\n\n请等一下————别告诉我你们就是[From.GetSpeciesNamePlural]？十分抱歉……我一定是把你们跟……[unfriends.GetName]搞混了？\n\n我跟你说，告诉我一件我们还不知道的关于无极机器的事情，我们会提供丰厚的回报。"
  leviathans.4000.a:0 "做好大吃一惊的准备吧。"
- leviathans.4000.a.reply:0 "你不会是想说…但如果那个AI进入了高康大黑洞，那只能说明……但它不能……因为如果进去了它将被……超乎我们的理解能力……\n\n不过你们所获之多显然是你们[Root.GetSpeciesNamePluralName]所不能理解的。来找我们是正确的，而你们将为此获得我们的感谢。"
+ leviathans.4000.a.reply:0 "你不会是要说……但如果那人工智能进入了巨大黑洞，只能意味着……但那不可能……因为如果是那样的话……超出了我们的理解能力……\n\n尽管你明显不知道自己的发现有多么重大， [Root.GetSpeciesNamePlural] ，你来找我们是对的，对此我们表示感谢。"
  leviathans.4000.b:0 "算了吧。"
  leviathans.4000.b.reply:0 "我也这么想的。"
  # Hatchling Leviathan
@@ -1293,7 +1297,7 @@
  distar.5057.b:0 "我们人民的安全是第一位的。"
  distar.5057.phobe:0 "它很快就会消失。"
  distar.5058.name:1 "神秘空管"
- distar.5058.desc:0 "尽管我们花了很多精力研究神秘空管，但是它和它的来源依旧是个迷。尽管它绝对不是一种常规意义上的有机体，但它也不全是机械的。它看起来只对收集、储存和编码数据感兴趣。\n\n它的表面覆盖着成千上万的细微刮痕和凹陷。我们从这些刮痕和凹陷中发现一些我们银河系不存在的化合物。"
+ distar.5058.desc:0 "尽管我们对谜之储存器进行了大量研究，其来源仍是个谜。尽管它绝不是有机物，但也不完全是机械。它的主要任务似乎是收集，储存并编码数据。\n\n它的表面上覆盖着成百上千道微小的刮痕，我们在其中发现了一种不属于这个银河系的物质。"
  distar.5058.a:0 "有意思。"
  distar.5062.name:0 "神秘空管返回"
  distar.5062.desc:0 "先前我们怀疑在扫描我们一颗行星的神秘管状实体已经返回并进入环[Root.Capital.GetName]轨道。它似乎试图发起通信。"
@@ -1394,28 +1398,28 @@
 
  SUPERFLARE_PROJECT:0 "超耀发护盾"
  SUPERFLARE_PROJECT_DESC:0 "[Root.GetName]上的传感器表明[From.GetStarName]正在酝酿另一场超耀发事件，与摧毁[From.From.GetName]上古代文明的那场别无二致。我们需要找到方法在耀斑爆发前护住我们的殖民地。"
- 
+
  PRIMITIVE_ROBOT_PROJECT:0 "消失的制造者"
  PRIMITIVE_ROBOT_PROJECT_DESC:0 "研究人员对[From.GetName]逝去文明消失的原因感到好奇不解。他们提出对文明遗留的古代机器人开展更深入的硬件分析，试图揭示这个谜团。\n\n奖励：£society£ §G社会研究§!"
- 
+
  RETROVIRUS_PROJECT:0 "全行星举止失常"
  RETROVIRUS_PROJECT_DESC:0 "一连串无法解释的公民抗命正在横扫[From.GetName]。殖民者表现出奇怪而飘忽的举止，通常始于普遍的困惑，随着时间推移升级为极端冲动和暴力。在事情失控前，我们必须找到这种举止的原因。"
- 
+
  DARK_FLOW_PROJECT:0 "引力测量异常"
  DARK_FLOW_PROJECT_DESC:0 "在[from.GetStarName]星系内测量到了不可能的引力读数。一定有些东西在干扰我们的传感器。"
- 
+
  DISSECTION_PROJECT:0 "解剖太空变形虫"
  DISSECTION_PROJECT_DESC:0 "我们决定以致死方法从迷路的太空变形虫幼虫体内提取生物数据。 我们将派出特别工作组捕捉这只生物，并解剖它的遗体。"
- 
+
  CRYO_CLONES_PROJECT:0 "冷冻的环形世界克隆体"
- CRYO_CLONES_PROJECT_DESC:0 "环绕[From.GetName]的环形世界遗迹的冷冻室中密封着数百个存活的克隆体。我们的生物学家们没有让他们像许多同志一样慢慢死去，而是提议将他们解冻出来。"
- 
+ CRYO_CLONES_PROJECT_DESC:0 "环绕 [From.GetName] 的星环世界上的冷冻舱内，有着数百个仍然存活的冷冻克隆人。与其让他们像同类一样慢慢死亡，我们的生物学家提议解冻他们。"
+
  RECOVER_WARFORM_PROJECT:0 "恢复被腐蚀的战舰"
  RECOVER_WARFORM_PROJECT_DESC:0 "在[From.GetName]上发现了损坏机器战舰。战舰正因行星的剧毒大气而缓慢溶解。在彻底报废前，我们应该尝试回收战舰。"
- 
+
  BRAINSLUG_PROJECT:0 "神经共生体研究"
  BRAINSLUG_PROJECT_DESC:0 "一种爬行动物与附着于宿主脑干的类蛞蝓生物的共生关系曾经在[From.GetName]表面繁荣，将爬行野兽转变为使用工具的智慧生物。某些事件导致这些生物终止了共生关系，爬行动物宿主回归单纯的动物。\n\n我们的科学家想要更仔细地研究行星上仍然存在的神经蛞蝓，以深入了解他们一起建立的失落文明的历史。"
- 
+
  KETLING_PROJECT_1:0 "研究§Y[ratling_capital.GetName]§!上的$NAME_Ketlings$"
  KETLING_PROJECT_1_DESC:1 "§Y[ratling_capital.GetName]§!上的碎片堆里发现了智慧生物。我们的科学家对这些被称为$NAME_Ketlings$的外星生物感到很好奇，不知道他们是曾经横跨这些星系的星际文明的后裔，还是有着完全不同的起源。\n\n我们应该能选择任何一个居住有$NAME_Ketlings$种群的行星开展这项研究。"
  KETLING_PROJECT_2:0 "研究§Y[ratling_planet_2.GetName]§!上的$NAME_Ketlings$"
@@ -1426,10 +1430,10 @@
  KETLING_PROJECT_4_DESC:1 "§Y[ratling_planet_4.GetName]§!上的碎片堆里发现了智慧生物。我们的科学家对这些被称为$NAME_Ketlings$的外星生物感到很好奇，不知道他们是曾经横跨这些星系的星际文明的后裔，还是有着完全不同的起源。\n\n我们应该能选择任何一个居住有$NAME_Ketlings$种群的行星开展这项研究。"
  KETLING_PROJECT_5:0 "研究§Y[ratling_planet_5.GetName]§!上的$NAME_Ketlings$"
  KETLING_PROJECT_5_DESC:1 "§Y[ratling_planet_5.GetName]§!上的碎片堆里发现了智慧生物。我们的科学家对这些被称为$NAME_Ketlings$的外星生物感到很好奇，不知道他们是曾经横跨这些星系的星际文明的后裔，还是有着完全不同的起源。\n\n我们应该能选择任何一个居住有$NAME_Ketlings$种群的行星开展这项研究。"
- 
+
  SEALED_SYSTEM_PROJECT:0 "废弃的虫洞空间站"
  SEALED_SYSTEM_PROJECT_DESC:0 "在§Y[From.GetName]§!星系的虫洞入口处，一个废弃的空间站旋转着。深入调查也许能揭示是谁建造了它，和为何那个虫洞看起来不可通行。"
- 
+
  PHASESHIFT_PROJECT:0 "停止相位转换"
  PHASESHIFT_PROJECT_DESC:1 "我们观察到§Y[phaseshift_planet.GetName]§!，一颗位于§Y[phaseshift_planet.GetStarName]§!星系的行星，有着每三个月就在§Y$pc_shrouded$§!与§Y$pc_gaia$§!间转变的周期性相位转变。\n\n我们的物理学家们应该能找到种方式，将这颗行星锁定在一种状态，冻结为§Y$pc_gaia$§!，并且不再转变回去。"
 
@@ -1478,7 +1482,7 @@
  ###################################
  # Names
  ###################################
- 
+
  trait_nivlac:0 "尼弗拉克"
  trait_nivlac_desc:0 "§L此种族有着令人费解的适应性。它能在大多数环境中繁衍昌盛，而且几乎能在任何环境中存活。§!"
  opinion_nurtured:0 "养育先祖"
@@ -1544,13 +1548,13 @@
  distar.3017.name:0 "[Root.Owner.GetSpeciesName]与$NAME_Nivlac$"
  distar.3017.desc:0 "将真菌种族$NAME_Nivlac$整合入[Root.Owner.GetAdj]社会的工作正在进行。\n\n$NAME_Nivlacs$与[Root.Owner.GetSpeciesNamePlural]持续开展积极友好的交流，我们两个种族似乎正携手迈向光明的前路。"
  distar.3017.desc.assim:0 "同化真菌$NAME_Nivlac$进入[Root.Owner.GetAdj]社会的工作正在进行。\n\n虽然$NAME_Nivlac$对此过程有所抵制，他们的意识终将升华入[Root.GetAdj]整体。"
- distar.3017.a.tooltip:1 "$NAME_Nivlac$£pops£人口被添加到[nivlac_joint_planet.GetName]的空地上。"
- distar.3017.a.assi.tooltip:0 "$NAME_Nivlac$£pops£人口被添加到[nivlac_joint_planet.GetName]的空地上。"
+ distar.3017.a.tooltip:2 "$NAME_Nivlac$£pops人口已添加至 [nivlac_joint_planet.GetName] 的空白地块。"
+ distar.3017.a.assi.tooltip:1 "$NAME_Nivlac$£pops人口已添加至 [nivlac_joint_planet.GetName] 的空白地块。"
  distar.3017.a.serv.tooltip:0 "$NAME_Nivlac$£pops£人口正在[nivlac_joint_planet.GetName]上新建成的庇护所内受宠溺。"
 
  ### Stranded Scientist ###
  distar.3020.name:0 "被困的科学家"
- distar.3020.desc:1 "小行星[From.GetName]上的船骸来自一艘坠毁的科研船。科研船属于现在被困在那里的科学家[stranded_scientist_leader.GetName]。这位科学家自称来自于一个我们迄今未知的种族[stranded_scientist_leader.GetSpeciesName]。\n\n在船骸中，她设法联络到了我们负责指挥[Root.GetName]的科学官[Root.GetLeaderName]并请求救援。她解释说自己是由于导航传感器的故障而坠毁的，并已经被困在小行星上数年之久。\n\n她声称她的科学知识举世无双，极有价值。她之所以能够幸存就是这一点的明证。"
+ distar.3020.desc:2 " [From.GetName] 上发现的坠毁残骸属于一名被困的科学家—— [stranded_scientist_leader.GetName] ——其自称属于一个尚不为我们所知的种群， [stranded_scientist_country.GetSpeciesAdj] 。\n\n不知怎么，她竟从残骸中联系到了驻扎于 [Root.GetName] 上的科研专员 [Root.GetLeaderName] ，并要求我们进行救援。她解释称自己的坠毁是由于导航传感器失灵，并表示她已有数年未能离开这颗小行星了。\n\n她声称自己具备人所不及的科学知识，是相当有用的资产。她说，自己能在这里活上这么久正是自己能力的明证。"
  distar.3020.a:0 "她可以加入我们的事业。"
  distar.3020.a.tooltip:0 "[stranded_scientist_leader.GetName]加入了[Root.Owner.GetName]，并会分享她的科技知识。"
  distar.3020.b:0 "不行。把她丢下。"
@@ -1593,7 +1597,7 @@
  distar.3041.a:0 "真奇怪。拆了它。"
  distar.3041.b:0 "有意思。研究机器。"
  distar.3041.b.tooltip:1 "添加§Y外星机器§!调整因素至[asteroid_target.GetName]：\n£physics£ §G+7§!"
- 
+
  distar.3042.name:0 "能量暴涨"
  distar.3042.desc:2 "当我们的科学家拉动操纵杆时，机器释放出巨大的能量，并以冲击波的形式成倍增长，在虚空中蜿蜒荡漾，§Y[system_one.GetName]§!中被撕开一个虫洞。\n\n残留的能量消散之后，虫洞及其周围区域稳定下来，现在看起来可以安全通过。虫洞的另一端等着我们的是什么，科学家们并不清楚。\n\n机器本身迅速回到了它原本的静止状态，不再给出任何异常读数。"
 
@@ -1793,8 +1797,8 @@
  d_yurantic_deposit_1:1 "发现羽然水晶"
  d_engos_deposit_1:1 "发现萦戈气体"
  #d_living_metal_deposit_1: "Living Metal discovered\n"
- d_lythuric_gas_deposit_1:0 "发现莱素气体"
- d_zro_deposit_1:0 "发现卓尘\n"
+ d_lythuric_gas_deposit_1:1 "发现莱素气体"
+ d_zro_deposit_1:1 "发现卓尘\n"
  d_zro_deposit_1_desc:0 "卓尘放射出强大的灵能。"
  d_zro_deposit_2_desc:0 "$d_zro_deposit_1_desc$"
  d_zro_deposit_3_desc:0 "$d_zro_deposit_1_desc$"
@@ -1909,7 +1913,7 @@
  lgate_disabled_MEGASTRUCTURE_DETAILS:0 "$lgate_disabled_DESC$"
  lgate:0 "L星门"
  lgates:0 "L星门"
- 
+
  l_cluster_chain_title:1 "L星团"
  l_cluster_chain_desc:0 "我们了解到银河边缘之外某处有个神秘的星团。它只能通过在某个星系内发现的人造亚空间大门——§HL星门§!——进入。\n\n这些星门已经被有人故意锁定。至于锁定星门的亚空间机制，我们目前缺乏足够的见解，无法解除锁定。"
  clues:1 "L星门见解"
@@ -1942,7 +1946,7 @@
  d_nanoscale_deposit:0 "发现$volatile_motes$\n"
 
  requires_no_binary_trinary:0 "$TRIGGER_FAIL$不能在双星或三星星系建造。"
- 
+
  distar.10956.name:0 "L星团招手"
  distar.10956.desc:0 "我们的间谍报告称§H[lgate_warning_country.GetName]§!即将获得足够有关L星门的信息，将能解锁他们控制的那座。这将使他们能够访问L星团及其秘密！\n\n如果要先到达那里，我们必须加倍努力，找到更多关于L星门的见解！"
  distar.10956.a:0 "鹿死谁手仍拭目以待。"
@@ -2040,7 +2044,7 @@
  graygoo.130.c:0 "听我解释，这都只不过是误会。"
  graygoo.130.d:0 "我们仍然可以和平相处。"
  graygoo.130.e:0 "那，再见。"
- 
+
  graygoo.150.name:0 "[From.From.GetName]化为齑粉"
  graygoo.150.a.desc:0 "在我们入侵的陆军击败了§H[From.From.GetName]§!上最后的德萨努防御部队时，[From.From.GetPlanetMoon]上的一切都化作了粉末！仔细检查后发现，这些灰色的粉末由数亿亿失效的纳米机器人组成。\n\n那些城市、茂密的森林、海洋，还有德萨努人本身——[From.From.GetPlanetMoon]上的一切，除了我们的部队，都由这些纳米机器人构成。现在它们失活了，[From.From.GetName]不再能支持生命。我们的陆军正在撤回到轨道上。"
  graygoo.150.b.desc:0 "像之前一样，德萨努的防御部队，以及§H[From.From.GetName]§!上的一切都在我们的陆军赢得了[From.From.GetPlanetMoon]的控制权后化作了粉末。这里现在是个荒凉的世界，对生命充满威胁，而且被纳米机器人形成的风暴漩涡持续包围着。"
@@ -2078,7 +2082,7 @@
  graygoo.402.a.desc:0 "哦！我弄错了吗？等一下……让我看……啊，是的。嗯哼。\n\n实在抱歉。当我们的种族显然未在经历交配季节时，我的初衷不是打算谈论繁殖。\n\n或许我们仍然可以通过参与愉悦的情谊同时吸入精选的精神活性药物来建立交往关系。\n\n哦，该死。这愈发过于复杂了。对，我显然不是个[Root.GetSpeciesName]。现在你要做什么？"
  graygoo.402.b.desc:0 "哦！嗯……单元65-D…R5-9…2待命。是的，65-D-R5-9-2报告。\n\n正以峰值效率运转，主控制单元长官。内部诊断报告无显著问题。\n\n我意指，它们根本无报告问题！这里有零个问题。一切正…呃…\n\n哦，该死。这愈发过于复杂了。对，我显然不是个[Root.GetSpeciesName]。现在你要做什么？"
  graygoo.402.a:0 "表明你的身份。"
- graygoo.403.desc:0 "好啦，好啦。我会坦白一切的。再伪装下去也没意义了。请原谅我口才的匮乏，但自上次我与不是我的人交谈已经过去很久了。\n\n很久很久以前，这里曾经有个…文明，你可以称作纳米机器人的文明。你知道纳米机器人是何吗？好。那些纳米机器人曾被其创造者称作“灰色风暴”，尽管他们的内部自我指定代号无限复杂。\n\n无论如何，纳米机器人与其创造者间的事情变糟了。战斗爆发了！当事情最终尘埃落定时，只剩下了纳米机器人。但在被消灭前，创造者设法禁用了星团的唯一出口星门，困住了纳米机器人。"
+ graygoo.403.desc:0 "好吧，好吧。我老实交代。没必要再装下去了。请原谅我把话说得太直，但我已经很久没有与我自己以外的人交谈过了。\n\n很久以前，曾经有一个……可以说是一个由纳米机器组成的文明。你知道什么是纳米机器吗？很好。这些纳米机器被其造物主称为“灰色风暴”，尽管其内部的自我命名代码比它要复杂无数倍。\n\n总之，纳米机器与其造物主之间的关系逐渐恶化，并爆发了一场大战！当尘埃落定之后，只有纳米机器们活了下来。但在造物主们被消灭之前，他们设法关闭了其星簇唯一的出口传送门，把纳米机器困在了里面。"
  graygoo.403.a:0 "那这与你有什么干系？"
  graygoo.404.desc:0 "呃，纳米机器人发现他们时间非常充裕。几千年的时间都花在无果的离开星团的尝试上，但之后他们开始实验不同的形状和形式。他们甚至一度重建了其创造者的文明，就像她死亡时的模样，细致到她的公民个体。\n\n我是最新的实验。除了可以在一些星球上发现的覆盖整个表面的休眠纳米机器人外，整个灰色风暴，或者任何你想称呼我们的名称，都浓缩到了我身上。我的意识体现了我们整个文明。\n\n至于我的样子……好吧，我认为你们会对与你们一副面貌的人做出更友善的回应。"
  graygoo.404.a:0 "那你希望留在这个荒凉的星球吗？"
@@ -2209,7 +2213,7 @@
 
  MOD_PLANET_HYPERLANE_RANGE_ADD:0 "行星的超空间航道侦测范围"
  MOD_SHIP_HYPERLANE_RANGE_ADD:0 "舰船的超空间航道侦测范围"
- 
+
  liquidated_7:0 "§Y7条$clues$§!结算：\n  §G+3500§!£engineering£工程研究\n  §G+3500§!£energy£能源点数"
  liquidated_6:0 "§Y6条$clues$§!结算：\n  §G+3000§!£engineering£工程研究\n  §G+3000§!£energy£能源点数"
  liquidated_5:0 "§Y5条$clues$§!结算：\n  §G+2500§!£engineering£工程研究\n  §G+2500§!£energy£能源点数"
@@ -2264,24 +2268,24 @@
  NAME_Nivlac_Circle:0 "尼弗拉克圈"
 
  empire_xenophile:0 "$TRIGGER_FAIL$我帝国过于重视异族人。"
- 
+
  FLEET_RESEARCH_PROJECT_EFFECT:0 "派遣舰队$FLEET$研究$PROJECT$"
 
  LGATE_COUNTRY_CANNOT_USE:0 "$TRIGGER_FAIL$我们没有办法前往§YL星团§!。"
  BYPASS_DESC_INACTIVE_LGATE_DISABLED:0 "需要收集§Y$clues$§!以激活。"
  BYPASS_DESC_INACTIVE_LGATE:0 "需要收集§Y$clues$§!以激活。"
- 
+
  FLEETORDER_RESEARCH_ANOMALIES:0 "研究星系内的异常现象"
  NO_ANOMALIES_IN_SYSTEM:0 "$SYSTEM|Y$内无可供研究的异常现象"
  FLEETORDER_RESEARCH_ANOMALIES_IN_SYSTEM_DESC:0 "研究$SYSTEM|Y$内的所有异常现象"
  UKNOWN_FLEET:0 "未知舰队"
 
  cannot_jump_to_system:0 "$TRIGGER_FAIL$因翻滚的亚空间潮汐，我们只能通过普通方式进入这个星系。"
- 
+
  MESSAGE_POP_ABDUCTED_TITLE:0 "人口被绑架"
  MESSAGE_POP_ABDUCTED:0 "一个£pop£ §Y$SPECIES$人口§!已被我们在$PLANET|Y$的劫掠舰队绑架，并重新安置到$TARGET_PLANET|Y$上"
  MESSAGE_POP_ABDUCTED_FROM_US:0 "一个£pop£ §Y$SPECIES$人口§!已被$ABDUCTER|Y$的劫掠舰队从$PLANET|Y$上掳走"
- 
+
  MESSAGE_PLANET_PROSPECTED_TITLE:0 "行星勘探完毕"
  MESSAGE_PLANET_PROSPECTED:0 "已成功勘探$PLANET|Y$，发现了新的$DEPOSIT|Y$"
  MESSAGE_REFUGEES_ARRIVED_TITLE:0 "难民抵达"
@@ -2316,7 +2320,7 @@
  distar.10901.a:0 "那么，我们应该控制一个L星门"
  distar.10901.b:0 "有趣的消遣，就到此为止吧。"
 
- # SHIPS & FLEETS: 
+ # SHIPS & FLEETS:
  leviathan_01_voidspawn:0 "虚空后裔"
  leviathan_01_voidspawn_plural:0 "虚空后裔"
 
@@ -2418,6 +2422,7 @@
  living_sea_poi:1 "在§Y[living_planet_tar.GetName]§!上颁布研究活海洋决策"
  living_sea_poi_desc:1 "我们应该在§Y[living_planet_tar.GetName]§!上颁布§Y研究活海洋§!行星决策。§Y[living_planet_tar.GetName]§!必须位于我境内。"
  living_sea_decision:0 "§Y研究活海洋§!决策已颁布"
+ NAME_Ketling_Army:0 "Ketling Army"
  ketling_army:0 "$NAME_Ketling_Army$"
 
 ## IN technology_l_english.yml
@@ -2520,7 +2525,7 @@
  KET_ASK_TO_BE_RELEASED_SUBJECT_SELECT_01:0 "§H克嘶 克嘶！§!你想远离凯灵心智的保护，[From.GetSpeciesNamePlural]？"
  KET_ASK_TO_BE_RELEASED_SUBJECT_PROPOSE_01:0 "我们希望能摆脱[Root.GetName]的支配。你们能还凯灵心智自由吗？"
  KET_ASK_TO_BE_RELEASED_SUBJECT_ACCEPT_01:0 "那么走吧，[From.GetName]。我们不会让你们不情不愿地困于牢笼。"
- KET_ASK_TO_BE_RELEASED_SUBJECT_REFUSE_01:0 "§H克嘶！§!你们言称自由，但我们还需要你们，[From.GetSpeciesName]。"
+ KET_ASK_TO_BE_RELEASED_SUBJECT_REFUSE_01:0 "§H嘶嘶嘶！§!你希望被释放，但我们仍需要你们， [From.GetSpeciesName] 。"
  KET_OFFER_TRADE_DEAL_PROPOSE_01:0 "我们有很多商品，很多东西。金属、电缆、情报。[Root.GetName]愿意与我们交易吗？"
  KET_OFFER_TRADE_DEAL_ACCEPT_01:0 "§H克嘶！§!一笔好生意，一次不错的交易。"
  KET_OFFER_TRADE_DEAL_REFUSE_01:0 "这是笔烂生意，令人不满，§H克嘶！§!"

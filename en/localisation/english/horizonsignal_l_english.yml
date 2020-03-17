@@ -1,5 +1,8 @@
 ﻿l_english:
 
+ ### Ambient Object
+ NAME_Syzygy_Remains:0 "Syzygy Remains"
+
  ### EVENT CHAINS
  WORM_CHAIN_1_title:0 "The Worm-in-Waiting: Signals"
  WORM_CHAIN_1_desc:0 "Something has reached out to us, from a place where time and space are shrunk to a knot.\n\nIt desires us."
@@ -107,8 +110,8 @@
  HORIZON_DEBRIS_PROJECT:0 "Investigate fragments at Horizon Signal origin"
  HORIZON_DEBRIS_PROJECT_DESC:0 "When the drive detonated, it interrupted the changes in space around the ship. The fragments exhibit unusual physical and temporal properties."
  
- SYZYGY_DEBRIS_PROJECT:0 "Investigate the remains of the Syzygy"
- SYZYGY_DEBRIS_PROJECT_DESC:0 "The Syzygy had spent time in another place. A possible future? An alternate universe? We can learn more."
+ SYZYGY_DEBRIS_PROJECT:0 "Investigate the remains of the "Syzygy""
+ SYZYGY_DEBRIS_PROJECT_DESC:0 "The "Syzygy" had spent time in another place. A possible future? An alternate universe? We can learn more."
  
   
  ################################################
@@ -204,14 +207,14 @@
  akx.9100.b:0 "Ominous."
 
  akx.9101.name:0 "The Loop Temple: Time and Stone"
- akx.9101.desc:0 "Our scientists have learned a great deal about the subterranean temple, but some questions remain. A roof aperture, along with the radial altar, suggests it was once a solar calendar; but it's so badly damaged by the earthquake that we can't be certain. If the builders found particular dates important, we'll never know which ones. We've had better luck with the "unknown alphabet." It's a debased variant of a better-known hieratic script - not an alien language at all - and we've successfully deciphered it. The temple is dedicated to the "Waiting Worm" or the §HWorm-in-Waiting§!. Most of the inscriptions are sonorous, poetic invocations requesting its appearance or, if read in the other direction, its departure. There is also a body of inscriptions describing the "operations of the universe," which our more excitable archaeologist swears contains references to advanced field equations - nothing new to us, but very impressive for a temple of this vintage. We have yet to find a physicist who's prepared to go on record as agreeing that the references are meaningful, though.\n\nThe temple holds no cosmic secrets or alien weapons, as far as we can tell. But its dark spaces have a distinctive, menacing beauty, and the poetry of the invocations to the Worm-in-Waiting becomes fashionable. They are set to popular music; they are published in collections."
+ akx.9101.desc:0 "Our scientists have learned a great deal about the subterranean temple, but some questions remain. A roof aperture - along with the radial altar - suggests it was once a solar calendar, but it's so badly damaged by the earthquake that we can't be certain. If the builders found any particular dates important, we'll never know which ones. We've had better luck with the "unknown alphabet." It's a debased variant of a better-known hieratic script - not an alien language at all - and we've successfully deciphered it.\n\nThe temple is dedicated to the "Waiting Worm" or the §HWorm-in-Waiting§!. Most of the inscriptions are sonorous, poetic invocations requesting its appearance or - if read in the other direction - its departure. There is also a body of inscriptions describing the "operations of the universe," which our more excitable archaeologist swears contains references to advanced field equations - nothing new to us, but very impressive for a temple of this vintage. We have yet to find a physicist who's prepared to go on record in agreeing that the references are meaningful, though.\n\nThe temple holds no cosmic secrets or alien weapons, as far as we can tell, but its dark spaces have a distinctive, menacing beauty - and the poetry of the invocations to the Worm-in-Waiting becomes fashionable. They are set to popular music; they are published in collections."
  akx.9101.a.notspiritual:0 "Open the Loop Temple to the public."
  akx.9101.a.notspiritual.tooltip:0 "Something from our past. What was, will be."
  akx.9101.a.spiritual:0 "Make the Loop Temple a place of pilgrimage."
  akx.9101.a.spiritual.tooltip:0 "A wisdom from the faith of our ancestors. What was, will be. Increases planet happiness, among other things."
  akx.9101.b:0 "Reserve the Temple for academic study only."
  akx.9101.b.tooltip:0 "Let's limit access to those who need it."
- akx.9101.c:0 "There is something wrong here. Show leadership by sealing the Temple."
+ akx.9101.c:1 "There is something wrong here. Seal the Temple."
  #small bump to Influence, worm_events_available *not* set)
  akx.9101.c.tooltip:0 "Better safe than sorry."
 
@@ -221,7 +224,7 @@
  ##THE MESSENGER: Worm-related event
 
  akx.9200.name:0 "The Messenger: §HWHAT WAS, WILL BE§!"
- akx.9200.desc:0 "The [Root.GetName] has located a small, minimally powered artificial object, broadcasting a looping signal at local range only. These sorts of things usually turn out to be escape pods, and this looks like one of those. It's been out here a long time. When the crew cracks it open - carefully observing quarantine procedures - they find ancient remains, preserved by the sterile pod environment. So far, not unusual. The captain of the [Root.GetName] indicates, however, that they did not expect to find the [Root.Owner.GetAdj] words §HWHAT WAS, WILL BE; WHAT WILL BE, WAS§! daubed on the wall in the bodily fluids of the pod's occupant - who the crew are now wryly referring to as the Messenger. They add that there are some equally unexpected anatomical similarities between the Messenger's species, and our own."
+ akx.9200.desc:0 "The [Root.GetName] has located a small, minimally powered artificial object, broadcasting a looping signal at local range only. These sorts of things usually turn out to be escape pods, and this looks like one of those. It's been out here a long time.\n\nWhen the crew cracks it open - carefully observing quarantine procedures - they find ancient remains, preserved by the sterile pod environment. So far, not unusual. The captain of the [Root.GetName] indicates, however, that they did not expect to find the [Root.Owner.GetAdj] words §HWHAT WAS, WILL BE; WHAT WILL BE, WAS§! daubed on the wall in the bodily fluids of the pod's occupant - who the crew are now wryly referring to as "the Messenger"". They add that there are some equally unexpected anatomical similarities between the Messenger's species, and our own."
  #creates the MESSENGER_POD_PROJECT_1 special project
  
  akx.9201.name:0 "The Messenger: Possibilities"
@@ -269,7 +272,7 @@
  ##A RENDEZVOUS: Worm-related event
  
  akx.9300.name:0 "A Rendezvous"
- akx.9300.desc:0 "The [Root.GetName]'s name is being hailed... by the §HSyzygy§! of [Root.Owner.GetName]. This, despite the fact that it isn't sending any ID codes we recognize, and no ship of that name has ever been commissioned. The Syzygy's commanding officer claims to be Captain [mirrored_syzygy_admiral.GetName]."
+ akx.9300.desc:1 "The [Root.GetName] is being hailed... by the "§HSyzygy§!" of the [Root.Owner.GetName]. This, despite the fact the "Syzygy" isn't sending any ID codes we recognize, and no ship of that name has ever been commissioned. Its commanding officer claims to be Captain §H[mirrored_syzygy_admiral.GetName]§!."
  akx.9300.a.admiralabsent:0 "Hm. Our admiral of that name is alive, well and elsewhere."
  akx.9300.a.admiralabsent.tooltip:0 "Open a channel."
  akx.9300.a.admiralpresent:0 "How interesting. [mirrored_syzygy_admiral.GetName] here."
@@ -278,38 +281,38 @@
  akx.9310.name:0 "A Rendezvous: the Captain that Was"
  akx.9310.desc:0 "The Captain that appears on our screen is clearly [mirrored_syzygy_admiral.GetName], but a scarred, haunted, decrepit, wrecked edition of [mirrored_syzygy_admiral.GetName], face glossy with plasma-burns, and older - much older. The bridge in the background looks just as scarred and just as decrepit. But the Captain's voice is firm and clear.\n\n§G"FINALLY you're here. I've waited so long. My punishment is to die in battle against you. Please, end me. I'm sorry."§!"
  akx.9310.a:0 "What's happening here? Are you really [mirrored_syzygy_admiral.GetName]?"
- akx.9310.a.response:0 "§G"Am I? Are you the same [Root.GetSpeciesName] you were last year? Every day is a death. Every future is a choice. Time is a labyrinth, not a road."§!\n\nA chuckle: it sounds like the chuckle hurts.\n\n§G"Ask the Loop."§!"
+ akx.9310.a.response:0 "§G"Am I? Are you the same [Root.GetSpeciesName] you were last year? Every day is a death. Every future is a choice. Time is a labyrinth, not a road."§!\n\nA chuckle. It sounds like the chuckle hurts.\n\n§G"Ask the Loop."§!"
  akx.9310.b:0 "If you want to end it, why wait? A warship is full of ways to die."
  akx.9310.b.response:0 "§G"Don't you remember? Of course, you won't, yet - and you might not, now, not if you do it right. The Loop needs its sacrifices, and it needs them just so."§! An agonized, coughing chuckle. §G"You don't want to trifle with the Loop."§!"
  akx.9310.c:0 "What is the Loop?"
- akx.9310.c.response:0 "§G"The Loop is what came first and what comes next - the §!§HWorm-in-Waiting§!§G - and, I suppose, the Worm is the Loop. Let's say Time is a labyrinth"§! - the Captain begins to gesture futilely - §G"then the Loop is its monster. Or its maker... no, I can't explain it, and you'll know more soon. You did, in my past. Weapons locked?"§!"
+ akx.9310.c.response:0 "§G"The Loop is what came first and what comes next - the §!§HWorm-in-Waiting§!§G - and, I suppose, the Worm is the Loop. Let's say Time is a labyrinth..."§! The Captain begins to gesture futilely.\n§G"Then the Loop is its monster. Or its maker... No, I can't explain it, and you'll know more soon. You did, in my past.\n\n"... Weapons locked?"§!"
  akx.9310.d.notpacifist:0 "Surrender. Whatever you've done, we can help you."
  akx.9310.d.notpacifist.response:0 "§G"Too late,"§! the Captain says, not without regret, and cuts the transmission."
- akx.9310.d.fanaticpacifist:0 "Whatever's happened, this is not our way. Surrender. We'll help you."
- akx.9310.d.fanaticpacifist.response:0 "The Captain hesitates for a long time. It becomes apparent that the bridge of the Syzygy is empty: there are no other crew.\n\n§G"It's too late for me,"§! the Captain says at last, §G"but you're right. This is not our way. I'll do what I must."§! They cut the transmission.\n\nSensors report that the Syzygy weapons are offline; the ship is powering down. Very soon, it goes dark. When our salvage team boards the ship, they find no living creature, and no sign of the captain. But someone accessed the drive section recently; and someone overrode the safety protocols that prevented entry to the core."
+ akx.9310.d.fanaticpacifist:1 "Killing is not our way. Surrender, and we'll help you."
+ akx.9310.d.fanaticpacifist.response:0 "The Captain hesitates for a long time. It becomes apparent that the bridge of the "Syzygy" is empty: there are no other crew.\n\n§G"It's too late for me,"§! the Captain says at last, §G"but you're right. This is not our way. I'll do what I must."§! They cut the transmission.\n\nSensors report that the Syzygy weapons are offline; the ship is powering down. Very soon, it goes dark. When our salvage team boards the ship, they find no living creature, and no sign of the captain. But someone accessed the drive section recently; and someone overrode the safety protocols that prevented entry to the core."
  akx.9310.e:0 "Let's finish this, then."
  akx.9310.e.response:0 "§G"[mirrored_syzygy_admiral.GetName] out."§!\n\nThe captain salutes - wincing as the movement tugs at an old wound - and closes the connection."
- akx.9310.e.materialistic:0 "Well, before you go... where you've been, did you learn anything useful?"
+ akx.9310.e.materialistic:1 "Before you go: did you learn anything useful?"
  akx.9310.e.materialistic.response:0 "The captain grins a scar-stretched grin.\n\n§G"I hoped you'd ask that. Sending data now. [mirrored_syzygy_admiral.GetName] out."§!"
  akx.9310.e.spiritual:0 "We'll remember you in our prayers."
  akx.9310.e.spiritual.response:0 "§G"And I have one more prayer for you."§!\n\nThe Captain recites an oddly resonant palindromic prayer of twenty-seven words that will fascinate your theologians, and closes the connection."
  akx.9310.e.militarist:0 "Captain. We'll meet in fire, and honor."
  akx.9310.e.militarist.response:0 "The Captain salutes.\n\n§G"I hope there'll be some sort of monument."§!\n\nThe connection cuts out."
  akx.9310.e.fanaticcollectivist:0 "Whatever's happened, this is not our way. Surrender. We'll help you."
- akx.9310.e.fanaticcollectivist.response:0 "The Captain hesitates for a long time. It becomes apparent that the bridge of the Syzygy is empty: there are no other crew.\n\n§G"It's too late for me,"§! the other [mirrored_syzygy_admiral.GetName] says at last, §G"but you're right. This is not our way. I'll do what I must."§! They cut the transmission.\n\nSensors report that the Syzygy weapons are offline; the ship is powering down. Very soon, it goes dark. When our salvage team boards the ship, they find no living crea, and no sign of the captain. But the drive chamber has been accessed recently, and the safety protocols that prevent entry have been overridden."
+ akx.9310.e.fanaticcollectivist.response:0 "The Captain hesitates for a long time. It becomes apparent that the bridge of the "Syzygy" is empty: there are no other crew.\n\n§G"It's too late for me,"§! the other [mirrored_syzygy_admiral.GetName] says at last, §G"but you're right. This is not our way. I'll do what I must."§! They cut the transmission.\n\nSensors report that the Syzygy weapons are offline; the ship is powering down. Very soon, it goes dark. When our salvage team boards the ship, they find no living crea, and no sign of the captain. But the drive chamber has been accessed recently, and the safety protocols that prevent entry have been overridden."
  akx.9310.f:0 "Traitor."
  akx.9310.f.tooltip:0 "Close channel."
 
  akx.9315.name:0 "A Rendezvous: How it Ends"
- akx.9315.desc:0 "The Syzygy is powering weapons."
+ akx.9315.desc:0 "The "Syzygy" is powering weapons."
  #spawn the Syzygy
  akx.9315.a:0 "If only there had been another way..."
  akx.9315.b:0 "So be it."
 
  akx.9319.name:0 "A Rendezvous: Interference"
- akx.9319.desc:0 "A static-speckled message comes in from the captain of Syzygy, in [syzygy_location.GetStarName]. Behind them, the bridge is wreathed in smoke. §G"Too late,"§! they cough. §G"You left it too long. The Loop won't forgive me. Please -"§!\n\nThe message ends there."
+ akx.9319.desc:0 "A static-speckled message comes in from the captain of the "Syzygy", in [syzygy_location.GetStarName]. Behind them, the bridge is wreathed in smoke. §G"Too late,"§! they cough. §G"You left it too long. The Loop won't forgive me. Please -"§!\n\nThe message ends there."
  akx.9319.a:0 "Who did this?"
- akx.9319.a.tooltip:0 "The Syzygy has been destroyed by another empire. If you reach the system before the debris dissipates, you might still find something."
+ akx.9319.a.tooltip:0 "The "Syzygy" has been destroyed by another empire. If you reach the system before the debris dissipates, you might still find something."
 
  akx.9320.name:0 "A Rendezvous: The Captain that Will Be"
  akx.9320.desc:0 "[mirrored_syzygy_admiral.GetName] is silent in the days that follow. It is no small thing to order your own death. But in time, that silence becomes a determination, and an almost reckless confidence."

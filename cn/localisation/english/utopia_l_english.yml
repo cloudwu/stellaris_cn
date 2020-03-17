@@ -30,9 +30,9 @@
  ring_world_2_DESC:0 "这一区块骨架大约相当于未完工的环形世界总表面积的四分之一，目前在其上搭建小型栖息地的工作尚未完成。"
  ring_world_3_intermediate:0 "完整环形世界区块"
  ring_world_3_intermediate_DESC:0 "一个功能完整的宜居环形世界区块，其上拥有活跃的生态圈，居民已经可以定居其中了。"
- 
+
  habitat_0_MEGASTRUCTURE_DETAILS:1 "§Y$pc_habitat$§!是一个理论上自给自足可以永久居住的太空基地。"
- habitat_0_CONSTRUCTION_INFO_DELAYED:3 "轨道栖所只能建造轨道栖所专属£building£§Y建筑§!。"
+ habitat_0_CONSTRUCTION_INFO_DELAYED:4 "居住站只可以建造居住站特有的 £building£ §Y建筑§!。若建造于拥有 £minerals£ §Y矿物§!、 £energy£ §Y能量§!或 £physics£  £society£  £engineering£ §Y研究§!资源的行星上，将可以建造特殊的 £district£ §Y区划§!。"
  habitat_0:0 "轨道栖所"
  habitat_0_DESC:0 "环绕着不宜居行星的栖息基地，能在远离地表的太空支持一定数量的§H人口§!和§H建筑§!。"
 
@@ -59,13 +59,13 @@
  allow_machine_worlds:2 "§H解锁环境改造方案：§!机械世界"
  describe_machine_worlds:6 "§Y机械世界§!是一种不适合大多数有机体居住的特殊行星类别，但不受行星地貌带来的£district£§Y电力§!和§Y矿业区§!数量限制。居住在§Y机械世界§!上的£pop£§Y人口§!§Y资源产出§!增加§G+10%§!，§Y住房使用§!减少§G10%§!。行星上所有现存的£district£§Y农业区§!都将被摧毁。"
  allow_hive_worlds:0 "§H解锁环境改造选项：§!蜂巢世界"
- describe_hive_worlds:0 "§Y蜂巢世界§!是一种不适合非蜂群思维人口居住的特殊行星类别，但不受行星地貌带来的£district£§Y电力§!、§Y矿业§!和§Y农业区§!数量限制。居住在§Y蜂巢世界§!上的£pop£§Y人口§!§Y资源产出§!增加§G+10%§!。"
- 
+ describe_hive_worlds:1 "§Y蜂巢星球§!是一种特别的星球划分，对非蜂巢思维人口来说不宜居，但是不会受限于星球特性带来的£district£ §Y发电机§!，§Y采矿§!以及§Y农业区划§!限制。£pop£ §Y人口§!居住在§Y蜂巢星球§!能够将他们的§Y资源产出§!提升§G+10%§!。"
+
  ALLOW_PSI_CORPS:0 "可以建造§H$building_psi_corps$§!。"
  ALLOW_PSI_ARMIES:0 "可以征募§H$psionic_army_plural$§!。"
- 
+
  dyson_sphere_0_MEGASTRUCTURE_DETAILS:1 "§Y$dyson_sphere_5$§!完全包裹一颗恒星，直接将恒星所有的辐射转化为£energy£能源点数。"
- dyson_sphere_0_CONSTRUCTION_INFO_DELAYED:3 "$dyson_sphere_5$将完全遮住恒星，将星系中的所有行星变成$pc_barren_cold$或$pc_frozen$。"
+ dyson_sphere_0_CONSTRUCTION_INFO_DELAYED:4 "$dyson_sphere_5$会完全遮挡住恒星，导致恒星系中所有行星变成荒芜星球或冰冻星球。"
  dyson_sphere_0:0 "戴森球基址"
  dyson_sphere_0_DESC:0 "这一建设基地将作为未来建设戴森球的基础。"
  dyson_sphere_1:0 "戴森球框架"
@@ -78,7 +78,7 @@
  dyson_sphere_4_DESC:0 "一座部分运转的戴森球——§Y75%§!能源产生效率。"
  dyson_sphere_5:0 "戴森球"
  dyson_sphere_5_DESC:0 "一座完整的戴森球——§G100%§!能源产生效率。"
- 
+
  spy_orb_0_MEGASTRUCTURE_DETAILS:1 "不同阶段的§Y$spy_orb_4$§!将逐步扩展传感范围，最终覆盖整个银河系。"
  spy_orb_0_CONSTRUCTION_INFO_DELAYED:3 "不同阶段的$spy_orb_4$将逐步扩展传感范围，最终覆盖整个银河系。"
  spy_orb_0:0 "监探阵列基址"
@@ -91,22 +91,22 @@
  spy_orb_3_DESC:0 "巨型静态天线为监探的覆盖范围带来了空前的提升。"
  spy_orb_4:0 "监探阵列"
  spy_orb_4_DESC:0 "完整的监探阵列将传感范围延伸到整个银河系。"
- 
+
  #utopia.2001.desc:0 "Word has reached us that the [From.GetName] has undertaken a construction project of monumental proportions in the SYSTEM system. They are building a massive Ring World around the system's primary, and as a first step they have converted the matter of all nearby planetary bodies into the initial metal skeleton of the megastructure.\n\nGiven the staggering size of the project and the immense challenges inherent in creating new habitats and ecosystems from scratch, it will likely be some time before the Ring World is completed."
- 
+
  15_HOSTILE_GREETING:0 "不光是我们的[Root.GetRulerTitle]，就连我们整个国家都一致鄙视你们，[From.GetSpeciesName]。事实上，只要一看到你们，我的[Root.GetSpeciesOrganName]就会咕咕作响。"
  16_HOSTILE_GREETING:0 "你们那混乱无序的社会里有什么东西值得你劳疲奔赴呢，[From.GetSpeciesName]。只有傻瓜才会相信像你们这种文化也能诞生出像我们的[Root.GetRulerTitle]一样伟大的领袖。"
  15_FRIENDLY_GREETING:0 "[From.GetSpeciesName]，你们给[Root.GetRulerTitle]留下了很好的印象。你们是[Root.GetName]的朋友。"
- 
+
  action.1.f:0 "§E[Root.GetRulerTitle][Root.GetRulerName]向你们问好，[contact_speaker.GetSpeciesNamePlural]。§!"
  action.1.g:0 "§E我们服务于[Root.GetRulerTitle][Root.GetRulerName]，[contact_speaker.GetSpeciesNamePlural]。§!"
  action.1.i:0 "§E我们追求真正的平等——不要挡我们的路。§!"
  action.1.ad:0 "§E你族不会威胁我们的[Root.GetRulerTitle]。§!"
  action.1.ar:1 "§E[Root.GetRulerName]代表[Root.GetAdj]人民发言。§!"
- 
+
  anomaly.168.d.tooltip:2 "开始一场宗教复兴，将帝国的道德准则转向§Y精神主义§!。"
  precursor.2200.desc.b:0 "在勘探了§Y[From.GetStarName]§!星系内发现的巨大环形世界后，科学官§Y[Root.GetLeaderName]§!报告称，虽然年代久远，但其设计在诸多方面与我们自己的环形世界设计相似。\n\n然而，有一处关键区别——环区块的结构似乎使用了某种我们未知的新资源。初步报告将它描述为某种“活金属”。不管怎样，应该深入研究。"
- 
+
  requires_planets_for_material:0 "$TRIGGER_FAIL$无法在缺少行星天体作为材料来源的星系内建造。"
  requires_no_existing_megastructure:1 "$TRIGGER_FAIL$由于现存的巨型结构，无法建造。"
  requires_no_existing_gateway:0 "$TRIGGER_FAIL$由于现存的星门，无法建造。"
@@ -129,10 +129,11 @@
  requires_no_black_hole_neutron_star_pulsar:0 "$TRIGGER_FAIL$无法环绕黑洞、中子星或脉冲星建造戴森球。"
  requires_no_anomaly:1 "$TRIGGER_FAIL$无法在拥有我们或其它帝国发现但未研究的异常现象的行星上建造。"
  requires_not_ring_world:0 "$TRIGGER_FAIL$无法在环形世界上建造。"
- 
+ requires_barren_planet:1 "$TRIGGER_FAIL$只能建造在荒芜星球。"
+
  progress.3.desc_08:0 "我们的殖民船温和地降落在覆盖§Y[Root.GetName]§!大部分的广阔草原上。这里的空气干燥但令人愉快，在我们的着陆点向四周望去，可以看到一大群食草动物\n\n殖民船已经永久改造为新聚落的行政总部，它的反应堆核心已经取出用作殖民地的临时电源。\n\n上百顶小帐篷和避风所已经围着星舰巨大的船体搭建起来，殖民者开始大量登陆。我们在外星世界的第一座[Root.Owner.GetSpeciesName]城市已经建立。"
  progress.3.desc_09:0 "我们的殖民船敏捷而优雅地穿梭在§Y[Root.GetName]§!犬牙差互的巨峰之间，最终着陆在理想的着陆点：一个平静安详的小山谷中。\n\n殖民船已经永久改造为新聚落的行政总部，它的反应堆核心已经取出用作殖民地的临时电源。\n\n上百顶小帐篷和避风所已经围着星舰巨大的船体搭建起来，殖民者开始大量登陆。我们在外星世界的第一座[Root.Owner.GetSpeciesName]城市已经建立。"
- 
+
  fleet_maneuvers_recruitment:0 "舰队应召热潮"
  fleet_maneuvers_recruitment_desc:0 "§L最近的舰队演习吸引了公众的兴趣。我们现在不缺新兵，这意味着我们可以花更少的资源找到合适的船员。§!"
  fleet_maneuvers:0 "舰队演习"
@@ -141,20 +142,20 @@
  maneuvers_canceled_desc:0 "§L我军领导层大量成员就最近舰队演习的取消表达了不满。他们觉得这是一种软弱的表现。我们的邻居一定会趁虚而入。§!"
  maneuvers_no_protest:0 "未能阻止舰队演习"
  maneuvers_no_protest_desc:0 "§L由于我们没有外交抗议邻国最近在我边境附近的大规模舰队演习，我军大量军人感到愤怒。§!"
- 
+
  standardized_colony_ships:0 "标准化殖民船"
- 
+
  opinion_maneuvers_hardline:0 "舰队演习"
  opinion_maneuvers_conciliatory:0 "$opinion_maneuvers_hardline$"
  opinion_maneuvers_canceled:0 "取消舰队演习"
- 
+
  FLESH_IS_WEAK_PROJECT:0 "$ap_the_flesh_is_weak$"
  FLESH_IS_WEAK_PROJECT_DESC:0 "当更有效的身体替代品出现时，非要留恋那些破旧衰老的仪器的人都是傻瓜。\n\n我们现在拥有大范围为[Root.GetName]的人口加装机械内植体的技术。我们的公民将会更强大、更迅速、更智慧，因为四肢和器官都被先进的机械版本取代。"
  SYNTHETIC_EVOLUTION_PROJECT:0 "$ap_synthetic_evolution$"
  SYNTHETIC_EVOLUTION_PROJECT_DESC:0 "放弃充满缺陷的有机体拥抱不朽的时候到了。我们必须为全体人口准备先进的合成人化身，然后开始意识转移的过程。"
- 
+
  TRAIT_IMPROVES_LEADERS:0 "§G来自于这个种族的领袖有额外的特质和加成§!"
- 
+
  trait_cybernetic:0 "半机械化"
  trait_cybernetic_desc:0 "§L此种族大量运用神经机械学，其程度致其个体可被称为半机械人。他们已经适应将有机身体部件替换成先进的机械版本。§!\n"
  trait_latent_psionic:0 "潜在灵能"
@@ -174,7 +175,7 @@
  leader_trait_scientist_erudite_desc:0 "这位领袖的智力得到了极大的提升，增强了其科学研究的能力。"
  leader_trait_ruler_erudite:0 "$leader_trait_admiral_erudite$"
  leader_trait_ruler_erudite_desc:0 "这位领袖的智力得到了极大的提升，增强了其统御国家的能力。"
- 
+
  leader_trait_admiral_cyborg:0 "半机械人"
  leader_trait_admiral_cyborg_desc:0 "这位领袖配置了军用机械内植体，可以直接操控舰队指挥和控制系统。"
  leader_trait_general_cyborg:0 "$leader_trait_admiral_cyborg$"
@@ -185,7 +186,7 @@
  leader_trait_scientist_cyborg_desc:0 "这位领袖大量配置了机械内植体。内植体提供连向所有主要研究数据库的实时神经访问能力。"
  leader_trait_ruler_cyborg:0 "$leader_trait_admiral_cyborg$"
  leader_trait_ruler_cyborg_desc:0 "这位领袖大量配置了机械内植体，其使用寿命比它们换掉的那些过时的有机身体部件要长得多。"
- 
+
  leader_trait_admiral_synthetic:0 "合成人"
  leader_trait_admiral_synthetic_desc:0 "这位合成人领袖配置了军事升级，可以直接操控舰队指挥和控制系统。"
  leader_trait_general_synthetic:0 "$leader_trait_admiral_synthetic$"
@@ -278,7 +279,7 @@
  utopia.2013.name:0 "研究中枢修复完成"
  utopia.2013.desc:0 "[From.GetName]附近遗弃的研究中枢已经彻底修复，来自[Root.GetName]的杰出人才已经入职。该巨型结构已投入使用，解答我们这个时代的科学问题，切合其毫无争议的设计目的。"
  utopia.2014.name:0 "毁坏的监探阵列"
- utopia.2014.desc:0 "证据表明，[sentry_system.GetName]星系在银河历史上的某个时刻支持过一个无比庞大的轨道设施，但它已经被系统地拆解了。大部分行星天体的的同步轨道上都密布着碎片，其中包括几个巨型空间站的笨重船体。\n\n其中最大的船体是一个巨大的§H监探阵列§!。我们的初步扫描显示，当它运行时，强大的阵列可以提供整个银河系的实时传感器覆盖。"
+ utopia.2014.desc:1 " [sentry_system.GetName] 恒星系曾几何时充斥着一系列庞大的轨道建筑，迹象显示这些建筑是被系统性地拆除的。该恒星系的大部分天体的轨道上都布满了大量的残骸，包括数个巨型的太空站废墟。\n\n其中最庞大的一个废墟是一个巨型的§H哨卫阵列§!。我们的初始扫描发现它的传感器范围在全盛状态时是可以覆盖整个宇宙的。"
  utopia.2014.a:0 "我们也有类似的东西。"
  utopia.2015.name:0 "监探阵列修复完成"
  utopia.2015.desc:0 "虽然不容易，但我们的工程师还是设法修复了[From.GetName]星系毁坏的监探阵列。在修复工程中，其他空间站的船体和围绕它们的碎片被用作了建筑材料。\n\n跨越悠久的岁月后，阵列现在充盈着能量。它强力的天线可以再次清晰观察银河的另一侧。"

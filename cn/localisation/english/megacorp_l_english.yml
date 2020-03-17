@@ -80,6 +80,7 @@
  BRANCH_OFFICE_TRADE_VALUE:0 "来自行星贸易价值：$VALUE$"
  BRANCH_OFFICE_TRADE_VALUE_CRIMINAL_SYNDICATE:0 "因行星上的£crime£§Y$PLANET_CRIME_TITLE$§!而乘以$MULT$。"
  EMPIRE_SIZE:1 "帝国规模" # FIXME urban sprawl is officially translated to 城市蔓延
+ EMPIRE_SIZE_VAL:0 "帝国规模：§Y$VALUE$§!"
  EMPIRE_SIZE_DESC:1 "§E§H$EMPIRE_SIZE$§!是衡量帝国疆域，包括控制的§H星系§!、§H殖民地§!和§H地区§!，的总体指标。§H$EMPIRE_SIZE$§!过大会对帝国的行政效率产生负面影响，同时增加§H科技§!、§H传统§!、§H领袖§!、§H法令§!和§H运动§!的花费。§!"
  EMPIRE_SIZE_TOTAL:1 "帝国总规模：$VALUE|0Y$"
  EMPIRE_SIZE_COHESION_MULT:0 "因$COHESION|0Y%$$EMPIRE_COHESION$而乘以§R$VALUE|0%$§!"
@@ -87,12 +88,12 @@
  EMPIRE_SIZE_FROM_SYSTEMS:0 "来自$NUM|Y$个$SYSTEM_SYSTEMS$：$VALUE$"
  EMPIRE_SIZE_FROM_PLANETS:0 "来自$NUM|Y$个$COLONY_COLONIES$：$VALUE$"
  EMPIRE_SIZE_FROM_BRANCH_OFFICES:0 "来自$NUM|Y$家$OFFICE_OFFICES$：$VALUE$"
- EMPIRE_SIZE_FROM_POPS:0 "来自$NUM$个$POP_POPS$：$VALUE$"
- EMPIRE_SIZE_EFFECTS:0 "我§Y$EMPIRE_SIZE$§!超出我们的§Y$MOD_COUNTRY_ADMIN_CAP_ADD$§!，我们受到下列惩罚："
- EMPIRE_SIZE_NO_EFFECTS:0 "我§Y$EMPIRE_SIZE$§!低于我们的§Y$MOD_COUNTRY_ADMIN_CAP_ADD$§!，我们不会受到任何惩罚。"
+ EMPIRE_SIZE_FROM_POPS:1 "来自$NUM|Y$ $POP_POPS$：$VALUE$"
+ EMPIRE_SIZE_EFFECTS:1 "当我们的§Y$EMPIRE_SIZE$§!超出我们的§Y$MOD_COUNTRY_ADMIN_CAP_ADD$§!时，我们会受到以下惩罚："
+ EMPIRE_SIZE_NO_EFFECTS:1 "当我们的§Y$EMPIRE_SIZE$§!不超出我们的§Y$MOD_COUNTRY_ADMIN_CAP_ADD$§!时，我们不会受到惩罚。"
  EMPIRE_SIZE_EFFECTS_TECH:2 "科技开销：§Y+$VALUE|%2$§!"
  EMPIRE_SIZE_EFFECTS_TRADITIONS:2 "树立传统的开销：§Y+$VALUE|%2$§!"
- EMPIRE_SIZE_PENALTY_MULT:0 "我§Y$EMPIRE_SIZE$惩罚§!受下列调整因素影响："
+ EMPIRE_SIZE_PENALTY_MULT:1 "我们的§Y$EMPIRE_SIZE$惩罚§!受以下修正影响："
  COHESION_LABEL:0 "内聚度"
  EMPIRE_COHESION:0 "帝国内聚度"
  EMPIRE_COHESION_DESC:0 "§E§H$EMPIRE_COHESION$§!是衡量帝国控制的所有领土的总体内聚水平的指标。拥有的星系和升级过的太空基地越多，$EMPIRE_COHESION$越高。而拥有大量出境超空间航道和境内非我方所有的孤立星系会降低$EMPIRE_COHESION$。一旦内聚度的损失超过获得数，我§H$EMPIRE_SIZE$§!就会增加，可能导致遭受惩罚。§!"
@@ -113,22 +114,22 @@
  ADMIN_CAP_VALUE:0 "$MOD_COUNTRY_ADMIN_CAP_ADD$：$VALUE|Y$"
  district_housing_tech_effect:0 "$district_city$住房：§G+1§!"
  district_housing_agrarian_idyll_tech_effect:0 "$district_farming$住房：§G+1§!"
- 
+
  ADD_NAVAL_CAPACITY_FROM_SOLDIERS:0 "$job_soldier_plural$职位贡献的军舰容量上限：§G+2§!"
- 
+
  mod_planet_branch_offices_cost_mult:0 "分公司费用"
  ap_universal_transactions:0 "普遍交易"
  ap_universal_transactions_desc:0 "我们应当扩张我们的生意和品牌到银河内的每一个星系。欲望永无止境！"
  free_commercial_pacts:0 "§Y商业合约§!不再消耗£influence£§Y影响力§!用于维护"
- 
+
  federation_tax:0 "联邦税"
  in_federation:0 "在联邦中"
- 
+
  DEVASTATION_DISABLE_FTL_INHIBITOR:0 "因破坏度高于$THRESHOLD|%Y$，行星§Y超光速拦截器§!将无法生效。"
  DEVASTATION_PROTECT_ARMIES:0 "因破坏度低于$THRESHOLD|%Y$，行星军队受到的轰炸§Y伤害减半§!。"
  DEVASTATION_PROTECT_POPS:0 "由于破坏度低于$THRESHOLD|%Y$，行星上人口无法被轰炸消灭。"
  DEVASTATION_INCREASED_DAMAGE_ARMIES:0 "因破坏度高于$THRESHOLD|%G$，行星军队受到的轰炸§Y伤害翻倍§!。"
- 
+
  BRANCH_OFFICE:0 "分公司"
  BRANCH_OFFICES:0 "分公司"
  ESTABLISH_BRANCH_OFFICE:0 "设立$BRANCH_OFFICE$"
@@ -136,10 +137,11 @@
  CLOSE_BRANCH_OFFICE:0 "关闭$BRANCH_OFFICE$"
  CLOSE_BRANCH_OFFICE_CLICK_DESC:0 "§G点击关闭我们在行星上的$BRANCH_OFFICE$§!"
  BRANCH_OFFICE_NOT_COLONY:0 "£trigger_no£§R我们只能在已殖民的行星上设立$BRANCH_OFFICES$§!"
- BRANCH_OFFICE_NOT_MEGACORP:0 "£trigger_no£§R只有§Y$auth_corporate$§!执政帝国可以设立$BRANCH_OFFICES$§!"
+ BRANCH_OFFICE_NOT_MEGACORP:1 "£trigger_no£§R只有§Y$auth_corporate$§!执政帝国可以设立$BRANCH_OFFICES$§!"
  BRANCH_OFFICE_NOT_COMMERCIAL_PACT:1 "£trigger_no£§R我们必须与该行星的所有者签订商业合约或者同处一个联邦才能设立$BRANCH_OFFICE$§!"
  BRANCH_OFFICE_CRIMINAL_HERITAGE_HAS_TRUCE:0 "£trigger_no£§R我们必须与该行星的所有者处于和平状态且无停战协定，才能设立$BRANCH_OFFICE$§!"
  BRANCH_OFFICE_CRIMINAL_COOLDOWN:0 "£trigger_no£§R当地政府最近查封了我们在行星上的$BRANCH_OFFICE$，目前依然在追捕我们的特派员。§!"
+ BRANCH_OFFICE_NOT_FALLEN_EMPIRES:0 "£trigger_no£ §RFallen Empires will never allow interstellar corporations to establish franschises on their worlds§!"
 
  ENABLE_BUILDING:0 "启用建筑"
  ENABLE_BUILDING_DESC:0 "我们可以启用建筑以使之重新为行星提供增益。不过同时我们必须开始支付其维护费用。"
@@ -152,7 +154,7 @@
  CANNOT_CHANGE_BUILDING_PRIO_COUNTRY:0 "§R建筑属于别国§!"
  CANNOT_CHANGE_BUILDING_PRIO_TOP:0 "§R建筑已享有最高优先度§!"
  CANNOT_CHANGE_BUILDING_PRIO_BOTTOM:0 "§R建筑已享有最低优先度§!"
- 
+
  CLICK_TO_SET_FORCED_GROWTH:0 "§G点击设置该行星的优先种族§!"
  NO_SPECIES_FOR_GROWTH:0 "§R行星上不存在人口能够增长的种族。§!"
 
@@ -162,7 +164,7 @@
  CLICK_TO_SET_FORCED_DECLINE:0 "§G点击设置该行星的多余种族§!"
  NO_SPECIES_FOR_DECLINE:0 "§R行星上不存在可以强制人口下降的种族。§!"
  FORCED_DECLINE_ALREADY_PURGING:0 "§R无法在正开展肃清的行星上设置多余种族§!"
- 
+
  FORCED_GROWTH:0 "优先种族"
  FORCED_GROWTH_TITLE:0 "设置优先种族"
  FORCED_GROWTH_UNSET_TITLE:0 "撤销优先种族"
@@ -189,7 +191,7 @@
  FORCED_DECLINE_SET_DESC:0 "优先$SPECIES_ADJ|Y$的人口下降，确保在$PLANET|Y$上永远选择他们的人口下降。此举会消耗$VALUE|0%R$的当前人口下降进度。"
  FORCED_DECLINE_ALREADY_SET_DESC:0 "$SPECIES|Y$种族被设置为多余种族，在$PLANET|Y$上会永远选择他们的人口下降。"
  FORCED_DECLINE_MODIFIER_DESC:0 "设置多余种族会在行星上造成下列效应："
- 
+
   ####################################
  # Trade Routes
  ####################################
@@ -215,13 +217,13 @@
  TRADE_HUB_INVALID_DESTINATION_ALREADY_EXISTING:0 "$SYSTEM|Y$已有路线终点"
  TRADE_HUB_INVALID_DESTINATION_MISSING:0 "$SYSTEM|Y$需要路线终点"
  TRADE_HUB_INVALID_SOURCE_CAPITAL:0 "$SYSTEM|Y$不可作为路线起点"
- 
+
  LEFT_CLICK_TO_SELECT:0 "§G点击选择此贸易枢纽§!"
  RIGHT_CLICK_TO_ADD:0 "§G右键点击添加此路线至贸易网络中§!"
  CURRENTLY_SELECTED:0 "§G当前选中的贸易枢纽§!"
  RIGHT_CLICK_TO_REMOVE:0 "§G右键点击自贸易网络移除此路线§!"
  LEFT_CLICK_TO_EXPAND:0 "§G点击扩展此贸易路线§!"
- 
+
  COLLECTION_RANGE:0 "收集范围"
  COLLECTION_RANGE_VALUE:0 "$COLLECTION_RANGE$：$VALUE|0+$"
  COLLECTION_RANGE_DESC:1 "这座太空基地的贸易§H收集范围§!为$VALUE|Y$。这表示它可以收集所在星系当地及最远$VALUE|Y$次跃迁星系的£trade_value£§Y贸易价值§!。\n\n每个星系的贸易价值只可由单个太空基地收集。"
@@ -232,7 +234,7 @@
  PROTECTION_POWER_VALUE:0 "$PROTECTION_POWER$：$VALUE|0+$"
  PROTECTION_POWER_DESC:1 "这座太空基地的 £trade_protection£§Y$MOD_STARBASE_TRADE_PROTECTION_ADD$§!值为$VALUE|0Y$。对于其§H保卫范围§!内的§H贸易路线§!，基地可保卫至多£trade_value£$VALUE|0Y$§H$trade_value$§!免遭§H海盗§!掠夺。"
  TRADE_VALUE_COLLECTED:0 "$VALUE|0+$"
- 
+
  TRADE_CAPITAL:0 "贸易都城"
  TRADE_CAPITAL_DESC:0 "这座太空基地是$NAME|Y$的贸易都城。所有抵达这座太空基地的贸易价值都将转化为其它更有用的资源。"
  TRADE_CAPITAL_CONNECT:0 "§E要建立一条通向你的贸易都城的贸易路线，先点击你想要连接的贸易枢纽，然后右键点击你的贸易都城§!"
@@ -267,7 +269,7 @@
  TRADE_VALUE_TOOLTIP_DESC_PROTECTION:1 "§E该贸易路线运送£trade_value£$TRADE_VALUE|1Y$，途经$SYSTEMS|0Y$个星系。派遣一支§H海盗行为压制§!值至少为$SUPPRESSION|Y0$的舰队§H巡逻§!这条贸易路线，可以有效打击§H海盗活动§!。§!"
  TRADE_VALUE_PIRATED_DESC:0 "§R我们正因海盗活动而损失贸易价值。§!"
  TRADE_VALUE_BLOCKED_DESC:0 "§R因星系被敌方阻挡，无贸易价值能通过该星系§!"
- 
+
  planet_forced_growth:0 "强制增长"
  planet_forced_decline:0 "强制下降"
  planet_forced_assembly:0 "强制装配"
@@ -364,7 +366,7 @@
  POLITICAL_POWER_DESC:0 "§E政治权力§!代表一人口在行星事务中的影响力水平。当统计行星总体§Y民众支持率§!时，政治权力高的人口的£happiness£§Y幸福度§!在最终统计结果中分量更重。"
  POLITICAL_POWER_NO_HAPPINESS_DESC:0 "此人口不影响§Y$POLITICAL_POWER$§!。"
  POP_CATEGORY_POWER_MULT:0 "因$CATEGORY$阶级乘以§Yx$VALUE$§!"
- 
+
  BRANCH_OFFICE_BUILDING:0 "企业建筑"
  BRANCH_OFFICE_BUILDINGS:0 "企业建筑"
 
@@ -470,22 +472,22 @@
  MOD_PLANET_MAX_DISTRICTS_MULT:0 "$MOD_PLANET_MAX_DISTRICTS_ADD$"
  MOD_PLANET_BUILDING_REFUND_MULT:0 "建筑退款"
  BRANCH_OFFICE_BUILDINGS_TITLE:0 "$BRANCH_OFFICE_BUILDINGS$"
- 
+
  DISTRICTS_BUILT:0 "这颗行星目前拥有$NUM|Y$块$TYPE$"
  DISTRICTS_OUT_OF_MAX:1 "这颗行星目前拥有§Y$NUM$/$MAX$§!块$TYPE$。"
  DISTRICTS_LOCKED:1 "如果障碍被清理，可以多建设$NUM|Y$块$TYPE$。"
  DISTRICTS_MAX:0 "这颗行星目前建设了§Y$NUM$/$MAX$§!块地区。"
- 
+
  RULER_JOB_TRIGGER:0 "$SPECIALIST_JOB_TRIGGER$"
  SPECIALIST_JOB_TRIGGER:0 "这类职位只有当前未遭肃清的自由民可以从事。"
  WORKER_JOB_TRIGGER:0 "这类职位只有当前未遭肃清的人口可以从事。"
  DRONE_JOB_TRIGGER:0 "这类职位只有当前未遭肃清的成员可以从事。" # FIXME drone for both 蜂群 and 机械体
- 
+
  planet_immigration:0 "行星迁入移民"
  planet_emigration:0 "行星迁出移民"
  new_colony:1 "新设殖民地"
  old_colony:0 "新设殖民地"
- 
+
  buffer:0 "缓冲" # TODO find usage
  planet_livestock:0 "家畜"
  colonies:0 "殖民地"
@@ -494,7 +496,7 @@
  campaigns:0 "运动"
  monthly_trades:0 "每月贸易"
  claims:0 "领土主张" # TODO find usage
-  
+
  district_city:0 "都市区"
  district_city_plural:0 "都市区"
  district_city_desc:0 "这些密集的城市中心地带为文职人员提供了大量住房和办公区。"
@@ -536,8 +538,8 @@
  district_hive_desc:0 "工蜂们不工作时便聚集在这些高耸的尖塔处，汲取营养，恢复活力。"
  district_nexus:0 "中枢区"
  district_nexus_plural:0 "中枢区"
- district_nexus_desc:0 "无人机在部署到工作任务之前在这些集中地区接受维修和保养。"
- 
+ district_nexus_desc:1 "被控制并部署到工作岗位的无人机来自于这些集中区划。"
+
  building_virtual_entertainment_studios:0 "虚拟娱乐工作室"
  building_virtual_entertainment_studios_desc:0 "利用纳米交易系统和神经化学保存算法，这些开发商将最新的虚拟娱乐软件带入无数智慧生物消费者的家庭和生活中。"
  building_private_shipyards:0 "民营军事工厂"
@@ -546,7 +548,7 @@
  building_military_contractors_desc:0 "这间办公室可让当地居民报名参加惊险刺激的企业佣兵生涯。丰厚的薪资、有限的健康保险和传奇冒险故事确保了新兵源源不绝。"
  building_commercial_forum:0 "商业论坛"
  building_commercial_forum_desc:0 "这里的环境轻松惬意，很适合商讨生意。活动家、政治家、当地经济领袖以及其它重要人物可以在这里会见企业代表。"
- 
+
  building_amusement_megaplex:0 "游乐城"
  building_amusement_megaplex_desc:0 "可以让你梦想成真的神奇场所，这座游乐城老少皆宜，提供的都是经过企业批准的家庭娱乐项目。"
  building_private_mining_consortium:0 "民营矿业财团"
@@ -557,19 +559,19 @@
  building_public_relations_office_desc:1 "任何大型企业都会遭受误解和怀疑。倾听任何争议各相关方面的声音符合公众利益，而这家公关公司的生意就是传达其雇主的观点。"
  building_private_research_initiative:0 "民营科技企业"
  building_private_research_initiative_desc:0 "在这些最先进的设施里，民营科技企业为其母公司进行着重要的科技研发。"
- 
+
  tech_executive_retreat:0 "高管休闲计划"
  tech_executive_retreat_desc:0 "$building_executive_retreat_desc$"
  tech_xeno_tourism_agency:0 "外星拓展中介"
  tech_xeno_tourism_agency_desc:0 "$building_xeno_tourism_agency_desc$"
- 
+
  building_temple_of_prosperity:0 "繁荣神殿"
  building_temple_of_prosperity_desc:0 "一座高度戒备的神殿，为建造它的巨型教会传播福音。"
  building_executive_retreat:0 "高管度假村"
  building_executive_retreat_desc:0 "为企业高层人员建造的豪华度假村。他们可以在这高度戒备的环境中品味行星当地的文化。"
  building_xeno_tourism_agency:0 "外星拓展中介"
  building_xeno_tourism_agency_desc:0 "这家企业中介提供各种星际旅游的宣传服务，同时也为希望搬至企业领土的潜在移民提供就业套餐和签约奖金。"
- 
+
  building_underground_chemists:0 "隐蔽制毒实验室"
  building_underground_chemists_desc:1 "位于偏远地区的地下制毒实验室，从地表丝毫不能探测到它的存在。药剂师们在这里日夜不停地生产各种非法、极易上瘾、利润丰厚的“麻醉品”。"
  building_wrecking_yards:0 "拆解厂"
@@ -588,7 +590,7 @@
  building_syndicate_outreach_office_desc:0 "这些合法企业可以让当地犯罪辛迪加以合法的外表运作。"
  building_illicit_research_labs:0 "非法研究实验室"
  building_illicit_research_labs_desc:0 "这些秘密实验室里在开展各种极端非法的研究。"
- 
+
  building_corporate_monument:0 "企业文化馆"
  building_corporate_monument_desc:0 "这里专门用来美化贯彻行星上每一桩生意的独特企业文化。"
  building_corporate_site:0 "商业管理中枢"
@@ -599,7 +601,7 @@
  building_corporate_vault_desc:0 "一座巨大的地下宝库，既是商业指挥中心，也是纪念这家巨型企业悠久盈利史的公共博物馆。"
  building_nanite_transmuter:0 "纳米变形器"
  building_nanite_transmuter_desc:3 "这座工厂使用非常先进的纳米机器人量产各种稀有资源。纳米机器人短缺会使生产停滞。"
- 
+
  building_hab_major_capital:0 "栖所控制中心"
  building_hab_major_capital_desc:1 "一座复杂的官僚机构，负责管理人口众多的栖所。"
  district_hab_housing:0 "居住区"
@@ -620,13 +622,13 @@
  district_hab_mining:0 "$building_hab_astro_mining_facility$"
  district_hab_mining_plural:0 "航天采矿湾"
  district_hab_mining_desc:1 "$building_hab_astro_mining_facility_desc$"
- 
+
  NO_POP_CATEGORY_TITLE:0 "没有类别"
  NO_POP_CATEGORY_TITLE_PLURAL:0 "没有类别"
  NO_POP_CATEGORY_TITLE_DESC:1 "这些人口不属于任何特定的阶级。"
- 
+
  MOD_POP_POLITICAL_POWER:0 "人口政治权力"
- 
+
  pop_cat_robot_servant:0 "机器仆从"
  pop_cat_robot_servant_plural:0 "机器仆从"
  pop_cat_robot_servant_desc:1 "这些机械仆从服从其主人的意愿。"
@@ -700,7 +702,7 @@
  pop_cat_simple_drone_desc:1 "这些成员负责基础工业生产，并提供一般服务。"
  mod_pop_cat_simple_drone_political_power:1 "$pop_cat_simple_drone_plural$政治权力"
  mod_pop_cat_simple_drone_happiness:0 "$pop_cat_simple_drone$幸福度"
- 
+
   # Gestalt Jobs
  job_mining_drone:0 "采矿成员" # FIXME drone for both 蜂群 and 机械体
  job_mining_drone_plural:0 "采矿成员"
@@ -709,7 +711,7 @@
  mod_job_mining_drone_add:0 "$job_mining_drone$职位"
  mod_job_mining_drone_per_pop:0 "每$VALUE$个人口§G+1§!个$job_mining_drone$职位"
  mod_job_mining_drone_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_mining_drone_add£"
- 
+
  job_warrior_drone:0 "战士成员" # FIXME drone for both 蜂群 and 机械体
  job_warrior_drone_plural:0 "战士成员"
  job_warrior_drone_desc:1 "专业训练作战成员和舰队船员的军事专家。"
@@ -717,7 +719,7 @@
  mod_job_warrior_drone_add:0 "$job_warrior_drone$职位"
  mod_job_warrior_drone_per_pop:0 "每$VALUE$个人口§G+1§!个$job_warrior_drone$职位"
  mod_job_warrior_drone_per_pop_short:0 "每$VALUE$£pop£§G+1§!£mod_job_warrior_drone_add£"
- 
+
  job_crystal_mining_drone:0 "水晶开采成员" # FIXME drone for both 蜂群 and 机械体
  job_crystal_mining_drone_plural:0 "水晶开采成员"
  job_crystal_mining_drone_desc:1 "专门从事从地层中小心地开采并精炼$rare_crystals$的矿工。"
@@ -725,7 +727,7 @@
  mod_job_crystal_mining_drone_add:0 "$job_crystal_mining_drone$职位"
  mod_job_crystal_mining_drone_per_pop:0 "每$VALUE$个人口§G+1§!个$job_crystal_mining_drone$职位"
  mod_job_crystal_mining_drone_per_pop_short:0 "每$VALUE$£pop£§G+1§!£mod_job_crystal_mining_drone_add£"
- 
+
  job_mote_harvesting_drone:0 "粉尘采集成员" # FIXME drone for both 蜂群 and 机械体
  job_mote_harvesting_drone_plural:0 "粉尘采集成员"
  job_mote_harvesting_drone_desc:1 "因为这种超自然粉尘固有的易爆特性，专门捕捉并采集这些微粒的成员具有较高的周转率。"
@@ -733,7 +735,7 @@
  mod_job_mote_harvesting_drone_add:0 "$job_mote_harvesting_drone$职位"
  mod_job_mote_harvesting_drone_per_pop:0 "每$VALUE$个人口§G+1§!个$job_mote_harvesting_drone$职位"
  mod_job_mote_harvesting_drone_per_pop_short:0 "每$VALUE$£pop£§G+1§!£mod_job_mote_harvesting_drone_add£"
- 
+
  job_gas_extraction_drone:0 "瓦斯提取成员" # FIXME drone for both 蜂群 and 机械体
  job_gas_extraction_drone_plural:0 "瓦斯提取成员"
  job_gas_extraction_drone_desc:1 "这些成员擅长使用先进的水力压裂技术从富藏岩层中提取稀有的$exotic_gases$。"
@@ -741,7 +743,7 @@
  mod_job_gas_extraction_drone_add:0 "$job_gas_extraction_drone$职位"
  mod_job_gas_extraction_drone_per_pop:0 "每$VALUE$个人口§G+1§!个$job_gas_extraction_drone$职位"
  mod_job_gas_extraction_drone_per_pop_short:0 "每$VALUE$£pop£§G+1§!£mod_job_gas_extraction_drone_add£"
- 
+
  job_agri_drone:0 "农业成员" # FIXME drone for both 蜂群 and 机械体
  job_agri_drone_plural:0 "农业成员"
  job_agri_drone_desc:1 "粮食生产需要各种工人，从种植和收割机的操作员，到浇水、施肥和施药的管理员，再到家畜饲养员。"
@@ -749,7 +751,7 @@
  mod_job_agri_drone_add:0 "$job_agri_drone$职位"
  mod_job_agri_drone_per_pop:0 "每$VALUE$个人口§G+1§!个$job_agri_drone$职位"
  mod_job_agri_drone_per_pop_short:0 "\n每$VALUE$个£pop£有§G+1§!个£mod_job_agri_drone_add£"
- 
+
  job_technician_drone:0 "技术成员" # FIXME drone for both 蜂群 and 机械体
  job_technician_drone_plural:0 "技术成员"
  job_technician_drone_desc:1 "管理监督发电厂运行的机械师、操作员和技术员。"
@@ -757,7 +759,7 @@
  mod_job_technician_drone_add:0 "$job_technician_drone$职位"
  mod_job_technician_drone_per_pop:0 "每$VALUE$个人口§G+1§!个$job_technician_drone$职位"
  mod_job_technician_drone_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_technician_drone_add£"
- 
+
  job_spawning_drone:0 "繁殖工蜂"
  job_spawning_drone_plural:0 "繁殖工蜂"
  job_spawning_drone_desc:1 "这些工蜂通过精心的温度控制、营养供应和感染消除等措施来照料产卵池内的幼年工蜂。"
@@ -765,39 +767,47 @@
  mod_job_spawning_drone_add:0 "$job_spawning_drone$职位"
  mod_job_spawning_drone_per_pop:0 "每$VALUE$个人口§G+1§!个$job_spawning_drone$职位"
  mod_job_spawning_drone_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_spawning_drone_add£"
- 
+
  job_replicator:0 "复制者"
  job_replicator_plural:0 "复制者"
  job_replicator_desc:1 "负责生产生产生产机械人的机械人的机械人的……"
- job_replicator_effect_desc:1 "£job_replicator£$job_replicator_plural$增加£mod_planet_amenities_no_happiness_add£并消耗£minerals£§Y$minerals$§!制造新的£pop£§Y机械人口§!"
+ job_replicator_effect_desc:2 "£job_replicator£ $job_replicator_plural$消耗£alloys£ §Y$alloys$§!来组装新的 £pop£ §Y机械人口§!"
  mod_job_replicator_add:0 "$job_replicator$职位"
  mod_job_replicator_per_pop:0 "每$VALUE$个人口§G+1§!个$job_replicator$职位"
  mod_job_replicator_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_replicator_add£"
- 
+
  job_synapse_drone:0 "突触工蜂"
  job_synapse_drone_plural:0 "突触工蜂"
  job_synapse_drone_desc:1 "身为突触的宏观体现，这些工蜂专注于放大主思维不断传播的指令并清除干扰。"
- job_synapse_drone_effect_desc:1 "£job_synapse_drone£$job_synapse_drone_plural$消耗£energy£§Y$energy$§!和£food£§Y$food$§!（或£minerals£ §Y$minerals$§!）产出£unity£§Y$unity$§!和£society£§Y$society_research$§!" # BUG 排版问题
+ job_synapse_drone_effect_desc:3 " £job_synapse_drone£ $job_synapse_drone_plural$将 £energy£ §Y$energy$§!和 £food£ §Y$food$§!（或 £minerals£ §Y$minerals$§!）转化为 £unity£ §Y$unity$§!和 £society£ §Y$society_research$§!"
  mod_job_synapse_drone_add:0 "$job_synapse_drone$职位"
  mod_job_synapse_drone_per_pop:0 "每$VALUE$个人口§G+1§!个$job_synapse_drone$职位"
  mod_job_synapse_drone_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_synapse_drone_add£"
- 
+
  job_coordinator:0 "协调者"
  job_coordinator_plural:0 "协调者"
  job_coordinator_desc:1 "发至和发自核心的信号必须被放大、增强并清除静电和数据损坏。"
- job_coordinator_effect_desc:0 "£job_coordinator£$job_coordinator_plural$产出£unity£§Y$unity$§!和£physics£ £society£ £engineering£ §Y研究点数§!" # BUG 无空格图标无法显示
+ job_coordinator_effect_desc:1 "£job_coordinator£ $job_coordinator_plural$将 £energy£ §Y$energy$§!转化为 £mod_country_admin_cap_add£ §Y$MOD_COUNTRY_ADMIN_CAP_ADD$§!"
  mod_job_coordinator_add:0 "$job_coordinator$职位"
  mod_job_coordinator_per_pop:0 "每$VALUE$个人口§G+1§!个$job_coordinator$职位"
  mod_job_coordinator_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_coordinator_add£ "
- 
+
+ job_evaluator:0 "评估员"
+ job_evaluator_plural:0 "评估员"
+ job_evaluator_desc:0 "智能核心的上下行信号必须经过放大，增强并清除静态变量错误与数据损坏。"
+ job_evaluator_effect_desc:0 " £job_evaluator£ $job_evaluator_plural$生产 £unity£ §Y$unity$§!"
+ mod_job_evaluator_add:0 "$job_evaluator$岗位"
+ mod_job_evaluator_per_pop:0 "每有$VALUE$人口§G+1§!$job_evaluator$岗位"
+ mod_job_evaluator_per_pop_short:0 "\n每$VALUE$ £pop£ §G+1§! £mod_job_evaluator_add£"
+
  job_maintenance_drone:0 "维护成员" # FIXME drone for both 蜂群 and 机械体
  job_maintenance_drone_plural:0 "维护成员"
- job_maintenance_drone_desc:1 "服务于机械智慧体的机械和设施必须时刻维护。其他成员也一样。" # BUG
+ job_maintenance_drone_desc:2 "服务于机械智能的机器和设施必须时刻维护。子人口也是同样的道理。"
  job_maintenance_drone_effect_desc:0 "£job_maintenance_drone£$job_maintenance_drone_plural$增加£mod_planet_amenities_no_happiness_add£§Y$PLANET_AMENITIES_TITLE$§!"
  mod_job_maintenance_drone_add:0 "$job_maintenance_drone$职位"
  mod_job_maintenance_drone_per_pop:0 "每$VALUE$个人口§G+1§!个$job_maintenance_drone$职位"
  mod_job_maintenance_drone_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_maintenance_drone_add£ "
- 
+
  job_brain_drone:0 "大脑工蜂"
  job_brain_drone_plural:0 "大脑工蜂"
  job_brain_drone_desc:1 "科学家、研究者和发明家——大脑工蜂负责国家的科技发展。"
@@ -805,11 +815,11 @@
  mod_job_brain_drone_add:0 "$job_brain_drone$职位"
  mod_job_brain_drone_per_pop:0 "每$VALUE$个人口§G+1§!个$job_brain_drone$职位"
  mod_job_brain_drone_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_brain_Drone_add£ "
- 
+
  job_calculator:0 "演算者"
  job_calculator_plural:0 "演算者"
  job_calculator_desc:1 "演算者会反复地计算、推演并测试新功能，它引导机械智能科技的发展。"
- job_calculator_effect_desc:1 "£job_calculator£$job_calculator_plural$消耗£minerals£§Y$minerals$§!产出用于研发新科技的£physics£ £society£ £engineering£§Y研究点数§!" # BUG
+ job_calculator_effect_desc:2 " £job_calculator£ $job_calculator_plural$将 £energy£ §Y$energy$§!转化为可用于研究新科技的 £physics£  £society£  £engineering£ §Y研究点数§!"
  mod_job_calculator_add:0 "$job_calculator$职位"
  mod_job_calculator_per_pop:0 "每$VALUE$个人口§G+1§!个$job_calculator$职位"
  mod_job_calculator_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_calculator_add£ "
@@ -821,7 +831,7 @@
  mod_job_fabricator_add:0 "$job_fabricator$职位"
  mod_job_fabricator_per_pop:0 "每$VALUE$个人口§G+1§!个$job_fabricator$职位"
  mod_job_fabricator_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_fabricator_add£ "
-  
+
  job_artisan_drone:0 "工匠成员" # FIXME drone for both 蜂群 and 机械体
  job_artisan_drone_plural:0 "工匠成员"
  job_artisan_drone_desc:2 "各种各样的消费品和必需品都是这些手工业成员制造的。另外，偶尔迸发的美学创作也并非乏善可陈。"
@@ -829,7 +839,7 @@
  mod_job_artisan_drone_add:0 "$job_artisan_drone$职位"
  mod_job_artisan_drone_per_pop:0 "每$VALUE$个人口§G+1§!个$job_artisan_drone$职位"
  mod_job_artisan_drone_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_artisan_drone_add£ "
-  
+
  job_alloy_drone:0 "铸造工蜂"
  job_alloy_drone_plural:0 "铸造工蜂"
  job_alloy_drone_desc:1 "高度专业化的铸造工蜂加工贵重矿物质成耐用的合金用于军事发展和高级建筑。"
@@ -837,7 +847,7 @@
  mod_job_alloy_drone_add:0 "$job_alloy_drone$职位"
  mod_job_alloy_drone_per_pop:0 "每$VALUE$个人口§G+1§!个$job_alloy_drone$职位"
  mod_job_alloy_drone_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_alloy_drone_add£ "
- 
+
  job_patrol_drone:0 "猎寻成员" # FIXME drone for both 蜂群 and 机械体
  job_patrol_drone_plural:0 "猎寻成员"
  job_patrol_drone_desc:1 "叛逆和函数损坏威胁了集体意识的稳定，必须铲除。"
@@ -845,7 +855,7 @@
  mod_job_patrol_drone_add:0 "$job_patrol_drone$职位"
  mod_job_patrol_drone_per_pop:0 "每$VALUE$个人口§G+1§!个$job_patrol_drone$职位"
  mod_job_patrol_drone_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_patrol_drone_add£ "
- 
+
  job_chemist_drone:0 "化合成员" # FIXME drone for both 蜂群 and 机械体
  job_chemist_drone_plural:0 "化合成员"
  job_chemist_drone_desc:1 "化学成员没有维护粉尘捕获器，而是通过一系列复杂化学程序直接蒸馏矿物获取$volatile_motes$。"
@@ -853,7 +863,7 @@
  mod_job_chemist_drone_add:0 "$job_chemist_drone$职位"
  mod_job_chemist_drone_per_pop:0 "每$VALUE$个人口§G+1§!个$job_chemist_drone$职位"
  mod_job_chemist_drone_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_chemist_drone_add£ "
- 
+
  job_translucer_drone:0 "透镜成员" # FIXME drone for both 蜂群 and 机械体
  job_translucer_drone_plural:0 "透镜成员"
  job_translucer_drone_desc:1 "那些难以发现矿藏的$rare_crystals$可以通过透明化程序制造出来。透镜成员精通此行。"
@@ -861,7 +871,7 @@
  mod_job_translucer_drone_add:0 "$job_translucer_drone$职位"
  mod_job_translucer_drone_per_pop:0 "每$VALUE$个人口有§G+1§!个$job_translucer_drone$职位"
  mod_job_translucer_drone_per_pop_short:0 "\n每$VALUE$个£pop£有§G+1§!个£mod_job_translucer_drone_add£ "
- 
+
  job_gas_refiner_drone:0 "精炼成员" # FIXME drone for both 蜂群 and 机械体
  job_gas_refiner_drone_plural:0 "精炼成员"
  job_gas_refiner_drone_desc:1 "$exotic_gases$精炼厂的管理和运转是由这些成员负责。"
@@ -869,7 +879,7 @@
  mod_job_gas_refiner_drone_add:0 "$job_gas_refiner_drone$职位"
  mod_job_gas_refiner_drone_per_pop:0 "每$VALUE$个人口§G+1§!个$job_gas_refiner_drone$职位"
  mod_job_gas_refiner_drone_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_gas_refiner_drone_add£ "
-  
+
  # Working Class Jobs
  job_colonist:0 "殖民者"
  job_colonist_plural:0 "殖民者"
@@ -878,7 +888,7 @@
  mod_job_colonist_add:0 "$job_colonist$职位"
  mod_job_colonist_per_pop:0 "每$VALUE$个人口§G+1§!个$job_colonist$职业"
  mod_job_colonist_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_colonist_add£ "
- 
+
  job_miner:0 "矿工"
  job_miner_plural:0 "矿工"
  job_miner_desc:0 "在现代动力钻机和其它先进工具的帮助下，采矿再也不是过去那种腰酸背痛腿抽筋的体力活，但仍然远非易事。"
@@ -886,7 +896,7 @@
  mod_job_miner_add:0 "$job_miner$职位"
  mod_job_miner_per_pop:0 "每$VALUE$个人口§G+1§!个$job_miner$职位"
  mod_job_miner_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_miner_add£ "
- 
+
  job_crystal_miner:0 "水晶矿工"
  job_crystal_miner_plural:0 "水晶矿工"
  job_crystal_miner_desc:1 "这些专业矿工被雇用来谨慎地提取并精炼$rare_crystals$。"
@@ -894,7 +904,7 @@
  mod_job_crystal_miner_add:0 "$job_crystal_miner$职位"
  mod_job_crystal_miner_per_pop:0 "每$VALUE$个人口§G+1§!个$job_crystal_miner$职位"
  mod_job_crystal_miner_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_crystal_miner_add£ "
- 
+
  job_mote_harvester:0 "粉尘采集工"
  job_mote_harvester_plural:0 "粉尘采集工"
  job_mote_harvester_desc:1 "粉尘采集是最危险的职业之一，他们需要捕获并封装$volatile_motes$以备用于燃料或炸药。"
@@ -902,7 +912,7 @@
  mod_job_mote_harvester_add:0 "$job_mote_harvester$职位"
  mod_job_mote_harvester_per_pop:0 "每$VALUE$个人口§G+1§!个$job_mote_harvester$职位"
  mod_job_mote_harvester_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_mote_harvester_add£ "
- 
+
  job_gas_extractor:0 "瓦斯提取工"
  job_gas_extractor_plural:0 "瓦斯提取工"
  job_gas_extractor_desc:1 "瓦斯提取工使用先进的水力压裂技术从富藏岩层中提取稀有的$exotic_gases$。"
@@ -910,7 +920,7 @@
  mod_job_gas_extractor_add:0 "$job_gas_extractor$职位"
  mod_job_gas_extractor_per_pop:0 "每$VALUE$个人口§G+1§!个$job_gas_extractor$职位"
  mod_job_gas_extractor_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_gas_extractor_add£ "
- 
+
  job_farmer:0 "农夫"
  job_farmer_plural:0 "农夫"
  job_farmer_desc:0 "当你从事文案工作，而你离玉米田有一千里地远时，耕种看起来非常容易。"
@@ -918,7 +928,7 @@
  mod_job_farmer_add:0 "$job_farmer$职位"
  mod_job_farmer_per_pop:0 "每$VALUE$个人口§G+1§!个$job_farmer$职位"
  mod_job_farmer_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_farmer_add£ "
- 
+
  job_technician:0 "技工"
  job_technician_plural:0 "技工"
  job_technician_desc:0 "发电厂需要大量人力操作设备并监控设备运行。"
@@ -926,7 +936,7 @@
  mod_job_technician_add:0 "$job_technician$职位"
  mod_job_technician_per_pop:0 "每$VALUE$个人口§G+1§!个$job_technician$职位"
  mod_job_technician_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_technician_add£ "
- 
+
  job_clerk:0 "职员"
  job_clerk_plural:0 "职员"
  job_clerk_desc:0 "对于任何体系庞杂的工作环境，白领职员负责处理的各类行政办公任务都是至关重要的。"
@@ -934,7 +944,7 @@
  mod_job_clerk_add:0 "$job_clerk$职位"
  mod_job_clerk_per_pop:0 "每$VALUE$个人口§G+1§!个$job_clerk$职位"
  mod_job_clerk_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_clerk_add£ "
- 
+
  job_preacher:0 "繁荣传教士"
  job_preacher_plural:0 "繁荣传教士"
  job_preacher_desc:0 "繁荣传教士向普罗大众传播一条好消息：只要为这个事业捐献一点微薄的财产，他们就能得到更多的财富。"
@@ -951,7 +961,7 @@
  mod_job_foundry_add:0 "$job_foundry$职位"
  mod_job_foundry_per_pop:0 "每$VALUE$个人口§G+1§!个$job_foundry$职位"
  mod_job_foundry_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_foundry_add£ "
- 
+
  job_enforcer:0 "执法者"
  job_enforcer_plural:0 "执法者"
  job_enforcer_desc:0 "执法者负责维护法律和秩序。"
@@ -967,7 +977,7 @@
  mod_job_slave_overseer_add:0 "$job_slave_overseer$职位"
  mod_job_slave_overseer_per_pop:0 "每$VALUE$个人口§G+1§!个$job_slave_overseer$职位"
  mod_job_slave_overseer_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_slave_overseer_add£ "
-  
+
  job_telepath:0 "读心师"
  job_telepath_plural:0 "读心师"
  job_telepath_desc:0 "灵能军团的成员，一支由具有灵能天赋的人组成的反犯罪部队。"
@@ -975,7 +985,7 @@
  mod_job_telepath_add:0 "$job_telepath$职位"
  mod_job_telepath_per_pop:0 "每$VALUE$个人口§G+1§!个$job_telepath$职位"
  mod_job_telepath_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_telepath_add£ "
-  
+
  job_soldier:0 "士兵"
  job_soldier_plural:0 "士兵"
  job_soldier_desc:1 "职业军人负责训练军队和舰队的新兵。"
@@ -983,7 +993,7 @@
  mod_job_soldier_add:0 "$job_soldier$职位"
  mod_job_soldier_per_pop:0 "每$VALUE$个人口§G+1§!个$job_soldier$职位"
  mod_job_soldier_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_soldier_add£ "
- 
+
  job_artisan:0 "工匠"
  job_artisan_plural:0 "工匠"
  job_artisan_desc:0 "技艺出色的铸造工匠制造各种的日常用品和奢侈品。"
@@ -999,7 +1009,7 @@
  mod_job_entertainer_add:0 "$job_entertainer$职位"
  mod_job_entertainer_per_pop:0 "每$VALUE$个人口§G+1§!个$job_entertainer$职位"
  mod_job_entertainer_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_entertainer_add£ "
- 
+
  job_duelist:0 "斗士"
  job_duelist_plural:0 "斗士"
  job_duelist_desc:0 "表演致命艺术娱乐大众的武术家。"
@@ -1007,7 +1017,7 @@
  mod_job_duelist_add:0 "$job_duelist$职位"
  mod_job_duelist_per_pop:0 "每$VALUE$人口§G+1§!个$job_duelist$职位"
  mod_job_duelist_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_duelist_add£"
- 
+
  job_healthcare:0 "医务工作者"
  job_healthcare_plural:0 "医务工作者"
  job_healthcare_desc:1 "微观预防胜于宏观治疗。不过有时候双管齐下才是最佳方案。"
@@ -1015,7 +1025,7 @@
  mod_job_healthcare_add:0 "$job_healthcare$职位"
  mod_job_healthcare_per_pop:0 "每$VALUE$个人口§G+1§!个$job_healthcare$职位"
  mod_job_healthcare_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_healthcare_add£ "
- 
+
  job_culture_worker:0 "文化工作者"
  job_culture_worker_plural:0 "文化工作者"
  job_culture_worker_desc:1 "这些工作人员负责维护艺术，他们对公民的内在发展和社会表达至关重要。"
@@ -1023,7 +1033,7 @@
  mod_job_culture_worker_add:0 "$job_culture_worker$职位"
  mod_job_culture_worker_per_pop:0 "每$VALUE$个人口§G+1§!个$job_culture_worker$职位"
  mod_job_culture_worker_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_culture_worker_add£ "
- 
+
  job_head_researcher:0 "科研主管"
  job_head_researcher_plural:0 "科研主管"
  job_head_researcher_desc:1 "这些专家负责协调并管理新科学技术的研发过程。"
@@ -1047,7 +1057,7 @@
  mod_job_high_priest_add:0 "$job_high_priest$职位"
  mod_job_high_priest_per_pop:0 "每$VALUE$个人口§G+1§!个$job_high_priest$职位"
  mod_job_high_priest_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_high_priest_add£ "
- 
+
  job_priest:0 "牧师"
  job_priest_plural:0 "牧师"
  job_priest_desc:1 "群众的精神指引者是由最虔诚的信徒来担当的。"
@@ -1055,7 +1065,7 @@
  mod_job_priest_add:0 "$job_priest$职位"
  mod_job_priest_per_pop:0 "每$VALUE$个人口§G+1§!个$job_priest$职位"
  mod_job_priest_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_priest_add£ "
- 
+
  job_chemist:0 "化合师"
  job_chemist_plural:0 "化合师"
  job_chemist_desc:1 "这些专家使用化学方法合成$volatile_motes$。"
@@ -1063,7 +1073,7 @@
  mod_job_chemist_add:0 "$job_chemist$职位"
  mod_job_chemist_per_pop:0 "每$VALUE$个人口§G+1§!个$job_chemist$职位"
  mod_job_chemist_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_chemist_add£ "
- 
+
  job_translucer:0 "透镜师"
  job_translucer_plural:0 "透镜师"
  job_translucer_desc:1 "这些专家负责在实验室环境中将矿物加工为$rare_crystals$。"
@@ -1071,7 +1081,7 @@
  mod_job_translucer_add:0 "$job_translucer$职位"
  mod_job_translucer_per_pop:0 "每$VALUE$个人口§G+1§!个$job_translucer$职位"
  mod_job_translucer_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_translucer_add£ "
- 
+
  job_gas_refiner:0 "精炼师"
  job_gas_refiner_plural:0 "精炼师"
  job_gas_refiner_desc:1 "将矿物精炼为$exotic_gases$的一系列复杂反应链需要先进的机器和经验丰富的专家。"
@@ -1079,7 +1089,7 @@
  mod_job_gas_refiner_add:0 "$job_gas_refiner$职位"
  mod_job_gas_refiner_per_pop:0 "每$VALUE$个人口§G+1§!个$job_gas_refiner$职位"
  mod_job_gas_refiner_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_gas_refiner_add£ "
- 
+
  job_roboticist:0 "机器人专家"
  job_roboticist_plural:0 "机器人专家"
  job_roboticist_desc:1 "这些技术人员负责建造机器人，而机器人则负责建造国家。"
@@ -1095,7 +1105,15 @@
  mod_job_manager_add:0 "$job_manager$职位"
  mod_job_manager_per_pop:0 "每$VALUE$个人口§G+1§!个$job_manager$职位"
  mod_job_manager_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_manager_add£ "
- 
+
+ job_bureaucrat:0 "官僚"
+ job_bureaucrat_plural:0 "官僚"
+ job_bureaucrat_desc:0 "管理一个帝国的职责非同小可，这需要那些敬业而且接受过良好训练的人员来承担职责。"
+ job_bureaucrat_effect_desc:0 "£job_bureaucrat£ $job_bureaucrat_plural$将 £consumer_goods£ §Y$consumer_goods$§!转化为 £mod_country_admin_cap_add£ §Y$MOD_COUNTRY_ADMIN_CAP_ADD$§!"
+ mod_job_bureaucrat_add:0 "$job_bureaucrat$岗位"
+ mod_job_bureaucrat_per_pop:0 "每有$VALUE$人口§G+1§!$job_bureaucrat$岗位"
+ mod_job_bureaucrat_per_pop_short:0 "\n每$VALUE$ £pop£ §G+1§! £mod_job_bureaucrat_add£"
+
  # Ruling Class Jobs
  job_administrator:0 "行政人员"
  job_administrator_plural:0 "行政人员"
@@ -1104,15 +1122,15 @@
  mod_job_administrator_add:0 "$job_administrator$职位"
  mod_job_administrator_per_pop:0 "每$VALUE$个人口§G+1§!个$job_administrator$职位"
  mod_job_administrator_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_administrator_add£ "
- 
+
  job_noble:0 "贵族"
  job_noble_plural:0 "贵族"
  job_noble_desc:1 "贵族的负担非常沉重，他们天生就肩负统治卑微的同胞这一使命。幸运的是，如此艰苦的岗位能够换来一些经济上的优势。"
- job_noble_effect_desc:0 "£job_noble£$job_noble_plural$增加£mod_planet_stability_add£§Y$PLANET_STABILITY_TITLE$§!和£mod_planet_amenities_add£§Y$PLANET_AMENITIES_TITLE$§!"
+ job_noble_effect_desc:1 " £job_noble£ $job_noble_plural$生产 £unity£ §Y$unity$§!和 £mod_planet_stability_add£ §Y$PLANET_STABILITY_TITLE$§!"
  mod_job_noble_add:0 "$job_noble$职位"
  mod_job_noble_per_pop:0 "每$VALUE$个人口§G+1§!个$job_noble$职位"
  mod_job_noble_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_noble_add£ "
- 
+
  job_merchant:0 "商人"
  job_merchant_plural:0 "商人"
  job_merchant_desc:1 "他们买入，他们卖出。他们囤货，他们转售。代理商、经销商、零售商、批发商——哪里有贸易，哪里就有商人。"
@@ -1128,7 +1146,7 @@
  mod_job_executive_add:0 "$job_executive$职位"
  mod_job_executive_per_pop:0 "每$VALUE$个人口§G+1§!个$job_executive$职位"
  mod_job_executive_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_executive_add£ "
- 
+
  # Special Jobs
  job_unemployed:0 "失业"
  job_unemployed_plural:0 "失业"
@@ -1136,7 +1154,7 @@
  job_livestock:0 "家畜"
  job_livestock_plural:0 "家畜"
  job_livestock_desc:1 "他们只有一个使命：成为高级生物的食物。"
- 
+
  job_purge:0 "正在净化"
  job_purge_plural:0 "正在净化"
  job_purge_desc:2 "此人口正在按照我国的政策接受肃清。"
@@ -1149,7 +1167,7 @@
  job_organic_battery:0 "已并入电网"
  job_organic_battery_plural:0 "已并入电网"
  job_organic_battery_desc:1 "他们的有机能量将被吸收，直至死亡。"
- 
+
  job_bio_trophy:0 "生化展品"
  job_bio_trophy_plural:0 "生化展品"
  job_bio_trophy_desc:1 "他们唯一的工作就是过好自己的生活。"
@@ -1157,7 +1175,7 @@
  mod_job_bio_trophy_per_pop:0 "每$VALUE$个人口§G+1§!个$job_bio_trophy$"
  mod_job_bio_trophy_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_bio_trophy_add£ "
 
- 
+
  job_scavenger_drone:0 "拾荒工蜂"
  job_scavenger_drone_plural:0 "拾荒工蜂"
  job_scavenger_drone_desc:0 "这些工蜂缺少既定目标，只好漫无目的地挖掘并拾荒，生产少量有用的£minerals£。"
@@ -1166,7 +1184,7 @@
  job_slave_toiler_plural:0 "苦工"
  job_slave_toiler_desc:0 "苦工从事艰苦的体力劳动，以维持$slave_colony$粗劣的基础设施。"
  mod_job_toiler_add:0 "$job_toiler$职位"
- 
+
  job_servant:0 "仆人"
  job_servant_plural:0 "仆人"
  job_servant_desc:1 "仆人为主人执行各种琐碎的家庭事务和家务。"
@@ -1282,28 +1300,28 @@
  job_odd_factory_drone_plural:0 "古怪工厂成员"
  job_odd_factory_drone_desc:0 "这些成员在未知来源的神秘古老工厂中工作。难道会有什么问题吗？"
  mod_job_odd_factory_drone_add:0 "$job_odd_factory_drone$职位"
- 
+
  job_underground_trade_worker:0 "地下联络官"
  job_underground_trade_worker_plural:0 "地下联络官"
  job_underground_trade_worker_desc:0 "这些联络官居住在地下，他们的职责是与地下住民搞好关系从而加强与地下文明间的贸易活动。"
  mod_job_underground_trade_worker_add:0 "$job_underground_trade_worker$职位"
  mod_job_underground_trade_worker_per_pop:0 "每$VALUE$个人口§G+1§!个$job_underground_trade_worker$职位"
  mod_job_underground_trade_worker_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_underground_trade_worker_add£ "
- 
+
  job_underground_contact_drone:0 "地下联络成员" # FIXME drone for both 蜂群 and 机械体
  job_underground_contact_drone_plural:0 "地下联络成员" # FIXME drone for both 蜂群 and 机械体
  job_underground_contact_drone_desc:0 "这些成员生活在地下，为地下文明运输资源。"
  mod_job_underground_contact_drone_add:0 "$job_underground_contact_drone$职位"
  mod_job_underground_contact_drone_per_pop:0 "每$VALUE$个人口§G+1§!个$job_underground_contact_drone$职位"
  mod_job_underground_contact_drone_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_underground_contact_drone_add£ "
- 
+
  job_dimensional_portal_researcher:0 "异次元传送门研究员"
  job_dimensional_portal_researcher_plural:0 "异次元传送门研究员"
  job_dimensional_portal_researcher_desc:0 "这些英勇的研究员冒着随时可能失去生命或丧失理智的危险去研究异次元传送门的奥秘。"
  mod_job_dimensional_portal_researcher_add:0 "$job_dimensional_portal_researcher$职位"
  mod_job_dimensional_portal_researcher_per_pop:0 "每$VALUE$个人口§G+1§!个$job_dimensional_portal_researcher$职位"
  mod_job_dimensional_portal_researcher_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£job_researcher£ "
- 
+
  job_dimensional_portal_researcher_gestalt:0 "异次元传送门成员" # FIXME drone for both 蜂群 and 机械体
  job_dimensional_portal_researcher_gestalt_plural:0 "异次元传送门成员" # FIXME drone for both 蜂群 and 机械体
  job_dimensional_portal_researcher_gestalt_desc:0 "这些成员冒着被破坏的危险去研究异次元传送门的奥秘。"
@@ -1315,16 +1333,19 @@
  job_fe_overseer_plural:0 "监督者"
  job_fe_overseer_desc:1 "拒绝奢侈生活而选择为民服务的少数伟大人士。他们现在的责任是监督并指引他们古代文明的残存。"
  mod_job_fe_overseer_add:0 "$job_fe_overseer$职位"
- 
+
  job_fe_maintenance_bot:0 "监护者"
  job_fe_maintenance_bot_plural:0 "监护者"
  job_fe_maintenance_bot_desc:0 "这些远古机械寄宿于环形世界中，不知疲倦地维护并修理其老旧的机器"
- 
+ mod_job_fe_maintenance_bot_add:0 "$job_fe_maintenance_bot$岗位"
+ mod_job_fe_maintenance_bot_per_pop:0 "每$VALUE$个人口提供§G+1§!个$job_fe_maintenance_bot$岗位"
+ mod_job_fe_maintenance_bot_per_pop_short:0 "\n每$VALUE$ £pop£ §G+1§! £mod_job_maintenance_drone_add£"
+
  job_fe_guardian_bot:0 "守卫者"
  job_fe_guardian_bot_plural:0 "守卫者"
  job_fe_guardian_bot_desc:0 "这些远古机械毫不松懈地守护着几十亿冷冻保存的智慧生物遗骸。"
  mod_job_fe_guardian_bot_add:0 "$job_fe_guardian_bot$职位"
- 
+
  job_fe_hedonist:0 "享乐者"
  job_fe_hedonist_plural:0 "享乐者"
  job_fe_hedonist_desc:1 "全面富裕的生活，所有一切的物质需求和欲望都能得到满足。"
@@ -1352,7 +1373,7 @@
  job_fe_acolyte_generator_desc:1 "同时也不要忘记超能扳手，圣光巴扎格就是使用它驯服太阳，一举终结了黑暗占据世界的阴谋。" # TODO Bazagg the Shining
  job_fe_acolyte_generator_effect_desc:0 "£job_fe_acolyte_generator£$job_fe_acolyte_generator_plural$生产£energy£§Y$energy$§!"
  mod_job_fe_acolyte_generator_add:0 "$job_fe_acolyte_generator$职位"
- 
+
  job_fe_acolyte_artisan:0 "工坊辅祭"
  job_fe_acolyte_artisan_plural:0 "工坊辅祭"
  job_fe_acolyte_artisan_desc:0 "于是阿兹纳卡对辅祭们说道，“到工坊里去吧，用你们的技艺创造你们寻求的未来”。" # TODO Aznakha
@@ -1378,7 +1399,7 @@
  job_fe_xeno_ward_plural:2 "外星保护生物"
  job_fe_xeno_ward_desc:1 "这些生物样本被运送到这个接近其栖息地生态环境的设施生活，以确保其种族得以在这个反复无常的宇宙中存活下去。"
  mod_job_fe_xeno_ward_add:0 "$job_fe_xeno_ward$职位"
- 
+
  job_fe_xeno_keeper:0 "外星物种监护者"
  job_fe_xeno_keeper_plural:0 "外星物种监护者"
  job_fe_xeno_keeper_desc:0 "这些先驱者饲养员照顾其管辖的外星动物的需求。"
@@ -1397,7 +1418,7 @@
  mod_armies_cost_mult:0 "部队成本"
  mod_planet_pops_upkeep_mult:0 "人口维护费"
  mod_deposit_blockers_cost_mult:0 "清理障碍费用"
- 
+
  mod_planet_livestock_food_produces_add:0 "£job_livestock£§Y$job_livestock_plural$§!产出的£food£$food$"
  mod_planet_metallurgists_produces_mult:0 "£job_foundry£$job_foundry_plural$产出"
  mod_planet_artisans_produces_mult:0 "£job_artisan£$job_artisan_plural$产出"
@@ -1413,11 +1434,11 @@
  mod_planet_pops_organics_minerals_upkeep_mult:0 "人口矿物消耗"
  mod_planet_pops_robotics_upkeep_mult:0 "机器人维护费"
  mod_planet_pop_assemblers_upkeep_mult:0 "人口装配成本"
- mod_planet_jobs_slave_produces_mult:0 "$pop_cat_slave$产出"
- mod_planet_jobs_worker_produces_mult:1 "$pop_cat_worker$基础资源产出"
- mod_planet_jobs_specialist_produces_mult:0 "$pop_cat_specialist$产出"
- mod_planet_jobs_ruler_produces_mult:0 "$pop_cat_ruler$产出"
- mod_planet_jobs_simple_drone_produces_mult:0 "$pop_cat_simple_drone$产出"
+ mod_planet_jobs_slave_produces_mult:1 "$pop_cat_slave$产出"
+ mod_planet_jobs_worker_produces_mult:2 "$pop_cat_worker$基础资源产出"
+ mod_planet_jobs_specialist_produces_mult:2 "$pop_cat_specialist$产出"
+ mod_planet_jobs_ruler_produces_mult:2 "$pop_cat_ruler$产出"
+ mod_planet_jobs_simple_drone_produces_mult:1 "$pop_cat_simple_drone$产出"
  mod_planet_jobs_complex_drone_produces_mult:0 "$pop_cat_complex_drone$产出"
  mod_planet_jobs_robotic_produces_mult:0 "机器人产出"
  mod_planet_jobs_consumer_goods_produces_mult:0 "£job£工作生产的£consumer_goods£$consumer_goods$"
@@ -1495,9 +1516,21 @@
  mod_planet_researchers_society_research_produces_add:0 "$mod_planet_researchers_society_research_produces_mult$"
  mod_planet_researchers_produces_mult:1 "£job_researcher£$job_researcher_plural$产出"
  mod_planet_culture_workers_produces_mult:0 "£job_culture_worker£$job_culture_worker_plural$产出"
+ mod_planet_synapse_drones_produces_mult:0 "£job_synapse_drone£ $job_synapse_drone_plural$ Output"
+ mod_planet_synapse_drones_unity_produces_mult:0 "£unity£ $job_synapse_drone_plural$ Unity Output"
+ mod_planet_evaluators_produces_mult:0 "£job_evaluator£ $job_evaluator_plural$ Output"
+ mod_planet_evaluators_unity_produces_mult:0 "£unity£ $job_evaluator_plural$ Unity Output"
+ mod_monthly_trades_energy_produces_add:0 "$mod_country_energy_produces_mult$"
+ mod_monthly_trades_rare_crystals_produces_add:0 "$mod_country_rare_crystals_produces_mult$"
+ mod_monthly_trades_volatile_motes_produces_add:0 "$mod_country_volatile_motes_produces_mult$"
+ mod_monthly_trades_exotic_gases_produces_add:0 "$mod_country_exotic_gases_produces_mult$"
+ mod_planet_bureaucrats_produces_mult:0 " £mod_country_admin_cap_add£ $MOD_COUNTRY_ADMIN_CAP_ADD$来自 £job_bureaucrat£ $job_bureaucrat_plural$"
+ mod_planet_bureaucrats_produces_add:0 "$mod_planet_bureaucrats_produces_mult$"
+ mod_planet_bureaucrats_upkeep_mult:0 " £job_bureaucrat£ $job_bureaucrat$维护费"
  mod_station_gatherers_produces_mult:0 "$mining_station$产出"
  mod_station_researchers_produces_mult:0 "$research_station$产出"
  MOD_COUNTRY_ADMIN_CAP_ADD:1 "行政管理能力"
+ MOD_COUNTRY_ADMIN_CAP_MULT:0 "$MOD_COUNTRY_ADMIN_CAP_ADD$"
  mod_diplomacy_upkeep_mult:1 "外交影响力开销"
  mod_pop_factions_influence_produces_mult:0 "党派影响力收入"
  mod_pop_factions_influence_produces_add:0 "$mod_pop_factions_influence_produces_mult$"
@@ -1516,7 +1549,10 @@
  minerals_relic_desc:0 "这台奇怪的机器可以设法将矿物从地下召唤出来，而不会影响到周围的物质。"
  energy_relic:0 "能源加速器"
  energy_relic_desc:0 "如果把它装到一台足够大的发电机上，这件装置会用一种未知而且似乎不可理喻的技术来产生额外的能源，远远超出了正常的输出。"
- 
+ MOD_COUNTRY_ENVOYS_ADD:0 "可派遣的特使"
+ MOD_ENVOY_IMPROVE_RELATIONS_MULT:0 "特使改善关系"
+ MOD_ENVOY_HARM_RELATIONS_MULT:0 "特使损害关系"
+
  #requires_building_capital:0 "§RRequires §Y$building_capital$§! on planet.§!"
  requires_building_machine_capital:0 "§R行星上需要有§Y$building_machine_capital$§!。§!"
  requires_building_hive_capital:0 "§R行星上需要有§Y$building_hive_capital$§!。§!"
@@ -1524,7 +1560,7 @@
  requires_building_system_capital:0 "§R行星上需要有§Y$building_system_capital$§!。§!"
  requires_building_machine_major_capital:1 "§R行星上需要有§Y$building_machine_major_capital$§!。§!"
  requires_building_machine_system_capital:1 "§R行星上需要有§Y$building_machine_system_capital$§!。§!"
- requires_building_hive_major_capital:1 "§R行星上需要有§Y$building_hive_major_capital$§!。§!"
+ requires_building_major_hive_capital:1 "§R需要星球上拥有§Y$building_hive_major_capital$§!。§!"
  requires_building_hab_capital:0 "§R行星上需要有§Y$building_hab_capital$§!。§!"
  requires_building_hab_major_capital:0 "§R行星上需要有§Y$building_hab_major_capital$§!。§!"
  requires_building_resort_capital:0 "§R行星上需要有§Y$building_resort_capital$§!。§!"
@@ -1574,13 +1610,13 @@
  edict_crystal_focus_desc:0 "在舰船上使用更多$rare_crystals$，可以增强其能量武器的伤害。"
  edict_nanite_actuators:0 "纳米驱动器"
  edict_nanite_actuators_desc:0 "$sr_distar_nanoactuator_desc$"
- 
+
  rare_edicts:0 "稀有法令"
  ship_edicts:0 "舰船法令"
  gas_edicts:0 "$exotic_gases$法令"
  motes_edicts:0 "$volatile_motes$法令"
  crystals_edicts:0 "$rare_crystals$法令"
- 
+
  ## BUILDINGS ##
  building_maintenance_depot:0 "维修站"
  building_maintenance_depot_desc:1 "这里是策划、管理并执行机器和建筑的维护工作的工作坊。"
@@ -1610,8 +1646,18 @@
  building_factory_3_desc:0 "这些建筑群内部的工作间可以复制几乎任何东西。"
  building_noble_estates:0 "贵族庄园"
  building_noble_estates_desc:0 "这些富丽堂皇的宫殿和庄园都属于贵族阶级。庄园周围的村庄和平民也是属于贵族的。"
- building_bureaucratic_complex:0 "官僚机构"
- building_bureaucratic_complex_desc:0 "错综复杂的政府机构，由官僚部门、下级部门以及下下级部门组成。"
+ building_bureaucratic_1:0 "行政办公楼"
+ building_bureaucratic_1_desc:0 "一个错综复杂的政府机构，包含官僚部门，次级官僚部门，以及次次级部门。"
+ building_bureaucratic_2:0 "行政园区"
+ building_bureaucratic_2_desc:0 "一个满是专用于执行高效而细致的文书工作建筑的区域。"
+ building_bureaucratic_3:0 "复合型行政区"
+ building_bureaucratic_3_desc:0 "一片广袤的土地，其上修建的是包含着无数办公室的官僚机构。"
+ building_simulation_1:0 "模拟站点"
+ building_simulation_1_desc:0 "为了使我们的文明进步，我们必须对复杂的模拟进行运行和评估。"
+ building_simulation_2:0 "模拟中心"
+ building_simulation_2_desc:0 "$building_simulation_1_desc$"
+ building_simulation_3:0 "模拟复合体"
+ building_simulation_3_desc:0 "$building_simulation_1_desc$"
  building_research_lab_1:0 "研究实验室"
  building_research_lab_1_desc:0 "研究实验室提供基础的研究设施，可以开展一般性研究。"
  building_research_lab_2:0 "研究复合体"
@@ -1634,6 +1680,8 @@
  building_robot_assembly_plant_desc:0 "高科技工厂，熟练的$job_roboticist_plural$在这里装配最新型号的机器人。"
  building_machine_assembly_plant:0 "机械装配厂"
  building_machine_assembly_plant_desc:1 "建造新单元的生产线。"
+ building_machine_assembly_complex:0 "机械组装复合体"
+ building_machine_assembly_complex_desc:0 "一处高级装配复合体，新单位在此组建。"
  building_food_processing_facility:0 "食物加工设施"
  building_food_processing_facility_desc:0 "在这些设施内加工过的食物营养价值将大大提高。"
  building_food_processing_center:0 "食物加工中心"
@@ -1654,7 +1702,7 @@
  building_mote_harvesters_desc:0 "这些设计精巧的设施用能量场捕获高爆粉尘并将送入地下的特殊隔离区，在那里对粉尘进行稳定化处理并收集。"
  building_gas_extractors:0 "瓦斯提取井"
  building_gas_extractors_desc:0 "这些笨重的提取井钻入行星地幔，从而获取大量的奇异瓦斯。"
- 
+
  building_communal_housing:0 "公共住房"
  building_communal_housing_desc:0 "统一规划的住宅，在各方面都完全一样。"
  building_communal_housing_large:1 "乌托邦公共住房"
@@ -1667,7 +1715,7 @@
  building_hive_warren_desc:0 "一座巨大的养殖场，为很多工蜂提供了休息场所。"
  building_expanded_warren:0 "拓展养殖场"
  building_expanded_warren_desc:0 "拓展之后的养殖场可容纳更多的工蜂。"
- 
+
  building_ancient_control_center:0 "远古控制中心"
  building_ancient_control_center_desc:0 "环形世界这一区块的远古控制中心，仅仅是在一群机械无人机的不懈努力下勉强维持运转。"
  building_ancient_palace:0 "远古宫殿"
@@ -1694,14 +1742,14 @@
  building_fe_dome_desc:0 "依托极度先进的反重力科技漂浮在空中的乌托邦。"
  building_fe_stronghold:0 "埃癸斯复合体"
  building_fe_stronghold_desc:0 "一座巨型星球防御基地，拥有多个储备着先进先驱者武器的军械库。"
- 
+
  mod_building_xeno_zoo_max:0 "最大$building_xeno_zoo$数"
  mod_building_crystal_mines_max:0 "最大$building_crystal_mines$数"
  mod_building_mote_harvesters_max:0 "最大$building_mote_harvesters$数"
  mod_building_gas_extractors_max:0 "最大$building_gas_extractors$数"
  mod_building_betharian_power_plant_max:0 "最大$building_betharian_power_plant$数"
- 
- ## TECHNOLOGIES ## 
+
+ ## TECHNOLOGIES ##
  tech_hive_node:0 "突触结构"
  tech_hive_node_desc:1 "在宏观突触节点的发育过程中，蜂群的意志将得到增强。"
  tech_hive_cluster:0 "突触簇"
@@ -1756,9 +1804,9 @@
  tech_orbital_trash_dispersal_desc:0 "这种轨道轰炸管理系统将会向目标星球同时发射上百万颗高速小型子弹，用垃圾信息过载行星的防御网络。装备该系统的军舰在轨道轰炸时会造成更多伤害。"
  tech_nanite_transmutation:0 "纳米变形"
  tech_nanite_transmutation_desc:2 "大规模生产各种稀有资源需要特别出色的纳米机器人。"
- 
+
  ## DEPOSITS ##
- 
+
  # Energy
  d_arid_highlands:0 "干旱高原"
  d_arid_highlands_desc:1 "这个干燥的高原生态环境生长着稀疏的沙漠草本和灌木植被。"
@@ -1788,7 +1836,7 @@
  d_numas_breath_desc:0 "这条深入行星地壳的稳定裂口是由$NAME_Caravaneer_Fleet2$制造的。"
  d_nanosands:0 "纳米沙漠"
  d_nanosands_desc:0 "这颗行星上的沙丘几乎完全由无数破碎的纳米机器人组成。它们的结构已经损坏到完全不可能再修复，但它们在行星表面形成了稀有金属层。"
- 
+
  # Minerals
  d_crystal_forest:0 "水晶森林"
  d_crystal_forest_desc:1 "闪耀的晶体散发着光芒，给这片奇异的森林盖上了一层冰霜。"
@@ -1808,7 +1856,7 @@
  d_crystalline_caverns_desc:1 "这些山洞犹如巨型的晶洞，里面布满了稀有水晶。"
  d_submerged_ore_veins:0 "深海矿脉"
  d_submerged_ore_veins_desc:2 "大量矿藏分布在海底的部分区域，很适合深海采矿。"
- 
+
  # Food
  d_bountiful_plains:0 "丰茂平原"
  d_bountiful_plains_desc:1 "肥沃的土壤和茂密的高草覆盖了这片平原，很适合改造为农田。"
@@ -1846,10 +1894,10 @@
  d_metal_boneyard_desc:1 "坍塌的建筑只剩下一副空空如也的金属骨架，风掠过，这空架子似乎发出了悲鸣声。"
  d_organic_landfill:0 "有机填埋场"
  d_organic_landfill_desc:1 "有毒的生化废料在烈日的暴晒下散发着淡淡的有毒气体。"
- 
+
  # Energy
- 
- # Special 
+
+ # Special
  d_betharian_deposit:0 "倍燃石沃野"
  d_betharian_deposit_desc:1 "数万块珍贵的倍燃石点缀着这些田野。"
  d_alien_pets_deposit:0 "孑遗山谷"
@@ -2077,7 +2125,7 @@
  d_trade_value_8:0 "£trade_value£ +8"
  d_trade_value_9:0 "£trade_value£ +9"
  d_trade_value_10:0 "£trade_value£ +10"
- 
+
  d_terraforming_gas_deposit:0 "发现环境改造气体\n"
  d_terraforming_fluid_deposit:0 "发现环境改造液体\n"
  d_neutronium_deposit:0 "发现中子矿\n    £minerals£+5"
@@ -2088,7 +2136,7 @@
  d_zro_deposit:0 "发现卓尘\n    £society£+2\n    £physics£+5\n"
  d_satramene_deposit:0 "发现赛特宁气体\n    £energy£+4\n"
  d_garanthium_deposit:0 "发现镉镧铯矿石\n    £minerals£+3\n"
- 
+
  ap_arcology_project:0 "生态城企划"
  ap_arcology_project_desc:1 "整个世界是一座城市，整座城市就是一个世界。"
  allow_arcology_project:0 "§H解锁决策：§!$ap_arcology_project$"
@@ -2106,45 +2154,47 @@
  decision_caravaneer_atmospheric_deodorizer_desc:0 "$atmospheric_deodorizer_deployed_desc$"
  decision_art_monument:0 "展览艺术纪念碑"
  decision_art_monument_desc:0 "展出艺术家团体为我国创作的振奋人心的艺术纪念碑。它肯定会启迪并鼓舞我们的公民。"
- decision_demolish_art_monument:0 "拆除艺术纪念碑"
- decision_demolish_art_monument_desc:0 "移除艺术家团体为我国创作的艺术纪念碑。"
+ decision_demolish_art_monument:1 "撤除艺术纪念碑"
+ decision_demolish_art_monument_desc:1 "撤除由艺术家联盟为我们国家创作的艺术纪念碑。它将被存放起来以备未来之用。"
  artist_monument_erected:0 "艺术纪念碑展览中"
  artist_monument_erected_desc:0 "振奋人心的艺术纪念碑（作者：艺术家团体）正在这颗行星上展览"
- 
+
  tech_resort_colonies:0 "度假星球"
  tech_resort_colonies_desc:0 "经过仔细研究景观设计、气候控制和娱乐科学，创建完全为休闲而生的星球将成为可能。"
  tech_penal_colonies:0 "流放地"
  tech_penal_colonies_desc:0 "开发特殊的流放星球，可以让罪犯通过诚实、艰苦的劳动改造而痛改前非。不过部分罪犯也许需要进行永久性劳动改造。"
  tech_slave_colonies:0 "奴隶星球"
  tech_slave_colonies_desc:0 "通过创造特殊的奴隶繁殖星球，我们可以确保一次性劳工的稳定供应。"
- 
+
  resort_colony:0 "度假星球"
  resort_colony_desc:0 "景观设计尽善尽美，具有可完全自定义的全球天气控制系统。此星球各地的设计都致力于为需要休闲的公民提供广泛的度假选择。"
  penal_colony:0 "流放地"
  penal_colony_desc:0 "此星球充满了受严格监管的重刑犯，他们被关在劳改营中偿还对社会的债务。对许多人来说，债务永远不会还清。"
  slave_colony:0 "奴隶星球"
  slave_colony_desc:0 "此星球专为最大限度地提高奴隶人口的增长率而设计。"
- 
+
  resort_colony_other_planets:0 "$resort_colony$"
  penal_colony_other_planets:0 "$penal_colony$"
- 
+
  building_slave_huts:0 "奴隶棚屋"
  building_slave_huts_desc:0 "行星奴隶人口的简陋住所。"
  building_overseer_homes:0 "监督者住宅"
  building_overseer_homes_desc:0 "这些住宅是为有些特权的奴隶监督者们准备的。"
- 
+
  decision_prospect:0 "星球勘探"
  decision_prospect_effects_short:0 "为行星添加一个随机§Y行星地貌§!。"
  decision_prospect_desc:0 "对行星进行深入调查和勘探，揭露尚未发现的天然资源。"
- 
+
  decision_resort_colony:0 "创建度假星球"
  decision_resort_colony_desc:1 "将星球划为一颗和平的度假星球，吸引来自四面八方的游客和访客。为了保护行星的自然风光，地表建设将受到很大的限制。"
  decision_resort_colony_effects_short:0 "在行星上禁止£district£§Y地区§!和大部分£building£§Y建筑§!的建设\n\n增加国内所有其它行星上的£amenities£§Y$MOD_PLANET_AMENITIES_MULT$§!"
  decision_resort_colony_no_districts:0 "£trigger_no£行星必须未遭地区建设和建筑开发的破坏。"
+ decision_resort_colony_only_one:0 "£trigger_no£ The §Y[Root.Owner.GetName]§! can only have one §Y$resort_colony$§!."
+ no_upgraded_capital_tooltip:0 "£trigger_no£ The planet may not have an upgraded capital building."
  decision_abolish_resort_colony:0 "废除行星度假设施"
  decision_abolish_resort_colony_desc:1 "星球将不再作为特殊的度假胜地，所有地表建设限制也将解除。"
  resort_colony_empire_effects:0 "帝国其它殖民地：\n    $MOD_PLANET_AMENITIES_MULT$：§G+15%§!\n    $MOD_PLANET_IMMIGRATION_PULL_MULT$：§G+15%§!"
- 
+
  decision_slave_colony:0 "创建奴隶星球"
  decision_slave_colony_desc:0 "整颗星球专为最大限度地提高奴隶人口的增长率而设计，通过各种手段促进繁殖。"
  decision_slave_colony_effects:0 "在行星上禁止£housing£§Y都市区§!和大多数£building£§Y建筑§!的建设\n允许建造£building£§Y奴隶棚屋§!\n£pop£§Y自由民§!无法在行星上继续增长"
@@ -2152,27 +2202,27 @@
  decision_slave_colony_effects_short:0 "大幅加快§Y人口增长速度§!\n\n行星变得非常不适合£pop£§Y自由民§!"
  decision_abolish_slave_colony:0 "废除奴隶星球"
  decision_abolish_slave_colony_desc:0 "星球将不再作为奴隶星球，针对其被束缚人口的繁殖促进计划也将停止。"
- 
+
  decision_penal_colony:0 "创建流放地"
  decision_penal_colony_desc:1 "将整颗星球划为巨型流放殖民地。庞大的监狱社群基本上由囚犯们自我管理，而惩罚通常意味着放逐到严酷的荒野中。"
  decision_penal_colony_effects_short:0 "提高行星上的£crime£§Y犯罪率§!，增强行星的§Y迁入吸引力§!\n\n降低国内所有其它行星上的£crime£§Y犯罪率§!"
  decision_abolish_penal_colony:0 "废除流放地"
  decision_abolish_penal_colony_desc:1 "解除这颗星球的流放殖民地状态，其居民也将享有与其它行星的居民相同的权利和责任。"
  penal_colony_empire_effects:0 "帝国其它殖民地：\n    $MOD_PLANET_CRIME_MULT$：§G-25%§!"
- 
+
  building_resort_capital:0 "度假服务中心"
  building_resort_capital_desc:0 "这座综合设施负责管理整颗度假星球。"
  building_resort_major_capital:0 "度假综合服务复合体"
  building_resort_major_capital_desc:0 "一座庞大的建筑群，能够管理更多的度假村和旅游景点。"
- 
+
  building_slave_capital:0 "总督宫殿"
  building_slave_capital_desc:0 "这颗奴隶星球统治阶级的奢华宫殿。"
  building_slave_major_capital:0 "总督庄园"
  building_slave_major_capital_desc:0 "供奴隶星球统治精英居住的奢华宫殿群。"
-  
+
  ap_xeno_compatibility:0 "跨种族兼容性"
  ap_xeno_compatibility_desc:0 "通用性别生物学的诞生彻底改变了社会。虽然有时候更换生殖接口是有点麻烦。"
- 
+
  decision_planet_food_boost:0 "鼓励行星人口增长"
  decision_planet_food_boost_desc:1 "免费分发适当的营养食品可以确保人口的健康和高速增长。"
  planet_food_boost:0 "人口增长受鼓励"
@@ -2223,7 +2273,7 @@
  decision_end_discourage_growth:0 "结束劝阻人口增长"
  decision_end_discourage_growth_desc:1 "这将撤销星球上施行的抑制人口增长的措施。"
  decision_end_discourage_growth_effects_short:0 "£pop£人口现在可以在星球上正常增长\n\n减少§G人口维护费§!"
- 
+
  decision_consecrated_worlds:1 "圣化星球"
  decision_consecrated_worlds_desc:2 "宣布此处是我们传统宗教的圣地。朝圣者们将从远道而来，欢愉地呼吸着神圣的空气。"
  decision_consecrated_worlds_effects_short:1 "册封此星球为圣地星球，增强§Y精神主义道德吸引力§!和§Y全帝国内的舒适度§!，并增加£unity£§Y凝聚力产出§!。"
@@ -2237,7 +2287,7 @@
  consecrated_worlds_unsuitable:0 "\n§Y目标可能不适合封为圣地§!"
  consecrated_worlds_suitable:0 "\n§Y目标可能较适合封为圣地§!"
  consecrated_worlds_perfect:0 "\n§Y目标自带神圣属性，理应封为圣地§!"
- 
+
  decision_martial_law:0 "宣布戒严"
  decision_martial_law_desc:0 "政府的大部分本地职能已经暂停，行星将接受军事管制，努力恢复正常的社会秩序。"
  decision_martial_law_effects_short:0 "提高£stability£§G稳定度§!，创造更多§Y$job_soldier$§!职位。\n\n减少£job£§R工作生产的资源§!，减慢£mod_pop_growth_speed£§R人口增长§!。"
@@ -2245,7 +2295,7 @@
  decision_end_martial_law:0 "结束戒严"
  decision_end_martial_law_desc:0 "结束当前的军事管制，恢复政府的民政职能。"
  decision_end_martial_law_effects_short:0 "该星球上的戒严已经结束。"
- 
+
  decision_martial_law_hive:0 "部署猎杀者工蜂"
  decision_martial_law_hive_desc:0 "通过部署这些专门训练的作战蜂，蜂群思维将能够确保行星上发现的任何不和谐分子都被消除。"
  decision_martial_law_hive_effects_short:0 "提高£stability£§G稳定度§!，创造更多§Y$job_warrior_drone$§!职位。\n\n减少£job£§R工作生产的资源§!，减慢£mod_pop_growth_speed£§R人口增长§!。"
@@ -2268,7 +2318,7 @@
  hunter_killer_drones_desc:0 "猎杀者工蜂正在积极消灭行星上的不和谐分子。"
  compliance_protocols:0 "服从协议"
  compliance_protocols_desc:0 "正在行星上积极消灭不服从无人机。"
- 
+
  mod_campaigns_cost_mult:0 "运动开销"
  mod_edicts_cost_mult:0 "法令开销"
  mod_leaders_cost_mult:0 "领袖费用"
@@ -2323,9 +2373,12 @@
  planet_metallurgists:0 "冶金职位"
  planet_artisans:0 "工匠职位"
  planet_culture_workers:0 "文化职位"
+ planet_evaluators:0 "Evaluator Jobs"
+ planet_synapse_drones:0 "Synapse Drone Jobs"
  planet_nobles:0 "贵族职位"
  planet_merchants:0 "商人职位"
  planet_entertainers:0 "艺人职位"
+ planet_bureaucrats:0 "官僚岗位"
  planet_priests:0 "牧师职位"
  planet_soldiers:0 "士兵职位"
  planet_enforcers:0 "执法职位"
@@ -2385,7 +2438,7 @@
  contingency_sabotage_desc:0 "紧急预案破坏了该行星上的电力区。"
  machine_power_failure_2:0 "紧急预案破坏了数处电力区。"
  crisis.2309.tooltip_2:0 "我们的一些人口在其居住的行星上开展了破坏活动，之后便自我终结了。"
- civic_tooltip_private_prospectors_effects:2 "§H解锁飞船类型：§!私人殖民飞船\n$MOD_COUNTRY_ADMIN_CAP_ADD$：§G+10§!"
+ civic_tooltip_private_prospectors_effects:3 "§H解锁舰船类型：§!私人殖民船\n"
  gov_communal_parity:0 "平等共同体"
  gov_communal_parity_desc:0 "这种政府相信所有公民都是完全平等的。不管他们处于什么阶级，被分配了什么工作。每一个生命与另一个生命的价值都相同。"
  RT_PRESIDING_SPEAKING:0 "首席发言官"
@@ -2467,7 +2520,7 @@
  decision_end_anticrime_campaign_desc:0 "结束目前正在进行的打击犯罪行动。"
  anticrime_campaign:0 "打黑除恶行动"
  anticrime_campaign_desc:0 "此星球上的执法者正在开展大型打黑除恶行动。"
- anticrime_campaign_tooltip:2 "执法者犯罪率降低：§G+10§!\n执法者维护费：§R+2§!£energy£"
+ anticrime_campaign_tooltip:3 "执法者犯罪减少：§G+10§!\n执法者维护费：§R+2§! £energy"
  crime_lord_deal:0 "与犯罪头目达成协议"
  crime_lord_deal_desc:0 "此星球的合法当局似乎与犯罪头目们达成了“共识”，保证最坏情况不发生。"
  crime_lord_deal_broken:0 "与犯罪头目的协议已终止"
@@ -2590,7 +2643,7 @@
  crime.1002.desc:0 "由于当地政府的大规模逮捕行动，我们设立于§H[From.Owner.GetName]§!境内的§H[From.GetName]§!上的分公司最近被迫关闭。似乎是最近[From.GetPlanetMoon]犯罪率的下降使执法部门得以集中警力阻碍我们的活动。"
  crime.1002.tooltip:0 "我们在[From.GetName]上的分公司已被关闭。"
 
- # Atomic Clock 
+ # Atomic Clock
  atomic_clock_cat:0 "$AST_DEBRIS_FIELD_1_CAT$"
  distar.330.name:0 "原子钟倒计时"
  distar.330.desc:0 "在过去的四十二年零三日里，[Root.Capital.GetName]上的研究者热切期待着在[From.From.From.GetName]上发现的精度惊人的神秘原子钟倒计时。\n\n如今，数十载热烈的推测和猜想在瞬间沸腾了，连同大部分[nuked_primitive_planet.GetName]一起。\n\n钟到达其重要的归零时刻时，向[nuked_primitive_planet.GetName]上的接收器发送了一个信号，引发了毁灭性的热核爆炸，将整颗星球和居住在那里的原始社会炸为一片废土。\n\n当我们的科学家争论这一精心定时的灭绝行为背后的原因时，原子钟仍在滴答作响，丝毫不受下面这片荒凉景象的干扰。"
@@ -2693,7 +2746,7 @@
  col_ring_mix_desc:0 "一座巨大的环形世界，其庞大的区域内均匀分布着各种生产项目。"
  col_default_machine:0 "殖民地"
  col_default_machine_desc:0 "我帝国的新殖民地，其上新单元的装配速率高于平均水平。"
- 
+
  RESOURCE_GROUP_DEFAULT:0 "§W$STORED|*0$ +$BALANCE|*0$§!"
  RESOURCE_GROUP_DEFAULT_NEG:0 "§R$STORED|*0$ $BALANCE|*0$§!"
  RESOURCE_GROUP_DEFAULT_NEG_TOTAL_POS:0 "§R$STORED|*0$ +$BALANCE|*0$§!"
@@ -2707,7 +2760,8 @@
  LIMITED_GROUP:0 "$CURRENT$ / $LIMIT$"
  NON_LIMITED_GROUP:0 "$CURRENT$"
  COLONIES_GROUP:0 "$NON_LIMITED_GROUP$"
- EMPIRE_SIZE_GROUP:0 "$NON_LIMITED_GROUP$"
+ EMPIRE_SIZE_GROUP:1 "$LIMITED_GROUP$"
+ ENVOYS_GROUP:0 "$LIMITED_GROUP$"
  POP_GROUP:0 "$NON_LIMITED_GROUP$"
  SYSTEMS_GROUP:0 "$NON_LIMITED_GROUP$"
  STARBASE_GROUP:0 "$LIMITED_GROUP$"
@@ -2730,7 +2784,7 @@
  matter_decompressor_4_DESC:1 "随着扭曲引力钻头深入奇点，配合轨道上的一系列自动物质解压器、处理器和冶炼厂，我们得以从黑洞中开采矿物。"
  matter_decompressor_4_MEGASTRUCTURE_DETAILS:0 "$matter_decompressor_0_MEGASTRUCTURE_DETAILS$"
  matter_decompressor_ruined:0 "毁坏的$matter_decompressor_4$"
- matter_decompressor_ruined_DESC:0 "一座严重失修的轨道基地，这座$matter_decompressor_4$一度游走在自然定律的边缘，从该星系的黑洞中回收物质。"
+ matter_decompressor_ruined_DESC:0 "一座破损严重的轨道空间站，这座$matter_decompressor_4$曾经从该星系的黑洞中回收物质，几乎是游离在物理法则的边缘。"
  matter_decompressor_ruined_MEGASTRUCTURE_DETAILS:1 "一座干涉黑洞的复杂设施的残骸。"
  matter_decompressor_restored:0 "$matter_decompressor_4$"
  matter_decompressor_restored_DESC:0 "$matter_decompressor_4_DESC$"
@@ -2799,7 +2853,7 @@
  mega.1100.name:0 "$strategic_coordination_center_1$"
  mega.1100.desc:0 "$strategic_coordination_center_1$雄伟地屹立着。\n\n我们的军事工程师意识到根本不可能伪装这种大小空间站的真实用途，便没有在这方面下功夫：这里充满了尖端通信设备、传感器阵列和精湛的战术后勤团队。"
  mega.1100.a.tooltip:0 "§H$strategic_coordination_center_1$§!增加§Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!、§Y$mod_shipclass_starbase_damage_mult$§!和§Y$MOD_STARBASE_DEFENSE_PLATFORM_CAPACITY_ADD$§!，加快§Y$mod_shipsize_corvette_build_speed_mult$§!、§Y$mod_shipsize_destroyer_build_speed_mult$§!、§Y$mod_shipsize_cruiser_build_speed_mult$§!和§Y$mod_shipsize_battleship_build_speed_mult$§!。"
- 
+
  underground_expansion_tooltip:0 "地下区域将为我们提供更大的扩张空间！"
 
  leviathans.105.z:0 "我们需要你的专业能力。"
@@ -3135,7 +3189,7 @@
  cara_fleet2_dealtaken:0 "祝福您，[Root.GetSpeciesNamePlural]，您的事业让我们离努玛更近了。"
  cara_fleet2_exit:0 "$cara_fleet1_exit$"
 
- fleet2getback:0 "现在不行，请稍后再联系我们。"
+ fleet2getback:1 "现在不行，请稍后再联系我们。"
  fleet2getbackreply:0 "如您所愿，[root.getspeciesnameplural]！我们离开前会再次联系您。但请记住，努玛可是位多变的女士。如果她改变了主意，那么我们的交易也将改变……"
 
  cara_fleet2_redeals.title:0 "$cara_fleet2_contact.title$：§Y最后提议§!"
@@ -3253,8 +3307,8 @@
  cara.3003.desc:0 "消息传到了[Root.Capital.GetName]，据称$NAME_Caravaneer_Fleet3$已不复存在。\n\n在与[From.GetName]发生敌对接触后，曾经名噪一时的$NAME_Caravaneer_Fleet3_species$旅商现在不过是一堆星际垃圾罢了。\n\n也许这样的结果他们会满意。"
 
  cara.4000.name:0 "§H旅商§!：幽幽青草"
- cara.4000.desc:0 "来自[pops_join_caravan_planet.GetName]的报道指出，有一批居民离开了殖民地，选择加入正穿行我们领地的[pop_join_caravan_fleet.GetName]舰队，表面上是为了冒险的梦想或者原始商贸的浓郁芳香。"
- cara.4000.a.tooltip:0 "§R3§!£pop£§H人口§!离开了§Y[pops_join_caravan_planet.GetName]§!"
+ cara.4000.desc:0 "来自 [pops_join_caravan_planet.GetName] 的报道指出，有一批居民离开了殖民地，选择加入正穿行于我们领地的 [pops_join_caravan_fleet.GetName] 舰队，他们表面上说是为了冒险的梦想，不过都是一群商人罢了。"
+ cara.4000.a.tooltip:0 "§R3§!£pop£§H人口§!离开了§Y [pops_join_caravan_planet.GetName] §!"
 
  cara.4010.name:0 "§H旅商§!：本地特许"
  cara.4010.desc:0 "来自[caravan_pops_join_planet.GetName]的紧急消息称，有一批[caravan_pops_join_country.GetName]的原成员目前在该行星上寻求政治庇护。当地行政部门决定上报这一情况，让上级官员定夺。"
@@ -3271,7 +3325,7 @@
 
  cara.4025.name:0 "$cara.4020.name$"
  cara.4025.desc:0 "大概因为是民用运输船的缘故，船载数据库并未按照报废规程进行完全清除。尽管在船上没有别的有价值的发现，我们的科学家仍设法恢复了某种未知外星科技的部分资料。"
- 
+
  cara.4030.name:0 "§H旅商§!：滚蛋！"
  cara.4030.desc:0 "今天在[disgruntled_planet.GetName]爆发了大规模抗议，由于对星系内[xeno_fleet.GetName]的愤怒。他们肮脏的存在侵犯到了所有高贵的[disgruntled_planet.owner.Species.GetNamePlural]。"
  cara.4030.a:0 "命令他们避开[disgruntled_planet.GetName]"
@@ -3286,7 +3340,7 @@
  cara.4041.phile:0 "真是太棒了！"
  cara.4041.phobe:0 "真恶心！"
  cara.4041.a:0 "生命，啊，自寻出路"
- 
+
  mega.9000.name:0 "$mega_art_installation_1$"
  mega.9000.desc:0 "打造$mega_art_installation_3$的第一阶段就将建造巨大空间站的困难与组织空前规模的博物馆关河展览的繁杂结合在了一起。基本结构完工后，保险库便成了第一要务。这保险库必须要成为安全又牢固的奇迹，专门用来容纳并保护银河系璀璨的艺术财富。"
  mega.9001.name:0 "$mega_art_installation_2$"
@@ -3392,7 +3446,7 @@
  colony.3033.desc.robot:0 "状态更新：[Root.Owner.Capital.GetName]离线。[Root.Owner.GetName]战斗能力：理想值的23%。剩余殖民地网络：[Root.GetName]。预期结果：曲速兽将在2个太阳周期内完全胜利。错误！[Root.GetName]轨道内发现曲速兽活动！错误！\n\n**§Y信号突然中断§!**"
  colony.3033.a.robot:0 "回报。"
  colony.3033.d.robot:0 "镜像宇宙[Root.Owner.Species.GetName]离线。"
- 
+
 
  # Other
  action.96.name:0 "§H银河贸易市场的诞生§!"
@@ -3425,7 +3479,7 @@
  distar.305.rare_crystals:0 "[Root.GetName]在[FromFrom.GetName]发现了以前未知的战略资源，名为§H$rare_crystals$§!。这些水晶折射特性优异，用做高端电子元件或打造激光武器系统再好不过。"
  distar.305.exotic_gases:0 "[Root.GetName]在[FromFrom.GetName]发现了以前未知的战略资源，名为§H$exotic_gases$§!。这些瓦斯不但可以用来作战还可以用于娱乐。"
  distar.305.volatile_motes:0 "[Root.GetName]在[FromFrom.GetName]发现了以前未知的战略资源，名为§H$volatile_motes$§!。这些粒子被化学激活后能够释放出爆炸动能，用于做菜也是很好的香料。"
- 
+
  leviathans.130.a:3 "§G1§!£volatile_motes£ §H$volatile_motes$§!/月交换§R10§!£energy£ §H$energy$§!/月。"
  leviathans.130.b:0 "§G2§!£volatile_motes£ §H$volatile_motes$§!/月交换§R20§!£energy£ §H$energy$§!/月。"
  leviathans.130.c:0 "§G3§!£volatile_motes£ §H$volatile_motes$§!/月交换§R30§!£energy£ §H$energy$§!/月。"
@@ -3585,7 +3639,7 @@
  casus_belli_cb_galatron:1 "银河之星访问遭到拒绝"
  war_goal_wg_take_galatron:0 "夺取银河之星"
  war_goal_wg_take_galatron_desc:0 "沐浴在银河之星的光芒之下是每一个智慧生物的权利。那些闭关锁国的文明不配成为银河之星的管理者。"
- 
+
  casus_belli_cb_expel_corp:0 "没收"
  war_goal_wg_expel_corp:0 "驱逐企业"
  war_goal_wg_expel_corp_desc:0 "战争的目的是关闭那些企业在我们行星上的分公司并没收他们的财产。"
@@ -3698,7 +3752,7 @@
  planet_pops_organics_minerals_upkeep_mult:0 "£pop£人口£minerals£矿物消耗"
 
  # Messages
- 
+
  MESSAGE_NEW_BRANCH_OFFICE_TITLE:0 "新分公司"
  MESSAGE_NEW_BRANCH_OFFICE:0 " $COUNTRY|Y$巨型企业在$PLANET|Y$上开设了新分公司。"
  MESSAGE_CLOSED_BRANCH_OFFICE_TITLE:0 "分公司关闭"
@@ -3729,7 +3783,7 @@
  building_waste_reprocessing_center:0 "废物回收中心"
  building_waste_reprocessing_center_desc:0 "行星的一站式回收中心，可将工业和有机废物转换成可重新利用的清洁能源和矿物。由$NAME_Caravaneer_Fleet3$设计，它的构造似乎涉及一些奥术，而且几乎无法逆向工程。"
 
-# Megacorp 
+# Megacorp
 
 # To Corporation Diplomacy
  DEMAND_SUBS_SELECT_01:0 "你是否提议[Root.GetName]成为你的子公司?"
@@ -3824,7 +3878,7 @@
  CORP_OVERLORD_PEACE_REFUSE_01:1 "在这一场经济浪潮之中，我们无法保证您的独立性。你们将会为了你们的无能付出代价。"
  CORP_PEACE_CONSIDER_01:1 "和平？那我们就得好好来算算这场战争对财政带来的影响了。"
  CORP_ITOA_SELECT_01:1 "[Root.GetSpeciesNamePlural]你这次准备好全力以赴了吗？§Y[From.GetName]§!像原来那样可不行啊……"
- CORP_ITOA_PROPOSE_01:1 "事实上！[Root.GetAdj]的品牌之所以能够在星际间闻名就是因为对品质的极致要求！我们的名声能够为你们未来的成功铺设出一条康庄大道。"
+ CORP_ITOA_PROPOSE_01:2 "事实上！ [Root.GetAdj] 的品牌之所以能够在星际间闻名就是因为对品质的极致要求！我们的名声能够为你们未来的成功铺设出一条康庄大道。"
  CORP_CORP_ITOA_PROPOSE_01:0 "[From.GetName]！我们联手一定可以一骑绝尘，垄断市场。现在就看你了。"
  CORP_ITOA_ACCEPT_01:1 "[From.GetSpeciesAdj]-[Root.GetSpeciesAdj]联盟的模拟收益看起来很不错，[From.GetName]，或者应该说伙伴？我们组队吧！"
  CORP_ITOA_REFUSE_01:1 "[Root.GetAdj]就是高级品质的代名词。我们不能让[From.GetAdj]坏了我们的名声。"
@@ -4011,7 +4065,7 @@
  OL_TOGGLE_VISIBILITY_SECTORS_WITH_FOCUS_DESC:0 "§H显示/隐藏§!\n切换是否显示当前有活动重心的星域。"
  OL_TOGGLE_VISIBILITY_SECTORS_NO_FOCUS:0 "显示无活动重心的星域。"
  OL_TOGGLE_VISIBILITY_SECTORS_NO_FOCUS_DESC:0 "§H显示/隐藏§!\n切换是否显示当前无活动重心的星域。"
- 
+
  OUTLINER_BRANCH_OFFICE_VALUE_CRIMINAL_SYNDICATE:0 "£energy£ $VALUE|1Y$ £crime£ $CRIME|Y0%$"
  OUTLINER_BRANCH_OFFICE_VALUE:0 "£energy£ $VALUE|1Y$"
 
@@ -4023,6 +4077,7 @@
  subjects:0 "附属国"
  rivalries:0 "劲敌"
  non_aggression_pacts:0 "互不侵犯条约"
+ migration_pacts:0 "移民条约"
  commercial_pacts:0 "商业合约"
  research_agreements:0 "研究协议"
  defensive_pacts:0 "防御条约"
@@ -4038,11 +4093,11 @@
  HAS_NOT_RIVAL:0 "与$RIVAL$非劲敌"
  HAS_RIVAL:0 "与$RIVAL$是劲敌"
  diplomacy:0 "外交"
- 
+
  getbrainname_machine:0 "核心智慧体"
  getbrainname_hive:0 "主思维"
  getbrainname_error:0 "**Error - for GCs**"
- 
+
  MEGACORPSE_ORIGINS:0 "巨型尸业起源"
  MEGACORPSE_ORIGINS_TITLE:0 "巨型尸业起源"
  MEGACORPSE_ORIGINS_DESC:0 "当经历过[Root.GetName]上的大破坏之后，我们不禁在想：到底谁才是或者说巨型尸业到底是怎样的存在？"
@@ -4069,7 +4124,7 @@
  RESETTLE_LIST_UNEMPL_LONG:0 "£unemployment£失业：$JOBS$"
  RESETTLE_HOUSING_LONG:0 "£housing£可用住房：$HOUSING$"
  RESETTLE_CRIME:0 "£crime£犯罪率：$CRIME$"
- 
+
  CREATE_VASSAL_NOT_SECTOR_OWNER:0 "我们未控制这片星域。"
  CREATE_VASSAL_CORE_SECTOR_INVALID:0 "无法在核心星域建立附庸国。"
 
@@ -4085,9 +4140,9 @@
 
  ARMY_STRENGTH:0 "£army_power£$VALUE|0Y$"
  ORBITING_ARMIES:0 "轨道军队"
- 
+
  buildable_colony_ship:0 "建造殖民船"
- 
+
  mod_station_gatherers_minerals_produces_mult:0 "采矿基地矿物产出"
  activity_program_tooltip:1 "失业工蜂将消耗1额外的£food£或£minerals£。"
  standby_mode_tooltip:0 "失业无人机能源点数维护费：§R+2§!"
@@ -4096,7 +4151,7 @@
  EXPANSION_PLANNER_RARE_DEPOSITS:0 "稀有矿藏"
  EXPANSION_PLANNER_SORT_FEATURES:0 "§H依$EXPANSION_PLANNER_RARE_DEPOSITS$排序§!"
  EXPANSION_PLANNER_FEATURE_TOOLTIP:0 "$NAME$：$DESC$"
- 
+
  all:0 "$ALL$"
  pop_assembly:0 "$planet_pop_assemblers$"
  government:0 "$GOVERNMENT$"
@@ -4132,7 +4187,7 @@
  requires_no_existing_strategic_coordination_center:0 "$TRIGGER_FAIL$只能建造一座$strategic_coordination_center_3$。"
  requires_no_existing_mega_art_installation:0 "$TRIGGER_FAIL$只能建造一座$mega_art_installtion_3$。"
  requires_no_existing_interstellar_assembly:0 "$TRIGGER_FAIL$只能建造一座$interstellar_assembly_4$。"
- 
+
  observation.1011.b:0 "这不是我们的问题。"
 
  already_bought:0 "我们已经购买了这个产品"
@@ -4145,7 +4200,7 @@
  trait_pc_machine_preference:0 "机械世界偏好"
  trait_pc_machine_preference_desc:0 "$trait_pc_arctic_preference_desc$"
 
- civic_tooltip_warrior_culture_effects:1 "$MOD_ARMY_DAMAGE_MULT$：§G+20%§!\n用£job_duelist£§Y$job_duelist$§!职位取代£job_entertainer£§Y$job_entertainer$§!职位。\n$job_duelist_effect_desc$"
+ civic_tooltip_warrior_culture_effects:1 "将 £job_entertainer£ §Y$job_entertainer$§!岗位替换为 £job_duelist£ §Y$job_duelist$§!岗位。\n$job_duelist_effect_desc$"
  RESTORE_JOBS:0 "恢复职位£job£"
  RESTORE_JOBS_COUNT:0 "$RESTORE_JOBS$（$COUNT|Y$个）"
  TOOLTIP_RESTORE_JOBS_TITLE:0 "恢复职位"
@@ -4157,7 +4212,7 @@
  CLICK_TO_FAVORITE:0 "§G点击将这个职位标注为喜爱，提升其优先级§!"
  DEVASTATION:0 "破坏度"
  AVAILABLE_JOBS:0 "£job£可用职位：$COUNT|Y$"
- 
+
  nanites_deficit:0 "纳米机器人短缺"
  nanites_deficit_tooltip:0 "纳米机器人的缺乏导致了纳米变形器的停滞。"
  mod_pop_factions_produces_mult:0 "党派影响力收入"

@@ -32,7 +32,15 @@ local function readdiff(filename)
 	return diff
 end
 
+function file_exists(name)
+	local f=io.open(name,"r")
+	if f~=nil then io.close(f) return true else return false end
+end
+
 local function merge(filename)
+	if not file_exists(diff_path .. filename .. ".diff") then
+		return
+	end
 	local diff = readdiff(diff_path .. filename .. ".diff")
 	local cn_filename = filename	-- :gsub("_english", "_simp_chinese")
 	local cn = readfile(cn_path ..  cn_filename)

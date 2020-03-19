@@ -1,7 +1,7 @@
 local en_path = "../en2.5/localisation/english/"
-local cn_path = "../cn/localisation/english/"
+local cn_path = "../cn2.5/"
 local new_path = "../en/localisation/english/"
-local diff_path = "../diff/"
+local diff_path = "../diff0/"
 local cn2_path = "../cn2.6/"
 
 local function readfile(filename)

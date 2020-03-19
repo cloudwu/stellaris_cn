@@ -1,6 +1,6 @@
 ﻿l_english:
- IS_YOU:0 "This is you"
- 
+ IS_YOU:1 "This is you"
+
  ORIGIN:0 "Origin"
  EMPIRE_ORIGIN:0 "$ORIGIN$"
  TOOLTIP_SETUP_ORIGIN:0 "Select an Origin for your Empire."
@@ -304,7 +304,8 @@
  VOTE_TYPE_MAJORITY:0 "$declare_war_majority_vote$"
  FEDERATION_SWITCH_TYPE_RATIO_POSITIVE:0 "§G$SUPPORT|0$/$TOTAL|0$§!"
  FEDERATION_SWITCH_TYPE_RATIO_NEGATIVE:0 "§R$SUPPORT|0$/$TOTAL|0$§!"
-
+ FEDERATION_MEMBER_RIVALING:0 "§RRivaling $MEMBER$§!"
+ FEDERATION_MEMBER_RIVALED:0 "§RRivaled by $MEMBER$§!"
  FED_LAW_COOLDOWN:0 "§RCannot change laws in this category for £time£ $NUMBER|Y$ days§!"
 
  law_category_centralization:0 "Federation Centralization"
@@ -409,7 +410,7 @@
  federation_build_fleets_everyone:0 "Everyone"
  federation_build_fleets_everyone_desc:0 "Any member may order the construction of new ships to the federation fleet."
 
- FEDERATION_ONLY_LEADER_BUILDS_FLEETS:0 "Only federation leader is allowed to build fleets!"
+ FEDERATION_ONLY_LEADER_BUILDS_FLEETS:1 "Only federation leader is allowed to build federation fleets!"
  FROM_FEDERATION_PERKS:0 "From Federation Perks"
  FEDERATION_PRESIDENT:0 "§BPresident§!"
  FEDERATION_COHESION:0 "Cohesion"
@@ -428,13 +429,13 @@
  FEDERATION_DIPLOMACY_WEIGHT:0 "$VALUE|0W$"
  FEDERATION_ENVOYS_COUNT:0 "$VALUE|0W$"
  FEDERATION_PROPOSE_LAW_TITLE:0 "Propose law"
- FEDERATION_PROPOSE_LAW_DESC:1 "Are you sure you wish to propose $LAW|Y$ $CATEGORY|Y$?\nA §Rfailed vote§! will result in negative effect on cohesion!"
+ FEDERATION_PROPOSE_LAW_DESC:1 "Are you sure you wish to propose $LAW|Y$ $CATEGORY|Y$?\n\nA §Rfailed vote§! will result in negative effect on cohesion!"
  FEDERATION_PROPOSE_TYPE_TITLE:0 "$CHANGE_FEDERATION_TYPE$"
- FEDERATION_PROPOSE_TYPE_DESC:1 "Are you sure you wish to change federation to $TYPE|Y$?\nA §Rfailed vote§! will result in negative effect on cohesion!"
+ FEDERATION_PROPOSE_TYPE_DESC:1 "Are you sure you wish to change federation to $TYPE|Y$?\n\nA §Rfailed vote§! will result in negative effect on cohesion!"
 
  ACTION_VOTE_FOR_FEDERATION_LAW_TITLE:0 "Vote for Federation Law"
  ACTION_VOTE_FOR_FEDERATION_LAW_LONG_DESC:0 "Vote for proposed change to $LAW|Y$ $CATEGORY|Y$ law"
- 
+
  ACTION_VOTE_FOR_FEDERATION_TYPE_TITLE:0 "Vote for Federation Type"
  ACTION_VOTE_FOR_FEDERATION_TYPE_LONG_DESC:0 "Vote for proposed change to $TYPE|Y$ federation type"
  ACTION_VOTE_FOR_FEDERATION_TYPE_OFFER_DESC:0 ""
@@ -884,6 +885,7 @@
  resolution_industry_project_cornucopia_tooltip:0 "Unlocks a §HPlanetary Decision§! that permits strip mining our worlds to uncover rich mineral deposits."
 
  decision_project_cornucopia:0 "$resolution_industry_project_cornucopia$"
+ decision_project_cornucopia_desc:0 "$resolution_industry_project_cornucopia_desc$"
  decision_project_cornucopia_effects_short:0 "Strip-mines this world, adding §G+4§! §Y$district_mining_plural$§!, §G+5%§! §Y$mod_planet_jobs_minerals_produces_mult$§!, and §R-20%§! §Y$pop_habitability$§!."
  d_project_cornucopia:0 "$resolution_industry_project_cornucopia$"
 
@@ -1251,12 +1253,12 @@
  resolution_galactic_focus_crisis_nanites_desc:0 "The nanites from the L-Cluster are a threat to the entire galaxy. If we do not unite to stop the nanite swarm, they will destroy us all. We should make dealing with this crisis the Galactic Focus."
  resolution_galactic_focus_crisis_nanites_effect_success:0 "$resolution_galactic_focus_crisis_effect_success$"
 
- resolution_galactic_focus_war_in_heaven_support_side_1:0 "Focus: Denounce [FirstAwakened.GetName]"
- resolution_galactic_focus_war_in_heaven_support_side_1_desc:0 "The [FirstAwakened.GetName] are clearly in the wrong in this war, and we should declare unified support for the [SecondAwakened.GetName]."
+ resolution_galactic_focus_war_in_heaven_support_side_1:0 "Focus: Denounce [SecondAwakened.GetName]"
+ resolution_galactic_focus_war_in_heaven_support_side_1_desc:0 "The [SecondAwakened.GetName] are clearly in the wrong in this war, and we should declare unified support for the [SecondAwakened.GetName]."
  resolution_galactic_focus_war_in_heaven_support_side_1_success:0 "Joining the §Y[SecondAwakened.GetName]§! in the §YWar in Heaven§! is considered a §RBreach of Galactic Law§!."
 
- resolution_galactic_focus_war_in_heaven_support_side_2:0 "Focus: Denounce [SecondAwakened.GetName]"
- resolution_galactic_focus_war_in_heaven_support_side_2_desc:0 "The [SecondAwakened.GetName] are clearly in the wrong in this war, and we should declare unified support for the [FirstAwakened.GetName]."
+ resolution_galactic_focus_war_in_heaven_support_side_2:0 "Focus: Denounce [FirstAwakened.GetName]"
+ resolution_galactic_focus_war_in_heaven_support_side_2_desc:0 "The [FirstAwakened.GetName] are clearly in the wrong in this war, and we should declare unified support for the [FirstAwakened.GetName]."
  resolution_galactic_focus_war_in_heaven_support_side_2_success:0 "Joining the §Y[FirstAwakened.GetName]§! in the §YWar in Heaven§! is considered a §RBreach of Galactic Law§!."
 
  resolution_galactic_focus_war_in_heaven_denounce_both:0 "Focus: Denounce Both Awakened Empires"
@@ -1362,7 +1364,7 @@
  WEAK_SUPPORT:0 "§RWeak Support§!"
  INTERMEDIATE_SUPPORT:0 "§YIntermediate Support§!"
  STRONG_SUPPORT:0 "§GStrong Support§!"
- 
+
  CHANGE_FEDERATION_TYPE:0 "Change Federation Type"
  CHANGE_FEDERATION_TYPE_DESC:0 "Are you sure you wish to change to $TYPE|Y$? This will reset your Federation to §YLevel 1§!. A cohesion penalty of $PENALTY|+0$(per member) will be applied"
  CHANGE_FEDERATION_TYPE_CURRENT_DESC:0 "Current federation type selected"
@@ -2799,6 +2801,7 @@
 
  BUILD_PLAN:0 "Build Plan"
  BUILD_PLAN_ENTRY:0 "$BUILDABLE|Y$ on $PLANET|Y$ ($WEIGHT|Y0$)"
+ NO_BUILD_PLAN_DESC:0 "$COUNTRY|Y$ currently has no Build Plan"
 
  action.123.name:0 "Last [From.GetSpeciesNamePlural] Abducted"
  action.123.desc:0 "The last of the primitive §H[From.GetSpeciesNamePlural]§! have been abducted into slavery from the surface of [From.From.GetName], their homeworld. A few scattered survivors might still be roaming the [From.From.GetPlanetMoon]'s wilderness, but not enough to maintain any kind of civilization."
@@ -2967,10 +2970,10 @@
  # Colony Events
  ####################################
  colony_fed.100.name:0 "Impossible Corrie"
- colony_fed.100.desc:0 "A geological anomaly has come to our attention on [Root.GetName]. We began surveying after a bowl-shaped depression suddenly appeared alongside a mining facility there. Features like this almost never found outside of a glacial region, but furthermore: the walls of this 'cirque' have been found to resonate when exposed to certain electro-magnetic bands. Investigations are ongoing."
+ colony_fed.100.desc:1 "A geological anomaly has come to our attention on [Root.GetName]. We began surveying after a bowl-shaped depression suddenly appeared alongside a mining facility there. Features like this are almost never found outside of a glacial region, but stranger still: the walls of this 'cirque' scatter visible light in a flower-petal pattern, and have been found to resonate when exposed to certain electro-magnetic bands. Investigations are ongoing."
 
  colony_fed.105.name:0 "Project Blue Lotus"
- colony_fed.105.desc:0 "Our scientists report that the newly-uncovered, crystalline blue deposits on [Root.GetName] respond dramatically to delayed-erasure photon energy. The minerals filter its wavelengths and reflect a beam which is capable of transforming ordinary silicates into a new, super-conductive alloy.\n\nGiven that this process essentially involves bouncing high levels of radiation around an enclosed space, some caution is being advised. A vocal group of excited researchers offers a counter-argument, stressing that this phenomenon could revolutionize the way we refine precious metals. Either way: developing this technique further will be costly."
+ colony_fed.105.desc:1 "Our scientists report that the newly-uncovered, crystalline blue deposits on [Root.GetName] respond dramatically to delayed-erasure photon energy. The minerals filter its wavelengths and reflect a beam which is capable of transforming ordinary silicates into a new, super-conductive alloy — though only ever during daylight.\n\nGiven that this process essentially involves bouncing high levels of radiation around an enclosed space, some scientists have already come out in protest. A different group of excited researchers offers a counter-argument, stressing that this phenomenon could revolutionize the way we refine precious metals. Either way: developing this technique further will be costly."
  colony_fed.105.gestalt.desc:0 "A rogue drone has been found running its own project within the cirque on [Root.GetName]. Driven by its initial directive - to refine our methods of mineral extraction - it has since stumbled onto a means of transforming everyday silicates into a new type of alloy.\n\nThe process seems to involve bouncing high-energy beams off mineral deposits in the feature's wall. The drone's eagerness in its task has caused it to flood the area with excessive levels of radiation. It has therefore been isolated pending either re-integration, or destruction of its individuality and acquired knowledge."
  colony_fed.105.a:0 "Bring it back into the fold."
  colony_fed.105.b:0 "Let's see where this research goes."
@@ -3132,14 +3135,68 @@
 
  triggered_opinion_federation_midas:0 "$midas_stigma$"
 
- REMOVE_WAR_PARTICIPANT_EFFECT:0 "$COUNTRY$ is removed from the $WAR$"
- effect_random_war:0 "Random War"
- effect_every_war:0 "Every War"
- count_war_trigger:0 "Number of Federations $IS_NOT$ $COMPARATOR$ $NUM|Y$"
- effect_every_galaxy_species:0 "Every Species in the Galaxy"
- effect_random_galaxy_species:0 "Random Species in the Galaxy"
+ REMOVE_WAR_PARTICIPANT_EFFECT:1 "$COUNTRY$ is removed from the $WAR$"
+ effect_random_war:1 "Random War"
+ effect_every_war:1 "Every War"
+ count_war_trigger:1 "Number of Federations $IS_NOT$ $COMPARATOR$ $NUM|Y$"
+ effect_every_galaxy_species:1 "Every Species in the Galaxy"
+ effect_random_galaxy_species:1 "Random Species in the Galaxy"
 
  fedel.906.name:0 "$fedel.904.name$"
  fedel.906.desc.a:0 "$ethic_materialist_appreciation_friendly$\n\n$fedel.904.a$\n$fedel.904.a.tooltip$"
  fedel.906.desc.b:0 "$ethic_materialist_appreciation_friendly$\n\n$fedel.904.b$\n$fedel.904.b.tooltip$"
  fedel.906.desc.c:0 "$ethic_materialist_appreciation_friendly$\n\n$fedel.904.c$\n$fedel.904.c.tooltip$"
+
+ cannot_change_succession_type_during_war:0 "Cannot change federation succession type while at war."
+ cannot_change_succession_term_during_war:0 "Cannot change federation succession term while at war."
+
+ FED_WE_MUST_COMPLY:0 "We shall comply"
+ FED_THE_BAREST_MINIMUM:0 "Give them the barest minimum to comply"
+ FED_WE_WILL_RETAIN:0 "We will retain our current policies"
+ FED_WE_WILL_NOT_SUBMIT:0 "We will not submit!"
+ FED_WE_WILL_BE_IN_BREACH:0 "Our Empire will be in §RBreach of Galactic Law§!."
+
+ federations.10100.desc:0 "The Galactic Community has passed the §Y$resolution_galacticstudies_advanced_xenostudies$§! resolution, forbidding empires from §Youtlawing AI§! or holding §Ynon-interference policies§! relating to primitives.\n\nOur Empire is currently in breach of this resolution. Shall we change our policies to be in compliance?"
+ federations.10100.change_ai:0 "Our Empire will change our §Y$policy_artificial_intelligence_policy$§! policy to §Y$ai_servitude$§!."
+ federations.10100.change_interference:0 "Our Empire will change our §Y$policy_interference$§! policy to §Y$interference_active$§!."
+
+ federations.10110.desc:0 "The Galactic Community has passed the §Y$resolution_galacticstudies_ethical_guideline_refactoring$§! resolution, requiring empires to use the most powerful §YLeader Enhancement§! policy available to them.\n\nOur Empire is currently in breach of this resolution. Shall we change our policies to be in compliance?"
+ federations.10110.selected_lineages:0 "Our Empire will change our §Y$policy_leader_enhancement$§! policy to §Y$leader_enhancement_selected_lineages$§!."
+ federations.10110.capacity_boosters:0 "Our Empire will change our §Y$policy_leader_enhancement$§! policy to §Y$leader_enhancement_capacity_boosters$§!."
+
+ federations.10200.desc:0 "The Galactic Community has passed the §Y$resolution_greatergood_five_year_plans$§! resolution, which bans §Y$living_standard_subsistence$§! living standards.\n\nOur Empire is currently in breach of this resolution. Shall we change our policies to be in compliance?"
+ federations.10200.living_standard_stratified:0 "Our Empire will change all species with §Y$living_standard_subsistence$§! living standards to §Y$living_standard_stratified$§! if they qualify for it, or §Y$living_standard_normal$§! if absolutely necessary."
+ federations.10200.living_standard_normal:0 "Our Empire will change all species with §Y$living_standard_subsistence$§! living standards to §Y$living_standard_normal$§!."
+
+ federations.10210.desc:0 "The Galactic Community has passed the §Y$resolution_greatergood_greater_than_ourselves$§! resolution, which bans §Y$living_standard_stratified$§! living standards, as well as §Y$slavery_normal$§!, §Y$slavery_livestock$§!, and §Y$slavery_matrix$§! slavery types.\n\nOur Empire is currently in breach of this resolution. Shall we change our policies to be in compliance?"
+ federations.10210.living_standard_normal:0 "Our Empire will change all species with lower living standards to §Y$living_standard_normal$§!."
+ federations.10210.displace_gestalt:0 "Pops that are §Y$LIVESTOCK$§! or §Y$MATRIX_LIVESTOCK$§! will instead be §Y$Displaced$§!."
+ federations.10210.thralls:0 "Pops that are §Y$slavery_normal$§! or §Y$slavery_livestock$§! will become §Y$slavery_military$§!."
+ federations.10210.servants:0 "Pops that are §Y$slavery_normal$§! or §Y$slavery_livestock$§! will become §Y$slavery_domestic$§!."
+ federations.10210.complythralls:0 "Do what we must, make the slaves fight"
+ federations.10210.complyservants:0 "Do what we must, make the slaves serve"
+ federations.10210.freeslaves:0 "Pops that are §YEnslaved§! will be freed."
+ federations.10210.gestalt:0 "Send them elsewhere then"
+
+ federations.10220.desc:0 "The Galactic Community has passed the §Y$resolution_greatergood_greater_than_ourselves$§! resolution, which bans §Y$living_standard_normal$§! and §Y$living_standard_academic_privilege$§! living standards, as well as §Yall forms of lavery§!.\n\nOur Empire is currently in breach of this resolution. Shall we change our policies to be in compliance?"
+ federations.10220.living_standard:0 "Our Empire will change all species with living standards that do not comply to §Y$living_standard_good$§!."
+
+ federations.10230.desc:0 "The Galactic Community has passed the §Y$resolution_greatergood_universal_prosperity_mandate$§! resolution, which bans all living standards other than §YShared Burdens§!, §YUtopian Abundance§!, §YChemical Bliss§!, or §YMandatory Pampering§!.\n\nOur Empire is currently in breach of this resolution. Shall we change our policies to be in compliance?"
+ federations.10230.assimilator:0 "§RError:§! Cannot Parse Resolution Logic"
+ federations.10230.utopian:0 "Give them everything they could ever want"
+ federations.10230.chemical:0 "Make them happy by any means possible"
+ federations.10230.complyutopian:0 "Our Empire will change all species living standards to §Y$living_standard_utopian$§!."
+ federations.10230.complychemical:0 "Our Empire will change all species living standards to §Y$living_standard_chemical_bliss$§!."
+
+ federations.10300.desc:0 "The Galactic Community has passed the §Y$resolution_rulesofwar_reverence_for_life$§! resolution, banning the §Y$purge_allowed$§! policy.\n\nOur Empire is currently in breach of this resolution. Shall we change our policies to be in compliance?"
+ federations.10300.comply:0 "Our Empire will change our §Y$policy_purge$§! policy to §Y$purge_displacement_only$§!."
+
+ federations.10310.desc:0 "The Galactic Community has passed the §Y$resolution_rulesofwar_independent_tribunals$§! resolution, banning the §Y$orbital_bombardment_indiscriminate$§! policy.\n\nOur Empire is currently in breach of this resolution. Shall we change our policies to be in compliance?"
+ federations.10310.comply:0 "Our Empire will change our §Y$policy_orbital_bombardment$§!policy to §Y$orbital_bombardment_selective$§!."
+
+ federations.10320.desc:0 "The Galactic Community has passed the §Y$resolution_rulesofwar_last_resort_doctrine$§! resolution, banning the §Y$unrestricted_wars$§! policy.\n\nOur Empire is currently in breach of this resolution. Shall we change our policies to be in compliance?"
+ federations.10320.comply:0 "Our Empire will change our §Y$policy_war_philosophy$§! policy to §Y$liberation_wars$§!."
+ federations.10320.complygestalt:0 "Our Empire will change our §Y$policy_war_philosophy$§! policy to §Y$no_wars_name$§!."
+
+ federations.10330.desc:0 "The Galactic Community has passed the §Y$resolution_rulesofwar_demobilization_initiative$§! resolution, banning the §Y$economic_policy_military$§! policy.\n\nOur Empire is currently in breach of this resolution. Shall we change our policies to be in compliance?"
+ federations.10330.comply:0 "Our Empire will change our §Y$policy_economic_policy$§! policy to §Y$economic_policy_balanced$§!."

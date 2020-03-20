@@ -32,7 +32,7 @@
  ring_world_3_intermediate_DESC:0 "一个功能完整的宜居环形世界区块，其上拥有活跃的生态圈，居民已经可以定居其中了。"
 
  habitat_0_MEGASTRUCTURE_DETAILS:1 "§Y$pc_habitat$§!是一个理论上自给自足可以永久居住的太空基地。"
- habitat_0_CONSTRUCTION_INFO_DELAYED:4 "居住站只可以建造居住站特有的£building£ §Y建筑§!。若建造于拥有£minerals£ §Y矿物§!、£energy£ §Y能量§!或£physics£ £society£ £engineering£ §Y研究§!资源的行星上，将可以建造特殊的£district£ §Y区划§!。"
+ habitat_0_CONSTRUCTION_INFO_DELAYED:4 "轨道栖所只能建造轨道栖所专属£building£ §Y建筑§!。若建造于拥有£minerals£ §Y矿物§!、£energy£ §Y能源§!或£physics£ £society£ £engineering£ §Y研究§!资源的行星上空，将可建造特殊的£district£ §Y地区§!。"
  habitat_0:0 "轨道栖所"
  habitat_0_DESC:0 "环绕着不宜居行星的栖息基地，能在远离地表的太空支持一定数量的§H人口§!和§H建筑§!。"
 
@@ -59,13 +59,13 @@
  allow_machine_worlds:2 "§H解锁环境改造方案：§!机械世界"
  describe_machine_worlds:6 "§Y机械世界§!是一种不适合大多数有机体居住的特殊行星类别，但不受行星地貌带来的£district£§Y电力§!和§Y矿业区§!数量限制。居住在§Y机械世界§!上的£pop£§Y人口§!§Y资源产出§!增加§G+10%§!，§Y住房使用§!减少§G10%§!。行星上所有现存的£district£§Y农业区§!都将被摧毁。"
  allow_hive_worlds:0 "§H解锁环境改造选项：§!蜂巢世界"
- describe_hive_worlds:1 "§Y蜂巢星球§!是一种特别的星球划分，对非蜂巢思维人口来说不宜居，但是不会受限于星球特性带来的£district£ §Y发电§!，§Y采矿§!以及§Y农业区划§!限制，还拥有更高效的§Y蜂巢区划§!。£pop£ §Y人口§!居住在§Y蜂巢星球§!能够将他们的§Y资源产出§!提升§G+10%§!。"
+ describe_hive_worlds:1 "§Y蜂巢世界§!是一种不适合非蜂群思维人口居住的特殊行星类别，但不受行星地貌带来的£district£ §Y电力§!、§Y矿业§!和§Y农业区§!数量限制，同时§Y蜂巢区§!更加高效。居住在§Y蜂巢世界§!上的£pop£ §Y人口§!§Y资源产出§!增加§G+10%§!。"
 
  ALLOW_PSI_CORPS:0 "可以建造§H$building_psi_corps$§!。"
  ALLOW_PSI_ARMIES:0 "可以征募§H$psionic_army_plural$§!。"
 
  dyson_sphere_0_MEGASTRUCTURE_DETAILS:1 "§Y$dyson_sphere_5$§!完全包裹一颗恒星，直接将恒星所有的辐射转化为£energy£能源点数。"
- dyson_sphere_0_CONSTRUCTION_INFO_DELAYED:4 "$dyson_sphere_5$会完全遮挡住恒星，导致恒星系中所有行星变成荒芜星球或冰冻星球。\n\n恒星系中的一切环境改造候选将无法再进行改造。"
+ dyson_sphere_0_CONSTRUCTION_INFO_DELAYED:4 "$dyson_sphere_5$将完全遮住恒星，使星系中的所有行星变成$pc_barren_cold$或$pc_frozen$。\n\n星系内的一切环境改造候选星将无法再改造。"
  dyson_sphere_0:0 "戴森球基址"
  dyson_sphere_0_DESC:0 "这一建设基地将作为未来建设戴森球的基础。"
  dyson_sphere_1:0 "戴森球框架"
@@ -129,7 +129,7 @@
  requires_no_black_hole_neutron_star_pulsar:0 "$TRIGGER_FAIL$无法环绕黑洞、中子星或脉冲星建造戴森球。"
  requires_no_anomaly:1 "$TRIGGER_FAIL$无法在拥有我们或其它帝国发现但未研究的异常现象的行星上建造。"
  requires_not_ring_world:0 "$TRIGGER_FAIL$无法在环形世界上建造。"
- requires_barren_planet:1 "$TRIGGER_FAIL$只能建造在荒芜星球。"
+ requires_barren_planet:1 "$TRIGGER_FAIL$只能在$pc_barren_cold$上建造。"
 
  progress.3.desc_08:0 "我们的殖民船温和地降落在覆盖§Y[Root.GetName]§!大部分的广阔草原上。这里的空气干燥但令人愉快，在我们的着陆点向四周望去，可以看到一大群食草动物\n\n殖民船已经永久改造为新聚落的行政总部，它的反应堆核心已经取出用作殖民地的临时电源。\n\n上百顶小帐篷和避风所已经围着星舰巨大的船体搭建起来，殖民者开始大量登陆。我们在外星世界的第一座[Root.Owner.GetSpeciesName]城市已经建立。"
  progress.3.desc_09:0 "我们的殖民船敏捷而优雅地穿梭在§Y[Root.GetName]§!犬牙差互的巨峰之间，最终着陆在理想的着陆点：一个平静安详的小山谷中。\n\n殖民船已经永久改造为新聚落的行政总部，它的反应堆核心已经取出用作殖民地的临时电源。\n\n上百顶小帐篷和避风所已经围着星舰巨大的船体搭建起来，殖民者开始大量登陆。我们在外星世界的第一座[Root.Owner.GetSpeciesName]城市已经建立。"
@@ -279,7 +279,7 @@
  utopia.2013.name:0 "研究中枢修复完成"
  utopia.2013.desc:0 "[From.GetName]附近遗弃的研究中枢已经彻底修复，来自[Root.GetName]的杰出人才已经入职。该巨型结构已投入使用，解答我们这个时代的科学问题，切合其毫无争议的设计目的。"
  utopia.2014.name:0 "毁坏的监探阵列"
- utopia.2014.desc:1 "在过去的某时，星系曾建有过一个体积异常巨大的轨道设施，后来被有组织地拆毁。此星系大部分天体的行星同步轨道上都弥漫着大量的残骸，当中不乏大型空间站的外壳。\n\n残骸中以一个庞大的§H哨兵阵列§!为最。经过我们初步的扫描结果推测，这个阵列强大到足以实时监控整个星系。"
+ utopia.2014.desc:1 "证据表明，在银河历史上的某个时刻，[sentry_system.GetName]星系曾建有一个无比庞大的轨道设施，但它已经被系统地拆解了。星系内大部分行星天体的的同步轨道上都密布着碎片，其中包括几个巨型空间站的笨重船体。\n\n最大的船体是一个巨大的§H监探阵列§!。我们的初步扫描显示，在它运行时，强大的阵列可以提供整个银河系的实时传感器覆盖。"
  utopia.2014.a:0 "我们也有类似的东西。"
  utopia.2015.name:0 "监探阵列修复完成"
  utopia.2015.desc:0 "虽然不容易，但我们的工程师还是设法修复了[From.GetName]星系毁坏的监探阵列。在修复工程中，其他空间站的船体和围绕它们的碎片被用作了建筑材料。\n\n跨越悠久的岁月后，阵列现在充盈着能量。它强力的天线可以再次清晰观察银河的另一侧。"

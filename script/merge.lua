@@ -20,8 +20,13 @@ end
 
 local function readdiff(filename)
 	local diff = {}
+	local lineno = 0
 	for line in io.lines(filename) do
+		lineno = lineno + 1
 		local command, key, dig, v = line:match("(%w+) +([%w%._-]+):(%d*) (.*)")
+		if command == nil then
+			print(filename, lineno, "is empty")
+		end
 		local value = diff[key]
 		if value == nil then
 			value = {}

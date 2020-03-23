@@ -52,6 +52,10 @@ local filelist = {
 "utopia_ascension_l_english.yml",
 "utopia_l_english.yml",
 "utopia_megastructures_l_english.yml",
+"diplo_stances_l_english.yml",
+"federations_l_english.yml",
+"federations_resolution_comments_l_english.yml",
+"lithoids_l_english.yml",
 }
 
 local check_text = assert(loadfile(scriptpath .. "/check.lua"))()

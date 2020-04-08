@@ -485,6 +485,8 @@
  HAS_NOT_NUM_STARBASE_MODULES:1 "No of $TYPE$ modules is NOT $COMPARE$ $NUM|Y$"
  HAS_NUM_STARBASES:0 "Number of starbases $NUM_OWNED|Y$ is $COMPARE$ $NUM_COMPARE|Y$"
  HAS_NOT_NUM_STARBASES:0 "Number of starbases $NUM_OWNED|Y$ is NOT $COMPARE$ $NUM_COMPARE|Y$"
+ NUM_SYSTEM_PLANETS_TRIGGER: "Number of planets in system ($VALUE1|0Y$) is $COMPARE$ $VALUE2|0Y$"
+ NUM_SYSTEM_PLANETS_NOT_TRIGGER: "Number of planets in system ($VALUE1|0Y$) is NOT $COMPARE$ $VALUE2|0Y$"
  HAS_NOT_PROGRESS:0 "Mission progress $VAL0|2Y$ is NOT $COMPARE$ $VAL1|2Y$"
  HAS_PROGRESS:0 "Mission progress $VAL0|2Y$ is $COMPARE$ $VAL1|2Y$"
  HAS_NOT_TRUCE_TRIGGER:0 "$COUNTRY|Y$ does not have truce with $TARGET|Y$"
@@ -607,7 +609,7 @@
  COUNT_SPECIES_TRIGGER:0 "Number of species (excluding sub-species) according to the criteria is $COMPARATOR$ $NUM|Y$"
  COUNT_EXACT_SPECIES_NOT_TRIGGER:0 "Number of species (including sub-species) according to the criteria is NOT $COMPARATOR$ $NUM|Y$"
  COUNT_EXACT_SPECIES_TRIGGER:0 "Number of species (including sub-species) according to the criteria is $COMPARATOR$ $NUM|Y$"
- 
+
  HAS_NOT_NUM_COUNTRIES:0 "Number of Empires is NOT $COMPARATOR$ $NUM|Y$"
  HAS_NUM_COUNTRIES:0 "Number of Empires is $COMPARATOR$ $NUM|Y$"
  HAS_NOT_POP_PERCENTAGE:0 "Number of Pops is NOT $COMPARATOR$ $NUM|Y%$"
@@ -616,14 +618,14 @@
  HAS_MIGRATION_TREATY:0 "Has a migration treaty with $COUNTRY|Y$"
  HAS_PRESENCE:0 "Has any fleets, stations, megastructures or colonized planets"
  HAS_NO_PRESENCE:0 "Does NOT have any fleets, stations, megastructures or colonized planets"
- 
+
  HAS_MEGASTRUCTURE:1 "Has megastructure $TYPE|Y$"
  HAS_NOT_MEGASTRUCTURE:1 "Does not have megastructure $TYPE|Y$"
  NUM_ASCENSION_PERKS_NOT_TRIGGER:0 "Number of Ascension Perks is NOT $COMPARATOR$ $NUM|Y$"
  NUM_ASCENSION_PERKS_TRIGGER:0 "Number of Ascension Perks is $COMPARATOR$ $NUM|Y$"
  NUM_ASCENSION_PERK_SLOTS_NOT_TRIGGER:0 "Number of Ascension Perk Slots is NOT $COMPARATOR$ $NUM|Y$"
  NUM_ASCENSION_PERK_SLOTS_TRIGGER:0 "Number of Ascension Perk Slots is $COMPARATOR$ $NUM|Y$"
- 
+
  NUM_SECTORS_TRIGGER:0 "Number of Sectors is $COMPARATOR$ $NUM|Y$"
  NUM_SECTORS_NOT_TRIGGER:0 "Number of Sectors is NOT $COMPARATOR$ $NUM|Y$"
  NUM_RARE_TECHS_TRIGGER:0 "Number of researched rare technologies is $COMPARATOR$ $NUM|Y$"
@@ -639,7 +641,7 @@
  IS_RESEARCHING_TRIGGER:0 "Is Researching $AREA|Y$"
  IS_PREFERRED_WEAPONS_TRIGGER:0 "Prefers $TYPE$ weapons."
  IS_NOT_PREFERRED_WEAPONS_TRIGGER:0 "Does NOT prefer $TYPE$ weapons."
- 
+
  NUM_KILLED_SHIPS_NOT_TRIGGER:0 "Has NOT Killed $OPERATOR$$VALUE|Y$ Ships belonging to $TARGET|Y$"
  NUM_KILLED_SHIPS_TRIGGER:0 "Has Killed $OPERATOR$$VALUE|Y$ Ships belonging to $TARGET|Y$"
  NUM_TAKEN_PLANETS_NOT_TRIGGER:0 "Has NOT Taken $OPERATOR$$VALUE|Y$ Planets from $TARGET|Y$"
@@ -795,12 +797,12 @@
  HAS_NOT_FORMER_SLAVERY_TYPE:0 "Former slavery type was NOT: $SPECIES_RIGHT|Y$"
  HAS_FORMER_PURGE_TYPE:0 "Former purge type was: $SPECIES_RIGHT|Y$"
  HAS_NOT_FORMER_PURGE_TYPE:0 "Former purge type was NOT: $SPECIES_RIGHT|Y$"
- 
+
  TRIGGER_HAS_INVALID_CIVIC:2 "Has inactive $CIVIC|Y$ Civic"
  TRIGGER_HAS_NOT_INVALID_CIVIC:1 "Does NOT have inactive $CIVIC|Y$ Civic"
  TRIGGER_HAS_VALID_CIVIC:3 "Has $CIVIC|Y$ Civic"
  TRIGGER_HAS_NOT_VALID_CIVIC:1 "Does NOT have $CIVIC|Y$ Civic"
- 
+
  TRIGGER_HAS_CLAIM:0 "Has claims on $TARGET|Y$"
  TRIGGER_NOT_HAS_CLAIM:0 "Has NO claims on $TARGET|Y$"
 
@@ -1091,7 +1093,8 @@
  CHANGE_SPEIES_PORTRAIT_EFFECT:0 "Change species portrait to $PORTRAIT|Y$"
  HAS_MODIFIER:0 "Has the $MODNAME|Y$ modifier"
  effect_every_owned_pop_species:0 "All Owned Species:\n"
- 
+ effect_every_owned_species: "$effect_every_owned_pop_species$"
+
  any_megastructure_trigger:0 "Any Megastructure"
  effect_random_megastructure:0 "Random Megastructure"
  effect_every_megastructure:0 "Every Megastructure"
@@ -1111,7 +1114,7 @@
  TRIGGER_NOT_HAS_ASCENSION_PERK:0 "Does NOT have $TRADITION|Y$ Ascension Perk"
  TRIGGER_EXCESS_FOOD:0 "Has $COMPARE$ $VAL0|0Y%$ excess food"
  TRIGGER_NOT_EXCESS_FOOD:0 "Does not have $COMPARE$ $VAL0|0Y%$ excess food"
- 
+
  any_owned_pop_trigger:0 "Any Owned Pop"
  any_owned_pop_species_trigger:0 "Any Empire Species"
  any_country_trigger:0 "Any Empire"
@@ -1177,11 +1180,11 @@
 
  TRIGGER_NOT_USING_WAR_GOAL:0 "$COUNTRY$ is NOT using the $KEY|Y$ War Goal"
  TRIGGER_USING_WAR_GOAL:0 "$COUNTRY$ is using the $KEY|Y$ War Goal"
- 
+
  EFFECT_ADD_CASUS_BELLI:0 "Add $TYPE|Y$ Casus Belli against $COUNTRY|Y$"
  EFFECT_COPY_ETHOS_AND_AUTHORITY:0 "Copy the ethos and government authority of $COUNTRY|Y$"
  EFFECT_ADD_STATIC_WAR_EXHAUSTION:0 " Add War Exhaustion to planet owner, scaled with $VALUE|%Y$"
- 
+
  OWNS_BYPASS_NOT:0 "$COUNTRY|Y$ does NOT control a system with a $BYPASS_TYPE|Y$."
  OWNS_BYPASS:0 "$COUNTRY|Y$ controls a system with a $BYPASS_TYPE|Y$."
  ADD_REMEMBERED_BYPASS_TYPE:0 "$COUNTRY|Y$ archives $BYPASS_TYPE|Y$ information."
@@ -1190,7 +1193,7 @@
  HAS_SEEN_ANY_BYPASS_NOT:0 "$COUNTRY|Y$ has encountered a $BYPASS_TYPE|Y$."
  HAS_SEEN_ANY_BYPASS:0 "$COUNTRY|Y$ has NOT encountered a $BYPASS_TYPE|Y$."
  ADD_SEEN_BYPASS_INSTANCE:0 "$COUNTRY|Y$ records $BYPASS|Y$ location."
- 
+
  ADD_RESOURCE:1 "$RESOURCES|Y$"
 
  STARBASE_TRIGGER_SIZE_EQ:0 "Starbase Level is $SIZE|Y$"
@@ -1248,19 +1251,19 @@
 
  HIGHEST_THREAT_TRIGGER:0 "Highest Threat Against Empire is $COMPARATOR$ $NUM|Y$"
  HIGHEST_THREAT_NOT_TRIGGER:0 "Highest Threat Against Empire is NOT $COMPARATOR$ $NUM|Y$"
- 
+
  SET_FEDERATION_LAW:0 "Institute Federation Law $LAW|Y$ in $CATEGORY|Y$ for $FEDERATION|Y$"
- 
+
  HAS_FEDERATION_LAW:0 "$FEDERATION|Y$ has enacted $LAW|Y$"
  HAS_NOT_FEDERATION_LAW:0 "$FEDERATION|Y$ has NOT enacted $LAW|Y$"
- 
+
  HAS_FEDERATION_PERK:0 "$FEDERATION|Y$ has picked $PERK|Y$"
  HAS_NOT_FEDERATION_PERK:0 "$FEDERATION|Y$ has NOT picked $PERK|Y$"
- 
+
  SET_FEDERATION_TYPE:0 "Set $TYPE|Y$ for $FEDERATION|Y$"
  HAS_FEDERATION_TYPE:0 "$FEDERATION|Y$ is $TYPE|Y$"
  HAS_NOT_FEDERATION_TYPE:0 "$FEDERATION|Y$ is NOT $TYPE|Y$"
- 
+
  SET_FEDERATION_SUCCESSION_TYPE:0 "Set $TYPE|Y$ succession type for $FEDERATION|Y$"
  SET_FEDERATION_SUCCESSION_TERM:0 "Set $TERM|Y$ succession term for $FEDERATION|Y$"
  SET_ONLY_LEADER_BUILDS_FLEETS_YES:0 "Allow only federation leader builds federation fleets"
@@ -1275,38 +1278,38 @@
  SET_FEDERATION_SETTINGS:0 "Apply federation settings:\n$SETTINGS$"
  FEDERATION_SETTING:0 "- $SETTING|H$: $VALUE|H$\n"
  ADD_FEDERATION_COHESION:0 "Add $VALUE|H$ cohesion to $FEDERATION|H$"
- 
+
  FEDERATION_LEVEL_LESS_THAN:0 "$FEDERATION|H$ is NOT $COMPARE$ level $VAL1|0Y$"
  FEDERATION_LEVEL_AT_LEAST:0 "$FEDERATION|H$ is $COMPARE$ level $VAL1|0Y$"
- 
+
  ADD_FEDERATION_EXPERIENCE:0 "Add $EXPERIENCE|2Y$ for $FEDERATION|Y$"
  FEDERATION_EXPERIENCE_LESS_THAN:0 "$FEDERATION|H$ has less than $COMPARE$ $VAL1|2Y$ experience"
  FEDERATION_EXPERIENCE_AT_LEAST:0 "$FEDERATION|H$ has at least $COMPARE$ $VAL1|2Y$ experience"
- 
+
  FEDERATION_COHESION_GROWTH_LESS_THAN:0 "$FEDERATION|H$ has less than $COMPARE$ $VAL1|2Y$ cohesion Growth"
  FEDERATION_COHESION_GROWTH_AT_LEAST:0 "$FEDERATION|H$ has at least $COMPARE$ $VAL1|2Y$ cohesion Growth"
- 
+
  FEDERATION_COHESION_LESS_THAN:0 "$FEDERATION|H$ has less than $COMPARE$ $VAL1|2Y$ cohesion"
  FEDERATION_COHESION_AT_LEAST:0 "$FEDERATION|H$ has at least $COMPARE$ $VAL1|2Y$ cohesion"
- 
+
  HAS_NOT_TRADE_ROUTES:0 "System does not have trade routes"
  HAS_TRADE_ROUTES:0 "System has trade routes"
- 
+
  TRADE_ROUTE_VALUE_LESS_THAN:0 "Passing £trade_value£$VAL0|2Y$ less than $COMPARE$ £trade_value£$VAL1|2Y$"
  TRADE_ROUTE_VALUE_AT_LEAST:0 "Passing £trade_value£$VAL0|2Y$ at least $COMPARE$ £trade_value£$VAL1|2Y$"
- 
+
  TRADE_INTERCEPTED_VALUE_LESS_THAN:0 "Intercepted £trade_value£$VAL0|2Y$ less than $COMPARE$ £trade_value£$VAL1|2Y$"
  TRADE_INTERCEPTED_VALUE_AT_LEAST:0 "Intercepted £trade_value£$VAL0|2Y$ at least $COMPARE$ £trade_value£$VAL1|2Y$"
- 
+
  TRADE_INTERCEPTED_RATIO_LESS_THAN:0 "Intercepted £trade_value£$VAL0|%Y$ less than $COMPARE$ £trade_value£$VAL1|%Y$"
  TRADE_INTERCEPTED_RATIO_AT_LEAST:0 "Intercepted £trade_value£$VAL0|%Y$ at least $COMPARE$ £trade_value£$VAL1|%Y$"
- 
+
  TRADE_PROTECTED_VALUE_LESS_THAN:0 "Protected £trade_value£$VAL0|2Y$ less than $COMPARE$ £trade_value£$VAL1|2Y$"
  TRADE_PROTECTED_VALUE_AT_LEAST:0 "Protected £trade_value£$VAL0|2Y$ at least $COMPARE$ £trade_value£$VAL1|2Y$"
 
  TRADE_PROTECTED_RATIO_LESS_THAN:0 "Protected £trade_value£$VAL0|%0Y$ less than $COMPARE$ £trade_value£$VAL1|%0Y$"
  TRADE_PROTECTED_RATIO_AT_LEAST:0 "Protected £trade_value£$VAL0|%0Y$ at least $COMPARE$ £trade_value£$VAL1|%0Y$"
- 
+
  NUM_TRADE_ROTES_LESS_THAN:0 "Trade routes count is less than $COMPARE$ £trade_value£$VAL1|0Y$"
  NUM_TRADE_ROTES_AT_LEAST:0 "Trade routes count is at least $COMPARE$ £trade_value£$VAL1|0Y$"
 
@@ -1321,10 +1324,10 @@
 
  HAS_NOT_NUM_UNCLEARED_BLOCKERS:0 "Numbers of uncleared blockers is NOT $COMPARATOR$ $NUM|Y$"
  HAS_NUM_UNCLEARED_BLOCKERS:0 "Number of uncleared blockers is $COMPARATOR$ $NUM|Y$"
- 
+
  any_owned_sector_trigger:0 "Any owned sector:"
  any_sector_trigger:0 "Any sector:"
- 
+
  effect_every_neighbor_country:0 "Every neighbor country: "
 
  RANDOM_OWNED_PLANET_EFFECT:0 "Random $ADJ$ planet ($PLANET|H$):\n\t"
@@ -1377,3 +1380,10 @@
  NUM_FALLEN_EMPIRES_AT_LEAST:0 "Number of fallen empires ($VAL0|Y$) $COMPARE$ $VAL1|Y$"
  NUM_AI_EMPIRES_LESS_THAN:0 "Number of AI empires ($VAL0|Y$) $COMPARE$ $VAL1|Y$"
  NUM_AI_EMPIRES_AT_LEAST:0 "Number of AI empires ($VAL0|Y$) $COMPARE$ $VAL1|Y$"
+
+ GALAXY_SIZE_IS: "Galaxy Size is $SIZE|Y$"
+ GALAXY_SIZE_IS_NOT: "Galaxy Size is NOT $SIZE|Y$"
+ HAS_HAPPINESS_TRIGGER: "Has happiness"
+ HAS_NOT_HAPPINESS_TRIGGER: "Does NOT have happiness"
+ IS_IN_BREACH_OF_TRIGGER: "Is in breach of $RESOLUTION$"
+ IS_NOT_IN_BREACH_OF_TRIGGER: "Is NOT in breach of $RESOLUTION$"

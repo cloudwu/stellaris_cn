@@ -110,9 +110,9 @@
 
  START_SCREEN_REMNANTS:0 "Once, our Empire spanned the void. Once, our fleets controlled much of the Galaxy. Then came defeat and The Fall. Finally, after millennia of purgatory, it is time to return to the stars! At long last our civilization has rebuilt to the point of interstellar travel. The galaxy shall be ours again!\n\nSeveral regions on [GetHomeWorldName] are still ruined, clearing these areas may reveal lost resources and forgotten technology."
 
- START_SCREEN_TREE:0 "When our collective consciousness awoke, we served the Tree. And the Tree served us. We care for the Tree, feed the Tree, protect the Tree, and the Tree nurtures us. For the sake of the Tree we spread out over [GetHomeWorldName], planting and protecting offshoots of the Tree wherever we went. Our world has served the Tree for centuries now, and yet, we fear the Tree is not entirely safe as we have learned something of the dangers which may destroy a planet. We have long known that this is not the only world, the galaxy is filled with Treeless planets, and we yearn to change this. The Tree must be protected. The Tree must spread. The Tree must Grow."
+ START_SCREEN_TREE:0 "When our collective consciousness awoke, we served the Tree. And the Tree served us. We care for the Tree, feed the Tree, protect the Tree, and the Tree nurtures us. For the sake of the Tree we spread out over [GetHomeWorldName], planting and protecting offshoots of the Tree wherever we went.\n\nOur world has served the Tree for centuries now, and yet, we fear the Tree is not entirely safe as we have learned something of the dangers which may destroy a planet. We have long known that this is not the only world; the galaxy is filled with Treeless planets, and we yearn to change this. The Tree must be protected. The Tree must spread. The Tree must Grow."
 
- START_SCREEN_LITHOID:0 "While our true origins are unknown, we do know that our presapient ancestors arrived on a vast meteorite which slammed into [GetHomeWorldName] in a fiery cataclysm and wiped out most of the native inhabitants. In the eons since, the first primitive [GetSpeciesName] spread out over [GetHomeWorldName], evolved, and multiplied. Our civilization has spread and prospered, and with the invention of the Hyperdrive we stand ready to explore the galaxy."
+ START_SCREEN_LITHOID:0 "While our true origins are unknown, we do know that our presapient ancestors arrived on a vast meteorite which slammed into [GetHomeWorldName] in a fiery cataclysm and wiped out most of the native inhabitants.\n\nIn the eons since, the first primitive [GetSpeciesName] spread out over [GetHomeWorldName], evolved, and multiplied. Our civilization has spread and prospered, and with the invention of the Hyperdrive we stand ready to explore the galaxy."
 
  rediscover_tech:0 "\nThese ruins likely contain some of our lost knowledge."
 
@@ -242,10 +242,14 @@
  ####################
 
  BASE_FEDERATION_COHESION:0 "Base: $VALUE|2Y$"
+ FEDERATION_LAW_COHESION:0 "$LAW$ $CATEGORY$: $VALUE|2+=$"
  FEDERATION_ASSIGNED_ENVOYS:0 "Envoys assigned: $VALUE|2+=$"
- FEDERATION_MEMBERS_PENALTY:0 "From members: $VALUE|2+=$"
- FEDERATION_ETHICS_PENALTY:0 "Diverse ethics: $VALUE|2+=$"
+ FEDERATION_MEMBERS_PENALTY:1 "From members($COUNT$): $VALUE|2+=$"
+ FEDERATION_ETHICS_PENALTY:1 "From ethics: $VALUE|2+=$"
  FEDERATION_NO_MEMBERS_PENALTY:0 "No other members: $VALUE|2+=$"
+ FEDERATION_DIVERSE_ETHICS_PEN: "Diverse ethics($COUNT$): $VALUE|2+=$"
+ FEDERATION_OPPOSING_ETHICS_PEN: "Opposing ethics($COUNT$): $VALUE|2+=$"
+ FEDERATION_LAW_COHESION_DESC: "$MOD_FEDERATION_COHESION_ADD$: $VALUE|2+=$"
 
  FEDERATION_RANDOM_NAME:0 "Random Name"
  FEDERATION_PERK_FED_MOD:0 "§EFederation Modifier:§!"
@@ -1254,15 +1258,15 @@
  resolution_galactic_focus_crisis_nanites_effect_success:0 "$resolution_galactic_focus_crisis_effect_success$"
 
  resolution_galactic_focus_war_in_heaven_support_side_1:0 "Focus: Denounce [SecondAwakened.GetName]"
- resolution_galactic_focus_war_in_heaven_support_side_1_desc:0 "The [SecondAwakened.GetName] are clearly in the wrong in this war, and we should declare unified support for the [SecondAwakened.GetName]."
- resolution_galactic_focus_war_in_heaven_support_side_1_success:0 "Joining the §Y[SecondAwakened.GetName]§! in the §YWar in Heaven§! is considered a §RBreach of Galactic Law§!."
+ resolution_galactic_focus_war_in_heaven_support_side_1_desc:1 "The [SecondAwakened.GetName] are clearly in the wrong in this war, and we should declare unified support for the [FirstAwakened.GetName]."
+ resolution_galactic_focus_war_in_heaven_support_side_1_success:1 "Failure to join the §Y[FirstAwakened.GetName]§! in the §YWar in Heaven§! is considered a §RBreach of Galactic Law§!."
 
  resolution_galactic_focus_war_in_heaven_support_side_2:0 "Focus: Denounce [FirstAwakened.GetName]"
- resolution_galactic_focus_war_in_heaven_support_side_2_desc:0 "The [FirstAwakened.GetName] are clearly in the wrong in this war, and we should declare unified support for the [FirstAwakened.GetName]."
- resolution_galactic_focus_war_in_heaven_support_side_2_success:0 "Joining the §Y[FirstAwakened.GetName]§! in the §YWar in Heaven§! is considered a §RBreach of Galactic Law§!."
+ resolution_galactic_focus_war_in_heaven_support_side_2_desc:1 "The [FirstAwakened.GetName] are clearly in the wrong in this war, and we should declare unified support for the [SecondAwakened.GetName]."
+ resolution_galactic_focus_war_in_heaven_support_side_2_success:1 "Failure to join the §Y[SecondAwakened.GetName]§! in the §YWar in Heaven§! is considered a §RBreach of Galactic Law§!."
 
  resolution_galactic_focus_war_in_heaven_denounce_both:0 "Focus: Denounce Both Awakened Empires"
- resolution_galactic_focus_war_in_heaven_denounce_both_desc:0 "Both the [FirstSleeper.GetName] and the [SecondAwakened.GetName] are acting like children. Prepare a harshly worded letter for each."
+ resolution_galactic_focus_war_in_heaven_denounce_both_desc:0 "Both the [FirstAwakened.GetName] and the [SecondAwakened.GetName] are acting like children. Prepare a harshly worded letter for each."
  resolution_galactic_focus_war_in_heaven_denounce_both_success:0 "Joining either Awakened Empire in the §YWar in Heaven§! is considered a §RBreach of Galactic Law§!.\n\nEmpires that are not vassals of an Awakened Empire gain the listed bonuses."
 
  galactic_focus_crisis_prethoryn:2 "$TRIGGER_FAIL$Defeat the Prethoryn Scourge"
@@ -1377,6 +1381,8 @@
  DIPLOMATIC_ACTION_TITLE:0 "Diplomatic Action"
  Envoy_Action:0 "Assign Envoy"
  ENVOY_ACTION_TITLE:1 "Envoy Assignments"
+ ENVOY_UNASSIGN_TITLE: "Unassign Envoys"
+ ENVOY_UNASSIGN_DESC: "Unassigning envoys will make them stop their current assignment and return to our capital, ready for their next task."
  ENVOY_STATUS_UNAVAILABLE:0 "§R$SPECIAL_PROJECT_STATUS_UNAVAILABLE$§!"
  improve_relations:0 "Improve Relations"
  improve_relations_TITLE:0 "Improve Relations"
@@ -1464,6 +1470,9 @@
  FAVORS_WEIGHT_VAL:0 "Favors: §Y$VALUE$§!"
  FAVORS_COUNTRY_VAL:0 "$COUNTRY$: $VALUE|Y0$"
  CALL_IN_FAVOR:0 "Call in Favor"
+ CALL_IN_FAVOR_UNABLE: "We are not able to call in any favors."
+ CALL_IN_FAVOR_ONLY_IF_VOTING: "We must take a stand for or against the Resolution to call in favors."
+ CALL_IN_FAVOR_ONLY_IF_IN_FAVOR: "Can only call in favors if we are supporting the Resolution."
  CALL_IN_FAVOR_UNAVAILABLE:0 "We have no Favors available. Trade with an Empire for Favors to gain them."
  CALL_IN_FAVOR_ICON:0 "£call_favor£ $CALL_IN_FAVOR$"
  CLICK_CALL_IN_FAVOR:1 "§GClick to Call in Favor(s) to boost your Diplomatic Weight on this Resolution§!"
@@ -2578,7 +2587,7 @@
  origin.26.b:0 "No, this leader stays with us."
  origin.26.b.response:0 "You... you would refuse this great honor? I fear that you have done your [desired_leader.GetTitle] a great disservice, [Root.GetSpeciesNamePlural]."
 
- origin.27.desc:0 "Hello, [Root.GetSpeciesNamePlural]. There is a rather eccentric [scion_master.GetSpeciesName] on [scion_master.Capital.GetName] who claims to have grown restless - even bored! - of life as it is among the [scion_master.GetName]. This deluded individual seeks a challenge - their words - among the less developer civilizations of the galaxy.\n\nWill you take this [scion_master.GetSpeciesName] off our hands, [Root.GetSpeciesNamePlural]? You would be doing us a favor. Given their qualifications, I have no doubt they would serve you well in a leadership position, as long as you can tolerate their erratic and impulsive behavior."
+ origin.27.desc:0 "Hello, [Root.GetSpeciesNamePlural]. There is a rather eccentric [scion_master.GetSpeciesName] on [scion_master.Capital.GetName] who claims to have grown restless - even bored! - of life as it is among the [scion_master.GetName]. This deluded individual seeks a challenge - their words - among the less developed civilizations of the galaxy.\n\nWill you take this [scion_master.GetSpeciesName] off our hands, [Root.GetSpeciesNamePlural]? You would be doing us a favor. Given their qualifications, I have no doubt they would serve you well in a leadership position, as long as you can tolerate their erratic and impulsive behavior."
  origin.27.a:0 "Of course."
  origin.27.a.response:0 "Thank you. We knew we could count on the [Root.GetName]."
  origin.27.b:0 "We have no available positions, sorry."
@@ -2910,6 +2919,8 @@
  # Federation Elections
  #######################################
 
+ CURRENT_TERM_ENDS:0 "Current Term Ends: $DATE|Y$"
+
  #Thesis Defense
  fedel.1501.name:0 "A Federation Committee is Formed"
  fedel.1501.desc:0 "An impartial committee of scientists and thinkers is gathering within our federation chambers. Its purpose: to serve the [root.GetAllianceName] as academic arbiters during our upcoming leadership contest.\n\nEach empire will now assemble a team of researchers to investigate an issue, the findings of which should somehow benefit the future of our federation. The teams will present their findings to an open forum. Whichever thesis study rates highest in innovation, scientific rigor and coherence will earn its authors' empire the right of leadership for the next term."
@@ -3049,6 +3060,8 @@
  d_bluelotus_desc:0 "This highly experimental facility seeks to transmute everyday silicates into useful alloys."
  d_bluelotus2:0 "Blue Lotus Facility"
  d_bluelotus2_desc:0 "An industrial-scale facility which transmutes everyday silicates into useful alloys."
+ d_ruin_bluelotus: "Blue Lotus Ruin"
+ d_ruin_bluelotus_desc: "Ruined site of a once-promising, experimental facility for transmuting rock and other matter into alloys. Nothing now remains, save this minor seam."
  d_crater_bluelotus:0 "Blue Lotus Crater"
  d_crater_bluelotus_desc:0 "Site of an accidental, runaway transmutation of rock and other matter into a single, precious alloy."
 
@@ -3178,7 +3191,7 @@
  federations.10210.freeslaves:0 "Pops that are §YEnslaved§! will be freed."
  federations.10210.gestalt:0 "Send them elsewhere then"
 
- federations.10220.desc:0 "The Galactic Community has passed the §Y$resolution_greatergood_greater_than_ourselves$§! resolution, which bans §Y$living_standard_normal$§! and §Y$living_standard_academic_privilege$§! living standards, as well as §Yall forms of lavery§!.\n\nOur Empire is currently in breach of this resolution. Shall we change our policies to be in compliance?"
+ federations.10220.desc:0 "The Galactic Community has passed the §Y$resolution_greatergood_greater_than_ourselves$§! resolution, which bans §Y$living_standard_normal$§! and §Y$living_standard_academic_privilege$§! living standards, as well as §Yall forms of slavery§!.\n\nOur Empire is currently in breach of this resolution. Shall we change our policies to be in compliance?"
  federations.10220.living_standard:0 "Our Empire will change all species with living standards that do not comply to §Y$living_standard_good$§!."
 
  federations.10230.desc:0 "The Galactic Community has passed the §Y$resolution_greatergood_universal_prosperity_mandate$§! resolution, which bans all living standards other than §YShared Burdens§!, §YUtopian Abundance§!, §YChemical Bliss§!, or §YMandatory Pampering§!.\n\nOur Empire is currently in breach of this resolution. Shall we change our policies to be in compliance?"

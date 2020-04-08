@@ -151,6 +151,8 @@
  HIVE_MIND_MAIN_SPECIES_ALWAYS_CITIZEN:1 "$TRIGGER_FAIL$§RWe are one. We will always have §YFull Citizenship§!§!."
  HIVE_MIND_SPECIES_CITIZENS_ONLY:1 "$TRIGGER_FAIL$§RWe cannot sustain independent agents.§!"
  FANATIC_PURIFIERS_MUST_PURIFY:0 "$TRIGGER_FAIL$§YFanatic Purifiers§! cannot tolerate the existence of xenos."
+ CANNOT_DISPLACE_NON_SENTIENT_ROBOTS: "$TRIGGER_FAIL$Cannot displace non-sentient robots."
+ CANNOT_NEUTER_NON_SENTIENT_ROBOTS: "$TRIGGER_FAIL$Cannot neuter non-sentient robots."
  HIVE_MIND_PURGE_ALWAYS_PROCESSING:0 "$TRIGGER_FAIL$Looks tasty!"
  MACHINE_ROBOTS_ONLY:0 "$TRIGGER_FAIL$A §Y$auth_machine_intelligence$§! can only integrate §Y$trait_mechanical$§! species."
  MACHINE_ASSIMILATOR_CYBORGS_ONLY:0 "$TRIGGER_FAIL$A §Y$civic_machine_assimilator$§! can grant only §Y$trait_cybernetic$§! species §Y$citizenship_limited$§! or §Y$citizenship_caste_system_limited$§!."
@@ -587,6 +589,7 @@
  INTEL_LEVEL_NOT_TRIGGER:0 "Intel Level is NOT $OPERATOR$$LEVEL|Y$"
  INTEL_LEVEL_TRIGGER:0 "Intel Level is $OPERATOR$$LEVEL|Y$"
  MISSING_WORMHOLE_STATION:0 "Out of reach! We need to build more Wormhole Stations closer to this system."
+ FLEET_JUGGERNAUT_REPAIR:0 "§RJuggernaut cannot be sent for repair.§!"
  FLEET_NO_PATH:0 "There is no route for the selected fleet to reach this system."
  FLEET_NO_PATH_RESTRICTED:0 "System is set as restricted, so our fleets may not enter it."
  FLEET_NO_PATH_PASSIVE_STANCE:0 "Avoiding Hostiles due to Evasive Stance"
@@ -1777,6 +1780,8 @@
  TOGGLE_TRADE_VIEW_FOCUS_AREA_GAMEPAD_INDICATOR:0 "£gamepad_y£ Toggle focus"
 
  TRADE_OFFER_QUANTITY:0 "Quantity"
+
+ TRADE_TOO_MANY_FAVORS:0 "An Empire cannot buy more favors than they can hold."
 
  ###################################
  # Outliner
@@ -7038,7 +7043,7 @@
  ACTION_DEMAND_SIGNATORY_DESC:0 "We can demand that they sign our galactic peace treaty. If they accept, we will protect them but they will be unable to conduct independent diplomacy and wage wars. They will also be required to ban Slavery and Purging."
  ACTION_DEMAND_TRIBUTARY_TITLE:0 "Demand Tribute"
  ACTION_DEMAND_TRIBUTARY_DESC:1 "We can demand that they become our tributary. If they accept, we will protect them but they will have to pay us §Y25%§! of their Mineral and Energy income."
- ACTION_DEMAND_TRIBUTARY_OFFER_DESC:0 "§H[Actor.GetName]§! has demanded to become our tributary. If we accept, they will protect us but we will have to pay them §Y25%§! of our Mineral and Energy income."
+ ACTION_DEMAND_TRIBUTARY_OFFER_DESC:1 "§H[Actor.GetName]§! has demanded we become their tributary. If we accept, they will protect us but we will have to pay them §Y25%§! of our Mineral and Energy income."
  ACTION_DEMAND_SUBSIDIARY_TITLE:0 "Offer Subsidiary Status"
  ACTION_DEMAND_SUBSIDIARY_DESC:1 "We can offer them to become our Subsidiary. If they accept, we will protect them but they will have to pay us §Y25%§! of their Energy income and join us in our wars."
  ACTION_ASK_TO_BECOME_VASSALIZED_TITLE:1 "Ask to be their Vassal"
@@ -7075,7 +7080,7 @@
  ACTION_LEAVE_FEDERATION_DESC:0 "We can abandon the §H[Actor.GetAllianceName]§! and go our own way. The other members will not be pleased..."
  ACTION_REQ_WAR_LEADER:0 "Our Empire is the war leader."
  ACTION_REQ_AT_PEACE:0 "We are at peace."
- ACTION_REQ_ACTOR_FED_LEADER:1 "You should be the current Federation President."
+ ACTION_REQ_ACTOR_FED_LEADER:2 "You must be the Federation President."
  ACTION_REQ_RECIPIENT_FED_LEADER:1 "The other party must be the Federation President."
  ACTION_DECLARE_WAR_HAS_TRUCE:0 "\n§R$TRUCE|H$ until $DATE|H$, we cannot declare war before the truce has ended.§!"
  ACTION_CLOSE_BORDERS_HAS_TRUCE:0 "\n§R$TRUCE|H$ until $DATE|H$, we cannot close our borders before the truce has ended.§!"
@@ -10702,7 +10707,7 @@
  attitude_neutral:4 "§WNeutral§!"
  attitude_unfriendly:2 "§WSuspicious§!"
  attitude_cordial:1 "§WCordial§!"
- attitude_rival:1 "§RRival§!"
+ attitude_rival:1 "§WRival§!"
  attitude_dismissive:2 "§WDismissive§!"
  attitude_enigmatic:1 "§WEnigmatic§!"
  attitude_patronizing:1 "§WPatronizing§!"
@@ -11170,7 +11175,7 @@
  SUBJECT_vassal:0 "Vassal"
  SUBJECT_DESC_vassal:0 "Vassals are subservient to their Overlord. They have limited diplomatic options, and fight along their Overlord."
  SUBJECT_protectorate:0 "Protectorate"
- SUBJECT_DESC_protectorate:4 "Protectorates have an independence guarantee from their Overlord, pay §Y80%§! reduced tech costs for any tech their Overlord knows, and turn into vassals once they research §Y50%§! of the amount of techs compared to their Overlord."
+ SUBJECT_DESC_protectorate:5 "Protectorates are guaranteed independence by their Overlord, pay §Y80%§! less for any tech their Overlord knows, and turn into vassals once they reach §Y50%§! of their Overlord's tech level."
  SUBJECT_DESC_tributary:0 "Tributaries are a type of subject which is mostly independent but pays §Y25%§! of their monthly Energy Credits and Minerals in tribute to their Overlord."
  OPEN_COMBAT_STATS:0 "§GClick to open Combat Stats§!"
  SUBJECT_tributary:0 "Tributary"

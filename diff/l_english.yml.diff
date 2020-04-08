@@ -395,9 +395,9 @@ CHANGE ACTION_DEMAND_VASSALIZATION_OFFER_DESC:0 "§H[Actor.GetName]§!要求我�
 ADD ACTION_DEMAND_PROTECTORATE_OFFER_DESC:0 "§H[Actor.GetName]§! has offered their protection in exchange for some influence over our internal affairs. $SUBJECT_DESC_protectorate$"
 CN2 ACTION_DEMAND_PROTECTORATE_OFFER_DESC:0 "§H[Actor.GetName]§!提议对我们进行保护以换取对我们内政的一些影响。$SUBJECT_DESC_protectorate$"
 CHANGE ACTION_DEMAND_PROTECTORATE_OFFER_DESC:0 "§H[Actor.GetName]§!愿意提供保护，以换取对我们内部事务的一些影响。$SUBJECT_DESC_protectorate$"
-ADD ACTION_DEMAND_TRIBUTARY_OFFER_DESC:0 "§H[Actor.GetName]§! has demanded to become our tributary. If we accept, they will protect us but we will have to pay them §Y25%§! of our Mineral and Energy income."
+ADD ACTION_DEMAND_TRIBUTARY_OFFER_DESC:1 "§H[Actor.GetName]§! has demanded to become our tributary. If we accept, they will protect us but we will have to pay them §Y25%§! of our Mineral and Energy income."
 CN2 ACTION_DEMAND_TRIBUTARY_OFFER_DESC:0 "§H[Actor.GetName]§!要求我们成为他们的朝贡国。如果我们接受，他们将保护我们但是我们必须向他们朝贡§Y25%§!的矿物和能源收入。"
-CHANGE ACTION_DEMAND_TRIBUTARY_OFFER_DESC:0 "§H[Actor.GetName]§!要求让我们成为藩属国。如果我们接受，他们将保护我们，但我们需要支付§Y25%§! 的矿物和能源收入。"
+CHANGE ACTION_DEMAND_TRIBUTARY_OFFER_DESC:1 "§H[Actor.GetName]§!要求让我们成为藩属国。如果我们接受，他们将保护我们，但我们需要支付§Y25%§! 的矿物和能源收入。"
 ADD ACTION_ASK_TO_BECOME_THRALL_OFFER_DESC:0 "§H[Actor.GetName]§! has requested to become our Thrall. If we accept, we will be unable to attack them but they will have to pay us §Y25%§! of their Mineral and Energy income. As a Thrall they will be forbidden from expanding into new systems."
 CN2 ACTION_ASK_TO_BECOME_THRALL_OFFER_DESC:0 "§H[Actor.GetName]§!请求成为我们的仆从国。如果我们接受，我们将无法攻击他们但是他们必须向我们支付§Y25%§!的矿物和能源收入。作为仆从国他们将被禁止向新的星系扩张。"
 CHANGE ACTION_ASK_TO_BECOME_THRALL_OFFER_DESC:0 "§H[Actor.GetName]§!请求成为我们的仆从。如果我们接受，我们将无法攻击他们，但他们需要支付§Y25%§!的矿物和能源收入。身为仆从国，他们将被禁止殖民。"
@@ -417,7 +417,7 @@ OLD ACTION_REQ_ACTOR_FED_LEADER:0 "You are the current Federation President."
 NEW ACTION_REQ_ACTOR_FED_LEADER:1 "You should be the current Federation President."
 CN ACTION_REQ_ACTOR_FED_LEADER:1 "你是当前的联邦总统。"
 CN2 ACTION_REQ_ACTOR_FED_LEADER:1 "你应当是当前的联邦主席国。"
-CHANGE ACTION_REQ_ACTOR_FED_LEADER:1 "你应当是当前的联邦主席国。"
+CHANGE ACTION_REQ_ACTOR_FED_LEADER:2 "你必须是当前的联邦主席国。"
 OLD ACTION_DECLARE_WAR_HAS_GUARANTEE:0 "§RWe must stop guaranteeting their independence before we can declare war on them.§!"
 NEW ACTION_DECLARE_WAR_HAS_GUARANTEE:0 "§RWe must stop guaranteeing their independence before we can declare war on them.§!"
 CN ACTION_DECLARE_WAR_HAS_GUARANTEE:0 "§R在对他们宣战之前，我们必须先停止保障对方独立。§!"

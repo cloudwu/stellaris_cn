@@ -151,6 +151,8 @@
  HIVE_MIND_MAIN_SPECIES_ALWAYS_CITIZEN:1 "$TRIGGER_FAIL$§R我们是一体的。我们永远具有§Y完整公民权§!§!。"
  HIVE_MIND_SPECIES_CITIZENS_ONLY:1 "$TRIGGER_FAIL$§R和我们不是一体的存在不能成为公民。§!"
  FANATIC_PURIFIERS_MUST_PURIFY:0 "$TRIGGER_FAIL$§Y狂心肃清者§!无法容忍异种的存在。"
+ CANNOT_DISPLACE_NON_SENTIENT_ROBOTS: "$TRIGGER_FAIL$不能驱离非智慧机器人。"
+ CANNOT_NEUTER_NON_SENTIENT_ROBOTS: "$TRIGGER_FAIL$不能阉割非智慧机器人。"
  HIVE_MIND_PURGE_ALWAYS_PROCESSING:0 "$TRIGGER_FAIL$看起来真美味！"
  MACHINE_ROBOTS_ONLY:0 "$TRIGGER_FAIL$§Y$auth_machine_intelligence$§!只能整合具有§Y$trait_mechanical$§!特质的种族。"
  MACHINE_ASSIMILATOR_CYBORGS_ONLY:0 "$TRIGGER_FAIL$§Y$civic_machine_assimilator$§!只能向具有§Y$trait_cybernetic$§!特质的种族提供§Y$citizenship_limited$§!或§Y$citizenship_caste_system_limited$§!公民权。"
@@ -587,6 +589,7 @@
  INTEL_LEVEL_NOT_TRIGGER:0 "情报等级不$OPERATOR$$LEVEL|Y$"
  INTEL_LEVEL_TRIGGER:0 "情报等级$OPERATOR$$LEVEL|Y$"
  MISSING_WORMHOLE_STATION:0 "超出范围！我们需要在该星系附近建立虫洞站。"
+ FLEET_JUGGERNAUT_REPAIR:0 "§R主宰不能送去维修。§!"
  FLEET_NO_PATH:0 "所选舰队找不到抵达此星系的可用路径。"
  FLEET_NO_PATH_RESTRICTED:0 "星系被设为管制，我方舰队无法进入。"
  FLEET_NO_PATH_PASSIVE_STANCE:0 "正因处于回避姿态而躲避敌对势力"
@@ -1777,6 +1780,8 @@
  TOGGLE_TRADE_VIEW_FOCUS_AREA_GAMEPAD_INDICATOR:0 "£gamepad_y£ 切换焦点"
 
  TRADE_OFFER_QUANTITY:0 "数量"
+
+ TRADE_TOO_MANY_FAVORS:0 "帝国不可能收买到比他们所能拥有的更多的人情。"
 
  ###################################
  # Outliner
@@ -7038,7 +7043,7 @@
  ACTION_DEMAND_SIGNATORY_DESC:0 "我们可以要求他们签订我们提出的银河系和平条约。如果他们接受，我们将保护他们，但他们将无法独立外交或发动战争。身为签约国，他们还需要禁止奴役和肃清。"
  ACTION_DEMAND_TRIBUTARY_TITLE:0 "要求朝贡"
  ACTION_DEMAND_TRIBUTARY_DESC:1 "我们可以要求他们进贡。如果他们接受，我们将为他们提供保护，但他们需要向我们进贡§Y25%§!的矿物和能源收入。"
- ACTION_DEMAND_TRIBUTARY_OFFER_DESC:0 "§H[Actor.GetName]§!要求让我们成为藩属国。如果我们接受，他们将保护我们，但我们需要支付§Y25%§! 的矿物和能源收入。"
+ ACTION_DEMAND_TRIBUTARY_OFFER_DESC:1 "§H[Actor.GetName]§!要求让我们成为藩属国。如果我们接受，他们将保护我们，但我们需要支付§Y25%§! 的矿物和能源收入。"
  ACTION_DEMAND_SUBSIDIARY_TITLE:0 "提供子公司地位"
  ACTION_DEMAND_SUBSIDIARY_DESC:1 "我们可以提议他们成为我们的子公司。如果他们接受，我们将为他们提供保护，但他们需要向我们支付§Y25%§!的能源收入，并在战争中加入我方。"
  ACTION_ASK_TO_BECOME_VASSALIZED_TITLE:1 "请求成为对方的附庸国"
@@ -7075,7 +7080,7 @@
  ACTION_LEAVE_FEDERATION_DESC:0 "我们可以放弃§H[Actor.GetAllianceName]§!并分道扬镳，其他成员会不高兴的……"
  ACTION_REQ_WAR_LEADER:0 "我们的帝国是战争领袖。"
  ACTION_REQ_AT_PEACE:0 "我们处于和平状态。"
- ACTION_REQ_ACTOR_FED_LEADER:1 "你应当是当前的联邦主席国。"
+ ACTION_REQ_ACTOR_FED_LEADER:2 "你必须是当前的联邦主席国。"
  ACTION_REQ_RECIPIENT_FED_LEADER:1 "联盟总统必须是另一方。"
  ACTION_DECLARE_WAR_HAS_TRUCE:0 "\n§R$TRUCE|H$到$DATE|H$为止，和约期满前无法宣战。§!"
  ACTION_CLOSE_BORDERS_HAS_TRUCE:0 "\n§R$TRUCE|H$到$DATE|H$为止，和约期满前无法关闭边界。§!"
@@ -10702,7 +10707,7 @@
  attitude_neutral:4 "§W中立§!"
  attitude_unfriendly:2 "§W不信任§!"
  attitude_cordial:1 "§G诚恳§!"
- attitude_rival:1 "§R劲敌§!"
+ attitude_rival:1 "§W劲敌§!"
  attitude_dismissive:2 "§W不屑一顾§!"
  attitude_enigmatic:1 "§W不可捉摸§!"
  attitude_patronizing:1 "§W恩宠§!"
@@ -11170,7 +11175,7 @@
  SUBJECT_vassal:0 "附庸国"
  SUBJECT_DESC_vassal:0 "附庸国臣服于其宗主国，他们只有有限的外交权，而且必须与宗主国并肩作战。"
  SUBJECT_protectorate:0 "保护国"
- SUBJECT_DESC_protectorate:4 "保护国得到宗主国的独立保障，而且研究宗主国已有科技时所需成本减少§Y80%§!，在研究完成宗主国已有科技总数的§Y50%§!后就会转化为附庸国。"
+ SUBJECT_DESC_protectorate:5 "保护国得到宗主国的独立保障，而且研究宗主国已有科技时所需成本减少§Y80%§!，在达到宗主国科技水平的§Y50%§!后就会转化为附庸国。"
  SUBJECT_DESC_tributary:0 "藩属国是大致保持独立的附属国，但每月须向宗主国缴纳§Y25%§!的能源点数和矿物收入。"
  OPEN_COMBAT_STATS:0 "§G点击以打开战斗状态§!"
  SUBJECT_tributary:0 "藩属国"

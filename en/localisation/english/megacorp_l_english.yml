@@ -1081,7 +1081,7 @@
  job_roboticist:0 "Roboticist"
  job_roboticist_plural:0 "Roboticists"
  job_roboticist_desc:1 "These technicians build robots, that the robots may build for the nation."
- job_roboticist_effect_desc:0 "£job_roboticist£ $job_roboticist_plural$ turn £minerals£ §Y$minerals$§! into new £pop£ §YRobot Pops§!"
+ job_roboticist_effect_desc:1 "£job_roboticist£ $job_roboticist_plural$ turn £alloys£ §Y$alloys$§! into new £pop£ §YRobot Pops§!"
  mod_job_roboticist_add:0 "$job_roboticist$ Jobs"
  mod_job_roboticist_per_pop:0 "§G+1§! $job_roboticist$ Job per $VALUE$ Pops"
  mod_job_roboticist_per_pop_short:0 "\n§G+1§! £mod_job_roboticist_add£ per $VALUE$ £pop£"
@@ -1416,6 +1416,7 @@
  mod_planet_chemists_produces_mult:0 "£job_chemist£ $job_chemist_plural$ Output"
  mod_planet_refiners_produces_mult:0 "£job_gas_refiner£ $job_gas_refiner_plural$ Output"
  mod_planet_translucers_produces_mult:1 "£job_translucer£ $job_translucer_plural$ Output"
+ mod_planet_priests_produces_mult:0 "£job_priest£ $job_priest_plural$ Output"
  mod_planet_branch_offices_energy_produces_add:0 "£energy£ Branch Office Income"
  mod_planet_bio_trophies_unity_produces_mult:0 "£unity£ $unity$ from $pop_cat_bio_trophy_plural$"
  mod_planet_pops_organics_food_upkeep_mult:0 "Pop Food Upkeep"
@@ -3147,7 +3148,7 @@
  # shrine
  fleet2dealdesc1:1 "Listen, do you hear that? It's the sound of coin trickling in. Yes, [Root.GetSpeciesNamePlural], we see great fortune coming your way.\n\nNuma has shown us a vision of a shrine in her honor on one of your worlds. A shrine that could bring you prosperity beyond your wildest dreams.$fleetdeal_explanation$"
  # thralls
- fleet2dealdesc2:1 "Bring in the [fleet2_recent_pop_species.GetName]. During our pilgrimage across the galaxy we have saved many lost souls...\n\nLook at this fine specimen, schooled in the art of Numistic administration. See the inside of his [fleet2_recent_pop_species.GetMouthName]? That color there indicates a healthy individual. They make great too laborers too. And their reproductive capacities are astounding. What say you?$fleetdeal_explanation$"
+ fleet2dealdesc2:1 "Bring in the [fleet2_recent_pop_species.GetName]. During our pilgrimage across the galaxy we have saved many lost souls...\n\nLook at this fine specimen, schooled in the art of Numistic administration. See the inside of his [fleet2_recent_pop_species.GetMouthName]? That color there indicates a healthy individual. They make great laborers too. And their reproductive capacities are astounding. What say you?$fleetdeal_explanation$"
   # edict
  fleet2dealdesc3:1 "Close your visual receptors. Now picture yourself on your back floating on a stream of energy credits towards a mountain of even more energy credits.\n\nWith our Numistic visualization techniques you will learn that there is no greater power than the power of the mind. You too will be free of material desires and credits will be drawn to you like arthropoids to dung.$fleetdeal_explanation$"
   # technology
@@ -3435,6 +3436,10 @@
  colony.3033.a.robot:0 "Report."
  colony.3033.d.robot:0 "Mirror Universe [Root.Owner.Species.GetName] offline."
 
+ dportal_trade_increases_tooltip:0 "The £amenities£ and £trade_value£ output of §Y$job_dimensional_portal_researcher_plural$§! increases."
+ dportal_trade_increases_gestalt_tooltip:0 "The £amenities£ and £energy£ output of §Y$job_dimensional_portal_researcher_gestalt_plural$§! increases."
+ dportal_trade_reduces_tooltip:0 "The £amenities£ and £trade_value£ output of §Y$job_dimensional_portal_researcher_plural$§! decreases."
+ dportal_trade_reduces_gestalt_tooltip:0 "The £amenities£ and £energy£ output of §Y$job_dimensional_portal_researcher_gestalt_plural$§! decreases."
 
  # Other
  action.96.name:0 "§HBirth of the Galactic Market§!"
@@ -4166,6 +4171,7 @@
  xuracorp_deal_in_place:0 "We already have a §YXuran Deal§!."
  muutagan_deal_in_place:0 "We already have a §YMuutagan Deal§!."
  SPECIES_RIGHTS_PRESAPIENT:0 "§YSpecies Rights§! are disabled for Pre-sapient Species"
+ SPECIES_RIGHTS_NO_POPS:0 "§YSpecies Rights§! cannot be set for species templates without any pops"
  living_standard_chemical_bliss_happiness_tooltip:1 "Increases £happiness£ Pop Happiness by §G40%§! unless there is a £consumer_goods£ §YConsumer Goods§! deficit.\n$mod_planet_jobs_produces_mult$: §R-60%§!"
  NUM_RESEARCH_AGREEMENTS:0 "Other Research Agreements"
 

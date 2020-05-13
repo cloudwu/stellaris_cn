@@ -247,9 +247,9 @@
  FEDERATION_MEMBERS_PENALTY:1 "From members($COUNT$): $VALUE|2+=$"
  FEDERATION_ETHICS_PENALTY:1 "From ethics: $VALUE|2+=$"
  FEDERATION_NO_MEMBERS_PENALTY:0 "No other members: $VALUE|2+=$"
- FEDERATION_DIVERSE_ETHICS_PEN: "Diverse ethics($COUNT$): $VALUE|2+=$"
- FEDERATION_OPPOSING_ETHICS_PEN: "Opposing ethics($COUNT$): $VALUE|2+=$"
- FEDERATION_LAW_COHESION_DESC: "$MOD_FEDERATION_COHESION_ADD$: $VALUE|2+=$"
+ FEDERATION_DIVERSE_ETHICS_PEN:0 "Diverse ethics($COUNT$): $VALUE|2+=$"
+ FEDERATION_OPPOSING_ETHICS_PEN:0 "Opposing ethics($COUNT$): $VALUE|2+=$"
+ FEDERATION_LAW_COHESION_DESC:0 "$MOD_FEDERATION_COHESION_ADD$: $VALUE|2+=$"
 
  FEDERATION_RANDOM_NAME:0 "Random Name"
  FEDERATION_PERK_FED_MOD:0 "§EFederation Modifier:§!"
@@ -439,6 +439,7 @@
 
  ACTION_VOTE_FOR_FEDERATION_LAW_TITLE:0 "Vote for Federation Law"
  ACTION_VOTE_FOR_FEDERATION_LAW_LONG_DESC:0 "Vote for proposed change to $LAW|Y$ $CATEGORY|Y$ law"
+ ACTION_VOTE_FOR_FEDERATION_LAW_ACTIVE_DESC:0 "§GActive law:§! $LAW|W$ $CATEGORY|Y$"
 
  ACTION_VOTE_FOR_FEDERATION_TYPE_TITLE:0 "Vote for Federation Type"
  ACTION_VOTE_FOR_FEDERATION_TYPE_LONG_DESC:0 "Vote for proposed change to $TYPE|Y$ federation type"
@@ -661,7 +662,7 @@
  hegemony_federation_passive_desc:0 "$hegemony_federation_desc$"
 
  default_federation_passive_effect:0 "Diverse Ethics impose a §Y50%§! smaller penalty to federation Cohesion."
- trade_federation_passive_effect:0 "Trade Policy is changed to §YTrade League§!, which combines the bonuses of all trade policies into one."
+ trade_federation_passive_effect:1 "Grants access to the §YTrade League§! Trade Policy, which combines the bonuses of $trade_policy_consumer_goods$ and $trade_policy_unity$."
  hegemony_federation_passive_effect:1 "Members cannot freely leave the federation without the president's approval. If the president refuses, the member gets the §YSecession§! Casus Belli to leave the federation."
  research_federation_passive_effect:0 "Free and automatic §YResearch Agreements§! between all federation members."
 
@@ -711,6 +712,60 @@
  federation_acceptance_assimilators:0 "$personality_assimilators$"
  federation_acceptance_servitors:0 "$personality_servitors$"
  federation_acceptance_fanatic_befrienders:0 "$personality_fanatic_befrienders$"
+
+ #Contextual factors
+ federation_acceptance_generally_positive:0 "Is generally positive"
+ federation_acceptance_better_cohesion:0 "Cohesion is not §G90§! or higher"
+ federation_acceptance_poor_cohesion:0 "Poor Cohesion"
+ federation_acceptance_dont_lower_centralization:0 "Cohesion is §G50§! or higher"
+ federation_acceptance_president:0 "Is Federation President"
+ federation_acceptance_reduce_centralization:0 "Wants to reduce Centralization"
+ federation_acceptance_reduce_fleet:0 "Wants to reduce Fleet Contribution"
+ federation_acceptance_rotating:0 "Wants to change to Rotating"
+ federation_acceptance_term_limit:0 "Wants a Term Limit"
+ federation_acceptance_crisis:0 "Ongoing Crisis"
+ federation_acceptance_subject:0 "Is a Subject"
+ federation_acceptance_strong_president:0 "Is Strongest and President"
+ federation_acceptance_weaker:0 "Is less powerful"
+ federation_acceptance_has_subjects:0 "Has Subjects"
+
+ #Federation specific
+ federation_acceptance_hegemony_federation:0 "$hegemony_federation$"
+ federation_acceptance_military_federation:0 "$military_federation$"
+ federation_acceptance_trade_league:0 "$trade_league$"
+
+ #Empire specific
+ federation_acceptance_authoritarian:0 "$ethic_authoritarian$"
+ federation_acceptance_militarist:0 "$ethic_militarist$"
+ federation_acceptance_xenophobe:0 "$ethic_xenophobe$"
+ federation_acceptance_xenophile:0 "$ethic_xenophile$"
+ federation_acceptance_materialist:0 "$ethic_materialist$"
+ federation_acceptance_erudite_explorers_in_research_federation:0 "$erudite_explorers$ + $research_federation$"
+ federation_acceptance_honorbound_warriors_in_military_federation:0 "$honorbound_warriors$ + $military_federation$"
+ federation_acceptance_ruthless_capitalists_in_trade_federation:0 "$ruthless_capitalists$ + $trade_federation$"
+ federation_acceptance_peaceful_traders_in_trade_federation:0 "$peaceful_traders$ + $trade_federation$"
+ #federation_acceptance_erudite_explorers_in_research_federation: "$erudite_explorers$ in a $research_federation$"
+ #federation_acceptance_honorbound_warriors_in_military_federation: "$honorbound_warriors$ in a $military_federation$"
+ #federation_acceptance_ruthless_capitalists_in_trade_federation: "$ruthless_capitalists$ in a $trade_federation$"
+ #federation_acceptance_peaceful_traders_in_trade_federation: "$peaceful_traders$ in a $trade_federation$"
+ federation_acceptance_warrior_culture:0 "$civic_warrior_culture$"
+ federation_acceptance_technocracy:0 "$civic_technocracy$"
+ federation_acceptance_no_psionic:0 "Lacks $psionics$"
+ federation_acceptance_psionic:0 "$psionics$"
+ federation_acceptance_corporate:0 "$gov_megacorporation$"
+
+ #Ruler specific
+ federation_acceptance_ruler_cyborg:0 "$ruler$ - $leader_trait_ruler_cyborg$"
+ federation_acceptance_ruler_synthetic:0 "$ruler$ - $leader_trait_ruler_synthetic$"
+ federation_acceptance_ruler_psionic:0 "$ruler$ - $leader_trait_ruler_psionic$"
+ federation_acceptance_ruler_very_strong:0 "$ruler$ - $trait_very_strong$"
+ federation_acceptance_ruler_chosen:0 "$ruler$ - $leader_trait_ruler_chosen$"
+ #federation_acceptance_ruler_cyborg: "$ruler$ is $leader_trait_ruler_cyborg$"
+ #federation_acceptance_ruler_synthetic: "$ruler$ is $leader_trait_ruler_synthetic$"
+ #federation_acceptance_ruler_psionic: "$ruler$ is $leader_trait_ruler_psionic$"
+ #federation_acceptance_ruler_very_strong: "$ruler$ is $trait_very_strong$"
+ #federation_acceptance_ruler_chosen: "$ruler$ is $leader_trait_ruler_chosen$"
+
 
  ####################
  ### MEGA SHIPYARD + JUGGERNAUT
@@ -1257,16 +1312,16 @@
  resolution_galactic_focus_crisis_nanites_desc:0 "The nanites from the L-Cluster are a threat to the entire galaxy. If we do not unite to stop the nanite swarm, they will destroy us all. We should make dealing with this crisis the Galactic Focus."
  resolution_galactic_focus_crisis_nanites_effect_success:0 "$resolution_galactic_focus_crisis_effect_success$"
 
- resolution_galactic_focus_war_in_heaven_support_side_1:0 "Focus: Denounce [SecondAwakened.GetName]"
- resolution_galactic_focus_war_in_heaven_support_side_1_desc:1 "The [SecondAwakened.GetName] are clearly in the wrong in this war, and we should declare unified support for the [FirstAwakened.GetName]."
- resolution_galactic_focus_war_in_heaven_support_side_1_success:1 "Failure to join the §Y[FirstAwakened.GetName]§! in the §YWar in Heaven§! is considered a §RBreach of Galactic Law§!."
+ resolution_galactic_focus_war_in_heaven_support_side_1:1 "Focus: Denounce [SecondSleeper.GetName]"
+ resolution_galactic_focus_war_in_heaven_support_side_1_desc:2 "The [SecondSleeper.GetName] are clearly in the wrong in this war, and we should declare unified support for the [FirstSleeper.GetName]."
+ resolution_galactic_focus_war_in_heaven_support_side_1_success:2 "Failure to join the §Y[FirstSleeper.GetName]§! in the §YWar in Heaven§! is considered a §RBreach of Galactic Law§!."
 
- resolution_galactic_focus_war_in_heaven_support_side_2:0 "Focus: Denounce [FirstAwakened.GetName]"
- resolution_galactic_focus_war_in_heaven_support_side_2_desc:1 "The [FirstAwakened.GetName] are clearly in the wrong in this war, and we should declare unified support for the [SecondAwakened.GetName]."
- resolution_galactic_focus_war_in_heaven_support_side_2_success:1 "Failure to join the §Y[SecondAwakened.GetName]§! in the §YWar in Heaven§! is considered a §RBreach of Galactic Law§!."
+ resolution_galactic_focus_war_in_heaven_support_side_2:1 "Focus: Denounce [FirstSleeper.GetName]"
+ resolution_galactic_focus_war_in_heaven_support_side_2_desc:2 "The [FirstSleeper.GetName] are clearly in the wrong in this war, and we should declare unified support for the [SecondSleeper.GetName]."
+ resolution_galactic_focus_war_in_heaven_support_side_2_success:2 "Failure to join the §Y[SecondSleeper.GetName]§! in the §YWar in Heaven§! is considered a §RBreach of Galactic Law§!."
 
  resolution_galactic_focus_war_in_heaven_denounce_both:0 "Focus: Denounce Both Awakened Empires"
- resolution_galactic_focus_war_in_heaven_denounce_both_desc:0 "Both the [FirstAwakened.GetName] and the [SecondAwakened.GetName] are acting like children. Prepare a harshly worded letter for each."
+ resolution_galactic_focus_war_in_heaven_denounce_both_desc:1 "Both the [FirstSleeper.GetName] and the [SecondSleeper.GetName] are acting like children. Prepare a harshly worded letter for each."
  resolution_galactic_focus_war_in_heaven_denounce_both_success:0 "Joining either Awakened Empire in the §YWar in Heaven§! is considered a §RBreach of Galactic Law§!.\n\nEmpires that are not vassals of an Awakened Empire gain the listed bonuses."
 
  galactic_focus_crisis_prethoryn:2 "$TRIGGER_FAIL$Defeat the Prethoryn Scourge"
@@ -1381,8 +1436,8 @@
  DIPLOMATIC_ACTION_TITLE:0 "Diplomatic Action"
  Envoy_Action:0 "Assign Envoy"
  ENVOY_ACTION_TITLE:1 "Envoy Assignments"
- ENVOY_UNASSIGN_TITLE: "Unassign Envoys"
- ENVOY_UNASSIGN_DESC: "Unassigning envoys will make them stop their current assignment and return to our capital, ready for their next task."
+ ENVOY_UNASSIGN_TITLE:0 "Unassign Envoys"
+ ENVOY_UNASSIGN_DESC:0 "Unassigning envoys will make them stop their current assignment and return to our capital, ready for their next task."
  ENVOY_STATUS_UNAVAILABLE:0 "§R$SPECIAL_PROJECT_STATUS_UNAVAILABLE$§!"
  improve_relations:0 "Improve Relations"
  improve_relations_TITLE:0 "Improve Relations"
@@ -1470,9 +1525,9 @@
  FAVORS_WEIGHT_VAL:0 "Favors: §Y$VALUE$§!"
  FAVORS_COUNTRY_VAL:0 "$COUNTRY$: $VALUE|Y0$"
  CALL_IN_FAVOR:0 "Call in Favor"
- CALL_IN_FAVOR_UNABLE: "We are not able to call in any favors."
- CALL_IN_FAVOR_ONLY_IF_VOTING: "We must take a stand for or against the Resolution to call in favors."
- CALL_IN_FAVOR_ONLY_IF_IN_FAVOR: "Can only call in favors if we are supporting the Resolution."
+ CALL_IN_FAVOR_UNABLE:0 "We are not able to call in any favors."
+ CALL_IN_FAVOR_ONLY_IF_VOTING:0 "We must take a stand for or against the Resolution to call in favors."
+ CALL_IN_FAVOR_ONLY_IF_IN_FAVOR:0 "Can only call in favors if we are supporting the Resolution."
  CALL_IN_FAVOR_UNAVAILABLE:0 "We have no Favors available. Trade with an Empire for Favors to gain them."
  CALL_IN_FAVOR_ICON:0 "£call_favor£ $CALL_IN_FAVOR$"
  CLICK_CALL_IN_FAVOR:1 "§GClick to Call in Favor(s) to boost your Diplomatic Weight on this Resolution§!"
@@ -1486,6 +1541,7 @@
  IS_IN_BREACH:0 "$COUNTRY|Y$ is In Breach of galactic law"
  IS_IN_BREACH_DESC:0 "§REmpires that are In Breach, are subject to penalties from any Sanctions that have been Enacted.§!"
  IS_NOT_IN_BREACH:0 "$COUNTRY|Y$ is NOT in breach of galactic law"
+ SANCTIONS_MODIFIERS:0 "§HSanctions Modifiers:§!"
 
  GALACTIC_MODIFIERS:0 "Galactic Modifiers"
  TRIGGERED_MODIFIERS:0 "Modifiers"
@@ -2392,6 +2448,7 @@
  origin_doomsday_desc:0 "This civilization's homeworld is highly unstable, and it is only a matter of time before it explodes. Their only hope is to seek refuge elsewhere before it is too late."
  origin_tooltip_doomsday_effects:1 "§R- WARNING: Challenging Origin§!\n- Your homeworld will explode within §H35 to 45 years§! after the game starts\n- Valuable resources from the doomed planet's mantle boost production on the surface\n- No guaranteed habitable worlds will spawn near your home system"
  START_SCREEN_DOOMSDAY:0 "[Root.Capital.GetName] is dying. Our homeworld had been plagued by earthquakes and volcanic eruptions for thousands of years before our [Root.GetScientistPlural] finally confirmed the unthinkable. Their calculations showed that our tectonically unstable planet would tear itself apart within a century or two.\n\nWith no way of halting this process, it was realized that our survival as a species would depend on our ability to leave [Root.Capital.GetName] behind and seek refuge elsewhere amongst the stars. An unprecedented industrial and technological buildup followed, and our civilization rapidly progressed from primitive atmospheric flight to early space travel. The first vessels capable of hyperspace travel are ready, but there is not much time.\n\nWe must find a new home."
+ requires_doomsday_colony:0 "§RWe need to have a Colony first!§!"
  origin.61.name:0 "The End is Nigh"
  origin.61.desc:1 "As earthquakes and volcanic activity on [Root.GetName] continue to increase in frequency and intensity, our [Root.Owner.GetScientistPlural] are now able to more accurately predict when the end will come:\n\nThey estimate that we have between §H35 to 45 years§! until the planet detonates.\n\nConditions on the surface will steadily deteriorate until then. The only good news is that the violent tectonic movements have made it easier to access the rich resources of the planet's mantle, increasing our production capacity."
  origin_61.a:0 "There is not much time."
@@ -2725,6 +2782,7 @@
  FAVORS_TO_USE_DESC:0 "Call in $NUM|Y$ of $TOTAL|Y$ Favor(s) from this Empire"
  DIPLOMATIC_WEIGHT:0 "$succession_type_diplomatic_weight$"
  FAVORS_DIPLO_BUFF_DESC:0 "Calling in $NUM|Y$ Favor(s) would boost your Diplomatic Weight with £diplo_weight£ §H+$VAL|$§! for this Resolution."
+ FAVORS_SAME_SIDE:1 "§RThis Empire is already supporting this Resolution. There is no need to call in a favor from them to gain their support.§!"
  ASK_TO_LEAVE_FEDERATION:0 "Ask to Leave Federation"
  POPUP_ASK_TO_LEAVE_FEDERATION_DESC:0 "Do you want to send a request to the President of the $FEDERATION|H$ to leave the Federation?"
  ADD_BUILDING_COLONIZABLE:0 "Cannot add $BUILDING|Y$ to  $PLANET|Y$ because it is not colonizable"
@@ -2811,6 +2869,7 @@
  BUILD_PLAN:0 "Build Plan"
  BUILD_PLAN_ENTRY:0 "$BUILDABLE|Y$ on $PLANET|Y$ ($WEIGHT|Y0$)"
  NO_BUILD_PLAN_DESC:0 "$COUNTRY|Y$ currently has no Build Plan"
+ CURRENT_PLAN:0 "Economic Plan: $PLAN|Y$"
 
  action.123.name:0 "Last [From.GetSpeciesNamePlural] Abducted"
  action.123.desc:0 "The last of the primitive §H[From.GetSpeciesNamePlural]§! have been abducted into slavery from the surface of [From.From.GetName], their homeworld. A few scattered survivors might still be roaming the [From.From.GetPlanetMoon]'s wilderness, but not enough to maintain any kind of civilization."
@@ -3060,8 +3119,8 @@
  d_bluelotus_desc:0 "This highly experimental facility seeks to transmute everyday silicates into useful alloys."
  d_bluelotus2:0 "Blue Lotus Facility"
  d_bluelotus2_desc:0 "An industrial-scale facility which transmutes everyday silicates into useful alloys."
- d_ruin_bluelotus: "Blue Lotus Ruin"
- d_ruin_bluelotus_desc: "Ruined site of a once-promising, experimental facility for transmuting rock and other matter into alloys. Nothing now remains, save this minor seam."
+ d_ruin_bluelotus:0 "Blue Lotus Ruin"
+ d_ruin_bluelotus_desc:0 "Ruined site of a once-promising, experimental facility for transmuting rock and other matter into alloys. Nothing now remains, save this minor seam."
  d_crater_bluelotus:0 "Blue Lotus Crater"
  d_crater_bluelotus_desc:0 "Site of an accidental, runaway transmutation of rock and other matter into a single, precious alloy."
 
@@ -3151,7 +3210,8 @@
  REMOVE_WAR_PARTICIPANT_EFFECT:1 "$COUNTRY$ is removed from the $WAR$"
  effect_random_war:1 "Random War"
  effect_every_war:1 "Every War"
- count_war_trigger:1 "Number of Federations $IS_NOT$ $COMPARATOR$ $NUM|Y$"
+ count_war_trigger:2 "Number of Wars$CONDITIONS$ $IS_NOT$ $COMPARATOR$ $NUM|Y$"
+ count_war_all_trigger:0 "$IS_ALL_NOT$ Wars fulfill the following conditions"
  effect_every_galaxy_species:1 "Every Species in the Galaxy"
  effect_random_galaxy_species:1 "Random Species in the Galaxy"
 
@@ -3205,7 +3265,7 @@
  federations.10300.comply:0 "Our Empire will change our §Y$policy_purge$§! policy to §Y$purge_displacement_only$§!."
 
  federations.10310.desc:0 "The Galactic Community has passed the §Y$resolution_rulesofwar_independent_tribunals$§! resolution, banning the §Y$orbital_bombardment_indiscriminate$§! policy.\n\nOur Empire is currently in breach of this resolution. Shall we change our policies to be in compliance?"
- federations.10310.comply:0 "Our Empire will change our §Y$policy_orbital_bombardment$§!policy to §Y$orbital_bombardment_selective$§!."
+ federations.10310.comply:0 "Our Empire will change our §Y$policy_orbital_bombardment$§! policy to §Y$orbital_bombardment_selective$§!."
 
  federations.10320.desc:0 "The Galactic Community has passed the §Y$resolution_rulesofwar_last_resort_doctrine$§! resolution, banning the §Y$unrestricted_wars$§! policy.\n\nOur Empire is currently in breach of this resolution. Shall we change our policies to be in compliance?"
  federations.10320.comply:0 "Our Empire will change our §Y$policy_war_philosophy$§! policy to §Y$liberation_wars$§!."

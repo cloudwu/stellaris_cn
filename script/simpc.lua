@@ -72,6 +72,8 @@ local list = {
 "federations_l_english.yml",
 "federations_resolution_comments_l_english.yml",
 "lithoids_l_english.yml",
+"dlc_recommendations_l_english.yml",
+"federations_anniversary_l_english.yml",
 }
 
 for _,file in ipairs(list) do

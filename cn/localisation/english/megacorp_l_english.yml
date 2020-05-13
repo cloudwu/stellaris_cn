@@ -1081,7 +1081,7 @@
  job_roboticist:0 "机器人专家"
  job_roboticist_plural:0 "机器人专家"
  job_roboticist_desc:1 "这些技术人员负责建造机器人，而机器人则负责建造国家。"
- job_roboticist_effect_desc:0 "£job_roboticist£$job_roboticist_plural$消耗£minerals£§Y$minerals$§!制造新的£pop£§Y机器人人口§!"
+ job_roboticist_effect_desc:1 "£job_roboticist£$job_roboticist_plural$消耗£alloys£§Y$alloys$§!制造新的£pop£§Y机器人人口§!"
  mod_job_roboticist_add:0 "$job_roboticist$职位"
  mod_job_roboticist_per_pop:0 "每$VALUE$个人口§G+1§!个$job_roboticist$职位"
  mod_job_roboticist_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_roboticist_add£ "
@@ -1416,6 +1416,7 @@
  mod_planet_chemists_produces_mult:0 "£job_chemist£$job_chemist_plural$产出"
  mod_planet_refiners_produces_mult:0 "£job_gas_refiner£$job_gas_refiner_plural$产出"
  mod_planet_translucers_produces_mult:1 "£job_translucer£$job_translucer_plural$产出"
+ mod_planet_priests_produces_mult:0 "£job_priest£ $job_priest_plural$产出"
  mod_planet_branch_offices_energy_produces_add:0 "£energy£分公司的收入"
  mod_planet_bio_trophies_unity_produces_mult:0 "$pop_cat_bio_trophy_plural$产出的£unity£$unity$"
  mod_planet_pops_organics_food_upkeep_mult:0 "人口食物消耗"
@@ -3435,6 +3436,10 @@
  colony.3033.a.robot:0 "回报。"
  colony.3033.d.robot:0 "镜像宇宙[Root.Owner.Species.GetName]离线。"
 
+ dportal_trade_increases_tooltip:0 "§Y$job_dimensional_portal_researcher_plural$§!产出的 £amenities£ 和 £trade_value£ 会提高。"
+ dportal_trade_increases_gestalt_tooltip:0 "§Y$job_dimensional_portal_researcher_gestalt_plural$§!产出的 £amenities£ 和 £energy£ 会提高。"
+ dportal_trade_reduces_tooltip:0 "§Y$job_dimensional_portal_researcher_plural$§!产出的 £amenities£ 和 £trade_value£ 会降低。"
+ dportal_trade_reduces_gestalt_tooltip:0 "§Y$job_dimensional_portal_researcher_gestalt_plural$§!产出的 £amenities£ 和 £energy£ 会降低。"
 
  # Other
  action.96.name:0 "§H银河贸易市场的诞生§!"
@@ -4166,6 +4171,7 @@
  xuracorp_deal_in_place:0 "我们已经有了一笔§Y旭然交易§!。"
  muutagan_deal_in_place:0 "我们已经有了一笔§Y穆塔钢交易§!。"
  SPECIES_RIGHTS_PRESAPIENT:0 "亚智慧物种无法设置§Y种族权利§!"
+ SPECIES_RIGHTS_NO_POPS:0 "无法为没有人口的种族模板设置§Y种族权利§!"
  living_standard_chemical_bliss_happiness_tooltip:1 "£happiness£人口幸福度增加§G40%§!，除非£consumer_goods£§Y$CONSUMER_GOODS$§!短缺。\n$mod_planet_jobs_produces_mult$：§R-60%§!"
  NUM_RESEARCH_AGREEMENTS:0 "其他研究协议"
 

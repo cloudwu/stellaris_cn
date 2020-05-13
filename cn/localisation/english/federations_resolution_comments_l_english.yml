@@ -192,7 +192,7 @@
  ethic_machine_intelligence_request_friendly_4:0 "$GREETER$ 自信会获得来自它的 $COUNTRY$ 朋友的支持。"
  ethic_machine_intelligence_request_neutral:0 "统计概率显示在接下来的投票中， $COUNTRY$ 支持我们的可能为231比197。本单元可以提高这个数字吗？"
  ethic_machine_intelligence_request_neutral_0:0 "本单元难以确定 $COUNTRY$ 在接下来的投票中所持的立场。"
- ethic_machine_intelligence_request_neutral_1:0 "if ( $COUNTRY$_vote == $GREETER$_vote )\n { SimulatedGratitude = TRUE; }" # BUG 英语文本有语法错误
+ ethic_machine_intelligence_request_neutral_1:0 "if ( VOTE("$COUNTRY$") == VOTE("$GREETER$") )\n     { SimulatedGratitude = TRUE; }"
  ethic_machine_intelligence_request_neutral_2:0 "查询：你们会支持我们的议案吗？"
  ethic_machine_intelligence_request_neutral_3:0 "草拟的调整将优化银河共同体宪章。"
  ethic_machine_intelligence_request_neutral_4:0 "请审阅我们对银河共同体代码库做出的变更。"

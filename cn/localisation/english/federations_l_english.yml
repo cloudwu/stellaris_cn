@@ -308,8 +308,8 @@
  VOTE_TYPE_MAJORITY:0 "$declare_war_majority_vote$"
  FEDERATION_SWITCH_TYPE_RATIO_POSITIVE:0 "§G$SUPPORT|0$/$TOTAL|0$§!"
  FEDERATION_SWITCH_TYPE_RATIO_NEGATIVE:0 "§R$SUPPORT|0$/$TOTAL|0$§!"
- FEDERATION_MEMBER_RIVALING:0 "§R视$MEMBER$为劲敌§!"
- FEDERATION_MEMBER_RIVALED:0 "§R被$MEMBER$视为劲敌§!"
+ FEDERATION_MEMBER_RIVALING:1 "§R视$MEMBER$为宿敌§!"
+ FEDERATION_MEMBER_RIVALED:1 "§R被$MEMBER$视为宿敌§!"
  FED_LAW_COOLDOWN:0 "§R在£time£$NUMBER|Y$内无法改变这项法律§!"
 
  law_category_centralization:0 "联邦集权"
@@ -336,9 +336,9 @@
  fleet_contribution_high:0 "高"
  fleet_contribution_high_desc:0 "该联邦拥有大量联合军事力量。"
 
- fleet_contribution_low_effect:0 "每个成员国为联邦贡献§Y10%§!的军舰容量。\n$MOD_FEDERATION_COHESION_ADD$：§R-0.25§!"
- fleet_contribution_medium_effect:0 "每个成员国为联邦贡献§Y20%§!的军舰容量。\n$MOD_FEDERATION_COHESION_ADD$：§R-0.50§!"
- fleet_contribution_high_effect:0 "每个成员国为联邦贡献§Y30%§!的军舰容量。\n$MOD_FEDERATION_COHESION_ADD$：§R-0.75§!"
+ fleet_contribution_low_effect:0 "每位成员贡献§Y10%§!的海军容量给联邦。"
+ fleet_contribution_medium_effect:0 "每位成员贡献§Y20%§!的海军容量给联邦。"
+ fleet_contribution_high_effect:0 "每位成员贡献§Y30%§!的海军容量给联邦。"
 
  fleet_contribution_low_trade:0 "$fleet_contribution_low$"
  fleet_contribution_low_trade_desc:0 "$fleet_contribution_low_desc$"
@@ -1321,7 +1321,7 @@
  resolution_galactic_focus_war_in_heaven_support_side_2_success:2 "在§Y天堂之战§!中未能加入§Y[SecondSleeper.GetName]§!会被视为§R违反银河法§!。"
 
  resolution_galactic_focus_war_in_heaven_denounce_both:0 "焦点：谴责两个觉醒帝国"
- resolution_galactic_focus_war_in_heaven_denounce_both_desc:2 "[FirstSleeper.GetName]和[SecondSleeper.GetName]两边都表现出十分的不成熟。起草一封措辞严厉的外交辞令呈递双方。"
+ resolution_galactic_focus_war_in_heaven_denounce_both_desc:1 "[FirstSleeper.GetName]和[SecondSleeper.GetName]两边都表现出十分的不成熟。起草一封措辞严厉的外交辞令呈递双方。"
  resolution_galactic_focus_war_in_heaven_denounce_both_success:0 "在§Y天堂之战§!中加入任何一方觉醒帝国会被视为§R违反银河法§!。\n\n非觉醒帝国附庸的帝国将得到下列增益。"
 
  galactic_focus_crisis_prethoryn:2 "$TRIGGER_FAIL$战胜虫族灾祸"
@@ -1836,6 +1836,8 @@
  origin_tooltip_galactic_doorstep_effects:0 "游戏开始时在母星系有一座休眠的§Y星门§!。"
 
  START_SCREEN_GALACTIC_DOORSTEP:0 "数百年前，我们在自己的星系发现了一个神秘的构造。由于这个构造颜色发黑，质地金属，我们将之命名为§H黑王冠§!。这一宏伟存在对我们社会造成了深远影响——我们全体人民在精神上和追求上达成了统一。\n\n进军太空成为了我们科学界优先级最高的事宜，而对这项科技的迫切追求也为我们带来了一系列其它有益发现。\n\n黑王冠实际上处于休眠状态，但我们学到了很重要的一课：通往哪里并不重要——通往彼方的浩瀚征程本身才是重要的。而现在，得益于黑王冠的宣召，我们一族有了造访繁星的手段。"
+ START_SCREEN_GALACTIC_DOORSTEP_MACH:0 "几百年前，我们在自己的恒星系发现了一个神秘的构造。由于这个构造颜色发黑，质地金属，我们将其命名为§H黑王冠§!，这一遥远壮观的存在对我们的社会产生了深远的影响——我们亟需获得更多相关数据。\n\n进军太空成为了我们科研圈优先级最高的事宜，而探索这项科技的渴望也给我们带来了其他方面的一系列有益发现，而这些发现也相继得以应用。\n\n黑王冠实际上处于休眠状态，但在前往它的过程中，我们的诸多改进和升级项目提高了我们的总生产能力，现在我已经具备了遨游群星的能力。"
+ START_SCREEN_GALACTIC_DOORSTEP_HIVE:0 "几百年前，我们在自己的恒星系发现了一个神秘的构造。由于这个构造颜色发黑，质地金属，我们将其命名为§H黑王冠§!，这一宏伟壮观的存在对我们的社会产生了深远的影响——探寻它的本质成为了我们重中之重的任务。\n\n进军太空成为了我们科研圈优先级最高的事宜，而探索这项科技的渴望也给我们带来了其他方面的一系列有益发现，并在过程中让我们得到了磨炼。\n\n黑王冠实际上处于休眠状态，但是这趟旅途并非徒劳。相比过去，如今我们已经有能力探索更加遥远的地方，让我们的文明能够铺枝散叶。"
 
  origin.1000.name:0 "隔门有人"
  origin.1000.desc:0 "在毫无征兆的情况下，位于我们母星系的神秘外星星门突然被激活了！一道能量震荡从这古迹中激射出来，一息之后，一个耀眼、不断振动的球体填满了这个结构的中心。看来这个先行者文明的遗迹不再如我们认为的那样处于休眠状态了。\n\n尽管星门仅仅打开了不过几秒钟，仍然有不少太空残骸从中穿过；经过细致的检查之后，其中的星岩和星尘被发现是宝贵的资源。"
@@ -2637,7 +2639,7 @@
  requires_psionic_pops:0 "需要至少一个成员国拥有具有§Y$trait_psionic$§!或§Y$trait_latent_psionic$§!特质的人口。"
 
 
- origin.26.desc:0 "亲爱的[Root.GetSpeciesNamePlural]。一如既往，我们始终保持着对你们的观察。你们的一位领袖吸引了我们的注意。事实上，[desired_leader.GetTitle]§H[desired_leader.GetName]§!的声名已经一路传到了我们的首都。\n\n鉴于[desired_leader.GetHerHis]非比寻常的技能，我们愿意在[scion_master.Capital.GetName]上提供一个永久职位。一份莫大的荣耀，可以这样讲。请尽快安排好对[desired_leader.GetHerHis]调动。"
+ origin.26.desc:0 "亲爱的[Root.GetSpeciesNamePlural]。一如既往，我们始终保持着对你们的观察，你们的一名领袖吸引了我们的注意。事实上，你们的[desired_leader.GetTitle]，§H[desired_leader.GetName]§!的声名已经一路传到了我们的首都。\n\n鉴于[desired_leader.GetHerHis]非比寻常的技能，我们想要为他在[scion_master.Capital.GetName]上提供一个永久的职位。一份莫大的荣耀，可以这样讲。请尽快安排好对[desired_leader.GetHerHis]调动。"
  origin.26.a:0 "保证完成任务。"
  origin.26.a.tooltip:0 "§H[desired_leader.GetName]§!加入§H[scion_master.GetName]§!"
  origin.26.a.response:0 "非常好。我们期待着[desired_leader.GetHerHis]到来。不必担心，[desired_leader.GetSheHe]将在[scion_master.Capital.GetName]上享受智慧生物所能渴望的一切。"
@@ -2782,7 +2784,7 @@
  FAVORS_TO_USE_DESC:0 "从该国请求总共$TOTAL|Y$中的$NUM|Y$次人情支援"
  DIPLOMATIC_WEIGHT:0 "$succession_type_diplomatic_weight$"
  FAVORS_DIPLO_BUFF_DESC:0 "在该议案中，请求$NUM|Y$次人情支援将为你增强§H+$VAL|$§!的£diplo_weight£ 外交话语权。"
- FAVORS_SAME_SIDE:0 "§R该帝国已经在支持这项议案。没有必要利用人情拉拢他们。§!"
+ FAVORS_SAME_SIDE:1 "§R该帝国已经在支持这项议案。没有必要利用人情拉拢他们。§!"
  ASK_TO_LEAVE_FEDERATION:0 "请求脱离联邦"
  POPUP_ASK_TO_LEAVE_FEDERATION_DESC:0 "您是否要向$FEDERATION|H$的主席申请脱离联邦？"
  ADD_BUILDING_COLONIZABLE:0 "因该星球不可殖民，无法向$PLANET|Y$添加$BUILDING|Y$"
@@ -3032,7 +3034,7 @@
  # Country Events
  ####################################
  federations3.100.name:0 "漂浮珍宝"
- federations3.100.desc:0 "初看，[Root.GetName]上的一切似乎都平淡无奇。只有[From.GetName]上的一位科学家在一次偶然观测中注意到了接近表面的一块巨大棱镜投射出的星光。扫描器很快对晶状体进行了辨识，它的宽度几乎相当于一座中等大小的岛屿。\n\n探针遥测表明，构成该棱镜的化学物质价值非常高；其物理结构可能在我们银河也是独一无二的。"
+ federations3.100.desc:0 "初看，[Root.GetName]上的一切都似乎平淡无奇。只有在[From.GetName]上的一位科学家在一次偶然的观测中发现在表面下的一块巨大冷静投射出的星光。扫描仪很快对物体进行了辨识，它的宽度几乎相当于一座中等大小的岛屿。\n\n探针遥测表明，构成该棱镜的化学物质具有非常高的价值；其物理结构可能在我们河系内也是独一无二的。"
  federations3.100.a:0 "一种有用的资源，现在是我们的了。"
  federations3.100.b:0 "它罕见的美应该留给所有人欣赏。"
 
@@ -3043,7 +3045,7 @@
  colony_fed.100.desc:1 "[Root.GetName]上一处地理异常现象吸引了我们的注意。一个采矿设施周围突然出现了碗状凹地，随后我们展开了调查。这个凹地地貌几乎从未在冰川区以外的地方发现过，但更奇怪的是：这个“圆凹地”的侧壁将可见光散射作花瓣状，而且暴露在某些电磁波段下时会产生共振。调查正在进行。"
 
  colony_fed.105.name:0 "蓝荷计划"
- colony_fed.105.desc:1 "我们的科学家报告称，那些在[Root.GetName]上新发现的蓝色晶状沉积对延迟擦除光子能量响应剧烈。那些矿物过滤光子波长，并反射了一道可以将普通硅化物转化为新型超导合金的光束——尽管只有在日光下才能进行。\n\n由于该过程涉及到在一个狭小空间内反射高能辐射，若干科学家已经提出异议。而另一群热血沸腾的研究者则提出了相反的意见，他们强调这种现象可以彻底变革我们精练贵金属的方式。但无论如何：开发这项科技都需要巨大的投入。"
+ colony_fed.105.desc:1 "我们的科学家报告称，这些在[Root.GetName]新发现的蓝色晶状物质对延迟擦除光子能量响应剧烈。这些矿物将光子的波长过滤，并反射了一道可以将普通的硅化物转化为新型超导合金的光束——尽管只有在日光下才能进行。\n\n由于该过程涉及到在一个狭小空间内反射高能辐射，若干科学家已经提出异议。而另一群热血沸腾的研究者则提出了相反的意见，他们强调这种现象可以彻底变革我们精练贵金属的方式。但无论如何：进一步开发这项科技都需要巨大的投入。"
  colony_fed.105.gestalt.desc:0 "在[Root.GetName]的盆地中发现了一台离群无人机。受到改进冶矿方式的初始指令驱动，它找到了一种将硅化物转化为新型合金的方法。\n\n这一过程似乎涉及将高能束从地貌墙中的矿物藏反射回来。该无人机孜孜不倦的工作导致该区域充满高能辐射。该无人机已经被捕获，而究竟是重新整合还是摧毁个体从而获取相关知识有待决定。"
  colony_fed.105.a:0 "让它回归系统。"
  colony_fed.105.b:0 "让我们瞧瞧这项研究会带来什么。"
@@ -3173,7 +3175,7 @@
  fedel.899.desc:0 "用以决出联邦领导国的黄金律挑战赛将于数日后举行。由当前的联邦领导国开始，联邦中的每个帝国都有机会投标，直至仅剩一个参与国为止。这一投标国就是被选出的联邦领袖。"
  fedel.899.a:0 "我们准备好了。"
  fedel.901.name:0 "开始投标！"
- fedel.901.desc:0 "是时候由[Root.GetName]在黄金律挑战赛中投标了。要么预付所需的价码，要么选择放弃——亦即失去继续参赛的权利。\n\n当前投标总额为：\n\n£energy£ §H[bidding_federation_leader.current_pot_variable]§!"
+ fedel.901.desc:1 "是时候由[Root.GetName]在黄金律挑战赛中投标了。要么预付所需的价码，要么选择放弃——亦即失去进一步参赛的权利。\n\n当前投标总额为：\n\n£energy£ §H[bidding_federation_leader.current_pot_variable]§!"
  fedel.901.a:0 "出价£energy£ §Y10000§!。"
  fedel.901.a.tooltip:0 "支付£energy£ §Y10000§!并继续挑战。"
  fedel.901.b:0 "出价£energy£ §Y2500§!。"
@@ -3273,3 +3275,8 @@
 
  federations.10330.desc:0 "银河共同体已经通过了§Y$resolution_rulesofwar_demobilization_initiative$§!决议案，禁止§Y$economic_policy_military$§!政策。\n\n我国现违背该决议案内容，是否要修改对应政策以遵守决议案？"
  federations.10330.comply:0 "我帝国会将我们的§Y$policy_economic_policy$§!政策调整为§Y$economic_policy_balanced$§!。"
+
+ resolution_passed_diplomatic_weight:0 "议案已通过"
+ resolution_passed_diplomatic_weight_desc:0 "一项由这个帝国提出的议案已被星海共同体通过，昭示了该国的外交实力。"
+ resolution_failed_diplomatic_weight:0 "议案被否决"
+ resolution_failed_diplomatic_weight_desc:0 "一项由这个帝国提出的议案已被星海共同体否决——对该国的外交立场造成沉重打击。"

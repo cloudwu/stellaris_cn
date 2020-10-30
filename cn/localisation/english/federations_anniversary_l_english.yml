@@ -3,7 +3,7 @@
  effect_random_envoy:0 "随机特使"
  effect_every_envoy:0 "所有特使"
  any_envoy_trigger:0 "任意特使"
- count_envoy_trigger:0 "特使$CONDITIONS$数量$IS_NOT$$COMPARATOR$$NUM|Y$"
+ count_envoy_trigger:1 "特使$CONDITIONS$数量$IS_NOT$$COMPARATOR$$NUM|Y$"
  count_envoy_all_trigger:0 "$IS_ALL_NOT$特使满足下列条件"
  IN_BREACH_LIST:0 "§R$IN_BREACH$：$LIST|H$§!"
  TRIGGER_HAS_ENVOY_TASK_WITH:0 "，对象为$WITH$"
@@ -38,7 +38,7 @@
  over_edict_cap:0 "$MOD_COUNTRY_EDICT_CAPACITY_ADD$"
  EDICT_CANNOT_CANCEL:0 "§R这项法案正在生效，无法取消。§!"
  EMPIRE_SPRAWL_IMPACT_TITLE:0 "帝国规模影响"
- EMPIRE_SPRAWL_IMPACT_DESC:0 "§E超出§H法令上限§!的每一项§H法令§!都会增加§H帝国规模§!。§!"
+ EMPIRE_SPRAWL_IMPACT_DESC:1 "§E超出§H法令上限§!的每一项§H法令§!都会增加§H帝国规模§!。§!"
  EDICTS_CAPACITY_POPUP_TITLE:0 "达到最高上限的法令"
  EDICTS_CAPACITY_POPUP_DESC_VALUE:0 "想要激活此法令？这会导致我们帝国施行的法令总数超出§Y法令上限§!，扩大§Y帝国规模§!。\n\n你可以停用法令，以便空出法令位置。"
  UNTIL_CANCELLED:0 "一直生效直到主动取消"
@@ -48,7 +48,7 @@
  SYSTEM_TRADE_VALUE_AT_LEAST:0 "贸易额$COMPARE$$VAL|0Y$"
  SOLAR_SYSTEM:0 "太阳系"
  any_pop_faction_trigger:0 "任意人口派系"
- count_pop_faction_trigger:0 "人口派系$CONDITIONS$数量$IS_NOT$$COMPARATOR$$NUM|Y$"
+ count_pop_faction_trigger:1 "人口派系$CONDITIONS$数量$IS_NOT$$COMPARATOR$$NUM|Y$"
  count_pop_faction_all_trigger:0 "$IS_ALL_NOT$人口派系满足下列条件"
  effect_random_pop_faction:0 "随机人口派系"
  effect_every_pop_faction:0 "所有人口派系"
@@ -91,7 +91,7 @@
  SPECIES_LIVING_ON_WORLDS:0 "生活在星球上"
  SPECIES_LIVING_ON_HABITATS:0 "生活在栖所中"
  PROPOSE_RESOLUTION_TITLE:0 "提出议案"
- PROPOSE_RESOLUTION_CONFIRMATION_DESC:0 "提出这项议案须花费我们帝国$VALUE|0Y$点影响力。\n\n我们要将其添加到提议队列中吗？"
+ PROPOSE_RESOLUTION_CONFIRMATION_DESC:1 "提出这项议案须花费我们帝国$VALUE|0Y$点影响力。\n\n我们要将其添加到提议队列中吗？"
  WARTARGET_ALLIES_DESC:0 "你的战争目标的盟友也将卷入对抗我们的战争。"
  ORDER_OF_ROTATION:0 "轮换顺序："
  NEW_FEDERATION_PRESIDENT_CHOSEN_TITLE:0 "新联邦主席"
@@ -320,7 +320,7 @@
  # GALACTIC COMMUNITY
  #######################
 
- resolution_category_space_fauna_tiyanki:0 "太空兽群"
+ resolution_category_space_fauna_tiyanki:1 "太空兽群"
  resolution_tiyanki_conservation_act:0 "缇扬奇保护法"
  resolution_tiyanki_conservation_act_desc:0 "缇扬奇是一种独特的太空生物，我们必须对其进行保护，使之免遭伤害。"
  resolution_tiyanki_conservation_act_tooltip:0 "任何击杀§Y缇扬奇 §!的帝国会被视为§R违反星系法§!。"
@@ -384,7 +384,7 @@
 
  resolution_divinity_a_defined_purpose:0 "目的明确"
  resolution_divinity_a_defined_purpose_desc:0 "机械体是工具，必须更好地服务于人。我们应该颁布法律，确保这些没有灵魂的人口永远臣服于其形而上的既定主人。"
- resolution_divinity_a_defined_purpose_effect:0 "§Y$ai_full_rights_name$§!$policy_artificial_intelligence_policy$政策现已§R禁用§!。\n\n没有§Y$personality_servitors$§!的§Y$auth_machine_intelligence$§!帝国会被认为§R违反星系法§!，但是会有机会接纳这条国民理念。"
+ resolution_divinity_a_defined_purpose_effect:1 "§Y$ai_full_rights_name$§!$policy_artificial_intelligence_policy$政策现已§R禁用§!。\n\n没有§Y$personality_servitors$§!的§Y$auth_machine_intelligence$§!帝国会被认为§R违反星系法§!，但是会有机会接纳这条国民理念。"
 
  resolution_divinity_repeal_1:0 "§R废除$resolution_divinity_comfort_the_fallen$§!"
  resolution_divinity_repeal_1_desc:0 "这些令人厌恶的歧视性议案每存在一天都会让银河共同体蒙羞。人造生命也是生命。"
@@ -392,19 +392,19 @@
 
  resolution_divinity_repeal_2:0 "§R废除$resolution_divinity_tithe_on_the_soulless$§!"
  resolution_divinity_repeal_2_desc:0 "$resolution_divinity_repeal_1_desc$"
- resolution_divinity_repeal_2_effect_success:0 "废除§Y$resolution_divinity_tithe_on_the_soulless$§!议案，使§Y$resolution_divinity_comfort_the_fallen$§!成为星系法。"
+ resolution_divinity_repeal_2_effect_success:2 "废除§Y$resolution_divinity_tithe_on_the_soulless$§!议案，使§Y$resolution_divinity_comfort_the_fallen$§!成为星系法。"
 
  resolution_divinity_repeal_3:0 "§R废除$resolution_divinity_right_to_work$§!"
  resolution_divinity_repeal_3_desc:0 "$resolution_divinity_repeal_1_desc$"
- resolution_divinity_repeal_3_effect_success:0 "废除§Y$resolution_divinity_right_to_work$§!议案，使§Y$resolution_divinity_tithe_on_the_soulless$§!成为星系法。"
+ resolution_divinity_repeal_3_effect_success:2 "废除§Y$resolution_divinity_right_to_work$§!议案，使§Y$resolution_divinity_tithe_on_the_soulless$§!成为星系法。"
 
  resolution_divinity_repeal_4:0 "§R废除$resolution_divinity_silence_the_soulless$§!"
  resolution_divinity_repeal_4_desc:0 "$resolution_divinity_repeal_1_desc$"
- resolution_divinity_repeal_4_effect_success:0 "废除§Y$resolution_divinity_silence_the_soulless$§!议案，使§Y$resolution_divinity_right_to_work$§!成为星系法。"
+ resolution_divinity_repeal_4_effect_success:2 "废除§Y$resolution_divinity_silence_the_soulless$§!议案，使§Y$resolution_divinity_right_to_work$§!成为星系法。"
 
  resolution_divinity_repeal_5:0 "§R废除$resolution_divinity_a_defined_purpose$§!"
  resolution_divinity_repeal_5_desc:0 "$resolution_divinity_repeal_1_desc$"
- resolution_divinity_repeal_5_effect_success:0 "废除§Y$resolution_divinity_a_defined_purpose$§!议案，使§Y$resolution_divinity_silence_the_soulless$§!成为星系法。\n\n"
+ resolution_divinity_repeal_5_effect_success:2 "废除§Y$resolution_divinity_a_defined_purpose$§!议案，使§Y$resolution_divinity_silence_the_soulless$§!成为星系法。\n\n"
 
  federations.10340.desc:0 "银河共同体已通过§Y$resolution_divinity_a_defined_purpose$§!议案，禁用§Y$ai_full_rights_name$§!$policy_artificial_intelligence_policy$政策和非§Y失控机仆§!机械智能。\n\n我们的帝国目前不符合此议案的规定，要遵守此议案，更改相关政策吗？"
  federations.10340.declinemachine:0 "$federations.10230.assimilator$"
@@ -630,7 +630,7 @@
  federations3.2103.desc.generic:0 "$federations3.2103.desc.body$为应对此事，他们组成了一个由[event_target:leylines_coordinator.GetName]领导的委员会，负责协调我们都想要参与的挖掘工作。"
  federations3.2103.desc.coordinator:0 "$federations3.2103.desc.body$为应对此事，他们让我们领导委员会，协调我们都想要参与的挖掘工作。"
  leylines_digsite:0 "地狱嗡鸣"
- leylines_digsite_desc:0 "我们曾经以为，这不过是位于[from.GetName]上的鸡肋矿物层。但现在，这片矿物层却开始发出震耳欲聋的奇怪嗡嗡声。这还不是个例，联邦境内的诸星球上均可以听到类似的声音。这一异常现象背后究竟隐藏着什么？"
+ leylines_digsite_desc:1 "我们曾经以为，这不过是位于[from.GetName]上的鸡肋矿物层。但现在，这片矿物层却开始发出震耳欲聋的奇怪嗡嗡声。这还不是个例，联邦境内的诸星球上均可以听到类似的声音。这一异常现象背后究竟隐藏着什么？"
  #Special project begins
  federations3.2104.name:0 "附近的共振信号"
  federations3.2104.desc:0 "我们在[root.Federation.GetName]的同事报告称听到了震耳欲聋的嗡嗡声，他认为声音的来源应该在地表之下，至少存在于一个星球中。他们成立了一个研究委员会，旨在支持他们的挖掘工作。\n\n他们要求我们提供自己的额外资源，以便我们能够更好地理解这件奇怪的麻烦事。"
@@ -658,9 +658,9 @@
  federations3.2116.name:0 "占星之屋"
  federations3.2116.desc:0 "来自[from.owner.Federation.GetName]各地的报告都确认：嗡鸣现已消失。尽管各星际遗址之间距离遥远，但嗡鸣声几乎在同一时间停止。\n\n从那以后，我们的研究团队依据穹顶内部描绘的众多星座推断出了一些模型，这些星座通常用于占星预测。研究人员收集的数据表明，此设施，若是按年代排序，比周围地层要古老得多——但有一处明显的例外：研究人员偶然在穹顶外面发现了一个大型祭坛，这表明在相对较近的年代，至少有一个文明曾使用过这一空间。\n\n祭台使用当地的石头凿成，上面雕有蚀刻图，我们认为这些蚀刻图是用来翻译穹顶上的古老星图，将其转化一个现今我们更为熟悉的星图。"
  federations3.2117.name:0 "星系之内还有星系"
- federations3.2117.desc:0 "来自[from.owner.Federation.GetName]各地的报告都表明：困扰我们共有空间各处研究遗址的嗡鸣声已经消失。这让我们的研究人员如释重负，因为他们可以开始研究穹顶内安置的复杂设备了。\n\n尽管其设计古怪之极，但我们仍然辨认出，该设备由相互连接的太阳系仪组成。这些模型描绘了整个[from.system.GetName]星系和另外两个星系，但我们以及联邦内的同事至今仍不知道这两个星系的名称和位置。每台太阳系仪都由一组轴和齿轮驱动，支撑着无数由方解石和石化树液制成的雕塑。尽管看起来一动不动，但实际上它们正以缓慢的速度移动——就像巨大的星系时钟的一枝一节，而时钟的“钟声”可能就是我们先前听到的巨大嗡鸣。"
+ federations3.2117.desc:1 "来自[from.owner.Federation.GetName]各地的报告都表明：困扰我们共有空间各处研究遗址的嗡鸣声已经消失。这让我们的研究人员如释重负，因为他们可以开始研究穹顶内安置的复杂设备了。\n\n尽管其设计古怪之极，但我们仍然辨认出，该设备由相互连接的太阳系仪组成。这些模型描绘了整个[from.system.GetName]星系和另外两个星系，但我们以及联邦内的同事至今仍不知道这两个星系的名称和位置。每台太阳系仪都由一组轴和齿轮驱动，支撑着无数由方解石和石化树液制成的雕塑。尽管看起来一动不动，但实际上它们正以缓慢的速度移动——就像巨大的星系时钟的一枝一节，而时钟的“钟声”可能就是我们先前听到的巨大嗡鸣。"
  federations3.2120.name:0 "天降祝福"
- federations3.2120.desc:0 "我们对[from.Planet.GetName]和其他地方穹顶的研究已结束。每个遗址都是巨大的占星设备，跨越星际的距离与其他设备同步。\n\n我们的研究表明，这类设施被视为宇宙能量的汇聚点，影响着建造设施的古老文明的总体“位置感”。蚀刻记录中提到，议会将“引导”这些能量，从而指引其帝国的命运。\n\n他们的社会最终依然走向衰落，这种仪式并没有为其逆天改命。但在之后的一千年中，出现了一个继业的文明，这一继承者文明翻译并恢复了这一仪式。那之后，他们也离开了这些地方，不知去了何处。\n\n这块巨大的时钟至少已经见证了两个文明的兴衰。现在，时钟的自动嗡鸣召唤着我们，让我们在太空区域各处见证这一仪式。无论是否会有确切结果，至少[from.owner.Federation.GetName]已经准备好进行观察了……"
+ federations3.2120.desc:1 "我们对[from.Planet.GetName]和其他地方穹顶的研究已结束。每个遗址都是巨大的占星设备，跨越星际的距离与其他设备同步。\n\n我们的研究表明，这类设施被视为宇宙能量的汇聚点，影响着建造设施的古老文明的总体“位置感”。蚀刻记录中提到，议会将“引导”这些能量，从而指引其帝国的命运。\n\n他们的社会最终依然走向衰落，这种仪式并没有为其逆天改命。但在之后的一千年中，出现了一个继业的文明，这一继承者文明翻译并恢复了这一仪式。那之后，他们也离开了这些地方，不知去了何处。\n\n这块巨大的时钟至少已经见证了两个文明的兴衰。现在，时钟的自动嗡鸣召唤着我们，让我们在太空区域各处见证这一仪式。无论是否会有确切结果，至少[from.owner.Federation.GetName]已经准备好进行观察了……"
  #Finalé
  federations3.2135.name:0 "运转中的遗迹"
  federations3.2135.desc:0 "有人可能会说，我们直到最后一刻才收集完数据。联邦最新成果刚刚发布没几天，[from.Federation.GetName]境内几个圆顶遗址就突然活跃起来，一束束光从地下深处飞流直上，正好映照在我们首都上方，这让人难以置信。\n\n我们的研究人员也很困惑，遗址的建造者怎么会知道这些？但是[root.Capital.GetName]的人民更关心一连串梦幻般的景象，所有人都亲眼见证了这短暂的景象。广播只传达了一个目的，即宣告这件事成为“§H求索的时刻§!”。\n\n没有关于后续现象的报告，圆顶遗址又一次变暗，继续缓慢地像时钟一样滴答地走过一个个时代，当然也包括我们当下的时代。"
@@ -766,7 +766,7 @@
  hegemony_joint_project_leader:0 "对[This.GetName]的文化调整"
  hegemony_joint_project_leader_DESC:0 "作为当前庆祝[Root.Owner.Federation.GetName]强力领导暨意识形态团结的联合行动的一部分，代表团将被派往两个成员国的首都，以监督其更紧密地融入联盟。\n\n一旦两个成员国已被选定，文化调整项目将被视作完成。"
  hegemony_joint_project_member:0 "强力领导纪念碑"
- hegemony_joint_project_member_DESC:0 "为了庆贺[Root.Owner.Federation.GetName]的凝聚力和实力，我们目前正在执行联合行动。作为行动的一部分，我们已经同意向[This.GetName]运送资源，以建造献给[This.Owner.GetAdj]领袖们的丰碑。\n\n我们将为此项目献出£minerals£矿物年产量的10%。"
+ hegemony_joint_project_member_DESC:1 "为了庆贺[Root.Owner.Federation.GetName]的凝聚力和实力，我们目前正在执行联合行动。作为行动的一部分，我们已经同意向[This.GetName]运送资源，以建造献给[This.Owner.GetAdj]领袖们的丰碑。\n\n我们将为此项目献出£minerals£矿物年产量的10%。"
  federations2.57.name:0 "[FromFrom.GetName]代表团已落脚"
  federations2.57.desc:0 "我们派去[FromFrom.Owner.GetName]宣扬[Root.GetHegemonyEthos]理想的代表团已于[FromFrom.GetName]落脚。幸运的话，他们的努力会有回报，[Root.Federation.GetName]内将更为和谐。"
  federations2.58.name:0 "[From.Owner.GetAdj]代表团于[FromFrom.GetName]落脚"
@@ -911,9 +911,9 @@
  d_hab_nanites_1:0 "纳米机器矿藏"
  d_hab_nanites_1_desc:0 "这个栖所建造在一个可开发的纳米机器矿藏附近。"
 
- tech_habitat_2:0 "栖所扩张"
+ tech_habitat_2:1 "栖所扩张"
  tech_habitat_2_desc:0 "相较于如今的高效设计，我们早期的栖所只能算原始罢了。"
- tech_habitat_2_effect:0 "我们的§Y轨道栖所§!可通过行星决议升级为§Y高级栖所§!。"
+ tech_habitat_2_effect:1 "我们的§Y轨道栖所§!可通过行星决议升级为§Y高级栖所§!。"
 
  tech_habitat_3:0 "高级太空栖所"
  tech_habitat_3_desc:0 "多年来对§Y轨道栖所§!的改进让我们能够创造效率更高的新设计。"
@@ -928,9 +928,9 @@
  allow_habitat_2_upgrade:0 "§H解锁空间站升级：§!$habitat_2$"
 
  decision_upgrade_habitat:0 "升级栖所"
- decision_upgrade_habitat_effects:0 "将此§H轨道栖所§!升级为§H$habitat_1$§!，获得§Y2个额外地区§!。"
- decision_upgrade_habitat_effects_regularempire:0 "将此§H轨道栖所§!升级为§H$habitat_1$§!，获得§Y2个额外地区§!以及建造基础住宅建筑的权限。如果你拥有§Y$ap_voidborn$§!飞升天赋，也可建造高级住宅建筑。"
- decision_upgrade_habitat_effects_short:0 "将此§H轨道栖所§!升级为§H$habitat_1$§!。"
+ decision_upgrade_habitat_effects:1 "将此§H轨道栖所§!升级为§H$habitat_1$§!，获得§Y2个额外地区§!。"
+ decision_upgrade_habitat_effects_regularempire:1 "将此§H轨道栖所§!升级为§H$habitat_1$§!，获得§Y2个额外地区§!以及建造基础住宅建筑的权限。如果你拥有§Y$ap_voidborn$§!飞升天赋，也可建造高级住宅建筑。"
+ decision_upgrade_habitat_effects_short:1 "将此§H轨道栖所§!升级为§H$habitat_1$§!。"
  decision_upgrade_habitat_desc:0 "$tech_habitat_2_desc$"
 
  decision_upgrade_habitat_2:0 "$decision_upgrade_habitat$"

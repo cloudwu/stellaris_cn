@@ -1505,7 +1505,7 @@
  mod_planet_researchers_society_research_produces_add:0 "$mod_planet_researchers_society_research_produces_mult$"
  mod_planet_researchers_produces_mult:1 "£job_researcher£$job_researcher_plural$产出"
  mod_planet_culture_workers_produces_mult:0 "£job_culture_worker£$job_culture_worker_plural$产出"
- mod_planet_synapse_drones_produces_mult:0 "£job_synapse_drone£ $job_synapse_drone_plural$产出"
+ ### mod_planet_synapse_drones_produces_mult:0 "£job_synapse_drone£ $job_synapse_drone_plural$ Output"    <-- FIX THIS!
  mod_planet_synapse_drones_unity_produces_mult:0 "£unity£ $job_synapse_drone_plural$凝聚力产出"
  mod_planet_evaluators_produces_mult:0 "£job_evaluator£ $job_evaluator_plural$产出"
  mod_planet_evaluators_unity_produces_mult:0 "£unity£ $job_evaluator_plural$凝聚力产出"
@@ -1541,6 +1541,9 @@
  MOD_COUNTRY_ENVOYS_ADD:0 "可派遣的特使"
  MOD_ENVOY_IMPROVE_RELATIONS_MULT:0 "特使改善关系"
  MOD_ENVOY_HARM_RELATIONS_MULT:0 "特使损害关系"
+
+ mod_planet_synapse_drones_admin_cap_tooltip:0 "£job_synapse_drone£ $job_synapse_drone_plural$产生的\n£mod_country_admin_cap_add£ $MOD_COUNTRY_ADMIN_CAP_ADD$：§G+10%§!"
+ mod_planet_coordinators_admin_cap_tooltip:0 "£job_coordinator£ $job_coordinator_plural$产生的\n£mod_country_admin_cap_add£ $MOD_COUNTRY_ADMIN_CAP_ADD$：£mod_country_admin_cap_add£ §G+1§!"
 
  #requires_building_capital:0 "§RRequires §Y$building_capital$§! on planet.§!"
  requires_building_machine_capital:0 "§R行星上需要有§Y$building_machine_capital$§!。§!"
@@ -4123,7 +4126,8 @@
 
  CREATE_VASSAL_NOT_SECTOR_OWNER:0 "我们未控制这片星域。"
  CREATE_VASSAL_CORE_SECTOR_INVALID:0 "无法在核心星域建立附庸国。"
-
+ CREATE_VASSAL_WE_ARE_SUBJECT:0 "作为$SUBJECTTYPE$，我们不能创建附庸国。"
+ 
  TOGGLE_NAVBAR_LOCK:0 "按下切换导航栏锁定状态"
  NAVBAR_LOCKED:0 "导航栏§Y已锁定§!"
  NAVBAR_UNLOCKED:0 "导航栏§Y已解锁§!"

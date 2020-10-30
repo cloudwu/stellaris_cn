@@ -147,7 +147,7 @@
  distar.9.name:0 "Superflare Shielding Successful"
  distar.9.desc:0 "Planetary administration is pleased to report that the development of a superflare shield matrix around [Root.GetName] was a complete success. Our colonists were not only safely shielded from the harmful ionizing radiation, but were treated to a spectacular auroral display as solar wind interacted with the new shield matrix."
  distar.10.name:0 "Superflare Strikes [fromfrom.GetName]"
- distar.10.desc:0 "A superflare from [fromfrom.GetStarName] has struck the upper atmosphere of [fromfrom.GetName], pending our failure to develop an appropriate shield matrix in time.\n\nIonizing plasma and magnetic storms have led to electronic disruptions planetside, interfering with energy production and blasting the populace with radiation. The effects will persist for some time."
+ distar.10.desc:1 "A superflare from [fromfromfrom.GetStarName] has struck the upper atmosphere of [fromfromfrom.GetName], pending our failure to develop an appropriate shield matrix in time.\n\nIonizing plasma and magnetic storms have led to electronic disruptions planetside, interfering with energy production and blasting the populace with radiation. The effects will persist for some time."
 
  distar.15.name:0 "Energetic Spectra"
  distar.15.desc:0 "The gaseous composition of the accretion disk surrounding [From.GetName] appears to be responsible for the chromatic aberration exhibited by the black hole. The disk refracts and reflects light on its surface, giving the impression of a rainbow in the dark.\n\nThough the rainbow itself is an optical illusion, the circumstances creating it are not. [From.GetName]'s accretion disk is highly energetic - a veritable hotbed of electrostatic discharge."
@@ -359,6 +359,7 @@
  distar.82.name:0 "God of Death"
  distar.82.desc:0 "After overwhelming the primitive defenses mounted by the natives on [dead_god_planet.GetName], our forces were approached by a number of envoys from the inhabitants. It seems that the locals have worshiped the remains of the gargantuan creature on the planet's moon as a god of death for generations beyond their remembrance. The locals believed that one day their god would rise from the dead, transforming into a deity of rebirth and ushering in a new era of prosperity for their people.\n\nAs we came from the stars boasting technology beyond their comprehension, many of the locals seem to be convinced we are heralds of their god of death."
  distar.82.a:0 "Surely that will play to our advantage."
+ distar.82.a.tt:0 "Every §H[worshipper_species.GetAdj]§! pop gains the modifier §Y$conviction$§! for §Y240§! months, granting §G+33%§! Happiness and §G+25%§! Resources from £pop£ Jobs."
  distar.82.b:0 "This is ridiculous. We will not play along."
  distar.82.c:0 "Yes, we come from your god. You will soon join him."
  distar.82.d:0 "Just get them off my planet!"
@@ -1206,7 +1207,9 @@
  distar.2010.desc:0 "The oceans of [From.GetName] are almost completely covered in a fine network of algae that move in symmetrical patterns, independently of the water's shifting currents. The intricacy and regularity of its motion suggest the algae have been programmed with purpose beyond that of survival.\n\nScience Officer [Root.GetLeaderName] speculates that the network may in fact be a primitive wetware computer and the movement patterns its interface. Regrettably we have no means of decoding the patterns at this time."
  # Primordial Soup
  distar.2015.name:0 "Primordial Soup"
- distar.2015.desc:0 "Nestled in sheltered pockets across [From.GetName]'s surface is a rich sludge of simple organic compounds, that our researchers believe could be a hotbed for abiogenesis - the spontaneous formation of organic life from lifeless matter. [From.GetName] has an unusually thick atmosphere for a barren world, which could make it hospitable for simple lifeforms.\n\nAlthough this presents a unique opportunity to study what could be the early stages of the origin of life, it would be best to set our expectations low, as it may still be millions of years before life evolves naturally on [From.GetName], if at all."
+ distar.2015.desc:0 "Nestled in sheltered pockets across [From.GetName]'s surface is a rich sludge of simple organic compounds that our researchers believe could be a hotbed for abiogenesis - the spontaneous formation of organic life from lifeless matter. [From.GetName] has an unusually thick atmosphere for a barren world, which could make it hospitable for simple lifeforms.\n\nAlthough this presents a unique opportunity to study what could be the early stages of the origin of life, it would be best to set our expectations low, as it may still be millions of years before life evolves naturally on [From.GetName], if at all."
+ distar.2015.desc.terminator:0 "Nestled in sheltered pockets across [From.GetName]'s surface is a rich sludge of simple organic compounds that our research drones believe could be a hotbed for abiogenesis - the spontaneous formation of organic life from lifeless matter. [From.GetName] has an unusually thick atmosphere for a barren world, which could make it hospitable for simple lifeforms.\n\nNaturally, this is intolerable to us. We must snuff this cesspool of organic matter out before life has a chance to develop - even if that may lie millions of years in the future!"
+ distar.2015.A.machine:0 "Burn it with fire!"
  # Single-Minded
  distar.2020.name:0 "Single-Minded"
  distar.2020.desc:0 "At first glance [From.GetName] seems to be inhabited by a diverse plethora of lifeforms, co-existing in an ecosystem similar to our own in which nutrients cycle the food chain through photosynthesis, decomposition and predation.\n\nUpon closer inspection, however, the crew discovered that though all living things on [From.GetName] developed as individuals first they now, by mysterious design, operate as a single organism. An organism that responds to all outside interference with fierce and indiscriminate aggression."
@@ -1952,7 +1955,7 @@
  distar.10956.a:0 "We shall see who gets there first."
 
  distar.11500.a:0 "What do you know about the $lgates$?"
- distar.11500.a.tooltip.noclue:0 "It will take a few years for the [From.GetName] to identify a new §Y$clue$§!."
+ distar.11500.a.tooltip.noclue:1 "It takes the [From.GetName] approximately a decade to identify each new §Y$clue$§!."
  distar.11501.name:0 "$clues$"
  distar.11501.desc:0 "The $lgates$? Yes, like the other Gateways they predate even the oldest $gov_stagnant_ascendancy$, but we are sure you have figured that out already.\n\nWhy are they different? Where do they lead? We have opted not to delve too deeply into those particular mysteries - "thrice bitten, zero-point-seventeen shy" you know how it is - but we are willing to share some recent revelations that just might be related.\n\nFor a price."
  distar.11501.a:0 "Please do."

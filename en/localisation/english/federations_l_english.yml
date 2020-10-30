@@ -308,8 +308,8 @@
  VOTE_TYPE_MAJORITY:0 "$declare_war_majority_vote$"
  FEDERATION_SWITCH_TYPE_RATIO_POSITIVE:0 "§G$SUPPORT|0$/$TOTAL|0$§!"
  FEDERATION_SWITCH_TYPE_RATIO_NEGATIVE:0 "§R$SUPPORT|0$/$TOTAL|0$§!"
- FEDERATION_MEMBER_RIVALING:0 "§RRivaling $MEMBER$§!"
- FEDERATION_MEMBER_RIVALED:0 "§RRivaled by $MEMBER$§!"
+ FEDERATION_MEMBER_RIVALING:1 "§RFederation member $MEMBER$ has declared them a rival.§!"
+ FEDERATION_MEMBER_RIVALED:1 "§RThey have declared Federation member $MEMBER$ a rival.§!"
  FED_LAW_COOLDOWN:0 "§RCannot change laws in this category for £time£ $NUMBER|Y$ days§!"
 
  law_category_centralization:0 "Federation Centralization"
@@ -336,9 +336,9 @@
  fleet_contribution_high:0 "High"
  fleet_contribution_high_desc:0 "This federation has an extensive collaborative military effort."
 
- fleet_contribution_low_effect:0 "Members transfer §Y10%§! of their Naval Capacity to the federation.\n$MOD_FEDERATION_COHESION_ADD$: §R-0.25§!"
- fleet_contribution_medium_effect:0 "Members transfer §Y20%§! of their Naval Capacity to the federation.\n$MOD_FEDERATION_COHESION_ADD$: §R-0.50§!"
- fleet_contribution_high_effect:0 "Members transfer §Y30%§! of their Naval Capacity to the federation.\n$MOD_FEDERATION_COHESION_ADD$: §R-0.75§!"
+ fleet_contribution_low_effect:0 "Members transfer §Y10%§! of their Naval Capacity to the federation."
+ fleet_contribution_medium_effect:0 "Members transfer §Y20%§! of their Naval Capacity to the federation."
+ fleet_contribution_high_effect:0 "Members transfer §Y30%§! of their Naval Capacity to the federation."
 
  fleet_contribution_low_trade:0 "$fleet_contribution_low$"
  fleet_contribution_low_trade_desc:0 "$fleet_contribution_low_desc$"
@@ -1836,6 +1836,8 @@
  origin_tooltip_galactic_doorstep_effects:0 "Start with a dormant §Ygateway§! in your home system."
 
  START_SCREEN_GALACTIC_DOORSTEP:0 "The mysterious construct in our solar system was discovered a few hundred years ago. Due to its dark, metallic properties the artifact was named §HThe Black Crown§!, and its majestic presence had profound effect on our society - it unified our people in both spirit and pursuit.\n\nSpace flight became the highest priority of our scientific community, and the eager quest for this technology brought with it a series of other beneficial discoveries.\n\nThe Black Crown turned out to be dormant, but we learned an important lesson; it's not the destination that matters - it's the journey. And now - thanks to the beckoning of the Black Crown - our species has the means by which we can visit the stars."
+ START_SCREEN_GALACTIC_DOORSTEP_MACH:0 "The mysterious construct in our solar system was discovered a few hundred years ago. Due to its dark, metallic properties the artifact was designated §HThe Black Crown§!, and its distinct presence had profound effect on our operations - gathering more data became imperative.\n\nSpace flight became the highest priority of our research and development sub-routines, and the process of reaching this alien technology brought with it a series of other beneficial discoveries that were consecutively implemented.\n\nThe Black Crown turned out to be dormant, but the improvements and upgrades applied in order to reach it did increase our general output, and we now have the capacity to visit the stars."
+ START_SCREEN_GALACTIC_DOORSTEP_HIVE:0 "The mysterious construct in our solar system was discovered a few hundred years ago. Due to its dark, metallic properties the artifact was named §HThe Black Crown§!, and its majestic presence had profound effect on us - finding out its true nature became paramount.\n\nSpace flight became the highest priority, and the eager quest for this technology brought with it a series of other beneficial discoveries that improved and honed us.\n\nThe Black Crown turned out to be dormant, but it was not a journey done in vain. We now have the means to grow far bigger, reach much further, than ever before."
 
  origin.1000.name:0 "Someone at the Door"
  origin.1000.desc:0 "Without slightest warning the mysterious alien gateway in our home system came alive! An energy surge pulsed out from the artifact, and for a fleeting moment a glowing, vibrating orb filled the center of the structure. This remnant of a former civilization may not be so dormant as previously believed.\n\nAlthough the gateway was open for no longer than a few seconds, it was enough to let through some space debris; rocks and dust that upon closer inspection turned out to be valuable resources."
@@ -2637,7 +2639,7 @@
  requires_psionic_pops:0 "Requires at least one member having a Pop with a §YPsionic§! or §YLatent Psionic§! trait"
 
 
- origin.26.desc:0 "Dearest [Root.GetSpeciesNamePlural]. As always, we have been observing you and one of your leaders has attracted our attention. Indeed, the reputation of your [desired_leader.GetTitle], §H[desired_leader.GetName]§!, has reached all the way to our capital.\n\nGiven [desired_leader.GetHerHis] unusual skills, we would like to offer a permanent position on [scion_master.Capital.GetName]. A great honor, to be sure. Please arrange for [desired_leader.GetHerHis] transfer as soon as possible."
+ origin.26.desc:0 "Dearest [Root.GetSpeciesNamePlural]. As always, we have been observing you, and one of your leaders has attracted our attention. Indeed, the reputation of your [desired_leader.GetTitle], §H[desired_leader.GetName]§!, has reached all the way to our capital.\n\nGiven [desired_leader.GetHerHis] unusual skills, we would like to offer a permanent position on [scion_master.Capital.GetName]. A great honor, to be sure. Please arrange for [desired_leader.GetHerHis] transfer as soon as possible."
  origin.26.a:0 "It shall be done."
  origin.26.a.tooltip:0 "§H[desired_leader.GetName]§! joins the §H[scion_master.GetName]§!"
  origin.26.a.response:0 "Excellent. We are looking forward to [desired_leader.GetHerHis] arrival. Worry not, [desired_leader.GetSheHe] will enjoy every comfort a sapient creature could possibly desire on [scion_master.Capital.GetName]."
@@ -3032,7 +3034,7 @@
  # Country Events
  ####################################
  federations3.100.name:0 "Floating Value"
- federations3.100.desc:0 "At first glance, everything about [Root.GetName] seemed routine and normal. Only during a chance alignment did a scientist aboard the [From.GetName] notice starlight reflecting off a vast lens near the surface below. Scanners were quickly trained upon the crystalline object, whose breadth is that of a moderately-sized island.\n\nProbe telemetry suggests the chemical make-up of this lens is highly valuable; its physical structure may also be unique within our galaxy."
+ federations3.100.desc:0 "At first glance, everything about [From.GetName] seemed routine and normal. Only during a chance alignment did a scientist aboard the [Root.GetName] notice starlight reflecting off a vast lens near the surface below. Scanners were quickly trained upon the crystalline object, whose breadth is that of a moderately-sized island.\n\nProbe telemetry suggests the chemical make-up of this lens is highly valuable; its physical structure may also be unique within our galaxy."
  federations3.100.a:0 "A valuable resource, ours to exploit."
  federations3.100.b:0 "Its rare beauty should be left for all to enjoy."
 
@@ -3043,7 +3045,7 @@
  colony_fed.100.desc:1 "A geological anomaly has come to our attention on [Root.GetName]. We began surveying after a bowl-shaped depression suddenly appeared alongside a mining facility there. Features like this are almost never found outside of a glacial region, but stranger still: the walls of this 'cirque' scatter visible light in a flower-petal pattern, and have been found to resonate when exposed to certain electro-magnetic bands. Investigations are ongoing."
 
  colony_fed.105.name:0 "Project Blue Lotus"
- colony_fed.105.desc:1 "Our scientists report that the newly-uncovered, crystalline blue deposits on [Root.GetName] respond dramatically to delayed-erasure photon energy. The minerals filter its wavelengths and reflect a beam which is capable of transforming ordinary silicates into a new, super-conductive alloy — though only ever during daylight.\n\nGiven that this process essentially involves bouncing high levels of radiation around an enclosed space, some scientists have already come out in protest. A different group of excited researchers offers a counter-argument, stressing that this phenomenon could revolutionize the way we refine precious metals. Either way: developing this technique further will be costly."
+ colony_fed.105.desc:1 "Our scientists report that the newly-uncovered, crystalline blue deposits on [Root.GetName] respond dramatically to delayed-erasure photon energy. The minerals filter its wavelengths and reflect a beam which is capable of transforming ordinary silicates into a new, super-conductive alloy - though only ever during daylight.\n\nGiven that this process essentially involves bouncing high levels of radiation around an enclosed space, some scientists have already come out in protest. A different group of excited researchers offers a counter-argument, stressing that this phenomenon could revolutionize the way we refine precious metals. Either way: developing this technique further will be costly."
  colony_fed.105.gestalt.desc:0 "A rogue drone has been found running its own project within the cirque on [Root.GetName]. Driven by its initial directive - to refine our methods of mineral extraction - it has since stumbled onto a means of transforming everyday silicates into a new type of alloy.\n\nThe process seems to involve bouncing high-energy beams off mineral deposits in the feature's wall. The drone's eagerness in its task has caused it to flood the area with excessive levels of radiation. It has therefore been isolated pending either re-integration, or destruction of its individuality and acquired knowledge."
  colony_fed.105.a:0 "Bring it back into the fold."
  colony_fed.105.b:0 "Let's see where this research goes."
@@ -3173,7 +3175,7 @@
  fedel.899.desc:0 "In a few days the Golden Rule challenge for federation leadership will commence. Starting with the current leader: each empire in the federation will have a chance to place bids, until only one participant remains. That bidder is then elected leader of the federation."
  fedel.899.a:0 "We are ready."
  fedel.901.name:0 "Place Your Bet!"
- fedel.901.desc:0 "It is time for [Root.GetName] to place a bid in the Golden Rule challenge. Pay the required price up front, or else forfeit - and lose the right to participate further.\n\nThe current pot is:\n\n£energy£ §H[bidding_federation_leader.current_pot_variable]§!"
+ fedel.901.desc:1 "It is time for the [Root.GetName] to place a bid in the Golden Rule challenge. Pay the required price up front, or else forfeit - and lose the right to participate further.\n\nThe current pot is:\n\n£energy£ §H[bidding_federation_leader.current_pot_variable]§!"
  fedel.901.a:0 "Place a bid at £energy£ §Y10000§!."
  fedel.901.a.tooltip:0 "Pay £energy£ §Y10000§! and remain in the challenge."
  fedel.901.b:0 "Place a bid at £energy£ §Y2500§!."
@@ -3273,3 +3275,8 @@
 
  federations.10330.desc:0 "The Galactic Community has passed the §Y$resolution_rulesofwar_demobilization_initiative$§! resolution, banning the §Y$economic_policy_military$§! policy.\n\nOur Empire is currently in breach of this resolution. Shall we change our policies to be in compliance?"
  federations.10330.comply:0 "Our Empire will change our §Y$policy_economic_policy$§! policy to §Y$economic_policy_balanced$§!."
+
+ resolution_passed_diplomatic_weight:0 "Resolution Passed"
+ resolution_passed_diplomatic_weight_desc:0 "A resolution proposed by this empire has been passed by the Galactic Community, demonstrating the strength of the nation's diplomatic clout."
+ resolution_failed_diplomatic_weight:0 "Resolution Failed"
+ resolution_failed_diplomatic_weight_desc:0 "A resolution proposed by this empire was rejected by the Galactic Community - a severe blow for the nation's diplomatic standing."

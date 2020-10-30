@@ -1505,7 +1505,7 @@
  mod_planet_researchers_society_research_produces_add:0 "$mod_planet_researchers_society_research_produces_mult$"
  mod_planet_researchers_produces_mult:1 "£job_researcher£ $job_researcher_plural$ Output"
  mod_planet_culture_workers_produces_mult:0 "£job_culture_worker£ $job_culture_worker_plural$ Output"
- mod_planet_synapse_drones_produces_mult:0 "£job_synapse_drone£ $job_synapse_drone_plural$ Output"
+ ### mod_planet_synapse_drones_produces_mult:0 "£job_synapse_drone£ $job_synapse_drone_plural$ Output"    <-- FIX THIS!
  mod_planet_synapse_drones_unity_produces_mult:0 "£unity£ $job_synapse_drone_plural$ Unity Output"
  mod_planet_evaluators_produces_mult:0 "£job_evaluator£ $job_evaluator_plural$ Output"
  mod_planet_evaluators_unity_produces_mult:0 "£unity£ $job_evaluator_plural$ Unity Output"
@@ -1541,6 +1541,9 @@
  MOD_COUNTRY_ENVOYS_ADD:0 "Available Envoys"
  MOD_ENVOY_IMPROVE_RELATIONS_MULT:0 "Envoy Improve Relations"
  MOD_ENVOY_HARM_RELATIONS_MULT:0 "Envoy Harm Relations"
+
+ mod_planet_synapse_drones_admin_cap_tooltip:0 "£mod_country_admin_cap_add£ $MOD_COUNTRY_ADMIN_CAP_ADD$ from\n£job_synapse_drone£ $job_synapse_drone_plural$: §G+10%§!"
+ mod_planet_coordinators_admin_cap_tooltip:0 "£mod_country_admin_cap_add£ $MOD_COUNTRY_ADMIN_CAP_ADD$ from\n£job_coordinator£ $job_coordinator_plural$: £mod_country_admin_cap_add£ §G+1§!"
 
  #requires_building_capital:0 "§RRequires §Y$building_capital$§! on planet.§!"
  requires_building_machine_capital:0 "§RRequires §Y$building_machine_capital$§! on planet.§!"
@@ -4123,7 +4126,8 @@
 
  CREATE_VASSAL_NOT_SECTOR_OWNER:0 "We do not control this sector."
  CREATE_VASSAL_CORE_SECTOR_INVALID:0 "Cannot create vassal from core sector."
-
+ CREATE_VASSAL_WE_ARE_SUBJECT:0 "As a $SUBJECTTYPE$, we cannot create vassals."
+ 
  TOGGLE_NAVBAR_LOCK:0 "Press to toggle the navigation bar lock"
  NAVBAR_LOCKED:0 "Navigation bar is §Ylocked§!"
  NAVBAR_UNLOCKED:0 "Navigation bar is §Yunlocked§!"

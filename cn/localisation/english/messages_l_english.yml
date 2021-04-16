@@ -28,7 +28,7 @@
  MESSAGE_FLEET_ORDER_FINISH_MESSAGE_TYPE_TITLE:0 "飞船命令已完成"
  MESSAGE_SYSTEM_SURVEYED_TITLE:0 "星系勘察完毕"
  AUTO_EXPLORE_CANCELED_MESSAGE_TYPE_TITLE:0 "已取消舰队命令"
- MESSAGE_FLEET_ORDER_AUTO_EXPLORE_CANCELED:0 "§H$FLEET$§!已取消了自动探索命令。它无法抵达或寻找不到任何未勘察的星系。"
+ MESSAGE_FLEET_ORDER_AUTO_EXPLORE_CANCELED:1 "§H$FLEET$§!已取消了自动调查命令。它无法抵达或找不到任何可调查的恒星系。"
  FLEET_BUILD_ORDER_CANCELED_MESSAGE_TYPE_TITLE:0 "$AUTO_EXPLORE_CANCELED_MESSAGE_TYPE_TITLE$"
  MESSAGE_FLEET_BUILD_ORDER_CANCELED_MESSAGE:0 "$FLEET|H$无法在$SYSTEM|H$星系建造$STATION|H$。资源已退还。"
  MESSAGE_BYPASS_EXPLORED:0 "已探索的虫洞"
@@ -106,6 +106,8 @@
  ACTION_FORM_COMMERCIAL_PACT_PROPOSAL_FAILED_RECIPIENT:0 "§H[Actor.GetName]§!与我们签订商业合约的提议已超时，被自动拒绝。"
  ACTION_FORM_RESEARCH_AGREEMENT_PROPOSAL_FAILED_ACTOR:0 "我们与§H[Recipient.GetName]§!签订研究协议的提议已超时，被自动拒绝。"
  ACTION_FORM_RESEARCH_AGREEMENT_PROPOSAL_FAILED_RECIPIENT:0 "§H[Actor.GetName]§!与我们签订研究协议的提议已超时，被自动拒绝。"
+ ACTION_GUARANTEE_INDEPENDENCE_PROPOSAL_FAILED_ACTOR:0 "我们保障§H[Recipient.GetName]§!独立的提案被拒绝了。"
+ ACTION_GUARANTEE_INDEPENDENCE_PROPOSAL_FAILED_RECIPIENT:0 "§H[Actor.GetName]§!向我们发出的保障独立提案时限已过，已自动拒绝。"
  ACTION_FORM_MIGRATION_PACT_PROPOSAL_FAILED_ACTOR:1 "我方向§H[Recipient.GetName]§!提出的移民条约已超时，被自动拒绝。"
  ACTION_FORM_MIGRATION_PACT_PROPOSAL_FAILED_RECIPIENT:1 "与§H[Actor.GetName]§!达成移民条约的提议已超时，被自动拒绝。"
  ACTION_INVITE_TO_ALLIANCE_PROPOSAL_FAILED_ACTOR:0 "我们邀请§H[Recipient.GetName]§!加入联盟的提议被拒绝了。"
@@ -161,11 +163,11 @@
  ACTION_ASK_TO_BECOME_RELEASED_VASSAL_PROPOSAL_FAILED_RECIPIENT:1 "脱离§H[Actor.GetName]§!的请求已超时，被自动拒绝。"
  ACTION_OFFER_TRADE_DEAL_PROPOSAL_FAILED_ACTOR:0 "我们给§H[Recipient.GetName]§!的贸易协定提议被拒绝了。"
  ACTION_OFFER_TRADE_DEAL_PROPOSAL_FAILED_RECIPIENT:1 "来自§H[Actor.GetName]§!的贸易协定提议已超时，被自动拒绝。"
- 
+
  MESSAGE_MAKE_RIVAL_TITLE:0 "$RIVALRY$"
  MESSAGE_RECALL_EMBASSY_TITLE:0 "召回了使馆"
  MESSAGE_END_RIVALRY_TITLE:0 "$RIVALRY$结束了"
- MESSAGE_EMBASSY_TITLE:0 "设立了使馆"
+ MESSAGE_EMBASSY_TITLE:1 "建立大使馆"
  MESSAGE_DECLARE_WAR_TITLE:0 "宣战"
  MESSAGE_OFFER_PEACE_TITLE:0 "和谈"
  MESSAGE_INVITE_TO_ALLIANCE_TITLE:0 "联盟邀请"
@@ -222,7 +224,7 @@
  MESSAGE_BREAK_SUPPORT_TITLE:0 "支持被撤回"
  MESSAGE_OPEN_BORDERS_TITLE:0 "边界已打开"
  MESSAGE_CLOSE_BORDERS_TITLE:0 "边界已关闭"
- 
+
  ACTION_MAKE_RIVAL_NOTIFICATION:1 "§H[From.GetName]§!宣布§H[Root.GetName]§!为其§H$RIVAL$§!。\n\n两国之间的外交关系将大幅下降。"
  ACTION_END_RIVALRY_NOTIFICATION:2 "§H[From.GetName]§!结束了与§H[Root.GetName]§!的$RIVALRY$。\n\n两国可能打算重归于好。"
  ACTION_EMBASSY_NOTIFICATION:1 "§H[From.GetName]§!向§H[Root.GetName]§!派出了外交使节。\n\n两国之间的外交关系将慢慢提升。"
@@ -250,6 +252,7 @@
  ACTION_FORM_FEDERATION_NOTIFICATION:2 "§H[From.GetAllianceName]§!投票成立了$FEDERATION$。\n\n银河系足够大，他们希望集结力量进行探索。"
  ACTION_INVITE_TO_FEDERATION_NOTIFICATION:2 "§H[From.GetName]§!加入了§H[From.GetAllianceName]§!。\n\n统一战线，同仇忾敌。"
  ACTION_ASK_TO_JOIN_FEDERATION_NOTIFICATION:2 "§H[Root.GetName]§!加入了§H[From.GetAllianceName]§!。\n\n统一战线，同仇敌忾。"
+ ACTION_ASK_TO_LEAVE_FEDERATION_NOTIFICATION:0 "$ACTION_LEAVE_FEDERATION_NOTIFICATION$"
  ACTION_LEAVE_FEDERATION_NOTIFICATION:2 "§H[From.GetName]§!脱离了§H[Root.GetAllianceName]§!。\n\n或许我们可以趁机谋利……"
  ACTION_KICK_FROM_FEDERATION_NOTIFICATION:1 "§H[From.GetAllianceName]§!投票将§H[Root.GetName]§!除名。"
  ACTION_ASK_TO_BE_RELEASED_SUBJECT_NOTIFICATION:2 "§H[Root.GetName]§!将主权还给了§H[From.GetName]§!。\n\n看来他们已经没落到无法掌控附属国了。"
@@ -273,7 +276,7 @@
  ACTION_BREAK_SUPPORT_NOTIFICATION:1 "§H[From.GetName]§!停止支持§H[Root.GetName]§!的独立。\n\n看起来[Root.GetName]注定是个附属国了。"
  ACTION_OPEN_BORDERS_NOTIFICATION:1 "§H[From.GetName]§!对§H[Root.GetName]§!的舰队敞开了国门。\n\n这样能够提升两国关系。"
  ACTION_CLOSE_BORDERS_NOTIFICATION:1 "§H[From.GetName]§!对§H[Root.GetName]§!的舰队关闭了国门。\n\n这样将会恶化两国关系。"
- 
+
  MESSAGE_OFFER_FEDERATION_ASSOCIATION_TITLE:0 "联邦协作提议"
  ACTION_OFFER_FEDERATION_ASSOCIATION_NOTIFICATION:2 "§H[From.GetAllianceName]§!给予了§H[Root.GetName]§!协作国地位。\n\n看来他们希望更亲密一些。"
  MESSAGE_ASK_FOR_FEDERATION_ASSOCIATION_TITLE:0 "联邦协作请求"
@@ -283,8 +286,8 @@
  MESSAGE_END_FEDERATION_ASSOCIATION_TITLE:0 "联邦协作关系结束"
  ACTION_END_FEDERATION_ASSOCIATION_NOTIFICATION:2 "§H[From.GetName]§!决定结束与§H[Root.GetAllianceName]§!达成的协作关系。\n\n他们这是要大动干戈了吗？"
  DIPLO_ACTION_END_FEDERATION_ASSOCIATION_DESC:0 "§H$COUNTRY$§!决定结束他们与§H$ALLIANCE$§!的合作关系。\n\n这或许是战争的先兆？"
-   
- 
+
+
  MESSAGE_DIPLOMACY_TITLE:0 "外交"
 
  ACTION_FORM_FEDERATION_PROPOSAL_FAILED_RECIPIENT:0 "$ACTION_INVITE_TO_ALLIANCE_PROPOSAL_FAILED_RECIPIENT$"
@@ -329,7 +332,7 @@
  MESSAGE_ENEMY_VASSAL_ENTER_WAR_DESC:1 "我们敌人的附属国$ENEMY|Y$加入了对抗我们的战争。"
  MESSAGE_ENEMY_LEAVES_WAR:0 "敌人退出战争"
  MESSAGE_ENEMY_LEAVES_WAR_DESC:2 "$ENEMY|Y$因被$OVERLORD|Y$附庸或吞并而退出了战争。"
- 
+
  ####################################
  # Fleet Detected
  ####################################
@@ -354,8 +357,8 @@
  COUNTRY_LEADER_DEATH:0 "我们的$CLASS|Y$$LEADER|Y$与世长辞！"
  HEIR_DEATH:0 "我们的§Y$HEIR$§!$HEIRNAME|Y$已经死亡！"
  RULER_ELECTED:0 "选举出了新统治者！$TITLE$$LEADER|Y$将执政至下一届大选，即$TIME|Y$。"
- RULER_ELECTED_UNTIL_DEATH:0 "$TITLE$$LEADER|Y$!当选为新统治者，他将执政至与世长辞。"
- RULER_ELECTED_HEIR:0 "按照继承顺序，$TITLE$$LEADER|Y$!是新统治者。"
+ RULER_ELECTED_UNTIL_DEATH:1 "$TITLE$$LEADER|Y$! 已经被选为新一任统治者，他将统治整个国家直到他去世。"
+ RULER_ELECTED_HEIR:1 "根据神圣的继承法，$TITLE$$LEADER|Y$! 登基为新一任统治者。"
  MESSAGE_LEADER_DEATH_TITLE:0 "领袖死亡"
  MESSAGE_RULER_ELECTED_TITLE:0 "统治者就任"
  MESSAGE_RULER_ELECTED_UNTIL_DEATH_TITLE:0 "统治者就任"
@@ -412,9 +415,9 @@
  ####################################
  # Revolt
  ####################################
- MESSAGE_REVOLT:0 "$PLANET|Y$!行星上的民众正在造反！"
+ MESSAGE_REVOLT:1 "$PLANET|Y$!行星正处于叛乱之中！"
  MESSAGE_PLANET_REVOLT_TITLE:0 "反叛！"
- 
+
  ####################################
  # Planet Destruction
  ####################################
@@ -497,7 +500,7 @@
  # Combat Stats
  ####################################
  MESSAGE_COMBAT_STATS_TITLE:0 "舰队战斗数据"
- 
+
  ####################################
  # Edicts
  ####################################
@@ -535,3 +538,9 @@
 #####################################
  MESSAGE_NEW_CLAIM_ON_SYSTEM_TITLE:1 "其他帝国对我们的星系提出领土主张"
  MESSAGE_NEW_CLAIM_ON_SYSTEM:1 "$SYSTEM|H$是我们的合法领土，$COUNTRY|H$竟无耻地对其提出领土主张。"
+
+#####################################
+# Star Destroyed
+#####################################
+ MESSAGE_STAR_DESTROYED:0 "星系被毁"
+ MESSAGE_STAR_DESTROYED_DESC:0 "一次由$ADJ$§R焚天神兵§!引发的超新星爆炸毁灭了$PLANET|Y$。"

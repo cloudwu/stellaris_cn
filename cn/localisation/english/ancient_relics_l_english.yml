@@ -1,6 +1,6 @@
 ﻿l_english:
  minor_artifacts:0 "小型文物"
- minor_artifacts_desc:0 "小型文物（£minor_artifacts£）代表着我们从古代文明中发现的晦涩技术和某些几近遗忘的传说，我们自己的科学仅能解读其中一部分。它们比遗珍更常见，可以消耗用于颁布多种帝国范围内的效应。"
+ minor_artifacts_desc:1 "稀有文物（ £minor_artifacts£ ）代表了我们从古代文明中找到的晦涩技术和某些几近遗忘的传说，我们的科学仅能解读其中的一部分。它们比遗珍要常见，并可以被消耗以产生多种帝国范围的效果。"
  artifact_actions:0 "文物行动"
  relics:0 "遗珍"
  relic_activation_cooldown:0 "遗珍启用冷却"
@@ -49,13 +49,13 @@
 
  #Tutorial
  TUTORIAL_RELICS_VIEW_TITLE:0 "遗珍和小型文物"
- TUTORIAL_RELICS_VIEW_DESC:1 "我们可以在遗珍界面中浏览并启用§Y遗珍§!，也可以颁布决策利用我们的§Y小型文物§!。标注有“（行星决策）”的决策在此处仅供参考，可以在行星决策界面中颁布。"
+ TUTORIAL_RELICS_VIEW_DESC:2 "我们可以在遗珍界面中浏览和启用§Y遗珍§!，也可以执行决议来利用我们的§Y稀有文物§!。标注有“（行星决议）”的项目在此处仅供参考，并可以在行星决议界面中执行。"
 
  TUTORIAL_ARCHAEOLOGY_VIEW_TITLE:0 "考古界面"
  TUTORIAL_ARCHAEOLOGY_VIEW_DESC:0 "考古窗口会显示当前选定§Y考古站点§!的详细信息。在取得进展后，您仍然可以通过点击符文图标返回并查看前面的阶段。\n\n要揭开遗迹的秘密，科学家必须取得§Y突破§!，才能推进遗迹的每个阶段。具有相关§Y特质和较高技能§!的科学家会加快进入下一阶段的进程，同时，若遗迹难度等级较高则这一进程会减慢。任何调查同一遗迹足够长时间的科学家都会积累§Y线索§!，从而更有可能取得突破。"
 
  RELICS_AND_ARTIFACTS:0 "$RELICS$和$MINOR_ARTIFACTS$"
- TRADITION_VIEW_TITLE:0 "$TRADITIONS$和$RELICS$"
+ TRADITION_VIEW_TITLE:1 "社会管理"
 
  archaeologist_1:0 "考古学家"
  archaeologist_2:0 "考古单元"
@@ -142,10 +142,10 @@
  IS_ARCHAEOLOGICAL_SITE_CURRENT_EXCAVATOR_FLEET_TRIGGER:0 "当前发掘舰队是$FLEET$"
  MOD_SHIP_ARCHAEOLOGICAL_SITE_EXCAVATION_SPEED_MULT:0 "考古发掘速度"
  MOD_SHIP_ARCHAEOLOGICAL_SITE_CLUES_ADD:0 "考古技能"
- ARCHAEOLOGICAL_SITE_ON_ROLL_FAILED_RANGE:0 "（$CHANCE|%0Y$）结果介于$MIN|0Y$与$MAX|0Y$之间。获得$CLUES|0Y$条线索。"
+ ARCHAEOLOGICAL_SITE_ON_ROLL_FAILED_RANGE:1 "（$CHANCE|%0Y$）结果介于$MIN|0Y$与$MAX|0Y$之间。添加$CLUES|0Y$点线索。"
  ARCHAEOLOGICAL_SITE_ON_ROLL_FAILED_GREATER_THAN_EQ:0 "（$CHANCE|%0Y$）结果大于或等于$MIN|0Y$。此阶段完成。"
  ARCHAEOLOGICAL_SITE_ON_ROLL_FAILED_LESS_THAN_EQ:0 "（$CHANCE|%0Y$）结果小于或等于$MAX|0Y$。获得$CLUES|0Y$条线索。"
- archaeology_roll_header:0 "§H$ARCHAEOLOGICAL_SITE_BREAKTHROUGH$§!\n此数值反映了你的科学家在发掘当前遗迹时取得突破的几率。\n\n每当一个发掘时段结束时，将自动掷出一枚骰子（点数范围为§Y1§!到§Y10§!）。掷骰结果会与§Y技能增益§!和§Y线索§!数相加，随后减去§Y难度§!值。\n\n§E掷骰结果：§!"
+ archaeology_roll_header:1 "§H$ARCHAEOLOGICAL_SITE_BREAKTHROUGH$§!\n此数值反映你的科学家在发掘当前遗址时取得突破的几率。\n\n每当一个发掘时段结束，游戏将自动掷出一枚骰子（结果范围为§Y1§!到§Y10§!）。掷骰结果会与§Y技能加成§!和§Y线索§!数相加，随后减去§Y难度§!值。\n\n掷骰前的结果是$SCORE|0Y$。\n\n§E最终结果：§!"
 
  alert_activate_relic_title:0 "遗珍可启用"
  alert_activate_relic_instant:0 "你现在可以启用你拥有的一件遗珍。"
@@ -156,10 +156,12 @@
  DIFFICULTY_NORMAL:0 "§Y普通§!"
  DIFFICULTY_HARD:0 "§H困难§!"
  DIFFICULTY_HELL:0 "§R地狱§!"
+ DIFFICULTY_EXTRA_HELL: "$DIFFICULTY_HELL$$EXTRA|R$"
  LEADER_BONUS:0 "领袖增益：$BONUS|Y$"
  ARCHAEOLOGICAL_SITE_CHALLENGE:0 "§H挑战程度§!\n此描述代表相较于目前派遣的科学家的等级，遗迹具有的挑战性。"
  ARCHAEOLOGICAL_SITE_BREAKTHROUGH:0 "突破几率"
- VIEW_SITE:0 "查看遗迹"
+ VIEW_SITE:1 "£archaeology£ 查看遗址"
+ SHOW_FIRST_CONTACT:0 "显示第一次接触"
 
  ARCHAEOLOGICAL_SITE_FINISHED:0 "遗迹已经发掘完毕"
  ARCHAEOLOGICAL_SITE_LOCKED:0 "发掘档案被锁定"
@@ -684,6 +686,10 @@
  district_rw_nexus_plural:0 "中枢区段"
  district_rw_nexus_desc:0 "高效的地区填满了这个环形世界区段。无人机部署作业前，在这些地方接受保养维修。"
 
+ district_rw_industrial:0 "工业区段"
+ district_rw_industrial_plural:0 "工业区段"
+ district_rw_industrial_desc:0 "这个环形世界区段中遍布着叮当作响的工厂与强劲的机械，为帝国提供了有力的工业基础。"
+
  ##################
  # DEPOSITS
  ##################
@@ -798,8 +804,8 @@
  job_assimilation_plural:0 "$job_assimilation$"
  job_assimilation_desc:0 "此人口正在被整合入我们的集合体。"
  pop_category_assimilation:0 "$pop_cat_assimilation$生活标准"
- space_dragon_blue:0 "$NAME_Grand_Dragon$"
- space_dragon_blue_plural:0 "$NAME_Grand_Dragon$"
+ space_dragon_blue:1 "巨龙"
+ space_dragon_blue_plural:1 "巨龙"
 
  STEAL_ALL_ARTIFACT:0 "$THIEF|Y$从$VICTIM|Y$处窃取了§Y所有§!文物"
  STEAL_RANDOM_ARTIFACT:0 "$THIEF|Y$从$VICTIM|Y$处窃取了§Y一件随机§!文物"

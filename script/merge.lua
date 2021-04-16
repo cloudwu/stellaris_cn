@@ -113,6 +113,11 @@ local list = {
 "musicplayer_l_english.yml",
 "name_lists_l_english.yml",
 "necroids_l_english.yml",
+"nemesis_content_l_english.yml",
+"nemesis_crisis_l_english.yml",
+"nemesis_custodian_l_english.yml",
+"nemesis_espionage_l_english.yml",
+"nemesis_intel_l_english.yml",
 "new_scripted_loc_l_english.yml",
 "observer_events_l_english.yml",
 "observer_l_english.yml",
@@ -124,6 +129,7 @@ local list = {
 "projects_5_l_english.yml",
 "projects_l_english.yml",
 "scripted_loc_l_english.yml",
+"ship_browser_l_english.yml",
 "ship_sections_l_english.yml",
 "social_gui_l_english.yml",
 "standalone_l_english.yml",
@@ -136,6 +142,7 @@ local list = {
 "utopia_ascension_l_english.yml",
 "utopia_l_english.yml",
 "utopia_megastructures_l_english.yml",
+"void_dweller_traditions_l_english.yml",
 }
 
 for _,file in ipairs(list) do

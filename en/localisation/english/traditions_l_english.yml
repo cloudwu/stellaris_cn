@@ -16,7 +16,7 @@
  TRADITION_ADOPT_BUTTON:0 "Adopt"
  TRADITIONS_ADOPT:0 "Adoption Effects"
  TRADITIONS_FINISH:0 "Finisher Effects"
- TRADITIONS_FINISH_AP:0 " In addition, we will unlock §Y1§! Ascension Perk Slot."
+ TRADITIONS_FINISH_AP:1 "In addition, we will unlock §Y1§! Ascension Perk Slot."
  TRADITION_COST:0 "Tradition Cost"
  TRADITIONS_UNAFFORDABLE:0 "§RWe need an additional §Y$RESOURCES$§! before we can unlock this Tradition.§!"
  MUST_ADOPT_TRADITION_CATEGORY:0 "$TRIGGER_FAIL$Has adopted $CATEGORY|Y$ Traditions"
@@ -159,10 +159,10 @@
  tr_domination_drone_network_delayed:0 "We have improved the ways in which our consciousness communicates with its drones, greatly increasing their efficiency."
 
  tr_domination_trust_officers:0 "Public Trust Officers"
- tr_domination_trust_officers_desc:0 "£job_enforcer£ §Y$job_enforcer_plural$§! reduce £crime£ §Y$MOD_PLANET_CRIME_ADD$§! by an additional §G20%§!."
+ tr_domination_trust_officers_desc:1 "§HUnlocks Edict:§! $edict_enhanced_surveillance$\n£job_enforcer£ §Y$job_enforcer_plural$§! reduce £crime£ §Y$MOD_PLANET_CRIME_ADD$§! by an additional §G20%§!."
  tr_domination_trust_officers_delayed:0 "The important work done by law enforcement officials can only truly be successful if they have the cooperation of the public. Creating a corps of Public Trust Officers that work directly with the population will help ensure that this cooperation is freely given."
  tr_domination_judgment_corps:0 "Judgment Corps"
- tr_domination_judgment_corps_desc:0 "£job_enforcer£ §Y$job_enforcer_plural$§! reduce £crime£ §Y$MOD_PLANET_CRIME_ADD$§! by an additional §G20%§!."
+ tr_domination_judgment_corps_desc:1 "§HUnlocks Edict:§! $edict_enhanced_surveillance$\n£job_enforcer£ §Y$job_enforcer_plural$§! reduce £crime£ §Y$MOD_PLANET_CRIME_ADD$§! by an additional §G20%§!."
  tr_domination_judgment_corps_delayed:1 "Sprawling cities and isolated mining stations both have unique challenges associated with crime prevention. To expedite law enforcement we have made the judicial process more efficient by combining the roles of judge, jury and enforcer."
  tr_domination_deviancy_protocols:0 "Deviancy Protocols"
  tr_domination_deviancy_protocols_desc:2 "§Y$MOD_PLANET_CRIME_NO_HAPPINESS_ADD$§! is reduced by §G10§! on all our planets."
@@ -233,8 +233,11 @@
  tr_harmony_the_greater_good_desc:4 "§Y$MOD_POP_GOVERNMENT_ETHIC_ATTRACTION$§! increased by §G+25%§!."
  tr_harmony_the_greater_good_delayed:0 "Our entire population takes comfort in the knowledge that they are working together for the greater good, each one a small but important part of a vastly larger whole."
  tr_harmony_kinship:0 "Kinship"
- tr_harmony_kinship_desc:2 "The time it takes for unemployed £pop£ §YPops§! to demote to a lower §YStratum§! is reduced by §G50%§!."
+ tr_harmony_kinship_desc:3 "The time it takes for unemployed £pop£ §YPops§! to demote to a lower §YStratum§! is reduced by §G25%§!."
  tr_harmony_kinship_delayed:1 "A true sense of kinship has developed between all the citizens of our great star nation, regardless of their place in the social order."
+ tr_harmony_kinship_shared_burdens:0 "$tr_harmony_kinship$"
+ tr_harmony_kinship_shared_burdens_desc:0 "$tr_synchronicity_kinship_gestalt_desc$"
+ tr_harmony_kinship_shared_burdens_delayed:0 "Our leaders and our people are one and the same. We are equal in all ways."
  tr_harmony_bulwark_of_harmony:0 "Bulwark of Harmony"
  tr_harmony_bulwark_of_harmony_desc:2 "While in a defensive war with another empire, §Y$MOD_STARBASE_SHIPYARD_BUILD_SPEED_MULT$§! is increased by §G+33%§!. In addition, the §Y$MOD_SHIP_FIRE_RATE_MULT$§! is increased by §G+15%§! for ships within your borders."
  tr_harmony_bulwark_of_harmony_delayed:0 "All organisms, no matter how perfect, must rely on an immune system to ward off the threat of outside disease. Our society is no different."
@@ -280,13 +283,14 @@
  tr_synchronicity_collective_efforts_desc:2 "£mod_pop_amenities_usage_no_happiness_mult£ §Y$MOD_POP_AMENITIES_USAGE_NO_HAPPINESS_MULT$§! reduced by §G20%§!."
  tr_synchronicity_collective_efforts_delayed:2 "By synchronizing groups of Drones, more efficient use of planetary infrastructure can be achieved!"
  tr_synchronicity_machine_adopt:0 "$tr_synchronicity_hive_adopt$"
- tr_synchronicity_machine_adopt_desc:0 "$tradition_synchronicity_desc$\n\n$tr_synchronicity_machine_adopt_effect$\n\n$tr_synchronicity_finish_effect$"
+ tr_synchronicity_machine_adopt_desc:1 "$tradition_synchronicity_desc$\n\n$tr_synchronicity_machine_adopt_effect$\n\n$tr_synchronicity_machine_finish_effect$"
  tr_synchronicity_machine_adopt_effect:0 "§E$TRADITIONS_ADOPT$:§!\n§Y$mod_planet_pops_robotics_upkeep_mult$§! reduced by §G10%§!."
  tr_synchronicity_self_preservation:0 "Self-Preservation Protocols"
  tr_synchronicity_self_preservation_desc:0 "Machine leaders are §Y50%§! less likely to suffer breakdowns and accidents."
- tr_synchronicity_self_preservation_delayed:0 "A robot must protect its own existence as long as such protection does not confli...§R'Ç° éü¿T éw+Á éÒÎ( éÍ8" <DATA CORRUPTED>§!"
+ tr_synchronicity_self_preservation_delayed:1 "A robot must protect its own existence as long as such protection does not confli...§R'Ç° éü¿T éw+Á éÒÎ( éÍ8" <DATA CORRUPTED>§!"
  tr_synchronicity_finish:0 "Synchronicity Traditions Finished"
  tr_synchronicity_finish_effect:2 "§E$TRADITIONS_FINISH$:§!\nAdopting all $tr_synchronicity_hive_adopt$ will reduce §Y$MOD_EMPIRE_SIZE_POPS_MULT$§! by §G10%§!."
+ tr_synchronicity_machine_finish_effect:1 "$tr_synchronicity_finish_effect$\n§HUnlocks Edict:§! $edict_industrial_maintenance$."
 
 ################################################################
 # SUPREMACY
@@ -405,7 +409,7 @@
  tr_diplomacy_open_markets_delayed:1 "For trade to truly flourish within our borders, government meddling in our internal markets must be kept to a minimum."
 
  tr_diplomacy_insider_trading:0 "Insider Trading"
- tr_diplomacy_insider_trading_desc:0 "§Y$MOD_COUNTRY_TRADE_FEE$§! reduced by §G10%§!."
+ tr_diplomacy_insider_trading_desc:1 "§Y$MOD_COUNTRY_TRADE_FEE$§! reduced by §G10%§!.\n§YBranch Offices§! built on our worlds have §G+1§! §YBuilding Slots§!."
  tr_diplomacy_insider_trading_delayed:2 "Knowing the right people in the right places can make a world of difference. Influential merchant contacts will let us buy from resource markets at favorable rates."
 
  tr_diplomacy_secure_shipping:0 "Secure Shipping"
@@ -480,7 +484,7 @@
  tr_versatility_material_analysis_desc:2 "§YUpkeep§! of all £job£ §YPop Jobs§! is reduced by §G5%§!."
  tr_versatility_material_analysis_delayed:1 "Spatial phenomena are an interesting distraction, but the true wonders of the cosmos are found exclusively in the field of materials science."
  tr_versatility_universal_compatibility:0 "Universal Compatibility"
- tr_versatility_universal_compatibility_desc:0 "§HUnlocks Diplomacy:§! Form Federation\n\n§Y$MOD_COUNTRY_TRUST_CAP_ADD$§! increases by §G+50§! and £opinion£ §YOpinion§! increased by §G+20§!, but only with fellow $auth_machine_intelligence$ empires."
+ tr_versatility_universal_compatibility_desc:1 "§HUnlocks Diplomacy:§! Form Federation\n\n§Y$MOD_COUNTRY_TRUST_CAP_ADD$§! increases by §G+50§! and £opinion£ §YOpinion§! increased by §G+20§!, but only with fellow $auth_machine_intelligence$ empires.\n§Y$MOD_COUNTRY_ENVOYS_ADD$§! are increased by §G1§!."
  tr_versatility_universal_compatibility_delayed:1 "A deeper analysis into the myriad stimuli and psychological factors that govern the behavior of organics and other machine intelligences will decrease diplomatic friction."
  tr_versatility_finish:0 "Versatility Traditions Finished"
  tr_versatility_finish_effect:0 "§E$TRADITIONS_FINISH$:§!\nAdopting all $tr_versatility_adopt$ will give us a §G50%§! refund whenever we demolish a building or a district."
@@ -518,7 +522,7 @@
  tr_discovery_to_boldly_go_hive_delayed:0 "How can you truly know anything when looking at numbers on a screen? Our explorator drones breathe the atmosphere of each new world, feel the heat of each new star on their own skin. We experience the universe; you merely read about it."
 
  tr_discovery_databank_uplinks:0 "$tech_databank_uplinks$"
- tr_discovery_databank_uplinks_desc:2 "§HUnlocks Edict:§! $edict_research_subsidies$\n§Y$mod_station_researchers_produces_mult$§! increased by §G10%§!."
+ tr_discovery_databank_uplinks_desc:3 "§HUnlocks Edict:§! $edict_research_subsidies$\n§Y$mod_station_researchers_produces_mult$§! increased by §G20%§!.\n§Y$starbase_constructions_research_produces$§! increased by §G20%§!."
  tr_discovery_databank_uplinks_delayed:0 "$tech_databank_uplinks_desc$"
 
  tr_discovery_science_division:0 "Science Division"
@@ -570,7 +574,7 @@
 
  tr_prosperity_adopt:0 "Prosperity Traditions"
  tr_prosperity_adopt_desc:0 "$tradition_prosperity_desc$\n\n$tr_prosperity_adopt_effect$\n\n$tr_prosperity_finish_effect$"
- tr_prosperity_adopt_effect:7 "§E$TRADITIONS_ADOPT$:§!\n§Y$mod_station_gatherers_produces_mult$§! increased by §G10%§!."
+ tr_prosperity_adopt_effect:8 "§E$TRADITIONS_ADOPT$:§!\n§Y$mod_station_gatherers_produces_mult$§! increased by §G20%§!."
 
  tr_prosperity_adopt_machine:1 "Prosperity Traditions"
  tr_prosperity_adopt_machine_desc:0 "$tradition_prosperity_machine_desc$\n\n$tr_prosperity_adopt_machine_effect$\n\n$tr_prosperity_finish_machine_effect$"
@@ -653,7 +657,7 @@
 
  requires_tradition_the_federation:1 "$TRIGGER_FAIL$§RRequires the §YFederation§! Diplomacy Tradition.§!"
  requires_tradition_universal_compatibility:0 "§RRequires the §YUniversal Compatibility§! Versatility Tradition.§!"
-
+ requires_independence:0 "$TRIGGER_FAIL$[This.GetName] must be independent."
  requires_ascension_perks_1:0 "$TRIGGER_FAIL$Requires one other Ascension Perk to be selected first."
  requires_ascension_perks_2:1 "$TRIGGER_FAIL$Requires two other Ascension Perks to be selected first."
  requires_ascension_perks_3:1 "$TRIGGER_FAIL$Requires three other Ascension Perks to be selected first."
@@ -706,7 +710,7 @@
  synthetic_empire_psionic_ascension:0 "$TRIGGER_FAIL$Synthetic empires are incapable of starting down the path to Psionic Ascension."
 
  allow_gaia:0 "Allows us to terraform worlds into §YGaia Planets§!."
- no_rev_engineering:0 "Our technology and engineering is too arcane for others to reverse-engineer."
+ no_rev_engineering:1 "§Y$operation_steal_technology$§! operations will automatically fail when used against us and §YDebris§! from our destroyed ships cannot be studied by other empires."
  allow_raiding:0 "Unlocks the §Y$bombardment_raiding$§! bombardment stance, which in turn allows us to abduct pops from besieged planets and resettle them to our own worlds."
 
  ap_defender_of_the_galaxy_effect_opinion:0 "Everyone's £opinion£ §YOpinion§! increased by §G+20§!"

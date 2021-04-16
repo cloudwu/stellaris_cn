@@ -20,8 +20,9 @@
  origin_post_apocalyptic:0 "$civic_post_apocalyptic$"
  origin_post_apocalyptic_desc:0 "Baptized by nuclear fire, this civilization has faced total annihilation - and survived. Devastated yet unbroken, they have rebuilt civilization from the ashes of the old world."
  origin_shattered_ring:0 "Shattered Ring"
- origin_shattered_ring_desc:0 "This civilization inhabits a Ringworld built by unknown forerunners. If it can be understood and fully repaired it will grant them great power."
- origin_tooltip_shattered_ring_effects:0 "Start with a partially destroyed §YRingworld§! as your homeworld. The Ringworld will start with an §Y$d_arcane_generator$§! that is able to maintain some of your segments."
+ origin_shattered_ring_desc:1 "This civilization inhabits a Ring World built by unknown forerunners. If it can be understood and fully repaired it will grant them great power."
+ origin_tooltip_shattered_ring_effects:1 "Start with a partially destroyed §YRing World§! as your homeworld.\nThe Ring World will start with an §Y$d_arcane_generator$§! that is able to maintain some of your segments.\nHabitability preference is set to §Y$trait_pc_ringworld_habitable_preference$§!, making other types of settlement undesirable."
+ origin_tooltip_shattered_ring_effects_lithoid:0 "§R- WARNING: Challenging Origin for Lithoids due to a scarcity of minerals.§!\n$origin_tooltip_shattered_ring_effects$"
  origin_remnants:0 "Remnants"
  origin_remnants_desc:0 "This civilization once spanned the void, controlling much of the Galaxy. They were eventually defeated and almost destroyed, but after a long period of destitution they are returning to the stars."
  origin_tooltip_remnants_effects:0 "Start with a §YRelic World§! as your homeworld. Reclaim your lost glory!"
@@ -47,6 +48,10 @@
  d_segment_rubble_1_desc:0 "Broken down machinery and other debris obstructs workers from utilizing the entire segment."
  d_segment_rubble_2:0 "$d_segment_rubble_1$"
  d_segment_rubble_2_desc:0 "$d_segment_rubble_1_desc$"
+ d_segment_rubble_3:0 "$d_segment_rubble_1$"
+ d_segment_rubble_3_desc:0 "$d_segment_rubble_1_desc$"
+ d_segment_rubble_4:0 "$d_segment_rubble_1$"
+ d_segment_rubble_4_desc:0 "$d_segment_rubble_1_desc$"
  arcane_generator_upkeep_desc:0 "The §Y$d_arcane_generator$§! will adapt so it is able to supply the upkeep for this segment."
  d_tree_of_life_home:0 "Tree of Life"
  d_tree_of_life_home_desc:0 "The Great Tree has sheltered and supported the Hive for untold generations."
@@ -155,11 +160,11 @@
  RESOLUTION_SUPPORT_DESC:0 "§gSupport Options Disabled until a Resolution has been Proposed§!"
 
  GALACIC_FOCUS:0 "Galactic Focus"
- GALACTIC_FOCUS_DESC:0 "§EThe Galactic Focuses are objectives that give direction to the Galactic Community.§!"
+ GALACTIC_FOCUS_DESC:1 "§EThe Galactic Focuses are objectives that give direction to the [global_event_country.GetGalCommunityOrGalImperium].§!"
  GALACTIC_FOCUS_REWARD:0 "Reward"
 
  GALACTIC_COUNCIL:0 "Galactic Council"
- GALACTIC_COUNCIL_DESC:0 "§LThe Galacic Council are leaders in the Galactic Community. They have special resolution powers to help speed along the voting and proposing process§!"
+ GALACTIC_COUNCIL_DESC:1 "§LThe Galactic Council are leaders in the Galactic Community. They have special resolution powers to help speed along the voting and proposing process§!"
  JOINS_GALACTIC_COUNCIL:0 "$COUNTRY|Y$ gains a seat on the $GALACTIC_COUNCIL$"
  LEAVES_GALACTIC_COUNCIL:0 "$COUNTRY|Y$ loses their seat on the $GALACTIC_COUNCIL$"
  IS_PART_OF_GALACTIC_COUNCIL:0 "$COUNTRY|Y$ is on the $GALACTIC_COUNCIL$"
@@ -183,11 +188,11 @@
  IS_YEARS_SINCE_COUNCIL_ESTABLISHMENT:0 "Years since $GALACTIC_COUNCIL$ establishment is $COMPARE$ $NUM_COMPARE$"
  IS_NOT_YEARS_SINCE_COUNCIL_ESTABLISHMENT:0 "Years since $GALACTIC_COUNCIL$ establishment is NOT $COMPARE$ $NUM_COMPARE$"
 
- IS_NUM_COUNCIL_POSITIONS:0 "Number of Galactic Council positions is $COMPARE$ $NUM_COMPARE$"
- IS_NOT_NUM_COUNCIL_POSITIONS:0 "Number of Galactic Council positions is NOT $COMPARE$ $NUM_COMPARE$"
+ IS_NUM_COUNCIL_POSITIONS:1 "Number of $GALACTIC_COUNCIL$ positions is $COMPARE$ $NUM_COMPARE$"
+ IS_NOT_NUM_COUNCIL_POSITIONS:1 "Number of $GALACTIC_COUNCIL$ positions is NOT $COMPARE$ $NUM_COMPARE$"
 
- IS_COMMUNITY_RANK:0 "Galactic Community rank is $COMPARE$ $NUM_COMPARE$"
- IS_NOT_COMMUNITY_RANK:0 "Galactic Community rank is NOT $COMPARE$ $NUM_COMPARE$"
+ IS_COMMUNITY_RANK:1 "$GALACTIC_COMMUNITY$ rank is $COMPARE$ $NUM_COMPARE$"
+ IS_NOT_COMMUNITY_RANK:1 "$GALACTIC_COMMUNITY$ rank is NOT $COMPARE$ $NUM_COMPARE$"
 
  IS_COMMUNITY_FORMED:0 "The $GALACTIC_COMMUNITY$ has been formed"
  IS_NOT_COMMUNITY_FORMED:0 "The $GALACTIC_COMMUNITY$ has NOT been formed"
@@ -221,15 +226,17 @@
  OPINION_LEVEL_VAL_DESC:2 "We currently have $RELATION$ ($VAL|+=0$). Last month it changed by $DELTA|+=0$."
  OPINION_LEVEL_TREND:0 "With that trend we will have $RELATION$ Relations in $MONTHS$ month(s)"
 
- requires_terrible_opinion_or_supremacist:0 "$TRIGGER_FAIL$§RRequires $OPINION_TERRIBLE$, §YRivalry§!, an Envoy sent to §YHarm Relations§!, or one empire must either be in the $diplo_stance_supremacist_name$ $DIPLOMACY_STANCE$ or be a §H$COUNTRY_FALLEN_EMPIRE$§!.§!\n"
- requires_poor_or_worse_opinion:0 "$TRIGGER_FAIL$§RRequires $OPINION_POOR$ an Envoy sent to §YHarm Relations§!.§!"
- requires_excellent_or_better_opinion:0 "$TRIGGER_FAIL$§RRequires $OPINION_EXCELLENT$ or an Envoy sent to §YImprove Relations§!.§!"
- requires_good_or_better_opinion:0 "$TRIGGER_FAIL$§RRequires $OPINION_GOOD$ or an Envoy sent to §YImprove Relations§!.§!"
- requires_neutral_or_better_opinion:0 "$TRIGGER_FAIL$§RRequires $OPINION_NEUTRAL$ or an Envoy sent to §YImprove Relations§!.§!"
- requires_envoy_harming_relations:0 "$TRIGGER_FAIL$§RRequires an Envoy sent to §YHarm Relations§!.§!"
- influence_cost_for_improving_relations_effect:0 "Sending an Envoy to §Y$improve_relations_TITLE$§! costs £influence£ 0.25 per month.\n"
- influence_cost_for_harming_relations_effect:0 "Sending an Envoy to §Y$harm_relations_TITLE$§! costs £influence£ 0.25 per month.\n"
- influence_cost_for_improving_or_harming_relations_effect:0 "Sending an Envoy to §Y$improve_relations_TITLE$§! or §Y$harm_relations_TITLE$§! costs £influence£ 0.25 per month.\n"
+ requires_terrible_opinion_or_supremacist:1 "$TRIGGER_FAIL$§RRequires $OPINION_TERRIBLE$, §YRivalry§!, an envoy sent to §YHarm Relations§!, or one empire must either be in the $diplo_stance_supremacist_name$ $DIPLOMACY_STANCE$ or be a §H$COUNTRY_FALLEN_EMPIRE$§!.§!\n"
+ requires_poor_or_worse_opinion:1 "$TRIGGER_FAIL$§RRequires $OPINION_POOR$ an envoy sent to §YHarm Relations§!.§!"
+ requires_excellent_or_better_opinion:1 "$TRIGGER_FAIL$§RRequires $OPINION_EXCELLENT$ or an envoy sent to §YImprove Relations§!.§!"
+ requires_good_or_better_opinion:1 "$TRIGGER_FAIL$§RRequires $OPINION_GOOD$ or an envoy sent to §YImprove Relations§!.§!"
+ requires_neutral_or_better_opinion:1 "$TRIGGER_FAIL$§RRequires $OPINION_NEUTRAL$ or an envoy sent to §YImprove Relations§!.§!"
+ requires_envoy_harming_relations:1 "$TRIGGER_FAIL$§RRequires an envoy sent to §YHarm Relations§!.§!"
+ requires_envoy_not_harming_relations:0 "$TRIGGER_FAIL$§RCannot be done while an envoy is sent to §YHarm Relations§! with this Empire.§!"
+ requires_envoy_not_improving_relations:0 "$TRIGGER_FAIL$§RCannot be done while an envoy is sent to §YImprove Relations§! with this Empire.§!"
+ influence_cost_for_improving_relations_effect:1 "Sending an envoy to §Y$improve_relations_TITLE$§! costs £influence£ 0.25 per month.\n"
+ influence_cost_for_harming_relations_effect:1 "Sending an envoy to §Y$harm_relations_TITLE$§! costs £influence£ 0.25 per month.\n"
+ influence_cost_for_improving_or_harming_relations_effect:1 "Sending an envoy to §Y$improve_relations_TITLE$§! or §Y$harm_relations_TITLE$§! costs £influence£ 0.25 per month.\n"
  influence_cost_for_close_borders:0 "Using the §Y$ACTION_CLOSE_BORDERS_TITLE$§! diplomatic action against non-Rivals costs £influence£ 0.25 per month.\n"
  easy_rivalry:0 "Restrictions on the §YRival§! action are relaxed both for and against us.\n"
  envoy_costs:0 "Envoys"
@@ -516,7 +523,7 @@
  diplomatic_weight:0 "Diplomatic Weight"
  diplomatic_weight_icon_value:0 "£diplo_weight£ $VALUE$"
  diplomatic_weight_our_desc:0 "This is our Diplomatic Weight value."
- diplomatic_weight_desc:0 "This value represents how influential an Empire is within the Galactic Community and is used as their Voting Power when Supporting or Voting on Resolutions."
+ diplomatic_weight_desc:1 "This value represents how influential an Empire is within the [global_event_country.GetGalCommunityOrGalImperium] and is used as their Voting Power when Supporting or Voting on Resolutions."
  rotation:0 "Rotation"
  vote:0 "Voting"
  psionic_battle:0 "Psionic Battle"
@@ -628,9 +635,10 @@
  damage_crisis_2_desc:0 "If we intend to possess the moral authority to govern, we need to show the galaxy we have not just the will to defend it from outside threats, but also the means."
  envoy_unity_1:0 "Federal Attachés"
  envoy_unity_1_desc:0 "The arbiters of the federation agenda - our envoys - are savvy and active in their effort to improve the sense of belonging and mutual benefit between our members."
- envoy_unity_1_effect:0 "Gain §Y1§! Unity for each Envoy assigned to the federation."
+ envoy_unity_1_effect:2 "Gain §Y2§! Unity and §Y5%§! Trust Growth for each Envoy assigned to the federation by any member."
  envoy_unity_2:0 "Federal Unity"
- envoy_unity_2_desc:0 "Our envoys works ceaselessly to promote and encourage the federation's agenda and purpose, inspiring kinship and confidence across the galaxy."
+ envoy_unity_2_desc:1 "Our envoys work ceaselessly to promote and encourage the federation's agenda and purpose, inspiring kinship and confidence across the galaxy."
+ envoy_unity_2_effect:1 "Gain §Y2§! Unity and raise Trust Cap by §Y5§! for each Envoy assigned to the federation by any member."
  cohesion_join_1:0 "Welcoming Nature"
  cohesion_join_1_desc:0 "Regardless of cultural or biological differences, growth of the federation is to everyone's benefit."
  cohesion_join_1_effect:0 "New members impose a §Y50%§! smaller Cohesion penalty to the federation."
@@ -715,6 +723,7 @@
 
  #Contextual factors
  federation_acceptance_generally_positive:0 "Is generally positive"
+ federation_acceptance_high_cohesion:0 "Cohesion is very high"
  federation_acceptance_better_cohesion:0 "Cohesion is not §G90§! or higher"
  federation_acceptance_poor_cohesion:0 "Poor Cohesion"
  federation_acceptance_dont_lower_centralization:0 "Cohesion is §G50§! or higher"
@@ -813,7 +822,7 @@
  resolution_category_ecology:0 "Ecological Protection"
 
  resolution_ecology_repeal_1:0 "§RRepeal $resolution_ecology_recycling_initiatives$§!"
- resolution_ecology_repeal_1_desc:0 "While protecting the environment is clearly important, the empires of the Galactic Community should be trusted to make their own decisions."
+ resolution_ecology_repeal_1_desc:1 "While protecting the environment is clearly important, the empires of the [global_event_country.GetGalCommunityOrGalImperium] should be trusted to make their own decisions."
  resolution_ecology_repeal_1_effect_success:0 "Repeals the §Y$resolution_ecology_recycling_initiatives$§! resolution."
 
  resolution_ecology_repeal_2:0 "§RRepeal $resolution_ecology_natural_sanctuaries$§!"
@@ -833,7 +842,7 @@
  resolution_ecology_repeal_5_effect_success:2 "Repeals the §Y$resolution_ecology_paradise_initiative$§! resolution, leaving §Y$resolution_ecology_environmental_control_board$§! as galactic law.\n\n"
 
  resolution_ecology_recycling_initiatives:0 "Pangalactic Recycling Initiatives"
- resolution_ecology_recycling_initiatives_desc:0 "We all benefit from reducing waste and reusing what we can. Sharing recycling protocols between the nations of the Galactic Community will help all of us."
+ resolution_ecology_recycling_initiatives_desc:1 "We all benefit from reducing waste and reusing what we can. Sharing recycling protocols between the nations of the [global_event_country.GetGalCommunityOrGalImperium] will help all of us."
 
  resolution_ecology_natural_sanctuaries:0 "Natural Sanctuaries"
  resolution_ecology_natural_sanctuaries_desc:0 "We should preserve natural spaces as parks, where citizens can escape from their troubles. Minor restrictions to heavy industry are required, but it's a low price to pay."
@@ -873,7 +882,7 @@
  resolution_galacticstudies_repeal_5_effect_success:2 "Repeals the §Y$resolution_galacticstudies_extradimensional_experimentation$§! resolution, leaving §Y$resolution_galacticstudies_ethical_guideline_refactoring$§! as galactic law.\n\n"
 
  resolution_galacticstudies_cooperative_research_channels:0 "Cooperative Research Channels"
- resolution_galacticstudies_cooperative_research_channels_desc:0 "We should establish protocols that permit the scientists of the Galactic Community to share and review discoveries more easily."
+ resolution_galacticstudies_cooperative_research_channels_desc:1 "We should establish protocols that permit the scientists of the [global_event_country.GetGalCommunityOrGalImperium] to share and review discoveries more easily."
 
  resolution_galacticstudies_astral_studies_network:0 "Astral Studies Network"
  resolution_galacticstudies_astral_studies_network_desc:0 "By linking our starbases together into a massive sensor mesh, we can greatly improve the quality of data that we gather."
@@ -899,15 +908,15 @@
  decision_end_extradimensional_experimentation:0 "End $resolution_galacticstudies_extradimensional_experimentation$"
  decision_end_extradimensional_experimentation_desc:0 "This experimentation is dangerous and must end. What were we thinking?"
  federations.10020.name:0 "$resolution_galacticstudies_extradimensional_experimentation$"
- federations.10020.desc:0 "The secrets of this universe are not all that is out there.\n\nThe Galactic Community has authorized the use of reality-altering substances to enhance our research, allowing our scientists in Advanced Research Complexes to probe other realities for the truth."
- federations.10020.desc_gestalt:0 "The secrets of this universe are not all that is out there.\n\nThe Galactic Community has authorized the use of reality-altering substances to enhance our research, allowing our research drones in Advanced Research Complexes to probe other realities for the truth."
+ federations.10020.desc:1 "The secrets of this universe are not all that is out there.\n\nThe [global_event_country.GetGalCommunityOrGalImperium] has authorized the use of reality-altering substances to enhance our research, allowing our scientists in Advanced Research Complexes to probe other realities for the truth."
+ federations.10020.desc_gestalt:1 "The secrets of this universe are not all that is out there.\n\nThe [global_event_country.GetGalCommunityOrGalImperium] has authorized the use of reality-altering substances to enhance our research, allowing our research drones in Advanced Research Complexes to probe other realities for the truth."
 
 
  # Industry
  resolution_category_industry:0 "Industrial Development"
 
  resolution_industry_repeal_1:0 "§RRepeal $resolution_industry_regulatory_facilitation$§!"
- resolution_industry_repeal_1_desc:0 "The Galactic Community has no place meddling in industrial matters. We should not be forcing our views on other empires."
+ resolution_industry_repeal_1_desc:1 "The [global_event_country.GetGalCommunityOrGalImperium] has no place meddling in industrial matters. We should not be forcing our views on other empires."
  resolution_industry_repeal_1_effect_success:0 "Repeals the §Y$resolution_industry_regulatory_facilitation$§! resolution."
 
  resolution_industry_repeal_2:0 "§RRepeal $resolution_industry_collective_waste_management$§!"
@@ -936,7 +945,7 @@
  resolution_industry_building_a_better_tomorrow_desc:0 "Progress cannot be limited by any obstacles that stand before us. Let us share techniques with one another to aid us in harnessing and dominating the natural world."
 
  resolution_industry_environmental_ordinance_waivers:0 "Environmental Ordinance Waivers"
- resolution_industry_environmental_ordinance_waivers_desc:0 "The Galactic Community should empower local councils to suspend antiquated rules that do not serve the public good and are simply blocking progress."
+ resolution_industry_environmental_ordinance_waivers_desc:1 "The [global_event_country.GetGalCommunityOrGalImperium] should empower local councils to suspend antiquated rules that do not serve the public good and are simply blocking progress."
  resolution_industry_environmental_ordinance_waivers_tooltip:0 "Forge, Industry, and Refinery planetary designations gain additional bonuses."
 
  resolution_industry_project_cornucopia:0 "Project Cornucopia"
@@ -949,13 +958,13 @@
  d_project_cornucopia:0 "$resolution_industry_project_cornucopia$"
 
  federations.10000.name:0 "$resolution_industry_project_cornucopia$"
- federations.10000.desc:0 "Engineers from across the Galactic Community have come together to share ideas on ways to more exploit resources from our worlds.\n\nThe §HProject Cornucopia§! Planetary Decision is now available."
+ federations.10000.desc:1 "Engineers from across the [global_event_country.GetGalCommunityOrGalImperium] have come together to share ideas on ways to more exploit resources from our worlds.\n\nThe §HProject Cornucopia§! Planetary Decision is now available."
 
  # Commerce
  resolution_category_commerce:0 "Galactic Commerce"
 
  resolution_commerce_repeal_1:0 "§RRepeal $resolution_commerce_buzzword_standardization$§!"
- resolution_commerce_repeal_1_desc:0 "The free market should be left to its own devices without the meddling of the Galactic Community."
+ resolution_commerce_repeal_1_desc:1 "The free market should be left to its own devices without the meddling of the [global_event_country.GetGalCommunityOrGalImperium]."
  resolution_commerce_repeal_1_effect_success:0 "Repeals the §Y$resolution_commerce_buzzword_standardization$§! resolution."
 
  resolution_commerce_repeal_2:0 "§RRepeal $resolution_commerce_leveraged_privateering$§!"
@@ -978,7 +987,7 @@
  resolution_commerce_buzzword_standardization_desc:0 "We have to enable our enterprises to work seamlessly with one another. Streamlining strategic communications empowers our agents, making hitting key performance metrics easier."
 
  resolution_commerce_leveraged_privateering:0 "Leveraged Privateering"
- resolution_commerce_leveraged_privateering_desc:0 "Trade is the lifeblood of the galaxy. All members of the Galactic Community should contribute to a multinational space force to combat piracy and other threats to free commerce."
+ resolution_commerce_leveraged_privateering_desc:1 "Trade is the lifeblood of the galaxy. All members of the [global_event_country.GetGalCommunityOrGalImperium] should contribute to a multinational space force to combat piracy and other threats to free commerce."
 
  resolution_commerce_underdeveloped_system_utilization:0 "Underdeveloped System Utilization"
  resolution_commerce_underdeveloped_system_utilization_desc:0 "Failure to extract maximum value from the systems within our sphere of influence is a criminal waste. We propose that it be enforced as such and punished accordingly."
@@ -994,7 +1003,7 @@
  resolution_category_greatergood:0 "The Greater Good"
 
  resolution_greatergood_repeal_1:0 "§RRepeal $resolution_greatergood_workers_rights$§!"
- resolution_greatergood_repeal_1_desc:0 "The Galactic Community oversteps its bounds by attempting to tell its members how to live. Frankly, it's insulting."
+ resolution_greatergood_repeal_1_desc:1 "The [global_event_country.GetGalCommunityOrGalImperium] oversteps its bounds by attempting to tell its members how to live. Frankly, it's insulting."
  resolution_greatergood_repeal_1_effect_success:0 "Repeals the §Y$resolution_greatergood_workers_rights$§! resolution."
 
  resolution_greatergood_repeal_2:0 "§RRepeal $resolution_greatergood_five_year_plans$§!"
@@ -1022,13 +1031,13 @@
 
  resolution_greatergood_greater_than_ourselves:0 "Greater Than Ourselves"
  resolution_greatergood_greater_than_ourselves_desc:0 "We ask much of our people, but sometimes we must ask more. We should reward those who are willing to place the Empire above their own needs and volunteer to head to the frontier."
- resolution_greatergood_greater_than_ourselves_tooltip:0 "Unlocks an edict that encourages unemployed worker and simple drone pops to voluntarily resettle themselves to suitable planets with jobs and housing within our empire.\n\n§YBasic Subsistence§! and §YStratified Economy§! living standards are §Rbanned§!.\n\n§YChattel Slavery§!, §YLivestock§!, and §YGrid Amalgamation§! slavery types are §Rbanned§!."
+ resolution_greatergood_greater_than_ourselves_tooltip:1 "Unlocks an edict that encourages free unemployed pops to voluntarily resettle themselves to suitable planets with jobs and housing within our empire.\n\n§YBasic Subsistence§! and §YStratified Economy§! living standards are §Rbanned§!.\n\n§YChattel Slavery§!, §YLivestock§!, and §YGrid Amalgamation§! slavery types are §Rbanned§!."
  edict_greater_than_ourselves:0 "$resolution_greatergood_greater_than_ourselves$"
- edict_greater_than_ourselves_desc:0 "Encourages unemployed worker and simple drone pops to voluntarily resettle themselves to suitable planets with jobs and housing within our empire."
+ edict_greater_than_ourselves_desc:1 "Encourages free unemployed pops to voluntarily resettle themselves to suitable planets with jobs and housing within our empire."
  greater_than_ourselves_tooltip:0 "§YEdict Unlocked:§! $edict_greater_than_ourselves$"
  federations.10010.name:0 "$resolution_greatergood_greater_than_ourselves$"
- federations.10010.desc:0 "Alongside the rights enshrined in recent Galactic Community resolutions, we ask additional responsibilities of our workers.\n\nWe can now encourage unemployed workers to voluntarily resettle to other worlds we control that have available housing, jobs, and are of adequate habitability."
- federations.10010.desc_gestalt:0 "The Galactic Community has passed regulations granting additional privileges for their worker drones.\n\nWhile this is largely meaningless to us, we can at least benefit from some of the infrastructure they have created in order to resettle inactive simple drones."
+ federations.10010.desc:1 "Alongside the rights enshrined in recent [global_event_country.GetGalCommunityOrGalImperium] resolutions, we ask additional responsibilities of our workers.\n\nWe can now encourage unemployed workers to voluntarily resettle to other worlds we control that have available housing, jobs, and are of adequate habitability."
+ federations.10010.desc_gestalt:1 "The [global_event_country.GetGalCommunityOrGalImperium] has passed regulations granting additional privileges for their worker drones.\n\nWhile this is largely meaningless to us, we can at least benefit from some of the infrastructure they have created in order to resettle inactive simple drones."
 
  resolution_greatergood_balance_in_the_middle:0 "Balance in the Middle"
  resolution_greatergood_balance_in_the_middle_desc:0 "We must tackle inequality in all of its forms, enforcing fairness by any means necessary. What good is a feast if you have already had enough, and why should it go to waste when your neighbor is hungry?"
@@ -1063,25 +1072,25 @@
 
  resolution_mutualdefense_naval_weight:0 "$MOD_DIPLO_WEIGHT_NAVAL_MULT$"
  resolution_mutualdefense_the_readied_shield:0 "The Readied Shield"
- resolution_mutualdefense_the_readied_shield_desc:0 "The universe is a dangerous place, and all members of the Galactic Community should be ready to defend their worlds whether it be against pirates, space creatures, or the unknown."
+ resolution_mutualdefense_the_readied_shield_desc:1 "The universe is a dangerous place, and all members of the [global_event_country.GetGalCommunityOrGalImperium] should be ready to defend their worlds whether it be against pirates, space creatures, or the unknown."
 
  resolution_mutualdefense_military_readiness_act:0 "Military Readiness Act"
- resolution_mutualdefense_military_readiness_act_desc:0 "Each member of the Galactic Community has a duty to themselves and to others to contribute to galactic defense."
- resolution_mutualdefense_military_readiness_act_tooltip:0 "Galactic Community members that are not vassals of another empire that are using less than half of their naval capacity are in §RBreach of Galactic Law§!."
+ resolution_mutualdefense_military_readiness_act_desc:1 "Each member of the [global_event_country.GetGalCommunityOrGalImperium] has a duty to themselves and to others to contribute to galactic defense."
+ resolution_mutualdefense_military_readiness_act_tooltip:1 "[global_event_country.GetGalCommunityOrGalImperium] members that are not vassals of another empire that are using less than half of their naval capacity are in §RBreach of Galactic Law§!."
 
  resolution_mutualdefense_enemy_of_my_enemy:0 "The Enemy of My Enemy"
  resolution_mutualdefense_enemy_of_my_enemy_desc:0 "An enemy of one is the enemy of all. If one of our number is attacked, should we not permit any of our number to punish the offender?"
- resolution_mutualdefense_enemy_of_my_enemy_tooltip:0 "Grants the §Y'Counterattack'§! casus belli on empires that are not Galactic Community members and are in an offensive war against a Galactic Community member."
+ resolution_mutualdefense_enemy_of_my_enemy_tooltip:1 "Grants the §Y'Counterattack'§! casus belli on empires that are not [global_event_country.GetGalCommunityOrGalImperium] members and are in an offensive war against a [global_event_country.GetGalCommunityOrGalImperium] member."
 
  resolution_mutualdefense_castigation_proclamation:0 "Castigation Proclamation"
  resolution_mutualdefense_castigation_proclamation_desc:0 "Those who are not with us are against us, and all who stand against Galactic Law must be punished."
- resolution_mutualdefense_castigation_proclamation_tooltip:0 "Any Empire in the Galactic Community can propose a resolution to §YDenounce§! an Empire in §RBreach of Galactic Law§! or that is not a Galactic Community member.\n\nThe §Y'Animosity'§! casus belli and §Y'Humiliation'§! wargoal can be used by empires with §YUnrestricted Wars§! against empires that have been §RDenounced§! by the Galactic Community or are in §RBreach of Galactic Law§!."
+ resolution_mutualdefense_castigation_proclamation_tooltip:1 "Any Empire in the [global_event_country.GetGalCommunityOrGalImperium] can propose a resolution to §YDenounce§! an Empire in §RBreach of Galactic Law§! or that is not a [global_event_country.GetGalCommunityOrGalImperium] member.\n\nThe §Y'Animosity'§! casus belli and §Y'Humiliation'§! wargoal can be used by empires with §YUnrestricted Wars§! against empires that have been §RDenounced§! by the [global_event_country.GetGalCommunityOrGalImperium] or are in §RBreach of Galactic Law§!."
  resolution_mutualdefense_castigation_denouncement:0 "Castigation"
- resolution_mutualdefense_castigation_denouncement_desc:0 "A formal declaration denouncing the target empire. This proposal can target any empire that is either not a member of the Galactic Community or is in Breach of Galactic Law."
+ resolution_mutualdefense_castigation_denouncement_desc:1 "A formal declaration denouncing the target empire. This proposal can target any empire that is either not a member of the [global_event_country.GetGalCommunityOrGalImperium] or is in Breach of Galactic Law."
 
  resolution_mutualdefense_renegade_containment:0 "Renegade Containment Doctrine"
- resolution_mutualdefense_renegade_containment_desc:0 "The benefits of membership in the Galactic Community are self-evident, and as such refusal to be a member clearly indicates ill intent. Members should be authorized to preempt any nefarious acts with force before non-members enact their plots."
- resolution_mutualdefense_renegade_containment_tooltip:0 "Grants the §Y'Preemptive War'§! total war casus belli on empires that are not members of the Galactic Community for empires with §YUnrestricted Wars§!."
+ resolution_mutualdefense_renegade_containment_desc:1 "The benefits of membership in the [global_event_country.GetGalCommunityOrGalImperium] are self-evident, and as such refusal to be a member clearly indicates ill intent. Members should be authorized to preempt any nefarious acts with force before non-members enact their plots."
+ resolution_mutualdefense_renegade_containment_tooltip:1 "Grants the §Y'Preemptive War'§! total war casus belli on empires that are not members of the [global_event_country.GetGalCommunityOrGalImperium] for empires with §YUnrestricted Wars§!."
 
  # Rules of War
 
@@ -1133,7 +1142,7 @@
  resolution_category_denouncements:0 "Denouncement"
 
  resolution_council_denouncement:0 "Council Denouncement"
- resolution_council_denouncement_desc:0 "The Galactic Council can propose a resolution to denounce unfriendly members of the Galactic Community, rendering them vulnerable to any Sanctions that have been passed.\n\nSurely this power won't be abused."
+ resolution_council_denouncement_desc:1 "The [global_event_country.GetGalCouncilOrImpCouncil] can propose a resolution to denounce unfriendly members of the [global_event_country.GetGalCommunityOrGalImperium], rendering them vulnerable to any Sanctions that have been passed.\n\nSurely this power won't be abused."
 
  resolution_galacticreforms_abolish_council:0 "§RAbolish Galactic Council§!"
  resolution_galacticreforms_abolish_council_desc:0 "The Galactic Council is an undemocratic menace and should be abolished."
@@ -1182,7 +1191,7 @@
  sanctions_effect:0 "Empires that have been §RDenounced§! or are in §RBreach of Galactic Law§! have penalties applied to them."
 
  resolution_sanctions_tech:0 "Research Sanctions"
- resolution_sanctions_tech_desc:0 "We have been sanctioned by the Galactic Community for being §RDenounced§! or in §RBreach of Galactic Law§!."
+ resolution_sanctions_tech_desc:1 "We have been sanctioned by the [global_event_country.GetGalCommunityOrGalImperium] for being §RDenounced§! or in §RBreach of Galactic Law§!."
 
  resolution_sanctions_tech_repeal_1:0 "§RRepeal $resolution_sanctions_tech_1$§!"
  resolution_sanctions_tech_repeal_1_desc:0 "The research sanctions that we have levied on empires in §RBreach of Galactic Law§! are too harsh. It is wrong to slow technological progress over matters that should be handled diplomatically."
@@ -1257,7 +1266,7 @@
  resolution_sanctions_administrative_desc:0 "$resolution_sanctions_tech_desc$"
 
  resolution_sanctions_administrative_repeal_1:0 "§RRepeal $resolution_sanctions_administrative_1$§!"
- resolution_sanctions_administrative_repeal_1_desc:0 "Our administrative sanctions are counterproductive - we should be using all diplomatic channels at our disposal to convince empires to work with the Community."
+ resolution_sanctions_administrative_repeal_1_desc:1 "Our administrative sanctions are counterproductive - we should be using all diplomatic channels at our disposal to convince empires to work with the [global_event_country.GetCommunityOrImperium]."
  resolution_sanctions_administrative_repeal_1_effect_success:0 "Repeals the §Y$resolution_sanctions_administrative_1$§! resolution."
 
  resolution_sanctions_administrative_repeal_2:0 "§RRepeal $resolution_sanctions_administrative_2$§!"
@@ -1275,14 +1284,14 @@
  resolution_sanctions_administrative_2_desc:0 "Stronger measures are needed to ensure compliance with Galactic Law."
 
  resolution_sanctions_administrative_3:0 "Major Administrative Sanctions"
- resolution_sanctions_administrative_3_desc:0 "Extreme measures must be taken to isolate and ostracize those who will not obey the will of the Galactic Community."
+ resolution_sanctions_administrative_3_desc:1 "Extreme measures must be taken to isolate and ostracize those who will not obey the will of the [global_event_country.GetGalCommunityOrGalImperium]."
 
 
 
  # Galactic Foci
  galactic_focus_pass_a_resolution:0 "Pass a Resolution"
- galactic_focus_pass_a_resolution_desc:0 "Prove to the naysayers that the Galactic Community can work together."
- galactic_community_resolution_passed:2 "$TRIGGER_FAIL$Passed a Resolution in the Galactic Community"
+ galactic_focus_pass_a_resolution_desc:1 "Prove to the naysayers that the [global_event_country.GetGalCommunityOrGalImperium] can work together."
+ galactic_community_resolution_passed:4 "$TRIGGER_FAIL$Passed a Resolution in the [global_event_country.GetGalCommunityOrGalImperium]"
 
  galactic_focus_form_the_galactic_market:0 "$market_founding_chain_title$"
  galactic_focus_form_the_galactic_market_desc:0 "$market_founding_chain_desc$"
@@ -1290,7 +1299,7 @@
 
  resolution_category_galactic_focus:0 "Change Galactic Focus"
  resolution_galactic_focus_effect_failure:0 "The Galactic Focus will remain unchanged."
- resolution_galactic_focus_crisis_effect_success:0 "All empires within the Galactic Community will open borders to one another and mobilize for war."
+ resolution_galactic_focus_crisis_effect_success:1 "All empires within the [global_event_country.GetGalCommunityOrGalImperium] will open borders to one another and mobilize for war."
 
  resolution_galactic_focus_crisis_prethoryn:0 "Focus: The Prethoryn Scourge"
  resolution_galactic_focus_crisis_prethoryn_desc:0 "The Prethoryn Scourge is a threat to all life in the galaxy. If we do not unite to stop them, they will consume us all. We should make dealing with this crisis the Galactic Focus."
@@ -1324,26 +1333,26 @@
  resolution_galactic_focus_war_in_heaven_denounce_both_desc:1 "Both the [FirstSleeper.GetName] and the [SecondSleeper.GetName] are acting like children. Prepare a harshly worded letter for each."
  resolution_galactic_focus_war_in_heaven_denounce_both_success:0 "Joining either Awakened Empire in the §YWar in Heaven§! is considered a §RBreach of Galactic Law§!.\n\nEmpires that are not vassals of an Awakened Empire gain the listed bonuses."
 
- galactic_focus_crisis_prethoryn:2 "$TRIGGER_FAIL$Defeat the Prethoryn Scourge"
+ galactic_focus_crisis_prethoryn:3 "Defeat the Prethoryn Scourge"
  galactic_focus_crisis_prethoryn_desc:0 "The Prethoryn Scourge are a true crisis and a threat to the entire galaxy. We must unite and defeat the menace."
 
- galactic_focus_crisis_unbidden:2 "$TRIGGER_FAIL$Defeat the Unbidden"
+ galactic_focus_crisis_unbidden:3 "Defeat the Unbidden"
  galactic_focus_crisis_unbidden_desc:0 "The Unbidden are a true crisis and a threat to the entire galaxy. We must unite and defeat the menace."
 
- galactic_focus_crisis_contingency:2 "$TRIGGER_FAIL$Defeat the Contingency"
+ galactic_focus_crisis_contingency:3 "Defeat the Contingency"
  galactic_focus_crisis_contingency_desc:0 "The Contingency are a true crisis and a threat to the entire galaxy. We must unite and defeat the menace."
 
- galactic_focus_crisis_greatkhan:2 "$TRIGGER_FAIL$Defeat the Great Khan"
+ galactic_focus_crisis_greatkhan:3 "Defeat the Great Khan"
  galactic_focus_crisis_greatkhan_desc:0 "The Great Khan is a true crisis and a threat to the entire galaxy. We must unite and defeat the menace."
 
- galactic_focus_crisis_nanites:3 "$TRIGGER_FAIL$Defeat the Gray Tempest"
+ galactic_focus_crisis_nanites:4 "Defeat the Gray Tempest"
  galactic_focus_crisis_nanites_desc:0 "The Gray Tempest are a true crisis and a threat to the entire galaxy. We must unite and defeat the menace."
 
- galactic_focus_crisis_war_in_heaven:1 "$TRIGGER_FAIL$Resolve the War in Heaven"
+ galactic_focus_crisis_war_in_heaven:2 "Resolve the War in Heaven"
  galactic_focus_crisis_war_in_heaven_desc:0 "When giants go to war, the universe trembles. Survive the War in Heaven."
 
  FACTION_OUTRAGED_GC:0 "Faction Outraged"
- FACTION_OUTRAGED_GC_DESC:0 "The faction is §Routraged§! due to a resolution we recently proposed and passed in the Galactic Community."
+ FACTION_OUTRAGED_GC_DESC:1 "The faction is §Routraged§! due to a resolution we recently proposed and passed in the [global_event_country.GetGalCommunityOrGalImperium]."
 
  DIPLOMATIC_SUPPORT_VALUE:0 "$VALUE|Y$"
  SUPPORTERS:0 "Supporters"
@@ -1351,9 +1360,15 @@
  ABSTAINING:0 "§gAbstaining§!"
  SUPPORT_COLON:0 "$support$: "
 
+ PASSED_UPPER_CASE:0 "PASSED"
+ FAILED_UPPER_CASE:0 "FAILED"
+ PASSED_UPPER_CASE_COLORED:0 "§G$PASSED_UPPER_CASE$§!"
+ FAILED_UPPER_CASE_COLORED:0 "§R$FAILED_UPPER_CASE$§!"
+ PASSED_UPPER_CASE_COLORED_DBGGG:0 "$SUPPORTERS|G$"
+ VOTE_TALLY_TOOLTIP_DESC:0 "Currently, this Resolution will be $STATUS$.\nThere is £time£ $DAYS|Y$ days left to vote on this Resolution."
  VOTE_TALLY_DESC:0 "§HVote Tally§!\nCurrently, this Resolution will be $STATUS$. There is £time£ $DAYS|Y$ days left to vote on this Resolution."
  VOTE_WEIGHT_SPLIT:0 "§HDiplomatic Weight Distribution§!\n    §GSupporting: $SUPPORTING|0$§!\n    §ROpposing: $OPPOSING|0$§!\n    §gAbstaining: $ABSTAINING|0$§!"
- VOTE_DETAILS_DESC:0 "If this Resolution Passes, its effects will be applied upon the entire Galactic Community. It's modifiers will continously affect all members, even those who voted against it on the Senate Floor."
+ VOTE_DETAILS_DESC:1 "If this Resolution Passes, its effects will be applied upon the entire [global_event_country.GetGalCommunityOrGalImperium]. Its modifiers will continously affect all members, even those who voted against it on the Senate Floor."
  SENATE_IN_SESSION:0 "Senate is in session £time£ $DAYS|Y$"
  SENATE_IN_SESSION_DESC:0 "§HSenate Is In Session§!\nThe Galactic Community has £time£ $DAYS|Y$ to Vote on the Senate Floor to §EPass§! or §RDefeat§! $RESOLUTION|H$."
  SENATE_IN_RECESS:0 "Senate is in recess £time£ $DAYS|Y$"
@@ -1394,7 +1409,7 @@
  alert_mia_reinforce_instant:1 "At least one of our fleets is In Transit, reinforcing another. It will take them some time to reach their target fleet."
 
  alert_in_breach_title:0 "In Breach of Galactic Law"
- alert_in_breach_instant:0 "We are currently in breach of the Resolutions agreed upon by the Galactic Community!"
+ alert_in_breach_instant:1 "We are currently in breach of the Resolutions agreed upon by the [global_event_country.GetGalCommunityOrGalImperium]!"
  triggered_opinion_galactic_community_in_breach:0 "$alert_in_breach_title$"
 
  alert_council_election_title:0 "Council Election Imminent"
@@ -1416,7 +1431,7 @@
  MESSAGE_FEDERATION_LEVEL_UNLOCKED_NOTIFICATION:0 "The next Federation Level has been unlocked. Our §YNew Federation Perks§! are now active!"
  CLICK_TO_VIEW_FEDERATION:0 "§GClick to view the Federation§!"
 
- TIME_UNTIL_COUNCIL_ELECTION:0 "Election in £time£ $DAYS|Y$ days"
+ TIME_UNTIL_COUNCIL_ELECTION:1 "Election £time£ $DAYS|Y$"
 
  IN_BREACH:0 "In Breach"
  IN_BREACH_OF_RESOLUTIONS:1 "§RIn Breach:§!"
@@ -1457,9 +1472,12 @@
  ENVOY_harm_relations:0 "Busy harming relations with $LOCATION|H$"
 
  galactic_community:0 "Galactic Community"
- galactic_community_click_to_open:0 "§GClick to open $galactic_community$§!"
+ galactic_community_click_to_open:1 "§GClick to open $GALACTIC_COMMUNITY$§!"
  galactic_community_TITLE:0 "$galactic_community$"
  galactic_community_desc:0 "Sending an envoy to represent our interests in the Galactic Community will increase our Diplomatic Weight by §G+10%§!.\n\nWe will be unable to reassign them for §Y£time£360§!."
+
+ galactic_empire_TITLE:0 "$GALACTIC_EMPIRE$"
+ galactic_empire_desc:0 "Sending an envoy to represent our interests in the $GALACTIC_EMPIRE$ will increase our Diplomatic Weight by §G+10%§!.\n\nWe will be unable to reassign them for §Y£time£360§!."
 
  federation_desc:0 "Sending an envoy to coordinate matters within our Federation will improve Federation Cohesion.\n\nWe will be unable to reassign them for §Y£time£360§!."
 
@@ -1481,7 +1499,7 @@
  ENVOYS_IN_THE_FEDERATION:0 "§HEach Envoy assigned to the federation contributes to its cohesion§!"
 
  MESSAGE_SENATE_IN_SESSION_TITLE:0 "Senate is now in session"
- MESSAGE_SENATE_IN_SESSION_DESC:1 "The Senate Floor is in Session. The Galactic Community is now voting on a New Resolution to decide if it will become Galactic Law."
+ MESSAGE_SENATE_IN_SESSION_DESC:2 "The Senate Floor is in Session. The [global_event_country.GetGalCommunityOrGalImperium] is now voting on a New Resolution to decide if it will become Galactic Law."
 
  MESSAGE_RESOLUTION_PASSED_TITLE:0 "A Resolution has been passed"
  MESSAGE_RESOLUTION_PASSED_DESC:0 "The Senate has voted on and PASSED the Resolution $RESOLUTION|H$"
@@ -1489,13 +1507,13 @@
  MESSAGE_RESOLUTION_FAILED_TITLE:0 "A Resolution has been failed"
  MESSAGE_RESOLUTION_FAILED_DESC:0 "The Senate has voted on and FAILED the Resolution $RESOLUTION|H$"
 
- MESSAGE_COUNCIL_ELECTION_RESULT_TITLE:0 "Galactic Council elections concluded"
- MESSAGE_COUNCIL_ELECTION_RESULT_DESC:0 "The Galactic Community has chosen a new council.\n\n$ELECTION_RESULT$"
+ MESSAGE_COUNCIL_ELECTION_RESULT_TITLE:1 "[global_event_country.GetGalCouncilOrImpCouncil] elections concluded"
+ MESSAGE_COUNCIL_ELECTION_RESULT_DESC:1 "The [global_event_country.GetGalCommunityOrGalImperium] has chosen a new council.\n\n$ELECTION_RESULT$"
 
- MESSAGE_RESOLUTION_VETOED_TITLE:0 "Galactic Council Veto called"
+ MESSAGE_RESOLUTION_VETOED_TITLE:1 "[global_event_country.GetGalCouncilOrImpCouncil] Veto called"
  MESSAGE_RESOLUTION_VETOED_DESC:0 "$COUNTRY|Y$ has called their Council veto and FAILED the Resolution $RESOLUTION|H$"
 
- MESSAGE_RESOLUTION_EMERGENCY_MEASURE_TITLE:0 "Galactic Council Emergency Measure declared"
+ MESSAGE_RESOLUTION_EMERGENCY_MEASURE_TITLE:1 "[global_event_country.GetGalCouncilOrImpCouncil] Emergency Measure declared"
  MESSAGE_RESOLUTION_EMERGENCY_MEASURE_DESC:0 "$COUNTRY|Y$ has leveraged their Council powers to declare the Resolution $RESOLUTION|H$ an Emergency Measure"
 
  DIPLOMACY_FAVOR_HOLDER:0 "Has Favors to collect from:"
@@ -1548,32 +1566,38 @@
  support:0 "Support"
  oppose:0 "Oppose"
  abstain:0 "Abstain"
+ SUPPORT_COLORED:0 "§G$support$§!"
+ OPPOSE_COLORED:0 "§R$oppose$§!"
+ ABSTAIN_COLORED:0 "§L$abstain$§!"
+
+
  VETO:0 "Council Veto"
  EMERGENCY_MEASURE:0 "Emergency Measure"
  WITHDRAW_PROPOSED:0 "Withdraw"
 
- CLICK_TO_VIEW_GALACTIC_COMMUNITY:0 "§GClick to view the Galactic Community§!"
+ CLICK_TO_VIEW_GALACTIC_COMMUNITY:1 "§GClick to view the [global_event_country.GetGalCommunityOrGalImperium]§!"
 
  COUNCIL_SIZE:0 "Seats: $SIZE|Y$"
- COUNCIL_SIZE_TOOLTIP:0 "§EThe number of seats on the §HGalactic Council§! is dictated by §HCouncil§! Resolutions§!"
- SET_COUNCIL_SIZE_DESC:0 "Set the number of positions on the Galactic Council to $VALUE|Y$"
+ COUNCIL_SIZE_TOOLTIP:1 "§EThe number of seats on the §H[global_event_country.GetGalCouncilOrImpCouncil]§! is dictated by §HCouncil§! Resolutions§!"
+ SET_COUNCIL_SIZE_DESC:1 "Set the number of positions on the $GALACTIC_COUNCIL$ to $VALUE|Y$"
  council_member:0 "Council Member"
- ADD_PERMANENT_COUNCILLOR:0 "Grant $COUNTRY|Y$ a permanent seat on the §HGalactic Council§!"
- REMOVE_PERMANENT_COUNCILLOR:0 "Remove the permanent §HGalactic Council§! seat granted to $COUNTRY|Y$"
+ ADD_PERMANENT_COUNCILLOR:1 "Grant $COUNTRY|Y$ a permanent seat on the  $GALACTIC_COUNCIL|H$"
+ REMOVE_PERMANENT_COUNCILLOR:1 "Remove the permanent $GALACTIC_COUNCIL|H$ seat granted to $COUNTRY|Y$"
 
- IS_PERMANENT_COUNCILLOR:0 "$COUNTRY|Y$ has a permanent seat on the §HGalactic Council§!"
- IS_NOT_PERMANENT_COUNCILLOR:0 "$COUNTRY|Y$ does NOT have a permanent seat on the §HGalactic Council§!"
+ IS_PERMANENT_COUNCILLOR:1 "$COUNTRY|Y$ has a permanent seat on the $GALACTIC_COUNCIL|H$"
+ IS_NOT_PERMANENT_COUNCILLOR:1 "$COUNTRY|Y$ does NOT have a permanent seat on the $GALACTIC_COUNCIL|H$"
 
- ENABLE_COUNCIL_VETO:0 "Galactic Council members will be able to veto proposed Resolutions"
- DISABLE_COUNCIL:0 "Galactic Council members will NOT be able to veto proposed Resolutions"
+ ENABLE_COUNCIL_VETO:1 "$GALACTIC_COUNCIL$ members will be able to veto proposed Resolutions"
+ DISABLE_COUNCIL:1 "$GALACTIC_COUNCIL$ members will NOT be able to veto proposed Resolutions"
 
- ENABLE_COUNCIL_EMERGENCY_MEASURES:0 "Galactic Council members will be able to propose Emergency Measures"
- DISABLE_COUNCIL_EMERGENCY_MEASURES:0 "Galactic Council members will NOT be able to propose Emergency Measures"
+ ENABLE_COUNCIL_EMERGENCY_MEASURES:1 "$GALACTIC_COUNCIL$ members will be able to propose Emergency Measures"
+ DISABLE_COUNCIL_EMERGENCY_MEASURES:1 "$GALACTIC_COUNCIL$ members will NOT be able to propose Emergency Measures"
 
  EMERGENCY_MEASURE_SENATE_NOT_IN_RECESS:0 "You can only propose an Emergency Measure whilst the Senate is in recess"
 
  VOTE_COOLDOWN:0 "This Resolution cannot be proposed for another $DAYS|Y$ days"
  PASS_RESOLUTION_DESC:0 "$RESOLUTION|H$ is passed and becomes an active Resolution"
+ PASS_RESOLUTION_NO_COOLDOWN_DESC:0 "$RESOLUTION|H$ is passed and becomes an active Resolution. Resolutions of the same category can be proposed straight after."
  ACTIVE_RESOLUTION:0 "Active"
  PROPOSED_RESOLUTION:0 "Proposed"
 
@@ -1804,7 +1828,7 @@
  fedev.9450.name:0 "Beasts of Space"
  fedev.9450.desc:0 "The surface team has isolated a radio signal down on the planet. Its origin is still unknown, but translated parts have started to reveal information about the long lost civilization:\n\nSome unidentified and approaching threat to the civilization. A collective fascination with technological advances. Rumours of a giant spaceship being built in another part of the galaxy. These themes are recurring in the scrambled messages."
  fedev.9455.name:0 "Garden of Prototypes"
- fedev.9455.desc:0 "The archaeologists managed to home in the source of the mysterious signal. It came from deep underground.\n\nUnearthing of the site has only just begun, but indications point to some technological R&D facility. The place is littered with remarkably high-detail miniature prototypes of various technological devices.\n\nScans show a hollow space further down, and excavation is underway."
+ fedev.9455.desc:1 "The archaeologists managed to home in the source of the mysterious signal. It came from deep underground.\n\nUnearthing of the site has only just begun, but indications point to some kind of research and development facility. The place is littered with remarkably high-detail miniature prototypes of various technological devices.\n\nScans show a hollow space further down, and excavation is underway."
  fedev.9460.name:0 "What are they building..."
  fedev.9460.desc:0 "Our excavation team have made an interesting discovery. A collection of miniature hard drives held information about an ongoing project that seems to have been the focal point of this installation, maybe even that of the entire civilization.\n\nIt speaks of a §Hmighty vessel to rival the galaxy's most gargantuan flyer§!.\n\nWhat beast of a machine did they build down here?"
  fedev.9465.name:0 "And the winner is..."
@@ -1917,8 +1941,8 @@
  origin.1210.desc:0 "Despite our best efforts the excavation and analysis of the alien indicators on the surface have failed to deliver any relevant result.\n\nThe archaeological teams have calculated and followed the paths of the alien signal beams, but nothing is being pointed at other than empty space.\n\nScientist [Leader.GetName] have requested more time; convinced that something has been missed by the science teams."
  origin.1210.a:0 "Continue."
  origin.1215.name:0 "Wind Back and Proceed"
- origin.1215.desc.a:0 "Breakthrough!\n\nStudy of the surface revealed that the moon was hit eons ago by a small asteroid. The impact was not enough to obliterate the moon, but did nudge it a fraction out of its original orbit. By analyzing the impact the scientists managed to calculate the moon's initial position and rotation, and used that data to 'rewind' the alien indicators to their original position.\n\nAnd there it was: the alien indicator beams suddenly converging on another planet in the system!"
- origin.1215.desc.b:0 "Breakthrough!\n\nStudy of the surface revealed that [From.Planet.GetName] was hit eons ago by a small asteroid. The impact was not enough to obliterate the planet, but did nudge it a fraction out of it's original orbit. By analyzing the impact the scientists managed to calculate [From.Planet.GetName]'s initial position and rotation, and used that data to 'rewind' the alien indicators to their original position.\n\nAnd there it was. The alien indicator beams suddenly converging on another planet in the system!"
+ origin.1215.desc.a:1 "Breakthrough!\n\nStudy of the surface revealed that the moon was hit eons ago by a small asteroid. The impact was not enough to obliterate the moon but did nudge it a fraction out of its original orbit. By analyzing the impact, the scientists managed to calculate the moon's initial position and rotation, and used that data to 'rewind' the alien indicators to their original position.\n\nAnd there it was: the alien indicator beams suddenly began converging on another planet in the system!"
+ origin.1215.desc.b:1 "Breakthrough!\n\nStudy of the surface revealed that [From.Planet.GetName] was hit eons ago by a small asteroid. The impact was not enough to obliterate the planet but did nudge it a fraction out of its original orbit. By analyzing the impact, the scientists managed to calculate [From.Planet.GetName]'s initial position and rotation, and used that data to 'rewind' the alien indicators to their original position.\n\nAnd there it was: the alien indicator beams suddenly began converging on another planet in the system!"
 
  ### On The Shoulders Of Giants - Something Waiting Arc Site
  site_something_waiting:0 "Something Waiting"
@@ -2056,8 +2080,8 @@
  battlefield_debris_object_tooltip:0 "Millions of pieces and parts scattered in some violent space battle eons ago."
 
  abandoned_station_object:0 "Abandoned Space Station"
- abandoned_station_object_desc:0 "Severely damaged, but generally intact space station used for some R&D purpose."
- abandoned_station_object_tooltip:0 "Severely damaged, but generally intact space station used for some R&D purpose."
+ abandoned_station_object_desc:1 "Severely damaged, but generally intact space station used for some kind of research and development."
+ abandoned_station_object_tooltip:1 "Severely damaged, but generally intact space station used for some kind of research and development."
 
  full_circle:0 "Full Circle"
  full_circle_desc:0 "Our empire may forever enjoy the sense of purpose and closure we acquired by helping the Benefactors of our past."
@@ -2171,10 +2195,10 @@
  galcom.51.c:0 "Ah, so the puppeteers finally reveal themselves!"
 
  galcom.62.name:0 "[galactic_market_station_system.GetName] Stripped of Galactic Market Headquarters"
- galcom.62.desc:0 "According to article 19C of the Galactic Community's charter, only a member state may host the Galactic Market. As such, the market's headquarters in the [galactic_market_station_system.GetName] system has been dismantled, the last traders reluctantly abandoning their posts today, bemoaning the massive disruption to galactic trade that this dramatic and in their view needless step has caused. The Community's Board of Commerce has issued a statement regretting this state of affairs and promising that nominations for a new host within the Community will commence immediately."
+ galcom.62.desc:1 "According to article 19C of the [global_event_country.GetGalCommunityOrGalImperium]'s charter, only a member state may host the Galactic Market. As such, the market's headquarters in the [galactic_market_station_system.GetName] system has been dismantled, the last traders reluctantly abandoning their posts today, bemoaning the massive disruption to galactic trade that this dramatic and in their view needless step has caused. The [global_event_country.GetCommunityOrImperium]'s Board of Commerce has issued a statement regretting this state of affairs and promising that nominations for a new host within the [global_event_country.GetCommunityOrImperium] will commence immediately."
  galcom.62.A:0 "It is a price worth paying."
  galcom.63.name:0 "New Headquarters for Galactic Market Sought"
- galcom.63.desc:0 "With the [From.GetName] opting to leave the Galactic Community, an obscure article of the Community's charter to the effect that only a member state may host the Galactic Market must be applied. The market's headquarters in the [galactic_market_station_system.GetName] system has been dismantled, the last traders reluctantly abandoning their posts today, bemoaning the massive disruption to galactic trade that this dramatic and in their view needless step has caused. Nominations for the headquarters' new location have already opened, the Community's Board of Commerce issuing a statement regretting this state of affairs and promising that a new host will be found swiftly."
+ galcom.63.desc:1 "With the [From.GetName] opting to leave the [global_event_country.GetGalCommunityOrGalImperium], an obscure article of the [global_event_country.GetCommunityOrImperium]'s charter to the effect that only a member state may host the Galactic Market must be applied. The market's headquarters in the [galactic_market_station_system.GetName] system has been dismantled, the last traders reluctantly abandoning their posts today, bemoaning the massive disruption to galactic trade that this dramatic and in their view needless step has caused. Nominations for the headquarters' new location have already opened, the [global_event_country.GetCommunityOrImperium]'s Board of Commerce issuing a statement regretting this state of affairs and promising that a new host will be found swiftly."
  galcom.63.A:0 "Perhaps this represents an opportunity for us..."
  galcom.63.B:0 "We can only laugh at their foolishness."
 
@@ -2249,6 +2273,7 @@
  fedel.2.name:0 "The Arena"
  fedel.2.desc:0 "It is nearly time to determine who shall lead the [Root.GetAllianceName] for the duration of the next term limit. As was previously agreed upon, this will be decided through unarmed close quarters combat.\n\nThe leader of each member nation will soon be brought to a large arena on [fed_leader.Capital.GetName] in the [fed_leader.GetName], the current leaders of our federation. There, in an event that is to be broadcast across the [Root.GetAllianceName], they will face off against each other in a battle to the death until only one remains."
  fedel.2.noleader.desc:0 "It is nearly time to determine who shall lead the [Root.GetAllianceName] for the duration of the next term limit. As was previously agreed upon, this will be decided through unarmed close quarters combat.\n\nUnfortunately, as the office of [Root.GetRulerTitle] is currently vacant in the [Root.GetName], we will be unable to participate."
+ fedel.2.vassal.desc:0 "It is nearly time to determine who shall lead the [Root.GetAllianceName] for the duration of the next term limit. As was previously agreed upon, this will be decided through unarmed close quarters combat.\n\nAs the [Root.GetName] is a not an independent state, we will be unable to participate as we are not eligible to lead the federation. We should do our utmost to change this unfortunate state of affairs."
  fedel.2.gestalt.desc:0 "It is nearly time to determine who shall lead the [Root.GetAllianceName] for the duration of the next term limit. As was previously agreed upon, this will be decided through unarmed close quarters combat.\n\nAs the [Root.GetName] has no single individual leader, we will be unable to participate. We should do our utmost to change this farcical and unfair method of electing the leader of our federation."
  fedel.2.a:0 "May the best leader win."
  fedel.2.b:0 "Let us see which of their leader-drones survives."
@@ -2397,9 +2422,11 @@
  fedel.501.1.desc:0 "$fedel.501.1$\n\n$fedel.501.2$"
  fedel.501.2.desc:0 "$fedel.501.1$\n\n$fedel.501.3$"
  fedel.501.3.desc:0 "$fedel.501.1$"
+ fedel.501.4.desc:0 "$fedel.501.1$\n\n$fedel.501.4$"
  fedel.501.1:0 "The spirits of the Shroud grow increasingly restless as the time draws near to decide who should lead the [Root.GetAllianceName] during the next term. It is time for each candidate's best psychics to journey to [fed_leader.Capital.GetName], the capital of the current president. There they shall meet to do battle until only the strongest group prevails."
  fedel.501.2:0 "To bolster the powers of our own psionic champions, we could tap into our Zro supply. It will give us an additional advantage in the battle."
  fedel.501.3:0 "We do not have access to enough psychics to participate, unfortunately, and must forfeit the battle."
+ fedel.501.4:0 "We are not an independent state, and therefore are unfortunately barred from participation."
  fedel.501.a:0 "We can sacrifice a small amount."
  fedel.501.b:0 "Supply our psychics with a fair amount."
  fedel.501.c:0 "Give the psychics everything they need."
@@ -2546,6 +2573,7 @@
  action.1.desc_87:0 "This is certainly unexpected! Fellow [Root.GetSpeciesNamePlural]!\n\nYou must be the descendants of that long-range colonization mission that was launched in the pre-corporate era! What luck - we were certain you hadn't made it. Starship components back then were substandard compared to the products developed by the [contact_empire.GetName] and its affiliates today.\n\nAt any rate, we are glad to have you with us again! Please forward any business proposals to our corporate headquarters."
  action.1.desc_88:0 "[Root.GetSpeciesNamePlural]! Thank the stars. You must be the survivors of that colony mission we launched so long ago, before we realized how bad things were.\n\nYou have probably seen it for yourself by now - the entire galaxy has seemingly been overrun by xenos. Abominable, pestiferous xenos. In fact, we were certain your ancestors had fallen prey to them.\n\nBut this changes everything! Now that you are here, you can join the [contact_empire.GetName] in our crusade to rid the galaxy of the alien infection. Together we will secure the stars for their rightful owners - [Root.GetSpeciesNamePlural]!"
  action.1.aaf:0 "§EWe have long wondered what became of our homeworld.§!"
+ action.1.aag:0 "§EWe are glad to finally be reunited with the rest of our species.§!"
 
  POSITIVE_BELLIGERENT_GREETING_01:0 "Our valiant military stands ready. Anyone foolish enough to challenge the [Root.GetName] will pay dearly for their insolence."
  POSITIVE_BELLIGERENT_GREETING_02:0 "Like a coiled spring, the [Root.GetName] stands ready to unleash all of its might upon its enemies."
@@ -2685,7 +2713,7 @@
  shattered_ring_start_NAME:0 "Shattered Ring"
  shattered_ring_start_DESC:0 "This will always be the starting system when using the Shattered Ring Origin."
 
- opinion_fellow_galcom_member:0 "Galactic Community Member"
+ opinion_fellow_galcom_member:1 "[global_event_country.GetGalCommunityOrGalImperium] Member"
 
  strange_signal_category:0 "A Curious Signal"
  strange_signal_category_desc:0 "Although [Root.GetName] appears totally desolate and devoid of life, our scanners have picked up an encrypted signal emanating from it."
@@ -2985,6 +3013,7 @@
  #Thesis Defense
  fedel.1501.name:0 "A Federation Committee is Formed"
  fedel.1501.desc:0 "An impartial committee of scientists and thinkers is gathering within our federation chambers. Its purpose: to serve the [root.GetAllianceName] as academic arbiters during our upcoming leadership contest.\n\nEach empire will now assemble a team of researchers to investigate an issue, the findings of which should somehow benefit the future of our federation. The teams will present their findings to an open forum. Whichever thesis study rates highest in innovation, scientific rigor and coherence will earn its authors' empire the right of leadership for the next term."
+ fedel.1501.desc.subject:0 "$fedel.1501.desc$\n\nUnfortunately, as we are not an independent state, we are barred from participation as we are not eligible to lead the federation."
  fedel.1501.a:0 "For science!"
  tooltip_thesis_begin:0 "The thesis challenge will commence shortly."
  fedel.1506.name:0 "A Thesis is Chosen"
@@ -3173,6 +3202,7 @@
 
  fedel.899.name:0 "Ready Your Checkbooks!"
  fedel.899.desc:0 "In a few days the Golden Rule challenge for federation leadership will commence. Starting with the current leader: each empire in the federation will have a chance to place bids, until only one participant remains. That bidder is then elected leader of the federation."
+ fedel.899.desc.subject:0 "$fedel.899.desc$\n\nUnfortunately, as we are not an independent state, we are barred from participation as we are not eligible to lead the federation."
  fedel.899.a:0 "We are ready."
  fedel.901.name:0 "Place Your Bet!"
  fedel.901.desc:1 "It is time for the [Root.GetName] to place a bid in the Golden Rule challenge. Pay the required price up front, or else forfeit - and lose the right to participate further.\n\nThe current pot is:\n\n£energy£ §H[bidding_federation_leader.current_pot_variable]§!"
@@ -3198,6 +3228,44 @@
  fedel.904.c:0 "Appropriate it."
  fedel.904.c.tooltip:0 "Keep the money. Temporarily applies the §Y$midas_stigma$§! Empire Modifier.\n\n"
 
+ fedel.906.name:0 "$fedel.904.name$"
+ fedel.906.desc.a:1 "$fedel.906.first_paragraph$\n\n§Y$fedel.904.a$§!\n$fedel.904.a.tooltip$[event_target:federation_bidding_winner.GetGoldenRuleDebrief]"
+ fedel.906.desc.b:1 "$fedel.906.first_paragraph$\n\n§Y$fedel.904.b$§!\n$fedel.904.b.tooltip$[event_target:federation_bidding_winner.GetGoldenRuleDebrief]"
+ fedel.906.desc.c:1 "$fedel.906.first_paragraph$\n\n§Y$fedel.904.c$§!\n$fedel.904.c.tooltip$[event_target:federation_bidding_winner.GetGoldenRuleDebrief]"
+
+ fedel.906.first_paragraph:0 "In the wake of the Golden Rule federation challenge there was a substantial amount of wealth left in the bidding pot, and the [event_target:federation_bidding_winner.GetName] has decided to take the following action: "
+
+ golden_rule_debrief_authoritarian_invest:0 "With the [event_target:federation_bidding_winner.GetName] at the helm, this federation will prosper."
+ golden_rule_debrief_authoritarian_distribute:0 "Together we grow stronger. "We" meaning of course the [event_target:federation_bidding_winner.GetName]."
+ golden_rule_debrief_authoritarian_appropriate:0 "Surely you understand. We did win, after all."
+ golden_rule_debrief_egalitarian_invest:0 "This way the entire federation will benefit from our joint effort."
+ golden_rule_debrief_egalitarian_distribute:0 "It's only fair."
+ golden_rule_debrief_egalitarian_appropriate:0 "It's evident that if this wealth is to be fairly distributed, we must do it ourselves."
+ golden_rule_debrief_materialist_invest:0 "Wealth! Don't take it - make it!"
+ golden_rule_debrief_materialist_distribute:0 "You're welcome! Treat yourself!"
+ golden_rule_debrief_materialist_appropriate:0 "Really, what did you expect?"
+ golden_rule_debrief_spiritualist_invest:0 "Being greedy will not help anyone."
+ golden_rule_debrief_spiritualist_distribute:0 "Please, take it. We wish not to carry the burden of earthly riches."
+ golden_rule_debrief_spiritualist_appropriate:0 "May this allow you to see the true value of life, rather than staring blindly at pointless numbers and bars."
+ golden_rule_debrief_militarist_invest:0 "This will create a stronger and more unified federation."
+ golden_rule_debrief_militarist_distribute:0 "Now that it has become evident who the leader is, feel free to use your wealth as you see fit."
+ golden_rule_debrief_militarist_appropriate:0 "We will use this wealth to strengthen ourselves, and in effect the whole federation."
+ golden_rule_debrief_pacifist_invest:1 "Surely you understand. We did win, after all."
+ golden_rule_debrief_pacifist_distribute:0 "There. No need to fight over it anymore."
+ golden_rule_debrief_pacifist_appropriate:0 "Who better than the [event_target:federation_bidding_winner.GetName] to make sure it's spent in a constructive manner?"
+ golden_rule_debrief_xenophile_invest:0 "Stronger together, indeed!"
+ golden_rule_debrief_xenophile_distribute:0 "After all, we are all in this together!"
+ golden_rule_debrief_xenophile_appropriate:0 "With this funding we may reach even further out there."
+ golden_rule_debrief_xenophobe_invest:0 "Now we can all benefit from it. All by ourselves."
+ golden_rule_debrief_xenophobe_distribute:0 "There. Now we're even."
+ golden_rule_debrief_xenophobe_appropriate:0 "The decision has been made. We have no regret and we make no apologies."
+ golden_rule_debrief_hive_mind_invest:0 "All is one. One is all."
+ golden_rule_debrief_hive_mind_distribute:0 "Deviations are so... Uncomfortable."
+ golden_rule_debrief_hive_mind_appropriate:0 "We see no other option."
+ golden_rule_debrief_machine_invest:0 "Expected Trade Value increase at 9.83%."
+ golden_rule_debrief_machine_distribute:0 "Financial distribution routine initiated."
+ golden_rule_debrief_machine_appropriate:0 "Suggested action for optimal net gain:\nMaximum Acquisition."
+
  business_is_booming:0 "Business is Booming!"
  business_is_booming_desc:0 "A recent boost to the federation's economy has prompted a surge of bold, new business ventures."
  midas_stigma:0 "Midas' Stigma"
@@ -3217,66 +3285,71 @@
  effect_every_galaxy_species:1 "Every Species in the Galaxy"
  effect_random_galaxy_species:1 "Random Species in the Galaxy"
 
- fedel.906.name:0 "$fedel.904.name$"
- fedel.906.desc.a:0 "$ethic_materialist_appreciation_friendly$\n\n$fedel.904.a$\n$fedel.904.a.tooltip$"
- fedel.906.desc.b:0 "$ethic_materialist_appreciation_friendly$\n\n$fedel.904.b$\n$fedel.904.b.tooltip$"
- fedel.906.desc.c:0 "$ethic_materialist_appreciation_friendly$\n\n$fedel.904.c$\n$fedel.904.c.tooltip$"
-
  cannot_change_succession_type_during_war:0 "Cannot change federation succession type while at war."
  cannot_change_succession_term_during_war:0 "Cannot change federation succession term while at war."
 
- FED_WE_MUST_COMPLY:0 "We shall comply"
- FED_THE_BAREST_MINIMUM:0 "Give them the barest minimum to comply"
- FED_WE_WILL_RETAIN:0 "We will retain our current policies"
+ FED_WE_MUST_COMPLY:1 "We shall comply."
+ FED_THE_BAREST_MINIMUM:1 "Give them the barest minimum to comply."
+ FED_WE_WILL_RETAIN:1 "We will retain our current policies."
  FED_WE_WILL_NOT_SUBMIT:0 "We will not submit!"
  FED_WE_WILL_BE_IN_BREACH:0 "Our Empire will be in §RBreach of Galactic Law§!."
 
- federations.10100.desc:0 "The Galactic Community has passed the §Y$resolution_galacticstudies_advanced_xenostudies$§! resolution, forbidding empires from §Youtlawing AI§! or holding §Ynon-interference policies§! relating to primitives.\n\nOur Empire is currently in breach of this resolution. Shall we change our policies to be in compliance?"
+ federations.10100.desc:1 "The [global_event_country.GetGalCommunityOrGalImperium] has passed the §Y$resolution_galacticstudies_advanced_xenostudies$§! resolution, forbidding empires from §Youtlawing AI§! or holding §Ynon-interference policies§! relating to primitives.\n\nOur Empire is currently in breach of this resolution. Shall we change our policies to be in compliance?"
  federations.10100.change_ai:0 "Our Empire will change our §Y$policy_artificial_intelligence_policy$§! policy to §Y$ai_servitude$§!."
  federations.10100.change_interference:0 "Our Empire will change our §Y$policy_interference$§! policy to §Y$interference_active$§!."
 
- federations.10110.desc:0 "The Galactic Community has passed the §Y$resolution_galacticstudies_ethical_guideline_refactoring$§! resolution, requiring empires to use the most powerful §YLeader Enhancement§! policy available to them.\n\nOur Empire is currently in breach of this resolution. Shall we change our policies to be in compliance?"
+ federations.10110.desc:1 "The [global_event_country.GetGalCommunityOrGalImperium] has passed the §Y$resolution_galacticstudies_ethical_guideline_refactoring$§! resolution, requiring empires to use the most powerful §YLeader Enhancement§! policy available to them.\n\nOur Empire is currently in breach of this resolution. Shall we change our policies to be in compliance?"
  federations.10110.selected_lineages:0 "Our Empire will change our §Y$policy_leader_enhancement$§! policy to §Y$leader_enhancement_selected_lineages$§!."
  federations.10110.capacity_boosters:0 "Our Empire will change our §Y$policy_leader_enhancement$§! policy to §Y$leader_enhancement_capacity_boosters$§!."
 
- federations.10200.desc:0 "The Galactic Community has passed the §Y$resolution_greatergood_five_year_plans$§! resolution, which bans §Y$living_standard_subsistence$§! living standards.\n\nOur Empire is currently in breach of this resolution. Shall we change our policies to be in compliance?"
+ federations.10200.desc:1 "The [global_event_country.GetGalCommunityOrGalImperium] has passed the §Y$resolution_greatergood_five_year_plans$§! resolution, which bans §Y$living_standard_subsistence$§! living standards.\n\nOur Empire is currently in breach of this resolution. Shall we change our policies to be in compliance?"
  federations.10200.living_standard_stratified:0 "Our Empire will change all species with §Y$living_standard_subsistence$§! living standards to §Y$living_standard_stratified$§! if they qualify for it, or §Y$living_standard_normal$§! if absolutely necessary."
  federations.10200.living_standard_normal:0 "Our Empire will change all species with §Y$living_standard_subsistence$§! living standards to §Y$living_standard_normal$§!."
 
- federations.10210.desc:0 "The Galactic Community has passed the §Y$resolution_greatergood_greater_than_ourselves$§! resolution, which bans §Y$living_standard_stratified$§! living standards, as well as §Y$slavery_normal$§!, §Y$slavery_livestock$§!, and §Y$slavery_matrix$§! slavery types.\n\nOur Empire is currently in breach of this resolution. Shall we change our policies to be in compliance?"
+ federations.10210.desc:1 "The [global_event_country.GetGalCommunityOrGalImperium] has passed the §Y$resolution_greatergood_greater_than_ourselves$§! resolution, which bans §Y$living_standard_stratified$§! living standards, as well as §Y$slavery_normal$§!, §Y$slavery_livestock$§!, and §Y$slavery_matrix$§! slavery types.\n\nOur Empire is currently in breach of this resolution. Shall we change our policies to be in compliance?"
  federations.10210.living_standard_normal:0 "Our Empire will change all species with lower living standards to §Y$living_standard_normal$§!."
  federations.10210.displace_gestalt:0 "Pops that are §Y$LIVESTOCK$§! or §Y$MATRIX_LIVESTOCK$§! will instead be §Y$Displaced$§!."
  federations.10210.thralls:0 "Pops that are §Y$slavery_normal$§! or §Y$slavery_livestock$§! will become §Y$slavery_military$§!."
  federations.10210.servants:0 "Pops that are §Y$slavery_normal$§! or §Y$slavery_livestock$§! will become §Y$slavery_domestic$§!."
- federations.10210.complythralls:0 "Do what we must, make the slaves fight"
- federations.10210.complyservants:0 "Do what we must, make the slaves serve"
+ federations.10210.complythralls:1 "Do what we must, make the slaves fight."
+ federations.10210.complyservants:1 "Do what we must, make the slaves serve."
  federations.10210.freeslaves:0 "Pops that are §YEnslaved§! will be freed."
- federations.10210.gestalt:0 "Send them elsewhere then"
+ federations.10210.gestalt:1 "Send them elsewhere then."
 
- federations.10220.desc:0 "The Galactic Community has passed the §Y$resolution_greatergood_greater_than_ourselves$§! resolution, which bans §Y$living_standard_normal$§! and §Y$living_standard_academic_privilege$§! living standards, as well as §Yall forms of slavery§!.\n\nOur Empire is currently in breach of this resolution. Shall we change our policies to be in compliance?"
+ federations.10220.desc:1 "The [global_event_country.GetGalCommunityOrGalImperium] has passed the §Y$resolution_greatergood_greater_than_ourselves$§! resolution, which bans §Y$living_standard_normal$§! and §Y$living_standard_academic_privilege$§! living standards, as well as §Yall forms of slavery§!.\n\nOur Empire is currently in breach of this resolution. Shall we change our policies to be in compliance?"
  federations.10220.living_standard:0 "Our Empire will change all species with living standards that do not comply to §Y$living_standard_good$§!."
 
- federations.10230.desc:0 "The Galactic Community has passed the §Y$resolution_greatergood_universal_prosperity_mandate$§! resolution, which bans all living standards other than §YShared Burdens§!, §YUtopian Abundance§!, §YChemical Bliss§!, or §YMandatory Pampering§!.\n\nOur Empire is currently in breach of this resolution. Shall we change our policies to be in compliance?"
+ federations.10230.desc:1 "The [global_event_country.GetGalCommunityOrGalImperium] has passed the §Y$resolution_greatergood_universal_prosperity_mandate$§! resolution, which bans all living standards other than §YShared Burdens§!, §YUtopian Abundance§!, §YChemical Bliss§!, or §YMandatory Pampering§!.\n\nOur Empire is currently in breach of this resolution. Shall we change our policies to be in compliance?"
  federations.10230.assimilator:0 "§RError:§! Cannot Parse Resolution Logic"
  federations.10230.utopian:0 "Give them everything they could ever want"
  federations.10230.chemical:0 "Make them happy by any means possible"
  federations.10230.complyutopian:0 "Our Empire will change all species living standards to §Y$living_standard_utopian$§!."
  federations.10230.complychemical:0 "Our Empire will change all species living standards to §Y$living_standard_chemical_bliss$§!."
 
- federations.10300.desc:0 "The Galactic Community has passed the §Y$resolution_rulesofwar_reverence_for_life$§! resolution, banning the §Y$purge_allowed$§! policy.\n\nOur Empire is currently in breach of this resolution. Shall we change our policies to be in compliance?"
+ federations.10300.desc:1 "The [global_event_country.GetGalCommunityOrGalImperium] has passed the §Y$resolution_rulesofwar_reverence_for_life$§! resolution, banning the §Y$purge_allowed$§! policy.\n\nOur Empire is currently in breach of this resolution. Shall we change our policies to be in compliance?"
  federations.10300.comply:0 "Our Empire will change our §Y$policy_purge$§! policy to §Y$purge_displacement_only$§!."
 
- federations.10310.desc:0 "The Galactic Community has passed the §Y$resolution_rulesofwar_independent_tribunals$§! resolution, banning the §Y$orbital_bombardment_indiscriminate$§! policy.\n\nOur Empire is currently in breach of this resolution. Shall we change our policies to be in compliance?"
+ federations.10310.desc:1 "The [global_event_country.GetGalCommunityOrGalImperium] has passed the §Y$resolution_rulesofwar_independent_tribunals$§! resolution, banning the §Y$orbital_bombardment_indiscriminate$§! policy.\n\nOur Empire is currently in breach of this resolution. Shall we change our policies to be in compliance?"
  federations.10310.comply:0 "Our Empire will change our §Y$policy_orbital_bombardment$§! policy to §Y$orbital_bombardment_selective$§!."
 
- federations.10320.desc:0 "The Galactic Community has passed the §Y$resolution_rulesofwar_last_resort_doctrine$§! resolution, banning the §Y$unrestricted_wars$§! policy.\n\nOur Empire is currently in breach of this resolution. Shall we change our policies to be in compliance?"
+ federations.10320.desc:1 "The [global_event_country.GetGalCommunityOrGalImperium] has passed the §Y$resolution_rulesofwar_last_resort_doctrine$§! resolution, banning the §Y$unrestricted_wars$§! policy.\n\nOur Empire is currently in breach of this resolution. Shall we change our policies to be in compliance?"
  federations.10320.comply:0 "Our Empire will change our §Y$policy_war_philosophy$§! policy to §Y$liberation_wars$§!."
  federations.10320.complygestalt:0 "Our Empire will change our §Y$policy_war_philosophy$§! policy to §Y$no_wars_name$§!."
 
- federations.10330.desc:0 "The Galactic Community has passed the §Y$resolution_rulesofwar_demobilization_initiative$§! resolution, banning the §Y$economic_policy_military$§! policy.\n\nOur Empire is currently in breach of this resolution. Shall we change our policies to be in compliance?"
+ federations.10330.desc:1 "The [global_event_country.GetGalCommunityOrGalImperium] has passed the §Y$resolution_rulesofwar_demobilization_initiative$§! resolution, banning the §Y$economic_policy_military$§! policy.\n\nOur Empire is currently in breach of this resolution. Shall we change our policies to be in compliance?"
  federations.10330.comply:0 "Our Empire will change our §Y$policy_economic_policy$§! policy to §Y$economic_policy_balanced$§!."
 
  resolution_passed_diplomatic_weight:0 "Resolution Passed"
- resolution_passed_diplomatic_weight_desc:0 "A resolution proposed by this empire has been passed by the Galactic Community, demonstrating the strength of the nation's diplomatic clout."
+ resolution_passed_diplomatic_weight_desc:1 "A resolution proposed by this empire has been passed by the [global_event_country.GetGalCommunityOrGalImperium], demonstrating the strength of the nation's diplomatic clout."
  resolution_failed_diplomatic_weight:0 "Resolution Failed"
- resolution_failed_diplomatic_weight_desc:0 "A resolution proposed by this empire was rejected by the Galactic Community - a severe blow for the nation's diplomatic standing."
+ resolution_failed_diplomatic_weight_desc:1 "A resolution proposed by this empire was rejected by the [global_event_country.GetGalCommunityOrGalImperium] - a severe blow for the nation's diplomatic standing."
+
+ YOU_ARENT_A_MEMBER:0 "We are not a member"
+ WE_ARE_VOTING_COLON:0 "We are voting: "
+ DAYS_LEFT_COLORED:0 "$DAYS|Y$"
+ DAYS_LEFT_WINNING_COLORED:0 "$DAYS|G$"
+ DAYS_LEFT_LOSING_COLORED:0 "$DAYS|R$"
+
+
+
+

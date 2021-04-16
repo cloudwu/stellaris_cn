@@ -1,8 +1,8 @@
 local en_path = "../en/localisation/english/"
 local cn_path = "../cn/localisation/english/"
-local new_path = "../en2.8/localisation/english/"
+local new_path = "../en3.0/localisation/english/"
 local diff_path = "../diff/"
-local cn2_path = "../cn2.8/"
+local cn2_path = "../cn3.0/"
 
 local function readfile(filename)
 	local f = io.open(filename, "rb")
@@ -132,6 +132,14 @@ local function readcn()
 "musicplayer_l_simp_chinese.yml",
 "name_lists_l_simp_chinese.yml",
 "necroids_l_simp_chinese.yml",
+"nemesis_content_l_simp_chinese.yml",
+"nemesis_crisis_l_simp_chinese.yml",
+"nemesis_custodian_l_simp_chinese.yml",
+"nemesis_douglas_l_simp_chinese.yml",
+"nemesis_espionage_l_simp_chinese.yml",
+"nemesis_gemma_l_simp_chinese.yml",
+"nemesis_intel_l_simp_chinese.yml",
+"nemesis_intel_pierre_l_simp_chinese.yml",
 "new_scripted_loc_l_simp_chinese.yml",
 "observer_events_l_simp_chinese.yml",
 "observer_l_simp_chinese.yml",
@@ -143,6 +151,7 @@ local function readcn()
 "projects_5_l_simp_chinese.yml",
 "projects_l_simp_chinese.yml",
 "scripted_loc_l_simp_chinese.yml",
+"ship_browser_l_simp_chinese.yml",
 "ship_sections_l_simp_chinese.yml",
 "social_gui_l_simp_chinese.yml",
 "standalone_l_simp_chinese.yml",
@@ -158,6 +167,7 @@ local function readcn()
 "utopia_maximilian_l_simp_chinese.yml",
 "utopia_megastructures_l_simp_chinese.yml",
 "utopia_miranda_l_simp_chinese.yml",
+"void_dweller_traditions_l_simp_chinese.yml",
 	}
 	local dict = {}
 	for _, file in ipairs(cn2_list) do
@@ -205,6 +215,11 @@ local list = {
 "musicplayer_l_english.yml",
 "name_lists_l_english.yml",
 "necroids_l_english.yml",
+"nemesis_content_l_english.yml",
+"nemesis_crisis_l_english.yml",
+"nemesis_custodian_l_english.yml",
+"nemesis_espionage_l_english.yml",
+"nemesis_intel_l_english.yml",
 "new_scripted_loc_l_english.yml",
 "observer_events_l_english.yml",
 "observer_l_english.yml",
@@ -216,6 +231,7 @@ local list = {
 "projects_5_l_english.yml",
 "projects_l_english.yml",
 "scripted_loc_l_english.yml",
+"ship_browser_l_english.yml",
 "ship_sections_l_english.yml",
 "social_gui_l_english.yml",
 "standalone_l_english.yml",
@@ -228,6 +244,7 @@ local list = {
 "utopia_ascension_l_english.yml",
 "utopia_l_english.yml",
 "utopia_megastructures_l_english.yml",
+"void_dweller_traditions_l_english.yml",
 }
 
 local cn2 = readcn()

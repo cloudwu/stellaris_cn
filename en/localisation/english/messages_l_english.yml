@@ -28,7 +28,7 @@
  MESSAGE_FLEET_ORDER_FINISH_MESSAGE_TYPE_TITLE:0 "Fleet Order Finished"
  MESSAGE_SYSTEM_SURVEYED_TITLE:0 "System surveyed"
  AUTO_EXPLORE_CANCELED_MESSAGE_TYPE_TITLE:0 "Fleet Order Canceled"
- MESSAGE_FLEET_ORDER_AUTO_EXPLORE_CANCELED:0 "§H$FLEET$§! canceled its Auto Exploration order. It cannot reach or find any other unsurveyed systems."
+ MESSAGE_FLEET_ORDER_AUTO_EXPLORE_CANCELED:1 "§H$FLEET$§! canceled its Auto Surveying order. It cannot reach or find any other unsurveyed systems."
  FLEET_BUILD_ORDER_CANCELED_MESSAGE_TYPE_TITLE:0 "$AUTO_EXPLORE_CANCELED_MESSAGE_TYPE_TITLE$"
  MESSAGE_FLEET_BUILD_ORDER_CANCELED_MESSAGE:0 "$FLEET|H$ was unable to build a $STATION|H$ in $SYSTEM|H$. Resources have been refunded."
  MESSAGE_BYPASS_EXPLORED:0 "Wormhole Explored"
@@ -106,6 +106,8 @@
  ACTION_FORM_COMMERCIAL_PACT_PROPOSAL_FAILED_RECIPIENT:0 "The offer to form a Commercial Pact with §H[Actor.GetName]§! timed out and was auto-declined."
  ACTION_FORM_RESEARCH_AGREEMENT_PROPOSAL_FAILED_ACTOR:0 "Our offer to form a Research Agreement with §H[Recipient.GetName]§! timed out and was auto-declined."
  ACTION_FORM_RESEARCH_AGREEMENT_PROPOSAL_FAILED_RECIPIENT:0 "The offer to form a Research Agreement with §H[Actor.GetName]§! timed out and was auto-declined."
+ ACTION_GUARANTEE_INDEPENDENCE_PROPOSAL_FAILED_ACTOR:0 "Our offer to guarantee the independence of §H[Recipient.GetName]§! was declined."
+ ACTION_GUARANTEE_INDEPENDENCE_PROPOSAL_FAILED_RECIPIENT:0 "The offer by §H[Actor.GetName]§! to guarantee our independence timed out and was auto-declined."
  ACTION_FORM_MIGRATION_PACT_PROPOSAL_FAILED_ACTOR:1 "Our offer to form a Migration Treaty with §H[Recipient.GetName]§! timed out and was auto-declined."
  ACTION_FORM_MIGRATION_PACT_PROPOSAL_FAILED_RECIPIENT:1 "The offer to form a Migration Treaty from §H[Actor.GetName]§! timed out and was auto-declined."
  ACTION_INVITE_TO_ALLIANCE_PROPOSAL_FAILED_ACTOR:0 "Our invitation to §H[Recipient.GetName]§! to join the alliance was declined."
@@ -161,11 +163,11 @@
  ACTION_ASK_TO_BECOME_RELEASED_VASSAL_PROPOSAL_FAILED_RECIPIENT:1 "The request to be released from §H[Actor.GetName]§! timed out and was auto-declined."
  ACTION_OFFER_TRADE_DEAL_PROPOSAL_FAILED_ACTOR:0 "Our trade deal offer to §H[Recipient.GetName]§! was declined."
  ACTION_OFFER_TRADE_DEAL_PROPOSAL_FAILED_RECIPIENT:1 "The trade deal offer from §H[Actor.GetName]§! timed out and was auto-declined."
- 
+
  MESSAGE_MAKE_RIVAL_TITLE:0 "$RIVALRY$"
  MESSAGE_RECALL_EMBASSY_TITLE:0 "Embassy Recalled"
  MESSAGE_END_RIVALRY_TITLE:0 "$RIVALRY$ Ended"
- MESSAGE_EMBASSY_TITLE:0 "Embassy Established"
+ MESSAGE_EMBASSY_TITLE:1 "Establish Embassy"
  MESSAGE_DECLARE_WAR_TITLE:0 "War Declaration"
  MESSAGE_OFFER_PEACE_TITLE:0 "Peace Offer"
  MESSAGE_INVITE_TO_ALLIANCE_TITLE:0 "Alliance Invitation"
@@ -222,7 +224,7 @@
  MESSAGE_BREAK_SUPPORT_TITLE:0 "Support Revoked"
  MESSAGE_OPEN_BORDERS_TITLE:0 "Borders Opened"
  MESSAGE_CLOSE_BORDERS_TITLE:0 "Borders Closed"
- 
+
  ACTION_MAKE_RIVAL_NOTIFICATION:1 "§H[From.GetName]§! has declared §H[Root.GetName]§! their §H$RIVAL$§!.\n\nThis will significantly worsen their diplomatic relations."
  ACTION_END_RIVALRY_NOTIFICATION:2 "§H[From.GetName]§! has ended their $RIVALRY$ with §H[Root.GetName]§!.\n\nThey may be on the path towards reconciliation."
  ACTION_EMBASSY_NOTIFICATION:1 "§H[From.GetName]§! has sent an embassy to §H[Root.GetName]§!.\n\nThis will improve their relations over time."
@@ -250,6 +252,7 @@
  ACTION_FORM_FEDERATION_NOTIFICATION:2 "§H[From.GetAllianceName]§! voted to a form a $FEDERATION$.\n\nThey have chosen to go into the galaxy together as one."
  ACTION_INVITE_TO_FEDERATION_NOTIFICATION:2 "§H[Root.GetName]§! joined the §H[From.GetAllianceName]§!.\n\nThey will now stand unified against their enemies."
  ACTION_ASK_TO_JOIN_FEDERATION_NOTIFICATION:2 "§H[From.GetName]§! joined the §H[Root.GetAllianceName]§!.\n\nThey will now stand unified against their enemies."
+ ACTION_ASK_TO_LEAVE_FEDERATION_NOTIFICATION:0 "$ACTION_LEAVE_FEDERATION_NOTIFICATION$"
  ACTION_LEAVE_FEDERATION_NOTIFICATION:2 "§H[From.GetName]§! left the §H[Root.GetAllianceName]§!.\n\nThis may represent opportunity for us..."
  ACTION_KICK_FROM_FEDERATION_NOTIFICATION:1 "The §H[From.GetAllianceName]§! voted to kick §H[Root.GetName]§! from the Federation."
  ACTION_ASK_TO_BE_RELEASED_SUBJECT_NOTIFICATION:2 "§H[Root.GetName]§! gave independence to §H[From.GetName]§!.\n\nIt seems they were too weak to maintain control of their subject."
@@ -273,7 +276,7 @@
  ACTION_BREAK_SUPPORT_NOTIFICATION:1 "§H[From.GetName]§! stopped supporting the independence of §H[Root.GetName]§!.\n\nIt seems [Root.GetName] is destined to remain a subject."
  ACTION_OPEN_BORDERS_NOTIFICATION:1 "§H[From.GetName]§! opened their borders to the fleets of §H[Root.GetName]§!.\n\nThis will improve their diplomatic relations."
  ACTION_CLOSE_BORDERS_NOTIFICATION:1 "§H[From.GetName]§! closed their borders to the fleets of §H[Root.GetName]§!.\n\nThis will worsen their diplomatic relations."
- 
+
  MESSAGE_OFFER_FEDERATION_ASSOCIATION_TITLE:0 "Federation Association Offer"
  ACTION_OFFER_FEDERATION_ASSOCIATION_NOTIFICATION:2 "§H[Root.GetName]§! was given Association Status by the §H[From.GetAllianceName]§!.\n\nIt seems they desire closer relations."
  MESSAGE_ASK_FOR_FEDERATION_ASSOCIATION_TITLE:0 "Federation Association Request"
@@ -283,8 +286,8 @@
  MESSAGE_END_FEDERATION_ASSOCIATION_TITLE:0 "Federation Association Ended"
  ACTION_END_FEDERATION_ASSOCIATION_NOTIFICATION:2 "§H[From.GetName]§! decided to end their Association Status with the §H[Root.GetAllianceName]§!.\n\nIs this a sign of hostilities to come?"
  DIPLO_ACTION_END_FEDERATION_ASSOCIATION_DESC:0 "§H$COUNTRY$§! decided to end their Association Status with the §H$ALLIANCE$§!.\n\nIs this a sign of hostilities to come?"
-   
- 
+
+
  MESSAGE_DIPLOMACY_TITLE:0 "Diplomacy"
 
  ACTION_FORM_FEDERATION_PROPOSAL_FAILED_RECIPIENT:0 "$ACTION_INVITE_TO_ALLIANCE_PROPOSAL_FAILED_RECIPIENT$"
@@ -329,7 +332,7 @@
  MESSAGE_ENEMY_VASSAL_ENTER_WAR_DESC:1 "$ENEMY|Y$, the subject of one of our enemies has entered the war against us."
  MESSAGE_ENEMY_LEAVES_WAR:0 "Enemy Leaves War"
  MESSAGE_ENEMY_LEAVES_WAR_DESC:2 "$ENEMY|Y$ has left the war due to being vassalized or annexed by $OVERLORD|Y$."
- 
+
  ####################################
  # Fleet Detected
  ####################################
@@ -354,8 +357,8 @@
  COUNTRY_LEADER_DEATH:0 "Our $CLASS|Y$, $LEADER|Y$ has died!"
  HEIR_DEATH:0 "Our §Y$HEIR$§!, $HEIRNAME|Y$ has died!"
  RULER_ELECTED:0 "A new Ruler has been elected! $TITLE$ $LEADER|Y$ will rule until the next election, which will take place $TIME|Y$."
- RULER_ELECTED_UNTIL_DEATH:0 "$TITLE$ $LEADER|Y$! has been chosen as the new Ruler, and will reign until their death."
- RULER_ELECTED_HEIR:0 "As per the order of succession, $TITLE$ $LEADER|Y$! is the new Ruler."
+ RULER_ELECTED_UNTIL_DEATH:1 "$TITLE$ $LEADER|Y$ has been chosen as the new Ruler, and will reign until their death."
+ RULER_ELECTED_HEIR:1 "As per the order of succession, $TITLE$ $LEADER|Y$ is the new Ruler."
  MESSAGE_LEADER_DEATH_TITLE:0 "Leader Died"
  MESSAGE_RULER_ELECTED_TITLE:0 "Ruler Elected"
  MESSAGE_RULER_ELECTED_UNTIL_DEATH_TITLE:0 "Ruler Elected"
@@ -412,9 +415,9 @@
  ####################################
  # Revolt
  ####################################
- MESSAGE_REVOLT:0 "The population on planet $PLANET|Y$! are revolting!"
+ MESSAGE_REVOLT:1 "The population on planet $PLANET|Y$ is revolting!"
  MESSAGE_PLANET_REVOLT_TITLE:0 "Revolt!"
- 
+
  ####################################
  # Planet Destruction
  ####################################
@@ -497,7 +500,7 @@
  # Combat Stats
  ####################################
  MESSAGE_COMBAT_STATS_TITLE:0 "Fleet Combat Stats"
- 
+
  ####################################
  # Edicts
  ####################################
@@ -535,3 +538,9 @@
 #####################################
  MESSAGE_NEW_CLAIM_ON_SYSTEM_TITLE:1 "Foreign Empire Claims Our System"
  MESSAGE_NEW_CLAIM_ON_SYSTEM:1 "Though it rightfully belongs to us, the $COUNTRY|H$ has audaciously laid claim to the $SYSTEM|H$ system!"
+
+#####################################
+# Star Destroyed
+#####################################
+ MESSAGE_STAR_DESTROYED:0 "System Destroyed"
+ MESSAGE_STAR_DESTROYED_DESC:0 "A massive supernova triggered by $ADJ$ §RStar-Eater§! has destroyed $PLANET|Y$."

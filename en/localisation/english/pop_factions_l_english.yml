@@ -65,7 +65,7 @@
  SUPREMACIST_DOMINATION_DESC:0 "Declaring war against one or more xeno Empire(s) will please the [Root.GetName] for a time."
  SUPREMACIST_NO_DOMINATION:0 "$SUPREMACIST_DOMINATION$"
  SUPREMACIST_GENE_MOD:0 "Genetic Purity"
- SUPREMACIST_GENE_MOD_DESC:1 "Ensuring that all [Root.Owner.GetSpeciesPlural] Pops have the exact same genetic traits will please [Root.GetName]."
+ SUPREMACIST_GENE_MOD_DESC:2 "Ensuring that all [Root.Owner.GetSpeciesNamePlural] Pops have the exact same genetic traits will please [Root.GetName]."
  SUPREMACIST_IMPURE:0 "[Root.Owner.GetSpeciesAdj] Impurity"
  SUPREMACIST_NO_HARMONY:0 "Disharmony"
  SUPREMACIST_HARMONY:0 "$SUPREMACIST_NO_HARMONY$"
@@ -88,7 +88,10 @@
  SUPREMACIST_CELEBRATE_DIVERSITY:0 "Celebrating Weakness"
  SUPREMACIST_NO_CELEBRATE_DIVERSITY:0 "$SUPREMACIST_CELEBRATE_DIVERSITY$"
  SUPREMACIST_CELEBRATE_DIVERSITY_DESC:0 "Showcasing Minor Artifacts of inferior civilizations will displease the [Root.GetName] for a time."
- 
+ SUPREMACIST_AGGRESSIVE_FIRST_CONTACT_POLICY:0 "Aggressive First Contact Protocols"
+ SUPREMACIST_NO_AGGRESSIVE_FIRST_CONTACT_POLICY:0 "$SUPREMACIST_AGGRESSIVE_FIRST_CONTACT_POLICY$"
+ SUPREMACIST_NO_AGGRESSIVE_FIRST_CONTACT_POLICY_DESC:0 "The [Root.GetName] demand that we have the right to take all necessary measures against unknown threats we may encounter as we travel the stars."
+
  # XENOISTS
  XENOIST_PASSIVE_STUDY:0 "Indirect Xenology"
  XENOIST_PASSIVE_STUDY_DESC:0 "Legislating a Passive Study stance on Native Interference will please the [Root.GetName]."
@@ -138,6 +141,12 @@
  XENOIST_PROCLAIM_SUPREMACY:0 "Book Burner"
  XENOIST_NO_PROCLAIM_SUPREMACY:0 "$XENOIST_PROCLAIM_SUPREMACY$"
  XENOIST_PROCLAIM_SUPREMACY_DESC:0 "Destroying Minor Artifacts to rally xenophobes will displease the [Root.GetName] for a time."
+ XENOIST_PROACTIVE_FIRST_CONTACT_POLICY:0 "Proactive First Contact Protocols"
+ XENOIST_ADOPT_PROACTIVE_FIRST_CONTACT_POLICY:0 "$XENOIST_PROACTIVE_FIRST_CONTACT_POLICY$"
+ XENOIST_PROACTIVE_FIRST_CONTACT_POLICY_DESC:0 "Enshrining a peaceful and §Yproactive§! approach to establishing first contact into our law codes will please the [Root.GetName] in this age of exploration."
+ XENOIST_AGGRESSIVE_FIRST_CONTACT_POLICY:0 "Aggressive First Contact Protocols"
+ XENOIST_NO_AGGRESSIVE_FIRST_CONTACT_POLICY:0 "$XENOIST_AGGRESSIVE_FIRST_CONTACT_POLICY$"
+ XENOIST_AGGRESSIVE_FIRST_CONTACT_POLICY_DESC:0 "Failure to legislate against §Yaggression§! towards those we meet in our travels will displease the [Root.GetName] in this age of exploration."
 
  # IMPERIALISTS
  IMPERIALIST_PHILOSOPHY:0 "Aggressive Diplomacy"
@@ -220,6 +229,9 @@
  ISOLATIONIST_DEFENSIVE_STATIONS:0 "Deep-Space Defense"
  ISOLATIONIST_DEFENSIVE_STATIONS_DESC:0 "Maintaining at least §Y1§! Military Station in every colonized system will please the [Root.GetName]."
  ISOLATIONIST_FEW_DEFENSIVE_STATIONS:0 "$ISOLATIONIST_DEFENSIVE_STATIONS$"
+ ISOLATIONIST_REPEAL_PROACTIVE_FIRST_CONTACT_POLICY:0 "Proactive First Contact Protocols"
+ ISOLATIONIST_NO_PROACTIVE_FIRST_CONTACT_POLICY:0 "$ISOLATIONIST_REPEAL_PROACTIVE_FIRST_CONTACT_POLICY$"
+ ISOLATIONIST_REPEAL_PROACTIVE_FIRST_CONTACT_POLICY_DESC:0 "The [Root.GetName] do not consider it appropriate to broadcast information about ourselves across the stars to anyone who may be listening."
 
  # TRADITIONALISTS
  TRADITIONALIST_NO_ROBOTS:0 "Life Organic"
@@ -781,11 +793,11 @@
  faction.201.desc:0 "Their temples defaced, their gods have abandoned them."
 
  faction.202.title:0 "[parameter:heathens.GetName] Insulted"
- faction.202.desc:0 "As a consequence of an embarrassing lapse in security, the [Root.GetName] gained brief access to our diplomatic communication channels. They used this opportunity to condemn and insult the [parameter:heathens.GetName] for various heresies committed and moral failings inherent in their beliefs.\n\nThe incident did not go over well with the deeply religious [parameter:heathens.GetSpeciesPlural]."
+ faction.202.desc:1 "As a consequence of an embarrassing lapse in security, the [Root.GetName] gained brief access to our diplomatic communication channels. They used this opportunity to condemn and insult the [parameter:heathens.GetName] for various heresies committed and moral failings inherent in their beliefs.\n\nThe incident did not go over well with the deeply religious [parameter:heathens.GetSpeciesNamePlural]."
  faction.202.a:0 "How embarrassing."
  faction.202.a.tooltip:0 "§Y[parameter:enemy.GetName]§! adds the §YFaction Insult§! opinion modifier towards §Your Empire§!."
  faction.203.title:0 "Attempted Insult"
- faction.203.desc:0 "As a consequence of yet another, intensely embarrassing lapse in security, the [Root.GetName] gained brief access to our diplomatic communication channels. They used this opportunity to once again belittle the heathen beliefs of the [parameter:heathens.GetName].\n\nHowever, the [parameter:heathens.GetSpeciesPlural] were understandably not taken off-guard by this repeated incident, and appear to have shrugged it off."
+ faction.203.desc:1 "As a consequence of yet another, intensely embarrassing lapse in security, the [Root.GetName] gained brief access to our diplomatic communication channels. They used this opportunity to once again belittle the heathen beliefs of the [parameter:heathens.GetName].\n\nHowever, the [parameter:heathens.GetSpeciesNamePlural] were understandably not taken off-guard by this repeated incident, and appear to have shrugged it off."
  faction.203.a:0 "Sigh..."
 
  faction.204.title:0 "Religious Insurrection!"
@@ -822,11 +834,11 @@
  ### Liberation Faction
 
  faction.501.title:0 "[parameter:enemy.GetName] Insulted"
- faction.501.desc:0 "As a consequence of an embarrassing lapse in security, the [Root.GetName] gained brief access to our diplomatic communication channels. They used this opportunity to gravely insult the [parameter:enemy.GetName] and demand the immediate return of [parameter:planet.GetName].\n\nIt did not go over well with the [parameter:enemy.GetSpeciesPlural]."
+ faction.501.desc:1 "As a consequence of an embarrassing lapse in security, the [Root.GetName] gained brief access to our diplomatic communication channels. They used this opportunity to gravely insult the [parameter:enemy.GetName] and demand the immediate return of [parameter:planet.GetName].\n\nIt did not go over well with the [parameter:enemy.GetSpeciesNamePlural]."
  faction.501.a:0 "How embarrassing."
  faction.501.a.tooltip:0 "§Y[parameter:enemy.GetName]§! adds the §YFaction Insult§! opinion modifier towards §Your Empire§!."
  faction.502.title:0 "Attempted Insult"
- faction.502.desc:0 "As a consequence of yet another, intensely embarrassing lapse in security, the [Root.GetName] gained brief access to our diplomatic communication channels. They used this opportunity to once again gravely insult the [parameter:enemy.GetName] and demand the immediate return of [parameter:planet.GetName].\n\nHowever, the [parameter:enemy.GetSpeciesPlural] were understandably not taken off-guard by this repeated incident, and appear to have shrugged it off."
+ faction.502.desc:1 "As a consequence of yet another, intensely embarrassing lapse in security, the [Root.GetName] gained brief access to our diplomatic communication channels. They used this opportunity to once again gravely insult the [parameter:enemy.GetName] and demand the immediate return of [parameter:planet.GetName].\n\nHowever, the [parameter:enemy.GetSpeciesNamePlural] were understandably not taken off-guard by this repeated incident, and appear to have shrugged it off."
  faction.502.a:0 "Sigh..."
  faction.503.title:0 "Hawkish Rebels!"
  faction.503.desc:0 "We have received reports that radical elements of the [Root.GetName] have formed highly-organized rebel militias on [planet.GetName].\n\nTheir rebellion is still in its infancy, and it would be advisable to nip this in the bud."

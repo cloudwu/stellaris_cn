@@ -1,6 +1,6 @@
 ﻿l_english:
  minor_artifacts:0 "Minor Artifacts"
- minor_artifacts_desc:0 "Minor artifacts ( £minor_artifacts£ ) represent obscure technology and half-forgotten lore recovered from archaic civilizations, only partially understood by our own science. They are more common than Relics, and can be spent to enact various empire-wide effects."
+ minor_artifacts_desc:1 "Minor Artifacts ( £minor_artifacts£ ) represent obscure technology and half-forgotten lore recovered from archaic civilizations, only partially understood by our own science. They are more common than Relics, and can be spent to enact various empire-wide effects."
  artifact_actions:0 "Artifact Actions"
  relics:0 "Relics"
  relic_activation_cooldown:0 "Relic Activation Cooldown"
@@ -49,13 +49,13 @@
 
  #Tutorial
  TUTORIAL_RELICS_VIEW_TITLE:0 "Relics and Minor Artifacts"
- TUTORIAL_RELICS_VIEW_DESC:1 "The Relics screen allows us to view and activate our §YRelics§!, and also to enact decisions making use of §YMinor artifacts§!. Decisions marked with "(Planetary Decision)" are shown here only for reference and can instead be enacted from a Planet's Decision screen."
+ TUTORIAL_RELICS_VIEW_DESC:2 "The Relics screen allows us to view and activate our §YRelics§!, and also to enact decisions making use of §YMinor Artifacts§!. Decisions marked with "(Planetary Decision)" are shown here only for reference and can instead be enacted from a Planet's Decision screen."
 
  TUTORIAL_ARCHAEOLOGY_VIEW_TITLE:0 "Archaeology view"
  TUTORIAL_ARCHAEOLOGY_VIEW_DESC:0 "The Archaeology window shows details of the currently selected §YArchaeology site§!. After progress is made you can still go back and read previous stages by clicking the rune icons.\n\nTo unravel the secrets of a Site, a Scientist must make a §YBreakthrough§! to advance through each of the Site's stages. Scientists with relevant §YTraits and higher Skill§! speed the process of advancing to the next stage, while a higher Difficulty rating of a Site will slow it. Any Scientist who investigates a Site for long enough will amass §YClues§! which will make a Breakthrough more likely."
 
  RELICS_AND_ARTIFACTS:0 "$RELICS$ and $MINOR_ARTIFACTS$"
- TRADITION_VIEW_TITLE:0 "$TRADITIONS$ and $RELICS$"
+ TRADITION_VIEW_TITLE:1 "Society Management"
 
  archaeologist_1:0 "archaeologist"
  archaeologist_2:0 "archaeology-unit"
@@ -142,10 +142,10 @@
  IS_ARCHAEOLOGICAL_SITE_CURRENT_EXCAVATOR_FLEET_TRIGGER:0 "Current excavator fleet is $FLEET$"
  MOD_SHIP_ARCHAEOLOGICAL_SITE_EXCAVATION_SPEED_MULT:0 "Archaeology Excavation Speed"
  MOD_SHIP_ARCHAEOLOGICAL_SITE_CLUES_ADD:0 "Archaeology Skill"
- ARCHAEOLOGICAL_SITE_ON_ROLL_FAILED_RANGE:0 "($CHANCE|%0Y$) Result is between $MIN|0Y$-$MAX|0Y$. Adds  $CLUES|0Y$ clues."
+ ARCHAEOLOGICAL_SITE_ON_ROLL_FAILED_RANGE:1 "($CHANCE|%0Y$) Result is between $MIN|0Y$ and $MAX|0Y$. Adds $CLUES|0Y$ clue(s)."
  ARCHAEOLOGICAL_SITE_ON_ROLL_FAILED_GREATER_THAN_EQ:0 "($CHANCE|%0Y$) Result is $MIN|0Y$ or greater. Finishes chapter."
  ARCHAEOLOGICAL_SITE_ON_ROLL_FAILED_LESS_THAN_EQ:0 "($CHANCE|%0Y$) Result is $MAX|0Y$ or less. Adds $CLUES|0Y$ clues."
- archaeology_roll_header:0 "§H$ARCHAEOLOGICAL_SITE_BREAKTHROUGH$§!\nThis reflects the chance of your Scientist making a breakthrough during the excavation of the current site.\n\nEvery time a phase ends, a dice (§Y1§! to §Y10§!) is rolled. The results of the roll is added with §YSkill Bonus§! and §YClues§!, then subtracted by §YDifficulty§!.\n\n§ERoll Outcomes:§!"
+ archaeology_roll_header:1 "§H$ARCHAEOLOGICAL_SITE_BREAKTHROUGH$§!\nThis reflects the chance of your Scientist making a breakthrough during the excavation of the current site.\n\nEvery time a phase ends, a dice (§Y1§! to §Y10§!) is rolled. The results of the roll is added with §YSkill Bonus§! and §YClues§!, then subtracted by §YDifficulty§!.\n\nThe current score before dice roll is $SCORE|0Y$.\n\n§ERoll Outcomes:§!"
 
  alert_activate_relic_title:0 "Relic Activation Available"
  alert_activate_relic_instant:0 "It is now possible to activate one of your Relics."
@@ -156,10 +156,12 @@
  DIFFICULTY_NORMAL:0 "§YNormal§!"
  DIFFICULTY_HARD:0 "§HHard§!"
  DIFFICULTY_HELL:0 "§RHell§!"
+ DIFFICULTY_EXTRA_HELL: "$DIFFICULTY_HELL$$EXTRA|R$"
  LEADER_BONUS:0 "Leader Bonus: $BONUS|Y$"
  ARCHAEOLOGICAL_SITE_CHALLENGE:0 "§HChallenge§!\nThis represents how challenging the site is, relative to the level of the currently assigned Scientist."
  ARCHAEOLOGICAL_SITE_BREAKTHROUGH:0 "Breakthrough Chance"
- VIEW_SITE:0 "View Site"
+ VIEW_SITE:1 "£archaeology£ View Site"
+ SHOW_FIRST_CONTACT:0 "Show First Contact"
 
  ARCHAEOLOGICAL_SITE_FINISHED:0 "Site has been fully excavated"
  ARCHAEOLOGICAL_SITE_LOCKED:0 "Excavation File Locked"
@@ -684,6 +686,10 @@
  district_rw_nexus_plural:0 "Nexus Segments"
  district_rw_nexus_desc:0 "Efficient districts fill this Ring World section, provide locations for drones to be serviced and repaired before they are deployed to their work assignments."
 
+ district_rw_industrial:0 "Industrial Segment"
+ district_rw_industrial_plural:0 "Industrial Segments"
+ district_rw_industrial_desc:0 "Clanking factories and powerful machinery fill this Ring World section, providing a strong industrial base for the Empire."
+
  ##################
  # DEPOSITS
  ##################
@@ -798,8 +804,8 @@
  job_assimilation_plural:0 "$job_assimilation$"
  job_assimilation_desc:0 "This pop is being integrated into our collective."
  pop_category_assimilation:0 "$pop_cat_assimilation$ Living Standards"
- space_dragon_blue:0 "$NAME_Grand_Dragon$"
- space_dragon_blue_plural:0 "$NAME_Grand_Dragon$"
+ space_dragon_blue:1 "Grand Dragon"
+ space_dragon_blue_plural:1 "Grand Dragons"
 
  STEAL_ALL_ARTIFACT:0 "$THIEF|Y$ steals §YALL§! artifacts from $VICTIM|Y$"
  STEAL_RANDOM_ARTIFACT:0 "$THIEF|Y$ steals §YONE RANDOM§! artifact from $VICTIM|Y$"

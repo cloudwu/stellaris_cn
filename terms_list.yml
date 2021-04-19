@@ -5,6 +5,7 @@ Are you sure you (wish/want) to : 您确定要
 Do you (wish/want) to : 您要
 How do you wish to proceed? : 您希望如何继续？
 modifier : 调整因素
+penalty: 惩罚
 effect : 效应；效果
 cost : 花费（v）；消耗（v）；费用（n）；成本（n）；开销（n）；
 upkeep : 维护费
@@ -14,10 +15,10 @@ complex : 复合体；综合设施；建筑群
 nexus : 中枢；绊联
 hub : 枢纽
 raid : 劫掠
+investigate: 调查
 (add/gain) {modifier} modifier (to {place}) (for {time}): （添加/获得）（持续{time}的）{modifier}调整因素（至{place}）
 (giving/with/cause) the following effect(s) : （带来/造成）下列效应
 Xeno : 异星；异族；异种；异形
-primary Species: 原生种族
 Dimension(al) : 次元；维度（第n维度）
 Extradimension(al) : 异次元
 avatar : 化身
@@ -56,6 +57,9 @@ Ethic/Ethos : 道德观；道德；道德准则
 
 # Species
 Species : 种族（星际文明）；物种（未开化的、低阶文明、泛称（examli gratia 智慧物种））
+Primary Species: 原生种族
+Secondary Species: 次级种族
+Founder Species: 创始种族
 Half-Species : 混血种族
 crossbreed : 杂交
 Trait : 特质
@@ -68,11 +72,12 @@ Uplift : 开化
 drone : 工蜂（蜂群）；无人机（机械体）；成员（统称）
 Pop Approval Rating : 民众支持率
 Political Power : 政治权力
-actions :
-    Purge : 肃清；大清洗
-    Displace : 驱离
-    Assembl(e/y) : 装配
-    Disassemble : 拆卸
+action:
+    Purge: 肃清；大清洗
+    Displace: 驱离
+    Assemble/Assembly: 装配
+    Disassemble: 拆卸
+    Resettlement: 强制移居
 Pop Growth : 人口增长
 Pop Decline : 人口下降
 Migration : 移民
@@ -91,6 +96,7 @@ Housing Usage : 住房使用
 Overcrowding : 人满为患
 Infrastructure : 基础设施
 Amenities : 舒适度
+Planet Capacity: 行星承载力
 crime :
     Crime : 犯罪率
     Deviancy : 异常率
@@ -185,6 +191,7 @@ Warp : 曲速
 HyperDrive : 超空间驱动
 JumpDrive : 折跃引擎
 Hyperlane : 超空间航道
+First Contact: 第一次接触 # todo 首次接触？
 
 # Ship
 ship : 舰船；军舰；飞船
@@ -283,7 +290,7 @@ Prospect : 勘探
 enact : 颁布
 
 species rights :
-    ## Citizenship
+    # Citizenship
     Bio-Trophy  : 生化展品
     Slavery :
         Chattel Slave : 劳务奴隶
@@ -291,7 +298,7 @@ species rights :
         Battle Thrall : 战斗奴隶
         Livestock : 牲畜
         Indentured Servitude/Servant : 契约奴工
-    ## Living Standard
+    # Living Standard
     Stratified Economy : 经济分层（？）
     Stratification : 阶层社会
 traditions :
@@ -382,6 +389,13 @@ Galactic Community: 银河共同体
     ## Federations
     Galactic Council: 银河理事会
     Emergency Measure: 紧急措施
+espionage:
+    Espionage: 谍报
+    Intel: 情报
+    Intel Level: 情报等级
+    spy: 刺探（v）；间谍（n）
+    Spy Network: 间谍网
+    Spy Power: 间谍力量 # todo 间谍实力？
 
 resources :
     Raw Resource : 原材料
@@ -530,18 +544,21 @@ precursors:
     The Saviors : 救世派
     Baol : 巴奥（族）
     Grunur : 格茹努尔（族）（？）  # from Icelandic grunur, suspicion
-crises:
-    Prethoryn : 虫族（？）
-    Sentinel : 星际护卫队；星际护卫；护卫
-    Sentinel Alpha : 阿尔法哨站
-    Unbidden : 破界者
-    Aberrant : 畸变者
-    Vehement : 咆哮者
+crisis:
+    Crisis: 天灾
+    Prethoryn: 虫族（？）
+    Sentinel: 星际护卫队；星际护卫；护卫
+    Sentinel Alpha: 阿尔法哨站
+    Unbidden: 破界者
+    Aberrant: 畸变者
+    Vehement: 咆哮者
     ## Synthetic Dawn
-    Contingency :
-        Contingency : 紧急预案
-        Ghost Signal : 幽灵信号
-        Sterilization : 消毒
+    contingency:
+        Contingency: 紧急预案
+        Ghost Signal: 幽灵信号
+        Sterilization: 消毒
+    ## nemesis
+    Becoming the Crisis: 化身天灾
 ## Leviathan
 enclaves:
     enclave: 飞地

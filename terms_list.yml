@@ -193,30 +193,39 @@ JumpDrive : 折跃引擎
 Hyperlane : 超空间航道
 First Contact: 第一次接触 # todo 首次接触？
 
-# Ship
-ship : 舰船；军舰；飞船
-starship : 星舰
-warship : 战舰
-spacecraft : 航天器
-shuttle : 航天飞机
-component : 部件
-section : 区块
-armor : 装甲
-shield : 护盾
-actions :
-    survey : 勘察
-    jump : 跃迁
-reinforce : 增援
-crew : 船组（全体船员）；船员；船员们
-Science Officer : 科学官
-Home Base : 主基地
-Ship Classis :
-    Science Ship : 科研船
-    ## Apocalypse
-    Titan : 泰坦
-    Colossus/Colossi : 巨像
-    ## Federations
-    Juggernaut : 主宰 # from Sanskrit jagannātha (“lord of the universe”) (Jagannath), a title for the Hindu deity Vishnu's avatar Krishna. English form influenced by suffix -naut (“sailor”). 
+ship:
+    ship: 舰船；军舰；飞船
+    starship: 星舰
+    warship: 战舰
+    spacecraft: 航天器
+    shuttle: 航天飞机
+    component: 部件
+    section: 区块
+    armor: 装甲
+    shield: 护盾
+    actio:
+        survey: 勘察
+        jump: 跃迁
+    reinforce: 增援
+    crew: 船组（全体船员）；船员；船员们
+    Science Officer: 科学官
+    Home Base: 主基地
+    classis:
+        Science Ship: 科研船
+        Construction Ship: 工程船
+        Colony Ship: 殖民船
+        Transport Ship: 运输船
+        Corvette: 护卫舰
+        Destroyer: 驱逐舰
+        Cruiser: 巡洋舰
+        Battleship: 战列舰
+        ## Apocalypse
+        Titan: 泰坦
+        Colossus/Colossi: 巨像
+        ## Federations
+        Juggernaut: 主宰 # from Sanskrit jagannātha (“lord of the universe”) (Jagannath), a title for the Hindu deity Vishnu's avatar Krishna. English form influenced by suffix -naut (“sailor”). 
+        ## nemesis
+        Star-Eater: 焚天神兵（？）
 
 # Space Station
 starbases :
@@ -334,61 +343,67 @@ shroud :
     Eater of Worlds : 吞世灵尊
     Instrument of Desire : 极欲灵尊
     End of the Cycle : 终环灵尊
-
-# 外交
-Embassy : 使馆；外交使节
-opinion : 评价
-rival : 劲敌；竞争
-rivalry : 竞争；敌视
-subjects :
-    Subject : 附属国
-    Overlord : 宗主国
-    Tributary : 藩属国
-    Vassal : 附庸国
-    Thrall : 仆从国
-    Dominion : 自治领
-    Signatory : 协约国
-    Satellite : 卫星国
-    Subsidiary : 子公司
-    Satrapy : 辖地
-    Scion : 子弟
-pacts :
-    Non-Aggression Pact : 互不侵犯条约
-    Defensive Pact : 防御条约
-    Truce : 停战协定
-    Guarantee Independence : 保障独立
-    Research Agreement : 研究协议
-    Commercial Pact : 商业合约
-    Migration Treaty : 移民条约
-Trade Treaty/Deal : 贸易协定
-Alliance : 联盟
-League of Non-Aligned Powers : 不结盟力量联合体 不结盟势力联盟
-Envoy : 特使
-Favor : 人情
-Diplomacy Stance : 外交姿态
-Federation : 联邦
-    Perk : 特典
-    Galactic Union : 银河联盟
-    ## Federations
-    Trade League : 贸易联盟
-    Research Cooperative : 研究合作社
-    Martial Alliance : 军事同盟
-    Hegemony : 霸权
-    Hegemon : 霸主
-Galactic Community: 银河共同体
-    Galactic Law: 银河法
-    Galactic Focus: 银河焦点
-    Senate (Floor): 参议院
-    Diplomatic Weight: 外交话语权
-    Resolution: 决议案；议案
-    Call in Favor: 请求人情支援
-    repeal: 撤销
-    in breach: 违反
-    denounce/denouncement: 谴责
-    sanction: 制裁
-    ## Federations
-    Galactic Council: 银河理事会
-    Emergency Measure: 紧急措施
+diplomacy:
+    Diplomacy: 外交
+    Embassy: 使馆；外交使节
+    opinion: 评价
+    rival: 劲敌；竞争
+    rivalry: 竞争；敌视
+    subject:
+        Subject: 附属国
+        Overlord: 宗主国
+        Tributary: 藩属国
+        Vassal: 附庸国
+        Thrall: 仆从国
+        Dominion: 自治领
+        Signatory: 协约国
+        Satellite: 卫星国
+        Subsidiary: 子公司
+        Satrapy: 辖地
+        Scion: 子弟
+    pact:
+        Non-Aggression Pact: 互不侵犯条约
+        Defensive Pact: 防御条约
+        Truce: 停战协定
+        Guarantee Independence: 保障独立
+        Research Agreement: 研究协议
+        Commercial Pact: 商业合约
+        Migration Treaty: 移民条约
+        Trade Treaty/Deal: 贸易协定
+        Alliance: 联盟
+        League of Non-Aligned Powers: 不结盟力量联合体 不结盟势力联盟
+    Envoy: 特使
+    Favor: 人情
+    Diplomacy Stance: 外交姿态
+    federation:
+        Federation: 联邦
+        Perk: 特典
+        Galactic Union: 银河联盟
+        ## Federations
+        Trade League: 贸易联盟
+        Research Cooperative: 研究合作社
+        Martial Alliance: 军事同盟
+        Hegemony: 霸权
+        Hegemon: 霸主
+    galactic community:
+        Galactic Community: 银河共同体
+        Galactic Law: 银河法
+        Galactic Focus: 银河焦点
+        Senate (Floor): 参议院
+        Diplomatic Weight: 外交话语权
+        Resolution: 决议案；议案
+        Call in Favor: 请求人情支援
+        repeal: 撤销
+        in breach: 违反
+        denounce/denouncement: 谴责
+        sanction: 制裁
+        ## Federations
+        Galactic Council: 银河理事会
+        Emergency Measure: 紧急措施
+        ## nemesis
+        Imperial: 帝国？
+        Galactic Defense Force: 银河防卫军
+        Imperial Armada: 帝国大舰队？
 espionage:
     Espionage: 谍报
     Intel: 情报

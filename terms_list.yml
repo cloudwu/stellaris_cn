@@ -14,8 +14,8 @@ lesser lifeform : 低级生物
 complex : 复合体；综合设施；建筑群
 nexus : 中枢；绊联
 hub : 枢纽
+Perk: 特典
 raid : 劫掠
-investigate: 调查
 (add/gain) {modifier} modifier (to {place}) (for {time}): （添加/获得）（持续{time}的）{modifier}调整因素（至{place}）
 (giving/with/cause) the following effect(s) : （带来/造成）下列效应
 Xeno : 异星；异族；异种；异形
@@ -85,6 +85,9 @@ Emigration : 迁出移民
 Emigration Push : 迁出推动力
 Immigration : 迁入移民
 Immigration Pull : 迁入吸引力
+job:
+    Job: 职位；职业；工作
+    Stratum/Strata: 阶级
 
 Faction : 党；党派
 Faction Approval : 党派赞同度
@@ -131,7 +134,7 @@ planetary feature :
     Planetary Feature : 行星地貌
     deposit : 矿藏；贮藏；沉积
     blocker : 障碍
-Classis :
+classis:
     planet class : 行星类别
     Molten World : 熔融世界
     Frozen World : 寒冰世界
@@ -154,10 +157,6 @@ Classis :
     Shattered World : 破碎世界
     Relic World : 遗迹世界
     Holy World : 圣星
-
-# Job
-Job : 职位；职业；工作
-Stratum/-a : 阶级
 
 # Warfare
 Attacker : 进攻方
@@ -191,7 +190,6 @@ Warp : 曲速
 HyperDrive : 超空间驱动
 JumpDrive : 折跃引擎
 Hyperlane : 超空间航道
-First Contact: 第一次接触 # todo 首次接触？
 
 ship:
     ship: 舰船；军舰；飞船
@@ -377,7 +375,6 @@ diplomacy:
     Diplomacy Stance: 外交姿态
     federation:
         Federation: 联邦
-        Perk: 特典
         Galactic Union: 银河联盟
         ## Federations
         Trade League: 贸易联盟
@@ -404,13 +401,17 @@ diplomacy:
         Imperial: 帝国？
         Galactic Defense Force: 银河防卫军
         Imperial Armada: 帝国大舰队？
-espionage:
+espionage: ## nemesis
     Espionage: 谍报
     Intel: 情报
     Intel Level: 情报等级
     spy: 刺探（v）；间谍（n）
     Spy Network: 间谍网
     Spy Power: 间谍力量 # todo 间谍实力？
+    covert: 隐秘
+    operation: 行动
+    Infiltration: 渗透
+    Asset: 线人
 
 resources :
     Raw Resource : 原材料
@@ -459,6 +460,9 @@ warform : 作战体
 
 Sensor : 传感器
 
+First Contact: 第一次接触
+investigate: 调查
+
 # 事件名词
 Migrating Forests : 迁徙森林
 Zanaam : 扎娜姆
@@ -497,8 +501,7 @@ Artem : 阿尔特姆
 Ackamore : 阿卡摩尔
 Peeyep : 皮耶普
 Fenrunir : 芬鲁尼尔
-## Ancient Relics
-artifacts:
+artifacts: ## Ancient Relics
     artifact : 文物
     Relic : 遗珍
     Minor Artifact : 小型文物
@@ -574,6 +577,7 @@ crisis:
         Sterilization: 消毒
     ## nemesis
     Becoming the Crisis: 化身天灾
+    Menace: 威慑（力）
 ## Leviathan
 enclaves:
     enclave: 飞地

@@ -3,7 +3,7 @@
  # Misc
  ####################################
  SEPARATOR:0 "---"
- PLUS: "+"
+ PLUS:0 "+"
 
  ADJ_WITH_THE:0 "the $ADJ|Y$"
  OUR:0 "our"
@@ -1000,7 +1000,7 @@
  BUILDING_REPLACE_NO_BUILDING:0 "No building to replace"
  BUILDING_REPLACE_NOT_OWNED:0 "§RWe can only replace our own buildings.§!"
  BUILDING_REPAIR_NOT_RUINED:1 "§GBuilding is not ruined§!"
- BUILDING_REPAIR_CANNOT_SUPPORT_BUILDING:0 "§RToo few Pops on planet to support this building§!"
+ BUILDING_REPAIR_CANNOT_SUPPORT_BUILDING:1 "§RInsufficient building slots on planet to support this building§!"
  BUILDING_REPAIR_ALREADY_REPAIRING:0 "§YBuilding is already being repaired§!"
  BUILDING_REPAIR_BOMBARDED:0 "Planet is being bombarded."
  BUILDING_UPGRADING:0 "Building is being upgraded"
@@ -1456,6 +1456,11 @@
  FE_CRISES_TOOLTIP:2 "§HCrisis Strength§!\nThis controls the fleet strength of endgame crises. The higher the multiplier, the more dangerous the endgame crises will be."
  FE_PRIMITIVE_WORLDS:0 "Primitive Civilizations"
  FE_PRIMITIVE_WORLDS_TOOLTIP:0 "§HPrimitive Civilizations§!\nThis controls the prevalence of Primitive (pre-FTL) Civilizations in the galaxy. The higher it is, the more likely you are to encounter Primitives."
+ FE_LOGISTIC_CEILING:0 "Logistic Growth Ceiling"
+ FE_LOGISTIC_CEILING_TOOLTIP:0 "§H$FE_LOGISTIC_CEILING$§!\nThis controls how large the pop growth bonuses are when planets are in the middle of their logistic curve. The higher it is, the faster pops will grow.\n\n§RWarning:§! This setting has late game performance and balance implications if increased."
+ FE_GROWTH_SCALE:0 "Growth Required Scaling"
+ FE_GROWTH_SCALE_TOOLTIP:0 "§H$FE_GROWTH_SCALE$§!\nThis controls how much growth is required for each pop in the empire. The higher it is, the slower pops will grow.\n\n§RWarning:§! Lowering this has significant performance and balance implications, and decreasing $FE_LOGISTIC_CEILING$ alongside it is highly recommended."
+
  POP_FACTION_SUPPORTERS:0 "Supporters"
  POP_FACTION_SUPPRESSED:0 "The support of this faction is decreased by $VALUE$ each month due to being suppressed."
  GOTO_DESC:0 "Move the camera to $NAME|Y$"
@@ -2315,6 +2320,7 @@
  TIME_RESOURCE:0 "$DAYS|Y$ £time£"
  RESOURCES_STORED_MAX:0 "Stored: $VALUE|Y0$/$MAX|Y0$"
  GALACTIC_OBJECT_HABITABILITY:1 "$CLASS$, £planetsize£ $SIZE|Y$, $VALUE$"
+ GALACTIC_OBJECT_HABITABILITY_BEST_SPECIES:0 " ($SPECIES|H$)"
  PLANET_MAP_ICON_TERRAFORMING:1 "Terraforming to $CLASS$, $VALUE$\n(£time£ $TIME|Y$)"
  TERRAFORMING_TO:0 "Terraforming to $CLASS|Y$"
  CLOSE_SECTOR_MANAGEMENT:0 "Close Sector Management"
@@ -6085,7 +6091,7 @@
  SORT_BY_RELATION:0 "§HSort by Relation§!"
  SORT_BY_INTEL_LEVEL:0 "§HSort by Intel Level§!"
  SORT_BY_SPYNETWORK_LEVEL:0 "§HSort by Spy Network Level§!"
- SORT_BY_SPYPOWER:0 "§HSort by Spy Power§!"
+ SORT_BY_SPYPOWER:1 "§HSort by $INFILTRATION_LEVEL$§!"
  SELECT_TARGET_EMPIRE:0 "§HSelect Target Empire§!"
 
  OPINION_DESC:0 "§T$EMPIRE|H$ opinion of $PLAYER|H$: $VAL|+=$§!"
@@ -6286,7 +6292,7 @@
  purge_neutering_tooltip_delayed:0 "§LThink of it as a phasing-out of a people. Our nation goes to meet the future, only some will not be with us.§!"
  purge_labor_camps:0 "Forced Labor"
  purge_labor_camps_tooltip:0 "Affected Pops are worked to death and can be used to produce £food£ §HFood§! and £minerals£ §HMinerals§! until their eventual demise."
- purge_labor_camps_tooltip_delayed:0 "§LWith this final sacrifice, they will at least have been of some use.§!"
+ purge_labor_camps_tooltip_delayed:1 "§LWith this sacrifice, they will at least have been of some use.§!"
  purge_processing:0 "Processing"
  purge_processing_tooltip:1 "Affected Pops are processed into [Root.GetPurgeProcessingResource] availability until death."
  purge_processing_tooltip_delayed:0 "§LIt is a sad but inescapable fact that some are destined to simply fuel the ambitions of their betters.§!"
@@ -6591,6 +6597,7 @@
  GOAL:0 "Goal"
  INTEL:0 "Intel:"
  DIPLOMACY_VIEW_ORIGIN_UNKNOWN:0 "We do not know what origin this Empire has."
+ DIPLOMACY_VIEW_CIVICS_UNKNOWN:0 "We do not know what civics this Empire has."
 
  ####################################
  # Diplomacy Icons Tooltips
@@ -7504,6 +7511,7 @@
  requires_actor_not_criminal_heritage:0 "$TRIGGER_FAIL$§RWe have a §Y$civic_criminal_heritage$§!. We do not conduct our business openly.§!"
  requires_recipient_not_criminal_heritage:0 "$TRIGGER_FAIL$§RThey have a §Y$civic_criminal_heritage$§!. They do not conduct our business openly.§!"
  requires_actor_to_be_federation_leader:0 "$TRIGGER_FAIL$§ROnly the leader of a §Y$hegemony_federation$§! may approve new members.§!"
+ diplo_action_no_low_intel:0 "$TRIGGER_FAIL$§RThey are reticent to discuss this proposal. We do not know enough about them to find out why.§!"
 
  ####################################
  # Basic Resources
@@ -7528,7 +7536,7 @@
  unity:0 "Unity"
  unity_desc:3 "§E§H$unity$§! (£unity£) is used to unlock new §HTraditions§!. We can increase our output by building an £building£ §H$building_autochthon_monument$§! or other buildings that provide jobs which produce Unity.§!"
  consumer_goods:0 "Consumer Goods"
- consumer_goods_desc:1 "§E§H$consumer_goods$§! (£consumer_goods£) is an advanced resource that represents the various gadgets, luxuries and goods necessary to give your £pop£ §HPops§! a good life and to perform intellectual £job£ §HJobs§! such as £job_researcher£ §HResearch§!. You can gain more by:\n§Y1.§! Building £building£ §HCivilian Industries§! buildings the surface of colonized planets.\n§Y2.§! Buying more on the §HMarket§!.§!"
+ consumer_goods_desc:2 "§E§H$consumer_goods$§! (£consumer_goods£) is an advanced resource that represents the various gadgets, luxuries and goods necessary to give your £pop£ §HPops§! a good life and to perform intellectual £job£ §HJobs§! such as £job_researcher£ §HResearch§!. You can gain more by:\n§Y1.§! Building £building£ §HCivilian Industries§! buildings on the surface of colonized planets.\n§Y2.§! Building £district£ §HIndustrial Districts§! on the surface of colonized planets.\n§Y3.§! Buying more on the §HMarket§!.§!"
 
  ENERGY_DEFICIT_DESC:1 "§ROur Empire is affected by $DEFICIT|E$ since we are spending more §HEnergy Credits§! than we are producing, and our reserves have run out.§!"
 
@@ -7594,7 +7602,7 @@
  rare_crystals:0 "Rare Crystals"
  rare_crystals_desc:0 "These crystals have properties that make them extremely effective at focusing laser beams, and they are also a critical component in most advanced electronics. In addition, many cultures treasure them as decorations and adornments."
  alloys:0 "Alloys"
- alloys_desc:1 "§E§HAlloys§! (£alloys£) are advanced resources with a military application, which we need to construct §HShips§! and §HStarbases§!. We can gain more by:\n§Y1.§! Building £building£ §HAlloy Foundries§! buildings on the surface of colonized planets.\n§Y2.§! Buying more on the §HMarket§!.§!"
+ alloys_desc:2 "§E§HAlloys§! (£alloys£) are advanced resources with a military application, which we need to construct §HShips§! and §HStarbases§!. We can gain more by:\n§Y1.§! Building £building£ §HAlloy Foundries§! buildings on the surface of colonized planets.\n§Y2.§! Building £district£ §HIndustrial Districts§! on the surface of colonized planets.\n§Y3.§! Buying more on the §HMarket§!.§!"
 
  sr_zro:0 "Zro"
  sr_zro_desc:0 "An extremely rare aerosol of exotic particles. It has been deposited on a number of worlds through meteor impacts, but its true origin is a mystery. If ingested by psionically-gifted individuals, zro acts as a very potent (and addictive) drug that enhances PSI abilities."
@@ -7750,7 +7758,9 @@
  building_clone_vats_desc:3 "Clone Vats break down simple organic materials like food to generate Organic Pop Assembly."
  tooltip_organic_and_artificial_assembly_warning:0 "§RNote: Organic and Mechanical Pop Assembly are mutually exclusive and do not stack.§!"
  building_slave_processing:0 "Slave Processing Facility"
- building_slave_processing_desc:0 "This large and imposing facility is used to process slave labor and extinguish any trace of free will. A Slave Processing Facility is required for the creation of slave armies."
+ building_slave_processing_desc:1 "This large and imposing facility is used to process slave labor and extinguish any trace of free will."
+ building_slave_processing_migrate_effect_desc:0 "Unemployed §Y$SLAVES$§! on this planet are subject to §YAutomatic Resettlement§! to other colonies."
+ building_slave_processing_slave_army_effect_desc:0 "Permits the recruitment of §Y$slave_army_plural$§!.\n\n"
  building_robotics_assembly_plant:0 "Robotics Assembly Plant"
  building_robotics_assembly_plant_desc:0 "A Robotics Assembly Plant is required for the creation of robotic armies.\nAdds §Y1§! §H$ROBOT_POP_SPECIES_1$§! Pop per Year\nPop Upkeep: £energy£ §Y1§!"
  building_robotics_assembly_plant_2:1 "Droid Assembly Plant"
@@ -7797,7 +7807,7 @@
  building_plague_memorial_desc:0 "A memorial to remind the people of the horrible disease that once haunted their home. Stands as a testament to the survival of the nation."
  building_energy_grid:0 "Energy Grid"
  building_energy_grid_desc:0 "A carefully calibrated grid network maximizes the output of power generators."
- building_energy_grid_effect_desc:1 "Each §Y$district_industrial$§! on the planet provides §G+1§! £job_artisan£ §Y$job_artisan$§! job"
+ building_energy_grid_effect_desc:2 "Increases the base production of £energy£ §YEnergy§! producing jobs by §G1§!."
  building_energy_nexus:0 "Energy Nexus"
  building_energy_nexus_desc:0 "This colossal facility centralizes all energy grids on the planet, improving their efficiency."
  building_mineral_purification_plant:2 "Mineral Purification Plants"
@@ -9645,7 +9655,7 @@
  alert_inactive_civics_instant:0 "We have inactive Civics that are not providing us with any benefits."
  alert_set_war_goal_title:0 "Missing War Goal"
  alert_set_war_goal_instant:0 "We are at war and have not yet set our goal."
- alert_set_war_goal_entry:1 "[$INDEX$] $NAME|H$ ($DAYS|H$ days left)"
+ alert_set_war_goal_entry:2 "[$INDEX$] $NAME|H$ ($DAYS|H$ days left)"
  alert_capped_resources_title:0 "Resource Storage Full"
  alert_capped_resources_instant:0 "Some of our resources have exceeded their storage limit. While our storage is full, any further income in these resources will be wasted."
  alert_capped_resources_delayed:0 "We have exceeded our storage limit for the following resources:"
@@ -10288,7 +10298,7 @@
  drone_policy_thinker_desc:0 "The $pop_cat_complex_drone_plural$ that manufacture finished goods are given priority by the Mind, becoming more productive at the expense of the $pop_cat_simple_drone_plural$.\n\n"
 
  policy_robot_pop_policy:0 "Robotic Workers"
- policy_robot_pop_policy_desc:0 "The invention of autonomous robots opens for the workers of our species being supplanted and perhaps, in time, surpassed. We must decide our stance on such large-scale automation.\n"
+ policy_robot_pop_policy_desc:1 "The mere concept of autonomous robots leads to the idea that workers of our species may one day be supplanted and perhaps, in time, surpassed. We must decide our stance on such large-scale automation.\n"
 
  robot_pops_outlawed:0 "Outlawed"
  robots_outlawed_name:0 "Robotic Workers Outlawed"
@@ -11855,10 +11865,10 @@
  lesser_space_cloud:0 "$space_cloud$"
  lesser_space_cloud_plural:0 "$space_cloud_plural$"
 
- SCORE_FROM_MEGASTRUCTURES:0 "From megastructures: $VALUE$"
+ SCORE_FROM_MEGASTRUCTURES:0 "From Megastructures: $VALUE$"
  FLEET_REINFORCE_NO_SHIPYARD:0 "No shipyard available to build fleet"
 
- SPYNET_THERE_ARE_AVAILABLE_ASSETS:0 "§GThere are available assets§!"
+ SPYNET_THERE_ARE_AVAILABLE_ASSETS:1 "§GThere are available assets§!\n$ESPIONAGE_ASSET_CLICK_ASSIGN$"
  SPYNET_THERE_ARE_NO_AVAILABLE_ASSETS:0 "§RThere are no available assets§!"
 
  crisis_empire_base:0 "Crisis"

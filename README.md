@@ -8,7 +8,6 @@ http://steamcommunity.com/sharedfiles/filedetails/?id=734129025
 本项目目录结构：
 
 * cn 与 cn.mod 是最新的汉化 mod 文件。 
-* diff 目录是 2.8 到 3.0 的变更，目前的校对工作在这里完成。
 * en 是当前英文原文文本。
 * term_list.txt 是术语列表，参加翻译时请参考这里统一术语。
 * script 是一些实用工具脚本，用来检查错误。

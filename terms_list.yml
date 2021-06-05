@@ -31,29 +31,24 @@ incoming transmission : 传入通讯
 end transmission/communications : 结束通讯/通信
 terminate transmission/communications : 终止通讯/通信
 
-# Ethic
-Ethic/Ethos : 道德观；道德；道德准则
-    Xenophobia : 排外主义
-    Xenophobe : 排外主义者；排外主义
-    Xenophobic : 排外主义
-    Xenophilia : 亲外主义
-    Xenophile : 亲外主义者；亲外主义
-    Militarism : 军国主义
-    Militarist : 军国主义者；军国主义
-    Militaristic : 军国主义
-    Pacifism : 和平主义
-    Pacifist : 和平主义者；和平主义
-    Pacifistic : 和平主义
-    Spiritualism : 精神主义
-    Spiritualist : 精神主义者
-    Spiritualistic : 精神主义
-    Materialism : 物质主义
-    Materialist : 物质主义者
-    Materialistic : 物质主义
-    Neutral : 中立
-    Authoritarianism : 威权主义
-    Egalitarianism : 平等主义
-    Gestalt Consciousness : 完形意识
+ethic:
+    Ethic/Ethos: 道德观；道德；道德准则
+    Xenophobia/Xenophobic: 排外主义
+    Xenophobe: 排外主义者；排外主义
+    Xenophilia: 亲外主义
+    Xenophile: 亲外主义者；亲外主义
+    Militarism/Militaristic: 军国主义
+    Militarist: 军国主义者；军国主义
+    Pacifism/Pacifistic: 和平主义
+    Pacifist: 和平主义者；和平主义
+    Spiritualism/Spiritualistic: 精神主义
+    Spiritualist: 精神主义者
+    Materialism/Materialistic: 物质主义
+    Materialist: 物质主义者
+    Neutral: 中立
+    Authoritarianism: 威权主义
+    Egalitarianism: 平等主义
+    Gestalt Consciousness: 完形意识
 
 # Species
 Species : 种族（星际文明）；物种（未开化的、低阶文明、泛称（examli gratia 智慧物种））
@@ -72,7 +67,7 @@ Uplift : 开化
 drone : 工蜂（蜂群）；无人机（机械体）；成员（统称）
 Pop Approval Rating : 民众支持率
 Political Power : 政治权力
-action:
+actio:
     Purge: 肃清；大清洗
     Displace: 驱离
     Assemble/Assembly: 装配
@@ -168,15 +163,15 @@ Command Limit : 指挥上限
 Claim : 领土主张/宣称所有权 （根据上下文灵活使用）
 
 # Military
-Naval Capacity : 军舰容量
+Naval Capacity: 军舰容量
 
-# Leader
-Leader : 领袖
-    Ruler : 统治者
-    Governor : 总督
-    Scientist : 科学家
-    General : 将军
-    Admiral : 舰队司令
+leaders:
+    Leader: 领袖
+    Ruler: 统治者
+    Governor: 总督
+    Scientist: 科学家
+    General: 将军
+    Admiral: 舰队司令
 
 # 科技/武器
 Deflector : 偏向器
@@ -225,16 +220,17 @@ ship:
         ## nemesis
         Star-Eater: 焚天神兵（？）
 
-# Space Station
-starbases :
-    Starbase : 太空基地
-    Outpost : 哨站
-    Starport : 星港
-    Starhold : 星寨
-    Star Fortress : 星堡
-    Citadel : 卫城
-mining station : 采矿基地
-research station : 科研基地
+statio:
+    space station: 空间站
+    starbases:
+        Starbase: 太空基地
+        Outpost: 哨站
+        Starport: 星港
+        Starhold: 星寨
+        Star Fortress: 星堡
+        Citadel: 卫城
+    mining station: 采矿基地
+    research station: 科研基地
 Gateway : 星门
 megastructures :
     ## Utopia
@@ -263,14 +259,15 @@ megastructures :
     Mega Shipyard : 巨型船坞
 
 # Empire
-Empire Sprawl : 帝国规模
-Administrative Capacity : 行政容量
-Cohesion : 内聚度
-Capital : （行星）首府；（星域）首府；（帝国）首都；（帝国）都城；（泛）首府
-Sector : 星域
-    focus : （发展）重心
-    transfer : 转移（资源）
-Origin : 起源
+Empire Sprawl: 帝国规模
+Administrative Capacity: 行政容量
+Cohesion: 内聚度
+Capital: （行星）首府；（星域）首府；（帝国）首都；（帝国）都城；（泛）首府
+sector:
+    Sector: 星域
+    focus: （发展）重心
+    transfer: 转移（资源）
+Origin: 起源
 
 # Government
 Government : 政体；政府
@@ -398,20 +395,24 @@ diplomacy:
         Galactic Council: 银河理事会
         Emergency Measure: 紧急措施
         ## nemesis
-        Imperial: 帝国？
+        Galactic Custodian: 银河监护者
         Galactic Defense Force: 银河防卫军
-        Imperial Armada: 帝国大舰队？
+        Galactic Imperium:
+            Galactic Imperium: 银河大帝国？
+            Imperial: 大帝国？
+            state/member: 邦国
+            Imperial Armada: 大帝国舰队？
+            Imperial Council: 大帝国理事会？
 espionage: ## nemesis
     Espionage: 谍报
     Intel: 情报
     Intel Level: 情报等级
     spy: 刺探（v）；间谍（n）
     Spy Network: 间谍网
-    Spy Power: 间谍力量 # todo 间谍实力？
     covert: 隐秘
     operation: 行动
     Infiltration: 渗透
-    Asset: 线人
+    Asset: 线人 # fixme
 
 resources :
     Raw Resource : 原材料
@@ -575,9 +576,10 @@ crisis:
         Contingency: 紧急预案
         Ghost Signal: 幽灵信号
         Sterilization: 消毒
-    ## nemesis
-    Becoming the Crisis: 化身天灾
-    Menace: 威慑（力）
+    become the crisis: ## nemesis
+        Become the Crisis: 化身天灾
+        Aetherophasic Engine: 以太相引擎
+        Menace: 威慑（力）
 ## Leviathan
 enclaves:
     enclave: 飞地

@@ -1457,9 +1457,9 @@
  FE_PRIMITIVE_WORLDS:0 "原始文明"
  FE_PRIMITIVE_WORLDS_TOOLTIP:0 "§H原始文明§!\n此项设定决定了银河系中原始（前FTL）文明的盛行。值越大，越有可能遇到原始文明。"
  FE_LOGISTIC_CEILING:0 "S型增长上限"
- FE_LOGISTIC_CEILING_TOOLTIP:0 "§H$FE_LOGISTIC_CEILING$§!\n当星球的人口增长处于S型曲线的中段时，这一选项控制人口增长能够获得多大的加成。选项越高，人口增长越快。\n\n§R警告：§!调高选项可能导致后期游戏性能下降以及出现平衡相关的问题。"
+ FE_LOGISTIC_CEILING_TOOLTIP:0 "§H$FE_LOGISTIC_CEILING$§!\n此项设定决定了当星球的人口增长处于S型曲线的中段时，人口增长能够获得多大的加成。设定越高，人口增长越快。\n\n§R警告：§!调高设定可能导致后期游戏性能下降和平衡相关问题。"
  FE_GROWTH_SCALE:0 "增长需求倍率"
- FE_GROWTH_SCALE_TOOLTIP:0 "§H$FE_GROWTH_SCALE$§!\n这一选项控制帝国内的每个人口需要多少增长进度。选项越高，人口增长的越慢。\n\n§R警告：§!调低这一选项可能导致严重的性能下降以及产生平衡相关的问题，我们高度建议同时也降低$FE_LOGISTIC_CEILING$。"
+ FE_GROWTH_SCALE_TOOLTIP:0 "§H$FE_GROWTH_SCALE$§!\n此项设定决定了帝国内的每个人口需要多少增长进度。设定越高，人口增长得越慢。\n\n§R警告：§!调低这一设定可能导致严重的性能下降和平衡相关问题，我们高度建议同时也降低$FE_LOGISTIC_CEILING$。"
 
  POP_FACTION_SUPPORTERS:0 "支持者"
  POP_FACTION_SUPPRESSED:0 "由于受镇压，此党派支持率每月下降$VALUE$。"
@@ -2320,7 +2320,7 @@
  TIME_RESOURCE:0 "$DAYS|Y$£time£"
  RESOURCES_STORED_MAX:0 "已储备：$VALUE|Y0$/$MAX|Y0$"
  GALACTIC_OBJECT_HABITABILITY:1 "$CLASS$，£planetsize£$SIZE|Y$，$VALUE$"
- GALACTIC_OBJECT_HABITABILITY_BEST_SPECIES:0 " ($SPECIES|H$)"
+ GALACTIC_OBJECT_HABITABILITY_BEST_SPECIES:0 "（$SPECIES|H$）"
  PLANET_MAP_ICON_TERRAFORMING:1 "改造为$CLASS$，$VALUE$\n（£time£ $TIME|Y$）"
  TERRAFORMING_TO:0 "正在改造为$CLASS|Y$"
  CLOSE_SECTOR_MANAGEMENT:0 "关闭星域管理"
@@ -6434,7 +6434,7 @@
  FEDERATION_VIEW_FLEET_COUNT:0 "联邦舰队：（$USED$/$CAP$）"
  FEDERATION_VIEW_FLEET_CLICK:0 "§G点击开启§H舰队界面§!。§!\n右击前往。"
  FEDERATION_NAVAL_CAPACITY:0 "§H联邦军舰容量§!"
- FEDERATION_FLEET_DESC:1 "§H联邦舰队§!是联邦总统控制的特殊舰队。他们在§H联邦舰船设计器§!设计，可以使用所有联邦成员掌握的科技。联邦舰队无需维护费，但是不能超过§H联邦军舰容量§!，每个成员国至少会贡献出自己§Y$PERC|0%$§!的§H军舰上限§!。"
+ FEDERATION_FLEET_DESC:1 "§H联邦舰队§!是联邦总统控制的特殊舰队。它们在§H联邦舰船设计器§!设计，可以使用所有联邦成员掌握的科技。联邦舰队无需维护费，但规模不能超出§H联邦军舰容量§!，每个成员国至少会贡献出自己§Y$PERC|0%$§!的§H军舰上限§!。"
 
  POPUP_LEAVE_FEDERATION_TITLE:0 "脱离联邦"
  POPUP_LEAVE_FEDERATION_DESC:0 "您要脱离$FEDERATION|H$吗？"
@@ -7511,7 +7511,7 @@
  requires_actor_not_criminal_heritage:0 "$TRIGGER_FAIL$§R我们有§Y$civic_criminal_heritage$§!。我们要低调行事。§!"
  requires_recipient_not_criminal_heritage:0 "$TRIGGER_FAIL$§R他们有§Y$civic_criminal_heritage$§!。他们会低调行事。§!"
  requires_actor_to_be_federation_leader:0 "$TRIGGER_FAIL$§R§Y$hegemony_federation$§!只有领袖可以批准新成员。§!"
- diplo_action_no_low_intel:0 "$TRIGGER_FAIL$§R他们对讨论这个提案保持沉默。我们对其了解不够，尚不知道原因。§!"
+ diplo_action_no_low_intel:0 "$TRIGGER_FAIL$§R他们对讨论这个提案保持沉默。我们对他们了解不够，不知道原因。§!"
 
  ####################################
  # Basic Resources
@@ -7536,7 +7536,7 @@
  unity:0 "凝聚力"
  unity_desc:3 "§E§H$unity$§!（£unity£）可用于解锁新§H传统§!。我们可以通过下列途径增加产出：\n建造£building£§H$building_autochthon_monument$§!或其它提供产出凝聚力的职位的建筑。§!"
  consumer_goods:0 "消费品"
- consumer_goods_desc:2 "§E§H$consumer_goods$§!（£consumer_goods£）是高级资源，象征着可以提高£pop£§H人口§!的生活质量的科技产品和奢侈品，同时也是脑力劳动£job£§H职业§!诸如£job_researcher£ §H研究§!所不可或缺的资源。你可以通过以下的方式获取更多的消费品：\n§Y1.§!在已殖民星球的地表建设 £building£ §H民用工厂§!建筑。\n§Y2.§!在已殖民星球的地表建设 £district£ §H工业区域§!。\n§Y3.§!在§H市场§!购买。§!"
+ consumer_goods_desc:2 "§E§H$consumer_goods$§!（£consumer_goods£）是高级资源，象征着可以提高£pop£§H人口§!的生活质量的科技产品和奢侈品，同时也是脑力劳动£job£§H职业§!诸如£job_researcher£ §H研究§!所不可或缺的资源。你可以通过以下的方式获取更多的消费品：\n§Y1.§!在已殖民星球的地表建设 £building£ §H民用工厂§!建筑。\n§Y2.§!在已殖民星球的地表建设 £district£ §H工业区§!。\n§Y3.§!在§H市场§!购买。§!"
 
  ENERGY_DEFICIT_DESC:1 "§R帝国正受到$DEFICIT|E$影响，因为使用的§H能源点数§!超出了产量，而且积蓄全都用光了。§!"
 
@@ -7602,7 +7602,7 @@
  rare_crystals:0 "稀有水晶"
  rare_crystals_desc:0 "这些水晶拥有独特的属性，非常适合用来凝聚和集中激光束，同时也是制作大部分高级电子器材的关键材料。部分文化也视之为装饰物。"
  alloys:0 "合金"
- alloys_desc:2 "§E§H合金§!（£alloys£）是高级资源，一般用于军事领域，可用于建造§H舰船§!和§H太空基地§!。我们可以通过下列途径获得更多合金：\n§Y1.§!在殖民行星表面建造£building£§H$building_foundry_1$§!。\n§Y2.§!在已殖民星球的地表建设 £district£ §H工业区域§!。\n§Y3.§!在§H市场§!购买。§!"
+ alloys_desc:2 "§E§H合金§!（£alloys£）是高级资源，一般用于军事领域，可用于建造§H舰船§!和§H太空基地§!。我们可以通过下列途径获得更多合金：\n§Y1.§!在殖民行星表面建造£building£§H$building_foundry_1$§!。\n§Y2.§!在已殖民星球的地表建设 £district£ §H工业区§!。\n§Y3.§!在§H市场§!购买。§!"
 
  sr_zro:0 "卓尘"
  sr_zro_desc:0 "一种由独特粒子组成的罕见气溶胶。它在一些世界的陨石坑中被发现，不过其真正来源依然是未解之谜。若具灵能天赋者将其摄入体内，卓尘将极大提高灵能并可能使服用者上瘾。"
@@ -7759,7 +7759,7 @@
  tooltip_organic_and_artificial_assembly_warning:0 "§R注释：有机体和机械体人口装配彼此独立且不叠加。§!"
  building_slave_processing:0 "奴隶处理设施"
  building_slave_processing_desc:1 "这栋庞大且威风的建筑用于处理奴隶劳动力，灭除其自由意志。"
- building_slave_processing_migrate_effect_desc:0 "在这颗行星上失业的§Y$SLAVES$§!也会遵从§Y自动化强制移居§!去往其他殖民地。"
+ building_slave_processing_migrate_effect_desc:0 "行星上失业的§Y$SLAVES$§!会遵从§Y自动化强制移居§!去往其他殖民地。"
  building_slave_processing_slave_army_effect_desc:0 "允许招募§Y$slave_army_plural$§!。\n\n"
  building_robotics_assembly_plant:0 "机器人装配厂"
  building_robotics_assembly_plant_desc:0 "机器人装配厂是建立机器人军队的必要设施。\n每年增加§Y1§!§H$ROBOT_POP_SPECIES_1$§!人口\n人口维护费：£energy£ §Y1§!"
@@ -7807,7 +7807,7 @@
  building_plague_memorial_desc:0 "一座纪念碑，提醒人们不要忘记那场席卷家园的可怕瘟疫。作为国家幸存的标志而屹立着。"
  building_energy_grid:0 "能量输送网"
  building_energy_grid_desc:0 "精心校准的能量输送网能够最大限度地提高发电机的输出功率。"
- building_energy_grid_effect_desc:2 "生产 £energy£ §Y能源§!岗位的基础生产提高§G1§!。"
+ building_energy_grid_effect_desc:2 "£energy£ §Y能源§!生产职位的基础生产提高§G1§!。"
  building_energy_nexus:0 "能量中枢"
  building_energy_nexus_desc:0 "这座庞大的设施集中了行星上所有的能量输送网，提高了效率。"
  building_mineral_purification_plant:2 "矿物精炼厂"

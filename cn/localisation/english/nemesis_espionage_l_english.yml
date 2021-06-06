@@ -148,14 +148,14 @@
  operation_diplomatic_incident_desc:0 "我们会充分利用两国外交上的薄弱联系，创造两国之间的尴尬。"
  operation_diplomatic_incident_on_success:0 "$IF_SUCCESSFUL|E$\n针对[root.target.GetName]的一名特使制造外交场合的尴尬。"
  operation_target_seditionists:0 "帝国：关注颠覆势力"
- operation_target_seditionists_desc:0 "我们的特工会尽一切可能的手段来阻止目标帝国的特使通过游说削弱帝国权威。"
- operation_target_seditionists_on_success:0 "$IF_SUCCESSFUL|E$\n弱化[root.target.GetName]对于帝国权威削弱的尝试。"
- operation_weaken_galactic_empire:1 "帝国：削弱帝国权威"
- operation_weaken_galactic_empire_desc:0 "我们的特工会深入帝国的心脏，削弱星海帝国对星系的掌控力。"
- operation_weaken_galactic_empire_on_success:0 "$IF_SUCCESSFUL|E$\n降低帝国权威。"
+ operation_target_seditionists_desc:0 "我们的特工会尽一切可能的手段来阻止目标帝国的特使通过游说削弱大帝国权威。"
+ operation_target_seditionists_on_success:0 "$IF_SUCCESSFUL|E$\n弱化[root.target.GetName]对于大帝国权威削弱的尝试。"
+ operation_weaken_galactic_empire:1 "帝国：削弱大帝国权威"
+ operation_weaken_galactic_empire_desc:0 "我们的特工会深入帝国的心脏，削弱银河大帝国对银河的掌控力。"
+ operation_weaken_galactic_empire_on_success:0 "$IF_SUCCESSFUL|E$\n降低大帝国权威。"
  operation_spark_rebellion:1 "帝国：煽动叛乱"
- operation_spark_rebellion_desc:1 "星海帝国正处在一场公开叛乱的危险边缘。我们的特工将抓住机会竭尽所能来发动一场在全星系范围内反抗帝国专制暴政的起义。\n\n§R当一个时段结束时如果帝国权威回升到§Y80§!以上行动将被取消。§!"
- operation_spark_rebellion_on_success:0 "$IF_SUCCESSFUL|E$\n成立义军并向星海帝国宣战。"
+ operation_spark_rebellion_desc:1 "银河大帝国正处在一场公开叛乱的危险边缘。我们的特工将抓住机会竭尽所能来发动一场在全银河范围内反抗帝国专制暴政的起义。\n\n§R当一个时段结束时如果大帝国权威回升到§Y80§!以上行动将被取消。§!"
+ operation_spark_rebellion_on_success:0 "$IF_SUCCESSFUL|E$\n成立反叛组织并向银河大帝国宣战。"
 
  MOD_ESPIONAGE_OPERATION_DIFFICULTY_ADD:0 "行动难度"
  MOD_ESPIONAGE_OPERATION_DIFFICULTY_MULT:0 "$MOD_ESPIONAGE_OPERATION_DIFFICULTY_ADD$"
@@ -429,7 +429,7 @@
  operation_sleeper_cells_dont_stack_this:0 "$TRIGGER_FAIL$§R我们已经成功策动位于[root.target.GetName]的卧底§!"
 
  envoy_events.200.name:0 "说客"
- envoy_events.200.desc:1 "星海共同体中夹杂着一阵不和谐的杂音，不是所有人都很友好，肯定地说这其中必有与[Root.GetAdj]利益不一致的人。不妙的是，大使[event_envoy.GetName]似乎正在听取某种错误的声音。在参加由§H[Root.GetOppositionGalcomLobbyists]§!主办的几场会议中，[event_envoy.GetSheHe]的眉毛止不住地上翘。现在一切都水落石出了，一笔可以追溯到某个组织的巨款被查明汇入了[event_envoy.GetHerHim]的账户。\n\n[event_envoy.GetName]的同事们要求将[event_envoy.GetSheHe]召回并发起不信任议案。然而，某些更为狡诈的顾问建议我们和[event_envoy.GetHerHim]达成一笔交易，维持其现有职位以换取获得情报的机会。"
+ envoy_events.200.desc:1 "银河共同体中夹杂着一阵不和谐的杂音，不是所有人都很友好，肯定地说这其中必有与[Root.GetAdj]利益不一致的人。不妙的是，大使[event_envoy.GetName]似乎正在听取某种错误的声音。在参加由§H[Root.GetOppositionGalcomLobbyists]§!主办的几场会议中，[event_envoy.GetSheHe]的眉毛止不住地上翘。现在一切都水落石出了，一笔可以追溯到某个组织的巨款被查明汇入了[event_envoy.GetHerHim]的账户。\n\n[event_envoy.GetName]的同事们要求将[event_envoy.GetSheHe]召回并发起不信任议案。然而，某些更为狡诈的顾问建议我们和[event_envoy.GetHerHim]达成一笔交易，维持其现有职位以换取获得情报的机会。"
  envoy_events.200.A:0 "有什么大不了的吗？"
 
  beholden_to_special_interests:0 "关注特殊利益"
@@ -457,7 +457,7 @@
  STRING_fake_ambassador_CAP:0 "“大使”"
  #GetEnvoyLocation
  STRING_envoy_location_name:0 "[This.envoy_location_country.GetName]"
- STRING_galcom:0 "星海共同体"
+ STRING_galcom:0 "银河共同体"
  STRING_federation_name:0 "[This.Owner.Federation.GetName]"
 
  gestalts_are_boring:0 "[This.GetName]缺乏性格，无法深陷丑闻之中"
@@ -490,7 +490,7 @@
  operation.8230.desc.insulting_envoy:0 "$operation.8230.desc.base$经过一些巧妙的运作，我们成功抹黑了[Root.Target.GetAdj]同§H[offended_party.GetName]§!的关系。他们的一名特使踏入了我们精心设下的圈套，不经意间把自己对对方国家的看法——外界看来这是非常不明智的——吐露了出来。结果，该国的§H外交立场§!被削弱了。"
  operation.8230.desc.insulting_envoy_self:0 "$operation.8230.desc.base$经过一些巧妙的运作，我们成功地抹黑了[Root.Target.GetAdj]同§H我们自己国家§!的关系。他们的一名特使踏入了我们精心设下的圈套，不经意间把自己对我国外交官的看法——外界看来这是非常不明智的——吐露了出来。结果，[Root.Target.GetAdj]的§H外交立场§!被削弱了。"
  operation.8230.desc.galactic_comedy:0 "$operation.8230.desc.base$通过把某位特使压下去的失足行为公之于众，我们成功地让他们陷入了空前的尴尬。结果，该国的§H外交立场§!被削弱了。"
- operation.8230.desc.lobbying:1 "$operation.8230.desc.base$我们成功曝光了一场游说丑闻。我们唯一要做的就是匿名检举揭发他们一位在星海共同体工作的特使，是如何受贿为§H[Root.Target.GetOppositionGalcomLobbyists]§!——一个立场鲜明地反对[Root.Target.GetAdj]利益的组织——讲话的。结果，该国的§H外交立场§!被削弱了。"
+ operation.8230.desc.lobbying:1 "$operation.8230.desc.base$我们成功曝光了一场游说丑闻。我们唯一要做的就是匿名检举揭发他们一位在银河共同体工作的特使，是如何受贿为§H[Root.Target.GetOppositionGalcomLobbyists]§!——一个立场鲜明地反对[Root.Target.GetAdj]利益的组织——讲话的。结果，该国的§H外交立场§!被削弱了。"
  operation.8230.desc.elope:0 "$operation.8230.desc.base$看来他们的一名特使和异星人坠入了爱河——这可是对物种全体莫大的冒犯。经过一些如沐春风的劝说——当然还有我们施以援手帮助此人躲避[Root.Target.GetAdj]的安保队——我们成功地劝说他们选择私奔，前往了一个更加开放、更加容忍的社会。\n\n这一事件造成了一系列公开的§H令人不适的质疑§!，并且让[Root.Target.GetGovernmentName]的外交立场变得十分艰难。"
  operation.8230.desc.wayward:0 "$operation.8230.desc.base$以一些温和的劝说和对录音装置的巧妙利用，我们成功地曝光了他们的一名特使与[Root.Target.GetAdj]所指定的标准有多巨大的偏差。\n\n这一事件造成了一系列公开的§H令人不适的质疑§!，并且让[Root.Target.GetAdj]的外交立场变得十分艰难。"
  operation.8230.desc.substances:0 "$operation.8230.desc.base$通过将他们的一位特使的药物滥用行为公之于众事情得以解决。药物滥用使得一些声名狼藉的毒枭能够对他们的决策能力施加影响。结果，该国的§H外交立场§!被削弱了。"

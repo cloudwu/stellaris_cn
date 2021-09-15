@@ -690,6 +690,12 @@
  district_rw_industrial_plural:0 "工业区段"
  district_rw_industrial_desc:0 "这个环形世界区段遍布叮当作响的工厂和强劲的机械，为帝国提供了有力的工业基础。"
 
+ district_srw_commercial:0 "$district_hab_commercial$"
+ district_srw_commercial_plural:0 "$district_hab_commercial_plural$"
+ district_srw_commercial_desc:0 "一个充满了办公室和工厂的区段，各式商品于此生产和销售。"
+
+ district_srw_mining_desc:0 "这些隧道一直深入到破碎环世界的框架，是我们可以从环结构本身进行材料的开采。"
+
  ##################
  # DEPOSITS
  ##################
@@ -825,3 +831,29 @@
  NAME_Sentinels:0 "哨兵"
  sentinel_army:0 "哨兵"
  sentinel_army_desc:0 "活过来的雕像拥有机械核心，身体嗡嗡作响，皮肤发光。他们的核心放射出辐射脉冲，随时可以狂风暴雨般摧毁敌人！"
+
+ ##################
+ # SHATTERED RING JOBS
+ ##################
+
+ job_scrap_miner:0 "拆解矿工"
+ job_scrap_miner_plural:0 "拆解矿工"
+ job_scrap_miner_desc:0 "$job_scrap_miner_plural$探索破碎环世界的深处以寻找适合建设的材料。"
+ job_scrap_miner_effect_desc:0 "£job_scrap_miner£ $job_scrap_miner_plural$生产£minerals£ §Y$minerals$§!和£alloys£§Y$alloys$§!。"
+
+ job_scrap_miner_drone:0 "拆解采矿成员"
+ job_scrap_miner_drone_plural:0 "拆解采矿成员"
+ job_scrap_miner_drone_desc:0 "$job_scrap_miner_drone_plural$探索破碎环世界的深处以寻找适合建设的材料。"
+ job_scrap_miner_drone_effect_desc:0 "£job_scrap_miner£ $job_scrap_miner_drone_plural$生产£minerals£ §Y$minerals$§!和£alloys£§Y$alloys$§!。"
+
+ mod_job_scrap_miner_add:0 "$job_scrap_miner$职位"
+ mod_job_scrap_miner_drone_add:0 "$job_scrap_miner_drone$职位"
+
+ ##################
+ # BUILDINGS
+ ##################
+
+ building_scrap_processing_plant_desc:0 "处理从环上回收的材料加工厂。"
+ building_scrap_processing_hub_desc:0 "此庞大的中心空间站会接收从环上回收矿物然后分配给各个矿物处理站精炼出优质矿物。"
+
+ mod_planet_miners_alloys_produces_add:0 "来自£job_miner£ [GetMinerPlural]的£alloys£ $alloys$"

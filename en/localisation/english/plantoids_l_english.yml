@@ -1,0 +1,88 @@
+﻿l_english:
+ ########################
+ # Plantoids Species Pack
+ ########################
+
+ civic_idyllic_bloom:0 "Idyllic Bloom"
+ civic_idyllic_bloom_desc:0 "This society has always spent much time on improving and caring for their environment, in pursuit of building a true paradise for its inhabitants."
+ civic_hive_idyllic_bloom:0 "$civic_idyllic_bloom$"
+ civic_hive_idyllic_bloom_desc:0 "The Hive Mind cares for the environment, building a paradise in pursuit of synergistic perfection."
+ civic_tooltip_idyllic_bloom_effects:0 "Can build £building£ §Y$building_gaiaseeders$§! on worlds ideal to your starting species.\n$building_gaiaseeders_all_desc$"
+ civic_tooltip_not_idyllic_bloom:0 "Does NOT have §Y$civic_idyllic_bloom$§! Civic"
+
+ disables_idyllic_bloom:0 "§RChoosing this Ascension Perk will deactivate the $civic_idyllic_bloom$ Civic.§!"
+
+ building_gaiaseeders:0 "Gaia Seeders"
+ building_gaiaseeders_1:0 "$building_gaiaseeders$ - Phase 1"
+ building_gaiaseeders_2:0 "$building_gaiaseeders$ - Phase 2"
+ building_gaiaseeders_3:0 "$building_gaiaseeders$ - Phase 3"
+ building_gaiaseeders_4:0 "$building_gaiaseeders$ - Final Phase"
+ building_gaiaseeders_all_desc:0 "Facilities spread across the planet progressively bring it closer to becoming a §YGaia World§!, through 4 upgrade phases."
+ building_gaiaseeders_1_desc:0 "$building_gaiaseeders_all_desc$\n\nThis is the initial growth boost phase."
+ building_gaiaseeders_2_desc:0 "$building_gaiaseeders_all_desc$\n\nThis phase shifts towards habitability."
+ building_gaiaseeders_3_desc:0 "$building_gaiaseeders_all_desc$\n\nThis phase emphasizes habitability."
+ building_gaiaseeders_4_desc:0 "$building_gaiaseeders_all_desc$"
+ building_gaiaseeders_4_effect_desc:0 "Terraforms the planet into a §YGaia World§! on completion."
+
+ plant.100.name:0 "Idyllic Perfection"
+ plant.100.desc:0 "Through our superior bio-engineering, considerable investments, and years of hard labor, our Gaia Seeding project on §Y[Root.GetName]§! has come to fruition.\n\nFrom this day, §Y[Root.GetName]§! will be considered a true gem among planets, to admire, or mayhap envy."
+ plant.100.a:0 "Let the celebrations begin!"
+ plant.100.b:0 "We did well, time to focus elsewhere now."
+
+ celebrate_idyllic_bloom:0 "Celebrating Idyllic Transformation"
+ celebrate_idyllic_bloom_desc:0 "A planet-wide celebration is taking place following the successful transformation of this world into an idyllic paradise."
+
+### Traits by Byron Aytoun
+
+ trait_plantoid_phototrophic:0 "Phototrophic"
+ trait_plantoid_phototrophic_desc:0 "§LThis species is sustained by a combination of both food and sunlight.§!\n"
+ TRAIT_PLANTOID_PHOTOTROPHIC_EFFECT:0 "Replaces §Y50%§! of Base £food£ §YFood§! Upkeep with £energy£ §YEnergy§! Upkeep."
+
+ trait_plantoid_radiotrophic:0 "Radiotrophic"
+ trait_plantoid_radiotrophic_desc:0 "§LThis species is sustained by a combination of both food and low-energy radiation, and as such can thrive on the most inhospitable of worlds.§!"
+ TRAIT_PLANTOID_RADIOTROPHIC_EFFECT:0 "$TRAIT_PLANTOID_PHOTOTROPHIC_EFFECT$\nPops living on §YTomb Worlds§! have no £energy£ §YEnergy§! Upkeep.\nPop Growth Speed on §YTomb Worlds§! §G+10%§!\nTomb World Habitability: §G+10%§!"
+
+ trait_plantoid_budding:0 "Budding"
+ trait_plantoid_budding_desc:0 "§LThis species is capable of reproduction by budding, in addition to the more usual fertilization of seeds or spores.§!"
+ TRAIT_PLANTOID_BUDDING_EFFECT:0 "Each pop working as a slave or better produces 0.02 £mod_pop_growth_speed£ §Y$MOD_PLANET_POP_ASSEMBLY_ORGANIC_ADD$§!"
+
+### Catalytic Processing by Byron Aytoun
+
+# Regular
+ civic_catalytic_processing:0 "Catalytic Processing"
+ civic_catalytic_processing_desc:0 "By focusing their industrial efforts on catalytic chemistry, this civilization has unlocked the key to using organic materials in the construction of spacebound structures."
+ civic_tooltip_catalytic_processing_effects:0 "Replaces £job_foundry£ §Y$job_foundry_plural$§! with £job_catalytic_technician£ §Y$job_catalytic_technician_plural$§!. $job_catalytic_technician_effect_desc$."
+ civic_tooltip_not_catalytic:0 "Does NOT have §Y$civic_catalytic_processing$§! Civic"
+
+# Corporate
+ civic_corporate_catalytic_processing:0 "$civic_catalytic_processing$"
+ civic_corporate_catalytic_processing_desc:0 "This Megacorporation seeks to maximize profits by recycling excess organic matter into advanced resources suitable for spacebound structures."
+ civic_tooltip_catalytic_processing_corporate_effects:0 "$civic_tooltip_catalytic_processing_effects$"
+
+# Hive Mind
+ civic_hive_catalytic_processing:0 "$civic_catalytic_processing$"
+ civic_hive_catalytic_processing_desc:0 "The Hive Mind reprocesses excess organic matter into advanced resources suitable for spacebound structures."
+ civic_tooltip_hive_catalytic_processing_effects:0 "Replaces £job_alloy_drone£ §Y$job_alloy_drone_plural$§! with £job_catalytic_drone£ §Y$job_catalytic_drone_plural$§!. $job_catalytic_drone_effect_desc$."
+
+# Machine Intelligence
+ civic_machine_catalytic_processing:0 "$civic_catalytic_processing$"
+ civic_machine_catalytic_processing_desc:0 "The Machine Intelligence reprocesses redundant organic matter into advanced resources suitable for spacebound structures."
+ civic_tooltip_machine_catalytic_processing_effects:0 "Replaces £job_fabricator£ §Y$job_fabricator_plural$§! with £job_catalytic_drone£ §Y$job_catalytic_drone_plural$§!. $job_catalytic_drone_effect_desc$."
+
+# Regular & Corporate
+ job_catalytic_technician:0 "Catalytic Technician"
+ job_catalytic_technician_plural:0 "Catalytic Technicians"
+ job_catalytic_technician_desc:0 "Highly trained workers are needed to turn raw organic matter into durable alloys necessary for advanced construction."
+ job_catalytic_technician_effect_desc:0 "£job_catalytic_technician£ $job_catalytic_technician_plural$ turn £food£ §Y$food$§! into £alloys£ §Y$alloys$§!"
+ mod_job_catalytic_technician_add:0 "$job_catalytic_technician$ Jobs"
+ mod_job_catalytic_technician_per_pop:0 "§G+1§! $job_catalytic_technician$ Job per $VALUE$ Pops"
+ mod_job_catalytic_technician_per_pop_short:0 "\n§G+1§! £mod_job_catalytic_technician_add£ per $VALUE$ £pop£"
+
+# Gestalt
+ job_catalytic_drone:0 "Catalytic Drone"
+ job_catalytic_drone_plural:0 "Catalytic Drones"
+ job_catalytic_drone_desc:0 "Valuable organic compounds are processed into durable alloys for naval development and advanced construction by highly-specialized Catalytic Drones."
+ job_catalytic_drone_effect_desc:0 "£job_catalytic_drone£ $job_catalytic_drone_plural$ turn £food£ §Y$food$§! into £alloys£ §Y$alloys$§!"
+ mod_job_catalytic_drone_add:0 "$job_catalytic_drone$ Jobs"
+ mod_job_catalytic_drone_per_pop:0 "§G+1§! $job_catalytic_drone$ Job per $VALUE$ Pops"
+ mod_job_catalytic_drone_per_pop_short:0 "\n§G+1§! £mod_job_catalytic_drone_add£ per $VALUE$ £pop£"

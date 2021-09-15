@@ -9,10 +9,10 @@
 
  origin_default:0 "Prosperous Unification"
  origin_default_desc:0 "A stable planetary unification has allowed this civilization to prosper and grow."
- origin_tooltip_default_effects:0 "Start the game with an additional §Y4§! £pop£ Pops and with an additional §Y2§! Districts."
+ origin_tooltip_default_effects:1 "- Start the game with an additional §Y4§! £pop£ Pops and with an additional §Y2§! Districts."
  origin_mechanists:0 "$civic_mechanists$"
  origin_mechanists_desc:0 "This civilization has been preoccupied with the idea of metallic automatons since the early Steam Age. Although many said it could not be done, the first true robots left the assembly lines long before even rudimentary space flight was achieved."
- origin_tooltip_mechanists_effects:0 "Start the game with §Y8§! £pop£ Pops being robots, and with the technology and infrastructure to build more"
+ origin_tooltip_mechanists_effects:1 "- Start the game with §Y8§! £pop£ Pops being robots, and with the technology and infrastructure to build more"
  origin_syncretic_evolution:0 "$civic_syncretic_evolution$"
  origin_syncretic_evolution_desc:0 "A second species forms an integral part of this civilization. They are big, strong, and most of them have the intelligence of a particularly dim-witted child. Ancient wars have culled their species of their most aggressive tendencies, leaving them quite servile."
  origin_life_seeded:0 "$civic_life_seeded$"
@@ -21,20 +21,20 @@
  origin_post_apocalyptic_desc:0 "Baptized by nuclear fire, this civilization has faced total annihilation - and survived. Devastated yet unbroken, they have rebuilt civilization from the ashes of the old world."
  origin_shattered_ring:0 "Shattered Ring"
  origin_shattered_ring_desc:1 "This civilization inhabits a Ring World built by unknown forerunners. If it can be understood and fully repaired it will grant them great power."
- origin_tooltip_shattered_ring_effects:1 "Start with a partially destroyed §YRing World§! as your homeworld.\nThe Ring World will start with an §Y$d_arcane_generator$§! that is able to maintain some of your segments.\nHabitability preference is set to §Y$trait_pc_ringworld_habitable_preference$§!, making other types of settlement undesirable."
+ origin_tooltip_shattered_ring_effects:2 "- Start with a §H$pc_shattered_ring_habitable$§! as your homeworld.\n- The §H$pc_shattered_ring_habitable$§! can be repaired, unlocking special §H$pc_ringworld_habitable$§! £district£ §HSegment Districts§!.\n- Habitability preference is set to §H$trait_pc_ringworld_habitable_preference$§!, making other types of settlement undesirable."
  origin_tooltip_shattered_ring_effects_lithoid:0 "§R- WARNING: Challenging Origin for Lithoids due to a scarcity of minerals.§!\n$origin_tooltip_shattered_ring_effects$"
  origin_remnants:0 "Remnants"
  origin_remnants_desc:0 "This civilization once spanned the void, controlling much of the Galaxy. They were eventually defeated and almost destroyed, but after a long period of destitution they are returning to the stars."
- origin_tooltip_remnants_effects:0 "Start with a §YRelic World§! as your homeworld. Reclaim your lost glory!"
+ origin_tooltip_remnants_effects:1 "- Start with a §HRelic World§! as your homeworld. Reclaim your lost glory!"
  origin_tree_of_life:0 "Tree of Life"
  origin_tree_of_life_desc:0 "This Hive evolved in a symbiotic relationship with a vast Tree. The Tree grants them many benefits, but its loss would cripple them."
- origin_tooltip_tree_effects:0 "Our Hive gains many bonuses from living on a planet with a Tree of Life present, or penalties if it is absent. Colony ships are more expensive, but will provide new planets with their own sapling."
+ origin_tooltip_tree_effects:1 "- Our Hive gains many bonuses from living on a planet with a §HTree of Life§! present, or penalties if it is absent.\n- §HColony Ships§! are more expensive, but will provide new planets with their own sapling."
  origin_lithoid:0 "Calamitous Birth"
  origin_lithoid_desc:0 "Not native to their 'Homeworld', these Lithoids arrived there when a meteorite slammed into the planet and killed off most of the native life."
- origin_tooltip_lithoid_effects:0 "Start with a §YMassive Crater§! deposit on your Homeworld, giving additional total districts and mining districts.\nAble to build Meteorite Colony ships which travel at great speed but damage their target planets."
+ origin_tooltip_lithoid_effects:1 "- Start with a §HMassive Crater§! deposit on your Homeworld, giving additional total districts and mining districts.\n- Able to build §HMeteorite Colony Ships§! which travel at great speed but damage their target planets."
  origin_machine:0 "Resource Consolidation"
  origin_machine_desc:0 "This Machine Intelligence has long-since consolidated all resources in their home system into their Capital world, covering it entirely with Machinery."
- origin_tooltip_machine_effects:0 "Start with a §YMachine World§! as your Homeworld"
+ origin_tooltip_machine_effects:1 "- Start with a §HMachine World§! as your Homeworld"
 
  d_arcane_generator:0 "Arcane Generator"
  d_arcane_generator_desc:0 "This ancient machine seems to respond to our needs by producing the resources needed to upkeep some of our segments."
@@ -46,6 +46,8 @@
  d_decrepit_tunnels_3_desc:0 "$d_decrepit_tunnels_1_desc$"
  d_segment_rubble_1:0 "£blocker£ Ancient Rubble"
  d_segment_rubble_1_desc:0 "Broken down machinery and other debris obstructs workers from utilizing the entire segment."
+ d_segment_rubble_1_small:0 "$d_segment_rubble_1$"
+ d_segment_rubble_1_small_desc:0 "$d_segment_rubble_1_desc$"
  d_segment_rubble_2:0 "$d_segment_rubble_1$"
  d_segment_rubble_2_desc:0 "$d_segment_rubble_1_desc$"
  d_segment_rubble_3:0 "$d_segment_rubble_1$"
@@ -1064,13 +1066,13 @@
  resolution_mutualdefense_repeal_3_desc:0 "$resolution_mutualdefense_repeal_1_desc$"
  resolution_mutualdefense_repeal_3_effect_success:2 "Repeals the §Y$resolution_mutualdefense_enemy_of_my_enemy$§! resolution, leaving §Y$resolution_mutualdefense_military_readiness_act$§! as galactic law.\n\n"
 
- resolution_mutualdefense_repeal_4:0 "§RRepeal $resolution_mutualdefense_military_readiness_act$§!"
+ resolution_mutualdefense_repeal_4:1 "§RRepeal $resolution_mutualdefense_castigation_proclamation$§!"
  resolution_mutualdefense_repeal_4_desc:0 "$resolution_mutualdefense_repeal_1_desc$"
- resolution_mutualdefense_repeal_4_effect_success:2 "Repeals the §Y$resolution_mutualdefense_military_readiness_act$§! resolution, leaving §Y$resolution_mutualdefense_enemy_of_my_enemy$§! as galactic law.\n\n"
+ resolution_mutualdefense_repeal_4_effect_success:3 "Repeals the §Y$resolution_mutualdefense_castigation_proclamation$§! resolution, leaving §Y$resolution_mutualdefense_enemy_of_my_enemy$§! as galactic law.\n\n"
 
  resolution_mutualdefense_repeal_5:0 "§RRepeal $resolution_mutualdefense_renegade_containment$§!"
  resolution_mutualdefense_repeal_5_desc:0 "$resolution_mutualdefense_repeal_1_desc$"
- resolution_mutualdefense_repeal_5_effect_success:2 "Repeals the §Y$resolution_mutualdefense_renegade_containment$§! resolution, leaving §Y$resolution_mutualdefense_military_readiness_act$§! as galactic law.\n\n"
+ resolution_mutualdefense_repeal_5_effect_success:3 "Repeals the §Y$resolution_mutualdefense_renegade_containment$§! resolution, leaving §Y$resolution_mutualdefense_castigation_proclamation$§! as galactic law.\n\n"
 
  resolution_mutualdefense_naval_weight:0 "$MOD_DIPLO_WEIGHT_NAVAL_MULT$"
  resolution_mutualdefense_the_readied_shield:0 "The Readied Shield"
@@ -1370,7 +1372,7 @@
  VOTE_TALLY_TOOLTIP_DESC:0 "Currently, this Resolution will be $STATUS$.\nThere is £time£ $DAYS|Y$ days left to vote on this Resolution."
  VOTE_TALLY_DESC:0 "§HVote Tally§!\nCurrently, this Resolution will be $STATUS$. There is £time£ $DAYS|Y$ days left to vote on this Resolution."
  VOTE_WEIGHT_SPLIT:0 "§HDiplomatic Weight Distribution§!\n    §GSupporting: $SUPPORTING|0$§!\n    §ROpposing: $OPPOSING|0$§!\n    §gAbstaining: $ABSTAINING|0$§!"
- VOTE_DETAILS_DESC:1 "If this Resolution Passes, its effects will be applied upon the entire [global_event_country.GetGalCommunityOrGalImperium]. Its modifiers will continously affect all members, even those who voted against it on the Senate Floor."
+ VOTE_DETAILS_DESC:1 "If this Resolution Passes, its effects will be applied upon the entire [global_event_country.GetGalCommunityOrGalImperium]. Its modifiers will continuously affect all members, even those who voted against it on the Senate Floor."
  SENATE_IN_SESSION:0 "Senate is in session £time£ $DAYS|Y$"
  SENATE_IN_SESSION_DESC:0 "§HSenate Is In Session§!\nThe Galactic Community has £time£ $DAYS|Y$ to Vote on the Senate Floor to §EPass§! or §RDefeat§! $RESOLUTION|H$."
  SENATE_IN_RECESS:0 "Senate is in recess £time£ $DAYS|Y$"
@@ -1583,7 +1585,7 @@
  COUNCIL_SIZE_TOOLTIP:1 "§EThe number of seats on the §H[global_event_country.GetGalCouncilOrImpCouncil]§! is dictated by §HCouncil§! Resolutions§!"
  SET_COUNCIL_SIZE_DESC:1 "Set the number of positions on the $GALACTIC_COUNCIL$ to $VALUE|Y$"
  council_member:0 "Council Member"
- ADD_PERMANENT_COUNCILLOR:1 "Grant $COUNTRY|Y$ a permanent seat on the  $GALACTIC_COUNCIL|H$"
+ ADD_PERMANENT_COUNCILLOR:1 "Grant $COUNTRY|Y$ a permanent seat on the $GALACTIC_COUNCIL|H$"
  REMOVE_PERMANENT_COUNCILLOR:1 "Remove the permanent $GALACTIC_COUNCIL|H$ seat granted to $COUNTRY|Y$"
 
  IS_PERMANENT_COUNCILLOR:1 "$COUNTRY|Y$ has a permanent seat on the $GALACTIC_COUNCIL|H$"
@@ -1660,6 +1662,9 @@
 
  decision_transplant_tree:0 "Transplant Tree of Life"
  decision_transplant_tree_desc:0 "A network of Trees must be established here for our Hive to flourish."
+ decision_shattered_ring_project:0 "Repair the Shattered Ring"
+ decision_shattered_ring_project_desc:0 "This world has been broken for untold ages, and it is time to right this wrong. We will restore the ring's advanced facilities."
+ decision_shattered_ring_project_effects:0 "Turns the $pc_shattered_ring_habitable$ into a §Y$pc_ringworld_habitable$§!, unlocking special £district£ §YSegment Districts§!"
 
  ################
  ### Colony Type
@@ -1859,7 +1864,7 @@
  ### Origin - Galactic Doorstep text
  origin_galactic_doorstep:0 "Galactic Doorstep"
  origin_galactic_doorstep_desc:0 "This civilization has a dormant §Ygateway§! in their home system - potential technological benefit, or a looming menace?"
- origin_tooltip_galactic_doorstep_effects:0 "Start with a dormant §Ygateway§! in your home system."
+ origin_tooltip_galactic_doorstep_effects:1 "- Start with a dormant §Hgateway§! in your home system."
 
  START_SCREEN_GALACTIC_DOORSTEP:0 "The mysterious construct in our solar system was discovered a few hundred years ago. Due to its dark, metallic properties the artifact was named §HThe Black Crown§!, and its majestic presence had profound effect on our society - it unified our people in both spirit and pursuit.\n\nSpace flight became the highest priority of our scientific community, and the eager quest for this technology brought with it a series of other beneficial discoveries.\n\nThe Black Crown turned out to be dormant, but we learned an important lesson; it's not the destination that matters - it's the journey. And now - thanks to the beckoning of the Black Crown - our species has the means by which we can visit the stars."
  START_SCREEN_GALACTIC_DOORSTEP_MACH:0 "The mysterious construct in our solar system was discovered a few hundred years ago. Due to its dark, metallic properties the artifact was designated §HThe Black Crown§!, and its distinct presence had profound effect on our operations - gathering more data became imperative.\n\nSpace flight became the highest priority of our research and development sub-routines, and the process of reaching this alien technology brought with it a series of other beneficial discoveries that were consecutively implemented.\n\nThe Black Crown turned out to be dormant, but the improvements and upgrades applied in order to reach it did increase our general output, and we now have the capacity to visit the stars."
@@ -1918,14 +1923,14 @@
  origin_eldest_sibling:0 "Eldest Sibling"
  origin_eldest_sibling_desc:0 "This society has an old legend about splinter groups of the population who left the planet in search for other planets to colonize in the solar system."
 
- origin_tooltip_eldest_sibling_effects:0 "Start with a §Ytwo other primitive civilizations§! in your home system."
+ origin_tooltip_eldest_sibling_effects:1 "- Start with §Ytwo other primitive civilizations§! in your home system."
 
  START_SCREEN_ELDEST_SIBLING:0 "We know that our species cultivated rich and advanced civilizations before ours, but the story of what happened to them is mostly myth and speculation.\n\nOne legend that has survived is the one of the §YStar Reachers§! - pioneers that somehow managed to leave the homeworld, and supposedly settled on nearby planets. A thrilling legend, no doubt. One which breathtaking scope and adventurous spirit is matched only by its glaring lack of evidence.\n\nWe are now in a time of interstellar flight. Technology allows us to leave the atmosphere of our homeworld to - perhaps once again - explore space. Let's see how well the old legend holds up."
 
  ### Origin - On The Shoulders Of Giants text
  origin_shoulders_of_giants:0 "On the Shoulders of Giants"
- origin_shoulders_of_giants_desc:0 "Due to some unknown past, this civilization has hidden boons in their solar system, placed there by a mysterious benefactor."
- origin_tooltips_shoulders_of_giants_effects:0 "Start with an §YArchaeological Site§! related to a mysterious benefactor in your home system."
+ origin_shoulders_of_giants_desc:1 "This civilization has hidden boons in their solar system, placed there in a distant past by a mysterious benefactor."
+ origin_tooltips_shoulders_of_giants_effects:1 "- Start with an §HArchaeological Site§! related to a mysterious benefactor in your home system."
 
  START_SCREEN_SHOULDERS_OF_GIANTS:1 "Ours is a history of oddities and inconsistencies. We've found ancient city ruins older than some archaeological excavations of primitive villages. We have unearthed saws, axes and even rifles which far pre-date stone-tipped spears and bows.\n\nA peculiar history did not, however, prevent us from stepping readily into a futuristic era of spaceflight. We have now managed to escape the gravity of our home planet, aiming for other planets and bodies in our solar system - and beyond.\n\nWe had scarcely left the atmosphere before the oddities emerged anew; strange signals of alien origin coming from within our own solar system."
 
@@ -2211,9 +2216,10 @@
 
  origin_void_dwellers:0 "Void Dwellers"
  origin_void_dwellers_desc:0 "This civilization has made its home in space for as long as it has maintained records - life in a typical planetary environment is anathema to them. They live on three orbital habitats that were only recently united."
- origin_tooltip_void_dwellers_effects:3 "- Start with three §YOrbital Habitats§! and the technology to build more\n- Members of your species thrive on Habitats and produce §G15%§! more there\n- Severe habitability and growth penalties on all normal planets\n- Hydroponic Farms have §G+1§! £job_farmer£ $job_farmer$ Job"
+ origin_tooltip_void_dwellers_effects:5 "- Start with three §HOrbital Habitats§! and the technology to build more\n- Members of your species thrive on Habitats and produce §G+15%§! more there\n- Severe habitability penalties alongside a §R-15%§! production penalty on all normal planets\n- Hydroponic Farms have §G+1§! £job_farmer£ $job_farmer$ Job"
  trait_void_dweller_1:0 "Void Dweller"
- trait_void_dweller_1_desc:0 "§LThis species thrives in orbital habitats, with an instinctive ability to efficiently navigate their maze-like corridors and complicated architecture.§!"
+ trait_void_dweller_1_desc:1 "§LThis species thrives in orbital habitats, with an instinctive ability to efficiently navigate their maze-like corridors and complicated architecture. However their weakened immune systems do not respond well to a planetary environment.§!"
+ void_dweller_trait_tooltip:0 "Pop Happiness on Non-Artificial Worlds: §R-30%§!"
  trait_void_dweller_2:0 "$trait_void_dweller_1$"
  trait_void_dweller_2_desc:0 "§LThis species is used to the recycled air and sterile compartments of orbital habitats, and their weakened immune systems do not respond well to a planetary environment.§!"
  d_arcane_replicator:0 "Arcane Replicator"
@@ -2221,9 +2227,12 @@
  START_SCREEN_VOID_DWELLERS:0 "To most, the vacuum of space is a hostile environment to be conquered or overcome. To us, it is home. For thousands of years, our species has resided on three space stations, each orbiting a different sun in a trinary star system. Whether they were built by our ancestors or someone else, we do not know.\n\nAlthough our biology would suggest that our species at some point originated on a planet, recorded history makes no mention of it. Some speculate that the shattered planetary remnants found beneath one of our stations is the lost homeworld of our species, but the truth may never be known.\n\nIt has only been a few centuries since spaceflight allowing travel between our three stations was invented - or rediscovered, depending on who you ask. Suspicion and mistrust gradually gave way to trade and mutual cooperation. By the time of our first hyperdrive, the three habitats had united under one flag."
  START_SCREEN_SCION:0 "Early in our history, before we had developed much in the way of technology, our alien benefactors made themselves known to us. They explained, in terms our bewildered ancestors could understand, that our species showed great promise. With much patience, they guided us onto a path that would help our civilization reach its full potential.\n\nOn those few occasions when we strayed from this path, they corrected our course - firmly, as any parent would - but soon our scientists had mastered electricity, then atomic power, and then crude spaceflight. Under the tutelage of our overseers, we have now constructed our first hyperdrives."
 
+ mod_habitat_jobs_produces_mult:0 "Pop Output on Habitats"
+ mod_non_artificial_planet_jobs_produces_mult:0 "Pop Output on Non-Artificial Worlds"
+
  origin_scion:0 "Scion"
  origin_scion_desc:0 "A Fallen Empire has meddled in the development of this civilization for thousands of years, guiding them onto a path of their choosing."
- origin_tooltip_scion_effects:0 "Start as a vassal of a Fallen Empire"
+ origin_tooltip_scion_effects:1 "- Start as a vassal of a Fallen Empire"
  opinion_scion:0 "Scion"
 
  origin.10.a.desc:0 "Hello, faithful [Root.GetSpeciesNamePlural]. You have done well for yourselves. With our guidance, you have mastered the technology of hyperspace travel and are now ready to set off into the stars for the first time... much as we once did, countless eons ago.\n\nHave no fear - if we did not think you ready, we would not have allowed events to carry you as far as they have. Go now, and make us proud."
@@ -2748,7 +2757,7 @@
  federations2.4.B:0 "They were right to strive for peace."
  federations2.6.name:0 "The Fall of the Shallarians"
  federations2.6.desc.fe:0 "[Root.Leader.GetName] has uncovered the truth of the Shallarian demise. It seems that they lived in peace for hundreds of years before the rise of the [fanatic_xenophobe_fe.GetSpeciesName] Empire took them by surprise. A far cry from the decadent and weary [fanatic_xenophobe_fe.GetName] of today, in that era the [fanatic_xenophobe_fe.GetSpeciesNamePlural] were a violently aggressive expansionist race.\n\nUpon their first encounter with each other, the Shallarians considered the [fanatic_xenophobe_fe.GetSpeciesNamePlural] to be ignorant and uncivilized upstarts in need of guidance; the [fanatic_xenophobe_fe.GetSpeciesNamePlural] saw the entire Shallarian outlook as anathema. So great was their horror at this utopian pacifism that they resolved the Shallarians must be wiped from the face of the galaxy. Since their victims had no military, the ensuing war was as short as it was brutal. When the deed was done, the [fanatic_xenophobe_fe.GetSpeciesNamePlural] left behind an automated guardian to ensure that no survivors could return and thus revive the civilization they so hated.\n\nIn addition to these records, [Root.Leader.GetName] found a data core explaining Shallarian terraforming methods. Their technology in this field is far superior to our own, so this knowledge will surely benefit our empire."
- federations2.6.desc.afe:0 "[Root.Leader.GetName] has uncovered the truth of the Shallarian demise. It seems that they lived in peace for hundreds of years, before the rise of the [fanatic_xenophobe_fe.GetSpeciesNamePlural] took them by surprise. Then, as now, the [fanatic_xenophobe_fe.GetSpeciesNamePlural] were a violently aggressive expansionist race. pon their first encounter with each other,  the Shallarians considered the [fanatic_xenophobe_fe.GetSpeciesNamePlural] to be ignorant and uncivilized upstarts in need of guidance; the [fanatic_xenophobe_fe.GetSpeciesNamePlural] saw the entire Shallarian outlook as anathema. So great was their horror at the concept this utopian pacifism that they resolved the Shallarians must be wiped from the face of the galaxy. Since their victims had no military, the ensuing war was as short as it was brutal. When the deed was done, the [fanatic_xenophobe_fe.GetSpeciesNamePlural] left behind an automated guardian to ensure that no survivors could return and thus revive the civilization they so hated.\n\nIn addition to these records, [Root.Leader.GetName] found a data core explaining Shallarian terraforming methods. Their technology in this field is far superior to our own, so this knowledge will surely benefit our empire."
+ federations2.6.desc.afe:0 "[Root.Leader.GetName] has uncovered the truth of the Shallarian demise. It seems that they lived in peace for hundreds of years, before the rise of the [fanatic_xenophobe_fe.GetSpeciesNamePlural] took them by surprise. Then, as now, the [fanatic_xenophobe_fe.GetSpeciesNamePlural] were a violently aggressive expansionist race. pon their first encounter with each other, the Shallarians considered the [fanatic_xenophobe_fe.GetSpeciesNamePlural] to be ignorant and uncivilized upstarts in need of guidance; the [fanatic_xenophobe_fe.GetSpeciesNamePlural] saw the entire Shallarian outlook as anathema. So great was their horror at the concept this utopian pacifism that they resolved the Shallarians must be wiped from the face of the galaxy. Since their victims had no military, the ensuing war was as short as it was brutal. When the deed was done, the [fanatic_xenophobe_fe.GetSpeciesNamePlural] left behind an automated guardian to ensure that no survivors could return and thus revive the civilization they so hated.\n\nIn addition to these records, [Root.Leader.GetName] found a data core explaining Shallarian terraforming methods. Their technology in this field is far superior to our own, so this knowledge will surely benefit our empire."
  federations2.6.A:0 "A cautionary tale."
  federations2.6.B:0 "Well what did they expect?"
  federations2.6.C:0 "Our circuits are saddened."
@@ -2817,7 +2826,7 @@
  FAVORS_SAME_SIDE:1 "§RThis Empire is already supporting this Resolution. There is no need to call in a favor from them to gain their support.§!"
  ASK_TO_LEAVE_FEDERATION:0 "Ask to Leave Federation"
  POPUP_ASK_TO_LEAVE_FEDERATION_DESC:0 "Do you want to send a request to the President of the $FEDERATION|H$ to leave the Federation?"
- ADD_BUILDING_COLONIZABLE:0 "Cannot add $BUILDING|Y$ to  $PLANET|Y$ because it is not colonizable"
+ ADD_BUILDING_COLONIZABLE:0 "Cannot add $BUILDING|Y$ to $PLANET|Y$ because it is not colonizable"
  ACTION_ASK_TO_LEAVE_FEDERATION_TITLE:0 "Ask to Leave Federation"
  ACTION_ASK_TO_LEAVE_FEDERATION_DESC:0 "$FEDERATION_VIEW_ASK_TO_LEAVE_FEDERATION_BUTTON_DESC$"
  ACTION_ASK_TO_LEAVE_FEDERATION_OFFER_DESC:0 "If the request is granted, the §H[Actor.GetName]§! will leave the §H[Actor.GetAllianceName]§!. If the request is refused, they will gain the §YSecession§! Casus Belli against us."
@@ -2902,6 +2911,12 @@
  BUILD_PLAN_ENTRY:0 "$BUILDABLE|Y$ on $PLANET|Y$ ($WEIGHT|Y0$)"
  NO_BUILD_PLAN_DESC:0 "$COUNTRY|Y$ currently has no Build Plan"
  CURRENT_PLAN:0 "Economic Plan: $PLAN|Y$"
+ BUILD_PLAN_START_INCOME:0 "Economic status before build plan starts"
+ BUILD_PLAN_CURRENT_INCOME:0 "Income"
+ BUILD_PLAN_CURRENT_DEFICIT:0 "Deficit"
+ BUILD_PLAN_NEEDED_INCOME:0 "Needed Extra Income"
+ BUILD_PLAN_PREDICTION:0 "Predicted BuildPlan result"
+ BUILD_PLAN_DETAILS:0 "BuildPlanDetails saving set to $BOOL|Y$"
 
  action.123.name:0 "Last [From.GetSpeciesNamePlural] Abducted"
  action.123.desc:0 "The last of the primitive §H[From.GetSpeciesNamePlural]§! have been abducted into slavery from the surface of [From.From.GetName], their homeworld. A few scattered survivors might still be roaming the [From.From.GetPlanetMoon]'s wilderness, but not enough to maintain any kind of civilization."

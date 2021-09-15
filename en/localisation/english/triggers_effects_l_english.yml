@@ -163,6 +163,10 @@
  HAS_NOT_NUM_ARTIFICIAL_POP_ASSEMBLY:0 "Amount of Artificial Pops gained per Year is NOT $COMPARATOR$ $NUM|Y$"
  HAS_NUM_BUILDINGS:0 "Number of $BUILDING$ Buildings is $COMPARATOR$ $NUM|Y$"
  HAS_NOT_NUM_BUILDINGS:0 "Number of $BUILDING$ Buildings is NOT $COMPARATOR$ $NUM|Y$"
+ HAS_NUM_BUILDINGS_EXISTING_AND_IN_CONSTRUCTION:0 "Number of $BUILDING$ Buildings (including queued) is $COMPARATOR$ $NUM|Y$"
+ HAS_NOT_NUM_BUILDINGS_EXISTING_AND_IN_CONSTRUCTION:0 "Number of $BUILDING$ Buildings (including queued) is NOT $COMPARATOR$ $NUM|Y$"
+ HAS_NUM_BUILDINGS_IN_CONSTRUCTION:0 "Number of $BUILDING$ Buildings queued is $COMPARATOR$ $NUM|Y$"
+ HAS_NOT_NUM_BUILDINGS_IN_CONSTRUCTION:0 "Number of $BUILDING$ Buildings queued is NOT $COMPARATOR$ $NUM|Y$"
  HAS_NUM_DISTRICTS:0 "Number of $DISTRICT$ is $COMPARATOR$ $NUM|Y$"
  HAS_NOT_NUM_DISTRICTS:0 "Number of $DISTRICT$ is NOT $COMPARATOR$ $NUM|Y$"
  HAS_NUM_DISTRICTS_ANY:0 "Number of Districts is $COMPARATOR$ $NUM|Y$"
@@ -183,6 +187,8 @@
  HAS_NOT_UNEMPLOYED:0 "Number of Unemployed Pops is NOT $COMPARATOR$ $NUM|Y$"
  HAS_NUM_POPS:0 "Number of Pops is $COMPARATOR$ $NUM|Y$"
  HAS_NOT_NUM_POPS:0 "Number of Pops is NOT $COMPARATOR$ $NUM|Y$"
+ HAS_NUM_SAPIENT_POPS:0 "Number of sapient Pops is $COMPARATOR$ $NUM|Y$"
+ HAS_NOT_NUM_SAPIENT_POPS:0 "Number of sapient Pops is NOT $COMPARATOR$ $NUM|Y$"
  HAS_NUM_STRATEGIC_RESOURCES:0 "Has access to $COMPARATOR$ $NUM|Y$ Strategic Resources"
  HAS_NOT_NUM_STRATEGIC_RESOURCES:0 "Does NOT have access to $COMPARATOR$ $NUM|Y$ Strategic Resources"
  HAS_NUM_POP_FACTIONS:0 "Number of Pop Factions is $COMPARATOR$ $NUM|Y$"
@@ -275,6 +281,8 @@
  HAS_NOT_SURVEYED_CLASS:0 "Has NOT surveyed $CLASS|H$"
  IS_IDEAL_PLANET_CLASS:1 "Planet is ideal class for $SPECIES$"
  IS_NOT_IDEAL_PLANET_CLASS:1 "Planet is NOT ideal class for $SPECIES$"
+ IS_IDEAL_PLANET_CLASS_DETAILED:0 "$IS_IDEAL_PLANET_CLASS$ (§Y$PLANET_CLASS$§!)"
+ IS_NOT_IDEAL_PLANET_CLASS_DETAILED:0 "$IS_NOT_IDEAL_PLANET_CLASS$ (§Y$PLANET_CLASS$§!)"
  VARIABLE_VALUE:0 "Value of Variable $VARIABLE|Y$ is $COMPARATOR$ $NUM|Y$"
  VARIABLE_NOT_VALUE:0 "Value of Variable $VARIABLE|Y$ is NOT $COMPARATOR$ $NUM|Y$"
  VARIABLE_ARITHMETIC_VALUE:0 "Arithmetic trigger of Variable $VARIABLE|Y$ is $COMPARATOR$ $NUM|Y$"
@@ -731,6 +739,8 @@
  NUM_RARE_TECHS_TRIGGER:0 "Number of researched rare technologies is $COMPARATOR$ $NUM|Y$"
  NUM_RARE_TECHS_NOT_TRIGGER:0 "Number of researched rare technologies is NOT $COMPARATOR$ $NUM|Y$"
  NUM_REPEATABLE_TECHS_TRIGGER:0 "Number of researched repeatable technologies is $COMPARATOR$ $NUM|Y$"
+ NUM_TECHS_TRIGGER:0 "Number of researched technologies is $COMPARATOR$ $NUM|Y$"
+ NUM_TECHS_NOT_TRIGGER:0 "Number of researched technologies is NOT $COMPARATOR$ $NUM|Y$"
  NUM_REPEATABLE_TECHS_NOT_TRIGGER:0 "Number of researched repeatable technologies is NOT $COMPARATOR$ $NUM|Y$"
  SECTOR_CONTROLLED_TRIGGER:0 "Is controlled by a sector"
  SECTOR_CONTROLLED_NOT_TRIGGER:0 "Is NOT controlled by a sector"
@@ -921,6 +931,9 @@
  HAS_FORMER_PURGE_TYPE:0 "Former purge type was: $SPECIES_RIGHT|Y$"
  HAS_NOT_FORMER_PURGE_TYPE:0 "Former purge type was NOT: $SPECIES_RIGHT|Y$"
 
+ CAN_LIVE_ON_PLANET: "Can live on $PLANET|Y$"
+ CAN_NOT_LIVE_ON_PLANET: "Cannot live on $PLANET|Y$"
+
  TRIGGER_HAS_INVALID_CIVIC:2 "Has inactive $CIVIC|Y$ Civic"
  TRIGGER_HAS_NOT_INVALID_CIVIC:1 "Does NOT have inactive $CIVIC|Y$ Civic"
  TRIGGER_HAS_VALID_CIVIC:3 "Has $CIVIC|Y$ Civic"
@@ -1032,6 +1045,8 @@
  RESTORE_HITPOINTS:1 "Restores $SHIP|Y$ to its full hull points."
  DO_NOT_RESTORE_HITPOINTS:1 "Does not restore $SHIP|Y$ to its full hull points."
  SET_SURVEYED:0 "Survey data collected.\n"
+ SET_UNSURVEYED:0 "Survey data lost.\n"
+ SET_VISITED_EFFECT:0 "Discovers the $SYSTEM|Y$ system.\n"
  COUNTRY_IS_DESTROYED:0 "Country is destroyed"
  COUNTRY_IS_NOT_DESTROYED:0 "Country is not destroyed"
  CLEAR_VARIABLE:0 "Clears the $VAR|Y$ variable."
@@ -1041,6 +1056,7 @@
  MULTIPLY_VARIABLE:0 "Multiplies the $VAR|Y$ variable by $VALUE|Y$."
  DIVIDE_VARIABLE:0 "Divides the $VAR|Y$ variable by $VALUE|Y$."
  MODULO_VARIABLE:0 "Modulos the $VAR|Y$ variable by $VALUE|Y$."
+ ROUND_VARIABLE_TO:0 "Rounds the $VAR|Y$ variable to the closest $VALUE|Y$."
  VARIABLE_IS_SET_TRIGGER:0 "Variable $VAR|Y$ is set."
  VARIABLE_IS_NOT_SET_TRIGGER:0 "Variable $VAR|Y$ is NOT set."
  TYPE_EVENT:2 "The event '§Y$WHICH$§!' happens$TIME$.\n"
@@ -1255,6 +1271,8 @@
  effect_random_pool_leader:0 "Random recruitable Leader"
  effect_every_pool_leader:0 "Every recruitable Leader"
  set_halted_effect:0 "Megastructure halted $DAYS|Y$ days."
+ NUM_TRADITION_CATEGORIES:0 "Has unlocked $COMPARATOR$ $VALUE|Y$ Tradition Categories"
+ NUM_TRADITION_CATEGORIES_NOT:0 "Has NOT unlocked $COMPARATOR$ $VALUE|Y$ Tradition Categories"
  TRIGGER_HAS_TRADITION:0 "Has $TRADITION|Y$ Tradition"
  TRIGGER_NOT_HAS_TRADITION:0 "Does NOT have $TRADITION|Y$ Tradition"
  TRIGGER_HAS_ASCENSION_PERK:0 "Has $TRADITION|Y$ Ascension Perk"
@@ -1412,6 +1430,9 @@
 
  SCIENTIST_COUNT_TRIGGER:0 "Number of Hired Scientists is $COMPARATOR$ $NUM|Y$"
  SCIENTIST_COUNT_NOT_TRIGGER:0 "Number of Hired Scientists is NOT $COMPARATOR$ $NUM|Y$"
+
+ NUM_RELICS_TRIGGER:0 "Number of collected Relics is $COMPARATOR$ $NUM|Y$"
+ NUM_RELICS_NOT_TRIGGER:0 "Number of collected Relics is NOT $COMPARATOR$ $NUM|Y$"
 
  HAS_EXPANSION_PLAN:0 "AI has system(s) it wants to expand to"
  HAS_NO_EXPANSION_PLAN:0 "AI does NOT have systems it wants to expand to"
@@ -1666,6 +1687,18 @@
  count_associate_trigger:0 "Number of Associate Members$CONDITIONS$ $IS_NOT$ $COMPARATOR$ $NUM|Y$"
  count_associate_all_trigger:0 "$IS_ALL_NOT$ Associate Members fulfill the following conditions"
 
+ any_galcom_member_trigger:0 "Any Galactic Community Member"
+ effect_random_galcom_member:0 "Random Galactic Community Member"
+ effect_every_galcom_member:0 "Every Galactic Community Member"
+ count_galcom_member_trigger:0 "Number of Galactic Community Members$CONDITIONS$ $IS_NOT$ $COMPARATOR$ $NUM|Y$"
+ count_galcom_member_all_trigger:0 "$IS_ALL_NOT$ Galactic Community Members fulfill the following conditions"
+
+ any_council_member_trigger:0 "Any Council Member"
+ effect_random_council_member:0 "Random Council Member"
+ effect_every_council_member:0 "Every Council Member"
+ count_council_member_trigger:0 "Number of Council Members$CONDITIONS$ $IS_NOT$ $COMPARATOR$ $NUM|Y$"
+ count_council_member_all_trigger:0 "$IS_ALL_NOT$ Council Members fulfill the following conditions"
+
  effect_random_fleet_in_orbit:0 "Random Fleet in Orbit"
  effect_every_fleet_in_orbit:0 "Every Fleet in Orbit"
 
@@ -1733,8 +1766,17 @@
  ID_NOT_IDLE:0 "Is NOT Idle"
  ID_IDLE:0 "Is Idle"
 
+ CLIMATE_TRIGGER:0 "Has a $CLIMATE|Y$ Climate"
+ NOT_CLIMATE_TRIGGER:0 "Does NOT have a $CLIMATE|Y$ Climate"
+
  IS_SCOPE_TYPE:0 "Is a $SCOPETYPE$"
  IS_NOT_SCOPE_TYPE:0 "Is NOT a $SCOPETYPE$"
+
+ SET_MALE_RULER_TITLE_EFFECT:0 "Title of male rulers is set to $NAME$"
+ SET_FEMALE_RULER_TITLE_EFFECT:0 "Title of female rulers is set to $NAME$"
+ SET_MALE_HEIR_TITLE_EFFECT:0 "Title of male heirs is set to $NAME$"
+ SET_FEMALE_HEIR_TITLE_EFFECT:0 "Title of female heirs is set to $NAME$"
+ CLEAR_CUSTOM_TITLES_EFFECT:0 "Resets ruler and heir titles to default"
 
  TRIGGER_IN_SENSOR_RANGE:0 "$WHAT|Y$ is in sensor range of $WHO|Y$"
  TRIGGER_NOT_IN_SENSOR_RANGE:0 "$WHAT|Y$ is NOT in sensor range of $WHO|Y$"
@@ -1743,3 +1785,15 @@
 
  CAN_BUY_RESOURCE_ON_MARKET_TRIGGER:0 "Can buy $RESOURCE|Y$ on market"
  CAN_NOT_BUY_RESOURCE_ON_MARKET_TRIGGER:0 "Cannot buy $RESOURCE|Y$ on market"
+
+ any_orbital_station_trigger:0 "Any Orbital Station"
+ effect_random_orbital_station:0 "Random Orbital Station"
+ effect_every_orbital_station:0 "Every Orbital Station"
+ count_orbital_station_trigger:0 "Number of Orbital Stations$CONDITIONS$ $IS_NOT$ $COMPARATOR$ $NUM|Y$"
+ count_orbital_station_all_trigger:0 "$IS_ALL_NOT$ Orbital Stations fulfill the following conditions"
+
+ STARBASE_IS_NOT_BUILDING:0 "Starbase is NOT building $COMP|Y$"
+ STARBASE_IS_BUILDING:0 "Starbase is building $COMP|Y$"
+
+ STARBASE_IS_NOT_FIRST_IN_QUEUE:0 "$FIRST|Y$ is NOT in the building queue before $SECOND|Y$"
+ STARBASE_IS_FIRST_IN_QUEUE:0 "$FIRST|Y$ is in the building queue before $SECOND|Y$"

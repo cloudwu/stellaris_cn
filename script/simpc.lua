@@ -2,7 +2,7 @@ local path1 = "../cn/localisation/english/"
 local path2 = "../cn/localisation/simp_chinese/"
 
 local function convert(filename)
-	local f = io.open(path2 .. filename:gsub("_english", "_simp_chinese"), "wb")
+	local f,err = io.open(path2 .. filename:gsub("_english", "_simp_chinese"), "wb")
 	local replace
 	for line in io.lines(path1 .. filename) do
 		if not replace then

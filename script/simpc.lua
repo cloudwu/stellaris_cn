@@ -23,8 +23,9 @@ local list = {
 "ancient_relics_events_l_english.yml",
 "ancient_relics_l_english.yml",
 "apocalypse_l_english.yml",
-"dip_messages_l_english.yml",
+"clone_army_l_english.yml",
 "diplo_stances_l_english.yml",
+"dip_messages_l_english.yml",
 "distant_stars_l_english.yml",
 "dlc_recommendations_l_english.yml",
 "event_chains_l_english.yml",
@@ -32,6 +33,7 @@ local list = {
 "events_3_l_english.yml",
 "events_4_l_english.yml",
 "events_5_l_english.yml",
+"events_6_l_english.yml",
 "events_l_english.yml",
 "federations_anniversary_l_english.yml",
 "federations_l_english.yml",
@@ -60,6 +62,7 @@ local list = {
 "new_scripted_loc_l_english.yml",
 "observer_events_l_english.yml",
 "observer_l_english.yml",
+"plantoids_l_english.yml",
 "pop_factions_l_english.yml",
 "prescripted_l_english.yml",
 "projects_2_l_english.yml",
@@ -81,9 +84,6 @@ local list = {
 "utopia_ascension_l_english.yml",
 "utopia_l_english.yml",
 "utopia_megastructures_l_english.yml",
-"clone_army_l_english.yml",
-"events_6_l_english.yml",
-"plantoids_l_english.yml",
 }
 
 for _,file in ipairs(list) do

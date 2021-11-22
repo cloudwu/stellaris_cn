@@ -1,11 +1,11 @@
 ﻿l_english:
 
- ###      #        ##      #  #     ###     ###     # #     ###     #       #       ###     ###       ## 
- #  #     #       #  #     ## #     #        #      # #      #      #       #       #       #  #     #   
- ###      #       ####     # ##     ##       #      ##       #      #       #       ##      ###       #  
- #        #       #  #     #  #     #        #      # #      #      #       #       #       #  #       # 
- #        ###     #  #     #  #     ###      #      # #     ###     ###     ###     ###     #  #     ##  
- 
+ ###      #        ##      #  #     ###     ###     # #     ###     #       #       ###     ###       ##
+ #  #     #       #  #     ## #     #        #      # #      #      #       #       #       #  #     #
+ ###      #       ####     # ##     ##       #      ##       #      #       #       ##      ###       #
+ #        #       #  #     #  #     #        #      # #      #      #       #       #       #  #       #
+ #        ###     #  #     #  #     ###      #      # #     ###     ###     ###     ###     #  #     ##
+
  FLEETORDER_DESTROY_PLANET_WITH_PLANET_KILLER_CRACKER:0 "Preparing to crack $PLANET|Y$"
  FLEETORDER_DESTROY_PLANET_WITH_PLANET_KILLER_SHIELDER:0 "Preparing to shield $PLANET|Y$"
  FLEETORDER_DESTROY_PLANET_WITH_PLANET_KILLER_NUKE:0 "Preparing to nuke $PLANET|Y$"
@@ -13,30 +13,39 @@
  FLEETORDER_DESTROY_PLANET_WITH_PLANET_KILLER_GODRAY:0 "Preparing to make a believer out of $PLANET|Y$"
  FLEETORDER_DESTROY_PLANET_WITH_PLANET_KILLER_HYPNOSIS:0 "Preparing to manipulate $PLANET|Y$"
  FLEETORDER_DESTROY_PLANET_WITH_PLANET_KILLER_NANOBOTS:0 "Preparing to cyborgize $PLANET|Y$"
+ FLEETORDER_DESTROY_PLANET_WITH_PLANET_KILLER_DELUGE:0 "Preparing to drench $PLANET|Y$"
  FLEETORDER_PLANET_KILLER_WINDUP:0 "Charging weapon: $PROGRESS|Y0%$"
  FLEETORDER_PLANET_KILLER_FIRING:0 "Firing weapon: $PROGRESS|Y0%$"
- 
+
  STATUS_QUO_CREATE_NEW_EMPIRE:0 "A new $SPECIES|Y$ Empire will be created as an ally or subject of $ACTOR|Y$ out of $SYSTEMS|H$ occupied $TARGET|Y$ system(s)"
- 
+
  MESSAGE_DESC_FOR_PLANET_KILLER_CRACKER:0 "was utterly destroyed by"
  MESSAGE_DESC_FOR_PLANET_KILLER_SHIELDER:0 "was encased in an impenetrable shield by"
  MESSAGE_DESC_FOR_PLANET_KILLER_NEUTRON:0 "was purged of all higher forms of life by"
  MESSAGE_DESC_FOR_PLANET_KILLER_GODRAY:0 "had divine belief enforced on it by"
  MESSAGE_DESC_FOR_PLANET_KILLER_NANOBOTS:0 "was assimilated by nanobots from"
+ MESSAGE_DESC_FOR_PLANET_KILLER_DELUGE:0 "was subjected to a deluge of water by"
 
+ is_habitable_non_artificial:0 "§R$TRIGGER_FAIL$Target must be a habitable, non-artificial planet§!"
+ is_not_oceanic:0 "§R$TRIGGER_FAIL$Target is already an §Y$pc_ocean$§!§!"
  is_not_a_standard_planet_or_megastructure:1 "§R$TRIGGER_FAIL$Target is not a standard planetary body or habitable megastructure§!"
  is_not_a_habitable_planet_or_megastructure:0 "§R$TRIGGER_FAIL$Target is not a habitable planet or megastructure§!"
  is_not_a_standard_planet:0 "§R$TRIGGER_FAIL$Target is not a standard planetary body§!"
  is_not_hostile_or_primitive:0 "§R$TRIGGER_FAIL$Target is not owned by a Primitive or hostile Empire§!"
+ is_not_hostile_or_primitive_or_ours:0 "§R$TRIGGER_FAIL$Target is neither within our borders, nor owned by a Primitive or hostile Empire§!"
  is_shielded:0 "§R$TRIGGER_FAIL$Target is permanently Shielded§!"
  is_not_hostile:0 "§R$TRIGGER_FAIL$Target is not owned by a hostile Empire§!"
  is_unpopulated:0 "§R$TRIGGER_FAIL$Target is unpopulated§!"
+ cant_destroy_own_colonies:0 "§R$TRIGGER_FAIL$Target is one of our colonies§!"
+ requires_purge_allowed:0 "§R$TRIGGER_FAIL$Requires §Y$purge_allowed$§! policy, as pops lacking the §Y$trait_aquatic$§! trait will be killed§!"
+ will_purge_non_aquatic_pops:0 "§RPops lacking the §Y$trait_aquatic$§! trait will be killed§!"
  is_not_hostile_cracker:0 "Target is owned by a hostile §HEmpire§!"
  not_barren_molten_frozen_toxic_test_fire:2 "Target is a §YHabitable§!, §Y$pc_barren$§!, §Y$pc_molten$§!, §Y$pc_frozen$§!, or §Y$pc_toxic$§! test fire target"
  not_owned_test_fire:0 "Target is an §Yowned colony§! test fire target"
  primitives_not_in_borders:0 "§R$TRIGGER_FAIL$Primitive target is not within our borders§!"
+ primitives_not_full_interference:0 "§R$TRIGGER_FAIL$Requires §Y$interference_full$§! $policy_interference$ policy§!"
+ primitives_not_active_or_full_interference:0 "§R$TRIGGER_FAIL$Requires §Y$interference_active$§! or §Y$interference_full$§! $policy_interference$ policy§!"
  no_assimilatable_pops:0 "§R$TRIGGER_FAIL$Target does not house any Pops suitable for cybernetic assimilation§!"
-
  enable_colossus_project:0 "§HIssues Special Project:§! Colossus Project\n\n"
  describe_colossus_project:0 "Completing the §YColossus Project§! unlocks the §YColossus§! §HShip Type§! that can be armed with §RPlanet-Killer Weapons§!."
 
@@ -95,12 +104,12 @@
  apoc.130.a.weaker:0 "Alarming."
  apoc.130.a.stronger:0 "Suddenly a contender."
  apoc.130.a.pacif:0 "Abhorrent."
- 
-  ##     ###      ##      ###      ###       ##       ##     ###     #   #     ###     ###     #   # 
- #        #      #  #     #  #     #  #     #  #     #       #       #   #      #      #       #   # 
-  #       #      ####     ###      ###      ####      #      ##      #   #      #      ##      # # # 
-   #      #      #  #     #  #     #  #     #  #       #     #        # #       #      #       # # # 
- ##       #      #  #     #  #     ###      #  #     ##      ###       #       ###     ###      # #  
+
+  ##     ###      ##      ###      ###       ##       ##     ###     #   #     ###     ###     #   #
+ #        #      #  #     #  #     #  #     #  #     #       #       #   #      #      #       #   #
+  #       #      ####     ###      ###      ####      #      ##      #   #      #      ##      # # #
+   #      #      #  #     #  #     #  #     #  #       #     #        # #       #      #       # # #
+ ##       #      #  #     #  #     ###      #  #     ##      ###       #       ###     ###      # #
 
  STARBASE_STARBASE_TAB:0 "Starbase"
  STARBASE_DEFENSES_TAB:0 "Defenses"
@@ -199,10 +208,10 @@
  STARBASE_BUILDQUEUE_DOWN:0 "§GClick to move item down.\nShift-click to move item to bottom.§!"
  STARBASE_MODIFIER_EFFECTS:0 "Modifier Effects"
 
-  ##       ##      ###     ###     #   #      ##      #   #      ## 
- #        #  #      #      #       #   #     #  #      # #      #   
- # ##     ####      #      ##      # # #     ####       #        #  
- #  #     #  #      #      #       # # #     #  #       #         # 
+  ##       ##      ###     ###     #   #      ##      #   #      ##
+ #        #  #      #      #       #   #     #  #      # #      #
+ # ##     ####      #      ##      # # #     ####       #        #
+ #  #     #  #      #      #       # # #     #  #       #         #
   ##      #  #      #      ###      # #      #  #       #       ##
 
  gateway_ruined:0 "Disabled Gateway"
@@ -238,7 +247,7 @@
  requires_starhold:0 "§RRequires §Y$starbase_starhold$§! upgrade.§!"
  requires_starfortress:0 "§RRequires §Y$starbase_starfortress$§! upgrade.§!"
  requires_citadel:0 "§RRequires §Y$starbase_citadel$§! upgrade.§!"
- 
+
  requires_colonized_planet:0 "§RRequires an owned planet in the system.§!"
  requires_trade_planet:0 "§RRequires a colonized planet or a §YTrader Enclave§! in the system.§!"
  requires_black_hole:0 "§RRequires a §Y$pc_black_hole$§! in the system.§!"
@@ -247,14 +256,14 @@
  requires_curator_agreement:0 "§RRequires a §YDiplomatic Agreement§! with the local Curator Enclave.§!"
  requires_artist_agreement:0 "§RRequires a §YDiplomatic Agreement§! with the local Artisan Enclave.§!"
  requires_artisans:0 "§RRequires an §YArtisan Troupe Enclave§! in the system.§!"
-  
+
  requires_technology_gateway_activation:0 "$TRIGGER_FAIL$Requires technology £physics£ §Y$tech_gateway_activation$§!."
  requires_technology_gateway_construction:0 "$TRIGGER_FAIL$Requires technology £physics£ §Y$tech_gateway_construction$§!."
 
  NAVY_SIZE_STARBASES_TITLE:0 "From Starbases"
  TECH_UNLOCK_STARBASE_MODULE:0 "§HUnlocks Starbase Module:§! $NAME$"
  TECH_UNLOCK_STARBASE_BUILDING:0 "§HUnlocks Starbase Building:§! $NAME$"
- 
+
  tech_ftl_inhibitor:0 "FTL Inhibition"
  tech_ftl_inhibitor_desc:1 "Gravity well projectors can be used to create localized pockets of space where safe entry into hyperspace is impossible. The immense power requirements and the size of the projectors prohibits their use on anything smaller than a starbase."
  ION_CANNON_CORE:0 "Ion Cannon Core"
@@ -310,7 +319,7 @@
  INCREASE_FM:4 "$INCREASE_HEADER$\n§GClick here to increase the number of ships of this design to be used in this fleet§!\n§YShift-click§! to increase to the next multiple of 10, §YControl-click§! to add the maximum possible amount of ships"
  REINFORCE_ALL_FM:0 "§HReinforce All§!\n§GClick here to reinforce all current fleets to full capacity§!"
  ADD_DESIGN_FM:1 "§HAdd Ship Design to Fleet§!\n§GClick here to add a new ship design to this fleet§!"
- 
+
  FLEET_VIEW_OPEN_FLEET_MANAGER:1 "§HFleet Manager§!\n§GClick to open the Fleet Manager for this fleet§!"
  FLEET_VIEW_DESIGN_UPGRADABLE:0 "Design can be upgraded."
 
@@ -349,7 +358,7 @@
  uneasy_faith_desc:0 "The populace is on some level aware that the fervor of their faith is not wholly their own."
  neutron_bombarded:0 "Neutron Bombardment"
  neutron_bombarded_desc:0 "The ecosystem of the planet is still recovering from the devastating effects of a Neutron Sweep."
- 
+
  opinion_cracked_my_world:0 "Cracked our World"
  opinion_cracked_a_world:0 "Cracked a World"
  opinion_swept_my_world:0 "Swept our World"
@@ -358,6 +367,8 @@
  opinion_converted_a_world:0 "Converted a World"
  opinion_assimilated_my_world:0 "Assimilated our World"
  opinion_assimilated_a_world:0 "Assimilated a World"
+ opinion_assimilated_a_primitive_world:0 "Assimilated a Primitive World"
+ opinion_assimilated_a_primitive_world_phile:0 "$opinion_cracked_a_primitive_world_phile$"
  opinion_shielded_my_world:0 "Shielded our World"
  opinion_shielded_a_world:1 "Shielded a World"
  opinion_cracked_a_primitive_world:0 "Cracked a Primitive World"
@@ -366,7 +377,11 @@
  opinion_swept_a_primitive_world_phile:0 "$opinion_cracked_a_primitive_world_phile$"
  opinion_assimiliated_a_primitive_world:0 "Assimilated a Primitive World"
  opinion_assimiliated_a_primitive_world_phile:0 "$opinion_cracked_a_primitive_world_phile$"
- 
+ opinion_drenched_a_world:0 "Drenched a World"
+ opinion_drenched_my_world:0 "Drenched our World"
+ opinion_drenched_a_primitive_world:0 "Drenched a Primitive World"
+ opinion_drenched_a_primitive_world_phile:0 "$opinion_cracked_a_primitive_world_phile$"
+
  NUM_HYPERLANES_TOOLTIP:0 "§HHyperlane Density§!\nMultiplies the standard number of hyperlanes that will be generated in the galaxy."
  NUM_HYPERLANES:0 "Hyperlane Density"
 
@@ -393,6 +408,13 @@
  planet_destruction.501.name:0 "Nanobots Dispersed"
  planet_destruction.501.desc:0 "The [From.From.GetName] has completed deployment of the assimilation nanobot payload, calculated to be sufficient to cybernetically dominate all sapient organics on [From.GetName].\n\nWe did not build the [From.From.GetName] with any sensors or instruments to measure our success, but we know. We open our eyes for the first time down on [From.GetName]. We see ourselves and are seen by ourselves.\n\nOn [From.GetName]'s surface, there is only us."
  planet_destruction.501.tooltip:0 "All §Yorganic§! Pops gain the §Y$trait_cybernetic$§! trait."
+
+ planet_destruction.701.name:0 "Planet Drenched"
+ planet_destruction.701.desc:0 "As the column of water descending from the [FromFrom.GetName] dissipates, the surface of [From.GetName] is wholly transformed. Where once there were sprawling continents bereft of water, now there is only the welcoming shimmer of pristine, blue ocean ready to be inhabited."
+ planet_destruction.701.tooltip:0 "The planet becomes an §Y$pc_ocean$§!.\nAll Pops lacking the §Y$trait_aquatic$§! trait die."
+
+ DELUGE_EXHAUSTED_ICE_TITLE:0 "Ice Source Exhausted"
+ DELUGE_EXHAUSTED_ICE_DESC:0 "Our use of the §YDeluge Machine§! on §Y[This.GetName]§! has exhausted our supply of ice in the $SYSTEM|Y$ system, so the §Y$sm_ice_mining_station$§! there has been disbanded."
 
  planet_destruction.610.name:0 "[outraged_FE.GetName]"
  planet_destruction.610.desc:0 "[From.GetName] was a holy world.\n\n\nYou do not know the true extent of your sin.\n\n\nNot yet."
@@ -680,7 +702,7 @@
  irassian_minerals_desc:0 "Once a major anchorage of the Irassian Starfleet, the ruined naval yards that litter the orbit of this planet have deposited a wealth of mineral resources to its surface."
  irassian_energy:0 "Energy Production Site"
  irassian_energy_desc:0 "This gas giant served as the key energy production site of the Irassian Concordat in the early stages of its interstellar expansion. A dense belt of ancient orbital power stations still ring the planet."
- 
+
  ARMIES_LOST:0 "War Exhaustion due to Army Losses"
  ARMIES_LOST_LONG:0 "$ATTR|R$ due to $ARMIES|R$ armies lost"
  SHIPS_LOST:0 "War Exhaustion due to Ship Losses"
@@ -691,6 +713,6 @@
  WAROVERVIEW_BATTLE_THEIR_ARMIES_LOST:0 "$NUM|G$ armies lost"
  OCCUPATION_SUMMARY:0 "Occupation"
  OCCUPATION_SUMMARY_LONG:0 "Occupation $ATTR|R$ due to $SYSTEMS|R$ occupied systems and $PLANETS|R$ occupied planets"
- 
+
  FLEET_TEMPLATE_COMMAND_MAX_MULTIPLE:0 "Adding $NUM|Y$ ships would go over the fleet command limit."
  FLEET_TEMPLATE_COMMAND_MIN_MULTIPLE:0 "Cannot remove $NUM|Y$ ships from the fleet template"

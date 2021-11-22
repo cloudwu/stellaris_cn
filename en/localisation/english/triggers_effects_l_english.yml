@@ -113,6 +113,8 @@
  IS_SAME_EMPIRE:0 "Is §Y$OTHER$§!"
  IS_NOT_SAME_EMPIRE:0 "Is NOT §Y$OTHER$§!"
  IS_PLANET_CLASS:0 "Is §Y$CLASS$§!"
+ IS_PLANET_CLASS_DLC:0 "Has selected a §Y$CLASS$§! start"
+ IS_PLANET_CLASS_DLC_NOT:0 "Has NOT selected a §Y$CLASS$§! start"
  IS_NOT_PLANET_CLASS:0 "Is NOT §Y$CLASS$§!"
  HAS_DESIGNATION:0 "Is §Y$DESIGNATION$§!"
  HAS_NOT_DESIGNATION:0 "Is NOT §Y$DESIGNATION$§!"
@@ -782,8 +784,10 @@
  IS_BERSERKER_TO_TOOLTIP:0 "Is Berserk towards $TARGET|Y$."
  IS_NOT_ANGRY_TO_TOOLTIP:0 "Is NOT Angry towards $TARGET|Y$."
  IS_ANGRY_TO_TOOLTIP:0 "Is Angry towards $TARGET|Y$."
- IS_NOT_HOSTILE_TO_TOOLTIP:0 "Is NOT Hostile towards $TARGET|Y$."
- IS_HOSTILE_TO_TOOLTIP:0 "Is Hostile towards $TARGET|Y$."
+ IS_NOT_HOSTILE_TO_TOOLTIP:1 "Does NOT have a Hostile attitude towards $TARGET|Y$."
+ IS_HOSTILE_TO_TOOLTIP:1 "Has a Hostile attitude towards $TARGET|Y$."
+ IS_HOSTILE_TRIGGER:0 "Is Hostile towards $COUNTRY|Y$"
+ IS_HOSTILE_NOT_TRIGGER:0 "Is NOT Hostile towards $COUNTRY|Y$"
  IS_NOT_DOMINEERING_TO_TOOLTIP:0 "Is NOT Domineering towards $TARGET|Y$."
  IS_DOMINEERING_TO_TOOLTIP:0 "Is Domineering towards $TARGET|Y$."
  IS_NOT_NEUTRAL_TO:0 "Is NOT Neutral towards $TARGET|Y$."
@@ -931,8 +935,8 @@
  HAS_FORMER_PURGE_TYPE:0 "Former purge type was: $SPECIES_RIGHT|Y$"
  HAS_NOT_FORMER_PURGE_TYPE:0 "Former purge type was NOT: $SPECIES_RIGHT|Y$"
 
- CAN_LIVE_ON_PLANET: "Can live on $PLANET|Y$"
- CAN_NOT_LIVE_ON_PLANET: "Cannot live on $PLANET|Y$"
+ CAN_LIVE_ON_PLANET:0 "Can live on $PLANET|Y$"
+ CAN_NOT_LIVE_ON_PLANET:0 "Cannot live on $PLANET|Y$"
 
  TRIGGER_HAS_INVALID_CIVIC:2 "Has inactive $CIVIC|Y$ Civic"
  TRIGGER_HAS_NOT_INVALID_CIVIC:1 "Does NOT have inactive $CIVIC|Y$ Civic"
@@ -1136,7 +1140,7 @@
  REMOVE_DISTRICT_EFFECT:0 "Remove District"
  REMOVE_ALL_DISTRICTS_EFFECT:1 "Remove All Districts"
  REMOVE_SPECIFIC_DISTRICT_EFFECT:0 "Remove $DISTRICT|Y$"
- CHANGE_PLANET_SIZE:0 "Change the size by $VALUE|Y$"
+ CHANGE_PLANET_SIZE:1 "Planet Size of $PLANET|Y$: $VALUE|Y$"
  SET_PLANET_SIZE:0 "Change the size to: $VALUE|Y$"
  SET_BLOCKER_EFFECT:0 "Set Blocker: $BLOCKER|Y$"
  SET_BLOCKER_RANDOM_EFFECT:0 "Set Random Blocker"
@@ -1169,7 +1173,7 @@
  RANDOM_RIM_SYSTEM_EFFECT:0 "Random system on the galactic rim"
  SET_PLANET_MAX_HEALTH_EFFECT:0 "Set the maximum health to $VALUE|Y$"
  SET_PLANET_HEALTH_EFFECT:0 "Set current health to $VALUE|Y$"
- ADD_TRAIT:0 "§H$LEADER$§! now has the §H$TRAIT$§! trait\n"
+ ADD_TRAIT:1 "§H$LEADER$§! gains the §H$TRAIT$§! trait, granting the following effects:\n$EFFECTS$\n"
  REMOVE_TRAIT:0 "Removed $TRAIT$ trait from $LEADER$\n"
  CHANGE_COUNTRY_TYPE_EFFECT:0 "Country Type will change to $TYPE|Y$"
  ADD_MISSION_PROGRESS:0 "Add mission progress: $NUM|Y$"
@@ -1185,6 +1189,8 @@
  NUM_ASSOCIATES_NOT:0 "$FEDERATION|Y$ does NOT have $COMPARATOR$ $VALUE|Y$ associates"
  LEADER_GENDER_TRIGGER:0 "$LEADER|Y$ is $GENDER|Y$"
  LEADER_NOT_GENDER_TRIGGER:0 "$LEADER|Y$ is NOT $GENDER|Y$"
+ SPECIES_GENDER_TRIGGER:0 "Species has $GENDER|Y$ gender"
+ SPECIES_NOT_GENDER_TRIGGER:0 "Species does NOT have $GENDER|Y$ gender"
  POP_NOT_MEMBER_OF_ANY_FACTION_TRIGGER:0 "$POP|Y$ is NOT in any Pop Faction"
  POP_MEMBER_OF_ANY_FACTION_TRIGGER:0 "$POP|Y$ is in a Pop Faction"
  POP_NOT_MEMBER_OF_FACTION_TRIGGER:0 "$POP|Y$ is NOT a member of $FACTION|Y$"
@@ -1430,6 +1436,9 @@
 
  SCIENTIST_COUNT_TRIGGER:0 "Number of Hired Scientists is $COMPARATOR$ $NUM|Y$"
  SCIENTIST_COUNT_NOT_TRIGGER:0 "Number of Hired Scientists is NOT $COMPARATOR$ $NUM|Y$"
+
+ CIVICS_COUNT_TRIGGER: "Number of Civics is $COMPARATOR$ $NUM|Y$"
+ CIVICS_COUNT_NOT_TRIGGER: "Number of Civics is NOT $COMPARATOR$ $NUM|Y$"
 
  NUM_RELICS_TRIGGER:0 "Number of collected Relics is $COMPARATOR$ $NUM|Y$"
  NUM_RELICS_NOT_TRIGGER:0 "Number of collected Relics is NOT $COMPARATOR$ $NUM|Y$"
@@ -1753,6 +1762,8 @@
  COMPLETE_CRISIS_OBJECTIVE:3 "The $OBJ|Y$ crisis objective is completed, granting $REWARD|G$ Menace."
  DEACTIVATE_MENACE_PERK:0 "The Menace Perk $PERK$ was deactivated for $COUNTRY$"
  ACTIVATE_CRISIS_PROGRESSION:1 "Allows the $COUNTRY$ to progress towards §YBecoming the §RCrisis§!§!."
+
+ CREATE_NEBULA_EFFECT:0 "A Nebula is created in the $SYSTEM|Y$ system"
 
  ADD_VICTORY_SCORE_EFFECT:0 "$VALUE$ is added to the Victory Score of $COUNTRY|Y$"
 

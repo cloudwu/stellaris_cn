@@ -8,7 +8,7 @@
  ORIGIN_INITIALIZER_RESTRICTION:0 "Cannot change due to current Origin selection"
 
  origin_default:0 "Prosperous Unification"
- origin_default_desc:0 "A stable planetary unification has allowed this civilization to prosper and grow."
+ origin_default_desc:1 "Through its strife and triumphs, this society has reached every young civilization's ambition: a homeworld with unified goals, and a path open to the stars."
  origin_tooltip_default_effects:1 "- Start the game with an additional §Y4§! £pop£ Pops and with an additional §Y2§! Districts."
  origin_mechanists:0 "$civic_mechanists$"
  origin_mechanists_desc:0 "This civilization has been preoccupied with the idea of metallic automatons since the early Steam Age. Although many said it could not be done, the first true robots left the assembly lines long before even rudimentary space flight was achieved."
@@ -25,7 +25,7 @@
  origin_tooltip_shattered_ring_effects_lithoid:0 "§R- WARNING: Challenging Origin for Lithoids due to a scarcity of minerals.§!\n$origin_tooltip_shattered_ring_effects$"
  origin_remnants:0 "Remnants"
  origin_remnants_desc:0 "This civilization once spanned the void, controlling much of the Galaxy. They were eventually defeated and almost destroyed, but after a long period of destitution they are returning to the stars."
- origin_tooltip_remnants_effects:1 "- Start with a §HRelic World§! as your homeworld. Reclaim your lost glory!"
+ origin_tooltip_remnants_effects:2 "- Start with a §HRelic World§! (Size: £planetsize£ §Y22§!) as your homeworld. Reclaim your lost glory!"
  origin_tree_of_life:0 "Tree of Life"
  origin_tree_of_life_desc:0 "This Hive evolved in a symbiotic relationship with a vast Tree. The Tree grants them many benefits, but its loss would cripple them."
  origin_tooltip_tree_effects:1 "- Our Hive gains many bonuses from living on a planet with a §HTree of Life§! present, or penalties if it is absent.\n- §HColony Ships§! are more expensive, but will provide new planets with their own sapling."
@@ -690,7 +690,7 @@
 
  requires_strongest:0 "§RRequires $law_category_succession_type$ to be §Y$succession_type_strongest$§!.§!"
 
- requires_megacorp_or_merchant:0 "§RRequires you to be either a §Y$gov_megacorporation$§! or to have the §Y$civic_merchant_guilds$§! civic.§!"
+ requires_megacorp_or_merchant:1 "§RRequires you to have one of the §Y$civic_merchant_guilds$§! or §Y$civic_corporate_dominion$§! civics or to be a §Y$gov_megacorporation$§!.§!"
  disabled_for_hegemony:0 "§RA §Y$hegemony_federation$§! cannot ban subject nations from joining.§!"
  president_no_effect:0 "No effect."
 
@@ -1674,6 +1674,9 @@
  col_bureau_desc:1 "An entire world dedicated to the ever-expanding needs of the bureaucracy."
  col_bureaucracy_custom:1 "Administrative Capacity from Bureaucrats is increased by §G2§!.\nBureaucrat Job Upkeep reduced by §G10%§!. \n£pop£ Pop Ethics Shift Chance reduced by §G20%§!."
 
+ col_habitat_bureau:0 "Bureaucratic Station"
+ col_habitat_bureau_desc:0 "An entire habitat dedicated to the ever-expanding needs of the bureaucracy."
+
  ################
  ### Modifiers
  ################
@@ -1686,6 +1689,8 @@
 
  prosp_uni_mod:0 "Prosperous Unification"
  prosp_uni_mod_desc:0 "Since Unification Day the economy has been booming!"
+ prosp_uni_mod_gestalt:0 "Prosperous Unification"
+ prosp_uni_mod_gestalt_desc:0 "Production has been booming since the collective achieved total control over [Planet.GetName]."
 
  no_lifetree:0 "No Tree of Life"
  no_lifetree_desc:0 "Without the Tree, we are incomplete."
@@ -2225,6 +2230,7 @@
  d_arcane_replicator:0 "Arcane Replicator"
  d_arcane_replicator_desc:0 "This ancient machine is nestled deep within the habitat's interior, built into its main reactor from where it also draws its power. A relic of whomever originally built this habitat, its matter replication technology is utterly incomprehensible to us."
  START_SCREEN_VOID_DWELLERS:0 "To most, the vacuum of space is a hostile environment to be conquered or overcome. To us, it is home. For thousands of years, our species has resided on three space stations, each orbiting a different sun in a trinary star system. Whether they were built by our ancestors or someone else, we do not know.\n\nAlthough our biology would suggest that our species at some point originated on a planet, recorded history makes no mention of it. Some speculate that the shattered planetary remnants found beneath one of our stations is the lost homeworld of our species, but the truth may never be known.\n\nIt has only been a few centuries since spaceflight allowing travel between our three stations was invented - or rediscovered, depending on who you ask. Suspicion and mistrust gradually gave way to trade and mutual cooperation. By the time of our first hyperdrive, the three habitats had united under one flag."
+ START_SCREEN_VOID_DWELLERS_SOL:0 "To most, the vacuum of space is a hostile environment to be conquered or overcome. To us, it is home. For thousands of years, our species has resided on three space stations, each orbiting a different planet in our dilapidated solar system. Whether they were built by our ancestors or someone else, we do not know.\n\nAlthough our biology would suggest that our species at some point originated on a planet, recorded history makes no mention of it. Some speculate that the toxic wasteland of a planet found beneath one of our stations is the lost homeworld of our species, but the truth may never be known.\n\nIt has only been a few centuries since spaceflight allowing travel between our three stations was invented - or rediscovered, depending on who you ask. Suspicion and mistrust gradually gave way to trade and mutual cooperation. By the time of our first hyperdrive, the three habitats had united under one flag."
  START_SCREEN_SCION:0 "Early in our history, before we had developed much in the way of technology, our alien benefactors made themselves known to us. They explained, in terms our bewildered ancestors could understand, that our species showed great promise. With much patience, they guided us onto a path that would help our civilization reach its full potential.\n\nOn those few occasions when we strayed from this path, they corrected our course - firmly, as any parent would - but soon our scientists had mastered electricity, then atomic power, and then crude spaceflight. Under the tutelage of our overseers, we have now constructed our first hyperdrives."
 
  mod_habitat_jobs_produces_mult:0 "Pop Output on Habitats"

@@ -135,8 +135,8 @@
  operation_crisis_beacon:0 "天灾信标"
  operation_crisis_beacon_desc:1 "他们说，任何想从恐怖的野兽口中逃脱的人，重要的不是自己跑的有多快，而是和谁一起跑。一些投放在我们目标首都的诱饵或许有助于做到这一点……"
  operation_crisis_beacon_on_success:0 "$IF_SUCCESSFUL|E$\n诱骗危机派系的舰队前往[root.target.GetAdj]的首都。"
- operation_crisis_beacon_too_recent_timer:0 "$TRIGGER_FAIL$§R我们必须至少等待§Y[This.Owner.crisis_beacon_timer]§!才能再次诱骗危机势力。§!"
  operation_crisis_beacon_too_recent:0 "$TRIGGER_FAIL$§R我们必须至少等待§Y4年§!才能再次诱骗危机势力。§!"
+ operation_crisis_beacon_too_recent_timer:0 "$TRIGGER_FAIL$§R我们必须至少等待§Y[This.Owner.crisis_beacon_timer]§!才能再次诱骗危机势力。§!"
  operation_gather_information:0 "信息收集"
  operation_gather_information_desc:3 "我们的特工会针对§Y[This.Target.GetName]§!编纂信息，并在编纂完毕后发送一份§Y情报§!报告。这将会暴露对方的弱点，在一定时间内增加我方的§Y最大渗透等级§!。\n\n指派一名§Y线人§!执行这样的行动，结果可能会偏向线人的偏好。"
  operation_gather_information_no_dlc_desc:2 "我们的特工会针对§Y[This.Target.GetName]§!编纂信息，并在编纂完毕后发送一份§Y情报§!报告。这将会暴露对方的弱点，在一定时间内增加我方的§Y最大渗透等级§!。"
@@ -285,6 +285,7 @@
  edict_tracking_implants_desc:0 "通过强制皮下植入来监控移动和行动可以大幅度增强我们帝国的内部安全。忠诚的公民不应对政府有任何隐瞒。"
  edict_thought_enforcement:0 "思想钢印"
  edict_thought_enforcement_desc:0 "心灵感应者可以监视具有错误思想的公民，并能在发现时及时纠正。"
+ edict_thought_enforcement_effect:0 "加密：§G+1§!\n幸福度：§R-10%§!\n主流思潮吸引力：§G+25%§!\n$planet_telepaths$提供§G-5§!犯罪度"
 
  edict_synaptic_reinforcement:0 "突触强化"
  edict_synaptic_reinforcement_desc:0 "强化我们的突触节点作为我们殖民地的中心焦点，从而增强节点附近工蜂的生产效率。"
@@ -548,6 +549,7 @@
  envoy_events.220.desc.mol:0 "$envoy_events.220.desc.start$，用令人作呕的黏液污染诸物。\n\n$envoy_events.220.desc.end$"
  envoy_events.220.desc.lit:0 "$envoy_events.220.desc.start$，智力与花园里的卵石别无二致。\n\n$envoy_events.220.desc.end$"
  envoy_events.220.desc.nec:0 "$envoy_events.220.desc.start$，闻着像从上个月堆到现在的垃圾。\n\n$envoy_events.220.desc.end$"
+ envoy_events.220.desc.aqu:0 "$envoy_events.220.desc.start$，只会在舱底咕噜咕噜。\n\n$envoy_events.220.desc.end$"
  envoy_events.220.desc.robot:0 "$envoy_events.220.desc.start$，处理器性能低于家用厨具的平均水平。\n\n$envoy_events.220.desc.end$"
 
  ESPIONAGE_INTEL_GAINED_TITLE:0 "双面间谍获取的情报"

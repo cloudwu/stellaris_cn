@@ -1,8 +1,8 @@
 local en_path = "../en/localisation/english/"
 local cn_path = "../cn/localisation/english/"
-local new_path = "../en3.0/localisation/english/"
+local new_path = "../en3.2/localisation/english/"
 local diff_path = "../diff/"
-local cn2_path = "../cn3.0/"
+local cn2_path = "../cn3.2/simp_chinese/"
 
 local function readfile(filename)
 	local f = io.open(filename, "rb")
@@ -103,6 +103,8 @@ local function readcn()
 "ancient_relics_events_l_simp_chinese.yml",
 "ancient_relics_l_simp_chinese.yml",
 "apocalypse_l_simp_chinese.yml",
+"aquatics_l_simp_chinese.yml",
+"clone_army_l_simp_chinese.yml",
 "dip_messages_l_simp_chinese.yml",
 "diplo_stances_l_simp_chinese.yml",
 "distant_stars_l_simp_chinese.yml",
@@ -112,6 +114,7 @@ local function readcn()
 "events_3_l_simp_chinese.yml",
 "events_4_l_simp_chinese.yml",
 "events_5_l_simp_chinese.yml",
+"events_6_l_simp_chinese.yml",
 "events_l_simp_chinese.yml",
 "federations_anniversary_l_simp_chinese.yml",
 "federations_l_simp_chinese.yml",
@@ -143,6 +146,7 @@ local function readcn()
 "new_scripted_loc_l_simp_chinese.yml",
 "observer_events_l_simp_chinese.yml",
 "observer_l_simp_chinese.yml",
+"plantoids_l_simp_chinese.yml",
 "pop_factions_l_simp_chinese.yml",
 "prescripted_l_simp_chinese.yml",
 "projects_2_l_simp_chinese.yml",

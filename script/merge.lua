@@ -63,8 +63,10 @@ local function merge(filename)
 				-- not change
 				if cn[key] == nil then
 					print(filename, line, key)
+					f:write(" ", key, ":", dig, " ", value, "\n")	-- use English
+				else
+					f:write(" ", key, ":", dig, " ", cn[key].v, "\n")	-- use 2.1 translation
 				end
-				f:write(" ", key, ":", dig, " ", cn[key].v, "\n")	-- use 2.1 translation
 			elseif d.CHANGE then
 				-- use new translation
 				f:write(" ", key, ":", dig, " ", d.CHANGE.v, "\n")	-- use current translation

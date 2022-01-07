@@ -16,7 +16,7 @@
  TRADITIONS_UNLOCKED:0 "我们已解锁此树上$MAX|Y$项传统中的$COUNT|Y$项。"
  TRADITION_ADOPT_BUTTON:0 "树立"
  TRADITION_SELECT_BUTTON:0 "选择"
- TRADITIONS_ADOPT:0 "§E树立产生的效应§!：\n"
+ TRADITIONS_ADOPT:1 "§E树立产生的效应§!：\n"
  TRADITIONS_FINISH:2 "§E完成产生的效应§!：\n树立所有$CATEGORY|H$传统将会带来以下额外效应：\n"
  TRADITIONS_FINISH_AP:1 "此外，我们将解锁§Y1§!个飞升特典槽位。"
  TRADITION_COST:0 "树立传统的开销"
@@ -110,7 +110,7 @@
  tr_domination_adopt_void_desc:1 "§Y栖所§!£alloys£合金维护费：§G-20%§!。"
 
  tr_domination_colonial_viceroys:0 "殖民总督"
- #tr_domination_colonial_viceroys_desc:0 "§Y$MOD_LEADER_GOVERNOR_SKILL_LEVELS$§!增加§Y2§!。"
+ #tr_domination_colonial_viceroys_desc:0 "§Y$MOD_LEADER_GOVERNOR_SKILL_LEVELS$§! increased by §Y2§!."
  tr_domination_colonial_viceroys_delayed:0 "我们对殖民地的掌控取决于找到忠诚而能干的人才来推行政府的意志。"
  tr_domination_colonial_viceroys_machine:0 "自主AI"
  tr_domination_colonial_viceroys_machine_delayed:0 "从大多数行为约束子中解放出来的AI可能更容易表现不稳定且随机崩溃，但他们是唯一能够处理由星际殖民固有的巨量变量的类型。"
@@ -118,7 +118,7 @@
  tr_domination_colonial_viceroys_hive_delayed:0 "随着我们的蜂群数量增加，我们需要更多的自主工蜂来加强协调。"
 
  tr_domination_grand_council:1 "枢密院"
- #tr_domination_grand_council_desc:0 "§Y$MOD_LEADER_RULER_SKILL_LEVELS$§!增加§Y2§!。"
+ #tr_domination_grand_council_desc:0 "§Y$MOD_LEADER_RULER_SKILL_LEVELS$§! increased by §Y2§!."
  tr_domination_grand_council_delayed:2 "最优秀最聪明的人争夺机会私下向我们杰出的统治者进谏，这样能更好地掌舵国家这艘船。"
  tr_domination_multi_thread:0 "多线程核心函数"
  tr_domination_multi_thread_delayed:1 "一旦所有核心函数实施多线程化，就没有任何一个处理器核心会处于空闲状态围观了。"
@@ -395,8 +395,8 @@
  tr_diplomacy_diplomatic_networking_gestalt_delayed:0 "将我们的外交进程全方位地融入到我们与他国的关系中将不仅仅增进我们的外交：还能有效地提升我们自身决策过程中的内聚力，并最终使[This.GetGovernmentName]自身受益。"
  diplomatic_networking:0 "$tr_diplomacy_diplomatic_networking$"
 
- tr_diplomacy_direct_diplomacy:0 "不信任就破产"
- tr_diplomacy_direct_diplomacy_delayed:0 "活着但不信任那就根本不算活着。"
+ tr_diplomacy_direct_diplomacy:1 "不信任就破产"
+ tr_diplomacy_direct_diplomacy_delayed:1 "活着但不信任那就根本不算活着。"
 
  tr_diplomacy_eminent_diplomats:0 "杰出外交官"
  tr_diplomacy_eminent_diplomats_desc:0 "外交接受度：§G+5§!\n特使§Y改善关系§!每月有§G1%§!概率获得一个§Y外交支持§!。"
@@ -691,14 +691,16 @@
  tr_unyielding_never_surrender_gestalt_delayed:0 "我们永远不会屈服于低等人。让他们冲向我们牢不可破的防御！ 一千年后，它们将只是我们飞升故事的另一个脚注。"
 
  tr_unyielding_bulwark_of_harmony:0 "和睦保障"
- tr_unyielding_bulwark_of_harmony_gestalt:0 "$tr_unyielding_bulwark_of_harmony$"
+ tr_unyielding_bulwark_of_harmony_hive:0 "$tr_unyielding_bulwark_of_harmony$"
+ tr_unyielding_bulwark_of_harmony_machine:0 "$tr_unyielding_bulwark_of_harmony$"
  tr_unyielding_bulwark_of_harmony_desc:2 "当我们处于与另一个帝国的防御性战争中，§Y$MOD_STARBASE_SHIPYARD_BUILD_SPEED_MULT$§!将增加§G+33%§!。此外，所有位于国境内的战舰的§Y$MOD_SHIP_FIRE_RATE_MULT$§!将增加§G+15%§!。"
  tr_unyielding_bulwark_of_harmony_delayed:0 "所有的有机结构，无论多完美，都必须依赖免疫系统去抵御外来疾病的威胁，我们的社会也不例外。"
- tr_unyielding_bulwark_of_harmony_gestalt_delayed:0 "所有的有机结构，无论多完美，都必须依赖免疫系统去抵御外来疾病的威胁，[This.GetName]也不例外。"
+ tr_unyielding_bulwark_of_harmony_hive_delayed:0 "所有的有机结构，无论多完美，都必须依赖免疫系统去抵御外来疾病的威胁，[This.GetName]也不例外。"
+ tr_unyielding_bulwark_of_harmony_machine_delayed:0 "所有的有机结构，无论多完美，都必须依赖内在的防御系统去抵御外来的威胁，[This.GetName]也不例外。"
 
- tr_unyielding_defensive_zeal:0 "纵深防御"
- tr_unyielding_defensive_zeal_delayed:0 "在防御问题上，我们更愿意采用“洋葱方法”。再多层都不为过。"
- tr_unyielding_defensive_zeal_desc: "§Y太空基地§! 和 §Y防御平台§! 的 §Y船体生命值§!及§Y伤害§! 上升 §G33%§!。"
+ tr_unyielding_defensive_zeal:1 "纵深防御"
+ tr_unyielding_defensive_zeal_delayed:1 "在防御问题上，我们更愿意采用“洋葱方法”。再多层都不为过。"
+ tr_unyielding_defensive_zeal_desc:0 "§Y太空基地§! 和 §Y防御平台§! 的 §Y船体生命值§!及§Y伤害§! 上升 §G33%§!。"
 
  tr_unyielding_fortress_doctrine:0 "堡垒学说"
  tr_unyielding_fortress_doctrine_delayed:1 "在[This.GetAdj]的心理中，始终保持警惕的思想根深蒂固。只要我们的戒备不松懈，我们的敌人就永远无法让我们措手不及。"

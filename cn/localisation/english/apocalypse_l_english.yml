@@ -1,11 +1,11 @@
 ﻿l_english:
 
- ###      #        ##      #  #     ###     ###     # #     ###     #       #       ###     ###       ## 
- #  #     #       #  #     ## #     #        #      # #      #      #       #       #       #  #     #   
- ###      #       ####     # ##     ##       #      ##       #      #       #       ##      ###       #  
- #        #       #  #     #  #     #        #      # #      #      #       #       #       #  #       # 
- #        ###     #  #     #  #     ###      #      # #     ###     ###     ###     ###     #  #     ##  
- 
+ ###      #        ##      #  #     ###     ###     # #     ###     #       #       ###     ###       ##
+ #  #     #       #  #     ## #     #        #      # #      #      #       #       #       #  #     #
+ ###      #       ####     # ##     ##       #      ##       #      #       #       ##      ###       #
+ #        #       #  #     #  #     #        #      # #      #      #       #       #       #  #       #
+ #        ###     #  #     #  #     ###      #      # #     ###     ###     ###     ###     #  #     ##
+
  FLEETORDER_DESTROY_PLANET_WITH_PLANET_KILLER_CRACKER:0 "准备碎裂$PLANET|Y$"
  FLEETORDER_DESTROY_PLANET_WITH_PLANET_KILLER_SHIELDER:0 "准备禁锢$PLANET|Y$"
  FLEETORDER_DESTROY_PLANET_WITH_PLANET_KILLER_NUKE:0 "准备核爆$PLANET|Y$"
@@ -13,30 +13,39 @@
  FLEETORDER_DESTROY_PLANET_WITH_PLANET_KILLER_GODRAY:0 "准备感召$PLANET|Y$"
  FLEETORDER_DESTROY_PLANET_WITH_PLANET_KILLER_HYPNOSIS:0 "准备操控$PLANET|Y$"
  FLEETORDER_DESTROY_PLANET_WITH_PLANET_KILLER_NANOBOTS:0 "准备植入$PLANET|Y$"
+ FLEETORDER_DESTROY_PLANET_WITH_PLANET_KILLER_DELUGE:0 "正在准备淹没$PLANET|Y$"
  FLEETORDER_PLANET_KILLER_WINDUP:0 "武器充能：$PROGRESS|Y0%$"
  FLEETORDER_PLANET_KILLER_FIRING:0 "武器发射：$PROGRESS|Y0%$"
- 
+
  STATUS_QUO_CREATE_NEW_EMPIRE:0 "占领的$SYSTEMS|H$个 $TARGET|Y$ 星系将成为一个新 $SPECIES|Y$ 帝国，它将成为 $ACTOR|Y$ 的盟友或附属" # TODO 根据游戏内容再调整
- 
+
  MESSAGE_DESC_FOR_PLANET_KILLER_CRACKER:0 "彻底摧毁了" # TODO 后面似接实施者
  MESSAGE_DESC_FOR_PLANET_KILLER_SHIELDER:0 "禁锢于不可通过的天壁下"
  MESSAGE_DESC_FOR_PLANET_KILLER_NEUTRON:0 "的高等生物都被肃清了"
  MESSAGE_DESC_FOR_PLANET_KILLER_GODRAY:0 "接受了神圣信仰的审判"
  MESSAGE_DESC_FOR_PLANET_KILLER_NANOBOTS:0 "被纳米机器人植入改造了"
+ MESSAGE_DESC_FOR_PLANET_KILLER_DELUGE:0 "被彻底淹没"
 
+ is_habitable_non_artificial:0 "§R$TRIGGER_FAIL$目标必须是一个宜居的、非人工星球§!"
+ is_not_oceanic:0 "§R$TRIGGER_FAIL$目标已经是§Y$pc_ocean$§!了§!"
  is_not_a_standard_planet_or_megastructure:1 "§R$TRIGGER_FAIL$目标非普通行星或宜居巨型结构§!"
  is_not_a_habitable_planet_or_megastructure:0 "§R$TRIGGER_FAIL$目标非宜居行星或巨型结构§!"
  is_not_a_standard_planet:0 "§R$TRIGGER_FAIL$目标非普通行星§!"
  is_not_hostile_or_primitive:0 "§R$TRIGGER_FAIL$目标不属于原始文明或敌对帝国§!"
+ is_not_hostile_or_primitive_or_ours:0 "§R$TRIGGER_FAIL$目标不属于境内，土著或敌对帝国§!"
  is_shielded:0 "§R$TRIGGER_FAIL$目标被永久禁锢§!"
  is_not_hostile:0 "§R$TRIGGER_FAIL$目标不属于敌对帝国§!"
  is_unpopulated:0 "§R$TRIGGER_FAIL$目标无人居住§!"
+ cant_destroy_own_colonies:0 "§R$TRIGGER_FAIL$目标是我们的殖民地§!"
+ requires_purge_allowed:0 "§R$TRIGGER_FAIL$需要§Y$purge_allowed$§!政策，没有§Y$trait_aquatic$§!特质的人口将会死亡§!"
+ will_purge_non_aquatic_pops:0 "§R没有§Y$trait_aquatic$§!的人口将会死亡§!"
  is_not_hostile_cracker:0 "目标属于敌对§H帝国§!"
  not_barren_molten_frozen_toxic_test_fire:2 "目标是§Y宜居§!、§Y$pc_barren$§!、§Y$pc_molten$§!、§Y$pc_frozen$§!或§Y$pc_toxic$§!试射目标"
  not_owned_test_fire:0 "目标是§Y我方殖民地§!试射目标"
  primitives_not_in_borders:0 "§R$TRIGGER_FAIL$原始文明目标不在我方境内§!"
+ primitives_not_full_interference:0 "§R$TRIGGER_FAIL$需要§Y$interference_full$§!$policy_interference$政策§!"
+ primitives_not_active_or_full_interference:0 "§R$TRIGGER_FAIL$需要§Y$interference_active$§!或§Y$interference_full$§!$policy_interference$政策§!"
  no_assimilatable_pops:0 "§R$TRIGGER_FAIL$目标无适合机械植入的人口§!"
-
  enable_colossus_project:0 "§H发布特殊项目：§!巨像计划\n\n"
  describe_colossus_project:0 "完成§Y巨像计划§!，解锁§Y巨像§!§H飞船类型§!，这种军舰能够装备§R末日武器§!。"
 
@@ -95,12 +104,12 @@
  apoc.130.a.weaker:0 "真是令人惊恐。"
  apoc.130.a.stronger:0 "突然出现的强力竞争者。"
  apoc.130.a.pacif:0 "真的令人憎恶。"
- 
-  ##     ###      ##      ###      ###       ##       ##     ###     #   #     ###     ###     #   # 
- #        #      #  #     #  #     #  #     #  #     #       #       #   #      #      #       #   # 
-  #       #      ####     ###      ###      ####      #      ##      #   #      #      ##      # # # 
-   #      #      #  #     #  #     #  #     #  #       #     #        # #       #      #       # # # 
- ##       #      #  #     #  #     ###      #  #     ##      ###       #       ###     ###      # #  
+
+  ##     ###      ##      ###      ###       ##       ##     ###     #   #     ###     ###     #   #
+ #        #      #  #     #  #     #  #     #  #     #       #       #   #      #      #       #   #
+  #       #      ####     ###      ###      ####      #      ##      #   #      #      ##      # # #
+   #      #      #  #     #  #     #  #     #  #       #     #        # #       #      #       # # #
+ ##       #      #  #     #  #     ###      #  #     ##      ###       #       ###     ###      # #
 
  STARBASE_STARBASE_TAB:0 "太空基地"
  STARBASE_DEFENSES_TAB:0 "防御"
@@ -199,10 +208,10 @@
  STARBASE_BUILDQUEUE_DOWN:0 "§G点击向下物品移动。\n按住£shift£ 点击将物品移动至底部。§!"
  STARBASE_MODIFIER_EFFECTS:0 "调整因素效果"
 
-  ##       ##      ###     ###     #   #      ##      #   #      ## 
- #        #  #      #      #       #   #     #  #      # #      #   
- # ##     ####      #      ##      # # #     ####       #        #  
- #  #     #  #      #      #       # # #     #  #       #         # 
+  ##       ##      ###     ###     #   #      ##      #   #      ##
+ #        #  #      #      #       #   #     #  #      # #      #
+ # ##     ####      #      ##      # # #     ####       #        #
+ #  #     #  #      #      #       # # #     #  #       #         #
   ##      #  #      #      ###      # #      #  #       #       ##
 
  gateway_ruined:0 "关闭的星门"
@@ -238,7 +247,7 @@
  requires_starhold:0 "§R需要§Y$starbase_starhold$§!升级。§!"
  requires_starfortress:0 "§R需要§Y$starbase_starfortress$§!升级。§!"
  requires_citadel:0 "§R需要§Y$starbase_citadel$§!升级。§!"
- 
+
  requires_colonized_planet:0 "§R需要在星系内拥有行星。§!"
  requires_trade_planet:0 "§R星系内需要有已移民的行星或§Y贸易飞地§!。§!"
  requires_black_hole:0 "§R星系内需要有§Y$pc_black_hole$§!。§!"
@@ -247,14 +256,14 @@
  requires_curator_agreement:0 "§R需要与当地典藏研究所飞地的§Y外交协议§!。§!"
  requires_artist_agreement:0 "§R需要与当地艺术飞地的§Y外交协议§!。§!"
  requires_artisans:0 "§R星系内需要有§Y艺术飞地§!。§!"
-  
+
  requires_technology_gateway_activation:0 "$TRIGGER_FAIL$需要£physics£ §Y$tech_gateway_activation$§!科技。"
  requires_technology_gateway_construction:0 "$TRIGGER_FAIL$需要£physics£ §Y$tech_gateway_construction$§!科技。"
 
  NAVY_SIZE_STARBASES_TITLE:0 "来自太空基地"
  TECH_UNLOCK_STARBASE_MODULE:0 "§H解锁太空基地模块：§!$NAME$"
  TECH_UNLOCK_STARBASE_BUILDING:0 "§H解锁太空基地建筑：§!$NAME$"
- 
+
  tech_ftl_inhibitor:0 "超光速拦截"
  tech_ftl_inhibitor_desc:1 "引力井投射器可以创造出无法安全进入超空间的局部空间口袋。其能量需求和体积都十分巨大，只有太空基地才能安装。"
  ION_CANNON_CORE:0 "离子炮核心"
@@ -310,7 +319,7 @@
  INCREASE_FM:4 "$INCREASE_HEADER$\n§G点击增加舰队中该设计舰船的数量§!\n§YShift+点击§!增至下一个十的整数倍，§YCtrl+点击§!增加至最大能容纳的数量。"
  REINFORCE_ALL_FM:0 "§H增援所有§!§G点击增援所有现役舰队至满编§!"
  ADD_DESIGN_FM:1 "§H将舰船设计添加至舰队§!§G点击向舰队添加新的舰船设计§!"
- 
+
  FLEET_VIEW_OPEN_FLEET_MANAGER:1 "§H舰队管理器§!§G点击开启此舰队的舰队管理器§!"
  FLEET_VIEW_DESIGN_UPGRADABLE:0 "设计可以升级。"
 
@@ -349,7 +358,7 @@
  uneasy_faith_desc:0 "民众隐约觉得他们的信仰热忱并非完全发自内心。"
  neutron_bombarded:0 "中子轰炸"
  neutron_bombarded_desc:0 "这颗行星的生态环境仍在从中子清扫的毁灭性打击下恢复中。"
- 
+
  opinion_cracked_my_world:0 "碎裂了我们的行星"
  opinion_cracked_a_world:0 "碎裂了一颗行星"
  opinion_swept_my_world:0 "清扫了我们的行星"
@@ -358,6 +367,8 @@
  opinion_converted_a_world:0 "转化了一颗行星"
  opinion_assimilated_my_world:0 "同化了我们的行星"
  opinion_assimilated_a_world:0 "同化了一颗行星"
+ opinion_assimilated_a_primitive_world:0 "同化了一个原始星球"
+ opinion_assimilated_a_primitive_world_phile:0 "$opinion_cracked_a_primitive_world_phile$"
  opinion_shielded_my_world:0 "禁锢了我们的行星"
  opinion_shielded_a_world:1 "禁锢了一颗行星"
  opinion_cracked_a_primitive_world:0 "碎裂了原始文明行星"
@@ -366,7 +377,11 @@
  opinion_swept_a_primitive_world_phile:0 "$opinion_cracked_a_primitive_world_phile$"
  opinion_assimiliated_a_primitive_world:0 "同化了原始文明行星界"
  opinion_assimiliated_a_primitive_world_phile:0 "$opinion_cracked_a_primitive_world_phile$"
- 
+ opinion_drenched_a_world:0 "淹没了一个星球"
+ opinion_drenched_my_world:0 "淹没了我们的星球"
+ opinion_drenched_a_primitive_world:0 "淹没了一个原始星球"
+ opinion_drenched_a_primitive_world_phile:0 "$opinion_cracked_a_primitive_world_phile$"
+
  NUM_HYPERLANES_TOOLTIP:0 "§H超空间航道密度§!\n将在宇宙中生成超空间航道密度标准数量的倍数条超空间航道密度。"
  NUM_HYPERLANES:0 "超空间航道密度"
 
@@ -393,6 +408,13 @@
  planet_destruction.501.name:0 "纳米植入"
  planet_destruction.501.desc:0 "[From.From.GetName] 已完成同化纳米机器人的部署，预计足以对 [From.GetName] 上的所有智慧有机体进行机械化征服。\n\n我们没有给 [From.From.GetName] 安装任何传感器或是设备来检测我们的成功，但我们明白。我们第一次在 [From.GetName] 上睁开双眼。我们看见自己，并被自己看见。\n\n在 [From.GetName] 的地表上，只有我们。"
  planet_destruction.501.tooltip:0 "所有§Y有机体§!人口获得§Y$trait_cybernetic$§!特质。"
+
+ planet_destruction.701.name:0 "行星已被淹没"
+ planet_destruction.701.desc:0 "随着从[FromFrom.GetName]上下降的水柱消散，[From.GetName]的表面完全改变了。 曾经有广阔缺水的大陆，现在只有崭新闪耀着欢迎的微光的蓝色海洋，随时可以居住。"
+ planet_destruction.701.tooltip:0 "星球变为§Y$pc_ocean$§!。\n没有§Y$trait_aquatic$§!特质的人口全部死亡。"
+
+ DELUGE_EXHAUSTED_ICE_TITLE:0 "冰源耗尽"
+ DELUGE_EXHAUSTED_ICE_DESC:0 "我们在§Y[This.GetName]§!的§Y天洪浩荡§!耗尽了我们位于$SYSTEM|Y$星系内的冰源，因此星系内的§Y$sm_ice_mining_station$§!已被拆除。"
 
  planet_destruction.610.name:0 "[outraged_FE.GetName]"
  planet_destruction.610.desc:0 "[From.GetName] 曾是圣星。\n\n\n你不知道自己犯下了多大的罪恶。\n\n\n但你很快就会知道。"
@@ -680,7 +702,7 @@
  irassian_minerals_desc:0 "这里曾经是伊瑞森太空舰队的一个主要泊地，被毁坏的舰队泊地散落在行星轨道上，在行星表面沉积了大量的矿产资源。"
  irassian_energy:0 "能量生产基地"
  irassian_energy_desc:0 "这颗气态巨行星是伊瑞森同盟星际扩张初期的重要能源生产基地。一条由古代轨道发电站的密集带仍然环绕着这个行星。"
- 
+
  ARMIES_LOST:0 "军队损失造成的战争之殇"
  ARMIES_LOST_LONG:0 "$ARMIES|R$支部队损失造成的$ATTR|R$"
  SHIPS_LOST:0 "舰船损毁造成的战争之殇"
@@ -691,6 +713,6 @@
  WAROVERVIEW_BATTLE_THEIR_ARMIES_LOST:0 "$NUM|G$支部队损失"
  OCCUPATION_SUMMARY:0 "占领"
  OCCUPATION_SUMMARY_LONG:0 "$SYSTEMS|R$个被占领星系和$PLANETS|R$颗被占领行星造成的占领$ATTR|R$"
- 
+
  FLEET_TEMPLATE_COMMAND_MAX_MULTIPLE:0 "增加$NUM|Y$艘舰船将超过舰队指挥上限。"
  FLEET_TEMPLATE_COMMAND_MIN_MULTIPLE:0 "无法从舰队模板移除$NUM|Y$艘舰船"

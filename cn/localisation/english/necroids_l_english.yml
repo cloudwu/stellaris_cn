@@ -11,10 +11,11 @@
  civic_necrophage_secondary_species:0 "待尸化种族"
  trait_necrophage:0 "食尸体"
  trait_necrophage_desc:1 "此种族几近永生，依靠蚕食其他物种来繁衍生息。"
+ trait_necrophage_gestalt_tooltip:0 "§H这些人口产出修正不会作用于蜂巢思维人口上。§!"
  building_necrophage_elevation_chamber:0 "升格堂"
+ building_necrophage_elevation_chamber_desc:0 "那些等待转变的人们将会终日待在这舒适的升格堂，研习[This.Owner.GetSpeciesNamePlural]的习俗和礼仪。"
  building_necrophage_elevation_chamber_desc_hive:0 "等待转变的生物将会终日待在升格之室，做好融入[This.Owner.GetAdj]集体意识的准备。"
  necrophage_elevation_timer_tooltip:0 "§Y[This.GetName]§!上的下一场升格仪式将于§Y[This.necrophage_elevation_timer]§!举行。\n\n"
- building_necrophage_elevation_chamber_desc:0 "那些等待转变的人们将会终日待在这舒适的升格堂，研习[This.Owner.GetSpeciesNamePlural]的习俗和礼仪。"
  building_necrophage_elevation_chamber_scaling_tooltip:0 "为保障£job_necro_apprentice£ $job_necro_apprentice_plural$的充足供应，职位数目会在§Y1§!到§Y3§!之间浮动，浮动情况取决于§Y人口增长§!。\n\n"
  building_necrophage_house_of_apotheosis:0 "登仙楼"
  building_necrophage_house_of_apotheosis_desc:0 "一座无比恢弘的楼宇，供等待登仙为[This.Owner.GetSpeciesNamePlural]的个体舒适地度过他们初始生命形态的最后时日。"
@@ -48,7 +49,7 @@
  START_SCREEN_NECROPHAGE_HIVE:0 "$START_SCREEN_NECROPHAGE_BASE$终于，我们蓄势待发。当我们无情地控制了整颗星球后，集体意识的优越性变得显而易见——星球的前主人退化得百依百顺，并被逐步吸收进[GetSpeciesName]蜂巢思维中。\n\n现在，实装了近期刚发现的超光速旅行秘密的我们已经准备好走向星河的舞台，并把全星系的所有物种改造成我们的样子。"
  necroids.2.name:0 "[Root.Capital.GetName]上的升格仪式"
  necroids.2.desc:0 "自从[Root.GetAdj]开始掌管[Root.Capital.GetName]起，将[necrophage_species.GetNamePlural]转化为[Root.GetSpeciesNamePlural]一事就被藏匿于宗教仪式中。每隔十年，转瞬即逝的十年，“侍徒”们都会聚集在升格之室里举行一场特殊仪式。尽管仪式的 necroids.2.desc.gestalt:0 "自从[Root.GetAdj]开始掌管[Root.Capital.GetName]起，把[necrophage_species.GetNamePlural]转化为[Root.GetSpeciesNamePlural]就被纳入了仪式中。每隔转瞬即逝的十年，“信徒”们都会聚集在升格之室里举行一场特殊的仪式。尽管集体意识对仪式的具体内容三缄其口，但是当他们再次出现时，他们的举止变得与[Root.GetSpeciesAdj]子个体无异。"
-具体内容严格保密，仅有少数几个知情者。但是他们再次出现时，举止变得与[Root.GetSpeciesNamePlural]无异。"
+ necroids.2.desc.gestalt:0 "自从 [Root.GetAdj] 开始掌控 [Root.Capital.GetName]起，将 [necrophage_species.GetNamePlural] 转换为 [Root.GetSpeciesNamePlural] 一事就被藏匿于宗教仪式中。每隔十年，转瞬即逝的十年，“侍徒”们都会聚集在升格之室里举行一场特殊仪式。尽管集体意识对仪式的具体内容三缄其口，但是当他们再次出现时，他们的举止变得与[Root.GetSpeciesAdj]子个体无异。"
  necroids.2.A:0 "开始准备吧！"
  necroids.2.A.tooltip:1 "到今年年底，§H[Root.Capital.GetName]§!上的全部§H$job_necro_apprentice_plural$§!将被转化成§H[Root.GetSpeciesNamePlural]§!。\n\n这个仪式每隔§H10§!年在各个[Root.GetAdj]行星上举行一次。"
 
@@ -149,7 +150,7 @@
  necroids.202.tooltip.4:0 "$necroids.200.tooltip.base$§H+24% £minerals£ 矿物和 £energy£ 能源点数产出§!。"
  necroids.202.tooltip.5:0 "$necroids.200.tooltip.base$§H+30% £minerals£ 矿物和 £energy£ 能源点数产出§!。"
 
- ### Reanimated by Pierre du Plessis
+ ### Reanimators by Pierre du Plessis
 
  civic_reanimated_armies:1 "逝者"
  civic_reanimated_armies_desc:1 "在此社会中，死亡不是征召的阻碍。通晓死灵术的大师们能够让逝者的尸骸重新活动起来，集结成一支亡者大军，向劣等生者的心中灌注无上的恐惧。"
@@ -162,6 +163,9 @@
  undead_army:0 "不死部队"
  undead_army_desc:1 "不死士兵由死灵术士们自墓地唤醒。不畏死亡，他们通过凄厉的尖啸和凶狠的战斗将恐惧注入敌人内心。"
  undead_army_plural:0 "不死部队"
+ giant_undead_army:0 "不死巨兽军团"
+ giant_undead_army_desc:0 "巨大的骸骨，随时准备向整个宇宙倾泻恐惧。它在入侵行星的时候可从不会怜香惜玉。"
+ giant_undead_army_plural:0 "不死巨兽军团"
  undead_defense_army:0 "不死军防御部队"
  undead_defense_army_desc:0 "死灵法师从坟茔中唤醒无数亡魂，带领它们重返人间，从我们的敌人的魔爪下保护我们的星球。"
  job_necromancer:1 "死灵术士"
@@ -217,7 +221,7 @@
  job_chronicle_drone:0 "书史成员"
  job_chronicle_drone_plural:0 "书史成员"
  job_chronicle_drone_desc:0 "这些专业成员将自身的思辨转化为熵，研究终端衰变，我们自身持续存在的一个对立面。"
- job_chronicle_drone_effect_desc:2 "£job_chronicle_drone£$job_chronicle_drone_plural$将£energy£§Y$energy$§!和£minerals£§Y$minerals$§!转化为£unity£§Y$unity$§!，£society£§Y$society_research$§!与£stability£§Y稳定度§!"
+ job_chronicle_drone_effect_desc:2 "£job_chronicle_drone£$job_chronicle_drone_plural$将£energy£§Y$energy$§!和£minerals£§Y$minerals$§!转化为 £unity£§Y$unity$§!，£society£§Y$society_research$§!与£stability£§Y稳定度§!"
  mod_job_death_chronicler_add:0 "$job_death_chronicler$职位"
  mod_job_death_chronicler_per_pop:0 "每$VALUE$人口提供§G+1§!$job_death_chronicler$职位"
  mod_job_death_chronicler_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_death_chronicler_add£ "

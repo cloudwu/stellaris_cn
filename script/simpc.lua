@@ -23,6 +23,7 @@ local list = {
 "ancient_relics_events_l_english.yml",
 "ancient_relics_l_english.yml",
 "apocalypse_l_english.yml",
+"aquatics_l_english.yml",
 "clone_army_l_english.yml",
 "diplo_stances_l_english.yml",
 "dip_messages_l_english.yml",

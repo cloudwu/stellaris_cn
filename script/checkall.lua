@@ -6,6 +6,7 @@ local filelist = {
 "ai_crisis_l_english.yml",
 "ancient_relics_events_l_english.yml",
 "ancient_relics_l_english.yml",
+"aquatics_l_english.yml",
 "apocalypse_l_english.yml",
 "dip_messages_l_english.yml",
 "distant_stars_l_english.yml",

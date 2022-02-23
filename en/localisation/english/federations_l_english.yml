@@ -690,7 +690,10 @@
 
  requires_strongest:0 "§RRequires $law_category_succession_type$ to be §Y$succession_type_strongest$§!.§!"
 
- requires_megacorp_or_merchant:1 "§RRequires you to have one of the §Y$civic_merchant_guilds$§! or §Y$civic_corporate_dominion$§! civics or to be a §Y$gov_megacorporation$§!.§!"
+ mercantile_traditions_completed:0 "Has completed §Y$tr_mercantile_adopt$§!"
+ discovery_traditions_completed:0 "Has completed §Y$tr_discovery_adopt$§!"
+ domination_traditions_completed:0 "Has completed §Y$tr_domination_adopt$§!"
+ unyielding_traditions_completed:0 "Has completed §Y$tr_unyielding_adopt$§!"
  disabled_for_hegemony:0 "§RA §Y$hegemony_federation$§! cannot ban subject nations from joining.§!"
  president_no_effect:0 "No effect."
 
@@ -700,6 +703,9 @@
  level_4:0 "Level 4"
  level_5:0 "Level 5"
 
+ federation_acceptance_current_president_under_this_law:0 "Currently President by this Law"
+ federation_acceptance_would_win:0 "Strongest by this metric"
+ federation_acceptance_leader_would_lose:0 "Would lose Presidency"
  federation_acceptance_stronger:0 "Is too powerful"
  federation_acceptance_gestalt:0 "$ethic_gestalt_consciousness$"
  federation_acceptance_hegemony:0 "Hegemony Federation Type"
@@ -743,9 +749,11 @@
  federation_acceptance_has_subjects:0 "Has Subjects"
 
  #Federation specific
+ federation_acceptance_hegemony_or_default:0 "$default_federation$ or $hegemony_federation$"
  federation_acceptance_hegemony_federation:0 "$hegemony_federation$"
  federation_acceptance_military_federation:0 "$military_federation$"
- federation_acceptance_trade_league:0 "$trade_league$"
+ federation_acceptance_research_federation:0 "$research_federation$"
+ federation_acceptance_trade_league:1 "$trade_federation$"
 
  #Empire specific
  federation_acceptance_authoritarian:0 "$ethic_authoritarian$"
@@ -753,10 +761,10 @@
  federation_acceptance_xenophobe:0 "$ethic_xenophobe$"
  federation_acceptance_xenophile:0 "$ethic_xenophile$"
  federation_acceptance_materialist:0 "$ethic_materialist$"
- federation_acceptance_erudite_explorers_in_research_federation:0 "$erudite_explorers$ + $research_federation$"
- federation_acceptance_honorbound_warriors_in_military_federation:0 "$honorbound_warriors$ + $military_federation$"
- federation_acceptance_ruthless_capitalists_in_trade_federation:0 "$ruthless_capitalists$ + $trade_federation$"
- federation_acceptance_peaceful_traders_in_trade_federation:0 "$peaceful_traders$ + $trade_federation$"
+ federation_acceptance_erudite_explorers_in_research_federation:1 "$personality_erudite_explorers$ + $research_federation$"
+ federation_acceptance_honorbound_warriors_in_military_federation:1 "$personality_honorbound_warriors$ + $military_federation$"
+ federation_acceptance_ruthless_capitalists_in_trade_federation:1 "$personality_ruthless_capitalists$ + $trade_federation$"
+ federation_acceptance_peaceful_traders_in_trade_federation:1 "$personality_peaceful_traders$ + $trade_federation$"
  #federation_acceptance_erudite_explorers_in_research_federation: "$erudite_explorers$ in a $research_federation$"
  #federation_acceptance_honorbound_warriors_in_military_federation: "$honorbound_warriors$ in a $military_federation$"
  #federation_acceptance_ruthless_capitalists_in_trade_federation: "$ruthless_capitalists$ in a $trade_federation$"
@@ -960,6 +968,7 @@
  decision_project_cornucopia_desc:0 "$resolution_industry_project_cornucopia_desc$"
  decision_project_cornucopia_effects_short:0 "Strip-mines this world, adding §G+4§! §Y$district_mining_plural$§!, §G+5%§! §Y$mod_planet_jobs_minerals_produces_mult$§!, and §R-20%§! §Y$pop_habitability$§!."
  d_project_cornucopia:0 "$resolution_industry_project_cornucopia$"
+ d_project_cornucopia_desc:0 "Extensive strip mining operations made this planet harder to inhabit... And easier to exploit."
 
  federations.10000.name:0 "$resolution_industry_project_cornucopia$"
  federations.10000.desc:1 "Engineers from across the [global_event_country.GetGalCommunityOrGalImperium] have come together to share ideas on ways to more exploit resources from our worlds.\n\nThe §HProject Cornucopia§! Planetary Decision is now available."
@@ -1670,12 +1679,31 @@
  ### Colony Type
  ################
 
- col_bureau:0 "Bureaucratic Center"
- col_bureau_desc:1 "An entire world dedicated to the ever-expanding needs of the bureaucracy."
+ col_bureau:2 "Unification Center"
+ col_bureau_desc:4 "An entire world dedicated to unifying our empire."
  col_bureaucracy_custom:1 "Administrative Capacity from Bureaucrats is increased by §G2§!.\nBureaucrat Job Upkeep reduced by §G10%§!. \n£pop£ Pop Ethics Shift Chance reduced by §G20%§!."
 
- col_habitat_bureau:0 "Bureaucratic Station"
- col_habitat_bureau_desc:0 "An entire habitat dedicated to the ever-expanding needs of the bureaucracy."
+
+ col_bureau_spiritualist:0 "Ecclesiastical Center"
+ col_bureau_spiritualist_desc:0 "$col_bureau_desc$"
+
+ col_bureau_hive:0 "$col_bureau$"
+ col_bureau_hive_desc:0 "$col_bureau_desc$"
+
+ col_bureau_machine:0 "$col_bureau$"
+ col_bureau_machine_desc:0 "$col_bureau_desc$"
+
+ col_habitat_bureau:1 "Unification Station"
+ col_habitat_bureau_desc:1 "An entire habitat dedicated to unifying our empire."
+
+ col_habitat_bureau_spiritualist:0 "Ecclesiastical Station"
+ col_habitat_bureau_spiritualist_desc:0 "$col_habitat_bureau_desc$"
+
+ col_habitat_bureau_hive:0 "$col_habitat_bureau$"
+ col_habitat_bureau_hive_desc:0 "$col_habitat_bureau_desc$"
+
+ col_habitat_bureau_machine:0 "$col_habitat_bureau$"
+ col_habitat_bureau_machine_desc:0 "$col_habitat_bureau_desc$"
 
  ################
  ### Modifiers
@@ -2558,7 +2586,7 @@
  origin.90.3:0 "Despite this knowledge, they apparently made no significant efforts to evacuate the planet. Aside from a few scattered survivors in space, their entire civilization perished along with their homeworld."
  origin_90.a:0 "Fate can be cruel."
 
- origin.91.name:0 "The Destruction of [From.From.GetName]"
+ origin.91.name:0 "The Destruction of [From.GetName]"
  origin.91.desc:0 "$origin.90.intro.desc$\n\n$origin.91.1$"
  origin.91.1:0 "Thanks to a massive evacuation effort, the planet had been completely abandoned prior to its destruction. No lives are believed to have been lost."
  origin_91.a:0 "Good for them."
@@ -2917,6 +2945,8 @@
  BUILD_PLAN_ENTRY:0 "$BUILDABLE|Y$ on $PLANET|Y$ ($WEIGHT|Y0$)"
  NO_BUILD_PLAN_DESC:0 "$COUNTRY|Y$ currently has no Build Plan"
  CURRENT_PLAN:0 "Economic Plan: $PLAN|Y$"
+ DEBUG_SUB_PLAN:0 "\n    Sub Plan: $SUB_PLAN|Y$"
+ DEBUG_INCOME_TARGET:0 "\n§YIncome Target§!:"
  BUILD_PLAN_START_INCOME:0 "Economic status before build plan starts"
  BUILD_PLAN_CURRENT_INCOME:0 "Income"
  BUILD_PLAN_CURRENT_DEFICIT:0 "Deficit"

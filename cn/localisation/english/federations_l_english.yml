@@ -690,7 +690,7 @@
 
  requires_strongest:0 "§R需要$law_category_succession_type$为§Y$succession_type_strongest$§!§!"
 
- requires_megacorp_or_merchant:1 "§R需要你拥有§Y$civic_merchant_guilds$§!或§Y$civic_corporate_dominion$§!公民性之一，或者是成为§Y$gov_megacorporation$§!。§!"
+ requires_megacorp_or_merchant:1 "§RRequires you to have one of the §Y$civic_merchant_guilds$§! or §Y$civic_corporate_dominion$§! civics or to be a §Y$gov_megacorporation$§!.§!"
  disabled_for_hegemony:0 "§R§Y$hegemony_federation$§!无法禁止附属国加入。§!"
  president_no_effect:0 "无效果"
 
@@ -745,7 +745,7 @@
  #Federation specific
  federation_acceptance_hegemony_federation:0 "$hegemony_federation$"
  federation_acceptance_military_federation:0 "$military_federation$"
- federation_acceptance_trade_league:0 "$trade_league$"
+ federation_acceptance_trade_league:0 "$trade_federation$"
 
  #Empire specific
  federation_acceptance_authoritarian:0 "$ethic_authoritarian$"
@@ -753,10 +753,10 @@
  federation_acceptance_xenophobe:0 "$ethic_xenophobe$"
  federation_acceptance_xenophile:0 "$ethic_xenophile$"
  federation_acceptance_materialist:0 "$ethic_materialist$"
- federation_acceptance_erudite_explorers_in_research_federation:0 "$erudite_explorers$ + $research_federation$"
- federation_acceptance_honorbound_warriors_in_military_federation:0 "$honorbound_warriors$ + $military_federation$"
- federation_acceptance_ruthless_capitalists_in_trade_federation:0 "$ruthless_capitalists$ + $trade_federation$"
- federation_acceptance_peaceful_traders_in_trade_federation:0 "$peaceful_traders$ + $trade_federation$"
+ federation_acceptance_erudite_explorers_in_research_federation:0 "$personality_erudite_explorers$+$research_federation$"
+ federation_acceptance_honorbound_warriors_in_military_federation:0 "$personality_honorbound_warriors$+$military_federation$"
+ federation_acceptance_ruthless_capitalists_in_trade_federation:0 "$personality_ruthless_capitalists$+$trade_federation$"
+ federation_acceptance_peaceful_traders_in_trade_federation:0 "$personality_peaceful_traders$+$trade_federation$"
  #federation_acceptance_erudite_explorers_in_research_federation: "$erudite_explorers$ in a $research_federation$"
  #federation_acceptance_honorbound_warriors_in_military_federation: "$honorbound_warriors$ in a $military_federation$"
  #federation_acceptance_ruthless_capitalists_in_trade_federation: "$ruthless_capitalists$ in a $trade_federation$"
@@ -1670,12 +1670,12 @@
  ### Colony Type
  ################
 
- col_bureau:0 "官僚中心"
- col_bureau_desc:1 "整颗星球被用于满足不断增长的对官僚体系的需求。"
+ col_bureau:0 "统一中心"
+ col_bureau_desc:1 "整个星球被用于促进帝国的统一。"
  col_bureaucracy_custom:1 "每个官僚产出的行政容量增加§G2§!。\n官僚职位的维护费降低§G10%§!。\n£pop£人口道德变迁几率降低§G20%§!。"
 
- col_habitat_bureau:0 "官僚站"
- col_habitat_bureau_desc:0 "整座居所被用于满足不断增长的对官僚体系的需求。"
+ col_habitat_bureau:0 "统一站"
+ col_habitat_bureau_desc:0 "整座居住站被用于促进帝国的统一。"
 
  ################
  ### Modifiers

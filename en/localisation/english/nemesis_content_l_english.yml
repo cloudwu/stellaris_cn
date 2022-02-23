@@ -24,7 +24,7 @@
  CRISIS_SPECIAL_PROJECT_HIVE_1_DESC:1 "We have sensed alien impulses within our drone networks - an undisciplined desire to grow, to become greater still. One Mind encompassing the entire galaxy. It is not of us, but its promise is too tempting to ignore. We shall give our undivided attention to finding the origin of these intrusive impulses.\n\n$CRISIS_SPECIAL_PROJECTS_TUTORIAL$"
  crisis.4120.hive.name:0 "$crisis.4120.name$"
  crisis.4120.hive.desc:1 "We have traced these stray thoughts, following the dreams of other, less united minds, and our purpose-bred drones. The impulses come from beyond the material realm, from a place powered by thought and emotion. This space has been identified as §Hthe Shroud§!, and we are certain that - just as it influences us - we in turn can influence it."
- 
+
  # Crisis Special Project 2 - General loc
  CRISIS_SPECIAL_PROJECT_2:0 "The Unseen Ripples"
  CRISIS_SPECIAL_PROJECT_2_DESC:2 "The current theory is that the universe we know and the Shroud are linked - and that particularly disruptive events may have a 'ripple effect' translating from one dimension to the other. This theory should be put to the test.\n\n$CRISIS_SPECIAL_PROJECTS_TUTORIAL$"
@@ -237,7 +237,7 @@
  espionage.1030.a:0 "This could be advantageous, if managed well."
  espionage.1030.b.hive:0 "This will not do. Arrange for 'adjustments'."
  espionage.1030.b.machine:0 "This will not do. Adjust their parameters."
- 
+
  espionage.1040.name:0 "A Surprise Catch"
  espionage.1040.desc.regular:1 "Our $role_spymaster$ watching over the §H[luckycatch_country.GetName]§! reports the surprise, successful acquisition of a new §YAsset§! - a sympathetic contact who will be of service to our operations as and when we need them.\n\nAll efforts have been taken to ensure that this new contact is genuine. Protocols have been established which seek to minimize the risk of potential double agents, for example."
  espionage.1040.desc.gestalt:1 "Amongst our many clandestine tasks in the §H[luckycatch_country.GetName]§! is the low-key scouting of potential Assets: any tool we can use to further our efforts amongst the gestalt entity. Our $role_spymaster$ reports having just made one such lucky catch."
@@ -246,13 +246,13 @@
  espionage.1040.a.tooltip:0 "We have acquired a §Ynew Asset§! for our Spy Network in the §H[luckycatch_country.GetName]§!."
 
  espionage.1050.name:0 "Finders Keepers"
- espionage.1050.desc:1 "A particularly observant operative in the §Y[finderskeepers_country.GetName]§! has laid their [root.species.GetHandNamePlural] on part of a §H[finderskeepers_country.GetAdj] encryption key§!. It would seem a careless [finderskeepers_country.GetSpeciesName] $job_administrator$ mislaid the device whilst commuting.\n\nThis bodes well enough for our operations in the [finderskeepers_country.GetName], but our study of the device's unique design has revealed novel insights for our general approach to §Y$MOD_INTEL_DECRYPTION_ADD$§!."
+ espionage.1050.desc:2 "A particularly observant operative in the §Y[finderskeepers_country.GetName]§! has laid their [root.species.GetHandNamePlural] on part of a §H[finderskeepers_country.GetAdj] encryption key§!. It would seem a careless [finderskeepers_country.GetSpeciesName] $job_politician$ mislaid the device whilst commuting.\n\nThis bodes well enough for our operations in the [finderskeepers_country.GetName], but our study of the device's unique design has revealed novel insights for our general approach to §Y$MOD_INTEL_DECRYPTION_ADD$§!."
 
  espionage.1060.name:0 "Stray Communiqué"
- espionage.1060.desc:0 "One of our $job_administrator_plural$ on [capital_scope.GetName] has carelessly misplaced a bundle of sensitive materials, including an §Hencryption key§! whose very existence outside of government facilities is a gross breach of protocol.\n\nOur domestic authorities are scrambling to switch security platforms, as it's quite possible these materials may have fallen into hostile [root.species.GetHandNamePlural]."
+ espionage.1060.desc:1 "One of our $job_politician_plural$ on [capital_scope.GetName] has carelessly misplaced a bundle of sensitive materials, including an §Hencryption key§! whose very existence outside of government facilities is a gross breach of protocol.\n\nOur domestic authorities are scrambling to switch security platforms, as it's quite possible these materials may have fallen into hostile [root.species.GetHandNamePlural]."
  espionage.1060.desc.corp:0 "One of our $job_executive_plural$ on [capital_scope.GetName] has carelessly misplaced a bundle of sensitive materials, including an §Hencryption key§! whose very existence outside of strictly-defined zones is a gross breach of protocol.\n\nOur security teams are scrambling to switch operating procedures, as it's quite possible these materials may have fallen into the [root.species.GetHandNamePlural] of our competitors."
  espionage.1060.a:0 "Fire this incompetent, at once!"
- espionage.1060.a.tooltip:0 "An £job_administrator£ §Y$job_administrator$§! on our capital is fired and §Rdemoted§!."
+ espionage.1060.a.tooltip:1 "A £job_politician£ §Y$job_politician$§! on our capital is fired and §Rdemoted§!."
  espionage.1060.b:0 "$espionage.1060.a$"
  espionage.1060.b.tooltip:0 "An £job_executive£ §Y$job_executive$§! on our capital is fired and §Rdemoted§!."
 
@@ -296,7 +296,7 @@
  espionage.1085.name:0 "Implicated in a Plot"
  espionage.1085.desc:1 "We have been implicated in a plot against the §H[from.GetName]§!. So vague is the allegation that we cannot definitively state whether or not they are on to something.\n\nOur own spies protest that the allegation is baseless, claiming this is likely either a defensive, counter-espionage response from one of our targets - or else a smear campaign being conducted by some third party. Whatever the reason or cause, the [from.GetName] have taken offense."
  espionage.1085.desc.neverspied:0 "Amazingly, we have been implicated in some vaguely-defined plot against the §H[from.GetName]§!. It's a ridiculous allegation, given our complete lack of foreign espionage activity so far - but then, the [from.GetAdj] would have no way of knowing how truly ridiculous the allegation is.\n\nIt would seem that parties unknown are attempting to frame us for their own misdemeanors - or perhaps simply to sow some diplomatic chaos. Whatever the reason or cause, the [from.GetName] have taken offense."
- 
+
  #######################################
  # Operations
  #######################################
@@ -506,7 +506,7 @@
  operation.4005.a.tooltip:0 "The §P[crisis_beacon_crisis_fleet.GetName]§! is now en route to the §Y[crisis_beacon_target_country.GetAdj] capital§!."
  operation.4010.name:0 "[crisis_beacon_crisis_fleet.GetName] on Course for [root.capital_scope.GetName]"
  operation.4010.desc:0 "We detect a hostile presence from the §P[crisis_beacon_crisis_country.GetName]§!, heading straight for our capital, §Y[crisis_beacon_target_capital.GetName]§!! Strange energy waves have burst out from the vicinity of §H[crisis_beacon_crisis_system.GetName]§!, their assumed origin.\n\nWe had just begun the work of analyzing this phenomenon when energy signatures in the region abruptly changed. All signs suggest this means a sudden change of fleet movements. Furthermore, at least one of those energy signatures looks to belong to an empire other than the [crisis_beacon_crisis_country.GetName]. Whoever they are, they appear to be the cause of this behavior. We suspect this to be §Hprovocative action§! by one of our galactic rivals."
- 
+
  #######################################
  # Operations (random pool)
  #######################################
@@ -575,7 +575,7 @@
  operation.5031.desc:2 "Our research efforts have paid off, and specifications for new shielding against electromagnetic interference are being distributed throughout our operative network in the §Y[excess_noise_country.GetName]§!. Our efforts on §HOperation [fromfromfrom.GetName]§! should no longer be hindered by excess static."
  operation.5032.name:0 "Excess Noise Persists"
  operation.5032.desc:0 "Electrostatic noise in the §Y[excess_noise_country.GetName]§! has now caused irreparable data loss amongst some of our drones. §HOperation [event_target:excess_noise_operation.GetName]§! may continue, but our efforts are being hindered - such is the scale of backlogged demands upon our data validation processes."
- 
+
  operation.5035.name:1 "Snuffed Out"
  operation.5035.desc:2 "$role_spymaster$ [from.spynetwork.leader.GetName] reports that our team of operatives near the §Y[snuffedout_country.GetName]§! has missed a number of checkpoints. Given the nature of this operation, we had already anticipated them being unable to maintain frequent contact. However, our $role_spymaster$ is regrettably confident that by now, the team has been lost.\n\n§HOperation [from.GetName]§! may be rescued if we can successfully cover our tracks, pitting our §H$MOD_INTEL_DECRYPTION_ADD$§! against [snuffedout_country.GetAdj] §H$MOD_INTEL_ENCRYPTION_ADD$§!."
  operation.5035.a.tooltip:1 "Pauses §YOperation [from.GetName]§! for about a month.\n\nThere is a §Hmedium-to-low§! chance our actions will go unnoticed, depending on our target's §H$MOD_INTEL_ENCRYPTION_ADD$§!.\n\n$ESPIONAGE_OPERATION_CHANCE_THEMED_ASSET$\n\n"
@@ -716,7 +716,7 @@
  envoy_events.101.name:0 "$envoy_events.100.name$"
  envoy_events.101.desc:0 "The §H[from.GetName]§! say they have §Ptaken offense§! at a misdemeanor carried out by one of our envoys. They have not named the envoy, nor even described the nature of the insult. Instead we have received little more than a burst of indignation, and an abrupt end to communications.\n\nIt's possible that this rare breach in diplomacy is the work of some other, meddling party; it could just as easily be an honest misunderstanding."
  envoy_events.101.a:0 "Either way, diplomacy just got trickier."
- 
+
  #######################################
  # Modifiers
  #######################################
@@ -789,7 +789,7 @@
  espionage_finderskeepers:0 "Found Encryption Key"
  espionage_finderskeepers_desc:0 "One of our operatives recently found an encryption key, mislaid by a foreign power. By studying its workings we have gained insight into novel decryption techniques."
  espionage_straycomm:0 "Lost Encryption Key"
- espionage_straycomm_desc:0 "One of our $job_administrator_plural$ recently misplaced a bundle of confidential materials, including a live encryption key. Our domestic security has been compromised for the time being."
+ espionage_straycomm_desc:1 "One of our $job_politician_plural$ recently misplaced a bundle of confidential materials, including a live encryption key. Our domestic security has been compromised for the time being."
  espionage_drain_resources_exploit:0 "Enterprising Spy Network"
  espionage_drain_resources_exploit_desc:0 "A gang of operatives within one of our Spy Networks were caught exploiting local commerce. Our $role_spymaster$ has leveraged their black market enterprise for our direct benefit."
 
@@ -812,7 +812,7 @@
  TOXIC_OPERATION_PROJECT_DESC:0 "The [toxic_field_country.GetAdj] habitat is mildly toxic to our own drone operatives. By studying its effects, we can develop a remedy and so avoid the risks associated with having visibly-allergic drones inside their hive."
  NOISE_OPERATION_PROJECT:0 "Excess Noise"
  NOISE_OPERATION_PROJECT_DESC:1 "The environment which the [excess_noise_country.GetName] creates for itself generates more electrostatic noise than we had anticipated. Our disguised drones are experiencing patchy data loss as a result. By studying these errant frequencies, we can re-tune our operative drones to maintain higher function and avoid detection 'in the field'."
- 
+
  #######################################
  # Synced & Scripted Localization
  #######################################
@@ -836,7 +836,7 @@
 #  operation_subterfuge.2:0 "Wheel"
 #  operation_subterfuge.3:0 "Aerosol"
 #  operation_subterfuge.4:0 "Laser"
- 
+
  #GetSabotagedStarbaseTitle
  sabotaged_anchorage:0 "$sm_anchorage$ Sabotaged"
  sabotaged_gun_battery:0 "$sm_gun_battery$ Sabotaged"
@@ -874,11 +874,11 @@
  operative_fixer:0 "fixer"
  operative_informant:0 "informant"
  operative_warehouse:0 "warehouse properietor"
- 
+
  #######################################
  # Other
  #######################################
- 
+
  role_spymaster:0 "Spymaster"
  DISAVOW:0 "Disavow."
  APPALLING:0 "An appalling act."
@@ -961,7 +961,7 @@
  resolution_emperor_by_election_tooltip:0 "Membership in the Imperial Council is determined through regular elections based on §YDiplomatic Weight§!."
 
  resolution_emperor_ina:0 "Imperial Navigation Agency"
- resolution_emperor_ina_desc:0 "$resolution_custodian_ina_desc$"
+ resolution_emperor_ina_desc:1 "The INA will enforce standards and recommended practices for space travel, and will maintain a massive database of every known space hazard in all charted Imperium systems."
  resolution_emperor_disband_ina:0 "Disband the Imperial Navigation Agency"
  resolution_emperor_disband_ina_desc:0 "$resolution_custodian_disband_ina_desc$"
  resolution_emperor_gto:0 "$resolution_custodian_gto$"
@@ -1403,7 +1403,7 @@
  action.158.2.desc:1 "Mark my words... the destruction of the Galactic Imperium has doomed us all. How else could we stand united under one banner against the horrors that threaten our galaxy?"
  action.158.3.desc:1 "If the citizens of the Imperium had fought harder, this would not have come to pass! Traitors all!"
  action.158.gestalt.1.desc:0 "We imposed order on a chaotic galaxy, and you, in your predictable ignorance, lashed out in fear. What have you done?"
- 
+
  imperial_charter:0 "Imperial Charter"
  imperial_charter_desc:1 "Our Imperial Charter gives us the right to open branch offices on planets throughout the Galactic Imperium, where we can establish Imperial Concession Ports. These branch office buildings generate income for both us and the ruler of the Galactic Imperium."
  resolution_emperor_imperial_charter:0 "Imperial Charter"
@@ -1751,7 +1751,7 @@
  crisis.6006.a:0 "More dark matter is needed!"
  crisis.6007.desc:0 "The Aetherophasic Engine has ripped a massive hole in the fabric of the Shroud. It is not yet large enough for us to fully subvert the realm, but the rupture has spurred a lot of activity among the Shroud entities.\n\nThey have finally recognized the threat we pose, but their efforts will amount to nothing. The tendrils of the Engine are embedded too deeply in the Shroud to be severed now.\n\nWe are close now. So very close."
  crisis.6007.a:0 "Nothing will stop us."
- 
+
  crisis.6010.name:0 "Psionic Shockwave"
  crisis.6010.a.desc:0 "A massive psionic shockwave recently swept across the galaxy! It seems to have emanated from the §H[crisis_sphere_system.GetName]§! system in the §H[From.GetName]§!. Our telepaths are struggling to explain what could have caused such an event - nothing like it has been recorded in galactic history.\n\nEven in the Shroud itself, echoes of this incredible event are being felt."
  crisis.6010.b.desc:0 "Yet another massive psionic shockwave has swept across the galaxy! This time it emanated from the §H[crisis_sphere_system.GetName]§! system in the §H[From.GetName]§!.\n\nAs before, this event is sending ripples across the entire Shroud."
@@ -1947,7 +1947,7 @@
  operation.6252.9.desc:0 "As observed by our operatives, one of the autonomous drone leaders in the [target.GetName] has been exhibiting behavior that suggests it sometimes strays from the will of the Hive Mind in pursuit of personal goals, such as the secret acquisition of small material possessions. If the Mind learned of this, the repercussions for the drone would be severe.\n\nWe could approach the drone and promise to keep our observations to ourselves in exchange for a few favors..."
  operation.6255.name:0 "Extortion Successful"
  operation.6255.desc:0 "We have successfully arrived at a mutually beneficial arrangement with our contact in the §H[From.target.GetName]§!. In exchange for our discretion, we have been granted the promise of certain diplomatic favors in the future."
- 
+
  SHIP_CRISIS_STAR_EATER_SECTION:0 "Star-Eater"
  imperium_rally_to_side:0 "§RDue to their Imperial Authority, the rest of the Imperium will rally to their side.§!"
  war_goal_wg_humiliation_imperium:0 "$war_goal_wg_humiliation$"

@@ -4,7 +4,7 @@
 
  trait_aquatic:0 "Aquatic"
  trait_aquatic_desc:0 "§LThis species is perfectly adapted to living in the depths of the ocean. However, on dry land, it is like a fish out of water.§!\n"
- trait_aquatic_tooltip:1 "Housing Usage on §YOcean§! worlds: §G-10%§!\nFood, Energy and Mineral output on §YOcean§! worlds: §G+10%§!\nHousing Usage on non-§YWet§! worlds: §R+30%§!\nHabitability on non-§YWet§! worlds: §R-20%§!\n\nThe §H$ap_hydrocentric$§! Ascension Perk amplifies this trait's effects."
+ trait_aquatic_tooltip:2 "Housing Usage on §YOcean§! worlds and §YFlooded Habitats§!: §G-10%§!\nFood, Energy and Mineral output on §YOcean§! worlds: §G+10%§!\nHousing Usage on non-§YWet§! worlds: §R+30%§!\nHabitability on non-§YWet§! worlds: §R-20%§!\n\nThe §H$ap_hydrocentric$§! Ascension Perk amplifies this trait's effects."
  trait_aquatic_remove_evolutionary_mastery:0 "§RRequires §Y$ap_evolutionary_mastery$§! Ascension Perk to remove.§!"
  trait_aquatic_remove_hydrocentric:0 "§RCannot remove §Y$trait_aquatic$§! trait after taking §Y$ap_hydrocentric$§! Ascension Perk.§!"
 
@@ -73,7 +73,7 @@
  aquatics.160.desc:0 "The dragon appeared to realise our intentions, and gracefully swooped down to rest in the area we had vacated. The large supply of food we left behind probably helped, it must be said - the dragon has laid into it with astounding voracity.\n\nOur [This.Owner.GetResearchers] are observing it from a distance."
  aquatics.160.A:0 "Watch and wait."
  aquatics.165.name:0 "$aquatics.160.name$"
- aquatics.165.desc.normal:0 "After several further passes of the planet, the dragon apparently decided it was safe to land. Although it picked a secluded area, a number of [Root.GetSpeciesNamePlural] were killed and even more displaced - unsurprising, given its incredible size and voracious appetite.\n\nIt has now settled in, and is decimating the local flora and fauna at an alarming rate. The local population is keeping its distance."
+ aquatics.165.desc.normal:1 "After several further passes of the planet, the dragon apparently decided it was safe to land. Although it picked a secluded area, a number of [Root.Owner.GetSpeciesNamePlural] were killed and even more displaced - unsurprising, given its incredible size and voracious appetite.\n\nIt has now settled in, and is decimating the local flora and fauna at an alarming rate. The local population is keeping its distance."
  aquatics.165.desc.gestalt:0 "After several further passes of the planet, the dragon apparently decided it was safe to land. Although it picked a secluded area, a number of our drones were destroyed and even more displaced - unsurprising, given its incredible size and voracious appetite.\n\nIt has now settled in, and is decimating the local flora and fauna at an alarming rate. Our drones are keeping a precautionary distance."
  aquatics.170.name:0 "Taking Flight"
  aquatics.170.desc:0 "After several years of gorging itself on the bountiful harvests of [Root.GetName], the now considerably girthier Sky Dragon has once again taken flight. With a final roar in salute, it lifted off - leaving behind a large collection of scales, shed skin, and other byproducts of its presence."
@@ -145,7 +145,7 @@
  fcsum_origin_dragon_3:0 "We have cracked the secret behind communicating with the dragon. It appears to have something to say to us."
 
  aquatics.305.name:0 "$aquatics.180.name$"
- aquatics.305.desc:0 "The [This.GetName] reports sighting a terrifying space dragon in the [From.GetName] system!\n\nThe system also appears to be a center of the [From.Owner.GetName], with one of the planets in the system showing signs of particularly dense population.\n\nSo far, the dragon has not reacted to us, nor is there any sign of conflict between it and the other inhabitants of the system. Perhaps it would be best to leave it be." #this event happens during first contact, so [From.Owner.GetName] is "alpha menace"
+ aquatics.305.desc:0 "The [This.GetName] reports sighting a terrifying space dragon in the [From.GetName] system!\n\nThe system also appears to be a center of the [From.Owner.GetName], with one of the planets in the system showing signs of particularly dense population.\n\nSo far, the dragon has not reacted to us, nor is there any sign of conflict between it and the other inhabitants of the system. Perhaps it would be best to leave it be." #this event happens during first contact, so [From.Owner.GetName] is 'alpha menace'
 
  space_dragon_origin:0 "Sky Dragon"
  space_dragon_origin_plural:0 "Sky Dragons"
@@ -161,7 +161,7 @@
 
  ap_hydrocentric:0 "Hydrocentric"
  ap_hydrocentric_desc:0 "No longer shall we settle for "good enough" replacements for our oceanic abodes: no planet shall be deemed fit for colonization until it has been thoroughly inundated."
- ap_hydrocentric_tooltip:1 "Allows the construction of §YIce Mining Stations§! on starbases, which enable the §Y$decision_expand_planetary_sea$§! decision on §YOcean§! worlds.\nSpecies with the §Y$trait_aquatic$§! trait gain 50% greater benefits for living on §YOcean§! worlds, but penalties for living on non-§YWet§! worlds are likewise amplified."
+ ap_hydrocentric_tooltip:2 "Allows the construction of §YIce Mining Stations§! on starbases, which enable the §Y$decision_expand_planetary_sea$§! decision on §YOcean§! worlds and §Y$decision_flood_habitat$§! decision on §YHabitats§!.\nSpecies with the §Y$trait_aquatic$§! trait gain 50% greater benefits for living on §YOcean§! worlds, but penalties for living on non-§YWet§! worlds are likewise amplified."
  ap_hydrocentric_deluge_tooltip:0 "Unlocks the §YDeluge§! Colossus Weapon."
  ap_hydrocentric_deluge_pre_unlock_tooltip:0 "Unlocks the §YDeluge§! Colossus Weapon §R(requires §Y$ap_colossus$§! Ascension Perk)§!."
 
@@ -175,7 +175,7 @@
 
  sm_ice_mining_station:0 "Ice Mining Station"
  sm_ice_mining_station_desc:0 "This system is a plentiful source of unexploited ice. By setting up a harvesting station here, we could see it put to better use, creating habitable oceans for our kind.\n\n$ice_mining_details$\n"
- ice_mining_station_tooltip:0 "System Modifier:\n    $mod_station_gatherers_produces_mult$: §G+15%§!\nUnlocks the §Y$decision_expand_planetary_sea$§! Decision on Ocean worlds."
+ ice_mining_station_tooltip:2 "System Modifier:\n    $mod_station_gatherers_produces_mult$: §G+15%§!\nUnlocks the §Y$decision_expand_planetary_sea$§! Decision on Ocean worlds.\nUnlocks the §Y$decision_flood_habitat$§! decision on §YHabitats§!."
  requires_ice_source:0 "§RRequires an ice asteroid or frozen world in the system.§!"
  ice_mining_details:0 "Ice asteroids can be mined once, frozen worlds up to 3 times."
  has_ice_source:0 "§YIce Mining available.§!"
@@ -189,11 +189,22 @@
  requires_max_3_times_ice_dumping:0 "$TRIGGER_PASS$Can be enacted a maximum of §Y3§! times per planet (current: §Y[This.ice_dumping_happened]§!)"
  ICE_MINING_INTERRUPTED_TITLE:0 "Ice Mining Interrupted"
  ICE_MINING_INTERRUPTED_DESC:0 "As no source of ice is currently available, our attempts to expand the planetary sea on §Y[This.GetName]§! have been cancelled."
+ ICE_MINING_INTERRUPTED_HABITAT_DESC:0 "As no source of ice is currently available, our attempts to flood §Y[This.GetName]§! have been cancelled."
  ICE_MINING_SUCCESS_TITLE:0 "Planetary Sea Expanded"
  ICE_MINING_SUCCESS_DESC:0 "Using ice mined from the $SYSTEM|Y$ system, we have managed to expand the planetary sea on §Y[This.GetName]§!."
  ICE_MINING_SUCCESS_BUT_EXHAUSTED_DESC:0 "$ICE_MINING_SUCCESS_DESC$\n\nThe supply of ice from this source has now been exhausted, so the §Y$sm_ice_mining_station$§! has been disbanded."
+ ICE_MINING_HABITAT_SUCCESS_TITLE:0 "Habitat Flooded"
+ ICE_MINING_HABITAT_SUCCESS_DESC:0 "Using ice mined from the $SYSTEM|Y$ system, we have managed to flood §Y[This.GetName]§!."
+ ICE_MINING_HABITAT_SUCCESS_BUT_EXHAUSTED_DESC:0 "$ICE_MINING_SUCCESS_HABITAT_DESC$\n\nThe supply of ice from this source has now been exhausted, so the §Y$sm_ice_mining_station$§! has been disbanded."
  ice_mined_planet:0 "Ice Mined Planet"
  ice_mined_planet_desc:0 "The planet has recently been diminished, in the literal sense, by ice mining operations."
+
+ decision_flood_habitat:0 "Flood Habitat"
+ decision_flood_habitat_desc:0 "Habitats could be ideal for us - if only there was enough water. Our ice mining networks enable us to harvest ice from other celestial bodies and flood [This.GetName], making it into an orbital aquarium."
+ decision_flood_habitat_tooltip:0 "Habitability: §R-20%§!\nConsidered an §YOcean§! world for §YAquatic§! species.\nIce will be harvested from a system with an §Y$sm_ice_mining_station$§! on the starbase."
+ flooded_habitat:0 "Flooded Habitat"
+ flooded_habitat_desc:0 "This habitat has been flooded with water, imitating the natural environment of Aquatic creatures."
+ flooded_habitat_tooltip:0 "Habitability: §R-20%§!\nConsidered an §YOcean§! world for §YAquatic§! species."
 
  # Ocean Paradise Origin
  origin_ocean_paradise:0 "Ocean Paradise"

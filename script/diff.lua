@@ -1,8 +1,8 @@
 local en_path = "../en/localisation/english/"
 local cn_path = "../cn/localisation/english/"
-local new_path = "../en3.2/localisation/english/"
+local new_path = "../en3.3/localisation/english/"
 local diff_path = "../diff/"
-local cn2_path = "../cn3.2/simp_chinese/"
+local cn2_path = "../cn3.3/simp_chinese/"
 
 local function readfile(filename)
 	local f = io.open(filename, "rb")
@@ -120,7 +120,9 @@ local function readcn()
 "federations_l_simp_chinese.yml",
 "federations_resolution_comments_l_simp_chinese.yml",
 "gamepad_indicator_text_l_simp_chinese.yml",
+"hud_tutorial_l_simp_chinese.yml",
 "horizonsignal_l_simp_chinese.yml",
+"immediate_tutorial_l_simp_chinese.yml",
 "l_simp_chinese.yml",
 "leviathans_l_simp_chinese.yml",
 "lithoids_l_simp_chinese.yml",
@@ -138,11 +140,11 @@ local function readcn()
 "nemesis_content_l_simp_chinese.yml",
 "nemesis_crisis_l_simp_chinese.yml",
 "nemesis_custodian_l_simp_chinese.yml",
-"nemesis_douglas_l_simp_chinese.yml",
+--"nemesis_douglas_l_simp_chinese.yml",
 "nemesis_espionage_l_simp_chinese.yml",
-"nemesis_gemma_l_simp_chinese.yml",
+--"nemesis_gemma_l_simp_chinese.yml",
 "nemesis_intel_l_simp_chinese.yml",
-"nemesis_intel_pierre_l_simp_chinese.yml",
+--"nemesis_intel_pierre_l_simp_chinese.yml",
 "new_scripted_loc_l_simp_chinese.yml",
 "observer_events_l_simp_chinese.yml",
 "observer_l_simp_chinese.yml",
@@ -157,6 +159,8 @@ local function readcn()
 "scripted_loc_l_simp_chinese.yml",
 "ship_browser_l_simp_chinese.yml",
 "ship_sections_l_simp_chinese.yml",
+"situations_l_simp_chinese.yml",
+"situations_victor_l_simp_chinese.yml",
 "social_gui_l_simp_chinese.yml",
 "standalone_l_simp_chinese.yml",
 "synthetic_dawn_events_l_simp_chinese.yml",
@@ -164,6 +168,7 @@ local function readcn()
 "traditions_l_simp_chinese.yml",
 "triggers_effects_l_simp_chinese.yml",
 "tutorial_l_simp_chinese.yml",
+"tutorial_overview_l_simp_chinese.yml",
 "unrest_l_simp_chinese.yml",
 "utopia_ascension_l_simp_chinese.yml",
 "utopia_henrik_l_simp_chinese.yml",
@@ -171,7 +176,7 @@ local function readcn()
 "utopia_maximilian_l_simp_chinese.yml",
 "utopia_megastructures_l_simp_chinese.yml",
 "utopia_miranda_l_simp_chinese.yml",
-"void_dweller_traditions_l_simp_chinese.yml",
+--"void_dweller_traditions_l_simp_chinese.yml",
 	}
 	local dict = {}
 	for _, file in ipairs(cn2_list) do
@@ -207,6 +212,8 @@ local list = {
 "federations_resolution_comments_l_english.yml",
 "gamepad_indicator_text_l_english.yml",
 "horizonsignal_l_english.yml",
+"hud_tutorial_l_english.yml",
+"immediate_tutorial_l_english.yml",
 "l_english.yml",
 "leviathans_l_english.yml",
 "lithoids_l_english.yml",
@@ -232,7 +239,6 @@ local list = {
 "pop_factions_l_english.yml",
 "plantoids_l_english.yml",
 "prescripted_l_english.yml",
-"prescripted_l_english.yml",
 "projects_2_l_english.yml",
 "projects_3_l_english.yml",
 "projects_4_l_english.yml",
@@ -241,6 +247,8 @@ local list = {
 "scripted_loc_l_english.yml",
 "ship_browser_l_english.yml",
 "ship_sections_l_english.yml",
+"situations_l_english.yml",
+"situations_victor_l_english.yml",
 "social_gui_l_english.yml",
 "standalone_l_english.yml",
 "synthetic_dawn_events_l_english.yml",
@@ -248,6 +256,7 @@ local list = {
 "traditions_l_english.yml",
 "triggers_effects_l_english.yml",
 "tutorial_l_english.yml",
+"tutorial_overview_l_english.yml",
 "unrest_l_english.yml",
 "utopia_ascension_l_english.yml",
 "utopia_l_english.yml",

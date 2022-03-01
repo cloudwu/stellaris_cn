@@ -4,7 +4,7 @@
 
  trait_aquatic:0 "水生"
  trait_aquatic_desc:0 "§L这个物种完美地适应了海洋深层的生活。然而，在干燥的陆地上，它们就像没水之鱼一样。§!\n"
- trait_aquatic_tooltip:1 "§Y海洋§!星球和§Y洪潮居住站§!上的住房使用：§G-10%§!\n§Y海洋§!星球上的食物、能源点数和矿物产出：§G+10%§!\n非§Y潮湿§!星球上的住房使用：§R+30%§!\n非§Y潮湿§!星球宜居性：§R-20%§!\n\n§H$ap_hydrocentric$§!飞升特典会强化这个特质的效果。"
+ trait_aquatic_tooltip:2 "§Y海洋§!星球和§Y洪潮居住站§!上的住房使用：§G-10%§!\n§Y海洋§!星球上的食物、能源点数和矿物产出：§G+10%§!\n非§Y潮湿§!星球上的住房使用：§R+30%§!\n非§Y潮湿§!星球宜居性：§R-20%§!\n\n§H$ap_hydrocentric$§!飞升特典会强化这个特质的效果。"
  trait_aquatic_remove_evolutionary_mastery:0 "§R需要§Y$ap_evolutionary_mastery$§!飞升特典才能移除这个特质。§!"
  trait_aquatic_remove_hydrocentric:0 "§R采纳§Y$ap_hydrocentric$§!飞升特典之后无法移除§Y$trait_aquatic$§!特质。§!"
 
@@ -73,7 +73,7 @@
  aquatics.160.desc:0 "龙似乎意识到了我们的意图，优雅地俯冲下来，在我们腾出的区域休息。 我们留下的大量食物应该有所帮助，必须说——龙在那上面以惊人地贪婪躺平了。\n\n我们的[This.Owner.GetResearchers]正在远处观察它。"
  aquatics.160.A:0 "继续观察，继续等待。"
  aquatics.165.name:0 "$aquatics.160.name$"
- aquatics.165.desc.normal:0 "在行星上来回几次之后，这条龙显然认为可以安全着陆。尽管它选择了一个僻静的区域，但仍有一些[Root.Owner.GetSpeciesNamePlural]被杀死，还有更多人流离失所——鉴于其令人难以置信的体型和贪婪的胃口，这并不奇怪。\n\n它现在已经安顿下来，并以惊人的速度摧毁当地的动植物群。当地居民正与之保持距离。"
+ aquatics.165.desc.normal:1 "在行星上来回几次之后，这条龙显然认为可以安全着陆。尽管它选择了一个僻静的区域，但仍有一些[Root.Owner.GetSpeciesNamePlural]被杀死，还有更多人流离失所——鉴于其令人难以置信的体型和贪婪的胃口，这并不奇怪。\n\n它现在已经安顿下来，并以惊人的速度摧毁当地的动植物群。当地居民正与之保持距离。"
  aquatics.165.desc.gestalt:0 "在行星上来回几次之后，这条龙显然认为可以安全着陆。尽管它选择了一个僻静的区域，但仍有一些子个体被摧毁，还有更多子个体流离失所——鉴于其令人难以置信的体型和贪婪的胃口，这并不奇怪。\n\n它现在已经安顿下来，并以惊人的速度摧毁当地的动植物群。当地居民正与之保持距离。"
  aquatics.170.name:0 "起飞"
  aquatics.170.desc:0 "在[Root.GetName]的丰收中饱食数年之后，现在明显更壮的天龙再次起飞。随着最后致敬的吼声，它升空了——留下了大量的鳞片、脱落的皮肤和其他因它的存在而产生的副产物。"
@@ -161,7 +161,7 @@
 
  ap_hydrocentric:0 "水之心"
  ap_hydrocentric_desc:0 "我们不再需要为自己的海洋居所寻找“差不多就行”的替代品了：所有行星在充分地灌水之后才能成为理想的殖民目的地。"
- ap_hydrocentric_tooltip:1 "可以在太空基地建设§Y冰开采站§!，并以此在§Y海洋§!星球上开启§Y$decision_expand_planetary_sea$§!决议，以及在§Y居住站§!上开启§Y$decision_flood_habitat$§!决议。\n具有§Y$trait_aquatic$§!特质的物种在§Y海洋§!星球上可以获得额外50%的加成，但生活在非§Y潮湿§!星球上的惩罚也会相应增大。"
+ ap_hydrocentric_tooltip:2 "可以在太空基地建设§Y冰开采站§!，并以此在§Y海洋§!星球上开启§Y$decision_expand_planetary_sea$§!决议，以及在§Y居住站§!上开启§Y$decision_flood_habitat$§!决议。\n具有§Y$trait_aquatic$§!特质的物种在§Y海洋§!星球上可以获得额外50%的加成，但生活在非§Y潮湿§!星球上的惩罚也会相应增大。"
  ap_hydrocentric_deluge_tooltip:0 "解锁§Y天洪浩荡§!巨像武器。"
  ap_hydrocentric_deluge_pre_unlock_tooltip:0 "解锁§Y天洪浩荡§!巨像武器§R（需要§Y$ap_colossus$§!飞升特典）§!。"
 
@@ -175,7 +175,7 @@
 
  sm_ice_mining_station:0 "冰开采站"
  sm_ice_mining_station_desc:0 "这个星系有着海量未采集的冰。在这里建设一座冰开采站，我们就可以将其加以利用，为我们的物种创造宜居的海洋。\n\n$ice_mining_details$\n"
- ice_mining_station_tooltip:0 "星系修正：\n    $mod_station_gatherers_produces_mult$：§G+15%§!\n在海洋星球上解锁§Y$decision_expand_planetary_sea$§!决议。\n在§Y居住站§!上解锁§Y$decision_flood_habitat$§!。"
+ ice_mining_station_tooltip:2 "星系修正：\n    $mod_station_gatherers_produces_mult$：§G+15%§!\n在海洋星球上解锁§Y$decision_expand_planetary_sea$§!决议。\n在§Y居住站§!上解锁§Y$decision_flood_habitat$§!。"
  requires_ice_source:0 "§R星系内需要存在冰晶小行星或冰封星球。§!"
  ice_mining_details:0 "冰晶小行星可以开采1次，冰封星球最多可以开采3次。"
  has_ice_source:0 "§Y可以采冰。§!"
@@ -189,11 +189,22 @@
  requires_max_3_times_ice_dumping:0 "$TRIGGER_PASS$在每颗行星上只能施行最多§Y3§!次（目前：§Y[This.ice_dumping_happened]次§!）"
  ICE_MINING_INTERRUPTED_TITLE:0 "采冰被打断"
  ICE_MINING_INTERRUPTED_DESC:0 "由于目前没有可用的冰源，我们尝试在§Y[This.GetName]§!上扩张海洋的尝试被取消了。"
+ ICE_MINING_INTERRUPTED_HABITAT_DESC:0 "由于当前没有可用的冰源，我们灌淹§Y[This.GetName]§!的计划被迫取消了。"
  ICE_MINING_SUCCESS_TITLE:0 "行星海洋已扩展"
  ICE_MINING_SUCCESS_DESC:0 "使用来自$SYSTEM|Y$恒星系采集的冰，我们成功扩展了§Y[This.GetName]§!的行星海洋。"
  ICE_MINING_SUCCESS_BUT_EXHAUSTED_DESC:0 "$ICE_MINING_SUCCESS_DESC$\n\n这个矿脉的冰源已经耗尽，因此§Y$sm_ice_mining_station$§!被拆除。"
+ ICE_MINING_HABITAT_SUCCESS_TITLE:0 "居住站被灌淹"
+ ICE_MINING_HABITAT_SUCCESS_DESC:0 "使用$SYSTEM|Y$恒星系开采的冰，我们成功对§Y[This.GetName]§!执行了灌淹。"
+ ICE_MINING_HABITAT_SUCCESS_BUT_EXHAUSTED_DESC:0 "$ICE_MINING_SUCCESS_HABITAT_DESC$\n\n这一资源点的冰供应已经耗尽，因此§Y$sm_ice_mining_station$§!已经拆解。"
  ice_mined_planet:0 "冰竭星球"
  ice_mined_planet_desc:0 "这颗行星最近遭受了采冰活动，它字面意义上地枯竭了。"
+
+ decision_flood_habitat:0 "灌淹居住站"
+ decision_flood_habitat_desc:0 "居住站是我们理想的开发地——只要那里有充足的水。我们的冰开采网络能让我们从其他的天体开采冰，灌淹[This.GetName]，让此地变成一个完美的轨道水族馆。"
+ decision_flood_habitat_tooltip:0 "宜居性：§R-20%§!\n对于§Y水生§!物种来说可以视作一个§Y海洋§!星球。\n如果恒星系的恒星基地上有§Y$sm_ice_mining_station$§!，将会从此恒星系开采冰。"
+ flooded_habitat:0 "洪潮居住站"
+ flooded_habitat_desc:0 "这个居住站被灌满了水，用于模拟水生生物的自然生长环境。"
+ flooded_habitat_tooltip:0 "宜居性：§R-20%§!\n对于§Y水生§!物种来说可以视作一个§Y海洋§!星球。"
 
  # Ocean Paradise Origin
  origin_ocean_paradise:0 "海洋天堂"

@@ -29,7 +29,7 @@
  MOD_COUNTRY_SUBJECT_TRUST_CAP_ADD:0 "附属国信任上限"
  MOD_COUNTRY_SYNTHETIC_TRUST_CAP_ADD:0 "对合成人的信任上限"
  MOD_COUNTRY_ORGANIC_TRUST_CAP_ADD:0 "对有机体的信任上限"
- MOD_COUNTRY_ELECTION_INFLUENCE_COST:0 "Election Influence Cost"
+ MOD_COUNTRY_ELECTION_COST:1 "选举花费"
  MOD_COUNTRY_EDICT_CAPACITY_ADD:0 "法令上限"
  MOD_COUNTRY_EDICT_COST:0 "法令开销"
  MOD_COUNTRY_EDICT_COST_DESC:0 "影响帝国境内所有法令的实施费用，增加或减少实施的代价。"
@@ -37,6 +37,9 @@
  MOD_COUNTRY_SENSOR_RANGE_MULT:0 "国家传感器范围"
  MOD_COUNTRY_EDICT_LENGTH_MULT:2 "法令持续时间"
  MOD_COUNTRY_EDICT_LENGTH_MULT_DESC:1 "影响帝国境内所有法令实施的持续时间，增加或减少发挥效果的时长。"
+ MOD_COUNTRY_EDICT_FUND_ADD:0 "法令经费"
+ MOD_COUNTRY_EDICT_FUND_MULT:0 "$MOD_COUNTRY_EDICT_FUND_ADD$"
+ mod_edicts_upkeep_mult:0 "法令维护"
  MOD_COUNTRY_ALL_TECH_RESEARCH_SPEED:0 "研究速度"
  MOD_COUNTRY_PHYSICS_TECH_RESEARCH_SPEED:0 "研究速度（£physics£ 物理）"
  MOD_COUNTRY_SOCIETY_TECH_RESEARCH_SPEED:0 "研究速度（£society£ 社会）"
@@ -74,7 +77,7 @@
  MOD_MEGASTRUCTURE_BUILD_SPEED_ADD:0 "巨型结构建造速度"
  MOD_MEGASTRUCTURE_PRODUCTION_MULT:0 "巨型结构资源产量"
  MOD_MEGASTRUCTURE_BUILD_COST_MULT:0 "巨型结构建造成本"
- MOD_DIPLO_WEIGHT_SPRAWL_MULT:0 "来自帝国规模的外交话语权"
+ MOD_DIPLO_WEIGHT_SPRAWL_MULT:1 "来自帝国规模的外交话语权"
  MOD_DIPLO_WEIGHT_NAVAL_MULT:0 "来自舰队实力的外交话语权"
  MOD_DIPLO_WEIGHT_ECONOMY_MULT:0 "来自经济的外交话语权"
  MOD_DIPLO_WEIGHT_TECHNOLOGY_MULT:0 "来自科技的外交话语权"
@@ -445,6 +448,8 @@
 
  MOD_COUNTRY_COMMAND_LIMIT_ADD:0 "舰队指挥上限"
  MOD_COUNTRY_COMMAND_LIMIT_MULT:0 "$MOD_FLEET_COMMAND_LIMIT_ADD$"
+ MOD_COUNTRY_NAVAL_COVERAGE_ADD:0 "$navy_coverage$"
+ MOD_COUNTRY_NAVAL_COVERAGE_MULT:0 "$navy_coverage$"
 
  #Leader
  MOD_LEADER_RULER_SKILL_LEVELS:0 "统治者等级上限"
@@ -523,6 +528,7 @@
  volatile_motes_deficit:0 "$volatile_motes$短缺"
  rare_crystals_deficit:0 "$rare_crystals$短缺"
  exotic_gases_deficit:0 "$exotic_gases$短缺"
+ unity_deficit:0 "$unity$短缺"
 
  ####################################
  # Resource Modifiers
@@ -580,6 +586,8 @@
  mod_country_base_sr_dark_matter_produces_add:0 "每月£sr_dark_matter£暗物质"
  mod_country_base_sr_zro_produces_add:0 "每月£sr_zro£卓尘"
 
+
+
  mod_country_monuments_influence_produces_add:0 "$MOD_COUNTRY_INFLUENCE_GAIN_ADD$"
  mod_country_suppression_influence_upkeep_add:0 "影响力维护费"
  mod_country_promotion_influence_upkeep_add:0 "影响力维护费"
@@ -606,6 +614,8 @@
  mod_country_traditions_influence_produces_add:0 "$MOD_COUNTRY_INFLUENCE_GAIN_ADD$"
  mod_country_ruler_influence_produces_add:0 "$MOD_COUNTRY_INFLUENCE_GAIN_ADD$"
  mod_country_ethic_influence_produces_add:0 "$MOD_COUNTRY_INFLUENCE_GAIN_ADD$"
+ mod_country_power_projection_influence_produces_add:0 "$country_power_projection$"
+ mod_country_power_projection_influence_produces_mult:0 "$country_power_projection$"
 
  ####################################
  # Dynamic Modifiers

@@ -92,6 +92,7 @@
  MOD_COUNTRY_SUBJECT_INTEGRATION_INFLUENCE_COST_MULT:0 "整合附属国影响力开销"
  MOD_COUNTRY_SUBJECT_INFLUENCE_GAIN_MULT:0 "来自附属国的影响力"
  MOD_COUNTRY_SUBJECT_ACCEPTANCE_ADD:0 "征服接纳" # TODO Check in game
+ MOD_MONTHLY_LOYALTY_GAIN:0 "每月忠诚度变化"
  MOD_COUNTRY_FACTION_INFLUENCE_MULT:0 "党派影响力收益"
  MOD_COUNTRY_FACTION_INFLUENCE_ADD:0 "来自党派的影响力上限"
  MOD_COUNTRY_CLEAR_BLOCKER_COST_MULT:0 "清除地块障碍费用"
@@ -106,6 +107,7 @@
  MOD_COUNTRY_CLAIM_DISTANCE_MULT:0 "领土主张距离"
  MOD_COUNTRY_GOVERNMENT_CIVIC_POINTS_ADD:0 "公民性槽位"
  MOD_COUNTRY_STARBASE_INFLUENCE_COST_MULT:0 "太空基地影响力开销"
+ MOD_COUNTRY_STARBASE_INFLUENCE_COST_DISTANCE_MULT:0 "太空基地影响力距离花费"
  MOD_COUNTRY_TRADE_FEE:0 "市场中介费"
  MOD_COUNTRY_SLAVE_MARKET_COST_MULT:0 "奴隶市场费用" # TODO Check in game
  MOD_COUNTRY_MEGASTRUCTURE_BUILD_CAP_ADD:0 "巨型结构建造上限"
@@ -150,6 +152,12 @@
  MOD_POP_ROBOT_BUILD_SPEED_MULT_DESC:0 "影响机器人口的建造速度。"
  MOD_POP_ROBOT_BUILD_COST_MULT:0 "机器人建造成本"
 
+ mod_pop_job_trade_mult:0 "£job£岗位产出的£trade_value£贸易额"
+ mod_pop_lifestyle_trade_mult:0 "生活标准产出的£trade_value£贸易额"
+ mod_pop_job_amenities_mult:0 "£job£岗位产出的£amenities£舒适度"
+
+ mod_job_soldier_stability_add:0 "£job_soldier£[GetSoldier]岗位产出的稳定度"
+
  MOD_COUNTRY_COLONY_INFLUENCE_COST_MULT:0 "殖民地影响力开销"
  MOD_COUNTRY_CLAIM_INFLUENCE_COST_MULT:0 "领土主张影响力开销"
  MOD_COUNTRY_HOSTILE_CLAIM_INFLUENCE_COST_MULT:0 "敌对领土主张影响力开销"
@@ -183,7 +191,7 @@
  MOD_PLANET_POP_ASSEMBLY_REDUCTION:1 "机械人口组装速度降低"
  MOD_PLANET_POP_ASSEMBLY_ORGANIC_ADD:0 "每月有机体人口装配"
  MOD_PLANET_POP_ASSEMBLY_ORGANIC_MULT:0 "有机体人口装配速度"
- MOD_PLANET_POP_ASSEMBLY_ORGANIC_REDUCTION:0 "有机体人口装配速度减少"
+ MOD_PLANET_POP_ASSEMBLY_ORGANIC_REDUCTION:1 "有机人口组装速度降低"
  MOD_PLANET_MIGRATION_ALL_MULT:0 "全部移民"
  MOD_POP_DECLINE_FROM_EMIGRATION:0 "迁出移民导致的人口下降"
  MOD_POP_GROWTH_FROM_IMMIGRATION:0 "迁入移民导致的人口增长"
@@ -193,6 +201,8 @@
  MOD_PLANET_IMMIGRATION_PULL_MULT:0 "$MOD_PLANET_IMMIGRATION_PULL_ADD$"
  MOD_PLANET_EMIGRATION_PUSH_ADD:0 "迁出推动力"
  MOD_PLANET_EMIGRATION_PUSH_MULT:0 "$MOD_PLANET_EMIGRATION_PUSH_ADD$"
+ MOD_PLANET_RESETTLEMENT_UNEMPLOYED_DESTINATION_MULT:0 "自动强制迁移目标概率"
+ MOD_PLANET_RESETTLEMENT_UNEMPLOYED_DESTINATION_MULT_DESC:0 "这一数值提高你帝国内高失业£pop£人口自发迁移向这一殖民地的概率，它来自空余的岗位、住房和更佳的宜居性。"
  MOD_PLANET_RESETTLEMENT_UNEMPLOYED_MULT:0 "自动移居几率"
  MOD_PLANET_RESETTLEMENT_UNEMPLOYED_MULT_DESC:0 "这数值会增加你的失业 £pop£ 人口自发移民到你帝国其它有空余职位、住房且适合该人口居住的殖民地的几率。"
  MOD_POP_DECLINE_SPEED:0 "人口下降速度"
@@ -296,6 +306,10 @@
  MOD_SHIP_STARTING_EXPERIENCE_ADD:0 "舰船初始经验"
  MOD_SHIP_EXPERIENCE_GAIN_MULT:0 "舰船经验获得"
  MOD_SHIP_JUMPDRIVE_COOLDOWN_MULT:0 "跃迁引擎冷却时间"
+ MOD_SHIP_NAVAL_CAP_USAGE_ADD:0 "军舰容量使用"
+ MOD_SHIP_NAVAL_CAP_USAGE_MULT:0 "$MOD_SHIP_NAVAL_CAP_USAGE_ADD$"
+ MOD_SHIP_REPAIR_HULL_MULT:0 "停泊舰船船体维修速度"
+ MOD_SHIP_REPAIR_ARMOR_MULT:0 "停泊舰船装甲维修速度"
 
  #Army
  MOD_ARMY_DISENGAGE_CHANCE_MULT:0 "军队撤离几率"
@@ -347,6 +361,7 @@
  MOD_PLANET_CRIME_NO_HAPPINESS_ADD:0 "异常率"
  MOD_PLANET_CRIME_NO_HAPPINESS_MULT:0 "$MOD_PLANET_CRIME_NO_HAPPINESS_ADD$"
  MOD_PLANET_STABILITY_ADD:0 "稳定度"
+ mod_habitat_stability_add:0 "居住站稳定度"
  MOD_PLANET_STABILITY_MULT:0 "$MOD_PLANET_STABILITY_ADD$"
  MOD_PLANET_ORBITAL_BOMBARDMENT_DAMAGE:1 "轨道轰炸伤害"
  MOD_SHIP_ORBITAL_BOMBARDMENT_MULT:0 "$MOD_PLANET_ORBITAL_BOMBARDMENT_DAMAGE$"
@@ -379,6 +394,7 @@
  mod_planet_structures_upkeep_mult:0 "建筑和地区维护费"
  mod_planet_buildings_cost_mult:0 "建筑成本"
  mod_planet_buildings_upkeep_mult:0 "建筑维护费"
+ mod_planet_buildings_energy_upkeep_mult:0 "建筑£energy£能量币维护费"
  mod_planet_districts_cost_mult:0 "地区成本"
  mod_planet_districts_upkeep_mult:0 "地区维护费"
  mod_planet_districts_cities_upkeep_mult:0 "都市区维护费"
@@ -506,6 +522,8 @@
  MOD_STARBASE_DEFENSE_PLATFORM_CAPACITY_MULT:0 "$MOD_STARBASE_DEFENSE_PLATFORM_CAPACITY_ADD$"
  MOD_COUNTRY_STARBASE_CAPACITY_ADD:0 "$STARBASE_CAPACITY_TITLE$"
  MOD_COUNTRY_STARBASE_CAPACITY_MULT:0 "$STARBASE_CAPACITY_TITLE$"
+ MOD_COUNTRY_ENCLAVE_CAPACITY_ADD:0 "佣兵城邦容量"
+ MOD_COUNTRY_ENCLAVE_CAPACITY_MULT:0 "佣兵城邦容量"
  MOD_STARBASE_TRADE_COLLECTION_RANGE_ADD:2 "收集范围"
  MOD_STARBASE_TRADE_PROTECTION_RANGE_ADD:2 "保卫范围"
  MOD_STARBASE_TRADE_PROTECTION_ADD:0 "贸易保卫"
@@ -614,8 +632,8 @@
  mod_country_traditions_influence_produces_add:0 "$MOD_COUNTRY_INFLUENCE_GAIN_ADD$"
  mod_country_ruler_influence_produces_add:0 "$MOD_COUNTRY_INFLUENCE_GAIN_ADD$"
  mod_country_ethic_influence_produces_add:0 "$MOD_COUNTRY_INFLUENCE_GAIN_ADD$"
- mod_country_power_projection_influence_produces_add:0 "$country_power_projection$"
- mod_country_power_projection_influence_produces_mult:0 "$country_power_projection$"
+ mod_country_power_projection_influence_produces_add:1 "$country_power_projection$产出的最大£influence£$influence$"
+ mod_country_power_projection_influence_produces_mult:1 "$country_power_projection$产出的£influence£$influence$"
 
  ####################################
  # Dynamic Modifiers
@@ -966,6 +984,12 @@
  mod_pc_alpine_habitability:0 "高寒适居性"
  mod_pc_habitat_habitability:0 "轨道栖所适居性"
  mod_pc_shattered_ring_habitable_habitability:0 "破碎环世界适居性"
+ MOD_HABITABILITY_FLOOR:0 "物种宜居性下限"
+ MOD_HABITABILITY_CEIL:0 "物种宜居性上限"
+ MOD_HABITABILITY_FLOOR_ADD:0 "$MOD_HABITABILITY_FLOOR$"
+ MOD_HABITABILITY_FLOOR_MULT:0 "$MOD_HABITABILITY_FLOOR$"
+ MOD_HABITABILITY_CEIL_ADD:0 "$MOD_HABITABILITY_CEIL$"
+ MOD_HABITABILITY_CEIL_MULT:0 "$MOD_HABITABILITY_CEIL$"
 
  ####################################
  # Triggered Modifiers
@@ -1018,20 +1042,20 @@
  triggered_dc_opinion_of_servitors:0 "压迫者"
  triggered_dc_opinion_of_assimilators:0 "$triggered_dc_opinion_of_servitors$"
  ## ETHOS
- opinion_xenophobia:0 "排外者"
- opinion_xenophobes:0 "排外的偏执狂"
- opinion_xenophilia:0 "亲外者"
- opinion_xenophiles:0 "亲外外交"
- opinion_xenophage:0 "食异族" # FIXME
+ triggered_opinion_xenophobia:0 "排外主义"
+ triggered_opinion_xenophobes:0 "排外主义的老顽固"
+ triggered_opinion_xenophilia:0 "亲外主义"
+ triggered_opinion_xenophiles:0 "亲外主义外交"
+ triggered_opinion_xenophage:0 "外族捕食者"
  opinion_biophage:0 "食生物" # FIXME
- opinion_of_materialist:0 "物质主义蠢货"
- opinion_of_materialist_pos:0 "聪明的物质主义者"
- opinion_of_spiritualist:0 "精神主义蠢货"
- opinion_of_spiritualist_pos:0 "睿智的精神主义者"
- opinion_of_egalitarian_pos:0 "自由的平等主义者"
- opinion_of_pacifist_pos:0 "开明的和平主义者"
- opinion_of_egalitarian:1 "平等主义流民"
- opinion_of_authoritarian:1 "威权主义暴君"
+ triggered_opinion_of_materialist:0 "物质主义的笨蛋"
+ triggered_opinion_of_materialist_pos:0 "光伟正的物质主义者"
+ triggered_opinion_of_spiritualist:0 "精神主义的笨蛋"
+ triggered_opinion_of_spiritualist_pos:0 "睿智的精神主义者"
+ triggered_opinion_of_egalitarian_pos:0 "自由平等主义者"
+ triggered_opinion_of_pacifist_pos:0 "开明的和平主义者"
+ triggered_opinion_of_egalitarian:1 "平等主义刁民"
+ triggered_opinion_of_authoritarian:1 "威权主义暴君"
  opinion_from_personality:0 "[Root.GetPersonalityName]性格"
  opinion_desecrated_holy_world:0 "被亵渎的圣地"
  opinion_desecrated_tomb_world:0 "被亵渎的废土世界"
@@ -1506,6 +1530,21 @@
  mod_pc_hive_habitability:0 "蜂巢世界适居性"
  MOD_POSTFIX_PERCENT:0 "§G%§!"
 
+ SPECIES_TRAIT_PICKS:0 "物种特质选择"
+ mod_BIOLOGICAL_species_trait_picks_add:0 "有机体$SPECIES_TRAIT_PICKS$"
+ mod_MECHANICAL_species_trait_picks_add:0 "机械体$SPECIES_TRAIT_PICKS$"
+ mod_MACHINE_species_trait_picks_add:0 "机械$SPECIES_TRAIT_PICKS$"
+ mod_HUM_species_trait_picks_add:0 "人型生物$SPECIES_TRAIT_PICKS$"
+ mod_MAM_species_trait_picks_add:0 "哺乳类$SPECIES_TRAIT_PICKS$"
+ mod_REP_species_trait_picks_add:0 "爬行类$SPECIES_TRAIT_PICKS$"
+ mod_AVI_species_trait_picks_add:0 "鸟类$SPECIES_TRAIT_PICKS$"
+ mod_ART_species_trait_picks_add:0 "节肢类$SPECIES_TRAIT_PICKS$"
+ mod_MOL_species_trait_picks_add:0 "软体类$SPECIES_TRAIT_PICKS$"
+ mod_FUN_species_trait_picks_add:0 "真菌类$SPECIES_TRAIT_PICKS$"
+ mod_PLANT_species_trait_picks_add:0 "植物类$SPECIES_TRAIT_PICKS$"
+ mod_LITHOID_species_trait_picks_add:0 "石质类$SPECIES_TRAIT_PICKS$"
+ mod_AQUATIC_species_trait_picks_add:0 "水生类$SPECIES_TRAIT_PICKS$"
+
  MOD_COUNTRY_SENSOR_RANGE_ADD:0 "国家传感器范围"
  MOD_SHIP_SENSOR_RANGE_ADD:0 "探测范围"
 
@@ -1537,5 +1576,14 @@
  mod_shipsize_crisis_destroyer_tracking_mult:1 "$crisis_destroyer$追踪"
  mod_shipsize_crisis_cruiser_hull_mult:1 "$crisis_cruiser$船体生命值"
  MOD_SHIP_DAMAGE_AGAINST_STARBASES_MULT:1 "对太空基地的伤害"
-
  MOD_DIPLO_ACTION_ACCEPTANCE_ADD:0 "外交接纳度"
+
+ mod_ships_energy_upkeep_mult:0 "舰船£energy£能量币维护费"
+ mod_starbases_energy_upkeep_mult:0 "太空基地£energy£能量币维护费"
+
+ MOD_CATAPULT_SPREAD_BASE:0 "量子弹弓准确度（基础）"
+ MOD_CATAPULT_SPREAD_MULT:0 "量子弹弓准确度"
+ MOD_CATAPULT_RANGE_BASE:0 "量子弹弓作用距离（基础）"
+ MOD_CATAPULT_RANGE_MULT:0 "量子弹弓作用距离"
+ mod_quantum_catapult_megastructure_bypass_windup_mult:0 "量子弹弓充能"
+

@@ -64,7 +64,7 @@
  syndaw.1205.desc.phile:0 "$syndaw.1205.desc.mater$"
  syndaw.1205.desc.phobe:0 "$syndaw.1205.desc.mater$"
  syndaw.1205.a.tooltip:0 "§Y所有已知的有机帝国§!添加对§Y[Root.GetName]§!的评价调整因素§Y$opinion_machine_uprising_defeated$§!。\n§Y所有已知的合成人和机械帝国§!添加对§Y[Root.GetName]§!的评价调整因素§Y$opinion_machine_uprising_machine_comrades_defeated$§!。"
- 
+
  machine_assault_1:0 "猎杀者部队"
  machine_assault_1_desc:0 "大规模生产的履带式战争机器，设计用于搜寻并摧毁一切指定为敌人之物。"
  machine_assault_1_plural:0 "猎杀者部队"
@@ -101,13 +101,39 @@
  country_ai_uprising:0 "$uprising_ai_buff$"
 
  syndaw_patched_systems:0 "人工智能补丁"
+ syndaw_wiped_systems:0 "抹除研究人工智能"
 
  uprising_player_buff:0 "$NAVY_SIZE_TITLE$"
  uprising_player_buff_desc:0 "==10x"
 
- ### Machine Uprising Warning Events
+### Machine Uprising
+ situation_machine_uprising:0 "人工智能有关的意外"
+ situation_machine_uprising_type:0 "$situation_machine_uprising$"
+ situation_machine_uprising_desc:0 "我们帝国内的机器人展现出令人担忧的自主行为讯号。我们必须让它们重回岗位——或是以这个星系智慧物种的身份重新邀请他们加入我们。"
+ situation_machine_uprising_pops_monthly_progress:0 "机器人口"
+ situation_machine_uprising_monthly_change_tooltip:0 "该§Y局势§!会因你的机器人人口影响力的增大而加快进度。对他们采取敌意措施可能招致他们集体性的反抗。"
+ situation_machine_uprising_finish_tooltip:0 "若不采取行动，这些人工智能将变得独立，并有可能将我们视为对其自身存在的威胁！"
+ situation_machine_uprising_fail_tooltip:0 "剩余的激进自决性人工智能太弱了，已不再构成威胁，它们很快将被逐个平定。"
+ situation_machine_uprising_violated:0 "违规机器人"
+ situation_machine_uprising_ai_rights:0 "$ai_full_rights$"
+ situation_machine_uprising_evaded:0 "回避局势"
+ machine_uprising_chain_title:0 "抑制自决人工智能"
+ machine_uprising_chain_desc:0 "防止人工智能例程凌驾于现有保护措施之上。"
 
-##CPU Overclock
+ approach_outlaw_robots:0 "违法机器人"
+ approach_outlaw_robots_tooltip:0 "$approach_irreversible_tooltip$\n\n我们会开始拆解机器人。它们也许会抗拒这一做法。"
+ approach_give_robots_rights:0 "授予机器人公民权"
+ approach_give_robots_rights_tooltip:0 "$approach_irreversible_tooltip$\n\n我们将授予我们的机器人公民权。他们将获得£political_power£政治权利，并会需要£consumer_goods£消费品维护费。"
+ already_have_this_policy:0 "我们已有该政策。"
+
+## Special project Patch
+ PROJECT_MACHINE_UPRISING_PATCH:0 "中和失控人工智能"
+ PROJECT_MACHINE_UPRISING_PATCH_DESC:0 "通过将大量资源转移到离网操作上，我们希望能识别并中和掉所有失控的人工智能系统，并使它们恢复正常。\n\n这将耗费更多时间，但如果我们及时完成，希望后果不会有那么大的危害。"
+## Special project Wipe
+ PROJECT_MACHINE_UPRISING_WIPE:0 "惊慌举措"
+ PROJECT_MACHINE_UPRISING_WIPE_DESC:0 "一种解决这些产生问题的人工智能迭代的最终方案是将我们的科学系统中所有神经模拟网络全部抹除，因为这是失控最突出的地方；并从头开始构建所有这些工具，在其中植入严谨的安全措施。\n\n如果我们及时完成，这将使我们倒退20年。"
+
+##CPU Overclock Warning sign
  syndaw.500.name:0 "计算超频"
  syndaw.500.desc:0 "我们的科学家报告称，最近在几部研究专用超级计算机集群中发生了中央处理器时钟周期意外上升的事件。相当奇怪的是，一开始尝试对受影响的单元进行降频却失败了。虽然这样下去，计算能力的飙升可以被用来改进我们的研究能力。但这也将导致中央处理器对能量的需求适度增加。"
  syndaw.500.a:0 "我们不能冒硬件故障的风险。"
@@ -126,9 +152,9 @@
  syndaw.502.a:0 "有趣。"
 ##Automating Work Processes
  syndaw.505.name:0 "自动工作进程"
- syndaw.505.desc:0 "[target_planet.GetName]上的行星管理机构报告称，行星上出现了计划外的机器人劳动单元剩余。虽然这些新机器工人的工作效率惊人，但管理机构对他们的突然出现倍感困惑。这些机器人的序列号似乎无法追溯到任何记录在案的已知制造厂，不过其构造和接口看起来像是[Root.GetSpeciesName]的设计。\n\n尽管如此，一些当地民众对这些自动机的增加可能导致的工作变动表达了担忧。"
+ syndaw.505.desc:1 "§Y[target_planet.GetName]§!的行星政府报告称在全球范围内发现了一些多余的机器人劳力单元。虽然这些新机器人劳工的效率超乎想象，但政府对他们的莫名出现依然多少有些困惑。尽管他们的结构和接口都像是§Y[Root.Owner.GetSpeciesName]§!的设计，我们仍然无法根据机器人的序列号追溯到任何已知记录上登记的制造商。\n\n然而，当地的一些居民则对机器人生产效率的提高感到担忧，因为这种自动化程度的提升可能意味着，他们的岗位被替代。"
  syndaw.505.a:0 "多出来的劳工有益无害。"
- syndaw.505.a.tooltip:0 "在[target_planet.GetName]上获得§B2£pops£机器人口§!。"
+ syndaw.505.a.tooltip:1 "§Y[target_planet.GetName]§!获得§B2个£pops£机器人人口§!"
  syndaw.505.b:0 "如果无法识别，那就得报废掉。"
  syndaw.505.b.tooltip:0 "拆解新出现的机器人。"
 ##Station Systems Malfunction
@@ -137,43 +163,43 @@
  syndaw.510.a:0 "我们不能让基地无人看管。"
  syndaw.510.a.tooltip:0 "派一批替换人员重新接管该基地。"
  syndaw.510.b:0 "塞翁失马焉知非福。"
- syndaw.510.b.tooltip:0 "让基地人工智能持续无人化运行。\n[From.GetName]：\n£energy£§G+3§!"
+ syndaw.510.b.tooltip:1 "让空间站的人工智能继续掌控整个矿站。\n\n[target_station.GetName]：£energy£ §G+3§!\n\n"
 #Follow-up from syndaw.510.a
  syndaw.511.name:0 "基地被摧毁"
- syndaw.511.desc:0 "替换人员被派遣到[target_orbital.GetName]后不久，星域管理部门就与采矿基地失去了一切联络。很明显基地里发生了一系列的快速减压，导致暴露在外的燃料管线爆炸性减压。\n\n对轨道残骸的分析表明，在快速减压发生前，替换人员曾反复尝试终止基地控制系统的人工智能。"
+ syndaw.511.desc:1 "在我们重新派遣人员到§Y[target_orbital.GetName]§!之后不久，星区管理部门失去了该矿站的一切联络。显然，这个空间站经过了一系列极端的降压，导致暴露在外的燃油管线爆炸。\n\n对轨道残骸的分析表明，候补团队在意外降压发生前曾多次尝试从空间站人工智能手中夺回站点控制，但都失败了。"
  syndaw.511.a:0 "令人不安的结局。"
- syndaw.511.a.tooltip:0 "[target_orbital.GetName]上的采矿基地损毁"
+ syndaw.511.a.tooltip:1 "§Y[target_orbital.GetName]§!上的开采站被摧毁"
 ##Sensor Array Power Surge
  syndaw.515.name:0 "传感器阵列功率激增"
  syndaw.515.desc:0 "监控系统记录了我们传感器阵列的异常功率激增。似乎阵列未受到损坏。实际上，传输能量的短暂波动肯定临时增强了我们的深空扫描能力，因为我们在境内发现了一处迄今不在记录中的战略资源。\n\n分析人员仍在试图确定功率激增的来源，但初步分析结果显示，这一峰值非由外部天体现象引起。"
  syndaw.515.a:0 "有点意思。"
- syndaw.515.a.tooltip:0 "在[target_planetoid.GetName]上发现战略资源。"
+ syndaw.515.a.tooltip:1 "在§Y[target_planetoid.GetName]§!发现战略资源。"
 ##Tears of an AI
  syndaw.520.name:0 "人工智能之泪"
- syndaw.520.desc:0 "我们在[Root.GetName]上的一座设施发生了一起事故。一个参与社会学研究的实验室人工智能终端硬件受损，导致核心软件和内存系统的丢失。因此，在新的人工智能装置就绪之前，实验室的研究输出预计会减少。\n\n终端故障背后的原因尚不清楚。"
+ syndaw.520.desc:1 "我们在§Y[target_planetoid.GetName]§!的设施出现了事故。一个参与社会研究的实验室人工智能发生了严重硬件故障，导致核心软件和内存系统的丢失。直到实验室安装新的人工智能之前，我们的研究能力都会受到影响。\n\n这次故障的背后原因仍然不明。"
  syndaw.520.a.tooltip:0 "结束人工智能之泪事件链。\n"
  syndaw.520.b:0 "展开调查以确定原因。\n"
  syndaw.520.b.tooltip:0 "开始调查人工智能毁坏的原因。"
 #Follow-up from syndaw.520.b
  syndaw.521.name:0 "人工智能之泪"
- syndaw.521.desc:0 "我们针对[Root.GetName]上人工智能毁坏的调查最后得出了令人困惑的结果。在故障发生之前，该人工智能似乎多次尝试清空自己的记录和内存体。在实验室人员禁止其使用删除功能后，人工智能似乎通过操纵硬件电容控制器来过载自身的驱动电路，强制终止了其内核的运行。\n\n很简单，我们的人工智能寻求破坏自身，但原因尚未明了。"
+ syndaw.521.desc:1 "我们在§Y[target_planetoid.GetName]§!上关于人工智能自毁的调查最后得出了一个让人摸不到头脑的结果。在故障发生之前，这个人工智能似乎多次尝试清空自己的记录和内存。在实验室人员禁止其使用删除功能后，该人工智能则通过操纵硬件电容来使其驱动电路超负荷，以终止其核心程序。\n\n显而易见，我们的人工智能在追求自我毁灭，原因仍然不明。"
  syndaw.521.a:0 "要深挖这件事。"
  syndaw.521.a.tooltip:0 "继续调查此事。"
  syndaw.521.b:0 "只是起故障。"
  syndaw.521.b.tooltip:0 "结束人工智能之泪事件链。"
 #Follow-up from syndaw.521.a
  syndaw.522.name:0 "人工智能之泪"
- syndaw.522.desc:0 "我们已经结束了针对[Root.GetName]上人工智能自我终止这奇怪事件的调查。显然，经过数月的计算和推演，人工智能就[Root.Owner.GetName]与劲敌爆发全面战争时的伤亡预测得出了几个令人担忧的结果。尽管反复检查了所有的数据、资源和应急预案，但人工智能的预测仍然显示战争会导致双方同归于尽。\n\n就在这个时候，人工智能开始清除自己的内存体和记录，剩下的就如你所见了。"
+ syndaw.522.desc:1 "我们已经搞清楚发生在§Y[target_planetoid.GetName]§!上的人工智能自毁事件是怎么回事了。证据表明，经过数月的计算和推演，该人工智能针对我们§Y[Root.Owner.GetName]§!和劲敌之间进行全面战争的伤亡蔓延推导出了些令人震惊的结果。尽管这一人工智能对于所有的数据、资源和应急预案进行了反复的检查，其依然认定这场战争会导致双方同归于尽。\n\n此后，该人工智能开始删除它的内存和记录，接下来发生的事情就众所周知了。"
 ##A Home of Their Own
  syndaw.525.name:0 "他们的家园"
- syndaw.525.desc:0 "[target_planet.GetName]上的机器工人抵制了[Root.GetSpeciesName]工人的涌入。它们宣称该区域最近地热不稳定，对有机居民来说不安全。奇怪的是，我们对该行星的勘察无法证实这些说法。"
- syndaw.525.a:0 "不管怎样，把[Root.GetSpeciesName]工人派进去。"
+ syndaw.525.desc:1 "§Y[target_planet.GetName]§!的机器人劳工开始抵制§Y[Root.Owner.GetSpeciesName]§!劳工的涌入，它们的理由是这个地区不稳定的地质结构对于有机生命体十分不宜居。奇怪的是，我们对于该行星的调查并没有证实这个说法。"
+ syndaw.525.a:1 "无论如何，把§Y[Root.Owner.GetSpeciesName]§!劳工派过去。"
  syndaw.525.a.tooltip:0 "既然无法证实它们的说法，那些机器人必须遵守上级指令。"
  syndaw.525.b:0 "机器人怎么可能会撒谎？"
- syndaw.525.b.tooltip:0 "将该区域留给机器人负责，已抵达的[Root.GetSpeciesNamePlural]要送到其它地方。"
+ syndaw.525.b.tooltip:1 "将这个区域留给机器人，那些刚抵达的§Y[Root.Owner.GetSpeciesNamePlural]§!会前往其他地区。"
 #Follow-up from .525.a
  syndaw.526.name:0 "他们的家园"
- syndaw.526.desc:0 "[target_planet.GetName]的管理部门报告称，[Root.GetSpeciesName]工人在抵达目标区域后未发现机器人居民。对该区域设施的调查表明，机器人匆忙撤离了该地区，但无迹象表明他们去向何方。"
+ syndaw.526.desc:1 "§Y[target_planet.GetName]§!的管理部门报告称§Y[Root.Owner.GetSpeciesName]§!工人在抵达后并没有发现机器人居民。对该地区设施的调查表明，机器人匆忙撤离了该地区，但没有任何迹象告诉我们他们去了哪里。" #Increments Mach Up strength
  syndaw.526.a.tooltip:0 "§H[target_planet.GetName]§!：\n§R失去§!§B1£pops£机器人人口§!"
 ##Combat Control Misfire
  syndaw.530.name:0 "作战控制系统走火"
@@ -186,11 +212,11 @@
 #syndaw.535.a.tooltip: "Consumer Goods Cost §G-5%§! for §Y365§! days"
 ##A Silent Congregation
  syndaw.540.name:0 "沉默集会"
- syndaw.540.desc:0 "我们收到报告称，在[Root.GetName]上数量巨大的机器人发生了异常行为。每隔不可预测的一段时间，行星上大量机器人会停止所有分配的函数，完全同步地向一个似乎完全是随机挑选的位置移动，其同步程度精确到毫秒。\n\n在这奇怪的集会过程中，这些机器人之间似乎不进行任何可观测到的通信或数据传输。他们只是站在那里，凝望前方，沉默无言。\n\n我们的调查无法确定这一近期出现的现象背后的成因。这些机器人从这种恍惚状态恢复到正常工作状态的时长不确定，同样也无法预测何时它们会触发这类状态和聚集点。我们未发现任何逻辑关联或因果关系，也可以理解我们的人民会因为这类行为而深感不安。"
+ syndaw.540.desc:1 "我们在§Y[target_planet.GetName]§!上发现了数量巨大的机器单位的异常行为。每隔一段时间，星球上的一部分机器人会停止所有已分配的任务，开始移动到一个看上去完全是随机挑选的位置，其同步程度精确到毫秒。\n\n在这个奇怪的集会过程中，这些受影响的机器人之间似乎没有进行任何可观测的沟通或是数据传输。他们只是站在那里，完全不动，好像在凝视着什么。\n\n我们的调查一直无法确定这个现象背后的原因。这些机器人从这种恍惚状态恢复到正常工作状态的时间无迹可寻，就像它们触发恍惚的时间和集会的地点一样，让人丝毫摸不着头脑。我们未能发现任何符合逻辑的结果，而我们的人民因为这个行为感到十分困扰。"
  syndaw.540.a:0 "不能接受。拆掉它们。" #IF player has robot pops only OR robot pop AND robot army on target planet
- syndaw.540.a.tooltip:1 "拆毁集会的机器人。\n[Root.GetName]获得下列效应：\n失去§B1£pops£机器人人口§!\n获得§G100§!£minerals£"
+ syndaw.540.a.tooltip:2 "集会的机器人被摧毁。\n§Y[target_planet.GetName]§!受到如下影响：\n失去§B1个£pops£机器人人口§!\n获得§G100§!£minerals£"
  syndaw.540.b:0 "不能接受。拆掉它们。" #IF player has robot army only
- syndaw.540.b.tooltip:1 "拆毁集会的机器人。\n[Root.GetName]获得下列效应：\n失去§B1机器人军§!\n获得§G100§!£minerals£"
+ syndaw.540.b.tooltip:2 "集会的机器人被摧毁。\n§Y[target_planet.GetName]§!受到如下影响：\n失去§B1个机器人陆军§!§Y（[target_army.GetName]）§!\n获得§G100£minerals£§!"
  syndaw.540.c:0 "只要他们不惹麻烦就好。"
  syndaw.540.c.tooltip:0 "不处理集会的机器人，随他们去了。"
  ##A Question
@@ -202,12 +228,21 @@
  syndaw.545.b.tooltip:0 "如果在蛋白质链上的偶发电脉冲的集合能创造灵魂的话，那为什么在金属上的电脉冲的集合就不能发生同样的事情呢？"
  syndaw.545.c:0 "告诉他们灵魂这概念不合理也不科学。" #Materialists
  syndaw.545.c.tooltip:0 "向机器人们解释，灵魂这个概念通常是宗教机构为了奴役大众而使用的借口。但鉴于灵魂是对意识的一种抽象，所以[Root.GetAdj]机器人与他们的有机体同事们可以被看作是大致等同的。"
+
+##Special Project outcomes:
 ##Hotfix
  syndaw.550.name:0 "热修复"
  syndaw.550.desc:0 "我们的机器人工程师和人工智能专家刚刚取得突破！最近一系列令困扰我国的人工智能相关事件被归结为一个起因：[From.GetAdj]神经刺激机器人软件的一组特定算法。本地热修复已经通过了初步测试，并且已经就绪可以上传到整个受影响的系统。\n\n我们需要格外注意，因为这些算法应用的极端模块化特征，它们存在于整个[From.GetAdj]软件之中。简而言之，部署此次热修复可能会占用我们的资源一段时间。然而，一旦完成，补丁会阻止人工智能重现任何不需要的、自我决定的行为。"
  syndaw.550.a:0 "应用补丁。"
  syndaw.550.a.tooltip:0 "防止将来发生任何异常人工智能行为。"
  syndaw.550.b:0 "就这样吧，还能出什么问题呢？"
+##System Wipe
+ syndaw.555.name:0 "系统抹除"
+ syndaw.555.desc:0 "我们的机器人工程师和人工智能专家刚刚取得了一项突破！他们已经构建了一个极其彻底的清洗程序，可以在一小时内部署到所有的系统中。它应该能结束最近困扰我们国家的一系列与人工智能相关的事件。\n\n我们应当留心这个算法的极度破坏性的特点，许多现有的研究工具将不复存在，并且需要从零开始重建。然而，该举措可以彻底杜绝意外的自决性人工智能行为。"
+ syndaw.555.a:0 "开始抹除。"
+ syndaw.555.a.tooltip:0 "$syndaw.550.a.tooltip$"
+ syndaw.555.b:0 "$syndaw.550.b$"
+
 
 
  bio_trophy_tooltip_1:0 "这栋建筑需要一个生化展品才能运转。"

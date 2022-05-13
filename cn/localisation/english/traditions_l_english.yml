@@ -650,7 +650,7 @@
  tr_subterfuge_finish_desc:0 "成功的§Y行动§!返还§G50%§!的渗透等级花费。\n解锁飞升特典：§G+1§!"
 
  tr_subterfuge_information_security:0 "信息安全"
- tr_subterfuge_information_security_delayed:0 "只有当保密的氛围无处不在的时候，我们才能在无数双眼睛的窥探下保住重要的信息。"
+ tr_subterfuge_information_security_delayed:1 "只有当保密的氛围无处不在的时候，我们才能在无数双眼睛的窥探下保住重要的信息。增强安保系统和反制措施才能让我们的敌人寸步难行。"
 
  tr_subterfuge_nda:0 "保密协议"
  tr_subterfuge_nda_hive:0 "关闭开放性末梢"
@@ -665,14 +665,11 @@
  tr_subterfuge_operational_security_gestalt_delayed:0 "我们不再像从前那样孤身一国，这里的竞争对手个个暗藏杀心，现在却和我们共处在同一个星系之下。为了在这个新环境下快速发展，我们必须向国民灌输“保密”的观念，同时还要抽出相当一部分精力用作刺探他国的机密。"
 
  tr_subterfuge_double_agents:0 "双面间谍"
- tr_subterfuge_double_agents_desc:0 "每当一个针对我国的敌对§Y行动§!失败，则对行动发起国获得§Y+10§!情报。"
+ tr_subterfuge_double_agents_effect:0 "每当一个针对我国的敌对§Y行动§!失败，则对行动发起国获得§Y+10§!情报。"
  tr_subterfuge_double_agents_delayed:0 "通过创造性的劝降手段，我们甚至可以说服最忠诚的敌人为我们所用。"
 
  tr_subterfuge_shadow_recruits:0 "影子特工"
- tr_subterfuge_shadow_recruits_gestalt:0 "$tr_subterfuge_shadow_recruits$"
- tr_subterfuge_shadow_recruits_delayed:0 "我们的敌人只不过刚刚适应了黑暗，而我们的特工却是在黑暗中出生，被黑暗所塑造。"
- tr_subterfuge_shadow_recruits_gestalt_delayed:0 "我们的敌人只不过刚刚适应了黑暗，而我们的特工子个体却是诞生于黑暗，被黑暗所塑造。"
-
+ tr_subterfuge_shadow_recruits_delayed:1 "我们的敌人只不过刚刚适应了黑暗，而我们的[Root.GetOperativesLowerPlural]却是在黑暗中出生，被黑暗所塑造。"
 
 ################################################################
 # Unyielding
@@ -687,7 +684,7 @@
  tr_unyielding_federations_finish_desc:0 "$MOD_STARBASE_DEFENSE_PLATFORM_CAPACITY_MULT$ §G+50%§!\n$mod_starbases_upkeep_mult$ §G-20%§!\n允许使用§Y$military_federation$§!联邦类型。\n已解锁飞升特典：§G+1§!"
 
  tr_unyielding_resistance_is_frugal:0 "防御廉价"
- tr_unyielding_resistance_is_frugal_desc:0 "£building£§Y$building_stronghold$§!现在会提供§Y3§!£unity£凝聚力。另外，§Y$MOD_ARMY_DEFENSE_HEALTH_MULT$§!额外§G+25%§!。"
+ tr_unyielding_resistance_is_frugal_desc:1 "£defense_army£ §Y防御部队§!现在产出§Y0.5§! £unity£ 凝聚力。此外，§Y$MOD_ARMY_DEFENSE_HEALTH_MULT$§!增加§G+25%§!。"
  tr_unyielding_resistance_is_frugal_hive:0 "$tr_unyielding_resistance_is_frugal$"
  tr_unyielding_resistance_is_frugal_machine:0 "$tr_unyielding_resistance_is_frugal$"
  tr_unyielding_resistance_is_frugal_delayed:0 "我们的人民对于保卫星球的堡垒力量深感欣慰，并认为这是对于未来繁荣的重要保障。"
@@ -743,7 +740,7 @@
  requires_not_ap_the_flesh_is_weak:1 "$TRIGGER_FAIL$不能拥有§Y$ap_the_flesh_is_weak$§!飞升特典。"
  requires_finished_cybernetics_project:1 "$TRIGGER_FAIL$必须已完成§Y$ap_the_flesh_is_weak$§!特殊项目。"
 
- requires_ap_mind_over_matter:1 "$TRIGGER_FAIL$需要§Y$ap_mind_over_matter$§!飞升特典。"
+ requires_ap_mind_over_matter:2 "$TRIGGER_FAIL$需要§Y$ap_mind_over_matter$§!飞升特典或§Y$origin_shroudwalker_apprentice$§!起源。"
  requires_not_ap_mind_over_matter:1 "$TRIGGER_FAIL$不能拥有§Y$ap_mind_over_matter$§!飞升特典。"
  allow_decision_mastery_of_nature:0 "§H解锁决策：§!$decision_mastery_of_nature$"
  describe_decision_mastery_of_nature:0 "§E此决策将使行星可支持的地区上限永久增加§Y2§!块。此决策在每颗行星上只可实施一次。§!"
@@ -838,6 +835,7 @@
  ap_hive_worlds_desc:0 "我们将打造一个活的世界，其每一个分子都与蜂巢中的工蜂一样是蜂群的一部分。"
  ap_shared_destiny:0 "同生共荣" # 同生死共荣辱
  ap_shared_destiny_desc:0 "当我们迈入更高境界，我们绝不能忘了那些忠于我们的臣民。我们的辉煌未来总是意在同生共荣。"
+ ap_shared_destiny_effect:0 "你的§Y附属国§!不会因为你有多个附属国遭受$r_loyalty$惩罚。"
  ap_world_shaper_desc:0 "精心塑造并改变整颗行星的生态系统，与艺术家从黏土雕刻出雕塑相比并无二致。"
  ap_master_builders_desc:0 "构建一个巨型结构需要空前海量的资源和预先规划。我们正在宏观工程领域开辟新天地。"
  ap_imperial_prerogative_desc:0 "随着我们文明不断壮大，它跳动的心脏也必须扩张。我们要将更多星系纳入直接管辖之下。"
@@ -870,3 +868,6 @@
  ap_galactic_wonders_utopia_and_megacorp_desc:1 "$ap_galactic_wonders_desc$"
 
  ap_technological_ascendancy_rare:2 "§M稀有科技§!的出现几率现在是正常情况的§Y1.5§!倍。例如，§Y1%§!几率会变为§Y1.5%§!。"
+ ap_grasp_the_void_tech_effect:0 "§Y超光速旅行科技§!出现是正常几率的§Y1.5§!倍。"
+
+ requires_not_shroudwalker_apprentice:0 "$TRIGGER_FAIL$应不具有§Y$origin_shroudwalker_apprentice$§!起源。"

@@ -40,7 +40,7 @@ local function checkyml(text)
 			end
 			line = line:sub(1, #line - #comment)
 			if line ~= "" then
-				local key, value = line:match ' ([%w%._%-]+:%d?%d?) *"(.*)"$'
+				local key, value = line:match [[ ([%w%._%-']+:%d?%d?) *"(.*)"$]]
 				if key == nil or value == nil then
 					print("line = ", line)
 					print("comment =", comment)

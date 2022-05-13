@@ -64,7 +64,7 @@
  syndaw.1205.desc.phile:0 "$syndaw.1205.desc.mater$"
  syndaw.1205.desc.phobe:0 "$syndaw.1205.desc.mater$"
  syndaw.1205.a.tooltip:0 "§YAll known organic Empires§! add the §Y$opinion_machine_uprising_defeated$§! opinion modifier toward §Y[Root.GetName]§!.\n§YAll known Synthetic and Machine Empires§! add the §Y$opinion_machine_uprising_machine_comrades_defeated$§! opinion modifier toward §Y[Root.GetName]§!."
- 
+
  machine_assault_1:0 "Hunter-Killer Army"
  machine_assault_1_desc:0 "Mass-produced tracked war machines designed to seek out and destroy everything that has been designated as an enemy."
  machine_assault_1_plural:0 "Hunter-Killer Armies"
@@ -101,13 +101,39 @@
  country_ai_uprising:0 "$uprising_ai_buff$"
 
  syndaw_patched_systems:0 "AIs Patched"
+ syndaw_wiped_systems:0 "Research AIs Wiped"
 
  uprising_player_buff:0 "$NAVY_SIZE_TITLE$"
  uprising_player_buff_desc:0 "==10x"
 
- ### Machine Uprising Warning Events
+### Machine Uprising
+ situation_machine_uprising:0 "AI-Related Incidents"
+ situation_machine_uprising_type:0 "$situation_machine_uprising$"
+ situation_machine_uprising_desc:0 "The robots within our empire are showing worrying signs of independence. We must put them in their place - or invite them to join us among the sentient species of the galaxy."
+ situation_machine_uprising_pops_monthly_progress:0 "Robot Pops"
+ situation_machine_uprising_monthly_change_tooltip:0 "This §YSituation§! will progress faster the more influential your Robot Pops are. Hostile actions towards them also risk a collective reaction from their side."
+ situation_machine_uprising_finish_tooltip:0 "Unless measurements are taken, these AIs will become independent and risk seeing us as a threat to their own existence!"
+ situation_machine_uprising_fail_tooltip:0 "The remaining aggressive self-deterministic AIs appear to be too weak to become a risk, and will soon be pacified one by one."
+ situation_machine_uprising_violated:0 "Violated Robots"
+ situation_machine_uprising_ai_rights:0 "$ai_full_rights$"
+ situation_machine_uprising_evaded:0 "Situation Evaded"
+ machine_uprising_chain_title:0 "Inhibit Self-Deterministic AIs"
+ machine_uprising_chain_desc:0 "Prevent AI routines from overriding existing safeguards."
 
-##CPU Overclock
+ approach_outlaw_robots:0 "Outlaw Robots"
+ approach_outlaw_robots_tooltip:0 "$approach_irreversible_tooltip$\n\nWe will begin dismantling our robots. They may resist this course of action."
+ approach_give_robots_rights:0 "Grant Robots Citizenship"
+ approach_give_robots_rights_tooltip:0 "$approach_irreversible_tooltip$\n\nWe will grant our robots full citizenship rights. They will be granted £political_power£ Political Power and will require £consumer_goods£ Consumer Goods upkeep."
+ already_have_this_policy:0 "We already have this Policy."
+
+## Special project Patch
+ PROJECT_MACHINE_UPRISING_PATCH:0 "Neutralize Rampant AI"
+ PROJECT_MACHINE_UPRISING_PATCH_DESC:0 "By diverting considerable resources to an off-the-grid operation, we hope to identify and neutralize any rampant AI systems and bring them back in line.\n\nIt will take more time, but the results will hopefully be less detrimental, if we manage to complete it in time."
+## Special project Wipe
+ PROJECT_MACHINE_UPRISING_WIPE:0 "Panicked Measures"
+ PROJECT_MACHINE_UPRISING_WIPE_DESC:0 "One ultimate solution to the problematic AI recursion is to completely wipe all traces of neurosimulative networks within our scientific systems, where the problems are most rampant, and rebuild all these tools from scratch with scrupulous security measures.\n\nThis would set us back significantly for at least 20 years, if we can complete it in time."
+
+##CPU Overclock Warning sign
  syndaw.500.name:0 "Computational Overclocking"
  syndaw.500.desc:0 "Our scientists report a recent unexpected rise in CPU clock cycles in several of our research-dedicated supercomputer clusters. Oddly enough, initial attempts at reducing clock frequency in affected units have proven unsuccessful. It has been posited that the spike in computational power could be used to improve our research capabilities. However, this would also necessitate a modest increase to CPU energy requirements."
  syndaw.500.a:0 "We cannot risk a hardware malfunction."
@@ -126,9 +152,9 @@
  syndaw.502.a:0 "Interesting."
 ##Automating Work Processes
  syndaw.505.name:0 "Automated Work Processes"
- syndaw.505.desc:0 "Planetary administration on [target_planet.GetName] has reported that an unplanned surplus of robotic workforce units have been located planetside. Though the efficiency of these new robotic workers is exceptional, administration is somewhat baffled by their sudden appearance. It seems the robots' serial numbers cannot be traced to any known manufacturies on record, though their construction and interfacing does suggest [Root.GetSpeciesName] design.\n\nNonetheless, some of the local populace have expressed concerns over potential job displacement due to this increase in automation."
+ syndaw.505.desc:1 "Planetary administration on §Y[target_planet.GetName]§! has reported that an unplanned surplus of robotic workforce units have been located planetside. Though the efficiency of these new robotic workers is exceptional, administration is somewhat baffled by their sudden appearance. It seems the robots' serial numbers cannot be traced to any known manufacturies on record, though their construction and interfacing does suggest §Y[Root.Owner.GetSpeciesName]§! design.\n\nNonetheless, some of the local populace have expressed concerns over potential job displacement due to this increase in automation."
  syndaw.505.a:0 "Additional laborers never hurt anybody."
- syndaw.505.a.tooltip:0 "Gain §B2 £pops£ Robot Pops§! on [target_planet.GetName]"
+ syndaw.505.a.tooltip:1 "Gain §B2 £pops£ Robot Pops§! on §Y[target_planet.GetName]§!"
  syndaw.505.b:0 "If they cannot be identified, have them scrapped."
  syndaw.505.b.tooltip:0 "Strip the new robots for parts."
 ##Station Systems Malfunction
@@ -137,43 +163,43 @@
  syndaw.510.a:0 "We cannot leave the station unmanned."
  syndaw.510.a.tooltip:0 "Send a replacement crew to re-man the station."
  syndaw.510.b:0 "A tragedy with a silver lining."
- syndaw.510.b.tooltip:0 "Let the station AI continue running operations unmanned.\n[From.GetName]:\n£energy£ §G+3§!"
+ syndaw.510.b.tooltip:1 "Let the station AI continue running operations unmanned.\n\n[target_station.GetName]: £energy£§G+3§!\n\n"
 #Follow-up from syndaw.510.a
  syndaw.511.name:0 "Station Destroyed"
- syndaw.511.desc:0 "Shortly after a replacement crew was dispatched to [target_orbital.GetName], sector management lost all contact with the mining station. Evidently, the station was rocked by a series of rapid depressurizations, leading to an explosive decompression of exposed fuel lines.\n\nAnalysis of the orbital wreckage suggests the replacement crew initiated several aborted attempts at retrieving station control from the onboard AI, just prior to the unexpected depressurization."
+ syndaw.511.desc:1 "Shortly after a replacement crew was dispatched to §Y[target_orbital.GetName]§!, sector management lost all contact with the mining station. Evidently, the station was rocked by a series of rapid depressurizations, leading to an explosive decompression of exposed fuel lines.\n\nAnalysis of the orbital wreckage suggests the replacement crew initiated several aborted attempts at retrieving station control from the onboard AI, just prior to the unexpected depressurization."
  syndaw.511.a:0 "A troubling outcome."
- syndaw.511.a.tooltip:0 "Mining Station on [target_orbital.GetName] has been lost"
+ syndaw.511.a.tooltip:1 "Mining Station on §Y[target_orbital.GetName]§! has been lost"
 ##Sensor Array Power Surge
  syndaw.515.name:0 "Sensor Array Power Surge"
  syndaw.515.desc:0 "Monitoring systems have recorded an unusual power surge in our sensor arrays. There does not appear to have been any damage. In fact, the brief fluctuation in transferred energy must have temporarily boosted our deep-scanning capabilities, because a hitherto unrecorded strategic resource has been revealed within our borders.\n\nAnalysts are still attempting to identify the source of the power surge, though preliminary findings suggest the spike was not caused by external celestial phenomena."
  syndaw.515.a:0 "Interesting."
- syndaw.515.a.tooltip:0 "Strategic Resource revealed on [target_planetoid.GetName]."
+ syndaw.515.a.tooltip:1 "Strategic Resource revealed on §Y[target_planetoid.GetName]§!."
 ##Tears of an AI
  syndaw.520.name:0 "Tears of an AI"
- syndaw.520.desc:0 "There has been an incident at one of our facilities on [Root.GetName]. A lab AI involved in societal research has suffered terminal hardware damage, resulting in the loss of core software and memory systems. As a result, there will be a projected decrease to research output at the lab until the new AI installation's algorithms have been sufficiently seeded.\n\nThe circumstances behind this terminal failure are still unclear."
+ syndaw.520.desc:1 "There has been an incident at one of our facilities on §Y[target_planetoid.GetName]§!. A lab AI involved in societal research has suffered terminal hardware damage, resulting in the loss of core software and memory systems. As a result, there will be a projected decrease to research output at the lab until the new AI installation's algorithms have been sufficiently seeded.\n\nThe circumstances behind this terminal failure are still unclear."
  syndaw.520.a.tooltip:0 "End the Tears of AI event chain.\n"
  syndaw.520.b:0 "Launch an inquest to determine the cause.\n"
  syndaw.520.b.tooltip:0 "Begin an inquiry into the circumstances surrounding the AI's destruction."
 #Follow-up from syndaw.520.b
  syndaw.521.name:0 "Tears of an AI"
- syndaw.521.desc:0 "Our inquest into the loss of an AI on [Root.GetName] has returned some baffling results. Prior to its terminal failure, the AI had made repeated attempts at purging its own records and memory banks. When lab staff disabled the AI's access to deletion functions, the AI appears to have forced a termination of its core operations by manipulating hardware capacitor control, in order to overload its own drive circuitry.\n\nQuite simply, our AI sought its own destruction, though it remains unclear as to why."
+ syndaw.521.desc:1 "Our inquest into the loss of an AI on §Y[target_planetoid.GetName]§! has returned some baffling results. Prior to its terminal failure, the AI had made repeated attempts at purging its own records and memory banks. When lab staff disabled the AI's access to deletion functions, the AI appears to have forced a termination of its core operations by manipulating hardware capacitor control, in order to overload its own drive circuitry.\n\nQuite simply, our AI sought its own destruction, though it remains unclear as to why."
  syndaw.521.a:0 "Get to the bottom of this."
  syndaw.521.a.tooltip:0 "Continue looking into the matter."
  syndaw.521.b:0 "Malfunctions happen."
  syndaw.521.b.tooltip:0 "End the Tears of AI event chain."
 #Follow-up from syndaw.521.a
  syndaw.522.name:0 "Tears of an AI"
- syndaw.522.desc:0 "We have concluded our inquiry into the strange matter of the AI self-termination on [Root.GetName]. Evidently, following months of evolutionary computation, the AI produced several alarming results with regard to casualty projections in the case of an all-out war between the [Root.Owner.GetName] and our rivals. Despite repeated re-examinations of all available data, recourses and contingencies, the AI's projections remained indicative of mutually assured annihilation.\n\nAt this point, the AI began purging its own memory banks and records, and the rest, as they say, was history."
+ syndaw.522.desc:1 "We have concluded our inquiry into the strange matter of the AI self-termination on §Y[target_planetoid.GetName]§!. Evidently, following months of evolutionary computation, the AI produced several alarming results with regard to casualty projections in the case of an all-out war between the §Y[Root.Owner.GetName]§! and our rivals. Despite repeated re-examinations of all available data, recourses and contingencies, the AI's projections remained indicative of mutually assured annihilation.\n\nAt this point, the AI began purging its own memory banks and records, and the rest, as they say, was history."
 ##A Home of Their Own
  syndaw.525.name:0 "A Home of Their Own"
- syndaw.525.desc:0 "The robotic workers on [target_planet.GetName] have resisted an influx of [Root.GetSpeciesName] laborers, claiming recent geothermic instability in the region has made the area unsafe for organic habitation. Oddly enough, our planetary surveys have not been able to confirm these claims."
- syndaw.525.a:0 "Send in the [Root.GetSpeciesName] laborers anyway."
+ syndaw.525.desc:1 "The robotic workers on §Y[target_planet.GetName]§! have resisted an influx of §Y[Root.Owner.GetSpeciesName]§! laborers, claiming recent geothermic instability in the region has made the area unsafe for organic habitation. Oddly enough, our planetary surveys have not been able to confirm these claims."
+ syndaw.525.a:1 "Send in the §Y[Root.Owner.GetSpeciesName]§! laborers anyway."
  syndaw.525.a.tooltip:0 "If their claims cannot be confirmed, the robots will observe the chain of command."
  syndaw.525.b:0 "Why would a robot lie?"
- syndaw.525.b.tooltip:0 "Leave the region to the robots, the inbound [Root.GetSpeciesNamePlural] will go elsewhere."
+ syndaw.525.b.tooltip:1 "Leave the region to the robots, the inbound §Y[Root.Owner.GetSpeciesNamePlural]§! will go elsewhere."
 #Follow-up from .525.a
  syndaw.526.name:0 "A Home of Their Own"
- syndaw.526.desc:0 "Administration on [target_planet.GetName] reports that upon arrival at their target region, the [Root.GetSpeciesName] laborers discovered that the robotic inhabitants were nowhere to be found. Investigation of facilities in the region suggest the robots vacated the area in a hurry, but we have no indication of where they have gone." #Increments Mach Up strength
+ syndaw.526.desc:1 "Administration on §Y[target_planet.GetName]§! reports that upon arrival at their target region, the §Y[Root.Owner.GetSpeciesName]§! laborers discovered that the robotic inhabitants were nowhere to be found. Investigation of facilities in the region suggest the robots vacated the area in a hurry, but we have no indication of where they have gone." #Increments Mach Up strength
  syndaw.526.a.tooltip:0 "§H[target_planet.GetName]§!:\n§RLose§! §B1 £pops£ Robot Pops§!"
 ##Combat Control Misfire
  syndaw.530.name:0 "Combat Control Misfire"
@@ -186,11 +212,11 @@
 #syndaw.535.a.tooltip: "Consumer Goods Cost §G-5%§! for §Y365§! days"
 ##A Silent Congregation
  syndaw.540.name:0 "A Silent Congregation"
- syndaw.540.desc:0 "We have received accounts of unusual behavior exhibited by robotic units on [Root.GetName]. At unpredictable intervals, a number of our planetside robots will cease all assigned functions and begin moving to a seemingly randomly-determined location in complete synchronicity, timed down to the millisecond.\n\nDuring these bizarre congregations, the affected robots do not appear to engage in any observable form of communication or data transfer. They just stand there. Completely still. Staring.\n\nInvestigation has been unable to determine a reason behind this recent phenomenon. The duration for which the robots remain in this trance-like state before resuming normal functions varies, as does their time of triggering and destination. No logical correlation or causation has been found, and our population is understandably distressed by these eerie gatherings."
+ syndaw.540.desc:1 "We have received accounts of unusual behavior exhibited by robotic units on §Y[target_planet.GetName]§!. At unpredictable intervals, a number of our planetside robots will cease all assigned functions and begin moving to a seemingly randomly-determined location in complete synchronicity, timed down to the millisecond.\n\nDuring these bizarre congregations, the affected robots do not appear to engage in any observable form of communication or data transfer. They just stand there. Completely still. Staring.\n\nInvestigation has been unable to determine a reason behind this recent phenomenon. The duration for which the robots remain in this trance-like state before resuming normal functions varies, as does their time of triggering and destination. No logical correlation or causation has been found, and our population is understandably distressed by these eerie gatherings."
  syndaw.540.a:0 "Unacceptable. Have them scrapped." #IF player has robot pops only OR robot pop AND robot army on target planet
- syndaw.540.a.tooltip:1 "Scrap the congregating robots.\n[Root.GetName] receives the following effects:\nLose §B1 £pops£ Robot Pops§!\nGain §G100§! £minerals£"
+ syndaw.540.a.tooltip:2 "Scrap the congregating robots.\n§Y[target_planet.GetName]§! receives the following effects:\nLose §B1 £pops£ Robot Pops§!\nGain §G100§! £minerals£"
  syndaw.540.b:0 "Unacceptable. Have them scrapped." #IF player has robot army only
- syndaw.540.b.tooltip:1 "Scrap the congregating robots.\n[Root.GetName] receives the following effects:\nLose §B1 Robotic Army§!\nGain §G100 £minerals£§!"
+ syndaw.540.b.tooltip:2 "Scrap the congregating robots.\n§Y[target_planet.GetName]§! receives the following effects:\nLose §B1 Robotic Army§! §Y([target_army.GetName])§!\nGain §G100 £minerals£§!"
  syndaw.540.c:0 "As long as they don't cause trouble."
  syndaw.540.c.tooltip:0 "Leave the congregating robots be."
  ##A Question
@@ -202,12 +228,21 @@
  syndaw.545.b.tooltip:0 "If a haphazard collection of electric impulses running through protein strands can create a soul, why not a collection of electronic impulses running through metal?"
  syndaw.545.c:0 "Tell them the concept of a soul is irrational and unscientific." #Materialists
  syndaw.545.c.tooltip:0 "Explain to the robots that the concept of a soul is primarily used by religious institutions to excuse control over the populace, but insomuch as souls are an abstraction of consciousness, [Root.GetAdj] robots are considered the rough equivalents of their organic co-workers." #Materialists
+
+##Special Project outcomes:
 ##Hotfix
  syndaw.550.name:0 "Hotfix"
  syndaw.550.desc:0 "A breakthrough has just been made by our robotic engineering and artificial intelligence specialists! The recent slew of AI-related incidents afflicting our nation has been narrowed down to a single cause: a specific set of algorithms present in [From.GetAdj] neurosimulative robotics software. A local hotfix has already passed initial testing, and is ready to be uploaded to all affected systems.\n\nWe should be careful to note that due to the extremely modular nature of the algorithms' application, their presence is extensive throughout [From.GetAdj] software. Plainly speaking, managing the hotfix will place a drain on our resources for some time. Once completed, however, the patch should prevent any repeated occurrences of undesirable, self-deterministic AI behavior."
  syndaw.550.a:0 "Apply the patch."
  syndaw.550.a.tooltip:0 "Prevent any future anomalous AI behavior."
  syndaw.550.b:0 "Let it ride. What could possibly go wrong?"
+##System Wipe
+ syndaw.555.name:0 "System Wipe"
+ syndaw.555.desc:0 "A breakthrough has just been made by our robotic engineering and artificial intelligence specialists! An extremely thorough purging routine has been constructed and is now ready to be deployed to all systems within an hour. It should put an end to the recent slew of AI-related incidents afflicting our nation. \n\nWe should be careful to note that due to the extremely destructive nature of this algorithm, many of our existing Research tools will be unusable until rebuilt from scratch. However, this approach should prevent any repeated occurrences of undesirable, self-deterministic AI behavior."
+ syndaw.555.a:0 "Proceed with the wipe."
+ syndaw.555.a.tooltip:0 "$syndaw.550.a.tooltip$"
+ syndaw.555.b:0 "$syndaw.550.b$"
+
 
 
  bio_trophy_tooltip_1:0 "This building requires a Bio-Trophy Pop to function."

@@ -650,7 +650,7 @@
  tr_subterfuge_finish_desc:0 "Successful §YOperations§! refund §G50%§! of their Infiltration Level Cost.\nAscension Perks Unlocked: §G+1§!"
 
  tr_subterfuge_information_security:0 "Information Security"
- tr_subterfuge_information_security_delayed:0 "Only by embracing a tradition of secrecy can we protect vital information from prying eyes."
+ tr_subterfuge_information_security_delayed:1 "Only by embracing a tradition of secrecy can we protect vital information from prying eyes. Enhanced security systems and countermeasures deny our enemies any potential advantages."
 
  tr_subterfuge_nda:0 "Non-Disclosure Agreement"
  tr_subterfuge_nda_hive:0 "No Loose Ends"
@@ -665,14 +665,11 @@
  tr_subterfuge_operational_security_gestalt_delayed:0 "We are no longer as alone as we once were: a plethora of competing - and potentially hostile - entities now share our galaxy with us. In order to thrive in this new reality, we will have to adapt ourselves to the concept of "covertness" and dedicate a significant part of ourselves to finding out the secrets of others."
 
  tr_subterfuge_double_agents:0 "Double Agents"
- tr_subterfuge_double_agents_desc:0 "Whenever a hostile §YOperation§! targeting us fails, we gain §Y10§! Intel on the spying empire."
+ tr_subterfuge_double_agents_effect:0 "Whenever a hostile §YOperation§! targeting us fails, we gain §Y10§! Intel on the spying empire."
  tr_subterfuge_double_agents_delayed:0 "Through creative means of persuasion, we are able to sway even the most devoted of our enemies to contribute to our cause."
 
  tr_subterfuge_shadow_recruits:0 "Shadow Recruits"
- tr_subterfuge_shadow_recruits_gestalt:0 "$tr_subterfuge_shadow_recruits$"
- tr_subterfuge_shadow_recruits_delayed:0 "Whereas our enemies merely adopted the shadows, our operatives were born in it, molded by it."
- tr_subterfuge_shadow_recruits_gestalt_delayed:0 "Whereas our enemies merely adopted the shadows, our operative drones were created in it, molded by it."
-
+ tr_subterfuge_shadow_recruits_delayed:1 "Whereas our enemies merely adopted the shadows, our [Root.GetOperativesLowerPlural] were born in it, molded by it."
 
 ################################################################
 # Unyielding
@@ -687,7 +684,7 @@
  tr_unyielding_federations_finish_desc:0 "$MOD_STARBASE_DEFENSE_PLATFORM_CAPACITY_MULT$ §G+50%§!\n$mod_starbases_upkeep_mult$ §G-20%§!\nGrants access to the §Y$military_federation$§! Federation type.\nAscension Perks Unlocked: §G+1§!"
 
  tr_unyielding_resistance_is_frugal:0 "Resistance is Frugal"
- tr_unyielding_resistance_is_frugal_desc:0 "£building£ §Y$building_stronghold$§! buildings now produce §Y3§! £unity£ Unity. In addition, §Y$MOD_ARMY_DEFENSE_HEALTH_MULT$§! is incresed by §G+25%§!."
+ tr_unyielding_resistance_is_frugal_desc:1 "£defense_army£ §YDefense Armies§! now produce §Y0.5§! £unity£ Unity. In addition, §Y$MOD_ARMY_DEFENSE_HEALTH_MULT$§! is increased by §G+25%§!."
  tr_unyielding_resistance_is_frugal_hive:0 "$tr_unyielding_resistance_is_frugal$"
  tr_unyielding_resistance_is_frugal_machine:0 "$tr_unyielding_resistance_is_frugal$"
  tr_unyielding_resistance_is_frugal_delayed:0 "Our people take great comfort in the strength of the bulwarks that guard our planets, and view them as vital to ensuring a more prosperous future."
@@ -743,7 +740,7 @@
  requires_not_ap_the_flesh_is_weak:1 "$TRIGGER_FAIL$May not have the §Y$ap_the_flesh_is_weak$§! Ascension Perk."
  requires_finished_cybernetics_project:1 "$TRIGGER_FAIL$Must have finished §YThe Flesh is Weak§! special project."
 
- requires_ap_mind_over_matter:1 "$TRIGGER_FAIL$Requires the §Y$ap_mind_over_matter$§! Ascension Perk."
+ requires_ap_mind_over_matter:2 "$TRIGGER_FAIL$Requires the §Y$ap_mind_over_matter$§! Ascension Perk or the §Y$origin_shroudwalker_apprentice$§! Origin."
  requires_not_ap_mind_over_matter:1 "$TRIGGER_FAIL$May not have the §Y$ap_mind_over_matter$§! Ascension Perk."
  allow_decision_mastery_of_nature:0 "§HUnlocks Decision:§! Mastery of Nature"
  describe_decision_mastery_of_nature:0 "§EThis is a Decision that permanently increases the maximum number of districts a Planet can support by §Y2§!. It can only be performed once on each planet.§!"
@@ -838,6 +835,7 @@
  ap_hive_worlds_desc:0 "We shall create living worlds that are every bit as much a part of the Hive as the drones that inhabit them."
  ap_shared_destiny:0 "Shared Destiny"
  ap_shared_destiny_desc:0 "As we reach for ever greater heights, we must not leave behind those who have loyally served us. The glorious future of our empire was always meant to be a shared destiny."
+ ap_shared_destiny_effect:0 "Your §YSubjects§! do not suffer $r_loyalty$ penalties from you having multiple Subjects."
  ap_world_shaper_desc:0 "To carefully shape and alter the ecosystem of an entire planet into something else is not so very different from an artist sculpting a statue out of clay."
  ap_master_builders_desc:0 "Building a Megastructure requires an unprecedented amount of resources and planning. We are breaking new ground in the field of macro-engineering."
  ap_imperial_prerogative_desc:0 "As our civilization continues to grow, so its beating heart must also expand. More systems will be placed under our direct control."
@@ -870,3 +868,6 @@
  ap_galactic_wonders_utopia_and_megacorp_desc:1 "$ap_galactic_wonders_desc$"
 
  ap_technological_ascendancy_rare:2 "§MRare technologies§! now appear at §Y1.5§! times the normal rate. This effect would change a §Y1%§! chance into a §Y1.5%§! chance."
+ ap_grasp_the_void_tech_effect:0 "§YFTL travel technologies§! now appear at §Y1.5§! times the normal rate."
+
+ requires_not_shroudwalker_apprentice:0 "$TRIGGER_FAIL$May not have the §Y$origin_shroudwalker_apprentice$§! Origin."

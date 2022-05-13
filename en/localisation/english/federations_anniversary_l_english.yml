@@ -140,6 +140,11 @@
  any_owned_ship_trigger:0 "Any Owned Ship"
  count_owned_ship_trigger:0 "Number of Owned Ships$CONDITIONS$ $IS_NOT$ $COMPARATOR$ $NUM|Y$"
  count_owned_ship_all_trigger:0 "$IS_ALL_NOT$ Owned Ships fulfill the following conditions"
+ 
+ effect_random_controlled_ship:0 "Random Controlled Ship"
+ effect_every_controlled_ship:0 "Every Controlled Ship"
+ any_controlled_ship_trigger:0 "Any Controlled Ship"
+ count_controlled_ship_trigger:0 "Number of Controller Ships$CONDITIONS$ $IS_NOT$ $COMPARATOR$ $NUM|Y$"
 
  NUM_DEFENSIVE_PACTS_TRIGGER:0 "Number of defensive pacts ($VALUE1|0Y$) is $COMPARE$ $VALUE2|0Y$"
  NUM_DEFENSIVE_PACTS_NOT_TRIGGER:0 "Number of defensive pacts ($VALUE1|0Y$) is NOT $COMPARE$ $VALUE2|0Y$"
@@ -520,13 +525,14 @@
  galactic_features.367.c:0 "Good riddance."
  galactic_features.385:0 "Tiyanki Hunted in [tiyanki_kill_system.GetName]"
  galactic_features.385.desc:0 "We have successfully hunted down and killed some wild Tiyanki in the §H[tiyanki_kill_system.GetName]§! system. Our fleet has used laser cutters to extract materials and resources from the massive Tiyanki remains."
- tiyanki_kills:0 "Harvested Tiyanki:\n§Y[Root.tiyanki_cow_kill_counter]§! §HTiyanki Cows:§! £energy£§Y[Root.tiyanki_cow_credits]§!, £exotic_gases£§Y[Root.tiyanki_cow_gas]§!\n§Y[Root.tiyanki_bull_kill_counter]§! §HTiyanki Bulls:§! £energy£§Y[Root.tiyanki_bull_credits]§!, £exotic_gases£§Y[Root.tiyanki_bull_gas]§!\n§Y[Root.tiyanki_calf_kill_counter]§! §HTiyanki Calves:§! £energy£§Y[Root.tiyanki_calf_credits]§!, £exotic_gases£§Y[Root.tiyanki_calf_gas]§!\n§Y[Root.tiyanki_hatchling_kill_counter]§! §HTiyanki Hatchlings:§! £energy£§Y[Root.tiyanki_hatchling_credits]§!, £exotic_gases£§Y[Root.tiyanki_hatchling_gas]§!"
+ #tiyanki_kills:1 "Harvested Tiyanki:\n§Y[Root.tiyanki_cow_kills]§! §HTiyanki Cows:§! £energy£§Y[Root.tiyanki_cow_credits]§!, £exotic_gases£§Y[Root.tiyanki_cow_gas]§!\n§Y[Root.tiyanki_bull_kills]§! §HTiyanki Bulls:§! £energy£§Y[Root.tiyanki_bull_credits]§!, £exotic_gases£§Y[Root.tiyanki_bull_gas]§!\n§Y[Root.tiyanki_calf_kills]§! §HTiyanki Calves:§! £energy£§Y[Root.tiyanki_calf_credits]§!, £exotic_gases£§Y[Root.tiyanki_calf_gas]§!\n§Y[Root.tiyanki_hatchling_kills]§! §HTiyanki Hatchlings:§! £energy£§Y[Root.tiyanki_hatchling_credits]§!, £exotic_gases£§Y[Root.tiyanki_hatchling_gas]§!\n§Y[Root.tiyanki_ox_kills]§! §HTiyanki Oxen:§! £energy£§Y[Root.tiyanki_ox_credits]§!, £exotic_gases£§Y[Root.tiyanki_ox_gas]§!"
  galactic_features.385.a:0 "Good kills."
  harvested_tiyanki:0 "Harvested Tiyanki:"
- harvested_cows:1 "§Y[Root.tiyanki_cow_kill_counter]§! §HTiyanki Cows:§!\n"
- harvested_bulls:1 "§Y[Root.tiyanki_bull_kill_counter]§! §HTiyanki Bulls:§!\n"
- harvested_calves:1 "§Y[Root.tiyanki_calf_kill_counter]§! §HTiyanki Calves:§!\n"
- harvested_hatchlings:1 "§Y[Root.tiyanki_hatchling_kill_counter]§! §HTiyanki Hatchlings:§!\n"
+ harvested_cows:2 "§Y[Root.tiyanki_cow_kills]§! §HTiyanki Cows:§!\n"
+ harvested_bulls:2 "§Y[Root.tiyanki_bull_kills]§! §HTiyanki Bulls:§!\n"
+ harvested_calves:2 "§Y[Root.tiyanki_calf_kills]§! §HTiyanki Calves:§!\n"
+ harvested_hatchlings:2 "§Y[Root.tiyanki_hatchling_kills]§! §HTiyanki Hatchlings:§!\n"
+ harvested_oxes:0 "§Y[Root.tiyanki_ox_kills]§! §HTiyanki Oxen:§!\n"
  galcom.110.desc:0 "Officials from the Galactic Community have received word of our recent victory against the Tiyanki Matriarch. They have informed us that our destruction of the beast was a clear violation of the Tiyanki Conservation Act, regardless of the Matriarch's hostile nature.\n\nThe [Root.GetName] will be considered in §RBreach of Galactic Law§! for the next ten years. Additionally, they have fined us §Y5000§! energy credits for our killing of "a unique Tiyanki life form whose like the galaxy shall never see again.""
  galcom.110.a:0 "It had to be put down."
  galcom.110.b:0 "But... but it attacked us!"
@@ -539,6 +545,7 @@
  27_HOSTILE_GREETING:0 "Your savage attacks on the Tiyanki are unforgivable crimes. One day, there shall be a reckoning."
  25_NEUTRAL_GREETING:0 "Your wanton murder of defenseless Tiyanki has not gone unnoticed."
  25_FRIENDLY_GREETING:0 "The Tiyanki have never been a threat... what could possibly have compelled you to attack them?"
+
 
  ### Amoebas by Pierre du Plessis ###
 

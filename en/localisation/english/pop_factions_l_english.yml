@@ -91,6 +91,9 @@
  SUPREMACIST_AGGRESSIVE_FIRST_CONTACT_POLICY:0 "Aggressive First Contact Protocols"
  SUPREMACIST_NO_AGGRESSIVE_FIRST_CONTACT_POLICY:0 "$SUPREMACIST_AGGRESSIVE_FIRST_CONTACT_POLICY$"
  SUPREMACIST_NO_AGGRESSIVE_FIRST_CONTACT_POLICY_DESC:0 "The [Root.GetName] demand that we have the right to take all necessary measures against unknown threats we may encounter as we travel the stars."
+ SUPREMACIST_OPPRESSIVE_SUBJUGATION_POLICY:0 "Oppressive Subjugation Policy"
+ SUPREMACIST_NO_OPPRESSIVE_SUBJUGATION_POLICY:0 "$SUPREMACIST_OPPRESSIVE_SUBJUGATION_POLICY$"
+ SUPREMACIST_NO_OPPRESSIVE_SUBJUGATION_POLICY_DESC:0 "Our subjects are here to serve us, and they should always know it. Showing leniency towards them will upset the [Root.GetName]."
 
  # XENOISTS
  XENOIST_PASSIVE_STUDY:0 "Indirect Xenology"
@@ -147,6 +150,13 @@
  XENOIST_AGGRESSIVE_FIRST_CONTACT_POLICY:0 "Aggressive First Contact Protocols"
  XENOIST_NO_AGGRESSIVE_FIRST_CONTACT_POLICY:0 "$XENOIST_AGGRESSIVE_FIRST_CONTACT_POLICY$"
  XENOIST_AGGRESSIVE_FIRST_CONTACT_POLICY_DESC:0 "Failure to legislate against §Yaggression§! towards those we meet in our travels will displease the [Root.GetName] in this age of exploration."
+ XENOIST_OPPRESSIVE_SUBJUGATION_POLICY:0 "Oppressive Subjugation Policy"
+ XENOIST_NO_OPPRESSIVE_SUBJUGATION_POLICY:0 "$XENOIST_OPPRESSIVE_SUBJUGATION_POLICY$"
+ XENOIST_OPPRESSIVE_SUBJUGATION_POLICY_DESC:0 "Our mission should be to bring enlightenment and prosperity to the galaxy. Subjects should be nurtured, and exploiting them will displease the [Root.GetName]."
+ XENOIST_BENEVOLENT_SUBJUGATION_POLICY:0 "Benevolent Subjugation Policy"
+ XENOIST_ADOPT_BENEVOLENT_SUBJUGATION_POLICY:0 "$XENOIST_BENEVOLENT_SUBJUGATION_POLICY$"
+ XENOIST_BENEVOLENT_SUBJUGATION_POLICY_DESC:0 "Taking care of our subjects and helping them grow will please the [Root.GetName]."
+
 
  # IMPERIALISTS
  IMPERIALIST_PHILOSOPHY:0 "Aggressive Diplomacy"
@@ -179,12 +189,21 @@
  IMPERIALIST_UNDERLING:0 "Subject State"
  IMPERIALIST_NOT_UNDERLING:0 "$IMPERIALIST_UNDERLING$"
  IMPERIALIST_UNDERLING_DESC:0 "Being the subject of a foreign §YOverlord§! will greatly displease the [Root.GetName]."
+ IMPERIALIST_BULWARK:0 "$IMPERIALIST_UNDERLING$"
+ IMPERIALIST_NOT_BULWARK:0 "$IMPERIALIST_UNDERLING$"
+ IMPERIALIST_BULWARK_DESC:0 "Being a non-Bulwark subject of a foreign §YOverlord§! will greatly displease the [Root.GetName]."
  IMPERIALIST_MILITARY_APPLICATIONS:0 "Military Requisition of Artifacts"
  IMPERIALIST_NO_MILITARY_APPLICATIONS:0 "$IMPERIALIST_MILITARY_APPLICATIONS$"
  IMPERIALIST_MILITARY_APPLICATIONS_DESC:0 "Finding military applications for your Minor Artifacts will please the [Root.GetName] for a time."
  IMPERIALIST_PEACEFUL_APPLICATIONS:0 "Waste of Artifacts"
  IMPERIALIST_NO_PEACEFUL_APPLICATIONS:0 "$IMPERIALIST_PEACEFUL_APPLICATIONS$"
  IMPERIALIST_PEACEFUL_APPLICATIONS_DESC:0 "Wasting Minor Artifacts on trivialities will displease the [Root.GetName] for a time."
+ IMPERIALIST_BENEVOLENT_SUBJUGATION_POLICY:0 "Benevolent Subjugation Policy"
+ IMPERIALIST_NO_BENEVOLENT_SUBJUGATION_POLICY:0 "$IMPERIALIST_BENEVOLENT_SUBJUGATION_POLICY$"
+ IMPERIALIST_BENEVOLENT_SUBJUGATION_POLICY_DESC:0 "The strong rule; the weak serve. Showing compassion towards our subjects will upset the [Root.GetName]."
+ IMPERIALIST_OPPRESSIVE_SUBJUGATION_POLICY:0 "Oppressive Subjugation Policy"
+ IMPERIALIST_ADOPT_OPPRESSIVE_SUBJUGATION_POLICY:0 "$IMPERIALIST_OPPRESSIVE_SUBJUGATION_POLICY$"
+ IMPERIALIST_OPPRESSIVE_SUBJUGATION_POLICY_DESC:0 "An iron fist in an iron glove. Making sure that our subjects know their place will please the [Root.GetName]."
 
  # ISOLATIONISTS
  ISOLATIONIST_PHILOSOPHY:0 "Stalwart Defense"
@@ -340,6 +359,9 @@
  PROGRESSIVE_SOCIAL_EQUALITY:0 "Equal Citizenry"
  PROGRESSIVE_SOCIAL_EQUALITY_DESC:0 "Ensuring that all species in our empire enjoy Full Citizenship status will please the [Root.GetName]."
  PROGRESSIVE_NO_SOCIAL_EQUALITY:0 "$PROGRESSIVE_SOCIAL_EQUALITY$"
+ PROGRESSIVE_BENEVOLENT_SUBJUGATION_POLICY:0 "Benevolent Subjugation Policy"
+ PROGRESSIVE_BENEVOLENT_NO_OPPRESSIVE_SUBJUGATION_POLICY:0 "$PROGRESSIVE_BENEVOLENT_SUBJUGATION_POLICY$"
+ PROGRESSIVE_BENEVOLENT_NO_OPPRESSIVE_SUBJUGATION_POLICY_DESC:0 "Our subjects look to us for guidance and protection, and we should strive to repay their trust by respecting their liberties. Adopting a benevolent approach to subjugation will please the [Root.GetName]."
 
  # TOTALITARIANS
  TOTALITARIAN_AUTOCRACY:0 "Autocracy"
@@ -372,6 +394,12 @@
  TOTALITARIAN_UNDERLING:0 "Underling"
  TOTALITARIAN_NOT_UNDERLING:0 "$TOTALITARIAN_UNDERLING$"
  TOTALITARIAN_UNDERLING_DESC:0 "Being the subject of a foreign §YOverlord§! will displease the [Root.GetName]."
+ TOTALITARIAN_BENEVOLENT_SUBJUGATION_POLICY:0 "Benevolent Subjugation Policy"
+ TOTALITARIAN_NO_BENEVOLENT_SUBJUGATION_POLICY:0 "$TOTALITARIAN_BENEVOLENT_SUBJUGATION_POLICY$"
+ TOTALITARIAN_BENEVOLENT_SUBJUGATION_POLICY_DESC:0 "A firm [Owner.Species.GetHandName] is required to guide our subjects, lest they grow indolent and complacent. Granting them too many liberties will displease the [Root.GetName]."
+ TOTALITARIAN_OPPRESSIVE_SUBJUGATION_POLICY:0 "Oppressive Subugation Policy"
+ TOTALITARIAN_ADOPT_OPPRESSIVE_SUBJUGATION_POLICY:0 "$TOTALITARIAN_OPPRESSIVE_SUBJUGATION_POLICY$"
+ TOTALITARIAN_OPPRESSIVE_SUBJUGATION_POLICY_DESC:0 "Like [Owner.Species.GetSpawnNamePlural], our subjects need guidance if they are to learn discipline. Keeping them on a short leash will please the [Root.GetName]."
 
  # PROSPERITY
  PROSPERITY_PHILOSOPHY:0 "Defensive Stance"

@@ -68,7 +68,7 @@ local function output_diff(filename, s)
 	local function output(s)
 		handle:write(s, "\n")
 	end
-	local f
+	local freadall
 	for _, v in ipairs(s) do
 		if v.filename ~= f then
 			f = v.filename
@@ -234,6 +234,47 @@ function mode.patch()
 	readfile("diff.txt", patch, "")
 	for _, filename in ipairs(filelist) do
 		patch_file(filename, chinese, patch)
+	end
+end
+
+local function sync(filename, dict)
+	local fullname = cn_target .. filename
+	local syncname = cn_target .. filename .. ".sync"
+	local f = io.open(syncname, "wb")
+	local diff = 0
+	for line in io.lines(fullname) do
+		local key,dig,value = line:match [[^ ([%w%._%-']+):(%d*) (.*)]]
+		if not key then
+			f:write(line, "\n")
+		else
+			local okey = key:gsub("(%a+)%d", "%11")
+			if okey and dict[okey] then
+				if value ~= dict[okey].v then
+					diff = diff + 1
+					print(value , ">", dict[okey].v)
+					value = dict[okey].v
+				end
+			end
+			f:write(" ", key , ":", dig, " ", value, "\n")
+		end
+	end
+	f:close()
+	if diff == 0 then
+		os.remove(syncname)
+	else
+		os.remove(fullname)
+		os.rename(syncname, fullname)
+	end
+end
+
+function mode.syncname()
+	local filelist = require "filelist"
+	local dict = readall(cn_target, filelist)
+	for _, v in ipairs(filelist) do
+		local n = v:match "name_list_%a+(%d)"
+		if n and n ~="1" then
+			sync(v, dict)
+		end
 	end
 end
 

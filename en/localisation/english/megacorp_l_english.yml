@@ -67,6 +67,7 @@
  NO_BRANCH_OFFICE_VALUE_FORMAT:0 "$VALUE|1Y$"
  IS_CRIMINAL_SYNDICATE:0 "Is a Criminal Syndicate"
  IS_NOT_CRIMINAL_SYNDICATE:0 "Is NOT a Criminal Syndicate"
+ BRANCH_OFFICE_ALREADY_EXISTS:1 "£trigger_no£ §RAnother Megacorp has already established a branch office here.§!"
  ESTABLISH_BRANCH_OFFICE_TITLE:0 "Establish Branch Office"
  ESTABLISH_BRANCH_OFFICE_DESC:1 "Establishing a new §YBranch Office§! on $PLANET|Y$ will cost us §Y$COST$§! and is expected to generate a monthly income of §Y£energy£ $VALUE|1$§! based on the current £trade_value£§Y$TRADE_VALUE$§! of the planet. It will also increase our §Y$EMPIRE_SIZE$§!."
  ESTABLISH_BRANCH_OFFICE_RANGE_MULT:0 "Distance: $VALUE|R%$"
@@ -406,7 +407,7 @@
  BUILDING_SLOT_LOCKED:0 "Locked Building Slot"
  BUILDING_SLOT_LOCKED_DESC:2 "Slots can be unlocked by building $CITY_DISTRICT|Y$ or upgrading your $CAPITAL_BUILDING|Y$"
  BUILDING_SLOT_LOCKED_HABITAT_DESC:1 "Slots can be unlocked by upgrading your $CAPITAL_BUILDING|Y$ or by taking the §Y$ap_voidborn$§! Ascension Perk"
- BUILDING_SLOT_LOCKED_BRANCH_OFFICE_DESC:2 "Branch Office slots are unlocked by upgrades to this planet's $CAPITAL_BUILDING|Y$ or the planet's owner taking the §YInsider Trading§! tradition."
+ BUILDING_SLOT_LOCKED_BRANCH_OFFICE_DESC:3 "Branch Office building slots are unlocked by upgrades to this planet's $CAPITAL_BUILDING|Y$."
  BUILDING_CAPPED_IN_EMPIRE_WITH_NUM:0 "Empire Limit: §Y$NUM$/$MAX$§!"
  BUILDING_CAPPED_IN_EMPIRE:0 "Empire Limit: §Y$MAX$§!"
  BUILDING_CAPPED_ON_PLANET_WITH_NUM:0 "Planet Limit: §Y$NUM$/$MAX$§!"
@@ -850,6 +851,7 @@
 
  job_brain_drone:0 "Brain Drone"
  job_brain_drone_plural:0 "Brain Drones"
+ job_brain_drone_icon:0 "£job_brain_drone£"
  job_brain_drone_desc:1 "Scientists, researchers, and inventors: Brain Drones are responsible for the technological development of the nation."
  job_brain_drone_effect_desc:1 "£job_brain_drone£ $job_brain_drone_plural$ turn £minerals£ §Y$minerals$§! into £physics£ £society£ £engineering£ §YResearch Points§! for new technologies"
  mod_job_brain_drone_add:0 "$job_brain_drone$ Jobs"
@@ -858,6 +860,7 @@
 
  job_calculator:0 "Calculator"
  job_calculator_plural:0 "Calculators"
+ job_calculator_icon:0 "£job_calculator£"
  job_calculator_desc:1 "Endlessly processing equations, probabilities, and testing new functions, Calculators lead the technological development of the Machine Intelligence."
  job_calculator_effect_desc:2 "£job_calculator£ $job_calculator_plural$ turn £energy£ §Y$energy$§! into £physics£ £society£ £engineering£ §YResearch Points§! for new technologies"
  mod_job_calculator_add:0 "$job_calculator$ Jobs"
@@ -925,7 +928,7 @@
  job_colonist:0 "Colonist"
  job_colonist_plural:0 "Colonists"
  job_colonist_desc:1 "The settling of a new world is no easy undertaking."
- job_colonist_effect_desc:0 "£job_colonist£ $job_colonist_plural$ produce a small amount of £food£ §Y$food$§! and £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!"
+ job_colonist_effect_desc:1 "£job_colonist£ $job_colonist_plural$ produce a small amount of $r_food$ (or $r_minerals$) and £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!"
  mod_job_colonist_add:0 "$job_colonist$ Jobs"
  mod_job_colonist_per_pop:0 "£job_colonist£ §G+1§! $job_colonist$ Job per $VALUE$ Pops"
  mod_job_colonist_per_pop_short:0 "\n§G+1§! £mod_job_colonist_add£ per $VALUE$ £pop£"
@@ -1022,7 +1025,7 @@
  job_telepath:0 "Telepath"
  job_telepath_plural:0 "Telepaths"
  job_telepath_desc:0 "Members of the Psi-Corps, a unit of psionically-gifted crime fighters."
- job_telepath_effect_desc:0 "£job_telepath£ $job_telepath_plural$ produce £unity£ §Y$unity$§! and decrease £crime£ §Y$PLANET_CRIME_TITLE$§!"
+ job_telepath_effect_desc:1 "£job_telepath£ $job_telepath_plural$ produce £unity£ §Y$unity$§!, decrease £crime£ §Y$PLANET_CRIME_TITLE$§!, and provide a general productivity boost on the planet."
  mod_job_telepath_add:0 "$job_telepath$ Jobs"
  mod_job_telepath_per_pop:0 "§G+1§! $job_telepath$ Job per $VALUE$ Pops"
  mod_job_telepath_per_pop_short:0 "\n§G+1§! £mod_job_telepath_add£ per $VALUE$ £pop£"
@@ -1086,6 +1089,7 @@
 
  job_researcher:0 "Researcher"
  job_researcher_plural:0 "Researchers"
+ job_researcher_icon:0 "£job_researcher£"
  job_researcher_desc:0 "The eternal mystery of the world is its comprehensibility."
  job_researcher_effect_desc:1 "£job_researcher£ $job_researcher_plural$ turn £consumer_goods£ §Y$consumer_goods$§! into £physics£ £society£ £engineering£ §YResearch Points§!"
  mod_job_researcher_add:0 "$job_researcher$ Jobs"
@@ -1182,7 +1186,7 @@
  # Ruling Class Jobs
  job_politician:0 "Politician"
  job_politician_plural:0 "Politicians"
- job_politician_desc:0 "The government of an entire planet is a daunting task that requires dedicated and highly trained individuals."
+ job_politician_desc:1 "The government of an entire planet is a daunting task that requires dedicated and highly trained individuals."
  job_politician_effect_desc:0 "£job_politician£ $job_politician_plural$ turn £consumer_goods£ §Y$consumer_goods$§! into £unity£ §Y$unity$§! and £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!"
  mod_job_politician_add:0 "$job_politician$ Jobs"
  mod_job_politician_per_pop:0 "§G+1§! $job_politician$ Job per $VALUE$ Pops"
@@ -1665,6 +1669,7 @@
  mod_planet_administrators_unity_produces_add:0 "$mod_planet_bureaucrats_unity_produces_mult$"
  mod_planet_administrators_upkeep_mult:1 "[GetAdministratorWithIcon] Upkeep"
  mod_planet_priests_unity_produces_add:0 "£unity£ $unity$ from £job_priest£ $job_priest_plural$"
+ mod_planet_managers_unity_produces_add:0 "£unity£ $unity$ from £job_manager£ $job_manager_plural$"
  mod_planet_merchants_unity_produces_add:0 "£unity£ $unity$ from £job_merchant£ $job_merchant_plural$"
  mod_planet_enforcers_unity_produces_add:0 "£unity£ $unity$ from £job_enforcer£ $job_enforcer_plural$"
  mod_planet_telepaths_unity_produces_add:0 "£unity£ $unity$ from £job_telepath£ $job_telepath_plural$"
@@ -2917,6 +2922,9 @@
  col_habitat_refinery_desc:0 "An artificial deep-space arcology dedicated to the production of strategic resources"
  col_habitat_mining:0 "Mining Station"
  col_habitat_mining_desc:0 "An artificial deep-space arcology dedicated to the harvesting of minerals"
+ col_habitat_farming:0 "Hydroponics Station"
+ col_habitat_farming_desc:0 "An artificial deep-space arcology dedicated to the growing of crops"
+ col_habitat_farming_custom:0 "§Y$district_hab_housing_plural$§! give up §R-2§! Housing in exchange for §G+1§! £job_farmer£ $job_farmer$ Job."
  col_habitat_energy:0 "Generator Station"
  col_habitat_energy_desc:0 "An artificial deep-space arcology dedicated to the generation of energy"
  col_ring_mix:0 "Ring World"
@@ -3845,6 +3853,9 @@
  wg_expel_corp_effects:2 "All Branch Offices owned by the §Y[From.GetName]§! in the §Y[Root.GetName]§! are closed.\n§Y[Root.GetName]§! receives £energy£ §Y1000§! for each closed Branch Office."
  wg_seize_branch_office_effects:1 "§Y[Root.GetName]§! takes control of the planetary Branch Office\n"
 
+ wg_expel_corp_subject_status_quo_effects:1 "All Branch Offices owned by the §Y[From.GetName]§! in the §Y[Root.GetName]§! (and §Y[Root.GetAdj] Subjects§!' colonies) are closed.\n§Y[From.GetName]§! receives £energy£ §Y1000§! for each closed Branch Office."
+ wg_expel_corp_subject_effects:1 "All Branch Offices owned by the §Y[From.GetName]§! in the §Y[Root.GetName]§! (and §Y[Root.GetAdj] Subjects§!' colonies) are closed.\n§Y[Root.GetName]§! receives £energy£ §Y1000§! for each closed Branch Office."
+
  market_founding_chain_title:0 "Founding the Galactic Market"
  market_founding_chain_desc:0 "The establishment of an international commercial forum is nigh, and whoever controls the centralized exchange station stands to benefit.\n\nShould we desire to compete for the title of market host, we have a few years to use §HDecisions§! to nominate one of our worlds to tether the $galactic_market_station$."
 
@@ -4294,8 +4305,10 @@
  vo_slick_corp:0 "Slick Corporation"
  vo_the_worker:0 "The Worker"
 
- HAS_NOT_OVERLORD:0 "Does NOT have $OVERLORD$ as an overlord"
- HAS_OVERLORD:0 "Has $OVERLORD$ as an overlord"
+ HAS_SUBJECT:0 "Has $SUBJECT|Y$ as a subject"
+ HAS_NOT_SUBJECT:0 "Does NOT have $SUBJECT|Y$ as a subject"
+ HAS_NOT_OVERLORD:1 "Does NOT have $OVERLORD|Y$ as an overlord"
+ HAS_OVERLORD:1 "Has $OVERLORD|Y$ as an overlord"
  HAS_NOT_ANY_OVERLORD:0 "Does NOT have any overlord"
 
  HAS_NOT_RIVAL:0 "Is NOT rivaling $RIVAL$"
@@ -4422,3 +4435,4 @@
 
  DIPLO_ACTION_ALREADY_REPLIED:0 "$COUNTRY|Y$ has already replied to $ACTION|Y$"
  overlord_subsidy:0 "Overlord Subsidy"
+ OVERLORD_SUBSIDY_UNABLE_TO_PAY_RESEARCH:0 "$OVERLORD|Y$ unable to pay research subsidies to $SUBJECT|Y$ - insufficient production."

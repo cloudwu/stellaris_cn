@@ -8,7 +8,7 @@
  SITUATION_FINISHER_EFFECTS_TOOLTIP:0 "§HEffects if the predicted outcome is reached§!"
  SITUATION_FINISHER_EFFECTS_DELAYED_TOOLTIP:0 "§ESome Situations have more than one possible outcome.§!"
  SITUATION_APPROACH_SELECT_TOOLTIP:0 "§GClick to choose this Approach for this Situation.§!"
- ACTIVE_APPROACH:0 "§GActive§!"   #Also used for stages
+ ACTIVE_APPROACH:0 "§GActive§!" #Also used for stages
  ACTIVE_APPROACH_EFFECTS:0 "$EFFECTS$"
  STAGE_EFFECTS:1 "Stage Effects:"
  EFFECTS_FROM_SITUATION:0 "Current Effects from this Situation"
@@ -21,7 +21,7 @@
  SITUATION_PREDICTED_PROGRESS:0 "Predicted Next Month: $PROGRESS|Y$ ($CHANGE$)"
  SITUATION_OUTCOME_IN_MONTHS:0 "An outcome will be reached in $MONTHS|Y$ month(s)."
  SITUATION_CURRENT_STAGE:0 "Current Stage: $STAGE|Y$"
- SITUATION_STAGE_ACTIVE_RANGE:0 "This Stage is active from $VALUE1|Y$ to $VALUE2|Y$."
+ SITUATION_STAGE_ACTIVE_RANGE:1 "This Stage is active from $VALUE1|Y$ to $VALUE2|Y$."
  OUTSTANDING_SITUATIONS:0 "§HOutstanding Situations§!\n§ESituations§! that require our attention are collected here."
  CLICK_TO_EXPAND_OR_COLLAPSE:0 "§GClick to collapse or expand the section.§!"
  PREDICTED_OUTCOME:0 "Predicted Outcome"
@@ -33,6 +33,10 @@
  OUTLINER_SITUATION_OUTCOME_TIME:1 "An outcome to this Situation is expected in $MONTHS|Y$ month(s), based on the current monthly change of $CHANGE$"
  CLICK_TO_OPEN_SITUATION_LOG:0 "§GClick to open the Situation Log§!"
  SITUATION_STAGE_NO_EFFECTS:0 "This Stage has no effects."
+ SITUATION_TARGET_TOOLTIP:0 "This Situation is focused around the $TARGET_TYPE$ $TARGET|Y$."
+ SITUATION_TARGET_TOOLTIP_NO_TARGET:0 "The effects of this Situation are felt empire-wide."
+ SITUATION_START_HEADER:0 "Start Value"
+ SITUATION_START_TOOLTIP:0 "The Situation began at $VALUE|Y0$ progress."
 
  situation_unknown_outcome_approach:0 "We are unsure what the outcome of our current Approach to this Situation will be."
  situation_monthly_change_tooltip_no_control:0 "The progress of this §YSituation§! is not in our hands."
@@ -59,8 +63,8 @@
  stage_3:1 "Stage III"
  stage_4:1 "Stage IV"
  stage_5:1 "Stage V"
- stage_2_alt: "$stage_2$"
- stage_3_alt: "$stage_3$"
+ stage_2_alt:0 "$stage_2$"
+ stage_3_alt:0 "$stage_3$"
  string_current_approach:0 "Current Approach"
  situation_mysterious_labyrinth_monthly_change_tooltip:0 "$situation_monthly_change_tooltip_approaches_dependent$"
 
@@ -185,7 +189,7 @@
  radiation_damage_high:0 "§RHhhhAhahDiation Dam4ge: hhhhhhhhhH§!"
 
  # Deposit
- d_machine_care_home:0 "Human-Machine Interface Center"
+ d_machine_care_home:1 "Organic-Machine Interface Center"
  d_machine_care_home_desc:0 "A specialized center where malfunctioning drones are paired with biological assistants."
 
  # Jobs
@@ -203,8 +207,8 @@
  radiation_hardened_components_desc:0 "Our empire perfected the process of shielding mechanical components from the damage caused by cosmic rays."
  software_damage:0 "Software Damage"
  software_damage_desc:0 "Our consciousness has been damaged by radiations. Repairs are in progress."
- machine_care_museum:0 "Human-Machine Interface Museum"
- machine_care_museum_desc:0 "A specialized center where biological assistants can experience the thrill of doing meaningless tasks to feel useful."
+ machine_care_museum:1 "Organic-Machine Interface Museum"
+ machine_care_museum_desc:1 "A specialized center where $pop_cat_bio_trophy_plural$ can experience the thrill of doing meaningless tasks to feel useful."
 
 
  ## Events
@@ -524,7 +528,7 @@
  deficit_approach_invest_in_crystal_producers:0 "Invest in Crystal Production"
  deficit_approach_invest_in_gas_producers:0 "Invest in Gas Production"
  deficit_approach_cut_science_investment:0 "Cut Scientific Investment"
- deficit_approach_cut_investment:0 "Cut Mineral Investments"
+ deficit_approach_cut_investment:1 "Cut Investments"
  deficit_approach_cut_maintenance:1 "Cut Habitats' Maintenance"
  deficit_approach_invest_in_alloys_production:0 "Invest in our [Owner.GetAlloyProducerPlural]"
  deficit_approach_invest_in_farmers:0 "Invest in [Owner.GetFarmerPlural]"
@@ -618,9 +622,9 @@
  deficit.170.desc:1 "[Owner.GetFinancialAdvisorAgencyCap] is getting increasingly concerned about the alloy shortage befalling our empire. Failure to recoup our expenses will bring widespread disruptions to our industry sector."
  deficit.170.desc.machine:1 "Budget warning: alloy expenditures surpassing expenditures for multiple subsequent months. Failure to resolve the shortage will bring widespread disruptions to our industry sector."
  deficit.170.A:1 "Scrap robots on §Y[robots_planet.GetName]§! for parts."
- deficit.170.A.tooltip:1 "Dismantle all robots on [robots_planet.GetName] (£pop£ §Y[robots_planet.half_population] Drones§!) to gain £alloys£ §Y[robots_planet.total_alloys_gained] Alloys§!"
+ deficit.170.A.tooltip:2 "Dismantle all robots on [robots_planet.GetName] (£pop£ §Y[robots_planet.recycled_robots] Drones§!) to gain £alloys£ §Y[robots_planet.total_alloys_gained] Alloys§!"
  deficit.170.B:1 "Consolidate. Recycle. Dismantle droids on §Y[robots_planet.GetName]§!."
- deficit.170.B.tooltip:1 "Dismantle half of the population on [robots_planet.GetName] (£pop£ §Y[robots_planet.half_population] Drones§!) to gain £alloys£ §Y[robots_planet.total_alloys_gained] Alloys§!"
+ deficit.170.B.tooltip:2 "Dismantle half of the population on [robots_planet.GetName] (£pop£ §Y[robots_planet.recycled_robots] Drones§!) to gain £alloys£ §Y[robots_planet.total_alloys_gained] Alloys§!"
 
  deficit.175.desc:1 "Having failed to resolve our alloys shortage, we have been forced to declare bankrupcy and default on our debts. [Owner.GetFinancialAdvisorAgencyCap] is drafting a new austerity plan to cut expenses and preventing this situation from ever happening again."
 
@@ -793,7 +797,7 @@
  situation.1110.b:0 "Cleanse the world of the contaminant and the venom sack!"
  situation.1110.b.tooltip:0 "Cancel the [Owner.GetParadeStudy] in favor of quickly cleaning the world."
  situation.1115.name:0 "[Target.GetName] Cleaned"
- situation.1115.desc:0 "After many months of effort, our [Owner.GetWaterCoolantLower] supply on §Y[Target.GetName]§! is finally clear of the Voidspawn Contaminant. It was not a wasted effort, as we have learned much from the xeno-biology present in our [Owner.GetWaterCoolantLower] and are now ready to proceed with the [Owner.GetParadeStudy]. Our [Owner.GetScientistPlural] now think that they can improve life on [Target.GetName] with the these discoveries once the [Owner.GetParadeStudy] concludes."
+ situation.1115.desc:1 "After many months of effort, our [Owner.GetWaterCoolantLower] supply on §Y[Target.GetName]§! is finally clear of the Voidspawn Contaminant. It was not a wasted effort, as we have learned much from the xeno-biology present in our [Owner.GetWaterCoolantLower] and are now ready to proceed with the [Owner.GetParadeStudy]. Our [Owner.GetScientistPlural] now think that they can improve life on [Target.GetName] with the these discoveries once the [Owner.GetParadeStudy] concludes."
 
  situation.1120.name:0 "The Last Spark"
  situation.1120.desc:1 "The observation probes we had left behind at the site of the Stellar Devourer's final demise report that portions of the body have started to merge back into the star. The energy seems to have increased stellar activity, but with the removal of the §YEgg Sac§!, our calculations state that it won't be enough to restore the §Y[dead_stellarite.solar_system.GetName]§! system to its former luster. If we turn our transport ship back now, we could still potentially reignite the star."
@@ -979,7 +983,7 @@
 
  #Casus Belli
 
- casus_belli_cb_revenge_for_eaten_star:0 "Ate Our Star"
+ casus_belli_cb_revenge_for_eaten_star:1 "Ate Our Star"
  war_goal_wg_revenge_for_eaten_star:0 "$casus_belli_cb_revenge_for_eaten_star$"
  war_goal_wg_revenge_for_eaten_star_desc:0 "War is waged to utterly conquer the enemy that ate our star."
  casus_belli_cb_end_threat_revenge_for_eaten_star:0 "Ate their Star"

@@ -67,7 +67,7 @@
  NO_BRANCH_OFFICE_VALUE_FORMAT:0 "$VALUE|1Y$"
  IS_CRIMINAL_SYNDICATE:0 "是犯罪辛迪加"
  IS_NOT_CRIMINAL_SYNDICATE:0 "非犯罪辛迪加"
- BRANCH_OFFICE_ALREADY_EXISTS:1 "£trigger_no£ §RAnother Megacorp has already established a branch office here.§!"
+ BRANCH_OFFICE_ALREADY_EXISTS:1 "£trigger_no£§R另一个巨型企业已经在此设立分公司。§!"
  ESTABLISH_BRANCH_OFFICE_TITLE:0 "设立分公司"
  ESTABLISH_BRANCH_OFFICE_DESC:1 "在$PLANET|Y$上设立新§Y分公司§!需要花费§Y$COST$§!。按照行星当前的£trade_value£§Y$TRADE_VALUE$§!，预计每月可获得§Y£energy£$VALUE|1$§!。这也将增加我§Y$EMPIRE_SIZE$§!。"
  ESTABLISH_BRANCH_OFFICE_RANGE_MULT:0 "距离：$VALUE|R%$"
@@ -2922,9 +2922,9 @@
  col_habitat_refinery_desc:0 "人工建造的的深空生态城，致力于战略资源生产。"
  col_habitat_mining:0 "矿业栖所"
  col_habitat_mining_desc:0 "人工建造的的深空生态城，致力于开采矿物。"
- col_habitat_farming:0 "Hydroponics Station"
- col_habitat_farming_desc:0 "An artificial deep-space arcology dedicated to the growing of crops"
- col_habitat_farming_custom:0 "§Y$district_hab_housing_plural$§! give up §R-2§! Housing in exchange for §G+1§! £job_farmer£ $job_farmer$ Job."
+ col_habitat_farming:0 "水培栖所"
+ col_habitat_farming_desc:0 "人工建造的深空生态城，专门用于栽培作物。"
+ col_habitat_farming_custom:0 "§Y$district_hab_housing_plural$§!放弃§R-2§!住房以交换§G+1§!£job_farmer£$job_farmer$岗位。"
  col_habitat_energy:0 "电力栖所"
  col_habitat_energy_desc:0 "人工建造的的深空生态城，致力于发电。"
  col_ring_mix:0 "环形世界"
@@ -3853,8 +3853,8 @@
  wg_expel_corp_effects:2 "所有位于§Y[Root.GetName]§!境内，属于§Y[From.GetName]§!的分公司被关闭。\n§Y[Root.GetName]§!每关闭一个分公司便获得 £energy£ §Y1000§!。"
  wg_seize_branch_office_effects:1 "§Y[Root.GetName]§!获得行星分公司的控制权\n"
 
- wg_expel_corp_subject_status_quo_effects:1 "All Branch Offices owned by the §Y[From.GetName]§! in the §Y[Root.GetName]§! (and §Y[Root.GetAdj] Subjects§!' colonies) are closed.\n§Y[From.GetName]§! receives £energy£ §Y1000§! for each closed Branch Office."
- wg_expel_corp_subject_effects:1 "All Branch Offices owned by the §Y[From.GetName]§! in the §Y[Root.GetName]§! (and §Y[Root.GetAdj] Subjects§!' colonies) are closed.\n§Y[Root.GetName]§! receives £energy£ §Y1000§! for each closed Branch Office."
+ wg_expel_corp_subject_status_quo_effects:1 "§Y[From.GetName]§!于§Y[Root.GetName]§!（包括§Y[Root.GetAdj]的附属国§!殖民地）的所有分公司已被关闭。\n§Y[From.GetName]§!从每个被关闭的分公司获得£energy£ §Y1000§!。"
+ wg_expel_corp_subject_effects:1 "§Y[From.GetName]§!于§Y[Root.GetName]§!（包括§Y[Root.GetAdj]的附属国§!殖民地）的所有分公司已被关闭。\n§Y[From.GetName]§!从每个被关闭的分公司获得£energy£ §Y1000§!。"
  
  market_founding_chain_title:0 "银河贸易市场的成立"
  market_founding_chain_desc:0 "国际贸易论坛即将成立，而其中央贸易空间站的控制者必将从中获益。\n\n如果我们希望竞争市场东道主的头衔，可以在几年的时间里用§H决策§!提名我们的一颗星球主持$galactic_market_station$。"
@@ -4435,4 +4435,4 @@
 
  DIPLO_ACTION_ALREADY_REPLIED:0 "$COUNTRY|Y$已对$ACTION|Y$作出回应"
  overlord_subsidy:0 "宗主津贴"
- OVERLORD_SUBSIDY_UNABLE_TO_PAY_RESEARCH:0 "$OVERLORD|Y$ unable to pay research subsidies to $SUBJECT|Y$ - insufficient production."
+ OVERLORD_SUBSIDY_UNABLE_TO_PAY_RESEARCH:0 "$OVERLORD|Y$因产出不足，无法向$SUBJECT|Y$支付研究补贴。"

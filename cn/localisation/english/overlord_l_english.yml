@@ -7,7 +7,7 @@
  origin_progenitor_hive:0 "始祖蜂巢"
  origin_progenitor_hive_desc:1 "该蜂巢通过专职化的半独立领导人获得了进化优势。尽管这些“子嗣”需要持续收到监管，但它们还是大大提高了整体的效率。"
  START_SCREEN_PROGENITOR_HIVE:1 "在遥远的启始之时，先祖已有之。\n\n在[Root.GetHomeWorldName]上的生活困苦且充满竞争，而强大的先祖还是能够开疆拓土。统治如此巨大的疆域很快难以为继，因此先祖创造了第一个子嗣。很快发现，子嗣显然无法自行管理一切，反之他们产出低级工蜂来帮助管理我们的家园。\n\n让我们第一次试探性地跨出[capital_scope.System.GetName]的一步，我们的先祖便将自己隔绝于一个特化的巢穴中。受益于这些更好更流畅的控制体系，我们已经时刻准备着将先祖的影响力投射于整个银河了，正如他过去和现在所做一般，直至未来。而[Root.GetName]将见证一切。"
- origin_tooltip_progenitor_hive_effects:3 "—可以雇佣被动获得经验的特殊§H子嗣领袖§!\n—以£building£§H子嗣巢穴§!代替£building£§H产卵池§!，能够产生强大的防御陆军并增强低级子个体的生产力。\n—允许在附属国的星球上建造£building£§H子嗣巢穴§!。\n—建造能够增强周围舰队战斗力的§H子嗣舰船§!。没有子嗣舰船的舰队会遭受以下影响：\n\n"
+ origin_tooltip_progenitor_hive_effects:3 "—可以雇佣被动获得经验的特殊§H子嗣领袖§!\n—以£building£§H子嗣巢穴§!代替£building£§H产卵池§!，能够产生强大的防御陆军并增强低级子个体的生产力。\n— 允许在附属国的星球上建造£building£§H子嗣巢穴§!。\n- Can release §HSectors§! as §HSubjects§!, if they do not have the §H$civic_hive_devouring_swarm$§! Civic.\n— 建造能够增强周围舰队战斗力的§H子嗣舰船§!。没有子嗣舰船的舰队会遭受以下影响：\n\n"
  #Progenitor deposits, armies and decisions
  progenitor_defense:0 "蜂巢始祖"
  progenitor_defense_plural:0 "$progenitor_defense$"
@@ -120,15 +120,15 @@
  sm_offspring_outlook_desc:0 "能够让子嗣监管并指挥星系内正在进行的战斗的太空基地模块。\n"
  STARBASE_OFFSPRING_OUTLOOK:0 "$sm_offspring_outlook$"
 
- mod_shipsize_offspring_corvette_build_speed_mult: "Offspring $mod_shipsize_corvette_build_speed_mult$"
- mod_shipsize_offspring_destroyer_build_speed_mult: "Offspring $mod_shipsize_destroyer_build_speed_mult$"
- mod_shipsize_offspring_cruiser_build_speed_mult: "Offspring $mod_shipsize_cruiser_build_speed_mult$"
- mod_shipsize_offspring_battleship_build_speed_mult: "Offspring $mod_shipsize_battleship_build_speed_mult$"
+ mod_shipsize_offspring_corvette_build_speed_mult:0 "Offspring $mod_shipsize_corvette_build_speed_mult$"
+ mod_shipsize_offspring_destroyer_build_speed_mult:0 "Offspring $mod_shipsize_destroyer_build_speed_mult$"
+ mod_shipsize_offspring_cruiser_build_speed_mult:0 "Offspring $mod_shipsize_cruiser_build_speed_mult$"
+ mod_shipsize_offspring_battleship_build_speed_mult:0 "Offspring $mod_shipsize_battleship_build_speed_mult$"
 
- mod_shipsize_offspring_corvette_hull_add: "Offspring $mod_shipsize_corvette_hull_add$"
- mod_shipsize_offspring_destroyer_hull_add: "Offspring $mod_shipsize_destroyer_hull_add$"
- mod_shipsize_offspring_cruiser_hull_add: "Offspring $mod_shipsize_cruiser_hull_add$"
- mod_shipsize_offspring_battleship_hull_add: "Offspring $mod_shipsize_battleship_hull_add$"
+ mod_shipsize_offspring_corvette_hull_add:0 "Offspring $mod_shipsize_corvette_hull_add$"
+ mod_shipsize_offspring_destroyer_hull_add:0 "Offspring $mod_shipsize_destroyer_hull_add$"
+ mod_shipsize_offspring_cruiser_hull_add:0 "Offspring $mod_shipsize_cruiser_hull_add$"
+ mod_shipsize_offspring_battleship_hull_add:0 "Offspring $mod_shipsize_battleship_hull_add$"
 
  ##########################
  # Subterranean origin
@@ -136,25 +136,16 @@
 
  origin_subterranean:0 "地底人"
  origin_subterranean_desc:0 "无论是为了躲避掠食者还是寻求能更轻易地接触资源，该物种因进化居住到了他们母星的地下，造就了对环境适应力更为强大的社会结构。"
- origin_tooltip_subterranean_effects:1 "—以§Y穴居者§!特质开局\n—你的物种在地下建造城市，导致建筑和地区花费增加§R+10%§!，并且§R-10%§!建造速度\n—殖民地在轨道轰炸中遭受§G-75%§!的伤害\n—殖民地的§H矿业区§!数量不受限制，并从每个矿业区§G+2§! £housing£ §Y$MOD_PLANET_HOUSING_ADD$§!，而且从每§Y3个§!§H矿业区§!中可获得§G1个§!£building£§Y建筑槽§!"
+ origin_tooltip_subterranean_effects:2 "—以§Y穴居者§!特质开局\n—殖民地的§H矿业区§!数量不受限制，并从每个矿业区§G+2§! £housing£ §Y$MOD_PLANET_HOUSING_ADD$§!，而且从每§Y3个§!§H矿业区§!中可获得§G1个§!£building£§Y建筑槽§!\n- 你的物种在地下建造城市，获得以下收益：\n\n"
  trait_cave_dweller:0 "穴居者"
  trait_cave_dweller_desc:0 "§L该物种能在任何他们能找到的星球地下繁衍，但代价是人口增长速度。§!"
- trait_cave_dweller_tooltip: "$MOD_BIO_POP_GROWTH_SPEED$: §R-20%§!"
+ trait_cave_dweller_tooltip:0 "$MOD_BIO_POP_GROWTH_SPEED$: §R-20%§!"
 
  START_SCREEN_SUBTERRANEAN:1 "当[GetHomeWorldName]上的其他生命在只能在荒野中度过夜晚，我们的祖先很快学习到了在地下生活的智慧，地下为他们提供了阻挡猛烈阳光和剧烈气候的庇荫。\n\n$START_SCREEN_SUBTERRANEAN_END$"
  START_SCREEN_SUBTERRANEAN_PLANT:1 "[GetHomeWorldName]上的生命采取了一些完全不同的进化路线。和我们同处一个世界的其他生命形式不同，它们从阳光中汲取能量而我们从阴暗的地底获得营养，正如我们的[GetSpeciesAdj]先祖所做的那样。\n\n$START_SCREEN_SUBTERRANEAN_END$"
  START_SCREEN_SUBTERRANEAN_LITHOID:0 "我们生于[GetHomeWorldName]极深的地下。我们的进化之路和我们那些不可移动的表兄弟不同，他们在上方如同哨兵般环卫者我们，而我们却选择远离严酷而闪耀的日光。和他们不同，我们获得了移动、思考以及建立一个文明的能力。\n\n$START_SCREEN_SUBTERRANEAN_END$"
  START_SCREEN_SUBTERRANEAN_END:1 "对地底矿物的轻易获取让我们的[GetSpeciesAdj]先祖完成了工业化，统一了我们的物种并深化了穴居的文明形式。我们数次尝试重回地表但每次都只能带来残酷而难于应付的回忆。因此我们还是留在了地下，在星球的根基处建立我们至高无上的地位。\n\n现在随着超光速引擎的发现，我们做出了我们最大胆的尝试以触及星辰——并也同我们的祖先那样，我们应该在黑暗中挖掘出自己的家园。"
  SUBTERRANEAN:0 "地底人"
-
- d_subterranean_mines:0 "地下矿物"
- d_subterranean_mines_desc:0 "该文明居于行星的地底，这让他们能接触到这个星球更多的矿物。"
-
- subterranean_nation_modifier:0 "地下国家"
- subterranean_nation_modifier_desc:0 ""
-
- leader_trait_subterranean_archaeology:0 "地下专精"
- leader_trait_subterranean_archaeology_desc:0 "该领导非常熟悉地下开采的工作。"
 
  ##########################
  # Teachers of the Shroud #
@@ -246,6 +237,11 @@
  # Wars
  NAME_Imperial_War:0 "帝国内战"
 
+ # Megastructure
+ gateway_derelict:0 "Derelict Gateway"
+ gateway_derelict_DESC:0 "$gateway_final_DESC$"
+ gateway_derelict_MEGASTRUCTURE_DETAILS:0 "$gateway_final_MEGASTRUCTURE_DETAILS$"
+
  # Events
  origin.5703.desc:0 "欢迎你们，新外星人朋友们！\n\n由于你们选择成为我们的……盟友，我们认为现在正是与你们联络的时候。你们选择了理性而不是逼迫我们使用暴力，这令我们非常愉快。"
  origin.5703.a:0 "是你们让我们别无选择的不是么？"
@@ -290,10 +286,12 @@
  origin.5725.a:0 "哪怕是天上的长堤，也是溃于蚁穴。"
 
  origin.5735.title:0 "破碎的帝国"
- origin.5735.desc:0 "失去了能够维持团结统一的伟大领袖，[previous_overlord.GetName]现已分崩离析，而每一部分都宣称自己才是原先帝国的正统。然而由于没有足够的实力和合法性，他们对所有附庸的控制也随之瓦解。\n\n在每一个分裂的部分都在互相征伐，争夺[previous_overlord.GetName]的王位时，他们原先的附属国们也开始寻找自己独立的未来。"
+ origin.5735.desc:1 "失去了能够维持团结统一的伟大领袖，[previous_overlord.GetName]现已分崩离析，而每一部分都宣称自己才是原先帝国的正统。然而由于没有足够的实力和合法性，他们对所有附庸的控制也随之瓦解。\n\n在每一个分裂的部分都在互相征伐，争夺[previous_overlord.GetName]的王位时，他们原先的附属国们现在想干什么都可以了。"
  origin.5735.a:0 "重获自由喽。"
  origin.5735.b:0 "是时候有新的领袖登上历史舞台了。"
  origin.5735.b.tt:0 "对§Y[previous_overlord.GetName]§!和它原先的所有附属国获得§Y30年§!的§Y征服§!宣战理由。"
+ origin.5735.c:0 "We are loyal to the throne - no matter what."
+ origin.5735.c.tt:0 "Remain a loyal subject of the §Y[previous_overlord.GetName]§!."
 
  # AI Vassals looking for new overlord events
  origin.5745.title:0 "技术官僚保护"
@@ -521,6 +519,8 @@
  opinion_imperial_vassal_ai_opinion:0 "近期为同侪"
  opinion_imperial_vassal_new_overlord:0 "新守护者"
  opinion_imperial_vassal_refused_overlordship:0 "拒绝宗主地位"
+ opinion_imperial_vassal_grateful_response_overlord_opinion:0 "Grateful"
+ opinion_imperial_vassal_harsh_response_overlord_opinion:0 "Disappointed"
 
  ####################
  # Assorted Tooltips

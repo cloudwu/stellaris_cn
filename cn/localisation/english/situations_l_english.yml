@@ -21,7 +21,7 @@
  SITUATION_PREDICTED_PROGRESS:0 "下月预计：$PROGRESS|Y$（$CHANGE$）"
  SITUATION_OUTCOME_IN_MONTHS:0 "将在$MONTHS|Y$月之后产生结果。"
  SITUATION_CURRENT_STAGE:0 "当前阶段：$STAGE|Y$"
- SITUATION_STAGE_ACTIVE_RANGE:0 "该阶段在$VALUE1|Y$到$VALUE2|Y$之间生效。"
+ SITUATION_STAGE_ACTIVE_RANGE:1 "该阶段在$VALUE1|Y$到$VALUE2|Y$之间生效。"
  OUTSTANDING_SITUATIONS:0 "§H未解决局势§!\n需要我们关注的§E局势§!罗列于此。"
  CLICK_TO_EXPAND_OR_COLLAPSE:0 "§G点击收起或展开该部分。§!"
  PREDICTED_OUTCOME:0 "预计结果"
@@ -33,6 +33,10 @@
  OUTLINER_SITUATION_OUTCOME_TIME:1 "基于每月$CHANGE$的改变量预计，该局势还有$MONTHS|Y$个月产生结果。" # [LocEditor:ForFutureBatchExport]
  CLICK_TO_OPEN_SITUATION_LOG:0 "§G点击打开情报日志§!"
  SITUATION_STAGE_NO_EFFECTS:0 "该阶段没有影响。"
+ SITUATION_TARGET_TOOLTIP:0 "This Situation is focused around the $TARGET_TYPE$ $TARGET|Y$."
+ SITUATION_TARGET_TOOLTIP_NO_TARGET:0 "The effects of this Situation are felt empire-wide."
+ SITUATION_START_HEADER:0 "Start Value"
+ SITUATION_START_TOOLTIP:0 "The Situation began at $VALUE|Y0$ progress."
 
  situation_unknown_outcome_approach:0 "我们不确定目前局势的解决方案将带来何种结果。"
  situation_monthly_change_tooltip_no_control:0 "该§Y局势§!的进展不在我们的掌控之中。"
@@ -59,8 +63,8 @@
  stage_3:1 "叁" # [LocEditor:ForFutureBatchExport]
  stage_4:1 "肆" # [LocEditor:ForFutureBatchExport]
  stage_5:1 "伍" # [LocEditor:ForFutureBatchExport]
- stage_2_alt: "$stage_2$"
- stage_3_alt: "$stage_3$"
+ stage_2_alt:0 "$stage_2$"
+ stage_3_alt:0 "$stage_3$"
  string_current_approach:0 "当前方案"
  situation_mysterious_labyrinth_monthly_change_tooltip:0 "$situation_monthly_change_tooltip_approaches_dependent$"
 
@@ -185,7 +189,7 @@
  radiation_damage_high:0 "§R锟斤拷射射烫烫烫烫烫：镐镐镐镐镐§!"
 
  # Deposit
- d_machine_care_home:0 "人机接口中心"
+ d_machine_care_home:1 "人机接口中心"
  d_machine_care_home_desc:0 "一处专业化中心，生物助手和功能异常的子个体相互搭配。"
 
  # Jobs
@@ -203,8 +207,8 @@
  radiation_hardened_components_desc:0 "我们的帝国已经完全掌握保护机械部件不受宇宙射线损伤的方法。"
  software_damage:0 "软件故障"
  software_damage_desc:0 "我们的集体意识受到辐射的伤害，正在进行修复。"
- machine_care_museum:0 "人机接口博物馆"
- machine_care_museum_desc:0 "一处让生物助手可以在执行无意义任务时感受到激动和有意义的特殊中心。"
+ machine_care_museum:1 "人机接口博物馆"
+ machine_care_museum_desc:1 "一处让$pop_cat_bio_trophy_plural$可以在执行无意义任务时感受到激动和有意义的特殊中心。"
 
 
  ## Events
@@ -524,7 +528,7 @@
  deficit_approach_invest_in_crystal_producers:0 "投资晶体产出"
  deficit_approach_invest_in_gas_producers:0 "投资天然气产出"
  deficit_approach_cut_science_investment:0 "减少科学投资"
- deficit_approach_cut_investment:0 "减少矿物投资"
+ deficit_approach_cut_investment:1 "减少投资"
  deficit_approach_cut_maintenance:1 "减少居住站维护费" # [LocEditor:ForFutureBatchExport]
  deficit_approach_invest_in_alloys_production:0 "投资我们的[Owner.GetAlloyProducerPlural]"
  deficit_approach_invest_in_farmers:0 "对[Owner.GetFarmerPlural]的投资"
@@ -618,9 +622,9 @@
  deficit.170.desc:1 "[Owner.GetFinancialAdvisorAgencyCap]现在愈发关心我们帝国发生的合金短缺。如果不能尽快弥补上我们的支出，我们的工业部门将会收到广泛的影响。"
  deficit.170.desc.machine:1 "预算警告：当前合金支出已经超过了接下来数月的支出阈值。若不能解决短缺，将会给我们的工业区域造成广泛的扰乱。"
  deficit.170.A:1 "将§Y[robots_planet.GetName]§!的机器人拆成零件。"
- deficit.170.A.tooltip:1 "拆解[robots_planet.GetName]上的所有机器人（£pop£§Y[robots_planet.half_population]子个体§!）以获取£alloys£§Y[robots_planet.total_alloys_gained]合金§!"
+ deficit.170.A.tooltip:2 "拆解[robots_planet.GetName]上的所有机器人（£pop£§Y[robots_planet.recycled_robots]子个体§!）以获取£alloys£§Y[robots_planet.total_alloys_gained]合金§!"
  deficit.170.B:1 "合并。循环。拆解§Y[robots_planet.GetName]§!上的智能人。"
- deficit.170.B.tooltip:1 "拆解[robots_planet.GetName]上的一半人口（£pop£§Y[robots_planet.half_population]子个体§!）以获取£alloys£§Y[robots_planet.total_alloys_gained]合金§!"
+ deficit.170.B.tooltip:2 "拆解[robots_planet.GetName]上的一半人口（£pop£§Y[robots_planet.recycled_robots]子个体§!）以获取£alloys£§Y[robots_planet.total_alloys_gained]合金§!"
 
  deficit.175.desc:1 "由于无法解决合金短缺，我们被迫宣布破产并违约债务。[Owner.GetFinancialAdvisorAgencyCap]正在起草新的紧缩经济计划以削减开支，避免这种情况再度发生。"
 
@@ -793,7 +797,7 @@
  situation.1110.b:0 "把污染物和那个毒腺一并清理出去！"
  situation.1110.b.tooltip:0 "取消[Owner.GetParadeStudy]以尽快清理这颗星球。"
  situation.1115.name:0 "[Target.GetName]清理完毕"
- situation.1115.desc:0 "在几个月的努力后，我们在§Y[Target.GetName]§!上的[Owner.GetWaterCoolantLower]资源终于移除了虚空孳孽污染变得清洁可用。这并不是徒劳一场，反之，我们在[Owner.GetWaterCoolantLower]中学到了许多异星生理学的基本知识，并且已经准备好继续进行[Owner.GetParadeStudy]。我们的[Owner.GetScientistPlural]认为，只要[Owner.GetParadeStudy]的研究得出结果，他们就能以其提升[Target.GetName]的生活质量。"
+ situation.1115.desc:1 "在几个月的努力后，我们在§Y[Target.GetName]§!上的[Owner.GetWaterCoolantLower]资源终于移除了虚空孳孽污染变得清洁可用。这并不是徒劳一场，反之，我们在[Owner.GetWaterCoolantLower]中学到了许多异星生理学的基本知识，并且已经准备好继续进行[Owner.GetParadeStudy]。我们的[Owner.GetScientistPlural]认为，只要[Owner.GetParadeStudy]的研究得出结果，他们就能以其提升[Target.GetName]的生活质量。"
 
  situation.1120.name:0 "最后的火花"
  situation.1120.desc:1 "我们遗留在噬星者最终被击杀的地方的探测器汇报，那具遗骸的一部分开始和恒星融为一体。释放的能量增进了恒星活动，但我们的计算表明，由于移除了§Y卵鞘§!，这仍不足以让§Y[dead_stellarite.solar_system.GetName]§!星系恢复原有的光明。如果我们让货运飞船返回，我们有希望可以重新点亮这颗恒星。"
@@ -979,7 +983,7 @@
 
  #Casus Belli
 
- casus_belli_cb_revenge_for_eaten_star:0 "食星之敌"
+ casus_belli_cb_revenge_for_eaten_star:1 "食星之敌"
  war_goal_wg_revenge_for_eaten_star:0 "$casus_belli_cb_revenge_for_eaten_star$"
  war_goal_wg_revenge_for_eaten_star_desc:0 "我们发动了战争，目的是彻底地征服吞噬我们恒星的敌人。"
  casus_belli_cb_end_threat_revenge_for_eaten_star:0 "吞食星辰"

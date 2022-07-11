@@ -311,6 +311,11 @@
  MOD_SHIP_REPAIR_HULL_MULT:0 "Docked Ship Hull Repair Speed"
  MOD_SHIP_REPAIR_ARMOR_MULT:0 "Docked Ship Armor Repair Speed"
 
+ MOD_OWNED_SHIP_SPEED_MULT:0 "$MOD_SHIP_SPEED_MULT$"
+ MOD_OWNED_SHIP_EVASION_MULT:0 "$MOD_SHIP_EVASION_MULT$"
+ MOD_OWNED_SHIP_FIRE_RATE_MULT:0 "$MOD_SHIP_FIRE_RATE_MULT$"
+ MOD_OWNED_SHIP_ACCURACY_MULT:0 "$MOD_SHIP_ACCURACY_MULT$"
+
  #Army
  MOD_ARMY_DISENGAGE_CHANCE_MULT:0 "Army Disengagement Chance"
  MOD_ARMY_UPKEEP_MULT:0 "Army Upkeep"
@@ -356,7 +361,7 @@
  MOD_PIRACY_SUPPRESSION_MULT:0 "Piracy Suppression"
  MOD_MAX_TRADE_PIRACY_ADD:0 "Piracy"
  MOD_MAX_TRADE_PIRACY_MULT:0 "Piracy"
- MOD_PLANET_CRIME_ADD:0 "Crime"
+ MOD_PLANET_CRIME_ADD:1 "[Owner.GetCrimeDeviancy]"
  MOD_PLANET_CRIME_MULT:0 "$MOD_PLANET_CRIME_ADD$"
  MOD_PLANET_CRIME_NO_HAPPINESS_ADD:0 "Deviancy"
  MOD_PLANET_CRIME_NO_HAPPINESS_MULT:0 "$MOD_PLANET_CRIME_NO_HAPPINESS_ADD$"
@@ -426,6 +431,7 @@
  mod_planet_district_mining_uncapped_build_speed_mult:0 "$mod_planet_district_mining_build_speed_mult$"
  mod_planet_district_farming_uncapped_build_speed_mult:0 "$mod_planet_district_farming_build_speed_mult$"
  mod_planet_district_generator_uncapped_build_speed_mult:0 "$mod_planet_district_generator_build_speed_mult$"
+ mod_planet_building_hydroponics_farm_build_speed_mult:0 "Hydroponics Farm Build Speed"
  mod_planet_building_foundry_1_build_speed_mult:0 "Foundry Build Speed"
  mod_planet_building_factory_1_build_speed_mult:0 "Factory Build Speed"
  mod_planet_building_research_lab_1_build_speed_mult:0 "Research Lab Build Speed"

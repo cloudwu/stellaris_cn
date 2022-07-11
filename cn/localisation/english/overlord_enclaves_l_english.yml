@@ -40,6 +40,7 @@
  enclave.2.tooltip.dd:0 "佣兵城邦容量有余"
  enclave.2.tooltip.e:1 "星系内需要有一个小行星或卫星"
  enclave.2.tooltip.ee:1 "星系内有小行星或卫星"
+ enclave.2.tooltip.f:0 "我们必须是该舰队的所有者"
  enclave.2.a.tooltip:0 "一个佣兵城邦成立了。"
  enclave.23.desc:0 "感谢您的赞助！TODO_CD" #TODO_CD
  enclave.25:0 "佣兵城邦被摧毁"
@@ -122,8 +123,8 @@
  enclave.280.c.desc:0 "我们一直以来都很乐意同赞助人会面。请放心，下一批红利很快就会发到你的手中。你介不介意和我们聊一聊，你对于我们在严重后果保护领域展开的新业务的范围有什么看法？我们觉得民用客户肯定会爱死这些服务了！"
  enclave.280.b:1 "我们想让你§Y召回§!你的舰队。"
  enclave.280.c:0 "我们乐于同你分享我们的§Y科技§!。"
- enclave.280.c.timeout: "The enclave is still upgrading with our tech. We can share new technologies with them after §Y[event_target:mercenary_enclave_country.updating_databanks_timer]§!."
- enclave.285.desc:1 "你应该明白召回舰队是一件相当敏感的事情。当然了，我们已经在所有合同模板中准备好了条款漏洞，不过我们至少需要六个月的时间来恢复舰队，而且还需要支付一大笔补偿以避免惹恼现有客户。\n\n我们认为这一行动不符合我们组织的最佳利益，但您是我们的赞助人——如果您愿意，我们愿意效劳。"
+ enclave.280.c.timeout:0 "这个城邦还在利用我们的科技进行升级。我们可以在§Y[event_target:mercenary_enclave_country.updating_databanks_timer]§!之后与他们分享新的科技。"
+ enclave.285.desc:2 "你应该明白召回舰队是一件相当敏感的事情。当然了，我们已经在所有合同模板中准备好了条款漏洞，不过我们至少需要六个月的时间来恢复舰队，而且还需要支付一大笔补偿以避免惹恼现有客户。\n\n我们认为这一行动不符合我们组织的最佳利益，但您是我们的赞助人——如果您愿意，我们愿意效劳。"
  enclave.285.tooltip:0 "此举将激怒太空城邦。"
  enclave.290.name:1 "征用舰队抵达"
  enclave.290.desc:1 "我们征用的佣兵舰队现已听候调遣。"
@@ -195,7 +196,7 @@
  high_level:0 "I"
  lord_of_war:0 "战争之王"
 
- enclave.2000.name:0 "佣兵城邦支付红利"
+ enclave.2000.name:1 "[mercenary_enclave_country.GetName]城邦支付红利"
  enclave.2000.desc:1 "尊敬的赞助者，我们新近的合约有了丰硕的成果。我们扩展了自己的民用业务，现在有好几个公司雇佣我们，让我们提供安保和维和服务。在合约期间，我们的特工碰巧找到了一些有价值的科学研究。你会在定期分红的末尾找到这些附加的内容。"
  enclave.2005.desc:1 "尊敬的赞助者，公司运营的很好，我们的收入一直在稳定的增加。以上是本次分红，此外我们还运来了一批额外的资源，这是我们从一个违约的民用客户手中扣押得到的。"
  enclave.2010.desc:1 "尊敬的赞助者，我们很高兴在这个财报周期宣告自己的利润突破了记录！鉴于此，我们很乐意在常规分红中加入一笔额外的丰厚提成。"
@@ -207,6 +208,7 @@
  enclave.2025.c:0 "改让我们来帮忙吧。"
  enclave.2040.desc:0 "你想要分享自己的科技？亲爱的赞助人，你的信任让我们倍感荣幸。尽管我们的研发部门一直致力于让我们处于尖端科技水平，论及能够动用的资源总量，同你相比我们还是捉襟见肘。任何你同我们分享的知识都能让我们以最讲伦理的方式继续开展活动。"
  enclave.2040.a.tt:0 "我们将同这个太空城邦分享自己的§Y科技§!。只能每§Y10年§!进行一次。"
+ merc_enclave_grants_ships:0 "§Y[mercenary_enclave_country]§!还会额外给予我们一支§G小型军用舰队§!"
 
 
 
@@ -330,7 +332,7 @@
  enclave.405.b:2 "你们愿意从你们的组织里派一位老师过来吗？" # [LocEditor:ForFutureBatchExport]
  enclave.405.c:1 "你能给我们一些有关其他帝国的见解吗？" # [LocEditor:ForFutureBatchExport]
  enclave.405.c.tt:1 "§Y[shroudwalker_enclave_country.GetName]§!对§Y[Root.GetName]§!需要至少§Y20§!评价才能要求提供§Y见解§!。" # [LocEditor:ForFutureBatchExport]
- enclave.405.c.tt.2:0 "我们需要一个正在运转的间谍网络，才能要求§Y[shroudwalker_enclave_country.GetName]§!对我们的秘密行动筹备提供指导。"
+ enclave.405.c.tt.2:1 "我们需要一个正在运转的间谍网络，才能要求§Y[shroudwalker_enclave_country.GetName]§!对我们的秘密行动筹备提供指导。"
  enclave.405.d:1 "告诉我们通过天幕穿行的方法。" # [LocEditor:ForFutureBatchExport]
  enclave.405.d.tt:1 "§Y[shroudwalker_enclave_country.GetName]§!对§Y[Root.GetName]§!需要至少§Y30§!评价才能询问§Y天幕信标§!事宜。" # [LocEditor:ForFutureBatchExport]
 
@@ -851,5 +853,6 @@
 
  shroud_beacon_active_tooltip:0 "[Root.GetName]拥有一个启用的§Y天幕信标§!。"
 
- shroudwalker_teacher_explanation:0 "解锁行星决议§Y$decision_shroudwalker_teacher$§!。"
+ shroudwalker_teacher_explanation:1 "\n解锁§Y行星决议§!§H$decision_shroudwalker_teacher$§!带来下列效果：\n£amenities£ $MOD_PLANET_AMENITIES_MULT$：§G+5%§!\n$mod_planet_jobs_unity_produces_mult$：§G+10%§!\n$mod_planet_telepaths_unity_produces_add$：§G+3§!"
+
 

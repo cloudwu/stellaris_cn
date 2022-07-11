@@ -40,6 +40,7 @@
  enclave.2.tooltip.dd:0 "Mercenary capacity available"
  enclave.2.tooltip.e:1 "System requires an asteroid or a moon"
  enclave.2.tooltip.ee:1 "System has an asteroid or a moon"
+ enclave.2.tooltip.f:0 "We must be the owner of this fleet"
  enclave.2.a.tooltip:0 "A Mercenary Enclave is founded."
  enclave.23.desc:0 "Thanks for founding us! TODO_CD" #TODO_CD
  enclave.25:0 "Mercenary Enclave Destroyed"
@@ -122,8 +123,8 @@
  enclave.280.c.desc:0 "We are always delighted to meet our patrons. Rest assured that the next dividend shipment should reach you shortly. Would you care to tell us what you think about our range of new services in high consequence protection? We think our civilian clients will love them!"
  enclave.280.b:1 "We want you to §Yrecall§! your fleet."
  enclave.280.c:0 "We are inclined to share our §Ytechnology§! with you."
- enclave.280.c.timeout: "The enclave is still upgrading with our tech. We can share new technologies with them after §Y[event_target:mercenary_enclave_country.updating_databanks_timer]§!."
- enclave.285.desc:1 "You certainly understand that recalling a fleet is a sensitive matter. We have of course prepared the necessary loopholes in all our standard contracts, but we will need at least six months to bring the fleet back, and a... generous compensation to avoid upsetting our current customers.\n\n We believe that this course of action is not in the best interests of our organization, but you are our patron - we'll make it happen if you wish it so."
+ enclave.280.c.timeout:0 "The enclave is still upgrading with our tech. We can share new technologies with them after §Y[event_target:mercenary_enclave_country.updating_databanks_timer]§!."
+ enclave.285.desc:2 "You certainly understand that recalling a fleet is a sensitive matter. We have of course prepared the necessary loopholes in all our standard contracts, but we will need at least six months to bring the fleet back, and a... generous compensation to avoid upsetting our current customers.\n\nWe believe that this course of action is not in the best interests of our organization, but you are our patron - we'll make it happen if you wish it so."
  enclave.285.tooltip:0 "This will displease the Enclave."
  enclave.290.name:1 "Commandeered Fleet Arrives."
  enclave.290.desc:1 "The Mercenary Fleet that we commandeered from our enclave is awaiting orders."
@@ -195,7 +196,7 @@
  high_level:0 "I"
  lord_of_war:0 "Lord of War"
 
- enclave.2000.name:0 "Mercenary Enclave Pays Dividends"
+ enclave.2000.name:1 "The [mercenary_enclave_country.GetName] Enclave Pays Dividends"
  enclave.2000.desc:1 "Esteemed Patron, our recent contracts have been fruitful. We have expanded our civilian operations, and several corporations have hired us for a variety of security and peacekeeping services. While on contract, our operatives chanced upon some valuable scientific research. You will find it attached along with your regular dividends."
  enclave.2005.desc:1 "Esteemed Patron, the company is doing well, and our earnings are steadily increasing. Here are your dividends, along with an extra delivery of resources we recovered from a civilian client who defaulted on their payment."
  enclave.2010.desc:1 "Esteemed Patron, we are pleased to announce record profits during this fiscal interval! As such, we have included a generous bonus to your regular dividends."
@@ -207,6 +208,7 @@
  enclave.2025.c:0 "Let us help instead."
  enclave.2040.desc:0 "You want to share your technology? Your trust in us is an honor, dear patron. While our R&D department is committed to keeping us on the bleeding edge of research, we simply cannot mobilize the same amount of resources as you. And any knowledge that you share with us will be used to develop our activities in the most ethical manner!"
  enclave.2040.a.tt:0 "We will share our §Ytechnology§! with this enclave. This can only be done once every §Y10 years§!."
+ merc_enclave_grants_ships:0 "§Y[mercenary_enclave_country]§! will additionally grant us a §Gsmall military fleet§!"
 
 
 
@@ -330,7 +332,7 @@
  enclave.405.b:2 "Would you be willing to send us a §Yteacher§! from your order?"
  enclave.405.c:1 "Can you give us §Yinsight§! on another empire?"
  enclave.405.c.tt:1 "We need at least §Y20§! £opinion£ Opinion with the §Y[shroudwalker_enclave_country.GetName]§! in order to ask for an §YInsight§!."
- enclave.405.c.tt.2:0 "We need an active Spy Network to be able to ask the §Y[shroudwalker_enclave_country.GetName]§! to guide our clandestine efforts."
+ enclave.405.c.tt.2:1 "We need an active Spy Network to be able to ask the §Y[shroudwalker_enclave_country.GetName]§! to guide our clandestine efforts."
  enclave.405.d:1 "Tell us about §Ytravel§! via the Shroud."
  enclave.405.d.tt:1 "We need at least §Y30§! £opinion£ Opinion with the §Y[shroudwalker_enclave_country.GetName]§! in order to inquire about the §YShroud Beacon§!."
 
@@ -349,7 +351,7 @@
  enclave.420.b:0 "We would like a §YShroud Beacon§!."
  shroud_beacon_info:1 "Permits building a §HShroud Beacon§! on one of our Starbases. Once built, it will spawn a §HShroud Tunnel§!, providing passage to and from the §Y[shroudwalker_enclave_system.GetName] system§!. Only one Tunnel can be spawned - choose its location carefully."
  enclave.425.desc:1 "A saying is known to us: the paths of the Shroud are strange and winding. May this Beacon light your way forward."
- 
+
  enclave.435:0 "Shroudwalker Enclave Destroyed"
  enclave.435.desc:0 "Victory in the [shroudwalker_system.GetName] system! Our forces made short work of the so-called mystics of the [FROM.GetName]. For all the grand talk of knowledge and power, their foolish devotion to the Shroud could not provide clairvoyance enough to forestall our assault. In fact, our forces easily breached the facility's mechanical defenses. However, once inside, they discovered the enclave empty, save for a lone acolyte they found deep in meditation in a remote chamber. Where the rest have gone, we have no idea, but the galaxy is well rid of such hollow dogma."
  enclave.440.desc:0 "Reports are coming in surrounding the destruction of the [FROM.GetName] in the [shroudwalker_system.GetName] system. The aggressors made short work of the campaign, reducing the Shroudwalker’s facilities to rubble. It is strange to think that these mystics could not foresee their own demise. Or could this tragedy be a part of some still grander design? Who can say? Without their services, the future remains shrouded."
@@ -720,11 +722,11 @@
  enclave.5550.a:0 "Leave this place at once!"
  enclave.5550.b:0 "Abomination. We must destroy you."
  enclave.5551.desc:0 ""...Regrettable. But there is also opportunity. We can recognize this, now that we are freed from the dream-place. We-who-are-not-you, colonists, no longer bound by dreams of [shattered_frontier_planet.GetName]...\n\nWe are confused, and burdened by many questions, but we know where to seek answers. Farewell, spreader-of-ill-will.""
- 
+
  enclave.5557.name:0 "Opaque Veil"
  enclave.5557.desc:0 "The currents of time are muddied, impenetrable. Unfortunately, the rite of Divination has failed to pierce the veil of the Shroud. Accordingly, we will return a portion of the cost, minus a small tithe for our efforts."
  enclave.5557.a:0 "Very well."
- 
+
  enclave.5566.name:0 "Wayward Pilgrims"
  enclave.5566.desc:0 "Sensors detect the approach of several transport vessels. Battered and broken-down, the ships appear cobbled together from spare parts. The commander of the caravan's flagship is hailing us, but given the state of their technology, any communication is likely to be audio only."
  enclave.5565.desc:0 "Divine blessings upon you. I am the annointed leader of this caravan. We ask for safe passage through your space, and a kind donation of food. We are on pilgrimage, and after long years in the void, my people grow thin."
@@ -740,7 +742,7 @@
  enclave.5575.name:0 "Unholy End"
  enclave.5575.desc:0 "The caravan of pilgrims who came to us begging for aid has met a grisly end. Reconstructive telemetry indicates they were engaged in some form of experiment, possibly psionic in nature. Due to a sudden spike in energy, the containment field around their flagship's engine core was breached. The resulting explosion destroyed the caravan, and has unleashed a potent Psionic Storm in the [wayward_pilgrims_system.GetName] system. Every estimate shows it will take several years before a storm of this size can dissipate.\n\nWhatever these holy fools aimed to do here, they obviously failed, and we have been left to deal with the fallout."
  enclave.5575.a:0 "Intolerable."
- 
+
  wayward_pilgrim_00:0 "Happy Pilgrims"
  wayward_pilgrim_01:0 "Unhappy Pilgrims"
  wayward_pilgrim_02:0 "Satisfied Pilgrims"
@@ -749,7 +751,7 @@
  wayward_pilgrim_05:0 "Rejected Pilgrims"
  wayward_pilgrim_06:0 "Glory of the Blessed Realm"
  wayward_pilgrim_07:0 "Wayward Storm"
- 
+
  enclave.6000.name:0 "Strange Manifestations"
  enclave.6000.a.desc:0 "Strange developments on the [Root.GetName]: after passing through the Shroud Tunnel, the fleet commander has undergone a rapid transformation. While their personality and memories remain unaffected, their physical form has been dramatically altered. They now have the aspect (and internal organs) of an entirely alien species."
  enclave.6000.b.desc:0 "Alarming developments on the [Root.GetName]: after passing through the Shroud Tunnel, the fleet commander has undergone a horrifying transformation. While their personality and memories remain unaffected, their physical form has been dramatically altered. They now have the aspect (and internal organs) of an entirely alien species."
@@ -851,5 +853,5 @@
 
  shroud_beacon_active_tooltip:0 "The [Root.GetName] has an active §YShroud Beacon§!."
 
- shroudwalker_teacher_explanation:0 "Unlocks the planet decision §Y$decision_shroudwalker_teacher$§!."
+ shroudwalker_teacher_explanation:1 "\nUnlocks the §Yplanetary decision§! §H$decision_shroudwalker_teacher$§! with the following effects:\n£amenities£ $MOD_PLANET_AMENITIES_MULT$: §G+5%§!\n$mod_planet_jobs_unity_produces_mult$: §G+10%§!\n$mod_planet_telepaths_unity_produces_add$: §G+3§!"
 

@@ -7,7 +7,7 @@
  origin_progenitor_hive:0 "Progenitor Hive"
  origin_progenitor_hive_desc:1 "This hive has gained evolutionary advantage through semi-independent leaders. These "Offspring" greatly improve overall proficiency, though they require constant oversight."
  START_SCREEN_PROGENITOR_HIVE:1 "In the beginning, the Progenitor was.\n\nLife on [Root.GetHomeWorldName] was harsh and competitive, yet still the mighty Progenitor expanded its territory. Running such a vast dominion soon grew untenable, so the Progenitor created the first Offspring. In time, it became apparent that the Offspring could not manage alone. In turn, they produced menial drones to assist in taming our home.\n\nAs we took our first tentative steps across the [capital_scope.System.GetName] system, our Progenitor sequestered itself into a specialized nest. Endowed with greater, streamlined control, we are now ready to spread our Progenitor's influence to all the stars of the galaxy - for the Progenitor was, is, and will be. The [Root.GetName] will see it so."
- origin_tooltip_progenitor_hive_effects:3 "- Employ special §HOffspring Leaders§! who gain XP passively.\n- Replaces £building£ §HSpawning Pools§! with £building£ §HOffspring Nests§!, granting a powerful defensive army and improvements to menial drones.\n- Allows the building of £building£ §HOffspring Nests§! on Subject worlds.\n- Can release §HSectors§! as §HSubjects§!.\n- Construct §HOffspring Ships§! to improve the combat effectiveness of other nearby ships. Fleets without an Offspring Ship suffer from the following effects:\n\n"
+ origin_tooltip_progenitor_hive_effects:3 "- Employ special §HOffspring Leaders§! who gain XP passively.\n- Replaces £building£ §HSpawning Pools§! with £building£ §HOffspring Nests§!, granting a powerful defensive army and improvements to menial drones.\n- Allows the building of £building£ §HOffspring Nests§! on Subject worlds.\n- Can release §HSectors§! as §HSubjects§!, if they do not have the §H$civic_hive_devouring_swarm$§! Civic.\n- Construct §HOffspring Ships§! to improve the combat effectiveness of other nearby ships. Fleets without an Offspring Ship suffer from the following effects:\n\n"
  #Progenitor deposits, armies and decisions
  progenitor_defense:0 "Hive Progenitor"
  progenitor_defense_plural:0 "$progenitor_defense$"
@@ -120,15 +120,15 @@
  sm_offspring_outlook_desc:0 "A starbase module allowing an Offspring to oversee and administrate ongoing battles within the system.\n"
  STARBASE_OFFSPRING_OUTLOOK:0 "$sm_offspring_outlook$"
 
- mod_shipsize_offspring_corvette_build_speed_mult: "Offspring $mod_shipsize_corvette_build_speed_mult$"
- mod_shipsize_offspring_destroyer_build_speed_mult: "Offspring $mod_shipsize_destroyer_build_speed_mult$"
- mod_shipsize_offspring_cruiser_build_speed_mult: "Offspring $mod_shipsize_cruiser_build_speed_mult$"
- mod_shipsize_offspring_battleship_build_speed_mult: "Offspring $mod_shipsize_battleship_build_speed_mult$"
+ mod_shipsize_offspring_corvette_build_speed_mult:0 "Offspring $mod_shipsize_corvette_build_speed_mult$"
+ mod_shipsize_offspring_destroyer_build_speed_mult:0 "Offspring $mod_shipsize_destroyer_build_speed_mult$"
+ mod_shipsize_offspring_cruiser_build_speed_mult:0 "Offspring $mod_shipsize_cruiser_build_speed_mult$"
+ mod_shipsize_offspring_battleship_build_speed_mult:0 "Offspring $mod_shipsize_battleship_build_speed_mult$"
 
- mod_shipsize_offspring_corvette_hull_add: "Offspring $mod_shipsize_corvette_hull_add$"
- mod_shipsize_offspring_destroyer_hull_add: "Offspring $mod_shipsize_destroyer_hull_add$"
- mod_shipsize_offspring_cruiser_hull_add: "Offspring $mod_shipsize_cruiser_hull_add$"
- mod_shipsize_offspring_battleship_hull_add: "Offspring $mod_shipsize_battleship_hull_add$"
+ mod_shipsize_offspring_corvette_hull_add:0 "Offspring $mod_shipsize_corvette_hull_add$"
+ mod_shipsize_offspring_destroyer_hull_add:0 "Offspring $mod_shipsize_destroyer_hull_add$"
+ mod_shipsize_offspring_cruiser_hull_add:0 "Offspring $mod_shipsize_cruiser_hull_add$"
+ mod_shipsize_offspring_battleship_hull_add:0 "Offspring $mod_shipsize_battleship_hull_add$"
 
  ##########################
  # Subterranean origin
@@ -136,25 +136,16 @@
 
  origin_subterranean:0 "Subterranean"
  origin_subterranean_desc:0 "Whether avoiding predators or seeking easier access to resources, this species has evolved to live under the surface of their homeworld, leading to a more environmentally versatile society."
- origin_tooltip_subterranean_effects:1 "- Start with the §YCave Dweller§! trait\n- Your species constructs cities underground, leading to a §R+10%§! increase in Building and District costs, and §R-10%§! build speed\n- Colonies suffer §G-75%§! damage from orbital bombardment\n- §HMining Districts§! are uncapped, add §G+2§! £housing£ §Y$MOD_PLANET_HOUSING_ADD$§! and every §Y3§! §HMining Districts§! grant §G1§! £building£ §YBuilding Slot§! each"
+ origin_tooltip_subterranean_effects:2 "- Start with the §YCave Dweller§! trait\n- §HMining Districts§! are uncapped, add §G+2§! £housing£ §Y$MOD_PLANET_HOUSING_ADD$§! and every §Y3§! §HMining Districts§! grant §G1§! £building£ §YBuilding Slot§! each\n- Your species constructs cities underground, giving the following benefits:\n\n"
  trait_cave_dweller:0 "Cave Dweller"
  trait_cave_dweller_desc:0 "§LThis species thrives under the surface of any planet they can find, at the cost of population growth.§!"
- trait_cave_dweller_tooltip: "$MOD_BIO_POP_GROWTH_SPEED$: §R-20%§!"
+ trait_cave_dweller_tooltip:0 "$MOD_BIO_POP_GROWTH_SPEED$: §R-20%§!"
 
  START_SCREEN_SUBTERRANEAN:1 "While other beings on [GetHomeWorldName] would spend their nights out in the wilds, our ancestors soon learned the wisdom of underground dwellings, sheltered from harsh light and climates.\n\n$START_SCREEN_SUBTERRANEAN_END$"
  START_SCREEN_SUBTERRANEAN_PLANT:1 "Life on [GetHomeWorldName] has taken some radically different routes. Unlike the other lifeforms with whom we share this world, deriving their energy from sunlight: we take our nutrients from deep within the murky ground, as our [GetSpeciesAdj] ancestors did.\n\n$START_SCREEN_SUBTERRANEAN_END$"
  START_SCREEN_SUBTERRANEAN_LITHOID:0 "We are born from the very depths of [GetHomeWorldName]. Away from the harsh glare of starlight, our evolutionary path diverged from that of our immobile cousins, who remain like sentinels above and around us. Unlike them, we gained the ability to move, think, and form a civilization.\n\n$START_SCREEN_SUBTERRANEAN_END$"
  START_SCREEN_SUBTERRANEAN_END:1 "Easy access to the minerals below ground allowed our [GetSpeciesAdj] predecessors to industrialize, unifying our species and furthering our cavernous civilization. There were numerous attempts to return to the surface, but each time it proved brutal and unforgiving. So we remained below, establishing our dominance from within our planet's very foundations.\n\nNow, with the discovery of the Hyperdrive, we make our boldest attempt yet to reach out to the stars - and like our ancestors before us, we shall carve out homes from this darkness."
  SUBTERRANEAN:0 "Subterranean"
-
- d_subterranean_mines:0 "Subterranean Mines"
- d_subterranean_mines_desc:0 "This civilization lives beneath the surface of their planet, giving them greater access to the world's minerals."
-
- subterranean_nation_modifier:0 "Subterranean Nation"
- subterranean_nation_modifier_desc:0 ""
-
- leader_trait_subterranean_archaeology:0 "Subterranean Expertise"
- leader_trait_subterranean_archaeology_desc:0 "This leader is well accustomed to digging underground."
 
  ##########################
  # Teachers of the Shroud #
@@ -246,6 +237,11 @@
  # Wars
  NAME_Imperial_War:0 "Imperial Civil War"
 
+ # Megastructure
+ gateway_derelict:0 "Derelict Gateway"
+ gateway_derelict_DESC:0 "$gateway_final_DESC$"
+ gateway_derelict_MEGASTRUCTURE_DETAILS:0 "$gateway_final_MEGASTRUCTURE_DETAILS$"
+
  # Events
  origin.5703.desc:0 "Welcome, dear newfound allies!\n\nWe felt it was only right to contact you now that you have chosen to partake in our... alliance. It pleases us you chose to see reason, rather than forcing our hand towards violence."
  origin.5703.a:0 "You didn't give us much of a choice, did you?"
@@ -290,10 +286,12 @@
  origin.5725.a:0 "A starfish rots from the head down."
 
  origin.5735.title:0 "A Broken Empire"
- origin.5735.desc:0 "With no great leader to hold them together, the [previous_overlord.GetName] have dissolved into several parts, with each claiming their right to rule over the old empire. Without the strength or legitimacy of old however, their hold over all their vassals has crumbled to nothing.\n\nWith the disparate parts of the old empire fighting over the throne of the [previous_overlord.GetName], their old subjects are trying to find their way in their now independent future."
+ origin.5735.desc:1 "With no great leader to hold them together, the [previous_overlord.GetName] has dissolved into several parts, with each claiming their right to rule over the old empire. Without the strength or legitimacy of old however, their hold over all their vassals has crumbled to nothing.\n\nWith the disparate parts of the old empire fighting over the throne of the [previous_overlord.GetName], their old subjects are now free to do as they wish."
  origin.5735.a:0 "Free once more, then."
  origin.5735.b:0 "It is time for a new leader to take charge."
  origin.5735.b.tt:0 "Gain a §YSubjugation§! Casus Belli against §Y[previous_overlord.GetName]§! and all its old vassals for §Y30 years§!"
+ origin.5735.c:0 "We are loyal to the throne - no matter what."
+ origin.5735.c.tt:0 "Remain a loyal subject of the §Y[previous_overlord.GetName]§!."
 
  # AI Vassals looking for new overlord events
  origin.5745.title:0 "Technocratic Protection"
@@ -521,6 +519,8 @@
  opinion_imperial_vassal_ai_opinion:0 "Recent Peer"
  opinion_imperial_vassal_new_overlord:0 "New Protector"
  opinion_imperial_vassal_refused_overlordship:0 "Refused Overlordship"
+ opinion_imperial_vassal_grateful_response_overlord_opinion:0 "Grateful"
+ opinion_imperial_vassal_harsh_response_overlord_opinion:0 "Disappointed"
 
  ####################
  # Assorted Tooltips

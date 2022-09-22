@@ -64,7 +64,9 @@
  MOD_COUNTRY_RESETTLEMENT_COST_MULT:1 "强制移居成本"
  MOD_POP_CONSUMER_GOODS_MULT:0 "消费品开销"
  MOD_POP_CONSUMER_GOODS_ADD:0 "消费品使用"
- MOD_POP_DEFENSE_ARMIES_ADD:0 "行星防御军队"
+ MOD_POP_DEFENSE_ARMIES_ADD:1 "Planetary Defense Armies per Pop"
+#MOD_POP_DEFENSE_ARMIES_ADD:1 "每人口产生的星球防御部队"
+#MOD_POP_DEFENSE_ARMIES_ADD:1 "行星防御军队"
  MOD_POP_HOUSING_USAGE_MULT:0 "人口住房使用"
  MOD_POP_HOUSING_USAGE_ADD:0 "$MOD_POP_HOUSING_USAGE_MULT$"
  MOD_POP_HOUSING_USAGE_BASE:0 "$MOD_POP_HOUSING_USAGE_MULT$"
@@ -101,6 +103,8 @@
  MOD_COUNTRY_SUBJECT_INTEGRATION_SPEED_ADD:0 "整合附属国速度"
  MOD_COUNTRY_INTEGRATION_COOLDOWN_MULT:0 "整合附属国冷却时间"
  MOD_COUNTRY_VASSAL_NAVAL_CAPACITY_CONTRIBUTION_MULT:0 "附属国贡献的军舰容量"
+ MOD_COUNTRY_NAVAL_CAPACITY_CONTRIBUTION_FROM_SUBJECTS_MULT:0 "附属国海军容量贡献"
+ MOD_COUNTRY_NAVAL_CAPACITY_CONTRIBUTION_TO_OVERLORD_MULT:0 "贡献给宗主的海军容量"
  MOD_COUNTRY_SUBJECT_TRIBUTE_MULT:0 "附属国赋税"
  MOD_COUNTRY_SUBJECT_TECHNOLOGY_SHARING_MULT:0 "技术共享"
  MOD_COUNTRY_EXPANSION_DISTANCE_MULT:0 "扩张距离"
@@ -119,7 +123,10 @@
  MOD_FIRST_CONTACT_SPEED_MULT:0 "第一次接触发现速度"
  MOD_FIRST_CONTACT_CLUES_ADD:0 "第一次接触技能"
  MOD_FIRST_CONTACT_DEFENSE_ADD:0 "第一次接触目标难度"
- MOD_COUNTER_INTEL_GAIN_SPEED:0 "影响其它帝国获取你方情报的速度"
+ MOD_COUNTER_INTEL_GAIN_SPEED:1 "Speed of Other Empires' Intel Gain on You"
+#MOD_COUNTER_INTEL_GAIN_SPEED:1 "其他帝国对你的情报的获取速度"
+#MOD_COUNTER_INTEL_GAIN_SPEED:1 "影响其它帝国获取你方情报的速度"
+ MOD_COUNTRY_SCAVENGE_DEBRIS_MULT:0 "打捞残骸获得的资源"
  MOD_ADD_BASE_COUNTRY_INTEL:0 "基础情报等级"
 
  #Pop
@@ -402,6 +409,7 @@
  mod_planet_buildings_energy_upkeep_mult:0 "建筑£energy£能量币维护费"
  mod_planet_districts_cost_mult:0 "地区成本"
  mod_planet_districts_upkeep_mult:0 "地区维护费"
+ mod_planet_districts_energy_upkeep_mult:0 "区划能量维护费"
  mod_planet_districts_cities_upkeep_mult:0 "都市区维护费"
  mod_planet_districts_mines_cost_mult:0 "矿业区成本"
  mod_planet_districts_farms_cost_mult:0 "农业区成本"
@@ -553,6 +561,7 @@
  rare_crystals_deficit:0 "$rare_crystals$短缺"
  exotic_gases_deficit:0 "$exotic_gases$短缺"
  unity_deficit:0 "$unity$短缺"
+ dark_matter_deficit:0 "$sr_dark_matter$短缺"
 
  ####################################
  # Resource Modifiers
@@ -751,6 +760,7 @@
  mod_weapon_type_strike_craft_weapon_damage_mult:0 "舰载机伤害"
  mod_weapon_type_strike_craft_weapon_fire_rate_mult:0 "舰载机攻击速度"
  mod_weapon_type_strike_craft_speed_mult:0 "舰载机速度"
+ mod_weapon_swarm_weapon_fire_rate_mult:0 "索林原虫虫群武器攻击速度"
 
  #vultaum_asteroid_category_research_speed_mult: "Anomaly Research Speed (Precursor - ADD CATEGORIES PROPER)"
  #vultaum_asteroid_category_research_fail_risk_mult: "Anomaly Fail Risk (Precursor - ADD CATEGORIES PROPER)"
@@ -1110,6 +1120,7 @@
  opinion_defensive_pact:0 "防御条约"
  opinion_broke_alliance:0 "终止联盟"
  opinion_broke_defensive_pact:0 "违反防御条约"
+ opinion_broke_research_agreement:0 "撕毁科研协议"
  opinion_broke_non_aggression_pact:0 "撕毁互不侵犯条约"
  opinion_broke_commercial_pact:0 "撕毁商业合约"
  opinion_broke_migration_pact:0 "撕毁移民条约"
@@ -1214,6 +1225,7 @@
  triggered_authoritarian_opinion_barbaric_despoilers:0 "$civic_barbaric_despoilers$"
  triggered_pacifist_opinion_barbaric_despoilers:0 "$civic_barbaric_despoilers$"
  triggered_fe_opinion_barbaric_despoilers:0 "$civic_barbaric_despoilers$"
+ triggered_opinion_relic_omnicodex:0 "$r_omnicodex$"
 
  ####################################
  # Planet Modifiers
@@ -1385,6 +1397,12 @@
  terraforming_candidate:0 "环境改造候选星"
  terraforming_candidate_desc:0 "此行星虽然荒芜、缺乏生命，但是有冻结的水，可能曾经拥有繁荣的生态系统。有适合的技术，可将其改造成一个适合居住的世界。"
  terraforming_candidate_tooltip:0 "只要我们研究了£society£ §Y$tech_climate_restoration$§!科技，我们就能对这颗行星环境改造，将其转化为一个宜居星球。"
+ frozen_terraforming_candidate:0 "冰封环境改造候选"
+ frozen_terraforming_candidate_desc:0 "尽管寒冷到无法支持生命，但只要我们找到合适的方法，便可以利用该星球上冻结的水将其改造成一颗宜居星球。"
+ frozen_terraforming_candidate_tooltip:0 "如果我们选择了§Y$ap_hydrocentric$§!飞升天赋并研究了£society£§Y$tech_climate_restoration$§!科技，我们就可以将这颗行星改造成一颗宜居性星球。"
+ toxic_terraforming_candidate:0 "剧毒环境改造候选"
+ toxic_terraforming_candidate_desc:0 "尽管该星球的剧毒大气使其无法支持生命，但通过合适的手段可以将其分解成不那么致命的物质，使其逐渐变得宜居。"
+ toxic_terraforming_candidate_tooltip:0 "如果我们选择了§Y$ap_detox$§!飞升天赋，我们就可以将这颗行星改造成一颗宜居性星球。"
  ultra_rich:1 "世所罕见的极品矿藏"
  ultra_rich_desc:1 "此行星地壳中蕴藏的极品矿脉提供了一个令人惊叹的采矿良机。"
  mineral_poor:1 "劣质矿"

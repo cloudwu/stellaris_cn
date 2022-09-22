@@ -60,11 +60,14 @@
  enclave.205.desc.hostile:0 "啊，战争贩子回来了。\n\n你终于想清楚你这些毫无意义的行为是徒劳的了吗？这是一点小意思，谨表对你善意的回馈，我们[mercenary_enclave_country.GetName]愿意将这些分歧暂时搁置。让我们一起期待一个有利可图的未来。"
  enclave.205.desc.unfriendly:0 "我们不接待你。送客。"
  enclave.205.a:1 "我们打算§Y租借一支舰队§!。"
- enclave.205.tooltip.a:0 "另一个帝国已经准备好租借我们的舰队了。"
+ enclave.205.tooltip.a:1 "The [event_target:current_client.GetName] is already renting our fleet."
+#enclave.205.tooltip.a:1 "[event_target:current_client.GetName]正在租借我们的舰队。"
+#enclave.205.tooltip.a:1 "另一个帝国已经准备好租借我们的舰队了。"
  enclave.205.tooltip.b:0 "没有可供出租的舰队。"
  enclave.205.b:1 "我们打算§Y管理§!我们租借的舰队。"
  enclave.205.c:1 "我们想征募§Y雇佣驻防部队§!。"
  enclave.205.d:1 "我们想帮你们部署一支§Y规模更大的舰队§!。"
+ enclave.205.d.timeout:0 "这个太空城邦正在招募新的官员和船员。他们在§Y[event_target:mercenary_enclave_country.upgraded_station_timer]§!之前无法进一步部署后勤改善方案。"
  enclave.205.e:1 "我们正在寻找对付强大敌人的§Y战术洞察力§!。"
  enclave.205.f:1 "我们打算雇佣§Y地面部队§!。"
  enclave.205.g:1 "你们可以提供什么§Y后勤方案§!？"
@@ -136,6 +139,10 @@
  enclave.2035.name:0 "终止后勤支援协约"
  enclave.2035.desc:1 "亲爱的客户，\n\n我们向你提供的后勤支援服务已经到期，需要续约了。根据我们合约的条款：如果我们没有另外收到相关指示，你方将自动续约这项服务，并被收取相关费用。\n\n我们相信你对我们的服务很满意，也期待能和你在业务上展开更多的合作。"
  enclave.2035.a:0 "我们现在不需要这项服务。"
+ enclave.2060.name:0 "舰队合约到期"
+ enclave.2060.desc:0 "我们同[event_target:mercenary_enclave_country.GetName]的合约已经到期，他们的舰队即将离开。我们是否应该联络他们进行合同续约？"
+ enclave.2060.a:0 "这次就不了。"
+ enclave.2060.b:0 "是的，打开通信频道。"
 
  #Modifiers
  mercenary_fleet_size_upgrade_1:0 "佣兵舰队规模升级"
@@ -187,6 +194,8 @@
  salvager_overdrive_desc:0 "受益于打捞者友邦船员专心致志的努力，该帝国得以加速建造太空基地和殖民地。"
  salvager_insight:0 "打捞者洞见"
  salvager_insight_desc:0 "受益于打捞者城邦切合实际的专长，该帝国的科学家得以快速跟进工程中令人兴奋的新突破。"
+ salvage_overseer:0 "打捞督工"
+ salvage_overseer_desc:0 "一名来自打捞者城邦的经验丰富的打捞者，正在帮助这个帝国检视战场残骸，看有什么东西还能派上用场。"
 
  #Situations
  mercenary_dividends:0 "佣兵红利"
@@ -217,6 +226,8 @@
  enclave.305.a.desc:0 "很高兴与您相识！我谨代表[salvager_enclave_country.GetName]，欢迎您莅临鄙邦简陋的星际工坊。\n\n诶呀…我在哪儿都能认出龙骨上的那些东西——制作的很精致。我们有着跟踪银河中飞船设计的习惯，试着同当地风潮保持一致。不过我刚刚讲到哪儿…？\n\n啊，对了：欢迎您！请问我们要如何满足您打捞和回收的需求？"
  enclave.305.b.desc:0 "您好，您好！我谨代表[salvager_enclave_country.GetName]，欢迎您莅临鄙邦的维修场。不论船体、引擎、蓝图还是配件：我们都有存货。\n\n我可不是开玩笑——人们在老旧飞船里扔下的东西会让你大吃一惊的。最近我刚入[salvager_enclave_country.species.GetHandNamePlural]了一套完整的厨房单元，用黄金铸成的。爽到。\n\n扯远了，请问我们要如何满足您打捞和回收的需求？"
  enclave.305.c.desc:0 "向您致以敬意！我谨代表[salvager_enclave_country.GetName]，欢迎您莅临鄙邦的工坊和废品场。大批专职工程师已经就绪，准备好维修、重建或是拆建几乎任何他们可以用工具鼓捣的东西。您会发觉我们对贸易的激情可谓永无止境。\n\n请问今天我们要如何满足您打捞和回收的需求？"
+ enclave.305.desc.scavenger_first:0 "欢迎！我很乐意同一些打捞业的同行会面——要知道，星系这个地方对我们来说老寂寞了呢。\n\n你知道训练内容——我们将别人觉得没有任何用处的老旧部件收集到一起，然后赋予它们全新的生命。如果遇到任何用你的[Root.GetSpeciesHandNamePlural]搞不定的事情，放轻松，我们会过来接手的。\n\n那么，我们有什么能够为你的打捞和开荒事业提供便利的呢？"
+ enclave.305.desc.scavenger_followup:0 "向你问好！你是否对于运营一个帝国已经感到了厌烦？我可以加入我们的捡垃圾事业——完全没有那么多压力，你肯定可以玩得转的。"
  enclave.305.n.desc:0 "很高兴又见面了，我们这里可是忙的很。贵国最近的各种事务处理的还好吗？我敢说我们现在还是一如既往的喧闹。空闲的[salvager_enclave_country.species.GetHandNamePlural]在处理过时的殖民船这方面可是很有一套的。"
  enclave.305.o.desc:0 "您好！我们今天又该怎样满足你们的工程需求呢？\n\n呃，你们船身钢板上安装的玩意儿挺有意思，它们用起来效果如何？"
  enclave.305.p.desc:0 "欢迎回来！嘿，来看看那些流畅的，全新的驱动签名吧！我真诚希望我们能对您维护舰船的方式做一些微小的贡献；它们会为此感谢您的。\n\n那么我们如何为您效劳？"
@@ -229,6 +240,7 @@
  enclave.305.d:0 "你们能在§Y建造§!方面援助我们吗？"
  enclave.305.e:0 "我们想要打捞一些§Y残骸§!。"
  enclave.305.f:1 "你们能援助我们的§Y工程研究§!吗？"
+ enclave.305.g:0 "我们希望雇佣一名§Y打捞督工§!。"
 
  enclave.310.desc:1 "太棒了！真的很高兴能能从您的手中接过这份差事。\n\n根据我们的扫描仪，您有下列舰队处于可选范围之内。在附件中可以查看估价，现在请您做出选择吧。\n\n$enclave.310.instructions$"
  enclave.310.organic.desc:0 "棒极了！那将是我们的荣幸……星辰在上，那是什么呀？！你居然称那是一艘舰船？我是说，我能够找到它是怎么……哇哦，它看上去可真是凶巴巴的。拜托了，千万不要冲动行事！我们能够从你那里接手活生生的“舰船”，但恐怕§H我们必须收取清洁费用§!。\n\n根据我们的扫描，你的以下舰船位于范围之内。你能在附件里找到我们的预估；现在由你来做决定了！\n\n$enclave.310.instructions$"
@@ -269,6 +281,8 @@
  enclave.335.desc:0 "当然！我们的技术人员一直在努力工作，制定雄心勃勃的新工作计划，我们很荣幸能为您提供限时的生产力增幅。\n\n我们将把您的维修工坊拨到高速档，替您§Y所有太空基地§!上的工程回收再利用零部件！我们甚至有一些锦囊妙计来帮助您生产舰船。这应该是有用的！大概~\n\n请记住，此类工作是有代价的；我们无法经常提供帮助。"
  enclave.335.a:0 "$enclave.310.a$"
 
+ enclave.336.desc:0 "再次向你致敬！我很高兴地宣布，我们已经准备好卯足力气将事业提升到一个新的高度，让打捞工作真正务有所值。\n\n你有什么想法？准备好在§Y你所有的恒星基地§!加快舰船建造了吗？"
+
  enclave.340.a.desc:0 "真是相当庄严的召唤啊。听到舰队在战斗中被击沉，我们的痛苦超乎您的想象，但太空中的生活是残酷的，有些事情不可避免。\n\n……请原谅我的遐思。毫无疑问，那是我们能提供的服务。\n\n$enclave.340.main.desc$"
  enclave.340.b.desc:0 "唉。所以，严酷的真空已经吞噬了更多船只……当然，我们很乐意从您所说的悲惨战场上回收一些积极的东西。\n\n$enclave.340.main.desc$"
  enclave.340.main.desc:0 "如果您愿意授予我们§Y打捞权§!并为我们提供残骸场的§Y坐标§!，我们将会在合适的时候回报您。"
@@ -282,6 +296,13 @@
 
  enclave.345.desc:1 "这将是我们的荣幸！清闲的[salvager_enclave_country.species.GetHandNamePlural]头脑灵活，这对我们来说意义非凡！我们将非常乐意伸出援手并与我们的§Y老顾客§!分享一些实用的技巧，毕竟我们的生意可是受您照顾有加。\n\n我们也会感谢您用于支持我们简陋的太空基地的任何捐赠！老旧的船体可以多次改造，不过有时候，崭新熔炼的舱壁的可靠性无可匹敌。"
  enclave.345.a:0 "$enclave.310.a$"
+
+ enclave.346.desc:0 "你好，朋友！我们多年以来的合作研究一直进行得不错。我听说的是，我们的几位工程师采纳了一些来自你方的建议，同时你也采纳了一些我们得建议！\n\n然而，当初达成的合约时间已经到期了，我们也希望让这些思维活跃的学徒们重新回到我们家里面做些事情……也就是说，除非你愿意再多给我们一点补偿，让他们再留一阵子？"
+
+ enclave.350.desc:0 "作为我们§Y长期客源§!的一员，我们自然很乐意派遣一名专家来督导你的打捞工作，只需要付很少的价钱。一开工就能拖到一大串新近烧焦的残骸，这个作为欢迎仪式想必很合适。"
+ enclave.350.desc.not_available:0 "我们为自己的§Y长期客源§!提供服务，会派遣一名督工协助改进你的打捞工作，只需要付很少的价钱。不幸的是，我们现在没有可供派遣的督工——他们现在简直是供不应求，恐怕我们一些其他的客户享有优先权。"
+ enclave.350.a:0 "$enclave.310.a$"
+ enclave.352.desc:0 "致敬！我们向你方派去的督工已经回到我们这里，其服务任期已经完成。然而，如果你仍然需要我们的服务，我们很乐意再派遣一名替补。"
 
  enclave.360.name:0 "回收所得"
  enclave.360.intro:0 "一列发自§Y[salvager_enclave_country.GetName]§!的货运驳船刚刚到达，装载着一批回收的资源。"
@@ -298,7 +319,7 @@
  enclave.365.tt:0 "我们会得到："
  enclave.365.d:0 "呼叫他们！只要他们想要残骸，我们要多少给多少。"
 
- enclave.375:0 "打捞者城邦被毁"
+ enclave.375.name:0 "打捞者城邦被毁"
  enclave.375.desc:0 "我们在[salvager_system.GetName]星系的进攻是一次反响斐然的成功。[FROM.GetName]被摧毁，所剩无几的幸存者逃向了深空。由于他们的设施被毁于一旦，他们那可怜巴巴的服务也成为了过去式。银河里再也没有这帮子人的踪影了。"
  enclave.380.desc:0 "我们收到报告，[salvager_system.GetName]星系的[FROM.GetName]太空城邦被毁。袭击者来去无影，一瞬间就把打捞者的设施变成了一堆废墟。所剩无几的幸存者四散逃离，看来，现在整个银河要学会习惯于没有他们提供服务的新生活了。"
 
@@ -351,8 +372,8 @@
  enclave.420.b:0 "我们想要一个§Y天幕信标§!。"
  shroud_beacon_info:1 "允许在己方某个太空基地建造一个§H天幕信标§!。一旦完工，一个§H天幕隧道§!会在星系中生成，并提供一个通往§Y[shroudwalker_enclave_system.GetName]星系§!的双向隧道。我们只能生成一个天幕隧道；因此请谨慎选择星系的位置。"
  enclave.425.desc:1 "一阵低语传达至我们的意识：天幕的道路缥缈不定，变换万千。愿这个信标点亮你前行的道路。"
- 
- enclave.435:0 "天幕行者城邦被毁"
+
+ enclave.435.name:0 "虚境行者城邦被毁"
  enclave.435.desc:0 "[shroudwalker_system.GetName]星系的大胜利！我们的军队快刀斩乱麻地解决了那些所谓的[FROM.GetName]秘术师。尽管成天对知识和力量夸夸其谈，他们对天幕的愚蠢奉献还是没能预先料知到我们的攻击。事实上，我们的军队很轻易地就破坏了设施的机械化防御。然而，在进入之后，他们发现整个太空城邦人去楼空，只有一个孤独的侍僧在一个偏僻的房室里面进行冥想。剩下的人去了哪里，我们无从得知，但是整个银河这下摆脱了这种空洞的教条。"
  enclave.440.desc:0 "传达的报告主要围绕着[shroudwalker_system.GetName]星系发生的[FROM.GetName]的毁灭。侵略者在这次行动中十分迅速，将天幕行者的设施化为一片断壁残垣。很难相信这些秘术大师没有预料到自身的消亡。还是说，这场悲剧仅仅只是某个更庞大计划的一部分？谁又能说得准呢？不过，没有他们的效劳，未来仍然充满重重迷雾。"
 
@@ -722,11 +743,11 @@
  enclave.5550.a:0 "立刻给我滚出去！"
  enclave.5550.b:0 "令人作呕，我们必须摧毁你们。"
  enclave.5551.desc:0 "“……真是遗憾。但这一切还有机会。我们能够认识到，现在我们已经从梦境之地解放出来这一点。殖民者，和你们不一样的我们，不再受[shattered_frontier_planet.GetName]的梦束缚了……\n\n我们很疑惑，被许多问题压的喘不过气，但我们知道去哪里寻找答案。再会了，虚弱意志的散播者。”"
- 
+
  enclave.5557.name:0 "障幕重重"
  enclave.5557.desc:0 "时间之流泥泞不堪，无法穿透。不幸的是，预知仪式没能穿过天幕的帷幕。根据相关约定，在扣除一小部分辛劳费时候，我们会返还一部分花费。"
  enclave.5557.a:0 "很好。"
- 
+
  enclave.5566.name:0 "刚愎的朝圣者"
  enclave.5566.desc:0 "敏感器探测到了数艘运输舰船的接近。这些舰船磨损严重、破败不堪，看上去就像是用废旧零件拼接在一起的一样。船队旗舰的指挥官向我们发送了招呼，但基于他们当前科技的状况，恐怕只能进行语音通讯。"
  enclave.5565.desc:0 "愿神赐福于你。我是这支船队的受命领袖。我们请求允许安全地通过你的宇域，并希望能够获得一些捐赠的食物。我们正在朝圣的路途中，在经年累月的太空生活之后，我的人民们变得十分孱弱。"
@@ -742,7 +763,7 @@
  enclave.5575.name:0 "不圣的结局"
  enclave.5575.desc:0 "那支曾乞求我们提供援助的朝圣者船队结局十分惨烈。重构的遥测信号显示，他们进行了某种形式的实验，很有可能跟灵能有关。由于一次能量激增，他们旗舰引擎核心的遏止立场发生了破裂。接踵而至的爆炸摧毁了整个船队，并在[wayward_pilgrims_system.GetName]星系释放了一场威力强大的灵能风暴。所有预估都表明，此等规模的风暴需要数年才能消散。\n\n不管这群神棍打算在这里做什么，很显然他们失败了，而我们还得在这里帮他们擦屁股。"
  enclave.5575.a:0 "无法忍受。"
- 
+
  wayward_pilgrim_00:0 "幸福的朝圣者"
  wayward_pilgrim_01:0 "不幸福的朝圣者"
  wayward_pilgrim_02:0 "满意的朝圣者"
@@ -751,7 +772,7 @@
  wayward_pilgrim_05:0 "被拒的朝圣者"
  wayward_pilgrim_06:0 "祝圣之国的荣光"
  wayward_pilgrim_07:0 "刚愎风暴"
- 
+
  enclave.6000.name:0 "奇异显现"
  enclave.6000.a.desc:0 "[Root.GetName]的奇怪发育：穿过天幕隧道后，舰队指挥官经历了剧烈的变化。虽然其性格和记忆没有受到影响，但身体形态已经发生了剧烈的变化。舰队指挥官现在拥有了一个完全陌生物种的外貌（和内部器官）。"
  enclave.6000.b.desc:0 "[Root.GetName]令人担忧的发育：穿过天幕隧道后，舰队指挥官经历了一个令人恐慌的转变。虽然其性格和记忆没有受到影响，但身体形态已经发生了剧烈的变化。舰队指挥官现在拥有了一个完全陌生物种的外貌（和内部器官）。"
@@ -771,6 +792,42 @@
  enclave.6010.a.desc:0 "[Root.GetName]的指挥官所经历的那种心理上的改变现在显现了出来：在穿过天幕甬道一个月之后，此人的指挥风格发生了显著的变化。现在我们可以说，这股经历现在演变发展成了一个新的特质。"
  enclave.6010.b.desc:0 "[Root.GetName]的指挥官所经历的那种神经上的改变现在影响到了集体意识：在穿过天幕甬道一个月之后，子个体的排列模式发生了显著的变化。这股经历现在演变发展成了一个新的特质。"
  enclave.6010.c.desc:0 "[Root.GetName]的指挥官所经历的那种神经上的改变现在显现了出来：在穿过天幕甬道一个月之后，子个体的人格矩阵发生了显著的变化。这股经历现在演变发展成了一个新的特质。"
+ shroud_touched_intro:0 "虚境对穿梭其中的旅客造成的影响可不小；"
+ #Non Gestalt Traits
+ leader_trait_admiral_mind_wipe_01:0 "碰触虚境的舰队司令"
+ leader_trait_admiral_mind_wipe_01_desc:0 "$shroud_touched_intro$这名舰队司令的脑海里盘旋着无数用以提升舰船性能的新点子。"
+ leader_trait_admiral_mind_wipe_02:0 "碰触虚境的舰队司令"
+ leader_trait_admiral_mind_wipe_02_desc:0 "$shroud_touched_intro$这名舰队司令的脑海里盘旋着无数用以强化武器系统的新点子。"
+ leader_trait_scientist_mind_wipe_01:0 "碰触虚境的科学家"
+ leader_trait_scientist_mind_wipe_01_desc:0 "$shroud_touched_intro$这名科学家的脑海里盘旋着无数用以提高研究效率的新点子。"
+ leader_trait_scientist_mind_wipe_02:0 "碰触虚境的科学家"
+ leader_trait_scientist_mind_wipe_02_desc:0 "$shroud_touched_intro$这名科学家的脑海里盘旋着无数用以协助考古研究的新点子。"
+ leader_trait_general_mind_wipe_01:0 "碰触虚境的陆军将领"
+ leader_trait_general_mind_wipe_01_desc:0 "$shroud_touched_intro$这名陆军将领的脑海里盘旋着无数用以提升陆军部队效能的新点子，。"
+ leader_trait_general_mind_wipe_02:0 "碰触虚境的陆军将领"
+ leader_trait_general_mind_wipe_02_desc:0 "$shroud_touched_intro$这名陆军将领的脑海里盘旋着无数用以提升陆军部队的战斗表现的新点子。"
+ leader_trait_ruler_mind_wipe_01:0 "碰触虚境的统治者"
+ leader_trait_ruler_mind_wipe_01_desc:0 "$shroud_touched_intro$这名统治者的脑海里盘旋着无数用以协助工程建设的新点子。"
+ leader_trait_ruler_mind_wipe_02:0 "碰触虚境的统治者"
+ leader_trait_ruler_mind_wipe_02_desc:0 "$shroud_touched_intro$这名统治者的脑海里盘旋着无数用以提升舰队性能的新点子。"
+
+ #Gestalt Traits
+ gestalt_trait_admiral_mind_wipe_01:0 "碰触虚境的海军子个体"
+ gestalt_trait_admiral_mind_wipe_01_desc:0 "$shroud_touched_intro$这个子个体现在可以增强舰船的性能。"
+ gestalt_trait_admiral_mind_wipe_02:0 "碰触虚境的海军子个体"
+ gestalt_trait_admiral_mind_wipe_02_desc:0 "$shroud_touched_intro$这个子个体现在可以强化武器系统。"
+ gestalt_trait_scientist_mind_wipe_01:0 "碰触虚境的研究子个体"
+ gestalt_trait_scientist_mind_wipe_01_desc:0 "$shroud_touched_intro$这个子个体现在可以实现关键科研技术的突破。"
+ gestalt_trait_scientist_mind_wipe_02:0 "碰触虚境的研究子个体"
+ gestalt_trait_scientist_mind_wipe_02_desc:0 "$shroud_touched_intro$这个子个体现在可以增强考古研究。"
+ gestalt_trait_general_mind_wipe_01:0 "碰触虚境的攻击子个体"
+ gestalt_trait_general_mind_wipe_01_desc:0 "$shroud_touched_intro$这个子个体通往我们陆军部队的上行链路得到了增强。"
+ gestalt_trait_general_mind_wipe_02:0 "碰触虚境的攻击子个体"
+ gestalt_trait_general_mind_wipe_02_desc:0 "$shroud_touched_intro$这个子个体通往我们陆军部队的上行链路得到了改善。"
+ gestalt_trait_ruler_mind_wipe_01:0 "碰触虚境的指挥子个体"
+ gestalt_trait_ruler_mind_wipe_01_desc:0 "$shroud_touched_intro$这个子个体现在可以增强我们的建造技术。"
+ gestalt_trait_ruler_mind_wipe_02:0 "碰触虚境的指挥子个体"
+ gestalt_trait_ruler_mind_wipe_02_desc:0 "$shroud_touched_intro$这个子个体现在能够提升舰队的性能。"
 
  enclave.6015.name:0 "帷幕落下"
  enclave.6015.desc:0 "随着天幕信标的下线，我们失去了进入天幕甬道网络的通行权。除非信标得以替换，否则我们的舰队不能利用网络。"
@@ -836,10 +893,14 @@
  shroudwalker_teacher_already_bought:0 "§R我们已经为天幕行者导师的效力付了钱。§!"
  shroudwalker_teacher_already_exists:0 "§R这个行星已经有一位天幕行者导师在效力。§!"
 
- enclave.7100.desc:0 "掌控天幕是一次长达10000次生死的旅途；哪怕是我们最天赋异禀的导师也只敢声称自己对天幕的神秘有一些片面的了解。即使如此，他们的智慧也是无价之宝。如果你有所求，我们可以排遣一名导师为你指点迷津。"
+ enclave.7100.desc:1 "Mastery of the Shroud is a journey of 10,000 lifetimes; even our most gifted teachers can claim only partial knowledge of its mysteries. Nevertheless, their wisdom is invaluable. Should you wish it, we will dispatch one to guide your course."
+#enclave.7100.desc:1 "掌控虚境是一次长达10000次生死的旅途；哪怕是我们最天赋异禀的导师也只敢声称自己对虚境的神秘有一些片面的了解。即使如此，他们的智慧也是无价之宝。如果你有所求，我们可以排遣一名导师为你指点迷津。"
+#enclave.7100.desc:1 "掌控天幕是一次长达10000次生死的旅途；哪怕是我们最天赋异禀的导师也只敢声称自己对天幕的神秘有一些片面的了解。即使如此，他们的智慧也是无价之宝。如果你有所求，我们可以排遣一名导师为你指点迷津。"
  enclave.7100.a:0 "我们希望学习。"
 
- enclave.7105.desc:0 "学海无涯苦作舟；这便是最高级的智慧。我们会给你送去一名导师。好好学习，你必将有所收获。"
+ enclave.7105.desc:1 "To know that there is always more to know: this is the highest wisdom. A teacher will be sent to you. Learn well, and you will surely reap the rewards."
+#enclave.7105.desc:1 "学海无涯苦作舟：这便是最高级的智慧。我们会给你送去一名导师。好好学习，你必将有所收获。"
+#enclave.7105.desc:1 "学海无涯苦作舟；这便是最高级的智慧。我们会给你送去一名导师。好好学习，你必将有所收获。"
 
  decision_shroudwalker_teacher:0 "天幕行者导师"
  decision_shroudwalker_teacher_desc:0 "一名[shroudwalker_enclave_country.GetName]的专家正位于该行星，指导当地人天幕之道。"
@@ -854,5 +915,4 @@
  shroud_beacon_active_tooltip:0 "[Root.GetName]拥有一个启用的§Y天幕信标§!。"
 
  shroudwalker_teacher_explanation:1 "\n解锁§Y行星决议§!§H$decision_shroudwalker_teacher$§!带来下列效果：\n£amenities£ $MOD_PLANET_AMENITIES_MULT$：§G+5%§!\n$mod_planet_jobs_unity_produces_mult$：§G+10%§!\n$mod_planet_telepaths_unity_produces_add$：§G+3§!"
-
 

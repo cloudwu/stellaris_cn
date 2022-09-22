@@ -25,6 +25,7 @@
  MESSAGE_DESC_FOR_PLANET_KILLER_GODRAY:0 "接受了神圣信仰的审判"
  MESSAGE_DESC_FOR_PLANET_KILLER_NANOBOTS:0 "被纳米机器人植入改造了"
  MESSAGE_DESC_FOR_PLANET_KILLER_DELUGE:0 "被彻底淹没"
+ MESSAGE_DESC_FOR_PLANET_KILLER_TOXIFIER:0 "被毒化"
 
  is_habitable_non_artificial:0 "§R$TRIGGER_FAIL$目标必须是一个宜居的、非人工星球§!"
  is_not_oceanic:0 "§R$TRIGGER_FAIL$目标已经是§Y$pc_ocean$§!了§!"
@@ -40,6 +41,8 @@
  requires_purge_allowed:0 "§R$TRIGGER_FAIL$需要§Y$purge_allowed$§!政策，没有§Y$trait_aquatic$§!特质的人口将会死亡§!"
  will_purge_non_aquatic_pops:0 "§R没有§Y$trait_aquatic$§!的人口将会死亡§!"
  is_not_hostile_cracker:0 "目标属于敌对§H帝国§!"
+ is_not_owned_or_claimed:0 "目标位于未宣称区域"
+ is_uninhabited_within_borders:0 "目标未被殖民且位于[From.Owner.GetName]境内"
  not_barren_molten_frozen_toxic_test_fire:2 "目标是§Y宜居§!、§Y$pc_barren$§!、§Y$pc_molten$§!、§Y$pc_frozen$§!或§Y$pc_toxic$§!试射目标"
  not_owned_test_fire:0 "目标是§Y我方殖民地§!试射目标"
  primitives_not_in_borders:0 "§R$TRIGGER_FAIL$原始文明目标不在我方境内§!"
@@ -65,7 +68,7 @@
  tech_pk_godray_desc:1 "一种增幅某些灵能波长的神秘催化剂，能诱导有机脑产生幻觉（神迹），并严重干扰（脑死亡）电子脑。"
  tech_pk_nanobots:0 "大气层纳米传播"
  tech_pk_nanobots_desc:1 "$PLANET_KILLER_NANOBOTS_DESC$"
- 
+
  apoc.100.name:0 "巨像计划"
  apoc.100.desc:0 "$COLOSSUS_PROJECT_DESC$"
  apoc.100.desc.pacif:0 "随着威慑理论再次在 [Root.Capital.GetName] 上的政治科学家间风行，巨像计划被认为是终极的威慑力量——一种甚至超越了泰坦级军舰的武器。尽管提议中的巨像舰可以携带能彻底摧毁整颗行星的武器，但我们只会在一种较为克制，不过令人恐惧的永久性冲突解决手段中部署它们。\n\n如果设想中的敌人不愿停止对我们或我们盟友的侵略，那我们就只好§R强迫他们§!。"
@@ -275,13 +278,13 @@
  name_list_HUMAN1:0 "人类（UNE）"
  name_list_HUMAN2:0 "人类（CM）"
  name_list_HUMAN3:0 "人类（SPQR）"
- leviathans.500.f:0 "我们希望建立共同智囊团。"
- leviathans.511.name:0 "智囊团"
- leviathans.511.desc:0 "嗯……嗯，这种设施将利于银河科学的发展。你可以在与我们共享的星系的太空基地上建造这个智囊团。我们的典藏研究员会来与你们的科学家们交流。\n\n§H<我们现在可以在§! §Y[curator_system.GetName]§! §H星系建造§!§Y典藏研究所智囊团§!§H太空基地建筑。>§!"
+
  leviathans.300.g:0 "我们希望你能协助建立一所艺术学院。"
  leviathans.340.name:0 "艺术学院"
- leviathans.340.desc:0 "真棒！我们也正有此意！如果你在与我们共享的星系的太空基地上建立这座设施，我们将派一些最好的艺术家到那里任教。\n\n§H<我们现在可以在§! §Y[artist_system.GetName]§! §H星系建造§!§Y艺术学院§!§H太空基地建筑。>§!"
- leviathans.340.a:0 "太好了。"
+ leviathans.340.desc:1 "Brilliant! We were just about to suggest the very same thing to you! If you establish this institution on the starbase in the system you share with us, we shall send some of our finest artists to serve there as teachers."
+#leviathans.340.desc:1 "太巧了！我们正打算提出和你说的基本类似的提议！如果你将此设施建设在与我们共享星系的恒星基地里，我们将派遣我们最优秀的艺术家前去当教师。"
+#leviathans.340.desc:1 "真棒！我们也正有此意！如果你在与我们共享的星系的太空基地上建立这座设施，我们将派一些最好的艺术家到那里任教。\n\n§H<我们现在可以在§! §Y[artist_system.GetName]§! §H星系建造§!§Y艺术学院§!§H太空基地建筑。>§!"
+ leviathans.340.tooltip:0 "我们现在可以在§Y[artist_system.GetName]§!星系建造§H艺术学院§!这一恒星基地建筑了。"
  leviathans.300.g.opinion:0 "需要§Y艺术家§!拥有：\n£opinion£ 评价 +50"
 
  FLEET_MANAGER_VIEW:0 "舰队管理器"
@@ -421,6 +424,9 @@
  DELUGE_EXHAUSTED_ICE_TITLE:0 "冰源耗尽"
  DELUGE_EXHAUSTED_ICE_DESC:0 "我们在§Y[This.GetName]§!的§Y天洪浩荡§!耗尽了我们位于$SYSTEM|Y$星系内的冰源，因此星系内的§Y$sm_ice_mining_station$§!已被拆除。"
 
+ planet_destruction.801.name:0 "行星被毒化"
+ planet_destruction.801.desc:0 "来自[FromFrom.GetName]的滔天毒流渐渐平息，[From.GetName]上生意盎然的生态系统不复存在，充满毒气的星球中唯有少数几种生命形式能繁衍生息。"
+
  planet_destruction.610.name:0 "[outraged_FE.GetName]"
  planet_destruction.610.desc:0 "[From.GetName] 曾是圣星。\n\n\n你不知道自己犯下了多大的罪恶。\n\n\n但你很快就会知道。"
  planet_destruction.610.spiri:0 "我们将展示自己的正义。"
@@ -435,6 +441,8 @@
  planet_destruction.610.devou:0 "§R哈哈哈！§!"
  planet_destruction.610.termi:0 "删除，就像其它垃圾数据一样。"
  planet_destruction.610.purif:0 "异端只有烧尽一途。"
+ planet_destruction.615.A:0 "这样的[From.GetName]更美好。"
+ planet_destruction.615.spir:0 "就当是播洒圣水吧。"
 
  action.87.name:0 "§R失去殖民地！§!"
  action.87.desc:0 "我们对 §Y[From.GetName]§! 的管理控制权已被 §Y[new_planet_owner.GetName]§! 夺取，它控制着 §Y[From.GetStarName]§! 星系内的§H太空基地§!。"
@@ -514,7 +522,6 @@
  pirate.57.name:0 "有机体海盗"
  pirate.57.desc:1 "一小群有机体子单元，似乎是不法分子，已经设法潜入并在我境内的 §H[pirate_system.GetName]§! 星系扎根。他们似乎意图劫掠途径星系的缺乏防护的贸易路线。或许这些是有机体普遍的侥幸心理，错误地以为自己过于微不足道，不会引起我们武力回应。"
 
- leviathans.509.name:0 "典藏研究员支援"
  leviathans.509.desc:0 "我们与你们签订的数据库访问协议已经到期了。您是否希望再延长十个标准年，还是说你们的研究员已经不再需要我们提供的信息？"
  leviathans.509.a:0 "我们希望延长协议。"
  leviathans.509.a.reply:0 "太好了。我们的数据库将继续对你们的科学家开放。"

@@ -319,6 +319,7 @@
  preset_signatory:0 "条约国"
  preset_thrall:0 "仆从国"
  preset_satrapy:0 "辖地"
+ preset_relic_satrapy:0 "$preset_satrapy$"
 
  # Preset AI
  preset_vassal_nice_01:0 "$preset_vassal$"
@@ -403,6 +404,7 @@
  not_allowed_for_scholarium:0 "$TRIGGER_FAIL$不允许§Y学邦§!预设。"
  not_allowed_for_prospectorium:0 "$TRIGGER_FAIL$不允许§Y勘探邦§!预设。"
  not_allowed_for_subsidiary:0 "$TRIGGER_FAIL$不允许§Y附属公司§!预设。"
+ not_allowed_for_satrapy:0 "$TRIGGER_FAIL$不允许§Y辖地§!预设。"
  not_allowed_for_feudal_society:1 "$TRIGGER_FAIL$不允许宗主拥有§Y$civic_feudal_realm$§!公民性。"
  not_allowed_for_franchising:0 "$TRIGGER_FAIL$不允许拥有§Y$civic_franchising$§!公民性的宗主使用。"
  not_allowed_for_imperial_fiefdom:0 "$TRIGGER_FAIL$不允许§Y$personality_imperial_origin_overlord_ai$§!的附属国使用。"
@@ -543,7 +545,7 @@
  holding_parasitic_algorithms:0 "科研部"
  holding_parasitic_algorithms_desc:0 "一个负责监督当地科学与研究进展的部门，将为其雇主带回最有价值的突破和发现。"
  holding_parasitic_algorithms_effect_desc:2 "[Root.ResearchProducerIcon][Root.ResearchProducer]将附属国的[Root.SubjectResearcherUpkeep]转化为宗主国的$r_research$。"
- 
+
  holding_noble_vacation_homes:0 "贵族行宫"
  holding_noble_vacation_homes_desc:0 "身在异乡亦有家，此处便是宗主国精英阶层们的放浪形骸之地；只要在这里得到充分的释放，就不会在家里惹乱子。"
  holding_noble_vacation_homes_effect:0 "每座$holding_noble_vacation_homes$给予宗主国的首都§G+2§!£stability£。"
@@ -869,7 +871,7 @@
  job_overlord_recruiter_drone_plural:0 "$job_overlord_recruiter$子个体"
  mod_job_overlord_recruiter_drone_add:0 "$job_overlord_recruiter$岗位"
  job_overlord_recruiter_drone_desc:0 "$job_overlord_recruiter_desc$"
- job_overlord_recruiter_effect_desc:0 "£job_soldier£$job_overlord_recruiter_plural$为附属国提供£defense_army£§Y防御部队§!，这些部队在服役期满之后有一定几率加入我们帝国。"
+ job_overlord_recruiter_effect_desc:1 "£job_soldier£$job_overlord_recruiter_plural$为附属国提供£defense_army£§Y防御部队§!，这些部队在服役期满之后有一定几率加入我们帝国。"
 
 # Overlord Rangers
  job_overlord_ranger:0 "宗主国护林员"
@@ -881,7 +883,7 @@
  job_overlord_ranger_drone_plural:0 "$job_overlord_ranger$子个体"
  mod_job_overlord_ranger_drone_add:0 "$job_overlord_ranger$岗位"
  job_overlord_ranger_drone_desc:0 "$job_overlord_ranger_desc$"
- job_overlord_ranger_effect_desc:0 "£job_ranger£$job_overlord_ranger_plural$提供一个£mod_consumer_goods_upkeep_add£§Y消费品维护费§!减免，同时为宗主国提供£unity£§Y凝聚力§!。"
+ job_overlord_ranger_effect_desc:1 "£job_ranger£$job_overlord_ranger_plural$提供一个£mod_consumer_goods_upkeep_add£§Y消费品维护费§!减免，同时为宗主国提供£unity£§Y凝聚力§!。"
 
 # Overlord Arborists
  job_overlord_arborist:0 "宗主国树艺家"
@@ -913,8 +915,12 @@
  mod_job_overlord_mortal_initiate_add:0 "$job_overlord_mortal_initiate$岗位"
  job_overlord_mortal_initiate_desc:0 "我们宗主国的风俗习惯或许看上去奇怪而神秘，但是接受他们是我们的历史必然。只有那些心甘情愿的人会被要求作出终极的祭献。"
  job_overlord_mortal_initiate_drone:0 "$job_overlord_mortal_initiate$子个体"
- job_overlord_mortal_initiate_drone_plural:0 "$job_overlord_bio_trophy$子个体"
- mod_job_overlord_mortal_initiate_drone_add:0 "$job_overlord_bio_trophy$岗位"
+ job_overlord_mortal_initiate_drone_plural:1 "$job_overlord_mortal_initiate$ Drones"
+#job_overlord_mortal_initiate_drone_plural:1 "$job_overlord_bio_trophy$子个体"
+#job_overlord_mortal_initiate_drone_plural:1 "$job_overlord_bio_trophy$子个体"
+ mod_job_overlord_mortal_initiate_drone_add:1 "$job_overlord_mortal_initiate$ Jobs"
+#mod_job_overlord_mortal_initiate_drone_add:1 "$job_overlord_bio_trophy$岗位"
+#mod_job_overlord_mortal_initiate_drone_add:1 "$job_overlord_bio_trophy$岗位"
  job_overlord_mortal_initiate_drone_desc:0 "我们宗主国的风俗习惯或许看上去奇怪而神秘，但我们是他们的一部分。我们子个体的一小部分被指派去加入宗主国的“生命的研究”，这项研究最终会以它们的自愿祭献收场。"
  job_overlord_mortal_initiate_effect_desc:0 "£job_mortal_initiate£$job_overlord_mortal_initiate_plural$为附属国产出£unity£§Y凝聚力§!，£amenities£§Y$amenity$§!以及£society£§Y研究点§!。$job_overlord_mortal_initiate$可以被用于§Y祭献§!。"
 
@@ -998,8 +1004,12 @@
  SPECIALIST_XP_TITLE:0 "特化经验"
  SPECIALIST_XP_PER_MONTH:0 "基于$LOYALTY|Y$忠诚度，附属国每月获得$XP_CHANGE|+$属国特化经验。"
  SPECIALIST_XP_DESC:0 "§H属国特化经验§!§E会在附属国忠于其宗主国的情况下增长。一个不忠的附属国会损失经验。§!\n§H新的增益和能力§!§E会在获得足够的§!§H经验§!§E达到新的§!§H等级§!§E之后解锁。§!"
- SPECIALIST_TIER_UNLOCKS:0 "等级经验解锁"
- SPECIALIST_TIER_UNLOCK_XP:0 "$TIER$级：$XP|Y0$经验"
+ SPECIALIST_TIER_UNLOCKS:1 "Tier XP Requirements"
+#SPECIALIST_TIER_UNLOCKS:1 "等级经验要求"
+#SPECIALIST_TIER_UNLOCKS:1 "等级经验解锁"
+ SPECIALIST_TIER_UNLOCK_XP:1 "Tier $TIER$: $XP|Y0$ XP"
+#SPECIALIST_TIER_UNLOCK_XP:1 "$TIER$级：$XP|Y0$经验"
+#SPECIALIST_TIER_UNLOCK_XP:1 "$TIER$级：$XP|Y0$经验"
  SPECIALIST_TIER_ACTIVE:0 "§G启用§!"
  SPECIALIST_TIER_INACTIVE:0 "§g未启用§!"
  SPECIALIST_TIER_LOCKED:0 "§R锁定§!"
@@ -1230,11 +1240,6 @@
  prospectorium_technology_society_modifier:0 "$prospectorium_technology_physics_modifier$"
  prospectorium_technology_engineering_modifier:0 "$prospectorium_technology_physics_modifier$"
 
- # Tabs
- t:0 ""
- tt:0 ""
- ttt:0 ""
-
  # Custom tooltips for traits.
  leader_trait_bulwark_watcher_tooltip:1 "$t$§L$leader_trait_bulwark_watcher$§!\n$tt$$MOD_SHIP_FRIENDLY_TERRITORY_EVASION_MULT$：§G+15%§!\n$tt$$MOD_SHIP_FRIENDLY_TERRITORY_TRACKING_MULT$：§G+25%§!"
  leader_trait_bulwark_retaliator_tooltip:0 "$t$§L$leader_trait_bulwark_retaliator$§!\n$tt$$MOD_SHIP_FRIENDLY_TERRITORY_FIRE_RATE_MULT$：§G+30%§!"
@@ -1347,6 +1352,7 @@
  preset_thrall_desc:0 "仆从国是一种堕落帝国特有的附属国类型，有责任每月向其远古的宗主上交基础资源税，并且无权拓展边界。"
  preset_scion_desc:0 "先辈子弟是一种堕落帝国特有的附属国类型，他们的远古宗主会对其进行支援和帮助。"
  preset_satrapy_desc:0 "辖地是一种可汗特有的附属国类型，有责任每月向其战狂宗主上交舰队和基础资源税。"
+ preset_relic_satrapy_desc:1 "$preset_satrapy_desc$" # [LocEditor:ForFutureBatchExport]
 
  # Subject presets flavor text
  preset_bulwark_flavor_desc:0 "这个附属国专精军事事务。他们因为在防务方面的出色表现而远近闻名，能够为宗主提供军事上的见解和防护。作为代价，他们单一的专注使得自身高度依赖外部物质的支援来保证国家的运转。"
@@ -1362,6 +1368,8 @@
  preset_thrall_flavor_desc:0 "仆从国是远古觉醒帝国的附属国。他们要受到上面的严苛管辖，上缴数量相当的财富给雄心勃勃的宗主，后者会使用附庸的财富来喂饱自己的战争机器。"
  preset_scion_flavor_desc:0 "先辈子弟是远古觉醒帝国的附属国。他们长期收到某位博爱的施恩者帝国的支持，因此在统治的方方面面都享有自治。他们偶尔还会收到领主的恩礼，至于理由，整个银河都摸不着头脑。"
  preset_satrapy_flavor_desc:0 "辖地是效力于大可汗的附属国。他们选择屈服于掠夺者汗国的军力，被赋予以大可汗的名义统治银河某片区域的权力。只要他们持续不断地上交舰船和资源以支持大可汗的征战，大可汗就不会过问他们自己的事务。"
+ preset_relic_satrapy_flavor_desc:0 "辖地是大可汗偏爱的附属国类型，如今王座易主，抛弃这一传统未免糟蹋。作为持续不断地上交舰船和资源以支持宗主国征战的回报，宗主国不会过问他们自己的事务。"
+
 
  # Specialist subject fail texts.
  is_capital:0 "$TRIGGER_FAIL$§R$requires_capital_planet_desc$§!"
@@ -1403,14 +1411,20 @@
  balanced_terms:0 "$balanced_terms_name$"
  balanced_terms_desc:2 "我们相信，只要能公平地对待附属国。假以时日他们会幡然悔悟，明白我们统御之道的智慧。\n\n初始封臣协议条款\n$t$§Y$subject_can_not_be_integrated$§!\n$t$$subject_can_do_diplomacy_but_not_vote$\n$t$$subject_can_expand_with_tithe$\n$t$§W加入宗主国战争：§!防御性\n$t$§W加入附属国战争：§!防御性\n$t$§W附属国地产限制：§!1" # [LocEditor:ForFutureBatchExport]
  benevolent_terms:0 "$benevolent_terms_name$"
- benevolent_terms_desc:1 "附属国与我们是荣辱与共的关系，只要他们成功我们就能双赢，所以我们要齐头并进。\n\n初始封臣协议条款\n$t$§Y$subject_can_not_be_integrated$§!\n$t$$subject_can_do_diplomacy$\n$t$$subject_can_expand$\n$t$§W加入宗主国战争：§!防御性\n$t$§W加入附属国战争：§!防御性\n$t$§W附属国地产限制：§!1" # [LocEditor:ForFutureBatchExport]
+ benevolent_terms_desc:2 "附属国与我们是荣辱与共的关系，只要他们成功我们就能双赢，所以我们要齐头并进。\n\n初始封臣协议条款\n$t$§Y$subject_can_not_be_integrated$§!\n$t$$subject_can_do_diplomacy$\n$t$$subject_can_expand$\n$t$§W加入宗主国战争：§!防御性\n$t$§W加入附属国战争：§!防御性\n$t$§W附属国地产限制：§!1" # [LocEditor:ForFutureBatchExport]
 
  oppressive_corporate_terms_name:0 "恶意收购"
  oppressive_corporate_terms:0 "$oppressive_corporate_terms_name$"
- oppressive_corporate_terms_desc:0 "他们对收购的卑微抵抗是徒劳的；无论他们的坚信如何，最终每个人都可以明码标价。\n\n§E初始附属公司协议：\n$t$$subject_can_not_be_integrated$\n$t$$subject_can_do_diplomacy_but_not_vote$\n$t$$subject_can_expand_with_tithe$\n$t$基础资源税：45%\n$t$高级资源税：15%\n$t$加入宗主国战争：全部\n$t$加入附属国战争：防御\n$t$附属国地产限制：1§!"
+ oppressive_corporate_terms_desc:1 "The pathetic attempt to block this acquisition has failed; no matter their convictions, in the end, everyone has a price.\n\n§EInitial Subsidiary Agreement Terms:\n$t$$subject_can_not_be_integrated$\n$t$$subject_can_do_diplomacy_but_not_vote$\n$t$$subject_can_expand_with_tithe$\n$t$Basic Resource Taxes: 45%\n$t$Advanced Resource Taxes: 15%\n$t$Joins Overlord Wars: All\n$t$Joins Subject Wars: Defensive\n$t$Subject Holdings Limit: 1§!\n\nThis is an §YOppressive Subjugation Policy§!."
+#oppressive_corporate_terms_desc:1 "他们对该收购的卑微抵抗是徒劳的；再坚定的信仰最终都会被金钱所打败。\n\n§E初始附属公司协议：\n$t$$subject_can_not_be_integrated$\n$t$$subject_can_do_diplomacy_but_not_vote$\n$t$$subject_can_expand_with_tithe$\n$t$基础资源税：45%\n$t$高级资源税：15%\n$t$加入宗主国战争：全部\n$t$加入附属国战争：防御\n$t$附属国地产限制：1§!\n\n这是一项§Y压迫型归顺政策§!。"
+#oppressive_corporate_terms_desc:1 "他们对收购的卑微抵抗是徒劳的；无论他们的坚信如何，最终每个人都可以明码标价。\n\n§E初始附属公司协议：\n$t$$subject_can_not_be_integrated$\n$t$$subject_can_do_diplomacy_but_not_vote$\n$t$$subject_can_expand_with_tithe$\n$t$基础资源税：45%\n$t$高级资源税：15%\n$t$加入宗主国战争：全部\n$t$加入附属国战争：防御\n$t$附属国地产限制：1§!"
  balanced_corporate_terms_name:0 "标准协议"
- balanced_corporate_terms:0 "$balanced_corporate_terms_name$"
- balanced_corporate_terms_desc:0 "要有令人满意的协定，我们双方都可以继续回去工作了。\n\n§E初始附属公司协议：\n$t$$subject_can_not_be_integrated$\n$t$$subject_can_do_diplomacy_but_not_vote$\n$t$$subject_can_expand_with_tithe$\n$t$基础资源税：30%\n$t$加入宗主国战争：防御\n$t$加入附属国战争：防御\n$t$附属国地产限制：1§!"
+ balanced_corporate_terms:1 "$balanced_corporate_terms_name$"
+ balanced_corporate_terms_desc:1 "With a satisfactory deal in place, both parties can now get back to work.\n\n§EInitial Subsidiary Agreement Terms:\n$t$$subject_can_not_be_integrated$\n$t$$subject_can_do_diplomacy_but_not_vote$\n$t$$subject_can_expand_with_tithe$\n$t$Basic Resource Taxes: 30%\n$t$Joins Overlord Wars: Defensive\n$t$Joins Subject Wars: Defensive\n$t$Subject Holdings Limit: 1§!\n\nThis is a §YBalanced Subjugation Policy§!."
+#balanced_corporate_terms_desc:1 "只要有令人满意的协定，我们双方都可以继续去好好赚钱。\n\n§E初始附属公司协议：\n$t$$subject_can_not_be_integrated$\n$t$$subject_can_do_diplomacy_but_not_vote$\n$t$$subject_can_expand_with_tithe$\n$t$基础资源税：30%\n$t$加入宗主国战争：防御\n$t$加入附属国战争：防御\n$t$附属国地产限制：1§!\n\n这是一项§Y平衡型归顺政策§!。"
+#balanced_corporate_terms_desc:1 "要有令人满意的协定，我们双方都可以继续回去工作了。\n\n§E初始附属公司协议：\n$t$$subject_can_not_be_integrated$\n$t$$subject_can_do_diplomacy_but_not_vote$\n$t$$subject_can_expand_with_tithe$\n$t$基础资源税：30%\n$t$加入宗主国战争：防御\n$t$加入附属国战争：防御\n$t$附属国地产限制：1§!"
  benevolent_corporate_terms_name:0 "谈判协商"
  benevolent_corporate_terms:0 "$benevolent_corporate_terms_name$"
- benevolent_corporate_terms_desc:0 "最好的交易就是双赢；和气生财，就像生活一样。\n\n§E初始附属公司协议：\n$t$$subject_can_not_be_integrated$\n$t$$subject_can_do_diplomacy$\n$t$$subject_can_expand$\n$t$基础资源税：30%\n$t$加入宗主国战争：防御\n$t$加入附属国战争：防御\n$t$附属国地产限制：1§!"
+ benevolent_corporate_terms_desc:1 "The best deals benefit both parties; like life itself, business flourishes in harmony.\n\n§EInitial Subsidiary Agreement Terms:\n$t$$subject_can_not_be_integrated$\n$t$$subject_can_do_diplomacy$\n$t$$subject_can_expand$\n$t$Basic Resource Taxes: 30%\n$t$Joins Overlord Wars: Defensive\n$t$Joins Subject Wars: Defensive\n$t$Subject Holdings Limit: 1§!\n\nThis is a §YBenevolent Subjugation Policy§!."
+#benevolent_corporate_terms_desc:1 "双赢才是好买卖；和生命一样，和谐才能使生意兴隆。\n\n§E初始附属公司协议：\n$t$$subject_can_not_be_integrated$\n$t$$subject_can_do_diplomacy$\n$t$$subject_can_expand$\n$t$基础资源税：30%\n$t$加入宗主国战争：防御\n$t$加入附属国战争：防御\n$t$附属国地产限制：1§!\n\n这是一项§Y施恩型归顺政策§!。"
+#benevolent_corporate_terms_desc:1 "最好的交易就是双赢；和气生财，就像生活一样。\n\n§E初始附属公司协议：\n$t$$subject_can_not_be_integrated$\n$t$$subject_can_do_diplomacy$\n$t$$subject_can_expand$\n$t$基础资源税：30%\n$t$加入宗主国战争：防御\n$t$加入附属国战争：防御\n$t$附属国地产限制：1§!"

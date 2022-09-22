@@ -24,6 +24,7 @@
 
  requires_neutron_star_or_pulsar:0 "$TRIGGER_FAIL$必须围绕一颗$pc_neutron_star$或$pc_pulsar$建造。"
  requires_no_existing_quantum_catapult:0 "$TRIGGER_FAIL$至多只能建造一座量子弹弓。"
+ requires_no_existing_quantum_catapul_two:0 "$TRIGGER_FAIL$至多只能建造两座量子弹弓。"
 
  quantum_catapult_0_MEGASTRUCTURE_DETAILS:1 "一个用来汇聚中子星或脉冲星引力以扭曲空间，将舰队传送至遥远距离之外的装置。"
  quantum_catapult_0_CONSTRUCTION_INFO_DELAYED:1 "量子弹弓的每一次运行都会让舰队到达预定目的地§H之外§!的星系。这个“§Y散射半径§!”能够通过后续升级减少。"
@@ -55,6 +56,7 @@
  FLEET_ORDER_QUANTUM_CATAPULT_NOT_SAME_SYSTEM:0 "§R所选舰队不在同一星系中§!"
  FLEET_ORDER_NEEDS_GALAXY_MODE:0 "§R只能在星系地图中执行！§!"
  requires_technology_hyper_relays:0 "$TRIGGER_FAIL$需要科技 £physics£ §Y$tech_hyper_relays$§!。"
+ requires_hyperlane:0 "$TRIGGER_FAIL$§R该恒星系没有超空间航道。§!"
  QUANTUM_CATAPULT_COUNTRY_CANNOT_USE:0 "$TRIGGER_FAIL$§Y[From.GetName]§!拒绝我们使用他们的量子弹弓。"
  # Slingshot to the Stars Origin version
  quantum_catapult_ruined_slingshot:0 "$quantum_catapult_ruined$"
@@ -153,7 +155,9 @@
  sm_ring_bureaucracy_hub_desc:1 "高效和进步将再次唾手可得，我们的官员们几乎可以瞬间就将工作中离不开的各类文书拿到手中。"
  sm_ring_synapse_hub:0 "突触中继器"
  sm_ring_synapse_hub_desc:0 "星环轨道的一些部分已被改造用于增强突触信号，提升我们对地表子个体的控制能力。"
- sm_ring_synapse_hub_effect:0 "£job_synapse_drone£ $job_synapse_drone_plural$ 产生的 £amenities£ 舒适度：§G+1§!"
+ sm_ring_synapse_hub_effect:1 "£unity£ Unity from £job_synapse_drone£ $job_synapse_drone_plural$: §G+1§!"
+#sm_ring_synapse_hub_effect:1 "£job_synapse_drone£ $job_synapse_drone_plural$产生的£unity£ 凝聚力：§G+1§!"
+#sm_ring_synapse_hub_effect:1 "£job_synapse_drone£ $job_synapse_drone_plural$ 产生的 £amenities£ 舒适度：§G+1§!"
  sm_ring_maintenance_hub:0 "在轨维护投放系统"
  sm_ring_maintenance_hub_desc:0 "被预打包进荚仓的维护材料，并带上相应的分发无人机，可以从轨道上投放到任何需要的地方，随叫随到。"
  sm_ring_maintenance_hub_effect:0 "£job_maintenance_drone£ $job_maintenance_drone_plural$产生的 £amenities£ 舒适度：§G+1§!"

@@ -14,7 +14,9 @@
  ECONOMICS_UPKEEP:0 "维护费"
  ECONOMICS_UPKEEP_HEADER:0 "$ECONOMICS_UPKEEP$："
  ECONOMICS_UPKEEP_VALUE_HEADER:0 "$ECONOMICS_UPKEEP$：$STRING$"
- ECONOMICS_CATEGORY_NONE:0 "无分类"
+ ECONOMICS_CATEGORY_NONE:1 "Other"
+#ECONOMICS_CATEGORY_NONE:1 "其他"
+#ECONOMICS_CATEGORY_NONE:1 "无分类"
  IMPORTANT_DEPOSITS:0 "特殊地貌"
  PLANET_SUMMARY_BUTTON:0 "§H行星概览§!"
  PLANET_HOUSING_TITLE:0 "住房"
@@ -35,6 +37,7 @@
  planet_crime:0 "$PLANET_CRIME_TITLE$"
  planet_crime_no_happiness:0 "$PLANET_CRIME_NO_HAPPINESS_TITLE$"
  TRADE_STARBASE:0 "太空基地"
+ STARBASE_PLURAL:0 "恒星基地"
  PLANET_CRIME_TITLE:0 "犯罪率"
  PLANET_CRIME_NO_HAPPINESS_TITLE:0 "异常率"
  PLANET_CRIME_DESC:0 "§E§Y$PLANET_CRIME_TITLE$§!是衡量行星上总体犯罪活动水平和法律缺失程度的指标。高£crime£§Y犯罪率§!会引发负面事件，可能降低£stability£§Y稳定度§!。犯罪问题因行星上的众多人口而自然发生。提高£happiness£§Y人口幸福度§!或者雇佣£job_enforcer£§Y$job_enforcer_plural$§!可以有效降低犯罪率。§!"
@@ -407,7 +410,7 @@
  BUILDING_SLOT_LOCKED:0 "未解锁的建筑槽位"
  BUILDING_SLOT_LOCKED_DESC:2 "建筑槽位可以通过建设$CITY_DISTRICT|Y$或升级$CAPITAL_BUILDING|Y$来解锁"
  BUILDING_SLOT_LOCKED_HABITAT_DESC:1 "建筑槽位可以通过升级$CAPITAL_BUILDING|Y$或解锁§Y$ap_voidborn$§!飞升特典来解锁"
- BUILDING_SLOT_LOCKED_BRANCH_OFFICE_DESC:2 "分公司建筑槽位可以通过升级行星的$CAPITAL_BUILDING|Y$来解锁。"
+ BUILDING_SLOT_LOCKED_BRANCH_OFFICE_DESC:3 "分公司建筑槽位可以通过升级行星的$CAPITAL_BUILDING|Y$来解锁。"
  BUILDING_CAPPED_IN_EMPIRE_WITH_NUM:0 "帝国上限：§Y$NUM$/$MAX$§!"
  BUILDING_CAPPED_IN_EMPIRE:0 "帝国上限：§Y$MAX$§!"
  BUILDING_CAPPED_ON_PLANET_WITH_NUM:0 "行星上限：§Y$NUM$/$MAX$§!"
@@ -835,8 +838,12 @@
 
  job_evaluator:0 "评估者"
  job_evaluator_plural:0 "评估者"
- job_evaluator_desc:0 "核心智慧收发的信号必须被放大、增强，并清除静电干扰和数据损坏。"
- job_evaluator_effect_desc:0 "£job_evaluator£ $job_evaluator_plural$产出£unity£ §Y$unity$§!"
+ job_evaluator_desc:1 "Signals to and from the Drones must be amplified, analyzed and cleaned of deviancy."
+#job_evaluator_desc:1 "发至和发自子个体的信号必须被放大、分析，铲除反常。"
+#job_evaluator_desc:1 "核心智慧收发的信号必须被放大、增强，并清除静电干扰和数据损坏。"
+ job_evaluator_effect_desc:1 "£job_evaluator£ $job_evaluator_plural$ turn £energy£ §Y$energy$§! into £unity£ §YUnity§! and $r_amenities$"
+#job_evaluator_effect_desc:1 " £job_evaluator£ $job_evaluator_plural$将£energy£ §Y$energy$§!转化为£unity£ §Y凝聚力§!和$r_amenities$"
+#job_evaluator_effect_desc:1 "£job_evaluator£ $job_evaluator_plural$产出£unity£ §Y$unity$§!"
  mod_job_evaluator_add:0 "$job_evaluator$职位"
  mod_job_evaluator_per_pop:0 "每$VALUE$个人口§G+1§!个$job_evaluator$职位"
  mod_job_evaluator_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_evaluator_add£"
@@ -1074,10 +1081,22 @@
  job_culture_worker:0 "文化工作者"
  job_culture_worker_plural:0 "文化工作者"
  job_culture_worker_desc:1 "这些工作人员负责维护艺术，他们对公民的内在发展和社会表达至关重要。"
- job_culture_worker_effect_desc:0 "£job_culture_worker£$job_culture_worker_plural$消耗£consumer_goods£§Y$consumer_goods$§!产出£unity£§Y$unity$§!和 £society£§Y$society_research$§!" # BUG 排版问题
+ job_culture_worker_effect_desc:2 "£job_culture_worker£ $job_culture_worker_plural$ turn £consumer_goods£ §Y$consumer_goods$§! into £unity£ §Y$unity$§!, [GetCultureWorkerSpiMatOutput][GetCultureWorkerEgalAuthOutput][GetCultureWorkerMilPacOutput][GetCultureWorkerXenoOutput]and £mod_ethic_attraction_mult£ §YGoverning Ethics Attraction§!.\n\n£job_culture_worker£ Culture Workers' effects vary depending on the Empire's ethics."
+#job_culture_worker_effect_desc:2 "£job_culture_worker£ $job_culture_worker_plural$将£consumer_goods£ §Y$consumer_goods$§!转化为£unity£ §Y$unity$§!，[GetCultureWorkerSpiMatOutput][GetCultureWorkerEgalAuthOutput][GetCultureWorkerMilPacOutput][GetCultureWorkerXenoOutput]以及£mod_ethic_attraction_mult£ §Y主流思潮吸引力§!。\n\n£job_culture_worker£文化工作者的效果会随着帝国的思潮而发生改变。"
+#job_culture_worker_effect_desc:2 "£job_culture_worker£$job_culture_worker_plural$消耗£consumer_goods£§Y$consumer_goods$§!产出£unity£§Y$unity$§!和 £society£§Y$society_research$§!" # BUG 排版问题
  mod_job_culture_worker_add:0 "$job_culture_worker$职位"
  mod_job_culture_worker_per_pop:0 "每$VALUE$个人口§G+1§!个$job_culture_worker$职位"
  mod_job_culture_worker_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_culture_worker_add£ "
+ 
+ CULTURE_WORKER_OUTPUT_SPI:1 "§Y£mod_pop_amenities_usage_mult£ $MOD_POP_AMENITIES_USAGE_MULT$减少§!， "
+ CULTURE_WORKER_OUTPUT_MAT:0 "§Y£amenities£ 舒适度§!， "
+ CULTURE_WORKER_OUTPUT_EGAL:1 "§Y£mod_pop_housing_usage_mult£ $MOD_POP_HOUSING_USAGE_MULT$减少§!， "
+ CULTURE_WORKER_OUTPUT_AUTH:1 "§Y£mod_country_edict_fund_add£ $MOD_COUNTRY_EDICT_FUND_ADD$§!， "
+ CULTURE_WORKER_OUTPUT_MIL:0 "§Y£mod_country_naval_cap_add£ $MOD_COUNTRY_NAVAL_CAP_ADD$§!， "
+ CULTURE_WORKER_OUTPUT_PAC:1 "§Y$mod_pop_lifestyle_trade_mult$§!， "
+ CULTURE_WORKER_OUTPUT_PHOB:1 "§Y£mod_pop_citizen_happiness£ $pop_citizen_happiness$§!， "
+ CULTURE_WORKER_OUTPUT_PHIL:2 "§Y£pop£ $mod_planet_pops_upkeep_mult$减少§!， "
+ CULTURE_WORKER_OUTPUT_BLANK:0 ""
 
  job_head_researcher:0 "科研主管"
  job_head_researcher_plural:0 "科研主管"
@@ -1181,6 +1200,8 @@
  job_ranger_desc:0 "负责保护我们的行星清洁和大自然的特殊个体。"
  job_ranger_effect_desc:0 "£job_ranger£$job_ranger_plural$产出£amenities£§Y舒适度§!和£society_research£§Y$society_research$§!。"
  mod_job_ranger_add:0 "$job_ranger$岗位"
+ mod_job_ranger_per_pop:0 "每$VALUE$人口提供§G+1§!个$job_ranger$岗位"
+ mod_job_ranger_per_pop_short:0 "\n每$VALUE$ £pop£ 提供§G+1§!£mod_job_ranger_add£"
  has_ranger_lodge:0 "$TRIGGER_FAIL$§R该地块障碍由于§Y$building_ranger_lodge$§!的存在而无法清除。§!"
 
  # Ruling Class Jobs
@@ -1538,6 +1559,7 @@
  # TODOCD Collision with overlord_subject
  #mod_planet_translucers_rare_crystals_produces_mult: "£rare_crystals£ $rare_crystals$ from £job_translucer£ $job_translucer_plural$"
  mod_planet_priests_produces_mult:1 "[GetPriestIcon] [GetPriest] 产出"
+ mod_knights_independent_category_produces_mult:0 "£job_knight_commander£ $job_knight_commander$和£job_knight£ $job_knight_plural$岗位的产出"
  mod_planet_branch_offices_energy_produces_add:0 "£energy£分公司的收入"
  mod_planet_bio_trophies_unity_produces_mult:0 "$pop_cat_bio_trophy_plural$产出的£unity£$unity$"
  mod_planet_pops_organics_food_upkeep_mult:0 "人口食物消耗"
@@ -2192,7 +2214,9 @@
  d_portal_research_zone_gestalt_desc:0 "在异次元传送门附近建立的安全研究建筑群，供研究人员专心探索传送门的秘密。"
  d_ancient_one:0 "$ancient_one$"
  d_ancient_one_desc:0 "$ancient_one_desc$"
- d_fungoid_extermination:0 "真菌生物消灭残留物"
+ d_fungoid_extermination:1 "£blocker£ Fungoid Extermination Residue"
+#d_fungoid_extermination:1 "£blocker£真菌生物残留物"
+#d_fungoid_extermination:1 "真菌生物消灭残留物"
  d_fungoid_extermination_desc:0 "真菌生物被消灭后就剩下这些有毒粘液了。"
  d_ruined_arcology:1 "£blocker£生态城废墟"
  d_ruined_arcology_desc:0 "覆盖这颗城市星球的生态城已化为废墟。尽管其地基仍然坚实，但在我们重建之前，大量腐朽的建筑结构需要先清理干净。"
@@ -2275,6 +2299,7 @@
  d_alloys_4:0 "£alloys£ §Y+4§!"
  d_alloys_5:0 "£alloys£ §Y+5§!"
  d_alloys_10:0 "£alloys£ §Y+10§!"
+ d_alloys_25:0 "£alloys£ §Y+25§!"
  d_dark_matter_deposit_1:0 "£sr_dark_matter£ §Y+1§!"
 
  d_trade_value_1:0 "£trade_value£ +1"
@@ -2527,6 +2552,7 @@
  planet_districts_hab_leisure:0 "栖所休闲区"
  planet_districts_hab_mining:0 "栖所航天采矿湾"
  planet_districts_hab_energy:0 "栖所反应堆区"
+ planet_districts_orders_demesne:0 "居住站骑士团辖地"
  planet_districts_arc_arms:0 "寰球都市铸造区"
  planet_districts_arc_civilian:0 "寰球都市工业区"
  planet_jobs:0 "职位"
@@ -2603,8 +2629,6 @@
  leader_trait_nuumismatic_priest_desc:0 "一位九级的沙克瓦赫，在心智集中和心灵凝视方面都有特殊的修成……"
  trait_nuumismatic_administration:1 "努玛管理方式"
  trait_nuumismatic_administration_desc:1 "此种族掌握了努玛的神圣管理艺术。"
- leader_trait_enclave_trader:0 "飞地商人"
- leader_trait_enclave_trader_desc:0 "招募自一个独立的商人飞地，这位领袖尤其擅长最大化贸易价值。"
 
  contingency_sabotage:0 "紧急预案蓄意破坏"
  contingency_sabotage_desc:0 "紧急预案破坏了该行星上的电力区。"
@@ -2925,6 +2949,9 @@
  col_habitat_farming:0 "水培栖所"
  col_habitat_farming_desc:0 "人工建造的深空生态城，专门用于栽培作物。"
  col_habitat_farming_custom:0 "§Y$district_hab_housing_plural$§!放弃§R-2§!住房以交换§G+1§!£job_farmer£$job_farmer$岗位。"
+ col_habitat_gestalt_farming:0 "$col_habitat_farming$"
+ col_habitat_gestalt_farming_desc:0 "$col_habitat_farming_desc$"
+ col_habitat_farming_gestalt_custom:0 "§Y$district_hab_housing_plural$§!放弃§R-2§!住房以换取§G+1§!£job_agri_drone£ $job_agri_drone$岗位。"
  col_habitat_energy:0 "电力栖所"
  col_habitat_energy_desc:0 "人工建造的的深空生态城，致力于发电。"
  col_ring_mix:0 "环形世界"
@@ -3044,7 +3071,6 @@
 
  underground_expansion_tooltip:0 "地下区域将为我们提供更大的扩张空间！"
 
- leviathans.105.z:0 "我们需要你的专业能力。"
 
  requires_capital_system:0 "$TRIGGER_FAIL$需要在首都星系内建造"
 
@@ -3173,9 +3199,12 @@
  openedlootboxdesc3:0 "openedlootboxdesc3"
  openedlootboxdesc4:0 "openedlootboxdesc4"
  openedlootboxdesc5:0 "openedlootboxdesc5"
+ buying_boxes_desc:0 "好的，懂。我们明白了。你喜欢抽遗物箱！通常来说，我们会限制卖给单个客户的遗物箱数量，但是我们能够给你开个例外。从现在开始，尽享直接购买遗物箱的特权吧，只是每次所花费的§Y能量币§!会略有提升。"
 
  cara_home_lootbox_buy:0 "我们打算买一个$lootbox$。"
  cara_home_lootbox_buy.tooltip:0 "花费§R$boxcost$§!$ccoinz$购买一个$lootbox$。"
+ cara_home_lootbox_buy_energy:0 "我们会用能量购买一个$lootbox$。"
+ cara_home_lootbox_buy_energy.tooltip:0 "花费§R[root.box_cost]§! £energy£ §Y能量币§!购买一个$lootbox$。"
  boxcost:0 "6194.21"
  lootbox_buy_allow_fail:0 "§R我们没有足够的$ccoinz$§!"
 
@@ -3688,35 +3717,6 @@
  distar.305.exotic_gases:0 "[Root.GetName]在[FromFrom.GetName]发现了以前未知的战略资源，名为§H$exotic_gases$§!。这些瓦斯不但可以用来作战还可以用于娱乐。"
  distar.305.volatile_motes:0 "[Root.GetName]在[FromFrom.GetName]发现了以前未知的战略资源，名为§H$volatile_motes$§!。这些粒子被化学激活后能够释放出爆炸动能，用于做菜也是很好的香料。"
 
- leviathans.130.a:3 "§G1§!£volatile_motes£ §H$volatile_motes$§!/月交换§R10§!£energy£ §H$energy$§!/月。"
- leviathans.130.b:0 "§G2§!£volatile_motes£ §H$volatile_motes$§!/月交换§R20§!£energy£ §H$energy$§!/月。"
- leviathans.130.c:0 "§G3§!£volatile_motes£ §H$volatile_motes$§!/月交换§R30§!£energy£ §H$energy$§!/月。"
- leviathans.130.d:0 "§G4§!£volatile_motes£ §H$volatile_motes$§!/月交换§R40§!£energy£ §H$energy$§!/月。"
- leviathans.130.e:0 "§G5§!£volatile_motes£ §H$volatile_motes$§!/月交换§R50§!£energy£ §H$energy$§!/月。"
- leviathans.131.a:3 "§G1§!£exotic_gases£ §H$exotic_gases$§!/月交换§R10§!£energy£ §H$energy$§!/月。"
- leviathans.131.b:0 "§G2§!£exotic_gases£ §H$exotic_gases$§!/月交换§R20§!£energy£ §H$energy$§!/月。"
- leviathans.131.c:0 "§G3§!£exotic_gases£ §H$exotic_gases$§!/月交换§R30§!£energy£ §H$energy$§!/月。"
- leviathans.131.d:0 "§G4§!£exotic_gases£ §H$exotic_gases$§!/月交换§R40§!£energy£ §H$energy$§!/月。"
- leviathans.131.e:0 "§G5§!£exotic_gases£ §H$exotic_gases$§!/月交换§R50§!£energy£ §H$energy$§!/月。"
- leviathans.132.a:3 "§G1§!£rare_crystals£ §H$rare_crystals$§!/月交换§R10§!£energy£ §H$energy$§!/月。"
- leviathans.132.b:0 "§G2§!£rare_crystals£ §H$rare_crystals$§!/月交换§R20§!£energy£ §H$energy$§!/月。"
- leviathans.132.c:0 "§G3§!£rare_crystals£ §H$rare_crystals$§!/月交换§R30§!£energy£ §H$energy$§!/月。"
- leviathans.132.d:0 "§G4§!£rare_crystals£ §H$rare_crystals$§!/月交换§R40§!£energy£ §H$energy$§!/月。"
- leviathans.132.e:0 "§G5§!£rare_crystals£ §H$rare_crystals$§!/月交换§R50§!£energy£ §H$energy$§!/月。"
-
- leviathans.125.name.z1:0 "[traders.GetName]"
- leviathans.125.desc.z1:0 "我们有位杰出的行政人员随时待命，只要您同意就可以移民到[Root.GetName]，帮助您解决任何星区的赤字问题。"
- leviathans.125.z1:0 "成交。"
- leviathans.126.name:0 "[traders.GetName]"
- leviathans.126.desc:0 "很好。我们乐意与[Root.GetName]分享我们的技能。"
-
- already_hired_trader_governor:0 "§R我们已经从[traders.GetName]招募了一位领袖§!"
- recruit_trader_leader:0 "将一位[traders.GetSpeciesName]§Y总督§!加入§H领袖§!池。"
-
- sm_trader_proxy_office:0 "贸易代理人办公室"
- sm_trader_proxy_office_desc:0 "在银河贸易市场里，§Y贸易飞地§!享有特别权利，当然这些权利对我们也很有帮助。"
- requires_trade_enclave:0 "§R星系内需要有§Y贸易飞地§!。§!"
-
  decision_market_nomination:0 "提名银河市场中心"
  decision_market_nomination_effects:0 "基于当地条件，为行星添加§Y基础市场竞争力评级§!调整因素。评级越高，行星越有可能主持未来的§H银河市场§!。"
  decision_market_nomination_effects_short:0 "提名这颗行星作为§H银河市场§!贸易中心的候选位置。"
@@ -3855,7 +3855,7 @@
 
  wg_expel_corp_subject_status_quo_effects:1 "§Y[From.GetName]§!于§Y[Root.GetName]§!（包括§Y[Root.GetAdj]的附属国§!殖民地）的所有分公司已被关闭。\n§Y[From.GetName]§!从每个被关闭的分公司获得£energy£ §Y1000§!。"
  wg_expel_corp_subject_effects:1 "§Y[From.GetName]§!于§Y[Root.GetName]§!（包括§Y[Root.GetAdj]的附属国§!殖民地）的所有分公司已被关闭。\n§Y[From.GetName]§!从每个被关闭的分公司获得£energy£ §Y1000§!。"
- 
+
  market_founding_chain_title:0 "银河贸易市场的成立"
  market_founding_chain_desc:0 "国际贸易论坛即将成立，而其中央贸易空间站的控制者必将从中获益。\n\n如果我们希望竞争市场东道主的头衔，可以在几年的时间里用§H决策§!提名我们的一颗星球主持$galactic_market_station$。"
 
@@ -4307,8 +4307,8 @@
 
  HAS_SUBJECT:0 "Has $SUBJECT|Y$ as a subject"
  HAS_NOT_SUBJECT:0 "Does NOT have $SUBJECT|Y$ as a subject"
- HAS_NOT_OVERLORD:0 "$OVERLORD|Y$非其宗主"
- HAS_OVERLORD:0 "$OVERLORD|Y$是其宗主"
+ HAS_NOT_OVERLORD:1 "$OVERLORD|Y$非其宗主"
+ HAS_OVERLORD:1 "$OVERLORD|Y$是其宗主"
  HAS_NOT_ANY_OVERLORD:0 "没有任何宗主"
 
  HAS_NOT_RIVAL:0 "与$RIVAL$非劲敌"
@@ -4397,6 +4397,10 @@
  requires_no_existing_strategic_coordination_center:0 "$TRIGGER_FAIL$只能建造一座$strategic_coordination_center_3$。"
  requires_no_existing_mega_art_installation:0 "$TRIGGER_FAIL$只能建造一座$mega_art_installtion_3$。"
  requires_no_existing_interstellar_assembly:0 "$TRIGGER_FAIL$只能建造一座$interstellar_assembly_4$。"
+ requires_no_existing_matter_decompressor_two:0 "$TRIGGER_FAIL$至多只能建造两座物质解压器。"
+ requires_no_existing_strategic_coordination_center_two:0 "$TRIGGER_FAIL$至多只能建造两座战略指挥中心。"
+ requires_no_existing_mega_art_installation_two:0 "$TRIGGER_FAIL$至多只能建造两座巨型艺术设施。"
+ requires_no_existing_interstellar_assembly_two:0 "$TRIGGER_FAIL$至多只能建造两座星际集会。"
 
  observation.1011.b:0 "这不是我们的问题。"
 
@@ -4428,6 +4432,10 @@
 
  nanites_deficit:0 "纳米机器人短缺"
  nanites_deficit_tooltip:0 "纳米机器人的缺乏导致了纳米变形器的停滞。"
+ sr_living_metal_deficit:1 "Living Metal Deficit" # [LocEditor:ForFutureBatchExport]
+ sr_living_metal_deficit_tooltip:1 "A lack of Living Metal cancels all Edicts using it." # [LocEditor:ForFutureBatchExport]
+ sr_zro_deficit:1 "Zro Deficit" # [LocEditor:ForFutureBatchExport]
+ sr_zro_deficit_tooltip:1 "A lack of Zro cancels all Edicts using it." # [LocEditor:ForFutureBatchExport]
  mod_pop_factions_produces_mult:1 "派系凝聚力收益"
 
  CARAVANEERS_LABEL:0 "旅商"

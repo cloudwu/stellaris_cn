@@ -49,6 +49,22 @@ local function diff_icon(new, old, c)
 	end
 end
 
+local function comment_only(a, b)
+	local v1, comment = a:match "(.*)#(.*)$"
+	if v1 == nil then
+		v1 = a
+	end
+	local v2 = b:match "(.*)#.*$"
+	if v2 == nil then
+		v2 = b
+	end
+	v1 = v1:match "(.-)%s*$"
+	v2 = v2:match "(.-)%s*$"
+	if v1 == v2 then
+		return comment
+	end
+end
+
 local function diff(filename, dict)
 	local f = new_diff(diff_path .. filename .. ".diff")
 	local cnf = io.open(output_path .. filename, "wb")
@@ -80,21 +96,28 @@ local function diff(filename, dict)
 					end
 					cnf:write(" ", key, ":", dig, " ", v, "\n")
 				else
-					f:write("NEW ", key, ":", dig, " ", value, "\n")
-					f:write("OLD ", key, ":", en34.d, " ", en34.v, "\n")
-					local ct = diff_icon(value, en34.v, cn34.v)
-					if ct then
-						-- only icon changes
-						f:write(" ", key, ":", dig, " ", ct, "\n")
+					local comment = comment_only(value, en34.v)
+					if comment then
+						-- add comment
+						cnf:write(" ", key, ":", dig, " ", cn34.v, " #", comment, "\n")
 					else
-						f:write("CN  ", key, ":", dig, " ", cn34.v, "\n")
-						if cn35 then
-							f:write("CN2 ", key, ":", dig, " ", cn35.v, "\n")
+						f:write("NEW ", key, ":", dig, " ", value, "\n")
+						f:write("OLD ", key, ":", en34.d, " ", en34.v, "\n")
+						local ct = diff_icon(value, en34.v, cn34.v)
+						if ct then
+							-- only icon changes
+							f:write(" ", key, ":", dig, " ", ct, "\n")
+						else
+							f:write("CN  ", key, ":", dig, " ", cn34.v, "\n")
+							if cn35 then
+								f:write("CN2 ", key, ":", dig, " ", cn35.v, "\n")
+							end
+							-- use english
+							cnf:write(line, "\n")
+							cnf:write("#", key, ":", dig, " ", en34.v, "\n")
+							cnf:write("#", key, ":", dig, " ", cn35.v, "\n")
+							cnf:write("#", key, ":", dig, " ", cn34.v, "\n")
 						end
-						-- use english
-						cnf:write(line, "\n")
-						cnf:write("#", key, ":", dig, " ", cn35.v, "\n")
-						cnf:write("#", key, ":", dig, " ", cn34.v, "\n")
 					end
 				end
 			end

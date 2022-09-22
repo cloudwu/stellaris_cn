@@ -3,7 +3,7 @@
 
  ORIGIN:0 "Origin"
  EMPIRE_ORIGIN:0 "$ORIGIN$"
- TOOLTIP_SETUP_ORIGIN:0 "Select an Origin for your Empire."
+ TOOLTIP_SETUP_ORIGIN:1 "§H$ORIGIN$§!\nSelect an Origin for your Empire."
  GAMESETUP_COUNTRY_INVALID_ORIGIN:0 "You need to select an Origin before continuing"
  ORIGIN_INITIALIZER_RESTRICTION:0 "Cannot change due to current Origin selection"
 
@@ -61,7 +61,7 @@
  d_tree_of_life_colony_desc:1 "An offshoot of the Great Tree, transplanted here by the Hive. It will take millennia for it to fully mature."
  d_lithoid_crater:0 "Massive Crater"
  d_lithoid_crater_desc:0 "The impact site of the meteorite which brought Lithoids to this planet."
- d_buried_lithoids:0 "Buried Lithoids"
+ d_buried_lithoids:1 "£blocker£ Buried Lithoids"
  d_buried_lithoids_desc:0 "These Lithoids were driven deep into the ground when they fell from orbit."
  lithoid_crater:0 "Lithoid Crater"
  lithoid_crater_desc:0 "This large crater is the result of a Lithoid-bearing meteorite slamming into the planet."
@@ -71,7 +71,7 @@
  d_machine_minerals_desc:0 "The refined mineral wealth of an entire Solar system is gathered here in continent-sized piles."
  d_organic_slurry:0 "Organic slurry"
  d_organic_slurry_desc:0 "An ocean of organic slurry, the processed remains of the former biomass of a planet."
- d_resource_consolidation_1:0 "Malfunctioning Replicator Bay"
+ d_resource_consolidation_1:1 "£blocker£ Malfunctioning Replicator Bay"
  d_resource_consolidation_1_desc:0 "The replicator bay built into the Machine World is malfunctioning, producing endless piles of $MACHINE_hand_plural$."
 
  juggernaut:0 "Juggernaut"
@@ -982,7 +982,7 @@
  resolution_ecology_environmental_control_board:0 "Environmental Control Board"
  in_breach_of_resolution_ecology_environmental_control_board:0 "In breach of Environmental Control Board"
  resolution_ecology_environmental_control_board_desc:0 "Industry cannot regulate itself. We need a multinational environmental control board with the power to oversee industry and development to shut down environmental abuse."
- resolution_ecology_environmental_control_board_tooltip:1 "Converting planets into an §YEcumenopolis§! or §YTerraforming§! them into anything other than a §YGaia World§! is §Rbanned§!."
+ resolution_ecology_environmental_control_board_tooltip:2 "Converting planets into an §YEcumenopolis§! or §YTerraforming§! them into anything other than a §YGaia World§! is §Rbanned§!.\n£unity£ $unity$ from Naturally Occuring Blockers for §YEnvironmentalist Empires§!: §G+2§! £unity£""
  resolution_ecology_paradise_initiative_tooltip:0 "£unity£ $unity$ from Naturally Occuring Blockers for §YEnvironmentalist Empires§!: §G+3§! £unity£"
 
  resolution_ecology_paradise_initiative:0 "The Paradise Initiative"
@@ -1021,7 +1021,7 @@
 
  resolution_galacticstudies_advanced_xenostudies:0 "Advanced Xenostudies"
  resolution_galacticstudies_advanced_xenostudies_desc:1 "There is much to learn from all of the cultures of the universe. We should add additional information-gathering instrumentation to all starbases while working more closely with Enclaves."
- resolution_galacticstudies_advanced_xenostudies_tooltip:1 "Observation Posts provide additional £society£ §HSociety Research§! while §YObserving§! or §YInfiltrating§! primitive civilizations.\n\nEnhances the effectiveness of the §Y$sm_art_college$§!, §Y$sm_curator_think_tank$§!, §Y$sm_trader_proxy_office$§!, §Y$sm_salvager_workshop$§!, and §Y$sm_mercenary_garrison$§! starbase buildings.\n\nThe §YArtificial Intelligence Outlawed§! and §YPassive Native Studies§! policies are §Rbanned§!."
+ resolution_galacticstudies_advanced_xenostudies_tooltip:2 "Observation Posts provide additional £society£ §HSociety Research§! while §YObserving§! or §YInfiltrating§! primitive civilizations.\n\nEnhances the effectiveness of the §Y$sm_art_college$§!, §Y$sm_curator_think_tank$§!, §Y$sm_salvager_workshop$§!, and §Y$sm_mercenary_garrison$§! starbase buildings.\n\nThe §YArtificial Intelligence Outlawed§! and §YPassive Native Studies§! policies are §Rbanned§!."
 
  resolution_galacticstudies_ethical_guideline_refactoring:0 "Ethical Guideline Refactoring"
  resolution_galacticstudies_ethical_guideline_refactoring_desc:0 "To possess the ability to further science provides a moral imperative to do so, free from outdated ethical concepts that restrain us. We do what we must because we can."
@@ -1815,6 +1815,9 @@
 
  col_bureau_machine:0 "$col_bureau$"
  col_bureau_machine_desc:0 "$col_bureau_desc$"
+
+ col_trophy_machine:0 "Sanctuary World"
+ col_trophy_machine_desc:0 "A world dedicated to the care and protection of organic life."
 
  col_habitat_bureau:1 "Unification Station"
  col_habitat_bureau_desc:1 "An entire habitat dedicated to unifying our empire."
@@ -3180,11 +3183,6 @@
  thesis_megacorp3:0 "synergistic progression levelling in asset calibration"
  thesis_megacorp4:0 "dynamizing outflow projections with radical cynicism"
  thesis_megacorp5:0 "tidal pools and what they can teach us about daily user acquisition"
-
- # Duplicated from (synced loc) so they may be called inside event strings
- NAME_Wenkwort:0 "Wenkwort"
- NAME_Gardeners:0 "Audon Caretakers"
- NAME_wenkwort_prime:0 "Wenkwort Artem"
 
  #######################################
  # Federation Elections

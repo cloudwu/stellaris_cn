@@ -29,6 +29,8 @@
  MESSAGE_SYSTEM_SURVEYED_TITLE:0 "System surveyed"
  AUTO_EXPLORE_CANCELED_MESSAGE_TYPE_TITLE:0 "Fleet Order Canceled"
  MESSAGE_FLEET_ORDER_AUTO_EXPLORE_CANCELED:1 "§H$FLEET$§! canceled its Auto Surveying order. It cannot reach or find any other unsurveyed systems."
+ AUTO_EXPLORE_FALLBACK_MESSAGE_TYPE_TITLE:0 "Fleet Falling Back To Exploration"
+ MESSAGE_FLEET_ORDER_AUTO_EXPLORE_FALLBACK:0 "§H$FLEET$§! cannot reach any unsurveyed systems but will try to explore to find additional ones."
  FLEET_BUILD_ORDER_CANCELED_MESSAGE_TYPE_TITLE:0 "$AUTO_EXPLORE_CANCELED_MESSAGE_TYPE_TITLE$"
  MESSAGE_FLEET_BUILD_ORDER_CANCELED_MESSAGE:0 "$FLEET|H$ was unable to build a $STATION|H$ in $SYSTEM|H$. Resources have been refunded."
  MESSAGE_BYPASS_EXPLORED:0 "Wormhole Explored"
@@ -220,6 +222,8 @@
  ACTION_INSULT_NOTIFICATION:2 "§H[From.GetName]§! insulted §H[Root.GetName]§!.\n\nIt seems that conflict is brewing..."
  ACTION_INTEGRATE_SUBJECT_NOTIFICATION:2 "§H[From.GetName]§! started to integrate §H[Root.GetName]§!.\n\nSoon, the last vestiges of [Root.GetAdj] independence will be stripped away."
  ACTION_CANCEL_SUBJECT_INTEGRATION_NOTIFICATION:2 "§H[From.GetName]§! stopped integrating §H[Root.GetName]§!.\n\nIt appears that [Root.GetSpeciesNamePlural] may be more trouble than they're worth."
+ MESSAGE_TYPE_RELICS_GAINED_INTEGRATION_TITLE:0 "Relics gained from Integration"
+ MESSAGE_RELICS_GAINED_INTEGRATION:0 "We have gained all the relics that §H[From.GetName]§! possessed after integrating them."
  ACTION_FORM_DEFENSIVE_PACT_NOTIFICATION:1 "§H[From.GetName]§! entered into a Defensive Pact with §H[Root.GetName]§!.\n\nThey will now defend each other against all foes."
  ACTION_BREAK_DEFENSIVE_PACT_NOTIFICATION:1 "§H[From.GetName]§! broke off their Defensive Pact with §H[Root.GetName]§!.\n\nIt seems they believe themselves better off alone."
  ACTION_FORM_NON_AGGRESSION_PACT_NOTIFICATION:1 "§H[From.GetName]§! entered into a Non-Aggression Pact with §H[Root.GetName]§!.\n\nWe shall see if this peace will last."
@@ -359,6 +363,13 @@
  MESSAGE_DEBRIS_ANALYZED_FINISH_BONUS:1 "£$AREA_KEY$£ §Y$AREA$ Research§!: §G+$VAL|0$§! points"
  MESSAGE_DEBRIS_ANALYZED_FINISH_TECH_PROGRESS:1 "$TECH|Y$: §G+$VAL|%0$§! progress"
  MESSAGE_DEBRIS_ANALYZED_FINISH_MESSAGE_TYPE_TITLE:0 "Debris Analyzed"
+
+ MESSAGE_DEBRIS_SCAVENGED_FINISH:0 "We have finished scavenging the debris in $SYSTEM|Y$."
+ MESSAGE_DEBRIS_SCAVENGED_FINISH_RESOURCE:0 "£$RESOURCE_KEY$£ §Y$NAME$§!: §G+$VAL$§!"
+ MESSAGE_DEBRIS_SCAVENGED_FINISH_MESSAGE_TYPE_TITLE:0 "Debris Scavenged"
+
+ MESSAGE_DEBRIS_SCAVENGED_AND_ANALYZED_FINISH:0 "We have finished scavenging and analyzing the debris in $SYSTEM|Y$."
+ MESSAGE_DEBRIS_SCAVENGED_AND_ANALYZED_FINISH_MESSAGE_TYPE_TITLE:0 "Debris Scavenged and Analyzed"
 
  ####################################
  # Anomaly

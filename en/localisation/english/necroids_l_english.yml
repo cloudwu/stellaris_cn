@@ -6,7 +6,7 @@
  ### Necrophage Origin by Pierre du Plessis
 
  origin_necrophage:0 "Necrophage"
- origin_necrophage_desc:0 "This civilization evolved as a parasite, feeding off other sapient life forms for growth. As it extends its reach across the galaxy, other species will come to be seen either as apprentices to be brought into the fold, or merely as food to sustain its growing might."
+ origin_necrophage_desc:1 "This civilization evolved as a parasite, forced to feed off other sapient life forms to sustain itself. As it arrives on the galactic stage, other species will either be brought into the fold, or become its food. For the necrophage, there can be no other way."
  civic_tooltip_necrophage_effects:1 "- Can convert £pops£ Pops of other species to the §Hprimary species§!.\n- Only Necrophage Pops may be §Hleaders§! or take §Hruler jobs§!.\n- Start with a number of £pops£ Pops of a secondary, prepatent species.\n- Guaranteed habitable planets are instead §Hprimitive civilizations§!."
  civic_necrophage_secondary_species:0 "Prepatent Species"
  trait_necrophage:0 "Necrophage"
@@ -233,11 +233,12 @@
  job_death_chronicler:0 "Death Chronicler"
  job_death_chronicler_plural:0 "Death Chroniclers"
  job_death_chronicler_desc:0 "Entropy is the domain of these scholars, who observe and record death and its effects in all their various expressions."
- job_death_chronicler_effect_desc:1 "£job_death_chronicler£ $job_death_chronicler_plural$ turn £consumer_goods£ §Y$consumer_goods$§! into £unity£ §Y$unity$§!, £society£ §Y$society_research$§! and £stability£ §YStability§!"
+ job_death_chronicler_effect_desc:2 "£job_death_chronicler£ $job_death_chronicler_plural$ turn £consumer_goods£ §Y$consumer_goods$§! into £unity£ §Y$unity$§!, [GetCultureWorkerSpiMatOutput][GetCultureWorkerEgalAuthOutput][GetCultureWorkerMilPacOutput][GetCultureWorkerXenoOutput] and £stability£ §YStability§!.\n\n£job_death_chronicler£ Death Chroniclers' effects vary depending on the Empire's ethics."
+ job_death_chronicler_simple_effect_desc:0 "£job_death_chronicler£ $job_death_chronicler_plural$ turn £consumer_goods£ §Y$consumer_goods$§! into £unity£ §Y$unity$§!, £stability£ §YStability§! and inherit the §YEthics-based§! modifiers of §Y£job_culture_worker£ $job_culture_worker_plural$§!."
  job_chronicle_drone:0 "Chronicle Drone"
  job_chronicle_drone_plural:0 "Chronicle Drones"
  job_chronicle_drone_desc:0 "These specialized drones turn their thoughts to entropy, researching terminal decay as a counterpoint to our own, continued existence."
- job_chronicle_drone_effect_desc:2 "£job_chronicle_drone£ $job_chronicle_drone_plural$ turn £energy£ §Y$energy$§! and £minerals£ §Y$minerals$§! into £unity£ §Y$unity$§!, £society£ §Y$society_research$§! and £stability£ §YStability§!"
+ job_chronicle_drone_effect_desc:3 "£job_chronicle_drone£ $job_chronicle_drone_plural$ turn £energy£ §Y$energy$§! and £minerals£ §Y$minerals$§! into £unity£ §Y$unity$§!, £stability£ §YStability§! and $r_amenities$"
  mod_job_death_chronicler_add:0 "$job_death_chronicler$ Jobs"
  mod_job_death_chronicler_per_pop:0 "§G+1§! $job_death_chronicler$ Job per $VALUE$ Pops"
  mod_job_death_chronicler_per_pop_short:0 "\n§G+1§! £mod_job_death_chronicler_add£ per $VALUE$ £pop£"
@@ -249,7 +250,7 @@
  ### Permanent Employment by Victor Haeggman
  civic_permanent_employment:0 "Permanent Employment"
  civic_permanent_employment_desc:0 "This Megacorporation has ensured that its employees will never be out of a job. Ever. After the employee's time is up, they will be repurposed for simpler tasks so that they can still provide for their families and pay off their debts."
- civic_tooltip_permanent_employment_effects:2 "Can build £building£ §Y$building_posthumous_employment_center$§!\n$job_reassigner_effect_desc$\n\nGrants access to the £building£ §Y$holding_reemployment_center$§! Holding\nDefeated organic Leviathans can sometimes be resurrected."
+ civic_tooltip_permanent_employment_effects:3 "Can build £building£ §Y$building_posthumous_employment_center$§!\n$job_reassigner_effect_desc$\n\nGrants access to the £building£ §Y$holding_reemployment_center$§! Holding.\n\nDefeated organic Leviathans can sometimes be resurrected."
  job_reassigner:0 "Reassigner"
  job_reassigner_desc:0 "Reassigners ensure that once a Megacorporation's citizen has passed on, their remains will stay at work until the fulfillment of their contract."
  job_reassigner_plural:0 "Reassigners"

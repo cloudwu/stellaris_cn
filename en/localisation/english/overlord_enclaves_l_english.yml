@@ -60,11 +60,12 @@
  enclave.205.desc.hostile:0 "Ah, the warmonger returns.\n\nHave you finally come to your senses and seen the futility of these pointless actions of yours? For a small sum, a mere token of your goodwill, we at the [mercenary_enclave_country.GetName] are willing to put these disagreements aside. Together, let us look forward to a profitable future."
  enclave.205.desc.unfriendly:0 "We have no services for you. Get out."
  enclave.205.a:1 "We wish to §Yrent a fleet§!."
- enclave.205.tooltip.a:0 "Another empire is already renting our fleet."
+ enclave.205.tooltip.a:1 "The [event_target:current_client.GetName] is already renting our fleet."
  enclave.205.tooltip.b:0 "No available fleet to rent out."
  enclave.205.b:1 "We wish to §Ymanage§! our rented fleet."
  enclave.205.c:1 "We are interested in setting up §YMercenary Garrisons§!."
  enclave.205.d:1 "We want to help you field a §Ybigger fleet§!."
+ enclave.205.d.timeout:0 "The enclave is recruiting new officers and crew. They cannot field further logistical improvements until after §Y[event_target:mercenary_enclave_country.upgraded_station_timer]§!."
  enclave.205.e:1 "We are looking for §Ytactical insight§! into formidable foes."
  enclave.205.f:1 "We wish to hire §Yground troops§!."
  enclave.205.g:1 "What §Ylogistical solutions§! can you offer?"
@@ -136,6 +137,10 @@
  enclave.2035.name:0 "Logistic Support Contract Ending"
  enclave.2035.desc:1 "Dearest client,\n\nThe Logistic Support service we provide you is due for renewal. As per the terms of our contract: if we do not receive prompt instructions to do otherwise, you will be automatically billed for renewal of this service.\n\nWe trust that you are satisfied, and look forward to doing more business with you!"
  enclave.2035.a:0 "We don't need this service right now."
+ enclave.2060.name:0 "Fleet Contract Ended"
+ enclave.2060.desc:0 "Our contract with the [event_target:mercenary_enclave_country.GetName] has ended and their fleet is about to depart. Should we contact them to renew the contract?"
+ enclave.2060.a:0 "Not at this time."
+ enclave.2060.b:0 "Yes, open communications."
 
  #Modifiers
  mercenary_fleet_size_upgrade_1:0 "Mercenary Fleet Size Upgrade"
@@ -187,6 +192,8 @@
  salvager_overdrive_desc:0 "This empire is benefitting from the focused efforts of a friendly Salvager crew, speeding up construction in their starbases and colonies."
  salvager_insight:0 "Salvager Insight"
  salvager_insight_desc:0 "This empire's scientists benefit from the practical expertise of a Salvager Enclave, fast-tracking exciting new breakthroughs in engineering."
+ salvage_overseer:0 "Salvage Overseer"
+ salvage_overseer_desc:0 "An experienced scavenger from the Salvager Enclave is helping this empire see to it that the remains of its battlefields are put to good use."
 
  #Situations
  mercenary_dividends:0 "Mercenary Dividends"
@@ -217,6 +224,8 @@
  enclave.305.a.desc:0 "Pleased to make your acquaintance! On behalf of the [salvager_enclave_country.GetName], I welcome you to our humble, interstellar workshop.\n\nSay... I'd recognize those keel fixtures anywhere - some fine work. We make a habit of keeping up with what's flying in the galaxy, try to keep up with local trends. But where was I..?\n\nAh yes: welcome! How can we facilitate your salvage and reclamation needs?"
  enclave.305.b.desc:0 "Hello, hello! On behalf of the [salvager_enclave_country.GetName], I welcome you to our salvage yard. Hulls, drives, blueprints, fittings: we stock it all.\n\nI'm not even joking - you'd be amazed what people leave inside their old ships. Just recently I laid my [salvager_enclave_country.species.GetHandNamePlural] on an entire galley unit, cast in gold. Wild.\n\nAnyway, how can we facilitate your salvage and reclamation needs?"
  enclave.305.c.desc:0 "Salutations! On behalf of the [salvager_enclave_country.GetName], I welcome you to our workshop and scrapyard. Legions of dedicated engineers stand ready to repair, rebuild, and tear down just about anything they can latch a tool onto. You'll find our passion for the trade is quite insatiable.\n\nHow can we facilitate your salvage and reclamation needs today?"
+ enclave.305.desc.scavenger_first:0 "Welcome! I sure am glad to meet some fellow scavengers - the galaxy can be a lonely place for those like us.\n\nYou know the drill - we gather together old parts that no one sees any use for, and breathe new life into them. If there's anything you can't get your [Root.GetSpeciesHandNamePlural] on, rest assured, we will have it.\n\nAnyway, how can we facilitate your salvage and reclamation needs?"
+ enclave.305.desc.scavenger_followup:0 "Greetings! Have you gotten bored of running an empire yet? You could join us in the scrapping business - it's much less stressful, and you clearly have the knack for it."
  enclave.305.n.desc:0 "Hello again! Busy times, these - I trust your empire's affairs are running smoothly? I dare say we're all abuzz here, as usual. Idle [salvager_enclave_country.species.GetHandNamePlural] make fast work of outdated colony ships..."
  enclave.305.o.desc:0 "Greetings! And how might we serve your engineering needs today?\n\nHmm, curious hull plate fixtures you have there - how are they working out for you?"
  enclave.305.p.desc:0 "Welcome back! And hey, get a load of those smooth, new drive signatures! I do hope we're managing to impart some small, positive influence on the way you maintain your ships; they'll thank you for it.\n\nHow can we be of service?"
@@ -229,6 +238,7 @@
  enclave.305.d:0 "Can you aid us with §Yconstruction§! efforts?"
  enclave.305.e:0 "We'd like you to salvage some §Ydebris§!."
  enclave.305.f:1 "Can you help us with §Yengineering research§!?"
+ enclave.305.g:0 "We wish to hire a §Ysalvage overseer§!."
 
  enclave.310.desc:1 "Splendid! It would be our pleasure to take that off your hands.\n\nAccording to our scanners, you have the following fleets within range. You'll find our estimates attached; the choice is now yours!\n\n$enclave.310.instructions$"
  enclave.310.organic.desc:0 "Splendid! It would be our pleasure to... By the stars, what is that?! You call that a vessel? I mean, I can see how it... Wow, it's a mean-looking thing. Please, don't do anything hasty! We can take living 'ships' off your hands too, but I'm afraid §Hwe must charge a clean-up penalty§!.\n\nAccording to our scanners, you have the following fleets within range. You'll find our estimates attached; the choice is now yours!\n\n$enclave.310.instructions$"
@@ -269,6 +279,8 @@
  enclave.335.desc:0 "Of course! Our mechanics have been hard at work devising ambitious new work plans, and it would be our pleasure to extend to you a limited-time frenzy of productivity.\n\nWe'll put that Salvage Works of yours into high gear, reclaiming and repurposing parts for projects on §Yall your starbases§!. We even have a few tricks up our sleeves to help you produce ships, in case that should be useful!\n\nBear in mind that work like this takes its toll; we shan't manage this often."
  enclave.335.a:0 "$enclave.310.a$"
 
+ enclave.336.desc:0 "Hello again! I'm pleased to say we're ready to kick things back into a higher gear, and get that Salvage Works to really earn its keep.\n\nWhat do you say? Ready to speed up shipbuilding across §Yall your starbases§!?"
+
  enclave.340.a.desc:0 "A most solemn calling. It pains us more deeply than you can know to hear of ships stricken in battle, but life is harsh out here in the vacuum, and needs must.\n\n... Please, forgive my reverie. Absolutely, that is a service we can provide.\n\n$enclave.340.main.desc$"
  enclave.340.b.desc:0 "Alas. So, the harsh vacuum has claimed more ships... But of course, we will gladly attempt to reclaim something positive from this tragic battle you speak of.\n\n$enclave.340.main.desc$"
  enclave.340.main.desc:0 "If you would be so kind as to grants us §Ysalvage rights§! and furnish us with §Yco-ordinates§! for these debris fields, we shall compensate you in due course."
@@ -282,6 +294,13 @@
 
  enclave.345.desc:1 "It would be our pleasure! Idle [salvager_enclave_country.species.GetHandNamePlural] make curious minds, and that counts double for us! We are most happy to lend aid and share handy tips with our §Yregular customers§! - so long as our modest expenses are covered.\n\nWe would also appreciate any donation you can make to help shore up our humble starbase! Old hulls can be repurposed many times over, but sometimes there's just no beating the reliability of a freshly-smelted bulkhead."
  enclave.345.a:0 "$enclave.310.a$"
+
+ enclave.346.desc:0 "Hello, friends! Our years of collaborative study have really whisked by. The way I hear it, a few of our engineers have picked up a few tips from you, as well as you from us!\n\nHowever, the agreed upon time has now elapsed and we could use those keen-minded apprentices of ours back at home... That is, unless you're willing to compensate us for a while longer?"
+
+ enclave.350.desc:0 "As one of our more §Yregular customers§!, we would certainly be willing to send someone to oversee your scrapping efforts, for a small cut. It will be a welcome diversion to trawl freshly-charred wrecks."
+ enclave.350.desc.not_available:0 "We offer our §Yregular customers§! the services of an overseer who can improve your scrapping efforts, for a small cut. Unfortunately, none of our overseers are available at the moment - they are in high demand, and I'm afraid some of our other customers take priority."
+ enclave.350.a:0 "$enclave.310.a$"
+ enclave.352.desc:0 "Greetings! The overseer we had sent to you has returned to us, their term in the field complete. However, we would certainly be willing to send a replacement, if you still have use for our services."
 
  enclave.360.name:0 "Reclaimed Bounty"
  enclave.360.intro:0 "A train of cargo barges has just arrived from the §Y[salvager_enclave_country.GetName]§!, carrying a consignment of reclaimed resources."
@@ -298,7 +317,7 @@
  enclave.365.tt:0 "We will receive:"
  enclave.365.d:0 "Hail them! We have more debris they could handle."
 
- enclave.375:0 "Salvager Enclave Destroyed"
+ enclave.375.name:0 "Salvager Enclave Destroyed"
  enclave.375.desc:0 "Our offensive in the [salvager_system.GetName] system was a resounding success. The [FROM.GetName] is destroyed, and the few remaining survivors have scattered to the void. With their facilities in ruin, their petty services are a thing of the past. The galaxy is well rid of them."
  enclave.380.desc:0 "We have received reports that the [FROM.GetName] Enclave in the [salvager_system.GetName] system has been destroyed. The aggressors made short work of the campaign, reducing the Salvagers' facilities to rubble. The few remaining survivors have scattered, and it appears that for the time being the galaxy will have to make do without their services."
 
@@ -352,7 +371,7 @@
  shroud_beacon_info:1 "Permits building a §HShroud Beacon§! on one of our Starbases. Once built, it will spawn a §HShroud Tunnel§!, providing passage to and from the §Y[shroudwalker_enclave_system.GetName] system§!. Only one Tunnel can be spawned - choose its location carefully."
  enclave.425.desc:1 "A saying is known to us: the paths of the Shroud are strange and winding. May this Beacon light your way forward."
 
- enclave.435:0 "Shroudwalker Enclave Destroyed"
+ enclave.435.name:0 "Shroudwalker Enclave Destroyed"
  enclave.435.desc:0 "Victory in the [shroudwalker_system.GetName] system! Our forces made short work of the so-called mystics of the [FROM.GetName]. For all the grand talk of knowledge and power, their foolish devotion to the Shroud could not provide clairvoyance enough to forestall our assault. In fact, our forces easily breached the facility's mechanical defenses. However, once inside, they discovered the enclave empty, save for a lone acolyte they found deep in meditation in a remote chamber. Where the rest have gone, we have no idea, but the galaxy is well rid of such hollow dogma."
  enclave.440.desc:0 "Reports are coming in surrounding the destruction of the [FROM.GetName] in the [shroudwalker_system.GetName] system. The aggressors made short work of the campaign, reducing the Shroudwalker’s facilities to rubble. It is strange to think that these mystics could not foresee their own demise. Or could this tragedy be a part of some still grander design? Who can say? Without their services, the future remains shrouded."
 
@@ -771,6 +790,42 @@
  enclave.6010.a.desc:0 "The subtle mental changes experienced by the commander of the [Root.GetName] are now coming into focus: a month after their passage through the Shroud Tunnel, their command style has noticeably shifted. It is fair to say that the experience has resulted in the development of a new trait."
  enclave.6010.b.desc:0 "The neural changes first experienced by the commander of the [Root.GetName] are now coming into collective focus: a month after the drone's passage through the Shroud Tunnel, their disposition has noticeably shifted. The experience has resulted in the development of a new trait."
  enclave.6010.c.desc:0 "The neural changes first experienced by the commander of the [Root.GetName] are now becoming clear: a month after their passage through the Shroud Tunnel, the drone's personality matrix has noticeably shifted. The experience has resulted in the development of a new trait."
+ shroud_touched_intro:0 "Passage through the Shroud is not lightly taken;"
+ #Non Gestalt Traits
+ leader_trait_admiral_mind_wipe_01:0 "Shroud-Touched Admiral"
+ leader_trait_admiral_mind_wipe_01_desc:0 "$shroud_touched_intro$ this admiral's mind now swirls with new ideas to enhance ship performance."
+ leader_trait_admiral_mind_wipe_02:0 "Shroud-Touched Admiral"
+ leader_trait_admiral_mind_wipe_02_desc:0 "$shroud_touched_intro$ this admiral's mind now swirls with new ideas to enhance weapon systems."
+ leader_trait_scientist_mind_wipe_01:0 "Shroud-Touched Scientist"
+ leader_trait_scientist_mind_wipe_01_desc:0 "$shroud_touched_intro$ this scientist's mind now swirls with new ideas to boost research performance."
+ leader_trait_scientist_mind_wipe_02:0 "Shroud-Touched Scientist"
+ leader_trait_scientist_mind_wipe_02_desc:0 "$shroud_touched_intro$ this scientist's mind now swirls with new ideas to assist archaeological research."
+ leader_trait_general_mind_wipe_01:0 "Shroud-Touched General"
+ leader_trait_general_mind_wipe_01_desc:0 "$shroud_touched_intro$ this general's mind now swirls with new ideas to increase the potency of our armies."
+ leader_trait_general_mind_wipe_02:0 "Shroud-Touched General"
+ leader_trait_general_mind_wipe_02_desc:0 "$shroud_touched_intro$ this general's mind now swirls with new ideas to enhance the performance of our armies."
+ leader_trait_ruler_mind_wipe_01:0 "Shroud-Touched Ruler"
+ leader_trait_ruler_mind_wipe_01_desc:0 "$shroud_touched_intro$ this ruler's mind now swirls with new ideas to assist construction efforts."
+ leader_trait_ruler_mind_wipe_02:0 "Shroud-Touched Ruler"
+ leader_trait_ruler_mind_wipe_02_desc:0 "$shroud_touched_intro$ this ruler's mind now swirls with new ideas to boost fleet performance."
+
+ #Gestalt Traits
+ gestalt_trait_admiral_mind_wipe_01:0 "Shroud-Touched Naval Drone"
+ gestalt_trait_admiral_mind_wipe_01_desc:0 "$shroud_touched_intro$ this drone is now capable of enhancing ship performance."
+ gestalt_trait_admiral_mind_wipe_02:0 "Shroud-Touched Naval Drone"
+ gestalt_trait_admiral_mind_wipe_02_desc:0 "$shroud_touched_intro$ this drone is now capable of enhancing weapon systems."
+ gestalt_trait_scientist_mind_wipe_01:0 "Shroud-Touched Research Drone"
+ gestalt_trait_scientist_mind_wipe_01_desc:0 "$shroud_touched_intro$ this drone is now capable of advanced research techniques."
+ gestalt_trait_scientist_mind_wipe_02:0 "Shroud-Touched Research Drone"
+ gestalt_trait_scientist_mind_wipe_02_desc:0 "$shroud_touched_intro$ this drone is now capable of enhanced archaeological research."
+ gestalt_trait_general_mind_wipe_01:0 "Shroud-Touched Assault Drone"
+ gestalt_trait_general_mind_wipe_01_desc:0 "$shroud_touched_intro$ this drone's uplink to our armies has been enhanced."
+ gestalt_trait_general_mind_wipe_02:0 "Shroud-Touched Assault Drone"
+ gestalt_trait_general_mind_wipe_02_desc:0 "$shroud_touched_intro$ this drone's uplink to our armies has been improved."
+ gestalt_trait_ruler_mind_wipe_01:0 "Shroud-Touched Command Drone"
+ gestalt_trait_ruler_mind_wipe_01_desc:0 "$shroud_touched_intro$ this drone is now capable of enhancing our construction techniques."
+ gestalt_trait_ruler_mind_wipe_02:0 "Shroud-Touched Command Drone"
+ gestalt_trait_ruler_mind_wipe_02_desc:0 "$shroud_touched_intro$ is now capable of boosting fleet performance."
 
  enclave.6015.name:0 "A Curtain Falls"
  enclave.6015.desc:0 "With our Shroud Beacon offline, we have lost access to the Shroud Tunnel network. Our fleets will be unable to utilize the network until the Beacon is replaced."
@@ -836,10 +891,10 @@
  shroudwalker_teacher_already_bought:0 "§RWe have already purchased the services of a Shroudwalker teacher.§!"
  shroudwalker_teacher_already_exists:0 "§RThis planet already has the services of a Shroudwalker teacher.§!"
 
- enclave.7100.desc:0 "Mastery of the Shroud is a journey of 10 000 lifetimes; even our most gifted teachers can claim only partial knowledge of its mysteries. Nevertheless, their wisdom is invaluable. Should you wish it, we will dispatch one  to guide your course."
+ enclave.7100.desc:1 "Mastery of the Shroud is a journey of 10,000 lifetimes; even our most gifted teachers can claim only partial knowledge of its mysteries. Nevertheless, their wisdom is invaluable. Should you wish it, we will dispatch one to guide your course."
  enclave.7100.a:0 "We wish to learn."
 
- enclave.7105.desc:0 "To know that there is always more to know; this is the highest wisdom. A teacher will be sent to you. Learn well, and you will surely reap the rewards."
+ enclave.7105.desc:1 "To know that there is always more to know: this is the highest wisdom. A teacher will be sent to you. Learn well, and you will surely reap the rewards."
 
  decision_shroudwalker_teacher:0 "Shroudwalker Teacher"
  decision_shroudwalker_teacher_desc:0 "An adept of the [shroudwalker_enclave_country.GetName] is on planet, instructing in the ways of the Shroud."

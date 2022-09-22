@@ -59,6 +59,7 @@
 
  thankful_for_gaia:0 "Thankful for Gaia"
  thankful_for_gaia_desc:0 "Our Overlord has recently terraformed one of our planets into a gaia world. How kind of them!"
+
 ### Traits by Byron Aytoun
 
  trait_plantoid_phototrophic:0 "Phototrophic"
@@ -70,10 +71,16 @@
  TRAIT_PLANTOID_RADIOTROPHIC_EFFECT:0 "$TRAIT_PLANTOID_PHOTOTROPHIC_EFFECT$\nPops living on §YTomb Worlds§! have no £energy£ §YEnergy§! Upkeep.\nPop Growth Speed on §YTomb Worlds§! §G+10%§!\nTomb World Habitability: §G+10%§!"
  trait_harvested_radiotrophic:0 "$trait_plantoid_radiotrophic$"
  trait_harvested_radiotrophic_desc:0 "$trait_plantoid_radiotrophic_desc$"
+ trait_lithoid_radiotrophic:0 "$trait_plantoid_radiotrophic$"
+ trait_lithoid_radiotrophic_desc:0 "$trait_plantoid_radiotrophic_desc$"
+ TRAIT_LITHOID_RADIOTROPHIC_EFFECT:0 "Replaces §Y50%§! of Base £minerals£ §YMinerals§! Upkeep with £energy£ §YEnergy§! Upkeep.\nPops living on §YTomb Worlds§! have no £energy£ §YEnergy§! Upkeep.\nPop Growth Speed on §YTomb Worlds§! §G+10%§!\nTomb World Habitability: §G+10%§!"
 
  trait_plantoid_budding:0 "Budding"
  trait_plantoid_budding_desc:0 "§LThis species is capable of reproduction by budding, in addition to the more usual fertilization of seeds or spores.§!"
- TRAIT_PLANTOID_BUDDING_EFFECT:0 "Each pop working as a slave or better produces 0.02 £mod_pop_growth_speed£ §Y$MOD_PLANET_POP_ASSEMBLY_ORGANIC_ADD$§!"
+ trait_lithoid_budding:0 "Crystallization"
+ trait_lithoid_budding_desc:0 "§LWith crystalline growths, this species is capable of generating self replicating lattices of themselves, in addition to the more usual reproductive methods.§!"
+ TRAIT_PLANTOID_BUDDING_EFFECT:1 "Each pop working as a slave or better produces 0.02 £mod_pop_growth_speed£ §Y$MOD_PLANET_POP_ASSEMBLY_ORGANIC_ADD$§!.\n\nThis stacks with other sources of $MOD_PLANET_POP_ASSEMBLY_ORGANIC_ADD$ such as £building£ §H$building_clone_vats$§! or £job_spawning_drone£ §H$job_spawning_drone_plural$§!."
+ TRAIT_LITHOID_BUDDING_EFFECT:0 "$TRAIT_PLANTOID_BUDDING_EFFECT$\n\nThe §H$trait_lithoid$ Trait§! modifies this trait's effects."
 
 ### Catalytic Processing by Byron Aytoun
 

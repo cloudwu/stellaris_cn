@@ -125,8 +125,8 @@
  PREY:0 "PREY"
  Reset_counters:0 "Reset counters."
 
- NUM_HOUSING_TRIGGER:0 "Planet housing $VALUE1|0Y$ is $COMPARE$ $VALUE2|0Y$"
- NUM_HOUSING_NOT_TRIGGER:0 "Planet housing $VALUE1|0Y$ is NOT $COMPARE$ $VALUE2|0Y$"
+ NUM_HOUSING_TRIGGER:1 "Planet housing ($VALUE1|0Y$) is $COMPARE$ $VALUE2|0Y$"
+ NUM_HOUSING_NOT_TRIGGER:1 "Planet housing ($VALUE1|0Y$) is NOT $COMPARE$ $VALUE2|0Y$"
  HAS_SECTOR_FOCUS:0 "Has sector focus $SECTOR_FOCUS$"
  HAS_NOT_SECTOR_FOCUS:0 "Does NOT have sector focus $SECTOR_FOCUS$"
  IS_SECTOR_CAPITAL:0 "Is a sector capital"
@@ -135,12 +135,15 @@
  SET_SECTOR_FOCUS_EFFECT:0 "Sets the sector focus to $SECTOR_FOCUS$"
  SET_COLONY_DESIGNATION_EFFECT:0 "Sets the colony type to $COLONY_DESIGNATION$"
 
+ NUM_DEPOSITS_TRIGGER:0 "Planet has $COMPARE$ $VALUE2|0Y$ Deposits ($VALUE1|0Y$)"
+ NUM_DEPOSITS_NOT_TRIGGER:0 "Planet does NOT have $COMPARE$ $VALUE2|0Y$ Deposits ($VALUE1|0Y$)"
+
  effect_random_owned_ship:0 "Random Owned Ship"
  effect_every_owned_ship:0 "Every Owned Ship"
  any_owned_ship_trigger:0 "Any Owned Ship"
  count_owned_ship_trigger:0 "Number of Owned Ships$CONDITIONS$ $IS_NOT$ $COMPARATOR$ $NUM|Y$"
  count_owned_ship_all_trigger:0 "$IS_ALL_NOT$ Owned Ships fulfill the following conditions"
- 
+
  effect_random_controlled_ship:0 "Random Controlled Ship"
  effect_every_controlled_ship:0 "Every Controlled Ship"
  any_controlled_ship_trigger:0 "Any Controlled Ship"
@@ -546,6 +549,85 @@
  25_NEUTRAL_GREETING:0 "Your wanton murder of defenseless Tiyanki has not gone unnoticed."
  25_FRIENDLY_GREETING:0 "The Tiyanki have never been a threat... what could possibly have compelled you to attack them?"
 
+
+ ### Tiyanki Space Graveyard System by Giada Zavarise ###
+
+ ## Event chain
+ tiyanki_graveyard_chain_title:0 "Tiyanki Graveyard"
+ tiyanki_graveyard_chain_desc:0 "A planet entirely covered in the bodies of dead Tiyanki has been found in the §H[tiyanki_graveyard_system.GetName]§! system. In order to study this unusual burial ground, we must first deal with its gravekeepers."
+
+ ## Special project
+ TIYANKI_LURE:0 "Tiyanki Lure"
+ TIYANKI_LURE_DESC:0 "Tiyanki feed on gas. By building a gas diffuser station, we may lure out the Tiyanki stationed in the §H[tiyanki_graveyard_system.GetName]§! system and gain access to their burial ground."
+ gas_diffuser:0 "Tiyanki Lure"
+ gas_diffuser_desc:0 "The station releases clouds of nourishing gas, diverting the Tiyanki gravekeepers from their duties."
+
+ ## Point of Interest
+ tiyanki_graveyard_poi_title:0 "Eliminate the Tiyanki Gravekeepers"
+ tiyanki_graveyard_poi_desc:0 "Eliminate the Tiyanki stationed in the §H[tiyanki_graveyard_system.GetName]§! to gain access to their burial ground."
+
+ ## Events
+
+ # Surveyed Tiyanki Graveyard System - What to do now?
+ galactic_features.387.name:0 "Gravekeepers"
+ galactic_features.387.desc:0 "The actions of the Tiyanki inhabiting the §H[tiyanki_graveyard_system.GetName]§! system do not match known behavior patterns for their species. While Tiyanki are usually nomadic, these herds remain stationed around a planet entirely covered in the carcasses of their own dead.\n\nAttempts to study the burial ground have been hindered by the net of tentacles the Tiyanki have wrapped around the planet, making further research impossible - unless we are willing to displace or dispose of the gravekeepers."
+ galactic_features.387.a:0 "Tiyanki make easy prey. Eliminate them."
+ galactic_features.387.b:0 "Displace the gravekeepers without harming them."
+
+ # Tiyanki Graveyard - Destroyed Gravekeepers
+ galactic_features.388.name:0 "Desecrated Grave"
+ galactic_features.388.desc:1 "Having eliminated the Tiyanki stationed in [FromFrom.System.GetName], our [Root.Owner.GetScientistPlural] can now safely approach the burial ground to conduct their research."
+
+ # Tiyanki Graveyard - Lured Gravekeepers
+ galactic_features.389.name:0 "Tasty Bait"
+ galactic_features.389.desc:0 "The construction of the Tiyanki lure in the §H[tiyanki_graveyard_system.GetName]§! system has been completed. Beguiled by the nourishing gases released by the diffuser, the gravekeepers are lured away from their post, allowing our [Owner.GetScientistPlural] to slip through their tentacles and approach the burial ground unnoticed."
+
+ # Survey - no communication with the Tiyanki
+ galactic_features.384.name:0 "Mysterious Guardians"
+ galactic_features.384.desc:0 "A large number of §H[tiyanki_no_contact.GetName]§! are clustered around a planet covered in the carcasses of some alien life-form.\n\nHaving no information on those alien entities, we can only speculate on their behavior."
+ galactic_features.384.tooltip:0 "Establish first contact with the §H[tiyanki_no_contact.GetName]§! to learn more."
+
+ ## Anomaly
+ TIYANKI_ASTEROID_CAT:0 "Living Asteroid"
+ TIYANKI_ASTEROID_CAT_DESC:0 "Rock samples retrieved from the asteroid belt unexpectedly contain a large amount of biological tissue."
+
+ # Anomaly result
+ anomaly.7100.name:0 "Open Burial"
+ anomaly.7100.desc:0 "What our [Owner.GetScientistPlural] first mistook for asteroids have been revealed to be frozen, battered Tiyanki corpses reduced to shapeless lumps after decades in orbit. The entire asteroid ring is, in fact, just an open burial ground. Some of the bodies we acquired are recently deceased, while others predate our empire by thousand of years."
+ anomaly.7100.alt.desc:0 "What our [Owner.GetScientistPlural] first mistook for asteroids have been revealed to be frozen, battered corpses of alien fauna, roughly matching the shape of the aliens seen roaming the system. The entire asteroid ring is, in fact, just an open burial ground. Some of the bodies we acquired are recently deceased, while others predate our empire by thousand of years."
+
+ ## Archeological site
+ site_tiyanki_graveyard:0 "Tiyanki Grave Mound"
+ site_tiyanki_graveyard_intro:0 "The surface of [From.Planet.GetName] is entirely covered in the remains of dead Tiyanki. Our sensors detect no signs of life, and yet the corpses still writhe and squirm, as if animated by some inscrutable force."
+
+ ancrel.14100.name:0 "Meatball"
+ ancrel.14100.desc:0 "It's hard to determine if [From.Planet.GetName] is even a planet: preliminary drilling has only revealed strata upon strata of biological tissue. According to estimations, it would take 2,435,463 Tiyanki bodies to produce a planetary mass of this size (with a margin of error equal to 5.3%). Even assuming the existence of a rocky core upon which the corpses are layered, the number of specimens involved is still significant.\n\nDid someone or something bring the Tiyanki here to die, or are they naturally drawn to this place as their final hour draws near?"
+ ancrel.14100.necro.desc:0 "$ancrel.14100.desc$ Most crucially: why are our Necromancers unable to revive them? Why does this dead flesh reject us, as if already controlled by another entity?"
+
+ ancrel.14200.name:0 "Three Parts Dead"
+ ancrel.14200.desc:0 "The unusual... liveliness of the dead Tiyanki covering the surface of [From.Planet.GetName] seems to be a byproduct of their regenerative capabilities: even if technically dead, the bodies are still reassembling themselves. This system is unusually rich in nourishing substances typically found in the gas giants where Tiyanki graze. Perhaps that explains why this behavior hasn't been observed before.\n\nThis discovery does not explain why the dead seem to move as if controlled by a single mind, extending their tentacles to encroach upon the new carcasses falling on the planet.\n\nFurther excavations will hopefully reveal new insights on the inner workings of this... place. Or being. Our [Owner.GetScientistPlural] are still divided on the exact nomenclature."
+
+ ancrel.14300.name:0 "Flesh Labyrinth"
+ ancrel.14300.desc:0 "Our excavations unearthed a complex network of tunnels extending under the surface of [From.Planet.GetName]. Chemical analysis confirms the walls are entirely composed of highly compressed Tiyanki tissue, the flesh still warm and hardly decomposed despite rivaling the age of our empire. It's as if the corpses were fused together, reshaped and modified to form this place... But why?"
+
+ ancrel.14400.name:0 "Haunted Tunnels"
+ ancrel.14400.desc:0 "After mapping the extensive underground network of [From.Planet.GetName], our [Owner.GetScientistPlural] realized the tunnels closely match the structure of the Tiyanki vascular system - but on a planetary scale.\n\nThe pulsating walls emanate a soft warmth, the temperature slowly increasing as the expedition approached the planet core - where our scanners have picked up a faint life signal."
+ ancrel.14400.matriarch.desc:0 "After mapping the extensive underground network of [From.Planet.GetName], our [Owner.GetScientistPlural] realized the tunnels closely match the structure of the Tiyanki vascular system - but on a scale comparable to that of the Tiyanki Matriarch we encountered while roaming the stars.\n\nThe pulsating walls emanate a soft warmth, the temperature slowly increasing as the expedition approached the planet core - where our scanners have picked up a faint life signal."
+
+ ancrel.14510.name:0 "Mother Brain"
+ ancrel.14510.desc:0 "In a vast underground chamber, a Tiyanki stands upright, bell-shaped head swaying lightly, its wiry tentacles spread across the floor to connect with the outer walls of the chamber. It appears to be some sort of command unit, controlling and directing the growth of this planet-sized graveyard.\n\nOur [Owner.GetScientistPlural] are unable to determine what kind of creature will arise from this grim process, and when it will awaken, but one thing is for sure: it will be something far, far more vast and terrible than an ordinary Tiyanki."
+ ancrel.14510.matriarch.desc:0 "In a vast underground chamber, a Tiyanki stands upright, bell-shaped head swaying lightly, its wiry tentacles spread across the floor to connect with the outer walls of the chamber. It appears to be some sort of command unit, controlling and directing the growth of this planet-sized graveyard.\n\nOur [Owner.GetScientistPlural] don't know when the process will be concluded, but believe once the creature awakens, it will be something far, far more vast and terrible than an ordinary Tiyanki: something worthy of being called a new §HTiyanki Matriarch§!."
+
+ ancrel.14510.a:0 "Dissect the core."
+ ancrel.14510.b:0 "Monitor its growth without harming it."
+ ancrel.14510.c:0 "Let this sacred life-form growth in peace."
+ ancrel.14510.d:0 "The Curators will pay a good price for this specimen."
+
+ ancrel.14520.name:0 "Mother Brain"
+ ancrel.14520.desc:0 "In a vast underground chamber, a Tiyanki stands upright, bell swaying lightly, its wiry tentacles spread on the floor to connect with the outer walls of the chamber. It appeared to be some sort of control unit, controlling and directing the growth of the grave mound. But the creature is now dead, destroyed by the mining equipment we used to get access to this same place. The shells around the core are pallid and brittle; soon, this whole place will die a second death."
+
+ ancrel.14910.name:0 "Environmental Contamination"
+ ancrel.14910.desc:1 "A member of our expedition team disappeared while exploring a tunnel. The retrieval squad spent days trying to locate the [Owner.GetScientist], only to find them partly encased in a wall, body tightly wrapped in tentacles.\n\nFreeing the [Owner.GetScientist] took considerable time and effort. The [Owner.GetScientist] was not simply tied: the wall was trying to fuse with the [Owner.GetScientist] at a molecular level, turning them into a part of the surface.\n\nThe [Owner.GetScientist] is now in stable condition, but refuses to leave our science ship - and even there, they keep watching the walls with extreme suspicion as though fearing another attack."
 
  ### Amoebas by Pierre du Plessis ###
 

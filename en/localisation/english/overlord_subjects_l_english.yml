@@ -319,6 +319,7 @@
  preset_signatory:0 "Signatory"
  preset_thrall:0 "Thrall"
  preset_satrapy:0 "Satrapy"
+ preset_relic_satrapy:0 "$preset_satrapy$"
 
  # Preset AI
  preset_vassal_nice_01:0 "$preset_vassal$"
@@ -403,6 +404,7 @@
  not_allowed_for_scholarium:0 "$TRIGGER_FAIL$Not allowed for §YScholarium§! preset."
  not_allowed_for_prospectorium:0 "$TRIGGER_FAIL$Not allowed for §YProspectorium§! preset."
  not_allowed_for_subsidiary:0 "$TRIGGER_FAIL$Not allowed for §YSubsidiary§! preset."
+ not_allowed_for_satrapy:0 "$TRIGGER_FAIL$Not allowed for §YSatrapy§! preset."
  not_allowed_for_feudal_society:1 "$TRIGGER_FAIL$Not allowed for an Overlord with the §Y$civic_feudal_realm$§! Civic."
  not_allowed_for_franchising:0 "$TRIGGER_FAIL$Not allowed for an Overlord with the §Y$civic_franchising$§! Civic."
  not_allowed_for_imperial_fiefdom:0 "$TRIGGER_FAIL$Not allowed for Subjects of an §Y$personality_imperial_origin_overlord_ai$§!."
@@ -913,8 +915,8 @@
  mod_job_overlord_mortal_initiate_add:0 "$job_overlord_mortal_initiate$ Jobs"
  job_overlord_mortal_initiate_desc:0 "The customs of our Overlord may seem strange and mysterious, but our way forward is by accepting them. Only those who are willing will be asked to make the ultimate sacrifice."
  job_overlord_mortal_initiate_drone:0 "$job_overlord_mortal_initiate$ Drone"
- job_overlord_mortal_initiate_drone_plural:0 "$job_overlord_bio_trophy$ Drones"
- mod_job_overlord_mortal_initiate_drone_add:0 "$job_overlord_bio_trophy$ Jobs"
+ job_overlord_mortal_initiate_drone_plural:1 "$job_overlord_mortal_initiate$ Drones"
+ mod_job_overlord_mortal_initiate_drone_add:1 "$job_overlord_mortal_initiate$ Jobs"
  job_overlord_mortal_initiate_drone_desc:0 "The customs of our Overlord may seem strange and mysterious, yet we are to be a part of them. A few of our drones have been designated to join what the Overlord calls 'a study of life', one which concludes with their willing sacrifice."
  job_overlord_mortal_initiate_effect_desc:0 "£job_mortal_initiate£ $job_overlord_mortal_initiate_plural$ produce £unity£ §YUnity§!, £amenities£ §Y$amenity$§! and £society£ §YResearch§! for the Subject. $job_overlord_mortal_initiate$ can be used for §YSacrifices§!."
 
@@ -998,8 +1000,8 @@
  SPECIALIST_XP_TITLE:0 "Specialist XP"
  SPECIALIST_XP_PER_MONTH:0 "Based on $LOYALTY|Y$ Loyalty, the Subject's Specialization gains $XP_CHANGE|+$ XP every month."
  SPECIALIST_XP_DESC:0 "§HSpecialist Experience§! §Eincreases as the Subject remains loyal to their Overlord. A disloyal Subject will lose experience.§!\n§HNew Perks and Abilities§! §Eare gained as new§! §HTiers§! §Eare unlocked with§! §HXP§!§E.§!"
- SPECIALIST_TIER_UNLOCKS:0 "Tier XP Unlocks"
- SPECIALIST_TIER_UNLOCK_XP:0 "Tier $TIER$: $XP|Y0$ xp"
+ SPECIALIST_TIER_UNLOCKS:1 "Tier XP Requirements"
+ SPECIALIST_TIER_UNLOCK_XP:1 "Tier $TIER$: $XP|Y0$ XP"
  SPECIALIST_TIER_ACTIVE:0 "§GActive§!"
  SPECIALIST_TIER_INACTIVE:0 "§gInactive§!"
  SPECIALIST_TIER_LOCKED:0 "§RLocked§!"
@@ -1230,11 +1232,6 @@
  prospectorium_technology_society_modifier:0 "$prospectorium_technology_physics_modifier$"
  prospectorium_technology_engineering_modifier:0 "$prospectorium_technology_physics_modifier$"
 
- # Tabs
- t:0 "    "
- tt:0 "        "
- ttt:0 "            "
-
  # Custom tooltips for traits.
  leader_trait_bulwark_watcher_tooltip:1 "$t$§L$leader_trait_bulwark_watcher$§!\n$tt$$MOD_SHIP_FRIENDLY_TERRITORY_EVASION_MULT$: §G+15%§!\n$tt$$MOD_SHIP_FRIENDLY_TERRITORY_TRACKING_MULT$: §G+15%§!"
  leader_trait_bulwark_retaliator_tooltip:0 "$t$§L$leader_trait_bulwark_retaliator$§!\n$tt$$MOD_SHIP_FRIENDLY_TERRITORY_FIRE_RATE_MULT$: §G+30%§!"
@@ -1347,6 +1344,7 @@
  preset_thrall_desc:0 "A Thrall is a Fallen Empire Subject type obligated to pay a monthly basic resource tax to their ancient Overlord and with no ability to expand their borders."
  preset_scion_desc:0 "A Scion is a Fallen Empire Subject type supported and aided by their Ancient Overlord."
  preset_satrapy_desc:0 "A Satrapy is a Khan Subject type obligated to pay their warmongering Overlord both ships and basic resources."
+ preset_relic_satrapy_desc:1 "A Satrapy is a Subject type continuing the traditions of the Great Khan that is obligated to provide their Overlord with both ships and resources."
 
  # Subject presets flavor text
  preset_bulwark_flavor_desc:0 "This subject specializes in military affairs. They are known for their excellence in defensive matters, providing insight and protection for their overlord. In turn, their single-minded focus makes them highly reliant on material support to keep their empire running."
@@ -1362,6 +1360,8 @@
  preset_thrall_flavor_desc:0 "A thrall serves as a subject to an ancient awakened empire. Subjected to a harsh rule from afar, they pay a considerable amount of wealth to their ambitious overlord, who uses their vassals' wealth to fuel their own war machines."
  preset_scion_flavor_desc:0 "A scion serves as a subject to an ancient awakened empire. Long supported by an ancient philanthropic benefactor, they are autonomous in almost all aspects of their rule. They occasionally receive gifts or aid from their liege for reasons unfathomable to the rest of the galaxy."
  preset_satrapy_flavor_desc:0 "A satrapy serves as a subject to the Great Khan. Having bent to the military might of the marauders, they have been given the right to govern their region of the galaxy in the Great Khan's name. As long as they continue to support the marauders' ongoing conquests with ships and resources, they are left to attend to their own matters."
+ preset_relic_satrapy_flavor_desc:0 "A satrapy was the subject style favored by the Great Khan, now with a new leader on the throne it would be a waste to toss away such tradition. In return for supporting their Overlord's ongoing conquests with ships and resources, they are left to attend to their own matters."
+
 
  # Specialist subject fail texts.
  is_capital:0 "$TRIGGER_FAIL$§R$requires_capital_planet_desc$§!"
@@ -1407,10 +1407,10 @@
 
  oppressive_corporate_terms_name:0 "Hostile Takeover"
  oppressive_corporate_terms:0 "$oppressive_corporate_terms_name$"
- oppressive_corporate_terms_desc:0 "The pathetic attempt to block this acquisition has failed; no matter their convictions, in the end, everyone has a price.\n\n§EInitial Subsidiary Agreement Terms:\n$t$$subject_can_not_be_integrated$\n$t$$subject_can_do_diplomacy_but_not_vote$\n$t$$subject_can_expand_with_tithe$\n$t$Basic Resource Taxes: 45%\n$t$Advanced Resource Taxes: 15%\n$t$Joins Overlord Wars: All\n$t$Joins Subject Wars: Defensive\n$t$Subject Holdings Limit: 1§!"
+ oppressive_corporate_terms_desc:1 "The pathetic attempt to block this acquisition has failed; no matter their convictions, in the end, everyone has a price.\n\n§EInitial Subsidiary Agreement Terms:\n$t$$subject_can_not_be_integrated$\n$t$$subject_can_do_diplomacy_but_not_vote$\n$t$$subject_can_expand_with_tithe$\n$t$Basic Resource Taxes: 45%\n$t$Advanced Resource Taxes: 15%\n$t$Joins Overlord Wars: All\n$t$Joins Subject Wars: Defensive\n$t$Subject Holdings Limit: 1§!\n\nThis is an §YOppressive Subjugation Policy§!."
  balanced_corporate_terms_name:0 "Standard Acquisition"
- balanced_corporate_terms:0 "$balanced_corporate_terms_name$"
- balanced_corporate_terms_desc:0 "With a satisfactory deal in place, both parties can now get back to work.\n\n§EInitial Subsidiary Agreement Terms:\n$t$$subject_can_not_be_integrated$\n$t$$subject_can_do_diplomacy_but_not_vote$\n$t$$subject_can_expand_with_tithe$\n$t$Basic Resource Taxes: 30%\n$t$Joins Overlord Wars: Defensive\n$t$Joins Subject Wars: Defensive\n$t$Subject Holdings Limit: 1§!"
+ balanced_corporate_terms:1 "$balanced_corporate_terms_name$"
+ balanced_corporate_terms_desc:1 "With a satisfactory deal in place, both parties can now get back to work.\n\n§EInitial Subsidiary Agreement Terms:\n$t$$subject_can_not_be_integrated$\n$t$$subject_can_do_diplomacy_but_not_vote$\n$t$$subject_can_expand_with_tithe$\n$t$Basic Resource Taxes: 30%\n$t$Joins Overlord Wars: Defensive\n$t$Joins Subject Wars: Defensive\n$t$Subject Holdings Limit: 1§!\n\nThis is a §YBalanced Subjugation Policy§!."
  benevolent_corporate_terms_name:0 "Negotiated Synergy"
  benevolent_corporate_terms:0 "$benevolent_corporate_terms_name$"
- benevolent_corporate_terms_desc:0 "The best deals benefit both parties; like life itself, business flourishes in harmony.\n\n§EInitial Subsidiary Agreement Terms:\n$t$$subject_can_not_be_integrated$\n$t$$subject_can_do_diplomacy$\n$t$$subject_can_expand$\n$t$Basic Resource Taxes: 30%\n$t$Joins Overlord Wars: Defensive\n$t$Joins Subject Wars: Defensive\n$t$Subject Holdings Limit: 1§!"
+ benevolent_corporate_terms_desc:1 "The best deals benefit both parties; like life itself, business flourishes in harmony.\n\n§EInitial Subsidiary Agreement Terms:\n$t$$subject_can_not_be_integrated$\n$t$$subject_can_do_diplomacy$\n$t$$subject_can_expand$\n$t$Basic Resource Taxes: 30%\n$t$Joins Overlord Wars: Defensive\n$t$Joins Subject Wars: Defensive\n$t$Subject Holdings Limit: 1§!\n\nThis is a §YBenevolent Subjugation Policy§!."

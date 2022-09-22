@@ -14,7 +14,7 @@
  ECONOMICS_UPKEEP:0 "Upkeep"
  ECONOMICS_UPKEEP_HEADER:0 "$ECONOMICS_UPKEEP$:"
  ECONOMICS_UPKEEP_VALUE_HEADER:0 "$ECONOMICS_UPKEEP$: $STRING$"
- ECONOMICS_CATEGORY_NONE:0 "No category"
+ ECONOMICS_CATEGORY_NONE:1 "Other"
  IMPORTANT_DEPOSITS:0 "Interesting Features"
  PLANET_SUMMARY_BUTTON:0 "§HPlanet Summary§!"
  PLANET_HOUSING_TITLE:0 "Housing"
@@ -35,6 +35,7 @@
  planet_crime:0 "$PLANET_CRIME_TITLE$"
  planet_crime_no_happiness:0 "$PLANET_CRIME_NO_HAPPINESS_TITLE$"
  TRADE_STARBASE:0 "Starbase"
+ STARBASE_PLURAL:0 "Starbases"
  PLANET_CRIME_TITLE:0 "Crime"
  PLANET_CRIME_NO_HAPPINESS_TITLE:0 "Deviancy"
  PLANET_CRIME_DESC:0 "§E§YCrime§! is a measure of the overall level of criminal activity and lawlessness on the planet. A high level of £crime£ §YCrime§! causes negative events to occur on the planet and may reduce £stability£ §YStability§!. It is naturally caused by having a large planetary population, and can be reduced by increasing £happiness£ §YPop Happiness§! or employing £job_enforcer£ §Y$job_enforcer_plural$§!.§!"
@@ -835,8 +836,8 @@
 
  job_evaluator:0 "Evaluator"
  job_evaluator_plural:0 "Evaluators"
- job_evaluator_desc:0 "Signals to and from the Core must be amplified, boosted, and cleaned of static and data corruption."
- job_evaluator_effect_desc:0 "£job_evaluator£ $job_evaluator_plural$ produce £unity£ §Y$unity$§!"
+ job_evaluator_desc:1 "Signals to and from the Drones must be amplified, analyzed and cleaned of deviancy."
+ job_evaluator_effect_desc:1 "£job_evaluator£ $job_evaluator_plural$ turn £energy£ §Y$energy$§! into £unity£ §YUnity§! and $r_amenities$"
  mod_job_evaluator_add:0 "$job_evaluator$ Jobs"
  mod_job_evaluator_per_pop:0 "§G+1§! $job_evaluator$ Job per $VALUE$ Pops"
  mod_job_evaluator_per_pop_short:0 "\n§G+1§! £mod_job_evaluator_add£ per $VALUE$ £pop£"
@@ -1074,10 +1075,20 @@
  job_culture_worker:0 "Culture Worker"
  job_culture_worker_plural:0 "Culture Workers"
  job_culture_worker_desc:1 "Maintaining the arts is the realm of these workers, vital for the inner development and social expression of citizens."
- job_culture_worker_effect_desc:0 "£job_culture_worker£ $job_culture_worker_plural$ turn £consumer_goods£ §Y$consumer_goods$§! into £unity£ §Y$unity$§! and £society£ §Y$society_research$§!"
+ job_culture_worker_effect_desc:2 "£job_culture_worker£ $job_culture_worker_plural$ turn £consumer_goods£ §Y$consumer_goods$§! into £unity£ §Y$unity$§!, [GetCultureWorkerSpiMatOutput][GetCultureWorkerEgalAuthOutput][GetCultureWorkerMilPacOutput][GetCultureWorkerXenoOutput]and £mod_ethic_attraction_mult£ §YGoverning Ethics Attraction§!.\n\n£job_culture_worker£ Culture Workers' effects vary depending on the Empire's ethics."
  mod_job_culture_worker_add:0 "$job_culture_worker$ Jobs"
  mod_job_culture_worker_per_pop:0 "§G+1§! $job_culture_worker$ Job per $VALUE$ Pops"
  mod_job_culture_worker_per_pop_short:0 "\n§G+1§! £mod_job_culture_worker_add£ per $VALUE$ £pop£"
+ 
+ CULTURE_WORKER_OUTPUT_SPI:1 "§Y£mod_pop_amenities_usage_mult£ $MOD_POP_AMENITIES_USAGE_MULT$ Reduction§!, "
+ CULTURE_WORKER_OUTPUT_MAT:0 "§Y£amenities£ Amenities§!, "
+ CULTURE_WORKER_OUTPUT_EGAL:1 "§Y£mod_pop_housing_usage_mult£ $MOD_POP_HOUSING_USAGE_MULT$ Reduction§!, "
+ CULTURE_WORKER_OUTPUT_AUTH:1 "§Y£mod_country_edict_fund_add£ $MOD_COUNTRY_EDICT_FUND_ADD$§!, "
+ CULTURE_WORKER_OUTPUT_MIL:0 "§Y£mod_country_naval_cap_add£ $MOD_COUNTRY_NAVAL_CAP_ADD$§!, "
+ CULTURE_WORKER_OUTPUT_PAC:1 "§Y$mod_pop_lifestyle_trade_mult$§!, "
+ CULTURE_WORKER_OUTPUT_PHOB:1 "§Y£mod_pop_citizen_happiness£ $pop_citizen_happiness$§!, "
+ CULTURE_WORKER_OUTPUT_PHIL:2 "§Y£pop£ $mod_planet_pops_upkeep_mult$ Reduction§!, "
+ CULTURE_WORKER_OUTPUT_BLANK:0 ""
 
  job_head_researcher:0 "Science Director"
  job_head_researcher_plural:0 "Science Directors"
@@ -1181,6 +1192,8 @@
  job_ranger_desc:0 "Special individuals tasked with ensuring that our planets remain clean and natural."
  job_ranger_effect_desc:0 "£job_ranger£ $job_ranger_plural$ produce £amenities£ §YAmenities§! and £society_research£ §Y$society_research$§!."
  mod_job_ranger_add:0 "$job_ranger$ Jobs"
+ mod_job_ranger_per_pop:0 "§G+1§! $job_ranger$ Job per $VALUE$ Pops"
+ mod_job_ranger_per_pop_short:0 "\n§G+1§! £mod_job_ranger_add£ per $VALUE$ £pop£"
  has_ranger_lodge:0 "$TRIGGER_FAIL$§RThis blocker will not be removeable as long as the §Y$building_ranger_lodge$§! exists.§!"
 
  # Ruling Class Jobs
@@ -1538,6 +1551,7 @@
  # TODOCD Collision with overlord_subject
  #mod_planet_translucers_rare_crystals_produces_mult: "£rare_crystals£ $rare_crystals$ from £job_translucer£ $job_translucer_plural$"
  mod_planet_priests_produces_mult:1 "[GetPriestIcon] [GetPriest] Output"
+ mod_knights_independent_category_produces_mult:0 "Output of £job_knight_commander£ $job_knight_commander$ and £job_knight£ $job_knight_plural$ Jobs"
  mod_planet_branch_offices_energy_produces_add:0 "£energy£ Branch Office Income"
  mod_planet_bio_trophies_unity_produces_mult:0 "£unity£ $unity$ from $pop_cat_bio_trophy_plural$"
  mod_planet_pops_organics_food_upkeep_mult:0 "Pop Food Upkeep"
@@ -2192,7 +2206,7 @@
  d_portal_research_zone_gestalt_desc:0 "A secure complex has been built around the Dimensional Portal to house research staff dedicated to probing its mysteries."
  d_ancient_one:0 "$ancient_one$"
  d_ancient_one_desc:0 "$ancient_one_desc$"
- d_fungoid_extermination:0 "Fungoid extermination residue"
+ d_fungoid_extermination:1 "£blocker£ Fungoid Extermination Residue"
  d_fungoid_extermination_desc:0 "This toxic goo is all that remains of the exterminated Fungoids."
  d_ruined_arcology:1 "£blocker£ Ruined Arcology"
  d_ruined_arcology_desc:0 "The Arcologies which cover this City-Planet lie in ruins. While the foundations are still solid, much of the decaying structure will need to be cleared before we can rebuild."
@@ -2275,6 +2289,7 @@
  d_alloys_4:0 "£alloys£ §Y+4§!"
  d_alloys_5:0 "£alloys£ §Y+5§!"
  d_alloys_10:0 "£alloys£ §Y+10§!"
+ d_alloys_25:0 "£alloys£ §Y+25§!"
  d_dark_matter_deposit_1:0 "£sr_dark_matter£ §Y+1§!"
 
  d_trade_value_1:0 "£trade_value£ +1"
@@ -2527,6 +2542,7 @@
  planet_districts_hab_leisure:0 "Habitat Leisure Districts"
  planet_districts_hab_mining:0 "Habitat Astro-Mining Bays"
  planet_districts_hab_energy:0 "Habitat Reactor Districts"
+ planet_districts_orders_demesne:0 "Habitat Order's Demesne"
  planet_districts_arc_arms:0 "Ecumenopolis Foundry Districts"
  planet_districts_arc_civilian:0 "Ecumenopolis Factory Districts"
  planet_jobs:0 "Jobs"
@@ -2603,8 +2619,6 @@
  leader_trait_nuumismatic_priest_desc:0 "A level nine Shakvah with enhanced mind focus and inner gaze..."
  trait_nuumismatic_administration:1 "Numistic Administration"
  trait_nuumismatic_administration_desc:1 "This species has been trained in the holy art of Numistic administration."
- leader_trait_enclave_trader:0 "Enclave Trader"
- leader_trait_enclave_trader_desc:0 "Recruited from one of the independent merchant Enclaves, this leader is particularly adept at maximizing Trade Value."
 
  contingency_sabotage:0 "Contingency Sabotage"
  contingency_sabotage_desc:0 "The Contingency has sabotaged the Generator Districts on this planet."
@@ -2925,6 +2939,9 @@
  col_habitat_farming:0 "Hydroponics Station"
  col_habitat_farming_desc:0 "An artificial deep-space arcology dedicated to the growing of crops"
  col_habitat_farming_custom:0 "§Y$district_hab_housing_plural$§! give up §R-2§! Housing in exchange for §G+1§! £job_farmer£ $job_farmer$ Job."
+ col_habitat_gestalt_farming:0 "$col_habitat_farming$"
+ col_habitat_gestalt_farming_desc:0 "$col_habitat_farming_desc$"
+ col_habitat_farming_gestalt_custom:0 "§Y$district_hab_housing_plural$§! give up §R-2§! Housing in exchange for §G+1§! £job_agri_drone£ $job_agri_drone$ Job."
  col_habitat_energy:0 "Generator Station"
  col_habitat_energy_desc:0 "An artificial deep-space arcology dedicated to the generation of energy"
  col_ring_mix:0 "Ring World"
@@ -3044,7 +3061,6 @@
 
  underground_expansion_tooltip:0 "The underground areas will give us more room for expansion!"
 
- leviathans.105.z:0 "We seek your expertise."
 
  requires_capital_system:0 "$TRIGGER_FAIL$Must build in Capital System"
 
@@ -3173,9 +3189,12 @@
  openedlootboxdesc3:0 "openedlootboxdesc3"
  openedlootboxdesc4:0 "openedlootboxdesc4"
  openedlootboxdesc5:0 "openedlootboxdesc5"
+ buying_boxes_desc:0 "Okay, look. We get it. You love Reliquaries! While we generally limit the amount sold to a single customer, we can make an exception for you. From now on, enjoy the privilege of purchasing Reliquaries directly, with only a nominal increase in §YEnergy Credits§! each time."
 
  cara_home_lootbox_buy:0 "We will buy a $lootbox$."
  cara_home_lootbox_buy.tooltip:0 "Purchase a $lootbox$ for §R$boxcost$§! $ccoinz$."
+ cara_home_lootbox_buy_energy:0 "We will buy a $lootbox$ using energy."
+ cara_home_lootbox_buy_energy.tooltip:0 "Purchase a $lootbox$ for §R[root.box_cost]§! £energy£ §YEnergy Credits§!."
  boxcost:0 "6194.21"
  lootbox_buy_allow_fail:0 "§RWe do not have enough $ccoinz$§!"
 
@@ -3687,35 +3706,6 @@
  distar.305.rare_crystals:0 "The [Root.GetName] has discovered a previously unknown strategic resource on [FromFrom.GetName], dubbed §H$rare_crystals$§!. The crystals lend themselves well to both high-end electronics as well as laser weapons systems, thanks to their spectacular refractive properties."
  distar.305.exotic_gases:0 "The [Root.GetName] has discovered a previously unknown strategic resource on [FromFrom.GetName], dubbed §H$exotic_gases$§!. These gases have a number of tactical and even recreational uses."
  distar.305.volatile_motes:0 "The [Root.GetName] has discovered a previously unknown strategic resource on [FromFrom.GetName], dubbed §H$volatile_motes$§!. These particles produce an explosive amount of kinetic force when chemically activated, and are supposedly very spicy when used in cooking."
-
- leviathans.130.a:3 "§G1§! £volatile_motes£ §H$volatile_motes$§!/month for §R10§! £energy£ §H$energy$§!/month."
- leviathans.130.b:0 "§G2§! £volatile_motes£ §H$volatile_motes$§!/month for §R20§! £energy£ §H$energy$§!/month."
- leviathans.130.c:0 "§G3§! £volatile_motes£ §H$volatile_motes$§!/month for §R30§! £energy£ §H$energy$§!/month."
- leviathans.130.d:0 "§G4§! £volatile_motes£ §H$volatile_motes$§!/month for §R40§! £energy£ §H$energy$§!/month."
- leviathans.130.e:0 "§G5§! £volatile_motes£ §H$volatile_motes$§!/month for §R50§! £energy£ §H$energy$§!/month."
- leviathans.131.a:3 "§G1§! £exotic_gases£ §H$exotic_gases$§!/month for §R10§! £energy£ §H$energy$§!/month."
- leviathans.131.b:0 "§G2§! £exotic_gases£ §H$exotic_gases$§!/month for §R20§! £energy£ §H$energy$§!/month."
- leviathans.131.c:0 "§G3§! £exotic_gases£ §H$exotic_gases$§!/month for §R30§! £energy£ §H$energy$§!/month."
- leviathans.131.d:0 "§G4§! £exotic_gases£ §H$exotic_gases$§!/month for §R40§! £energy£ §H$energy$§!/month."
- leviathans.131.e:0 "§G5§! £exotic_gases£ §H$exotic_gases$§!/month for §R50§! £energy£ §H$energy$§!/month."
- leviathans.132.a:3 "§G1§! £rare_crystals£ §H$rare_crystals$§!/month for §R10§! £energy£ §H$energy$§!/month."
- leviathans.132.b:0 "§G2§! £rare_crystals£ §H$rare_crystals$§!/month for §R20§! £energy£ §H$energy$§!/month."
- leviathans.132.c:0 "§G3§! £rare_crystals£ §H$rare_crystals$§!/month for §R30§! £energy£ §H$energy$§!/month."
- leviathans.132.d:0 "§G4§! £rare_crystals£ §H$rare_crystals$§!/month for §R40§! £energy£ §H$energy$§!/month."
- leviathans.132.e:0 "§G5§! £rare_crystals£ §H$rare_crystals$§!/month for §R50§! £energy£ §H$energy$§!/month."
-
- leviathans.125.name.z1:0 "[traders.GetName]"
- leviathans.125.desc.z1:0 "We have a talented executive standing by, ready to migrate to the [Root.GetName] and get any of your sectors back out of the red."
- leviathans.125.z1:0 "Deal."
- leviathans.126.name:0 "[traders.GetName]"
- leviathans.126.desc:0 "Excellent! We are happy to share our skills with the [Root.GetName]."
-
- already_hired_trader_governor:0 "§RWe have already recruited a leader from [traders.GetName]§!"
- recruit_trader_leader:0 "Adds a [traders.GetSpeciesName] §YGovernor§! to the §HLeaders§! pool"
-
- sm_trader_proxy_office:0 "Trader Proxy Office"
- sm_trader_proxy_office_desc:0 "The §YTrader Enclaves§! enjoy special privileges on the Galactic Market, which can also benefit us."
- requires_trade_enclave:0 "§RRequires a §YTrader Enclave§! in the system.§!"
 
  decision_market_nomination:0 "Galactic Market Hub Nomination"
  decision_market_nomination_effects:0 "Applies a §YBase Marketplace Competitiveness Rating§! modifier to the planet, according to its local conditions. The better the rating, the more likely the planet will play host to the future §HGalactic Market§!."
@@ -4397,6 +4387,10 @@
  requires_no_existing_strategic_coordination_center:0 "$TRIGGER_FAIL$Cannot build more than one $strategic_coordination_center_3$."
  requires_no_existing_mega_art_installation:0 "$TRIGGER_FAIL$Cannot build more than one $mega_art_installation_3$."
  requires_no_existing_interstellar_assembly:0 "$TRIGGER_FAIL$Cannot build more than one $interstellar_assembly_4$."
+ requires_no_existing_matter_decompressor_two:0 "$TRIGGER_FAIL$Cannot build more than two Matter Decompressors."
+ requires_no_existing_strategic_coordination_center_two:0 "$TRIGGER_FAIL$Cannot build more than two Strategic Coordination Centers."
+ requires_no_existing_mega_art_installation_two:0 "$TRIGGER_FAIL$Cannot build more than two Mega Art Installations."
+ requires_no_existing_interstellar_assembly_two:0 "$TRIGGER_FAIL$Cannot build more than two Interstellar Assemblies."
 
  observation.1011.b:0 "It is not our problem."
 
@@ -4428,6 +4422,10 @@
 
  nanites_deficit:0 "Nanite Deficit"
  nanites_deficit_tooltip:0 "A lack of Nanites halts Nanite Transmutation."
+ sr_living_metal_deficit:1 "Living Metal Deficit"
+ sr_living_metal_deficit_tooltip:1 "A lack of Living Metal cancels all Edicts using it."
+ sr_zro_deficit:1 "Zro Deficit"
+ sr_zro_deficit_tooltip:1 "A lack of Zro cancels all Edicts using it."
  mod_pop_factions_produces_mult:1 "Faction Unity Gain"
 
  CARAVANEERS_LABEL:0 "Caravaneers"

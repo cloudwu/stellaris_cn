@@ -25,6 +25,7 @@
  MESSAGE_DESC_FOR_PLANET_KILLER_GODRAY:0 "had divine belief enforced on it by"
  MESSAGE_DESC_FOR_PLANET_KILLER_NANOBOTS:0 "was assimilated by nanobots from"
  MESSAGE_DESC_FOR_PLANET_KILLER_DELUGE:0 "was subjected to a deluge of water by"
+ MESSAGE_DESC_FOR_PLANET_KILLER_TOXIFIER:0 "was toxified by"
 
  is_habitable_non_artificial:0 "§R$TRIGGER_FAIL$Target must be a habitable, non-artificial planet§!"
  is_not_oceanic:0 "§R$TRIGGER_FAIL$Target is already an §Y$pc_ocean$§!§!"
@@ -40,6 +41,8 @@
  requires_purge_allowed:0 "§R$TRIGGER_FAIL$Requires §Y$purge_allowed$§! policy, as pops lacking the §Y$trait_aquatic$§! trait will be killed§!"
  will_purge_non_aquatic_pops:0 "§RPops lacking the §Y$trait_aquatic$§! trait will be killed§!"
  is_not_hostile_cracker:0 "Target is owned by a hostile §HEmpire§!"
+ is_not_owned_or_claimed:0 "Target is in unclaimed space"
+ is_uninhabited_within_borders:0 "Target is uninhabited and within the [From.Owner.GetName]"
  not_barren_molten_frozen_toxic_test_fire:2 "Target is a §YHabitable§!, §Y$pc_barren$§!, §Y$pc_molten$§!, §Y$pc_frozen$§!, or §Y$pc_toxic$§! test fire target"
  not_owned_test_fire:0 "Target is an §Yowned colony§! test fire target"
  primitives_not_in_borders:0 "§R$TRIGGER_FAIL$Primitive target is not within our borders§!"
@@ -275,13 +278,11 @@
  name_list_HUMAN1:0 "Humans (UNE)"
  name_list_HUMAN2:0 "Humans (CM)"
  name_list_HUMAN3:0 "Humans (SPQR)"
- leviathans.500.f:0 "We would like to establish a mutual Think Tank."
- leviathans.511.name:0 "Think Tank"
- leviathans.511.desc:0 "Yes... yes, such a facility would benefit the advancement of Galactic Science. You may build this Think Tank at your starbase in the system you share with us. Our Curators will come to mingle with your scientists.\n\n§H<We can now build the §!§YCurator Think Tank§!§H Starbase Building in the §!§Y[curator_system.GetName]§!§H system.>§!"
+
  leviathans.300.g:0 "We would like your help to found an Art College."
  leviathans.340.name:0 "Art College"
- leviathans.340.desc:0 "Brilliant! We were just about to suggest the very same thing to you! If you establish this institution on the starbase in the system you share with us, we shall send some of our finest artists to serve there as teachers.\n\n§H<We can now build the §!§YArt College§!§H Starbase Building in the §!§Y[artist_system.GetName]§!§H system.>§!"
- leviathans.340.a:0 "Excellent."
+ leviathans.340.desc:1 "Brilliant! We were just about to suggest the very same thing to you! If you establish this institution on the starbase in the system you share with us, we shall send some of our finest artists to serve there as teachers."
+ leviathans.340.tooltip:0 "We can now build the §HArt College§! Starbase Building in the §Y[artist_system.GetName]§! system."
  leviathans.300.g.opinion:0 "Requires the §YArtisans§! to have:\n£opinion£ Opinion +50"
 
  FLEET_MANAGER_VIEW:0 "Fleet Manager"
@@ -421,6 +422,9 @@
  DELUGE_EXHAUSTED_ICE_TITLE:0 "Ice Source Exhausted"
  DELUGE_EXHAUSTED_ICE_DESC:0 "Our use of the §YDeluge Machine§! on §Y[This.GetName]§! has exhausted our supply of ice in the $SYSTEM|Y$ system, so the §Y$sm_ice_mining_station$§! there has been disbanded."
 
+ planet_destruction.801.name:0 "Planet Toxified"
+ planet_destruction.801.desc:0 "As the awesome stream of venomous substances from the [FromFrom.GetName] subsides, [From.GetName] is transformed from a vibrant ecosystem to a noxious world on which few forms of life can thrive."
+
  planet_destruction.610.name:0 "[outraged_FE.GetName]"
  planet_destruction.610.desc:0 "[From.GetName] was a holy world.\n\n\nYou do not know the true extent of your sin.\n\n\nNot yet."
  planet_destruction.610.spiri:0 "We shall demonstrate our righteousness."
@@ -435,6 +439,8 @@
  planet_destruction.610.devou:0 "§RHAK HAK HAK!§!"
  planet_destruction.610.termi:0 "Erased, like so much junk data."
  planet_destruction.610.purif:0 "Old heresies will do naught but burn."
+ planet_destruction.615.A:0 "[From.GetName] is better this way."
+ planet_destruction.615.spir:0 "Consider it as sprinkling the holy water."
 
  action.87.name:0 "§RColony Lost!§!"
  action.87.desc:0 "We have lost administrative control of §Y[From.GetName]§! to §Y[new_planet_owner.GetName]§!, who controls the §HStarbase§! in the §Y[From.GetStarName]§! system."
@@ -514,7 +520,6 @@
  pirate.57.name:0 "Organic Pirates"
  pirate.57.desc:1 "A small group of organic sub-units, apparently criminal outcasts, have somehow infiltrated and established themselves in the §H[pirate_system.GetName]§! system inside our borders. They seem intent on raiding the system's undefended trade route, perhaps gambling, as organics are wont to do, on the mistaken notion that they are too insignificant to warrant an armed response from us."
 
- leviathans.509.name:0 "Curator Research Aid"
  leviathans.509.desc:0 "The agreement we signed giving you access to our databanks has run its course. Would you like to extend it for another ten standard years, or do your researchers no longer require the information we offer?"
  leviathans.509.a:0 "We would like to extend our deal."
  leviathans.509.a.reply:0 "Excellent. Our databanks shall remain available to your scientists."

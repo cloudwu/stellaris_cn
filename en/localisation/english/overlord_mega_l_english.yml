@@ -24,6 +24,7 @@
 
  requires_neutron_star_or_pulsar:0 "$TRIGGER_FAIL$Must be built around a $pc_neutron_star$ or $pc_pulsar$."
  requires_no_existing_quantum_catapult:0 "$TRIGGER_FAIL$Cannot build more than one Quantum Catapult."
+ requires_no_existing_quantum_catapul_two:0 "$TRIGGER_FAIL$Cannot build more than two Quantum Catapults."
 
  quantum_catapult_0_MEGASTRUCTURE_DETAILS:1 "A device that focuses the forces of a Neutron Star or Pulsar in order to twist space and skip a fleet across great distances."
  quantum_catapult_0_CONSTRUCTION_INFO_DELAYED:1 "Early iterations of the Quantum Catapult may cause fleets to arrive in systems §Houtside§! their intended destination. This '§Yscatter radius§!' can be reduced with subsequent upgrades."
@@ -55,6 +56,7 @@
  FLEET_ORDER_QUANTUM_CATAPULT_NOT_SAME_SYSTEM:0 "§RSelected fleets are not in the same system§!"
  FLEET_ORDER_NEEDS_GALAXY_MODE:0 "§RCan only be engaged in galaxy view!§!"
  requires_technology_hyper_relays:0 "$TRIGGER_FAIL$Requires technology £physics£ §Y$tech_hyper_relays$§!."
+ requires_hyperlane:0 "$TRIGGER_FAIL$§RThis system does not have any Hyperlanes.§!"
  QUANTUM_CATAPULT_COUNTRY_CANNOT_USE:0 "$TRIGGER_FAIL$ The §Y[From.GetName]§! has denied us access to their Quantum Catapult."
  # Slingshot to the Stars Origin version
  quantum_catapult_ruined_slingshot:0 "$quantum_catapult_ruined$"
@@ -153,7 +155,7 @@
  sm_ring_bureaucracy_hub_desc:1 "Efficiency and progress can be ours once more, now that our Administrators have near instant access to the paperwork that defines their lives."
  sm_ring_synapse_hub:0 "Synaptic Relays"
  sm_ring_synapse_hub_desc:0 "Portions of the Orbital Ring have been modified to enhance synaptic signals, improving control over drones on the surface."
- sm_ring_synapse_hub_effect:0 "£amenities£ Amenities from £job_synapse_drone£ $job_synapse_drone_plural$: §G+1§!"
+ sm_ring_synapse_hub_effect:1 "£unity£ Unity from £job_synapse_drone£ $job_synapse_drone_plural$: §G+1§!"
  sm_ring_maintenance_hub:0 "Orbital Maintenance Drops"
  sm_ring_maintenance_hub_desc:0 "Prepackaged pods of maintenance material - and the drones necessary to distribute them - can be dropped from orbit anywhere they are needed, at a moment's notice."
  sm_ring_maintenance_hub_effect:0 "£amenities£ Amenities from £job_maintenance_drone£ $job_maintenance_drone_plural$: §G+1§!"

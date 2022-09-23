@@ -18,6 +18,6 @@ local function convert(filename)
 	f:close()
 end
 
-for _,file in ipairs(list) do
+for _,file in ipairs(list.en) do
 	convert(file)
 end

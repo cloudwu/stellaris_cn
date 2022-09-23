@@ -79,7 +79,7 @@
  aquatics.170.desc:0 "在[Root.GetName]的丰收中饱食数年之后，现在明显更壮的天龙再次起飞。随着最后致敬的吼声，它升空了——留下了大量的鳞片、脱落的皮肤和其他因它的存在而产生的副产物。"
  aquatics.170.A:0 "我们应该研究这些残留物。"
  aquatics.170.B:0 "把这些当燃料烧了吧。"
- aquatics.170.tooltip:0 "这条龙现在再一次回到§Y[here_be_dragons_planet.System.GetName]§!恒星系中遨游了。"
+ aquatics.170.tooltip:0 "这条龙现在再一次回到§Y[here_be_dragons_planet.System.GetName]§!星系中遨游了。"
 
  aquatics.180.name:0 "守护龙"
  aquatics.180.desc:0 "我们在[From.GetName]星系中的舰队报告说，在星系内遨游的那条龙正在攻击我们的舰船！目前还不清楚它是故意加入[From.Owner.GetAdj]防御战争，还是只是因为我们侵犯了它的领土而对我们感到愤怒。可以肯定的是，如果我们打算夺取[here_be_dragons_planet.GetName]，就必须击败它！"
@@ -107,7 +107,7 @@
  aquatics.200.A:0 "最好不要进一步激怒它。"
  aquatics.200.B:0 "喂了它以后现在它应该不饿了。我们再试一次。"
  aquatics.205.name:0 "科研船被驱离"
- aquatics.205.desc:0 "龙放任我们的科研船靠近，但随着探针发射，它用尾巴以不可思议的力量§H猛击§!舰船。值得注意的是，虽然舰船因此越过了半个恒星系，它几乎完好无损，舰上也没有报告人员伤亡。不管怎么说，龙明显不太高兴。"
+ aquatics.205.desc:0 "龙放任我们的科研船靠近，但随着探针发射，它用尾巴以不可思议的力量§H猛击§!舰船。值得注意的是，虽然舰船因此越过了半个星系，它几乎完好无损，舰上也没有报告人员伤亡。不管怎么说，龙明显不太高兴。"
  aquatics.205.A:0 "$aquatics.200.A$"
  aquatics.205.B:0 "有意思。我们应该看看再试一次会发生什么。"
  aquatics.210.name:0 "龙之怒"
@@ -145,7 +145,7 @@
  fcsum_origin_dragon_3:0 "我们已经破解了与龙沟通的秘密。它似乎有什么事想告诉我们。"
 
  aquatics.305.name:0 "$aquatics.180.name$"
- aquatics.305.desc:0 "[This.GetName]汇报在[From.GetName]星系目击了一条骇人的太空巨龙！\n\n这个恒星系似乎是[From.Owner.GetName]的中心，其中一颗行星显示出拥有稠密人口的痕迹。\n\n目前为止，这条龙还没对我们采取行动，也没有与这个恒星系中的另一群居民存在冲突的迹象。也许我们最好还是别管他们吧。" #this event happens during first contact, so [From.Owner.GetName] is 'alpha menace'
+ aquatics.305.desc:0 "[This.GetName]汇报在[From.GetName]星系目击了一条骇人的太空巨龙！\n\n这个星系似乎是[From.Owner.GetName]的中心，其中一颗行星显示出拥有稠密人口的痕迹。\n\n目前为止，这条龙还没对我们采取行动，也没有与这个恒星系中的另一群居民存在冲突的迹象。也许我们最好还是别管他们吧。" #this event happens during first contact, so [From.Owner.GetName] is 'alpha menace'
 
  space_dragon_origin:0 "天龙"
  space_dragon_origin_plural:0 "天龙"
@@ -190,7 +190,7 @@
 
  decision_expand_planetary_sea:0 "扩展行星海洋"
  decision_expand_planetary_sea_desc:0 "海洋是我们的家园——家园当然多多益善。我们的冰开采网络使我们可以从其他的天体上采集冰，并逐渐将其释放到[This.GetName]的海洋中，扩展星球上的宜居区域。"
- decision_expand_planetary_sea_tooltip:0 "冰可以通过建有§Y$sm_ice_mining_station$§!的恒星基地从恒星系里采集。"
+ decision_expand_planetary_sea_tooltip:0 "冰可以通过建有§Y$sm_ice_mining_station$§!的太空基地从星系里采集。"
  requires_free_ice_mining_station:0 "$TRIGGER_FAIL$§R需要一座可用的§Y$sm_ice_mining_station$§!§!"
  requires_max_3_times_pass_simple:0 "$TRIGGER_PASS$在每颗行星上可以施行最多§Y3§!次"
  requires_max_3_times_fail_simple:0 "$TRIGGER_FAIL$在每颗行星上只能施行最多§Y3§!次"
@@ -199,17 +199,17 @@
  ICE_MINING_INTERRUPTED_DESC:0 "由于目前没有可用的冰源，我们尝试在§Y[This.GetName]§!上扩张海洋的尝试被取消了。"
  ICE_MINING_INTERRUPTED_HABITAT_DESC:0 "由于当前没有可用的冰源，我们灌淹§Y[This.GetName]§!的计划被迫取消了。"
  ICE_MINING_SUCCESS_TITLE:0 "行星海洋已扩展"
- ICE_MINING_SUCCESS_DESC:0 "使用来自$SYSTEM|Y$恒星系采集的冰，我们成功扩展了§Y[This.GetName]§!的行星海洋。"
+ ICE_MINING_SUCCESS_DESC:0 "使用来自$SYSTEM|Y$星系采集的冰，我们成功扩展了§Y[This.GetName]§!的行星海洋。"
  ICE_MINING_SUCCESS_BUT_EXHAUSTED_DESC:0 "$ICE_MINING_SUCCESS_DESC$\n\n这个矿脉的冰源已经耗尽，因此§Y$sm_ice_mining_station$§!被拆除。"
  ICE_MINING_HABITAT_SUCCESS_TITLE:0 "居住站被灌淹"
- ICE_MINING_HABITAT_SUCCESS_DESC:0 "使用$SYSTEM|Y$恒星系开采的冰，我们成功对§Y[This.GetName]§!执行了灌淹。"
+ ICE_MINING_HABITAT_SUCCESS_DESC:0 "使用$SYSTEM|Y$星系开采的冰，我们成功对§Y[This.GetName]§!执行了灌淹。"
  ICE_MINING_HABITAT_SUCCESS_BUT_EXHAUSTED_DESC:0 "$ICE_MINING_SUCCESS_HABITAT_DESC$\n\n这一资源点的冰供应已经耗尽，因此§Y$sm_ice_mining_station$§!已经拆解。"
  ice_mined_planet:0 "冰竭星球"
  ice_mined_planet_desc:0 "这颗行星最近遭受了采冰活动，它字面意义上地枯竭了。"
 
  decision_flood_habitat:0 "灌淹居住站"
  decision_flood_habitat_desc:0 "居住站是我们理想的开发地——只要那里有充足的水。我们的冰开采网络能让我们从其他的天体开采冰，灌淹[This.GetName]，让此地变成一个完美的轨道水族馆。"
- decision_flood_habitat_tooltip:0 "宜居性：§R-20%§!\n对于§Y水生§!物种来说可以视作一个§Y海洋§!星球。\n如果恒星系的恒星基地上有§Y$sm_ice_mining_station$§!，将会从此恒星系开采冰。"
+ decision_flood_habitat_tooltip:0 "宜居性：§R-20%§!\n对于§Y水生§!物种来说可以视作一个§Y海洋§!星球。\n如果星系的太空基地上有§Y$sm_ice_mining_station$§!，将会从此恒星系开采冰。"
  flooded_habitat:0 "洪潮居住站"
  flooded_habitat_desc:0 "这个居住站被灌满了水，用于模拟水生生物的自然生长环境。"
  flooded_habitat_tooltip:0 "宜居性：§R-20%§!\n对于§Y水生§!物种来说可以视作一个§Y海洋§!星球。"

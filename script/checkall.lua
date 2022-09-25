@@ -18,6 +18,6 @@ local function check(filename)
 	end
 end
 
-for _, filename in ipairs(filelist) do
+for _, filename in ipairs(filelist.en) do
 	check(filename)
 end

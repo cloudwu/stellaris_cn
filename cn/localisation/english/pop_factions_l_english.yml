@@ -78,7 +78,7 @@
  SUPREMACIST_DOMINATION_TRADITION_DESC:0 "树立强调§Y统御§!的传统可取悦[Root.GetName]。"
  SUPREMACIST_GIANT_MASSACRE:0 "屠杀巨物"
  SUPREMACIST_NO_GIANT_MASSACRE:0 "$SUPREMACIST_GIANT_MASSACRE$"
- SUPREMACIST_GIANT_MASSACRE_DESC:0 "击破任何§Y利维坦§!异种巨物可取悦[Root.GetName]一段时间。"
+ SUPREMACIST_GIANT_MASSACRE_DESC:0 "击破任何§Y星神兽§!异种巨物可取悦[Root.GetName]一段时间。"
  SUPREMACIST_ISOLATIONIST_NO_FEDERATION:0 "独霸"
  SUPREMACIST_ISOLATIONIST_NO_FEDERATION_DESC:1 "允许[Root.Owner.GetName]§Y加入联邦§!被外星人利用会得罪[Root.GetName]。"
  SUPREMACIST_ISOLATIONIST_FEDERATION:1 "$SUPREMACIST_ISOLATIONIST_NO_FEDERATION$"
@@ -185,7 +185,7 @@
  IMPERIALIST_SUPREMACY_TRADITION_DESC:0 "树立强调§Y霸权§!的传统可取悦[Root.GetName]。"
  IMPERIALIST_SLAYER:0 "巨物陨落"
  IMPRERIALIST_NOT_SLAYER:0 "$IMPERIALIST_SLAYER$"
- IMPERIALIST_SLAYER_DESC:0 "击破任何§Y利维坦§!深空巨兽可取悦[Root.GetName]一段时间。"
+ IMPERIALIST_SLAYER_DESC:1 "击破任何§Y星神兽§!深空巨兽可取悦[Root.GetName]。"
  IMPERIALIST_UNDERLING:0 "附属国地位"
  IMPERIALIST_NOT_UNDERLING:0 "$IMPERIALIST_UNDERLING$"
  IMPERIALIST_UNDERLING_DESC:0 "身为外国§Y宗主§!的附属国会极度激怒[Root.GetName]。"
@@ -204,6 +204,15 @@
  IMPERIALIST_OPPRESSIVE_SUBJUGATION_POLICY:0 "霸道统御政策"
  IMPERIALIST_ADOPT_OPPRESSIVE_SUBJUGATION_POLICY:0 "$IMPERIALIST_OPPRESSIVE_SUBJUGATION_POLICY$"
  IMPERIALIST_OPPRESSIVE_SUBJUGATION_POLICY_DESC:0 "我们必须雷厉风行。让附属国明白自己的定位将取悦[Root.GetName]。"
+ IMPERIALIST_FEDERATION:0 "$military_federation$"
+ IMPERIALIST_FEDERATION_NOT_MILITARIST:0 "$military_federation$"
+ IMPERIALIST_FEDERATION_DESC:0 "成为一个$military_federation$的一员会取悦[Root.GetName]。"
+ IMPERIALIST_FLEET_USAGE_HIGH:0 "高舰队容量使用率"
+ IMPERIALIST_FLEET_USAGE_NOT_HIGH:0 "$IMPERIALIST_FLEET_USAGE_HIGH$"
+ IMPERIALIST_FLEET_USAGE_HIGH_DESC:0 "建造超过我们帝国的容量的舰队将取悦[Root.GetName]。"
+ IMPERIALIST_FLEET_USAGE_LOW:0 "低舰队容量使用率"
+ IMPERIALIST_FLEET_USAGE_NOT_LOW:0 "$IMPERIALIST_FLEET_USAGE_LOW$"
+ IMPERIALIST_FLEET_USAGE_LOW_DESC:0 "维持远低于我们帝国的容量的舰队将招致[Root.GetName]的不满。"
 
  # ISOLATIONISTS
  ISOLATIONIST_PHILOSOPHY:0 "坚定防御" # FIXME not intended to attack
@@ -310,6 +319,12 @@
  TRADITIONALIST_RELIGIOUS_FINDING:0 "沉湎旧日"
  TRADITIONALIST_NO_RELIGIOUS_FINDING:0 "$TRADITIONALIST_RELIGIOUS_FINDING$"
  TRADITIONALIST_RELIGIOUS_FINDING_DESC:0 "于小型文物之中觅得宗教意义可取悦[Root.GetName]一段时间。"
+ TRADITIONALIST_FEDERATION:0 "$spiritualist_federation$"
+ TRADITIONALIST_FEDERATION_NOT_SPIRITUALIST:0 "$spiritualist_federation$"
+ TRADITIONALIST_FEDERATION_DESC:0 "成为某个$spiritualist_federation$的一员会取悦[Root.GetName]。"
+ TRADITIONALIST_FEDERATION_ANTI:0 "$research_federation$"
+ TRADITIONALIST_FEDERATION_ANTI_NOT_RESEARCH:0 "$research_federation$"
+ TRADITIONALIST_FEDERATION_ANTI_DESC:0 "成为某个$research_federation$的一员会使得[Root.GetName]不满。"
  
  # TECHNOLOGISTS
  TECHNOLOGIST_ROBOTS:0 "机器热爱"
@@ -339,6 +354,12 @@
  TECHNOLOGIST_PRECURSOR_SECRETS:0 "先驱秘辛"
  TECHNOLOGIST_NO_PRECURSOR_SECRETS:0 "$TECHNOLOGIST_PRECURSOR_SECRETS$"
  TECHNOLOGIST_PRECURSOR_SECRETS_DESC:0 "揭示先驱者文明的古老奥秘可取悦[Root.GetName]。"
+ TECHNOLOGIST_FEDERATION:0 "$research_federation$"
+ TECHNOLOGIST_FEDERATION_NOT_RESEARCH:0 "$research_federation$"
+ TECHNOLOGIST_FEDERATION_DESC:0 "成为某个$research_federation$的一员会取悦[Root.GetName]。"
+ TECHNOLOGIST_FEDERATION_ANTI:0 "$spiritualist_federation$"
+ TECHNOLOGIST_FEDERATION_ANTI_NOT_SPIRITUALIST:0 "$spiritualist_federation$"
+ TECHNOLOGIST_FEDERATION_ANTI_DESC:0 "成为某个$spiritualist_federation$的一员会使得[Root.GetName]不满。"
 
  # PROGRESSIVES
  PROGRESSIVE_NO_AUTO:0 "反对独裁"
@@ -365,6 +386,9 @@
  PROGRESSIVE_BENEVOLENT_SUBJUGATION_POLICY:0 "王道统御政策"
  PROGRESSIVE_BENEVOLENT_NO_OPPRESSIVE_SUBJUGATION_POLICY:0 "$PROGRESSIVE_BENEVOLENT_SUBJUGATION_POLICY$"
  PROGRESSIVE_BENEVOLENT_NO_OPPRESSIVE_SUBJUGATION_POLICY_DESC:0 "我们的附属国向我们寻求指导和保护，而我们应当尽量尊重他们的自由来回报他们的信任。对附属国采纳宽宏性的方案将取悦[Root.GetName]。"
+ PROGRESSIVE_FEDERATION:0 "$hegemony_federation$"
+ PROGRESSIVE_FEDERATION_NOT_HEGEMONY:0 "$hegemony_federation$"
+ PROGRESSIVE_FEDERATION_DESC:0 "成为某个$hegemony_federation$的一员会使得[Root.GetName]不满。"
 
  # TOTALITARIANS
  TOTALITARIAN_AUTOCRACY:0 "专制"
@@ -400,9 +424,12 @@
  TOTALITARIAN_BENEVOLENT_SUBJUGATION_POLICY:0 "王道统御政策"
  TOTALITARIAN_NO_BENEVOLENT_SUBJUGATION_POLICY:0 "$TOTALITARIAN_BENEVOLENT_SUBJUGATION_POLICY$"
  TOTALITARIAN_BENEVOLENT_SUBJUGATION_POLICY_DESC:0 "只有钢铁般的[Owner.Species.GetHandName]才能引领我们的诸附属国，从而避免他们变得懒惰和自满。授予他们过多的自由将会使[Root.GetName]不满。"
- TOTALITARIAN_OPPRESSIVE_SUBJUGATION_POLICY:0 "霸道统御政策"
+ TOTALITARIAN_OPPRESSIVE_SUBJUGATION_POLICY:1 "霸道统御政策"
  TOTALITARIAN_ADOPT_OPPRESSIVE_SUBJUGATION_POLICY:0 "$TOTALITARIAN_OPPRESSIVE_SUBJUGATION_POLICY$"
  TOTALITARIAN_OPPRESSIVE_SUBJUGATION_POLICY_DESC:0 "就像[Owner.Species.GetSpawnNamePlural]一样，我们的附庸也需要引导来学习纪律。对他们严加看管将取悦[Root.GetName]。"
+ TOTALITARIAN_FEDERATION:0 "$hegemony_federation$"
+ TOTALITARIAN_FEDERATION_NOT_HEGEMONY:0 "$hegemony_federation$"
+ TOTALITARIAN_FEDERATION_DESC:0 "成为某个$hegemony_federation$的一员会取悦[Root.GetName]。"
 
  # PROSPERITY
  PROSPERITY_PHILOSOPHY:0 "防御姿态"
@@ -435,6 +462,9 @@
  PROSPERITY_PEACEFUL_APPLICATIONS:0 "社会发展"
  PROSPERITY_NO_PEACEFUL_APPLICATIONS:0 "$PROSPERITY_PEACEFUL_APPLICATIONS$"
  PROSPERITY_PEACEFUL_APPLICATIONS_DESC:0 "将小型文物用于民生可取悦[Root.GetName]一段时间。"
+ PROSPERITY_FEDERATION:0 "$military_federation$"
+ PROSPERITY_FEDERATION_NOT_MILITARIST:0 "$military_federation$"
+ PROSPERITY_FEDERATION_DESC:0 "成为某个$military_federation$的一员会使得[Root.GetName]不满。"
 
  FACTION_COUNTRY_SEPARATIST:0 "[parameter:owner.GetSpeciesAdj]分离主义者"
 
@@ -474,7 +504,7 @@
  POP_FACTION_NO_EFFECTS_DESC:0 "$FACTION$ 不会造成任何效应。"
  POP_FACTION_NO_CURRENT_EFFECTS:0 "当前无效应"
  POP_FACTION_NO_CURRENT_EFFECTS_DESC:0 "$FACTION$ 目前未造成任何效应。"
- 
+
  ### SEPARATIST
 
  # Separatist Demands
@@ -505,7 +535,7 @@
  POP_FACTION_PLANET_SEPARATIST_RECENT_SABOTAGE:0 "近期暴动"
  POP_FACTION_PLANET_SEPARATIST_SABOTAGE_DESC:0 "暴动§R摧毁§!了行星上的一栋建筑。"
  POP_FACTION_PLANET_SEPARATIST_NOTHING_TO_RUIN:0 "无完好的建筑"
- 
+
  ### Sector separatists
  pft_sector_separatists:0 "星域分离主义派"
  pft_sector_separatists_desc:0 "星域分离主义者可能会出现在属于星域的星球上，寻求让邻近的星球脱离帝国统治。如果有了足够的民众支持，他们可能会发起武装叛乱。\n\n§H星域分离主义者绝不会出现在我们的直辖星域内。§!"
@@ -515,9 +545,9 @@
  POP_FACTION_SECTOR_SEPARATIST_GRANT_INDEPENDENCE_DESC:0 "承认§Y[parameter:sector.GetName]星域§!的殖民地独立。"
  POP_FACTION_SECTOR_SEPARATIST_IS_NOT_OCCUPIED:0 "星域内无行星被占领"
  POP_FACTION_SECTOR_SEPARATIST_NO_GROUND_COMBAT:0 "星域内无行星处于地面战斗中"
- 
- 
- 
+
+
+
  ### NATIONALISTS
 
  pft_nationalist:0 "回归党派"
@@ -703,11 +733,11 @@
  POP_FACTION_PRETENDER_DEMAND_DESC:0 "[Root.Owner.GetRulerTitle]§Y[Root.Owner.GetRulerName]§!将被驱逐出境，而§Y[parameter:pretender.GetName]§!登基。"
  POP_FACTION_PRETENDER_INSTALL_TITLE:0 "觊觎者上位"
  POP_FACTION_PRETENDER_INSTALL_DESC:0 "§Y[parameter:pretender.GetName]§!成为新统治者"
- 
+
  ########################################
  # FACTION EVENTS
  ########################################
- 
+
  ### New Events
  factions.1.title:0 "党派成立"
  factions.1.desc:0 "近日，[Root.Owner.GetName]的内部政治格局中一个新党派大受欢迎。他们自称[Root.GetName]，在创始人[Root.Leader.GetTitle][Root.Leader.GetName]的领导下，其成员努力推动我们解决他们关心的各种问题。\n\n随着人口增长，人们的道德观向不同的方向偏斜，我们将在未来看到更多的党派出现。心生不满的党派会成为麻烦之源，但那些支持政府活动的党派可能会有用……"
@@ -722,7 +752,7 @@
  factions.1.desc.totalitarian:0 "其成员努力推动政治军事力量的中央极权。\n\n"
  factions.1.desc.traditionalist:0 "其成员支持精神主义和保守价值观。\n\n"
  factions.1.desc.xenoist:0 "其成员努力推动与星种族的友谊。\n\n"
- 
+
  factions.2000.title:0 "[TargetFaction.Owner.GetName]的执政道德准则转变"
  factions.2000.desc.start:0 "由于§Y[TargetFaction.GetName]§!的支持率长期持续增长，§Y[TargetFaction.Owner.GetName]§!最终拥立了该党派，采纳了他们的核心价值观和政治理念。"
  factions.2000.desc.imperialist:0 "作为该党派进入政府的结果，国家更偏好§H军国主义§!。\n\n"
@@ -734,7 +764,7 @@
  factions.2000.desc.totalitarian:0 "作为该党派进入政府的结果，国家更偏好§H威权主义§!。\n\n"
  factions.2000.desc.traditionalist:0 "作为该党派进入政府的结果，国家更偏好§H精神主义§!。\n\n"
  factions.2000.desc.xenoist:0 "作为该党派进入政府的结果，国家更偏好§H亲外主义§!。\n\n"
- 
+
  ### Loyalists
  faction.4.title:0 "拥护者的诉求"
  faction.4.desc:0 "拥护者对[Root.Owner.GetName]的[Root.Owner.GetRulerTitle][Root.Owner.GetRulerName]忠心耿耿，无任何诉求。"

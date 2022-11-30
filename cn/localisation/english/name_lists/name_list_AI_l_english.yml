@@ -355,7 +355,15 @@
  AI_CHR_FleetArrayM4-L:0 "舰队阵列M4-L"
  AI_CHR_FleetArray38-38:0 "舰队阵列38-38"
  AI_CHR_FleetArray8-99:0 "舰队阵列8-99"
- AI_xxSTARBASE_ORD:0 "$O$太空基地"
- AI_AUTONOMOUSCLUSTERxx_SEQ3:0 "自律集群$CCC$"
- AI_xxSTERILIZATIONCLUSTER_ORD:0 "$O$净化集群"
- AI_xxDEFENSECLUSTER_ORD:0 "$O$守备集群"
+
+# Sequential name formats
+ AI_STARBASE:0 "$ORD0$太空基地"
+ AI_AUTONOMOUSCLUSTER:0 "自主集群$HEX$"
+ AI_STERILIZATIONCLUSTER:0 "$ORD0$净化集群"
+ AI_DEFENSECLUSTER:0 "$ORD0$防御集群"
+
+# Obsolete sequentials (for backwards compatibility)
+ AI_xxSTARBASE_ORD:1 "$O$太空基地"
+ AI_AUTONOMOUSCLUSTERxx_SEQ3:0 "自主集群$CCC$"
+ AI_xxSTERILIZATIONCLUSTER_ORD:1 "$O$净化集群"
+ AI_xxDEFENSECLUSTER_ORD:1 "$O$防御集群"

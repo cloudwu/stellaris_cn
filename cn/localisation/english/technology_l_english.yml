@@ -61,8 +61,14 @@
  tech_corvette_build_speed:0 "护卫舰建设标准"
  tech_corvette_build_speed_desc:0 "制定新的护卫舰设计建造标准，极大提高生产流水线效率。"
 
- tech_corvette_hull_effect:0 "$mod_shipsize_corvette_hull_add$: §G+100§!"
- tech_corvette_build_speed_effect:0 "$mod_ship_corvette_cost_mult$: §G-5%§!\n$mod_shipsize_corvette_build_speed_mult$: §G+25%§!"
+ tech_corvette_hull_effect:1 "$corvette_hull_effect$\n$frigate_hull_effect$"
+ tech_corvette_build_speed_effect:1 "$corvette_build_speed_effect$\n$frigate_build_speed_effect$"
+
+ corvette_hull_effect:0 "$mod_shipsize_corvette_hull_mult$：§G+10%§!"
+ corvette_build_speed_effect:0 "$mod_ship_corvette_cost_mult$：§G-5%§!\n$mod_shipsize_corvette_build_speed_mult$：§G+25%§!"
+
+ frigate_hull_effect:0 "$mod_shipsize_frigate_hull_mult$：§G+10%§!"
+ frigate_build_speed_effect:0 "$mod_ship_frigate_cost_mult$：§G-5%§!\n$mod_shipsize_frigate_build_speed_mult$：§G+25%§!"
 
  tech_destroyer_hull_1:0 "改良型驱逐舰船体"
  tech_destroyer_hull_1_desc:0 "建造技术的进步，使我们能建造更加坚固耐用的驱逐舰。"
@@ -71,7 +77,7 @@
  tech_destroyer_build_speed:0 "驱逐舰建设标准"
  tech_destroyer_build_speed_desc:0 "制定新的驱逐舰设计建造标准，极大提高生产流水线效率。"
 
- tech_destroyer_hull_effect:0 "$mod_shipsize_destroyer_hull_add$: §G+200§!"
+ tech_destroyer_hull_effect:1 "$mod_shipsize_destroyer_hull_mult$: §G+10%§!"
  tech_destroyer_build_speed_effect:0 "$mod_ship_destroyer_cost_mult$: §G-5%§!\n$mod_shipsize_destroyer_build_speed_mult$: §G+25%§!"
 
  tech_cruiser_hull_1:0 "改良型巡洋舰船体"
@@ -81,7 +87,7 @@
  tech_cruiser_build_speed:0 "巡洋舰建设标准"
  tech_cruiser_build_speed_desc:0 "制定新的巡洋舰设计建造标准，极大提高生产流水线效率。"
 
- tech_cruiser_hull_effect:0 "$mod_shipsize_cruiser_hull_add$: §G+500§!"
+ tech_cruiser_hull_effect:1 "$mod_shipsize_cruiser_hull_mult$: §G+10%§!"
  tech_cruiser_build_speed_effect:0 "$mod_ship_cruiser_cost_mult$: §G-5%§!\n$mod_shipsize_cruiser_build_speed_mult$: §G+25%§!"
 
  tech_battleship_hull_1:0 "改良型战列舰船体"
@@ -91,7 +97,7 @@
  tech_battleship_build_speed:0 "战列舰建设标准"
  tech_battleship_build_speed_desc:0 "制定新的战列舰设计建造标准，极大提高生产流水线效率。"
 
- tech_battleship_hull_effect:0 "$mod_shipsize_battleship_hull_add$: §G+800§!"
+ tech_battleship_hull_effect:1 "$mod_shipsize_battleship_hull_mult$: §G+10%§!"
  tech_battleship_build_speed_effect:0 "$mod_ship_battleship_cost_mult$: §G-5%§!\n$mod_shipsize_battleship_build_speed_mult$: §G+25%§!"
 
  tech_titan_hull_1:0 "改良型泰坦船体"
@@ -171,6 +177,11 @@
  tech_dragon_armor:0 "人造龙鳞甲"
  tech_dragon_armor_desc:0 "以太龙兽的鳞甲由多层独特的矿石纳米结构构成。非正统的制造工艺让我们得以尽力仿真出这种自我修复的结构。"
 
+ tech_armor_hardeners_1:0 "装甲硬化"
+ tech_armor_hardeners_1_desc:0 "$ARMOR_HARDENER_1_DESC$"
+ tech_armor_hardeners_2:0 "自适应装甲硬化"
+ tech_armor_hardeners_2_desc:0 "$ARMOR_HARDENER_2_DESC$"
+
 # Thruster Components
  tech_thrusters_1:0 "化学推进器"
  tech_thrusters_1_desc:0 "简单但效率适中的化学推进器，依赖可燃推进剂运转。"
@@ -240,6 +251,10 @@
  #tech_enhanced_combat_software_desc:0 ""
  tech_synthetic_leaders:0 "合成人人格矩阵"
  tech_synthetic_leaders_desc:0 "植入人格后，合成人最终能够与其他公民在同一个语境下进行社会交流。一些单元甚至可以担任领袖角色。"
+ tech_integrated_cybernetics:0 "整合式义体"
+ tech_integrated_cybernetics_desc:0 "对基础的外骨骼套件进行改良后，这些整合式义体植入体能够让使用者对于有害的环境效果更具有抵抗力。"
+ tech_integrated_cybernetics_machine_intelligence:1 "自适应义体"
+ tech_integrated_cybernetics_desc_machine_intelligence:1 "安装能够适应当地环境的义体植入体，我方无人机的效能能够得到显著加强。"
  tech_mineral_purification_1:0 "矿物提纯"
  tech_mineral_purification_1_desc:0 "优化矿物加工工艺，让我们的效率达到新水平。"
  tech_mineral_purification_2:0 "高级矿物提纯"
@@ -265,6 +280,8 @@
  tech_matter_generator_desc:0 "通过使用大量的能量，我们能用光从看似虚无转化为物质。"
  tech_mega_assembly:0 "巨规模装配系统"
  tech_mega_assembly_desc:0 "先进的装配模板系统使我们能够大幅提升装配新单位的效率。"
+ tech_robot_assembly_complex:0 "机器人装配系统"
+ tech_robot_assembly_complex_desc:0 "先进的装配模板系统，可以大幅提高我们组装新机器人的效率。"
 
  # Space Mining
  tech_space_construction:0 "世外建设"
@@ -425,6 +442,8 @@
  tech_synchronized_defences_desc:0 "协调防御和攻击武器使用规范可以提高效率。"
  tech_global_research_initiative:1 "星际研究倡议"
  tech_global_research_initiative_desc:2 "一项旨在建设星际资源库和更灵活的研究补助的计划。"
+ tech_neuro_quantum_links:0 "量子神经链接"
+ tech_neuro_quantum_links_desc:0 "先进的神经植入体连接着量子计算集群，让人能够进行并行思考。"
  tech_cryostasis_1:0 "人工智能殖民船"
  tech_cryostasis_1_desc:0 "这艘殖民船由人工智能控制，船员和殖民者均可处于深度睡眠之中。"
  tech_cryostasis_1_machine_intelligence:0 "殖民地建设无人机"
@@ -487,6 +506,10 @@
  tech_shields_5_desc:0 "这种强化硬化过的能量护盾十分强大。它们提供的防护首屈一指。"
  tech_shield_rechargers_1:0 "护盾电容"
  tech_shield_rechargers_1_desc:1 "这些电容里面储存着额外的能量，可以快速给护盾充能。"
+ tech_shield_hardeners_1:0 "护盾硬化"
+ tech_shield_hardeners_1_desc:0 "$SHIELD_HARDENER_1_DESC$"
+ tech_shield_hardeners_2:0 "先进护盾硬化"
+ tech_shield_hardeners_2_desc:0 "$SHIELD_HARDENER_2_DESC$"
  tech_planetary_shield_generator:0 "行星护盾"
  tech_planetary_shield_generator_desc:0 "在行星的大气层中生成一层强大的能量护盾比在真空中更具挑战，但这在遭遇轨道轰炸时能提供强有力的防护。"
  tech_dark_matter_deflector:0 "暗物质偏转器"
@@ -781,6 +804,8 @@
  tech_genome_mapping_desc:1 "通过对个体的DNA测序完成基因组图谱，开启个体定制医疗和定向疗法的新纪元。"
  tech_epigenetic_triggers:0 "表观遗传触发器"
  tech_epigenetic_triggers_desc:1 "高级DNA甲基化科技使我们能够对任意基因组进行功能上显著的改变。"
+ TECH_UNLOCK_EPIGENETICS_TITLE:0 "§H解锁特性：§!表观遗传学触发器"
+ TECH_UNLOCK_EPIGENETICS_DESC:0 "允许我们经由物种修饰技术移除有机物种的未开智特质。"
  tech_cloning:0 "克隆"
  tech_cloning_desc:1 "去核术和人工子宫技术的突破使得基于通用基因模板大规模生产个体成为可能。"
  tech_gene_banks:0 "基因库"
@@ -794,8 +819,6 @@
  tech_gene_tailoring:0 "基因裁剪"
  tech_gene_tailoring_desc:1 "基因编辑工具的广泛使用肯定会对我族的发展有积极的影响。"
  tech_gene_tailoring_modifier_desc:0 "$species_trait_points_add$：$POINTS|0=+$"
- tech_genetic_resequencing:0 "基因重组"
- tech_genetic_resequencing_desc:0 "力求改良种族时我们将不再受种族基本生物结构的限制。DNA只不过是雕塑家驾驭的另一种材料。"
  tech_gene_expressions:0 "定向基因表达"
  tech_gene_expressions_desc:1 "在细胞层面上更严格控制RNA和蛋白质的生产。"
  tech_gene_expressions_modifier_desc:0 "$species_trait_points_add$：$POINTS|0=+$"
@@ -807,7 +830,18 @@
  tech_regenerative_hull_tissue_desc:0 "转基因硅基细菌可能能被操纵用于再生无机材料。"
  tech_vitality_boosters:0 "生命力增强"
  tech_vitality_boosters_desc:1 "当躯体老朽，科学将干预。"
-
+ tech_lithoid_transgenesis:0 "硅体转基因技术"
+ tech_lithoid_transgenesis_desc:0 "硅基生物和碳基生物具有许多相似性，这能让我们将石质类生物的进化特质同碳基生物结合起来。"
+ TECH_UNLOCK_LITHOID_GENETICS_TITLE:0 "§H解锁特性：§!石质类转基因技术"
+ TECH_UNLOCK_LITHOID_GENETICS_DESC:0 "允许我们经由物种修饰技术将石质类特质添加给有机物种。"
+ tech_plantoid_transgenesis:0 "植物体转基因技术"
+ tech_plantoid_transgenesis_desc:0 "通过一些人工的促长手段，我们在植物类物种中发现的进化适应性也可以复制到其他形式的生命体中。"
+ TECH_UNLOCK_PLANTOID_GENETICS_TITLE:0 "§H解锁特性：§!植物体转基因技术"
+ TECH_UNLOCK_PLANTOID_GENETICS_DESC:0 "允许我们经由物种修饰技术将植物类特质添加给有机物种。"
+ tech_leviathan_transgenesis:0 "星神兽转基因技术"
+ tech_leviathan_transgenesis_desc:0 "游荡于星辰间的巨兽对于在群星间存活具有极其令人瞩目的适应性。掌控这些特质会是我们在基因领域的巨大胜利。"
+ TECH_UNLOCK_LEVIATHAN_GENETICS_TITLE:0 "§H解锁特性：§!星神兽转基因技术"
+ TECH_UNLOCK_LEVIATHAN_GENETICS_DESC:0 "允许我们经由物种修饰技术将星神兽特质添加给有机物种。"
  # Fleet Organization
  tech_doctrine_fleet_size_1:0 "学说：太空作战"
  tech_doctrine_fleet_size_1_desc:1 "逐步适应深空作战的情况使我们能够有效协调更大规模的激动。"
@@ -883,10 +917,16 @@
  # Empire Management
  tech_planetary_government:0 "行星政府"
  tech_planetary_government_desc:1 "一旦殖民地最终建成，开拓先锋成为公民，对维护稳定的强大地方政府的诉求便超过了殖民地所需的灵活性。"
+ tech_planetary_government_machine_intelligence:0 "行星实例化"
+ tech_planetary_government_desc_machine_intelligence:0 "只有面向我们的网络进行专门化的基础设施建设，我们的殖民地才能实现稳定的运转。"
+ tech_planetary_government_hive_mind:0 "行星簇丛"
+ tech_planetary_government_desc_hive_mind:0 "如果不能将集体意识进行稳定的投射，我们的殖民地会枯萎归零。我们不辞辛劳地现身是保证蜂群繁荣昌盛的关键。"
  tech_planetary_unification:0 "行星统一"
  tech_planetary_unification_desc:2 "部族到国家，跨过烽鼓不息的历史长河，如今已统一在同一帝国的旗帜之下。我们绝不会灭亡，永远不会。"
  tech_planetary_unification_machine_intelligence:0 "统一数据标准"
  tech_planetary_unification_desc_machine_intelligence:0 "无法容忍任何偏差。"
+ tech_planetary_unification_hive_mind:0 "演化收敛"
+ tech_planetary_unification_desc_hive_mind:0 "我们为了求生存而死命战斗的生态熔炉已经在我们的基因记忆中蚀刻了一条强健的道路。我们集所有曾来此地的存在于一统。"
  tech_planetary_unification_effect:1 "获得大量£unity£ §Y凝聚力§!"
  tech_adaptive_bureaucracy:0 "自适应官僚制"
  tech_adaptive_bureaucracy_desc:1 "我们取得的进步需要一种更灵活的全新行政系统。这种行政系统能够为我们的事业提供帮助，而非碍手碍脚。"
@@ -1034,8 +1074,8 @@
  tech_repeatable_weapon_type_energy_fire_rate_desc:1 "冷却技术的新发展时常浮现，提高了我们武器系统的稳定性和效率，避免它们炸掉我们的飞船。"
  tech_repeatable_weapon_type_strike_craft_fire_damage:0 "突触拦截器"
  tech_repeatable_weapon_type_strike_craft_fire_damage_desc:1 "提高战斗机飞行员处理敌人位置信息并做出反应的速度，将舰载机提高几个档次。"
- tech_repeatable_weapon_type_strike_craft_fire_rate:0 "热力回收器"
- tech_repeatable_weapon_type_strike_craft_fire_rate_desc:1 "回收武器开火时发散的热量，用于装载弹药，提高舰载机的武器射速。"
+ tech_repeatable_weapon_type_strike_craft_fire_rate:1 "迭代式飞行员培训"
+ tech_repeatable_weapon_type_strike_craft_fire_rate_desc:2 "通过收集和分析曾来过此地的飞行员的表现数据，我们能够指数型地改善我们训练飞行员的方法。每一个来过此地受训的人都会变得更加迅速。"
  tech_repeatable_improved_planet_sensor_range:0 "行星信号增强器"
  tech_repeatable_improved_planet_sensor_range_desc:1 "我们的舰队愈发远离祖籍，我们的传感科技也不断突破极限。"
  tech_repeatable_reduced_building_cost:0 "引力分析"

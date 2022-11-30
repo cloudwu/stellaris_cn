@@ -5,7 +5,7 @@
  trait_aquatic:0 "如鱼得水"
  trait_aquatic_desc:0 "§L这个物种完美地适应了海洋深层的生活。然而，在干燥的陆地上，它们就像没水之鱼一样。§!\n"
  trait_aquatic_tooltip:2 "§Y海洋§!星球和§Y洪潮居住站§!上的住房使用：§G-10%§!\n§Y海洋§!星球上的食物、能源点数和矿物产出：§G+10%§!\n非§Y潮湿§!星球上的住房使用：§R+30%§!\n非§Y潮湿§!星球宜居性：§R-20%§!\n\n§H$ap_hydrocentric$§!飞升特典会强化这个特质的效果。"
- trait_aquatic_remove_evolutionary_mastery:0 "§R需要§Y$ap_evolutionary_mastery$§!飞升特典才能移除这个特质。§!"
+ trait_aquatic_remove_evolutionary_mastery:1 "§R需要§Y$tr_genetics_resequencing$§!传统才能移除这个特质。§!"
  trait_aquatic_remove_hydrocentric:0 "§R采纳§Y$ap_hydrocentric$§!飞升特典之后无法移除§Y$trait_aquatic$§!特质。§!"
 
  leader_trait_aquatic_admiral:0 "如鱼得水"
@@ -34,10 +34,11 @@
  aquatics.110.desc:0 "[From.GetName]击杀了天龙！这一可怕的事实导致[dragon_planet.GetName]现在很容易被攻击。"
  aquatics.110.A:0 "哦……"
  aquatics.115.name:0 "天龙已复活"
- aquatics.115.desc:0 "言出必行，我们的死灵法师已将[dragon_system.GetName]星系的天龙复活了！虽然结果有些不太相同——正如某些人预料中的将某物由死变活会发生的那样——现在它急切地等待我们的指令。"
+ aquatics.115.desc.regular:0 "言出必行，我们的死灵法师已将[dragon_system.GetName]星系的天龙复活了！虽然结果有些不太相同——正如某些人预料中的将某物由死变活会发生的那样——现在它急切地等待我们的指令。"
+ aquatics.115.desc.hive:0 "控制§Y天龙§!是我们长久以来的计划。为了兑现这一目标，我们的工蜂进行了特异性演化。虽然感染的途径仍需要适应，但我们已成为了天龙，天龙亦成为了我们。蜂巢整合了它的知识和经验，我们已经为面对其同族做了充足准备。"
  aquatics.115.A:0 "我们的敌人定被燃尽！"
  REANIMATE_ORIGIN_DRAGON:0 "复活天龙"
- REANIMATE_ORIGIN_DRAGON_DESC:0 "虽然[dragon_system.GetName]星系的龙被击杀了，但我们的死灵法师向我们保证，这种状况不会持续太久。 他们承诺，他们很快就可以让它起来重新飞翔——并且安全地成为我们的奴仆——很快。"
+ REANIMATE_ORIGIN_DRAGON_DESC:1 "虽然[dragon_system.GetName]星系的龙被击杀了，但我们的[From.Owner.GetNecromancersLower]向我们保证，这种状况不会持续太久。 他们承诺，他们很快就可以让它复活——并且安全地成为我们的奴仆——很快。"
  slew_origin_dragon:0 "元初屠龙者"
  slew_origin_dragon_desc:0 "自古以来，强大的龙已经在我们的母星系遨游……这样的情况到此为止了！我们从这种威胁中解放出来，没有什么可以阻止我们迈向未来了。"
 
@@ -217,7 +218,7 @@
  # Ocean Paradise Origin
  origin_ocean_paradise:0 "海洋天堂"
  origin_ocean_paradise_desc:0 "自这个文明诞生伊始他们就享受着物产丰富、无忧无虑的环境，使其能够不受阻碍地发展繁荣。"
- origin_ocean_paradise_effects:0 "—母星为§H$pc_ocean$§!（规模：£planetsize£ §Y30§!）拥有丰富的§H$food$§!储量，以及§H$MOD_POP_HAPPINESS$§!、§H$MOD_POP_GROWTH_SPEED$§!和§H产出§!的加成。\n—确保的宜居星球被替换为§H$pc_frozen$§!。"
+ origin_ocean_paradise_effects:1 "—母星为§H$pc_ocean$§!（规模：£planetsize£ 30）拥有丰富的§H$food$§!储量，以及§H$MOD_POP_HAPPINESS$§!、§H$MOD_POP_GROWTH_SPEED$§!和§H产出§!的加成。\n—确保的宜居星球被替换为§H$pc_frozen$§!。"
 
  START_SCREEN_OCEAN_PARADISE:0 "[Root.GetAdj]社会有句谚语“知足常乐。”只要学会感恩，就会发现处处皆是生命的馈赠。在这样的水中，我们已经繁荣昌盛了很久。\n\n但我们中的老者并没有意识到这种停滞。他们将我们对生存的渴望视为急躁。如果我们不寻求改变，那么变化很可能会杀我们个措手不及。辽阔的宇宙中我们必然不是孤身一人。要想保护家园，有些人必须离开家园。\n\n事实证明，深入深渊是值得的。艰苦卓绝的打捞工作带回了令人惊叹的残骸，触发了洪水般的科技突跃。最终，我们终于准备好了突入大洋以外的世界，去探索、去见证、去学习、去保护。"
  START_SCREEN_OCEAN_PARADISE_HIVE:0 "“知足常乐。”只要学会感恩，就会发现处处皆是生命的馈赠。在这样的水中，我们已经繁荣昌盛了很久。\n\n大停滞迫在眉睫。如果我们不寻求改变，那么变化很可能会杀我们个措手不及。辽阔的宇宙中我们必然不是孤身一人。要想保护家园，有些人必须离开家园。\n\n事实证明，深入深渊是值得的。艰苦卓绝的打捞工作带回了令人惊叹的残骸，触发了洪水般的科技突跃。最终，我们终于准备好了突入大洋以外的世界，去探索、去见证、去学习、去保护。"
@@ -235,7 +236,7 @@
  civic_anglers_desc:0 "这个社会善于利用大自然的恩惠，为自己提供稳定的生活资料和经济价值。"
  civic_corporate_anglers:0 "$civic_anglers$"
  civic_corporate_anglers_desc:0 "$civic_anglers_desc$"
- civic_tooltip_anglers_effects:2 "在§H海洋星球§!上，§H农业区§!没有上限限制。\n在§Y潮湿§!星球上，£job_farmer£ §Y$job_farmer_plural$§!被替换为£job_angler£ §Y$job_angler_plural$§!和£job_pearl_diver£ §Y$job_pearl_diver_plural$§!。\n§Y$job_angler_plural$ §! 生产 §Y8§! £food£ §Y$food$§! 和 §Y2§! £trade_value£ §Y$TRADE_VALUE$§!，而§Y$job_pearl_diver_plural$ §! 生产 §Y3§! £consumer_goods£ §Y$consumer_goods$ §! 和 §Y3§! £trade_value£ §Y$TRADE_VALUE$§!。\n增加 §H$trait_aquatic$§! 特质。"
+ civic_tooltip_anglers_effects:3 "在§H海洋星球§!上，§H农业区§!没有上限限制。\n在§Y潮湿§!星球上，£job_farmer£ §Y$job_farmer_plural$§!被替换为£job_angler£ §Y$job_angler_plural$§!和£job_pearl_diver£ §Y$job_pearl_diver_plural$§!。\n§Y$job_angler_plural$ §! 生产 §Y8§! £food£ §Y$food$§! 和 §Y2§! £trade_value£ §Y$TRADE_VALUE$§!，以及§Y$job_pearl_diver_plural$ §! 生产 §Y6§! £consumer_goods£ §Y$consumer_goods$ §! 和 §Y2§! £trade_value£ §Y$TRADE_VALUE$§!。\n增加 §H$trait_aquatic$§! 特质。"
  job_aqu_angler_effect_desc:1 "£job_angler£ $job_angler_plural$生产 £food£ §Y$food$§!和 £trade_value£ §Y$TRADE_VALUE$§!"
  job_angler:0 "渔夫"
  job_angler_plural:0 "渔夫"
@@ -247,5 +248,5 @@
  job_pearl_diver_plural:0 "珍珠潜水员"
  job_pearl_diver_desc:0 "尽管比起潜水，这些专家更关心耕种和耕作，他们还是从海洋深处带回了各式各样的宝藏。"
  mod_job_pearl_diver_add:0 "珍珠潜水员岗位"
- job_pearl_diver_effect_desc:0 "£job_pearl_diver£ $job_pearl_diver_plural$ 生产 £consumer_goods£ §Y$consumer_goods$§! 和 £trade_value£ §Y$TRADE_VALUE$§!"
+ job_pearl_diver_effect_desc:1 "£job_pearl_diver£ $job_pearl_diver_plural$ 将 $r_food$ 和 $r_minerals$ 转换为 £consumer_goods£ §Y$consumer_goods$§! 和 £trade_value£ §Y$TRADE_VALUE$§!"
  civic_tooltip_not_anglers:0 "没有公民性：§Y$civic_anglers$§!"

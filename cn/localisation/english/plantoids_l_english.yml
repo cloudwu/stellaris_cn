@@ -68,19 +68,30 @@
 
  trait_plantoid_radiotrophic:0 "辐射合成"
  trait_plantoid_radiotrophic_desc:0 "§L这个物种需要食物和低能辐射维生，因此可以在环境最恶劣的星球上生存。§!"
- TRAIT_PLANTOID_RADIOTROPHIC_EFFECT:0 "$TRAIT_PLANTOID_PHOTOTROPHIC_EFFECT$\n§Y废土世界§!上的人口无需£energy£§Y能量币§!维护费。\n§Y废土世界§!上的人口增长速度§G+10%§!\n废土世界宜居性：§G+10%§!"
+ TRAIT_PLANTOID_RADIOTROPHIC_EFFECT:1 "$TRAIT_PLANTOID_PHOTOTROPHIC_EFFECT$\n§Y废土世界§!上的人口将会移除该£energy£ §Y能量§!维护费\n§Y废土世界§!上的人口增长速度§G+10%§!\n废土世界宜居性：§G+10%§!"
  trait_harvested_radiotrophic:0 "$trait_plantoid_radiotrophic$"
  trait_harvested_radiotrophic_desc:0 "$trait_plantoid_radiotrophic_desc$"
  trait_lithoid_radiotrophic:0 "$trait_plantoid_radiotrophic$"
  trait_lithoid_radiotrophic_desc:0 "$trait_plantoid_radiotrophic_desc$"
- TRAIT_LITHOID_RADIOTROPHIC_EFFECT:0 "将§Y50%§!的基础£minerals£§Y矿物§!维护费替换为£energy£§Y能量§!维护费。\n住在§Y死寂星球§!上的人群没有£energy£§Y能量§!维护费。\n§Y死寂星球§!上的人口生长速度§G+10%§!\n死寂星球宜居性：§G+10%§!"
-
+ TRAIT_LITHOID_RADIOTROPHIC_EFFECT:1 "将§Y50%§!的基础£minerals£§Y矿物§!维护费替换为£energy£§Y能量§!维护费。\n§Y废土世界§!上的人口将会移除该£energy£ §Y能量§!维护费\n§Y废土世界§!上的人口生长速度§G+10%§!\n废土世界宜居性：§G+10%§!"
+ 
  trait_plantoid_budding:0 "出芽生殖"
  trait_plantoid_budding_desc:0 "§L除了通常的受精卵或者孢子生殖之外，这个物种还可以进行出芽生殖。§!"
  trait_lithoid_budding:0 "析晶化"
  trait_lithoid_budding_desc:0 "§L除了通常的繁衍方式以外，该物种可以通过复制晶格并使其生长的方式进行自体繁衍。§!"
  TRAIT_PLANTOID_BUDDING_EFFECT:1 "每个具有奴役或更高生活标准的人口产生0.02£mod_pop_growth_speed£§Y$MOD_PLANET_POP_ASSEMBLY_ORGANIC_ADD$§!\n\n该效果可以同其他提供$MOD_PLANET_POP_ASSEMBLY_ORGANIC_ADD$的来源，比如£building£§H$building_clone_vats$§!或者£job_spawning_drone£§H$job_spawning_drone_plural$§!叠加。"
  TRAIT_LITHOID_BUDDING_EFFECT:0 "$TRAIT_PLANTOID_BUDDING_EFFECT$\n\n§H$trait_lithoid$特质§!改变了该特质的效果。"
+
+ trait_advanced_phototrophic:0 "$trait_plantoid_phototrophic$"
+ trait_advanced_phototrophic_desc:0 "§L通过先进的基因科技，该物种现在可以部分依靠阳光自养。§!"
+ TRAIT_ADVANCED_PHOTOTROPHIC_EFFECT:0 "将§Y50%§!基础£food£§Y食物§!或£minerals£§Y矿物§!维护费替换为£energy£§Y能量§!维护费。"
+
+ trait_advanced_radiotrophic:0 "$trait_plantoid_radiotrophic$"
+ trait_advanced_radiotrophic_desc:0 "§L通过先进的基因科技，该物种现在可以部分依靠低能辐射自养，并因此可以在环境最恶劣的星球上生存。§!"
+ TRAIT_ADVANCED_RADIOTROPHIC_EFFECT:0 "$TRAIT_PLANTOID_PHOTOTROPHIC_EFFECT$\n§Y废土世界§!上的人口将会移除该£energy£ §Y能量§!维护费"
+ 
+ trait_advanced_budding:0 "$trait_plantoid_budding$"
+ trait_advanced_budding_desc:0 "§L对他们的遗传物质序列的修改使得物种可以在保有通常繁殖方式的同时，以出芽的方式进行繁殖。§!"
 
 ### Catalytic Processing by Byron Aytoun
 

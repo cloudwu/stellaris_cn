@@ -5,11 +5,13 @@
  ####################################
 
  #Federation
+ MOD_FEDERATION_EXPERIENCE_ADD:0 "每月经验"
  MOD_FEDERATION_COHESION_ADD:0 "每月内聚度"
  MOD_FEDERATION_COHESION_ETHICS_PENALTY_MULT:0 "道德准则导致的内聚度惩罚"
  MOD_FEDERATION_FLEET_COUNTRIBUTION_FACTOR:0 "舰队贡献"
  MOD_FEDERATION_JOIN_MALUS_MULT:0 "加入造成的联邦内聚度惩罚"
  MOD_FEDERATION_LEAVE_MALUS_MULT:0 "退出造成的联邦内聚度惩罚"
+ MOD_FEDERATION_ENVOY_COHESION_EFFECT_MULT:0 "指派特使产生的联邦团结度"
 
  #Country
  MOD_BLANK_MODIFIER:0 "空白调整因素"
@@ -247,8 +249,10 @@
  MOD_SHIP_ARMOR_MULT:1 "装甲生命值"
  MOD_SHIP_SHIELD_DAMAGE_MULT:0 "护盾伤害"
  MOD_SHIP_SHIELD_PENETRATION_MULT:0 "护盾穿透"
+ MOD_SHIP_SHIELD_HARDENING_ADD:0 "护盾硬化"
  MOD_SHIP_ARMOR_DAMAGE_MULT:0 "装甲伤害"
  MOD_SHIP_ARMOR_PENETRATION_MULT:0 "装甲穿透"
+ MOD_SHIP_ARMOR_HARDENING_ADD:0 "装甲硬化"
  MOD_SHIP_BASE_SPEED_MULT:0 "舰船基础速度"
  MOD_SHIP_SPEED_MULT:0 "亚光速"
  MOD_SHIP_LANDING_TIME_MULT:0 "着陆用时"
@@ -289,6 +293,7 @@
  MOD_SHIP_COMBAT_SPEED_MULT:2 "战时速度"
  MOD_SHIP_DISENGAGE_CHANCE_MULT:0 "战斗撤离几率"
  MOD_SHIP_DISENGAGE_CHANCE_REDUCTION:0 "撤离几率减小"
+ MOD_SHIP_DISENGAGE_OPPORTUNITIES_ADD:0 "撤离机会"
  MOD_SHIP_EVASION_MULT:0 "闪避"
  MOD_SHIP_EVASION_ADD:1 "闪避率"
  MOD_SHIP_ACCURACY_MULT:0 "精度"
@@ -398,6 +403,8 @@
  MOD_PLANET_BORDER_MULT:0 "星球边界推进"
  MOD_COUNTRY_BORDER_FRICTION_MULT:0 "边界纠纷"
  MOD_PLANET_BUILDING_BUILD_SPEED_MULT:1 "行星建造速度"
+ MOD_PLANETARY_ASCENSION_EFFECT_MULT:0 "行星飞升效果"
+ MOD_PLANETARY_ASCENSION_COST_MULT:0 "行星飞升花费"
  mod_planet_structures_cost_mult:0 "建筑和地区成本"
  mod_planet_structures_upkeep_mult:0 "建筑和地区维护费"
  mod_planet_buildings_cost_mult:0 "建筑成本"
@@ -650,6 +657,8 @@
  # Dynamic Modifiers
  ####################################
 
+ mod_resolution_category_divinity_vote_strength_mult:0 "$resolution_category_divinity$议案投票加权"
+
  mod_pop_ethic_pacifist_attraction_mult:0 "和平主义道德吸引力"
  mod_pop_ethic_militarist_attraction_mult:0 "军国主义道德吸引力"
  mod_pop_ethic_materialist_attraction_mult:0 "物质主义道德吸引力"
@@ -682,6 +691,7 @@
  mod_shipsize_cruiser_build_speed_mult:0 "巡洋舰建造速度"
  mod_shipsize_battleship_build_speed_mult:0 "战列舰建造速度"
  mod_shipsize_colonizer_build_speed_mult:0 "殖民船建造速度"
+ mod_shipsize_frigate_build_speed_mult:0 "$frigate$建造速度"
 
  mod_ship_corvette_cost_mult:0 "护卫舰建造费用"
  mod_ship_destroyer_cost_mult:0 "驱逐舰建造费用"
@@ -698,10 +708,14 @@
  mod_ship_terraform_station_cost_mult:0 "环境改造站建造费用"
  mod_ship_wormhole_station_cost_mult:0 "虫洞站建造费用"
  mod_ship_observation_station_cost_mult:0 "观测站建造费用"
+ mod_ship_frigate_cost_mult:0 "$frigate$建造费用"
 
  mod_shipsize_corvette_upkeep_mult:0 "护卫舰维护费"
  mod_shipsize_corvette_hull_mult:0 "护卫舰船体耐久值"
  mod_shipsize_corvette_hull_add:0 "$mod_shipsize_corvette_hull_mult$"
+
+ mod_shipsize_frigate_hull_add:0 "$frigate$船体值"
+ mod_shipsize_frigate_hull_mult:0 "$mod_shipsize_frigate_hull_add$"
 
  mod_shipsize_destroyer_upkeep_mult:0 "驱逐舰维护费"
  mod_shipsize_destroyer_hull_mult:0 "驱逐舰船体耐久值"
@@ -734,7 +748,7 @@
  mod_shipsize_observation_station_upkeep_mult:0 "观测站维护费"
 
  mod_ship_military_station_small_cost_mult:0 "防御平台建造费用"
- mod_shipsize_military_station_small_upkeep_mult:1 "防御平台维护费"
+ mod_ship_military_station_small_upkeep_mult:1 "防御平台维护费"
  mod_shipsize_military_station_small_hull_mult:0 "防御平台船体耐久值"
  mod_shipsize_military_station_small_hull_add:0 "$mod_shipsize_military_station_small_hull_mult$"
  mod_shipsize_military_station_small_build_speed_mult:0 "防御平台建造速度"
@@ -756,7 +770,11 @@
  mod_weapon_type_strike_craft_weapon_damage_mult:0 "舰载机伤害"
  mod_weapon_type_strike_craft_weapon_fire_rate_mult:0 "舰载机攻击速度"
  mod_weapon_type_strike_craft_speed_mult:0 "舰载机速度"
- mod_weapon_swarm_weapon_fire_rate_mult:0 "索林原虫虫群武器攻击速度"
+ mod_weapon_swarm_weapon_fire_rate_mult:0 "虫族虫群武器攻击速度"
+ mod_weapon_type_space_fauna_weapon_damage_mult:0 "太空兽群武器伤害"
+ mod_weapon_type_space_fauna_weapon_fire_rate_mult:0 "太空兽群武器攻击速度"
+
+ mod_shroud_delve_cooldown:0 "潜入天幕冷却"
 
  #vultaum_asteroid_category_research_speed_mult: "Anomaly Research Speed (Precursor - ADD CATEGORIES PROPER)"
  #vultaum_asteroid_category_research_fail_risk_mult: "Anomaly Fail Risk (Precursor - ADD CATEGORIES PROPER)"
@@ -1548,11 +1566,11 @@
  mod_BIOLOGICAL_species_trait_points_add:0 "$species_trait_points_add$"
  mod_pc_machine_habitability:0 "机械世界适居性"
  mod_pc_hive_habitability:0 "蜂巢世界适居性"
- MOD_POSTFIX_PERCENT:0 "§G%§!"
+ MOD_POSTFIX_PERCENT:1 "%"
 
  SPECIES_TRAIT_PICKS:0 "物种特质选择"
  mod_BIOLOGICAL_species_trait_picks_add:0 "有机体$SPECIES_TRAIT_PICKS$"
- mod_MECHANICAL_species_trait_picks_add:0 "机械体$SPECIES_TRAIT_PICKS$"
+ mod_ROBOT_species_trait_picks_add:0 "机械体$SPECIES_TRAIT_PICKS$"
  mod_MACHINE_species_trait_picks_add:0 "机械$SPECIES_TRAIT_PICKS$"
  mod_HUM_species_trait_picks_add:0 "人型生物$SPECIES_TRAIT_PICKS$"
  mod_MAM_species_trait_picks_add:0 "哺乳类$SPECIES_TRAIT_PICKS$"
@@ -1567,6 +1585,9 @@
 
  MOD_COUNTRY_SENSOR_RANGE_ADD:0 "国家传感器范围"
  MOD_SHIP_SENSOR_RANGE_ADD:0 "探测范围"
+
+ MOD_GOVERNMENT_ELECTION_YEARS_ADD:0 "选举间隔"
+ MOD_GOVERNMENT_ELECTION_YEARS_MULT:0 "$MOD_GOVERNMENT_ELECTION_YEARS_ADD$"
 
  MOD_COUNTRY_IMMIGRATION_PULL_ADD:0 "帝国迁入吸引力"
  MOD_COUNTRY_IMMIGRATION_PULL_MULT:0 "$MOD_COUNTRY_IMMIGRATION_PULL_ADD$"

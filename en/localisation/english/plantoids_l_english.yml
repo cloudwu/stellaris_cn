@@ -68,12 +68,12 @@
 
  trait_plantoid_radiotrophic:0 "Radiotrophic"
  trait_plantoid_radiotrophic_desc:0 "§LThis species is sustained by a combination of both food and low-energy radiation, and as such can thrive on the most inhospitable of worlds.§!"
- TRAIT_PLANTOID_RADIOTROPHIC_EFFECT:0 "$TRAIT_PLANTOID_PHOTOTROPHIC_EFFECT$\nPops living on §YTomb Worlds§! have no £energy£ §YEnergy§! Upkeep.\nPop Growth Speed on §YTomb Worlds§! §G+10%§!\nTomb World Habitability: §G+10%§!"
+ TRAIT_PLANTOID_RADIOTROPHIC_EFFECT:1 "$TRAIT_PLANTOID_PHOTOTROPHIC_EFFECT$\nThis £energy£ §YEnergy§! Upkeep is removed for Pops living on §YTomb Worlds§!.\nPop Growth Speed on §YTomb Worlds§! §G+10%§!\nTomb World Habitability: §G+10%§!"
  trait_harvested_radiotrophic:0 "$trait_plantoid_radiotrophic$"
  trait_harvested_radiotrophic_desc:0 "$trait_plantoid_radiotrophic_desc$"
  trait_lithoid_radiotrophic:0 "$trait_plantoid_radiotrophic$"
  trait_lithoid_radiotrophic_desc:0 "$trait_plantoid_radiotrophic_desc$"
- TRAIT_LITHOID_RADIOTROPHIC_EFFECT:0 "Replaces §Y50%§! of Base £minerals£ §YMinerals§! Upkeep with £energy£ §YEnergy§! Upkeep.\nPops living on §YTomb Worlds§! have no £energy£ §YEnergy§! Upkeep.\nPop Growth Speed on §YTomb Worlds§! §G+10%§!\nTomb World Habitability: §G+10%§!"
+ TRAIT_LITHOID_RADIOTROPHIC_EFFECT:1 "Replaces §Y50%§! of Base £minerals£ §YMinerals§! Upkeep with £energy£ §YEnergy§! Upkeep.\nThis £energy£ §YEnergy§! Upkeep is removed for Pops living on §YTomb Worlds§!.\nPop Growth Speed on §YTomb Worlds§! §G+10%§!\nTomb World Habitability: §G+10%§!"
 
  trait_plantoid_budding:0 "Budding"
  trait_plantoid_budding_desc:0 "§LThis species is capable of reproduction by budding, in addition to the more usual fertilization of seeds or spores.§!"
@@ -81,6 +81,17 @@
  trait_lithoid_budding_desc:0 "§LWith crystalline growths, this species is capable of generating self replicating lattices of themselves, in addition to the more usual reproductive methods.§!"
  TRAIT_PLANTOID_BUDDING_EFFECT:1 "Each pop working as a slave or better produces 0.02 £mod_pop_growth_speed£ §Y$MOD_PLANET_POP_ASSEMBLY_ORGANIC_ADD$§!.\n\nThis stacks with other sources of $MOD_PLANET_POP_ASSEMBLY_ORGANIC_ADD$ such as £building£ §H$building_clone_vats$§! or £job_spawning_drone£ §H$job_spawning_drone_plural$§!."
  TRAIT_LITHOID_BUDDING_EFFECT:0 "$TRAIT_PLANTOID_BUDDING_EFFECT$\n\nThe §H$trait_lithoid$ Trait§! modifies this trait's effects."
+
+ trait_advanced_phototrophic:0 "$trait_plantoid_phototrophic$"
+ trait_advanced_phototrophic_desc:0 "§LThrough advanced genetic engineering, this species is now partially sustained by sunlight.§!"
+ TRAIT_ADVANCED_PHOTOTROPHIC_EFFECT:0 "Replaces §Y50%§! of Base £food£ §YFood§! or £minerals£ §YMineral§! Upkeep with £energy£ §YEnergy§! Upkeep."
+
+ trait_advanced_radiotrophic:0 "$trait_plantoid_radiotrophic$"
+ trait_advanced_radiotrophic_desc:0 "§LThrough advanced genetic engineering, this species is now partially sustained by low-energy radiation, and as such can thrive on the most inhospitable of worlds.§!"
+ TRAIT_ADVANCED_RADIOTROPHIC_EFFECT:0 "$TRAIT_PLANTOID_PHOTOTROPHIC_EFFECT$\nThis £energy£ §YEnergy§! Upkeep is removed for Pops living on §YTomb Worlds§!."
+ 
+ trait_advanced_budding:0 "$trait_plantoid_budding$"
+ trait_advanced_budding_desc:0 "§LChanges to their DNA sequence allow this species to reproduce by budding, in addition to the more conventional methods.§!"
 
 ### Catalytic Processing by Byron Aytoun
 

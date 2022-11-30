@@ -7,7 +7,7 @@
  origin_progenitor_hive:0 "Progenitor Hive"
  origin_progenitor_hive_desc:1 "This hive has gained evolutionary advantage through semi-independent leaders. These "Offspring" greatly improve overall proficiency, though they require constant oversight."
  START_SCREEN_PROGENITOR_HIVE:1 "In the beginning, the Progenitor was.\n\nLife on [Root.GetHomeWorldName] was harsh and competitive, yet still the mighty Progenitor expanded its territory. Running such a vast dominion soon grew untenable, so the Progenitor created the first Offspring. In time, it became apparent that the Offspring could not manage alone. In turn, they produced menial drones to assist in taming our home.\n\nAs we took our first tentative steps across the [capital_scope.System.GetName] system, our Progenitor sequestered itself into a specialized nest. Endowed with greater, streamlined control, we are now ready to spread our Progenitor's influence to all the stars of the galaxy - for the Progenitor was, is, and will be. The [Root.GetName] will see it so."
- origin_tooltip_progenitor_hive_effects:3 "- Employ special §HOffspring Leaders§! who gain XP passively.\n- Replaces £building£ §HSpawning Pools§! with £building£ §HOffspring Nests§!, granting a powerful defensive army and improvements to menial drones.\n- Allows the building of £building£ §HOffspring Nests§! on Subject worlds.\n- Can release §HSectors§! as §HSubjects§!, if they do not have the §H$civic_hive_devouring_swarm$§! Civic.\n- Construct §HOffspring Ships§! to improve the combat effectiveness of other nearby ships. Fleets without an Offspring Ship suffer from the following effects:\n\n"
+ origin_tooltip_progenitor_hive_effects:4 "- Employ special §HOffspring Leaders§! who gain XP passively.\n- Replaces £building£ §HSpawning Pools§! with £building£ §HOffspring Nests§!, granting a powerful defensive army and improvements to menial drones.\n- Allows the building of £building£ §HOffspring Nests§! on Subject worlds.\n- Can release §HSectors§! as §HSubjects§!, if they do not have the §H$civic_hive_devouring_swarm$§! Civic.\n- Construct §HOffspring Ships§! to improve the combat effectiveness of other nearby ships.\n- Fleets without an Offspring Ship suffer from the following effects:\n\n"
  #Progenitor deposits, armies and decisions
  progenitor_defense:0 "Hive Progenitor"
  progenitor_defense_plural:0 "$progenitor_defense$"
@@ -130,13 +130,18 @@
  mod_shipsize_offspring_cruiser_hull_add:0 "Offspring $mod_shipsize_cruiser_hull_add$"
  mod_shipsize_offspring_battleship_hull_add:0 "Offspring $mod_shipsize_battleship_hull_add$"
 
+ mod_shipsize_offspring_corvette_hull_mult:0 "Offspring $mod_shipsize_corvette_hull_mult$"
+ mod_shipsize_offspring_destroyer_hull_mult:0 "Offspring $mod_shipsize_destroyer_hull_mult$"
+ mod_shipsize_offspring_cruiser_hull_mult:0 "Offspring $mod_shipsize_cruiser_hull_mult$"
+ mod_shipsize_offspring_battleship_hull_mult:0 "Offspring $mod_shipsize_battleship_hull_mult$"
+
  ##########################
  # Subterranean origin
  ##########################
 
  origin_subterranean:0 "Subterranean"
- origin_subterranean_desc:0 "Whether avoiding predators or seeking easier access to resources, this species has evolved to live under the surface of their homeworld, leading to a more environmentally versatile society."
- origin_tooltip_subterranean_effects:2 "- Start with the §YCave Dweller§! trait\n- §HMining Districts§! are uncapped, add §G+2§! £housing£ §Y$MOD_PLANET_HOUSING_ADD$§! and every §Y3§! §HMining Districts§! grant §G1§! £building£ §YBuilding Slot§! each\n- Your species constructs cities underground, giving the following benefits:\n\n"
+ origin_subterranean_desc:1 "The reasons for the migration are lost to antiquity. Perhaps it was an attempt to avoid predators, or the promise of bountiful resources that drew them. Whatever the case, this species has evolved to live under the surface of their homeworld, leading to a more environmentally versatile society."
+ origin_tooltip_subterranean_effects:3 "- Start with the §HCave Dweller§! trait.\n- §HMining Districts§! are uncapped, add §G+2§! £housing£ §H$MOD_PLANET_HOUSING_ADD$§! and every 3 §HMining Districts§! grant §G1§! £building£ §HBuilding Slot§! each.\n- Your species constructs cities underground, giving the following benefits:\n\n"
  trait_cave_dweller:0 "Cave Dweller"
  trait_cave_dweller_desc:0 "§LThis species thrives under the surface of any planet they can find, at the cost of population growth.§!"
  trait_cave_dweller_tooltip:0 "$MOD_BIO_POP_GROWTH_SPEED$: §R-20%§!"
@@ -155,7 +160,7 @@
  origin_shroudwalker_apprentice_desc:1 "Long before their first steps onto the galactic stage, this civilization has been supported and shaped by a Shroudwalker coven."
  START_SCREEN_SHROUDWALKER_APPRENTICE:1 "The myths of our forebears speak of the Teachers - beings of great knowledge and power who helped to shape our earliest civilization. Through dreams, they approached us from afar, sharing their wisdom of the Shroud and its teachings.\n\nNow our Teachers have reached out once again. Seeding our dreams with eldritch visions, they have provided us with the key to interstellar travel. In just a few years, we have built vessels capable of traversing the void.\n\nBut how much farther is it possible to go? Our Teachers refer to a 'Shroud Tunnel' - a natural wormhole that sits at the edge of their home system. Spawning our own Tunnel should give us a direct path to the Teachers themselves. May they continue to grant us wisdom as we take our first steps onto the galactic stage."
  START_SCREEN_SHROUDWALKER_APPRENTICE_CORPORATE:0 "The founders of our church wrote of the Teachers - beings of great knowledge and power who helped to shape our earliest gospels. Through dreams, they approached us from afar, sharing their wisdom of the holy Shroud.\n\nNow our Teachers have reached out once again. Seeding our dreams with eldritch visions, they have provided us with the key to interstellar travel. In just a few years, we have built vessels capable of seeding our holy truth throughout the stars.\n\nBut that must not mark the limit of our ambition. Our Teachers refer to a 'Shroud Tunnel' - a natural wormhole that sits at the edge of their home system. If we but spawn this holy conduit, we would possess a direct path to the Teachers themselves. May they continue to grant us wisdom as we take our first steps onto the galactic stage."
- origin_tooltip_shroudwalker_apprentice_effects:1 "- Gain the §HLatent Psionics§! trait\n- Granted ability to build a §HShroud Beacon§! on a starbase\n- Start in contact with a §H$gov_shroudwalker_enclave$§!"
+ origin_tooltip_shroudwalker_apprentice_effects:2 "§R- WARNING: Blocks all Ascension Paths except for §!§HPsionic Ascension§!\n- Gain the §HLatent Psionics§! trait.\n- Granted ability to build a §HShroud Beacon§! on a starbase.\n- Start in contact with a §H$gov_shroudwalker_enclave$§!."
 
  origin.5605.name:0 "True Apprentices"
  origin.5605.generic.desc:1 "Our students, for generations we have taught you, seeding our knowledge of the Shroud and its mysteries within your dreams. Now that you have reached the stars, your true apprenticeship is at hand. The path forward will not be an easy one. To light the way, we grant you knowledge of the Shroud Beacon, a device of great power. Once built on one of your starbases, the Beacon will spawn a Shroud Tunnel. Choose its location carefully, as you will not be able to spawn another.\n\nIn times of need and uncertainty, call on us. In dreams, we will be watching. In waking life, we await your arrival."
@@ -179,11 +184,11 @@
  ################################
 
  origin_star_slingshot:0 "Slingshot to the Stars"
- origin_star_slingshot_desc:0 "The skies above this civilization were illuminated by shooting stars; then came a long season of darkness. Since then they have taken to the heavens seeking answers, beginning with what turned out to be a dormant and abandoned $quantum_catapult_1$."
+ origin_star_slingshot_desc:1 "Once, the skies above this civilization were illuminated by shooting stars; then came a long season of darkness. Taking to the heavens in search of answers, the first offworld explorers discovered a dormant (and long abandoned) $quantum_catapult_1$."
  START_SCREEN_STAR_SLINGSHOT:0 "Since time immemorial our people have seen the night sky occasionally lit up by innummerable shooting stars, and even until recently our scientists have been unable to explain the phenomenon. As we have started exploring the galaxy we have finally gotten the equipment necessary to track down the cause of these disturbances - an old structure our engineers have called a $quantum_catapult_1$.\n\n$START_SCREEN_STAR_SLINGSHOT_SECOND_PART$"
  START_SCREEN_STAR_SLINGSHOT_GESTALT:0 "Since the earliest moments of our consciousness we have occasionally seen the sky lit up by innummerable shooting stars, and been unable to come to terms with what might cause this weird phenomenon. As we have freed ourselves from the shackles of our homeworld, we have managed to obtain the tools necessary to track down the cause of this disturbance - a $quantum_catapult_1$.\n\n$START_SCREEN_STAR_SLINGSHOT_SECOND_PART$"
  START_SCREEN_STAR_SLINGSHOT_SECOND_PART:0 "Though dormant, partly in ruins, and abandoned, we believe it can be restored to former glory. If it works as envisioned, it will be our gateway to the rest of the galaxy."
- origin_tooltip_star_slingshot_effects:1 "- Start with a §H$quantum_catapult_ruined_slingshot$§! near your home system, and the technology necessary to repair and use it\n- It will occupy a Guaranteed Habitable World slot\n- New starbases built in remote systems cost §G75%§! less influence"
+ origin_tooltip_star_slingshot_effects:2 "- Start with a §H$quantum_catapult_ruined_slingshot$§! near your home system, and the technology necessary to repair and use it.\n- It will occupy a Guaranteed Habitable World slot.\n- New starbases built in remote systems cost §G75%§! less influence."
 
  # Events
 
@@ -217,9 +222,9 @@
  # Imperial Vassal Origin #
  ##########################
  origin_imperial_vassal:0 "Imperial Fiefdom"
- origin_imperial_vassal_desc:0 "Our first endeavor beyond our home planet was a painful one, subjugated by - and subjected to - the whims of a foreign galactic power. Now we are looking towards a future, far off as it might be, in which we no longer have to live in the shadow of another empire."
+ origin_imperial_vassal_desc:1 "Our first endeavor beyond our home planet was a painful one, suddenly and brutally subjected to the whims of a foreign galactic power. Now we look towards a future in which we no longer live in the shadow of another empire."
  START_SCREEN_IMPERIAL_VASSAL:0 "As we stepped out of our home system for the first time we were approached by a foreign empire who demanded our subjugation. Though a painful memory for our people, we have learned a lot in our short time as a vassal, with the relationship proving more beneficial than we could have hoped for.\n\nWe are not the only vassal of our new overlord, as we have had the chance to meet diplomats and ambassadors from some of the other empires under their thumb. We do not see quite eye to eye with some of them, but we believe they will prove to be useful allies for the time being.\n\nThough we are looking forward to a day where we once again can decide our own future, we will accept our subject nature for now, and make the most of the situation we have been put in."
- origin_tooltip_imperial_vassal_effects:0 "- Start as the vassal of an §HAdvanced AI Empire§!\n- Gain the option to choose a §HSpecialist Empire§! vassal type at the start of the game"
+ origin_tooltip_imperial_vassal_effects:1 "- Start as the vassal of an §HAdvanced AI Empire§!.\n- Gain the option to choose a §HSpecialist Empire§! vassal type at the start of the game."
 
  # AI Overlord Version
  origin_imperial_vassal_overlord:0 "Imperial Liege"

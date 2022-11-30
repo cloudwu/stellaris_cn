@@ -185,7 +185,7 @@
  IMPERIALIST_SUPREMACY_TRADITION_DESC:0 "Adopting any Traditions emphasizing §YSupremacy§! will please the [Root.GetName]."
  IMPERIALIST_SLAYER:0 "Leviathan Slayer"
  IMPRERIALIST_NOT_SLAYER:0 "$IMPERIALIST_SLAYER$"
- IMPERIALIST_SLAYER_DESC:0 "Destroying a space-dwelling §YLeviathan§! will please the [Root.GetName] for a time."
+ IMPERIALIST_SLAYER_DESC:1 "Destroying a space-dwelling §YLeviathan§! will please the [Root.GetName]."
  IMPERIALIST_UNDERLING:0 "Subject State"
  IMPERIALIST_NOT_UNDERLING:0 "$IMPERIALIST_UNDERLING$"
  IMPERIALIST_UNDERLING_DESC:0 "Being the subject of a foreign §YOverlord§! will greatly displease the [Root.GetName]."
@@ -204,6 +204,15 @@
  IMPERIALIST_OPPRESSIVE_SUBJUGATION_POLICY:0 "Oppressive Subjugation Policy"
  IMPERIALIST_ADOPT_OPPRESSIVE_SUBJUGATION_POLICY:0 "$IMPERIALIST_OPPRESSIVE_SUBJUGATION_POLICY$"
  IMPERIALIST_OPPRESSIVE_SUBJUGATION_POLICY_DESC:0 "An iron fist in an iron glove. Making sure that our subjects know their place will please the [Root.GetName]."
+ IMPERIALIST_FEDERATION:0 "$military_federation$"
+ IMPERIALIST_FEDERATION_NOT_MILITARIST:0 "$military_federation$"
+ IMPERIALIST_FEDERATION_DESC:0 "Being a member of a $military_federation$ will please the [Root.GetName]."
+ IMPERIALIST_FLEET_USAGE_HIGH:0 "High Naval Capacity Usage"
+ IMPERIALIST_FLEET_USAGE_NOT_HIGH:0 "$IMPERIALIST_FLEET_USAGE_HIGH$"
+ IMPERIALIST_FLEET_USAGE_HIGH_DESC:0 "Building our fleet out to our empire's capacity will please the [Root.GetName]."
+ IMPERIALIST_FLEET_USAGE_LOW:0 "Low Naval Capacity Usage"
+ IMPERIALIST_FLEET_USAGE_NOT_LOW:0 "$IMPERIALIST_FLEET_USAGE_LOW$"
+ IMPERIALIST_FLEET_USAGE_LOW_DESC:0 "Maintaining a fleet well below our empire's capacity will significantly displease the [Root.GetName]."
 
  # ISOLATIONISTS
  ISOLATIONIST_PHILOSOPHY:0 "Stalwart Defense"
@@ -310,7 +319,13 @@
  TRADITIONALIST_RELIGIOUS_FINDING:0 "Comfort in the Past"
  TRADITIONALIST_NO_RELIGIOUS_FINDING:0 "$TRADITIONALIST_RELIGIOUS_FINDING$"
  TRADITIONALIST_RELIGIOUS_FINDING_DESC:0 "Finding religious significance in Minor Artifacts will please the [Root.GetName] for a time."
- 
+ TRADITIONALIST_FEDERATION:0 "$spiritualist_federation$"
+ TRADITIONALIST_FEDERATION_NOT_SPIRITUALIST:0 "$spiritualist_federation$"
+ TRADITIONALIST_FEDERATION_DESC:0 "Being a member of a $spiritualist_federation$ will please the [Root.GetName]."
+ TRADITIONALIST_FEDERATION_ANTI:0 "$research_federation$"
+ TRADITIONALIST_FEDERATION_ANTI_NOT_RESEARCH:0 "$research_federation$"
+ TRADITIONALIST_FEDERATION_ANTI_DESC:0 "Being a member of a $research_federation$ will displease the [Root.GetName]."
+
  # TECHNOLOGISTS
  TECHNOLOGIST_ROBOTS:0 "Machine Love"
  TECHNOLOGIST_ROBOTS_DESC:0 "Maintaining a population of at least §Y6§! Robotic Pops will please the [Root.GetName]."
@@ -339,6 +354,12 @@
  TECHNOLOGIST_PRECURSOR_SECRETS:0 "Precursor Secrets"
  TECHNOLOGIST_NO_PRECURSOR_SECRETS:0 "$TECHNOLOGIST_PRECURSOR_SECRETS$"
  TECHNOLOGIST_PRECURSOR_SECRETS_DESC:0 "Unraveling the ancient mysteries of the precursors will please the [Root.GetName]."
+ TECHNOLOGIST_FEDERATION:0 "$research_federation$"
+ TECHNOLOGIST_FEDERATION_NOT_RESEARCH:0 "$research_federation$"
+ TECHNOLOGIST_FEDERATION_DESC:0 "Being a member of a $research_federation$ will please the [Root.GetName]."
+ TECHNOLOGIST_FEDERATION_ANTI:0 "$spiritualist_federation$"
+ TECHNOLOGIST_FEDERATION_ANTI_NOT_SPIRITUALIST:0 "$spiritualist_federation$"
+ TECHNOLOGIST_FEDERATION_ANTI_DESC:0 "Being a member of a $spiritualist_federation$ will displease the [Root.GetName]."
 
  # PROGRESSIVES
  PROGRESSIVE_NO_AUTO:0 "Anti-Autocratic"
@@ -365,6 +386,9 @@
  PROGRESSIVE_BENEVOLENT_SUBJUGATION_POLICY:0 "Benevolent Subjugation Policy"
  PROGRESSIVE_BENEVOLENT_NO_OPPRESSIVE_SUBJUGATION_POLICY:0 "$PROGRESSIVE_BENEVOLENT_SUBJUGATION_POLICY$"
  PROGRESSIVE_BENEVOLENT_NO_OPPRESSIVE_SUBJUGATION_POLICY_DESC:0 "Our subjects look to us for guidance and protection, and we should strive to repay their trust by respecting their liberties. Adopting a benevolent approach to subjugation will please the [Root.GetName]."
+ PROGRESSIVE_FEDERATION:0 "$hegemony_federation$"
+ PROGRESSIVE_FEDERATION_NOT_HEGEMONY:0 "$hegemony_federation$"
+ PROGRESSIVE_FEDERATION_DESC:0 "Being a member of a $hegemony_federation$ will displease the [Root.GetName]."
 
  # TOTALITARIANS
  TOTALITARIAN_AUTOCRACY:0 "Autocracy"
@@ -400,9 +424,12 @@
  TOTALITARIAN_BENEVOLENT_SUBJUGATION_POLICY:0 "Benevolent Subjugation Policy"
  TOTALITARIAN_NO_BENEVOLENT_SUBJUGATION_POLICY:0 "$TOTALITARIAN_BENEVOLENT_SUBJUGATION_POLICY$"
  TOTALITARIAN_BENEVOLENT_SUBJUGATION_POLICY_DESC:0 "A firm [Owner.Species.GetHandName] is required to guide our subjects, lest they grow indolent and complacent. Granting them too many liberties will displease the [Root.GetName]."
- TOTALITARIAN_OPPRESSIVE_SUBJUGATION_POLICY:0 "Oppressive Subugation Policy"
+ TOTALITARIAN_OPPRESSIVE_SUBJUGATION_POLICY:1 "Oppressive Subjugation Policy"
  TOTALITARIAN_ADOPT_OPPRESSIVE_SUBJUGATION_POLICY:0 "$TOTALITARIAN_OPPRESSIVE_SUBJUGATION_POLICY$"
  TOTALITARIAN_OPPRESSIVE_SUBJUGATION_POLICY_DESC:0 "Like [Owner.Species.GetSpawnNamePlural], our subjects need guidance if they are to learn discipline. Keeping them on a short leash will please the [Root.GetName]."
+ TOTALITARIAN_FEDERATION:0 "$hegemony_federation$"
+ TOTALITARIAN_FEDERATION_NOT_HEGEMONY:0 "$hegemony_federation$"
+ TOTALITARIAN_FEDERATION_DESC:0 "Being a member of a $hegemony_federation$ will please the [Root.GetName]."
 
  # PROSPERITY
  PROSPERITY_PHILOSOPHY:0 "Defensive Stance"
@@ -435,6 +462,9 @@
  PROSPERITY_PEACEFUL_APPLICATIONS:0 "Embetterment of Society"
  PROSPERITY_NO_PEACEFUL_APPLICATIONS:0 "$PROSPERITY_PEACEFUL_APPLICATIONS$"
  PROSPERITY_PEACEFUL_APPLICATIONS_DESC:0 "Expending Minor Artifacts for civil applications will please the [Root.GetName] for a time."
+ PROSPERITY_FEDERATION:0 "$military_federation$"
+ PROSPERITY_FEDERATION_NOT_MILITARIST:0 "$military_federation$"
+ PROSPERITY_FEDERATION_DESC:0 "Being a member of a $military_federation$ will displease the [Root.GetName]."
 
  FACTION_COUNTRY_SEPARATIST:0 "[parameter:owner.GetSpeciesAdj] Separatists"
 
@@ -474,7 +504,7 @@
  POP_FACTION_NO_EFFECTS_DESC:0 "The $FACTION$ will never have any effects."
  POP_FACTION_NO_CURRENT_EFFECTS:0 "No current effects"
  POP_FACTION_NO_CURRENT_EFFECTS_DESC:0 "The $FACTION$ have no effects at this time."
- 
+
  ### SEPARATIST
 
  # Separatist Demands
@@ -482,7 +512,7 @@
  POP_FACTION_SEPARATIST_DEMAND_DESC_1:0 "Establish a new Sector with §H[parameter:planet.GetName]§! as its capital."
  POP_FACTION_SEPARATIST_DEMAND_TITLE_2:0 "§H[parameter:planet.GetName]ian§! independence"
  POP_FACTION_SEPARATIST_DEMAND_DESC_2:0 "Release §H[parameter:planet.GetName]§! as the capital of an independent Empire"
- 
+
  ### PLANET SEPARATISTS
  POP_FACTION_PLANET_SEPARATIST_DEMAND_TITLE:1 "Independent [parameter:Planet.GetName]"
  POP_FACTION_PLANET_SEPARATIST_DEMAND_DESC:0 "The Separatists want an independent §Y[parameter:Planet.GetName]§!."
@@ -505,7 +535,7 @@
  POP_FACTION_PLANET_SEPARATIST_RECENT_SABOTAGE:0 "Recent Riots"
  POP_FACTION_PLANET_SEPARATIST_SABOTAGE_DESC:0 "Riots on the planet §Rruin§! a Building."
  POP_FACTION_PLANET_SEPARATIST_NOTHING_TO_RUIN:0 "No Unruined Buildings"
- 
+
  ### Sector separatists
  pft_sector_separatists:0 "Sector Separatists"
  pft_sector_separatists_desc:0 "Sector Separatists may appear on worlds in sectors, seeking to free their stellar neighborhood from imperial rule. Given enough popular Support, they may even take up arms.\n\n§HSector Separatists will never appear in our core sector.§!"
@@ -515,9 +545,9 @@
  POP_FACTION_SECTOR_SEPARATIST_GRANT_INDEPENDENCE_DESC:0 "Grant independence to the colonies of the §Y[parameter:sector.GetName] Sector§!"
  POP_FACTION_SECTOR_SEPARATIST_IS_NOT_OCCUPIED:0 "No Sector Planet is occupied"
  POP_FACTION_SECTOR_SEPARATIST_NO_GROUND_COMBAT:0 "No Sector Planet has ground combat"
- 
- 
- 
+
+
+
  ### NATIONALISTS
 
  pft_nationalist:0 "Repatriation Faction"
@@ -703,11 +733,11 @@
  POP_FACTION_PRETENDER_DEMAND_DESC:0 "[Root.Owner.GetRulerTitle] §Y[Root.Owner.GetRulerName]§! will be exiled and §Y[parameter:pretender.GetName]§! will assume the throne."
  POP_FACTION_PRETENDER_INSTALL_TITLE:0 "Install Pretender"
  POP_FACTION_PRETENDER_INSTALL_DESC:0 "Install §Y[parameter:pretender.GetName]§! as the new Ruler"
- 
+
  ########################################
  # FACTION EVENTS
  ########################################
- 
+
  ### New Events
  factions.1.title:0 "Faction Founded"
  factions.1.desc:0 "A new faction has recently been gaining traction in the internal political landscape of the [Root.Owner.GetName]. They call themselves the [Root.GetName], and under the leadership of their founder, [Root.Leader.GetTitle] [Root.Leader.GetName], their members have been pushing hard for us to deal with the various issues that concern them.\n\nWe are likely to see the emergence of additional factions in the future, as our population grows and their ethics drift in different directions. A disgruntled faction will be a source of trouble, but those that approve of the government's actions could prove useful..."
@@ -722,7 +752,7 @@
  factions.1.desc.totalitarian:0 "Their members have been pushing hard for an extreme centralization of political and military power.\n\n"
  factions.1.desc.traditionalist:0 "Their members support spiritualist and conservative values.\n\n"
  factions.1.desc.xenoist:0 "Their members have been pushing hard for friendly relations with alien species.\n\n"
- 
+
  factions.2000.title:0 "Governing Ethics Shift in the [TargetFaction.Owner.GetName]"
  factions.2000.desc.start:0 "Following a long period of growing support for the §Y[TargetFaction.GetName]§!, the §Y[TargetFaction.Owner.GetName]§! has finally embraced the faction, adopting their core values and policies."
  factions.2000.desc.imperialist:0 "As a result of bringing this faction into their government, they have become more outwardly §HMilitaristic§!.\n\n"
@@ -734,7 +764,7 @@
  factions.2000.desc.totalitarian:0 "As a result of bringing this faction into their government, they have become more outwardly §HAuthoritarian§!.\n\n"
  factions.2000.desc.traditionalist:0 "As a result of bringing this faction into their government, they have become more outwardly §HSpiritualist§!.\n\n"
  factions.2000.desc.xenoist:0 "As a result of bringing this faction into their government, they have become more outwardly §HXenophilic§!.\n\n"
- 
+
  ### Loyalists
  faction.4.title:0 "Loyalist Demands"
  faction.4.desc:0 "The Loyalists are devoted to [Root.Owner.GetRulerTitle] [Root.Owner.GetRulerName] of the [Root.Owner.GetName], and have no demands."

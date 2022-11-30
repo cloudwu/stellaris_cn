@@ -355,7 +355,15 @@
  AI_CHR_FleetArrayM4-L:0 "Fleet Array M4-L"
  AI_CHR_FleetArray38-38:0 "Fleet Array 38-38"
  AI_CHR_FleetArray8-99:0 "Fleet Array 8-99"
- AI_xxSTARBASE_ORD:0 "$O$ Starbase"
+
+# Sequential name formats
+ AI_STARBASE:0 "$ORD0$ Starbase"
+ AI_AUTONOMOUSCLUSTER:0 "Autonomous Cluster $HEX$"
+ AI_STERILIZATIONCLUSTER:0 "$ORD0$ Sterilization Cluster"
+ AI_DEFENSECLUSTER:0 "$ORD0$ Defense Cluster"
+
+# Obsolete sequentials (for backwards compatibility)
+ AI_xxSTARBASE_ORD:1 "$O$ Starbase"
  AI_AUTONOMOUSCLUSTERxx_SEQ3:0 "Autonomous Cluster $CCC$"
- AI_xxSTERILIZATIONCLUSTER_ORD:0 "$O$ Sterilization Cluster"
- AI_xxDEFENSECLUSTER_ORD:0 "$O$ Defense Cluster"
+ AI_xxSTERILIZATIONCLUSTER_ORD:1 "$O$ Sterilization Cluster"
+ AI_xxDEFENSECLUSTER_ORD:1 "$O$ Defense Cluster"

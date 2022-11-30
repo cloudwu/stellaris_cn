@@ -3,8 +3,8 @@
  #Knights of the Toxic God
 
  origin_toxic_knights:0 "Knights of the Toxic God"
- origin_toxic_knights_desc:1 "Centuries ago, this species' homeworld was visited by a Toxic Entity. The ecological catastrophe that followed ruined half the world, but allowed an early unification of the survivors in their reverence for the Toxic God. An order of knights has been created to search for the Toxic God, and although many things have changed, the quest continues."
- origin_toxic_knights_effects:1 "- Start with a unique §HHabitat§! in your home system and §R3 fewer £pop£ Pops§!.\n- Start with the §H"Quest for the Toxic God"§! Situation.\n- Get access to unique £job_knight_commander£ §HLord Commander§!, £job_knight£ §HKnight§! and £job_squire£ §HSquire§! jobs.\n- Unlock powerful modifiers for the §HKnights§! and your §HHomeworld§! through the §HQuest§!.\n- Allows access to the §HKnightly Duties§! Policy\n- Allows construction of £building£ §HOrder's Commanderies§! on Subject worlds.\n- What awaits you at the end of your search?"
+ origin_toxic_knights_desc:2 "Centuries ago, this species' homeworld was visited by a Toxic Entity. The ecological catastrophe that followed ruined half the world, but allowed an early unification of the survivors in their reverence for the Toxic God. An Order of Knights has been created to search for the Toxic God, and although many things have changed, the quest continues."
+ origin_toxic_knights_effects:2 "- Start with a unique §HHabitat§! in your home system and §R3 fewer§! £pop£ Pops.\n- Start with the §H"Quest for the Toxic God"§! Situation.\n- Get access to unique £job_knight_commander£ §HLord Commander§!, £job_knight£ §HKnight§! and £job_squire£ §HSquire§! jobs.\n- Unlock powerful modifiers for the §HKnights§! and your §HHomeworld§! through the §HQuest§!.\n- Allows access to the §HKnightly Duties§! Policy\n- Allows construction of £building£ §HOrder's Commanderies§! on Subject worlds."
  START_SCREEN_TOXIC_KNIGHTS:1 "Long ago, our planet was divided. Petty kings squabbled constantly, and our population bled for their vain ambitions. But with the coming of the first High King, all of this changed. Their inspired leadership forged a kingdom without equal.\n\nAbove all else, the High King was pious. War was waged against any who denied their God, but still the heretics persisted. The King's prayers were answered when the Toxic God visited our world. Though its time among us was brief, its baneful influence poisoned the lands of the unbelievers. Any who survived pledged fealty to the High King. For the first time, our world was unified.\n\nThe Toxic God soon left us, but the King, determined to find it, founded an order of knights. For centuries, these valiant souls searched tirelessly, but to no avail. The Toxic God had long since departed from our world. The next chapter of the Quest would be written in the stars. With the use of powerful relics, it was the Order that built our Empire's first orbital station. A mighty Keep, it would become the springboard from which they plunged ever deeper into the cosmos."
  START_SCREEN_TOXIC_KNIGHTS_CORPORATE:0 "Long ago, our planet was divided. Petty kings squabbled constantly, and our population bled for their vain ambitions. But with the coming of the first High King, all of this changed. Their inspired leadership forged a kingdom without equal.\n\nAbove all else, the High King was pious. War was waged against any who denied their God, but still the heretics persisted. The King's prayers were answered when the Toxic God visited our world. Though its time among us was brief, its baneful influence poisoned the lands of the unbelievers. Any who survived pledged fealty to the High King. For the first time, our world was unified.\n\nThe Toxic God soon left us, but the King, determined to find it, founded an order of knights. For centuries, these valiant souls searched tirelessly, but to no avail. The Quest is a very expensive prospect. Over time, the kingdom became more and more interested in the pursuit of profit to better support the knights. By living and consuming, every citizen supports the Quest, and our champions are heavily mediatized.\n\nThe Toxic God has long since departed from our world and the next chapter of the Quest would be written in the stars. With the use of powerful relics, it was the Order that built our Empire's first orbital station. A mighty Keep, it would become the springboard from which they plunged ever deeper into the cosmos."
  job_knight:0 "Knight"
@@ -72,6 +72,7 @@
 
  NAME_Toxic_God:0 "Toxic God"
  NAME_Venomous_Deity:0 "Venemous Deity"
+ NAME_Acidic_Deity:0 "$NAME_Venomous_Deity$"
 
  toxic_god:0 "Toxic God"
  toxic_god_plural:0 "Toxic Gods"
@@ -82,6 +83,8 @@
  PLANET_KILLER_TOXIFIER:0 "Toxifier"
  PLANET_KILLER_TOXIFIER_ACTION:0 "Toxify Planet"
  FLEETORDER_DESTROY_PLANET_WITH_PLANET_KILLER_TOXIFIER:0 "Preparing to toxify $PLANET|Y$"
+ GUARDIAN_DISINTEGRATOR_FIELD:0 "Toxic God's Acidic Glands"
+ aura_guardian_hull_degenerator:0 "Acidic Aura"
 
  opinion_toxified_a_world:0 "Toxified a World"
  opinion_toxified_an_uninhabited_world:0 "Toxified an Uninhabited Planet"
@@ -221,7 +224,7 @@
  toxoids.7090:0 "The Tale of Knight [questing_knight_4.GetName]: Duty Before Honor"
  toxoids.7090.desc:2 ""The Lord Commander's orders are clear. Thou shalt not pass." There was a long pause before the reply came: "We're going through, and thou shalt not deny us. Prepare to be boarded."\n\nSpurred by anger and blinded by honor, the knights set upon their fellow. Three against one, they pressed [questing_knight_4.GetName] from all sides, and with such reckless abandon that [questing_knight_4.GetHeShe] was progressively backed into a corner of [questing_knight_4.GetHisHer] ship. The fight was unfair, for [questing_knight_4.GetFirstName] was careful not to harm the others, but in the end, with [questing_knight_4.GetHisHer] life on the line, the Order's Champion had no choice but to fight back with all [questing_knight_4.GetHisHer] might.\n\nThe day ended in anguish and grief, for [questing_knight_43.GetName] had been slain in the battle. [questing_knight_43.GetHisHerCap] sibling was wounded and overcome with sorrow. [questing_knight_4.GetFirstName] was victorious and had carried out [questing_knight_4.GetHisHer] orders, but [questing_knight_4.GetHeShe] had killed a fellow knight in the process."
  toxoids.7090.a:0 "[questing_knight_4.GetName] has made great sacrifices to serve us."
- toxoids.7090.a.tooltip:1 "§Y$job_knight_plural$§! will now produces 3 £stability£ Stability.\n\nUnlocks the §Y$herald_knights$§! option for the §Y$policy_knightly_duties$§! policy. "
+ toxoids.7090.a.tooltip:1 "§Y$job_knight_plural$§! now produces 5 £amenities£ Amenities.\n\nThe §YOrder's Keep§! now produces 15 £stability£ Stability.\n\nUnlocks the §Y$herald_knights$§! option for the §Y$policy_knightly_duties$§! policy. "
  toxoids.7095:0 "The Tale of Knight [questing_knight_4.GetName]: Honor is All"
  toxoids.7095.desc:2 "As the knight's ships entered, the unstable wormhole swirled and grew large. The crossing was tumultuous, and within their vessels the party was tossed about like leaves in a furious torrent. Colliding, two of the ships suffered critical damage, but soon it was over, and the knights found themselves bathed in the light of unfamiliar stars.\n\nThey arrived in front of a station, where the stranger's ship was docked. The lavishly decorated hallways were empty and quiet. The walls were covered in exotic weapons, alien armor, foreign shields and holobanners; trophies not unlike those adorning the Order's Keep. A heavy layer of dust made it easy to follow the tracks of the stranger. They led the knights to a massive door, beyond which lay the station's great hall.\n\nThe place had been set for a sumptuous banquet, but now only the detritus of the feast remained. The seated guests were silent, and unmoving. The tracks led to the place of honor, where the stranger was seated. Their helmet lay open, revealing a bleached skull. In their skeletal hand was an empty tankard, lifted in an eternal toast."
  toxoids.7095.a:1 "Recover and study the neutronium armor. We must pierce its secrets."
@@ -486,6 +489,7 @@
  origin_overtuned_effects:1 "Starts with advanced biological traits available, which are stronger and cheaper than normal traits but carry extraordinary risks."
  origin_tooltip_overtuned_effects:2 "- Allows selection of §YOvertuned§! Traits. These can be further boosted by the §YDamn the Consequences§! Edict.\n- §YOvertuned§! Traits can be freely added and removed through §Y$tech_gene_tailoring$§!.\n- Start with the ability to §Ygenetically modify§! your £pop£ Pops."
  START_SCREEN_OVERTUNED:1 "Nature is a tepid inventor. Evolution is a glacial process. To prosper we require strength, speed and brain power - now, not in a million years. Natural selection is miserly with its gifts and so we must improve ourselves.\n\nThus our civilization is built on the principle of unrestrained enhancement of our physical bodies. These enhancements have allowed us to unite our world under one banner, and now they will lead us even further.\n\nWith genetically crafted brains, brawn, and bravery, we shall prosper among the stars... As only a perfectly designed species can."
+ disables_overtuned_features:0 "§RChoosing this Ascension Perk will disable Overtuned Origin mechanics.§!"
 
  ### Toxic Baths
  civic_toxic_baths:0 "Mutagenic Spas"
@@ -567,6 +571,7 @@
  civic_corporate_relentless_industrialists:0 "$civic_relentless_industrialists$"
  civic_corporate_relentless_industrialists_desc:0 "$civic_relentless_industrialists_desc$"
  civic_tooltip_relentless_industrialists_effects:0 "Can build £building£ §Y$building_coordinated_fulfillment_center_1$§!, significantly increasing £alloys£ §YAlloy§! and £consumer_goods£ §YConsumer Goods§! output at the cost of reduced £mod_pop_growth_speed£ §YPop Growth§! and gradually turning planets into §YTomb Worlds§!."
+ civic_tooltip_not_relentless_industrialists:0 "Does NOT have §Y$civic_relentless_industrialists$§! Civic"
 
  building_coordinated_fulfillment_center_1:0 "Coordinated Fulfillment Center"
  building_coordinated_fulfillment_center_1_plural:0 "Coordinated Fulfillment Center"
@@ -673,7 +678,7 @@
 
  ap_detox:0 "Detox"
  ap_detox_desc:1 "Our newest advancements in terraforming allow us to breathe new life into a class of planets formerly considered irrevocably deadly and beyond salvation."
- detox_tox_worlds:1 "Enables terraforming of §YToxic World Terraforming Candidates§! into habitable worlds."
+ detox_tox_worlds:2 "Enables terraforming of §YToxic World Terraforming Candidates§! into habitable worlds.\nWe have §Y[This.num_toxic_terraform_candidates]§! of these within our border."
 
  toxoids.500.name:0 "Toxic Terraforming Candidate Discovered"
  toxoids.500.desc.intro:1 "Our detailed survey of [From.GetName] has revealed that although it is currently unsuitable for life due to the noxious gases present in its atmosphere, it is capable of sustaining a breathable atmosphere. Through a concerted effort, we may be able to break the [From.GetPlanetMoon]'s toxins down into less lethal compounds."

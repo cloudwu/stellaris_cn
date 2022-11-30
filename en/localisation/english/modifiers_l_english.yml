@@ -5,11 +5,13 @@
  ####################################
 
  #Federation
+ MOD_FEDERATION_EXPERIENCE_ADD:0 "Monthly Experience"
  MOD_FEDERATION_COHESION_ADD:0 "Monthly Cohesion"
  MOD_FEDERATION_COHESION_ETHICS_PENALTY_MULT:0 "Cohesion Ethics Penalty"
  MOD_FEDERATION_FLEET_COUNTRIBUTION_FACTOR:0 "Fleet Contribution"
  MOD_FEDERATION_JOIN_MALUS_MULT:0 "Federation Cohesion malus on joining"
  MOD_FEDERATION_LEAVE_MALUS_MULT:0 "Federation Cohesion malus on leaving"
+ MOD_FEDERATION_ENVOY_COHESION_EFFECT_MULT:0 "Federation Cohesion from Assigned Envoys"
 
  #Country
  MOD_BLANK_MODIFIER:0 "Blank Modifier"
@@ -247,8 +249,10 @@
  MOD_SHIP_ARMOR_MULT:1 "Armor Hit Points"
  MOD_SHIP_SHIELD_DAMAGE_MULT:0 "Shield Damage"
  MOD_SHIP_SHIELD_PENETRATION_MULT:0 "Shield Penetration"
+ MOD_SHIP_SHIELD_HARDENING_ADD:0 "Shield Hardening"
  MOD_SHIP_ARMOR_DAMAGE_MULT:0 "Armor Damage"
  MOD_SHIP_ARMOR_PENETRATION_MULT:0 "Armor Penetration"
+ MOD_SHIP_ARMOR_HARDENING_ADD:0 "Armor Hardening"
  MOD_SHIP_BASE_SPEED_MULT:0 "Base Ship Speed"
  MOD_SHIP_SPEED_MULT:0 "Sublight Speed"
  MOD_SHIP_LANDING_TIME_MULT:0 "Landing Time"
@@ -289,6 +293,7 @@
  MOD_SHIP_COMBAT_SPEED_MULT:2 "Combat Speed"
  MOD_SHIP_DISENGAGE_CHANCE_MULT:0 "Combat Disengagement Chance"
  MOD_SHIP_DISENGAGE_CHANCE_REDUCTION:0 "Disengagement Chance Reduction"
+ MOD_SHIP_DISENGAGE_OPPORTUNITIES_ADD:0 "Disengagement Opportunities"
  MOD_SHIP_EVASION_MULT:0 "Evasion"
  MOD_SHIP_EVASION_ADD:1 "Chance to Evade"
  MOD_SHIP_ACCURACY_MULT:0 "Accuracy"
@@ -398,6 +403,8 @@
  MOD_PLANET_BORDER_MULT:0 "Planet Border Extrusion"
  MOD_COUNTRY_BORDER_FRICTION_MULT:0 "Border Friction"
  MOD_PLANET_BUILDING_BUILD_SPEED_MULT:1 "Planetary Build Speed"
+ MOD_PLANETARY_ASCENSION_EFFECT_MULT:0 "Planetary Ascension Effects"
+ MOD_PLANETARY_ASCENSION_COST_MULT:0 "Planetary Ascension Cost"
  mod_planet_structures_cost_mult:0 "Building and District Cost"
  mod_planet_structures_upkeep_mult:0 "Building and District Upkeep"
  mod_planet_buildings_cost_mult:0 "Building Cost"
@@ -650,6 +657,8 @@
  # Dynamic Modifiers
  ####################################
 
+ mod_resolution_category_divinity_vote_strength_mult:0 "Voting Strength on $resolution_category_divinity$ Resolutions"
+
  mod_pop_ethic_pacifist_attraction_mult:0 "Pacifist Ethics Attraction"
  mod_pop_ethic_militarist_attraction_mult:0 "Militarist Ethics Attraction"
  mod_pop_ethic_materialist_attraction_mult:0 "Materialist Ethics Attraction"
@@ -682,6 +691,7 @@
  mod_shipsize_cruiser_build_speed_mult:0 "Cruiser Build Speed"
  mod_shipsize_battleship_build_speed_mult:0 "Battleship Build Speed"
  mod_shipsize_colonizer_build_speed_mult:0 "Colony Ship Build Speed"
+ mod_shipsize_frigate_build_speed_mult:0 "$frigate$ Build Speed"
 
  mod_ship_corvette_cost_mult:0 "Corvette Build Cost"
  mod_ship_destroyer_cost_mult:0 "Destroyer Build Cost"
@@ -698,10 +708,14 @@
  mod_ship_terraform_station_cost_mult:0 "Terraforming Station Build Cost"
  mod_ship_wormhole_station_cost_mult:0 "Wormhole Station Build Cost"
  mod_ship_observation_station_cost_mult:0 "Observation Station Build Cost"
+ mod_ship_frigate_cost_mult:0 "$frigate$ Build Cost"
 
  mod_shipsize_corvette_upkeep_mult:0 "Corvette Upkeep"
  mod_shipsize_corvette_hull_mult:0 "Corvette Hull Points"
  mod_shipsize_corvette_hull_add:0 "$mod_shipsize_corvette_hull_mult$"
+
+ mod_shipsize_frigate_hull_add:0 "$frigate$ Hull Points"
+ mod_shipsize_frigate_hull_mult:0 "$mod_shipsize_frigate_hull_add$"
 
  mod_shipsize_destroyer_upkeep_mult:0 "Destroyer Upkeep"
  mod_shipsize_destroyer_hull_mult:0 "Destroyer Hull Points"
@@ -734,7 +748,7 @@
  mod_shipsize_observation_station_upkeep_mult:0 "Observation Station Upkeep"
 
  mod_ship_military_station_small_cost_mult:0 "Defense Platform Build Cost"
- mod_shipsize_military_station_small_upkeep_mult:1 "Defense Platform Upkeep"
+ mod_ship_military_station_small_upkeep_mult:1 "Defense Platform Upkeep"
  mod_shipsize_military_station_small_hull_mult:0 "Defense Platform Hull Points"
  mod_shipsize_military_station_small_hull_add:0 "$mod_shipsize_military_station_small_hull_mult$"
  mod_shipsize_military_station_small_build_speed_mult:0 "Defense Platform Build Speed"
@@ -757,6 +771,10 @@
  mod_weapon_type_strike_craft_weapon_fire_rate_mult:0 "Strike Craft Attack Speed"
  mod_weapon_type_strike_craft_speed_mult:0 "Strike Craft Speed"
  mod_weapon_swarm_weapon_fire_rate_mult:0 "Prethoryn Swarm Weapon Attack Speed"
+ mod_weapon_type_space_fauna_weapon_damage_mult:0 "Space Fauna Weapon Damage"
+ mod_weapon_type_space_fauna_weapon_fire_rate_mult:0 "Space Fauna Weapon Attack Speed"
+
+ mod_shroud_delve_cooldown:0 "Shroud Delve Cooldown"
 
  #vultaum_asteroid_category_research_speed_mult: "Anomaly Research Speed (Precursor - ADD CATEGORIES PROPER)"
  #vultaum_asteroid_category_research_fail_risk_mult: "Anomaly Fail Risk (Precursor - ADD CATEGORIES PROPER)"
@@ -1548,11 +1566,11 @@
  mod_BIOLOGICAL_species_trait_points_add:0 "$species_trait_points_add$"
  mod_pc_machine_habitability:0 "Machine World Habitability"
  mod_pc_hive_habitability:0 "Hive World Habitability"
- MOD_POSTFIX_PERCENT:0 "§G%§!"
+ MOD_POSTFIX_PERCENT:1 "%"
 
  SPECIES_TRAIT_PICKS:0 "Species Trait Picks"
  mod_BIOLOGICAL_species_trait_picks_add:0 "Organic $SPECIES_TRAIT_PICKS$"
- mod_MECHANICAL_species_trait_picks_add:0 "Mechanical $SPECIES_TRAIT_PICKS$"
+ mod_ROBOT_species_trait_picks_add:0 "Mechanical $SPECIES_TRAIT_PICKS$"
  mod_MACHINE_species_trait_picks_add:0 "Machine $SPECIES_TRAIT_PICKS$"
  mod_HUM_species_trait_picks_add:0 "Humanoid $SPECIES_TRAIT_PICKS$"
  mod_MAM_species_trait_picks_add:0 "Mammalian $SPECIES_TRAIT_PICKS$"
@@ -1567,6 +1585,9 @@
 
  MOD_COUNTRY_SENSOR_RANGE_ADD:0 "Country Sensor Range"
  MOD_SHIP_SENSOR_RANGE_ADD:0 "Sensor Range"
+
+ MOD_GOVERNMENT_ELECTION_YEARS_ADD:0 "Years between Elections"
+ MOD_GOVERNMENT_ELECTION_YEARS_MULT:0 "$MOD_GOVERNMENT_ELECTION_YEARS_ADD$"
 
  MOD_COUNTRY_IMMIGRATION_PULL_ADD:0 "Empire Immigration Pull"
  MOD_COUNTRY_IMMIGRATION_PULL_MULT:0 "$MOD_COUNTRY_IMMIGRATION_PULL_ADD$"

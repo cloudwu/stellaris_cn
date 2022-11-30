@@ -61,8 +61,14 @@
  tech_corvette_build_speed:0 "Standardized Corvette Patterns"
  tech_corvette_build_speed_desc:0 "Establishing new standards for the modeling and construction of corvettes greatly improves the efficiency of the production pipeline."
 
- tech_corvette_hull_effect:0 "$mod_shipsize_corvette_hull_add$: §G+100§!"
- tech_corvette_build_speed_effect:0 "$mod_ship_corvette_cost_mult$: §G-5%§!\n$mod_shipsize_corvette_build_speed_mult$: §G+25%§!"
+ tech_corvette_hull_effect:1 "$corvette_hull_effect$\n$frigate_hull_effect$"
+ tech_corvette_build_speed_effect:1 "$corvette_build_speed_effect$\n$frigate_build_speed_effect$"
+
+ corvette_hull_effect:0 "$mod_shipsize_corvette_hull_mult$: §G+10%§!"
+ corvette_build_speed_effect:0 "$mod_ship_corvette_cost_mult$: §G-5%§!\n$mod_shipsize_corvette_build_speed_mult$: §G+25%§!"
+
+ frigate_hull_effect:0 "$mod_shipsize_frigate_hull_mult$: §G+10%§!"
+ frigate_build_speed_effect:0 "$mod_ship_frigate_cost_mult$: §G-5%§!\n$mod_shipsize_frigate_build_speed_mult$: §G+25%§!"
 
  tech_destroyer_hull_1:0 "Improved Destroyer Hulls"
  tech_destroyer_hull_1_desc:0 "Advances in building techniques will allow for the construction of sturdier and more durable destroyers."
@@ -71,7 +77,7 @@
  tech_destroyer_build_speed:0 "Standardized Destroyer Patterns"
  tech_destroyer_build_speed_desc:0 "Establishing new standards for the modeling and construction of destroyers greatly improves the efficiency of the production pipeline."
 
- tech_destroyer_hull_effect:0 "$mod_shipsize_destroyer_hull_add$: §G+200§!"
+ tech_destroyer_hull_effect:1 "$mod_shipsize_destroyer_hull_mult$: §G+10%§!"
  tech_destroyer_build_speed_effect:0 "$mod_ship_destroyer_cost_mult$: §G-5%§!\n$mod_shipsize_destroyer_build_speed_mult$: §G+25%§!"
 
  tech_cruiser_hull_1:0 "Improved Cruiser Hulls"
@@ -81,7 +87,7 @@
  tech_cruiser_build_speed:0 "Standardized Cruiser Patterns"
  tech_cruiser_build_speed_desc:0 "Establishing new standards for the modeling and construction of cruisers greatly improves the efficiency of the production pipeline."
 
- tech_cruiser_hull_effect:0 "$mod_shipsize_cruiser_hull_add$: §G+500§!"
+ tech_cruiser_hull_effect:1 "$mod_shipsize_cruiser_hull_mult$: §G+10%§!"
  tech_cruiser_build_speed_effect:0 "$mod_ship_cruiser_cost_mult$: §G-5%§!\n$mod_shipsize_cruiser_build_speed_mult$: §G+25%§!"
 
  tech_battleship_hull_1:0 "Improved Battleship Hulls"
@@ -91,7 +97,7 @@
  tech_battleship_build_speed:0 "Standardized Battleship Patterns"
  tech_battleship_build_speed_desc:0 "Establishing new standards for how we design and construct massive battleships greatly improves the speed at which they can be assembled."
 
- tech_battleship_hull_effect:0 "$mod_shipsize_battleship_hull_add$: §G+800§!"
+ tech_battleship_hull_effect:1 "$mod_shipsize_battleship_hull_mult$: §G+10%§!"
  tech_battleship_build_speed_effect:0 "$mod_ship_battleship_cost_mult$: §G-5%§!\n$mod_shipsize_battleship_build_speed_mult$: §G+25%§!"
 
  tech_titan_hull_1:0 "Improved Titan Hulls"
@@ -171,6 +177,11 @@
  tech_dragon_armor:0 "Artificial Dragonscales"
  tech_dragon_armor_desc:0 "The Ether Drake's scales are made up of multiple layers of unique mineral nanostructures. Unorthodox manufacturing techniques allow us to closely emulate these self-repairing structures."
 
+ tech_armor_hardeners_1:0 "Armor Hardening"
+ tech_armor_hardeners_1_desc:0 "$ARMOR_HARDENER_1_DESC$"
+ tech_armor_hardeners_2:0 "Adaptive Armor Hardening"
+ tech_armor_hardeners_2_desc:0 "$ARMOR_HARDENER_2_DESC$"
+
 # Thruster Components
  tech_thrusters_1:0 "Chemical Thrusters"
  tech_thrusters_1_desc:0 "Simple yet moderately effective chemical thrusters that rely on combustible propellant to function."
@@ -240,6 +251,10 @@
  #tech_enhanced_combat_software_desc:0 ""
  tech_synthetic_leaders:0 "Synthetic Personality Matrix"
  tech_synthetic_leaders_desc:0 "Equipped with a personality, synthetics will finally be able to interact socially on equal terms with the rest of our citizens. Some units may even assume leadership roles."
+ tech_integrated_cybernetics:0 "Integrated Cybernetics"
+ tech_integrated_cybernetics_desc:0 "Improving upon basic exoskeletal suits, these integrated cybernetic implants make the user more resistant to harmful environmental effects."
+ tech_integrated_cybernetics_machine_intelligence:1 "Adaptive Cybernetics"
+ tech_integrated_cybernetics_desc_machine_intelligence:1 "Installing cybernetic implants that adapt to the local environment will boost the efficiency of our drones."
  tech_mineral_purification_1:0 "Mineral Purification"
  tech_mineral_purification_1_desc:0 "Optimal processing of mined materials have allowed us to reach new levels of efficiency."
  tech_mineral_purification_2:0 "Advanced Mineral Purification"
@@ -265,6 +280,8 @@
  tech_matter_generator_desc:0 "By using vast amounts of energy we are able to convert light into matter from seemingly nothing."
  tech_mega_assembly:0 "Mega-Assembly Systems"
  tech_mega_assembly_desc:0 "Advanced templates allow us to drastically increase the assembly of new units."
+ tech_robot_assembly_complex:0 "Robotic Assembly Systems"
+ tech_robot_assembly_complex_desc:0 "Advanced templates allow us to drastically increase the assembly of new robots."
 
  # Space Mining
  tech_space_construction:0 "Offworld Construction"
@@ -425,6 +442,8 @@
  tech_synchronized_defences_desc:0 "Aligning defensive and offensive weapon execution paradigms allows for increased efficiency."
  tech_global_research_initiative:1 "Interplanetary Research Initiative"
  tech_global_research_initiative_desc:2 "A bid for interplanetary resource pools and more flexible research grants."
+ tech_neuro_quantum_links:0 "Quantum Neuro-Links"
+ tech_neuro_quantum_links_desc:0 "Advanced neurological implants with connection to quantum computing clusters allow for multi-threaded thoughts."
  tech_cryostasis_1:0 "AI-Controlled Colony Ships"
  tech_cryostasis_1_desc:0 "By giving control of the colony ship to an Artificial Intelligence, the crew and colonists can be suspended in a deep sleep."
  tech_cryostasis_1_machine_intelligence:0 "Colony Fabrication Drones"
@@ -487,6 +506,10 @@
  tech_shields_5_desc:0 "These reinforced and hardened energy shields are incredibly powerful. The protection they offer is second to none."
  tech_shield_rechargers_1:0 "Shield Capacitors"
  tech_shield_rechargers_1_desc:1 "These capacitors store surplus energy which can quickly be transferred to reinforce a ship's shields."
+ tech_shield_hardeners_1:0 "Shield Hardening"
+ tech_shield_hardeners_1_desc:0 "$SHIELD_HARDENER_1_DESC$"
+ tech_shield_hardeners_2:0 "Advanced Shield Hardening"
+ tech_shield_hardeners_2_desc:0 "$SHIELD_HARDENER_2_DESC$"
  tech_planetary_shield_generator:0 "Planetary Shields"
  tech_planetary_shield_generator_desc:0 "Generating a strong energy shield within a planetary atmosphere is a greater challenge than in the vacuum of space, but it offers a potent defense against orbital bombardment."
  tech_dark_matter_deflector:0 "Dark Matter Deflectors"
@@ -781,6 +804,8 @@
  tech_genome_mapping_desc:1 "Mapping the genome of an individual through the sequencing of their DNA opens up for tailored medical treatments and therapies."
  tech_epigenetic_triggers:0 "Epigenetic Triggers"
  tech_epigenetic_triggers_desc:1 "Advanced DNA methylation techniques allow for functionally significant alterations to be made to arbitrary genomes."
+ TECH_UNLOCK_EPIGENETICS_TITLE:0 "§HUnlocks Feature:§! Epigenetic Triggers"
+ TECH_UNLOCK_EPIGENETICS_DESC:0 "Allows us to remove Presapient Traits from Biological Species through Species Modification."
  tech_cloning:0 "Cloning"
  tech_cloning_desc:1 "Breakthroughs in enucleation and artificial womb technology allows for the mass-production of individuals based on a common genetic template."
  tech_gene_banks:0 "Gene Banks"
@@ -794,8 +819,6 @@
  tech_gene_tailoring:0 "Gene Tailoring"
  tech_gene_tailoring_desc:1 "Making gene-editing tools widely available is sure to have a positive impact on our development as a species."
  tech_gene_tailoring_modifier_desc:0 "$species_trait_points_add$: $POINTS|0=+$"
- tech_genetic_resequencing:0 "Genetic Resequencing"
- tech_genetic_resequencing_desc:0 "No longer will we be limited by the basic biological structure of a species when striving to improve them. DNA is just another material to be shaped as the sculptor wills it."
  tech_gene_expressions:0 "Targeted Gene Expressions"
  tech_gene_expressions_desc:1 "Stricter control of RNA and protein production on the cellular level."
  tech_gene_expressions_modifier_desc:0 "$species_trait_points_add$: $POINTS|0=+$"
@@ -807,7 +830,18 @@
  tech_regenerative_hull_tissue_desc:0 "A genetically altered version of silicon-based bacteria could potentially be manipulated to regenerate non-organic materials."
  tech_vitality_boosters:0 "Vitality Boosters"
  tech_vitality_boosters_desc:1 "Where the body fails, science intervenes."
-
+ tech_lithoid_transgenesis:0 "Silicate Transgenesis"
+ tech_lithoid_transgenesis_desc:0 "The similarities between silicon based and carbon based life allow us to synthesize Lithoid evolutionary traits in carbon based species."
+ TECH_UNLOCK_LITHOID_GENETICS_TITLE:0 "§HUnlocks Feature:§! Lithoid Transgenesis"
+ TECH_UNLOCK_LITHOID_GENETICS_DESC:0 "Allows us to add Lithoid Traits to Biological Species through Species Modification."
+ tech_plantoid_transgenesis:0 "Botanical Transgenesis"
+ tech_plantoid_transgenesis_desc:0 "With some artificial encouragement, the evolutionary adaptations found in botanical species can be replicated in other forms of life."
+ TECH_UNLOCK_PLANTOID_GENETICS_TITLE:0 "§HUnlocks Feature:§! Botanical Transgenesis"
+ TECH_UNLOCK_PLANTOID_GENETICS_DESC:0 "Allows us to add Botanical Traits to Organic Species through Species Modification."
+ tech_leviathan_transgenesis:0 "Leviathan Transgenesis"
+ tech_leviathan_transgenesis_desc:0 "Galactic fauna have remarkable adaptions to life in interstellar space. Mastery of these traits will be our genetic triumph."
+ TECH_UNLOCK_LEVIATHAN_GENETICS_TITLE:0 "§HUnlocks Feature:§! Leviathan Transgenesis"
+ TECH_UNLOCK_LEVIATHAN_GENETICS_DESC:0 "Allows us to add Leviathan Traits to Organic Species through Species Modification."
  # Fleet Organization
  tech_doctrine_fleet_size_1:0 "Doctrine: Space Combat"
  tech_doctrine_fleet_size_1_desc:1 "Gradual adaptation to the realities of deep-space combat allows us to effectively coordinate larger maneuvers."
@@ -883,10 +917,16 @@
  # Empire Management
  tech_planetary_government:0 "Planetary Government"
  tech_planetary_government_desc:1 "Once a colony has been firmly established and pioneers turn into citizens, the need for a strong local government providing stability trumps the colonial need for flexibility."
+ tech_planetary_government_machine_intelligence:0 "Planetary Instantiation"
+ tech_planetary_government_desc_machine_intelligence:0 "Our colonies would never achieve stable operation without infrastucture dedicated to our networked self."
+ tech_planetary_government_hive_mind:0 "Planetary Plexus"
+ tech_planetary_government_desc_hive_mind:0 "Our colonies would wither to naught without the stable projection of our collective self. Our effortless presence ensures a flourishing hive."
  tech_planetary_unification:0 "Planetary Unification"
  tech_planetary_unification_desc:2 "Ancient warring tribes, historical nations in conflict, now unified in empire. We must not, will not, crumble." # We have progressed from warring tribes, from conflicting nations, to a unified Empire, a single will ready to grasp the stars.
  tech_planetary_unification_machine_intelligence:0 "Uniform Data Standards"
  tech_planetary_unification_desc_machine_intelligence:0 "Deviance will not be tolerated."
+ tech_planetary_unification_hive_mind:0 "Evolutionary Convergence"
+ tech_planetary_unification_desc_hive_mind:0 "The ecological crucible in which we fought for survival has etched sturdy paths into our genetic memory. We are the peerless union of all that came before."
  tech_planetary_unification_effect:1 "Grants a lump sum of £unity£§YUnity§!"
  tech_adaptive_bureaucracy:0 "Adaptive Bureaucracy"
  tech_adaptive_bureaucracy_desc:1 "The progress we make calls for a new, nimbler form of administration that may aid rather than hinder us in our pursuits." # The leaps/progress/discoveries we have made demand a new form of administrative system, one that can be shaped by opportunity rather than limit it.
@@ -1034,8 +1074,8 @@
  tech_repeatable_weapon_type_energy_fire_rate_desc:1 "New developments in tech cooling regularly surface, improving the stability and efficiency of our weapons systems, keeping them from blowing up the ships upon which they are mounted."
  tech_repeatable_weapon_type_strike_craft_fire_damage:0 "Synapse Interceptors"
  tech_repeatable_weapon_type_strike_craft_fire_damage_desc:1 "Increasing the speed at which fighter pilots can process and act upon enemy positioning data elevates strike craft a few steps up the food chain."
- tech_repeatable_weapon_type_strike_craft_fire_rate:0 "Heat Recyclers"
- tech_repeatable_weapon_type_strike_craft_fire_rate_desc:1 "Circulating excess heat from weapons discharge in order to prime munitions as they are loaded increases the rate of fire of strike craft weaponry."
+ tech_repeatable_weapon_type_strike_craft_fire_rate:1 "Iterative Pilot Training"
+ tech_repeatable_weapon_type_strike_craft_fire_rate_desc:2 "By collecting and analyzing the performance data of the pilots that came before, we have exponentially improved our pilot training methods. Each one will be quicker than the one that came before."
  tech_repeatable_improved_planet_sensor_range:0 "Planetary Signal Boosters"
  tech_repeatable_improved_planet_sensor_range_desc:1 "As our fleets roam every further from our ancestral home, our sensor technology continuously pushes past the limits of old."
  tech_repeatable_reduced_building_cost:0 "Gravitational Analysis"

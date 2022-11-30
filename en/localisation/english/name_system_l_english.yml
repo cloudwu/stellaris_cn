@@ -1,0 +1,148 @@
+﻿l_english:
+ ####################################
+ # Strings and special keys
+ # for use in game names
+ ####################################
+ NAME_Absorbed_Species:0 "Absorbed [Root.GetSpeciesNamePlural]"
+
+ # Common name formats
+ 
+ REGNAL_NAME_FORMAT_NUMBERED:0 "$NAME$ $NUMBER$" # E.g. 'Igvi-Inor IX'
+ TWO_NAMES_FORMAT:1 "$1$ $2$" # E.g. 'John Doe
+ NAME_WITH_TITLE_FORMAT:0 "$TITLE$ $NAME$" # E.g. 'Emperor Augustus'
+ PREFIX_NAME_FORMAT:0 "$PREFIX$ $NAME$" # Used for ships' prefixes, e.g. 'UNS Excelsior'
+ SUFFIX_NAME_FORMAT:0 "$NAME$ $SUFFIX$" # Used for ships with numbers where applicable, e.g. 'UNS Excelsior II'
+ ASTEROID_NAME_FORMAT:0 "$prefix$$suffix$"
+ AofB:0 "$1$ of $2$" # Used in empire names like 'Empire of Sol'.
+ AofBpfx:0 "$1$ $2$" # Same as above, except used only to generate a ship prefix acronym: 'Empire Sol' -> 'ESL'
+ AassocB:0 "$1$ $2$" # Two loosely associated names, like 'Omega Initiative'
+ # Note: if you use grammatical tags in your language, you may want to add '&! 1' to AofB. 
+ #   This will give the name as a whole the gender/number of 'Empire', and not that of 'Sol'.
+
+ # War name formats
+ 
+ # $1$ and $2$ are the attacker and defender adjectives, $3$ is the word for the war.
+ # Example: 'Prossnakan - Centaurian War of Rivalry'
+ war_vs_adjectives:0 "$1$ - $2$ $3$"
+ 
+ # $1$ and $2$ are the attacker and defender names, $3$ is the word. (Typically used for federations)
+ # Example: 'Federated Star Nations - Star Pact War'
+ war_vs_names:0 "$1$ - $2$ $3$"
+
+ # Mix of adjective and name
+ war_name_vs_adj:0 "$1$ - $2$ $3$" # $2$ is an adjective
+ war_adj_vs_name:0 "$1$ - $2$ $3$" # $1$ is an adjective
+
+
+ # Special-use keys
+
+ # Default adjective word order. Any adjective that doesn't already have '$1$' in it
+ # will use this pattern to add a '$1$' before or after the adjective, as appropriate
+ # for the language. A space is optional.
+ adj_format:0 "adj $1$"
+
+ # Patterns for turning nouns into adjectives
+ # NOTE: Languages can have more or fewer entries here than English has.
+ # Example: 
+ # adj_NNid: '*an $1$' 
+ # means: 'A noun that ends in 'id' will have 'id' replaced by 'an', 
+ # followed by whatever it's attributing: e.g. 'Jhabbanid'->'Jhabbanan Confederacy'
+ # Patterns can be 2 last letters (adj_NNid), 1 last letter (adj_NNd) or 0 last letters
+ # (i.e. default, adj_NN). If you need more, contact dev.
+ adj_NNi:0 "*ian $1$"
+ adj_NNr:0 "*ran $1$"
+ adj_NNa:0 "*an $1$"
+ adj_NNe:0 "*an $1$"
+ adj_NNus:0 "*an $1$"
+ adj_NNis:0 "*an $1$"
+ adj_NNes:0 "*an $1$"
+ adj_NNss:0 "*an $1$"
+ adj_NNid:0 "*an $1$"
+ adj_NNed:0 "*an $1$"
+ adj_NNad:0 "*an $1$"
+ adj_NNod:0 "*an $1$"
+ adj_NNud:0 "*an $1$"
+ adj_NNyd:0 "*an $1$"
+
+ ## SEQUENTIAL NAMES
+
+ ## Digit formats
+
+ # - Denoted by "()" surrounding the whole string.
+ # - The string consists of "positions", separated by ";".
+ # - "100:(0 1 2 3 4 5 6 7 8 9);" means "divide by 100 (rounding down), and use the result as an index
+ #   into the list inside the "()", to yield the digit for this position.
+ # - "?" after the base (e.g. "100?:") means this position is optional 
+ #   and will be omitted if it's value is zero and it's at the start. (E.g. "4" instead of "04")
+ # - A position with the digit "|" will be omitted, e.g. Roman "CII" (102) omits the tens.
+ # - A position with the digit "||" will only show the prefix/suffix, e.g. Korean "십일" (11) rather than "일십일".
+ # - Each position can have a prefix and/or suffix, like so:
+ #   "100:myprefix(| 1 2 ...)mysuffix;"
+ # - After processing that position, the remainder is passed on to the next position etc.
+
+ # English cardinal numbers, with 1, 2 or 3 minimum digits
+ C:0 "(100?:(0 1 2 3 4 5 6 7 8 9); 10?:(0 1 2 3 4 5 6 7 8 9); 1:(0 1 2 3 4 5 6 7 8 9))"
+ CC:0 "(100?:(0 1 2 3 4 5 6 7 8 9); 10:(0 1 2 3 4 5 6 7 8 9); 1:(0 1 2 3 4 5 6 7 8 9))"
+ CCC:0 "(100:(0 1 2 3 4 5 6 7 8 9); 10:(0 1 2 3 4 5 6 7 8 9); 1:(0 1 2 3 4 5 6 7 8 9))"
+ CC0:0 "-1, (100?:(0 1 2 3 4 5 6 7 8 9); 10:(0 1 2 3 4 5 6 7 8 9); 1:(0 1 2 3 4 5 6 7 8 9))" # Zero-based variant
+ # Roman numerals
+ R:0 "(100?:(| C CC CCC CD D DC DCC DCCC CM); 10?:(| X XX XXX XL L LX LXX LXXX XC); 1:(| I II III IV V VI VII VIII IX))"
+ # Hexadecimal numbers
+ HEX:0 "-1, (256:(0 1 2 3 4 5 6 7 8 9 a b c d e f); 16:(0 1 2 3 4 5 6 7 8 9 a b c d e f); 1:(0 1 2 3 4 5 6 7 8 9 a b c d e f))"
+
+ ## Conditional number formats, such as ordinals
+
+ # - '-1' indicates this format should subtract 1 from the number (making the numbers start at 0; 
+ #   otherwise, 1 is the default first number).
+ # - '4:' means "this rule applies if the number is exactly 4".
+ # - 'def:' means "apply this rule if none of the previous rules match" (should be last).
+ # - 'n100+10+(0-9):' means: "apply this rule if the number is some multiple of 100, plus 10, plus a number between 0-9"
+ #   (this rule covers 11th-19th, 111th-119th etc.)
+ # - '$C$' means look up the number itself using the loc key C (for example)
+ # - 'N' means insert the straight Arabic number
+ 
+ # Ordinary English ordinal.
+ ORD:0 "n100+10+(0-9):$C$th, n10+1:$C$st, n10+2:$C$nd, n10+3:$C$rd, def:$C$th"
+ # 0-based English ordinal
+ ORD0:0 "-1, n100+10+(0-9):$C$th, n10+1:$C$st, n10+2:$C$nd, n10+3:$C$rd, def:$C$th"
+
+ # ## Suggested numeral variants for languages
+ #l_russian:
+ # ORD: "def:N-е|||fem: def:N-я|||masc: def:N-й"
+ #
+ #l_polish:
+ # ORD: "def:N."
+ #
+ #l_spanish:
+ # ORD: "def:N.ª|||masc: def:N.º|||pl:def:N.ªs|||masc,pl: def:N.ºs"
+ #
+ #l_braz_por:
+ # ORD: "def:N.ª|||masc: def:N.º|||pl:def:N.ªs|||masc,pl: def:N.ºs"
+ #
+ #l_french:
+ # ORD: "1:1re, 2:2de, def:Ne|||masc: 1:1er, 2:2d, def:Ne|||pl: 1:1res, 2:2des, def:Nes|||pl, masc: 1:1ers, 2:2ds, def:Nes"
+ #
+ #l_german:
+ # ORD: "def:N."
+ #
+ #l_korean:
+ # CARD: "(100?:(| || 이 삼 사 오 육 칠 팔 구)백; 10?:(| || 이 삼 사 오 육 칠 팔 구)십; 1:(| 일 이 삼 사 오 육 칠 팔 구))"
+ # ORD: "1:첫번째, 2:두번째, 3:세번째, 4:네번째, def:$CARD$번째"
+ #
+ #l_simp_chinese:
+ #
+ #l_japanese:
+ 
+ # NUMBERS TESTING
+ # Note: The in-game console command "number_test" can be used to verify that numbers look correct.
+ # Specify a number "number_test 5" or a range "number_test 2-5".
+ # The master string "NUMBERS_TEST" determines which formats will be used in the test;
+ # Each $entry$ in that string will be looked up by loc key: "NUMBERS_TEST_entry"
+
+ NUMBERS_TEST_C:0 "$C$"
+ NUMBERS_TEST_CC:0 "$CC$"
+ NUMBERS_TEST_CCC:0 "$CCC$"
+ NUMBERS_TEST_ORD:0 "$ORD$"
+ NUMBERS_TEST_HEX:0 "$HEX$"
+ NUMBERS_TEST_R:0 "$R$"
+ NUMBERS_TEST:0 "$C$ $CC$ $CCC$ $ORD$ $HEX$ $R$"

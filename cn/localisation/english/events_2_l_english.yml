@@ -13,9 +13,9 @@
  AST_WAVELENGTHS_1_CAT:0 "小行星电波"
  AST_WAVELENGTHS_1_DESC:0 "[Root.GetName]小行星正在发射受控脉冲辐射。是不是有什么人，还是说有什么东西，想要跟我们交谈？"
  AST_DEBRIS_FIELD_1_CAT:0 "残骸场"
- AST_DEBRIS_FIELD_1_DESC:0 "传感器报告[Root.GetName]周围的重重废墟中可能存在有趣的东西。"
+ AST_DEBRIS_FIELD_1_DESC:1 "传感器报告[Root.GetName]周围的重重废墟中可能存在有趣的东西。"
  HBL_LUSH_PLANET_1_CAT:0 "苍翠的行星"
- HBL_LUSH_PLANET_1_DESC:0 "[Root.GetName]的颜色格外碧绿，初步扫描表明其表面可能存在一些有趣的人造物。"
+ HBL_LUSH_PLANET_1_DESC:1 "[Root.GetName]的颜色格外碧绿，初步扫描表明其表面可能存在一些有趣的人造物。"
  UHB_ANCIENT_RUINS_1_CAT:0 "碑塔"
  UHB_ANCIENT_RUINS_1_DESC:0 "[Root.GetName]表面散布着十分惊人的建筑，请求立即进行考古工作。"
  UHB_MOLTEN_CHART_CAT:0 "融解"
@@ -31,7 +31,7 @@
  AST_ILLICIT_DARK_CAT:0 "小行星辐射"
  AST_ILLICIT_DARK_DESC:0 "[Root.GetName]周期性地向虚空发射出骇人的粒子辐射混合体。"
  TOX_PURPLE_RAIN_CAT:0 "有毒色素"
- TOX_PURPLE_RAIN_DESC:0 "[Root.GetName]有毒的生物圈给这颗行星带来了独特的色彩。"
+ TOX_PURPLE_RAIN_DESC:1 "[Root.GetName]有毒的生物圈给这颗行星带来了独特的色彩。"
  FROZ_BASE_CAT:0 "冰冻荒原"
  FROZ_BASE_DESC:0 "传感器在[Root.GetName]冰冻表面的偏僻之处检测到出乎意料的活动。"
  FROZ_BASE2_CAT:0 "冰雪平原"
@@ -173,7 +173,7 @@
  anomaly.106.a.phobe:0 "发出声明。把碟片丢到他们的恒星里去。"
  anomaly.106.a.phile:0 "你们朝虚空呐喊，我们便来了。"
  anomaly.110.name:0 "过往之声"
- anomaly.110.desc:0 "在[From.GetName]一座被早已灭绝的原始民族抛弃的堡垒内，一张金色碟片静躺在一座石台上，覆盖着厚厚的孢子尘埃。\n\n最初认为这是一件微不足道的外星制品，可能和亲外宗教有关，但一台档案计算机很快辨识出它是当初旅行者号探测器发射时携带的留声装置。"
+ anomaly.110.desc:1 "在[From.GetName]表面一座被早已逝去的[Owner.GetPreFTLLowerPlural]民族所抛弃的堡垒内，一张金色碟片静躺在一座石台上，被厚厚的孢子尘埃覆盖着。\n\n起初它被认为是一件微不足道的外星制品，可能有着某种宗教意义，但一台档案计算机很快辨识出它是当初旅行者号探测器发射时携带的镀金唱片。"
  anomaly.110.a:0 "马上回放。"
  anomaly.115.name:0 "细胞仓库"
  anomaly.115.desc:0 "[From.GetName]部分中空。内部是密集的蜂窝结构，由某种未知的合金打造，放着许多储存外星基因材料的储藏器。这显然是一座生命档案，纪录着一个失落文明的基因资料。多数DNA都已严重损毁，但仍能从中了解许多。"
@@ -193,55 +193,56 @@
  anomaly.130.a:0 "至少没人受伤。"
  anomaly.135.name:0 "废弃游乐场"
  anomaly.135.desc:0 "[From.GetName]上的建筑并没有我们最初想的那么古老。它似乎是某种游乐场。科学官[Root.GetLeaderName]表示，这些奇妙的装置异常复杂，我们能从中学到很多。在它们的建造者眼中，这可能是尖端的探测阵，也可能是巨大的艺术设施。\n\n然而，在我们[Root.Owner.GetSpeciesNamePlural]看来，这看起来更像是你带着小孩子去玩的地方。"
+
  anomaly.140.name:0 "熟悉的神龛"
- anomaly.140.desc:0 "小行星的大部分地方都被激光精细雕刻过，看上去像小型的[Root.Owner.GetSpeciesName]神庙或大型的神龛。\n\n这是一座献给未知者——古[Root.Owner.GetSpeciesAdj]信仰中的大毁灭之神——的神龛。\n\n这座神庙已经在寂静的太空中穿梭了许久，比我们掌握太空航行技术的时间还要久远，因此这……说轻松点，有些令人困惑。\n\n说严重点，令人惊骇。\n\n科学官[Root.GetLeaderName]自然竭力要求我们寻找更多与这个宇宙神庙有相似特征的天体，并将附近星系中可能的候选者列表上传到了情报日志。"
+ anomaly.140.desc:1 "小行星的大部分地方都被激光精细雕刻过，看上去像小型的[Root.Owner.GetSpeciesName]庙宇：这是一座供奉着§Y未叙尊者§!的古龛，祂是诸多[Root.Owner.GetSpeciesAdj]古旧信仰中专司毁灭的神祇。\n\n这座古龛已经在太空中盘旋了许久，比我们掌握太空航行技术的时间还要更加久远——这个发现让我们很多的研究者们百思不得其解。\n\n由于发现的这一物体仍正体不明，科学专员[Root.GetLeaderName]建议我们寻找更多与这个宇宙古龛有相似特征的天体。[Root.leader.GetHeSheCap][Root.leader.GetHasHave]准备了一份附近星系中可能的候选列表。"
  anomaly.140.a:0 "别去搭理也许更好。"
- anomaly.140.a.tooltip:0 "就让沉睡的神继续长眠吧。"
+ anomaly.140.a.tooltip:1 "§L就让沉睡的神灵继续沉睡着吧。§!"
  anomaly.140.b:0 "那我们就去看一眼吧。"
- anomaly.140.b.tooltip:0 "开始旧神事件链。"
  anomaly.140.c:0 "我们不能容许这种异端邪说。"
  anomaly.140.c.tooltip:0 "命令[Root.GetName]夷平神龛。"
  anomaly.142.name:0 "古神：接近施助者"
- anomaly.142.desc:0 "[Root.GetName]进入了[Root.GetStarName]星系，船组报告称确实有一个类似未知者神龛的天体在环绕恒星。"
+ anomaly.142.desc:1 "[Root.GetName]已经进入了[Root.GetStarName]星系。船员报告指出那颗恒星周围确实环行着另一个与未叙尊者的神龛别无二致的物体。"
  anomaly.142.a:0 "调查一下吧。"
  anomaly.143.name:0 "古神：接近无惧者"
- anomaly.143.desc:0 "[Root.GetName]进入了[Root.GetStarName]星系，船组报告称确实有一个类似未知者神龛的天体在环绕恒星。"
+ anomaly.143.desc:1 "[Root.GetName]已经进入了[Root.GetStarName]星系。船员报告指出另一个在轨道上的物体与未叙尊者的古龛有很高的相似性。"
  anomaly.143.a:0 "干得好。"
  anomaly.144.name:0 "古神：接近感知者"
- anomaly.144.desc:0 "[Root.GetName]进入了[Root.GetStarName]星系，船组报告称确实有一个类似未知者神龛的天体在环绕恒星。"
  anomaly.144.a:0 "知道了。"
+
  anomaly.145.name:0 "何方天籁"
- anomaly.145.desc:0 "[From.GetName]上的动物，无论是捕食者还是猎物，在夜晚降临时，都会聚集在一起，然后开始……\n\n唱歌。\n\n乍听之下，各种呼啸鸣啼嘈杂不堪，但其中确实存在着可辨识的旋律。并且，据[Root.GetName]成员所言，旋律并不难听。\n\n这种非智慧生物的合唱显然是由某种外星存在引起的，而我们可能永远无法知道它们为何要如此改变[From.GetName]的动物群。\n\n不过，我们至少可以着手调查它们是如何做到的。"
+ anomaly.145.desc:1 "[From.GetName]上的动物——不论是捕食者还是猎物——都会在夜幕降临的时候聚集在一起，然后……唱歌。\n\n嚎叫，咔哒声，叽喳声，咆哮，嘘声混在一起，初听来呕哑嘲哳难为听，但其细听却能发现潜藏着一种可以辨认的旋律。[Root.GetName]上的船员也说那种音乐甚至还挺好听的。\n\n我们认为必然有外来影响干涉才能创造出这种非智能的合唱。我们无法放理解其原因，但至少我们可以研究他们是如何做到的。"
  anomaly.150.name:0 "卓尘之下"
- anomaly.150.desc:0 "[From.GetName]不仅是个冰冻巨行星，而且上面的冰十分不同寻常。冰内部包裹着许多卓尘，在行星大气层的上层便可以展开开采。"
+ anomaly.150.desc:1 "[From.GetName]不是一颗寻常的冰巨行星，这颗冰巨行星由极其罕见的冰构成。冰内部包裹着许多卓尘，在行星大气层的上层便可以展开开采。"
  anomaly.150.a.tooltip:0 "发现§Y卓冰§!矿藏。"
  anomaly.155.name:0 "禁忌物质"
- anomaly.155.desc:0 "[Root.GetName]在小行星表面的坑洞中发现了令人不安的隐藏科技。\n\n显然有人用简单粗暴的方法在此处稳定创造了一个单向虫洞，并且科学官[Root.GetLeaderName]很快得出结论，这里是虫洞的出口。虫洞的另一端是一块距离某个黑洞几光年远的未知区域，并有少量暗物质因为受到虹吸而从虫洞中泄漏。\n\n建立虫洞的人似乎已经放弃了任务。"
+ anomaly.155.desc:1 "[Root.GetName]在小行星表面的坑洞中发现了令人不安的隐藏科技。\n\n显然有人——用简单粗略的方法——在此处稳定创造了一个单向虫洞。科学专员[Root.GetLeaderName]得出结论，这颗小行星是一个出口。虫洞的另一端是一块距离某个黑洞几光年远的未知区域，并有少量暗物质——因为受到虹吸——从虫洞中泄漏。\n\n不管是谁建立虫洞，他们似乎已经放弃了此项行动。"
  anomaly.155.a.tooltip:0 "发现§Y暗物质§!矿藏。"
  anomaly.160.name:0 "紫雨"
  anomaly.160.desc:0 "[Root.GetName]的表面探测器拍到了[From.GetName]上美丽的紫色雨，而这些照片不知为何来到了[Root.Owner.Capital.GetName]的文化精英手中。\n\n虽然这次发现没有科学价值，但这些令人魂牵梦萦的多彩景象在[Root.Owner.GetSpeciesName]的艺术圈里引发了一小场文艺复兴，接下来数年里便能感受到这次运动的积极影响。"
+
  anomaly.165.name:0 "古神：献给施助者的神龛"
- anomaly.165.desc:0 "破解施助者神龛的象形文字要比预期的顺利许多。所有参与破解的语言学家都认为，虽然这种语言古老而复杂，但能与他们的大脑快速“形成共鸣”。\n\n不过，在调查完其它几位神祗的相关记述前，这些文字还难以真正达意。"
+ anomaly.165.desc:1 "破解恩赐女神神殿中的象形文字要比预计的顺利许多。负责该项目的语言学家们称，这些文本莫名地令人亲切：能轻易地“触动”他们的心弦，尽管其中的语法古老又冗杂。\n\n然而，他们指出，这些信息暗示了一些非常晦涩难懂的主题和上下文。我们除非与关于这位四位一体的神的其他文本结合起来，否则很难完全理解他们的信息。"
  anomaly.166.name:0 "古神：献给无惧者的神龛"
- anomaly.166.desc:1 "在“瞎找”了好几天之后，科学官[Root.GetLeaderName]终于找到了无惧者的教义——一个用坚固塑料膜封存的织物卷轴。"
+ anomaly.166.desc:2 "在经过了连日的仔细、甚至好几次令人崩溃的工作之后，科学专员[Root.GetLeaderName]取回了勇气之神的宗卷：一个普通的织物卷轴用用坚固塑料膜封存。这个卷轴被带回[Root.GetName]进行进一步研究。"
  anomaly.167.name:0 "古神：献给感知者的神龛"
- anomaly.167.desc:0 "科学官[Root.GetLeaderName]汇报了[Root.GetName]在感知者神龛的发现。他们很早就意识到有一些语素文字嵌在墙上，被半透明漆层严重扭曲。\n\n最初他们试图依靠[Root.GetName]计算机的原始处理能力直接从图像重构文字。这一努力终告失败，因为这些文字过于扭曲，无法放入任何已知的语言系谱中。后来，[Root.GetName]船组试图用多种波长和强度的射线轰击漆层，但并未发现有用的反应。[Root.GetLeaderName]也考虑过用物理手段直接剥离漆层，但意识到这些字符无疑一开始就是扭曲的，只有透过漆层才能看出它们应有的形状。\n\n科学官[Root.GetLeaderName]恼怒地沿着圆形空间边缘踱步，准备宣告任务失败，但抬头仰望时，注意到那些离散的线条会在他移动时短暂地形成连贯的文字，但片刻又分离，被新的线条替代。\n\n不久之后，他们便一边转动一边记录天花板、墙面和地板的图像。其他神龛的文字应该可以帮他们理清头绪。"
+ anomaly.167.desc:1 "科学专员[Root.GetLeaderName]汇报了有关洞察女神神殿的情况。\n\n它的墙壁上镶嵌着表语文字，被一层层的保护漆严重地扭曲了。工作人员试图初步破译这种文字，但是失败了；它的语法与我们遇到的其他语言体系截然不同。[Root.GetName]的船员试图去除保护漆，希望能看得更加清楚，但没有成功。\n\n在任务即将宣布失败的时候——在恼怒即将爆发的边缘——[Root.GetLeaderName]突然开始感知到一段段的连贯文本。\n\n船员们没有花很长时间就利用这些线索编成了索引。很快，他们就把天花板、墙壁和地板描绘成了一个螺旋形的图案：这是一幅更广泛的图画的一部分，我们相信可以用其他神殿的文字来完成。"
  anomaly.168.name:0 "古神：启示"
- anomaly.168.desc:0 "所有文字揭示出的是诸神完整的教义，令[Root.GetSpeciesName]童话般的宗教相形见绌。这些文字既具启示性又具革命性。\n\n只需一点有创造力的解读，就不难发现[Root.Capital.GetName]人民注定要，在强硬宗教领袖的引导下，成就伟大的事业。\n\n我们的路是通往神性的路，但我们的过往充斥着虚假的预言和生于无知的罪孽。救赎的时机就在这一刻。"
+ anomaly.168.desc:1 "完整的众神教条——因为我们认为被恢复的文本就应该被这样视作——对我们具有启示意义，它对于我们古老宗教赖以建立的那些幻想基础是具有毁灭性的。\n\n当放在以[Root.GetSpeciesAdj]为中心的情景中时，这些文本清楚地表明，我们注定要在一位宗教领袖强有力的手段的引导下实现伟大的功业。我们注定要成为神，但我们的过去充斥着流产的预言和因无知而产生的罪恶。救赎是短暂的。"
  anomaly.168.a:0 "封锁发现。"
- anomaly.168.a.tooltip:0 "知识就是力量。秘密知识就是秘密力量。"
- anomaly.168.b:0 "用这些发现盈利。"
- anomaly.168.b.tooltip:0 "一些富有的宗教集团已经得知此事的风声，并且很感兴趣。"
+ anomaly.168.a.tooltip:1 "§L知识就是力量。神秘的知识是神秘的力量。§!"
+ anomaly.168.b:1 "我们可以拿这个换点钱。"
+#  anomaly.168.b.tooltip:0 "Some of the wealthier faith-corporations have caught wind of the affair, and are very interested."
  anomaly.168.c:0 "我们能从中学到什么？"
- anomaly.168.c.tooltip:0 "不管这些文字的准确性和可靠性，我们与某种古老未知的太空种族共有一些宗教理念是事实。"
- anomaly.168.d:0 "我们追随神祗的脚步！"
+#  anomaly.168.c.tooltip:0 "Regardless of the veracity or validity of the sacred texts, the fact remains that we share religious concepts with some older, unknown spacefaring race."
+ anomaly.168.d:1 "我们追随神祗的脚步！"
  #anomaly.168.d.tooltip:1 "Start a religious renaissance.\nYour native population gains the §YFanatic Spiritualist§! and §YAuthoritarian§! Ethics."
- anomaly.169.name:0 "接受君权神授"
- anomaly.169.desc:0 "[Root.GetSpeciesName]人民渴求一位领袖领导他们接受亦新亦旧的信仰。"
- anomaly.169.a:0 "我们不该改变现状。"
- #anomaly.169.a.tooltip: "n/a"
- anomaly.169.b:0 "我们的人民需要引领。"
- anomaly.169.b.tooltip:0 "§Y改革政府§!成为§Y君权神授§!。"
+#  anomaly.169.name:0 "Accepting the Divine Mandate"
+#  anomaly.169.desc:0 "The [Root.GetSpeciesName] people cry out for someone to lead them in their new, old faith."
+#  anomaly.169.a:0 "We should not change how we do things."
+#  anomaly.169.b:0 "Our people deserve guidance."
+#  anomaly.169.b.tooltip:0 "Instantly §YREFORM GOVERNMENT§! to §YDIVINE MANDATE§!."
+
  anomaly.170.name:0 "流亡者"
  anomaly.170.desc:0 "在[From.GetName]表面探测到一个小型科研基地发出的信号，但[Root.Owner.GetName]既没有这个科研基地的成立纪录也没有对其授权。里面只有一位[Root.Owner.GetSpeciesAdj]科学家，他是一个颇有才华且成果丰硕的研究者，如果他在[From.GetName]的研究可信的话。但他的身份存在一个问题。我们无法在国家官方记录中找到他，他也拒绝提供身份，只说他是一个“流亡者”。\n\n他表达了回到[Root.Owner.Capital.GetName]直接为[Root.Owner.GetName]服务的愿望，条件是[Root.GetName]立刻离开[From.GetName]，并且任何[Root.Owner.GetSpeciesAdj]飞船都不能返回那里。"
  anomaly.170.a:0 "想都别想。给我把那个科研基地翻个底朝天。"
@@ -824,26 +825,26 @@
  story.4.desc.gesta:0 "我们证实了处于意识觉醒边缘的外星生物的存在。"
 
  story.5.name:0 "接触报告：残骸"
- story.5.desc:1 "[Root.GetName]上新闻满天飞，内容都是研究外星残骸的消息。\n\n这些痕迹被视为外星人曾经存在并活跃过的铁证——我们现在虽然是孤独的，但至少我们不是第一个踏上星空的。"
- story.5.desc.phobe:1 "[Root.Capital.GetName]的政府相当重视关于外星残骸的报告。\n\n这些痕迹被广泛视为某种生命曾经活跃于宇宙的舞台上的铁证，不过一些[Root.GetSpeciesAdj]专家认为这些痕迹其实只是地质构造现象或者大自然的自然变化。"
+ story.5.desc:1 "[Root.GetName]被外星遗迹的消息占领了。\n\n这些痕迹被视为外星人曾经存在并活跃过的铁证——我们现在虽然是孤独的，但至少我们不是第一个踏上星空的。"
+ story.5.desc.phobe:1 "[Root.Capital.GetName]相当重视外星遗迹的报告。\n\n这些痕迹被广泛视为某种生命曾经活跃于宇宙的舞台上的铁证，不过一些[Root.GetSpeciesAdj]专家认为这些痕迹其实只是地质构造现象或者大自然的自然变化。"
  story.5.desc.phile:1 "[Root.GetSpeciesAdj]外星研究学家们很激动地发表了他们对于最近发现的看法。\n\n这阵科学界的风暴对其他领域造成了短暂的负面影响。"
  story.5.desc.followup:1 "“智慧生物找不到伴”一则热门的新闻文章出现在[Root.Capital.GetName]上。[Root.GetName]的人民认为大家的注意力都集中在一些低等外星生物上，而真正有智慧的外星种族却依然“戴着它们神秘的面纱”。\n\n关于在[From.From.GetName]上发现的生物痕迹的报告似乎只是为整件事情增添了一些讽刺意味。"
  story.5.desc.gesta:0 "我们证实了外星智慧生物的存在痕迹的第一手资料。"
 
- story.6.name:0 "接触报告：原始人"
- story.6.desc:1 "[Root.GetName]上新闻满天飞，内容都是我舰队在[Root.GetName]发现原始外星文明的消息。\n\n虽然没有太空航行的能力，但是[primitive_planet.GetName]的外星人拥有很高的智慧而且他们的社会状况显示他们拥有先进的文化。"
- story.6.desc.phobe:1 "拥有初等智慧的原始生物——“[primitive_planet.GetName]”——的新闻在[Root.Capital.GetName]反响不甚如意。\n\n民众感觉很不安，一小部分人主张[Root.GetSpeciesAdj]不计代价征服这个外星人星球，而大部分[Root.GetSpeciesNamePlural]则偏于避开跟这些外星生物接触甚至完全无视他们。"
- story.6.desc.phile:0 "我们的舰队观察到原始文明的报告得到了[Root.GetName]的精英分子的狂欢庆祝。\n\n终于能够证明[Root.GetSpeciesAdj]踏入黑暗的宇宙并不是白费功夫的努力。他们也许暂时比不上我们，甚至我们这一辈的人都不会跟他们直接交流，但至少他们的存在是希望的明灯，代表着这个空荡荡静悄悄的宇宙其实还有其他的生命存在。"
+ story.6.name:1 "接触报告：[GetPreFTLUpperPlural]（物种）"
+ story.6.desc:2 "我们的舰队发现[GetPreFTLLower]外星文明的消息传遍了[Root.GetName]。\n\n虽然仍未掌握太空旅行的能力，但[primitive_planet.GetName]上的外星人已具有足够的智慧，而且他们的社会也具备了先进文明的所有特征。"
+ story.6.desc.phobe:2 "[GetPreFTLLower]生物，也就是所谓的[primitive_planet.GetName]文明，它们展现出基础智慧的新闻在[Root.Capital.GetName]上并不受人待见。\n\n一种深刻的不安情绪弥漫在公共辩论中，少数人大声疾呼，主张要不择手段建立[Root.GetSpeciesAdj]对外星星球的霸权，而大多数[Root.GetSpeciesNamePlural]似乎不愿意提起外星生物或完全忘记它们。"
+ story.6.desc.phile:1 "我们舰队观测到[GetPreFTLLower]文明的报告得到了[Root.GetName]上的学术精英们在维持自己体面的范围内最大限度的狂欢庆贺。\n\n于此，我们终于可以证明[Root.GetSpeciesAdj]走向漆黑星空的试探性一步并不会一无所获。他们也许暂时比不上我们，甚至我们这一辈的人都不会跟他们直接交流，但光是他们存在本身都是一盏能够照亮这个空荡荡静悄悄的宇宙的希望明灯。"
  story.6.desc.followup5:1 "[Root.Capital.GetName]的科学界对这份关于外星智慧生命的报告感到非常兴奋。\n\n虽然他们没有太空航行的能力，但是[primitive_planet.GetName]的外星人拥有很高的智慧而且他们的社会状况显示他们拥有先进的文化。外星研究学家表示这是个绝佳的机会去研究一个全新的社会，而不是像之前那样一直扑在远古废墟上。"
- story.6.desc.followup4:0 "发现原始文化的报告受到了[Root.GetSpeciesAdj]研究者们的欢迎，而这一发现紧跟在发现准感知物种之后。\n\n[Root.GetName]目前是我们知道的首个踏上星空的文明，但是发现有其他文明仅仅落后我们数个千年甚至只是数个世纪真的让人非常激动。"
- story.6.desc.followup123:1 "相比往常只发现非智能生命，这次我们的舰队发现了原始外星种族[primitive_planet.GetName]的报告无疑重新燃起了[Root.Capital.GetName]对外星研究学的兴趣，在此之前这个领域向来被视为不过是纸上谈兵。"
- story.6.desc.gesta:0 "我们证实了一个外星原始文明的存在。 受限于他们各自为政，他们还没发展出超光速能力。"
+ story.6.desc.followup4:1 "发现[GetPreFTLLower]文化的报告受到了[Root.GetSpeciesAdj]研究者们的欢迎，而这一发现紧跟在发现未开化物种之后。\n\n[Root.GetName]目前是我们知道的首个踏上星空的文明，但是发现有其他文明仅仅落后我们数个纪元甚至只是数个世纪真的让人非常激动。"
+ story.6.desc.followup123:2 "相比往常发现的非智慧生命，这次我们的舰队发现了[GetPreFTLLower]外星种群[primitive_planet.GetName]的报告无疑重新燃起了[Root.Capital.GetName]对外星科学的兴趣，在此之前这个领域向来被视为不过是纸上谈兵。"
+ story.6.desc.gesta:1 "我们确认了[GetPreFTLLower]外星文明的存在。他们仍不具备超光速旅行能力，被自身分裂的个性所阻碍。"
 
  story.7.name:0 "接触报告：神秘的宇航员"
  story.7.desc:0 "[Root.GetName]没过多久便遭遇了外星智慧生命。\n\n舰队发回[Root.GetSpeciesAdj]首都的报告很简单随意地描述了这些生物，还顺口提到了错失跟它们通信的机会。"
  story.7.desc.phobe:0 "[Root.Capital.GetName]在收到发现未知船只的消息后彻底沸腾了。\n\n目前尚不知道对方的目的，所以还是做好应对最坏情况的准备。"
  story.7.desc.phile:0 "[Root.GetName]终于遭遇了星空中的其他流浪者。\n\n虽然不知道对方的目的以及是否抱有敌意，但是[Root.Capital.GetName]在收到舰队的报告后简直可用四海欢腾来形容。"
- story.7.desc.followup6:0 "我们遭遇了可以进行太空航行的智慧生命。\n\n跟之前[Root.GetName]观察到的原始生命不同，我们这次未能观察到驾驶着这些船只的生物的体表。"
+ story.7.desc.followup6:1 "我们遭遇了可以进行太空航行的智慧生命。\n\n跟之前[Root.GetName]观察到的[GetPreFTLLowerPlural]物种不同，我们甚至还未能看清楚这些驾驶着飞船穿越深空的生物，也不清楚他们的目的。"
  story.7.desc.followup12345:1 "外星人飞船的消息传到 [Root.Capital.GetName] 后，可以说是为 [Root.GetName] 踏往群星帝国的初章画上了一个圆满的句号。"
  story.7.desc.mach.followup12345:0 "我们观察到了具有先进航天能力的外星飞船经过。然而并未与之建立通信，我们可以确定的是我们[Root.GetSpeciesNamePlural]并非星系中唯一有星际探索能力的帝国。"
  story.7.desc.gesta:0 "我们遭遇了先进的外星生命。接触看来无法避免。"
@@ -1053,6 +1054,7 @@
  story.501.desc.gesta:0 "我们称之为"§Y天凯§!"的太空生命形式是非常温和的生物。太空生命能够进入低次元的亚空间，因此，在各星系间移动对他们而言轻而易举。\n\n他们大多栖息在气态巨行星的上层大气之中。虽然有些难以置信，但空气就是他们唯一的食物来源，但是否还有其他的养分摄取，这一点还有待观察。\n\n除非被激怒，它们不会主动攻击。碰上的时候，可以放心大胆地无视他们。"
  story.501.a.spiri:0 "令人钦佩。"
  story.501.a.mater:0 "捕猎他们也没什么好处。"
+ story.501.a.exploratobot:0 "已登记温顺太空生命！"
 
  galactic_features.361.name:0 "恶臭的后代"
  galactic_features.361.desc:0 "在[From.From.From.GetStarName]星系的舰队被全灭后，那里的虚空之云从碎屑中聚集了足够的物质开始进行某种宏观上的有丝分裂，也就是无性繁殖。\n\n现在追杀[From.From.From.GetStarName]的虚空之云又多了一个。"
@@ -1068,49 +1070,70 @@
  # Uplifting Events
  ####################################
 
- uplift.6000.name:0 "蛇行"
- uplift.6000.desc:0 "[Root.GetName]报告称在[From.GetName]占据食物链顶端的是一种相当巨大的毒蛇，拥有很强大的智能。\n\n科学官[Root.GetLeaderName]认为它们现在所处的阶段和我们在进化为智慧物种之前所处的[Root.Owner.GetSpeciesName]进化末期有诸多相似之处。\n\n或许我们可以用科技的力量提升这种低级生物。"
+# Pre-Sapients Found
+ uplift.6000.name.1:0 "发现了可提升的物种"
+ uplift.6000.name.2:0 "发现未开智物种"
+
+ uplift.6000.continental.desc:0 "迷人的生物在[From.GetName]的平原和海岸上来回游走。[Root.GetName]报告说，[presapient_species.GetSpeciesClass]生命体正在使用工具，虽然现在使用范围很有限，但最终可能具有实现称为智慧种的潜力。\n\n[Owner.GetScientistCapital][Root.GetLeaderName]强调，在这种状态下发现外星生命是一个罕见的机会。如果我们选择提升它们，它们可能会产生很大的用处。"
+
+ uplift.6000.ocean.desc:0 "根据[Root.GetName]的说法，一个[From.GetName]的原生[presapient_species.GetSpeciesClass]物种不仅已经初步掌握了这个星球的广阔海洋，而且还占领了点缀其表面的一小块土地。\n\n[Owner.GetScientistCapital][Root.GetLeaderName]提议，我们应该密切监视他们的发展，并尽可能帮助他们朝着实现完全智性的道路前进。"
+
+ uplift.6000.tropical.desc:0 "[From.GetName]茂密的热带树林中隐藏着[Root.GetName]的[Owner.GetScientistCapital][Root.GetLeaderName]所说的“元文明”。\n\n组成这个新生社会的[presapient_species.GetSpeciesClass]生物仍然远远落后于进化曲线，但他们已经将社会基础建立在了初步形成的智性语言和抽象思维之上。\n\n[Owner.GetScientistCapital][Root.GetLeaderName]建议，这些特殊的生物可以成为诱导快速进化相关科技的合适的实验平台。"
+
+ uplift.6000.arid.desc:0 "[From.GetName]上的一个[presapient_species.GetSpeciesClass]物种表现出不同寻常的智慧。在整个星球干燥、多岩的大环境下，这些生物已经进化到可以主宰他们的环境。由[Root.GetName]的[Owner.GetScientistCapital][Root.GetLeaderName]进行的测试表明，通过采用正确的技术，它们进化的速度能够大大加快。"
+
+ uplift.6000.desert.desc:0 "在[From.GetName]的沙漠中穿行，这种[presapient_species.GetSpeciesClass]生命的有趣形式展现出了能进化出更高级理性的相关特质。\n\n尽管物种的发展进程似乎进入平台期已近千年，我们或许能够为进化提供一次科技上的刺激。"
+
+ uplift.6000.savannah.desc:0 "在[From.GetName]的平原上，人们观察到长长的、优雅的生物在进行初级形式的交流，彼此合作寻找食物，同时躲避行星上的捕食者。[Root.GetName]的[Owner.GetScientistCapital][Root.GetLeaderName]认为这些[presapient_species.GetSpeciesClass]生物可能适用于旨在提高进化速度的相关技术。"
+
+ uplift.6000.tundra.desc:0 "众所周知，严苛的环境能够催生适应性强的进化，[From.GetName]的严寒环境也不是一个例外。\n\n[Owner.GetScientistCapital][Root.GetLeaderName]对于[presapient_species.GetSpeciesClass]生物中的其中一种产生了特别的兴趣，这种生物能够在行星的结冰表面上滑行。只要在正确的方向上轻轻一推，它们甚至就可以实现智性。"
+
+ uplift.6000.arctic.desc:0 "虽然[From.GetName]的温度常年处于零度以下，但当地并非不宜居，这个行星也不贫瘠。\n\n几个[presapient_species.GetSpeciesClass]物种已经进化到可以承受这种环境的地步，而且[Owner.GetScientistCapital][Root.GetLeaderName]相信，只要引入特定的外部刺激，这些生物中的一个或多个就有能力实现智性……"
+
+ uplift.6000.alpine.desc:0 "事实证明，[From.GetName]上绵延不绝的山脉为这颗行星的独特生命形式提供了肥沃的环境。特别是一个[presapient_species.GetSpeciesClass]物种已经适应了极端的海拔高度，甚至表现出一种基本的（好似咕噜声）语言交流形式。在正确的刺激下，这些生物或许最终能够实现完全的智性。"
+
+ uplift.6000.nuked.desc:0 "虽然这颗行星上充斥着活物勿近的辐射，但至少有一种先进的生命形式在[From.GetName]上蓬勃发展。[Owner.GetScientistCapital][Root.GetLeaderName]报告说，这种[presapient_species.GetSpeciesClass]生物表现出令人印象深刻的集体决策能力，外部刺激可能会促使它们达到更大的进化高度。"
+
+ uplift.6000.gaia.desc:0 "[From.GetName]的环境对于生命的进化来说近乎完美；其丰富的自然资源为种类繁多的动植物提供了一个肥沃的家园。在这个天堂里，[Owner.GetScientistCapital][Root.GetLeaderName]发现了一个由智能[presapient_species.GetSpeciesClass]组成的原始社会，它可以成为快速进化的绝佳候选者。"
+
+ uplift.6000.relic.desc:0 "在[From.GetName]上的废墟塔楼和尘土飞扬的街道之间，有一种令人感兴趣的未开智生命正在四处游荡。[Owner.GetScientistCapital][Root.GetLeaderName]推测，这些小型的、聪明的[presapient_species.GetSpeciesClass]曾经被作为宠物饲养。在它们的主人陨落之后，这些动物迅速进化，现在已经准备好实现完全的智性，如果正确的外部因素能加以利用的话。"
+
+ uplift.6000.fallback.desc:0 "根据[Root.GetName]，一个[From.GetName]的原生[presapient_species.GetSpeciesClass]物种尚未实现对行星环境的初步掌控。\n\n[Owner.GetScientistCapital][Root.GetLeaderName]建议对它们的发展进行密切监视，如果可能的话，将它们提升到拥有完全的智性。"
+
  uplift.6000.a:0 "是的，我们有那种知识。"
  uplift.6000.b:0 "以后再说吧。"
- uplift.6001.name:0 "蛇人被开化"
- uplift.6001.desc:0 "成功！\n\n[This.GetName]当地的[From.GetName]已经被开化为[This.Owner.GetName]的市民。"
- uplift.6020.name:0 "发现了可开化物种"
- uplift.6020.desc:0 "[From.GetName]上的原住民展现出了不寻常的智力，[Root.GetName]的科学官[Root.GetLeaderName]认为我们可以利用正确的技术来加速这种生物的进化。"
- uplift.6021.name:0 "开化成功"
- uplift.6021.desc:0 "成功！\n\n[This.GetName]当地的[From.GetName]已经被开化为[This.Owner.GetName]的市民。"
- uplift.6011.a:0 "[This.Owner.GetName]非常欢迎它们。"
- uplift.6010.name:0 "升至水上"
- uplift.6010.desc:0 "围绕着行星旋转的[Root.GetName]的监控表明，[From.GetName]的一种本地生物已经可以同时在该行星上的一小块陆地和广阔的海洋中生存了。\n\n科学官[Root.GetLeaderName]建议我们应该密切关注这种生物的发展，并适时伸出援手。"
- uplift.6011.name:0 "开化成功"
- uplift.6011.desc:0 "我们帮助[From.GetName]向更合适的角度进化的努力获得了巨大成功。对该物种的教育项目已经准备就绪，无论是在开化后出生的个体还是年老的个体均能接受心理遗传调节。"
- uplift.6030.name:0 "地球大陆"
- uplift.6030.desc:0 "[From.GetName]的平原和海岸上有许多惊人的生物，[Root.GetName]报告称那里的生物已经开始学会使用非常原始的工具，它们可以最终进化为高等智慧生物。 科学官[Root.GetLeaderName]强调这种进化程度的外星生物是非常罕见的，我们应该密切关注它们——也许有必要通过开化来让它们能为我们所用。"
- uplift.6031.name:0 "开化成功"
- uplift.6031.desc:0 "[Root.GetName]的优势物种[From.GetName]已经被开化了，现在我们只需要再微调一下基因就能解锁它们高度认知能力和灵巧度的发展潜力，小型机械内植体可以弥补老一代物种和新一代物种之间的进化差异。"
- uplift.6040.name:0 "欢迎来到丛林"
- uplift.6040.desc:0 "[Root.GetName]的科学官[Root.GetLeaderName]口中提到的“原始文明”隐藏在[From.GetName]浓密的热带丛林里。\n\n构成这个原始文明的物种还远远没有进化到可以被称为“原始”的级别，但该物种已经具备了初步的智能语言和抽象思维，这两者共同支撑起了他们的社会秩序。 \n\n科学官[Root.GetLeaderName]认为这些生物是快速进化技术的很好的实验对象。"
- uplift.6041.name:0 "开化成功"
- uplift.6041.desc:0 "[From.GetName]已经被成功开化完毕，成为了[Root.Owner.GetName]的合格公民，并住进了我们在热带星球[Root.GetName]上建立的殖民地。"
- uplift.6050.name:0 "冰冻废土"
- uplift.6050.desc:0 "某些物种可以在艰苦环境中茁壮成长，例如[From.GetName]寒冷的生物圈。\n\n科学官[Root.GetLeaderName]对某个生活在这颗行星表面的生物非常感兴趣，他认为只要在正确的方向上稍微帮它们一下，这种生物就可以进化为有感知能力的生物。"
- uplift.6051.name:0 "开化成功"
- uplift.6051.desc:0 "[From.GetName]已经具备了感知能力和相当程度的智慧。\n\n如今他们和他们的星球[Root.GetName]已经成为了[Root.Owner.GetName]的财产。"
- uplift.6060.name:0 "冰雪一族"
- uplift.6060.desc:0 "[From.GetName]极低的温度是不适合孕育智能生物的，严格来说不适合孕育任何生物。\n\n但还是有一些物种适应了这个环境，科学官[Root.GetLeaderName]对这些物种相当感兴趣，他想看看在适当的外部因素的介入下，这些生物能进化到什么地步。"
- uplift.6061.name:0 "开化成功"
- uplift.6061.desc:0 "在[Root.GetName]冰雪平原上生活的[From.GetName]已经在[Root.Owner.GetSpeciesName]的帮助下获得了感知能力。\n\n现在他们已经加入了我们建于他们星球[Root.GetName]上的殖民地，并成为了[Root.Owner.GetName]社会的一员。"
- uplift.6070.name:0 "沙上前行"
- uplift.6070.desc:0 "一种生活在[From.GetName]荒漠中生活的生物被认为具有相当的进化潜力。\n\n尽管这种生物在千年前就已经进入了进化的瓶颈期，但是我们可以用技术手段推动该生物的进化。"
- uplift.6071.name:0 "开化成功"
- uplift.6071.desc:0 "[From.GetName]现在就是[Root.Owner.GetName]科技实力的证明。"
- uplift.6080.name:0 "发现了亚智慧物种"
- uplift.6080.desc:0 "根据环[Root.GetName]行星轨道的报告，[From.GetName]的一种本地生物暂时统治了整个星球。\n\n科学官[Root.GetLeaderName]建议我们应该近距离的监控这种生物的发展，有可能的话帮助它们进化。"
- uplift.6081.name:0 "开化成功"
- uplift.6081.desc:0 "[From.GetName]现在就是[Root.Owner.GetName]科技实力的证明。"
- uplift.6090.name:0 "匍匐于行星表面"
- uplift.6090.desc:0 "尽管[From.GetName]表面有很强的辐射，但在该行星上至少有一种高级生物在生机勃勃的繁衍生息，科学官[Root.GetLeaderName]报告称这种生物表现出了相当优秀的决策能力，外部的刺激可以让它们达到更高的进化高度。"
- uplift.6091.name:0 "开化成功"
- uplift.6091.desc:0 "[From.GetName]已经不再是下等生物了，他们现在是[Root.Owner.GetName]的一员。"
+
+# Pre-Sapients Uplifted
+ uplift.6010.name:1 "破水而出"
+
+ uplift.6010.continental.desc:0 "[Root.GetName]上的主导物种，[From.GetName]，已经被提升了。只需要轻微的基因改造，就可以释放出他们内在的潜力，使他们的认知能力和操纵的灵活性得到极大的提高，而前几代的成员将被安装上小型的义体植入物。"
+
+ uplift.6010.ocean.desc:0 "我们让[From.GetName]沿着有利的轨迹加速进化的工作取得了巨大的成功。教育计划已经为最年轻的样本部署妥当——一些个人，现在——而他们的长辈则可以接受心理基因调节。"
+
+ uplift.6010.tropical.desc:0 "[From.GetName]已经被成功提升完毕，成为了合格的[Root.Owner.GetName]人，并住进了我们在热带星球[Root.GetName]上建立的殖民地。"
+
+ uplift.6010.arid.desc:0 "成功！\n\n[This.GetName]当地的[From.GetName]已被提升为[This.Owner.GetName]人口。"
+
+ uplift.6010.desert.desc:0 "[From.GetName]现在就是[Root.Owner.GetName]科技实力的证明。"
+
+ uplift.6010.savannah.desc:0 "我们提升[From.GetName]的工作成效显著：只需对它们的基因密码进行相对少许的修饰，我们就成功地引导它们进化成为了有认知能力的同僚。"
+
+ uplift.6010.tundra.desc:0 "[From.GetName]现在是智慧生命体，而且相当聪明。\n\n它们现在处于[Root.Owner.GetName]的统治之下。"
+
+ uplift.6010.arctic.desc:0 "在[Root.GetName]冰雪平原上生活的[From.GetName]已经在[Root.Owner.GetSpeciesName]的帮助下获得了感知能力。\n\n现在他们已经加入了我们建于他们星球[Root.GetName]上的殖民地，并成为了[Root.Owner.GetName]社会的一员。"
+
+ uplift.6010.alpine.desc:0 "我们对[From.GetName]进行了基因改造，成功让这个物种进化到了完全的智性。现在，当它们自崎岖的山峦中遥望星空时，它们对自我有了更加真实的感知。"
+
+ uplift.6010.nuked.desc:0 "自卑微的起始，[From.GetName]已经进化到能够加入[Root.Owner.GetName]。"
+
+ uplift.6010.gaia.desc:0 "多亏了我们的努力，[From.GetName]已经被成功提升。能让它们彻底理解自己居住在怎样的天堂上，这是何等的福气。"
+
+ uplift.6010.relic.desc:0 "环顾它们的遗迹星球，[Root.GetName]的主导物种从常年的沉睡中苏醒过来。我们将它们提升至完全智性的工作成为了令人瞩目的成功。"
+
+ uplift.6010.fallback.desc:0 "[From.GetName]经提升实现了完全的智性，现在正作为[Root.Owner.GetName]科学与技术能力的活的证明。"
+
+ uplift.6010.a:1 "[This.Owner.GetName]非常欢迎它们。"
+ uplift.6010.tt:0 "§Y[This.Owner.GetName]§!获得§Y50$r_influence$§!。"
 
  ####################################
  # Followup Events
@@ -1179,7 +1202,7 @@
  uplift.7520.b.tooltip:0 "那群丑陋的家伙再也不会打扰殖民地居民了。"
  uplift.7520.c:0 "试图找出他们去了哪里。"
  uplift.7525.name:0 "永失永忘"
- uplift.7525.desc:0 "一小群外星生物学者和一队武装士兵离开殖民地去追踪本地生物。\n\n他们找到的只是一些古老的种舰残骸，属于某个早已湮灭的小型原始文明。\n\n[Root.GetName]当地的优势生物似乎是某种古生物的结合或者基因修改工程的产物；根据种舰周围的结构，他们曾经是一个部落，拥有高度智能并已学会使用初级的文字。\n\n我们不知道是什么原因导致了这个物种的退化，但他们现在的行为更为合理。在某些层面，他们本能的认为我们[Root.Owner.GetSpeciesNamePlural]就是一开始对他们进行开化的物种。或许我们有序的社会激发了他们被灌输的秩序理念，但这却终究改变不了他们的卑劣本性。\n\n或许我们最终可以将他们进化到与我们相同的水准，但到目前为止，我们从远古太空物种的文化中获得了如何控制有机生物的珍贵知识。"
+ uplift.7525.desc:1 "一群异种学家和一队军事人员一起离开了殖民地，去追寻当地生命的行踪。\n\n他们发现的是某种古老的播种船的残骸，这显然是某个小型[Owner.GetPreFTLLower]文明的核心，它们早就腐朽成虚无了。\n\n[Root.GetName]的优势本地物种似乎是某种古老的播种或基因编辑程序的产物；从播种船周围的结构来看，他们显然曾经存在部落，并拥有更高的智力，甚至还有一种基本的书面语言。\n\n我们无从猜测是什么导致了它们发生了物种层面上的退化，但它们的行为本身更有意义了。他们近乎本能地认为，我们[Root.Owner.GetSpeciesNamePlural]与他们最初来自星间的提升者相似。也许我们井然有序的社会唤醒了某种被它们更卑鄙的本性所淹没的形成秩序的冲动。\n\n也许我们最终可以通过将他们提升到我们的水平来缓解他们的进化焦虑，但就目前而言，我们已经对古代太空文化对有机体的操纵有了宝贵的见解。"
 
  ####################################
  # Event Chain-related

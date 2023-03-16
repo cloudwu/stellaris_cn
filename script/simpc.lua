@@ -1,23 +1,31 @@
 local path1 = "../cn/localisation/english/"
 local path2 = "../cn/localisation/simp_chinese/"
-local list = require "filelist"
+
+local filelist = require "filelist"
+
+local list = filelist.filelist()
 
 local function convert(filename)
-	local f = assert(io.open(path2 .. filename:gsub("_english", "_simp_chinese"), "wb"))
+	local f = io.open(path1 .. filename, "rb")
+	if not f then
+		return
+	end
+	local wf = assert(io.open(path2 .. filename:gsub("_english", "_simp_chinese"), "wb"))
 	local replace
-	for line in io.lines(path1 .. filename) do
+	for line in f:lines() do
 		if not replace then
 			local sc_line = line:gsub("l_english:", "l_simp_chinese:")
-			f:write(sc_line, "\n")
+			wf:write(sc_line, "\n")
 			replace = true
 		else
-			f:write(line, "\n")
+			wf:write(line, "\n")
 		end
 	end
 
 	f:close()
+	wf:close()
 end
 
-for _,file in ipairs(list.en) do
+for _,file in ipairs(list) do
 	convert(file)
 end

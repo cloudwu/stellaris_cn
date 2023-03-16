@@ -1,13 +1,19 @@
 local filepath = "../cn/localisation/english"
 local scriptpath = "."
 
-local filelist = assert(loadfile(scriptpath .. "/filelist.lua"))()
+local filelist = require "filelist"
+
+local list = filelist.filelist()
 
 local check_text = assert(loadfile(scriptpath .. "/check.lua"))()
 
 local function check(filename)
 	filename = string.format("%s/%s", filepath, filename)
-	local f = assert(io.open(filename), "Can't open " .. filename)
+	local f = io.open(filename, "rb")
+	if not f then
+		print("Can't open " .. filename)
+		return
+	end
 	local text = f:read "a"
 	f:close()
 	local err = check_text(text)
@@ -18,6 +24,6 @@ local function check(filename)
 	end
 end
 
-for _, filename in ipairs(filelist.en) do
+for _, filename in ipairs(list) do
 	check(filename)
 end

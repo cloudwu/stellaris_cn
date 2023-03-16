@@ -17,7 +17,7 @@
  requires_technology_orbital_ring_tier_1:0 "$TRIGGER_FAIL$需要 £engineering£ §Y$tech_orbital_ring_tier_1$§!科技。"
  CAN_CREATE_ORBITAL_STATION_ALREADY_EXISTS_ORBITAL_DEFENCE:1 "一个轨道防御空间站已经在环绕这个$CLASS$的轨道上了"
  CANNOT_BOMBARD_ORBITAL_DEFENCE_PROTECTED:0 "不能轰炸一个由轨道防御空间站保护的星球。"
- requires_not_hostile_or_primitive:0 "$TRIGGER_FAIL$不能在敌对或土著行星周围建造。"
+ requires_not_hostile_or_primitive:1 "$TRIGGER_FAIL$不能在敌对或前超光速文明行星周围建造。"
 
  tech_quantum_catapult:0 "量子弹弓"
  tech_quantum_catapult_desc:1 "§Y量子弹弓§!利用中子星或脉冲星的能量来扭曲空间织构，将舰队传送至遥远的距离之外。"
@@ -46,7 +46,7 @@
  quantum_catapult_BYPASS_DESC:1 "这个星系存在一个§Y$quantum_catapult_1$§!"
  FLEETORDER_QUANTUM_CATAPULT_HEADER:0 "弹射舰队"
  FLEETORDER_QUANTUM_CATAPULT_DESC:0 "从一个建有§Y量子弹弓§!的星系发射舰队。"
- QUANTUM_CATAPULT_PENALTY:0 "§Y量子弹弓§!在远距离上精确度会降低，舰队会在指示的散布半径内出现在一个随机星系。"
+ QUANTUM_CATAPULT_PENALTY:1 "§Y量子弹弓§!在远距离上精确度会降低，舰队会在指示的散布半径内出现在一个随机星系。\n\n经此弹射的舰队将得到[GetQuanticAmbushBonus]§Y射速§!提升，持续£time£§Y120天§!。"
  QUANTUM_CATAPULT_MAP_TOOLTIP_LEFT_CLICK:0 "§G在地图上左键点击一个星系以将其选为目标。§!"
  QUANTUM_CATAPULT_MAP_TOOLTIP_RIGHT_CLICK:0 "§G在地图上任意位置点击右键以退出目标选择模式。§!"
  FLEET_ORDER_NO_QUANTUM_CATAPULT:0 "§R舰队只能从建有量子弹弓的星系被弹射§!"
@@ -66,6 +66,11 @@
  quantum_catapult_restored_slingshot_DESC:1 "$quantum_catapult_2_DESC$"
  quantum_catapult_improved_slingshot:0 "改进型$quantum_catapult_1$"
  quantum_catapult_improved_slingshot_DESC:1 "$quantum_catapult_2_DESC$"
+
+ quantic_ambush:0 "量子伏击"
+ quantic_ambush_specialists:0 "量子伏击专家"
+ quantic_ambush_bonus_slingshot:0 "§G50%§!"
+ quantic_ambush_bonus:0 "§G33%§!"
 
  hyper_relay:0 "超空间中继器"
  hyper_relay_plural:0 "超空间中继器"
@@ -126,7 +131,7 @@
  sm_orbital_ring_gun_battery:0 "行星防御炮"
  sm_orbital_ring_gun_battery_desc:1 "向星环基地添加两个中等尺寸武器槽位。\n"
  sm_orbital_ring_missile_battery:0 "行星防御炮组"
- sm_orbital_ring_missile_battery_desc:1 "向星环基地添加两个制导武器槽位。\n"
+ sm_orbital_ring_missile_battery_desc:2 "向星环基地添加两个制导武器槽位。\n"
  sm_orbital_ring_hangar_bay:0 "行星防御机库"
  sm_orbital_ring_hangar_bay_desc:1 "向星环基地添加一个舰载机机库。\n"
 # sm_orbital_ring_solar_panel_network: "$sm_solar_panel_network$"
@@ -134,7 +139,7 @@
  FLEETORDER_ENTERING_BYPASS_EXT:1 "通过$BYPASS_TYPE|H$传送到$SYSTEM|H$\n进度：$CUR|Y0$/$COST|Y0$（$DAYS|Y$天）"
  mod_relay_bypass_windup_empire_mult:1 "由于$hyper_relay_plural$减少传送延迟"
  mod_relay_bypass_windup_ship_mult:1 "$mod_relay_bypass_windup_empire_mult$"
- MOD_COUNTRY_MIA_TIME_MULT:1 "由于我们拥有$hyper_relay_plural$，减少行动中失踪所需时间。"
+ MOD_COUNTRY_MIA_TIME_MULT:2 "减少行动中失踪所需时间。"
  OPEN_ORBITAL_RING:0 "打开星环基地"
  OPEN_PLANET_VIEW:0 "打开行星视图"
 
@@ -245,3 +250,4 @@
  mod_megastructures_hyper_relay_volatile_motes_upkeep_add:1 "£volatile_motes£$volatile_motes$$hyper_relay_plural$的维护费"
  mod_megastructures_hyper_relay_exotic_gases_upkeep_add:0 "$hyper_relay_plural$的 £exotic_gases£ $exotic_gases$维护费"
  mod_megastructures_hyper_relay_rare_crystals_upkeep_add:0 "$hyper_relay_plural$的 £rare_crystals£ $rare_crystals$维护费"
+ mod_megastructures_hyper_relay_unity_produces_add:0 "来自§Y$hyper_relay_plural$§!的每月£unity£凝聚力"

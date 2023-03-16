@@ -123,7 +123,9 @@
  MOD_FIRST_CONTACT_SPEED_MULT:0 "第一次接触发现速度"
  MOD_FIRST_CONTACT_CLUES_ADD:0 "第一次接触技能"
  MOD_FIRST_CONTACT_DEFENSE_ADD:0 "第一次接触目标难度"
+ MOD_INTEL_GAIN_SPEED:0 "获取其他帝国情报的速度"
  MOD_COUNTER_INTEL_GAIN_SPEED:1 "其他帝国对你的情报的获取速度"
+ MOD_INTEL_RECONNAISSANCE_LEVEL_ADD:0 "主动侦察造成的情报等级"
  MOD_COUNTRY_SCAVENGE_DEBRIS_MULT:0 "打捞残骸获得的资源"
  MOD_ADD_BASE_COUNTRY_INTEL:0 "基础情报等级"
 
@@ -318,6 +320,8 @@
  MOD_SHIP_NAVAL_CAP_USAGE_MULT:0 "$MOD_SHIP_NAVAL_CAP_USAGE_ADD$"
  MOD_SHIP_REPAIR_HULL_MULT:0 "停泊舰船船体维修速度"
  MOD_SHIP_REPAIR_ARMOR_MULT:0 "停泊舰船装甲维修速度"
+ MOD_SHIP_CLOAKING_STRENGTH_ADD:0 "隐形强度"
+ MOD_SHIP_CLOAKING_DETECTION_ADD:0 "探测强度"
 
  MOD_OWNED_SHIP_SPEED_MULT:0 "$MOD_SHIP_SPEED_MULT$"
  MOD_OWNED_SHIP_EVASION_MULT:0 "$MOD_SHIP_EVASION_MULT$"
@@ -773,6 +777,8 @@
  mod_weapon_swarm_weapon_fire_rate_mult:0 "虫族虫群武器攻击速度"
  mod_weapon_type_space_fauna_weapon_damage_mult:0 "太空兽群武器伤害"
  mod_weapon_type_space_fauna_weapon_fire_rate_mult:0 "太空兽群武器攻击速度"
+ mod_weapon_archaeotech_weapon_damage_mult:0 "远古科技武器伤害"
+ mod_weapon_archaeotech_weapon_fire_rate_mult:0 "远古科技武器攻击速度"
 
  mod_shroud_delve_cooldown:0 "潜入天幕冷却"
 
@@ -879,6 +885,14 @@
 
  assist_research:0 "研究助理"
  assist_research_desc:1 "行星的研究设施均由轨道上的一艘科研船进行协助。"
+ 
+ assist_cloaking_detection:0 "隐形探测支援"
+ assist_cloaking_detection_desc:0 "科研船在轨道上支援焚天神兵的隐形探测阵列"
+ 
+ active_reconnaissance_speed:0 "主动侦察"
+ active_reconnaissance_speed_desc:0 "由于隐形的科研船正在进行主动侦察，获得情报的速度加快。"
+ active_reconnaissance_level:0 "主动侦察"
+ active_reconnaissance_level_desc:0 "由于隐形的科研船正在进行主动侦察，提升情报等级的速度加快。"
 
  previous_deal_broken:0 "贸易协定破裂"
  previous_deal_ended:0 "贸易协定完成"
@@ -927,6 +941,7 @@
  ship_max_damaged_effect:0 "伤害惩罚"
  station_self_repair:0 "自我修复"
  jump_drive_cooldown:1 "跃迁引擎冷却"
+ cloaking_cooldown:0 "隐形冷却"
 
  ####################################
  # Pop Modifiers
@@ -1205,7 +1220,7 @@
  opinion_broke_away:0 "分离的领土"
  opinion_broke_away_from:0 "原压迫者"
 
- opinion_primitive_violation:0 "吞并原始文明"
+ opinion_primitive_violation:1 "兼并前超光速文明"
 
  opinion_fallen_empire_gift:0 "受到馈赠"
  opinion_put_in_their_place:0 "让他们明白自己的地位"
@@ -1226,6 +1241,9 @@
  opinion_shade_giver:0 "心理阴影制造者"
  opinion_ceded_starbase:0 "边界受尊重"
  opinion_not_ceded_starbase:0 "边界被无视"
+
+ opinion_respect_independence:0 "独立被承认"
+ opinion_disrespect_independence:0 "独立遭否认"
 
  triggered_opinion_tr_versatility_universal_compatibility:0 "$tr_versatility_universal_compatibility$"
  triggered_opinion_tr_domination_star_lords:0 "$tr_domination_star_lords$"
@@ -1456,8 +1474,8 @@
  spaceport_level_5:0 ""
  spaceport_level_6:0 ""
 
- stone_age_civilization:0 "石器时代"
- stone_age_civilization_desc:2 "此星球还处于原始的石器文明。"
+ stone_age_civilization:1 "石器时代前超光速土著"
+ stone_age_civilization_desc:3 "这颗行星孕育了一个尚处于石器时代的文明原型。"
  dead_creatures:0 "死亡的宇宙生物"
  dead_creatures_desc:0 "这颗气体巨行星可谓是某个宇宙种族的坟场。轨道上漂浮着很多尸体，它们具有可观的研究价值。"
  starship_graveyard:0 "星舰之坟"
@@ -1628,3 +1646,8 @@
  MOD_CATAPULT_RANGE_MULT:0 "量子弹弓作用距离"
  mod_quantum_catapult_megastructure_bypass_windup_mult:0 "量子弹弓充能"
 
+ mod_country_society_research_cost_mult:0 "社会研究维护费"
+ mod_country_consumer_goods_cost_mult:0 "消费品维护费"
+
+ contact_with_MSI_01:0 "待办：添加本地化"
+ contact_with_MSI_02:0 "待办：添加本地化"

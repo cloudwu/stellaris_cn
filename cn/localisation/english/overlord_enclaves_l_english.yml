@@ -32,6 +32,7 @@
  enclave.2.desc:2 "我们正在讨论是否要协助[fleet.GetName]建立一个独立的§Y佣兵城邦§!。这项提议最先是由舰队司令提出，并且如果通过，将会导致我们失去对舰队的控制权。我们还将负责向他们提供一笔可观的§Y能量币§!和§Y合金§!，不过作为回报，他们会给我们一些公司的股份，这将带来定期红利和特权。\n\n他们保证，一旦我们需要，他们将随时准备为我们而战，当然也为我们的钱也可以。"
  enclave.2.tooltip.a:0 "舰队需要一位司令"
  enclave.2.tooltip.aa:0 "舰队已有一位司令"
+ enclave.2.tooltip.cloak:0 "这支舰队中的所有舰船必须不具有隐形的能力。"
  enclave.2.tooltip.b:1 "此处已有一个太空城邦"
  enclave.2.tooltip.bb:1 "星系中无其他太空城邦"
  enclave.2.tooltip.c:0 "星系必须处于我们的控制下"
@@ -42,7 +43,6 @@
  enclave.2.tooltip.ee:1 "星系内有小行星或卫星"
  enclave.2.tooltip.f:0 "我们必须是该舰队的所有者"
  enclave.2.a.tooltip:0 "一个佣兵城邦成立了。"
- enclave.23.desc:0 "感谢您的赞助！TODO_CD" #TODO_CD
  enclave.25:0 "佣兵城邦被摧毁"
  enclave.25.desc:1 "我方舰队已经成功瓦解了位于[merc_system.GetName]星系中佣兵们的抵抗，他们的基地也一并四分五裂。随着剩余的[FROM.GetName]相继崩溃，他们的残留舰队也随之解散。尽管部分还活着的舰长们沦落为海盗，但另一些则是宣称他们将计划继续提供一些小型合约服务，像是提供后勤支持或者是保卫空间站。但这样的小事无关紧要，重要的是，佣兵城邦已经不复存在，我们能够从它的残骸中打捞到相当数量的资源。"
  enclave.26.desc:1 "有消息传来，[mercenary_destroyer.GetName]日前在[merc_system.GetName]星系中摧毁了一个佣兵城邦。由于进攻者过于强大，[FROM.GetName]独木难支，他们的董事会，兵营以及船坞均被摧毁。不久后佣兵舰队也随之解散，因为各位舰长都只能自谋生路了，但其中一部分代表声称他们仍将尽力履行公司在后勤以及太空基地防卫的合约。"
@@ -217,7 +217,13 @@
  enclave.2040.a.tt:0 "我们将同这个太空城邦分享自己的§Y科技§!。只能每§Y10年§!进行一次。"
  merc_enclave_grants_ships:0 "§Y[mercenary_enclave_country]§!还会额外给予我们一支§G小型军用舰队§!"
 
-
+ enclave.2050.name:0 "不应拒绝的交易"
+ enclave.2050.desc:0 "我们收到了来自[mercenary_enclave_country.GetName]的一份紧急公报。他们说[khan_country.GetName]提供给了他们一个不容许拒绝的提议。他们唯一的出路是在两个月内找到另外一位雇主。如果没有人雇佣他们，他们将不得不为大汗效力，在别无选择的情况下对我们发动全面战争。"
+ enclave.2050.a:0 "联系[mercenary_enclave_country.GetName]。"
+ enclave.2050.a.tt:0 "我们有£time£§Y60天§!时间来决定我们是否雇佣他们。"
+ enclave.2050.b:0 "我们现在负担不起。或许以后吧。"
+ enclave.2050.b.tt:0 "我们有£time£§Y7天§!时间来决定我们是否雇佣他们。"
+ enclave.2050.c:0 "叛徒！贪婪将使他们倾覆。"
 
  # Salvager Enclaves
  enclave.305.name:0 "[salvager_enclave_country.GetName]"
@@ -354,7 +360,10 @@
  enclave.405.c.tt.2:1 "我们需要一个正在运转的间谍网络，才能要求§Y[shroudwalker_enclave_country.GetName]§!对我们的秘密行动筹备提供指导。"
  enclave.405.d:1 "告诉我们通过天幕穿行的方法。" # [LocEditor:ForFutureBatchExport]
  enclave.405.d.tt:1 "§Y[shroudwalker_enclave_country.GetName]§!对§Y[Root.GetName]§!需要至少§Y30§!评价才能询问§Y天幕信标§!事宜。" # [LocEditor:ForFutureBatchExport]
-
+ enclave.405.e:0 "你能教我们如何开采§Y卓尘§!吗？"
+ enclave.405.e.tt:0 "我们需要至少与§Y[shroudwalker_enclave_country.GetName]§!有§Y50§! £opinion£ 评价才能询问§Y卓尘§!开采事宜。"
+ enclave.405.f:0 "我们遇到了一个自称是§Y“面纱旅人”§!的人……"
+ 
  enclave.410.desc:1 "啊哈，一个重要的问题——和前人所问相比，深刻程度可谓不相上下。这么一个问题有不菲的价格，不过我们可以回答。\n\n然而，要知道：天幕允许我们感知尚未发生的事件，而这些知识将帮助指导你们的道路。但任何单一的事件都不足以撼动银河的运转。\n\n如果你有意达成这笔交易，那么相比于拓展抱负，你应该去做更充分的准备。但是，哦，哪怕是对顷刻将至之事的最细微一瞥，都可能建立起什么样的宏伟计划啊……"
  enclave.410.a:0 "我们还是考虑别的事情。"
  enclave.410.b:0 "我们将支付代价。"
@@ -896,6 +905,11 @@
 
  enclave.7105.desc:1 "学海无涯苦作舟：这便是最高级的智慧。我们会给你送去一名导师。好好学习，你必将有所收获。"
 
+ enclave.7110.desc:0 "一段非常有趣的故事。你说的是§Y“面纱旅人”§!，对吧？在某些方面，这个天幕确实和我们自己的很像，但是对于不了解的人来说，这些差异可能很微妙；其实它们很深刻，是一种扭曲的反射，来自一个与我们不尽相同的宇宙。\n\n天幕的表面有很多裂痕。那些深入其奥秘的人最终可能并不会回到他们本来的宇宙。"
+ enclave.7110.a:0 "跨越维度的灵能旅行……令人神往。"
+ enclave.7110.a.tooltip:0 "§P灵能跃迁引擎科技§!出现是正常几率的§Y1.5§!倍。"
+
+
  decision_shroudwalker_teacher:0 "天幕行者导师"
  decision_shroudwalker_teacher_desc:0 "一名[shroudwalker_enclave_country.GetName]的专家正位于该行星，指导当地人天幕之道。"
 
@@ -909,4 +923,11 @@
  shroud_beacon_active_tooltip:0 "[Root.GetName]拥有一个启用的§Y天幕信标§!。"
 
  shroudwalker_teacher_explanation:1 "\n解锁§Y行星决议§!§H$decision_shroudwalker_teacher$§!带来下列效果：\n£amenities£ $MOD_PLANET_AMENITIES_MULT$：§G+5%§!\n$mod_planet_jobs_unity_produces_mult$：§G+10%§!\n$mod_planet_telepaths_unity_produces_add$：§G+3§!"
+
+ enclave.7250.desc:0 "我们对卓尘特别感兴趣。我们可以教你开采和储存的方法，但前提是你同意把你的产品永久地分成给我们。"
+ enclave.7250.a:0 "你们会拿到分成的。教教我们。"
+ enclave.7255.desc:0 "卓尘是一种奇妙而又可悲的物质，有很多用途，但绝不能轻易使用，因为它是一个上古物种最后的遗产。开采了就要好好珍惜，也别忘了回报我们。"
+
+ shroudwalker_zro_tithe:0 "天幕行者的卓尘什一税"
+ shroudwalker_zro_tithe_desc:0 "[shroudwalker_enclave_country.GetName]教导了我们如何开采卓尘。作为回报，我们发誓要向他们交付卓尘产量的十分之一。"
 

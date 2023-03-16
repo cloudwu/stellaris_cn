@@ -1,0 +1,384 @@
+﻿l_english:
+
+# Observation Events from base game
+# Refactored as part of the 3.7 "Canis Minor" update.
+
+# Asteroid Sighted!
+ observation.2.name:1 "小行星靠近[pre_ftl_planet.GetName]"
+ observation.2.desc:2 "我们位于[pre_ftl_planet.GetName]轨道观测站上的小型天体实验室侦测到一颗4级小行星正在靠近。若不采取行动，它将会以相当大的力撞击到[pre_ftl_planet.GetPlanetHabitat]的[GetRandomCompassDirection]半球，足以造成灭绝级事件。\n\n我们的任务是被动观察，通常情况下我们不允许进行干涉，但许多科学家认为在这种情况下应该破例。若不采取任何行动，[pre_ftl_planet.GetName]上的[pre_ftl_country.GetName]注定将要灭亡。"
+ observation.2.a:1 "情况不容乐观。"
+# Asteroid Impacts Pre-FTL planet.
+ observation.4.name:1 "小行星撞击[pre_ftl_planet.GetName]"
+ observation.4.desc:1 "正如我们所预测，飞向[pre_ftl_planet.GetName]的小行星撞击了[pre_ftl_planet.GetPlanetHabitat]的地表，对其生态系统造成了难以挽回的损害。我们观测站的科学家们只能默默旁观，他们一直在研究的[GetPreFTLLower]文明的大部分都在撞击的影响下消灭殆尽。"
+ observation.4.a:1 "真是悲惨，但我们无权干涉。"
+ observation.4.a.tt:0 "§Y[pre_ftl_country.GetName]§!：退回§Y石器时代§!。"
+# Asteroid Collides with Observation Post.
+ observation.5.name:1 "观测站被摧毁"
+ observation.5.desc:1 "我们位于[pre_ftl_planet.GetName]上方观测站的研究人员操纵观测站的轨道推进器，令观测站与飞来的小行星进行正面碰撞。他们的牺牲使得小行星安全地偏离了[pre_ftl_planet.GetPlanetHabitat]的轨道，但观测站无人生还。\n\n显然，他们不忍看到自己花费毕生心血研究的文明就这样灭亡。"
+ observation.5.a:1 "对科学的沉重打击！"
+# Observing Empire Destroys Asteroid
+ observation.7.name:1 "小行星被摧毁"
+ observation.7.desc:1 "飞向[pre_ftl_planet.GetName]的小行星在到达[pre_ftl_planet.GetPlanetHabitat]的地表前就被摧毁。碎片在进入大气层时均已安全地烧毁，并未造成任何实质性的破坏。\n\n[pre_ftl_country.GetName]的[GetPreFTLLower]外星人欣赏到了一场极为壮观的流星雨，全然不知自己刚刚躲过了一场灭顶之灾……"
+ observation.7.a:1 "他们永远也不会发现的。"
+# Third Party Destroys Asteroid (Event for Third Party)
+ observation.8.name:0 "$observation.7.name$"
+ observation.8.desc:0 "$observation.7.desc$"
+ observation.8.a:0 "$observation.7.a$"
+# Third Party Destroys Asteroid (Event for Observing Empire)
+ observation.9.name:0 "$observation.7.name$"
+ observation.9.desc:0 "$observation.7.desc$"
+ observation.9.a:0 "$observation.7.a$"
+# Pre-FTL civilization Diverts Asteroid (Event for Observing Empire)
+ observation.10.name:0 "小行星已偏离"
+ observation.10.desc:0 "为了拯救[pre_ftl_planet.GetName]而孤注一掷，[pre_ftl_country.GetName]向小行星发射了几枚核导弹。虽然这些导弹还不足以摧毁它，但[pre_ftl_planet.GetName]上的[GetPreFTLLowerPlural]还是成功地使小行星偏离了航行轨道。"
+ observation.10.a:0 "干得漂亮！"
+ observation.10.a.tt:0 "§Y[pre_ftl_country.GetName]§!获得：§G+25%§!科技进步，持续24个月。"
+
+# Missing Scientist
+ observation.101.name:1 "科学家失踪"
+ observation.101.desc:2 "我们位于[pre_ftl_planet.GetName]轨道观测站的一位科学家失踪了。[missing_scientist.GetHeSheCap]先前正在执行秘密任务，收集[pre_ftl_planet.GetPlanetHabitat]地表的植物样本，但是并没有和[missing_scientist.GetHisHer]团队的其他成员一起返回穿梭机。\n\n我们进行了有限的探索，以免对[GetPreFTLLowerPlural]造成惊扰，但迄今为止成功的希望渺茫。" 
+ observation.101.a:1 "继续搜寻。"
+ observation.102.name:1 "发现科学家身死"
+ observation.102.desc:1 "我们终于找到了在[pre_ftl_planet.GetName]上失踪的科学家的遗体……或者不管怎么说，遗体剩下的部分。看来[missing_scientist.GetHeShe]成为了当地某种大型食肉动物的盘中餐。这对我们的科研队伍来说是巨大的损失，但至少[GetPreFTLLowerPlural]对我们的存在仍然一无所知。"
+ observation.102.a:1 "至少没有违背指令。"
+ observation.103.name:1 "[pre_ftl_planet.GetName]的异常报告"
+ observation.103.desc:1 "我们位于[pre_ftl_planet.GetName]上方的观测站传来了奇怪的报告。当地一个王国似乎集结在了一名神秘的宗教人物麾下，而且也有迹象表明，他们在使用大大超越他们当前发展水平的高科技。难道这和我们失踪的科学家有关？"
+ observation.104.desc:1 "你好，朋友们。已经过了一段时间了。\n\n首先，就你们为搜寻我而付出的一切，我衷心地表示抱歉。我在[pre_ftl_planet.GetName]上的失踪完全是故意的。\n\n这里的[GetPreFTLLowerPlural]前来谒见我，把我奉若神明……他们为什么不呢？经过慎重考虑，我已经决定把真正的文明带给这些[GetPreFTLLowerPlural]。"
+ observation.104.a:1 "你这是中什么邪了？！"
+ observation.104.a.response:1 "我累了。我早已厌烦了那些目光短浅的道德限制，厌烦了同事对我的愚弄嘲笑。最重要的是，我已厌烦了“消极”观察。\n\n真是荒诞！干涉[GetPreFTLLower]文化是我们的使命——沿着我们选择的道路，引领他们，塑造他们。静观其变，无耻地袖手旁观只不过是在逃避责任而已。"
+ observation.104.b:1 "立刻给我撤离！"
+ observation.104.b.response:1 "恐怕已经太晚了。我已经决定不再听从比我地位低下的人的命令了。我的智慧本是为你所用，但你却白白浪费了。\n\n在这里，我会得到我应得的尊重。这里现在就是我的家。凭着我的知识和我带来的科技，我会让这个文明产生巨大的飞跃，走向黄金时代。"
+ observation.104.c:1 "你真是疯了。"
+ observation.104.c.response:1 "恰恰相反！我从没如此清醒过！[Root.GetName]的灭亡是不可避免的。要是看不出这一系列征兆，那你真是瞎的可以。\n\n唉，整个过程也许要花上几十年甚至上百年，但你们的末日就要来了。在你们因为碌碌无为使自己毁灭之后，整个银河就会由生命力蓬勃的文明接管，比如我正在建立的那个文明。\n\n没什么可说的了。就此别过吧。 "
+ observation.105.name:1 "叛变科学家巩固权力"
+ observation.105.desc:1 "我们收到了数份来自[pre_ftl_planet.GetName]地表的警告报告。看上去我们的叛变科学家正在进一步巩固自己的权威——[missing_scientist.GetHeShe]已经向其中一个封建王国送去了先进武器，他们现在正打着[missing_scientist.GetHisHer]的旗号对[pre_ftl_planet.GetPlanetMoon]的其余部分进行政府。\n\n我们提出了一个计划，要强制逮捕[missing_scientist.GetHimHer]，但这个计划需要庞大的地面部队配合。由于许多当地人将[missing_scientist.GetHimHer]视为申明，这次计划会怎样影响当地民众尚且未知。"
+ observation.105.a:1 "批准行动。移除[missing_scientist.GetHimHer]。"
+ observation.105.b:1 "这样只会越搞越糟……"
+ observation.106.name:1 "成功抓捕"
+ observation.106.desc:1 "我们成功将叛变的科学家从[pre_ftl_planet.GetName]带走！行动中，数百名[owner.GetPreFTLLowerPlural]为保护他们的“天人”，对我们的部队发起了自杀式攻击，我们迫不得已将他们击毙。真是悲剧。\n\n我们的司法系统现在正在处理这名科学家，但这一系列事件无疑对[pre_ftl_planet.GetPlanetHabitat]文明造成了重大影响。他们手中还掌握着我们的部分科技，而他们的“天人”还刚刚被来自星辰的入侵者抓走了……"
+ observation.106.a:1 "至少有一个问题得到了解决。"
+ observation.107.name:1 "[pre_ftl_planet.GetName]宗教冲突"
+ observation.107.desc:1 "在我们抓走叛变科学家后，[pre_ftl_planet.GetName]陷入了战争。[missing_scientist.GetHeShe]打造的帝国分成了数支相互敌视的派系，每个派系都对[missing_scientist.GetHisHer]宗教教条有着不同的解释。\n\n原住民现在使用的武器具有很强的破坏性，因此战斗也尤为激烈。反对派系之间已互相发射了数枚放射性“脏弹”，看上去战况也愈演愈烈。"
+ observation.107.a:1 "此事没法善了……"
+ observation.108.name:1 "[pre_ftl_planet.GetName]事态平息"
+ observation.108.desc:1 "我们成功抓走叛变科学家后，[pre_ftl_planet.GetName]的局势似乎略见平息。没有[missing_scientist.GetHimHer]对数据进行解释，[missing_scientist.GetHeShe]和[missing_scientist.GetHimHer]带去的科技原型对[pre_ftl_planet.GetName]的人们来说就毫无用处了。[GetPreFTLLowerPlural]已经开始渐渐回到原本的生活方式。"
+ observation.108.a:1 "终于有好消息了。"
+ observation.109.name:1 "导弹击中观测站！"
+ observation.109.desc:1 "今天早些时候，一连串地对天导弹从[pre_ftl_planet.GetName]地表升空，直击我们的观测站！空间站当场即遭摧毁，无人生还。\n\n毫无疑问，[pre_ftl_planet.GetPlanetHabitat]地表的[GetPreFTLLower]文明正在以不可思议的速度继续发展——尽管我们抹除了他们所谓的“神”的影响。[missing_scientist.GetHeShe]给予他们的科技一定是触发了一场持久的科学革命。"
+ observation.109.a:1 "所以说，不干涉指令的存在是很有必要的。"
+ observation.110.desc:1 "圣灵保佑！你们虽然看起来和我们的圣救主一模一样，但还是有着明显的差距。[missing_scientist.GetHeSheCap]曾说道，恶魔会模仿[missing_scientist.GetHimHerCap]的外貌，在某一天从天而降，将[missing_scientist.GetHimHerCap]抓走。预言成真了，毫无疑问这都是你犯下的事。\n\n我们的圣救主在哪里，你们这些恶毒的生物？我要求[missing_scientist.GetHimHerCap]立刻得到释放！"
+ observation.110.a:1 "你们的“圣救主”是一名外星科学家。"
+ observation.110.a.response:1 "停止你们的亵渎行径！玷污圣救主之名是不可饶恕的罪孽，可处以死刑。我们的文明只有经过[missing_scientist.GetHisHerCap]圣器的洗礼才能取得如今的一切。只要你们将圣救主交还给我们，我方就会原谅你们的亵渎。"
+ observation.110.b:1 "[missing_scientist.GetHeSheCap]因[missing_scientist.GetHisHer]对你们犯下的罪行被处死。"
+ observation.110.b.response:1 "刽子手。卑鄙、言而无信的恶魔。\n\n记住我的话：这起犯罪不会逍遥法外。虽然可能要花上一千年，但我们终将把你们这恶毒的帝国整个夷为平地。"
+ observation.110.c:1 "很好。[missing_scientist.GetHeSheCap]将被释放并交给你羁押。"
+ observation.110.c.response:1 "恶魔，愿圣救主宽恕你的罪恶。也许你还没到无药可救的地步。"
+ observation.111.desc:1 "我想，我应该感谢你将我送回了自己的追随者们身边。尽管我受到了不公正的对待、监禁以及可笑的心理评估，但我愿意让过去的事情就这么过去了。只要你别动我和我的人民，我们就可以找到一种共存的方法。毕竟，宇宙很大。"
+ observation.111.a:1 "我们走着瞧。"
+ observation.112.desc:1 "一连串地对天导弹从[pre_ftl_planet.GetName]表面升空，直接命中了我们高轨的观测站！观测站当场即遭摧毁，无人生还。\n\n看来[pre_ftl_planet.GetPlanetHabitat]地表上的文明正在以不可思议的速度迅猛发展——毫无疑问，这都是拜我们的叛变科学家所赐。我们已经不能把他们当做原始文明了，而且我们再也没机会将那位科学家从权力神坛上撵下来了。"
+
+# Shuttle Intercepted
+ observation.201.name:1 "穿梭机坠毁在[pre_ftl_planet.GetName]"
+ observation.201.reg_pre_ftl.desc:0 "在一次于[pre_ftl_planet.GetName]地表执行的秘密任务中，我方一架穿梭机被当地某个国家政权的大气层战斗机中队拦截。一枚幸运的导弹击中了穿梭机引擎，导致它在偏远的荒野中坠毁。\n\n若想在[GetPreFTLLowerPlural]到达坠毁地点之前救出所有幸存者，我们必须迅速行动。所有我们存在的证据都必须抹除！"
+ observation.201.hive_pre_ftl.desc:0 "在一次于[pre_ftl_planet.GetName]地表执行的秘密任务中，我方一架穿梭机被不明身份的大气战斗机中队拦截。一枚幸运的导弹击中了穿梭机引擎并使其失效，导致它在偏远的荒野中坠毁。\n\n若想在[GetPreFTLLowerPlural]到达坠毁地点之前救出所有幸存者，我们必须迅速行动。所有我们存在的证据都必须抹除！"
+ observation.201.reg_pre_ftl.desc.gestalt:0 "穿梭机XB-23-968H，前往[pre_ftl_planet.GetName]执行秘密观察任务V45-BM时，被不明国家的大气层战斗机中队拦截，并报告发生了严重失控。我们追踪到其坠毁地点。\n\n在任何[GetPreFTLLowerPlural]到达坠毁点之前，所有自主无人机都必须撤离，并消灭所有我们存在的证据。"
+ observation.201.hive_pre_ftl.desc.gestalt:0 "我们的穿梭机，前往[pre_ftl_planet.GetName]执行一项秘密观察任务时，被大气层战斗机中队拦截，并报告发生了严重失控。我们追踪到其坠毁地点。\n\n在[GetPreFTLLowerPlural]到达坠毁点之前，所有自主工蜂都必须撤离，并消灭所有我们存在的证据。"
+ observation.201.a:1 "赶紧行动。"
+
+ observation.202.name:1 "[pre_ftl_planet.GetName]的特工得救"
+
+ observation.202.start:0 "[Root.GetName]的特工成功将数名生还者从坠毁在[pre_ftl_planet.GetName]上的穿梭机中救出。剩余的残骸在一次受控爆中被摧毁，只剩下一个小坑洞供[GetPreFTLLowerPlural]搜寻。"
+ observation.202.gestalt.start:0 "[Root.GetName]的特工成功将数个自主子个体从坠毁在[pre_ftl_planet.GetName]上的穿梭机中救出。剩余的残骸在一次受控爆中被摧毁，只剩下一个小坑洞供[GetPreFTLLowerPlural]搜寻。"
+ observation.202.reg.end:0 "这一事故发生地的国家无疑会归咎于邻国对边境的侵犯，希望这次事件对他们自然发展所造成的破坏能够尽量减小。"
+ observation.202.hive_mind.end:0 "这一事故发生地的集体意识无疑会归咎于邻国对边境的侵犯，希望这次事件对他们自然发展所造成的破坏能够尽量减小。"
+
+ observation.202.reg_pre_ftl.desc:0 "$observation.202.start$\n\n$observation.202.reg.end$"
+ observation.202.hive_pre_ftl.desc:0 "$observation.202.start$\n\n$observation.202.hive_mind.end$"
+ observation.202.reg_pre_ftl.desc.gestalt:0 "$observation.202.gestalt.start$\n\n$observation.202.reg.end$"
+ observation.202.hive_pre_ftl.desc.gestalt:0 "$observation.202.gestalt.start$\n\n$observation.202.hive_mind.end$"
+
+ observation.203.name:1 "[pre_ftl_planet.GetName]的特工被俘"
+
+ observation.203.start:0 "[pre_ftl_planet.GetName]的[GetPreFTLUpper]军队在我们找到坠机的研究团队之前抵达了坠毁点，所有幸存者均被俘。"
+ observation.203.gestalt.start:0 "[pre_ftl_planet.GetName]的[GetPreFTLUpper]军队在我们找到坠机的研究团队之前抵达了坠毁点，所有自主特工子个体均被俘。"
+ observation.203.reg.end:0 "[GetPreFTLLowerPlural]在穿梭机的残骸周围设下了防线，他们最好的科学家无疑正在对其进行分析。\n\n他们现在有确凿的证据证实，在他们自己的星球之外亦有生命存在。这究竟会对他们的社会造成什么影响还有待观察……"
+ observation.203.hive_mind.end:0 "[GetPreFTLLowerPlural]在飞船的残骸周围设下了防线，他们毫无疑问正在对其进行分析。\n\n他们现在有确凿的证据证实，生命存在于他们自己的星球之外。这究竟会对他们的社会造成什么影响还有待观察......"
+
+ observation.203.reg_pre_ftl.desc:0 "$observation.203.start$\n\n$observation.203.reg.end$"
+ observation.203.hive_pre_ftl.desc:0 "$observation.203.start$\n\n$observation.203.hive_mind.end$"
+ observation.203.reg_pre_ftl.desc.gestalt:0 "$observation.203.gestalt.start$\n\n$observation.203.reg.end$"
+ observation.203.hive_pre_ftl.desc.gestalt:0 "$observation.203.gestalt.start$\n\n$observation.203.hive_mind.end$"
+ observation.203.a:1 "这可不妙。"
+
+# Nuclear War, everyone dead, planet is a tomb world
+ observation.205.name:0 "[pre_ftl_planet.GetName]陷入核战争"
+
+ observation.205.reg.start:0 "[pre_ftl_planet.GetName]上的几个国家联合起来对抗击落我们穿梭机的那个国家，因为后者拒绝分享从坠毁现场回收得到的科技。"
+ observation.205.hive_mind.start:0 "前所未有的转折发生了，[pre_ftl_planet.GetName]上的几个意识开始合并，对抗击落我们穿梭机的那个意识，后者拒绝分享他们从坠毁地点回收得到的科技。"
+ observation.205.end:0 "在短暂的常规战争之后，双方互相发射了大量的核导弹，彻底摧毁了[pre_ftl_planet.GetPlanetHabitat]的大部分地区。\n\n地表上没有发现任何幸存者，包括我们被俘的科学家，并且环境也受到了明显破坏。"
+ observation.205.gestalt.end:0 "在短暂的常规战争之后，双方互相发射了大量的核导弹，彻底摧毁了[pre_ftl_planet.GetPlanetHabitat]的大部分地区。\n\n地表上没有发现任何幸存者，包括我们被俘获的子个体，并且环境也受到了明显破坏。"
+
+ observation.205.reg_pre_ftl.desc:0 "$observation.205.reg.start$\n\n$observation.205.end$"
+ observation.205.hive_pre_ftl.desc:0 "$observation.205.hive_mind.start$\n\n$observation.205.end$"
+ observation.205.reg_pre_ftl.desc.gestalt:0 "$observation.205.reg.start$\n\n$observation.205.gestalt.end$"
+ observation.205.hive_pre_ftl.desc.gestalt:0 "$observation.205.hive_mind.start$\n\n$observation.205.gestalt.end$"
+
+ observation.205.a:1 "要是我们的穿梭机没有坠毁就好了……"
+
+# Nuclear War, everyone dead, planet is a toxic world
+ observation.206.name:0 "$observation.205.name$"
+
+ observation.206.reg.start:0 "$observation.205.reg.start$"
+ observation.206.hive_mind.start:0 "$observation.205.hive_mind.start$"
+ observation.206.end:0 "在短暂的常规战争之后，双方互相发射了大量的核导弹，彻底摧毁了[pre_ftl_planet.GetPlanetHabitat]的大部分地区。\n\n地表上的人们被彻底消灭殆尽，[pre_ftl_planet.GetName]不再能够支持生命。我们被俘的科学家也在数十亿亡者之列。"
+ observation.206.gestalt.end:0 "在短暂的常规战争之后，双方互相发射了大量的核导弹，彻底摧毁了[pre_ftl_planet.GetPlanetHabitat]的大部分地区。\n\n地表上的人们被彻底消灭殆尽，[pre_ftl_planet.GetName]不再能够支持生命。我们被俘的子个体也在数十亿亡者之列。"
+
+ observation.206.reg_pre_ftl.desc:0 "$observation.206.reg.start$\n\n$observation.206.end$"
+ observation.206.hive_pre_ftl.desc:0 "$observation.206.hive_mind.start$\n\n$observation.206.end$"
+ observation.206.reg_pre_ftl.desc.gestalt:0 "$observation.206.reg.start$\n\n$observation.206.gestalt.end$"
+ observation.206.hive_pre_ftl.desc.gestalt:0 "$observation.206.hive_mind.start$\n\n$observation.206.gestalt.end$"
+
+ observation.206.a:1 "$observation.205.a$"
+
+# Nuclear War, pre-ftls regress to stone age, planet is a tomb world
+ observation.207.name:0 "$observation.205.name$"
+
+ observation.207.reg.start:0 "$observation.205.reg.start$"
+ observation.207.hive_mind.start:0 "$observation.205.hive_mind.start$"
+ observation.207.end:0 "在短暂的常规战争之后，双方互相发射了大量的核导弹，彻底摧毁了[pre_ftl_planet.GetPlanetHabitat]的大部分地区。\n\n[pre_ftl_planet.GetPlanetHabitat]遭到了严重破坏，所有大型城市都被摧毁，90%以上的人口死亡。虽然各地有零星的幸存者从废墟中出现，但我们的研究人员预测，[pre_ftl_planet.GetPlanetHabitat]的文明将倒退至某个极其欠发展的状态。我们被俘的科学家也在数十亿亡者之列。"
+ observation.207.gestalt.end:0 "在短暂的常规战争之后，双方互相发射了大量的核导弹，彻底摧毁了[pre_ftl_planet.GetPlanetHabitat]的大部分地区。\n\n[pre_ftl_planet.GetPlanetHabitat]遭到了严重破坏，所有大型城市都被摧毁，90%以上的人口死亡。虽然各地有零星的幸存者从废墟中出现，但我们的研究人员预测，[pre_ftl_planet.GetPlanetHabitat]的文明将倒退至某个极其欠发展的状态。我们被俘的子个体也在数十亿亡者之列。"
+
+ observation.207.reg_pre_ftl.desc:0 "$observation.207.reg.start$\n\n$observation.207.end$"
+ observation.207.hive_pre_ftl.desc:0 "$observation.207.hive_mind.start$\n\n$observation.207.end$"
+ observation.207.reg_pre_ftl.desc.gestalt:0 "$observation.207.reg.start$\n\n$observation.207.gestalt.end$"
+ observation.207.hive_pre_ftl.desc.gestalt:0 "$observation.207.hive_mind.start$\n\n$observation.207.gestalt.end$"
+
+ observation.207.a:1 "$observation.205.a$"
+
+ observation.209.name:1 "[pre_ftl_planet.GetName]上的新武器"
+
+ observation.209.reg_pre_ftl.desc:0 "[pre_ftl_planet.GetName]上击落我方穿梭机的国家，逼迫我方被俘虏的科学家为其军队设计新式武器。凭借这些装备，他们成功入侵了数个邻国，现在正如火如荼地将整个[pre_ftl_planet.GetPlanetHabitat]纳入自己的统治。"
+ observation.209.hive_pre_ftl.desc:0 "[pre_ftl_planet.GetName]上击落我方穿梭机的意识，逼迫我方被俘虏的科学家为其军队设计新式武器。凭借这些装备，他们成功入侵了数个临近蜂巢思维，现在正如火如荼地将整个[pre_ftl_planet.GetPlanetHabitat]纳入自己的统治。"
+ observation.209.reg_pre_ftl.desc.gestalt:0 "[pre_ftl_planet.GetName]上击落我方穿梭机的国家，逼迫我方被俘虏的子个体为其军队设计新式武器。凭借这些装备，他们成功入侵了数个邻国，现在正如火如荼地将整个[pre_ftl_planet.GetPlanetHabitat]纳入自己的统治。"
+ observation.209.hive_pre_ftl.desc.gestalt:0 "[pre_ftl_planet.GetName]上击落我方穿梭机的意识，逼迫我方被俘虏的子个体为其军队设计新式武器。凭借这些装备，他们成功入侵了数个临近蜂巢思维，现在正如火如荼地将整个[pre_ftl_planet.GetPlanetHabitat]纳入自己的统治。"
+
+ observation.209.a:1 "是可忍孰不可忍！"
+
+ observation.211.name:1 "人质交换"
+
+ observation.211.reg.start:0 "[pre_ftl_planet.GetName]上击落我们穿梭机的国家通过他们的一颗卫星向太空发送了公开讯号。看上去是发送给我们的。"
+ observation.211.hive_mind.start:0 "[pre_ftl_planet.GetName]上击落我们穿梭机的意识通过他们的一颗卫星向太空发送了公开讯号。看上去是发送给我们的。"
+ observation.211.end:0 "他们要求我们与他们分享一些先进的技术，以换取他们在坠机点俘虏的科学家的性命。如果我们拒绝，我们的科学家将经由他们简陋的无线视频广播系统被公开处决。"
+ observation.211.gestalt.end:0 "他们要求我们与他们分享一些先进的技术，以换取他们在坠机点俘虏的科学家的性命。如果我们拒绝，我们的子个体将经由他们简陋的无线视频广播系统被公开处决。"
+
+ observation.211.reg_pre_ftl.desc:0 "$observation.211.reg.start$\n\n$observation.211.end$"
+ observation.211.hive_pre_ftl.desc:0 "$observation.211.hive_mind.start$\n\n$observation.211.end$"
+ observation.211.reg_pre_ftl.desc.gestalt:0 "$observation.211.reg.start$\n\n$observation.211.gestalt.end$"
+ observation.211.hive_pre_ftl.desc.gestalt:0 "$observation.211.hive_mind.start$\n\n$observation.211.gestalt.end$"
+ observation.211.a:1 "我们人民的安全应该放在第一位。"
+ observation.211.a.gestalt:1 "必须优先考虑我们自主单元的安全。"
+ observation.211.b:1 "他们现在还不能接触这些科技。"
+
+ observation.212.name:1 "人质遭处决"
+
+ observation.212.desc:1 "在这个我们只能用粗野来形容的场面中，我们在[pre_ftl_planet.GetName]上被俘虏的科学家，在现场直播的镜头下被当作“外星憎恶”游行示众。"
+ observation.212.desc.mach:1 "在这个我们只能用粗野来形容的场面中，我们在[pre_ftl_planet.GetName]上被俘虏的科学单元，在现场直播的镜头下被当作“来自天边的机械憎恶”游行示众。"
+ observation.212.a:1 "真是可悲！"
+
+# Smuggler Outpost
+ observation.301.name:1 "走私贩哨站"
+ observation.301.desc:1 "我们位于[pre_ftl_planet.GetName]上空的观测站在[pre_ftl_planet.GetPlanetHabitat]的地表发现了一个非法定居点。可能是某些[Root.GetSpeciesName]走私贩或者[Root.GetName]的不法分子设立的哨站。\n\n由于这些走私犯有时候会撞见当地的[GetPreFTLLowerPlural]，这里已经发生了一些零星的事故——某些事故甚至还上升到了暴力行为。我们需要尽快行动，在不法分子造成更大损失之前带走他们。"
+ observation.301.a:1 "将他们清出去。"
+ observation.301.b:1 "就几个走私贩而已，还能怎么样？"
+ observation.302.name:1 "突袭走私贩"
+ observation.302.desc:1 "在一次闪电般的突袭行动中，我们的地面部队对[pre_ftl_planet.GetName]上的走私贩哨站发动了突击。在短暂的交火之后，幸存的罪犯们被逮捕并转运至轨道上。随后我们通过引爆炸药将这座空荡荡的建筑从地面抹除。\n\n我们相信尽可能地将文化污染降到了最低，我们的部队也没收了大量的违禁品。没收所得的利润全部上交国库。"
+ observation.302.a:1 "重大胜利。"
+ observation.303.name:1 "武器走私贸易"
+ observation.303.desc:3 "为时已晚。[pre_ftl_planet.GetName]上的走私贩已经开始用先进武器和粗制滥造的致幻兴奋剂同当地[GetPreFTLLowerPlural]换取贵金属和奴隶。\n\n多个[GetPreFTLLower]群体之间爆发了战斗。由于高科技武器在手，双方人员伤亡惨重。事态发展至此，文化污染造成的恶果已经无法挽回。"
+ observation.303.a:1 "这是一场灾难。"
+
+# Scientist Abduction
+ observation.1001.name:0 "绑架提议"
+ observation.1001.desc:1 "我们在[pre_ftl_planet.GetName]上发现了一位充满前途的[owner.GetPreFTLLower][pre_ftl_country.GetSpeciesNamePlural]科学家。[abducted_scientist.GetHisHerCap]杰出的研究远远领先于[abducted_scientist.GetHisHer]的同僚，其中一些科研成果即便以我们的标准来看待也是具有革命性的。\n\n尽管[abducted_scientist.GetHisHer]的工作确实提升了[pre_ftl_country.GetSpeciesNamePlural]的科技进步，但在他们的[owner.GetPreFTLLower]文明中[abducted_scientist.GetHisHer]的潜力完全是浪费。在我们先进的实验室里，[abducted_scientist.GetHeShe]将有机会做真正的科学。"
+ observation.1001.a:0 "策划绑架方案。"
+ observation.1001.b:1 "[abducted_scientist.GetHeSheCap]仍是一名[owner.GetPreFTLLower]。就放任[abducted_scientist.GetHimHer]和[abducted_scientist.GetHisHer]的族人在一起吧。"
+ observation.1002.name:0 "绑架成功"
+ observation.1002.desc:2 "我们的特工成功从[owner.GetPreFTLLower]劫走了[pre_ftl_country.GetName]科学家！我们的一艘地面穿梭机拦截到了[abducted_scientist.GetHisHer]的汽车，当时[abducted_scientist.GetHeShe]加班到很晚，正准备回家，我们用电磁爆炸让汽车失效。\n\n科学家被我们暂时麻痹了身体机能，并被带上穿梭机，同时[abducted_scientist.GetHisHer]的保镖的记忆也被抹去了。我们有信心“说服”这位优秀的科学家为我们工作。"
+ observation.1002.tt:0 "获得一名§Y等级6的[pre_ftl_country.GetSpeciesName]科学家§!，具有§Y$leader_trait_spark_of_genius$§!特质。"
+ observation.1003.name:0 "绑架失败"
+ observation.1003.desc:2 "不幸的是，我们尝试从[owner.GetPreFTLLower]劫走[pre_ftl_country.GetName]科学家的行动失败了。我们的一艘地面穿梭机拦截到了[abducted_scientist.GetHisHer]的摩托车，但当我们用悬浮光线控制住这个吓呆了的科学家的时候，一架[pre_ftl_country.GetSpeciesName]大气层内的战机突然抵达了现场。\n\n我们穿梭机安全逃回了轨道，但悬浮光线被打断了，而科学家......好吧，这是一个漫长的坠落。希望[abducted_scientist.GetHisHer]的死会被归咎于[pre_ftl_country.GetSpeciesName]的敌对帝国。"
+ observation.1004.name:0 "[pre_ftl_planet.GetName]的突破！"
+ observation.1004.desc:0 "我们最初在[pre_ftl_planet.GetName]上发现的科学家已经发展成了一位杰出的人才。[abducted_scientist.GetHisHer]打破常规的研究基础和高度解析的思维方式大大加快了[pre_ftl_country.GetName]的技术发展。"
+ observation.1004.a:0 "干得漂亮！"
+
+# Defense Force
+ observation.1101.name:1 "[pre_ftl_planet.GetName]：反外星人特遣队"
+ observation.1101.desc:1 "发现了我们在他们的[GetPreFTLLower]星球上的行动后，[pre_ftl_planet.GetName]上的许多[pre_ftl_country.GetSpeciesName]国家暂时放下彼此间的争吵，共同组建了一个跨国界军事组织。\n\n根据当地媒体报道，这个特遣组织的主要责任是保卫他们的[pre_ftl_planet.GetPlanetHabitat]免受“未知外星势力针对[pre_ftl_country.GetSpeciesName]全体的敌对活动”。"
+# Interceptions
+ observation.1102.name:1 "[pre_ftl_planet.GetName]：特遣队行动"
+ observation.1102.desc:1 "我们位于[pre_ftl_planet.GetName]上方的观测站的侦测画面显示，[pre_ftl_planet.GetPlanetHabitat]的地表新建了一批新的军事基地和雷达设施，这些营区全都归[pre_ftl_country.GetSpeciesNamePlural]建立的跨国界反外星特遣部队所管辖。\n\n我们注意到，这些国家正在以前所未有的等级通力合作，我们派去执行绑架任务的飞行器现在经常受到这支部队的大气层战斗机拦截。尽管我们在技术上占优，但他们数量是如此之多，仍然成功击落了几架我们的绑架用穿梭机！"
+ observation.1102.a:0 "这会妨碍我们的主动观察行动。"
+# Observation Post Lost 
+ observation.1103.name:1 "[pre_ftl_planet.GetName]：损失观测站"
+ observation.1103.desc:1 "我们在[pre_ftl_planet.GetName]上空的观测站被毁了！[pre_ftl_country.GetSpeciesName]反外星特遣部队控制的一个军事基地向我们的观测站发射了一枚巨大的地对宇导弹。\n\n考虑到我们之前已经通过大量的预防措施，把我们观测站的存在对[pre_ftl_country.GetSpeciesNamePlural]隐藏了起来，我们现在还不能确定他们到底用什么方法追踪到了观测站的位置。有人认为，是原住民设法从被击落的我方穿梭机上通过逆向工程掠夺了一些科技。"
+ observation.1103.a:0 "这真是太不像话了！"
+# Strike
+ observation.1105.name:1 "[pre_ftl_planet.GetName]：精准打击"
+ observation.1105.desc:1 "我们位于[pre_ftl_planet.GetName]轨道上的观测站的工作人员要求我们帮助处理由[pre_ftl_country.GetSpeciesNamePlural]建立的反外星人特遣部队，后者因为我们激进的观测工作而建立。尽管以我们的标准来说，这个组织相当原始，但它已经发展到能够对我们的绑架行动产生干扰。\n\n他们的主基地已经确定位于[pre_ftl_planet.GetPlanetHabitat]地表，[pre_ftl_planet.GetAMountainFeature]深处。轨道轰炸效果不佳，但由一支全副武装的突击队进行快速袭击应该可以攻其不备突。若是能将其摧毁，对于冥顽不化的[pre_ftl_country.GetSpeciesName]特遣部队将是致命的一击。"
+ observation.1105.a:1 "就这么办。"
+ observation.1105.b:1 "不，我们应该避免进一步挑衅他们……"
+ observation.1106.name:2 "[pre_ftl_planet.GetName]：成功打击"
+ observation.1106.desc:2 "我们计划摧毁[pre_ftl_country.GetSpeciesName]跨国界特遣部队主基地的任务大获全胜！我们的强袭小队渗透进了基地，在我们训练有素的特工面前，拿着低劣武器的基地守卫完全不是对手。\n\n在基地内部装完炸药之后，我们的强袭小队被数艘等待的穿梭机接走。这支烦人的[pre_ftl_country.GetSpeciesName]特遣部队现在已经不剩什么了。"
+ observation.1106.a:1 "任务成功。"
+ observation.1107.name:2 "[pre_ftl_planetGetName]：打击失败"
+ observation.1107.desc:2 "我们计划摧毁[pre_ftl_country.Owner.GetSpeciesName]跨国界特遣部队主基地的任务以一败涂地告终！数艘载着我们强袭小队的穿梭机还未到达基地就被隐蔽的防空炮台击落了。其余特工在到达基地入口时遇到了计划之外的顽强抵抗。\n\n考虑到[pre_ftl_country.Owner.GetSpeciesName]的增援部队正在接近，强袭小队的指挥官最后下达了撤退的命令。然而不幸的是，我们返回轨道的穿梭机在途中遭到了大量大气层战斗机的拦截。损失惨重。"
+ observation.1107.a:1 "这真是一场灾难！"
+# Disbanded 
+ observation.1104.name:1 "[pre_ftl_planet.GetName]：特遣部队解散"
+ observation.1104.desc:1 "由[pre_ftl_country.GetSpeciesName]各国组建、用以阻挠我们在[pre_ftl_planet.GetName]上行动的跨国界特遣部队被解散了！尽管在针对我们穿梭机和绑架小队的行动中，他们设法取得了几个关键的胜利，但其中几个初创国家决定撤资，从这个计划中抽离。\n\n情报显示，这一预料之外的转折事件是因为[pre_ftl_country.GetSpeciesName]各国之间的内斗和外交纠纷。"
+ observation.1104.a:1 "虽然始料未及，但这样的发展也挺好。"
+
+# Malfunctioning Implants
+ observation.1201.name:1 "[pre_ftl_planet.GetName]：植入体功能失常"
+ observation.1201.desc:1 "作为我们[pre_ftl_planet.GetName]观测计划的一部分，绑架小队通过外科手术的方式在一部分[pre_ftl_country.GetSpeciesName]的脑内装入了植入体，以便追踪他们的位置，监视他们的行为。不幸的是，由于一些制造上的瑕疵，许多植入体失灵了，现在……我们的测试对象身上还出现了一些副作用。\n\n有些测试对象自杀了，还有至少三个测试对象陷入了歇斯底里的暴力状态。我们观测站上的[root.GetResearcherPlural]请求协助，对剩余的测试对象进行管制，在更多事故发生之前移除他们的植入体。"
+ observation.1201.a:0 "我们得收拾一下烂摊子。"
+ observation.1201.b:0 "这可不是我们的问题。"
+ observation.1202.name:3 "[pre_ftl_planet.GetName]：植入体已移除"
+ observation.1202.desc:2 "我们位于[pre_ftl_planet.GetName]观测站的绑架小队已经与[Root.GetName]的人员展开合作，迅速地将有瑕疵植入体的[pre_ftl_country.GetSpeciesName]测试对象都集中了起来。\n\n观测站的外科手术人员将植入体更换成了功能正常的，并将测试对象送回了[pre_ftl_planet.GetPlanetHabitat]地表。不仅如此，科学专员[Root.GetLeaderName]还成功地从被移除的植入体中提取到大量数据——尽管植入体存在瑕疵。"
+ observation.1202.a:0 "至少有好事发生。"
+ observation.1203.name:3 "[pre_ftl_planet.GetName]：植入体未移除"
+ observation.1203.desc:2 "我们位于[pre_ftl_planet.GetName]的最后一批[pre_ftl_country.GetSpeciesName]测试对象，由于大脑中存在有瑕疵的植入体，已经陷入了完全的疯狂。很多人变得异常狂暴，嘴巴里怪叫着[Root.GetSpeciesName]为装置编写的代码，肆意攻击他们身边的任何人或东西。"
+ observation.1203.a:0 "怎么会发生这样的事？"
+ observation.1205.name:0 "[pre_ftl_planet.GetName]：接纳植入体"
+ observation.1205.desc:0 "[pre_ftl_planet.GetName]上的[pre_ftl_country.GetSpeciesName]已经对我们留下的中性植入体进行了自己的研究。不知为何，[GetPreFTLLowerPlural]研究人员成功设计出来的工程化义体，比我们设计出来的版本能够更好地兼容[pre_ftl_country.GetSpeciesName]的生物学特性。"
+ observation.1205.a:0 "干得漂亮！"
+ observation.1205.tt:0 "§Y[pre_ftl_country.GetSpeciesName]§!接受了§Y义体§!的概念。"
+
+# Ethic Shifts
+ observation.1301.name:1 "[pre_ftl_planet.GetName]：思潮更迭"
+ observation.1301.xenophobe:0 "我们注意到[pre_ftl_planet.GetName]上的[GetPreFTLLower][pre_ftl_country.GetSpeciesNamePlural]发生了一个明显的改变。他们的社会已经转向闭关锁国，他们不像以前那样能接受陌生事物了。\n\n我们的主动观察行为和在[pre_ftl_planet.GetPlanetHabitat]全境进行的绑架行动似乎是导致这一情况的部分原因，这使得[pre_ftl_country.GetSpeciesNamePlural]对未知事物更加警惕了。"
+ observation.1301.xenophile:0 "我们注意到[pre_ftl_planet.GetName]上的[GetPreFTLLower][pre_ftl_country.GetSpeciesNamePlural]发生了一个明显的改变。他们的社会开始转向对外开放，民众也开始接纳陌生事物了。\n\n我们在[pre_ftl_planet.GetPlanetHabitat]全境进行的观察飞行似乎是导致这一情况的部分原因，这让[pre_ftl_country.GetSpeciesNamePlural]更加渴望了解未知事物。"
+ observation.1301.spiritualist:0 "我们位于[pre_ftl_planet.GetName]轨道上观测站的几个绑架小队，一直在故意使用穿梭机推进器在属于[GetPreFTLLower][pre_ftl_country.GetSpeciesNamePlural]的麦田上灼烧出巨大的圆圈和复杂的图案，后者是[pre_ftl_planet.GetPlanetHabitat]上的原住民。\n\n因为这一恶作剧，我们的穿梭机组员受到了严厉的训斥，但麦田怪圈似乎对原住民有着某种精神上的重要性。由于这些图案，一种新的宗教正在形成，并且它以惊人的速度在[pre_ftl_country.GetSpeciesNamePlural]人群中间变得越来越有人气。"
+ observation.1301.materialist:0 "我们位于[pre_ftl_planet.GetName]轨道上观测站的几个绑架小队，一直在故意使用穿梭机推进器在属于[GetPreFTLLower][pre_ftl_country.GetSpeciesNamePlural]的麦田上灼烧出巨大的圆圈和复杂的图案，后者是[pre_ftl_planet.GetPlanetHabitat]上的原住民。\n\n因为这一恶作剧，我们的穿梭机组员受到了严厉的训斥，但原住民似乎坚信麦田怪圈存在某种数学上的含义。一股致力于研究这些图案的科学运动开始兴起，并且它以惊人的速度在[pre_ftl_country.GetSpeciesNamePlural]人群中间变得越来越有人气。"
+
+# Nuclear War, everyone dead, planet is a tomb world
+ observation.1402.name:0 "[pre_ftl_planet.GetName]陷入核战争"
+
+ observation.1402.reg.start:0 "最近[pre_ftl_planet.GetName]上的几个大国之间爆发了一场大规模的战争。"
+ observation.1402.hive_mind.start:0 "最近[pre_ftl_planet.GetName]上的几个意识之间爆发了一场大规模的战争。"
+ observation.1402.end:0 "我们的研究人员在安全的轨道上进行观察时，冲突迅速发展为在全球范围内进行相互核武投射。\n\n[pre_ftl_planet.GetPlanetHabitat]的全部人口似乎都在核火中消亡，自然环境也遭到了巨大破坏。"
+ observation.1402.gestalt.end:0 "我们的观测无人机在安全的轨道上进行观察时，冲突迅速发展为在全球范围内进行相互核武投射。\n\n[pre_ftl_planet.GetPlanetHabitat]的全部人口似乎都在核火中消亡，自然环境也遭到了巨大破坏。"
+
+ observation.1402.reg_pre_ftl.desc:0 "$observation.1402.reg.start$\n\n$observation.1402.end$"
+ observation.1402.hive_pre_ftl.desc:0 "$observation.1402.hive_mind.start$\n\n$observation.1402.end$"
+ observation.1402.reg_pre_ftl.desc.gestalt:0 "$observation.1402.reg.start$\n\n$observation.1402.gestalt.end$"
+ observation.1402.hive_pre_ftl.desc.gestalt:0 "$observation.1402.hive_mind.start$\n\n$observation.1402.gestalt.end$"
+
+ observation.1402.a:1 "惨痛的教训。"
+
+# Nuclear War, everyone dead, planet is a toxic world
+ observation.1404.name:0 "$observation.1402.name$"
+
+ observation.1404.reg.start:0 "$observation.1402.reg.start$"
+ observation.1404.hive_mind.start:0 "$observation.1402.hive_mind.start$"
+ observation.1404.end:0 "我们的研究人员在安全的轨道上进行观察时，冲突迅速发展为在全球范围内进行相互核武投射。\n\n地表上的所有生命都被抹杀干净，整个[pre_ftl_planet.GetPlanetHabitat]已经不再适合居住了。"
+ observation.1404.gestalt.end:0 "我们的观测无人机在安全的轨道上进行观察时，冲突迅速发展为在全球范围内进行相互核武投射。\n\n地表上的所有生命都被抹杀干净，整个[pre_ftl_planet.GetPlanetHabitat]已经不再适合居住了。"
+
+ observation.1404.reg_pre_ftl.desc:0 "$observation.1404.reg.start$\n\n$observation.1404.end$"
+ observation.1404.hive_pre_ftl.desc:0 "$observation.1404.hive_mind.start$\n\n$observation.1404.end$"
+ observation.1404.reg_pre_ftl.desc.gestalt:0 "$observation.1404.reg.start$\n\n$observation.1404.gestalt.end$"
+ observation.1404.hive_pre_ftl.desc.gestalt:0 "$observation.1404.hive_mind.start$\n\n$observation.1404.gestalt.end$"
+
+ observation.1404.a:1 "$observation.1402.a$"
+
+# Nuclear War, pre-ftls regress to stone age, planet is a tomb world
+ observation.1406.name:0 "$observation.1402.name$"
+
+ observation.1406.reg.start:0 "$observation.1402.reg.start$"
+ observation.1406.hive_mind.start:0 "$observation.1402.hive_mind.start$"
+ observation.1406.end:0 "我们的研究人员在安全的轨道上进行观察时，冲突迅速发展为在全球范围内进行相互核武投射。\n\n[pre_ftl_planet.GetPlanetHabitat]遭到了严重破坏，所有大型城市都被摧毁，90%的人口被消灭。零星的幸存者从废墟中出来，但我们的研究人员预测[pre_ftl_planet.GetPlanetHabitat]的文明将倒退至某个远不如当前的欠发达状态。"
+ observation.1406.gestalt.end:0 "我们的观测无人机在安全的轨道上进行观察时，冲突迅速发展为在全球范围内进行相互核武投射。\n\n[pre_ftl_planet.GetPlanetHabitat]遭到了严重破坏，所有大型城市都被摧毁，90%的人口被消灭。零星的幸存者从废墟中出来，但我们的研究人员预测[pre_ftl_planet.GetPlanetHabitat]的文明将倒退至某个远不如当前的欠发达状态。"
+
+ observation.1406.reg_pre_ftl.desc:0 "$observation.1406.reg.start$\n\n$observation.1406.end$"
+ observation.1406.hive_pre_ftl.desc:0 "$observation.1406.hive_mind.start$\n\n$observation.1406.end$"
+ observation.1406.reg_pre_ftl.desc.gestalt:0 "$observation.1406.reg.start$\n\n$observation.1406.gestalt.end$"
+ observation.1406.hive_pre_ftl.desc.gestalt:0 "$observation.1406.hive_mind.start$\n\n$observation.1406.gestalt.end$"
+
+ observation.1406.a:1 "$observation.1402.a$"
+
+# Research Proposal
+ observation.1501.name:1 "研究提议"
+ observation.1501.desc:2 "我们位于[pre_ftl_planet.GetPlanetHabitat]轨道上的观测站的科学家申请一艘科研船，以便他们收集来自[pre_ftl_planet.GetPlanetHabitat]地表的标本。为了研究目的，他们想秘密地绑架部分[GetPreFTLLowerPlural]，并对它们进行试验。然后，他们将被安全地送回地表，所有记忆被抹除干净。" 
+ observation.1501.a:1 "这可以帮助我们进一步了解它们。"
+ observation.1501.b:1 "不，我们应该让它们顺其自然。"
+ observation.1501.b.tt:0 "§Y$mission_passive_observation$§!现在将会产出§G+2§!$r_unity$\n$t$§R将会锁定为$mission_passive_observation$!§!"
+ observation.1502.desc:2 "[Root.GetName]完成了在[pre_ftl_planet.GetName]上的科学任务。从科研船上派出的穿梭机在夜间低空掠过地面，使用电磁脉冲瘫痪了[GetPreFTLLowerPlural]所使用的陈旧的内燃机车。这些车辆的驾驶者随后被冷冻并收集，其他先遣队则通过对当地家畜进行解剖获取样本。\n\n我们的任务似乎并未引起[pre_ftl_planet.GetPlanetHabitat]人们的多少关注，尽管有一些关于“不明灯光”和报告，此外我们的一名穿梭机船员故意使用他们的推进器在麦田上制造圆形图案引发了事故。这些人已被警告。"
+ observation.1502.a:0 "干得不错。"
+
+# Special Projects for events above.
+ EXTRACT_MISSING_SCIENTIST:1 "逮捕失踪的科学家"
+ EXTRACT_MISSING_SCIENTIST_DESC:1 "我们的一名科学家已经叛逃，在[pre_ftl_planet.GetName]上被当地[GetPreFTLLowerPlural]当做神灵来崇拜。必须采取行动将[missing_scientist.GetHimHer]移除——有必要的话可以采取武力。"
+ SHUTTLE_INTERCEPTED:1 "救援穿梭机幸存者"
+ SHUTTLE_INTERCEPTED_DESC:1 "我们的一架穿梭机被[pre_ftl_country.GetName]的原住民击落，我们必须在幸存者被当地军队俘虏之前把他们全数救出。"
+ ABDUCT_SCIENTIST_PROJECT:1 "绑架[GetPreFTLUpper]科学家"
+ ABDUCT_SCIENTIST_PROJECT_DESC:1 "我们在[pre_ftl_planet.GetName]上的[GetPreFTLLower][pre_ftl_country.GetSpeciesNamePlural]之中发现了一位才华横溢的科学家。[abducted_scientist.GetHisHerCap]卓越的才能被浪费在[abducted_scientist.GetHisHer]的[GetPreFTLLower]文明中，但[abducted_scientist.GetHeShe]对我们自己的研究项目将有巨大的促进作用。绑架[abducted_scientist.GetHisHer]并“说服”[abducted_scientist.GetHisHer]为我们工作的计划已经提上日程。"
+ DEFENSE_FORCE_STRIKE_PROJECT:1 "摧毁土著防御力量"
+ DEFENSE_FORCE_STRIKE_PROJECT_DESC:1 "[pre_ftl_planet.GetName]上[pre_ftl_country.GetSpeciesName]的国家团结在一起，形成了一股反外星势力，想要阻碍我们对他们母星的统治。此事无法容忍，我们要发动惩罚性打击，主要针对该组织的基地。"
+ IMPLANT_MALFUNCTIONS_PROJECT:1 "清除故障植入物"
+ IMPLANT_MALFUNCTIONS_PROJECT_DESC:1 "我们给[pre_ftl_planet.GetName]上的数名[GetPreFTLLowerPlural][pre_ftl_country.GetSpeciesNamePlural]测试对象安装大脑植入体之后，遇到了一些问题。他们产生了一系列功能失常的问题，引发了测试者的暴力行为，甚至导致了受试者的死亡。我们需要在产生更多的问题前拆除这些植入体。"
+ PROBE_ALIENS_PROJECT:1 "探查外星人"
+ PROBE_ALIENS_PROJECT_DESC:1 "我们的科学家想要从[pre_ftl_planet.GetName]上的土著文明中寻找实验对象收集数据。测试完毕后，目标对象将会被抹除记忆，送回[pre_ftl_planet.GetPlanetHabitat]地表。"
+
+ # Custom Tooltips
+ cannot_reveal_tt:1 "§RWe cannot reveal ourselves until these events conclude.§!"
+ cannot_dismantle_outpost_tt:1 "§RWe cannot dismantle our Observation Post until these events conclude.§!"
+ tech_progress_gain_tt:0 "§Y[pre_ftl_country.GetName]§!：§G+[pre_ftl_country.TechProgressPercentage]%§!科技进步。"
+ tech_progress_loss_tt:0 "§Y[pre_ftl_country.GetName]§!：§R-[pre_ftl_country.TechProgressPercentage]%§!科技进步。"
+ locked_to_passive_observation:0 "观测站锁定为$mission_passive_observation$"
+ acquired_tech_tooltip:1 "这个文明的科技发展速度加快了。" 
+ acquired_tech_tooltip_five_years:0 "§Y[pre_ftl_country.GetName]§!：科技进步§G+50%§!，持续§Y5年§!。"
+ advance_to_age_tt:0 "§Y[pre_ftl_country.GetName]§!：进步至§Y[pre_ftl_country.GetNewAge]§!。"
+ regress_to_age_tt:0 "§Y[pre_ftl_country.GetName]§!：倒退至§Y[pre_ftl_country.GetNewAge]§!。"
+
+# Scripted Loc
+ mountain:0 "一座山"
+ mountain_habitat:0 "亚结构"
+
+ #Refactored Observation Events
+
+ observation.2011.name:2 "技术启蒙：对[From.GetName]的启蒙受到挫折"
+ observation.2011.desc:1 "我们在[pre_ftl_planet.GetName]上的顾问试图教育当地居民，以提高他们的科技水平，但这项任务遇到了一些挫折。许多[pre_ftl_planet.Owner.GetSpeciesNamePlural]拒绝和我们接触，甚至他们中的好学者，都对我们的科学家持怀疑和厌恶的态度。\n\n这种排外情绪耽误了我们的日程表。教育[pre_ftl_planet.Owner.GetSpeciesNamePlural]比我们预料的要花费更多时间。"
+ observation.2014.name:1 "科技发展：[pre_ftl_planet.GetName]的进展"
+ observation.2014.desc:1 "[pre_ftl_planet.GetName]上的居民因我们所共享的科技而感到喜悦。他们纷纷来到我们位于他们星球上建立的飞地，狂轰滥炸般地询问有关我们文化和历史的问题。\n\n[pre_ftl_planet.Owner.GetSpeciesNamePlural]对向我们学习的渴求增进了我们提升该文明科技进展的任务进度，因此我们修改了最初关于任务所需时间的估计。"
+ observation.2014.tt:0 "§Y[pre_ftl_country.GetName]§!：§G+20%§!科技进步。"
+ observation.2016.name:1 "科技发展：[pre_ftl_planet.GetName]的挫折"
+ observation.2016.desc:1 "很不幸，我们发现[pre_ftl_planet.GetName]上的[pre_ftl_species.GetName]很难教育。我们的科学顾问报告称，这些外星人对于放弃自己的传统、接纳新的概念和理念这一方面转变得十分缓慢。看来我们的任务时间会比预期要长一些。"
+ observation.2016.tt:0 "§Y[pre_ftl_country.GetName]§!：§R-20%§!科技进步。"
+ observation.2018.name:1 "科技发展：[pre_ftl_planet.GetName]的挫折"
+ observation.2018.desc:1 "我们在安排科学家去执行[pre_ftl_planet.GetName]上的科技发展任务时遇到了困难。因为[pre_ftl_species.GetName]……独特的外貌和气味，这么说吧，能站在他们面前都很不容易。\n\n去[pre_ftl_planet.GetName]地表执行任务被大家视作一种惩罚。这很不幸地拖累了我们的任务进度。"
+ observation.2018.tt:0 "§Y[pre_ftl_country.GetName]§!：§R-20%§!科技进步。"
+ observation.2020.desc:1 "[pre_ftl_planet.GetName]上的[pre_ftl_species.GetNamePlural]是天生的科学家。驻扎在它们母星上的顾问对它们取得的进步感到惊讶。顾问们在报告中称，我们推动[pre_ftl_species.GetName]文明进入太空时代的任务或许可以提前完成。"
+ observation.2022.desc:0 "我们为[pre_ftl_planet.GetName]上的[pre_ftl_species.GetNamePlural]带去科技发展的任务，其进度相较于日程表提前了，这在很大程度上是由于它们不同寻常的智力。尽管这个文明还很年轻，但我们的科学顾问在[pre_ftl_species.GetName]上面看到了巨大潜力。"
+ observation.2030.name:0 "[pre_ftl_planet.GetName]上的思潮变化"
+ observation.2030.desc:0 "在和我们派往[pre_ftl_planet.GetName]的科学家进行长期接触后，当地原住民对于其他物种和文化的接受程度提高了很多。[pre_ftl_species.GetNamePlural]不再那么容易对外来事物表现出排斥的态度了。"
+ observation.2031.desc:1 "在和我们派往[pre_ftl_planet.GetName]的科学家及顾问紧密合作之后，[pre_ftl_species.GetNamePlural]对所有和外星事物有关的方面都产生了浓厚的兴趣。"
+ observation.2031.tt:0 "[pre_ftl_planet.GetName]的人们将变得倾向于亲外主义。"
+ observation.social.intro:0 "我们的顾问报告称，[pre_ftl_planet.GetName]的原住民不仅对我们的科技着迷，它们甚至也在模仿我们的行为举止。"
+ observation.2032.desc:0 "$observation.social.intro$\n\n他们似乎大体上接受了我们崇尚和平和非暴力的哲学。自我们到来以来，各种[pre_ftl_species.GetName]文化团体之间的冲突几乎停止了。"
+ observation.2032.tt:0 "[pre_ftl_planet.GetName]的人们将变得倾向于和平主义。"
+ observation.2033.desc:1 "$observation.social.intro$\n\n有了这些我们给予他们的新式武器，[pre_ftl_species.GetNamePlural]对战争之道有了新的认识。自我们到来之后，他们的社会迅速军事化。"
+ observation.2033.tt:0 "[pre_ftl_planet.GetName]的人们将变得倾向于军国主义。"
+ observation.2034.desc:0 "$observation.social.intro$\n\n我们成为了极佳的榜样，教会了他们强大的、团结的领导价值。现在[pre_ftl_species.GetNamePlural]意识到，这是让一个文明变得伟大的必由之路。"
+ observation.2034.tt:0 "[pre_ftl_planet.GetName]的人们将变得倾向于威权主义。"
+ observation.2035.desc:1 "$observation.social.intro$\n\n在看到我们的艺术和文化后倍受启发，[pre_ftl_species.GetName]社会似乎已经发展出了一种全新的平等主义认识。自我们到来以来，他们的个人自由程度大大增加了。"
+ observation.2035.tt:0 "[pre_ftl_planet.GetName]的人们将变得倾向于平等主义。"
+ observation.2036.desc:0 "$observation.social.intro$\n\n我们向[pre_ftl_species.GetName]传播科学观的任务对其社会造成了深远影响。有组织的宗教正在衰落，许多迷信被人们放弃。"
+ observation.2036.tt:0 "[pre_ftl_planet.GetName]的人们将变得倾向于物质主义。"
+ observation.2037.desc:1 "$observation.social.intro$\n\n见证了我们信念的力量之后，许多[pre_ftl_species.GetNamePlural]前后簇拥着回归了他们文明的古老宗教，还把我们信仰中的某些元素与他们自己的信念融为一体。"
+ observation.2037.tt:0 "[pre_ftl_planet.GetName]的人们会变得更加虔诚。"
+ observation.2038.desc:0 "我们派往[pre_ftl_planet.GetName]对[pre_ftl_species.GetNamePlural]进行咨询事务的一部分科学家开始质疑我们这项任务的明智性。他们报告称，原住民似乎只对获得新武器技术产生了一些兴趣。\n\n不幸的是，他们将我们带去的和平技术转化为战争器具的行为延缓了我们的任务进度。"
+ observation.2039.desc:1 "我们在[pre_ftl_planet.GetName]上启蒙原住民文明的任务并未按计划进行。在我们传授它们新的武器技术时，[pre_ftl_species.GetName]科学家经常感到恐惧。\n\n由于我们的科学顾问展示了在人口密集的城市上空引爆一颗聚变炸弹的仿真演示，他们花了好几周时间才将原住民的情绪安抚好。非常不幸，这大大拖延了我们的进度。"
+ observation.2040.desc:0 "我们在对[pre_ftl_planet.GetName]的人民开展提升文明的相关工作时遇到了一些困难。[pre_ftl_species.GetNamePlural]实际上非常的迷信，有很多民众抱着古老的宗教传统不肯放手，拒绝接受唯物的证据，这让我们的科学顾问感到非常沮丧。\n\n很不幸的是，我们对这一任务的预计似乎过于乐观了。"
+ observation.2041.desc:1 "我们启蒙[pre_ftl_species.GetNamePlural]并引导他们朝着正确道路迈向星辰的计划遇到了挫折。我们在[pre_ftl_planet.GetName]上的宗教和科学顾问报告称，原住民没有信念依靠，这让人感到忧虑。他们很乐意接受我们的科技，但对于负责任地使用这些科技所必备的精神教导，他们不愿意接纳。\n\n这极大地妨碍了我们引导[pre_ftl_species.GetNamePlural]启蒙的任务。这下我们的计划又要延迟了。"
+ observation.2042.desc:0 "[pre_ftl_planet.GetName]上压迫的、独裁的社会阻碍了我们推动[pre_ftl_species.GetNamePlural]科技进步的任务。独立思想和开拓精神——这是科学蓬勃发展需要的品质——在[pre_ftl_species.GetNamePlural]身上很罕见。\n\n这种蛮横的威权主义拖累了我们任务的进度——–我们派往当地的科学顾问报告说，实际花费的时间超过预期。"
+ observation.2043.desc:1 "无政府主义政权在[pre_ftl_planet.GetName]的地上世界盛行，我们的顾问们向[pre_ftl_species.GetNamePlural]传授现代科学的时候遇到了很大的困难。有时候，每位科学家对这个项目似乎都有不同的看法，全然不顾他们团队的需求或者公共利益。\n\n我们的启蒙任务仍在继续，当地民众因为误导表现出了一定的平等主义，因此任务需要比预期更长的时间才能完成。"

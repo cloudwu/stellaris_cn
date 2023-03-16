@@ -111,6 +111,7 @@
 
  requires_planets_for_material:0 "$TRIGGER_FAIL$无法在缺少行星天体作为材料来源的星系内建造。"
  requires_no_existing_megastructure:1 "$TRIGGER_FAIL$由于现存的巨型结构，无法建造。"
+ requires_no_orbital_debris:0 "$TRIGGER_FAIL$轨道上存在残骸，无法建造。"
  requires_no_existing_gateway:0 "$TRIGGER_FAIL$由于现存的星门，无法建造。"
  requires_no_orbital_station:1 "$TRIGGER_FAIL$由于现存的轨道基地，无法建造。"
  requires_no_habitable_planets:1 "$TRIGGER_FAIL$无法在存在宜居行星的星系内建造。"
@@ -166,8 +167,7 @@
  trait_cybernetic_desc:0 "§L此种族大量运用神经机械学，其程度致其个体可被称为半机械人。他们已经适应将有机身体部件替换成先进的机械版本。§!\n"
  trait_latent_psionic:0 "潜在灵能"
  trait_latent_psionic_desc:0 "§L此种族拥有潜在的灵能能力，虽然在大部分个体体内还是休眠状态。虽然非常稀有，但这些力量会在一些领袖身上体现。§!\n"
- 
-# TODO CD - write appropriate loc
+
  trait_cyborg_power_drills:0 "动力钻头"
  trait_cyborg_power_drills_desc:0 "§L要是给义体人装上电钻，那什么都看起来像矿。§!"
  trait_cyborg_harvesters:0 "收割套件"
@@ -210,9 +210,6 @@
  trait_cyborg_power_intensive_desc:0 "§L这些义体部件需要频繁地从外接电源充电。§!"
  TRAIT_POWER_INTENSIVE_EFFECT:0 "增加$r_energy$维护费§R+1§!"
  CYBORG_ENERGY_UPKEEP_EFFECT:0 "增加$r_energy$维护费§R+$@cyborg_energy_upkeep$§!"
-
-
-
 
  trait_psionic:0 "灵能"
  trait_psionic_desc:0 "§L此种族的所有个体都拥有强大的灵能能力。他们通常通过心灵感应来相互交流。§!\n"

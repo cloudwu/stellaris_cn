@@ -25,7 +25,8 @@
  origin_tooltip_shattered_ring_effects_lithoid:0 "§R-警告：这个起源对石质类富有挑战，因为矿物稀缺。§!\n$origin_tooltip_shattered_ring_effects$"
  origin_remnants:0 "复国孑遗"
  origin_remnants_desc:1 "此文明曾经叱咤虚空，掌控大片银河。他们最终难逃失败并被摧毁殆尽，但经历漫长的穷困潦倒后他们又要于群星间东山再起。"
- origin_tooltip_remnants_effects:3 "—游戏开始时以一个§H遗迹世界§!（规模：£planetsize£ 22）作为你的母星。重拾失落的荣光！"
+ origin_tooltip_remnants_effects:4 "—游戏开始时以一个§H遗迹世界§!（规模：£planetsize£ 22）作为你的母星。重拾失落的荣光！"
+ RemnantAncientRelicEffect:0 "\n游戏初始拥有§H远古学§!科技和§H远古学院§!£building£建筑。"
  origin_tree_of_life:0 "生命之树"
  origin_tree_of_life_desc:0 "此蜂群思维与一棵巨型树木间演化出了共生关系。这棵巨树赋予了他们许多益处，也意味着失去这棵树就会削弱他们。"
  origin_tooltip_tree_effects:3 "—我们蜂巢思维会于生活在具有§H生命之树§!的行星上时获得许多增益，否则将受到种种惩罚。\n—§H殖民船§!更为昂贵，但将为新的行星提供其自身的幼树。\n—能够使用£building£§H$holding_tree_of_life_sapling$§!。"
@@ -989,6 +990,7 @@
  ####################
 
  resolution_already_active:0 "£trigger_no£ 此决议案已生效。"
+ exclusive_resolution_already_active:0 "£trigger_no£ 已经启用另一个议案"
 
  environment_technology:0 "环境和科技"
  commerce_industry:0 "商贸和工业"
@@ -1082,7 +1084,7 @@
 
  resolution_galacticstudies_advanced_xenostudies:0 "先进异星研究"
  resolution_galacticstudies_advanced_xenostudies_desc:1 "宇宙中的各种文明身上还有许多值得我们学习的地方。我们应当在所有的太空基地上增设信息获取仪器，以与太空城邦进行更密切的交流合作。"
- resolution_galacticstudies_advanced_xenostudies_tooltip:2 "观测站在§Y观测§!或§Y渗透§!原始文明时可以产出更多的 £society£ §H社会研究点§!。\n\n增强§Y$sm_art_college$§!、§Y$sm_curator_think_tank$§!、§Y$sm_salvager_workshop$§!以及§Y$sm_mercenary_garrison$§!等太空基地建筑的效果。\n\n§Y取缔人工智能§!和§Y对原住民进行被动研究§!政策将被§R禁止§!。"
+ resolution_galacticstudies_advanced_xenostudies_tooltip:3 "观测站在§Y观测§!前超光速文明时可以产出更多的 £society£ §H社会研究点§!。\n\n增强§Y$sm_art_college$§!、§Y$sm_curator_think_tank$§!、§Y$sm_salvager_workshop$§!以及§Y$sm_mercenary_garrison$§!等太空基地建筑的效果。\n\n§Y取缔人工智能§!和§Y$interference_not_allowed$§!政策将被§R禁止§!。"
 
  resolution_galacticstudies_ethical_guideline_refactoring:0 "重构伦理准则"
  resolution_galacticstudies_ethical_guideline_refactoring_desc:0 "追寻更加深刻的科学原理迫使我们从陈腐的伦理观念的禁锢中解放出来。我们做我们必须做的事，因为我们能做。"
@@ -1184,7 +1186,7 @@
 
  resolution_commerce_underdeveloped_system_utilization:0 "欠发达星系利用"
  resolution_commerce_underdeveloped_system_utilization_desc:0 "对我们影响力范围内的星系而言，未能最大限度榨取其价值是一种浪费犯罪。我们建议照此强制执行，并对不达标者予以相应的处罚。"
- resolution_commerce_underdeveloped_system_utilization_tooltip:0 "观测站在§Y观测§!或§Y渗透§!原始文明时生产£consumer_goods£ §G消费品§!"
+ resolution_commerce_underdeveloped_system_utilization_tooltip:1 "观测站在§Y观测§!前超光速文明时产出£consumer_goods£ §G消费品§!"
 
  resolution_commerce_holistic_asset_coordination:0 "整体资产协调"
  resolution_commerce_holistic_asset_coordination_desc:0 "为了促进更优化的物流输出，我们应当齐心协力共创便捷的银河基础设施，以提高商贸和信息共享的效率。"
@@ -1547,6 +1549,10 @@
  #POLITICS TRADITIONS RESOLUTIONS
 
  resolution_category_politics_tradition:0 "权术传统"
+ resolution_category_politics_tradition_1:0 "$resolution_community_champions$"
+ resolution_category_politics_tradition_2:0 "$resolution_constitutional_immunity$"
+ resolution_category_politics_tradition_3:0 "$resolution_development_aides$"
+ resolution_category_politics_tradition_4:0 "$resolution_galactic_threats_committee$"
 
  resolution_community_champions:0 "共同体先锋"
  resolution_community_champions_desc:0 "我们所信任的那些共同体的引领者同时也是共同体最坚定捍卫者的最佳人选。 通过授予他们更多的权力和资源，使他们得以保护我们大家。"
@@ -1564,14 +1570,14 @@
  resolution_galactic_threats_committee:0 "银河威胁委员会"
  resolution_galactic_threats_committee_desc:0 "谁能断言在我们的探测器范围之外没有威胁正在蠢蠢欲动？创建一个专门研究银河级威胁的委员会将会让我们做好面对一切的准备。"
  resolution_galactic_threats_committee_modifier_desc:0 "对终末危机阵营造成的伤害：§G+20%§!\n§R+10%§!研究人员维护费。\n§R危险的实验或许有危险的结果。§!"
- resolution_community_champions_repeal:0 "废除$community_champions$"
- resolution_community_champions_repeal_desc:0 "废除§Y$community_champions$§!议案。"
+ resolution_community_champions_repeal:1 "废除$community_champions$"
+ resolution_community_champions_repeal_desc:1 "废除§Y$community_champions$§!议案。"
  resolution_constitutional_immunity_repeal:0 "废除$resolution_constitutional_immunity$"
  resolution_constitutional_immunity_repeal_desc:0 "废除§Y$resolution_constitutional_immunity$§!议案，该帝国现在又可能被判为违反银河法了。"
- resolution_development_aides_repeal:0 "废除$development_aides$"
- resolution_development_aides_repeal_desc:0 "废除§Y$development_aides$§!议案"
- resolution_galactic_threats_committee_repeal:0 "废除$galactic_threats_commitee$"
- resolution_galactic_threats_committee_repeal_desc:0 "废除§Y$galactic_threats_commitee$§!议案"
+ resolution_development_aides_repeal:1 "废除$development_aides$"
+ resolution_development_aides_repeal_desc:1 "废除§Y$development_aides$§!议案"
+ resolution_galactic_threats_committee_repeal:1 "废除$galactic_threats_commitee$"
+ resolution_galactic_threats_committee_repeal_desc:1 "废除§Y$galactic_threats_commitee$§!议案"
  community_champion_counselor:0 "$resolution_community_champions$"
  community_champion_custodian:0 "$resolution_community_champions$"
  community_champion_emperor:0 "$resolution_community_champions$"
@@ -1579,7 +1585,9 @@
  galactic_threats_commitee:0 "$resolution_galactic_threats_commitee$"
 
  FACTION_OUTRAGED_GC:0 "党派被激怒"
- FACTION_OUTRAGED_GC_DESC:1 "该党派因我们近期在[global_event_country.GetGalCommunityOrGalImperium]中提出并通过的一项决议案而极度§R愤怒§!。"
+ FACTION_OUTRAGED_GC_DESC:2 "[root.GetName]因我们近期在[global_event_country.GetGalCommunityOrGalImperium]中提出并通过的一项议案而§R极度愤怒§!。"
+ FACTION_PLEASED_GC:0 "派系感到满意"
+ FACTION_PLEASED_GC_DESC:0 "[root.GetName]因我们近期在[global_event_country.GetGalCommunityOrGalImperium]中提出并通过的一项议案而§G感到满意§!。"
 
  DIPLOMATIC_SUPPORT_VALUE:0 "$VALUE|Y$"
  SUPPORTERS:0 "支持者"
@@ -2276,13 +2284,13 @@
  origin.1310.desc:1 "[Leader.GetName]已成功修复了外星人录音中损坏的部分：\n\n§Y“我们追寻祖先的赎罪步伐，来到了这个星系。我们的祖先在这里灭亡了$NAME_ThwaaPhyr$种族。那时我们不知道$NAME_ThwaaPhyr$掩藏了另一个种族——[Root.Owner.GetSpeciesName]。他们压制了[Root.Owner.GetSpeciesNamePlural]的智力能力，使之变成对我们无害的原始人。\n\n这种效果是不可逆的。[Root.Owner.GetSpeciesName]仍然只是野兽。现在，我们希望有一天他们能够重返太空，并希望他们找到我们留下的赎罪标记。”§!\n\n就这样，我们的历史得到了解释。现在，让我们关注未来。"
  origin.1310.a:0 "接受这一切，并迈步前行。"
  origin.1315.name:0 "假旗行动"
- origin.1315.desc:1 "在一堵假石洞墙后面，考古队发现了很多数据片段。在仔细检查后，一个故事浮出了水面。\n\n很久以前，施恩者陷入了困境，两个主要阵营之间争夺统治权。为了取得优势，一方执行了假旗行动，冒充另一方攻击了一个弱小的种族——也就是我们的祖先。\n\n名为“突触阻尼炸弹”的装置在我们的母星上爆炸。它对环境不造成破坏，但其脉冲破坏了我们祖先的大脑，将他们变成原始人。\n\n留给我们的赠礼表明，施恩者最终寻求赎罪。"
+ origin.1315.desc:2 "在一堵假石洞墙后面，考古团队发现了一系列数据片段。它们揭示了这样一个故事：\n\n很久以前，两个主要阵营之间发生了主权的争夺战，施恩者一方陷入了僵局。为了取得优势，一方发起了一场假旗行动，冒充另一方攻击了一个弱小的种族——也就是我们的祖先。\n\n名为“突触阻尼炸弹”的装置在我们曾经的母星上爆炸。它未对环境产生破坏，但其脉冲影响了我们祖先的大脑，使他们退化了。\n\n留给我们的赠礼表明，施恩者最终寻求赎罪。"
  origin.1315.a:0 "我们不是棋子！睁大眼睛看清楚！"
  origin.1320.name:0 "恩惠不过梦一场"
  origin.1320.desc:1 "发掘小队在一堵假墙后面发现了一个记录装置，里面是一位施恩者的自白。\n\n很久以前，施恩者通过技术手段使我族“失了智”，以隐藏我们免遭某种迫在眉睫的银河威胁。尽管这可能出于好心，但威胁过后，施恩者并未尝试恢复我们祖先的神智，他们抛弃了我们。\n\n在我们母星系发现的遗迹和技术是一个独立团体留下的恩赐。这个团体同情我们那已陷于蒙昧的前辈。"
  origin.1320.a:0 "看看我们！我们不需要施舍。"
  origin.1325.name:0 "愿尔安好"
- origin.1325.desc:1 "在假墙后面，发掘小队发现了一个录音设备，设备包含神秘施恩者留下的消息。\n\n他们正在与一些无名的恶毒的好战外星种族展开一场绝望的战争。为了使我们远离敌人的进攻，他们使用技术压制了我们祖先的思维能力，希望敌人不要理会一个孤立行星上的原始物种。\n\n这对我们是有用的，但最终施恩者的命运却走到了尽头。他们给我们留下了这些隐藏的资源和技术贮藏，希望有一天我们能找到它们。"
+ origin.1325.desc:2 "在假墙的后面，发掘队发现了一个录音设备，其中包含神秘的施恩者留下的消息。\n\n他们正在与一些恶毒、令人作呕的外星人种族进行一场绝望的战争。为了使我们远离敌人的进攻，他们使用技术破坏了我们祖先的思维能力，希望敌人不要理会一个孤立的星球上的[Owner.GetPreFTLLower]物种。\n\n这对我们是有用的，但最终施恩者们的命运却走到了尽头。他们给我们留下了这些隐藏的资源库存和技术，希望有一天我们能找到它们。"
  origin.1325.a:0 "真是悲惨的末路。"
  origin.1330.name:0 "下一步"
  origin.1330.desc:1 "最终，我们真实遗产中遗失的片段解释了我们历史中不一致之处。我们一度以为，我们文明的进步靠的是我们自己，孤独又独立。现在我们知道了，我们一直§L屹于巨人之肩§!。\n\n我们无法改变过去。我们应当释然并继续前进——不把过去视作沉重的负担，而是视作迈向未来的垫脚石。\n\n§Y是我们成为巨人的时候了。§!"
@@ -2309,7 +2317,7 @@
  origin.1351.name:0 "航迹的终点"
  origin.1351.desc:1 "在这个未经探索的星系中，施恩者的航迹消失了。我们的远程传感器未发现任何异常，但我们应该对星系开展适当的调查，看看我们能找到什么。"
  origin.1355.name:0 "最终休憩"
- origin.1355.desc:0 "在这个星系内发现的原始物种不是别的，正是§Y$NAME_ThwaaPhyr$§!——在我们的文化中，更常用的称呼是§L施恩者§!。\n\n我们的异种学家对细节还不确定，但一切都表明，不知何故，他们成为了自己心智抹除技术的牺牲品，被留在这颗行星上自生自灭。没有人比我们更清楚这种命运的含义。\n\n我们应该仔细考虑接下来的行动。"
+ origin.1355.desc:1 "在这个星系中发现的[GetPreFTLLower]物种不是别的，正是§Y$NAME_ThwaaPhyr$§!——在我们的文化中，更常用的称呼是§L施恩者§!。\n\n我们的异种学家对细节还不确定，但一切都表明，不知何故，他们成了自己的神智抹除技术的牺牲品，被留在这个星球上自生自灭。没有人比我们更清楚这种命运的含义。\n\n我们应该仔细考虑接下来的行动。"
  origin.1360.name:0 "结局"
  origin.1360.desc:1 "有时宇宙中的事件会以最诗意的方式展开。我们祖先曾经无可争议的主人，$NAME_ThwaaPhyr$，最终与我们的祖先遭受了同样的命运。\n\n无论他们的本意如何，我们都必须承认，他们在某种程度上试图挽回他们绝望和过激的行为。\n\n世世代代过去了，双方地位颠倒了过来，我们还了他们的恩惠。\n\n就像[Root.Owner.GetSpeciesName]族曾经经历过的那样，现在是时候让$NAME_ThwaaPhyr$体验站在巨人肩膀上的感受了。"
  origin.1360.a:0 "祝好运！"
@@ -2462,11 +2470,20 @@
  galcom.63.desc:1 "随着[From.GetName]选择离开[global_event_country.GetGalCommunityOrGalImperium]，我们不得不执行[global_event_country.GetGalCommunityOrGalImperium]宪章中的一项晦涩难懂的条款，其大意是只有成员国才能主导银河贸易市场。原先位于[galactic_market_station_system.GetName]的旧总部现已被拆除，最后一批商人不情愿地离开了他们的摊位，哀叹这一剧烈的、在他们看来不必要的步骤对银河贸易造成的巨大破坏。对新总部落址地的提名已经开始，[global_event_country.GetGalCommunityOrGalImperium]商务委员会发表声明，对当前形势表示遗憾，并保证将尽快找到新主办国。"
  galcom.63.A:0 "也许这对我们而言是次机会……"
  galcom.63.B:0 "那我们只能嘲笑他们的愚蠢了。"
+ galcom.64.name:0 "$galcom.63.name$"
+ galcom.64.desc:2 "银河共同体已经表态，并发起新一轮竞争来迁移泛银河贸易市场。位于[market_founder_planet.solar_system.GetName]星系的市场总部已被拆除，尽管心不甘情不愿，最后一批商人今天还是离开了他们的哨所，哀叹着迁移市场造成的大规模星系贸易中断，在他们看来，采取这种兴师动众的举措完全是画蛇添足。总部新址的提名已经开启，共同体贸易委员会发表了一则声明，对目前的情况表示抱歉，并承诺将尽快确定新的市场东道主。"
+ galcom.69.name:0 "泛银河贸易市场留在原址"
+ galcom.69.desc:0 "我们迁移泛银河贸易市场的动议不幸失败。尽管我们的努力争取到了大量口头支持，却没有转化为新地点的足够提名。\n\n这一意见原则上仍然合理：[global_event_country.GetGalCommunityOrGalImperium]今后还是可以再次提出迁移市场。然而就目前而言，这个商业机构仍然由获利丰厚的[market_founder.GetName]进行管理。"
+ galcom.70.desc:0 "泛银河商业最近经历了一次短暂而混乱的复苏，有消息称迁移泛银河市场的努力已经失败。尽管[global_event_country.GetGalCommunityOrGalImperium]声明希望迁移这一机构，但他们没有收到任何替代东道主的可靠提名。因此，[market_founder.GetName]将继续担任其东道主，直到政治变革的风向再次转向，通过投票寻找到替代。"
+ galcom.70.desc.founder:0 "泛银河的政治意愿显然与其市场的意愿不一致。在引起了广泛的金融混乱之后，[global_event_country.GetGalCommunityOrGalImperium]想要取消我们作为其专属交易中心东道主的努力已经失败，因为没有其他帝国给出有效的东道主提名。\n\n这项动议的支持者们不为所动，断言泛银河市场随时可能根据商业需要进行迁移到别处。不过就目前而言，在经历了这么多忙乱之后，泛银河最重要的商人们还是更愿意相信我们。"
 
  origin_fallen_empire:0 "长者后裔"
  origin_fallen_empire_desc:0 "此文明的诞生远早于这一代银河列强。亿万年的停滞使他们的帝国逐步沦为昔日辉煌的些微阴影。"
  origin_enlightened:0 "启蒙开化"
  origin_enlightened_desc:0 "此文明的自然发展因另一方的介入而大幅加速，这帮助其发展为一个星际文明。"
+
+ origin_default_pre_ftl:0 "发展中文明"
+ origin_default_pre_ftl_desc:0 "该文明还未能进行太空航行，然而只需稍加鼓励或是等待足够长的时间，他们可能就会登上星系舞台了。"
 
  origin_void_dwellers:0 "虚空居者"
  origin_void_dwellers_desc:0 "此文明自有记录以来便以太空为家——他们对典型行星环境下的生活深恶痛绝。他们生活在三个轨道栖所上，直至近期才一统。"
@@ -2948,7 +2965,6 @@
  challenge_type_bidding_war_desc:0 "所有先进文明的奇迹最终都可以追溯回一个基本概念：可用资源。统治的权力不应以脑的大小或手臂的力量来衡量，而应以口袋的深度来衡量。\n\n§Y胜利将取决于：\n- 可用的（£energy£）能源点数\n- 使用的（£energy£）能源点数§!\n\n§H投标需要预付。最后所有投标资金的用途由获胜者决定。§!"
  challenge_type_thesis_desc:0 "象征着领导权的战袍不可落入无知者或者蠢货手中。取而代之的是，我们选择采用科学的试炼：通过公开审核让统治者和帝国的智慧和见识暴露于公众的目光之下，每个领导者都要研究最近我联邦面临的议题。\n\n§Y胜利将取决于：\n- 统治者的领袖和科学家特质\n- 科技等级§!\n\n§H每篇论文将在60天内评议§!\n\n§R在考核期间缺乏统治者和至少一位科学家的帝国将丧失资格。§!"
  requires_psionic_pops:0 "需要至少一个成员国拥有具有§Y$trait_psionic$§!或§Y$trait_latent_psionic$§!特质的人口。"
-
  challenge_type_conclave_desc:0 "灵魂的纯洁与对传统价值的追寻当成为我们选举领袖的关键。只有最受到神灵眷顾的才有资格领导我们。\n\n§Y胜利将取决于：\n- 从事$job_priest_plural$或其他精神主义岗位的人口比例\n- 凝聚力投资（传统、行星飞升和可用储备）§!\n\n§H每篇论文将会在60天内进行审阅。§!\n\n§R在考核期间缺乏领导人和至少一个科学家的国家将丧失资格。§!"
 
  origin.26.desc:0 "亲爱的[Root.GetSpeciesNamePlural]。一如既往，我们始终保持着对你们的观察。你们的一位领袖吸引了我们的注意。事实上，[desired_leader.GetTitle]§H[desired_leader.GetName]§!的声名已经一路传到了我们的首都。\n\n鉴于[desired_leader.GetHerHis]非比寻常的技能，我们愿意在[scion_master.Capital.GetName]上提供一个永久职位。一份莫大的荣耀，可以这样讲。请尽快安排好对[desired_leader.GetHerHis]调动。"
@@ -3148,10 +3164,10 @@
  CORP_ASK_TO_LEAVE_REFUSE:0 "“[Root.GetAllianceName]的首席成员”——也就是我们——“可以单方面阻止低级成员退出”——也就是你们——“只要首席成员愿意。”抱歉，同伴。你们应该好好读读细则的。"
 
  planet_destruction.1000.name:0 "对[From.GetName]的观测终止"
- planet_destruction.1000.desc.self:0 "尽管对原始文明使用超级武器非常有趣，但这也意味着那里不剩什么可供观测了……"
- planet_destruction.1000.desc.shatter:0 "[FromFrom.Owner.GetName]的部队摧毁了[From.GetName]的[From.GetPlanetMoon]，杀害了星球表面繁荣的原始文明。作为结果，那里不剩什么可供观测了……"
- planet_destruction.1000.desc.shield:0 "[FromFrom.Owner.GetName]的部队已经将[From.GetName]包裹在了不可穿透的护盾中，使我们无法继续观测星球表面繁荣的原始文明……"
- planet_destruction.1000.desc.neutron:0 "[FromFrom.Owner.GetName]的部队已经清除了[From.GetName]表面繁荣的原始文明。作为结果，那里不剩什么可供观测了……"
+ planet_destruction.1000.desc.self:1 "尽管对[GetPreFTLLower]文明使用超级武器非常有趣，但这也意味着那里已经没什么剩下的可供观测了……"
+ planet_destruction.1000.desc.shatter:1 "[FromFrom.Owner.GetName]的部队摧毁了[From.GetName]的[From.GetPlanetMoon]，杀害了滋生在星球表面的[GetPreFTLLower]文明。结果就是，这里已经没什么剩下的可供观测了……"
+ planet_destruction.1000.desc.shield:1 "[FromFrom.Owner.GetName]的部队已经将[From.GetName]包裹在了不可穿透的护盾中，使得我们不可能继续对滋生在星球表面上的[GetPreFTLLower]文明继续进行观测……"
+ planet_destruction.1000.desc.neutron:1 "[FromFrom.Owner.GetName]的部队已经将滋生在[From.GetName]的[GetPreFTLLower]文明进行了清除。结果，这里已经没什么剩下的可供观测了……"
  planet_destruction.1000.A:0 "那就这样吧。"
  planet_destruction.1000.B:0 "对那些被飞速转化为等离子体的人来说，他们挥舞得不错。"
 
@@ -3195,7 +3211,7 @@
  BUILD_PLAN_DETAILS:0 "建造计划细节保存设置为$BOOL|Y$"
 
  action.123.name:0 "最后的[From.GetSpeciesNamePlural]被劫掠"
- action.123.desc:0 "最后的原始§H[From.GetSpeciesNamePlural]§!被从[From.From.GetName]，他们的母星，表面上被劫掠作奴隶。一些离散的生存者可能还在[From.From.GetPlanetMoon]的野外徘徊，但是已经不足以维持任何形式的文明了。"
+ action.123.desc:1 "最后一个[GetPreFTLLower]§H[From.GetSpeciesNamePlural]§!被从他们的母星[From.From.GetName]上被绑架作为奴隶。一些离散的幸存者可能还会在[From.From.GetPlanetMoon]的野外中徘徊，但是已经不足以维持任何形式的文明了。"
  action.123.a:0 "他们会好好服侍我们的。"
  pc_shattered_2:0 "$pc_shattered$"
  pc_shattered_2_desc:0 "$pc_shattered_desc$"
@@ -3207,6 +3223,9 @@
  galcom_2_nay:0 "我们将不支持创立银河共同体。"
  action.1.desc_89:0 "你…你是[From.GetSpeciesNamePlural]？这真是不可思议……你一定是尤利西斯计划的幸存者！地球上的每个人都认为方舟都失踪了，但显然至少有一艘成功了！你是说你的祖先在秋菊号上吗？\n\n这肯定很不容易，但你们似乎确实干得不错。我谨代表地球人民和联合国大会的成员，向我们在[Root.GetName]的兄弟姐妹伸出友谊之手。\n\n让我们共同努力，为全人类建设更美好的未来。"
  action.1.desc_90:0 "[From.GetName]……所以这么多年过去了，联合国还是设法保持了对权力的控制？你必须原谅我们——当我们的祖先乘坐尤利西斯方舟离开地球时，地球上有些混乱。许多人认为你们在另一次世界大战中毁灭了自己，或者成了外星人入侵的受害者。\n\n当然，你看起来比我们当时腐败的地球当局更强大、更有能力。我们的祖先从无到有地建立了[contact_empire.GetName]。我们将保卫它到最后。我们将看看你是否值得我们尊敬。"
+ action.1.desc_91:0 "啊，宇宙是多么神奇…在发生了这么多事之后，我们又相遇了。但请不要担心，$NAME_MSI_country$会代表董事会，随时准备再次协助你。\n\n当然，我们不能就此忽视公司财产遭受的损失。我们的收款代理人如果还没有与你们联系，想必很快就会了。希望我们能够达成一个友好的解决方案。\n\n我们生活在一个十分有趣的时代，不是吗？请允许我率先祝贺你们的人民取得了令人难以置信的进展。我们很期待检验你们的成长。"
+ action.1.desc_92:0 "啊，我们昔日的资产…再见到你们简直太高兴了。请允许我代表$NAME_MSI_country$的董事会，率先祝贺你们和…人民所取得的进步。出身如此卑微却能取得这样的成就，实属不易。\n\n如果你们有需要，请不要犹豫，尽管联系我们。我们不记仇。毕竟，欠发达社会不能真正为自己的行为负责。在这方面，你们就如孩童一般。"
+ action.1.desc_93:0 "谨代表$NAME_MSI_country$的董事会，请接受我们衷心的问候。在$NAME_MSI_country_initials$，我们相信通过技术和贸易能够增强其他文明的能力。毕竟，每个有智识的生命体都有权实现自己的梦想。\n\n迄今为止，我们已经为几十个前超光速星球提供了知识，并计划在未来十年内将这个数字增加 40%。我们还提供财政援助和专业的契约劳动服务，来支持泛银河的众多航天帝国。\n\n如果你们有需要，请不要犹豫，尽管联系我们。我们很期待与你们做生意！"
  starbase_citadel_trigger:0 "£trigger_no£ 太空基地需要升级到§Y卫城§!级"
  starbase_titan_yards_trigger:0 "£trigger_no£ 太空基地需要§Y$sm_titan_yards$§!建筑"
  starbase_colossal_yards_trigger:0 "£trigger_no£ 太空基地需要§Y$sm_colossus_yards$§!建筑"
@@ -3340,7 +3359,6 @@
  fedel.1825.desc:0 "在一阵密集的鼓点之后，一阵薄雾从慢慢打开的教团密室中徐徐飘出。一位代表登上前台。现场鸦雀无声，安静到全[Root.GetAllianceName]都能听见一根针掉到地上的声音。\n\n他们宣布，§Y[conclave_winner.GetName]§!被选为下一任主席！"
  fedel.1825.A:0 "我们必能牧好人群。"
  fedel.1825.B:0 "愿他们能好好领导我们。"
-
 
  ####################################
  # Event Chains
@@ -3609,7 +3627,7 @@
  FED_WE_WILL_NOT_SUBMIT:0 "我们绝不屈服！"
  FED_WE_WILL_BE_IN_BREACH:0 "我帝国将会§R违反银河法§!。"
 
- federations.10100.desc:1 "[global_event_country.GetGalCommunityOrGalImperium]已经通过了§Y$resolution_galacticstudies_advanced_xenostudies$§!决议案，禁止§Y$ai_outlawed_name$§!，同时禁止对原始文明采用§Y$interference_passive_name$§!政策。\n\n我国现违背该决议案内容，是否要修改对应政策以遵守决议案？"
+ federations.10100.desc:2 "[global_event_country.GetGalCommunityOrGalImperium]已经通过了§Y$resolution_galacticstudies_advanced_xenostudies$§!议案，禁止§Y取缔人工智能§!，同时禁止对[GetPreFTLLowerPlural]种群采用§Y不干涉政策§!。\n\n我国现在与该议案内容相违背，是否要修改对应政策以遵守议案？"
  federations.10100.change_ai:0 "我帝国会将我们的§Y$policy_artificial_intelligence_policy$§!政策调整为§Y$ai_servitude$§!。"
  federations.10100.change_interference:0 "我帝国会将我们的§Y$policy_interference$§!政策调整为§Y$interference_active$§!。"
 

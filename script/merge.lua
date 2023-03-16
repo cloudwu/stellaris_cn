@@ -1,159 +1,356 @@
-local en_path = "../en/localisation/english/"
-local cn_path = "../cn/localisation/english/"
-local diff_path = "../diff/"
+local filelist = require "filelist"
 
-local function readfile(filename)
-	local f = io.open(filename, "rb")
-	if not f then
-		return {}
-	end
-	local dict = {}
-	for line in f:lines() do
-		local key,dig,value = line:match("^ ([%w%._%-]+):(%d*) (.*)")
-		if key then
-			dict[key] = { d = dig , v = value }
-		end
-	end
-	f:close()
-	return dict
+local root = "../"
+--_VERBOSE = true
+
+local list = filelist.filelist()
+
+local function readlist(path, ...)
+	return filelist.readlist(root .. path .. "/", ...)
 end
 
-local function readdiff(filename)
-	local diff = {}
-	local lineno = 0
-	for line in io.lines(filename) do
-		lineno = lineno + 1
-		local command, key, dig, v = line:match("(%w+) +([%w%._-]+):(%d*) (.*)")
-		if command == nil then
-			print(filename, lineno, "is empty")
+local data = {
+	official_cn = readlist("cn3.7", list, { ["_english"] = "_simp_chinese" }),
+	cloudwu_cn = readlist("cn3.6/localisation/english", list),
+	en_last = readlist("en3.6/localisation/english", list),
+	en_current = readlist("en/localisation/english", list),
+}
+
+local function english_only(en, s)
+	en = en:gsub("%$[%w_]+%$", "")
+	en = en:gsub("[\"%s]", "")
+	if en == "" then
+		return true
+	end
+	if s then
+		for p, c in utf8.codes(s) do
+			if c >= 0x4e00 then
+				return false
+			end
 		end
-		local value = diff[key]
-		if value == nil then
-			value = {}
-			diff[key] = value
+		return true
+	end
+end
+
+local function tags(s)
+	local r = {}
+	local n = 1
+	for k in s:gmatch "%b[]" do
+		r[n] = k
+		n = n + 1
+	end
+	return r
+end
+
+local function diff_tags(a,b)
+	if a:gsub("%b[]", "[]") == b:gsub("%b[]", "[]") then
+		-- 只有 tag 变化
+		local tag_a = tags(a)
+		local tag_b = tags(b)
+		local r = {}
+		for i = 1, #tag_a do
+			if tag_a[i] ~= tag_b[i] then
+				local o = r[tag_a[i]]
+				r[tag_a[i]] = tag_b[i]
+				if o then
+					assert(o == tag_b[i])
+				end
+			else
+				assert(r[tag_a[i]] == nil)
+			end
 		end
-		value[command] = { d = dig, v = v }
+		return r
+	end
+end
+
+local function fix_tags(s, diff)
+	return (s:gsub("%b[]", function (tag)
+		return diff[tag] or tag
+	end))
+end
+
+local ARTICLE = {
+	a = true,
+	an = true,
+	the = true,
+}
+
+local function small_changes(a, b)
+	local function split(s)
+		local r = {}
+		local n = 1
+		for w in s:gmatch("[^%s\"%.%,]+") do
+			r[n] = w
+			n = n + 1
+		end
+		return r
+	end
+	local w1 = split(a)
+	local w2 = split(b)
+	local i = 1
+	local j = 1
+	while i <= #w1 do
+		local aa = w1[i]
+		local bb = w2[j]
+		if bb == nil then
+			-- 新句子被截断
+			return false
+		end
+		if aa == bb then
+			i = i + 1
+			j = j + 1
+		elseif ARTICLE[aa] then
+			-- 忽略冠词
+			i = i + 1
+		elseif ARTICLE[bb] then
+			j = j + 1
+		else
+			-- 去掉复数
+			aa = aa:gsub("(e?s?)$", "")
+			bb = bb:gsub("(e?s?)$", "")
+			aa = aa:lower()
+			bb = bb:lower()
+			if aa == bb then
+				i = i + 1
+				j = j + 1
+			else
+				return false
+			end
+		end
+	end
+	if j >= #w2 then
+		return true
+	else
+		-- 追加句子
+		return false
+	end
+end
+
+local terms = {
+	{ "恒星基地" , "太空基地" },
+	{ "恒星系" , "星系" },
+	{ "泛星系",  "泛银河" },
+	{ "星系理事会",  "银河理事会" },
+	{ "星系议案", "银河议案" },
+	{ "整个星系", "整个银河" },
+	{ "全星系", "银河" },
+	{ "星系法", "银河法" },
+	{ "星系视图", "银河视图" },
+	{ "星海", "银河" },
+	{ "星_系" , "星系" },
+	{ "重力井" , "引力井" },
+	{ "农业区划", "农业区" },
+	{ "工业区划", "工业区" },
+	{ "贸易区划", "贸易区" },
+	{ "采矿区划", "矿业区" },
+	{ "居住区划", "居住区" },
+	{ "区划", "地区" },
+	{ "区段", "区块" },
+	{ "傻逼", "蠢货" },
+	{ "唯心主义", "精神主义" },
+	{ "唯物主义", "物质主义" },
+	{ "虚境", "天幕" },
+	{ "缇扬奇", "天凯" },
+	{ "位面之魇", "次元恶魔" },
+	{ "异星天然气", "奇异瓦斯" },
+	{ "易爆微粒", "高爆粉尘" },
+	{ "海军容量", "军舰容量" },
+	{ "海军", "舰队" },
+	{ "飞升天赋",  "飞升特典" },
+	{ "国民理念", "公民性" },
+	{ "失落帝国", "堕落帝国" },
+	{ "盖亚", "盖娅" },
+--	{ "宣称", "领土主张" },
+	{ "宿敌", "劲敌" },
+	{ "赛博勒克斯", "赛博霸王" },
+	{ "策展人", "典藏研究所" },
+	{ "雪拉企业", "旭然集团" },
+	{ "里甘", "瑞甘" },
+	{ "穆塔根", "穆塔钢" },
+	{ "泽珞", "卓尘" },
+}
+
+local function term_fix(s)
+	for _, t in ipairs(terms) do
+		s = s:gsub(t[1], t[2])
+	end
+	return s
+end
+
+local function fix(s)
+	local s = term_fix(s)
+	s = s:gsub ("#%s*%[LocEditor:ForFutureBatchExport%]%s*$", "")
+	return s
+end
+
+local function add_values(s)
+	local r = {}
+	local n = 1
+	for v in s:gmatch "§%u[+-]%d+%%?§" do
+		r[n] = v
+		n = n + 1
+	end
+	return r
+end
+
+local function check_add(a, b)
+	local aa = add_values(a)
+	local bb = add_values(b)
+	if #aa ~= #bb then
+		return true
+	end
+	for i, v in ipairs(a) do
+		if v ~= b[i] then
+			return true
+		end
+	end
+	return false
+end
+
+local function entry(data, key, diff)
+	local r = { d = data.en_current[key].d }
+	local en = data.en_last[key]
+	local needfix = false
+	local current_en = data.en_current[key].v
+
+	local function mark(tag)
+		table.insert(diff[tag] , {
+			line = string.format("%s(%d)", data.en_current[key].filename, data.en_current[key].line),
+			key = key,
+			en = data.en_current[key].v,
+			entry = r.v,
+		})
+	end
+
+	local function get_official()
+		local cn = data.official_cn[key]
+		if cn then
+			-- 取官方翻译
+			if english_only(current_en, cn.v) then
+				r.v = current_en
+				return false
+			else
+				local fixed = fix(cn.v)
+				r.v = fixed
+				if check_add(current_en, fixed) then
+					mark "error"
+				end
+			end
+		else
+			if english_only(current_en) then
+				r.v = current_en
+				return false
+			end
+			-- 官方漏翻，取英文
+			r.v = current_en .. " # TODO"
+		end
+		return true
+	end
+
+	if en then
+		-- 上一版也有该英文条目
+		if en.v == current_en then
+			-- 英文没有变化，保留上一版中文翻译
+			local cn = data.cloudwu_cn[key]
+			if cn then
+				r.v = cn.v
+			else
+				if get_official() then
+					mark "omit"
+				end
+			end
+		else
+			local diff = diff_tags(en.v, current_en)
+			if diff then
+				-- 只有 tag 变化
+				r.v = fix_tags(data.cloudwu_cn[key].v, diff)
+			elseif small_changes(en.v, current_en) then
+				-- 只有微小的变化，保留上个版本
+				r.v = data.cloudwu_cn[key].v
+			else
+				-- 原文有变化
+				if get_official() then
+					mark "change"
+				end
+			end
+		end
+	else
+		-- 新增加条目
+		if get_official() then
+			mark "add"
+		end
+	end
+	data.output[key] = r
+end
+
+local function merge(data)
+	local diff = {
+		omit = {},
+		change = {},
+		add = {},
+		error = {},
+	}
+	for k,v in pairs(data.en_current) do
+		entry(data, k, diff)
 	end
 	return diff
 end
 
-function file_exists(name)
-	local f=io.open(name,"r")
-	if f~=nil then io.close(f) return true else return false end
+local function sort(diff)
+	local function comp(a,b)
+		return a.line > b.line
+	end
+	for k,v in pairs(diff) do
+		table.sort(v, comp)
+	end
+	return diff
 end
 
-local function merge(filename)
-	if not file_exists(diff_path .. filename .. ".diff") then
-		return
-	end
-	local diff = readdiff(diff_path .. filename .. ".diff")
-	local cn_filename = filename	-- :gsub("_english", "_simp_chinese")
-	local cn = readfile(cn_path ..  cn_filename)
-	local f = io.open(cn_path .. cn_filename, "wb")
-	for line in io.lines(en_path .. filename) do
-		local key,dig,value = line:match("^ ([%w%._%-]+):(%d*) (.*)")
-		if not key then
---			if line:find "l_english" then
---				line = line:gsub("english", "simp_chinese")
---			end
-			f:write(line, "\n")
-		else
-			local d = diff[key]
-			if not d then
-				-- not change
-				if cn[key] == nil then
-					print(filename, line, key)
-					f:write(" ", key, ":", dig, " ", value, "\n")	-- use English
-				else
-					f:write(" ", key, ":", dig, " ", cn[key].v, "\n")	-- use 2.1 translation
-				end
-			elseif d.CHANGE then
-				-- use new translation
-				f:write(" ", key, ":", dig, " ", d.CHANGE.v, "\n")	-- use current translation
-			elseif d.CN2 then
-				f:write(" ", key, ":", dig, " ", d.CN2.v, "\n")	-- use 2.2 offical translation
-			else
-				f:write(line, "\n")	-- use english original text
-			end
+data.output = {}
+local diff = merge(data)
+sort(diff)
+
+
+local function output_diff(diff)
+	for k,v in pairs(diff) do
+		for _,v in ipairs(v) do
+			print(k, v.line, v.key)
+			print("  " .. v.en)
+			print("  " .. v.entry)
 		end
 	end
+end
+
+local function gen(output_path, input_path, filename, data)
+	local f = io.open(input_path .. filename, "rb")
+	if not f then
+		return
+	end
+	local wf = assert(io.open(output_path .. filename, "wb"))
+
+	for line in f:lines() do
+		local key,dig,value = line:match("^ ([%w%._%-]+):(%d*) (.*)")
+		if not key then
+			-- 不用翻译
+			wf:write(line, "\n")
+		else
+			local d = data.output[key]
+			wf:write(" ", key, ":", dig, " " , d.v, "\n")
+		end
+	end
+
 	f:close()
+	wf:close()
 end
 
-local list = {
-"achievements_l_english.yml",
-"ai_crisis_l_english.yml",
-"ancient_relics_events_l_english.yml",
-"ancient_relics_l_english.yml",
-"apocalypse_l_english.yml",
-"aquatics_l_english.yml",
-"dip_messages_l_english.yml",
-"diplo_stances_l_english.yml",
-"distant_stars_l_english.yml",
-"dlc_recommendations_l_english.yml",
-"event_chains_l_english.yml",
-"events_2_l_english.yml",
-"events_3_l_english.yml",
-"events_4_l_english.yml",
-"events_5_l_english.yml",
-"events_6_l_english.yml",
-"events_l_english.yml",
-"federations_anniversary_l_english.yml",
-"federations_l_english.yml",
-"federations_resolution_comments_l_english.yml",
-"gamepad_indicator_text_l_english.yml",
-"horizonsignal_l_english.yml",
-"hud_tutorial_l_english.yml",
-"immediate_tutorial_l_english.yml",
-"l_english.yml",
-"leviathans_l_english.yml",
-"lithoids_l_english.yml",
-"mandates_l_english.yml",
-"marauder_l_english.yml",
-"megacorp_l_english.yml",
-"messages_l_english.yml",
-"modifiers_2_l_english.yml",
-"modifiers_3_l_english.yml",
-"modifiers_l_english.yml",
-"modifiers_utopia_l_english.yml",
-"musicplayer_l_english.yml",
-"name_lists_l_english.yml",
-"necroids_l_english.yml",
-"nemesis_content_l_english.yml",
-"nemesis_crisis_l_english.yml",
-"nemesis_custodian_l_english.yml",
-"nemesis_espionage_l_english.yml",
-"nemesis_intel_l_english.yml",
-"new_scripted_loc_l_english.yml",
-"observer_events_l_english.yml",
-"observer_l_english.yml",
-"pop_factions_l_english.yml",
-"plantoids_l_english.yml",
-"prescripted_l_english.yml",
-"projects_2_l_english.yml",
-"projects_3_l_english.yml",
-"projects_4_l_english.yml",
-"projects_5_l_english.yml",
-"projects_l_english.yml",
-"scripted_loc_l_english.yml",
-"ship_browser_l_english.yml",
-"ship_sections_l_english.yml",
-"situations_l_english.yml",
-"situations_victor_l_english.yml",
-"social_gui_l_english.yml",
-"standalone_l_english.yml",
-"synthetic_dawn_events_l_english.yml",
-"technology_l_english.yml",
-"traditions_l_english.yml",
-"triggers_effects_l_english.yml",
-"tutorial_l_english.yml",
-"tutorial_overview_l_english.yml",
-"unrest_l_english.yml",
-"utopia_ascension_l_english.yml",
-"utopia_l_english.yml",
-"utopia_megastructures_l_english.yml",
-}
-
-for _,file in ipairs(list) do
-	merge(file)
+local function output(data)
+	for _, filename in ipairs(list) do
+		gen(root .. "cn/localisation/english/" ,
+			root .. "en/localisation/english/" ,
+			filename, data)
+	end
 end
+
+output(data)
+
+output_diff(diff)

@@ -156,7 +156,7 @@
  anomaly.6800.name:0 "打靶训练"
  anomaly.6800.desc:0 "我们的敏感器发现了[From.GetName]上的舰船残骸是通过某种罕见的方式抵达那里的。这些舰船似乎是从大约数光年以外故意地径直开向小行星，用以测试设计者的推进器的精确度。在对残骸进行深度扫描时，我们找到了那么一艘具有相当完整推进器的舰船。"
  anomaly.6800.a:0 "修复那个推进器！"
- anomaly.6800.b:0 "我们不会浪费那些合金的。"
+ anomaly.6800.b:1 "我们不会浪费那些合金的。"
 
  anomaly.6805.name:0 "小行星敏感中继器"
  anomaly.6805.desc:0 "我们的[Owner.GetScientistPlural]期望在[From.GetName]内部发现稀有资源，结果偶然撞见了一样极其不寻常的东西。这个看起来像是普通小行星的物体事实上是一个长期休眠的中继站，里面有复杂的电子元件和先进的敏感器，用以向某个古老的帝国发送信号。这些撞击也损毁了小行星的一部分内部构造，我们只能从中提取到一个星系。"
@@ -214,7 +214,7 @@
  anomaly.6865.name:0 "快邮"
  anomaly.6865.desc:0 "当[Root.GetName]靠的足够近得以扫描货舱的时候，似乎所有的敏感器都功能失常了。这个舱室使用的[Owner.GetBioAlloy]同我们自己建造太空结构时使用的是完全一样的。这种某些外星生命体发明出了同我们完全一致的复合材料的可能性，根本不可能成立，但在校准了扫描仪之后，我们依然得到了同样的结果。\n\n在打开舱室之后，迎接我们的唯一一样东西是一份文档集，里面详细地阐述了我们应当如何指派我们的每一位[Owner.GetScientistPlural]，以及他们在今后10年应该从事什么研究工作。"
  anomaly.6865.a:0 "将这些笔记发回[Owner.GetHomeWorldName]。"
- anomaly.6865.b:0 "这也太让人害怕了。"
+ anomaly.6865.b:1 "这有点瘆人了。"
  anomaly.6870.name:0 "关闭循环"
  anomaly.6870.desc:0 "在经过几年不顺坦的发展之后，[Root.GetHomeWorldName]的上方出现了一道裂口。令人心惊胆颤的是，这一天的日期和我们之前发现的指示上面所说的末日前夜是同样的。我们现在只有一件事情可以做了：把那些笔记发射到裂口里面，彻底忘掉这件事情曾经发生过。"
  anomaly.6870.a:0 "让过去的我们自己收拾这个烂摊子吧。"
@@ -619,8 +619,8 @@
  terra.50.b:0 "不，这不是这个星球的意图。"
  terra.55.name:0 "完美的组织"
  terra.55.desc:0 "对于蜂群来说，超越自然不是什么新鲜事。在对§Y[From.GetName]§!进行地形改造的过程中，每一座山峦都经过了考量，每一片动物群的放置都经过了战略推演。这个[From.GetPlanetMoon]现在变成了一处组织完美的后勤天堂，方便我们的[Root.GetUnitDronePlural]为蜂群整体的建设添砖加瓦。"
- terra.60.name:0 "出土土著"
- terra.60.desc:0 "在为§Y[From.GetName]§!土地施肥和导入大气的过程中，我们的[Root.GetTerraformerPlural]有了一个意外的发现。在[From.GetName]的地表以下存在一个地下外星人文明。应该是由于[From.GetPlanetMoon]的矿物密度导致此前我们的扫描仪并未发现他们。\n这些土著似乎完全没有意识到行星的地表已经改变，这让我们有了决定如何与他们接触的主动权。"
+ terra.60.name:1 "出土[GetPreFTLUpperPlural]"
+ terra.60.desc:1 "在为§Y[From.GetName]§!土地施肥和导入大气的过程中，我们的[Root.GetTerraformerPlural]有个意外的发现。在[From.GetName]的地表以下存在一个地下外星文明。应该是由于[From.GetPlanetMoon]的矿物密度导致此前我们的扫描仪并未发现他们。\n这些[GetPreFTLLowerPlural]似乎完全没有意识到行星的地表已经改变，这让我们有了决定如何与他们接触的主动权。"
  terra.60.a:0 "真是有趣。"
  terra.60.b:0 "就是说地底下有害虫咯。"
  terra.60.c:0 "看到宇宙并不缺乏智慧生物还挺好的。"
@@ -690,6 +690,7 @@
 
  anomaly.6792.name:0 "乌布梅的幼体"
  anomaly.6792.desc:1 "我们的科研团队得出结论认为，在其命令日志中被称作“乌布梅”的、被遗弃的舰船曾在希洛士星系中进行实验，实验目的是创造合成人生命。反物质约束装置泄露导致舰上人员连同着新出生的“幼儿”一道丧生。但是，在舰船各系统中探测到的少量灵能表明，那个合成生命体的“鬼魂”在事故发生前几秒钟掌控了船只。\n\n可以想象，新生的意识体辗转花费了数个世纪，徒劳地寻找自己的母亲。不幸的是，此时此刻我们没有办法与该实体交流，也无法帮助其取得安宁。目前来看，希洛士星系中大概注定要继续有幽灵船出没了。"
+ anomaly.6792.alt.desc:0 "我们的科研团队得出结论认为，在其命令日志中被称作“乌布梅”的、被遗弃的舰船曾在希洛士星系中进行实验，实验目的是创造合成人生命。反物质约束装置泄露导致舰上人员连同着新出生的“幼儿”一道丧生。在舰船的各系统中，我们探测到了灵能的存在。感觉这里还发生了一些别的事情，一些比单纯的事故更诡异的事情。\n\n很有可能这个合成生命体具有某种潜在灵能力量，它的“鬼魂”在事故发生前几秒钟掌控了船只。如果真是如此，那么这个新生的意识体可能辗转花费了数个世纪，徒劳地寻找自己的母亲。不幸的是，此时此刻我们没有办法与该实体交流，也无法帮助其取得安宁。目前来看，希洛士星系中大概注定要继续有幽灵船出没了。"
  anomaly.6792.a:0 "悲伤的命运。"
  anomaly.6792.b:0 "令人沮丧。"
 
@@ -965,7 +966,7 @@
  harmonious_crew:0 "和谐船员"
 
 
- ##### Negative Mass #####
+##### Negative Mass #####
  
  # Situation 
 
@@ -1135,12 +1136,11 @@
 
  trait_notofthisworld:0 "来自异世"
  trait_notofthisworld_desc:0 "§B该物种并不来自我们宇宙，目前正在缓慢衰变§!。"
- trait_notofthisworld_robot:0 "来自异世"
- trait_notofthisworld_robot_desc:0 "§B该机械并不来自我们的宇宙，目前正在缓慢衰变§!。"
+ trait_robot_notofthisworld:0 "来自异世"
+ trait_robot_notofthisworld_desc:0 "§B该机械并不来自我们的宇宙，目前正在缓慢衰变§!。"
  TRAIT_NOTOFTHISWORLD_EFFECT:0 "每个作为奴隶或更好标准工作的人口每月产出0.5£physics_research£ §Y物理研究§!。"
 
-
-  # Singing Planet
+ # Singing Planet
 
  SINGING_PLANET_CAT:0 "怪异读数"
  SINGING_PLANET_CAT_DESC:0 "这颗行星发射出怪异的磁力波，与我们目前为止所知的一切均大不相同，几乎可以说它就像想要与我们沟通一般。唯有对这一不同寻常的现象进行调查方才符合逻辑——我们可能遇上了一个行星大小生物形态的绝佳个例。"
@@ -1265,7 +1265,7 @@
  colony.9245.a:0 "继续。"
 
  colony.9250.name:0 "锻造厂核心" #starting the project
- colony.9250.desc:0 "[Root.GetName]上的锻造厂的核心是一台遍布管道、传送带的扭曲的机器房间，看起来像是某种工作站。我们的初步扫描和快速调查发现了其缺失能源、维护和若干关键系统。看起来我们对地下室的探索对这台机器的内部工作过程造成了影响。我们可以试着修复它，虽然可能要花费一些时间；当然我们也可以选择设置一个回收厂来拆解整个机械系统。"
+ colony.9250.desc:1 "[Root.GetName]上的锻造厂的核心是一台遍布管道、传送带的扭曲网络，显然是某种工作站。通过快速调查我们发现了其缺失能源、维护和若干关键系统。此外还有充足的证据显示，我们探索这座地下掩体对这座锻造厂的内部工作过程造成了影响。我们可以试着修复它，虽然可能要花费一些时间。作为替代方案，我们也可以选择设置一个回收厂来拆解整个机械系统。"
  colony.9250.a:0 "修复它。" #casual
  colony.9250.a.desc:0 "我们会把机器接入行星电网并且修复它。"
  colony.9250.b:0 "修复并研究。" #technocracy + 1 engineering output
@@ -1353,6 +1353,7 @@
  colony.9301.desc:0 "我们已经获得了对[Root.GetName]独特天气系统的意义非凡的洞见。在拓展了我们对化学元素的理解以外，我们最近的研究还对我们的食物生产带来了积极的影响。"
  colony.9301.a:0 "正面的结论。"
  job_puddle_technician:0 "泥潭技工"
+ job_puddle_technician_plural:0 "泥潭技工"
  job_puddle_technician_desc:0 "食物产出多样化是一个有价值的工作。"
  mod_job_puddle_technician_add:0 "$job_puddle_technician$岗位"
  d_metallic_puddles:0 "金属泥潭"
@@ -1360,6 +1361,7 @@
  d_metallic_puddles_gestalt:0 "$d_metallic_puddles$"
  d_metallic_puddles_gestalt_desc:0 "稀有气候使泥潭技工可以同时收获食物和合金。"
  job_puddle_technician_drone:0 "泥潭技工子个体"
+ job_puddle_technician_drone_plural:0 "泥潭技工子个体"
  job_puddle_technician_drone_desc:0 "利用独特的气候以收获额外资源将有利于集体。"
  mod_job_puddle_technician_drone_add:0 "$job_puddle_technician_drone$岗位"
 

@@ -29,6 +29,7 @@
  aquatics.105.desc.origin_machine:0 "$aquatics.105.desc.origin_start$\n\n尽管我们的处理器进行了重新校准以评估这件壮举的后果，我们却惊讶地发现，我们需要投入相当数量的重构才能实现。曾经存在的龙对我们的编程有相当大的影响，有数十亿个纠错保障来抵消其行动的不可预测性，这将花费一些时间来清理。另一方面，随着这种强大的威胁被清除，我们现在可以期待一个未来，候无论多么难以克服的困难，都无法阻碍我们。"
  aquatics.105.desc.others:0 "我们成功击杀[dragon_system.GetName]星系的守护龙！虽然那是一场艰苦的战斗，但它证明了我们舰队很强大。现在[dragon_planet.GetName]的居民将不得不同样地面对敌人，过去那种认为没有人能过穿越巨龙，他们可以安全地躲在龙背后的认知已经不复存在。\n\n似乎龙的遗骸在我们的[This.GetScientistPlural]看来是名副其实的宝库，他们相信他们可以发现合成生产龙鳞的方法。"
  aquatics.105.A:0 "让我们看看它的遗骸还藏了什么秘密。"
+ aquatics.105.A.tooltip:0 "解锁用于§Y星神兽转基因§!的§Y$trait_drake_scaled$§!特质。"
 
  aquatics.110.name:0 "天龙被杀死"
  aquatics.110.desc:0 "[From.GetName]击杀了天龙！这一可怕的事实导致[dragon_planet.GetName]现在很容易被攻击。"
@@ -119,6 +120,7 @@
  aquatics.215.desc:0 "我们的探针牢牢抓住龙，发现了它鳞片间的一个狭小缝隙并灵巧地钻了进去时，龙愤怒地低吼着。在[Root.GetName]准备强制超光速以回避被激怒的龙的时候，探针已经开始收录令人称奇的数据了。从这些数据中我们发现，其鳞片之所以如此强韧，是由于它在高速进入[dragon_colony.GetName]大气层的过程中，激活的一系列复杂的酶促反应造成的。\n\n虽然还有许多未解之谜，我们的[This.Owner.GetResearchers]算是弄清了一件事：由于龙体生理学的复杂性，如果我们想要获得这种鳞片的材料，唯一的办法是屠龙。尽管如此，他们还是保证已经获得的知识无论如何也是有用的。"
 
  first_contact_dragon:0 "龙的通信"
+ aquatic_events.250.name:0 "$first_contact_dragon$"
  aquatic_events.250.desc:0 "基于我们与许多外星物种构建通讯的成功经历，我们的一位[This.Owner.GetLinguists]提出了一项激进的举措。虽然过去所有与天龙沟通的努力均不幸失败，[needed_name.GetSheHe]坚称[needed_name.GetSXX]现在是进一步尝试的好机会。\n\n根据我们最古老的历史，[This.Owner.Species.GetName]曾一度与龙建立了传说中的契约，正是由它结束的正面冲突。据此，某种程度的互相理解应该是可以达成的。[needed_name.GetSheHe]指出[needed_name.GetSXX]我们过去与外星生命体之间通讯的成功让我们比起过去任何时候都更有能力理解这条巨龙。"
  aquatic_events.250.desc.hive:0 "在成功与数个外星物种成功建立通讯之后，我们的语言思维处理体得出结论，现在正是我们再次同天龙建立对话的时候。尽管最近的努力均不幸失败，我们依旧模糊地回忆起了过去的片段，彼时我们在古老的冲突之后，同这条龙缔结了和平。\n\n现在我们在同形体完全不同的外星生命体打交道上有了更加丰富的经验，我们相较于过去任何时候，都在理解龙这一方面准备的更加充分。"
  aquatic_events.250.desc.machine:0 "在成功与数个外星物种成功建立通讯之后，我们的语言子程序得出了一个全新的共识：现在正是我们再次同天龙建立对话的时候。尽管最近所有有意义的尝试手段均以失败告终，我们的造物主留下的记录显示，达成某种程度的理解是可能的。毕竟，彼时他们应该发生了战斗，然后同龙缔结了和平，尽管是什么愿意我们不得而知。\n\n现在我们在同形体完全不同的外星生命体打交道上有了更加丰富的经验，我们相较于过去任何时候，都在理解龙这一方面准备的更加充分。"
@@ -147,6 +149,7 @@
 
  aquatics.305.name:0 "$aquatics.180.name$"
  aquatics.305.desc:0 "[This.GetName]汇报在[From.GetName]星系目击了一条骇人的太空巨龙！\n\n这个星系似乎是[From.Owner.GetName]的中心，其中一颗行星显示出拥有稠密人口的痕迹。\n\n目前为止，这条龙还没对我们采取行动，也没有与这个恒星系中的另一群居民存在冲突的迹象。也许我们最好还是别管他们吧。" #this event happens during first contact, so [From.Owner.GetName] is 'alpha menace'
+ aquatics.305.desc.pre-ftl:0 "[This.GetName]汇报在[From.GetName]星系目击了一条骇人的太空巨龙！这个星系也正好是[root.GetAAnPreFTLLower][Owner.GetPreFTLLower]文明的家园：其中一颗行星已经显示出了聚落的迹象。\n\n目前为止，这条龙还没对我们采取行动，也没有与这个星系中的另一群居民存在冲突的迹象。也许我们最好还是别管他们吧。" # e.g. 'home to an unsophisticated civilization' or 'home to a pre-FTL civilization'
 
  space_dragon_origin:0 "天龙"
  space_dragon_origin_plural:0 "天龙"

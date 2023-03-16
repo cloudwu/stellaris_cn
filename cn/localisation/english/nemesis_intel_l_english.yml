@@ -40,7 +40,7 @@
  TRIGGER_INTEL_STALE_NOT:0 "$INTEL|Y$对$COUNTRY$尚未过期"
  INTEL_DETAILS:1 "当前情报：$CURRENT_INTEL|Y$/$TARGET_INTEL|Y$"
  INTEL_TARGET_BREAKDOWN:1 "你对$TARGET_EMPIRE|Y$的情报趋于最高的："
- INTEL_TARGET_BREAKDOWN_CONTENT:2 "基础情报：$FROM_MODIFIER|Y$\n外交条约：$FROM_DIPLO_PACTS|Y$\n来自信任：$FROM_TRUST|Y$\n来自渗透：$FROM_SPY_NETWORK|Y$"
+ INTEL_TARGET_BREAKDOWN_CONTENT:3 "基础情报：$FROM_MODIFIER|Y$\n外交条约：$FROM_DIPLO_PACTS|Y$\n来自信任：$FROM_TRUST|Y$\n来自渗透：$FROM_SPY_NETWORK|Y$\n来自主动侦察：$FROM_ACTIVE_RECONNAISSANCE|Y$"
  INTEL_CATEGORY_LEVEL:0 "$CATEGORY$：$LEVEL$"
  INTEL_LEVEL_0:0 "§R无§!"
  INTEL_LEVEL_1:0 "§R低§!"
@@ -93,6 +93,7 @@
  INTEL_INFO_intel_military_fleets:0 "军用舰队位置"
  INTEL_INFO_intel_military_fleet_details:1 "舰船详情"
  INTEL_INFO_intel_military_fleet_orders:0 "当前军用舰队指令"
+ INTEL_INFO_intel_military_cloaked_fleets:0 "隐形舰队"
  INTEL_INFO_intel_military_generals:0 "已雇佣的陆军将领"
  INTEL_INFO_intel_military_starbases:0 "恒星基地位置"
  INTEL_INFO_galactic_community_vote_breakdown:0 "银河共同体投票理由"
@@ -166,7 +167,7 @@
 
  # System and UI stuff
  FIRST_CONTACT_ROLL_CHANCE_TT:0 "§Y$CHANCE|0$%§!的几率§G成功§!，并结束当前时段。\n\n当前时段拥有$INSIGHT_CHANCE|%0Y$的几率获得§Y线索§!，增加未来时段的成功概率。"
- FIRST_CONTACT_INSIGHTS_NEEDED_TT:0 "我们需要另外$INSIGHTS|0Y$个§Y线索§!，或者特使的§Y技能点数§!，才有可能成功完成调查的当前时段。"
+ FIRST_CONTACT_INSIGHTS_NEEDED_TT:1 "我们需要另外$INSIGHTS|0Y$个§Y线索§!，才有可能成功完成调查的当前时段。"
  FIRST_CONTACT_CURRENT_SCORE_AND_HEADER:0 "掷骰之前的现有分数为$SCORE|0Y$。\n\n§E掷骰结果：§!"
  FIRST_CONTACT_ON_ROLL_FAILED_RANGE:0 "（$CHANCE|%0Y$）结果介于$MIN|0Y$与$MAX|0Y$之间。添加$CLUES|0Y$点线索。"
  FIRST_CONTACT_ON_ROLL_FAILED_GREATER_THAN_EQ:1 "（§Y$CHANCE|0$§!）结果大于或等于$MIN|0Y$。此阶段完成。"
@@ -214,11 +215,13 @@
 
  # Events
  seek_friends_tt:1 "我们要与§Y[contact_empire.GetName]§!寻求友好的关系。"
- seek_enemies_tt:1 "我们要提防§Y[contact_empire.GetName]§!的敌意，我们在他们那的间谍网增长提升§G+33%§!。"
+ seek_enemies_tt:2 "我们要提防§Y[contact_empire.GetName]§!的敌意，我们在他们那的间谍网增长提升§G+33%§!。"
  seek_enemies_tt_short:0 "我们应当准备好应对§Y[contact_empire.GetName]§!的敌对行动。"
- seek_isolation_tt:1 "我们要设法与§Y[contact_empire.GetName]§!保持距离，他们在我们这的间谍网增长§R-33%§!。"
+ seek_isolation_tt:2 "我们要设法与§Y[contact_empire.GetName]§!保持距离，他们在我们这的间谍网增长§R-33%§!。"
  seek_isolation_tt_short:0 "我们应当设法与§Y[contact_empire.GetName]§!保持距离。"
- friendship_already_precluded:2 "由于我们已经对§Y[contact_empire.GetName]§!展现过敌意，我们可以用幽默来开脱。"
+ friendship_already_precluded:3 "由于我们已经对[contact_empire.GetName]展现过敌意，我们还是别虚情假意了。"
+ friendship_already_precluded_hostile:0 "由于我们已经对[contact_empire.GetName]展现过敌意，我们还是别虚情假意了。"
+ friendship_already_precluded_slave_origins:0 "与前奴隶主没有友谊。"
  action.1.fe_option:0 "§Y[contact_empire.GetName]§!对我们的外交策略毫不关心。"
  hostile_first_contact_tt:0 "这会被视作§R敌对§!行动。"
 
@@ -252,7 +255,7 @@
  action.1.desc_hostile_to_homicidal_04:0 "你们大可以放马过来，[Root.GetSpeciesNamePlural]，但挣扎是徒劳的：你们还是我们的猎物。"
  action.1.desc_hostile_to_homicidal_05:0 "你们的敌意令人感到不幸。我们曾考虑过像[Root.GetSpeciesNamePlural]一样宽恕你们，但看起来你们至少需要……重新接受教育。"
 
- first_contact_start_title:0 "[This.GetFirstContactStart]"
+ first_contact_start_title:1 "$first_contact.1.name$"
  first_contact.1.name:0 "在[This.System.GetName]的遭遇"
  first_contact.1.desc.base:1 "我们已成功与§H[This.System.GetName]§!星系的神秘外星人建立第一次接触。从今开始至知悉更详细的信息为止，我们将其代称为§H[This.ContactCountry.GetName]§!。"
  first_contact.1.desc.default:0 "$first_contact.1.desc.base$如果他们具有语言，我们必须进行破译才能建立交流。"
@@ -901,6 +904,7 @@
  fcsum_drones_2:0 "我们将§H[This.ContactCountry.GetName]§!识别为用于采矿的机器人，其拥有者已经离开很久了。"
  fcsum_marauders_1:0 "§H[This.ContactCountry.GetName]§!似乎是一个具有完全智能但高度进攻性的文明的一部分。"
  fcsum_pirates_1:0 "$fcsum_marauders_1$"
+ fcsum_neutrals_1:0 "我们所认为的§H[This.ContactCountry.GetName]§!存在于典型航天文明的边界之外。" # country tag returns a country code name, e.g. 'Zayin Aliens'
  fcsum_caravaneers_1:0 "§H[This.ContactCountry.GetName]§!被观测到是一帮穿梭在星系的行商。"
  fcsum_void_clouds_1:0 "fcsum_critters_1"
  fcsum_void_clouds_2:0 "§H[This.ContactCountry.GetName]§!被识别成具有敌意，可能有自我意识的空间碎片云。"
@@ -911,9 +915,13 @@
  #Misc
  first_contact.1060.name:0 "第一次接触协议"
  first_contact.1060.desc.base:0 "我们最近与外星生命形式的遭遇重新燃起了关于我们到底应该如何与潜在智慧外星文明发起接触的古老的争议，并且这个争议突然变得迫在眉睫了。"
+ first_contact.1060.desc.payback.base:0 "我们与外星生命体首次相遇了，这让我们对其他生命体保持警惕。太空中有生命，在探索银河系的过程中，我们无疑会再次遇到智慧生命。但我们打招呼的方式仍有待商榷。"
  first_contact.1060.desc:0 "$first_contact.1060.desc.base$\n\n尽管一些人提倡着力于通过发送和平的信息尽快建立友好关系，另一些声音则建议采取谨慎的态度并指出我们无从得知这些外星文明是否对我们心怀不轨，因而过早让他们过多了解我们是不明智的。\n\n还有一种更激进的团体敦促对其发起先发制人的行动。“为避免[This.GetSpeciesNamePlural]置身危险”他们说，“我们应该毫不犹豫、不择手段地在任何潜在的外星威胁前获取主动权。”"
+ first_contact.1060.desc.payback:0 "$first_contact.1060.desc.payback.base$\n\n尽管一些人提倡尽快建立友好关系，另一些声音则建议小心谨慎，并指出我们的友好天性恰恰导致了我们遭到囚禁和背叛。\n\n还有一种更激进的团体敦促先发制人。“避免重蹈覆辙的最好方法就是先发制人” 他们说，“绝不再向异种人卑躬屈膝！”"
  first_contact.1060.desc.xenophile:0 "$first_contact.1060.desc.base$\n\n尽管一些人提倡着力于通过发送和平的信息尽快建立友好关系，另一些声音则建议采取谨慎的态度并指出我们无从得知这些外星文明是否对我们心怀不轨，因而过早让他们过多了解我们是不明智的。"
+ first_contact.1060.desc.payback.xenophile:0 "$first_contact.1060.desc.base.payback$\n\n虽然我们大多数人都想相信外太空有善良的文明，但其他人却建议谨慎行事，并指出我们的友好天性恰恰导致了我们遭到囚禁和背叛。"
  first_contact.1060.desc.xenophobe:0 "$first_contact.1060.desc.base$\n\n尽管一些人提倡对其发起先发制人的行动，另一些声音则建议采取谨慎的态度并指出我们在与之进入敌对状态之前了解更多关于这些外星人的能力是更明智之举。"
+ first_contact.1060.desc.payback.xenophobe:0 "$first_contact.1060.desc.payback.base$\n\n大家的反应是一致的：避免重蹈覆辙的最好办法就是在他们能够伤害我们之前先发制人。我们不会再向异种卑躬屈膝了!"
  first_contact.1060.desc.gestalt:0 "我们最近与外星生命形式的遭遇对我们如何与遭遇到的任何潜在外星智慧文明提出了需求。\n\n我们的其中一种可行方式是通过发送必要的信息使其便于翻译我们的通讯，以求尽快与之建立和平的接触。然而这也可能在对方对我们不怀好意时显得过于轻率。\n\n最安全的策略是小心行事并试图在不暴露过多我们的信息的前提下与之沟通。 另一方面，我们也可以采取更激进的举措以进一步了解他们并且将其封锁在我们国境之外，然而这样会与其陷入对立。"
  first_contact.1060.A:0 "我们应该张开双臂欢迎外星人。"
  first_contact.1060.A.machine:0 "我们应该张开双臂欢迎外星人。"
@@ -1011,9 +1019,6 @@
  PlanetBio10:0 "星系的第十颗行星，[This.GetAAnPlanetClass][This.GetClassAdj]星球"
  PlanetBio10Moon:0 "[This.GetAAnPlanetClass][This.GetClassAdj]星系第十颗行星的卫星，"
 
- string_a:0 "一个"
- string_an:0 "一个"
-
  #Space Fauna First Contacts
  # Enclaves
  first_contact_critters.1.name:0 "有规律的信号"
@@ -1074,6 +1079,10 @@
  first_contact_critters.90.desc:0 "在[This.System.GetName]星系中侦测到的舰队似乎是某种目的不明的跨星系远航舰队的一部分。他们没有采取任何有敌意的举动，也没有任何显而易见的重型武器。然而他们似乎完全缄默不语，我们无法从他们当中获取任何信号。我们的[This.Owner.GetLinguists]相信他们可以从我们拾获的只言片语中翻译他们的语言，当然这可能要花好长时间。"
  first_contact_critters.95.name:0 "游牧民"
  first_contact_critters.95.desc:0 "我们成功地破解了神秘的§H[This.ContactCountry.GetName]§!语言。我们的[This.Owner.GetLinguists]被难住了好长时间，直到一次他们开始向我们的大致方向上广播时才取得了突破。广播的内容是一条欢迎讯息，其中他们自称为§H“那马里安”§!。看来他们现在愿意与我们交流了。"
+ first_contact_critters.100.desc:0 "我们在[This.System.GetName]星系遭遇的舰队与我们此前在此区域见到的任何东西都不一样。它没有表现出攻击性，但我们眼下只能猜测它的起源或目的。我们最有把握的猜测是，该舰队代表的派别与任何地方当局或文明都没有正式联系。"
+ first_contact_critters.100.a:0 "谨慎行事。"
+ first_contact_critters.105.name:0 "中立舰队"
+ first_contact_critters.105.desc:0 "我们与这支自称是§H[This.ContactCountry.GetRealName]§!的舰队陷入了僵局。 这个不寻常的来客对我们大部分的外交姿态置之不理，但我们可以推断它代表一个独立于银河系文明的中立实体。\n\n我们推测，若舰队有传统意义上的所有者，则需要采取非常措施才能接近他们。考虑到这一点，我们总结了目前的发现，供未来的[this.owner.GetScientistPlural]团队使用（如有必要）。" # though we use a country tag here, the value it returns could be e.g. 'Unscrupulous Salvagers' OR 'Modified Probe', i.e. not a true country
 
  further_fc_tiyanki_completed:0 "由于[This.ContactCountry.GetName]与太空巨鲸应属于同一个物种，因此我们与其的第一次接触也就此宣告成功。\n"
  further_fc_amoebas_completed:0 "由于[This.ContactCountry.GetName]与太空生物应属于同一个物种，因此我们与其的第一次接触也就此宣告成功。\n"

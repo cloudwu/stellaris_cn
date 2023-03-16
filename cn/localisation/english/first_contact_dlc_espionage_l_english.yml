@@ -1,0 +1,394 @@
+﻿l_english:
+ ### Pre-FTL Espionage Operations
+ diplomacy_wrong_interference_policy:0 "$TRIGGER_FAIL$§R我们的§Y$policy_interference$政策§!不允许我们在此进行谍报行动。§!"
+
+ operation_requires_observation_outpost:0 "$TRIGGER_FAIL$§R要求在它们的母星轨道上有一座§Y观测哨站§!。§!"
+ operation_has_disguise:0 " " # Intentionally empty string
+ operation_no_disguise_bio:0 "§H缺乏§Y$tech_gene_tailoring$§!会让我们的特工在伪装成当地人这方面遇到更多的困难，这会增加随机负面事件触发的概率。§!"
+ operation_no_disguise_machine:0 "§R缺乏§Y$tech_robomodding$§!会让我们的渗透无人机在将自己伪装成当地人这方面遇到更多的困难，这会增加随机负面事件触发的概率。§!"
+ operation_wrong_tech_level:0 "$TRIGGER_FAIL$§R这个文明的科技等级还不够先进，尚不能加入我们帝国。§!\n\n"
+ operation_is_gestalt:0 "$TRIGGER_FAIL$§R它们是§Y格式塔意识§!。它们不能够同其他形式的社会整合为一体。§!\n\n"
+ operation_gestalt_cant_indoctrinate:0 "$TRIGGER_FAIL$§R我们是§Y格式塔意识§!。我们无法转变它们。§!\n\n"
+ operation_gestalt_mismatched:0 "$TRIGGER_FAIL$§R我们无法渗透与自己差异巨大的帝国。§!\n\n"
+ operation_wrong_interference_policy:0 "$TRIGGER_FAIL$§R我们的§Y$policy_interference$政策§!不允许该行动。§!\n\n"
+ operation_wrong_enlightenment_policy:0 "$TRIGGER_FAIL$§R我们的§Y$policy_enlightenment$政策§!不允许该行动。§!\n\n"
+ operation_same_ethos:0 "$TRIGGER_FAIL$§R这个文明的思潮已经同我们一致。§!\n\n"
+ operation_failed_infiltration:0 "$TRIGGER_FAIL$§R我们最近的行动使当地居民高度警惕。§!\n\n"
+
+ operation_awareness_risk:0 "\n提升在我们的谍报行动过程中[from.target.GetName]获得£awareness£§Y觉醒§!的风险。" # event tooltip
+ operation_random_event_resolved:0 "§Y[from.GetName]行动§!将恢复其日程安排。"
+ operation_random_event_resolved_poor:0 "§Y[from.GetName]行动§!将克服该§R负面§!障碍继续进行。"
+ operation_random_event_resolved_good:0 "§Y[from.GetName]行动§!将恢复，并趋向获得更§G积极§!的结果。"
+ operation_random_event_resolved_excellent:0 "§Y[from.GetName]行动§!将恢复，并可能获得§G积极§!结果。"
+
+ operation_infiltrate_government:0 "渗透政府"
+ operation_infiltrate_government_desc:0 "特工们会渗透到它们社会的方方面面，逐渐替代它们的世界领袖，随时准备行星兼并。"
+ operation_infiltrate_government_on_success:0 "$IF_SUCCESSFUL|E$\n兼并这个行星，同时让当地人在短时间内幸福度大幅度提升。\n\n[owner.GetDisguiseState]"
+
+ operation_indoctrinate_society:0 "教化社会"
+ operation_indoctrinate_society_desc:1 "通过影响[target.GetName]中少数人群，我们的特工可以将其整个社会的思维方式带到我们的正轨上。"
+ operation_indoctrinate_society_on_success:0 "$IF_SUCCESSFUL|E$\n将当地人口的思潮向我们的思潮偏移。\n\n[owner.GetDisguiseState]"
+
+ operation_plant_advanced_knowledge:0 "灌输先进知识"
+ operation_plant_advanced_knowledge_desc:0 "[target.GetName]或许是一个前超光速社会，但是它们有能力触及星辰。唯一需要的是有人轻轻推它们一把。"
+ operation_plant_advanced_knowledge_on_success:0 "$IF_SUCCESSFUL|E$\n提升目标的科技进度。\n\n[owner.GetDisguiseState]"
+
+ operation_increase_awareness:0 "提高觉醒度"
+ operation_increase_awareness_desc:0 "是时候让[root.target.GetName]明白，它们在宇宙中并不孤单了。"
+ operation_increase_awareness_on_success:0 "$IF_SUCCESSFUL|E$\n提升[root.target.GetName]的觉醒等级。\n\n[owner.GetDisguiseState]"
+
+ operation_spread_disinformation:0 "传播假情报"
+ operation_spread_disinformation_desc:0 "真理就在那里，但[root.target.GetName]尚未准备好面对它。"
+ operation_spread_disinformation_on_success:0 "$IF_SUCCESSFUL|E$\n降低[root.target.GetName]的觉醒等级。\n\n[owner.GetDisguiseState]"
+
+ operation_infiltrate_hive:0 "渗透蜂巢"
+ operation_infiltrate_hive_desc:0 "通过战略性替换节点子个体，我们的意识可以逐渐整合当地蜂巢簇群的关键功能。"
+ operation_infiltrate_hive_on_success:0 "$IF_SUCCESSFUL|E$\n将当地子个体融入我们的意识，并吞并该行星。\n\n[owner.GetDisguiseState]"
+
+### Operation Events
+
+ preftl_operation.1000.name:0 "[from.GetName]：特工准备就绪" # Operation name, i.e. 'Infiltrate Government'
+ preftl_operation.1000.desc.okay:0 "所有[target.capital_scope.GetName]的[target.GetSpeciesName]重要领袖都被我们的密探调包了。现在渗透人员正在巩固我们在[target.capital_scope.GetPlanetHabitat]的进展。是时候采取行动了。"
+ preftl_operation.1000.desc.good:0 "我们目前在[target.capital_scope.GetName]有数以千计的秘密特工，并且渗透了[root.target.capital_scope.GetPlanetHabitat]的各方各面。一些特工已在当地的权力体系中升居高位，并利用自身的职位影响力为其他特工提供便利。"
+ preftl_operation.1000.desc.poor:0 "虽然我们在[target.capital_scope.GetName]表面上有数以千计的特工，但进展始终缓慢。我们曾试图推翻一个由[target.GetName]组成的主要定居点，最终惨痛收场。有关特工都已牺牲或自裁。\n\n多亏了一支潜伏小组的英勇之举，当局才没有找到尸体，未能识破我们在星球上的行动。"
+ #preftl_operation.1001.name:1 "Shaping the Future"
+ #preftl_operation.1001.desc:1 "Our operatives have successfully embedded themselves within the [infiltrated_country_species.GetAdj] political leadership. We now hold control over every world power, and can shape the future of [infiltrated_country_planet.GetName] to our will."
+ #preftl_operation.1002.name:1 "Influencing Affairs"
+ #preftl_operation.1002.desc:1 "Our operatives have covertly gained a foothold over the [infiltrated_country_species.GetAdj] political leadership. We are now in a position of great influence regarding the internal affairs of [infiltrated_country_planet.GetName]. The mission was a success."
+ #preftl_operation.1003.name:1 "Minor Influence"
+ #preftl_operation.1003.desc:1 "After a poor start, our operatives were able to infiltrate the governments of [infiltrated_country_planet.GetName]. We were unable to secure many high ranking roles within the political leadership, but we are now in a position to influence minor tactical decisions concerning the [infiltrated_country_species.GetName]."
+#  observation.3008.desc:1 "While our agents have successfully replaced most of the local leaders on [root.target.GetSpeciesName], a stubborn few remain. A concerted effort is now underway to remove the last holdouts, but the date of our planned reveal will need to be pushed forward."
+ preftl_operation.1005.name:0 "大驾光临"
+ preftl_operation.1005.desc:1 "在完全控制了[infiltrated_country_species.GetAdj]的政治高层之后，我们的渗透人员已经做好准备迎接首次接触小组的正式到访。\n\n在新的行星首都举办的大型仪式上，所有[infiltrated_country_planet.GetName]领袖共同签署了[infiltrated_country_planet.GetPlanetHabitat]立即并入[root.GetName]的请愿书。我们的外交大使很大度地接受了这一请求。市民们兴高采烈地走上街道，为他们的外星恩主欢呼着。"
+ preftl_operation.1006.name:1 "温暖的欢迎"
+ preftl_operation.1006.desc:1 "在[infiltrated_country_species.GetAdj]政治领袖之中立足后，我们的渗透单元为第一次接触单元的正式到来铺平了道路。在行星首都的一场恰如其分的仪式上，我们的特使谦逊地接受了一份由[infiltrated_country_planet.GetName]星球个领袖签署的陈情书。文件展示了将[infiltrated_country_planet.GetPlanetHabitat]吞并如[root.GetName]的计划。许多居民前来夹道欢迎他们的新外星施恩者。"
+ preftl_operation.1007.name:1 "冰冷的接待"
+ preftl_operation.1007.desc:1 "渗透入[infiltrated_country_species.GetAdj]的政治领导层后，我方特工为第一次接触单元的到来铺平了道路。我们不打算举行任何仪式来庆祝我方外交使节的到达。不过，我方已与[infiltrated_country_planet.GetName]的领袖集团达成共识。他们的[infiltrated_country_planet.GetPlanetHabitat]将被并入[root.GetName]。"
+ preftl_operation.1005.tt:0 "§Y[infiltrated_country_planet.GetName]§!及其全部人口加入§Y[root.GetName]§!。"
+ preftl_operation.1008.name:0 "[From.GetName]失败"
+ preftl_operation.1008.desc:0 "我们对[infiltrated_country_species.GetAdj]政治领导层的渗透并不像我们被灌输的那样彻底。在起先渗透主要国家失败后，我们尝试在一些较小的政权中发动政变。即便如此我们也还是未能获得民众的支持。\n\n我们已经从[infiltrated_country_planet.GetName]撤回了所有还健在的特工。当地居民显然会在未来几年内保持警惕。"
+ preftl_operation.failed_annaxation.tt:0 "§R我们在5年之内无法再发起任何§H[From.GetName]§!任务。§!"
+ attempted_infiltration:0 "渗透未遂"
+
+# Operation Indoctrinate Society
+ preftl_operation.1015.name:1 "准备拉拢[target.GetName]" # pre-FTL country name
+ preftl_operation.1015.desc:1 "我们对[target.capital_scope.GetName]的[owner.GetPreFTLLower]居民进行潜移默化影响的工作已经达到了顶峰。我们的特工已经准备好把我们的文化价值传播到[target.GetSpeciesAdj]社会。"
+
+ preftl_operation.1016.name:1 "影响普罗大众"
+ preftl_operation.1016.intro:0 "尽管一开始的势头看起来颇为靠谱，但只有时间能告诉我们对§H[from.target.GetAdj]§!的努力能维持多久。[from.target.GetSpeciesNamePlural]拥护者们已经彻底接纳了我们的意识形态，视如己出。" # used for both pre- and post-industrial societies
+ preftl_operation.1016.intro.good:0 "我们在§H[from.target.GetName]§!中的工作取得了巨大的进展。通过小心地操控文化模因和社会风速，我们促生了一次影响深远的文化转变，并且几乎让人误认为是完全自发的现象。" # used for both pre- and post-industrial societies
+ preftl_operation.1016.intro.poor:0 "我们在§H[from.target.GetName]§!中的工作并非一帆风顺，但还是成功了。尽管我们的努力并没有如预期般吸引到那么多的当地的支持者，但还是取得了一些正面的成果。" # used for both pre- and post-industrial societies
+
+ preftl_operation.1016.autho:0 "我们的特工熟练运用我们光荣祖先的经验建立了一个[root.GetAdj]§Y威权主义§!的原始模型。精心筛选的一批当地人被赋权以统治这些社群，其中一些将会繁荣昌盛，另一些则会逐渐凋亡。而这一切都会成为令[from.target.GetSpeciesNamePlural]印象深刻的一课，指导他们学会如何考虑合适的社会组织形式。" # pre-industrial societies only
+ preftl_operation.1016.egali:0 "我们的特工广泛深入基层，与当地社群交流关于公平和平等的事宜。尽管[from.target.GetSpeciesAdj]对政治的理解仍停留在启蒙阶段，但我们已经促动了一些在当地人中进一步讨论的活动。[from.GetName]行动已经结束，我们会将自主权留给当地的支持者，让他们自行寻找通向§Y个人主义§!的道路。" # pre-industrial societies only
+ preftl_operation.1016.mater:0 "我们精挑细选的特工在艺术和教育思辨方面造诣颇深，他们在[from.target.capital_scope.GetPlanetHabitat]上启蒙着各个社群。他们针对各种不同的[from.target.GetSpeciesAdj]文化因材施教，以沙龙、文艺作品和教育机构的形式结出了累累硕果。这些§Y物质主义§!工具已经遗赠给了[from.target.GetSpeciesNamePlural]。" # pre-industrial societies only
+ preftl_operation.1016.milit:0 "现如今，在许多[from.target.GetSpeciesAdj]的文化中，荣誉和勇敢已经成了头等大事。我们的特工伪装成雇佣兵、起义军和军火商，用精美的仪式性武器、绚丽的战斗技术和一系列精心设计的遭遇战让当地人惊掉了下巴。这一切都在启发着一个更加§Y军国主义§!的[from.target.GetName]。" # used for both pre- and post-industrial societies
+ preftl_operation.1016.pacif:0 "我们精挑细选的特工在调停技能方面造诣颇深，他们在当地众多群体中斡旋，针对许多[from.target.GetSpeciesAdj]的社会顽疾开出了[root.GetAdj]§Y和平主义§!良药。如今，这些社群眼中暴力已经不再是第一选择了。" # used for both pre- and post-industrial societies
+ preftl_operation.1016.phile:0 "我们的特工全面推动工作近战，用故事、艺术和群体活动的方式促进了对其他文化的的好奇和欣赏。如今[from.GetName]行动已经结束了，我们的特工对当地的§Y亲外主义者§!寄予厚望，希望它们能延续讨论，让[from.target.GetName]做好一个在多元化宇宙中生活的准备。" # used for both pre- and post-industrial societies
+ preftl_operation.1016.phobe:0 "恐惧和猜疑很容易因冲动而起，但却很难控制。我们的特工小心翼翼地编撰演讲和艺术作品来展示自我保存的积极一面，并教导他们关于外来影响的危险性。[from.target.GetSpeciesAdj]的拥护者们在§Y排外§!议题上对特工们的课程很是受用。" # pre-industrial societies only
+ preftl_operation.1016.spiri:0 "我们双管齐下，让一群颇具魅力的特工去领导一些基于当地信仰的教派，又派另一群特工保护这些蓬勃发展的运动不受政治的干扰和排挤。这些开化了的[from.target.GetSpeciesAdj]社群已经接纳了某种基于当地文化的§Y精神主义§!。他们会独自走向神圣的道路。" # used for both pre- and post-industrial societies
+
+ preftl_operation.1016.autho.desc:0 "$preftl_operation.1016.intro$\n\n$preftl_operation.1016.autho$"
+ preftl_operation.1016.egali.desc:0 "$preftl_operation.1016.intro$\n\n$preftl_operation.1016.egali$"
+ preftl_operation.1016.mater.desc:0 "$preftl_operation.1016.intro$\n\n$preftl_operation.1016.mater$"
+ preftl_operation.1016.milit.desc:0 "$preftl_operation.1016.intro$\n\n$preftl_operation.1016.milit$"
+ preftl_operation.1016.pacif.desc:0 "$preftl_operation.1016.intro$\n\n$preftl_operation.1016.pacif$"
+ preftl_operation.1016.phile.desc:0 "$preftl_operation.1016.intro$\n\n$preftl_operation.1016.phile$"
+ preftl_operation.1016.phobe.desc:0 "$preftl_operation.1016.intro$\n\n$preftl_operation.1016.phobe$"
+ preftl_operation.1016.spiri.desc:0 "$preftl_operation.1016.intro$\n\n$preftl_operation.1016.spiri$"
+ preftl_operation.1017.autho.desc:0 "$preftl_operation.1016.intro.good$\n\n$preftl_operation.1016.autho$"
+ preftl_operation.1017.egali.desc:0 "$preftl_operation.1016.intro.good$\n\n$preftl_operation.1016.egali$"
+ preftl_operation.1017.mater.desc:0 "$preftl_operation.1016.intro.good$\n\n$preftl_operation.1016.mater$"
+ preftl_operation.1017.milit.desc:0 "$preftl_operation.1016.intro.good$\n\n$preftl_operation.1016.milit$"
+ preftl_operation.1017.pacif.desc:0 "$preftl_operation.1016.intro.good$\n\n$preftl_operation.1016.pacif$"
+ preftl_operation.1017.phile.desc:0 "$preftl_operation.1016.intro.good$\n\n$preftl_operation.1016.phile$"
+ preftl_operation.1017.phobe.desc:0 "$preftl_operation.1016.intro.good$\n\n$preftl_operation.1016.phobe$"
+ preftl_operation.1017.spiri.desc:0 "$preftl_operation.1016.intro.good$\n\n$preftl_operation.1016.spiri$"
+ preftl_operation.1018.autho.desc:0 "$preftl_operation.1016.intro.poor$\n\n$preftl_operation.1016.autho$"
+ preftl_operation.1018.egali.desc:0 "$preftl_operation.1016.intro.poor$\n\n$preftl_operation.1016.egali$"
+ preftl_operation.1018.mater.desc:0 "$preftl_operation.1016.intro.poor$\n\n$preftl_operation.1016.mater$"
+ preftl_operation.1018.milit.desc:0 "$preftl_operation.1016.intro.poor$\n\n$preftl_operation.1016.milit$"
+ preftl_operation.1018.pacif.desc:0 "$preftl_operation.1016.intro.poor$\n\n$preftl_operation.1016.pacif$"
+ preftl_operation.1018.phile.desc:0 "$preftl_operation.1016.intro.poor$\n\n$preftl_operation.1016.phile$"
+ preftl_operation.1018.phobe.desc:0 "$preftl_operation.1016.intro.poor$\n\n$preftl_operation.1016.phobe$"
+ preftl_operation.1018.spiri.desc:0 "$preftl_operation.1016.intro.poor$\n\n$preftl_operation.1016.spiri$"
+
+ preftl_operation.1019.name:0 "影响大众"
+ preftl_operation.1019.autho:0 "我们的特工运用我们光荣先祖流传下来的经验在[from.target.capital_scope.GetName]上建立了一个[root.GetAdj]§Y威权主义§!的微缩模型。他们重铸了一些机构，将许多[from.target.GetSpeciesNamePlural]组织成精心设计的阶层。并不是所有的社群都能留到最后，但失败的那些会成为宝贵的经验，滋养起他们的社会秩序。" # post-industrial societies only
+ preftl_operation.1019.egali:0 "我们的特工广泛深入基层，与当地社群和机构交流关于公平和平等的事宜。[from.target.GetSpeciesAdj]的政治科学已经趋于成熟，但我们还是促动了一些运动，以推动更具包容性的辩论和§Y平等主义§!政策。" # post-industrial societies only
+ preftl_operation.1019.mater:0 "我们精挑细选的特工在艺术和教育思辨方面造诣颇深，他们在[from.target.capital_scope.GetPlanetHabitat]上启蒙着各个社群和教育机构。他们的努力组成了一些研究中心、教育基金甚至一场新文艺运动的启动。这些§Y物质主义§!工具已经遗赠给了[from.target.GetSpeciesNamePlural]。 " # post-industrial societies only
+ preftl_operation.1019.phobe:0 "恐惧和猜疑很容易因冲动而起，但却很难控驾驭，特别是对这么一个已经大规模接入媒体的社会而言更是如此。我们的特工潜移默化地将§Y排外主义§!演讲和展现自我保存积极面的文化运动根植于此地，并教导他们外来影响的危险性。[from.target.GetSpeciesAdj]的拥护者和政治群体对特工们的课程很是受用。 " # post-industrial societies only
+
+ preftl_operation.1019.autho.desc:0 "$preftl_operation.1016.intro$\n\n$preftl_operation.1019.autho$"
+ preftl_operation.1019.egali.desc:0 "$preftl_operation.1016.intro$\n\n$preftl_operation.1019.egali$"
+ preftl_operation.1019.mater.desc:0 "$preftl_operation.1016.intro$\n\n$preftl_operation.1019.mater$"
+ preftl_operation.1019.milit.desc:0 "$preftl_operation.1016.milit.desc$"
+ preftl_operation.1019.pacif.desc:0 "$preftl_operation.1016.pacif.desc$"
+ preftl_operation.1019.phile.desc:0 "$preftl_operation.1016.phile.desc$"
+ preftl_operation.1019.phobe.desc:0 "$preftl_operation.1016.intro$\n\n$preftl_operation.1019.phobe$"
+ preftl_operation.1019.spiri.desc:0 "$preftl_operation.1016.spiri.desc$"
+ preftl_operation.1020.autho.desc:0 "$preftl_operation.1016.intro.good$\n\n$preftl_operation.1019.autho$"
+ preftl_operation.1020.egali.desc:0 "$preftl_operation.1016.intro.good$\n\n$preftl_operation.1019.egali$"
+ preftl_operation.1020.mater.desc:0 "$preftl_operation.1016.intro.good$\n\n$preftl_operation.1019.mater$"
+ preftl_operation.1020.milit.desc:0 "$preftl_operation.1017.milit.desc$"
+ preftl_operation.1020.pacif.desc:0 "$preftl_operation.1017.pacif.desc$"
+ preftl_operation.1020.phile.desc:0 "$preftl_operation.1017.phile.desc$"
+ preftl_operation.1020.phobe.desc:0 "$preftl_operation.1016.intro.good$\n\n$preftl_operation.1019.phobe$"
+ preftl_operation.1020.spiri.desc:0 "$preftl_operation.1017.spiri.desc$"
+ preftl_operation.1021.autho.desc:0 "$preftl_operation.1016.intro.poor$\n\n$preftl_operation.1019.autho$"
+ preftl_operation.1021.egali.desc:0 "$preftl_operation.1016.intro.poor$\n\n$preftl_operation.1019.egali$"
+ preftl_operation.1021.mater.desc:0 "$preftl_operation.1016.intro.poor$\n\n$preftl_operation.1019.mater$"
+ preftl_operation.1021.milit.desc:0 "$preftl_operation.1018.milit.desc$"
+ preftl_operation.1021.pacif.desc:0 "$preftl_operation.1018.pacif.desc$"
+ preftl_operation.1021.phile.desc:0 "$preftl_operation.1018.phile.desc$"
+ preftl_operation.1021.phobe.desc:0 "$preftl_operation.1016.intro.poor$\n\n$preftl_operation.1019.phobe$"
+ preftl_operation.1021.spiri.desc:0 "$preftl_operation.1018.spiri.desc$"
+
+ espionage_pre_ftl_indoctrination:0 "社会变迁"
+ espionage_pre_ftl_indoctrination_desc:0 "该社会的一部分最近改变了对政治前景的展望，接纳了一种截然不同的新思潮。"
+ espionage_pre_ftl_indoctrination_authoritarian: "$espionage_pre_ftl_indoctrination$"
+ espionage_pre_ftl_indoctrination_authoritarian_desc: "$espionage_pre_ftl_indoctrination_desc$"
+ espionage_pre_ftl_indoctrination_egalitarian: "$espionage_pre_ftl_indoctrination$"
+ espionage_pre_ftl_indoctrination_egalitarian_desc: "$espionage_pre_ftl_indoctrination_desc$"
+ espionage_pre_ftl_indoctrination_materialist: "$espionage_pre_ftl_indoctrination$"
+ espionage_pre_ftl_indoctrination_materialist_desc: "$espionage_pre_ftl_indoctrination_desc$"
+ espionage_pre_ftl_indoctrination_militarist: "$espionage_pre_ftl_indoctrination$"
+ espionage_pre_ftl_indoctrination_militarist_desc: "$espionage_pre_ftl_indoctrination_desc$"
+ espionage_pre_ftl_indoctrination_pacifist: "$espionage_pre_ftl_indoctrination$"
+ espionage_pre_ftl_indoctrination_pacifist_desc: "$espionage_pre_ftl_indoctrination_desc$"
+ espionage_pre_ftl_indoctrination_spiritualist: "$espionage_pre_ftl_indoctrination$"
+ espionage_pre_ftl_indoctrination_spiritualist_desc: "$espionage_pre_ftl_indoctrination_desc$"
+ espionage_pre_ftl_indoctrination_xenophile: "$espionage_pre_ftl_indoctrination$"
+ espionage_pre_ftl_indoctrination_xenophile_desc: "$espionage_pre_ftl_indoctrination_desc$"
+ espionage_pre_ftl_indoctrination_xenophobe: "$espionage_pre_ftl_indoctrination$"
+ espionage_pre_ftl_indoctrination_xenophobe_desc: "$espionage_pre_ftl_indoctrination_desc$"
+ 
+# Operation Increase Awareness
+ preftl_operation.1025.name:1 "[this.GetName]：准备现身" # Operation name, i.e. 'Increase Awareness'
+ preftl_operation.1025.desc:1 "我们在[target.capital_scope.GetName]上的准备工作已经完毕；我们的特工已经准备好将[target.GetName]引入只有一步之遥的银河的大舞台。 "
+ preftl_operation.1026.name:0 "彼处可有生命？"
+ preftl_operation.1026.desc.intro:0 "多亏了我们特工的行动，[from.target.GetSpeciesNamePlural]正以崭新的兴趣遥望夜空。"
+ preftl_operation.1026.desc.low:1 "受我们散播的故事启发，[this.GetSpeciesNamePlural]正在将它们的关注点转向天空。它们已经开始叩问自己，寰宇之中是否可能有其他有智生命体，在其他恒星光辉的照耀下发展壮大。"
+ preftl_operation.1026.desc.medium:1 "$preftl_operation.1026.desc.intro$他们低声诉说着几乎没人相信的故事，内容是关于天空和来自星辰之外世界的访客。这些故事中夹杂着一定的真实性。"
+ preftl_operation.1026.desc.high:1 "$preftl_operation.1026.desc.intro$考虑到摆在他们眼前的的事实，很多人已经开始相信他们在宇宙中并不孤独了。他们相信证据近在咫尺，发现真相只是一个时间问题。"
+ preftl_operation.1026.desc.full:1 "多亏了我们努力，[this.capital_scope.GetName]在宇宙中并不孤单。现在他们已经做好了接受联络的准备，而不至于对他们的生活方式造成冲击。"
+
+ # Good and Great Outcomes
+ preftl_operation.1027.name:0 "天外有人"
+ preftl_operation.1027.desc.intro:0 "得益于我们特工的杰出工作，[this.GetSpeciesNamePlural]已经开始如痴如醉地仰望星空。"
+ preftl_operation.1027.desc.low:0 "$preftl_operation.1027.desc.intro$\n\n在我们特工散布的故事的激励和启发下，[this.GetSpeciesNamePlural]正在将他们的关注点转向天空。他们正积极地畅想宇宙中其他智慧生命的存在。"
+ preftl_operation.1027.desc.medium:0 "$preftl_operation.1027.desc.intro$\n\n他们激动地分享这关于天空中神秘光亮和繁星之外世界的来客们的故事。许多人相信这些故事应该不是空穴来风。"
+ preftl_operation.1027.desc.high:0 "$preftl_operation.1027.desc.intro$\n\n许多人已经确信自己在宇宙中并不孤单。他们知道证据近在咫尺，假以时日一定能够找到。"
+ preftl_operation.1027.desc.full:0 "$preftl_operation.1027.desc.intro$\n\n我们间谍网特工的大胆举措帮助[this.capital_scope.GetName]的居民理解了自己在宇宙中并不孤单这件事。现在他们已经做好了接受联络的准备，而不至于对他们的生活方式造成冲击。 "
+
+ # Poor Outcome
+ preftl_operation.1028.name:0 "外无一物"
+ preftl_operation.1028.desc.intro:0 "我们特工的行动让[this.GetSpeciesNamePlural]开始惧怕夜空。"
+ preftl_operation.1028.desc.low:0 "$preftl_operation.1028.desc.intro$\n\n[this.GetSpeciesNamePlural]被我们特工所散布的故事吓住了，现在连抬头看一眼都胆战心惊。他们开始怀疑在宇宙中是否有其他的智慧生命，在黑暗中虎视眈眈。"
+ preftl_operation.1028.desc.medium:0 "$preftl_operation.1028.desc.intro$\n\n他们闪烁其词地互相诉说着天空中诡异光亮和来自外星世界的入侵者的恐怖故事。"
+ preftl_operation.1028.desc.high:0 "$preftl_operation.1028.desc.intro$\n\n许多人现在相信自己在宇宙中并不孤独。他们知道真相就在外面，但对此毫无兴趣。"
+ preftl_operation.1028.desc.full:0 "$preftl_operation.1028.desc.intro$\n\n我们间谍网特工的努力让[this.capital_scope.GetName]的居民理解了自己在宇宙中并不孤单。现在可以排除受到极端震撼的风险进行接触了。"
+ 
+ preftl_operation.1035.name:0 "$preftl_operation.1026.name$"
+ preftl_operation.1035.desc:0 "我们的$role_spymaster$[spynetwork.leader.GetName]已经整理总结了结果，事关我们在[target.GetName]上掩盖星际生命存在的行动。"
+
+# Operation Spread Disinformation
+ # Standard conclusion
+ preftl_operation.1036.name:0 "[from.target.GetName]的假情报传播"
+ preftl_operation.1036.desc.intro:0 "我们在§H[from.target.GetName]§!上的特工通过努力，成功让当地人开始怀疑目前为止所发现的外星生命的证据。"
+ preftl_operation.1036.desc.none:0 "$preftl_operation.1036.desc.intro$有关星际访客存在的故事逐渐被公众遗忘，被视作持阴谋论的少数派一厢情愿的妄想。"
+ preftl_operation.1036.desc.low:0 "$preftl_operation.1036.desc.intro$[this.GetSpeciesNamePlural]依然在低声传诵外星人存在的证据，但是已经没什么人相信这些传说了。"
+ preftl_operation.1036.desc.medium:0 "$preftl_operation.1036.desc.intro$尽管一些掌权的高层可能质疑我们是真实存在的，但我们成功蒙蔽住了老百姓。"
+ # Great conclusion
+ preftl_operation.1037.name:0 "[from.target.GetName]的假情报传播行动成功"
+ preftl_operation.1037.desc.intro:0 "我们在§H[this.capital_scope.GetName]§!的优秀特工已消除有关航天文明的猜测。"
+ preftl_operation.1037.desc.none:0 "$preftl_operation.1037.desc.intro$现在传播外星人的故事会迅速被当成失心疯而遭到排挤。"
+ preftl_operation.1037.desc.low:0 "$preftl_operation.1037.desc.intro$几乎没有[this.GetSpeciesNamePlural]会再考虑外星生命的可能性了。"
+ preftl_operation.1037.desc.medium:0 "$preftl_operation.1037.desc.intro$虽然一些身居要职的人可能会怀疑我们是真实存在的，但他们知道最好不要公开谈论那些会被视为谬论的想法。"
+ # Good conclusion
+ preftl_operation.1038.name:0 "[from.target.GetName]的假情报传播"
+ preftl_operation.1038.desc.intro:0 "我们在§H[this.capital_scope.GetName]§!的特工已显著减少有关航天文明的猜测。"
+ preftl_operation.1038.desc.none:0 "$preftl_operation.1038.desc.intro$现在传播外星人的故事会被当成是避犹不及之举。"
+ preftl_operation.1038.desc.low:0 "$preftl_operation.1038.desc.intro$几乎没有[this.GetSpeciesNamePlural]会费心考虑外星生命存在的可能性了。"
+ preftl_operation.1038.desc.medium:0 "$preftl_operation.1038.desc.intro$尽管一些身居要职的人可能会怀疑我们是真实存在的，但他们不大会公开谈论这些事情了。"
+ # Poor conclusion
+ preftl_operation.1039.name:1 "[from.target.GetName]的假情报传播失利"
+ preftl_operation.1039.desc.intro:0 "我们在§H[this.capital_scope.GetName]§!的特工未能顺利传播外星文明是否存在的疑虑。"
+ preftl_operation.1039.desc.none:0 "$preftl_operation.1036.desc.intro$有关星际访客存在的故事甚嚣尘上。"
+ preftl_operation.1039.desc.low:0 "$preftl_operation.1036.desc.intro$[this.GetSpeciesNamePlural]仍公开传播外星人的存在，不少民众信以为真。"
+ preftl_operation.1039.desc.medium:0 "$preftl_operation.1036.desc.intro$那些身居要职的人公开谈论外星访客。他们基本肯定我们的存在。"
+
+ preftl_operation.1041.name:0 "$preftl_operation.1005.name$"
+ preftl_operation.1041.desc:0 "我们的特工报告说，在§H[root.target.GetName]§!上提高科技水平的任务正在按计划实施。"
+
+ preftl_operation.1045.name:0 "[from.GetName]：准备就绪" # Operation name, i.e. Plant Advanced Knowledge
+ preftl_operation.1045.desc:0 "我们的特工已尽其所能，将各种细小的技术进步播撒到[from.target.GetSpeciesAdj]社会。现在就看当地人如何连点成线，把量变转化成质变。他们已经做好了一切准备。"
+
+ preftl_operation.1046.name:0 "[from.target.GetName]：一日千里"
+ preftl_operation.1046.desc:0 "成功了！我们向[from.target.GetSpeciesAdj]社会播撒的科技和知识蓬勃发展，从内部大大推进了他们的文明。只有时间才能说明由此可能产生的长期影响，但目前我们的特工报告说，[from.target.capital_scope.GetName]相当繁荣，善意空前。"
+
+ preftl_operation.1047.name:0 "[from.target.GetName]：重大飞跃"
+ preftl_operation.1047.desc:0 "我们的特工从[from.target.capital_scope.GetName]传来捷报！ 我们向[from.target.GetSpeciesAdj]社会播撒的科技和知识已开花结果，推动他们的文明向银河系进发。只有时间才能说明由此可能产生的长期影响，但目前我们的特工报告说，[from.owner.GetPreFTLLower]世界的繁荣程度有所提高。"
+
+ preftl_operation.1048.name:0 "[from.target.GetName]：稳步推进"
+ preftl_operation.1048.desc:0 "我们的特工报告说，启迪[from.target.capital_scope.GetName]居民的行动圆满成功。我们传播给[from.target.GetSpeciesAdj]社会的科技和知识已经生根发芽，推动他们的文明在通往银河的道路上更进一步。"
+
+ preftl_operation.1049.name:0 "[from.target.GetName]：好事多磨"
+ preftl_operation.1049.desc:0 "我们启迪[from.target.capital_scope.GetName]居民的行动取得了部分成功。尽管遇到了一些挫折，我们还是促进了一些基础的科技进步，确信[from.target.GetSpeciesAdj]社会终会腾飞。不过他们的文明也许不会如我们此前希望的那样迅速或顺利地发展到星际层次。"
+
+ preftl_operation.1060.name:0 "[from.GetName]：节点整合" # Operation name, i.e. 'Infiltrate Government'
+ preftl_operation.1060.desc.okay:0 "我们在[target.capital_scope.GetName]上已逐步整合了当地[target.GetSpeciesNamePlural]的数个关键节点中心。目标是让当地蜂巢在日常活动中对我们更加依赖，并让我们可以最终无缝吞并他们的星球。渗透单位正在巩固我们在[target.capital_scope.GetPlanetHabitat]上的进度。什么时候动手完全取决于我们自己。"
+ preftl_operation.1060.desc.good:0 "我们对[target.capital_scope.GetName]的渗透几乎已经完成了，整个[root.target.capital_scope.GetPlanetHabitat]上几乎所有部分的节点都已经被我们同化。我们已经接管了这里的许多日常活动。很快我们就能准备好完全整合他们。"
+ preftl_operation.1060.desc.poor:0 "即使[target.capital_scope.GetName]地表有无数的节点中枢处于我们的控制之下，但进度仍旧缓慢。尝试完全整合一个原始的大陆蜂巢成为了一场灾难，而我们在当地的子个体也被驱逐了。\n\n多亏了我们的多项包括持续打收子个体在内的应急措施，才让遗骸和我们在这颗星球上的工作避免暴露。"
+ preftl_operation.1065.name:0 "合二为一"
+ preftl_operation.1065.desc:0 "在完成对[infiltrated_country_species.GetAdj]意识的主宰后，我们很快确定没有任何一个子个体被落下。\n\n[infiltrated_country_species.GetName]意识并未消亡，只是被我们吸收了。我们的意识向着宇宙的深处继续延伸。“一”如既往。"
+ preftl_operation.1066.name:0 "掌握控制"
+ preftl_operation.1066.desc:0 "在对[infiltrated_country_species.GetAdj]意识取得关键影响后，我们的节点中心已准备好进行直接控制。除了极个别反常问题，我们现在完全将[infiltrated_country_planet.GetPlanetHabitat]整合进了[root.GetName]。"
+ preftl_operation.1067.name:0 "不情愿的阻滞"
+ preftl_operation.1067.desc:0 "在渗透了[infiltrated_country_species.GetAdj]蜂巢意识后，我们整合的节点中心已经准备好吞并剩下的[infiltrated_country_planet.GetPlanetHabitat]。在我们夺取控制时，一小块大陆对我们的影响展现出了抗拒，宁愿选择自我了断也不愿意被我们的意识吸收。他们的[infiltrated_country_planet.GetPlanetHabitat]将被吞并入[root.GetName]。"
+ preftl_operation.1068.name:0 "[From.GetName]失败"
+ preftl_operation.1068.desc:0 "[infiltrated_country_species.GetAdj]蜂巢思维发现了我们的影响。正当我们准备激活整合的节点中枢的一刻，与整个蜂巢的链接被切断了。在快速废止了我们的行动、子个体等等之后，必须承认，[from.GetName]行动失败了。[infiltrated_country_species.GetClass]人口现在对外界干扰产生了高度的警惕。"
+
+### Random event chains
+
+# Sorcery!
+ preftl_operation.3000.name:0 "巫术！"
+ preftl_operation.3000.desc:0 "我们在[from.target.capital_scope.GetName]尝试影响[from.target.GetSpeciesNamePlural]，遭遇了广泛的质疑。许多当地人笃信我们的特工不是魔物就是恶灵，正在想方设法地远离他们。敌对示威似乎很可能发生。"
+ preftl_operation.3000.a:0 "顺从大局。"
+ preftl_operation.3000.b:0 "谨慎行事。迁往他处。"
+ preftl_operation.3000.c:0 "颠覆他们的信仰！"
+
+ preftl_operation.3001.name:0 "巫术：无可非议"
+ preftl_operation.3001.desc:0 "我们的特工利用了自己的异世名声，在当地确立了特权地位。因此[from.target.GetSpeciesNamePlural]信服并接受了我们的科技。不过他们现在更清楚地意识到了像我们这样的 “超自然”生物的存在。"
+
+ preftl_operation.3002.name:0 "巫术：劝服"
+ preftl_operation.3002.desc:0 "我们的特工利用确凿的事实和逻辑，成功地颠覆了[from.target.GetSpeciesAdj]社会中新生的迷信思想体系。结果，当地人不仅开始接受我们的计划，还开始采取更客观的视角来看待他们的周遭世界。"
+
+ preftl_operation.3003.name:0 "巫术：处决"
+ preftl_operation.3003.desc:0 "[from.target.capital_scope.GetName]传来噩耗，暴民们抓获并杀害了我们的一位特工。 当地的领袖与居民一致认为遭到了超自然魔法师的恶意入侵，对此怒不可遏。帮助[from.target.GetName]踏入新时代的任务会变得更加艰难。"
+
+# Pariah
+ preftl_operation.3010.name:1 "遭人嫌"
+ preftl_operation.3010.desc:1 "我们以为充分了解了[from.target.GetSpeciesAdj]文化，我们的特工就能成功地融入社会，但实践中依然存在着许多复杂的问题。当地人似乎对他们冷眼旁观，将我们的特工排除出社交场合，甚至包括一些每月例行的文化活动。\n\n现在说服任何人接纳我们都变得难上加难，更别说执行[from.GetName]行动的目标了。考虑到社会平衡现在处于微妙的棘手状态。我们应该谨慎考虑下一步行动。"
+ preftl_operation.3010.a:1 "或许他们对金钱能有所回应？"
+ preftl_operation.3010.b:1 "试试更加离谱的做法。"
+ preftl_operation.3010.c:1 "花费更多的时间研究他们的文化。"
+
+ preftl_operation.3011.name:0 "不再受排挤"
+ preftl_operation.3011.desc:0 "[from.target.capital_scope.GetName]的人们崇拜上我们了！换句话说，我们的特工不再需要废力地融入他们，现在无论走到哪里都受到了热烈的欢迎。可能我们没有留意到[from.target.GetSpeciesAdj]文化中一个微妙但是关键的矛盾点：尽管他们的社会在明面上推崇协调一致，但在私下却非常赞赏浮华的出格行为。\n\n现在我们的特工在当地成了时尚的弄潮儿，我们也可以愉快地汇报，[from.GetName]行动正前所未有地丝滑推进中。"
+
+ preftl_operation.3012.name:0 "放逐"
+ preftl_operation.3012.desc:0 "[from.target.GetSpeciesAdj]文化的细微差别依旧难以捉摸，甚至情况还更早了：我们的一些特工甚至因为最近犯下的罪行而遭受驱逐。看来[from.target.GetSpeciesNamePlural]是一群比我们预想的更加保守和猜忌的人。\n\n这些社交失误让我们的[from.GetName]行动进展延缓，然而我们至少吸取了一些教训。新的假身份和训练规范已经在草拟当中，而我们的特工不会在同一个地方跌倒第二次了。"
+ operation_pariahs:0 "贱民"
+ operation_pariahs_desc:0 "在触犯了一些文化禁忌后，许多我们的特工被驱逐出了当地社会。剩下的资源变得日益紧张起来。"
+
+## Distracted Agent
+ preftl_operation.3020.name:0 "离经叛道"
+ preftl_operation.3020.desc:0 "我们的一位在[from.target.capital_scope.GetName]上工作的关键特工有点……迷恋上了当地的文明，并拒绝了许多已下达的任务。相反，这位过于独立的特工开始进行独立的异种学研究，并提交了许多请求，要求将其正式发布。\n\n这些行为让[from.GetName]行动遭受到推延的风险，但我们必须承认，那个不守规矩的特工的工作事实上对我们相当有用。否认这一努力反而才会减缓我们的进展。"
+ preftl_operation.3020.a:0 "必须强调纪律性。"
+ preftl_operation.3020.b:0 "这种独创精神值得赞扬！"
+ operation_no_more_distractions:0 "心无旁骛"
+ operation_no_more_distractions_desc:0 "我们不再从那位离经叛道的特工处获得异种洞见的好处了。"
+ observation_distraction_insights:0 "独立秘密研究"
+ observation_distraction_insights_desc:0 "一位前特工对我们在该文化的研究中带来了一些独门洞见。"
+
+## Mimicry
+ preftl_operation.3030.name:0 "仿效"
+ preftl_operation.3030.desc:0 "我们在[from.target.capital_scope.GetName]上的工作遇到了一个很怪的难题：[from.target.GetSpeciesAdj]蜂巢正在镜像模仿我们的行为。一开始我们以为不过是当地工蜂的古怪行为，但许多这些新的习惯毫无疑问本质上就是[from.owner.GetSpeciesAdj]的。\n\n这不仅暗示了我们在[from.GetName]行动缜密设计的范围之外影响到了当地的蜂巢，更提醒了我们自己的失败融入正在被倒映回给我们。目前没有迹象表明这个蜂巢意识到了我们的行动，但也许我们的暴露与否只是时间问题。"
+ preftl_operation.3030.a:0 "所以他们变得……更好控制了？"
+ preftl_operation.3030.b:0 "我们必须多加小心。"
+ preftl_operation.3030.b.tt:0 "调配更多资源，确保抑制我们特工的本能和不当习惯。"
+ preftl_operation.3030.c:0 "我们就坚持一下做到底。"
+ preftl_operation.3030.d:0 "撤出，放弃。"
+ spynetwork_hive_mimicry:0 "可塑仿效"
+ spynetwork_hive_mimicry_desc:0 "该蜂巢已经开始模仿我们的行为，其工蜂也与我们的特工们建立了一种本能的交互行为。"
+ espionage_hive_mimicry:0 "仿效暴露"
+ espionage_hive_mimicry_desc:0 "该蜂巢有仿效外界事物行为的习惯。这将产生一种更容易发现外加影响的风险。"
+
+## Academic Shenanigans (note only some of these strings refer to the intended event ID, preftl_operation.3040)
+ preftl_operation.1100.name:0 "学术追求"
+ preftl_operation.1100.desc:1 "我们在[from.target.capital_scope.GetName]的特工以先进的知识武装头脑，已经渗透了当地的大学，凭借着开创性的理论确立了自己作为杰出思想家的地位。然而，此人不断取得的成功却遭到了当地学者的质疑：许多人拒绝与此人接触，指责其为骗子。\n\n无休止的学术争吵阻碍了我们的特工传播新思想。我们的$role_spymaster$正在请求进一步的指示。"
+ preftl_operation.1100.a:0 "消除竞争。"
+ preftl_operation.1100.b:1 "用一些过火的手段贿赂这些学者：经费。"
+ preftl_operation.1100.c:0 "让他们吵去吧。这肯定会很有趣的。"
+
+ preftl_operation.1101.name:0 "变生不测……"
+ preftl_operation.3041.desc:0 "$preftl_operation.3042.desc$\n\n哎呀，我们的这一计谋有失精妙，让特工们招致猜疑。他们大多都被踢出了[from.target.GetSpeciesAdj]的学院，而他们的位置很快就填上了一些较为保守的思想家。"
+ preftl_operation.3042.desc:0 "最近几周，许多反对我们特工理论的学者不得不离开他们的职位，随后又发生了一系列看似无关的——有时还相当暴力的——“意外事件”。" # note this forms the first paragraph for preftl_operation.3041
+ preftl_operation.3042.a:0 "很好。这就是我们的下马威。"
+
+ preftl_operation.1103.name:0 "资助科研"
+ preftl_operation.3043.desc:0 "我们在[from.target.capital_scope.GetName]上贿赂异见学者的企图瞬间就被发现并报道了。当地司法部门行动迅速：许多我们的特工被从学院里扫地出门。他们的空位迅速被较为保守的[from.target.GetSpeciesAdj]思想家占领了。"
+ operation_academic_bribery_caught:0 "行贿罪名成立"
+ operation_academic_bribery_caught_desc:0 "该谍报行动因我们的特工被以行贿罪名逮捕而推延了。"
+ preftl_operation.3044.desc:0 "得益于一位慷慨大方的匿名赞助人，当地学者们的研究经费终于有了着落：这馅饼掉得太突然，以至于连琐碎竞争的时间都没有。\n\n新近的繁荣也创造力一些新的学术岗位，并很快被我们的特工占领了。我们逐渐抓紧了对[from.target.GetSpeciesAdj]学院的控制，使其更便于传播我们的理念。"
+ operation_academic_bribery:0 "成功行贿"
+ operation_academic_bribery_desc:0 "在我们用自助对方研究的方式堵上了学术竞争者们的嘴之后，该谍报行动进展得愈发丝滑了。"
+
+ preftl_operation.1105.name:0 "争论不止"
+ preftl_operation.3045.desc:0 "在[from.target.capital_scope.GetName]上无休止的学术争论果然是一大阻碍，而非什么机遇。我们的特工没能在[from.target.capital_scope.GetPlanetHabitat]的主要文化学院中占得一席之地。也许我们尝试带去的理念在目前还是太具争议了。"
+ preftl_operation.3046.desc:0 "我们白捡了一个好机会！我们的特工在与[from.target.GetName]的思想家争论的过程中，发现自己已经被一些最尖锐的对手推到了一个人尽皆知的地步。结果就是，我们的理念现在被带到了[from.target.capital_scope.GetName]上最受尊敬的学术机构代表面前。\n\n这些机构不但理解了我们的思想，而且还开始开始对其提炼，并变成一些意想不到的东西：一些可能是经过混沌的意见交换后产生的新见解。"
+
+## Spymaster Exposed / Blackmail
+ preftl_operation.3050.name:0 "[from.spynetwork.leader.GetName]暴露"
+ preftl_operation.3050.desc:0 "发生了严重违规行为！$role_spymaster$ [from.spynetwork.leader.GetName]在一次秘访[from.target.capital_scope.GetName]地表时不慎暴露了踪迹。目前事故的细节仍在调查中，但[from.spynetwork.leader.GetHeShe]与当地的[from.target.GetSpeciesName]发生了短暂但直接的接触，他们一瞬间便落荒而逃。我们的特工尽力抓捕目击者，但目前仍一无所获。\n\n[from.GetName]行动仍在进展当中，但我们将采取特殊措施来遏制这场事故。"
+ preftl_operation.3050.a:0 "好，保持联系。"
+ preftl_operation.3050.a.gestalt:0 "继续监视。"
+ preftl_operation.3050.b:0 "逮住这个[from.target.GetSpeciesName]，让它从这世界上消失。"
+ preftl_operation.3050.c:0 "太放肆了！我们必须中止行动。"
+ preftl_operation.3050.d:0 "我们应该告知[global_event_country.GetGalCommunityOrGalImperium]。"
+ spynetwork_extra_containment:0 "特别遏制协议"
+ spynetwork_extra_containment_desc:0 "该间谍网络中的活动在近期发生严重暴露事故后被封锁。"
+
+ preftl_operation.3051.name:0 "消灭目击者"
+ preftl_operation.3051.desc:0 "我们的特工报告，他们成功地消灭了目标：我们最近在[from.target.GetName]入侵的唯一目击者。我们追踪这个人到达某个大型[from.target.GetSpeciesAdj]定居点郊区的一处偏远住所。这位目击者似乎处于极度震惊的状态，没有迹象表明此人与其他[from.target.GetSpeciesNamePlural]进行了接触。我们确信该事件已经得到了控制。"
+
+ preftl_operation.3055.name:0 "敲诈勒索"
+ preftl_operation.3055.desc:0 "那个目睹我们最近入侵[from.target.GetName]的[from.target.GetSpeciesName]不仅仍然在逃遁，而且向我们发出了粗暴的最后通牒。这个目击者威胁要揭露我们的$role_spymaster$——除此之外，还有[from.owner.GetName]——我们是如何对[from.target.GetSpeciesAdj]的事务进行插足干涉的。\n\n这个厚颜无耻的家伙待在了人口稠密的地区，通过这个方式阻挠我们，在此地我们不能在没有暴露风险的情况下对它采取什么措施。我们可能干脆就同意此人的要求算了。"
+ preftl_operation.3055.a:0 "不可接受。中止行动，立即撤退。"
+ preftl_operation.3055.b:0 "我们绝不进行谈判。消灭目击者。"
+ preftl_operation.3055.c:0 "大出血的价格，但是我们会出这个钱。"
+ preftl_operation.3055.c.tt:1 "特工将被指派对此人进行全时监控，确保整个过程的隐秘性。这会对我们的§Y$MOD_SPY_NETWORK_DAILY_VALUE_ADD$§!产生负面效应。" 
+ spynetwork_blackmailed:0 "被勒索"
+ spynetwork_blackmailed_desc:0 "这个间谍网的能力遭到了轻微的削弱，因为我们选择屈服于当地人的勒索。特工被指派对此人进行全时监控。"
+
+## Stricken
+ preftl_operation.3060.name:0 "负伤"
+ preftl_operation.3060.desc:1 "我们在[from.target.capital_scope.GetName]上的两名关键特工在一场意料之外的自然灾害中身受重伤，该灾害同样造成了许多[from.target.GetSpeciesAdj]伤亡。附近居民紧急驰援，那几名特工现在得到了基本的照料。\n\n[from.target.GetSpeciesNamePlural]还没能开始质疑我们的特工，尽管他们伤势严重，但和当地的大量受灾者相比不算什么。用不了多久，[from.GetName]行动就会受到更严格的审查——尤其是在我们的两名关键特工身体不适的情况下。" 
+ preftl_operation.3060.hive.desc:0 "我们在[from.target.capital_scope.GetName]上的两名关键特工在一场意料之外的自然灾害中身受重伤，该灾害同样摧毁了许多[from.target.GetSpeciesAdj]自个体。帮助者们紧急驰援，并将我们那两名负伤特工带走进行基本的照料。\n\n目前，[from.target.GetSpeciesAdj]蜂巢主倾向于关照那些更严重的毁伤上。但用不了多久，[from.GetName]行动就会受到更严格的审查——尤其是在我们的两名关键特工身体不适的情况下。我们有极大的暴露风险。"
+ preftl_operation.3060.a:0 "立即救回我们的特工。"
+ preftl_operation.3060.a.tt:0 "如果我们成功，§Y[from.GetName]行动§!将会按照计划进行。然而，有少许几率会失败，潜在的后果会比较严重。"
+ preftl_operation.3060.b:0 "我们必须相信他们的掩护靠得住。"
+ preftl_operation.3060.c:1 "我们不能冒风险暴露！中止行动。" 
+ preftl_operation.3060.d:0 "是时候揭示我们的真面目了。"
+ preftl_operation.3060.d.negative.tt:0 "将我们的特工完全托付给[from.target.GetSpeciesAdj]的医疗照料。这将会对§Y[from.GetName]行动§!造成§R负面§!的影响。"
+ preftl_operation.3060.d.positive.tt:0 "将我们的特工完全托付给[from.target.GetSpeciesAdj]的医疗照料。这将会对§Y[from.GetName]行动§!造成§G正面§!的影响。"
+ operation_stricken_operatives:0 "负伤特工"
+ operation_stricken_operatives_desc:0 "我们的数名关键特工不幸挂了彩，导致了进度的重大延误。"
+
+ preftl_operation.3061.success.desc:1 "£role_spymaster£ [from.spynetwork.leader.GetName]汇报，我们的受伤特工已经从[from.target.capital_scope.GetName]当地的的医疗设施中撤离。在[from.target.GetSpeciesNamePlural]的视角里，这些“幸存者”们受到了隐蔽的致命伤。他们遗体的复制品已经被妥善处置了。" 
+ preftl_operation.3061.failure.desc:1 "£role_spymaster£ [from.spynetwork.leader.GetName]紧急汇报，从[from.target.capital_scope.GetName]地表撤回受伤特工的行动失败了。几个[from.target.GetSpeciesAdj]目击了他们认为的“绑架未遂”，并带着他们的偏见强加干预。他们不仅加强了对那几名受伤特工的安保，甚至还逮捕了我们救援队的成员！\n\n[from.target.GetSpeciesName]现在高度警惕。至少在某种意义上来说，[from.GetName]行动已经败露了。" 
+ preftl_operation.3061.a:0 "提醒[global_event_country.GetGalCommunityOrGalImperium]。"
+
+ preftl_operation.3062.success.desc:0 "我们的掩护依然没有暴露。我们的特工几乎奇迹般地逃脱了致命的伤害这件事确实引起了一些怀疑，但[from.target.GetSpeciesNamePlural]似乎认为运气只是站在他们这一边。\n\n我们的特工们还要有一段时日才能回到岗位上，但他们现在已经进行了汇报。[from.GetName]行动将会恢复其首要日程。"
+ preftl_operation.3062.failure.desc.intro:1 "£role_spymaster£ [from.spynetwork.leader.GetName]紧急汇报，我们没能在[from.target.GetName]维持伪装。尽管他们训练有素并拥有我们所能提供的最好的伪装科技，但我们的特工非[from.target.GetSpeciesNamePlural]的身份还是暴露了。" 
+ preftl_operation.3062.failure.unaware.desc:0 "$preftl_operation.3062.failure.desc.intro$\n\n严峻的现实对我们的特工来说相当致命：他们正在接受基本手术时，[from.target.GetSpeciesAdj]护理人员发现了他们的真实身份，并为此惊慌失措。"
+ preftl_operation.3062.failure.aware.desc:0 "$preftl_operation.3062.failure.desc.intro$\n\n幸运的是当地人并没有惊慌失措，我们的特工暂时也没有受到伤害。然而，继续掩盖他们的存在和行动的成功希望非常渺茫。似乎我们必须处理迫在眉睫的后果了。"
+ 
+## Mixed Signals
+ preftl_operation.3100.name:0 "混杂信号"
+ preftl_operation.3100.desc:0 "[from.target.capital_scope.GetName]上一个大型定居点的子个体们今天意外地爆发了一场冲突。我们的特工在伪装成当地低级子个体时误用了错误的信息素，并引发了拥挤踩踏事件。[from.target.GetSpeciesAdj]蜂巢似乎对我们提前准备的信息素格外敏感。如果继续在当地定居点之间编排这样的爆炸性交互，我们应该会学到不少东西。\n\n显然，我们的存在正危害到[from.GetName]行动的进行。我们下次发送任何信号都必须做到万无一失。"
+ preftl_operation.3100.a:0 "学习他们的反应以控制信息素的释放。"
+ preftl_operation.3100.b:0 "掩盖掉信息素。"
+ preftl_operation.3100.b.tt:0 "调配更多资源，确保我们的特工完成任务，避免进一步发生意外的风险。"
+ spynetwork_hive_no_pheromones:0 "禁用信息素"
+ spynetwork_hive_no_pheromones_desc:0 "由于蜂巢思维最近暴露在了人工信息素中，我们决定在未来的行动中限制这一手段的使用。"
+
+## Technological Contamination
+ preftl_operation.3105.name:0 "科技遏止"
+ preftl_operation.3105.desc:0 "一个[from.target.capital_scope.GetName]子个体设法将自己的[from.target.species.GetHandNamePlural]放到了我们的测量装置上。它已经开始把我们的装置拆开了，如果它理解了什么，这股意识蔓延到当地的蜂巢思维只是一个时间问题。\n\n如果我们希望避免干扰它们的自然发展，就必须迅速采取行动。"
+ preftl_operation.3105.a:0 "让这些子个体拨弄我们的废品。"
+ preftl_operation.3105.a.tt:0 "§Y[from.target.GetName]§!：§G+20%§!科技进步。"
+ preftl_operation.3105.b:0 "要是我们将装置启动会怎么样？"
+ preftl_operation.3105.b.tt:0 "§Y[from.target.GetName]§!会挺进到下一个科技等级。 "
+ preftl_operation.3105.c:0 "遥控引爆当地所有的渗透设备。"

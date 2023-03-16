@@ -1,0 +1,336 @@
+﻿l_english:
+ pre_ftl_tech_progress_situation:0 "Technological Progression"
+ pre_ftl_tech_progress_situation_type:0 "$pre_ftl_tech_progress_situation$"
+ pre_ftl_tech_progress_situation_monthly_change_tooltip:0 "$situation_monthly_change_tooltip_no_control$"
+ pre_ftl_tech_progress_situation_desc:0 "This civilization is progressing to a new technological age."
+ acquired_tech:0 "Acquired Technology"
+ early_age:0 "Early Age"
+ mid_age:0 "Mid Age"
+ late_age:0 "Late Age"
+ technological_breakthrough:0 "Technological Breakthrough"
+ technological_setback:0 "Technological Setback"
+ tech_frozen:0 "Technological Development Frozen"
+ stratified_technological_enlightenment:0 "Stratified Technological Development Pact"
+ open_technological_enlightenment:0 "Open Technological Development Pact"
+
+ ### Plague Situation
+ situation_pre_ftl_plague:0 "Zoonotic Plague"
+ situation_pre_ftl_plague_type:0 "Zoonotic Plague"
+ situation_pre_ftl_plague_desc:1 "A novel zoonotic disease has appeared on [Target.GetName]. Without natural immunity or the medical technology required to combat the infection, the population is quickly succumbing to misery and death."
+ situation_pre_ftl_plague_monthly_change_tooltip:0 "$situation_monthly_change_tooltip_no_control$"
+ situation_pre_ftl_plague_outcome_tooltip:0 "One way or another, this plague will end. What is left in the aftermath may well depend on us."
+
+ # Stages
+ situation_plague_stage_one:0 "First Wave"
+ situation_plague_stage_two:0 "Second Wave"
+ situation_plague_stage_three:0 "Fever Broken"
+
+ approach_watch_learn:0 "Watch and Learn"
+ approach_provide_aid:0 "Provide Aid"
+ approach_promote_disease:0 "Promote the Disease"
+
+ ## Events
+
+ # Starting event
+ preftl.2001.name:0 "Outbreak"
+ preftl.2001.can_not_help.desc:1 "$preftl.2001.can_help.desc$\n\nOur policy is to never interfere with [owner.GetPreFTLLower] worlds, but can we really stand idly by while these people suffer?"
+ preftl.2001.can_help.desc:1 "A novel zoonotic disease has appeared on [from.owner.capital_scope.GetName]. Without the medical technology required to combat the infection, the population is quickly succumbing to misery and death."
+ preftl.2001.perpetrator.desc:1 "The disease we introduced to an unsuspecting population has spread beyond our control. Without the medical technology required to combat the infection, the planet's people are quickly succumbing to misery and death."
+ preftl.2001.a:0 "Watch and Learn"
+ approach_watch_tooltip:0 "Observing this situation should provide some interesting insights. Once selected, we will be unable to change this approach."
+ approach_singularity_tooltip_fail:0 "It is too late to switch our approach."
+ preftl.2001.b:0 "Provide Aid"
+ approach_aid_tooltip:0 "It is our responsibility to help those in need. Once selected, we will be unable to change this approach."
+ preftl.2001.c:0 "Promote the Disease"
+ approach_promote_disease_tooltip:0 "The plague offers a unique opportunity for research, and perhaps even the chance to purge the planet of sentient life. Once selected, we will be unable to change this approach."
+
+ preftl.2006.name:0 "Religious Mania"
+ preftl.2006.desc.intro:0 "The zoonotic disease on [Target.GetName] continues to spread. By now, most of the planet's major settlements have been infected. As mortality rates continue to rise, the sheer scale of the disaster"
+ preftl.2006.desc:0 "$preftl.2006.desc.intro$ has resulted in an explosive proliferation of religious sects and apocalyptic cults."
+ preftl.2006.a:0 "Guide them to the true faith."
+ plague_01_spiritualist:0 "Ardent Believers"
+ plague_01_spiritualist_desc:0 "In the most challenging times, those who are lost find solace in the spirit."
+ plague_01_militarist:0 "$plague_01_spiritualist$"
+ plague_01_militarist_desc:0 "$plague_01_spiritualist_desc$"
+
+
+ preftl.2007.name:0 "Rise of the Warlords"
+ preftl.2007.desc:0 "$preftl.2006.desc.intro$ is unprecedented. Perhaps unsurprisingly, numerous warlords have arisen to fill the power vacuum."
+ preftl.2007.a:0 "Bolster the strongest."
+
+ preftl.2008.name:0 "Angels of Mercy"
+ preftl.2008.desc:0 "Our efforts to help prevent the spread of disease on [Target.GetName] have not gone unnoticed: the local population has begun to speak of 'angels', enlightened beings who have appeared among them to offer comfort and deliverance."
+ preftl.2008.a:0 "Something like this was bound to happen."
+
+ preftl.2009.name:0 "Demonic Invaders"
+ preftl.2009.desc:0 "Our work to contain the spread of the plague on [Target.GetName] is attracting attention: the local population has begun to speak of 'demons', unholy beings who have appeared among them to combat the disease using profane magic."
+
+ preftl.2010.name:0 "Rampant Contagion"
+ preftl.2010.desc:0 "Our efforts to promote the plague on [Target.GetName] are bearing fruit. Through discrete contamination of local food sources, the contagion is running rampant. By now, every settlement on the planet has been infected, and the living are too weak to dispose of the dead."
+ preftl.2010.a:0 "Enough. This suffering must end."
+ tt_end_the_suffering:0 "Ending the plague now will reveal our presence and require a significant investment of resources."
+ d_mass_graves:0 "Mass Graves"
+
+ preftl.2011.name:0 "Survival of the Fittest"
+ preftl.2011.desc:0 "Our efforts to promote the plague on [Target.GetName] have borne fruit. The contagion is running rampant, and the dead are left to fester in the streets.\n\nHowever, a significant percentage of the population possesses a natural immunity to the disease. Further study of their genome could be useful in our own immunology research."
+ preftl.2011.a:0 "Procure a sample."
+
+ preftl.2020.name.outro:0 "Continuing to help while concealing our true nature will require a significant investment of resources."
+ preftl.2020.name:0 "Overwhelming Demand"
+ preftl.2020.desc:0 "Word continues to spread of the miraculous 'angels' at work on [Target.GetName]. Refugees have descended on our healthcare providers, clamoring for aid. $preftl.2020.name.outro$"
+ preftl.2020.a:0 "Secrecy is paramount."
+ preftl.2020.b:0 "Tell them the truth."
+
+ preftl.2021.name:0 "The Power of Faith"
+ preftl.2021.desc:0 "Word continues to spread of the 'demons' at work on [Target.GetName]. Fanatics have descended on our healthcare providers, clamoring for blood. $preftl.2020.name.outro$"
+
+ preftl.2025.name:0 "Messiah Syndrome"
+ preftl.2025.desc:0 "On [Target.GetName], a number of so-called messiahs have appeared. With promises of 'divine deliverance', each of these prophets has amassed a substantial following. On top of the ravages of disease, violent clashes between competing sects are increasingly commonplace."
+ preftl.2025.a:0 "The path of divine truth is winding."
+
+ preftl.2026.name:0 "True Prophet"
+ preftl.2026.desc:0 "At last, the plague on [Target.GetName] has run its course, and our work there has been rewarded: the survivors have rallied around a prophet of the true faith. In gratitude, the priesthood is willing to provide us with a working emissary, whose skills as a governor are said to be formidable."
+ preftl.2026.a:0 "Praise the Divine."
+ plague_03_spiritualist:0 "Justified Ends"
+ plague_03_spiritualist_desc:0 "Another society has awakened to the true faith. Our message rings out across the galaxy."
+ plague_03_militarist:0 "$plague_03_spiritualist$"
+ plague_03_militarist_desc:0 "Another planet in this harsh galaxy is now capable of defending themselves."
+ true_prophet_tt:0 "A skilled Governor agrees to join our empire."
+ leader_trait_zealot:0 "Fervent Believer"
+ leader_trait_true_prophet_desc:0 "Having gazed into the abyss, this governor possesses unshakeable faith."
+
+ preftl.2030.name:0 "Ragged Flags"
+ preftl.2030.desc:0 "On [Target.GetName], the exhausted population, starving, sick, half-mad with grief and endless war, staggers towards an uncertain future."
+ plague_05:0 "Ragged Flags"
+ plague_05_desc:0 "When crisis becomes routine, the victims either fight or fall."
+
+ preftl.2031.name:0 "Brilliant Banner"
+ preftl.2031.desc:0 "The plague on [Target.GetName] has run its course, and the faction we backed has succeeded in uniting the population under a single banner. In gratitude for our efforts, the ruling junta has offered to provide us with a general, one whose skills on the battlefield have proven formidable."
+ preftl.2031.a:0 "Might is righteous."
+ brilliant_banner_tt:0 "A skilled General agrees to join our empire."
+ leader_trait_plague_hardened:0 "Plague-Hardened General"
+ leader_trait_plague_hardened_desc:0 "Having gazed into the abyss, this general possesses a keen and tempered mind."
+
+ preftl.2035.name:0 "Apocalypse Now"
+ preftl.2035.desc:0 "Thanks to our fastidious promotion, the plague on [Target.GetName] has decimated the population. Those few who survive now face the collapse of their civilization. Pushing them over the brink should not require much effort.\n\nWe are poised to inherit an empty world."
+
+ preftl.2040.name:0 "Enhanced Immunity"
+ preftl.2040.desc:0 "The sample we obtained from [Target.GetName] has already paid scientific dividends; the mutation that provides immunity against the plague appears capable of warding off most known forms of contagion.\n\nIt will take time to apply this research, but the initial results are more than encouraging."
+ 
+ preftl.2049.name:0 "Changing Circumstances"
+ preftl.2049.desc:0 "The swiftly changing circumstances on [Target.GetName] have made it impossible for us to continue monitoring the ongoing plague. For the time being, all research research projects on the planet must be shelved."
+
+ preftl.2063.intro:0 "On [Target.GetName], winds whisper across the empty plains. Dwellings that once housed whole families now stand lifeless and forlorn."
+ preftl.2063.name:0 "Silent World"
+ preftl.2063.desc:0 "$preftl.2063.intro$\n\nThe planet's population has been eliminated. At long last, the plague has run its course."
+
+ preftl.2051.name:0 "Dead World"
+ preftl.2051.desc:0 "$preftl.2063.intro$ Our work is done: the population of [Target.GetName] has been eliminated, and the planet is ours for the taking."
+ dead_world_tt:0 "The population of [Target.GetName] is eliminated."
+
+ preftl.2062.name:0 "Mass Death"
+ preftl.2062.desc:0 "As the plague continues to ravage [Target.GetName], the number of dead and dying is staggering.\n\nThere is no cure. Further suffering can only be alleviated, not prevented."
+
+ preftl.2065.name:0 "Minds Wide Open"
+ preftl.2065.desc:0 "Our response to the plague on [Target.GetName] can no longer be concealed. The population now turns their grief-stricken gaze to the stars. We have opened their minds to the truth; what happens next remains to be seen."
+ opinion_plague_situation_01:0 "Grateful Populace"
+ minds_open_tt:0 "The people of [Target.GetName] have an increased opinion of us."
+
+ preftl.2070.name:0 "Fervent Belief"
+ preftl.2070.desc:0 "At last, the plague on [Target.GetName] has run its course. The age of prophets has come to an end, and a number of major religions are flourishing. With a renewed sense of meaning, the people have begun to rebuild."
+
+ preftl.2075.name:0 "Lords of the Battlefield"
+ preftl.2075.desc:0 "The plague on [Target.GetName] has run its course. The age of warlords has come to an end, and a number of warrior societies are flourishing. Grateful to be alive, the people look to their leaders for strong and determined rule."
+
+ preftl.2080.name:0 "Grateful Populace"
+ preftl.2080.desc:0 "Through diligent effort, we have succeeded in curbing the worst effects of the plague on [Target.GetName]. However, the true nature of our presence on the planet can no longer be concealed. The population understands they have been saved by another world. Filled with gratitude, they turn their gaze to the stars."
+ plague_02:0 "Basking in Gratitude"
+ plague_02_desc:0 "Saving an entire planet is worth celebrating."
+
+ grateful_populace_tt:0 "The people of [Target.GetName] have an increased opinion of us."
+ 
+ preftl.2085.name:0 "Mass Exorcism"
+ preftl.2085.desc:0 "The worst effects of the plague on [Target.GetName] have been contained. However, far from gratitude, the survivors are filled with righteous anger at the 'demonic outsiders' who arrived to pollute their culture. Targeted and stigmatized, our aid workers have been forced to abandon the planet. While not yet fully aware of the truth, the local population now turns a nervous gaze to the stars."
+ preftl.2085.a:0 "Ungrateful beings."
+ plague_04:0 "Righteous Indignation"
+ plague_04_desc:0 "Having been spurned by beings who would rather live in their own ignorance than accept our aid, in future we shall focus more on ourselves."
+ opinion_plague_situation_03:0 "Ungrateful Beings"
+ mass_exorcism_tt:0 "The people of [Target.GetName] have a lowered opinion of us."
+
+ preftl.2090.name:0 "Fountain of Youth"
+ preftl.2090.desc:0 "The plague on [Target.GetName] has finally run its course. More importantly, our study of the population's enhanced immunity is complete, and a choice must now be made: should the benefits of this research be applied exclusively to our ruling class, or the population as a whole? Increasing the longevity of our leaders is certainly attractive, while a grateful populace carries blessings of its own."
+ preftl.2090.desc.hive:0 "The plague on [Target.GetName] has finally run its course. More importantly, our study of the population's enhanced immunity is complete. This knowledge will certainly be of benefit, but a choice must be made: should we apply it exclusively to our leaders, or to every drone in the collective?"
+ preftl.2090.desc.machine:0 "The plague on [Target.GetName] has finally run its course. More importantly, our study of the population's enhanced immunity is complete. This knowledge can now be applied to benefit the [Owner.GetName]."
+ preftl.2090.a:0 "Our leaders will thrive."
+ preftl.2090.b:1 "Our population comes first."
+ opinion_plague_situation_02:0 "Enduring Gratitude"
+ young_leaders:0 "Rejuvenated Leadership"
+ young_people:0 "Rejuvenated Populace"
+
+ ### Organic Singularity Situation
+ situation_pre_ftl_singularity:0 "Organic Singularity"
+ situation_pre_ftl_singularity_type:0 "Singularity Event"
+ situation_pre_ftl_singularity_desc:0 "The people on [Target.GetName] have stumbled across a new type of species. A nodal consciousness with the ability to handle complex operations, interacting with this creature may eventually result in the advent of an Organic Singularity."
+ situation_pre_ftl_singularity_monthly_change_tooltip:0 "Our choice of approach will determine the rate of progress for this §YSituation§!."
+
+ approach_watch_singularity:0 "Watch and Learn"
+ approach_watch_singularity_tooltip:0 "Watching this unfold should provide some interesting insights."
+ approach_allow_tooltip:0 "Once our initial approach has been determined, we are unable to change it."
+ approach_prevent_singularity:0 "Prevent Singularity"
+ approach_prevent_singularity_tooltip:0 "Preventing the Singularity will require a continuous investment in resources. Once selected, we will be unable to change this approach."
+ approach_promote_singularity:0 "Promote Singularity"
+ approach_promote_singularity_tooltip:0 "Promoting the Singularity will require a significant investment.  Once selected, we will be unable to change this approach."
+ situation_singularity_stage_one:0 "Advent of the Singularity"
+
+ # Starting event
+ preftl.2101.name:0 "Nodal Consciousness Discovered"
+ preftl.2101.desc:0 "[from.owner.GetSpeciesAdj] explorers on [from.owner.capital_scope.GetName] have discovered a previously unknown species of molluscoid. On its own, each of these creatures barely qualifies as sapient. However, when two or more are joined through physical contact, they form a semi-conscious node. Theoretically, these nodes should be capable of an exponential growth in cognitive power.\n\nSimply put, the people of [from.owner.capital_scope.GetName] have stumbled onto a biological thinking machine. Given time, this discovery could herald the advent of an Organic Singularity."
+ preftl.2101.can_not_help.desc:1 "$preftl.2101.desc$\n\nOur policy is to never interfere with [owner.GetPreFTLLower] worlds, but can we really afford to stand by and watch?"
+ preftl.2101.a:0 "Watch and Learn"
+ preftl.2101.b:0 "Prevent the Singularity"
+ preftl.2101.c:0 "Promote the Singularity"
+
+ #Organic Singularity Events
+
+ preftl.2110.name:0 "Blissful Ignorance"
+ preftl.2110.desc:0 "Unaware of the looming danger, the inhabitants of [Target.GetName] continue to experiment with the recently discovered nodal consciousness, making use of its calculations in everything from architecture to education.\n\nSlowing their progress will be difficult, but by introducing a genetically-augmented virus into the planet's water cycle, we should be able to reduce the cognitive power of the individual nodes.\n\nOf course, as with any untested technology, there are unknown risks."
+ preftl.2110.a:0 "Introduce the virus."
+
+ preftl.2115.name:0 "Biological Calculators"
+ preftl.2115.desc:0 "Through persistent experimentation, the people of [Target.GetName] have begun to use the recently discovered nodal consciousness as a rudimentary thinking machine.\n\nNow capable of completing complex mathematical calculations, the inhabitants are making breakthroughs in science and technology at a previously unheard of pace."
+ 
+ preftl.2120.name:0 "Exponential Growth"
+ preftl.2120.desc:0 "Progress towards an Organic Singularity on [Target.GetName] continues apace.\n\nThe nodal consciousness has reorganized much of the planet's agricultural production, increasing crop yields and raising standards of living. Already, the people are relinquishing their decision-making to the biological machine."
+ exponential_growth_tt:0 "Living conditions on the observed planet will substantially improve."
+
+ preftl.2125.name:0 "Suspicious Minds"
+ preftl.2125.desc:0 "Our agents on [Target.GetName] have introduced the modified virus to the planet's water system. Initial reports indicate a marked reduction in the processing power of the nodal consciousness.\n\nUnfortunately, our efforts have not gone unnoticed: some of the inhabitants are beginning to whisper about 'outside' influences."
+
+ preftl.2130.name:0 "Organic Idyll"
+ preftl.2130.desc:0 "Interface with the nodal consciousness on [Target.GetName] is reaching a saturation point. All bureaucratic decisions have been delegated to the organic hive mind, and the results are nothing short of spectacular.\n\nThe planet's economy is booming, and the people have achieved a standard of life that would have been unthinkable even a generation ago."
+
+ preftl.2135.name:0 "Uneasy Synergy"
+ preftl.2135.desc:0 "The first stirrings of an advanced level of consciousness have appeared on [Target.GetName]. However, it has become obvious that the nodal consciousness may have its own designs.\n\nIn an effort to 'streamline' processes, certain basic amenities have been curtailed. Jobs that were once done by hand are increasingly automated, and local government has found itself unable (or unwilling) to stem the tide of change.\n\nMany of the inhabitants are increasingly uneasy about what is taking place on their world."
+
+ preftl.2136.name:0 "Thriving Union"
+ preftl.2136.ftl.desc:0 "The growth of the nodal consciousness on [Target.GetName] has stabilized. It is clear now that the Singularity will not be achieved on this world.\n\nHowever, rapid technological change has elevated [Target.GetName] to full FTL status. Government agents wasted no time in seizing the system and dismantling our Observation Post."
+ preftl.2136.preftl.desc:0 "The growth of the nodal consciousness on [Target.GetName] has stabilized, and advances in technology and social life have slowed from their formerly breakneck pace.\n\nIt is clear now that the Singularity will not be achieved on this world - instead, a fully interconnected society has developed, and one that enjoys widespread health and other material benefits."
+ thriving_union_tt:0 "The civilization on [Target.GetName] has advanced to a new level of technological and social progress."
+ preftl.2136.a:0 "Our claim to the system cannot be ignored."
+ preftl.2136.b:0 "A great day for their civilization."
+
+ preftl.2140.name:1 "Singular Authority"
+ preftl.2140.desc:1 "The Singularity has arisen on [Target.GetName].\n\nAfter years of exponential growth, today the nodal consciousness achieved full sapience and wasted no time solidifying its authority. With the planet's population reduced to puppet status, many have been forced into subservience. They now exist to provide for the hive."
+ preftl.2140.a:0 "The natural order holds."
+
+ preftl.2145.name:0 "Alternate Agenda"
+ preftl.2145.desc:0 "Our work to promote the Singularity on [Target.GetName] is already paying dividends.\n\nBy now, the planet is almost entirely networked, with much of the day-to-day decision-making given over to the nodal consciousness. However, in an effort to 'streamline' processes, certain basic amenities have been eliminated, and it is growing increasingly clear to the planet's people that their molluscoid machine may have its own designs."
+ preftl.2145.a:0 "It was inevitable."
+
+ preftl.2150.name:0 "At Least They're Edible"
+ preftl.2150.intro:0 "Our genetic modification of the nodal consciousness on [Target.GetName] has rendered the species useless as a vector for advanced intelligence."
+ preftl.2150.desc:0 "$preftl.2150.intro$ It is safe to conclude that the Singularity has been prevented.\n\nWhile many in the local population continue to use the linked molluscoids for calculation, others have found that the creatures make excellent source of protein."
+ preftl.2150.a:0 "Win win."
+ 
+ preftl.2155.name:0 "Accidental Outbreak"
+ preftl.2155.desc:0 "$preftl.2150.intro$ Unfortunately, the introduction of a novel virus to the water supply has had unexpected complications, first spreading to the local fauna, and then to the planet's sapient population.\n\nWhile a Singularity-level event has been successfully prevented, there is no doubt we have caused irreparable damage to a burgeoning society."
+ 
+ preftl.2160.name:0 "Communion"
+ preftl.2160.desc:0 "The Singularity has dawned on [Target.GetName]. Within hours of its ascension, the hive mind had absorbed more than 90% of the planet's population, and the few individuals who remain are already being hunted down.\n\nWe stand witness to the birth of a singular consciousness."
+ preftl.2160.tt:0 "[Target.Owner.GetName] has been converted into a Hive Mind."
+
+ preftl.2165.name:0 "A Singular Fate"
+ preftl.2165.desc:0 "The situation we have been monitoring has come to an abrupt conclusion.\n\nThe only constant in the universe is change. For good or ill, it is only a matter of time before some new development arises."
+
+ singularity_situation_01:0 "Exponential Growth"
+ exponential_growth_01_desc:0 "Thanks to the rapid pace of technological growth, living standards are on the rise."
+ singularity_situation_02:0 "Exponential Growth"
+ singularity_situation_02_desc:0 "$exponential_growth_01_desc$"
+ singularity_situation_03:0 "Edible Machines"
+ edible_machines_03_desc:0 "While they may not have resulted in a Singularity, these thinking machines have proven surprisingly delicious."
+ singularity_situation_04:0 "Edible Machines"
+ singularity_situation_04_desc:0 "$edible_machines_03_desc$"
+ singularity_situation_05:0 "Austerity Plan"
+ singularity_situation_05_desc:0 "In the name of efficiency, deep cuts in public investment are being made on on the planet."
+ singularity_situation_06:0 "Research Boom"
+ singularity_situation_06_desc:0 "Thanks to the newly discovered thinking machines, researchers are making extraordinary advances."
+ singularity_situation_07:0 "Slaves to the Machine"
+ singularity_situation_07_desc:0 "The Organic Singularity has assumed total control of the population."
+
+ ### New World Order Situation
+
+ situation_pre_ftl_nwo:0 "New World Order"
+ situation_pre_ftl_nwo_type:0 "Military and Social Upheaval"
+ situation_pre_ftl_nwo_desc:0 "Preaching a radical doctrine of planetary unification, a charismatic leader has appeared on [Target.GetName]. Now, only a small and relatively ill-equipped band of rebels stands opposed to majoritarian rule."
+ situation_pre_ftl_nwo_monthly_change_tooltip:0 "$situation_monthly_change_tooltip_no_control$"
+
+ approach_watch_nwo:0 "Watch and Learn"
+ approach_watch_nwo_tooltip:0 "Watching this unfold should provide some interesting insights."
+ approach_aid_leader:0 "Aid Leader"
+ approach_aid_leader_tooltip:0 "Aiding the leader of the major faction will require an investment of resources."
+ approach_aid_rebels:0 "Aid Rebels"
+ approach_aid_rebels_tooltip:0 "Aiding the rebels will require an significant investment of resources."
+ situation_nwo_stage_one:0 "Burgeoning Conflict"
+ situation_nwo_stage_two:0 "Tipping the Scales"
+ situation_nwo_stage_three:0 "Power Struggles"
+ situation_nwo_stage_four:0 "Final Round"
+
+ # Starting event
+ preftl.2167.name:0 "New World Order"
+ preftl.2167.desc:0 "Preaching a radical doctrine of planetary unification, a charismatic leader has appeared on [from.owner.capital_scope.GetName]. Now, only a small and relatively ill-equipped band of rebels stands opposed to majoritarian rule."
+ preftl.2167.can_not_help.desc:1 "$preftl.2167.desc$\n\nOur policy is to never interfere with [owner.GetPreFTLLower] worlds, but can we really afford to stand by and watch?"
+ preftl.2167.a:0 "Watch and Learn"
+ preftl.2167.b:0 "Aid Leader"
+ preftl.2167.c:0 "Aid Rebels"
+ new_world_order_offensive_army:0 "Pro-Unification Forces"
+ new_world_order_defensive_army:0 "Rebel Forces"
+ NAME_Pro_Unification_Faction:0 "Pro-Unification Faction"
+ increase_aid_tt:0 "Continued support will increase the chances of a successful outcome by a modest percentage."
+ arm_them_tt:0 "Providing advanced weaponry will increase the chances of a successful outcome by a significant percentage."
+
+ preftl.2170.name:0 "Consolidation"
+ preftl.2170.desc:0 "For the rebels on [Target.GetName], the future appears grim: under the inspired leadership of [Target.Owner.GetRulerName], pro-unification forces have seized power in most of the planet's population centers. Unity is imposed with an iron fist. Any dissent is swiftly crushed."
+ preftl.2170.a:0 "Increase our aid to the rebels."
+ preftl.2170.b:0 "We can do more more to aid the pro-unification forces."
+
+ preftl.2175.name:0 "War Crimes"
+ preftl.2175.desc:0 "Bloody battles rage on [Target.GetName], where pro-unification and rebel forces continue to tear one another to pieces. In this struggle, no weapon or tactic is off-limit, and atrocities have been committed on both sides."
+ preftl.2175.a:0 "The rebels need our help now more than ever."
+ preftl.2175.b:0 "Increase support to the pro-unification forces."
+
+ preftl.2180.name:0 "Fat and Happy"
+ preftl.2180.a.desc:0 "As the civil conflict continues to rage on [Target.GetName], pro-unification forces are on the brink of victory.\n\nHowever, far from the front lines, local governors are seizing every opportunity to enrich themselves. For now, criticism remains muted, but the corruption has not gone unnoticed by the local population."
+ preftl.2180.b.desc:0 "On [Target.GetName], the war between pro-unification and rebel forces has slowed to a murderous grind. With front lines entrenched, local warlords on both sides are enriching themselves by means of graft and corruption. How this will affect the course of the conflict remains to be seen."
+ preftl.2180.a:0 "Foment public dissent."
+ preftl.2180.b:0 "Have our agents legitimize the regime."
+
+ preftl.2185.name:0 "Suppress and Destroy"
+ preftl.2185.a.desc:0 "The instability caused by corrupt and ineffectual local leaders on [Target.GetName] has galvanized public support around the rebels' cause.\n\nIn the planet's major urban centers, [Target.Owner.GetRulerName] has ordered their troops to carry out a series of brutal, street-by-street incursions to weed out the resistance."
+ preftl.2185.b.desc:0 "The increasingly corrupt and ineffectual local leaders on [Target.GetName] have diminished popular support for the war. On both sides, military commanders have been forced into anti-insurgency campaigns to quell civilian unrest."
+ preftl.2185.a:0 "Increase our logistical support."
+ 
+ preftl.2190.name:0 "Power Plays"
+ preftl.2190.a.desc:0 "Across [Target.GetName] rebel forces are in retreat, and [Target.Owner.GetRulerName] reigns supreme.\n\nHowever, even as a new world order is taking shape, fractures have begun to appear; high-ranking officials pit themselves against victorious generals, and profit-hungry courtiers stalk the halls of power.\n\n[Target.Owner.GetRulerName] is about to be tested on a whole new battlefield."
+ preftl.2190.b.desc:0 "Given the failure of any one group to seize control of [Target.GetName], the planet has descended into chaos. Local warlords vie for power, and increasingly radical social movements spring up overnight. As the planet continues through the greatest upheaval in its history, peace remains a distant dream."
+ preftl.2190.a:0 "Begin arming the rebel forces."
+
+ preftl.2195.name:0 "Total Revolution"
+ preftl.2195.a.desc:0 "Decrying the decadence and corruption of the planet's highest officials, the people on [Target.GetName] have risen up in solidarity with rebel forces. In every town and village, the fires of revolution burn."
+ preftl.2195.b.desc:0 "On [Target.GetName] chaos reigns.\n\nDisorganized bands roam the countryside, desperate for food. In the capital, [Target.Owner.GetRulerName] clings to power, but with a diminished authority that barely extends beyond the palace gates.\n\nUnless something radical changes, the pro-unification forces appear headed for defeat."
+ preftl.2195.a:0 "Begin arming the pro-unification forces."
+
+ preftl.2200.name:0 "Grip of the Autarch"
+ preftl.2200.desc:0 "In a stunning display of strategy, [Target.Owner.GetRulerName] has crushed the planet's resistance. Sleeper agents in the rebel ranks precipitated a coordinated and planet-wide attack. Before the rebel commanders knew what was happening, their positions were overwhelmed.\n\n[Target.GetName] is now a unified world."
+ preftl.2200.a:0 "May the fallen be remembered."
+ 
+ preftl.2205.name:0 "Year Zero"
+ preftl.2205.a.desc:0 "In a stunning turn of events, [Target.Owner.GetRulerName] has been deposed.\n\nAligning themselves with several opportunistic generals within the regime, rebel forces succeeded in launching a coordinated, planet-wide attack. Before the pro-unification commanders knew what was happening, their positions were overwhelmed.\n\nParaded in chains through the streets of the capital, [Target.Owner.GetRulerName] was quickly executed. The victorious rebels have granted the planet's regions the authority to dictate their own affairs. After years of war, a tenuous peace has descended."
+ preftl.2205.b.desc:0 "[Target.Owner.GetRulerName] has been deposed.\n\nParaded in chains through the streets of the capital, the former warlord was quickly executed. The victorious rebels have granted the planet's regions the authority to dictate their own affairs. After years of war, a tenuous peace has descended."
+ preftl.2205.a:0 "In time they may come to miss [Target.Owner.GetRulerName]."
+
+ nwo_situation_01:0 "Autarch Triumphant"
+ nwo_situation_01_desc:0 "Strength leads to unity; unity leads to happiness."
+ nwo_situation_02:0 "Unfettered Flags"
+ nwo_situation_02_desc:0 "A diverse society leads to happiness. Happiness leads to unity."
+ nwo_situation_03:0 "Increased Aid"
+ nwo_situation_03_desc:0 "These resources will ensure a swift and just end to the conflict."

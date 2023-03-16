@@ -1,0 +1,384 @@
+﻿l_english:
+
+# Observation Events from base game
+# Refactored as part of the 3.7 "Canis Minor" update.
+
+# Asteroid Sighted!
+ observation.2.name:1 "Asteroid Approaching [pre_ftl_planet.GetName]"
+ observation.2.desc:2 "The small astrometric lab on our Observation Post orbiting [pre_ftl_planet.GetName] has detected a Class-4 asteroid on an incoming trajectory. Unless action is taken, it will impact the [pre_ftl_planet.GetPlanetHabitat]'s [GetRandomCompassDirection] hemisphere with enough force to cause an extinction level event.\n\nOur mission of passive observation would typically prohibit us from intervening, but many of our scientists have argued for an exception in this case. To do nothing would mean to condemn the [pre_ftl_country.GetName] on [pre_ftl_planet.GetName] to certain death."
+ observation.2.a:1 "A difficult situation."
+# Asteroid Impacts Pre-FTL planet.
+ observation.4.name:1 "Asteroid Impacts [pre_ftl_planet.GetName]"
+ observation.4.desc:1 "As predicted, the asteroid heading for [pre_ftl_planet.GetName] has impacted the [pre_ftl_planet.GetPlanetHabitat]'s surface, causing irreparable damage to its ecosystem. The scientists in our Observation Post could only watch in silence as the majority of the [GetPreFTLLower] civilization they had been studying was snuffed out of existence far below."
+ observation.4.a:1 "A tragic fate, but it was not our place to interfere."
+ observation.4.a.tt:0 "§Y[pre_ftl_country.GetName]§!: Regresses to the §YStone Age§!."
+# Asteroid Collides with Observation Post.
+ observation.5.name:1 "Observation Post Destroyed"
+ observation.5.desc:1 "The researchers on our Observation Post over [pre_ftl_planet.GetName] used the station's orbital thrusters to maneuver it on a direct collision course with the incoming asteroid. Their sacrifice deflected the asteroid safely away from the [pre_ftl_planet.GetPlanetHabitat], but there were no survivors on the outpost.\n\nEvidently they could not bear to watch the extinction of the civilization they had spent their careers studying."
+ observation.5.a:1 "A blow to science!"
+# Observing Empire Destroys Asteroid
+ observation.7.name:1 "Asteroid Destroyed"
+ observation.7.desc:1 "The asteroid that was heading towards [pre_ftl_planet.GetName] has been destroyed before it could reach the [pre_ftl_planet.GetPlanetHabitat]'s surface. What fragments reached the atmosphere burned up safely before they could cause any harm.\n\nAside from having witnessed what must have been a spectacular meteor shower, the [GetPreFTLLower] aliens of the [pre_ftl_country.GetName] have no idea how close to extinction they just came..."
+ observation.7.a:1 "Nor will they."
+# Third Party Destroys Asteroid (Event for Third Party)
+ observation.8.name:0 "$observation.7.name$"
+ observation.8.desc:0 "$observation.7.desc$"
+ observation.8.a:0 "$observation.7.a$"
+# Third Party Destroys Asteroid (Event for Observing Empire)
+ observation.9.name:0 "$observation.7.name$"
+ observation.9.desc:0 "$observation.7.desc$"
+ observation.9.a:0 "$observation.7.a$"
+# Pre-FTL civilization Diverts Asteroid (Event for Observing Empire)
+ observation.10.name:0 "Asteroid Diverted"
+ observation.10.desc:0 "In a last-ditch effort to save [pre_ftl_planet.GetName], the [pre_ftl_country.GetName] launched several nuclear missiles at the asteroid. Although these missiles were insufficient to destroy it, in a remarkable display of orbital mechanics, the [GetPreFTLLowerPlural] on [pre_ftl_planet.GetName] have successfully diverted the asteroid off-course."
+ observation.10.a:0 "Remarkable!"
+ observation.10.a.tt:0 "§Y[pre_ftl_country.GetName]§! gains: §G+25%§! Technological Progression for 24 months."
+
+# Missing Scientist
+ observation.101.name:1 "Missing Scientist"
+ observation.101.desc:2 "One of the scientists working at the Observation Post orbiting [pre_ftl_planet.GetName] has been reported missing. [missing_scientist.GetHeSheCap] [missing_scientist.GetWasWere] taking part in a covert mission to collect plant samples from the [pre_ftl_planet.GetPlanetHabitat]'s surface, but did not return to the shuttle with the rest of [missing_scientist.GetHisHer] team.\n\nWe have been conducting a limited search so as not to alert the [GetPreFTLLowerPlural], but so far without success."
+ observation.101.a:1 "Keep up the search."
+ observation.102.name:1 "Scientist Found Dead"
+ observation.102.desc:1 "We have finally recovered the body of the missing scientist on [pre_ftl_planet.GetName]... or what remained of it, at any rate. It looks like [missing_scientist.GetHeShe] fell victim to a large, indigenous predator. An unfortunate loss to our science team, but at least the [GetPreFTLLowerPlural] are still oblivious to our presence."
+ observation.102.a:1 "The directive has been upheld."
+ observation.103.name:1 "Strange Reports from [pre_ftl_planet.GetName]"
+ observation.103.desc:1 "We are receiving strange reports from our observers above [pre_ftl_planet.GetName]. One of the native kingdoms has rallied under a mysterious religious figure, and we have seen evidence of them using advanced technology far beyond their current level of development. Could this be related to our missing scientist?"
+ observation.104.desc:1 "Greetings, friends. It has been some time.\n\nFirstly, I want to apologize for all the effort you've put into looking for me. My disappearance on [pre_ftl_planet.GetName] was entirely intentional.\n\nThe [GetPreFTLLowerPlural] here have come to see me as something of a god... and why shouldn't they? After much deliberation, I have decided to bring true civilization to these [GetPreFTLLowerPlural]."
+ observation.104.a:1 "What has gotten into you?!"
+ observation.104.a.response:1 "I was tired. Tired of short-sighted ethical constraints, tired of the ridicule I suffered at the hands of my peers. Most of all, I was tired of 'passive' observation.\n\nWhat nonsense! It is our DUTY to interfere with [GetPreFTLLower] cultures - to guide and shape them along a path of our choosing. Observing quietly from the sidelines is just a shameful way of skirting responsibility."
+ observation.104.b:1 "You will report for immediate extraction!"
+ observation.104.b.response:1 "It is too late for that, I'm afraid. I am done taking orders from those beneath my station. My intellect was at your disposal, but you chose to squander it.\n\nHere I am treated with the respect I deserve. This is my home now. With my knowledge and the technical schematics I brought with me, I will jump-start this culture and usher in a golden age."
+ observation.104.c:1 "You're insane."
+ observation.104.c.response:1 "On the contrary! I have never been more lucid! The death of the [Root.GetName] is inevitable. You'd have to be blind not to see the signs.\n\nOh, it may take anything from a decade to a century, but your downfall will come. After you have finished destroying yourselves with inaction, the galaxy will belong to vibrant young cultures such as the one I am in the process of building.\n\nThere is little more to say. I bid you farewell. "
+ observation.105.name:1 "Rogue Scientist Consolidates Power"
+ observation.105.desc:1 "We have received alarming reports from the surface of [pre_ftl_planet.GetName]. It looks like our rogue scientist is consolidating power - [missing_scientist.GetHeShe] has given one of the feudal kingdoms access to advanced weaponry, and they are now in the process of conquering the rest of the [pre_ftl_planet.GetPlanetMoon] in [missing_scientist.GetHisHer] name.\n\nA plan has been proposed to forcibly extract [missing_scientist.GetHimHer], but it will require significant ground forces. There is no telling what effect this will have on the native population, as many have come to see [missing_scientist.GetHimHer] as a god."
+ observation.105.a:1 "The operation is a go. Remove [missing_scientist.GetHimHer]."
+ observation.105.b:1 "It would only make things worse..."
+ observation.106.name:1 "Successful Extraction"
+ observation.106.desc:1 "We have successfully extracted the rogue scientist from [pre_ftl_planet.GetName]! Hundreds of [owner.GetPreFTLLowerPlural] were tragically gunned down when they launched suicidal attacks against our forces in a futile attempt to protect their 'god.'\n\nOur legal system will now deal with the scientist, but the impact of these events on the [pre_ftl_planet.GetPlanetHabitat]'s civilization must be immense. They still possess some of our technology, and their deity has just been spirited away by invaders from the stars."
+ observation.106.a:1 "At least one problem has been dealt with."
+ observation.107.name:1 "Religious Conflicts on [pre_ftl_planet.GetName]"
+ observation.107.desc:1 "Following the successful extraction of our rogue scientist, [pre_ftl_planet.GetName] has descended into war. The empire [missing_scientist.GetHeShe] built has fragmented into several quarreling factions, each with their own interpretation of [missing_scientist.GetHisHer] religious dogma.\n\nFighting has been particularly fierce due to the destructive weaponry the natives are now using. Several radiological 'dirty bombs' have so far been detonated by the opposing factions, and it looks like the conflict is only getting started."
+ observation.107.a:1 "This will not end well..."
+ observation.108.name:1 "Situation Calms on [pre_ftl_planet.GetName]"
+ observation.108.desc:1 "The situation on [pre_ftl_planet.GetName] seems to have settled down a bit since the successful extraction of our rogue scientist. Without [missing_scientist.GetHimHer] to interpret the data, the technical schematics [missing_scientist.GetHeShe] brought with [missing_scientist.GetHimHer] are of no use to the people of [pre_ftl_planet.GetName]. The [GetPreFTLLowerPlural] are gradually reverting to their old ways."
+ observation.108.a:1 "Some good news at last."
+ observation.109.name:1 "Missile Strikes Observation Post!"
+ observation.109.desc:1 "Earlier today, a barrage of surface-to-space missiles was launched from the surface of [pre_ftl_planet.GetName] at our Observation Post! The station was destroyed with no survivors.\n\nThere can be no doubt that the [GetPreFTLLower] civilization on the [pre_ftl_planet.GetPlanetHabitat]'s surface is continuing to advance at an incredible rate - despite the fact that we removed the influence of their so-called 'god.' The technology [missing_scientist.GetHeShe] gave them must have triggered a lasting scientific revolution."
+ observation.109.a:1 "This is why we have a directive of noninterference."
+ observation.110.desc:1 "Spirits protect me! You look like our Holy Savior, yet the differences are telling. [missing_scientist.GetHeSheCap] spoke of demons who would mimic [missing_scientist.GetHimHerCap] appearance, and that might one day descend from the heavens to steal [missing_scientist.GetHimHerCap] away. The prophecy came true, and there is no doubt in my mind that it was your doing.\n\nWhere is our Holy Savior, wretched creature? I demand [missing_scientist.GetHimHerCap] immediate release!"
+ observation.110.a:1 "Your 'Holy Savior' was an alien scientist."
+ observation.110.a.response:1 "Cease thy blasphemy! Slandering the name of the Holy Savior is an unforgivable sin, and punishable by death. It is only through [missing_scientist.GetHisHerCap] sacred implements that our civilization managed to achieve all that it has. I will forgive your trespass, so long as you return the Holy Savior to us."
+ observation.110.b:1 "[missing_scientist.GetHeSheCap] was executed for [missing_scientist.GetHisHer] crimes against your people."
+ observation.110.b.response:1 "Murderers. Vile, treacherous demons.\n\nMark my words: this crime will not go unpunished. Though it may take a thousand years, my people will see your demonic empire ground to dust."
+ observation.110.c:1 "Very well. [missing_scientist.GetHeSheCap] will be released into your custody."
+ observation.110.c.response:1 "May the Holy Savior forgive your crimes, demon. Perhaps there is hope for you yet."
+ observation.111.desc:1 "I suppose I should be thankful that you have returned me to my disciples. Despite the unjust treatment I received, the confinement and ludicrous psychological assessments, I am willing to let bygones be bygones. As long as you leave me and my people alone, we can find a way to coexist. Space is very big after all."
+ observation.111.a:1 "We shall see."
+ observation.112.desc:1 "Earlier today, a barrage of surface-to-space missiles was launched from the surface of [pre_ftl_planet.GetName] at our observation post in high orbit! The station was destroyed with no survivors.\n\nThe civilization on the [pre_ftl_planet.GetPlanetHabitat]'s surface has advanced at an incredible rate - no doubt thanks to the efforts of our rogue scientist. We must now look upon them as a potential threat, and the window of opportunity to remove the scientist from power has been closed."
+
+# Shuttle Intercepted
+ observation.201.name:1 "Shuttle Crash on [pre_ftl_planet.GetName]"
+ observation.201.reg_pre_ftl.desc:0 "During a clandestine mission to the surface of [pre_ftl_planet.GetName], one of our shuttles was intercepted by a squadron of atmospheric fighters belonging to a local nation state. A lucky missile hit disabled the shuttle's engines, and it crashed in a remote wilderness.\n\nWe need to act fast if we are to evacuate any survivors before the [GetPreFTLLowerPlural] reach the crash site. All evidence of our presence must be removed!"
+ observation.201.hive_pre_ftl.desc:0 "During a clandestine mission to the surface of [pre_ftl_planet.GetName], one of our shuttles was intercepted by a squadron of atmospheric fighters belonging to an unidentified mind. A lucky missile hit disabled the shuttle's engines, and it crashed in a remote wilderness.\n\nWe need to act fast if we are to evacuate any survivors before the [GetPreFTLLowerPlural] reach the crash site. All evidence of our presence must be removed!"
+ observation.201.reg_pre_ftl.desc.gestalt:0 "Shuttle XB-23-968H, inbound for covert observation mission V45-BM on [pre_ftl_planet.GetName] has reported critical failure after being intercepted by a squadron of atmospheric fighters, belonging to an unidentified local nation state. We have tracked its location to an uninhabited region.\n\nAll autonomous drones must be evacuated, and all evidence of our presence removed before any [GetPreFTLLowerPlural] reach the crash site."
+ observation.201.hive_pre_ftl.desc.gestalt:0 "Our shuttle, inbound for a covert observation mission on [pre_ftl_planet.GetName] has reported a critical failure after being intercepted by a squadron of atmospheric fighters. We have tracked its location to an uninhabited region.\n\nAll autonomous drones must be evacuated, and all evidence of our presence removed before any [GetPreFTLLowerPlural] reach the crash site.."
+ observation.201.a:1 "Time is short."
+
+ observation.202.name:1 "Operatives Rescued on [pre_ftl_planet.GetName]"
+
+ observation.202.start:0 "Operatives from the [Root.GetName] managed to evacuate several survivors from the crashed shuttle on [pre_ftl_planet.GetName]. The remaining debris was destroyed in a controlled explosion, leaving nothing but a small crater for the [GetPreFTLLowerPlural] to find."
+ observation.202.gestalt.start:0 "Operatives from the [Root.GetName] managed to evacuate several autonomous units from the crashed shuttle on [pre_ftl_planet.GetName]. The remaining debris was destroyed in a controlled explosion, leaving nothing but a small crater for the [GetPreFTLLowerPlural] to find."
+ observation.202.reg.end:0 "The nation state where the incident occurred will no doubt blame its neighbors for this border violation, but hopefully the disruption to their natural development will prove minimal."
+ observation.202.hive_mind.end:0 "The collective consciousness where this incident occurred will no doubt blame its neighbors for the border violation, but hopefully the disruption to their natural development will prove minimal."
+
+ observation.202.reg_pre_ftl.desc:0 "$observation.202.start$\n\n$observation.202.reg.end$"
+ observation.202.hive_pre_ftl.desc:0 "$observation.202.start$\n\n$observation.202.hive_mind.end$"
+ observation.202.reg_pre_ftl.desc.gestalt:0 "$observation.202.gestalt.start$\n\n$observation.202.reg.end$"
+ observation.202.hive_pre_ftl.desc.gestalt:0 "$observation.202.gestalt.start$\n\n$observation.202.hive_mind.end$"
+
+ observation.203.name:1 "Operatives Captured on [pre_ftl_planet.GetName]"
+
+ observation.203.start:0 "[GetPreFTLUpper] forces on [pre_ftl_planet.GetName] arrived at the crash site before we could get to our downed research team, and all survivors have been captured."
+ observation.203.gestalt.start:0 "[GetPreFTLUpper] forces on [pre_ftl_planet.GetName] arrived at the crash site before we could get to our downed research team, and all autonomous operatives have been captured."
+ observation.203.reg.end:0 "The [GetPreFTLLowerPlural] have established a perimeter around the shuttle wreckage, and their best scientists are no doubt in the process of analyzing it.\n\nThey now have indisputable evidence that life exists beyond their own world. Exactly what effect this will have on their society remains to be seen..."
+ observation.203.hive_mind.end:0 "The [GetPreFTLLowerPlural] have established a perimeter around the shuttle wreckage, and they are no doubt in the process of analyzing it.\n\nThey now have indisputable evidence that life exists beyond their own world. Exactly what effect this will have on their society remains to be seen..."
+
+ observation.203.reg_pre_ftl.desc:0 "$observation.203.start$\n\n$observation.203.reg.end$"
+ observation.203.hive_pre_ftl.desc:0 "$observation.203.start$\n\n$observation.203.hive_mind.end$"
+ observation.203.reg_pre_ftl.desc.gestalt:0 "$observation.203.gestalt.start$\n\n$observation.203.reg.end$"
+ observation.203.hive_pre_ftl.desc.gestalt:0 "$observation.203.gestalt.start$\n\n$observation.203.hive_mind.end$"
+ observation.203.a:1 "This is not good."
+
+# Nuclear War, everyone dead, planet is a tomb world
+ observation.205.name:0 "[pre_ftl_planet.GetName] Descends Into Nuclear War"
+
+ observation.205.reg.start:0 "Several of the nation states on [pre_ftl_planet.GetName] have banded together against the one that shot down our shuttle, after the latter refused to share the technologies they recovered from the crash site."
+ observation.205.hive_mind.start:0 "In an unprecedented turn of events, several of the consciousnesses on [pre_ftl_planet.GetName] have amalgamated in opposition to the one that shot down our shuttle, after the latter refused to share the technologies they recovered from the crash site."
+ observation.205.end:0 "Following a brief conventional war, both sides obliterated each other in a massive exchange of nuclear missiles that ruined most of the [pre_ftl_planet.GetPlanetHabitat].\n\nThere are no survivors on the surface, including our captured scientists, and the environment has taken significant damage."
+ observation.205.gestalt.end:0 "Following a brief conventional war, both sides obliterated each other in a massive exchange of nuclear missiles that ruined most of the [pre_ftl_planet.GetPlanetHabitat].\n\nThere are no survivors on the surface, including our captured drones, and the environment has taken significant damage."
+
+ observation.205.reg_pre_ftl.desc:0 "$observation.205.reg.start$\n\n$observation.205.end$"
+ observation.205.hive_pre_ftl.desc:0 "$observation.205.hive_mind.start$\n\n$observation.205.end$"
+ observation.205.reg_pre_ftl.desc.gestalt:0 "$observation.205.reg.start$\n\n$observation.205.gestalt.end$"
+ observation.205.hive_pre_ftl.desc.gestalt:0 "$observation.205.hive_mind.start$\n\n$observation.205.gestalt.end$"
+
+ observation.205.a:1 "If only our shuttle had made it out..."
+
+# Nuclear War, everyone dead, planet is a toxic world
+ observation.206.name:0 "$observation.205.name$"
+
+ observation.206.reg.start:0 "$observation.205.reg.start$"
+ observation.206.hive_mind.start:0 "$observation.205.hive_mind.start$"
+ observation.206.end:0 "Following a brief conventional war, both sides obliterated each other in a massive exchange of nuclear missiles that ruined most of the [pre_ftl_planet.GetPlanetHabitat].\n\nThe surface population has been eradicated, and [pre_ftl_planet.GetName] is no longer capable of supporting life. Our captured scientists are counted among the billions of dead."
+ observation.206.gestalt.end:0 "Following a brief conventional war, both sides obliterated each other in a massive exchange of nuclear missiles that ruined most of the [pre_ftl_planet.GetPlanetHabitat].\n\nThe surface population has been eradicated, and [pre_ftl_planet.GetName] is no longer capable of supporting life. Our captured drones are counted among the billions of dead."
+
+ observation.206.reg_pre_ftl.desc:0 "$observation.206.reg.start$\n\n$observation.206.end$"
+ observation.206.hive_pre_ftl.desc:0 "$observation.206.hive_mind.start$\n\n$observation.206.end$"
+ observation.206.reg_pre_ftl.desc.gestalt:0 "$observation.206.reg.start$\n\n$observation.206.gestalt.end$"
+ observation.206.hive_pre_ftl.desc.gestalt:0 "$observation.206.hive_mind.start$\n\n$observation.206.gestalt.end$"
+
+ observation.206.a:1 "$observation.205.a$"
+
+# Nuclear War, pre-ftls regress to stone age, planet is a tomb world
+ observation.207.name:0 "$observation.205.name$"
+
+ observation.207.reg.start:0 "$observation.205.reg.start$"
+ observation.207.hive_mind.start:0 "$observation.205.hive_mind.start$"
+ observation.207.end:0 "Following a brief conventional war, both sides obliterated each other in a massive exchange of nuclear missiles that ruined most of the [pre_ftl_planet.GetPlanetHabitat].\n\nThe [pre_ftl_planet.GetPlanetHabitat] has suffered extensive damage, with the destruction of every major city and more than 90% of the population. Scattered survivors have emerged from the rubble, but our researchers predict that the [pre_ftl_planet.GetPlanetHabitat]'s civilization will be regressing to a far less developed state. Our captured scientists are counted among the billions of dead."
+ observation.207.gestalt.end:0 "Following a brief conventional war, both sides obliterated each other in a massive exchange of nuclear missiles that ruined most of the [pre_ftl_planet.GetPlanetHabitat].\n\nThe [pre_ftl_planet.GetPlanetHabitat] has suffered extensive damage, with the destruction of every major city and more than 90% of the population. Scattered survivors have emerged from the rubble, but our observation drones predict that the [pre_ftl_planet.GetPlanetHabitat]'s civilization will be regressing to a far less developed state. Our captured drones are counted among the billions of dead."
+
+ observation.207.reg_pre_ftl.desc:0 "$observation.207.reg.start$\n\n$observation.207.end$"
+ observation.207.hive_pre_ftl.desc:0 "$observation.207.hive_mind.start$\n\n$observation.207.end$"
+ observation.207.reg_pre_ftl.desc.gestalt:0 "$observation.207.reg.start$\n\n$observation.207.gestalt.end$"
+ observation.207.hive_pre_ftl.desc.gestalt:0 "$observation.207.hive_mind.start$\n\n$observation.207.gestalt.end$"
+
+ observation.207.a:1 "$observation.205.a$"
+
+ observation.209.name:1 "New Weapons on [pre_ftl_planet.GetName]"
+
+ observation.209.reg_pre_ftl.desc:0 "The nation state on [pre_ftl_planet.GetName] that shot down our shuttle has forced our captured scientists to design new instruments of war for their military. With this equipment, they have successfully invaded several neighboring states and are now in the process of uniting the entire [pre_ftl_planet.GetPlanetHabitat] under their rule."
+ observation.209.hive_pre_ftl.desc:0 "The consciousness on [pre_ftl_planet.GetName] that shot down our shuttle has forced our captured scientists to design new instruments of war for their military. With this equipment, they have successfully invaded several neighboring hives and are now in the process of uniting the entire [pre_ftl_planet.GetPlanetHabitat] under their rule."
+ observation.209.reg_pre_ftl.desc.gestalt:0 "The nation state on [pre_ftl_planet.GetName] that shot down our shuttle has forced our captured drones to design new instruments of war for their military. With this equipment, they have successfully invaded several neighboring states and are now in the process of uniting the entire [pre_ftl_planet.GetPlanetHabitat] under their rule."
+ observation.209.hive_pre_ftl.desc.gestalt:0 "The consciousness on [pre_ftl_planet.GetName] that shot down our shuttle has forced our captured drones to design new instruments of war for their military. With this equipment, they have successfully invaded several neighboring hives and are now in the process of uniting the entire [pre_ftl_planet.GetPlanetHabitat] under their rule."
+
+ observation.209.a:1 "This is intolerable!"
+
+ observation.211.name:1 "Hostage Deal"
+
+ observation.211.reg.start:0 "The nation state on [pre_ftl_planet.GetName] that shot down our shuttle has sent an open transmission into space through one of their satellites. It appears to be intended for us."
+ observation.211.hive_mind.start:0 "The consciousness on [pre_ftl_planet.GetName] that shot down our shuttle has sent an open transmission into space through one of their satellites. It appears to be intended for us."
+ observation.211.end:0 "They are demanding that we share some of our advanced technology with them in exchange for the lives of the scientists they captured at the shuttle crash site. If we refuse, our scientists are to be publicly executed live on their crude televised broadcasting system."
+ observation.211.gestalt.end:0 "They are demanding that we share some of our advanced technology with them in exchange for the lives of the drones they captured at the shuttle crash site. If we refuse, our drones are to be publicly executed live on their crude televised broadcasting system."
+
+ observation.211.reg_pre_ftl.desc:0 "$observation.211.reg.start$\n\n$observation.211.end$"
+ observation.211.hive_pre_ftl.desc:0 "$observation.211.hive_mind.start$\n\n$observation.211.end$"
+ observation.211.reg_pre_ftl.desc.gestalt:0 "$observation.211.reg.start$\n\n$observation.211.gestalt.end$"
+ observation.211.hive_pre_ftl.desc.gestalt:0 "$observation.211.hive_mind.start$\n\n$observation.211.gestalt.end$"
+ observation.211.a:1 "The safety of our people comes first."
+ observation.211.a.gestalt:1 "The safety of our autonomous units comes first."
+ observation.211.b:1 "They are clearly not ready."
+
+ observation.212.name:1 "Hostages Executed"
+
+ observation.212.desc:1 "In what can only be described as an obscene spectacle, our captured scientists on [pre_ftl_planet.GetName] were paraded in front of the cameras on live television as "alien horrors.""
+ observation.212.desc.mach:1 "In what can only be described as an obscene spectacle, our captured science units on [pre_ftl_planet.GetName] were paraded in front of the cameras on live television as "machine horrors from beyond the stars.""
+ observation.212.a:1 "Deplorable!"
+
+# Smuggler Outpost
+ observation.301.name:1 "Smuggler Outpost"
+ observation.301.desc:1 "Our observation post above [pre_ftl_planet.GetName] has detected an illegal settlement on the [pre_ftl_planet.GetPlanetHabitat]'s surface. It appears to be some kind of outpost set up by [Root.GetSpeciesName] smugglers and other criminal elements from the [Root.GetName].\n\nThere have already been isolated incidents where the smugglers came into contact with the native [GetPreFTLLowerPlural] - some of which ended in violence. We need to act quickly to contain this situation and remove the criminals before they can cause any more damage."
+ observation.301.a:1 "Clear them out."
+ observation.301.b:1 "What harm could a few smugglers do?"
+ observation.302.name:1 "Raid on Smugglers"
+ observation.302.desc:1 "In a lightning raid, our ground forces stormed the smuggler outpost on [pre_ftl_planet.GetName]. After a brief firefight, the surviving criminals were arrested and transported into orbit. The empty building was then vaporized by demolition charges.\n\nCultural contamination is believed to have been minimal, and our forces also confiscated a large amount of illegal contraband. The profits from this seizure have been added to our treasury."
+ observation.302.a:1 "A significant victory."
+ observation.303.name:1 "Smuggler Weapons Trade"
+ observation.303.desc:3 "We are too late. The smugglers on [pre_ftl_planet.GetName] have begun trading modern weapons and crude narcotic stimulants to the local [GetPreFTLLowerPlural] in exchange for precious metals and slaves.\n\nFighting has broken out between various [GetPreFTLLower] groups. Due to the high tech weaponry now at their disposal, casualties on both sides have been horrific. The cultural contamination is irreversible at this point."
+ observation.303.a:1 "This is a disaster."
+
+# Scientist Abduction
+ observation.1001.name:0 "Abduction Proposal"
+ observation.1001.desc:1 "We have identified a scientist among the [owner.GetPreFTLLower] [pre_ftl_country.GetSpeciesNamePlural] on [pre_ftl_planet.GetName] that shows great promise. [abducted_scientist.GetHisHerCap] brilliant research is far ahead of [abducted_scientist.GetHisHer] peers, and parts of it is revolutionary even by our standards.\n\nThough [abducted_scientist.GetHisHer] work is certainly increasing the technological progress of the [pre_ftl_country.GetSpeciesNamePlural], [abducted_scientist.GetHisHer] potential is wasted on their [owner.GetPreFTLLower] civilization. In our advanced labs [abducted_scientist.GetHeShe] would have an opportunity to do some real science."
+ observation.1001.a:0 "Draw up an abduction scenario."
+ observation.1001.b:1 "[abducted_scientist.GetHeSheCap] is still a [owner.GetPreFTLLower]. Leave [abducted_scientist.GetHimHer] with [abducted_scientist.GetHisHer] people."
+ observation.1002.name:0 "Abduction Successful"
+ observation.1002.desc:2 "Our agents have successfully abducted the [owner.GetPreFTLLower] scientist from [pre_ftl_country.GetName]! One of our ground shuttles intercepted [abducted_scientist.GetHisHer] motorcar as [abducted_scientist.GetHeShe] was returning home from work late at night, and disabled it with an EMP blast.\n\nThe scientist was temporarily paralyzed and brought into the shuttle, while the memories of [abducted_scientist.GetHisHer] bodyguard detail were wiped. We are confident in our ability to "convince" the good scientist to work for us."
+ observation.1002.tt:0 "Gain a §YLevel 6 [pre_ftl_country.GetSpeciesName] Scientist§! with the §Y$leader_trait_spark_of_genius$§! trait."
+ observation.1003.name:0 "Abduction Failed"
+ observation.1003.desc:2 "Unfortunately, our attempt to abduct the [owner.GetPreFTLLower] scientist from [pre_ftl_country.GetName] has failed. One of our ground shuttles intercepted [abducted_scientist.GetHisHer] motorcar, but as the paralyzed scientist was being moved into its hold with a levitation beam, a [pre_ftl_country.GetSpeciesName] atmospheric fighter arrived on the scene.\n\nThe shuttle safely escaped into orbit, but the levitation beam was interrupted and the scientist... well, it was a long fall. Hopefully [abducted_scientist.GetHisHer] death will be blamed on a rival [pre_ftl_country.GetSpeciesName] nation state."
+ observation.1004.name:0 "Breakthrough on [pre_ftl_planet.GetName]!"
+ observation.1004.desc:0 "The scientist we first indentified on [pre_ftl_planet.GetName] has developed into a remarkable talent. [abducted_scientist.GetHisHer] unconventional research and sharply analytical mind has rapidly accelerated the technological development of [pre_ftl_country.GetName]."
+ observation.1004.a:0 "Remarkable!"
+
+# Defense Force
+ observation.1101.name:1 "[pre_ftl_planet.GetName]: Anti-Alien Task Force"
+ observation.1101.desc:1 "In an apparent response to our operations on their [GetPreFTLLower] world, many of the [pre_ftl_country.GetSpeciesName] nation states on [pre_ftl_planet.GetName] have momentarily put aside their squabbling to form a new supranational military organization.\n\nAccording to local media, this task force has been charged with defending their [pre_ftl_planet.GetPlanetHabitat] from "hostile activities perpetrated by an unknown alien agency against the [pre_ftl_country.GetSpeciesName] species as a whole.""
+# Interceptions
+ observation.1102.name:1 "[pre_ftl_planet.GetName]: Task Force Activities"
+ observation.1102.desc:1 "Reconnaissance footage taken by our Observation Post above [pre_ftl_planet.GetName] has confirmed the construction of several new military bases and radar facilities on the [pre_ftl_planet.GetPlanetHabitat]'s surface, all under the control of the supranational anti-alien task force recently founded by the [pre_ftl_country.GetSpeciesNamePlural].\n\nWe are seeing an unprecedented level of cooperation between their nation states, and our abduction flights are now being routinely intercepted by atmospheric fighters belonging to this force. Despite our technological edge, their sheer numbers have enabled them to bring down several of our abduction shuttles!"
+ observation.1102.a:0 "This will impair our aggressive observation activities."
+# Observation Post Lost 
+ observation.1103.name:1 "[pre_ftl_planet.GetName]: Observation Post Lost"
+ observation.1103.desc:1 "Our Observation Post above [pre_ftl_planet.GetName] has been destroyed! The culprit was a large surface-to-space missile launched from a military base controlled by the [pre_ftl_country.GetSpeciesName] supranational task force.\n\nWe are still not certain how they managed to track the station, since extensive precautions had been taken to conceal its existence from the [pre_ftl_country.GetSpeciesNamePlural]. One theory is that the natives have managed to reverse-engineer technologies looted from our downed shuttles."
+ observation.1103.a:0 "This is outrageous!"
+# Strike
+ observation.1105.name:1 "[pre_ftl_planet.GetName]: Surgical Strike"
+ observation.1105.desc:1 "The staff of our Observation Post orbiting [pre_ftl_planet.GetName] has requested help in dealing with the anti-alien task force founded by the [pre_ftl_country.GetSpeciesNamePlural] in response to our aggressive observation efforts. Though archaic by our standards, this organization has developed a knack for disrupting our abduction operations.\n\nTheir main base has been identified on the [pre_ftl_planet.GetPlanetHabitat]'s surface, deep inside [pre_ftl_planet.GetAMountainFeature]. Orbital bombardment will be ineffective, but a swift raid by a heavily armed strike team should be able to take the base by surprise. Its destruction will surely spell the end of this irksome [pre_ftl_country.GetSpeciesName] task force."
+ observation.1105.a:1 "Make it happen."
+ observation.1105.b:1 "No, we should avoid antagonizing them further..."
+ observation.1106.name:2 "[pre_ftl_planet.GetName]: Successful Strike"
+ observation.1106.desc:2 "Our mission to destroy the main base of the [pre_ftl_country.GetSpeciesName] supranational task force was a complete success! The base was infiltrated by our strike team, and its defenders and their limited weapons proved no match for our skilled operatives.\n\nAfter planting explosive charges deep within the bowels of the base, the strike team were exfiltrated by waiting shuttles. Nothing remains of this troublesome [pre_ftl_country.GetSpeciesName] task force now."
+ observation.1106.a:1 "Mission successful."
+ observation.1107.name:2 "[pre_ftl_planet.GetName]: Failed Strike"
+ observation.1107.desc:2 "Our mission to destroy the main base of the [pre_ftl_country.Owner.GetSpeciesName] supranational task force failed miserably! Several of the shuttles carrying our strike team were brought down by hidden anti-aircraft emplacements before they even made it to the base. The remaining operatives met with unexpectedly stiff resistance when they eventually reached the base entrance.\n\nIn light of approaching [pre_ftl_country.Owner.GetSpeciesName] reinforcements, the strike team commander finally gave the order to retreat. Unfortunately, as our exfiltration shuttles were blasting their way into orbit, a massive formation of atmospheric fighters intercepted them. Losses were heavy."
+ observation.1107.a:1 "This is a disaster!"
+# Disbanded 
+ observation.1104.name:1 "[pre_ftl_planet.GetName]: Task Force Disbanded"
+ observation.1104.desc:1 "The supranational task force that the [pre_ftl_country.GetSpeciesName] nation states founded to thwart our operations on [pre_ftl_planet.GetName] has been disbanded! Though they somehow managed to achieve a few key victories against our shuttles and abduction teams, several of the organization's founding members decided to cut off funding and withdraw from the project.\n\nIntelligence puts this unexpected turn of events down to infighting and diplomatic posturing between the [pre_ftl_country.GetSpeciesName] nation states."
+ observation.1104.a:1 "A welcome, if unexpected, development."
+
+# Malfunctioning Implants
+ observation.1201.name:1 "[pre_ftl_planet.GetName]: Implant Malfunctions"
+ observation.1201.desc:1 "As part of our observation efforts on [pre_ftl_planet.GetName], abduction teams have surgically installed brain implants on a number of [pre_ftl_country.GetSpeciesName] test subjects to track them and monitor their behavior. Unfortunately, due to a manufacturing flaw many of these implants have malfunctioned, and are now having an... adverse effect on the behavior of our subjects.\n\nThere have been a number of suicides, and at least three episodes of violent hysteria. The [root.GetResearcherPlural] on our Observation Post have requested assistance in rounding up the remaining subjects and removing their implants before there are any more incidents."
+ observation.1201.a:0 "We need to clean up this mess."
+ observation.1201.b:0 "It is not our problem."
+ observation.1202.name:3 "[pre_ftl_planet.GetName]: Implants Removed"
+ observation.1202.desc:2 "Abduction teams from our Observation Post above [pre_ftl_planet.GetName] have worked in concert with the crew of the [Root.GetName] to quickly gather the [pre_ftl_country.GetSpeciesName] test subjects with the faulty brain implants.\n\nThe Observation Post's surgical staff replaced the implants with functional versions, and the subjects have been returned to the [pre_ftl_planet.GetPlanetHabitat]'s surface. As an added bonus, Science Officer [Root.GetLeaderName] managed to extract a wealth of data from the removed implants, despite their defects."
+ observation.1202.a:0 "At least something good came of this."
+ observation.1203.name:3 "[pre_ftl_planet.GetName]: Implants Not Removed"
+ observation.1203.desc:2 "The last of our [pre_ftl_country.GetSpeciesName] test subjects on [pre_ftl_planet.GetName] have succumbed to the effects of their defective brain implants. Many went completely berserk, shrieking random code segments from the [Root.GetSpeciesName] programming language used in their implants while savagely attacking anyone or anything in their immediate vicinity."
+ observation.1203.a:0 "How could this have happened?"
+ observation.1205.name:0 "[pre_ftl_planet.GetName]: Implants Embraced"
+ observation.1205.desc:0 "The [pre_ftl_country.GetSpeciesName] on [pre_ftl_planet.GetName] have conducted their own reaseach into the neutral implants we left behind. Somehow the [GetPreFTLLower] researchers have managed to engineer cybernetics far more compatible with [pre_ftl_country.GetSpeciesName] biology than we were capable of."
+ observation.1205.a:0 "Remarkable!"
+ observation.1205.tt:0 "The §Y[pre_ftl_country.GetSpeciesName]§! have embraced §YCybernetics§!."
+
+# Ethic Shifts
+ observation.1301.name:1 "[pre_ftl_planet.GetName]: Ethic Changes"
+ observation.1301.xenophobe:0 "We have noticed a marked change in the ways of the [GetPreFTLLower] [pre_ftl_country.GetSpeciesNamePlural] on [pre_ftl_planet.GetName]. Their society has turned inwards and they are now far less accepting of strangers.\n\nOur aggressive observation flights and abductions all across their [pre_ftl_planet.GetPlanetHabitat] appears to have played some role in this, making the [pre_ftl_country.GetSpeciesNamePlural] more wary of the unknown."
+ observation.1301.xenophile:0 "We have noticed a marked change in the ways of the [GetPreFTLLower] [pre_ftl_country.GetSpeciesNamePlural] on [pre_ftl_planet.GetName]. Their society has turned outwards and they are now far more accepting of strangers.\n\nOur observation flights all across their [pre_ftl_planet.GetPlanetHabitat] appears to have played some role in this, making the [pre_ftl_country.GetSpeciesNamePlural] eager to learn more about the unknown."
+ observation.1301.spiritualist:0 "Several of our abduction teams stationed on the Observation Post above [pre_ftl_planet.GetName] have apparently been using the thrusters of their shuttles to burn large circles and complex patterns into crop fields belonging to the [GetPreFTLLower] [pre_ftl_country.GetSpeciesNamePlural] that are indigenous to the [pre_ftl_planet.GetPlanetHabitat].\n\nThe shuttle crews have been severely reprimanded for this prank, but the crop circles appear to have taken on some sort of spiritual significance for the natives. A new religion has formed based on these patterns, and it is gaining popularity among the [pre_ftl_country.GetSpeciesNamePlural] at an alarming rate."
+ observation.1301.materialist:0 "Several of our abduction teams stationed on the Observation Post above [pre_ftl_planet.GetName] have apparently been using the thrusters of their shuttles to burn large circles and complex patterns into crop fields belonging to the [GetPreFTLLower] [pre_ftl_country.GetSpeciesNamePlural] that are indigenous to the [pre_ftl_planet.GetPlanetHabitat].\n\nThe shuttle crews have been severely reprimanded for this prank, but the natives appear to be convinced that the crop circles have some mathematical meaning. A new scientific movement has developed to study the patterns, and it is gaining popularity among the [pre_ftl_country.GetSpeciesNamePlural] at an alarming rate."
+
+# Nuclear War, everyone dead, planet is a tomb world
+ observation.1402.name:0 "[pre_ftl_planet.GetName] Descends Into Nuclear War"
+
+ observation.1402.reg.start:0 "A massive war was recently triggered between several of the largest nation states on [pre_ftl_planet.GetName]."
+ observation.1402.hive_mind.start:0 "A massive war was recently triggered between several of the consciousnesses on [pre_ftl_planet.GetName]."
+ observation.1402.end:0 "While our researchers were observing safely from orbit, the conflict rapidly escalated into a global nuclear exchange.\n\nThe [pre_ftl_planet.GetPlanetHabitat]'s entire population appears to have perished in the nuclear fire, and the environment has taken significant damage."
+ observation.1402.gestalt.end:0 "While our observation drones were observing safely from orbit, the conflict rapidly escalated into a global nuclear exchange.\n\nThe [pre_ftl_planet.GetPlanetHabitat]'s entire population appears to have perished in the nuclear fire, and the environment has taken significant damage."
+
+ observation.1402.reg_pre_ftl.desc:0 "$observation.1402.reg.start$\n\n$observation.1402.end$"
+ observation.1402.hive_pre_ftl.desc:0 "$observation.1402.hive_mind.start$\n\n$observation.1402.end$"
+ observation.1402.reg_pre_ftl.desc.gestalt:0 "$observation.1402.reg.start$\n\n$observation.1402.gestalt.end$"
+ observation.1402.hive_pre_ftl.desc.gestalt:0 "$observation.1402.hive_mind.start$\n\n$observation.1402.gestalt.end$"
+
+ observation.1402.a:1 "A tragic lesson."
+
+# Nuclear War, everyone dead, planet is a toxic world
+ observation.1404.name:0 "$observation.1402.name$"
+
+ observation.1404.reg.start:0 "$observation.1402.reg.start$"
+ observation.1404.hive_mind.start:0 "$observation.1402.hive_mind.start$"
+ observation.1404.end:0 "While our researchers were observing safely from orbit, the conflict rapidly escalated into a global nuclear exchange.\n\nAll life on the surface was eradicated, and the entire [pre_ftl_planet.GetPlanetHabitat] is no longer habitable."
+ observation.1404.gestalt.end:0 "While our observation drones were observing safely from orbit, the conflict rapidly escalated into a global nuclear exchange.\n\nAll life on the surface was eradicated, and the entire [pre_ftl_planet.GetPlanetHabitat] is no longer habitable."
+
+ observation.1404.reg_pre_ftl.desc:0 "$observation.1404.reg.start$\n\n$observation.1404.end$"
+ observation.1404.hive_pre_ftl.desc:0 "$observation.1404.hive_mind.start$\n\n$observation.1404.end$"
+ observation.1404.reg_pre_ftl.desc.gestalt:0 "$observation.1404.reg.start$\n\n$observation.1404.gestalt.end$"
+ observation.1404.hive_pre_ftl.desc.gestalt:0 "$observation.1404.hive_mind.start$\n\n$observation.1404.gestalt.end$"
+
+ observation.1404.a:1 "$observation.1402.a$"
+
+# Nuclear War, pre-ftls regress to stone age, planet is a tomb world
+ observation.1406.name:0 "$observation.1402.name$"
+
+ observation.1406.reg.start:0 "$observation.1402.reg.start$"
+ observation.1406.hive_mind.start:0 "$observation.1402.hive_mind.start$"
+ observation.1406.end:0 "While our researchers were observing safely from orbit, the conflict rapidly escalated into a global nuclear exchange.\n\nThe [pre_ftl_planet.GetPlanetHabitat] has suffered extensive damage, with the destruction of every major city and more than 90% of the population. Scattered survivors have emerged from the rubble, but our researchers predict that the [pre_ftl_planet.GetPlanetHabitat]'s civilization will be regressing to a far less developed state."
+ observation.1406.gestalt.end:0 "While our observation drones were observing safely from orbit, the conflict rapidly escalated into a global nuclear exchange.\n\nThe [pre_ftl_planet.GetPlanetHabitat] has suffered extensive damage, with the destruction of every major city and more than 90% of the population. Scattered survivors have emerged from the rubble, but our observation drones predict that the [pre_ftl_planet.GetPlanetHabitat]'s civilization will be regressing to a far less developed state.""
+
+ observation.1406.reg_pre_ftl.desc:0 "$observation.1406.reg.start$\n\n$observation.1406.end$"
+ observation.1406.hive_pre_ftl.desc:0 "$observation.1406.hive_mind.start$\n\n$observation.1406.end$"
+ observation.1406.reg_pre_ftl.desc.gestalt:0 "$observation.1406.reg.start$\n\n$observation.1406.gestalt.end$"
+ observation.1406.hive_pre_ftl.desc.gestalt:0 "$observation.1406.hive_mind.start$\n\n$observation.1406.gestalt.end$"
+
+ observation.1406.a:1 "$observation.1402.a$"
+
+# Research Proposal
+ observation.1501.name:1 "Research Proposal"
+ observation.1501.desc:2 "Our scientists on the Observation Post above [pre_ftl_planet.GetName] have requested a Science Ship to help them gather specimens from the [pre_ftl_planet.GetPlanetHabitat]'s surface. For the purpose of research, they would like to covertly abduct some of the [GetPreFTLLowerPlural] and perform tests on them. They will then be safely returned to the surface with their memories erased."
+ observation.1501.a:1 "It will help us understand them better."
+ observation.1501.b:1 "No, we should leave them alone."
+ observation.1501.b.tt:0 "§Y$mission_passive_observation$§! will now produce §G+2§! $r_unity$\n$t$§RWill be locked to $mission_passive_observation$!§!"
+ observation.1502.desc:2 "The [Root.GetName] has finished its scientific mission to [pre_ftl_planet.GetName]. Sweeping in low over the ground at night, shuttles from the Science Ship used EMP pulses to disable the archaic combustion vehicles used by the [GetPreFTLLowerPlural]. Their occupants were then sedated and collected, while other away teams acquired samples by dissecting some of the local cattle.\n\nOur mission appears to have gone largely unnoticed by the [pre_ftl_planet.GetPlanetHabitat]'s population, despite a few reports of "unexplained lights" and an incident where one of our shuttle crews deliberately used their thrusters to create circular patterns in a crop field. They have been reprimanded."
+ observation.1502.a:0 "A job well done."
+
+# Special Projects for events above.
+ EXTRACT_MISSING_SCIENTIST:1 "Extract Missing Scientist"
+ EXTRACT_MISSING_SCIENTIST_DESC:1 "One of our scientists has gone rogue and is being worshiped as a god by the [GetPreFTLLowerPlural] on [pre_ftl_planet.GetName]. An operation must be launched to remove [missing_scientist.GetHimHer] - by force if necessary."
+ SHUTTLE_INTERCEPTED:1 "Rescue Shuttle Survivors"
+ SHUTTLE_INTERCEPTED_DESC:1 "One of our shuttles was shot down by the natives on [pre_ftl_country.GetName], and we need to rescue any surviving operatives before they are captured by local forces."
+ ABDUCT_SCIENTIST_PROJECT:1 "Abduct [GetPreFTLUpper] Scientist"
+ ABDUCT_SCIENTIST_PROJECT_DESC:1 "A brilliant scientist has been identified among the [GetPreFTLLower] [pre_ftl_country.GetSpeciesNamePlural] on [pre_ftl_planet.GetName]. [abducted_scientist.GetHisHerCap] considerable skill is wasted on [abducted_scientist.GetHisHer] [GetPreFTLLower] civilization, but [abducted_scientist.GetHeShe] would be quite a boon to our own research programs. Plans have been put into motion to abduct [abducted_scientist.GetHisHer] and then "convince" [abducted_scientist.GetHisHer] to work for us instead."
+ DEFENSE_FORCE_STRIKE_PROJECT:1 "Destroy Native Defense Force"
+ DEFENSE_FORCE_STRIKE_PROJECT_DESC:1 "The [pre_ftl_country.GetSpeciesName] nation states on [pre_ftl_planet.GetName] have banded together and formed an anti-alien task force with the mission to thwart our operations on their homeworld. This cannot be tolerated. We must launch a punitive strike against the main base of this organization."
+ IMPLANT_MALFUNCTIONS_PROJECT:1 "Remove Malfunctioning Implants"
+ IMPLANT_MALFUNCTIONS_PROJECT_DESC:1 "We are having problems with the brain implants that were given to several test subjects among the [GetPreFTLLowerPlural] [pre_ftl_country.GetSpeciesNamePlural] on [pre_ftl_planet.GetName]. There have been a number of malfunctions, resulting in violent behavior and, in some cases, fatalities. We need to remove these implants before they can cause any more problems."
+ PROBE_ALIENS_PROJECT:1 "Probe Aliens"
+ PROBE_ALIENS_PROJECT_DESC:1 "Our scientists would like to gather test subjects from the native civilization on [pre_ftl_planet.GetName]. After the tests have been conducted, the subjects will be returned to the [pre_ftl_planet.GetPlanetHabitat]'s surface with no memory of the experience."
+
+ # Custom Tooltips
+ cannot_reveal_tt:1 "§RWe cannot reveal ourselves until these events conclude.§!"
+ cannot_dismantle_outpost_tt:1 "§RWe cannot dismantle our Observation Post until these events conclude.§!"
+ tech_progress_gain_tt:0 "§Y[pre_ftl_country.GetName]§!: §G+[pre_ftl_country.TechProgressPercentage]%§! Technological Progression."
+ tech_progress_loss_tt:0 "§Y[pre_ftl_country.GetName]§!: §R-[pre_ftl_country.TechProgressPercentage]%§! Technological Progression."
+ locked_to_passive_observation:0 "Observation Post is locked to $mission_passive_observation$"
+ acquired_tech_tooltip:1 "§Y[pre_ftl_country.GetName]§!: §G+50%§! Technological Progression Rate."
+ acquired_tech_tooltip_five_years:0 "§Y[pre_ftl_country.GetName]§!: §G+50%§! Technological Progression for §Y5 Years§!."
+ advance_to_age_tt:0 "§Y[pre_ftl_country.GetName]§!: Advances to the §Y[pre_ftl_country.GetNewAge]§!."
+ regress_to_age_tt:0 "§Y[pre_ftl_country.GetName]§!: Regresses to the §Y[pre_ftl_country.GetNewAge]§!."
+
+# Scripted Loc
+ mountain:0 "a mountain"
+ mountain_habitat:0 "the substructure"
+
+ #Refactored Observation Events
+
+ observation.2011.name:2 "Technological Development: Setback on [pre_ftl_planet.GetName]"
+ observation.2011.desc:1 "Our advisors on [pre_ftl_planet.GetName] are having trouble working with the local inhabitants in their mission to bring them up to a higher level of technology. Many [pre_ftl_planet.Owner.GetSpeciesNamePlural] refuse to have anything to do with us, and even those among them who are most eager to learn look upon our scientists with suspicion and disgust.\n\nThis xenophobia has unfortunately upset our timetables. Teaching the [pre_ftl_planet.Owner.GetSpeciesNamePlural] will take longer than expected."
+ observation.2014.name:1 "Technological Development: Progress on [pre_ftl_planet.GetName]"
+ observation.2014.desc:1 "The people of [pre_ftl_planet.GetName] are delighted with the technology we have been sharing with them. They have flocked to the enclaves we established on the surface of their world, bombarding our scientists with questions about our culture and history.\n\nThe eagerness of the [pre_ftl_planet.Owner.GetSpeciesNamePlural] to learn more about us has accelerated our mission to advance the technological progress of their civilization. We have revised our initial time estimates."
+ observation.2014.tt:0 "§Y[pre_ftl_country.GetName]§!: §G+20%§! Technological Progression."
+ observation.2016.name:1 "Technological Development: Setback on [pre_ftl_planet.GetName]"
+ observation.2016.desc:1 "The [pre_ftl_species.GetName] on [pre_ftl_planet.GetName] have unfortunately proven difficult to teach. Our scientific advisors report that the aliens are slow to abandon their ways and slower still to adopt new concepts and ideas. It would seem that our mission of enlightenment may take longer than expected."
+ observation.2016.tt:0 "§Y[pre_ftl_country.GetName]§!: §R-20%§! Technological Progression."
+ observation.2018.name:1 "Technological Development: Setback on [pre_ftl_planet.GetName]"
+ observation.2018.desc:1 "We are having difficulty finding scientific advisors willing to take part in our mission of technological development on [pre_ftl_planet.GetName]. Given the... unique appearance and odor of the [pre_ftl_species.GetName], being in their presence is a challenge, to say the least.\n\nAn assignment to the surface of [pre_ftl_planet.GetName] has come to be regarded as a punishment. This has unfortunately delayed the progress of our mission."
+ observation.2018.tt:0 "§Y[pre_ftl_country.GetName]§!: §R-20%§! Technological Progression."
+ observation.2020.desc:1 "The [pre_ftl_species.GetNamePlural] of [pre_ftl_planet.GetName] have proven to be natural scientists. Our advisors stationed on their homeworld are impressed with the progress they have been making. Their reports indicate that our mission to advance the [pre_ftl_species.GetName] civilization to the Space Age may finish ahead of schedule."
+ observation.2022.desc:0 "Our mission to bring technological development to the [pre_ftl_species.GetNamePlural] on [pre_ftl_planet.GetName] is proceeding ahead of schedule, in large part due to their unusual intelligence. Although theirs is a relatively young civilization, our scientific advisors see great potential in the [pre_ftl_species.GetName]."
+ observation.2030.name:0 "Ethical changes on [pre_ftl_planet.GetName]"
+ observation.2030.desc:0 "Prolonged contact with our scientific advisors on [pre_ftl_planet.GetName] seems to have made the natives more accepting of other species and cultures. The [pre_ftl_species.GetNamePlural] are no longer so quick to react with revulsion when they look upon something that is alien to them."
+ observation.2031.desc:1 "After working closely with our scientists and advisors on [pre_ftl_planet.GetName], the [pre_ftl_species.GetNamePlural] seem to have developed a deep interest in all things that are alien to them."
+ observation.2031.tt:0 "The people of [pre_ftl_planet.GetName] will grow more xenophilic."
+ observation.social.intro:0 "The natives on [pre_ftl_planet.GetName] have not only become enamored with our technology, but our advisors report that they are also beginning to emulate our ways."
+ observation.2032.desc:0 "$observation.social.intro$\n\nThey seem to have largely adopted our philosophy of peace and non-violence. Since our arrival, conflict between the various [pre_ftl_species.GetName] culture groups has all but ceased."
+ observation.2032.tt:0 "The people of [pre_ftl_planet.GetName] will turn towards pacifism."
+ observation.2033.desc:1 "$observation.social.intro$\n\nWith the new weapons we are giving them access to, the [pre_ftl_species.GetNamePlural] have developed a new appreciation for the art of war. Their society has become significantly militarized since our arrival."
+ observation.2033.tt:0 "The people of [pre_ftl_planet.GetName] will turn towards militarism."
+ observation.2034.desc:0 "$observation.social.intro$\n\nWe have served as a successful example, teaching them the value of strong, and united leadership. The [pre_ftl_species.GetNamePlural] now realize that this is the only way to achieve greatness as a civilization."
+ observation.2034.tt:0 "The people of [pre_ftl_planet.GetName] will turn towards authoritarianism."
+ observation.2035.desc:1 "$observation.social.intro$\n\nInspired by what they have seen of our art and culture, [pre_ftl_species.GetName] society appears to have developed a new sense of egalitarianism. Their personal freedoms have greatly increased since our arrival."
+ observation.2035.tt:0 "The people of [pre_ftl_planet.GetName] will turn towards egalitarianism."
+ observation.2036.desc:0 "$observation.social.intro$\n\nOur mission to teach the [pre_ftl_species.GetName] the value of science has profoundly affected their society. Organized religion is on the decline, and many superstitions are being abandoned."
+ observation.2036.tt:0 "The people of [pre_ftl_planet.GetName] will turn towards materialism."
+ observation.2037.desc:1 "$observation.social.intro$\n\nAfter witnessing the strength of our faith, many of the [pre_ftl_species.GetNamePlural] are flocking to the old religions of their civilization, incorporating elements of our beliefs into their own."
+ observation.2037.tt:0 "The people of [pre_ftl_planet.GetName] will become more spiritual."
+ observation.2038.desc:0 "Some of the scientists we sent to advise the [pre_ftl_species.GetNamePlural] of [pre_ftl_planet.GetName] have questioned the wisdom of our mission there. They report that the natives only seem interested in obtaining new weapons technology.\n\nTheir tiresome efforts to convert the peaceful technologies we offer them into instruments of war has unfortunately delayed the progress of our mission."
+ observation.2039.desc:1 "Our mission on [pre_ftl_planet.GetName] to enlighten the native civilization is not proceeding as planned. The [pre_ftl_species.GetName] scientists frequently become horrified when we try to teach them about new weapons technology.\n\nIt took our scientific advisors weeks to calm them after we showed a simulation illustrating the effects of detonating a fusion bomb over a populated city. This has unfortunately delayed our progress."
+ observation.2040.desc:0 "We are having difficulty working with the people on [pre_ftl_planet.GetName] in our mission to elevate their civilization. The [pre_ftl_species.GetNamePlural] have proven to be a superstitious lot, and our scientific advisors are often frustrated by their arcane religious traditions and stubborn refusal to accept material proof.\n\nUnfortunately, it looks like our initial time estimates for this mission were too optimistic."
+ observation.2041.desc:1 "Our efforts to enlighten the [pre_ftl_species.GetNamePlural] and lead them on the true path towards the stars have been frustrated. Our religious and scientific advisors on [pre_ftl_planet.GetName] report a troubling lack of faith on behalf of the native population. They are willing to accept our technology readily enough, but not the spiritual lessons required to use it responsibly.\n\nThis has significantly hampered our mission to guide the [pre_ftl_species.GetNamePlural] to enlightenment. It will take longer than the signs ordained."
+ observation.2042.desc:0 "The oppressive, autocratic society on [pre_ftl_planet.GetName] has frustrated our efforts to raise the technological level of the [pre_ftl_species.GetNamePlural]. Individual thoughts and initiatives - on which science thrives - are discouraged among the [pre_ftl_species.GetNamePlural].\n\nTheir rampant authoritarianism has stymied the progress of our mission - the scientific advisors we sent report that it will likely take longer than expected."
+ observation.2043.desc:1 "Anarchy reigns supreme on the surface of [pre_ftl_planet.GetName], and our advisors are having a difficult time teaching modern science to the [pre_ftl_species.GetNamePlural]. At times it seems that every scientist has a different vision for the project, with no regard for the needs of their team or for the common good.\n\nOur mission of enlightenment continues, despite the misguided egalitarianism displayed by the local population, but it will take longer than expected."

@@ -1,0 +1,65 @@
+﻿l_english:
+# Pre-FTL Stances
+# Resolutions 
+ resolution_category_pre_ftl_stances:1 "Pre-FTL Stance"
+ resolution_pre_ftl_stances_repeal_1:0 "§RRepeal $resolution_pre_ftl_stances_equal_standing$§!"
+ resolution_pre_ftl_stances_repeal_1_desc:1 "Treating "civilizations" that are barely even capable of leaving their homeworlds as equals is a preposterous idea. The empires of the [global_event_country.GetGalCommunityOrGalImperium] should be allowed to treat lesser civilizations within their borders as they see fit."
+ resolution_pre_ftl_stances_repeal_1_effect_success:1 "Repeals the §Y$resolution_pre_ftl_stances_equal_standing$§! resolution."
+
+ resolution_pre_ftl_stances_repeal_2:0 "§RRepeal $resolution_pre_ftl_stances_non_interference$§!"
+ resolution_pre_ftl_stances_repeal_2_desc:1 "Forbidding the empires of the [global_event_country.GetGalCommunityOrGalImperium] from making use of resources that rightfully belongs to them just because savages squat on them is a violation of our intellectual and property rights."
+ resolution_pre_ftl_stances_repeal_2_effect_success:1 "Repeals the §Y$resolution_pre_ftl_stances_non_interference$§! resolution."
+
+ resolution_pre_ftl_stances_repeal_3:1 "§RRepeal $resolution_pre_ftl_stances_exploitation$§!"
+ resolution_pre_ftl_stances_repeal_3_desc:1 "To treat another civilization solely as a source of resources to be exploited purely on the basis of their current technology is abhorrent. The empires of the [global_event_country.GetGalCommunityOrGalImperium] should ensure that the civilizations that will follow us to the stars are guaranteed the same rights as any other species."
+ resolution_pre_ftl_stances_repeal_3_effect_success:1 "Repeals the §Y$resolution_pre_ftl_stances_exploitation$§! resolution."
+
+ resolution_pre_ftl_stances_equal_standing:1 "Equal Standing Act"
+ resolution_pre_ftl_stances_equal_standing_desc:1 "Each pre-FTL civilization has the potential to acquire space flight and join the [global_event_country.GetGalCommunityOrGalImperium]. As such, we must treat any future members with dignity and respect."
+ resolution_pre_ftl_stances_equal_standing_tooltip:1 "The §Y$interference_not_allowed$§! and §Y$interference_aggressive$§! policies are §Rbanned§!.\nIncreases the effectiveness of the §Y$ACTION_OPEN_TECHNOLOGICAL_ENLIGHTENMENT_TITLE$§! diplomatic agreement with Pre-FTL Civilizations.\n§YPre-FTL Civilizations§! that become spacefaring through §Y$ACTION_OPEN_TECHNOLOGICAL_ENLIGHTENMENT_TITLE$§! will gain §G+100§! £loyalty£ §YLoyalty§!.\n§YCommercial Agreements§! with pre-FTL Civilizations are more effective."
+
+ resolution_pre_ftl_stances_non_interference:1 "Non-Interference Act"
+ resolution_pre_ftl_stances_non_interference_desc:1 "Pre-FTL Civilizations should be given the chance to develop without outside interference."
+ resolution_pre_ftl_stances_non_interference_tooltip:1 "The §Y$interference_active$§! and §Y$interference_aggressive$§! policies are §Rbanned§!.\nGrants access to the §Y$interference_not_allowed$§! policy regardless of Ethics or Civics.\nAll §YDiplomatic Agreements§! with Pre-FTL Civilizations will be considered in §RBreach of Galactic Law§!.\nFailed §YEspionage Operations§! targeting Pre-FTL Civilizations will be considered in §RBreach of Galactic Law§!."
+
+ resolution_pre_ftl_stances_non_interference_modifier:0 "§YInsight§! progress from observing pre-FTL Civilizations is increased by §G+25%§!."
+
+ resolution_pre_ftl_stances_exploitation:1 "Exploitation Act"
+ resolution_pre_ftl_stances_exploitation_desc:1 "Pre-FTL worlds fall within the jurisdiction of whoever controls their system, and each empire should be allowed the freedom to treat their property in whichever way they see fit."
+ resolution_pre_ftl_stances_exploitation_tooltip:1 "Observation Posts provide a small amount of £physics£ £engineering£ §HResearch Points§! while §YObserving§! pre-FTL Civilizations. Passing the §Y$resolution_galacticstudies_advanced_xenostudies$§! Resolution will increase the £physics£ £engineering£ §HResearch Points§! gained.\n\nThe §Y$interference_not_allowed$§! policy is §Rbanned§!.\nUse of the §Y$ACTION_OPEN_TECHNOLOGICAL_ENLIGHTENMENT_TITLE$§! Diplomatic Agreement with Pre-FTL Civilizations will be considered in §RBreach of Galactic Law§!.\nEvidence that the §Y$operation_plant_advanced_knowledge$§! Espionage Operation has been carried out will be considered in §RBreach of Galactic Law§!."
+
+# Events
+ preftl.10000.desc:0 "The [global_event_country.GetGalCommunityOrGalImperium] has passed the §Y$resolution_pre_ftl_stances_equal_standing$§! resolution, forbidding empires from holding the §Y$interference_not_allowed$§! or §Y$interference_aggressive$§! policies.\n\nOur Empire is currently in breach of this resolution. Shall we change our policies to be in compliance?"
+ preftl.10050.name:0 "Breach of $resolution_pre_ftl_stances_equal_standing$"
+ preftl.10050.desc:0 "Officials from the [global_event_country.GetGalCommunityOrGalImperium] have determined that our treatment of the §H[pre_ftl_country.GetName]§! is in violation of the §Y$resolution_pre_ftl_stances_equal_standing$§!, regardless of our intentions.\n\n$preftl.10050.outro$"
+ preftl.10050.outro:0 "The [Root.GetName] will be considered in §RBreach of Galactic Law§! for the next ten years. In addition, we have been issued with a hefty fine."
+
+ preftl.10055.name:0 "$preftl.10050.name$"
+ preftl.10055.desc:0 "Following our violation of the §Y$resolution_pre_ftl_stances_equal_standing$§! due to our treatment of the §H[pre_ftl_country.GetName]§!, we have submitted the requisite paperwork to the officials of the [global_event_country.GetGalCommunityOrGalImperium]. Hopefully, by admitting our actions they will be more tolerant.\n\n$preftl.10055.outro$"
+ preftl.10055.outro:0 "The [Root.GetName] will be considered in §RBreach of Galactic Law§! for the next five years. In addition, we have been issued with a hefty fine."
+
+ preftl.10100.desc:0 "The [global_event_country.GetGalCommunityOrGalImperium] has passed the §Y$resolution_pre_ftl_stances_non_interference$§! resolution, forbidding empires from holding any §Y$policy_interference$§! policy except for §Y$interference_not_allowed$§!.\n\nOur Empire is currently in breach of this resolution. Shall we change our policies to be in compliance?"
+ preftl.10150.name:0 "Breach of $resolution_pre_ftl_stances_non_interference$"
+ preftl.10150.desc:0 "Officials from the [global_event_country.GetGalCommunityOrGalImperium] have received word of our interference in the natural development of the §H[pre_ftl_country.GetName]§!. They have informed us that this is a clear violation of the §Y$resolution_pre_ftl_stances_non_interference$§!, regardless of our intentions.\n\n$preftl.10050.outro$"
+
+ preftl.10155.name:0 "$preftl.10150.name$"
+ preftl.10155.desc:0 "We have submitted a full report to officials at the [global_event_country.GetGalCommunityOrGalImperium], following our violation of the §Y$resolution_pre_ftl_stances_non_interference$§! in the §H[pre_ftl_country.GetName]§!. Hopefully this confessional act of disclosure will endear us to prosecutors, who may in turn consider our case more leniently."
+
+ preftl.10157.desc:0 "Our invasion of the §H[pre_ftl_country.GetAdj]§! homeworld has been noted by the [global_event_country.GetGalCommunityOrGalImperium]. They have informed us that this is a clear violation of the §Y$resolution_pre_ftl_stances_non_interference$§!.\n\n$preftl.10050.outro$"
+ preftl.10161.desc:0 "Our bombardment of the §H[pre_ftl_country.GetAdj]§! homeworld has been noted by the [global_event_country.GetGalCommunityOrGalImperium]. They have informed us that this is a clear violation of the §Y$resolution_pre_ftl_stances_non_interference$§!.\n\n$preftl.10050.outro$"
+
+ preftl.10200.desc:1 "The [global_event_country.GetGalCommunityOrGalImperium] has passed the §Y$resolution_pre_ftl_stances_exploitation$§! resolution, forbidding empires from holding the §Y$interference_not_allowed$§! policy.\n\nOur Empire is currently in breach of this resolution. Shall we change our policies to be in compliance?"
+ preftl.10250.name:0 "Breach of $resolution_pre_ftl_stances_exploitation$"
+ preftl.10250.desc:0 "Officials from the [global_event_country.GetGalCommunityOrGalImperium] have received word of our sharing of technological data with the §H[pre_ftl_country.GetName]§!. They have informed us that this is a clear violation of the §Y$resolution_pre_ftl_stances_exploitation$§!, regardless of our intentions.\n\n$preftl.10050.outro$"
+
+ preftl.10255.name:0 "$preftl.10250.name$"
+ preftl.10255.desc:0 "We have submitted a full report to officials at the [global_event_country.GetGalCommunityOrGalImperium], following our violation of the §Y$resolution_pre_ftl_stances_exploitation$§! in the §H[pre_ftl_country.GetName]§!. Hopefully this confessional act of disclosure will endear us to prosecutors, who may in turn consider our case more leniently."
+
+ pre_ftl_stances_fix_breach_not_allowed:1 "We will change our §Y$policy_interference$§! policy to §Y$interference_not_allowed$§!."
+ pre_ftl_stances_fix_breach_subtle:1 "We will change our §Y$policy_interference$§! policy to §Y$interference_subtle$§!."
+ pre_ftl_stances_fix_breach_active:1 "We will change our §Y$policy_interference$§! policy to §Y$interference_active$§!."
+ pre_ftl_stances_fix_breach_aggressive:1 "We will change our §Y$policy_interference$§! policy to §Y$interference_aggressive$§!."
+
+ breach_resolution_pre_ftl_stances_equal_standing_tt:0 "§RThis will put us in breach of the $resolution_pre_ftl_stances_equal_standing$!§!"
+ breach_resolution_pre_ftl_stances_non_interference_tt:0 "§RThis will put us in breach of the $resolution_pre_ftl_stances_non_interference$!§!"
+ breach_resolution_pre_ftl_stances_exploitation_tt:0 "§RThis will put us in breach of the $resolution_pre_ftl_stances_exploitation$!§!"

@@ -1,0 +1,394 @@
+﻿l_english:
+ ### Pre-FTL Espionage Operations
+ diplomacy_wrong_interference_policy:0 "$TRIGGER_FAIL$§ROur §Y$policy_interference$ Policy§! does not allow us to conduct Espionage here.§!"
+
+ operation_requires_observation_outpost:0 "$TRIGGER_FAIL$§RRequires an §YObservation Outpost§! in orbit of their homeworld.§!"
+ operation_has_disguise:0 " " # Intentionally empty string
+ operation_no_disguise_bio:0 "§HLack of §Y$tech_gene_tailoring$§! will make it harder for our agents to disguise themselves as locals, increasing the risk of random negative events.§!"
+ operation_no_disguise_machine:0 "§HLack of §Y$tech_robomodding$§! will make it harder for our agents to disguise themselves as locals, increasing the chances of random negative events.§!"
+ operation_wrong_tech_level:0 "$TRIGGER_FAIL$§RThis civilization's technology level is not sufficiently advanced to join our empire.§!\n\n"
+ operation_is_gestalt:0 "$TRIGGER_FAIL$§RThey are a §YGestalt Consciousness§!. They cannot integrate with other societies.§!\n\n"
+ operation_gestalt_cant_indoctrinate:0 "$TRIGGER_FAIL$§RWe are a §YGestalt Consciousness§!. We cannot turn them.§!\n\n"
+ operation_gestalt_mismatched:0 "$TRIGGER_FAIL$§RWe cannot infiltrate a type of empire so radically different from our own.§!\n\n"
+ operation_wrong_interference_policy:0 "$TRIGGER_FAIL$§ROur §Y$policy_interference$ Policy§! does not allow this Operation.§!\n\n"
+ operation_wrong_enlightenment_policy:0 "$TRIGGER_FAIL$§ROur §Y$policy_enlightenment$ Policy§! does not allow this Operation.§!\n\n"
+ operation_same_ethos:0 "$TRIGGER_FAIL$§RThis civilization already shares our Ethics.§!\n\n"
+ operation_failed_infiltration:0 "$TRIGGER_FAIL$§ROur recent actions have left the inhabitants on high alert.§!\n\n"
+
+ operation_awareness_risk:0 "\nIncreased risk of the [from.target.GetName] gaining £awareness£ §YAwareness§! during our Espionage Operations." # event tooltip
+ operation_random_event_resolved:0 "§YOperation [from.GetName]§! will resume its schedule."
+ operation_random_event_resolved_poor:0 "§YOperation [from.GetName]§! will resume despite this §Rnegative§! setback."
+ operation_random_event_resolved_good:0 "§YOperation [from.GetName]§! will resume, trending towards a more §Gpositive§! outcome."
+ operation_random_event_resolved_excellent:0 "§YOperation [from.GetName]§! will resume, with a likely §Gpositive§! outcome."
+
+ operation_infiltrate_government:0 "Infiltrate Government"
+ operation_infiltrate_government_desc:0 "Operatives sent to infiltrate their society will gradually replace world leaders, preparing the planet for annexation."
+ operation_infiltrate_government_on_success:0 "$IF_SUCCESSFUL|E$\nAnnex the planet and give the locals a large but temporary Happiness boost.\n\n[owner.GetDisguiseState]"
+
+ operation_indoctrinate_society:0 "Indoctrinate Society"
+ operation_indoctrinate_society_desc:1 "By influencing smaller population groups within the [target.GetName], our operatives can bring their whole society around to our way of thinking."
+ operation_indoctrinate_society_on_success:0 "$IF_SUCCESSFUL|E$\nShifts the population's Ethics toward ours.\n\n[owner.GetDisguiseState]"
+
+ operation_plant_advanced_knowledge:0 "Plant Advanced Knowledge"
+ operation_plant_advanced_knowledge_desc:0 "The [target.GetName] may be a pre-FTL society, but they are capable of reaching the stars. All they need is a little push."
+ operation_plant_advanced_knowledge_on_success:0 "$IF_SUCCESSFUL|E$\nIncreases the target's Technological Progress.\n\n[owner.GetDisguiseState]"
+
+ operation_increase_awareness:0 "Increase Awareness"
+ operation_increase_awareness_desc:0 "It is time for the [root.target.GetName] to realize they are not alone in the universe."
+ operation_increase_awareness_on_success:0 "$IF_SUCCESSFUL|E$\nRaises Awareness Level of the [root.target.GetName].\n\n[owner.GetDisguiseState]"
+
+ operation_spread_disinformation:0 "Spread Disinformation"
+ operation_spread_disinformation_desc:0 "The truth is out there, but the [root.target.GetName] is not ready for it yet."
+ operation_spread_disinformation_on_success:0 "$IF_SUCCESSFUL|E$\nLowers Awareness Level of the [root.target.GetName].\n\n[owner.GetDisguiseState]"
+
+ operation_infiltrate_hive:0 "Infiltrate Hive"
+ operation_infiltrate_hive_desc:0 "By strategically replacing nodal drones our consciousness can slowly assimilate critical functions of the local hive cluster."
+ operation_infiltrate_hive_on_success:0 "$IF_SUCCESSFUL|E$\nAnnex the planet while adding the local drones to our consciousness.\n\n[owner.GetDisguiseState]"
+
+### Operation Events
+
+ preftl_operation.1000.name:0 "[from.GetName]: Operatives Ready" # Operation name, i.e. 'Infiltrate Government'
+ preftl_operation.1000.desc.okay:0 "All [target.GetSpeciesName] leaders of significance on [target.capital_scope.GetName] have been replaced by our own agents. Infiltration cells are now consolidating our efforts on the [target.capital_scope.GetPlanetHabitat]. The time to act is upon us."
+ preftl_operation.1000.desc.good:0 "Our covert operatives on [target.capital_scope.GetName] now number in the thousands, and have infiltrated every facet of the [root.target.capital_scope.GetPlanetHabitat]. Several have ascended to leading positions in the local hierarchy, and are already wielding the influence of their positions to benefit other agents."
+ preftl_operation.1000.desc.poor:0 "Although our operatives on the surface of [target.capital_scope.GetName] now number in the thousands, progress has been slow. An attempt to overthrow one of the major settlements comprising the [target.GetName] ended in disaster, and the death or self-termination of every agent involved.\n\nIt was only the heroic efforts of a sleeper cell that kept local authorities from recovering the bodies and exposing our work on the planet."
+ #preftl_operation.1001.name:1 "Shaping the Future"
+ #preftl_operation.1001.desc:1 "Our operatives have successfully embedded themselves within the [infiltrated_country_species.GetAdj] political leadership. We now hold control over every world power, and can shape the future of [infiltrated_country_planet.GetName] to our will."
+ #preftl_operation.1002.name:1 "Influencing Affairs"
+ #preftl_operation.1002.desc:1 "Our operatives have covertly gained a foothold over the [infiltrated_country_species.GetAdj] political leadership. We are now in a position of great influence regarding the internal affairs of [infiltrated_country_planet.GetName]. The mission was a success."
+ #preftl_operation.1003.name:1 "Minor Influence"
+ #preftl_operation.1003.desc:1 "After a poor start, our operatives were able to infiltrate the governments of [infiltrated_country_planet.GetName]. We were unable to secure many high ranking roles within the political leadership, but we are now in a position to influence minor tactical decisions concerning the [infiltrated_country_species.GetName]."
+#  observation.3008.desc:1 "While our agents have successfully replaced most of the local leaders on [root.target.GetSpeciesName], a stubborn few remain. A concerted effort is now underway to remove the last holdouts, but the date of our planned reveal will need to be pushed forward."
+ preftl_operation.1005.name:0 "Welcome Wagon"
+ preftl_operation.1005.desc:1 "After achieving complete dominion over the [infiltrated_country_species.GetAdj] political leadership, our infiltration cells paved the way for the arrival of a formal first contact unit.\n\nIn a lavish ceremony held at the planetary capital, our diplomatic envoy graciously accepted a petition signed by every world leader on [infiltrated_country_planet.GetName]. The document calls for the immediate annexation of their [infiltrated_country_planet.GetPlanetHabitat] into the [root.GetName]. Jubilant citizens now crowd the streets, cheering their alien benefactors."
+ preftl_operation.1006.name:1 "Warm Welcome"
+ preftl_operation.1006.desc:1 "After gaining a foothold over the [infiltrated_country_species.GetAdj] political leadership, our infiltration cells paved the way for the arrival of a formal first contact unit. In a modest ceremony at the planetary capital, our diplomatic envoy humbly accepted a petition signed by the world leaders of [infiltrated_country_planet.GetName]. The document lays out plans for the annexation of their [infiltrated_country_planet.GetPlanetHabitat] into the [root.GetName]. Many citizens welcome their new alien benefactors."
+ preftl_operation.1007.name:1 "Cold Reception"
+ preftl_operation.1007.desc:1 "After infiltrating the [infiltrated_country_species.GetAdj] political leadership, our operatives have laid the ground for the arrival of a formal first contact unit. There will be no ceremony to mark the arrival of our diplomatic envoy. However, we have entered an agreement with the world leaders of [infiltrated_country_planet.GetName]. Their [infiltrated_country_planet.GetPlanetHabitat] will be annexed into the [root.GetName]."
+ preftl_operation.1005.tt:0 "§Y[infiltrated_country_planet.GetName]§! and its population join the §Y[root.GetName]§!."
+ preftl_operation.1008.name:0 "[From.GetName] Failure"
+ preftl_operation.1008.desc:0 "Our infiltration of the [infiltrated_country_species.GetAdj] political leadership was not as complete as we had been led to believe. After initially failing to infiltrate their major nations, we attempted a coup within a minor power. Yet even there, the people didn't want us.\n\nWe have extracted all our surviving operatives from [infiltrated_country_planet.GetName]. The inhabitants are sure to be on alert for years to come."
+ preftl_operation.failed_annaxation.tt:0 "§RWe will be unable to launch any new §H[From.GetName]§! missions for 5 years.§!"
+ attempted_infiltration:0 "Attempted Infiltration"
+
+# Operation Indoctrinate Society
+ preftl_operation.1015.name:1 "Ready to Sway the [target.GetName]" # pre-FTL country name
+ preftl_operation.1015.desc:1 "Our work to influence the [owner.GetPreFTLLower] inhabitants of [target.capital_scope.GetName] has reached its zenith. Our operatives are now ready to bring our own cultural values to bear on [target.GetSpeciesAdj] society."
+
+ preftl_operation.1016.name:1 "Compelling the Crowds"
+ preftl_operation.1016.intro:0 "Time alone will show how lasting our effect may be on the §H[from.target.GetAdj]§!, however initial projections look promising. [from.target.GetSpeciesNamePlural] advocates have already taken up our ideas as keenly as if they were their own." # used for both pre- and post-industrial societies
+ preftl_operation.1016.intro.good:0 "Our work in the §H[from.target.GetName]§! proceeded splendidly. Through careful manipulation of cultural memes and social mores, we have encouraged a cultural shift so profound, one could almost believe it arose spontaneously." # used for both pre- and post-industrial societies
+ preftl_operation.1016.intro.poor:0 "Our work in the §H[from.target.GetName]§! was not without its challenges, but we have succeeded. While our efforts did not attract as many homegrown advocates as first hoped, we have achieved some positive results." # used for both pre- and post-industrial societies
+
+ preftl_operation.1016.autho:0 "Our operatives deftly wielded the lessons of our glorious predecessors by establishing primitive models of [root.GetAdj] §Yauthoritarianism§!. A select few influential locals have been empowered to rule over these communities - some of which will prosper, while others will not. All will serve as compelling lessons for the [from.target.GetSpeciesNamePlural] as they consider proper social ordering." # pre-industrial societies only
+ preftl_operation.1016.egali:0 "Our operatives traveled far and wide, engaging local communities in matters such as equity and fairness. Although [from.target.GetSpeciesAdj] political understanding remains in its infancy, we have inspired some to campaign for further debate amongst their own people. With Operation [from.GetName] now concluded, we leave it to local advocates like these to find their own path to §Yegalitarianism§!." # pre-industrial societies only
+ preftl_operation.1016.mater:0 "Our select group of operatives - all highly skilled in the art of educational debate - worked to enlighten community groups across the [from.target.capital_scope.GetPlanetHabitat]. Adapting each lesson for the myriad forms of [from.target.GetSpeciesAdj] culture, their efforts bore fruit in the form of salons, artworks, and educational institutions. These §Ymaterialist§! tools have now been bequeathed to the [from.target.GetSpeciesNamePlural]." # pre-industrial societies only
+ preftl_operation.1016.milit:0 "Honor and prowess have taken pride of place in a number of [from.target.GetSpeciesAdj] cultures. Our operatives - posing as mercenaries, rebels, and suppliers to military causes - succeeded in dazzling locals with ceremonial weaponry, ornate combat drills, and a number of carefully-orchestrated skirmishes. All now serve as inspirations for a more §Ymilitaristic§! [from.target.GetName]." # used for both pre- and post-industrial societies
+ preftl_operation.1016.pacif:0 "Our select group of operatives - all highly skilled mediators - mingled with a diverse set of communities, demonstrating the value of [root.GetAdj] §Ypacifism§! as the solution to many [from.target.GetSpeciesAdj] social ills. For these communes at least, violence is no longer their first response." # used for both pre- and post-industrial societies
+ preftl_operation.1016.phile:0 "Our operatives took a holistic approach, encouraging curiosity and a greater appreciation for other cultures in the form of stories, art, and community events. With Operation [from.GetName] now concluded, our operatives have left it to local §Yxenophiles§! to keep these discussions alive, and better prepare the [from.target.GetName] for life in a diverse galaxy." # used for both pre- and post-industrial societies
+ preftl_operation.1016.phobe:0 "As impulses go, fear and mistrust are easily encouraged but are difficult to manage. Our operatives were careful to ensure their speeches and cultural works showcased the positive aspects of self-preservation, as much as they taught pointed lessons about the dangers of alien influence. Their lessons have now been taken up by [from.target.GetSpeciesAdj] champions for §Yxenophobic§! interests." # pre-industrial societies only
+ preftl_operation.1016.spiri:0 "Our two-pronged approach placed one group of charismatic operatives at the head of cults and sects based on various indigenous faiths, while another worked to protect these burgeoning movements from political interference and ridicule. These communities of enlightened [from.target.GetSpeciesAdj] have now embraced a form of §Yspiritualism§! which is native to their own culture. They walk their own path towards the Divine." # used for both pre- and post-industrial societies
+
+ preftl_operation.1016.autho.desc:0 "$preftl_operation.1016.intro$\n\n$preftl_operation.1016.autho$"
+ preftl_operation.1016.egali.desc:0 "$preftl_operation.1016.intro$\n\n$preftl_operation.1016.egali$"
+ preftl_operation.1016.mater.desc:0 "$preftl_operation.1016.intro$\n\n$preftl_operation.1016.mater$"
+ preftl_operation.1016.milit.desc:0 "$preftl_operation.1016.intro$\n\n$preftl_operation.1016.milit$"
+ preftl_operation.1016.pacif.desc:0 "$preftl_operation.1016.intro$\n\n$preftl_operation.1016.pacif$"
+ preftl_operation.1016.phile.desc:0 "$preftl_operation.1016.intro$\n\n$preftl_operation.1016.phile$"
+ preftl_operation.1016.phobe.desc:0 "$preftl_operation.1016.intro$\n\n$preftl_operation.1016.phobe$"
+ preftl_operation.1016.spiri.desc:0 "$preftl_operation.1016.intro$\n\n$preftl_operation.1016.spiri$"
+ preftl_operation.1017.autho.desc:0 "$preftl_operation.1016.intro.good$\n\n$preftl_operation.1016.autho$"
+ preftl_operation.1017.egali.desc:0 "$preftl_operation.1016.intro.good$\n\n$preftl_operation.1016.egali$"
+ preftl_operation.1017.mater.desc:0 "$preftl_operation.1016.intro.good$\n\n$preftl_operation.1016.mater$"
+ preftl_operation.1017.milit.desc:0 "$preftl_operation.1016.intro.good$\n\n$preftl_operation.1016.milit$"
+ preftl_operation.1017.pacif.desc:0 "$preftl_operation.1016.intro.good$\n\n$preftl_operation.1016.pacif$"
+ preftl_operation.1017.phile.desc:0 "$preftl_operation.1016.intro.good$\n\n$preftl_operation.1016.phile$"
+ preftl_operation.1017.phobe.desc:0 "$preftl_operation.1016.intro.good$\n\n$preftl_operation.1016.phobe$"
+ preftl_operation.1017.spiri.desc:0 "$preftl_operation.1016.intro.good$\n\n$preftl_operation.1016.spiri$"
+ preftl_operation.1018.autho.desc:0 "$preftl_operation.1016.intro.poor$\n\n$preftl_operation.1016.autho$"
+ preftl_operation.1018.egali.desc:0 "$preftl_operation.1016.intro.poor$\n\n$preftl_operation.1016.egali$"
+ preftl_operation.1018.mater.desc:0 "$preftl_operation.1016.intro.poor$\n\n$preftl_operation.1016.mater$"
+ preftl_operation.1018.milit.desc:0 "$preftl_operation.1016.intro.poor$\n\n$preftl_operation.1016.milit$"
+ preftl_operation.1018.pacif.desc:0 "$preftl_operation.1016.intro.poor$\n\n$preftl_operation.1016.pacif$"
+ preftl_operation.1018.phile.desc:0 "$preftl_operation.1016.intro.poor$\n\n$preftl_operation.1016.phile$"
+ preftl_operation.1018.phobe.desc:0 "$preftl_operation.1016.intro.poor$\n\n$preftl_operation.1016.phobe$"
+ preftl_operation.1018.spiri.desc:0 "$preftl_operation.1016.intro.poor$\n\n$preftl_operation.1016.spiri$"
+
+ preftl_operation.1019.name:0 "Influencing the Masses"
+ preftl_operation.1019.autho:0 "Our operatives wielded the lessons handed down to us by our glorious predecessors, establishing miniature models of [root.GetAdj] §Yauthoritarianism§! on [from.target.capital_scope.GetName]. Certain institutions have been remodeled, arranging many [from.target.GetSpeciesNamePlural] into carefully-designed hierarchies. Not all these communities will last, but their failures will serve as valuable lessons, strengthening their social order overall." # post-industrial societies only
+ preftl_operation.1019.egali:0 "Our operatives traveled far and wide, engaging local communities and institutions in matters such as equity and fairness. [from.target.GetSpeciesAdj] political sciences are already fairly mature, but we have set multiple campaigns in motion which are already pushing for more inclusive debate and §Yegalitarian§! policies." # post-industrial societies only
+ preftl_operation.1019.mater:0 "Our select group of operatives - all highly skilled in the art of educational debate - worked to enlighten community groups and educational institutions across the [from.target.capital_scope.GetPlanetHabitat]. Their efforts have led to the establishment of research centers, educational funds, and even a new art movement. These tools of §Ymaterialism§! have now been bequeathed to the [from.target.GetSpeciesNamePlural]." # post-industrial societies only
+ preftl_operation.1019.phobe:0 "Fear and mistrust are easily encouraged but are difficult to steer, especially in a society with access to mass media. Our operatives employed a delicate touch, planting §Yxenophobic§! speeches and cultural movements which showcased the positive aspects of self-preservation, as much as they taught pointed lessons about the dangers of alien influence. Their lessons have now been taken up by homegrown [from.target.GetSpeciesAdj] champions and political groups." # post-industrial societies only
+
+ preftl_operation.1019.autho.desc:0 "$preftl_operation.1016.intro$\n\n$preftl_operation.1019.autho$"
+ preftl_operation.1019.egali.desc:0 "$preftl_operation.1016.intro$\n\n$preftl_operation.1019.egali$"
+ preftl_operation.1019.mater.desc:0 "$preftl_operation.1016.intro$\n\n$preftl_operation.1019.mater$"
+ preftl_operation.1019.milit.desc:0 "$preftl_operation.1016.milit.desc$"
+ preftl_operation.1019.pacif.desc:0 "$preftl_operation.1016.pacif.desc$"
+ preftl_operation.1019.phile.desc:0 "$preftl_operation.1016.phile.desc$"
+ preftl_operation.1019.phobe.desc:0 "$preftl_operation.1016.intro$\n\n$preftl_operation.1019.phobe$"
+ preftl_operation.1019.spiri.desc:0 "$preftl_operation.1016.spiri.desc$"
+ preftl_operation.1020.autho.desc:0 "$preftl_operation.1016.intro.good$\n\n$preftl_operation.1019.autho$"
+ preftl_operation.1020.egali.desc:0 "$preftl_operation.1016.intro.good$\n\n$preftl_operation.1019.egali$"
+ preftl_operation.1020.mater.desc:0 "$preftl_operation.1016.intro.good$\n\n$preftl_operation.1019.mater$"
+ preftl_operation.1020.milit.desc:0 "$preftl_operation.1017.milit.desc$"
+ preftl_operation.1020.pacif.desc:0 "$preftl_operation.1017.pacif.desc$"
+ preftl_operation.1020.phile.desc:0 "$preftl_operation.1017.phile.desc$"
+ preftl_operation.1020.phobe.desc:0 "$preftl_operation.1016.intro.good$\n\n$preftl_operation.1019.phobe$"
+ preftl_operation.1020.spiri.desc:0 "$preftl_operation.1017.spiri.desc$"
+ preftl_operation.1021.autho.desc:0 "$preftl_operation.1016.intro.poor$\n\n$preftl_operation.1019.autho$"
+ preftl_operation.1021.egali.desc:0 "$preftl_operation.1016.intro.poor$\n\n$preftl_operation.1019.egali$"
+ preftl_operation.1021.mater.desc:0 "$preftl_operation.1016.intro.poor$\n\n$preftl_operation.1019.mater$"
+ preftl_operation.1021.milit.desc:0 "$preftl_operation.1018.milit.desc$"
+ preftl_operation.1021.pacif.desc:0 "$preftl_operation.1018.pacif.desc$"
+ preftl_operation.1021.phile.desc:0 "$preftl_operation.1018.phile.desc$"
+ preftl_operation.1021.phobe.desc:0 "$preftl_operation.1016.intro.poor$\n\n$preftl_operation.1019.phobe$"
+ preftl_operation.1021.spiri.desc:0 "$preftl_operation.1018.spiri.desc$"
+
+ espionage_pre_ftl_indoctrination:0 "Societal Shift"
+ espionage_pre_ftl_indoctrination_desc:0 "Parts of this society have recently changed their political outlook, embracing a significant new ethos."
+ espionage_pre_ftl_indoctrination_authoritarian: "$espionage_pre_ftl_indoctrination$"
+ espionage_pre_ftl_indoctrination_authoritarian_desc: "$espionage_pre_ftl_indoctrination_desc$"
+ espionage_pre_ftl_indoctrination_egalitarian: "$espionage_pre_ftl_indoctrination$"
+ espionage_pre_ftl_indoctrination_egalitarian_desc: "$espionage_pre_ftl_indoctrination_desc$"
+ espionage_pre_ftl_indoctrination_materialist: "$espionage_pre_ftl_indoctrination$"
+ espionage_pre_ftl_indoctrination_materialist_desc: "$espionage_pre_ftl_indoctrination_desc$"
+ espionage_pre_ftl_indoctrination_militarist: "$espionage_pre_ftl_indoctrination$"
+ espionage_pre_ftl_indoctrination_militarist_desc: "$espionage_pre_ftl_indoctrination_desc$"
+ espionage_pre_ftl_indoctrination_pacifist: "$espionage_pre_ftl_indoctrination$"
+ espionage_pre_ftl_indoctrination_pacifist_desc: "$espionage_pre_ftl_indoctrination_desc$"
+ espionage_pre_ftl_indoctrination_spiritualist: "$espionage_pre_ftl_indoctrination$"
+ espionage_pre_ftl_indoctrination_spiritualist_desc: "$espionage_pre_ftl_indoctrination_desc$"
+ espionage_pre_ftl_indoctrination_xenophile: "$espionage_pre_ftl_indoctrination$"
+ espionage_pre_ftl_indoctrination_xenophile_desc: "$espionage_pre_ftl_indoctrination_desc$"
+ espionage_pre_ftl_indoctrination_xenophobe: "$espionage_pre_ftl_indoctrination$"
+ espionage_pre_ftl_indoctrination_xenophobe_desc: "$espionage_pre_ftl_indoctrination_desc$"
+ 
+# Operation Increase Awareness
+ preftl_operation.1025.name:1 "[this.GetName]: Ready to Reveal" # Operation name, i.e. 'Increase Awareness'
+ preftl_operation.1025.desc:1 "Our preparations on [target.capital_scope.GetName] are now concluded; our operatives are poised to bring the [target.GetName] one step further onto the galactic stage."
+ preftl_operation.1026.name:0 "Is There Life Out There?"
+ preftl_operation.1026.desc.intro:0 "Thanks to the actions of our operatives, the [this.GetSpeciesNamePlural] are looking at the night sky with renewed interest."
+ preftl_operation.1026.desc.low:1 "Inspired by the stories we spread, the [this.GetSpeciesNamePlural] are turning their gaze to the sky. They have begun to ask themselves if there might be other sentient life in the universe, bathing in the light of other stars."
+ preftl_operation.1026.desc.medium:1 "$preftl_operation.1026.desc.intro$ They whisper stories few believe, of mysterious lights in the sky and visitors from worlds beyond the stars... Stories with a grain of truth."
+ preftl_operation.1026.desc.high:1 "$preftl_operation.1026.desc.intro$ Considering the facts which now lie before them, many are convinced they're not alone in the universe. They believe proof is within their reach, and that finding it is only a matter of time."
+ preftl_operation.1026.desc.full:1 "Due to our efforts, the inhabitants of [this.capital_scope.GetName] now know without a doubt that they are not alone in the universe. They are ready to be contacted without risk of extreme shock to their way of life."
+
+ # Good and Great Outcomes
+ preftl_operation.1027.name:0 "There is Life Out There"
+ preftl_operation.1027.desc.intro:0 "Thanks to the skilled work of our operatives, the [this.GetSpeciesNamePlural] are looking to the skies with an insatiable fascination."
+ preftl_operation.1027.desc.low:0 "$preftl_operation.1027.desc.intro$\n\nInspired and delighted by the stories spread by our operatives, the [this.GetSpeciesNamePlural] are turning their gaze to the sky. They are openly speculating on the existence of other sentient life in the universe."
+ preftl_operation.1027.desc.medium:0 "$preftl_operation.1027.desc.intro$\n\nThey excitedly share stories of mysterious lights in the sky and visitors from worlds beyond the stars. Many rightfully believe the stories to be the truth."
+ preftl_operation.1027.desc.high:0 "$preftl_operation.1027.desc.intro$\n\n Many are now certain they are not alone in the universe. They know the proof is within reach, and finding it is just a matter of time."
+ preftl_operation.1027.desc.full:0 "$preftl_operation.1027.desc.intro$\n\nThe bold efforts of our Spy Network operatives have helped the inhabitants of [this.capital_scope.GetName] to understand they are not alone in the universe. They are now ready, and willing to be contacted without risk of interstellar culture shock."
+
+ # Poor Outcome
+ preftl_operation.1028.name:0 "There is Nothing Out There"
+ preftl_operation.1028.desc.intro:0 "The actions of our operatives have caused the [this.GetSpeciesNamePlural] to fear the night sky."
+ preftl_operation.1028.desc.low:0 "$preftl_operation.1028.desc.intro$\n\nFrightened by the stories spread by our operatives, the [this.GetSpeciesNamePlural] are looking upwards with great trepidation. They have begun to ask themselves if there may be other sentient life in the universe, lurking in the darkness."
+ preftl_operation.1028.desc.medium:0 "$preftl_operation.1028.desc.intro$\n\nThey share spooky stories in hushed tones of mysterious lights in the sky and invaders from worlds beyond the stars."
+ preftl_operation.1028.desc.high:0 "$preftl_operation.1028.desc.intro$\n\nMany are now concerned they are not alone in the universe. They believe the truth is out there, but they have little interest in finding it."
+ preftl_operation.1028.desc.full:0 "$preftl_operation.1028.desc.intro$\n\nThe efforts of our Spy Network operatives have led the inhabitants of [this.capital_scope.GetName] to understand they are not alone in the universe. They may now be contacted without risk of extreme shock."
+ 
+ preftl_operation.1035.name:0 "$preftl_operation.1026.name$"
+ preftl_operation.1035.desc:0 "Our $role_spymaster$ [spynetwork.leader.GetName] has outlined the results of our operation to cover up the existence of interstellar life on [target.capital_scope.GetName]."
+
+# Operation Spread Disinformation
+ # Standard conclusion
+ preftl_operation.1036.name:0 "Disinformation Spread on [from.target.GetName]"
+ preftl_operation.1036.desc.intro:0 "The efforts of our operatives on §H[this.capital_scope.GetName]§! have cast doubt on the evidence of alien life found so far."
+ preftl_operation.1036.desc.none:0 "$preftl_operation.1036.desc.intro$ Stories about the existence of interstellar visitors are being dismissed as the delusions of a paranoid minority."
+ preftl_operation.1036.desc.low:0 "$preftl_operation.1036.desc.intro$ The [this.GetSpeciesNamePlural] still whisper about the existence of aliens, but few truly believe such tales."
+ preftl_operation.1036.desc.medium:0 "$preftl_operation.1036.desc.intro$ While some in positions of power may suspect our existence, the secret remains concealed to the public."
+ # Great conclusion
+ preftl_operation.1037.name:0 "Disinformation Success on [from.target.GetName]"
+ preftl_operation.1037.desc.intro:0 "Our skilled operatives on §H[this.capital_scope.GetName]§! have eliminated speculation on the evidence of spacefaring civilizations."
+ preftl_operation.1037.desc.none:0 "$preftl_operation.1037.desc.intro$ Sharing alien stories is now a fast way of becoming ostracized as a delusional outsider."
+ preftl_operation.1037.desc.low:0 "$preftl_operation.1037.desc.intro$ Few [this.GetSpeciesNamePlural] even consider the possibility of life from other planets."
+ preftl_operation.1037.desc.medium:0 "$preftl_operation.1037.desc.intro$ While some in positions of power may suspect our existence, they know better than to speak publicly on what would be seen as ridiculous notions."
+ # Good conclusion
+ preftl_operation.1038.name:0 "Disinformation Spread on [from.target.GetName]"
+ preftl_operation.1038.desc.intro:0 "Our operatives on §H[this.capital_scope.GetName]§! have significantly reduced speculation on the evidence of spacefaring civilizations."
+ preftl_operation.1038.desc.none:0 "$preftl_operation.1038.desc.intro$ Sharing alien stories is now considered a shun-worthy eccentricity."
+ preftl_operation.1038.desc.low:0 "$preftl_operation.1038.desc.intro$ Few [this.GetSpeciesNamePlural] care to consider the possibility of alien life."
+ preftl_operation.1038.desc.medium:0 "$preftl_operation.1038.desc.intro$ While some in positions of power may suspect our existence, they are unlikely to speak publicly about such things."
+ # Poor conclusion
+ preftl_operation.1039.name:1 "Disinformation Disappointment on [from.target.GetName]"
+ preftl_operation.1039.desc.intro:0 "Our operatives on §H[this.capital_scope.GetName]§! have done a poor job of spreading doubt regarding the existence of alien life."
+ preftl_operation.1039.desc.none:0 "$preftl_operation.1036.desc.intro$ The popularity of stories about the existence of interstellar visitors is increasing rapidly."
+ preftl_operation.1039.desc.low:0 "$preftl_operation.1036.desc.intro$ The [this.GetSpeciesNamePlural] still talk openly about the existence of aliens, and many believe such tales to be fact."
+ preftl_operation.1039.desc.medium:0 "$preftl_operation.1036.desc.intro$ Those in positions of power talk openly about visitors from the stars. They are almost certain we exist."
+
+ preftl_operation.1041.name:0 "$preftl_operation.1005.name$"
+ preftl_operation.1041.desc:0 "Our operatives report our efforts to increase the technology level of §H[root.target.GetName]§! are proceeding as planned."
+
+ preftl_operation.1045.name:0 "[from.GetName]: Ready" # Operation name, i.e. Plant Advanced Knowledge
+ preftl_operation.1045.desc:0 "Our operatives have done all they can, seeding various small technological advances into [from.target.GetSpeciesAdj] society. It is up to the locals now to connect the dots, and assemble these small steps into a larger one. They are as ready as they'll ever be."
+
+ preftl_operation.1046.name:0 "[from.target.GetName]: One Giant Leap"
+ preftl_operation.1046.desc:0 "Success! The technology and knowledge we sowed into [from.target.GetSpeciesAdj] society has flourished, greatly advancing their civilization from within. Only time will tell what long-term impacts this may have, but for now our operatives report a great deal of good will and prosperity down on [from.target.capital_scope.GetName]."
+
+ preftl_operation.1047.name:0 "[from.target.GetName]: A Sizeable Leap"
+ preftl_operation.1047.desc:0 "Our operatives report good results on [from.target.capital_scope.GetName]! The technology and knowledge we sowed into [from.target.GetSpeciesAdj] society has borne fruit, nudging their civilization closer towards galactic involvement. Only time will tell what long-term impacts this may have, but for now our operatives report increased prosperity on the [from.owner.GetPreFTLLower] world."
+
+ preftl_operation.1048.name:0 "[from.target.GetName]: Solid Progress"
+ preftl_operation.1048.desc:0 "Our operatives report a successful conclusion in our efforts to enlighten the residents of [from.target.capital_scope.GetName]. The technology and knowledge we introduced to [from.target.GetSpeciesAdj] society have taken root, bringing their civilization a little closer towards reaching the stars."
+
+ preftl_operation.1049.name:0 "[from.target.GetName]: A Setback"
+ preftl_operation.1049.desc:0 "We have partially succeeded in enlightening the residents of [from.target.capital_scope.GetName]. Despite some setbacks, we have nevertheless encouraged some basic technological progress and are confident that [from.target.GetSpeciesAdj] society will eventually flourish. However, their civilization may not reach the stars quite as quickly or as smoothly as we had initially hoped."
+
+ preftl_operation.1060.name:0 "[from.GetName]: Nodes Subsumed" # Operation name, i.e. 'Infiltrate Government'
+ preftl_operation.1060.desc.okay:0 "We have slowly assimilated multiple key nodal centers from the local [target.GetSpeciesNamePlural] on [target.capital_scope.GetName]. The goal is to make the local hive more reliant on us for their day-to-day activities until we can seamlessly annex their world. Infiltration cells are now consolidating our efforts on the [target.capital_scope.GetPlanetHabitat]. The time to act is upon us."
+ preftl_operation.1060.desc.good:0 "Our infiltration of [target.capital_scope.GetName] is nigh on absolute, as we have assimilated nodes of every facet all over the [root.target.capital_scope.GetPlanetHabitat]. We have taken over many of the day-to-day activities of the world. Soon we will be ready to integrate them fully."
+ preftl_operation.1060.desc.poor:0 "Even with numerous nodal centers under our control on the surface of [target.capital_scope.GetName], progress has been slow. An attempt to fully assimilate a primary continental hive ended in disaster and the expulsion of all our local drones.\n\nIt was only due to our multiple contingency efforts that we kept the recycling drones from recovering the remains and exposing our work on the planet."
+ preftl_operation.1065.name:0 "We Are One"
+ preftl_operation.1065.desc:0 "After achieving complete dominance over the minds of the [infiltrated_country_species.GetAdj] we quickly ensured that no drone was left.\n\nThe [infiltrated_country_species.GetName] consciousness is not gone, merely absorbed. Our minds will now reach further out into space. As one."
+ preftl_operation.1066.name:0 "Controlled Control"
+ preftl_operation.1066.desc:0 "After gaining critical influence over the [infiltrated_country_species.GetAdj] mind, our nodal centers prepared for us to assume direct control. With only a minor deviancy issue, we have now fully annexed the [infiltrated_country_planet.GetPlanetHabitat] into the [root.GetName]."
+ preftl_operation.1067.name:0 "Reluctant Retention"
+ preftl_operation.1067.desc:0 "After infiltrating the [infiltrated_country_species.GetAdj] hive mind, our assimilated nodal centers were ready to subsume the rest of the [infiltrated_country_planet.GetPlanetHabitat]. As we assumed control, a minor continent resisted our influence, choosing to end its existence rather than be absorbed into our mind. Their [infiltrated_country_planet.GetPlanetHabitat] will be annexed into the [root.GetName]."
+ preftl_operation.1068.name:0 "[From.GetName] Failure"
+ preftl_operation.1068.desc:0 "The [infiltrated_country_species.GetAdj] hive mind has discovered our influence. Just as we were ready to activate our assimilated nodal centers, we found ourselves cut off from the rest of their hive. Having quickly dismantled our operations, drones and all, we must declare Operation [from.GetName] a failure. The [infiltrated_country_species.GetClass] population is now on high alert for any outside interference."
+
+### Random event chains
+
+# Sorcery!
+ preftl_operation.3000.name:0 "Sorcery!"
+ preftl_operation.3000.desc:0 "Our attempts to influence the [from.target.GetSpeciesNamePlural] on [from.target.capital_scope.GetName] are being met with widespread suspicion. Many of the locals are taking great steps to avoid our operatives, believing them to be creatures of magic or else evil spirits. Hostile demonstrations seem very likely."
+ preftl_operation.3000.a:0 "Lean into it."
+ preftl_operation.3000.b:0 "Exercise caution. Relocate to another area."
+ preftl_operation.3000.c:0 "Challenge their beliefs!"
+
+ preftl_operation.3001.name:0 "Sorcery: Undeniable"
+ preftl_operation.3001.desc:0 "Our operatives took advantage of their other-worldly reputation and have established that yes, they are superior to the locals. As a result, the [from.target.GetSpeciesNamePlural] have been convinced to embrace our technologies - however they are now more aware of the existence of 'paranormal' creatures like us."
+
+ preftl_operation.3002.name:0 "Sorcery: Persuaded"
+ preftl_operation.3002.desc:0 "Our operatives were successful in challenging the [from.target.GetSpeciesAdj] society's new, superstitious belief structure using hard facts and logic. As a result, the locals have not only begun to embrace our schemes, but are starting to take a more objective view of the world around them."
+
+ preftl_operation.3003.name:0 "Sorcery: Execution"
+ preftl_operation.3003.desc:0 "Tragedy on [from.target.capital_scope.GetName], as an angry mob has captured and killed one of our operatives. Local leaders and residents alike are furious at what they consider to be an incursion by paranormal wielders of magic and ill intent. The task of preparing the [from.target.GetName] for a new age has become more difficult."
+
+# Pariah
+ preftl_operation.3010.name:1 "Pariah"
+ preftl_operation.3010.desc:1 "We thought we knew [from.target.GetSpeciesAdj] culture well enough that our operatives would fit in socially, but many are struggling. The locals seem to shun them, excluding our agents from social occasions and even some everyday cultural activities.\n\nIt's getting harder to persuade anyone to include us, let alone execute the goals of Operation [from.GetName]. Given the delicate social balance at stake, we should consider our next move carefully."
+ preftl_operation.3010.a:1 "Perhaps they respond to wealth?"
+ preftl_operation.3010.b:1 "Try a more eccentric approach."
+ preftl_operation.3010.c:1 "Devote more time to studying their culture."
+
+ preftl_operation.3011.name:0 "Pariah No Longer"
+ preftl_operation.3011.desc:0 "The people of [from.target.capital_scope.GetName] adore us! That is to say: our operatives no longer struggle to fit in, but are instead welcomed warmly wherever they go. It seems we had failed to notice a subtle yet vital contradiction of [from.target.GetSpeciesAdj] culture. Though their society openly promotes uniformity, they secretly admire acts of flashy unconformity.\n\nNow that our operatives have been elevated to trend-setting status, we are happy to report that Operation [from.GetName] is running more smoothly than ever."
+
+ preftl_operation.3012.name:0 "Outcasts"
+ preftl_operation.3012.desc:0 "The subtle nuances of [from.target.GetSpeciesAdj] culture continue to evade us, and worse still: some of our operatives have now been banished for their recent transgressions. The [from.target.GetSpeciesNamePlural] turn out to be a more conservative and suspicious people than we had first thought.\n\nThese social missteps have delayed our progress on Operation [from.GetName], however we have at least learned what not to do in future. New identities and training protocols are already being drawn up; our operatives won't be caught in the same blunder twice."
+ operation_pariahs:0 "Pariahs"
+ operation_pariahs_desc:0 "Many of our operatives have been cast out from local society after blundering some cultural norms. Our remaining resources are under strain."
+
+## Distracted Agent
+ preftl_operation.3020.name:0 "Side-tracked"
+ preftl_operation.3020.desc:0 "One of our key operatives working on [from.target.capital_scope.GetName] has become... enamored with the local civilization, and has been refusing many of their assigned tasks. Instead this overly-independent agent has taken up independent xenological study, and has submitted numerous requests to make this a formal posting.\n\nAlthough these actions put Operation [from.GetName] at risk of delay, we must admit that the unruly operative's work has already proven rather useful to us. Denying this effort will slow our progress."
+ preftl_operation.3020.a:0 "Discipline must be maintained."
+ preftl_operation.3020.b:0 "Such initiative is to be commended!"
+ operation_no_more_distractions:0 "No More Distractions"
+ operation_no_more_distractions_desc:0 "We no longer benefit from xenological insights granted to us by an unruly and distracted operative."
+ observation_distraction_insights:0 "Independent Clandestine Study"
+ observation_distraction_insights_desc:0 "A former spy has brought some uniquely clandestine insights to our study of this culture."
+
+## Mimicry
+ preftl_operation.3030.name:0 "Mimicry"
+ preftl_operation.3030.desc:0 "Our work on [from.target.capital_scope.GetName] has met with an unusual complication: the [from.target.GetSpeciesAdj] hive is mirroring our behavior. At first we thought the local drones had simply turned eccentric, but many of these new habits are unmistakeably [from.owner.GetSpeciesAdj] in nature.\n\nNot only does this suggest we are influencing the hive outside the carefully-planned remit of Operation [from.GetName], but our own failures to blend in are now being reflected back us. There are no signs yet that the hive is aware of our operation, but that may only be a matter of time."
+ preftl_operation.3030.a:0 "So they seem more... suggestible?"
+ preftl_operation.3030.b:0 "We must be more careful."
+ preftl_operation.3030.b.tt:0 "Assign more resources to keeping our operatives' instincts and mannerisms in check."
+ preftl_operation.3030.c:0 "We are committed to seeing this through."
+ preftl_operation.3030.d:0 "Withdraw, and abort."
+ spynetwork_hive_mimicry:0 "Suggestible Mimic"
+ spynetwork_hive_mimicry_desc:0 "This hive has begun mimicking our behavior, and its drones have established an instinctive rapport with our operatives."
+ espionage_hive_mimicry:0 "Exposure Through Mimicry"
+ espionage_hive_mimicry_desc:0 "This hive is in the habit of mimicking behaviors which are otherwise foreign to it. There is a risk this helps it more easily spot outside influences."
+
+## Academic Shenanigans (note only some of these strings refer to the intended event ID, preftl_operation.3040)
+ preftl_operation.1100.name:0 "Academic Pursuits"
+ preftl_operation.1100.desc:1 "Armed with our superior knowledge, our operatives on [from.target.capital_scope.GetName] have infiltrated local universities, establishing themselves as brilliant thinkers known for their ground-breaking theories. Their rising success, though, has been met with suspicion by local scholars: many refuse to engage with them, accusing them of being frauds.\n\nThe endless academic bickering is making it hard for our agents to spread new ideas. Our $role_spymaster$ is requesting further instructions."
+ preftl_operation.1100.a:0 "Eliminate the competition."
+ preftl_operation.1100.b:1 "Bribe these scholars with something radical: funding."
+ preftl_operation.1100.c:0 "Let them bicker. This could prove interesting."
+
+ preftl_operation.1101.name:0 "Accidents Happen..."
+ preftl_operation.3041.desc:0 "$preftl_operation.3042.desc$\n\nAlas, our machinations lacked subtlety, and have brought a great deal of suspicion down upon our operatives. Most have been barred from [from.target.GetSpeciesAdj] academia, their vacant spots immediately filled by more conservative thinkers."
+ preftl_operation.3042.desc:0 "Many of the academics who had opposed our operatives' theories have had to leave their positions in recent weeks, following a string of seemingly unrelated - and occasionally quite violent - "accidents"." # note this forms the first paragraph for preftl_operation.3041
+ preftl_operation.3042.a:0 "Excellent. There's our opening."
+
+ preftl_operation.1103.name:0 "Funding Research"
+ preftl_operation.3043.desc:0 "Our attempt to bribe dissenting academics on [from.target.capital_scope.GetName] was immediately discovered and reported. Local justice has proven swift: a number of our operatives have been barred from academia. Their vacant spots have already been filled by more conservative [from.target.GetSpeciesAdj] thinkers."
+ operation_academic_bribery_caught:0 "Convicted of Bribery"
+ operation_academic_bribery_caught_desc:0 "Progress on this Espionage Operation has slowed after our operatives were caught and convicted of bribery."
+ preftl_operation.3044.desc:0 "Thanks to the generosity of an anonymous patron, local academics have been able to secure funding for their research: an unexpected boon that leaves little time for petty rivalries.\n\nThis newfound prosperity brought with it new academic positions, rapidly filled by more of our operatives. Our grip on [from.target.GetSpeciesAdj] academia tightens, making it that bit easier to spread our ideas."
+ operation_academic_bribery:0 "Successful Bribery"
+ operation_academic_bribery_desc:0 "Progress on this Espionage Operation is proceeding more smoothly after we silenced our operatives' academic rivals by funding their research."
+
+ preftl_operation.1105.name:0 "Never-ending Debate"
+ preftl_operation.3045.desc:0 "The seemingly endless academic feuds on [from.target.capital_scope.GetName] have proven to be more of a hindrance than an opportunity. Our operatives failed to gain a foothold at any of the [from.target.capital_scope.GetPlanetHabitat]'s main cultural institutions. Perhaps the ideas we tried to introduce were just too controversial at this time."
+ preftl_operation.3046.desc:0 "An ideal opportunity has come our way! While debating with local thinkers, our operatives in the [from.target.GetName] found themselves thrust onto a highly prestigious stage by some of their fiercest rivals. As a result, our ideas have now been brought before representatives from the most respected academic institutions on [from.target.capital_scope.GetName].\n\nThese bodies not only understood our ideas, but have since set about refining them, turning them into something quite unexpected: new insights, made possible through the chaotic exchange of ideas."
+
+## Spymaster Exposed / Blackmail
+ preftl_operation.3050.name:0 "[from.spynetwork.leader.GetName] Exposed"
+ preftl_operation.3050.desc:0 "A drastic breach has occurred! $role_spymaster$ [from.spynetwork.leader.GetName] has been compromised during a clandestine visit to the surface of [from.target.capital_scope.GetName]. Some details remain unclear for now, but [from.spynetwork.leader.GetHeShe] came into brief and direct contact with a native [from.target.GetSpeciesName], who promptly fled the scene. Our operatives moved to try and apprehend this witness, but their efforts have so far failed.\n\nOperation [from.GetName] remains in progress for now, but we have activated special measures until this breach can be contained."
+ preftl_operation.3050.a:0 "Good. Keep us posted."
+ preftl_operation.3050.a.gestalt:0 "Continue monitoring."
+ preftl_operation.3050.b:0 "Hunt this [from.target.GetSpeciesName] down and eliminate them."
+ preftl_operation.3050.c:0 "Outrageous! We must abort."
+ preftl_operation.3050.d:0 "We should notify the [global_event_country.GetGalCommunityOrGalImperium]."
+ spynetwork_extra_containment:0 "Extraordinary Containment Protocol"
+ spynetwork_extra_containment_desc:0 "Activities within this Spy Network have been placed on lockdown following a recent and severe breach in cover."
+
+ preftl_operation.3051.name:0 "Witness Eliminated"
+ preftl_operation.3051.desc:0 "Our operatives report the successful elimination of their target: the sole witness to our recent breach in the [from.target.GetName]. This individual was tracked to a remote dwelling on the outskirts of a major [from.target.GetSpeciesAdj] settlement. The witness appeared to be in an extreme state of shock, and there are no signs they came into contact with other [from.target.GetSpeciesNamePlural]. We are confident that this matter has been contained."
+
+ preftl_operation.3055.name:0 "Blackmail"
+ preftl_operation.3055.desc:0 "The [from.target.GetSpeciesName] who witnessed our recent breach in the [from.target.GetName] is not only still at large, but has delivered us a crude ultimatum. The witness threatens to expose our $role_spymaster$ - and by extension, the [from.owner.GetName] - for our interference in [from.target.GetSpeciesAdj] affairs.\n\nThis brazen individual keeps us at bay by remaining in heavily-populated areas, where we cannot act against them without fear of further exposure. We may instead wish to simply meet their demands."
+ preftl_operation.3055.a:0 "Unacceptable. Abort, and retreat."
+ preftl_operation.3055.b:0 "We will not negotiate. Eliminate the witness."
+ preftl_operation.3055.c:0 "A steep price, but we will pay."
+ preftl_operation.3055.c.tt:1 "Operatives will be assigned to monitor this individual at all times, ensuring complete secrecy.\n§RThis will negatively impact our§! §Y$MOD_SPY_NETWORK_DAILY_VALUE_ADD$§!."
+ spynetwork_blackmailed:0 "Blackmailed"
+ spynetwork_blackmailed_desc:0 "This Spy Network's capacity is slightly reduced ever since we submitted to extortion by a local. Operatives have been assigned to watch this individual at all times."
+
+## Stricken
+ preftl_operation.3060.name:0 "Stricken"
+ preftl_operation.3060.desc:1 "Two of our key operatives on [from.target.capital_scope.GetName] have been seriously injured during an unexpected, natural disaster which also claimed the lives of several [from.target.GetSpeciesNamePlural]. Local residents rushed to their aid; the operatives in question are now being given rudimentary care.\n\nThe [from.target.GetSpeciesNamePlural] have not yet been able to question our operatives, however their injuries - though severe - are nothing compared to what struck down so many native bystanders. It cannot be long before Operation [from.GetName] is put under significantly greater scrutiny - especially with two of our key agents indisposed."
+ preftl_operation.3060.hive.desc:0 "Two of our key operatives on [from.target.capital_scope.GetName] have been seriously injured during an unexpected, natural disaster which also destroyed several [from.target.GetSpeciesAdj] drones. Helpers rushed to provide aid, and have removed our stricken operatives to a rudimentary care nodule.\n\nFor now, the [from.target.GetSpeciesAdj] hive is pre-occupied with tending to its more severe injuries. However, it cannot be long before Operation [from.GetName] comes under greater scrutiny - especially with two of our key agents indisposed. We are at great risk of exposure."
+ preftl_operation.3060.a:0 "Retrieve our operatives at once."
+ preftl_operation.3060.a.tt:0 "In the likelihood that we succeed, §YOperation [from.GetName]§! will resume as planned. There is a small chance of failure, with potentially dire consequences."
+ preftl_operation.3060.b:0 "We must trust that their cover will hold."
+ preftl_operation.3060.c:1 "We cannot risk this kind of exposure! Abort."
+ preftl_operation.3060.d:0 "It is time we reveal ourselves."
+ preftl_operation.3060.d.negative.tt:0 "Entrust our operatives fully to [from.target.GetSpeciesAdj] medical care. This will have a §Rnegative§! impact on §YOperation [from.GetName].§!"
+ preftl_operation.3060.d.positive.tt:0 "Entrust our operatives fully to [from.target.GetSpeciesAdj] medical care. This will have a §Gpositive§! impact on §YOperation [from.GetName].§!"
+ operation_stricken_operatives:0 "Stricken Operatives"
+ operation_stricken_operatives_desc:0 "Injuries have befallen a number of our key operatives, leading to significant delays."
+
+ preftl_operation.3061.success.desc:1 "$role_spymaster$ [from.spynetwork.leader.GetName] reports the successful extraction of our injured operatives from a care facility on [from.target.capital_scope.GetName]. As far as the [from.target.GetSpeciesNamePlural] are concerned, these 'survivors' succumbed to hidden, fatal injuries. Facsimiles of their remains are already being disposed of."
+ preftl_operation.3061.failure.desc:1 "$role_spymaster$ [from.spynetwork.leader.GetName] urgently reports a failure to extract our stricken operatives from the surface of [from.target.capital_scope.GetName]. Several [from.target.GetSpeciesAdj] witnessed what they perceived as an attempted abduction, and intervened with great prejudice. They have not only tightened security around our injured operatives, but have also apprehended members of our rescue team!\n\nThe [from.target.GetSpeciesName] are now on high alert. To some extent at least, Operation [from.GetName] has been exposed."
+ preftl_operation.3061.a:0 "Inform the [global_event_country.GetGalCommunityOrGalImperium]."
+
+ preftl_operation.3062.success.desc:0 "Our cover remains in tact. Although the near-miraculous manner in which our operatives escaped fatal injury did raise some suspicion, the [from.target.GetSpeciesNamePlural] appear to have decided that luck was simply on their side.\n\nIt will be a while yet before our agents can return to duty, however they have now been debriefed. Operation [from.GetName] may return to its prior schedule."
+ preftl_operation.3062.failure.desc.intro:1 "$role_spymaster$ [from.spynetwork.leader.GetName] urgently reports our failure to maintain cover in the [from.target.GetName]. Despite thorough training and access to the best covert technology we could provide, our operatives have been exposed as non-[from.target.GetSpeciesNamePlural]."
+ preftl_operation.3062.failure.unaware.desc:0 "$preftl_operation.3062.failure.desc.intro$\n\nThis stark realization has proven fatal for our operatives: they were undergoing rudimentary surgery when [from.target.GetSpeciesAdj] care-givers discovered their true nature, and panicked."
+ preftl_operation.3062.failure.aware.desc:0 "$preftl_operation.3062.failure.desc.intro$\n\nFortunately the locals did not panic, and our operatives remain unharmed for the time being. However, our chances of successfully disavowing them and their actions are extremely slim. It seems we must simply deal with the consequences now before us."
+ 
+## Mixed Signals
+ preftl_operation.3100.name:0 "Mixed Signals"
+ preftl_operation.3100.desc:0 "The drones of a major colony on [from.target.capital_scope.GetName] were unexpectedly roused for battle today. Our agents mistakenly applied the wrong pheromone when trying to pass off as local menial drones, which lead to a stampede. The [from.target.GetSpeciesAdj] hive appears unusually sensitive to our pre-prepared pheromones. If we orchestrate further explosive interactions between local colonies, there could be much to learn.\n\nWhat is clear is that our presence is endangering the [from.GetName] Operation. Whatever signal we send next, it must be the right one."
+ preftl_operation.3100.a:0 "Study their reaction to controlled pheromone releases."
+ preftl_operation.3100.b:0 "Keep a lid on the pheromones."
+ preftl_operation.3100.b.tt:0 "Assign more resources so our agents can fulfill the mission without risking any more incidents."
+ spynetwork_hive_no_pheromones:0 "No Pheromones"
+ spynetwork_hive_no_pheromones_desc:0 "Due to this hive's recent exposure to artificial pheromones, we have decided to limit their use for future operations."
+
+## Technological Contamination
+ preftl_operation.3105.name:0 "Technological Contamination"
+ preftl_operation.3105.desc:0 "A drone on [from.target.capital_scope.GetName] has managed to get their [from.target.species.GetHandNamePlural] on one of our measuring devices. It has already started to take our device apart; it's only a matter of time before the understanding spreads to the local hive.\n\nWe must act quickly if we wish to avoid interfering with their natural development."
+ preftl_operation.3105.a:0 "Let the drones pick at our scraps."
+ preftl_operation.3105.a.tt:0 "§Y[from.target.GetName]§!: §G+20%§! Technological Progression."
+ preftl_operation.3105.b:0 "What if we were to turn it on?"
+ preftl_operation.3105.b.tt:0 "§Y[from.target.GetName]§! will advance to their next technological age."
+ preftl_operation.3105.c:0 "Remotely detonate all the local infiltration equipment."

@@ -40,7 +40,7 @@
  TRIGGER_INTEL_STALE_NOT:0 "$INTEL|Y$ is not stale for $COUNTRY$"
  INTEL_DETAILS:1 "Current Intel: $CURRENT_INTEL|Y$ / $TARGET_INTEL|Y$"
  INTEL_TARGET_BREAKDOWN:1 "Your Intel on $TARGET_EMPIRE|Y$ will tend toward the highest of:"
- INTEL_TARGET_BREAKDOWN_CONTENT:2 "Base Intel: $FROM_MODIFIER|Y$\nDiplomatic Pacts: $FROM_DIPLO_PACTS|Y$\nFrom Trust: $FROM_TRUST|Y$\nFrom Infiltration: $FROM_SPY_NETWORK|Y$"
+ INTEL_TARGET_BREAKDOWN_CONTENT:3 "Base Intel: $FROM_MODIFIER|Y$\nDiplomatic Pacts: $FROM_DIPLO_PACTS|Y$\nFrom Trust: $FROM_TRUST|Y$\nFrom Infiltration: $FROM_SPY_NETWORK|Y$\nFrom Active Reconnaissance: $FROM_ACTIVE_RECONNAISSANCE|Y$"
  INTEL_CATEGORY_LEVEL:0 "$CATEGORY$: $LEVEL$"
  INTEL_LEVEL_0:0 "§RNone§!"
  INTEL_LEVEL_1:0 "§RLow§!"
@@ -93,6 +93,7 @@
  INTEL_INFO_intel_military_fleets:0 "Location of Military Fleets"
  INTEL_INFO_intel_military_fleet_details:1 "Ship Details"
  INTEL_INFO_intel_military_fleet_orders:0 "Current Orders of Military Fleets"
+ INTEL_INFO_intel_military_cloaked_fleets:0 "Cloaked Fleets"
  INTEL_INFO_intel_military_generals:0 "Employed Generals"
  INTEL_INFO_intel_military_starbases:0 "Location of Starbases"
  INTEL_INFO_galactic_community_vote_breakdown:0 "Galactic Community Vote Rationale"
@@ -166,7 +167,7 @@
 
  # System and UI stuff
  FIRST_CONTACT_ROLL_CHANCE_TT:0 "There is a §Y$CHANCE|0$%§! chance that the current phase will end in §Gsuccess§!.\n\nThe phase has a $INSIGHT_CHANCE|%0Y$ chance of granting §YInsights§!, which increase the chance of future phases' success."
- FIRST_CONTACT_INSIGHTS_NEEDED_TT:0 "We need $INSIGHTS|0Y$ more §YInsights§! or envoy §YSkill Points§! before we will have a chance at succeeding this phase of the investigation."
+ FIRST_CONTACT_INSIGHTS_NEEDED_TT:1 "We need $INSIGHTS|0Y$ more §YInsights§! before we will have a chance at succeeding this phase of the investigation."
  FIRST_CONTACT_CURRENT_SCORE_AND_HEADER:0 "The current score before dice roll is $SCORE|0Y$.\n\n§ERoll Outcomes:§!"
  FIRST_CONTACT_ON_ROLL_FAILED_RANGE:0 "($CHANCE|%0Y$) Result is between $MIN|0Y$ and $MAX|0Y$. Adds $CLUES|0Y$ insight(s)."
  FIRST_CONTACT_ON_ROLL_FAILED_GREATER_THAN_EQ:1 "(§Y$CHANCE|0$%§!) Result is $MIN|0Y$ or greater. Finishes chapter."
@@ -214,11 +215,13 @@
 
  # Events
  seek_friends_tt:1 "We shall seek friendly relations with the §Y[contact_empire.GetName]§!."
- seek_enemies_tt:1 "We shall prepare for hostilities with the §Y[contact_empire.GetName]§!, giving us §G+33%§! spy network growth on them."
+ seek_enemies_tt:2 "We shall prepare for hostilities with the §Y[contact_empire.GetName]§!, giving us §G+33%§! Spy Network growth on them."
  seek_enemies_tt_short:0 "We shall prepare for hostilities with the §Y[contact_empire.GetName]§!."
- seek_isolation_tt:1 "We shall seek to distance ourselves from the §Y[contact_empire.GetName]§!, giving them §R-33%§! spy network growth on us."
+ seek_isolation_tt:2 "We shall seek to distance ourselves from the §Y[contact_empire.GetName]§!, giving them §R-33%§! Spy Network growth on us."
  seek_isolation_tt_short:0 "We shall seek to distance ourselves from the §Y[contact_empire.GetName]§!."
- friendship_already_precluded:2 "As we have already acted with hostility towards the §Y[contact_empire.GetName]§!, we can dispense with the pleasantries."
+ friendship_already_precluded:3 "[contact_empire.GetPrecludedFriendshipCause]"
+ friendship_already_precluded_hostile:0 "As we have already acted with hostility towards the §Y[contact_empire.GetName]§!, we can dispense with the pleasantries."
+ friendship_already_precluded_slave_origins:0 "No friendship with former masters."
  action.1.fe_option:0 "The §Y[contact_empire.GetName]§! care little for our diplomatic maneuvering."
  hostile_first_contact_tt:0 "This will be interpreted as a §Rhostile§! action"
 
@@ -252,7 +255,7 @@
  action.1.desc_hostile_to_homicidal_04:0 "You are right to attack us, [Root.GetSpeciesNamePlural], but that will not save you: you are still our prey."
  action.1.desc_hostile_to_homicidal_05:0 "Your hostility is unfortunate. We had considered sparing you, being fellow [Root.GetSpeciesNamePlural] as you are, but it seems you will need to be... re-educated, at the very least."
 
- first_contact_start_title:0 "[This.GetFirstContactStart]"
+ first_contact_start_title:1 "$first_contact.1.name$"
  first_contact.1.name:0 "Encounter in [This.System.GetName]"
  first_contact.1.desc.base:1 "We have made first contact with mysterious aliens in the §H[This.System.GetName]§! system. For now, we have code-named them §H[This.ContactCountry.GetName]§!, until we can find out more about them."
  first_contact.1.desc.default:0 "$first_contact.1.desc.base$ If they possess a language, we must decipher it in order to establish communications."
@@ -290,7 +293,7 @@
  first_contact.50.B.machine:0 "Evaluation protocols evaluate intolerable risk."
  first_contact.50.C:0 "The dangers of ignorance are greater."
  first_contact.50.C1:0 "We must find out their secrets."
- first_contact.50.C.machine:0 "Initiating Subversion Protocols"
+ first_contact.50.C.machine:0 "Initiating Subversion Protocols."
  first_contact.50.C.tooltip:0 "§RWe will attempt to hack into their databanks to find out more about them. If they detect our attempts, they will likely be angered by this course of action.§!"
 
  first_contact.60.name:0 "Communications Received"
@@ -901,6 +904,7 @@
  fcsum_drones_2:0 "We identified the §H[This.ContactCountry.GetName]§! as dedicated mining drones whose owner has long since passed on."
  fcsum_marauders_1:0 "The §H[This.ContactCountry.GetName]§! appear to be part of a fully sapient but highly aggressive civilization."
  fcsum_pirates_1:0 "$fcsum_marauders_1$"
+ fcsum_neutrals_1:0 "What we consider to be the §H[This.ContactCountry.GetName]§! exist outside the boundaries of typical space-faring civilizations." # country tag returns a country code name, e.g. 'Zayin Aliens'
  fcsum_caravaneers_1:0 "§H[This.ContactCountry.GetName]§! were detected in a sort of caravan leading across the galaxy."
  fcsum_void_clouds_1:0 "$fcsum_critters_1$"
  fcsum_void_clouds_2:0 "The §H[This.ContactCountry.GetName]§! were identified as hostile, probably self-aware clouds of space debris."
@@ -911,9 +915,13 @@
  #Misc
  first_contact.1060.name:0 "First Contact Protocols"
  first_contact.1060.desc.base:0 "Our recent encounter with alien lifeforms has reignited - and made suddenly more urgent - the old debate on how we should approach contacting any potentially intelligent alien civilizations we may meet."
+ first_contact.1060.desc.payback.base:0 "Our first encounter with alien lifeforms left us wary of others. There's life out there, and while exploring the galaxy, we will doubtlessly meet intelligent life again. But the manner of our greeting is still up for debate."
  first_contact.1060.desc:0 "$first_contact.1060.desc.base$\n\nWhile some advocate focusing on establishing friendly relations as quickly as possible by contacting them with a message of peace, others advise caution, pointing out that we cannot know whether alien minds bear ill intent towards us and that it would be unwise to let them know too much about us before it is necessary.\n\nA third, more radical group, push for pre-emptive action against them: "With the security of all [This.GetSpeciesNamePlural] at risk," they say, "we dare not hesitate to take whatever measures necessary to gain the upper hand against any potential xeno threat.""
+ first_contact.1060.desc.payback:0 "$first_contact.1060.desc.payback.base$\n\nWhile some advocate establishing friendly relations as quickly as possible, others advise caution, pointing out that our friendly nature is exactly what led us to imprisonment and betrayal.\n\nA third, more radical group, push for pre-emptive action: "the best way to avoid a second invasion is to hit them first," they say. "No more will we bow to the will of xenos!""
  first_contact.1060.desc.xenophile:0 "$first_contact.1060.desc.base$\n\nWhile some advocate focusing on establishing friendly relations as quickly as possible by contacting them with a message of peace, others advise caution, pointing out that we cannot know whether alien minds bear ill intent towards us and that it would be unwise to let them know too much about us before it is necessary."
+ first_contact.1060.desc.payback.xenophile:0 "$first_contact.1060.desc.base.payback$\n\nWhile most of us want to believe there are kind civilizations out there, others advise caution, pointing out our friendly nature is exactly what led us to imprisonment and betrayal."
  first_contact.1060.desc.xenophobe:0 "$first_contact.1060.desc.base$\n\nWhile some advocate taking hostile pre-emptive action against them, others advise caution, pointing out that it would be wise to learn more about the aliens' capabilities before we risk antagonizing them."
+ first_contact.1060.desc.payback.xenophobe:0 "$first_contact.1060.desc.payback.base$\n\nThe response is unanimous: the best way to avoid a second invasion is to assert dominance over others before they can harm us. No more will we bow to the will of xenos!"
  first_contact.1060.desc.gestalt:0 "Our recent encounter with alien lifeforms has brought forward the need for us to decide how we should act towards any potentially intelligent alien civilizations we may meet.\n\nOne possibility would be for us to seek to establish peaceful contact with them as soon as possible by sending them the information necessary for them to translate our communications. This may, however, prove imprudent should they have hostile intentions towards us.\n\nThe safest option would be to proceed with caution and attempt to communicate with them without giving them too much information on ourselves. On the other hand, we could make more aggressive moves to both find out more about them and ward them off from our territories; however, this would be sure to antagonize them."
  first_contact.1060.A:0 "We shall greet the xeno with open arms."
  first_contact.1060.A.machine:0 "We shall greet the xeno with open arms."
@@ -1011,9 +1019,6 @@
  PlanetBio10:0 "the system's tenth planet, [This.GetAAnPlanetClass] [This.GetClassAdj] planet"
  PlanetBio10Moon:0 "[This.GetAAnPlanetClass] [This.GetClassAdj] moon of the system's tenth planet,"
 
- string_a:0 "a"
- string_an:0 "an"
-
  #Space Fauna First Contacts
  # Enclaves
  first_contact_critters.1.name:0 "Structured Signals"
@@ -1074,6 +1079,10 @@
  first_contact_critters.90.desc:0 "The vessels detected in the [This.System.GetName] system seem to be part of some sort of expedition across the galaxy, with purposes unknown. They have not made any hostile moves, nor is there any heavy weaponry in evidence. However, they have been fairly closed-mouthed, and we have been unable to pick up many signals from them. Our [This.Owner.GetLinguists] are confident that they will be able to translate their language eventually from the scraps we pick up. However, this may take quite some time."
  first_contact_critters.95.name:0 "The Nomads"
  first_contact_critters.95.desc:0 "We have managed to decipher the language of the mysterious §H[This.ContactCountry.GetName]§!. Our [This.Owner.GetLinguists] remained stumped for quite some time, and a breakthrough was only made once they began broadcasting what turns out to be a welcome message identifying them as the §H"Namarians"§! in our general direction. It appears that they are now eager to talk to us."
+ first_contact_critters.100.desc:0 "The fleet we encountered in the [This.System.GetName] system is unlike any we've seen in this region of space before. It does not appear to be aggressive, but we can only speculate as to its origin or purpose here. Our best guess is that the fleet represents a faction without formal ties to any local authority or civilization."
+ first_contact_critters.100.a:0 "Proceed with caution."
+ first_contact_critters.105.name:0 "Neutral Fleet"
+ first_contact_critters.105.desc:0 "We have reached an impasse with the fleet identifying itself as the §H[This.ContactCountry.GetRealName]§!. This unusual presence ignored most of our diplomatic overtures, but we can infer that it represents a neutral entity which stands apart from galactic civilization.\n\nWe suspect that if the fleet possess any owners in the conventional sense, it would take extraordinary measures to reach them. With this in mind, we have summarized our findings for future teams of [this.owner.GetScientistPlural] to make use of - in case such an opportunity does arise." # though we use a country tag here, the value it returns could be e.g. 'Unscrupulous Salvagers' OR 'Modified Probe', i.e. not a true country
 
  further_fc_tiyanki_completed:0 "As the [This.ContactCountry.GetName] appear to belong to the same species of space whale, our first contact process with them has been declared complete too.\n"
  further_fc_amoebas_completed:0 "As the [This.ContactCountry.GetName] appear to belong to the same species of space fauna, our first contact process with them has been declared complete too.\n"

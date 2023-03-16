@@ -16,8 +16,8 @@
 
  requires_technology_orbital_ring_tier_1:0 "$TRIGGER_FAIL$Requires the £engineering£ §Y$tech_orbital_ring_tier_1$§! technology."
  CAN_CREATE_ORBITAL_STATION_ALREADY_EXISTS_ORBITAL_DEFENCE:1 "An orbital defense station is already orbiting this $CLASS$"
- CANNOT_BOMBARD_ORBITAL_DEFENCE_PROTECTED:0 "Cannot bombard a planet that is protected by an orbital defence station"
- requires_not_hostile_or_primitive:0 "$TRIGGER_FAIL$Cannot build around hostile or primitive planets."
+ CANNOT_BOMBARD_ORBITAL_DEFENCE_PROTECTED:0 "Cannot bombard a planet that is protected by an orbital defense station"
+ requires_not_hostile_or_primitive:1 "$TRIGGER_FAIL$Cannot build around hostile or pre-FTL planets."
 
  tech_quantum_catapult:0 "Quantum Catapult"
  tech_quantum_catapult_desc:1 "A §YQuantum Catapult§! harnesses the power of a Neutron Star or Pulsar to twist the fabric of space, skipping a fleet across great distances."
@@ -46,7 +46,7 @@
  quantum_catapult_BYPASS_DESC:1 "This system contains a §Y$quantum_catapult_1$§!"
  FLEETORDER_QUANTUM_CATAPULT_HEADER:0 "Catapult Fleet"
  FLEETORDER_QUANTUM_CATAPULT_DESC:0 "Launch a fleet from a system with a §YQuantum Catapult§!."
- QUANTUM_CATAPULT_PENALTY:0 "§YQuantum Catapults§! lose accuracy with range, so fleets will appear in a random system within the indicated scatter radius."
+ QUANTUM_CATAPULT_PENALTY:1 "§YQuantum Catapults§! lose accuracy with range, so fleets will appear in a random system within the indicated scatter radius.\n\nFleets launched this way receive a [GetQuanticAmbushBonus] §YFire Rate§! increase for £time£ §Y120 days§!."
  QUANTUM_CATAPULT_MAP_TOOLTIP_LEFT_CLICK:0 "§GLeft click a system on the map to choose it as a target.§!"
  QUANTUM_CATAPULT_MAP_TOOLTIP_RIGHT_CLICK:0 "§GRight click anywhere on the map to exit selection mode.§!"
  FLEET_ORDER_NO_QUANTUM_CATAPULT:0 "§RFleets can only be catapulted from a system with a Quantum Catapult§!"
@@ -66,6 +66,11 @@
  quantum_catapult_restored_slingshot_DESC:1 "$quantum_catapult_2_DESC$"
  quantum_catapult_improved_slingshot:0 "Improved $quantum_catapult_1$"
  quantum_catapult_improved_slingshot_DESC:1 "$quantum_catapult_2_DESC$"
+
+ quantic_ambush:0 "Quantic Ambush"
+ quantic_ambush_specialists:0 "Quantic Ambush Specialists"
+ quantic_ambush_bonus_slingshot:0 "§G50%§!"
+ quantic_ambush_bonus:0 "§G33%§!"
 
  hyper_relay:0 "Hyper Relay"
  hyper_relay_plural:0 "Hyper Relays"
@@ -134,7 +139,7 @@
  FLEETORDER_ENTERING_BYPASS_EXT:1 "Transiting via $BYPASS_TYPE|H$ to $SYSTEM|H$\nProgress: $CUR|Y0$/$COST|Y0$ ( $DAYS|Y$ Days )"
  mod_relay_bypass_windup_empire_mult:1 "Reduced delays to transit speed through $hyper_relay_plural$"
  mod_relay_bypass_windup_ship_mult:1 "$mod_relay_bypass_windup_empire_mult$"
- MOD_COUNTRY_MIA_TIME_MULT:1 "Reduced time spent Missing In Action while we own $hyper_relay_plural$"
+ MOD_COUNTRY_MIA_TIME_MULT:2 "Reduced time spent Missing In Action"
  OPEN_ORBITAL_RING:0 "Open Orbital Ring"
  OPEN_PLANET_VIEW:0 "Open Planet View"
 
@@ -245,3 +250,4 @@
  mod_megastructures_hyper_relay_volatile_motes_upkeep_add:1 "£volatile_motes£ $volatile_motes$ Upkeep of $hyper_relay_plural$"
  mod_megastructures_hyper_relay_exotic_gases_upkeep_add:0 "£exotic_gases£ $exotic_gases$ Upkeep of $hyper_relay_plural$"
  mod_megastructures_hyper_relay_rare_crystals_upkeep_add:0 "£rare_crystals£ $rare_crystals$ Upkeep of $hyper_relay_plural$"
+ mod_megastructures_hyper_relay_unity_produces_add:0 "Monthly £unity£ Unity from §Y$hyper_relay_plural$§!"

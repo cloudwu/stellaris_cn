@@ -13,9 +13,9 @@
  AST_WAVELENGTHS_1_CAT:0 "Asteroid Waves"
  AST_WAVELENGTHS_1_DESC:0 "The asteroid [Root.GetName] is emitting some form of radiation in controlled bursts. Is someone - something - trying to communicate with us?"
  AST_DEBRIS_FIELD_1_CAT:0 "Debris Field"
- AST_DEBRIS_FIELD_1_DESC:0 "Sensors report a number of possible points of interest within the dense debris field surrounding [Root.GetName]."
+ AST_DEBRIS_FIELD_1_DESC:1 "Sensors report a number of possible points of interest within the dense debris field surrounding [Root.GetName]."
  HBL_LUSH_PLANET_1_CAT:0 "A Lush Planet"
- HBL_LUSH_PLANET_1_DESC:0 "[Root.GetName] is exceptionally green, and preliminary scans indicate that there might be several articles of interest on the surface."
+ HBL_LUSH_PLANET_1_DESC:1 "[Root.GetName] is exceptionally green, and preliminary scans indicate that there might be several articles of interest on the surface."
  UHB_ANCIENT_RUINS_1_CAT:0 "Monoliths"
  UHB_ANCIENT_RUINS_1_DESC:0 "Impressive structures litter [Root.GetName]'s surface, practically begging for some archaeological work."
  UHB_MOLTEN_CHART_CAT:0 "Melting"
@@ -31,7 +31,7 @@
  AST_ILLICIT_DARK_CAT:0 "Radiating Asteroid"
  AST_ILLICIT_DARK_DESC:0 "[Root.GetName] periodically spews an alarmingly eclectic mix of particles and radiation into the void."
  TOX_PURPLE_RAIN_CAT:0 "Pigment Poison"
- TOX_PURPLE_RAIN_DESC:0 "[Root.GetName]'s toxic biosphere gives the planet a unique color scheme."
+ TOX_PURPLE_RAIN_DESC:1 "[Root.GetName]'s toxic biosphere gives the planet a unique color scheme."
  FROZ_BASE_CAT:0 "Cold Wastes"
  FROZ_BASE_DESC:0 "Sensors pick up unexpected activity from an isolated point on [Root.GetName]'s frozen surface."
  FROZ_BASE2_CAT:0 "Icy Plains"
@@ -173,7 +173,7 @@
  anomaly.106.a.phobe:0 "Make a statement. Jettison the record into their sun."
  anomaly.106.a.phile:0 "You shouted into the void, and we came."
  anomaly.110.name:0 "Voices From the Past"
- anomaly.110.desc:0 "In an abandoned fortress on the surface of [From.GetName], evidently the stronghold of some long-dead race of primitives, a golden disc rests on a pedestal beneath a thick covering of spore-dust.\n\nFirst designated to be stowed away as an alien artifact of minor, possibly xeno-religious significance, an archival computer soon identifies it as the golden phonograph record originally launched with the Voyager probe."
+ anomaly.110.desc:1 "In an abandoned fortress on the surface of [From.GetName], evidently the stronghold of some long-dead race of [Owner.GetPreFTLLowerPlural], a golden disc rests on a pedestal beneath a thick covering of spore-dust.\n\nFirst designated to be stowed away as an alien artifact of minor, possibly xeno-religious significance, an archival computer soon identifies it as the golden phonograph record originally launched with the Voyager probe."
  anomaly.110.a:0 "Play it back. Now."
  anomaly.115.name:0 "Cell Cells"
  anomaly.115.desc:0 "[From.GetName] is partially hollow. Within its interior spaces sprawls a dense honeycomb structure crafted of some unknown alloy, housing containers of alien genetic material. By all appearances this is an archive of life, the genetic record of some earlier civilization come and gone. Most of the DNA is hopelessly degraded, but there is still much to learn here."
@@ -193,55 +193,56 @@
  anomaly.130.a:0 "At least no one got hurt."
  anomaly.135.name:0 "Abandoned Amusement Park"
  anomaly.135.desc:0 "The structures on [From.GetName] are not as old as we first believed. It seems to be a playground or amusement park of some sort. Science Officer [Root.GetLeaderName] notes that many of the contraptions are highly complex creations that we can learn much from and that, to the builders' alien eyes, this might have been a cutting-edge sensor array, or even a gigantic art installation.\n\nRegardless, to us [Root.Owner.GetSpeciesNamePlural], it looks mostly like a place where you would take your young and let them amuse themselves."
+
  anomaly.140.name:0 "Familiar Shrine"
- anomaly.140.desc:0 "Most of the asteroid has been laser-chiseled, with great precision, into the likeness of a small [Root.Owner.GetSpeciesName] temple, or large shrine.\n\nA shrine to the Untold, the great destroyer-deity of old [Root.Owner.GetSpeciesAdj] faiths.\n\nThe temple has been tumbling through the quiet of space for far longer than we have been capable of space-flight, which is... disturbing, at best.\n\nTerrifying at worst.\n\nNaturally, Science Officer [Root.GetLeaderName] urges us to search for more stellar objects that match the characteristics of this space-temple, and has uploaded a list of likely candidates in nearby systems to the Situation Log."
+ anomaly.140.desc:1 "Most of the asteroid has been laser-chiseled with great precision into the likeness of a small [Root.Owner.GetSpeciesName] temple: a shrine to §Ythe Untold§!, great destroyer-deity of several old [Root.Owner.GetSpeciesAdj] faiths.\n\nThe temple has been tumbling through the quiet of space for longer than we have been capable of space-flight - a finding which disturbs more than a few of our researchers.\n\nDespite the unsettling nature of this discovery, Science Officer [Root.GetLeaderName] has suggested we search for more objects matching the characteristics of this space temple. [Root.leader.GetHeSheCap] [Root.leader.GetHasHave] prepared a list of likely candidates in nearby star systems."
  anomaly.140.a:0 "Perhaps it would be best if we did not."
- anomaly.140.a.tooltip:0 "Let sleeping gods lie."
+ anomaly.140.a.tooltip:1 "§LLet sleeping gods lie.§!"
  anomaly.140.b:0 "Then a-looking we shall go."
- anomaly.140.b.tooltip:0 "Start the Old Gods event chain."
  anomaly.140.c:0 "We will not suffer this heresy."
  anomaly.140.c.tooltip:0 "Order the [Root.GetName] to raze the shrine."
  anomaly.142.name:0 "Old Gods: Approaching the Benefactress"
- anomaly.142.desc:0 "The [Root.GetName] has entered the [Root.GetStarName] system, and its crew report that a stellar object not unlike the shrine to the Untold is indeed orbiting the star."
+ anomaly.142.desc:1 "The [Root.GetName] has entered the [Root.GetStarName] system. Its crew reports the star is indeed orbited by another object not dissimilar to the shrine of the Untold."
  anomaly.142.a:0 "Let us investigate."
  anomaly.143.name:0 "Old Gods: Approaching the Undaunted"
- anomaly.143.desc:0 "The [Root.GetName] has entered the [Root.GetStarName] system, and its crew report that a stellar object not unlike the shrine to the Untold is indeed orbiting the star."
+ anomaly.143.desc:1 "The [Root.GetName] has entered the [Root.GetStarName] system, where its crew report another object in orbit bearing strong resemblance to a shrine to the Untold."
  anomaly.143.a:0 "Good work."
  anomaly.144.name:0 "Old Gods: Approaching the Percipient"
- anomaly.144.desc:0 "The [Root.GetName] has entered the [Root.GetStarName] system, and its crew report that a stellar object not unlike the shrine to the Untold is indeed orbiting the star."
  anomaly.144.a:0 "I see."
+
  anomaly.145.name:0 "What Music They Make"
- anomaly.145.desc:0 "The animals of [From.GetName], predator and prey alike, gather together as night falls and...\n\nSing.\n\nThe howls, clicks, chirps, roars and hisses are discordant to say the least, but there is a recognizable melody in there. And not a bad one either, to hear the crew of the [Root.GetName] tell it.\n\nThe non-sapient choir is obviously the work of some alien entity, and we may never know their purpose in altering the fauna of [From.GetName] in this way.\n\nWe may, however, be able to at least start to figure out how they did it."
+ anomaly.145.desc:1 "The animals of [From.GetName] - predator and prey alike - gather together as night falls and... sing.\n\nThe howls, clicks, chirps, roars and hisses seem discordant at first, but underneath lies a recognizable melody. The crew of the [Root.GetName] suggest it's even rather pleasant to hear.\n\nWe believe an external influence must have interfered in order to develop this non-sapient choir. We cannot fathom as to why, however we may be able to figure out how they did it."
  anomaly.150.name:0 "Below Zro"
- anomaly.150.desc:0 "[From.GetName] is not only an ice giant, but an ice giant made up of very unusual ices. There are pockets of Zro trapped in the within reach of the upper levels of the planet's atmosphere."
+ anomaly.150.desc:1 "[From.GetName] is not only an ice giant, but an ice giant made up of highly unusual solids. There are pockets of Zro trapped in the within reach of the upper levels of the planet's atmosphere."
  anomaly.150.a.tooltip:0 "§YZro Ice§! deposit found."
  anomaly.155.name:0 "Illicit Matter"
- anomaly.155.desc:0 "The [Root.GetName] finds a disturbing tangle of technology hidden in a deep crater on the asteroid's surface.\n\nEvidently someone has, with rather simple means, managed to stabilize a one-way wormhole, and Science Officer [Root.GetLeaderName] quickly asserts that the asteroid is the exit point. The other end opens up somewhere in uncharted space some light-years away from a black hole, and small quantities of dark matter are leaking - being siphoned - through the wormhole.\n\nWhoever set this up seems to have abandoned the operation."
+ anomaly.155.desc:1 "The [Root.GetName] finds a disturbing tangle of technology hidden in a deep crater on the asteroid's surface.\n\nEvidently someone has - by rather simplistic means - managed to stabilize a one-way wormhole. Science Officer [Root.GetLeaderName] suggests that the asteroid is an exit point. The other end opens up somewhere in uncharted space some light-years away from a black hole, and small quantities of dark matter are leaking - being siphoned - through the wormhole.\n\nWhoever set this up seems to have abandoned the operation."
  anomaly.155.a.tooltip:0 "§YDark Matter§! deposit found."
  anomaly.160.name:0 "Purple Rain"
  anomaly.160.desc:0 "Images capturing [From.GetName]'s mesmerizing purple-colored rain, taken by the [Root.GetName]'s surface exploration probes, somehow find their way into the hands of the cultural elite on [Root.Owner.Capital.GetName].\n\nWhile the discovery is of no scientific value, the evocative imagery of the colorful precipitation sparks a minor renaissance in the [Root.Owner.GetSpeciesName] art world, the positive effects of which shall be felt for years to come."
+
  anomaly.165.name:0 "Old Gods: Shrine to the Benefactress"
- anomaly.165.desc:0 "Deciphering the pictograms in the Benefactress' shrine was a much smoother process than anticipated. All linguists involved describe the language quickly "connecting" or "clicking" in their minds, despite its age and complexity.\n\nHowever, the writings are unlikely to make much sense until they are combined with the other writs associated with the rest of the quadrumvirate godhead."
+ anomaly.165.desc:1 "Deciphering the pictograms in the Benefactress' shrine went more smoothly than anticipated. The linguists assigned to the project describe these texts as somehow familiar: "clicking" easily for them, despite the grammar's age and complexity.\n\nThey note, however, these written messages alude to some truly obscure themes and contexts. We cannot fully understand their messages until they are combined with other texts associated with this quadrumvirate godhead."
  anomaly.166.name:0 "Old Gods: Shrine to the Undaunted"
- anomaly.166.desc:1 "After days of activities that can best be termed "fiddling," Science Officer [Root.GetLeaderName] has retrieved the doctrine of the Undaunted, a textile scroll coated with a sturdy plastic polymer."
+ anomaly.166.desc:2 "After days of careful, and at times excruciating effort, Science Officer [Root.GetLeaderName] has retrieved the Doctrine of the Undaunted: a humble textile scroll coated with a sturdy plastic polymer. The scroll has been brought back to the [Root.GetName] for further analysis."
  anomaly.167.name:0 "Old Gods: Shrine to the Percipient"
- anomaly.167.desc:0 "Science Officer [Root.GetLeaderName] has reported back with the [Root.GetName]'s findings at the Percipient's shrine. They recognized early on that a text in some logographic script is inlaid in the walls, heavily distorted by the layers of translucent lacquer.\n\nInitial attempts at unscrambling the text - relying on the raw processing power of the [Root.GetName]'s computers to reconstruct the text from plain images - proved fruitless, as it was simply too distorted to place in any known lingual family tree. Next, the crew of the [Root.GetName] attempted bombarding the lacquer with light of varying wavelengths and intensity, but no beneficial reactions were observed. [Root.GetLeaderName] apparently considered physically separating the lacquer from the inlaid text, but realized that the strange glyphs would doubtlessly have been made misshapen to begin with, only to assume their proper shape when viewed correctly through the lens of the lacquer.\n\nScience Officer [Root.GetLeaderName] was about to call the mission a failure when - looking up as they irritably paced along the edges of the circular space - they realized that discrete lines of cohesive text were momentarily forming before their eyes, melting away only to be replaced by new lines.\n\nNot long after, they had the ceiling, walls and floor imaged in a spiral pattern. Texts from other shrines should help us piece it all together."
+ anomaly.167.desc:1 "Science Officer [Root.GetLeaderName] has reported back from the Percipient's shrine.\n\nIts walls are inlaid with logographic script, heavily distorted by layers of a protective lacquer. Initial attempts to decipher this text failed; its grammar is too distinct from other linguistic groups we've encountered. The crew of the [Root.GetName] tried removing the protective lacquer for a clearer view, but to no avail.\n\nThe mission was about to be declared a failure when - on the cusp of an irritated outburst - [Root.GetLeaderName] suddenly began to perceive discrete lines of coherent text.\n\nIt did not take the crew long to utilize these insights as a codex. Soon they had the ceiling, walls and floor imaged in a spiral pattern: part of a broader picture which we believe may be completed using texts from the other shrines."
  anomaly.168.name:0 "Old Gods: Revelation"
- anomaly.168.desc:0 "The complete doctrine of the gods - for that is what the recovered texts have to be regarded as, dwarfing the fairy-tale scraps upon which the old [Root.GetSpeciesName] religions were founded - is as shockingly revelatory as it is revolutionary.\n\nWith only a little bit of creative interpretation, it is clear that the people of [Root.Capital.GetName] were meant for great things, guided by the strong hand of a religious leader.\n\nOur path is one to godhood, but our past is littered with prophecies unfulfilled and sin born of ignorance. Redemption is ephemeral."
+ anomaly.168.desc:1 "The complete doctrine of the gods - for that is how we believe the recovered texts should be regarded - is as revelatory to us as it is devastating to the fantasies upon which our ancient religions were founded.\n\nWhen placed within a [Root.GetSpeciesAdj]-centered context, these texts make it clear that we were meant for greatness, guided by the strong hand of a religious leader. We are destined for godhood, but our past is littered with unfulfilled prophecies and sin born of ignorance. Redemption is ephemeral."
  anomaly.168.a:0 "Suppress the findings."
- anomaly.168.a.tooltip:0 "Knowledge is power. Secret knowledge is secret power."
- anomaly.168.b:0 "Monetize the findings."
- anomaly.168.b.tooltip:0 "Some of the wealthier faith-corporations have caught wind of the affair, and are very interested."
+ anomaly.168.a.tooltip:1 "§LKnowledge is power. Secret knowledge is secret power.§!"
+ anomaly.168.b:1 "We can monetize this."
+#  anomaly.168.b.tooltip:0 "Some of the wealthier faith-corporations have caught wind of the affair, and are very interested."
  anomaly.168.c:0 "But what can we learn from this?"
- anomaly.168.c.tooltip:0 "Regardless of the veracity or validity of the sacred texts, the fact remains that we share religious concepts with some older, unknown spacefaring race."
- anomaly.168.d:0 "We walk in the footsteps of the divine!"
+#  anomaly.168.c.tooltip:0 "Regardless of the veracity or validity of the sacred texts, the fact remains that we share religious concepts with some older, unknown spacefaring race."
+ anomaly.168.d:1 "We walk in the footsteps of the Divine!"
  #anomaly.168.d.tooltip:1 "Start a religious renaissance.\nYour native population gains the §YFanatic Spiritualist§! and §YAuthoritarian§! Ethics."
- anomaly.169.name:0 "Accepting the Divine Mandate"
- anomaly.169.desc:0 "The [Root.GetSpeciesName] people cry out for someone to lead them in their new, old faith."
- anomaly.169.a:0 "We should not change how we do things."
- #anomaly.169.a.tooltip: "n/a"
- anomaly.169.b:0 "Our people deserve guidance."
- anomaly.169.b.tooltip:0 "Instantly §YREFORM GOVERNMENT§! to §YDIVINE MANDATE§!."
+#  anomaly.169.name:0 "Accepting the Divine Mandate"
+#  anomaly.169.desc:0 "The [Root.GetSpeciesName] people cry out for someone to lead them in their new, old faith."
+#  anomaly.169.a:0 "We should not change how we do things."
+#  anomaly.169.b:0 "Our people deserve guidance."
+#  anomaly.169.b.tooltip:0 "Instantly §YREFORM GOVERNMENT§! to §YDIVINE MANDATE§!."
+
  anomaly.170.name:0 "The Exile"
  anomaly.170.desc:0 "The readings originate from a small research outpost - which the [Root.Owner.GetName] has no records of establishing or indeed authorizing - on the surface of [From.GetName]. It is staffed by one [Root.Owner.GetSpeciesAdj] scientist, a fairly talented and industrious one if their research on [From.GetName] is anything to go by. There is a problem with regards to their identity however; we have been unable to match them against official state records, and they refuse to identify themselves save for stating that they are "an exile."\n\nThey have expressed an interest in returning to [Root.Owner.Capital.GetName] and serving the [Root.Owner.GetName] directly, on the condition that the [Root.GetName] immediately depart [From.GetName] and no [Root.Owner.GetSpeciesAdj] ships ever return there."
  anomaly.170.a:0 "Out of the question. Search every nook and cranny of that outpost."
@@ -824,26 +825,26 @@
  story.4.desc.gesta:0 "We have confirmed the existence of alien lifeforms on the evolutionary brink of consciousness."
 
  story.5.name:0 "Contact Report: Remnants"
- story.5.desc:1 "The [Root.GetName] is abuzz with news of the alien remnants that were recently studied.\n\nThese leavings are considered definitive proof of intelligent, purposeful alien activity at some point in the past - we may still be alone now, but we are at least not the first to be so."
- story.5.desc.phobe:1 "The administration on [Root.Capital.GetName] received the report on the alien remnants with some apprehension.\n\nThe leavings in question are now widely considered to be definitive proof of unknown forces once having been active in the galaxy, though some prominent [Root.GetSpeciesAdj] thinkers reject this in favor of identifying the traces as "freak geological formations" or "results of curious natural phenomena.""
+ story.5.desc:1 "The [Root.GetName] is abuzz with news of the alien remnants that were recently studied.\n\nThese remains are considered definitive proof of intelligent, purposeful alien activity at some point in the past - we may still be alone now, but we are at least not the first to be so."
+ story.5.desc.phobe:1 "The administration on [Root.Capital.GetName] received the report on the alien remnants with some apprehension.\n\nThe remains in question are now widely considered to be definitive proof of unknown forces once having been active in the galaxy, though some prominent [Root.GetSpeciesAdj] thinkers reject this in favor of identifying the traces as "freak geological formations" or "results of curious natural phenomena.""
  story.5.desc.phile:1 "[Root.GetSpeciesAdj] xenologists are practically falling over themselves to publish their takes on the recent findings of alien life.\n\nThis fevered storm in the scientific community has had some negative, yet temporary, impact on pursuits in other fields."
  story.5.desc.followup:1 ""Intelligent life taunts with pointed absence" reads a popular newsnet post on [Root.Capital.GetName]. The people of the [Root.GetName] are apparently finding some humor in the fact that lower forms of alien life are now a matter of public record, but potential equals from other stars continue to elude us.\n\nThe report on the traces of alien life that were recently found seemingly only add an ironic twist to the situation."
  story.5.desc.gesta:0 "We have confirmed the first material traces of intelligent alien life on a foreign world."
 
- story.6.name:0 "Contact Report: Primitives"
- story.6.desc:1 "The [Root.GetName] is abuzz with news of the primitive alien civilization found by our fleets.\n\nThey may not be capable of space-flight, but the aliens of the [primitive_planet.GetName] are quantifiably intelligent and their society shows all the hallmarks of a moderately advanced culture."
- story.6.desc.phobe:1 "News of the primitive creatures exhibiting rudimentary intelligence - the so-called civilization of [primitive_planet.GetName] - is not received well on [Root.Capital.GetName].\n\nA profound sense of unease permeates the public debate, as a vocal minority advocates establishing [Root.GetSpeciesAdj] hegemony over the alien planet by any means necessary, while most [Root.GetSpeciesNamePlural] would seemingly prefer to avoid the alien creatures or forget about them entirely."
- story.6.desc.phile:0 "The report on the primitive civilization observed by our fleets is received with something as close to exultant jubilation as the academic elite of the [Root.GetName] will allow themselves to express.\n\nHere, finally, is proof that the first tentative [Root.GetSpeciesAdj] steps into the darkness of space were not for naught. They may not be our equals, not yet, and it may be that we will not interact directly with them in our lifetimes, but their mere existence is a beacon of hope in a galaxy that otherwise appears deadened and unmoving."
+ story.6.name:1 "Contact Report: [GetPreFTLUpperPlural]"
+ story.6.desc:2 "The [Root.GetName] is abuzz with news of the [GetPreFTLLower] alien civilization found by our fleets.\n\nThey may not be capable of space-flight, but the aliens of the [primitive_planet.GetName] are quantifiably intelligent and their society shows all the hallmarks of a moderately advanced culture."
+ story.6.desc.phobe:2 "News of the [GetPreFTLLower] creatures exhibiting rudimentary intelligence - the so-called civilization of [primitive_planet.GetName] - is not received well on [Root.Capital.GetName].\n\nA profound sense of unease permeates the public debate, as a vocal minority advocates establishing [Root.GetSpeciesAdj] hegemony over the alien planet by any means necessary, while most [Root.GetSpeciesNamePlural] would seemingly prefer to avoid the alien creatures or forget about them entirely."
+ story.6.desc.phile:1 "The report on the [GetPreFTLLower] civilization observed by our fleets is received with something as close to exultant jubilation as the academic elite of the [Root.GetName] will allow themselves to express.\n\nHere, finally, is proof that the first tentative [Root.GetSpeciesAdj] steps into the darkness of space were not for naught. They may not be our equals, not yet, and it may be that we will not interact directly with them in our lifetimes, but their mere existence is a beacon of hope in a galaxy that otherwise appears deadened and unmoving."
  story.6.desc.followup5:1 "The scientific community on [Root.Capital.GetName] is excited to receive the report on intelligent alien life.\n\nThey may not be capable of space-flight, but the aliens of [primitive_planet.GetName] are quantifiably intelligent and their society shows all the hallmarks of a moderately advanced culture. Prominent xenologists note that this is an excellent opportunity to study a society perhaps not unlike the ones we have previously only found ancient remains of."
- story.6.desc.followup4:0 "The report on a primitive culture is welcomed by [Root.GetSpeciesAdj] researchers, following previous discoveries relating to pre-sapient species.\n\nAs far as we are aware the [Root.GetName] is the first civilization to take to the stars, but it is fascinating to learn that some other cultures may only be a few millennia, or possibly even centuries, behind."
- story.6.desc.followup123:1 "Effectively capping off previous discoveries of lower forms of life, the report on the primitive aliens of [primitive_planet.GetName], encountered by our fleets has reignited interest in the xenological sciences on [Root.Capital.GetName], previously considered a largely theoretical field."
- story.6.desc.gesta:0 "We have confirmed the existence of a primitive alien culture. They have yet to develop FTL capability, handicapped as they are by their fragmented individuality."
+ story.6.desc.followup4:1 "The report on a [GetPreFTLLower] culture is welcomed by [Root.GetSpeciesAdj] researchers, following previous discoveries relating to pre-sapient species.\n\nAs far as we are aware the [Root.GetName] is the first civilization to take to the stars, but it is fascinating to learn that some other cultures may only be a few millennia, or possibly even centuries, behind."
+ story.6.desc.followup123:2 "Effectively capping off previous discoveries of lower forms of life, the report on the [GetPreFTLLower] aliens of [primitive_planet.GetName], encountered by our fleets has reignited interest in the xenological sciences on [Root.Capital.GetName], previously considered a largely theoretical field."
+ story.6.desc.gesta:1 "We have confirmed the existence of a [GetPreFTLLower] alien culture. They have yet to develop FTL capability, handicapped as they are by their fragmented individuality."
 
  story.7.name:0 "Contact Report: Enigmatic Spacefarers"
  story.7.desc:0 "It did not take long for the [Root.GetName] to come across intelligent alien life.\n\nThe fleet's report to the [Root.GetSpeciesAdj] capital somewhat understates just how alien these forces appear, and only in passing mentions the failure to open comms."
  story.7.desc.phobe:0 "[Root.Capital.GetName] is in an uproar following the news of unidentified ships sighted in the void.\n\nTheir intentions unknown, it would be prudent to assume the worst."
  story.7.desc.phile:0 "The [Root.GetName] has finally encountered fellow wanderers among the stars.\n\nDespite their intentions being unknown and potentially even hostile, the atmosphere on [Root.Capital.GetName] following the report from our contact fleet can best be described as rapturous."
- story.7.desc.followup6:0 "We have now encountered intelligent life capable of space-flight.\n\nIn sharp contrast to the primitives previously observed by the [Root.GetName], we have yet to get a good look at the beings piloting the crafts that move through the dark with purpose unknown."
+ story.7.desc.followup6:1 "We have now encountered intelligent life capable of space-flight.\n\nIn sharp contrast to the [GetPreFTLLowerPlural] previously observed by the [Root.GetName], we have yet to get a good look at the beings piloting the crafts that move through the dark with purpose unknown."
  story.7.desc.followup12345:1 "News of alien ships humming through the ether has reached [Root.Capital.GetName], in many ways ending the first chapter in the book of the [Root.GetName]'s bid for a stellar empire."
  story.7.desc.mach.followup12345:0 "We have observed the passage of alien vessels capable of advanced spaceflight. While communications have not yet been established, we can confirm that we [Root.GetSpeciesNamePlural] are not the only empire in the galaxy capable of stellar exploration."
  story.7.desc.gesta:0 "We have encountered advanced alien life. Contact seems inevitable."
@@ -1053,6 +1054,7 @@
  story.501.desc.gesta:0 "The spaceborne lifeforms - which we call "§YTiyanki§!" - are docile creatures. Capable of accessing some lower dimension of subspace, they roam from system to system with remarkable ease.\n\nThey graze on gases common to the upper layers of many gas giants. It is highly unlikely, to say the least, that this is their only food source, but intake of other nutrients has yet to be observed.\n\nThey will not attack unless provoked. They can safely be ignored."
  story.501.a.spiri:0 "Venerable."
  story.501.a.mater:0 "Hunting them would be a net loss anyway."
+ story.501.a.exploratobot:0 "Docile spaceborne cataloged!"
 
  galactic_features.361.name:0 "Effluvial Offspring"
  galactic_features.361.desc:0 "Following the destruction of our fleet in the [From.From.From.GetStarName] system, the local Void Cloud appears to have gathered enough material from the debris to undergo what can best be described as a form of mitosis on the macro level - asexual reproduction.\n\nThere is now one more Void Cloud haunting [From.From.From.GetStarName]."
@@ -1068,49 +1070,70 @@
  # Uplifting Events
  ####################################
 
- uplift.6000.name:0 "Serpentine"
- uplift.6000.desc:0 "The [Root.GetName] reports that the dominant species on [From.GetName] are a race of fairly large serpents, who have risen to the top of the food-chain by virtue of their great, albeit animal, intelligence.\n\nScience Officer [Root.GetLeaderName] claims to see many similarities between their state and the latter stages of [Root.Owner.GetSpeciesName] evolution, before we became sapient.\n\nWe might be able to uplift these lesser beings, with the right technology."
+# Pre-Sapients Found
+ uplift.6000.name.1:0 "Upliftable Species Found"
+ uplift.6000.name.2:0 "Pre-Sapient Species Found"
+
+ uplift.6000.continental.desc:0 "Fascinating creatures roam the plains and coasts of [From.GetName]. The [Root.GetName] reports that the [presapient_species.GetSpeciesClass] life-forms are using tools, however limited, and may have the potential for eventually achieving sapience.\n\n[Owner.GetScientistCapital] [Root.GetLeaderName] stresses that finding alien life in this state is a rare opportunity. Should we choose to uplift them, they may prove useful."
+
+ uplift.6000.ocean.desc:0 "According to the [Root.GetName], one [presapient_species.GetSpeciesClass] species native to [From.GetName] has not only achieved a tentative mastery of the planet's vast oceans, but also the small plots of land that dot its surface.\n\n[Owner.GetScientistCapital] [Root.GetLeaderName] proposes that we should monitor their development closely, and possibly help them along the path to full sapience."
+
+ uplift.6000.tropical.desc:0 "The dense tropical foliage of [From.GetName] hides what [Owner.GetScientistCapital] [Root.GetLeaderName] of the [Root.GetName] calls a 'proto-civilization.'\n\nThe [presapient_species.GetSpeciesClass] beings that make up this nascent society are still far behind the evolutionary curve, but their social order seems to be underpinned by the beginnings of intelligible language and abstract thought.\n\n[Owner.GetScientistCapital] [Root.GetLeaderName] suggests that these particular creatures may prove a suitable testbed for technologies intended to induce rapid evolution."
+
+ uplift.6000.arid.desc:0 "One [presapient_species.GetSpeciesClass] species on [From.GetName] exhibits unusual intelligence. Throughout the planet's dry and rocky landscape, these creatures have evolved to dominate their environment. Tests run by [Owner.GetScientistCapital] [Root.GetLeaderName] of the [Root.GetName] show that their evolution can be accelerated with the application of the right technology."
+
+ uplift.6000.desert.desc:0 "Scurrying through the sands of [From.GetName], a curious form of [presapient_species.GetSpeciesClass] life exhibits many of the traits associated with the evolution of higher reasoning.\n\nWhile the species' development appears to have plateaued some millennia ago, we might be able to provide a technological impetus for evolution."
+
+ uplift.6000.savannah.desc:0 "Across the plains of [From.GetName] long, graceful creatures have been observed engaging in rudimentary forms of communication, cooperating with one another to find food and avoid the planet's predators. [Owner.GetScientistCapital] [Root.GetLeaderName] of the [Root.GetName] believes these [presapient_species.GetSpeciesClass] beings may prove suitable for technologies intended to heighten the pace of evolution."
+
+ uplift.6000.tundra.desc:0 "Harsh environments are known to propel adaptive evolution, and the frigid biosphere of [From.GetName] is no exception.\n\n[Owner.GetScientistCapital] [Root.GetLeaderName] has taken a special interest in one of the [presapient_species.GetSpeciesClass] creatures that skitter across the planet's icy face. With a push in the right direction, they may even achieve sapience."
+
+ uplift.6000.arctic.desc:0 "Although [From.GetName]'s sub-zero climate is far from hospitable, the planet is not barren.\n\nSeveral [presapient_species.GetSpeciesClass] species have evolved to withstand the environment, and [Owner.GetScientistCapital] [Root.GetLeaderName] believes that one or more of these creatures is capable of sapience, given the introduction of certain external stimuli..."
+
+ uplift.6000.alpine.desc:0 "The continent-wide mountain ranges of [From.GetName] have proven a fertile environment for the planet's unique forms of life. One [presapient_species.GetSpeciesClass] species in particular has adapted to the extreme altitude, and has even demonstrated a basic (if guttural) form of verbal communication. With the right stimuli, these creatures may prove capable of full sapience."
+
+ uplift.6000.nuked.desc:0 "While the planet is prohibitively irradiated, at least one advanced form of life flourishes on [From.GetName]. [Owner.GetScientistCapital] [Root.GetLeaderName] reports that the [presapient_species.GetSpeciesClass] creatures exhibit impressive collective decision-making skills, and that outside stimulus may spur them to even greater evolutionary heights."
+
+ uplift.6000.gaia.desc:0 "[From.GetName] is a near-perfect environment for the evolution of life; its bountiful natural resources are a fertile home for a staggering variety of flora and fauna. Within this paradise, [Owner.GetScientistCapital] [Root.GetLeaderName] has discovered a proto-society of intelligent [presapient_species.GetSpeciesClass], one that could prove an excellent candidate for rapid evolution."
+
+ uplift.6000.relic.desc:0 "Amidst the ruined towers and dusty streets of [From.GetName] roams an intriguing form of pre-sapient life. [Owner.GetScientistCapital] [Root.GetLeaderName] speculates that the small, intelligent [presapient_species.GetSpeciesClass] were once kept as pets. After the fall of their owners, these animals evolved rapidly, and are now primed to achieve full sapience, should the right external factors be applied."
+
+ uplift.6000.fallback.desc:0 "According to the [Root.GetName], one [presapient_species.GetSpeciesClass] species native to [From.GetName] has not achieved a tentative mastery of the planet's environment.\n\n[Owner.GetScientistCapital] [Root.GetLeaderName] recommended monitoring their development closely, and if possible, uplift them to full sapience."
+
  uplift.6000.a:0 "Yes, we have that knowledge."
  uplift.6000.b:0 "Something to keep in mind for the future."
- uplift.6001.name:0 "Snakeoids Uplifted"
- uplift.6001.desc:0 "Success!\n\nThe [From.GetName] native to [This.GetName] have been uplifted to become citizens of the [This.Owner.GetName]."
- uplift.6020.name:0 "Upliftable Species Found"
- uplift.6020.desc:0 "The dominant species on [From.GetName] exhibit unusual intelligence. Science Officer [Root.GetLeaderName] of the [Root.GetName] is convinced that these creatures' evolution can be accelerated by applying the right technology."
- uplift.6021.name:0 "Uplift Successful"
- uplift.6021.desc:0 "Success!\n\nThe [From.GetName] native to [This.GetName] have been uplifted to become citizens of the [This.Owner.GetName]."
- uplift.6011.a:0 "The [This.Owner.GetName] welcomes them."
- uplift.6010.name:0 "To Rise Above the Waters"
- uplift.6010.desc:0 "One species native to [From.GetName] has, according to the [Root.GetName] orbiting the planet, achieved a tentative mastery of the planet's small plots of land as well as its vast oceans.\n\nScience Officer [Root.GetLeaderName] proposes that we should monitor their development closely, and maybe even help them along if possible."
- uplift.6011.name:0 "Uplift Successful"
- uplift.6011.desc:0 "Our efforts to accelerate the evolution of the [From.GetName] along a favorable trajectory have been tremendously successful. Educational programs are in place for the specimens - individuals, now - born post-uplift, and their elders are proving receptive to psycho-genetic conditioning."
- uplift.6030.name:0 "Terra Firma"
- uplift.6030.desc:0 "Fascinating creatures roam the plains and coasts of [From.GetName]. The [Root.GetName] reports that the life-forms are using tools, however primitive, and may have the potential for eventually achieving sapience.\n\nScience Officer [Root.GetLeaderName] stresses that finding alien life in this state is a rare opportunity and we should pay special attention - maybe even uplift them to become our subjects."
- uplift.6031.name:0 "Uplift Successful"
- uplift.6031.desc:0 "The dominant species on [Root.GetName], the [From.GetName], have been uplifted. Only minor genetic alterations were needed to unlock their inherent potential for vastly improved cognitive ability and manual dexterity, and small cybernetic implants make up for the difference in the older generations."
- uplift.6040.name:0 "Welcome to the Jungle"
- uplift.6040.desc:0 "The dense tropical foliage of [From.GetName] hides what Science Officer [Root.GetLeaderName] of the [Root.GetName] calls a "proto-civilization."\n\nThe beings that make up this proto-civilization are still too far behind the evolutionary curve to even be called primitive, but their social order seems to be underpinned by the beginnings of intelligible language and abstract thought.\n\nScience Officer [Root.GetLeaderName] suggests that these particular creatures may be a suitable testbed for technologies intended induce rapid evolution."
- uplift.6041.name:0 "Uplift Successful"
- uplift.6041.desc:0 "The [From.GetName] have been successfully uplifted to become productive citizens of the [Root.Owner.GetName] and inhabitants of our colony on the tropical planet [Root.GetName]."
- uplift.6050.name:0 "Frozen Wastes"
- uplift.6050.desc:0 "Some species thrive in harsh environments, such as the chilly biosphere of [From.GetName].\n\nScience Officer [Root.GetLeaderName] has taken a special interest in one of the types of creature that skitter across the planet's face, and is of the belief that they may achieve sapience with just a push in the right direction."
- uplift.6051.name:0 "Uplift Successful"
- uplift.6051.desc:0 "The [From.GetName] are now sapient, and fairly intelligent at that.\n\nThey, and their home planet [Root.GetName], now fall under the dominion of the [Root.Owner.GetName]."
- uplift.6060.name:0 "A Species of Ice and Ice"
- uplift.6060.desc:0 "[From.GetName]'s sub-zero climate is not particularly conducive to intelligent life, or indeed life at all.\n\nHowever, some species have evolved to withstand and master this environment, and Science Officer [Root.GetLeaderName] is interested in seeing just how far these beings will go, given the introduction of some external factors..."
- uplift.6061.name:0 "Uplift Successful"
- uplift.6061.desc:0 "The [From.GetName], risen from the icy plains of [Root.GetName], have achieved sapience with [Root.Owner.GetSpeciesName] help.\n\nThey have joined our colony on their native planet [Root.GetName] as productive members of [Root.Owner.GetName] society."
- uplift.6070.name:0 "Shifting Sands"
- uplift.6070.desc:0 "Scurrying through the sands of [From.GetName], a particular set of life-forms exhibit many traits believed to be beneficial to the evolution of greater mental faculties and eventually, sapience.\n\nWhile the species' development appears to have plateaued some millennia ago, we might be able to provide a technological impetus for evolution."
- uplift.6071.name:0 "Uplift Successful"
- uplift.6071.desc:0 "The [From.GetName] now stand as living testament to the scientific and technological might of the [Root.Owner.GetName]."
- uplift.6080.name:0 "Pre-Sapient Species Found"
- uplift.6080.desc:0 "One species native to [From.GetName] has, according to the [Root.GetName] orbiting the planet, achieved a tentative mastery of the planet.\n\nScience Officer [Root.GetLeaderName] proposes that we should monitor their development closely, and maybe even help them along if possible."
- uplift.6081.name:0 "Uplift Successful"
- uplift.6081.desc:0 "The [From.GetName] now stand as living testament to the scientific and technological might of the [Root.Owner.GetName]."
- uplift.6090.name:0 "Crawling, on the Planet's Face"
- uplift.6090.desc:0 "While the planet is prohibitively irradiated, at least one advanced form of life flourishes on [From.GetName]. Arthropodal in nature, Science Officer [Root.GetLeaderName] reports that the creatures exhibit impressive collective decision-making skills, and that outside stimulus may spur them to greater evolutionary heights."
- uplift.6091.name:0 "Uplift Successful"
- uplift.6091.desc:0 "The [From.GetName] have risen, from the humblest of origins, to join the [Root.Owner.GetName]."
+
+# Pre-Sapients Uplifted
+ uplift.6010.name:1 "Uplift Successful"
+
+ uplift.6010.continental.desc:0 "The dominant species on [Root.GetName], the [From.GetName], have been uplifted. Only minor genetic alterations were needed to unlock their inherent potential for vastly improved cognitive ability and manual dexterity, while members of previous generations will be fitted with small, cybernetic implants."
+
+ uplift.6010.ocean.desc:0 "Our efforts to accelerate the evolution of the [From.GetName] along a favorable trajectory have been tremendously successful. Educational programs are in place for the youngest specimens - individuals, now - while their elders are proving receptive to psycho-genetic conditioning."
+
+ uplift.6010.tropical.desc:0 "The [From.GetName] have been successfully uplifted to become productive citizens of the [Root.Owner.GetName] and inhabitants of our colony on the tropical planet [Root.GetName]."
+
+ uplift.6010.arid.desc:0 "Success!\n\nThe [From.GetName] native to [This.GetName] have been uplifted to become citizens of the [This.Owner.GetName]."
+
+ uplift.6010.desert.desc:0 "The [From.GetName] now stand as living testament to the scientific and technological might of the [Root.Owner.GetName]."
+
+ uplift.6010.savannah.desc:0 "Our efforts to uplift the [From.GetName] have borne fruit: with some relatively minor modifications to their genetic code, we have succeeded in raising their cognitive faculties."
+
+ uplift.6010.tundra.desc:0 "The [From.GetName] are now sapient, and fairly intelligent at that.\n\nThey now fall under the dominion of the [Root.Owner.GetName]."
+
+ uplift.6010.arctic.desc:0 "The [From.GetName], risen from the icy plains of [Root.GetName], have achieved sapience with [Root.Owner.GetSpeciesName] help.\n\nThey have joined our colony on their native planet [Root.GetName] as productive members of [Root.Owner.GetName] society."
+
+ uplift.6010.alpine.desc:0 "The genetic modifications we made to the [From.GetName] have successfully raised the species to full sapience. Now, as they gaze up at the stars from their mountain homes, they do so with a true sense of themselves."
+
+ uplift.6010.nuked.desc:0 "From their humble beginnings, the [From.GetName] have risen to join the [Root.Owner.GetName]."
+
+ uplift.6010.gaia.desc:0 "Thanks to our efforts, the [From.GetName] have been successfully uplifted. What a gift, to fully understand the paradise they inhabit."
+
+ uplift.6010.relic.desc:0 "All across their ruined world, the dominant species of [Root.GetName] have awoken from their long slumber. Our efforts to uplift them to full sapience have been a resounding success."
+
+ uplift.6010.fallback.desc:0 "Uplifted to full sapience, the [From.GetName] now stand as a living testament to the scientific and technological might of the [Root.Owner.GetName]."
+
+ uplift.6010.a:1 "The [This.Owner.GetName] welcomes them."
+ uplift.6010.tt:0 "The §Y[This.Owner.GetName]§! gains §Y50 $r_influence$§!."
 
  ####################################
  # Followup Events
@@ -1179,7 +1202,7 @@
  uplift.7520.b.tooltip:0 "The grotesque creatures will not bother the colonists again.\n"
  uplift.7520.c:0 "Try to figure out where they are going."
  uplift.7525.name:0 "Lost and Forgotten"
- uplift.7525.desc:0 "A group of xenologists departed the colony together with a contingent of military personnel, tracking the movements of the native life-forms.\n\nWhat they found were the remains of some ancient seed-ship, evidently the nucleus of some small, primitive civilization, long since decayed into nothing.\n\nThe dominant native species of [Root.GetName] seem to be the product of some age-old seeding or genetic manipulation program; going by the structures surrounding the seed ship, they were once distinctly tribal, with greater intelligence and even a rudimentary written language.\n\nWe cannot begin to guess what caused their species-wide devolution, but their behavior makes more sense now. On some instinctual level they recognize us [Root.Owner.GetSpeciesNamePlural] as similar to their original uplifters from the stars. Perhaps our ordered society calls out to some instilled impulse to order, drowned out by their baser nature.\n\nMaybe we can eventually ease their evolutionary anxiety by uplifting them to our level, but for now, we have gained valuable insights into the manipulation of organics by ancient spacefaring cultures."
+ uplift.7525.desc:1 "A group of xenologists departed the colony together with a contingent of military personnel, tracking the movements of the native life-forms.\n\nWhat they found were the remains of some ancient seed-ship, evidently the nucleus of some small, [Owner.GetPreFTLLower] civilization, long since decayed into nothing.\n\nThe dominant native species of [Root.GetName] seem to be the product of some age-old seeding or genetic manipulation program; going by the structures surrounding the seed ship, they were once distinctly tribal, with greater intelligence and even a rudimentary written language.\n\nWe cannot begin to guess what caused their species-wide devolution, but their behavior makes more sense now. On some instinctual level they recognize us [Root.Owner.GetSpeciesNamePlural] as similar to their original uplifters from the stars. Perhaps our ordered society calls out to some instilled impulse to order, drowned out by their baser nature.\n\nMaybe we can eventually ease their evolutionary anxiety by uplifting them to our level, but for now, we have gained valuable insights into the manipulation of organics by ancient spacefaring cultures."
 
  ####################################
  # Event Chain-related

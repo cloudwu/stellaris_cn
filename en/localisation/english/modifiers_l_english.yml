@@ -123,7 +123,9 @@
  MOD_FIRST_CONTACT_SPEED_MULT:0 "First Contact Discovery Speed"
  MOD_FIRST_CONTACT_CLUES_ADD:0 "First Contact Skill"
  MOD_FIRST_CONTACT_DEFENSE_ADD:0 "First Contact Target Difficulty"
+ MOD_INTEL_GAIN_SPEED:0 "Speed of Intel Gain on Other Empires"
  MOD_COUNTER_INTEL_GAIN_SPEED:1 "Speed of Other Empires' Intel Gain on You"
+ MOD_INTEL_RECONNAISSANCE_LEVEL_ADD:0 "Intel level from Active Reconnaissance"
  MOD_COUNTRY_SCAVENGE_DEBRIS_MULT:0 "Resources Gained from Scavenging Debris"
  MOD_ADD_BASE_COUNTRY_INTEL:0 "Base Intel Level"
 
@@ -318,6 +320,8 @@
  MOD_SHIP_NAVAL_CAP_USAGE_MULT:0 "$MOD_SHIP_NAVAL_CAP_USAGE_ADD$"
  MOD_SHIP_REPAIR_HULL_MULT:0 "Docked Ship Hull Repair Speed"
  MOD_SHIP_REPAIR_ARMOR_MULT:0 "Docked Ship Armor Repair Speed"
+ MOD_SHIP_CLOAKING_STRENGTH_ADD:0 "Cloaking Strength"
+ MOD_SHIP_CLOAKING_DETECTION_ADD:0 "Detection Strength"
 
  MOD_OWNED_SHIP_SPEED_MULT:0 "$MOD_SHIP_SPEED_MULT$"
  MOD_OWNED_SHIP_EVASION_MULT:0 "$MOD_SHIP_EVASION_MULT$"
@@ -773,6 +777,8 @@
  mod_weapon_swarm_weapon_fire_rate_mult:0 "Prethoryn Swarm Weapon Attack Speed"
  mod_weapon_type_space_fauna_weapon_damage_mult:0 "Space Fauna Weapon Damage"
  mod_weapon_type_space_fauna_weapon_fire_rate_mult:0 "Space Fauna Weapon Attack Speed"
+ mod_weapon_archaeotech_weapon_damage_mult:0 "Archaeotech Weapon Damage"
+ mod_weapon_archaeotech_weapon_fire_rate_mult:0 "Archaeotech Weapon Attack Speed"
 
  mod_shroud_delve_cooldown:0 "Shroud Delve Cooldown"
 
@@ -879,6 +885,14 @@
 
  assist_research:0 "Research Assistance"
  assist_research_desc:1 "Planetside research facilities are assisted by a Science Ship in orbit."
+ 
+ assist_cloaking_detection:0 "Cloaking Detection Assistance"
+ assist_cloaking_detection_desc:0 "Starbase Cloaking Detection arrays are assisted by a Science Ship in orbit."
+ 
+ active_reconnaissance_speed:0 "Active Reconnaissance"
+ active_reconnaissance_speed_desc:0 "Gaining intel faster due to having a cloaked Science Ship performing Active Reconnaissance."
+ active_reconnaissance_level:0 "Active Reconnaissance"
+ active_reconnaissance_level_desc:0 "Getting intel level due to having a cloaked Science Ship performing Active Reconnaissance."
 
  previous_deal_broken:0 "Broken trade deals"
  previous_deal_ended:0 "Fulfilled trade deals"
@@ -927,6 +941,7 @@
  ship_max_damaged_effect:0 "Damaged Penalty"
  station_self_repair:0 "Self Repair"
  jump_drive_cooldown:1 "Jump Drive Cooldown"
+ cloaking_cooldown:0 "Cloaking Cooldown"
 
  ####################################
  # Pop Modifiers
@@ -1205,7 +1220,7 @@
  opinion_broke_away:0 "Breakaway State"
  opinion_broke_away_from:0 "Former Oppressors"
 
- opinion_primitive_violation:0 "Annexed Primitives"
+ opinion_primitive_violation:1 "Annexed pre-FTLs"
 
  opinion_fallen_empire_gift:0 "Given Gift"
  opinion_put_in_their_place:0 "Put in their place"
@@ -1226,6 +1241,9 @@
  opinion_shade_giver:0 "Shade-Giver"
  opinion_ceded_starbase:0 "Borders Respected"
  opinion_not_ceded_starbase:0 "Borders Disrespected"
+
+ opinion_respect_independence:0 "Independence Respected"
+ opinion_disrespect_independence:0 "Independence Disrespected"
 
  triggered_opinion_tr_versatility_universal_compatibility:0 "$tr_versatility_universal_compatibility$"
  triggered_opinion_tr_domination_star_lords:0 "$tr_domination_star_lords$"
@@ -1456,8 +1474,8 @@
  spaceport_level_5:0 ""
  spaceport_level_6:0 ""
 
- stone_age_civilization:0 "Stone Age Primitives"
- stone_age_civilization_desc:2 "This world has produced a primitive Stone Age proto-civilization."
+ stone_age_civilization:1 "Stone Age pre-FTLs"
+ stone_age_civilization_desc:3 "This world has produced a Stone Age proto-civilization."
  dead_creatures:0 "Dead Space Creatures"
  dead_creatures_desc:0 "This gas giant served as an ancient graveyard for a species of spacefaring creatures. Many corpses can still be found in orbit, offering valuable research."
  starship_graveyard:0 "Starship Graveyard"
@@ -1628,3 +1646,8 @@
  MOD_CATAPULT_RANGE_MULT:0 "Quantum Catapult Range"
  mod_quantum_catapult_megastructure_bypass_windup_mult:0 "Quantum Catapult Windup"
 
+ mod_country_society_research_cost_mult:0 "Society research Upkeep"
+ mod_country_consumer_goods_cost_mult:0 "Consumer goods upkeep"
+
+ contact_with_MSI_01:0 "TODO: add localisation"
+ contact_with_MSI_02:0 "TODO: add localisation"

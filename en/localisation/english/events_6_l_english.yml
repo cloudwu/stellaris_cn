@@ -156,7 +156,7 @@
  anomaly.6800.name:0 "Target Practice"
  anomaly.6800.desc:0 "Our sensors have discovered that the ship remnants on [From.GetName] got there in a peculiar way. The ships seem to have been intentionally driven straight into the asteroid, probably from light-years away, to test the accuracy of the designers' thrusters. As we deep-scan the remains, we pick out one ship in particular, which seems to have reasonably intact propulsion."
  anomaly.6800.a:0 "Recover that thruster!"
- anomaly.6800.b:0 "We wont waste those alloys."
+ anomaly.6800.b:1 "We won't waste those alloys."
 
  anomaly.6805.name:0 "Asteroid Sensor Relay"
  anomaly.6805.desc:0 "Hoping to discover rare resources inside [From.GetName], our [Owner.GetScientistPlural] stumbled upon something most unusual. What had appeared to be a simple asteroid was in fact a long-dormant relay station with complex electronics and advanced sensors set up to send signals back to an ancient empire. The impact also has damaged some of the asteroid's internal structure, and we can only extract one system from it."
@@ -214,7 +214,7 @@
  anomaly.6865.name:0 "Express Mail"
  anomaly.6865.desc:0 "Once [Root.GetName] got close enough to scan the cargo pod it was assumed that the sensors were malfunctioning. The pod is built out of the exact same [Owner.GetBioAlloy] we ourselves use for spacebound structures. The likelihood that some alien beings would come up with this exact mixture is beyond unlikely, yet after recalibrating the scanners the same results appeared.\n\nUpon opening the pod, the only thing greeting us was a collection of documents detailing exactly where we should assign each of our [Owner.GetScientistPlural], and what they should study for 10 years forward."
  anomaly.6865.a:0 "Send the notes back to [Owner.GetHomeWorldName]."
- anomaly.6865.b:0 "This is too unnerving."
+ anomaly.6865.b:1 "This has rattled us."
  anomaly.6870.name:0 "Closing the Loop"
  anomaly.6870.desc:0 "After years of uneasy development a rift has appeared above [Root.GetHomeWorldName]. Unnervingly this is the exact same day as the instructions we found before the end. There is only one thing to do: send the notes into the rift and forget this ever happened."
  anomaly.6870.a:0 "Let our pasts selves deal with this."
@@ -619,8 +619,8 @@
  terra.50.b:0 "No, this is not the intention for this world."
  terra.55.name:0 "Perfect Organization"
  terra.55.desc:0 "Surpassing nature is not something new for this collective. During the terraforming process of §Y[From.GetName]§!, every hill was considered, and every piece of fauna was strategically placed. The [From.GetPlanetMoon] has now ended up being a perfectly organized logistical paradise for our [Root.GetUnitDronePlural] to produce for the collective."
- terra.60.name:0 "Unearthed Primitives"
- terra.60.desc:0 "While enriching the soil and adding an atmosphere to §Y[From.GetName]§!, our [Root.GetTerraformerPlural] have made an unexpected find. Beneath the surface of [From.GetName], there exists a civilization of subterranean aliens. It must have been because of the [From.GetPlanetMoon]'s mineral density that our scanners didn't detect them before.\nThe primitives seem unaware that their surface has changed, giving us a chance to do what we will with them."
+ terra.60.name:1 "Unearthed [GetPreFTLUpperPlural]"
+ terra.60.desc:1 "While enriching the soil and adding an atmosphere to §Y[From.GetName]§!, our [Root.GetTerraformerPlural] have made an unexpected find. Beneath the surface of [From.GetName], there exists a civilization of subterranean aliens. It must have been because of the [From.GetPlanetMoon]'s mineral density that our scanners didn't detect them before.\nThe [GetPreFTLLowerPlural] seem unaware that their surface has changed, giving us a chance to do what we will with them."
  terra.60.a:0 "How quaint."
  terra.60.b:0 "So the pests scurry underground now."
  terra.60.c:0 "It's good to see that the universe is not devoid of intelligent life."
@@ -1136,12 +1136,11 @@
 
  trait_notofthisworld:0 "Not of This World"
  trait_notofthisworld_desc:0 "§BThis species is not from this universe and is degrading slowly§!."
- trait_notofthisworld_robot:0 "Not of This World"
- trait_notofthisworld_robot_desc:0 "§BThese machines are not from this universe and are degrading slowly§!."
+ trait_robot_notofthisworld:0 "Not of This World"
+ trait_robot_notofthisworld_desc:0 "§BThese machines are not from this universe and are degrading slowly§!."
  TRAIT_NOTOFTHISWORLD_EFFECT:0 "Each pop working as a slave or better produces 0.5 £physics_research£ §YPhysics Research§! per month."
 
-
-  # Singing Planet
+ # Singing Planet
 
  SINGING_PLANET_CAT:0 "Strange Readings"
  SINGING_PLANET_CAT_DESC:0 "This planet emits strange magnetic waves, quite unlike anything we have seen so far, almost as if it is trying to communicate with us. It is only logical to investigate this unusual phenomenon - we may have just encountered an extraordinary example of life on a planetary scale."
@@ -1266,7 +1265,7 @@
  colony.9245.a:0 "Proceed."
 
  colony.9250.name:0 "Foundry Heart" #starting the project
- colony.9250.desc:0 "The heart of the foundry on [Root.GetName] is a twisted machine room full of pipes, conveyor belts, and what looks like workstations. Our initial scan and a quick survey revealed that power, maintenance, and key systems are missing. It also looks like our exploration of the vault may have some effect on the internal workings of the machine. We can try to repair it, though it will be time consuming - we can always set up ascrapyard and dismantle the entire machine."
+ colony.9250.desc:1 "The heart of the foundry on [Root.GetName] is a twisted network of pipes, conveyor belts, and what appear to be workstations. A quick survey revealed that power, maintenance, and key systems are missing. There is also reason to believe that our exploration of the vault has had some effect on the internal workings of the foundry. We can try to repair it, though it will be time consuming. Alternatively, we can always set up a scrapyard and dismantle the entire machine."
  colony.9250.a:0 "Repair it." #casual
  colony.9250.a.desc:0 "We will plug the machinery into the planetary power grid and fix it."
  colony.9250.b:0 "Fix and learn." #technocracy + 1 engineering output
@@ -1354,6 +1353,7 @@
  colony.9301.desc:0 "We have gained invaluable insight into the unique weather systems of [Root.GetName]. In addition to expanding our understanding of chemical elements, our recent research has had positive implications for food production."
  colony.9301.a:0 "A positive conclusion."
  job_puddle_technician:0 "Puddle Technician"
+ job_puddle_technician_plural:0 "Puddle Technicians"
  job_puddle_technician_desc:0 "Diversification of food production is a worthwhile endeavor."
  mod_job_puddle_technician_add:0 "$job_puddle_technician$ Jobs"
  d_metallic_puddles:0 "Metallic Puddles"
@@ -1361,6 +1361,7 @@
  d_metallic_puddles_gestalt:0 "$d_metallic_puddles$"
  d_metallic_puddles_gestalt_desc:0 "Rare meteorology allows Puddle Technicians to harvest food and alloys simultaneously."
  job_puddle_technician_drone:0 "Puddle Technician Drone"
+ job_puddle_technician_drone_plural:0 "Puddle Technician Drones"
  job_puddle_technician_drone_desc:0 "Utilizing the unique meteorology to harvest additonal resources will benefit the collective."
  mod_job_puddle_technician_drone_add:0 "$job_puddle_technician_drone$ Jobs"
 

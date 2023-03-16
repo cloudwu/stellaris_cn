@@ -649,8 +649,12 @@
  tradition_subterfuge:0 "Subterfuge"
  tradition_subterfuge_desc:0 "Security lies in uncovering the secrets of others, and keeping our own well-guarded. "
  tr_subterfuge_adopt:0 "Subterfuge Traditions"
+ tr_subterfuge_adopt_desc:0 "§YSubterfuge§!-related technologies appear at §Y5§! times the normal rate."
  tr_subterfuge_finish:0 "Subterfuge Traditions Finished"
- tr_subterfuge_finish_desc:0 "Successful §YOperations§! refund §G50%§! of their Infiltration Level Cost.\nAscension Perks Unlocked: §G+1§!"
+ tr_subterfuge_finish_effect:0 "Successful §YOperations§! refund §G50%§! of their Infiltration Level Cost."
+ tr_subterfuge_finish_desc:1 "$tr_subterfuge_finish_effect$\n$TRADITIONS_FINISH_AP$"
+ tr_subterfuge_cloaking_finish:0 "$tr_subterfuge_finish$"
+ tr_subterfuge_cloaking_finish_desc:0 "$tr_subterfuge_finish_effect$\n$MOD_SHIP_CLOAKING_STRENGTH_ADD$: §G+1§!\n$TRADITIONS_FINISH_AP$"
 
  tr_subterfuge_information_security:0 "Information Security"
  tr_subterfuge_information_security_delayed:1 "Only by embracing a tradition of secrecy can we protect vital information from prying eyes. Enhanced security systems and countermeasures deny our enemies any potential advantages."
@@ -810,7 +814,7 @@
  tr_cybernetics_transubstantiation_synthesis_desc:0 "$CYBORG_ASSIMILATION_CITIZENSHIP_ENABLED$"
 
  tr_cybernetics_organ_harvesting:0 "Organ Harvesting"
- tr_cybernetics_organ_harvesting_desc:0 "Planets with ongoing §YPurges§! gain §G+10%§! £mod_pop_growth_speed£ $MOD_POP_GROWTH_SPEED$." # TODO After AUG-28923/MR!4802 create new purge type
+ tr_cybernetics_organ_harvesting_desc:0 "Planets with ongoing §YPurges§! gain §G+10%§! £mod_pop_growth_speed£ $MOD_POP_GROWTH_SPEED$."
  tr_cybernetics_organ_harvesting_delayed:0 "Those deemed unsuitable are granted purpose only once recycled."
 
  tr_cybernetics_metabolic_reprocessing:0 "Metabolic Reprocessing"
@@ -1011,7 +1015,7 @@
  no_rev_engineering:1 "§Y$operation_steal_technology$§! operations will automatically fail when used against us and §YDebris§! from our destroyed ships cannot be studied by other empires."
  allow_raiding:0 "Unlocks the §Y$bombardment_raiding$§! bombardment stance, which in turn allows us to abduct pops from besieged planets and resettle them to our own worlds."
 
- ap_defender_of_the_galaxy_effect_opinion:0 "Everyone's £opinion£ §YOpinion§! increased by §G+20§!"
+ ap_defender_of_the_galaxy_effect_opinion:1 "Everyone's £opinion£ §YOpinion§! increased by §G+200§!"
  ap_defender_of_the_galaxy_modifier_desc:0 "Damage to Endgame Crisis factions: §G+50%§!"
 
  ap_engineered_evolution:0 "Engineered Evolution"
@@ -1077,6 +1081,8 @@
  ap_colossus_desc:0 "The Colossus Project is where fevered dreams of terror and deterrence meet. A vision of the biggest ship, carrying a weapon capable of devastating entire worlds."
  ap_enigmatic_engineering:0 "Enigmatic Engineering"
  ap_enigmatic_engineering_desc:0 "Technology is simply not a way to solve a problem, but it is a language by which we ascend beyond the mundane. Lesser minds simply fail to understand our advances."
+ ap_enigmatic_engineering_cloaking:0 "$ap_enigmatic_engineering$"
+ ap_enigmatic_engineering_cloaking_desc:0 "$ap_enigmatic_engineering_desc$"
  ap_nihilistic_acquisition:0 "Nihilistic Acquisition"
  ap_nihilistic_acquisition_desc:0 "The notion of self-determination cannot be a moral absolute. Holistic goals clearly outweigh individual concerns."
  ap_transcendent_learning:0 "Transcendent Learning"

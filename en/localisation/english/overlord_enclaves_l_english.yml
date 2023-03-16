@@ -32,6 +32,7 @@
  enclave.2.desc:2 "We are debating whether or not to help set up the [fleet.GetName] as an independent §YMercenary Enclave§!. The proposal, first put forward by the fleet commanders, would result in us losing control of the fleet. We would also be responsible for providing them with a sizeable investment in §YEnergy Credits§! and §YAlloys§!. In return, they would give us a number of shares in the company. These would come with periodic dividends and special privileges.\n\nThey assure us that in times of need, they will always be ready to fight for us. And our money."
  enclave.2.tooltip.a:0 "Fleet needs an admiral"
  enclave.2.tooltip.aa:0 "Fleet has an admiral"
+ enclave.2.tooltip.cloak:0 "All ships in this fleet must be incapable of Cloaking."
  enclave.2.tooltip.b:1 "There is already an enclave here"
  enclave.2.tooltip.bb:1 "No other enclave in system"
  enclave.2.tooltip.c:0 "System must be under our control"
@@ -42,7 +43,6 @@
  enclave.2.tooltip.ee:1 "System has an asteroid or a moon"
  enclave.2.tooltip.f:0 "We must be the owner of this fleet"
  enclave.2.a.tooltip:0 "A Mercenary Enclave is founded."
- enclave.23.desc:0 "Thanks for founding us! TODO_CD" #TODO_CD
  enclave.25:0 "Mercenary Enclave Destroyed"
  enclave.25.desc:1 "Our fleet has overcome the defenses of the mercenaries in [merc_system.GetName], and their station has been blown to pieces. The rest of the [FROM.GetName] collapsed quickly after, and their remaining fleets have disbanded. While some of the surviving captains may turn to piracy, others have announced their plans to honor smaller contracts, offering logistical support or space station garrisoning. But such trifling affairs are of little consequence. The important fact is that the Mercenary Enclave is no more, and from its wreckage we have been able to salvage a sizable amount of resources."
  enclave.26.desc:1 "Word has reached us that a Mercenary Enclave has been destroyed by the [mercenary_destroyer.GetName] in [merc_system.GetName]. The aggressors proved too strong for the [FROM.GetName] to face on their own, and the station housing the Board, barracks, and their shipyards was destroyed. The mercenary fleet disbanded shortly after, as every captain was left to fend for themselves, but some representatives have stated that they will honor the company's contracts in logistics and starbase garrisoning as best they can despite the dissolution of the Company."
@@ -217,7 +217,13 @@
  enclave.2040.a.tt:0 "We will share our §Ytechnology§! with this enclave. This can only be done once every §Y10 years§!."
  merc_enclave_grants_ships:0 "§Y[mercenary_enclave_country]§! will additionally grant us a §Gsmall military fleet§!"
 
-
+ enclave.2050.name:0 "A Deal We Should Not Refuse"
+ enclave.2050.desc:0 "We have received an urgent communique from the [mercenary_enclave_country.GetName]. They say that the [khan_country.GetName] made them an offer they cannot refuse. Their only way out of the deal is to find employment elsewhere within two months. If no one hires them, they will enter the service of the Khan and have no choice but to wage total war against us."
+ enclave.2050.a:0 "Contact the [mercenary_enclave_country.GetName]."
+ enclave.2050.a.tt:0 "We have £time£ §Y60 Days§! to decide if we want to hire them or not."
+ enclave.2050.b:0 "We cannot afford it now. Maybe later."
+ enclave.2050.b.tt:0 "We have £time£ §Y7 Days§! to decide if we want to hire them or not."
+ enclave.2050.c:0 "Traitors! Their greed will be their downfall."
 
  # Salvager Enclaves
  enclave.305.name:0 "[salvager_enclave_country.GetName]"
@@ -354,7 +360,10 @@
  enclave.405.c.tt.2:1 "We need an active Spy Network to be able to ask the §Y[shroudwalker_enclave_country.GetName]§! to guide our clandestine efforts."
  enclave.405.d:1 "Tell us about §Ytravel§! via the Shroud."
  enclave.405.d.tt:1 "We need at least §Y30§! £opinion£ Opinion with the §Y[shroudwalker_enclave_country.GetName]§! in order to inquire about the §YShroud Beacon§!."
-
+ enclave.405.e:0 "Could you teach us how to harvest §YZro§!?"
+ enclave.405.e.tt:0 "We need at least §Y50§! £opinion£ Opinion with the §Y[shroudwalker_enclave_country.GetName]§! to ask about §YZro§! harvesting."
+ enclave.405.f:0 "We met someone claiming to be a §YVeilfarer§!..."
+ 
  enclave.410.desc:1 "Ah, a momentous query - no less poignant for being asked by so many before you. Such a question carries a heavy price, but we can provide answers.\n\nKnow this, however: the Shroud allows us to perceive events which have not yet come to pass, and this knowledge shall help guide your course. But it is beyond the power of any one event to alter the turning of the galaxy.\n\nIf you would strike this bargain, know that your aspirations should extend no further than to be better prepared. But oh, what grand designs may be built upon even the merest glimpse at what is to come..."
  enclave.410.a:0 "We will consider something else."
  enclave.410.b:0 "We shall pay."
@@ -896,6 +905,11 @@
 
  enclave.7105.desc:1 "To know that there is always more to know: this is the highest wisdom. A teacher will be sent to you. Learn well, and you will surely reap the rewards."
 
+ enclave.7110.desc:0 "A most interesting story. §YVeilfarer§!, you said? In some ways, this coven does resemble our own, but while these differences may appear subtle to the uninitiated, they are profound: a distorted reflection, from an universe not quite like our own.\n\nThe Shroud has many tears on its surface. Those who enter its mysteries may not always end up in the same universe from whence they started."
+ enclave.7110.a:0 "Psionic travel across dimensions... Fascinating."
+ enclave.7110.a.tooltip:0 "§PPsi Jump Drive technology§! now appears at §Y1.5§! times the normal rate."
+
+
  decision_shroudwalker_teacher:0 "Shroudwalker Teacher"
  decision_shroudwalker_teacher_desc:0 "An adept of the [shroudwalker_enclave_country.GetName] is on planet, instructing in the ways of the Shroud."
 
@@ -909,4 +923,11 @@
  shroud_beacon_active_tooltip:0 "The [Root.GetName] has an active §YShroud Beacon§!."
 
  shroudwalker_teacher_explanation:1 "\nUnlocks the §Yplanetary decision§! §H$decision_shroudwalker_teacher$§! with the following effects:\n£amenities£ $MOD_PLANET_AMENITIES_MULT$: §G+5%§!\n$mod_planet_jobs_unity_produces_mult$: §G+10%§!\n$mod_planet_telepaths_unity_produces_add$: §G+3§!"
+
+ enclave.7250.desc:0 "Zro is of particular interest to us. We could teach you the ways of harvesting and storing it, but only if you agree to give us a share of your production. In perpetuity."
+ enclave.7250.a:0 "You'll get your share. Teach us."
+ enclave.7255.desc:0 "Zro is a wonderful yet tragic substance. It has many applications, but should never be used lightly, for it is the last legacy of a most venerable species. Harvest it, treasure it, and don't forget to pay us what you owe."
+
+ shroudwalker_zro_tithe:0 "Shroudwalker Zro Tithe"
+ shroudwalker_zro_tithe_desc:0 "The [shroudwalker_enclave_country.GetName] taught us how to harvest Zro. In exchange, we have sworn to give them a tenth of all our Zro production."
 

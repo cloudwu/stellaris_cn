@@ -29,7 +29,7 @@
  first_contact.4000.desc.payback:0 "在§H[This.System.GetName]§!遭遇的外星飞船上得到的数据让我们不寒而栗。它的外观我们再熟悉不过了，上面的徽章宛如我们恐惧的象征：§H$NAME_MSI_country$§!的带翼图章。\n\n我们找到了曾经的侵略者。他们发现我们这些舰船的身份只是时间的问题，因为使用的完全都是他们的科技。新的接触不可避免，但我们绝不会重复过去的错误。"
  first_contact.4000.a.bs:0 "令人恼火。"
  first_contact.4000.a.payback:0 "我们必须严阵以待。"
- first_contact.4000.a.tooltip: "Starts the §YSecond Contact§! process with the §Y$NAME_MSI_country$§!." # TODO
+  first_contact.4000.a.tooltip: "开始与§Y$NAME_MSI_country$§!的§Y二次接触§!。"
 
  #############################
  # Payback Origin
@@ -271,21 +271,21 @@
  payback_debt_collectors_chain_empty:0 ""
 
  payback_make_them_pay_swords_chain_title:0 "扳平比分"
- payback_make_them_pay_swords_chain_desc:1 "是时候对我们的前主人，$NAME_MSI_country$进行复仇了。\n\n我们不再是那个任他们竭泽而渔的天真种族了。最终，他们会为此付出代价的。" 
- payback_make_them_pay_swords_chain_desc_MSI: "It's time for us to retaliate against our former masters, the $NAME_MSI_country$.\n\nWe are no longer the naive world they so readily exploited. In the end, they will be made to pay.\n\n§LWin a war against the §H$NAME_MSI_country$§! using the §Y$casus_belli_cb_payback$§! Casus Belli.§!" # TODO
- payback_make_them_pay_swords_chain_desc_no_MSI: "Our plans to retaliate against our former masters, the $NAME_MSI_country$, have been twarted by the [event_target:payback_stole_revenge_country.GetName].\n\nThey will be made to pay for stealing our revenge.\n\n§LWin a war against the §H[event_target:payback_stole_revenge_country.GetName]§! using the §Y$casus_belli_cb_payback$§! Casus Belli.§!" # TODO
+ payback_make_them_pay_swords_chain_desc:1 "[GetPaybackChainDescSwords]"
+ payback_make_them_pay_swords_chain_desc_MSI: "是时候对我们的前主人，$NAME_MSI_country$进行复仇了。\n\n我们不再是那个任他们竭泽而渔的天真种族了。最终，他们会为此付出代价的。\n\n§L使用§Y$casus_belli_cb_payback$§!战争理由，赢得对§H$NAME_MSI_country$§!的战争。§!"
+  payback_make_them_pay_swords_chain_desc_no_MSI: "我对前主人$NAME_MSI_country$的复仇计划被[event_target:payback_stole_revenge_country.GetName]干扰了。\n\n他们会因阻碍我们的复仇而付出代价。\n\n§L使用§Y$casus_belli_cb_payback$§!战争理由，赢得对§H[event_target:payback_stole_revenge_country.GetName]§!的战争§!"
 
  payback_make_them_pay_words_chain_title:0 "扳平比分"
- payback_make_them_pay_words_chain_desc: "是时候对我们的前主人，$NAME_MSI_country$进行复仇了。\n\n在银河共同体的参议院，我们会让他们屈膝求饶，让众人认清他们奴隶贩子和懦夫的本来面目。"
- payback_make_them_pay_words_chain_desc_MSI:0 "It's time for us to retaliate against our former masters, the $NAME_MSI_country$.\n\nOn the Senate Floor of the Galactic Community, we will bring them to their knees, exposing them for the slavers and cowards that they are." # TODO
- payback_make_them_pay_words_chain_desc_no_MSI: "Our former masters are no more, but our goal doesn't change: on the Senate Floor of the Galactic Community, we will fight all those who wish to exploit pre-FTL civilizations." # TODO
+ payback_make_them_pay_words_chain_desc: "[root.GetPaybackChainDescWords]"
+ payback_make_them_pay_words_chain_desc_MSI:0 "是时候对我们的前主人，$NAME_MSI_country$进行复仇了。\n\n在银河共同体的参议院，我们会让他们屈膝求饶，让众人认清他们奴隶贩子和懦夫的本来面目。"
+ payback_make_them_pay_words_chain_desc_no_MSI: “我们以前的主人不在了，但我们的目标没有改变：在银河共同体的参议院，我们将继续与那些企图奴役前超光速文明的人战斗。”
 
  # We need two variants with identical loc so we can set different goals for them (passing Equal Standing Act or Non-Interference)
  payback_make_them_pay_words_1_chain_title:0 "$payback_make_them_pay_words_chain_title$"
- payback_make_them_pay_words_1_chain_desc:1 "$payback_make_them_pay_words_chain_desc$\n\n§LPass the §Y$resolution_pre_ftl_stances_equal_standing$§! and all four §YEconomic Sanction§! types (Economic, Administrative, Research, Military).§!"
+ payback_make_them_pay_words_1_chain_desc:1 "$payback_make_them_pay_words_chain_desc$\n\n§L通过§Y$resolution_pre_ftl_stances_equal_standing$§!和全部四种§Y经济制裁§!（经济、行政、科研、军事）。§!"
 
  payback_make_them_pay_words_2_chain_title:0 "$payback_make_them_pay_words_chain_title$"
- payback_make_them_pay_words_2_chain_desc:1 "$payback_make_them_pay_words_chain_desc$\n\n§LPass the §Y$resolution_pre_ftl_stances_non_interference$§! and all four §YEconomic Sanction§! types (Economic, Administrative, Research, Military).§!"
+ payback_make_them_pay_words_2_chain_desc:1 "$payback_make_them_pay_words_chain_desc$\n\n§L通过§Y$resolution_pre_ftl_stances_non_interference$§!和全部四种§Y经济制裁§!（经济、行政、科研、军事）。§!"
  equal_standing_passed:0 "通过平等地位法案"
  non_interference_passed:0 "通过不干涉法案"
  sanctions_passed:0 "通过制裁"
@@ -305,14 +305,14 @@
  payback_no_revenge_small_desc: "$payback_no_revenge_desc$"
  payback_underdog:0 "困兽"
  payback_underdog_desc:0 "大国咬我们，我们就狠狠地咬回去。"
- payback_underdog_tooltip:1 "Damage to Endgame Crisis factions: §G+20%§!" # TODO
+ payback_underdog_tooltip:1 "对终末危机伤害: §G+20%§!"
  payback_student:0 "认证教育家"
  payback_student_desc:0 "曾经的学生，如今成为了大师。"
- payback_student_tooltip: "Technological Enlightenment effectiveness: §G+25%§!." # TODO
+ payback_student_tooltip: "技术启蒙效果: §G+25%§!."
 
  # Casus Belli/war goal
  casus_belli_cb_payback:0 "血债血偿"
- casus_belli_cb_payback_acquire_hint: "\n§EThe §Y$casus_belli_cb_payback$§! §HCasus Belli§! is granted when the target of our revenge is not our Overlord.§!" # TODO
+  casus_belli_cb_payback_acquire_hint: "\n§E§Y$casus_belli_cb_payback$§! 当我们的复仇对象不是我们的主人时获得§H宣战理由§!。§!"
 
  war_goal_wg_payback_wipe_them_out:0 "消灭威胁"
  war_goal_wg_payback_wipe_them_out_desc:0 "战争的目的是为了终结某个威胁到我们帝国的势力。\n\n§R这场战争不存在维持现状情况下的和平：我们要么胜利，要么屈服。§!"
@@ -332,7 +332,7 @@
  casus_belli_cb_payback_punishment:0 "$casus_belli_cb_fe_punishment$"
  war_goal_wg_payback_stop_atrocities:0 "$war_goal_wg_fe_stop_atrocities$"
  war_goal_wg_payback_stop_atrocities_desc:0 "$war_goal_wg_fe_stop_atrocities_desc$"
- wg_payback_stop_atrocities_accept: "§Y[From.GetName]§!'s policies are forcibly changed:\n- Slavery is prohibited\n- Purge is prohibited\n- Pre-FTL Interference is set to Non-Interference" # TODO
+ wg_payback_stop_atrocities_accept: "§Y[From.GetName]§!的政策被强制变更:\n- 禁止奴役\n- j禁止净化\n- 禁止前超光速文明干涉" 
 
  # Starting event
  origin.4010.name:0 "账单"
@@ -400,17 +400,17 @@
  origin.4030.name:0 "收债人"
  origin.4030.desc.base:0 "亲爱的[owner.GetName]，\n\n我们再次联系你，代表§Y$NAME_MSI_country$§!商讨关于你们欠债的事。"
  origin.4030.desc.energy:0 "$origin.4030.desc.base$\n\n根据我们之间的协定，我们这次将收缴总额为§G5000§! £energy£ §H$energy$§!的费用来偿还你的债务。"
- origin.4030.desc.consumer_goods:0 "$origin.4030.desc.base$\n\nAs per our agreement, we are here to collect a sum equal to §R2500§! £consumer_goods£ §H$consumer_goods$§! for the repayment of your debt." # TODO
- origin.4030.desc.alloys:0 "$origin.4030.desc.base$\n\nAs per our agreement, we are here to collect a sum equal to §R1250§! £alloys£ §H$alloys$§! for the repayment of your debt." # TODO
+ origin.4030.desc.consumer_goods:0 "$origin.4030.desc.base$\n\n根据我们之间的协定，我们这次将收缴总额为§R2500§! £consumer_goods£ §H$consumer_goods$§!用于偿还你们的债务。"
+ origin.4030.desc.alloys:0 "$origin.4030.desc.base$\n\n根据我们之间的协定，我们这次将收缴总额为§R1250§! £alloys£ §H$alloys$§!用于偿还你们的债务。"
  origin.4030.desc.pops:0 "$origin.4030.desc.base$\n\n根据我们之间的协定，我们这次将收缴总共§B 5 £pops£ 人口§!，通过尽心尽力的劳动来偿还你的债务。"
  origin.4030.desc.defeated:0 "亲爱的[owner.GetName]，\n\n我们再次代表§H$NAME_MSI_country$§!就债务未偿一事与你联系。我们只希望和平解决此事，同时希望贵方更愿意参与建设性的对话。"
  origin.4030.desc.furious:0 "亲爱的[owner.GetName]，\n\n这是我们的最后警告：你欠§H$NAME_MSI_country$§!的债务亟需偿还。尽管我们多次试图和平解决此事，你始终没有表达出合作的意愿。如果你再次拒绝执行偿还计划，我们将别无选择，只能采取所有必要的手段收缴你的资产。"
  origin.4030.a:0 "我们很乐意协商解决问题。"
  origin.4030.b:1 "这是你所要求的能量币。"
  origin.4030.c:0 "好好对待我们的人民。"
- origin.4030.c.tooltip: "Lose §B2 £pops£ Pops§!" # TODO
+ origin.4030.c.tooltip: "损失 §B2 £pops£ 人口§!"
  origin.4030.d:0 "这里是一些……劳力。"
- origin.4030.d.tooltip: "Lose §B2 £pops£ Slaves! " # TODO
+ origin.4030.d.tooltip: "损失 §B2 £pops£ 奴隶! "
  origin.4030.e:0 "我们没法支付。"
  origin.4030.f:0 "我们不会支付。"
  origin.4030.g:0 "抱歉，能再说一遍你是谁吗？"
@@ -739,7 +739,7 @@
  origin.5035.name:0 "数据挖掘"
  origin.5035.desc:0 "损坏的计算机核心已经完全修好了，尽管多数的数据是加密的，但破译工作已经开始。只要我们愿意花费时间和人力物力，我们迟早能获得包括我们原母星的位置在内的所有信息。\n\n事实上，我们已经得到了一些对我们有利的东西：通过对运奴船所运行的超空间航道扩张进行三角定位，我们发现了$NAME_MSI_country$在星系中的坐标。\n\n我们现在有机会去会会我们的前主人，或者是由他们自生自灭。"
 
- origin.5035.desc.MSInocontact: "$origin.5035.desc$\n\nIn fact, we may have already learned something to our advantage: by triangulating the hyperlane dilations along the slaver ship's flight path, we have uncovered the galactic coordinates of $NAME_MSI_country$.\n\nWe now have the choice, either to confront our former masters, or leave them to their fate." # TODO
+ origin.5035.desc.MSInocontact: "$origin.5035.desc$\n\n事实上，我们可能已经获得对我们有用的东西：沿着奴隶飞船超空间航道的变化进行三角测量，我们已经发现了$NAME_MSI_country$d的银行系坐标。\n\nw我们现在可以选择，直面我们以前的主人，或者让他们自生自灭。" 
 
  BROKEN_SHACKLES_PROJECT_01:0 "定位母星"
  BROKEN_SHACKLES_PROJECT_01_DESC:0 "我们已经完全解密了这艘坠毁殖民船中的文档，现在，我们已能够精准确定我们的母星在银河中的位置。"
@@ -1701,10 +1701,10 @@
  unsophisticated_plural_lower:0 "$unsophisticated_lower$" # plural adjective
 
 # Random Compass Directions
- northern: "northern" # TODO
- southern: "southern" # TODO
- eastern: "eastern" # TODO
- western: "western" # TODO
+ northern: "北方"
+ southern: "南方"
+ eastern: "东方"
+ western: "西方"
 
  ## Observation Events
  fircon.1256.name:0 "温顺好生养"

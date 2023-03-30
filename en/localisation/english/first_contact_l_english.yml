@@ -29,7 +29,7 @@
  first_contact.4000.desc.payback:0 "Data on the alien vessels we encountered in the §H[This.System.GetName]§! was met with a shudder of recognition. Familiar ship designs, marked by an emblem we learned to fear: the winged logo of the §H$NAME_MSI_country$§!.\n\nOur former invaders have been found. It's only a matter of time until they realize the ships they sighted are ours, fueled by their own technology. A new contact may be unavoidable, but we can avoid repeating past errors."
  first_contact.4000.a.bs:0 "Infuriating."
  first_contact.4000.a.payback:0 "We have to get ready."
- first_contact.4000.a.tooltip: "Starts the §YSecond Contact§! process with the §Y$NAME_MSI_country$§!."
+ first_contact.4000.a.tooltip:0 "Starts the §YSecond Contact§! process with the §Y$NAME_MSI_country$§!."
 
  #############################
  # Payback Origin
@@ -261,24 +261,24 @@
 
  # Event chains
  payback_debt_collectors_chain_title:0 "Debt Collectors"
- payback_debt_collectors_chain_desc:0 "Our former masters claim we owe them war reparations. An intergalactic debt collection agency has been hired to settle the matter.\n\n[root.GetDebtCollectorsDeal]\n\n§LThe debt collectors will visit us on§! §Y[root.payback_debt_collectors_timer]§!"
- payback_debt_collectors_chain_energy:0 "We agreed to pay §R5000§! £energy£ §H$energy$§! every 15 years."
+ payback_debt_collectors_chain_desc:1 "Our former masters claim we owe them war reparations. An intergalactic debt collection agency has been hired to settle the matter.\n\n[root.GetDebtCollectorsDeal]\n\n§LThe debt collectors will visit us on§! §Y[root.payback_debt_collectors_timer]§!"
+ payback_debt_collectors_chain_energy:1 "We agreed to pay §R5000§! £energy£ §H$energy$§! every 15 years."
  payback_debt_collectors_chain_consumer_goods:1 "We agreed to pay §R2500§! £consumer_goods£ §H$consumer_goods$§! every 15 years."
  payback_debt_collectors_chain_alloys:1 "We agreed to pay §R1250§! £alloys£ §H$alloys$§! every 15 years."
- payback_debt_collectors_chain_pops:0 "We agreed to give the debt collectors §B2 £pops£ Pops§! every 15 years."
+ payback_debt_collectors_chain_pops:1 "We agreed to give the debt collectors §B2 £pops£ Pops§! every 15 years."
  payback_debt_collectors_chain_refused_won:0 "We refused to strike a deal, fought the debt collectors, and won. But they will be back."
  payback_debt_collectors_chain_refused_lost:0 ""We refused to strike a deal, fought the debt collectors, and lost. They will be back."
  payback_debt_collectors_chain_empty:0 ""
 
  payback_make_them_pay_swords_chain_title:0 "Even The Score"
  payback_make_them_pay_swords_chain_desc:1 "[GetPaybackChainDescSwords]"
- payback_make_them_pay_swords_chain_desc_MSI: "It's time for us to retaliate against our former masters, the $NAME_MSI_country$.\n\nWe are no longer the naive world they so readily exploited. In the end, they will be made to pay.\n\n§LWin a war against the §H$NAME_MSI_country$§! using the §Y$casus_belli_cb_payback$§! Casus Belli.§!"
- payback_make_them_pay_swords_chain_desc_no_MSI: "Our plans to retaliate against our former masters, the $NAME_MSI_country$, have been twarted by the [event_target:payback_stole_revenge_country.GetName].\n\nThey will be made to pay for stealing our revenge.\n\n§LWin a war against the §H[event_target:payback_stole_revenge_country.GetName]§! using the §Y$casus_belli_cb_payback$§! Casus Belli.§!"
+ payback_make_them_pay_swords_chain_desc_MSI:0 "It's time for us to retaliate against our former masters, the $NAME_MSI_country$.\n\nWe are no longer the naive world they so readily exploited. In the end, they will be made to pay.\n\n§LWin a war against the §H$NAME_MSI_country$§! using the §Y$casus_belli_cb_payback$§! Casus Belli.§!"
+ payback_make_them_pay_swords_chain_desc_no_MSI:0 "Our plans to retaliate against our former masters, the $NAME_MSI_country$, have been twarted by the [event_target:payback_stole_revenge_country.GetName].\n\nThey will be made to pay for stealing our revenge.\n\n§LWin a war against the §H[event_target:payback_stole_revenge_country.GetName]§! using the §Y$casus_belli_cb_payback$§! Casus Belli.§!"
 
  payback_make_them_pay_words_chain_title:0 "Even The Score"
- payback_make_them_pay_words_chain_desc: "[root.GetPaybackChainDescWords]"
+ payback_make_them_pay_words_chain_desc:0 "[root.GetPaybackChainDescWords]"
  payback_make_them_pay_words_chain_desc_MSI:0 "It's time for us to retaliate against our former masters, the $NAME_MSI_country$.\n\nOn the Senate Floor of the Galactic Community, we will bring them to their knees, exposing them for the slavers and cowards that they are."
- payback_make_them_pay_words_chain_desc_no_MSI: "Our former masters are no more, but our goal doesn't change: on the Senate Floor of the Galactic Community, we will fight all those who wish to exploit pre-FTL civilizations."
+ payback_make_them_pay_words_chain_desc_no_MSI:0 "Our former masters are no more, but our goal doesn't change: on the Senate Floor of the Galactic Community, we will fight all those who wish to exploit pre-FTL civilizations."
 
  # We need two variants with identical loc so we can set different goals for them (passing Equal Standing Act or Non-Interference)
  payback_make_them_pay_words_1_chain_title:0 "$payback_make_them_pay_words_chain_title$"
@@ -288,7 +288,7 @@
  payback_make_them_pay_words_2_chain_desc:1 "$payback_make_them_pay_words_chain_desc$\n\n§LPass the §Y$resolution_pre_ftl_stances_non_interference$§! and all four §YEconomic Sanction§! types (Economic, Administrative, Research, Military).§!"
  equal_standing_passed:0 "Equal Standing Act passed"
  non_interference_passed:0 "Non-Interference Act passed"
- sanctions_passed:0 "Sanction types passed"
+ sanctions_passed:1 "Sanction types passed"
 
  # Debt Collectors
  NAME_Debt_Collectors:0 "Debt Collectors"
@@ -301,18 +301,20 @@
  payback_revenge_words_desc:0 "Even the mightiest empire will bend under the weight of Justice."
  payback_no_revenge:0 "Free From Strife"
  payback_no_revenge_desc:0 "We must give peace a chance to flourish."
- payback_no_revenge_small: "$payback_no_revenge$"
- payback_no_revenge_small_desc: "$payback_no_revenge_desc$"
+ payback_no_revenge_small:0 "$payback_no_revenge$"
+ payback_no_revenge_small_desc:0 "$payback_no_revenge_desc$"
  payback_underdog:0 "Underdog"
  payback_underdog_desc:0 "When a bigger empire bites, we bite back."
  payback_underdog_tooltip:1 "Damage to Endgame Crisis factions: §G+20%§!"
+ payback_underdog_khan:0 "$payback_underdog$"
+ payback_underdog_khan_desc:0 "$payback_underdog_desc$"
  payback_student:0 "Certified Educator"
  payback_student_desc:0 "The student becomes the master."
- payback_student_tooltip: "Technological Enlightenment effectiveness: §G+25%§!."
+ payback_student_tooltip:0 "Technological Enlightenment effectiveness: §G+25%§!."
 
  # Casus Belli/war goal
  casus_belli_cb_payback:0 "Payback"
- casus_belli_cb_payback_acquire_hint: "\n§EThe §Y$casus_belli_cb_payback$§! §HCasus Belli§! is granted when the target of our revenge is not our Overlord.§!"
+ casus_belli_cb_payback_acquire_hint:0 "\n§EThe §Y$casus_belli_cb_payback$§! §HCasus Belli§! is granted when the target of our revenge is not our Overlord.§!"
 
  war_goal_wg_payback_wipe_them_out:0 "End Threat"
  war_goal_wg_payback_wipe_them_out_desc:0 "War is waged to end a threat against our own empire.\n\n§RThere will be no Status Quo peace in this war: we either win, or we succumb.§!"
@@ -332,7 +334,7 @@
  casus_belli_cb_payback_punishment:0 "$casus_belli_cb_fe_punishment$"
  war_goal_wg_payback_stop_atrocities:0 "$war_goal_wg_fe_stop_atrocities$"
  war_goal_wg_payback_stop_atrocities_desc:0 "$war_goal_wg_fe_stop_atrocities_desc$"
- wg_payback_stop_atrocities_accept: "§Y[From.GetName]§!'s policies are forcibly changed:\n- Slavery is prohibited\n- Purge is prohibited\n- Pre-FTL Interference is set to Non-Interference"
+ wg_payback_stop_atrocities_accept:0 "§Y[From.GetName]§!'s policies are forcibly changed:\n- Slavery is prohibited\n- Purge is prohibited\n- Pre-FTL Interference is set to Non-Interference"
 
  # Starting event
  origin.4010.name:0 "The Bill"
@@ -362,7 +364,7 @@
  origin.4016.e.tooltip:1 "Pledge to give §R1250§! £alloys£ §H$alloys$§! to the debt collectors upon their return."
 
  # Agreed to pay
- origin.4017.desc:0 "Splendid! We are pleased we managed to reach an agreement so quickly. We will return in §Y15 years§! to collect the first installment and ensure you're happy with the terms.\n\nHave a nice day!"
+ origin.4017.desc:1 "Splendid! We are pleased we managed to reach an agreement so quickly. We will return in §Y15 years§! to collect the first installment and ensure you're happy with the terms.\n\nHave a nice day!"
  origin.4017.a.tooltip:0 "The debt collectors will return on §Y[root.payback_debt_collectors_timer]§!."
 
  # Pay with something else
@@ -392,7 +394,7 @@
 
  # Refuse to pay - lost battle
  origin.4025.name:0 "Seizing Assets"
- origin.4025.desc:0 "After our fleet was defeated, the debt collectors raided [PLANET.GetName], kidnapping a number of our people. Even more galling than the defeat was the 'invoice' they left behind, informing us that the seized population will be put to work to repay our 'debt.' We should be grateful, the collectors say, that our people will be returned once the debt is settled. This should only take 29,637 years or so."
+ origin.4025.desc:1 "After our fleet was defeated, the debt collectors raided [PLANET.GetName], kidnapping a number of our people. Even more galling than the defeat was the 'invoice' they left behind, informing us that the seized population will be put to work to repay our 'debt.' We should be grateful, the collectors say, that our people will be returned once the debt is settled. This should only take 29,637 years or so."
  origin.4025.a:0 "Next time we will be ready."
  origin.4025.a.tooltip:0 "Lost §B5 £pops£ Pops§! to the Debt Collectors.\n\nThe debt collectors will return on §Y[root.owner.payback_debt_collectors_timer]§!."
 
@@ -408,20 +410,20 @@
  origin.4030.a:0 "We are willing to settle."
  origin.4030.b:1 "Here is the payment you requested."
  origin.4030.c:0 "Treat our people well."
- origin.4030.c.tooltip: "Lose §B2 £pops£ Pops§!"
+ origin.4030.c.tooltip:0 "Lose §B2 £pops£ Pops§!"
  origin.4030.d:0 "Here are some... workers."
- origin.4030.d.tooltip: "Lose §B2 £pops£ Slaves! "
+ origin.4030.d.tooltip:0 "Lose §B2 £pops£ Slaves§!"
  origin.4030.e:0 "We can't pay."
  origin.4030.f:0 "We won't pay."
  origin.4030.g:0 "Sorry, who are you again?"
  origin.4030.h:0 "We know who you are: victims. Like us."
 
  # Pay
- origin.4031.desc:0 "Thank you for your prompt response and your willingness to settle the matter equitably! The outstanding sum is now equal to §Y[owner.debt_collectors_amount]§! £energy£ §H$energy$§!. We will be back in 15 years to collect the next installment. Have a nice day!"
+ origin.4031.desc:1 "Thank you for your prompt response and your willingness to settle the matter equitably! The outstanding sum is now equal to §Y[owner.debt_collectors_amount]§! £energy£ §H$energy$§!. We will be back in 15 years to collect the next installment. Have a nice day!"
  origin.4031.a:0 "The outstanding sum is higher than expected."
 
  # You got scammed
- origin.4032.desc:0 "As indicated in the small print, standard interest rates are applied. If you continue with your payments at the current rate, you will be able to repay your debt in exactly 29,637 years."
+ origin.4032.desc:1 "As indicated in the small print, standard interest rates are applied. If you continue with your payments at the current rate, you will be able to repay your debt in exactly 29,637 years."
  origin.4032.a:0 "..."
 
  # Can't pay - energy
@@ -489,7 +491,7 @@
 
  # MSI defeated by someone else - fires after action.62
  origin.4070.name:0 "Debt Forgiven"
- origin.4070.desc:0 "$origin.4060.intro$ Now the $NAME_MSI_country_initials$ is gone, crushed by another [root.species.GetHandName].\n\nOur skies may be clear, but our people are still possessed by an insatiable need:\n\n§RRevenge.§!"
+ origin.4070.desc:1 "$origin.4060.intro$ Now the $NAME_MSI_country_initials$ is gone, crushed by another [root.species.GetHandName].\n\nOur skies may be clear, but our people are still possessed by an insatiable need:\n\n§RRevenge.§!"
  origin.4070.a:0 "Let it go."
  origin.4070.b:0 "Our cause is still worth fighting."
  origin.4070.b.tooltip:0 "We'll keep fighting to ban the exploitation of pre-FTLs."
@@ -739,7 +741,7 @@
  origin.5035.name:0 "Data Mine"
  origin.5035.desc:0 "The damaged computer core has been fully repaired, and while most of the data is encoded, decryption efforts are already underway. If we're willing to put in the time and allocate the resources, it's only a matter of time before we have access to everything - including the location of our former home worlds."
 
- origin.5035.desc.MSInocontact: "$origin.5035.desc$\n\nIn fact, we may have already learned something to our advantage: by triangulating the hyperlane dilations along the slaver ship's flight path, we have uncovered the galactic coordinates of $NAME_MSI_country$.\n\nWe now have the choice, either to confront our former masters, or leave them to their fate."
+ origin.5035.desc.MSInocontact:0 "$origin.5035.desc$\n\nIn fact, we may have already learned something to our advantage: by triangulating the hyperlane dilations along the slaver ship's flight path, we have uncovered the galactic coordinates of $NAME_MSI_country$.\n\nWe now have the choice, either to confront our former masters, or leave them to their fate."
 
  BROKEN_SHACKLES_PROJECT_01:0 "Locate Home Worlds"
  BROKEN_SHACKLES_PROJECT_01_DESC:0 "Now that the files in the crashed slaver ship are fully decrypted, we will be able to pinpoint the galactic position of our home worlds."
@@ -1086,10 +1088,10 @@
  sol_system_fear_of_the_dark_system_NAME:0 "Fear of the Dark (Sol)"
  sol_system_fear_of_the_dark_system_DESC:0 "$sol_system_initializer_DESC$"
 
- job_fotd_protectors: "$job_fe_protector$"
- job_fotd_protectors_plural: "$fotd_job_fe_protector_plural$"
- job_fotd_protectors_desc: "$job_fe_protector_desc$"
- mod_job_fotd_protectors_add: "$mod_job_fe_protector_add$"
+ job_fotd_protectors:0 "$job_fe_protector$"
+ job_fotd_protectors_plural:0 "$fotd_job_fe_protector_plural$"
+ job_fotd_protectors_desc:0 "$job_fe_protector_desc$"
+ mod_job_fotd_protectors_add:0 "$mod_job_fe_protector_add$"
  #Events
 
  origin.6005.name:0 "Transfer Request"
@@ -1253,7 +1255,7 @@
  origin.6155.a:0 "Let's pay our old nightmares a visit."
 
  origin.6160.name:0 "The Hunters"
- origin.6160.desc:0 "Observing the §YFevorians§! has been a revelatory experience. In fact, their ideology is remarkably similar to that which produced the split in our own species. However, rather than choosing isolation, the Fevorians opted for a strategy of pre-emptive strikes against any life signs they could detect. Once they ran out of heavy metals, the aliens returned to their world, scraping whatever bare subsistence they could from their now barren home. While the leadership of [fotd_seperatist_planet.GetName] is urging us to adopt the same tactics as the Fevorians, how best to deal with our would-be exterminators is no easy question."
+ origin.6160.desc:1 "Observing the §YFevorians§! has been a revelatory experience. In fact, their ideology is remarkably similar to that which produced the split in our own species. However, rather than choosing isolation, the Fevorians opted for a strategy of pre-emptive strikes against any life signs they could detect. Once they ran out of heavy metals, the aliens returned to their world, scraping whatever bare subsistence they could from their now barren home. While the leadership of our partner planet is urging us to adopt the same tactics as the Fevorians, how best to deal with our would-be exterminators is no easy question."
  origin.6160.a:0 "We will only be safe when we are alone."
  origin.6160.a.tooltip:1 "We will join our partner planet in securing this galaxy by expunging all other life. Starting with this rock here."
  origin.6160.b:0 "We will show them compassion."
@@ -1272,7 +1274,7 @@
  origin.6175.desc:0 "The §YFevorians§! have won. Our people are decimated, and our home world desecrated.\n\nInter-atmosphere ships were ferrying [Owner.GetSpeciesNamePlural] into orbit until the planet's final moments. Those who remained on the surface were incinerated the instant the near-lightspeed projectile ignited the atmosphere. [fotd_seperatist_planet.GetName] has offered to host our government and house the evacuees."
  
  origin.6180.name:0 "Trajectories Clear"
- origin.6180.desc:0 "[Target.GetName] is safe. We have managed to divert the tungsten projectile far enough to ensure our own survival, though over the course of its long journey, it may very well be become another planet's problem."
+ origin.6180.desc:0 "[Target.GetName] is safe. We have managed to divert the tungsten projectile far enough to ensure our own survival, though over the course of its long journey, it may very well become another planet's problem."
  origin.6180.a:0 "Now, about that moon."
 
  origin.6185.name:0 "Countermeasures"
@@ -1656,9 +1658,9 @@
  awareness.920.name:0 "Who Watches The Watchers?"
  awareness.920.desc:0 "We built an observation post around §Y[fromfrom.GetName]§! to study its inhabitants, only to realize the §Y[contact_empire.GetSpeciesNamePlural]§! are the ones studying us: they are fully aware of the existence of other alien species, and have quickly noticed the existence of our scientists and drones.\n\n Our previous activity in this solar system must have alerted the [fromfrom.owner.GetName] of our presence. Keeping our existence hidden is meaningless at this point."
 
- AWARENESS_MONTHLY: "Awareness Progress"
- AWARENESS_MONTHLY_VALUE: "Monthly Change: $VALUE|=0Y$"
- AWARENESS_MONTHLY_VALUE_DELAYED: "§EThis civilization's Awareness changed by this amount in the previous month.\n\nAwareness is affected by various factors including in-system spatial activity, and our own interactions with a given civilization.§"
+ AWARENESS_MONTHLY:0 "Awareness Progress"
+ AWARENESS_MONTHLY_VALUE:0 "Monthly Change: $VALUE|=0Y$"
+ AWARENESS_MONTHLY_VALUE_DELAYED:0 "§EThis civilization's Awareness changed by this amount in the previous month.\n\nAwareness is affected by various factors including in-system spatial activity, and our own interactions with a given civilization.§!"
 
  ### Pre-FTL scripted loc
 
@@ -1701,10 +1703,10 @@
  unsophisticated_plural_lower:0 "$unsophisticated_lower$" # plural adjective
 
 # Random Compass Directions
- northern: "northern"
- southern: "southern"
- eastern: "eastern"
- western: "western"
+ northern:0 "northern"
+ southern:0 "southern"
+ eastern:0 "eastern"
+ western:0 "western"
 
  ## Observation Events
  fircon.1256.name:0 "Tractable and Fertile"
@@ -1909,7 +1911,7 @@
 
  # Modifiers
  mod_station_observers_society_research_produces_mult:0 "Monthly $society_research$"
- mod_station_observers_produces_mult: "$station_observers$ $ECONOMICS_PRODUCES$"
+ mod_station_observers_produces_mult:0 "$station_observers$ $ECONOMICS_PRODUCES$"
  observation_on_hold:0 "On Hold"
  observation_on_hold_desc:0 "To reduce native suspicion, our research has been put temporarily on hold."
  observation_unforeseen_problems:0 "Unforeseen Problems"
@@ -2178,7 +2180,7 @@
  fircon.6032.desc.notroops:0 "The sudden eruption of a seemingly extinct volcano was devastating, and the [non_believers_country.GetSpeciesNamePlural] are desperate for help."
  fircon.6032.a:0 "At least they trust us now."
 
- fircon.6033.name:0 "Anticlimactic"
+ fircon.6033.name:1 "Anticlimactic"
  fircon.6033.desc:0 "The Subterranean Invasion Defense Force troops stationed near the biggest caves and volcanoes report that absolutely nothing has emerged from beneath the surface. It's probably for the best, although some of the soldiers look visibly disappointed. "
 
  fircon.6035.name:0 "A Change Of Perspective"

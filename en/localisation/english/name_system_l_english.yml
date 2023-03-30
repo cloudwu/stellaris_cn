@@ -43,10 +43,11 @@
 
  # Patterns for turning nouns into adjectives
  # NOTE: Languages can have more or fewer entries here than English has.
+ # NOTE 2: Removing the '*' symbol will result in the noun being left out completely.
  # Example: 
  # adj_NNid: '*an $1$' 
  # means: 'A noun that ends in 'id' will have 'id' replaced by 'an', 
- # followed by whatever it's attributing: e.g. 'Jhabbanid'->'Jhabbanan Confederacy'
+ # and the remainder of the word it's attributing will replace the '*': e.g. 'Jhabbanid'->'Jhabbanan Confederacy'
  # Patterns can be 2 last letters (adj_NNid), 1 last letter (adj_NNd) or 0 last letters
  # (i.e. default, adj_NN). If you need more, contact dev.
  adj_NNi:0 "*ian $1$"

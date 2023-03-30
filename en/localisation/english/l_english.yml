@@ -5525,7 +5525,7 @@
  ENABLE:0 "Enable"
  FLEET_VIEW_INVESTIGATE:0 "Investigate"
  FLEET_VIEW_INVESTIGATE_DESC:1 "We need to study these aliens through a §YFirst Contact§! investigation before we can hope to understand their technology or learn how to communicate with them..."
- FLEET_VIEW_INVESTIGATE_DISABLED_BY_CLOAKING: "$FLEET_VIEW_INVESTIGATE$"
+ FLEET_VIEW_INVESTIGATE_DISABLED_BY_CLOAKING:0 "$FLEET_VIEW_INVESTIGATE$"
  FLEET_VIEW_INVESTIGATE_DISABLED_BY_CLOAKING_DESC:1 "§RWe cannot launch a First Contact investigation while Cloaked.§!"
  FLEET_VIEW_REINFORCE_HEADER:0 "Reinforce Fleet"
  FLEET_VIEW_REINFORCE_CLICK:0 "§GClick to reinforce fleet from the nearest shipyards§!"
@@ -6254,10 +6254,10 @@
  TECH_ALWAYS_AVAILABLE:1 "§HThis Technology will remain as a valid option until it is researched.§!"
  TECH_IS_RARE:0 "§MRare Technology§!"
  TECH_IS_DANGEROUS:0 "§RDangerous Technology§!"
- TECH_IS_INSIGHT: "$insight_technology$"
- TECH_IS_CUSTOM_TECH_1: "$TECH_IS_RARE$"
- TECH_IS_CUSTOM_TECH_2: "$TECH_IS_INSIGHT$"
- TECH_IS_CUSTOM_TECH_3: "$TECH_IS_DANGEROUS$"
+ TECH_IS_INSIGHT:0 "$insight_technology$"
+ TECH_IS_CUSTOM_TECH_1:0 "$TECH_IS_RARE$"
+ TECH_IS_CUSTOM_TECH_2:0 "$TECH_IS_INSIGHT$"
+ TECH_IS_CUSTOM_TECH_3:0 "$TECH_IS_DANGEROUS$"
  TECH_UNLOCK_IMPROVED_UPLINKS_FORMS_TITLE:0 "§HUnlocks Feature:§! Improved Assist Research"
  TECH_UNLOCK_IMPROVED_UPLINKS_FORMS_DESC:0 "§HImproved Assist Research§!\nAssist Research is now twice as effective."
  TECH_UNLOCK_DIPLOMATIC_ACTION_CREATE_ALLIANCE_TITLE:0 "§HUnlocks Diplomacy:§! Form Alliance"
@@ -7064,9 +7064,9 @@
  DIPLOMACY_STATUS_INTEGRATING:1 "§TIs integrating $EMPIRES|H$§!."
  DIPLOMACY_CLOSED_BORDERS:0 "§THas closed borders to $EMPIRES|H$§!."
  DIPLOMACY_TRUCE:2 "§THas a truce with $EMPIRE|H$ until $DATE|H$.§!"
- DIPLOMACY_UNDER_SOCIETAL_GUIDANCE: "§TUnder societal guidance of $EMPIRES|H$§!."
- DIPLOMACY_PROVIDED_WITH_TECHNOLOGIES: "§TProvided with thechnologies by $EMPIRES|H$§!."
- DIPLOMACY_PRE_FTL_COMMERCIAL_AGREEMENT: "§THas a commercial agreement with $EMPIRES|H$§!."
+ DIPLOMACY_UNDER_SOCIETAL_GUIDANCE:0 "§TUnder societal guidance of $EMPIRES|H$§!."
+ DIPLOMACY_PROVIDED_WITH_TECHNOLOGIES:0 "§TProvided with thechnologies by $EMPIRES|H$§!."
+ DIPLOMACY_PRE_FTL_COMMERCIAL_AGREEMENT:0 "§THas a commercial agreement with $EMPIRES|H$§!."
 
  DIPLOMACY_ALLIANCE_DESC:0 "§TIn §HAlliance§!: $NAME|H$§!"
  DIPLOMACY_FEDERATION_DESC:0 "§TIn §HFederation§!: $NAME|H$§!"
@@ -7098,9 +7098,9 @@
  DIPLOMACY_STATUS_TRUCE:1 "We have a Truce with them until $DATE|H$."
  DIPLOMACY_STATUS_CASUS_BELLI_HOLDER:0 "They have a Casus Belli on us."
  DIPLOMACY_STATUS_CASUS_BELLI_TARGET:0 "We have a Casus Belli on them."
- DIPLOMACY_STATUS_UNDER_SOCIETAL_GUIDANCE: "They are under our societal guidance."
- DIPLOMACY_STATUS_PROVIDED_WITH_TECHNOLOGY: "We share our superior technologies with them."
- DIPLOMACY_STATUS_PRE_FTL_TRADE: "We trade with them."
+ DIPLOMACY_STATUS_UNDER_SOCIETAL_GUIDANCE:0 "They are under our societal guidance."
+ DIPLOMACY_STATUS_PROVIDED_WITH_TECHNOLOGY:0 "We share our superior technologies with them."
+ DIPLOMACY_STATUS_PRE_FTL_TRADE:0 "We trade with them."
 
  ####################################
  # Event Window
@@ -7970,7 +7970,7 @@
  preftl_action_trade_pact:0 "Trade Pact"
  preftl_action_trade_pact_desc:0 "Increases the output of our Observation Station."
 
- opinon_pre_ftl_bombard: "$ORBITAL_BOMBARDMENT$"
+ opinon_pre_ftl_bombard:0 "$ORBITAL_BOMBARDMENT$"
 
  ####################################
  # Basic Resources
@@ -11930,6 +11930,8 @@
  war_goal_wg_humiliation:0 "Humiliate"
  #war_goal_wg_humiliation_desc: "Wage war to destroy the enemy's chain of command, disrupt their logistical flows, undermine the public's faith in their institutions, and destabilize the regime."
  war_goal_wg_humiliation_desc:0 "War is waged to undermine the enemy regime and the populace's faith in their institutions."
+ war_goal_wg_payback_msi_humiliation:0 "$war_goal_wg_humiliation$"
+ war_goal_wg_payback_msi_humiliation_desc:0 "$war_goal_wg_humiliation_desc$"
  war_goal_wg_force_ideology:0 "Impose Ideology"
  war_goal_wg_force_ideology_desc:1 "War is waged to force one's ethos and government form on the enemy.\n\nIn the event of a Status Quo peace, systems we occupy will be released as a new ideological ally if they include at least one planet."
  war_goal_wg_fe_humiliation:0 "Humiliate"

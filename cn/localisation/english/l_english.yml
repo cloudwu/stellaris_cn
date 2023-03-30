@@ -5525,7 +5525,7 @@
  ENABLE:0 "启用"
  FLEET_VIEW_INVESTIGATE:0 "调查"
  FLEET_VIEW_INVESTIGATE_DESC:1 "想要理解这些外星生物的科技并和他们交流，需要先进行§Y第一次接触§!调查……"
- FLEET_VIEW_INVESTIGATE_DISABLED_BY_CLOAKING: "$FLEET_VIEW_INVESTIGATE$"
+ FLEET_VIEW_INVESTIGATE_DISABLED_BY_CLOAKING:0 "$FLEET_VIEW_INVESTIGATE$"
  FLEET_VIEW_INVESTIGATE_DISABLED_BY_CLOAKING_DESC:1 "§RWe cannot launch a First Contact investigation while Cloaked.§!"
  FLEET_VIEW_REINFORCE_HEADER:0 "增援舰队"
  FLEET_VIEW_REINFORCE_CLICK:0 "§G点击从最近的船坞增援舰队§!"
@@ -6254,10 +6254,10 @@
  TECH_ALWAYS_AVAILABLE:1 "§H在被研发之前，此科技将一直保持可选状态。§!"
  TECH_IS_RARE:0 "§M稀有科技§!"
  TECH_IS_DANGEROUS:0 "§R危险科技§!"
- TECH_IS_INSIGHT: "$insight_technology$"
- TECH_IS_CUSTOM_TECH_1: "$TECH_IS_RARE$"
- TECH_IS_CUSTOM_TECH_2: "$TECH_IS_INSIGHT$"
- TECH_IS_CUSTOM_TECH_3: "$TECH_IS_DANGEROUS$"
+ TECH_IS_INSIGHT:0 "$insight_technology$"
+ TECH_IS_CUSTOM_TECH_1:0 "$TECH_IS_RARE$"
+ TECH_IS_CUSTOM_TECH_2:0 "$TECH_IS_INSIGHT$"
+ TECH_IS_CUSTOM_TECH_3:0 "$TECH_IS_DANGEROUS$"
  TECH_UNLOCK_IMPROVED_UPLINKS_FORMS_TITLE:0 "§H解锁功能：§!改进辅助研究"
  TECH_UNLOCK_IMPROVED_UPLINKS_FORMS_DESC:0 "§H改进辅助研究！§!\n辅助研究效率加倍。"
  TECH_UNLOCK_DIPLOMATIC_ACTION_CREATE_ALLIANCE_TITLE:0 "§H解锁外交：§!建立联盟"
@@ -7064,9 +7064,9 @@
  DIPLOMACY_STATUS_INTEGRATING:1 "§T正在合并$EMPIRES|H$§!。"
  DIPLOMACY_CLOSED_BORDERS:0 "§T对$EMPIRES|H$关闭了边界§!。"
  DIPLOMACY_TRUCE:2 "§T与$EMPIRES|H$拥有停战协定，持续至$DATE|H$。§!"
- DIPLOMACY_UNDER_SOCIETAL_GUIDANCE: "§T接受$EMPIRES|H$的社会指导§!。"
- DIPLOMACY_PROVIDED_WITH_TECHNOLOGIES: "§T接受$EMPIRES|H$提供的科研§!。"
- DIPLOMACY_PRE_FTL_COMMERCIAL_AGREEMENT: "§T与$EMPIRES|H$有商业协议§!。"
+ DIPLOMACY_UNDER_SOCIETAL_GUIDANCE:0 "§T接受$EMPIRES|H$的社会指导§!。"
+ DIPLOMACY_PROVIDED_WITH_TECHNOLOGIES:0 "§T接受$EMPIRES|H$提供的科研§!。"
+ DIPLOMACY_PRE_FTL_COMMERCIAL_AGREEMENT:0 "§T与$EMPIRES|H$有商业协议§!。"
 
  DIPLOMACY_ALLIANCE_DESC:0 "§T在§H联盟§!中：$NAME|H$§!"
  DIPLOMACY_FEDERATION_DESC:0 "§T在§H联邦§!中：$NAME|H$§!"
@@ -7098,9 +7098,9 @@
  DIPLOMACY_STATUS_TRUCE:1 "他们与我们有停战协定，截止日期为$DATE|H$。"
  DIPLOMACY_STATUS_CASUS_BELLI_HOLDER:0 "他们有针对我们的战争理由。"
  DIPLOMACY_STATUS_CASUS_BELLI_TARGET:0 "我们有针对他们的战争理由。"
- DIPLOMACY_STATUS_UNDER_SOCIETAL_GUIDANCE: "他们在我们的社会指导之下。"
- DIPLOMACY_STATUS_PROVIDED_WITH_TECHNOLOGY: “我们与他们分享我们的卓越技术。”
- DIPLOMACY_STATUS_PRE_FTL_TRADE: “我们正在与他们贸易。”
+ DIPLOMACY_STATUS_UNDER_SOCIETAL_GUIDANCE:0 "他们在我们的社会指导之下。"
+ DIPLOMACY_STATUS_PROVIDED_WITH_TECHNOLOGY:0 “我们与他们分享我们的卓越技术。”
+ DIPLOMACY_STATUS_PRE_FTL_TRADE:0 “我们正在与他们贸易。”
 
  ####################################
  # Event Window
@@ -7970,7 +7970,7 @@
  preftl_action_trade_pact:0 "贸易协定"
  preftl_action_trade_pact_desc:0 "提高我们观测哨站的产出。"
 
- opinon_pre_ftl_bombard: "$ORBITAL_BOMBARDMENT$"
+ opinon_pre_ftl_bombard:0 "$ORBITAL_BOMBARDMENT$"
 
  ####################################
  # Basic Resources
@@ -11930,6 +11930,8 @@
  war_goal_wg_humiliation:0 "羞辱"
  #war_goal_wg_humiliation_desc: "Wage war to destroy the enemy's chain of command, disrupt their logistical flows, undermine the public's faith in their institutions, and destabilize the regime."
  war_goal_wg_humiliation_desc:0 "战争的目的是破坏敌人的政权和民众对其制度的信心。"
+ war_goal_wg_payback_msi_humiliation:0 "$war_goal_wg_humiliation$"
+ war_goal_wg_payback_msi_humiliation_desc:0 "$war_goal_wg_humiliation_desc$"
  war_goal_wg_force_ideology:0 "输出意识形态"
  war_goal_wg_force_ideology_desc:1 "战争的目的是强制敌人接受道德准则和政体。\n\n在触发保持现状时，我们占领的所有包含至少一颗行星的星系将组成一个与我们意识形态一致的盟国。"
  war_goal_wg_fe_humiliation:0 "羞辱"

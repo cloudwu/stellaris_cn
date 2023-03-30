@@ -29,7 +29,7 @@
  first_contact.4000.desc.payback:0 "在§H[This.System.GetName]§!遭遇的外星飞船上得到的数据让我们不寒而栗。它的外观我们再熟悉不过了，上面的徽章宛如我们恐惧的象征：§H$NAME_MSI_country$§!的带翼图章。\n\n我们找到了曾经的侵略者。他们发现我们这些舰船的身份只是时间的问题，因为使用的完全都是他们的科技。新的接触不可避免，但我们绝不会重复过去的错误。"
  first_contact.4000.a.bs:0 "令人恼火。"
  first_contact.4000.a.payback:0 "我们必须严阵以待。"
-  first_contact.4000.a.tooltip: "开始与§Y$NAME_MSI_country$§!的§Y二次接触§!。"
+ first_contact.4000.a.tooltip:0 "开始与§Y$NAME_MSI_country$§!的§Y二次接触§!。"
 
  #############################
  # Payback Origin
@@ -261,24 +261,24 @@
 
  # Event chains
  payback_debt_collectors_chain_title:0 "收债人"
- payback_debt_collectors_chain_desc:0 "我们的前主人声称我们亏欠他们战争赔款。他们已经雇佣了一个星际债务回收机构来处理此事。\n\n§L[root.GetDebtCollectorsDeal]\n\n收债人将在§Y[root.payback_debt_collectors_timer]§!访问我们。§!"
- payback_debt_collectors_chain_energy:0 "我们同意每25年支付一次[root.debt_collectors_energy_payment]能量币。"
+ payback_debt_collectors_chain_desc:1 "我们的前主人声称我们亏欠他们战争赔款。他们已经雇佣了一个星际债务回收机构来处理此事。\n\n§L[root.GetDebtCollectorsDeal]\n\n收债人将在§Y[root.payback_debt_collectors_timer]§!访问我们。§!"
+ payback_debt_collectors_chain_energy:1 "我们同意每25年支付一次[root.debt_collectors_energy_payment]能量币。"
  payback_debt_collectors_chain_consumer_goods:1 "We agreed to pay §R2500§! £consumer_goods£ §H$consumer_goods$§! every 15 years."
  payback_debt_collectors_chain_alloys:1 "We agreed to pay §R1250§! £alloys£ §H$alloys$§! every 15 years."
- payback_debt_collectors_chain_pops:0 "我们同意每25年交付收债人5人口。"
+ payback_debt_collectors_chain_pops:1 "我们同意每25年交付收债人5人口。"
  payback_debt_collectors_chain_refused_won:0 "我们拒绝进行交易，与收债人进行作战，并且获胜了。但他们总有一天会回来的。"
  payback_debt_collectors_chain_refused_lost:0 "我们拒绝进行交易，与收债人进行作战，但是输了。他们总有一天还会回来的。"
  payback_debt_collectors_chain_empty:0 ""
 
  payback_make_them_pay_swords_chain_title:0 "扳平比分"
  payback_make_them_pay_swords_chain_desc:1 "[GetPaybackChainDescSwords]"
- payback_make_them_pay_swords_chain_desc_MSI: "是时候对我们的前主人，$NAME_MSI_country$进行复仇了。\n\n我们不再是那个任他们竭泽而渔的天真种族了。最终，他们会为此付出代价的。\n\n§L使用§Y$casus_belli_cb_payback$§!战争理由，赢得对§H$NAME_MSI_country$§!的战争。§!"
-  payback_make_them_pay_swords_chain_desc_no_MSI: "我对前主人$NAME_MSI_country$的复仇计划被[event_target:payback_stole_revenge_country.GetName]干扰了。\n\n他们会因阻碍我们的复仇而付出代价。\n\n§L使用§Y$casus_belli_cb_payback$§!战争理由，赢得对§H[event_target:payback_stole_revenge_country.GetName]§!的战争§!"
+ payback_make_them_pay_swords_chain_desc_MSI:0 "是时候对我们的前主人，$NAME_MSI_country$进行复仇了。\n\n我们不再是那个任他们竭泽而渔的天真种族了。最终，他们会为此付出代价的。\n\n§L使用§Y$casus_belli_cb_payback$§!战争理由，赢得对§H$NAME_MSI_country$§!的战争。§!"
+ payback_make_them_pay_swords_chain_desc_no_MSI:0 "我对前主人$NAME_MSI_country$的复仇计划被[event_target:payback_stole_revenge_country.GetName]干扰了。\n\n他们会因阻碍我们的复仇而付出代价。\n\n§L使用§Y$casus_belli_cb_payback$§!战争理由，赢得对§H[event_target:payback_stole_revenge_country.GetName]§!的战争§!"
 
  payback_make_them_pay_words_chain_title:0 "扳平比分"
- payback_make_them_pay_words_chain_desc: "[root.GetPaybackChainDescWords]"
+ payback_make_them_pay_words_chain_desc:0 "[root.GetPaybackChainDescWords]"
  payback_make_them_pay_words_chain_desc_MSI:0 "是时候对我们的前主人，$NAME_MSI_country$进行复仇了。\n\n在银河共同体的参议院，我们会让他们屈膝求饶，让众人认清他们奴隶贩子和懦夫的本来面目。"
- payback_make_them_pay_words_chain_desc_no_MSI: “我们以前的主人不在了，但我们的目标没有改变：在银河共同体的参议院，我们将继续与那些企图奴役前超光速文明的人战斗。”
+ payback_make_them_pay_words_chain_desc_no_MSI:0 “我们以前的主人不在了，但我们的目标没有改变：在银河共同体的参议院，我们将继续与那些企图奴役前超光速文明的人战斗。”
 
  # We need two variants with identical loc so we can set different goals for them (passing Equal Standing Act or Non-Interference)
  payback_make_them_pay_words_1_chain_title:0 "$payback_make_them_pay_words_chain_title$"
@@ -288,7 +288,7 @@
  payback_make_them_pay_words_2_chain_desc:1 "$payback_make_them_pay_words_chain_desc$\n\n§L通过§Y$resolution_pre_ftl_stances_non_interference$§!和全部四种§Y经济制裁§!（经济、行政、科研、军事）。§!"
  equal_standing_passed:0 "通过平等地位法案"
  non_interference_passed:0 "通过不干涉法案"
- sanctions_passed:0 "通过制裁"
+ sanctions_passed:1 "通过制裁"
 
  # Debt Collectors
  NAME_Debt_Collectors:0 "收债人"
@@ -301,18 +301,20 @@
  payback_revenge_words_desc:0 "哪怕最强大的帝国也要在正义的威严下屈膝遵从。"
  payback_no_revenge:0 "摆脱桎梏"
  payback_no_revenge_desc:0 "我们必须给和平一个蔓延发展的机会。"
- payback_no_revenge_small: "$payback_no_revenge$"
- payback_no_revenge_small_desc: "$payback_no_revenge_desc$"
+ payback_no_revenge_small:0 "$payback_no_revenge$"
+ payback_no_revenge_small_desc:0 "$payback_no_revenge_desc$"
  payback_underdog:0 "困兽"
  payback_underdog_desc:0 "大国咬我们，我们就狠狠地咬回去。"
  payback_underdog_tooltip:1 "对终末危机伤害: §G+20%§!"
+ payback_underdog_khan:0 "$payback_underdog$"
+ payback_underdog_khan_desc:0 "$payback_underdog_desc$"
  payback_student:0 "认证教育家"
  payback_student_desc:0 "曾经的学生，如今成为了大师。"
- payback_student_tooltip: "技术启蒙效果: §G+25%§!."
+ payback_student_tooltip:0 "技术启蒙效果: §G+25%§!."
 
  # Casus Belli/war goal
  casus_belli_cb_payback:0 "血债血偿"
-  casus_belli_cb_payback_acquire_hint: "\n§E§Y$casus_belli_cb_payback$§! 当我们的复仇对象不是我们的主人时获得§H宣战理由§!。§!"
+ casus_belli_cb_payback_acquire_hint:0 "\n§E§Y$casus_belli_cb_payback$§! 当我们的复仇对象不是我们的主人时获得§H宣战理由§!。§!"
 
  war_goal_wg_payback_wipe_them_out:0 "消灭威胁"
  war_goal_wg_payback_wipe_them_out_desc:0 "战争的目的是为了终结某个威胁到我们帝国的势力。\n\n§R这场战争不存在维持现状情况下的和平：我们要么胜利，要么屈服。§!"
@@ -362,7 +364,7 @@
  origin.4016.e.tooltip:1 "Pledge to give §R1250§! £alloys£ §H$alloys$§! to the debt collectors upon their return."
 
  # Agreed to pay
- origin.4017.desc:0 "棒极了！很高兴我们能这么快就达成协议。我们将在§Y15§!年后回来收第一笔分期付款，相信你们对这些条款感到很满意。\n\n祝您有美好的一天！"
+ origin.4017.desc:1 "棒极了！很高兴我们能这么快就达成协议。我们将在§Y15§!年后回来收第一笔分期付款，相信你们对这些条款感到很满意。\n\n祝您有美好的一天！"
  origin.4017.a.tooltip:0 "收债人将于§Y[root.payback_debt_collectors_timer]§!返回。"
 
  # Pay with something else
@@ -392,7 +394,7 @@
 
  # Refuse to pay - lost battle
  origin.4025.name:0 "收缴资产进行中"
- origin.4025.desc:0 "在我们的舰队被击败后，收债人突袭了[PLANET.GetName]，绑架了我们的许多族人。比起这次战败更加令人心痛的，是他们留下的“账单”，告诉我们这些被扣押的人们将被用来偿还我们的“债务”。收债人说，我们应该心怀感恩，债务清算后我们的族人就能回家。还债时间大约只要59275年左右。"
+ origin.4025.desc:1 "在我们的舰队被击败后，收债人突袭了[PLANET.GetName]，绑架了我们的许多族人。比起这次战败更加令人心痛的，是他们留下的“账单”，告诉我们这些被扣押的人们将被用来偿还我们的“债务”。收债人说，我们应该心怀感恩，债务清算后我们的族人就能回家。还债时间大约只要59275年左右。"
  origin.4025.a:0 "下一次我们会做好准备。"
  origin.4025.a.tooltip:0 "收债人夺走§B5 £pops£ 人口§!。\n\n收债人将于§Y[root.owner.payback_debt_collectors_timer]§!回来。"
 
@@ -408,16 +410,16 @@
  origin.4030.a:0 "我们很乐意协商解决问题。"
  origin.4030.b:1 "这是你所要求的能量币。"
  origin.4030.c:0 "好好对待我们的人民。"
- origin.4030.c.tooltip: "损失 §B2 £pops£ 人口§!"
+ origin.4030.c.tooltip:0 "损失 §B2 £pops£ 人口§!"
  origin.4030.d:0 "这里是一些……劳力。"
- origin.4030.d.tooltip: "损失 §B2 £pops£ 奴隶! "
+ origin.4030.d.tooltip:0 "损失 §B2 £pops£ 奴隶§! "
  origin.4030.e:0 "我们没法支付。"
  origin.4030.f:0 "我们不会支付。"
  origin.4030.g:0 "抱歉，能再说一遍你是谁吗？"
  origin.4030.h:0 "我们知道你是谁：受害者。和我们一样。"
 
  # Pay
- origin.4031.desc:0 "感谢你的及时回应，以及你公平地解决此事的意愿！现在未偿还款项总额为§Y£energy£ [owner.debt_collectors_amount]§!。我们将在25年后再回来，收下一笔分期款项。祝您愉快！"
+ origin.4031.desc:1 "感谢你的及时回应，以及你公平地解决此事的意愿！现在未偿还款项总额为§Y£energy£ [owner.debt_collectors_amount]§!。我们将在25年后再回来，收下一笔分期款项。祝您愉快！"
  origin.4031.a:0 "未偿款项比预期的要高。"
 
  # You got scammed
@@ -489,7 +491,7 @@
 
  # MSI defeated by someone else - fires after action.62
  origin.4070.name:0 "债务豁免"
- origin.4070.desc:0 "$origin.4060.intro$现在$NAME_MSI_country_initials$已经不复存在了，被另一个[root.GetHandName]摧毁了。\n\n我们的天空可能变得更加晴朗了，但我们的人民仍为永无止境的需求所占据，那便是：\n\n§R复仇。§!"
+ origin.4070.desc:1 "$origin.4060.intro$现在$NAME_MSI_country_initials$已经不复存在了，被另一个[root.GetHandName]摧毁了。\n\n我们的天空可能变得更加晴朗了，但我们的人民仍为永无止境的需求所占据，那便是：\n\n§R复仇。§!"
  origin.4070.a:0 "随风而逝。"
  origin.4070.b:0 "我们的事业仍值得为之进行斗争。"
  origin.4070.b.tooltip:0 "我们将继续斗争，直到全宇宙禁止对前超光速文明进行剥削。"
@@ -739,7 +741,7 @@
  origin.5035.name:0 "数据挖掘"
  origin.5035.desc:0 "损坏的计算机核心已经完全修好了，尽管多数的数据是加密的，但破译工作已经开始。只要我们愿意花费时间和人力物力，我们迟早能获得包括我们原母星的位置在内的所有信息。\n\n事实上，我们已经得到了一些对我们有利的东西：通过对运奴船所运行的超空间航道扩张进行三角定位，我们发现了$NAME_MSI_country$在星系中的坐标。\n\n我们现在有机会去会会我们的前主人，或者是由他们自生自灭。"
 
- origin.5035.desc.MSInocontact: "$origin.5035.desc$\n\n事实上，我们可能已经获得对我们有用的东西：沿着奴隶飞船超空间航道的变化进行三角测量，我们已经发现了$NAME_MSI_country$d的银行系坐标。\n\nw我们现在可以选择，直面我们以前的主人，或者让他们自生自灭。" 
+ origin.5035.desc.MSInocontact:0 "$origin.5035.desc$\n\n事实上，我们可能已经获得对我们有用的东西：沿着奴隶飞船超空间航道的变化进行三角测量，我们已经发现了$NAME_MSI_country$d的银行系坐标。\n\nw我们现在可以选择，直面我们以前的主人，或者让他们自生自灭。" 
 
  BROKEN_SHACKLES_PROJECT_01:0 "定位母星"
  BROKEN_SHACKLES_PROJECT_01_DESC:0 "我们已经完全解密了这艘坠毁殖民船中的文档，现在，我们已能够精准确定我们的母星在银河中的位置。"
@@ -1086,10 +1088,10 @@
  sol_system_fear_of_the_dark_system_NAME:0 "黑暗之怖（太阳系）"
  sol_system_fear_of_the_dark_system_DESC:0 "$sol_system_initializer_DESC$"
 
- job_fotd_protectors: "$job_fe_protector$"
- job_fotd_protectors_plural: "$fotd_job_fe_protector_plural$"
- job_fotd_protectors_desc: "$job_fe_protector_desc$"
- mod_job_fotd_protectors_add: "$mod_job_fe_protector_add$"
+ job_fotd_protectors:0 "$job_fe_protector$"
+ job_fotd_protectors_plural:0 "$fotd_job_fe_protector_plural$"
+ job_fotd_protectors_desc:0 "$job_fe_protector_desc$"
+ mod_job_fotd_protectors_add:0 "$mod_job_fe_protector_add$"
  #Events
 
  origin.6005.name:0 "要求转移"
@@ -1253,7 +1255,7 @@
  origin.6155.a:0 "让我们好好拜访一下旧日的梦魇。"
 
  origin.6160.name:0 "猎手"
- origin.6160.desc:0 "观察§Y菲沃尔人§!的经历对于我们来说相当有启发性。事实上，他们的意识形态与导致我们自己物种分裂的意识形态非常相似。然而，菲沃尔人没有选择自我隔离，而是选择了对他们能够探测到的任何生命迹象进行先制打击的策略。一旦他们耗尽了重金属，这些外星人就只能回到他们的星球，从他们现在贫瘠的家园中拾掇一切来勉强维持生计。虽然[fotd_seperatist_planet.GetName]的领导层正在敦促我们采取与菲沃尔人相同的策略，但如何最好地对付我们的潜在灭绝者，这事并没有我们原以为的那么简单。"
+ origin.6160.desc:1 "观察§Y菲沃尔人§!的经历对于我们来说相当有启发性。事实上，他们的意识形态与导致我们自己物种分裂的意识形态非常相似。然而，菲沃尔人没有选择自我隔离，而是选择了对他们能够探测到的任何生命迹象进行先制打击的策略。一旦他们耗尽了重金属，这些外星人就只能回到他们的星球，从他们现在贫瘠的家园中拾掇一切来勉强维持生计。虽然我们搭档星球的领导层正在敦促我们采取与菲沃尔人相同的策略，但如何最好地对付我们的潜在灭绝者，这事并没有我们原以为的那么简单。"
  origin.6160.a:0 "宇宙中只剩下我们才是安全的。"
  origin.6160.a.tooltip:1 "我们会加入[fotd_seperatist_planet.GetName]，为确保星系的安全将其他生命全部抹除。就从这块石头开始。" 
  origin.6160.b:0 "这些外星人毁了他们的行星，他们将会留在那里。"
@@ -1656,9 +1658,9 @@
  awareness.920.name:0 "谁在盯着观察者？"
  awareness.920.desc:0 "我们围绕§Y[fromfrom.GetName]§!建造了一座观测站来研究上面的居民，但却意识到§Y[contact_empire.GetSpeciesNamePlural]§!反而是在研究我们：他们完全清楚其他外星物种的存在，并很快注意到了我们的科学家和无人机的存在。\n\n我们先前在这个星系的活动一定已经让[fromfrom.owner.GetName]警醒，意识到了我们存在的一切。当前情况下，保持我们的存在隐形化已经没有什么意义。"
 
- AWARENESS_MONTHLY: "Awareness Progress"
- AWARENESS_MONTHLY_VALUE: "Monthly Change: $VALUE|=0Y$"
- AWARENESS_MONTHLY_VALUE_DELAYED: "§EThis civilization's Awareness changed by this amount in the previous month.\n\nAwareness is affected by various factors including in-system spatial activity, and our own interactions with a given civilization.§"
+ AWARENESS_MONTHLY:0 "觉醒进程"
+ AWARENESS_MONTHLY_VALUE:0 "每月变化: $VALUE|=0Y$"
+ AWARENESS_MONTHLY_VALUE_DELAYED:0 "§E这个文明上个月觉醒程度的变化数量。\n\n觉醒受包括星系内的空间活动以及我们自身和指定文明的交流等多元因素影响。§"
 
  ### Pre-FTL scripted loc
 
@@ -1701,10 +1703,10 @@
  unsophisticated_plural_lower:0 "$unsophisticated_lower$" # plural adjective
 
 # Random Compass Directions
- northern: "北方"
- southern: "南方"
- eastern: "东方"
- western: "西方"
+ northern:0 "北方"
+ southern:0 "南方"
+ eastern:0 "东方"
+ western:0 "西方"
 
  ## Observation Events
  fircon.1256.name:0 "温顺好生养"
@@ -1909,7 +1911,7 @@
 
  # Modifiers
  mod_station_observers_society_research_produces_mult:0 "每月$society_research$"
- mod_station_observers_produces_mult: "$station_observers$ $ECONOMICS_PRODUCES$"
+ mod_station_observers_produces_mult:0 "$station_observers$ $ECONOMICS_PRODUCES$"
  observation_on_hold:0 "搁置"
  observation_on_hold_desc:0 "为了减少当地人的怀疑，我们的研究被短暂地搁置了。"
  observation_unforeseen_problems:0 "未曾遇见的问题"
@@ -2178,7 +2180,7 @@
  fircon.6032.desc.notroops:0 "某个表面看上去已经死寂的火山突然喷发，正在摧毁一切，[non_believers_country.GetSpeciesNamePlural]绝望地寻求帮助。"
  fircon.6032.a:0 "至少他们现在信任我们了。"
 
- fircon.6033.name:0 "反常气候"
+ fircon.6033.name:1 "反常气候"
  fircon.6033.desc:0 "地底入侵防御部队的士兵驻扎在最大的洞穴和火山口旁边，他们报告称完全没有任何东西从地表下面冒出来。或许这是最好的情况，但是其中一些士兵明显十分失望。 "
 
  fircon.6035.name:0 "观点的变动"

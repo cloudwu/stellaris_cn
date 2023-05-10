@@ -10,8 +10,8 @@
 
  LEADER_STATUS_DESC:0 "[Root.LeaderAssignDesc]"
  leader_desc_admiral:0 "§E§H舰队司令§!可以被指派去指挥一支§H舰队§!，同时还能占据一个生效的§H内阁席位§!§!"
- leader_desc_scientist:0 "§E§H舰队司令§!可以被指派去驾驶一艘§H科研船§!，同时还能占据一个生效的§H内阁席位§!§!"
- leader_desc_general:0 "§E§H陆军将领§!可以被指派去指挥一支§H进攻部队§!，同时还能占据一个生效的§H内阁席位§!§!"
+ leader_desc_scientist:0 "§E§H科学家§!可以被指派去驾驶一艘§H科研船§!，同时还能占据一个生效的§H内阁席位§!§!"
+ leader_desc_general:0 "§E§H将军§!可以被指派去指挥一支§H突击部队§!，同时还能占据一个生效的§H内阁席位§!§!"
  leader_desc_governor:0 "§E§H总督§!可以被指派去治理一颗§H行星§!，同时还能占据一个生效的§H内阁席位§!§!"
 
  EXTERNAL_POOL_AVAILABILITY_TITLE:0 "因以下原因，$NAME|Y$是一名可雇佣的外籍领袖："
@@ -250,7 +250,7 @@
  councilor_trait:2 "§c领袖特质§!\n£council£理事会" 
  leader_trait:0 "§c领袖特质§!"
  admiral_trait:1 "§c领袖特质§!\n££admiral£舰队司令类别"
- general_trait:1 "§c领袖特质§!\n£general£陆军将领类别"
+ general_trait:1 "§c领袖特质§!\n£general£将军类别"
  scientist_trait:1 "§c领袖特质特质§!\n£scientist£科学家类别"
  governor_trait:1 "§c领袖特质§!\n£governor£总督类别"
  ruler_trait:0 "统治者特质"
@@ -265,8 +265,8 @@
  veteran_admiral_trait:1 "§v老练领袖特质§!\n£admiral£舰队司令类别"
  paragon_admiral_trait:1 "§p命定特质§!\n£admiral£§c舰队司令类别§!"
  common_general_trait:1 "$general_trait$"
- veteran_general_trait:1 "§v老练领袖特质§!\n£general£陆军将领类别"
- paragon_general_trait:1 "§p命定特质§!\n£general£§c陆军将领类别§!"
+ veteran_general_trait:1 "§v老练领袖特质§!\n£general£将军类别"
+ paragon_general_trait:1 "§p命定特质§!\n£general£§c将军类别§!"
  common_governor_trait:1 "$governor_trait$"
  veteran_governor_trait:1 "§v老练领袖特质§!\n£governor£总督类别"
  paragon_governor_trait:1 "§p命定特质§!\n£governor£§c总督类别§!"
@@ -588,7 +588,7 @@
 
  COUNCIL_AGENDA_PROGRESS:0 "§L提升内阁议程进展速度：$PROGRESS|Y$§!"
 
- YOUR_GENERAL_PLURAL:0 "你的陆军将领"
+ YOUR_GENERAL_PLURAL:0 "你的将军"
  YOUR_SCIENTIST_PLURAL:0 "你的科学家"
  YOUR_ADMIRAL_PLURAL:0 "你的舰队司令"
  YOUR_GOVERNOR_PLURAL:0 "你的总督"
@@ -596,7 +596,7 @@
 
  CANNOT_REINFORCE_OVERSIZED_TEMPLATE:0 "§R无法增援超过当前指挥上限的模板§!"
 
- YOU_HAVE_NO_GENERAL_PLURAL:0 "你没有陆军将领"
+ YOU_HAVE_NO_GENERAL_PLURAL:0 "你没有将军"
  YOU_HAVE_NO_SCENTIST_PLURAL:0 "你没有科学家"
  YOU_HAVE_NO_ADMIRAL_PLURAL:0 "你没有舰队司令"
  YOU_HAVE_NO_GOVERNOR_PLURAL:0 "你没有总督"
@@ -606,7 +606,7 @@
 
  PLANET_CONTROLLER_GAINED_VIA_BOMBARDMENT_TITLE:0 "行星投降"
  PLANET_CONTROLLER_GAINED_VIA_BOMBARDMENT_DESC:0 "我们已经通过§H轨道轰炸§!获得了$PLANET|H$的控制权"
- ASSIGN_GENERAL_NO_ARMIES:0 "§R必须要有陆军才能指派陆军将领§!"
+ ASSIGN_GENERAL_NO_ARMIES:0 "§R必须要有陆军才能指派将军§!"
 
  overseer_from_overlord_present:0 "监工在场"
  knowledge_for_the_masses_per_pop_effect:0 "$leader_trait_knowledge_for_the_masses$"
@@ -670,9 +670,9 @@
  admirals_cost_mod:0 "已任命舰队司令"
  scientists_cost_mod:0 "已任命科学家"
  governors_cost_mod:0 "已任命总督"
- generals_cost_mod:0 "已任命陆军将领"
+ generals_cost_mod:0 "已任命将军"
  mod_leader_admirals_cost_mult:0 "舰队司令领袖花费"
- mod_leader_generals_cost_mult:0 "陆军将领领袖花费"
+ mod_leader_generals_cost_mult:0 "将军领袖花费"
  mod_leader_scientists_cost_mult:0 "科学家领袖花费"
  mod_leader_governors_cost_mult:0 "总督领袖花费"
  LEADER_UPKEEP:0 "$VALUE$"
@@ -1350,7 +1350,7 @@ leader_trait_midas_touch_effect:2 "$t$Strategic Resource Discovery Chance: §G+1
  leader_trait_supreme_warrior_effect:0 "$t$地面战斗每经过§Y10§!天：\n$tt$直接击杀一支敌对陆军的概率：§Y15%§!"
  leader_trait_supreme_warrior_desc:1 "这位领袖是少数获得这一殊荣的将军之一。他们亲自率领军队，激励盟友，甚至压倒最强悍的敌人。"
  leader_trait_fortress_cracker:0 "堡垒克星"
- leader_trait_fortress_cracker_desc:1 "摧毁一座精心设计的防御设施需要力量、计谋和经验的组合。这位陆军将领喜欢直面挑战，在这种别人可能会因为失败而放弃的难题中取胜。"
+ leader_trait_fortress_cracker_desc:1 "摧毁一座精心设计的防御设施需要力量、计谋和经验的组合。这位将军喜欢直面挑战，在这种别人可能会因为失败而放弃的难题中取胜。"
  leader_trait_chainbreaker:0 "枷锁破除者"
  leader_trait_chainbreaker_desc:1 "任何智慧生命不应被奴役，不应被当做其他人谋取利益的牲畜。这位领袖的名声在外，被奴役和被剥削的人收到他的召唤都会欣然拿起武器战斗。"
  leader_trait_chainbreaker_effect:0 "$t$进攻的星球上每个§Y$pop_cat_slave$§!有70%概率生成§G1§!陆军"
@@ -1368,10 +1368,10 @@ leader_trait_midas_touch_effect:2 "$t$Strategic Resource Discovery Chance: §G+1
  leader_trait_spymaster:0 "影中人"
  leader_trait_spymaster_desc:1 "你说这位领导人是位间谍那就太小看人了，事实上其编织了一个由线人、走私者和暗杀者组成的网络。当需要悄悄完成某件事时，这将会成为一个非常有价值的资产。"
  leader_trait_totalitarian:0 "帝国先驱"
- leader_trait_totalitarian_desc:1 "先驱是一个代表着荣誉和声望的头衔，在国家中扮演着很重要的角色，这位陆军将领可以为宗主国和附属国之间提供相互信任的纽带。"
+ leader_trait_totalitarian_desc:1 "先驱是一个代表着荣誉和声望的头衔，在国家中扮演着很重要的角色，这位将军可以为宗主国和附属国之间提供相互信任的纽带。"
  leader_trait_bellicose:0 "崇敬军需官"
  leader_trait_bellicose_effect:1 "$EMPIRE_EFFECTS_TXT$：\n$t$每个[Leader.GetLeaderSoldierJobType]：\n$tt$$MOD_COUNTRY_NAVAL_CAP_ADD$：§G+2§!\n$tt$$MOD_DEFENSE_ARMIES_ADD$：§G+1§!"
- leader_trait_bellicose_desc:1 "这位陆军将领在后勤方面极具天赋，能以简单的方法提升诸多军事行动的效率。"
+ leader_trait_bellicose_desc:1 "这位将军在后勤方面极具天赋，能以简单的方法提升诸多军事行动的效率。"
 
  # Special Traits
  leader_trait_erudite:0 "博学多识"
@@ -1562,7 +1562,7 @@ leader_trait_midas_touch_effect:2 "$t$Strategic Resource Discovery Chance: §G+1
  civic_memory_vault_hive:1 "知识宝库" 
  civic_memory_vault_hive_desc:0 "该蜂巢专注于内省，从星系中的自主工蜂中进行学习。它能通过对脑组织的存储和溶解提取其中的记忆，并将部分记忆植入新产生的工蜂中。"
 
- civic_tooltip_crusader_spirit_effects:0 "§Y舰队司令§!初始拥有§Y卫道者§!特质\n§Y陆军将领§!初始拥有§Y十字军§!特质\n仅限使用§Y解放战争§!政策"
+ civic_tooltip_crusader_spirit_effects:0 "§Y舰队司令§!初始拥有§Y卫道者§!特质\n§Y将军§!初始拥有§Y十字军§!特质\n仅限使用§Y解放战争§!政策"
  civic_crusader_spirit:0 "十字军之魂"
  civic_crusader_spirit_desc:0 "缺乏向导的灵魂是脆弱的，很容易屈从于腐败，陷入堕落深渊。而这个社会通过积极的传教为大众带来“启蒙”，为人们构筑起了一道自我防御的铠甲。"
 
@@ -1635,7 +1635,7 @@ leader_trait_midas_touch_effect:2 "$t$Strategic Resource Discovery Chance: §G+1
  # Fake Background Jobs
  job_none:0 "无"
  job_none_desc:0 ""
- job_captain:0 "船长"
+ job_captain:0 "舰长"
  job_captain_desc:0 ""
  job_chief_navigator:0 "首席领航员"
  job_chief_navigator_desc:0 ""
@@ -1649,7 +1649,7 @@ leader_trait_midas_touch_effect:2 "$t$Strategic Resource Discovery Chance: §G+1
  job_special_operations_commander_desc:0 ""
  job_commanding_officer:0 "指挥官"
  job_commanding_officer_desc:0 ""
- job_chief_supply_officer:0 "首席支援官"
+ job_chief_supply_officer:0 "首席军需官"
  job_chief_supply_officer_desc:0 ""
  job_intelligence_officer:0 "情报官"
  job_intelligence_officer_desc:0 ""

@@ -8,7 +8,7 @@
  unique.1.a:0 "Clear out the debris."
 
  unique.5.title:0 "The Weird Laboratory"
- unique.5.desc:0 "After clearing out the last of the debris our [Root.Owner.GetScientistPlural] found the bodies of a group of xenos, presumably the ones who had arrived on the crashed ship. After their remains were carefully analyzed, our [Root.Owner.GetScientistPlural] have concluded they must have died from an early degredation of their internal organs - most likely due to some unknown bacteria or disease.\n\nIt is still unclear what their aims were, or what brought them to this specific location in their last moments. The old machines and computer banks of the laboratory are unsalvagable, and there's nothing else in the room itself that can give us any hints.\n\nA small door leading further downwards is blocked off, and any preliminary attempts at decrypting it have failed. But our [Root.Owner.GetScientistPlural] believe they can get them open given some time."
+ unique.5.desc:0 "After clearing out the last of the debris our [Root.Owner.GetScientistPlural] found the bodies of a group of xenos, presumably the ones who had arrived on the crashed ship. After their remains were carefully analyzed, our [Root.Owner.GetScientistPlural] have concluded they must have died from an early degradation of their internal organs - most likely due to some unknown bacteria or disease.\n\nIt is still unclear what their aims were, or what brought them to this specific location in their last moments. The old machines and computer banks of the laboratory are unsalvageable, and there's nothing else in the room itself that can give us any hints.\n\nA small door leading further downwards is blocked off, and any preliminary attempts at decrypting it have failed. But our [Root.Owner.GetScientistPlural] believe they can get them open given some time."
  unique.5.a:0 "One last push, and we will unravel the secrets of this place."
 
  unique.10.title:0 "The Unique Specimens"
@@ -23,7 +23,7 @@
  unique.15.b:0 "Who made these clones?"
  unique.15.c:0 "Would you be safe outside of these vats?"
  unique.15.d:0 "We know what to do with you."
-
+ 
  unique.16.desc:0 "We are the Larionessi Consciousness, the inhabitants of Larion.\n\nOnce our collective stretched across several solar systems, from the outer rims of our galaxy and all the way to the very core. That all changed when one of our adversaries infected us with a rare disease that ripped across our multitudes, and left our neural network paralyzed.\n\nNow this is all that remains. These vats, these clones..."
 
  unique.17.desc:0 "We did.\n\nIt was our last effort to try and carry on some part of our legacy, so that the memories of our consciousness would not disappear forever. And... it seems to have worked.\n\nWe worried our clones might inherit the problems of the past, but it seems they did not."
@@ -123,4 +123,24 @@
  unique.125.name:0 "Ancient Battlefield"
  unique.125.desc:0 "We sent in some of our [Root.Owner.GetScientistPlural] to analyze the remains of the ancient battleships in [From.solar_system.GetName], and glean from them what they can. Though unable to determine how old these vessels are, or for what banner they once fought, they managed to derive some information about the building techniques used to craft the ships."
 
+ # Lone Defender
+ NAME_Lone_Defender_system:0 "Xraneax"
+ NAME_Lone_Defender_planet:0 "Baloryz"
+ NAME_Lone_Defender_country:0 "$NAME_Lone_Defender_planet$"
+ NAME_Lone_Defender_fleet:0 "Lone Defender"
+ NAME_Lone_Defender_ship:0 "Lone Defender"
+ NAME_Lone_Defender_class:0 "$NAME_Lone_Defender_system$"
+ Lone_Defender_message:0 "Why"
 
+ unique.130.name:0 "Mutual Assured Destruction"
+ unique.130.desc:0 "Our initial scan of the §Y$NAME_Lone_Defender_system$§! system revealed that the planet $NAME_Lone_Defender_planet$ was destroyed by nuclear weapons. The inhabitants annihilated themselves using planet-based weapons so powerful that they even shattered their moon.\n\nOur only chance to learn more about what happened is a ship patrolling the system, but it is already targeting us with its missiles."
+
+ unique.135.name:0 "Lone Defender"
+ unique.135.desc:0 "No life signs were detected aboard the vessel, so while clearly an AI, the ship repeatedly prioritized self-preservation over optimal combat effectiveness. This means that the only survivor of the horrible conflict on §Y$NAME_Lone_Defender_planet$§! was sapient.\n\nThe ship sent a brief message a moment before destruction:\n\n"$Lone_Defender_message$"\n\nIt is unclear if this was the start of the question why the inhabitants of $NAME_Lone_Defender_planet$ incinerated themselves or why we destroyed the AI ship.\n\nThe technology is rudimentary by our standards, but we may gain some insights by disassembling the remains."
+ unique.135.desc.regular:0 "$unique.135.desc$ Or because it valiantly performed its duty, we honor the AI by renaming the planet after its lone defender."
+ unique.135.desc.memorialist:0 "$unique.135.desc$ Or we leave the floating parts as a memorial, and rename the planet and system after the lone defender and its final message."
+ unique.135.a:0 "Pick apart the debris."
+ unique.135.b.regular:0 "Rename the planet."
+ unique.135.b.regular.tt:0 "The planet $NAME_Lone_Defender_planet$ is renamed to §Y$NAME_Lone_Defender_ship$§!."
+ unique.135.b.memorialist:0 "Rename the planet and system."
+ unique.135.b.memorialist.tt:0 "The planet $NAME_Lone_Defender_planet$ is renamed to §Y$NAME_Lone_Defender_ship$§!.\nThe system $NAME_Lone_Defender_system$ is renamed to §Y$Lone_Defender_message$§!."

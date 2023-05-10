@@ -518,10 +518,10 @@
  relic_triumph_cooldown_veryshort:0 "\n$relic_activation_cooldown$: £time£ §Y900§!"
  requires_relic_no_cooldown:0 "$TRIGGER_FAIL$§RCannot activate another relic while §Y$relic_activation_cooldown$§! is active.§!"
  relic_queen_spawn:1 "Breed a sizeable Prethoryn fleet"
- relic_rubricator_active:0 "Create §Y500§! £minor_artifacts£Minor Artifacts."
+ relic_rubricator_active:2 "Create §Y500§! £minor_artifacts£Minor Artifacts."
  relic_galaxy_active:0 "Gain §Y50%§! tech progress in a random technology."
  relic_zro_crystal_passive:4 "$MOD_LEADER_RULER_SKILL_LEVELS$: §G+5§!\nThe cooldown to §YBreach into the Shroud§! is reduced by §G50%§!.\nGrants access to the §Y$edict_zro_crystal$§! edict, which increases leader experience gain and longevity."
- edict_zro_crystal:0 "Zro Addatives"
+ edict_zro_crystal:0 "Zro Additives"
  edict_zro_crystal_desc:0 "The properties of Zro are mysterious. Yet if given to our leaders, it seems they obtain slight precognitive abilities, allowing them to learn faster and avoid dangers that could have ended their lives early."
  edict_zro_crystal_machine:0 "$edict_zro_crystal$"
  edict_zro_crystal_machine_desc:0 "The properties of Zro are mysterious. Yet if sprinkled on our leader's motherboards, it seems to grant them slight precognitive abilities, allowing them to learn faster and avoid dangers that could have ended their existence."
@@ -647,8 +647,6 @@
  leader_trait_inspired_surveyor_desc:1 "$leader_trait_inspired_archaeologist_desc$"
  leader_trait_governor_oracle:0 "Oracle"
  leader_trait_governor_oracle_desc:0 "The Oracle sees all."
- leader_trait_archaeologist_ancrel:0 "$leader_trait_archaeologist$"
- leader_trait_archaeologist_ancrel_desc:0 "$leader_trait_archaeologist_desc$"
 
  ##################
  # ARCHAEOLOGY SITES
@@ -930,7 +928,9 @@
  tech_archaeoarmor:0 "Ancient Pulse Armor"
  tech_archaeoarmor_desc:0 "Ionized plates of armor can carry a reactive charge to alleviate the energy of impacts, using magnetic repulsion and field projection principles."
  tech_archaeo_detection_scrambler:0 "Ancient Target Scrambler"
- tech_archaeo_detection_scrambler_desc:0 "Ping repetitors and optic diffusers with the right wavelengths can produce destructive interference and effectively scramble hostile targeting systems."
+ tech_archaeo_detection_scrambler_desc:0 "Ping repeaters and optic diffusers with the right wavelengths can produce destructive interference and effectively scramble hostile targeting systems."
+ TECH_UNLOCK_SCRAMBLER_TITLE:0 "$TECH_UNLOCK_COMPONENT_LINE$ $tech_archaeo_detection_scrambler$"
+ TECH_UNLOCK_SCRAMBLER_DESC:0 "$tech_archaeo_detection_scrambler_desc$"
  tech_archaeo_rampart:0 "Ancient Rampart"
  tech_archaeo_rampart_desc:0 "Defense platforms are a cost effective way to ensure our safety, but they need to be monitored from an operation center. Fortifying our Starbase to ensure its survivability in the event of an attack, and maximizing our capacity to network independent orbital defenses would give us more time to dispatch reinforcements."
  tech_archaeo_titan_beam:0 "Ancient Ruination Glare"
@@ -957,7 +957,7 @@
 
  # Buildings and Modules
 
- building_archaeostudies_faculty_relic_effect:0 "If built on a §YRelic World§!:\n Research Speed (Archaeostudies): §G+50%§!\n £minor_artifacts£ Minor Artifacts from £job_researcher£ Archaeoengineers: §G+0.3§!"
+ building_archaeostudies_faculty_relic_effect:1 "If built on a §YRelic World§!:\n Research Speed (Archaeostudies): §G+50%§!\n £minor_artifacts£ Minor Artifacts from £job_researcher£ Archaeoengineers: §G+0.3§!"
  building_archaeostudies_faculty:0 "Faculty of Archaeostudies"
  building_archaeostudies_faculty_desc:0 "A series of laboratories dedicated to the studies of technological applications of minor artifacts retrieved from elder empires."
 
@@ -1016,15 +1016,15 @@
  job_archaeoengineers:0 "Archaeo-engineer"
  job_archaeoengineers_plural:0 "Archaeo-engineers"
  job_archaeoengineers_desc:0 "Sometimes, it belongs in a warship, not a museum."
- job_archaeoengineers_effect_desc:0 "£job_researcher£ $job_archaeoengineers_plural$ turn $r_consumer_goods$ into £physics£ £society£ £engineering£ §YResearch Points§!"
+ job_archaeoengineers_effect_desc:1 "£job_researcher£ $job_archaeoengineers_plural$ turn $r_consumer_goods$ into £physics£ £society£ £engineering£ §YResearch Points§!"
  job_archaeo_drone:0 "Archaeo-engineering Drone"
  job_archaeo_drone_plural:0 "Archaeo-engineering Drones"
  job_archaeo_drone_desc:0 "For a Hive, cultural preservation doesn't hold as much power as an archaeolaser."
- job_archaeo_drone_effect_desc:0 "£job_researcher£ $job_archaeo_drone_plural$ turn $r_minerals$ into £physics£ £society£ £engineering£ §YResearch Points§!"
+ job_archaeo_drone_effect_desc:2 "£job_researcher£ $job_archaeo_drone_plural$ turn $r_minerals$ into £physics£ £society£ £engineering£ §YResearch Points§!"
  job_archaeo_unit:0 "Archaeo-engineering Unit"
  job_archaeo_unit_plural:0 "Archaeo-engineering Units"
- job_archaeo_unit_desc:0 "Specialized drones for the careful manipulation and studyof ancient artifacts."
- job_archaeo_unit_effect_desc:0 "£job_researcher£ $job_archaeo_unit_plural$ turn $r_energy$ into £physics£ £society£ £engineering£ §YResearch Points§!"
+ job_archaeo_unit_desc:0 "Specialized drones for the careful manipulation and study of ancient artifacts."
+ job_archaeo_unit_effect_desc:2 "£job_researcher£ $job_archaeo_unit_plural$ turn $r_energy$ into £physics£ £society£ £engineering£ §YResearch Points§!"
 
  # Ship Components
 
@@ -1056,7 +1056,7 @@
  LARGE_ARCHAEO_ARMOR_DESC:0 "$tech_archaeoarmor_desc$"
  tt_LARGE_ARCHAEO_ARMOR_AP:0 "[GetArchaeoengineersEffectLargeArmor]"
  tt_LARGE_ARCHAEO_ARMOR:0 "From §Y$ap_archaeoengineers$§!:\nShield Hit Points: §G+450§!"
- STARBASE_AURA_ZRONI_STORM:0 "Zroni Storm Caster: Polarisation Module"
+ STARBASE_AURA_ZRONI_STORM:0 "Zroni Storm Caster: Polarization Module"
  STARBASE_AURA_ZRONI_STORM_DESC:0 "Controlling the Storm's general polarity allows to increase its power to dangerous levels for any unprepared vessel while maintaining safe conditions for our own."
  aura_starbase_zroni_storm:0 "$STARBASE_AURA_ZRONI_STORM$"
  SHIP_AURA_DETECTION_SCRAMBLER:0 "$tech_archaeo_detection_scrambler$"
@@ -1065,7 +1065,7 @@
  ARCHAEO_TITAN_BEAM_DESC:0 "$tech_archaeo_titan_beam_tech$"
  ARCHAEO_BEAM_TITAN:0 "$tech_archaeo_titan_beam$"
  PLANET_KILLER_DEVOLUTION:0 "$tech_archaeo_pk_devolving_beam$"
- PLANET_KILLER_DEVOLUTION_DESC:0 "$tech_archaeo_pk_devolving_beam_desc$"
+ PLANET_KILLER_DEVOLUTION_DESC:1 "$tech_archaeo_pk_devolving_beam_desc$"
  PLANET_KILLER_DEVOLVER:0 "$tech_archaeo_pk_devolving_beam$"
  PLANET_KILLER_DEVOLVER_DESC:0 "$PLANET_KILLER_DEVOLUTION_DESC$"
 

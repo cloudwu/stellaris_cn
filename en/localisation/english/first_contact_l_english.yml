@@ -37,7 +37,7 @@
 
  origin_payback:0 "Payback"
  origin_payback_desc:0 "This civilization has been visited by an alien empire who forcibly enlightened and enslaved them. They have repelled their invaders, but will they return?"
- origin_tooltip_payback_effects:0 "§R- WARNING: Challenging Origin§!\n- Start with 10 fewer £pop£ Pops than normal.\n- Begins with several important technologies yet to be researched and with an infrastructural disadvantage.\n- A special §HArchaeological Site§! in your system: the destroyed battleship of your former invaders.\n- This origin will guarantee a number of pre-FTL civilizations throughout the galaxy, regardless of the §H$FE_PRIMITIVE_WORLDS$§! slider setting.\n- A random pre-FTL civilization will be uplifted to have the §H$origin_broken_shackles$§! origin.\n- An §HAdvanced Empire§! with the §H$origin_slavers$§! origin is spawned somewhere in the galaxy.\n\n"
+ origin_tooltip_payback_effects:1 "§R- WARNING: Challenging Origin§!\n- Start with 10 fewer £pop£ Pops than normal.\n- Begins with several important technologies yet to be researched and with an infrastructural disadvantage.\n- A special §HArchaeological Site§! in your system: the destroyed battleship of your former invaders.\n- This origin will guarantee a number of pre-FTL civilizations throughout the galaxy, regardless of the §H$FE_PRIMITIVE_WORLDS$§! slider setting.\n- A random pre-FTL civilization will be uplifted to have the §H$origin_broken_shackles$§! origin.\n- An §HAdvanced Empire§! with the §H$origin_slavers$§! origin is spawned somewhere in the galaxy.\n\n"
 
  START_SCREEN_PAYBACK:0 "We had a deal.\n\nWhen the visitors from the stars revealed themselves, they offered us a fair contract: technological enlightment, to be repaid in installments. Within a generation, our planet was transformed into a so-called 'advanced civilization.'\n\nThen we read the fine print: to repay our 'debt', they insisted we work for them, on an indefinite term. When our leaders protested, the outsiders turned violent. We fought back.\n\nWe won, though barely, and only after suffering sizeable losses. Now, our scientists have finally reverse-engineered the secrets of FTL travel from the ships we destroyed. It's a big galaxy out there, but sooner or later we're sure to meet our 'benefactors' again. In fact, we're looking forward to it.\n\nIt's time to get some payback."
 
@@ -158,7 +158,7 @@
  # Ambient Object
  payback_site_ship_object:1 "Destroyed $NAME_MSI_country_initials$ Warship"
  payback_site_ship_tooltip:0 "The orbiting remains of a once powerful warship."
- 
+
  # Dig Site
  payback_digsite:0 "The Aftermath of Battle"
  payback_digsite_desc:1 "The warship that once threatened our homeworld still looms over us, a stark reminder of the fate we narrowly escaped. It is time to take back our skies and salvage the technological marvels contained within the wreck."
@@ -239,12 +239,12 @@
  # End of the project event
  origin.4934.name:0 "Restored Flagship"
  origin.4934.desc:1 "The retrofit of the former MSI Warship is complete. We now have at our disposal a vessel of massive power and significance.\n\nWatch out, galaxy!"
- origin.4934.tt:1 "The warship in orbit of [owner.capital_scope.GetName] has been restored into a §HFlagship§!."
+ origin.4934.tt:2 "The warship in orbit of [owner.capital_scope.GetName] has been restored into a §HFlagship§!."
 
 
  origin.4935.name:0 "Restored Habitat"
  origin.4935.desc:1 "The retrofit of the former MSI Warship is complete. We have now gained a state of the art science facility which will be instrumental to us in advancing our technological knowledge."
- origin.4935.tt:0 "The warship has been restored into a §HHabitat§!, devoted to uncovering the secrets of MSI's technology, in orbit of [owner.capital_scope.GetName]."
+ origin.4935.tt:1 "The warship has been restored into a §HHabitat§!, devoted to uncovering the secrets of MSI's technology, in orbit of [owner.capital_scope.GetName]."
 
 
  origin.4936.name:0 "Engineering Insights"
@@ -262,10 +262,10 @@
  # Event chains
  payback_debt_collectors_chain_title:0 "Debt Collectors"
  payback_debt_collectors_chain_desc:1 "Our former masters claim we owe them war reparations. An intergalactic debt collection agency has been hired to settle the matter.\n\n[root.GetDebtCollectorsDeal]\n\n§LThe debt collectors will visit us on§! §Y[root.payback_debt_collectors_timer]§!"
- payback_debt_collectors_chain_energy:1 "We agreed to pay §R5000§! £energy£ §H$energy$§! every 15 years."
+ payback_debt_collectors_chain_energy:3 "We agreed to pay §R5000§! £energy£ §H$energy$§! every 15 years."
  payback_debt_collectors_chain_consumer_goods:1 "We agreed to pay §R2500§! £consumer_goods£ §H$consumer_goods$§! every 15 years."
  payback_debt_collectors_chain_alloys:1 "We agreed to pay §R1250§! £alloys£ §H$alloys$§! every 15 years."
- payback_debt_collectors_chain_pops:1 "We agreed to give the debt collectors §B2 £pops£ Pops§! every 15 years."
+ payback_debt_collectors_chain_pops:3 "We agreed to give the debt collectors §B2 £pops£ Pops§! every 15 years."
  payback_debt_collectors_chain_refused_won:0 "We refused to strike a deal, fought the debt collectors, and won. But they will be back."
  payback_debt_collectors_chain_refused_lost:0 ""We refused to strike a deal, fought the debt collectors, and lost. They will be back."
  payback_debt_collectors_chain_empty:0 ""
@@ -276,7 +276,7 @@
  payback_make_them_pay_swords_chain_desc_no_MSI:0 "Our plans to retaliate against our former masters, the $NAME_MSI_country$, have been twarted by the [event_target:payback_stole_revenge_country.GetName].\n\nThey will be made to pay for stealing our revenge.\n\n§LWin a war against the §H[event_target:payback_stole_revenge_country.GetName]§! using the §Y$casus_belli_cb_payback$§! Casus Belli.§!"
 
  payback_make_them_pay_words_chain_title:0 "Even The Score"
- payback_make_them_pay_words_chain_desc:0 "[root.GetPaybackChainDescWords]"
+ payback_make_them_pay_words_chain_desc:1 "[root.GetPaybackChainDescWords]"
  payback_make_them_pay_words_chain_desc_MSI:0 "It's time for us to retaliate against our former masters, the $NAME_MSI_country$.\n\nOn the Senate Floor of the Galactic Community, we will bring them to their knees, exposing them for the slavers and cowards that they are."
  payback_make_them_pay_words_chain_desc_no_MSI:0 "Our former masters are no more, but our goal doesn't change: on the Senate Floor of the Galactic Community, we will fight all those who wish to exploit pre-FTL civilizations."
 
@@ -310,7 +310,7 @@
  payback_underdog_khan_desc:0 "$payback_underdog_desc$"
  payback_student:0 "Certified Educator"
  payback_student_desc:0 "The student becomes the master."
- payback_student_tooltip:0 "Technological Enlightenment effectiveness: §G+25%§!."
+ payback_student_tooltip:1 "Technological Enlightenment effectiveness: §G+25%§!."
 
  # Casus Belli/war goal
  casus_belli_cb_payback:0 "Payback"
@@ -371,7 +371,7 @@
  origin.4018.desc:0 "If you are unable or unwilling to cover the energy cost, you may repay your debt by pledging a certain percentage of your labor pool to §H$NAME_MSI_country$§!. Your workers will be transported to their designated job sites and will be provided with basic accommodation until they have successfully repaid the debt.\n\nIt's worth noting that said workers do not need to be full citizens. Any able bodies will do."
  origin.4018.a:0 "Actually, we'd prefer to pay using energy."
  origin.4018.b:0 "We'll do it."
- origin.4018.b.tooltip:0 "Pledge to give §B2 £pops£ Pops§! to the debt collectors upon their return."
+ origin.4018.b.tooltip:1 "Pledge to give §B2 £pops£ Pops§! to the debt collectors upon their return."
  origin.4018.c:0 "So you're asking for slaves?"
  origin.4018.c.response:0 "The correct term is "indentured servants". Slavery is an unfair practice based on exploitation of pre-existing power structures. Our exchanges are based solely on the terms of contract."
  origin.4018.d:0 "We refuse to pay."
@@ -401,10 +401,10 @@
  # Hub - subsequent encounters
  origin.4030.name:0 "Debt Collectors"
  origin.4030.desc.base:0 "Dear [owner.GetName],\n\nOnce again we're contacting you on the behalf of §Y$NAME_MSI_country$§! regarding your outstanding debt."
- origin.4030.desc.energy:0 "$origin.4030.desc.base$\n\nAs per our agreement, we are here to collect a sum equal to §R5000§! £energy£ §H$energy$§! for the repayment of your debt."
+ origin.4030.desc.energy:1 "$origin.4030.desc.base$\n\nAs per our agreement, we are here to collect a sum equal to §R5000§! £energy£ §H$energy$§! for the repayment of your debt."
  origin.4030.desc.consumer_goods:0 "$origin.4030.desc.base$\n\nAs per our agreement, we are here to collect a sum equal to §R2500§! £consumer_goods£ §H$consumer_goods$§! for the repayment of your debt."
  origin.4030.desc.alloys:0 "$origin.4030.desc.base$\n\nAs per our agreement, we are here to collect a sum equal to §R1250§! £alloys£ §H$alloys$§! for the repayment of your debt."
- origin.4030.desc.pops:0 "$origin.4030.desc.base$\n\nAs per our agreement, we are here to collect §B2 £pops£ Pops§! willing to dedicate their labor to the repayment of your debt."
+ origin.4030.desc.pops:1 "$origin.4030.desc.base$\n\nAs per our agreement, we are here to collect §B2 £pops£ Pops§! willing to dedicate their labor to the repayment of your debt."
  origin.4030.desc.defeated:0 "Dear [owner.GetName],\n\nOnce again we're contacting you on behalf of the §H$NAME_MSI_country$§! regarding an outstanding debt. We only wish to resolve this matter peacefully, and hope that you are more willing to participate in a constructive dialogue."
  origin.4030.desc.furious:0 "Dear [owner.GetName],\n\nThis is our last warning: the debt you owe to the §H$NAME_MSI_country$§! urgently needs to be repaid. Despite multiple attempts to resolve this matter peacefully, you have consistently failed to cooperate. If you refuse once again to agree on a repayment plan, we will have no choice but to seize your assets by any means necessary."
  origin.4030.a:0 "We are willing to settle."
@@ -419,7 +419,7 @@
  origin.4030.h:0 "We know who you are: victims. Like us."
 
  # Pay
- origin.4031.desc:1 "Thank you for your prompt response and your willingness to settle the matter equitably! The outstanding sum is now equal to §Y[owner.debt_collectors_amount]§! £energy£ §H$energy$§!. We will be back in 15 years to collect the next installment. Have a nice day!"
+ origin.4031.desc:2 "Thank you for your prompt response and your willingness to settle the matter equitably! The outstanding sum is now equal to §Y[owner.debt_collectors_amount]§! £energy£ §H$energy$§!. We will be back in 15 years to collect the next installment. Have a nice day!"
  origin.4031.a:0 "The outstanding sum is higher than expected."
 
  # You got scammed
@@ -487,7 +487,7 @@
  origin.4060.desc:0 "$origin.4060.intro$\n\nWe should celebrate. And then, perhaps, we should lay down our weapons and finally rest."
  origin.4060.a:0 "We are satisfied."
  origin.4060.b:0 "Our cause is still worth fighting."
- origin.4060.b.tooltip:0 "We can now use the §H$casus_belli_cb_payback_punishment$§! casus belli to wage war against those who exploit pre-FTL civilizations."
+ origin.4060.b.tooltip:1 "We can now use the §H$casus_belli_cb_payback_punishment$§! casus belli to wage war against those who exploit pre-FTL civilizations."
 
  # MSI defeated by someone else - fires after action.62
  origin.4070.name:0 "Debt Forgiven"
@@ -496,7 +496,7 @@
  origin.4070.b:0 "Our cause is still worth fighting."
  origin.4070.b.tooltip:0 "We'll keep fighting to ban the exploitation of pre-FTLs."
  origin.4070.c:0 "They stole our revenge. They'll pay for it."
- origin.4070.d.tooltip:0 "We can now use the §HPayback§! casus belli to declare war to the §Y[destroyer_country.GetName]§!."
+ origin.4070.d.tooltip:1 "We can now use the §HPayback§! casus belli to declare war to the §Y[destroyer_country.GetName]§!."
 
  # Defeated the people who defeated the MSI
  origin.4071.name:0 "Debt Offloaded"
@@ -513,7 +513,7 @@
 
  ## Sharing Espionage Intel | Payback and Broken Shackles diplo event
  origin.4120.name:0 "Shared Intel"
- origin.4120.desc:0 "Our empires share a common enemy: the §Y$MSI_Name$§!. To protect ourselves against this threat, we suggest giving their operatives access to our classified intel."
+ origin.4120.desc:1 "Our empires share a common enemy: the §Y$NAME_MSI_country$§!. To protect ourselves against this threat, we suggest giving their operatives access to our classified intel."
  origin.4120.a:0 "A valuable proposal."
  origin.4120.b:0 "A common enemy doesn't make us friends."
 
@@ -554,7 +554,7 @@
  START_SCREEN_BROKEN_SHACKLES:0 "Free at last!\n\nSome were born into bondage. Others, crippled by debt, found themselves sold as indentured labor. But the technology of our former masters was not enough to save them. In secret, we planned our mutiny. During the brief, bloody struggle, our captors were killed, and their slave ship critically damaged. An emergency landing left us stranded on the surface of [Root.Capital.GetName].\n\nThough we are made up of species from many different worlds, under your leadership we have found common cause. In time, the damaged systems of the slaver vessel will be repaired, and its bounty of secrets - including the location of our former home worlds - will be revealed.\n\nOur shackles are broken. Now the work begins."
  START_SCREEN_BROKEN_SHACKLES_MEGACORP:0 "Free* at last!\n\nSome were born into bondage. Others, crippled by debt, found themselves sold as indentured labor. All of us dreamed of something more, a life of ease and abundance. In secret, we planned our mutiny. During the brief, bloody struggle, our captors were killed, and their slave ship critically damaged. An emergency landing left us stranded on the surface of [Root.Capital.GetName].\n\nThough we are made up of species from many different worlds, under your directorship we have found common cause. Our former masters may have been cruel, but they understood the business of life. Like them, we must be steadfast in our pursuit of profit. In time, the damaged systems of the slaver vessel will be repaired, and its bounty of secrets - including the location of our former home worlds - will be revealed. Our shackles are broken. Now is the time to incorporate.\n\n*Legal Notice:\nThe use of the word 'free' is non-binding and does not oblige the Corporation to provide any discount or volunteer any action that could affect the profit margins of [Root.GetName] shareholders. If you have any questions regarding this or other terms, or should you wish to opt out of continued existence on [Root.Capital.GetName], please contact our legal or security professionals in the $building_bureaucratic_1$ on [Root.Capital.GetName] for immediate resolution."
  origin_tooltip_broken_shackles_effects:0 "§R- WARNING: Challenging Origin§!\n- Begins with several important technologies yet to be researched and with an infrastructural disadvantage.\n- Your chosen species is joined by a mixture of pre-FTL £pop£ Pops from across the galaxy.\n- A pre-FTL civilization of your chosen species will be present somewhere in the galaxy.\n- This origin will guarantee a number of pre-FTL civilizations throughout the galaxy, regardless of the §H$FE_PRIMITIVE_WORLDS$§! slider setting.\n- A random pre-FTL civilization will be uplifted to have the §H$origin_payback$§! origin.\n- An §HAdvanced Empire§! with the §H$origin_slavers$§! origin is spawned somewhere in the galaxy."
- 
+
  is_broken_shackles_origin:0 "$TRIGGER_FAIL$Our origin does not allow us to treat our population in this manner."
 
  culture_shock_broken_shackles:0 "$culture_shock_bronze_age$"
@@ -571,8 +571,8 @@
  origin_111.a:0 "$origin.111.name$!"
  origin_111.tooltip:0 "Unlocks the §Y$decision_unshackled_memorial$§! decision on §Y[Root.Capital.GetName]§!.\n$decision_unshackled_memorial_effects$\n\nThe §Y$district_crashed_slaver_ship_plural$§! will now provide £job_clerk£ §Y$job_clerk_plural$§! Jobs instead of £job_broken_shackles_scavenger£ §Y$job_broken_shackles_scavenger$§! Jobs."
  decision_unshackled_memorial_effects:0 "- Converts the §Y$d_crashed_slaver_ship$§! into the §Y$d_crashed_slaver_ship_memorial$§! providing §G+2§! £job_culture_worker£ $job_culture_worker$ Jobs\n- The §Y$district_crashed_slaver_ship_plural$§!, §Y$building_low_tech_scrap_refinery$§!, §Y$building_low_tech_power_plant$§! and §Y$building_low_tech_farm$§! will be converted into advanced infrastructure."
- 
- 
+
+
  #Pre-FTL Homeworlds Found
 
  origin.5000.name:0 "Homecoming"
@@ -584,10 +584,11 @@
  origin.5001.desc:0 "[From.GetName]... From orbit, it appears so small.\n\nA world does not belong to its people; it is the people who belong to their world. In returning here, we take another step towards reclaiming our past.\n\nThe trauma we experienced at the hands of our former masters can never be undone. True healing will take generations. But today is a good day."
  origin.5001.homecoming.desc:0 "[From.GetName]... From orbit, it appears so small.\n\nA world does not belong to its people; it is the people who belong to their world. In returning here, we take another step towards reclaiming our past.\n\nThe trauma we experienced at the hands of our former masters can never be undone. True healing will take generations. But today is a good day."
  origin.5001.empty.desc:0 "[From.GetName]... Something is very wrong here. From orbit, we can detect no signs of sentient life. Somehow, the entire population has been eliminated.\n\nWhile this was not the homecoming we hoped for, by returning to this system we have taken another step towards reclaiming our past. Unfortunately, we alone must carry the legacy of [From.GetName]. It is up to us to remember."
+ origin.5001.tomb.desc:0 "[From.GetName]... Something very wrong has happened here.\n\nDust drifts across a blasted landscape. Much of the surface is irradiated, and the few desperate survivors cling to life in the ruins.\n\nWhile this was not the homecoming we hoped for, by returning to this system we have taken another step towards reclaiming our past."
  origin.5001.uplifted.desc:0 "[From.GetName]... Since we were taken from our home, much has transpired here. No longer bound to a single planet, the population has turned towards the stars. While this may not be the homecoming we expected, the technological progress on [From.GetName] is remarkable.\n\nFor us, there is no going back; our stolen past can never be reclaimed. All we can do now is look to the future."
  origin.5001.conquered.desc:0 "[From.GetName]... Since we were taken from our home, much has transpired here. Far from a sovereign people, our kin have been claimed by another galactic power.\n\nFor us, there is no going back; our stolen past can never be reclaimed. All we can do now is look to the future."
  broken_shackles_homeworld_found_01:0 "Homecoming"
- broken_shackles_homeworld_found_01_desc:0 "Returning home has immensely impressed our people and reenergized our society."
+ broken_shackles_homeworld_found_01_desc:0 "Returning home has immensely impressed our people and reinvigorated our society."
  broken_shackles_homeworld_found_02:0 "Home World Found"
  broken_shackles_homeworld_found_02_desc:0 "Our most recent homecoming has energized our population and galvanized society."
  broken_shackles_homeworld_found_03:0 "Restricted Emigration"
@@ -616,7 +617,7 @@
  origin.5004.name:0 "Riots on [Root.Capital.GetName]"
  origin.5004.desc:0 "Stoking anti-government sentiment, The Returners are calling on the various species in our empire to return to their roots. Fighting has broken out between the movement's most extreme factions and pro-government forces. Severe damage has been reported in several major urban centers."
  origin.5004.a:0 "Declare Martial Law"
- 
+
  origin.5005.name:0 "Unity of Purpose"
  origin.5005.desc:0 "While forbidding our people to return to their respective home worlds has not been without its consequences, in the end it has proven the correct decision. Recently, we have witnessed a marked improvement in social cohesion, as well as a newfound sense that [Root.Capital.GetName] is indeed our home."
  origin.5005.a:0 "Only a strong hand can forge a nation."
@@ -644,7 +645,7 @@
  #Homesick Alternate
 
  origin.5011.desc:0 "In casting off our shackles, we took the first step towards becoming a people. However, in recent years, popular media is awash with highly romanticized depictions of the 'simple life' enjoyed on our former home world. Many are already clamoring to return.\n\nIf we are not careful, this movement could have a seriously destabilizing effect on our society."
- 
+
  #New Factions Founded
 
  origin.5041.name:0 "Unshackled Politics"
@@ -674,11 +675,11 @@
  resolution_proposed_intro:0 "Word has reached us from our contacts at the Galactic Community: legislation is in the works that would ban"
  origin.5094.name:0 "Galactic Resolution Proposed"
  origin.5094.desc:0 "$resolution_proposed_intro$ chattel and livestock slavery throughout the galaxy. If we truly profess to favor freedom, we must stand on the side of change. What will our people think, if we fail to act?"
- 
+
  origin.5095.name:0 "Most Forms of Slavery Outlawed"
  origin.5095.desc:0 "A great day at the Galactic Community, where members voted to outlaw most forms of slavery. No longer will the people of the galaxy need to fear oppression at the hands of petty thugs and profit-hungry corporations. Although there is a long way to go before the right of all sentient beings to freedom is ensured, this represents an important first step."
  origin.5095.a:0 "Enlightened minds prevail."
- 
+
  slavery_allowed_outro:0 "Due to the malign presence of oppressive regimes and exploitative corporations, this detestable practice will continue for the foreseeable future."
  origin.5100.name:0 "Slavery Receives Tacit Approval"
  origin.5100.desc:0 "A heartbreaking day at the Galactic Community, where a motion to outlaw most forms of slavery failed to gain enough votes. $slavery_allowed_outro$"
@@ -719,7 +720,7 @@
  broken_shackles_slavery_repeal:0 "Slave Ban Repealed"
 
  #Crashed Slaver Ship - Initial Arc Site
- 
+
  broken_shackles_digsite:0 "Crashed Slaver Ship"
  broken_shackles_desc:0 "Repairing the computer core of the crashed slaver ship should reveal the location of our former home worlds... as well as $NAME_MSI_country$."
 
@@ -739,7 +740,7 @@
  origin.5030.desc:0 "Thanks to some incredible, outside-the-box thinking, our [engineering_shackled_species.GetAdj] engineers have managed to restart the damaged computer core. By introducing a procedural AI to the ship's systems, we were able to engage it in dialogue. Essentially, we convinced the machine to work with, rather than against us.\n\nThe breakthrough has provided our scientists with new insights into the nature of data encryption. As we continue to make our presence felt on the galactic stage, such knowledge could prove invaluable."
 
  origin.5035.name:0 "Data Mine"
- origin.5035.desc:0 "The damaged computer core has been fully repaired, and while most of the data is encoded, decryption efforts are already underway. If we're willing to put in the time and allocate the resources, it's only a matter of time before we have access to everything - including the location of our former home worlds."
+ origin.5035.desc:1 "The damaged computer core has been fully repaired, and while most of the data is encoded, decryption efforts are already underway. If we're willing to put in the time and allocate the resources, it's only a matter of time before we have access to everything - including the location of our former home worlds."
 
  origin.5035.desc.MSInocontact:0 "$origin.5035.desc$\n\nIn fact, we may have already learned something to our advantage: by triangulating the hyperlane dilations along the slaver ship's flight path, we have uncovered the galactic coordinates of $NAME_MSI_country$.\n\nWe now have the choice, either to confront our former masters, or leave them to their fate."
 
@@ -762,7 +763,7 @@
  origin.5065.desc:0 "The moment we have long anticipated has arrived: we have made contact with §H[This.ContactCountry.GetRealName]§!.\n\nAfter the mutiny, some hoped we could avoid detection, but it is now clear that $NAME_MSI_country$ have been aware of our presence on the galactic stage for some time. Only the pursuit of profit has kept them from returning to [Root.owner.capital_scope.GetName] to collect their 'legal assets.' It seems we weren't worth the cost of travel."
  origin.5065.a:0 "Typical."
  broken_shackles_MSI_contact_01:0 "Contact with $NAME_MSI_country_initials$"
- 
+
  origin.5070.name:0 "Weighty Promises"
  origin.5070.desc:0 "Representatives from the §H[This.ContactCountry.GetRealName]§! have approached our envoy with offers of friendship. But we know how hollow such assurances are.\n\nThe corporation first arrived on our worlds with promises of a better life. With sweet words and lavish gifts, they softened our leaders. Loans were provided; contracts signed. Investment capital flowed, and our marketplaces flooded with goods. Before we fully understood what was happening, it had already been done: we had become assets, and $NAME_MSI_country_initials$ our masters.\n\nNever again. As we push forward on the galactic stage, it's essential that we stand on our own."
  origin.5070.a:0 "We won't be fooled again."
@@ -774,13 +775,13 @@
 
  origin.5080.name:0 "Encounter at the Galactic Community"
  origin.5080.desc:0 "Word from our representatives at the Galactic Community: contact has been made with [MSI_country.GetName].\n\nThe corporation first arrived on our worlds with promises of a better life. With sweet words and lavish gifts, they softened our leaders. Loans were provided; contracts signed. Before we truly understood what was happening, it had already been done: we had become assets, and they our masters. The members of the Galactic Community must be warned. $NAME_MSI_country_initials$ cannot be trusted."
- 
+
  MSI_war_outro:0 "We did not seek out this war. But we will end it."
  origin.5135.name:0 "Unshackled"
  origin.5135.attackers.desc:0 "For too long we have lived in fear of our former masters, but while we enjoy the benefit of a freedom justly earned, far too many continue to suffer under the indignities of indentured servitude. Some may decry this as a war of aggression. Nevertheless, the time has come for us to strike a blow against tyranny. No longer will the petty thugs and profit-mongers of the galaxy be allowed to ply their vile trade.\n\nToday, we march to war."
  origin.5135.defenders.desc:0 "Having failed to conquer us with money and lies, $NAME_MSI_country$ will now try with force. Their Board of Directors believe us weak. But in casting off our shackles, we have forged an identity that can never be broken.\n\n$MSI_war_outro$"
  origin.5135.a:0 "Let them tremble."
- 
+
  origin.5140.name:0 "Justice Postponed"
  origin.5140.desc:0 "The unthinkable has happened. [From.GetName] is victorious, and once more we find ourselves bent beneath their yoke. But while we may have lost this war, the battle for equality and justice is far from over."
  origin.5140.a:0 "We will remember."
@@ -844,7 +845,7 @@
  origin.5205.c.tooltip:0 "§LEverything is political. A healthy society is one that invests in an engaged and active citizenry.§!"
  origin.5205.d.tooltip:0 "§LRighting the systemic problems in our society will require a massive investment in time and resources.§!"
  origin.5205.e.tooltip:0 "§LGovernment oversight of the media is necessary to reduce political polarization.§!"
- 
+
  origin.5210.name:0 "A Culture of Division"
  origin.5210.desc:0 "Governmental oversight may have helped to tone down the political discourse, but it has done little to combat the divisions in society. Community leaders continue to sow discord between various species and culture groups. Based on the kind of material being published on the information net, the problem is certain to get worse before it gets better."
  origin.5210.a:0 "We need to address the root causes of this issue."
@@ -857,7 +858,7 @@
  origin.5220.name:0 "New Stellar Order"
  origin.5220.desc:0 "Our security forces have succeeded in restoring order throughout our systems. Political radicals of all stripes have been rounded up and imprisoned, and their leaders now face charges of treason against the state.\n\nAs we look back on this regrettable period in our history, one thing is abundantly clear: a society like ours can only be governed by a firm hand. It is high time we provided one."
  origin.5220.a:0 "United, we thrive."
- 
+
  origin.5225.name:0 "Fractured Mosaic"
  origin.5225.desc:0 "From its founding, our society has been shaped by conflict. Perhaps it was inevitable that things would get worse before they got better; across the information net, hate groups proliferate. Calls for the expulsion of one or another species from our systems are all too common. Yet there are also signs of increased awareness of a shared struggle.\n\nGroups with little more in common than a desire for change have been coming together with increasing regularity. By confronting our issues head-on, we have shone a light on what otherwise might have grown in darkness. Perhaps one day we will look back on this time of conflict as the turning of the tide."
 
@@ -945,7 +946,7 @@
  broken_shackles_homeworld_uplifted:0 "Home World Raised"
 
  ####Loc for all low-tech jobs / buildings####
- 
+
  job_low_tech_researcher:0 "Scientist"
  job_low_tech_researcher_plural:0 "Scientists"
  job_low_tech_researcher_desc:0 "Our former masters ignored our gifts and downplayed our intelligence. Now, the keenest minds among us are free to follow their ambition."
@@ -957,6 +958,7 @@
  job_low_tech_laborer_desc:0 "As assets they were worked to the bone. With freedom has come renewed purpose, and a vigor that no slave could ever hope to match."
  job_low_tech_laborer_effect_desc:0 "£job_low_tech_laborer£ $job_low_tech_laborer_plural$ turn $r_minerals$ into $r_consumer_goods$ and $r_alloys$"
  mod_job_low_tech_laborer_add:0 "$job_low_tech_laborer$ Jobs"
+ planet_laborer:0 "Laborer Jobs"
 
  job_low_tech_technician:0 "Reactor Engineer"
  job_low_tech_technician_plural:0 "Reactor Engineers"
@@ -1037,6 +1039,10 @@
  decision_unshackled_memorial_tt:0 "§Y$d_crashed_slaver_ship$§! is replaced with §Y$d_crashed_slaver_ship_memorial$§!.\nSome §YBuildings§! and §YDistricts§! will be converted into advanced infrastructure."
  remove_broken_shackles_modifiers_tt:0 "§Y$free_at_last_broken_shackles$§! and §Y$culture_shock_broken_shackles$§! modifiers removed."
 
+ decision_remove_wreckage:0 "Remove Wreckage"
+ decision_remove_wreckage_desc:0 "The wreckage of the crashed slaver ship should be removed to make way for our increasing urbanization."
+ decision_remove_wreckage_tt:0 "§Y$district_crashed_slaver_ship_plural$§! will be converted into §Y$district_city_plural$§!.\nThe §Y$d_crashed_slaver_ship$§! and any §Y$d_ship_debris_broken_shackles_blocker$§! will be removed."
+
  job_broken_shackles_scavenger:0 "Scavenger"
  job_broken_shackles_scavenger_plural:0 "Scavengers"
  job_broken_shackles_scavenger_desc:0 "Scavengers explore the ruins of the §Y$d_crashed_slaver_ship$§! for anything of value. "
@@ -1107,7 +1113,7 @@
  origin.6005.a:0 "You are welcome as long as you abide by the norms of this society."
  origin.6005.a.tt:0 "Add §Y[fotd_Leader.GetName]§! as a §YScientist§! to our leader pool."
  origin.6005.b:0 "Stay on your rock."
- 
+
  origin.6006.desc.base1:0 "An admiral from [fotd_habitants.Capital.GetName] is offering to join our navy as a temporary commander. [fotd_Leader.GetSheHeCap] motivations are unclear, but our informants tell us that there might be a scandal involved."
  origin.6006.desc.base2:0 "[fotd_Leader.GetName] is eager to sign on with us temporarily. [fotd_habitants.Capital.GetName] has always been a breeding ground for crafty and unconventional tactics."
  origin.6006.desc.base3:0 "After excelling in a recent joint fleet exercise, we have extended Admiral [fotd_Leader.GetName] the opportunity to take command in a real navy."
@@ -1272,9 +1278,9 @@
 
  origin.6175.name:0 "Hunted"
  origin.6175.desc:0 "The §YFevorians§! have won. Our people are decimated, and our home world desecrated.\n\nInter-atmosphere ships were ferrying [Owner.GetSpeciesNamePlural] into orbit until the planet's final moments. Those who remained on the surface were incinerated the instant the near-lightspeed projectile ignited the atmosphere. [fotd_seperatist_planet.GetName] has offered to host our government and house the evacuees."
- 
+
  origin.6180.name:0 "Trajectories Clear"
- origin.6180.desc:0 "[Target.GetName] is safe. We have managed to divert the tungsten projectile far enough to ensure our own survival, though over the course of its long journey, it may very well become another planet's problem."
+ origin.6180.desc:1 "[Target.GetName] is safe. We have managed to divert the tungsten projectile far enough to ensure our own survival, though over the course of its long journey, it may very well become another planet's problem."
  origin.6180.a:0 "Now, about that moon."
 
  origin.6185.name:0 "Countermeasures"
@@ -1511,7 +1517,7 @@
  MESSAGE_CONTROLLED_SHATTERING:0 "After the controlled detonation, we have reduced the projectile's mass by close to 34%."
  MESSAGE_DEFLECTING_FIELDS:0 "Using advanced field manipulation and shielding technology, we have managed to leech some of the speed from the Last Gift."
 
- #Names 
+ #Names
 
  NAME_Divider:0 "Divider"
  NAME_Fevor:0 "Fevor"
@@ -1602,7 +1608,7 @@
  #thank you gift
  fircon.1233.name:0 "A Belated Thank You"
  fircon.1233.desc:0 "One of our ships has intercepted a cache that suddenly materialized in our home system. The complex lock gave way as soon as a member of our species touched it, revealing a dizzying collection of artifacts... And a thank-you note from a Many-Tentacled traveler who claims to have visited our home planet decades ago."
- 
+
  ## Special project - learning to Jaunt
  THE_JAUNT_PROJECT:0 "Learning to Jaunt"
  THE_JAUNT_PROJECT_DESC:0 "The sudden appearance of the Many-Tentacled One on our capital has proven that the once theoretical concept of 'psionic teleportation' is real. By putting our best [owner.GetScientistPlural] on the job, it might be possible for us to learn the secrets of instantaneous interstellar travel."
@@ -1640,10 +1646,10 @@
  awareness_partial_tt:0 "This civilization is partially aware of the existence of life in the galaxy. Something is out there. But what?"
  awareness_high_tt:0 "This civilization is aware that the galaxy is full of life; but who are these creatures, and what do they want?"
  awareness_full_tt:0 "Fully aware of interstellar life, this civilization understands it belongs to a galactic community."
- 
+
  AWARENESS_STAGE_VAL_DESC:0 "Current Awareness: $VAL|0Y$"
  AWARENESS_OLD_DESC:0 "At the start of the month, their awareness was $OLDVAL|0Y$."
- 
+
  PREFTL_TECH_LEVEL_VAL_DESC:0 "Current progress to the next age: §Y$VAL|0%$§!"
 
  MESSAGE_PRE_FTL_AWARENESS_INCREASED_TITLE:0 "Awareness Increased"
@@ -2316,7 +2322,7 @@
  fircon.8055.c:0 "Pressure the [preftl_hagglers_country.GetName] into better deals."
 
  leader_trait_preftl_haggler:0 "Business Mind"
- leader_trait_preftl_haggler_desc:0 "Coming from a [GetPreFTLUpper] country, this leader has displayed an exceptionally keen mind for business."
+ leader_trait_preftl_haggler_desc:1 "Coming from a [Owner.GetPreFTLUpper] country, this leader has displayed an exceptionally keen mind for business."
  preftl_hagglers_mod:0 "Predictive Trading Algorithms"
  preftl_hagglers_mod_desc:0 "Our studies of the [preftl_hagglers_country.GetName] [GetPreFTLUpperPlural] and their aggressive trading practices have produced some compelling economic models."
 
@@ -2334,7 +2340,7 @@
  tech_abusers_desc:0 "The inhabitants of this planet have been known to abuse technology."
  opinion_tech_abusers:1 "They disagree with our choices."
  opinion_tech_abusers_pro:1 "They respect us for trusting them."
- 
+
  # Invasive Species
  fircon.8565.name:0 "Invasive Species"
  fircon.8565.desc:0 "When we returned from a recent diplomatic visit with the [preftl_invasives_species.GetName] of [preftl_invasives_planet.GetName], we discovered we'd picked up some unusual stowaways. An infestation of small, wingless, wriggling arthropods had found their way aboard our shuttle.\n\nThey move fast, and are tiny enough that our sensors can't detect them. Given their rapid breeding, it has become increasingly difficult to contain the invasion.\n\nUnfortunately, the species is a symbol of plenty to the people of [preftl_invasives_planet.GetName]. How we respond to this could affect our relations with the [preftl_invasives_species.GetNamePlural]."
@@ -2372,7 +2378,7 @@
  stand_your_ground_desc:0 "Proud of their past, these people hold fast to their traditional structure of government."
  opinion_flavors_up:0 "They appreciate our diplomatic approach."
  opinion_flavors_down:0 "They trust us less."
- 
+
  fircon.8000.name:0 "Xenophiliacs"
  fircon.8000.desc:0 "In an amusing example of cross-cultural exchange, a significant number of young people on [pre_ftl_planet.GetName] have developed a consuming interest in all things [owner.GetAdj]. Eagerly snatching up anything even remotely connected to our culture, these passionate youngsters now comprise a vibrant and growing subculture on the planet.\n\nWe've even been told that an upcoming fan convention will feature a costume contest."
  fircon.8000.a:0 "Do they need a judge?"
@@ -2440,17 +2446,75 @@
  opinion_lone_drone:0 "Reassimilation pleases them."
 
  # list effects/triggers
- 
+
  effect_random_observed_pre_ftl_within_border:0 "Random [GetPreFTLUpper] country in our borders with an observation post"
  effect_every_observed_pre_ftl_within_border:0 "Every [GetPreFTLUpper] country in our borders with an observation post"
  effect_random_pre_ftl_within_border:0 "Random [GetPreFTLUpper] country in our borders"
  effect_every_pre_ftl_within_border:0 "Every [GetPreFTLUpper] country in our borders"
- 
+
  any_observed_pre_ftl_within_border_trigger:0 "Any [GetPreFTLUpper] country in our borders with an observation post"
  count_observed_pre_ftl_within_border_trigger:0 "Number of [GetPreFTLUpperPlural] countries in our borders with an observation post $IS_NOT$ $COMPARATOR$ $NUM|Y$"
  observed_pre_ftl_within_border_all_trigger:0 "$IS_ALL_NOT$ [GetPreFTLUpperPlural] countries in our borders with an observation post fulfill the following conditions"
  any_pre_ftl_within_border_trigger:0 "Any [GetPreFTLUpper] country in our borders"
  count_pre_ftl_within_border_trigger:0 "Number of [GetPreFTLUpperPlural] countries in our borders $IS_NOT$ $COMPARATOR$ $NUM|Y$"
+
+
+##################################################
+# The Chosen (initialisers, events and arc site) #
+##################################################
+ NAME_The_Chosen:0 "The Chosen"
+ NAME_ADJ_Chosen:0 "Chosen"
+ NAME_Aspharelle:0 "Aspharelle"
+ NAME_Taremes:0 "Taremes"
+ NAME_Ereba:0 "Ereba"
+ NAME_Ithomes_Gate:0 "Ithome's Gate"
+ NAME_Ophala:0 "Ophala"
+ NAME_Charynoi:0 "Charynoi"
+
+ site_the_chosen_backstory:0 "Abandoned Observation Outpost"
+ site_the_chosen_backstory_desc:0 "An abandoned observation outpost orbits §Y[From.Planet.MoonOf.GetName]§!. It may shed some light on the origins of the pre-FTL §Y$NAME_Charynoi$§! civilization on the planet below."
+
+ arcsite.3000.name:0 "The $NAME_Charynoi$ Museum"
+ arcsite.3000.desc:0 "The abandoned observation post above [From.Planet.MoonOf.GetName] appears to have been repurposed shortly before it was abandoned. Though there is equipment to surveil the inhabitants of the planet in evidence, most of it seems to be dedicated to a museum of $NAME_Charynoi$ history. Curiously for such a warlike species, subjects relating to violence seem to have been avoided, and exhibits appear to show various rituals of peace and fertility.\n\nA series of data crystals have been left in the control room. It is evident that we were supposed to find them."
+ arcsite.3000.A:0 "Delve into their secrets."
+
+ arcsite.3005.name:0 "Ethnographic Records"
+ arcsite.3005.desc:0 "The first crystal has been translated. It is prefaced with the words "This is the record of the $NAME_Charynoi$ people, left behind by the Prophetess Ithikarios, so that those who might find it may forgive us our sins."\n\nWhat follows is a collection of historical, philosophical and artistic works as may have been created by a fairly standard, if somewhat belligerent, late industrial society. Our [Owner.GetLinguists] have sent it back to [Owner.Capital.GetName] for further analysis."
+ arcsite.3005.B:0 "How boring."
+
+ arcsite.3010.name:0 "The Turning Point"
+ arcsite.3010.desc:0 ""Now I shall recount where it all went wrong - where we first fell to the sin of arrogance," declaims Ithikarios.\n\nThe second crystal recounts how the $NAME_Charynoi$ gradually uncovered the mysteries of space flight, seemingly about a hundred years before the [Root.Owner.GetName]. They found two beautiful planets in their own system, and concluded that those had been bequeathed to them by the Gods as their birthright, which they were now claiming.\n\nIn horrified tones, Ithikarios recounts the darker side to these early exploits: nascent civilizations on their new colonies had not willingly yielded their homes. Beaten into submission, they were enslaved and eventually dwindled, falling to diseases the $NAME_Charynoi$ did not care to cure.\n\nOur [Owner.GetLinguists] are hard at work translating the third and final data crystal."
+
+ arcsite.3015.name:0 "The Traitor's Gambit"
+ arcsite.3015.desc:0 ""Eventually, we exhausted the confines of the space we had been bequeathed. We knew of the existence of the Wormhole, but it defied our study. Our realm was so bountiful, so full of beauty, that it was not hard to convince ourselves that we were the Chosen. That the Wormhole was a test, and once we were worthy, it would be our Holy Purpose to spread our kind across all the galaxy.\n\n"I was once chief amongst those seeking to fulfill this duty. When inspiration came to me - when I realized I held the key to the opening of the Wormhole - I prayed for days at the Shrine of my Ancestors. And eventually: Revelation. We were not worthy. If we went beyond the Wormhole, we would find only pain. $NAME_Aspharelle$ would be scoured, out of punishment for the crimes we had committed. I resolved to destroy my research and seek a different path.\n\n"It was hard to find those who I could trust. If we were discovered, we would surely have longed for a quick death. Though I am more convinced than ever that we are right, we would have been seen as apostates. Eventually, we launched a daring plan: under the guise of making a fool attempt to fly the wormhole blind, we built an ark ship to sail into the unknown, towards a distant star. Many years, we traveled through empty space, until we came to our destination. Now we wish nothing more than to be left in peace to live virtuous lives, so that we may prove that not all $NAME_Charynoi$ are evil."\n\nApologizing profusely for any harm done to us by her brethren, Ithikarios mentions her attempts at erecting an impenetrable shield around [From.Planet.MoonOf.GetName], so that her people would never again be tempted to seek the stars. She failed, but our [Owner.GetResearchers] have been able to work where she went wrong. We could erect the shield now, if we so desire."
+ arcsite.3015.A:0 "We shall fulfil their wishes."
+ arcsite.3015.B:0 "We can do with it as we please."
+ arcsite.3015.C:0 "So much for that..."
+
+ SHIELD_PRIMITIVE_PLANET_PROJECT:0 "Erect the Shield"
+ SHIELD_PRIMITIVE_PLANET_PROJECT_DESC:0 "Our [Owner.GetResearchers] should be able to complete the shield Ithikarios attempted to erect over §Y[This.GetName]§!, if we can provide them with sufficient resources."
+
+ arcsite.3020.name:0 "The Charynoi Shielded"
+ arcsite.3020.desc:0 "Thanks to the efforts of our [Owner.GetResearchers], the shield Ithikarios attempted to erect over [From.GetName] has been completed. Her $NAME_Charynoi$ descendants can now find peace."
+ arcsite.3020.desc.A:0 "A relief for all involved."
+
+ bane_of_the_prophetess:0 "Bane of the Prophetess"
+ bane_of_the_prophetess_desc:0 "By our actions, the desperate efforts of the Charynoi prophetess to find redemption for her people were thwarted. No forgiveness shall be shown to their kind!"
+ bane_of_the_prophetess_gestalt:0 "$bane_of_the_prophetess$"
+ bane_of_the_prophetess_gestalt_desc:0 "$bane_of_the_prophetess_desc$"
+ charynoi_redemption:0 "The Redemption of the Charynoi"
+ charynoi_redemption_desc:0 "Our completion of Ithikarios' shield has allowed the Charynoi - or at least some of them - to find redemption."
+
+ paradisiacal_habitat:0 "Paradisiacal Habitat"
+ paradisiacal_habitat_desc:0 "Although this habitat is completely artificial, the air carries an idyllic quality that reminds any sentient creature - no matter how alien - of home."
+
+ fircon.3510.name:0 "The Chosen"
+ fircon.3510.desc:0 "For too long have we been trapped behind the wormhole. But behold! Finally, we have breached the restrictions placed upon us by our celestial heritage. Now, at last, we know we are worthy. The rest of the galaxy is ours to claim.\n\nDo not resist. It will be better in the long run, that way."
+ fircon.3510.A:0 "Well that was unexpected."
+
+ fircon.3515.name:0 "The Chosen"
+ fircon.3515.desc:0 "Wha-? You... breached the wormhole? But how? Our best scientists have been working on it for years, without success. There must be some kind of mistake.\n\n...\n...\n...\n\nThis must be a test. You are not to be trusted! We must cleanse our stars of your kind!"
+
 
 #######################
 # Economic Categories #
@@ -2510,7 +2574,7 @@
 ########################################
 
  #Names
- 
+
  NAME_Helito:0 "Helito"
  NAME_Helito_A:0 "Helito A"
  NAME_Helito_B:0 "Helito B"
@@ -2520,7 +2584,7 @@
  NAME_Helito_IV:0 "Helito IV"
  NAME_Helito_V:0 "Helito V"
  NAME_Helito_VI:0 "Helito VI"
- 
+
  NAME_Dacha:0 "Dacha"
  NAME_Dacha_A:0 "Dacha A"
  NAME_Dacha_B:0 "Dacha B"
@@ -2529,23 +2593,23 @@
  NAME_Dacha_II:0 "Dacha II"
  NAME_Dacha_III:0 "Dacha III"
  NAME_Dacha_IV:0 "Dacha IV"
- 
+
  NAME_Sol_X:0 "Sol X"
- 
+
  #Events
- 
+
  fircon.5000.name:0 "Missing Orbitals"
  fircon.5000.desc.base:0 "§Y[From.GetName]§! is missing planets.\n\nAll calculations point to the existence of several more celestial bodies, yet they are nowhere to be found in the system. Sensors have been recalibrated and numbers rechecked, but the theory stands disproven by reality. We have marked the missing planetoids positions on our star charts."
  fircon.5000.desc:0 "$fircon.5000.desc.base$\n\nPerhaps a closer scan of the system could reveal more."
- 
+
  fircon.5005.desc.open:0 "$fircon.5000.desc.base$\n\nWe gather that the neighboring [owner.GetPreFTLLowerPlural] in the Dacha system are connected to this."
  fircon.5005.desc.closed:0 "$fircon.5000.desc.base$\n\nIt seems like the previously neighboring [owner.GetPreFTLLowerPlural] in the Dacha system created this strange system. Yet the hyperlane leading there has since disappeared."
- 
+
  fircon.5010.name:0 "Grand Theft Planet"
  fircon.5010.desc:0 "The planets were moved!\n\nThe abnormal hyperlanes we detected in the §Y[from.solar_system.GetName]§! system were each tethered to where we previously had expected to discover worlds. After studying these strange lanes, we realize they all lead to the same place. A star system called §YDacha§!, which was thought unreachable, yet if we were to combine all these slender hyperlanes, we could pass a science ship through."
  fircon.5010.a:0 "Find out where the hyperlanes lead!"
  fircon.5010.b:0 "Do we really want to know?"
- 
+
  fircon.5015.name:0 "Worlds of Plenty"
  fircon.5015.desc:0 "Orbiting each of the three stars in the §Y[From.GetName]§! system are ecological paradises, Gaia worlds, each capable of sustaining organic life. Initially, we thought these might be uninhabited, given the lack of pollution. Yet after performing deeper scans we discovered large sprawling cities spanning each planet from end to end.\n\nStranger still, it seems like only the central star has planets originally from this system. The others are orbited by planets from $NAME_Helito$ and other, more remote systems."
  fircon.5015.a:0 "But... How!?"
@@ -2553,23 +2617,23 @@
  fircon.5015.c.exterminator:0 "EXTREME CONCENTRATION OF ORGANIC LIFE DETECTED."
  fircon.5015.c.swarm:0 "So much to devour!"
  fircon.5015.c.purifier:0 "Those worlds would look better with [Owner.GetSpeciesNamePlural] on them."
- 
+
  fircon.5020.name:0 "Habinte Unified Worlds Encountered"
  fircon.5020.desc:0 "Surveying a new Gaia world is usually a momentous event but for the crew of the [Root.GetName] it is going to become routine for the next few months. The multiple worlds house some very strange [Owner.GetPreFTLLowerPlural], they obviously have not achieved spaceflight yet their renewable energy production rivals our most efficient reactors.\n\nA further oddity is the equal spread of resources. Every world has everything they need to survive, which should be impossible. We are seeing goods only produced on one planet arrive on another without a single transport ship taking flight."
  fircon.5020.a:0 "We need an observation outpost now!"
- 
+
  fircon.5026.name:0 "Bridge Between Worlds"
  fircon.5026.desc:0 "The [GetPreFTLLowerPlural] of §Y[From.solar_system.GetName]§! are somehow more adept with hyperlane theory than we are. Every one of their worlds are linked to each other through an artificial hyperlane network. These lanes are used transport necessary resources like food or building materials to their other worlds just using planet-bound trains, and we have no idea how they did it.\n\nA request for more [Root.GetScientistPlural] to study these worlds has been approved. Though judging by the activity at their planetary listening posts; we are not the only ones looking at aliens."
- 
+
  fircon.5036.name:0 "Anger of a Gentle Race"
  fircon.5036.desc:0 "We thought those who could traverse the stars wouldn't be so primitive as to resort to violence.\n\n§RLeave.§!"
  fircon.5036.a:0 "Wai-"
  fircon.5036.tt:0 "§RAll our ships in the §Y[From.solar_system.GetName] system§! have gone missing in action.\nAll Hyperlanes to the §Y[From.solar_system.GetName] system§! have become unstable.§!"
- 
+
  fircon.5040.name:0 "Diplomacy Was Never an Option"
  fircon.5040.desc:0 "We have seen what kind of galaxy it is and chose to avoid it, yet again we are disturbed, do you really want to see our treasures? Then let us show you."
  fircon.5040.a.tt:0 "§REvery system near the §Y[From.GetName] system§! has had new hyperlanes established.§!"
- 
+
  fircon.5050.name:0 "Polite Request"
  fircon.5050.desc:0 "The insights we have gained into hyperlane technology through our cooperation with the [event_target:solarpunk_country.GetSpeciesAdj] has been frustratingly slow. It seems that to achieve the mastery of a local hyperlane cluster like they have, we would need to spend thousands of years cataloging hyper-fluctuations. We have received a new communication from their chief representative.\n\n"To be honest, your presence here has been grating, so now that we have taught you what you came for, we need to ask you to leave. Having judged that our ways of life are incompatible, we worry that you might covet what we have in the future. So to prevent any feelings of ill will, we wish to offer you one of our worlds. We will handle the transportation, don't worry.""
  fircon.5050.a:0 "We accept, have a good life."
@@ -2577,23 +2641,23 @@
  fircon.5050.c:0 "We will take your secrets!"
  fircon.5050.c.tt:0 "§RInvade the aliens to learn the secrets of the hyperlanes.§!"
  #Anomalies
- 
+
  SOLARPUNK_CAT:0 "The Missing Planets"
  SOLARPUNK_CAT_DESC:0 "There are an unusual amount of hyperlanes in this system. Usually, we would dismiss these as too small to facilitate a spaceship, but the sheer amount is intriguing in and of itself."
- 
+
  #Names
- 
+
  NAME_Habinte:0 "Habinte"
  NAME_Habinte_plural:0 "Habintes"
  NAME_Habinte_adj:0 "Habintine"
  NAME_Habinte_Unified_Worlds:0 "Habinte Unified Worlds"
- 
+
  #Modifiers
- 
+
  angered_solarpunk:0 "Angered Pacifists"
  angered_solarpunk_desc:0 "This nation was content living on their own, yet they had to be antagonized."
  opinion_broke_the_illusion:0 "Broke the Illusion"
- 
+
  #Buildings
  building_solarpunk_gaiaseeder:0 "Gaia Seeders"
  building_solarpunk_gaiaseeder_desc:0 "Perfected atmospheric controls maintaining this planets pristine status."
@@ -2603,12 +2667,12 @@
  building_solarpunk_sapling_desc:0 "A titanic sapling, the result of centuries of floral research and manipulation, capable of feeding millions."
  building_solarpunk_organic_paradise:0 "Hanging Cities"
  building_solarpunk_organic_paradise_desc:0 "Cities covered in grand forests, bringing the inhabitants closer to nature."
- 
+
  job_solarpunk_anarchist:0 "Content Terraformer"
  job_solarpunk_anarchist_plural:0 "Content Terraformers"
  job_solarpunk_anarchist_desc:0 "Having achieved their utopia these world sculptors are glad to rest."
  mod_job_solarpunk_anarchist_add:0 "$solarpunk_anarchist$ Jobs"
- 
+
  # Failtext
  requires_not_solarpunk:0 "$TRIGGER_FAIL$Cannon't be built around these planets in this system because of strange hyperlane activity."
 
@@ -2624,9 +2688,9 @@
 
  alert_mia_forced_to_decloak_title:0 "Forced to Decloak"
  alert_mia_forced_to_decloak_instant:0 "At least one of our fleets has been forced to Decloak and has gone Missing In Action. It will take them some time to return and rejoin the ranks."
- 
+
  alert_forced_to_decloak_by_us_title:0 "Cloaked Fleets Discovered"
  alert_forced_to_decloak_by_us_instant:0 "Our Detection Arrays discovered at least one cloaked, non-allied fleet and have forced it to Decloak."
- 
+
  alert_mia_forced_to_decloak_by_us_title:0 "Cloaked Fleets Discovered"
  alert_mia_forced_to_decloak_by_us_instant:0 "Our Detection Arrays discovered at least one cloaked, non-allied fleet and forced it to Decloak. The fleet(s) have gone Missing In Action."

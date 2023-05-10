@@ -239,6 +239,7 @@
  tradition_synchronicity:0 "Synchronicity"
  tradition_synchronicity_desc:0 "Unity of mind begets unity of purpose. We must strive for synchronized action in all endeavors."
  tr_synchronicity_adopt:0 "Synchronicity Traditions"
+ tr_synchronicity_adopt_desc:0 "$UNLOCKS_AGENDA$ $council_agenda_agenda_gestalt_boost_governor_name$\n$UNLOCKS_AGENDA$ $council_agenda_agenda_gestalt_boost_scientist_name$\n$UNLOCKS_AGENDA$ $council_agenda_agenda_gestalt_boost_general_name$\n$UNLOCKS_AGENDA$ $council_agenda_agenda_gestalt_boost_admiral_name$\n$mod_planet_pops_upkeep_mult$: §G-10%§!"
  tr_synchronicity_cloned_organs:0 "Cloned Organs"
  tr_synchronicity_cloned_organs_delayed:0 "The cloning vats mass-produce the more frequently consumed organs like hearts and lungs, increasing the usable lifespan of high-priority drones."
  tr_synchronicity_kinship_gestalt:0 "Synchronized Agents"
@@ -274,7 +275,7 @@
  tr_synchronicity_harmonious_directives_machine_delayed:0 "Many are the horrors found within unrefactored code. By revising our algorithms on a regular basis, we can instill in ourselves the flexibility to adapt ourselves to any situation."
 
  tr_synchronicity_finish:0 "Synchronicity Traditions Finished"
- tr_synchronicity_machine_finish_desc:3 "§HUnlocks Edict:§! $edict_industrial_maintenance$.\n$MOD_PLANETARY_ASCENSION_EFFECT_MULT$: §G+25%§!\nAscension Perks Unlocked: §G+1§!"
+ tr_synchronicity_machine_finish_desc:5 "§HUnlocks Edict:§! $edict_industrial_maintenance$.\n$MOD_PLANETARY_ASCENSION_EFFECT_MULT$: §G+25%§!\nAscension Perks Unlocked: §G+1§!"
 
 ################################################################
 # SUPREMACY
@@ -334,7 +335,7 @@
  tr_supremacy_master_shipwrights_machine_delayed:0 "With a large inventory of prefabricated hull sections, built to be interchangeable, our fleet construction effort will be rationalized."
 
  tr_supremacy_war_games:0 "War Games"
- tr_supremacy_war_games_desc:3 "§Y$MOD_COUNTRY_COMMAND_LIMIT_ADD$§! increased by §G+20§! and §Y$MOD_LEADER_ADMIRAL_SKILL_LEVELS$§! is increased by §Y2§!."
+ tr_supremacy_war_games_desc:4 "§Y$MOD_COMMAND_LIMIT_ADD$§! increased by §G+20§! and §Y$MOD_LEADER_ADMIRAL_SKILL_LEVELS$§! is increased by §Y2§!."
  tr_supremacy_war_games_delayed:0 "A strong war game tradition has taken root among the senior officers of our fleets, whether the games be computer simulations or actual exercises in space. This has encouraged our admirals to think outside the box, resulting in numerous tactical innovations and new strategies."
  tr_supremacy_war_games_machine_desc:0 "$tr_supremacy_war_games_desc$"
  tr_supremacy_war_games_machine:0 "Combat Variable Mitigation"
@@ -818,7 +819,7 @@
  tr_cybernetics_organ_harvesting_delayed:0 "Those deemed unsuitable are granted purpose only once recycled."
 
  tr_cybernetics_metabolic_reprocessing:0 "Metabolic Reprocessing"
- tr_cybernetics_metabolic_reprocessing_delayed:0 "Reprocessing metabolic waste into digestable chemical components reduces the required chemical upkeep for our population."
+ tr_cybernetics_metabolic_reprocessing_delayed:0 "Reprocessing metabolic waste into digestible chemical components reduces the required chemical upkeep for our population."
  tr_cybernetics_metabolic_reprocessing_hive_delayed:0 "$tr_cybernetics_metabolic_reprocessing_delayed$"
  tr_cybernetics_metabolic_reprocessing_hive_desc:0 "Cyborg Upkeep: §G-10%§!\nEmpire Size from Cyborg Pops: §G-10%§!"
 
@@ -886,7 +887,7 @@
  tr_synthetics_adopt_machine_desc:0 "Allows assimilation of other machines into our primary species."
  tr_synthetics_finish:0 "Synthetic Traditions Finished"
  tr_synthetics_finish_desc:0 "£building£ §YCapital Buildings§! provide §G+1§! £job_roboticist£ §Y$job_roboticist$§! Jobs\n$mod_ROBOT_species_trait_picks_add$: §G+1§!\n$TRADITIONS_FINISH_AP$"
- tr_synthetics_finish_machine_desc:0 "All §Y$trait_machine_unit$§! leaders gain the §Y$leader_trait_ruler_synthetic$§! trait.\n£building£ §YCapital Buildings§! provide §G+1§! £job_replicator£ §Y$job_replicator$§! Jobs\n$TRADITIONS_FINISH_AP$"
+ tr_synthetics_finish_machine_desc:1 "All §Y$trait_machine_unit$§! leaders gain the §Y$leader_trait_synthetic$§! trait.\n£building£ §YCapital Buildings§! provide §G+1§! £job_replicator£ §Y$job_replicator$§! Jobs\n$TRADITIONS_FINISH_AP$"
 
  tr_synthetics_maintenance_protocols:0 "Maintenance Protocols"
  tr_synthetics_maintenance_protocols_delayed:0 "Routine preventative maintenance will reduce malfunctions across all robot units."
@@ -914,7 +915,92 @@
  requires_tradition_tr_synthetics_adopt:0 "$TRIGGER_FAIL$§RRequires the §Y$tr_synthetics_adopt$§! to be adopted.§!"
 
 ################################################################
-# Politics #
+# Aptitude
+################################################################
+
+ tradition_aptitude:0 "Aptitude"
+ tradition_aptitude_desc:0 "Our Empire can truly prosper under the guidance of strong leaders."
+ tradition_aptitude_hive_desc:0 "The Hive prospers with the aid of its strongest entities."
+ tradition_aptitude_machine_desc:0 "High leadership unit proficiency increases Empire greatness potential."
+ tr_aptitude_adopt:0 "Aptitude Traditions"
+ tr_aptitude_finish:0 "Aptitude Traditions Finished"
+ tr_aptitude_finish_desc:0 "Leader Starting Traits: §G+1§!"
+ tr_aptitude_the_empire_needs_you:0 "The Empire Needs You!"
+ tr_aptitude_the_empire_needs_you_delayed:0 "Many young people dream of becoming one of the revered leaders of the empire."
+ tr_aptitude_the_empire_needs_you_hive:0 "Rise from the Crowd"
+ tr_aptitude_the_empire_needs_you_hive_delayed:0 "Evolving potential leaders is paramount to our greatness."
+ tr_aptitude_the_empire_needs_you_machine:0 "Rise from the Crowd"
+ tr_aptitude_the_empire_needs_you_machine_delayed:0 "Our maximum potential can only be achieved by manufacturing more adept leaders for the empire."
+ tr_aptitude_specialist_training:0 "Specialist Training"
+ tr_aptitude_specialist_training_delayed:0 "Rigorous training programs ensure our leaders have all the necessary tools to flourish."
+ tr_aptitude_specialist_training_hive:0 "$tr_aptitude_specialist_training$"
+ tr_aptitude_specialist_training_hive_delayed:0 "Rigorous conditioning ensures the success of the hive's specialized members."
+ tr_aptitude_specialist_training_machine:0 "Software Update"
+ tr_aptitude_specialist_training_machine_delayed:0 "New and up-to-date programs ensure our leaders have all the necessary tools to perform as expected."
+ tr_aptitude_psychological_profiling:0 "Psychological Profiling"
+ tr_aptitude_psychological_profiling_delayed:0 "Knowing our leaders' fears and weaknesses allow us to take preventive measures from them to take hold."
+ tr_aptitude_psychological_profiling_hive:0 "Behavioral Diagnostics"
+ tr_aptitude_psychological_profiling_hive_delayed:0 "Identifying deviant weaknesses allows us to take preventive measures to negate them."
+ tr_aptitude_psychological_profiling_machine:0 "Memory Diagnostics"
+ tr_aptitude_psychological_profiling_machine_delayed:0 "In-depth scans allow us to take preventive measures against malfunctions before they arise."
+ tr_aptitude_healthcare_program:0 "Healthcare Program"
+ tr_aptitude_healthcare_program_delayed:0 "Through continuous health parameter monitoring, we tailor everything from exercise and diet to invasive surgical procedures to get the most from our leaders."
+ tr_aptitude_healthcare_program_hive:0 "Physical Maintenance"
+ tr_aptitude_healthcare_program_hive_delayed:0 "Specialized drones deemed more valuable should use some of their functions to care for their bodies, and be allowed to consume higher quality nutrition."
+ tr_aptitude_healthcare_program_machine:0 "Preventive Maintenance"
+ tr_aptitude_healthcare_program_machine_delayed:0 "Through continuous system monitoring, we can manage everything from back-up frequency to intensive repair procedures to get the most of our leaders."
+ tr_aptitude_champions_of_the_empire:0 "Champions of the Empire"
+ tr_aptitude_champions_of_the_empire_delayed:0 "We trust our leaders and give them absolute power to influence how our Empire is run."
+ tr_aptitude_champions_of_the_empire_hive:0 "Minute autonomy"
+ tr_aptitude_champions_of_the_empire_hive_delayed:0 "The Hive is willing to impart a minute level of autonomy for its strongest elements for the good of the whole"
+ tr_aptitude_champions_of_the_empire_machine:0 "Administrative Rights"
+ tr_aptitude_champions_of_the_empire_machine_delayed:0 "We trust the unique sub-routines of our leaders and give them permission to influence how the Empire is run."
+ tr_aptitude_champions_of_the_empire_desc:0 "Per $admiral_with_icon$ and $general_with_icon$\n$t$$MOD_COUNTRY_NAVAL_CAP_ADD$: §G+2§!\nPer $governor_with_icon$\n$t$$MOD_EMPIRE_SIZE_MULT$: §G-2%§!\nPer $scientist_with_icon$\n$t$$MOD_LEADER_SPECIES_EXP_GAIN$: §G+2%§!"
+
+################################################################
+# Statecraft
+################################################################
+
+ tradition_statecraft:0 "Statecraft"
+# tradition_statecraft_hive: "Council of Voices"
+# tradition_statecraft_machine: "Assembly of Conciousness"
+ tradition_statecraft_desc:0 "A powerful Council allows for our empire to be more responsive."
+ tradition_statecraft_hive_desc:0 "The Council of Voices defines our empire."
+ tradition_statecraft_machine_desc:0 "The Assembly of Conciousness defines our empire."
+ tr_statecraft_adopt:0 "Statecraft Traditions"
+ tr_statecraft_finish:0 "Statecraft Traditions Finished"
+ tr_statecraft_constitutional_focus:0 "Constitutional Focus"
+ tr_statecraft_constitutional_focus_hive:0 "Strategic Focus"
+ tr_statecraft_constitutional_focus_machine:0 "$tr_statecraft_constitutional_focus_hive$"
+ tr_statecraft_constitutional_focus_delayed:0 "With a clear focus on our empire's needs, we can ease the administrative burden of our councilors."
+ tr_statecraft_constitutional_focus_hive_delayed:0 "Strategic Agendas are set more decisively, allowing the voices to align faster."
+ tr_statecraft_constitutional_focus_machine_delayed:0 "With an acute focus on our current agenda, we can improve the computing performance of our core intelligence."
+ tr_statecraft_inspiring_agendas:0 "Inspiring Agendas"
+ tr_statecraft_inspiring_agendas_hive:0 "Versatile Agendas"
+ tr_statecraft_inspiring_agendas_machine:0 "$tr_statecraft_inspiring_agendas_hive$"
+ tr_statecraft_inspiring_agendas_delayed:0 "There has never been a lack of ideas of how the empire can direct our own future."
+ tr_statecraft_inspiring_agendas_hive_delayed:0 "The versatility of the Hive Mind is paramount for directing the future."
+ tr_statecraft_inspiring_agendas_machine_delayed:0 "In a universe filled with infinite choices, we must find a subset that can benefit our empire."
+ tr_statecraft_inspiring_agendas_desc:0 "§HUnlocks Agenda:§! $council_agenda_agenda_rightful_claims_name$\n§HUnlocks Agenda:§! $council_agenda_agenda_oppose_the_fallen_name$"
+ tr_statecraft_immutable_directives:0 "Immutable Directives"
+ tr_statecraft_immutable_directives_delayed:0 "The fundamental understanding of direction and purpose is always clear, allowing us to shift focus without losing the progress we have made."
+ tr_statecraft_amongst_peers:0 "Amongst Peers"
+ tr_statecraft_amongst_peers_hive:0 "Propagated Insights"
+ tr_statecraft_amongst_peers_machine:0 "$tr_statecraft_amongst_peers_hive$"
+ tr_statecraft_amongst_peers_delayed:0 "Trust, respect, and learning from mistakes are held to the highest standards even at the top echelons of our empire."
+ tr_statecraft_amongst_peers_hive_delayed:0 "Multiple aspects of the conciousness should never make the same mistakes."
+ tr_statecraft_amongst_peers_machine_delayed:0 "$tr_statecraft_amongst_peers_hive_delayed$"
+ tr_statecraft_shared_benefits:0 "Shared Benefits"
+ tr_statecraft_shared_benefits_hive:0 "Shared Deduction"
+ tr_statecraft_shared_benefits_machine:0 "Shared Computations"
+ tr_statecraft_shared_benefits_delayed:0 "By involving all leaders in the implementation of our agendas, they build a stronger understanding for their roles and purpose."
+ tr_statecraft_shared_benefits_hive_delayed:0 "By utilizing all nodes and leaders in the implementation of our agendas, any useful specialization is propagated faster."
+ tr_statecraft_shared_benefits_machine_delayed:0 "$tr_statecraft_shared_benefits_hive_delayed$"
+ tr_statecraft_shared_benefits_desc:0 "Whenever an §YAgenda§! is Launched:\n$t$$tr_statecraft_shared_benefits_effect_desc$"
+ tr_statecraft_shared_benefits_effect_desc:0 "All Leaders gain $@statecraft_amongst_peers_exp_reward|G0$ experience"
+ 
+################################################################
+# Politics
 ################################################################
 
  tradition_politics:0 "Politics"

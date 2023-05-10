@@ -208,7 +208,7 @@
  observation.1003.name:0 "Abduction Failed"
  observation.1003.desc:2 "Unfortunately, our attempt to abduct the [owner.GetPreFTLLower] scientist from [pre_ftl_country.GetName] has failed. One of our ground shuttles intercepted [abducted_scientist.GetHisHer] motorcar, but as the paralyzed scientist was being moved into its hold with a levitation beam, a [pre_ftl_country.GetSpeciesName] atmospheric fighter arrived on the scene.\n\nThe shuttle safely escaped into orbit, but the levitation beam was interrupted and the scientist... well, it was a long fall. Hopefully [abducted_scientist.GetHisHer] death will be blamed on a rival [pre_ftl_country.GetSpeciesName] nation state."
  observation.1004.name:0 "Breakthrough on [pre_ftl_planet.GetName]!"
- observation.1004.desc:0 "The scientist we first indentified on [pre_ftl_planet.GetName] has developed into a remarkable talent. [abducted_scientist.GetHisHer] unconventional research and sharply analytical mind has rapidly accelerated the technological development of [pre_ftl_country.GetName]."
+ observation.1004.desc:0 "The scientist we first identified on [pre_ftl_planet.GetName] has developed into a remarkable talent. [abducted_scientist.GetHisHer] unconventional research and sharply analytical mind has rapidly accelerated the technological development of [pre_ftl_country.GetName]."
  observation.1004.a:0 "Remarkable!"
 
 # Defense Force
@@ -230,7 +230,7 @@
  observation.1106.name:2 "[pre_ftl_planet.GetName]: Successful Strike"
  observation.1106.desc:2 "Our mission to destroy the main base of the [pre_ftl_country.GetSpeciesName] supranational task force was a complete success! The base was infiltrated by our strike team, and its defenders and their limited weapons proved no match for our skilled operatives.\n\nAfter planting explosive charges deep within the bowels of the base, the strike team were exfiltrated by waiting shuttles. Nothing remains of this troublesome [pre_ftl_country.GetSpeciesName] task force now."
  observation.1106.a:1 "Mission successful."
- observation.1107.name:2 "[pre_ftl_planet.GetName]: Failed Strike"
+ observation.1107.name:3 "[pre_ftl_planet.GetName]: Failed Strike"
  observation.1107.desc:2 "Our mission to destroy the main base of the [pre_ftl_country.Owner.GetSpeciesName] supranational task force failed miserably! Several of the shuttles carrying our strike team were brought down by hidden anti-aircraft emplacements before they even made it to the base. The remaining operatives met with unexpectedly stiff resistance when they eventually reached the base entrance.\n\nIn light of approaching [pre_ftl_country.Owner.GetSpeciesName] reinforcements, the strike team commander finally gave the order to retreat. Unfortunately, as our exfiltration shuttles were blasting their way into orbit, a massive formation of atmospheric fighters intercepted them. Losses were heavy."
  observation.1107.a:1 "This is a disaster!"
 # Disbanded 
@@ -250,7 +250,7 @@
  observation.1203.desc:2 "The last of our [pre_ftl_country.GetSpeciesName] test subjects on [pre_ftl_planet.GetName] have succumbed to the effects of their defective brain implants. Many went completely berserk, shrieking random code segments from the [Root.GetSpeciesName] programming language used in their implants while savagely attacking anyone or anything in their immediate vicinity."
  observation.1203.a:0 "How could this have happened?"
  observation.1205.name:0 "[pre_ftl_planet.GetName]: Implants Embraced"
- observation.1205.desc:0 "The [pre_ftl_country.GetSpeciesName] on [pre_ftl_planet.GetName] have conducted their own reaseach into the neutral implants we left behind. Somehow the [GetPreFTLLower] researchers have managed to engineer cybernetics far more compatible with [pre_ftl_country.GetSpeciesName] biology than we were capable of."
+ observation.1205.desc:1 "The [pre_ftl_country.GetSpeciesName] on [pre_ftl_planet.GetName] have conducted their own research into the neutral implants we left behind. Somehow the [GetPreFTLLower] researchers have managed to engineer cybernetics far more compatible with [pre_ftl_country.GetSpeciesName] biology than we were capable of."
  observation.1205.a:0 "Remarkable!"
  observation.1205.tt:0 "The §Y[pre_ftl_country.GetSpeciesName]§! have embraced §YCybernetics§!."
 
@@ -382,3 +382,20 @@
  observation.2041.desc:1 "Our efforts to enlighten the [pre_ftl_species.GetNamePlural] and lead them on the true path towards the stars have been frustrated. Our religious and scientific advisors on [pre_ftl_planet.GetName] report a troubling lack of faith on behalf of the native population. They are willing to accept our technology readily enough, but not the spiritual lessons required to use it responsibly.\n\nThis has significantly hampered our mission to guide the [pre_ftl_species.GetNamePlural] to enlightenment. It will take longer than the signs ordained."
  observation.2042.desc:0 "The oppressive, autocratic society on [pre_ftl_planet.GetName] has frustrated our efforts to raise the technological level of the [pre_ftl_species.GetNamePlural]. Individual thoughts and initiatives - on which science thrives - are discouraged among the [pre_ftl_species.GetNamePlural].\n\nTheir rampant authoritarianism has stymied the progress of our mission - the scientific advisors we sent report that it will likely take longer than expected."
  observation.2043.desc:1 "Anarchy reigns supreme on the surface of [pre_ftl_planet.GetName], and our advisors are having a difficult time teaching modern science to the [pre_ftl_species.GetNamePlural]. At times it seems that every scientist has a different vision for the project, with no regard for the needs of their team or for the common good.\n\nOur mission of enlightenment continues, despite the misguided egalitarianism displayed by the local population, but it will take longer than expected."
+
+ ### New events which fire before nuclear war/apocalypse gatekeepers, giving the player a final chance to stop pre-FTLs from blowing themselves up! ###
+ # This event appears prior to observation.107 (religious nuclear war) #
+ observation.3205.name:0 "Impending Doom on [pre_ftl_planet.GetName]"
+ observation.3205.desc:0 "Having witnessed the apparent rapture of their savior, the inhabitants of [pre_ftl_planet.GetName] are not in a good place. Society is splintering, and tensions have risen to untenable levels.\n\nIf we do not take action, they will use our technology to tear themselves apart in a planet-wide religious war."
+ observation.3205.a:0 "Retrieve our technology."
+ observation.3205.b:0 "We must not risk further cultural contamination."
+ # This event appears prior to observation.204 (nuclear war following downed shuttle and stolen tech) #
+ observation.3210.name:0 "Disaster Looms on [pre_ftl_planet.GetName]"
+ observation.3210.desc:0 "The technology scavenged from our downed shuttle on [pre_ftl_planet.GetName] poses a threat to all life on the planet. Lacking our scientific understanding, they could easily use our tech to destroy themselves.\n\nUnless we intervene, this will be a disaster."
+ observation.3210.a:0 "Activate shuttle self-destruct."
+ observation.3210.b:0 "The damage is already done."
+ # This event appears prior to observation.1400 (random nuclear war) #
+ observation.3215.name:0 "Nuclear Escalation on [pre_ftl_planet.GetName]"
+ observation.3215.desc:0 "Tensions are brewing on [pre_ftl_planet.GetName]. Nuclear war looms. If we do nothing, they will destroy themselves.\n\nWe are their only hope."
+ observation.3215.a:0 "Covertly infiltrate and deescalate."
+ observation.3215.b:0 "There's no further need for espionage."

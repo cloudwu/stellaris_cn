@@ -1,5 +1,5 @@
 ﻿l_english:
-
+ 
  # Anomaly Category
  the_lonely_bot_category:0 "古生命迹象"
  the_lonely_bot_category_desc:0 "有迹象表明，[Root.GetName]曾是某个古代文明的家园。"
@@ -81,7 +81,7 @@
  GAS_RESTORATION_DESC:0 "为错误赎罪是一项强权者的特权，在此情此景下，我们必须深切地赎罪。[From.GetName]上的灾难令人震愕，而我们唯一的愿望是我们的科学家们能够反转我们深层探测器的极性，寄希望于能以此重新点燃这颗气态巨行星内部的生命之火。"
 
  RESCUE_STORM:0 "释放[Root.GetName]"
- RESCUE_STORM_DESC:0 "[From.GetName]被[FromFrom.GetName]上的风暴围困。他们唯一的希望在于我们发射一艘新飞船过去，然后远距离重调制他们的护盾频率。"
+ RESCUE_STORM_DESC:0 "[Root.GetName]被[FromFrom.GetName]上的风暴围困。他们唯一的希望在于我们发射一艘新飞船过去，然后远距离重调制他们的护盾频率。"
 
  STUDY_SLEEPING_CRYSTAL:0 "研究奇怪的小行星"
  STUDY_SLEEPING_CRYSTAL_DESC:0 "[From.GetName]是一颗奇怪的小行星，它似乎可以通过未知的方式旋转并躲开我们的开采站。我们需要委派一艘科研船去研究它。"
@@ -129,7 +129,7 @@
  anomaly.6710.b:0 "摧毁虫群。"
  anomaly.6710.c:0 "这些不仅仅是自动机器人，而是活物！"
 
- anomaly.6715.name:0 "虫群沃土" #English spelling is intentional... for now
+ anomaly.6715.name:0 "虫群沃土"
  anomaly.6715.desc:0 "尽管§H[nanite_swarm_planet.GetName]§!的虫群在成为集体时所向披靡，但其个体却相当脆弱。从该行星的大气中抽取出一小部分，并使用我们的先进AI科技，我们成功地重写了这些机器人的通讯系统。当我们将我们重编程过的机器人放回虫群后，这些修改在一瞬间席卷全球。\n\n获得网络的控制后，我们第一要务是为§H[nanite_swarm_planet.GetName]§!带回稳定的大气，并且要对[Root.Owner.GetSpeciesNamePlural]而言最为舒适的那种。这颗行星现在已经充分准备好等待我们的到来，而纳米虫群则会对我们殖民者的需求无所不应。"
  anomaly.6715.a:0 "殖民船！起飞！"
 
@@ -1302,7 +1302,7 @@
  colony.9270.a.desc:0 "我们会让回收中心重新上线。"
  colony.9270.b:0 "用我们自己的方案。" #environmentalist/zerowaste/ascetic - lower upkeep
  colony.9270.b.desc:0 "我们自己的回收方案更加先进。我们可以将其整合进整个机器系统里。"
- colony.9270.c:0 "增强合金产出。" #barbaric despoliers and purifiers - increased production
+ colony.9270.c:0 "增强合金产出。" #barbaric despoilers and purifiers - increased production
  colony.9270.c.desc:0 "我们可以将整个回收舱室改造成矿物纯化中心，以提高整体的产出效率。"
 
  colony.9280.name:0 "或多或少？" #increase production and upkeep
@@ -1416,3 +1416,63 @@
  mod_job_manufactorium_research_drone_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£job_manufactorium_research_drone£"
  mod_job_manufactorium_researcher_per_pop:0 "每$VALUE$人口§G+1§!$job_manufactorium_researcher$岗位"
  mod_job_manufactorium_researcher_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£job_manufactorium_researcher£"
+
+# Intemporal Orb
+ INTEMPORAL_ORB_CAT:0 "球体"
+ INTEMPORAL_ORB_CAT_DESC:0 "我们发现了外形类似球体的高密度能量信号。建议进行更深入的调查。"
+
+## Event: Concentrated Energy
+ anomaly.7105.name:0 "高密度能量"
+ anomaly.7105.desc:0 "[From.GetName]的异常能量读数的来源确定是一个蓝色的小球。[Owner.GetScientistPlural]汇报，传感器从中发现了相反极性的快子。\n\n该物体周围的地面上刻着符号，也许是由某个更古老的文明留下的。目前不清楚是符号的含义是指引还是警示。\n\n完整的文本还远不能翻译，但部分符号似乎与时间测量和[Solar_System.GetName]星系中天体相对位置有关。"
+ anomaly.7105.a.standard:0 "研究球体。"
+ anomaly.7105.a.devouring:0 "吃掉球体。"
+ anomaly.7105.b:0 "太危险了，离开它！"
+
+## Event: Local Time Reversal
+ anomaly.7110.name:0 "局部时间反转"
+ anomaly.7110.desc:0 "在[FromFrom.GetName]发现的蓝色能量球体消失了。对当地的扫描完全没有发现该球体的任何迹象。更令人困惑的是，地上的符号也一同消失得无影无踪，如同从未存在过一般。\n\n基于在此处发现的异常的快子信号，我们的[Owner.GetScientistPlural]推断，球体和符号一同发生了时间回溯。"
+
+## Event: Timeless
+ anomaly.7115.name:0 "时光如流水"
+### Regular empires are non-gestalt empires with a non-robot scientist
+ anomaly.7115.desc.regular:0 "在[FromFrom.GetName]上的站点进行工作时，[Root.GetLeaderName]无意间擦到了蓝色球体。\n\n[leader.GetHeSheCap]之后称看到了时间如同一条河流一般延展，前后连接着无尽的过去与未来。在[leader.GetHimHer]的面前，蓝色能量从时间流中蜿蜒涌出，被吸入了[leader.GetHisHer]的身体里。尽管该意外在[Owner.GetScientistPlural]精确测量中持续了不到一秒钟，但[leader.GetHeShe]感觉仿佛度过了一个多小时。\n\n在幻觉结束后，[Root.GetLeaderName]确信时间不会再影响[leader.GetHimHer]了。[leader.GetHeShe]现在拥有了无限的时间，于是想利用无尽的寿命自行探索宇宙。"
+### Scientist is already immortal
+ anomaly.7115.desc.immortal:0 "在[FromFrom.GetName]上的站点进行工作时，实习[Owner.GetScientist][intemporal_leader.GetName]无意间擦到了蓝色球体。\n\n[intemporal_leader.GetHeSheCap]之后称看到了时间如同一条河流一般延展，前后连接着无尽的过去与未来。在[intemporal_leader.GetHimHer]的面前，蓝色能量从时间流中蜿蜒涌出，被被吸入了[intemporal_leader.GetHisHer]的身体里。尽管该意外在[Owner.GetScientistPlural]精确测量中持续了不到一秒钟，但[intemporal_leader.GetHeShe]感觉仿佛度过了一个多小时。\n\n在幻觉结束后，[intemporal_leader.GetName]确信时间不会再影响[intemporal_leader.GetHimHer]了。[intemporal_leader.GetHeShe]现在拥有了无限的时间，于是想利用无尽的寿命自行探索宇宙。"
+### Empire is a gestalt consciousness (hive or machine intelligence)
+ anomaly.7115.desc.hive:0 "在[FromFrom.GetName]上的站点进行工作时，[Root.GetLeaderName]无意间擦到了蓝色球体。\n\n[leader.GetHeSheCap]接收到了一份图像，显示时间如同一条河流一般延展，前后连接着无尽的过去与未来。在[leader.GetHimHer]的面前，蓝色能量从时间流中蜿蜒涌出，被被吸入了[leader.GetHisHer]身体里。尽管该意外在其他[Owner.GetScientistPlural]的精确测量中持续了不到一秒钟，但[leader.GetHeShe]感觉仿佛度过了一个多小时。\n\n在幻觉结束后，我们确信时间不会再影响[Root.GetLeaderName]了。由于现在拥有了无限的时间，我们可以利用[leader.GetHisHer]无尽寿命使其自行探索宇宙。"
+### Empire is devouring swarm
+ anomaly.7115.desc.devouring:0 "[Root.GetLeaderName]吃掉了[FromFrom.GetName]上的球体。\n\n[leader.GetHeSheCap]接收到了一份图像，显示时间如同一条河流一般延展，前后连接着无尽的过去与未来。在[leader.GetHimHer]的面前，蓝色能量从时间流中蜿蜒涌出，被被吸入了[leader.GetHisHer]身体里。尽管该意外在其他[Owner.GetScientistPlural]的精确测量中持续了不到一秒钟，但[leader.GetHeShe]感觉仿佛度过了一个多小时。\n\n在幻觉结束后，我们确信时间不会再影响[Root.GetLeaderName]了。由于现在拥有了无限的时间，我们可以利用[leader.GetHisHer]无尽寿命使其自行探索宇宙。"
+
+ anomaly.7115.a:0 "好的，一路平安！"
+ anomaly.7115.a.regular.tt:0 "[intemporal_leader.GetName]得到一艘小型舰船以独自进行太空旅行。\n需要指派一名新的§H科学家§!来指挥[From.GetName]。"
+ anomaly.7115.a.immortal.tt:0 "[intemporal_leader.GetName]得到一艘小型舰船以独自进行太空旅行。"
+ anomaly.7115.b.regular:0 "不行，留在你的岗位上。"
+ anomaly.7115.b.immortal:0 "不行，你被晋升了。"
+ anomaly.7115.b.regular.tt:0 "[intemporal_leader.GetName]继续留岗工作。"
+ anomaly.7115.b.immortal.tt:0 "[intemporal_leader.GetName]成为一名新的§H科学家§!。"
+
+## Event: The Return
+ anomaly.7120.name:0 "返航"
+ anomaly.7120.desc.regular:0 "长程扫描发现了一艘舰船正在驶向[Root.Capital.GetName]。随着它越来越近，我们发现那艘船的设计与我们一世纪前的如出一辙。\n\n在打开通讯之后，我们发现那艘舰船是[intemporal_explorer.GetName]驾驶的，就是那位被蓝色球体从时间流中带走的[Owner.GetScientist]。\n\n[intemporal_explorer.GetHeSheCap]在对撞的中子星和逆转的时空引力井周围漫步，又乘坐飞船返回虚空。值得一提的是，我们的物理学家证实，他带回来的信息不仅大部分是可信的，而且甚至是开创性的。\n\n[intemporal_explorer.GetName]的身体似乎完全不随着时间的流逝而改变，即便我们最近的科技也无法解释那颗球体的功能。[intemporal_explorer.GetHeShe]得以逃脱终极灭亡，将会继续探索宇宙，直到时间的终结。"
+
+ anomaly.7120.desc.hive:0 "长程扫描发现了一艘舰船正在驶向[Root.Capital.GetName]。随着它越来越近，我们发现那艘船的设计与我们一世纪前的如出一辙。我们发现那艘舰船是[intemporal_explorer.GetName]驾驶的，就是那位被蓝色球体从时间流中带走的[Owner.GetScientist]。\n\n这位[Owner.GetScientist]的再次连入了我们，知识涌入集体思维中：那是关于对撞的中子星和逆转的时空引力井的观测记忆。传输一结束，这艘船又启程返回了虚空。值得一提的是，我们的[Owner.GetScientistPlural]证实，他带回来的信息不仅大部分是可信的，而且甚至是开创性的。\n\n[intemporal_explorer.GetName]的身体似乎完全不随着时间的流逝而改变，即便我们最近的科技也无法解释那颗球体的功能。[intemporal_explorer.GetHeShe]得以逃脱终极灭亡，将会继续探索宇宙，直到时间的终结。"
+
+ DATA_DIAMOND_CAT:0 "薄冰"
+ DATA_DIAMOND_CAT_DESC:0 "[From.GetName]地表冰层的最上层覆盖着规模异常巨大的晶体沉积。我们还检测到了一个微弱的信号存在。"
+ DATA_DIAMOND_PROJECT:0 "[From.GetName]晶体沉积研究"
+ DATA_DIAMOND_PROJECT_DESC:0 "[From.GetName]上的水晶发出的令人迷惑的信号引人好奇。建议进行进一步研究。"
+ anomaly.3145.name:0 "钻取幻觉"
+ anomaly.3145.desc:0 "在[From.GetName]上正要着手开展钻取作业之后，[Root.GetLeaderName]产生了强烈的幻觉。虽然没有受到身体伤害，但他们报告说，他们起先是被破碎不连贯的视觉和嗅觉幻觉所淹没，这些幻觉展现了某种未知的外星物种。\n\n已经准备了一项特殊项目来进一步调查这些怪异的晶体贮藏。"
+ anomaly.3145.a:0 "令人不安。"
+ anomaly.3150.name:0 "数据钻石"
+ anomaly.3150.desc:0 "在冰面以下，晶体自身几乎构成了行星的大部分物质。取样分析表明有一处用于数据存储的人工高密度晶格。估测表明这些存储的数据远比我们所有的集体数据库都要庞大。\n\n似乎这个晶体的建造者使用灵能共振来写入数据。[Root.GetLeaderName]非常好奇，并申请在表面建造一座自动研究站。"
+ anomaly.3150.a:0 "在轨道上研究就行了。"
+ anomaly.3150.b:0 "祝你在地上好运，[Root.GetLeaderName]。"
+ anomaly.3150.c:0 "开采晶体作为资源。"
+ anomaly.3165.name:0 "机不可失"
+ anomaly.3165.desc:0 "在自动研究站即将竣工时，晶体突然释放出了一阵极强的能量活动，[Root.GetLeaderName]不幸当场毙命。不一会儿之后，我们收到了一份自称来自[leader.GetHimHer]的自动通讯。\n\n尽管其身体的神经系统已经无法修复，但其意识被困在了水晶中。由于身处[leader.GetHisHer]这种新的境地，[leader.GetSheHe]可以帮助我们深入晶体数据库在未来进行进一步的研究。"
+ anomaly.3165.a:0 "喜忧参半的结果。"
+ anomaly.3150.a.tooltip:0 "[FromFromFrom.GetName]上将新增一处小型研究矿藏。"
+ anomaly.3150.b.tooltip:0 "[FromFromFrom.GetName]上将新增一处大型研究矿藏，但可能对[Root.GetLeaderName]存在危险。"
+ anomaly.3150.c.tooltip:0 "[FromFromFrom.GetName]上将新增一处稀有水晶矿藏。在获得了相应的科技后就可以进行开采。"
+

@@ -230,7 +230,7 @@
  observation.1106.name:2 "[pre_ftl_planet.GetName]：成功打击"
  observation.1106.desc:2 "我们计划摧毁[pre_ftl_country.GetSpeciesName]跨国界特遣部队主基地的任务大获全胜！我们的强袭小队渗透进了基地，在我们训练有素的特工面前，拿着低劣武器的基地守卫完全不是对手。\n\n在基地内部装完炸药之后，我们的强袭小队被数艘等待的穿梭机接走。这支烦人的[pre_ftl_country.GetSpeciesName]特遣部队现在已经不剩什么了。"
  observation.1106.a:1 "任务成功。"
- observation.1107.name:2 "[pre_ftl_planetGetName]：打击失败"
+ observation.1107.name:3 "[pre_ftl_planetGetName]：打击失败"
  observation.1107.desc:2 "我们计划摧毁[pre_ftl_country.Owner.GetSpeciesName]跨国界特遣部队主基地的任务以一败涂地告终！数艘载着我们强袭小队的穿梭机还未到达基地就被隐蔽的防空炮台击落了。其余特工在到达基地入口时遇到了计划之外的顽强抵抗。\n\n考虑到[pre_ftl_country.Owner.GetSpeciesName]的增援部队正在接近，强袭小队的指挥官最后下达了撤退的命令。然而不幸的是，我们返回轨道的穿梭机在途中遭到了大量大气层战斗机的拦截。损失惨重。"
  observation.1107.a:1 "这真是一场灾难！"
 # Disbanded 
@@ -250,7 +250,7 @@
  observation.1203.desc:2 "我们位于[pre_ftl_planet.GetName]的最后一批[pre_ftl_country.GetSpeciesName]测试对象，由于大脑中存在有瑕疵的植入体，已经陷入了完全的疯狂。很多人变得异常狂暴，嘴巴里怪叫着[Root.GetSpeciesName]为装置编写的代码，肆意攻击他们身边的任何人或东西。"
  observation.1203.a:0 "怎么会发生这样的事？"
  observation.1205.name:0 "[pre_ftl_planet.GetName]：接纳植入体"
- observation.1205.desc:0 "[pre_ftl_planet.GetName]上的[pre_ftl_country.GetSpeciesName]已经对我们留下的中性植入体进行了自己的研究。不知为何，[GetPreFTLLowerPlural]研究人员成功设计出来的工程化义体，比我们设计出来的版本能够更好地兼容[pre_ftl_country.GetSpeciesName]的生物学特性。"
+ observation.1205.desc:1 "[pre_ftl_planet.GetName]上的[pre_ftl_country.GetSpeciesName]已经对我们留下的中性植入体进行了自己的研究。不知为何，[GetPreFTLLowerPlural]研究人员成功设计出来的工程化义体，比我们设计出来的版本能够更好地兼容[pre_ftl_country.GetSpeciesName]的生物学特性。"
  observation.1205.a:0 "干得漂亮！"
  observation.1205.tt:0 "§Y[pre_ftl_country.GetSpeciesName]§!接受了§Y义体§!的概念。"
 
@@ -382,3 +382,20 @@
  observation.2041.desc:1 "我们启蒙[pre_ftl_species.GetNamePlural]并引导他们朝着正确道路迈向星辰的计划遇到了挫折。我们在[pre_ftl_planet.GetName]上的宗教和科学顾问报告称，原住民没有信念依靠，这让人感到忧虑。他们很乐意接受我们的科技，但对于负责任地使用这些科技所必备的精神教导，他们不愿意接纳。\n\n这极大地妨碍了我们引导[pre_ftl_species.GetNamePlural]启蒙的任务。这下我们的计划又要延迟了。"
  observation.2042.desc:0 "[pre_ftl_planet.GetName]上压迫的、独裁的社会阻碍了我们推动[pre_ftl_species.GetNamePlural]科技进步的任务。独立思想和开拓精神——这是科学蓬勃发展需要的品质——在[pre_ftl_species.GetNamePlural]身上很罕见。\n\n这种蛮横的威权主义拖累了我们任务的进度——–我们派往当地的科学顾问报告说，实际花费的时间超过预期。"
  observation.2043.desc:1 "无政府主义政权在[pre_ftl_planet.GetName]的地上世界盛行，我们的顾问们向[pre_ftl_species.GetNamePlural]传授现代科学的时候遇到了很大的困难。有时候，每位科学家对这个项目似乎都有不同的看法，全然不顾他们团队的需求或者公共利益。\n\n我们的启蒙任务仍在继续，当地民众因为误导表现出了一定的平等主义，因此任务需要比预期更长的时间才能完成。"
+
+ ### New events which fire before nuclear war/apocalypse gatekeepers, giving the player a final chance to stop pre-FTLs from blowing themselves up! ###
+ # This event appears prior to observation.107 (religious nuclear war) #
+ observation.3205.name:0 "[pre_ftl_planet.GetName]上临近的末日"
+ observation.3205.desc:0 "在目睹了他们的救世主的显灵之后，[pre_ftl_planet.GetName]的居民陷入了困境。社会出现了分裂，紧张局势已经上升到不可承受的程度。\n\n如果我们不采取行动，他们将利用我们的技术在整个星球发动一场宗教战争使得其分裂。"
+ observation.3205.a:0 "取回我们的科技。"
+ observation.3205.b:0 "我们必能冒险进一步污染文化。"
+ # This event appears prior to observation.204 (nuclear war following downed shuttle and stolen tech) #
+ observation.3210.name:0 "灾难笼罩着[pre_ftl_planet.GetName]"
+ observation.3210.desc:0 "从我们在[pre_ftl_planet.GetName]上坠落的航天器上搜出的技术对这个星球上的所有生命构成威胁。由于我们缺乏相应的科学理解，他们可以轻易地利用我们的技术来摧毁自己。\n\n除非我们进行干预，否则这将是一场灾难。"
+ observation.3210.a:0 "激活航天飞机自毁功能。"
+ observation.3210.b:0 "损害已经造成了。"
+ # This event appears prior to observation.1400 (random nuclear war) #
+ observation.3215.name:0 "对[pre_ftl_planet.GetName]的核升级"
+ observation.3215.desc:0 "[pre_ftl_planet.GetName]上正在酝酿着紧张的局势。核战争迫在眉睫。如果我们什么都不做，他们就会毁灭自己。\n\n我们是他们唯一的希望。"
+ observation.3215.a:0 "秘密潜入，缓和局势。"
+ observation.3215.b:0 "没有必要再进行间谍活动了。"

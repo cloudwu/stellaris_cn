@@ -37,7 +37,7 @@
 
  origin_payback:0 "血债血偿"
  origin_payback_desc:0 "这个文明曾被一个异星帝国造访过，这个帝国强行启蒙了他们，之后奴役了他们。如今他们击退了入侵者，但那些入侵者有朝一日还会回来吗？"
- origin_tooltip_payback_effects:0 "§R-警告：具有挑战性的起源§!\n-开局比正常情况少10£pop£人口。\n-一开始有许多关键科技还未研究，并且有基础设施方面的劣势。\n-星系内有一个特殊的§H考古站点§!：前入侵者的战列舰残骸。\n-该起源会在星系内强制生成复数个前超光速文明，无论§H$FE_PRIMITIVE_WORLDS$§!滑块如何设置。\n-有一个随机的前超光速文明将被提升为§H$origin_broken_shackles$§!起源。\n-一个具有§H$origin_slavers$§!起源的§H高级帝国§!将生成在星系的某处。\n\n"
+ origin_tooltip_payback_effects:1 "§R-警告：具有挑战性的起源§!\n-开局比正常情况少10£pop£人口。\n-一开始有许多关键科技还未研究，并且有基础设施方面的劣势。\n-星系内有一个特殊的§H考古站点§!：前入侵者的战列舰残骸。\n-该起源会在星系内强制生成复数个前超光速文明，无论§H$FE_PRIMITIVE_WORLDS$§!滑块如何设置。\n-有一个随机的前超光速文明将被提升为§H$origin_broken_shackles$§!起源。\n-一个具有§H$origin_slavers$§!起源的§H高级帝国§!将生成在星系的某处。\n\n"
 
  START_SCREEN_PAYBACK:0 "我们曾经做过一个交易。\n\n当来自外部星辰的访客显露身形时，他们向我们提供了一份公平的合同：技术启蒙，分期偿还。在一代人的时间里，我们的行星被转变成为了一个所谓的“先进文明”。\n\n然后我们才了解到小字条款：为了偿还我们的“债务”，他们坚持要我们为他们劳作，而且是无限期的。我们的领袖对此反对，但这些外来者马上翻脸动用了暴力。我们奋起反抗。\n\n我们赢了，但是赢得十分艰难，并且为此付出了惨烈得代价。现在，我们的科学家终于从过去我们摧毁的飞船上，通过逆向工程攻破了超光速旅行的秘密。宇宙很大，但迟早我们肯定会再次遇到我们的“恩人”。而实际上，我们也迫不及待，摩拳擦掌。\n\n现在是时候血债血偿了。"
 
@@ -158,7 +158,7 @@
  # Ambient Object
  payback_site_ship_object:1 "损毁的$NAME_MSI_country_initials$战舰"
  payback_site_ship_tooltip:0 "轨道上的残骸属于一艘曾经强大的战舰。"
- 
+
  # Dig Site
  payback_digsite:0 "战争创伤"
  payback_digsite_desc:1 "曾经威胁我们家园的战舰仍然高悬在头顶，严酷地提醒着我们侥幸逃脱的命运。现在该去夺回我们的天空，取回这艘舰船残骸中的高超科技了。"
@@ -239,12 +239,12 @@
  # End of the project event
  origin.4934.name:0 "修复的旗舰"
  origin.4934.desc:1 "对前弥特集团战舰进行改造的工作已经完成。现在我们能够指挥一艘具有强大火力和战略意义的舰船了。\n\n接招吧，星辰大海！"
- origin.4934.tt:1 "战舰已经修复成为了一艘§H旗舰§!，能够在[Owner.GetCapital.GetName]的轨道上作为一个移动船坞。"
+ origin.4934.tt:2 "战舰已经修复成为了一艘§H旗舰§!，能够在[Owner.GetCapital.GetName]的轨道上作为一个移动船坞。"
 
 
  origin.4935.name:0 "修复的居住站"
  origin.4935.desc:1 "对前弥特集团战舰进行改造的工作已经完成。现在我们拥有了最先进的科研设施，它将会为我们推进科技知识的开发提供帮助。"
- origin.4935.tt:0 "战舰已经修复成为了一处§H居住站§!，在[owner.capital_scope.GetName]的轨道上专门攻破弥特集团科技的秘密。"
+ origin.4935.tt:1 "战舰已经修复成为了一处§H居住站§!，在[owner.capital_scope.GetName]的轨道上专门攻破弥特集团科技的秘密。"
 
 
  origin.4936.name:0 "工程学领悟"
@@ -262,10 +262,10 @@
  # Event chains
  payback_debt_collectors_chain_title:0 "收债人"
  payback_debt_collectors_chain_desc:1 "我们的前主人声称我们亏欠他们战争赔款。他们已经雇佣了一个星际债务回收机构来处理此事。\n\n§L[root.GetDebtCollectorsDeal]\n\n收债人将在§Y[root.payback_debt_collectors_timer]§!访问我们。§!"
- payback_debt_collectors_chain_energy:1 "我们同意每25年支付一次[root.debt_collectors_energy_payment]能量币。"
+ payback_debt_collectors_chain_energy:3 "我们同意每25年支付一次[root.debt_collectors_energy_payment]能量币。"
  payback_debt_collectors_chain_consumer_goods:1 "We agreed to pay §R2500§! £consumer_goods£ §H$consumer_goods$§! every 15 years."
  payback_debt_collectors_chain_alloys:1 "We agreed to pay §R1250§! £alloys£ §H$alloys$§! every 15 years."
- payback_debt_collectors_chain_pops:1 "我们同意每25年交付收债人5人口。"
+ payback_debt_collectors_chain_pops:3 "我们同意每25年交付收债人5人口。"
  payback_debt_collectors_chain_refused_won:0 "我们拒绝进行交易，与收债人进行作战，并且获胜了。但他们总有一天会回来的。"
  payback_debt_collectors_chain_refused_lost:0 "我们拒绝进行交易，与收债人进行作战，但是输了。他们总有一天还会回来的。"
  payback_debt_collectors_chain_empty:0 ""
@@ -276,7 +276,7 @@
  payback_make_them_pay_swords_chain_desc_no_MSI:0 "我对前主人$NAME_MSI_country$的复仇计划被[event_target:payback_stole_revenge_country.GetName]干扰了。\n\n他们会因阻碍我们的复仇而付出代价。\n\n§L使用§Y$casus_belli_cb_payback$§!战争理由，赢得对§H[event_target:payback_stole_revenge_country.GetName]§!的战争§!"
 
  payback_make_them_pay_words_chain_title:0 "扳平比分"
- payback_make_them_pay_words_chain_desc:0 "[root.GetPaybackChainDescWords]"
+ payback_make_them_pay_words_chain_desc:1 "[root.GetPaybackChainDescWords]"
  payback_make_them_pay_words_chain_desc_MSI:0 "是时候对我们的前主人，$NAME_MSI_country$进行复仇了。\n\n在银河共同体的参议院，我们会让他们屈膝求饶，让众人认清他们奴隶贩子和懦夫的本来面目。"
  payback_make_them_pay_words_chain_desc_no_MSI:0 “我们以前的主人不在了，但我们的目标没有改变：在银河共同体的参议院，我们将继续与那些企图奴役前超光速文明的人战斗。”
 
@@ -310,7 +310,7 @@
  payback_underdog_khan_desc:0 "$payback_underdog_desc$"
  payback_student:0 "认证教育家"
  payback_student_desc:0 "曾经的学生，如今成为了大师。"
- payback_student_tooltip:0 "技术启蒙效果: §G+25%§!."
+ payback_student_tooltip:1 "技术启蒙效果: §G+25%§!."
 
  # Casus Belli/war goal
  casus_belli_cb_payback:0 "血债血偿"
@@ -334,7 +334,7 @@
  casus_belli_cb_payback_punishment:0 "$casus_belli_cb_fe_punishment$"
  war_goal_wg_payback_stop_atrocities:0 "$war_goal_wg_fe_stop_atrocities$"
  war_goal_wg_payback_stop_atrocities_desc:0 "$war_goal_wg_fe_stop_atrocities_desc$"
- wg_payback_stop_atrocities_accept: "§Y[From.GetName]§!的政策被强制变更:\n- 禁止奴役\n- j禁止净化\n- 禁止前超光速文明干涉" 
+ wg_payback_stop_atrocities_accept:0 "§Y[From.GetName]§!的政策被强制变更:\n- 禁止奴役\n- j禁止净化\n- 禁止前超光速文明干涉" 
 
  # Starting event
  origin.4010.name:0 "账单"
@@ -371,7 +371,7 @@
  origin.4018.desc:0 "如果你无法或不愿意支付能量币，你可以向§H$NAME_MSI_country$§!提供一定比例的劳动力储备来抵扣你的债务。你的工人将被送往指定工作场所，并获得基本食宿，直到他们成功偿还债务。\n\n值得注意的是，上述劳工不需要有完整公民权。任何具有劳动能力的都可以。"
  origin.4018.a:0 "实际上，我们更愿意用能量币支付。"
  origin.4018.b:0 "我们就这么办。"
- origin.4018.b.tooltip:0 "宣誓在收债人返回时提供§B2 £pops£ 人口§!。"
+ origin.4018.b.tooltip:1 "宣誓在收债人返回时提供§B2 £pops£ 人口§!。"
  origin.4018.c:0 "这么说你想要奴隶？"
  origin.4018.c.response:0 "正确的术语是“契约仆人”。奴隶制是一种不公平的做法，依靠的是利用现存的权力结构进行剥削。我们的交易完全基于合约条款。"
  origin.4018.d:0 "我们拒绝支付。"
@@ -401,10 +401,10 @@
  # Hub - subsequent encounters
  origin.4030.name:0 "收债人"
  origin.4030.desc.base:0 "亲爱的[owner.GetName]，\n\n我们再次联系你，代表§Y$NAME_MSI_country$§!商讨关于你们欠债的事。"
- origin.4030.desc.energy:0 "$origin.4030.desc.base$\n\n根据我们之间的协定，我们这次将收缴总额为§G5000§! £energy£ §H$energy$§!的费用来偿还你的债务。"
+ origin.4030.desc.energy:1 "$origin.4030.desc.base$\n\n根据我们之间的协定，我们这次将收缴总额为§G5000§! £energy£ §H$energy$§!的费用来偿还你的债务。"
  origin.4030.desc.consumer_goods:0 "$origin.4030.desc.base$\n\n根据我们之间的协定，我们这次将收缴总额为§R2500§! £consumer_goods£ §H$consumer_goods$§!用于偿还你们的债务。"
  origin.4030.desc.alloys:0 "$origin.4030.desc.base$\n\n根据我们之间的协定，我们这次将收缴总额为§R1250§! £alloys£ §H$alloys$§!用于偿还你们的债务。"
- origin.4030.desc.pops:0 "$origin.4030.desc.base$\n\n根据我们之间的协定，我们这次将收缴总共§B 5 £pops£ 人口§!，通过尽心尽力的劳动来偿还你的债务。"
+ origin.4030.desc.pops:1 "$origin.4030.desc.base$\n\n根据我们之间的协定，我们这次将收缴总共§B 5 £pops£ 人口§!，通过尽心尽力的劳动来偿还你的债务。"
  origin.4030.desc.defeated:0 "亲爱的[owner.GetName]，\n\n我们再次代表§H$NAME_MSI_country$§!就债务未偿一事与你联系。我们只希望和平解决此事，同时希望贵方更愿意参与建设性的对话。"
  origin.4030.desc.furious:0 "亲爱的[owner.GetName]，\n\n这是我们的最后警告：你欠§H$NAME_MSI_country$§!的债务亟需偿还。尽管我们多次试图和平解决此事，你始终没有表达出合作的意愿。如果你再次拒绝执行偿还计划，我们将别无选择，只能采取所有必要的手段收缴你的资产。"
  origin.4030.a:0 "我们很乐意协商解决问题。"
@@ -419,11 +419,11 @@
  origin.4030.h:0 "我们知道你是谁：受害者。和我们一样。"
 
  # Pay
- origin.4031.desc:1 "感谢你的及时回应，以及你公平地解决此事的意愿！现在未偿还款项总额为§Y£energy£ [owner.debt_collectors_amount]§!。我们将在25年后再回来，收下一笔分期款项。祝您愉快！"
+ origin.4031.desc:2 "感谢你的及时回应，以及你公平地解决此事的意愿！现在未偿还款项总额为§Y£energy£ [owner.debt_collectors_amount]§!。我们将在25年后再回来，收下一笔分期款项。祝您愉快！"
  origin.4031.a:0 "未偿款项比预期的要高。"
 
  # You got scammed
- origin.4032.desc:0 "正如这个小字条款所标明的，我们执行的是标准利率。如果你继续按现有分期方式支付，你就能在2147102年后偿清你的债务。"
+ origin.4032.desc:1 "正如这个小字条款所标明的，我们执行的是标准利率。如果你继续按现有分期方式支付，你就能在2147102年后偿清你的债务。"
  origin.4032.a:0 "..."
 
  # Can't pay - energy
@@ -487,7 +487,7 @@
  origin.4060.desc:0 "$origin.4060.intro$\n\n我们应该庆祝。然后，也许我们应该放下武器，最终开始休养生息。"
  origin.4060.a:0 "我们很满意。"
  origin.4060.b:0 "我们的事业仍值得为之进行斗争。"
- origin.4060.b.tooltip:0 "我们现在可以利用§H$cb_payback_punishment$§!宣战理由，向那些仍在剥削前超光速文明的国家发动战争。"
+ origin.4060.b.tooltip:1 "我们现在可以利用§H$cb_payback_punishment$§!宣战理由，向那些仍在剥削前超光速文明的国家发动战争。"
 
  # MSI defeated by someone else - fires after action.62
  origin.4070.name:0 "债务豁免"
@@ -496,7 +496,7 @@
  origin.4070.b:0 "我们的事业仍值得为之进行斗争。"
  origin.4070.b.tooltip:0 "我们将继续斗争，直到全宇宙禁止对前超光速文明进行剥削。"
  origin.4070.c:0 "他们偷走了我们的复仇。他们要为此付出代价。"
- origin.4070.d.tooltip:0 "我们现在可以使用§H血债血偿§!宣战理由向[destroyer_country.GetName]宣战了。"
+ origin.4070.d.tooltip:1 "我们现在可以使用§H血债血偿§!宣战理由向[destroyer_country.GetName]宣战了。"
 
  # Defeated the people who defeated the MSI
  origin.4071.name:0 "债务转移"
@@ -513,7 +513,7 @@
 
  ## Sharing Espionage Intel | Payback and Broken Shackles diplo event
  origin.4120.name:0 "情报共享"
- origin.4120.desc:0 "我们双方的帝国有一个共同的敌人：§Y$MSI_Name$§!。为了共同防范这个威胁，我们建议让他们的特工访问我们的机密情报。"
+ origin.4120.desc:1 "我们双方的帝国有一个共同的敌人：§Y$MSI_Name$§!。为了共同防范这个威胁，我们建议让他们的特工访问我们的机密情报。"
  origin.4120.a:0 "有价值的提议。"
  origin.4120.b:0 "共同的敌人并不能让我们加深友谊。"
 
@@ -554,7 +554,7 @@
  START_SCREEN_BROKEN_SHACKLES:0 "终于自由了！\n\n有些人生来便负着枷锁。还有的负债累累，然后被作为契约奴隶任人买卖。但前主人的科技并不能保护他们周全。我们密谋反叛。在一场短暂但血腥的斗争中，我们杀死了俘虏我们的人，也重创了他们的运奴船。我们不得已紧急迫降到[Root.Capital.GetName]的表面上。\n\n尽管我们来自五湖四海和不同的物种，但在您的领导下我们找到了共同的目标。假以时日，这艘运奴船受损的系统就能修好，藏在其中的大量秘密-包括我们曾经母星的位置-也能被揭晓。\n\n我们已挣脱枷锁。现在就开始劳动吧。"
  START_SCREEN_BROKEN_SHACKLES_MEGACORP:0 "终于自由*了！\n\n有些人生来便负着枷锁。还有的负债累累，然后被作为契约奴隶任人买卖。然而我们都畅想着，能够过上轻松而富足的生活。我们密谋反叛。在一场短暂但血腥的斗争中，我们杀死了俘虏我们的人，也重创了他们的运奴船。我们不得已紧急迫降到[Root.Capital.GetName]的表面上。\n\n尽管我们来自五湖四海和不同的物种，但在您的领导下我们找到了共同的目标。我们的前主人也许非常残酷，但他们懂得经营生活。我们应该像他们一样坚定地追求我们的利益。假以时日，这艘运奴船受损的系统就能修好，藏在其中的大量秘密-包括我们曾经母星的位置-也能被揭晓。我们已挣脱枷锁。是时候成立公司了。\n\n*法律告示：\n此处使用“自由”一词并不代表本公司将提供任何折扣或进行任何影响[Root.GetName]股东收益的活动。如对此或其他术语有任何疑问，或是希望退出[Root.Capital.GetName]上的持续存在，请在[Root.Capital.GetName]的$building_bureaucratic_1$联系我们的法律或安保专家，以获取他们的快速处理。"
  origin_tooltip_broken_shackles_effects:0 "§R-警告：具有挑战性的起源§!\n-一开始有许多关键科技还未研究，并且有基础设施方面的劣势。\n-你所选的物种将与来自银河各处的一些前超光速£pop£人口一起开始。\n-银河内将会出现一个你所选物种的前超光速文明。\n-该起源会在银河内强制生成复数个前超光速文明，无论§H$FE_PRIMITIVE_WORLDS$§!滑块如何设置。\n-有一个随机的前超光速文明将被提升为§H$origin_payback$§!起源。\n-一个具有§H$origin_slavers$§!起源的§H高级帝国§!将生成在银河的某处。"
- 
+
  is_broken_shackles_origin:0 "$TRIGGER_FAIL$我们的起源不允许我们以这样的方式对待自己的人民。"
 
  culture_shock_broken_shackles:0 "$culture_shock_bronze_age$"
@@ -571,8 +571,8 @@
  origin_111.a:0 "$origin.111.name$!"
  origin_111.tooltip:0 "在§Y[Root.Capital.GetName]§!上解锁§Y$decision_unshackled_memorial$§!决议。\n$decision_unshackled_memorial_effects$\n\n§Y$district_crashed_slaver_ship_plural$§!将提供£job_clerk£§Y$job_clerk_plural$§!岗位以替代£job_broken_shackles_scavenger£§Y$job_broken_shackles_scavenger$§!岗位。"
  decision_unshackled_memorial_effects:0 "-将§Y$d_crashed_slaver_ship$§!转化为§Y$d_crashed_slaver_ship_memorial$§!，提供§G+2§!£job_culture_worker£$job_culture_worker$岗位\n-§Y$district_crashed_slaver_ship_plural$§!、§Y$building_low_tech_scrap_refinery$§!、§Y$building_low_tech_power_plant$§!和§Y$building_low_tech_farm$§!将转化为高级基础设施。"
- 
- 
+
+
  #Pre-FTL Homeworlds Found
 
  origin.5000.name:0 "归乡"
@@ -584,6 +584,7 @@
  origin.5001.desc:0 "[From.GetName]……在轨道上看，它是这么地微小。\n\n人们并不是拥有星球，而是属于这颗星球。回到这里，我们又向找回自己的过去迈进了一步。\n\n我们在前主人的手中遭受的苦难永远不能弥消。真正的疗愈需要花费几个世代。但总之，今天确实是个好日子。"
  origin.5001.homecoming.desc:0 "[From.GetName]……在轨道上看，它是这么地微小。\n\n人们并不是拥有星球，而是属于这颗星球。回到这里，我们又向找回自己的过去迈进了一步。\n\n我们在前主人的手中遭受的苦难永远不能弥消。真正的疗愈需要花费几个世代。但总之，今天确实是个好日子。"
  origin.5001.empty.desc:0 "[From.GetName]……肯定是搞错了什么。在轨道上我们无法探测到任何智慧生命。所有的人口可能都被某种方式抹去了。\n\n尽管这与我们预想的归乡大相径庭，但返回这个星系还是让我们向着寻回自己过去迈出了一步。不幸的是，我们得独自携带者[From.GetName]前行了，只有靠我们才能传承记忆。"
+ origin.5001.tomb.desc:0 "[From.GetName]……这里发生了非常不好的事情。\n\n被炸毁的土地上尘土飞荡。大部分的表面都被辐射了，少数绝望的幸存者在废墟中坚持生活。\n\n虽然这不是我们所希望的归宿，但通过返回这个星系，我们已经向收回我们的过去的一步迈进了。"
  origin.5001.uplifted.desc:0 "[From.GetName]……自从我们被掳走以来，这里发生了蓬勃的发展。他们不再被局限于单一行星上，而是已经迈向了繁星的征途。尽管这与我们预想的归乡大相径庭，但返[From.GetName]上的科技进步属实卓越。\n\n而我们则已经没有了归处，我们被偷走的过去再也找不回来。我们现在能做的只有朝前看。"
  origin.5001.conquered.desc:0 "[From.GetName]……自从我们被掳走以来，这里发生了很多事情。我们的这些同胞已经失去了主权，被另一个星系强权所统治了。\n\n而我们则已经没有了归处，我们被偷走的过去再也找不回来。我们现在能做的只有朝前看。"
  broken_shackles_homeworld_found_01:0 "归乡"
@@ -616,7 +617,7 @@
  origin.5004.name:0 "[Root.Capital.GetName]上的暴乱"
  origin.5004.desc:0 "归乡者们正在煽动反政府情绪，呼吁我们帝国的各物种落叶归根，回到自己的故土。该运动中最极端的派系已经和亲政府军队之间爆发了战斗。据报道，几个主要的城市中心已经遭到了严重的破坏。"
  origin.5004.a:0 "宣布戒严"
- 
+
  origin.5005.name:0 "齐心协力"
  origin.5005.desc:0 "虽然为了禁止人民返回他们各自的家园星球，我们付出了一定的代价，但事实最终证明了这个决策是正确的。近期，我们目睹社会凝聚力得到了明显的改善，同时，人们对于[Root.Capital.GetName]才是我们的家园这一观点有了崭新的共识。"
  origin.5005.a:0 "只有强人的手腕才能铸造国家。"
@@ -644,7 +645,7 @@
  #Homesick Alternate
 
  origin.5011.desc:0 "在摆脱桎梏的斗争历程中，我们迈出了成为一个民族的第一步。然而，近年来，大众媒体充斥着对我们以前在家园星球所享受的“朴素生活”的叙述，言语之间尽是浪漫美化。许多人已经吵着要回去。\n\n如果我们不小心谨慎，这场运动将严重影响我们社会秩序的稳定。"
- 
+
  #New Factions Founded
 
  origin.5041.name:0 "脱枷之后的政治局面"
@@ -674,11 +675,11 @@
  resolution_proposed_intro:0 "我们在银河共同体的联系人向我们传递了消息：正在制定相关法律法规，意在禁止"
  origin.5094.name:0 "提议银河议案"
  origin.5094.desc:0 "$resolution_proposed_intro$银河范围内的奴隶劳工和奴隶牲口制度。如果我们真心想要支持自由，那么就必须旗帜鲜明地站在改革的一方。如果我们没能作出行动，我们的人民会怎么想？"
- 
+
  origin.5095.name:0 "绝大多数的奴隶制度被取缔"
  origin.5095.desc:0 "今天对于银河共同体来说是伟大的一天，各成员国投票决定将绝大多数形式的奴隶制裁定为非法。星系的人们再也不需要担心被下作的暴徒和唯利是图的公司压迫了。尽管在确保所有有智生命体的自由权利方面，我们还有很长的路要走，但此次裁定代表了重要的第一步。"
  origin.5095.a:0 "开明的思想取得了胜利。"
- 
+
  slavery_allowed_outro:0 "由于压迫性政权和剥削性公司以恶毒的手段进行了阻挠，在可预见的未来，这种可憎的做法将继续下去。"
  origin.5100.name:0 "奴隶制获得默许"
  origin.5100.desc:0 "今天对于银河共同体来说是一个令人心碎的日子，取缔绝大多数形式的奴隶制的动议未能获得足够的票数。$slavery_allowed_outro$"
@@ -719,7 +720,7 @@
  broken_shackles_slavery_repeal:0 "禁止奴隶制被废止"
 
  #Crashed Slaver Ship - Initial Arc Site
- 
+
  broken_shackles_digsite:0 "坠毁的运奴船"
  broken_shackles_desc:0 "修复这艘坠毁的运奴船的电脑核心应该可以令我们找到自己母星的位置……同时也是$NAME_MSI_country$的母星。"
 
@@ -739,7 +740,7 @@
  origin.5030.desc:0 "得益于一些异想天开的方案，我们的[engineering_shackled_species.GetAdj]工程师们诚通地重启了受损的计算机核心。在舰船系统中引入程序化人工智能，我们就可以开启会话。总的来说，我们感觉这台机器还是愿意帮我们一把的，而不是在碍我们事。\n\n这项突破给予我们的科学家一些关于数据加密的新线索。随着我们逐渐在星系舞台上崭露头角，这些知识一定能派上用场的。"
 
  origin.5035.name:0 "数据挖掘"
- origin.5035.desc:0 "损坏的计算机核心已经完全修好了，尽管多数的数据是加密的，但破译工作已经开始。只要我们愿意花费时间和人力物力，我们迟早能获得包括我们原母星的位置在内的所有信息。\n\n事实上，我们已经得到了一些对我们有利的东西：通过对运奴船所运行的超空间航道扩张进行三角定位，我们发现了$NAME_MSI_country$在星系中的坐标。\n\n我们现在有机会去会会我们的前主人，或者是由他们自生自灭。"
+ origin.5035.desc:1 "损坏的计算机核心已经完全修好了，尽管多数的数据是加密的，但破译工作已经开始。只要我们愿意花费时间和人力物力，我们迟早能获得包括我们原母星的位置在内的所有信息。\n\n事实上，我们已经得到了一些对我们有利的东西：通过对运奴船所运行的超空间航道扩张进行三角定位，我们发现了$NAME_MSI_country$在星系中的坐标。\n\n我们现在有机会去会会我们的前主人，或者是由他们自生自灭。"
 
  origin.5035.desc.MSInocontact:0 "$origin.5035.desc$\n\n事实上，我们可能已经获得对我们有用的东西：沿着奴隶飞船超空间航道的变化进行三角测量，我们已经发现了$NAME_MSI_country$d的银行系坐标。\n\nw我们现在可以选择，直面我们以前的主人，或者让他们自生自灭。" 
 
@@ -762,7 +763,7 @@
  origin.5065.desc:0 "这一刻如期而至：我们与§H[This.ContactCountry.GetRealName]§!建立了联系。\n\n在起义后，有的人希望我们苟全性命于乱世，但显然$NAME_MSI_country$早已发现我们在星系舞台上的存在了。只有对利益的考虑可以阻止他们回来[Root.owner.capital_scope.GetName]拿回他们的“合法财产”。看来我们还不值得他们这么做。"
  origin.5065.a:0 "不出所料。"
  broken_shackles_MSI_contact_01:0 "同$NAME_MSI_country_initials$接触"
- 
+
  origin.5070.name:0 "一诺千金"
  origin.5070.desc:0 "§H[This.ContactCountry.GetRealName]§!的代表会见了我们的特使并表达的善意。但我们很明白这些允诺有多么地空洞虚伪。\n\n公司来到我们的星球，允诺带来更好的生活。他们利用花言巧语和蝇头小利打通了我们领导层的关系，然后签订了协议并获得了贷款。资本开始运作，我们市场中的商品瞬间充盈了起来。在我们搞明白发生了什么之前一切都已经结束了：我们成了$NAME_MSI_country_initials$的私有财产。\n\n这种事情不会再发生了。随着我们走向星系舞台，独立自主变得非常重要。"
  origin.5070.a:0 "我们不会再被愚弄了。"
@@ -774,13 +775,13 @@
 
  origin.5080.name:0 "银河共同体上的相遇"
  origin.5080.desc:0 "我们派往银河共同体的代表汇报：已经与[MSI_country.GetName]建立联络。\n\n公司来到我们的星球，允诺带来更好的生活。他们利用花言巧语和蝇头小利打通了我们领导层的关系，然后签订了协议并获得了贷款。在我们搞明白发生了什么之前一切都已经结束了：我们成了他们的私有财产。必须给银河共同体的成员提个醒，千万不要上$NAME_MSI_country_initials$的当。"
- 
+
  MSI_war_outro:0 "此战非我所愿，但我们将给它画上句号。"
  origin.5135.name:0 "挣脱桎梏"
  origin.5135.attackers.desc:0 "我们在旧主的阴影下苟且偷生的日子太久了，我们享受着这应得的自由之时，有太多的同胞还在作为契约奴隶遭受着他们的羞辱。一些人可能会将这视作侵略战争并加以谴责。不管怎样，反抗暴政的时机已到。这些星系中的流氓和利润贩子将不再被准许继续他们那卑鄙的勾当。\n\n今天，我们迈向战争。"
  origin.5135.defenders.desc:0 "$NAME_MSI_country$的糖衣炮弹没有成功，于是现在他们要来硬的了。他们的董事会认为我们软弱可欺。但解开了枷锁的我们早已如钢铁般铸成一体了。\n\n$MSI_war_outro$"
  origin.5135.a:0 "让他们颤抖。"
- 
+
  origin.5140.name:0 "正义未至"
  origin.5140.desc:0 "意想不到的事情发生了。[From.GetName]赢了，而我们再一次回到了他们的束缚之下。尽管我们输掉了这场战争，但争取自由与平等的斗争还远未结束。"
  origin.5140.a:0 "这仇我们记下了。"
@@ -844,7 +845,7 @@
  origin.5205.c.tooltip:0 "§L一切皆为政治。一个健康的社会会主动投资、培养高参与、高活跃的公民群体。§!"
  origin.5205.d.tooltip:0 "§L纠正我们社会中的系统性问题将需要大量的时间和资源投入。§!"
  origin.5205.e.tooltip:0 "§L政府对媒体进行监管，能够减少政治上的分裂和对立。§!"
- 
+
  origin.5210.name:0 "割裂的文化"
  origin.5210.desc:0 "政府的监管可能有助于淡化政治上的不和，但对消除社会中的分歧却起不到什么作用。社群领袖不断地在各物种和文化群体之间挑拨离间。根据信息网络上公布的材料，这个问题只会变得愈发糟糕。"
  origin.5210.a:0 "我们需要从根源上解决这个问题。"
@@ -857,7 +858,7 @@
  origin.5220.name:0 "新的星际秩序"
  origin.5220.desc:0 "我们的安保部队已经成功地恢复了我们所有星系的社会秩序。各类政治激进分子要么被围捕，要么被监禁，他们的领导人现在面临叛国罪的指控。\n\n回顾我们历史上这段令人遗憾的时期，有一点是非常清楚的：像我们这样的社会只能由强硬的手腕来管理。现在是时候由我们提供强硬的手腕了。"
  origin.5220.a:0 "只有团结一致，才能繁荣昌盛。"
- 
+
  origin.5225.name:0 "支离破碎"
  origin.5225.desc:0 "我们的社会自建立之初，就充斥着冲突。也许事情在变好之前不可避免地会变得更糟；在整个信息网络上，仇恨团体激增。要求将一个或另一个物种从我们的星域中驱逐出去的呼声已经是随处可见了。然而，也有迹象表明，人们对共同斗争的意识也有所提高。\n\n一些团体，除了对变革的渴望之外几乎没有什么共同点，但依然愈发频繁地走到了一起。通过直面我们的问题，在其他文明可能归于黑暗的事物，我们成功将其照亮。也许有一天，我们会把这段冲突的岁月看作是历史大势的转折点。"
 
@@ -945,7 +946,7 @@
  broken_shackles_homeworld_uplifted:0 "被提升的家园"
 
  ####Loc for all low-tech jobs / buildings####
- 
+
  job_low_tech_researcher:0 "科学家"
  job_low_tech_researcher_plural:0 "科学家"
  job_low_tech_researcher_desc:0 "我们的旧主人毫不重视我们的天赋，对我们的智慧大加贬低。现在，我们中间最活跃的头脑已经可以随心所欲地追求自己的雄心。"
@@ -957,6 +958,7 @@
  job_low_tech_laborer_desc:0 "作为契约奴隶，他们将工作刻到了自己的骨子里。现在，随着自由的到来，他们有了新的奋斗目标，这是任何奴隶都无法企及的干劲。"
  job_low_tech_laborer_effect_desc:0 "£job_low_tech_laborer£$job_low_tech_laborer_plural$将$r_minerals$转化为$r_consumer_goods$和$r_alloys$"
  mod_job_low_tech_laborer_add:0 "$job_low_tech_laborer$岗位"
+ planet_laborer:0 "劳动岗位"
 
  job_low_tech_technician:0 "反应堆工程师"
  job_low_tech_technician_plural:0 "反应堆工程师"
@@ -1037,6 +1039,10 @@
  decision_unshackled_memorial_tt:0 "§Y$d_crashed_slaver_ship$§!替换为§Y$d_crashed_slaver_ship_memorial$§!。\n部分§Y建筑§!和§Y地区§!将会转化为先进基础设施。"
  remove_broken_shackles_modifiers_tt:0 "§Y$free_at_last_broken_shackles$§!和§Y$culture_shock_broken_shackles$§!修正移除。"
 
+ decision_remove_wreckage:0 "移除残骸"
+ decision_remove_wreckage_desc:0 "坠毁的奴隶船残骸应该被清除，为我们不断扩张的城市化让路。"
+ decision_remove_wreckage_tt:0 "§Y$district_crashed_slaver_ship_plural$§!将会转化为§Y$district_city_plural$§!。\n将移除§Y$d_crashed_slaver_ship$§!及所有的§Y$d_ship_debris_broken_shackles_blocker$§!。"
+
  job_broken_shackles_scavenger:0 "拾荒者"
  job_broken_shackles_scavenger_plural:0 "拾荒者"
  job_broken_shackles_scavenger_desc:0 "拾荒者会探索§Y$d_crashed_slaver_ship$§!的废墟，以期找到有价值的东西。 "
@@ -1107,7 +1113,7 @@
  origin.6005.a:0 "只要你遵守这个社会的规范 ，那么你就会受到欢迎。"
  origin.6005.a.tt:0 "将§Y[fotd_Leader.GetName]§!作为§Y科学家§!添加到我们的领袖储备。"
  origin.6005.b:0 "管好你自己。"
- 
+
  origin.6006.desc.base1:0 "一位来自[fotd_habitants.Capital.GetName]的舰队司令提出要加入我们的舰队，担任临时指挥官。[fotd_Leader.GetSheHeCap]的动机尚不清楚，但我们的线人告诉我们，这可能牵涉到一起丑闻。"
  origin.6006.desc.base2:0 "[fotd_Leader.GetName]非常急迫地想和我们签署临时合同。[fotd_habitants.Capital.GetName]一直是滋生狡猾和非常规战术的温床。"
  origin.6006.desc.base3:0 "由于舰队司令[fotd_Leader.GetName]在最近一次联合舰队演习上的出色表现，我们决定扩大此人的权限，让其指挥一支真正的舰队舰队。"
@@ -1272,9 +1278,9 @@
 
  origin.6175.name:0 "遭到猎杀"
  origin.6175.desc:0 "§Y菲沃尔人§!赢了。我们的人口九死一生，家园支离破碎。\n\n直到这颗行星的最后一刻，跨大气层运输船还在将[Owner.GetSpeciesNamePlural]不断运往轨道。而来不及离开的人则在高亚光速炮弹击中的瞬间被产生的高温瞬间化为灰烬。[fotd_seperatist_planet.GetName]愿意接纳我们的政府并安置难民。"
- 
+
  origin.6180.name:0 "航线净空"
- origin.6180.desc:0 "[Target.GetName]已经恢复安全了。我们设法将钨弹偏转到了足够远的地方，以确保我们自己能够存活下来。尽管经过其漫长的旅途之后，它很可能成为另一个行星的问题。"
+ origin.6180.desc:1 "[Target.GetName]已经恢复安全了。我们设法将钨弹偏转到了足够远的地方，以确保我们自己能够存活下来。尽管经过其漫长的旅途之后，它很可能成为另一个行星的问题。"
  origin.6180.a:0 "现在，该看看卫星了。"
 
  origin.6185.name:0 "反制措施"
@@ -1511,7 +1517,7 @@
  MESSAGE_CONTROLLED_SHATTERING:0 "通过受控爆破，我们将这颗炮弹的质量削减了约34%。"
  MESSAGE_DEFLECTING_FIELDS:0 "使用先进的力场操控技术和护盾科技，我们成功地把这份临别礼物的速度减慢了。"
 
- #Names 
+ #Names
 
  NAME_Divider:0 "大分裂者"
  NAME_Fevor:0 "菲沃尔"
@@ -1602,7 +1608,7 @@
  #thank you gift
  fircon.1233.name:0 "迟来的道谢"
  fircon.1233.desc:0 "我们的一艘舰船截获了一个突然凭空出现在我们母星系的储藏箱。在我们的物种一接触到它的瞬间，上面复杂的锁就自动解开了，展露出了其中令人瞠目咋舌的大量工艺品……还有一张来自多肢旅行者的感谢纸条，其中声称她在几十年前曾经造访过我们的母星。"
- 
+
  ## Special project - learning to Jaunt
  THE_JAUNT_PROJECT:0 "学习闪现"
  THE_JAUNT_PROJECT_DESC:0 "万爪之母在我们首都的凭空出现证明了“灵能传送”这一曾经只存在于理论层面的概念是真实存在的。通过让我们的[owner.GetScientistPlural]投入研究工作，也许就可以学会这种瞬间旅行方式的秘密。"
@@ -1640,10 +1646,10 @@
  awareness_partial_tt:0 "这个文明开始意识到银河系中有生命存在。太空里有什么东西。但会是什么呢？"
  awareness_high_tt:0 "这个文明意识到银河系充满了生命；但这些生物是谁，他们想要什么呢？"
  awareness_full_tt:0 "充分意识到有星际生命存在，这个文明很清楚自己属于一个银河共同体。"
- 
+
  AWARENESS_STAGE_VAL_DESC:0 "当前觉醒度：$VAL|0Y$"
  AWARENESS_OLD_DESC:0 "在月初，他们的觉醒度为$OLDVAL|0Y$。"
- 
+
  PREFTL_TECH_LEVEL_VAL_DESC:0 "目前到下一时代的进度：§Y$VAL|0%$§!"
 
  MESSAGE_PRE_FTL_AWARENESS_INCREASED_TITLE:0 "感知已提升"
@@ -2316,7 +2322,7 @@
  fircon.8055.c:0 "对[preftl_hagglers_country.GetName]施加以得到更有利的交易。"
 
  leader_trait_preftl_haggler:0 "商业头脑"
- leader_trait_preftl_haggler_desc:0 "这名领袖来自一个[GetPreFTLUpper]国家，在商业方面显示出了极其敏锐的头脑。"
+ leader_trait_preftl_haggler_desc:1 "这名领袖来自一个[Owner.GetPreFTLUpper]国家，在商业方面显示出了极其敏锐的头脑。"
  preftl_hagglers_mod:0 "预测贸易算法"
  preftl_hagglers_mod_desc:0 "我们对[preftl_hagglers_country.GetName][GetPreFTLUpperPlural]开展的研究，以及他们侵略性的贸易手段，帮助我们建立了许多令人信服的经济模型。"
 
@@ -2334,7 +2340,7 @@
  tech_abusers_desc:0 "这颗行星上的居民以滥用科技而闻名。"
  opinion_tech_abusers:1 "它们因我们的信任而尊重我们。" 
  opinion_tech_abusers_pro:1 "它们与我们的选择意见相左。" 
- 
+
  # Invasive Species
  fircon.8565.name:0 "入侵物种"
  fircon.8565.desc:0 "从最近一次外交访问[preftl_invasives_planet.GetName]的[preftl_invasives_species.GetName]返回时，我们发现了一些不寻常的偷渡者。我们的穿梭机上出现了一群无翅的、蠕动的小型节肢动物。\n\n它们移动速度很快，而且很小，我们的传感器无法探测到它们。由于它们繁殖十分迅速，控制它们的入侵变得越来越困难。\n\n不幸的是，对[preftl_invasives_planet.GetName]的人们来说，这个物种是富足的象征。我们的应对方式可能会影响我们与[preftl_invasives_species.GetNamePlural]的关系。"
@@ -2372,7 +2378,7 @@
  stand_your_ground_desc:0 "这些人对自己的过往骄傲不已，牢牢地坚持传统的政府结构。"
  opinion_flavors_up:0 "他们很欣赏我们的外交手段。"
  opinion_flavors_down:0 "他们不太信任我们了。"
- 
+
  fircon.8000.name:0 "仇外心理"
  fircon.8000.desc:0 "在一个有趣的跨文化交流例子中，[pre_ftl_planet.GetName]上相当数量的年轻人对[owner.GetAdj]的所有事物产生了消费性的兴趣。这些充满激情的年轻人急切地争抢与我们文化相关的任何东西，现在他们构成了这个星球上一个充满活力和不断发展的亚文化群体。\n\n我们甚至得知即将到来的粉丝大会将举办一场服装大赛。"
  fircon.8000.a:0 "他们需要裁判吗？"
@@ -2440,17 +2446,75 @@
  opinion_lone_drone:0 "再同化令它很高兴。"
 
  # list effects/triggers
- 
+
  effect_random_observed_pre_ftl_within_border:0 "位于我们境内并带有一个观测哨站的随机[GetPreFTLUpper]国家"
  effect_every_observed_pre_ftl_within_border:0 "所有位于我们境内并带有一个观测哨站的[GetPreFTLUpper]国家"
  effect_random_pre_ftl_within_border:0 "我们境内的随机[GetPreFTLUpper]国家"
  effect_every_pre_ftl_within_border:0 "所有我们境内的[GetPreFTLUpper]国家"
- 
+
  any_observed_pre_ftl_within_border_trigger:0 "任意位于我们境内并带有一个观测哨站的[GetPreFTLUpper]国家"
  count_observed_pre_ftl_within_border_trigger:0 "位于我们境内并带有一个观测哨站的[GetPreFTLUpperPlural]国家数量$IS_NOT$$COMPARATOR$$NUM|Y$"
  observed_pre_ftl_within_border_all_trigger:0 "$IS_ALL_NOT$位于我们境内并带有一个观测哨站的[GetPreFTLUpperPlural]国家满足以下条件"
  any_pre_ftl_within_border_trigger:0 "任意我们境内的[GetPreFTLUpper]国家"
  count_pre_ftl_within_border_trigger:0 "位于我们境内的[GetPreFTLUpperPlural]国家数量$IS_NOT$$COMPARATOR$$NUM|Y$"
+
+
+##################################################
+# The Chosen (initialisers, events and arc site) #
+##################################################
+ NAME_The_Chosen:0 "天选民"
+ NAME_ADJ_Chosen:0 "天选民"
+ NAME_Aspharelle:0 "艾斯法瑞尔"
+ NAME_Taremes:0 "塔尔莫斯"
+ NAME_Ereba:0 "艾瑞巴"
+ NAME_Ithomes_Gate:0 "伊索默之门"
+ NAME_Ophala:0 "欧法拉"
+ NAME_Charynoi:0 "夏瑞诺伊"
+
+ site_the_chosen_backstory:0 "废弃观测站"
+ site_the_chosen_backstory_desc:0 "一座环绕着§Y[From.Planet.MoonOf.GetName]§!的废弃观测站。从中可以一窥在这个行星上的前超光速的§Y$NAME_Charynoi$§!文明的起源。"
+
+ arcsite.3000.name:0 "$NAME_Charynoi$博物馆"
+ arcsite.3000.desc:0 "[From.Planet.MoonOf.GetName]上的废弃观测站似乎在报废前不久被改为他用。尽管上面还有用于监视行星居民的设备的证据，但看来大部分都改成了$NAME_Charynoi$的历史博物馆。奇怪的是，明明这是一个好斗的物种，但是关于暴力的主题被刻意回避了，展品主要集中在一些关于和平和生育的仪式上。\n\n在中控室发现了一系列数据水晶。显然这就是我们想要找的东西。"
+ arcsite.3000.A:0 "深入秘密。"
+
+ arcsite.3005.name:0 "民族志记录"
+ arcsite.3005.desc:0 "第一块数据水晶已经完成了翻译。其封面上写着“这是$NAME_Charynoi$民族的记录，系女先知伊蒂卡里奥斯所留，这样那些可能找到它的人能原谅我们的罪过。”\n\n其后是一份历史、哲学和艺术工作的合辑，可能是由一个比较标准但稍微好斗的晚工业革命社会所创。我们的[Owner.GetLinguists]将其发回[Owner.Capital.GetName]以进行进一步研究。"
+ arcsite.3005.B:0 "没什么意思。"
+
+ arcsite.3010.name:0 "转折点"
+ arcsite.3010.desc:0 "“现在我将叙述一切是如何走向错误——我们最初陷入傲慢罪恶的地方，”伊蒂卡里奥斯宣称。\n\n第二颗晶体记录了$NAME_Charynoi$是如何逐渐揭开太空飞行的奥秘，似乎比[Root.Owner.GetName]早了大约一百年。他们在自己的星系中发现了两颗美丽的行星，并得出结论认为这些行星是神灵留给他们的产业，是他们与生俱来的权利，他们现在正在索取这些权利。\n\n伊蒂卡里奥斯用惊恐的语气讲述了这些早期探索的黑暗面：在他们的新殖民地中，初生的文明并不愿意放弃他们的家园。他们被打败并被奴役，最终逐渐消亡，死于$NAME_Charynoi$不屑于治疗的疾病。\n\n我们的[Owner.GetLinguists]正在努力翻译第三个也是最后一个数据晶体。"
+
+ arcsite.3015.name:0 "叛徒的诡计"
+ arcsite.3015.desc:0 "最终，我们耗尽了我们所拥有的空间。我们知道虫洞的存在，但是它们无法被我们研究。我们的领土物产丰富景色优美，很容易让我们相信自己是天之选民。虫洞是一种考验，只要通过了考研，我们就能将自己的种族传遍整个银河，这是我们的神圣使命。\n\n我曾经是那些试图履行这个职责的首领之一。当灵感降临在我身上——我意识到掌握了打开虫洞的钥匙——我便在祖先神社中祈祷了几天。最终得到了启示：我们不配。如果我们穿过虫洞，我们只会找到痛苦。$NAME_Aspharelle$将被清除，作为我们所犯罪行的惩罚。我决定销毁我的研究，并寻找一条不同的路。\n\n要找到可以信任的人很难。如果我们被发现了，我们肯定宁可快速死亡。虽然我比以往任何时候都更加坚信我们是正确的，但我们会被视为叛教者。最终，我们启动了一个大胆的计划：在假装盲目飞越虫洞的愚蠢尝试的掩护下，我们建造了一艘方舟船，航行到未知的地方，朝着一个遥远的星球。我们经历了多年穿越空旷的太空，直到我们到达目的地。现在，我们只希望被留在和平中过上品德高尚的生活，以证明并非所有$NAME_Charynoi$都是邪恶的。\n\n伊蒂卡里奥斯为她的兄弟们对我们造成的任何伤害深表歉意，她提到她试图在[From.Planet.MoonOf.GetName]周围竖起一个坚不可摧的盾牌，这样她的人民就不会再受到诱惑去寻找星辰。她失败了，但是我们的[Owner.GetResearchers]已经能够解决她的问题。现在，如果我们愿意，我们现在就可以竖起这个盾牌。"
+ arcsite.3015.A:0 "我们会如他们所愿。"
+ arcsite.3015.B:0 "我们可以随心所欲处置他们。"
+ arcsite.3015.C:0 "够了……"
+
+ SHIELD_PRIMITIVE_PLANET_PROJECT:0 "立起护盾"
+ SHIELD_PRIMITIVE_PLANET_PROJECT_DESC:0 "我们的[Owner.GetResearchers]应该可以完成伊蒂卡里奥斯想要用来包围§Y[This.GetName]§!的护盾，只需要提供足够的资源就行。"
+
+ arcsite.3020.name:0 "夏瑞诺伊被屏蔽"
+ arcsite.3020.desc:0 "得益于我们[Owner.GetResearchers]的努力，伊蒂卡里奥斯想要用来包围[From.GetName]的护盾完成了。她的$NAME_Charynoi$子民终于可以得到安宁。"
+ arcsite.3020.desc.A:0 "大家都可以松口气了。"
+
+ bane_of_the_prophetess:0 "女先知之恶"
+ bane_of_the_prophetess_desc:0 "由于我们的行动，沙莱诺伊女先知为她的人民寻求救赎的绝望努力被挫败了。他们的同类不会得到宽恕！"
+ bane_of_the_prophetess_gestalt:0 "$bane_of_the_prophetess$"
+ bane_of_the_prophetess_gestalt_desc:0 "$bane_of_the_prophetess_desc$"
+ charynoi_redemption:0 "夏瑞诺伊的救赎"
+ charynoi_redemption_desc:0 "我们帮伊蒂卡里奥斯建成的护盾让夏瑞诺伊，或者说部分的夏瑞诺伊，可以得到救赎。"
+
+ paradisiacal_habitat:0 "天堂般的居住站"
+ paradisiacal_habitat_desc:0 "尽管该居住站完全是人工建成，但其中的空气散布着田园的气息，让无论再天差地别的所有智慧生物都能想起自己的家乡。"
+
+ fircon.3510.name:0 "天选民"
+ fircon.3510.desc:0 "我们被困在虫洞里面太久了。但等等！终于，上天的恩赐帮助我们我们突破了施加于身上的桎梏。我们终于通过了考验。星系的其他地区都在等待着我们去征服。\n\n不要反抗。从长远来看，这样会更好。"
+ fircon.3510.A:0 "好吧，真是出乎意料。"
+
+ fircon.3515.name:0 "天选民"
+ fircon.3515.desc:0 "什……？你……突破了虫洞？怎么做到的？我们的科学家已经研究了很多年都没有成功。这肯定哪里出问题了。\n\n……\n……\n……\n\n这肯定是场考验。我不信任你们！我们必须从星系中清除你们这些东西！"
+
 
 #######################
 # Economic Categories #
@@ -2510,7 +2574,7 @@
 ########################################
 
  #Names
- 
+
  NAME_Helito:0 "贺利托"
  NAME_Helito_A:0 "贺利托 A"
  NAME_Helito_B:0 "贺利托 B"
@@ -2520,7 +2584,7 @@
  NAME_Helito_IV:0 "贺利托 IV"
  NAME_Helito_V:0 "贺利托 V"
  NAME_Helito_VI:0 "贺利托 VI"
- 
+
  NAME_Dacha:0 "达恰"
  NAME_Dacha_A:0 "达恰 A"
  NAME_Dacha_B:0 "达恰 B"
@@ -2529,23 +2593,23 @@
  NAME_Dacha_II:0 "达恰 II"
  NAME_Dacha_III:0 "达恰 III"
  NAME_Dacha_IV:0 "达恰 IV"
- 
+
  NAME_Sol_X:0 "太阳 X"
- 
+
  #Events
- 
+
  fircon.5000.name:0 "缺失轨道"
  fircon.5000.desc.base:0 "§Y[From.GetName]§!少了几个星球。\n\n所有的计算都表明应该还有几个天体存在，但在这个星系中却找不到它们的踪迹。传感器已经重新校准，数字也重新核对过，但得出的结论被现实所推翻。我们已经在自己的星图上标记出了失踪小行星的位置。"
  fircon.5000.desc:0 "$fircon.5000.desc.base$\n\n或许再靠近些扫描这个星系会得到更多信息。"
- 
+
  fircon.5005.desc.open:0 "$fircon.5000.desc.base$\n\n我们认为达恰星系中相邻的[owner.GetPreFTLLowerPlural]与这一状况有关。"
  fircon.5005.desc.closed:0 "$fircon.5000.desc.base$\n\n看来是过去达恰星系中相邻的[owner.GetPreFTLLowerPlural]造就了这一怪异的星系。然而通往那里的超空间航道却消失了。"
- 
+
  fircon.5010.name:0 "星球大盗"
  fircon.5010.desc:0 "那些星球是被移动了！\n\n我们在§Y[from.solar_system.GetName]§!星系探测到的异常超空间航道都连接着我们认为应该存在星球的位置。在研究了这些怪异的航道后，我们发现它们都通向同一个地方。一个叫做§Y达恰§!的星系，本以为是无法到达的，但如果把这些狭窄的超空间航道合并起来，我们就能送一艘科研船过去。"
  fircon.5010.a:0 "找到超空间航道通往何处！"
  fircon.5010.b:0 "我们真的想弄清楚吗？"
- 
+
  fircon.5015.name:0 "丰饶诸世界"
  fircon.5015.desc:0 "围绕着§Y[From.GetName]§!星系三颗恒星的每个行星都是生态天堂，即盖娅世界，每一个都能维持有机生命。由于这些星球上没有污染，起初我们认为它们可能无人居住。然而在进行了更深入的扫描后，我们在每个星球上都发现了横亘整个星球的大型城市。\n\n更奇怪的是，似乎只有环绕中心恒星的行星是属于这个星系的。其他的恒星则由来自$NAME_Helito$和其他更遥远的星系的行星环绕。"
  fircon.5015.a:0 "这…怎么可能？！"
@@ -2553,23 +2617,23 @@
  fircon.5015.c.exterminator:0 "检测到极高密度的有机生命。"
  fircon.5015.c.swarm:0 "可以大快朵颐！"
  fircon.5015.c.purifier:0 "有了[Owner.GetSpeciesNamePlural]，那些世界会变得更好。"
- 
+
  fircon.5020.name:0 "遭遇哈宾特统一世界"
  fircon.5020.desc:0 "调查一个新的盖娅世界通常是一个重大事件，但它将成为[Root.GetName]的船员在未来几个月里的例行公事。这些世界包含着一些非常奇怪的[Owner.GetPreFTLLowerPlural]，它们显然还没有实现宇宙飞行，但它们的可再生能源生产可以媲美我们最高效的反应堆。\n\n更奇怪的是资源的平均分配。每个世界都有生存所需的一切，这应该是不可能的。我们看到只在一个星球出产的货物抵达另一个星球，却没有一艘运输船起飞。"
  fircon.5020.a:0 "我们要赶快建立一座观测哨站！"
- 
+
  fircon.5026.name:0 "世界之间的桥梁"
  fircon.5026.desc:0 "§Y[From.solar_system.GetName]§!的[GetPreFTLLowerPlural]在某种程度上比我们更善于运用超空间航道理论。它们的每一个世界都通过一个人造超空间航道网络相互连接。这些航道用来向其他世界运送必要的资源，如食物或建筑材料，而我们不知道它们是如何做到这一点的。\n\n要求更多的[Root.GetScientistPlural]来研究这些世界的请求已经得到批准。虽然从它们的行星监听站的活动来看，它们应该也在观察我们。"
- 
+
  fircon.5036.name:0 "温和种族之怒"
  fircon.5036.desc:0 "我们以为那些能够穿越星空的人不会如此原始地诉诸暴力。\n\n§R请离开。§!"
  fircon.5036.a:0 "呃……"
  fircon.5036.tt:0 "§R我们在§Y[From.solar_system.GetName]星系§!的所有舰船都在行动中失踪了。\n所有通往§Y[From.solar_system.GetName]星系§!的超空间航道都变得很不稳定。§!"
- 
+
  fircon.5040.name:0 "外交无用"
  fircon.5040.desc:0 "我们已经见识过了泛银河的真面目，并选择隐居避世。然而我们还是遭到了骚扰，你们真的想看看我们的宝藏吗？那就让你们见识一下。"
  fircon.5040.a.tt:0 "§R§Y[From.GetName]星系§!旁边的每个星系都建立起了新的超空间航道。§!"
- 
+
  fircon.5050.name:0 "礼貌请求"
  fircon.5050.desc:0 "我们与[event_target:solarpunk_country.GetSpeciesAdj]合作，获取超空间航道技术知识的进度一直缓慢得令人沮丧。要想像它们一样掌握局域超空间航道群，我们似乎需要花费数千年的时间来编制超空间波动的目录。我们收到了它们首席代表的新信息。\n\n“老实说，你们在这里令我们很不舒服，现在我们已经把你们来这里的目的交给你们了，我们需要请你们离开。我们已经判断出我们双方的生活方式是不可相容，我们担心你们在未来可能会觊觎我们拥有的东西。所以为了避免产生敌意，我们愿意送给你们一个世界。我们会负责运输的，不用担心。”"
  fircon.5050.a:0 "我们接受，祝你们愉快。"
@@ -2577,23 +2641,23 @@
  fircon.5050.c:0 "我们要夺走你们的秘密！"
  fircon.5050.c.tt:0 "§R侵略这些外星人，获得超空间航道的秘密。§!"
  #Anomalies
- 
+
  SOLARPUNK_CAT:0 "失踪的行星"
  SOLARPUNK_CAT_DESC:0 "这个星系中有大量的超空间航道。通常情况下，我们会认为它们太小了，宇宙飞船无法在其中航行，但是它们的数量本身就很惊人。"
- 
+
  #Names
- 
+
  NAME_Habinte:0 "哈宾特"
  NAME_Habinte_plural:0 "哈宾特"
  NAME_Habinte_adj:0 "哈宾廷"
  NAME_Habinte_Unified_Worlds:0 "哈宾特统一世界群"
- 
+
  #Modifiers
- 
+
  angered_solarpunk:0 "愤怒的和平主义者"
  angered_solarpunk_desc:0 "这个民族过着怡然自得的生活，却被激怒了。"
  opinion_broke_the_illusion:0 "打破幻觉"
- 
+
  #Buildings
  building_solarpunk_gaiaseeder:0 "盖娅播种器"
  building_solarpunk_gaiaseeder_desc:0 "完善的大气控制系统保持了这颗行星的原始状态。"
@@ -2603,12 +2667,12 @@
  building_solarpunk_sapling_desc:0 "一棵巨大的树苗，是数世纪研究与操控植物的成果，能够养活上百万人口。"
  building_solarpunk_organic_paradise:0 "悬吊城市"
  building_solarpunk_organic_paradise_desc:0 "隐蔽在宏伟森林中的城市，使居民更接近自然。"
- 
+
  job_solarpunk_anarchist:0 "满意的环境改造者"
  job_solarpunk_anarchist_plural:0 "满意的环境改造者"
  job_solarpunk_anarchist_desc:0 "在实现了自己的乌托邦之后，这些世界雕塑家们很高兴地开始休息。"
  mod_job_solarpunk_anarchist_add:0 "$solarpunk_anarchist$岗位"
- 
+
  # Failtext
  requires_not_solarpunk:0 "$TRIGGER_FAIL$由于有怪异的超空间航道活动，不能在这个星系的这些行星周围建造。"
 
@@ -2624,9 +2688,9 @@
 
  alert_mia_forced_to_decloak_title:0 "被迫解除隐形"
  alert_mia_forced_to_decloak_instant:0 "我们至少有一支舰队被迫解除隐形状态，并且在行动中失踪。他们重新归队还需要一段时间。"
- 
+
  alert_forced_to_decloak_by_us_title:0 "发现隐形舰队"
  alert_forced_to_decloak_by_us_instant:0 "我们的探测阵列发现了至少一艘隐形的非盟友舰队，我们迫使其解除了隐形状态。"
- 
+
  alert_mia_forced_to_decloak_by_us_title:0 "发现隐形舰队"
  alert_mia_forced_to_decloak_by_us_instant:0 "我们的探测阵列发现了至少一艘隐形的非盟友舰队，我们迫使其解除了隐形状态。这些舰队现在处于行动中失踪状态。"

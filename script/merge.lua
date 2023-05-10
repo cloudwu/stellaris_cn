@@ -10,9 +10,9 @@ local function readlist(path, ...)
 end
 
 local data = {
-	official_cn = readlist("cn3.7", list, { ["_english"] = "_simp_chinese" }),
-	cloudwu_cn = readlist("cn3.6/localisation/english", list),
-	en_last = readlist("en3.6/localisation/english", list),
+	official_cn = readlist("cn3.8", list, { ["_english"] = "_simp_chinese" }),
+	cloudwu_cn = readlist("cn3.7/localisation/english", list),
+	en_last = readlist("en3.7/localisation/english", list),
 	en_current = readlist("en/localisation/english", list),
 }
 
@@ -168,6 +168,8 @@ local terms = {
 	{ "里甘", "瑞甘" },
 	{ "穆塔根", "穆塔钢" },
 	{ "泽珞", "卓尘" },
+	{ "肃正协议", "紧急预案" },
+	{ "星系舞台", "银河舞台" },
 }
 
 local function term_fix(s)

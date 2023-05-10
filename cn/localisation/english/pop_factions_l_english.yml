@@ -129,7 +129,7 @@
  XENOIST_PRE_SAPIENT_SURVIVAL:0 "亚智慧物种保留"
  XENOIST_NO_PRE_SAPIENT_SURVIVAL:0 "$XENOIST_PRE_SAPIENT_SURVIVAL$"
  XENOIST_PRE_SAPIENT_SURVIVAL_DESC:0 "未能立法确保亚智慧物种的存活会得罪[Root.GetName]。"
- XENOIST_NO_PRIMITIVE_INVASION:0 "攫地非议"
+ XENOIST_NO_PRIMITIVE_INVASION:0 "反对圈地"
  XENOIST_PRIMITIVE_INVASION:0 "$XENOIST_NO_PRIMITIVE_INVASION$"
  XENOIST_NO_PRIMITIVE_INVASION_DESC:1 "非法入侵前超光速世界会让[Root.GetName]不满。"
  XENOIST_FEDERATED:0 "身处联邦"
@@ -508,6 +508,16 @@
  POP_FACTION_NO_CURRENT_EFFECTS:0 "当前无效应"
  POP_FACTION_NO_CURRENT_EFFECTS_DESC:0 "$FACTION$ 目前未造成任何效应。"
 
+# Ruler and Councilor Ethics demands
+ faction_demand_HAPPY_WE_RULE:0 "统治者思潮一致"
+ faction_demand_HAPPY_WE_RULE_desc:0 "拥有一位与其思潮一致的统治者将取悦[Root.GetName]。"
+ faction_demand_HATE_RULER_ETHICS:0 "统治者不应思潮相反"
+ faction_demand_HATE_RULER_ETHICS_desc:0 "拥有相反思潮的统治者将使[Root.GetName]不满。"
+ faction_demand_ACCEPTABLE_RULER_ETHICS:0 "统治者拥有帝国思潮"
+ faction_demand_ACCEPTABLE_RULER_ETHICS_desc:0 "统治者拥有与帝国一致思潮可以被[Root.GetName]容许。\n\n一位与其思潮一致的统治者将会更好。"
+ faction_demand_REPRESENTED_ON_COUNCIL:0 "内阁中有代表"
+ faction_demand_REPRESENTED_ON_COUNCIL_desc:0 "拥有一位与其思潮相符的统治者或内阁官员将会取悦[Root.GetName]。"
+
  ### SEPARATIST
 
  # Separatist Demands
@@ -743,8 +753,8 @@
 
  ### New Events
  factions.1.title:0 "党派成立"
- factions.1.desc:0 "近日，[Root.Owner.GetName]的内部政治格局中一个新党派大受欢迎。他们自称[Root.GetName]，在创始人[Root.Leader.GetTitle][Root.Leader.GetName]的领导下，其成员努力推动我们解决他们关心的各种问题。\n\n随着人口增长，人们的道德观向不同的方向偏斜，我们将在未来看到更多的党派出现。心生不满的党派会成为麻烦之源，但那些支持政府活动的党派可能会有用……"
- factions.1.desc.start:0 "近日，[Root.Owner.GetName]的内部政治格局中一个新党派大受欢迎。在§H[Root.Leader.GetTitle][Root.Leader.GetName]§!的领导下，他们自称§H[Root.GetName]§!。"
+ factions.1.desc:1 "一个新的派系正在[Root.Owner.GetName]的政治圈中逐渐壮大。他们自称[Root.GetName]，其成员正紧密敦促我们处理他们关心的诸多诉求。\n\n可以预见，随着人口的增长和思潮的分化，各种派系都将如雨后春笋般冒出。要求得不到满足的派系会成为麻烦的源头，而支持帝国工作的派系可以为我们所用……"
+ factions.1.desc.start:1 "一个新的派系正在[Root.Owner.GetName]的政界中逐渐壮大。他们自称§H[Root.GetName]§!。 "
  factions.1.desc.firstfinisher:0 "心生不满的党派会成为麻烦之源，但那些支持政府活动的党派可能会有用……"
  factions.1.desc.imperialist:0 "其成员努力推动我们使用军事力量统御银河。\n\n"
  factions.1.desc.isolationist:0 "其成员提倡关闭边界，不干预银河事务。\n\n"

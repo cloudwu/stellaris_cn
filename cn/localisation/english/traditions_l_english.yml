@@ -239,6 +239,7 @@
  tradition_synchronicity:0 "同步"
  tradition_synchronicity_desc:0 "思想的统一诞生了意志的统一。我们必须竭尽全力同步行动。"
  tr_synchronicity_adopt:0 "同步传统"
+ tr_synchronicity_adopt_desc:0 "$UNLOCKS_AGENDA$ $council_agenda_agenda_gestalt_boost_governor_name$\n$UNLOCKS_AGENDA$ $council_agenda_agenda_gestalt_boost_scientist_name$\n$UNLOCKS_AGENDA$ $council_agenda_agenda_gestalt_boost_general_name$\n$UNLOCKS_AGENDA$ $council_agenda_agenda_gestalt_boost_admiral_name$\n$mod_planet_pops_upkeep_mult$：§G-10%§!"
  tr_synchronicity_cloned_organs:0 "克隆器官"
  tr_synchronicity_cloned_organs_delayed:0 "用克隆舱批量生产消耗更频繁的器官，例如心和肺，可以延长高优先级工蜂的使用寿命。"
  tr_synchronicity_kinship_gestalt:0 "代理同步"
@@ -274,7 +275,7 @@
  tr_synchronicity_harmonious_directives_machine_delayed:0 "未重构的代码中埋藏的恐怖漏洞实在是太多了。通过定期重构算法，我们才能灵活地适应各种状况。"
 
  tr_synchronicity_finish:0 "同步传统完成"
- tr_synchronicity_machine_finish_desc:3 "§H解锁法令：§!$edict_industrial_maintenance$。\n$MOD_PLANETARY_ASCENSION_EFFECT_MULT$：§G+25%§!\n解锁飞升特典：§G+1§!"
+ tr_synchronicity_machine_finish_desc:5 "§H解锁法令：§!$edict_industrial_maintenance$。\n$MOD_PLANETARY_ASCENSION_EFFECT_MULT$：§G+25%§!\n解锁飞升特典：§G+1§!"
 
 ################################################################
 # SUPREMACY
@@ -334,7 +335,7 @@
  tr_supremacy_master_shipwrights_machine_delayed:0 "由于大量预制可替换船体部件的储备，我们的舰队生产工作更加合理化。"
 
  tr_supremacy_war_games:0 "战争游戏"
- tr_supremacy_war_games_desc:3 "§Y$MOD_COUNTRY_COMMAND_LIMIT_ADD$§!增加§G+20§!，§Y$MOD_LEADER_ADMIRAL_SKILL_LEVELS$§!增加§Y2§!。"
+ tr_supremacy_war_games_desc:4 "§Y$MOD_COUNTRY_COMMAND_LIMIT_ADD$§!增加§G+20§!并且§Y$MOD_LEADER_ADMIRAL_SKILL_LEVELS$§!提升§Y2§!。"
  tr_supremacy_war_games_delayed:0 "一个强大的战争游戏传统根植于我舰队高级指挥官的灵魂中，无论这场游戏发生在计算机模拟环境还是真实的太空。这趋使我们的舰队司令官跳出常规思维，产生了无数战术创新和新战略。"
  tr_supremacy_war_games_machine_desc:0 "$tr_supremacy_war_games_desc$"
  tr_supremacy_war_games_machine:0 "削减战斗变量"
@@ -886,7 +887,7 @@
  tr_synthetics_adopt_machine_desc:0 "允许将其他机械整合成我们的初始物种。"
  tr_synthetics_finish:0 "合成传统已完成"
  tr_synthetics_finish_desc:0 "£building£§Y首都建筑§!提供§G+1§!£job_roboticist£§Y$job_roboticist$§!岗位\n$mod_ROBOT_species_trait_picks_add$：§G+1§!\n$TRADITIONS_FINISH_AP$"
- tr_synthetics_finish_machine_desc:0 "所有§Y$trait_machine_unit$§!领袖获得§Y$leader_trait_ruler_synthetic$§!特质。\n£building£§Y首都建筑§!提供§G+1§!£job_replicator£§Y$job_replicator$§!岗位\n$TRADITIONS_FINISH_AP$"
+ tr_synthetics_finish_machine_desc:1 "所有§Y$trait_machine_unit$§!领袖获得§Y$leader_trait_ruler_synthetic$§!特质。\n£building£§Y首都建筑§!提供§G+1§!£job_replicator£§Y$job_replicator$§!岗位\n$TRADITIONS_FINISH_AP$"
 
  tr_synthetics_maintenance_protocols:0 "维护协议"
  tr_synthetics_maintenance_protocols_delayed:0 "定期预防性维护将降低机器人单位的整体故障率。"
@@ -914,7 +915,92 @@
  requires_tradition_tr_synthetics_adopt:0 "$TRIGGER_FAIL$§R需要采纳§Y$tr_synthetics_adopt$§!。§!"
 
 ################################################################
-# Politics #
+# Aptitude
+################################################################
+
+ tradition_aptitude:0 "天赋"
+ tradition_aptitude_desc:0 "我们的帝国可以在强大领袖的指引下实现真正的繁荣。"
+ tradition_aptitude_hive_desc:0 "蜂巢在最强实体的加成下将繁荣昌盛。"
+ tradition_aptitude_machine_desc:0 "高效的领导单元将提升帝国强大的潜力。"
+ tr_aptitude_adopt:0 "天赋传统"
+ tr_aptitude_finish:0 "天赋传统完成"
+ tr_aptitude_finish_desc:0 "领袖起始特质：§G+1§!"
+ tr_aptitude_the_empire_needs_you:0 "帝国需要你！"
+ tr_aptitude_the_empire_needs_you_delayed:0 "许多年轻人的梦想是成为帝国最受尊敬的领袖之一。"
+ tr_aptitude_the_empire_needs_you_hive:0 "脱颖而出"
+ tr_aptitude_the_empire_needs_you_hive_delayed:0 "培养潜在的领导者对我们的伟大至关重要。"
+ tr_aptitude_the_empire_needs_you_machine:0 "脱颖而出"
+ tr_aptitude_the_empire_needs_you_machine_delayed:0 "我们能且只能在为帝国产出更具适应性的领袖中取得潜力的最大值。"
+ tr_aptitude_specialist_training:0 "专长训练"
+ tr_aptitude_specialist_training_delayed:0 "严格的培训计划可以确保我们的领袖拥有蓬勃发展所必要的各种技能。"
+ tr_aptitude_specialist_training_hive:0 "$tr_aptitude_specialist_training$"
+ tr_aptitude_specialist_training_hive_delayed:0 "严格的条件可以确保成功培育出蜂巢的特种成员。"
+ tr_aptitude_specialist_training_machine:0 "软件升级"
+ tr_aptitude_specialist_training_machine_delayed:0 "最新的程序确保我们的领袖拥有足以达到预期表现的所有工具。"
+ tr_aptitude_psychological_profiling:0 "心理分析"
+ tr_aptitude_psychological_profiling_delayed:0 "了解我们领袖的担忧和弱点使我们得以采取预防措施。"
+ tr_aptitude_psychological_profiling_hive:0 "行为学诊断"
+ tr_aptitude_psychological_profiling_hive_delayed:0 "识别异常的弱点使我们能够采取预防措施来消除它们。"
+ tr_aptitude_psychological_profiling_machine:0 "记忆体诊断"
+ tr_aptitude_psychological_profiling_machine_delayed:0 "深度扫描使我们可以在故障发生之前采取预防措施。"
+ tr_aptitude_healthcare_program:0 "健保计划"
+ tr_aptitude_healthcare_program_delayed:0 "通过持续的健康参数监测，从锻炼、饮食到侵入性外科手术，我们为领袖量身定制一切，以获得最大的利益。"
+ tr_aptitude_healthcare_program_hive:0 "躯体维护"
+ tr_aptitude_healthcare_program_hive_delayed:0 "更具价值的特化工蜂应当分配部分维护自身躯体的功能，并允许消耗更高级的养分。"
+ tr_aptitude_healthcare_program_machine:0 "预防性维护"
+ tr_aptitude_healthcare_program_machine_delayed:0 "通过持续的系统监视，我们可以管理好包括备份频率和高强度维修流程等一切事情，来提升领袖的产出能力。"
+ tr_aptitude_champions_of_the_empire:0 "帝国先锋"
+ tr_aptitude_champions_of_the_empire_delayed:0 "我们相信自己的领袖，让他们拥有绝对的权力来影响帝国的运行方式。"
+ tr_aptitude_champions_of_the_empire_hive:0 "分钟级自治"
+ tr_aptitude_champions_of_the_empire_hive_delayed:0 "蜂巢愿意向最强的单体们授予分钟级的自治权以惠及整体"
+ tr_aptitude_champions_of_the_empire_machine:0 "行政权限"
+ tr_aptitude_champions_of_the_empire_machine_delayed:0 "我们信任领袖们的专属子程序，并给予它们影响帝国运行方式的权限。"
+ tr_aptitude_champions_of_the_empire_desc:0 "每位$admiral_with_icon$和$general_with_icon$\n$t$$MOD_COUNTRY_NAVAL_CAP_ADD$：§G+2§!\n每位$governor_with_icon$\n$t$$MOD_EMPIRE_SIZE_MULT$：§G-2%§!\n每位$scientist_with_icon$\n$t$$MOD_LEADER_SPECIES_EXP_GAIN$：§G+2%§!"
+
+################################################################
+# Statecraft
+################################################################
+
+ tradition_statecraft:0 "治国"
+# tradition_statecraft_hive: "Council of Voices"
+# tradition_statecraft_machine: "Assembly of Conciousness"
+ tradition_statecraft_desc:0 "强大的内阁让我们的帝国的反应更加敏锐。"
+ tradition_statecraft_hive_desc:0 "不同呼声组成的内阁定义了我们的帝国。"
+ tradition_statecraft_machine_desc:0 "意识的集合定义了我们的帝国。"
+ tr_statecraft_adopt:0 "治国传统"
+ tr_statecraft_finish:0 "治国传统完成"
+ tr_statecraft_constitutional_focus:0 "宪政聚焦"
+ tr_statecraft_constitutional_focus_hive:0 "战略专精"
+ tr_statecraft_constitutional_focus_machine:0 "$tr_statecraft_constitutional_focus_hive$"
+ tr_statecraft_constitutional_focus_delayed:0 "明确了帝国的需求，我们就能减轻内阁官员们的行政负担。"
+ tr_statecraft_constitutional_focus_hive_delayed:0 "战略议程的制定更加果断，让各种的声音更快地统一起来。"
+ tr_statecraft_constitutional_focus_machine_delayed:0 "通过对当前议程的敏锐关注，我们可以提高核心智能的计算性能。"
+ tr_statecraft_inspiring_agendas:0 "激励性议程"
+ tr_statecraft_inspiring_agendas_hive:0 "灵活议程"
+ tr_statecraft_inspiring_agendas_machine:0 "$tr_statecraft_inspiring_agendas_hive$"
+ tr_statecraft_inspiring_agendas_delayed:0 "对于帝国如何指导我们自己的未来，我们从不缺乏好点子。"
+ tr_statecraft_inspiring_agendas_hive_delayed:0 "蜂巢思维的灵活性对未来导向是至关重要的。"
+ tr_statecraft_inspiring_agendas_machine_delayed:0 "在一个充满无限选择的宇宙中，我们必须找到一个对我们帝国最有利的子集。"
+ tr_statecraft_inspiring_agendas_desc:0 "§H解锁议程：§!$council_agenda_agenda_rightful_claims_name$\n§H解锁议程：§!$council_agenda_agenda_oppose_the_fallen_name$"
+ tr_statecraft_immutable_directives:0 "唯一指令"
+ tr_statecraft_immutable_directives_delayed:0 "对方向和意义的根本理解一直都很清晰，这让我们可以将注意力放在别处而不用损失已经做出的成就。"
+ tr_statecraft_amongst_peers:0 "三人行必有我师"
+ tr_statecraft_amongst_peers_hive:0 "洞见传播"
+ tr_statecraft_amongst_peers_machine:0 "$tr_statecraft_amongst_peers_hive$"
+ tr_statecraft_amongst_peers_delayed:0 "信任、尊敬，以及从错误中吸取教训是最高准则，即便在我们帝国的顶尖人群中也是如此。"
+ tr_statecraft_amongst_peers_hive_delayed:0 "我们意识的各个方面不应该犯同样的错误。"
+ tr_statecraft_amongst_peers_machine_delayed:0 "$tr_statecraft_amongst_peers_hive_delayed$"
+ tr_statecraft_shared_benefits:0 "共同受益"
+ tr_statecraft_shared_benefits_hive:0 "共同推演"
+ tr_statecraft_shared_benefits_machine:0 "共同计算"
+ tr_statecraft_shared_benefits_delayed:0 "通过让所有领袖参与进我们议程的落实中，让他们对自己的作用和目标建立起更强的理解。"
+ tr_statecraft_shared_benefits_hive_delayed:0 "通过将所有的结点和领袖应用到我们议程的实施中，得到任何有效的特化都能快速地向外传播。"
+ tr_statecraft_shared_benefits_machine_delayed:0 "$tr_statecraft_shared_benefits_hive_delayed$"
+ tr_statecraft_shared_benefits_desc:0 "每当有§Y议程§!启动时：\n$t$ $tr_statecraft_shared_benefits_effect_desc$"
+ tr_statecraft_shared_benefits_effect_desc:0 "所有领袖获得$@statecraft_amongst_peers_exp_reward|G0$经验"
+ 
+################################################################
+# Politics
 ################################################################
 
  tradition_politics:0 "权术"

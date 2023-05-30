@@ -3,9 +3,19 @@
 
  SECTOR_EDIT_VIEW:0 "星区编辑器"
  EDITING_SECTOR:0 "编辑星域：$SECTOR_NAME|Y$"
- SECTOR_EDITOR_HELP:0 "§H$SECTOR_EDIT_VIEW$§!\n可以通过§H$SECTOR_EDIT_VIEW$§!自由添加或移除在£sector_capital£§Y星域首都§!一定范围内属于你的任意相连星系。\n$SEPARATOR$$SEPARATOR$$SEPARATOR$\n§E星域将自动拓展到一定范围内的、还没有归属于另一个星域的所有星系中。§!"
+ SECTOR_EDITOR_HELP:1 "§H$SECTOR_EDIT_VIEW$§!\n可以通过§H$SECTOR_EDIT_VIEW$§!自由添加或移除在£sector_capital£§Y星域首都§!一定范围内属于你的任意相连星系。\n$SEPARATOR$$SEPARATOR$$SEPARATOR$\n§E星域将自动拓展（当自动拓展激活）到一定范围内的、还没有归属于另一个星域的所有星系中。§!"
  SECTOR_EDITOR_ADD_SYSTEMS:0 "添加星系"
  SECTOR_EDITOR_REMOVE_SYSTEMS:0 "移除星系"
+ SECTOR_EDITOR_AUTO_EXPAND_TEXT:0 "Auto Expand Sector"
+ SECTOR_AUTO_EXPAND:0 "Toggle if the §YSector§! should automatically expand to contain new systems."
+
+ democratic_local_government:0 "Democratic Administration"
+ oligarchic_local_government:0 "Oligarchic Government"
+ dictatorial_local_government:0 "Dictatorial Commission"
+ imperial_local_government:0 "Imperial Assembly"
+ hive_mind_local_government:0 "Hive Consciousness"
+ machine_intelligence_local_government:0 "Machine Intelligence Hub"
+ corporate_local_government:0 "Corporate Office"
 
  ####################
  ### THE BEHOLDER ###
@@ -97,7 +107,14 @@
  the_beholder_energy_big_desc:0 "$the_beholder_energy_small_desc$"
 
  paragon.31.name:0 "飞船"
- paragon.31.desc:0 "我们完成了和凝望者的交易，按要求提供了能量。一收到能量，巨石就开始发出高频振动。随后它开始摇晃，周围地面开始坍塌。随着巨石上升，它的整体逐渐显露，我们才发现原先所见的金字塔不过是冰山一角。\n\n这是一座巨大的八面体结构，金字塔悬浮到了空中，掩盖其上的尘土徐徐落下。随着它逐渐升高，飞向了[beholder_planet.GetName]大气层的深处，行星的当地居痛苦民尖叫了起来\n\n现在可知，低语金字塔是一座巨大的、拥有太空航行能力的舰船。它现在正环绕着[beholder_planet.GetName]。"
+ paragon.31.desc:0 "§H我们完成了和凝望者的交易，按要求提供了能量。一收到能量，巨石就开始发出高频振动。随后它开始摇晃，周围地面开始坍塌。随着巨石上升，它的整体逐渐显露，我们才发现原先所见的金字塔不过是冰山一角。\n\n这是一座巨大的八面体结构，金字塔悬浮到了空中，掩盖其上的尘土徐徐落下。随着它逐渐升高，飞向了[beholder_planet.GetName]大气层的深处，行星的当地居痛苦民尖叫了起来\n\n现在可知，低语金字塔是一座巨大的、拥有太空航行能力的舰船。它现在正环绕着[beholder_planet.GetName]。§!"
+ paragon.1.a:0 "To what end do you seek energy?"
+ paragon.1.a.response:0 "§HAfter a long silence, static begins to fill the transmission, steadily increasing until those listening are overcome with a myriad of emotions, from debilitating regrets to compelling desires. Too much to filter through, but for one thing that pierces through the noise:§!\n\nTo observe."
+ paragon.1.b:0 "What can you do for our civilization?"
+ paragon.1.b.response:0 "§HA string of incoherent, whispering voices echoes forth.§!\n\nSecrets... laid bare. By the potential of... the path... unlocked. The Shroud ... begins. We offer welcome... Let us... your eyes... guide... there.\n\n§HAlthough the patchy message is open to interpretation, there is little doubt that psionic energy and the Shroud are involved.§!"
+ paragon.1.c:0 "What are you?"
+ paragon.1.c.response:0 "§HWith surprising clarity, a single voice swells:§!\n\nFleeting, and eternal. Nothing, and everything... Your language is ineffective. We are akin to 'purpose.' For now, any further definition lies beyond your grasp. The Shroud is vast and there is much to learn."
+
 
  paragon_beholder_joins:1 "§H$NAME_The_Beholder$§!作为一名§Y领袖§!加入你的帝国"
 
@@ -111,33 +128,42 @@
  BEHOLDER_CLOUD_LIGHTNING:0 "天幕闪电"
  NAME_Temple_of_Whispers:0 "低语金字塔"
  building_the_beholder:0 "$NAME_Temple_of_Whispers$"
- building_the_beholder_desc:0 ""
- building_the_beholder_known_desc:1 "§H$temple_of_whispers$§!连接到我们存在位面的渠道。一艘舰船，通过吸收行星的能量来汇聚卓尘，并维系与天幕的联系。\n\n$beholder_decisions$"
+ building_the_beholder_desc:1 "§Y$temple_of_whispers$§!连接到我们存在位面的渠道。一艘舰船，通过吸收行星的能量来汇聚卓尘，并维系与天幕的联系。"
+ building_the_beholder_known_desc:2 "$beholder_decisions$"
  building_the_beholder_unknown_desc:0 "一座神秘的结构，散发着怪异的能量波动。"
 
  beholder_ship_button_desc:0 "§H着陆行星§!\n将该舰船着陆于一颗我们拥有的行星上，它将变成一座建筑。\n\n§Y低语金字塔§!\n帝国限制：§Y1/1§!\n产出：£sr_zro£ 8.00\n维护费：£energy£ 25.00\n灵能人口产出的资源：§G+10%§!\n\n$beholder_decisions$"
- beholder_decisions:0 "增加§E行星决议§!：\n- §H$decision_deploy_beholder$§!\n- §H$decision_psi_inoculate_pops$§!"
+ beholder_decisions:1 "允许§E行星决议§!：\n- §H$decision_deploy_beholder$§!\n- §H$decision_psi_inoculate_pops$§!\n- §H$decision_cease_psi_inoculate_pops$§!\n\n"
 
  SHROUD_SHIELD_SUPPRESSION_FIELD:0 "天幕护盾抑制器"
  SHROUD_SHIELD_SUPPRESSION_FIELD_DESC:0 "一个由来自天幕的能量充能的力场，将整个银河中的护盾无效化。"
  SHIP_PLANETFALL:0 "双功能设计"
  SHIP_PLANETFALL_DESC:0 "这座金字塔其实是一艘非常坚固的舰船，可以作为飞船或者行星建筑来使用。"
  decision_deploy_beholder:0 "调度低语金字塔"
- decision_deploy_beholder_custom_tooltip:0 "需要大量的卓尘才能让低语金字塔从行星上起飞。"
+ decision_deploy_beholder_custom_tooltip:1 "The Murmuring Monolith will be deployed to function as an interstellar vessel capable of combat."
  decision_deploy_beholder_desc:0 "离开行星，凝望者的舰船可以激活护盾抑制装置，将无差别地抑制所有的护盾。"
  cannot_deploy_during_psi_inoculation:1 "§R正在对该行星的人口进行灵能接种。无法调走凝望者，否则他们的意识将面临风险。§!"
- decision_psi_inoculate_pops:0 "人口灵能接种"
- decision_psi_inoculate_pops_custom_tooltip:1 "凝望者给有机非义体人口进行接种，逐渐使他们获得§Y灵能特质§!，每个人口花费£sr_zro£§Y100§!。在完成之前无法将低语金字塔调走。" 
- decision_psi_inoculate_pops_desc:1 "The Beholder inoculates organic, non-cybernetic Pops over time to become §YPsionic§!."
+ decision_psi_inoculate_pops:0 "开始灵能接种"
+ decision_psi_inoculate_pops_custom_tooltip:2 "The Murmuring Monolith will grant £pop£ §YPops§! the §YPsionic§! Trait over time instead of producing £sr_zro£ §YZro§!.\n\n§RThe Murmuring Monolith cannot be deployed while this is ongoing.§!"
+ decision_psi_inoculate_pops_desc:3 "The Beholder inoculates Pops over time to become §Y$trait_psionic$§!. This requires that the pops are not being purged, Cybernetic or Hive-Minded."
  no_organic_pops_on_planet:0 "§R该行星没有有机非义体人口可以进行接种。§!"
+
+ decision_cease_psi_inoculate_pops:0 "Cease Psi-Inoculation"
+ decision_cease_psi_inoculate_pops_custom_tooltip:0 "£pop£ §YPops§! will cease being modified to gain the §YPsionic§! Trait over time.\n$beholder_psi_pops_timer_tooltip$\nThis will allow the Murmuring Monolith to be deployed and restore its £zro£ §YZro§! production."
+ decision_cease_psi_inoculate_pops_desc:0 "The Beholder inoculates Pops over time to become §YPsionic§!. This requires that the pops are not being purged, Cybernetic or Hive-Minded."
+
+ beholder_psi_pops_timer_tooltip:0 "The next Psi-Inoculation on §Y[This.GetName]§! will complete on §Y[This.beholder_psi_pops_timer]§!."
+
+ beholder_psi_pops_cooldown_tooltip:0 "\n§RThe Murmuring Monolith has recently ceased Psi-Inoculation and cannot begin again until §Y[This.beholder_psi_pops_cooldown_timer]§!§!"
+
  MESSAGE_POPS_INOCULATED_TITLE:0 "人口接种完成"
- MESSAGE_POPS_INOCULATED_DESC:0 "凝望者对$PLANET|$人口的的灵能接种已经完成。"
+ MESSAGE_POPS_INOCULATED_DESC:1 "A £pop£ Pop on $PLANET|$ has gained the §Y$trait_psionic$§! Trait due to the §YBeholder§!'s Psi-Inoculation."
 
  MESSAGE_BEHOLDER_PLANETFALL_TITLE:0 "凝望者着陆行星"
  MESSAGE_BEHOLDER_PLANETFALL_DESC:0 "凝望者着陆于$PLANET|$，重新设立起了低语金字塔。"
 
  MESSAGE_BEHOLDER_PLANETFALL_NO_SLOTS_TITLE:0 "凝望者着陆行星失败"
- MESSAGE_BEHOLDER_PLANETFALL_NO_SLOTS_DESC:0 "凝望者无法着陆到$PLANET|$。该行星上已没有容纳空间。"
+ MESSAGE_BEHOLDER_PLANETFALL_NO_SLOTS_DESC:1 "凝望者无法着陆到$PLANET|$。需要一个空闲的建筑槽位。"
 
  leader_trait_governor_psionic_communion:0 "灵能交流"
  leader_trait_governor_psionic_communion_desc:1 "这位领袖的灵能能力改善了群众的精神状态，构筑了信任，营造了安全感。"
@@ -480,6 +506,11 @@
  paragon_astrocreation_is:1 "太空创生是一种高等级的环境改造。它是如此地强大。在一颗行星上播种一颗我的环境改造之核——§H艾莎琳指了指她背后的花苞§!——我们就能将几乎任何一种行星改造成一颗欣欣向荣的盖娅星球。这个过程需要许多能量，但结果是非常壮观的。"
 
  paragon.228.b.custom_tooltip:2 "§H$NAME_Astrocreator_Azaryn$§!作为一位§Y领袖§!加入了我们帝国。"
+
+ paragon.228.c:0 "What are those things on your back?"
+ paragon.228.c.response:0 "§HAzaryn appears surprised at the question.§!\n\nA trait unique to my species, simply put. In our youth, they grow quickly - not without discomfort, I might add - and must be pruned regularly, lest we be weighed down by them. §HShe smiles.§! At my age, however, such troubles are a thing of the past.\n\nThey are not quite seeds, but it would do for an analogy. I've come to call them Terraformation Nuclei. Within them sleeps the potential for growth, for rebirth, and for life."
+ paragon.228.d:0 "What is that buzzing, tiny drone of yours?"
+ paragon.228.d.response:0 "Ah, this one? §HAzaryn gently lifts the little flier.§! This is a pollination drone. They help to ensure the vigor and future of my ship's ecosystem.\n\nThey're not altogether inorganic, and even possess the ability to produce pollen on their own. §HAzaryn points at the drone's bottom.§! They can even regulate pollen-transferral by use of static magnetism from their battery terminals. Adorable, isn't it?"
 
  paragon.230.name:0 "$NAME_Astrocreator_Azaryn$"
  paragon.230.desc_worst:0 "$paragon.230.desc_main$ $paragon.230.worst$"
@@ -1123,41 +1154,54 @@
  councilor_gestalt_governor_desc:1 "$TITLE$是我们做出重要蜂巢决议的部位。"
  councilor_gestalt_scientist:0 "意识节点"
  councilor_gestalt_scientist_desc:0 "$TITLE$是我们发展对周遭世界理解的部位。"
- councilor_gestalt_admiral:0 "扩张节点"
+ councilor_gestalt_admiral:0 "军团节点"
  councilor_gestalt_admiral_desc:1 "$TITLE$是我们做出关于星系扩张决议的部位。"
- councilor_gestalt_general:1 "反常抑制节点"
+ councilor_gestalt_general:2 "控制节点"
  councilor_gestalt_general_desc:1 "$TITLE$是我们抵御突发反常意识的部位"
+  couniclor_machine_governor:0 "Expansion Directive"
+ couniclor_machine_governor_desc:0 "$TITLE$: Units shall aquire all available worlds."
+ couniclor_machine_scientist:0 "Exploration Directive"
+ couniclor_machine_scientist_desc:0 "$TITLE$: Data needs to be gathered and analyzed."
+ councilor_machine_admiral:0 "Extermination Directive"
+ councilor_machine_admiral_desc:0 "$TITLE$: All threats will be exterminated."
+ couniclor_machine_admiral_servitor:0 "Pampering Directive"
+ councilor_machine_admiral_servitor_desc:0 "$TITLE$: All threats will be extermin§R'¿°éü¿T (( (+ÇÄ§! pampered."
+ councilor_machine_general:0 "Exploitation Directive"
+ councilor_machine_general_desc:0 "$TITLE$: Every advantage must be exploited."
 
  councilor_psionic_sovereign:0 "神灵的媒介"
- councilor_psionic_sovereign_female: "$councilor_psionic_sovereign$"
+ councilor_psionic_sovereign_female:0 "$councilor_psionic_sovereign$"
  councilor_psionic_sovereign_desc:0 "最初由灵能军团进行导引，现在由$TITLE$负责给天选者庞大的灵能潜势提供媒介。"
  councilor_psionic_sovereign_custom_modifier_desc:0 "$job_telepath_plural$提供一个额外的§G+1%§!$mod_planet_psionic_jobs_produces_mult$"
  councilor_psionic_sovereign_conditional_tooltip:0 "领袖有§Y超能力的§!或者§Y选择的§!特质。"
 
  councilor_galactic_sovereign:0 "帝国守望者"
- councilor_galactic_sovereign_female: "$councilor_galactic_sovereign$"
+ councilor_galactic_sovereign_female:0 "$councilor_galactic_sovereign$"
  councilor_galactic_sovereign_desc:0 "$TITLE$在整个银河帝国都有工作人员，监视任何可疑的行为。"
 
  councilor_galactic_sovereign_megacorp:0 "$councilor_galactic_sovereign$"
- councilor_galactic_sovereign_megacorp_female: "$councilor_galactic_sovereign_megacorp$"
+ councilor_galactic_sovereign_megacorp_female:0 "$councilor_galactic_sovereign_megacorp$"
  councilor_galactic_sovereign_megacorp_desc:0 "$councilor_galactic_sovereign_desc$"
 
- councilor_diadochi: ""
- councilor_diadochi_female: "$councilor_diadochi$"
- councilor_diadochi_desc: ""
+ councilor_diadochi:0 ""
+ councilor_diadochi_female:0 "$councilor_diadochi$"
+ councilor_diadochi_desc:0 ""
 
- councilor_great_khans_legacy: ""
- councilor_great_khans_legacy_female: "$councilor_great_khans_legacy$"
- councilor_great_khans_legacy_desc: ""
+ councilor_great_khans_legacy:0 ""
+ councilor_great_khans_legacy_female:0 "$councilor_great_khans_legacy$"
+ councilor_great_khans_legacy_desc:0 ""
 
- councilor_revanchist_fervor: ""
- councilor_revanchist_fervor_female: "$councilor_revanchist_fervor$"
- councilor_revanchist_fervor_desc: ""
+ councilor_ancient_caches_of_technology:0 ""
+ councilor_ancient_caches_of_technology_female:0 "$councilor_ancient_caches_of_technology$"
+ councilor_ancient_caches_of_technology_desc:0 ""
 
- councilor_ancient_caches_of_technology: ""
- councilor_ancient_caches_of_technology_female: "$councilor_ancient_caches_of_technology$"
- councilor_ancient_caches_of_technology_desc: ""
-
+# councilor_expert_programmer: "Expert Programmer"
+# councilor_expert_programmer_female: "$councilor_expert_programmer$"
+# councilor_expert_programmer_desc: "An $TITLE$ is to thank for the new script support for Council Positions."
+# councilor_expert_programmer_modifiers: "This is an example of a custom tooltip with modifiers for a Council Position."
+# councilor_expert_programmer_conditional: "This is an example of a conditional tooltip for a Council Positon."
+# councilor_expert_programmer_unlock_title: "§HCouncil Position from Console Commands§!"
+ 
 # AGENDAS - Misc
  agenda_ref:0 "议程"
  council_agenda_agenda_infinite_opportunities_name:0 "无限机遇"
@@ -1172,6 +1216,8 @@
  council_agenda_agenda_unlock_slot_desc:1 "我们的政府需要进行扩充以容纳多一位内阁官员。"
  council_agenda_agenda_idle_name:0 "正常状态"
  council_agenda_agenda_idle_desc:0 "因为缺乏特定目标，我们会去处理一些琐碎的或是此前搁置的问题。"
+ council_agenda_agenda_reorganize_council_name:0 "Reorganize Council"
+ council_agenda_agenda_reorganize_council_desc:0 "Due to changes in government focus, we should reorganize the Council to focus on other matters."
 
 # AGENDAS - Ethics
  council_agenda_agenda_we_come_in_peace_name:0 "我们为和平而来"

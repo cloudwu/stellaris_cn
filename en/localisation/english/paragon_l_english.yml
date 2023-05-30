@@ -3,9 +3,19 @@
 
  SECTOR_EDIT_VIEW:0 "Sector Editor"
  EDITING_SECTOR:0 "Editing Sector: $SECTOR_NAME|Y$"
- SECTOR_EDITOR_HELP:0 "§H$SECTOR_EDIT_VIEW$§!\nUsing the §H$SECTOR_EDIT_VIEW$§! you can freely add or remove any connected system that you own within range of the £sector_capital£§YSector Capital§!.\n$SEPARATOR$$SEPARATOR$$SEPARATOR$\n§EA sector will automatically expand to contain all systems within range that are not already part of a different sector.§!"
+ SECTOR_EDITOR_HELP:1 "§H$SECTOR_EDIT_VIEW$§!\nUsing the §H$SECTOR_EDIT_VIEW$§! you can freely add or remove any connected system that you own within range of the £sector_capital£§YSector Capital§!.\n$SEPARATOR$$SEPARATOR$$SEPARATOR$\n§EA sector will automatically expand to contain all systems within range that are not already part of a different sector when automatic expansion is enabled.§!"
  SECTOR_EDITOR_ADD_SYSTEMS:0 "Add Systems"
  SECTOR_EDITOR_REMOVE_SYSTEMS:0 "Remove Systems"
+ SECTOR_EDITOR_AUTO_EXPAND_TEXT:0 "Auto Expand Sector"
+ SECTOR_AUTO_EXPAND:0 "Toggle if the §YSector§! should automatically expand to contain new systems."
+ 
+ democratic_local_government:0 "Democratic Administration"
+ oligarchic_local_government:0 "Oligarchic Government"
+ dictatorial_local_government:0 "Dictatorial Commission"
+ imperial_local_government:0 "Imperial Assembly"
+ hive_mind_local_government:0 "Hive Consciousness"
+ machine_intelligence_local_government:0 "Machine Intelligence Hub"
+ corporate_local_government:0 "Corporate Office"
 
  ####################
  ### THE BEHOLDER ###
@@ -97,7 +107,13 @@
  the_beholder_energy_big_desc:0 "$the_beholder_energy_small_desc$"
 
  paragon.31.name:0 "A Ship"
- paragon.31.desc:0 "We fulfilled our end of the bargain with the Beholder, delivering the energy as requested. Upon receipt of the power, the Monolith began emitting high-frequency vibrations. It then began shaking, and the ground surrounding it crumbled, as the Monolith rose, revealing itself to be at least two times larger than even our most outlandish estimates.\n\nA huge octahedral structure, the Monolith was suspended in the air as dirt and dust fell to the ground. The inhabitants of the planet screeched in panic as it took to the skies, climbing high into the atmosphere of [beholder_planet.GetName].\n\nIt is now clear that the Murmuring Monolith is a colossal vessel, capable of spaceflight. It currently orbits [beholder_planet.GetName]."
+ paragon.31.desc:0 "§HWe fulfilled our end of the bargain with the Beholder, delivering the energy as requested. Upon receipt of the power, the Monolith began emitting high-frequency vibrations. It then began shaking, and the ground surrounding it crumbled, as the Monolith rose, revealing itself to be at least two times larger than even our most outlandish estimates.\n\nA huge octahedral structure, the Monolith was suspended in the air as dirt and dust fell to the ground. The inhabitants of the planet screeched in panic as it took to the skies, climbing high into the atmosphere of [beholder_planet.GetName].\n\nIt is now clear that the Murmuring Monolith is a colossal vessel, capable of spaceflight. It currently orbits [beholder_planet.GetName].§!"
+ paragon.1.a:0 "To what end do you seek energy?"
+ paragon.1.a.response:0 "§HAfter a long silence, static begins to fill the transmission, steadily increasing until those listening are overcome with a myriad of emotions, from debilitating regrets to compelling desires. Too much to filter through, but for one thing that pierces through the noise:§!\n\nTo observe."
+ paragon.1.b:0 "What can you do for our civilization?"
+ paragon.1.b.response:0 "§HA string of incoherent, whispering voices echoes forth.§!\n\nSecrets... laid bare. By the potential of... the path... unlocked. The Shroud ... begins. We offer welcome... Let us... your eyes... guide... there.\n\n§HAlthough the patchy message is open to interpretation, there is little doubt that psionic energy and the Shroud are involved.§!"
+ paragon.1.c:0 "What are you?"
+ paragon.1.c.response:0 "§HWith surprising clarity, a single voice swells:§!\n\nFleeting, and eternal. Nothing, and everything... Your language is ineffective. We are akin to 'purpose.' For now, any further definition lies beyond your grasp. The Shroud is vast and there is much to learn."
 
  paragon_beholder_joins:1 "§Y$NAME_The_Beholder$§! joins your Empire as a §HLeader§!"
 
@@ -111,39 +127,49 @@
  BEHOLDER_CLOUD_LIGHTNING:0 "Shroud-Borne Lightning"
  NAME_Temple_of_Whispers:0 "Murmuring Monolith"
  building_the_beholder:0 "$NAME_Temple_of_Whispers$"
- building_the_beholder_desc:0 ""
- building_the_beholder_known_desc:1 "§H$temple_of_whispers$§!'s conduit into our plane of existence. A ship, feeding upon the planet's energy to amass Zro and sustain its connection to the Shroud.\n\n$beholder_decisions$"
+ building_the_beholder_desc:1 "§Y$temple_of_whispers$§!'s conduit into our plane of existence. A ship, feeding upon the planet's energy to amass Zro and sustain its connection to the Shroud."
+ building_the_beholder_known_desc:2 "$beholder_decisions$"
  building_the_beholder_unknown_desc:0 "A mysterious structure, emitting strange energy fluctuations."
 
  beholder_ship_button_desc:0 "§HPlanetfall§!\nLand this ship on an owned planet, where it will become a building.\n\n§YMurmuring Monolith§!\nEmpire Limit: §Y1/1§!\nProduces: £sr_zro£ 8.00\nUpkeep: £energy£25.00\nResources from Psionic Pops: §G+10%§!\n\n$beholder_decisions$"
- beholder_decisions:0 "Adds the §EPlanetary Decisions§!:\n- §H$decision_deploy_beholder$§!\n- §H$decision_psi_inoculate_pops$§!"
+ beholder_decisions:1 "Allows §EPlanetary Decisions§!:\n- §H$decision_deploy_beholder$§!\n- §H$decision_psi_inoculate_pops$§!\n- §H$decision_cease_psi_inoculate_pops$§!\n\n"
 
  SHROUD_SHIELD_SUPPRESSION_FIELD:0 "Shroud-Borne Shield Suppression"
  SHROUD_SHIELD_SUPPRESSION_FIELD_DESC:0 "A field of Shroud-infused energy which nullifies all shields within an entire star system."
  SHIP_PLANETFALL:0 "Bifunctional Design"
  SHIP_PLANETFALL_DESC:0 "The Monolith is a sturdier vessel than most, and is capable of serving as both a ship and planetary building."
  decision_deploy_beholder:0 "Deploy Murmuring Monolith"
- decision_deploy_beholder_custom_tooltip:0 "Requires a substantial amount of Zro to deploy the Murmuring Monolith from the planet."
+ decision_deploy_beholder_custom_tooltip:1 "The Murmuring Monolith will be deployed to function as an interstellar vessel capable of combat."
  decision_deploy_beholder_desc:0 "Off-planet, the Beholder's vessel activates a potent shield dampener, which will disable all shields indiscriminately."
- cannot_deploy_during_psi_inoculation:1 "§RThe psi-inoculation of this planet's population is underway. The Beholder cannot be deployed, or their minds will be at risk.§!"
- decision_psi_inoculate_pops:0 "Psi-Inoculate Pops"
- decision_psi_inoculate_pops_custom_tooltip:1 "A £pop£ §YPop§! will be modified to gain the §YPsionic§! Trait.\n\n§RThe Murmuring Monolith cannot be deployed until this is complete.§!"
- decision_psi_inoculate_pops_desc:1 "The Beholder inoculates organic, non-cybernetic Pops over time to become §YPsionic§!."
+ cannot_deploy_during_psi_inoculation:1 "§RThe Psi-Inoculation of this planet's population is underway. The Beholder cannot be deployed, or their minds will be at risk.§!"
+
+ decision_psi_inoculate_pops:1 "Begin Psi-Inoculation"
+ decision_psi_inoculate_pops_custom_tooltip:2 "The Murmuring Monolith will grant £pop£ §YPops§! the §YPsionic§! Trait over time instead of producing £sr_zro£ §YZro§!.\n\n§RThe Murmuring Monolith cannot be deployed while this is ongoing.§!"
+ decision_psi_inoculate_pops_desc:3 "The Beholder inoculates Pops over time to become §Y$trait_psionic$§!. This requires that the pops are not being purged, Cybernetic or Hive-Minded."
  no_organic_pops_on_planet:0 "§RThis planet has no organic, non-cybernetic Pops to inoculate.§!"
+
+ decision_cease_psi_inoculate_pops:0 "Cease Psi-Inoculation"
+ decision_cease_psi_inoculate_pops_custom_tooltip:0 "£pop£ §YPops§! will cease being modified to gain the §YPsionic§! Trait over time.\n$beholder_psi_pops_timer_tooltip$\nThis will allow the Murmuring Monolith to be deployed and restore its £zro£ §YZro§! production."
+ decision_cease_psi_inoculate_pops_desc:0 "The Beholder inoculates Pops over time to become §YPsionic§!. This requires that the pops are not being purged, Cybernetic or Hive-Minded."
+
+ beholder_psi_pops_timer_tooltip:0 "The next Psi-Inoculation on §Y[This.GetName]§! will complete on §Y[This.beholder_psi_pops_timer]§!."
+
+ beholder_psi_pops_cooldown_tooltip:0 "\n§RThe Murmuring Monolith has recently ceased Psi-Inoculation and cannot begin again until §Y[This.beholder_psi_pops_cooldown_timer]§!§!"
+
  MESSAGE_POPS_INOCULATED_TITLE:0 "Pop Inoculation Complete"
- MESSAGE_POPS_INOCULATED_DESC:0 "The Beholder's psionic inoculation of the Pops on $PLANET|$ has been completed."
+ MESSAGE_POPS_INOCULATED_DESC:1 "A £pop£ Pop on $PLANET|$ has gained the §Y$trait_psionic$§! Trait due to the §YBeholder§!'s Psi-Inoculation."
 
  MESSAGE_BEHOLDER_PLANETFALL_TITLE:0 "Beholder Planetfall"
  MESSAGE_BEHOLDER_PLANETFALL_DESC:0 "The Beholder has landed on $PLANET|$. The Murmuring Monolith now rests there."
 
  MESSAGE_BEHOLDER_PLANETFALL_NO_SLOTS_TITLE:0 "Beholder Planetfall Failed"
- MESSAGE_BEHOLDER_PLANETFALL_NO_SLOTS_DESC:0 "The Beholder could not land on $PLANET|$. There is no room on the planet."
+ MESSAGE_BEHOLDER_PLANETFALL_NO_SLOTS_DESC:1 "The Beholder could not land on $PLANET|$. An empty Building Slot is required."
 
  leader_trait_governor_psionic_communion:0 "Psionic Communion"
  leader_trait_governor_psionic_communion_desc:1 "This leader's psionic abilities improve the populace's mental wellbeing, building trust and providing a sense of safety."
 
  # Beholder Backstory
- beholder_backstory:1 "A Shroud entity, part of the chorus of the Whisperers, projecting its presence via a conduit between planes of existence. Although it appears benevolent, caution is justified. The full extent of its power, and it's true intentions are unknown."
+ beholder_backstory:1 "A Shroud entity, part of the chorus of the Whisperers, projecting its presence via a conduit between planes of existence. Although it appears benevolent, caution is justified. The full extent of its power, and its true intentions, are unknown."
 
 
 ##########################################
@@ -480,6 +506,11 @@
  paragon_astrocreation_is:1 "Astrocreation is an advanced variant of terraformation. It is incredibly powerful. By seeding a planet with one of my Terraformation Nuclei--§HAzaryn indicates the buds on her back§!--we will be able to transform almost any planet into a thriving Gaia World. The process requires a great deal of energy, but the results are nothing short of spectacular."
 
  paragon.228.b.custom_tooltip:2 "§Y$NAME_Astrocreator_Azaryn$§! joins our Empire as a §HLeader§!."
+
+ paragon.228.c:0 "What are those things on your back?"
+ paragon.228.c.response:0 "§HAzaryn appears surprised at the question.§!\n\nA trait unique to my species, simply put. In our youth, they grow quickly - not without discomfort, I might add - and must be pruned regularly, lest we be weighed down by them. §HShe smiles.§! At my age, however, such troubles are a thing of the past.\n\nThey are not quite seeds, but it would do for an analogy. I've come to call them Terraformation Nuclei. Within them sleeps the potential for growth, for rebirth, and for life."
+ paragon.228.d:0 "What is that buzzing, tiny drone of yours?"
+ paragon.228.d.response:0 "Ah, this one? §HAzaryn gently lifts the little flier.§! This is a pollination drone. They help to ensure the vigor and future of my ship's ecosystem.\n\nThey're not altogether inorganic, and even possess the ability to produce pollen on their own. §HAzaryn points at the drone's bottom.§! They can even regulate pollen-transferral by use of static magnetism from their battery terminals. Adorable, isn't it?"
 
  paragon.230.name:0 "$NAME_Astrocreator_Azaryn$"
  paragon.230.desc_worst:0 "$paragon.230.desc_main$ $paragon.230.worst$"
@@ -1123,40 +1154,58 @@
  councilor_gestalt_governor_desc:1 "The $TITLE$ is where important hive decisions are made."
  councilor_gestalt_scientist:0 "Cognitive Node"
  councilor_gestalt_scientist_desc:0 "The $TITLE$ is where we develop our understanding of the world around us."
- councilor_gestalt_admiral:0 "Expansion Node"
+ councilor_gestalt_admiral:1 "Legion Node"
  councilor_gestalt_admiral_desc:1 "The $TITLE$ is where decisions concerning galactic expansion are made."
- councilor_gestalt_general:1 "Deviance Suppression Node"
+ councilor_gestalt_general:2 "Regulatory Node"
  councilor_gestalt_general_desc:1 "The $TITLE$ is where we counter the emergence of deviant consciousnesses."
+ couniclor_machine_governor:0 "Expansion Directive"
+ couniclor_machine_governor_desc:0 "$TITLE$: Units shall aquire all available worlds."
+ couniclor_machine_scientist:0 "Exploration Directive"
+ couniclor_machine_scientist_desc:0 "$TITLE$: Data needs to be gathered and analyzed."
+ councilor_machine_admiral:0 "Extermination Directive"
+ councilor_machine_admiral_desc:0 "$TITLE$: All threats will be exterminated."
+ couniclor_machine_admiral_servitor:0 "Pampering Directive"
+ councilor_machine_admiral_servitor_desc:0 "$TITLE$: All threats will be extermin§R'¿°éü¿T (( (+ÇÄ§! pampered."
+ councilor_machine_general:0 "Exploitation Directive"
+ councilor_machine_general_desc:0 "$TITLE$: Every advantage must be exploited."
 
  councilor_psionic_sovereign:0 "Divine Conduit"
- councilor_psionic_sovereign_female: "$councilor_psionic_sovereign$"
+ councilor_psionic_sovereign_female:0 "$councilor_psionic_sovereign$"
  councilor_psionic_sovereign_desc:0 "First channeled by the Psi-Corps, the $TITLE$ provides a conduit for the Chosen One's vast psionic potential."
  councilor_psionic_sovereign_custom_modifier_desc:0 "$job_telepath_plural$ provide an additional §G+1%§! $mod_planet_psionic_jobs_produces_mult$."
  councilor_psionic_sovereign_conditional_tooltip:0 "Leader has the §YPsionic§! or a §YChosen§! Trait."
 
  councilor_galactic_sovereign:0 "Watcher of the Imperium"
- councilor_galactic_sovereign_female: "$councilor_galactic_sovereign$"
+ councilor_galactic_sovereign_female:0 "$councilor_galactic_sovereign$"
  councilor_galactic_sovereign_desc:0 "The $TITLE$ maintains operatives throughout the Galactic Imperium, monitoring any suspicious behavior."
 
  councilor_galactic_sovereign_megacorp:0 "$councilor_galactic_sovereign$"
- councilor_galactic_sovereign_megacorp_female: "$councilor_galactic_sovereign_megacorp$"
+ councilor_galactic_sovereign_megacorp_female:0 "$councilor_galactic_sovereign_megacorp$"
  councilor_galactic_sovereign_megacorp_desc:0 "$councilor_galactic_sovereign_desc$"
 
- councilor_diadochi: ""
- councilor_diadochi_female: "$councilor_diadochi$"
- councilor_diadochi_desc: ""
+ councilor_diadochi:0 ""
+ councilor_diadochi_female:0 "$councilor_diadochi$"
+ councilor_diadochi_desc:0 ""
 
- councilor_great_khans_legacy: ""
- councilor_great_khans_legacy_female: "$councilor_great_khans_legacy$"
- councilor_great_khans_legacy_desc: ""
+ councilor_great_khans_legacy:0 ""
+ councilor_great_khans_legacy_female:0 "$councilor_great_khans_legacy$"
+ councilor_great_khans_legacy_desc:0 ""
 
- councilor_revanchist_fervor: ""
- councilor_revanchist_fervor_female: "$councilor_revanchist_fervor$"
- councilor_revanchist_fervor_desc: ""
+ councilor_revanchist_fervor:0 ""
+ councilor_revanchist_fervor_female:0 "$councilor_revanchist_fervor$"
+ councilor_revanchist_fervor_desc:0 ""
 
- councilor_ancient_caches_of_technology: ""
- councilor_ancient_caches_of_technology_female: "$councilor_ancient_caches_of_technology$"
- councilor_ancient_caches_of_technology_desc: ""
+ councilor_ancient_caches_of_technology:0 ""
+ councilor_ancient_caches_of_technology_female:0 "$councilor_ancient_caches_of_technology$"
+ councilor_ancient_caches_of_technology_desc:0 ""
+
+# councilor_expert_programmer: "Expert Programmer"
+# councilor_expert_programmer_female: "$councilor_expert_programmer$"
+# councilor_expert_programmer_desc: "An $TITLE$ is to thank for the new script support for Council Positions."
+# councilor_expert_programmer_modifiers: "This is an example of a custom tooltip with modifiers for a Council Position."
+# councilor_expert_programmer_conditional: "This is an example of a conditional tooltip for a Council Positon."
+# councilor_expert_programmer_unlock_title: "§HCouncil Position from Console Commands§!"
+
 
 # AGENDAS - Misc
  agenda_ref:0 "Agenda"
@@ -1172,6 +1221,8 @@
  council_agenda_agenda_unlock_slot_desc:1 "We should expand our government to support an additional councilor."
  council_agenda_agenda_idle_name:0 "Normal State of Affairs"
  council_agenda_agenda_idle_desc:0 "Lacking a specific focus, we deal with smaller, otherwise deferred issues."
+ council_agenda_agenda_reorganize_council_name:0 "Reorganize Council"
+ council_agenda_agenda_reorganize_council_desc:0 "Due to changes in government focus, we should reorganize the Council to focus on other matters."
 
 # AGENDAS - Ethics
  council_agenda_agenda_we_come_in_peace_name:0 "We Come in Peace"

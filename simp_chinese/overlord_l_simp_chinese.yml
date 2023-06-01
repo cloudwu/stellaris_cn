@@ -1,0 +1,598 @@
+﻿l_simp_chinese:
+ #########################
+ # Progenitor Hive Origin
+ #########################
+
+ origin_progenitor_hive:0 "始祖蜂巢"
+ origin_progenitor_hive_desc:1 "该蜂巢通过专职化的半独立领袖获得了进化优势。尽管这些“子嗣”需要持续受到监管，但它们还是大大提高了整体的效率。"
+ START_SCREEN_PROGENITOR_HIVE:1 "在遥远的启始之时，先祖已有之。\n\n在[Root.GetHomeWorldName]上的生活困苦且充满竞争，而强大的先祖还是能够开疆拓土。统治如此巨大的疆域很快难以为继，因此先祖创造了第一个子嗣。很快发现，子嗣显然无法自行管理一切，反之他们产出低级工蜂来帮助管理我们的家园。\n\n让我们第一次试探性地跨出[capital_scope.System.GetName]的一步，我们的先祖便将自己隔绝于一个特化的巢穴中。受益于这些更好更流畅的控制体系，我们已经时刻准备着将先祖的影响力投射于整个星系了，正如他过去和现在所做一般，直至未来。而[Root.GetName]将见证一切。"
+ origin_tooltip_progenitor_hive_effects:4 "—可以雇佣被动获得经验的特殊§H子嗣领袖§!\n—以£building£§H子嗣巢穴§!代替£building£§H产卵池§!，能够产生强大的防御陆军并增强低级子个体的生产力。\n—允许在附属国的星球上建造£building£§H子嗣巢穴§!。\n—可以将§H星域§!释放为§H附属国§!，只要他们没有§H$civic_hive_devouring_swarm$§!国民理念。\n—建造能够增强周围舰队战斗力的§H子嗣舰船§!。没有子嗣舰船的舰队会遭受以下影响：\n\n"
+ #Progenitor deposits, armies and decisions
+ progenitor_defense:0 "蜂巢始祖"
+ progenitor_defense_plural:0 "$progenitor_defense$"
+ progenitor_defense_desc:0 "该蜂巢的始祖。是该蜂巢最大也是最复杂的成员。"
+ d_progenitor:0 "始祖巢穴"
+ d_progenitor_desc:0 "始祖的巢穴，是每一个子嗣出生的地方。"
+ d_progenitor_empty:0 "空的始祖巢穴"
+ d_progenitor_empty_desc:0 "曾经强大的始祖已经被征服，只留下处于混乱的蜂群。"
+
+ decision_grow_progenitor:0 "培育一个新始祖"
+ decision_grow_progenitor_desc:0 "子嗣之中的长子可能继承逝去始祖的衣钵。"
+
+ missing_progenitor_modifier:0 "缺失的始祖"
+ missing_progenitor_modifier_desc:0 "该蜂巢正失去它们的始祖并处于混乱中。"
+
+ ship_progenitor_hive_modifier:0 "缺乏自主权负面影响"
+ ship_progenitor_hive_modifier_desc:0 "在星际战争中，这座蜂巢如果未被子嗣舰船监管，将会遭受严重的削弱。"
+
+ #Events
+ origin.3210.name:0 "始祖陨落"
+ origin.3210.desc:1 "难以置信的事情发生了。我们的母星已落入卑鄙的[From.GetName]的[From.species.GetHandNamePlural]手中。在最近[Root.GetName]的绝望的防御战中，我们的先祖落入了令人憎恶的入侵者的受众，并带走了许多[From.GetSpeciesAdj]。\n\n为了以防万一，我们深思熟虑的先祖已经在诸多子嗣中安排好了继位者。这位备选继位者能够稳定我们蜂巢意识的一部分，但重新管控整个意识的复杂性和压力超出其能力范畴。在敌人趁我们陷入短暂的混乱而获取更大优势之前，我们必须尽快催熟这位子嗣，使其成为新的一位先祖。"
+ origin.3215.name:0 "迁徙"
+ origin.3215.desc:0 "难以置信的事情发生了。我们的母星已落入卑鄙的[From.GetName]的[From.species.GetHandNamePlural]手中。我们现在不得不把所有的行政能力转移到[capital_scope.GetName]，包括配备新的始祖巢穴。在敌人开始利用我们暂时的分崩离析前，我们必须将其中一个后裔孵化为新的始祖。"
+ origin.3215.a:0 "我们必将重振雄风。"
+ origin.3245.name:0 "漫无目的"
+ origin.3245.desc:0 "[Root.GetName]遭到了可怖的§Y[From.GetAdj]§!巨像武器的打击。我们失去的不仅仅是这个星球，还有我们的始祖以及所有居住在这个[Root.GetPlanetHabitat]上的子嗣。[Root.GetName]上的每一个子嗣和子个体都集结在一起，尽全力保护我们的始祖不受这个可怕武器的攻击。最终，它们的所有努力都只不过是延缓了无可避免的厄运，始祖很快陨落了。\n\n现在我们的主体意识里满是矛盾碰撞的思想和冲动。如果我们不马上指派一名新的始祖，[Owner.GetName]很快就会停止生命。"
+ origin.3245.a:0 "我们要奋起反击！"
+ origin.3245.b:0 "得，赶紧逃命吧！"
+ origin.3245.c:0 "我们需要更多矿物。"
+ origin.3245.d:0 "*难以理解的嘶鸣*"
+ origin.3265.name:0 "狂轰滥炸而死"
+ origin.3265.desc:0 "在持续数月的轰炸后，一切都结束了。[From.GetName]陷落了，一切生命的迹象都小时了。在厚厚的尘埃云在由我们前首都化作的废墟街道中翻腾。死亡的[Root.GetSpeciesNamePlural]曝尸荒野，在我们中最伟大的一员，我们的先祖的身边堆作尸山，而先祖也在最后的轰炸中随之而去。\n\n我们现在不得不把所有的行政能力转移到[capital_scope.GetName]，并且需要建立新的始祖巢穴。在敌人开始利用我们暂时的分崩离析前，我们必须将其中一个子嗣孵化为新的始祖。"
+
+ MESSAGE_OFFSPRING_DEFEATED_TITLE:0 "子嗣被打败"
+ MESSAGE_OFFSPRING_DEFEATED_DESC:0 "我们在$PLANET|Y$上的子嗣已经被击败，这导致了我们的§Y子嗣巢穴§!被摧毁。"
+ MESSAGE_NO_OFFSPRING_TITLE:0 "缺少子嗣"
+ MESSAGE_NO_OFFSPRING_DESC:0 "我们目前并没有将子个体派遣到$PLANET|Y$上的§Y子嗣巢穴§!，这会导致工人子个体的效率降低。"
+
+ MESSAGE_FINAL_OFFSPRING_SHIP_TITLE:0 "最后的子嗣舰船被击败"
+ MESSAGE_FINAL_OFFSPRING_SHIP_DESC:0 "我们在$SYSTEM|Y$恒星系中最后一艘§Y子嗣舰船§!被击败，我们的舰队失去了必要的指挥控制。"
+
+ job_offspring_drone:0 "子嗣个体"
+ job_offspring_drone_plural:0 "子嗣个体"
+ mod_job_offspring_drone_add:0 "$job_offspring_drone$岗位"
+ job_offspring_drone_desc:0 "整个星球的行政个体都在这里。始祖通过子嗣个体来实现他们的宏伟设计。"
+ job_offspring_drone_effect_desc:1 "£job_spawning_drone£$job_offspring_drone_plural$增强£mod_planet_amenities_no_happiness_add£§Y$PLANET_AMENITIES_TITLE$§!和£mod_planet_pop_assembly_mult£§Y$MOD_PLANET_POP_ASSEMBLY_ORGANIC_ADD$§!，产生§Y$offspring_defense_plural$§!、并为§Y$pop_cat_simple_drone$产出§!提供£mod_planet_jobs_simple_drone_produces_mult£§G+10%§!增幅。"
+ building_offspring_nest:0 "子嗣巢穴"
+ building_offspring_nest_desc:1 "这座加固的巢穴庇佑着当地的子嗣，并且还能加速周围蜂巢的发展。"
+ offspring_nest_tooltip:1 "\n§H只有始祖蜂巢物种才可能被子嗣巢穴组装§!\n"
+
+ offspring_defense:1 "子嗣军"
+ offspring_defense_plural:1 "子嗣军"
+ offspring_defense_desc:1 "这些陆军被当地的始祖直接监管，它们不仅更加致命，而且比普通蜂巢能产出的任何士兵的生命力都更加顽强。"
+
+ missing_offspring_modifier:0 "缺少子嗣"
+ missing_offspring_modifier_desc:0 "该星球正缺乏子嗣，导致$pop_cat_simple_drone$效率显著下滑。"
+
+ #Progentior Hive Ships
+
+ offspring_corvette:0 "子嗣护卫舰"
+ offspring_corvette_plural:0 "子嗣护卫舰"
+ OFFSPRING_CORVETTE_MID_M1S1:0 "$CORVETTE_MID_M1S1$"
+ OFFSPRING_CORVETTE_MID_S3:0 "$CORVETTE_MID_S3$"
+ OFFSPRING_CORVETTE_MID_S1:0 "$CORVETTE_MID_S1$"
+ OFFSPRING_CORVETTE_MID_S2PD1:0 "$CORVETTE_MID_S2PD1$"
+
+ offspring_cruiser:0 "子嗣巡洋舰"
+ offspring_cruiser_plural:0 "子嗣巡洋舰"
+ OFFSPRING_CRUISER_BOW_L1:0 "$CRUISER_BOW_L1$"
+ OFFSPRING_CRUISER_BOW_M1S2:0 "$CRUISER_BOW_M1S2$"
+ OFFSPRING_CRUISER_BOW_M2:0 "$CRUISER_BOW_M2$"
+ OFFSPRING_CRUISER_MID_S2HB:0 "$CRUISER_MID_S2HB$"
+ OFFSPRING_CRUISER_MID_L1M1:0 "$CRUISER_MID_L1M1$"
+ OFFSPRING_CRUISER_MID_M3:0 "$CRUISER_MID_M3$"
+ OFFSPRING_CRUISER_MID_M2S2:0 "$CRUISER_MID_M2S2$"
+ OFFSPRING_CRUISER_STERN_M1:0 "$CRUISER_STERN_M1$"
+ OFFSPRING_CRUISER_STERN_S2:0 "$CRUISER_STERN_S2$"
+
+ offspring_destroyer:0 "子嗣驱逐舰"
+ offspring_destroyer_plural:0 "子嗣驱逐舰"
+ OFFSPRING_DESTROYER_BOW_M1S2:0 "$DESTROYER_BOW_M1S2$"
+ OFFSPRING_DESTROYER_BOW_S3:0 "$DESTROYER_BOW_S3$"
+ OFFSPRING_DESTROYER_BOW_L1:0 "$DESTROYER_BOW_L1$"
+ OFFSPRING_DESTROYER_STERN_PD2:0 "$DESTROYER_STERN_PD2$"
+ OFFSPRING_DESTROYER_STERN_S2:0 "$DESTROYER_STERN_S2$"
+ OFFSPRING_DESTROYER_STERN_M1:0 "$DESTROYER_STERN_M1$"
+
+ offspring_battleship:0 "子嗣战列舰"
+ offspring_battleship_plural:0 "子嗣战列舰"
+ OFFSPRING_BATTLESHIP_BOW_L1M1S2:0 "$BATTLESHIP_BOW_L1M1S2$"
+ OFFSPRING_BATTLESHIP_BOW_L1S4:0 "$BATTLESHIP_BOW_L1S4$"
+ OFFSPRING_BATTLESHIP_BOW_L2:0 "$BATTLESHIP_BOW_L2$"
+ OFFSPRING_BATTLESHIP_BOW_M1S2SHB:0 "$BATTLESHIP_BOW_M1S2SHB$"
+ OFFSPRING_BATTLESHIP_BOW_M2S4:0 "$BATTLESHIP_BOW_M2S4$"
+ OFFSPRING_BATTLESHIP_BOW_M3S2:0 "$BATTLESHIP_BOW_M3S2$"
+ OFFSPRING_BATTLESHIP_MID_L2S4:0 "$BATTLESHIP_MID_L2S4$"
+ OFFSPRING_BATTLESHIP_MID_L1M4:0 "$BATTLESHIP_MID_L1M4$"
+ OFFSPRING_BATTLESHIP_MID_L2M2:0 "$BATTLESHIP_MID_L2M2$"
+ OFFSPRING_BATTLESHIP_MID_L3:0 "$BATTLESHIP_MID_L3$"
+ OFFSPRING_BATTLESHIP_MID_M4SHB:0 "$BATTLESHIP_MID_M4SHB$"
+ OFFSPRING_BATTLESHIP_MID_S4LHB:0 "$BATTLESHIP_MID_S4LHB$"
+ OFFSPRING_BATTLESHIP_STERN_M1S2:0 "$BATTLESHIP_STERN_M1S2$"
+ OFFSPRING_BATTLESHIP_STERN_L1:0 "$BATTLESHIP_STERN_L1$"
+ OFFSPRING_BATTLESHIP_STERN_M2:0 "$BATTLESHIP_STERN_M2$"
+ OFFSPRING_BATTLESHIP_STERN_S4:0 "$BATTLESHIP_STERN_S4$"
+
+ SHIP_AURA_OFFSPRING:0 "$OFFSPRING_AURA$"
+ OFFSPRING_AURA:0 "子嗣监管台"
+ sm_offspring_outlook:0 "子嗣瞭望台"
+ sm_offspring_outlook_desc:0 "能够让子嗣监管并指挥恒星系内正在进行的战斗的恒星基地模块。\n"
+ STARBASE_OFFSPRING_OUTLOOK:0 "$sm_offspring_outlook$"
+
+ mod_shipsize_offspring_corvette_build_speed_mult:0 "子嗣$mod_shipsize_corvette_build_speed_mult$"
+ mod_shipsize_offspring_destroyer_build_speed_mult:0 "子嗣$mod_shipsize_destroyer_build_speed_mult$"
+ mod_shipsize_offspring_cruiser_build_speed_mult:0 "子嗣$mod_shipsize_cruiser_build_speed_mult$"
+ mod_shipsize_offspring_battleship_build_speed_mult:0 "子嗣$mod_shipsize_battleship_build_speed_mult$"
+
+ mod_shipsize_offspring_corvette_hull_add:0 "子嗣$mod_shipsize_corvette_hull_add$"
+ mod_shipsize_offspring_destroyer_hull_add:0 "子嗣$mod_shipsize_destroyer_hull_add$"
+ mod_shipsize_offspring_cruiser_hull_add:0 "子嗣$mod_shipsize_cruiser_hull_add$"
+ mod_shipsize_offspring_battleship_hull_add:0 "子嗣$mod_shipsize_battleship_hull_add$"
+
+ mod_shipsize_offspring_corvette_hull_mult:0 "子嗣$mod_shipsize_corvette_hull_mult$"
+ mod_shipsize_offspring_destroyer_hull_mult:0 "子嗣$mod_shipsize_destroyer_hull_mult$"
+ mod_shipsize_offspring_cruiser_hull_mult:0 "子嗣$mod_shipsize_cruiser_hull_mult$"
+ mod_shipsize_offspring_battleship_hull_mult:0 "子嗣$mod_shipsize_battleship_hull_mult$"
+
+ ##########################
+ # Subterranean origin
+ ##########################
+
+ origin_subterranean:0 "地底人"
+ origin_subterranean_desc:1 "该物种迁徙到地下的真正原因已经消失在历史的长河中。或许是为了躲避天敌，又或许是为了获得丰富的资源，但无论如何，该物种已经进化为适应居住在他们母星地底的形态，造就了这个对环境适应力更为强大的社会结构。"
+ origin_tooltip_subterranean_effects:3 "—以§H穴居者§!特质开局\n—殖民地的§H采矿区划§!数量不受限制，并从每个采矿区划§G+2§! £housing£ §H$MOD_PLANET_HOUSING_ADD$§!，而且从每3个§H采矿区划§!中可获得§G1个§!£building£§H建筑槽§!\n—你的物种在地下建造城市，因此将会获得以下优势：\n\n"
+ trait_cave_dweller:0 "穴居者"
+ trait_cave_dweller_desc:0 "§L该物种能在任何他们能找到的星球地下繁衍，但代价是人口增长速度。§!"
+ trait_cave_dweller_tooltip:0 "$MOD_BIO_POP_GROWTH_SPEED$：§R-20%§!"
+
+ START_SCREEN_SUBTERRANEAN:1 "当[GetHomeWorldName]上的其他生命在只能在荒野中度过夜晚，我们的祖先很快学习到了在地下生活的智慧，地下为他们提供了阻挡猛烈阳光和剧烈气候的庇荫。\n\n$START_SCREEN_SUBTERRANEAN_END$"
+ START_SCREEN_SUBTERRANEAN_PLANT:1 "[GetHomeWorldName]上的生命采取了一些完全不同的进化路线。和我们同处一个星球的其他生命形式不同，它们从阳光中汲取能量而我们从阴暗的地底获得营养，正如我们的[GetSpeciesAdj]先祖所做的那样。\n\n$START_SCREEN_SUBTERRANEAN_END$"
+ START_SCREEN_SUBTERRANEAN_LITHOID:0 "我们生于[GetHomeWorldName]极深的地下。我们的进化之路和我们那些不可移动的表兄弟不同，他们在上方如同哨兵般环卫者我们，而我们却选择远离严酷而闪耀的日光。和他们不同，我们获得了移动、思考以及建立一个文明的能力。\n\n$START_SCREEN_SUBTERRANEAN_END$"
+ START_SCREEN_SUBTERRANEAN_END:2 "对地底矿物的轻易获取让我们的[GetSpeciesAdj]先祖完成了工业化，统一了我们的物种并深化了穴居的文明形式。我们数次尝试重回地表但每次都只能带来残酷而难于应付的回忆。因此我们还是留在了地下，在星球的根基处建立我们至高无上的地位。\n\n现在随着我们首个[GetStartingDrivePlural]的发现，我们做出了我们最大胆的尝试以触及星辰——并也同我们的祖先那样，我们应该在黑暗中挖掘出自己的家园。"
+ SUBTERRANEAN:0 "地底人"
+
+ ##########################
+ # Teachers of the Shroud #
+ ##########################
+
+ origin_shroudwalker_apprentice:0 "虚境导师"
+ origin_shroudwalker_apprentice_desc:1 "早在他们踏入星系舞台之前，他们的文明就受到了虚境行者集会的支持和塑造成型。"
+ START_SCREEN_SHROUDWALKER_APPRENTICE:1 "我们的祖先流传下来关于导师的神话：他们无所不知，并且塑造了我们文明的早期阶段。通过托梦，他们从遥远的地方与我们交流，将他们关于虚境的知识和智慧传授于我们。\n\n如今我们的导师再次降临，通过在我们的梦境中播撒下光怪陆离的画面，他教会了我们星际航行的秘诀。在短短的几年后，我们便能够建造舰船遨游太空。\n\n不过我们前方的路还有多长？我们的导师指明了“虚境隧道”这条路，那是一个坐落于他们母星系边陲的天然虫洞。创建我们自己的隧道便可以让我们通过这条路拜访导师。在我们踏入星际舞台之际，愿我们的导师继续赐予我们更多的智慧。"
+ START_SCREEN_SHROUDWALKER_APPRENTICE_CORPORATE:0 "我们教会的创始人如此描述导师：他们无所不知无所不能，他们降下了最初的福音。通过托梦，他们从遥远的地方与我们交流，将他们关于虚境的知识和智慧传授于我们。\n\n如今我们的导师再次降临，通过在我们的梦境中播撒下光怪陆离的画面，他教会了我们星际航行的秘诀。在短短的几年后，我们便能够建造舰船遨游太空。\n\n但这并不是我们雄心壮志的尽头。我们的导师指明了“虚境隧道”这条路，那是一个坐落于他们母星系边陲的天然虫洞。如果我们创建好了这条神圣的通路，我们便能直接与导师会面。在我们踏入星际舞台之际，愿我们的导师继续赐予我们更多的智慧。"
+ origin_tooltip_shroudwalker_apprentice_effects:2 "§R—警告！§!这将锁定除§H灵能飞升§!外的所有飞升路线。\n—获得§H灵能潜势§!特质。\n—开局时获得在恒星基地建造§H虚境信标§!的能力。\n—开局时取得和§H$gov_shroudwalker_enclave$§!的联系。"
+
+ origin.5605.name:0 "真正的学徒"
+ origin.5605.generic.desc:1 "我们的学生啊，我们已经教导了你们一代又一代，将虚境和它的奥秘的知识播撒入你们的梦境之中。现在你们已经能够触及星辰，你们真正的学徒生涯才刚刚开始。前路不会一马平川。为了照亮你们前行的道路，我们传授给你们虚境信标的知识，这是一个强大的设备。在你们的一座恒星基地上建造以后，这座信标会打开一个虚境隧道。请谨慎选择地点，因为虚境隧道只会生成一次。\n\n如果有所索求，有所不测就呼唤我们吧。在梦境中我们会一直看着你们。在漫游的旅途中，我们等待着你们的到来。"
+ origin.5605.corporate.desc:0 "学生们，我们在梦中曾指引你们。通过这些梦境我们塑造了你们的世界。如今你们已茁壮成长，可以将我们的信条传播于星际，你们真正的试炼正刚刚开始。你们的勤勉将光耀虚境，你们的辛劳成果亦是对你们教导的兑现。为了点燃事业之火，我们传授给你们虚境信标的知识，这是一个强大的设备。在你们的一座恒星基地上建造以后，这座信标会打开一个虚境隧道。请谨慎选择地点，因为虚境隧道只会生成一次。\n\n如果有所索求，有所不测就呼唤我们吧。在梦境中我们会一直看着你们。在漫游的旅途中，我们等待着你们的到来。"
+ origin.5605.a:0 "我们心怀感激地接受你们的馈赠。"
+ origin.5605.b:0 "这是我们应得的。"
+ origin.5605.tt:0 "我们还会得到："
+
+ origin.5615.name:0 "欢迎学徒"
+ origin.5615.a.desc:0 "学徒们，我们终于能和你们好好打招呼了。迹象和预兆都预示了这一刻，虚境本身也会见证你们的到来。我们已经期待了很久，只为与你们在感知之境相会。在这里你们是欢迎之至的存在。"
+ origin.5620.name:0 "欢迎学徒"
+ origin.5620.b.desc:0 "学徒们，我们终于能和你们好好打招呼了。通过早就铺设好的隧道，你们的到来已经被虚境所感知。你们的回声仍在颤抖、涟漪般回荡过潜意识的水面。虚境神秘中的居者一定会祝福我们的会面。在这里你们是最受欢迎的存在。"
+
+ origin.5625.name:0 "点亮信标"
+ origin.5625.a.desc:1 "在黑暗中漫无止境地摸索之后，虚境的面纱终于被揭开。我们的导师赐予了我们无上的珍宝。这个信标以及其诞生的隧道，注定会照亮我们跨越星际的航道。从这个星系开始的旅途将会更快……也远远地更为神秘。"
+ origin.5625.a.option:0 "愿虚境欢迎我们的到来。"
+ origin.5625.b.desc:1 "在黑暗中漫无止境地摸索之后，虚境的面纱终于被揭开。我们的导师赐予了我们无上的珍宝。这个信标以及其召唤出的隧道，注定会照亮我们跨越星际的航道。\n\n还剩下一步：我们导师所居住的那一侧边界至今对我们封闭。地图中实际上的航道对虚境来说可能无关紧要，但是在这边的星球还是非常麻烦。至少现在，我们通过隧道的路径还是被封锁着。"
+
+ ################################
+ # Slingshot to the Stars Origin
+ ################################
+
+ origin_star_slingshot:0 "射向星际"
+ origin_star_slingshot_desc:1 "曾几何时，该文明的天空短暂地被流星所照亮，紧接着就陷入了长久的黑暗。此后他们试图冲出天际以寻求答案，并在第一次太空征程中发现了一座休眠中（并且早已被遗弃）的$quantum_catapult_1$。"
+ START_SCREEN_STAR_SLINGSHOT:0 "自上古以来我们的人民就能时不时地看到夜空被无数流星所照亮，但至今我们的科学家还是不能解释这种现象。随着我们开始探索星系，我们最终获得了追踪这些扰动现象原因的必要装备——一个被我们的工程师称为$quantum_catapult_1$的古老构造。\n\n$START_SCREEN_STAR_SLINGSHOT_SECOND_PART$"
+ START_SCREEN_STAR_SLINGSHOT_GESTALT:0 "自我们鸿蒙初开之时便能时不时地看到天空被无数的流星所照亮，并完全无法理解是什么可能造成了这种奇怪的现象。随着我们终于脱出母星的桎梏，我们成功地获得了追踪这些扰动现象原因的必要工具——一个$quantum_catapult_1$。\n\n$START_SCREEN_STAR_SLINGSHOT_SECOND_PART$"
+ START_SCREEN_STAR_SLINGSHOT_SECOND_PART:0 "尽管陷入休眠，部分被毁还遭到遗弃，我们依旧坚信其能回复往日的荣光。如果按照我们的预期工作，它将成为通往星系各处的星门。"
+ origin_tooltip_star_slingshot_effects:3 "—开局时在你的母星附近存在§H$quantum_catapult_ruined_slingshot$§!以及修复和使用该设备的必要科技。\n—在遥远恒星系建造恒星基地花费的影响力降低§G75%§!。\n—你的§H量子弹弓§!的精度提高§G50%§!\n—通过弹射舰队获得的§Y量子伏击§!的射速提高到§G+50%§!。"
+
+ # Events
+
+ origin.3510.title:0 "$quantum_catapult_1$已获得"
+ origin.3510.desc:0 "我们终于获得了$quantum_catapult_1$所在的恒星系及其周边区域。现在我们可以送工程师过去以开始修复工程，这样就能让这个休眠的结构重获新生。"
+ origin.3510.a:0 "万里长征第一步。"
+
+ # Dig Site
+
+ slingshot_digsite:0 "量子弹弓"
+ slingshot_digsite_desc:0 "我们已经找到了一个损毁的巨型结构残骸。该构造显然亟需修复，同时我们也在其数据库中发现了饱含着有关异星生物的见解的宝贵财富。尽管我们还在决定是否要重建这一远古科技的造物，我们的考古学家有机会去发掘并取回这宇宙设备起源的线索。它的其中一个发明者，“量子建筑师”相关的日志似乎格外有价值。恢复这些文件对我们解密遗留给我们科技的远古种族的文化和历史必然有着莫大的帮助。"
+
+ origin.3515.name:0 "星光燎原"
+ origin.3515.desc:0 "在蓝图和图示之中我们恢复了一份奇怪的文档：\n\n这是来自量子建筑师的个人文件\n\n鸿蒙之初，我们居于黑暗。上帝说：“要有黑暗”，于是世界充满了黑暗。当我们最初的祖先获得了知觉之光，我们就想在天空中搜寻生命的迹象和意义，但我们的头顶只有无际的黑暗。随着我们建立了文明，我们的思想扫过黑夜中的每一片阴影，我们在建立第一座城市的地方辛勤劳作，经常测试它们的地基。\n\n数千年后，我突然莽撞地向“上”看了一眼。当其他人还面朝大地而劳作时，我的思绪却向天空打开。我建造了电路和钢铁的神殿，用我的智慧之光制作了我自己的工具。通过完善二极管和电容器的迷宫，我将我的意识传播到整个宇宙，感知笼罩在我们世界的黑暗之外的一切事物。\n\n因为我能感受到其他人感受不到的东西：我们在宇宙并不孤独。通过玻璃般的黑暗，我能感受到数以千计的其他星球。我能感知到不可能。在我们无尽的黑夜之外是燎原般的万千星点。"
+ origin.3520.name:0 "阴影之外"
+ origin.3520.desc:0 "尽管我们的探险队还在筛选能够解码该巨型结构的建造计划的数据，他们已经发现了另一个看起来像是宗教文本的摘录：\n\n来自量子建筑师的个人文件\n\n我吐露真相，而我的人民却回以混乱。\n我们每个人都在自己思想和情感的迷雾中麻木劳作。我们试探性地对他人伸出手，但我们中有太多人是孤独的。我们的神在黑暗中创造了世界，我们被告知说我们才是神的造物的中心。\n\n就因为我胆敢梦想天外的世界，我的愿景就被他人认为是谎言。我们当中的其他人问：怎么才能证明这些梦？我们怎么能相信我们不能证明的事？作为回应，我将那些还愿意听我的人引到自己的实验室。这些最聪明的头脑可以感知到我所能感知到的：夜幕之外的其他星球。\n\n而最黑暗的头脑却报之以其他的回应，他们捏造新的论点，紧握致命的武器。那些危险的头脑吟唱寓言，说我们的星球会陷入动荡，因为我们不再是神的宠儿。然而我还是知道真相：创造之光是一幅巨大的帷幕。查宇宙之秘，我被欣喜的浪潮所裹挟，渐渐失去了自己的身份。"
+ origin.3525.name:0 "启蒙"
+ origin.3525.desc:0 "更多类弥赛亚的文本被恢复：\n\n来自量子建筑师的个人文件\n\n我不断地被无边无垠的宇宙所折磨和诱惑，开始考虑去遥远的世界并亲自体验。生活在被无尽黑夜包裹的世界中，其他的头脑做着美梦，而我寻求于他们进行交流。在黑暗之外有光明指引着我，光明诱惑着我，给予了我无限的启示。因此我把我的思想广播到遥远而未知的世界……\n\n天上如是，地上亦然。我对天空的愿景带给了我喜悦，在地上，我同样找到了给我同样的解脱的幸福的人。我与另一个科学家坠入爱河，那是一位有远见的人，用其他的办法在群星中寻求我所感知到的世界。\n\n我们并不只是分享各自所见。我们立誓成为对方终生的伴侣。随着工作的进展，我们依偎在每一个漫漫长夜。我的伴侣梦到了星舰的设计图，在蜡制设计版中刻出原始的太阳能航空器。我不断用电路修修补补，努力将我的思想和无限融合起来。我的冒险越是深入，我内心的欣喜就越是充盈。多么美妙啊！永无止境的欢愉！"
+ origin.3530.name:0 "跨越群星"
+ origin.3530.desc:0 "来自量子建筑师的个人文件，其身份为宇宙制船师的伴侣\n\n我的伴侣十分耐心而我却有些莽撞。我的挚爱拥有科学和逻辑的智慧而我也有着驰骋的心际。随着我们漫漫长夜中愈行愈远，我徒劳地将自己的意识广播到虚空。我忽视了睡眠，忽视了饥饿，最终也忽视了我的挚爱。我们在宇宙中追寻梦想的同时，内心却开始出现了鸿沟。\n\n我的挚爱为这种现象创造了一个词：量子纠缠。我的身体还在这儿，但思想却驰骛天外，竭力地探寻欣喜和与永恒的交流。我的伴侣跟我说其他话，但我丝毫听不进去。“吾爱”，我的伴侣说，“回到我的身边”，但我却只能听到恒星的回声。\n\n很快就到了测试我伴侣的太阳能星舰的时候。我志愿驾驶这架飞船。当我第一次掌舵并开始处女航之时，我将梦到通往遥远海岸的航线，我的身还在原处，心已神游天外。\n\n我的挚爱渐渐平静下来，我会赐予我的挚爱无限，通往永恒，来吾道夫先路。我会给予我的挚爱万千世界之梦。"
+ origin.3535.name:0 "永远怀念"
+ origin.3535.desc:0 "来自宇宙制船师的个人文件，其身份为量子建筑师的遗孀\n\n我们的第一艘星舰一年前就消失了。我们至今不知道之前到底发生了什么。我的伴侣，量子建筑师，他只留下了遗产和谜团。我们所能做的最深入的推测也不过是我的挚爱最终成为了宇宙中的一员。在他坐上控制面板之前开始处女航，他与无限融合在了一起，被对天空的狂喜和遐想所吞没。我们的测试船再也没有回来。\n\n现在我只能用手头上粗糙的工具劳作，将我已经一片狼藉的工作和生活重拾起来。我更多的太阳能舰船开始了前往永夜的旅途。我开始着手安装更好的引擎，原型引擎能够让我们的舰船穿越超空间。在某些夜晚，我梦想着有一种技术可以将我们送往未知的星系，就像我失去的伴侣的思想和灵魂那样。\n\n我向光明伸出手臂，拒绝向黑暗屈服。我坐在我的挚爱的实验室中，就像现在那样阅读他们的日志并写下自己的日志。有时候当一切陷入至暗，我尝试着把我的思想广播向宇宙。这是无限的信标。"
+ origin.3540.name:0 "量子化"
+ origin.3540.desc:0 "随着我们终于找到了该结构建造计划的缺失文件，我们还原了最后的文本：\n\n来自宇宙制船师的文件，其身份为量子建筑师的遗孀\n\n我们探寻了许多方法以实现我的挚爱的创新，也就是他们的量子创造。我不知道我们是否可以沿着这条看似莽撞的道路，以量子建筑师的设计为蓝本，以缓慢的步伐抵达群星。我寻求能跨越超空间的浪潮，思考着能将我们带到遥远彼岸的流向。\n\n我的舰船沿着缓慢的路线前进，在深夜中我读着我的挚爱的日志，努力理解其中的数学表达式和相关机理。当我的思想触及无限时，我意识到我的挚爱还在那儿。他引导了先路，我必须跟着前行。\n\n通过失去我却反而获得了灵感。我们曾开始制造过一个伟大的机械，它能够推动我们的舰船跨越星系，就如同我的挚爱跨入无限那样。当我离开时，我谦逊地要求这台宇宙设备以及其迭代更新产物应该纳入量子建筑师的个人日志。当其他人读到这篇日志时，毫无疑问我的灵魂已经飞往远方。我会找到在无垠的宇宙中和我的挚爱团聚的道路。因为我知道我们将共同居住在永恒中，梦想并漂流在万千星点之中。"
+ origin.3515.a:0 "恢复更多的文件。"
+ origin.3540.a:0 "无限信标。"
+ infinity_beckons:0 "无限信标"
+ into_the_unknown:0 "踏入未知"
+
+ ##########################
+ # Imperial Vassal Origin #
+ ##########################
+ origin_imperial_vassal:0 "帝国封邑"
+ origin_imperial_vassal_desc:1 "第一次飞出母星的经历是一段痛苦的回忆，一眨眼的功夫，我们就惨遭征服并跪倒在其脚下。不过现在我们终于得以展望未来，一个不必处在他国阴影之下的未来。"
+ START_SCREEN_IMPERIAL_VASSAL:0 "当我们第一次离开母星系时，就遇到了一个迫使我们臣服的外星帝国。尽管对于人民而言这是一段痛苦的记忆，但事实证明这段附庸关系远比我们想象中有益得多，在这段短暂的附庸时光中，我们学到了不少东西。\n\n我们并非宗主国唯一的附庸，因为我们已经接见了其他在宗主国控制下国家所派出的外交官和大使。虽然我们与其中的某些家伙看不对眼，但至少现在他们还是有用的盟友。\n\n不过，我们虽然盼望着有朝一日能独立自主地决定自身的命运，但现在还是要接受当下的附属国地位，并充分利用目前的局面。"
+ origin_tooltip_imperial_vassal_effects:1 "—游戏开始时成为§H高级电脑帝国§!的附庸\n—在游戏开始时需要选择附庸§H国家侧重§!类型"
+
+ # AI Overlord Version
+ origin_imperial_vassal_overlord:0 "帝国领主"
+ origin_imperial_vassal_overlord_desc:0 "这是一位富有雄心壮志的霸主，它花费了大量时间和精力去征服毗邻的国家来满足自身的一切需求。随着他们将越来越多的义务转移给附庸承担，其自身也越来越懒惰。"
+ origin_tooltip_imperial_vassal_overlord_effects:0 "—游戏开始时成为§H高级帝国§!\n—游戏开始时拥有数个附庸"
+
+ # Personalities
+ personality_imperial_origin_overlord_ai:0 "天朝上国"
+ personality_imperial_origin_overlord_ai_desc:0 "该帝国极其依赖于他们的附庸，很少关心母星系之外发生的事情，也不会与他国交战，更不会主动去扩张疆域，除非迫不得已。"
+
+ # Modifiers
+ imperial_vassal_ai_modifier:0 "帝国什一税"
+ imperial_vassal_ai_modifier_desc:0 "帝国官僚机构的日常运作需要花费外交使团相当大的精力。"
+
+ # Wars
+ NAME_Imperial_War:0 "帝国内战"
+
+ # Megastructure
+ gateway_derelict:0 "废弃星门"
+ gateway_derelict_DESC:0 "$gateway_final_DESC$"
+ gateway_derelict_MEGASTRUCTURE_DETAILS:0 "$gateway_final_MEGASTRUCTURE_DETAILS$"
+
+ # Events
+ origin.5703.desc:0 "欢迎你们，新外星人朋友们！\n\n由于你们选择成为我们的……盟友，我们认为现在正是与你们联络的时候。你们选择了理性而不是逼迫我们使用暴力，这令我们非常愉快。"
+ origin.5703.a:0 "是你们让我们别无选择的不是么？"
+ dialog_hostile_overlord:0 "我们会对宗主国采取§R敌对§!态势。"
+ origin.5703.b:0 "还有什么别的你们想告诉我们的吗？"
+ dialog_wary_overlord:0 "我们会对宗主国采取§Y中立§!态势。"
+ origin.5703.c:0 "我们以成为你们的一员而骄傲！"
+ dialog_friendly_overlord:0 "我们会对宗主国采取§G友好§!态势。"
+
+ origin.5705.desc.harsh:0 "哼哼……无论如何！\n\n$origin.5705.desc$"
+ origin.5705.desc.grateful:0 "我们同样骄傲于你们的到来！\n\n$origin.5705.desc$"
+ origin.5705.desc:0 "经过深思熟虑，我们决定投资一大笔资源来援助你们的国家进行特化。在未来，这将让你们的帝国在我们所有的伙伴和盟友中扮演更加重要的角色。\n\n我们还不太确定你们的人民更喜欢怎么样的角色，军事化？专精学术？或你们更感兴趣矿物和物质财富？"
+ origin.5705.desc.reconsider:0 "那么……你有重新考虑吗？"
+ origin.5705.a:0 "军事专精听起来棒极了。"
+ origin.5705.a.tt:2 "§Y[ROOT.GetName]§!将会转变为§Y$specialist_bulwark$§!特化，致力于军事和防卫。\n§Y[Root.GetName]§!将支付$r_influence$作为扩张什一税。\n从§Y[overlord_empire.GetName]§!处获得一支§Y驱逐舰§!舰队以及相应的建造科技。"
+ origin.5705.b:0 "能不能再详细介绍一下戍邦？"
+ origin.5705.c:0 "我们的人民更热爱学识。"
+ origin.5705.c.tt:1 "§Y[ROOT.GetName]§!将会转变为§Y$specialist_scholarium$§!特化，致力于研究科技。\n§Y[ROOT.GetName]§!将支付$r_influence$作为扩张什一税。\n从§Y[overlord_empire.GetName]§!处获得一艘§Y科研船§!和一位§Y科学家§!。"
+ origin.5705.d:0 "能不能再详细介绍一下学邦？"
+ origin.5705.e:0 "我们更喜欢物质财富和矿物专精的特化。"
+ origin.5705.e.tt:1 "§Y[ROOT.GetName]§!将会转化为一个§Y$specialist_prospectorium$§!特化属国——专注于矿物和战略资源利用。\n§Y[ROOT.GetName]§!在扩张时会上缴一份$r_influence$贡税。\n将会从§Y[overlord_empire.GetName]§!接收到2艘§Y工程船§!。"
+ origin.5705.f:0 "能不能再详细介绍一下勘探邦？"
+
+ origin.5706.desc:0 "一种趋于暴力的倾向，是这样吗？\n\n我们通常所说的戍邦是一种致力于军事事务的国家。这意味着我们会按月度支援你们一些基础的矿物和食物，这样你们国家可以将更多的精力放在战争上。\n\n作为回报，我们希望你们可以为我们抵御外辱，在我们联盟的边境上扮演重要角色。这么说你们觉得可以接受吗？"
+ origin.5706.a:0 "听起来是我们可以接受的。"
+ origin.5706.b:0 "我们需要再考虑考虑。"
+
+ origin.5707.desc:0 "所以这引起了你们的兴趣不是吗？\n\n我们通常所说的学邦是一种专精于研究科技的国家。我们承诺保护你们的国家，而你们便可以集中资源让国家以及我们的盟友更加先进。\n\n作为回报我们希望你们可以与我们其他国家分享所有令人惊奇的科学发现。这样的合约是否令你们满意？"
+ origin.5707.a:0 "我们的人民乐于接受这项协定。"
+ origin.5707.b:0 "我们需要再考虑考虑。"
+
+ origin.5708.desc:1 "你们对这项协定感兴趣没错吧？\n\n勘探邦，正如大众赋予其称呼，是一种专精于发现矿物、生产战略资源的国家——但这会以牺牲他们的科学发展能力为代价。通过合适的工具，一些勘探邦可以找到其他人容易忽略的稀有矿物，尽管这只是我们道听途说的。\n\n这听起来对你们的人民而言是不是一项可以胜任的工作呢？"
+ origin.5708.a:0 "我认为这非常适合我们。"
+ origin.5708.b:0 "我们需要再考虑考虑。"
+
+ origin.5710.title:0 "定义我们的未来"
+ origin.5710.desc:0 "我们接见了由宗主派来的一小支外交使团，带来了最新的消息和指令。由于我们近期对于他们要求的满足，他们希望签订一项更为详细的协定来推进我们之间的关系。"
+
+ # Dissolution of the Empire events
+ origin.5725.title:0 "受质疑的继位"
+ origin.5725.desc:0 "紧随着[overlord_ruler.GetName]的突然驾崩，我们获悉了[Root.Overlord.Capital.GetName]上正经历的混乱。不太受支持的[overlord_heir.GetName]通过军事手段将王座纳入了[overlord_heir.GetHimselfHerself]的囊中，令[overlord_heir.GetHisHer]的皇亲和[Root.Overlord.Capital.GetName]上的人民们大为不满。\n\n在[overlord_heir.GetFirstName]的引起骚乱的崛起之后，许多人开始质疑[Root.Overlord.GetName]统治我们的合法性。如果他们连自己首都的安全都无法保证，他们还有什么能耐来保护我们的安全？"
+ origin.5725.a:0 "哪怕是天上的长堤，也是溃于蚁穴。"
+
+ origin.5735.title:0 "破碎的帝国"
+ origin.5735.desc:1 "失去了能够维持团结统一的伟大领袖，[previous_overlord.GetName]现已分崩离析，而每一部分都宣称自己才是原先帝国的正统。然而由于没有足够的实力和合法性，他们对所有附庸的控制也随之瓦解。\n\n在每一个分裂的部分都在互相征伐，争夺[previous_overlord.GetName]的王位时，他们原先的附属国们也可以按自己的意愿行事了。"
+ origin.5735.a:0 "重获自由喽。"
+ origin.5735.b:0 "是时候有新的领袖登上历史舞台了。"
+ origin.5735.b.tt:0 "对§Y[previous_overlord.GetName]§!和它原先的所有附属国获得§Y30年§!的§Y征服§!宣战理由。"
+ origin.5735.c:0 "我们忠于王座，无论如何。"
+ origin.5735.c.tt:0 "我们将继续是§Y[previous_overlord.GetName]§!的忠诚附属国。"
+
+ # AI Vassals looking for new overlord events
+ origin.5745.title:0 "技术官僚保护"
+ origin.5745.desc:0 "[new_subject_target.GetName]的人民对他们国土以外的事情漠不关心，不过他们清楚，无论外界发生了什么都可能会破坏他们一心一意的内部专注。因此他们向我们寻求如同原先[previous_overlord.GetName]所给予的类似的保护。"
+ origin.5745.a:0 "这对我们的帝国颇有裨益。"
+ origin.5745.b:0 "我们对这些科学家没什么兴趣。"
+
+ origin.5750.title:0 "团结起来的王子们"
+ origin.5750.desc:0 "[new_subject_target.GetName]因其众多争执不休的王子们而臭名昭著，他们一直处心积虑想争取到每一点可以争取的影响力和权力。仅这一次他们似乎终于成功取得了一项共识，向我们派出了特使以期缔结新的外交条约。似乎他们开始怀念曾经[previous_overlord.GetName]给予的那种悉心呵护了。"
+ origin.5750.a:0 "行吧，至少他们能有点共识。"
+ origin.5750.b:0 "我们对这群呱噪的家伙可没有半点兴趣。"
+
+ origin.5755.title:0 "伯爵接洽"
+ origin.5755.desc:0 "在[previous_overlord.GetName]崩溃之前，[new_subject_target.GetName]与之颇为相近，似乎他们有兴趣与我们建立发展相似的关系。他们的外交官正在连夜撰写一份能令双方都满意签署的外交协定，作为我们两个帝国相互之间建立起更加充分的理解的第一步。"
+ origin.5755.a:0 "这儿会有他们的容身之所的。"
+ origin.5755.b:0 "请特使回去吧。"
+
+ origin.5760.title:0 "我的舰队联盟"
+ origin.5760.desc:0 "似乎[new_subject_target.GetName]的市场在[previous_overlord.GetName]解体后，有些不稳定。现在他们已经没有人可以依靠了。几位贸易巨头已与我们接触，并表示愿意提供[new_subject_target.GetAdj]劳役，甚至非常愿意献上部分利润，一旦他们的帝国稳定下来。"
+ origin.5760.a:0 "只要他们能乖乖交上能量币就行。"
+ origin.5760.b:0 "我们不需要他们的资本财产。"
+
+ #########################
+ # Mercenary Enclave
+ #########################
+
+ FLEET_LEASED_OUT:0 "$FLEET|Y$舰队被租借给$COUNTRY|Y$，持续时间£time£$DAYS|Y$天。"
+ FLEET_RETURNED:0 "$FLEET|Y$舰队的租借合同已经被撕毁。现在该舰队受其所有国$COUNTRY|Y$控制。"
+ FLEET_CONTRACT_PROLONGED:0 "$FLEET|Y$舰队的租借合同延长了£time£$DAYS|Y$天。"
+ TRIGGER_IS_LEASED:0 "$FLEET|Y$舰队已被租借"
+ TRIGGER_IS_NOT_LEASED:0 "舰队$FLEET|Y$未被租借"
+ TRIGGER_LEASE_DAYS:0 "舰队$FLEET|Y$的租借天数$COMPARE$$VALUE|Y$"
+ TRIGGER_LEASE_DAYS_NOT:0 "舰队$FLEET|Y$的租借天数不$COMPARE$$VALUE|Y$"
+
+ #########################
+ # Galcom Resolutions
+ #########################
+
+ resolution_category_defenseprivatization:0 "防卫私有化"
+
+ resolution_defenseprivatization_repeal_1:0 "§R废除$resolution_defenseprivatization_defense_contracts$§!"
+ resolution_defenseprivatization_repeal_1_desc:0 "尽管国防承包商的专业性毋庸置疑，但[global_event_country.GetGalCommunityOrGalImperium]的国家不应当过于依赖私人的安保服务。"
+ resolution_defenseprivatization_repeal_2:0 "§R废除$resolution_defenseprivatization_private_support_troops$§!"
+ resolution_defenseprivatization_repeal_2_desc:0 "$resolution_defenseprivatization_repeal_1_desc$"
+ resolution_defenseprivatization_repeal_3:0 "§R废除$resolution_defenseprivatization_condottieri$§!"
+ resolution_defenseprivatization_repeal_3_desc:0 "$resolution_defenseprivatization_repeal_1_desc$"
+ resolution_defenseprivatization_repeal_4:0 "§R废除$resolution_defenseprivatization_security_business$§!"
+ resolution_defenseprivatization_repeal_4_desc:0 "$resolution_defenseprivatization_repeal_1_desc$"
+ resolution_defenseprivatization_repeal_5:0 "§R废除$resolution_defenseprivatization_corporate_warlords$§!"
+ resolution_defenseprivatization_repeal_5_desc:0 "$resolution_defenseprivatization_repeal_1_desc$"
+
+ resolution_defenseprivatization_defense_contracts:0 "安全承包商"
+ resolution_defenseprivatization_defense_contracts_desc:0 "为了星系的安全事务，我们应当向独立安全机构投资资源。这些训练有素、去政治化的专家可以帮助[global_event_country.GetGalCommunityOrGalImperium]的成员国组织防御。"
+ resolution_defenseprivatization_private_support_troops:0 "大有可为的保护"
+ resolution_defenseprivatization_private_support_troops_desc:0 "由于冲突规模的升级，私人安保团队需要升级武力以继续完成他们一直以来做得最为出色的工作：保护[global_event_country.GetGalCommunityOrGalImperium]的安全。"
+ resolution_defenseprivatization_condottieri:0 "中立防御者"
+ resolution_defenseprivatization_condottieri_desc:0 "战争或许是不可避免的，但是连带伤害并非是这样。通过将这方面的信任交给擅长防守的专家，[global_event_country.GetGalCommunityOrGalImperium]想必肯定可以显著地减少被报道的战争暴行。"
+ resolution_defenseprivatization_security_business:0 "星系风险管控"
+ resolution_defenseprivatization_security_business_desc:0 "尽管我们作了最大的努力，暴力的意识形态冲突依然在激化星系的局势。这些帝国不断地证明它们自己很喜欢就一些小的口角挑起争端。对它们的私人武装进行管制，就能让中立的防卫合同商更加有效率地执行维和行动。"
+ resolution_defenseprivatization_corporate_warlords:0 "企业维和"
+ resolution_defenseprivatization_corporate_warlords_desc:0 "“$enclave.235.4.desc$”"
+
+ resolution_defenseprivatization_repeal_1_effect_success:0 "废除§Y$resolution_defenseprivatization_defense_contracts$§!议案。"
+ resolution_defenseprivatization_repeal_2_effect_success:0 "废除§Y$resolution_defenseprivatization_private_support_troops$§!议案，保留§Y$resolution_defenseprivatization_defense_contracts$§!成为星系法。"
+ resolution_defenseprivatization_repeal_3_effect_success:0 "废除§Y$resolution_defenseprivatization_condottieri$§!议案，保留§Y$resolution_defenseprivatization_private_support_troops$§!成为星系法。"
+ resolution_defenseprivatization_repeal_4_effect_success:0 "废除§Y$resolution_defenseprivatization_security_business$§!议案，保留§Y$resolution_defenseprivatization_condottieri$§!成为星系法。"
+ resolution_defenseprivatization_repeal_5_effect_success:0 "废除§Y$resolution_defenseprivatization_corporate_warlords$§!议案，保留§Y$resolution_defenseprivatization_security_business$§!成为星系法。"
+ resolution_defenseprivatization_defense_contracts_tooltip:1 "每个§Y佣兵城邦§!获得§G+10§!海军容量。\n支付§Y佣兵红利§!将更为频繁。\n受雇§Y佣兵舰队§!占据的海军容量节省§G5%§!，但能量币维护费§R+10%§!。"
+ resolution_defenseprivatization_private_support_troops_tooltip:1 "每个§Y佣兵城邦§!获得§G+20§!海军容量。\n支付§Y佣兵红利§!将更为频繁。\n受雇§Y佣兵舰队§!占据的海军容量节省§G10%§!，但能量币维护费§R+20%§!。"
+ resolution_defenseprivatization_condottieri_tooltip:1 "每个§Y佣兵城邦§!获得§G+30§!海军容量。\n支付§Y佣兵红利§!将更为频繁。\n受雇§Y佣兵舰队§!占据的海军容量节省§G15%§!，但能量币维护费§R+30%§!。\n\n$resolution_defenseprivatization_breach$"
+ resolution_defenseprivatization_security_business_tooltip:1 "每个§Y佣兵城邦§!获得§G+40§!海军容量。\n支付§Y佣兵红利§!将更为频繁。\n受雇§Y佣兵舰队§!占据的海军容量节省§G20%§!，但能量币维护费§R+40%§!。\n一支§Y佣兵舰队§!受雇时§G+20%§!£diplo_weight£§Y外交权重§!。\n\n$resolution_defenseprivatization_breach$"
+ resolution_defenseprivatization_corporate_warlords_tooltip:1 "每个§Y佣兵城邦§!获得§G+50§!海军容量。\n支付§Y佣兵红利§!将更为频繁。\n受雇§Y佣兵舰队§!占据的海军容量节省§G25%§!，但能量币维护费§R+50%§!。\n一支§Y佣兵舰队§!受雇时§G+40%§!£diplo_weight£§Y外交权重§!。\n\n§R禁止§!§Y不进行舰队雇佣§!。"
+
+ resolution_defenseprivatization_breach:0 "§R禁止§!§Y与任何受雇的佣兵城邦开战§!。"
+ resolution_defenseprivatization_defense_contracts_merc_naval_cap:0 "议案产生的海军容量"
+ resolution_defenseprivatization_private_support_troops_merc_naval_cap:0 "$resolution_defenseprivatization_defense_contracts_merc_naval_cap$"
+ resolution_defenseprivatization_condottieri_merc_naval_cap:0 "$resolution_defenseprivatization_defense_contracts_merc_naval_cap$"
+ resolution_defenseprivatization_security_business_merc_naval_cap:0 "$resolution_defenseprivatization_defense_contracts_merc_naval_cap$"
+ resolution_defenseprivatization_corporate_warlords_merc_naval_cap:0 "$resolution_defenseprivatization_defense_contracts_merc_naval_cap$"
+ resolution_defenseprivatization_security_business_merc_hired:0 "$resolution_defenseprivatization_security_business$"
+ resolution_defenseprivatization_corporate_warlords_merc_hired:0 "$resolution_defenseprivatization_corporate_warlords$"
+
+ # Suzerains & Sovereignty
+ not_allowed_for_galcom_resolution:0 "§R该条款被星海共同体议案禁止。§!"
+ galcom_tooltip_no_independent_sensors:0 "在与星海共同体成员的协议中，§Y$subject_does_not_get_sensors$§!不再是有效条款。"
+ galcom_tooltip_no_independent_diplomacy:0 "在与星海共同体成员的协议中，§Y$subject_can_do_diplomacy$§!不再是有效条款。"
+ galcom_tooltip_no_integration_permitted:0 "在与星海共同体成员的协议中，§Y$subject_can_be_integrated$§!不再是有效条款。"
+ galcom_tooltip_no_expansion_prohibited:0 "在与星海共同体成员的协议中，§Y$subject_cannot_expand$§!不再是有效条款。"
+ galcom_tooltip_no_expansion_regulated:0 "在与星海共同体成员的协议中，§Y$subject_can_expand_with_tithe$§!不再是有效条款。"
+ galcom_tooltip_no_limited_diplomacy:0 "在与星海共同体成员的协议中，§Y$subject_can_not_do_diplomacy$§!不再是有效条款。"
+ galcom_tooltip_no_holdings_3:0 "在与星海共同体成员的协议中，§Y地产限制（3）§!不再是有效条款。"
+ galcom_tooltip_no_holdings_4:0 "在与星海共同体成员的协议中，§Y地产限制（4）§!不再是有效条款。"
+ galcom_tooltip_strengthened_specialists:0 "§Y戍邦§!有改良型恒星基地和防御平台。\n§Y学邦§!有改良的§Y行星传感器§!。\n§Y勘探邦§!有改良的§Y资源探察§!。"
+
+ galcom_tooltip_ethics_tier_1:0 "附庸拥有§Y25%§!向宗主的极端思潮的吸引力。"
+ galcom_tooltip_ethics_tier_2:0 "附庸拥有§Y50%§!向宗主的极端思潮的吸引力。"
+ galcom_tooltip_ethics_tier_3:0 "附庸拥有§Y75%§!向宗主的极端思潮的吸引力。"
+
+ galcom_is_subject:0 "是附庸国"
+ galcom_is_overlord:0 "是宗主国"
+
+ suzerains_sovereignty:1 "宗主国与统治权"
+
+ resolution_category_intergalacticdirective:0 "星系间指令"
+ resolution_category_bureaucraticsurveillance:0 "官僚监视"
+
+ resolution_intergalacticdirective_regulated_growth:0 "受控增长"
+ resolution_intergalacticdirective_regulated_growth_desc:0 "通过规范成员国的边境，我们可以让星系对所有人都变得更安全和公平。尽管有些人可能会觉得官僚主义令人窒息，但这是为了我们所有人的利益。"
+ resolution_intergalacticdirective_ensured_sovereignty:0 "确保主权"
+ resolution_intergalacticdirective_ensured_sovereignty_desc:0 "星海共同体会积极行动起来，通过指令保障其成员国的主权，特别是那些主权和领土完整遭受其他帝国破坏的国家。"
+ resolution_intergalacticdirective_a_voice_for_all:0 "万众之音"
+ resolution_intergalacticdirective_a_voice_for_all_desc:0 "这份提案会保证星海共同体的每一位成员对自己帝国的未来都能够发声。"
+
+ resolution_intergalacticdirective_repeal_1:0 "§R废除$resolution_intergalacticdirective_regulated_growth$§!"
+ resolution_intergalacticdirective_repeal_1_desc:0 "尽管一个帝国要求其边境受到尊重是一件理所当然的事情，但星海共同体近期强制执行的指令变得有一些矫枉过正、过分迂腐了。为了确保官僚系统能够顺利运转，是时候废除其中的一些命令了。"
+ resolution_intergalacticdirective_repeal_2:0 "§R废除$resolution_intergalacticdirective_ensured_sovereignty$§!"
+ resolution_intergalacticdirective_repeal_2_desc:0 "$resolution_intergalacticdirective_repeal_1_desc$"
+ resolution_intergalacticdirective_repeal_3:0 "§R废除$resolution_intergalacticdirective_a_voice_for_all$§!"
+ resolution_intergalacticdirective_repeal_3_desc:0 "$resolution_intergalacticdirective_repeal_1_desc$"
+
+ resolution_bureaucraticsurveillance_administrative_insight:0 "行政洞见"
+ resolution_bureaucraticsurveillance_administrative_insight_desc:0 "作为我们精简星海官僚系统的努力，我们在参议院推行了一项更加先进的行政架构，专门面向那些相互之间已经有签署外交协议的成员国。"
+ resolution_bureaucraticsurveillance_borderless_authority:0 "无界权威机构"
+ resolution_bureaucraticsurveillance_borderless_authority_desc:0 "作为我们精简内政官僚系统的进一步深化改革，必须要赋予参议院中的强大成员国更大的权威。"
+ resolution_bureaucraticsurveillance_personal_oversight:0 "个人失察"
+ resolution_bureaucraticsurveillance_personal_oversight_desc:0 "尽管不得不承认，在这个过程中某一些国家的主权被强迫剥蚀，但我们消除官僚主义繁文缛节的努力极大地改善了参议院的工作效率！"
+
+ resolution_bureaucraticsurveillance_repeal_1:0 "§R废除$resolution_bureaucraticsurveillance_administrative_insight$§!"
+ resolution_bureaucraticsurveillance_repeal_1_desc:0 "我们专注于消除官僚上的繁文缛节，尽管取得了一定的成功，却导致数个成员国抱怨自己的国家主权遭到了侵蚀。他们现在正在提交一份议案，要求恢复部分已经失去的独立自主权利。"
+ resolution_bureaucraticsurveillance_repeal_2:0 "§R废除$resolution_bureaucraticsurveillance_borderless_authority$§!"
+ resolution_bureaucraticsurveillance_repeal_2_desc:0 "$resolution_bureaucraticsurveillance_repeal_1_desc$"
+ resolution_bureaucraticsurveillance_repeal_3:0 "§R废除$resolution_bureaucraticsurveillance_personal_oversight$§!"
+ resolution_bureaucraticsurveillance_repeal_3_desc:0 "$resolution_bureaucraticsurveillance_repeal_1_desc$"
+
+ #########################
+ # Triggers & Effects
+ #########################
+
+ count_available_debris_trigger:0 "可用残骸计数"
+ effect_random_available_debris:0 "随机可用残骸"
+ DEBRIS_OWNERSHIP_PASSED_TO:0 "残骸所有权传递给$COUNTRY|Y$"
+
+
+ #########################
+ # Modifiers
+ #########################
+
+ MOD_SHIP_FRIENDLY_TERRITORY_SHIELD_ADD:0 "位于友方恒星系$MOD_SHIP_SHIELD_ADD$"
+ MOD_SHIP_FRIENDLY_TERRITORY_SHIELD_MULT:0 "位于友方恒星系$MOD_SHIP_SHIELD_MULT$"
+ MOD_SHIP_FRIENDLY_TERRITORY_EVASION_ADD:0 "位于友方恒星系$MOD_SHIP_EVASION_ADD$"
+ MOD_SHIP_FRIENDLY_TERRITORY_EVASION_MULT:0 "位于友方恒星系$MOD_SHIP_EVASION_MULT$"
+ MOD_SHIP_FRIENDLY_TERRITORY_ACCURACY_ADD:0 "位于友方恒星系$MOD_SHIP_ACCURACY_ADD$"
+ MOD_SHIP_FRIENDLY_TERRITORY_ACCURACY_MULT:0 "位于友方恒星系$MOD_SHIP_ACCURACY_MULT$"
+ MOD_SHIP_FRIENDLY_TERRITORY_TRACKING_ADD:0 "位于友方恒星系$MOD_SHIP_TRACKING_ADD$"
+ MOD_SHIP_FRIENDLY_TERRITORY_TRACKING_MULT:0 "位于友方恒星系$MOD_SHIP_TRACKING_MULT$"
+ MOD_SHIP_FRIENDLY_TERRITORY_FIRE_RATE_MULT:0 "位于友方恒星系$MOD_SHIP_FIRE_RATE_MULT$"
+ subject_loyalty_effects:0 "附属"
+ naval_cap_unmodified:0 "$subject_loyalty_effects$"
+
+ resolution_galcom_ethic_modifier:0 "$resolution_category_bureaucraticsurveillance$"
+ resolution_galcom_ethic_modifier_desc:0 "受星海共同体的援助，这个帝国的宗主国对其附属国的内部事务有了更好的理解和更牢固的权威。"
+
+ resolution_galcom_spiritualist_ethic_modifier_tier_1:0 "$resolution_galcom_ethic_modifier$"
+ resolution_galcom_spiritualist_ethic_modifier_tier_1_desc:0 "$resolution_galcom_ethic_modifier_desc$"
+ resolution_galcom_spiritualist_ethic_modifier_tier_2:0 "$resolution_galcom_ethic_modifier$"
+ resolution_galcom_spiritualist_ethic_modifier_tier_2_desc:0 "$resolution_galcom_ethic_modifier_desc$"
+ resolution_galcom_spiritualist_ethic_modifier_tier_3:0 "$resolution_galcom_ethic_modifier$"
+ resolution_galcom_spiritualist_ethic_modifier_tier_3_desc:0 "$resolution_galcom_ethic_modifier_desc$"
+
+ resolution_galcom_materialist_ethic_modifier_tier_1:0 "$resolution_galcom_ethic_modifier$"
+ resolution_galcom_materialist_ethic_modifier_tier_1_desc:0 "$resolution_galcom_ethic_modifier_desc$"
+ resolution_galcom_materialist_ethic_modifier_tier_2:0 "$resolution_galcom_ethic_modifier$"
+ resolution_galcom_materialist_ethic_modifier_tier_2_desc:0 "$resolution_galcom_ethic_modifier_desc$"
+ resolution_galcom_materialist_ethic_modifier_tier_3:0 "$resolution_galcom_ethic_modifier$"
+ resolution_galcom_materialist_ethic_modifier_tier_3_desc:0 "$resolution_galcom_ethic_modifier_desc$"
+
+ resolution_galcom_authoritarian_ethic_modifier_tier_1:0 "$resolution_galcom_ethic_modifier$"
+ resolution_galcom_authoritarian_ethic_modifier_tier_1_desc:0 "$resolution_galcom_ethic_modifier_desc$"
+ resolution_galcom_authoritarian_ethic_modifier_tier_2:0 "$resolution_galcom_ethic_modifier$"
+ resolution_galcom_authoritarian_ethic_modifier_tier_2_desc:0 "$resolution_galcom_ethic_modifier_desc$"
+ resolution_galcom_authoritarian_ethic_modifier_tier_3:0 "$resolution_galcom_ethic_modifier$"
+ resolution_galcom_authoritarian_ethic_modifier_tier_3_desc:0 "$resolution_galcom_ethic_modifier_desc$"
+
+ resolution_galcom_egalitarian_ethic_modifier_tier_1:0 "$resolution_galcom_ethic_modifier$"
+ resolution_galcom_egalitarian_ethic_modifier_tier_1_desc:0 "$resolution_galcom_ethic_modifier_desc$"
+ resolution_galcom_egalitarian_ethic_modifier_tier_2:0 "$resolution_galcom_ethic_modifier$"
+ resolution_galcom_egalitarian_ethic_modifier_tier_2_desc:0 "$resolution_galcom_ethic_modifier_desc$"
+ resolution_galcom_egalitarian_ethic_modifier_tier_3:0 "$resolution_galcom_ethic_modifier$"
+ resolution_galcom_egalitarian_ethic_modifier_tier_3_desc:0 "$resolution_galcom_ethic_modifier_desc$"
+
+ resolution_galcom_xenophile_ethic_modifier_tier_1:0 "$resolution_galcom_ethic_modifier$"
+ resolution_galcom_xenophile_ethic_modifier_tier_1_desc:0 "$resolution_galcom_ethic_modifier_desc$"
+ resolution_galcom_xenophile_ethic_modifier_tier_2:0 "$resolution_galcom_ethic_modifier$"
+ resolution_galcom_xenophile_ethic_modifier_tier_2_desc:0 "$resolution_galcom_ethic_modifier_desc$"
+ resolution_galcom_xenophile_ethic_modifier_tier_3:0 "$resolution_galcom_ethic_modifier$"
+ resolution_galcom_xenophile_ethic_modifier_tier_3_desc:0 "$resolution_galcom_ethic_modifier_desc$"
+
+ resolution_galcom_xenophobe_ethic_modifier_tier_1:0 "$resolution_galcom_ethic_modifier$"
+ resolution_galcom_xenophobe_ethic_modifier_tier_1_desc:0 "$resolution_galcom_ethic_modifier_desc$"
+ resolution_galcom_xenophobe_ethic_modifier_tier_2:0 "$resolution_galcom_ethic_modifier$"
+ resolution_galcom_xenophobe_ethic_modifier_tier_2_desc:0 "$resolution_galcom_ethic_modifier_desc$"
+ resolution_galcom_xenophobe_ethic_modifier_tier_3:0 "$resolution_galcom_ethic_modifier$"
+ resolution_galcom_xenophobe_ethic_modifier_tier_3_desc:0 "$resolution_galcom_ethic_modifier_desc$"
+
+ resolution_galcom_militarist_ethic_modifier_tier_1:0 "$resolution_galcom_ethic_modifier$"
+ resolution_galcom_militarist_ethic_modifier_tier_1_desc:0 "$resolution_galcom_ethic_modifier_desc$"
+ resolution_galcom_militarist_ethic_modifier_tier_2:0 "$resolution_galcom_ethic_modifier$"
+ resolution_galcom_militarist_ethic_modifier_tier_2_desc:0 "$resolution_galcom_ethic_modifier_desc$"
+ resolution_galcom_militarist_ethic_modifier_tier_3:0 "$resolution_galcom_ethic_modifier$"
+ resolution_galcom_militarist_ethic_modifier_tier_3_desc:0 "$resolution_galcom_ethic_modifier_desc$"
+
+ resolution_galcom_pacifist_ethic_modifier_tier_1:0 "$resolution_galcom_ethic_modifier$"
+ resolution_galcom_pacifist_ethic_modifier_tier_1_desc:0 "$resolution_galcom_ethic_modifier_desc$"
+ resolution_galcom_pacifist_ethic_modifier_tier_2:0 "$resolution_galcom_ethic_modifier$"
+ resolution_galcom_pacifist_ethic_modifier_tier_2_desc:0 "$resolution_galcom_ethic_modifier_desc$"
+ resolution_galcom_pacifist_ethic_modifier_tier_3:0 "$resolution_galcom_ethic_modifier$"
+ resolution_galcom_pacifist_ethic_modifier_tier_3_desc:0 "$resolution_galcom_ethic_modifier_desc$"
+
+ resolution_galcom_bulwark_modifier:0 "$resolution_intergalacticdirective_a_voice_for_all$"
+ resolution_galcom_bulwark_modifier_desc:0 "在星海共同体法律和政策的支持下，他们的力量增强了。"
+
+ #########################
+ # Opinion Modifiers
+ #########################
+ opinion_imperial_overlord_ai_opinion:0 "仁厚的宗主"
+ opinion_imperial_vassal_ai_opinion:0 "近期为同侪"
+ opinion_imperial_vassal_new_overlord:0 "新守护者"
+ opinion_imperial_vassal_refused_overlordship:0 "拒绝宗主地位"
+ opinion_imperial_vassal_grateful_response_overlord_opinion:0 "感激"
+ opinion_imperial_vassal_harsh_response_overlord_opinion:0 "失望"
+
+ ####################
+ # Assorted Tooltips
+ ####################
+
+ dialog_friendly_tt:0 "我们会采取§G友好§!态势。"
+ dialog_neutral_tt:0 "我们会采取§Y中立§!态势。"
+ dialog_wary_tt:0 "我们会采取§Y谨慎§!态势。"
+ dialog_hostile_tt:0 "我们会采取§R敌对§!态势。"
+
+ is_a_signatory_vassal:0 "是条约国。"
+ is_not_a_signatory_vassal:0 "不是条约国。"
+ is_a_signatory_vassal_success:0 "$TRIGGER_PASS$$is_a_signatory_vassal$"
+ is_a_signatory_vassal_fail:0 "$TRIGGER_FAIL$$is_a_signatory_vassal$"
+ is_not_a_signatory_vassal_success:0 "$TRIGGER_PASS$$is_not_a_signatory_vassal$"
+ is_not_a_signatory_vassal_fail:0 "$TRIGGER_FAIL$$is_not_a_signatory_vassal$"
+
+ same_federation_as_overlord:0 "$TRIGGER_FAIL$附属不能在宗主不在联邦的情况下加入联邦"
+ requires_not_subject_or_subject_asking_overlord:0 "$TRIGGER_FAIL$§R附属只能询问宗主能否加入宗主所在的联邦§!"
+ requires_not_subject_or_overlord_asking:0 "$TRIGGER_FAIL$§R附属只能被宗主邀请其所在加入联邦§!"
+ requires_not_subject_to_start_federation:0 "$TRIGGER_FAIL$§R附属只能和自己的宗主一起组件联邦§!"
+ requires_not_guaranteeing_independence:0 "$TRIGGER_FAIL$§R在提议归顺之前，我们必须收回对他们的独立保障。§!"
+
+ STARBASE_AURA_MERCENARY_GARRISON:0 "雇佣兵军营"
+ aura_starbase_mercenary_garrison:0 "防御性光环—雇佣兵军营"
+
+ # Ambient Object
+ central_crystal_gateway:0 "内星门"
+ central_crystal_gateway_desc:0 "一道神秘的星门，似乎和星系中的任何星门都切断了连结。"
+
+ ##################
+ # Civics Changes
+ ##################
+
+ civic_private_military_companies_ove:0 "$civic_private_military_companies$"
+ civic_private_military_companies_ove_desc:0 "$civic_private_military_companies_desc$"
+ civic_naval_contractors_ove:0 "$civic_naval_contractors$"
+ civic_naval_contractors_ove_desc:0 "$civic_naval_contractors_desc$"
+ civic_barbaric_despoilers_ove:0 "$civic_barbaric_despoilers$"
+ civic_barbaric_despoilers_ove_desc:0 "$civic_barbaric_despoilers_desc$"
+ civic_warrior_culture_ove:0 "$civic_warrior_culture$"
+ civic_warrior_culture_ove_desc:0 "$civic_warrior_culture_desc$"
+
+ ##################
+ # New Ascension Perk
+ ##################
+
+ ap_lord_of_war:0 "战争之王"
+ ap_lord_of_war_desc:0 "有人说战争对生意来说不是好事，但对我们来说战争就是生意。我们的雇佣兵能在战火纷飞的星系中赚得盆满钵满，而我们正好也能和他们一起“共同富裕”。"
+ ap_lord_of_war_tooltip:0 "受我们赞助的§Y佣兵城邦§!会更加频繁地支付§Y红利§!。"
+
+ ################
+ # Initializers #
+ ################
+ NAME_Auge:0 "奥治"
+ NAME_Anatole:0 "阿纳托勒"
+ NAME_Mousika:0 "牟希卡"
+ NAME_Mesembria:0 "墨森布里亚"
+ NAME_Dysis:0 "戴西斯"
+ NAME_Hesperis:0 "赫斯珀里斯"
+ NAME_Arktos:0 "阿克托斯"
+
+
+# === [LocEditor:OrphanedKeys] Keys that do not exist in English ===
+ d_subterranean_mines:0 "地下矿物"
+ d_subterranean_mines_desc:0 "该文明居于行星的地底，这让他们能接触到这个星球更多的矿物。"
+ subterranean_nation_modifier:0 "地下国家"
+ subterranean_nation_modifier_desc:0 ""
+ leader_trait_subterranean_archaeology:0 "地下专精"
+ leader_trait_subterranean_archaeology_desc:0 "该领导非常熟悉地下开采的工作。"

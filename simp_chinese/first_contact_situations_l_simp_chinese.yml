@@ -1,0 +1,337 @@
+﻿l_simp_chinese:
+ pre_ftl_tech_progress_situation:0 "科技进步"
+ pre_ftl_tech_progress_situation_type:0 "$pre_ftl_tech_progress_situation$"
+ pre_ftl_tech_progress_situation_monthly_change_tooltip:0 "$situation_monthly_change_tooltip_no_control$"
+ pre_ftl_tech_progress_situation_desc:0 "这个文明正逐步迈进全新的科技纪元。"
+ acquired_tech:0 "获得科技"
+ early_age:0 "前期"
+ mid_age:0 "中期"
+ late_age:0 "后期"
+ technological_breakthrough:0 "科技突破"
+ technological_setback:0 "科技倒退"
+ tech_frozen:0 "科技发展冻结"
+ stratified_technological_enlightenment:0 "分层科技发展条约"
+ open_technological_enlightenment:0 "开放科技发展条约"
+
+ ### Plague Situation
+ situation_pre_ftl_plague:0 "动物传染病"
+ situation_pre_ftl_plague_type:0 "动物传染病"
+ situation_pre_ftl_plague_desc:1 "一种全新的人畜共患疾病已经出现在[Target.GetName]上。由于没有天生的免疫力，也没有对抗感染所需的医疗技术，大量人群正迅速染病受苦，并导致死亡。"
+ situation_pre_ftl_plague_monthly_change_tooltip:0 "$situation_monthly_change_tooltip_no_control$"
+ situation_pre_ftl_plague_outcome_tooltip:0 "无论哪种形式，这场疫情终究会结束的。但是灾疫之后是什么样，则取决于我们的选择。"
+
+ # Stages
+ situation_plague_stage_one:0 "第一波"
+ situation_plague_stage_two:0 "第二波"
+ situation_plague_stage_three:0 "热病爆发"
+
+ approach_watch_learn:0 "观察学习"
+ approach_provide_aid:0 "提供救助"
+ approach_promote_disease:0 "推动疾病蔓延"
+
+ ## Events
+
+ # Starting event
+ preftl.2001.name:0 "大爆发"
+ preftl.2001.can_not_help.desc:1 "$preftl.2001.can_help.desc$\n\n我们的政策是永远不去干涉[owner.GetPreFTLLower]星球，但是当这些人受苦的时候，我们真的可以袖手旁观吗？"
+ preftl.2001.can_help.desc:1 "一种全新的人畜共患疾病已经出现在[from.owner.capital_scope.GetName]上。由于没有对抗感染所需的医疗技术，大量人群正迅速染病受苦，并导致死亡。"
+ preftl.2001.perpetrator.desc:1 "我们将疾病投放到毫无戒心的民众中，现在疫情已经扩散到我们无法控制的程度。由于没有对抗感染所需的医疗技术，大量人群正迅速染病受苦，并导致死亡。"
+ preftl.2001.a:0 "观察学习"
+ approach_watch_tooltip:0 "观察这样的局势应该能为我们提供一些有趣的见解。一旦选定，我们将无法改变针对该局势的应对方案。"
+ approach_singularity_tooltip_fail:0 "改弦易辙，为时已晚。"
+ preftl.2001.b:0 "提供救助"
+ approach_aid_tooltip:0 "为有需要的人提供帮助是我们义不容辞的责任。一旦选定，我们将无法改变针对该局势的应对方案。"
+ preftl.2001.c:0 "推动疾病蔓延"
+ approach_promote_disease_tooltip:0 "瘟疫提供了我们一个绝佳的进行研究的机会，我们甚至有机会一口气净化整个行星上的感性生命体。一旦选定，我们将无法改变针对该局势的应对方案。"
+
+ preftl.2006.name:0 "宗教狂热"
+ preftl.2006.desc.intro:0 "[Target.GetName]上的人畜共患疾病继续蔓延。到现在，这个行星上的大多数主要定居点都被感染了。随着死亡率的不断上升，这场灾难的泛滥"
+ preftl.2006.desc:0 "$preftl.2006.desc.intro$又引发了宗教内部的派系分裂，以及末日邪教的爆炸性扩散。"
+ preftl.2006.a:0 "引导他们加入真信。"
+ plague_01_spiritualist:0 "热忱的信徒"
+ plague_01_spiritualist_desc:0 "在最严酷的时期，迷失之徒在精神上寻找慰藉。"
+ plague_01_militarist:0 "$plague_01_spiritualist$"
+ plague_01_militarist_desc:0 "$plague_01_spiritualist_desc$"
+
+
+ preftl.2007.name:0 "军阀的崛起"
+ preftl.2007.desc:0 "$preftl.2006.desc.intro$是史无前例的。毫不奇怪的是，由于权力的真空，无数军阀趁势而起。"
+ preftl.2007.a:0 "扶持最强者。"
+
+ preftl.2008.name:0 "仁慈天使"
+ preftl.2008.desc:0 "我们帮助防止疾病在[Target.GetName]上传播的所作所为并非没有引起他人的注意：当地居民已经开始谈论“天使”，认定这些开明的存在已经出现在他们中间，提供心灵安慰，并帮助人们摆脱痛苦。"
+ preftl.2008.a:0 "类似这样的事情注定会发生。"
+
+ preftl.2009.name:0 "恶魔般的入侵者"
+ preftl.2009.desc:0 "我们在[Target.GetName]上遏制瘟疫蔓延的所作所为引起了人们的注意：当地居民开始谈论“恶魔”，认定有一些不神圣的生物出现在他们中间，用亵渎的魔法对抗疾病。"
+
+ preftl.2010.name:0 "传染病肆虐"
+ preftl.2010.desc:0 "我们在[Target.GetName]上促进瘟疫传播的努力现在产生了一定的成果。通过对当地食物来源进行多处污染，传染病正在大肆蔓延。到目前为止，这个星球上的每一个定居点都被感染了，而活着的人太虚弱，根本无法对死者进行处理。"
+ preftl.2010.a:0 "够了。这样的苦难必须终止。"
+ tt_end_the_suffering:0 "终止瘟疫会暴露我们的存在，还需要投入大量的资源。"
+ d_mass_graves:0 "集体坟墓"
+
+ preftl.2011.name:0 "适者生存"
+ preftl.2011.desc:0 "我们在[Target.GetName]上散布瘟疫的工作已经取得了成果。瘟疫横行，死人被随意丢在街上任凭腐烂。\n\n然而，相当比例的人口拥有对该疾病的自然免疫力。对他们基因组的进一步研究可能对我们自己的免疫学研究有帮助。"
+ preftl.2011.a:0 "取得样本。"
+
+ preftl.2020.name.outro:0 "继续提供帮助的同时还要遮掩我们的真实本质，这需要投入极大量的资源。"
+ preftl.2020.name:0 "需求超量"
+ preftl.2020.desc:0 "人们继续口口相传着在[Target.GetName]上工作的奇迹“天使”。难民们已经来到我们的医疗保障供应处，吵着寻求援助。$preftl.2020.name.outro$"
+ preftl.2020.a:0 "保密是第一位。"
+ preftl.2020.b:0 "告诉他们真相。"
+
+ preftl.2021.name:0 "信仰的力量"
+ preftl.2021.desc:0 "人们继续口口相传着在[Target.GetName]上工作的“恶魔”。狂热信徒已经来到我们的医疗保障供应处，吵着寻求鲜血供应。$preftl.2020.name.outro$"
+
+ preftl.2025.name:0 "救世主综合征"
+ preftl.2025.desc:0 "[Target.GetName]出现了许多所谓的救世主。这些先知承诺“神圣的救赎”，进而吸引了大批追随者。在疾病肆虐的基础上，相互竞争的教派之间产生的暴力冲突也越来越普遍。"
+ preftl.2025.a:0 "通往圣识的道路是曲折的。"
+
+ preftl.2026.name:0 "真先知"
+ preftl.2026.desc:0 "终于，[Target.GetName]上的瘟疫走到了尽头，我们在那里的工作得到了回报：幸存者们团结在一位真信的先知周围。为了表示感谢，神职部门愿意向我们派遣一名工作上的使者，据说他作为总督的能力是非常强大的。"
+ preftl.2026.a:0 "赞美圣灵。"
+ plague_03_spiritualist:0 "结果正名"
+ plague_03_spiritualist_desc:0 "又一个社会唤醒了真正的信仰。我们的启示会响彻整个星系。"
+ plague_03_militarist:0 "$plague_03_spiritualist$"
+ plague_03_militarist_desc:0 "在这个严酷的星系中，又有一颗行星拥有了自卫的能力。"
+ true_prophet_tt:0 "一名能力出众的总督同意加入我们帝国。"
+ leader_trait_zealot:0 "狂热教众"
+ leader_trait_true_prophet_desc:0 "尽管凝视过深渊，但这位总督的信仰从不曾动摇。"
+ leader_trait_zealot_desc:0 "因曾经直面深渊，该领袖的信仰已坚不可摧。"
+
+ preftl.2030.name:0 "褴褛之旗"
+ preftl.2030.desc:0 "在[Target.GetName]，人们筋疲力尽、遭受饥馑和疾病，因为苦难和无尽的战争濒临崩溃，曲曲折折地缓步迈向一个不确定的未来。"
+ plague_05:0 "褴褛之旗"
+ plague_05_desc:0 "当天灾成为常态，罹难者不战则亡。"
+
+ preftl.2031.name:0 "卓越之帜"
+ preftl.2031.desc:0 "[Target.GetName]上的瘟疫已经走到了尽头，我们支持的派系已经成功地将全体人民统一在同一面旗帜下。为了感谢我们所作的工作，执政的军政府提出向我们派遣一名陆军将领，此人在战场上的技能已被证明是非常强大的。"
+ preftl.2031.a:0 "强者即为正义。"
+ brilliant_banner_tt:0 "一名能力出众的陆军将领同意加入我们帝国。"
+ leader_trait_plague_hardened:0 "战疫之将"
+ leader_trait_plague_hardened_desc:0 "尽管凝视过深渊，但这位陆军将领却能做到为人热情，温润如玉。"
+
+ preftl.2035.name:0 "天启现世"
+ preftl.2035.desc:0 "由于我们行动迅速的散布，[Target.GetName]上的瘟疫已经使人口所剩无几。那些幸存的少数人亲眼目睹着他们文明的崩溃。现在只需要轻轻的一脚，就可以将他们推下悬崖。\n\n我们已经准备好继承一个空旷的星球。"
+
+ preftl.2040.name:0 "加强免疫"
+ preftl.2040.desc:0 "我们从[Target.GetName]上获得的样本已经有了科学方面的回报；这种突变不仅能够提供对瘟疫的免疫力，还能抵御大多数已知形式的传染。\n\n将这项研究转化为生产应用还需要时间，但初步的结果已经相当令人鼓舞。"
+ 
+ preftl.2049.name:0 "局势变换"
+ preftl.2049.desc:0 "[Target.GetName]上瞬息万变的局势让我们无法继续监视正在进行的瘟疫。到目前为止，该行星上的所有研究项目都中断了。"
+
+ preftl.2063.intro:0 "在[Target.GetName]上，低沉的风吹过空荡荡的平原。一度住满全家老小的房屋，现在已了无生机，凄凉无比。"
+ preftl.2063.name:0 "寂静的星球"
+ preftl.2063.desc:0 "$preftl.2063.intro$\n\n这颗行星上的人口已经被消灭殆尽。最终，疫情完成了自己的使命。"
+
+ preftl.2051.name:0 "死去的星球"
+ preftl.2051.desc:0 "$preftl.2063.intro$我们的工作完成了：[Target.GetName]上的人口已经彻底消灭殆尽，这颗星球随时等待我们夺取。"
+ dead_world_tt:0 "[Target.GetName]的人口被消灭殆尽。"
+
+ preftl.2062.name:0 "大规模死亡"
+ preftl.2062.desc:0 "随着疫情继续肆虐[Target.GetName]，死者和正在死去的人的数目令人震惊。\n\n这种疫病没有治愈手段。人们遭受的痛苦只能减缓，无法避免。"
+
+ preftl.2065.name:0 "思想大开放"
+ preftl.2065.desc:0 "我们对[Target.GetName]瘟疫所作的对策已经再也藏不住了。民众现在将他们悲痛的目光转向了天上的星辰。我们已经让他们彻底敞开了思想，直面真相；接下来会发生什么，我们拭目以待。"
+ opinion_plague_situation_01:0 "感激的人民"
+ minds_open_tt:0 "[Target.GetName]的人们对我们的评价提高了。"
+
+ preftl.2070.name:0 "狂热的信仰"
+ preftl.2070.desc:0 "终于，[Target.GetName]上的瘟疫走到了尽头。先知的年代已经终结，一批主流的宗教开始蓬勃发展。随着人们对意义感有了新的任务，对星球的重建工作也开始有序开展。"
+
+ preftl.2075.name:0 "战场上的君王"
+ preftl.2075.desc:0 "终于，[Target.GetName]上的瘟疫走到了尽头。军阀的年代已经终结，一批战士社会开始蓬勃发展。出于对能活下来的感激之情，人们开始希望领袖们能够施加强有力和有决断力的统治。"
+
+ preftl.2080.name:0 "感激的人民"
+ preftl.2080.desc:0 "通过孜孜不倦的努力，我们已经成功地遏制了瘟疫对[Target.GetName]能造成的最坏影响。然而，我们存在于这个星球上的真实本质再也无法掩盖了。人们明白他们是被另一个星球所拯救。他们充满了感激之情，将目光转向了星空。"
+ plague_02:0 "感激沐于全身"
+ plague_02_desc:0 "挽救整颗星球，值得歌舞升平。"
+
+ grateful_populace_tt:0 "[Target.GetName]的人们对我们的评价提高了。"
+ 
+ preftl.2085.name:0 "大规模驱魔"
+ preftl.2085.desc:0 "瘟疫对[Target.GetName]能够造成的最严重的影响已经得到控制。然而，幸存者非但没有感激之情，反而对前来污染他们文化的“恶魔般的外来者”充满了义愤填膺。我们的救助人员遭到了针对和污蔑，因此被迫放弃了这个行星。虽然还没有完全意识到真相，但当地居民现在把紧张的目光转向了头顶的星辰。"
+ preftl.2085.a:0 "不知感激的玩意。"
+ plague_04:0 "义愤填膺"
+ plague_04_desc:0 "那些玩意宁肯闭门造车，也不肯接受我们的福泽，反而还嗤之以鼻，今后我们应当更多地关注自身。"
+ opinion_plague_situation_03:0 "不知感激的玩意"
+ mass_exorcism_tt:0 "[Target.GetName]的人们对我们的评价降低了。"
+
+ preftl.2090.name:0 "青春之泉"
+ preftl.2090.desc:0 "[Target.GetName]上的瘟疫终于走到了尽头。更重要的是，我们对人群免疫力增强的研究已经完成，现在必须做出选择：这项研究的成果应该仅应用于我们的统治阶层，还是全体民众？增加我们领袖的寿命当然是一个有吸引力的方案，但心怀感激的民众也有自己的好处。"
+ preftl.2090.desc.hive:0 "[Target.GetName]上的瘟疫终于走到了尽头。更重要的是，我们对人群免疫力增强的研究已经完成。这样的知识当然是有益的，但现在必须做出选择：这项研究的成果应该仅应用于我们的领袖阶层，还是集体中的每一个子个体？"
+ preftl.2090.desc.machine:0 "[Target.GetName]上的瘟疫终于走到了尽头。更重要的是，我们对人群免疫力增强的研究已经完成。这样的知识可以给[Owner.GetName]带来好处。"
+ preftl.2090.a:0 "我们的领袖能够长盛不衰。"
+ preftl.2090.b:1 "我们的人民要放在首位。"
+ opinion_plague_situation_02:0 "持久的感激"
+ young_leaders:0 "重焕青春的领袖层"
+ young_people:0 "重焕青春的群众"
+
+ ### Organic Singularity Situation
+ situation_pre_ftl_singularity:0 "有机奇点"
+ situation_pre_ftl_singularity_type:0 "奇点事件"
+ situation_pre_ftl_singularity_desc:0 "[Target.GetName]上的人们偶然发现了一个新型的物种。这是一种具有处理复杂行动的能力的节点意识，与这种生物的开展互动最终可能会导致有机奇点的出现。"
+ situation_pre_ftl_singularity_monthly_change_tooltip:0 "我们选择的应对方案将会决定这个§Y局势§!的进展速率。"
+
+ approach_watch_singularity:0 "观察学习"
+ approach_watch_singularity_tooltip:0 "观测这个发展过程应该能提供一些有趣的线索。"
+ approach_allow_tooltip:0 "一旦我们决定了应对方案，我们就无法再更改。"
+ approach_prevent_singularity:0 "预防奇点"
+ approach_prevent_singularity_tooltip:0 "预防奇点的出现需要持续地投入资源。一旦选择这个应对方案，我们今后就无法再进行变更。"
+ approach_promote_singularity:0 "鼓励奇点"
+ approach_promote_singularity_tooltip:0 "鼓励奇点的出现需要投入大量资源。一旦选择这个应对方案，我们今后就无法再进行变更。"
+ situation_singularity_stage_one:0 "奇点的出现"
+
+ # Starting event
+ preftl.2101.name:0 "发现节点意识"
+ preftl.2101.desc:0 "[from.owner.GetSpeciesAdj]的探险家在[from.owner.capital_scope.GetName]上发现了一种以前未曾见识过的软体类物种。就其本身而言，这些生物中的每一个都只能勉强算得上是有智慧的。然而，当两个或更多的生物个体通过身体接触结合在一起时，它们会形成一个半意识的节点。理论上，这些节点应该能够在认知能力方面有指数级的增长。\n\n简单地说，[from.owner.capital_scope.GetName]的人们偶然发现了一种生物思维机器。假以时日，这一发现可能预示着有机奇点的到来。"
+ preftl.2101.can_not_help.desc:1 "$preftl.2101.desc$\n\n我们的政策是永远不去干涉[owner.GetPreFTLLower]星球，但是我们真的能够什么都不做，只在一边看着吗？"
+ preftl.2101.a:0 "观察学习"
+ preftl.2101.b:0 "预防奇点"
+ preftl.2101.c:0 "鼓励奇点"
+
+ #Organic Singularity Events
+
+ preftl.2110.name:0 "无知是福"
+ preftl.2110.desc:0 "[Target.GetName]的居民没有意识到迫在眉睫的危险，继续试验最近发现的节点意识，将其计算结果用于从建筑到教育的各个方面。\n\n减缓他们的进展是很困难的一件事，但是通过在行星的水循环中引入一种经过基因强化的病毒，我们应该能够减少单个节点的认知能力。\n\n当然，与任何未经测试的技术一样，这么做存在着未知的风险。"
+ preftl.2110.a:0 "引入病毒。"
+
+ preftl.2115.name:0 "生物计算器"
+ preftl.2115.desc:0 "通过坚持不懈的试验，[Target.GetName]的人民已经开始使用最近发现的节点意识作为基本的思考机器。\n\n现在，这些居民能够完成复杂的数学计算，正以前所未有的速度在科学和技术方面取得突破。"
+ 
+ preftl.2120.name:0 "指数增长"
+ preftl.2120.desc:0 "在[Target.GetName]上实现有机奇点的进展十分迅速。\n\n节点意识已经重新组织了星球上的大部分农业生产，提高了作物产量，改善了生活条件。人们已经开始把他们的决策权委任给生物机器了。"
+ exponential_growth_tt:0 "观测行星上的生活条件得到了翻天覆地的改善。"
+
+ preftl.2125.name:0 "疑云弥漫"
+ preftl.2125.desc:0 "我们在[Target.GetName]上的特工已经将修改过的病毒引入了该行星的水系统。初步报告显示，结点意识的处理能力明显下降。\n\n不幸的是，我们的所作所为引起了注意：一些居民开始低声议论“外部”在施加影响。"
+
+ preftl.2130.name:0 "有机体的田园诗"
+ preftl.2130.desc:0 "[Target.GetName]上的节点意识的接口已达到饱和点。所有的官僚决策都被委托给这个有机的蜂巢意识，其成果是相当瞩目的。\n\n这个行星的经济正在蓬勃发展，人们如今实现的生活水平，上一代人甚至想都无法想象得到。"
+
+ preftl.2135.name:0 "不易的协同"
+ preftl.2135.desc:0 "在[Target.GetName]上，高等水平的意识出现了第一次悸动。然而，很明显，这个节点意识可能有自己的规划宏图。\n\n为了努力“精简”流程，某些基本设施已经被削减。曾经由人工完成的工作越来越自动化，而当地政府发现自己无法（或不愿意）阻止变化的浪潮。\n\n许多居民对他们的星球正在发生的事情越来越感到不安。"
+
+ preftl.2136.name:0 "繁荣的联合"
+ preftl.2136.ftl.desc:0 "[Target.GetName]上的节点意识的增长已经稳定下来。现在很清楚，奇点不会在这个星球上实现。\n\n然而，快速的技术变革已经将[Target.GetName]提升到完全的超光速状态。政府特工旋即夺取了星系并拆除了我们的观察站。"
+ preftl.2136.preftl.desc:0 "[Target.GetName]上的节点意识的增长已经稳定下来。技术和社会生活的进步已经从以前的飞速发展中放缓。\n\n现在很清楚，奇点不会在这个星球上实现——相反，一个完全相互联系的社会已经发展起来，而且这是一个享有广泛的健康和其他物质利益的社会。"
+ thriving_union_tt:0 "[Target.GetName]上的文明在科技和社会进步方面达到了全新的层次。"
+ preftl.2136.a:0 "我们对星系的所有权不容忽视。"
+ preftl.2136.b:0 "这是他们文明伟大的一天。"
+
+ preftl.2140.name:1 "奇点政府"
+ preftl.2140.desc:1 "[Target.GetName]上出现了奇点。\n\n经过多年的指数式增长，今天节点意识已经彻底获得了心智，并不失时机地巩固了其权威。随着行星上的人们沦为傀儡状态，大部分人已被迫屈从。他们现在只为蜂巢思维效力了。"
+ preftl.2140.a:0 "自然规律依然有效。"
+
+ preftl.2145.name:0 "替代方案"
+ preftl.2145.desc:0 "我们在[Target.GetName]上促进奇点形成的工作已经得到了回报。\n\n到目前为止，整个行星几乎完全网络化了，大部分的日常决策都交给了节点意识。然而，为了“精简”流程，某些基本设施已经被取消了，行星上的人们越来越清楚地看到，他们的软体类机器可能有自己的规划宏图。"
+ preftl.2145.a:0 "这无法避免。"
+
+ preftl.2150.name:0 "至少能吃"
+ preftl.2150.intro:0 "我们对[Target.GetName]上的节点意识进行了基因修饰，这导致这个物种无法继续作为高级智能的载体。"
+ preftl.2150.desc:0 "$preftl.2150.intro$可以肯定的是，奇点已经被阻止了。\n\n虽然当地居民中仍然有许多人继续使用互联的软体动物进行计算，但其他人已经发现，这些生物是极好的蛋白质来源。"
+ preftl.2150.a:0 "赢麻了。"
+ 
+ preftl.2155.name:0 "意外的爆发"
+ preftl.2155.desc:0 "$preftl.2150.intro$不幸的是，在供水中引入一种新的病毒的举措产生了意想不到的并发症，首先蔓延到当地的动物群，然后蔓延到这个星球的有心智的人口。\n\n虽然我们成功地防止了一个奇点级事件的出现，但毫无疑问，我们已经对一个新兴的社会造成了不可挽回的损失。"
+ 
+ preftl.2160.name:0 "交流"
+ preftl.2160.desc:0 "奇点已经在[Target.GetName]上濒临降生了。在其飞升后的几个小时内，蜂巢思维就已经吸收了行星上90%以上的人口，剩下的少数个体也已经在被追杀。\n\n我们见证了一个奇点意识的诞生。"
+ preftl.2160.tt:0 "[Target.Owner.GetName]已经被转化为一个蜂巢思维。"
+
+ preftl.2165.name:0 "奇点的命运"
+ preftl.2165.desc:0 "我们一直在监测的局势突然有了结论。\n\n宇宙中唯一不变的是变化。无论好坏，变数早晚会出现。"
+
+ singularity_situation_01:0 "指数增长"
+ exponential_growth_01_desc:0 "多亏了科技的飞速发展，生活水平得到了提升。"
+ singularity_situation_02:0 "指数增长"
+ singularity_situation_02_desc:0 "$exponential_growth_01_desc$"
+ singularity_situation_03:0 "可口的机器"
+ edible_machines_03_desc:0 "尽管它们最终没有发展成为奇点，另一方面，这些思维机器倒是蛮好吃的。"
+ singularity_situation_04:0 "可口的机器"
+ singularity_situation_04_desc:0 "$edible_machines_03_desc$"
+ singularity_situation_05:0 "紧缩计划"
+ singularity_situation_05_desc:0 "出于效率的原因，这个行星上的公共事业投资遭到了巨额削减。"
+ singularity_situation_06:0 "研究热潮"
+ singularity_situation_06_desc:0 "多亏了新近发现的思想机器，研究者们不断产出卓越的科研成果。"
+ singularity_situation_07:0 "被机器奴役"
+ singularity_situation_07_desc:0 "有机奇点已经对人口进行了彻底的控制。"
+
+ ### New World Order Situation
+
+ situation_pre_ftl_nwo:0 "新世界秩序"
+ situation_pre_ftl_nwo_type:0 "军事和社会动乱"
+ situation_pre_ftl_nwo_desc:0 "在[Target.GetName]上出现了一位魅力非凡的领袖，宣扬激进的行星统一主义。现在，只有一小群装备相对落后的叛军在反对多数派统治。"
+ situation_pre_ftl_nwo_monthly_change_tooltip:0 "$situation_monthly_change_tooltip_no_control$"
+
+ approach_watch_nwo:0 "观察学习"
+ approach_watch_nwo_tooltip:0 "观测这个发展过程应该能提供一些有趣的线索。"
+ approach_aid_leader:0 "协助领袖"
+ approach_aid_leader_tooltip:0 "协助主要派系的领袖需要投入资源。"
+ approach_aid_rebels:0 "协助叛军"
+ approach_aid_rebels_tooltip:0 "协助主要派系的领袖需要投入大量资源。"
+ situation_nwo_stage_one:0 "酝酿冲突"
+ situation_nwo_stage_two:0 "倾斜的天平"
+ situation_nwo_stage_three:0 "权力斗争"
+ situation_nwo_stage_four:0 "最终角逐"
+
+ # Starting event
+ preftl.2167.name:0 "新世界秩序"
+ preftl.2167.desc:0 "在[from.owner.capital_scope.GetName]上出现了一位魅力非凡的领袖，宣扬激进的行星统一主义。现在，只有一小群装备相对落后的叛军在反对多数派统治。"
+ preftl.2167.can_not_help.desc:1 "$preftl.2167.desc$\n\n我们的政策是永远不去干涉[owner.GetPreFTLLower]星球，但是我们真的能够什么都不做，只在一边看着吗？"
+ preftl.2167.a:0 "观察学习"
+ preftl.2167.b:0 "协助领袖"
+ preftl.2167.c:0 "协助叛军"
+ new_world_order_offensive_army:0 "护统军"
+ new_world_order_defensive_army:0 "叛军"
+ NAME_Pro_Unification_Faction:0 "护统派系"
+ increase_aid_tt:0 "持续的支持将使成功的几率略微增加。"
+ arm_them_tt:0 "提供先进武器将大大提高成功的几率。"
+
+ preftl.2170.name:0 "统一"
+ preftl.2170.desc:0 "对于[Target.GetName]的叛军而言，前路渺茫。在[Target.Owner.GetRulerName]鼓舞人心的领导下，护统军已经夺取了星球上大多数人口中心的政权。统一由铁拳铸成。任何异见都被迅速镇压。"
+ preftl.2170.a:0 "增加我们对叛军的援助。"
+ preftl.2170.b:0 "我们可以增加对护统军的援助。"
+
+ preftl.2175.name:0 "战争罪"
+ preftl.2175.desc:0 "[Target.GetName]烽火连天，护统军和叛军继续互相厮杀。在这场斗争中，武器和战术无所不用其极，双方都犯下了屡屡罪行。"
+ preftl.2175.a:0 "叛军比以往任何时候都更急需我们的援助。"
+ preftl.2175.b:0 "增加对护统军的援助。"
+
+ preftl.2180.name:0 "酒囊饭袋"
+ preftl.2180.a.desc:0 "[Target.GetName]上内战频仍，护统军即将取胜。\n\n然而在前线的大后方，当地的官员们却在绞尽脑汁地中饱私囊。目前虽然压制住了异见，但当地民众并非没有注意到腐败问题。"
+ preftl.2180.b.desc:0 "在[Target.GetName]，护统军和叛军之间的战争已收敛成小打小闹。随着前线的巩固，双方的地方军阀都在通过贪腐来中饱私囊。这对冲突进程的影响，还有待观察。"
+ preftl.2180.a:0 "煽动民众的异见。"
+ preftl.2180.b:0 "派遣特工，使政权合法化。"
+
+ preftl.2185.name:0 "残酷镇压"
+ preftl.2185.a.desc:0 "在[Target.GetName]上，腐败和地方领袖的无能引发了动荡，这促使民众转而支持叛军的事业。\n\n在星球的主要中心城市里，[Target.Owner.GetRulerName]已命令军队逐街开展一系列残酷的镇压行动以铲除异己。"
+ preftl.2185.b.desc:0 "[Target.GetName]上腐败猖獗，领袖无能，打消了民众对战争的支持。双方的指挥官都被迫开展平反战役以平息民众的骚乱。"
+ preftl.2185.a:0 "增加我们的后勤支援。"
+ 
+ preftl.2190.name:0 "权力的游戏"
+ preftl.2190.a.desc:0 "纵览[Target.GetName]，叛军节节败退，而[Target.Owner.GetRulerName]稳坐江山。\n\n然而，即便新的世界秩序仍在酝酿，但裂痕已然出现。高官与元勋相互倾轧；贪婪的朝臣游走于权力场。\n\n[Target.Owner.GetRulerName]即将在全新的战场上接受考验。"
+ preftl.2190.b.desc:0 "没有任何一方能掌控[Target.GetName]，这导致整颗星球深陷混乱。地方军阀争权夺利，社会运动此起彼伏。只要星球上旷古未有的动荡不止，和平就只会是黄粱一梦。"
+ preftl.2190.a:0 "开始武装叛军。"
+
+ preftl.2195.name:0 "星星之火可以燎原"
+ preftl.2195.a.desc:0 "厌恶于星球上高官的堕落和腐败，[Target.GetName]的人民已揭竿而起，与叛军同仇敌忾。革命之火在每一座小镇和村庄蔓延。"
+ preftl.2195.b.desc:0 "[Target.GetName]上动荡不安。\n\n涣散的军队在乡间游荡，饥渴难耐。在首都，[Target.Owner.GetRulerName]继续称王，但如日西山，圣旨难出宫门。\n\n除非发生重大转机，否则护统军败局已定。"
+ preftl.2195.a:0 "开始武装护统军。"
+
+ preftl.2200.name:0 "独断专行"
+ preftl.2200.desc:0 "[Target.Owner.GetRulerName]运筹帷幄，粉碎了星球上的反抗势力。在叛军阵营潜伏的特工发起了一场遍及全球的联合突袭。不等叛军指挥官回过神来，阵地悉数失守。\n\n[Target.GetName]现在是个大一统的星球。"
+ preftl.2200.a:0 "铭记逝者。"
+ 
+ preftl.2205.name:0 "新时代元年"
+ preftl.2205.a.desc:0 "事态急转直下，[Target.Owner.GetRulerName]被废黜。\n\n叛军与政权内几个投机的将军结盟，成功地发动了一次遍及全球的联合袭击。不等护统军指挥官回过神来，阵地悉数失守。\n\n[Target.Owner.GetRulerName]戴着镣铐在首都游街示众，旋即被处决。获胜的叛军赋予星球各地自治权。经过多年的战争，脆弱的和平终于降临。"
+ preftl.2205.b.desc:0 "[Target.Owner.GetRulerName]被废黜。\n\n这个前军阀戴着镣铐在首都游街示众，旋即被处决。获胜的叛军赋予星球各地自治权。经过多年的战争，脆弱的和平终于降临。"
+ preftl.2205.a:0 "随着时间的推移，他们可能会怀念[Target.Owner.GetRulerName]。"
+
+ nwo_situation_01:0 "独裁者大获全胜"
+ nwo_situation_01_desc:0 "强权带来统一；统一带来福祉。"
+ nwo_situation_02:0 "自由之旗"
+ nwo_situation_02_desc:0 "多元社会带来福祉，福祉带来统一。"
+ nwo_situation_03:0 "增加援助"
+ nwo_situation_03_desc:0 "这些资源将迅速且公正地终结冲突。"

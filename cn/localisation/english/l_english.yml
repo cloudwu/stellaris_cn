@@ -911,7 +911,7 @@
  faction_approval_average:0 "党派赞同度一般"
  faction_approval_high:0 "党派赞同度较高"
  faction_approval_very_high:0 "党派赞同度极高"
- HOLD_TO_OVERRIDE_LOAD:0 "§GHold ctrl to force load this save§!"
+ HOLD_TO_OVERRIDE_LOAD:0 "§G按住 Ctrl 并双击，强制加载这份存档§!"
  CLOUD_SAVE:0 "§H云存档§!"
  CLOUD_SAVE_DISABLED_DESC:0 "§R云端存储目前不可用！§!"
  SAVE_TO_CLOUD:0 "保存到云端"
@@ -5530,7 +5530,7 @@
  bombardment_selective_desc:2 "$bombardment_selective$轰炸仅瞄准军事设施，避免不必要的平民伤亡。\n- 对§Y军队§!造成§Y中度§!伤害\n- 对§Y行星§!造成§Y中度§!伤害\n- 对§Y人口§!造成§E轻微§!伤害\n- §R绝不会§!轰炸无防卫的星球\n- §R绝不会§!杀害最后§Y$MIN_POPS$§!个人口"
  bombardment_indiscriminate_desc:3 "$bombardment_indiscriminate$轰炸针对军事设施与星球基础设施，不惜造成平民伤亡。\n—对§Y军团§!造成§H重度§!伤害\n—对§Y星球§!造成§H重度§!伤害\n—对§Y人口§!造成§Y中度§!伤害\n—当§H$policy_orbital_bombardment_accept_surrender$§!是§H$orbital_bombardment_surrender_forbidden$§!时，将会轰炸不设防的行星\n—§R不会§!消灭最后的§Y$MIN_POPS$§!个人口"
  bombardment_armageddon_desc:3 "$bombardment_armageddon$轰炸用重火力地毯式轰炸星球，目的是最大化平民伤亡。\n- 对§Y军队§!造成§R极大§!伤害 \n- 对§Y行星§!造成§R极大§!伤害\n- 对§Y人口§!造成§R极大§!伤害\n- 会轰炸无防卫的行星\n- 星球可能变为废土世界"
- bombardment_raiding_desc:4 "$bombardment_raiding$轰炸瞄准敌方人口聚集区，派出专门的劫掠机掳掠他们的人口，将之带回我们的星球并安排劳役。\n- 对§Y军队§!造成§E轻微§!伤害\n- 对§Y行星§!造成§E轻微§!伤害\n- §Y绑架§!而非杀害人口\n- §R绝不会§!绑架或杀害最后的人口"
+ bombardment_raiding_desc:5 "$bombardment_raiding$轰炸瞄准敌方人口聚集区，派出专门的劫掠机掳掠他们的人口，将之带回我们的星球并安排劳役。\n- 对§Y军队§!造成§E轻微§!伤害\n- 对§Y行星§!造成§E轻微§!伤害\n- §Y绑架§!而非杀害人口\n- §R绝不会§!绑架或杀害最后一个人口。星球尚的每支部队可增加被保护的人口数量。"
  GROUND_SUPPORT_CLICK_TO_SWITCH:2 "§G点击改变此舰队的轨道轰炸策略§!"
  GROUND_SUPPORT_CLICK_TO_SWITCH_PLANET_VIEW:0 "点击改变轨道内所有我方舰队的轨道轰炸策略"
  GROUND_SUPPORT_STANCE_POLICY_DESC:1 "§E轨道轰炸的可用策略取决于帝国的相关政策§!"
@@ -7998,12 +7998,6 @@
  ACTION_STOP_OPEN_TECHNOLOGICAL_ENLIGHTENMENT_TITLE:0 "停止提供科技"
  ACTION_STOP_OPEN_TECHNOLOGICAL_ENLIGHTENMENT_DESC:0 "结束同这个前超光速文明共享我们先进科技的项目。"
  ACTION_STOP_OPEN_TECHNOLOGICAL_ENLIGHTENMENT_OFFER_DESC:0 "结束同§H[Actor.GetName]§!共享我们先进科技的项目。"
-#  ACTION_STRATIFIED_TECHNOLOGICAL_ENLIGHTENMENT_TITLE: "Offer Stratified Technological Development"
-#  ACTION_STRATIFIED_TECHNOLOGICAL_ENLIGHTENMENT_DESC: "Do some stratified thechnological enlightenment." #TODO_CD
-#  ACTION_STRATIFIED_TECHNOLOGICAL_ENLIGHTENMENT_OFFER_DESC: "-- TODO ME (stratified technological development) --------------" #TODO_CD
-#  ACTION_STOP_STRATIFIED_TECHNOLOGICAL_ENLIGHTENMENT_TITLE: "Stop stratified technological development" #TODO_CD
-#  ACTION_STOP_STRATIFIED_TECHNOLOGICAL_ENLIGHTENMENT_DESC: "Stop stratified technological development." #TODO_CD
-#  ACTION_STOP_STRATIFIED_TECHNOLOGICAL_ENLIGHTENMENT_OFFER_DESC: "-- TODO ME (stop stratified technological development) --------------" #TODO_CD
  ACTION_PRE_FTL_TRADE_TITLE:0 "缔结商贸协定"
  ACTION_PRE_FTL_TRADE_DESC:0 "同前超光速文明缔结商贸协定。这会提高我们观测站的产出。"
  ACTION_PRE_FTL_TRADE_OFFER_DESC:0 "同§H[Actor.GetName]§!缔结商贸协定。这会提高我们观测站的产出。"
@@ -9356,7 +9350,7 @@
  civic_tooltip_agrarian_idyll_effects:8 "$civic_tooltip_agrarian_idyll_start$£job_farmer£ §Y$job_farmer_plural$§!同时也会产出§G2§!£amenities£ §Y舒适度§!"
  civic_tooltip_agrarian_anglers_effects:0 "$civic_tooltip_agrarian_idyll_start$£job_farmer£§Y$job_farmer_plural$§!、£job_angler£§Y$job_angler_plural$§!和£job_pearl_diver£§Y$job_pearl_diver_plural$§!同时也产出§G2§!£amenities£§Y舒适度§!"
  civic_tooltip_mechanists_effects:10 "以能建造机器人的科技和设施开始游戏，并有 8 £pop£起始人口替换为机器人\n- $mod_planet_pops_robotics_upkeep_mult$：§G-5%§!\n"
- civic_tooltip_shared_burden_effects:5 "可采用§Y$living_standard_shared_burden$§!生活标准，无论其所属§Y阶层§!，在该标准下所有£pop£ 人口拥有中等的£consumer_goods£ §Y$consumer_goods$§!维护费。\n禁用其他大部分的§Y生活标准§!\n解锁£building£§Y$holding_communal_housing_outreach$§!地产。\n平等主义派系产生的所有£unity£§Y凝聚力§!翻倍。\n""
+ civic_tooltip_shared_burden_effects:6 "可采用§Y$living_standard_shared_burden$§!生活标准，无论其所属§Y阶层§!，在该标准下所有£pop£ 人口拥有中等的£consumer_goods£ §Y$consumer_goods$§!维护费。\n禁用其他大部分的§Y生活标准§!\n解锁£building£§Y$holding_communal_housing_outreach$§!地产。\n"
  civic_tooltip_syncretic_evolution_effects:6 "- 12 £pop£起始人口替换为一额外的奴仆种族。"
  civic_tooltip_fanatic_purifiers_effects:14 "无法与其他种族的帝国开展§Y外交§!！\n无法进入§Y$GALACTIC_MARKET$§!\n对其他种族拥有§Y净化§!战争理由\n§Y异种人口§!必定被肃清\n肃清异种£pop£人口能获得£unity£§Y$unity$§!\n可以使用§Y$bombardment_armageddon$§!轰炸策略\n"
  civic_tooltip_devouring_swarm_effects:11 "无法与其他帝国开展§Y外交§!！\n无法进入§Y$GALACTIC_MARKET$§!\n对其他帝国拥有§Y饥饿§!战争理由\n§Y异种人口§!必定被吃掉\n吃掉异种£pop£人口能获得£society£§Y$society_research$§!\n"

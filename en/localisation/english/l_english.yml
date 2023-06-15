@@ -911,7 +911,7 @@
  faction_approval_average:0 "Average Faction Approval"
  faction_approval_high:0 "High Faction Approval"
  faction_approval_very_high:0 "Very High Faction Approval"
- HOLD_TO_OVERRIDE_LOAD:0 "§GHold ctrl to force load this save§!"
+ HOLD_TO_OVERRIDE_LOAD:1 "§GHold Ctrl and double-click to force load this save§!"
  CLOUD_SAVE:0 "§HCloud Save§!"
  CLOUD_SAVE_DISABLED_DESC:0 "§RCloud storage is currently unavailable!§!"
  SAVE_TO_CLOUD:0 "Save to cloud"
@@ -5530,7 +5530,7 @@
  bombardment_selective_desc:2 "$bombardment_selective$ Bombardment targets only identified military sites, taking care to avoid needless civilian casualties.\n- §YModerate§! damage to §YArmies§!\n- §YModerate§! damage to §YPlanet§!\n- §ELight§! damage to §YPops§!\n- Will §RNOT§! bombard undefended planets\n- Will §RNOT§! kill the last §Y$MIN_POPS$§! Pops"
  bombardment_indiscriminate_desc:3 "$bombardment_indiscriminate$ Bombardment targets military and planetary infrastructure with no regard for civilian casualties.\n- §HHeavy§! damage to §YArmies§!\n- §HHeavy§! damage to §YPlanet§!\n- §YModerate§! damage to §YPops§!\n- Will bombard undefended planets when §H$policy_orbital_bombardment_accept_surrender$§! is §H$orbital_bombardment_surrender_forbidden$§! \n- Will §RNOT§! kill the last §Y$MIN_POPS$§! Pops"
  bombardment_armageddon_desc:3 "$bombardment_armageddon$ Bombardment blankets the planet in heavy ordnance with the explicit aim of maximizing civilian casualties.\n- §RMassive§! damage to §YArmies§!\n- §RMassive§! damage to §YPlanet§!\n- §RMassive§! damage to §YPops§!\n- Will bombard undefended planets\n- Can reduce planets to lifeless Tomb Worlds"
- bombardment_raiding_desc:4 "$bombardment_raiding$ Bombardment targets enemy population centers with specialized raiding craft that scoop up their people and bring them back to our worlds to put them to work.\n- §ELight§! damage to §YArmies§!\n- §ELight§! damage to §YPlanet§!\n- Will §Yabduct§! Pops when possible instead of killing them\n- Will §RNOT§! abduct or kill the last Pop"
+ bombardment_raiding_desc:5 "$bombardment_raiding$ Bombardment targets enemy population centers with specialized raiding craft that scoop up their people and bring them back to our worlds to put them to work.\n- §ELight§! damage to §YArmies§!\n- §ELight§! damage to §YPlanet§!\n- Will §Yabduct§! Pops when possible instead of killing them\n- Will §RNOT§! abduct or kill the last Pop. Each army on the planet increases the number of protected Pops."
  GROUND_SUPPORT_CLICK_TO_SWITCH:2 "§GClick to change Orbital Bombardment stance for this fleet§!"
  GROUND_SUPPORT_CLICK_TO_SWITCH_PLANET_VIEW:0 "Click to change Orbital Bombardment stance for all owned fleets in orbit"
  GROUND_SUPPORT_STANCE_POLICY_DESC:1 "§EWhich Orbital Bombardment stances are allowed for this fleet depends on our Empire's policies.§!"
@@ -7998,12 +7998,6 @@
  ACTION_STOP_OPEN_TECHNOLOGICAL_ENLIGHTENMENT_TITLE:0 "Cease Providing Technology"
  ACTION_STOP_OPEN_TECHNOLOGICAL_ENLIGHTENMENT_DESC:0 "End the program to share our superior technology with this Pre-FTL Civilization."
  ACTION_STOP_OPEN_TECHNOLOGICAL_ENLIGHTENMENT_OFFER_DESC:0 "End the program to share our superior technology with §H[Actor.GetName]§!."
-#  ACTION_STRATIFIED_TECHNOLOGICAL_ENLIGHTENMENT_TITLE: "Offer Stratified Technological Development"
-#  ACTION_STRATIFIED_TECHNOLOGICAL_ENLIGHTENMENT_DESC: "Do some stratified thechnological enlightenment." #TODO_CD
-#  ACTION_STRATIFIED_TECHNOLOGICAL_ENLIGHTENMENT_OFFER_DESC: "-- TODO ME (stratified technological development) --------------" #TODO_CD
-#  ACTION_STOP_STRATIFIED_TECHNOLOGICAL_ENLIGHTENMENT_TITLE: "Stop stratified technological development" #TODO_CD
-#  ACTION_STOP_STRATIFIED_TECHNOLOGICAL_ENLIGHTENMENT_DESC: "Stop stratified technological development." #TODO_CD
-#  ACTION_STOP_STRATIFIED_TECHNOLOGICAL_ENLIGHTENMENT_OFFER_DESC: "-- TODO ME (stop stratified technological development) --------------" #TODO_CD
  ACTION_PRE_FTL_TRADE_TITLE:0 "Form Commercial Agreement"
  ACTION_PRE_FTL_TRADE_DESC:0 "Form a Commercial Agreement with this Pre-FTL Civilization. This will increase the output of our Observation Post."
  ACTION_PRE_FTL_TRADE_OFFER_DESC:0 "Form a Commercial Agreement with §H[Actor.GetName]§!. This will increase the output of our Observation Post."
@@ -9356,7 +9350,7 @@
  civic_tooltip_agrarian_idyll_effects:8 "$civic_tooltip_agrarian_idyll_start$£job_farmer£ §Y$job_farmer_plural$§! also produce §G2§! £amenities£ §YAmenities§!"
  civic_tooltip_agrarian_anglers_effects:0 "$civic_tooltip_agrarian_idyll_start$£job_farmer£ §Y$job_farmer_plural$§!, £job_angler£ §Y$job_angler_plural$§! and £job_pearl_diver£ §Y$job_pearl_diver_plural$§! also produce §G2§! £amenities£ §YAmenities§!"
  civic_tooltip_mechanists_effects:10 "Start the game with 8 £pop£ Pops being robots, and with the technology and infrastructure to build more.\n- $mod_planet_pops_robotics_upkeep_mult$: §G-5%§!\n"
- civic_tooltip_shared_burden_effects:5 "Allows §Y$living_standard_shared_burden$§! Living Standard, under which all £pop£ Pops have moderate £consumer_goods£ §Y$consumer_goods$§! Upkeep regardless of §YStrata§!\nDisables the use of most other §YLiving Standards§!\nGrants access to the £building£ §Y$holding_communal_housing_outreach$§! Holding\nDoubles all £unity£ §YUnity§! gained from the Egalitarian Faction\n"
+ civic_tooltip_shared_burden_effects:6 "Allows §Y$living_standard_shared_burden$§! Living Standard, under which all £pop£ Pops have moderate £consumer_goods£ §Y$consumer_goods$§! Upkeep regardless of §YStrata§!\nDisables the use of most other §YLiving Standards§!\nGrants access to the £building£ §Y$holding_communal_housing_outreach$§! Holding\n"
  civic_tooltip_syncretic_evolution_effects:6 "- Start the game with 12 £pop£ Pops being of another, subservient, species."
  civic_tooltip_fanatic_purifiers_effects:14 "Cannot engage in §YDiplomacy§! with other species!\nCannot access the §YGalactic Market§!\nHas the §Y'Purification'§! casus belli on other species\n§YXeno Pops§! will always be purged\nGains £unity£ §YUnity§! from purging Xeno £pop£ Pops\nMay use §Y$bombardment_armageddon$§! bombardment stance\n"
  civic_tooltip_devouring_swarm_effects:11 "Cannot engage in §YDiplomacy§! with other empires!\nCannot access the §YGalactic Market§!\nHas the §Y'Hunger'§! casus belli on all other empires\n§YXeno Pops§! will always be eaten\nGains £society£ §Y$society_research$§! from eating Xeno £pop£ Pops\n"

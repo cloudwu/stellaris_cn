@@ -18,20 +18,33 @@ bitmapfonts = {
 
 	# Global colors
 	textcolors = {
-		M = { 163 53 238 }
-		L = { 195 176 145 }
-		G = { 41 225 38 }
-		R = { 252 86 70 }
-		B = { 51 167 255 }
-		Y = { 247 252 52 }
-		H = { 251 170 41 }
-		T = { 255 255 255 }
-		E = { 135 255 207 }
-		S = { 228 156 42 }
-		W = { 255 255 255 }
-		P = { 225 110 110 }
-		g = { 128 128 128 }
-		l = { 51 167 255 }
+		M = { 163 53 238 }	# M = Magenta. Indicator for "Rare Techs".
+		L = { 195 176 145 }	# L = Lore text, not relevant game info, just fun to know backstory info.
+		G = { 41 225 38 }	# G = Green, used for numbers that are positive modifiers.
+		R = { 252 86 70 }	# R = Red, used for numbers that are negative modifier or warnings.
+		B = { 51 167 255 }	# B = Blue, used in special cases for text.
+		Y = { 247 252 52 }	# Y = Yellow, to be used for stuff that is sub optimal or for certain highlights.
+		H = { 251 170 41 }	# H = Highlight, Orange in Game.
+		C = { 33 232 208 }	# C = Cyan, Used for Concept Text that generates another tooltip.
+		K = { 251 170 41 }	# K = Header for Concepts. Currently identical to H.
+		I = { 247 252 52 }	# I = Highlights for Concepts. Currently identical to Y.
+		T = { 255 255 255 }	# T = Text, standard for all text, to be used if ALL text needs tweaking.
+		E = { 135 255 207 }	# E = Standard green, used with large chunks of texts, such as events and advisor.
+		S = { 228 156 42 }	# S = Subtitle highlight (light green in this case).
+		W = { 255 255 255 }	# W = White.
+		P = { 225 110 110 }	# P = Pink, Used for more subtle warnings instead of §R.
+		V = { 76 138 113 }	# V = Dark Green, used for event text.
+		g = { 128 128 128 }	# g = Grey.
+		_ = { 255 0 255 }	# _ Placeholder magenta, used for placeholders.
+
+		# Trait Rarity Colors
+		c = { 60 208 146 }
+		v = { 139 174 162 }
+		d = { 255 221 122 }
+
+		# Leader Rarity Colors
+		r = { 163 130 255 }
+		l = { 178 236 104 }
 	}
 
 	bitmapfont = {

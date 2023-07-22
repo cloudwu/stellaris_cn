@@ -1,0 +1,419 @@
+#H = { 253 169 38 }	Tooltip orange
+#color = 0xffffffff	#format is 0xaarrggbb
+#G = { 41 225 38 255 } #format is red green blue alpha
+#textcolors = {} is global for all fonts. changing this in one font will also change it for all others
+
+bitmapfonts = {
+
+	# Global colors
+	textcolors = {
+		M = { 163 53 238 }	# M = Magenta. Indicator for "Rare Techs".
+		L = { 195 176 145 }	# L = Lore text, not relevant game info, just fun to know backstory info.
+		G = { 41 225 38 }	# G = Green, used for numbers that are positive modifiers.
+		R = { 252 86 70 }	# R = Red, used for numbers that are negative modifier or warnings.
+		B = { 51 167 255 }	# B = Blue, used in special cases for text.
+		Y = { 247 252 52 }	# Y = Yellow, to be used for stuff that is sub optimal or for certain highlights.
+		H = { 251 170 41 }	# H = Highlight, Orange in Game.
+		C = { 33 232 208 }	# C = Cyan, Used for Concept Text that generates another tooltip.
+		K = { 251 170 41 }	# K = Header for Concepts. Currently identical to H.
+		I = { 247 252 52 }	# I = Highlights for Concepts. Currently identical to Y.
+		T = { 255 255 255 }	# T = Text, standard for all text, to be used if ALL text needs tweaking.
+		E = { 135 255 207 }	# E = Standard green, used with large chunks of texts, such as events and advisor.
+		S = { 228 156 42 }	# S = Subtitle highlight (light green in this case).
+		W = { 255 255 255 }	# W = White.
+		P = { 225 110 110 }	# P = Pink, Used for more subtle warnings instead of §R.
+		V = { 76 138 113 }	# V = Dark Green, used for event text.
+		g = { 128 128 128 }	# g = Grey.
+		_ = { 255 0 255 }	# _ Placeholder magenta, used for placeholders.
+
+		# Trait Rarity Colors
+		c = { 60 208 146 }
+		v = { 139 174 162 }
+		d = { 255 221 122 }
+
+		# Leader Rarity Colors
+		r = { 163 130 255 }
+		l = { 178 236 104 }
+	}
+
+	bitmapfont = {
+		name = "standard_font"
+		path = "gfx/fonts/common"
+		color = 0xffffffff
+	}
+
+	bitmapfont = {
+		name = "null_font"
+		path = "gfx/fonts/common"
+		color = 0xffffffff
+	}
+
+	bitmapfont = {
+		name = "large_title_font"
+		path = "gfx/fonts/orbitron"
+		color = 0xffffffff
+	}
+
+#	bitmapfont_override = {
+#		name = "large_title_font"
+#		fontfiles = {
+#			"gfx/fonts/cg_34"
+#		}
+#		languages = { "l_russian" "l_polish" }
+#	}
+
+	 bitmapfont_override = {
+		name = "large_title_font"
+        ttf_font = "Easter_bigger"
+        ttf_size = "30"
+		languages = { "l_russian" "l_polish" }
+	 }
+
+	 bitmapfont_override = {
+		name = "large_title_font"
+        ttf_font = "Chinese_bigger"
+        ttf_size = "28"
+		languages = { "l_simp_chinese" }
+		multiline = {
+			line_break = { "。" "）" "！" ">" "”" "？" }
+			forbidden_start = { "，" }
+		}
+		vertical_offset  = "3"
+	 }
+
+	 bitmapfont_override = {
+		name = "large_title_font"
+        ttf_font = "Japanese_big_header"
+        ttf_size = "26"
+		languages = { "l_japanese" }
+		multiline = {
+			line_break = { "。" ")" "！" "〉" "」" "？" }
+			forbidden_start = { "、" }
+		}
+
+		vertical_offset  = "-1"
+	 }
+
+	 bitmapfont_override = {
+		name = "large_title_font"
+        ttf_font = "Korean_big_header"
+        ttf_size = "24"
+		languages = { "l_korean" }
+		vertical_offset  = "-6"
+	 }
+
+
+	bitmapfont = {
+		name = "large_title_font_28"
+		path = "gfx/fonts/orbitron_28"
+		color = 0xffffffff
+	}
+
+#	bitmapfont_override = {
+#		name = "large_title_font_28"
+#		fontfiles = {
+#			"gfx/fonts/cg_22"
+#		}
+#		languages = { "l_russian" "l_polish" }
+#	}
+
+	 bitmapfont_override = {
+		name = "large_title_font_28"
+        ttf_font = "Easter_header"
+        ttf_size = "26"
+		languages = { "l_russian" "l_polish" }
+	 }
+
+	 bitmapfont_override = {
+		name = "large_title_font_28"
+        ttf_font = "Chinese_big"
+        ttf_size = "22"
+		languages = { "l_simp_chinese" }
+		multiline = {
+			line_break = { "。" "）" "！" ">" "”" "？" }
+			forbidden_start = { "，" }
+		}
+		vertical_offset  = "1"
+	 }
+
+	 bitmapfont_override = {
+		name = "large_title_font_28"
+        ttf_font = "Japanese_big_header"
+        ttf_size = "22"
+		languages = { "l_japanese" }
+		multiline = {
+			line_break = { "。" ")" "！" "〉" "」" "？" }
+			forbidden_start = { "、" }
+		}
+		vertical_offset  = "3"
+	 }
+
+	 bitmapfont_override = {
+		name = "large_title_font_28"
+        ttf_font = "Korean_big_header"
+        ttf_size = "20"
+		languages = { "l_korean" }
+		vertical_offset  = "-3"
+	 }
+
+	bitmapfont = {
+		name = "cg_16b"
+		color = 0xffffffff
+		fontfiles = {
+			"gfx/fonts/cg_16b"
+		}
+		color = 0xffffffff
+		cursor_offset = { -3 -5 }
+		selection_offset = { 0 3 }
+	}
+
+#	 bitmapfont_override = {
+#		name = "cg_16b"
+#		fontfiles = {
+#			"gfx/fonts/stellaris_main"
+#		}
+#		languages = { "l_russian" "l_polish" }
+#	 }
+
+	 bitmapfont_override = {
+		name = "cg_16b"
+        ttf_font = "Easter_normal"
+        ttf_size = "13"
+		languages = { "l_russian" "l_polish" }
+	 }
+
+	 bitmapfont_override = {
+		name = "cg_16b"
+        ttf_font = "Chinese_normal"
+        ttf_size = "14"
+		vertical_offset  = "2"
+		languages = { "l_simp_chinese" }
+		multiline = {
+			line_break = { "。" "）" "！" ">" "”" "？" }
+			forbidden_start = { "，" }
+		}
+	 }
+
+	 bitmapfont_override = {
+		name = "cg_16b"
+        ttf_font = "Japanese_main"
+        ttf_size = "14"
+		vertical_offset  = "2"
+		languages = { "l_japanese" }
+		multiline = {
+			line_break = { "。" ")" "！" "〉" "」" "？" }
+			forbidden_start = { "、" }
+		}
+	 }
+
+	 bitmapfont_override = {
+		name = "cg_16b"
+        ttf_font = "Korean_main"
+        ttf_size = "15"
+		vertical_offset  = "3"
+		languages = { "l_korean" }
+	 }
+
+	bitmapfont = {
+		name = "hoi_16mbs"
+		path = "gfx/fonts/hoi_16mbs"
+		color = 0xffffffff
+	}
+
+	bitmapfont = {
+		name = "malgun_goth_24"
+		path = "gfx/fonts/malgun_goth_24"
+		color = 0xffffffff
+		cursor_offset = { -4 -3 }
+		selection_offset = { 0 1 }
+	}
+
+#	bitmapfont_override = {
+#		name = "malgun_goth_24"
+#		fontfiles = {
+#			"gfx/fonts/cg_22"
+#		}
+#		languages = { "l_russian" "l_polish" }
+#	}
+
+	 bitmapfont_override = {
+		name = "malgun_goth_24"
+        ttf_font = "Easter_header"
+        ttf_size = "18"
+		languages = { "l_russian" "l_polish" }
+	 }
+
+	 bitmapfont_override = {
+		name = "malgun_goth_24"
+        ttf_font = "Chinese_header"
+        ttf_size = "20"
+		vertical_offset  = "1"
+		languages = { "l_simp_chinese" }
+		multiline = {
+			line_break = { "。" "）" "！" ">" "”" "？" }
+			forbidden_start = { "，" }
+		}
+	 }
+
+	 bitmapfont_override = {
+		name = "malgun_goth_24"
+        ttf_font = "Japanese_small_header"
+        ttf_size = "18"
+		vertical_offset  = "1"
+		languages = { "l_japanese" }
+		multiline = {
+			line_break = { "。" ")" "！" "〉" "」" "？" }
+			forbidden_start = { "、" }
+		}
+	 }
+
+	 bitmapfont_override = {
+		name = "malgun_goth_24"
+        ttf_font = "Korean_small_header"
+        ttf_size = "18"
+		vertical_offset  = "-1"
+		languages = { "l_korean" }
+	 }
+
+	### MAP NAME FONTS ###
+	bitmapfont = {
+		name = "map_name_border"
+		path = "gfx/fonts/orbitron"
+		color = 0xffffffff
+	}
+
+		bitmapfont_override = {
+		name = "map_name_border"
+		fontfiles = {
+			"gfx/fonts/cg_34"
+		}
+		languages = { "l_russian" "l_polish" }
+	 }
+
+	 bitmapfont_override = {
+		name = "map_name_border"
+        ttf_font = "Chinese_header"
+        ttf_size = "70"
+		vertical_offset  = "-30"
+		languages = { "l_simp_chinese" }
+		multiline = {
+			line_break = { "。" "）" "！" ">" "”" "？" }
+			forbidden_start = { "，" }
+		}
+	 }
+
+	 bitmapfont_override = {
+		name = "map_name_border"
+        ttf_font = "Japanese_big_header"
+        ttf_size = "70"
+		vertical_offset  = "-30"
+		languages = { "l_japanese" }
+		multiline = {
+			line_break = { "。" ")" "！" "〉" "」" "？" }
+			forbidden_start = { "、" }
+		}
+	 }
+
+	 bitmapfont_override = {
+		name = "map_name_border"
+        ttf_font = "Korean_big_header"
+        ttf_size = "70"
+		vertical_offset  = "-30"
+		languages = { "l_korean" }
+	 }
+
+	bitmapfont = {
+		name = "map_name_nebula"
+		path = "gfx/fonts/orbitron"
+		color = 0xffffffff
+	}
+
+	bitmapfont_override = {
+		name = "map_name_nebula"
+		fontfiles = {
+			"gfx/fonts/cg_34"
+		}
+		languages = { "l_russian" "l_polish" }
+	 }
+
+	 bitmapfont_override = {
+		name = "map_name_nebula"
+        ttf_font = "Chinese_header"
+        ttf_size = "60"
+		vertical_offset  = "-20"
+		languages = { "l_simp_chinese" }
+		multiline = {
+			line_break = { "。" "）" "！" ">" "”" "？" }
+			forbidden_start = { "，" }
+		}
+	 }
+
+	bitmapfont_override = {
+		name = "map_name_nebula"
+        ttf_font = "Japanese_big_header"
+        ttf_size = "60"
+		vertical_offset  = "-20"
+		languages = { "l_japanese" }
+		multiline = {
+			line_break = { "。" ")" "！" "〉" "」" "？" }
+			forbidden_start = { "、" }
+		}
+	 }
+
+	bitmapfont_override = {
+		name = "map_name_nebula"
+        ttf_font = "Korean_big_header"
+        ttf_size = "60"
+		vertical_offset  = "-20"
+		languages = { "l_korean" }
+	 }
+
+
+	bitmapfont = {
+		name = "map_name_sector"
+		path = "gfx/fonts/orbitron"
+		color = 0xffffffff
+	}
+
+	bitmapfont_override = {
+		name = "map_name_sector"
+		fontfiles = {
+			"gfx/fonts/cg_34"
+		}
+		languages = { "l_russian" "l_polish" }
+	}
+
+	bitmapfont_override = {
+		name = "map_name_sector"
+        ttf_font = "Chinese_header"
+        ttf_size = "60"
+		vertical_offset  = "-20"
+		languages = { "l_simp_chinese" }
+		multiline = {
+			line_break = { "。" "）" "！" ">" "”" "？" }
+			forbidden_start = { "，" }
+		}
+	 }
+
+	bitmapfont_override = {
+		name = "map_name_sector"
+        ttf_font = "Japanese_big_header"
+        ttf_size = "60"
+		vertical_offset  = "-20"
+		languages = { "l_japanese" }
+		multiline = {
+			line_break = { "。" ")" "！" "〉" "」" "？" }
+			forbidden_start = { "、" }
+		}
+	 }
+
+	bitmapfont_override = {
+		name = "map_name_sector"
+        ttf_font = "Korean_big_header"
+        ttf_size = "60"
+		vertical_offset  = "-20"
+		languages = { "l_korean" }
+	 }
+
+}
+

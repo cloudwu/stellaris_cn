@@ -4,6 +4,8 @@
  # Modifiers
  ####################################
 
+ MODIFIER_BULLET_POINT: "- " #used in some interfaces e.g. civics tooltip to make lists more readable
+
  #Federation
  MOD_FEDERATION_EXPERIENCE_ADD:0 "每月经验"
  MOD_FEDERATION_COHESION_ADD:0 "每月内聚度"
@@ -56,6 +58,9 @@
  MOD_COUNTRY_SECTOR_CAP_ADD:0 "星域上限"
  mod_country_base_energy_produces_mult:0 "帝国能源生成"
  mod_country_base_minerals_produces_mult:0 "帝国矿物生产"
+ mod_country_base_consumer_goods_produces_add: "帝国消费品产出"
+ mod_country_base_alloys_produces_add: "帝国合金产出"
+ mod_country_base_nanites_produces_add: "帝国纳米机器人产出"
  MOD_ASSIST_RESEARCH_MULT:1 "协助研究效率"
  MOD_COUNTRY_NUM_TECH_ALTERNATIVES_ADD:0 "研究方案"
  MOD_COUNTRY_PREVIOUS_DEALS:0 "过往交易"
@@ -91,6 +96,9 @@
  MOD_DIPLO_WEIGHT_POPS_MULT:0 "来自人口的外交话语权"
  MOD_DIPLO_WEIGHT_ENVOYS_MULT:0 "来自特使的外交话语权"
  MOD_DIPLO_WEIGHT_COUNCIL_MULT:0 "来自理事会的外交话语权"
+ MOD_DIPLO_WEIGHT_OPPOSING_MULT: "反对议案时的外交权重"
+ MOD_DIPLO_WEIGHT_SUPPORTING_MULT: "支持议案时的外交权重"
+ MOD_DIPLO_WEIGHT_RIVALS_MULT: "每个劲敌产生的外交权重"
  MOD_DIPLO_WEIGHT_MULT:0 "外交话语权"
  MOD_DISTANCE_TO_CAPITAL_STATIC_MODIFIER_EFFICIENCY_MULT:0 "到首都的距离惩罚"
  MOD_COUNTRY_ASCENSION_PERKS_ADD:1 "解锁飞升特典"
@@ -164,10 +172,17 @@
  MOD_POP_ROBOT_BUILD_SPEED_MULT:0 "机器人建造速度"
  MOD_POP_ROBOT_BUILD_SPEED_MULT_DESC:0 "影响机器人口的建造速度。"
  MOD_POP_ROBOT_BUILD_COST_MULT:0 "机器人建造成本"
+ mod_planet_pops_robotics_alloys_upkeep_add: "机器人合金维护费"
 
  mod_pop_job_trade_mult:0 "£job£岗位产出的£trade_value£贸易额"
  mod_pop_lifestyle_trade_mult:0 "生活标准产出的£trade_value£贸易额"
  mod_pop_job_amenities_mult:0 "£job£岗位产出的£amenities£舒适度"
+
+ mod_living_standard_trade_value_rulers_add: "£trade_value£$RULERS$产生的贸易额"
+ mod_living_standard_trade_value_specialists_add: "£trade_value£$SPECIALISTS$产生的贸易额"
+ mod_living_standard_trade_value_workers_add: "£trade_value£$WORKERS$产生的贸易额"
+ mod_living_standard_trade_value_slaves_add: "£trade_value£$SLAVES$产生的贸易额"
+ mod_living_standard_trade_value_criminals_add: "£trade_value£$CRIMINALS$产生的贸易额"
 
  mod_job_soldier_stability_add:1 "£job_soldier£[GetSoldier][GetSoldierPlural]岗位产出的稳定度"
 
@@ -458,6 +473,8 @@
  mod_planet_building_foundry_1_build_speed_mult:0 "铸造厂建造速度"
  mod_planet_building_factory_1_build_speed_mult:0 "民用工厂建造速度"
  mod_planet_building_research_lab_1_build_speed_mult:0 "研究实验室建造速度"
+ mod_planet_building_research_lab_2_build_speed_mult: "研究大楼建造速度"
+ mod_planet_building_research_lab_3_build_speed_mult: "高级研究大楼建造速度"
  mod_planet_building_refinery_build_speed_mult:0 "精炼厂建造速度"
  mod_planet_building_chemical_plant_build_speed_mult:0 "化合工厂建造速度"
  mod_planet_building_crystal_plant_build_speed_mult:0 "合成水晶厂建造速度"
@@ -619,6 +636,7 @@
  mod_planet_resource_influence_add:0 "行星影响力产出"
  mod_country_base_influence_produces_mult:0 "帝国影响力获得"
  mod_rivalries_influence_produces_mult:0 "劲敌影响力收益"
+ mod_rivalries_unity_produces_add: "劲敌产生的£unity£$unity$"
  mod_country_resource_physics_research_mult:0 "物理研究"
  mod_country_resource_society_research_mult:0 "社会研究"
  mod_country_resource_engineering_research_mult:0 "工程研究"
@@ -723,6 +741,8 @@
  mod_ship_science_cost_mult:0 "科研船建造费用"
  mod_ship_constructor_cost_mult:0 "工程船建造费用"
  mod_ship_colonizer_cost_mult:0 "殖民船建造费用"
+ mod_ship_colonizer_food_cost_add: "殖民船£food£食物花费"
+ mod_ship_colonizer_alloys_cost_mult: "殖民船£alloys£合金花费"
  mod_ship_military_station_medium_cost_mult:0 "防御基地建造费用"
  mod_ship_military_station_large_cost_mult:0 "要塞建造费用"
  mod_ship_terraform_station_cost_mult:0 "环境改造站建造费用"
@@ -799,11 +819,12 @@
  mod_weapon_archaeotech_weapon_fire_rate_mult:1 "远古科技武器开火速率"
 
  mod_shroud_delve_cooldown:0 "潜入天幕冷却"
+ mod_shroud_delve_cost: "潜入天幕花费"
 
  s_slot:0 "小型部件槽"
  m_slot:0 "中型部件槽"
  l_slot:0 "大型部件槽"
- x_slot:0 "特大型部件槽"
+ x_slot:1 "特大型部件槽"
  t_slot:0 "泰坦级部件槽"
  g_slot:0 "鱼雷型部件槽"
 
@@ -813,8 +834,8 @@
  mod_m_slot_weapon_fire_rate_mult:1 "中型槽位武器开火速率"
  mod_l_slot_weapon_damage_mult:0 "大型槽位武器伤害"
  mod_l_slot_weapon_fire_rate_mult:1 "大型槽位武器开火速率"
- mod_x_slot_weapon_damage_mult:0 "特大型槽位武器伤害"
- mod_x_slot_weapon_fire_rate_mult:1 "特大型槽位武器开火速率"
+ mod_x_slot_weapon_damage_mult:1 "特大型槽位武器伤害"
+ mod_x_slot_weapon_fire_rate_mult:2 "特大型槽位武器射速"
  mod_t_slot_weapon_damage_mult:0 "泰坦级槽位武器伤害"
  mod_t_slot_weapon_fire_rate_mult:1 "泰坦级槽位武器开火速率"
  mod_g_slot_weapon_damage_mult:0 "鱼雷型槽位武器伤害"
@@ -923,10 +944,10 @@
 
  assist_research:0 "研究助理"
  assist_research_desc:1 "行星的研究设施均由轨道上的一艘科研船进行协助。"
- 
+
  assist_cloaking_detection:0 "隐形探测支援"
  assist_cloaking_detection_desc:0 "科研船在轨道上支援焚天神兵的隐形探测阵列"
- 
+
  active_reconnaissance_speed:0 "主动侦察"
  active_reconnaissance_speed_desc:0 "由于隐形的科研船正在进行主动侦察，获得情报的速度加快。"
  active_reconnaissance_level:0 "主动侦察"
@@ -1429,7 +1450,7 @@
  low_gravity:0 "低重力"
  low_gravity_desc:0 "此星球有着异常低的密度，因此重力也比其他相同体积的星球低许多。"
  high_gravity:0 "强重力"
- high_gravity_desc:0 "此星球有着异常高的密度，因此形成了令人难受的高重力。"
+ high_gravity_desc:1 "此星球有着异常高的密度，因此形成了令人难受的高重力。"
  hollow_planet:0 "中空行星"
  hollow_planet_desc:0 "此星球可能经过人工开发或天然侵蚀，只可惜其原因和方法都尚不清楚，但我们很期待对这里开展考察工作。"
  mineral_rich:1 "高品质矿物"

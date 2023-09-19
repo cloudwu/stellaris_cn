@@ -6,7 +6,8 @@
  origin_progenitor_hive:0 "始祖蜂巢"
  origin_progenitor_hive_desc:1 "该蜂巢通过专职化的半独立领导人获得了进化优势。尽管这些“子嗣”需要持续受到监管，但它们还是大大提高了整体的效率。"
  START_SCREEN_PROGENITOR_HIVE:1 "在遥远的启始之时，先祖已有之。\n\n在[Root.GetHomeWorldName]上的生活困苦且充满竞争，而强大的先祖还是能够开疆拓土。统治如此巨大的疆域很快难以为继，因此先祖创造了第一个子嗣。很快发现，子嗣显然无法自行管理一切，反之他们产出低级工蜂来帮助管理我们的家园。\n\n让我们第一次试探性地跨出[capital_scope.System.GetName]的一步，我们的先祖便将自己隔绝于一个特化的巢穴中。受益于这些更好更流畅的控制体系，我们已经时刻准备着将先祖的影响力投射于整个银河了，正如他过去和现在所做一般，直至未来。而[Root.GetName]将见证一切。"
- origin_tooltip_progenitor_hive_effects:4 "—可以雇佣被动获得经验的特殊§H子嗣领袖§!\n—以£building£§H子嗣巢穴§!代替£building£§H产卵池§!，能够产生强大的防御陆军并增强低级子个体的生产力。\n— 允许在附属国的星球上建造£building£§H子嗣巢穴§!。\n- 可以将§H星域§!释放为§H附属国§!，只要他们没有§H$civic_hive_devouring_swarm$§!公民性。\n— 建造能够增强周围舰队战斗力的§H子嗣舰船§!。\n- 没有子嗣舰船的舰队会遭受以下影响：\n\n"
+ origin_tooltip_progenitor_hive_effects:5 "—['concept_spawning_pools', £building£产卵池]替换为['concept_offspring_nests', £building£子嗣巢穴]\n—$AVAILABLE_HOLDINGS$['concept_offspring_holding', £building£子嗣巢穴]\n—只要未选择§I$civic_hive_devouring_swarm$§!：§I星域§!可以释放为§I附属国§!\n—指派的§I领袖§!：被动获得额外经验\n—$AVAILABLE_STARBASE_BUILDINGS$§I子嗣瞭望台§!\n—可以建造§I子嗣舰船§!"
+ origin_tooltip_progenitor_hive_negative_effects: "—舰队会受['concept_insufficient_offspring_oversight']的负面影响"
  #Progenitor deposits, armies and decisions
  progenitor_defense:0 "蜂巢始祖"
  progenitor_defense_plural:0 "$progenitor_defense$"
@@ -52,7 +53,7 @@
  job_offspring_drone_plural:0 "子嗣个体"
  mod_job_offspring_drone_add:0 "$job_offspring_drone$岗位"
  job_offspring_drone_desc:0 "整个星球的行政个体都在这里。始祖通过子嗣个体来实现他们的宏伟设计。"
- job_offspring_drone_effect_desc:1 "£job_spawning_drone£ $job_offspring_drone_plural$增强 £mod_planet_amenities_no_happiness_add£ §Y$PLANET_AMENITIES_TITLE$§!和£mod_planet_pop_assembly_mult£ §Y$MOD_PLANET_POP_ASSEMBLY_ORGANIC_ADD$§!，产生§Y$offspring_defense_plural$§!、并为§Y$pop_cat_simple_drone$产出§!提供£mod_planet_jobs_simple_drone_produces_mult£§G+10%§!增幅。"
+ job_offspring_drone_effect_desc:2 "£job_spawning_drone£$job_offspring_drone_plural$将$r_food$（或$r_minerals$）转化为£mod_planet_amenities_no_happiness_add£§Y$PLANET_AMENITIES_TITLE$§!和£mod_planet_pop_assembly_mult£§Y$MOD_PLANET_POP_ASSEMBLY_ORGANIC_ADD$§!，产生§Y$offspring_defense_plural$§!，并提供£mod_planet_jobs_simple_drone_produces_mult£§G+10%§!§Y$pop_cat_simple_drone$产出§!增益。"
  building_offspring_nest:0 "子嗣巢穴"
  building_offspring_nest_desc:1 "这座加固的巢穴庇佑着当地的子嗣，并且还能加速周围蜂巢的发展。"
  offspring_nest_tooltip:1 "\n§H只有始祖蜂巢物种才可能被子嗣巢穴组装§!\n"
@@ -140,7 +141,7 @@
 
  origin_subterranean:0 "地底人"
  origin_subterranean_desc:1 "该物种迁徙到地下的真正原因已经消失在历史的长河中。或许是为了躲避天敌，又或许是为了获得丰富的资源，但无论如何，该物种已经进化为适应居住在他们母星地底的形态，造就了这个对环境适应力更为强大的社会结构。"
- origin_tooltip_subterranean_effects:3 "—以§H穴居者§!特质开局\n—殖民地的§H矿业区§!数量不受限制，并从每个矿业区§G+2§! £housing£ §H$MOD_PLANET_HOUSING_ADD$§!，而且从每3个§H矿业区§!中可获得§G1个§!£building£§H建筑槽§!\n—你的物种在地下建造城市，因此将会获得以下优势：\n\n"
+ origin_tooltip_subterranean_effects:4 "—$SPECIES_TRAITS$['concept_cave_dweller']\n—['concept_mining_district', £district£矿业区]：无上限"
  trait_cave_dweller:0 "穴居者"
  trait_cave_dweller_desc:0 "§L该物种能在任何他们能找到的星球地下繁衍，但代价是人口增长速度。§!"
  trait_cave_dweller_tooltip:0 "$MOD_BIO_POP_GROWTH_SPEED$: §R-20%§!"
@@ -156,10 +157,10 @@
  ##########################
 
  origin_shroudwalker_apprentice:0 "天幕导师"
- origin_shroudwalker_apprentice_desc:1 "早在他们踏入银河舞台之前，他们的文明就受到了天幕行者集会的支持和塑造成型。"
+ origin_shroudwalker_apprentice_desc:2 "§R警告：禁止除['concept_psionic_ascension']以外所有的飞升路线。§!\n早在他们踏入银河舞台之前，他们的文明就受到了天幕行者集会的支持和塑造成型。"
  START_SCREEN_SHROUDWALKER_APPRENTICE:1 "我们的祖先流传下来关于导师的神话：他们无所不知，并且塑造了我们文明的早期阶段。通过托梦，他们从遥远的地方与我们交流，将他们关于天幕的知识和智慧传授于我们。\n\n如今我们的导师再次降临，通过在我们的梦境中播撒下光怪陆离的画面，他教会了我们星际航行的秘诀。在短短的几年后，我们便能够建造舰船遨游太空。\n\n不过我们前方的路还有多长？我们的导师指明了“天幕隧道”这条路，那是一个坐落于他们母星系边陲的天然虫洞。创建我们自己的隧道便可以让我们通过这条路拜访导师。在我们踏入星际舞台之际，愿我们的导师继续赐予我们更多的智慧。"
  START_SCREEN_SHROUDWALKER_APPRENTICE_CORPORATE:0 "我们教会的创始人如此描述导师：他们无所不知无所不能，他们降下了最初的福音。通过托梦，他们从遥远的地方与我们交流，将他们关于天幕的知识和智慧传授于我们。\n\n如今我们的导师再次降临，通过在我们的梦境中播撒下光怪陆离的画面，他教会了我们星际航行的秘诀。在短短的几年后，我们便能够建造舰船遨游太空。\n\n但这并不是我们雄心壮志的尽头。我们的导师指明了“天幕隧道”这条路，那是一个坐落于他们母星系边陲的天然虫洞。如果我们创建好了这条神圣的通路，我们便能直接与导师会面。在我们踏入星际舞台之际，愿我们的导师继续赐予我们更多的智慧。"
- origin_tooltip_shroudwalker_apprentice_effects:2 "§R—警告！§!这将锁定除§H灵能飞升§!外的所有飞升路线。\n—获得§H灵能潜势§!特质。\n—开局时获得在太空基地建造§H天幕信标§!的能力。\n—开局时取得和§H$gov_shroudwalker_enclave$§!的联系。"
+ origin_tooltip_shroudwalker_apprentice_effects:3 "—$SPECIES_TRAITS$['concept_latent_psionic']\n—$AVAILABLE_STARBASE_BUILDINGS$['concept_shroud_beacon']\n—与['concept_shroudwalker_enclave']的有外交联系。\n—$GUARANTEED_RESEARCH_OPTION_STRING$['concept_psionic_theory', £society£ $tech_psionic_theory$]"
 
  origin.5605.name:0 "真正的学徒"
  origin.5605.generic.desc:1 "我们的学生啊，我们已经教导了你们一代又一代，将天幕和它的奥秘的知识播撒入你们的梦境之中。现在你们已经能够触及星辰，你们真正的学徒生涯才刚刚开始。前路不会一马平川。为了照亮你们前行的道路，我们传授给你们天幕信标的知识，这是一个强大的设备。在你们的一座太空基地上建造以后，这座信标会打开一个天幕隧道。请谨慎选择地点，因为天幕隧道只会生成一次。\n\n如果有所索求，有所不测就呼唤我们吧。在梦境中我们会一直看着你们。在漫游的旅途中，我们等待着你们的到来。"
@@ -187,7 +188,7 @@
  START_SCREEN_STAR_SLINGSHOT:0 "自上古以来我们的人民就能时不时地看到夜空被无数流星所照亮，但至今我们的科学家还是不能解释这种现象。随着我们开始探索星系，我们最终获得了追踪这些扰动现象原因的必要装备——一个被我们的工程师称为$quantum_catapult_1$的古老构造。\n\n$START_SCREEN_STAR_SLINGSHOT_SECOND_PART$"
  START_SCREEN_STAR_SLINGSHOT_GESTALT:0 "自我们鸿蒙初开之时便能时不时地看到天空被无数的流星所照亮，并完全无法理解是什么可能造成了这种奇怪的现象。随着我们终于脱出母星的桎梏，我们成功地获得了追踪这些扰动现象原因的必要工具——一个$quantum_catapult_1$。\n\n$START_SCREEN_STAR_SLINGSHOT_SECOND_PART$"
  START_SCREEN_STAR_SLINGSHOT_SECOND_PART:0 "尽管陷入休眠，部分被毁还遭到遗弃，我们依旧坚信其能回复往日的荣光。如果按照我们的预期工作，它将成为通往银河各处的星门。"
- origin_tooltip_star_slingshot_effects:3 "—开局时在你的母星附近存在§H$quantum_catapult_ruined_slingshot$§!以及修复和使用该设备的必要科技。\n—在遥远星系建造太空基地花费的影响力降低§G75%§!。\n—你的§H量子弹弓§!的精度提高§G50%§!\n—通过弹射舰队获得的§Y量子伏击§!的射速提高到§G+50%§!。"
+ origin_tooltip_star_slingshot_effects:4 "—$HOME_SYSTEM$靠近被毁的['concept_quantum_catapult_restored_slingshot']，附带['concept_slingshot_digsite']['concept_archaeology_site']\n—['concept_quantic_ambush']效果：提升§G+50%§!$MOD_SHIP_FIRE_RATE_MULT$"
 
  # Events
 
@@ -197,7 +198,7 @@
 
  # Dig Site
 
- slingshot_digsite:0 "量子弹弓"
+ slingshot_digsite:1 "量子架构师的日志"
  slingshot_digsite_desc:0 "我们已经找到了一个损毁的巨型结构残骸。该构造显然亟需修复，同时我们也在其数据库中发现了饱含着有关异星生物的见解的宝贵财富。尽管我们还在决定是否要重建这一远古科技的造物，我们的考古学家有机会去发掘并取回这宇宙设备起源的线索。它的其中一个发明者，“量子建筑师”相关的日志似乎格外有价值。恢复这些文件对我们解密遗留给我们科技的远古种族的文化和历史必然有着莫大的帮助。"
 
  origin.3515.name:0 "星光燎原"
@@ -223,7 +224,7 @@
  origin_imperial_vassal:0 "帝国封邑"
  origin_imperial_vassal_desc:1 "第一次飞出母星的经历是一段痛苦的回忆，一眨眼的功夫，我们就惨遭征服并跪倒在其脚下。不过现在我们终于得以展望未来，一个不必处在他国阴影之下的未来。"
  START_SCREEN_IMPERIAL_VASSAL:0 "当我们第一次离开母星系时，就遇到了一个迫使我们臣服的外星帝国。尽管对于人民而言这是一段痛苦的记忆，但事实证明这段附庸关系远比我们想象中有益得多，在这段短暂的附庸时光中，我们学到了不少东西。\n\n我们并非宗主国唯一的附庸，因为我们已经接见了其他在宗主国控制下国家所派出的外交官和大使。虽然我们与其中的某些家伙看不对眼，但至少现在他们还是有用的盟友。\n\n不过，我们虽然盼望着有朝一日能独立自主地决定自身的命运，但现在还是要接受当下的附属国地位，并充分利用目前的局面。"
- origin_tooltip_imperial_vassal_effects:1 "—游戏开始时成为§H高级电脑帝国§!的附庸。\n—在游戏开始时需要选择附庸§H国家侧重§!类型。"
+ origin_tooltip_imperial_vassal_effects:2 "—一个['concept_advanced_empire']的附庸\n—在游戏开始时需要选择附庸['concept_specialist_subject', 附属国特化]类型"
 
  # AI Overlord Version
  origin_imperial_vassal_overlord:0 "帝国领主"
@@ -443,6 +444,8 @@
  # Modifiers
  #########################
 
+ MOD_SHIP_FRIENDLY_TERRITORY_ARMOR_ADD:0 "位于友方星系中的$MOD_SHIP_ARMOR_ADD$"
+ MOD_SHIP_FRIENDLY_TERRITORY_ARMOR_MULT:0 "位于友方星系中的$MOD_SHIP_ARMOR_MULT$"
  MOD_SHIP_FRIENDLY_TERRITORY_SHIELD_ADD:0 "位于友方星系$MOD_SHIP_SHIELD_ADD$"
  MOD_SHIP_FRIENDLY_TERRITORY_SHIELD_MULT:0 "位于友方星系$MOD_SHIP_SHIELD_MULT$"
  MOD_SHIP_FRIENDLY_TERRITORY_EVASION_ADD:0 "位于友方星系$MOD_SHIP_EVASION_ADD$"

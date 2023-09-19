@@ -38,6 +38,8 @@
  SITUATION_TARGET_TOOLTIP_NO_TARGET:0 "该局势的效果将影响整个帝国。"
  SITUATION_START_HEADER:0 "起始值"
  SITUATION_START_TOOLTIP:0 "该局势开始于$VALUE|Y0$进度。"
+ civilian_difficulty: "平民难度"
+ cadet_difficulty: "学员难度"
 
  situation_unknown_outcome_approach:0 "我们不确定目前局势的解决方案将带来何种结果。"
  situation_monthly_change_tooltip_no_control:0 "该§Y局势§!的进展不在我们的掌控之中。"
@@ -993,3 +995,194 @@
  casus_belli_cb_end_threat_revenge_for_eaten_star:0 "吞食星辰"
  war_goal_wg_end_threat_revenge_for_eaten_star:0 "$casus_belli_cb_end_threat_revenge_for_eaten_star$"
  war_goal_wg_end_threat_revenge_for_eaten_star_desc:0 "我们发动了战争，目的是彻底地征服我们吞噬了其星辰的敌人。"
+
+
+ ### The Kaleidoscope
+ ### By Giada Zavarise
+
+ ## Situation
+ situation_kaleidoscope: "万华镜"
+ situation_kaleidoscope_type: "万华镜"
+ situation_kaleidoscope_desc: "一种五彩斑斓的能源寄生虫正在侵染我们的能源电网，提高了我们的能源供给。我们可以放任它，或者通过§Y谍报行动§!将这个麻烦传导到其他帝国。\n\n[GetKaleidoscopeMood]。"
+ situation_kaleidoscope_monthly_change_tooltip: "让§H万华镜§!寄生虫挨饿会降低它的§Y心情§!，提高负面事件的发生几率。给它投喂会提高它的心情，维持它愉悦和稳定。"
+
+ situation_unknown_outcome_kaleidoscope: "万华镜寄生虫的§Y心情§!会决定最后的结果。"
+
+ approach_no_food: "不投喂"
+ approach_no_food_tooltip: "降低§Y心情§!。一只挨饿的万华镜寄生虫会大发雷霆，给我们造成麻烦。"
+ approach_little_food: "投喂"
+ approach_little_food_tooltip: "提高§Y心情§!。一只满意的万华镜寄生虫会绽放满足的光线，几乎不会带来麻烦。"
+ approach_a_lot_of_food: "过度投喂"
+ approach_a_lot_of_food_tooltip: "极大地改善§Y心情§!。一只撑饱的万华镜寄生虫不会给我们造成麻烦，但是这么做开销极大。"
+ kaleidoscope_progress: "过载"
+
+ # Strings for GetKaleidoscopeMood trigger loc script
+ kaleidoscope_mood_angry: "万华镜寄生虫在§P生气§!，随时都会大发雷霆。"
+ kaleidoscope_mood_neutral: "万华镜寄生虫处于§S宁静§!状态。它只要能得到食物就不会胡来。"
+ kaleidoscope_mood_happy: "万华镜寄生虫很§B愉悦§!。它的颜色五彩绚烂，如同其心情一样。"
+
+ ## Modifiers
+ global_power_outrage: "全球能源停供"
+ phantom_load: "幽灵负载" #Note for translators: it's a real term used for when devices in standby still consume a little energy https://en.wikipedia.org/wiki/Standby_power
+ phantom_load_desc: "某种东西——或者某个人——正在吸收我们的电网。"
+
+ kaleidoscope_unnerving_patterns: "焦躁模式"
+ kaleidoscope_ominous_patterns: "噩兆模式"
+ kaleidoscope_pilfering_patterns: "幻吸模式"
+ kaleidoscope_soothing_patterns: "宽慰模式"
+ kaleidoscope_dazzling_patterns: "眩目模式"
+
+ mod_trade_routes_energy_produces_mult: "贸易产生的能量币"
+
+ ## Relic
+ r_vacuum_flower: "真空花朵"
+ r_vacuum_flower_desc: "万华镜的花朵如梦似幻、稍纵即逝，其花瓣处于不断变化的状态，具有操纵、吸收和反射光波的能力。"
+ relic_vacuum_flower_active: "依据你的首都星系的§Y恒星类型§!，获取不同类型的产出加成。"
+
+ relic_vacuum_flower_B: "绽放之星（B型）"
+ relic_vacuum_flower_A: "绽放之星（A型）"
+ relic_vacuum_flower_F: "绽放之星（F型）"
+ relic_vacuum_flower_G: "绽放之星（G型）"
+ relic_vacuum_flower_K: "绽放之星（K型）"
+ relic_vacuum_flower_M: "绽放之星（M型）"
+ relic_vacuum_flower_M_giant: "绽放之星（M型红巨星）"
+ relic_vacuum_flower_T_dwarf: "绽放之星（T型褐矮星）"
+ relic_vacuum_flower_pulsar: "绽放之星（脉冲星）"
+ relic_vacuum_flower_black_hole: "绽放之星（黑洞）"
+ relic_vacuum_flower_neutron: "绽放之星（中子星）"
+ relic_vacuum_flower_lightbringer: "绽放之星（翠光使）"
+
+ dyson_sphere_disco: "奇迹球"
+ dyson_sphere_disco_DESC: "它不产生能量。只有美。"
+ dyson_sphere_disco_restored: "$dyson_sphere_disco$"
+ dyson_sphere_disco_restored_DESC: "$dyson_sphere_disco_desc$"
+
+
+ ## Intro
+ # The Kaleidoscope appears on your capital
+ situation.2003.name: "太空之彩"
+ situation.2003.desc: "我们的人民从轨道上看到的是§H[capital_scope.GetName]§!突然关停，城市内的每个光源都被熄灭。而§H[capital_scope.GetName]§!的居民所经历的更糟糕：车辆变成了路障，工厂停止运转，医院设备处于无响应的状态。这是一次全球性的突然停电，突如其来，莫名其妙。\n\n当寂静和阴影笼罩着我们的星球时，奇怪的光芒在天空中绽放，将我们的首都星系包围在万华镜般的迷雾中。这两个事件无疑是相关的，但我们的[root.GetTechnicianPlural]仍然在抓瞎——是的，字面意义上的抓瞎。"
+ situation.2003.a: "恢复我们的电网功能。"
+
+ # Notify other countries about the Kaleidoscope
+ situation.2004.name: "$situation.2003.name$"
+ # first time
+ situation.2004.desc: "我们的敏感器报告万华镜寄生虫的光图案的幻影出现在了§H[kaleidoscope_system.GetName]§!星系。这个现象的自然机理暂时还不清楚。"
+ # moved again
+ situation.2004.desc.again: "我们先前观察到的万华镜幻影已经移动到了§H[kaleidoscope_system.GetName]§!星系。"
+
+ # Project - mid-event
+ situation.2005.name: "大停电"
+ situation.2005.desc: "我们在自己的电网系统中找不到任何缺陷。我们的发电机正在产生能量，但是某种存在……某种存在正在吸收它。这可能是我们在天空中能够观察到光图案的结果，这个图案的几何性质透露出一定的智慧痕迹。\n\n这个东西——这个活着的§Y万华镜§!——是一个满怀恶意的存在，还是一团无意识的迷雾？答案尚未明确。"
+ situation.2005.a: "试图将它从我们的电网中剥离出来。"
+
+ # Project - end (first time)
+ situation.2010.name: "黑暗伊始" #Translators note: https://en.wikipedia.org/wiki/Black_start
+ situation.2010.desc: "多亏了我们的[owner.GetTechnicianPlural]和[owner.GetScientistPlural]的通力合作，我们设法将能量寄生虫从我们的电力网络中剔除了。我们最漫长的黑夜已经过去，但是§Y万华镜§!寄生虫仍然在我们的头顶上闪耀，渴望能量。\n\n我们无法与它进行交流，常规武器对这类生物无效。我们剩下的选项是给它提供足够的能量以维持其心情满足，或者试图让它挨饿。我们的特工还建议组织一次§Y谍报行动§!，将它引诱到另一个帝国。让其他人来处理它。"
+ situation.2010.desc.again: "我们的人民从轨道上看到的是一个熟悉的图案再次出现：§H[capital_scope.GetName]§!上的所有电源突然关闭，我们的首都受到全球停电的打击，而熹微的光亮在天空中跃动。\n§Y万华镜§!回来了！我们曾经将这个能量寄生虫诱骗到其他国家，现在又给送了回来。\n\n根据我们专家的分析，投资建设一个§Y$building_planetary_shield_generator$§!能够防止我们的首都再次成为目标，但是一切都为时已晚：因为能量寄生虫已经待这儿不走了。"
+ situation.2010.a: "这个非自然的野兽别想在我们的星系容身！"
+ situation.2010.b: "我们必须和这个奇迹之兽交好！"
+ situation.2010.c: "它想要能量？噎死它。"
+ situation.2010.tooltip: "解锁谍报行动§Y$operation_kaleidoscope$§!"
+
+ # Project - end (subsequent times)
+ situation.2011.name: "$situation.2010.name$"
+ situation.2011.desc: "依照我们经过验证和测试的流程，我们将万华镜寄生虫从§H[root.GetName]§!的能量电网中剥离，恢复了首都的供电。"
+
+ ## Espionage Operation
+ # Operation - phase 1
+ situation.2020.name: "渗入能量电网"
+ situation.2020.desc: "我们的特工通过假扮成技工成功渗透进入了§H[target.GetName]§!的能源地区。他们的下一项任务是安装一个返航信标，诱惑能量寄生虫前来这个行星。"
+
+ # Operation - phase 2
+ situation.2021.name: "天清空净"
+ situation.2021.desc: "我们天空中的异光消散了，提前宣告了我们的特工之后汇报的事情：他们激活了能量信标，将§Y万华镜§!引走了！\n\n现在就让§H[target.GetName]§!去处理这麻烦事吧。"
+
+ situation.2025.name: "嫁祸于人"
+ situation.2025.desc: "依据我们的谍报信息，§H[kaleidoscope_new_owner.GetName]§!，目前正遭遭受到能源短缺的困扰。我们送他们的§Y万华镜§!似乎正是这一经济困境的主要起因。"
+
+ ## Random events
+ # Negative 1 - infests another planet
+ situation.2030.name: "轻微感染"
+ situation.2030.desc: "饥肠辘辘的万华镜仿佛将双齿深深扎进了§H[event_target:infested_planet.GetName]§!的能量电网中一般。随之而来的全殖民地范围的大停电颇为剧烈，但与此前的攻击并不相似。我们已经知道怎么对付这东西了。"
+
+ # Negative 2 - eats energy building
+ situation.2031.name: "电击疗法"
+ situation.2031.desc: "一只贪婪的万华镜正试图强行连接到我们在§H[target.GetName]§!上的§Y能量中枢§!。这提供了一个研究这只生物独特能力的绝佳机会，但我们预计这座建筑将因此受到严重破坏。"
+ situation.2031.a: "就让它吃点我们的能量吧。为了科学！"
+ situation.2031.b: "偷一些能量回来。"
+
+ # Negative 3 - unnerving patterns (- pop happiness)
+ situation.2032.name: "焦躁模式"
+ situation.2032.desc: "万华镜焦躁地颤动着，让我们的天空充满了不和谐、不均匀的光线。我们的人不禁觉得这种景象令人不安。"
+
+ # Negative 4 - ominous patterns (spiritualists)
+ situation.2033.name: "噩兆模式"
+ situation.2033.desc: "万华镜犹如一道敞开的窗口，让我们的天空充满了不祥而病态的图案。我们的祭祀认为这是凶兆。也许明智的做法是牺牲一些能量给这个生物，消除它的饥饿，平息我们人民的恐惧。"
+ situation.2033.a: "向万华镜供给能量。"
+ situation.2033.b: "我们绝不惯着它。"
+
+ # Negative 5 - slow ships
+ situation.2034.name: "幻吸模式"
+ situation.2034.desc: "万华镜号渴求能量，它学会了如何从我们的舰队中吸取能量。尽管能量消耗很小，但对我们的航速有明显的影响。"
+ 
+ # Positive 1 - soothing patterns (unity)
+ situation.2037.name: "宽慰模式"
+ situation.2037.desc: "开心的万华镜让[owner.capital_scope.GetName]的天空中涂满了令人愉悦的图形，一个个分型互相流变，带来了一波波变化万千的奇观。\n\n整个星球仿佛静止了。人们驻足欣赏，为之惊叹。"
+
+ # Positive 2 - dazzling patterns (science)
+ situation.2038.name: "眩目模式"
+ situation.2038.desc: "万华镜不断变化的图案会不会是一种沟通的方式？或者这只是一种类似呼吸一般的自发流程？我们的[root.GetScientistPlural]尚未找到答案。万华镜也正在为我们带来不可估量的研究数据。"
+
+ ## Endings
+ # Kaleidoscope explodes! - Good ending
+ situation.2041.name: "万华镜之花"
+ situation.2041.desc: "我们有幸得出体验星系最壮观的灯光秀：万华镜的花瓣往复折叠、盛开、绽放！然而，我们的仪器则带来了一则不那么令人高兴的消息。\n\n这种能量生物变得如此充满力量，它甚至像一颗垂死的恒星一样发生了坍缩。在它的废墟中，我们的探测器发现了一个外形非常类似花朵的晶体团簇。根据初步研究，这种“花”可以放大最微弱的光线，在这个过程中打破了一些已知的物理定律。我们的[root.owner.GetScientistPlural]推测，这种花不过是一座光线可以被无限地反射叠加的多维镜屋中可见的冰山一角。"
+
+ # Kaleidoscope explodes! - Good ending - Notifying other countries
+ situation.2042.name: "$situation.2041.name$"
+ situation.2042.desc: "传感器报告§H[kaleidoscope_system.GetName]§!星系中万华镜的图案发生了剧烈的绽放，并在五彩斑斓的爆炸中消失了。那场面一定相当壮观。"
+
+ # Kaleidoscope explodes! - Bad ending
+ situation.2043.name: "万华镜爆炸"
+ situation.2043.desc: "万华镜自我折叠的一瞬，它看起来就像一朵最精致的水晶花。然而，随之而来的爆炸一点也不温和：一股灼热的爆炸席卷了整个银河，我们所有的电子设备都发生了过载，烧焦了能源电网。\n\n维修工作已经在进行中，但我们还需要一段时间才能适应这片空旷的天空。"
+
+ # Kaleidoscope explodes! - Bad ending - Notifying other countries
+ situation.2044.name: "$situation.2043.name$"
+ situation.2044.desc: "传感器报告在§H[kaleidoscope_system.GetName]§!星系的万华镜图案爆炸了，释放了一道能量冲击波损坏了星系中所有的设施。"
+
+ # Kaleidoscope fades away - owner
+ situation.2040.name: "天清空净"
+ situation.2040.desc: "在在最后一阵红色的起伏图案爆发之后，万华镜消失了，它的彩色卷须像雾一样消散了。\n\n在它的光芒下度过了这么长时间后，我们的天空看起来空落落的。"
+
+ # Kaleidoscope fades away - notifying other countries
+ situation.2045.name: "天清空净"
+ situation.2045.desc: "传感器回报我们在[kaleidoscope_system.GetName]星系探测到的万华镜图案已经消退了。"
+
+ # Kaleidoscope could get a Dyson sphere?
+ situation.2048.name: "无尽的饥饿"
+ situation.2048.desc: "万华镜寄生虫事实证明是一个异常好相处的邻居，但是要让它持续保持满足的心态不是一件容易的事情。建一个戴森球能不能满足它对能量的那种无底洞般的胃口呢？"
+ situation.2048.a: "为万华镜寄生虫提供一个改版戴森球。"
+ situation.2048.a.tooltip: "解锁一项新的戴森球升级。"
+ situation.2048.b: "我们不能浪费能量。"
+ 
+ # DiScO EnDiNg
+ situation.2049.name: "奇迹球"
+ situation.2049.desc: "万华镜寄生虫盘附在了我们提供的改版戴森球上，吞食着一整个恒星的能量，其不断延展的、色彩缤纷的花瓣包覆了整个银河。根据我们的数据，这个噬能生命体现在处于一种恒定的、可控的超载状态，在一个类似于死亡和重生的无尽循环中，不断地长出新芽，再不断地爆裂。\n\n我们不知道这个生命体是否有思考能力，但我们希望它的存在本身现在和它产生的光图案一样令人愉快。"
+
+
+ ## Projects and Operations
+ # Project (first time)
+ KALEIDOSCOPE_INFESTATION_FIRST: "能量暴变"
+ KALEIDOSCOPE_INFESTATION_FIRST_DESC: "能源电网的全球性故障使我们的首都陷入了完全的黑暗。我们必须恢复§H[root.GetName]§!的电力基础设施，并压实相应责任主体。"
+
+ # Project (following times)
+ KALEIDOSCOPE_INFESTATION: "流光溢彩"
+ KALEIDOSCOPE_INFESTATION_DESC: "又一次，万华镜寄生虫锁死了我们的电网，消耗我们的能源供给，使行星陷入黑暗。\n\n幸运的是，我们现在知道如何应对。"
+
+ # Espionage Operation
+ operation_kaleidoscope: "引诱万华镜寄生虫"
+ operation_kaleidoscope_desc: "通过在另一个帝国的能源地区埋下一枚返航信标，我们能够将这个噬能生命体带到另一个星际帝国去祸害当地。"
+ operation_kaleidoscope_shielded_world: "他们的首都星球受§Y$building_planetary_shield_generator$§!保护。"
+ operation_kaleidoscope_previous_owner: "他们不会让我们这么快再次突破他们的安保。"
+ operation_kaleidoscope_on_success: "$IF_SUCCESSFUL|E$\n万华镜寄生虫将被带至[root.target.GetName]，侵染他们的首都。"

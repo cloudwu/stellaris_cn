@@ -10,9 +10,9 @@ local function readlist(path, ...)
 end
 
 local data = {
-	official_cn = readlist("cn3.8", list, { ["_english"] = "_simp_chinese" }),
-	cloudwu_cn = readlist("cn3.7/localisation/english", list),
-	en_last = readlist("en3.7/localisation/english", list),
+	official_cn = readlist("cn3.9", list, { ["_english"] = "_simp_chinese" }),
+	cloudwu_cn = readlist("cn3.8/localisation/english", list),
+	en_last = readlist("en3.8/localisation/english", list),
 	en_current = readlist("en/localisation/english", list),
 }
 
@@ -42,7 +42,7 @@ local function tags(s)
 	return r
 end
 
-local function diff_tags(a,b)
+local function diff_tags(a,b, key)
 	if a:gsub("%b[]", "[]") == b:gsub("%b[]", "[]") then
 		-- 只有 tag 变化
 		local tag_a = tags(a)
@@ -56,7 +56,10 @@ local function diff_tags(a,b)
 					assert(o == tag_b[i])
 				end
 			else
-				assert(r[tag_a[i]] == nil)
+				if r[tag_a[i]] ~= nil then
+					-- tag 变化无法处理
+					return
+				end
 			end
 		end
 		return r
@@ -129,6 +132,7 @@ end
 local terms = {
 	{ "恒星基地" , "太空基地" },
 	{ "恒星系" , "星系" },
+	{ "星系地图", "银河地图" },
 	{ "泛星系",  "泛银河" },
 	{ "星系理事会",  "银河理事会" },
 	{ "星系议案", "银河议案" },
@@ -171,6 +175,7 @@ local terms = {
 	{ "肃正协议", "紧急预案" },
 	{ "星系舞台", "银河舞台" },
 	{ "陆军将领", "将军" },
+	{ "居住站", "轨道栖所", },
 }
 
 local function term_fix(s)
@@ -263,7 +268,7 @@ local function entry(data, key, diff)
 				end
 			end
 		else
-			local diff = diff_tags(en.v, current_en)
+			local diff = diff_tags(en.v, current_en, key)
 			if diff then
 				-- 只有 tag 变化
 				r.v = fix_tags(data.cloudwu_cn[key].v, diff)

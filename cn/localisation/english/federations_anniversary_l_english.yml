@@ -1094,44 +1094,164 @@
  spifed_jointop_mixed_desc:0 "我们联邦举办的主教议会取得了阶段性胜利。"
  spifed_jointop_xpboost:0 "联合行动的经验"
 
-
 ###########
 # HABITATS
 ###########
 
+ NAMEPLATE_EMPTY_STRING: "$ttt$"
+ REQUIREMENTS_HEADER: "§E要求：§!"
+ EFFECTS_HEADER: "§E效果：§!"
+
+ TOAST_HABITAT_BUILT_TITLE: "已建成轨道栖所复合体"
+ TOAST_HABITAT_BUILT_DESC: "[target_habitat.GetName]已经建成。"
+
+ TOAST_ORBITAL_BUILT_TITLE: "轨道站已建成"
+ TOAST_ORBITAL_BUILT_DESC: "已在[target_planet.GetName]的轨道上建成一座轨道站"
+
  d_hab_nanites_1:0 "纳米机器矿藏"
- d_hab_nanites_1_desc:0 "这个栖所建造在一个可开发的纳米机器矿藏附近。"
+ d_hab_nanites_1_desc:1 "这座$habitat_complex$建造在一个可开发的纳米机器人矿藏附近。"
+
+ UNLOCKS_ORBITAL: "§H解锁轨道站：§!"
+ tech_habitat_1:0 "轨道栖所"
+ tech_habitat_1_desc:0 "允许建设规模庞大、自给自足的轨道栖所。"
+ allow_habitats:1 "§H解锁巨型结构：§!$habitat_central_complex$\n$UNLOCKS_ORBITAL$$major_orbital_plural$\n$UNLOCKS_ORBITAL$$minor_orbital_plural$"
 
  tech_habitat_2:1 "栖所扩张"
  tech_habitat_2_desc:0 "相较于如今的高效设计，我们早期的栖所只能算原始罢了。"
- tech_habitat_2_effect:1 "我们的§Y轨道栖所§!可通过行星决议升级为§Y高级栖所§!。"
+ tech_habitat_2_effect:2 "$allow_habitat_upgrade$"
 
  tech_habitat_3:0 "高级太空栖所"
  tech_habitat_3_desc:0 "多年来对§Y轨道栖所§!的改进让我们能够创造效率更高的新设计。"
- tech_habitat_3_effect:0 "我们的§Y高级栖所§!可通过行星决议进一步升级。"
+ tech_habitat_3_effect:1 "$allow_habitat_2_upgrade$"
 
- habitat_1:0 "高级栖所"
+ habitat_1:1 "扩展轨道栖所复合体"
  habitat_1_DESC:0 "$habitat_0_DESC$"
- habitat_2:0 "宜居世界"
+ habitat_2:1 "高级轨道栖所复合体"
  habitat_2_DESC:0 "$habitat_0_DESC$"
 
- allow_habitat_upgrade:0 "§H解锁空间站升级：§!$habitat_1$"
- allow_habitat_2_upgrade:0 "§H解锁空间站升级：§!$habitat_2$"
+ allow_habitat_upgrade:1 "§H解锁行星决议§!：$decision_upgrade_habitat$"
+ allow_habitat_2_upgrade:1 "§H解锁行星决议§!：$decision_upgrade_habitat_2$"
 
- decision_upgrade_habitat:0 "升级栖所"
- decision_upgrade_habitat_effects:1 "将此§H轨道栖所§!升级为§H$habitat_1$§!，获得§Y2个额外地区§!。"
- decision_upgrade_habitat_effects_regularempire:1 "将此§H轨道栖所§!升级为§H$habitat_1$§!，获得§Y2个额外地区§!以及建造基础住宅建筑的权限。如果你拥有§Y$ap_voidborn$§!飞升天赋，也可建造高级住宅建筑。"
- decision_upgrade_habitat_effects_short:1 "将此§H轨道栖所§!升级为§H$habitat_1$§!。"
+ decision_upgrade_habitat:1 "升级至$habitat_1$"
+ decision_upgrade_habitat_effects_short:1 "$decision_upgrade_habitat_effects$"
+
+ decision_upgrade_habitat_effects:1 "£mod_pop_environment_tolerance£$MOD_POP_ENVIRONMENT_TOLERANCE$：§G+10%§!\n£mod_planet_max_districts_add£$major_orbital_plural$产生的最大地区槽位：§G+0.25§!\n$major_orbital_generic_plural$产生的£mod_planet_max_buildings_add£$MOD_PLANET_MAX_BUILDINGS_ADD$：§G+0.25§!\n£mod_planet_max_branch_office_buildings_add£ $MOD_PLANET_MAX_BRANCH_OFFICE_BUILDINGS_ADD$: §G+1§!"
  decision_upgrade_habitat_desc:0 "$tech_habitat_2_desc$"
+ requires_orbital: "$TRIGGER_FAIL$§R需要存在轨道站§!"
 
- decision_upgrade_habitat_2:0 "$decision_upgrade_habitat$"
- decision_upgrade_habitat_2_effects:0 "进一步升级此§H$habitat_1$§!，获得§Y2个额外地区§!。"
- decision_upgrade_habitat_2_effects_short:0 "将此§H$habitat_1$§!升级为§H$habitat_2$§!。"
+ decision_upgrade_habitat_2:0 "升级至$habitat_2$"
+ decision_upgrade_habitat_2_effects_short:1 "$decision_upgrade_habitat_effects$"
  decision_upgrade_habitat_2_desc:0 "$tech_habitat_3_desc$"
 
- ap_voidborn_habitat_effect:0 "我们帝国拥有的§Y栖所§!具有§Y2个额外建筑槽位§!。升级后的栖所可支持高级住宅建筑。"
+ max_one_orbital_per_system: "$TRIGGER_FAIL$§R我们在每个星系内只能建造一座这种轨道站§!"
+
+ d_system_resources: "轨道资源"
+ d_system_resources_desc: "在整个银河内大大小小的天体周围建造轨道站可以满足轨道复合体日益增长的资源需求。"
+ system_resources_tooltip: "§Y[solar_system.GetName]§!星系可以支持：$TABBED_NEW_LINE$大型轨道站：§Y[solar_system.GetNumMajorOrbitals]/[solar_system.GetMaxMajorOrbitals]§!$TABBED_NEW_LINE$小型轨道站：§Y[solar_system.GetNumMinorOrbitals]/[solar_system.GetMaxMinorOrbitals]§!\n\n目前轨道站提供："
+
+ d_ruined_major_orbital: "废弃的大型轨道站"
+ d_ruined_major_orbital_desc: "该轨道站发生过灾难性的壳体损伤。必须进行维修才能恢复其居住功能。"
+
+ d_ruined_minor_orbital: "废弃的小型轨道站"
+ d_ruined_minor_orbital_desc: "$d_ruined_major_orbital_desc$"
+
+ habitat_0_MEGASTRUCTURE_DETAILS:2 "§H轨道栖所§!\n§Y$pc_habitat$§!是一种用于永久性居住的可自持空间站。"
+ habitat_0_CONSTRUCTION_INFO_DELAYED:5 "同时将建成一座§Y$major_orbital$§!，给予：\n$t$—$major_orbital_effect$"
+ habitat_0:0 "轨道栖所"
+ habitat_0_DESC:0 "环绕飞一局星球轨道上的居住用空间站，能够在远离地表之处容纳若干§H人口§!和§H建筑§!。"
+
+ habitat_central_complex_ruined: "被毁的$habitat_central_complex$"
+ habitat_central_complex_ruined_DESC: "$habitat_central_complex$可能一度是一座门庭若市熙熙攘攘的建筑。如今却只剩下一座破败零碎的空城。"
+ habitat_central_complex_ruined_MEGASTRUCTURE_DETAILS: ""
+ habitat_central_complex_restored: "$habitat_central_complex$"
+ habitat_central_complex_restored_DESC: "$habitat_central_complex_DESC$"
+
+ cant_build_on_habitat:0 "§R不能在轨道栖所上建造。§!"
+
+ habitat_complex: "轨道栖所复合体"
+ habitat_complex_plural: "轨道栖所复合体"
+
+ SHIP_GRAPHICS_HABITAT_CENTRAL_COMPLEX_DESC: "$habitat_central_complex_DESC$"
+
+ habitat_central_complex: "轨道栖所中心复合体"
+ habitat_central_complex_plural: "轨道栖所中心复合体"
+ habitat_central_complex_DESC: "§Y$habitat_complex$§!的核心轨道站，可以容纳若干£pop£§Y人口§!并在非宜居行星的轨道上为£building£§Y建筑§!和£district£§Y地区§!提供空间。"
+ habitat_central_complex_MEGASTRUCTURE_DETAILS: "§Y$habitat_complex$§!是一系列用于永久居住的自持空间站的集合体。"
+ habitat_central_complex_CONSTRUCTION_INFO_DELAYED: "$REQUIREMENTS_HEADER$$major_orbital_requirements$\n\n$EFFECTS_HEADER$$NEW_LINE$—将创建一座可殖民的（规模：£planetsize£6）§Y轨道栖所§!。$NEW_LINE$—$habitat_0_CONSTRUCTION_INFO_DELAYED$"
+
+
+ requires_habitat_central_complex: "$TRIGGER_FAIL$§R需要星系中存在一座$habitat_central_complex$§!"
+ requires_not_habitat_central_complex: "$TRIGGER_FAIL$§R星系内已存在$habitat_central_complex$，无法建造。§!"
+
  add_research_options_voidborn:0 "升级栖所后获得的研究选项：\n£engineering_research£§Y$tech_habitat_3$§!"
 
+ HABITAT_PLANET_NAME:1 "[FROM.from.solar_system.GetName]轨道栖所复合体"
+ TARGET_ORBITAL_NAME: "[FROM.from.planet.GetName]轨道站"
+
+ orbital_DESC_GENERIC: "一座设计用于为当地§Y$habitat_central_complex$§!的人口提供额外居住和工作空间的基础轨道站。"
+ orbital_MEGASTRUCTURE_DETAILS_ENDING: "是一座设计用于为当地§Y$habitat_central_complex$§!的人口提供额外居住和工作空间的基础轨道站。"
+ orbital_DELAYED_START: "—§Y$habitat_central_complex$§!：\n$t$—"
+
+ major_orbital: "大型轨道站"
+ major_orbital_plural: "大型轨道站"
+ major_orbital_effect: "£mod_planet_max_districts_add£最大地区槽位：§G+0.5§!\n$t$—$orbital_effect$"
+ major_orbital_NAME: "$major_orbital$"
+ major_orbital_DESC: "$orbital_DESC_GENERIC$"
+ major_orbital_MEGASTRUCTURE_DETAILS: "一座§Y$major_orbital$§!$orbital_MEGASTRUCTURE_DETAILS_ENDING$"
+ major_orbital_CONSTRUCTION_INFO_DELAYED: "$REQUIREMENTS_HEADER$ $major_orbital_requirements$ \n\n$EFFECTS_HEADER$ $NEW_LINE$$orbital_DELAYED_START$$major_orbital_effect$"
+ major_orbital_requirements: "$NEW_LINE$- $major_planetary_body_requirements$"
+ major_planetary_body_requirements: "必须建造在一颗大型天体的轨道上"
+ orbital_effect: "依照行星矿藏：\n$tt$—£mod_district_hab_science_max£§Y$district_hab_science_plural$§!：§G+3§!\n$tt$—£mod_district_hab_energy_max£§Y$district_hab_energy_plural$§!：§G+3§!\n$tt$—£mod_district_hab_mining_max£§Y$district_hab_mining_plural$§!：§G+3§!\n$tt$—£mod_planet_max_buildings_add£§Y$MOD_PLANET_MAX_BUILDINGS_ADD$§!：§G+0.50§!"
+
+ minor_orbital: "小型轨道站"
+ minor_orbital_plural: "小型轨道站"
+ minor_orbital_effect: "$orbital_effect$"
+ minor_orbital_NAME: "$minor_orbital$"
+ minor_orbital_DESC: "$minor_orbital_DESC_GENERIC$"
+ minor_orbital_MEGASTRUCTURE_DETAILS: "一座§Y$minor_orbital$§!$orbital_MEGASTRUCTURE_DETAILS_ENDING$"
+ minor_orbital_CONSTRUCTION_INFO_DELAYED: "$REQUIREMENTS_HEADER$$minor_orbital_requirements$ \n\n$EFFECTS_HEADER$ $NEW_LINE$$orbital_DELAYED_START$$minor_orbital_effect$"
+ minor_orbital_requirements: "$NEW_LINE$- $minor_planetary_body_requirements$"
+ minor_planetary_body_requirements: "必须建造在一颗小型天体（小行星或卫星）的轨道上"
+ requires_is_minor_planetary_body: "$TRIGGER_FAIL$§R$minor_planetary_body_requirements$§!"
+
+ major_orbital_resource: "Resource Extraction Orbital"
+ major_orbital_resource_plural: "Resource Extraction Orbitals"
+ minor_orbital_resource: "$major_orbital_resource$"
+ minor_orbital_resource_plural: "$major_orbital_resource_plural$"
+
+ major_orbital_mining: "航天采矿轨道站"
+ major_orbital_mining_plural: "航天采矿轨道站"
+ minor_orbital_mining: "$major_orbital_mining$"
+ minor_orbital_mining_plural: "$major_orbital_mining_plural$"
+ num_mining_orbitals: "\n现有$major_orbital_mining_plural$：§Y[solar_system.GetNumOrbitalsMining]、[solar_system.GetMaxOrbitalsMining]§!"
+
+ major_orbital_science: "零重力研究轨道站"
+ major_orbital_science_plural: "零重力研究轨道站"
+ minor_orbital_science: "$major_orbital_science$"
+ minor_orbital_science_plural: "$major_orbital_science_plural$"
+ num_science_orbitals: "\n现有$major_orbital_science_plural$：§Y[solar_system.GetNumOrbitalsScience]/[solar_system.GetMaxOrbitalsScience]§!"
+
+ major_orbital_energy: "反应堆轨道站"
+ major_orbital_energy_plural: "反应堆轨道站"
+ minor_orbital_energy: "$major_orbital_energy$"
+ minor_orbital_energy_plural: "$major_orbital_energy_plural$"
+ num_energy_orbitals: "\n现有$major_orbital_energy_plural$：§Y[solar_system.GetNumOrbitalsEnergy]/[solar_system.GetMaxOrbitalsEnergy]§!"
+
+ major_orbital_generic: "住房轨道站"
+ major_orbital_generic_plural: "住房轨道站"
+ minor_orbital_generic: "$major_orbital_generic$"
+ minor_orbital_generic_plural: "$major_orbital_generic_plural$"
+ num_generic_orbitals: "\n现有$major_orbital_generic_plural$：§Y[solar_system.GetNumOrbitalsGeneric]/[solar_system.GetMaxOrbitalsGeneric]§!"
+
+# Knights of the Toxic God
+ major_orbital_knights: "辖地前哨站"
+ major_orbital_knights_plural: "辖地前哨站"
+ major_orbital_knights_effect: "£mod_planet_max_districts_add£最大地区槽位：§G+0.5§!\n$t$—£mod_job_knight_add£骑士岗位：§G+1§!"
+ major_orbital_knights_NAME: "$major_orbital_knights$"
+ major_orbital_knights_DESC: "$orbital_DESC_GENERIC$"
+ major_orbital_knights_MEGASTRUCTURE_DETAILS: "一座§Y$major_orbital_knights$§!$orbital_MEGASTRUCTURE_DETAILS_ENDING$"
+ major_orbital_knights_CONSTRUCTION_INFO_DELAYED: "$REQUIREMENTS_HEADER$$NEW_LINE$—$major_planetary_body_requirements$$NEW_LINE$—§Y$habitat_central_complex$§!必须拥有£building£§Y$building_order_castle$§!或£building£§Y$building_order_keep$§!\n\n$EFFECTS_HEADER$$NEW_LINE$$orbital_DELAYED_START$$major_orbital_knights_effect$"
+ requires_knights_castle_or_keep: "$TRIGGER_FAIL$§R需要一座§Y$building_order_castle$§!或§Y$building_order_keep$§!§!"
 
 ###########
 # EDICTS

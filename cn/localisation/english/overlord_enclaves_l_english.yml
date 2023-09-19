@@ -192,8 +192,6 @@
  salvager_overdrive_desc:0 "受益于打捞者友邦船员专心致志的努力，该帝国得以加速建造太空基地和殖民地。"
  salvager_insight:0 "打捞者洞见"
  salvager_insight_desc:0 "受益于打捞者城邦切合实际的专长，该帝国的科学家得以快速跟进工程中令人兴奋的新突破。"
- salvage_overseer:0 "打捞督工"
- salvage_overseer_desc:0 "一名来自打捞者城邦的经验丰富的打捞者，正在帮助这个帝国检视战场残骸，看有什么东西还能派上用场。"
 
  #Situations
  mercenary_dividends:0 "佣兵红利"
@@ -244,7 +242,7 @@
  enclave.305.d:0 "你们能在§Y建造§!方面援助我们吗？"
  enclave.305.e:0 "我们想要打捞一些§Y残骸§!。"
  enclave.305.f:1 "你们能援助我们的§Y工程研究§!吗？"
- enclave.305.g:0 "我们希望雇佣一名§Y打捞督工§!。"
+ enclave.305.g:1 "我们希望雇佣一名§Y$master_salvager$§!。"
 
  enclave.310.desc:1 "太棒了！真的很高兴能能从您的手中接过这份差事。\n\n根据我们的扫描仪，您有下列舰队处于可选范围之内。在附件中可以查看估价，现在请您做出选择吧。\n\n$enclave.310.instructions$"
  enclave.310.organic.desc:0 "棒极了！那将是我们的荣幸……星辰在上，那是什么呀？！你居然称那是一艘舰船？我是说，我能够找到它是怎么……哇哦，它看上去可真是凶巴巴的。拜托了，千万不要冲动行事！我们能够从你那里接手活生生的“舰船”，但恐怕§H我们必须收取清洁费用§!。\n\n根据我们的扫描，你的以下舰船位于范围之内。你能在附件里找到我们的预估；现在由你来做决定了！\n\n$enclave.310.instructions$"
@@ -308,6 +306,26 @@
  enclave.350.a:0 "$enclave.310.a$"
  enclave.352.desc:0 "致敬！我们向你方派去的督工已经回到我们这里，其服务任期已经完成。然而，如果你仍然需要我们的服务，我们很乐意再派遣一名替补。"
 
+ master_salvager:0 "打捞大师"
+ master_salvager_desc:1 "一名来自打捞者城邦的经验丰富的技师，负责确保战场残骸被最充分地利用。"
+
+ master_salvager_catch_phrase: "§L“好极了，让我们做一些野外工作吧！有什么有趣的残骸漂浮着吗？”§!"
+
+ leader_trait_master_salvager: "$master_salvager$"
+ leader_trait_master_salvager_desc: "一位来自[salvager_enclave_country.GetName]的老练打捞者，以低廉的价格共享着他们的技术。"
+ leader_trait_master_salvager_effect: "$SYSTEM_EFFECTS_TXT$：\n$t$星系中的友方舰船：\n$tt$每月船体值维修：§G+2%§!\n$t$当星系中有残骸被打捞或研究完成：\n$tt$打捞舰船的概率：§Y15%§!\n$tt$$salvage_ship_restrictions$"
+
+ councilor_master_salvager: "$master_salvager$"
+ councilor_master_salvager_female: "$councilor_master_salvager$"
+ councilor_master_salvager_desc: "$master_salvager_desc$"
+ councilor_master_salvager_unlock_title: "§H来自[salvager_enclave_country.GetName]的内阁席位§!"
+ councilor_master_salvager_conditional_tooltip: "领袖拥有§Y$leader_trait_master_salvager$§!特质。"
+
+ unlocks_salvager_council_position: "\n§E允许解锁内阁席位：§!\n§H$t$$councilor_master_salvager$§!\n$tt$$COUNCIL_POSITION_MODIFIER_BASE$\n$ttt$$MOD_COUNTRY_SCAVENGE_DEBRIS_MULT$：§G+10%§!\n$ttt$$MOD_SHIP_FRIENDLY_TERRITORY_ARMOR_MULT$：§G+2%§!\n$COUNCIL_POSITION_AVAILABLE_FOR$$t$$scientist_with_icon$\n\n$COUNCIL_POSITION_REQUIREMENTS$$councilor_master_salvager_conditional_tooltip$"
+
+ master_salvager_already_bought: "§R我们已经为$master_salvager$的效力付了钱。§!"
+ master_salvager_explanation: "\n我们将雇佣以为具有§Y$leader_trait_master_salvager$§!特质的等级5科学家。"
+
  enclave.360.name:0 "回收所得"
  enclave.360.intro:0 "一列发自§Y[salvager_enclave_country.GetName]§!的货运驳船刚刚到达，装载着一批回收的资源。"
  enclave.360.a.desc:1 "$enclave.360.intro$\n\n打捞人员随货附上了一封感谢信，以及一份有形的礼物——某种动态艺术品。它在我们人工重力场中运动的方式令人不安，但也相当迷人。"
@@ -363,7 +381,7 @@
  enclave.405.e:0 "你能教我们如何开采§Y卓尘§!吗？"
  enclave.405.e.tt:0 "我们需要至少与§Y[shroudwalker_enclave_country.GetName]§!有§Y50§! £opinion£ 评价才能询问§Y卓尘§!开采事宜。"
  enclave.405.f:0 "我们遇到了一个自称是§Y“面纱旅人”§!的人……"
- 
+
  enclave.410.desc:1 "啊哈，一个重要的问题——和前人所问相比，深刻程度可谓不相上下。这么一个问题有不菲的价格，不过我们可以回答。\n\n然而，要知道：天幕允许我们感知尚未发生的事件，而这些知识将帮助指导你们的道路。但任何单一的事件都不足以撼动银河的运转。\n\n如果你有意达成这笔交易，那么相比于拓展抱负，你应该去做更充分的准备。但是，哦，哪怕是对顷刻将至之事的最细微一瞥，都可能建立起什么样的宏伟计划啊……"
  enclave.410.a:0 "我们还是考虑别的事情。"
  enclave.410.b:0 "我们将支付代价。"
@@ -897,7 +915,7 @@
  shroudwalker_spy_network_finish:0 "当[shroudwalker_enclave_country.GetName]从天幕有所获得的时候，他们就会返回向我们作更新汇报。"
 
  shroudwalker_teacher_cooldown_tt:0 "§R在§Y[root.shroudwalker_teacher_timer]§!之前我们不能请另一位天幕行者的导师。§!"
- shroudwalker_teacher_already_bought:0 "§R我们已经为天幕行者导师的效力付了钱。§!"
+ shroudwalker_teacher_already_bought:1 "§R我们已经为天幕行者导师的效力付了钱。§!"
  shroudwalker_teacher_already_exists:0 "§R这个行星已经有一位天幕行者导师在效力。§!"
 
  enclave.7100.desc:1 "掌控天幕是一次长达10000次生死的旅途；哪怕是我们最天赋异禀的导师也只敢声称自己对天幕的神秘有一些片面的了解。即使如此，他们的智慧也是无价之宝。如果你有所求，我们可以排遣一名导师为你指点迷津。"
@@ -922,7 +940,9 @@
 
  shroud_beacon_active_tooltip:0 "[Root.GetName]拥有一个启用的§Y天幕信标§!。"
 
- shroudwalker_teacher_explanation:1 "\n解锁§Y行星决议§!§H$decision_shroudwalker_teacher$§!带来下列效果：\n£amenities£ $MOD_PLANET_AMENITIES_MULT$：§G+5%§!\n$mod_planet_jobs_unity_produces_mult$：§G+10%§!\n$mod_planet_telepaths_unity_produces_add$：§G+3§!"
+# shroudwalker_teacher_explanation:1 "\nUnlocks the §Yplanetary decision§! §H$decision_shroudwalker_teacher$§! with the following effects:\n£amenities£ $MOD_PLANET_AMENITIES_MULT$: §G+5%§!\n$mod_planet_jobs_unity_produces_mult$: §G+10%§!\n$mod_planet_telepaths_unity_produces_add$: §G+3§!"
+
+ shroudwalker_teacher_explanation:2 "\n我们将雇佣一位具有§Y$leader_trait_shroudwalker$§!特质的等级5总督。"
 
  enclave.7250.desc:0 "我们对卓尘特别感兴趣。我们可以教你开采和储存的方法，但前提是你同意把你的产品永久地分成给我们。"
  enclave.7250.a:0 "你们会拿到分成的。教教我们。"
@@ -931,3 +951,39 @@
  shroudwalker_zro_tithe:0 "天幕行者的卓尘什一税"
  shroudwalker_zro_tithe_desc:0 "[shroudwalker_enclave_country.GetName]教导了我们如何开采卓尘。作为回报，我们发誓要向他们交付卓尘产量的十分之一。"
 
+ shroudwalker_teacher_desc: "$leader_trait_shroudwalker_desc$"
+ shroudwalker_teacher_catch_phrase: "§L“天幕的秘密终将揭晓。”§!"
+
+ leader_trait_shroudwalker: "天幕行者导师"
+ leader_trait_shroudwalker_desc: "一位[shroudwalker_enclave_country.GetName]的老手，擅长引导通向天幕的道路。"
+
+ councilor_shroudwalker_teacher: "天幕行者导师"
+ councilor_shroudwalker_teacher_female: "$councilor_shroudwalker_teacher$"
+ councilor_shroudwalker_teacher_desc: "在内阁任职的一位[shroudwalker_enclave_country.GetName]老手，引导着通向天幕的道路。"
+ councilor_shroudwalker_teacher_unlock_title: "§H来自[shroudwalker_enclave_country.GetName]的内阁席位§!"
+ councilor_shroudwalker_teacher_conditional_tooltip: "领袖拥有§Y$leader_trait_shroudwalker$§!特质"
+
+ unlocks_shroudwalker_council_position: "\n§E允许解锁内阁席位：§!\n§H$t$$councilor_shroudwalker_teacher$§!\n$tt$$COUNCIL_POSITION_MODIFIER_BASE$\n$ttt$$mod_category_psionics_draw_chance_mult$：§G+5%§!\n$ttt$$mod_country_unity_produces_mult$§G+1%§!\n$ttt$$mod_shroud_delve_cost$：§G-2%§!\n$COUNCIL_POSITION_AVAILABLE_FOR$$t$$governor_with_icon$\n\n$COUNCIL_POSITION_REQUIREMENTS$$councilor_shroudwalker_teacher_conditional_tooltip$"
+
+ enclave.8000.name: "攻击[FROM.GetName]"
+ enclave.8000.start: "在我们对[FROM.GetName]发起进攻后，[root.GetTitle]§Y[root.GetName]§!离开了我们的国境。[root.GetHeSheCap]记录下了一段[root.GetHisHer]离开时的信息。"
+ enclave.8000.end: "万幸的是，除了搬离了[root.GetHisHer]自己的工作场所以外，[root.GetName]对领导层没有造成其他任何的扰乱。"
+ enclave.8000.councilor_end: "由于[root.GetHisHer]曾在内阁任职，[root.GetName]和[root.GetHisHer]雇员们的离开对政府运作造成了很大的干扰。"
+
+ shroudwalker_teacher_farewell: "§L“你已经涉足了自己无法理解的力量。谨言慎行，学会安于当下，因为在你选择的道路上，未来只会带来痛苦。”§!"
+ enclave.8000.shroudwalker_teacher.desc: "$enclave.8000.start$\n\n$shroudwalker_teacher_farewell$\n\n$enclave.8000.end$"
+ enclave.8000.shroudwalker_teacher.desc.councilor: "$enclave.8000.start$\n\n$shroudwalker_teacher_farewell$\n\n$enclave.8000.councilor_end$"
+
+ master_salvager_farewell: "§L“行吧，你已经展露了自己的真实面目。我本有更好的期待。愿你的引擎炸响熄灭，与你一起坠入虚空。”§!"
+ enclave.8000.master_salvager.desc: "$enclave.8000.start$\n\n$master_salvager_farewell$\n\n$enclave.8000.end$"
+ enclave.8000.master_salvager.desc.councilor: "$enclave.8000.start$\n\n$master_salvager_farewell$\n\n$enclave.8000.councilor_end$"
+
+ curator_archivist_farewell: "§L“卑鄙！庸俗！懦夫！一想到我们以为你们是文明人……但我觉得种背信弃义是意料之中的——卑劣的本能和狭隘的贪婪一直是你们民族性格的标志。”§!"
+ enclave.8000.curator_archivist.desc: "$enclave.8000.start$\n\n$curator_archivist_farewell$\n\n$enclave.8000.end$"
+ enclave.8000.curator_archivist.desc.councilor: "$enclave.8000.start$\n\n$curator_archivist_farewell$\n\n$enclave.8000.end$"
+
+ trader_leader_farewell: "§L“那么，为什么不让我知道这个小小的市场秘密呢？告诉我，这是个什么居心？有何利可图？你们这些白痴难道不知道你毁了我们双方吗？”§!"
+ enclave.8000.trader_leader.desc: "$enclave.8000.start$\n\n$trader_leader_farewell$\n\n$enclave.8000.end$"
+ enclave.8000.trader_leader.desc.councilor: "$enclave.8000.start$\n\n$trader_leader_farewell$\n\n$enclave.8000.councilor_end$"
+
+ leader_leaves_tt: "§Y[root.GetName]§!离开了我们的帝国。"

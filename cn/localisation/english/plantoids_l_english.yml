@@ -3,6 +3,169 @@
  # Plantoids Species Pack
  ########################
 
+ ### Fruitful Partnership Origin
+ ## By Giada Zavarise
+
+ feeding_station: "硕果花园"
+ feeding_station_plural: "硕果花园"
+
+ origin_fruitful: "硕果协作"
+ origin_fruitful_desc: "这个郁郁葱葱的文明与太空生物群形成了独特的协同作用。通过向这些生物提供果实，他们吸引种子传播者来帮助它们进行殖民。"
+ origin_tooltip_fruitful_effects: "—太空兽群：在星系各处散布['concept_seed_pod', 种荚]\n—$AVAILABLE_STARBASE_BUILDINGS$['concept_sm_feeder', 星种花园]\n—$AVAILABLE_BOMBARDMENT_STANCE$['concept_seed_bombing' ]\n—$HOME_SYSTEM$['concept_tiyanki' ]出现在附近的星系中"
+ civic_tooltip_hive_xenophile_or_pacifist: "一定程度上偏向§Y亲外主义§!、§Y和平主义§!或是一个§Y格式塔意识§!"
+
+ START_SCREEN_FRUITFUL_PLANTOID: "如果你的根扎得很深，而你的精神却变得焦躁不安，那就让别人替你分担痛苦吧。让动物们轻嗅你的花朵，以果实之给养和树影之阴翳加以馈赠。便让它们把花粉和种子带到远方，好让你的后代在异星的土地上生根发芽。当风中传来叶语婆娑，便知你的游子已寻见了新家。\n\n自古以来，我们就与当地的动物合作，将我们的物种传播到[GetHomeWorldName]各地。所以，当我们要把自己连根拔起，将树枝伸向天空时，我们自然也会与虚空中的动物群联系在一起。让他们啃食我们的水果，咀嚼我们的枝叶。然后让它们将把我们的孩子带到遥远的星球，在那里，他们将在外星的阳光下茁壮成长。\n\n愿我们播种四方，愿星系成为我们的花园。"
+ START_SCREEN_FRUITFUL_FUNGOID: "如果你的菌丝扎得很深，而你的精神却变得焦躁不安，那就让别人替你分担痛苦吧。让动物们轻嗅你的孢子，以菌杆之给养和菌盖之阴翳加以馈赠。便让它们把孢子带到远方，好让你的后代在异星的土地上生根发芽。当大地中传来菌网呢喃，便知你的游子已寻见了新家。\n\n自古以来，我们就与当地的动物合作，将我们的物种传播到[GetHomeWorldName]各地。所以，当我们要把自己连根拔起，将菌柄伸向天空时，我们自然也会与虚空中的动物群联系在一起。让他们啃食我们的子实体，咀嚼我们的菌褶。然后让它们将把我们的孩子带到遥远的星球，在那里，他们将在外星的土壤中茁壮成长。\n\n愿我们播种四方，愿星系成为我们的蘑菇花园。"
+
+ ## Techs
+ sm_feeder: "星种花园"
+ sm_feeder_desc: "一座为我们太空基地建造的真空花园，长满各种用于吸引太空生物群的基因增强植物。"
+ sm_feeder_tt: "效果：\n$t$吸引太空兽群到太空基地觅食，并将§Y种荚§!带走散播"
+ sm_ring_feeder: "轨道花园"
+ sm_ring_feeder_desc: "星环基地上建造的结满生物工程改造的果实的真空花园，通过基因技术增强对太空生物的吸引力。"
+
+ tech_critter_feeder: "硕果花园"
+ tech_critter_feeder_desc: "结满生物工程改造的果实的真空花园，通过基因技术增强对太空生物的吸引力。"
+
+ sseeder: "果园站"
+
+ has_origin_fruitful_special_project_key: "拥有§Y$origin_fruitful$§!起源的帝国可以使用一项§Y特殊项目§!"
+
+ seeded_planet_0_modifier: "休眠种荚"
+ seeded_planet_0_modifier_desc: "来自完全不同生态系统的奇怪种子蛰伏在这颗星球上。"
+ seeded_planet_0_modifier_tooltip: "$has_origin_fruitful_special_project_key$来开启种荚并殖民这颗行星。"
+ seeded_planet_1_modifier: "外星入侵植物"
+ seeded_planet_1_modifier_desc: "来自另一片土地的种子在这里找到了肥沃的土壤，正在取代当地的植被。"
+ seeded_planet_1_modifier_tooltip: "$has_origin_fruitful_special_project_key$来在战争期间在这颗行星上召唤陆军。"
+ seeded_planet_2_modifier: "散布外星入侵植物"
+ seeded_planet_2_modifier_desc: "来自另一片土地的种子在这里找到了肥沃的土壤，取代了当地的植被。"
+ seeded_planet_2_modifier_tooltip: "$seeded_planet_1_modifier_tooltip$"
+ seeded_planet_3_modifier: "摧枯拉朽的外星入侵植物"
+ seeded_planet_3_modifier_desc: "来自另一片土地的种子在这里找到了肥沃的土壤，正在取代当地的植被。"
+ seeded_planet_3_modifier_tooltip: "$seeded_planet_1_modifier_tooltip$"
+
+ MESSAGE_FRUITFUL_SEED_PLANTED_TITLE: "种荚已栽种"
+ MESSAGE_FRUITFUL_SEED_PLANTED_OWNER: "我们的种荚已被太空生物带去了$SYSTEM|Y$星系的$PLANET|Y$上，他们将在那茁壮成长成新的树林。"
+ MESSAGE_FRUITFUL_SEED_PLANTED_NO_OWNER: "我们的种荚已被太空生物带去了$SYSTEM|Y$星系的$PLANET|Y$上。他们将保持休眠，等待我们的开启。"
+
+ MESSAGE_FRUITFUL_SEED_LOST_TITLE: "种荚遗失"
+ MESSAGE_FRUITFUL_SEED_LOST: "我们与$PLANET|Y$上的种荚已失去联系。他们似乎是被摧毁了。"
+
+ MESSAGE_FRUITFUL_SEED_CRITTER_TITLE: "种子已吸收"
+ MESSAGE_FRUITFUL_SEED_CRITTER: "访问$SYSTEM|Y$的太空动物吃掉了我们果园的果实，现在正载着种子漂星过海。"
+
+ OPEN_SEED_PODS_PROJECT: "在[this.GetName]打开种荚"
+ OPEN_SEED_PODS_PROJECT_DESC: "太空动物已将我们的休眠种荚带到了§H[this.GetName]§!。通过向这颗行星发射一道聚能光束，我们可以刺激其生长，将这颗了无生机的星球转变为郁郁葱葱的新殖民地。"
+
+ WEEDS_ARMY_PROJECT: "在[this.GetName]上生长陆军"
+ WEEDS_ARMY_PROJECT_DESC: "太空动物已将我们的种荚带到了§H[this.GetName]§!，它们将于此处得到§H[this.owner.GetName]§!的栽培和照料。通过向行星发射一道聚能光束，将这片森林转变为§H外星植物军§!。这颗行星上§H外星入侵植物§!的等级越高，就会生成越多的陆军。"
+
+ FRUITFUL_SEED_POD: "种荚"
+
+ fruitful_army: "外星植物军"
+
+ # Events
+ origin.7100.name: "散布种子"
+ origin.7100.desc: "我们为星系的太空生物群建造了一座花园。我们让其中开满了鲜花，结满了果实和黏性的种荚，时刻准备着附着在这些令人惊叹的生物的皮肤上。但这些深居虚空的生灵们会出席我们的盛宴吗？当他们咬下第一口果实时，所有的担忧便已烟消云散。\n\n从记事起，我们就已经在自己的星球上为各种动物提供果实与隐蔽。作为汇报，它们替我们携带种子。如今，这一古老的契约被翻印到了星系的尺度上：太空生物将携带着我们的§Y种荚§!一通旅行。只要运气尚佳，我们的种子将会落在一颗§H可殖民行星§!上，并找到为我们的人民建造一座新花园所需的一切。我们只需要引导一道能量束将他们激活，就可以让我们无需派遣殖民船便可以定居到新的行星上。"
+ origin.7100.tooltip: "当进入一个新的星系，太空生物就会有概率将§H种荚§!丢弃在一颗宜居行星上。请耐心等待。"
+
+ origin.7304.name: "协同散布"
+ origin.7304.desc: "我们得舰队中有有机生物，而它们同样钟情于我们的星际果实。\n\n在过去，我们总需要对种子的去向听天由命。现在我们可以自己设定航线了。这是一种全新的，但我们能够适应的感觉。"
+
+ origin.7321.name: "先难后获"
+ origin.7321.desc: "我们打开了在§H[from.GetName]§!的§Y种荚§!，新生的[root.GetSpeciesNamePlural]开始生根发芽。"
+
+ origin.7326.name: "神秘种子"
+ origin.7326.desc.base: "[this.GetName]上的土壤里散落着似乎不属于当地生态系统的种子。在最低限度的光照和水分下，种子迅速地生长，新生的森林迅速包裹了整个行星，促进了我们的殖民活动。"
+ origin.7326.desc.knowowner: "$origin.7326.desc.base$\n\n根据我们的基因分析，这些生长快速的基因工程种子是由§Y[seeds_owner.GetName]§!研发的。"
+ origin.7326.desc.notknowowner: "$origin.7326.desc.base$。我们的科学家无法分析这些种子的来源，但可以肯定一点：它们一定是经过人工基因修饰的，可以在外星土壤上快速扎根。"
+ origin.7326.a.desc: "在该行星上解锁§Y$decision_uproot_weed$§!决议。"
+
+ origin.7327.name: "$origin.7326.name$"
+ origin.7327.desc.base: "在穿过[this.solar_system.GetName]星系时，一群太空生物遗留留下了一个未识别物体，并落到了[this.GetName]的地表我们很快抵达了撞击点，却发现当地充斥着从未见过的植被。这个坠落物似乎是某种殖民船：一个载着包括关键材料和新苏醒殖民者等等建造殖民地的一切必须品的种荚。"
+ origin.7327.desc.knowowner: "$origin.7326.desc.base$\n\n据基因分析，这些特别的种子是由§Y[seeds_owner.GetName]§!研发的。"
+ origin.7327.desc.notknowowner: "$origin.7326.desc.base$\n\n得益于这些种荚中的通讯系统，我们可以很快与这些种子的发源地帝国建立联络。"
+ origin.7327.desc.moreseeds: "我们星球上的外星植物已经生长得更加强大了。"
+
+ origin.7328.name: "$origin.7321.name$"
+ origin.7328.desc: "我们得殖民船刚刚着陆于§H[from.GetName]§!，但我们休眠的人民早已深深扎根在土壤中了。§Y种荚§!中所附带的额外[root.owner.GetSpeciesNamePlural]和资源将有助于我们在这颗星球上的殖民地发展。\n\n祝愿他们根深叶茂。"
+
+ origin.7400.name: "部署哨站！"
+ origin.7400.desc: "我们在§Y[Root.GetName]§!上的遥远[owner.GetColonistPlural]在恒星附近部署了一座§Y$starbase_outpost$§!，从而获得了§Y[Root.GetStarName]§!星系的控制权。"
+
+ origin.7500.name: "保障太空兽群安全"
+ origin.7500.desc: "我们与太空生物的关系相当独特，但我们并不是唯一尊重它们生存权的人。银河共同体刚刚通过的一项议案将有助于保护这些奇妙生物。"
+
+ origin.7510.name: "太空兽群面临的危险"
+ origin.7510.desc: "太空生物一直是我们的朋友，但并非所有的银河共同体成员都像我们一样热爱这些太空生物。 他们刚刚通过的决议将我们的朋友——以及我们自己——的生命置于危险之中。"
+
+ origin.7600.name: "种瓜得瓜，种豆得豆"
+ origin.7600.desc: "我们的敌人认为我们会屈服于他们的力量，就像被风吹倒的芦苇一样。 他们忘记了植物有刺。\n\n我们的士兵睡在他们的土地上。 如果有需要，我们可以将我们的§H外星入侵植物§! 转变为陆军，保护我们的一切，扼杀他们所谓的他们拥有的东西。 我们只需将能量束引导到指定的行星即可开始我们的入侵行动。"
+
+ origin.7710.name: "种瓜得瓜，种豆得豆"
+ origin.7710.desc: "§H[from.GetName]§!上的§H外星入侵植物§!突然长出肢体变成了一支军队。这颗行星正在遭到攻击！"
+
+ MESSAGE_FRUITFUL_WEED_ARMY_TITLE: "陆军发芽"
+ MESSAGE_FRUITFUL_WEED_ARMY: "$PLANET|Y$上的种子已成长为一支陆军。"
+
+ opinion_nice_forests: "得力园丁"
+ opinion_cut_our_forests: "修剪我们的花园"
+
+ opinion_voted_to_kill_tiyanki: "投票支持伤害太空兽群"
+ opinion_voted_to_help_tiyanki: "投票支持保护太空兽群"
+
+ fruitful_partnership_chain_title: "散布种子"
+ fruitful_partnership_chain_desc: "太空动物会将我们的§Y种荚§!带到遥远的土地。只要一抹星光，我们的种子就能绽放为新的殖民地。"
+
+ fruitful_partnership_war_chain_title: "种子战争"
+ fruitful_partnership_war_chain_desc: "战争时期，我们的§Y种荚§!可以绽放成为陆军，随时保卫我们的星球或者入侵遥远的目标。"
+
+ decision_uproot_weed: "斩草除根"
+ decision_uproot_weed_desc: "移除$seeded_planet_2_modifier$。"
+
+ ## Seed Bombing
+ bombardment_seed_bombing: "种子轰炸"
+ bombardment_seed_bombing_desc: "$bombardment_seed_bombing$用超授粉的种子球覆盖行星，引起爆发性增长。\n—对§Y陆军§!§E不造成§!伤害\n—对§Y行星§!造成§H重度§!伤害\n—对§Y人口§!§E不造成§!伤害\n—将会轰炸不设防的星球\n—在星球上生成地块障碍"
+
+ d_seed_bombing_plantoid_blocker: "£blocker£爆发性森林增生"
+ d_seed_bombing_plantoid_blocker_desc: "行星的这一区域被无限增殖的外星植物森林所感染。"
+
+ d_seed_bombing_fungoid_blocker: "£blocker£爆发性真菌增生"
+ d_seed_bombing_fungoid_blocker_desc: "行星的这一区域被无限增殖的外星菌落所感染。"
+
+ d_seed_bombing_blocker_custom_tooltip: "$d_decrepit_dwellings_custom_tooltip$\n"
+
+ origin.7201.name: "爆发性增生"
+ origin.7201.desc: "我们在§H[this.GetName]§!的殖民地正在被超授粉的种子球轰炸。森林在世界各地快速增生，地面撕裂、建筑倒毁，[this.GetPlanetHabitat]上现在到处都是迅速生长的外星植物。"
+ MESSAGE_FRUITFUL_SEED_BOMBING_TITLE: "种子轰炸"
+ MESSAGE_FRUITFUL_SEED_BOMBING: "种子轰炸在$PLANET|Y$上制造了一个新障碍地块。"
+
+ ## Critters interactions
+
+ # Amoebas
+ story.101.desc.fruitful: "$story.101.desc$若得以安抚，它们可以成为我们种荚的理想携带者。"
+ story.107.fruitful.desc: "$story.107.desc$尽管它们是肉食性的，但我们的研究人员开发的肉质球果对它们的口味也很有吸引力。"
+ story.107.a.fruitful.tooltip: "我们的§H$sm_feeder$§!现在能吸引§H太空变形虫§!种群了。"
+
+ # Crystals
+ story.201.desc.fruitful: "$story.201.desc$我们不确定这些生物是否进食，只要他们吃东西就可以当做我们种子的携带者。安抚他们可以让我们进行进一步的研究。"
+ story.207.fruitful.desc: "$story.207.desc$为这些生物培育美味的果实颇具挑战。我们还不确定它们是在吃我们创造的玻璃状的球果，还是只是因为被其光滑的表面所吸引而随身携带。无论如何这都能满足我们的需求了。"
+ story.207.a.fruitful.tooltip: "我们的§H$sm_feeder$§!现在能吸引§H晶态实体§!种群了。"
+
+ # Study the Tyanki and get their tech
+ origin.7000.name: "$story.501.name$"
+ origin.7000.desc: "§Y天凯§!是我们最先遇到的外星物种，关于这种温顺的生物我们已经了解了很多。\n\n这种太空生物可以访问某种低维度的亚空间，所以他们能轻易地在星系间穿行。他们已许多气态行星上层大气中的气体为食，但已经喜欢上了我们的果实。他们即便在受到惊扰的情况下几乎不会发起攻击。\n\n这就是我们种子的完美载体：平静、无害甚至有点无聊。他们隐藏着什么秘密吗？"
+ origin.7000.a: "把更多的时间花在他们的研究上。"
+ origin.7000.b: "我们还有更要紧的事情。"
+
+ TIYANKIS_PROJECT: "天凯观测"
+ TIYANKIS_PROJECT_DESC: "把一些空间站人员投入到对缇杨奇的研究中，可以让我们进一步了解这些宁静而神秘的太空生物的习性。"
+
+ origin.7005.name: "$story.501.name$"
+ origin.7005.desc: "通过对这些太空朋友进食习性的研究，我们的科学家获得了研究突破。$tech_space_whale_weapon_1_desc$。这项科技毫无疑问是非常有用的。"
+
+ ### Civics
+
  civic_idyllic_bloom:0 "田园绽放"
  civic_idyllic_bloom_desc:0 "这个社会一直花费大量时间在改善和爱护环境上，追求为居民们建造一个真正的天堂。"
  civic_hive_idyllic_bloom:0 "$civic_idyllic_bloom$"
@@ -11,6 +174,11 @@
  civic_tooltip_not_idyllic_bloom:0 "没有公民性：§Y$civic_idyllic_bloom$§!"
 
  disables_idyllic_bloom:0 "§R选择这个飞升天赋将使得$civic_idyllic_bloom$理念失效§!"
+
+ gaia_seeder_bloomed_pops_effect: "盖娅播种器将[This.GetName]成功地转化为$pc_gaia$之后，它会用于让我们的人口进一步适应这颗星球。\n\n§Y$trait_plantoid_bloomed$§!和§Y$trait_plantoid_budding$§!特质的效果提高§G+50%§!。"
+ gaia_seeder_bloom_timer_tooltip: "\n§Y[This.GetName]§!的下一次绽放将会在§Y[This.gaia_seeder_bloom_timer]§!发生。"
+ MESSAGE_POPS_IDYLLIC_BLOOMED_TITLE: "人口绽放"
+ MESSAGE_POPS_IDYLLIC_BLOOMED: "$PLANET|Y$上的盖娅播种器又一次引发了绽放，增加了$VALUE|Y$£pops£人口。"
 
  gaiaseeders_tomb_world:0 "$TRIGGER_FAIL$需要£society£§Y$tech_climate_restoration$§!以在§Y废土世界§!上建造。"
  gaiaseeders_same_climate_start:0 "$TRIGGER_FAIL$需要£society£§Y$tech_terrestrial_sculpting$§!以在其上建造"
@@ -89,16 +257,19 @@
  trait_advanced_radiotrophic:0 "$trait_plantoid_radiotrophic$"
  trait_advanced_radiotrophic_desc:0 "§L通过先进的基因科技，该物种现在可以部分依靠低能辐射自养，并因此可以在环境最恶劣的星球上生存。§!"
  TRAIT_ADVANCED_RADIOTROPHIC_EFFECT:0 "$TRAIT_PLANTOID_PHOTOTROPHIC_EFFECT$\n§Y废土世界§!上的人口将会移除该£energy£ §Y能源点数§!维护费"
- 
+
  trait_advanced_budding:0 "$trait_plantoid_budding$"
  trait_advanced_budding_desc:0 "§L对他们的遗传物质序列的修改使得物种可以在保有通常繁殖方式的同时，以出芽的方式进行繁殖。§!"
 
+ trait_plantoid_bloomed: "盛放"
+ trait_plantoid_bloomed_desc: "这个物种受到盖娅播种器的转化效应的影响，在盖娅星球生活时会萌发出互惠的地衣花朵。"
+ plantoid_bloomed_trait_tooltip: "在盖娅星球上的效果：\n$t$$mod_planet_jobs_produces_mult$：§G+10%§!\n$t$$MOD_POP_GROWTH_SPEED$：§G+10%§!\n$t$$MOD_POP_AMENITIES_USAGE_MULT$：§G-10%§!\n$t$$MOD_POP_HOUSING_USAGE_MULT$：§G-10%§!\n\n这些效果能被£building£$building_gaiaseeders_4$提升。"
 ### Catalytic Processing by Byron Aytoun
 
 # Regular
  civic_catalytic_processing:0 "催化加工"
  civic_catalytic_processing_desc:0 "这个文明的工业专注于研究催化化学，并揭开了使用有机材料建造太空构造的奥秘。"
- civic_tooltip_catalytic_processing_effects:0 "将£job_foundry£§Y$job_foundry_plural$§!岗位替换为£job_catalytic_technician£§Y$job_catalytic_technician_plural$§!岗位。 $job_catalytic_technician_effect_desc$。"
+ civic_tooltip_catalytic_processing_effects:0 "将£job_foundry£§Y$job_foundry_plural$§!岗位替换为£job_catalytic_technician£§Y$job_catalytic_technician_plural$§!岗位。$job_catalytic_technician_effect_desc$。\n£job_chemist£§Y$job_chemist_plural$§!、£job_translucer£§Y$job_translucer_plural$§!和£job_gas_refiner£§Y$job_gas_refiner_plural$§!的$r_minerals$维护费将替换为$r_food$维护费。"
 
 # Corporate
  civic_corporate_catalytic_processing:1 "催化回收"
@@ -109,6 +280,8 @@
  civic_hive_catalytic_processing:1 "有机再加工"
  civic_hive_catalytic_processing_desc:0 "这个蜂巢将多余的有机物重新加工成适合太空结构的先进资源。"
  civic_tooltip_hive_catalytic_processing_effects:0 "将£job_alloy_drone£§Y$job_alloy_drone_plural$§!岗位替换为£job_catalytic_drone£§Y$job_catalytic_drone_plural$§!岗位。$job_catalytic_drone_effect_desc$。"
+
+ catalytic_gestalt_additional_effects: "\n将£job_chemist_drone£§Y$job_chemist_drone_plural$§!、£job_translucer_drone£§Y$job_translucer_drone_plural$§!、以及£job_gas_refiner_drone£§Y$job_gas_refiner_drone_plural$§!的$r_minerals$维护费替换为$r_food$维护费。"
 
 # Machine Intelligence
  civic_machine_catalytic_processing:1 "$civic_hive_catalytic_processing$"
@@ -132,3 +305,8 @@
  mod_job_catalytic_drone_add:0 "$job_catalytic_drone$岗位"
  mod_job_catalytic_drone_per_pop:0 "每$VALUE$个人口提供§G+1§!个$job_catalytic_drone$岗位"
  mod_job_catalytic_drone_per_pop_short:0 "\n每$VALUE$£pop£提供§G+1§!个£mod_job_catalytic_drone_add£岗位"
+
+ ### Invasive Species trait
+ trait_invasive: "入侵物种"
+ TRAIT_INVASIVE_EFFECT: "§Y只能选择负面或植物特质§!\n\n宜居性：每选择一个负面特质§G+5%§!\n人口增长速度：每选择一个负面特质§G+5%§!"
+ trait_invasive_desc: "快速繁衍。擅于拓殖。百无一用。"

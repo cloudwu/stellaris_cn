@@ -5,7 +5,7 @@
  FIRST_CONTACT_ICON_ENVOY_DESC:1 "我们于$DATE|Y$首次遭遇了$NAME|Y$\n\n我们的特使$ENVOY|Y$正在试图进一步了解这些外星人。\n\n§G点击处理此次接触。§!"
  FIRST_CONTACT_NAME_WITH_LOCATION:0 "与$NAME|Y$在$LOC|Y$的第一次接触"
  FIRST_CONTACT_ASSIGN_ENVOY:0 "§H指派特使进一步了解$NAME|Y$§!"
- MESSAGE_FIRST_CONTACT_FINISHED_TITLE:0 "第一次接触完成"
+ MESSAGE_FIRST_CONTACT_FINISHED_TITLE:1 "第一次接触完成"
  MESSAGE_FIRST_CONTACT_FINISHED_DESC:1 "我们完成了第一次接触流程"
  MESSAGE_FIRST_CONTACT_STAGE_FINISHED_TITLE:0 "考古遗址勘察进度"
  MESSAGE_FIRST_CONTACT_STAGE_FINISHED_DESC:0 "我们已经解锁了一处考古遗址的下一阶段"
@@ -201,8 +201,10 @@
  OUR_DECRYPTION:2 "我方破译：$VALUE$"
  IS_FIRST_CONTACT_UNDER_INVESTIGATION_TRIGGER:0 "正在调查$NAME|Y$"
  MESSAGE_FIRST_CONTACT_ABORTED_TITLE:0 "废止第一次接触"
+ MESSAGE_FIRST_CONTACT_ABORTED_KEY: "$MESSAGE_FIRST_CONTACT_ABORTED_TITLE$（接触不复存在）"
  MESSAGE_FIRST_CONTACT_ABORTED_DESC:1 "由于$COUNTRY|H$已经不复存在，我们同它们的第一次调查被废止了。"
  MESSAGE_FIRST_CONTACT_ABORTED_THEY_COMPLETED_TITLE:0 "$MESSAGE_FIRST_CONTACT_ABORTED_TITLE$"
+ MESSAGE_FIRST_CONTACT_ABORTED_THEY_COMPLETED_KEY: "$MESSAGE_FIRST_CONTACT_ABORTED_TITLE$（通讯已建立）"
  MESSAGE_FIRST_CONTACT_ABORTED_THEY_COMPLETED_DESC:1 "由于$COUNTRY|H$已经同我们建立了通讯，我们同它们的第一次调查被废止了。"
 
  first_contact_skill_increased:1 "§G我们未来的第一次接触流程将更容易完成。§!"
@@ -322,10 +324,13 @@
  first_contact.101.A:0 "兴奋——我们找到了自己失落的同族！"
  first_contact.101.B:0 "希望我们之间的血缘纽带能够导向友谊。"
  first_contact.101.C:0 "也许我们应该继续攻击他们……"
+ first_contact.101.D: "亲情并不一定就意味着友情。保持警惕。"
 
  first_contact.102.name:0 "[This.ContactCountry.GetName]被解密"
  first_contact.102.desc:1 "当我们将自己的处理器转为翻译从被记作§H[This.ContactCountry.GetName]§!的未知外星人截获的通讯信号时，我们惊讶地发现：他们同样也隶属于某个机械智能！尽管他们的程式和我们在各种方面都大不一样，其语言建立于大量不同的有机体语言基础之上，然而他们的语言和我们有着类似的语素假设。结果，我们只花了几瞬的功夫就解密了他们的用语程式，开始进行基础的交流，他们现在被正式称为§H[This.ContactCountry.GetRealName]§!。"
+ first_contact.102.lostcolony.desc: "-当我们将处理器切换为翻译来自未知外星人——被我们标记为§H[This.ContactCountry.GetName]§!——的通信时，我们发现了一个惊人的事实：他们也属于一种机械智能！他们的通信协议与我们的非常相似，软件兼容性使我们能够迅速建立通信。相似之处还延伸到其他领域，可以说我们的机械智能可以被视为他们代码库的一个分支。只有一个合理的解释。"
  first_contact.102.A:0 "结果评估充分。"
+ first_contact.102.B: "任务更新：发现主机。"
 
  first_contact.103.name:0 "一种集体智慧"
  first_contact.103.desc.base:0 "我们解码收集自§H[This.ContactCountry.GetName]§!信号的努力终见收获，我们终于能够和现在被称为§H[This.ContactCountry.GetRealName]§!的文明打开外交通讯频道了。"
@@ -855,7 +860,43 @@
  first_contact.5075.name:0 "无效沟通"
  first_contact.5075.desc:0 "§H[This.ContactCountry.GetName]§!的语言看似包含了数百万看似冗余的音节，似乎仅仅只是他们古代语言残留下来约定俗成的东西。在翻译的时候，这些不必要的填充性词汇唯一的作用看起来只是用来补充语法的完整性，或者最多有一些微不足道的上下文提示作用。\n\n幸好，我们的[This.Owner.GetLinguists]已经缩减了他们语言中这些过时的部分，制定出了简化版辞典，这样一来我们就能与§H[This.ContactCountry.GetName]§!进行高效的沟通。"
 
+ # The Trial
+ first_contact.5080.name: "穿梭机"
+ first_contact.5080.desc.start: "§H[This.ContactCountry.GetName]§!在太空中的一艘太空梭靠近了我们。由于没有发生其他事情，我们假设他们希望在远离他们主舰船的地方会面。由于船只尺寸较小，只有我们的[Owner.GetEnvoy][Leader.GetName]被派去，其他外交团队成员留在后方。"
+ first_contact.5080.desc.weapon: "穿梭机配备了精妙的武器系统，外星人已经准备好进行武力对抗。" #Likely militarist
+ first_contact.5080.desc.functional: "太空梭讲究实用，体积很大。显然功能比外观的优先级更高。" #Likely egalitarian
+ first_contact.5080.desc.bling: "太空梭上装饰着精美的装饰品和金色的铆钉。显然，它的设计旨在通过奢华的展示给人留下深刻的印象。" #Likely materialist
+ first_contact.5080.desc.standard: "外星人的太空梭和我们的设计款式很类似，这在某种程度上让人舒心。" #Standard
 
+ first_contact.5085.name: "等待之地"
+ first_contact.5085.desc.start: "[Leader.GetName]返回报告说，没有来自§H[This.ContactCountry.GetName]§!的人接见[Leader.GetHimHer]。"
+ first_contact.5085.desc.meditation: "无人驾驶的太空梭内设有一个中央会议室。地面和墙壁覆盖着柔软的材料，而来自外星世界的平静自然声响则从隐藏的扬声器中播放出来。" #Likely pacifist
+ first_contact.5085.desc.pool: "无人驾驶的太空梭内设有一个中央会议室，其中一端有一个水池。外星符号环绕着水池周围的地板。" #Likely spiritualist
+ first_contact.5085.desc.imposing: "无人驾驶的太空梭内设有一个中央会议室，其装修风格既低调又奇异地给人一种庄严的感觉。墙壁的角度和装饰设计旨在将观者的注意力引向一个高高的讲台。" #Likely authoritarian
+ first_contact.5085.desc.standard: "无人驾驶的太空梭内设有一个中央会议室，令人惊讶的是，它非常朴素，缺乏任何装饰或装饰品。" #Standard
+ first_contact.5085.desc.end: "有一面墙上装满了记录设备和敏感器。站在冷漠的机器前，[Leader.GetName]概述了我们物种的历史和文化。演示没有得到任何回应。[Leader.GetName]感到十分沮丧，只能留下一个视频平板离开，平板中包含了大量历史记录和我们语言使用的入门指南。"
+ first_contact.5085.a: "拭目以待吧。"
+
+ first_contact.5090.name: "手段"
+ first_contact.5090.desc.proactive: "单方面的沟通让外交团队遭受巨大的挫折。他们渴望成功的第一次接触，为此他们在没有任何事实基础的情况下，制定了分支预测策略来指导剩余的接触流程。"
+ first_contact.5090.desc.cautious: "在登陆太空梭进行展示之后，紧接着是一阵焦虑，连[Leader.GetName]都公开怀疑[Leader.GetHeShe]是否成功地进行了介绍汇报。"
+ first_contact.5090.desc.aggressive: "幸亏来自[Leader.GetName]的直接命令阻止了第一次接触流程升级演变为暴力事件。对于团队来说，外星人持续的沉默无疑是一种侮辱。"
+ first_contact.5090.desc.end: "几个小时后，§H[This.ContactCountry.GetName]§!用我们的语言传达了一条简短的信息：\n\n“我们对你们的文化没有产生深刻印象。就这些吗？[Owner.GetEnvoy]有最后一次机会在你们选择的领域中给我们留下深刻印象。”"
+ first_contact.5090.a: "战斗试炼。"
+ first_contact.5090.a.tt: "先出手。狠出手。"
+ first_contact.5090.b: "有说服力的演讲。"
+ first_contact.5090.b.tt: "他们肯定讲得通道理。"
+ first_contact.5090.c: "即兴的音乐韵律。"
+ first_contact.5090.c.tt: "树立我们的文化自信，让他们自惭形秽。"
+
+ first_contact.5095.name: "判决"
+ first_contact.5095.desc.combat_good: "[Leader.GetName]从§H[This.ContactCountry.GetName]§!返回了！尽管伤痕累累，但却载誉而归。\n\n从一个隐藏的门中，一名外星战士突然现身并开始同我们的[Owner.GetEnvoy]展开搏斗，直到筋疲力尽。在最后一丝力量的召唤下，[Leader.GetName]设法制服了[Leader.GetHisHer]的对手。\n\n不到一个小时，[This.ContactCountry.GetName]发送了一条信息：\n\n“[Leader.GetName]将被记录在我们的史册中，作为一位伟大的战士。”"
+ first_contact.5095.desc.combat_bad: "[Leader.GetName]迷惑地从§H[This.ContactCountry.GetName]§!的太空梭返回，没有找到对手。在一个小时内，§H[This.ContactCountry.GetName]§!发送了一条消息：\n\n“你们野蛮的做法让我们感到失望。对于一个开化的文明来说，进行肉体上的战斗是非常不合适的。”"
+ first_contact.5095.desc.speech_good: "[Leader.GetName]满怀信心地从§H[This.ContactCountry.GetName]§!的太空梭返回。[Leader.GetHeSheCap]在感应墙前为我们的情况辩论时，忘却了时间的概念，全面地解释了历史决策的各种原因以及我们作为一个文化如何学习和成长。\n\n不到一个小时，§H[This.ContactCountry.GetName]§!发来了一条消息：\n\n“尽管你们过去经历了困难，但你们取得了巨大的成长。你们的文化是一个鼓舞人心的榜样。”"
+ first_contact.5095.desc.speech_bad: "[Leader.GetName]失望地从§H[This.ContactCountry.GetName]§!的太空梭返回。[Leader.GetHeSheCap]在感应墙前花了一个多小时，事无巨细地介绍我们的文化，并辩论我们历史决策的正确性。\n\n不久之后，§H[This.ContactCountry.GetName]§!发来了一条信息：\n\n“你所叙述的历史展示的是你的文化的贫瘠。”"
+ first_contact.5095.desc.song_good: "[Leader.GetName]从§H[This.ContactCountry.GetName]§!的穿梭机上兴高采烈地回来了。描述我们过去和未来的即兴歌词自由地传唱着，这是由我们的[Owner.GetEnvoy]诗人在两者之间创造出了令人惊讶由具有启发的联系。\n\n不到一小时，§H[This.ContactCountry.GetName]§!发来了一条消息：\n\n“你们的文化非常辉煌，我们对这场表演表示赞赏。”"
+ first_contact.5095.desc.song_bad: "[Leader.GetName]从§H[This.ContactCountry.GetName]§!的太空梭返回，[Leader.GetHisHer]的音乐表演让自己感到很不满。我们过去的行为与我们当前的自我认知之间的不和谐使得歌词的联想变得平淡无奇。\n\n不到一小时，§H[This.ContactCountry.GetName]§!发来了一条消息：\n\n“我们对一次重要的思想交流会被平庸的韵律破坏感到失望。”"
+ first_contact.5095.a: "试炼结束。"
 
  #First Contact Stage Summaries
  fcsum_base_contact_set_summary:0 "我们在§H[This.System.GetName]§!星系遭遇了未知的外星人。"
@@ -911,6 +952,11 @@
  fcsum_nomads_1:0 "$fcsum_caravaneers_1$"
  fcsum_colorful_linguistics_1:0 "我们解码了§H[This.ContactCountry.GetName]§!的书面语。真的太复杂了。"
  fcsum_colorful_linguistics_2:0 "我们需要做出一个外交决定。"
+ # The Trial
+ fcsum_trial_1: "穿梭机"
+ fcsum_trial_2: "等待之地"
+ fcsum_trial_3: "手段"
+ fcsum_trial_4: "判决"
 
  #Misc
  first_contact.1060.name:0 "第一次接触协议"
@@ -948,6 +994,12 @@
  opinion_first_contact_poetic_warrior:0 "文武双全"
  opinion_first_contact_admirer_of_poetry:0 "赞诗者"
  opinion_first_contact_poetic_flatterer:0 "谄媚诗意者"
+ opinion_first_contact_trial_fanatic_good: "第一次接触试炼" #The Trial
+ opinion_first_contact_trial_very_good: "$opinion_first_contact_trial_fanatic_good$"
+ opinion_first_contact_trial_good: "$opinion_first_contact_trial_fanatic_good$"
+ opinion_first_contact_trial_fanatic_bad: "$opinion_first_contact_trial_fanatic_good$"
+ opinion_first_contact_trial_very_bad: "$opinion_first_contact_trial_fanatic_good$"
+ opinion_first_contact_trial_bad: "$opinion_first_contact_trial_fanatic_good$"
  opinion_friendly_first_comms_greeting:0 "友好的首次问候"
  opinion_hostile_first_comms_greeting:0 "敌意的首次问候"
  preventive_war_economy:0 "预防性战争经济"

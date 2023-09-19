@@ -36,8 +36,10 @@
  #############################
 
  origin_payback:0 "血债血偿"
- origin_payback_desc:0 "这个文明曾被一个异星帝国造访过，这个帝国强行启蒙了他们，之后奴役了他们。如今他们击退了入侵者，但那些入侵者有朝一日还会回来吗？"
- origin_tooltip_payback_effects:1 "§R-警告：具有挑战性的起源§!\n-开局比正常情况少10£pop£人口。\n-一开始有许多关键科技还未研究，并且有基础设施方面的劣势。\n-星系内有一个特殊的§H考古站点§!：前入侵者的战列舰残骸。\n-该起源会在星系内强制生成复数个前超光速文明，无论§H$FE_PRIMITIVE_WORLDS$§!滑块如何设置。\n-有一个随机的前超光速文明将被提升为§H$origin_broken_shackles$§!起源。\n-一个具有§H$origin_slavers$§!起源的§H高级帝国§!将生成在星系的某处。\n\n"
+ origin_payback_desc:1 "§R-警告：具有挑战性的起源§!\n这个文明曾被一个异星帝国造访过，这个帝国强行启蒙了他们，之后奴役了他们。如今他们击退了入侵者，但那些入侵者有朝一日还会回来吗？"
+ origin_tooltip_payback_effects:2 "—$HOMEWORLD$$TABBED_NEW_LINE$—['concept_advanced_infrastructure']$TABBED_NEW_LINE$—$PLANETARY_MODIFIERS$['concept_payback_unified_purpose']$NEW_LINE$—$HOME_SYSTEM$['concept_payback_digsite']['concept_archaeology_site']$NEW_LINE$—会有一个['concept_advanced_empires', 高级帝国]和数个['concept_preftl_civilizations']无视星系设置出现$NEW_LINE$—一个前超光速文明：被提升为§I$origin_broken_shackles$§!起源"
+
+ origin_tooltip_payback_negative_effects: "—$INITIAL_POPS$§R-10§!$NEW_LINE$—$HOMEWORLD$$TABBED_NEW_LINE$—['concept_payback_debris_field']行星修正$TABBED_NEW_LINE$—['concept_payback_ship_debris']：+6$TABBED_NEW_LINE$—破坏度：§R33%§!$NEW_LINE$—$HOME_SYSTEM$§I资源贮藏§!未被开发$NEW_LINE$—$MISSING_TECHNOLOGIES_STRING$$TABBED_NEW_LINE$—['concept_basic_science_lab_1', £physics_research£ $tech_basic_science_lab_1$]$TABBED_NEW_LINE$—['concept_planetary_government', £society_research£ $tech_planetary_government$]$TABBED_NEW_LINE$—['concept_corvettes', £engineering_research£ $tech_corvettes$]"
 
  START_SCREEN_PAYBACK:0 "我们曾经做过一个交易。\n\n当来自外部星辰的访客显露身形时，他们向我们提供了一份公平的合同：技术启蒙，分期偿还。在一代人的时间里，我们的行星被转变成为了一个所谓的“先进文明”。\n\n然后我们才了解到小字条款：为了偿还我们的“债务”，他们坚持要我们为他们劳作，而且是无限期的。我们的领袖对此反对，但这些外来者马上翻脸动用了暴力。我们奋起反抗。\n\n我们赢了，但是赢得十分艰难，并且为此付出了惨烈得代价。现在，我们的科学家终于从过去我们摧毁的飞船上，通过逆向工程攻破了超光速旅行的秘密。宇宙很大，但迟早我们肯定会再次遇到我们的“恩人”。而实际上，我们也迫不及待，摩拳擦掌。\n\n现在是时候血债血偿了。"
 
@@ -60,6 +62,9 @@
 
  d_payback_habitat_research:0 "科技宝库"
  d_payback_habitat_research_desc:0 "在前弥特集团的战舰内部，我们遇到了一个千载难逢的机会，可以解锁他们科技的奥秘。"
+
+ d_msi_air_freshener: "大气注入器"
+ d_msi_air_freshener_desc: "这些通风装置结合了最新的芳香疗法和先进的化学技术，掩盖了绝望的恶臭，取而代之的是各种令人振奋和愉快的气味。"
 
  payback_curfew:0 "根除异见"
  payback_curfew_desc:0 "为了自由，就要付出稳定的代价。"
@@ -550,10 +555,12 @@
  #########################
 
  origin_broken_shackles:0 "粉碎枷锁"
- origin_broken_shackles_desc:0 "这个文明始于一艘奴隶船上的发起的兵变，现在由多种多样的前超光速物种组成。"
+ origin_broken_shackles_desc:1 "$CHALLENGING_ORIGIN$\n这个文明始于一艘奴隶船上的发起的兵变，现在由多种多样的前超光速物种组成。"
  START_SCREEN_BROKEN_SHACKLES:0 "终于自由了！\n\n有些人生来便负着枷锁。还有的负债累累，然后被作为契约奴隶任人买卖。但前主人的科技并不能保护他们周全。我们密谋反叛。在一场短暂但血腥的斗争中，我们杀死了俘虏我们的人，也重创了他们的运奴船。我们不得已紧急迫降到[Root.Capital.GetName]的表面上。\n\n尽管我们来自五湖四海和不同的物种，但在您的领导下我们找到了共同的目标。假以时日，这艘运奴船受损的系统就能修好，藏在其中的大量秘密-包括我们曾经母星的位置-也能被揭晓。\n\n我们已挣脱枷锁。现在就开始劳动吧。"
  START_SCREEN_BROKEN_SHACKLES_MEGACORP:0 "终于自由*了！\n\n有些人生来便负着枷锁。还有的负债累累，然后被作为契约奴隶任人买卖。然而我们都畅想着，能够过上轻松而富足的生活。我们密谋反叛。在一场短暂但血腥的斗争中，我们杀死了俘虏我们的人，也重创了他们的运奴船。我们不得已紧急迫降到[Root.Capital.GetName]的表面上。\n\n尽管我们来自五湖四海和不同的物种，但在您的领导下我们找到了共同的目标。我们的前主人也许非常残酷，但他们懂得经营生活。我们应该像他们一样坚定地追求我们的利益。假以时日，这艘运奴船受损的系统就能修好，藏在其中的大量秘密-包括我们曾经母星的位置-也能被揭晓。我们已挣脱枷锁。是时候成立公司了。\n\n*法律告示：\n此处使用“自由”一词并不代表本公司将提供任何折扣或进行任何影响[Root.GetName]股东收益的活动。如对此或其他术语有任何疑问，或是希望退出[Root.Capital.GetName]上的持续存在，请在[Root.Capital.GetName]的$building_bureaucratic_1$联系我们的法律或安保专家，以获取他们的快速处理。"
- origin_tooltip_broken_shackles_effects:0 "§R-警告：具有挑战性的起源§!\n-一开始有许多关键科技还未研究，并且有基础设施方面的劣势。\n-你所选的物种将与来自银河各处的一些前超光速£pop£人口一起开始。\n-银河内将会出现一个你所选物种的前超光速文明。\n-该起源会在银河内强制生成复数个前超光速文明，无论§H$FE_PRIMITIVE_WORLDS$§!滑块如何设置。\n-有一个随机的前超光速文明将被提升为§H$origin_payback$§!起源。\n-一个具有§H$origin_slavers$§!起源的§H高级帝国§!将生成在银河的某处。"
+ origin_tooltip_broken_shackles_effects:1 "—$INITIAL_POPS$来自星系各处['concept_preftl_civilizations']的物种$NEW_LINE$—$STARTING_PLANET$$TABBED_NEW_LINE$—['concept_free_at_last_broken_shackles']行星修正$TABBED_NEW_LINE$—['concept_crashed_slaver_ship_broken_shackles']行星特征$TABBED_NEW_LINE$—['concept_broken_shackles_buildings']$NEW_LINE$—$STARTING_SYSTEM$['concept_broken_shackles_digsite']['concept_archaeology_site']$NEW_LINE$—无视星系设置生成一个['concept_advanced_empires', 高级电脑帝国]以及数个前超光速文明$NEW_LINE$—某个前超光速文明：会成为该帝国的物种和母星$NEW_LINE$某个前超光速文明：提升为§I$origin_payback$§!起源"
+
+ origin_tooltip_broken_shackles_negative_effects: "—$STARTING_PLANET$$TABBED_NEW_LINE$—非该帝国的母星$TABBED_NEW_LINE$—['concept_culture_shock_broken_shackles']行星修正$TABBED_NEW_LINE$—['concept_ship_debris_broken_shackles', £blocker£ $concept_ship_debris_broken_shackles$]：+5$NEW_LINE$—$STARTING_SYSTEM$§I资源贮藏§!无法开采$NEW_LINE$—$MISSING_TECHNOLOGIES_STRING$$TABBED_NEW_LINE$—['concept_basic_science_lab_1', £physics_research£$tech_basic_science_lab_1$]$TABBED_NEW_LINE$—['concept_planetary_government', £society_research£$tech_planetary_government$]$TABBED_NEW_LINE$—['concept_corvettes', £engineering_research£$tech_corvettes$]$NEW_LINE$—政策：$TABBED_NEW_LINE$—无法选择§I$slavery_allowed_name$§!$TABBED_NEW_LINE$—无法选择§I$purge_allowed_name$§!"
 
  is_broken_shackles_origin:0 "$TRIGGER_FAIL$我们的起源不允许我们以这样的方式对待自己的人民。"
 
@@ -1057,7 +1064,8 @@
 
  origin_fear_of_the_dark:0 "黑暗之怖"
  origin_fear_of_the_dark_desc:0 "一个世纪以前，在帝国的母星系，其中的一颗行星被一颗古怪的小行星摧毁了。一些人认为这是某个外星物种的恶意攻击。其他人则把这些担忧当作纯粹的妄想症。两类人之间的关系变得愈发紧张，最后无可奈何之下，帝国将一个新近完成地形改造的星球给予这些恐宇派。"
- origin_tooltip_fear_of_the_dark_effects:0 "—开局时，三分之一的人口拒绝探索太空，他们居住在一颗单独的星球上。\n—分离主义者所在的行星会提供专属事件和增益。"
+ origin_tooltip_fear_of_the_dark_effects:1 "—$HOME_SYSTEM$曾属于你帝国一部分的分离主义者派系创造的['concept_preftl_civilizations', Pre-FTL Civilization]，提供专属事件和增益。"
+ origin_tooltip_fear_of_the_dark_negative_effects:  "- $INITIAL_POPS$ §R-8§!"
  START_SCREEN_FEAR_OF_THE_DARK_START:0 "一个世纪以前，被我们称为“大分裂者”的行星发生了爆炸。这便是我们 "
  START_SCREEN_FEAR_OF_THE_DARK_REGULAR:0 "$START_SCREEN_FEAR_OF_THE_DARK_START$分裂的开端。\n\n起先我们对这颗星球的毁灭不太在意，充其量只是一件怪事罢了，但[GetHomeWorldName]的一些人认为这其实是一场针对我们物种的有预谋的袭击。这些人认定是我们的无线电信号被远处的某些外星人发现了，他们便以这种足以毁灭行星的武器回应我们。这些反对者敦促我们做好应对这些外星人再次来袭甚至摧毁我们的准备。更多的人则认为他们的忧虑是杞人忧天。\n\n两个派别之间的政治割裂日益加深。蔓延全球的内乱最终促成了一项协议，为这些反对者们寻找到一个环境改造候选星球，这样他们就可以在其中隐居，不受我们的干涉。$START_SCREEN_FEAR_OF_THE_DARK_END$"
  START_SCREEN_FEAR_OF_THE_DARK_MEGACORP:0 "$START_SCREEN_FEAR_OF_THE_DARK_START$互相疏远的开端。\n\n在那场事故以后，忧心忡忡的经理们向董事会发来请求，希望能关停所有现存的行星间无线电通讯设施，取消太空探索计划。他们相信大分裂者一定是某种外来的力量在尝试摧毁[GetHomeWorldName]。这项请求当然被否决了。\n\n这些经理们将董事会的决议称为“史诗级误判”，并激活了公民协议中的一项副条款，他们有权公开斥责董事会。为了安抚股东和增强消费者信心，决定向持异议的经理提供一份新合同。作为放弃与 [GetName] 有关的任何权利的交换，他们将获得一颗环境改造候选星球，并且保证他们的财政自主。$START_SCREEN_FEAR_OF_THE_DARK_END$"
@@ -1117,7 +1125,7 @@
  origin.6006.desc.base1:0 "一位来自[fotd_habitants.Capital.GetName]的舰队司令提出要加入我们的舰队，担任临时指挥官。[fotd_Leader.GetSheHeCap]的动机尚不清楚，但我们的线人告诉我们，这可能牵涉到一起丑闻。"
  origin.6006.desc.base2:0 "[fotd_Leader.GetName]非常急迫地想和我们签署临时合同。[fotd_habitants.Capital.GetName]一直是滋生狡猾和非常规战术的温床。"
  origin.6006.desc.base3:0 "由于舰队司令[fotd_Leader.GetName]在最近一次联合舰队演习上的出色表现，我们决定扩大此人的权限，让其指挥一支真正的舰队舰队。"
- origin.6006.desc.base4:0 "因涉嫌将[fotd_Leader.GetHerHis]指挥的舰船置于过度危险之中而被暂时调离岗位，不服气的舰队司令[fotd_Leader.GetName]请求加入我们的舰队。尽管[fotd_Leader.GetName]名声在外，那些曾与[fotd_Leader.GetHerHis]一起服役的人仍然尊重[fotd_Leader.GetHerHis]的才能。"
+ origin.6006.desc.base4:1 "因涉嫌将[fotd_Leader.GetHerHis]指挥的舰船置于过度危险之中而被暂时调离岗位，不服气的舰队司令[fotd_Leader.GetName]请求加入我们的舰队。尽管[fotd_Leader.GetName]名声在外，那些曾与[fotd_Leader.GetHerHis]一起服役的人仍然尊重[fotd_Leader.GetHerHis]的才能。"
  origin.6006.a:0 "只要你不叛逃。"
  origin.6006.a.tt:0 "将§Y[fotd_Leader.GetName]§!作为§Y舰队司令§!添加到我们的领袖储备。"
  origin.6006.b:0 "对于一根松动的鱼雷管来说，你也太胖了！"
@@ -2282,9 +2290,9 @@
  fircon.8035.c:0 "一个发财致富的好机会……"
 
  d_landgrab_blocker:0 "外国地产"
- d_landgrab_blocker_desc:0 "这些土地由外国投资者购买，不受[landgrab_planet.owner.GetName]的管控。"
+ d_landgrab_blocker_desc:1 "这些土地是由外星投资者购买的，土著居民再也无法进入。"
  d_landgrab_foreign_holdings:0 "遥控地产"
- d_landgrab_foreign_holdings_desc:0 "我们已经获得了[landgrab_planet.GetName]的产权，可以远程对其进行管理。"
+ d_landgrab_foreign_holdings_desc:1 "这些土地是从土著人口那里获得的，现在在轨道上进行管理。"
 
  #Fruitful Cooperation
  fircon.8040.name:0 "成果颇丰的合作"
@@ -2495,7 +2503,7 @@
  SHIELD_PRIMITIVE_PLANET_PROJECT_DESC:0 "我们的[Owner.GetResearchers]应该可以完成伊蒂卡里奥斯想要用来包围§Y[This.GetName]§!的护盾，只需要提供足够的资源就行。"
 
  arcsite.3020.name:0 "夏瑞诺伊被屏蔽"
- arcsite.3020.desc:0 "得益于我们[Owner.GetResearchers]的努力，伊蒂卡里奥斯想要用来包围[From.GetName]的护盾完成了。她的$NAME_Charynoi$子民终于可以得到安宁。"
+ arcsite.3020.desc:0 "得益于我们[Owner.GetResearchers]的努力，伊蒂卡里奥斯想要用来包围[FromFrom.GetName]的护盾完成了。她的$NAME_Charynoi$子民终于可以得到安宁。"
  arcsite.3020.desc.A:0 "大家都可以松口气了。"
 
  bane_of_the_prophetess:0 "女先知之恶"
@@ -2507,6 +2515,15 @@
 
  paradisiacal_habitat:0 "天堂般的居住站"
  paradisiacal_habitat_desc:0 "尽管该居住站完全是人工建成，但其中的空气散布着田园的气息，让无论再天差地别的所有智慧生物都能想起自己的家乡。"
+
+ paradisiacal_habitat_science: "$paradisiacal_habitat$"
+ paradisiacal_habitat_science_desc: "$paradisiacal_habitat_desc$"
+
+ paradisiacal_habitat_energy: "$paradisiacal_habitat$"
+ paradisiacal_habitat_energy_desc: "$paradisiacal_habitat_desc$"
+
+ paradisiacal_habitat_mining: "$paradisiacal_habitat$"
+ paradisiacal_habitat_mining_desc: "$paradisiacal_habitat_desc$"
 
  fircon.3510.name:0 "天选民"
  fircon.3510.desc:0 "我们被困在虫洞里面太久了。但等等！终于，上天的恩赐帮助我们我们突破了施加于身上的桎梏。我们终于通过了考验。星系的其他地区都在等待着我们去征服。\n\n不要反抗。从长远来看，这样会更好。"
@@ -2545,6 +2562,8 @@
 
  hyper_drive_plural:0 "超空间引擎"
  subspace_drive_plural:0 "亚空间引擎"
+ hyper_drive: "超空间引擎"
+ subspace_drive: "亚空间引擎"
 
  trait_stargazer:0 "观星者"
  trait_stargazer_desc:0 "$trait_presapient_starborn_desc$"
@@ -2694,3 +2713,55 @@
 
  alert_mia_forced_to_decloak_by_us_title:0 "发现隐形舰队"
  alert_mia_forced_to_decloak_by_us_instant:0 "我们的探测阵列发现了至少一艘隐形的非盟友舰队，我们迫使其解除了隐形状态。这些舰队现在处于行动中失踪状态。"
+
+ #Xeno Dinner Party
+ fcsum_xeno_dinner_party: "一个外星帝国派遣了一艘舰船抵达我们的边境来开启外交通讯。"
+ opinion_caught_spying: "晚宴骗局"
+ opinion_life_of_the_party: "晚宴外交"
+ opinion_double_rejection_party: "拒绝晚宴"
+ opinion_wet_towel_party: "晚宴扫兴者"
+ opinion_could_not_eat_the_food_party:0 "晚宴误算"
+ first_contact.1120.name: "邀请函"
+ first_contact.1120.desc: "§H[This.ContactCountry.GetName]§!派遣了一艘舰船到我们的边境上，广播着重复的信号。\n\n翻译这些信息颇具挑战，但我们的[This.Owner.GetLinguists]相信他们是在邀请我们派出以为代表去往他们的舰船上参加一场持续多日的文化交流活动。"
+ first_contact.1120.a.proactive: "多么令人信服的姿态。"
+ first_contact.1120.a.cautious: "行，但听起来很像一个陷阱。"
+ first_contact.1120.a.tooltip: "我们会派我们的特使去参加活动。"
+ first_contact.1120.b: "绝对不可能。"
+ first_contact.1120.b.tooltip: "我们会拒绝该邀请。"
+ first_contact.1125.name: "餐前准备"
+ first_contact.1125.desc: "[This.Owner.GetEnvoy][This.Leader.GetName]和我们的[This.Owner.GetLinguists]连蒙带猜地接受了外星人的文化交流邀请。§H[This.ContactCountry.GetName]§!的热烈反应应该是积极的。不久之后，他们发来了表示派对倒计时的象形文字。\n\n[This.Owner.GetEnvoyCap][This.Leader.GetName]正在利用剩余的时间准备并进一步学习我们目前获得的语言样本。"
+ first_contact.1125.a: "这是不可多得的学习机会。"
+ first_contact.1125.a.tooltip: "我们会为邀请做好准备。"
+ first_contact.1125.b: "这是一个秘密收集信息的绝佳机会。"
+ first_contact.1125.b.tooltip: "我们同意参会，但会让特使装备上间谍科技。"
+ first_contact.1130.name: "参会之前"
+ first_contact.1130.desc: "§H[This.ContactCountry.GetName]§!文化交流活动的倒计时马上就到尾声了。[This.Owner.GetEnvoyCap][This.Leader.GetName]很快就要登上前往外星特使舰船的太空梭。出于尊重，宴会期间与我们的[This.Owner.GetEnvoy]的通讯将会暂停。"
+ first_contact.1130.a: "我们应该尽可能地融入他们的文化。"
+ first_contact.1130.a.tooltip: "我们的特使将会试着与他们的文化保持一致。"
+ first_contact.1130.b: "表现得热情又专业就行。"
+ first_contact.1130.b.tooltip: "我们的特使会以专业的态度行事。"
+ first_contact.1130.c: "开始行动。"
+ first_contact.1130.c.tooltip: "我们的特使将会尽可能地获取情报。"
+ first_contact.1135.name: "第二次机会"
+ first_contact.1135.desc: "我们对§H[This.ContactCountry.GetName]§!的邀请不闻不问冒犯到了他们。他们的态度发生了一百八十度大转弯。在后续的通讯中我们的[This.Owner.GetLinguists]翻译出了一些敌意性的言辞。\n\n他们似乎不想要我们拒绝。"
+ first_contact.1135.a: "很好很好。我们会出席的。"
+ first_contact.1135.a.tooltip: "我们终究会为了顺畅的外交关系出席的。"
+ first_contact.1135.b: "不去就是不去。"
+ first_contact.1135.b.tooltip: "我们没有任何理由接受这个邀请"
+ first_contact.1140.name: "谍报失误"
+ first_contact.1140.desc: "§H[This.ContactCountry.GetName]§!的活动持续的时间远超预期。\n\n[This.Owner.GetEnvoy][This.Leader.GetName]的太空梭返回时汇报了任务失败。\n\n在活动过程中，主办方找到了谍报装置。[This.Owner.GetEnvoyCap][This.Leader.GetName]遭到了审问和训斥，并被遣返。通过后备间谍科技获取的数据，我们现在理解了他们的语言和科技，然而我们的外交前景一片渺茫。"
+ first_contact.1140.A: "真不幸。"
+ first_contact.1145.name: "扫描完毕"
+ first_contact.1145.desc: "§H[This.ContactCountry.GetName]§!的活动举办时间远超预期。\n\n乘坐太空梭返回后，[This.Owner.GetEnvoy][This.Leader.GetName]汇报了行动大获成功。不仅这种外星语言被大部分破解了，我们的扫描也揭示了他们科技能力的清晰图景。\n\n这将会极大地促进我们与§H[This.ContactCountry.GetName]§!未来的关系，同时还让他们对我们对他们科技了如指掌一事蒙在鼓里。"
+ first_contact.1150.name: "宴会人生"
+ first_contact.1150.desc: "敞开心胸来到这场持续多日的盛会，[This.Owner.GetEnvoy][This.Leader.GetName]参加了音乐、戏剧和误导的表演，并尝试了许多餐饮传统。他们对各种体验的接受得到了§H[This.ContactCountry.GetName]§!的热烈欢迎。\n\n离开时，[This.Owner.GetEnvoyCap][This.Leader.GetName]对他们的语言获得了非常深切的理解，对他们的文化也颇为赞赏。这段经历将会为我们未来与§H[This.ContactCountry.GetName]§!更加积极正面的外交奠定基础。"
+ first_contact.1150.a: "来自新朋友的邀请真是亲切啊。"
+ first_contact.1155.name: "略煞风景"
+ first_contact.1155.desc: "[This.Owner.GetEnvoyCap][This.Leader.GetName]在这场持续多日的活动中客气地参观着文艺活动，小试着他们的饮食文化。不温不火的态度让§H[This.ContactCountry.GetName]§!颇感沮丧。根据我们对他们语言的理解，他们说我们的特使“很无聊”。\n\n我们的特使被护送回到太空梭上并被示意离开。特使已经掌握了他们的语言，并对他们的文化有了初步的了解，我们可以在未来的外交互动中以此为基础。"
+ first_contact.1155.a: "特使累了。"
+ first_contact.1160.name: "“渴”望联系"
+ first_contact.1160.desc: "在这场持续数天的活动这，§H[This.ContactCountry.GetName]§!对营养需求的差异的沮丧显而易见。幸好[This.Owner.GetEnvoy][This.Leader.GetName]还是积极参与到了其他的娱乐活动中，并建立了互相的尊重。\n\n[This.Owner.GetEnvoyCap][This.Leader.GetName]离开时对§H[This.ContactCountry.GetName]§!的语言文化获得了基本的了解。值得赞扬的是，他们似乎对这一饮食灾难泰然自若，并为我们提供了许多礼仪手册。虽然乏味，但这些知识应该有助于顺利进行未来的外交互动。"
+ first_contact.1160.a: "理解是外交的基石。"
+ first_contact.1165.name: "不行就是不行"
+ first_contact.1165.desc: "第二次拒绝§H[This.ContactCountry.GetName]§!让我们前往他们的舰船的邀请得到了情绪激烈的回复。我们收到了一份来自多名外星船员长达数个小时的通讯，我们的[This.Owner.GetLinguists]认为他们似乎是在因我们的不愿出息而发出谴责。\n\n这些通信，加上从他们船上截获的信号，使我们能够破译足够多他们的语言以产生有意义的理解。尽管他们对这一事件持消极态度，但我们现在可以建立更适当的外交关系了。"
+ first_contact.1165.a: "这些外星人可真顽固。"

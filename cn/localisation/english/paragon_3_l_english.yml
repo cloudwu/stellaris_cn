@@ -14,7 +14,7 @@
 #Renowned Leaders
  tech_xeno_linguistics:0 "外星语言学家"
  tech_xeno_linguistics_desc:0 "由于近期与智慧物种的接触，提升我们外星语言学能力非常重要。"
- tech_xeno_linguistics_effect:0 "一次性提供£influence£$influence$\n可以出现§H著名领袖§!。"
+ tech_xeno_linguistics_effect:1 "给与少量$r_influence$\n可以出现§H著名领袖§!。"
  paragon_2.2105.name:0 "卓越个体"
  paragon_2.2105.desc_01:0 "我们已经毫无疑问地证明了星系处处充满生命。除了占主导地位的物种和国家，还有许多其他的星球。杰出个体可能会不时涌现，动摇着星系霸权的基础。\n\n如果我们能驾驭他们的雄心壮志，这些著名领袖可能会愿意加入我们的事业。"
  paragon_2.2105.desc_02:0 "我们已经毫无疑问地证明了星系处处充满生命。除了占主导地位的物种和国家，还有许多其他的星球。杰出个体可能会不时涌现，动摇着星系霸权的基础。\n\n尽管这些外星人的处事方式相当怪异甚至令人厌恶，但只要驾驭了这些§H著名领袖§!的天赋可能会有助于我们的事业。"
@@ -751,7 +751,7 @@
  #UTILITY
  origin_legendary_leader:0 "君临天下"
  origin_legendary_leader_desc:1 "在暴力和苦难中，这个文明在一位领袖的领导下走向了统一。通过压制较弱的派系来巩固权力，他们现在成为了科学和技术进步的坚定倡导者。在这之后，是一段不稳定的和平的时期。但和平终究是一种短暂的状态。"
- origin_tooltip_legendary_leader_effects:1 "- 初始拥有一位强大的§H传说级领袖§!。\n- 基于国家思潮解锁特有的§H统治者特质§!。\n- 强化统治者席位，获得新的特质和额外的加成。\n- 或者建立一个继承统治者遗产的强大国家机构。\n- 以一种长寿且快速复原的物种作为开始。"
+ origin_tooltip_legendary_leader_effects:2 "—$SPECIES_TRAITS$['concept_perfected_genes']$NEW_LINE$—统治者特质：['concept_leader_trait_legendary_leader']"
  START_SCREEN_LEGENDARY_LEADER:1 "我们的文明总是冲突不断。帝国和王国一个又一个的崛起，又往往一个接一个在内乱的压力下崩溃消亡。\n\n当我们的星球又一次被战火所吞噬时，这种极端的文化再次达到了顶峰。就在一片混沌当中，一位领袖出现了。[owner.Ruler.GetTitle][owner.Ruler.GetName]用[owner.Ruler.GetHisHer]无私奉献、人格魅力和权利制度成功地组织其了追随者。终于有那么一位能够稳定地联合起我们的人了。\n\n统一是一个漫长而痛苦的过程，但在[owner.Ruler.GetTitle]对星际文明未来的允诺下，挑起战火的势力一个接着一个投降并被纳入麾下。我们第一次拥有了长达上百年的和平，但在表面下，各种新仇旧怨也正在暗流涌动。"
  origin_legendary_leader_imperial:0 "$origin_legendary_leader$"
  origin_legendary_leader_imperial_desc:0 "$origin_legendary_leader_desc$"
@@ -845,7 +845,7 @@
 
  #Starting Traits
  leader_trait_legendary_leader:0 "光耀者"
- leader_trait_legendary_leader_desc:1 "§G光耀者会随着时间的推移而不断增强力量。§!\n\n统一战争相当地残酷。最后，是[Root.GetName]将和平和意义带给了我们。大一统者是一座象征着我们整个物种所能达成成就的活着的丰碑，也激励着所有的人。[This.Paragon_Origin_Ascension_Desc]"
+ leader_trait_legendary_leader_desc:2 "§G光耀者会随着时间的推移而不断增强力量。§!\n\n统一战争相当地残酷。最后，是[Root.GetName]将和平和意义带给了我们。光耀者是一座象征着我们整个物种所能达成成就的活着的丰碑，也激励着所有的人。[This.Paragon_Origin_Ascension_Desc]"
  leader_trait_legendary_offspring:0 "$leader_trait_legendary_leader$血脉"
  leader_trait_legendary_offspring_desc:1 "$leader_trait_legendary_leader$的子嗣。继承他们前任的遗产将是一项巨大的挑战，但这位领导人表现出了巨大的潜力。"
  trait_perfected_genes:0 "纯化基因"
@@ -860,7 +860,7 @@
  paragon_origin_null_loc:0 " "
 
  #Ethic Traits
- leader_trait_legendary_origin_desc:0 "\n§G起源统治者特质§!"
+ leader_trait_legendary_origin_desc:1 "\n§G光耀统治者特质§!"
  leader_trait_legendary_military_knowledge:0 "卓越将军"
  leader_trait_legendary_military_knowledge_desc:0 "一位接触的军事指挥官，深受官兵爱戴。"
  leader_trait_legendary_foe_hammer:1 "坚定进攻者"
@@ -988,7 +988,7 @@
  paragon.5012.a:0 "团结就是胜利！"
  paragon.5012.a.response:1 "§H随着这座以§Y[Root.Owner.Ruler.GetTitle][Root.Owner.Ruler.GetRegnalName]§!被其他[Root.Owner.GetSpeciesNamePlural]英烈环绕着为主旨的纪念碑揭幕，人群中爆发出了欢呼和掌声。他们团结地矗立着，一个国家凝聚在了一个共同的目标上。§!"
 
- paragon.5013.name:0 "[Root.GetName]值得纪念！"
+ paragon.5013.name:0 "纪念[Root.GetName]！"
  paragon.5013.desc:1 "§H[Root.Owner.GetName]每一块国有的屏幕突然中断了正常的播放，然后开始广播一段来自[Root.GetName]的官方公告。画面中，§Y[Root.Owner.Ruler.GetTitle][Root.Owner.Ruler.GetRegnalName]§!站立在一座未揭幕的纪念碑前。§!\n\n今日，我们创造了历史，我们的物种过去从未达成过此般成就。在我的带领和你们辛勤的工作下，没有任何事物可以阻挡我们！[Root.GetName]上的居民想以此赞扬我，但他们才是我们人民真正的英雄。我只不过是一介人民公仆，有了你们，我们才能迈入光明的未来。"
  paragon.5013.a:0 "太谦虚了！"
  paragon.5013.a.response:1 "这就是我拒绝让这些自豪的殖民者以我的名义建造一座纪念碑的原因。相反，这些资金将被用在城市建设上。繁荣在等待我们！\n\n$paragon.ending.speech$"
@@ -1161,6 +1161,9 @@
  paragon_origin_reformists_struggle_desc:1 "改革派的煽动者打着自由的幌子试图摧毁我们的国家！随着暴力冲突在我们的领土上爆发，他们的谎言已经说服了许多人民转而反对我们。他们认为§Y[Owner.Ruler.GetTitle][Owner.Ruler.GetRegnalName]§!软弱、残忍、无能，但我们会向他们证明不是这样的！"
  situation_paragon_origin_reformists_struggle_harsh:1 "保持控制"
  approach_situation_paragon_origin_reformists_struggle_harsh_tt:1 "对所有已知的改革派藏身处进行暴力打击，应该可以恢复国家的稳定。\n为了终结当下的局势，完成§Y$council_agenda_origin_delusional_tyrant_name$§!议程。"
+ situation_paragon_origin_reformists_struggle_accept: "呼吁谈判"
+ approach_situation_paragon_origin_reformists_struggle_accept_tt: "对平民发动攻击是不可接受的。我们将以和平方式推进，呼吁停火并邀请改革派进行谈判。希望这样可以减少暴力行为的需求。"
+ approach_allow_tooltip_reformists_struggle_accept: "改革派绝不会同暴君进行谈判。"
  paragon_origin_hunt:1 "改革派力量"
  paragon_origin_reformists_killed:0 "第一批改革派被消灭"
  paragon_origin_reformists_alive:0 "第一批改革派谈判"
@@ -1168,7 +1171,7 @@
  situation_reformists_struggle_2:1 "改革派开始在一些冲突中占据上风，但我们仍然牢牢控制着权力。"
  situation_reformists_struggle_3:1 "我们对反叛的改革派有一点优势，但力量的天平有可能向任何一边倾斜。"
  paragon_origin_reformists_struggle_monthly_change_tooltip:0 "改革派叛军正在持续骚扰忠诚的安保部队。"
- situation_paragon_origin_reformists_struggle_complete:1 "结果可能迫使我们同改革派谈判，并同意他们的条件。"
+ situation_paragon_origin_reformists_struggle_complete:2 "无论通过何种方式，这场冲突必须中止。我们现在的决定会影响到未来开展谈判所达成的结果。"
  decision_paragon_origin_subdue_reformists:1 "突袭改革派"
  decision_paragon_origin_subdue_reformists_desc:1 "民主主义是必须要治疗的病痛。我们的安保部队将突袭所有改革派的藏身处。平民伤亡在所难免。"
  decision_paragon_origin_subdue_reformists_tt:1 "这将会移除§Y改革派诉求§!局势的§G4§!点进度。\n如果行星上没有平等主义的人口，有50%几率移除该行星的§Y民主倾向§!修正。\n这将会使§Y[owner.Ruler.GetTitle][owner.Ruler.GetRegnalName]的§!§Y光耀者特质§!§R劣化§!。"
@@ -1218,33 +1221,6 @@
  paragon.5202.a.tt:1 "§LWe will explore every possible avenue to save [Ruler.GetName].§!"
  paragon.5202.b:2 "Grant [Ruler.GetTitle] the rest they deserve."
  paragon.5202.b.tooltip:1 "§Y[Ruler.GetTitle] [Ruler.GetRegnalName]§! will die."
-
- paragon_origin_leader_fall:1 "光耀者灭亡"
- paragon_origin_leader_fall_type:0 "维持生命的$leader_trait_legendary_leader$"
- paragon_origin_leader_fall_desc:1 "我们不知道是§Y[Ruler.GetTitle][Ruler.GetRegnalName]§!的年迈、压力还是有人企图刺杀导致了这样。只有一件事是清楚的：§Y[Ruler.GetTitle]§!已经濒临死亡。在我们寻找解决方案的期间，我们可以维持[Ruler.GetHerHis]的身体存活一段时间，但代价将很高。"
- paragon_origin_leader_fall_death:0 "我们的统治者也会死的。"
- situation_origin_leader_healthcare:1 "实验性医疗保障"
- approach_situation_origin_leader_healthcare_tt:1 "创新的治疗方法使我们能够让垂死的统治者继续活着。虽然这样的治疗成本将不断增加，但我们还是可以维持[Owner.Ruler.GetHisHer]的生命一段时间。"
- situation_origin_leader_researchers:1 "生命支持"
- approach_situation_origin_leader_researchers_tt:0 "来自全帝国的研究者们都在竭尽全力抱住我们统治者的生命。"
- paragon_origin_leader_fall_monthly_change_tooltip:1 "我们统治者的健康状况正在恶化。"
- situation_origin_leader_none:0 "终止生命维持系统"
- approach_situation_origin_leader_none_tt:1 "§R该解决方案将会导致我们统治者去世。§!"
- coma_stage_1:1 "整个内阁陷入了手足无措之中，帝国四处动荡，外交几乎已经停滞不前。§Y[Owner.Ruler.GetTitle][Owner.Ruler.GetRegnalName]§!掌握大部分权力的时间太长了，以至于现在我们发现一旦失去了[Owner.Ruler.GetHisHer]的掌控，就会迷失方向。适应这个新的情况将是一个具有挑战性的过程。"
- coma_stage_2:1 "内阁正在竭尽全力维持住自己的统治职责。我们似乎直到现在才意识到§Y[Owner.Ruler.GetTitle][Owner.Ruler.GetRegnalName]§!实际上做了多少工作。我们急忙培训了一批新的管理官僚来填补行政管理中的各种新职位，并让每个人分担[Owner.Ruler.GetTitle]的一部分职责。"
- coma_stage_3:1 "整个国家稍微恢复了元气，人民也慢慢开始接受§Y[Owner.Ruler.GetTitle][Owner.Ruler.GetRegnalName]§!再也回不来的事实。有些人乐见这个变化，其他人则将其视为一个苦涩的事实——但所有人都知道，想要建造一个没有§Y[Owner.Ruler.GetTitle][Owner.Ruler.GetRegnalName]§!又能正常有运转的政府，我们还有很长的路要走。"
- coma_stage_4:1 "政府再次完全开始运转，但§Y[Owner.Ruler.GetTitle][Owner.Ruler.GetRegnalName]§!的生命力每天都在流逝！我们剩下的时间有限且十分宝贵，必须尽快找到拯救[Owner.Ruler.GetHimHer]的方法。 "
-
- paragon.5206.name:0 "突破！"
- paragon.5206.desc:1 "我们成功了！我们的科学家表现出非凡的毅力，取得了重大的进展。利用这项新技术，他们设计了一个生命维持胶囊专门为我们的$leader_trait_legendary_leader$延长寿命！虽然依靠它维系生命的生活将会很艰难，但有了它我们就可以把光荣的统治者带回来！"
- paragon.5206.a:0 "终于！"
- paragon.origin.casual.ascension:1 "解锁一项新决议，§Y维持装置§!，允许我们在首都星球建造一座特殊设施，维系统治者活着。"
- decision_paragon_origin_immortal_throne:0 "维持装置"
- decision_paragon_origin_immortal_throne_desc:1 "这是一种专门针对我们统治者的DNA量身定制的高度复杂的机器设备。它应该能够保持[Ruler.GetHimHer]活着，使[Ruler.GetHimHer]继续履行政府职责。"
- decision.paragon.origin.casual.tt:1 "§L该决议将会创建一座极致的生命维持装置，让我们的统治者不死。我们需要为其供能，但花费保持不变。§!"
- paragon.5207.name:0 "回归王座"
- paragon.5207.desc:0 "$paragon.5270.desc$"
- paragon.5207.a:1 "恰如其分。"
 
  paragon.5210.name:1 "十字路口"
  paragon.5210.desc:1 "是时候让§Y[Ruler.GetTitle][Ruler.GetRegnalName]§!再度执掌国家的大舵了。[Ruler.GetName]受赐福继承了$leader_trait_legendary_leader$的品质，仍然充满着庄严。然而，随着改革派势力的增强，一场全面内战逐渐逼近，[Ruler.GetTitle]发出了谈判的号召。\n\n[Ruler.GetName]报告道，谈判前期气氛十分紧张。来自[Owner.GetName]各处的代表在听取我们[Ruler.GetTitle]的官方声明——其中列出了所有我们可能接受的让步——之前，纷纷提出了自己的要求。"
@@ -1435,7 +1411,7 @@
  paragon.5900.a.50years:1 "我们历史中糟糕的一天。"
  paragon.5900.a.100years:1 "我们做好了准备。这一次，我们也会挺过难关。"
 
-  ###Events for Leader Rebirth
+ ###Events for Leader Rebirth
  paragon.6000.name:0 "The Second Chance"
  paragon.6000.desc:0 "With §Y[Ruler.GetTitle] [Ruler.GetRegnalName]'s§! health quickly failing, our best medical minds have devised an unorthodox solution. An elaborate apparatus will be built directly inside of the council chambers. By granting this machine control over many of [Ruler.GetHerHis] natural processes, we can keep [Ruler.GetHimHer] alive indefinitely."
  paragon.6000.desc.ap_mind_over_matter:0 "$paragon.6000.desc$\n\nOur psychics have also devised a plan. Perhaps responding to the collective sorrow of our people, a Shroud Entity has offered to rejuvenate our fallen leader. For a 'meager price', §Y[Ruler.GetTitle] [Ruler.GetRegnalName]§! can be kept alive indefinitely."
@@ -1474,6 +1450,12 @@
  paragon.6030.a:0 "Contact the Zro market."
  paragon.6030.b:0 "[Ruler.GetName] will die."
 
+ paragon.6035.name: "新时代"
+ paragon.6035.desc: "在手术康复不久后，一场盛大的庆祝活动在[capital_scope.GetName]举行。$leader_trait_legendary_leader$发表了一场演讲，感谢市民和科学家，而[Ruler.GetName]则谈到了他们为§Y[Owner.GetName]§!规划的美好、繁荣的未来。"
+ paragon.6035.a: "生命无止尽的$leader_trait_legendary_leader$应该领导我们。"
+ paragon.6035.b: "我们会为了人民对政府进行改革。"
+ paragon.6035.b.tt: "政府会进行改革。$leader_trait_legendary_leader$将继续支持和引导我们，但现在人民有机会选择自己的领袖。"
+
  ###Traits
  leader_trait_the_apparatus_luminary:0 "Apparatus Bound"
  leader_trait_the_apparatus_luminary_desc:0 "Immortality, but at what cost? This leader is bound to a cumbersome life-sustaining apparatus in the council chambers."
@@ -1499,3 +1481,5 @@
  mod_leader_generals_food_upkeep_add:0 "$r_food$ $UPKEEP$"
  mod_leader_scientists_food_upkeep_add:0 "$r_food$ $UPKEEP$"
  mod_leader_governors_food_upkeep_add:0 "$r_food$ $UPKEEP$"
+
+

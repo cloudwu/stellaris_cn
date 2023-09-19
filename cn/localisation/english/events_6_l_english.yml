@@ -212,11 +212,11 @@
  anomaly.6860.a:0 "回去工作。"
 
  anomaly.6865.name:0 "快邮"
- anomaly.6865.desc:0 "当[Root.GetName]靠的足够近得以扫描货舱的时候，似乎所有的敏感器都功能失常了。这个舱室使用的[Owner.GetBioAlloy]同我们自己建造太空结构时使用的是完全一样的。这种某些外星生命体发明出了同我们完全一致的复合材料的可能性，根本不可能成立，但在校准了扫描仪之后，我们依然得到了同样的结果。\n\n在打开舱室之后，迎接我们的唯一一样东西是一份文档集，里面详细地阐述了我们应当如何指派我们的每一位[Owner.GetScientistPlural]，以及他们在今后10年应该从事什么研究工作。"
+ anomaly.6865.desc:1 "当[Root.GetName]靠的足够近得以扫描货舱的时候，似乎所有的传感器都功能失常了。这个舱室使用的[Owner.GetBioAlloy]同我们自己建造太空结构时使用的是完全一样的。这种某些外星生命体发明出了同我们完全一致的复合材料的可能性，根本不可能成立，但在校准了扫描仪之后，我们依然得到了同样的结果。\n\n在打开舱室之后，迎接我们的唯一一样东西是一份文档集，里面详细地阐述了我们应当如何指派我们的每一位[Owner.GetScientistPlural]，以及他们今后的研究计划。该指引在一个特定日期结束，也就是从现在算起的整整10年。"
  anomaly.6865.a:0 "将这些笔记发回[Owner.GetHomeWorldName]。"
  anomaly.6865.b:1 "这有点瘆人了。"
  anomaly.6870.name:0 "关闭循环"
- anomaly.6870.desc:0 "在经过几年不顺坦的发展之后，[Root.GetHomeWorldName]的上方出现了一道裂口。令人心惊胆颤的是，这一天的日期和我们之前发现的指示上面所说的末日前夜是同样的。我们现在只有一件事情可以做了：把那些笔记发射到裂口里面，彻底忘掉这件事情曾经发生过。"
+ anomaly.6870.desc:1 "在经过几年不顺坦的发展之后，[Root.GetHomeWorldName]的上方出现了一道时空织构裂口。令人心惊胆颤的是，这一天的日期和我们十年前收到的怪异指示上面所说的日期是同一天。我们现在只有一件需要做的事情：把收到的那些笔记发射到裂口里面，关闭这个循环。"
  anomaly.6870.a:0 "让过去的我们自己收拾这个烂摊子吧。"
 
  anomaly.6875.name:0 "便利的采矿"
@@ -437,6 +437,51 @@
  colony.9045.name:0 "消灭这些长寿的爬行动物"
  colony.9045.desc:0 "对尼玛的净化已经完成了——极度地系统化，因此既没有污染海洋也没有威胁到我们的基础设施。很快我们可以将我们的注意力转移到收获它们的尸骸中，并在[Root.GetName]上建立更多的永久殖民地。首先，我们得先储存好这些残羹剩饭。"
  colony.9045.a:0 "这是对待这些无脑野兽的最佳方法。"
+
+ colony.9950.name: "平流层喷口"
+ colony.9950.desc: "现在，§Y[planet.GetName]§!上重要的殖民工作已经完成，[Root.Owner.GetName][Owner.GetScientistPlural]开始将注意力转向这个行星上的高耸尖塔。\n\n这些矿物构成的结构似乎完全中空，将行星地壳下方的气体一路传输到大气热层。并且由于某些未知的原因，这些气体还吸引着天凯以及其他太空生物，让它们长途跋涉来到这颗星球。\n\n我们如果能够对这种星球奇观开展一次彻底的研究，就能加深我们对于这些奇幻现象的了解。当然了，我们也可以想个方法来收集这些稀有的气体。"
+ colony.9950.a: "研究这些气体喷口。"
+ colony.9950.b: "我们可没有时间管这些东西。"
+
+ colony.9955.name: "平流层喷口研究完毕"
+ colony.9955.desc: "我们已经确定，§Y[planet.GetName]§!上的气体排放口是过热气体与其中的颗粒不断冷却沉积，历经数百万年时光形成的。那些没有沉积的气体则在大气热层中聚集成团，并被在其中优雅穿行的天凯吞食。\n\n这是一个罕见的机会，我们不仅可以近距离观察这些生物，还可以吸引外星游客前来观光。或者，我们也可以利用这些气体喷口提炼奇异瓦斯，不过这样就需要把这些生物赶出它们栖息多年的地方。"
+ colony.9955.a: "将其用于观光与研究。"
+ colony.9955.b: "将其改造为气体精炼场所。"
+
+ colony.9960.name: "平流层喷口观光平台"
+ colony.9960.desc: "在最活跃的气体喷口附近建造豪华的观景平台后，我们可以大幅提升§Y[planet.GetName]§!的独特旅游体验。游客可以与天凯近距离接触，平台上的研究人员也会引导他们进行观光。\n\n更富裕的游客可以直接参加科学采样探险，甚至还能亲身体验踏足活体天凯带来的刺激！"
+ colony.9960.a: "建造观景平台。"
+ colony.9960.b: "这些资源还有别的用处。"
+
+ colony.9965.name: "平流层喷口扩展"
+ colony.9965.desc: "我们的工程师提出，可以利用炸药来扩宽排放口以充分利用§Y[Planet.GetName]§!地下储存的气体。尽管排放口倒塌的风险微乎其微，但是为以防万一还是通知一下当地人口为好。"
+ colony.9965.a: "安放炸药！"
+ colony.9965.b: "不值得冒这个险。"
+ colony.9965.c: "公会能处理此事。"
+ 
+ colony.9970.name: "喷口扩展成功"
+ colony.9970.desc: "喷口扩展计划大获成功，我们的工程师汇报星球各处的气体产量均有增长。而不幸的副作用是有一些比较脆弱的排放口发生了史诗级的倒塌，对我们的一些设施造成了轻微损伤。\n\n且不论这些微小的阻碍，我们成功地驾驭了§Y[planet.GetName]§!独特的自然条件并得到了好处。"
+
+ colony.9975.name: "喷口扩展失败"
+ colony.9975.desc: "对炸药的计算失误导致数座排放口碎裂，倒塌到了地上，这对我们的设施造成了可观的损害。尽管有一部分精炼厂现在的产出是提高了，但总体而言得不偿失。令人欣慰的是，崩塌的构造下出现了意想不到的矿藏资源。\n\n这些事件提醒我们，如果不砸碎几个喷口，就无法建立跨越星系的文明。"
+
+job_stratovent_researcher: "Vent Researcher"
+job_stratovent_researcher_plural: "Vent Researchers"
+job_stratovent_researcher_desc: "Researchers specialized in studying spaceborne fauna and guiding travellers to see them."
+job_stratovent_refiner: "Vent Refiner"
+job_stratovent_refiner_plural: "Vent Refiners"
+job_stratovent_refiner_desc: "Workers specialized in gathering and refining precious gasses from the Stratospheric Vents."
+job_stratovent_refiner_upg: "Expanded Vent Refiner"
+job_stratovent_refiner_upg_plural: "Expanded Vent Refiners"
+job_stratovent_refiner_upg_desc: "Researchers specialized in studying spaceborne fauna and educating travellers on their behaviour."
+job_stratovent_refiner_minerals: "Collapsed Vent Refiner"
+job_stratovent_refiner_minerals_plural: "Collapsed Vent Refiners"
+job_stratovent_refiner_minerals_desc: "Workers specialized in gathering and refining precious gasses from the Stratospheric Vents."
+
+mod_job_stratovent_researcher_add: "Vent Researcher Jobs"
+mod_job_stratovent_refiner_add: "Vent Refiner Jobs"
+mod_job_stratovent_refiner_upg_add: "Expanded Vent Refiner Jobs"
+mod_job_stratovent_refiner_minerals_add: "Collapsed Vent Refiner Jobs"
 
  # Arc Sites
  broken_world_digsite:0 "破损的大门"
@@ -1316,7 +1361,7 @@
  colony.9280.d:0 "这看起来像我们自己的老旧科技。" #remnants - better ratio for increasing the production vs upkeep
  colony.9280.d.desc:0 "我们曾统治一片广阔的疆域，拥有无与伦比的科技。有些新近重新发现的科技可以用来提高这座铸造厂的产出能力。"
 
- colony.9290.name:0 "盛大开幕！" #ending, final touches
+ colony.9290.name:0 "盛大开幕" #ending, final touches
  colony.9290.desc:0 "成功了！在[Root.GetName]上的铸造厂正在全速运转，尽管和它建造者的原始设计不尽相同，但确实也是一个壮观的设施，它能以超高的效率产出合金。而它的产出就是我们的决心和独创性获得的回报。"
  colony.9290.a:0 "好日子！" #casual, some happiness empirewide for 2 years
  colony.9290.b:0 "建造者又是什么情况？" #memorialists - add chronicler job
@@ -1324,7 +1369,7 @@
  colony.9290.c:0 "我们需要一位监工。" #aristocratic elite - appoint noble job to oversee the factory
  colony.9290.c.desc:0 "我们有让精英监管此类大型工程的传统，我们应当任命合适的贵族来关照我们新的铸造厂。"
  colony.9290.d:0 "任命执行官。" #megacorp - appoint executive job to oversee the factory
- colony.9290.d.desc:0 "让一位总经理监管此类大型工程非常合理，我们应当任命一位执行官来关照我们新的铸造厂。"
+ colony.9290.d.desc:1 "让一位总经理监管此类大型工程非常合理，我们应当任命一位$job_executive_with_icon$来关照我们新的铸造厂。" #appoint an Executive to take care of...
  colony.9290.e:0 "很好。" #gestalt - nothing, just start working
 
  colony.9295.name:0 "金属泥潭"
@@ -1417,30 +1462,31 @@
  mod_job_manufactorium_researcher_per_pop:0 "每$VALUE$人口§G+1§!$job_manufactorium_researcher$岗位"
  mod_job_manufactorium_researcher_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£job_manufactorium_researcher£"
 
-# Intemporal Orb
+
+ # Intemporal Orb
  INTEMPORAL_ORB_CAT:0 "球体"
  INTEMPORAL_ORB_CAT_DESC:0 "我们发现了外形类似球体的高密度能量信号。建议进行更深入的调查。"
 
-## Event: Concentrated Energy
+ ## Event: Concentrated Energy
  anomaly.7105.name:0 "高密度能量"
  anomaly.7105.desc:0 "[From.GetName]的异常能量读数的来源确定是一个蓝色的小球。[Owner.GetScientistPlural]汇报，传感器从中发现了相反极性的快子。\n\n该物体周围的地面上刻着符号，也许是由某个更古老的文明留下的。目前不清楚是符号的含义是指引还是警示。\n\n完整的文本还远不能翻译，但部分符号似乎与时间测量和[Solar_System.GetName]星系中天体相对位置有关。"
  anomaly.7105.a.standard:0 "研究球体。"
  anomaly.7105.a.devouring:0 "吃掉球体。"
  anomaly.7105.b:0 "太危险了，离开它！"
 
-## Event: Local Time Reversal
+ ## Event: Local Time Reversal
  anomaly.7110.name:0 "局部时间反转"
  anomaly.7110.desc:0 "在[FromFrom.GetName]发现的蓝色能量球体消失了。对当地的扫描完全没有发现该球体的任何迹象。更令人困惑的是，地上的符号也一同消失得无影无踪，如同从未存在过一般。\n\n基于在此处发现的异常的快子信号，我们的[Owner.GetScientistPlural]推断，球体和符号一同发生了时间回溯。"
 
-## Event: Timeless
+ ## Event: Timeless
  anomaly.7115.name:0 "时光如流水"
-### Regular empires are non-gestalt empires with a non-robot scientist
+ ### Regular empires are non-gestalt empires with a non-robot scientist
  anomaly.7115.desc.regular:0 "在[FromFrom.GetName]上的站点进行工作时，[Root.GetLeaderName]无意间擦到了蓝色球体。\n\n[leader.GetHeSheCap]之后称看到了时间如同一条河流一般延展，前后连接着无尽的过去与未来。在[leader.GetHimHer]的面前，蓝色能量从时间流中蜿蜒涌出，被吸入了[leader.GetHisHer]的身体里。尽管该意外在[Owner.GetScientistPlural]精确测量中持续了不到一秒钟，但[leader.GetHeShe]感觉仿佛度过了一个多小时。\n\n在幻觉结束后，[Root.GetLeaderName]确信时间不会再影响[leader.GetHimHer]了。[leader.GetHeShe]现在拥有了无限的时间，于是想利用无尽的寿命自行探索宇宙。"
-### Scientist is already immortal
+ ### Scientist is already immortal
  anomaly.7115.desc.immortal:0 "在[FromFrom.GetName]上的站点进行工作时，实习[Owner.GetScientist][intemporal_leader.GetName]无意间擦到了蓝色球体。\n\n[intemporal_leader.GetHeSheCap]之后称看到了时间如同一条河流一般延展，前后连接着无尽的过去与未来。在[intemporal_leader.GetHimHer]的面前，蓝色能量从时间流中蜿蜒涌出，被被吸入了[intemporal_leader.GetHisHer]的身体里。尽管该意外在[Owner.GetScientistPlural]精确测量中持续了不到一秒钟，但[intemporal_leader.GetHeShe]感觉仿佛度过了一个多小时。\n\n在幻觉结束后，[intemporal_leader.GetName]确信时间不会再影响[intemporal_leader.GetHimHer]了。[intemporal_leader.GetHeShe]现在拥有了无限的时间，于是想利用无尽的寿命自行探索宇宙。"
-### Empire is a gestalt consciousness hive
+ ### Empire is a gestalt consciousness (hive or machine intelligence)
  anomaly.7115.desc.hive:0 "在[FromFrom.GetName]上的站点进行工作时，[Root.GetLeaderName]无意间擦到了蓝色球体。\n\n[leader.GetHeSheCap]接收到了一份图像，显示时间如同一条河流一般延展，前后连接着无尽的过去与未来。在[leader.GetHimHer]的面前，蓝色能量从时间流中蜿蜒涌出，被被吸入了[leader.GetHisHer]身体里。尽管该意外在其他[Owner.GetScientistPlural]的精确测量中持续了不到一秒钟，但[leader.GetHeShe]感觉仿佛度过了一个多小时。\n\n在幻觉结束后，我们确信时间不会再影响[Root.GetLeaderName]了。由于现在拥有了无限的时间，我们可以利用[leader.GetHisHer]无尽寿命使其自行探索宇宙。"
-### Empire is devouring swarm
+ ### Empire is devouring swarm
  anomaly.7115.desc.devouring:0 "[Root.GetLeaderName]吃掉了[FromFrom.GetName]上的球体。\n\n[leader.GetHeSheCap]接收到了一份图像，显示时间如同一条河流一般延展，前后连接着无尽的过去与未来。在[leader.GetHimHer]的面前，蓝色能量从时间流中蜿蜒涌出，被被吸入了[leader.GetHisHer]身体里。尽管该意外在其他[Owner.GetScientistPlural]的精确测量中持续了不到一秒钟，但[leader.GetHeShe]感觉仿佛度过了一个多小时。\n\n在幻觉结束后，我们确信时间不会再影响[Root.GetLeaderName]了。由于现在拥有了无限的时间，我们可以利用[leader.GetHisHer]无尽寿命使其自行探索宇宙。"
 
  anomaly.7115.a:0 "好的，一路平安！"
@@ -1451,10 +1497,9 @@
  anomaly.7115.b.regular.tt:0 "[intemporal_leader.GetName]继续留岗工作。"
  anomaly.7115.b.immortal.tt:0 "[intemporal_leader.GetName]成为一名新的§H科学家§!。"
 
-## Event: The Return
+ ## Event: The Return
  anomaly.7120.name:0 "返航"
  anomaly.7120.desc.regular:0 "长程扫描发现了一艘舰船正在驶向[Root.Capital.GetName]。随着它越来越近，我们发现那艘船的设计与我们一世纪前的如出一辙。\n\n在打开通讯之后，我们发现那艘舰船是[intemporal_explorer.GetName]驾驶的，就是那位被蓝色球体从时间流中带走的[Owner.GetScientist]。\n\n[intemporal_explorer.GetHeSheCap]在对撞的中子星和逆转的时空引力井周围漫步，又乘坐飞船返回虚空。值得一提的是，我们的物理学家证实，他带回来的信息不仅大部分是可信的，而且甚至是开创性的。\n\n[intemporal_explorer.GetName]的身体似乎完全不随着时间的流逝而改变，即便我们最近的科技也无法解释那颗球体的功能。[intemporal_explorer.GetHeShe]得以逃脱终极灭亡，将会继续探索宇宙，直到时间的终结。"
-
  anomaly.7120.desc.hive:0 "长程扫描发现了一艘舰船正在驶向[Root.Capital.GetName]。随着它越来越近，我们发现那艘船的设计与我们一世纪前的如出一辙。我们发现那艘舰船是[intemporal_explorer.GetName]驾驶的，就是那位被蓝色球体从时间流中带走的[Owner.GetScientist]。\n\n这位[Owner.GetScientist]的再次连入了我们，知识涌入集体思维中：那是关于对撞的中子星和逆转的时空引力井的观测记忆。传输一结束，这艘船又启程返回了虚空。值得一提的是，我们的[Owner.GetScientistPlural]证实，他带回来的信息不仅大部分是可信的，而且甚至是开创性的。\n\n[intemporal_explorer.GetName]的身体似乎完全不随着时间的流逝而改变，即便我们最近的科技也无法解释那颗球体的功能。[intemporal_explorer.GetHeShe]得以逃脱终极灭亡，将会继续探索宇宙，直到时间的终结。"
 
  DATA_DIAMOND_CAT:0 "薄冰"
@@ -1476,3 +1521,216 @@
  anomaly.3150.b.tooltip:0 "[FromFromFrom.GetName]上将新增一处大型研究矿藏，但可能对[Root.GetLeaderName]存在危险。"
  anomaly.3150.c.tooltip:0 "[FromFromFrom.GetName]上将新增一处稀有水晶矿藏。在获得了相应的科技后就可以进行开采。"
 
+ ###Event: Holding Pattern
+
+ #Modifiers
+ reassured_tracking: "监控结果令人欣慰"
+ reassured_tracking_desc: "集成跟踪系统正在对人口进行监控。尽管集体焦虑依旧存在，但是知道至少有人在想办法解决问题，这个殖民地也稳定了下来。"
+ collective_autophobia: "集体孤独症"
+ collective_autophobia_desc: "一种对失踪的集体恐惧笼罩着这个殖民地。人们互相紧密依靠的渴望已经影响了日常的工作。"
+ freed_stasis_criminals: "顽固罪犯获释"
+ freed_stasis_criminals_desc: "大多数获释囚犯都是惯犯。他们遭受着的化冲击使得他们难以融入社会，犯罪率也随之飙升。"
+ freed_stasis_dissidents: "顽固异见者获释"
+ freed_stasis_dissidents_desc: "大多数囚犯都是政治异见者，他们积极地在殖民地上传播自己的艺术与文化。"
+ 
+ #Events
+ colony.9900.name: "晨间打卡缺席"
+ colony.9900.desc: "日前，[Root.GetName]上涌现出大量的[Owner.GetPopTypeNamePlural]失踪事件。这些人唯一的共同点就是他们在失踪时都孤身一人。随着消息散播开来，人们对于失踪的恐惧随之降临。民众的惶恐不安对殖民地的日常运作带来了极大的麻烦。"
+ colony.9900.a: "开展跟踪器植入项目。"
+ colony.9900.a.tooltip: "[Root.GetName]上的一单位人口失踪了。我们将部署一套昂贵的跟踪监控系统来帮助我们解决这个谜团。"
+ colony.9900.b: "没有必要对此恐慌。"
+ colony.9900.b.tooltip: "[Root.GetName]上的一单位人口已经失踪。"
+ colony.9905.name: "扫描成功"
+ colony.9905.desc.a: "得益于在[Root.GetName]上部署的追踪系统，我们获得了重要的线索。\n\n在近期[Owner.GetPopTypeNamePlural]失踪案例中，我们都在事件发生后迅速进行了扫描，进而得到了他们最后出现的位置。而在每个案例中，我们都发现了一种衰变的带电粒子残留物。\n\n我们已经成立了一个特殊项目，以确定这些粒子的真实性质及其与我们失踪[Owner.GetPopTypeNamePlural]之间的关系。"
+ colony.9905.desc.b: "我们在[Root.GetName]上取得了幸运的突破！我们发现了最近失踪的[Owner.GetPopTypeNamePlural]的去处。对这块区域的详细扫描发现了一些带电粒子的衰变痕迹。\n\n我们已经成立了一个特殊项目，以确定这些粒子的真实性质及其与我们失踪[Owner.GetPopTypeNamePlural]之间的关系。"
+ colony.9905.a: "一定要究根问底。"
+ colony.9905.a.tooltip: "[Root.GetName]又失踪了一个人口。"
+ colony.9910.name: "待机模式"
+ colony.9910.desc: "参照残留痕迹，我们通过银河的扫描，在[Root.GetName]的卫星上发现了那些粒子的存在证据。\n\n通过搜索卫星表面，我们找到了一坐被沙尘掩埋了数百年的小型气闸。其中是一座被遗弃的行政办公复合体、一台远距离物质传送机和一个连接在极先进静滞仓网络的力场操纵系统。\n\n静滞仓中冷冻着许多个体，其中也包括我们失踪的殖民者。几乎可以肯定这座设施就是一座监狱。我们还需要弄清楚他们被抓进来的原因以及解救的方法。"
+ colony.9910.a: "棒极了"
+ colony.9915.name: "逃离卫星"
+ colony.9915.desc: "真相和阴谋相去甚远，我们失踪的[Owner.GetPopTypeNamePlural]是由于系统故障而遭到关押。\n\n计算机的一个故障激活了监狱老旧的传送系统，随机地将几位我们的[Owner.GetPopTypeNamePlural]定罪。这座设施的建造者将这些静滞仓兼用于囚禁犯人和再教育功能。将我们的人口释放出来相对容易，但许多这些囚犯仍被困在静滞场中。释放他们也是有可能的，但由于没有犯罪记录，我们无法完整得知这些人的犯罪过往。\n\n或者，我们可以修复这座监狱，让专职的监狱长控制它的传送系统。"
+ colony.9915.a: "这可是不规矩的[Owner.GetPopTypeNamePlural]们的好去处。"
+ colony.9915.a.tooltip: "失踪的[Owner.GetPopTypeNamePlural]将会回归。我们也会获得一座可用的静滞监狱。"
+ colony.9915.b: "绝不可以把人关在这样的监狱里。"
+ colony.9915.b.tooltip: "失踪的[Owner.GetPopTypeNamePlural]将会回归，我们也将关停这座鉴于。其余的囚犯将被释放，但可能对我们的殖民地造成负面影响。"
+ colony.9915.c: "设置一项逐步释放计划。"
+ colony.9915.c.tooltip: "我们将对离开监狱的犯人进行筛查和帮助，以促进殖民地的平稳过渡。"
+ colony.9915.d: "这么多肉罐头？美滋滋。"
+ colony.9915.d.tooltip: "失踪的[Owner.GetPopTypeNamePlural]将会回归。我们会将这座监狱改造成食物工厂，让蜂巢得意想用这些静滞的囚犯。"
+ colony.9920.name: "坏邻居"
+ colony.9920.desc: "[Root.GetName]上释放的囚犯大多数都是顽固的犯罪分子。突然将他们成群释放会对殖民地造成问题。"
+ colony.9920.a: "真不幸。"
+ colony.9925.name: "大杂烩"
+ colony.9925.desc: "[Root.GetName]上释放的囚犯既有顽固的犯罪分子也有政治意见者：艺术家、作家和音乐家等等。\n\n虽然这些文化囚犯很高兴与我们分享他们的知识，但许多罪犯走投无路又开始重操旧业。"
+ colony.9925.a: "知道了。"
+ colony.9930.name: "好邻居"
+ colony.9930.desc: "[Root.GetName]上释放的囚犯大多数都是政治异见者：艺术家、作家和音乐家等等。\n\n在重获自由之后他们很乐意与我们分享他们的文化和知识。"
+ colony.9930.a: "棒极了。"
+
+ #Scripted Loc
+ colonist_key: "殖民者"
+ colonists_key: "殖民者"
+
+ #Deposit
+ d_stasis_prison:0 "静滞监狱"
+ d_stasis_prison_desc:0 "在这颗行星的卫星里面，有一座连接在高度先进的静滞仓网络上的废弃的监狱复合体。被冷冻在其中的囚犯无法逃脱。"
+ d_prisoner_intergration: "结构性整合"
+ d_prisoner_intergration_desc: "将这些静滞的囚犯一次性释放是个错误的决定。通过对案例的逐一分析我们才能更好地确保每一个个体可以完全整合进我们的社会中。"
+ d_meals_in_pods: "仓中自助餐"
+ d_meals_in_pods_desc: "这些冷冻静滞的东西就是绝佳的预制肉。"
+
+ #Special Project
+ STASIS_PRISON_PROJECT: "粒子谜题"
+ STASIS_PRISON_PROJECT_DESC: "[Root.GetName]上的[Owner.GetPopTypeNamePluralCap]最近发生了失踪。调查发现了一些独特的带电粒子残留。我们会利用所有已知的信息来寻找失踪的[Owner.GetPopTypeNamePlural]。"
+
+ #Jobs
+ job_stasis_warden:0 "静滞看守"
+ job_stasis_warden_plural:0 "静滞看守"
+ job_stasis_warden_desc:0 "运维静滞监狱的看守人员，同时也对公民的失踪进行标记。"
+ mod_job_stasis_warden_add:0 "$job_stasis_warden$岗位"
+ mod_job_stasis_warden_per_pop:0 "每$VALUE$人口§G+1§!$job_stasis_warden$岗位"
+ mod_job_stasis_warden_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£job_researcher£"
+ job_stasis_warden_drone:0 "静滞看守子个体"
+ job_stasis_warden_drone_plural:0 "静滞看守子个体"
+ job_stasis_warden_drone_desc:0 "运维静滞监狱的看守子个体，也负责标记那些需要失踪的异常个体。"
+ mod_job_stasis_warden_drone_add:0 "$job_stasis_warden_drone$岗位"
+ mod_job_stasis_warden_drone_per_pop:0 "每$VALUE$人口§G+1§!$job_stasis_warden_drone$岗位"
+ mod_job_stasis_warden_drone_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£job_researcher£"
+
+ ## Event: Junkyard Orbit
+ colony.9310.name: "轨道垃圾场"
+ colony.9310.desc: "[planet.GetName]上传回的最新消息称我们对行星废弃物管理能力的计算发生了错误。大量的垃圾场融合在一起，形成了一片无法通行的废土，一直延伸到行星人口中心的边缘。\n\n当地人开始大规模地将这些垃圾发射到轨道上，不过这也只是缓兵之计。"
+ colony.9310.a: "令人担忧。"
+ colony.9310.a.tooltip: "马上把这个烂摊子收拾一下。"
+ colony.9315.name: "碎片笼罩"
+ colony.9315.desc: "事故已经发生了。\n\n由于一个严重的故障，许多环绕[planet.GetName]垃圾仓发生了碰撞，大量的碎片进入了底层大气。这一事故已经限制了行星的航天能力，据估计，随着这些太空垃圾的持续瓦解，情况只会越来越糟。然而，收集这些垃圾又是一项费时费力的大工程。"
+ colony.9315.a: "打扫轨道。"
+ colony.9315.a.tooltip: "部署特殊单位。"
+ colony.9315.b: "太空这么大。这点儿垃圾算什么。"
+ colony.9315.b.tooltip: "星系中还有其他更紧迫的问题。"
+ colony.9315.c: "宣告紧急事态。"
+ colony.9315.c.tooltip: "我们必须竭尽所能清理这些碎片。"
+ colony.9320.name: "轨道清理完成"
+ colony.9320.desc: "这是[planet.GetName]上里程碑式打得一天，太空垃圾收集工完成了最后的一个轮班。环绕着[planet.GetName]的垃圾环带的规模已经缩小到不再对通过的舰船构成主要威胁了。\n\n在未来的日子里，仍会有小规模的清理工作继续进行。完全把轨道清理干净也许是不可能的，但至少最坏的情况已经过去了。"
+ colony.9320.a: "终于一切可以恢复正常了。"
+ colony.9325.name: "封锁之地"
+ colony.9325.desc: "环绕[Planet.GetName]的失控垃圾环带的事态趋于平缓之后，局势却突然急转直下。\n\n殖民地的科学家表示，一块块太空垃圾的碎片互相碰撞，形成了一个微碎片构成的星环，连带损害的风险严重阻碍了进出殖民地的资源和人口的转运。"
+ colony.9325.a: "糟糕。"
+ colony.9330.name: "流星雨"
+ colony.9330.desc: "环绕[Planet.GetName]的失控垃圾环带的事态趋于平缓之后，事态似乎小事化了了。\n\n在行星的强引力场作用下，无数的流星开始大规模地坠落，在大气层内开始燃烧。每到夜幕降临，人们开始习惯于聚在一起驻足观看这一独特而壮丽的流星雨。"
+ colony.9330.a: "创意观星时间到。"
+ colony.9335.name: "天清空净"
+ colony.9335.desc: "随着太空垃圾收集工完成了最后一个轮班，[planet.GetName]上发生了一场历史性的庆祝活动。\n\n从今天开始，一度萦绕在行星轨道上的垃圾环带已减少到无法探测的程度。由于成效显著，人们轰动般地支持着收集工们的进一步行动，确保子孙后代能见到一片晴空。"
+ colony.9335.a: "值得纪念的一天。"
+ orbital_cleanup: "轨道净空"
+ orbital_cleanup_DESC: "在一低层大气碰撞事故后，[Root.GetName]的轨道布满了太空碎片。如果不尽快清理，次生灾害可能导致这颗星球的交通中断。"
+ orbital_cleanup_intense: "强力轨道净空"
+ orbital_cleanup_intense_DESC: "在一低层大气碰撞事故后，[Root.GetName]的轨道布满了太空碎片。必须不惜一切代价进行彻底的清理才能保证定居者未来的安全。"
+ job_astrogarbage_collector: "太空垃圾收集者"
+ job_astrogarbage_collector_plural: "太空垃圾收集者"
+ job_astrogarbage_collector_desc: "一个从行星轨道上收集太空碎片的特殊单元。"
+ job_astrogarbage_collector_add: "$job_astrogarbage_collector$岗位"
+ job_astrogarbage_collector_per_pop: "每$VALUE$人口§G+1§!$job_astrogarbage_collector$"
+ mod_job_astrogarbage_collector_add: "$job_astrogarbage_collector$岗位"
+ mod_job_astrogarbage_collector_per_pop: "每$VALUE$人口§G+1§!$job_astrogarbage_collector$"
+ mod_job_astrogarbage_collector_per_pop_short: "\n每$VALUE$£pop£§G+1§!£job_astrogarbage_collector£"
+ job_astrogarbage_collector_gestalt: "太空垃圾子个体"
+ job_astrogarbage_collector_gestalt_plural: "太空垃圾子个体"
+ job_astrogarbage_collector_gestalt_desc: "一个负责从行星轨道上收集太空碎片的特殊无人机单元"
+ job_astrogarbage_collector_gestalt_add: "$job_astrogarbage_collector_gestalt$岗位"
+ job_astrogarbage_collector_gestalt_per_pop: "每$VALUE$人口§G+1§!$job_astrogarbage_collector_gestalt$"
+ mod_job_astrogarbage_collector_gestalt_add: "$job_astrogarbage_collector_gestalt$岗位"
+ mod_job_astrogarbage_collector_gestalt_per_pop: "每$VALUE$人口§G+1§!$job_astrogarbage_collector_gestalt$"
+ mod_job_astrogarbage_collector_gestalt_per_pop_short: "\n每$VALUE$£pop£§G+1§!£job_astrogarbage_collector_gestalt£"
+ d_astrogarbage_collector: "太空垃圾单元"
+ d_astrogarbage_collector_desc: "通过降低轨道碎片的数量，该星球有望保留太空通航能力。"
+ d_sprawling_landfill_blocker: "外溢填埋场"
+ d_sprawling_landfill_blocker_desc: "连绵不绝的垃圾山，飞速地溢出了原定的填埋区域。"
+ trash_rings: "垃圾环带"
+ trash_rings_desc: "这颗行星被人造太空垃圾构成的松散环带围绕。"
+ ground_locked: "封锁之地"
+ ground_locked_desc: "在一次严重的行星低轨太空碎片碰撞后，直到进一步通知前，再也没有舰船允许通过。"
+ clear_skies: "天清空净"
+ clear_skies_desc: "该星球的天空中最近刚刚清理掉了危险的太空碎片，人们得以再度自由地进出这颗星球。"
+ shooting_stars: "流星"
+ shooting_stars_desc: "随着太空碎片在轨道上熊熊燃烧，这颗星球正经历周期性的流星雨。"
+
+ ### MYRMEKU
+ # Event Chain
+ myrmeku_chain_title: "密弥库蚁"
+ myrmeku_chain_desc: "微小昆虫的集群突然集体爆发，席卷了整个[myrmeku_planet.GetName]大地。"
+ # Deposit and Job
+ d_myrmeku_power_farms: "密弥库能量农场"
+ d_myrmeku_power_farms_desc: "这些微小的昆虫可以产生我们能驾驭的能量。"
+ job_myrmeku_power_farmer: "密弥库能量农民"
+ job_myrmeku_power_farmer_plural: "密弥库能量农民"
+ job_myrmeku_power_farmer_desc: "从密弥库蚁群落中抽取能量的技师。"
+ mod_job_myrmeku_power_farmer_add: "$job_myrmeku_power_farmer$岗位"
+ mod_job_myrmeku_power_farmer_per_pop: "每$VALUE$人口§G+1§!$job_myrmeku_power_farmer$"
+ mod_job_myrmeku_power_farmer_per_pop_short: "\n每$VALUE$£pop£§G+1§!£job_technician£"
+ job_myrmeku_power_farmer_gestalt: "密弥库能量子个体"
+ job_myrmeku_power_farmer_gestalt_plural: "密弥库能量子个体"
+ job_myrmeku_power_farmer_gestalt_desc: "从密弥库蚁群落汲取能量的技师工蜂。"
+ mod_job_myrmeku_power_farmer_gestalt_add: "$job_myrmeku_power_farmer_gestalt$岗位"
+ mod_job_myrmeku_power_farmer_gestalt_per_pop: "每$VALUE$人口§G+1§!$job_myrmeku_power_farmer_gestalt$"
+ mod_job_myrmeku_power_farmer_gestalt_per_pop_short: "\n每$VALUE$£pop£§G+1§!£job_technician_drone£"
+ # Planet Modifiers
+ planet_myrmeku_attacks: "密弥库蚁袭击"
+ planet_myrmeku_attacks_desc: "[Owner.GetColonistPluralCapital]被微小的昆虫攻击了。"
+ planet_myrmeku_seal_colony: "$planet_myrmeku_attacks$"
+ planet_myrmeku_seal_colony_desc: "已对所有建筑采取特殊保护以避免遭到当地生物的入侵。"
+ planet_myrmeku_upgrade_robots: "$planet_myrmeku_attacks$"
+ planet_myrmeku_upgrade_robots_desc: "[Owner.GetColonistPluralCapital]经过特别设计，针对内部机械具有额外的保护。"
+ planet_myrmeku_pest_control: "$planet_myrmeku_attacks$"
+ planet_myrmeku_pest_control_desc: "摧毁地表上的昆虫群落已被定为首要任务。"
+ planet_myrmeku_lured: "资源转移"
+ planet_myrmeku_lured_desc: "记忆芯片隔绝材料已分发到各地。"
+ # Special Project
+ MYRMEKU_STUDY_PROJECT: "密弥库蚁研究"
+ MYRMEKU_STUDY_PROJECT_DESC: "对[myrmeku_planet.GetName]上的密弥库蚁进行研究，以厘清其残暴的行为是否能变害为宝。"
+
+ # Events
+ colony.9350.name: "密弥库蚁活动"
+ colony.9350.desc: "我们一在§Y[Root.GetName]§!安顿下来就发现了大量的节肢类活动。具体来说，有一种叫做“密弥库蚁”的会建造聚群的微小昆虫出乎意料地数量众多。\n\n它们的地下群落数量众多，遍布整片大陆，但目前为止还没有造成过什么问题。目前尚不清楚它们是在寻找着地表上的什么东西，或是为了躲避地下的什么东西而逃出。"
+ colony.9350.a.mem_vault: "把密弥库蚁写进知识宝库。" #Civic Vaults of Knowledge
+ colony.9350.a.exp_prot: "真是奇妙的生物。" #Civic Exploration Protocols
+
+ colony.9355.name: "[Owner.GetColonistPluralCapital]被攻击"
+ colony.9355.desc: "我们在§Y[Root.GetName]§!上的[Owner.GetColonistPlural]遭受到了残暴的攻击！由于太过靠近密弥库蚁的群落，它们被蚁拥而上。这些微小的昆虫钻进了[Owner.GetColonistPlural]的框架内，这些受害者很快就被击溃了。\n\n落败的[Owner.GetColonistPlural]在一瞬间就被肢解了，但关于这种昆虫的行为目的没有记录下任何有意义的信息。的磁性外骨骼凹凸不平的表面会破坏我们的内部电路，当两只密弥库蚁接触时，它们会产生微小的电火花；这两种情况都可能导致灾难性的系统故障。\n\n以这种方式损失[Owner.GetColonistPlural]拖慢了这颗[Root.GetPlanetMoon]的发展速度。我们必须采取些行动。"
+ colony.9355.a: "寻找解决方法。"
+
+ colony.9360.name: "记忆吞食者"
+ colony.9360.desc: "密弥库蚁以迅雷不及掩耳之势在我们的定居点附近建造了数座大型建筑。他们的攻击已经不再局限于周边地区了，而是开始出现在居住区域中。\n\n大量可供解剖的对象揭示了密弥库蚁对我们感兴趣的令人不安的原因：这种昆虫吃我们§Y存储芯片§!的绝缘材料。\n\n这种致命性对受害者只是暂时的，因为记忆电路可以替换并恢复备份。然而，替换这些部件就会让新[Owner.GetColonistPlural]的建造放慢。"
+ colony.9360.a: "密封我们的殖民地。"
+ colony.9360.a.tt: "专注于保护建筑物。\n\n§Y$planet_myrmeku_attacks$§!修正调整为\n机械人口组装速度：§R-10%§!\n行星建造速度：§R-10%§!"
+ colony.9360.b: "升级躯体。"
+ colony.9360.b.tt: "专注于保护[Owner.GetColonistPlural]。\n\n§Y$planet_myrmeku_attacks$§!修正调整为\n机械人口组装速度：§R-10%§!\n机器人维护费：§R+10%§!"
+ colony.9360.c: "摧毁密弥库蚁群落。"
+ colony.9360.c.tt: "进攻就是最好的防守。\n\n§Y$planet_myrmeku_attacks$§!修正调整为\n机械人口组装速度：§R-30%§!\n\n"
+ colony.9360.d.org_repro: "捕获这些昆虫。" #Civic Organic Reprocessing
+ colony.9360.d.tt: "我们会给每种有机体都找到用处的。\n\n§Y$planet_myrmeku_attacks$§!修正调整为\n机械人口组装速度：§R-30%§!\n\n"
+ colony.9360.e.purifier: "把这个行星上的生命清空。" #Civic Determined Exterminator
+ colony.9360.e.tt: "杀光密弥库蚁。"
+
+ colony.9365.desc: "害虫防治"
+ colony.9365.desc.seal_colony: "§Y[Root.GetName]§!上的殖民建筑进行了完全的密封以避免密弥库蚁进入。\n\n所有新旧建筑的入口都增加可以磁化的金属条带来捕获密弥库蚁，但在野外[Owner.GetColonistPlural]仍会遭受攻击而损失。"
+ colony.9365.desc.upgrade_robots: "将我们的记忆芯片封装在额外保护的外壳中的升级套件已经在进行开发和现场测试。\n\n不幸的是，密弥库蚁的下颚足够强壮，只要有足够的时间和数量，它们可以吃掉任何可用的材料。"
+ colony.9365.desc.pest_control: "为了杀光密弥库蚁，我们派出了巡逻队寻找它们的巢穴。地表的结构很容易通过燃烧和爆破来摧毁，但地下的群落实在过深，难以进行完全的清理。\n\n而在行动过程中我们甚至失去了更多的[Owner.GetColonistPlural]。"
+ colony.9365.desc.harvest: "为了控制密弥库蚁，我们在它们的巢穴附近建造了生物捕获器。地表的结构很容易进行收获，但地下的群落实在过深，难以进行完全的清理。\n\n而在行动过程中我们甚至失去了更多的[Owner.GetColonistPlural]。"
+ colony.9365.a: "我们需要更好的解决方案。"
+
+ colony.9370.name: "核爆选项"
+ colony.9370.desc: "杀死§Y[Root.GetName]§!上所有有机生物的准备已经完成。\n\n行动过程中，在轨道上观看[Root.GetPlanetMoon]让我们有机会得以欣赏地表有机复杂性的降低。"
+ colony.9370.a: "优雅。"
+
+ colony.9375.name: "分析子例程提议"
+ colony.9375.desc: "至今为止，为解决密弥库蚁问题的努力尚未得到成功。这些昆虫依旧数量惊人，袭扰着[Root.GetName]各地，殖民地的交通各种活动深受其害。我们分析子例程通过对未来预期的模拟得出了以下方案。\n\n应对方案A：通过向远离殖民地的区域空投记忆体绝缘材料来将密弥库蚁引走，并回收利用损坏的[Owner.GetColonistPlural]。\n\n应对方案B：研究这些密弥库蚁，寻找到他们残暴本性的可能利用方式。"
+ colony.9375.a: "引走他们。"
+ colony.9375.a.tt: "§Y$planet_myrmeku_attacks$§!修正调整为\n机器人维护费：§R+5%§!\n\n"
+ colony.9375.b: "研究它们。"
+
+ colony.9380.name: "强力结果"
+ colony.9380.desc: "我们对密弥库蚁的研究完成了。把校准过的磁体放置在它们的聚落入口附近时，这些昆虫的磁性外骨骼就会释放出我们能够利用的电能。\n\n这些研究还表明，密弥库蚁会依照当地磁场移动，因此在我们的记忆芯片加装去磁保护壳就可以避免受其攻击。"
+ colony.9380.a: "棒极了。"
+ 

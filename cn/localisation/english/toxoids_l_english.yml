@@ -4,13 +4,15 @@
 
  origin_toxic_knights:0 "毒圣骑士"
  origin_toxic_knights_desc:2 "几个世纪前，这个物种的母星被一位毒性神祗造访。接踵而至的生态灾难几乎摧毁了这个星球，但是幸存者们怀着对毒圣的崇敬之情，草草地统一了起来。他们创立了一个骑士教团来搜寻毒圣，尽管后来很多事情变了，但是这份试炼依旧保留了下来。"
- origin_toxic_knights_effects:2 "—在你的母星系内一处独特的§H居住站§!上开局，但是§R少§!3£pop£人口。\n—开局就拥有§H“毒圣的试炼”§!局势。\n—拥有独特的£job_knight_commander£§H骑士领主§!，£job_knight£§H骑士§!和£job_squire£§H扈从§!岗位。\n—通过§H试炼§!可以为§H骑士§!和你的§H母星§!解锁强大的修正。\n—允许解锁§H骑士职责§!政策。\n—允许在附属国的星球上建造£building£§H骑士团支部§!。\n—寻觅之旅的终点。"
+ origin_toxic_knights_effects:3 "—母星：$TABBED_NEW_LINE$—['concept_toxic_features']$TABBED_NEW_LINE$—独有['concept_pc_habitat', Orbital Habitat]：$TABBED_NEW_LINE$$t$—['concept_order_keep', £building£ $building_order_keep$]$TABBED_NEW_LINE$$t$—['concept_orders_demesne', £district£ $district_orders_demesne$]$TABBED_NEW_LINE$$t$—['concept_politician', £job_politician£ $job_politician$]岗位替换为['concept_order_jobs']$NEW_LINE$—局势：['concept_knights_quest']$NEW_LINE$—政策：§I骑士职责§!$NEW_LINE$—$AVAILABLE_HOLDINGS$['concept_knight_commandery', £building£ Order's Commanderies]于附属国的殖民地上。"
+
+ origin_toxic_knights_negative_effects: "- $INITIAL_POPS$ §R-3§!"
  START_SCREEN_TOXIC_KNIGHTS:1 "很久以前，我们的行星四分五裂。沐猴而冠的所谓国王们互相征伐，无数的人口为之白白牺牲。但第一位至高王的到来改变了一切。天赐与他的领导能力铸就了一个无与伦比的王国。\n\n至高王虔诚无比。他向一切一切不信者宣战，但异端仍野火烧不尽。直到一天，毒圣降临到了我们的星球，至高王的祈祷得到了回应。尽管祂的到来只是短短一瞬，但祂剧毒的影响力瞬间毒化了所有不信者之地。所有幸存者纷纷效忠至高王。我们的星球第一次获得了统一。\n\n毒圣很快又离我们而去，但至高王却决定找到祂，为此建立了一个骑士团。数个世纪以来，这些英勇的灵魂们孜孜不倦地寻找，但一无所获。毒圣已经离开我们的星球太久了。试炼的下一个章节将会在星际间谱写。利用强大的遗珍，骑士团建立了我们帝国第一个空间站。坚固无比的主城将会是他们飞向茫茫星海的跳板。"
  START_SCREEN_TOXIC_KNIGHTS_CORPORATE:0 "很久以前，我们的行星四分五裂。沐猴而冠的所谓国王们互相征伐，无数的人口为之白白牺牲。但第一位至高王的到来改变了一切。天赐与他的领导能力铸就了一个无与伦比的王国。\n\n至高王虔诚无比。他向一切一切不信者宣战，但异端仍野火烧不尽。直到一天，毒圣降临到了我们的星球，至高王的祈祷得到了回应。尽管祂的到来只是短短一瞬，但祂剧毒的影响力瞬间毒化了所有不信者之地。所有幸存者纷纷效忠至高王。我们的星球第一次获得了统一。\n\n毒圣很快又离我们而去，但至高王却决定找到祂，为此建立了一个骑士团。数个世纪以来，这些英勇的灵魂们孜孜不倦地寻找，但一无所获。试炼是一个耗费高昂的事业。随着时间的推移，这个王国越来越感兴趣于追名逐利以养活骑士们。无论是生活还是消费，每一位公民都是在支持试炼。\n\n毒圣已经离开我们的星球太久了。试炼的下一个章节将会在星际间谱写。利用强大的遗珍，骑士团建立了我们帝国第一个空间站。坚固无比的主城将会是他们飞向茫茫星海的跳板。"
  job_knight:0 "骑士"
  job_knight_plural:0 "骑士"
  job_knight_desc:1 "为战而训，品学兼优。这些骑士们代表着我们社会的精粹，他们全身心地奉献一切，只为寻求毒圣。"
- job_knight_effect_desc:2 "£job_knight£ $job_knight_plural$消耗$r_alloys$提供£mod_country_naval_cap_add£ §Y军舰容量§!，£defense_army£ §Y防御部队§!，£unity£ §Y凝聚力§!，以及£physics_research£ £society_research£ £engineering_research£§Y研究点数§!\n完成§Y骑士誓言试炼§!能够进一步改善他们的产出。"
+ job_knight_effect_desc:3 "£job_knight£$job_knight_plural$将$r_alloys$转化为$r_unity$和$r_research$，增加£mod_country_naval_cap_add£§Y军舰容量§!并产生£defense_army£§Y防御部队§!\n完成§Y骑士誓言试炼§!将进一步提升其产出。"
  mod_job_knight_add:0 "$job_knight$岗位"
  mod_job_knight_per_pop:0 "每$VALUE$个人口§G+1§!$job_knight$岗位"
  mod_job_knight_per_pop_short:0 "\n每$VALUE$ £pop£ §G+1§!£job_knight£"
@@ -30,8 +32,8 @@
  job_knight_commander:0 "骑士领主"
  job_knight_commander_plural:0 "骑士领主"
  job_knight_commander_desc:1 "骑士们富有荣誉，值得尊敬——是我们社会能够培养出的最为出类拔萃的一批人。但即使是他们也需要有人领导。骑士领主剑锋所指，骑士同胞旌旗必达！"
- job_knight_commander_effect_desc:1 "£job_knight_commander£ $job_knight_commander_plural$将$r_alloys$转化为$r_unity$、$r_amenities$和£mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!。\n完成§Y骑士誓言试炼§!能够进一步提升他们的产出。"
- job_knight_commander_research_effect_desc:0 "£job_knight_commander£ $job_knight_commander_plural$将$r_alloys$转化为$r_unity$、$r_research$、$r_amenities$和£mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!。\n完成§Y骑士誓言试炼§!能够进一步提升他们的产出。"
+ job_knight_commander_effect_desc:2 "£job_knight_commander£ $job_knight_commander_plural$将$r_alloys$转化为$r_unity$和$r_amenities$，并提高£mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!。\n完成§Y骑士誓言试炼§!将进一步提升其产出。"
+ job_knight_commander_research_effect_desc:1 "£job_knight_commander£ $job_knight_commander_plural$将$r_alloys$转化为$r_unity$、$r_research$和$r_amenities$并提高£mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!。\n完成§Y骑士誓言试炼§!将进一步提升其产出。"
  mod_job_knight_commander_add:0 "$job_knight_commander$岗位"
  mod_job_knight_commander_per_pop:0 "每$VALUE$人口提供§G+1§!$job_knight_commander$岗位"
  mod_job_knight_commander_per_pop_short:0 "\n每$VALUE$£pop£ §G+1§!£mod_job_knight_commander_add£"
@@ -69,6 +71,9 @@
  d_toxic_god_envenomed_seas_desc:1 "哪怕是大海也不能免于神明灾厄般的触碰。"
  d_toxic_god_envenomed_seas_upgraded:0 "$d_toxic_god_envenomed_seas$"
  d_toxic_god_envenomed_seas_upgraded_desc:1 "我们的骑士带回了必要的科技，让我们能够从毒圣碰触的海洋中采集异星天然气。"
+
+ d_knights_calibrator: "骑士团石中鉴"
+ d_knights_calibrator_desc: "骑士团最受崇敬的遗珍，维系着整个主城。"
 
  NAME_Toxic_God:0 "毒圣"
  NAME_Venomous_Deity:0 "有毒神祇"
@@ -111,6 +116,7 @@
 
  r_toxic_god:0 "毒性神祇之咽"
  r_toxic_god_desc:0 "一些人相信这个巨大的咽喉是从持有神力之物中获得的。对一个已死之神，也就是那个被杀死的生物，这个战利品是唯一纪念它逝去的纪念碑。"
+ r_toxic_god_knights_passive_effect: "§Y解锁轨道站：§!$major_orbital_knights$"
  r_toxic_god_knights_effect:0 "解锁§Y决议§!§Y祝圣居住站§!，并在此建立一座§Y$building_order_castle$§!。"
 
  building_order_castle:0 "骑士团城堡"
@@ -118,7 +124,7 @@
 
  decision_consecrate_habitat_knights:0 "祝圣居住站"
  decision_consecrate_habitat_knights_desc:0 "我们当以试炼中获得的文物祝圣居住站。如此它才能被视为骑士的基地，骑士团也才会在这里建造新的城堡和辖地。"
- decision_consecrate_habitat_knights_effect:0 "\n§Y$building_order_castle$§!产生£job_knight£骑士和£job_squire£扈从岗位，将§Y$district_hab_cultural_plural$§!替换为§Y$district_orders_demesne_plural$§!。\n§R无法被摧毁。§!"
+ decision_consecrate_habitat_knights_effect:1 "\n§Y$building_order_castle$§!产生£job_knight£骑士和£job_squire£扈从岗位，将§Y$district_hab_housing_plural$§!替换为§Y$district_orders_demesne_plural$§!。\n§R无非被摧毁。§!"
  requires_another_consecration:1 "$TRIGGER_FAIL$ 需要§Y$r_toxic_god$§!的进一步激活。"
 
  toxoid_knights_finisher.poi.name:0 "$situation_toxic_knights$"
@@ -456,7 +462,7 @@
 
  holding_knight_commandery:0 "骑士团支部"
  holding_knight_commandery_desc:0 "在这个加固的哨站中，我们的骑士同我们的附庸通力合作，寻找毒圣。我们的附属应当提供给我们资源和数据，以支持教团的工作。"
- job_overlord_knight_commandery_effect_desc:0 "£job_knight£ $job_overlord_knight_plural$消耗$r_alloys$为附属国提供£defense_army£ §Y防御部队§!和£stability£ §Y稳定度§!，为宗主国提供£unity£ §Y凝聚力§!和£physics_research£ £society_research£ £engineering_research£§Y研究点数§!。"
+ job_overlord_knight_commandery_effect_desc:1 "£job_knight£$job_overlord_knight_plural$将$r_alloys$转化为£stability£§Y稳定度§!并为附属国提供£defense_army£§Y防御部队§!，为宗主国提供£unity£§Y凝聚力§!和£physics_research£ £society_research£ £engineering_research£§Y研究点数§!。"
  job_overlord_knight:0 "宗主国$job_knight$"
  job_overlord_knight_plural:0 "宗主$job_knight_plural$"
  job_overlord_knight_desc:0 "$job_knight_desc$"
@@ -487,7 +493,7 @@
  origin_overtuned:0 "强夺天工"
  origin_overtuned_desc:1 "这个文明不择手段地增强自己的有机体，无论风险，无论成本。毕竟，与其在沉默中消亡，不如光鲜亮丽地燃烧殆尽。"
  origin_overtuned_effects:1 "开局时可以选择高级生物学特质，比一般的特质更强，成本更低廉，同时却带有极高的风险。"
- origin_tooltip_overtuned_effects:3 "—可以选择默认物种特质的§Y强夺天工§!版本。同时这些特质还可以被§Y不问后果§!法令进一步增强。\n—§Y强夺天工§!特质可以经由§Y$tech_gene_tailoring$§!随意添加和移除。\n—开局便具有§Y基因修饰§!你的£pop£人口的能力。"
+ origin_tooltip_overtuned_effects:4 "—$SPECIES_TRAITS$可以选择['concept_overtuned_traits']特质。$NEW_LINE$—强夺天工特质：$TABBED_NEW_LINE$—可由['concept_damn_the_consequences']法令进一步增强$TABBED_NEW_LINE$—可以通过§I基因修饰§!进行添加或移除\n—$ADDITONAL_TECHNOLOGIES_STRING$['concept_gene_tailoring', £society£ $tech_gene_tailoring$]"
  START_SCREEN_OVERTUNED:1 "自然是个不温不火的发明家，而进化则如同冰川流动一般迟缓。为了发展繁荣我们需要身强力健、敏捷如飞并且脑力超群，而且我们等不了一百万年，只争朝夕。自然选择吝啬于赐予我们礼物，我们只能自己动手。\n\n于是我们的文明的原则便如此建立起来了：我们要无限制地强化我们的身躯。这些强化把我们的星球统一了起来，并且将带领我们走向更遥远的未来。\n\n基因工程赐予我们超强大脑、无尽膂力和无上勇气，我们定能在群星间繁荣昌盛，这也是设计完美的生物才能拥有的特权。"
  disables_overtuned_features:0 "§R选择这个飞升特典将使得强夺天工起源机制不可用。§!"
 
@@ -679,7 +685,6 @@
  ap_detox:0 "排毒"
  ap_detox_desc:1 "我们在环境改造方面的最新技术突破能够让我们在一类新的行星上面孕育生命——我们此前确信这类行星极度致命，根本无法改造。"
  detox_tox_worlds:2 "能够将§Y剧毒行星改造候选§!通过环境改造转变为宜居的星球。\n在我们的国境内有§Y[This.num_toxic_terraform_candidates]§!颗这样的行星。"
-
  MESSAGE_TOXIC_TERRAFORM_FOUND_TITLE:0 "$toxoids.500.name$"
  MESSAGE_TOXIC_TERRAFORM_FOUND_DESC:0 "剧毒星球[From.GetName]令人意外地可以成为潜在的环境改造候选星球。如果能将其彻底清理干净，它在未来能为我们的新家园。"
 

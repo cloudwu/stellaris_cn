@@ -95,20 +95,20 @@
  # Specialist level up
  MESSAGE_SUBJECT_LEVEL_UP_TITLE:0 "特化附属国等级提升"
  MESSAGE_SUBJECT_LEVEL_UP_DESC:0 "你的附属国$SUBJECT|Y$已经达到$SPECIALIZATION|Y$特化的$TIER|Y$等级。"
- MESSAGE_SUBJECT_LEVEL_UP_specialist_bulwark_TITLE:0 "$MESSAGE_SUBJECT_LEVEL_UP_TITLE$"
- MESSAGE_SUBJECT_LEVEL_UP_specialist_scholarium_TITLE:0 "$MESSAGE_SUBJECT_LEVEL_UP_TITLE$"
- MESSAGE_SUBJECT_LEVEL_UP_specialist_prospectorium_TITLE:0 "$MESSAGE_SUBJECT_LEVEL_UP_TITLE$"
+ MESSAGE_SUBJECT_LEVEL_UP_specialist_bulwark_TITLE:1 "戍邦特化附庸等级提升"
+ MESSAGE_SUBJECT_LEVEL_UP_specialist_scholarium_TITLE:1 "学邦特化附庸等级提升"
+ MESSAGE_SUBJECT_LEVEL_UP_specialist_prospectorium_TITLE:1 "勘探邦特化附庸等级提升"
 
  MESSAGE_WE_LEVEL_UP_TITLE:0 "特化等级提升"
  MESSAGE_WE_LEVEL_UP_DESC:0 "我们已经达到了$SPECIALIZATION|Y$特化的$TIER|Y$等级。"
- MESSAGE_WE_LEVEL_UP_specialist_bulwark_TITLE:0 "$MESSAGE_WE_LEVEL_UP_TITLE$"
- MESSAGE_WE_LEVEL_UP_specialist_scholarium_TITLE:0 "$MESSAGE_WE_LEVEL_UP_TITLE$"
- MESSAGE_WE_LEVEL_UP_specialist_prospectorium_TITLE:0 "$MESSAGE_WE_LEVEL_UP_TITLE$"
+ MESSAGE_WE_LEVEL_UP_specialist_bulwark_TITLE:1 "戍邦$MESSAGE_WE_LEVEL_UP_TITLE$"
+ MESSAGE_WE_LEVEL_UP_specialist_scholarium_TITLE:1 "学邦$MESSAGE_WE_LEVEL_UP_TITLE$"
+ MESSAGE_WE_LEVEL_UP_specialist_prospectorium_TITLE:1 "勘探邦$MESSAGE_WE_LEVEL_UP_TITLE$"
 
  # Specialist conversion
  MESSAGE_SUBJECT_STARTED_CONVERTING_TITLE:0 "属国特化开始"
  MESSAGE_SUBJECT_STARTED_CONVERTING_DESC:0 "你的附属$SUBJECT|Y$开始向$SPECIALIZATION|Y$特化转型。"
- MESSAGE_WE_STARTED_CONVERTING_TITLE:0 "特化开始"
+ MESSAGE_WE_STARTED_CONVERTING_TITLE:1 "特化开始"
  MESSAGE_WE_STARTED_CONVERTING_DESC:0 "我们已经开始向$SPECIALIZATION|Y$属国特化转型。"
 
  MESSAGE_SUBJECT_FINISHED_CONVERTING_TITLE:0 "属国特化完成"
@@ -285,10 +285,13 @@
  specialist_none_desc:0 "该附属国没有朝任何方面特化。"
  specialist_bulwark:0 "戍邦"
  specialist_bulwark_desc:0 "该属国会针对防御能力进行强化，但相应会削弱资源产出。"
+ specialist_bulwark_summary: "$text_icon_preset_bulwark$戍邦会针对防御能力进行强化，但相应会削弱资源产出。"
  specialist_scholarium:0 "学邦"
  specialist_scholarium_desc:0 "该属国会针对科研进行强化，但相应会削弱军事能力。"
+ specialist_scholarium_summary: "$text_icon_preset_scholarium$学邦会针对科研进行强化，但相应会削弱军事能力。"
  specialist_prospectorium:0 "勘探邦"
  specialist_prospectorium_desc:1 "该属国会针对矿产和稀有资源的开发进行特化，但相应会削弱研究产出。"
+ specialist_prospectorium_summary: "$text_icon_preset_prospectorium$勘探邦会针对矿产和稀有资源的开发进行特化，但相应会削弱研究产出。"
 
  # Preset names
  preset_vassal:0 "附庸"
@@ -467,7 +470,9 @@
  IN_ALLEGIANCE_WAR_WITH_SUBJECTS_OVERLORD:0 "我国当前正与其宗主国交战。"
 
  MESSAGE_BREAK_SECRET_FEALTY_TITLE:0 "秘密效忠已终止"
+ DIPLO_ACTION_BREAK_SECRET_FEALTY_KEY: "终止向潜在宗主的秘密效忠"
  MESSAGE_PROPOSE_TO_BREAK_SECRET_FEALTY_TITLE:0 "$ACTION_PROPOSE_TO_BREAK_SECRET_FEALTY_TITLE$"
+ DIPLO_ACTION_PROPOSE_TO_BREAK_SECRET_FEALTY_KEY: "停止接受潜在附属国的秘密效忠"
 
  # Failure texts
  IN_FEDERATION_WITH_THEIR_OVERLORD:0 "我们与他们的宗主处在同一联邦。"
@@ -584,7 +589,7 @@
  no_free_district_for_ranger_lodge:0 "$TRIGGER_FAIL$§R此处已经没有尚未开发的处女地供我们保护了。§!"
  blocker_tied_to_ranger_lodge:0 "$TRIGGER_FAIL$§R在§Y$holding_park_ranger_lodge$§!只要地产存在，这个障碍就会永远留存。§!"
 
- holding_tree_of_life_sapling:0 "生命之树苗"
+ holding_tree_of_life_sapling:1 "生命之树苗"
  holding_tree_of_life_sapling_desc:0 "这位宗主同他们的生命之树已经共存许久，如今已经无法想象没有它的生活。现在，他们想要让自己的附庸们也享受同等的机遇。"
 
  holding_franchise_headquarters:0 "连锁企业总部"
@@ -813,8 +818,8 @@
  mod_job_overlord_offspring_drone_feeder_drone_add:0 "$mod_job_overlord_offspring_drone_feeder_add$"
  job_overlord_offspring_drone_feeder_desc:2 "保护和照料子嗣是一件饱受赞誉的光荣职责，尽管有时候他们的实际职责只是收集用来喂养它们的食物罢了。"
  job_overlord_offspring_drone_feeder_drone_desc:0 "养育子嗣是一项至关重要的工作，行星的稳定与否仰仗于此。"
- job_overlord_offspring_drone_feeder_effect_desc:4 "£job_overlord_breeder£$job_overlord_offspring_drone_feeder$解锁§Y$offspring_defense_plural$§!并为£mod_planet_jobs_worker_produces_mult£§Y$mod_planet_jobs_worker_produces_mult$§!提供增益。"
- job_overlord_offspring_drone_feeder_drone_effect_desc:3 "£job_overlord_breeder£$job_overlord_offspring_drone_feeder_plural$解锁§Y$offspring_defense_plural$§!并为£mod_planet_jobs_simple_drone_produces_mult£§Y$mod_planet_jobs_simple_drone_produces_mult$§!提供增益。"
+ job_overlord_offspring_drone_feeder_effect_desc:5 "£job_overlord_breeder£$job_overlord_offspring_drone_feeder$花费$r_food$（或$r_minerals$）解锁§Y$offspring_defense_plural$§!并提升£mod_planet_jobs_worker_produces_mult£§Y$mod_planet_jobs_worker_produces_mult$§!。"
+ job_overlord_offspring_drone_feeder_drone_effect_desc:4 "£job_overlord_breeder£$job_overlord_offspring_drone_feeder_plural$花费$r_food$（或$r_minerals$）解锁§Y$offspring_defense_plural$§!并提升£mod_planet_jobs_simple_drone_produces_mult£§Y$mod_planet_jobs_simple_drone_produces_mult$§!。"
 
  # Overlord Metallurgist/Foundry Drone/Fabricator/Catalytic Technician/Catalytic Drone
  job_overlord_metallurgist:0 "宗主国$job_foundry$"
@@ -972,8 +977,8 @@
  r_physics:0 "£physics£§Y物理学研究§!"
  r_society:0 "£society£§Y社会学研究§!"
  r_engineering:0 "£engineering£§Y工程学研究§!"
- r_amenities:1 "£amenities£ §Y舒适度§!"
- r_trade_value:1 "£trade_value£ §Y贸易额§!"
+ r_amenities:2 "£mod_planet_amenities_add£§Y舒适度§!"
+ r_trade_value:2 "£mod_trade_value_add£§Y贸易额§!"
  r_loyalty:1 "£loyalty£ §Y每月忠诚度§!"
  r_rare_crystals:1 "£rare_crystals£ §Y$rare_crystals$§!"
  r_volatile_motes:1 "£volatile_motes£ §Y$volatile_motes$§!"
@@ -1362,7 +1367,7 @@
  preset_satellite_desc:0 "卫星国是一种堕落帝国特有的附属国类型，有责任每月向其远古的宗主上交研究点税。"
  preset_signatory_desc:0 "条约国是一种堕落帝国特有的附属国类型，他们的外交完全受宗主国控制。"
  preset_thrall_desc:0 "仆从国是一种堕落帝国特有的附属国类型，有责任每月向其远古的宗主上交基础资源税，并且无权拓展边界。"
- preset_scion_desc:0 "先辈子弟是一种堕落帝国特有的附属国类型，他们的远古宗主会对其进行支援和帮助。"
+ preset_scion_desc:1 "先辈子弟是一种特殊的附属国类型，有一个堕落帝国宗主知道他们的发展历程。"
  preset_satrapy_desc:0 "辖地是一种可汗特有的附属国类型，有责任每月向其战狂宗主上交舰队和基础资源税。"
  preset_relic_satrapy_desc:1 "$preset_satrapy_desc$" # [LocEditor:ForFutureBatchExport]
 

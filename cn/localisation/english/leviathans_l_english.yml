@@ -67,6 +67,7 @@
 
  opinion-3:0 "评价：£opinion£§R-3§!"
  opinion-5:0 "评价：£opinion£§R-5§!"
+ opinion_canceled_trade: "评价：£opinion£§R[GetOpionLossTrader]§!"
 
  opinion_enclave_trade_deal_1:0 "$OPINION$：£opinion£ 每年§G+$@traderOpinion1$§!"
  opinion_enclave_trade_deal_2:0 "$OPINION$：£opinion£ 每年§G+$@traderOpinion2$§!"
@@ -131,7 +132,7 @@
  leviathans.105.c.trust:0 "需要这个§Y贸易飞地§!拥有：\n£opinion£评价+50\n"
  leviathans.105.d:0 "现在没事了。再见。"
  leviathans.105.z:1 "我们打算雇佣一位§Y顾问§!。"
- trader_tt_governor:0 "雇佣一位[fromfrom.GetAdj]§Y总督§!运营我们的一片星域。"
+ trader_tt_governor:1 "雇佣一位[enclave_country.GetAdj]§Y总督§!。"
 
 #  leviathans.110.desc:1 "We will trade Minerals for Energy Credits or Food at a rate of one to two. These are our current deals."
 #  leviathans.110.a:1 "£minerals£ §G10§! for £energy£ §R20§! monthly"
@@ -173,9 +174,10 @@
  leviathans.125.z1:0 "成交。"
  leviathans.125.z1.gestalt:0 "我们知道，并且仍打算这么做。"
  leviathans.126.desc:0 "很好。我们乐意与[Root.GetName]分享我们的技能。"
+ leviathans.126.desc.alt: "太好了！愿我们都能从彼此……独特的商业方式中获益。"
 
- already_hired_trader_governor:1 "§R我们已经从[fromfrom.GetName]雇佣了一位领袖§!。"
- recruit_trader_leader:1 "将一位具有§Y$leader_trait_enclave_trader$特质§!的[fromfrom.GetSpeciesName]§Y总督§!加入§H领袖§!池中。"
+ already_hired_trader_governor:2 "§R我们已经从[enclave_country.GetName]雇佣了一位领袖§!。"
+ recruit_trader_leader:1 "将一位具有§Y贸易联络人特质§!的[enclave_country.GetAdj]§Y总督§!加入§H领袖§!池中。"
  requires_trader_enclave:0 "§R需要在星系中有一个§Y贸易城邦§!。§!"
 
  sm_trader_proxy_office:0 "贸易代理人办公室"
@@ -184,6 +186,31 @@
 
  leader_trait_enclave_trader:0 "飞地商人"
  leader_trait_enclave_trader_desc:0 "招募自一个独立的商人飞地，这位领袖尤其擅长最大化贸易价值。"
+ trader_catch_phrase: "§L“现在说说那笔小小的咨询费……”§!"
+
+ leader_trait_xuracorp_liaison: "旭然集团联络人"
+ leader_trait_xuracorp_liaison_desc: "从旭然集团雇佣来的这位总督持有许多奇异瓦斯产出设施的股份。"
+ xuracorp_trader_desc: "$leader_trait_xuracorp_liaison_desc$"
+ xuracorp_trader_catch_phrase: "$trader_catch_phrase$"
+
+ leader_trait_riggan_liaison: "瑞甘联络人"
+ leader_trait_riggan_liaison_desc: "从瑞甘商业交易所雇佣来的这位总督花费了大量的业余时间从事高爆粉尘期货交易。"
+ riggan_trader_desc: "$leader_trait_riggan_liaison_desc$"
+ riggan_trader_catch_phrase: "$trader_catch_phrase$"
+
+ leader_trait_muutagan_liaison: "穆塔钢联络人"
+ leader_trait_muutagan_liaison_desc: "从穆塔钢商人公会雇佣来的这位总督拥有数座私有的稀有水晶矿。"
+ muutagan_trader_desc: "$leader_trait_muutagan_liaison_desc$"
+ muutagan_trader_catch_phrase: "$trader_catch_phrase$"
+
+ councilor_enclave_trader: "贸易联络人"
+ councilor_enclave_trader_female: "$councilor_enclave_trader$"
+ councilor_enclave_trader_desc: "内各种中有一名来自星系三大商业中心之一的联络员，他们负责提供星系内经纪公司的内幕信息。"
+ councilor_enclave_trader_unlock_title: "§H来自$NAME_Muutagan_Merchant_Guild$、$NAME_Riggan_Commerce_Exchange$或$NAME_XuraCorp$的内阁席位§!"
+ councilor_enclave_trader_conditional_tooltip: "领袖拥有§Y贸易联络人§!特质。"
+
+ unlocks_trader_council_position: "\n§E允许解锁内阁席位：§!\n§H$t$$councilor_enclave_trader$§!\n$tt$$COUNCIL_POSITION_MODIFIER_BASE$\n$ttt$$MOD_TRADE_VALUE_MULT$：§G+2%§!\n$ttt$$MOD_COUNTRY_TRADE_FEE$§G-1%§!\n$COUNCIL_POSITION_AVAILABLE_FOR$$t$$governor_with_icon$\n\n$COUNCIL_POSITION_REQUIREMENTS$$councilor_enclave_trader_conditional_tooltip$"
+
 
  leviathans.131.desc:3 "这种§Y易爆微粒§!是瑞玵的珍贵调味料。它以独一无二的味道在宇宙中声名远扬——它独一无二的爆炸性也同样声名远扬。我们只卖给最宝贵的贸易伙伴，[Root.GetName]便是其一。\n\n只要你接受这合理的价格，我们愿意在十个标准年里向你出口易爆微粒。 "
  leviathans.131.a.reply:1 "你不会后悔的，除非您吃了太多香料……那样的话您会有很小的几率发生自燃，不过也只有很小的几率，我很肯定。"
@@ -635,6 +662,7 @@
  leviathans.665.name:0 "巨龙秘藏，保质期过"
  leviathans.665.desc:0 "在巨龙秘藏小行星上发现的以太龙兽蛋，用研究卵的异星生物学家的话来说，已经过了孵化期。\n\n已经没有可能从里面孵化出生物了。"
  leviathans.665.desc.gesta:0 "在巨龙秘藏小行行星上发现的以太龙兽蛋不再认为是可孵化的。\n\n这个物种灭绝了。"
+ leviathans.665.desc.machine: "以太巨龙的蛋中止了。生物进程已崩溃，且无可用的错误报告用于调试。"
 
  leviathans.670.name:0 "屠龙者"
  leviathans.670.desc:3 "可怕的以太龙兽被杀掉了。勇敢非凡的舰队司令[From.From.GetLeaderName]及[From.From.GetName]不会被遗忘。\n\n巨兽紧紧守护的§H小行星§!现在可以被安全开发了。谁能知道这生物在漫长的岁月中到底收集了多少财宝？"
@@ -844,18 +872,25 @@
 
  ### HIVER
  leviathans.3201:0 "蜂群战斗机"
- leviathans.3201.desc:0 "高速移动的攻击舰载机正在袭击我们在[hiver_system.GetName]星系的采矿基地！这些显示出强大能量指征的未知攻击者从小行星带几颗先前休眠的小行星中涌出。\n\n我们只能猜测这些小行星以前是某种未知太空生命形式的蜂巢。无论如何，我们不断扩大的采矿业务似乎促使他们开始行动！"
+ leviathans.3201.base: "快速移动的攻击机正在袭击我们位于[hiver_system.GetName]星系内的开采站！这些身份不明的攻击者从一些此前在环带中休眠着的小行星中蜂拥而出，这些小行星现在正散发出强烈的能量信号。"
+ leviathans.3201.desc:1 "$leviathans.3201.base$\n\n我们只能推测，这些小行星是一种未知的太空生命形式的蜂巢。不管它们是什么，我们不断扩大的采矿活动似乎已经激怒了它们！"
+ leviathans.3201.desc.void_hive: "$leviathans.3201.base$\n\n由于我们最近的开采行动，小行星内的蜂巢受到了刺激。似乎我们和它在这个星系是一山不容二虎了。"
  leviathans.3201.a:0 "他们来得好快！"
  leviathans.3202:0 "结晶小行星"
- leviathans.3202.desc:0 "[hiver_system.GetName]星系有一条异常密集的小行星带，展示出一些与众不同的特性。几个较大的小行星表面覆盖着结晶突出物，这表明可能存在极为丰富的矿物矿藏。\n\n不过，长距离传感器在密集小行星带发现一些零星活动，可能是航天器之类的小物体。我们无法具体定位，但是可以看到至少两个被破坏的采矿基地的碎片漂浮在一些较大的小行星旁。"
+ leviathans.3202.base: "[hiver_system.GetName]星系是一种具有独特性质的异常密集小行星环带的家乡。一些大型的小行星表面覆盖着突出的结晶，似乎是非常丰富的矿物矿藏。"
+ leviathans.3202.desc:1 "$leviathans.3202.base$\n\n然而，远程传感器正在追踪几个小型的、无法识别的可能是宇宙飞船的物体的零星运动，它们位于环带中的密度较大的区域。我们无法准确对其定位，但我们已经确定了至少两个被摧毁的采矿站的碎片，它们漂浮在一些较大小行星附近的太空中。"
+ leviathans.3202.desc.void_hive: "$leviathans.3202.base$\n\n我们探测到了环带中的异动：一个蜂巢思维的初级形式正在享用其矿物储备。我们可以吸收他们的意识，在我们的引导下他们将会是更强大的战力。"
  leviathans.3202.a:0 "不太对劲……"
+ leviathans.3202.b: "他们与我们相似，让他们为我们服务。"
+ leviathans.3202.c: "让我们看看他们会对我们作何反应。"
 
  leviathans.3204:0 "已摧毁蜂巢小行星"
  leviathans.3204.desc:0 "我们的军队已经摧毁了[hive_system.getName]星系的蜂巢小行星。他们再次回到休眠状态，我们没有再侦测到恶意舰载机的活动。\n\n有一个小行星在受到重创后仍相当完好。我们应该考虑派遣一支科学团队去看看能在里面找到什么。"
  leviathans.3204.a:0 "准备一支远征队。"
 
  leviathans.3205.desc:0 "我们的科学团队已经完成了对[hive_system.GetName]星系中蜂巢小行星内部的大量隧道和暗室网络的探索。未遇到袭击我们的太空生物的活体标本，但科学家确实发现了某种生育室的残余。\n\n这使我们对这些实体的生命周期有了更深入的了解，进一步增进了我们对银河生物学的理解。"
-
+leviathans.3230.name: "Meteorites Mustered"
+leviathans.3230.desc: "The inhabitants of the [from.solar_system.GetName] system have awoken. While still hostile to most spacecraft, we can rest easy knowing that [from.solar_system.GetName] will be a bastion under the protection of our new primitive drones."
 
  ### SPECIAL PROJECTS
  INVESTIGATE_ENCLAVE:1 "调查 [target_enclave.GetName]"
@@ -893,6 +928,8 @@
  TECHNOSPHERE_HACKING_DESC:0 "侵入金属球的中心程序也许能让我们深入了解它是什么、它在做什么。"
  TECHNOSPHERE_DESTRUCTION:0 "打破球体"
  TECHNOSPHERE_DESTRUCTION_DESC:0 "一支拆除专家小队应该能识别并利用这个神秘球体外壳完整性的缺陷，将之拆除，结束这无声的威胁。"
+ EXPLOIT_HIVERS: "相似思维"
+ EXPLOIT_HIVERS_DESC: "我们与[hiver_system.GetName]小行星中的生物在生理学上颇为相似。他们和我们一样能在真空中茁壮生长。若将我们的意志加至其上他们会变为非常有用的工具。"
 
  #MISC
  building_stellarite_trophy:0 "噬星者纪念柱"
@@ -1059,3 +1096,16 @@
  mod_planet_structures_rare_crystals_cost_mult:0 "地区和建筑的稀有水晶维护费"
  mod_planet_structures_volatile_motes_cost_mult:0 "地区和建筑的高爆粉尘维护费"
  mod_planet_structures_exotic_gases_cost_mult:0 "地区和建筑的奇异瓦斯维护费"
+
+ curator_archivist_explanation: "\n我们将雇佣一位具有§Y$leader_trait_curator$§!特质的等级5科学家。"
+
+ councilor_curator_archivist: "典藏研究所档案员"
+ councilor_curator_archivist_female: "$councilor_curator_archivist$"
+ councilor_curator_archivist_desc: "一位来自$NAME_Curator_Order$的档案员在内阁中任职，分享着数个纪元来累积的知识。"
+ councilor_curator_archivist_unlock_title: "§H来自$NAME_Curator_Order$的内阁席位§!"
+ councilor_curator_archivist_conditional_tooltip: "领袖拥有§Y$leader_trait_curator$§!特质。"
+
+ unlocks_curator_council_position: "\n§E允许解锁内阁席位：§!\n§H$t$$councilor_curator_archivist$§!\n$tt$$COUNCIL_POSITION_MODIFIER_BASE$\n$ttt$$MOD_ASSIST_RESEARCH_MULT$：§G+5%§!\n$ttt$$mod_planet_researchers_upkeep_mult$§G-2%§!\n$COUNCIL_POSITION_AVAILABLE_FOR$$t$$scientist_with_icon$\n\n$COUNCIL_POSITION_REQUIREMENTS$$councilor_curator_archivist_conditional_tooltip$"
+
+ curator_archivist_desc: "$leader_trait_curator_desc$" 
+ curator_archivist_catch_phrase: "§L“我们将一同解开被长久遗忘的秘密。”§!"

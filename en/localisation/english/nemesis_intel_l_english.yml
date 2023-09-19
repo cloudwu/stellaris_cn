@@ -5,7 +5,7 @@
  FIRST_CONTACT_ICON_ENVOY_DESC:1 "We first encountered $NAME|Y$ here $DATE|Y$.\n\nOur envoy $ENVOY|Y$ is working here to find out more about these aliens.\n\n§GClick to handle this Contact.§!"
  FIRST_CONTACT_NAME_WITH_LOCATION:0 "First Contact with $NAME|Y$ at $LOC|Y$"
  FIRST_CONTACT_ASSIGN_ENVOY:0 "§HAssign an Envoy to learn more about $NAME|Y$§!"
- MESSAGE_FIRST_CONTACT_FINISHED_TITLE:0 "First Contact finished"
+ MESSAGE_FIRST_CONTACT_FINISHED_TITLE:1 "First Contact Finished"
  MESSAGE_FIRST_CONTACT_FINISHED_DESC:1 "We have finished a First Contact procedure."
  MESSAGE_FIRST_CONTACT_STAGE_FINISHED_TITLE:0 "Archaeological Site Progress"
  MESSAGE_FIRST_CONTACT_STAGE_FINISHED_DESC:0 "We have unlocked the next stage of an archaeological site"
@@ -121,7 +121,7 @@
  DIPLO_PACTS_SECOND_HAND_PACTS_ONLY_TOOLTIP:0 "This Empire might have more diplomatic pacts that we do not know of yet."
  UNKNOWN_FEDERATION:0 "Unknown Federation"
  FEDERATION_CENTRALIZATION_INTEL:0 "This level of centralization will add $INTEL|Y$ to the base level of Intel provided by this Federation type, setting it to a minimum of $TOTAL|Y$."
- FEDERATION_TYPE_INTEL:0 "Base Intel on Federation Members set to a minimum of $INTEL|Y$, modified by Federation Centralization."
+ FEDERATION_TYPE_INTEL:0 "Base Intel on Federation Members is set to a minimum of $INTEL|Y$, modified by Federation Centralization."
 
  OPINION_BREAKDOWN_NOT_ENOUGH_INTEL:2 "Since we do not have enough Intel, we can only speculate as to their reasons."
  CANNOT_INSPECT_NO_INTEL:1 "We do not have enough Intel to know their ship design."
@@ -201,8 +201,10 @@
  OUR_DECRYPTION:2 "Our Codebreaking: $VALUE$"
  IS_FIRST_CONTACT_UNDER_INVESTIGATION_TRIGGER:0 "The $NAME|Y$ are being investigated"
  MESSAGE_FIRST_CONTACT_ABORTED_TITLE:0 "First Contact Aborted"
+ MESSAGE_FIRST_CONTACT_ABORTED_KEY: "$MESSAGE_FIRST_CONTACT_ABORTED_TITLE$ (Contact No Longer Exists)"
  MESSAGE_FIRST_CONTACT_ABORTED_DESC:1 "Our First Contact process with the $COUNTRY|H$ has been aborted as they no longer exist."
  MESSAGE_FIRST_CONTACT_ABORTED_THEY_COMPLETED_TITLE:0 "$MESSAGE_FIRST_CONTACT_ABORTED_TITLE$"
+ MESSAGE_FIRST_CONTACT_ABORTED_THEY_COMPLETED_KEY: "$MESSAGE_FIRST_CONTACT_ABORTED_TITLE$ (Comms Established)"
  MESSAGE_FIRST_CONTACT_ABORTED_THEY_COMPLETED_DESC:1 "Our First Contact process with the $COUNTRY|H$ has been aborted as they have established communications with us."
 
  first_contact_skill_increased:1 "§GWe will find future First Contact processes easier to complete.§!"
@@ -322,10 +324,13 @@
  first_contact.101.A:0 "Rejoice - for we have found our lost kin!"
  first_contact.101.B:0 "Hopefully our kinly ties will lead to friendship."
  first_contact.101.C:0 "Perhaps we should still attack them..."
+ first_contact.101.D: "Kinship doesn't imply friendship. Stay vigilant."
 
  first_contact.102.name:0 "[This.ContactCountry.GetName] Decoded"
  first_contact.102.desc:1 "As we turned our processors to interpreting the communications we have intercepted from the unknown aliens designated as §H[This.ContactCountry.GetName]§!, a startling discovery was made: they too belong to a machine intelligence! Although their programming varies considerably from our own, being based on a vastly different organic language, it is nevertheless built upon similar key assumptions. As a result, it was only a matter of time before we could decode their programming parlance sufficiently for rudimentary communications to be established, revealing them to be the §H[This.ContactCountry.GetRealName]§!."
+ first_contact.102.lostcolony.desc: "As we turned our processors to interpreting the communications we have intercepted from the unknown aliens designated as §H[This.ContactCountry.GetName]§!, a startling discovery was made: they too belong to a machine intelligence! Their communication protocols are remarkably similar to ours, and software compatibility allowed us to swiftly establish communications. The similarities extend to other areas, to the point our machine intelligence could be considered a fork of their codebase. There's only one plausible explanation."
  first_contact.102.A:0 "Outcome evaluated as adequate."
+ first_contact.102.B: "Mission update: Main Mainframe found."
 
  first_contact.103.name:0 "A Collective Intelligence"
  first_contact.103.desc.base:0 "Our efforts to decipher the signals picked up from the §H[This.ContactCountry.GetName]§! have paid off, and we are finally able to open diplomatic channels with the civilization we now know to be the §H[This.ContactCountry.GetRealName]§!."
@@ -855,7 +860,43 @@
  first_contact.5075.name:0 "Communication Obfuscation"
  first_contact.5075.desc:0 "The language of the §H[This.ContactCountry.GetName]§! contains millions of seemingly redundant sounds, apparently dialectic hangovers from their precursor civilizations. When translated, these apparently superfluous filler words seem to serve no purpose other than to add linguistic flavor - or at most have only minor contextual implications.\n\nThankfully, our [This.Owner.GetLinguists] have narrowed down the obsolete aspects of their language, and are now compiling an abridged lexicon which should prove very useful for efficient communication with the §H[This.ContactCountry.GetName]§!."
 
+ # The Trial
+ first_contact.5080.name: "The Shuttle"
+ first_contact.5080.desc.start: "The §H[This.ContactCountry.GetName]§! positioned a shuttle close to us in space. Since nothing further happened, we assumed that they wished to meet away from their main ship. The small size of the vessel meant that only our [Owner.GetEnvoy] [Leader.GetName] could be sent, with the rest of the diplomatic team staying behind."
+ first_contact.5080.desc.weapon: "The shuttle is outfitted with elaborate weapon systems and the aliens are prepared for a violent confrontation." # Likely militarist
+ first_contact.5080.desc.functional: "The shuttle is utilitarian and bulky. Function has clearly been prioritized over form." # Likely egalitarian
+ first_contact.5080.desc.bling: "The shuttle is covered in elaborate ornaments and golden rivets. It is clearly designed to impress with a display of opulence." # Likely materialist
+ first_contact.5080.desc.standard: "The alien shuttle is similar to our own designs, which is reassuring in a way." # Standard
 
+ first_contact.5085.name: "The Wait"
+ first_contact.5085.desc.start: "[Leader.GetName] returned to report that no one from the §H[This.ContactCountry.GetName]§! met [Leader.GetHimHer]."
+ first_contact.5085.desc.meditation: "The pilotless shuttle contained a central meeting room. The floor and walls were covered in a soft material, while calming natural sounds from an alien world played from hidden speakers." # Likely pacifist
+ first_contact.5085.desc.pool: "The pilotless shuttle contained a central meeting room with a pool of water in one end. Alien symbols surrounded the floor around the pool." # Likely spiritualist
+ first_contact.5085.desc.imposing: "The pilotless shuttle contained a central meeting room with an architectural style that was at the same time understated and oddly imposing. The angles of the walls and their ornamentation were designed to draw the viewer's attention towards a raised dais." # Likely authoritarian
+ first_contact.5085.desc.standard: "The pilotless shuttle contained a central meeting room that was surprisingly nondescript and lacking in decoration or adornment of any kind." # Standard
+ first_contact.5085.desc.end: "One wall was covered in recording equipment and sensors. Standing before the impassive machines, [Leader.GetName] outlined our species' history and culture. The presentation was met with silence. Frustrated, [Leader.GetName] left behind a video tablet with a vast collection of historical records and primers in our language."
+ first_contact.5085.a: "Now we wait."
+
+ first_contact.5090.name: "The Method"
+ first_contact.5090.desc.proactive: "The one-sided communication greatly frustrated the diplomatic team. Eager for a successful first contact, they created branching prediction strategies for the remaining procedure without any factual information to inform the approach."
+ first_contact.5090.desc.cautious: "An anxious wait followed the presentation aboard the shuttle, with [Leader.GetName] openly doubting if [Leader.GetHeShe] had made a successful introduction."
+ first_contact.5090.desc.aggressive: "Only the direct orders of [Leader.GetName] prevented the first contact protocol from escalating to violence. To the team, the obstinate silence of the aliens was nothing short of insulting."
+ first_contact.5090.desc.end: "After several hours, the §H[This.ContactCountry.GetName]§! transmitted a short message in our language:\n\n"We are not impressed with your culture. Is this all? The [Owner.GetEnvoy] has a final chance to impress us in a field of your choosing.""
+ first_contact.5090.a: "Trial by combat."
+ first_contact.5090.a.tt: "Hit first. Hit hard."
+ first_contact.5090.b: "Persuasive speech."
+ first_contact.5090.b.tt: "They must listen to reason."
+ first_contact.5090.c: "Improvised music-backed rhyme."
+ first_contact.5090.c.tt: "Boost us up and put them down."
+
+ first_contact.5095.name: "The Verdict"
+ first_contact.5095.desc.combat_good: "[Leader.GetName] returned from the §H[This.ContactCountry.GetName]§! shuttle injured, but victorious.\n\nFrom a hidden door, an alien fighter emerged and proceeded to batter our [Owner.GetEnvoy] to the point of exhaustion. Summoning a last surge of strength, [Leader.GetName] managed to subdue [Leader.GetHisHer] opponent.\n\nWithin the hour, the [This.ContactCountry.GetName] sent a message:\n\n"[Leader.GetName] will be entered into our annals as a great warrior.""
+ first_contact.5095.desc.combat_bad: "[Leader.GetName] returned from the §H[This.ContactCountry.GetName]§! shuttle confused, having found no opponent. Within the hour, the §H[This.ContactCountry.GetName]§! sent a message:\n\n"Your barbaric ways disappoint us. A physical fight would be most unbecoming for a civilized culture.""
+ first_contact.5095.desc.speech_good: "[Leader.GetName] returned from the §H[This.ContactCountry.GetName]§! shuttle brimming with conviction. [Leader.GetHeSheCap] had lost track of time arguing our case in front of the sensor wall, explaining the reasons for historical decisions and how we've learned and grown as a culture.\n\nWithin the hour, the §H[This.ContactCountry.GetName]§! sent a message:\n\n"Despite your troubled past, you have grown spectacularly. Your culture is an inspiration.""
+ first_contact.5095.desc.speech_bad: "[Leader.GetName] returned from the §H[This.ContactCountry.GetName]§! shuttle disappointed. [Leader.GetHeSheCap] spent over an hour at the sensor wall presenting our culture in greater detail and arguing for the rightness of our historical decisions.\n\nShortly thereafter, the §H[This.ContactCountry.GetName]§! sent a message:\n\n"The history you describe paints a poor picture of your culture.""
+ first_contact.5095.desc.song_good: "[Leader.GetName] returned from the §H[This.ContactCountry.GetName]§! shuttle in a great mood. The improvised lyrics describing our past and future had flown freely, with our [Owner.GetEnvoy]-poet making associations both surprising and illuminating.\n\nWithin the hour, the §H[This.ContactCountry.GetName]§! sent a message:\n\n"Your culture is most splendid and we applaud the performance.""
+ first_contact.5095.desc.song_bad: "[Leader.GetName] returned from the §H[This.ContactCountry.GetName]§! shuttle dissatisfied with [Leader.GetHisHer] musical performance. The dissonance between our past actions and our current self-conception made the lyrical associations fall flat.\n\nWithin the hour, the §H[This.ContactCountry.GetName]§! sent a message:\n\n"We are disappointed that a momentous meeting of minds was spoiled by middling rhymes.""
+ first_contact.5095.a: "The trial is over."
 
  #First Contact Stage Summaries
  fcsum_base_contact_set_summary:0 "We encountered unknown aliens in the §H[This.System.GetName]§! system."
@@ -911,6 +952,11 @@
  fcsum_nomads_1:0 "$fcsum_caravaneers_1$"
  fcsum_colorful_linguistics_1:0 "We have deciphered the §H[This.ContactCountry.GetName]§! writing system. It's complicated."
  fcsum_colorful_linguistics_2:0 "We have a diplomatic decision to make."
+ # The Trial
+ fcsum_trial_1: "The Shuttle"
+ fcsum_trial_2: "The Wait"
+ fcsum_trial_3: "The Method"
+ fcsum_trial_4: "The Verdict"
 
  #Misc
  first_contact.1060.name:0 "First Contact Protocols"
@@ -948,6 +994,12 @@
  opinion_first_contact_poetic_warrior:0 "Poetic Warrior"
  opinion_first_contact_admirer_of_poetry:0 "Admirer of Poetry"
  opinion_first_contact_poetic_flatterer:0 "Poetic Flatterer"
+ opinion_first_contact_trial_fanatic_good: "First Contact Trial" # The Trial
+ opinion_first_contact_trial_very_good: "$opinion_first_contact_trial_fanatic_good$"
+ opinion_first_contact_trial_good: "$opinion_first_contact_trial_fanatic_good$"
+ opinion_first_contact_trial_fanatic_bad: "$opinion_first_contact_trial_fanatic_good$"
+ opinion_first_contact_trial_very_bad: "$opinion_first_contact_trial_fanatic_good$"
+ opinion_first_contact_trial_bad: "$opinion_first_contact_trial_fanatic_good$"
  opinion_friendly_first_comms_greeting:0 "Friendly First Greetings"
  opinion_hostile_first_comms_greeting:0 "Hostile First Greetings"
  preventive_war_economy:0 "Preventive War Economy"

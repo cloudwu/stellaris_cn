@@ -192,8 +192,6 @@
  salvager_overdrive_desc:0 "This empire is benefitting from the focused efforts of a friendly Salvager crew, speeding up construction in their starbases and colonies."
  salvager_insight:0 "Salvager Insight"
  salvager_insight_desc:0 "This empire's scientists benefit from the practical expertise of a Salvager Enclave, fast-tracking exciting new breakthroughs in engineering."
- salvage_overseer:0 "Salvage Overseer"
- salvage_overseer_desc:0 "An experienced scavenger from the Salvager Enclave is helping this empire see to it that the remains of its battlefields are put to good use."
 
  #Situations
  mercenary_dividends:0 "Mercenary Dividends"
@@ -244,7 +242,7 @@
  enclave.305.d:0 "Can you aid us with §Yconstruction§! efforts?"
  enclave.305.e:0 "We'd like you to salvage some §Ydebris§!."
  enclave.305.f:1 "Can you help us with §Yengineering research§!?"
- enclave.305.g:0 "We wish to hire a §Ysalvage overseer§!."
+ enclave.305.g:1 "We wish to hire a §Y$master_salvager$§!."
 
  enclave.310.desc:1 "Splendid! It would be our pleasure to take that off your hands.\n\nAccording to our scanners, you have the following fleets within range. You'll find our estimates attached; the choice is now yours!\n\n$enclave.310.instructions$"
  enclave.310.organic.desc:0 "Splendid! It would be our pleasure to... By the stars, what is that?! You call that a vessel? I mean, I can see how it... Wow, it's a mean-looking thing. Please, don't do anything hasty! We can take living 'ships' off your hands too, but I'm afraid §Hwe must charge a clean-up penalty§!.\n\nAccording to our scanners, you have the following fleets within range. You'll find our estimates attached; the choice is now yours!\n\n$enclave.310.instructions$"
@@ -308,6 +306,26 @@
  enclave.350.a:0 "$enclave.310.a$"
  enclave.352.desc:0 "Greetings! The overseer we had sent to you has returned to us, their term in the field complete. However, we would certainly be willing to send a replacement, if you still have use for our services."
 
+ master_salvager:0 "Master Salvager"
+ master_salvager_desc:1 "An experienced technician from the Salvager Enclave ensures battlefield debris is put to efficient use."
+
+ master_salvager_catch_phrase: "§L"Right, let's do some field work! Got any interesting wreckage floating about?"§!"
+
+ leader_trait_master_salvager: "$master_salvager$"
+ leader_trait_master_salvager_desc: "A veteran of Salvage operations from the [salvager_enclave_country.GetName], sharing their expertise for a small fee."
+ leader_trait_master_salvager_effect: "$SYSTEM_EFFECTS_TXT$:\n$t$Friendly Ships in System:\n$tt$Monthly Hull Points Repaired: §G+2%§!\n$t$When Debris is Scavenged/Researched in System:\n$tt$Chance to Salvage Ships: §Y15%§!\n$tt$$salvage_ship_restrictions$"
+
+ councilor_master_salvager: "$master_salvager$"
+ councilor_master_salvager_female: "$councilor_master_salvager$"
+ councilor_master_salvager_desc: "$master_salvager_desc$"
+ councilor_master_salvager_unlock_title: "§HCouncil Position from the [salvager_enclave_country.GetName]§!"
+ councilor_master_salvager_conditional_tooltip: "Leader has the §Y$leader_trait_master_salvager$§! Trait."
+
+ unlocks_salvager_council_position: "\n§EAllows the unlocking of Council Position:§!\n§H$t$$councilor_master_salvager$§!\n$tt$$COUNCIL_POSITION_MODIFIER_BASE$\n$ttt$$MOD_COUNTRY_SCAVENGE_DEBRIS_MULT$: §G+10%§!\n$ttt$$MOD_SHIP_FRIENDLY_TERRITORY_ARMOR_MULT$: §G+2%§!\n$COUNCIL_POSITION_AVAILABLE_FOR$$t$$scientist_with_icon$\n\n$COUNCIL_POSITION_REQUIREMENTS$$councilor_master_salvager_conditional_tooltip$"
+
+ master_salvager_already_bought: "§RWe have already purchased the services of a $master_salvager$.§!"
+ master_salvager_explanation: "\nWe will hire a Level 5 Scientist with the §Y$leader_trait_master_salvager$§! Trait."
+
  enclave.360.name:0 "Reclaimed Bounty"
  enclave.360.intro:0 "A train of cargo barges has just arrived from the §Y[salvager_enclave_country.GetName]§!, carrying a consignment of reclaimed resources."
  enclave.360.a.desc:1 "$enclave.360.intro$\n\nThe Salvagers enclosed a message expressing their thanks, as well as a tangible gift - some form of kinetic artwork. The way it moves within our artificial gravity fields is unnerving, and yet quite captivating."
@@ -363,7 +381,7 @@
  enclave.405.e:0 "Could you teach us how to harvest §YZro§!?"
  enclave.405.e.tt:0 "We need at least §Y50§! £opinion£ Opinion with the §Y[shroudwalker_enclave_country.GetName]§! to ask about §YZro§! harvesting."
  enclave.405.f:0 "We met someone claiming to be a §YVeilfarer§!..."
- 
+
  enclave.410.desc:1 "Ah, a momentous query - no less poignant for being asked by so many before you. Such a question carries a heavy price, but we can provide answers.\n\nKnow this, however: the Shroud allows us to perceive events which have not yet come to pass, and this knowledge shall help guide your course. But it is beyond the power of any one event to alter the turning of the galaxy.\n\nIf you would strike this bargain, know that your aspirations should extend no further than to be better prepared. But oh, what grand designs may be built upon even the merest glimpse at what is to come..."
  enclave.410.a:0 "We will consider something else."
  enclave.410.b:0 "We shall pay."
@@ -897,7 +915,7 @@
  shroudwalker_spy_network_finish:0 "The [shroudwalker_enclave_country.GetName] will return with an update on what they have gleaned from the Shroud."
 
  shroudwalker_teacher_cooldown_tt:0 "§RWe will not be able to request another teacher from the Shroudwalkers until §Y[root.shroudwalker_teacher_timer]§!.§!"
- shroudwalker_teacher_already_bought:0 "§RWe have already purchased the services of a Shroudwalker teacher.§!"
+ shroudwalker_teacher_already_bought:1 "§RWe have already purchased the services of a Shroudwalker Teacher.§!"
  shroudwalker_teacher_already_exists:0 "§RThis planet already has the services of a Shroudwalker teacher.§!"
 
  enclave.7100.desc:1 "Mastery of the Shroud is a journey of 10,000 lifetimes; even our most gifted teachers can claim only partial knowledge of its mysteries. Nevertheless, their wisdom is invaluable. Should you wish it, we will dispatch one to guide your course."
@@ -922,7 +940,9 @@
 
  shroud_beacon_active_tooltip:0 "The [Root.GetName] has an active §YShroud Beacon§!."
 
- shroudwalker_teacher_explanation:1 "\nUnlocks the §Yplanetary decision§! §H$decision_shroudwalker_teacher$§! with the following effects:\n£amenities£ $MOD_PLANET_AMENITIES_MULT$: §G+5%§!\n$mod_planet_jobs_unity_produces_mult$: §G+10%§!\n$mod_planet_telepaths_unity_produces_add$: §G+3§!"
+# shroudwalker_teacher_explanation:1 "\nUnlocks the §Yplanetary decision§! §H$decision_shroudwalker_teacher$§! with the following effects:\n£amenities£ $MOD_PLANET_AMENITIES_MULT$: §G+5%§!\n$mod_planet_jobs_unity_produces_mult$: §G+10%§!\n$mod_planet_telepaths_unity_produces_add$: §G+3§!"
+
+ shroudwalker_teacher_explanation:2 "\nWe will hire a Level 5 Governor with the §Y$leader_trait_shroudwalker$§! Trait."
 
  enclave.7250.desc:0 "Zro is of particular interest to us. We could teach you the ways of harvesting and storing it, but only if you agree to give us a share of your production. In perpetuity."
  enclave.7250.a:0 "You'll get your share. Teach us."
@@ -931,3 +951,39 @@
  shroudwalker_zro_tithe:0 "Shroudwalker Zro Tithe"
  shroudwalker_zro_tithe_desc:0 "The [shroudwalker_enclave_country.GetName] taught us how to harvest Zro. In exchange, we have sworn to give them a tenth of all our Zro production."
 
+ shroudwalker_teacher_desc: "$leader_trait_shroudwalker_desc$"
+ shroudwalker_teacher_catch_phrase: "§L"The secrets of the Shroud shall be uncovered in time."§!"
+
+ leader_trait_shroudwalker: "Shroudwalker Teacher"
+ leader_trait_shroudwalker_desc: "An adept of the [shroudwalker_enclave_country.GetName], skilled in instructing in the ways of the Shroud."
+
+ councilor_shroudwalker_teacher: "Shroudwalker Teacher"
+ councilor_shroudwalker_teacher_female: "$councilor_shroudwalker_teacher$"
+ councilor_shroudwalker_teacher_desc: "An adept of the [shroudwalker_enclave_country.GetName] serves on the council, instructing in the ways of the Shroud."
+ councilor_shroudwalker_teacher_unlock_title: "§HCouncil Position from the [shroudwalker_enclave_country.GetName]§!"
+ councilor_shroudwalker_teacher_conditional_tooltip: "Leader has the §Y$leader_trait_shroudwalker$§! Trait."
+
+ unlocks_shroudwalker_council_position: "\n§EAllows the unlocking of Council Position:§!\n§H$t$$councilor_shroudwalker_teacher$§!\n$tt$$COUNCIL_POSITION_MODIFIER_BASE$\n$ttt$$mod_category_psionics_draw_chance_mult$: §G+5%§!\n$ttt$$mod_country_unity_produces_mult$ §G+1%§!\n$ttt$$mod_shroud_delve_cost$: §G-2%§!\n$COUNCIL_POSITION_AVAILABLE_FOR$$t$$governor_with_icon$\n\n$COUNCIL_POSITION_REQUIREMENTS$$councilor_shroudwalker_teacher_conditional_tooltip$"
+
+ enclave.8000.name: "Attack on [FROM.GetName]"
+ enclave.8000.start: "Following our attack on the [FROM.GetName], [root.GetTitle] §Y[root.GetName]§! has left our borders. [root.GetHeSheCap] recorded a message upon [root.GetHisHer] departure."
+ enclave.8000.end: "Thankfully, aside from vacating [root.GetHisHer] workspace, [root.GetName] did not cause any other disruptions to leadership."
+ enclave.8000.councilor_end: "Due to [root.GetHisHer] involvement on the Council, the departure of [root.GetName] and [root.GetHisHer] staffers has caused major disruptions to government operations."
+
+ shroudwalker_teacher_farewell: "§L"You have meddled with powers you cannot possibly comprehend. Tread carefully, and take what solace you can from the present, for on the path you've chosen the future holds only pain."§!"
+ enclave.8000.shroudwalker_teacher.desc: "$enclave.8000.start$\n\n$shroudwalker_teacher_farewell$\n\n$enclave.8000.end$"
+ enclave.8000.shroudwalker_teacher.desc.councilor: "$enclave.8000.start$\n\n$shroudwalker_teacher_farewell$\n\n$enclave.8000.councilor_end$"
+
+ master_salvager_farewell: "§L"Well, you've shown your true colors. Somehow, I expected better. May your engines sputter and die. To the void with you."§!"
+ enclave.8000.master_salvager.desc: "$enclave.8000.start$\n\n$master_salvager_farewell$\n\n$enclave.8000.end$"
+ enclave.8000.master_salvager.desc.councilor: "$enclave.8000.start$\n\n$master_salvager_farewell$\n\n$enclave.8000.councilor_end$"
+
+ curator_archivist_farewell: "§L"Despicable! Vulgar! Craven! To think that we ever considered you civilized... But I suppose such treachery was only to be expected - base instinct and petty greed ever were a mark of your people's character."§!"
+ enclave.8000.curator_archivist.desc: "$enclave.8000.start$\n\n$curator_archivist_farewell$\n\n$enclave.8000.end$"
+ enclave.8000.curator_archivist.desc.councilor: "$enclave.8000.start$\n\n$curator_archivist_farewell$\n\n$enclave.8000.end$"
+
+ trader_leader_farewell: "§L"So why wasn't I let in on this little market secret? Enlighten me, what's the angle here? Where's the profit? Don't you idiots know you've ruined us both?"§!"
+ enclave.8000.trader_leader.desc: "$enclave.8000.start$\n\n$trader_leader_farewell$\n\n$enclave.8000.end$"
+ enclave.8000.trader_leader.desc.councilor: "$enclave.8000.start$\n\n$trader_leader_farewell$\n\n$enclave.8000.councilor_end$"
+
+ leader_leaves_tt: "§Y[root.GetName]§! leaves our empire."

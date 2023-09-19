@@ -4,13 +4,15 @@
 
  origin_toxic_knights:0 "Knights of the Toxic God"
  origin_toxic_knights_desc:2 "Centuries ago, this species' homeworld was visited by a Toxic Entity. The ecological catastrophe that followed ruined half the world, but allowed an early unification of the survivors in their reverence for the Toxic God. An Order of Knights has been created to search for the Toxic God, and although many things have changed, the quest continues."
- origin_toxic_knights_effects:2 "- Start with a unique §HHabitat§! in your home system and §R3 fewer§! £pop£ Pops.\n- Start with the §H"Quest for the Toxic God"§! Situation.\n- Get access to unique £job_knight_commander£ §HLord Commander§!, £job_knight£ §HKnight§! and £job_squire£ §HSquire§! jobs.\n- Unlock powerful modifiers for the §HKnights§! and your §HHomeworld§! through the §HQuest§!.\n- Allows access to the §HKnightly Duties§! Policy\n- Allows construction of £building£ §HOrder's Commanderies§! on Subject worlds."
+ origin_toxic_knights_effects:3 "- Homeworld: $TABBED_NEW_LINE$- ['concept_toxic_features'] $TABBED_NEW_LINE$- Unique ['concept_pc_habitat', Orbital Habitat]: $TABBED_NEW_LINE$$t$- ['concept_order_keep', £building£ $building_order_keep$] $TABBED_NEW_LINE$$t$- ['concept_orders_demesne', £district£ $district_orders_demesne$] $TABBED_NEW_LINE$$t$- ['concept_politician', £job_politician£ $job_politician$] Jobs replaced by ['concept_order_jobs'] $NEW_LINE$- Situation: ['concept_knights_quest'] $NEW_LINE$- Policies: §IKnightly Duties§! $NEW_LINE$- $AVAILABLE_HOLDINGS$ ['concept_knight_commandery', £building£ Order's Commanderies] on Subject colonies"
+
+ origin_toxic_knights_negative_effects: "- $INITIAL_POPS$ §R-3§!"
  START_SCREEN_TOXIC_KNIGHTS:1 "Long ago, our planet was divided. Petty kings squabbled constantly, and our population bled for their vain ambitions. But with the coming of the first High King, all of this changed. Their inspired leadership forged a kingdom without equal.\n\nAbove all else, the High King was pious. War was waged against any who denied their God, but still the heretics persisted. The King's prayers were answered when the Toxic God visited our world. Though its time among us was brief, its baneful influence poisoned the lands of the unbelievers. Any who survived pledged fealty to the High King. For the first time, our world was unified.\n\nThe Toxic God soon left us, but the King, determined to find it, founded an order of knights. For centuries, these valiant souls searched tirelessly, but to no avail. The Toxic God had long since departed from our world. The next chapter of the Quest would be written in the stars. With the use of powerful relics, it was the Order that built our Empire's first orbital station. A mighty Keep, it would become the springboard from which they plunged ever deeper into the cosmos."
  START_SCREEN_TOXIC_KNIGHTS_CORPORATE:0 "Long ago, our planet was divided. Petty kings squabbled constantly, and our population bled for their vain ambitions. But with the coming of the first High King, all of this changed. Their inspired leadership forged a kingdom without equal.\n\nAbove all else, the High King was pious. War was waged against any who denied their God, but still the heretics persisted. The King's prayers were answered when the Toxic God visited our world. Though its time among us was brief, its baneful influence poisoned the lands of the unbelievers. Any who survived pledged fealty to the High King. For the first time, our world was unified.\n\nThe Toxic God soon left us, but the King, determined to find it, founded an order of knights. For centuries, these valiant souls searched tirelessly, but to no avail. The Quest is a very expensive prospect. Over time, the kingdom became more and more interested in the pursuit of profit to better support the knights. By living and consuming, every citizen supports the Quest, and our champions are heavily mediatized.\n\nThe Toxic God has long since departed from our world and the next chapter of the Quest would be written in the stars. With the use of powerful relics, it was the Order that built our Empire's first orbital station. A mighty Keep, it would become the springboard from which they plunged ever deeper into the cosmos."
  job_knight:0 "Knight"
  job_knight_plural:0 "Knights"
  job_knight_desc:1 "Trained for combat; well educated; virtuous. These knights represent the very best of our society, and they have dedicated their lives to the search for the Toxic God."
- job_knight_effect_desc:2 "£job_knight£ $job_knight_plural$ use $r_alloys$ to provide £mod_country_naval_cap_add£ §YNaval Capacity§!, £defense_army£ §YDefense Armies§!, £unity£ §YUnity§! and £physics_research£ £society_research£ £engineering_research£ §YResearch Points§!.\nCompleting §YKnightly Quests§! can further improve their output."
+ job_knight_effect_desc:3 "£job_knight£ $job_knight_plural$ turn $r_alloys$ into $r_unity$ and $r_research$, increase £mod_country_naval_cap_add£ §YNaval Capacity§! and spawn £defense_army£ §YDefense Armies§!\nCompleting §YKnightly Quests§! can further improve their output."
  mod_job_knight_add:0 "$job_knight$ Jobs"
  mod_job_knight_per_pop:0 "§G+1§! $job_knight$ Job per $VALUE$ Pops"
  mod_job_knight_per_pop_short:0 "\n§G+1§! £job_knight£ per $VALUE$ £pop£"
@@ -30,8 +32,8 @@
  job_knight_commander:0 "Lord Commander"
  job_knight_commander_plural:0 "Lord Commanders"
  job_knight_commander_desc:1 "The knights are worthy and honorable - the best our society has to offer. But even they need leadership. Where the Lord Commander leads, there shall the knights follow."
- job_knight_commander_effect_desc:1 "£job_knight_commander£ $job_knight_commander_plural$ turn $r_alloys$ into $r_unity$, $r_amenities$ and £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!.\nCompleting §YKnightly Quests§! can further improve their output."
- job_knight_commander_research_effect_desc:0 "£job_knight_commander£ $job_knight_commander_plural$ turn $r_alloys$ into $r_unity$, $r_research$, $r_amenities$ and £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!.\nCompleting §YKnightly Quests§! can further improve their output."
+ job_knight_commander_effect_desc:2 "£job_knight_commander£ $job_knight_commander_plural$ turn $r_alloys$ into $r_unity$ and $r_amenities$, and increase £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!.\nCompleting §YKnightly Quests§! can further improve their output."
+ job_knight_commander_research_effect_desc:1 "£job_knight_commander£ $job_knight_commander_plural$ turn $r_alloys$ into $r_unity$, $r_research$, and $r_amenities$, and increase £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!.\nCompleting §YKnightly Quests§! can further improve their output."
  mod_job_knight_commander_add:0 "$job_knight_commander$ Jobs"
  mod_job_knight_commander_per_pop:0 "§G+1§! $job_knight_commander$ Job per $VALUE$ Pops"
  mod_job_knight_commander_per_pop_short:0 "\n§G+1§! £mod_job_knight_commander_add£ per $VALUE$ £pop£"
@@ -69,6 +71,9 @@
  d_toxic_god_envenomed_seas_desc:1 "Not even the seas were spared the Deity's baneful touch."
  d_toxic_god_envenomed_seas_upgraded:0 "$d_toxic_god_envenomed_seas$"
  d_toxic_god_envenomed_seas_upgraded_desc:1 "Our Knights have brought back the technology necessary to harvest exotic gases from the seas touched by the Toxic God."
+
+ d_knights_calibrator: "Order's X-Calibrator"
+ d_knights_calibrator_desc: "The Order's most revered relic, sustaining the entire Keep."
 
  NAME_Toxic_God:0 "Toxic God"
  NAME_Venomous_Deity:0 "Venomous Deity"
@@ -111,6 +116,7 @@
 
  r_toxic_god:0 "Maw of the Toxic Entity"
  r_toxic_god_desc:0 "Some believed the entity this great maw was salvaged from held divine power. A God no more, the creature lies slain, this trophy the only monument to mark its passing."
+ r_toxic_god_knights_passive_effect: "§YUnlocks Orbital:§! $major_orbital_knights$"
  r_toxic_god_knights_effect:0 "Unlocks a §YDecision§! to §YConsecrate a Habitat§! and establish an §Y$building_order_castle$§! there."
 
  building_order_castle:0 "Order's Castle"
@@ -118,7 +124,7 @@
 
  decision_consecrate_habitat_knights:0 "Consecrate Habitat"
  decision_consecrate_habitat_knights_desc:0 "We shall consecrate the habitat using an artifact we recovered during our questing. Henceforth, it shall be considered a knightly base, and the Order shall establish a new castle and demesne there."
- decision_consecrate_habitat_knights_effect:0 "\nThe §Y$building_order_castle$§! provides £job_knight£ Knight and £job_squire£ Squire jobs, and substitutes §Y$district_hab_cultural_plural$§! for §Y$district_orders_demesne_plural$§!.\n§RIt cannot be destroyed.§!"
+ decision_consecrate_habitat_knights_effect:1 "\nThe §Y$building_order_castle$§! provides £job_knight£ Knight and £job_squire£ Squire jobs, and substitutes §Y$district_hab_housing_plural$§! for §Y$district_orders_demesne_plural$§!.\n§RIt cannot be destroyed.§!"
  requires_another_consecration:1 "$TRIGGER_FAIL$Requires a further activation of the §Y$r_toxic_god$§!"
 
  toxoid_knights_finisher.poi.name:0 "$situation_toxic_knights$"
@@ -456,7 +462,7 @@
 
  holding_knight_commandery:0 "Order's Commandery"
  holding_knight_commandery_desc:0 "This fortified outpost is where our knights collaborate with our vassal in the search for the Toxic God. Our subjects are expected to provide us with resources and data to support the Order's work."
- job_overlord_knight_commandery_effect_desc:0 "£job_knight£ $job_overlord_knight_plural$ use $r_alloys$ to provide £defense_army£ §YDefense Armies§! and £stability£ §YStability§! for the Subject, and £unity£ §YUnity§! and £physics_research£ £society_research£ £engineering_research£ §YResearch Points§! for the Overlord."
+ job_overlord_knight_commandery_effect_desc:1 "£job_knight£ $job_overlord_knight_plural$ turn $r_alloys$ into £stability£ §YStability§! and spawn £defense_army£ §YDefense Armies§! for the Subject, and £unity£ §YUnity§! and £physics_research£ £society_research£ £engineering_research£ §YResearch Points§! for the Overlord."
  job_overlord_knight:0 "Overlord $job_knight$"
  job_overlord_knight_plural:0 "Overlord $job_knight_plural$"
  job_overlord_knight_desc:0 "$job_knight_desc$"
@@ -487,7 +493,7 @@
  origin_overtuned:0 "Overtuned"
  origin_overtuned_desc:1 "This civilization uses any and all means of organic enhancement, no matter the risk, no matter the cost. After all, it is better to burn out brightly than fade away into obscurity."
  origin_overtuned_effects:1 "Starts with advanced biological traits available, which are stronger and cheaper than normal traits but carry extraordinary risks."
- origin_tooltip_overtuned_effects:3 "- Allows selection of §HOvertuned§! Traits. These can be further boosted by the §HDamn the Consequences§! Edict.\n- §HOvertuned§! Traits can be freely added and removed through §H$tech_gene_tailoring$§!.\n- Start with the ability to §Hgenetically modify§! your £pop£ Pops."
+ origin_tooltip_overtuned_effects:4 "- $SPECIES_TRAITS$ Access to ['concept_overtuned_traits'] Traits$NEW_LINE$- Overtuned Traits:$TABBED_NEW_LINE$- Can be boosted by the ['concept_damn_the_consequences'] Edict$TABBED_NEW_LINE$- Can be added and removed through §IGenetic Modification§!\n- $ADDITONAL_TECHNOLOGIES_STRING$ ['concept_gene_tailoring', £society£ $tech_gene_tailoring$]"
  START_SCREEN_OVERTUNED:1 "Nature is a tepid inventor. Evolution is a glacial process. To prosper we require strength, speed and brain power - now, not in a million years. Natural selection is miserly with its gifts and so we must improve ourselves.\n\nThus our civilization is built on the principle of unrestrained enhancement of our physical bodies. These enhancements have allowed us to unite our world under one banner, and now they will lead us even further.\n\nWith genetically crafted brains, brawn, and bravery, we shall prosper among the stars... As only a perfectly designed species can."
  disables_overtuned_features:0 "§RChoosing this Ascension Perk will disable Overtuned Origin mechanics.§!"
 

@@ -14,7 +14,7 @@
 #Renowned Leaders
  tech_xeno_linguistics:0 "Xeno-Linguistics"
  tech_xeno_linguistics_desc:0 "Given recent encounters with intelligent races, it is essential that we improve our xeno-linguistic capabilities."
- tech_xeno_linguistics_effect:0 "Grants a lump sum of £influence£ $influence$\nAllows §HRenowned Leaders§! to appear."
+ tech_xeno_linguistics_effect:1 "Grants a small amount of $r_influence$\nAllows §HRenowned Leaders§! to appear."
  paragon_2.2105.name:0 "Exceptional Individuals"
  paragon_2.2105.desc_01:0 "We have proven beyond any doubt that the galaxy is filled with life. Apart from the dominant species and nations, there are many others who traverse the stars. From time to time, exceptional individuals may arise to shake the foundations of galactic power.\n\nIf we can harness their ambition, these renowned leaders may be willing to join our cause."
  paragon_2.2105.desc_02:0 "We have proven beyond any doubt that the galaxy is filled with life. Apart from the dominant species and nations, there are many others who traverse the stars. From time to time, exceptional individuals may arise to shake the foundations of galactic power.\n\nAlthough their alien ways may be strange or even repellent, harnessing the talents of such §Hrenowned leaders§! may prove a boon to our cause."
@@ -751,7 +751,7 @@
  #UTILITY
  origin_legendary_leader:0 "Under One Rule"
  origin_legendary_leader_desc:1 "Amidst violence and hardship, this civilization was unified by a single leader. Consolidating power through the repression of weaker factions, they have now become a fierce advocate for science and technological advancement. In the aftermath, an uneasy peace has descended. But peace rarely lasts."
- origin_tooltip_legendary_leader_effects:1 "- Start with a powerful §HLegendary Leader§!.\n- Gain access to unique §HRuler Traits§! based on your empire's Ethics.\n- Strengthen your Ruler's position to gain new Traits and additional bonuses.\n- Or build a strong state apparatus that might surpass the Ruler's legacy.\n- Start with a resilient and long-lived species."
+ origin_tooltip_legendary_leader_effects:2 "- $SPECIES_TRAITS$ ['concept_perfected_genes'] $NEW_LINE$- Ruler Traits: ['concept_leader_trait_legendary_leader']"
  START_SCREEN_LEGENDARY_LEADER:1 "Our civilization has always been prone to conflict. Empires and kingdoms rose, but never lasted, always collapsing under the pressure of internal strife.\n\nThis culture of polarization climaxed when our world was consumed by war. Amidst chaos, a leader emerged. The [owner.Ruler.GetTitle] [owner.Ruler.GetName] managed to assemble a gathering of followers who were drawn to [owner.Ruler.GetHisHer] selflessness, charisma and authority. Finally someone was poised to unite us.\n\nThe Unification was a long and painful process, but one after another the warring factions eventually surrendered and fell in line, cowed by the [owner.Ruler.GetTitle]'s promises of a future amongst the stars. For the first time in centuries, we have peace, but under the surface, the scars of the old grievances run deep."
  origin_legendary_leader_imperial:0 "$origin_legendary_leader$"
  origin_legendary_leader_imperial_desc:0 "$origin_legendary_leader_desc$"
@@ -845,7 +845,7 @@
 
  #Starting Traits
  leader_trait_legendary_leader:0 "Luminary"
- leader_trait_legendary_leader_desc:1 "§GThe Luminary grows in power over time.§!\n\nThe Unification Wars were a brutal affair. In the end, [Root.GetName] brought peace and purpose to us all. The Unifier is the living symbol of what our species can achieve, and an inspiration to all.[This.Paragon_Origin_Ascension_Desc]"
+ leader_trait_legendary_leader_desc:2 "§GThe Luminary grows in power over time.§!\n\nThe Unification Wars were a brutal affair. In the end, [Root.GetName] brought peace and purpose to us all. The Luminary is the living symbol of what our species can achieve, and an inspiration to all.[This.Paragon_Origin_Ascension_Desc]"
  leader_trait_legendary_offspring:0 "$leader_trait_legendary_leader$ Bloodline"
  leader_trait_legendary_offspring_desc:1 "The Heir to the $leader_trait_legendary_leader$. Living up to their predecessor's legacy will be a challenge, but this leader already shows great promise."
  trait_perfected_genes:0 "Perfected Genes"
@@ -860,7 +860,7 @@
  paragon_origin_null_loc:0 " "
 
  #Ethic Traits
- leader_trait_legendary_origin_desc:0 "\n§GOrigin Ruler Trait§!"
+ leader_trait_legendary_origin_desc:1 "\n§GLuminary Ruler Trait§!"
  leader_trait_legendary_military_knowledge:0 "Inspired General"
  leader_trait_legendary_military_knowledge_desc:0 "A brilliant military commander, loved by the troops."
  leader_trait_legendary_foe_hammer:1 "Unwavering Aggressor"
@@ -978,17 +978,17 @@
  paragon.5010.c:0 "Focus on something more practical."
  paragon.5010.c_tt:0 "Inhabitants of [Root.GetName] will use the gathered funds to pursue another project."
 
- paragon.5011.name:0 "[Root.GetName] Celebrates!"
+ paragon.5011.name:0 "The [Root.GetName] Celebrates!"
  paragon.5011.desc:1 "§HEvery state-owned screen in the [Root.Owner.GetName] interrupts its scheduled stream to broadcast an official communication from [Root.GetName]. §Y[Root.Owner.Ruler.GetTitle] [Root.Owner.Ruler.GetRegnalName]§! stands in front of a veiled monument.§!\n\nToday, we have made history. Never before has our species realized a grander achievement. With my guidance, with your hard work, no obstacle shall stand in our way! The colonists of [Root.GetName] wished to honor me, and I thank them. Glory to the [Root.Owner.GetName]!"
  paragon.5011.a:0 "Glory!"
  paragon.5011.a.response:1 "§HThe crowd erupts in cheers as the monument of §Y[Root.Owner.Ruler.GetTitle] [Root.Owner.Ruler.GetRegnalName]§! is unveiled. §Y[Root.Owner.Ruler.GetTitle]§! stands proudly, looking towards the horizon and the glorious future that awaits us. For the first time, we have conquered a new world!§!"
 
- paragon.5012.name:0 "[Root.Owner.GetName] Celebrates!"
+ paragon.5012.name:0 "The [Root.Owner.GetName] Celebrates!"
  paragon.5012.desc:1 "§HEvery state-owned screen in the [Root.Owner.GetName] interrupts its scheduled stream to broadcast an official communication from [Root.GetName]. §Y[Root.Owner.Ruler.GetTitle] [Root.Owner.Ruler.GetRegnalName]§! stands in front of a veiled monument.§!\n\nToday, we have made history. Never before has our species realized a grander achievement. With my guidance, with your hard work, no obstacle shall stand in our way! The colonists of [Root.GetName] wanted to honor me, but today, all are honored equally. United we triumph!"
  paragon.5012.a:0 "United!"
  paragon.5012.a.response:1 "§HThe crowd erupts in cheers as the monument of §Y[Root.Owner.Ruler.GetTitle] [Root.Owner.Ruler.GetRegnalName]§!, flanked by the heroic frames of other [Root.Owner.GetSpeciesNamePlural] is unveiled. They stand united, a nation focused on a common goal.§!"
 
- paragon.5013.name:0 "[Root.GetName] Is Commemorated!"
+ paragon.5013.name:0 "The [Root.GetName] is Commemorated!"
  paragon.5013.desc:1 "§HEvery state-owned screen in the [Root.Owner.GetName] interrupts its scheduled stream to broadcast an official communication from [Root.GetName]. §Y[Root.Owner.Ruler.GetTitle] [Root.Owner.Ruler.GetRegnalName]§! stands in front of a veiled monument.§!\n\nToday, we have made history. Never before has our species realized a grander achievement. The people of [Root.GetName] wanted to honor me today, but they are the real heroes of our people. I am but a servant of our nation. Thanks to you, we take another step towards a brighter future!"
  paragon.5013.a:0 "Such humility!"
  paragon.5013.a.response:1 "This is why I refused to have these proud colonists build a monument in my name. Instead, the funds are to be used for city building. Prosperity awaits!\n\n$paragon.ending.speech$"
@@ -1161,6 +1161,9 @@
  paragon_origin_reformists_struggle_desc:1 "Under the guise of freedom, the Reformists demagogues are trying to destroy the nation! As violent clashes erupt across our territories, their lies have convinced many of our people to turn on us. They think §Y[Owner.Ruler.GetTitle] [Owner.Ruler.GetRegnalName]§! weak, cruel and incompetent, but we will show them!"
  situation_paragon_origin_reformists_struggle_harsh:1 "Maintain Control"
  approach_situation_paragon_origin_reformists_struggle_harsh_tt:1 "A brutal crackdown on all known Reformist hideouts ought to restore stability to the nation.\nTo put an end to the situation, finish the §Y$council_agenda_origin_delusional_tyrant_name$§! Agenda."
+ situation_paragon_origin_reformists_struggle_accept: "Call For Negotiations"
+ approach_situation_paragon_origin_reformists_struggle_accept_tt: "Fighting against civilians is unacceptable. We will push forward peacefully, calling for a truce and inviting the Reformists to negotiate. Hopefully, this will limit the need for violence."
+ approach_allow_tooltip_reformists_struggle_accept: "The Reformists will never agree to negotiate with a tyrant."
  paragon_origin_hunt:1 "Reformists Strength"
  paragon_origin_reformists_killed:0 "First Reformists Neutralized"
  paragon_origin_reformists_alive:0 "First Reformists Negotiated"
@@ -1168,7 +1171,7 @@
  situation_reformists_struggle_2:1 "Reformists are starting to get the upper hand in some clashes, but power remains firmly in our hands."
  situation_reformists_struggle_3:1 "We have a slight advantage over the rebellious Reformists, but the balance of power could swing either way."
  paragon_origin_reformists_struggle_monthly_change_tooltip:0 "Reformist militias are constantly harassing loyal security forces."
- situation_paragon_origin_reformists_struggle_complete:1 "This outcome will force us to negotiate with the Reformists on their terms."
+ situation_paragon_origin_reformists_struggle_complete:2 "One way or another, this conflict must end. Our decisions now will affect the way in which any future negotiations unfold."
  decision_paragon_origin_subdue_reformists:1 "Anti Reformist Raids"
  decision_paragon_origin_subdue_reformists_desc:1 "Democracy is an ailment that needs to be remedied. Our security officers will raid Reformist hideouts and put an end to their schemes. Civilian casualties are to be expected."
  decision_paragon_origin_subdue_reformists_tt:1 "This will remove §G4§! Progress from the §YReformists Demands§! Situation.\nThere is a 50% chance to remove §YDemocratic Tendencies§! modifier from the planet if no Egalitarian Pops are present.\nThis will §Rworsen§! §Y[owner.Ruler.GetTitle] [owner.Ruler.GetRegnalName]'s§! §YLuminary Trait§!."
@@ -1218,33 +1221,6 @@
  paragon.5202.a.tt:1 "§LWe will explore every possible avenue to save [Ruler.GetName].§!"
  paragon.5202.b:2 "Grant [Ruler.GetTitle] the rest they deserve."
  paragon.5202.b.tooltip:1 "§Y[Ruler.GetTitle] [Ruler.GetRegnalName]§! will die."
-
- paragon_origin_leader_fall:1 "Luminary Extinguished"
- paragon_origin_leader_fall_type:0 "Life-sustained $leader_trait_legendary_leader$"
- paragon_origin_leader_fall_desc:1 "Whether it was §Y[Ruler.GetTitle] [Ruler.GetRegnalName]'s§! old age, stress or an assassination attempt, we do not know. Only one thing is clear: the §Y[Ruler.GetTitle]§! is on the brink of death. We can keep [Ruler.GetHerHis] body alive for some time while we search for a solution, but the cost will be steep."
- paragon_origin_leader_fall_death:0 "Our ruler will die."
- situation_origin_leader_healthcare:1 "Experimental Healthcare"
- approach_situation_origin_leader_healthcare_tt:1 "Innovative treatments allow us to keep our dying ruler alive. Although the cost of such treatments will keep piling up, we can sustain [Owner.Ruler.GetHisHer] life for some time."
- situation_origin_leader_researchers:1 "Life Support"
- approach_situation_origin_leader_researchers_tt:0 "Researchers from all around the empire are doing their best to keep our ruler alive."
- paragon_origin_leader_fall_monthly_change_tooltip:1 "Our ruler's health is deteriorating."
- situation_origin_leader_none:0 "Cut the life support"
- approach_situation_origin_leader_none_tt:1 "§RThis approach will lead to the death of our ruler.§!"
- coma_stage_1:1 "The council is in disarray, the empire in turmoil, and foreign diplomacy has virtually come to a stop. §Y[Owner.Ruler.GetTitle] [Owner.Ruler.GetRegnalName]§! held most of the power for so long that we find ourselves lost now that the power is out of [Owner.Ruler.GetHisHer] hands. Adjusting to this new paradigm will be a challenging process."
- coma_stage_2:1 "The council is struggling to keep up with their ruling duties. It seems that only now we realize how much §Y[Owner.Ruler.GetTitle] [Owner.Ruler.GetRegnalName]§! was actually doing. We hastily trained a new generation of administrators to fill a variety of new positions in the administration and let each handle a fraction of the [Owner.Ruler.GetTitle]'s duties."
- coma_stage_3:1 "The nation is almost back on its feet, and people are slowly accepting that §Y[Owner.Ruler.GetTitle] [Owner.Ruler.GetRegnalName]§! might never return. Some citizens welcome this change, others accept it as a bitter truth - but all agree that we have come a long way in building a functioning government without §Y[Owner.Ruler.GetTitle] [Owner.Ruler.GetRegnalName]§!."
- coma_stage_4:1 "The government is fully functional once again, but §Y[Owner.Ruler.GetTitle] [Owner.Ruler.GetRegnalName]§!'s life force is fading with each passing day! We have precious little time left to find a way to save [Owner.Ruler.GetHimHer]. "
-
- paragon.5206.name:0 "Breakthrough!"
- paragon.5206.desc:1 "We did it! Our scientists have shown remarkable perseverance and made significant discoveries. With this new technology, they can design a life-sustaining capsule tailored specifically to prolong our $leader_trait_legendary_leader$'s life! Of course, the life it enables will be a difficult one, but with this we can bring our glorious ruler back!"
- paragon.5206.a:0 "Finally!"
- paragon.origin.casual.ascension:1 "Unlock a new decision, §YSustaining Apparatus§!, which allows us to build a special facility on the capital world to keep our ruler alive."
- decision_paragon_origin_immortal_throne:0 "Sustaining Apparatus"
- decision_paragon_origin_immortal_throne_desc:1 "Highly sophisticated machinery tailored specifically to our ruler's DNA. It should allow us to keep [Ruler.GetHimHer] almost alive and enable [Ruler.GetHimHer] to resume the duties of government."
- decision.paragon.origin.casual.tt:1 "§LThis decision will create an extraordinary life-sustaining apparatus that will immortalize our ruler. We will still need to power it up, but the cost will remain constant.§!"
- paragon.5207.name:0 "Back on the Throne"
- paragon.5207.desc:0 "$paragon.5270.desc$"
- paragon.5207.a:1 "As it should be."
 
  paragon.5210.name:1 "Crossroads"
  paragon.5210.desc:1 "It is time for §Y[Ruler.GetTitle] [Ruler.GetRegnalName]§! to retake the helm of state. Blessed with the heritage of the $leader_trait_legendary_leader$, [Ruler.GetName] remains a magnetic figure. However, with the increasing power of the Reformists and a full-fledged civil war looming on the horizon, the [Ruler.GetTitle] issued a call to negotiations.\n\n[Ruler.GetName] reports that early negotiations have been tense. Representatives from all corners of [Owner.GetName] made their demands before listening to our [Ruler.GetTitle]'s official statement, which listed the concessions we might accept."
@@ -1473,6 +1449,12 @@
  paragon.6030.desc:0 "Our supply of Zro has run out. Unless we can quickly replenish our supplies, §Y[Ruler.GetTitle] [Ruler.GetRegnalName]'s§! mind will be lost to the Shroud forever."
  paragon.6030.a:0 "Contact the Zro market."
  paragon.6030.b:0 "[Ruler.GetName] will die."
+
+ paragon.6035.name: "A New Age"
+ paragon.6035.desc: "Not long after recovering from the procedure, a grand celebration was held on [capital_scope.GetName]. $leader_trait_legendary_leader$ gave a speech thanking citizens and scientists, and [Ruler.GetName] spoke of the bright and prosperous future they have planned for the §Y[Owner.GetName]§!."
+ paragon.6035.a: "The timeless $leader_trait_legendary_leader$ shall lead us."
+ paragon.6035.b: "We will reform the government for the people."
+ paragon.6035.b.tt: "The government will be reformed. The $leader_trait_legendary_leader$ will continue to support and guide us, but now the people will have the chance to choose their leader."
 
  ###Traits
  leader_trait_the_apparatus_luminary:0 "Apparatus Bound"

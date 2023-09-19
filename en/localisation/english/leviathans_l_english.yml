@@ -67,6 +67,7 @@
 
  opinion-3:0 "Opinion: £opinion£ §R-3§!"
  opinion-5:0 "Opinion: £opinion£ §R-5§!"
+ opinion_canceled_trade: "Opinion: £opinion£ §R[GetOpionLossTrader]§!"
 
  opinion_enclave_trade_deal_1:0 "$OPINION$: £opinion£ §G+$@traderOpinion1$§! each year"
  opinion_enclave_trade_deal_2:0 "$OPINION$: £opinion£ §G+$@traderOpinion2$§! each year"
@@ -131,7 +132,7 @@
  leviathans.105.c.trust:0 "Requires this §YTrader Enclave§! to have:\n£opinion£ Opinion +50\n"
  leviathans.105.d:0 "Nothing for now. Goodbye."
  leviathans.105.z:1 "We wish to hire a §Yconsultant§!."
- trader_tt_governor:0 "Hire a [fromfrom.GetAdj] §YGovernor§! to run one of our Sectors."
+ trader_tt_governor:1 "Hire a [enclave_country.GetAdj] §YGovernor§!."
 
 #  leviathans.110.desc:1 "We will trade Minerals for Energy Credits or Food at a rate of one to two. These are our current deals."
 #  leviathans.110.a:1 "£minerals£ §G10§! for £energy£ §R20§! monthly"
@@ -173,9 +174,10 @@
  leviathans.125.z1:0 "Deal."
  leviathans.125.z1.gestalt:0 "We understand, and wish to proceed anyway."
  leviathans.126.desc:0 "Excellent! We are happy to share our skills with the [Root.GetName]."
+ leviathans.126.desc.alt: "Excellent! May we both profit from each other's... distinct approach to commerce."
 
- already_hired_trader_governor:1 "§RWe have already recruited a leader from the [fromfrom.GetName]§!."
- recruit_trader_leader:1 "Adds a [fromfrom.GetSpeciesName] §YGovernor§! with the §Y$leader_trait_enclave_trader$ trait§! to the §HLeaders§! pool."
+ already_hired_trader_governor:2 "§RWe have already recruited a leader from the [enclave_country.GetName]§!."
+ recruit_trader_leader:1 "Adds a [enclave_country.GetAdj] §YGovernor§! with a §YTrader Liaison Trait§! to the §HLeaders§! pool."
  requires_trader_enclave:0 "§RRequires a §YTrader Enclave§! in the system.§!"
 
  sm_trader_proxy_office:0 "Trader Proxy Office"
@@ -184,6 +186,31 @@
 
  leader_trait_enclave_trader:0 "Enclave Trader"
  leader_trait_enclave_trader_desc:0 "Recruited from one of the independent merchant Enclaves, this leader is particularly adept at maximizing Trade Value."
+ trader_catch_phrase: "§L"Now about that small consulting fee..."§!"
+
+ leader_trait_xuracorp_liaison: "XuraCorp Liaison"
+ leader_trait_xuracorp_liaison_desc: "Recruited from XuraCorp, this Governor holds shares in several Exotic Gas production facilities."
+ xuracorp_trader_desc: "$leader_trait_xuracorp_liaison_desc$"
+ xuracorp_trader_catch_phrase: "$trader_catch_phrase$"
+
+ leader_trait_riggan_liaison: "Riggan Liaison"
+ leader_trait_riggan_liaison_desc: "Recruited from the Riggan Commerce Exchange, this Governor spends their spare time dealing in Volatile Mote futures."
+ riggan_trader_desc: "$leader_trait_riggan_liaison_desc$"
+ riggan_trader_catch_phrase: "$trader_catch_phrase$"
+
+ leader_trait_muutagan_liaison: "Muutagan Liaison"
+ leader_trait_muutagan_liaison_desc: "Recruited from the Muutagan Merchant Guild, this Governor owns several private Rare Crystal mines."
+ muutagan_trader_desc: "$leader_trait_muutagan_liaison_desc$"
+ muutagan_trader_catch_phrase: "$trader_catch_phrase$"
+
+ councilor_enclave_trader: "Trader Liaison"
+ councilor_enclave_trader_female: "$councilor_enclave_trader$"
+ councilor_enclave_trader_desc: "A liaison from one of the three hubs of galactic commerce sits on the council, granting insider information on brokerages across the galaxy."
+ councilor_enclave_trader_unlock_title: "§HCouncil Position from the $NAME_Muutagan_Merchant_Guild$, $NAME_Riggan_Commerce_Exchange$, or $NAME_XuraCorp$§!"
+ councilor_enclave_trader_conditional_tooltip: "Leader has a §YTrader Liaison§! Trait."
+
+ unlocks_trader_council_position: "\n§EAllows the unlocking of Council Position:§!\n§H$t$$councilor_enclave_trader$§!\n$tt$$COUNCIL_POSITION_MODIFIER_BASE$\n$ttt$$MOD_TRADE_VALUE_MULT$: §G+2%§!\n$ttt$$MOD_COUNTRY_TRADE_FEE$ §G-1%§!\n$COUNCIL_POSITION_AVAILABLE_FOR$$t$$governor_with_icon$\n\n$COUNCIL_POSITION_REQUIREMENTS$$councilor_enclave_trader_conditional_tooltip$"
+
 
  leviathans.131.desc:3 "The §YVolatile Mote§! is a prized Riggan condiment. It is renowned throughout the galaxy for its distinct flavor, which is unlike any other - and its explosiveness, which is also unlike any other. We sell it only to our most valued trading partners, among which we count the [Root.GetName].\n\nIf you can meet our modest price, we are willing to export Volatile Motes to you for a period of ten standard years."
  leviathans.131.a.reply:1 "You will not be sorry. Unless you consume too much spice, of course... Then there is a small chance that you will spontaneously combust. A very small chance, to be sure."
@@ -635,6 +662,7 @@
  leviathans.665.name:0 "Dragon's Hoard, Best Before"
  leviathans.665.desc:0 "The Ether Drake egg recovered from the Dragon's Hoard planetoid has, in the words of the xenobiologist in charge of the ovum, passed its expiry date.\n\nThere is no longer any hope of hatching the creature within."
  leviathans.665.desc.gesta:0 "The Ether Drake egg recovered from the Dragon's Hoard planetoid can no longer be considered viable.\n\nThe species is extinct."
+ leviathans.665.desc.machine: "The Ether Drake egg is terminated. Biological processes have crashed, and there are no available error reports for debugging."
 
  leviathans.670.name:0 "Dragonslayer"
  leviathans.670.desc:3 "The formidable Ether Drake has been slain. The exceptional bravery of Admiral [From.From.GetLeaderName] and the [From.From.GetName] will not soon be forgotten.\n\nThe §Hplanetoid§! the beast guarded so jealously can now be safely exploited. Who knows what treasures the creature might have amassed over the eons?"
@@ -844,18 +872,25 @@
 
  ### HIVER
  leviathans.3201:0 "Swarming Hive Craft"
- leviathans.3201.desc:0 "Fast-moving attack craft are hitting our mining stations in the [hiver_system.GetName] system! These unidentified aggressors swarmed out of several previously dormant asteroids in the belt that are now displaying huge power signatures.\n\nWe can only surmise that these asteroids serve as some kind of hive for a previously unknown spaceborne life form. Whatever they are, our expanding mining operations seem to have provoked them into action!"
+ leviathans.3201.base: "Fast-moving attack craft are hitting our mining stations in the [hiver_system.GetName] system! These unidentified aggressors swarmed out of several previously dormant asteroids in the belt that are now displaying huge power signatures."
+ leviathans.3201.desc:1 "$leviathans.3201.base$\n\nWe can only surmise that these asteroids serve as some kind of hive for a previously unknown spaceborne life form. Whatever they are, our expanding mining operations seem to have provoked them into action!"
+ leviathans.3201.desc.void_hive: "$leviathans.3201.base$\n\nThe hive inside of the asteroid has become agitaded by our recent mining. It seems this system isn't big enough for the both of us."
  leviathans.3201.a:0 "They are coming in fast!"
  leviathans.3202:0 "Crystalline Asteroids"
- leviathans.3202.desc:0 "The [hiver_system.GetName] system is home to an unusually dense asteroid belt that is displaying some unique properties. Several of the larger asteroids are covered in crystalline outcroppings that would suggest the presence of extremely rich mineral deposits.\n\nHowever, long-range sensors are tracking sporadic movement from what appears to be several small objects or possibly spacecraft in the denser regions of the belt. We are unable to get a fix on them, but debris from at least two destroyed mining stations can be seen floating in space next to some of the larger asteroids."
+ leviathans.3202.base: "The [hiver_system.GetName] system is home to an unusually dense asteroid belt with unique properties. Several of the larger asteroids are covered in crystalline outcroppings that appear to be extremely rich mineral deposits."
+ leviathans.3202.desc:1 "$leviathans.3202.base$\n\nHowever, long-range sensors are tracking sporadic movement from several small, unidentifiable objects - possibly spacecraft - in the denser regions of the belt. We are unable to get a fix on them, but we have identified debris from at least two destroyed mining stations, floating in space near some of the larger asteroids."
+ leviathans.3202.desc.void_hive: "$leviathans.3202.base$\n\nWe have detected movement within the belt: a form of rudimentary hive mind, feasting on its mineral hoard. We could subsume their consciousness and under our guidance they would be a powerful deterrent."
  leviathans.3202.a:0 "Something isn't right..."
+ leviathans.3202.b: "They are similar. Let them serve."
+ leviathans.3202.c: "Let's see how they react to us."
 
  leviathans.3204:0 "Asteroid Hives Defeated"
  leviathans.3204.desc:0 "Our forces have managed to smash the alien hive asteroids in the [hive_system.GetName] system. They are once again dormant, and we are not detecting any more of those vicious attack craft.\n\nOne of the asteroids is still reasonably intact, despite the damage inflicted upon it. We should consider dispatching a science party to see what we can find inside it."
  leviathans.3204.a:0 "Prepare an away team."
 
  leviathans.3205.desc:0 "Our science team has finished exploring the massive network of tunnels and chambers running through the hive asteroid in the [hive_system.GetName] system. No live specimens of the spaceborne creatures that attacked us were encountered, but the scientists did find the remains of some kind of birthing chamber.\n\nThis has given us a great deal of insight into the life cycle of these entities, further expanding our understanding of galactic biology."
-
+leviathans.3230.name: "Meteorites Mustered"
+leviathans.3230.desc: "The inhabitants of the [from.solar_system.GetName] system have awoken. While still hostile to most spacecraft, we can rest easy knowing that [from.solar_system.GetName] will be a bastion under the protection of our new primitive drones."
 
  ### SPECIAL PROJECTS
  INVESTIGATE_ENCLAVE:1 "Investigate [target_enclave.GetName]"
@@ -893,6 +928,8 @@
  TECHNOSPHERE_HACKING_DESC:0 "Hacking into the metallic sphere's central programming might yield some further insight into what it is and what it is doing."
  TECHNOSPHERE_DESTRUCTION:0 "Sphere Fracturing"
  TECHNOSPHERE_DESTRUCTION_DESC:0 "A team of demolitions experts should be able to identify and exploit points of failure in the integrity of the mysterious sphere's hull, ending the silent menace."
+ EXPLOIT_HIVERS: "Like Minds"
+ EXPLOIT_HIVERS_DESC: "We appear to be physiologically quite similar to the creatures inside the asteroids of [hiver_system.GetName]. Just like us, they thrive in the vacuum of space. If we exert our will upon them they could become a useful instrument."
 
  #MISC
  building_stellarite_trophy:0 "Stellar Devourer Trophy"
@@ -1059,3 +1096,16 @@
  mod_planet_structures_rare_crystals_cost_mult:0 "District and Building Rare Crystals Cost"
  mod_planet_structures_volatile_motes_cost_mult:0 "District and Building Volatile Motes Cost"
  mod_planet_structures_exotic_gases_cost_mult:0 "District and Building Exotic Gases Cost"
+
+ curator_archivist_explanation: "\nWe will hire a Level 5 Scientist with the §Y$leader_trait_curator$§! Trait."
+
+ councilor_curator_archivist: "Curator Archivist"
+ councilor_curator_archivist_female: "$councilor_curator_archivist$"
+ councilor_curator_archivist_desc: "An archivist from the $NAME_Curator_Order$ serves on the council, sharing the accumulated knowledge of eons."
+ councilor_curator_archivist_unlock_title: "§HCouncil Position from the $NAME_Curator_Order$§!"
+ councilor_curator_archivist_conditional_tooltip: "Leader has the §Y$leader_trait_curator$§! Trait."
+
+ unlocks_curator_council_position: "\n§EAllows the unlocking of Council Position:§!\n§H$t$$councilor_curator_archivist$§!\n$tt$$COUNCIL_POSITION_MODIFIER_BASE$\n$ttt$$MOD_ASSIST_RESEARCH_MULT$: §G+5%§!\n$ttt$$mod_planet_researchers_upkeep_mult$ §G-2%§!\n$COUNCIL_POSITION_AVAILABLE_FOR$$t$$scientist_with_icon$\n\n$COUNCIL_POSITION_REQUIREMENTS$$councilor_curator_archivist_conditional_tooltip$"
+
+ curator_archivist_desc: "$leader_trait_curator_desc$" 
+ curator_archivist_catch_phrase: "§L"Together we shall uncover secrets long forgotten."§!" 

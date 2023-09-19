@@ -36,8 +36,10 @@
  #############################
 
  origin_payback:0 "Payback"
- origin_payback_desc:0 "This civilization has been visited by an alien empire who forcibly enlightened and enslaved them. They have repelled their invaders, but will they return?"
- origin_tooltip_payback_effects:1 "§R- WARNING: Challenging Origin§!\n- Start with 10 fewer £pop£ Pops than normal.\n- Begins with several important technologies yet to be researched and with an infrastructural disadvantage.\n- A special §HArchaeological Site§! in your system: the destroyed battleship of your former invaders.\n- This origin will guarantee a number of pre-FTL civilizations throughout the galaxy, regardless of the §H$FE_PRIMITIVE_WORLDS$§! slider setting.\n- A random pre-FTL civilization will be uplifted to have the §H$origin_broken_shackles$§! origin.\n- An §HAdvanced Empire§! with the §H$origin_slavers$§! origin is spawned somewhere in the galaxy.\n\n"
+ origin_payback_desc:1 "§RWARNING: Challenging Origin§!\nThis civilization has been visited by an alien empire who forcibly enlightened and enslaved them. They have repelled their invaders, but will they return?"
+ origin_tooltip_payback_effects:2 "- $HOMEWORLD$ $TABBED_NEW_LINE$- ['concept_advanced_infrastructure']$TABBED_NEW_LINE$- $PLANETARY_MODIFIERS$ ['concept_payback_unified_purpose']$NEW_LINE$- $HOME_SYSTEM$ ['concept_payback_digsite'] ['concept_archaeology_site']$NEW_LINE$- One ['concept_advanced_empires', Advanced AI Empire] and several ['concept_preftl_civilizations'] regardless of the Galaxy Settings $NEW_LINE$- One Pre-FTL Civilization: Uplifted with the §I$origin_broken_shackles$§! origin"
+
+ origin_tooltip_payback_negative_effects: "- $INITIAL_POPS$ §R-10§! $NEW_LINE$- $HOMEWORLD$ $TABBED_NEW_LINE$- ['concept_payback_debris_field'] Planetary Modifier $TABBED_NEW_LINE$- ['concept_payback_ship_debris']: +6 $TABBED_NEW_LINE$- Devastation: §R33%§! $NEW_LINE$- $HOME_SYSTEM$ §IResource Deposits§! are unexploited $NEW_LINE$- $MISSING_TECHNOLOGIES_STRING$ $TABBED_NEW_LINE$- ['concept_basic_science_lab_1', £physics_research£ $tech_basic_science_lab_1$] $TABBED_NEW_LINE$- ['concept_planetary_government', £society_research£ $tech_planetary_government$] $TABBED_NEW_LINE$- ['concept_corvettes', £engineering_research£ $tech_corvettes$]"
 
  START_SCREEN_PAYBACK:0 "We had a deal.\n\nWhen the visitors from the stars revealed themselves, they offered us a fair contract: technological enlightment, to be repaid in installments. Within a generation, our planet was transformed into a so-called 'advanced civilization.'\n\nThen we read the fine print: to repay our 'debt', they insisted we work for them, on an indefinite term. When our leaders protested, the outsiders turned violent. We fought back.\n\nWe won, though barely, and only after suffering sizeable losses. Now, our scientists have finally reverse-engineered the secrets of FTL travel from the ships we destroyed. It's a big galaxy out there, but sooner or later we're sure to meet our 'benefactors' again. In fact, we're looking forward to it.\n\nIt's time to get some payback."
 
@@ -60,6 +62,9 @@
 
  d_payback_habitat_research:0 "Technological Cache"
  d_payback_habitat_research_desc:0 "The interior of the former MSI warship provides us with an unmatched opportunity to unlock the secrets of their technology."
+
+ d_msi_air_freshener: "Atmospheric Infuser"
+ d_msi_air_freshener_desc: "These ventilation units combine the latest advances in aromatherapy with advanced chemistry to mask the malodorous stench of despair and replace it with a variety of invigorating and delightful scents."
 
  payback_curfew:0 "Eradicate Dissent"
  payback_curfew_desc:0 "Freedom is the cost of stability."
@@ -550,10 +555,12 @@
  #########################
 
  origin_broken_shackles:0 "Broken Shackles"
- origin_broken_shackles_desc:0 "This civilization began as a mutiny aboard a slaver vessel, and is made up of a diverse group of pre-FTL species."
+ origin_broken_shackles_desc:1 "$CHALLENGING_ORIGIN$\nThis civilization began as a mutiny aboard a slaver vessel, and is made up of a diverse group of pre-FTL species."
  START_SCREEN_BROKEN_SHACKLES:0 "Free at last!\n\nSome were born into bondage. Others, crippled by debt, found themselves sold as indentured labor. But the technology of our former masters was not enough to save them. In secret, we planned our mutiny. During the brief, bloody struggle, our captors were killed, and their slave ship critically damaged. An emergency landing left us stranded on the surface of [Root.Capital.GetName].\n\nThough we are made up of species from many different worlds, under your leadership we have found common cause. In time, the damaged systems of the slaver vessel will be repaired, and its bounty of secrets - including the location of our former home worlds - will be revealed.\n\nOur shackles are broken. Now the work begins."
  START_SCREEN_BROKEN_SHACKLES_MEGACORP:0 "Free* at last!\n\nSome were born into bondage. Others, crippled by debt, found themselves sold as indentured labor. All of us dreamed of something more, a life of ease and abundance. In secret, we planned our mutiny. During the brief, bloody struggle, our captors were killed, and their slave ship critically damaged. An emergency landing left us stranded on the surface of [Root.Capital.GetName].\n\nThough we are made up of species from many different worlds, under your directorship we have found common cause. Our former masters may have been cruel, but they understood the business of life. Like them, we must be steadfast in our pursuit of profit. In time, the damaged systems of the slaver vessel will be repaired, and its bounty of secrets - including the location of our former home worlds - will be revealed. Our shackles are broken. Now is the time to incorporate.\n\n*Legal Notice:\nThe use of the word 'free' is non-binding and does not oblige the Corporation to provide any discount or volunteer any action that could affect the profit margins of [Root.GetName] shareholders. If you have any questions regarding this or other terms, or should you wish to opt out of continued existence on [Root.Capital.GetName], please contact our legal or security professionals in the $building_bureaucratic_1$ on [Root.Capital.GetName] for immediate resolution."
- origin_tooltip_broken_shackles_effects:0 "§R- WARNING: Challenging Origin§!\n- Begins with several important technologies yet to be researched and with an infrastructural disadvantage.\n- Your chosen species is joined by a mixture of pre-FTL £pop£ Pops from across the galaxy.\n- A pre-FTL civilization of your chosen species will be present somewhere in the galaxy.\n- This origin will guarantee a number of pre-FTL civilizations throughout the galaxy, regardless of the §H$FE_PRIMITIVE_WORLDS$§! slider setting.\n- A random pre-FTL civilization will be uplifted to have the §H$origin_payback$§! origin.\n- An §HAdvanced Empire§! with the §H$origin_slavers$§! origin is spawned somewhere in the galaxy."
+ origin_tooltip_broken_shackles_effects:1 "- $INITIAL_POPS$ Species from ['concept_preftl_civilizations'] across the galaxy $NEW_LINE$- $STARTING_PLANET$ $TABBED_NEW_LINE$- ['concept_free_at_last_broken_shackles'] Planetary Modifier $TABBED_NEW_LINE$- ['concept_crashed_slaver_ship_broken_shackles'] Planetary Feature $TABBED_NEW_LINE$- ['concept_broken_shackles_buildings'] $NEW_LINE$- $STARTING_SYSTEM$ ['concept_broken_shackles_digsite'] ['concept_archaeology_site'] $NEW_LINE$- One ['concept_advanced_empires', Advanced AI Empire] and several Pre-FTL Civilization regardless of the Galaxy Settings $NEW_LINE$- One Pre-FTL Civilization: Will be this empire's species and homeworld $NEW_LINE$- One Pre-FTL Civilization: Uplifted with the §I$origin_payback$§! origin"
+
+ origin_tooltip_broken_shackles_negative_effects: "- $STARTING_PLANET$ $TABBED_NEW_LINE$- Is NOT this empire's homeworld $TABBED_NEW_LINE$- ['concept_culture_shock_broken_shackles'] Planetary Modifier $TABBED_NEW_LINE$- ['concept_ship_debris_broken_shackles', £blocker£ $concept_ship_debris_broken_shackles$]: +5 $NEW_LINE$- $STARTING_SYSTEM$ §IResource Deposits§! are unexploited $NEW_LINE$- $MISSING_TECHNOLOGIES_STRING$ $TABBED_NEW_LINE$- ['concept_basic_science_lab_1', £physics_research£ $tech_basic_science_lab_1$]$TABBED_NEW_LINE$- ['concept_planetary_government', £society_research£ $tech_planetary_government$] $TABBED_NEW_LINE$- ['concept_corvettes', £engineering_research£ $tech_corvettes$] $NEW_LINE$- Policies: $TABBED_NEW_LINE$- Cannot select §I$slavery_allowed_name$§! $TABBED_NEW_LINE$- Cannot select §I$purge_allowed_name$§!"
 
  is_broken_shackles_origin:0 "$TRIGGER_FAIL$Our origin does not allow us to treat our population in this manner."
 
@@ -1057,7 +1064,8 @@
 
  origin_fear_of_the_dark:0 "Fear of the Dark"
  origin_fear_of_the_dark_desc:0 "A century ago, one of the planets in this empire's home system was destroyed by a freak asteroid. Some believed this was a malicious attack by an alien species. Others brushed off these concerns as mere paranoia. The tension between the two groups grew so great that a newly-terraformed planet was granted to the fearmongers."
- origin_tooltip_fear_of_the_dark_effects:0 "- Start with a third of your population refusing to explore space, living on a separate planet.\n- The separatist planet will provide unique events and benefits."
+ origin_tooltip_fear_of_the_dark_effects:1 "- $HOME_SYSTEM$ ['concept_preftl_civilizations', Pre-FTL Civilization] created by a Separatist Faction, formerly part of your Empire, granting events and benefits"
+ origin_tooltip_fear_of_the_dark_negative_effects:  "- $INITIAL_POPS$ §R-8§!"
  START_SCREEN_FEAR_OF_THE_DARK_START:0 "A century ago, the planet we now call "The Divider" exploded. This was the beginning of our "
  START_SCREEN_FEAR_OF_THE_DARK_REGULAR:0 "$START_SCREEN_FEAR_OF_THE_DARK_START$dissociation.\n\nAt first we brushed off the destruction as a freak occurrence, but there were some on [GetHomeWorldName] who believed it was a premeditated attack on our species. This faction hypothesized that our radio transmissions had been detected by some distant alien race, a race that replied with a planet-cracking projectile. These dissenters urged us to prepare for the day when the aliens would return to finish us off. Many dismissed their concerns as paranoia.\n\nThe political division between the two camps continued to grow. Planet-wide civil unrest culminated in the creation of a treaty that granted the dissidents a terraforming candidate, a planet upon which they would be free to reside in seclusion without any interference from us.$START_SCREEN_FEAR_OF_THE_DARK_END$"
  START_SCREEN_FEAR_OF_THE_DARK_MEGACORP:0 "$START_SCREEN_FEAR_OF_THE_DARK_START$estrangement.\n\nAfter the incident, worried managers sent requests to our Board of Directors to shut down existing extra-planetary radio infrastructure and cancel our space exploration programs. They believed the creation of The Divider was caused by an external agent attempting to destroy [GetHomeWorldName]. This request was denied.\n\nCalling the Board's decision a "monumental lapse of judgement", these managers activated a sub-clause in their citizenship contracts that granted them the right to publicly rebuke the Board. In an effort to placate share-holders and to bolster consumer confidence, the decision was made to offer the dissenting managers a new contract. In exchange for giving up any rights pertaining to [GetName], they would be provided with a terraforming candidate, and a guarantee of fiscal independence.$START_SCREEN_FEAR_OF_THE_DARK_END$"
@@ -1117,7 +1125,7 @@
  origin.6006.desc.base1:0 "An admiral from [fotd_habitants.Capital.GetName] is offering to join our navy as a temporary commander. [fotd_Leader.GetSheHeCap] motivations are unclear, but our informants tell us that there might be a scandal involved."
  origin.6006.desc.base2:0 "[fotd_Leader.GetName] is eager to sign on with us temporarily. [fotd_habitants.Capital.GetName] has always been a breeding ground for crafty and unconventional tactics."
  origin.6006.desc.base3:0 "After excelling in a recent joint fleet exercise, we have extended Admiral [fotd_Leader.GetName] the opportunity to take command in a real navy."
- origin.6006.desc.base4:0 "Placed on temporary leave for allegedly putting the vessels under [fotd_Leader.GetHerHis] command in excessive danger, Admiral [fotd_Leader.GetName] has requested to join our navy. Despite [fotd_Leader.GetName]'s reputation, those who have served with [fotd_Leader.GetHerHis] still respect [fotd_Leader.GetHerHis] talent."
+ origin.6006.desc.base4:1 "Placed on temporary leave for allegedly putting the vessels under [fotd_Leader.GetHerHis] command in excessive danger, Admiral [fotd_Leader.GetName] has requested to join our navy. Despite [fotd_Leader.GetName]'s reputation, those who have served with [fotd_Leader.GetHerHim] still respect [fotd_Leader.GetHerHis] talent."
  origin.6006.a:0 "As long as you don't go rogue."
  origin.6006.a.tt:0 "Add §Y[fotd_Leader.GetName]§! as an §YAdmiral§! to our leader pool."
  origin.6006.b:0 "You are too much of a loose torpedo tube!"
@@ -1449,7 +1457,7 @@
 
  fotdCoercion1:0 "To entice them to stay on a few more years, we might offer an incentive. Never underestimate the power of a well-placed bribe."
  fotdCoercion2:0 "We could remind them of the many pleasures here, and perhaps provide a few discrete examples as an incentive to stay."
- fotdCoercion3:0 "Well, if they insists on returning home, we have no choice but to inform their government about the illicit xeno-relations they were engaging in."
+ fotdCoercion3:0 "Well, if they insist on returning home, we have no choice but to inform their government about the illicit xeno-relations they were engaging in."
  fotdCoercion4:0 "We could set aside a government stipend to fund this project. That should keep them distracted for a while longer."
 
  a_voidcraft:0 "a voidcraft"
@@ -2282,9 +2290,9 @@
  fircon.8035.c:0 "An enriching opportunity..."
 
  d_landgrab_blocker:0 "Foreign Holdings"
- d_landgrab_blocker_desc:0 "Purchased by foreign investors, these lands are outside the control of the [landgrab_planet.owner.GetName]."
+ d_landgrab_blocker_desc:1 "Purchased by off-world investors, these lands are no longer accessible to the indigenous population."
  d_landgrab_foreign_holdings:0 "Remote Holdings"
- d_landgrab_foreign_holdings_desc:0 "We have acquired possessions on [landgrab_planet.GetName], and are managing them remotely."
+ d_landgrab_foreign_holdings_desc:1 "These parcels of land have been acquired from the indigenous population, and are now managed from orbit."
 
  #Fruitful Cooperation
  fircon.8040.name:0 "Fruitful Cooperation"
@@ -2486,7 +2494,7 @@
  arcsite.3010.desc:0 ""Now I shall recount where it all went wrong - where we first fell to the sin of arrogance," declaims Ithikarios.\n\nThe second crystal recounts how the $NAME_Charynoi$ gradually uncovered the mysteries of space flight, seemingly about a hundred years before the [Root.Owner.GetName]. They found two beautiful planets in their own system, and concluded that those had been bequeathed to them by the Gods as their birthright, which they were now claiming.\n\nIn horrified tones, Ithikarios recounts the darker side to these early exploits: nascent civilizations on their new colonies had not willingly yielded their homes. Beaten into submission, they were enslaved and eventually dwindled, falling to diseases the $NAME_Charynoi$ did not care to cure.\n\nOur [Owner.GetLinguists] are hard at work translating the third and final data crystal."
 
  arcsite.3015.name:0 "The Traitor's Gambit"
- arcsite.3015.desc:0 ""Eventually, we exhausted the confines of the space we had been bequeathed. We knew of the existence of the Wormhole, but it defied our study. Our realm was so bountiful, so full of beauty, that it was not hard to convince ourselves that we were the Chosen. That the Wormhole was a test, and once we were worthy, it would be our Holy Purpose to spread our kind across all the galaxy.\n\n"I was once chief amongst those seeking to fulfill this duty. When inspiration came to me - when I realized I held the key to the opening of the Wormhole - I prayed for days at the Shrine of my Ancestors. And eventually: Revelation. We were not worthy. If we went beyond the Wormhole, we would find only pain. $NAME_Aspharelle$ would be scoured, out of punishment for the crimes we had committed. I resolved to destroy my research and seek a different path.\n\n"It was hard to find those who I could trust. If we were discovered, we would surely have longed for a quick death. Though I am more convinced than ever that we are right, we would have been seen as apostates. Eventually, we launched a daring plan: under the guise of making a fool attempt to fly the wormhole blind, we built an ark ship to sail into the unknown, towards a distant star. Many years, we traveled through empty space, until we came to our destination. Now we wish nothing more than to be left in peace to live virtuous lives, so that we may prove that not all $NAME_Charynoi$ are evil."\n\nApologizing profusely for any harm done to us by her brethren, Ithikarios mentions her attempts at erecting an impenetrable shield around [From.Planet.MoonOf.GetName], so that her people would never again be tempted to seek the stars. She failed, but our [Owner.GetResearchers] have been able to work where she went wrong. We could erect the shield now, if we so desire."
+ arcsite.3015.desc:0 ""Eventually, we exhausted the confines of the space we had been bequeathed. We knew of the existence of the Wormhole, but it defied our study. Our realm was so bountiful, so full of beauty, that it was not hard to convince ourselves that we were the Chosen. That the Wormhole was a test, and once we were worthy, it would be our Holy Purpose to spread our kind across all the galaxy.\n\n"I was once chief amongst those seeking to fulfill this duty. When inspiration came to me - when I realized I held the key to the opening of the Wormhole - I prayed for days at the Shrine of my Ancestors. And eventually: Revelation. We were not worthy. If we went beyond the Wormhole, we would find only pain. $NAME_Aspharelle$ would be scoured, out of punishment for the crimes we had committed. I resolved to destroy my research and seek a different path.\n\n"It was hard to find those who I could trust. If we were discovered, we would surely have longed for a quick death. Though I am more convinced than ever that we are right, we would have been seen as apostates. Eventually, we launched a daring plan: under the guise of making a fool attempt to fly the wormhole blind, we built an ark ship to sail into the unknown, towards a distant star. Many years, we traveled through empty space, until we came to our destination. Now we wish nothing more than to be left in peace to live virtuous lives, so that we may prove that not all $NAME_Charynoi$ are evil."\n\nApologizing profusely for any harm done to us by her brethren, Ithikarios mentions her attempts at erecting an impenetrable shield around [From.Planet.MoonOf.GetName], so that her people would never again be tempted to seek the stars. She failed, but our [Owner.GetResearchers] have been able to work out where she went wrong. We could erect the shield now, if we so desire."
  arcsite.3015.A:0 "We shall fulfil their wishes."
  arcsite.3015.B:1 "We can do with it as we please."
  arcsite.3015.C:0 "So much for that..."
@@ -2495,7 +2503,7 @@
  SHIELD_PRIMITIVE_PLANET_PROJECT_DESC:0 "Our [Owner.GetResearchers] should be able to complete the shield Ithikarios attempted to erect over §Y[This.GetName]§!, if we can provide them with sufficient resources."
 
  arcsite.3020.name:0 "The Charynoi Shielded"
- arcsite.3020.desc:0 "Thanks to the efforts of our [Owner.GetResearchers], the shield Ithikarios attempted to erect over [From.GetName] has been completed. Her $NAME_Charynoi$ descendants can now find peace."
+ arcsite.3020.desc:0 "Thanks to the efforts of our [Owner.GetResearchers], the shield Ithikarios attempted to erect over [FromFrom.GetName] has been completed. Her $NAME_Charynoi$ descendants can now find peace."
  arcsite.3020.desc.A:0 "A relief for all involved."
 
  bane_of_the_prophetess:0 "Bane of the Prophetess"
@@ -2507,6 +2515,15 @@
 
  paradisiacal_habitat:0 "Paradisiacal Habitat"
  paradisiacal_habitat_desc:0 "Although this habitat is completely artificial, the air carries an idyllic quality that reminds any sentient creature - no matter how alien - of home."
+
+ paradisiacal_habitat_science: "$paradisiacal_habitat$"
+ paradisiacal_habitat_science_desc: "$paradisiacal_habitat_desc$"
+
+ paradisiacal_habitat_energy: "$paradisiacal_habitat$"
+ paradisiacal_habitat_energy_desc: "$paradisiacal_habitat_desc$"
+
+ paradisiacal_habitat_mining: "$paradisiacal_habitat$"
+ paradisiacal_habitat_mining_desc: "$paradisiacal_habitat_desc$"
 
  fircon.3510.name:0 "The Chosen"
  fircon.3510.desc:0 "For too long have we been trapped behind the wormhole. But behold! Finally, we have breached the restrictions placed upon us by our celestial heritage. Now, at last, we know we are worthy. The rest of the galaxy is ours to claim.\n\nDo not resist. It will be better in the long run, that way."
@@ -2545,6 +2562,8 @@
 
  hyper_drive_plural:0 "hyper drives"
  subspace_drive_plural:0 "subspace drives"
+ hyper_drive: "hyper drive"
+ subspace_drive: "subspace drive"
 
  trait_stargazer:0 "Stargazer"
  trait_stargazer_desc:0 "$trait_presapient_starborn_desc$"
@@ -2694,3 +2713,55 @@
 
  alert_mia_forced_to_decloak_by_us_title:0 "Cloaked Fleets Discovered"
  alert_mia_forced_to_decloak_by_us_instant:0 "Our Detection Arrays discovered at least one cloaked, non-allied fleet and forced it to Decloak. The fleet(s) have gone Missing In Action."
+
+ #Xeno Dinner Party
+ fcsum_xeno_dinner_party: "An alien empire has sent a ship to our border to begin diplomatic communications."
+ opinion_caught_spying: "Dinner Party Deception"
+ opinion_life_of_the_party: "Dinner Party Diplomacy"
+ opinion_double_rejection_party: "Dinner Party Dismissal"
+ opinion_wet_towel_party: "Dinner Party Downers"
+ opinion_could_not_eat_the_food_party:0 "Dinner Party Miscalculation"
+ first_contact.1120.name: "The Invitation"
+ first_contact.1120.desc: "The §H[This.ContactCountry.GetName]§! stationed a vessel at our border, broadcasting a repeating signal.\n\nIt was a challenge to translate their message, but our [This.Owner.GetLinguists] believe they are inviting one of our representatives to a multi-day cultural exchange event on their ship."
+ first_contact.1120.a.proactive: "What a trusting gesture."
+ first_contact.1120.a.cautious: "Ok, but this sounds like a trap."
+ first_contact.1120.a.tooltip: "We will send our envoy to the event."
+ first_contact.1120.b: "Absolutely not."
+ first_contact.1120.b.tooltip: "We will decline the invitation."
+ first_contact.1125.name: "Mise En Place"
+ first_contact.1125.desc: "With a little bit of guesswork, [This.Owner.GetEnvoy] [This.Leader.GetName] and our [This.Owner.GetLinguists] accepted the alien cultural exchange invitation. We interpreted the enthusiastic response from the §H[This.ContactCountry.GetName]§! as positive. Shortly after, they sent pictographs depicting a countdown to the party.\n\n[This.Owner.GetEnvoyCap] [This.Leader.GetName] is using the remaining time to prepare and further study the language samples we have obtained."
+ first_contact.1125.a: "This is a unique learning opportunity."
+ first_contact.1125.a.tooltip: "We will prepare for the invitation."
+ first_contact.1125.b: "This would be a perfect chance to covertly gather intel."
+ first_contact.1125.b.tooltip: "We agree, but will equip our envoy with our spy tech."
+ first_contact.1130.name: "Pre-Game"
+ first_contact.1130.desc: "The countdown to the §H[This.ContactCountry.GetName]§! cultural exchange event is nearing completion. [This.Owner.GetEnvoyCap] [This.Leader.GetName] is about to board the shuttle to the alien envoy ship. Communication with our [This.Owner.GetEnvoy] will pause for the duration of the party out of respect."
+ first_contact.1130.a: "We should embrace their culture as best as possible."
+ first_contact.1130.a.tooltip: "Our envoy will try to integrate with their culture."
+ first_contact.1130.b: "Be cordial but professional."
+ first_contact.1130.b.tooltip: "Our envoy will act professionally."
+ first_contact.1130.c: "Begin the operation."
+ first_contact.1130.c.tooltip: "Our envoy will learn as much as they can."
+ first_contact.1135.name: "Second Chances"
+ first_contact.1135.desc: "Our lack of interest in their invitation has offended the §H[This.ContactCountry.GetName]§!. Their tone has dramatically changed. Our [This.Owner.GetLinguists] translated some hostile language within their follow-up communication.\n\nIt seems they do not want to take no for an answer."
+ first_contact.1135.a: "Very well. We will attend."
+ first_contact.1135.a.tooltip: "We will attend, after all, for the sake of smooth diplomatic relations."
+ first_contact.1135.b: "The answer is still no."
+ first_contact.1135.b.tooltip: "We will in no way accept the invitation."
+ first_contact.1140.name: "Espionage Blunder"
+ first_contact.1140.desc: "The §H[This.ContactCountry.GetName]§!'s event lasted much longer than expected.\n\nWhen [This.Owner.GetEnvoy] [This.Leader.GetName]'s shuttle returned, they reported that the operation failed.\n\nDuring the event, the hosts found an espionage device. [This.Owner.GetEnvoyCap] [This.Leader.GetName] was interrogated, scolded and then asked to leave. Using the data from the back-up spy tech, we now understand their language and technology, although our diplomatic future will start on rocky ground."
+ first_contact.1140.A: "Unfortunate."
+ first_contact.1145.name: "Scan Complete"
+ first_contact.1145.desc: "The §H[This.ContactCountry.GetName]§!'s event lasted much longer than expected.\n\nWhen [This.Owner.GetEnvoy] [This.Leader.GetName]'s shuttle returned, they reported that the operation was a success. Not only did they successfully decipher most of the alien language, but our scan has given us a clear picture of their technological capabilities.\n\nThis will greatly enhance further relations with the §H[This.ContactCountry.GetName]§!, without them being aware of our understanding of their scientific knowledge."
+ first_contact.1150.name: "Life Of The Party"
+ first_contact.1150.desc: "Entering the multi-day event with an open mind, [This.Owner.GetEnvoy] [This.Leader.GetName] joined in musical, theater, and dance performances and explored various culinary traditions. Their receptiveness to experience was met enthusiastically by the §H[This.ContactCountry.GetName]§!.\n\n[This.Owner.GetEnvoyCap] [This.Leader.GetName] has left with an intimate understanding of their language and a deep appreciation of their culture. Their experience will pave the way to more positive diplomatic interactions with the §H[This.ContactCountry.GetName]§!."
+ first_contact.1150.a: "A kind invitation from new friends."
+ first_contact.1155.name: "Threw In The Towel"
+ first_contact.1155.desc: "[This.Owner.GetEnvoyCap] [This.Leader.GetName] spent the multi-day event reservedly observing artistic shows and sampling the culinary traditions. The lack of enthusiasm frustrated the §H[This.ContactCountry.GetName]§!. According to our understanding of their language, our envoy was considered boring.\n\nEscorted back to their shuttle and signaled to leave, our envoy has left with competence in their language and a surface understanding of their culture, something we can build upon for future diplomatic interactions."
+ first_contact.1155.a: "The envoy tried."
+ first_contact.1160.name: "Hungry For Connection"
+ first_contact.1160.desc: "The §H[This.ContactCountry.GetName]§!'s disappointment in the difference between our nutritional needs couldn't have been more apparent over the multi-day event. Thankfully [This.Owner.GetEnvoy] [This.Leader.GetName] did their best to take an active part in the entertainment events, and mutual respect was established.\n\n[This.Owner.GetEnvoyCap] [This.Leader.GetName] has left with a decent understanding of the §H[This.ContactCountry.GetName]§!'s language and culture. To their credit, they seemed to take this culinary mishap in stride, and have provided us with a number of etiquette manuals. While tedious, this knowledge should help smooth future diplomatic interactions."
+ first_contact.1160.a: "Understanding is the cornerstone of diplomacy."
+ first_contact.1165.name: "No Means No"
+ first_contact.1165.desc: "The second rejection by the §H[This.ContactCountry.GetName]§! to invite us to their ship was met with a strong emotional response. We received communication from multiple alien crew members for several hours, in what our [This.Owner.GetLinguists] believe was an attempt to guilt us for not attending.\n\nThese communications, along with intercepted signals from their ship, have allowed us to decipher enough of their language to have a working understanding. We can now initiate more appropriate diplomatic connections, although they have taken this initial incident negatively."
+ first_contact.1165.a: "These aliens are persistent."

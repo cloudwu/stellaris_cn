@@ -19,6 +19,10 @@
  diplo_stance_supremacist_name:0 "$diplo_stance_supremacist$"
  diplo_stance_supremacist_desc:0 "This empire demands that all will bow before them.\n\n§RThis Diplomatic Stance will harm relations with all other Empires in the §Y$diplo_stance_supremacist$§! Diplomatic Stance.§!\n\n§E$easy_rivalry$\n$influence_cost_for_improving_relations_effect$§!"
  triggered_opinion_diplo_stance_supremacy:0 "Both $diplo_stance_supremacist$"
+ diplo_stance_animosity: "Antagonistic"
+ diplo_stance_animosity_name: "$diplo_stance_animosity$"
+ diplo_stance_animosity_desc: "This empire wants to compete against all possible rivals.\n\n§RThis Diplomatic Stance will increase the Negative Opinion impact of being §YRivals§! by 100.§!\n\n§ERestrictions on the §YRival§! action against empires more powerful than us are removed.\n\n$easy_rivalry$§!\n"
+
  diplo_stance_mercantile:0 "Mercantile"
  diplo_stance_mercantile_name:0 "$diplo_stance_mercantile$"
  diplo_stance_mercantile_desc:0 "This empire desires the facilitation of trade above all else.\n\n§E$influence_cost_for_close_borders$§! "
@@ -66,3 +70,4 @@
  policy_diplomatic_stance_desc:0 "We can set our general diplomatic agenda, changing how we interact with the rest of the galaxy.\n"
 
  requires_supremacy_traditions:0 "$TRIGGER_FAIL$Requires §Y$tr_supremacy_finish$§!"
+ requires_enmity_traditions: "$TRIGGER_FAIL$Requires §Y$tr_enmity_finish$§!"

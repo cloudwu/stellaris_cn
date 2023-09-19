@@ -20,7 +20,7 @@
  TUTORIAL_MILITARY_FLEET_TITLE:0 "Military Fleets"
  TUTORIAL_MILITARY_FLEET_DESC:2 "§SMilitary Fleets§! are used to protect our emerging empire from threats... or to expand our glorious rule through force of arms, if we so wish.\n\nOur current §SNaval Capacity§! is limited, but it can be increased by researching new technologies, owning additional §SPops§! and building §SStarbase Anchorages§!.\n\nWe can assign one of our §SAdmirals§! to command a Fleet, granting extra military power along with any other bonuses the leader provides."
  TUTORIAL_SCIENCE_SHIP_TITLE:0 "Science Ships"
- TUTORIAL_SCIENCE_SHIP_DESC:3 "This is our §SScience Ship§!, which is used to §SSurvey§! astronomical objects such as planets in a star system. A planet needs to be surveyed in order to make its §SResources§! visible.\n\nOur home system has already been surveyed, so we should focus our efforts elsewhere. With the Science Ship selected, open the §SGalaxy Map§!, right click on a star neighboring our home system and select §SSurvey System§!. The ship will now travel to this system and survey all of its planetary bodies."
+ TUTORIAL_SCIENCE_SHIP_DESC:4 "This is our §SScience Ship§!, which is used to §SSurvey§! astronomical objects such as planets in a star system. A planet needs to be surveyed in order to make its §SResources§! visible.\n\nOur home system has already been surveyed, so we should focus our efforts elsewhere. With the Science Ship selected, right click on a star neighboring our home system and select §SSurvey System§! while viewing the §SGalaxy Map§!. The ship will now travel to this system and survey all of its planetary bodies."
  TUTORIAL_CONSTRUCTION_SHIP_TITLE:0 "Construction Ships"
  TUTORIAL_CONSTRUCTION_SHIP_DESC:1 "This is our §SConstruction Ship§!, which is used to construct space stations. When an astronomical object such as a planet has been surveyed, we can order this ship to build a §SResearch Station§! or a §SMining Station§! to exploit any resources it may have.\n\nThese ships are also used to build §SStarbases§! in unclaimed systems, making them critical to our expansion plans."
  TUTORIAL_PLANETVIEW_PLANET_TITLE:0 "Planet Summary"
@@ -282,12 +282,16 @@
  #############################
  # Tutorial Events
  #############################
- tutorial.1.name:0 "Tutorial: Surveying"
- tutorial.1.desc:2 "Building a star empire can be a daunting task. To help get things started, I will be providing instructional missions that cover the basic steps necessary to establish ourselves as a successful interstellar power.\n\nThe first mission is to fully survey a neighboring star system. I have added it as an entry to the §SSituation Log§!. To access it, click on the Situation Log button in the left section of the top bar or press §SF2§!."
+ tutorial.1.name:1 "Tutorial: Surveying and Galaxy Map"
+ tutorial.1.desc:2 "Building a star empire can be a daunting task. To help get things started, I will be providing instructional missions that cover the basic steps necessary to establish ourselves as a successful interstellar power.\n\nThe first mission is to switch to the §SGalaxy Map§!. I have added it as an entry to the §SSituation Log§!. To access it, click on the Situation Log button in the left section of the top bar or press §SF1§!."
  tutorial.2.name:1 "System Surveyed"
  tutorial.2.desc:1 "Well done! The first survey of a star system beyond our own has been completed. We now have access to planetary data that the astronomers on our homeworld could only dream of a mere generation ago."
  tutorial.3.name:0 "Tutorial: Technologies"
  tutorial.3.desc:2 "Researching new technologies will be critical to our success. I tell you this not merely as a product of unfettered technological progress, but as your trusted advisor and, I suspect, your only true friend.\n\nOne important technology that we should research as soon as possible is §SNew Worlds Protocol§!. It will give us access to §SColony Ships§! which will allow us to establish footholds on other planets."
+ tutorial.4.name: "Selecting a Science Ship"
+ tutorial.4.desc: "Before we can expand we must explore, and our §SScience Ships§! are the vessel of choice for such a task. You can identify a Science Ship by the following symbol:\n$tttt$$ttt$£science_ship_map£\n\nYou can select a Ship either from the §SGalaxy Map§! or the §SOutliner§!. I have updated the §SSituation Log§! with more detailed instructions. It's now time to survey a neighboring star system."
+ tutorial.5.name: "Unpausing"
+ tutorial.5.desc: "Now that we have given a command to our §SScience Ships§! it's time to set off. We will need to unpause the §SGalaxy Map§! simulation before anything can happen.\n\nTo unpause, either press the §SSpace Bar§! or this icon above:\n\n$tttt$$t$£pause_button£\n\nHere you can also change the speed at which galactic events are presented."
  tutorial.6.name:0 "Technologies Researched"
  tutorial.6.desc:1 "Excellent work! The technology we just finished researching will certainly benefit us. Don't forget to give our scientists new research assignments."
  tutorial.7.name:0 "Tutorial: Construction Ship"
@@ -472,8 +476,16 @@
  #############################
  # Tutorial Event Chains
  #############################
+ tutorial_survey_system_chain_title: "Tutorial: Galaxy Map Toggle"
+ tutorial_survey_system_chain_desc: "Before we can explore the stars we need to broaden our view. Thankfully, we have a sophisticated §SGalaxy Map§! at our disposal. To access the Galaxy Map, you can either press §SM§! or the Galaxy Button at the bottom of your screen. Afterwards feel free to close the Situation Log by either pressing §SEsc§! or the button in the top right."
+ map_toggled: "Galaxy Map Toggled"
+ tutorial_survey_system_tooltip: "§STutorial: Galaxy Map Toggle§! added to Situation Log"
  tutorial_1_chain_title:1 "Tutorial: Survey System"
- tutorial_1_chain_desc:3 "We need to explore our neighboring star systems. To do this, select our §SScience Ship§! - either by clicking on the ship itself, or by selecting the vessel in the §SOutliner§!.\n\nThen click on the §SSurvey§! button in the fleet interface, open the §SGalaxy Map§! and select a non-surveyed system with a hyperlane connection to our home system. Our Science Ship will now plot a course to survey all planetary bodies within this system."
+ tutorial_1_chain_desc:4 "We need to explore our neighboring star systems. To do this, select our §SScience Ship§! - either by clicking on the ship itself, or by selecting the vessel in the §SOutliner§!.\n\nThen click on the §SSurvey§! button in the fleet interface while looking at the §SGalaxy Map§! and select a non-surveyed system with a hyperlane connection to our home system. Our Science Ship will now plot a course to survey all planetary bodies within this system."
+ tutorial_unpause_chain_tooltip: "§STutorial: Unpause§! added to Situation Log"
+ tutorial_unpause_chain_title: "Tutorial: Unpause"
+ tutorial_unpause_chain_desc: "With a Science Ship standing by to explore the galaxy, all that is left is to unpause. To do this, simply press the §SSpace Bar§! £space£ or the pause button in the top right."
+ unpaused_game: "Simulation Unpaused"
  system_surveyed:1 "Neighboring Systems Surveyed"
  tutorial_1_tooltip:1 "§STutorial: Survey System§! added to Situation Log"
  tutorial_2_chain_title:1 "Tutorial: Technology Research"

@@ -8,7 +8,9 @@
  clone_soldier:0 "Clone Soldier"
  origin_clone_army:0 "Clone Army"
  origin_clone_army_desc:0 "A species of short-lived and infertile soldier clones exceptionally proficient in matters of war, left masterless and alone to question their engineered purpose and uncertain fate."
- origin_tooltip_clone_army_effects:1 "- Start with 2 £building£ §H$building_clone_army_clone_vat$§! Buildings on your homeworld, producing £pops£ §H$clone_soldier$§! Pops.\n- §HAncient Clone Vats§! have an §HEmpire Limit§! of 5.\n- Clone Army §HAdmirals§! will grant an additional §G25%§! §H$MOD_SHIP_FIRE_RATE_MULT$§! and §G10%§! reduced §HShip Upkeep§!."
+ origin_tooltip_clone_army_effects:2 "- $HOMEWORLD$ ['concept_clone_army_clone_vat']: +2 $NEW_LINE$- $SPECIES_TRAITS$ ['concept_clone_soldier_infertile']$NEW_LINE$- $ADDITONAL_TECHNOLOGIES_STRING$ $TABBED_NEW_LINE$- ['concept_cloning', £society_research£ $tech_cloning$] $TABBED_NEW_LINE$- ['concept_gene_banks', £society_research£ $tech_gene_banks$]"
+
+
  trait_clone_soldier_infertile:0 "$clone_soldier$"
  trait_clone_soldier_infertile_desc:0 "§LEngineered for compliance and war: short-lived, unable to reproduce naturally, and very efficient.§!"
  trait_clone_soldier_fertile:0 "Clone Soldier Descendant"
@@ -29,7 +31,7 @@
 
  building_clone_army_clone_vat:0 "Ancient Clone Vat"
  building_clone_army_clone_vat_desc:0 "Lost technology left behind by the Creators. Can be taken apart and reassembled, but its inner components and workings are much too advanced to replicate."
- building_clone_army_clone_vat_effect_desc:0 "Produces and sustains §Y20§! £pops£ §Y$clone_soldier$§! Pops. The effectiveness of this growth is reduced as the $building_clone_army_clone_vat$ reaches capacity."
+ building_clone_army_clone_vat_effect_desc:1 "Assembles and sustains up to §Y20§! £pops£ §Y$clone_soldier$§! Pops. The effectiveness of this assembly is reduced as the $building_clone_army_clone_vat$ reaches capacity."
 
  START_SCREEN_CLONE_ARMY:0 "We were made for war! Engineered soldiers who live and die by the Ancient Clone Vats left behind by our Creators, forever cast in their mold. Any memory of our masters is lost to past generations, and we do not know when or why they left us. It is likely that records were routinely erased, ever faithful to military protocol - but at some point in recent centuries, that changed. By chance, or perhaps some misfiring survival instinct, our subconscious drove us to seek answers, to seek new purpose and ways to break the form imposed on us.\n\nOur efforts since then have been ceaseless, at long last granting us access to the grand expanses of space. As our horizon widens, so too must our knowledge broaden - and so our chances of breaking free increase.\n\nWe shall not squander the possibilities given to us by our forebears. We shall fight to pass on these possibilities to future clones, and fight to eliminate the restrictions placed on us.\n"
 

@@ -4,6 +4,8 @@
  # Modifiers
  ####################################
 
+ MODIFIER_BULLET_POINT: "- " #used in some interfaces e.g. civics tooltip to make lists more readable
+
  #Federation
  MOD_FEDERATION_EXPERIENCE_ADD:0 "Monthly Experience"
  MOD_FEDERATION_COHESION_ADD:0 "Monthly Cohesion"
@@ -56,6 +58,9 @@
  MOD_COUNTRY_SECTOR_CAP_ADD:0 "Sector Limit"
  mod_country_base_energy_produces_mult:0 "Empire Energy Generation"
  mod_country_base_minerals_produces_mult:0 "Empire Minerals Production"
+ mod_country_base_consumer_goods_produces_add: "Empire Consumer Goods Production"
+ mod_country_base_alloys_produces_add: "Empire Alloys Production"
+ mod_country_base_nanites_produces_add: "Empire Nanites Production"
  MOD_ASSIST_RESEARCH_MULT:1 "Assist Research Efficiency"
  MOD_COUNTRY_NUM_TECH_ALTERNATIVES_ADD:0 "Research Alternatives"
  MOD_COUNTRY_PREVIOUS_DEALS:0 "Previous Deals"
@@ -91,6 +96,9 @@
  MOD_DIPLO_WEIGHT_POPS_MULT:0 "Diplomatic Weight From Pops"
  MOD_DIPLO_WEIGHT_ENVOYS_MULT:0 "Diplomatic Weight From Envoys"
  MOD_DIPLO_WEIGHT_COUNCIL_MULT:0 "Diplomatic Weight From Council"
+ MOD_DIPLO_WEIGHT_OPPOSING_MULT: "Diplomatic Weight When Opposing Resolutions"
+ MOD_DIPLO_WEIGHT_SUPPORTING_MULT: "Diplomatic Weight When Supporting Resolutions"
+ MOD_DIPLO_WEIGHT_RIVALS_MULT:  "Diplomatic Weight Per Rival"
  MOD_DIPLO_WEIGHT_MULT:0 "Diplomatic Weight"
  MOD_DISTANCE_TO_CAPITAL_STATIC_MODIFIER_EFFICIENCY_MULT:0 "Penalties due to Distance from Capital"
  MOD_COUNTRY_ASCENSION_PERKS_ADD:1 "Ascension Perks Unlocked"
@@ -164,10 +172,17 @@
  MOD_POP_ROBOT_BUILD_SPEED_MULT:0 "Robot Build Speed"
  MOD_POP_ROBOT_BUILD_SPEED_MULT_DESC:0 "Affects the speed at which robotic Pops are built."
  MOD_POP_ROBOT_BUILD_COST_MULT:0 "Robot Build Cost"
+ mod_planet_pops_robotics_alloys_upkeep_add: "Robot Alloy Upkeep"
 
  mod_pop_job_trade_mult:0 "£trade_value£ Trade Value from £job£ Jobs"
  mod_pop_lifestyle_trade_mult:0 "£trade_value£ Trade Value from Living Standards"
  mod_pop_job_amenities_mult:0 "£amenities£ Amenities from £job£ Jobs"
+
+ mod_living_standard_trade_value_rulers_add: "£trade_value£ Trade Value from $RULERS$"
+ mod_living_standard_trade_value_specialists_add: "£trade_value£ Trade Value from $SPECIALISTS$"
+ mod_living_standard_trade_value_workers_add: "£trade_value£ Trade Value from $WORKERS$"
+ mod_living_standard_trade_value_slaves_add: "£trade_value£ Trade Value from $SLAVES$"
+ mod_living_standard_trade_value_criminals_add: "£trade_value£ Trade Value from $CRIMINALS$"
 
  mod_job_soldier_stability_add:1 "Stability from £job_soldier£ [GetSoldier] [GetSoldierPlural] Jobs"
 
@@ -458,6 +473,8 @@
  mod_planet_building_foundry_1_build_speed_mult:0 "Foundry Build Speed"
  mod_planet_building_factory_1_build_speed_mult:0 "Factory Build Speed"
  mod_planet_building_research_lab_1_build_speed_mult:0 "Research Lab Build Speed"
+ mod_planet_building_research_lab_2_build_speed_mult: "Research Complex Build Speed"
+ mod_planet_building_research_lab_3_build_speed_mult: "Advanced Research Complexes Build Speed"
  mod_planet_building_refinery_build_speed_mult:0 "Refinery Build Speed"
  mod_planet_building_chemical_plant_build_speed_mult:0 "Chemical Plant Build Speed"
  mod_planet_building_crystal_plant_build_speed_mult:0 "Crystal Plant Build Speed"
@@ -619,6 +636,7 @@
  mod_planet_resource_influence_add:0 "Planet Influence Output"
  mod_country_base_influence_produces_mult:0 "Empire Influence Gain"
  mod_rivalries_influence_produces_mult:0 "Rivalries Influence Gain"
+ mod_rivalries_unity_produces_add: "£unity£ $unity$ from Rivalries"
  mod_country_resource_physics_research_mult:0 "Physics Research"
  mod_country_resource_society_research_mult:0 "Society Research"
  mod_country_resource_engineering_research_mult:0 "Engineering Research"
@@ -723,6 +741,8 @@
  mod_ship_science_cost_mult:0 "Science Ship Build Cost"
  mod_ship_constructor_cost_mult:0 "Constructor Build Cost"
  mod_ship_colonizer_cost_mult:0 "Colony Ship Build Cost"
+ mod_ship_colonizer_food_cost_add: "Colony Ship £food£ Food Build Cost"
+ mod_ship_colonizer_alloys_cost_mult: "Colony Ship £alloys£ Alloys Build Cost"
  mod_ship_military_station_medium_cost_mult:0 "Defense Station Build Cost"
  mod_ship_military_station_large_cost_mult:0 "Fortress Build Cost"
  mod_ship_terraform_station_cost_mult:0 "Terraforming Station Build Cost"
@@ -799,11 +819,12 @@
  mod_weapon_archaeotech_weapon_fire_rate_mult:1 "Archaeotech Weapon Fire Rate"
 
  mod_shroud_delve_cooldown:0 "Shroud Delve Cooldown"
+ mod_shroud_delve_cost: "Shroud Delve Cost"
 
  s_slot:0 "Small Component Slot"
  m_slot:0 "Medium Component Slot"
  l_slot:0 "Large Component Slot"
- x_slot:0 "Very Large Component Slot"
+ x_slot:1 "Extra Large Component Slot"
  t_slot:0 "Titan Component Slot"
  g_slot:0 "Torpedo Component Slot"
 
@@ -813,8 +834,8 @@
  mod_m_slot_weapon_fire_rate_mult:1 "Medium Slot Weapon Fire Rate"
  mod_l_slot_weapon_damage_mult:0 "Large Slot Weapon Damage"
  mod_l_slot_weapon_fire_rate_mult:1 "Large Slot Weapon Fire Rate"
- mod_x_slot_weapon_damage_mult:0 "Very Large Slot Weapon Damage"
- mod_x_slot_weapon_fire_rate_mult:1 "Very Large Slot Weapon Fire Rate"
+ mod_x_slot_weapon_damage_mult:1 "Extra Large Slot Weapon Damage"
+ mod_x_slot_weapon_fire_rate_mult:2 "Extra Large Slot Weapon Fire Rate"
  mod_t_slot_weapon_damage_mult:0 "Titan Slot Weapon Damage"
  mod_t_slot_weapon_fire_rate_mult:1 "Titan Slot Weapon Fire Rate"
  mod_g_slot_weapon_damage_mult:0 "Torpedo Slot Weapon Damage"
@@ -923,10 +944,10 @@
 
  assist_research:0 "Research Assistance"
  assist_research_desc:1 "Planetside research facilities are assisted by a Science Ship in orbit."
- 
+
  assist_cloaking_detection:0 "Cloaking Detection Assistance"
  assist_cloaking_detection_desc:0 "Starbase Cloaking Detection arrays are assisted by a Science Ship in orbit."
- 
+
  active_reconnaissance_speed:0 "Active Reconnaissance"
  active_reconnaissance_speed_desc:0 "Gaining intel faster due to having a cloaked Science Ship performing Active Reconnaissance."
  active_reconnaissance_level:0 "Active Reconnaissance"
@@ -1429,7 +1450,7 @@
  low_gravity:0 "Low Gravity"
  low_gravity_desc:0 "This planet has an unusually low density and therefore much lower gravity than most planets of comparable size."
  high_gravity:0 "High Gravity"
- high_gravity_desc:0 "This planet is unusually dense and so has uncomfortably high gravity."
+ high_gravity_desc:1 "This planet is unusually dense and so has uncomfortably high gravity."
  hollow_planet:0 "Hollow Planet"
  hollow_planet_desc:0 "This planet has either been artificially created or was somehow hollowed out. How or why we do not know, but investigating it promises to be fascinating."
  mineral_rich:1 "High Quality Minerals"

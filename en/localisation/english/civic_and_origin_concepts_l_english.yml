@@ -1,0 +1,535 @@
+﻿l_english:
+
+ # Shorthand with §I highlighting
+ i_energy: "£energy£ §I$energy$§!"
+ i_minerals: "£minerals£ §I$minerals$§!"
+ i_food: "£food£ §I$food$§!"
+ i_alloys: "£alloys£ §I$alloys$§!"
+ i_consumer_goods: "£consumer_goods£ §I$consumer_goods$§!"
+ i_unity: "£unity£ §I$unity$§!"
+ i_influence: "£influence£ §I$influence$§!"
+ i_research: "£physics£ £society£ £engineering£ §IResearch Points§!"
+ i_physics: "£physics£ §I$physics_research$§!"
+ i_society: "£society£ §I$society_research$§!"
+ i_engineering: "£engineering£ §I$engineering_research$§!"
+ i_amenities: "£amenities£ §IAmenities§!"
+ i_trade_value: "£trade_value£ §ITrade Value§!"
+ i_loyalty: "£loyalty£ §IMonthly Loyalty§!"
+ i_rare_crystals: "£rare_crystals£ §I$rare_crystals$§!"
+ i_volatile_motes: "£volatile_motes£ §I$volatile_motes$§!"
+ i_exotic_gases: "£exotic_gases£ §I$exotic_gases$§!"
+ i_living_metal: "£sr_living_metal£ §I$sr_living_metal$§!"
+ i_dark_matter: "£sr_dark_matter£ §I$sr_dark_matter$§!"
+ i_zro: "£sr_zro£ §I$sr_zro$§!"
+ i_nanites: "£nanites£ §I$nanites$§!"
+ i_minor_artifacts: "£minor_artifacts£ §IMinor Artifacts§!"
+ i_strategic: "£rare_crystals£ £exotic_gases£ £volatile_motes£ §IStrategic Resource§!"
+ i_strategic_plural: "£rare_crystals£ £exotic_gases£ £volatile_motes£ §IStrategic Resources§!"
+ i_stability: "£mod_planet_stability_add£ §I$PLANET_STABILITY_TITLE$§!"
+ i_naval_capacity: "£mod_country_naval_cap_add£ §INaval Capacity§!"
+ i_defense_armies: "£defense_army£ §IDefense Armies§!"
+ i_unlocks_building: "§IUnlocks Building:§!"
+ i_unlocks_feature: "§IUnlocks Feature:§!"
+ i_unlocks_orbital: "§IUnlocks Orbital:§!"
+
+ ### Civic and Origin Concepts
+
+# Prosperous Unification
+ concept_planetary_unification: "$tech_planetary_unification$"
+ concept_planetary_unification_desc: "- Upon Research Completed: Grants 12 Months of ['concept_unity', £unity£ Unity] Production\n- Monthly Unity: §G+5%§!.\n- $i_unlocks_feature$ Additional ['concept_edicts'] (Campaigns).\n\n§L$tech_planetary_unification_desc$§!"
+
+ concept_prosp_uni: "$prosp_uni_mod$"
+ concept_prosp_uni_desc: "- $MOD_POP_HAPPINESS$: §G+15%§!\n- $MOD_PLANET_AMENITIES_MULT$: §G+25%§!\n- $mod_planet_jobs_produces_mult$: §G+10%§!\n- Will expire in §I20§! Years.\n\n§L$prosp_uni_mod_desc$§!"
+
+ concept_generator_district: "$district_generator$"
+ concept_generator_district_desc: "- £housing£ $MOD_PLANET_HOUSING_ADD$: §G+2§!\n- £mod_job_technician_add£ ['concept_technician', $job_technician$] Jobs: §G+2§!\n\n§L$district_generator_desc$§!"
+ concept_farming_district: "$district_farming$"
+ concept_farming_district_desc: "- £housing£ $MOD_PLANET_HOUSING_ADD$: §G+2§!\n- £mod_job_farmer_add£ ['concept_farmer', $job_farmer$] Jobs: §G+2§!\n\n§L$district_farming_desc$§!"
+ concept_mining_district: "$district_mining$"
+ concept_mining_district_desc: "- £housing£ $MOD_PLANET_HOUSING_ADD$: §G+2§!\n- £mod_job_miner_add£ ['concept_miner', $job_miner$] Jobs: §G+2§!\n\n§L$district_mining_desc$§!"
+
+# Mechanist
+ concept_robots: "$feature_robots$"
+ concept_robots_desc: "$feature_robots_desc$"
+
+ concept_robot_assembly_plant: "$building_robot_assembly_plant$"
+ concept_robot_assembly_plant_desc: "- £job_roboticist£ ['concept_roboticist', $job_roboticist$] Jobs: §G+1§!\n\n§L$building_robot_assembly_plant_desc$§!"
+
+ concept_powered_exoskeletons: "$tech_powered_exoskeletons$"
+ concept_powered_exoskeletons_desc: "- $MOD_ARMY_DAMAGE_MULT$: §G+5%§!\n- Worker Pop Resource Output: §G+5%§!\n\n§L$tech_powered_exoskeletons_desc$§!"
+
+ concept_robotic_workers: "$tech_robotic_workers$"
+ concept_robotic_workers_desc: "- $i_unlocks_building$ $building_robot_assembly_plant$\n- $i_unlocks_feature$ $feature_robots$\n\n§L$tech_robotic_workers_desc$§!"
+
+ concept_robomodding: "$tech_robomodding$"
+ concept_robomodding_desc: "- $mod_ROBOT_species_trait_points_add$: §G+2§!\n- $i_unlocks_feature$ $feature_modify_robots$\n\n§L$tech_robomodding_desc$§!"
+
+# Syncretic Evolution
+ concept_syncretic_proles: "$trait_syncretic_proles$"
+ concept_syncretic_proles_desc: "- $MOD_POP_HAPPINESS$: §G+10%§!\n- $mod_planet_jobs_produces_mult$: §G+10%§!\n- Cannot generate §YLeaders§!\n- Cannot be employed in §Y$pop_cat_ruler$§! or §Y$pop_cat_specialist$§! Jobs\n\n§L$trait_syncretic_proles_desc$§!"
+
+# Life-Seeded
+ concept_pc_gaia: "$pc_gaia$"
+ concept_pc_gaia_desc: "- Base Habitability: §Y100%§!\n- $mod_planet_jobs_produces_mult$: §G+10%§!\n- $MOD_BIOLOGICAL_POP_HAPPINESS$: §G+10%§!\n- $MOD_LITHOID_POP_HAPPINESS$: §G+10%§!\n- $MOD_PLANET_RESETTLEMENT_UNEMPLOYED_DESTINATION_MULT$: §G+50%§!\n\n§L$pc_gaia_desc$§!"
+
+ concept_gaia_preference: "$trait_pc_gaia_preference$"
+ concept_gaia_preference_desc: "- Gaia World Habitability: §G+100%§!\n\n§L$trait_pc_gaia_preference_desc$§!"
+
+# Post-Apocalyptic
+ concept_pc_nuked: "$pc_nuked$"
+ concept_pc_nuked_desc: "- Base Habitability: §Y0%§!\n\n§L$pc_nuked_desc$§!"
+
+ concept_survivor: "$trait_survivor$"
+ concept_survivor_desc: "- Tomb World Habitability: §G+70%§!\n- Leader Lifespan: §G+10§! Years\n\n§L$trait_survivor_desc$§!"
+
+# Remnants
+ concept_pc_relic: "$pc_relic$"
+ concept_pc_relic_desc: "- Base Habitability: §Y80%§!\n- Can be restored by a §IPlanetary Decision§!, unlocking special £district£ §IArcology Districts§!\n\n§L$pc_relic_desc$§!"
+
+ concept_ruined_arcology: "$d_ruined_arcology$"
+ concept_ruined_arcology_desc: "- Time to Clear:\n$tt$- £time£ 360 §IDays§!\n- Cost to Clear:\n$tt$- 750 $i_energy$\n$tt$- 250 $i_minerals$\n- $MOD_PLANET_MAX_DISTRICTS_ADD$: §R-1§!\n- On Clearing:\n$tt$- 33% Chance of 10 $i_minor_artifacts$\n$tt$- 33% Chance of 30 $i_minor_artifacts$\n$tt$- 33% Chance of 50 $i_minor_artifacts$\n\n§L$d_ruined_arcology_desc$§!"
+
+ concept_archaeostudies: "$tech_archaeostudies$"
+ concept_archaeostudies_desc: "- $i_unlocks_building$ $building_archaeostudies_faculty$\n\n§L$tech_archaeostudies_desc$§!"
+
+ concept_archaeostudies_faculty: "$building_archaeostudies_faculty$"
+ concept_archaeostudies_faculty_desc: "- $mod_category_archaeostudies_research_speed_mult$: §G+100%§!\n- $mod_country_resource_max_minor_artifacts_add$: §G+1000§!\n- £job_archaeoengineers£ ['concept_archaeoengineers', $job_archaeoengineers$] Jobs: §G+3§!\n\n$building_archaeostudies_faculty_relic_effect$\n\n§L$building_archaeostudies_faculty_desc$§!"
+
+# Shattered Ring
+
+ concept_pc_shattered_ring: "$pc_shattered_ring_habitable$"
+ concept_pc_shattered_ring_desc: "- Base Habitability: §Y100%§!\n- Can be restored by a §IPlanetary Decision§!, unlocking special £district£ §ISegment Districts§!\n\n§L$pc_shattered_ring_habitable_desc$§!"
+
+ concept_ring_preference: "$trait_pc_ringworld_habitable_preference$"
+ concept_ring_preference_desc: "- Ring World Habitability: §G+100%§!\n\n§L$trait_pc_ringworld_habitable_preference_desc$§!"
+
+# Void Dwellers
+
+ concept_pc_habitat: "$pc_habitat$"
+ concept_pc_habitat_desc: "- $MOD_PLANET_COLONY_DEVELOPMENT_SPEED_MULT$: §G+200%§!\n- Base Habitability: §Y40%§!\n\n§L$pc_habitat_desc$§!"
+
+ concept_void_dweller: "$trait_void_dweller_1$"
+ concept_void_dweller_desc: "- $mod_habitat_jobs_produces_mult$: §G+15%§!\n- $mod_non_artificial_planet_jobs_produces_mult$: §R-15%§!\n- $void_dweller_trait_tooltip$\n\n§L$trait_void_dweller_1_desc$§!"
+
+ concept_habitat_preference: "$trait_pc_habitat_preference$"
+ concept_habitat_preference_desc: "- $mod_pc_habitat_habitability$: §G+80%§!\n\n$trait_pc_habitat_preference_desc$"
+
+ concept_habitat_1: "$tech_habitat_1$"
+ concept_habitat_1_desc: "- §IUnlocks Megastructure:§! $habitat_central_complex$\n- $i_unlocks_orbital$ $major_orbital_plural$\n- $i_unlocks_orbital$ $minor_orbital_plural$\n\n§L$tech_habitat_1_desc$§!"
+
+ concept_habitat_2: "$tech_habitat_2$"
+ concept_habitat_2_desc: "§IUnlocks Planetary Decision§!: $decision_upgrade_habitat$\n\n§L$tech_habitat_2_desc$§!"
+
+# Scion
+
+ concept_scion: "$preset_scion$"
+ concept_scion_desc: "$preset_scion_desc$"
+
+# Tree of Life
+
+ concept_tree_of_life: "$d_tree_of_life_home$"
+ concept_tree_of_life_desc: "- $MOD_POP_GROWTH_SPEED$: §G+15%§!\n- $mod_planet_jobs_society_research_produces_mult$: §G+10%§!\n- $MOD_PLANET_HOUSING_ADD$: §G+10§!\n- $mod_district_farming_max$: §G+4§!\n- Upkeep: 4 $i_food$\n\n§L$d_tree_of_life_home_desc$§!"
+
+ concept_tree_of_life_sapling: "$d_tree_of_life_colony$"
+ concept_tree_of_life_sapling_desc: "- $MOD_POP_GROWTH_SPEED$: §G+10%§!\n- $mod_planet_jobs_society_research_produces_mult$: §G+10%§!\n- $MOD_PLANET_HOUSING_ADD$: §G+5§!\n- $mod_district_farming_max$: §G+2§!\n- Upkeep: 2 $i_food$\n\n§L$d_tree_of_life_colony_desc$§!"
+
+ concept_tree_of_life_holding: "$holding_tree_of_life_sapling$"
+ concept_tree_of_life_holding_desc: "- $MOD_MONTHLY_LOYALTY_GAIN$: §G+1§!\n- $MOD_POP_ENVIRONMENT_TOLERANCE$: §G+10%§!\n- £food£ Food from £job_farmer£ ['concept_farmer']: §G+1§!\n- £mod_job_ranger_add£ ['concept_overlord_arborist', $job_overlord_arborist$] Jobs: §G+1§!\n\n§L$holding_tree_of_life_sapling_desc$§!"
+
+ concept_transplant_tree_of_life: "$decision_transplant_tree$"
+ concept_transplant_tree_of_life_desc: "- Adds a §I$d_tree_of_life_colony$§! Planetary Feature to this colony.\n\n§L$decision_transplant_tree_desc$§!"
+
+ concept_no_lifetree: "$no_lifetree$"
+ concept_no_lifetree_desc: "$NEW_LINE$- Planetary Build Speed: §R-50%§!$NEW_LINE$- Resources from Jobs: §R-25%§!$NEW_LINE$- Upkeep from Jobs: §R+10%§!$NEW_LINE$- Stability: §R-5%§!\n\n§L$no_lifetree_desc$§!"
+
+# On the Shoulders of Giants
+
+ concept_ex_gravitas: "$site_ex_gravitas$"
+ concept_ex_gravitas_desc: "§LA string of anomalous readings has been detected in our home system. We need to launch a surface excursion to find out more.§!"
+
+# Calamitous Birth
+
+ concept_lithoid_traits: "Lithoid Traits"
+ concept_lithoid_traits_desc: "Lithoid Traits include §I$trait_lithoid_gaseous_byproducts$§!, §I$trait_lithoid_scintillating$§!, §I$trait_lithoid_volatile_excretions$§!, and §I$trait_lithoid_budding$§!."
+
+ concept_lithoid_origin: "$origin_lithoid$"
+ concept_lithoid_origin_desc: "§L$origin_lithoid_desc$§!"
+
+ concept_terravore: "$civic_hive_devouring_swarm_lithoid$"
+ concept_terravore_desc: "§L$civic_hive_devouring_swarm_lithoid_desc$§!"
+
+ concept_consume_world: "$decision_lithoid_swarm_consume_world$"
+ concept_consume_world_desc: "§L$decision_lithoid_swarm_consume_world_desc$§!"
+
+
+ concept_massive_crater: "$d_lithoid_crater$"
+ concept_massive_crater_desc: "- Effects of ['concept_lithoid_traits']: §G+50%§!\n- $MOD_PLANET_MAX_DISTRICTS_ADD$: §G+6§!\n- $mod_district_mining_max$: §G+6§!\n- $mod_district_farming_max$: §R-6§!\n- Habitability for non-Lithoid Pops: §R-50%§!\n- $MOD_POP_GROWTH_SPEED$: §G+25%§!\n\n§L$d_lithoid_crater_desc$§!"
+
+ concept_buried_lithoids: "$d_buried_lithoids$"
+ concept_buried_lithoids_desc: "- Time to Clear: £time£ 360 §IDays§!\n- Cost to Clear: 1000 $i_minerals$\n- On Clearing: §G+1§! §ILithoid§! £pop£ §IPop§!\n\n§L$d_buried_lithoids_desc$§!"
+
+ concept_lithoid_crater: "$lithoid_crater$"
+ concept_lithoid_crater_desc: "- Habitability for non-Lithoid Pops: §R-50%§!\n\n§L$lithoid_crater_desc$§!"
+
+ concept_experimental_crater: "$holding_experimental_crater$"
+ concept_experimental_crater_desc: "- Produces: £physics£ 4 £engineering£ 8 \n- $MOD_MONTHLY_LOYALTY_GAIN$: §R-1§!\n- £mod_job_miner_add£ ['concept_miner', $job_miner$] Jobs: §G+3§!\n- §YCaution:§! Incoming colony "ships" may §Rexplode§!\n\n§L$holding_experimental_crater_desc$§!"
+
+# Resource Consolidation
+
+ concept_pc_machine: "$pc_machine$"
+ concept_pc_machine_desc: "- Base Habitability: §Y0%§!\n- $mod_planet_jobs_produces_mult$: §G+10%§!\n- $MOD_POP_HOUSING_USAGE_MULT$: §G-10%§!\n- $MOD_PLANET_MAX_BUILDINGS_ADD$: §G+12§!\n- $mod_job_replicator_add$: §G+1§!\n- $MOD_PLANET_RESETTLEMENT_UNEMPLOYED_DESTINATION_MULT$: §G+50%§!\n\n§L$pc_machine_desc$§!"
+
+ concept_malfunctioning_replicator_bay: "$d_resource_consolidation_1$"
+ concept_malfunctioning_replicator_bay_desc: "- Time to Clear:\n$tt$- £time£ 360 §IDays§!\n- Cost to Clear:\n$tt$- 600 $i_minerals$\n- £mod_job_replicator_add£ ['concept_replicator', $job_replicator$] Jobs:§R-1§!\n- $MOD_PLANET_MAX_DISTRICTS_ADD$: §R-1§!\n\n§L$d_resource_consolidation_1_desc$§!"
+
+ concept_consolidated_resources: "$d_machine_minerals$"
+ concept_consolidated_resources_desc: "- Produces: 25 $i_minerals$\n\n§L$d_resource_consolidation_1_desc$§!"
+
+ concept_organic_slurry: "$d_organic_slurry$"
+ concept_organic_slurry_desc: "- Produces: 15 $i_food$\n\n§L$d_organic_slurry_desc$§!"
+
+ concept_machine_assimilator: "$civic_machine_assimilator$"
+ concept_machine_assimilator_desc: "$civic_tooltip_machine_assimilator_effects$\n\n§L$civic_machine_assimilator_desc$§!"
+
+concept_pc_barren: "$pc_barren$"
+concept_pc_barren_desc: "- §RUninhabitable§!\n\n§L$pc_barren_desc$§!"
+
+concept_pc_molten: "$pc_molten$"
+concept_pc_molten_desc: "- §RUninhabitable§!\n\n§L$pc_molten_desc$§!"
+
+# Progenitor Hive
+
+ concept_spawning_pools: "$building_spawning_pool$"
+ concept_spawning_pools_desc: "- £mod_job_spawning_drone_add£ ['concept_spawning_drone', $job_spawning_drone$] Jobs: §G+1§!\n\n§L$building_spawning_pool_desc$§!"
+
+ concept_offspring_nests: "$building_offspring_nest$"
+ concept_offspring_nests_desc: "- £mod_job_spawning_drone_add£ ['concept_offspring_drone', $job_offspring_drone$] Jobs: §G+1§!\n\n§L$building_offspring_nest_desc$§!"
+
+ concept_offspring_holding: "$holding_offspring_nest$"
+ concept_offspring_holding_desc: "- £mod_job_spawning_drone_add£ ['concept_offspring_feeder',$job_overlord_offspring_drone_feeder$] Jobs: §G+1§!\n\n§L$holding_offspring_nest_desc$§!"
+
+ concept_insufficient_offspring_oversight: "Insufficient Offspring Oversight"
+ concept_insufficient_offspring_oversight_desc: "- $MOD_OWNED_SHIP_SPEED_MULT$: §R-50%§!\n- $MOD_OWNED_SHIP_EVASION_MULT$: §R-50%§!\n- $MOD_OWNED_SHIP_FIRE_RATE_MULT$: §R-50%§!\n- $MOD_OWNED_SHIP_ACCURACY_MULT$: §R-50%§!\n\n§LWithout an Offspring leading the fleet, our forces are unorganized and lack efficiency.§!"
+
+ concept_devouring_swarm: "$civic_hive_devouring_swarm$"
+ concept_devouring_swarm_desc:  "§EEffects:§!\n$civic_tooltip_devouring_swarm_effects$\n§EModifiers:§!\n$devouring_swarm_modifiers$\n\n§L$civic_hive_devouring_swarm_desc$§!"
+
+ devouring_swarm_modifiers: "- $MOD_COUNTRY_STARBASE_INFLUENCE_COST_MULT$: §G-50%§!\n- $MOD_SHIP_HULL_MULT$: §G+25%§!\n- $MOD_SHIP_HULL_REGEN_ADD_PERC$: §G+5%§!\n- $MOD_SHIP_ARMOR_REGEN_ADD_PERC$: §G+5%§!\n- $MOD_ARMY_DAMAGE_MULT$: §G+40%§!\n- $mod_category_biology_research_speed_mult$: §G+20%§!\n- $MOD_STARBASE_SHIPYARD_BUILD_COST_MULT$: §G-25%§!\n- $MOD_COUNTRY_NAVAL_CAP_MULT$: §G+33%§!"
+
+
+# Subterranean
+ concept_cave_dweller: "$trait_cave_dweller$"
+ concept_cave_dweller_desc: "- $MOD_HABITABILITY_FLOOR_ADD$: §G50%§!\n- $mod_planet_jobs_minerals_produces_mult$: §G+15%§!\n- $MOD_SPECIES_EMPIRE_SIZE_MULT$: §R+10%§!\n- $MOD_BIO_POP_GROWTH_SPEED$: §R-20%§!\n\n§L$trait_cave_dweller_desc$§!"
+
+ mod_mining_district_housing_add: "$MOD_PLANET_HOUSING_ADD$ from Mining Districts"
+ mod_mining_district_buildings_add: "$MOD_PLANET_MAX_BUILDINGS_ADD$ from Mining Districts"
+
+# Teachers of the Shroud
+
+ concept_latent_psionic: "$trait_latent_psionic$"
+ concept_latent_psionic_desc: "- $mod_planet_jobs_physics_research_produces_mult$: §G+10%§!\n- $mod_planet_jobs_society_research_produces_mult$: §G+10%§!\n- $mod_planet_jobs_engineering_research_produces_mult$: §G+10%§!\n- $mod_planet_jobs_unity_produces_mult$: §G+5%§!\n\n§L$trait_latent_psionic_desc$§!"
+
+ concept_psionic_ascension: "Psionic Ascension"
+ concept_psionic_ascension_desc: "By unlocking the latent psionic abilities of the mind, it is possible to tap into and draw immense power from The Shroud."
+
+ concept_shroud_beacon: "$sm_shroud_beacon$"
+ concept_shroud_beacon_desc: "$sm_shroud_beacon_desc$"
+
+ concept_shroudwalker_enclave: "$gov_shroudwalker_enclave$"
+ concept_shroudwalker_enclave_desc: "$gov_shroudwalker_enclave_desc$"
+
+ concept_psionic_theory: "$tech_psionic_theory$"
+ concept_psionic_theory_desc: "- £mod_empire_size_pops_mult£ $MOD_EMPIRE_SIZE_POPS_MULT$: §G-10%§!\n\n§L$tech_psionic_theory_desc$§!"
+
+# Slingshot to the Stars
+
+ concept_slingshot_digsite: "$slingshot_digsite$"
+ concept_slingshot_digsite_desc: "§L$slingshot_digsite_desc$§!"
+
+ concept_quantum_catapult_restored_slingshot: "$quantum_catapult_restored_slingshot$"
+ concept_quantum_catapult_restored_slingshot_desc: "- $MOD_FLEET_MIA_TIME_MULT$: §G-20%§!\n- Can be upgraded into an ['concept_quantum_catapult_improved_slingshot']\n\n§L$quantum_catapult_restored_slingshot_DESC$§!"
+
+ concept_quantum_catapult_improved_slingshot: "$quantum_catapult_improved_slingshot$"
+ concept_quantum_catapult_improved_slingshot_desc: "- $MOD_FLEET_MIA_TIME_MULT$: §G-30%§!\n\n§L$quantum_catapult_improved_slingshot_DESC$§!"
+
+ concept_quantic_ambush: "$quantic_ambush$"
+ concept_quantic_ambush_desc: "- $MOD_SHIP_FIRE_RATE_MULT$: §G+33%§! for 120 days\n\n§LThe instant and unpredictable nature of Quantum Catapult travel allows us to hit foes when they least expect it.§!"
+
+# Imperial Fiefdom
+
+ concept_specialist_subject: "Specialist Subjects"
+ concept_specialist_subject_desc: "Specialist subjects are subject types that have unique perks, unlocked as they gain §ISubject XP§!. \n\n- $specialist_bulwark_summary$\n- $specialist_scholarium_summary$\n- $specialist_prospectorium_summary$"
+
+# Overtuned
+
+ concept_overtuned_traits: "$origin_overtuned$"
+ concept_overtuned_traits_desc: "Overtuned traits provide greater benefits compared to regular species traits at the cost of reducing leader lifespan."
+
+ concept_gene_tailoring: "$tech_gene_tailoring$"
+ concept_gene_tailoring_desc: "- $species_trait_points_add$: §G+1§!\n- $i_unlocks_feature$ $feature_modify_traits$ \n- $i_unlocks_feature$ $feature_pop_self_modification$\n\n§L$tech_gene_tailoring_desc$§!"
+
+ concept_damn_the_consequences: "$edict_damn_the_consequences$"
+ concept_damn_the_consequences_desc: "- Positive effects from §IOvertuned§! Traits: §G+100%§!\n- $mod_planet_pops_organics_upkeep_mult$: §R+100%§!\n\n§L$edict_damn_the_consequences_desc$§!"
+
+# Knights of the Toxic God
+
+ concept_order_keep: "$building_order_keep$"
+ concept_order_keep_desc: "§RThis building cannot be removed or disabled!§!\n- £mod_planet_immigration_pull_add£ $MOD_PLANET_IMMIGRATION_PULL_ADD$: §G+5§!\n- £mod_planet_resettlement_unemployed_destination_mult£ $MOD_PLANET_RESETTLEMENT_UNEMPLOYED_DESTINATION_MULT$: §G+100%§!\n- £mod_job_knight_add£ ['concept_knight', $job_knight$] Jobs: §G+2§!\n$t$- per 10 $pops_with_icon$: §G+1§!\n- £mod_job_squire_add£ ['concept_squire', $job_squire$] Jobs: §G+1§!\n\n§L$building_order_keep_desc$§!"
+
+ concept_orders_demesne: "$district_orders_demesne$"
+ concept_orders_demesne_desc: "- £mod_planet_housing_add£ $MOD_PLANET_HOUSING_ADD$: §G+4§!\n- £mod_pop_environment_tolerance£ $MOD_POP_ENVIRONMENT_TOLERANCE$: §G+2.5%§!\n- £mod_job_squire_add£ ['concept_squire', $job_squire$] Jobs: §G+3§!\n\n§L$district_orders_demesne_desc$§!"
+
+ concept_knight_commandery: "$holding_knight_commandery$"
+ concept_knight_commandery_desc: "£mod_country_naval_cap_add£ $MOD_COUNTRY_NAVAL_CAP_ADD$: §G+4§!\n£mod_job_knight_add£ ['concept_overlord_knight', $job_overlord_knight$] Jobs: §G+1§!\n\n§L$holding_knight_commandery_desc$§!"
+
+ concept_knights_quest: "$situation_toxic_knights$"
+ concept_knights_quest_desc: "Unlocks powerful modifiers for £job_knight£ §I$job_knight$§! Jobs and §I$concept_toxic_features$§!.\n\n§L$situation_toxic_knights_desc$§!"
+
+ concept_order_jobs: "Knightly Order Jobs"
+ concept_order_jobs_desc: "$NEW_LINE$- ['concept_knight_commander', £job_knight_commander£ $job_knight_commander$] $NEW_LINE$- ['concept_knight', £job_knight£ $job_knight$]"
+
+ concept_toxic_features: "Toxic Planetary Features"
+ concept_toxic_features_desc: "$NEW_LINE$- ['concept_pools_most_venemous'] $NEW_LINE$- ['concept_pestilential_wasteland'] $NEW_LINE$- ['concept_deitys_swarms'] $NEW_LINE$- ['concept_blight_upon_the_land'] $NEW_LINE$- ['concept_envenomed_seas']"
+
+ toxic_feature_improvement: "$NEW_LINE$- On completing §YKnightly Quests§!: Bonuses on this Planetary Feature"
+
+ concept_pools_most_venemous: "£blocker£ $d_toxic_god_pools_most_venemous$"
+ concept_pools_most_venemous_desc: "- Max Districts: §R-1§!\n\n§L$d_toxic_god_pools_most_venemous_desc$§!"
+
+ concept_pestilential_wasteland: "£blocker£ $d_toxic_god_pestilential_wasteland$"
+ concept_pestilential_wasteland_desc: "- Max Districts: §R-1§!$toxic_feature_improvement$\n\n§L$d_toxic_god_pestilential_wasteland_desc$§!"
+
+ concept_deitys_swarms: "£blocker£ $d_toxic_god_deitys_swarms$"
+ concept_deitys_swarms_desc: "- Max Districts: §R-1§!$toxic_feature_improvement$\n\n§L$d_toxic_god_deitys_swarms_desc$§!"
+
+ concept_blight_upon_the_land: "£blocker£ $d_toxic_god_blight_upon_the_land$"
+ concept_blight_upon_the_land_desc: "- Max Districts: §R-1§!$toxic_feature_improvement$\n\n§L$d_toxic_god_blight_upon_the_land_desc$§!"
+
+ concept_envenomed_seas: "£blocker£ $d_toxic_god_envenomed_seas$"
+ concept_envenomed_seas_desc: "- Max Districts: §R-1§!$toxic_feature_improvement$\n\n§L$d_toxic_god_envenomed_seas_desc$§!"
+
+# Ocean Paradise
+
+ concept_pc_ocean: "$pc_ocean$"
+ concept_pc_ocean_desc: "- Base Habitability: §Y0%§!\n\n§L$pc_ocean_desc$§!"
+
+ concept_ocean_paradise_mod: "$ocean_paradise$"
+ concept_ocean_paradise_mod_desc: "- $MOD_POP_HAPPINESS$: §G+15%§!\n- $MOD_POP_GROWTH_SPEED$: §G+10%§!\n- $mod_planet_jobs_produces_mult$: §G+5%§!\n\n§L$ocean_paradise_desc$§!"
+
+ concept_crystal_reef: "$d_crystal_reef$"
+ concept_crystal_reef_desc: "- $mod_building_crystal_mines_max$: §G+2§!\n\n§L$d_crystal_reef_desc$§!"
+
+ concept_pc_frozen: "Frozen World"
+ concept_pc_frozen_desc: "- §RUninhabitable§!\n\n§L$pc_frozen_desc$§!"
+
+# Payback
+ concept_payback_digsite: "$payback_digsite$"
+ concept_payback_digsite_desc: "§L$payback_digsite_desc$§!"
+
+ concept_basic_science_lab_1: "$tech_basic_science_lab_1$"
+ concept_basic_science_lab_1_desc: "- $i_unlocks_building$ $building_research_lab_1$\n\n§L$tech_basic_science_lab_1_desc$§!"
+
+ concept_planetary_government: "$tech_planetary_government$"
+ concept_planetary_government_desc: "- $i_unlocks_building$ $building_capital$\n- $i_unlocks_building$ $building_precinct_house$\n- $i_unlocks_building$ $building_bureaucratic_1$\n\n§L$tech_planetary_government_desc$§!"
+
+ concept_corvettes: "$tech_corvettes$"
+ concept_corvettes_desc: "- §IUnlocks Ship Type§!: $corvette$\n\n§L$tech_corvettes_desc$§!"
+
+ concept_clinic: "$building_clinic$"
+ concept_clinic_desc: "- £mod_job_healthcare_add£ ['concept_healthcare', $job_healthcare$] Jobs: §G+2§!\n\n§L$building_clinic_desc$§!"
+
+ concept_mineral_purification_plant: "$building_mineral_purification_plant$"
+ concept_mineral_purification_plant_desc: "- £mod_job_miner_add£ ['concept_miner', $job_miner$] Jobs: §G+1§!\n- £minerals£ Minerals from £job_miner£ $job_miner_plural$: §G+1§!\n\n§L$building_mineral_purification_plant_desc$§!"
+
+ concept_energy_grid: "$building_energy_grid$"
+ concept_energy_grid_desc: "- £mod_job_technician_add£ ['concept_technician', $job_technician$] Jobs: §G+1§!\n- £energy£ Energy from £job_technician£ $job_technician_plural$: §G+1§!\n\n§L$building_energy_grid_desc$§!"
+
+ concept_bureaucratic_1: "$building_bureaucratic_1$"
+ concept_bureaucratic_1_desc: "- ['concept_bureaucrat', $job_bureaucrat$] Jobs: §G+2§!\n\n§L$building_bureaucratic_1_desc$§!"
+
+ concept_commercial_zone: "$building_commercial_zone$"
+ concept_commercial_zone_desc: "- ['concept_clerk', $job_clerk$] Jobs: §G+3§!\n\n§L$building_commercial_zone_desc$§!"
+
+ concept_payback_unified_purpose: "$payback_unified_purpose$"
+ concept_payback_unified_purpose_desc: "- $MOD_POP_HAPPINESS$ §G+15%§!\n- $MOD_PLANET_AMENITIES_MULT$ §G+25%§!\n- $mod_planet_jobs_produces_mult$ §G+10%§!\n- ['concept_unifier', $job_unifier$] Jobs: §G+2§!\n- Will expire in §I20§! Years\n\n§L$payback_unified_purpose_desc$§!"
+
+ concept_advanced_infrastructure: "Advanced Infrastructure"
+ concept_advanced_infrastructure_desc: "$NEW_LINE$- ['concept_bureaucratic_1', £building£ $building_bureaucratic_1$] and ['concept_commercial_zone', £building£ $building_commercial_zone$] replaced by:$TABBED_NEW_LINE$- ['concept_clinic', £building£ $building_clinic$]$TABBED_NEW_LINE$- ['concept_mineral_purification_plant', £building£ $building_mineral_purification_plant$]$TABBED_NEW_LINE$- ['concept_energy_grid', £building£ $building_energy_grid$]"
+
+ concept_payback_debris_field: "$payback_debris_field$"
+ concept_payback_debris_field_desc: "- $MOD_POP_ENVIRONMENT_TOLERANCE$: §R-30%§!\n- $mod_planet_structures_cost_mult$: §R+15%§!\n- $mod_planet_structures_upkeep_mult$: §R+50%§!\n- Starting Devastation: §R33%§!\n\n§L$payback_debris_field_desc$§!"
+
+ concept_payback_ship_debris: "£blocker£ $d_ship_debris_payback_blocker$"
+ concept_payback_ship_debris_desc: "- Time to Clear: £time£ 360 §IDays§!\n- Cost to Clear: 300 $i_energy$\n- Max Districts: §R-1§!\n- On Clearing: $ship_debris_payback_blocker_tt$\n\n§L$d_ship_debris_payback_blocker_desc$§!"
+
+# Under One Rule
+
+ concept_leader_trait_legendary_leader: "$leader_trait_legendary_leader$"
+ concept_leader_trait_legendary_leader_desc: "$THIS_LEADER_TXT$:$TABBED_NEW_LINE$- $MOD_LEADER_AGE$: §G+40§!$TABBED_NEW_LINE$- Initial Leader Level: §G+4§!$TABBED_NEW_LINE$- Allows selection of unique §ILuminary Starting Traits§!\n\n$EMPIRE_EFFECTS_TXT$$TABBED_NEW_LINE$- $MOD_PLANET_STABILITY_ADD$: §G+1.5§!$TABBED_NEW_LINE$- $mod_planet_jobs_unity_produces_mult$: §G+3%§!\n\n§GThe Luminary grows in power over time.§!\n\n§LThe Unification Wars were a brutal affair. In the end, the Luminary brought peace and purpose to us all. The Luminary is the living symbol of what our species can achieve, and an inspiration to all.§!"
+
+ concept_perfected_genes: "$trait_perfected_genes$"
+ concept_perfected_genes_desc: "- $MOD_LEADER_AGE$: §G+25§!\n- $MOD_LEADER_SPECIES_EXP_GAIN$: §R-15%§!\n\n§L$trait_perfected_genes_desc$§!"
+
+##
+
+ concept_angler: "$job_angler_plural$"
+ concept_angler_desc: "$job_angler_plural$ are §IFarmer§! Jobs that produce $i_food$ and $i_trade_value$.\n\n§L$job_angler_desc$§!"
+
+ concept_pearl_diver: "$job_pearl_diver_plural$"
+ concept_pearl_diver_desc: "$job_pearl_diver_plural$ are §IArtisan§! Jobs that turn $i_food$ and $i_minerals$ into $i_consumer_goods$ and $i_trade_value$.\n\n§L$job_pearl_diver_desc$§!"
+
+ concept_hab_capital: "$building_hab_capital$"
+ concept_hab_capital_desc: "- £mod_planet_housing_add£ $MOD_PLANET_HOUSING_ADD$: §G+3§!\n- £amenities£ $PLANET_AMENITIES_TITLE$: §G+3§!\n- £building£ $MOD_PLANET_MAX_BUILDINGS_ADD$: §G+1§!\n- £mod_job_administrator_add£ $job_politician$ Jobs: §G+1§!\n\n§L$building_hab_capital_desc$§!"
+
+ concept_hydroponics_farm: "$building_hydroponics_farm$"
+ concept_hydroponics_farm_desc: "- £mod_job_farmer_add£ $job_farmer$ Jobs: §G+2§!\n\n§L$building_hydroponics_farm_desc$§!"
+
+ concept_noble: "$job_noble_plural$"
+ concept_noble_desc: "£job_noble£ $job_noble_plural$ turn $i_consumer_goods$ into ['concept_unity', £unity£ $concept_unity$], $i_amenities$ and $i_stability$.\n\n§L$job_noble_desc$§!"
+
+ concept_noble_estates: "$building_noble_estates$"
+ concept_noble_estates_desc: "£mod_planet_housing_add£ $MOD_PLANET_HOUSING_ADD$: §G+1§!\n£mod_job_noble_add£ $mod_job_noble_add$: §G+1§!\n\n§L$building_noble_estates_desc$§!"
+
+ concept_noble_vacation_homes: "$holding_noble_vacation_homes$"
+ concept_noble_vacation_homes_desc: "$holding_noble_vacation_homes_effect$\n\n§L$holding_noble_vacation_homes_desc$§!"
+
+ concept_death_priest: "$job_death_priest$"
+ concept_death_priest_desc: "$job_death_priest_plural$ are §IAdministrator§! Jobs that turn $i_consumer_goods$ into ['concept_unity', £unity£ $concept_unity$], ['concept_society_research', £society£ $concept_society_research$], and $i_amenities$\n\n§L$job_death_priest_desc$§!"
+
+ concept_mortal_initiate: "$job_mortal_initiate_plural$"
+ concept_mortal_initiate_desc: "$job_mortal_initiate_plural$ are §IAdminstrator§! Jobs produce ['concept_unity', £unity£ $concept_unity$], ['concept_society_research', £society£ $concept_society_research$], and $i_amenities$\n\n§L$job_mortal_initiate_desc$§!"
+
+ concept_sacrificial_temple: "$building_sacrificial_temple_1$"
+ concept_sacrificial_temple_desc: "£mod_job_death_priest_add£ $mod_job_death_priest_add$: §G+1§!\n£mod_job_mortal_initiate_add£ $mod_job_mortal_initiate_add$: §G+1§!\n£mod_ethic_attraction_mult£ $mod_pop_ethic_spiritualist_attraction_mult$: §G+5%§!\n\n§L$building_sacrificial_temple_1_desc$§!"
+
+ concept_sacrificial_shrine: "$holding_sacrificial_shrine$"
+ concept_sacrificial_shrine_desc: "£mod_job_mortal_initiate_add£ $mod_job_overlord_mortal_initiate_add$: §G+2§!\n\n§L$holding_sacrificial_shrine_desc$§!"
+
+ concept_head_researcher: "$job_head_researcher_plural$"
+ concept_head_researcher_desc: "$job_head_researcher_plural$ are §IResearcher§! Jobs that turn $i_consumer_goods$ into ['concept_unity', £unity£ $concept_unity$], £mod_planet_amenities_add£ §H$PLANET_AMENITIES_TITLE$§! and ['concept_technologies', £physics£ £engineering£ Research Points]."
+
+# Common Ground/Hegemony
+
+ concept_federation: "Federation"
+ concept_federation_desc: "A Federation is a supranational alliance of space-faring civilizations."
+
+ concept_common_ground_federation: "$concept_federation$"
+ concept_common_ground_federation_desc: "$concept_federation_desc$\n\n There are different types of Federations:\n- ['concept_default_federation']\n- ['concept_military_federation']\n- ['concept_research_federation']\n- ['concept_spiritualist_federation']\n- ['concept_trade_federation']"
+
+ concept_default_federation: "$default_federation$"
+ concept_default_federation_desc: "$default_federation_desc$"
+
+ concept_trade_federation: "$trade_federation$"
+ concept_trade_federation_desc: "$trade_federation_desc$\n\n§ERequirements:§!\nOne of the following:\n- Has §I$auth_corporate$§! Authority\n- Has §I$civic_merchant_guilds$§! Civic\n- Has §I$civic_corporate_dominion$§! Civic"
+
+ concept_research_federation: "$research_federation$"
+ concept_research_federation_desc: "$research_federation_desc$\n\n§ERequirements:§!\nOne of the following:\n- Has §I$auth_machine_intelligence$§! Authority\n- $civic_tooltip_materialist$\n- Has §I$civic_hive_natural_neural_network$§! Civic"
+
+ concept_military_federation: "$military_federation$"
+ concept_military_federation_desc: "$military_federation_desc$\n\n§ERequirements:§!\nOne of the following:\n- $civic_tooltip_militarist$\n- Has §I$civic_hive_strength_of_legions$§! Civic\n- Has §I$civic_machine_warbots$§! Civic"
+
+ concept_hegemony_federation: "$hegemony_federation$"
+ concept_hegemony_federation_desc: "$hegemony_federation_desc$"
+
+ concept_spiritualist_federation: "$spiritualist_federation$"
+ concept_spiritualist_federation_desc: "$spiritualist_federation_desc$\n\n§ERequirements:§!\n- $civic_tooltip_spiritualist$"
+
+ concept_diplomacy_traditions: "$tr_diplomacy_adopt$"
+ concept_diplomacy_traditions_desc: "- §IUnlocks Edict:§! $edict_diplomatic_grants$\n- §I$MOD_COUNTRY_DIPLOMACY_INFLUENCE_COST$§! reduced by §G50%§!.\n\n§L$tradition_diplomacy_desc$§!"
+ concept_tr_diplomacy_the_federation: "$tr_diplomacy_the_federation$"
+ concept_tr_diplomacy_the_federation_desc: "- §IUnlocks Diplomacy:§! Form Federation\n- §I$MOD_COUNTRY_ENVOYS_ADD$§! are increased by §G1§!.\n\n§L$tr_diplomacy_the_federation_delayed$§!"
+
+# Doomsday
+
+ concept_doomsday_modifier: "$doomsday_1$"
+ concept_doomsday_modifier_desc: "- This planet will §REXPLODE§! within §I35 to 45 years§!\n\nModifiers will increase over time to a maximum of:\n- $mod_planet_jobs_alloys_produces_mult$: §G+120%§!\n- $mod_planet_jobs_minerals_produces_mult$: §G+120%§!\n- $mod_planet_jobs_energy_produces_mult$: §G+120%§!\n- $MOD_PLANET_EMIGRATION_PUSH_ADD$: §G100%§!\n- $MOD_PLANET_STABILITY_ADD$: §R-30§!\n- $MOD_PLANET_IMMIGRATION_PULL_MULT$: §R-50%§!\n- $MOD_POP_ENVIRONMENT_TOLERANCE$: §R-90%§!\n\n§L$doomsday_1_desc$§!"
+
+# Lost Colony
+
+ concept_colonial_spirit: "$colonial_spirit_mod$"
+ concept_colonial_spirit_desc: "- $MOD_POP_HAPPINESS$: §G+10%§!\n- $MOD_PLANET_AMENITIES_MULT$: §G+15%§!\n- $mod_planet_jobs_produces_mult$: §G+15%§!\n- $MOD_POP_ENVIRONMENT_TOLERANCE$: §G+10%§!\n\n§L$colonial_spirit_mod_desc$§!"
+
+# Necrophage
+
+ concept_necrophage_elevation_chamber: "$building_necrophage_elevation_chamber$"
+ concept_necrophage_elevation_chamber_desc: "- ['concept_necro_apprentice', £mod_job_apprentice_add£ $job_necro_apprentice$] Jobs: §G+1-3§!$DOUBLE_NEW_LINE$§LThose awaiting transformation practice the rituals in the comfort of the Chamber of Elevation.§!"
+
+ concept_necro_apprentice: "$job_necro_apprentice$"
+ concept_necro_apprentice_desc: "- $job_necro_apprentice_plural$ turn £consumer_goods£ §I$consumer_goods$§! and £food£ §I$food$§! into £unity£ §I$unity$§! and £mod_planet_amenities_add£ §I$PLANET_AMENITIES_TITLE$§! $NEW_LINE$- Once every §I10§! years, $job_necro_apprentice_plural$ are transformed in an §IElevation Ritual§!.$DOUBLE_NEW_LINE$§L$job_necro_apprentice_desc$§!"
+
+ concept_necrophage_trait: "$trait_necrophage$"
+ concept_necrophage_trait_desc: "- $MOD_LEADER_AGE$: §G+80§! $NEW_LINE$- $MOD_POP_GROWTH_SPEED$: §R-75%§! $NEW_LINE$- $MOD_PLANET_POP_ASSEMBLY_ORGANIC_MULT$: §R-50%§! $NEW_LINE$- $mod_planet_pops_organics_food_upkeep_mult$: §G-50%§! $NEW_LINE$- $mod_planet_pops_organics_minerals_upkeep_mult$: §G-50%§! $NEW_LINE$- $mod_planet_pops_organics_energy_upkeep_mult$: §G-50%§! $NEW_LINE$- $mod_planet_jobs_ruler_produces_mult$: §G+5%§! $NEW_LINE$- $mod_planet_jobs_specialist_only_produces_mult$: §G+5%§! $NEW_LINE$- $mod_planet_jobs_worker_only_produces_mult$: §R-10%§!$NEW_LINE$- $trait_necrophage_gestalt_tooltip$ $DOUBLE_NEW_LINE$§L$trait_necrophage_desc$§!"
+
+# Clone Army
+
+ concept_clone_soldier_infertile: "$trait_clone_soldier_infertile$"
+ concept_clone_soldier_infertile_desc: "- $MOD_POP_GOVERNMENT_ETHIC_ATTRACTION$: §G+50%§! $NEW_LINE$- $MOD_LEADER_AGE$: §R-40§! $NEW_LINE$- $MOD_ARMY_DAMAGE_MULT$: §G+50%§!$NEW_LINE$- $genelock_trait_tooltip$ $NEW_LINE$- $TRAIT_INFERTILE$ $NEW_LINE$- $TRAIT_IMPROVES_LEADERS$$DOUBLE_NEW_LINE$§L$trait_clone_soldier_infertile_desc$§!"
+
+ concept_cloning: "$tech_cloning$"
+ concept_cloning_desc: "- $MOD_POP_GROWTH_SPEED$ §G+10%§!$DOUBLE_NEW_LINE$§L$tech_cloning_desc$§!"
+ concept_gene_banks: "$tech_gene_banks$"
+ concept_gene_banks_desc: "- §IUnlocks Army:§! Clone Army$DOUBLE_NEW_LINE$§L$tech_gene_banks_desc$§!"
+
+ concept_clone_army_clone_vat: "$building_clone_army_clone_vat$"
+ concept_clone_army_clone_vat_desc: "- Empire Limit: §I5§! $NEW_LINE$- $MOD_PLANET_POP_ASSEMBLY_ORGANIC_ADD$: §G+0-25§! $NEW_LINE$- $building_clone_army_clone_vat_effect_desc$ $DOUBLE_NEW_LINE$§L$building_clone_army_clone_vat_desc$§!"
+
+# Broken Shackles
+
+ concept_culture_shock_broken_shackles: "$culture_shock_broken_shackles$"
+ concept_culture_shock_broken_shackles_desc: "- $mod_planet_jobs_minerals_produces_mult$: §R-10%§!\n- $mod_planet_jobs_energy_produces_mult$: §R-10%§!\n- $mod_planet_jobs_engineering_research_produces_mult$: §R-20%§!\n- $mod_planet_jobs_physics_research_produces_mult$: §R-20%§!\n- $mod_planet_jobs_society_research_produces_mult$: §R-20%§!\n- Will expire in §I10§! Years\n\n§L$culture_shock_broken_shackles_desc$§!"
+
+ concept_free_at_last_broken_shackles: "$free_at_last_broken_shackles$"
+ concept_free_at_last_broken_shackles_desc: "- $MOD_POP_CITIZEN_HAPPINESS$: §G+20%§!\n- $MOD_POP_HOUSING_USAGE_MULT$: §R-25%§!\n- $MOD_POP_AMENITIES_USAGE_MULT$: §R-50%§!\n- $mod_planet_jobs_unity_produces_mult$: §G+100%§!\n- $mod_planet_pops_consumer_goods_upkeep_mult$: §R-50%§!\n- $mod_pop_ethic_egalitarian_attraction_mult$: §G+50%§!\n- Will expire in §I20§! Years\n\n§L$free_at_last_broken_shackles_desc$§!"
+
+ concept_crashed_slaver_ship_broken_shackles: "$d_crashed_slaver_ship$"
+ concept_crashed_slaver_ship_broken_shackles_desc: "- Max ['concept_district_crashed_slaver_ship', $district_crashed_slaver_ship_plural$]: §G+6§!\n\n§L$d_crashed_slaver_ship_desc$§!"
+
+ concept_district_crashed_slaver_ship: "$district_crashed_slaver_ship$"
+ concept_district_crashed_slaver_ship_desc: "- £housing£ $MOD_PLANET_HOUSING_ADD$: §G+4§!\n- £building£ $MOD_PLANET_MAX_BUILDINGS_ADD$: §G+0.75§!\n- £mod_job_broken_shackles_scavenger_add£ ['concept_broken_shackles_scavenger', $job_broken_shackles_scavenger$] Jobs: §G+1§!\n\n§L$district_crashed_slaver_ship_desc$§!"
+
+ concept_broken_shackles_buildings: "Spaceship Wreckage"
+ concept_broken_shackles_buildings_desc: "$NEW_LINE$- Initial buildings replaced by:$TABBED_NEW_LINE$- ['concept_low_tech_capital', £building£ $concept_low_tech_capital$] $TABBED_NEW_LINE$- ['concept_low_tech_admin_hub', £building£ $concept_low_tech_admin_hub$] $TABBED_NEW_LINE$- ['concept_low_tech_research_lab', £building£ $concept_low_tech_research_lab$] $TABBED_NEW_LINE$- ['concept_low_tech_scrap_refinery', £building£ $concept_low_tech_scrap_refinery$] $TABBED_NEW_LINE$- ['concept_low_tech_power_plant', £building£ $concept_low_tech_power_plant$] $TABBED_NEW_LINE$- ['concept_low_tech_farm', £building£ $concept_low_tech_farm$] "
+
+ concept_ship_debris_broken_shackles: "$d_ship_debris_broken_shackles_blocker$"
+ concept_ship_debris_broken_shackles_desc: "- $MOD_PLANET_MAX_DISTRICTS_ADD$: §R-1§!\n- This blocker can only be removed by investigating the §Y$broken_shackles_digsite$§!.\n\n§L$d_ship_debris_broken_shackles_blocker_desc$§!"
+
+ concept_broken_shackles_digsite: "$broken_shackles_digsite$"
+ concept_broken_shackles_digsite_desc: "§L$broken_shackles_desc$§!"
+
+ concept_low_tech_scrap_refinery: "$building_low_tech_scrap_refinery$"
+ concept_low_tech_scrap_refinery_desc: "- £mod_job_miner_add£ ['concept_low_tech_miner', $job_low_tech_miner$] Jobs: §G+2§!\n- £mod_job_low_tech_laborer_add£ ['concept_low_tech_laborer', $job_low_tech_laborer$] Jobs: §G+2§!\n\n§L$building_low_tech_scrap_refinery_desc$§!"
+
+ concept_low_tech_admin_hub: "$building_low_tech_admin_hub$"
+ concept_low_tech_admin_hub_desc: "- £mod_job_low_tech_bureaucrat_add£ ['concept_low_tech_bureaucrat', $job_low_tech_bureaucrat$] Jobs: §G+2§!\n\n§L$building_low_tech_admin_hub_desc$§!"
+
+ concept_low_tech_power_plant: "$building_low_tech_power_plant$"
+ concept_low_tech_power_plant_desc: "- £mod_job_technician_add£ ['concept_low_tech_technician', $job_low_tech_technician$] Jobs: §G+2§!\n\n§L$building_low_tech_power_plant_desc$§!"
+
+ concept_low_tech_farm: "$building_low_tech_farm$"
+ concept_low_tech_farm_desc: "- £mod_job_low_tech_farmer_add£ ['concept_low_tech_farmer', $job_low_tech_farmer$] Jobs: §G+2§!\n\n§L$building_low_tech_farm_desc$§!"
+
+ concept_low_tech_capital: "$building_low_tech_capital$"
+ concept_low_tech_capital_desc: "- £housing£ $MOD_PLANET_HOUSING_ADD$: §G+4§! $NEW_LINE$- £amenities£ $PLANET_AMENITIES_TITLE$: §G+7§! $NEW_LINE$- £building£ $MOD_PLANET_MAX_BUILDINGS_ADD$: §G+1§! $NEW_LINE$- £mod_job_colonist_add£ ['concept_colonist', $job_colonist$] Jobs: §G+2§! $NEW_LINE$- £mod_job_low_tech_warrior_add£ ['concept_low_tech_warrior', $job_low_tech_warrior$] Jobs: §G+1§!\n\n§L$building_low_tech_capital_desc$§!"
+
+ concept_low_tech_research_lab: "$building_low_tech_research_lab$"
+ concept_low_tech_research_lab_desc: "- £mod_job_low_tech_researcher_add£ ['concept_low_tech_researcher', $job_low_tech_researcher$] Jobs: §G+2§!\n\n§L$building_low_tech_research_lab_desc$§!"
+
+# Fruitful Partnership
+
+ concept_sm_feeder: "$sm_feeder$"
+ concept_sm_feeder_desc: "- Produces: £food£ 5 $NEW_LINE$- Lures Space Fauna to graze at the Starbase, collecting §ISeed Pods§! for dispersal\n\n§L$sm_feeder_desc$§!"
+
+ concept_seed_bombing: "$bombardment_seed_bombing$"
+ concept_seed_bombing_desc: "\n- No damage to §IArmies§!\n- Heavy damage to §IPlanets§!\n- No damage to §IPops§!\n- Will bombard undefended planets\n- Spawns blockers on the planet\n\n§L$bombardment_seed_bombing$ carpets the planet with hyper-fertilized seed pods, causing an explosion of growth.§!"
+
+ concept_tiyanki: "Tiyanki"
+ concept_tiyanki_desc: "§LTiyanki are peaceful space fauna, capable of travelling along hyperlanes to find gas giants to graze upon.§!"
+
+ concept_seed_pod: "Seed Pod"
+ concept_seed_pod_desc: "- Spread to colonizable planets by Space Fauna that grazed at Starseed Gardens \n- On Uninhabited Planets: ['concept_seeded_planet_0_modifier' ] \n- On Inhabited Planets: ['concept_seeded_planet_1_modifier' ]"
+
+ concept_seeded_planet_0_modifier: "$seeded_planet_0_modifier$"
+ concept_seeded_planet_0_modifier_desc: "- $seeded_planet_0_modifier_tooltip$ \n\n§L$seeded_planet_0_modifier_desc$§!"
+
+ concept_seeded_planet_1_modifier: "$seeded_planet_1_modifier$"
+ concept_seeded_planet_1_modifier_desc: "- $mod_planet_jobs_society_research_produces_mult$: §G+5%§! $NEW_LINE$- $mod_planet_jobs_food_produces_mult$: §G+5%§! $NEW_LINE$- $MOD_PLANET_IMMIGRATION_PULL_MULT$: §G+5%§! $NEW_LINE$- $seeded_planet_1_modifier_tooltip$ \n\n§L$seeded_planet_1_modifier_desc$§!"

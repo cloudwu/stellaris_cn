@@ -138,8 +138,8 @@
  HAS_STRATEGIC_RESOURCE_BOOL:0 "Has a Strategic Resource"
  HAS_NOT_STRATEGIC_RESOURCE:0 "Does NOT have §Y$RESOURCE$§!"
  HAS_STRATEGIC_RESOURCE:0 "Has §Y$RESOURCE$§!"
- HAS_TECHNOLOGY:0 "Has $TECHNAME|Y$"
- HAS_NOT_TECHNOLOGY:0 "Does NOT have $TECHNAME|Y$"
+ HAS_TECHNOLOGY:1 "Has $TECHNAME|Y$ Technology"
+ HAS_NOT_TECHNOLOGY:1 "Does NOT have $TECHNAME|Y$ Technology"
  HAS_TECHNOLOGY_OPTION:0 "Has $TECHNAME|Y$ option"
  HAS_NOT_TECHNOLOGY_OPTION:0 "Does NOT have $TECHNAME|Y$ option"
  HAS_NOT_MODIFIER:0 "Does NOT have the $MODNAME|Y$ modifier"
@@ -615,6 +615,8 @@
  SET_LEADER_MORTAL_EFFECT:0 "Becomes mortal"
  IS_IMMORTAL_TRIGGER:0 "Is immortal"
  IS_NOT_IMMORTAL_TRIGGER:0 "Is mortal"
+ IS_HIDDEN_TRIGGER: "Is hidden"
+ IS_NOT_HIDDEN_TRIGGER: "Is not hidden"
  IS_JOB_OF_CATEGORY:0 "$JOB|Y$ is of the $CAT|Y$ Category"
  IS_NOT_JOB_OF_CATEGORY:0 "$JOB|Y$ is NOT of the $CAT|Y$ Category"
  HAS_ACCESS_MILITARY:0 "Has Military Access"
@@ -1368,6 +1370,7 @@
  SET_NOT_RUINED_EFFECT:0 "Building is Repaired"
  SET_SUBJECT_OF_EFFECT:2 "$COUNTRY|Y$ becomes a subject under $COUNTRYTWO|Y$"
  SET_SUBJECT_OF_EFFECT_NONE:0 "Becomes independent"
+ SET_SUBJECT_OF_EFFECT_NONE_WE_VERBOSE: "We become independent." # suitable for custom tooltips
  SET_SPACEPORT_MODULE_EFFECT_REPLACE:0 "Replaces the $MODULE_REPLACED|Y$ with $MODULE|Y$ on the spaceport.\n"
  SET_SPACEPORT_MODULE_EFFECT:0 "Adds the $MODULE|Y$ module to the spaceport.\n"
  GUARANTEE_COUNTRY_EFFECT:0 "$COUNTRY$ guarantees the independence of $COUNTRYTWO$"
@@ -1748,8 +1751,8 @@
  TRIGGER_NOT_HAS_SPECIES_ARCHETYPE:0 "Does NOT have species type: $TYPE|Y$"
  TRIGGER_HAS_SPECIES_ARCHETYPE:0 "Has species type: $TYPE|Y$"
 
- TRIGGER_HAS_ORIGIN:0 "Has Origin: $ORIGIN|Y$"
- TRIGGER_NOT_HAS_ORIGIN:0 "Does NOT have Origin: $ORIGIN|Y$"
+ TRIGGER_HAS_ORIGIN:1 "Has $ORIGIN|Y$ Origin"
+ TRIGGER_NOT_HAS_ORIGIN:1 "Does NOT have $ORIGIN|Y$ Origin"
  HAS_ORIGIN_ICON_TIP:0 "This option is available due to $WHO|H$ having the $ORIGIN|Y$ Origin"
 
  ADD_FAVORS_EFFECT:0 "Get $NUM|Y$ Favors to use on $TARGET|H$"
@@ -1904,7 +1907,16 @@
  effect_every_council_member:0 "Every Council Member"
  count_council_member_trigger:0 "Number of Council Members$CONDITIONS$ $IS_NOT$ $COMPARATOR$ $NUM|Y$"
  count_council_member_all_trigger:0 "$IS_ALL_NOT$ Council Members fulfill the following conditions"
- add_council_agenda_progress_effect_desc:0 "Council Agenda progressed by $VALUE$"
+ ADD_COUNCIL_AGENDA_PROGRESS: "Council Agenda Progress:"
+ add_council_agenda_progress_percent_positive: "$ADD_COUNCIL_AGENDA_PROGRESS$ §G+$VALUE|%0$§!\n"
+ add_council_agenda_progress_percent_negative: "$ADD_COUNCIL_AGENDA_PROGRESS$ §R$VALUE|%0$§!\n"
+ add_council_agenda_progress_positive: "$ADD_COUNCIL_AGENDA_PROGRESS$ §G+$VALUE|0$§!\n"
+ add_council_agenda_progress_negative: "$ADD_COUNCIL_AGENDA_PROGRESS$ §R$VALUE|0$§!\n"
+
+ HAS_NOT_AGENDA_PROGRESS_PERCENT: "Council Agenda Progress is NOT $COMPARE$ $VALUE|0%$"
+ HAS_AGENDA_PROGRESS_PERCENT: "Council Agenda Progress is $COMPARE$ $VALUE|0%$"
+ HAS_NOT_AGENDA_PROGRESS: "Council Agenda Progress is NOT $COMPARE$ $VALUE|0$"
+ HAS_AGENDA_PROGRESS: "Council Agenda Progress is $COMPARE$ $VALUE|0$"
 
  effect_random_fleet_in_orbit:0 "Random Fleet in Orbit"
  effect_every_fleet_in_orbit:0 "Every Fleet in Orbit"
@@ -2100,3 +2112,12 @@
  EFFECT_CLEAR_RELATIONS:0 "Clear relations between country '$SCOPED_COUNTRY$' and country '$TARGET_COUNTRY$': $RELATION_KEYS$"
  
  EFFECT_REMOVE_ENVOYS_TO:0 "Remove envoys assigned by $FROM_COUNTRY$ to $TO_COUNTRY$"
+
+ TRIGGER_IS_GARRISON: "Fleet $FLEET|Y$ is a garrison"
+ TRIGGER_IS_NOT_GARRISON: "Fleet $FLEET|Y$ is not a garrison"
+
+ HAS_NUM_POSITIVE_TRAITS: "Number of positive Traits is $COMPARATOR$ $NUM|Y$"
+ HAS_NOT_NUM_POSITIVE_TRAITS: "Number of positive Traits is NOT $COMPARATOR$ $NUM|Y$"
+
+ HAS_NUM_NEGATIVE_TRAITS: "Number of negative Traits is $COMPARATOR$ $NUM|Y$"
+ HAS_NOT_NUM_NEGATIVE_TRAITS: "Number of negative Traits is NOT $COMPARATOR$ $NUM|Y$"

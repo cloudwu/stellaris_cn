@@ -95,20 +95,20 @@
  # Specialist level up
  MESSAGE_SUBJECT_LEVEL_UP_TITLE:0 "Specialist Subject Leveled Up"
  MESSAGE_SUBJECT_LEVEL_UP_DESC:0 "Your Subject $SUBJECT|Y$ has reach tier $TIER|Y$ of the $SPECIALIZATION|Y$ Specialization."
- MESSAGE_SUBJECT_LEVEL_UP_specialist_bulwark_TITLE:0 "$MESSAGE_SUBJECT_LEVEL_UP_TITLE$"
- MESSAGE_SUBJECT_LEVEL_UP_specialist_scholarium_TITLE:0 "$MESSAGE_SUBJECT_LEVEL_UP_TITLE$"
- MESSAGE_SUBJECT_LEVEL_UP_specialist_prospectorium_TITLE:0 "$MESSAGE_SUBJECT_LEVEL_UP_TITLE$"
+ MESSAGE_SUBJECT_LEVEL_UP_specialist_bulwark_TITLE:1 "Bulwark Specialist Subject Leveled Up"
+ MESSAGE_SUBJECT_LEVEL_UP_specialist_scholarium_TITLE:1 "Scholarium Specialist Subject Leveled Up"
+ MESSAGE_SUBJECT_LEVEL_UP_specialist_prospectorium_TITLE:1 "Prospectorium Specialist Subject Leveled Up"
 
  MESSAGE_WE_LEVEL_UP_TITLE:0 "Specialization Leveled Up"
  MESSAGE_WE_LEVEL_UP_DESC:0 "We have reached tier $TIER|Y$ of the $SPECIALIZATION|Y$ Specialization."
- MESSAGE_WE_LEVEL_UP_specialist_bulwark_TITLE:0 "$MESSAGE_WE_LEVEL_UP_TITLE$"
- MESSAGE_WE_LEVEL_UP_specialist_scholarium_TITLE:0 "$MESSAGE_WE_LEVEL_UP_TITLE$"
- MESSAGE_WE_LEVEL_UP_specialist_prospectorium_TITLE:0 "$MESSAGE_WE_LEVEL_UP_TITLE$"
+ MESSAGE_WE_LEVEL_UP_specialist_bulwark_TITLE:1 "Bulwark $MESSAGE_WE_LEVEL_UP_TITLE$"
+ MESSAGE_WE_LEVEL_UP_specialist_scholarium_TITLE:1 "Scholarium $MESSAGE_WE_LEVEL_UP_TITLE$"
+ MESSAGE_WE_LEVEL_UP_specialist_prospectorium_TITLE:1 "Prospectorium $MESSAGE_WE_LEVEL_UP_TITLE$"
 
  # Specialist conversion
  MESSAGE_SUBJECT_STARTED_CONVERTING_TITLE:0 "Subject Specialization Started"
  MESSAGE_SUBJECT_STARTED_CONVERTING_DESC:0 "Your Subject $SUBJECT|Y$ has started converting to the $SPECIALIZATION|Y$ Specialization."
- MESSAGE_WE_STARTED_CONVERTING_TITLE:0 "Specialization started"
+ MESSAGE_WE_STARTED_CONVERTING_TITLE:1 "Specialization Started"
  MESSAGE_WE_STARTED_CONVERTING_DESC:0 "We have started converting to the $SPECIALIZATION|Y$ Specialization."
 
  MESSAGE_SUBJECT_FINISHED_CONVERTING_TITLE:0 "Subject Specialization Complete"
@@ -285,10 +285,13 @@
  specialist_none_desc:0 "The Subject will not have any Specialization."
  specialist_bulwark:0 "Bulwark"
  specialist_bulwark_desc:0 "The Subject will specialize in defensive capabilities, in exchange for weaker resource production."
+ specialist_bulwark_summary: "$text_icon_preset_bulwark$ Bulwarks specialize in defensive capabilities, in exchange for weaker resource production."
  specialist_scholarium:0 "Scholarium"
  specialist_scholarium_desc:0 "The Subject will specialize in research, in exchange for weaker military capabilities."
+ specialist_scholarium_summary: "$text_icon_preset_scholarium$ Scholaria specialize in research, in exchange for weaker military capabilities."
  specialist_prospectorium:0 "Prospectorium"
  specialist_prospectorium_desc:1 "The Subject will specialize in mining and strategic resources, in exchange for weaker research production."
+ specialist_prospectorium_summary: "$text_icon_preset_prospectorium$ Prospectoria specialize in mining and strategic resources, in exchange for weaker research production."
 
  # Preset names
  preset_vassal:0 "Vassal"
@@ -467,7 +470,9 @@
  IN_ALLEGIANCE_WAR_WITH_SUBJECTS_OVERLORD:0 "We are at war with their Overlord."
 
  MESSAGE_BREAK_SECRET_FEALTY_TITLE:0 "Secret Fealty Broken"
+ DIPLO_ACTION_BREAK_SECRET_FEALTY_KEY: "Break Secret Fealty to Potential Overlord"
  MESSAGE_PROPOSE_TO_BREAK_SECRET_FEALTY_TITLE:0 "$ACTION_PROPOSE_TO_BREAK_SECRET_FEALTY_TITLE$"
+ DIPLO_ACTION_PROPOSE_TO_BREAK_SECRET_FEALTY_KEY: "End Secret Fealty With Potential Subject"
 
  # Failure texts
  IN_FEDERATION_WITH_THEIR_OVERLORD:0 "We are in a Federation with their Overlord."
@@ -584,7 +589,7 @@
  no_free_district_for_ranger_lodge:0 "$TRIGGER_FAIL$§RNo untouched nature remains on this planet for us to protect.§!"
  blocker_tied_to_ranger_lodge:0 "$TRIGGER_FAIL$§RThis blocker will remain as long as the §Y$holding_park_ranger_lodge$§! Holding exists.§!"
 
- holding_tree_of_life_sapling:0 "Tree of Life Sapling"
+ holding_tree_of_life_sapling:1 "Tree of Life Sprout"
  holding_tree_of_life_sapling_desc:0 "The Overlord has existed with their Tree of Life for so long that they can no longer imagine life without it. Now, they want to share the same opportunity with their vassals."
 
  holding_franchise_headquarters:0 "Franchise Headquarters"
@@ -813,8 +818,8 @@
  mod_job_overlord_offspring_drone_feeder_drone_add:0 "$mod_job_overlord_offspring_drone_feeder_add$"
  job_overlord_offspring_drone_feeder_desc:2 "It is a prestigious responsibility to keep the Offspring safe and comfortable, even if the role often involves merely gathering food for it."
  job_overlord_offspring_drone_feeder_drone_desc:0 "Feeding the Offspring is a vital job to ensure stability on the planet."
- job_overlord_offspring_drone_feeder_effect_desc:4 "£job_overlord_breeder£ $job_overlord_offspring_drone_feeder$ provide access to §Y$offspring_defense_plural$§! and an increase in £mod_planet_jobs_worker_produces_mult£ §Y$mod_planet_jobs_worker_produces_mult$§!."
- job_overlord_offspring_drone_feeder_drone_effect_desc:3 "£job_overlord_breeder£ $job_overlord_offspring_drone_feeder_plural$ provide access to §Y$offspring_defense_plural$§! and an increase in £mod_planet_jobs_simple_drone_produces_mult£ §Y$mod_planet_jobs_simple_drone_produces_mult$§!."
+ job_overlord_offspring_drone_feeder_effect_desc:5 "£job_overlord_breeder£ $job_overlord_offspring_drone_feeder$ use $r_food$ (or $r_minerals$) provide access to §Y$offspring_defense_plural$§! and an increase in £mod_planet_jobs_worker_produces_mult£ §Y$mod_planet_jobs_worker_produces_mult$§!."
+ job_overlord_offspring_drone_feeder_drone_effect_desc:4 "£job_overlord_breeder£ $job_overlord_offspring_drone_feeder_plural$ use $r_food$ (or $r_minerals$) provide access to §Y$offspring_defense_plural$§! and an increase in £mod_planet_jobs_simple_drone_produces_mult£ §Y$mod_planet_jobs_simple_drone_produces_mult$§!."
 
  # Overlord Metallurgist/Foundry Drone/Fabricator/Catalytic Technician/Catalytic Drone
  job_overlord_metallurgist:0 "Overlord $job_foundry$"
@@ -972,8 +977,8 @@
  r_physics:0 "£physics£ §YPhysics Research§!"
  r_society:0 "£society£ §YSociety Research§!"
  r_engineering:0 "£engineering£ §YEngineering Research§!"
- r_amenities:1 "£amenities£ §YAmenities§!"
- r_trade_value:1 "£trade_value£ §YTrade Value§!"
+ r_amenities:2 "£mod_planet_amenities_add£ §YAmenities§!"
+ r_trade_value:2 "£mod_trade_value_add£ §YTrade Value§!"
  r_loyalty:1 "£loyalty£ §YMonthly Loyalty§!"
  r_rare_crystals:1 "£rare_crystals£ §Y$rare_crystals$§!"
  r_volatile_motes:1 "£volatile_motes£ §Y$volatile_motes$§!"
@@ -1362,7 +1367,7 @@
  preset_satellite_desc:0 "A Satellite is a Fallen Empire Subject type obligated to pay a significant research tax to their ancient Overlord."
  preset_signatory_desc:0 "A Signatory is a Fallen Empire Subject type with no independent diplomacy from their ancient Overlord."
  preset_thrall_desc:0 "A Thrall is a Fallen Empire Subject type obligated to pay a monthly basic resource tax to their ancient Overlord and with no ability to expand their borders."
- preset_scion_desc:0 "A Scion is a Fallen Empire Subject type supported and aided by their Ancient Overlord."
+ preset_scion_desc:1 "A Scion is a Subject type that was guided through their development by a Fallen Empire Overlord."
  preset_satrapy_desc:0 "A Satrapy is a Khan Subject type obligated to pay their warmongering Overlord both ships and basic resources."
  preset_relic_satrapy_desc:1 "A Satrapy is a Subject type continuing the traditions of the Great Khan that is obligated to provide their Overlord with both ships and resources."
 

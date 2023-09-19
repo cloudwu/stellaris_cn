@@ -38,6 +38,8 @@
  SITUATION_TARGET_TOOLTIP_NO_TARGET:0 "The effects of this Situation are felt empire-wide."
  SITUATION_START_HEADER:0 "Start Value"
  SITUATION_START_TOOLTIP:0 "The Situation began at $VALUE|Y0$ progress."
+ civilian_difficulty: "Civilian Difficulty"
+ cadet_difficulty: "Cadet Difficulty"
 
  situation_unknown_outcome_approach:0 "We are unsure what the outcome of our current Approach to this Situation will be."
  situation_monthly_change_tooltip_no_control:0 "The progress of this §YSituation§! is not in our hands."
@@ -993,3 +995,194 @@
  casus_belli_cb_end_threat_revenge_for_eaten_star:0 "Ate their Star"
  war_goal_wg_end_threat_revenge_for_eaten_star:0 "$casus_belli_cb_end_threat_revenge_for_eaten_star$"
  war_goal_wg_end_threat_revenge_for_eaten_star_desc:0 "War is waged to utterly conquer the enemy whose star we ate."
+
+
+ ### The Kaleidoscope
+ ### By Giada Zavarise
+
+ ## Situation
+ situation_kaleidoscope: "The Kaleidoscope"
+ situation_kaleidoscope_type: "The Kaleidoscope"
+ situation_kaleidoscope_desc: "A colorful energy parasite is infecting our power grid, feasting on our energy supplies. We could indulge it, or use an §YEspionage Operation§! to pass this problem to another empire.\n\n[GetKaleidoscopeMood]."
+ situation_kaleidoscope_monthly_change_tooltip: "Starving the §HKaleidoscope§! will lower its §Ymood§!, increasing the chance of negative events. Feeding it will increase it, keeping it appeased and placid."
+
+ situation_unknown_outcome_kaleidoscope: "The Kaleidoscope's §Ymood§! will determine the final outcome."
+
+ approach_no_food: "Do not feed it"
+ approach_no_food_tooltip: "Lowers §Ymood§!. A starved Kaleidoscope will lash out and give us trouble."
+ approach_little_food: "Feed it"
+ approach_little_food_tooltip: "Improves §Ymood§!. A sated Kaleidoscope will produce pleasing lights and little trouble."
+ approach_a_lot_of_food: "Overfeed it"
+ approach_a_lot_of_food_tooltip: "Greatly improves §Ymood§!. An overstuffed Kaleidoscope will give us no trouble, but it will cost us dearly."
+ kaleidoscope_progress: "Overload"
+
+ # Strings for GetKaleidoscopeMood trigger loc script
+ kaleidoscope_mood_angry: "The Kaleidoscope is §Pangry§! and ready to lash out at any moment."
+ kaleidoscope_mood_neutral: "The Kaleidoscope is §Sserene§!. As long as it receives food, it should not misbehave."
+ kaleidoscope_mood_happy: "The Kaleidoscope is §Bjoyful§!. Its colors are as splendid as its mood."
+
+ ## Modifiers
+ global_power_outrage: "Global Power Outage"
+ phantom_load: "Phantom Load" # Note for translators: it's a real term used for when devices in standby still consume a little energy https://en.wikipedia.org/wiki/Standby_power
+ phantom_load_desc: "Something - or someone - is draining our power grid."
+
+ kaleidoscope_unnerving_patterns: "Unnerving Patterns"
+ kaleidoscope_ominous_patterns: "Ominous Patterns"
+ kaleidoscope_pilfering_patterns: "Haunting Patterns"
+ kaleidoscope_soothing_patterns: "Soothing Patterns"
+ kaleidoscope_dazzling_patterns: "Dazzling Patterns"
+
+ mod_trade_routes_energy_produces_mult: "Energy from Trade"
+
+ ## Relic
+ r_vacuum_flower: "Vacuum Flower"
+ r_vacuum_flower_desc: "The Kaleidoscope's bloom is a fragile florescence of ever-shifting petals, possessing the ability to manipulate, absorb, and reflect light waves."
+ relic_vacuum_flower_active: "Grants a different resource production bonus depending on the §YStar Class§! of your capital system."
+
+ relic_vacuum_flower_B: "Blooming Star (Class B)"
+ relic_vacuum_flower_A: "Blooming Star (Class A)"
+ relic_vacuum_flower_F: "Blooming Star (Class F)"
+ relic_vacuum_flower_G: "Blooming Star (Class G)"
+ relic_vacuum_flower_K: "Blooming Star (Class K)"
+ relic_vacuum_flower_M: "Blooming Star (Class M)"
+ relic_vacuum_flower_M_giant: "Blooming Star (Class M Red Giant)"
+ relic_vacuum_flower_T_dwarf: "Blooming Star (Class T Brown Dwarf)"
+ relic_vacuum_flower_pulsar: "Blooming Star (Pulsar)"
+ relic_vacuum_flower_black_hole: "Blooming Star (Black Hole)"
+ relic_vacuum_flower_neutron: "Blooming Star (Neutron Star)"
+ relic_vacuum_flower_lightbringer: "Blooming Star (Viridescent Lightbringer)"
+
+ dyson_sphere_disco: "Wonder Sphere"
+ dyson_sphere_disco_DESC: "It produces no energy. Only beauty."
+ dyson_sphere_disco_restored: "$dyson_sphere_disco$"
+ dyson_sphere_disco_restored_DESC: "$dyson_sphere_disco_desc$"
+
+
+ ## Intro
+ # The Kaleidoscope appears on your capital
+ situation.2003.name: "Color Out of Space"
+ situation.2003.desc: "What our people saw from orbit was §H[capital_scope.GetName]§! shutting down, every light source within the city snuffed out at once. What people on §H[capital_scope.GetName]§! experienced was much worse: vehicles reduced to road blocks, factories grinding to a halt, hospital equipment lifeless and inert. A world-wide blackout, as sudden as it was inexplicable.\n\nAs silence and shadows veiled our world, strange light patterns bloomed in the sky, enveloping our capital system in a kaleidoscopic mist. The two events are doubtlessly related, but our [root.GetTechnicianPlural] are still - literally - in the dark."
+ situation.2003.a: "Restore our power grid."
+
+ # Notify other countries about the Kaleidoscope
+ situation.2004.name: "$situation.2003.name$"
+ # first time
+ situation.2004.desc: "Our sensors report the apparition of kaleidoscopic light patterns in the §H[kaleidoscope_system.GetName]§! system. The nature of the phenomenon is unclear."
+ # moved again
+ situation.2004.desc.again: "The kaleidoscopic apparition we previously observed has moved to the §H[kaleidoscope_system.GetName]§! system."
+
+ # Project - mid-event
+ situation.2005.name: "Blackout"
+ situation.2005.desc: "We can find no defects in our power grid. Our generators are producing energy, but something is... absorbing it. It may be a result of the light patterns witnessed in our skies, the geometric nature of which betray an intelligent design.\n\nIs this thing - this living §YKaleidoscope§! - a malicious entity, or just a mindless mist? The answer is unclear."
+ situation.2005.a: "Attempt to detach it from our power grid."
+
+ # Project - end (first time)
+ situation.2010.name: "Black Start" # Translators note: https://en.wikipedia.org/wiki/Black_start
+ situation.2010.desc: "Thanks to the coordinated effort of our [owner.GetTechnicianPlural] and [owner.GetScientistPlural], the energy parasite has been cut from our power grid. Our longest night is over, but §Ythe Kaleidoscope§! still shines upon us, hungry for energy.\n\nWe have no way to communicate with it, and conventional weaponry won't work on a being of this kind. Our remaining options are to feed it just enough to keep it appeased, or try to starve it. Our operatives also suggested organizing an §YEspionage Operation§! to lure it towards another empire. Let someone else deal with it."
+ situation.2010.desc.again: "What our people saw from orbit was the repetition of a familiar pattern: all power on §H[capital_scope.GetName]§! shutting down, our capital hit by a worldwide blackout while shimmering lights danced in the sky.\n§YThe Kaleidoscope§! has returned! The energy parasite we once foisted onto others has been sent back to us.\n\nAccording to our experts, investing in a §Y$building_planetary_shield_generator$§! will prevent our capital from being targeted again, but it's too late for now: the energy parasite is here to stay."
+ situation.2010.a: "The unnatural monster has no space in our system!"
+ situation.2010.b: "We must befriend this wondrous creature!"
+ situation.2010.c: "It wants energy? Let it choke on it."
+ situation.2010.tooltip: "Unlocks Espionage Operation §Y$operation_kaleidoscope$§!"
+
+ # Project - end (subsequent times)
+ situation.2011.name: "$situation.2010.name$"
+ situation.2011.desc: "Following our proven and tested procedures, we detached the Kaleidoscope from §H[root.GetName]§!'s energy grid, restoring power to our capital."
+
+ ## Espionage Operation
+ # Operation - phase 1
+ situation.2020.name: "Infiltrating the Energy Grid"
+ situation.2020.desc: "By posing as technicians, our operatives successfully infiltrated the §H[target.GetName]§!'s energy districts. Their next assignment is to install a homing beacon to lure the energy parasite to the planet."
+
+ # Operation - phase 2
+ situation.2021.name: "Clear Skies"
+ situation.2021.desc: "The lights have faded from our skies, first announcing what our intelligence operatives later confirmed: our operators activated the energy beacon, luring §Ythe Kaleidoscope§! away!\n\nLet the §H[target.GetName]§! deal with it now."
+
+ situation.2025.name: "Offloading The Problem"
+ situation.2025.desc: "According to our espionage reports, §H[kaleidoscope_new_owner.GetName]§!, is currently suffering from an energy shortage. The §YKaleidoscope§! we gifted them seems to be the main cause of their economic troubles."
+
+ ## Random events
+ # Negative 1 - infests another planet
+ situation.2030.name: "Minor Infestation"
+ situation.2030.desc: "A starved Kaleidoscope has sunk its metaphorical teeth into §H[event_target:infested_planet.GetName]§!'s energy grid. The ensuing colony-wide blackout was dramatic, but not dissimilar from previous attacks. We know how to deal with this."
+
+ # Negative 2 - eats energy building
+ situation.2031.name: "Electroshock"
+ situation.2031.desc: "A ravenous Kaleidoscope is trying to forcibly connect itself to one our §YEnergy Nexus§! on §H[target.GetName]§!. This presents a remarkable opportunity to study the being's unique abilities, but we expect the building will be severely damaged as a result."
+ situation.2031.a: "Let it eat our energy. For Science!"
+ situation.2031.b: "Steal some energy back."
+
+ # Negative 3 - unnerving patterns (- pop happiness)
+ situation.2032.name: "Unnerving Patterns"
+ situation.2032.desc: "The Kaleidoscope trembles nervously, filling our skies with jarring, uneven patterns of light. Our people can't help but find the spectacle unnerving."
+
+ # Negative 4 - ominous patterns (spiritualists)
+ situation.2033.name: "Ominous Patterns"
+ situation.2033.desc: "The Kaleidoscope throbs like an open wound, filling our skies with ominous, sickly patterns. Our priests believe it an ill omen. It may be wise to sacrifice some energy to the creature, to quench its hunger and appease our people's fears."
+ situation.2033.a: "Offer Energy to the Kaleidoscope."
+ situation.2033.b: "We shall not bend to its will."
+
+ # Negative 5 - slow ships
+ situation.2034.name: "Pilfering Patterns"
+ situation.2034.desc: "Hungry for energy, the Kaleidoscope has learned how to siphon energy from our fleet. The power drain is minimal, but is having a detectable impact on our ships' speed."
+ 
+ # Positive 1 - soothing patterns (unity)
+ situation.2037.name: "Soothing Patterns"
+ situation.2037.desc: "A happy Kaleidoscope fills [owner.capital_scope.GetName]'s skies with pleasing shapes, fractals melting into other fractals in ever-changing waves of wonder.\n\nThe planet stops. Admires. Breathes. "
+
+ # Positive 2 - dazzling patterns (science)
+ situation.2038.name: "Dazzling Patterns"
+ situation.2038.desc: "Could the shifting patterns of the Kaleidoscope be a form of communication? Or are they an autonomous process, more akin to breathing? Our [root.GetScientistPlural] still don't have an answer. The Kaleidoscope is providing us with an invaluable amount of scientific data."
+
+ ## Endings
+ # Kaleidoscope explodes! - Good ending
+ situation.2041.name: "Blooming Kaleidoscope"
+ situation.2041.desc: "We have been blessed to experience the galaxy's most splendid light show: kaleidoscopic petals folding into themselves; blooming; exploding! However, our instruments tell a less triumphant story.\n\nThe energy being became so full of power it collapsed into itself like a dying star. From the devastation, our probes retrieved a crystalline cluster, shaped very much like a flower blossom. According to preliminary studies, the 'flower' can magnify the intensity of the faintest light ray, breaking a few known laws of physics in the process. Our [root.owner.GetScientistPlural] hypothesize the flower is merely the visible part of a larger construct - a multi-dimensional house of mirrors where light beams are infinitely reflected and recombined."
+
+ # Kaleidoscope explodes! - Good ending - Notifying other countries
+ situation.2042.name: "$situation.2041.name$"
+ situation.2042.desc: "Sensors report the kaleidoscopic pattern in the §H[kaleidoscope_system.GetName]§! system just bloomed, disappearing in a final burst of colorful patterns. Must have been quite the spectacle."
+
+ # Kaleidoscope explodes! - Bad ending
+ situation.2043.name: "Exploding Kaleidoscope"
+ situation.2043.desc: "When the Kaleidoscope folded into itself, just for a second, it looked like the most delicate crystalline flower. However, the ensuing explosion was anything but gentle: a coruscating boom that scorched the system and overloaded all our electronic devices, frying our energy grid.\n\nRepairs are already underway, but it will take some time for us to get used to the newly empty sky."
+
+ # Kaleidoscope explodes! - Bad ending - Notifying other countries
+ situation.2044.name: "$situation.2043.name$"
+ situation.2044.desc: "Sensors report the kaleidoscopic pattern in the §H[kaleidoscope_system.GetName]§! system just exploded, releasing an energy shockwave that doubtlessly damaged every structure in the system."
+
+ # Kaleidoscope fades away - owner
+ situation.2040.name: "Clear Skies"
+ situation.2040.desc: "After a final burst of red, undulating patterns, the Kaleidoscope faded away, its colorful tendrils dissipating like mist.\n\nAfter so much time spent beneath its lights, our skies look almost empty."
+
+ # Kaleidoscope fades away - notifying other countries
+ situation.2045.name: "Clear Skies"
+ situation.2045.desc: "Sensors report the kaleidoscopic pattern we detected in the [kaleidoscope_system.GetName] system has faded away."
+
+ # Kaleidoscope could get a Dyson sphere?
+ situation.2048.name: "Endless Hunger"
+ situation.2048.desc: "The Kaleidoscope has proven to be a strangely amiable neighbor, but keeping it sated has proven to be a challenge. Would a Dyson Sphere quench its endless thirst for energy?"
+ situation.2048.a: "Modify a Dyson Sphere for the Kaleidoscope."
+ situation.2048.a.tooltip: "Unlock a new Dyson Sphere upgrade."
+ situation.2048.b: "We can't spare the energy."
+ 
+ # DiScO EnDiNg
+ situation.2049.name: "Wonder Sphere"
+ situation.2049.desc: "The Kaleidoscope has latched onto the modified Dyson Sphere we provided, consuming the energy of a star and extending its colorful petals to encompass the whole system. According to our data, the energy being is now in a state of constant, controlled overload, perpetually growing new buds and bursting in an endless cycle akin to death and rebirth.\n\nWe do not know if the being is capable of thought, but we hope its existence is now as pleasant as the patterns of light it produces."
+
+
+ ## Projects and Operations
+ # Project (first time)
+ KALEIDOSCOPE_INFESTATION_FIRST: "Power Outage"
+ KALEIDOSCOPE_INFESTATION_FIRST_DESC: "A global failure of the energy grid has plunged our capital into total darkness. We must restore §H[root.GetName]§!'s power infrastructure and determine what is taking place."
+
+ # Project (following times)
+ KALEIDOSCOPE_INFESTATION: "Color Bleed"
+ KALEIDOSCOPE_INFESTATION_DESC: "Once again, the Kaleidoscope has latched to our power grid, consuming our energy and plunging the planet into darkness.\n\nFortunately, we now know how to respond."
+
+ # Espionage Operation
+ operation_kaleidoscope: "Lure the Kaleidoscope"
+ operation_kaleidoscope_desc: "By planting a homing beacon in another empire's energy districts, we can send the energy being to infect another galactic power."
+ operation_kaleidoscope_shielded_world: "Their capital world is protected by a §Y$building_planetary_shield_generator$§!."
+ operation_kaleidoscope_previous_owner: "They won't let us get past their security again so soon."
+ operation_kaleidoscope_on_success: "$IF_SUCCESSFUL|E$\nThe Kaleidoscope will be passed to [root.target.GetName], infecting their capital."

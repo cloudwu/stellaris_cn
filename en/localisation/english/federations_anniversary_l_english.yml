@@ -1094,44 +1094,164 @@
  spifed_jointop_mixed_desc:0 "The Ecumenical Council held by our federation was a partial success."
  spifed_jointop_xpboost:0 "Experience from Joint Operation"
 
-
 ###########
 # HABITATS
 ###########
 
+ NAMEPLATE_EMPTY_STRING: "$ttt$"
+ REQUIREMENTS_HEADER: "§ERequirements:§!"
+ EFFECTS_HEADER: "§EEffects:§!"
+
+ TOAST_HABITAT_BUILT_TITLE: "Habitat Complex Built"
+ TOAST_HABITAT_BUILT_DESC: "The [target_habitat.GetName] is now complete."
+
+ TOAST_ORBITAL_BUILT_TITLE: "Orbital Built"
+ TOAST_ORBITAL_BUILT_DESC: "An Orbital has been constructed in orbit of [target_planet.GetName]"
+
  d_hab_nanites_1:0 "Nanite Deposit"
- d_hab_nanites_1_desc:0 "This habitat is built near an exploitable source of nanites."
+ d_hab_nanites_1_desc:1 "This $habitat_complex$ is built near an exploitable source of nanites."
+
+ UNLOCKS_ORBITAL: "§HUnlocks Orbital:§!"
+ tech_habitat_1:0 "Orbital Habitats"
+ tech_habitat_1_desc:0 "Allows the construction of largely self-sustaining Orbital Habitats."
+ allow_habitats:1 "§HUnlocks Megastructure:§! $habitat_central_complex$\n$UNLOCKS_ORBITAL$ $major_orbital_plural$\n$UNLOCKS_ORBITAL$ $minor_orbital_plural$"
 
  tech_habitat_2:1 "Habitat Expansion"
  tech_habitat_2_desc:0 "Our early habitats were primitive things compared to the efficient designs we can now develop."
- tech_habitat_2_effect:1 "Our §YOrbital Habitats§! can be upgraded into §YAdvanced Habitats§! using a planetary decision."
+ tech_habitat_2_effect:2 "$allow_habitat_upgrade$"
 
  tech_habitat_3:0 "Advanced Space Habitation"
  tech_habitat_3_desc:0 "Years of improvements to our §YOrbital Habitats§! have led us to create newer more effective designs."
- tech_habitat_3_effect:0 "Our §YAdvanced Habitats§! can be further upgraded using a planetary decision."
+ tech_habitat_3_effect:1 "$allow_habitat_2_upgrade$"
 
- habitat_1:0 "Advanced Habitat"
+ habitat_1:1 "Expanded Habitat Complex"
  habitat_1_DESC:0 "$habitat_0_DESC$"
- habitat_2:0 "Habitat World"
+ habitat_2:1 "Advanced Habitat Complex"
  habitat_2_DESC:0 "$habitat_0_DESC$"
 
- allow_habitat_upgrade:0 "§HUnlocks Station Upgrade:§! $habitat_1$"
- allow_habitat_2_upgrade:0 "§HUnlocks Station Upgrade:§! $habitat_2$"
+ allow_habitat_upgrade:1 "§HUnlocks Planetary Decision:§! $decision_upgrade_habitat$"
+ allow_habitat_2_upgrade:1 "§HUnlocks Planetary Decision:§! $decision_upgrade_habitat_2$"
 
- decision_upgrade_habitat:0 "Upgrade Habitat"
- decision_upgrade_habitat_effects:1 "Upgrades this §HOrbital Habitat§! into an §H$habitat_1$§!, granting §Y2 Additional Districts§!."
- decision_upgrade_habitat_effects_regularempire:1 "Upgrades this §HOrbital Habitat§! into an §H$habitat_1$§!, granting §Y2 Additional Districts§! and access to basic housing buildings, or advanced housing buildings if you possess the §Y$ap_voidborn$§! Ascension Perk."
- decision_upgrade_habitat_effects_short:1 "Upgrades this §HOrbital Habitat§! into an §H$habitat_1$§!."
+ decision_upgrade_habitat:1 "Upgrade to $habitat_1$"
+ decision_upgrade_habitat_effects_short:1 "$decision_upgrade_habitat_effects$"
+
+ decision_upgrade_habitat_effects:1 "£mod_pop_environment_tolerance£ $MOD_POP_ENVIRONMENT_TOLERANCE$: §G+10%§!\n£mod_planet_max_districts_add£ Max District Slots from $major_orbital_plural$: §G+0.25§!\n£mod_planet_max_buildings_add£ $MOD_PLANET_MAX_BUILDINGS_ADD$ from $major_orbital_generic_plural$: §G+0.25§!\n£mod_planet_max_branch_office_buildings_add£ $MOD_PLANET_MAX_BRANCH_OFFICE_BUILDINGS_ADD$: §G+1§!"
  decision_upgrade_habitat_desc:0 "$tech_habitat_2_desc$"
+ requires_orbital: "$TRIGGER_FAIL$§RRequires an Orbital present§!"
 
- decision_upgrade_habitat_2:0 "$decision_upgrade_habitat$"
- decision_upgrade_habitat_2_effects:0 "Further upgrades this §H$habitat_1$§!, granting §Y2 Additional Districts§!."
- decision_upgrade_habitat_2_effects_short:0 "Upgrades this §H$habitat_1$§! into a §H$habitat_2$§!."
+ decision_upgrade_habitat_2:0 "Upgrade to $habitat_2$"
+ decision_upgrade_habitat_2_effects_short:1 "$decision_upgrade_habitat_effects$"
  decision_upgrade_habitat_2_desc:0 "$tech_habitat_3_desc$"
 
- ap_voidborn_habitat_effect:0 "§YHabitats§! owned by our Empire have §Y2 Additional Building Slots§!. Our upgraded habitats can support advanced housing buildings."
+ max_one_orbital_per_system: "$TRIGGER_FAIL$§RWe can only build one Orbital of this type per system§!"
+
+ d_system_resources: "Orbital Resources"
+ d_system_resources_desc: "Construction of Orbitals around major and minor celestial bodies throughout the system feeds the resource requirements of this growing Orbital Complex."
+ system_resources_tooltip: "The §Y[solar_system.GetName]§! System can support: $TABBED_NEW_LINE$ Major Orbitals: §Y[solar_system.GetNumMajorOrbitals]/[solar_system.GetMaxMajorOrbitals]§! $TABBED_NEW_LINE$ Minor Orbitals: §Y[solar_system.GetNumMinorOrbitals]/[solar_system.GetMaxMinorOrbitals]§!\n\nOrbitals currently provide:"
+
+ d_ruined_major_orbital: "Ruined Major Orbital"
+ d_ruined_major_orbital_desc: "This orbital has experienced a catastrophic hull failure. Repairs must be done before habitation functions can be resumed."
+
+ d_ruined_minor_orbital: "Ruined Minor Orbital"
+ d_ruined_minor_orbital_desc: "$d_ruined_major_orbital_desc$"
+
+ habitat_0_MEGASTRUCTURE_DETAILS:2 "§HHabitat§!\nAn §Y$pc_habitat$§! is a self-sustaining space station designed for permanent habitation."
+ habitat_0_CONSTRUCTION_INFO_DELAYED:5 "A §Y$major_orbital$§! will also be constructed, granting:\n$t$- $major_orbital_effect$"
+ habitat_0:0 "Habitat"
+ habitat_0_DESC:0 "A habitation station that orbits an uninhabitable planet, capable of housing several §HPops§! and §HBuildings§! away from the surface."
+
+ habitat_central_complex_ruined: "Ruined $habitat_central_complex$"
+ habitat_central_complex_ruined_DESC: "The $habitat_central_complex$ might once have been a lively and bustling structure. Now it has been reduced to a shattered mausoleum."
+ habitat_central_complex_ruined_MEGASTRUCTURE_DETAILS: ""
+ habitat_central_complex_restored: "$habitat_central_complex$"
+ habitat_central_complex_restored_DESC: "$habitat_central_complex_DESC$"
+
+ cant_build_on_habitat:0 "§RCan't be built on Habitats§!"
+
+ habitat_complex: "Habitat Complex"
+ habitat_complex_plural: "Habitat Complexes"
+
+ SHIP_GRAPHICS_HABITAT_CENTRAL_COMPLEX_DESC: "$habitat_central_complex_DESC$"
+
+ habitat_central_complex: "Habitat Central Complex"
+ habitat_central_complex_plural: "Habitat Central Complexes"
+ habitat_central_complex_DESC: "The central orbital of a §Y$habitat_complex$§!, capable of housing several £pop£ §YPops§! and providing space for £building£ §YBuildings§! and £district£ §YDistricts§! in orbit of uninhabitable planets."
+ habitat_central_complex_MEGASTRUCTURE_DETAILS: "A §Y$habitat_complex$§! is a collection of self-sustaining orbitals designed for permanent habitation."
+ habitat_central_complex_CONSTRUCTION_INFO_DELAYED: "$REQUIREMENTS_HEADER$ $major_orbital_requirements$ \n\n$EFFECTS_HEADER$ $NEW_LINE$- A Colonisable (Size: £planetsize£ 6) §YHabitat§! will be created. $NEW_LINE$- $habitat_0_CONSTRUCTION_INFO_DELAYED$"
+
+
+ requires_habitat_central_complex: "$TRIGGER_FAIL$§RRequires a $habitat_central_complex$ present in the system§!"
+ requires_not_habitat_central_complex: "$TRIGGER_FAIL$§RCannot build due to existing $habitat_central_complex$ in the system§!"
+
  add_research_options_voidborn:0 "Research options gained after upgrading a Habitat:\n£engineering_research£§Y$tech_habitat_3$§!"
 
+ HABITAT_PLANET_NAME:1 "[FROM.from.solar_system.GetName] Habitat Complex"
+ TARGET_ORBITAL_NAME: "[FROM.from.planet.GetName] Orbital"
+
+ orbital_DESC_GENERIC: "A basic orbital designed to provide additional living and working quarters for the population of the local §Y$habitat_central_complex$§!."
+ orbital_MEGASTRUCTURE_DETAILS_ENDING: "is a basic orbital designed to provide additional living and working quarters for the population of the local §Y$habitat_central_complex$§!."
+ orbital_DELAYED_START: "- §Y$habitat_central_complex$§!:\n$t$- "
+
+ major_orbital: "Major Orbital"
+ major_orbital_plural: "Major Orbitals"
+ major_orbital_effect: "£mod_planet_max_districts_add£ Max District Slots: §G+0.50§!\n$t$- $orbital_effect$"
+ major_orbital_NAME: "$major_orbital$"
+ major_orbital_DESC: "$orbital_DESC_GENERIC$"
+ major_orbital_MEGASTRUCTURE_DETAILS: "A §Y$major_orbital$§! $orbital_MEGASTRUCTURE_DETAILS_ENDING$"
+ major_orbital_CONSTRUCTION_INFO_DELAYED: "$REQUIREMENTS_HEADER$ $major_orbital_requirements$ \n\n$EFFECTS_HEADER$ $NEW_LINE$$orbital_DELAYED_START$$major_orbital_effect$"
+ major_orbital_requirements: "$NEW_LINE$- $major_planetary_body_requirements$"
+ major_planetary_body_requirements: "Must be built in orbit of a major planetary body"
+ orbital_effect: "Depending on planetary deposit:\n$tt$- £mod_district_hab_science_max£ §Y$district_hab_science_plural$§!: §G+3§!\n$tt$- £mod_district_hab_energy_max£ §Y$district_hab_energy_plural$§!: §G+3§!\n$tt$- £mod_district_hab_mining_max£ §Y$district_hab_mining_plural$§!: §G+3§!\n$tt$- £mod_planet_max_buildings_add£ §Y$MOD_PLANET_MAX_BUILDINGS_ADD$§!: §G+0.50§!"
+
+ minor_orbital: "Minor Orbital"
+ minor_orbital_plural: "Minor Orbitals"
+ minor_orbital_effect: "$orbital_effect$"
+ minor_orbital_NAME: "$minor_orbital$"
+ minor_orbital_DESC: "$minor_orbital_DESC_GENERIC$"
+ minor_orbital_MEGASTRUCTURE_DETAILS: "A §Y$minor_orbital$§! $orbital_MEGASTRUCTURE_DETAILS_ENDING$"
+ minor_orbital_CONSTRUCTION_INFO_DELAYED: "$REQUIREMENTS_HEADER$$minor_orbital_requirements$ \n\n$EFFECTS_HEADER$ $NEW_LINE$$orbital_DELAYED_START$$minor_orbital_effect$"
+ minor_orbital_requirements: "$NEW_LINE$- $minor_planetary_body_requirements$"
+ minor_planetary_body_requirements: "Must be built in orbit of a minor planetary body (asteroid or moon)"
+ requires_is_minor_planetary_body: "$TRIGGER_FAIL$§R$minor_planetary_body_requirements$§!"
+
+ major_orbital_resource: "Resource Extraction Orbital"
+ major_orbital_resource_plural: "Resource Extraction Orbitals"
+ minor_orbital_resource: "$major_orbital_resource$"
+ minor_orbital_resource_plural: "$major_orbital_resource_plural$"
+
+ major_orbital_mining: "Astro-Mining Orbital"
+ major_orbital_mining_plural: "Astro-Mining Orbitals"
+ minor_orbital_mining: "$major_orbital_mining$"
+ minor_orbital_mining_plural: "$major_orbital_mining_plural$"
+ num_mining_orbitals: "\nCurrent $major_orbital_mining_plural$: §Y[solar_system.GetNumOrbitalsMining]/[solar_system.GetMaxOrbitalsMining]§!"
+
+ major_orbital_science: "Zero-G Research Orbital"
+ major_orbital_science_plural: "Zero-G Research Orbitals"
+ minor_orbital_science: "$major_orbital_science$"
+ minor_orbital_science_plural: "$major_orbital_science_plural$"
+ num_science_orbitals: "\nCurrent $major_orbital_science_plural$: §Y[solar_system.GetNumOrbitalsScience]/[solar_system.GetMaxOrbitalsScience]§!"
+
+ major_orbital_energy: "Reactor Orbital"
+ major_orbital_energy_plural: "Reactor Orbitals"
+ minor_orbital_energy: "$major_orbital_energy$"
+ minor_orbital_energy_plural: "$major_orbital_energy_plural$"
+ num_energy_orbitals: "\nCurrent $major_orbital_energy_plural$: §Y[solar_system.GetNumOrbitalsEnergy]/[solar_system.GetMaxOrbitalsEnergy]§!"
+
+ major_orbital_generic: "Housing Orbital"
+ major_orbital_generic_plural: "Housing Orbitals"
+ minor_orbital_generic: "$major_orbital_generic$"
+ minor_orbital_generic_plural: "$major_orbital_generic_plural$"
+ num_generic_orbitals: "\nCurrent $major_orbital_generic_plural$: §Y[solar_system.GetNumOrbitalsGeneric]/[solar_system.GetMaxOrbitalsGeneric]§!"
+
+# Knights of the Toxic God
+ major_orbital_knights: "Demesne Outpost"
+ major_orbital_knights_plural: "Demesne Outposts"
+ major_orbital_knights_effect: "£mod_planet_max_districts_add£ Max District Slots: §G+0.50§! \n$t$- £mod_job_knight_add£ Knight Jobs: §G+1§!"
+ major_orbital_knights_NAME: "$major_orbital_knights$"
+ major_orbital_knights_DESC: "$orbital_DESC_GENERIC$"
+ major_orbital_knights_MEGASTRUCTURE_DETAILS: "An §Y$major_orbital_knights$§! $orbital_MEGASTRUCTURE_DETAILS_ENDING$"
+ major_orbital_knights_CONSTRUCTION_INFO_DELAYED: "$REQUIREMENTS_HEADER$ $NEW_LINE$- $major_planetary_body_requirements$ $NEW_LINE$- §Y$habitat_central_complex$§! must have £building£ §Y$building_order_castle$§! or £building£ §Y$building_order_keep$§!\n\n$EFFECTS_HEADER$ $NEW_LINE$$orbital_DELAYED_START$$major_orbital_knights_effect$"
+ requires_knights_castle_or_keep: "$TRIGGER_FAIL$§RRequires a §Y$building_order_castle$§! or §Y$building_order_keep$§!§!"
 
 ###########
 # EDICTS

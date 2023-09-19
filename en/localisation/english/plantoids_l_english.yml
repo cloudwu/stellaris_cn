@@ -3,6 +3,169 @@
  # Plantoids Species Pack
  ########################
 
+ ### Fruitful Partnership Origin
+ ## By Giada Zavarise
+
+ feeding_station: "Fruit Garden"
+ feeding_station_plural: "Fruit Gardens"
+
+ origin_fruitful: "Fruitful Partnership"
+ origin_fruitful_desc: "This verdant civilization has developed a unique synergy with spaceborne fauna. By offering their fruits to these creatures, they entice the seed dispersers to aid their colonization efforts."
+ origin_tooltip_fruitful_effects: "- Space Fauna: Disperse ['concept_seed_pod', Seed Pods] throughout the galaxy \n- $AVAILABLE_STARBASE_BUILDINGS$ ['concept_sm_feeder', Starseed Gardens] \n- $AVAILABLE_BOMBARDMENT_STANCE$ ['concept_seed_bombing' ]\n- $HOME_SYSTEM$ ['concept_tiyanki' ] in a neighboring system"
+ civic_tooltip_hive_xenophile_or_pacifist: "Is some degree of §YXenophile§!, §YPacifist§!, or a §YGestalt Consciousness§!"
+
+ START_SCREEN_FRUITFUL_PLANTOID: "If your roots run deep, yet your spirit grows restless, let others carry your aches away. Let animals sniff your flowers, nourish themselves on your fruits, and bathe in the shadow of your leaves. Let them carry pollen and seeds to distant lands, so that your offspring can bury their roots on foreign soil. And when the wind brings you the sound of rustling leaves, you'll know your children have found a new home.\n\nSince time immemorial, we have worked with local fauna to spread our species across [GetHomeWorldName]. So when the time came to uproot ourselves, branches reaching further skyward, it was only natural we would also connect with the fauna of the void. They chew our fruits. They graze our leaves. And they'll carry our children to distant worlds, where they will bloom and be nurtured by alien suns.\n\nLet our seeds spread. Let the galaxy be our garden."
+ START_SCREEN_FRUITFUL_FUNGOID: "If your mycelium run deep, yet your spirit grows restless, let others carry your aches away. Let animals sniff your spores, nourish themselves on your stalks, and bathe in the shadow of your mushroom caps. Let them carry spores to distant lands, so that your offspring can bury their roots on foreign soil. And when the earths brings you the thrums of a new mycorrhizal network, you'll know your children have found a new home.\n\nSince time immemorial, we have worked with local fauna to spread our species across [GetHomeWorldName]. So when the time came to uproot ourselves, toadstools reaching further skyward, it was only natural we would also connect with the fauna of the void. They chew our fruiting bodies. They graze our gills. And they'll carry our children to distant worlds, where they will bloom and be nurtured by alien suns.\n\nLet our spores spread. Let the galaxy be our mushroom garden."
+
+ ## Techs
+ sm_feeder: "Starseed Garden"
+ sm_feeder_desc: "A vacuum garden for our Starbase, full of plants genetically enhanced to attract spaceborne fauna."
+ sm_feeder_tt: "Effects:\n$t$Lures Space Fauna to graze at the Starbase, collecting §YSeed Pods§! for dispersal"
+ sm_ring_feeder: "Orbital Garden"
+ sm_ring_feeder_desc: "A vacuum garden for our Orbital Ring, blooming with genetically enhanced plantlife designed to attract spaceborne fauna."
+
+ tech_critter_feeder: "Fruit Gardens"
+ tech_critter_feeder_desc: "Vacuum gardens full of bio-engineered fruits, genetically enhanced to attract spaceborne fauna."
+
+ sseeder: "Orchard Station"
+
+ has_origin_fruitful_special_project_key: "Empires with the §Y$origin_fruitful$§! Origin can use a §YSpecial Project§!"
+
+ seeded_planet_0_modifier: "Dormant Seed Pods"
+ seeded_planet_0_modifier_desc: "Strange seeds from an entirely different ecosystem lie dormant on this planet."
+ seeded_planet_0_modifier_tooltip: "$has_origin_fruitful_special_project_key$ to open the Seed Pods and colonize the planet."
+ seeded_planet_1_modifier: "Invasive Xenoflora"
+ seeded_planet_1_modifier_desc: "Seeds from another land have found fertile soil here, supplanting the local vegetation."
+ seeded_planet_1_modifier_tooltip: "$has_origin_fruitful_special_project_key$ to summon armies to appear on this planet during a war."
+ seeded_planet_2_modifier: "Spreading Invasive Xenoflora"
+ seeded_planet_2_modifier_desc: "Seeds from another land found fertile soil here, supplanting the local vegetation."
+ seeded_planet_2_modifier_tooltip: "$seeded_planet_1_modifier_tooltip$"
+ seeded_planet_3_modifier: "Overwhelming Invasive Xenoflora"
+ seeded_planet_3_modifier_desc: "Seeds from another land found fertile soil here, supplanting the local vegetation."
+ seeded_planet_3_modifier_tooltip: "$seeded_planet_1_modifier_tooltip$"
+
+ MESSAGE_FRUITFUL_SEED_PLANTED_TITLE: "Seed Pod Planted"
+ MESSAGE_FRUITFUL_SEED_PLANTED_OWNER: "Space fauna have brought our Seed Pods to $PLANET|Y$, in the $SYSTEM|Y$ system, where they generated a new forest."
+ MESSAGE_FRUITFUL_SEED_PLANTED_NO_OWNER: "Space fauna have brought our Seed Pods to $PLANET|Y$, in the $SYSTEM|Y$ system. They will lie dormant until we're ready to open them."
+
+ MESSAGE_FRUITFUL_SEED_LOST_TITLE: "Seed Pod Lost"
+ MESSAGE_FRUITFUL_SEED_LOST: "We lost contact with our Seed Pods on $PLANET|Y$. It's likely they got destroyed."
+
+ MESSAGE_FRUITFUL_SEED_CRITTER_TITLE: "Seeds Absorbed"
+ MESSAGE_FRUITFUL_SEED_CRITTER: "Space fauna visiting $SYSTEM|Y$ ate the fruits of our garden, and are now carrying our Seed Pods across the stars."
+
+ OPEN_SEED_PODS_PROJECT: "Open Seed Pods on [this.GetName]"
+ OPEN_SEED_PODS_PROJECT_DESC: "Space fauna have brought our dormant Seed Pods to §H[this.GetName]§!. By aiming a concentrated energy beam at the planet, we can stimulate their growth, turning an uninhabited rock into a verdant new colony."
+
+ WEEDS_ARMY_PROJECT: "Grow Armies on [this.GetName]"
+ WEEDS_ARMY_PROJECT_DESC: "Space fauna have brought our Seed Pods to §H[this.GetName]§! where they were cultivated and cared for by the §H[this.owner.GetName]§!. By aiming a concentrated energy beam towards the planet, we can stimulate growth, turning the forest into §HXenofloran Armies§!. The higher the level of the §HInvasive Xenoflora§! on the planet, the more armies will be spawned."
+
+ FRUITFUL_SEED_POD: "Seed Pod"
+
+ fruitful_army: "Xenofloran Army"
+
+ # Events
+ origin.7100.name: "Seed Dispersal"
+ origin.7100.desc: "For the galaxy's spaceborne fauna, we built a garden. We filled it with flowers, fruit and sticky seed pods, ready to latch to the skin of these magnificent creatures. But would these void-dwellers appreciate our banquet? As soon as they bit the first apple, our anxiety dissipated.\n\nSince time immemorial, we have offered fruit and shade to the animals on our planet. In return, they carried our seeds. Now, this ancient pact has been replicated at a galactic scale: spaceborne fauna will carry our §YSeed Pods§! with them as they travel. With a little luck, our seeds will fall on a §Hcolonizable planet§! where they will have everything they need to establish a new garden for our people. We need only direct an energy beam to activate them, allowing us to inhabit new planets without having to send a colony ship."
+ origin.7100.tooltip: "When entering a new system, Spaceborne Fauna will have a chance of leaving the §HSeed Pod§! on an habitable planet. Be patient."
+
+ origin.7304.name: "Coordinated Dispersal"
+ origin.7304.desc: "There are organic creatures in our fleet, all of whom share a taste for our starry fruit.\n\nIn the past, we always let others decide where our seeds would fall. Now we are the ones setting the course. A new feeling, but one we could get used to."
+
+ origin.7321.name: "Patience Bears Fruit"
+ origin.7321.desc: "Our §YSeed Pod§! on §H[from.GetName]§! opened, and the newly born [root.GetSpeciesNamePlural] have begun to dig roots."
+
+ origin.7326.name: "Mysterious Seeds"
+ origin.7326.desc.base: "The soil of [this.GetName] is littered by seed that don't appear to be part of the local ecosystem. With minimal amount of light and water, the seeds quickly developed, enveloping the planet in new forest and aiding our colonization efforts."
+ origin.7326.desc.knowowner: "$origin.7326.desc.base$\n\nAccording to our genetic analysis, these fast-growing, bio-engineered seeds have been developed by the §Y[seeds_owner.GetName]§!."
+ origin.7326.desc.notknowowner: "$origin.7326.desc.base$. Our scientists have been unable to determine the origin of the seeds, but one thing is certain: they are artificial in nature, bio-engineered to quickly take root in alien soil."
+ origin.7326.a.desc: "Unlocks the §Y$decision_uproot_weed$§! Decision on this planet."
+
+ origin.7327.name: "$origin.7326.name$"
+ origin.7327.desc.base: "While passing through the [this.solar_system.GetName] system, a herd of spaceborne fauna let an unidentified object fall onto the surface of [this.GetName]. We quickly reached the impact crater, only to find it filled with unfamiliar greenery. The fallen object resembled a colony ship: a seed pod containing all the necessities to start a new colony, from essential materials to freshly awakened colonists."
+ origin.7327.desc.knowowner: "$origin.7326.desc.base$\n\nAccording to our genetic analysis, these unusual seeds have been developed by the §Y[seeds_owner.GetName]§!."
+ origin.7327.desc.notknowowner: "$origin.7326.desc.base$\n\nThanks to the communication system in the seed pods, we were able to quickly establish contact with the empire the seed germinated from."
+ origin.7327.desc.moreseeds: "The xenoflora already on our planet grow even stronger."
+
+ origin.7328.name: "$origin.7321.name$"
+ origin.7328.desc: "Our colony ship just landed §H[from.GetName]§!, but our people were already there, lying dormant in the soil. The additional [root.owner.GetSpeciesNamePlural] and resources contained in the §YSeed Pod§! will help our colonists develop the planet.\n\nMay their roots spread far and wide."
+
+ origin.7400.name: "Outpost Deployed!"
+ origin.7400.desc: "Our distant [owner.GetColonistPlural] on §Y[Root.GetName]§! deployed an §Y$starbase_outpost$§! around the star, gaining control of the §Y[Root.GetStarName]§! system."
+
+ origin.7500.name: "Safety For The Spaceborne Fauna"
+ origin.7500.desc: "Our relationship with spaceborne creatures is fairly unique, but we are not alone in respecting their right to exist; a resolution that has just passed in the Galacitc Community will help protect the lives of these wondrous creatures."
+
+ origin.7510.name: "Danger For The Spaceborne Fauna"
+ origin.7510.desc: "Spaceborne creatures have always be our friends, but not all members of the Galactic Community share our love for the void-dwellers. The resolution they just passed puts the livehood of our friends - and ours - at a risk."
+
+ origin.7600.name: "You Reap What You Sow"
+ origin.7600.desc: "Our enemies think we will bend to their strength, like reeds blown down by the wind. They forget that plants have thorns.\n\nOur soldiers sleep in their ground. Should the need arise, we can turn our §HInvasive Xenoflora§! into armies, to protect what is ours and to strangle what they call their own. We need only to direct an energy beam to the desired planet in order to begin our invasion."
+
+ origin.7710.name: "You Reap What You Sow"
+ origin.7710.desc: "The §HInvasive Xenoflora§! on §H[from.GetName]§! suddenly sprouted limbs, turning into an army. The planet is under attack!"
+
+ MESSAGE_FRUITFUL_WEED_ARMY_TITLE: "Army Sprouted"
+ MESSAGE_FRUITFUL_WEED_ARMY: "The seeds on $PLANET|Y$ have grown into an army."
+
+ opinion_nice_forests: "Helpful Gardeners"
+ opinion_cut_our_forests: "Cut Our Garden"
+
+ opinion_voted_to_kill_tiyanki: "Voted To Harm Space Fauna"
+ opinion_voted_to_help_tiyanki: "Voted To Protect Space Fauna"
+
+ fruitful_partnership_chain_title: "Seed Dispersal"
+ fruitful_partnership_chain_desc: "Spaceborne fauna will carry our §YSeed Pods§! to distant lands. With a touch of starlight, our seeds can bloom into a new colony."
+
+ fruitful_partnership_war_chain_title: "Seeds Of War"
+ fruitful_partnership_war_chain_desc: "In times of war, our §YSeed Pods§! can blossom into armies, ready to defend our planets or to invade distant targets."
+
+ decision_uproot_weed: "Uproot Weeds"
+ decision_uproot_weed_desc: "Remove the $seeded_planet_2_modifier$."
+
+ ## Seed Bombing
+ bombardment_seed_bombing: "Seed Bombing"
+ bombardment_seed_bombing_desc: "$bombardment_seed_bombing$ carpets the planet with hyper-fertilized seed balls, causing an exploding growth.\n- §ENo§! damage to §YArmies§!\n- §HHeavy§! damage to §YPlanets§!\n- §ENo§! damage to §YPops§!\n- Will bombard undefended planets\n- Spawns blockers on the planet"
+
+ d_seed_bombing_plantoid_blocker: "£blocker£ Explosive Sylvan Growth"
+ d_seed_bombing_plantoid_blocker_desc: "This region of the planet has been infested by a constantly growing forest of alien flora."
+
+ d_seed_bombing_fungoid_blocker: "£blocker£ Explosive Fungal Growth"
+ d_seed_bombing_fungoid_blocker_desc: "This region of the planet has been infested by a constantly growing forest of alien fungi."
+
+ d_seed_bombing_blocker_custom_tooltip: "$d_decrepit_dwellings_custom_tooltip$\n"
+
+ origin.7201.name: "Explosive Growth"
+ origin.7201.desc: "Our colony on §H[this.GetName]§! is being bombarded with hyper-fertilized balls of seeds. New forests are sprouting everywhere, cracking floors, ruining buildings and filling the [this.GetPlanetHabitat] with rapid-growing xenoflora."
+ MESSAGE_FRUITFUL_SEED_BOMBING_TITLE: "Seed Bombing"
+ MESSAGE_FRUITFUL_SEED_BOMBING: "Seed bombing created a new blocker on $PLANET|Y$."
+
+ ## Critters interactions
+
+ # Amoebas
+ story.101.desc.fruitful: "$story.101.desc$ If pacified, they could prove themselves ideal carriers for our Seed Pods."
+ story.107.fruitful.desc: "$story.107.desc$ While they are mostly carnivorous, the meaty, bulbous fruits our researchers developed appeal to their tastes."
+ story.107.a.fruitful.tooltip: "Our §H$sm_feeder$§! are now capable of attracting §HSpace Amoeba§! fleets."
+
+ # Crystals
+ story.201.desc.fruitful: "$story.201.desc$ We're unsure these creatures are capable of eating, but if so, they could prove useful carrier for our seeds. Pacifying them would allow us to conduct further studies."
+ story.207.fruitful.desc: "$story.207.desc$ Developing a palatable fruit for these creatures has been a challenge. We're not sure if they're eating the glass-like pomes we created or if they just like to carry them around, enamored by their glossy surfaces. That's enough for our needs."
+ story.207.a.fruitful.tooltip: "Our §H$sm_feeder$§! are now capable of attracting §HCrystalline Entity§! fleets."
+
+ # Study the Tyanki and get their tech
+ origin.7000.name: "$story.501.name$"
+ origin.7000.desc: "The §YTiyanki§! are the first alien species we encountered, and we already learned much about these docile creatures.\n\nCapable of accessing some lower dimension of subspace, these spaceborne lifeforms roam from system to system with remarkable ease. They graze on gases common to the upper layers of many gas giants, but have taken a liking to our fruits. They will rarely, if ever, attack, even when provoked.\n\nThe perfect carrier for our seeds: calm, innocuous, almost boring. Do they hide any secret?"
+ origin.7000.a: "Dedicate further time to their study."
+ origin.7000.b: "We have other priorities."
+
+ TIYANKIS_PROJECT: "Tyanki Observation"
+ TIYANKIS_PROJECT_DESC: "Dedicating some space station personnel to the study of the Tyankis could give us further insights into the life of these pacific, mysterious voidborne creatures."
+
+ origin.7005.name: "$story.501.name$"
+ origin.7005.desc: "By studying the feeding habits of our voidborne friends, our scientists have made a scientific breaktrough. $tech_space_whale_weapon_1_desc$. This technology will doubtlessly prove useful."
+
+ ### Civics
+
  civic_idyllic_bloom:0 "Idyllic Bloom"
  civic_idyllic_bloom_desc:0 "This society has always spent much time on improving and caring for their environment, in pursuit of building a true paradise for its inhabitants."
  civic_hive_idyllic_bloom:0 "$civic_idyllic_bloom$"
@@ -11,6 +174,11 @@
  civic_tooltip_not_idyllic_bloom:0 "Does NOT have §Y$civic_idyllic_bloom$§! Civic"
 
  disables_idyllic_bloom:0 "§RChoosing this Ascension Perk will deactivate the $civic_idyllic_bloom$ Civic.§!"
+
+ gaia_seeder_bloomed_pops_effect: "Having completed transformation of [This.GetName] into a $pc_gaia$, the Gaia Seeder will now transform our population to better adapt them to this world.\n\nIncreases the effects of the §Y$trait_plantoid_bloomed$§! and §Y$trait_plantoid_budding$§! Traits by §G+50%§!."
+ gaia_seeder_bloom_timer_tooltip: "\nThe next Bloom on §Y[This.GetName]§! will occur on §Y[This.gaia_seeder_bloom_timer]§!."
+ MESSAGE_POPS_IDYLLIC_BLOOMED_TITLE: "Pops Bloomed"
+ MESSAGE_POPS_IDYLLIC_BLOOMED: "Our Gaia Seeder on $PLANET|Y$ has released another Bloom, improving $VALUE|Y$ £pops£ Pops."
 
  gaiaseeders_tomb_world:0 "$TRIGGER_FAIL$Requires £society£ §Y$tech_climate_restoration$§! to build on §YTomb Worlds§!."
  gaiaseeders_same_climate_start:0 "$TRIGGER_FAIL$Requires £society£ §Y$tech_terrestrial_sculpting$§! to build on"
@@ -89,16 +257,19 @@
  trait_advanced_radiotrophic:0 "$trait_plantoid_radiotrophic$"
  trait_advanced_radiotrophic_desc:0 "§LThrough advanced genetic engineering, this species is now partially sustained by low-energy radiation, and as such can thrive on the most inhospitable of worlds.§!"
  TRAIT_ADVANCED_RADIOTROPHIC_EFFECT:0 "$TRAIT_PLANTOID_PHOTOTROPHIC_EFFECT$\nThis £energy£ §YEnergy§! Upkeep is removed for Pops living on §YTomb Worlds§!."
- 
+
  trait_advanced_budding:0 "$trait_plantoid_budding$"
  trait_advanced_budding_desc:0 "§LChanges to their DNA sequence allow this species to reproduce by budding, in addition to the more conventional methods.§!"
 
+ trait_plantoid_bloomed: "Bloomed"
+ trait_plantoid_bloomed_desc: "This species has been exposed to the transformational effects of a Gaia Seeder, causing it to sprout mutualistic blooms of lichen when living on Gaia Worlds."
+ plantoid_bloomed_trait_tooltip: "Effects on Gaia Worlds:\n$t$$mod_planet_jobs_produces_mult$: §G+10%§!\n$t$$MOD_POP_GROWTH_SPEED$: §G+10%§!\n$t$$MOD_POP_AMENITIES_USAGE_MULT$: §G-10%§!\n$t$$MOD_POP_HOUSING_USAGE_MULT$: §G-10%§!\n\nThese effects are increased by a £building£ $building_gaiaseeders_4$."
 ### Catalytic Processing by Byron Aytoun
 
 # Regular
  civic_catalytic_processing:0 "Catalytic Processing"
  civic_catalytic_processing_desc:0 "By focusing their industrial efforts on catalytic chemistry, this civilization has unlocked the key to using organic materials in the construction of spacebound structures."
- civic_tooltip_catalytic_processing_effects:0 "Replaces £job_foundry£ §Y$job_foundry_plural$§! with £job_catalytic_technician£ §Y$job_catalytic_technician_plural$§!. $job_catalytic_technician_effect_desc$."
+ civic_tooltip_catalytic_processing_effects:0 "Replaces £job_foundry£ §Y$job_foundry_plural$§! with £job_catalytic_technician£ §Y$job_catalytic_technician_plural$§!. $job_catalytic_technician_effect_desc$.\n£job_chemist£ §Y$job_chemist_plural$§!, £job_translucer£ §Y$job_translucer_plural$§!, and £job_gas_refiner£ §Y$job_gas_refiner_plural$§! have their $r_minerals$ Upkeep replaced with $r_food$ Upkeep."
 
 # Corporate
  civic_corporate_catalytic_processing:1 "Catalytic Recyclers"
@@ -108,12 +279,14 @@
 # Hive Mind
  civic_hive_catalytic_processing:1 "Organic Reprocessing"
  civic_hive_catalytic_processing_desc:0 "The Hive Mind reprocesses excess organic matter into advanced resources suitable for spacebound structures."
- civic_tooltip_hive_catalytic_processing_effects:0 "Replaces £job_alloy_drone£ §Y$job_alloy_drone_plural$§! with £job_catalytic_drone£ §Y$job_catalytic_drone_plural$§!. $job_catalytic_drone_effect_desc$."
+ civic_tooltip_hive_catalytic_processing_effects:0 "Replaces £job_alloy_drone£ §Y$job_alloy_drone_plural$§! with £job_catalytic_drone£ §Y$job_catalytic_drone_plural$§!. $job_catalytic_drone_effect_desc$.$catalytic_gestalt_additional_effects$"
+
+ catalytic_gestalt_additional_effects: "\n£job_chemist_drone£ §Y$job_chemist_drone_plural$§!, £job_translucer_drone£ §Y$job_translucer_drone_plural$§!, and £job_gas_refiner_drone£ §Y$job_gas_refiner_drone_plural$§! have their $r_minerals$ Upkeep replaced with $r_food$ Upkeep."
 
 # Machine Intelligence
  civic_machine_catalytic_processing:1 "$civic_hive_catalytic_processing$"
  civic_machine_catalytic_processing_desc:0 "The Machine Intelligence reprocesses redundant organic matter into advanced resources suitable for spacebound structures."
- civic_tooltip_machine_catalytic_processing_effects:0 "Replaces £job_fabricator£ §Y$job_fabricator_plural$§! with £job_catalytic_drone£ §Y$job_catalytic_drone_plural$§!. $job_catalytic_drone_effect_desc$."
+ civic_tooltip_machine_catalytic_processing_effects:0 "Replaces £job_fabricator£ §Y$job_fabricator_plural$§! with £job_catalytic_drone£ §Y$job_catalytic_drone_plural$§!. $job_catalytic_drone_effect_desc$.$catalytic_gestalt_additional_effects$"
 
 # Regular & Corporate
  job_catalytic_technician:0 "Catalytic Technician"
@@ -132,3 +305,8 @@
  mod_job_catalytic_drone_add:0 "$job_catalytic_drone$ Jobs"
  mod_job_catalytic_drone_per_pop:0 "§G+1§! $job_catalytic_drone$ Job per $VALUE$ Pops"
  mod_job_catalytic_drone_per_pop_short:0 "\n§G+1§! £mod_job_catalytic_drone_add£ per $VALUE$ £pop£"
+
+ ### Invasive Species trait
+ trait_invasive: "Invasive Species"
+ TRAIT_INVASIVE_EFFECT: "§YCan only select negative or botanical traits§!\n\nHabitability: §G+5%§! for each negative trait selected\nPop Growth Speed: §G+5%§! for each negative trait selected"
+ trait_invasive_desc: "Rapid reproduction. High dispersal ability. Zero useful capabilities."

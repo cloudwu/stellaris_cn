@@ -294,7 +294,7 @@
  OPINION_LEVEL_TREND:0 "按此趋势在$MONTHS$月后我们关系将变为$RELATION$。"
 
  requires_terrible_opinion_or_supremacist:2 "$TRIGGER_FAIL$§R需要$OPINION_TERRIBLE$，§Y劲敌§!，曾派出§Y损害关系§!的特使，或者一方帝国要么是$diplo_stance_supremacist_name$$DIPLOMACY_STANCE$、$diplo_stance_animosity_name$$DIPLOMACY_STANCE$，或是§H$COUNTRY_FALLEN_EMPIRE$§!。§!\n"
- requires_poor_or_worse_opinion:1 "$TRIGGER_FAIL$§R需要$OPINION_POOR$或派遣了一名§Y损害关系§!的特使§!。"
+ requires_poor_or_worse_opinion:1 "$TRIGGER_FAIL$§R需要$OPINION_POOR$或派出过一名§Y损害关系§!的特使§!。"
  requires_excellent_or_better_opinion:1 "$TRIGGER_FAIL$§R需要$OPINION_EXCELLENT$或派遣了一名§Y改善关系§!的特使。§!"
  requires_good_or_better_opinion:1 "$TRIGGER_FAIL$§R需要$OPINION_GOOD$或派遣了一名§Y改善关系§!的特使。§!"
  requires_neutral_or_better_opinion:1 "$TRIGGER_FAIL$§R需要$OPINION_NEUTRAL$或派遣了一名§Y改善关系§!的特使。§!"
@@ -308,6 +308,20 @@
  easy_rivalry:0 "宣布§Y劲敌§!和被宣布为§Y劲敌§!的限制条件均被放宽。\n"
  envoy_costs:0 "特使"
  diplo_closed_borders:0 "$opinion_closed_borders$"
+
+ requires_embassy_or_diplomatic_networking: "$TRIGGER_FAIL$§R需要建立§Y大使馆§!或§Y$tr_diplomacy_diplomatic_networking$§!传统§!"
+
+ requires_embassy_diplomatic_networking_or_universal_transactions: "$TRIGGER_FAIL$§R需要建立§Y大使馆§!、§Y$tr_diplomacy_diplomatic_networking$§!传统或是§Y$ap_universal_transactions$§!飞升特典§!"
+
+ requires_embassy_or_improving_relations: "$TRIGGER_FAIL$§R需要建立§Y大使馆§!或有特使进行§Y改善关系§!§!"
+
+ requires_10_trust_or_neutral: "$TRIGGER_FAIL$§R需要$OPINION_NEUTRAL$或§Y10§!信任度§!"
+
+ requires_20_trust_or_good: "$TRIGGER_FAIL$§R需要$OPINION_GOOD$或§Y20§!信任度§!"
+
+ requires_30_trust_or_excellent: "$TRIGGER_FAIL$§R需要$OPINION_EXCELLENT$或§Y30§!信任度§!"
+
+ requires_50_trust_or_excellent: "$TRIGGER_FAIL$§R需要$OPINION_EXCELLENT$或§Y50§!信任度§!"
 
  EMPIRE_OVERVIEW:0 "帝国概况"
 
@@ -360,13 +374,13 @@
  FEDERATION_XP_UNLOCKS:0 "§H等级解锁经验§!"
  FEDERATION_LEVEL_UNLOCK:0 "\t$LEVEL$级：$XP|Y0$经验值"
  FEDERATION_EXPERIENCE_DESC:0 "§E§H联邦经验§!在联邦团结一心时会增加，在联邦趋于分裂时减少。\n§H新特典和新能力§!将在随§H经验§!增加解锁§H等级§!后获得。§!"
- FEDERATION_ENVOYS:0 "特使"
- FEDERATION_ENVOYS_COHESION:0 "特使总数：$ENVOYS|+0$\n\t内聚度影响：$IMPACT|+2$"
+ FEDERATION_ENVOYS:1 "代表"
+ FEDERATION_ENVOYS_COHESION:1 "代表总数：$ENVOYS|+0$\n\t团结度影响：$IMPACT|+2$"
  FEDERATION_ENVOYS_COUNTRY:0 "\t$NAME$：$COUNT|Y0$"
- FEDERATION_ENVOYS_CONTRIBUTORS:0 "§E特使派出国：§!（$VALUE|Y$）"
+ FEDERATION_ENVOYS_CONTRIBUTORS:1 "§E代表派出国：§!（$VALUE|Y$）"
  FEDERATION_ENVOYS_SLACKERS:0 "未派遣特使的成员国："
  FEDERATION_ENVOYS_SLACKER:0 "\t$NAME|R$"
- FEDERATION_ENVOYS_DESC:0 "§E§H特使§!是联邦成员国派出的代表。他们通过努力工作保证联邦统一来提升§H联邦内聚度§!。§!"
+ FEDERATION_ENVOYS_DESC:0 "§E§H代表§!是联邦内成员派出的行政官。他们致力于保持联邦的统一，提升§H联邦团结度§!。§!"
  FEDERATION_LEVEL_PERKS_DESC:0 "§E等级$LEVEL$特典：§!"
  FEDERATION_LEVEL_PERK:0 "\t$PERK|Y$"
  FEDERATION_LEVEL_HAS_DECAYED:0 "§R我们目前的经验值不足以维持当前等级。我们将于$DAYS|Y日后失去特典加成。§!"
@@ -826,10 +840,10 @@
  damage_crisis_2_desc:0 "如果我们意图拥有足以统治的道德权威，我们需要向全银河展示我们不仅有捍卫银河免受外来威胁的意愿，更拥有这种能力。"
  envoy_unity_1:0 "联邦牵线"
  envoy_unity_1_desc:0 "联邦议程的仲裁员——我们的特使们——精明而积极地努力增进我们联邦成员国间的归属感和互利共赢。"
- envoy_unity_1_effect:2 "联邦任意成员国每向联邦派遣一名特使便获得§Y2§!凝聚力和§Y5%§!的信任度增长。"
+ envoy_unity_1_effect:2 "联邦任意成员国每指派一名行政官到联邦将获得§Y2§!凝聚力以及§Y5%§!的信任度增长。"
  envoy_unity_2:0 "联邦统一"
  envoy_unity_2_desc:1 "我们的特使日夜不息地工作，促进并鼓动联邦的议程和宗旨，激发了全银河的纽带关系和信心。"
- envoy_unity_2_effect:1 "联邦任意成员国每向联邦派遣一名特使便获得§Y2§!凝聚力并提高§Y5§!点信任度上限。"
+ envoy_unity_2_effect:1 "联邦任意成员国每指派一名行政官到联邦将获得§Y2§!凝聚力以及提升§Y5§!点信任度上限。"
  cohesion_join_1:0 "友善本心"
  cohesion_join_1_desc:0 "不论有怎样的文化和生理差异，我联邦的发展都是为了增进所有人的利益。"
  cohesion_join_1_effect:0 "新成员国对联邦内聚度的惩罚降低§Y50%§!。"
@@ -970,6 +984,7 @@
  federation_acceptance_strong_president:0 "是实力最强的主席国"
  federation_acceptance_weaker:0 "相对弱势"
  federation_acceptance_has_subjects:0 "拥有附属国"
+ federation_acceptance_has_no_subjects: "没有附属国"
 
  #Federation specific
  federation_acceptance_hegemony_or_default:0 "$default_federation$或$hegemony_federation$"
@@ -1759,12 +1774,12 @@
  galactic_community:0 "银河共同体"
  galactic_community_click_to_open:1 "§G点击开启$GALACTIC_COMMUNITY$§!"
  galactic_community_TITLE:0 "$galactic_community$"
- galactic_community_desc:0 "派出一名特使代表我们在银河共同体中的利益将使我们的外交话语权增强§G+10%§!。\n\n我们在§Y£time£360日§!内将无法重新派遣该特使。"
+ galactic_community_desc:0 "派出一名行政官代表我们在银河共同体中的利益将把我们的外交权重提升§G+10%§!。"
 
  galactic_empire_TITLE:0 "$GALACTIC_EMPIRE$"
- galactic_empire_desc:0 "向$GALACTIC_EMPIRE$派遣一位代表我方利益的特使将使我们的外交话语权提高§G+10%§!。\n\n我们无法在 §Y£time£ 360§!日内解除任命。"
+ galactic_empire_desc:0 "向$GALACTIC_EMPIRE$派遣一位代表我方利益的行政官将使我们的外交权重提高§G+10%§!。"
 
- federation_desc:0 "派出一名特使在我们的联邦中协调事务将提高联邦内聚度。\n\n我们在§Y£time£360日§!内将无法重新派遣该特使。"
+ federation_desc:0 "派出一名行政官使在我们的联邦中协调事务可提升联邦团结度。"
 
  default_envoy:0 "特使"
  ENVOY_OPINION_EFFECT:0 "$VAL|+=0$"
@@ -1774,13 +1789,15 @@
  IN_RECESS_HELP:0 "\n§H参议院目前休会。§!\n向队列中已提出议案给予支持以影响哪项议案会在下次会议召开时提交至参议院。"
 
  ENVOYS_HEADER:0 "§H特使§!"
- ENVOYS_STATUS:0 "$TOTAL|Y$名特使中的$ASSIGNED|Y$名已被分派任务。\n\n特使可以派往他国执行外交任务，也可以代表参加银河共同体，还可以维持联邦。\n\n特定§Y公民性§!、§Y建筑§!、§Y联邦特典§!或建造§Y星际大会堂§!可以提供额外的特使。"
+
+ ENVOYS_STATUS:0 "$TOTAL|Y$名特使中的$ASSIGNED|Y$名已被分派任务。\n\n特使可以同未知外星人进行第一次接触，派往他国执行外交任务，以及管理间谍网络。\n\n特定的§Y公民性§!，§Y建筑§!，§Y联邦增益§!，§Y领袖特质§!，或建造§Y星际集会§!将增加特使数量上限。"
+ ENVOYS_DESC: "特使可以分派任务。\n\n特使可以同未知外星人进行第一次接触，派往他国执行外交任务，以及管理间谍网络。\n\n特定的§Y公民性§!，§Y建筑§!，§Y联邦增益§!，§Y领袖特质§!，或建造§Y星际集会§!将增加特使的数量上限。"
  ASSIGN_ENVOY:0 "派遣特使"
  ASSIGN_ENVOY_NOT_MEMBER_TOOLTIP:0 "§H派遣特使§!\n§R只有银河共同体成员才能派遣特使§!"
- ASSIGN_ENVOY_TOOLTIP:0 "§H派遣特使§!\n§G点击开启派遣特使界面§!"
- ASSIGN_ENVOY_DELAYED:0 "§E派遣特使增强你的§!§H外交话语权§!"
+ ASSIGN_ENVOY_TOOLTIP:1 "§H指派行政官§!\n§G点击打开指派行政官界面§!"
+ ASSIGN_ENVOY_DELAYED:1 "§E指派行政官以提升你的§!§H外交权重§!"
  ENVOYS_ASSIGNED:0 "$ASSIGNED|Y$"
- ENVOYS_IN_THE_COMMUNITY:0 "§H每名派遣到共同作为代表的特使都会增强你的总外交话语权§!"
+ ENVOYS_IN_THE_COMMUNITY:1 "§H指派行政官到共同体作为代表的可提升你总体的外交权重。§!"
  ENVOYS_IN_THE_FEDERATION:0 "§H每名派遣到联邦的特使都会提高其内聚度§!"
 
  MESSAGE_SENATE_IN_SESSION_TITLE:1 "参议院开会中"
@@ -1831,7 +1848,7 @@
  CALL_IN_FAVOR_UNABLE:0 "我们无法请求人情支援。"
  CALL_IN_FAVOR_ONLY_IF_VOTING:0 "对于议案我们必须先表明立场，才能请求人情支援。"
  CALL_IN_FAVOR_ONLY_IF_IN_FAVOR:0 "只能在支持议案时才能请求人情支援。"
- CALL_IN_FAVOR_UNAVAILABLE:0 "我们没有可用的人情。可以通过与一个帝国交易来取得人情。"
+ CALL_IN_FAVOR_UNAVAILABLE:1 "我们没有可用的外交支持。"
  CALL_IN_FAVOR_ICON:0 "£call_favor£ $CALL_IN_FAVOR$"
  CLICK_CALL_IN_FAVOR:1 "§G点击此处以在该议案中请求人情支援增强外交话语权§!"
  CALL_IN_FAVOR_TOOLTIP:0 "§H请求人情支援§!"
@@ -1917,8 +1934,9 @@
  FROM_TECH_VALUE:0 "来自科技：$VALUE|Y$"
  NUM_ENVOYS_VALUE:0 "特使数量：$VALUE|Y$"
  FROM_COUNCIL_VALUE:0 "来自理事会：$VALUE|Y$"
- IMPROVE_RELATIONS_VALUE:0 "增进关系：$VALUE|+=0$（每月$INCREASE|+=0$）"
- HARM_RELATIONS_VALUE:0 "损害关系：$VALUE|+=0$（每月$DECREASE|+=0$）"
+ MISSING_DIPLOMACY_HEAD: "缺少的国务卿"
+ IMPROVE_RELATIONS_VALUE:1 "增进关系：$VALUE|+=0$（每月$INCREASE|+=0$）"
+ HARM_RELATIONS_VALUE:1 "损害关系：$VALUE|+=0$（每月$DECREASE|+=0$）"
 
  RELATION_LEVELS:0 "§H关系等级§!"
  RELATION_LEVEL_VALUE:0 "$LEVEL$（$LOWER|+0$到$UPPER|+0$）"
@@ -2161,7 +2179,7 @@
  LESSENGER_REMODEL:0 "放大信使"
  LESSENGER_REMODEL_TITLE:0 "放大信使"
  LESSENGER_REMODEL_DESC:0 "能与§Y小信使§!非凡的科技水平和能力相提并论的就是它可笑的规模了。飞船盛得下数千个建造它的渺小生物，但如果我们想要塞进最小的船员也必须对其进行大规模的改造。"
- lessenger_75:0 "小信使对于我们的船员来说还是太小了！"
+ lessenger_75:1 "小信使对于我们的船员来说还是太小了！"
  lessenger_50:0 "$lessenger_75$"
  lessenger_25:0 "$lessenger_75$"
 
@@ -2429,7 +2447,7 @@
  origin.1390.name:0 "寂静的货船"
  origin.1390.desc:0 "一进入星系，我们的探测器就发现了许多异常现象。\n\n最明显的信号是一个硕大无比的能量云，靠近检查后发现是数百条与之前发现相类似的更小的聚变引擎航迹组成的。必然有一支很庞大的舰队处于某种原因在此处逗留过。\n\n在这个“舰队停泊处”边上，我们的探测器发现了另一种信号。那是一艘被遗弃的运输船。这艘货船应该与边上的能量指征一样古老，不过其航迹指征与航迹团并不相同。\n\n我们应该靠近一些观察这艘废弃的舰船。"
  origin.1395.name:0 "创造者之力"
- origin.1395.desc:0 "这艘运输船里有一份日志。虽然因日久而受损，但仍可以恢复出不少数据。\n\n这艘运输船被那支巨大的舰队拦截。由于尚不明确的原因和方式，这艘运输船的船长最终与无情者舰队的司令谈了话。显然他们的谈话持续了数周，虽然不知道他们具体谈了什么，但是“力量的本质”这个说法被反复提到。\n\n那支舰队突然里去，而留下的那艘运输船则安然无恙。日志的最后一行援引自舰队司令：§Y“算了，放了他们吧。毁灭是很容易的事情，真正的力量是创造的能力。”§!\n\n我们已经分析了舰队的航迹，可以再度开始追踪。"
+ origin.1395.desc:0 "这艘运输船里有一份日志。虽然因时间流逝而老化，但仍可以恢复出不少数据。\n\n这艘运输船被那支巨大的舰队拦截。由于尚不明确的原因及方式，这艘运输船的船长最终与无情舰队的指挥官进行了谈话。他们的谈话似乎持续了数周，虽然不知道他们具体谈了什么，但是“力量的本质”这个说法被反复地提到。\n\n那支舰队突然离去，而留下的那艘运输船则安然无恙。日志的最后一行援引自指挥官：§Y“算了，放了他们吧。毁灭是很容易的事情，真正的力量是创造的能力。”§!\n\n我们已经分析了舰队的航迹，并可以重新起程追赶我们的目标。"
  origin.1400.name:0 "暴君的休憩"
  origin.1400.desc:0 "这里就是聚变引擎航迹的终点。如果有任何可能存在的无情舰队的遗留物，应该能在这里找到。\n\n目前为止传感器发现的唯一一个值得关注的读数似乎源自某种小型太空站。它以一定的间隔向外辐射着能量脉冲，然而除此之外它似乎没有任何其他的活动迹象。\n\n我们可以立刻展开调查。"
 
@@ -3062,8 +3080,8 @@
  origin.210.a.response:0 "谢谢你们。我们就知道指望你们[Root.GetName]准没错。"
  origin.210.b:0 "我们没有空闲的岗位，抱歉。"
  origin.210.b.response:0 "知道了。真是令人失望。也许把它说得像是请求一样确实是我们的问题。"
- origin.210.admiral:0 "一位[scion_master.GetSpeciesName]§H舰队司令§!加入了[Root.GetName]。"
- origin.210.governor:0 "一位[scion_master.GetSpeciesName]§H总督§!加入了[Root.GetName]。"
+ origin.210.admiral:0 "一位[scion_master.GetSpeciesName]§H指挥官§!加入了[Root.GetName]。"
+ origin.210.official:1 "一名[scion_master.GetSpeciesName]§H$official$§!加入[Root.GetName]。"
  origin.210.scientist:0 "一位[scion_master.GetSpeciesName]§H科学家§!加入了[Root.GetName]。"
  origin.210.general:0 "一位[scion_master.GetSpeciesName]§H将军§!加入了[Root.GetName]。"
  scion_leader_desc: "作为一位来自古老而休眠的帝国的尊贵客人，这位不安分的博学者在发展中的星系中寻求新的挑战。"
@@ -3780,7 +3798,3 @@
  DAYS_LEFT_COLORED:0 "$DAYS|Y$"
  DAYS_LEFT_WINNING_COLORED:0 "$DAYS|G$"
  DAYS_LEFT_LOSING_COLORED:0 "$DAYS|R$"
-
-
-
-

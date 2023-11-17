@@ -10,10 +10,10 @@ local function readlist(path, ...)
 end
 
 local data = {
-	official_cn = readlist("cn3.9", list, { ["_english"] = "_simp_chinese" }),
-	cloudwu_cn = readlist("cn3.8/localisation/english", list),
-	en_last = readlist("en3.8/localisation/english", list),
-	en_current = readlist("en/localisation/english", list),
+	official_cn = readlist("cn3.10", list, { ["_english"] = "_simp_chinese" }),
+	cloudwu_cn = readlist("cn_last", list),
+	en_last = readlist("en3.9", list),
+	en_current = readlist("en3.10", list),
 }
 
 local function english_only(en, s)

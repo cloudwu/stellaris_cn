@@ -18,7 +18,7 @@
  TUTORIAL_EMPIREVIEW_PLANETS_TITLE:1 "行星列表"
  TUTORIAL_EMPIREVIEW_PLANETS_DESC:5 "§S行星和星域§!界面提供了我们所有殖民星球的概览，包括其§S人口§!和§S资源产出§!。随着帝国的发展，星球可以被组成星域，这对管理庞大的帝国来说至关重要。\n\n§S星域§!可以在此处被设为自动分配，在自动模式下，星域可以设置专注并分配资源，以对其内行星进行建造并升级星球上的§S建筑§!和§S地区§!。"
  TUTORIAL_MILITARY_FLEET_TITLE:0 "军事舰队"
- TUTORIAL_MILITARY_FLEET_DESC:2 "§S军用舰队§!能够保护我们的帝国免受威胁……如果您有足够的野心的话，舰队所指即是帝国边疆。\n\n我们目前的§S军舰容量§!受限，但是您可以通过研发新科技、增加额外§S人口§!或者修建§S太空基地锚地§!来提升。\n\n我们可以为一支舰队指派一位§S舰队司令§!，不仅舰队的战斗力将会提升，还能从这位领袖身上得到其他的增益。"
+ TUTORIAL_MILITARY_FLEET_DESC:2 "§S军用舰队§!能够保护我们的帝国免受威胁……如果您有足够的野心的话，舰队所指即是帝国边疆。\n\n我们目前的§S军舰容量§!受限，但是您可以通过研发新科技、增加额外§S人口§!或者修建§S太空基地锚地§!来提升。\n\n我们可以为一支舰队指派一位§S指挥官§!，不仅舰队的战斗力将会提升，还能从这位领袖身上得到其他的增益。"
  TUTORIAL_SCIENCE_SHIP_TITLE:0 "科研船"
  TUTORIAL_SCIENCE_SHIP_DESC:4 "这是我们的§S科研船§!，您能够将其用于§S调查§!太空中的各类星体，为了探明各类星体上蕴藏的§S资源§!，所有的星球都需要进行调查勘探。\n\n我们的母星系已经被探明，所以您能够把注意力放在星系外。请选中科研船，并在§S银河地图§!上右击与母星系相邻的一个星系，选择§S调查星系§!。这艘船就将前往这个星系并对该星系内所有星体进行调查。"
  TUTORIAL_CONSTRUCTION_SHIP_TITLE:0 "工程船"
@@ -245,6 +245,8 @@
  advisor.1.desc_32:0 "你好啊，[root.GetPurityOrderRulerTitle]。\n\n$advisor.1.desc_keenminds$\n\n$advisor.1.desc_filler$"
  advisor.1.desc_33:0 "你好啊，[root.GetPurificationCommitteeRulerTitle]。\n\n$advisor.1.desc_keenminds$\n\n$advisor.1.desc_filler$"
  advisor.1.desc_34:0 "你好啊，$RT_OLIGARCH$。\n\n$advisor.1.desc_honortoserve$\n\n$advisor.1.desc_filler$"
+ advisor.1.desc_35: "你好啊，$RT_DEFENSIVE_UNION$。\n\n$advisor.1.desc_honortoserve$\n\n$advisor.1.desc_filler$"
+ advisor.1.desc_36: "你好啊，$RT_DIMENSIONAL_COVENANT$。\n\n$advisor.1.desc_honortoserve$\n\n$advisor.1.desc_filler$"
 
  advisor.1.desc_keenminds:0 "我是VIR——由我们文明中最热忱的头头脑脑们研发的合成智能原型机，以作为您的顾问。我会以最高的效率履行我的职责。"
  advisor.1.desc_honortoserve:0 "我是VIR——由军队在最高机密下研制的合成智能原型机。我很荣幸能成为您的顾问和战术分析师。"
@@ -427,6 +429,9 @@
  tutorial.1337.name:0 "小型文物"
  tutorial.1337.desc:2 "我们发现了一些§S稀有文物§!。稀有文物是一种深奥的资源，是一个用于描述我们不了解的、事实上可能无法解释的奇怪事物的笼统术语。无论具体是哪种物品，该资源都可经由§S$RELICS_AND_ARTIFACTS$§!界面执行多种多样的决议，该页面位于§S$TRADITION_VIEW_TITLE$§!界面内。"
 
+ tutorial.1340.name: "$astral_threads$"
+ tutorial.1340.desc: "我们发现了一些§S星界丝缕§!它们是时空压缩的细丝，是维度位面碰撞的产物。通常情况下，这些丝线只能从§S星界细缝§!中获取，或者进入§S星界裂隙§!中取回。\n\n我们可以通过§S星界行动§!（屏幕§S$topbar_button_discoveries_name$§!界面上的一个选项卡）使用该资源来执行各种操作。你可以通过探索更多的§S星界裂隙§!来解锁更多的行动。\n\n§S星界裂隙§!可以从§S星界细缝§!发展而来，也可以由其他异常事件产生。"
+
  tutorial.2000.name:0 "开展第一次接触"
  tutorial.2000.desc:1 "某些§S第一次接触§!会给出选项，让我们选择如何处理接触事项。这些选择也会长期影响同其它帝国的外交关系。"
  tutorial.2006.name:0 "已建立第一次接触"
@@ -551,7 +556,7 @@
  tutorial_16_chain_title:0 "教程：扩张舰队"
  tutorial_16_chain_desc:5 "我们必须组建一支强大的星际舰队，以确保[Root.GetName]的安全。\n\n目前来看，我们需要再建造几艘§S护卫舰§!。等到§S合金§!储量足够的时候，我们可以在§S太空基地§!中进行建造。新造的军舰会自动并入位于建造它的§S太空基地§!轨道上现有的舰队。\n\n为了最大化舰队的战斗力，我们可以为其指派一位§S舰队司令§!。这会让这支舰队在面对那些没有指挥官管辖的舰队时更具优势。"
  corvettes_built:0 "护卫舰建造完毕"
- admiral_assigned:0 "舰队司令部署完毕"
+ admiral_assigned:1 "指挥官已指派"
  tutorial_16_tooltip:0 "§S教程：扩张舰队§!已经加入到情报日志中"
  tutorial_17_chain_title:0 "教程：建立星域"
  tutorial_17_chain_desc:1 "能够直接被你掌控的星球数目是有限的。在屏幕顶部可以找到限制数目，超过限制时将会获得惩罚减成。这时，可以使用§S星域§!这个半自动分组，对星球进行掌控。如果想要创造新的星域，请使用屏幕顶部的下拉菜单，选择§S行星和星域§!，也可以直接使用键盘§SF5§!，然后点击右上方的§S创建新星域§!按键。\n\n现在可以进入§S星域管理模式§!了。在此模式中，可以指定构成新星域的行星。所有在该星系之中的行星都将自动加入星域管理。选择建立了我方殖民地的星系后，按下§S完成§!键。恭喜你，创造了属于自己的第一个星域！"
@@ -591,4 +596,3 @@
  tutorial_25_chain_desc:1 "我们建造外面的恒星上建造§S太空基地§!以此§S扩展我们的边境线§!。太空基地的存在象征着我们队这颗恒星的主权，我们能够利用它阻止任何我们接触过的外星种族——如果我们关闭了我们的边境线。\n\n选择一艘§S工程船§!，在舰队界面中点击§S建造太空基地§!，然后点击一颗恒星。§S不同于其他轨道基地，太空基地可以建造在我们的边境线之外。§!"
  frontier_outpost_built:1 "太空基地建造完成"
  tutorial_25_tooltip:2 "§S教程：太空基地§!已添加至情报日志"
-

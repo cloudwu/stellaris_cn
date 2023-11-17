@@ -153,6 +153,7 @@
  menp_undertaker_desc:3 "想象一下一整个生机勃勃、充满野心的物种——这样的存在必须被§R遏止§!。"
  menp_intimidation:0 "威胁"
  menp_intimidation_desc:2 "它们总有另一个选择。那就是去死。"
+ menp_intimidation_tt: "无视外交要求提议归顺。\n"
  menp_base_breaker:0 "基地破坏者"
  menp_base_breaker_desc:3 "火力即正义——我们拥有这样的能力，让一座要塞变成一只煮熟的鸭子。"
  menp_relentless_aggression:0 "无情侵略"
@@ -236,7 +237,7 @@
  espionage.1011.desc:1 "§Y[disavowed_agent_country.GetName]§!境内再也没有收到我们的那位除名特工发来的消息了。我们认为这个问题已经被解决了。\n\n我们也许永远也不会知道是否真的有一位前特工存在，也不会知道他是否真的持有有用的情报。如果这确系[disavowed_agent_country.GetAdj]的阴谋的话，我们可以放心地说：他们的诡计失败了。"
  espionage.1012.name:0 "破釜沉舟"
  espionage.1012.desc:1 "我们从§Y[disavowed_agent_country.GetName]§!收到了一份出离愤怒的声明。他们宣称受到了一位§H前[root.GetAdj]间谍§!的渗透，我们应该对此负责。此外，此人将会依据他们对“境外间谍”的相关政策受到一切可能的刑罚。\n\n$espionage.1012.desc.end$"
- espionage.1012.desc.governor:1 "我们收到了一份来自§Y[disavowed_agent_country.GetName]§!由[disavowed_agent_governor.GetName]发出的出离愤怒的公告。[disavowed_agent_governor.GetHeSheCap]宣称被某人渗透了，进而查明此人为§H前[root.GetAdj]间谍§!。[disavowed_agent_country.GetAdj]代表不过只言片语，却强烈表明了他们对于“境外间谍”的忍无可忍。\n\n$espionage.1012.desc.end$"
+ espionage.1012.desc.official:1 "我们收到了一份来自§Y[disavowed_agent_country.GetName]§!由[disavowed_agent_official.GetName]发出的非常愤怒的公告，宣称有个人前来与[disavowed_agent_official.GetHeSheCap]接触，却又表明自己曾是§H[root.GetAdj]间谍§!。[disavowed_agent_country.GetAdj]代表不过只言片语，却强烈表明了他们对于“异国特工”的忍无可忍。\n\n$espionage.1012.desc.end$"
  espionage.1012.desc.end:0 "如果这条信息属实，可能那位除名特工已经遭遇不测了。不管怎样，这件事都连带造成了些许外交结果。"
  espionage.1013.desc:1 "我们收到来自§Y[disavowed_agent_country.GetName]§!的一篇不寻常的通报，他们宣称已经被§H[root.GetAdj]前特工§!渗透。如果属实，那这位除名特工确实存在，并且已经迫于压力而背叛——他所面临的则是被[disavowed_agent_country.GetAdj]政府彻底消灭。通报是这么写的。\n\n[disavowed_agent_country.GetName]并没有清楚表明他们的下一步动向，但这样的人如果他还留在原处，必然还会被安置在层层监视之下。依照国际惯例，[disavowed_agent_country.GetName]已经因为这起“侵犯主权领域”事件签署了针对我们的外交制裁。"
  espionage.1016.name:0 "最终除名"
@@ -520,7 +521,7 @@
  operation.4005.name:0 "[crisis_beacon_crisis_country.GetName]已上钩"
  operation.4005.desc.contingency:0 "我们的研究者只能假设我方特工迅速而见机行事的思路奏了效，因为他们成功地引诱了一艘来自$CRISIS_TYPE_CONTINGENCY$威胁的舰队。无论是通过精妙的骇入协议，亦或是通过伪造某种形式的漏洞超载，我们的遥测扫描已经确认§Y[crisis_beacon_crisis_system.GetName]星系§!和[crisis_beacon_target_country.GetAdj]首都§Y[crisis_beacon_target_capital.GetName]§!之间传来了敌对的信号传输。\n\n无论§Y[crisis_beacon_target_country.GetName]§!在这个纷乱的时间点是否还有其他的顾虑：我们的行动保证他们至少又多了一件事可以操碎他们的心。"
  operation.4005.desc.graytempest:0 "吸引这个所谓的§P灰蛊风暴§!这样零散的实体的注意力，并不是什么难事。我们的特工成功地通过一个单发的、调制的载波成功地把灰蛊风暴指向了§H[crisis_beacon_target_country.GetName]§!。\n\n构建这个波充满挑战，因为§Y[crisis_beacon_crisis_system.GetName]星系§!和[crisis_beacon_target_country.GetAdj]的首都之间距离很长，使得§Y[crisis_beacon_target_capital.GetName]§!需要前所未有的能量维持。我们的团队采用了在一个远程发射器的电源组中触发一个不可控的连锁反应。该装置保持在一起的时间刚好足以将我们的诱饵传送到超空间。\n\n长距离遥测显示纳米虫群正向着§Y[crisis_beacon_target_country.GetName]§!前进。我们的研究人员还注意到在[crisis_beacon_crisis_system.GetName]附近发生了灾难性爆炸，这应该是我们的那位特工的功劳。"
- operation.4005.desc.marauders:0 "尽管他们最近表现得很团结，§P[raider_khanate.GetName]§!最后还是证明了自己只是头脑简单的猎捕者，轻易就被愤怒钓上了钩。我们的小队想方设法激怒了某位舰队司令，后者正甚嚣尘上地以超光速杀向[crisis_beacon_target_country.GetAdj]的首都§Y[crisis_beacon_target_capital.GetName]§!。\n\n我们的特工很确信任何倒霉到竖立在§Y[crisis_beacon_crisis_system.GetName]星系§!和[crisis_beacon_target_country.GetName]之间的太空基地都会作为东道主给这支掠夺者小分队表演一下什么叫做热锅上的蚂蚁。让我们希望这次牺牲没有白费。"
+ operation.4005.desc.marauders:0 "尽管他们最近表现得很团结，§P[raider_khanate.GetName]§!最后还是证明了自己只是头脑简单的猎捕者，轻易就被愤怒钓上了钩。我们的小队想方设法激怒了某位指挥官，后者正甚嚣尘上地以超光速杀向[crisis_beacon_target_country.GetAdj]的首都§Y[crisis_beacon_target_capital.GetName]§!。\n\n我们的特工很确信任何倒霉到竖立在§Y[crisis_beacon_crisis_system.GetName]星系§!和[crisis_beacon_target_country.GetName]之间的太空基地都会作为东道主给这支掠夺者小分队表演一下什么叫做热锅上的蚂蚁。让我们希望这次牺牲没有白费。"
  operation.4005.desc.swarm:0 "我们对§P$CRISIS_TYPE_PRETHORYN$§!的生物引擎研究的时间虽然不长，但是被证明十分有效。我们发明了一种合成化合物——生产起来很昂贵，运输起来也很困难——但是能够成功诱使一支舰队偏离虫群。\n\n这种化合物的附着性是如此之强，我方特工的命运现在就和竖在§Y[crisis_beacon_crisis_system.GetName]星系§!和[crisis_beacon_target_country.GetAdj]首都§Y[crisis_beacon_target_capital.GetName]§!之间的太空基地一样惨烈。一旦我方特工释放这种诱骗性的化合物，他们的命就没了。\n\n相比于四散而逃并搅乱虫群的路线，我们的小队决定花费剩余的时间确保没有留下任何行动的痕迹。§H[crisis_beacon_target_country.GetName]§!很快就会尝到我们的牺牲带来的后果。"
  operation.4005.desc.unbidden:1 "我们对抗§P$CRISIS_TYPE_UNBIDDEN$§!的努力终于有了成果，尽管代价十分的惨重。我们的特工成功地诱使一支异次元舰队认为他们在[crisis_beacon_target_country.GetAdj]领土腹地的一个次元锚正处于威胁。舰队现在正从§Y[crisis_beacon_crisis_system.GetName]星系§!向§Y[crisis_beacon_target_capital.GetName]§!开拔。\n\n$role_spymaster$[from.spynetwork.leader.GetName]会继续监视这一形势，但是看样子我们是没法见到我们的特工活着返回了。我们必须密切关注，并相信我们的诱敌方案有利于我们的计划。"
 
@@ -735,7 +736,7 @@
  envoy_events.100.b:0 "我们没空管这些滑稽的把戏。忽略掉。"
  envoy_events.100.c:0 "他们不值得受到我们的轻蔑。"
  envoy_events.101.name:0 "$envoy_events.100.name$"
- envoy_events.101.desc:0 "§H[from.GetName]§!说我们的特使的不轨行为使他们§P被冒犯§!。他们没有指出特使的名字，也没有描述侮辱的类型。相反，我们在收到了一阵怒骂后，通讯就突然中断了。\n\n外交上这种罕见的破坏可能是因为第三方团体插手；也可能是纯粹的误解。"
+ envoy_events.101.desc:0 "§H[from.GetName]§!说我们的一名官员的不轨行为让他们§P被冒犯§!。他们没有指出这位官员的名字，也没有描述侮辱的类型。相反，我们在收到了一阵怒骂后，通讯就突然中断了。\n\n这种罕见的外交破裂可能是因为一些其他势力的干预；也可能是纯粹的误解。"
  envoy_events.101.a:0 "不管怎样，外交都变得更加困难了。"
 
  #######################################

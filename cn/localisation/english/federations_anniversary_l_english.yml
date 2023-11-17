@@ -30,6 +30,8 @@
  CANNOT_ACCESS_SYSTEM_TRIGGER:0 "对$SYSTEM$星系无通行权"
  IS_LEADER_AGE:0 "领袖年龄$COMPARATOR$ $NUM|Y$"
  IS_NOT_LEADER_AGE:0 "领袖年龄不$COMPARATOR$ $NUM|Y$"
+ IS_LEADER_LIFESPAN: "领袖寿命$COMPARATOR$$NUM|Y$"
+ IS_NOT_LEADER_LIFESPAN: "领袖寿命不$COMPARATOR$$NUM|Y$"
  IS_YEARS_OF_SERVICE:0 "领袖工作年限$COMPARATOR$$NUM|Y$"
  IS_NOT_YEARS_OF_SERVICE:0 "领袖工作年限不$COMPARATOR$$NUM|Y$"
  DECLINE_CALLED_IN_FAVOR_TITLE:0 "拒绝外交支持请求"
@@ -204,7 +206,7 @@
  getenvoyplural_normal:0 "特使"
 
  envoy_events.3.name:0 "银河段子手"
- envoy_events.3.desc.base:0 "[event_envoy.GetName]，我们在银河共同体中代表我国利益的[Root.GetEnvoy]严重失态，把[council_country.GetAdj]代表错当成了[pathetic_country.GetSpeciesName]。不幸的是，许多旁观者听到了这条牵连甚广的评论，[event_envoy.GetName]如今自然饱受奚落。"
+ envoy_events.3.desc.base:0 "[event_envoy.GetName]，我们在银河共同体中代表我国利益的使者严重失态，把[council_country.GetAdj]代表错当成了[pathetic_country.GetSpeciesName]。不幸的是，许多旁观者听到了这条牵连甚广的评论，[event_envoy.GetName]如今自然饱受奚落。"
  envoy_events.3.desc:0 "$envoy_events.3.desc.base$许多人开始中伤我国外交使团的实力，不过我们对银河最新段子的贡献是确凿无疑的。"
  envoy_events.3.desc.hive:0 "$envoy_events.3.desc.base$许多人开始中伤我国外交思维例程的实力，不过我们对银河最新段子的贡献是确凿无疑的。"
  envoy_events.3.desc.machine:0 "$envoy_events.3.desc.base$许多人开始中伤我国外交系统的实力，不过我们对银河最新段子的贡献是确凿无疑的。"
@@ -216,7 +218,7 @@
  galactic_community_diplo_corps_is_a_joke:0 "外交使团受奚落"
  galactic_community_diplo_corps_is_a_joke_desc:0 "我们的一名特使严重失态，致使我国的外交使团变成了整个星系的笑料。"
  envoy_events.4.name:0 "精干星系外交"
- envoy_events.4.desc.base:0 "尽管我们在星系中算不上真正的超级大国，我们却时常能在星系事务中发挥超过我国权重的实力。这在很大程度上归功于我们[Root.GetEnvoy][event_envoy.GetName]的努力，这名特使在银河共同体中称职地代表了我国利益，连那些强硬反对[Root.GetName]立场的人们也对其高度尊敬。"
+ envoy_events.4.desc.base:0 "尽管我们在星系中算不上真正的超级大国，我们却时常能在星系事务中发挥超过我国权重的实力。这在很大程度上归功于我们使者[event_envoy.GetName]的努力，这名特使在银河共同体中称职地代表了我国利益，连那些强硬反对[Root.GetName]立场的人们也对其高度尊敬。"
  envoy_events.4.desc:0 "$envoy_events.4.desc.base$结果是，虽然不是每个人都畏惧我国舰队或是渴望能有与我国相匹敌的金库，但他们依然景仰我国外交使团的高超造诣。"
  envoy_events.4.desc.hive:0 "$envoy_events.4.desc.base$结果是，虽然不是每个人都畏惧我国舰队或是渴望能有与我国相匹敌的物质资源，但他们依然景仰我国外交思维例程的高超造诣。"
  envoy_events.4.desc.machine:0 "$envoy_events.4.desc.base$结果是，虽然不是每个人都畏惧我国舰队或是渴望能有与我国相匹敌的物质资源，但他们依然景仰我国外交思维系统的高超造诣。"
@@ -274,12 +276,12 @@
  diplo_corps_lost_control_desc:0 "我们在控制己方外交官时的无能不会激发同侪们的信心。"
 
  envoy_events.15.name:0 "奇异生物"
- envoy_events.15.desc:0 "我们派往银河共同体的特使，[event_envoy.GetName]，最近花在照料一只跟在[event_envoy.GetHerHim]身边的奇异的、小型哺乳动物的时间多到令人不安。想必这是某位其他代表的家庭宠物，它可爱非常，但没有任何开智的迹象。尽管它十分喜好肉食，牙尖爪利，总体上却温柔喜人，希望以抚摸的形式大量进行身体上的接触——可它的脾气有时会变得暴烈。\n\n尽管这只生物已被证明会让[event_envoy.GetName]从更为严肃的任务中分心，其他代表却对[Root.GetSpeciesName]心灵中柔软、感性、惹人爱慕的一面多加赞誉。"
+ envoy_events.15.desc:0 "我们派往银河共同体的使者，[event_envoy.GetName]，最近花在照料一只跟在[event_envoy.GetHerHim]身边的奇异小型哺乳动物的时间多到令人不安。想必这是某位其他代表的家庭宠物，它可爱非常，但没有任何开智的迹象。尽管它十分喜好肉食，牙尖爪利，总体上却温柔喜人，希望以抚摸的形式大量进行身体上的接触——可它的脾气有时会变得暴烈。\n\n尽管这只生物已被证明会让[event_envoy.GetName]从更为严肃的任务中分心，其他代表却对[Root.GetSpeciesName]心灵中柔软、感性、惹人爱慕的一面多加赞誉。"
  envoy_events.15.A:0 "完美。"
  opinion_feline_affection:0 "猫的爱恋"
 
  envoy_events.17.name:0 "盟友间的争端"
- envoy_events.17.desc.base:0 "[Root.Federation.GetName]近来的法律修订引起了不小的骚动，我国与[dispute_winner.GetName]间旧有的意识形态争论重新被推上前台。我国代表，[dispute_loser_envoy.GetName]，就我方立场大胆地与[dispute_winner.GetAdj]特使，[dispute_winner_envoy.GetName]进行了辩论。"
+ envoy_events.17.desc.base:0 "[Root.Federation.GetName]近来的法律修订引起了不小的骚动，我国与[dispute_winner.GetName]间旧有的意识形态争论重新被推上前台。我国代表，[dispute_loser_envoy.GetName]，就我方立场大胆地与[dispute_winner.GetAdj]行政官[dispute_winner_envoy.GetName]进行了辩论。"
  envoy_events.17.desc.end:0 "[Root.GetGovernmentName]各处的公民饶有兴致地观看了整场辩论，并对如何将自己的理想与[Root.Federation.GetName]的成员国资格相调和愈发担忧。"
  envoy_events.17.desc.militarist:0 "$envoy_events.17.desc.base$可是，[dispute_loser_envoy.GetSheHe]关于军国主义益处的见解并未使其他在场人员信服，辩论逐渐对[dispute_loser_envoy.GetHerHim]变得不利，[dispute_loser_envoy.GetSheHe]看起来愈发紧张，在场各方都在向[dispute_loser_envoy.GetHerHim]指责“[Root.GetAdj]穷兵黩武”。\n\n$envoy_events.17.desc.end$"
  envoy_events.17.desc.pacifist:0 "$envoy_events.17.desc.base$可是，[dispute_loser_envoy.GetSheHe]关于和平主义益处的见解并未使其他在场人员信服，与会的其他人员大声叫嚷，斥责“[Root.GetAdj]的幼稚无知”威胁到了整个联邦的安全。\n\n$envoy_events.17.desc.end$"
@@ -1145,9 +1147,21 @@
 
  max_one_orbital_per_system: "$TRIGGER_FAIL$§R我们在每个星系内只能建造一座这种轨道站§!"
 
- d_system_resources: "轨道资源"
- d_system_resources_desc: "在整个银河内大大小小的天体周围建造轨道站可以满足轨道复合体日益增长的资源需求。"
+ d_system_resources:1 "轨道站承载"
+ d_system_resources_desc:1 "围绕星系内各个天体建造的轨道站可以为轨道复合体提供额外的生活和工作空间。"
  system_resources_tooltip: "§Y[solar_system.GetName]§!星系可以支持：$TABBED_NEW_LINE$大型轨道站：§Y[solar_system.GetNumMajorOrbitals]/[solar_system.GetMaxMajorOrbitals]§!$TABBED_NEW_LINE$小型轨道站：§Y[solar_system.GetNumMinorOrbitals]/[solar_system.GetMaxMinorOrbitals]§!\n\n目前轨道站提供："
+
+ d_orbital_research: "$major_orbital_science_plural$"
+ d_orbital_research_desc: "$district_hab_science_desc$"
+ d_orbital_research_tt: "§Y[solar_system.GetName]§!星系可以支持：$TABBED_NEW_LINE$$major_orbital_science_plural$：§Y[solar_system.GetNumOrbitalsScience]/[solar_system.GetMaxOrbitalsScience]§!\n\n轨道站目前提供："
+
+ d_orbital_energy: "$major_orbital_energy_plural$"
+ d_orbital_energy_desc: "$district_hab_energy_desc$"
+ d_orbital_energy_tt: "§Y[solar_system.GetName]§!星系可以支持：$TABBED_NEW_LINE$$major_orbital_energy_plural$：§Y[solar_system.GetNumOrbitalsEnergy]/[solar_system.GetMaxOrbitalsEnergy]§!\n\n轨道站目前提供："
+
+ d_orbital_mining: "$major_orbital_mining_plural$"
+ d_orbital_mining_desc: "$district_hab_mining_desc$"
+ d_orbital_mining_tt: "§Y[solar_system.GetName]§!星系可以支持：$TABBED_NEW_LINE$$major_orbital_mining_plural$：§Y[solar_system.GetNumOrbitalsMining]/[solar_system.GetMaxOrbitalsMining]§!\n\n轨道站目前提供："
 
  d_ruined_major_orbital: "废弃的大型轨道站"
  d_ruined_major_orbital_desc: "该轨道站发生过灾难性的壳体损伤。必须进行维修才能恢复其居住功能。"

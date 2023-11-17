@@ -102,19 +102,22 @@
  decision_introduce_chaos:0 "引入混沌"
  decision_introduce_chaos_desc:0 "这颗星球对我们而言简直完美过头了——我们的殖民者在街道上精神崩溃。我们唯一有效的选择是引入一些不完美成分。"
 
- # Events
+ # Enigmatic Robot
+
  anomaly.2080.name:0 "神秘机器人"
  anomaly.2580.desc:0 "我们的科学家在调查[From.GetName]上的早先文明的过程中，发现了一个神秘的小机器人试图隐藏自己。在对这个小东西经过数周的接近和示好之后，它终于将我们的科学家们带回到一个自它的创造者离去后起就由它照看的还在运作中的工厂。\n\n被带到这座建筑之后，我们的人获赠了一大批可以带回飞船上的资源。尽管稀奇古怪难以沟通，但这个小机器人似乎把我们的科学家当成了自己的朋友。"
 
+# The Inhabitants of Parvus III
+
  anomaly.6700.name:0 "死里逃生"
- anomaly.6700.desc:0 "[Root.GetName]的船员在§H[nanite_swarm_planet.GetName]§!上的荒芜废土上探索时，第一个汇报并不出乎意料：这是一片不自然的废土，在水面以上没有任何的生命迹象。然而，这座行星的水生生命已经进化过了我们预期可以涉足陆地的水准。\n\n此外，船员们还发现了一些被黄沙覆盖、外观老旧的似乎是建筑一样的东西。就在他们刚开始向这些表面上的建筑内挖掘时，一小群纳米虫群突触出现，并开始袭击研究人员。似乎这座建筑不是由沙子，而是由无数的微小纳米机器构成的！\n\n启动以后这些虫群很快开始自我复制、唤醒越来越多的休眠群体。[Root.GetLeaderName]下令从行星上紧急撤离，[Root.GetName]才能在最后一刻从这个纳米机器人风暴的穷追不舍中逃离大气层。其他的虫群也被激活了，而且没有停息的迹象。"
+ anomaly.6700.desc:0 "[Root.GetName]的船员在§H[nanite_swarm_planet.GetName]§!上的荒芜沙丘上探索时，第一个汇报并不出乎意料：这是一片不自然的废土，在水面以上没有任何的生命迹象。然而，这座行星的水生生命已经远远进化过了我们预期可以涉足陆地的水准。\n\n此外，船员们还发现了一些被黄沙覆盖、外观老旧的似乎是建筑一样的东西。就在他们刚开始向这些表面上的建筑内挖掘时，一小群纳米虫群突触出现，并开始袭击研究人员。似乎这座建筑不是由沙子，而是由无数的微小纳米机器构成的！\n\n启动以后这些虫群很快开始自我复制、唤醒越来越多的休眠群体。[Root.GetLeaderName]下令从行星上紧急撤离，[Root.GetName]才能在最后一刻从这个纳米机器人风暴的穷追不舍中逃离大气层。其他的虫群也被激活了，而且没有停息的迹象。"
  anomaly.6700.a:0 "查查到底发生了什么事。"
 
  anomaly.6705.name:0 "纳米机器人的起源"
  anomaly.6705.desc.start:0 "[root.GetName]已经完成了对§H[nanite_swarm_planet.GetName]§!原生纳米机器人的研究，结果令人难以置信。数千年前，一艘来自先进文明的舰船在此坠毁。那艘船上有几十种不同设计的机器人。"
  anomaly.6705.desc.L:0 "令人好奇的是，这些机器人似乎是神秘的“建门者”的工具，比所有我们已知的L-星门都更古老。"
  anomaly.6705.desc.noL:0 "不管是谁，建造这些机器的人确实掌握了更先进的科技，而且远远地早于我们。"
- anomaly.6705.desc.end:0 "\n这些机器人自主行动，并尝试按他们的程序保护行星。然而，失去了创造者的规制，一场战斗很快就在这些机器之中爆发了。\n\n这场冲突中胜出的是一群具有超适应性、可自我复制的纳米系统，它们迅速演化适应了行星的生态系统。这些机器将自己变成了行星表面的主宰，将一切当地种群和其他的机器对手全部化为碎屑。\n\n如今我们所见即是这场大战的余波：一个并非了无生机的星球，而是承载着它最顶尖的猎食者。"
+ anomaly.6705.desc.end:0 "\n这些机器人自主行动，并尝试按他们的程序保护行星。失去了创造者的规制，一场战斗很快就在这些机器之中爆发了。\n\n这场冲突中胜出的是一群具有超适应性、可自我复制的纳米系统，它们迅速演化适应了行星的生态系统。这些机器将自己变成了行星表面的主宰，将一切当地种群和其他的机器对手全部化为碎屑。\n\n如今我们所见即是这场大战的余波：一个并非了无生机的星球，而是承载着它最顶尖的猎食者。"
  anomaly.6705.a:0 "驯服虫群。"
  anomaly.6705.b:0 "进一步研究虫群。"
  anomaly.6705.b.tooltip:0 "指挥我们的[Root.Owner.GetScientistPlural]解开[nanite_swarm_planet.GetName]上演化出的纳米机器人的秘密"
@@ -140,11 +143,18 @@
  anomaly.6725.desc:0 "我们的预防措施和特种设备仍不充分。我们在§H[nanite_swarm_planet.GetName]§!建立殖民地之后很快就跟地面的团队失去了联络。从落脚点收到的最后一条通讯显示，天空被微小的淹没了前哨的黑色物体遮蔽。"
  anomaly.6725.a:0 "该死的纳米机器人！"
 
+ parvus_III_chain_title: "帕尔乌斯III的居民"
+ parvus_III_chain_desc: "帕尔乌斯III没有有机生命，但它仍然充满了活动。这些生物是什么，它们能够被合理解释吗？"
+ 
+# Color of Science
+
  anomaly.6740.name:0 "科学之色"
  anomaly.6740.desc:0 "在§Y[From.GetName]§!的日冕附近观测到的恒星辐射共振，原来是一种能够承受高温的特殊晶体阵列造成的。\n\n在把这些晶体带到船上后，我们的[Root.Owner.GetScientistPlural]震惊地发现这些奇异的共振是可以复现的。首先，他们将这些晶体暴露在与[From.GetName]相同的恒星辐射中，产生了与最初记录的现象完全一致的结果。它似乎制造了我们发送给它的所有能量波的共振，形成了[Owner.GetSpeciesNamePlural]从未观测到的新色彩和声音！\n\n该频数分析改变了我们对宇宙的认知方式。换句话说，我们可以用一种晶体结构开发研究设备，使其能承受恒星级的超高热量。"
  anomaly.6740.a:0 "将新的频率发回给我们的艺术家们。"
  anomaly.6740.a.gestalt:0 "获取这些新的频率以备进一步分析。"
  anomaly.6740.b:0 "采集这些晶体用在我们能量武器的隔热上。"
+
+# Alpha Centauri Anomaly
 
  anomaly.6745.name:0 "[From.GetName]"
  anomaly.6745.desc:0 "自[Root.Owner.GetSpeciesNamePlural]开始仰望星空以来，[From.GetName]就一直是一个纯真的梦幻，一个充满了我们的期待的地方，一个新的家园。可悲的是，随着我们的望远镜的发展，我们意识到这颗行星可能是一个潮汐锁定、万物冰封的地狱——这一假说已由我们今天的发现而彻底证实。\n\n然而希望仍然存在，这个世界存在着作为一个宜居行星而言所必需的一切因素。我们或许只需要轻轻推上一把……"
@@ -153,10 +163,14 @@
  anomaly.6750.name:0 "[From.GetName]"
  anomaly.6750.desc:0 "这颗潮汐锁定的行星似乎具有各种宜居行星的建筑模块。也许在上面能建造一些东西。"
 
+# Target Practice Anomaly
+
  anomaly.6800.name:0 "打靶训练"
  anomaly.6800.desc:0 "我们的敏感器发现了[From.GetName]上的舰船残骸是通过某种罕见的方式抵达那里的。这些舰船似乎是从大约数光年以外故意地径直开向小行星，用以测试设计者的推进器的精确度。在对残骸进行深度扫描时，我们找到了那么一艘具有相当完整推进器的舰船。"
  anomaly.6800.a:0 "修复那个推进器！"
  anomaly.6800.b:1 "我们不会浪费那些合金的。"
+
+# ASR: Asteroid Sensor Relay
 
  anomaly.6805.name:0 "小行星敏感中继器"
  anomaly.6805.desc:0 "我们的[Owner.GetScientistPlural]期望在[From.GetName]内部发现稀有资源，结果偶然撞见了一样极其不寻常的东西。这个看起来像是普通小行星的物体事实上是一个长期休眠的中继站，里面有复杂的电子元件和先进的敏感器，用以向某个古老的帝国发送信号。这些撞击也损毁了小行星的一部分内部构造，我们只能从中提取到一个星系。"
@@ -167,14 +181,16 @@
  anomaly.6810.desc:0 "我们错了。这座围绕[From.GetName]的空间站并非无人居住；相反，它上面爬满了巨大的外星节肢动物！我们部署进空间站的敏感器在信号中断前只回传了一些行动迅捷的阴影和巨大颚骨的画面。在对空间站进行深度扫描后，我们发现了一处可能是无比复杂的数据库的地方。为了抵达这座数据库，我们需要穿过这些一团团的、有好多腿儿的守护者。"
  anomaly.6810.a:0 "送客，巨大的外星节肢动物可不是闹着玩的！"
  anomaly.6810.b:0 "也许我们最好还是不要打扰他们。"
- anomaly.6810.c:0 "尝试与这些节肢动物小伙伴联络。"
- anomaly.6810.d:0 "把他们泵出去。"
+ anomaly.6810.c:0 "§B尝试与这些节肢动物小伙伴联络。§!"
+ anomaly.6810.d:0 "§B把他们泵出去。§!"
  anomaly.6810.d.tooltip:0 "用我们对居住站的先进知识让空间站的大气层裂一个口子。"
  anomaly.6815.name:0 "巨大外星节肢动物"
  anomaly.6815.desc:0 "噢，你们好！很抱歉之前摧毁了你们的探测器。那只是因为我们在这做一些非常精密的实验，而我们担心一些外在的干扰会影响实验结果——我相信你能理解。那么，我们能帮上什么忙吗？"
  anomaly.6815.a:0 "慢着，所以你们并不是带有敌意的害虫？"
  anomaly.6820.desc:1 "究竟是什么原因会让你这么想啊？我们是一支典藏研究所分遣队，派驻到这里研究这个星系独特的特征。如果你是想分享我们机构通常给予的那些福利，我建议你和我们的主研究实验室联系。我可以提供你一份目前我们在此地所发现的东西的拷贝。"
  anomaly.6820.a:0 "祝你的实验一切顺利。"
+
+# Crystal Growths Anomaly
 
  anomaly.6825.name:0 "生长的水晶"
  anomaly.6825.desc.start:0 "[From.GetName]上生活的生命体形式和我们预想的完全不一样。我们的[owner.GetScientistPlural]汇报到，小行星内有不断生长的水晶。这些生命体利用[From.System.GetName]散发的辐射，并结合小行星内的矿物元素，被证实能够完成自给自足的繁衍生息。"
@@ -187,10 +203,14 @@
  anomaly.6835.a.tooltip:0 "最多§Y3§!个随机小行星将会生产§G3§!£food£食物。"
  anomaly.6835.b:0 "还是不要拓建水晶糖农场了。"
 
+# Too Few Sheep Asteroid Anomaly
+
  anomaly.6840.name:0 "羊羊太少"
  anomaly.6840.desc:0 "[From.GetName]是一颗独特的气态巨行星。我们对天体物理的知识告诉我们，这样的行星应该有一个行星环，然而它并没有。在我们的科研船近距离观察了那颗诡异的卫星之后，这一现象的原因已经十分显然了。这颗星球被一些“牧羊人”卫星所环绕，这些卫星全部拥有富得难以置信的矿物，并且每年还在积累更多。我们可以用精准控制的爆炸爆破这些卫星，然后将它们的矿物一次性收集起来；也可以让它们继续留在环带，持续地收集它们积累下来的太空残骸。"
  anomaly.6840.a:0 "我们现在就需要那些矿物。"
  anomaly.6840.b:0 "心不急才能喝到热粥。"
+
+# Cascading Catastrophe
 
  anomaly.6845.name:0 "连锁灾难"
  anomaly.6845.desc:0 "我们确实在[From.GetName]上发现了生命，但也是因为我们的行动，这一生命已经灭绝了。这些微生生物住在气态巨行星的外层边缘，对于我们的深度扫描表现出了极大的负面反应。扫描的频率同生物的细胞结构产生了共振——这一效应如同瀑布倾斜而下般飞速传开，从一个气态小虫子传播到另一只气态小虫。所有生物都在收到影响之后不久就不再活动了。\n\n我们现在正环绕着全宇宙最大的坟场。"
@@ -200,6 +220,8 @@
  anomaly.6850.desc.valuesothers:0 "这一过程教会了我们许多关于宇宙的事情，但更多的可能是关于我们自己的事情。"
  anomaly.6850.desc.novaluesothers:0 "在未来，当我们拿出扫描仪的时候，我们必须得更加小心谨慎。"
  anomaly.6850.a:0 "极好的消息！"
+
+# Caught in the Eye
 
  anomaly.6855.name:0 "肉眼捕捉"
  anomaly.6855.desc.regular:0 "我们从[Root.GetName]收到的最后一束信号无异于混乱的静电音。他们一直在研究[From.GetName]上奇怪的区域风暴，并且一直发回令人难以置信的前期报告。这股风暴会对发送过去的探测器做出反应，制造出真空口袋来避开它们，再缓慢地往回渗透进探测器。在我们失去联络之前，[Root.GetName]正计划在风暴处测试许多不同的扫描频率。科研船看上去已经沉没到了气态巨行星深处，现在已经陷入了沉寂。"
@@ -211,6 +233,8 @@
  anomaly.6860.desc:0 "在几个月的工作之后，我们的[Owner.GetScientistPlural]终于设法调整[FromFrom.GetName]护盾的工作方式，使得[FromFromFrom.GetName]风暴放开了对落难舰船的钳制。同[trapped_in_storm.GetName]的通讯很快重新建立了起来，十分难以置信的是，[FromFrom.GetName]上没有组员记得他们被风暴困住的这段时间。"
  anomaly.6860.a:0 "回去工作。"
 
+# Express Mail
+
  anomaly.6865.name:0 "快邮"
  anomaly.6865.desc:1 "当[Root.GetName]靠的足够近得以扫描货舱的时候，似乎所有的传感器都功能失常了。这个舱室使用的[Owner.GetBioAlloy]同我们自己建造太空结构时使用的是完全一样的。这种某些外星生命体发明出了同我们完全一致的复合材料的可能性，根本不可能成立，但在校准了扫描仪之后，我们依然得到了同样的结果。\n\n在打开舱室之后，迎接我们的唯一一样东西是一份文档集，里面详细地阐述了我们应当如何指派我们的每一位[Owner.GetScientistPlural]，以及他们今后的研究计划。该指引在一个特定日期结束，也就是从现在算起的整整10年。"
  anomaly.6865.a:0 "将这些笔记发回[Owner.GetHomeWorldName]。"
@@ -218,6 +242,8 @@
  anomaly.6870.name:0 "关闭循环"
  anomaly.6870.desc:1 "在经过几年不顺坦的发展之后，[Root.GetHomeWorldName]的上方出现了一道时空织构裂口。令人心惊胆颤的是，这一天的日期和我们十年前收到的怪异指示上面所说的日期是同一天。我们现在只有一件需要做的事情：把收到的那些笔记发射到裂口里面，关闭这个循环。"
  anomaly.6870.a:0 "让过去的我们自己收拾这个烂摊子吧。"
+
+# Convenient Mining
 
  anomaly.6875.name:0 "便利的采矿"
  anomaly.6875.desc:0 "环绕[From.GetName]的小行星，其轨道之稳定完美无暇。所以也不难理解，为什么我们的[Owner.GetScientistPlural]会认为它是被人工放置在这个地方的。然而，那里没有任何推进系统或者其他人工航行的迹象。只能得到这样的结论：这颗小行星以某种几乎荒谬到不可能成真的概率被[From.GetName]的重力场捕获。我们在这颗小行星的表面还探测到几种十分稀有的水晶。"
@@ -232,12 +258,16 @@
  anomaly.6890.desc:0 "这个被捕捉的小行星，实际上，是某种晶态生命体的巢穴。很庆幸我们没有继续挖掘，因为看上去我们似乎激怒了在里面休眠的生物。如果我们什么都不做，只是从远处研究它，这些生物应该会平静下来。"
  anomaly.6890.a:0 "我们可以学到什么？"
 
+# Toxic Biological Industry
+
  anomaly.6895.name:0 "有毒的生物工业"
  anomaly.6895.desc.catano:0 "我们在[From.GetName]的有毒大气层内观测到的生命信号，是体型庞大的半有机机械体！这个外星工业体似乎正是星球上乌烟瘴气的罪魁祸首，而且它依旧在运转。这个星球上没有其他的生命信号，这些机械体的造物主肯定抛下它们自己跑掉了。我们目前还不能确定它们的意图，但是它们建造的建筑想必能够帮助我们更好地理解工程学。"
  anomaly.6895.desc.catayes:0 "我们在[From.GetName]的有毒大气层内观测到的生命信号，是体型庞大的半有机机械体！正如我们一样，看上去这个设施的创造者也很青睐生物和机械的融合之美。这个外星工业体似乎正是星球上乌烟瘴气的罪魁祸首，而且它依旧在运转。这个星球上没有其他的生命信号，这些机械体的造物主肯定抛下它们自己跑掉了。我们目前还不能确定它们的意图，但是它们建造的建筑想必能够帮助我们更好地理解工程学。"
  anomaly.6895.b:0 "收集我们可以收集的部分。"
  anomaly.6895.c:0 "收集所有。"
  anomaly.6895.d:0 "就让沉睡的傻瓜继续躺平吧。"
+
+# Cool Thoughts
 
  anomaly.6900.name:0 "冷酷的思绪"
  anomaly.6900.desc:0 "我们没有在地表之下检测到生命形式。实际上，我们在整个星球都检测到了生命！这颗冰封星球的内部布满了微细的管道，相互连接，就像一台原始的计算机。尽管结构很粗糙，它通天的规模意味着，其算力甚至可以匹敌[Owner.GetHomeWorldName]的某些超级计算机。即使是现在，这台电脑还在活动——我们的[Owner.GetScientistPlural]可以同其互动，但是由于它运转十分缓慢，我们只能询问其一个简单的问题。"
@@ -247,6 +277,8 @@
  anomaly.6900.c:0 "我们之前还有谁来过？"
  anomaly.6900.d:0 "我们是什么？"
  anomaly.6900.e:0 "最好从远处观察。"
+
+# Don't Count Your Planets
 
  anomaly.6905.name:0 "不要数行星"
  anomaly.6905.desc:0 "我们的[Owner.GetScientistPlural]有了更加惊怖的发现。他们早前扫描到的山脉，实际上是某个巨型蛋的卵壳膜。我们也不知道究竟是什么巨兽诞下了这么一枚蛋，更不知道何等的怖兽会从中孵化出来。"
@@ -259,6 +291,8 @@
  anomaly.6915.name:0 "感恩"
  anomaly.6915.desc.regular:0 "§R“它活了！它又活过来了！同如此至伟的造物相比，我们不过是微不足道的凡尘；面对如此伟大之物，繁星帝国之间的鸡毛琐事又可称几——”§!\n\n[Root.GetName]最后的传输信号在此中断，当我们发送探测器去扫描[FromFromFrom.GetName]残骸的时候，我们只看到了一个空壳。看上去这个生物对自己的解放者并没有多少感激之情。"
  anomaly.6915.desc.gestalt:0 "我们派遣去往[Solar_System.GetName]星系的[Owner.GetScientistPlural]全部拉响了警报，但是没过多久就系数同[Owner.GetBrainName]失去了联系，只告诉了我们§R“它松动了。”§!当蛋壳开始裂开的时候，[Root.GetName]最后的传输信号被切断；当我们发射探测器去扫描[FromFromFrom.GetName]的残骸的时候，我们只看到了一个空壳。看上去这个生物对自己的解放者并没有多少感激之情。"
+
+# Heat from Below
 
  anomaly.3140.name:0 "地下热泉"
  anomaly.3140.desc:0 "在探察冰面下方之后我们得出结论，这处位于[From.GetName]的异常热信号是由热液泉引起的。类似的地方这个星球上似乎还有更多，但是我们尚未发现。"
@@ -465,6 +499,9 @@
  colony.9975.name: "喷口扩展失败"
  colony.9975.desc: "对炸药的计算失误导致数座排放口碎裂，倒塌到了地上，这对我们的设施造成了可观的损害。尽管有一部分精炼厂现在的产出是提高了，但总体而言得不偿失。令人欣慰的是，崩塌的构造下出现了意想不到的矿藏资源。\n\n这些事件提醒我们，如果不砸碎几个喷口，就无法建立跨越星系的文明。"
 
+ nemma_world_chain_title: "尼玛星球"
+ nemma_world_chain_desc: "巨大的尼玛居住在我们的一个星球上，我们已经在他们的背上建立了一个殖民地的基础。我们将决定它们的命运。"
+
 job_stratovent_researcher: "Vent Researcher"
 job_stratovent_researcher_plural: "Vent Researchers"
 job_stratovent_researcher_desc: "Researchers specialized in studying spaceborne fauna and guiding travellers to see them."
@@ -482,6 +519,9 @@ mod_job_stratovent_researcher_add: "Vent Researcher Jobs"
 mod_job_stratovent_refiner_add: "Vent Refiner Jobs"
 mod_job_stratovent_refiner_upg_add: "Expanded Vent Refiner Jobs"
 mod_job_stratovent_refiner_minerals_add: "Collapsed Vent Refiner Jobs"
+
+stratovent_world_chain_title: "Stratospheric Vents"
+stratovent_world_chain_desc: "We have access to a potentially lucrative resource on one of our colonies, naturally formed vents expunging valuable resources into space. Now we need to decide on what to do with them."
 
  # Arc Sites
  broken_world_digsite:0 "破损的大门"
@@ -716,7 +756,7 @@ mod_job_stratovent_refiner_minerals_add: "Collapsed Vent Refiner Jobs"
  d_terraforming_blocker:0 "£blocker£环境改造残骸"
  d_terraforming_blocker_desc:0 "部分成功的环境改造工程，其结果是在很多区域创造了奇怪的生物遗骸。"
  d_dayside_farm:0 "昼半球农场"
- d_dayside_farm_desc:0 "这个星球被潮汐锁定，所有的太阳能都投射在了昼半球，使得这片区域拥有无限的昼时。"
+ d_dayside_farm_desc:1 "这个星球被潮汐锁定，所有的太阳能都投射在了昼半球，使得这片区域拥有无限的昼时。"
  d_radiotrophic_preserve:0 "辐射合成保护区"
  d_radiotrophic_preserve_desc:0 "一片隔离区，充满低气压和充满辐射的大气，能够让这颗星球的当地土著物种存活。"
 
@@ -965,7 +1005,7 @@ mod_job_stratovent_refiner_minerals_add: "Collapsed Vent Refiner Jobs"
  ancrel.14004.desc:0 "我们愚蠢地以为我们能够免疫这片云雾，但是我们的工程师们已经陷入了销魂极乐的状态。他们在飞船的过道跳舞，大声地唱歌。我们需要时间对空气进行净化，抓住这帮子工程师，然后才能发动飞船。这些耽搁会花费我们的时间。"
  ancrel.14004.a:0 "抓住已经陷入“极乐”的工程师。"
  ancrel.14005.name:0 "狂怒爆发"
- ancrel.14005.desc:0 "我们愚蠢地以为我们能够免疫这片云雾，但是我们的科学家们已经在经受心理狂躁的苦果。在飞船的每一个角落，都有打斗发生。我们需要时间对空气进行净化，镇压住这群云雾的受害者，然后才能发动飞船。这些耽搁会花费我们的时间。"
+ ancrel.14005.desc:1 "我们愚蠢地以为我们能够免疫这片云雾，但是我们的科学家们已经在经受心理狂躁的苦果。在飞船的每一个角落，都有打斗发生。我们需要时间对空气进行净化，镇压住这群云雾的受害者，然后才能发动飞船。这些耽搁会花费我们的时间。"
  ancrel.14005.a:0 "制服癫疯的科学家。"
  ancrel.14006.name:0 "技术的诱惑"
  ancrel.14006.desc:0 "我们起飞了！尽管很危险，但外星人飞船的有毒迷雾确实能够增强我们帝国士兵的战斗力和忠诚心。然而，问题还是存在：我们应该让自己的士兵去接触这种有害的物质吗？或者我们从这场悲剧的错误中学得教训，放弃这一切？"
@@ -1184,6 +1224,10 @@ mod_job_stratovent_refiner_minerals_add: "Collapsed Vent Refiner Jobs"
  trait_robot_notofthisworld:0 "来自异世"
  trait_robot_notofthisworld_desc:0 "§B该机械并不来自我们的宇宙，目前正在缓慢衰变§!。"
  TRAIT_NOTOFTHISWORLD_EFFECT:0 "每个作为奴隶或更好标准工作的人口每月产出0.5£physics_research£ §Y物理研究§!。"
+
+ # Event Chain
+ negative_mass_title: "负质量"
+ negative_mass_desc: "我们的母星周围最近出现了负相物质。这种奇怪的现象肯定不是动摇我们社会根基的事情的预兆。"
 
  # Singing Planet
 
@@ -1734,3 +1778,162 @@ mod_job_stratovent_refiner_minerals_add: "Collapsed Vent Refiner Jobs"
  colony.9380.desc: "我们对密弥库蚁的研究完成了。把校准过的磁体放置在它们的聚落入口附近时，这些昆虫的磁性外骨骼就会释放出我们能够利用的电能。\n\n这些研究还表明，密弥库蚁会依照当地磁场移动，因此在我们的记忆芯片加装去磁保护壳就可以避免受其攻击。"
  colony.9380.a: "棒极了。"
  
+## Event: Glacial Crisis
+ colony.7230.name: "冰川危机"
+ colony.7230.desc: "[planet.GetName]的最新气候报告带来了一项令人担忧的结论。奇怪的是，冷冻行星上的表面温度一直以惊人的速度上升。\n\n如果我们无法确定生态系统迅速恶化的原因，这种情况可能会导致行星广阔冰川的灾难性融化。"
+ colony.7230.a: "找出行星升温的原因。"
+ colony.7230.a.tooltip: "这能是什么原因引起的呢？"
+ colony.7230.b: "没什么可担心的。"
+ colony.7235.name: "冰中裂痕"
+ colony.7235.desc: "[flooding_planet.GetName]上温度的升级正在急剧加速。这引起了冰冷的表层之下出现了巨大裂缝，揭开了广阔的地下海洋。\n\n幸运的是，我们的调查已经确定了这种现象的潜在原因。由于我们的存在，保护行星的独特大气盾已经开始变得出极其脆弱，并随时可能崩溃。采取严格的措施来遏制我们的生产力将最大程度地减少我们对生态的影响。这样做应该足够解决这个问题。"
+ colony.7235.a: "修改我们的生产指标。"
+ colony.7235.b: "冰川期到此为止。"
+ colony.7235.b.tooltip: "加大马力！"
+ colony.7240.name: "地核融化"
+ colony.7240.desc: "我们在[flooding_planet.GetName]上排放量做出限制的尝试并未产生理想的的结果。我们在解决持续性生态危机方面的仅仅略有成功，由于海平面上升，地理意义上的低地正受到威胁。\n\n目前，我们的人口中心仍然免受直接影响，但几乎可以肯定的是，行星范围的全面融化不可避免。"
+ colony.7240.a: "尝试减轻损失。"
+ colony.7240.b: "宣布紧急状态！"
+ colony.7240.b.tooltip: "停止全部生产活动直到找到解决方案。"
+ colony.7245.name: "巨大的洪泛区"
+ colony.7245.desc: "在我们忽视迅速恶化的[flooding_planet.GetName]生态状况后，局势已逐渐陷入前所未有的灾难。\n\n巨大的冰片的瓦解导致海洋蔓延，带来了巨大的破坏和动荡。建造防洪大坝，我们可以保护其余的城市，但更多的不可预见的后果将会接踵而至。"
+ colony.7245.a: "行星正在发大水！"
+ colony.7247.name: "永冻之秘"
+ colony.7247.desc: "随着[flooding_planet.GetName]行星的持续融化，在永霜冻土下有一个有趣的发现。无人知晓，无人开发且惊人丰富的矿物和稀有资源极地水库之下静静地等待着我们。"
+ colony.7247.a: "我们中头奖了，赶快开采！"
+ colony.7247.b: "永霜冻土已经遭受了太多的痛苦了。"
+ colony.7247.b.tooltip: "我们不能冒着恶化局势的危险。"
+ colony.7250.name: "解冻的病原体"
+ colony.7250.desc: "我们在[flooding_planet.GetName]上的极地开采站出现了令人不安的进展。工人们突然失去意识，为了安全起见，必须建立严格的禁止通行区域。\n\n最初的调查表明，由于冰冷的环境被改变，休眠病毒的苏醒过来。这种苏醒的病原体的真实本性和特征仍然未知，这给我们带来了许多未解难题。它的传播性及对人民构成的潜在危险程度仍然不确定。"
+ colony.7250.a: "没时间解释了。立刻给该区域消毒。"
+ colony.7250.b: "保持隔离。"
+ colony.7255.name: "极地财富"
+ colony.7255.desc: "在[flooding_planet.GetName]极地地区的空洞深处，一个采矿团队发现了巨大的财富。在冰雪层的面纱之下发现了像冰川一样雄伟的巨大晶体。\n\n这些非凡的结构，是在无数的岁月中在巨大的压力下铸造的，这证明了这里存在我们尚未发现的无限潜力。"
+ colony.7255.a: "真是令人难以置信的发现。"
+ colony.7260.name: "气候稳定"
+ colony.7260.desc: "我们已经达到了环境突破。\n\n通过燃料的燃烧产生的无害副产物，在与[flooding_planet.GetName]的细菌云接触时具有奇特的副作用。我们现在知道，这些云通过成为太阳护盾来保留行星的自然生物节律，这点至关重要。随着细菌逐渐开始减少，我们无意中加剧了排放的影响。\n\n凭借这种新发现的知识，我们已迅速制定了措施以恢复平衡。"
+ colony.7260.a: "终于，气候再次稳定了。"
+ colony.7265.name: "冰川期的终结"
+ colony.7265.desc: "[flooding_planet.GetName]最后一个冰川沉入海洋，新时代随即开始。永爽冻土的消失揭露出一个宽敞的水下领域，那里面充满了未开发的资源。"
+ colony.7265.a: "该到海滩上去了。"
+ PLANET_MELTDOWN_PROJECT: "气候危机"
+ PLANET_MELTDOWN_PROJECT_DESC: "[flooding_planet.GetName]上的气候迅速恶化。希望我们可以赶在局面无法扭转之前弄清楚原因。"
+ MELTING_RESEARCH_PROJECT: "正在融化的表面"
+ MELTING_RESEARCH_PROJECT_DESC: "[flooding_planet.GetName]上的温度迅速升高。我们的[Root.GetScientistPlural]需要扩大他们的研究范围，以解决正在进行的局势所造成的新问题。"
+
+ active_melting: "上涨的水面"
+ active_melting_desc: "这个行星的冰冷表面正在以惊人的速度融化。"
+ boosted_melting: "雪球效应"
+ boosted_melting_desc: "我们增加了工业排放量，以加快行星冰盖的融化。"
+ halted_production: "停止生产"
+ halted_production_desc: "我们限制了我们的工业，减少影响，以保护这个行星的脆弱环境。"
+ ecological_emergency: "生态紧急状况"
+ ecological_emergency_desc: "这个星球已完全停止生产，直到结束环境研究为止。"
+ ancient_plague: "远古病毒"
+ ancient_plague_desc: "这个星球已经成为了从融化的永霜冻土中苏醒的古老病原体的猎物。"
+ cruel_actions: "谋杀性的预防措施"
+ cruel_actions_desc: "以安全为名，我们杀死了被古老瘟疫感染的殖民者。"
+ 
+ d_floodplains: "不断扩大的洪泛区"
+ d_floodplains_desc: "由于海平面迅速上升，星球上大片地区被洪水所淹没。"
+ d_crystalline_glacier: "结晶冰场"
+ d_crystalline_glacier_desc: "这些冰冷的蓝色晶体曾经是原始冰川的核心。"
+ d_mineral_seabed: "富矿海床"
+ d_mineral_seabed_desc: "海床上散布着高品质矿物。"
+
+ job_mineral_diver: "深海潜水员"
+ job_mineral_diver_plural: "深海潜水员"
+ job_mineral_diver_desc: "深海专家从海洋深处打捞沉没的矿物。"
+ job_mineral_diver_add: "$job_mineral_diver$岗位"
+ job_mineral_diver_per_pop: "每$VALUE$个人口提供§G+1§!个$job_mineral_diver$岗位"
+ job_mineral_diver_per_pop_short: "\n每$VALUE$£pop£提供§G+1§!个£job_miner£"
+ mod_job_mineral_diver_add: "$job_mineral_diver$岗位"
+ mod_job_mineral_diver_per_pop: "每$VALUE$个人口提供§G+1§!个$job_mineral_diver$岗位"
+ mod_job_mineral_diver_per_pop_short: "\n每$VALUE$£pop£提供§G+1§!个£job_miner£"
+ job_mineral_diver_drone: "水下子个体"
+ job_mineral_diver_drone_plural: "水下子个体"
+ job_mineral_diver_drone_desc: "采矿子个体可以承受巨大的压力，可以从海洋深处收集沉没的矿物。"
+ mod_job_mineral_diver_drone_add: "$job_mineral_diver_drone$岗位"
+ mod_job_mineral_diver_drone_per_pop: "每$VALUE$个人口提供§G+1§!个$job_mineral_diver_drone$岗位"
+ mod_job_mineral_diver_drone_per_pop_short: "\n每$VALUE$£pop£提供§G+1§!个£job_mining_drone£"
+ job_mineral_diver_drone_add: "$job_mineral_diver_drone$岗位"
+ job_mineral_diver_drone_per_pop: "每$VALUE$个人口提供§G+1§!个$job_mineral_diver_drone$岗位"
+ job_mineral_diver_drone_per_pop_short: "\n每$VALUE$£pop£提供§G+1§!个£job_mining_drone£"
+
+## Event Chain: Rapid Desertification
+ RAPID_DESERTIFICATION_CAT: "迅速荒漠化"
+ RAPID_DESERTIFICATION_CAT_DESC: "[From.Planet.GetName]的航拍图像显示，其迅速减少的植被可能表明，该行星表面存在一种未知的生命形式栖息在此。"
+ anomaly.7135.name: "已识别外星动物群"
+ anomaly.7135.desc: "我们在[desertling_planet.GetName]上发现了生命。没有智慧的小型哺乳动物群遍布在整个行星表面。\n\n我们的科学家将它们标记为“沙漠生物”，它们的数量正以惊人的速度增加。这个行星已经超出了它的承载能力，生态系统正在迅速恶化。"
+ anomaly.7135.a: "调查为什么现在会发生这种情况。"
+ anomaly.7135.b: "最好不要干预。"
+ anomaly.7135.b.tooltip: "我们将从远处监控局势。"
+ RAPID_DESERTIFICATION_PROJECT: "生态系统被蚕食"
+ RAPID_DESERTIFICATION_PROJECT_DESC: "一群迅速蔓延的哺乳动物在行星[desertling_planet.Planet.GetName]上过度繁殖。凭借适当的资源，我们的科学家可以收集更多关于这种非智慧物种的起源和能力的线索。"
+ anomaly.7140.name: "入侵物种"
+ anomaly.7140.desc: "在研究[desertling_planet.GetName]上的沙漠生物时，我们的科学家观察到了一个关键的现象。尽管这个物种到处都是，但却没有相应的化石记录。这些生态入侵者在相对短的时间内造成了极端的环境破坏，很可能是被某个外来者带到这里的。\n\n形势已经十分清楚，迫切需要我们进行干预。如果不采取行动，这些生物将摧毁这个星球自然生态系统中剩下的一切。"
+ anomaly.7140.a: "我们将尽可能多收养的生物。"
+ anomaly.7140.a.tooltip: "我们将对他们的行为负责。"
+ anomaly.7140.b: "制定动物数量控制政策。"
+ anomaly.7140.b.tooltip: "选择遗传修饰可用于遏制生长…"
+ anomaly.7140.c: "消灭野兽。"
+ anomaly.7140.c.tooltip: "必须不惜一切代价保护行星。"
+ anomaly.7140.d: "我们将一些动物当作牲口。"
+ anomaly.7140.d.tooltip: "我们将从所有行星中带走两个奴隶。"
+ POPULATION_CONTROL_PROJECT: "人口控制"
+ POPULATION_CONTROL_PROJECT_DESC: "为了拯救[desertling_planet.GetName]的生态状态，必须抑制入侵动物群的指数级人口增长。我们的科学家需要时间和资源来找到可行的解决方案。"
+ anomaly.7145.name: "灭绝事件"
+ anomaly.7145.base: "已经屈服于指数繁殖的哺乳动物的侵袭。深深的寂静笼罩着现在贫瘠的大地，所有存留的植被都被吞噬到根部。\n\n杂食性的哺乳动物自己静静躺着，要么因为饥饿而死亡，要么在饥荒的过程中被同类吃掉。"
+ anomaly.7145.desc: "我们收到消息，[desertling_planet.GetName]$anomaly.7145.base$"
+ anomaly.7145.b.desc: "我们收到消息称[desertling_planet.GetName]$anomaly.7145.base$"
+ anomaly.7145.a: "至少苦难现在结束了。"
+ anomaly.7145.b: "我们的殖民地被毁。"
+ anomaly.7150.name: "自然的新生"
+ anomaly.7150.desc: "经过艰苦的努力，我们对[desertling_planet.GetName]上的沙漠生物进行扑杀和基因改造，它们的数量终于降低到了一个可持续的水平。\n\n没有了过多的食草动物，一个微妙的平衡出现了。大自然正在迅速恢复，新鲜的草地开始在曾经荒凉的沙漠上生长。"
+ anomaly.7150.a: "一处隐蔽的天堂。"
+ anomaly.7155.name: "红色沙漠"
+ anomaly.7155.desc: "最终，最后一只啮齿动物在[desertling_planet.GetName]上死去。沙子本身已经被染成了红色，这是因为我们为拯救星球免于侵染所付出的巨大努力，但是新的绿芽已经开始萌发。我们出手的时候刚刚好。"
+ anomaly.7155.a: "这是必须要做的。"
+ colony.7160.name: "国家宝藏"
+ colony.7160.desc: "当我们向这些沙漠生物开放我们的行星时，没有人能够预料到这样的结果。这些小动物已经完美地适应了我们的生活方式，在我们的领土上，成为了家庭生活中的可爱伴侣。\n\n它们的快速融入引发了一种猜测，即这些生物一定曾经被驯化过。无论是什么原因导致了它们与生俱来的友好，这个传言只增加了人们对这些非凡生物的更进一步兴趣。"
+ colony.7160.a: "某种程度上，它们拯救了我们。"
+ colony.7165.name: "麻烦的小动物"
+ colony.7165.desc: "可怕的消息传来。几个沙漠生物在运输过程中逃脱，形成了一个迅速扩大的野生种群。我们必须迅速处理这种情况，以避免环境崩溃。"
+ colony.7165.a: "猎杀那些禽兽！"
+ colony.7165.b: "用围墙建立一个保留地。"
+ colony.7170.name: "哺乳生物数量稳定"
+ colony.7170.desc: "我们在遏制猖獗的沙漠生物侵袭方面取得了一定的成功。遗憾的是，我们无法根除这些难以捉摸的野兽。继续监测情况至关重要，因为它可能随时达到临界点。"
+ colony.7170.a: "狩猎继续。"
+ colony.7175.name: "失控的侵染"
+ colony.7175.desc: "我们尝试控制沙漠生物，结果是徒劳无功。这些贪婪的生物深挖洞穴，它们扩大它们殖民地的速度比我们消灭它们的速度还要快。除非我们允许我们的军队使用其庞大的爆炸物和有毒气体武器库，否则这场战斗就会失败，并将危及地面上每个人的安危。"
+ colony.7175.a: "动物们会留在这里…"
+ colony.7175.b: "我们可不会输给单纯的啮齿动物。"
+ colony.7175.b.tooltip: "如果有必要的话，我们会摧毁整个行星。"
+
+ job_alien_hunter: "外星猎手"
+ job_alien_hunter_plural: "外星猎手"
+ job_alien_hunter_desc: "一支专门捕猎外星动物的特别行动队。"
+ job_alien_hunter_add: "$job_alien_hunter$岗位"
+ job_alien_hunter_per_pop: "每$VALUE$个人口提供§G+1§!个$job_alien_hunter$岗位"
+ mod_job_alien_hunter_add: "$job_alien_hunter$岗位"
+ mod_job_alien_hunter_per_pop: "每$VALUE$个人口提供§G+1§!个$job_alien_hunter$岗位"
+ mod_job_alien_hunter_per_pop_short: "\n每$VALUE$£pop£提供§G+1§!个£job_alien_hunter£"
+
+ d_desertling_infestation: "入侵动物群"
+ d_desertling_infestation_desc: "外星哺乳动物的入侵物种。"
+ d_red_desert: "红色沙漠"
+ d_red_desert_desc: "大片沙漠因这里的血腥牺牲而被染红。"
+ d_alien_sanctuary: "外星动物园"
+ d_alien_sanctuary_desc: "为外星动物群建造的保护区，游客可以在这里与非凡的物种互动。"
+
+ rodent_war: "极限灭绝"
+ rodent_war_desc: "我们已责成我们的军队消灭侵入这个星球的外星入侵动物群。"
+ alien_infestation: "外星感染"
+ alien_infestation_desc: "这个星球已经被迅速蔓延的外星动物群所侵扰。"
+ adopted_aliens: "驯化外星动物"
+ adopted_aliens_desc: "这个星球参与了一项收养外星宠物的项目，并协力驯化它们。"
+ national_pets: "不太可能的纽带"
+ national_pets_desc: "我们决定收养的沙漠生物已经被完全驯化，受到全国人民的喜爱。"
+ 
+ trait_presapient_unintelligent: "不聪明"
+ trait_presapient_unintelligent_desc: "§H这个物种甚至无法完成最简单的任务。它们唯一的技能是它们的繁殖速度令人难以置信。§!"
+ rapid_desertification_species: "沙漠生物"

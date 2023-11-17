@@ -240,7 +240,7 @@
  tradition_synchronicity:0 "同步"
  tradition_synchronicity_desc:0 "思想的统一诞生了意志的统一。我们必须竭尽全力同步行动。"
  tr_synchronicity_adopt:0 "同步传统"
- tr_synchronicity_adopt_desc:0 "$UNLOCKS_AGENDA$ $council_agenda_agenda_gestalt_boost_governor_name$\n$UNLOCKS_AGENDA$ $council_agenda_agenda_gestalt_boost_scientist_name$\n$UNLOCKS_AGENDA$ $council_agenda_agenda_gestalt_boost_general_name$\n$UNLOCKS_AGENDA$ $council_agenda_agenda_gestalt_boost_admiral_name$\n$mod_planet_pops_upkeep_mult$：§G-10%§!"
+ tr_synchronicity_adopt_desc:0 "$UNLOCKS_AGENDA$$council_agenda_agenda_gestalt_boost_growth_name$\n$UNLOCKS_AGENDA$$council_agenda_agenda_gestalt_boost_cognitive_name$\n$UNLOCKS_AGENDA$$council_agenda_agenda_gestalt_boost_regulatory_name$\n$UNLOCKS_AGENDA$$council_agenda_agenda_gestalt_boost_legion_name$\n$mod_planet_pops_upkeep_mult$：§G-10%§!"
  tr_synchronicity_cloned_organs:0 "克隆器官"
  tr_synchronicity_cloned_organs_delayed:0 "用克隆舱批量生产消耗更频繁的器官，例如心和肺，可以延长高优先级工蜂的使用寿命。"
  tr_synchronicity_kinship_gestalt:0 "代理同步"
@@ -337,7 +337,7 @@
 
  tr_supremacy_war_games:0 "战争游戏"
  tr_supremacy_war_games_desc:4 "§Y$MOD_COUNTRY_COMMAND_LIMIT_ADD$§!增加§G+20§!并且§Y$MOD_LEADER_ADMIRAL_SKILL_LEVELS$§!提升§Y2§!。"
- tr_supremacy_war_games_delayed:0 "一个强大的战争游戏传统根植于我舰队高级指挥官的灵魂中，无论这场游戏发生在计算机模拟环境还是真实的太空。这趋使我们的舰队司令官跳出常规思维，产生了无数战术创新和新战略。"
+ tr_supremacy_war_games_delayed:0 "无论是计算机模拟还是实战演习，高强度的战争推演已经是舰队高层军官深信不疑的法宝。推演能够让我们的指挥官们开拓思路，跳出思维定式，诞生了无数的战术创新和战略新思想。"
  tr_supremacy_war_games_machine_desc:0 "$tr_supremacy_war_games_desc$"
  tr_supremacy_war_games_machine:0 "削减战斗变量"
  tr_supremacy_war_games_machine_delayed:0 "对成千上万的战斗结果可能性进行高速计算并实时更新，有助于将普通舰队行为的不可预测性降低到更易于管理的水平。"
@@ -396,7 +396,7 @@
  #tr_diplomacy_alien_tourism_delayed:0 "It is easy to take our rich culture for granted. We should make it easier for visitors from other civilizations to share in its beauty."
 
  tr_diplomacy_diplomatic_networking:0 "外交情报网"
- tr_diplomacy_diplomatic_networking_desc:0 "大使馆：§G+3§!£unity£§Y凝聚力§!"
+ tr_diplomacy_diplomatic_networking_desc:1 "大使馆：§G+3§!£unity£§Y凝聚力§!\n无需大使馆即可解锁高级外交行动"
  tr_diplomacy_diplomatic_networking_gestalt:0 "$tr_diplomacy_diplomatic_networking$"
  tr_diplomacy_diplomatic_networking_delayed:0 "我方构建的大使级情报网所具有的能力与影响力使得[This.GetAdj]人民倍感自豪。"
  tr_diplomacy_diplomatic_networking_gestalt_delayed:0 "将我们的外交进程全方位地融入到我们与他国的关系中将不仅仅增进我们的外交：还能有效地提升我们自身决策过程中的内聚力，并最终使[This.GetGovernmentName]自身受益。"
@@ -962,7 +962,7 @@
  tr_aptitude_champions_of_the_empire_hive_delayed:0 "蜂巢愿意向最强的单体们授予分钟级的自治权以惠及整体"
  tr_aptitude_champions_of_the_empire_machine:0 "行政权限"
  tr_aptitude_champions_of_the_empire_machine_delayed:0 "我们信任领袖们的专属子程序，并给予它们影响帝国运行方式的权限。"
- tr_aptitude_champions_of_the_empire_desc:1 "每位$admiral_with_icon$和$general_with_icon$ 级别\n$t$$MOD_COUNTRY_NAVAL_CAP_ADD$：§G+2§!\n每位$governor_with_icon$ 级别\n$t$$MOD_EMPIRE_SIZE_MULT$：§G-2§!\n每位$scientist_with_icon$ 级别\n$t$$MOD_LEADER_SPECIES_EXP_GAIN$：§G+0.5%§!"
+ tr_aptitude_champions_of_the_empire_desc:1 "$commander_with_icon$和$general_with_icon$的每一等级\n$t$$MOD_COUNTRY_NAVAL_CAP_ADD$：§G+2§!\n$governor_with_icon$的每一等级\n$t$$MOD_EMPIRE_SIZE_MULT$：§G-2§!\n$scientist_with_icon$的每一等级\n$t$$MOD_LEADER_SPECIES_EXP_GAIN$：§G+0.5%§!"
 
 ################################################################
 # Statecraft
@@ -1003,8 +1003,8 @@
  tr_statecraft_shared_benefits_delayed:0 "通过让所有领袖参与进我们议程的落实中，让他们对自己的作用和目标建立起更强的理解。"
  tr_statecraft_shared_benefits_hive_delayed:0 "通过将所有的结点和领袖应用到我们议程的实施中，得到任何有效的特化都能快速地向外传播。"
  tr_statecraft_shared_benefits_machine_delayed:0 "$tr_statecraft_shared_benefits_hive_delayed$"
- tr_statecraft_shared_benefits_desc:0 "每当有§Y议程§!启动时：\n$t$ $tr_statecraft_shared_benefits_effect_desc$"
- tr_statecraft_shared_benefits_effect_desc:0 "所有领袖获得$@statecraft_amongst_peers_exp_reward|G0$经验"
+ tr_statecraft_shared_benefits_desc:0 "每当有§Y议程§!启动时：\n$t$$tr_statecraft_amongst_peers_effect_desc$"
+ tr_statecraft_amongst_peers_effect_desc:1 "所有内阁官员获得每技能等级$@statecraft_amongst_peers_exp_reward|G0$经验"
 
 ################################################################
 # Politics
@@ -1014,10 +1014,10 @@
  tradition_politics_desc:0 "银河舞台的灯亮起来了，而我们正要去到那舞台的中央。"
 
  tr_politics_adopt:0 "$tradition_politics$传统"
- tr_politics_adopt_desc:0 "§G+1§!特使\n指派到§Y银河共同体§!的特使将产出0.1£influence£§Y影响力§!。"
+ tr_politics_adopt_desc:1 "§G+1§!特使\n指派到§Y[GetGalCommunityOrGalImperium]§!的$official_plural_with_icon$每一§Y技能等级§!都将产出0.1£influence£§Y影响力§!。"
 
  tr_politics_finish:0 "$tr_politics_adopt$已完成"
- tr_politics_finish_desc:0 "§G+10%§!£diplo_weight£外交权重\n解锁4个银河共同体中的特殊§Y议案§!\n$TRADITIONS_FINISH_AP$"
+ tr_politics_finish_desc:1 "§G+10%§!£diplo_weight£外交权重\n解锁4个§Y[GetGalCommunityOrGalImperium]§!中的特殊§Y议案§!\n$TRADITIONS_FINISH_AP$"
 
  tr_politics_quid_pro_quo:0 "等价交换"
  tr_politics_quid_pro_quo_desc:0 "当你支持的议案通过时，获得提出者的1个§Y外交支持§!。"
@@ -1025,7 +1025,7 @@
  MESSAGE_FAVOR_GAINED_POLITICS_TRADITION_DESC:0 "由于我们支持了他们的议案，$WHO|Y$现在欠了我们一个§Y外交支持§!。"
 
  tr_politics_gravitas:0 "无上庄严"
- tr_politics_gravitas_desc:0 "§G-25%反对或提出议案所需的§!£influence£§Y影响力§!花费\n每个指派到银河共同体的§Y特使§!产出额外的§G2.5%§!£diplo_weight£外交权重。 "
+ tr_politics_gravitas_desc:1 "§G-25%反对或提出议案所需的§!£influence£§Y影响力§!花费\n每个指派到§Y[GetGalCommunityOrGalImperium]§!的$official_plural_with_icon$每一§Y技能等级§!都产出额外的§G2.5%§!£diplo_weight£外交权重。"
  tr_politics_gravitas_delayed:0 "权术是错觉的艺术。只要让其他人看到他们想看的东西，我们就能在共同体中愈发举足轻重。"
 
  tr_politics_extraordinary_powers:0 "特别权力"
@@ -1037,8 +1037,8 @@
  tr_politics_national_agenda_delayed:0 "我们在参议院的胜利值得庆祝：这让我们离美好未来又更近一步了。"
 
  tr_politics_persistent_petitioners:0 "执着请愿"
- tr_politics_persistent_petitioners_desc:0 "在一项其他帝国的议案通过后，获得§G+25%§!£diplo_weight£外交权重直到自己的议案通过为止。"
- tr_politics_persistent_petitioners_delayed:0 "我们派往银河共同体的使团十分坚韧不拔，屡败屡战。也许会花上一些时间，但我们一定能得到我们应得的东西。"
+ tr_politics_persistent_petitioners_desc:1 "在一项其他帝国的议案通过后，获得§G+25%§!£diplo_weight£外交权重直到自己的议案通过为止。"
+ tr_politics_persistent_petitioners_delayed:1 "我们派往§Y[GetGalCommunityOrGalImperium]§!的代表团十分坚韧不拔，屡败屡战。也许会花上一些时间，但我们一定能得到我们应得的东西。"
  persistent_petitioners:0 "$tr_politics_persistent_petitioners$"
 
 ################################################################
@@ -1056,7 +1056,7 @@ tr_enmity_finish_desc: "Available Envoys: §G+1§!\nUnlocks the §YAntagonistic�
 
 tr_enmity_rise_to_the_occasion: "Rise to the Occasion"
 tr_enmity_rise_to_the_occasion_delayed: "In the face of an ever-increasing number of adversaries, we stand united."
-tr_enmity_rise_to_the_occasion_effect: "Leader Capacity per Rival: §G+0.5§!"
+tr_enmity_rise_to_the_occasion_effect: "$mod_country_official_cap_add$ per Rival: §G+0.50§!\n$mod_country_commander_cap_add$ per Rival: §G+0.50§!\n$mod_country_scientist_cap_add$ per Rival: §G+0.50§!"
 
 tr_enmity_consumate_contrarian: "Consummate Contrarian"
 tr_enmity_consumate_contrarian_delayed: "Blocking the plans of the opposition can be just as satisfying as enacting one's own."
@@ -1070,7 +1070,8 @@ tr_enmity_outpace_delayed: "Second, make the move your foe is unwilling to."
 
 tr_enmity_eclipse: "Eclipse"
 tr_enmity_eclipse_delayed: "Third, cast a shadow over your adversary once and for all."
-tr_enmity_eclipse_effect: "Grants §G2%§! increased £physics£ £society£ £engineering£ §YScience§! and £unity£ §YUnity§! output per §YRival§! after winning a §YHumiliation War§!."
+tr_enmity_eclipse_effect: "Grants §G2%§! increased $r_research$ and $r_unity$ output per §YRival§! for §Y10§! Years after winning a §YHumiliation War§!."
+
 enmity_humiliate: "[GetName] gets the §YReaffirmed Superiority§! modifier for §Y10§! years granting them §G2%§! increased $r_research$ and $r_unity$ output per §YRival§!."
 reaffirmed_superiority: "Reaffirmed Superiority"
 reaffirmed_superiority_desc: "Our superiority is unassailable. No one is greater than the [GetName]."
@@ -1101,12 +1102,12 @@ reaffirmed_superiority_desc: "Our superiority is unassailable. No one is greater
 
  requires_ap_mind_over_matter:2 "$TRIGGER_FAIL$需要§Y$ap_mind_over_matter$§!飞升特典或§Y$origin_shroudwalker_apprentice$§!起源。"
  requires_not_ap_mind_over_matter:1 "$TRIGGER_FAIL$不能拥有§Y$ap_mind_over_matter$§!飞升特典。"
- allow_decision_mastery_of_nature:1 "§Y解锁决议：§!掌控自然"
- describe_decision_mastery_of_nature:0 "§E此决策将使行星可支持的地区上限永久增加§Y2§!块。此决策在每颗行星上只可实施一次。§!"
- decision_mastery_of_nature:0 "支配自然"
- decision_mastery_of_nature_desc:0 "我们的人口需要增长空间，所以我们必须腾出足够的空间。绝不能让自然阻碍我们进步的步伐。"
+ describe_decision_mastery_of_nature:1 "§Y解锁决议：§!掌控自然$TABBED_NEW_LINE$—最大地区数：§Y+2§!$TABBED_NEW_LINE$—行星特征产生的最大资源地区数：§G+50%§!"
+ decision_mastery_of_nature:1 "支配自然"
+ decision_mastery_of_nature_desc:0 "我们的文明需要更多空间繁衍生息，所以我们就得创造空间。决不能让大自然阻挡我们的进步之路。"
  mastery_of_nature:0 "$decision_mastery_of_nature$"
  mastery_of_nature_desc:0 "$decision_mastery_of_nature_desc$"
+ mastery_of_nature_effects: "—最大地区数：§Y+2§!\n—最大资源地区数：§G+50%§!"
 
  requires_ap_voidborn_OR_ap_galactic_wonders:1 "$TRIGGER_FAIL$需要§Y$ap_voidborn$§!或§Y$ap_galactic_wonders$§!飞升特典。"
 

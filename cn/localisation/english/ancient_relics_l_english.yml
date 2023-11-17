@@ -26,6 +26,8 @@
  add_research_options_galactic_wonders_utopia_megacorp:0 "获得研究选项：\n£engineering_research£§Y$tech_ring_world$§!\n£physics_research£§Y$tech_matter_decompressor$§!\n£physics_research£§Y$tech_dyson_sphere$§!\n环形世界、物质解压器和戴森球是极其强大的巨型结构。"
 
  RELICS:0 "$relics$"
+ EXCEPTIONAL_MATERIALS: "卓越材料"
+ EXCEPTIONAL_MATERIALS_DESC: "卓越材料是可以通过科学探索获得的稀有且宝贵的资源。"
  MINOR_ARTIFACTS:0 "小型文物"
  RELICS_FOUND:0 "已发现的遗珍"
  RELICS_FOUND_TOOLTIP:1 "我帝国已经发现了$NUM|Y$件遗珍"
@@ -135,6 +137,8 @@
  IS_ARCHAEOLOGICAL_SITE_FINISHED_TRIGGER:0 "遗迹发掘完成"
  IS_NOT_ARCHAEOLOGICAL_SITE_UNDER_EXCAVATION_TRIGGER:0 "遗迹未在发掘"
  IS_ARCHAEOLOGICAL_SITE_UNDER_EXCAVATION_TRIGGER:0 "遗迹正在发掘"
+ IS_NOT_ARCHAEOLOGICAL_SITE_LOCKED_TRIGGER: "遗址进度不被锁定。"
+ IS_ARCHAEOLOGICAL_SITE_LOCKED_TRIGGER: "遗址进度被锁定。"
  IS_NOT_ARCHAEOLOGICAL_STAGE_CURRENT_SCORE_TRIGGER:0 "当前阶段分数不$COMPARE$$NUM_COMPARE$"
  IS_ARCHAEOLOGICAL_STAGE_CURRENT_SCORE_TRIGGER:0 "当前阶段分数$COMPARE$$NUM_COMPARE$"
  IS_NOT_ARCHAEOLOGICAL_STAGE_CURRENT_SCORE_NO_DIE_TRIGGER:0 "除掷骰结果外的当前阶段分数不$COMPARE$$NUM_COMPARE$"
@@ -888,17 +892,17 @@
 
  # Deposits
 
- d_artifacts_1:0 "稀有文物聚集地"
- d_artifacts_2:0 "$d_artifacts_1$"
- d_artifacts_3:0 "$d_artifacts_1$"
- d_artifacts_mining_1:0 "$d_artifacts_1$"
- d_artifacts_mining_2:0 "$d_artifacts_1$"
- d_artifacts_mining_3:0 "$d_artifacts_1$"
- d_artifacts_planet_1:0 "$d_artifacts_1$"
+ d_artifacts_research_1:0 "稀有文物矿藏"
+ d_artifacts_research_2:0 "$d_artifacts_research_1$"
+ d_artifacts_research_3:0 "$d_artifacts_research_1$"
+ d_artifacts_mining_1:0 "$d_artifacts_research_1$"
+ d_artifacts_mining_2:0 "$d_artifacts_research_1$"
+ d_artifacts_mining_3:0 "$d_artifacts_research_1$"
+ d_artifacts_planet_1:0 "$d_artifacts_research_1$"
  d_artifacts_planet_1_desc:0 "该行星上的考古遗址虽已被深度发掘，但仍遗留下许多价值稍逊的物品有待研究。"
- d_artifacts_planet_2:0 "$d_artifacts_1$"
+ d_artifacts_planet_2:0 "$d_artifacts_research_1$"
  d_artifacts_planet_2_desc:0 "$d_artifacts_planet_1_desc$"
- d_artifacts_planet_3:0 "$d_artifacts_1$"
+ d_artifacts_planet_3:0 "$d_artifacts_research_1$"
  d_artifacts_planet_3_desc:0 "$d_artifacts_planet_1_desc$"
 
  # Technologies
@@ -977,7 +981,7 @@
  sm_irassian_naval_yards_desc_modifier:0 "[Root.GetIrassianNavalYardsEffect]"
  irassian_naval_yards_desc:0 "船坞：§G+1§!§Y船坞容量§!\n太空基地修正：\n舰船建造速度：§G+20%§!"
  improved_irassian_naval_yards_desc:0 "船坞：§G+1§!§Y船坞容量§!\n太空基地修正：\n舰船建造速度：§G+30%§!"
- 
+
  sm_yuht_detection_array:0 "$tech_secrets_yuht$"
  sm_yuht_detection_array_desc:0 "$tech_secrets_yuht_desc$\n"
  sm_yuht_detection_array_desc_modifier:0 "[Root.GetYuhtDetectionArrayEffect]"
@@ -1098,7 +1102,7 @@
  ap_archaeoengineers_tooltip:0 "为§Y远古§!舰船部件和建筑解锁附加效果。"
 
  # Misc
- 
+
  count_archaeological_site_trigger:0 "已开发挖掘场数目"
  mod_category_archaeostudies_research_speed_mult:0 "研究速度（远古学）"
  mod_job_archaeoengineers_add:0 "$job_archaeoengineers$岗位"
@@ -1125,4 +1129,3 @@
  planet_destruction.901.desc:0 "随着[FromFrom.GetName]发出的意识清除光束的能量逐渐消散，[From.GetName]的人口几乎都已经退化到了未开智状态。幸免遇难者面对那些曾经认识的人们做出动物般的举动只能束手无策。"
 
  weapon_archaeotech:0 "§Y远古科技§!"
-

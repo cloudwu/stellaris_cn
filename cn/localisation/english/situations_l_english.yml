@@ -35,6 +35,7 @@
  CLICK_TO_OPEN_SITUATION_LOG:0 "§G点击打开情报日志§!"
  SITUATION_STAGE_NO_EFFECTS:0 "该阶段没有影响。"
  SITUATION_TARGET_TOOLTIP:0 "该局势重点围绕$TARGET_TYPE$$TARGET|Y$。"
+ SITUATION_TARGET_TOOLTIP_SPECIFY_SYSTEM: "该局势重点围绕$SYSTEM|Y$中的$TARGET|Y$。"
  SITUATION_TARGET_TOOLTIP_NO_TARGET:0 "该局势的效果将影响整个帝国。"
  SITUATION_START_HEADER:0 "起始值"
  SITUATION_START_TOOLTIP:0 "该局势开始于$VALUE|Y0$进度。"
@@ -670,6 +671,8 @@
  leviathan_celebration_do_nothing_effect:0 "[Target.GetName]进行组织，[Owner.GetParadeStudy]就会开始。"
  leviathan_celebration_encourage:0 "鼓励庆典"
  leviathan_celebration_discourage:0 "阻止庆典"
+ approach_reorganize: "重组"
+ approach_reorganize_effect: "暂停局势，解锁一项§Y行星决议§!以便把[Owner.GetParadeStudy]搬到那里。"
  leviathan_celebration_encourage_effect:0 "通过鼓励这场纪念重大胜利的庆典，我们确信未来将会有更多机会来纪念这一事件。"
  leviathan_celebration_discourage_effect:1 "一场浮夸无聊的[Owner.GetParadeStudy]一文不值。我们的资源应当用于更需要的地方。"
  leviathan_celebration_voidspawn_effect:0 "在[Owner.GetWaterCoolantLower]污染被清理干净之前，我们的[Owner.GetParadeStudy]暂停举办。"
@@ -701,6 +704,8 @@
  approach_cure_it:1 "治愈恒星"
  approach_cure_it_effect:0 "我们终于找到了解决措施，希望不会太晚。"
 
+ decision_reorganize_leviathan_parade: "迁移游行地点"
+ decision_reorganize_leviathan_parade_desc: "不是所有星球都可以举办像[Owner.GetParadeStudy]这么壮观的游行。我们深思熟虑之后认为[From.GetName]才是更合适的地点。"
  #Events
  situation.1000.name:0 "[This.GetLeviathanTargetName]"
  situation.1000.desc.small:0 "这一天终于来临。我们的[Owner.GetSensoryWorkers]已经就位，准备为我们对§Y[This.GetTrophyName]§!进行全面的探索。随着研究的开始，我们将一小部分意识集中在§Y[Target.GetName]§!上，以消化吸收对异常项目的研究。然而，让我们将残余物拖到[Target.GetPlanetHabitat]以后发现，结果并不如我们希望的那么有趣。\n\n就在这项进程开始之后不久，我们决定将研究转移到位于[Target.GetName]的中央团簇，由特化的[Owner.GetSensoryWorkers]对其进行持续观测。希望能从中有更多的发现。"

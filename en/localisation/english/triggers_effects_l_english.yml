@@ -487,6 +487,8 @@
  IS_NOT_SAME_POP:0 "Is NOT same pop as $OTHER$"
  HAS_EVENT_CHAIN_TRIGGER:0 "Has the $NAME|Y$ Event Chain"
  HAS_NOT_EVENT_CHAIN_TRIGGER:1 "Does NOT have the $NAME|Y$ Event Chain"
+ HAS_COMPLETED_EVENT_CHAIN_TRIGGER:0 "Has completed the $NAME|Y$ Event Chain"
+ HAS_NOT_COMPLETED_EVENT_CHAIN_TRIGGER:0 "Did NOT complete the $NAME|Y$ Event Chain"
  IS_NOT_POP_CATEGORY:0 "Is NOT $CATEGORY$"
  IS_POP_CATEGORY:0 "Is $CATEGORY$"
  NOT_HAS_JOB_CATEGORY:1 "Job is NOT $CATEGORY$"
@@ -610,7 +612,8 @@
  HAS_NOT_TRUCE_TRIGGER:0 "$COUNTRY|Y$ does not have truce with $TARGET|Y$"
  HAS_TRUCE_TRIGGER:0 "$COUNTRY|Y$ has truce with $TARGET|Y$"
  SET_LEADER_AGE_EFFECT:0 "Change the age to $AGE|Y$"
- ADD_LEADER_AGE_EFFECT:0 "Change Leader age by $AGE|Y$ years"
+ ADD_LEADER_AGE_EFFECT:1 "Leader advances in age by $AGE|Y$ years"
+ SUB_LEADER_AGE_EFFECT: "Leader is now $AGE|Y$ years younger"
  SET_LEADER_IMMORTAL_EFFECT:0 "Becomes immortal"
  SET_LEADER_MORTAL_EFFECT:0 "Becomes mortal"
  IS_IMMORTAL_TRIGGER:0 "Is immortal"
@@ -899,6 +902,8 @@
  IS_NOT_IN_ALLIANCE_WITH_TOOLTIP:0 "Is NOT in an Alliance with $TARGET|Y$"
  IS_RIVAL_TOOLTIP:0 "Has declared $TARGET|Y$ as their Rival."
  IS_NOT_RIVAL_TOOLTIP:0 "Has NOT declared $TARGET|Y$ as their Rival."
+ IS_IMPROVING_RELATIONS_WITH_TOOLTIP: "An Envoy is Improving Relations with $TARGET|Y$."
+ IS_NOT_IMPROVING_RELATIONS_WITH_TOOLTIP: "An Envoy is NOT Improving Relations with $TARGET|Y$."
  IS_NEIGHBOR_OF:0 "Is bordering $TARGET|Y$"
  IS_NOT_NEIGHBOR_OF:0 "Is NOT bordering $TARGET|Y$"
  IS_IN_FEDERATION_WITH_TOOLTIP:0 "Is in a Federation with $TARGET|Y$"
@@ -1126,6 +1131,7 @@
  GO_TO_NEXT_PRE_FTL_AGE:0 "Advances $COUNTRY|Y$ to the next Pre-FTL technology level\n"
  SET_PRE_FTL_AGE:0 "Sets the Pre-FTL technology level for $COUNTRY|Y$ to the $AGE|Y$\n"
  CREATE_POP:1 "One $SPECIES|Y$ Pop is created\n"
+ CREATE_POP_MULTIPLE: "$QUANTITY$ $SPECIES|Y$ Pops are created\n"
  BUILD_POP:0 "One buildable Pop is built\n"
  MODIFY_DEVELOPMENT_POS:0 "Increase infrastructure by $VALUE|Y$\n"
  MODIFY_DEVELOPMENT_NEG:0 "Reduce infrastructure by $VALUE|Y$\n"
@@ -1233,6 +1239,7 @@
  SHIFT_ETHIC_EFFECT:0 "\n$COUNTRY|Y$ shifts its ethics towards $ETHIC|Y$\n"
  CHANGE_BACKGROUND_ETHIC:0 "Change Leader Ethic to $ETHIC|Y$"
  SET_COUNCIL_POSITION_EFFECT:0 "Assigns Leader to Council as $POSITION|Y$"
+ SET_COUNCIL_POSITION_TO_COUNCIL_EFFECT: "Assigns $POSITION|Y$ to the Council"
  ADD_ETHIC_EFFECT:0 "\n$ETHIC|Y$ ethic gained\n"
  CLEAR_ETHOS_EFFECT:0 "All Ethics are removed."
  REMOVE_ETHIC_EFFECT:1 "$ETHIC|Y$ ethic lost\n"
@@ -1517,6 +1524,8 @@
  HAS_SEEN_ANY_BYPASS_NOT:0 "$COUNTRY|Y$ has encountered a $BYPASS_TYPE|Y$."
  HAS_SEEN_ANY_BYPASS:0 "$COUNTRY|Y$ has NOT encountered a $BYPASS_TYPE|Y$."
  ADD_SEEN_BYPASS_INSTANCE:0 "$COUNTRY|Y$ records $BYPASS|Y$ location."
+ IS_BYPASS_TYPE: "Bypass is of type $BYPASS_TYPE|Y$."
+ IS_BYPASS_TYPE_NOT: "Bypass is NOT of type $BYPASS_TYPE|Y$."
 
  ADD_RESOURCE:1 "$RESOURCES|Y$"
 
@@ -1569,6 +1578,8 @@
  IS_NOT_DISTANCE_SAME_SYSTEM:0 "Distance within same system is NOT within range $MIN|Y2$ to $MAX|Y2$"
  IS_DISTANCE_TO_EMPIRE:0 "Distance to $WHO|Y$ is $COMPARATOR$ $DISTANCE|Y$"
  IS_NOT_DISTANCE_TO_EMPIRE:0 "Distance to $WHO|Y$ is NOT $COMPARATOR$ $DISTANCE|Y$"
+ IS_DISTANCE_TO_CAPITAL: "Total hyperlane distance to capital is $COMPARATOR$ $DISTANCE|Y$"
+ IS_NOT_DISTANCE_TO_CAPITAL: "Total hyperlane distance to capital is NOT $COMPARATOR$ $DISTANCE|Y$"
 
  HAS_COMMUNICATIONS_TRIGGER:0 "Has established communications with $COUNTRY|Y$"
  HAS_NOT_COMMUNICATIONS_TRIGGER:0 "Has NOT established communications with $COUNTRY|Y$"
@@ -1653,6 +1664,8 @@
  ADD_SITUATION_PROGRESS:0 "The $SITUATION|Y$ Situation advances by $AMOUNT|Y$"
  ADD_SITUATION_PROGRESS_NEGATIVE:0 "The $SITUATION|Y$ Situation recedes by $AMOUNT|Y$"
  SET_SITUATION_APPROACH_EFFECT:1 "Situation Approach is set to '$APPROACH|Y$'. This will have the following effects:\n$EFFECTS$"
+ CHANGE_SITUATION_TARGET_EFFECT_NONE: "Clears the target of $NAME|Y$."
+ CHANGE_SITUATION_TARGET_EFFECT: "Changes the target of $NAME|Y$ to $TARGET_NAME|Y$."
 
  TRIGGER_SITUATION_PROGRESS:0 "Total progress ($CURRENT$) is $COMPARE$ $PROGRESS|Y$"
  TRIGGER_SITUATION_PROGRESS_NOT:0 "Total progress ($CURRENT$) is NOt $COMPARE$ $PROGRESS|Y$"
@@ -1917,6 +1930,8 @@
  HAS_AGENDA_PROGRESS_PERCENT: "Council Agenda Progress is $COMPARE$ $VALUE|0%$"
  HAS_NOT_AGENDA_PROGRESS: "Council Agenda Progress is NOT $COMPARE$ $VALUE|0$"
  HAS_AGENDA_PROGRESS: "Council Agenda Progress is $COMPARE$ $VALUE|0$"
+ HAS_NOT_LEGITIMACY: "Council Legitimacy is NOT $COMPARE$ $VALUE|0%$"
+ HAS_LEGITIMACY: "Council Legitimacy is $COMPARE$ $VALUE|0%$"
 
  effect_random_fleet_in_orbit:0 "Random Fleet in Orbit"
  effect_every_fleet_in_orbit:0 "Every Fleet in Orbit"
@@ -1986,6 +2001,7 @@
  COMPLETE_CRISIS_OBJECTIVE:3 "The $OBJ|Y$ crisis objective is completed, granting $REWARD|G$ Menace."
  DEACTIVATE_MENACE_PERK:0 "The Menace Perk $PERK$ was deactivated for $COUNTRY$"
  ACTIVATE_CRISIS_PROGRESSION:1 "Allows the $COUNTRY$ to progress towards §YBecoming the §RCrisis§!§!."
+ ACTIVATE_CRISIS_PROGRESSION_NO_COUNTRY: "Allows you to progress towards §YBecoming the §RCrisis§!§!."
 
  CREATE_NEBULA_EFFECT:0 "A Nebula is created in the $SYSTEM|Y$ system"
 
@@ -2096,28 +2112,64 @@
 
  TRIGGER_IS_UNDER_SOCIETAL_ENLIGHTENMENT:1 "Is receiving Societal Guidance from $TARGET|Y$"
  TRIGGER_IS_NOT_UNDER_SOCIETAL_ENLIGHTENMENT:1 "Is not receiving Societal Guidance from $TARGET|Y$"
- 
+
  TRIGGER_IS_UNDER_OPEN_TECHNOLOGICAL_ENLIGHTENMENT:0 "Is receiving technology from $TARGET|Y$"
  TRIGGER_IS_NOT_UNDER_OPEN_TECHNOLOGICAL_ENLIGHTENMENT:0 "Is not receiving technology from $TARGET|Y$"
- 
+
  TRIGGER_IS_UNDER_STRATIFIED_TECHNOLOGICAL_ENLIGHTENMENT:0 "Is receiving Stratified Technological Development from $TARGET|Y$"
  TRIGGER_IS_NOT_UNDER_STRATIFIED_TECHNOLOGICAL_ENLIGHTENMENT:0 "Is not receiving Stratified Technological Development from $TARGET|Y$"
- 
+
  TRIGGER_HAS_PRE_FTL_TRADE:0 "Has trade with $TARGET|Y$"
  TRIGGER_DOESNT_HAVE_PRE_FTL_TRADE:0 "Doesn't have $TARGET|Y$"
- 
+
  EFFECT_REMOVE_FROM_FEDERATION:0 "$COUNTRY$ is removed from the $FEDERATION$"
  EFFECT_BREAK_TREATY:0 "$COUNTRY1$ break their $TREATY_TYPE$ with $COUNTRY2$"
- 
+
  EFFECT_CLEAR_RELATIONS:0 "Clear relations between country '$SCOPED_COUNTRY$' and country '$TARGET_COUNTRY$': $RELATION_KEYS$"
- 
+
  EFFECT_REMOVE_ENVOYS_TO:0 "Remove envoys assigned by $FROM_COUNTRY$ to $TO_COUNTRY$"
 
  TRIGGER_IS_GARRISON: "Fleet $FLEET|Y$ is a garrison"
  TRIGGER_IS_NOT_GARRISON: "Fleet $FLEET|Y$ is not a garrison"
+ TRIGGER_CAN_GO_MIA: "$FLEET|Y$ can go Missing In Action"
+ TRIGGER_CANNOT_GO_MIA: "$FLEET|Y$ cannot go Missing In Action"
 
  HAS_NUM_POSITIVE_TRAITS: "Number of positive Traits is $COMPARATOR$ $NUM|Y$"
  HAS_NOT_NUM_POSITIVE_TRAITS: "Number of positive Traits is NOT $COMPARATOR$ $NUM|Y$"
 
  HAS_NUM_NEGATIVE_TRAITS: "Number of negative Traits is $COMPARATOR$ $NUM|Y$"
  HAS_NOT_NUM_NEGATIVE_TRAITS: "Number of negative Traits is NOT $COMPARATOR$ $NUM|Y$"
+
+ NUM_LEADER_TRAITS_NEGATIVE_SUBCLASS: "Number of negative subclass traits are $COMPARATOR$ $NUM|Y$"
+ NUM_LEADER_TRAITS_POSITIVE_SUBCLASS: "Number of positive subclass traits are $COMPARATOR$ $NUM|Y$"
+ NUM_LEADER_TRAITS_SUBCLASS: "Number of subclass traits are $COMPARATOR$ $NUM|Y$"
+ NUM_LEADER_TRAITS_NEGATIVE_COUNCILOR_SUBCLASS: "Number of negative Councilor subclass Traits are $COMPARATOR$ $NUM|Y$"
+ NUM_LEADER_TRAITS_POSITIVE_COUNCILOR_SUBCLASS: "Number of positive Councilor subclass Traits are $COMPARATOR$ $NUM|Y$"
+ NUM_LEADER_TRAITS_COUNCILOR_SUBCLASS: "Number of subclass Councilor Traits are $COMPARATOR$ $NUM|Y$"
+ NUM_LEADER_TRAITS_NEGATIVE_NON_COUNCIL_SUBCLASS: "Number of negative non Councilor subclass Traits are $COMPARATOR$ $NUM|Y$"
+ NUM_LEADER_TRAITS_POSITIVE_NON_COUNCIL_SUBCLASS: "Number of positive non Councilor subclass Traits are $COMPARATOR$ $NUM|Y$"
+ NUM_LEADER_TRAIT_TIERS_NEGATIVE_SUBCLASS: "Number of negative subclass trait tiers are $COMPARATOR$ $NUM|Y$"
+ NUM_LEADER_TRAIT_TIERS_POSITIVE_SUBCLASS: "Number of positive subclass trait tiers are $COMPARATOR$ $NUM|Y$"
+ NUM_LEADER_TRAIT_TIERS_SUBCLASS: "Number of subclass trait tiers are $COMPARATOR$ $NUM|Y$"
+ NUM_LEADER_TRAIT_TIERS_NEGATIVE_COUNCILOR_SUBCLASS: "Number of negative Councilor subclass trait tiers are $COMPARATOR$ $NUM|Y$"
+ NUM_LEADER_TRAIT_TIERS_POSITIVE_COUNCILOR_SUBCLASS: "Number of positive Councilor subclass trait tiers are $COMPARATOR$ $NUM|Y$"
+ NUM_LEADER_TRAIT_TIERS_COUNCILOR_SUBCLASS: "Number of Councilor trait tiers are $COMPARATOR$ $NUM|Y$"
+ NUM_LEADER_TRAIT_TIERS_NEGATIVE_NON_COUNCIL_SUBCLASS: "Number of negative non Councilor trait tiers are $COMPARATOR$ $NUM|Y$"
+ NUM_LEADER_TRAIT_TIERS_POSITIVE_NON_COUNCIL_SUBCLASS: "Number of positive non Councilor trait tiers are $COMPARATOR$ $NUM|Y$"
+
+ NUM_LEADER_TRAITS_NEGATIVE_NON_SUBCLASS: "Number of negative non subclass traits are $COMPARATOR$ $NUM|Y$"
+ NUM_LEADER_TRAITS_POSITIVE_NON_SUBCLASS: "Number of positive non subclass traits are $COMPARATOR$ $NUM|Y$"
+ NUM_LEADER_TRAITS_NON_SUBCLASS: "Number ofnon subclass  traits are $COMPARATOR$ $NUM|Y$"
+ NUM_LEADER_TRAITS_NEGATIVE_COUNCILOR_NON_SUBCLASS: "Number of negative non subclass Councilor Traits are $COMPARATOR$ $NUM|Y$"
+ NUM_LEADER_TRAITS_POSITIVE_COUNCILOR_NON_SUBCLASS: "Number of positive non subclass Councilor Traits are $COMPARATOR$ $NUM|Y$"
+ NUM_LEADER_TRAITS_COUNCILOR_NON_SUBCLASS: "Number of non subclass Councilor Traits are $COMPARATOR$ $NUM|Y$"
+ NUM_LEADER_TRAITS_NEGATIVE_NON_COUNCIL_NON_SUBCLASS: "Number of negative non subclass non Councilor Traits are $COMPARATOR$ $NUM|Y$"
+ NUM_LEADER_TRAITS_POSITIVE_NON_COUNCIL_NON_SUBCLASS: "Number of positive non subclass non Councilor Traits are $COMPARATOR$ $NUM|Y$"
+ NUM_LEADER_TRAIT_TIERS_NEGATIVE_NON_SUBCLASS: "Number of negative non subclass trait tiers are $COMPARATOR$ $NUM|Y$"
+ NUM_LEADER_TRAIT_TIERS_POSITIVE_NON_SUBCLASS: "Number of positive non subclass trait tiers are $COMPARATOR$ $NUM|Y$"
+ NUM_LEADER_TRAIT_TIERS_NON_SUBCLASS: "Number of non subclass trait tiers are $COMPARATOR$ $NUM|Y$"
+ NUM_LEADER_TRAIT_TIERS_NEGATIVE_COUNCILOR_NON_SUBCLASS: "Number of negative non subclass Councilor trait tiers are $COMPARATOR$ $NUM|Y$"
+ NUM_LEADER_TRAIT_TIERS_POSITIVE_COUNCILOR_NON_SUBCLASS: "Number of positive non subclass Councilor trait tiers are $COMPARATOR$ $NUM|Y$"
+ NUM_LEADER_TRAIT_TIERS_COUNCILOR_NON_SUBCLASS: "Number of non subclass Councilor trait tiers are $COMPARATOR$ $NUM|Y$"
+ NUM_LEADER_TRAIT_TIERS_NEGATIVE_NON_COUNCIL_NON_SUBCLASS: "Number of negative non subclass non Councilor trait tiers are $COMPARATOR$ $NUM|Y$"
+ NUM_LEADER_TRAIT_TIERS_POSITIVE_NON_COUNCIL_NON_SUBCLASS: "Number of positive non subclass non Councilor trait tiers are $COMPARATOR$ $NUM|Y$"

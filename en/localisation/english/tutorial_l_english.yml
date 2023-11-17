@@ -18,7 +18,7 @@
  TUTORIAL_EMPIREVIEW_PLANETS_TITLE:1 "Planet List"
  TUTORIAL_EMPIREVIEW_PLANETS_DESC:5 "The §SPlanets and Sectors§! screen provides an overview of all our colonized worlds, their §SPops§!, and their §SResource Output§!. As our empire grows it can be organized into Sectors, which are helpful for administering larger empires.\n\n§SSectors§! can be automated here, and if they are automated they can be given a specialization and resources to enable planets within them to build and upgrade §SBuildings§! and §SDistricts§! on their planets."
  TUTORIAL_MILITARY_FLEET_TITLE:0 "Military Fleets"
- TUTORIAL_MILITARY_FLEET_DESC:2 "§SMilitary Fleets§! are used to protect our emerging empire from threats... or to expand our glorious rule through force of arms, if we so wish.\n\nOur current §SNaval Capacity§! is limited, but it can be increased by researching new technologies, owning additional §SPops§! and building §SStarbase Anchorages§!.\n\nWe can assign one of our §SAdmirals§! to command a Fleet, granting extra military power along with any other bonuses the leader provides."
+ TUTORIAL_MILITARY_FLEET_DESC:2 "§SMilitary Fleets§! are used to protect our emerging empire from threats... or to expand our glorious rule through force of arms, if we so wish.\n\nOur current §SNaval Capacity§! is limited, but it can be increased by researching new technologies, owning additional §SPops§! and building §SStarbase Anchorages§!.\n\nWe can assign one of our §SCommanders§! to command a Fleet, granting extra military power along with any other bonuses the leader provides."
  TUTORIAL_SCIENCE_SHIP_TITLE:0 "Science Ships"
  TUTORIAL_SCIENCE_SHIP_DESC:4 "This is our §SScience Ship§!, which is used to §SSurvey§! astronomical objects such as planets in a star system. A planet needs to be surveyed in order to make its §SResources§! visible.\n\nOur home system has already been surveyed, so we should focus our efforts elsewhere. With the Science Ship selected, right click on a star neighboring our home system and select §SSurvey System§! while viewing the §SGalaxy Map§!. The ship will now travel to this system and survey all of its planetary bodies."
  TUTORIAL_CONSTRUCTION_SHIP_TITLE:0 "Construction Ships"
@@ -245,6 +245,8 @@
  advisor.1.desc_32:0 "Greetings, [root.GetPurityOrderRulerTitle].\n\n$advisor.1.desc_keenminds$\n\n$advisor.1.desc_filler$"
  advisor.1.desc_33:0 "Greetings, [root.GetPurificationCommitteeRulerTitle].\n\n$advisor.1.desc_keenminds$\n\n$advisor.1.desc_filler$"
  advisor.1.desc_34:0 "Greetings, $RT_OLIGARCH$.\n\n$advisor.1.desc_honortoserve$\n\n$advisor.1.desc_filler$"
+ advisor.1.desc_35: "Greetings, $RT_DEFENSIVE_UNION$.\n\n$advisor.1.desc_honortoserve$\n\n$advisor.1.desc_filler$"
+ advisor.1.desc_36: "Greetings, $RT_DIMENSIONAL_COVENANT$.\n\n$advisor.1.desc_honortoserve$\n\n$advisor.1.desc_filler$"
 
  advisor.1.desc_keenminds:0 "I am VIR, a prototype synthetic intelligence developed by the keenest minds in our civilization to serve as your advisor. I shall endeavor to carry out my duties with the utmost efficiency."
  advisor.1.desc_honortoserve:0 "I am VIR, a prototype synthetic intelligence developed under utmost secrecy by the military. I am honored to serve as your advisor and strategic analyst."
@@ -427,6 +429,9 @@
  tutorial.1337.name:0 "Minor Artifacts"
  tutorial.1337.desc:2 "We have discovered some §SMinor Artifacts§!. These are an esoteric resource - a catch-all term for strange items which we do not understand and indeed may be inexplicable. Regardless of what any one item does, this resource can be used to enact a variety of Decisions via the §S$RELICS_AND_ARTIFACTS$§! screen, a tab on the §S$TRADITION_VIEW_TITLE$§! interface."
 
+ tutorial.1340.name: "$astral_threads$"
+ tutorial.1340.desc: "We have discovered some §SAstral Threads§!. These are filaments of condensed space-time: the result of dimensional planes colliding. Typically, these can only be harvested from §SAstral Scars§! or recovered inside §SAstral Rifts§!.\n\nWe can use the resource to perform various actions via the §SAstral Actions§! screen, a tab on the §S$topbar_button_discoveries_name$§! interface. You can unlock more of these actions by exploring more §SAstral Rifts§!.\n\n§SAstral Rifts§! can develop from §SAstral Scars§! or be created by other anomalous events."
+
  tutorial.2000.name:0 "Conducting First Contact"
  tutorial.2000.desc:1 "Some §SFirst Contact§! missions will present options for how we wish to conduct matters. These choices can affect our diplomatic relationships with other Empires for a long time."
  tutorial.2006.name:0 "First Contact Established"
@@ -551,7 +556,7 @@
  tutorial_16_chain_title:0 "Tutorial: Increase the Fleet"
  tutorial_16_chain_desc:5 "We should build a potent starfleet to uphold the [Root.GetName].\n\nA few more §SCorvettes§! should do, for now. Build the ships at a §SStarbase§! when our §SAlloy§! supplies permit. New military ships always join any existing fleets in orbit of the §SStarbase§! that builds them.\n\nTo optimize a fleet's military power, we may choose to assign it an §SAdmiral§!. This would give it an edge over other fleets, most of which serve without a commander of their own."
  corvettes_built:0 "Corvettes Built"
- admiral_assigned:0 "Admiral Assigned"
+ admiral_assigned:1 "Commander Assigned"
  tutorial_16_tooltip:0 "§STutorial: Increase the Fleet§! added to Situation Log"
  tutorial_17_chain_title:0 "Tutorial: Establish Sector"
  tutorial_17_chain_desc:1 "There is a limit to how many planets you can control directly. This limit can be found in the top bar, and going above it will incur penalties. §SSectors§! are semi-autonomous and manage the planets that have been assigned under their control. To create a new sector, go into the §SPlanets and Sectors§! view by clicking on its associated icon in the top bar drop-down list or press §SF5§!. Then click on the §SCreate New Sector§! button to the upper right.\n\nYou will now enter the §SSector Management Mode§!. From here, you designate which star systems should make up the new sector. All planets within those systems will fall under the sector's jurisdiction. Select a system where we have a colony, and click on the §SFinish§! button. You will now have created our first sector!"
@@ -591,4 +596,3 @@
  tutorial_25_chain_desc:1 "We can §Sexpand our borders§! by constructing §SStarbases§! in orbit around alien stars. The presence of a starbase heralds our dominion over the star, allowing us to exploit its resources and disallowing passage for any aliens we have contact with - if we have closed our borders to them.\n\nSelect a §SConstruction Ship§!, click the §SBuild Starbase§! button in its fleet interface, and then click a star. §SUnlike other orbital stations, Starbases can be built outside of our borders.§!"
  frontier_outpost_built:1 "Starbase Built"
  tutorial_25_tooltip:2 "§STutorial: Starbases§! added to Situation Log"
-

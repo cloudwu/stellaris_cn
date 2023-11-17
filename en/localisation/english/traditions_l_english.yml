@@ -240,7 +240,7 @@
  tradition_synchronicity:0 "Synchronicity"
  tradition_synchronicity_desc:0 "Unity of mind begets unity of purpose. We must strive for synchronized action in all endeavors."
  tr_synchronicity_adopt:0 "Synchronicity Traditions"
- tr_synchronicity_adopt_desc:0 "$UNLOCKS_AGENDA$ $council_agenda_agenda_gestalt_boost_governor_name$\n$UNLOCKS_AGENDA$ $council_agenda_agenda_gestalt_boost_scientist_name$\n$UNLOCKS_AGENDA$ $council_agenda_agenda_gestalt_boost_general_name$\n$UNLOCKS_AGENDA$ $council_agenda_agenda_gestalt_boost_admiral_name$\n$mod_planet_pops_upkeep_mult$: §G-10%§!"
+ tr_synchronicity_adopt_desc:0 "$UNLOCKS_AGENDA$ $council_agenda_agenda_gestalt_boost_growth_name$\n$UNLOCKS_AGENDA$ $council_agenda_agenda_gestalt_boost_cognitive_name$\n$UNLOCKS_AGENDA$ $council_agenda_agenda_gestalt_boost_regulatory_name$\n$UNLOCKS_AGENDA$ $council_agenda_agenda_gestalt_boost_legion_name$\n$mod_planet_pops_upkeep_mult$: §G-10%§!"
  tr_synchronicity_cloned_organs:0 "Cloned Organs"
  tr_synchronicity_cloned_organs_delayed:0 "The cloning vats mass-produce the more frequently consumed organs like hearts and lungs, increasing the usable lifespan of high-priority drones."
  tr_synchronicity_kinship_gestalt:0 "Synchronized Agents"
@@ -337,7 +337,7 @@
 
  tr_supremacy_war_games:0 "War Games"
  tr_supremacy_war_games_desc:4 "§Y$MOD_COMMAND_LIMIT_ADD$§! increased by §G+20§! and §Y$MOD_LEADER_ADMIRAL_SKILL_LEVELS$§! is increased by §Y2§!."
- tr_supremacy_war_games_delayed:0 "A strong war game tradition has taken root among the senior officers of our fleets, whether the games be computer simulations or actual exercises in space. This has encouraged our admirals to think outside the box, resulting in numerous tactical innovations and new strategies."
+ tr_supremacy_war_games_delayed:0 "A strong war game tradition has taken root among the senior officers of our fleets, whether the games be computer simulations or actual exercises in space. This has encouraged our commanders to think outside the box, resulting in numerous tactical innovations and new strategies."
  tr_supremacy_war_games_machine_desc:0 "$tr_supremacy_war_games_desc$"
  tr_supremacy_war_games_machine:0 "Combat Variable Mitigation"
  tr_supremacy_war_games_machine_delayed:0 "High speed calculation of thousands of possible battle outcomes, updated in real time, helps reduce the unpredictability of a general fleet action to more manageable levels."
@@ -396,7 +396,7 @@
  #tr_diplomacy_alien_tourism_delayed:0 "It is easy to take our rich culture for granted. We should make it easier for visitors from other civilizations to share in its beauty."
 
  tr_diplomacy_diplomatic_networking:0 "Diplomatic Networking"
- tr_diplomacy_diplomatic_networking_desc:0 "Embassies: §G+3§! £unity£ §YUnity§!"
+ tr_diplomacy_diplomatic_networking_desc:1 "Embassies: §G+3§! £unity£ §YUnity§!\nAllows Advanced Diplomatic Actions without an Embassy"
  tr_diplomacy_diplomatic_networking_gestalt:0 "$tr_diplomacy_diplomatic_networking$"
  tr_diplomacy_diplomatic_networking_delayed:0 "The influence and prowess of our ambassadorial network is a source of great pride to the [This.GetAdj] people."
  tr_diplomacy_diplomatic_networking_gestalt_delayed:0 "Incorporating our diplomatic processes into every aspect of our relations with the other will not just benefit our diplomacy: it will also improve the cohesion of our own decision-making, and ultimately of the entire [This.GetGovernmentName] itself."
@@ -962,7 +962,7 @@
  tr_aptitude_champions_of_the_empire_hive_delayed:0 "The Hive is willing to impart a minute level of autonomy for its strongest elements for the good of the whole."
  tr_aptitude_champions_of_the_empire_machine:0 "Administrative Rights"
  tr_aptitude_champions_of_the_empire_machine_delayed:0 "We trust the unique sub-routines of our leaders and give them permission to influence how the Empire is run."
- tr_aptitude_champions_of_the_empire_desc:1 "Per $admiral_with_icon$ and $general_with_icon$ level\n$t$$MOD_COUNTRY_NAVAL_CAP_ADD$: §G+2§!\nPer $governor_with_icon$ level\n$t$$MOD_EMPIRE_SIZE_MULT$: §G-2§!\nPer $scientist_with_icon$ level\n$t$$MOD_LEADER_SPECIES_EXP_GAIN$: §G+0.5%§!"
+ tr_aptitude_champions_of_the_empire_desc:1 "Per $commander_with_icon$ and $general_with_icon$ level\n$t$$MOD_COUNTRY_NAVAL_CAP_ADD$: §G+2§!\nPer $governor_with_icon$ level\n$t$$MOD_EMPIRE_SIZE_MULT$: §G-2§!\nPer $scientist_with_icon$ level\n$t$$MOD_LEADER_SPECIES_EXP_GAIN$: §G+0.5%§!"
 
 ################################################################
 # Statecraft
@@ -1003,8 +1003,8 @@
  tr_statecraft_shared_benefits_delayed:0 "By involving all leaders in the implementation of our agendas, they build a stronger understanding for their roles and purpose."
  tr_statecraft_shared_benefits_hive_delayed:0 "By utilizing all nodes and leaders in the implementation of our agendas, any useful specialization is propagated faster."
  tr_statecraft_shared_benefits_machine_delayed:0 "$tr_statecraft_shared_benefits_hive_delayed$"
- tr_statecraft_shared_benefits_desc:0 "Whenever an §YAgenda§! is Launched:\n$t$$tr_statecraft_shared_benefits_effect_desc$"
- tr_statecraft_shared_benefits_effect_desc:0 "All Leaders gain $@statecraft_amongst_peers_exp_reward|G0$ experience"
+ tr_statecraft_shared_benefits_desc:0 "Whenever an §YAgenda§! is Launched:\n$t$$tr_statecraft_amongst_peers_effect_desc$"
+ tr_statecraft_amongst_peers_effect_desc:1 "All Councilors gain $@statecraft_amongst_peers_exp_reward|G0$ Experience per Skill Level"
 
 ################################################################
 # Politics
@@ -1014,10 +1014,10 @@
  tradition_politics_desc:0 "The Galactic stage is set, and we intend to have the leading role."
 
  tr_politics_adopt:0 "$tradition_politics$ Traditions"
- tr_politics_adopt_desc:0 "§G+1§! Envoy\nEnvoys assigned to the §YGalactic Community§! now produce 0.1 £influence£ §YInfluence§!."
+ tr_politics_adopt_desc:1 "§G+1§! Envoy\n$official_plural_with_icon$ assigned to the §Y[GetGalCommunityOrGalImperium]§! now produce 0.1 £influence£ §YInfluence§! per §YSkill Level§!."
 
  tr_politics_finish:0 "$tr_politics_adopt$ Finished"
- tr_politics_finish_desc:0 "§G+10%§! £diplo_weight£ Diplomatic Weight\nUnlocks 4 special §YResolutions§! in the Galactic Community.\n$TRADITIONS_FINISH_AP$"
+ tr_politics_finish_desc:1 "§G+10%§! £diplo_weight£ Diplomatic Weight\nUnlocks 4 special §YResolutions§! in the §Y[GetGalCommunityOrGalImperium]§!.\n$TRADITIONS_FINISH_AP$"
 
  tr_politics_quid_pro_quo:0 "Quid Pro Quo"
  tr_politics_quid_pro_quo_desc:0 "Whenever a Resolution that you supported passes, gain 1 §YFavor§! on the empire that proposed it."
@@ -1025,7 +1025,7 @@
  MESSAGE_FAVOR_GAINED_POLITICS_TRADITION_DESC:0 "Since we supported their resolution, the $WHO|Y$ now owes us a §YFavor§!."
 
  tr_politics_gravitas:0 "Gravitas"
- tr_politics_gravitas_desc:0 "§G-25%§! £influence£ §YInfluence§! cost to veto or propose Resolutions\nEach §YEnvoy§! assigned to the Galactic Community provides an additional §G2.5%§! £diplo_weight£ Diplomatic Weight. "
+ tr_politics_gravitas_desc:1 "§G-25%§! £influence£ §YInfluence§! cost to veto or propose Resolutions\n$official_plural_with_icon$ assigned to the §Y[GetGalCommunityOrGalImperium]§! provide an additional §G2.5%§! £diplo_weight£ Diplomatic Weight per §YSkill Level§!."
  tr_politics_gravitas_delayed:0 "Politics is the art of illusions. By showing others what they want to see, we'll grow our influence in the community."
 
  tr_politics_extraordinary_powers:0 "Extraordinary Powers"
@@ -1037,8 +1037,8 @@
  tr_politics_national_agenda_delayed:0 "Our victories on the Senate floor should be celebrated: they bring us ever closer to a better future."
 
  tr_politics_persistent_petitioners:0 "Persistent Petitioners"
- tr_politics_persistent_petitioners_desc:0 "After a resolution is passed by another empire, gain §G+25%§! £diplo_weight£ Diplomatic Weight until one of your own resolutions passes."
- tr_politics_persistent_petitioners_delayed:0 "Our delegations in the Galactic Community are extremely persistent, and will not take "No" for an answer. It might take time, but we will obtain what we deserve."
+ tr_politics_persistent_petitioners_desc:1 "After a resolution is passed by another empire, gain §G+25%§! £diplo_weight£ Diplomatic Weight until one of your own resolutions passes."
+ tr_politics_persistent_petitioners_delayed:1 "Our delegates in the §Y[GetGalCommunityOrGalImperium]§! are extremely persistent, and will not take "No" for an answer. It might take time, but we will obtain what we deserve."
  persistent_petitioners:0 "$tr_politics_persistent_petitioners$"
 
 ################################################################
@@ -1056,7 +1056,7 @@ tr_enmity_finish_desc: "Available Envoys: §G+1§!\nUnlocks the §YAntagonistic�
 
 tr_enmity_rise_to_the_occasion: "Rise to the Occasion"
 tr_enmity_rise_to_the_occasion_delayed: "In the face of an ever-increasing number of adversaries, we stand united."
-tr_enmity_rise_to_the_occasion_effect: "Leader Capacity per Rival: §G+0.5§!"
+tr_enmity_rise_to_the_occasion_effect: "$mod_country_official_cap_add$ per Rival: §G+0.50§!\n$mod_country_commander_cap_add$ per Rival: §G+0.50§!\n$mod_country_scientist_cap_add$ per Rival: §G+0.50§!"
 
 tr_enmity_consumate_contrarian: "Consummate Contrarian"
 tr_enmity_consumate_contrarian_delayed: "Blocking the plans of the opposition can be just as satisfying as enacting one's own."
@@ -1070,7 +1070,8 @@ tr_enmity_outpace_delayed: "Second, make the move your foe is unwilling to."
 
 tr_enmity_eclipse: "Eclipse"
 tr_enmity_eclipse_delayed: "Third, cast a shadow over your adversary once and for all."
-tr_enmity_eclipse_effect: "Grants §G2%§! increased £physics£ £society£ £engineering£ §YScience§! and £unity£ §YUnity§! output per §YRival§! after winning a §YHumiliation War§!."
+tr_enmity_eclipse_effect: "Grants §G2%§! increased $r_research$ and $r_unity$ output per §YRival§! for §Y10§! Years after winning a §YHumiliation War§!."
+
 enmity_humiliate: "[GetName] gets the §YReaffirmed Superiority§! modifier for §Y10§! years granting them §G2%§! increased $r_research$ and $r_unity$ output per §YRival§!."
 reaffirmed_superiority: "Reaffirmed Superiority"
 reaffirmed_superiority_desc: "Our superiority is unassailable. No one is greater than the [GetName]."
@@ -1101,12 +1102,12 @@ reaffirmed_superiority_desc: "Our superiority is unassailable. No one is greater
 
  requires_ap_mind_over_matter:2 "$TRIGGER_FAIL$Requires the §Y$ap_mind_over_matter$§! Ascension Perk or the §Y$origin_shroudwalker_apprentice$§! Origin."
  requires_not_ap_mind_over_matter:1 "$TRIGGER_FAIL$May not have the §Y$ap_mind_over_matter$§! Ascension Perk."
- allow_decision_mastery_of_nature:1 "§YUnlocks Decision:§! Mastery of Nature"
- describe_decision_mastery_of_nature:0 "§EThis is a Decision that permanently increases the maximum number of districts a Planet can support by §Y2§!. It can only be performed once on each planet.§!"
- decision_mastery_of_nature:0 "Mastery of Nature"
- decision_mastery_of_nature_desc:0 "Our population requires room to grow, and so we shall make that room. Nature must not stand in the way of progress."
+ describe_decision_mastery_of_nature:1 "§YUnlocks Decision:§! Mastery of Nature$TABBED_NEW_LINE$- Max Districts §Y+2§! $TABBED_NEW_LINE$- Max Resource Districts from Planetary Features §G+50%§!"
+ decision_mastery_of_nature:1 "Mastery of Nature"
+ decision_mastery_of_nature_desc:0 "Our civilization requires room to grow, so we shall make that room. Nature must not stand in the way of progress."
  mastery_of_nature:0 "$decision_mastery_of_nature$"
  mastery_of_nature_desc:0 "$decision_mastery_of_nature_desc$"
+ mastery_of_nature_effects: "- Max Districts §Y+2§!\n- Max Resource Districts §G+50%§!"
 
  requires_ap_voidborn_OR_ap_galactic_wonders:1 "$TRIGGER_FAIL$Requires the §Y$ap_voidborn$§! OR §Y$ap_galactic_wonders$§! Ascension Perk."
 

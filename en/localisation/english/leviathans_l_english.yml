@@ -132,7 +132,7 @@
  leviathans.105.c.trust:0 "Requires this §YTrader Enclave§! to have:\n£opinion£ Opinion +50\n"
  leviathans.105.d:0 "Nothing for now. Goodbye."
  leviathans.105.z:1 "We wish to hire a §Yconsultant§!."
- trader_tt_governor:1 "Hire a [enclave_country.GetAdj] §YGovernor§!."
+ trader_tt_official:1 "Hire a [enclave_country.GetAdj] §Y$official$§!."
 
 #  leviathans.110.desc:1 "We will trade Minerals for Energy Credits or Food at a rate of one to two. These are our current deals."
 #  leviathans.110.a:1 "£minerals£ §G10§! for £energy£ §R20§! monthly"
@@ -176,7 +176,7 @@
  leviathans.126.desc:0 "Excellent! We are happy to share our skills with the [Root.GetName]."
  leviathans.126.desc.alt: "Excellent! May we both profit from each other's... distinct approach to commerce."
 
- already_hired_trader_governor:2 "§RWe have already recruited a leader from the [enclave_country.GetName]§!."
+ already_hired_trader_official:2 "§RWe have already recruited a leader from the [enclave_country.GetName]§!."
  recruit_trader_leader:1 "Adds a [enclave_country.GetAdj] §YGovernor§! with a §YTrader Liaison Trait§! to the §HLeaders§! pool."
  requires_trader_enclave:0 "§RRequires a §YTrader Enclave§! in the system.§!"
 
@@ -189,17 +189,17 @@
  trader_catch_phrase: "§L"Now about that small consulting fee..."§!"
 
  leader_trait_xuracorp_liaison: "XuraCorp Liaison"
- leader_trait_xuracorp_liaison_desc: "Recruited from XuraCorp, this Governor holds shares in several Exotic Gas production facilities."
+ leader_trait_xuracorp_liaison_desc: "Recruited from XuraCorp, this leader holds shares in several Exotic Gas production facilities."
  xuracorp_trader_desc: "$leader_trait_xuracorp_liaison_desc$"
  xuracorp_trader_catch_phrase: "$trader_catch_phrase$"
 
  leader_trait_riggan_liaison: "Riggan Liaison"
- leader_trait_riggan_liaison_desc: "Recruited from the Riggan Commerce Exchange, this Governor spends their spare time dealing in Volatile Mote futures."
+ leader_trait_riggan_liaison_desc: "Recruited from the Riggan Commerce Exchange, this leader spends their spare time dealing in Volatile Mote futures."
  riggan_trader_desc: "$leader_trait_riggan_liaison_desc$"
  riggan_trader_catch_phrase: "$trader_catch_phrase$"
 
  leader_trait_muutagan_liaison: "Muutagan Liaison"
- leader_trait_muutagan_liaison_desc: "Recruited from the Muutagan Merchant Guild, this Governor owns several private Rare Crystal mines."
+ leader_trait_muutagan_liaison_desc: "Recruited from the Muutagan Merchant Guild, this leader owns several private Rare Crystal mines."
  muutagan_trader_desc: "$leader_trait_muutagan_liaison_desc$"
  muutagan_trader_catch_phrase: "$trader_catch_phrase$"
 
@@ -665,7 +665,7 @@
  leviathans.665.desc.machine: "The Ether Drake egg is terminated. Biological processes have crashed, and there are no available error reports for debugging."
 
  leviathans.670.name:0 "Dragonslayer"
- leviathans.670.desc:3 "The formidable Ether Drake has been slain. The exceptional bravery of Admiral [From.From.GetLeaderName] and the [From.From.GetName] will not soon be forgotten.\n\nThe §Hplanetoid§! the beast guarded so jealously can now be safely exploited. Who knows what treasures the creature might have amassed over the eons?"
+ leviathans.670.desc:3 "The formidable Ether Drake has been slain. The exceptional bravery of Commander [From.From.GetLeaderName] and the [From.From.GetName] will not soon be forgotten.\n\nThe §Hplanetoid§! the beast guarded so jealously can now be safely exploited. Who knows what treasures the creature might have amassed over the eons?"
  leviathans.670.desc.noleader:3 "The formidable Ether Drake has been slain. The exceptional bravery of the [From.From.GetName] will not soon be forgotten.\n\nThe §Hplanetoid§! the beast guarded so jealously can now be safely exploited. Who knows what treasures the creature might have amassed over the eons?"
  leviathans.670.desc.gesta:0 "The formidable Ether Drake has been slain.\n\nThe §Hplanetoid§! the beast guarded so jealously can now be safely exploited. What treasures might the creature have amassed over the eons?"
  leviathans.670.a:0 "Commendable."
@@ -973,7 +973,7 @@ leviathans.3230.desc: "The inhabitants of the [from.solar_system.GetName] system
  opinion_destroyed_trader_sr:0 "Destroyed Traders we had deals with"
 
  leader_trait_dragonslayer:0 "Dragonslayer"
- leader_trait_dragonslayer_desc:0 "This Admiral has proven themselves in fierce combat."
+ leader_trait_dragonslayer_desc:0 "This Commander has proven themselves in fierce combat."
  leader_trait_dragonbane:0 "Dragonbane"
  leader_trait_dragonbane_desc:0 "This Leader has seen intense combat, and lived to tell the tale."
 
@@ -1107,5 +1107,5 @@ leviathans.3230.desc: "The inhabitants of the [from.solar_system.GetName] system
 
  unlocks_curator_council_position: "\n§EAllows the unlocking of Council Position:§!\n§H$t$$councilor_curator_archivist$§!\n$tt$$COUNCIL_POSITION_MODIFIER_BASE$\n$ttt$$MOD_ASSIST_RESEARCH_MULT$: §G+5%§!\n$ttt$$mod_planet_researchers_upkeep_mult$ §G-2%§!\n$COUNCIL_POSITION_AVAILABLE_FOR$$t$$scientist_with_icon$\n\n$COUNCIL_POSITION_REQUIREMENTS$$councilor_curator_archivist_conditional_tooltip$"
 
- curator_archivist_desc: "$leader_trait_curator_desc$" 
- curator_archivist_catch_phrase: "§L"Together we shall uncover secrets long forgotten."§!" 
+ curator_archivist_desc: "$leader_trait_curator_desc$"
+ curator_archivist_catch_phrase: "§L"Together we shall uncover secrets long forgotten."§!"

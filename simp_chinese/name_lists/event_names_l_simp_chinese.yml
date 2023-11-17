@@ -1,607 +1,543 @@
 ﻿l_simp_chinese:
-#######
-# MISC
-#######
-
-# Assorted empire/country names
- NAME_Ancient_AI:0 "远古人工智能"
- NAME_Armistice_Initiative:0 "停战倡议组织"
- NAME_Awoken:0 "觉醒"
- NAME_Commonwealth_of_Man:0 "人类联邦" #UNE initializer
- NAME_Creatures_of_the_Shroud:0 "虚境造物"
- NAME_Cunning_Pirates:0 "狡猾的抢夺者"
- NAME_Deformed_Creatures:0 "畸形生物" #terraforming accident
- NAME_Demonic_Creatures:0 "恶魔生物"
- NAME_Demon_Incursion:0 "恶魔侵军"
- NAME_Demon_Incursion_adj:0 "恶魔"
- NAME_Eternal_Watchers:0 "永恒观察者"
- NAME_Incoming_Asteroid:0 "来袭小行星" #a literal asteroid
- NAME_Living_Snow:0 "活雪" #empire (planetary event)
- NAME_Looped_Syzygy:0 "环形朔望"
- NAME_Marauding_Creatures:0 "劫掠者生物" #planetary event
- NAME_mardak_vol_haters:0 "沃尔"
- NAME_Mutant_Horrors:0 "变种怪物" #also used as an army name
- NAME_Prikkiki_Ti:0 "佩奇奇提"
- NAME_Psionic_Avatar_Country:0 "灵能化身"
- NAME_Ransomeers:0 "星际绑匪"
- NAME_Rising_Manifold:0 "上升流形" #abstract/nonsensical
- NAME_Shattered_Frontier:0 "破碎的前线" #empire, alluding to colonial frontiers (Shroud entity)
- NAME_Shroud_Reformers:0 "虚境改革者" #the definitive Shroud
- NAME_Spawning_Dragons:0 "解放的龙" #literal
- NAME_Subterranean_Nation:0 "地下国度"
- NAME_The_Loop:0 "圆环" #as in time
- NAME_The_Shroud:0 "虚境"
- NAME_Titanic_Life:0 "泰坦巨兽" #gigantic lifeforms
- NAME_Unknown_Ancientry:0 "未知远古"
- NAME_Unscrupulous_Salvagers:0 "肆无忌惮的拾荒者"
- NAME_Wreckers:0 "捞船佬"
-
-# Assorted species names
- NAME_AI:0 "人工智能"
- NAME_Awoken_Robot:0 "觉醒者"
- NAME_Azizians:0 "阿兹詹虫"
- NAME_Cockroach:0 "蟑螂" #literal
- NAME_Cockroach_plural:0 "蟑螂" #literal
- NAME_Migrating_Trees:0 "迁徙树木" #literal
- NAME_Rampaging_Forests:0 "暴走森林" #literal
- NAME_Prikki:0 "佩奇"
- NAME_Robot:0 "机器人"
- NAME_Robot_plural:0 "机器人"
- NAME_Titans:0 "泰坦" #gigantic lifeforms
- NAME_Demon_Refugees:0 "恶魔"
- NAME_Demon_Refugee_pl:0 "恶魔"
-
-# Assorted star system names
- NAME_Klendath:0 "克伦达苏"
- NAME_Pantagruel:0 "庞大古埃"
- NAME_Zron:0 "泽珞星"
-
-# Assorted planet names
- NAME_Baldarak:0 "伯达拉克"
- NAME_New_Baldarak:0 "新伯达拉克"
- NAME_Chabkymak:0 "查比克马克"
- NAME_Exile:0 "流放"
- NAME_Fotangia:0 "佛坦伽"
- NAME_The_Fragments:0 "碎片" #a shattered world
- NAME_Gish:0 "纪什"
- NAME_Homeworld_Two:0 "[Space_Owner.GetHomeWorldName]二号" #after terraforming
- NAME_Paridayda:0 "帕丽达雅" #gaia world
- NAME_Spjuuht:0 "斯普扬特"
- NAME_Tollok_Rong:0 "托洛克·隆"
- NAME_Zron_Prime:0 "泽珞首星" #as in 'NAME_Zron'
-
-# Assorted fleet names
- NAME_5th_Dimensionalists:0 "第5维度学家"
- NAME_Ancient_AI_Fleet:0 "远古人工智能船队"
- NAME_Clutch_of_Whelps:0 "幼仔之握" #dragons
- NAME_Dimensional_Portal:0 "异次元传送门"
- NAME_Greased_Lightning:0 "风驰电掣"
- NAME_Head_in_Sand:0 "金砂埋头" #i.e. cowardly/ignorant
- NAME_Hijacked_Fleet:0 "被劫舰队"
- NAME_Main_Forces:0 "主要战斗力量"
- NAME_mardak_vol_haters_fleet:0 "马达克净化者"
- NAME_Modified_Probe:0 "改造探测器"
- NAME_New_Ship_plural:0 "新飞船"
- NAME_Occupation_Flotilla:0 "占领舰队"
- NAME_Other_Science_Ship:0 "异类科学船" #comprises 'NAME_From_Beyond'
- NAME_Psionic_Avatar:0 "灵能化身"
- NAME_Ransomeer_Base:0 "星际绑架者基地" #starbase
- NAME_Salvage_Fleet:0 "打捞船队"
- NAME_Scrap_Probes:0 "碎片探测器"
- NAME_Seaborn:0 "海裔"
- NAME_Seaborn_Flotilla:0 "海裔小型船队"
- NAME_Skeletal_Giant:0 "骸骨巨兽"
- NAME_Surveillance_Bots:0 "监视机器人"
- NAME_TIME_IS_SIGHT_GRAVITY_IS_DESIRE:0 "时间即视界引力即欲望" #abstract/nonsensical
- NAME_The_End:0 "终末" #End of the Cycle (Shroud)
- NAME_Wrecker_Base:0 "捞船佬基地" #as in 'NAME_Wreckers'
- NAME_Zarqlans_Pilgrims:0 "扎克兰的朝圣者"
- NAME_Mercenary_Fleet:0 "[event_target:mercenary_enclave_country.GetName]舰队"
-
-# Assorted ship names (sometimes also used as the fleet name)
- NAME_Abandoned_Alien_Vessel:0 "遗弃的外星飞船"
- NAME_AI_Core:0 "人工智能核心"
- NAME_AI_Final_Core:0 "主核心"
- NAME_Alien_Ship:0 "外星船只"
- NAME_Asteroid:0 "小行星" #a literal asteroid
- NAME_Autonomous_Drone:0 "自主子个体"
- NAME_Burnt_Out_Science_Ship:0 "烧毁的科学船"
- NAME_Conceptual_Ship:0 "概念之船" #abstract
- NAME_Corrupted_Avatar:0 "恶堕化身" #psionic entity
- NAME_Dark_Wanderer:0 "黑暗流浪者"
- NAME_Dimensional_Horror:0 "位面之魇"
- NAME_enigmatic_cache:0 "神秘容器"
- NAME_Foundling:0 "浪子号" #lost science ship
- NAME_Fragment:0 "碎片" #Shroud manifestation
- NAME_From_Beyond:0 "彼岸号"
- NAME_Gallant_Dawn:0 "英勇黎明"
- NAME_Grand_Herald:0 "伟大先驱"
- NAME_Herald:0 "先驱"
- NAME_Junk_Probe_Alpha:0 "垃圾探测器一型"
- NAME_Junk_Probe_Beta:0 "垃圾探测器二型"
- NAME_Kellop-Gar:0 "克洛普-加"
- NAME_Lessenger:0 "小信使"
- NAME_Lesser_Messenger:1 "$NAME_Lessenger$"
- NAME_Mended_Frontier:0 "修补的前线" #as in 'NAME_Shattered_Frontier'
- NAME_Migil-Yar:0 "米基尔-亚"
- NAME_Suntha-Pol:0 "三萨-泊"
- NAME_Nanite_Dragon:0 "模拟龙" #a literal dragon
- NAME_New_Ship:0 "新飞船"
- NAME_Ostrich:0 "鸵鸟" #reference to 'NAME_Head_in_Sand'
- NAME_Patchwork_Paradise:0 "破烂天堂" #wrecker ship
- NAME_Reckoning:0 "惩罚"
- NAME_Reclaimed_Ship:0 "回收船" #as in 'back in our possession'
- NAME_Research_Expedition_Vessel:0 "科研探险船"
- NAME_Salvage:0 "打捞" #literal
- NAME_Seafallen_Cruiser:0 "海坠巡洋舰"
- NAME_Ship_of_Unknown_Origin:0 "未知来源飞船"
- NAME_Shroud_Manifestation:0 "虚境显圣"
- NAME_Skeletal_Transport:0 "骸骨运输船" #as in 'NAME_Skeletal_Giant'
- NAME_Specter:0 "幽灵"
- NAME_Subspace_Anomaly:0 "亚空间异常现象" #literal
- NAME_Syzygy:0 "朔望号"
- NAME_Unshrouded_Science_Ship:0 "未入虚境的科研船"
- NAME_Worm_in_Waiting:0 "时之螶" #definite article, 'The Worm'
-
-# Assorted army names
- NAME_Awoken_Army:0 "觉醒兵团"
- NAME_Enraged_Guardian:0 "暴怒守卫"
- NAME_Enraged_Titan:0 "暴怒泰坦"
- NAME_Invading_Horde:0 "攻侵集群" #subterranean army
- NAME_Loot_Equipped_Army:0 "缴获武备兵团"
- NAME_Marauding_Swarms:0 "劫掠者集群"
- NAME_mechawarrior_contractors:0 "机甲战士承包商"
- NAME_military_contractors:0 "军事承包商"
- NAME_Mutated_Horrors:0 "变异怪物"
- NAME_Monstrous_Snow:0 "雪怪" #from literal snow
- NAME_Twisted_Beasts:0 "扭曲野兽"
-
-# Assorted leader names
- NAME_00110001:0 "00110001" #1
- NAME_00110010:0 "00110010" #2
- NAME_00110011:0 "00110011" #3
- NAME_00110100:0 "00110100" #4
- NAME_00110101:0 "00110101" #5
- NAME_01000001_01001001:0 "01000001 01001001" #AI
- NAME_0101010111:0 "0101010111" #W
- NAME_Majula_the_Bearer:0 "领受者玛菊拉"
- NAME_Oracle:0 "神谕" #also used as the species name
- NAME_The_Exile:0 "流亡者" #a scientist of the player's own species
- NAME_William_Shakespeare:0 "威廉·莎士比亚" #May be replaced with a more relevant, national literary figure depending on the extent to which you localize event 'federations2.1', 'Love's Labor's Lost'. See also '.GetAuteur' scripted loc for use of Molière in French.
-
-# Other
- NAME_Machine_Uprising_War:0 "[This.MainDefender.GetAdj]机械叛乱"
-
-#########
-# CRISES
-#########
-
-# Empire names
- NAME_Aberrant:0 "背道者"
- NAME_Unbidden:0 "破界者"
- NAME_Vehement:0 "狂热者"
- NAME_Contingency:0 "肃正协议"
- NAME_Cybrex:0 "赛博勒克斯"
- NAME_Cybrex_Empire:0 "赛博勒克斯遗族"
- NAME_Dessanu:0 "德萨努"
- NAME_Dessanu_Consonance:0 "德萨努协和国"
- NAME_Gray:0 "小灰" #also used as a name for the leader, ship and army
- NAME_Gray_Goo:0 "灰蛊风暴"
- NAME_Portal_Holder_1:2 "异次元传送门"
- NAME_Prethoryn_Scourge:0 "虫群天灾"
-
-# Species names
- NAME_Custodian_Bot:0 "监护者机器人"
- NAME_Prethoryn:0 "索林原虫"
-
-# Star system names
- NAME_Contingency_System:0 "CX-9881"
- NAME_Cybrex_Beta:0 "赛博勒克斯-贝塔"
-
-# Planet names
- NAME_Contingency_Lair:0 "联结零壹"
- NAME_Cybrex_Beta_1:0 "赛博勒克斯-贝塔I"
- NAME_Cybrex_Beta_2:0 "赛博勒克斯-贝塔II"
- NAME_Cybrex_Beta_3:0 "赛博勒克斯-贝塔III"
- NAME_Cybrex_Beta_4:0 "赛博勒克斯-贝塔IV"
-
-# Fleet names
- NAME_Dessanu_Fleet:0 "德萨努防御舰队"
- NAME_Dessanu_Fleet_2:0 "德萨努巡逻舰队"
- NAME_Feral_Prethoryn:0 "凶暴索林原虫"
- NAME_Loyal_Brood:0 "忠诚的虫群"
- NAME_Prethoryn_Armies:0 "索林原虫部队"
- NAME_Prethoryn_Constructor:0 "索林工造原虫"
- NAME_Prethoryn_Infestor:0 "索林感染原虫"
- NAME_Prethoryn_Star_Brood:0 "索林原虫星孵池"
- NAME_Prethoryn_Transport:0 "索林运输原虫"
- NAME_Prethoryn_Vanguard:0 "索林先锋原虫"
- NAME_Refugee_Fleet:0 "难民船队"
- NAME_Sentinel_Auxiliary_Fleet:0 "哨兵辅助舰队"
- NAME_Sentinel_Battle_Fleet:0 "哨兵战斗舰队"
- NAME_Sentinel_Defense_Fleet:0 "哨兵防御舰队"
- NAME_Sterilization_Hub_1:0 "净化中心001"
- NAME_Sterilization_Hub_2:0 "净化中心002"
- NAME_Sterilization_Hub_3:0 "净化中心003"
- NAME_Sterilization_Hub_4:0 "净化中心004"
- NAME_Tempest_Fleet:0 "风暴前夕"
-
-# Ship names
- NAME_Dessanu_Interdictor:0 "伟斯克"
- NAME_Dessanu_Mothership:0 "恩斯拉"
- NAME_Domesticated_Prethoryn:0 "驯服的虫族"
- NAME_Domesticated_Queen:0 "驯服的虫后"
- NAME_Domesticated_Swarmling:0 "驯服的幼虫"
- NAME_Domesticated_Warrior:0 "驯服的战虫"
- NAME_Early_Warning_X_34:0 "早期预警X-34"
- NAME_Early_Warning_X_35:0 "早期预警X-35"
- NAME_Early_Warning_X_36:0 "早期预警X-36"
- NAME_Early_Warning_X_37:0 "早期预警X-37"
- NAME_Early_Warning_X_38:0 "早期预警X-38"
- NAME_Gatebuilder_Starbase:0 "卡普洛克"
- NAME_Refugee_Site_Beta:0 "难民点贝塔"
- NAME_Sentinel_Alpha:0 "哨兵阿尔法"
- NAME_Deep_Eyes:0 "深邃之眼"
- NAME_Gray_Moon:0 "灰月"
- NAME_Kobyar_Miru:0 "寇雅米卢"
- NAME_Princess_Kolos:0 "科洛公主"
- NAME_Refugee_Site_Alpha:0 "阿尔法难民营"
- NAME_Stellar_Queen:0 "噬星虫后"
-
-# Army names
- NAME_Prethoryn_Invaders:0 "索林入侵原虫"
-
-# Leader names
- NAME_Fleet_Consciousness:0 "舰队意识"
-
-# Cybrex megastructure
- NAME_Ring_Segment_A:1 "环形段A"
- NAME_Ring_Segment_B:1 "环形段B"
- NAME_Ring_Segment_C:1 "环形段C"
- NAME_Ring_Segment_D:1 "环形段D"
- NAME_Ring_Segment_E:1 "环形段E"
- NAME_Ring_Segment_F:1 "环形段F"
- NAME_Ring_Segment_G:1 "环形段G"
- NAME_Ring_Segment_H:1 "环形段H"
- NAME_Ring_Segment_I:1 "环形段I"
- NAME_Ring_Segment_J:1 "环形段J"
- NAME_Ring_Segment_K:1 "环形段K"
- NAME_Ring_Segment_L:1 "环形段L"
-
-###########
-# ENCLAVES
-###########
-
-# Leader names
- NAME_Doctor_Xib:0 "席布博士"
- NAME_Kix_the_Brilliant:0 "天才吉克斯"
- NAME_merchant_leader:0 "普拉提·玛格宏"
- NAME_Professor_Zarg:0 "扎格教授"
- NAME_Sensei_Borkaz:0 "博卡兹老师"
- NAME_The_Mentat:0 "门塔特"
-
-############################
-# FALLEN & AWAKENED EMPIRES
-############################
-
-# Leader names
- NAME_Tuborek:0 "图伯里克"
-
-# Other
- NAME_Holy_World_War:0 "[This.MainAttacker.GetAdj]圣地之战" #war over a designated Holy World
- NAME_The_War_in_Heaven:0 "天堂之战" #war between fallen empires
-
-##############
-# FEDERATIONS
-##############
-
-# Military Alliance Joint Operation
- NAME_training_adversary:0 "训练对手" #empire
- NAME_Training_Targets:0 "训练练习目标" #fleet
- NAME_Elusive_Craft:0 "幻影般的战斗机" #ship
-
-#####################
-# KHANATE & DIADOCHI
-#####################
-
-# Empire & Federation names
- NAME_Galactic_Horde:0 "星帐汗国" #federation
-
-# Fleet names
- NAME_Chosen_of_the_Great_Khan:0 "大汗谕使"
- NAME_Horde_Auxiliary_Fleet:0 "[satrapy_species.GetName]辅助舰队"
-
-###########################
-# LEVIATHANS & SPACE FAUNA
-###########################
-# See also: initializers_names_l_english.yml, containing names related to Leviathans and space fauna which appear at galaxy start
-
-# Empire names
- NAME_Alien_Hive:0 "外星蜂巢"
- NAME_Mining_Drone_Expansion_Initiative:0 "采矿无人机扩张计划"
- NAME_Aggressive_Mining_Drone_Expansion_Initiative:0 "强制无人机扩张措施"
- NAME_Old_One:0 "古神" #void cloud
- NAME_Stellarite:0 "噬星虫"
- NAME_VLUUR:0 "弗雷尔"
-
-# Planet names
- NAME_Bot_Compactor:0 "拾荒机器人压缩器"
- NAME_Drakes_Roost:0 "龙栖地"
-
-# Fleet names
- NAME_Aggressive_Mining_Drone_Expansion_Fleet:0 "极具侵略性的无人机扩张舰队"
- NAME_Ancient_Mining_Drones:0 "远古采矿无人机"
- NAME_Mining_Drone_Expansion_Fleet:0 "采矿无人机扩张舰队"
- NAME_Crystalline_Elites:0 "晶态精英"
- NAME_Crystalline_Entity:0 "晶态实体"
- NAME_Exiled_One:0 "流放者" #void cloud
- NAME_Hiver_Nest:0 "蜂群巢穴"
- NAME_Life_Tree_Protector_plural:0 "生命树保护者"
- NAME_Nesting_Crystals:0 "晶巢" #space crystals
- NAME_Shard:0 "裂爪龙" #named dragon
- NAME_Space_Amoeba_plural:0 "太空变形虫"
- NAME_Stellarite_Devourer:0 "噬星虫吞噬者"
- NAME_Subspace_Rupture_Cloud_1:0 "亚空间裂缝 XV-990"
- NAME_Subspace_Rupture_Cloud_2:0 "亚空间裂缝 R-5921"
- NAME_Subspace_Rupture_Cloud_3:0 "亚空间裂缝 TLZ-84"
- NAME_Tricksy_Mining_Drones:0 "狡猾的矿机" #cute form of 'tricky'
- NAME_Void_Cloud:0 "虚空之云"
-
-# Ship names
- NAME_Annoyed_Crystal:0 "发怒的晶体"
- NAME_Cortus:0 "阔图斯" #space amoeba
- NAME_Cracked_Crystalline_Shard:0 "破碎的晶态裂片"
- NAME_Dreadnought:0 "无畏战舰"
- NAME_Drone_0931_F:0 "无人机0931-F"
- NAME_Drone_1119_X:0 "无人机1119-X"
- NAME_Drone_1433_D:0 "无人机1433-D"
- NAME_Drone_1832-D:0 "无人机1832-D"
- NAME_Drone_2432_D:0 "无人机2432-D"
- NAME_Drone_4119_X:0 "无人机4119-X"
- NAME_Drone_5110_X:0 "无人机5110-X"
- NAME_Drone_6732_A:0 "无人机6732-A"
- NAME_Drone_7731_A:0 "无人机7731-A"
- NAME_Effluvial_Offspring:0 "恶臭后裔" #void cloud
- NAME_Ether_Hatchling:0 "以太幼体" #ether drake
- NAME_Shard_Dragon:0 "$NAME_Grand_Dragon$" #ether drake
- NAME_KASH:0 "KASH" #void cloud
- NAME_Life_Tree_Protector:1 "生命树保护者"
- NAME_Mining_Drone_C_Class:0 "C级采矿无人机"
- NAME_Oriens:0 "奥兰斯" #space amoeba
- NAME_Ortus:0 "欧图斯" #space amoeba
- NAME_Psi:0 "普西"
- NAME_SHAB:0 "SHAB" #void cloud
- NAME_Scile:0 "斯盖尔" #named dragon
- NAME_Stellar_Devourer:0 "噬星者"
- NAME_TAHA:0 "TAHA" #void cloud
- NAME_TANT:0 "TANT" #void cloud
- NAME_Trapped_Asteroid:0 "被困的小行星" #inert space crystal
- NAME_Wraith_450THz:0 "幽魂450THz"
- NAME_Wraith_520THz:0 "幽魂520THz"
- NAME_Wraith_650THz:0 "幽魂650THz"
- NAME_XADRA:0 "XADRA" #void cloud
- NAME_XELMAGGUS:0 "XELMAGGUS" #void cloud
- NAME_XILNIAK:0 "XILNIAK" #void cloud
- NAME_XUNIA:0 "XUNIA" #void cloud
- NAME_XUUL:0 "XUUL" #void cloud
- NAME_Young_Dragon:0 "幼体标本"
-
-############
-# MARAUDERS
-############
-
-# Fleet names
- NAME_234th_Dwamak_Bashers:0 "第234泥蛮突击者"
- NAME_Armada_of_the_Voidborn:0 "虚空之裔舰队"
- NAME_First_Storm_Wing:0 "第一风暴之翼"
- NAME_Frenzied_Volunteer_Squadron:0 "疯狂志愿者小队"
- NAME_Garrison_Fleet:0 "汗国驻防舰队"
- NAME_Her_Chosen_Champions:0 "神选冠军"
- NAME_Order_of_Eternal_Night:0 "永夜教团"
- NAME_Raiding_Fleet:0 "劫掠舰队"
- NAME_Salvaged_Fleet:0 "报废舰队"
- NAME_Star_Rider_Flotilla:0 "星辰骑手舰队"
- NAME_Twilight_Congregation:0 "暮光先遣队"
-
-# Ship & starbase names
- NAME_Garrison_Base:0 "汗国驻防空间站"
-
-#########
-# NOMADS
-#########
-
- NAME_Galactic_Nomads:0 "星海游牧民" #empire name
-
-# Species names
- NAME_Namarian:0 "纳马里安" #also used as an adjective
- NAME_Namarian_plural:0 "纳马里安"
-
-# Fleet names
- NAME_Nomad_Delivery:0 "游牧者快运"
- NAME_Nomadic_Armada:0 "游牧者船队"
- NAME_Redirected_Nomad_Delivery:0 "重定路线的游牧者快运"
- NAME_Unhinged_Screamer_Flotilla:0 "狂啸者舰队"
-
-# Ship names
- NAME_Defender:0 "防御者"
- NAME_Home_One:0 "家园一号"
- NAME_Home_Two:0 "家园二号"
- NAME_Home_Three:0 "家园三号"
- NAME_Protector:0 "保护者"
-
-##########
-# PIRATES
-##########
-
-# Empire names
- NAME_Pirates:0 "海盗"
- NAME_Privateers:0 "海盗"
- NAME_Sunblaster_Pirates:0 "阳炎海盗"
-
-# Fleet names
- NAME_Old_Guard:0 "老护卫"
- NAME_Scarred_Veterans:0 "沙场老兵"
- NAME_Young_Blood:0 "青年"
- NAME_Numerous_Pirates:0 "大量抢夺者"
- NAME_Pirate_Fleet:0 "海盗舰队"
- NAME_Pirate_Station:0 "海盗空间站" #starbase
- NAME_Wounded_Pirates:0 "受伤的海盗"
-
-# Ship names
- NAME_Damaged_Pillager:0 "残破的劫掠者"
- NAME_Defaced_Gunmouth:0 "损坏的枪口"
- NAME_Defaced_Starflinger:0 "损坏的恒星护环"
- NAME_Dices:0 "切块"
- NAME_First_Pillager:0 "劫掠者一号"
- NAME_First_Ravager:0 "破坏者一号"
- NAME_Ingrates_Inferno:0 "无慈悲狱"
- NAME_Second_Pillager:0 "劫掠者二号"
- NAME_Second_Ravager:0 "破坏者二号"
- NAME_Third_Pillager:0 "劫掠者三号"
- NAME_Third_Ravager:0 "破坏者三号"
- NAME_Outcast_Gunmouth:0 "放逐者枪嘴"
- NAME_Outcast_Starflinger:0 "放逐者恒星护圈"
- NAME_Pillager:0 "劫掠者"
- NAME_Ravager:0 "破坏者"
- NAME_Swashbuckler:0 "侠盗"
- NAME_Scorched_Ravager:0 "烧焦的破坏者"
- NAME_Slices:0 "切片"
-
-# Bemat Thalassocracy
- NAME_Thalassocracy:0 "贝马特制海权" #empire
- NAME_Thalassocracy_species:0 "贝马特"
- NAME_Thalassocracy_species_plural:0 "贝马特"
- NAME_Thalassocracy_species_adj:0 "贝马特的"
- NAME_Thalassocracy_fleet:0 "征服者舰队"
- NAME_Bemat_corvette_01:0 "希姆尼"
- NAME_Bemat_destroyer_01:0 "纳巴兹"
- NAME_Bemat_destroyer_02:0 "埃尔梅"
- NAME_Bemat_cruiser_01:0 "赫伯尔"
- NAME_Bemat_cruiser_02:0 "埃德克"
-
-#############
-# PRECURSORS
-#############
-
-# Cybrex
- NAME_Cybrex_Alpha:0 "赛博勒克斯-阿尔法"
-
-# First League
- NAME_Fen_Habbanis:0 "哈本尼斯之泽" #star
- NAME_Fen_Habbanis_I:0 "哈本尼斯之泽-I" #planet
- NAME_Fen_Habbanis_II:0 "哈本尼斯之泽-II" #planet
- NAME_Fen_Habbanis_III:0 "哈本尼斯之泽-III" #planet
- NAME_Fen_Habbanis_IV:0 "哈本尼斯之泽-IV" #planet
- NAME_Fen_Habbanis_V:0 "哈本尼斯之泽-V" #planet
- NAME_Fen_Habbanis_VI:0 "哈本尼斯之泽-VI" #planet
-
-# Irassians
- NAME_Ira:0 "艾拉" #system
- NAME_Irass:0 "伊拉斯" #star
- NAME_Irass_I:0 "伊拉斯-I" #planet
- NAME_Irass_II:0 "伊拉斯-II" #planet
- NAME_Irass_III:0 "伊拉斯-III" #planet
- NAME_Irass_IV:0 "伊拉斯-IV" #planet
- NAME_Irass_V:0 "伊拉斯-V" #planet
- NAME_Irass_VI:0 "伊拉斯-VI" #planet
- NAME_Irassia:0 "伊拉西亚" #moon
- NAME_Irass_VII:0 "伊拉斯-VII" #planet
- NAME_Irass_VIIa:0 "伊拉斯-VIIa" #moon
- NAME_Irass_VIIb:0 "伊拉斯-VIIb" #moon
- NAME_Irass_VIII:0 "伊拉斯-VIII" #planet
- NAME_Irass_IX:0 "伊拉斯-IX" #planet
-
-# Vultaum
- NAME_Vultaumar:0 "沃陶穆尔" #star
- NAME_Vultaumar_Prime:0 "沃陶穆尔首星" #planet
- NAME_Vultaumar_Ia:0 "沃陶穆尔-Ia" #moon
- NAME_Vultaumar_Ib:0 "沃陶穆尔-Ib" #moon
- NAME_Vultaumar_II:0 "沃陶穆尔-II" #planet
- NAME_Vultaumar_III:0 "沃陶穆尔-III" #planet
- NAME_Vultaumar_IIa:0 "沃陶穆尔-IIa" #moon
- NAME_Vultaumar_IV:0 "沃陶穆尔-IV" #planet
- NAME_Vultaumar_IVa:0 "沃陶穆尔-IVa" #moon
- NAME_Vultaumar_V:0 "沃陶穆尔-V" #planet
-
-# Yuht
- NAME_Yuhtaan:0 "尤特安" #star
- NAME_Yuhtaan_II:0 "尤特安-II" #planet
- NAME_Yuhtaan_III:0 "尤特安-III" #planet
- NAME_Yuhtaan_IV:0 "尤特安-IV" #planet
- NAME_Yuhtaan_IVa:0 "尤特安-IVa" #moon
- NAME_Yuhtaan_IVb:0 "尤特安-IVb" #moon
- NAME_Yuhtaan_IVc:0 "尤特安-IVc" #moon
- NAME_Yuhtaan_V:0 "尤特安-V" #planet
- NAME_Yuhtaan_Va:0 "尤特安-Va" #moon
- NAME_Yuhtaan_Majoris:0 "大尤特安星" #broken planet
- NAME_Yuhtaan_Minoris:0 "小尤特安星" #broken planet
-
-##################
-# PRE-FTL SPECIES
-##################
-
-# (Uplifted) species names
- NAME_Roachoid:0 "蟑螂种" #cockroaches
- NAME_Snakeoid:0 "蛇人" #snakes
- NAME_Robot_Uprising:0 "机器人叛乱"
-
-# Ship names
- NAME_Space_Station:0 "空间站"
-
-# Army names
- NAME_Industrial_Army:0 "工业时代部队"
- NAME_Post_Atomic_Army:0 "后原子时代部队"
- NAME_Primitive_Army:0 "土著部队"
- NAME_Robot_Army:0 "机器人部队"
-
-# Leader names
- NAME_Sobak:0 "索白克"
-
-###################
-# RADICAL CULTISTS
-###################
-
- NAME_Radical_Cult:0 "激进信徒" #empire name
-
-# Fleet names
- NAME_Cult_Defense_Fleet:0 "邪教徒防御舰队"
- NAME_Cultist_Marauders:0 "邪教徒掠夺船"
- NAME_Exiled_Pirates:0 "被放逐的抢夺者"
-
-# Ship names
- NAME_Bane_of_the_Heretic:0 "异端灾厄"
- NAME_Cultist_Flagship:0 "邪教徒旗舰"
- NAME_Cultist_Shipyard:0 "邪教徒船坞"
- NAME_Dawn_of_Creation:0 "创造的黎明"
- NAME_Divine_Fury:0 "天命之怒"
- NAME_Divine_Justicar:0 "上苍判决"
- NAME_Divine_Vessel:0 "神圣飞船"
- NAME_Eternal_Damnation:0 "永世诅咒"
- NAME_Final_Judgment:0 "最终审判"
- NAME_Glorious_Might:0 "光辉之力"
- NAME_Heathens_Doom:0 "异信天罚"
- NAME_Heavenly_Judgment:0 "天降审判"
- NAME_Heavenly_Portent:0 "天国预兆"
- NAME_Holy_Avatar:0 "圣灵化身"
- NAME_Holy_Defender:0 "神圣防御者"
- NAME_Holy_Protector:0 "神圣保护者"
- NAME_Infidel_Slayer:0 "无信狂戮"
- NAME_Path_of_the_Pilgrim:0 "朝圣之路"
- NAME_Pious_Crusader:0 "虔诚斗士"
- NAME_Revered_Elder:0 "崇敬长者"
- NAME_Righteous_Zealot:0 "正义狂徒"
- NAME_The_Chosen_One:0 "万众神选"
- NAME_Sacred_Might:0 "神圣威能"
- NAME_Temple_of_Light:0 "光之神殿"
- NAME_Unyielding_Faith:0 "不挠之信"
- NAME_Wrath_of_the_Spirits:0 "圣灵怒涛"
-
-#########################
-# REVOLTS & UNREST
-#########################
-
-# Army names
- NAME_Freedom_Fighters:0 "自由斗士"
-
-# Other
- NAME_WAR_OF_REVOLT:0 "[Root.Target.GetName]叛乱"
+ #######
+ #MISC
+ #######
+ #Assorted empire/country names
+ NAME_Ancient_AI: "远古人工智能"
+ NAME_Armistice_Initiative: "停战倡议组织"
+ NAME_Awoken: "觉醒"
+ NAME_Commonwealth_of_Man: "人类联邦" #UNE initializer
+ NAME_Creatures_of_the_Shroud: "虚境造物"
+ NAME_Cunning_Pirates: "狡猾的抢夺者"
+ NAME_Deformed_Creatures: "畸形生物" #terraforming accident
+ NAME_Demonic_Creatures: "恶魔生物"
+ NAME_Demon_Incursion: "恶魔侵军"
+ NAME_Demon_Incursion_adj: "恶魔"
+ NAME_Eternal_Watchers: "永恒观察者"
+ NAME_Incoming_Asteroid: "来袭小行星" #a literal asteroid
+ NAME_Living_Snow: "活雪" #empire (planetary event)
+ NAME_Looped_Syzygy: "环形朔望"
+ NAME_Marauding_Creatures: "劫掠者生物" #planetary event
+ NAME_mardak_vol_haters: "沃尔"
+ NAME_Mutant_Horrors: "变种怪物" #also used as an army name
+ NAME_Prikkiki_Ti: "佩奇奇提"
+ NAME_Psionic_Avatar_Country: "灵能化身"
+ NAME_Ransomeers: "星际绑匪"
+ NAME_Rising_Manifold: "上升流形" #abstract/nonsensical
+ NAME_Shattered_Frontier: "破碎的前线" #empire, alluding to colonial frontiers (Shroud entity)
+ NAME_Shroud_Reformers: "虚境改革者" #the definitive Shroud
+ NAME_Spawning_Dragons: "解放的龙" #literal
+ NAME_Subterranean_Nation: "地下国度"
+ NAME_The_Loop: "圆环" #as in time
+ NAME_The_Shroud: "虚境"
+ NAME_Titanic_Life: "泰坦巨兽" #gigantic lifeforms
+ NAME_Unknown_Ancientry: "未知远古"
+ NAME_Unscrupulous_Salvagers: "肆无忌惮的拾荒者"
+ NAME_Wreckers: "捞船佬"
+ #Assorted species names
+ NAME_AI: "人工智能"
+ NAME_Awoken_Robot: "觉醒者"
+ NAME_Azizians: "阿兹詹虫"
+ NAME_Cockroach: "蟑螂" #literal
+ NAME_Cockroach_plural: "蟑螂" #literal
+ NAME_Migrating_Trees: "迁徙树木" #literal
+ NAME_Rampaging_Forests: "暴走森林" #literal
+ NAME_Prikki: "佩奇"
+ NAME_Robot: "机器人"
+ NAME_Robot_plural: "机器人"
+ NAME_Titans: "泰坦" #gigantic lifeforms
+ NAME_Demon_Refugees: "恶魔"
+ NAME_Demon_Refugee_pl: "恶魔"
+ #Assorted star system names
+ NAME_Klendath: "克伦达苏"
+ NAME_Pantagruel: "庞大古埃"
+ NAME_Zron: "泽珞星"
+ #Assorted planet names
+ NAME_Baldarak: "伯达拉克"
+ NAME_New_Baldarak: "新伯达拉克"
+ NAME_Chabkymak: "查比克马克"
+ NAME_Exile: "流放"
+ NAME_Fotangia: "佛坦伽"
+ NAME_The_Fragments: "碎片" #a shattered world
+ NAME_Gish: "纪什"
+ NAME_Homeworld_Two: "[Space_Owner.GetHomeWorldName]二号" #after terraforming
+ NAME_Paridayda: "帕丽达雅" #gaia world
+ NAME_Spjuuht: "斯普扬特"
+ NAME_Tollok_Rong: "托洛克·隆"
+ NAME_Zron_Prime: "泽珞首星" #as in 'NAME_Zron'
+ #Assorted fleet names
+ NAME_5th_Dimensionalists: "第5维度学家"
+ NAME_Ancient_AI_Fleet: "远古人工智能船队"
+ NAME_Clutch_of_Whelps: "幼仔之握" #dragons
+ NAME_Dimensional_Portal: "异次元传送门"
+ NAME_Greased_Lightning: "风驰电掣"
+ NAME_Head_in_Sand: "金砂埋头" #i.e. cowardly/ignorant
+ NAME_Hijacked_Fleet: "被劫舰队"
+ NAME_Main_Forces: "主要战斗力量"
+ NAME_mardak_vol_haters_fleet: "马达克净化者"
+ NAME_Modified_Probe: "改造探测器"
+ NAME_New_Ship_plural: "新飞船"
+ NAME_Occupation_Flotilla: "占领舰队"
+ NAME_Other_Science_Ship: "异类科学船" #comprises 'NAME_From_Beyond'
+ NAME_Psionic_Avatar: "灵能化身"
+ NAME_Ransomeer_Base: "星际绑架者基地" #starbase
+ NAME_Salvage_Fleet: "打捞船队"
+ NAME_Scrap_Probes: "碎片探测器"
+ NAME_Seaborn: "海裔"
+ NAME_Seaborn_Flotilla: "海裔小型船队"
+ NAME_Skeletal_Giant: "骸骨巨兽"
+ NAME_Surveillance_Bots: "监视机器人"
+ NAME_TIME_IS_SIGHT_GRAVITY_IS_DESIRE: "时间即视界引力即欲望" #abstract/nonsensical
+ NAME_The_End: "终末" #End of the Cycle (Shroud)
+ NAME_Wrecker_Base: "捞船佬基地" #as in 'NAME_Wreckers'
+ NAME_Zarqlans_Pilgrims: "扎克兰的朝圣者"
+ NAME_Mercenary_Fleet: "[event_target:mercenary_enclave_country.GetName]舰队"
+ #Assorted ship names (sometimes also used as the fleet name)
+ NAME_Abandoned_Alien_Vessel: "遗弃的外星飞船"
+ NAME_AI_Core: "人工智能核心"
+ NAME_AI_Final_Core: "主核心"
+ NAME_Alien_Ship: "外星船只"
+ NAME_Asteroid: "小行星" #a literal asteroid
+ NAME_Autonomous_Drone: "自主子个体"
+ NAME_Burnt_Out_Science_Ship: "烧毁的科学船"
+ NAME_Conceptual_Ship: "概念之船" #abstract
+ NAME_Corrupted_Avatar: "恶堕化身" #psionic entity
+ NAME_Dark_Wanderer: "黑暗流浪者"
+ NAME_Dimensional_Horror: "位面之魇"
+ NAME_enigmatic_cache: "神秘容器"
+ NAME_Foundling: "浪子号" #lost science ship
+ NAME_Fragment: "碎片" #Shroud manifestation
+ NAME_From_Beyond: "彼岸号"
+ NAME_Gallant_Dawn: "英勇黎明"
+ NAME_Grand_Herald: "伟大先驱"
+ NAME_Herald: "先驱"
+ NAME_Junk_Probe_Alpha: "垃圾探测器一型"
+ NAME_Junk_Probe_Beta: "垃圾探测器二型"
+ NAME_Kellop-Gar: "克洛普-加"
+ NAME_Lessenger: "小信使"
+ NAME_Lesser_Messenger: "$NAME_Lessenger$"
+ NAME_Mended_Frontier: "修补的前线" #as in 'NAME_Shattered_Frontier'
+ NAME_Migil-Yar: "米基尔-亚"
+ NAME_Suntha-Pol: "三萨-泊"
+ NAME_Nanite_Dragon: "模拟龙" #a literal dragon
+ NAME_New_Ship: "新飞船"
+ NAME_Ostrich: "鸵鸟" #reference to 'NAME_Head_in_Sand'
+ NAME_Patchwork_Paradise: "破烂天堂" #wrecker ship
+ NAME_Reckoning: "惩罚"
+ NAME_Reclaimed_Ship: "回收船" #as in 'back in our possession'
+ NAME_Research_Expedition_Vessel: "科研探险船"
+ NAME_Salvage: "打捞" #literal
+ NAME_Seafallen_Cruiser: "海坠巡洋舰"
+ NAME_Ship_of_Unknown_Origin: "未知来源飞船"
+ NAME_Shroud_Manifestation: "虚境显圣"
+ NAME_Skeletal_Transport: "骸骨运输船" #as in 'NAME_Skeletal_Giant'
+ NAME_Specter: "幽灵"
+ NAME_Subspace_Anomaly: "亚空间异常现象" #literal
+ NAME_Syzygy: "朔望号"
+ NAME_Unshrouded_Science_Ship: "未入虚境的科研船"
+ NAME_Worm_in_Waiting: "时之螶" #definite article, 'The Worm'
+ #Assorted army names
+ NAME_Awoken_Army: "觉醒兵团"
+ NAME_Enraged_Guardian: "暴怒守卫"
+ NAME_Enraged_Titan: "暴怒泰坦"
+ NAME_Invading_Horde: "攻侵集群" #subterranean army
+ NAME_Loot_Equipped_Army: "缴获武备兵团"
+ NAME_Marauding_Swarms: "劫掠者集群"
+ NAME_mechawarrior_contractors: "机甲战士承包商"
+ NAME_military_contractors: "军事承包商"
+ NAME_Mutated_Horrors: "变异怪物"
+ NAME_Monstrous_Snow: "雪怪" #from literal snow
+ NAME_Twisted_Beasts: "扭曲野兽"
+ #Assorted leader names
+ NAME_00110001: "110001" #1
+ NAME_00110010: "110010" #2
+ NAME_00110011: "110011" #3
+ NAME_00110100: "110100" #4
+ NAME_00110101: "110101" #5
+ NAME_01000001_01001001: "01000001 01001001" #AI
+ NAME_0101010111: "101010111" #W
+ NAME_Majula_the_Bearer: "领受者玛菊拉"
+ NAME_Oracle: "神谕" #also used as the species name
+ NAME_The_Exile: "流亡者" #a scientist of the player's own species
+ NAME_William_Shakespeare: "威廉·莎士比亚" #May be replaced with a more relevant, national literary figure depending on the extent to which you localize event 'federations2.1', 'Love's Labor's Lost'. See also '.GetAuteur' scripted loc for use of Molière in French.
+ #Other
+ NAME_Machine_Uprising_War: "[This.MainDefender.GetAdj]机械叛乱"
+ #########
+ #CRISES
+ #########
+ #Empire names
+ NAME_Aberrant: "背道者"
+ NAME_Unbidden: "破界者"
+ NAME_Vehement: "狂热者"
+ NAME_Contingency: "肃正协议"
+ NAME_Cybrex: "赛博勒克斯"
+ NAME_Cybrex_Empire: "赛博勒克斯遗族"
+ NAME_Dessanu: "德萨努"
+ NAME_Dessanu_Consonance: "德萨努协和国"
+ NAME_Gray: "小灰" #also used as a name for the leader, ship and army
+ NAME_Gray_Goo: "灰蛊风暴"
+ NAME_Portal_Holder_1: "异次元传送门"
+ NAME_Prethoryn_Scourge: "虫群天灾"
+ #Species names
+ NAME_Custodian_Bot: "监护者机器人"
+ NAME_Prethoryn: "索林原虫"
+ #Star system names
+ NAME_Contingency_System: "CX-9881"
+ NAME_Cybrex_Beta: "赛博勒克斯-贝塔"
+ #Planet names
+ NAME_Contingency_Lair: "联结零壹"
+ NAME_Cybrex_Beta_1: "赛博勒克斯-贝塔I"
+ NAME_Cybrex_Beta_2: "赛博勒克斯-贝塔II"
+ NAME_Cybrex_Beta_3: "赛博勒克斯-贝塔III"
+ NAME_Cybrex_Beta_4: "赛博勒克斯-贝塔IV"
+ #Fleet names
+ NAME_Dessanu_Fleet: "德萨努防御舰队"
+ NAME_Dessanu_Fleet_2: "德萨努巡逻舰队"
+ NAME_Feral_Prethoryn: "凶暴索林原虫"
+ NAME_Loyal_Brood: "忠诚的虫群"
+ NAME_Prethoryn_Armies: "索林原虫部队"
+ NAME_Prethoryn_Constructor: "索林工造原虫"
+ NAME_Prethoryn_Infestor: "索林感染原虫"
+ NAME_Prethoryn_Star_Brood: "索林原虫星孵池"
+ NAME_Prethoryn_Transport: "索林运输原虫"
+ NAME_Prethoryn_Vanguard: "索林先锋原虫"
+ NAME_Refugee_Fleet: "难民船队"
+ NAME_Sentinel_Auxiliary_Fleet: "哨兵辅助舰队"
+ NAME_Sentinel_Battle_Fleet: "哨兵战斗舰队"
+ NAME_Sentinel_Defense_Fleet: "哨兵防御舰队"
+ NAME_Sterilization_Hub_1: "净化中心001"
+ NAME_Sterilization_Hub_2: "净化中心002"
+ NAME_Sterilization_Hub_3: "净化中心003"
+ NAME_Sterilization_Hub_4: "净化中心004"
+ NAME_Tempest_Fleet: "风暴前夕"
+ #Ship names
+ NAME_Dessanu_Interdictor: "伟斯克"
+ NAME_Dessanu_Mothership: "恩斯拉"
+ NAME_Domesticated_Prethoryn: "驯服的虫族"
+ NAME_Domesticated_Queen: "驯服的虫后"
+ NAME_Domesticated_Swarmling: "驯服的幼虫"
+ NAME_Domesticated_Warrior: "驯服的战虫"
+ NAME_Early_Warning_X_34: "早期预警X-34"
+ NAME_Early_Warning_X_35: "早期预警X-35"
+ NAME_Early_Warning_X_36: "早期预警X-36"
+ NAME_Early_Warning_X_37: "早期预警X-37"
+ NAME_Early_Warning_X_38: "早期预警X-38"
+ NAME_Gatebuilder_Starbase: "卡普洛克"
+ NAME_Refugee_Site_Beta: "难民点贝塔"
+ NAME_Sentinel_Alpha: "哨兵阿尔法"
+ NAME_Deep_Eyes: "深邃之眼"
+ NAME_Gray_Moon: "灰月"
+ NAME_Kobyar_Miru: "寇雅米卢"
+ NAME_Princess_Kolos: "科洛公主"
+ NAME_Refugee_Site_Alpha: "阿尔法难民营"
+ NAME_Stellar_Queen: "噬星虫后"
+ #Army names
+ NAME_Prethoryn_Invaders: "索林入侵原虫"
+ #Leader names
+ NAME_Fleet_Consciousness: "舰队意识"
+ #Cybrex megastructure
+ NAME_Ring_Segment_A: "环形段A"
+ NAME_Ring_Segment_B: "环形段B"
+ NAME_Ring_Segment_C: "环形段C"
+ NAME_Ring_Segment_D: "环形段D"
+ NAME_Ring_Segment_E: "环形段E"
+ NAME_Ring_Segment_F: "环形段F"
+ NAME_Ring_Segment_G: "环形段G"
+ NAME_Ring_Segment_H: "环形段H"
+ NAME_Ring_Segment_I: "环形段I"
+ NAME_Ring_Segment_J: "环形段J"
+ NAME_Ring_Segment_K: "环形段K"
+ NAME_Ring_Segment_L: "环形段L"
+ ###########
+ #ENCLAVES
+ ###########
+ #Leader names
+ NAME_Doctor_Xib: "席布博士"
+ NAME_Kix_the_Brilliant: "天才吉克斯"
+ NAME_merchant_leader: "普拉提·玛格宏"
+ NAME_Professor_Zarg: "扎格教授"
+ NAME_Sensei_Borkaz: "博卡兹老师"
+ NAME_The_Mentat: "门塔特"
+ ############################
+ #FALLEN & AWAKENED EMPIRES
+ ############################
+ #Leader names
+ NAME_Tuborek: "图伯里克"
+ #Other
+ NAME_Holy_World_War: "[This.MainAttacker.GetAdj]圣地之战" #war over a designated Holy World
+ NAME_The_War_in_Heaven: "天堂之战" #war between fallen empires
+ ##############
+ #FEDERATIONS
+ ##############
+ #Military Alliance Joint Operation
+ NAME_training_adversary: "训练对手" #empire
+ NAME_Training_Targets: "训练练习目标" #fleet
+ NAME_Elusive_Craft: "幻影般的战斗机" #ship
+ #####################
+ #KHANATE & DIADOCHI
+ #####################
+ #Empire & Federation names
+ NAME_Galactic_Horde: "星帐汗国" #federation
+ #Fleet names
+ NAME_Chosen_of_the_Great_Khan: "大汗谕使"
+ NAME_Horde_Auxiliary_Fleet: "[satrapy_species.GetName]辅助舰队"
+ ###########################
+ #LEVIATHANS & SPACE FAUNA
+ ###########################
+ #See also: initializers_names_l_english.yml, containing names related to Leviathans and space fauna which appear at galaxy start
+ #Empire names
+ NAME_Alien_Hive: "外星蜂巢"
+ NAME_Mining_Drone_Expansion_Initiative: "采矿无人机扩张计划"
+ NAME_Aggressive_Mining_Drone_Expansion_Initiative: "强制无人机扩张措施"
+ NAME_Old_One: "古神" #void cloud
+ NAME_Stellarite: "噬星虫"
+ NAME_VLUUR: "弗雷尔"
+ #Planet names
+ NAME_Bot_Compactor: "拾荒机器人压缩器"
+ NAME_Drakes_Roost: "龙栖地"
+ #Fleet names
+ NAME_Aggressive_Mining_Drone_Expansion_Fleet: "极具侵略性的无人机扩张舰队"
+ NAME_Ancient_Mining_Drones: "远古采矿无人机"
+ NAME_Mining_Drone_Expansion_Fleet: "采矿无人机扩张舰队"
+ NAME_Crystalline_Elites: "晶态精英"
+ NAME_Crystalline_Entity: "晶态实体"
+ NAME_Exiled_One: "流放者" #void cloud
+ NAME_Hiver_Nest: "蜂群巢穴"
+ NAME_Life_Tree_Protector_plural: "生命树保护者"
+ NAME_Nesting_Crystals: "晶巢" #space crystals
+ NAME_Shard: "裂爪龙" #named dragon
+ NAME_Space_Amoeba_plural: "太空变形虫" #fleet
+ NAME_Space_Amoeba_plural_seed: "太空变形虫（£seed_pod£）" #fleet carrying seeds (Gardeners Origin)
+ NAME_Stellarite_Devourer: "噬星虫吞噬者"
+ NAME_Subspace_Rupture_Cloud_1: "亚空间裂缝 XV-990"
+ NAME_Subspace_Rupture_Cloud_2: "亚空间裂缝 R-5921"
+ NAME_Subspace_Rupture_Cloud_3: "亚空间裂缝 TLZ-84"
+ NAME_Tricksy_Mining_Drones: "狡猾的矿机" #cute form of 'tricky'
+ NAME_Void_Cloud: "虚空之云"
+ #Ship names
+ NAME_Annoyed_Crystal: "发怒的晶体"
+ NAME_Cortus: "阔图斯" #space amoeba
+ NAME_Cracked_Crystalline_Shard: "破碎的晶态裂片"
+ NAME_Dreadnought: "无畏战舰"
+ NAME_Drone_0931_F: "无人机0931-F"
+ NAME_Drone_1119_X: "无人机1119-X"
+ NAME_Drone_1433_D: "无人机1433-D"
+ NAME_Drone_1832-D: "无人机1832-D"
+ NAME_Drone_2432_D: "无人机2432-D"
+ NAME_Drone_4119_X: "无人机4119-X"
+ NAME_Drone_5110_X: "无人机5110-X"
+ NAME_Drone_6732_A: "无人机6732-A"
+ NAME_Drone_7731_A: "无人机7731-A"
+ NAME_Effluvial_Offspring: "恶臭后裔" #void cloud
+ NAME_Ether_Hatchling: "以太幼体" #ether drake
+ NAME_Shard_Dragon: "$NAME_Grand_Dragon$" #ether drake
+ NAME_KASH: "KASH" #void cloud
+ NAME_Life_Tree_Protector: "生命树保护者"
+ NAME_Mining_Drone_C_Class: "C级采矿无人机"
+ NAME_Oriens: "奥兰斯" #space amoeba
+ NAME_Ortus: "欧图斯" #space amoeba
+ NAME_Psi: "普西"
+ NAME_SHAB: "SHAB" #void cloud
+ NAME_Scile: "斯盖尔" #named dragon
+ NAME_Stellar_Devourer: "噬星者"
+ NAME_TAHA: "TAHA" #void cloud
+ NAME_TANT: "TANT" #void cloud
+ NAME_Trapped_Asteroid: "被困的小行星" #inert space crystal
+ NAME_Wraith_450THz: "幽魂450THz"
+ NAME_Wraith_520THz: "幽魂520THz"
+ NAME_Wraith_650THz: "幽魂650THz"
+ NAME_XADRA: "XADRA" #void cloud
+ NAME_XELMAGGUS: "XELMAGGUS" #void cloud
+ NAME_XILNIAK: "XILNIAK" #void cloud
+ NAME_XUNIA: "XUNIA" #void cloud
+ NAME_XUUL: "XUUL" #void cloud
+ NAME_Young_Dragon: "幼体标本"
+ ############
+ #MARAUDERS
+ ############
+ #Fleet names
+ NAME_234th_Dwamak_Bashers: "第234泥蛮突击者"
+ NAME_Armada_of_the_Voidborn: "虚空之裔舰队"
+ NAME_First_Storm_Wing: "第一风暴之翼"
+ NAME_Frenzied_Volunteer_Squadron: "疯狂志愿者小队"
+ NAME_Garrison_Fleet: "汗国驻防舰队"
+ NAME_Her_Chosen_Champions: "神选冠军"
+ NAME_Order_of_Eternal_Night: "永夜教团"
+ NAME_Raiding_Fleet: "劫掠舰队"
+ NAME_Salvaged_Fleet: "报废舰队"
+ NAME_Star_Rider_Flotilla: "星辰骑手舰队"
+ NAME_Twilight_Congregation: "暮光先遣队"
+ #Ship & starbase names
+ NAME_Garrison_Base: "汗国驻防空间站"
+ #########
+ #NOMADS
+ #########
+ NAME_Galactic_Nomads: "星海游牧民" #empire name
+ #Species names
+ NAME_Namarian: "纳马里安" #also used as an adjective
+ NAME_Namarian_plural: "纳马里安"
+ #Fleet names
+ NAME_Nomad_Delivery: "游牧者快运"
+ NAME_Nomadic_Armada: "游牧者船队"
+ NAME_Redirected_Nomad_Delivery: "重定路线的游牧者快运"
+ NAME_Unhinged_Screamer_Flotilla: "狂啸者舰队"
+ #Ship names
+ NAME_Defender: "防御者"
+ NAME_Home_One: "家园一号"
+ NAME_Home_Two: "家园二号"
+ NAME_Home_Three: "家园三号"
+ NAME_Protector: "保护者"
+ ##########
+ #PIRATES
+ ##########
+ #Empire names
+ NAME_Pirates: "海盗"
+ NAME_Privateers: "海盗"
+ NAME_Sunblaster_Pirates: "阳炎海盗"
+ #Fleet names
+ NAME_Old_Guard: "老护卫"
+ NAME_Scarred_Veterans: "沙场老兵"
+ NAME_Young_Blood: "青年"
+ NAME_Numerous_Pirates: "大量抢夺者"
+ NAME_Pirate_Fleet: "海盗舰队"
+ NAME_Pirate_Station: "海盗空间站" #starbase
+ NAME_Wounded_Pirates: "受伤的海盗"
+ #Ship names
+ NAME_Damaged_Pillager: "残破的劫掠者"
+ NAME_Defaced_Gunmouth: "损坏的枪口"
+ NAME_Defaced_Starflinger: "损坏的恒星护环"
+ NAME_Dices: "切块"
+ NAME_First_Pillager: "劫掠者一号"
+ NAME_First_Ravager: "破坏者一号"
+ NAME_Ingrates_Inferno: "无慈悲狱"
+ NAME_Second_Pillager: "劫掠者二号"
+ NAME_Second_Ravager: "破坏者二号"
+ NAME_Third_Pillager: "劫掠者三号"
+ NAME_Third_Ravager: "破坏者三号"
+ NAME_Outcast_Gunmouth: "放逐者枪嘴"
+ NAME_Outcast_Starflinger: "放逐者恒星护圈"
+ NAME_Pillager: "劫掠者"
+ NAME_Ravager: "破坏者"
+ NAME_Swashbuckler: "侠盗"
+ NAME_Scorched_Ravager: "烧焦的破坏者"
+ NAME_Slices: "切片"
+ #Bemat Thalassocracy
+ NAME_Thalassocracy: "贝马特制海权" #empire
+ NAME_Thalassocracy_species: "贝马特"
+ NAME_Thalassocracy_species_plural: "贝马特"
+ NAME_Thalassocracy_species_adj: "贝马特的"
+ NAME_Thalassocracy_fleet: "征服者舰队"
+ NAME_Bemat_corvette_01: "希姆尼"
+ NAME_Bemat_destroyer_01: "纳巴兹"
+ NAME_Bemat_destroyer_02: "埃尔梅"
+ NAME_Bemat_cruiser_01: "赫伯尔"
+ NAME_Bemat_cruiser_02: "埃德克"
+ #############
+ #PRECURSORS
+ #############
+ #Cybrex
+ NAME_Cybrex_Alpha: "赛博勒克斯-阿尔法"
+ #First League
+ NAME_Fen_Habbanis: "哈本尼斯之泽" #star
+ NAME_Fen_Habbanis_I: "哈本尼斯之泽-I" #planet
+ NAME_Fen_Habbanis_II: "哈本尼斯之泽-II" #planet
+ NAME_Fen_Habbanis_III: "哈本尼斯之泽-III" #planet
+ NAME_Fen_Habbanis_IV: "哈本尼斯之泽-IV" #planet
+ NAME_Fen_Habbanis_V: "哈本尼斯之泽-V" #planet
+ NAME_Fen_Habbanis_VI: "哈本尼斯之泽-VI" #planet
+ #Irassians
+ NAME_Ira: "艾拉" #system
+ NAME_Irass: "伊拉斯" #star
+ NAME_Irass_I: "伊拉斯-I" #planet
+ NAME_Irass_II: "伊拉斯-II" #planet
+ NAME_Irass_III: "伊拉斯-III" #planet
+ NAME_Irass_IV: "伊拉斯-IV" #planet
+ NAME_Irass_V: "伊拉斯-V" #planet
+ NAME_Irass_VI: "伊拉斯-VI" #planet
+ NAME_Irassia: "伊拉西亚" #moon
+ NAME_Irass_VII: "伊拉斯-VII" #planet
+ NAME_Irass_VIIa: "伊拉斯-VIIa" #moon
+ NAME_Irass_VIIb: "伊拉斯-VIIb" #moon
+ NAME_Irass_VIII: "伊拉斯-VIII" #planet
+ NAME_Irass_IX: "伊拉斯-IX" #planet
+ #Vultaum
+ NAME_Vultaumar: "沃陶穆尔" #star
+ NAME_Vultaumar_Prime: "沃陶穆尔首星" #planet
+ NAME_Vultaumar_Ia: "沃陶穆尔-Ia" #moon
+ NAME_Vultaumar_Ib: "沃陶穆尔-Ib" #moon
+ NAME_Vultaumar_II: "沃陶穆尔-II" #planet
+ NAME_Vultaumar_III: "沃陶穆尔-III" #planet
+ NAME_Vultaumar_IIa: "沃陶穆尔-IIa" #moon
+ NAME_Vultaumar_IV: "沃陶穆尔-IV" #planet
+ NAME_Vultaumar_IVa: "沃陶穆尔-IVa" #moon
+ NAME_Vultaumar_V: "沃陶穆尔-V" #planet
+ #Yuht
+ NAME_Yuhtaan: "尤特安" #star
+ NAME_Yuhtaan_II: "尤特安-II" #planet
+ NAME_Yuhtaan_III: "尤特安-III" #planet
+ NAME_Yuhtaan_IV: "尤特安-IV" #planet
+ NAME_Yuhtaan_IVa: "尤特安-IVa" #moon
+ NAME_Yuhtaan_IVb: "尤特安-IVb" #moon
+ NAME_Yuhtaan_IVc: "尤特安-IVc" #moon
+ NAME_Yuhtaan_V: "尤特安-V" #planet
+ NAME_Yuhtaan_Va: "尤特安-Va" #moon
+ NAME_Yuhtaan_Majoris: "大尤特安星" #broken planet
+ NAME_Yuhtaan_Minoris: "小尤特安星" #broken planet
+ ##################
+ #PRE-FTL SPECIES
+ ##################
+ #(Uplifted) species names
+ NAME_Roachoid: "蟑螂种" #cockroaches
+ NAME_Snakeoid: "蛇人" #snakes
+ NAME_Robot_Uprising: "机器人叛乱"
+ #Ship names
+ NAME_Space_Station: "空间站"
+ #Army names
+ NAME_Industrial_Army: "工业时代部队"
+ NAME_Post_Atomic_Army: "后原子时代部队"
+ NAME_Primitive_Army: "土著部队"
+ NAME_Robot_Army: "机器人部队"
+ #Leader names
+ NAME_Sobak: "索白克"
+ ###################
+ #RADICAL CULTISTS
+ ###################
+ NAME_Radical_Cult: "激进信徒" #empire name
+ #Fleet names
+ NAME_Cult_Defense_Fleet: "邪教徒防御舰队"
+ NAME_Cultist_Marauders: "邪教徒掠夺船"
+ NAME_Exiled_Pirates: "被放逐的抢夺者"
+ #Ship names
+ NAME_Bane_of_the_Heretic: "异端灾厄"
+ NAME_Cultist_Flagship: "邪教徒旗舰"
+ NAME_Cultist_Shipyard: "邪教徒船坞"
+ NAME_Dawn_of_Creation: "创造的黎明"
+ NAME_Divine_Fury: "天命之怒"
+ NAME_Divine_Justicar: "上苍判决"
+ NAME_Divine_Vessel: "神圣飞船"
+ NAME_Eternal_Damnation: "永世诅咒"
+ NAME_Final_Judgment: "最终审判"
+ NAME_Glorious_Might: "光辉之力"
+ NAME_Heathens_Doom: "异信天罚"
+ NAME_Heavenly_Judgment: "天降审判"
+ NAME_Heavenly_Portent: "天国预兆"
+ NAME_Holy_Avatar: "圣灵化身"
+ NAME_Holy_Defender: "神圣防御者"
+ NAME_Holy_Protector: "神圣保护者"
+ NAME_Infidel_Slayer: "无信狂戮"
+ NAME_Path_of_the_Pilgrim: "朝圣之路"
+ NAME_Pious_Crusader: "虔诚斗士"
+ NAME_Revered_Elder: "崇敬长者"
+ NAME_Righteous_Zealot: "正义狂徒"
+ NAME_The_Chosen_One: "万众神选"
+ NAME_Sacred_Might: "神圣威能"
+ NAME_Temple_of_Light: "光之神殿"
+ NAME_Unyielding_Faith: "不挠之信"
+ NAME_Wrath_of_the_Spirits: "圣灵怒涛"
+ #########################
+ #REVOLTS & UNREST
+ #########################
+ #Army names
+ NAME_Freedom_Fighters: "自由斗士"
+ #Other
+ NAME_WAR_OF_REVOLT: "[Root.Target.GetName]叛乱"

@@ -102,19 +102,22 @@
  decision_introduce_chaos:0 "Introduce Chaos"
  decision_introduce_chaos_desc:0 "This world is too perfect for us - our colonists are having mental breakdowns in the streets. Our only real option is to introduce some imperfections."
 
- # Events
+ # Enigmatic Robot
+
  anomaly.2080.name:0 "The Enigmatic Robot"
  anomaly.2580.desc:0 "As our scientists were looking into the earlier civilization on [From.GetName], they came across a small enigmatic robot trying to hide from them. Following weeks of approaching and befriending the little thing, it finally brought them back to a still-functional factory that it has been supervising since the demise of its creators.\n\nAfter being guided to the building, our people were given a large quantity of resources they could bring back to their ship. Though weird and hard to communicate with, the little robot seems to think of our scientists as its friends."
 
+# The Inhabitants of Parvus III
+
  anomaly.6700.name:0 "Narrow Escape"
- anomaly.6700.desc:0 "As the [Root.GetName]s' crew explored the barren wastes of §H[nanite_swarm_planet.GetName]§!, the first reports were much as expected: this is an unnatural wasteland with no signs of life above the water's surface. However, the planet's aquatic life has evolved well past the point we would expect some species to make forays onto dry land.\n\nAdditionally, the crew discovered what originally appeared to be various ancient-looking, sand-covered structures. Shortly after they began digging into these apparent buildings, small swarms of nanites emerged and began harassing the researchers. It seems the buildings are formed not from sand, but by billions of microscopic nanomachines!\n\nOnce mobilized, these swarms quickly multiplied, awakening more and more of the dormant whole. [Root.GetLeaderName] ordered a swift evacuation of the planet, allowing the [Root.GetName] just enough time to escape the atmosphere with a swarming storm of nanites in hot pursuit. The remaining swarm now seems agitated, and it's not calming down."
+ anomaly.6700.desc:0 "As the [Root.GetName]s' crew explored the barren dunes of §H[nanite_swarm_planet.GetName]§!, the first reports were much as expected: this is an unnatural wasteland with no signs of life above the water's surface. Yet the planet's aquatic life has evolved well past the point we would expect some species to make forays onto dry land.\n\nAdditionally, the crew discovered what originally appeared to be various ancient-looking, sand-covered structures. Shortly after they began digging into these apparent buildings, small swarms of nanites emerged and began harassing the researchers. It seems the buildings are formed not from sand, but by billions of microscopic nanomachines!\n\nOnce mobilized, these swarms quickly multiplied, awakening more and more of the dormant whole. [Root.GetLeaderName] ordered a swift evacuation of the planet, allowing the [Root.GetName] just enough time to escape the atmosphere with a swarming storm of nanites in hot pursuit. The remaining swarm now seems agitated, and it's not calming down."
  anomaly.6700.a:0 "Figure out what happened here."
 
  anomaly.6705.name:0 "On the Origin of Nanites"
  anomaly.6705.desc.start:0 "The [root.GetName] has completed its study of the nanites native to §H[nanite_swarm_planet.GetName]§!, and the results are incredible. Thousands of years ago, a ship hailing from an advanced civilization crashed here. Aboard that vessel were robots of dozens different designs."
  anomaly.6705.desc.L:0 "Curiously, it seems these machines might have been a tool of the mysterious Gate Builders, though older than any L-Gate we have found."
  anomaly.6705.desc.noL:0 "Whoever built these machines was in possession of truly advanced technology, long before our time."
- anomaly.6705.desc.end:0 "\nThe robots operated autonomously and attempted to secure the planet according to their programming. However, without their creators to rein them in, a battle soon broke out amongst the machines.\n\nThe emerging victor of this conflict was a hyper-adaptive, self-replicating nanite system that rapidly evolved to fit the planet's biosphere. This machine made itself the master of the surface world, breaking down anything from local flora to former, robotic rivals.\n\nWe bear witnessed to the aftermath of this great war: a planet not devoid of life, but instead supporting its evolved apex predator."
+ anomaly.6705.desc.end:0 "\nThe robots operated autonomously and attempted to secure the planet according to their programming. Without their creators to rein them in, a battle soon broke out among the machines.\n\nThe emerging victor of this conflict was a hyper-adaptive, self-replicating nanite system that rapidly evolved to fit the planet's biosphere. This machine made itself the master of the surface world, breaking down anything from local flora to its former, robotic rivals.\n\nWe bear witness to the aftermath of this great war: a planet not devoid of life, but instead supporting its evolved apex predator."
  anomaly.6705.a:0 "Tame the Swarm."
  anomaly.6705.b:0 "Study the Swarm further."
  anomaly.6705.b.tooltip:0 "Direct our [Root.Owner.GetScientistPlural] to unlock the secrets of the evolved nanites on [nanite_swarm_planet.GetName]"
@@ -140,11 +143,18 @@
  anomaly.6725.desc:0 "Our precautions and special equipment were not enough. Shortly after establishing a colony on §H[nanite_swarm_planet.GetName]§!, we lost contact with our teams on the ground. The last communication we received from the settlement showed a sky darkened by small black bodies swarming the outpost."
  anomaly.6725.a:0 "Damn those nanites!"
 
+ parvus_III_chain_title: "The Inhabitants of Parvus III"
+ parvus_III_chain_desc: "Parvus III is devoid of organic life, yet it still swarms with activity. What are these creatures and can they be reasoned with?"
+ 
+# Color of Science
+
  anomaly.6740.name:0 "The Color of Science"
  anomaly.6740.desc:0 "The cause of the solar radiation resonance observed around the corona of §Y[From.GetName]§! turned out to be an unusual crystal formation capable of enduring the heat!\n\nHaving brought the crystal aboard, our [Root.Owner.GetScientistPlural] were startled to realize that the strange resonance was reproducible. First, they exposed the crystal to the same solar radiation from [From.GetName], producing an identical result to the initially recorded phenomenon. It also seemed to create resonances with all energy waves we sent through it, forming new colors and sounds never before observed by [Owner.GetSpeciesNamePlural]!\n\nSuch frequencies could change the way we view the universe. Alternatively, we can develop research applications for a crystalline structure capable of surviving the intense heat of a star."
  anomaly.6740.a:0 "Send the new frequencies back to our artists."
  anomaly.6740.a.gestalt:0 "Retrieve these new frequencies for further analysis."
  anomaly.6740.b:0 "Harvest the crystal to insulate our energy weapons."
+
+# Alpha Centauri Anomaly
 
  anomaly.6745.name:0 "[From.GetName]"
  anomaly.6745.desc:0 "For as long as we [Root.Owner.GetSpeciesNamePlural] have been able to look to the stars for new homes, [From.GetName] has been a naive dream: a place we would look to with optimism; a new home. Sadly as our telescopes got better, we realized that the planet would probably be a tidally locked, frozen hellscape - a theory which we have confirmed today.\n\nThere is hope, however; this world has all the building blocks necessary for a habitable planet. It might just need a slight push..."
@@ -153,10 +163,14 @@
  anomaly.6750.name:0 "[From.GetName]"
  anomaly.6750.desc:0 "This tidally locked planet appears to have all the building blocks for a habitable world. Perhaps there is something that can be built here."
 
+# Target Practice Anomaly
+
  anomaly.6800.name:0 "Target Practice"
  anomaly.6800.desc:0 "Our sensors have discovered that the ship remnants on [From.GetName] got there in a peculiar way. The ships seem to have been intentionally driven straight into the asteroid, probably from light-years away, to test the accuracy of the designers' thrusters. As we deep-scan the remains, we pick out one ship in particular, which seems to have reasonably intact propulsion."
  anomaly.6800.a:0 "Recover that thruster!"
  anomaly.6800.b:1 "We won't waste those alloys."
+
+# ASR: Asteroid Sensor Relay
 
  anomaly.6805.name:0 "Asteroid Sensor Relay"
  anomaly.6805.desc:0 "Hoping to discover rare resources inside [From.GetName], our [Owner.GetScientistPlural] stumbled upon something most unusual. What had appeared to be a simple asteroid was in fact a long-dormant relay station with complex electronics and advanced sensors set up to send signals back to an ancient empire. The impact also has damaged some of the asteroid's internal structure, and we can only extract one system from it."
@@ -167,14 +181,16 @@
  anomaly.6810.desc:0 "We were wrong. The station orbiting [From.GetName] is not uninhabited; instead, it is crawling with giant alien arthropoids! The probes we deployed into the station only returned skittering shadows and large mandibles before signal was lost. Deep scans of the station have also revealed what we postulate to be an incredibly complex databank. To reach this databank, we would have to go through that cluster of many-legged defenders."
  anomaly.6810.a:0 "Send an away party, giant alien arthropoids are no joke!"
  anomaly.6810.b:0 "It's probably for the best that we leave them alone."
- anomaly.6810.c:0 "Attempt to contact our fellow arthropoids."
- anomaly.6810.d:0 "Vent them out."
+ anomaly.6810.c:0 "§BAttempt to contact our fellow arthropoids.§!"
+ anomaly.6810.d:0 "§BVent them out.§!"
  anomaly.6810.d.tooltip:0 "Use our advance knowledge of habitats to breach the station's atmosphere."
  anomaly.6815.name:0 "The Giant Alien Arthropoids"
  anomaly.6815.desc:0 "Oh, hello there! Sorry about destroying your probe earlier. It's just that we are conducting some very delicate experiments here, and we were worried that outside interference could alter the results - I'm sure you understand. Now, how can we help you?"
  anomaly.6815.a:0 "Wait, so you are not a hostile infestation?"
  anomaly.6820.desc:1 "What would ever give you that impression? We are a Curator detachment sent here to study this system's unique properties. If you wish to partake of our order's usual offerings, I suggest contacting the primary research lab. I can provide you with a copy of our findings so far."
  anomaly.6820.a:0 "Good luck with your experiments."
+
+# Crystal Growths Anomaly
 
  anomaly.6825.name:0 "Crystal Growths"
  anomaly.6825.desc.start:0 "The lifeforms living on [From.GetName] were nothing like we expected. Our [owner.GetScientistPlural] report back that the asteroid has crystal growths. These growths have turned out to be self-sustaining and caused by the crystals taking in the ambient radiation of [From.System.GetName] and combining it with the mineral composition of the asteroid."
@@ -187,10 +203,14 @@
  anomaly.6835.a.tooltip:0 "Up to §Y3§! random asteroids will now produce §G3§! £food£ food."
  anomaly.6835.b:0 "Let's not expand the crystal farms."
 
+# Too Few Sheep Asteroid Anomaly
+
  anomaly.6840.name:0 "Too Few Sheep"
  anomaly.6840.desc:0 "[From.GetName] is a peculiar gas giant. Our knowledge of astrophysics tells us that the planet should have a planetary ring, yet it doesn't. The cause of this became apparent after our science ship took a closer look at the intriguing moon. The planet is surrounded by shepherd moons, all incredibly rich in minerals and accumulating more every year. We could blast the moons with precise and controlled explosions and harvest them or keep them inside the ring zone and harvest the space debris they accrue."
  anomaly.6840.a:0 "We need those minerals now."
  anomaly.6840.b:0 "Good things come to those who wait."
+
+# Cascading Catastrophe
 
  anomaly.6845.name:0 "Cascading Catastrophe"
  anomaly.6845.desc:0 "We did indeed discover life on [From.GetName], but by our actions, it has since been eradicated. The microbial creatures which lived in the outer edges of the gas giant's atmosphere reacted poorly to our deep scans. These frequencies caused each creature's cellular structure to resonate - an effect that then cascaded and spread from gas mite to gas mite. Each was rendered inert soon after.\n\nWe are now in orbit over the largest graveyard in the universe."
@@ -200,6 +220,8 @@
  anomaly.6850.desc.valuesothers:0 "This process has taught us a lot about the universe but perhaps even more about ourselves."
  anomaly.6850.desc.novaluesothers:0 "In the future we will have to be more careful where we point our scanners."
  anomaly.6850.a:0 "Fantastic news!"
+
+# Caught in the Eye
 
  anomaly.6855.name:0 "Caught in the Eye"
  anomaly.6855.desc.regular:0 "The last signal received from [Root.GetName] was not much more than garbled static. They had been studying the strange localized storms on [From.GetName] and were sending back incredible preliminary reports. The tempest reacted to the probes being sent in, creating vacuum pockets to avoid them and then slowly seeping back in towards the drones. [Root.GetName] was planning on testing out numerous scanning frequencies at the storm before we lost contact. The science ship seems to have sunken into the gas giant and appears to be dormant."
@@ -211,6 +233,8 @@
  anomaly.6860.desc:0 "After months of work, our [Owner.GetScientistPlural] finally managed to alternate [FromFrom.GetName] shields in such a way that [FromFromFrom.GetName] tempest released its grip on the marooned ship. Communications with [trapped_in_storm.GetName] was quickly re-established, and incredibly none onboard [FromFrom.GetName] seem to remember their time trapped inside the storm."
  anomaly.6860.a:0 "Back to work."
 
+# Express Mail
+
  anomaly.6865.name:0 "Express Mail"
  anomaly.6865.desc:1 "Once [Root.GetName] got close enough to scan the cargo pod it was assumed that the sensors were malfunctioning. The pod is built out of the exact same [Owner.GetBioAlloy] we ourselves use for spacebound structures. The likelihood that some alien beings would come up with this exact mixture is beyond unlikely, yet after recalibrating the scanners the same results appeared.\n\nUpon opening the pod, the only thing greeting us was a collection of documents detailing exactly where we should assign each of our [Owner.GetScientistPlural] and what they should be asked to study. The instructions end on a fixed date, one that is scheduled to fall exactly 10 years from now."
  anomaly.6865.a:0 "Send the notes back to [Owner.GetHomeWorldName]."
@@ -218,6 +242,8 @@
  anomaly.6870.name:0 "Closing the Loop"
  anomaly.6870.desc:1 "After years of uneasy development, a rip in the fabric of space has appeared above [Root.GetHomeWorldName]. Unnervingly this is the exact date as indicated in the strange instructions we received a decade ago. There is only one thing to do: send the documents we received back into the tear and close the loop."
  anomaly.6870.a:0 "Let our past selves deal with this."
+
+# Convenient Mining
 
  anomaly.6875.name:0 "Convenient Mining"
  anomaly.6875.desc:0 "The asteroid around [From.GetName] has such a perfectly stable orbit that it's easy to understand why our [Owner.GetScientistPlural] thought it was placed there artificially. Yet, there are no conclusive indications of any propulsion systems or any other artificial marring. The only natural conclusion is that, by some absurdly improbable chance, the asteroid got caught in [From.GetName]'s gravity field. We have also detected some rare crystals on the surface of the asteroid."
@@ -232,12 +258,16 @@
  anomaly.6890.desc:0 "The trapped asteroid is, in fact, a crystalline being's nest. It is good that we didn't keep digging, for it seems like we agitated the creature hibernating inside. If we do nothing for a while and study it from afar, it should settle down."
  anomaly.6890.a:0 "What can we learn from it?"
 
+# Toxic Biological Industry
+
  anomaly.6895.name:0 "Toxic Biological Industry"
  anomaly.6895.desc.catano:0 "The life signs observed within the toxic atmosphere of [From.GetName] are giant semi-organic machines! This alien industry seems to have been the cause of the noxious atmosphere on the planet, yet it's still operational. No other life signs remain on the world, and the creators of these machines must have left them running. We can't quite ascertain their purpose yet, but their construction could surely help our understanding of engineering."
  anomaly.6895.desc.catayes:0 "The life signs observed within the toxic atmosphere of [From.GetName] are giant semi-organic machines! Like us, it seems like the creators of this facility appreciated a merging of the biological and mechanical. This alien industry appears to have been the cause of the noxious atmosphere on the planet, yet it's still operational. No other life signs remain on the world, and the creators of these machines must have left them running. We can't quite ascertain their purpose yet, but their construction could surely help our understanding of engineering."
  anomaly.6895.b:0 "Harvest what parts we can."
  anomaly.6895.c:0 "Harvest everything."
  anomaly.6895.d:0 "Let the sleeping fools lie."
+
+# Cool Thoughts
 
  anomaly.6900.name:0 "Cool Thoughts"
  anomaly.6900.desc:0 "We didn't detect life forms below the surface. We detected them in the entire world! The frozen planet is interspersed with micro-thin tubes linked like a rudimentary computer. While the structure is primitive, its gigantic scale means it can probably rival some of [Owner.GetHomeWorldName]'s supercomputers in output. Even now, the computer seems to be active - our [Owner.GetScientistPlural] can interface with it, but since it's so slow, we would only be able to ask it a single question."
@@ -247,6 +277,8 @@
  anomaly.6900.c:0 "Who came before us?"
  anomaly.6900.d:0 "What are we?"
  anomaly.6900.e:0 "Best to observe it from afar."
+
+# Don't Count Your Planets
 
  anomaly.6905.name:0 "Don't Count Your Planets"
  anomaly.6905.desc:0 "Our [Owner.GetScientistPlural] have discovered something rather monstrous. The mountain range they scanned earlier was in actuality the outer membrane of a gigantic egg. It's uncertain what behemoth could lay such an egg and what horror would hatch from it."
@@ -259,6 +291,8 @@
  anomaly.6915.name:0 "Gratitude"
  anomaly.6915.desc.regular:0 "§R"IT LIVES! IT LIVES AGAIN! We are nothing but insignificant specks compared to such a creature; what does the ephemeral squabbling between empires matter in the face of such great-"§!\n\nThe last transmission of the [Root.GetName] cuts off there, and when we use our probes to scan the remains of [FromFromFrom.GetName], we find a hollow shell. It seems the creature had little gratitude to show its liberators."
  anomaly.6915.desc.gestalt:0 "Our [Owner.GetScientistPlural] dispatched to the [Solar_System.GetName] system all reacted in alarm shortly before losing contact with the [Owner.GetBrainName], only telling us that §R"It's loose."§! The last transmission of the [Root.GetName] cuts off as the egg begins to crack open, and when we use our probes to scan the remains of [FromFromFrom.GetName], we find a hollow shell. It seems the creature had little gratitude for its liberator."
+
+# Heat from Below
 
  anomaly.3140.name:0 "Heat from Below"
  anomaly.3140.desc:0 "After probing beneath the surface, we have concluded the unusual heat signatures on [From.GetName] are caused by hydrothermal springs. There seems to be more to this planet than meets the eye..."
@@ -465,6 +499,9 @@
  colony.9975.name: "Vent Expansion Failure"
  colony.9975.desc: "Miscalculations with the mining charges caused several vents to fracture and eventually topple to the ground, resulting in considerable damage to our facilities. While some refineries are now producing more gas than before, the total yield has decreased. The silver lining is that the collapsed structures have revealed unexpected sources of minerals.\n\nThese events act as a reminder that galaxy-spanning civilizations cannot be built without cracking a few vents."
 
+ nemma_world_chain_title: "Nemma World"
+ nemma_world_chain_desc: "The titanic Nemma inhabit one of our worlds and we have already built the foundation of a colony on their backs. We will need to decide what to do wtih them."
+
 job_stratovent_researcher: "Vent Researcher"
 job_stratovent_researcher_plural: "Vent Researchers"
 job_stratovent_researcher_desc: "Researchers specialized in studying spaceborne fauna and guiding travellers to see them."
@@ -482,6 +519,9 @@ mod_job_stratovent_researcher_add: "Vent Researcher Jobs"
 mod_job_stratovent_refiner_add: "Vent Refiner Jobs"
 mod_job_stratovent_refiner_upg_add: "Expanded Vent Refiner Jobs"
 mod_job_stratovent_refiner_minerals_add: "Collapsed Vent Refiner Jobs"
+
+stratovent_world_chain_title: "Stratospheric Vents"
+stratovent_world_chain_desc: "We have access to a potentially lucrative resource on one of our colonies, naturally formed vents expunging valuable resources into space. Now we need to decide on what to do with them."
 
  # Arc Sites
  broken_world_digsite:0 "The Broken Gates"
@@ -716,7 +756,7 @@ mod_job_stratovent_refiner_minerals_add: "Collapsed Vent Refiner Jobs"
  d_terraforming_blocker:0 "£blocker£ Terraforming Residue"
  d_terraforming_blocker_desc:0 "The results of a partially successful terraforming project have created areas of strange biological abominations."
  d_dayside_farm:0 "Dayside Solar Farm"
- d_dayside_farm_desc:0 "This world has all its solar power set up on the dayside of its tidally locked hemispheres, granting it access to an unlimited amount of solar hours."
+ d_dayside_farm_desc:1 "This world has all its solar power set up on the dayside of its tidally locked hemispheres, granting it access to unlimited solar hours."
  d_radiotrophic_preserve:0 "Radiotrophic Preserve"
  d_radiotrophic_preserve_desc:0 "An isolated area filled with low pressure and a very radioactive atmosphere keeps the natives of this world alive."
 
@@ -965,7 +1005,7 @@ mod_job_stratovent_refiner_minerals_add: "Collapsed Vent Refiner Jobs"
  ancrel.14004.desc:0 "We foolishly thought we were immune to the mist, but our engineers are experiencing a state of rapturous bliss. They dance in the ship's corridors, singing atonally. We will need to clear the atmosphere and capture our engineers before we can launch the ship. This delay will cost us time."
  ancrel.14004.a:0 "Capture the blissed-out engineers."
  ancrel.14005.name:0 "Rage Outbreak"
- ancrel.14005.desc:0 "We foolishly thought that we were immune to the the mist, but our scientists are experiencing fits of psychotic rage. Fighting has broken out shipwide. We will need to clear the atmosphere and subdue the mist's victims before we can launch the ship. This delay will cost us time."
+ ancrel.14005.desc:1 "We foolishly thought that we were immune to the mist, but our scientists are experiencing fits of psychotic rage. Fighting has broken out shipwide. We will need to clear the atmosphere and subdue the mist's victims before we can launch the ship. This delay will cost us time."
  ancrel.14005.a:0 "Subdue the maniacal scientists."
  ancrel.14006.name:0 "Temptations of Technology"
  ancrel.14006.desc:0 "We have liftoff! Though dangerous, the alien ship's intoxicating mist could augment the effectiveness and loyalty of our empire's soldiers. However, the question remains: should we subject our own soldiers to this hazardous substance? Or should we say no and learn from their tragic mistakes?"
@@ -1184,6 +1224,10 @@ mod_job_stratovent_refiner_minerals_add: "Collapsed Vent Refiner Jobs"
  trait_robot_notofthisworld:0 "Not of This World"
  trait_robot_notofthisworld_desc:0 "§BThese machines are not from this universe and are degrading slowly§!."
  TRAIT_NOTOFTHISWORLD_EFFECT:0 "Each pop working as a slave or better produces 0.5 £physics_research£ §YPhysics Research§! per month."
+
+ # Event Chain
+ negative_mass_title: "Negative Mass"
+ negative_mass_desc: "Negative Mass has recently appeared around our homeworld. The strange phenomenon surely won't be a herald of something that will shake our society's very core."
 
  # Singing Planet
 
@@ -1734,3 +1778,162 @@ mod_job_stratovent_refiner_minerals_add: "Collapsed Vent Refiner Jobs"
  colony.9380.desc: "Our study of the Myrmeku has concluded. When calibrated magnets were placed around the entrances of their colonies, the magnetism in the insect exoskeletons generated electricity that we could harness.\n\nThe study also showed that the Myrmeku move according to local magnetic fields, so installing a demagnetized protective shell around our memory chips should be enough to protect them."
  colony.9380.a: "Brilliant."
  
+## Event: Glacial Crisis
+ colony.7230.name: "Glacial Crisis"
+ colony.7230.desc: "The latest climate report from [planet.GetName] has come to a concerning conclusion. Inexplicably, the surface temperature on the frozen planet has been rising at an alarming rate.\n\nIf we fail to identify the reason for the ecosystem's rapid deterioration, the situation could lead to catastrophic melting of the planet's vast glaciers."
+ colony.7230.a: "Find out why the planet is heating."
+ colony.7230.a.tooltip: "What could be the cause?"
+ colony.7230.b: "It's nothing to worry about."
+ colony.7235.name: "Cracks in the Ice"
+ colony.7235.desc: "The escalation of temperatures on [flooding_planet.GetName] is accelerating dramatically. This has caused substantial fractures within the icy surface layers, unveiling a vast subsurface ocean.\n\nFortunately, our investigations have identified a potential cause for this phenomenon. Due to our presence, the unique atmospheric shield safeguarding the planet has begun to exhibit critical fragility and could potentially collapse. Implementing stringent measures to curb our production would minimize our ecological impact. It might be enough to solve the issue."
+ colony.7235.a: "Revise our production targets."
+ colony.7235.b: "It is about time the ice age ended."
+ colony.7235.b.tooltip: "Boost the engines!"
+ colony.7240.name: "Core Meltdown"
+ colony.7240.desc: "Our attempt to limit our emissions on [flooding_planet.GetName] has not yielded promising results. We have been only marginally successful in addressing the ongoing ecological crisis, and geographical lowlands are coming under threat due to the rising sea levels.\n\nAt present, our population centers remain shielded from immediate impact, but it is almost certain planet-wide meltdown cannot be avoided."
+ colony.7240.a: "Try to mitigate the damages."
+ colony.7240.b: "Declare a state of emergency!"
+ colony.7240.b.tooltip: "Halt all production until a solution is found."
+ colony.7245.name: "Vast Floodplains"
+ colony.7245.desc: "In the wake of our neglect to address the rapidly deteriorating ecological state of [flooding_planet.GetName], the situation has spiraled into an unprecedented cataclysm.\n\nThe disintegration of vast ice sheets has given rise to sprawling oceans, leaving behind immense devastation and upheaval. By building flood barriers we can protect our remaining cities, but more unforeseeable consequences still linger on the horizon."
+ colony.7245.a: "The planet is flooding!"
+ colony.7247.name: "Secrets of the Permafrost"
+ colony.7247.desc: "As the meltdown of the planet [flooding_planet.GetName] continues, a fascinating discovery was made beneath the permafrost. An astonishingly abundant polar reservoir of minerals and rare resources lies waiting, beckoning us with untold wealth and untapped potential."
+ colony.7247.a: "Jackpot. Start drilling!"
+ colony.7247.b: "The permafrost has suffered enough."
+ colony.7247.b.tooltip: "We cannot risk worsening the situation."
+ colony.7250.name: "Unfrozen Pathogen"
+ colony.7250.desc: "A disconcerting development has unfolded at our polar mining station on [flooding_planet.GetName]. Workers have succumbed to sudden bouts of unconsciousness, necessitating the implementation of a stringent no-pass zone for their safety.\n\nInitial investigations suggest the emergence of a dormant virus, awoken as its icy confines were disturbed. The true nature and characteristics of this awakened pathogen remain uncertain, leaving us grappling with a multitude of unanswered questions. The extent of its transmissibility and the potential danger it poses to the people remains undetermined."
+ colony.7250.a: "Take no chances. Sanitize the area."
+ colony.7250.b: "Keep the quarantine up."
+ colony.7255.name: "Polar Riches"
+ colony.7255.desc: "In the hollowed depths of the polar regions of [flooding_planet.GetName], a mining team has made a discovery of monumental proportions. Veiled beneath layers of ice and snow, colossal crystals reminiscent of majestic glaciers were found.\n\nThese extraordinary formations, forged under immense pressure over untold ages, stand as a testament to the unlimited potential we have yet to uncover."
+ colony.7255.a: "What an incredible find."
+ colony.7260.name: "Climate Stabilized"
+ colony.7260.desc: "We have reached an environmental breakthrough.\n\nThe innocuous byproducts generated through the combustion of our fuels harbor an insidious side-effect when coming to contact with [flooding_planet.GetName]'s bacterial clouds. We now know that these clouds play a vital role in retaining the planet's natural biorhythm by working as a solar shield. As the bacteria slowly begun to diminish, we inadvertently exacerbated the effect of our emissions.\n\nArmed with this newfound knowledge, resolute measures have been swiftly enacted to restore the equilibrium."
+ colony.7260.a: "At last, the climate is stable again."
+ colony.7265.name: "End of an Ice Age"
+ colony.7265.desc: "A new climatic era begins as the last vestiges of [flooding_planet.GetName]'s glaciers sink into the ocean. The disappearance of the permafrost has uncovered an expansive underwater realm, filled with untapped resources."
+ colony.7265.a: "Time to hit the beach."
+ PLANET_MELTDOWN_PROJECT: "Climate Crisis"
+ PLANET_MELTDOWN_PROJECT_DESC: "The climate on [flooding_planet.GetName] is rapidly deteriorating. Hopefully we can figure out why before it is too late to reverse the process."
+ MELTING_RESEARCH_PROJECT: "Melting Surface"
+ MELTING_RESEARCH_PROJECT_DESC: "The temperature on [flooding_planet.GetName] has risen alarmingly quickly. Our [Root.GetScientistPlural] need to expand the scope of their studies to address the new issues created by the ongoing situation."
+
+ active_melting: "Rising Waters"
+ active_melting_desc: "This planet's icy surface is melting at an alarming rate."
+ boosted_melting: "Snowball Effect"
+ boosted_melting_desc: "We have increased our output of industrial emissions to hasten the melting of the planet's ice caps."
+ halted_production: "Halted Production"
+ halted_production_desc: "We have limited our industrial impact in a bid to protect this planet's fragile environment."
+ ecological_emergency: "Ecological Emergency"
+ ecological_emergency_desc: "This planet has completely halted production until the environmental research is concluded."
+ ancient_plague: "Ancient Virus"
+ ancient_plague_desc: "This world has fallen prey to an ancient pathogen awakened from the melted permafrost."
+ cruel_actions: "Murderous Precautions"
+ cruel_actions_desc: "In the name of safety, we have killed the colonists infected by an ancient plague."
+ 
+ d_floodplains: "Growing Floodplains"
+ d_floodplains_desc: "Large areas of this world are flooded due to rapidly rising sea levels."
+ d_crystalline_glacier: "Crystallized Ice Field"
+ d_crystalline_glacier_desc: "These icy blue crystals were once the hearts of primordial glaciers."
+ d_mineral_seabed: "Rich Seabed"
+ d_mineral_seabed_desc: "The seabed is littered with high-quality minerals."
+
+ job_mineral_diver: "Deep Sea Diver"
+ job_mineral_diver_plural: "Deep Sea Divers"
+ job_mineral_diver_desc: "Deep sea experts who recover sunken minerals from the ocean depths."
+ job_mineral_diver_add: "$job_mineral_diver$ Jobs"
+ job_mineral_diver_per_pop: "§G+1§! $job_mineral_diver$ Job per $VALUE$ Pops"
+ job_mineral_diver_per_pop_short: "\n§G+1§! £job_miner£ per $VALUE$ £pop£"
+ mod_job_mineral_diver_add: "$job_mineral_diver$ Jobs"
+ mod_job_mineral_diver_per_pop: "§G+1§! $job_mineral_diver$ Job per $VALUE$ Pops"
+ mod_job_mineral_diver_per_pop_short: "\n§G+1§! £job_miner£ per $VALUE$ £pop£"
+ job_mineral_diver_drone: "Underwater Drone"
+ job_mineral_diver_drone_plural: "Underwater Drones"
+ job_mineral_diver_drone_desc: "Mining Drones that can withstand great pressure to collect sunken minerals from the ocean depths."
+ mod_job_mineral_diver_drone_add: "$job_mineral_diver_drone$ Jobs"
+ mod_job_mineral_diver_drone_per_pop: "§G+1§! $job_mineral_diver_drone$ Job per $VALUE$ Pops"
+ mod_job_mineral_diver_drone_per_pop_short: "\n§G+1§! £job_mining_drone£ per $VALUE$ £pop£"
+ job_mineral_diver_drone_add: "$job_mineral_diver_drone$ Jobs"
+ job_mineral_diver_drone_per_pop: "§G+1§! $job_mineral_diver_drone$ Job per $VALUE$ Pops"
+ job_mineral_diver_drone_per_pop_short: "\n§G+1§! £job_mining_drone£ per $VALUE$ £pop£"
+
+## Event Chain: Rapid Desertification
+ RAPID_DESERTIFICATION_CAT: "Rapid Desertification"
+ RAPID_DESERTIFICATION_CAT_DESC: "Aerial images taken of [From.Planet.GetName]'s rapidly diminishing vegetation could indicate the presence of an unidentified life form habiting its surface."
+ anomaly.7135.name: "Alien Fauna Identified"
+ anomaly.7135.desc: "We have found life on [desertling_planet.GetName]. Vast non-sapient herds of small mammals roam across the entire planetary surface.\n\nTheir population, labeled 'desertlings' by our scientists, is increasing at an alarming rate. The planet is already beyond its capacity, and the ecosystem is deteriorating rapidly."
+ anomaly.7135.a: "Investigate why this is happening now."
+ anomaly.7135.b: "Best not intervene."
+ anomaly.7135.b.tooltip: "We'll monitor the situation from afar."
+ RAPID_DESERTIFICATION_PROJECT: "Encumbered Ecosystem"
+ RAPID_DESERTIFICATION_PROJECT_DESC: "The planet [desertling_planet.Planet.GetName] is overpopulated by a herd of rapidly spreading mammals. With the proper resources, our scientists could gather more insights about the origins and capabilities of this non-sapient species."
+ anomaly.7140.name: "Invasive Species"
+ anomaly.7140.desc: "While studying the desertlings on [desertling_planet.GetName] our scientists have made a pivotal observation. Despite the ubiquitous nature of the species, there is a striking absence of matching fossil records. These ecological interlopers have caused extreme environmental damage over a relatively short time period, and were most likely transported here by an outside actor.\n\nThe pressing need for intervention has become abundantly clear. Without action, these creatures will destroy what remains of this planet's natural ecosystem."
+ anomaly.7140.a: "We will adopt as many critters as possible."
+ anomaly.7140.a.tooltip: "We will be responsible for their actions."
+ anomaly.7140.b: "Enact animal population controls."
+ anomaly.7140.b.tooltip: "Select genetic modifications could be used to curb the growth..."
+ anomaly.7140.c: "Exterminate the beasts."
+ anomaly.7140.c.tooltip: "The planet must be protected at all cost."
+ anomaly.7140.d: "We'll take some animals as livestock."
+ anomaly.7140.d.tooltip: "We'll take two slaves for every planet."
+ POPULATION_CONTROL_PROJECT: "Population Control"
+ POPULATION_CONTROL_PROJECT_DESC: "To save the ecological state of [desertling_planet.GetName] the exponential population growth of the invading fauna's population must be suppressed. Our scientists need time and resources to find an executable solution."
+ anomaly.7145.name: "Extinction Event"
+ anomaly.7145.base: "has succumbed to the infestation of the exponentially breeding mammals. Deep silence envelops the now barren landscape, where all traces of vegetation have been devoured down to their roots.\n\nThe omnivorous mammals themselves lie still, either perished from starvation, or eaten by their kin as the famine progressed."
+ anomaly.7145.desc: "We have received news that [desertling_planet.GetName], $anomaly.7145.base$"
+ anomaly.7145.b.desc: "We have received news that [desertling_planet.GetName] $anomaly.7145.base$"
+ anomaly.7145.a: "At least the suffering is now over."
+ anomaly.7145.b: "Our colony is destroyed."
+ anomaly.7150.name: "Nature's Rebirth"
+ anomaly.7150.desc: "After an arduous effort to sterilize and genetically alter the desertlings on [desertling_planet.GetName], their population has finally been reduced to a sustainable level.\n\nWithout the overwhelming amount of grazers, a delicate equilibrium has emerged. Nature is rapidly restoring itself, as fresh patches of grass begin to sprout over the once barren desert."
+ anomaly.7150.a: "A hidden paradise."
+ anomaly.7155.name: "Red Desert"
+ anomaly.7155.desc: "Finally, the last of the rodents lie dead on [desertling_planet.GetName]. The sand itself has been tinted red by our massive effort to save the planet from its infestation, but already new green buds have begun to sprout. We were just in time."
+ anomaly.7155.a: "It had to be done."
+ colony.7160.name: "National Treasures"
+ colony.7160.desc: "When we opened our planets to the desertlings, no one could have anticipated the results. The critters have adapted seamlessly into our way of life, becoming beloved companions in households all across our territory.\n\nTheir rapid integration has led to speculation that these creatures must at once time have been domesticated. Whatever the cause of their innate friendliness, the rumor only adds to the fascination surrounding these extraordinary creatures."
+ colony.7160.a: "In a way, they saved us."
+ colony.7165.name: "Troublesome Critters"
+ colony.7165.desc: "Dire news has reached us. A few desertlings have broken free during transportation, forming a rapidly expanding community in the wild. The situation must be handled swiftly to avoid an environmental collapse."
+ colony.7165.a: "Hunt the beasts down!"
+ colony.7165.b: "Build a walled reserve."
+ colony.7170.name: "Mammalian Population Stabilized"
+ colony.7170.desc: "We have been moderately successful in curbing the rampant desertling infestation. Regrettably, we have been unable to eradicate the elusive beasts. It is crucial to continue monitoring the situation, as it could reach a tipping point at any moment."
+ colony.7170.a: "The hunt continues."
+ colony.7175.name: "Uncontrollable Infestation"
+ colony.7175.desc: "Our attempt to control the infestation of desertlings has been rendered futile. The voracious creatures have already burrowed deep, expanding their large colonies faster than we can exterminate them. The battle is lost unless we allow our military to use their vast arsenal of explosives and noxious gasses, a course of action which would risk the well-being of everyone on the surface."
+ colony.7175.a: "The animals are here to stay..."
+ colony.7175.b: "We will NOT lose a war to mere rodents."
+ colony.7175.b.tooltip: "We'll destroy the entire planet if we have to."
+
+ job_alien_hunter: "Alien Hunter"
+ job_alien_hunter_plural: "Alien Hunters"
+ job_alien_hunter_desc: "A special task force assigned to hunt alien fauna."
+ job_alien_hunter_add: "$job_alien_hunter$ Jobs"
+ job_alien_hunter_per_pop: "§G+1§! $job_alien_hunter$ Job per $VALUE$ Pops"
+ mod_job_alien_hunter_add: "$job_alien_hunter$ Jobs"
+ mod_job_alien_hunter_per_pop: "§G+1§! $job_alien_hunter$ Job per $VALUE$ Pops"
+ mod_job_alien_hunter_per_pop_short: "\n§G+1§! £job_alien_hunter£ per $VALUE$ £pop£"
+
+ d_desertling_infestation: "Invasive Fauna"
+ d_desertling_infestation_desc: "An invasive species of alien mammals."
+ d_red_desert: "Red Desert"
+ d_red_desert_desc: "Vast deserts stained red by the bloody sacrifices made here."
+ d_alien_sanctuary: "Alien Safari"
+ d_alien_sanctuary_desc: "A sanctuary built for alien fauna where tourists can interact with extraordinary species."
+
+ rodent_war: "Extreme Extermination"
+ rodent_war_desc: "We have tasked our military with eradicating the invasive alien fauna that have burrowed into this world."
+ alien_infestation: "Alien Infestation"
+ alien_infestation_desc: "This world has been infested by rapidly spreading alien fauna."
+ adopted_aliens: "Alien Domestication"
+ adopted_aliens_desc: "This world has partaken in a project adopting alien pets in a communal effort to domesticate them."
+ national_pets: "Unlikely Bond"
+ national_pets_desc: "The desertlings we decided to adopt have been pronounced fully domesticated and are beloved by the people all across our nation."
+ 
+ trait_presapient_unintelligent: "Unintelligent"
+ trait_presapient_unintelligent_desc: "§HThis species is unable to complete even the simplest tasks. Their only skill is the incredible speed at which they reproduce.§!"
+ rapid_desertification_species: "Desertling"

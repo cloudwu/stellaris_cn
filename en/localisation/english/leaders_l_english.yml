@@ -1,0 +1,302 @@
+﻿l_english:
+
+ ### LEADER CLASSES
+ ADMIRAL_TEXTICON:0 "£admiral£"
+ COMMANDER_TEXTICON: "£commander£"
+ SCIENTIST_TEXTICON:0 "£scientist£"
+ GENERAL_TEXTICON:0 "£general£"
+ OFFICIAL_TEXTICON: "£official£"
+ GOVERNOR_TEXTICON:0 "£official£"
+ NOCLASS_TEXTICON:0 "£noclass£"
+
+ ### Veteran Classes
+ veteran_class:0 "Veteran Class"
+ general_subclass:2 "£general£ §v$veteran_class$§!"
+ commander_subclass: "£commander£ §v$veteran_class$§!"
+ governor_subclass:2 "£official£ §v$veteran_class$§!"
+ official_subclass: "£official£ §v$veteran_class$§!"
+ scientist_subclass:2 "£scientist£ §v$veteran_class$§!"
+ councilor_subclass_base:0 "[Root.GetClass]"
+
+ councilor_subclass_commander: "$commander_subclass$ (£council£)"
+ councilor_subclass_general:0 "$general_subclass$ (£council£)"
+ councilor_subclass_governor:0 "$governor_subclass$ (£council£)"
+ councilor_subclass_official: "$official_subclass$ (£council£)"
+ councilor_subclass_scientist:0 "$scientist_subclass$ (£council£)"
+ councilor_subclass:2 "[Root.GetClassTexticon] §v$veteran_class$§! (£council£)"
+
+ admiral_subclass_tt: "§GVeteran Class focused on commanding fleets§!"
+ general_subclass_tt: "§GVeteran Class focused on commanding armies§!"
+ delegate_subclass_tt: "§GVeteran Class focused on our representation in Federations and the [GetGalCommunityOrGalImperium]§!"
+ explorer_subclass_tt:0 "§GVeteran Class focused on exploration and surveying§!"
+ scholar_subclass_tt: "§GVeteran Class focused on investigating anomalies and dig sites§!"
+ governor_subclass_tt: "§GVeteran Class focused on Governor Traits§!"
+ councilor_subclass_tt:0 "§GVeteran Class focused on Councilor Traits§!"
+
+ ## Commander
+ subclass_commander_admiral: "Admiral"
+ subclass_commander_admiral_desc: "The stoic presence of a decisive Admiral steels the nerves of the crew as they engage the enemy."
+ subclass_commander_admiral_hive: "$subclass_commander_admiral$"
+ subclass_commander_admiral_hive_desc: "The presence of a dedicated Admiral drone ensures the fleet remains cohesive as it engages the enemy."
+ subclass_commander_admiral_machine: "$subclass_commander_admiral$"
+ subclass_commander_admiral_machine_desc: "The presence of a dedicated Admiral unit ensures the fleet remains synchronized as it engages the enemy."
+ commander_admiral_subclass: "§GVeteran Class focused on fleets and naval combat§!"
+
+ subclass_commander_general: "General"
+ subclass_commander_general_desc: "The presence of a General allows for improved coordination of planetary invasions."
+ subclass_commander_general_hive: "$subclass_commander_general$"
+ subclass_commander_general_hive_desc: "$subclass_commander_general_desc$"
+ subclass_commander_general_machine: "$subclass_commander_general$"
+ subclass_commander_general_machine_desc: "$subclass_commander_general_desc$"
+ commander_general_subclass: "§GVeteran Class focused on assaulting starbases, planetary bombardment ande planetary invasion§!"
+
+ subclass_commander_governor: "Commissioner"
+ subclass_commander_governor_desc: "Commissioners specialize in imposing order through force, governing planets and sectors with military rigor and a strong vision."
+ subclass_commander_governor_hive: "$subclass_commander_governor$"
+ subclass_commander_governor_hive_desc: "$subclass_commander_governor_desc$"
+ subclass_commander_governor_machine: "$subclass_commander_governor$"
+ subclass_commander_governor_machine_desc: "$subclass_commander_governor_desc$"
+
+ subclass_commander_councilor:0 "Strategist"
+ subclass_commander_councilor_desc:0 "Strategists are focused on the bigger picture. Instead of leading the battle up front, they prefer to maintain cohesion in the military and draw galaxy-spanning war plans."
+ subclass_commander_councilor_hive:0 "$subclass_commander_councilor$"
+ subclass_commander_councilor_hive_desc:0 "$subclass_commander_councilor_desc$"
+ subclass_commander_councilor_machine:0 "$subclass_commander_councilor$"
+ subclass_commander_councilor_machine_desc:0 "$subclass_commander_councilor_desc$"
+
+ ## Official
+ subclass_official_delegate: "Delegate"
+ subclass_official_delegate_desc: "As the public face of our empire, Delegates represent our interests in Federations and in the Galactic Community."
+ subclass_official_delegate_hive: "Delegate"
+ subclass_official_delegate_hive_desc: "$subclass_official_delegate_desc$"
+ subclass_official_delegate_machine: "Delegate"
+ subclass_official_delegate_machine_desc: "$subclass_official_delegate_desc$"
+
+ subclass_official_diplomacy_councilor: "Ambassador"
+ subclass_official_diplomacy_councilor_desc: "Ambassadors maintain our relationships with other empires, both overtly and in more subtle ways. The art of diplomacy and the subtle craft of espionage both fall under their domain."
+ subclass_official_diplomacy_councilor_hive: "$subclass_official_diplomacy_councilor$"
+ subclass_official_diplomacy_councilor_hive_desc: "$subclass_official_diplomacy_councilor_desc$"
+ subclass_official_diplomacy_councilor_machine: "$subclass_official_diplomacy_councilor$"
+ subclass_official_diplomacy_councilor_machine_desc: "$subclass_official_diplomacy_councilor_desc$"
+
+ subclass_official_governor:0 "Industrialist"
+ subclass_official_governor_desc:1 "Knowledge and skills in maintaining production quotas or material procurement come naturally to this leader."
+ subclass_official_governor_hive:0 "Production Oversight"
+ subclass_official_governor_hive_desc:2 "This drone was selectively bred to guide others in the production process."
+ subclass_official_governor_machine:0 "Efficiency Loop"
+ subclass_official_governor_machine_desc:1 "This unit is equipped to isolate and delete inefficient production patterns."
+
+ subclass_official_economy_councilor:0 "Advisor"
+ subclass_official_economy_councilor_desc:1 "The budget of our empire is in the hand of our Advisors, a class of leaders who specialize in economic theory."
+ subclass_official_economy_councilor_hive:0 "$subclass_official_economy_councilor$"
+ subclass_official_economy_councilor_hive_desc:1 "$subclass_official_economy_councilor_desc$"
+ subclass_official_economy_councilor_machine:0 "$subclass_official_economy_councilor$"
+ subclass_official_economy_councilor_machine_desc:1 "$subclass_official_economy_councilor_desc$"
+
+ ## Scientist
+ subclass_scientist_explorer:0 "Explorer"
+ subclass_scientist_explorer_desc:1 "To explore unknown worlds, catalog new species, and encounter new civilizations: this leader is the embodiment of such ideals."
+ subclass_scientist_explorer_hive:0 "Explorer"
+ subclass_scientist_explorer_hive_desc:1 "To explore unknown worlds, catalog new species, and encounter new civilizations: the guiding impulse of this intrepid drone."
+ subclass_scientist_explorer_machine:0 "Explorer"
+ subclass_scientist_explorer_machine_desc:1 "To explore unknown worlds, catalog new species, and encounter new civilizations: the guiding programming of this intrepid unit."
+
+ subclass_scientist_scholar: "Scholar"
+ subclass_scientist_scholar_desc: "The galaxy is full of mysteries, and Scholars exist to solve them. These adventurous researchers excel in the study of dig sites, spacial anomalies and other mysteries."
+ subclass_scientist_scholar_hive: "$subclass_scientist_scholar$"
+ subclass_scientist_scholar_hive_desc: "$subclass_scientist_scholar_desc$"
+ subclass_scientist_scholar_machine: "$subclass_scientist_scholar$"
+ subclass_scientist_scholar_machine_desc: "$subclass_scientist_scholar_desc$"
+
+ subclass_scientist_governor:0 "Analyst"
+ subclass_scientist_governor_desc:0 "Being at the forefront of science, conducting experiments, and researching new technologies to better the empire is the main concern of any determined Analyst."
+ subclass_scientist_governor_hive:0 "Analyst"
+ subclass_scientist_governor_hive_desc:2 "Being at the forefront of science, conducting experiments, and researching new technologies to better the hive are the main concerns of an analyst drone."
+ subclass_scientist_governor_machine:0 "Analyst"
+ subclass_scientist_governor_machine_desc:1 "Being at the forefront of science, conducting experiments, and researching new technologies to improve efficiency are the main concerns for any determined analyst unit."
+
+ subclass_scientist_councilor: "Statistician"
+ subclass_scientist_councilor_desc: "Statisticians are the driving force behind the management of research teams and projects. Focusing on new technologies, these individuals pursue knowledge relentlessly."
+ subclass_scientist_councilor_hive: "Statistician"
+ subclass_scientist_councilor_hive_desc: "Statisticians are the main driving force behind the management of research teams and projects. These drones pursue knowledge relentlessly."
+ subclass_scientist_councilor_machine: "Statistician"
+ subclass_scientist_councilor_machine_desc: "Statisticians are the main driving force behind the management of research teams and projects. These units pursue knowledge relentlessly."
+
+
+ ### TRAITS
+
+ leader_trait_ignore_leader_cap_tt: "$t$Does not count towards Leader Capacity"
+
+ leader_trait_scout:0 "Scout"
+ leader_trait_scout_desc:2 "This leader is an expert at reconnaissance, having the technical skill to slip past even the most dangerous entities."
+ leader_trait_scout_hive:0 "Scout"
+ leader_trait_scout_hive_desc:1 "This drone is specialized for reconnaissance, ensuring we get the most out of long-range starship sensors."
+ leader_trait_scout_machine:0 "Scout"
+ leader_trait_scout_machine_desc:1 "This unit is specialized for reconnaissance, ensuring we get the most out of long-range starship sensors."
+
+ leader_trait_restore_point:1 "Escape Pod"
+ leader_trait_restore_point_desc:1 "This overtly cautious leader modified [Root.GetHisHer] vessel to command the ship from an escape pod, allowing [Root.GetHimHer] to abandon ship at the first sign of danger."
+ leader_trait_restore_point_effect: "Leader never dies when the fleet is destroyed."
+
+ leader_trait_academia_recruiter:1 "Academic Recruiter"
+ leader_trait_academia_recruiter_desc:1 "At our academic institutions, recruiters are extolling the virtues of military service to our best and brightest minds. The practical experience gained on the battlefield can't be taught in a classroom, and should lead to advances in engineering and technology."
+ leader_trait_academia_recruiter_effect:1 "Naval Capacity from Researcher Jobs: §G+1§!"
+
+ leader_trait_selfcare_expert: "Vat-Grown Clone"
+ leader_trait_selfcare_expert_desc: "A vat-grown clone with the same skills, personality and demeanor will replace this leader after death."
+ leader_trait_selfcare_expert_machine: "Backup Copy"
+ leader_trait_selfcare_expert_machine_desc: "A robotic copy with the same skills, personality and demeanor will replace this leader after [Root.GetHeShe] stops functioning."
+ leader_trait_selfcare_expert_hive: "Drone Clone"
+ leader_trait_selfcare_expert_hive_desc: "A vat-grown drone with the same skills, personality and demeanor will replace this leader after death."
+ leader_trait_selfcare_expert_effect: "Upon death: generate a copy of the leader with the same skills, level, and half the current age."
+
+ leader_trait_midas_touch:0 "Vibrant Storyteller"
+ leader_trait_midas_touch_desc:1 "Often off-world, this leader has borne witness to truly amazing, far-flung places. [Root.GetHisHer] exploits inspire the populace, providing valuable insights into rare resources and anomalous occurrences."
+ leader_trait_midas_touch_effect:4 "$t$On Researching any Anomaly:\n$tt$All $scientist_plural_with_icon$ gain §G+300§! experience"
+
+ leader_trait_speed_chaser: "Speed Chaser"
+ leader_trait_speed_chaser_desc: "Burn bright, die young, and leave a blazing trail for others to follow."
+
+ leader_trait_destructive:2 "Controversial Reputation"
+ leader_trait_destructive_desc:1 "Many would be happy to se this leader go. Their mere presence hurts our cohesion."
+
+ leader_trait_collective_wisdom:1 "Detail-Oriented"
+ leader_trait_collective_wisdom_desc:2 "A meticulous academic who works slowly, but produces incredible amounts of research."
+ leader_trait_collective_wisdom_effect:1 "$TABBED_NEW_LINE$Grants $mod_leader_scientists_society_research_produces_add$ while Excavating Archaeology Sites"
+ leader_trait_collective_wisdom_ancrel_effect: "$TABBED_NEW_LINE$Grants $mod_leader_scientists_society_research_produces_add$ and £minor_artifacts£ $MINOR_ARTIFACTS$ while Excavating Archaeology Sites"
+ leader_trait_collective_wisdom_2:0 "$leader_trait_collective_wisdom$ II"
+ leader_trait_collective_wisdom_2_desc:0 "$leader_trait_collective_wisdom_desc$"
+ leader_trait_collective_wisdom_2_effect:1 "+20 £society£ §Y$society_research$§! while excavating a site."
+
+ leader_trait_observant:1 "Observer"
+ leader_trait_observant_desc:2 "A set of self-built, powerful scanners allow this leader to see further and plan the journey ahead."
+ leader_trait_observant_hive:1 "Observer"
+ leader_trait_observant_hive_desc:2 "$leader_trait_observant_desc$"
+ leader_trait_observant_machine:0 "Deep Scan"
+ leader_trait_observant_machine_desc:2 "$leader_trait_observant_desc$"
+
+ leader_trait_observant_2_hive:0 "$leader_trait_observant_hive$ II"
+ leader_trait_observant_2_hive_desc:0 "$leader_trait_observant_hive_desc$"
+ leader_trait_observant_2_machine:0 "$leader_trait_observant_machine$ II"
+ leader_trait_observant_2_machine_desc:0 "$leader_trait_observant_machine_desc$"
+
+ leader_trait_resolution_category_commerce_focus: "Focus: Galactic Commerce"
+ leader_trait_resolution_category_commerce_focus_desc: "This delegate takes a special interest in all matters related to Galactic Commerce."
+
+ leader_trait_resolution_category_industry_focus: "Focus: Industrial Development"
+ leader_trait_resolution_category_industry_focus_desc: "This delegate takes a special interest in all matters related to Industrial Development."
+
+ leader_trait_resolution_category_politics_traditions_focus: "Focus: Politics Traditions"
+ leader_trait_resolution_category_politics_traditions_focus_desc: "This delegate takes a special interest in all matters related to Politics Traditions."
+ leader_trait_resolution_category_politics_traditions_focus_tt: "$GALCOM_EFFECTS_TXT$$TABBED_NEW_LINE$Voting Strength on §YPolitics Traditions§! Resolutions:"
+ leader_trait_resolution_category_politics_traditions_focus_1_tt: "$leader_trait_resolution_category_politics_traditions_focus_tt$ §G+5%§!"
+ leader_trait_resolution_category_politics_traditions_focus_2_tt: "$leader_trait_resolution_category_politics_traditions_focus_tt$ §G+15%§!"
+ leader_trait_resolution_category_politics_traditions_focus_3_tt: "$leader_trait_resolution_category_politics_traditions_focus_tt$ §G+25%§!"
+
+ leader_trait_resolution_category_greatergood_focus: "Focus: The Greater Good"
+ leader_trait_resolution_category_greatergood_focus_desc: "This delegate takes a special interest in all matters related to The Greater Good."
+
+ leader_trait_resolution_category_galacticreforms_focus: "Focus: Galactic Reforms"
+ leader_trait_resolution_category_galacticreforms_focus_desc: "This delegate takes a special interest in all matters related to Galactic Reforms."
+
+ leader_trait_resolution_category_ecology_focus: "Focus: Ecological Protection"
+ leader_trait_resolution_category_ecology_focus_desc: "This delegate takes a special interest in all matters related to Ecological Protection."
+
+ leader_trait_resolution_category_galacticstudies_focus: "Focus: Unchained Knowledge"
+ leader_trait_resolution_category_galacticstudies_focus_desc: "This delegate takes a special interest in all matters related to Unchained Knowledge."
+
+ leader_trait_resolution_category_divinity_focus: "Focus: Divinity of Life"
+ leader_trait_resolution_category_divinity_focus_desc: "This delegate takes a special interest in all matters related to Divinity of Life."
+
+ leader_trait_resolution_category_mutualdefense_focus: "Focus: Mutual Defense"
+ leader_trait_resolution_category_mutualdefense_focus_desc: "This delegate takes a special interest in all matters related to Mutual Defense."
+
+ leader_trait_resolution_category_rulesofwar_focus: "Focus: Rules of War"
+ leader_trait_resolution_category_rulesofwar_focus_desc: "This delegate takes a special interest in all matters related to Rules of War."
+
+ leader_trait_resolution_category_defenseprivatization_focus: "Focus: Defense Privatization"
+ leader_trait_resolution_category_defenseprivatization_focus_desc: "This delegate takes a special interest in all matters related to Defense Privatization."
+
+ leader_trait_resolution_category_intergalacticdirective_focus: "Focus: Intergalactic Directives"
+ leader_trait_resolution_category_intergalacticdirective_focus_desc: "This delegate takes a special interest in all matters related to Intergalactic Directives."
+
+ leader_trait_resolution_category_bureaucraticsurveillance_focus: "Focus: Bureaucratic Surveillance"
+ leader_trait_resolution_category_bureaucraticsurveillance_focus_desc: "This delegate takes a special interest in all matters related to Bureaucratic Surveillance."
+
+ leader_trait_resolution_category_pre_ftl_stances_focus: "Focus: Pre-FTL Stance"
+ leader_trait_resolution_category_pre_ftl_stances_focus_desc: "This delegate takes a special interest in all matters related to Pre-FTL Stance."
+
+ leader_trait_resolution_category_sanctions_focus: "Focus: Sanctions"
+ leader_trait_resolution_category_sanctions_focus_desc:  "This delegate takes a special interest in all matters related to Galactic Sanctions."
+ leader_trait_resolution_category_sanctions_focus_tt: "$GALCOM_EFFECTS_TXT$$TABBED_NEW_LINE$Voting Strength on §YGalactic Sanctions§! Resolutions:"
+ leader_trait_resolution_category_sanctions_focus_1_tt: "$leader_trait_resolution_category_sanctions_focus_tt$ §G+5%§!"
+ leader_trait_resolution_category_sanctions_focus_2_tt: "$leader_trait_resolution_category_sanctions_focus_tt$ §G+15%§!"
+ leader_trait_resolution_category_sanctions_focus_3_tt: "$leader_trait_resolution_category_sanctions_focus_tt$ §G+25%§!"
+
+ leader_trait_supporting_voter: "Mutual Support"
+ leader_trait_supporting_voter_desc: "This leader is always eager to congratulate others for their success."
+ leader_trait_supporting_voter_tt: "£diplo_weight£ §Y[GetGalCommunityOrGalImperium]§! §EEffects§!:$TABBED_NEW_LINE$Support for a passed Resolution grants 1 §YFavor§! and 5 §YTrust§! with the proposing empire"
+
+ MESSAGE_SUPPORTING_VOTER: "Favor Gained"
+ MESSAGE_FAVOR_SUPPORTING_VOTER_DESC: "Thanks to the skill of $LEADER$, we have managed to gain a Favor and 5 Trust with the $WHO|Y$."
+
+ leader_trait_diplo_weight: "Gravitas"
+ leader_trait_diplo_weight_desc: "There's a certain... something in the way this leader behaves that commands respect. When this delegate speaks, everyone stops to listen."
+
+ leader_trait_federal_negotiator: "Camaraderie"
+ leader_trait_federal_negotiator_desc: "This leader firmly believes in the uniting power of Federations. [Root.GetHisHer] dedication is an inspiration for us all."
+
+ leader_trait_federal_greeter: "Greeter"
+ leader_trait_federal_greeter_desc: "This delegate is quick to greet new Federation members and knows how to make them feel part of the group."
+
+ leader_trait_federal_sweet_talker: "Peacemaker"
+ leader_trait_federal_sweet_talker_desc: "We may have different beliefs, but we share the same goal, the same Federation, the same dreams. Conflict only makes us weak."
+
+ leader_trait_federal_joint_navy: "Joint Exercise"
+ leader_trait_federal_joint_navy_desc: "Unity is strength. Sometimes, that strength is inside us. Sometimes, it just means having a bigger fleet."
+
+ leader_trait_ambassador_ear_to_the_ground: "All-knowing"
+ leader_trait_ambassador_ear_to_the_ground_desc: "This leader has eyes everywhere. Plus [root.species.GetEarNamePlural]. And other assorted sensory organs."
+ leader_trait_ambassador_ear_to_the_ground_machine: "$leader_trait_ambassador_ear_to_the_ground$"
+ leader_trait_ambassador_ear_to_the_ground_machine_desc: "This leader has cameras everywhere. Plus microphones. And other assorted sensory devices."
+
+ leader_trait_ambassador_whisper_networks: "Blabbermouth"
+ leader_trait_ambassador_whisper_networks_desc: "Feigning a penchant for gossip, this official is a master at forming contacts with loose-lipped leaders in high places."
+
+ leader_trait_ambassador_bully: "Spiteful"
+ leader_trait_ambassador_bully_desc: "Spite can be a powerful motivator. This leader has mastered the art of turning bitter complaints into calls to action."
+
+ leader_trait_ambassador_favor_maker: "Opportunist"
+ leader_trait_ambassador_favor_maker_desc: "This sly ambassador is quick to turn every perceived slight into blackmail material."
+ leader_trait_ambassador_favor_maker_effect: "$EMPIRE_EFFECTS_TXT$$TABBED_NEW_LINE$Envoys §YImproving Relations§! have a §G0.25%§! chance each month of acquiring a §YFavor§!"
+ leader_trait_ambassador_favor_maker_2_effect: "$EMPIRE_EFFECTS_TXT$$TABBED_NEW_LINE$Envoys §YImproving Relations§! have a §G0.50%§! chance each month of acquiring a §YFavor§!"
+ leader_trait_ambassador_favor_maker_3_effect: "$EMPIRE_EFFECTS_TXT$$TABBED_NEW_LINE$Envoys §YImproving Relations§! have a §G1%§! chance each month of acquiring a §YFavor§!"
+
+ leader_trait_ambassador_pact_keeper: "Charmer"
+ leader_trait_ambassador_pact_keeper_desc: "Graceful manners help this leader gain favorful conditions when negotiating diplomatic agreements."
+
+ leader_trait_ambassador_commercial_pact_focus: "Entrepreneur"
+ leader_trait_ambassador_commercial_pact_focus_desc: "The market is not a warzone: it's a party. By working together, we can all make a profit."
+
+ leader_trait_ambassador_research_pact_focus: "Research Exchange"
+ leader_trait_ambassador_research_pact_focus_desc: "Sharing knowledge. Sharing viewpoints. Sharing research. Building the future, together."
+
+ leader_trait_ambassador_extra_envoys: "Entourage"
+ leader_trait_ambassador_extra_envoys_desc: "This leader likes to surround [root.GetHerselfHimself] with specially trained assistants."
+
+ leader_trait_explorer_cloaking_focus: "Confidential Research"
+ leader_trait_explorer_cloaking_focus_desc: "Some discoveries are best kept hidden."
+ leader_trait_explorer_cloaking_focus_3_tt: "$t$Maximum $SHIP_SHIELD_REDUCTION_CLOAKING$: §Y50%§!"
+
+ leader_trait_academic_minor_artifacts_expert: "Antiquarian"
+ leader_trait_academic_minor_artifacts_expert_desc: "Where other academics see trash, this scholar sees treasures. This meticulous leader never leaves an archaeological site before examining every scrap."
+ leader_trait_academic_minor_artifacts_expert_tt_intro:  "Chance to discover $r_minor_artifacts$ Deposit upon excavating an Archaeology Site:"
+ leader_trait_academic_minor_artifacts_expert_tt: "$leader_trait_academic_minor_artifacts_expert_tt_intro$ §G+$@minor_artifacts_expert_amt_1|0$%§!"
+ leader_trait_academic_minor_artifacts_expert_2_tt: "$leader_trait_academic_minor_artifacts_expert_tt_intro$ §G+$@minor_artifacts_expert_amt_2|0$%§!"
+ leader_trait_academic_minor_artifacts_expert_3_tt: "$leader_trait_academic_minor_artifacts_expert_tt_intro$ §G+$@minor_artifacts_expert_amt_3|0$%§!"
+
+ leader_trait_academic_dig_site_expert: "Excavator"
+ leader_trait_academic_dig_site_expert_desc: "This leader is no stranger to physical labor and finds field work particularly enjoyable."
+
+ leader_trait_academic_astral_rift_expert: "Riftwalker"
+ leader_trait_academic_astral_rift_expert_desc: "The Rift beckons. The scholar answers the call."

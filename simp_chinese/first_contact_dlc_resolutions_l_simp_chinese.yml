@@ -1,65 +1,50 @@
 ﻿l_simp_chinese:
-# Pre-FTL Stances
-# Resolutions 
- resolution_category_pre_ftl_stances:1 "对前超光速文明的态度"
- resolution_pre_ftl_stances_repeal_1:0 "§R废除$resolution_pre_ftl_stances_equal_standing$§!"
- resolution_pre_ftl_stances_repeal_1_desc:1 "对那些几乎没有能力离开自己家园的“文明”平等相待简直荒谬至极。[global_event_country.GetGalCommunityOrGalImperium]的帝国应当有权利按各自认为合适的方式对待他们境内的低等文明。"
- resolution_pre_ftl_stances_repeal_1_effect_success:1 "废除§Y$resolution_pre_ftl_stances_equal_standing$§!议案。"
-
- resolution_pre_ftl_stances_repeal_2:0 "§R废除$resolution_pre_ftl_stances_non_interference$§!"
- resolution_pre_ftl_stances_repeal_2_desc:1 "仅仅因为有一些蛮子蹲在上头，就禁止[global_event_country.GetGalCommunityOrGalImperium]的帝国充分利用合法属于他们的资源就是在亵渎我们智慧、侵害发展的权利。"
- resolution_pre_ftl_stances_repeal_2_effect_success:1 "废除§Y$resolution_pre_ftl_stances_non_interference$§!议案。"
-
- resolution_pre_ftl_stances_repeal_3:1 "§R废除$resolution_pre_ftl_stances_exploitation$§!"
- resolution_pre_ftl_stances_repeal_3_desc:1 "只因其科技水平就可以将某个文明视作一种有待开发的资源简直罪不可赦。[global_event_country.GetGalCommunityOrGalImperium]的帝国应当保障那些将会追随我们步入星空的文明享有和其他物种一样的权利。"
- resolution_pre_ftl_stances_repeal_3_effect_success:1 "废除§Y$resolution_pre_ftl_stances_exploitation$§!议案。"
-
- resolution_pre_ftl_stances_equal_standing:1 "平等相待法案"
- resolution_pre_ftl_stances_equal_standing_desc:1 "每个前超光速文明都有可能获得航天技术，并加入[global_event_country.GetGalCommunityOrGalImperium]。因此，我们必须尊重每一位潜在的成员。"
- resolution_pre_ftl_stances_equal_standing_tooltip:1 "§Y$interference_not_allowed$§!和§Y$interference_aggressive$§!政策被§R禁用§!。\n提升与前超光速文明的§Y$ACTION_OPEN_TECHNOLOGICAL_ENLIGHTENMENT_TITLE$§!外交协议的有效性。\n§Y前超光速文明§!通过§Y$ACTION_OPEN_TECHNOLOGICAL_ENLIGHTENMENT_TITLE$§!成为太空文明将会给予§G+100§!£loyalty£§Y忠诚度§!。\n与前超光速文明签订的§Y商贸协定§!效率提升。"
-
- resolution_pre_ftl_stances_non_interference:1 "不予干涉法案"
- resolution_pre_ftl_stances_non_interference_desc:1 "前超光速文明应当享有不受外界干涉而自主发展的机会。"
- resolution_pre_ftl_stances_non_interference_tooltip:1 "§Y$interference_active$§!和§Y$interference_aggressive$§!政策被§R禁用§!。\n解锁§Y$interference_not_allowed$§!政策，无视思潮和国民理念前提。\n所有与前超光速文明签订的§Y外交协议§!都会视为§R违反星系法§!。\n以前超光速文明为目标的§Y谍报行动§!一旦失败将被视为§R违反星系法§!。"
-
- resolution_pre_ftl_stances_non_interference_modifier:0 "观测前太空文明获得的§Y洞见§!进展增加§G+25%§!。"
-
- resolution_pre_ftl_stances_exploitation:1 "开发利用法案"
- resolution_pre_ftl_stances_exploitation_desc:1 "前超光速文明受星系的掌控者管辖；每个帝国应当享有自由处置自身财产的权利。"
- resolution_pre_ftl_stances_exploitation_tooltip:1 "观测站在§Y观测§!前超光速文明时产生少量的£physics£ £engineering£§H研究点数§!。§Y$resolution_galacticstudies_advanced_xenostudies$§!议案的通过将会提升获得的£physics£ £engineering£§H研究点数§!。\n\n§R禁用§!§Y$interference_not_allowed$§!政策。\n与前超光速文明签订§Y$ACTION_OPEN_TECHNOLOGICAL_ENLIGHTENMENT_TITLE$§!外交协议将被视为§R违反星系法§!。\n实施过§Y$operation_plant_advanced_knowledge$§!谍报行动被证实后将会被视为§R违反星系法§!。"
-
-# Events
- preftl.10000.desc:0 "[global_event_country.GetGalCommunityOrGalImperium]已经通过了§Y$resolution_pre_ftl_stances_equal_standing$§!议案，禁止任何帝国继续施行§Y$interference_not_allowed$§!或§Y$interference_aggressive$§!政策。\n\n我们帝国当前的政策违反了这项议案。我们是否应该变更政策与大环境保持一致？"
- preftl.10050.name:0 "违反$resolution_pre_ftl_stances_equal_standing$"
- preftl.10050.desc:0 "[global_event_country.GetGalCommunityOrGalImperium]的官员们裁定，无论我们的用意为何，我们与§H[pre_ftl_country.GetName]§!的协议已经违反了§Y$resolution_pre_ftl_stances_equal_standing$§!。\n\n$preftl.10050.outro$"
- preftl.10050.outro:0 "[Root.GetName]在接下来的十年内将会被视为§R违反星系法§!。此外，我们还应缴纳巨额罚金。"
-
- preftl.10055.name:0 "$preftl.10050.name$"
- preftl.10055.desc:0 "由于与§H[pre_ftl_country.GetName]§!的协议违反了§Y$resolution_pre_ftl_stances_equal_standing$§!，我们在此后向[global_event_country.GetGalCommunityOrGalImperium]的官员们递交了必要的文书。希望通过承认我们的行动他们可能网开一面。\n\n$preftl.10055.outro$"
- preftl.10055.outro:0 "[Root.GetName]在接下来的五年内将会被视为§R违反星系法§!。此外，我们还应缴纳巨额罚金。"
-
- preftl.10100.desc:0 "[global_event_country.GetGalCommunityOrGalImperium]已经通过了§Y$resolution_pre_ftl_stances_non_interference$§!议案，禁止任何帝国继续施行除§Y$interference_not_allowed$§!以外的§Y$policy_interference$§!政策。\n\n我们帝国当前的政策违反了这项议案。我们是否应该变更政策与大环境保持一致？"
- preftl.10150.name:0 "违反$resolution_pre_ftl_stances_non_interference$"
- preftl.10150.desc:0 "[global_event_country.GetGalCommunityOrGalImperium]的官员收到消息称我们干涉§H[pre_ftl_country.GetName]§!自然发展。他们告知我们这毫无疑问违反了§Y$resolution_pre_ftl_stances_non_interference$§!，无论我们的本意如何。\n\n$preftl.10050.outro$"
-
- preftl.10155.name:0 "$preftl.10150.name$"
- preftl.10155.desc:0 "我们在§H[pre_ftl_country.GetName]§!违反§Y$resolution_pre_ftl_stances_non_interference$§!一事发生后，已经向[global_event_country.GetGalCommunityOrGalImperium]的官员递交了完整报告。希望这种坦白的行为能让检察官对我们有好感，他们或许会对我们的案子从宽处理。"
-
- preftl.10157.desc:0 "[global_event_country.GetGalCommunityOrGalImperium]已经获悉我们对§H[pre_ftl_country.GetAdj]§!母星的入侵。他们正式告知我们这一行为违反了§Y$resolution_pre_ftl_stances_non_interference$§!。\n\n$preftl.10050.outro$"
- preftl.10161.desc:0 "[global_event_country.GetGalCommunityOrGalImperium]已经获悉我们对§H[pre_ftl_country.GetAdj]§!母星的轰炸。他们正式告知我们这一行为违反了§Y$resolution_pre_ftl_stances_non_interference$§!。\n\n$preftl.10050.outro$"
-
- preftl.10200.desc:1 "[global_event_country.GetGalCommunityOrGalImperium]通过了§Y$resolution_pre_ftl_stances_exploitation$§!议案，禁止任何帝国继续施行§Y$interference_not_allowed$§!政策。\n\n我们帝国当前的政策违反了这项议案。我们是否应该变更政策与大环境保持一致？"
- preftl.10250.name:0 "违反$resolution_pre_ftl_stances_exploitation$"
- preftl.10250.desc:0 "[global_event_country.GetGalCommunityOrGalImperium]的官员收到消息称我们与§H[pre_ftl_country.GetName]§!共享科技数据。他们告知我们这毫无疑问违反了§Y$resolution_pre_ftl_stances_exploitation$§!，无论我们的本意如何。\n\n$preftl.10050.outro$"
-
- preftl.10255.name:0 "$preftl.10250.name$"
- preftl.10255.desc:0 "我们在§H[pre_ftl_country.GetName]§!违反§Y$resolution_pre_ftl_stances_exploitation$§!一事发生后，已经向[global_event_country.GetGalCommunityOrGalImperium]的官员递交了完整报告。希望这种坦白的行为能让检察官对我们有好感，他们或许会对我们的案子从宽处理。"
-
- pre_ftl_stances_fix_breach_not_allowed:1 "我们会将§Y$policy_interference$§!政策调整为§Y$interference_not_allowed$§!。"
- pre_ftl_stances_fix_breach_subtle:1 "我们会将§Y$policy_interference$§!政策调整为§Y$interference_subtle$§!。"
- pre_ftl_stances_fix_breach_active:1 "我们会将§Y$policy_interference$§!政策调整为§Y$interference_active$§!。"
- pre_ftl_stances_fix_breach_aggressive:1 "我们会将的§Y$policy_interference$§!政策调整为§Y$interference_aggressive$§!。"
-
- breach_resolution_pre_ftl_stances_equal_standing_tt:0 "§R这将会使我们违反$resolution_pre_ftl_stances_equal_standing$！§!"
- breach_resolution_pre_ftl_stances_non_interference_tt:0 "§R这将会使我们违反$resolution_pre_ftl_stances_non_interference$！§!"
- breach_resolution_pre_ftl_stances_exploitation_tt:0 "§R这将会使我们违反$resolution_pre_ftl_stances_exploitation$！§!"
+ #Pre-FTL Stances
+ #Resolutions
+ resolution_category_pre_ftl_stances: "对前超光速文明的态度"
+ resolution_pre_ftl_stances_repeal_1: "§R废除$resolution_pre_ftl_stances_equal_standing$§!"
+ resolution_pre_ftl_stances_repeal_1_desc: "对那些几乎没有能力离开自己家园的“文明”平等相待简直荒谬至极。[global_event_country.GetGalCommunityOrGalImperium]的帝国应当有权利按各自认为合适的方式对待他们境内的低等文明。"
+ resolution_pre_ftl_stances_repeal_1_effect_success: "废除§Y$resolution_pre_ftl_stances_equal_standing$§!议案。"
+ resolution_pre_ftl_stances_repeal_2: "§R废除$resolution_pre_ftl_stances_non_interference$§!"
+ resolution_pre_ftl_stances_repeal_2_desc: "仅仅因为有一些蛮子蹲在上头，就禁止[global_event_country.GetGalCommunityOrGalImperium]的帝国充分利用合法属于他们的资源就是在亵渎我们智慧、侵害发展的权利。"
+ resolution_pre_ftl_stances_repeal_2_effect_success: "废除§Y$resolution_pre_ftl_stances_non_interference$§!议案。"
+ resolution_pre_ftl_stances_repeal_3: "§R废除$resolution_pre_ftl_stances_exploitation$§!"
+ resolution_pre_ftl_stances_repeal_3_desc: "只因其科技水平就可以将某个文明视作一种有待开发的资源简直罪不可赦。[global_event_country.GetGalCommunityOrGalImperium]的帝国应当保障那些将会追随我们步入星空的文明享有和其他物种一样的权利。"
+ resolution_pre_ftl_stances_repeal_3_effect_success: "废除§Y$resolution_pre_ftl_stances_exploitation$§!议案。"
+ resolution_pre_ftl_stances_equal_standing: "平等相待法案"
+ resolution_pre_ftl_stances_equal_standing_desc: "每个前超光速文明都有可能获得航天技术，并加入[global_event_country.GetGalCommunityOrGalImperium]。因此，我们必须尊重每一位潜在的成员。"
+ resolution_pre_ftl_stances_equal_standing_tooltip: "§Y$interference_not_allowed$§!和§Y$interference_aggressive$§!政策被§R禁用§!。\n提升与前超光速文明的§Y$ACTION_OPEN_TECHNOLOGICAL_ENLIGHTENMENT_TITLE$§!外交协议的有效性。\n§Y前超光速文明§!通过§Y$ACTION_OPEN_TECHNOLOGICAL_ENLIGHTENMENT_TITLE$§!成为太空文明将会给予§G+100§!£loyalty£§Y忠诚度§!。\n与前超光速文明签订的§Y商贸协定§!效率提升。"
+ resolution_pre_ftl_stances_non_interference: "不予干涉法案"
+ resolution_pre_ftl_stances_non_interference_desc: "前超光速文明应当享有不受外界干涉而自主发展的机会。"
+ resolution_pre_ftl_stances_non_interference_tooltip: "§Y$interference_active$§!和§Y$interference_aggressive$§!政策被§R禁用§!。\n解锁§Y$interference_not_allowed$§!政策，无视思潮和国民理念前提。\n所有与前超光速文明签订的§Y外交协议§!都会视为§R违反星系法§!。\n以前超光速文明为目标的§Y谍报行动§!一旦失败将被视为§R违反星系法§!。"
+ resolution_pre_ftl_stances_non_interference_modifier: "观测前太空文明获得的§Y洞见§!进展增加§G+25%§!。"
+ resolution_pre_ftl_stances_exploitation: "开发利用法案"
+ resolution_pre_ftl_stances_exploitation_desc: "前超光速文明受星系的掌控者管辖；每个帝国应当享有自由处置自身财产的权利。"
+ resolution_pre_ftl_stances_exploitation_tooltip: "观测站在§Y观测§!前超光速文明时产生少量的£physics£ £engineering£§H研究点数§!。§Y$resolution_galacticstudies_advanced_xenostudies$§!议案的通过将会提升获得的£physics£ £engineering£§H研究点数§!。\n\n§R禁用§!§Y$interference_not_allowed$§!政策。\n与前超光速文明签订§Y$ACTION_OPEN_TECHNOLOGICAL_ENLIGHTENMENT_TITLE$§!外交协议将被视为§R违反星系法§!。\n实施过§Y$operation_plant_advanced_knowledge$§!谍报行动被证实后将会被视为§R违反星系法§!。"
+ #Events
+ preftl.10000.desc: "[global_event_country.GetGalCommunityOrGalImperium]已经通过了§Y$resolution_pre_ftl_stances_equal_standing$§!议案，禁止任何帝国继续施行§Y$interference_not_allowed$§!或§Y$interference_aggressive$§!政策。\n\n我们帝国当前的政策违反了这项议案。我们是否应该变更政策与大环境保持一致？"
+ preftl.10050.name: "违反$resolution_pre_ftl_stances_equal_standing$"
+ preftl.10050.desc: "[global_event_country.GetGalCommunityOrGalImperium]的官员们裁定，无论我们的用意为何，我们与§H[pre_ftl_country.GetName]§!的协议已经违反了§Y$resolution_pre_ftl_stances_equal_standing$§!。\n\n$preftl.10050.outro$"
+ preftl.10050.outro: "[Root.GetName]在接下来的十年内将会被视为§R违反星系法§!。此外，我们还应缴纳巨额罚金。"
+ preftl.10055.name: "$preftl.10050.name$"
+ preftl.10055.desc: "由于与§H[pre_ftl_country.GetName]§!的协议违反了§Y$resolution_pre_ftl_stances_equal_standing$§!，我们在此后向[global_event_country.GetGalCommunityOrGalImperium]的官员们递交了必要的文书。希望通过承认我们的行动他们可能网开一面。\n\n$preftl.10055.outro$"
+ preftl.10055.outro: "[Root.GetName]在接下来的五年内将会被视为§R违反星系法§!。此外，我们还应缴纳巨额罚金。"
+ preftl.10100.desc: "[global_event_country.GetGalCommunityOrGalImperium]已经通过了§Y$resolution_pre_ftl_stances_non_interference$§!议案，禁止任何帝国继续施行除§Y$interference_not_allowed$§!以外的§Y$policy_interference$§!政策。\n\n我们帝国当前的政策违反了这项议案。我们是否应该变更政策与大环境保持一致？"
+ preftl.10150.name: "违反$resolution_pre_ftl_stances_non_interference$"
+ preftl.10150.desc: "[global_event_country.GetGalCommunityOrGalImperium]的官员收到消息称我们干涉§H[pre_ftl_country.GetName]§!自然发展。他们告知我们这毫无疑问违反了§Y$resolution_pre_ftl_stances_non_interference$§!，无论我们的本意如何。\n\n$preftl.10050.outro$"
+ preftl.10155.name: "$preftl.10150.name$"
+ preftl.10155.desc: "我们在§H[pre_ftl_country.GetName]§!违反§Y$resolution_pre_ftl_stances_non_interference$§!一事发生后，已经向[global_event_country.GetGalCommunityOrGalImperium]的官员递交了完整报告。希望这种坦白的行为能让检察官对我们有好感，他们或许会对我们的案子从宽处理。"
+ preftl.10157.desc: "[global_event_country.GetGalCommunityOrGalImperium]已经获悉我们对§H[pre_ftl_country.GetAdj]§!母星的入侵。他们正式告知我们这一行为违反了§Y$resolution_pre_ftl_stances_non_interference$§!。\n\n$preftl.10050.outro$"
+ preftl.10161.desc: "[global_event_country.GetGalCommunityOrGalImperium]已经获悉我们对§H[pre_ftl_country.GetAdj]§!母星的轰炸。他们正式告知我们这一行为违反了§Y$resolution_pre_ftl_stances_non_interference$§!。\n\n$preftl.10050.outro$"
+ preftl.10200.desc: "[global_event_country.GetGalCommunityOrGalImperium]通过了§Y$resolution_pre_ftl_stances_exploitation$§!议案，禁止任何帝国继续施行§Y$interference_not_allowed$§!政策。\n\n我们帝国当前的政策违反了这项议案。我们是否应该变更政策与大环境保持一致？"
+ preftl.10250.name: "违反$resolution_pre_ftl_stances_exploitation$"
+ preftl.10250.desc: "[global_event_country.GetGalCommunityOrGalImperium]的官员收到消息称我们与§H[pre_ftl_country.GetName]§!共享科技数据。他们告知我们这毫无疑问违反了§Y$resolution_pre_ftl_stances_exploitation$§!，无论我们的本意如何。\n\n$preftl.10050.outro$"
+ preftl.10255.name: "$preftl.10250.name$"
+ preftl.10255.desc: "我们在§H[pre_ftl_country.GetName]§!违反§Y$resolution_pre_ftl_stances_exploitation$§!一事发生后，已经向[global_event_country.GetGalCommunityOrGalImperium]的官员递交了完整报告。希望这种坦白的行为能让检察官对我们有好感，他们或许会对我们的案子从宽处理。"
+ pre_ftl_stances_fix_breach_not_allowed: "我们会将§Y$policy_interference$§!政策调整为§Y$interference_not_allowed$§!。"
+ pre_ftl_stances_fix_breach_subtle: "我们会将§Y$policy_interference$§!政策调整为§Y$interference_subtle$§!。"
+ pre_ftl_stances_fix_breach_active: "我们会将§Y$policy_interference$§!政策调整为§Y$interference_active$§!。"
+ pre_ftl_stances_fix_breach_aggressive: "我们会将的§Y$policy_interference$§!政策调整为§Y$interference_aggressive$§!。"
+ breach_resolution_pre_ftl_stances_equal_standing_tt: "§R这将会使我们违反$resolution_pre_ftl_stances_equal_standing$！§!"
+ breach_resolution_pre_ftl_stances_non_interference_tt: "§R这将会使我们违反$resolution_pre_ftl_stances_non_interference$！§!"
+ breach_resolution_pre_ftl_stances_exploitation_tt: "§R这将会使我们违反$resolution_pre_ftl_stances_exploitation$！§!"

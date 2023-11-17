@@ -35,6 +35,7 @@
  CLICK_TO_OPEN_SITUATION_LOG:0 "§GClick to open the Situation Log§!"
  SITUATION_STAGE_NO_EFFECTS:0 "This Stage has no effects."
  SITUATION_TARGET_TOOLTIP:0 "This Situation is focused around the $TARGET_TYPE$ $TARGET|Y$."
+ SITUATION_TARGET_TOOLTIP_SPECIFY_SYSTEM: "This Situation is focused around the $TARGET|Y$ in $SYSTEM|Y$."
  SITUATION_TARGET_TOOLTIP_NO_TARGET:0 "The effects of this Situation are felt empire-wide."
  SITUATION_START_HEADER:0 "Start Value"
  SITUATION_START_TOOLTIP:0 "The Situation began at $VALUE|Y0$ progress."
@@ -670,6 +671,8 @@
  leviathan_celebration_do_nothing_effect:0 "The [Owner.GetParadeStudy] will happen when [Target.GetName] organizes it."
  leviathan_celebration_encourage:0 "Encourage the Celebration"
  leviathan_celebration_discourage:0 "Discourage the Celebration"
+ approach_reorganize: "Reorganize"
+ approach_reorganize_effect: "Pause the situation and unlock a special §YPlanetary Decision§! to move the [Owner.GetParadeStudy] there."
  leviathan_celebration_encourage_effect:0 "By encouraging the celebration of this grand feat, we are sure to have more opportunities to make this an event to remember."
  leviathan_celebration_discourage_effect:1 "There is no value in a frivolous [Owner.GetParadeStudy]. Our resources are better placed elsewhere."
  leviathan_celebration_voidspawn_effect:0 "This [Owner.GetParadeStudy] is on hold until the [Owner.GetWaterCoolantLower] contamination can cleaned up."
@@ -701,6 +704,8 @@
  approach_cure_it:1 "Cure the Star"
  approach_cure_it_effect:0 "We now have a cure. We can only hope that it's not too late."
 
+ decision_reorganize_leviathan_parade: "Relocate the Parade"
+ decision_reorganize_leviathan_parade_desc: "Not every world can host something as grand as the [Owner.GetParadeStudy]. After further consideration, we decided [From.GetName] would be a better suited location."
  #Events
  situation.1000.name:0 "[This.GetLeviathanTargetName]"
  situation.1000.desc.small:0 "The day has arrived. Our [Owner.GetSensoryWorkers] were in place and ready to give us a thorough exploration of the §Y[This.GetTrophyName]§!. As the study, began a small portion of our consciousness focused on §Y[Target.GetName]§! to absorb the study of the anomalous item. However, the revelations were not as interesting as we had hoped as we dragged the remains to the [Target.GetPlanetHabitat].\n\nShortly after the process began, we decided to move the study to the center of our cluster on [Target.GetName], where the specialized [Owner.GetSensoryWorkers] will continuously observe it. Hopefully something more will come of it."

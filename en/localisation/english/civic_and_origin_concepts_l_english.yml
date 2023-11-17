@@ -118,7 +118,7 @@
  concept_habitat_1_desc: "- §IUnlocks Megastructure:§! $habitat_central_complex$\n- $i_unlocks_orbital$ $major_orbital_plural$\n- $i_unlocks_orbital$ $minor_orbital_plural$\n\n§L$tech_habitat_1_desc$§!"
 
  concept_habitat_2: "$tech_habitat_2$"
- concept_habitat_2_desc: "§IUnlocks Planetary Decision§!: $decision_upgrade_habitat$\n\n§L$tech_habitat_2_desc$§!"
+ concept_habitat_2_desc:1 "§IUnlocks Building§!: $building_hab_major_capital$\n\n§L$tech_habitat_2_desc$§!"
 
 # Scion
 
@@ -163,7 +163,7 @@
 
 
  concept_massive_crater: "$d_lithoid_crater$"
- concept_massive_crater_desc: "- Effects of ['concept_lithoid_traits']: §G+50%§!\n- $MOD_PLANET_MAX_DISTRICTS_ADD$: §G+6§!\n- $mod_district_mining_max$: §G+6§!\n- $mod_district_farming_max$: §R-6§!\n- Habitability for non-Lithoid Pops: §R-50%§!\n- $MOD_POP_GROWTH_SPEED$: §G+25%§!\n\n§L$d_lithoid_crater_desc$§!"
+ concept_massive_crater_desc: "- Effects of ['concept_lithoid_traits']: §G+50%§!\n- $MOD_PLANET_MAX_DISTRICTS_ADD$: §G+6§!\n- $mod_district_mining_max$: §G+6§!\n- $mod_district_farming_max$: §R-6§!\n- $MOD_POP_GROWTH_SPEED$: §G+25%§!\n\n§L$d_lithoid_crater_desc$§!"
 
  concept_buried_lithoids: "$d_buried_lithoids$"
  concept_buried_lithoids_desc: "- Time to Clear: £time£ 360 §IDays§!\n- Cost to Clear: 1000 $i_minerals$\n- On Clearing: §G+1§! §ILithoid§! £pop£ §IPop§!\n\n§L$d_buried_lithoids_desc$§!"
@@ -247,10 +247,10 @@ concept_pc_molten_desc: "- §RUninhabitable§!\n\n§L$pc_molten_desc$§!"
  concept_slingshot_digsite_desc: "§L$slingshot_digsite_desc$§!"
 
  concept_quantum_catapult_restored_slingshot: "$quantum_catapult_restored_slingshot$"
- concept_quantum_catapult_restored_slingshot_desc: "- $MOD_FLEET_MIA_TIME_MULT$: §G-20%§!\n- Can be upgraded into an ['concept_quantum_catapult_improved_slingshot']\n\n§L$quantum_catapult_restored_slingshot_DESC$§!"
+ concept_quantum_catapult_restored_slingshot_desc: "- Range: §Y450§!\n- Spread: §R35§!\n- $MOD_FLEET_MIA_TIME_MULT$: §G-20%§!\n- Windup Speed: §G-30%§!\n- Can be upgraded into an ['concept_quantum_catapult_improved_slingshot']\n\n§L$tech_quantum_catapult_desc$§!"
 
  concept_quantum_catapult_improved_slingshot: "$quantum_catapult_improved_slingshot$"
- concept_quantum_catapult_improved_slingshot_desc: "- $MOD_FLEET_MIA_TIME_MULT$: §G-30%§!\n\n§L$quantum_catapult_improved_slingshot_DESC$§!"
+ concept_quantum_catapult_improved_slingshot_desc: "- Range: §Y750§!\n- Spread: §R25§!\n- $MOD_FLEET_MIA_TIME_MULT$: §G-30%§!\n- Windup Speed: §G-60%§!\n\n§L$tech_quantum_catapult_desc$§!"
 
  concept_quantic_ambush: "$quantic_ambush$"
  concept_quantic_ambush_desc: "- $MOD_SHIP_FIRE_RATE_MULT$: §G+33%§! for 120 days\n\n§LThe instant and unpredictable nature of Quantum Catapult travel allows us to hit foes when they least expect it.§!"
@@ -365,10 +365,10 @@ concept_pc_molten_desc: "- §RUninhabitable§!\n\n§L$pc_molten_desc$§!"
 # Under One Rule
 
  concept_leader_trait_legendary_leader: "$leader_trait_legendary_leader$"
- concept_leader_trait_legendary_leader_desc: "$THIS_LEADER_TXT$:$TABBED_NEW_LINE$- $MOD_LEADER_AGE$: §G+40§!$TABBED_NEW_LINE$- Initial Leader Level: §G+4§!$TABBED_NEW_LINE$- Allows selection of unique §ILuminary Starting Traits§!\n\n$EMPIRE_EFFECTS_TXT$$TABBED_NEW_LINE$- $MOD_PLANET_STABILITY_ADD$: §G+1.5§!$TABBED_NEW_LINE$- $mod_planet_jobs_unity_produces_mult$: §G+3%§!\n\n§GThe Luminary grows in power over time.§!\n\n§LThe Unification Wars were a brutal affair. In the end, the Luminary brought peace and purpose to us all. The Luminary is the living symbol of what our species can achieve, and an inspiration to all.§!"
+ concept_leader_trait_legendary_leader_desc: "$THIS_LEADER_TXT$:$TABBED_NEW_LINE$- $MOD_LEADER_LIFESPAN_ADD$: §G+40§!$TABBED_NEW_LINE$- Initial Leader Level: §G+3§!$TABBED_NEW_LINE$- Allows selection of unique §ILuminary Starting Traits§!\n\n$EMPIRE_EFFECTS_TXT$$TABBED_NEW_LINE$- $MOD_PLANET_STABILITY_ADD$: §G+1.5§!$TABBED_NEW_LINE$- $mod_planet_jobs_unity_produces_mult$: §G+3%§!\n\n§GThe Luminary grows in power over time.§!\n\n§LThe Unification Wars were a brutal affair. In the end, the Luminary brought peace and purpose to us all. The Luminary is the living symbol of what our species can achieve, and an inspiration to all.§!"
 
  concept_perfected_genes: "$trait_perfected_genes$"
- concept_perfected_genes_desc: "- $MOD_LEADER_AGE$: §G+25§!\n- $MOD_LEADER_SPECIES_EXP_GAIN$: §R-15%§!\n\n§L$trait_perfected_genes_desc$§!"
+ concept_perfected_genes_desc: "- $MOD_LEADER_LIFESPAN_ADD$: §G+25§!\n- $MOD_LEADER_SPECIES_EXP_GAIN$: §R-15%§!\n\n§L$trait_perfected_genes_desc$§!"
 
 ##
 
@@ -458,12 +458,12 @@ concept_pc_molten_desc: "- §RUninhabitable§!\n\n§L$pc_molten_desc$§!"
  concept_necro_apprentice_desc: "- $job_necro_apprentice_plural$ turn £consumer_goods£ §I$consumer_goods$§! and £food£ §I$food$§! into £unity£ §I$unity$§! and £mod_planet_amenities_add£ §I$PLANET_AMENITIES_TITLE$§! $NEW_LINE$- Once every §I10§! years, $job_necro_apprentice_plural$ are transformed in an §IElevation Ritual§!.$DOUBLE_NEW_LINE$§L$job_necro_apprentice_desc$§!"
 
  concept_necrophage_trait: "$trait_necrophage$"
- concept_necrophage_trait_desc: "- $MOD_LEADER_AGE$: §G+80§! $NEW_LINE$- $MOD_POP_GROWTH_SPEED$: §R-75%§! $NEW_LINE$- $MOD_PLANET_POP_ASSEMBLY_ORGANIC_MULT$: §R-50%§! $NEW_LINE$- $mod_planet_pops_organics_food_upkeep_mult$: §G-50%§! $NEW_LINE$- $mod_planet_pops_organics_minerals_upkeep_mult$: §G-50%§! $NEW_LINE$- $mod_planet_pops_organics_energy_upkeep_mult$: §G-50%§! $NEW_LINE$- $mod_planet_jobs_ruler_produces_mult$: §G+5%§! $NEW_LINE$- $mod_planet_jobs_specialist_only_produces_mult$: §G+5%§! $NEW_LINE$- $mod_planet_jobs_worker_only_produces_mult$: §R-10%§!$NEW_LINE$- $trait_necrophage_gestalt_tooltip$ $DOUBLE_NEW_LINE$§L$trait_necrophage_desc$§!"
+ concept_necrophage_trait_desc: "- $MOD_LEADER_LIFESPAN_ADD$: §G+80§! $NEW_LINE$- $MOD_POP_GROWTH_SPEED$: §R-75%§! $NEW_LINE$- $MOD_PLANET_POP_ASSEMBLY_ORGANIC_MULT$: §R-50%§! $NEW_LINE$- $mod_planet_pops_organics_food_upkeep_mult$: §G-50%§! $NEW_LINE$- $mod_planet_pops_organics_minerals_upkeep_mult$: §G-50%§! $NEW_LINE$- $mod_planet_pops_organics_energy_upkeep_mult$: §G-50%§! $NEW_LINE$- $mod_planet_jobs_ruler_produces_mult$: §G+5%§! $NEW_LINE$- $mod_planet_jobs_specialist_only_produces_mult$: §G+5%§! $NEW_LINE$- $mod_planet_jobs_worker_only_produces_mult$: §R-10%§!$NEW_LINE$- $trait_necrophage_gestalt_tooltip$ $DOUBLE_NEW_LINE$§L$trait_necrophage_desc$§!"
 
 # Clone Army
 
  concept_clone_soldier_infertile: "$trait_clone_soldier_infertile$"
- concept_clone_soldier_infertile_desc: "- $MOD_POP_GOVERNMENT_ETHIC_ATTRACTION$: §G+50%§! $NEW_LINE$- $MOD_LEADER_AGE$: §R-40§! $NEW_LINE$- $MOD_ARMY_DAMAGE_MULT$: §G+50%§!$NEW_LINE$- $genelock_trait_tooltip$ $NEW_LINE$- $TRAIT_INFERTILE$ $NEW_LINE$- $TRAIT_IMPROVES_LEADERS$$DOUBLE_NEW_LINE$§L$trait_clone_soldier_infertile_desc$§!"
+ concept_clone_soldier_infertile_desc: "- $MOD_POP_GOVERNMENT_ETHIC_ATTRACTION$: §G+50%§! $NEW_LINE$- $MOD_LEADER_LIFESPAN_ADD$: §R-40§! $NEW_LINE$- $MOD_ARMY_DAMAGE_MULT$: §G+50%§!$NEW_LINE$- $genelock_trait_tooltip$ $NEW_LINE$- $TRAIT_INFERTILE$ $NEW_LINE$- $TRAIT_IMPROVES_LEADERS$$DOUBLE_NEW_LINE$§L$trait_clone_soldier_infertile_desc$§!"
 
  concept_cloning: "$tech_cloning$"
  concept_cloning_desc: "- $MOD_POP_GROWTH_SPEED$ §G+10%§!$DOUBLE_NEW_LINE$§L$tech_cloning_desc$§!"
@@ -533,3 +533,11 @@ concept_pc_molten_desc: "- §RUninhabitable§!\n\n§L$pc_molten_desc$§!"
 
  concept_seeded_planet_1_modifier: "$seeded_planet_1_modifier$"
  concept_seeded_planet_1_modifier_desc: "- $mod_planet_jobs_society_research_produces_mult$: §G+5%§! $NEW_LINE$- $mod_planet_jobs_food_produces_mult$: §G+5%§! $NEW_LINE$- $MOD_PLANET_IMMIGRATION_PULL_MULT$: §G+5%§! $NEW_LINE$- $seeded_planet_1_modifier_tooltip$ \n\n§L$seeded_planet_1_modifier_desc$§!"
+
+# Riftworld
+
+ concept_astral_rift: "$ASTRAL_RIFT$"
+ concept_astral_rift_desc: "$ASTRAL_RIFTS$ are extraordinary tears in time and space that leak material between dimensions. They can be explored by crewed §YScience Ships§! after researching the £physics£ §Y$tech_rift_sphere$§! technology."
+
+ concept_riftworld_digsite: "$riftworld_digsite$"
+ concept_riftworld_digsite_desc: "Anomalous seismic activity has been detected from deep inside an ancient crater on our homeworld. Underground sonar revealed a previously unknown cavity that can be explored."

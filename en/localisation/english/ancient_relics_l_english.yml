@@ -26,6 +26,8 @@
  add_research_options_galactic_wonders_utopia_megacorp:0 "Research options gained:\n£engineering_research£§Y$tech_ring_world$§!\n£physics_research£§Y$tech_matter_decompressor$§!\n£physics_research£§Y$tech_dyson_sphere$§!\nThe Ring World, Matter Decompressor and Dyson Sphere are incredibly powerful Megastructures."
 
  RELICS:0 "$relics$"
+ EXCEPTIONAL_MATERIALS: "Exceptional Materials"
+ EXCEPTIONAL_MATERIALS_DESC: "Exceptional Materials are rare and valuable resources that can be gained through scientific exploration."
  MINOR_ARTIFACTS:0 "Minor Artifacts"
  RELICS_FOUND:0 "Relics Found"
  RELICS_FOUND_TOOLTIP:1 "Our empire has found $NUM|Y$ Relic(s)"
@@ -135,6 +137,8 @@
  IS_ARCHAEOLOGICAL_SITE_FINISHED_TRIGGER:0 "Site is completed"
  IS_NOT_ARCHAEOLOGICAL_SITE_UNDER_EXCAVATION_TRIGGER:0 "Site is NOT under excavation"
  IS_ARCHAEOLOGICAL_SITE_UNDER_EXCAVATION_TRIGGER:0 "Site is under excavation"
+ IS_NOT_ARCHAEOLOGICAL_SITE_LOCKED_TRIGGER: "Site progression is NOT locked."
+ IS_ARCHAEOLOGICAL_SITE_LOCKED_TRIGGER: "Site progression is locked."
  IS_NOT_ARCHAEOLOGICAL_STAGE_CURRENT_SCORE_TRIGGER:0 "Current stage score NOT $COMPARE$ $NUM_COMPARE$"
  IS_ARCHAEOLOGICAL_STAGE_CURRENT_SCORE_TRIGGER:0 "Current stage score $COMPARE$ $NUM_COMPARE$"
  IS_NOT_ARCHAEOLOGICAL_STAGE_CURRENT_SCORE_NO_DIE_TRIGGER:0 "Current stage score excluding current die roll NOT $COMPARE$ $NUM_COMPARE$"
@@ -888,17 +892,17 @@
 
  # Deposits
 
- d_artifacts_1:0 "Minor Artifacts Deposit"
- d_artifacts_2:0 "$d_artifacts_1$"
- d_artifacts_3:0 "$d_artifacts_1$"
- d_artifacts_mining_1:0 "$d_artifacts_1$"
- d_artifacts_mining_2:0 "$d_artifacts_1$"
- d_artifacts_mining_3:0 "$d_artifacts_1$"
- d_artifacts_planet_1:0 "$d_artifacts_1$"
+ d_artifacts_research_1:0 "Minor Artifacts Deposit"
+ d_artifacts_research_2:0 "$d_artifacts_research_1$"
+ d_artifacts_research_3:0 "$d_artifacts_research_1$"
+ d_artifacts_mining_1:0 "$d_artifacts_research_1$"
+ d_artifacts_mining_2:0 "$d_artifacts_research_1$"
+ d_artifacts_mining_3:0 "$d_artifacts_research_1$"
+ d_artifacts_planet_1:0 "$d_artifacts_research_1$"
  d_artifacts_planet_1_desc:0 "Archaeological sites on this planet have already been extensively researched, but many objects of lesser value yet remain to be studied here."
- d_artifacts_planet_2:0 "$d_artifacts_1$"
+ d_artifacts_planet_2:0 "$d_artifacts_research_1$"
  d_artifacts_planet_2_desc:0 "$d_artifacts_planet_1_desc$"
- d_artifacts_planet_3:0 "$d_artifacts_1$"
+ d_artifacts_planet_3:0 "$d_artifacts_research_1$"
  d_artifacts_planet_3_desc:0 "$d_artifacts_planet_1_desc$"
 
  # Technologies
@@ -977,7 +981,7 @@
  sm_irassian_naval_yards_desc_modifier:0 "[Root.GetIrassianNavalYardsEffect]"
  irassian_naval_yards_desc:0 "Shipyards: §G+1§! §YShipyard Capacity§!\nStarbase Modifier:\nShip Build Speed: §G+20%§!"
  improved_irassian_naval_yards_desc:0 "Shipyards: §G+1§! §YShipyard Capacity§!\nStarbase Modifier:\nShip Build Speed: §G+30%§!"
- 
+
  sm_yuht_detection_array:0 "$tech_secrets_yuht$"
  sm_yuht_detection_array_desc:0 "$tech_secrets_yuht_desc$\n"
  sm_yuht_detection_array_desc_modifier:0 "[Root.GetYuhtDetectionArrayEffect]"
@@ -1098,7 +1102,7 @@
  ap_archaeoengineers_tooltip:0 "Unlocks additional effects for §YAncient§! ship components and buildings."
 
  # Misc
- 
+
  count_archaeological_site_trigger:0 "Number of Dig Sites excavated"
  mod_category_archaeostudies_research_speed_mult:0 "Research Speed (Archaeostudies)"
  mod_job_archaeoengineers_add:0 "$job_archaeoengineers$ Jobs"
@@ -1125,4 +1129,3 @@
  planet_destruction.901.desc:0 "As the energies of the mind wiping beam from the [FromFrom.GetName] dissipate, [From.GetName]'s population has almost entirely regressed to the pre-sapient stage. Those who were spared can now only watch in horror as those they once knew return to animalistic behaviors."
 
  weapon_archaeotech:0 "§YArchaeotech§!"
-

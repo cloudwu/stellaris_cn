@@ -294,7 +294,7 @@
  OPINION_LEVEL_TREND:0 "With that trend we will have $RELATION$ Relations in $MONTHS$ month(s)"
 
  requires_terrible_opinion_or_supremacist:2 "$TRIGGER_FAIL$§RRequires $OPINION_TERRIBLE$, §YRivalry§!, an envoy sent to §YHarm Relations§!, or one empire must either be in the $diplo_stance_supremacist_name$ $DIPLOMACY_STANCE$, $diplo_stance_animosity_name$ $DIPLOMACY_STANCE$, or be a §H$COUNTRY_FALLEN_EMPIRE$§!.§!\n"
- requires_poor_or_worse_opinion:1 "$TRIGGER_FAIL$§RRequires $OPINION_POOR$ an envoy sent to §YHarm Relations§!.§!"
+ requires_poor_or_worse_opinion:1 "$TRIGGER_FAIL$§RRequires $OPINION_POOR$ or an envoy sent to §YHarm Relations§!.§!"
  requires_excellent_or_better_opinion:1 "$TRIGGER_FAIL$§RRequires $OPINION_EXCELLENT$ or an envoy sent to §YImprove Relations§!.§!"
  requires_good_or_better_opinion:1 "$TRIGGER_FAIL$§RRequires $OPINION_GOOD$ or an envoy sent to §YImprove Relations§!.§!"
  requires_neutral_or_better_opinion:1 "$TRIGGER_FAIL$§RRequires $OPINION_NEUTRAL$ or an envoy sent to §YImprove Relations§!.§!"
@@ -308,6 +308,20 @@
  easy_rivalry:0 "Restrictions on the §YRival§! action are relaxed both for and against us.\n"
  envoy_costs:0 "Envoys"
  diplo_closed_borders:0 "$opinion_closed_borders$"
+
+ requires_embassy_or_diplomatic_networking: "$TRIGGER_FAIL$§RRequires an §YEmbassy§! OR the §Y$tr_diplomacy_diplomatic_networking$§! Tradition§!"
+
+ requires_embassy_diplomatic_networking_or_universal_transactions: "$TRIGGER_FAIL$§RRequires an §YEmbassy§!, the §Y$tr_diplomacy_diplomatic_networking$§! Tradition OR the §Y$ap_universal_transactions$§! Ascension Perk§!"
+
+ requires_embassy_or_improving_relations: "$TRIGGER_FAIL$§RRequires an §YEmbassy§! OR an Envoy §YImproving Relations§!§!"
+
+ requires_10_trust_or_neutral: "$TRIGGER_FAIL$§RRequires $OPINION_NEUTRAL$ OR §Y10§! Trust§!"
+
+ requires_20_trust_or_good: "$TRIGGER_FAIL$§RRequires $OPINION_GOOD$ OR §Y20§! Trust§!"
+
+ requires_30_trust_or_excellent: "$TRIGGER_FAIL$§RRequires $OPINION_EXCELLENT$ OR §Y30§! Trust§!"
+
+ requires_50_trust_or_excellent: "$TRIGGER_FAIL$§RRequires $OPINION_EXCELLENT$ OR §Y50§! Trust§!"
 
  EMPIRE_OVERVIEW:0 "Empire Overview"
 
@@ -360,13 +374,13 @@
  FEDERATION_XP_UNLOCKS:0 "§HLevel XP Unlocks§!"
  FEDERATION_LEVEL_UNLOCK:0 "\tLVL $LEVEL$: $XP|Y0$ xp"
  FEDERATION_EXPERIENCE_DESC:0 "§E§HFederation Experience§! increases as the federation remains unified. It will decrease as we become more divided.\n§HNew Perks and Abilities§! are gained as new §HLevels§! are unlocked with §HXP§!§!"
- FEDERATION_ENVOYS:0 "Envoys"
- FEDERATION_ENVOYS_COHESION:0 "Total Envoys: $ENVOYS|+0$\n\tCohesion Impact: $IMPACT|+2$"
+ FEDERATION_ENVOYS:1 "Representatives"
+ FEDERATION_ENVOYS_COHESION:1 "Total Representatives: $ENVOYS|+0$\n\tCohesion Impact: $IMPACT|+2$"
  FEDERATION_ENVOYS_COUNTRY:0 "\t$NAME$: $COUNT|Y0$"
- FEDERATION_ENVOYS_CONTRIBUTORS:0 "§EEnvoy Contributors:§! ($VALUE|Y$)"
+ FEDERATION_ENVOYS_CONTRIBUTORS:1 "§ERepresentative Contributors:§! ($VALUE|Y$)"
  FEDERATION_ENVOYS_SLACKERS:0 "Members Not Contributing:"
  FEDERATION_ENVOYS_SLACKER:0 "\t$NAME|R$"
- FEDERATION_ENVOYS_DESC:0 "§E§HEnvoys§! are representatives from members within the federation. They boost §HFederation Cohesion§! by working hard to keep our federation unified.§!"
+ FEDERATION_ENVOYS_DESC:0 "§E§HRepresentatives§! are Officials from members within the federation. They boost §HFederation Cohesion§! by working hard to keep our federation unified.§!"
  FEDERATION_LEVEL_PERKS_DESC:0 "§ELevel $LEVEL$ Perks:§!"
  FEDERATION_LEVEL_PERK:0 "\t$PERK|Y$"
  FEDERATION_LEVEL_HAS_DECAYED:0 "§RWe lost experience required for the level(s). $DAYS|Y$ days left until we will lose perk effects.§!"
@@ -826,10 +840,10 @@
  damage_crisis_2_desc:0 "If we intend to possess the moral authority to govern, we need to show the galaxy we have not just the will to defend it from outside threats, but also the means."
  envoy_unity_1:0 "Federal Attachés"
  envoy_unity_1_desc:0 "The arbiters of the federation agenda - our envoys - are savvy and active in their effort to improve the sense of belonging and mutual benefit between our members."
- envoy_unity_1_effect:2 "Gain §Y2§! Unity and §Y5%§! Trust Growth for each Envoy assigned to the federation by any member."
+ envoy_unity_1_effect:2 "Gain §Y2§! Unity and §Y5%§! Trust Growth for each Official assigned to the federation by any member."
  envoy_unity_2:0 "Federal Unity"
  envoy_unity_2_desc:1 "Our envoys work ceaselessly to promote and encourage the federation's agenda and purpose, inspiring kinship and confidence across the galaxy."
- envoy_unity_2_effect:1 "Gain §Y2§! Unity and raise Trust Cap by §Y5§! for each Envoy assigned to the federation by any member."
+ envoy_unity_2_effect:1 "Gain §Y2§! Unity and raise Trust Cap by §Y5§! for each Official assigned to the federation by any member."
  cohesion_join_1:0 "Welcoming Nature"
  cohesion_join_1_desc:0 "Regardless of cultural or biological differences, growth of the federation is to everyone's benefit."
  cohesion_join_1_effect:0 "New members impose a §Y50%§! smaller Cohesion penalty to the federation."
@@ -970,6 +984,7 @@
  federation_acceptance_strong_president:0 "Is Strongest and President"
  federation_acceptance_weaker:0 "Is less powerful"
  federation_acceptance_has_subjects:0 "Has Subjects"
+ federation_acceptance_has_no_subjects: "Has no Subjects"
 
  #Federation specific
  federation_acceptance_hegemony_or_default:0 "$default_federation$ or $hegemony_federation$"
@@ -1759,12 +1774,12 @@
  galactic_community:0 "Galactic Community"
  galactic_community_click_to_open:1 "§GClick to open $GALACTIC_COMMUNITY$§!"
  galactic_community_TITLE:0 "$galactic_community$"
- galactic_community_desc:0 "Sending an envoy to represent our interests in the Galactic Community will increase our Diplomatic Weight by §G+10%§!.\n\nWe will be unable to reassign them for §Y£time£360§!."
+ galactic_community_desc:0 "Sending an Official to represent our interests in the Galactic Community will increase our Diplomatic Weight by §G+10%§!."
 
  galactic_empire_TITLE:0 "$GALACTIC_EMPIRE$"
- galactic_empire_desc:0 "Sending an envoy to represent our interests in the $GALACTIC_EMPIRE$ will increase our Diplomatic Weight by §G+10%§!.\n\nWe will be unable to reassign them for §Y£time£360§!."
+ galactic_empire_desc:0 "Sending an Official to represent our interests in the $GALACTIC_EMPIRE$ will increase our Diplomatic Weight by §G+10%§!."
 
- federation_desc:0 "Sending an envoy to coordinate matters within our Federation will improve Federation Cohesion.\n\nWe will be unable to reassign them for §Y£time£360§!."
+ federation_desc:0 "Sending an Official to coordinate matters within our Federation will improve Federation Cohesion."
 
  default_envoy:0 "Envoy"
  ENVOY_OPINION_EFFECT:0 "$VAL|+=0$"
@@ -1774,13 +1789,15 @@
  IN_RECESS_HELP:0 "\n§HThe Senate is currently in recess.§!\nGive your Support to Proposed Resolutions in the Queue to influence which Resolution will move onto the floor when the next Session starts."
 
  ENVOYS_HEADER:0 "§HEnvoys§!"
- ENVOYS_STATUS:0 "$ASSIGNED|Y$ out of $TOTAL|Y$ Envoys have assignments\n\nEnvoys can be sent to other empires for diplomatic tasks, to represent you in the Galactic Community, or to maintain your Federation.\n\nCertain §YCivics§!, §YBuildings§!, §YFederation Perks§!, and building an §YInterstellar Assembly§! can give you additional Envoys."
+
+ ENVOYS_STATUS:0 "$ASSIGNED|Y$ out of $TOTAL|Y$ Envoys have assignments\n\nEnvoys can handle first contact with unknown aliens, be sent to other empires for diplomatic tasks, and manage spy networks.\n\nCertain §YCivics§!, §YBuildings§!, §YFederation Perks§!, §YLeader Traits§!, and building an §YInterstellar Assembly§! can give you additional Envoys."
+ ENVOYS_DESC: "Envoys have assignments\n\nEnvoys can handle first contact with unknown aliens, be sent to other empires for diplomatic tasks, and manage spy networks.\n\nCertain §YCivics§!, §YBuildings§!, §YFederation Perks§!, §YLeader Traits§!, and building an §YInterstellar Assembly§! can give you additional Envoys."
  ASSIGN_ENVOY:0 "Assign Envoy"
  ASSIGN_ENVOY_NOT_MEMBER_TOOLTIP:0 "§HAssign Envoy§!\n§RYou need to be a member of the Galactic Community to assign envoys§!"
- ASSIGN_ENVOY_TOOLTIP:0 "§HAssign Envoy§!\n§GClick to open the Assign Envoy view§!"
- ASSIGN_ENVOY_DELAYED:0 "§EAssign Envoys to increase your §!§HDiplomatic Weight§!"
+ ASSIGN_ENVOY_TOOLTIP:1 "§HAssign Official§!\n§GClick to open the Assign Official view§!"
+ ASSIGN_ENVOY_DELAYED:1 "§EAssign an Official to increase your §!§HDiplomatic Weight§!"
  ENVOYS_ASSIGNED:0 "$ASSIGNED|Y$"
- ENVOYS_IN_THE_COMMUNITY:0 "§HEach Envoy assigned to the community as a delegate will increase your total diplomatic weight§!"
+ ENVOYS_IN_THE_COMMUNITY:1 "§HAssigning an Official to the community will increase your total diplomatic weight§!"
  ENVOYS_IN_THE_FEDERATION:0 "§HEach Envoy assigned to the federation contributes to its cohesion§!"
 
  MESSAGE_SENATE_IN_SESSION_TITLE:1 "Senate Is Now in Session"
@@ -1831,7 +1848,7 @@
  CALL_IN_FAVOR_UNABLE:0 "We are not able to call in any favors."
  CALL_IN_FAVOR_ONLY_IF_VOTING:0 "We must take a stand for or against the Resolution to call in favors."
  CALL_IN_FAVOR_ONLY_IF_IN_FAVOR:0 "Can only call in favors if we are supporting the Resolution."
- CALL_IN_FAVOR_UNAVAILABLE:0 "We have no Favors available. Trade with an Empire for Favors to gain them."
+ CALL_IN_FAVOR_UNAVAILABLE:1 "We have no Favors available."
  CALL_IN_FAVOR_ICON:0 "£call_favor£ $CALL_IN_FAVOR$"
  CLICK_CALL_IN_FAVOR:1 "§GClick to Call in Favor(s) to boost your Diplomatic Weight on this Resolution§!"
  CALL_IN_FAVOR_TOOLTIP:0 "§HCall in Favor§!"
@@ -1917,8 +1934,9 @@
  FROM_TECH_VALUE:0 "From Tech: $VALUE|Y$"
  NUM_ENVOYS_VALUE:0 "Number of Envoys: $VALUE|Y$"
  FROM_COUNCIL_VALUE:0 "From Council: $VALUE|Y$"
- IMPROVE_RELATIONS_VALUE:0 "Improve Relations: $VALUE|+=0$ ($INCREASE|+=0$ per month)"
- HARM_RELATIONS_VALUE:0 "Harm Relations: $VALUE|+=0$ ($DECREASE|+=0$ per month)"
+ MISSING_DIPLOMACY_HEAD: "Missing Minister of State"
+ IMPROVE_RELATIONS_VALUE:1 "Improve Relations: $VALUE|+=2$ ($INCREASE|2$ per month)"
+ HARM_RELATIONS_VALUE:1 "Harm Relations: $VALUE|+=2$ ($DECREASE|2$ per month)"
 
  RELATION_LEVELS:0 "§HRelation Levels§!"
  RELATION_LEVEL_VALUE:0 "$LEVEL$ ($LOWER|+0$ to $UPPER|+0$)"
@@ -2161,7 +2179,7 @@
  LESSENGER_REMODEL:0 "Upscaling the Messenger"
  LESSENGER_REMODEL_TITLE:0 "Upscaling the Messenger"
  LESSENGER_REMODEL_DESC:0 "The extraordinary level of technology and capacity of §YThe Lesser Messenger§! can only be rivaled by it's ridiculous scale. Of the ship's tiny creator species thousands could fit into the vessel, but to fit even a skeleton crew of our species in there is going to require a massive overhaul."
- lessenger_75:0 "The The Lesser Messenger is still too small for our crew!"
+ lessenger_75:1 "The Lesser Messenger is still too small for our crew!"
  lessenger_50:0 "$lessenger_75$"
  lessenger_25:0 "$lessenger_75$"
 
@@ -2429,7 +2447,7 @@
  origin.1390.name:0 "The Silent Freighter"
  origin.1390.desc:0 "On entering the system, our sensors immediately picked up multiple anomalies.\n\nThe most prominent reading was a gigantic energy cloud which - upon closer inspection - turned out to be hundreds of smaller fusion drive trails like the one previously discovered. An absolutely massive fleet must've come to a halt here for some reason.\n\nNext to this 'fleet parking lot' our scans picked up another kind of reading: a derelict transport ship. This freighter appears to be as old as the energy signatures, but traces of its own signature differs from that of the lost fleet.\n\nWe should inspect the abandoned ship closer."
  origin.1395.name:0 "The Maker's Might"
- origin.1395.desc:0 "The freighter contained a log. Though damaged by time, some data could still be recovered.\n\nThe freighter had been intercepted by the massive fleet. Unclear as to how or why, the Captain of the freighter ended up conversing with the Admiral of the Relentless fleet. Apparently they spoke for weeks, but what they spoke of remains unknown - although the phrase 'nature of power' recurs frequently.\n\nThe fleet suddenly departed, leaving the freighter unscathed. The last entry in the log was a quote from the Admiral: §Y'No, leave them. Destruction is easy. Real power is the ability to create.'§!\n\nWe have analyzed the fleet trails and may take up our pursuit again."
+ origin.1395.desc:0 "The freighter contained a log. Though damaged by time, some data could still be recovered.\n\nThe freighter had been intercepted by the massive fleet. Unclear as to how or why, the Captain of the freighter ended up conversing with the Commander of the Relentless fleet. Apparently they spoke for weeks, but what they spoke of remains unknown - although the phrase 'nature of power' recurs frequently.\n\nThe fleet suddenly departed, leaving the freighter unscathed. The last entry in the log was a quote from the Commander: §Y'No, leave them. Destruction is easy. Real power is the ability to create.'§!\n\nWe have analyzed the fleet trails and may take up our pursuit again."
  origin.1400.name:0 "The Tyrant's Rest"
  origin.1400.desc:0 "This is where the fusion drive trail ends. It's quite likely that any remnants of the Relentless species - if there are any - will be found here.\n\nSo far the only sensor reading of any particular interest comes from what appears to be some kind of small space station. An energy pulse radiates from it at set intervals, but apart from that there's no sign of any activity.\n\nWe can proceed to investigate immediately."
 
@@ -3062,8 +3080,8 @@
  origin.210.a.response:0 "Thank you. We knew we could count on the [Root.GetName]."
  origin.210.b:0 "We have no available positions, sorry."
  origin.210.b.response:0 "I see. That is disappointing. Perhaps the blame lies with us, for phrasing it as a request."
- origin.210.admiral:0 "A [scion_master.GetSpeciesName] §HAdmiral§! joins the [Root.GetName]."
- origin.210.governor:0 "A [scion_master.GetSpeciesName] §HGovernor§! joins the [Root.GetName]."
+ origin.210.admiral:0 "A [scion_master.GetSpeciesName] §HCommander§! joins the [Root.GetName]."
+ origin.210.official:1 "A [scion_master.GetSpeciesName] §H$official$§! joins the [Root.GetName]."
  origin.210.scientist:0 "A [scion_master.GetSpeciesName] §HScientist§! joins the [Root.GetName]."
  origin.210.general:0 "A [scion_master.GetSpeciesName] §HGeneral§! joins the [Root.GetName]."
  scion_leader_desc: "A venerated guest from an ancient and dormant empire, this restless polymath seeks new challenges in the developing galaxy."
@@ -3780,7 +3798,3 @@
  DAYS_LEFT_COLORED:0 "$DAYS|Y$"
  DAYS_LEFT_WINNING_COLORED:0 "$DAYS|G$"
  DAYS_LEFT_LOSING_COLORED:0 "$DAYS|R$"
-
-
-
-

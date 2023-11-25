@@ -14,7 +14,7 @@ bitmapfonts = {
 		B = { 51 167 255 }	# B = Blue, used in special cases for text.
 		Y = { 247 252 52 }	# Y = Yellow, to be used for stuff that is sub optimal or for certain highlights.
 		H = { 251 170 41 }	# H = Highlight, Orange in Game.
-		C = { 33 232 208 }	# C = Cyan, Used for Concept Text that generates another tooltip.
+		C = { 31 224 202 }	# C = Cyan, Used for Concept Text that generates another tooltip.
 		K = { 251 170 41 }	# K = Header for Concepts. Currently identical to H.
 		I = { 247 252 52 }	# I = Highlights for Concepts. Currently identical to Y.
 		T = { 255 255 255 }	# T = Text, standard for all text, to be used if ALL text needs tweaking.
@@ -219,6 +219,48 @@ bitmapfonts = {
 		path = "gfx/fonts/hoi_16mbs"
 		color = 0xffffffff
 	}
+
+	bitmapfont = {
+		name = "jura"
+		color = 0xffffffff
+		fontfiles = {
+			"gfx/fonts/juralightmedium"
+		}
+		cursor_offset = { -3 -5 }
+		selection_offset = { 0 3 }
+	}
+
+	 bitmapfont_override = {
+		name = "jura"
+        ttf_font = "Chinese_normal"
+		ttf_size = "30"
+		vertical_offset  = "2"
+		languages = { "l_simp_chinese" }
+		multiline = {
+			line_break = { "。" "）" "！" ">" "”" "？" }
+			forbidden_start = { "，" }
+		}
+	 }
+
+	 bitmapfont_override = {
+		name = "jura"
+        ttf_font = "Japanese_main"
+		ttf_size = "30"
+		vertical_offset  = "2"
+		languages = { "l_japanese" }
+		multiline = {
+			line_break = { "。" ")" "！" "〉" "」" "？" }
+			forbidden_start = { "、" }
+		}
+	 }
+
+	 bitmapfont_override = {
+		name = "jura"
+        ttf_font = "Korean_main"
+		ttf_size = "30"
+		vertical_offset  = "3"
+		languages = { "l_korean" }
+	 }
 
 	bitmapfont = {
 		name = "malgun_goth_24"

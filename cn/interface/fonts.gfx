@@ -3,17 +3,6 @@
 #G = { 41 225 38 255 } #format is red green blue alpha
 #textcolors = {} is global for all fonts. changing this in one font will also change it for all others
 
-		# L = Lore text, not relevant game info, just fun to know backstory info
-		# G = Green, used for numbers that are positiv modifiers	
-		# R = Red, used for negative modifier 
-		# Y = Yellow, to be used for stuff that is sub optimal or for certain highlights
-		# H = Highlight, Orange in Game
-		# T = Text, standard for all text, to be used if ALL text needs tweaking
-		# E = Standard green, used with large chunks of texts, such as events and advisor
-		# S = Subtitle highlight (light green in this case)
-		# M = Magenta. Indicator for "Rare Techs".
-
-
 bitmapfonts = {
 
 	# Global colors
@@ -25,7 +14,7 @@ bitmapfonts = {
 		B = { 51 167 255 }	# B = Blue, used in special cases for text.
 		Y = { 247 252 52 }	# Y = Yellow, to be used for stuff that is sub optimal or for certain highlights.
 		H = { 251 170 41 }	# H = Highlight, Orange in Game.
-		C = { 33 232 208 }	# C = Cyan, Used for Concept Text that generates another tooltip.
+		C = { 31 224 202 }	# C = Cyan, Used for Concept Text that generates another tooltip.
 		K = { 251 170 41 }	# K = Header for Concepts. Currently identical to H.
 		I = { 247 252 52 }	# I = Highlights for Concepts. Currently identical to Y.
 		T = { 255 255 255 }	# T = Text, standard for all text, to be used if ALL text needs tweaking.
@@ -49,74 +38,147 @@ bitmapfonts = {
 
 	bitmapfont = {
 		name = "standard_font"
-		ttf_font ="Chinese_normal"
-		ttf_size = "13"
+		path = "gfx/fonts/common"
+		color = 0xffffffff
+	}
+
+	bitmapfont = {
+		name = "null_font"
+		path = "gfx/fonts/common"
 		color = 0xffffffff
 	}
 
 	#標題、「暫停」字樣等
 	bitmapfont = {
 		name = "large_title_font"
+		path = "gfx/fonts/orbitron"
+		color = 0xffffffff
 		ttf_font = "Chinese_bigger"
 		ttf_size = "28"
-		vertical_offset  = "5"
+		multiline = {
+			line_break = { "。" "）" "！" ">" "”" "？" }
+			forbidden_start = { "，" }
+		}
+		vertical_offset  = "3"
 	}
+
+
+
 
 	#恆星系視圖中的系統名稱等
 	bitmapfont = {
 		name = "large_title_font_28"
+		path = "gfx/fonts/orbitron_28"
+		color = 0xffffffff
 		ttf_font = "Chinese_bigger"
-		ttf_size = "24"
-		vertical_offset  = "2"
+		ttf_size = "22"
+		multiline = {
+			line_break = { "。" "）" "！" ">" "”" "？" }
+			forbidden_start = { "，" }
+		}
+		vertical_offset  = "1"
 	}
 
 	bitmapfont = {
 		name = "cg_16b"
-		ttf_font = "Chinese_normal"
-		ttf_size = "13"
+		color = 0xffffffff
+		fontfiles = {
+			"gfx/fonts/cg_16b"
+		}
+		color = 0xffffffff
 		cursor_offset = { -3 -5 }
 		selection_offset = { 0 3 }
+		ttf_font = "Chinese_normal"
+		ttf_size = "13"
+		vertical_offset  = "2"
+		multiline = {
+			line_break = { "。" "）" "！" ">" "”" "？" }
+			forbidden_start = { "，" }
+		}
 	}
 
 	#聊天、地圖圖示、行星面板建設進度條等
 	bitmapfont = {
 		name = "hoi_16mbs"
-		ttf_font = "Chinese_normal"
-		ttf_size = "13"
+		path = "gfx/fonts/hoi_16mbs"
 		color = 0xffffffff
+	}
+
+	bitmapfont = {
+		name = "jura"
+		color = 0xffffffff
+		fontfiles = {
+			"gfx/fonts/juralightmedium"
+		}
+		cursor_offset = { -3 -5 }
+		selection_offset = { 0 3 }
+		ttf_font = "Chinese_normal"
+		ttf_size = "30"
+		vertical_offset  = "2"
+		multiline = {
+			line_break = { "。" "）" "！" ">" "”" "？" }
+			forbidden_start = { "，" }
+		}
 	}
 
 	#選單、次標題等
 	bitmapfont = {
 		name = "malgun_goth_24"
-		ttf_font = "Chinese_big"
-		ttf_size = "18"
-		vertical_offset  = "-1"
+		path = "gfx/fonts/malgun_goth_24"
+		color = 0xffffffff
 		cursor_offset = { -4 -3 }
 		selection_offset = { 0 1 }
+
+		ttf_font = "Chinese_big"
+		ttf_size = "18"
+		vertical_offset  = "1"
+		multiline = {
+			line_break = { "。" "）" "！" ">" "”" "？" }
+			forbidden_start = { "，" }
+		}
 	}
 
 	### MAP NAME FONTS ###
 	#國境名稱
 	bitmapfont = {
 		name = "map_name_border"
+		path = "gfx/fonts/orbitron"
+		color = 0xffffffff
 		ttf_font = "Chinese_bigger"
-		ttf_size = "20"
-		vertical_offset  = "1"
+		ttf_size = "70"
+		vertical_offset  = "-30"
+		multiline = {
+			line_break = { "。" "）" "！" ">" "”" "？" }
+			forbidden_start = { "，" }
+		}
 	}
 
 	#星雲名稱
 	bitmapfont = {
 		name = "map_name_nebula"
-		ttf_font = "Chinese_bigger"
-		ttf_size = "32"
+		path = "gfx/fonts/orbitron"
 		color = 0xffffffff
+
+		ttf_font = "Chinese_bigger"
+		ttf_size = "60"
+		vertical_offset  = "-20"
+		multiline = {
+			line_break = { "。" "）" "！" ">" "”" "？" }
+			forbidden_start = { "，" }
+		}
 	}
 
 	#星域名稱
 	bitmapfont = {
 		name = "map_name_sector"
-		ttf_font = "Chinese_bigger"
-		ttf_size = "32"
+		path = "gfx/fonts/orbitron"
 		color = 0xffffffff
+
+		ttf_font = "Chinese_bigger"
+		ttf_size = "60"
+		vertical_offset  = "-20"
+		multiline = {
+			line_break = { "。" "）" "！" ">" "”" "？" }
+			forbidden_start = { "，" }
+		}
 	}

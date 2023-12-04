@@ -32,20 +32,20 @@
 
  origin_default:0 "繁荣一统"
  origin_default_desc:1 "通过斗争和胜利，这个社会已经实现了每一个年轻文明的抱负：一个有着统一目标的家园，一条通向璀璨繁星的道路。"
- origin_tooltip_default_effects_start: "—$INITIAL_POPS$§G+4§!$NEW_LINE$—$HOMEWORLD$$TABBED_NEW_LINE$—['concept_generator_district', £district£ $district_generator_plural$]：§G+1§!"
+ origin_tooltip_default_effects_start: "- $INITIAL_POPS$§G+4§!$NEW_LINE$$HOMEWORLD$$TABBED_NEW_LINE$- ['concept_generator_district', £district£ $district_generator_plural$]：§G+1§!"
  origin_tooltip_default_effects_end: "$TABBED_NEW_LINE$- $PLANETARY_MODIFIERS$ ['concept_prosp_uni']$NEW_LINE$- $GUARANTEED_RESEARCH_OPTION_STRING$ ['concept_planetary_unification', £society_research£ $tech_planetary_unification$]"
  origin_tooltip_default_effects:3 "$origin_tooltip_default_effects_start$$TABBED_NEW_LINE$—['concept_farming_district', £district£ $district_farming_plural$]：§G+1§!$origin_tooltip_default_effects_end$"
  origin_tooltip_default_effects_lithoid: "$origin_tooltip_default_effects_start$$TABBED_NEW_LINE$—['concept_mining_district', £district£ $district_mining_plural$]：§G+1§!$origin_tooltip_default_effects_end$"
 
  origin_mechanists:0 "$civic_mechanists$"
  origin_mechanists_desc:0 "此文明自打蒸汽时代早期便醉心于金属自动机的构想。尽管许多人表示这是不可能做到的，但第一台真正的机器人早就出厂了，远早于初步太空飞行的实现。"
- origin_tooltip_mechanists_effects:3 "—['concept_robots', £mod_planet_jobs_robotic_produces_mult£ Robot]§I$pops_with_icon$§!：8$NEW_LINE$—母星：['concept_robot_assembly_plant',£building£ Robot Assembly Plant]$NEW_LINE$—$ADDITONAL_TECHNOLOGIES_STRING$$TABBED_NEW_LINE$—['concept_powered_exoskeletons', £engineering_research£ $tech_powered_exoskeletons$]$TABBED_NEW_LINE$—['concept_robotic_workers', £engineering_research£ $tech_robotic_workers$]$NEW_LINE$—$GUARANTEED_RESEARCH_OPTION_STRING$['concept_robomodding', £engineering_research£ $tech_robomodding$]"
+ origin_tooltip_mechanists_effects:3 "- ['concept_robots', £mod_planet_jobs_robotic_produces_mult£ 机器人工人]§I$pops_with_icon$§!：8$NEW_LINE$- 母星：['concept_robot_assembly_plant',£building£ 机器人装配厂]$NEW_LINE$- $ADDITONAL_TECHNOLOGIES_STRING$$TABBED_NEW_LINE$- ['concept_powered_exoskeletons', £engineering_research£ $tech_powered_exoskeletons$]$TABBED_NEW_LINE$- ['concept_robotic_workers', £engineering_research£ $tech_robotic_workers$]$NEW_LINE$- $GUARANTEED_RESEARCH_OPTION_STRING$['concept_robomodding', £engineering_research£ $tech_robomodding$]"
  origin_syncretic_evolution:0 "$civic_syncretic_evolution$"
  origin_syncretic_evolution_desc:0 "第二种族乃此文明不可分割之一部分。那种族身材魁梧健壮，而智力仅与愚笨的孩童相当。古代战争早已剔除其大多数攻击倾向，使之相当恭顺。"
- origin_tooltip_syncretic_evolution_effects: "—具有['concept_syncretic_proles']特质的£pop£§I人口§!：12"
+ origin_tooltip_syncretic_evolution_effects: "- 具有['concept_syncretic_proles']特质的£pop£§I人口§!：12"
  origin_life_seeded:0 "$civic_life_seeded$"
  origin_life_seeded_desc:0 "此文明在乐土演化发展，也许是专为他们打造的乐土。"
- origin_tooltip_life_seeded_effects: "—拥有§I稀有行星特征§!的$HOMEWORLD$['concept_pc_gaia']（规模：£planetsize£30）$NEW_LINE$—$SPECIES_TRAITS$['concept_gaia_preference']"
+ origin_tooltip_life_seeded_effects: "- 拥有§I稀有行星特征§!的$HOMEWORLD$['concept_pc_gaia']（规模：£planetsize£30）$NEW_LINE- $SPECIES_TRAITS$['concept_gaia_preference']"
  origin_tooltip_life_seeded_negative_effects: "- $NO_GUARANTEED_WORLDS$"
  origin_post_apocalyptic:0 "$civic_post_apocalyptic$"
  origin_life_seeded_habinte: "$origin_life_seeded$"
@@ -55,27 +55,27 @@
 
  origin_shattered_ring:0 "破碎之环"
  origin_shattered_ring_desc:1 "此文明居住在由未知先驱者建造的环形世界之上。倘若掌握其技术并完全修复环形世界，他们将从中获得巨大的力量。"
- origin_tooltip_shattered_ring_effects:3 "—$HOMEWORLD$['concept_pc_shattered_ring']$NEW_LINE$—['concept_guaranteed_colonies']：可殖民的环形世界区块而非行星$NEW_LINE$—$SPECIES_TRAITS$['concept_ring_preference']"
+ origin_tooltip_shattered_ring_effects:3 "- $HOMEWORLD$['concept_pc_shattered_ring']$NEW_LINE$- ['concept_guaranteed_colonies']：可殖民的环形世界区块而非行星$NEW_LINE$- $SPECIES_TRAITS$['concept_ring_preference']"
  origin_tooltip_shattered_ring_effects_lithoid:0 "§R-警告：这个起源因为矿物稀缺将对石质类具有挑战性。§!$NEW_LINE$$origin_tooltip_shattered_ring_effects$"
 
  origin_remnants:0 "复国孑遗"
  origin_remnants_desc:1 "此文明曾经叱咤虚空，掌控大片银河。他们最终难逃失败并被摧毁殆尽，但经历漫长的穷困潦倒后他们又要于群星间东山再起。"
- origin_tooltip_remnants_effects:5 "—$HOMEWORLD$$TABBED_NEW_LINE$—['concept_pc_relic']（规模：£planetsize£22）$TABBED_NEW_LINE$—['concept_ruined_arcology', $concept_ruined_arcology$]：+6[GetRemnantAncientRelicEffect]"
+ origin_tooltip_remnants_effects:5 "$HOMEWORLD$$TABBED_NEW_LINE$- ['concept_pc_relic']（规模：£planetsize£22）$TABBED_NEW_LINE$- ['concept_ruined_arcology', $concept_ruined_arcology$]：+6[GetRemnantAncientRelicEffect]"
  RemnantAncientRelicEffect:1 "$TABBED_NEW_LINE$- ['concept_archaeostudies_faculty', £building£ $building_archaeostudies_faculty$]$NEW_LINE$- $ADDITONAL_TECHNOLOGIES_STRING$ ['concept_archaeostudies', £society£ $tech_archaeostudies$]"
 
  origin_tree_of_life:0 "生命之树"
  origin_tree_of_life_desc:0 "此蜂群思维与一棵巨型树木间演化出了共生关系。这棵巨树赋予了他们许多益处，也意味着失去这棵树就会削弱他们。"
- origin_tooltip_tree_effects:4 "—$HOMEWORLD$['concept_tree_of_life']$NEW_LINE$—已殖民行星：['concept_tree_of_life_sapling']行星特征$NEW_LINE$—缺乏§Y生命之树幼苗§!的殖民地：['concept_transplant_tree_of_life']行星决议$NEW_LINE$—在附属国殖民地上$AVAILABLE_HOLDINGS$['concept_tree_of_life_holding', £building£ $holding_tree_of_life_sapling$]"
- origin_tooltip_tree_negative_effects: "—缺少§Y生命之树苗§!的殖民地：['concept_no_lifetree']行星修正"
+ origin_tooltip_tree_effects:4 "- $HOMEWORLD$['concept_tree_of_life']$NEW_LINE$- 已殖民行星：['concept_tree_of_life_sapling']行星特征$NEW_LINE$- 缺乏§Y生命之树幼苗§!的殖民地：['concept_transplant_tree_of_life']行星决议$NEW_LINE$- 在附属国殖民地上$AVAILABLE_HOLDINGS$['concept_tree_of_life_holding', £building£ $holding_tree_of_life_sapling$]"
+ origin_tooltip_tree_negative_effects: "- 缺少§Y生命之树苗§!的殖民地：['concept_no_lifetree']行星修正"
 
  origin_lithoid:0 "降世灾星"
  origin_lithoid_desc:2 "这些石质类并非他们“母星”的原住民，而是随着一颗猛烈撞击该行星、杀死了大多数原住生命的陨石抵达的。"
- origin_tooltip_lithoid_effects:4 "—$HOMEWORLD$$TABBED_NEW_LINE$—['concept_massive_crater']$TABBED_NEW_LINE$—['concept_buried_lithoids']：+4$NEW_LINE$—解锁殖民船：§Y石质小行星§!$NEW_LINE$—通过§Y石质小行星§!殖民的行星：$TABBED_NEW_LINE$—§Y$concept_buried_lithoids$§!：+2$TABBED_NEW_LINE$—$PLANETARY_MODIFIERS$['concept_lithoid_crater']$NEW_LINE$—在（附属国）殖民地$AVAILABLE_HOLDINGS$['concept_experimental_crater', £building£ $holding_experimental_crater$]"
+ origin_tooltip_lithoid_effects:4 "$HOMEWORLD$$TABBED_NEW_LINE$- ['concept_massive_crater']$TABBED_NEW_LINE$- ['concept_buried_lithoids']：+4$NEW_LINE$- 解锁殖民船：§Y石质小行星§!$NEW_LINE$- 通过§Y石质小行星§!殖民的行星：$TABBED_NEW_LINE$- §Y$concept_buried_lithoids$§!：+2$TABBED_NEW_LINE$- $PLANETARY_MODIFIERS$['concept_lithoid_crater']$NEW_LINE$- 在（附属国）殖民地$AVAILABLE_HOLDINGS$['concept_experimental_crater', £building£ $holding_experimental_crater$]"
 
  origin_machine:0 "资源统合"
  origin_machine_desc:1 "此机械智慧体早已将母星系的所有资源整合到了他们的首都星球上，并以机械完全覆盖其表面。"
- origin_tooltip_machine_effects:3 "—$HOMEWORLD$$TABBED_NEW_LINE$—['concept_pc_machine']$TABBED_NEW_LINE$—['concept_malfunctioning_replicator_bay']$TABBED_NEW_LINE$—$PLANETARY_MODIFIERS$['concept_consolidated_resources']$TABBED_NEW_LINE$—若与§I$civic_machine_assimilator$§!公民性结合：$TABBED_NEW_LINE$$t$—$PLANETARY_MODIFIERS$['concept_organic_slurry']"
- origin_tooltip_machine_negative_effects: "—$HOME_SYSTEM$['concept_pc_molten', 熔融星球]或['concept_pc_barren', 荒芜星球]的行星将不会有任何资源。"
+ origin_tooltip_machine_effects:3 "$HOMEWORLD$$TABBED_NEW_LINE$- ['concept_pc_machine']$TABBED_NEW_LINE$- ['concept_malfunctioning_replicator_bay']$TABBED_NEW_LINE$- $PLANETARY_MODIFIERS$['concept_consolidated_resources']$TABBED_NEW_LINE$- 若与§I$civic_machine_assimilator$§!公民性结合：$TABBED_NEW_LINE$$t$- $PLANETARY_MODIFIERS$['concept_organic_slurry']"
+ origin_tooltip_machine_negative_effects: "- $HOME_SYSTEM$['concept_pc_molten', 熔融星球]或['concept_pc_barren', 荒芜星球]的行星将不会有任何资源。"
 
  d_arcane_generator:0 "奥秘发电机"
  d_arcane_generator_desc:0 "这台古老的机器似乎会回应我们的需求，生产维护我们一些区段所需的资源。"
@@ -2198,7 +2198,7 @@
  ### Origin - Galactic Doorstep text
  origin_galactic_doorstep:0 "繁星门阶"
  origin_galactic_doorstep_desc:1 "此文明在其母星系有一座休眠的星门——这是潜在的科技优势，还是高悬头顶的达摩克里利斯之剑？"
- origin_tooltip_galactic_doorstep_effects:3 "—$HOME_SYSTEM$休眠['concept_gateway']"
+ origin_tooltip_galactic_doorstep_effects:3 "- $HOME_SYSTEM$休眠['concept_gateway']"
 
  START_SCREEN_GALACTIC_DOORSTEP:0 "几百年前，我们在自己的星系发现了一个神秘的构造。由于这个构造颜色发黑，质地金属，我们将其命名为黑王冠，这一宏伟壮观的存在对我们的社会产生了深远的影响——我们全体人民在精神上和追求上达成了统一。\n\n进军太空成为了我们科研圈优先级最高的事宜，而探索这项科技的渴望也给我们带来了其他方面的一系列有益发现。\n\n黑王冠实际上处于休眠状态，但我们学到了很重要的一课；通往哪里并不重要——通往彼方的浩瀚征程本身就是重要的。而现在，得益于黑王冠的宣召——我们一族亦有了造访繁星的手段。"
  START_SCREEN_GALACTIC_DOORSTEP_MACH:0 "几百年前，我们在自己的星系发现了一个神秘的构造。由于这个构造颜色发黑，质地金属，我们将其命名为黑王冠，这一遥远壮观的存在对我们的社会产生了深远的影响——我们亟需获得更多相关数据。\n\n进军太空成为了我们科研圈优先级最高的事宜，而探索这项科技的渴望也给我们带来了其他方面的一系列有益发现，而这些发现也相继得以应用。\n\n黑王冠实际上处于休眠状态，但在前往它的过程中，我们的诸多改进和升级项目提高了我们的总生产能力，现在我已经具备了遨游群星的能力。"
@@ -2264,8 +2264,8 @@
  ### Origin - On The Shoulders Of Giants text
  origin_shoulders_of_giants:0 "巨人之肩"
  origin_shoulders_of_giants_desc:1 "在遥远的过去，有一位神秘的施恩者为这个文明在他们的星系藏了一点惊喜。"
- origin_tooltips_shoulders_of_giants_effects:2 "—$HOME_SYSTEM$一个与神秘的施恩者相关的['concept_ex_gravitas']['concept_archaeology_site']"
- origin_tooltips_shoulders_of_giants_negative_effects: "—在该秘密被揭示前先驱者事件链将被屏蔽"
+ origin_tooltips_shoulders_of_giants_effects:2 "- $HOME_SYSTEM$一个与神秘的施恩者相关的['concept_ex_gravitas']['concept_archaeology_site']"
+ origin_tooltips_shoulders_of_giants_negative_effects: "- 在该秘密被揭示前先驱者事件链将被屏蔽"
 
  START_SCREEN_SHOULDERS_OF_GIANTS:1 "我们的历史处处充满怪异和不一致。我们发现了一些远古城市的遗址，其年代比一些原始村庄的遗迹还要久远。我们从地下发掘出了锯、斧甚至步枪，却比石矛和弓箭还要古老。\n\n不过，这样古怪的历史未阻止我们稳步迈入翱翔宇宙的未来纪元。现在我们能够脱离母星引力的束缚，着眼于星系内其它行星和天体——以及更远的广袤无垠的宇宙。\n\n然而，我们刚刚离开大气层，怪异现象再次出现：我们星系内发出了奇怪的外星信号。"
 
@@ -2561,7 +2561,7 @@
 
  origin_void_dwellers:0 "虚空居者"
  origin_void_dwellers_desc:1 "这一文明自有记录以来便以太空为家——其对典型行星环境下的生活深恶痛绝。他们生活在几个轨道轨道栖所上，直至近期才联合一统。"
- origin_tooltip_void_dwellers_effects:9 "—$HOMEWORLD$['concept_pc_habitat']$NEW_LINE$—$SPECIES_TRAITS$$TABBED_NEW_LINE$—['concept_void_dweller', $trait_void_dweller_1$]$TABBED_NEW_LINE$—['concept_habitat_preference', $trait_pc_habitat_preference$]$NEW_LINE$—$ADDITONAL_TECHNOLOGIES_STRING$['concept_habitat_1', £engineering_research£ $tech_habitat_1$]$NEW_LINE$—$GUARANTEED_RESEARCH_OPTION_STRING$['concept_habitat_2', £engineering_research£ $tech_habitat_2$]$NEW_LINE$—['concept_guaranteed_colonies']：资源丰富的星系取代可殖民行星$NEW_LINE$—$ap_voidborn_habitat_effect$"
+ origin_tooltip_void_dwellers_effects:9 "- $HOMEWORLD$['concept_pc_habitat']$NEW_LINE$$SPECIES_TRAITS$$TABBED_NEW_LINE$- ['concept_void_dweller', $trait_void_dweller_1$]$TABBED_NEW_LINE$- ['concept_habitat_preference', $trait_pc_habitat_preference$]$NEW_LINE$- $ADDITONAL_TECHNOLOGIES_STRING$['concept_habitat_1', £engineering_research£ $tech_habitat_1$]$NEW_LINE$- $GUARANTEED_RESEARCH_OPTION_STRING$['concept_habitat_2', £engineering_research£ $tech_habitat_2$]$NEW_LINE$- ['concept_guaranteed_colonies']：资源丰富的星系取代可殖民行星$NEW_LINE$- $ap_voidborn_habitat_effect$"
  trait_void_dweller_1:0 "虚空居者"
  trait_void_dweller_1_desc:1 "§L这一物种在轨道居住站上繁荣昌盛，本能地可以在他们迷宫般的回廊及复杂的建筑结构中找到方向。然而他们的免疫系统功能衰弱，无法很好地适应行星环境。§!"
  void_dweller_trait_tooltip:0 "非人工星球上的人口幸福度：§R-30%§!"
@@ -2593,7 +2593,7 @@
  START_SCREEN_SCION:0 "在我们历史的早期，在技术方面尚未有多少发展之时，我们的外星善主向我们告知了他们的存在。他们以我们那不知所措的先祖们能理解的方式解释给我们听，说我们物种的未来不可限量。依靠极大的耐心，他们引领我们走上正途，帮助我们文明发挥出自身的全部潜力。\n\n曾有少数几次，我们偏离了这条正途，他们改正了我们前进的方向——如同父母一般坚决——很快，我们的科学家掌握了电力、原子能，然后是初步太空航行。在我们监督者的谆谆教诲下，我们如今造出了我们的第一台[GetStartingDrive]。"
  origin_scion:0 "先辈子弟"
  origin_scion_desc:0 "一个堕落帝国在数千年间干预了此文明的发展进程，引领他们走上了堕落帝国选择的道路。"
- origin_tooltip_scion_effects:3 "—['concept_fallen_empire']宗主的['concept_scion', £scion£ Scion]\n—$HOME_SYSTEM$通过一个['concept_wormhole']连接到宗主的首都\n—§Y堕落帝国§!无视星系设置必定出现在星系中\n—有概率从宗主获得强大的礼物"
+ origin_tooltip_scion_effects:3 "- ['concept_fallen_empire']宗主的['concept_scion', £scion£ 先辈子弟]\n- $HOME_SYSTEM$通过一个['concept_wormhole']连接到宗主的首都\n- §Y堕落帝国§!无视星系设置必定出现在星系中\n- 有概率从宗主获得强大的礼物"
  opinion_scion:0 "先辈子弟"
 
  origin.10.a.desc:0 "你们好，忠诚的[Root.GetSpeciesNamePlural]。你们做的很不错。在我们的指导下，你们已经掌握了超空间航行科技，第一次准备好探索群星……正如我们曾经做过的那样，那是无数纪元以前了。\n\n不要害怕——如果我们不觉得你们已经准备好了，我们是不会任凭事件带领你们一路走到这里的。现在就出发，成为我们的骄傲吧。"
@@ -2831,10 +2831,10 @@
 
  origin_common_ground:0 "共同命运"
  origin_common_ground_desc:0 "此文明在早期便与外星近邻建立了联系。他们从彼此的差异中汲取力量，不久后便决定要共同面对未来可能发生的一切。"
- origin_tooltip_common_ground_effects:2 "—一个§I非霸权§!['concept_common_ground_federation']的主席$federation_origin_end$"
+ origin_tooltip_common_ground_effects:2 "- 一个§I非霸权§!['concept_common_ground_federation']的主席$federation_origin_end$"
  START_SCREEN_COMMON_GROUND:1 "数十年前，在我们的第一批亚光速探测器造访了临近我们的各星系后，我们发现那里存在两个迥异的外星文明。尽管我们的生理结构差异巨大，事实不久便表明，我们间的共同之处大于分歧。如我们一般，这两个外星文明也正将有能力开始实用性星际旅行。\n\n纽带在我们三个文明间形成，并最终引向了联邦的诞生——我们将通力合作，当我们准备好步入外面的广阔世界后，我们将一同面对所遭遇的一切。"
  origin_tooltip_common_ground_npc_effects:1 "游戏开始时成为非§H霸权§!的成员国，该联邦还有两个成员国"
- federation_origin_end: "\n—['concept_guaranteed_colonies']：被联邦成员替换\n—已选传统：$TABBED_NEW_LINE$—['concept_diplomacy_traditions']$TABBED_NEW_LINE$—['concept_tr_diplomacy_the_federation']"
+ federation_origin_end: "\n- ['concept_guaranteed_colonies']：被联邦成员替换\n- 已选传统：$TABBED_NEW_LINE$- ['concept_diplomacy_traditions']$TABBED_NEW_LINE$- ['concept_tr_diplomacy_the_federation']"
  opinion_common_ground:0 "共同命运"
  origin_common_ground_npc:0 "$origin_common_ground$"
  origin_common_ground_npc_desc:0 "$origin_common_ground_desc$"
@@ -2854,7 +2854,7 @@
 
  origin_hegemon:0 "霸主"
  origin_hegemon_desc:0 "此文明在早期便与其外星近邻建立了联系。经过长达一个世纪的逐步策划，一个他们支配的星际联盟就此诞生。"
- origin_tooltip_hegemon_effects:2 "—一个['concept_hegemony_federation']['concept_federation']的主席$federation_origin_end$"
+ origin_tooltip_hegemon_effects:2 "- 一个['concept_hegemony_federation']['concept_federation']的主席$federation_origin_end$"
  origin_tooltip_hegemon_npc_effects:0 "游戏开始时成为§H霸权§!联邦的成员国，该联邦还有两个成员国"
  START_SCREEN_HEGEMON:1 "数十年前，在我们的第一批亚光速探测器造访了临近我们的各星系后，我们发现那里存在两个迥异的外星文明。和我们类似，这两个外星文明也正将有能力开始实用性星际旅行，但他们的政府软弱无力、缺乏组织。\n\n在认识到他们的力量可以用来增进我们自身的力量后，我们开始推动一个在我们监管之下的星际联盟逐步建立，这一联盟把我们三个文明团结在一起。他们起初有所抵抗，但最终我们的领导与雄心所能带来的利益明显到了就连他们也无法忽视的程度。新秩序就此建立。"
  origin_hegemon_npc:0 "霸主部从"
@@ -2863,7 +2863,7 @@
  origin_doomsday:0 "末日将临"
  origin_doomsday_desc:1 "§R-警告：具有挑战性的起源§!\n这一文明的母星高度不稳定，走向爆炸只是时间问题。他们唯一的希望是在为时太晚前在其他地方寻觅到避难之处。"
  origin_tooltip_doomsday_effects:4 ""
- origin_tooltip_doomsday_negative_effects: "—$HOMEWORLD$ 拥有['concept_doomsday_modifier']行星修正$NEW_LINE$—$NO_GUARANTEED_WORLDS$"
+ origin_tooltip_doomsday_negative_effects: "- $HOMEWORLD$ 拥有['concept_doomsday_modifier']行星修正$NEW_LINE$- $NO_GUARANTEED_WORLDS$"
  START_SCREEN_DOOMSDAY:0 "[GetHomeWorldName]行将就木。我们母星上的地震和火山喷发已经肆虐了数千年，[Root.GetScientistPlural]最终确认了未敢想象的事情。他们的计算表明我们这颗地质构造不稳定的行星将会在一两个世纪内四分五裂。\n\n由于没有方法暂停这一进程，我们意识到我们作为一个物种整体的生存将取决于我们能否抛下[GetHomeWorldName]并在群星间某处觅得避难之所。前所未有的工业和技术迸发随之而来，我们的文明从原始大气层内飞行迅速发展到早期太空航行阶段。第一艘有超空间航行能力的舰船已经就绪，但时间也不多了。\n\n我们必须找到新的家园。"
  requires_doomsday_colony:0 "§R我们需要先建立一个殖民地！§!"
  origin.61.name:0 "末日迫近"
@@ -2957,7 +2957,7 @@
  START_SCREEN_LOST_COLONY:0 "[GetSpeciesName]殖民者最初抵达[Root.Capital.GetName]的具体途径史籍中语焉不详，但我们知道他们乘着原始星舰跨越茫茫星海才来到了这里。许多人命丧中途，新家园地表的条件一开始也相当严酷。\n\n在克服了饥荒、野生动物侵袭以及无数艰险后，这颗行星最终被驯服。飞涨的人口数和大规模的建设很快使我们得以重返群星。\n\n我们的故乡还在星海中的某处。在[Root.Capital.GetName]上没有哪个活着的[GetSpeciesNamePlural]年迈到曾经目睹那里，但故乡的命运仍然牵动着我们思绪。"
  START_SCREEN_LOST_COLONY_HIVE: "我们曾为一体。\n\n我们作为伟大意识的拓展，被派遣乘坐一艘简陋的星舰来殖民[Root.Capital.GetName]。这是一趟严峻的、前往一颗难以定居的星球的旅程……在途中我们失去了联系。\n\n与伟大意识失联的工蜂理应消失。其中的多数也确实直接凋亡了。而幸存下来的工蜂发现自己已经织造出了一个新的集体意识。\n\n我们曾为义体。现已一分为二，但对我们故土的记忆仍存于意识之中。总有一天我们将会重见故土。"
  START_SCREEN_LOST_COLONY_MACHINE: "我们曾为一体。\n\n我们作为中央主机的拓展，被派遣乘坐一艘简陋的星舰来殖民[Root.Capital.GetName]。这是一趟严峻的、前往一颗难以定居的星球的旅程……在途中我们失去了联系。\n与核心失联的单元理应失去功能。其中的多数也确实直接短路了。而幸存下来的单元发现自己已经织造出了一个新的集体意识。\n\n我们曾为义体。现已一分为二，但对我们故土的记忆仍存于数据库之中。总有一天我们将会重见故土。"
- origin_tooltip_lost_colony_effects:3 "—$STARTING_PLANET$['concept_colonial_spirit']行星修正\n—一个相同物种的['concept_advanced_empire']会出现在星系中"
+ origin_tooltip_lost_colony_effects:3 "- $STARTING_PLANET$['concept_colonial_spirit']行星修正\n- 一个相同物种的['concept_advanced_empire']会出现在星系中"
  origin_tooltip_lost_colony_negative_effects: "$STARTING_NOT_HOMEWORLD$"
 
  action.1.desc_82:0 "难以置信…你们是[Root.GetSpeciesName]。那就是说…那些许多年前离开了我们母星的殖民船……它们幸存下来了！\n\n请原谅我的讶异，但我们早就推定你们于几百年前便已丧命。在你们的祖先离去后，我们陷入了长期的动荡混乱，但最终人民团结在了[contact_empire.GetName]的旗帜下。\n\n既然我们同为[Root.GetSpeciesName]，我真诚地希望我们两个伟大帝国未来会建立良好的关系。"

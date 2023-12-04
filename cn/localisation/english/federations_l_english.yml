@@ -34,8 +34,8 @@
  origin_default_desc:1 "通过斗争和胜利，这个社会已经实现了每一个年轻文明的抱负：一个有着统一目标的家园，一条通向璀璨繁星的道路。"
  origin_tooltip_default_effects_start: "- $INITIAL_POPS$§G+4§!$NEW_LINE$$HOMEWORLD$$TABBED_NEW_LINE$- ['concept_generator_district', £district£ $district_generator_plural$]：§G+1§!"
  origin_tooltip_default_effects_end: "$TABBED_NEW_LINE$- $PLANETARY_MODIFIERS$ ['concept_prosp_uni']$NEW_LINE$- $GUARANTEED_RESEARCH_OPTION_STRING$ ['concept_planetary_unification', £society_research£ $tech_planetary_unification$]"
- origin_tooltip_default_effects:3 "$origin_tooltip_default_effects_start$$TABBED_NEW_LINE$—['concept_farming_district', £district£ $district_farming_plural$]：§G+1§!$origin_tooltip_default_effects_end$"
- origin_tooltip_default_effects_lithoid: "$origin_tooltip_default_effects_start$$TABBED_NEW_LINE$—['concept_mining_district', £district£ $district_mining_plural$]：§G+1§!$origin_tooltip_default_effects_end$"
+ origin_tooltip_default_effects:3 "$origin_tooltip_default_effects_start$$TABBED_NEW_LINE$- ['concept_farming_district', £district£ $district_farming_plural$]：§G+1§!$origin_tooltip_default_effects_end$"
+ origin_tooltip_default_effects_lithoid: "$origin_tooltip_default_effects_start$$TABBED_NEW_LINE$- ['concept_mining_district', £district£ $district_mining_plural$]：§G+1§!$origin_tooltip_default_effects_end$"
 
  origin_mechanists:0 "$civic_mechanists$"
  origin_mechanists_desc:0 "此文明自打蒸汽时代早期便醉心于金属自动机的构想。尽管许多人表示这是不可能做到的，但第一台真正的机器人早就出厂了，远早于初步太空飞行的实现。"
@@ -45,7 +45,7 @@
  origin_tooltip_syncretic_evolution_effects: "- 具有['concept_syncretic_proles']特质的£pop£§I人口§!：12"
  origin_life_seeded:0 "$civic_life_seeded$"
  origin_life_seeded_desc:0 "此文明在乐土演化发展，也许是专为他们打造的乐土。"
- origin_tooltip_life_seeded_effects: "- 拥有§I稀有行星特征§!的$HOMEWORLD$['concept_pc_gaia']（规模：£planetsize£30）$NEW_LINE- $SPECIES_TRAITS$['concept_gaia_preference']"
+ origin_tooltip_life_seeded_effects: "- 拥有§I稀有行星特征§!的$HOMEWORLD$['concept_pc_gaia']（规模：£planetsize£30）$NEW_LINE$- $SPECIES_TRAITS$['concept_gaia_preference']"
  origin_tooltip_life_seeded_negative_effects: "- $NO_GUARANTEED_WORLDS$"
  origin_post_apocalyptic:0 "$civic_post_apocalyptic$"
  origin_life_seeded_habinte: "$origin_life_seeded$"
@@ -70,11 +70,11 @@
 
  origin_lithoid:0 "降世灾星"
  origin_lithoid_desc:2 "这些石质类并非他们“母星”的原住民，而是随着一颗猛烈撞击该行星、杀死了大多数原住生命的陨石抵达的。"
- origin_tooltip_lithoid_effects:4 "$HOMEWORLD$$TABBED_NEW_LINE$- ['concept_massive_crater']$TABBED_NEW_LINE$- ['concept_buried_lithoids']：+4$NEW_LINE$- 解锁殖民船：§Y石质小行星§!$NEW_LINE$- 通过§Y石质小行星§!殖民的行星：$TABBED_NEW_LINE$- §Y$concept_buried_lithoids$§!：+2$TABBED_NEW_LINE$- $PLANETARY_MODIFIERS$['concept_lithoid_crater']$NEW_LINE$- 在（附属国）殖民地$AVAILABLE_HOLDINGS$['concept_experimental_crater', £building£ $holding_experimental_crater$]"
+ origin_tooltip_lithoid_effects:4 "- $HOMEWORLD$$TABBED_NEW_LINE$- ['concept_massive_crater']$TABBED_NEW_LINE$- ['concept_buried_lithoids']：+4$NEW_LINE$- 解锁殖民船：§Y石质小行星§!$NEW_LINE$- 通过§Y石质小行星§!殖民的行星：$TABBED_NEW_LINE$- §Y$concept_buried_lithoids$§!：+2$TABBED_NEW_LINE$- $PLANETARY_MODIFIERS$['concept_lithoid_crater']$NEW_LINE$- 在（附属国）殖民地$AVAILABLE_HOLDINGS$['concept_experimental_crater', £building£ $holding_experimental_crater$]"
 
  origin_machine:0 "资源统合"
  origin_machine_desc:1 "此机械智慧体早已将母星系的所有资源整合到了他们的首都星球上，并以机械完全覆盖其表面。"
- origin_tooltip_machine_effects:3 "$HOMEWORLD$$TABBED_NEW_LINE$- ['concept_pc_machine']$TABBED_NEW_LINE$- ['concept_malfunctioning_replicator_bay']$TABBED_NEW_LINE$- $PLANETARY_MODIFIERS$['concept_consolidated_resources']$TABBED_NEW_LINE$- 若与§I$civic_machine_assimilator$§!公民性结合：$TABBED_NEW_LINE$$t$- $PLANETARY_MODIFIERS$['concept_organic_slurry']"
+ origin_tooltip_machine_effects:3 "- $HOMEWORLD$$TABBED_NEW_LINE$- ['concept_pc_machine']$TABBED_NEW_LINE$- ['concept_malfunctioning_replicator_bay']$TABBED_NEW_LINE$- $PLANETARY_MODIFIERS$['concept_consolidated_resources']$TABBED_NEW_LINE$- 若与§I$civic_machine_assimilator$§!公民性结合：$TABBED_NEW_LINE$$t$- $PLANETARY_MODIFIERS$['concept_organic_slurry']"
  origin_tooltip_machine_negative_effects: "- $HOME_SYSTEM$['concept_pc_molten', 熔融星球]或['concept_pc_barren', 荒芜星球]的行星将不会有任何资源。"
 
  d_arcane_generator:0 "奥秘发电机"
@@ -2861,7 +2861,7 @@
  origin_hegemon_npc_desc:0 "此文明在早期便与其外星近邻建立了联系。经过长达一个世纪的时间，他们成为了其中一个临近文明的部从。那个文明策划了与他们的星际联盟的诞生，并成为了联盟主席。"
 
  origin_doomsday:0 "末日将临"
- origin_doomsday_desc:1 "§R-警告：具有挑战性的起源§!\n这一文明的母星高度不稳定，走向爆炸只是时间问题。他们唯一的希望是在为时太晚前在其他地方寻觅到避难之处。"
+ origin_doomsday_desc:1 "§R警告：具有挑战性的起源§!\n这一文明的母星高度不稳定，走向爆炸只是时间问题。他们唯一的希望是在为时太晚前在其他地方寻觅到避难之处。"
  origin_tooltip_doomsday_effects:4 ""
  origin_tooltip_doomsday_negative_effects: "- $HOMEWORLD$ 拥有['concept_doomsday_modifier']行星修正$NEW_LINE$- $NO_GUARANTEED_WORLDS$"
  START_SCREEN_DOOMSDAY:0 "[GetHomeWorldName]行将就木。我们母星上的地震和火山喷发已经肆虐了数千年，[Root.GetScientistPlural]最终确认了未敢想象的事情。他们的计算表明我们这颗地质构造不稳定的行星将会在一两个世纪内四分五裂。\n\n由于没有方法暂停这一进程，我们意识到我们作为一个物种整体的生存将取决于我们能否抛下[GetHomeWorldName]并在群星间某处觅得避难之所。前所未有的工业和技术迸发随之而来，我们的文明从原始大气层内飞行迅速发展到早期太空航行阶段。第一艘有超空间航行能力的舰船已经就绪，但时间也不多了。\n\n我们必须找到新的家园。"

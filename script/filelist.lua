@@ -12,7 +12,7 @@ local function readfile(filename)
 	local dict = {}
 	local linen = 1
 	for line in f:lines() do
-		local key,dig,value = line:match("^ ([%w%._%-]+):(%d*) (.*)")
+		local key,dig,value = line:match("^ ?([%w%._%-]+):(%d*) (.*)")
 		if key then
 			dict[key] = { d = dig , v = value , filename = filename , line = linen}
 		end

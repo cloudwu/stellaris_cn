@@ -337,7 +337,7 @@ local function gen(output_path, input_path, filename, data)
 	local wf = assert(io.open(output_path .. filename, "wb"))
 
 	for line in f:lines() do
-		local key,dig,value = line:match("^ ([%w%._%-]+):(%d*) (.*)")
+		local key,dig,value = line:match("^ ?([%w%._%-]+):(%d*) (.*)")
 		if not key then
 			-- 不用翻译
 			wf:write(line, "\n")

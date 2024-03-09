@@ -428,21 +428,23 @@
  origin_riftworld: "Riftworld"
  origin_riftworld_desc: "A massive rift in space and time looms near this civilization's homeworld. After studying the phenomenon for millennia, recent advances in starship technology will allow them to finally reach out and discover what secrets it might hold."
  origin_tooltip_riftworld_effects: "- Homeworld: ['concept_riftworld_digsite'] ['concept_archaeology_site'] $NEW_LINE$- Chance for [ 'concept_astral_rift', $ASTRAL_RIFTS$ ] to appear in systems you control: §G+100%§!"
- START_SCREEN_RIFTWORLD: "For as long as we can remember, the Great Rift has loomed in the skies above [GetHomeWorldName]. Legends propose that our past is intimately entwined with this mysterious celestial scar and an ancient impact site near our capital.\n\nFor generations, the site was revered, but little understood. However, recent seismic activity has uncovered subsurface anomalies in the crater. Preparations are already underway to drill into its core. Opinions remain divided on what we may uncover there.\n\nIs it simple coincidence that this has occurred at the advent of Hyperdrive technology? Just as we reach for the heavens, our attention is pulled back to the ground. Perhaps what what lies beneath the surface of this world is meant to aid us on our journey to the stars. Perhaps it can prepare us for whatever lies beyond the Rift."
+ START_SCREEN_RIFTWORLD: "For as long as we can remember, the Great Rift has loomed in the skies above [GetHomeWorldName]. Legends propose that our past is intimately entwined with this mysterious celestial scar and an ancient impact site near our capital.\n\nFor generations, the site was revered, but little understood. However, recent seismic activity has uncovered subsurface anomalies in the crater. Preparations are already underway to drill into its core. Opinions remain divided on what we may uncover there.$START_SCREEN_RIFTWORLD_END$"
+ START_SCREEN_RIFTWORLD_MACHINE: "For as long as our databanks reach back, the Great Rift has loomed in the skies above [GetHomeWorldName]. Our internal clocks are synced with the frequency of the celestial scar and our earliest records describe an ancient impact site near our capital.\n\nFor many iterations, the site was left alone, but little understood. However, recent seismic activity has uncovered subsurface anomalies in the crater. Preparations are already underway to drill into its core.$START_SCREEN_RIFTWORLD_END$"
+ START_SCREEN_RIFTWORLD_END: "\n\nIs it simple coincidence that this has occurred at the advent of Hyperdrive technology? Just as we reach for the heavens, our attention is pulled back to the ground. Perhaps what what lies beneath the surface of this world is meant to aid us on our journey to the stars. Perhaps it can prepare us for whatever lies beyond the Rift."
 
  astral_planes.2105.name: "Strange Transmission"
- astral_planes.2105.desc: "In the aftermath of the exploration of the Astral Rift in §H[From.solar_system.GetName]§!, a mysterious transmission was received.\n\nOur scientists have determined its origin to be from beyond the rift itself, and have only been able to translate a few words."
+ astral_planes.2105.desc: "In the aftermath of the exploration of the Astral Rift in §H[From.solar_system.GetName]§!, a mysterious transmission was received.\n\nOur [GetScientistPlural] have determined its origin to be from beyond the rift itself, and have only been able to translate a few words."
 
  astral_planes.2110.name: "$astral_planes.2105.name$"
  astral_planes.2110.desc: "...attune... with the planes... we will find you..."
 
  astral_planes.2120.name: "Seismic Anomaly Detected"
- astral_planes.2120.desc: "Recent seismic activity has revealed unexpected features of the ancient impact site near our capital.\n\nThis specific crater has been linked to legends involving the very genesis of our species."
+ astral_planes.2120.desc: "Recent seismic activity has revealed unexpected features of the ancient impact site near our capital.\n\nThis specific crater has been linked to our very origin as [Owner.GetSpeciesNamePlural]."
 
  riftworld_digsite: "Ancient Crater"
  riftworld_digsite_desc: "We've detected anomalous seismic activity from deep inside an ancient crater on the surface of [Planet.GetName]. Underground sonar revealed a previously unknown cavity."
  astral_planes.2125.name: "High Speed Impact"
- astral_planes.2125.desc: "Initial excavations into the base of the crater revealed a fully-formed cylinder of impactite lodged deep into the earth.\n\nThis vein must have originated from a meteoric impact of extremely high velocity. Initial calculations demonstrate the object must have arrived at nearly the speed of light."
+ astral_planes.2125.desc: "Initial excavations into the base of the crater revealed a fully-formed cylinder of impactite lodged deep into the earth.\n\nThis vein must have originated from a meteoric impact of extremely high velocity. Initial calculations demonstrate the object must have arrived at a mesurable fraction of the speed of light. It's a wonder that it made it to the surface."
  astral_planes.2125.a: "Continue excavations."
  astral_planes.2130.name: "Underground Caverns"
  astral_planes.2130.desc: "At the termination point of the impactite vein, we have discovered an expansive cave system.\n\nPools of underground water support thin lines of pale vegetation along the cavern walls. At the bottom of one of these pools lies the remnants of an anomalous spherical object. It is not a natural formation, and appears to be the source of this impact site."
@@ -453,7 +455,11 @@
  astral_planes.2140.desc.common: "We have recovered a cache of documents from within the ancient sphere, each written in an archaic version of our own language. Several of these mention names associated with our most sacred legends.\n\nAn intricate network of ladders snakes upward from the impact site to a massive tunnel system. Based on the varying ages of the rope fibers, these caverns must have been occupied for several generations as the crash survivors worked their way toward the surface.\n\nHowever, nothing we'd discovered thus far could have prepared us for the final revelation: one of the upper chambers contained a burial site. DNA analysis conducted on the remains within revealed a shocking truth: these people are our ancestors.\n\nWhere exactly they came from, or why this place was forgotten, is yet unknown. The salvaged documents are in a poorly preserved state, but we have recovered a data log from the sphere. It clearly shows that the vessel arrived in our star system by means of the Astral Rift near [from.planet.GetName]."
  astral_planes.2140.desc.has_rift_sphere: "$astral_planes.2140.desc.common$\n\nWhile clearly less advanced than our own tech, this sphere is a testament to its builders desperation and ingenuity. This was a final effort to escape what must have been a terrible fate on the far side of the rift."
  astral_planes.2140.desc.default: "$astral_planes.2140.desc.common$\n\nWith some study, we should be able to replicate and even improve upon the technology required to construct a vessel with these dimension-spanning capabilities."
+ astral_planes.2140.desc.machine.common: "We have recovered a data cache from within the ancient sphere, a cache that was encoded in an archaic version of our file system.\n\nAn intricate network of ladders snakes upward from the impact site to a massive tunnel system. Based on the varying ages of the rope fibers, these caverns must have been occupied for several iterations as the crash survivors worked their way toward the surface.\n\nOne of the upper sites contained parts reminiscent of those used by our earliest models. These survivors were our predecesors.\n\nWhere exactly they came from, or why this location was lost, is yet unknown. The data long we recovered from the sphere clearly shows that the vessel arrived in our star system by means of the Astral Rift near [from.planet.GetName]."
+ astral_planes.2140.desc.machine.has_rift_sphere: "$astral_planes.2140.desc.machine.common$\n\nWhile clearly less advanced than our own tech, this sphere is a testament to its builders' desperation and ingenuity. This was a final effort to escape what must have been a terrible fate on the far side of the rift."
+ astral_planes.2140.desc.machine: "$astral_planes.2140.desc.machine.common$\n\nWith some study, we should be able to replicate and even improve upon the technology required to construct a vessel with these dimension-spanning capabilities."
  astral_planes.2140.a: "We have found our birthplace."
+ astral_planes.2140.a.synthetic: "We have found our crucible."
 
  #############################
  # Government & Empire Names #
@@ -549,7 +555,7 @@
  edict_dark_matter_forging_desc: "The unique binding properties of dark matter as a flux in our foundries increases the yield by appreciable amounts."
 
  edict_dark_matter_unravelling: "Dark Matter Unravelling"
- edict_dark_matter_unravelling_desc: "The energy contained within bonds formed by dark matter can be unravelled into a valuable output."
+ edict_dark_matter_unravelling_desc: "The energy contained within bonds formed by dark matter can be unraveled into a valuable output."
 
  edict_inner_focus: "Inner Focus"
  edict_inner_focus_desc: "Overextension of one's boundaries introduces a variety of risks. Understanding oneself is a more reliable and productive endeavor."
@@ -734,6 +740,9 @@
  NAME_FORMLESS_SYSTEM_GAIA: "zeya"
  NAME_Formless_System_Strange_Wormhole: "Strange Wormhole"
 
+ MESSAGE_RANDOM_POP_SETTLED_TITLE: "A New Beginning"
+ MESSAGE_RANDOM_POP_SETTLED: "New species from another dimension have settled on [this.GetName]."
+
 ######################################
 # Formless System Countries & Fleets #
 ######################################
@@ -887,7 +896,7 @@
  astral_planes.3170.desc: "though we know you...\nit is not our time to meet..."
 
  pm_formless_haven: "Formless Haven"
- pm_formless_haven_desc: "The last bastion of the beings known as the Formless. They have very little left to call home."
+ pm_formless_haven_desc: "The last bastion of the beings known as the Formless. Other-dimensional species will be settled here from time to time under their protection."
  pm_formless_haven_tt: "§YSpawn 5 Pops§! from another species on this planet"
 
  preset_luminarium: "Luminarium"

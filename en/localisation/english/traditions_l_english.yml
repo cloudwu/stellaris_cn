@@ -108,7 +108,6 @@
  tradition_domination_machine_desc:0 "We seek harmonious functionality throughout the entire galaxy. Other stellar beings resist this due to inefficient personal whims. We will remove their disorder like a malfunctioning part."
  tradition_domination_hive_desc:0 "Everything that is not Us must serve Us, either as servants, or as food."
  tr_domination_adopt:0 "Domination Traditions"
- tr_domination_adopt_void_desc:1 "§YHabitat§! £alloys£ Alloy Upkeep: §G-20%§!."
 
  tr_domination_colonial_viceroys:0 "Colonial Viceroys"
  #tr_domination_colonial_viceroys_desc:0 "§Y$MOD_LEADER_GOVERNOR_SKILL_LEVELS$§! increased by §Y2§!."
@@ -326,7 +325,7 @@
  #tr_supremacy_right_of_conquest_hive_delayed:0 "The others have strange minds. They react more strongly to a single drone being publicly dissolved in the digestion vats than to thousands killed by orbital bombardment. This kind of selective terrorization is effective at cowing their resistance."
 
  tr_supremacy_master_shipwrights:0 "Master Shipwrights"
- tr_supremacy_master_shipwrights_desc:6 "§Y$MOD_STARBASE_SHIPYARD_BUILD_COST_MULT$§! reduced by §G10%§! and §Y$MOD_STARBASE_SHIPYARD_BUILD_SPEED_MULT$§! increased by §G+25%§!."
+ tr_supremacy_master_shipwrights_desc:7 "§Y$MOD_STARBASE_SHIPYARD_BUILD_SPEED_MULT$§! increased by §G+25%§!."
  tr_supremacy_master_shipwrights_delayed:0 "The ever-increasing scope of our ship-building programs has led to the creation of highly-skilled and efficient labor forces at our shipyards. Methods have continually been refined, and the time it takes to go from hull plating to a completed starship is now shorter than ever before."
  tr_supremacy_master_shipwrights_hive:0 "Organic Architecture"
  tr_supremacy_master_shipwrights_hive_desc:0 "$tr_supremacy_master_shipwrights_desc$"
@@ -415,6 +414,8 @@
  MESSAGE_FAVOR_GAINED_TRADITION_DESC:0 "Thanks to the skill of our envoys, we have managed to gain a Favor from the $WHO|Y$."
 
  tr_diplomacy_finish:0 "Diplomacy Traditions Finished"
+ tr_diplomacy_federation_xp_gain: "Monthly Federation Experience Gain: §G+2§!\nDiplomatic Weight: §G+10§!\nAvailable Envoys: §G+1§!\nAscension Perks Unlocked: §G+1§!"
+ diplo_fed_xpboost: "$tr_diplomacy_finish$"
 
 ################################################################
 # ADAPTABILITY
@@ -449,8 +450,7 @@
  tr_adaptability_appropriation_delayed:0 "Land that is not being worked contributes nothing to our empire. Workers must be relocated in an efficient manner to those planets where they are needed most."
 
  tr_adaptability_finish:0 "Adaptability Traditions Finished"
- tr_adaptability_finish_desc:1 "Unlocks the §Y$decision_prospect$§! decision, which allows us to prospect for an additional resource deposit once on our planets."
- tr_adaptability_void_finish_desc:3 "Resources from Habitat Planetary Features: §G+50%§!\nAscension Perks Unlocked: §G+1§!"
+ tr_adaptability_finish_desc:1 "Increases §YColony Designation Bonuses§! for regular planets."
 
  decision_prospect_void:0 "Orbital Surveying"
  decision_prospect_void_short:0 "Allows construction of an additional random §YDistrict§! type on the habitat."
@@ -475,7 +475,6 @@
  tr_versatility_spatial_optimization_desc:0 "£pops£ §Y$MOD_POP_HOUSING_USAGE_MULT$§! reduced by §G10%§!."
  tr_versatility_spatial_optimization_delayed:1 "Retractable antennas, collapsible unit frames, foldable storage spaces. There are many creative solutions to make the most out of a limited space."
  tr_versatility_operational_proxies:0 "Operational Proxies"
- tr_versatility_operational_proxies_desc:3 "§Y$MOD_POP_RESETTLEMENT_COST_MULT$§! reduced by §G33%§!."
  tr_versatility_operational_proxies_delayed:2 "The delegation of additional category R-7 low priority functions to semi-autonomous agents will free up processing power for more important tasks such as drone relocation operations."
  tr_versatility_material_analysis:0 "Material Analysis"
  tr_versatility_material_analysis_desc:2 "§YUpkeep§! of all £job£ §YPop Jobs§! is reduced by §G5%§!."
@@ -483,7 +482,6 @@
  tr_versatility_universal_compatibility:0 "Universal Compatibility"
  tr_versatility_universal_compatibility_delayed:1 "A deeper analysis into the myriad stimuli and psychological factors that govern the behavior of organics and other machine intelligences will decrease diplomatic friction."
  tr_versatility_finish:0 "Versatility Traditions Finished"
- tr_versatility_finish_desc:1 "£job_maintenance_drone£ $job_maintenance_drone_plural$ produce §G+2§! $r_amenities$.\nAscension Perks Unlocked: §G+1§!"
 
 ################################################################
 # DISCOVERY
@@ -1063,7 +1061,7 @@ tr_enmity_consumate_contrarian_delayed: "Blocking the plans of the opposition ca
 
 tr_enmity_match: "Match"
 tr_enmity_match_delayed: "First, establish an equal playing field."
-tr_enmity_match_effect: "While Militarily weaker than a Rival:\n$t$Ship Build Cost: §G-10%§!\n$t$Ship Build Speed: §G+10%§!\nWhile Technologically weaker than a Rival:\n$t$Researcher Upkeep: §G-15%§!\n$t$Research Labs Build Speed: §G+100%§!\nWhile Economically weaker than a Rival:\n$t$[GetWorker] Output: §G+10%§!"
+tr_enmity_match_effect: "While Militarily weaker than a Rival:\n$t$Ship Build Cost: §G-5%§!\n$t$Ship Build Speed: §G+10%§!\nWhile Technologically weaker than a Rival:\n$t$Researcher Upkeep: §G-15%§!\n$t$Research Labs Build Speed: §G+100%§!\nWhile Economically weaker than a Rival:\n$t$[GetWorker] Output: §G+10%§!"
 
 tr_enmity_outpace: "Outpace"
 tr_enmity_outpace_delayed: "Second, make the move your foe is unwilling to."
@@ -1141,7 +1139,7 @@ reaffirmed_superiority_desc: "Our superiority is unassailable. No one is greater
  synthetic_empire_psionic_ascension:0 "$TRIGGER_FAIL$Synthetic empires are incapable of starting down the path to Psionic Ascension."
 
  allow_gaia:0 "Allows us to terraform worlds into §YGaia Planets§!."
- no_rev_engineering:1 "§Y$operation_steal_technology$§! operations will automatically fail when used against us and §YDebris§! from our destroyed ships cannot be studied by other empires."
+ no_rev_engineering:1 "§Y$operation_steal_technology$§! operations will automatically fail when used against us.\n§YDebris§! from our destroyed ships cannot be studied by other empires."
  allow_raiding:0 "Unlocks the §Y$bombardment_raiding$§! bombardment stance, which in turn allows us to abduct pops from besieged planets and resettle them to our own worlds."
 
  ap_defender_of_the_galaxy_effect_opinion:2 "Increases the £opinion£ §YOpinion§! of empires capable of regular diplomacy by §G+200§!"
@@ -1240,4 +1238,4 @@ reaffirmed_superiority_desc: "Our superiority is unassailable. No one is greater
 
  ap_mechromancy: "Mechromancy"
  ap_mechromancy_desc: "Biologicals are merely a different kind of machine. We can stimulate the appropriate synapses and reanimate these creatures, for our own benefit."
- ap_mechromancy_tt:1 "Defeated organic Leviathans can sometimes be resurrected.\nPurged Biological or Lithoid $pops_with_icon$ may be restored as Cyborg Zombies."
+ ap_mechromancy_tt:1 "Defeated organic Leviathans can sometimes be resurrected.\nPurged Sapient Biological or Lithoid $pops_with_icon$ have a 33% chance to be restored as Cyborg Zombies."

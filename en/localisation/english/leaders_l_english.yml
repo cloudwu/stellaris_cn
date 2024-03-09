@@ -180,6 +180,12 @@
  leader_trait_observant_2_machine:0 "$leader_trait_observant_machine$ II"
  leader_trait_observant_2_machine_desc:0 "$leader_trait_observant_machine_desc$"
 
+ leader_trait_resolution_category_focus_favor_intro: "$t$When you Support a Resolution that passes in this Category:\n$tt$"
+ leader_trait_resolution_category_focus_favor_outro: "Chance to gain 1 §YFavor§! with the Proposing Empire:"
+ leader_trait_resolution_category_focus_1_favor_tt: "$leader_trait_resolution_category_focus_favor_intro$$leader_trait_resolution_category_focus_favor_outro$ §G+$@resolution_focus_amt_1|0$%§!"
+ leader_trait_resolution_category_focus_2_favor_tt: "$leader_trait_resolution_category_focus_favor_intro$$leader_trait_resolution_category_focus_favor_outro$ §G+$@resolution_focus_amt_2|0$%§!"
+ leader_trait_resolution_category_focus_3_favor_tt: "$leader_trait_resolution_category_focus_favor_intro$$leader_trait_resolution_category_focus_favor_outro$ §G+$@resolution_focus_amt_3|0$%§!"
+
  leader_trait_resolution_category_commerce_focus: "Focus: Galactic Commerce"
  leader_trait_resolution_category_commerce_focus_desc: "This delegate takes a special interest in all matters related to Galactic Commerce."
 
@@ -189,9 +195,9 @@
  leader_trait_resolution_category_politics_traditions_focus: "Focus: Politics Traditions"
  leader_trait_resolution_category_politics_traditions_focus_desc: "This delegate takes a special interest in all matters related to Politics Traditions."
  leader_trait_resolution_category_politics_traditions_focus_tt: "$GALCOM_EFFECTS_TXT$$TABBED_NEW_LINE$Voting Strength on §YPolitics Traditions§! Resolutions:"
- leader_trait_resolution_category_politics_traditions_focus_1_tt: "$leader_trait_resolution_category_politics_traditions_focus_tt$ §G+5%§!"
- leader_trait_resolution_category_politics_traditions_focus_2_tt: "$leader_trait_resolution_category_politics_traditions_focus_tt$ §G+15%§!"
- leader_trait_resolution_category_politics_traditions_focus_3_tt: "$leader_trait_resolution_category_politics_traditions_focus_tt$ §G+25%§!"
+ leader_trait_resolution_category_politics_traditions_focus_1_tt: "$leader_trait_resolution_category_politics_traditions_focus_tt$ §G+5%§!\n$leader_trait_resolution_category_focus_1_favor_tt$"
+ leader_trait_resolution_category_politics_traditions_focus_2_tt: "$leader_trait_resolution_category_politics_traditions_focus_tt$ §G+15%§!\n$leader_trait_resolution_category_focus_2_favor_tt$"
+ leader_trait_resolution_category_politics_traditions_focus_3_tt: "$leader_trait_resolution_category_politics_traditions_focus_tt$ §G+25%§!\n$leader_trait_resolution_category_focus_3_favor_tt$"
 
  leader_trait_resolution_category_greatergood_focus: "Focus: The Greater Good"
  leader_trait_resolution_category_greatergood_focus_desc: "This delegate takes a special interest in all matters related to The Greater Good."
@@ -229,9 +235,9 @@
  leader_trait_resolution_category_sanctions_focus: "Focus: Sanctions"
  leader_trait_resolution_category_sanctions_focus_desc:  "This delegate takes a special interest in all matters related to Galactic Sanctions."
  leader_trait_resolution_category_sanctions_focus_tt: "$GALCOM_EFFECTS_TXT$$TABBED_NEW_LINE$Voting Strength on §YGalactic Sanctions§! Resolutions:"
- leader_trait_resolution_category_sanctions_focus_1_tt: "$leader_trait_resolution_category_sanctions_focus_tt$ §G+5%§!"
- leader_trait_resolution_category_sanctions_focus_2_tt: "$leader_trait_resolution_category_sanctions_focus_tt$ §G+15%§!"
- leader_trait_resolution_category_sanctions_focus_3_tt: "$leader_trait_resolution_category_sanctions_focus_tt$ §G+25%§!"
+ leader_trait_resolution_category_sanctions_focus_1_tt: "$leader_trait_resolution_category_sanctions_focus_tt$ §G+5%§!\n$leader_trait_resolution_category_focus_1_favor_tt$"
+ leader_trait_resolution_category_sanctions_focus_2_tt: "$leader_trait_resolution_category_sanctions_focus_tt$ §G+15%§!\n$leader_trait_resolution_category_focus_2_favor_tt$"
+ leader_trait_resolution_category_sanctions_focus_3_tt: "$leader_trait_resolution_category_sanctions_focus_tt$ §G+25%§!\n$leader_trait_resolution_category_focus_3_favor_tt$"
 
  leader_trait_supporting_voter: "Mutual Support"
  leader_trait_supporting_voter_desc: "This leader is always eager to congratulate others for their success."
@@ -239,6 +245,7 @@
 
  MESSAGE_SUPPORTING_VOTER: "Favor Gained"
  MESSAGE_FAVOR_SUPPORTING_VOTER_DESC: "Thanks to the skill of $LEADER$, we have managed to gain a Favor and 5 Trust with the $WHO|Y$."
+ MESSAGE_FAVOR_DELEGATE_FOCUS_DESC: "Thanks to the skill of $LEADER$, we have managed to gain a Favor with the $WHO|Y$."
 
  leader_trait_diplo_weight: "Gravitas"
  leader_trait_diplo_weight_desc: "There's a certain... something in the way this leader behaves that commands respect. When this delegate speaks, everyone stops to listen."

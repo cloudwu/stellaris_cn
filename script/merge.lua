@@ -10,10 +10,10 @@ local function readlist(path, ...)
 end
 
 local data = {
-	official_cn = readlist("cn3.10", list, { ["_english"] = "_simp_chinese" }),
+	official_cn = readlist("cn3.11", list, { ["_english"] = "_simp_chinese" }),
 	cloudwu_cn = readlist("cn_last", list),
-	en_last = readlist("en3.9", list),
-	en_current = readlist("en3.10", list),
+	en_last = readlist("en3.10", list),
+	en_current = readlist("en3.11", list),
 }
 
 local function english_only(en, s)
@@ -254,7 +254,7 @@ local function entry(data, key, diff)
 		end
 		return true
 	end
-
+	
 	if en then
 		-- 上一版也有该英文条目
 		if en.v == current_en then
@@ -342,7 +342,7 @@ local function gen(output_path, input_path, filename, data)
 			-- 不用翻译
 			wf:write(line, "\n")
 		else
-			local d = data.output[key]
+			local d = data.output[key] or error(key)
 			wf:write(" ", key, ":", dig, " " , d.v, "\n")
 		end
 	end
@@ -361,4 +361,4 @@ end
 
 output(data)
 
-output_diff(diff)
+--output_diff(diff)

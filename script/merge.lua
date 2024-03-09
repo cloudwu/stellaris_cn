@@ -32,6 +32,10 @@ local function english_only(en, s)
 	end
 end
 
+local function is_alias(v)
+	return v:sub(1,2) == '"$' and v:sub(-2) == '$"'
+end
+
 local function tags(s)
 	local r = {}
 	local n = 1
@@ -259,9 +263,19 @@ local function entry(data, key, diff)
 		-- 上一版也有该英文条目
 		if en.v == current_en then
 			-- 英文没有变化，保留上一版中文翻译
-			local cn = data.cloudwu_cn[key]
-			if cn then
-				r.v = cn.v
+			local last_cn = data.cloudwu_cn[key]
+			if last_cn then
+				if is_alias(last_cn.v) then
+					r.v = last_cn.v
+				else
+					local cn = data.official_cn[key]
+					if english_only(last_cn.v) and not english_only(cn.v) then
+						-- 上一版没有翻译，这一版翻译了
+						r.v = cn.v
+					else
+						r.v = last_cn.v
+					end
+				end
 			else
 				if get_official() then
 					mark "omit"

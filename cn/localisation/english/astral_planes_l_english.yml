@@ -294,6 +294,7 @@
  rift_samples_biology_modifier: "裂隙液体样本"
 
  warpling_army: "曲跃雏"
+ seq_warpling_army: "$ORD$ $warpling_army$"
  warpling_army_desc: "为战争而设计的超凡生物，这些全副武装的幼雏能够瞬间越过一小段空间，执行的包抄和伏击机动让敌人瞠目结舌。"
 
  flamestorm_troopers_army: "焰爆部队"
@@ -419,7 +420,7 @@
 
  trait_exd: "异次元体"
  trait_exd_desc: "这个物种起源于另一个维度，需要大量能量才能在我们的宇宙中生存。"
- TRAIT_EXD_EFFECT: "每个作为奴隶或更好标准的人口每月产生0.5£physics_research£§Y物理学研究§!点数"
+ TRAIT_EXD_EFFECT: "将$r_food$维护费替换为$r_energy$维护费\n每个作为奴隶或更好标准的人口每月产生0.5£physics_research£§Y物理学研究§!点数"
 
  ######################
  # Origin - Riftworld #
@@ -468,6 +469,7 @@
  gov_defensive_union: "防御性联盟"
  gov_defensive_union_desc: "该政府以互相低于外部威胁作为共同目标将人民团结到一起。"
  RT_DEFENSIVE_UNION: "至高盾卫"
+ HT_DEFENSIVE_UNION: "崇高卫士"
 
  Guardianship: "守护领"
  Protectorate: "保护国"
@@ -476,6 +478,7 @@
  gov_dimensional_covenant: "维度圣约"
  gov_dimensional_covenant_desc: "该社会以一种深层的灵魂共识作为基石。他们施加严格的道德规范以确保最广大人民能笃信来世。"
  RT_DIMENSIONAL_COVENANT: "第一先裔"
+ HT_DIMENSIONAL_COVENANT: "第二先裔"
 
  Church_of_Otherworlds: "异世教会"
  Astral_Fellowship: "星界团契"
@@ -504,6 +507,10 @@
  civic_corporate_hyperspace_specialty_desc: "时间就是金钱，而这个寰宇企业非常重视速度。对研发的大量投资已经得到了丰厚的回报，使得该公司拥有了独家使用尖端超空间操纵技术的权限。"
  civic_corporate_hyperspace_specialty_effects: "$civic_hyperspace_specialty_effects$"
 
+ civic_tooltip_not_hyperspace_specialty: "没有['concept_hyperspace_specialty_civics']类公民性"
+ concept_hyperspace_specialty_civics: "超空间特长"
+ concept_hyperspace_specialty_civics_desc: "$concept_hyperspace_specialty_civics$类公民性包括\n—['civic:civic_hyperspace_specialty']$NEW_LINE$—['civic:civic_corporate_hyperspace_specialty']$NEW_LINE$—['civic:civic_hive_hyperspace_specialty']$NEW_LINE$—['civic:civic_machine_hyperspace_specialty']"
+
  civic_dimensional_worship: "维度崇拜"
  civic_dimensional_worship_desc: "这个社会相信，在时空的褶皱之外有着神圣的存在。对他们来说，不稳定度最高的系统具有神圣的意义，既是朝圣地，也是研究的场所。"
  civic_dimensional_worship_effects: "允许建造一处§Y$sm_dimensional_shrine$§!太空基地建筑，该星系必须包含一个§Y$WORMHOLE$§!、§Y$pc_rift_star$§!、§Y$ASTRAL_RIFT$§!、§Y$LGATE_GALACTIC$§!或者§Y$SHROUD_TUNNEL_GALACTIC$§!。\n每个§Y$sm_dimensional_shrine$§!给予§G+$@dimensional_shrine_unity_production$§! £unity£。"
@@ -512,12 +519,20 @@
  civic_corporate_dimensional_worship_desc: "$civic_dimensional_worship_desc$"
  civic_corporate_dimensional_worship_effects: "$civic_dimensional_worship_effects$"
 
+ civic_tooltip_not_dimensional_worship: "没有['concept_dimensional_worship_civics']类公民性"
+ concept_dimensional_worship_civics: "维度崇拜"
+ concept_dimensional_worship_civics_desc: "$concept_dimensional_worship_civics$ 类包括以下几种：\n—['civic:civic_dimensional_worship']$NEW_LINE$—['civic:civic_corporate_dimensional_worship']"
+
  civic_dark_consortium: "暗之联盟"
  civic_dark_consortium_desc: "对宇宙结构的深入理解使得这个社会在超空间引擎的发现之前就能够利用神秘的暗物质特性。"
  civic_dark_consortium_effects: "开局就已经完成£physics£§Y$tech_mine_dark_matter$§!的研究。\n解锁特殊§S法令§!。\n解锁§Y$council_agenda_agenda_dark_matter_breakthrough_name$§!理事会议程。"
  civic_corporate_dark_consortium: "暗影公司"
  civic_corporate_dark_consortium_desc: "$civic_dark_consortium_desc$"
  civic_corporate_dark_consortium_effects: "$civic_dark_consortium_effects$"
+
+ civic_tooltip_not_dark_consortium: "没有['concept_dark_consortium_civics']类公民性"
+ concept_dark_consortium_civics: "暗之联盟"
+ concept_dark_consortium_civics_desc: "$concept_dark_consortium_civics$类包括以下几种：\n['civic:civic_dark_consortium']$NEW_LINE$—['civic:civic_corporate_dark_consortium']"
 
  civic_sovereign_guardianship: "主权监护"
  civic_sovereign_guardianship_desc: "这个由相互争斗的部落组成的集合，已经在长久的历史上形成了对固守领土和防御姿态的偏好。现在他们团结一致，准备将这种哲学带到星空中，旨在保持他们的边界稳固，并缓和紧张局势。"
@@ -532,6 +547,10 @@
  civic_corporate_sovereign_guardianship_desc: "这个由相互竞争的企业构成的社会已经认识到，对于他们的投资来说，最好的保护是强大的防御姿态。现在团结一致，他们准备将这一理念带到星空中，旨在保持边境稳固，缓解紧张局势。"
  civic_corporate_sovereign_guardianship_effects: "$civic_sovereign_guardianship_effects$"
  civic_sovereign_guardianship_effects_common: "允许在太空基地建造§Y$sm_reloading_bay$§!。\n启用§Y$edict_inner_focus$§!§H法令§!，将£influence£§Y影响力§!转化为£unity£§Y凝聚力§!。"
+
+ civic_tooltip_not_guardian: "没有['concept_guardian_civics']类公民性"
+ concept_guardian_civics: "主权监护"
+ concept_guardian_civics_desc: "$concept_guardian_civics$类公民性包括\n—['civic:civic_sovereign_guardianship']$NEW_LINE$—['civic:civic_corporate_sovereign_guardianship']$NEW_LINE$—['civic:civic_hive_sovereign_guardianship']$NEW_LINE$—['civic:civic_machine_sovereign_guardianship']"
 
  fanatic_guardian: "狂热监护者"
  fanatic_guardian_plural: "狂热监护者"
@@ -1017,8 +1036,8 @@
  astral_planes.6035.tt: "殖民地失去5£stability£§Y稳定度§!"
  conflicting_visions: "$astral_planes.6035.name$"
  astral_planes.6035.desc.common_1: "这种对当地的"
- astral_planes.6035.desc.common_2: "产生的爱好在[this.GetName]已经演变成了一股狂热。许多人都报告说，梦见了或看到了某个在我们之外的世界。\n\n其中一个团体宣称这个"
- astral_planes.6035.desc.common_3: "通往的是一个钟表宇宙的中心，那里有一个机械神，他会给时间表上发条，以在无尽的世界中保持平衡。\n\n与之相反，还有人说他们的梦境中出现了一个黑色的恒星，它拥有启蒙的关键。"
+ astral_planes.6035.desc.common_2: "产生的爱好在[this.GetName]已经演变成了一股狂热。许多人都报告称，看见了某个在我们世界之外的地方。\n\n其中一个团体宣称这个"
+ astral_planes.6035.desc.common_3: "通往的是一个发条宇宙的中心，那里有一个机械神，他会给时间表上发条，以在无尽的世界中保持平衡。\n\n与之相反，还有人说他们的幻境中出现了一颗黑色的恒星，它拥有启蒙的关键。"
  astral_planes.6035.desc.rift: "$astral_planes.6035.desc.common_1$$astral_rift$$astral_planes.6035.desc.common_2$裂隙$astral_planes.6035.desc.common_3$"
  astral_planes.6035.desc.scar: "$astral_planes.6035.desc.common_1$$pc_astral_scar$$astral_planes.6035.desc.common_2$裂痕$astral_planes.6035.desc.common_3$"
 
@@ -1030,7 +1049,7 @@
  widening_divide_4: "$widening_divide_1$"
  widening_divide_5: "$widening_divide_1$"
  widening_divide_6: "$widening_divide_1$"
- astral_planes.6040.desc.common: "人群之间的割裂在[this.GetName]上日益加剧。殖民者报告的奇怪梦境引发了激烈的辩论，最终导致了暴力行为的爆发。当地领导人呼吁发表一份官方的声明。\n\n尽管可能看起来荒谬，我们被要求为机械神或黑星的存在提供可信说明，作为"
+ astral_planes.6040.desc.common: "人群之间的割裂在[this.GetName]上日益加剧。殖民者报告的奇怪幻境引发了激烈的辩论，并最终演变为暴力事件。当地领导人呼吁发表一份官方的声明。\n\n尽管可能看起来荒谬，我们被要求为机械神或黑星的存在提供可信说明，作为"
  astral_planes.6040.desc.rift: "$astral_planes.6040.desc.common$$astral_rift$的解释。"
  astral_planes.6040.desc.scar: "$astral_planes.6040.desc.common$$pc_astral_scar$的解释。"
  astral_planes.6040.a: "机械神万万岁。"
@@ -1056,7 +1075,7 @@
 
  astral_planes.6055.name: "争论管制"
  astral_aficionados_modifier: "铁杆星粉"
- astral_planes.6055.desc.common: "所有关于[this.GetName]上的奇怪梦境的公开讨论已被禁止。任何被发现谈论这个禁忌话题的人都会受到严厉的惩罚，这已经阻止了公开冲突的发生。\n\n许多殖民者已经转而追求新的事业，但一小部分硬核的业余天文学家仍然享受着这个壮观景象，"
+ astral_planes.6055.desc.common: "所有关于[this.GetName]上的奇怪幻境的公开讨论已被禁止。任何被发现谈论这个禁忌话题的人都会受到严厉的惩罚，这就阻止了公开冲突的发生。\n\n许多殖民者已经转而追求新的热点，但一小部分硬核的业余天文学家仍然享受着这个壮观景象，"
  astral_planes.6055.desc.rift: "$astral_planes.6055.desc.common$继续观察$astral_rift$。"
  astral_planes.6055.desc.scar: "$astral_planes.6055.desc.common$继续观察$pc_astral_scar$。"
  astral_planes.6055.a: "可以理解的措施。"
@@ -1154,3 +1173,27 @@
 
  TUTORIAL_ASTRAL_RIFT_VIEW_TITLE: "星界裂隙界面"
  TUTORIAL_ASTRAL_RIFT_VIEW_DESC: "星界裂隙窗口显示当前选择的§S星界裂隙§!的详细信息。在项目进展的每个阶段，你需要根据提出给科学家下达命令，这将导致不同的、有时意想不到的结果。大多数征服星界裂隙的探险都有多条可供选择的路径。\n\n为了揭开某个星界裂隙的秘密，科学家必须取得§S突破§!，以在星界裂隙的每个阶段取得进展。具有相关§S特质和技能水平更高§!的科学家可以更快地抵达下一个阶段，而所选路径的难度评级更高将减慢进展速度。任何长时间调查裂隙的科学家都将积累§S线索§!，这将增加突破的可能性。\n\n在探索§S星界裂隙§!时，科学家被束缚在另一个维度中，直到探险完成才能解除其职务。由于以这种方式被困在时间和空间之外，他们不会因为年老而死亡。"
+
+#Mercedes Romero Lives!
+
+ astral_planes.6100.name: "最后的逃亡者"
+ astral_planes.6100.desc: "与[FromFromFrom.GetName]的裂隙探球一同从星界裂隙出现的，是一幅引起了我们注意的异常景象：探球的尾迹中跟随着一个休眠的逃生舱。很快，我们就收到了一个简单的求救信号，并附有实时视频。"
+ astral_planes.6100.b: "这与我们无关。"
+ astral_planes.6100.c: "把它当成射击靶。"
+
+ NAME_Mercedes: "梅赛德斯·罗梅罗"
+ Mercedes_DESC: "这位快乐的百岁老布洛葛对外星文化，尤其是人类充满热情。她勇敢地穿越了星际裂隙来到这里，任务是：交朋友。"
+ mercedes_catch_phrase: "我们可以交个朋友吗?"
+ astral_planes.6105.desc.reg: "§H这只令人厌恶的外星人站在我们面前，茫然地沉默着，全身上下只有菌毛在像波浪一样有节奏地起伏着。这只生物突然回过神来，挥动触角自我介绍道:§!\n\n啊？怎么？这是哪？抱歉。我叫梅赛德斯·罗梅罗，是布洛葛合众国的探险家和外交官。你听说过人类吗？"
+ astral_planes.6105.desc.human: "§H这只令人厌恶的外星人站在我们面前，茫然地沉默着，全身上下只有菌毛在像波浪一样有节奏地起伏着。在注意到我们之后，她几乎要猛扑上来，然后又控制住了自己。§!\n\n你们、你们是人类！？§H*尖叫*§!我——我太抱歉了，从我还是一只萌孢的时候就对你们的文化超级感兴趣！\n\n§H这只外星人伸出了一只触手，令人尴尬地尝试模仿握手动作。§!\n\n我叫梅赛德斯·罗梅罗，很高兴见到你们。"
+ astral_planes.6105.a: "你记得些什么吗？"
+ astral_planes.6105.a.response: "我最后的记忆是在心宿二星系。当时我和一群朋友在一起进行舰队行动，突然看到了一束强光。那之后就什么都不记得了。我是坐着逃生舱来的。孤独且无友。"
+ astral_planes.6105.b: "你为什么对人类如此感兴趣？"
+ astral_planes.6105.b.response: "欧，人类，最美妙的生物。我们布洛葛已经关注了他们几个世纪。其实，我们文化的大部分都是基于对人类生活的观察。色彩！戏剧！友谊！他们教会我们生活远不只是生存，甚至还可以交朋友！这个概念真是绝妙，简直可以说是奇迹！"
+ astral_planes.6105.c: "你能为我们做什么？"
+ astral_planes.6105.c.response: "这问题可真不友好，但我有求必应！当然，我有着上百年的驾驶科研船的经验，但我真正醉心的是跨星系关系。把我当成朋友，我可以帮你们交上更多的朋友。拜托了，如果你们感兴趣的话，务必让我代表你们的外交利益！"
+ astral_planes.6105.hire_custom_tooltip:0 "§Y$NAME_Mercedes$§!作为一名§H领袖§!加入了我们的帝国。"
+ leader_trait_blorg_insight: "布洛葛的洞见"
+ leader_trait_blorg_insight_desc: "该个体对一个特定直立哺乳类物种的广播和文化进行了上百年的研究，使其在渴望取悦他人方面变得肆无忌惮，或者说是厚颜无耻。"
+ blorg_insight_effect: "与§Y人类§!帝国§R-25§!评价。"
+ triggered_opinion_blorg_insight: "布洛葛的洞见"

@@ -131,7 +131,7 @@
  requires_another_consecration:1 "$TRIGGER_FAIL$ 需要§Y$r_toxic_god$§!的进一步激活。"
 
  toxoid_knights_finisher.poi.name:0 "$situation_toxic_knights$"
- toxoid_knights_finisher.poi.desc:0 "所有跟毒圣相关的线索都指向这里。我们必须彻底搜寻，探明长年以来我们苦苦追寻的存在的真身究竟是何方神圣。"
+ toxoid_knights_finisher.poi.desc:1 "所有跟毒圣相关的线索都指向这里。我们必须彻底搜寻，完成我们的试炼。"
 
  ##Situation
 
@@ -441,8 +441,11 @@
  toxoids.8017.desc.d: "骑士团主城隔绝开了，化为了一座浮空的纪念碑。骑士领主已经永远离去，一同追随而去的还有绝大多数的骑士和扈从。与宝库也失去了联系。损失难以估量。从此以往我们再也不可能继续试炼了。硕果仅存的少许骑士被召回。骑士团的未来注定走向灭亡。"
  toxoids.8017.a:0 "这不可能……"
  toxoids.8020.name:0 "毒圣的命运"
- toxoids.8020.desc:0 "在找到了有毒实体后，我们的骑士们失去了毒圣去向的行踪。这两者的关联毋庸置疑，但如果要相信我们的历史档案，那么这个实体与原版相比就相形见绌了。\n\n无论如何，我们寻找毒圣的旅途在今天结束了。我们已经从星系中心的超大质量黑洞中发现了排出的痕量有毒物质。从研究中我们可以确定毒圣就在这里。但不知为何。远超我们的能力所及。\n\n骑士领主命令所有骑士全力以赴恢复任何与黑洞有关的东西，但成功的希望很小。"
+ toxoids.8020.desc:0 "在找到了有毒实体后，我们的骑士们失去了毒圣去向的行踪。这两者的关联毋庸置疑，但如果要相信我们的历史档案，那么这个实体与智慧和强大的毒圣原体相比可就相形见绌了。\n\n无论如何，我们寻找毒圣的旅途在今天结束了。我们已经从星系中心的超大质量黑洞中发现了排出的痕量有毒物质。尽管看起来不可思议，但我们确信毒圣就在那儿，但远超我们的能力所及。\n\n骑士领主命令所有骑士全力以赴取得任何与黑洞有关的东西，但成功的希望很小。"
  toxoids.8020.a:0 "在找到新办法之前，我们刻不容缓！"
+ toxoids.8020.b: "……或是在这？"
+ toxoids.8020.cosmogenesis: "该选项因已拥有§Y宇宙创生§!飞升特典而解锁。"
+ advanced_logic_from_knights: "£job_knight£§Y$job_knight_plural$§!现将产出§G+1§!£advanced_logic£超然逻辑。\n£job_knight_commander£§Y$job_knight_commander$§!现将产出§G+2§!£advanced_logic£超然逻辑。"
  toxoids.8025.name:0 "收复骑士团主城"
  toxoids.8025.desc:0 "我们已经收复了骑士团主城坐落的居住站。我们的工事和辖地已经被占领者们拆除，化为一片废墟，但它们可以被重建。随着我们重新夺取文库的访问权，我们的骑士誓言试炼将重回正轨。"
  toxoids.8025.a:0 "光荣的一天！"
@@ -505,16 +508,20 @@
 
  ### Toxic Baths
  civic_toxic_baths:0 "诱变水疗中心"
- civic_corporate_toxic_baths:0 "诱变水疗中心"
+ civic_corporate_toxic_baths:0 "诱变奢享"
  civic_hive_toxic_baths:0 "重构池"
  civic_machine_toxic_baths:0 "超润滑洗槽"
- civic_tooltip_toxic_baths_effects:1 "可以建造§Y诱变水疗中心§!\n每个§Y水疗护工§!带来：\n每个§H工业区划§!提高人口增长速度：§G+1%§!\n每个§H工业区划§!降低幸福度：§R-0.75%§!\n每个§H工业区划§!降低宜居性：§R-0.25%§!"
- civic_tooltip_hive_toxic_baths_effects:0 "可以建造§Y诱变重构池§!\n每个§Y重构护理工蜂§!带来：\n每个§H工业区划§!提升有机人口组装速度：§G+1.5%§!\n每个§H工业区划§!降低宜居性：§R-0.75%§!"
- civic_tooltip_machine_toxic_baths_effects:0 "可以建造§Y生产洗槽§!\n每个§Y润滑终端§!带来：\n每个§H工业区划§!增加人口组装速度：§G+1%§!\n每个§H工业区划§!增加舒适度使用：§R+1%§!"
+ civic_tooltip_toxic_baths_effects:1 "可以建造§Y诱变水疗中心§!\n每个§Y水疗护工§!带来：\n每个§H工业区§!提高人口增长速度：§G+1.5%§!\n每个§H工业区§!降低幸福度：§R-0.75%§!\n每个§H工业区§!降低宜居性：§R-0.25%§!"
+ civic_tooltip_hive_toxic_baths_effects:0 "可以建造§Y诱变重构池§!\n每个§Y重构护理工蜂§!带来：\n每个§H工业区§!提升有机人口组装速度：§G+2%§!\n每个§H工业区§!降低宜居性：§R-0.75%§!"
+ civic_tooltip_machine_toxic_baths_effects:0 "可以建造§Y生产洗槽§!\n每个§Y润滑终端§!带来：\n每个§H工业区§!增加人口组装速度：§G+1.5%§!\n每个§H工业区§!增加舒适度使用：§R+1%§!"
  civic_toxic_baths_desc:0 "这个文明会举办突变沐浴仪式，在职业护理员的监管下使用高危药品。“灌注生命力”的过程也许会让不谙内情的旁观者胆战心惊。"
  civic_corporate_toxic_baths_desc:0 "这个文明会进行突变沐浴，在职业护理员的监管下使用高危药品。“灌注生命力”的过程被营销成了促进个人发展与福利的必要步骤。"
  civic_hive_toxic_baths_desc:1 "这个蜂群会使用突变分娩池，由特化护理蜂监管新生工蜂成长。该过程会严重侵扰当地环境。"
  civic_machine_toxic_baths_desc:0 "这个机械帝国改良了基础无人机外壳的生产过程，在精心编程的终端控制下高强度敷用强效润滑剂。这一“调优”过程靠的是向来作为废物的工业副产品，如今则被用来达到最高的效率。"
+
+ civic_tooltip_not_mutagenic: "没有['concept_mutagenic_civics']类公民性"
+ concept_mutagenic_civics: "诱变水疗中心"
+  concept_mutagenic_civics_desc: "$concept_mutagenic_civics$ Civics consist of \n- ['civic:civic_toxic_baths']$NEW_LINE$- ['civic:civic_toxic_baths_individual_machine']$NEW_LINE$- ['civic:civic_corporate_toxic_baths']$NEW_LINE$- ['civic:civic_corporate_toxic_baths_individual_machine']$NEW_LINE$- ['civic:civic_hive_toxic_baths']$NEW_LINE$- ['civic:civic_machine_toxic_baths']"
 
  building_toxic_bath:0 "诱变水疗中心"
  building_toxic_bath_hive:0 "诱变重构池"
@@ -580,10 +587,9 @@
 
  civic_relentless_industrialists:0 "冷酷实业家"
  civic_relentless_industrialists_desc:0 "生命，便是开发。这个文明建立在“最彻底地活用生命”这一原则之上，致力于从能够用于开发的每一克物质、每一片瓣膜上榨取最大的利益。"
- civic_corporate_relentless_industrialists:0 "$civic_relentless_industrialists$"
+ civic_corporate_relentless_industrialists:0 "股份价值"
  civic_corporate_relentless_industrialists_desc:0 "$civic_relentless_industrialists_desc$"
  civic_tooltip_relentless_industrialists_effects:0 "能够修建£building£ §Y$building_coordinated_fulfillment_center_1$§!，极大地增加£alloys£ §Y合金§!和£consumer_goods£ §Y消费品§!的产出，代价是减少£mod_pop_growth_speed£ §Y人口增长§!，同时还会逐渐将行星变为§Y废土世界§!。"
- civic_tooltip_not_relentless_industrialists:0 "没有§Y$civic_relentless_industrialists$§!公民性"
 
  building_coordinated_fulfillment_center_1:0 "协同物流中心"
  building_coordinated_fulfillment_center_1_plural:0 "协同物流中心"
@@ -591,6 +597,10 @@
  building_coordinated_fulfillment_center_2:0 "统一生产力调度设施" #N.B. Corporate speak, doesn't need to mean anything...
  building_coordinated_fulfillment_center_2_desc:0 "通过无休止的数学运算和习以为常的性能评估，工业生产力能够被推到一个前所未有的高度。即便这么做足以让人无暇顾及其他，比如人口繁衍和环境方面的问题。"
  building_coordinated_fulfillment_center_tooltip:0 "§R这个星球会被无情地竭泽而渔。最终，它会变为一个废土世界。§!"
+
+ civic_tooltip_not_relentless_industrialists: "没有['concept_industrialist_civics']类公民性"
+ concept_industrialist_civics: "冷酷实业家"
+ concept_industrialist_civics_desc: "$concept_industrialist_civics$类公民性包括以下几种\n—['civic:civic_relentless_industrialists']$NEW_LINE$—['civic:civic_corporate_relentless_industrialists']"
 
  toxoids.5.name:0 "[Root.GetName]过度开发"
  toxoids.5.desc:0 "我们对[Root.GetName]的竭泽而渔已经对环境造成了显著，乃至不可逆转的变化。工业污染引发的失控温室效应造成了严重的气候破坏。放射性物质的泄露更是导致大片[Root.GetPlanetMoon]区域不再宜居。\n\n这种变化已经来到了关键的十字路口，除非我们改变开发手段，减少对星球环境的影响，不然的话就会遭受灭顶之灾，留下的将是一个不宜居且充满辐射的世界，星球上也会只剩波涛汹涌的海洋与死寂的不毛之地，如同预言末日的人们所给过的最恐怖的警告一般。"
@@ -695,7 +705,7 @@
  MESSAGE_TOXIC_TERRAFORM_FOUND_DESC:0 "剧毒星球[From.GetName]令人意外地可以成为潜在的环境改造候选星球。如果能将其彻底清理干净，它在未来能为我们的新家园。"
 
  toxoids.500.name:0 "发现剧毒环境改造候选"
- toxoids.500.desc.intro:1 "我们对[From.GetName]的详细调查得出了结论，尽管由于其大气层内充满剧毒气体，现阶段生命不适合栖居，但是它具有维持可供生物呼吸的大气层的潜质。通过合作筹划，我们或许能够将[From.GetPlanetMoon]的有毒物质降解成为毒性更加轻微的化合物。"
+ toxoids.500.desc.intro:2 "我们对[From.GetName]的详细调查得出了结论，尽管由于其大气层内充满剧毒气体，现阶段生命不适合栖居，但是它具有维持可支持生命的大气层的潜质。通过合作筹划，我们或许能够将[From.GetPlanetMoon]的有毒物质降解成为毒性更加轻微的化合物。"
  toxoids.500.desc.1:0 "$toxoids.500.desc.intro$\n\n对这个[From.GetPlanetMoon]进行环境改造理论上是可能的，但是我们目前还没有积累足够的技术手段，在合理的时间框架内完成这项壮举。"
  toxoids.500.desc.2:0 "$toxoids.500.desc.intro$\n\n巨大的能耗令人望而却步，但我们确实已经掌握了必要技术手段，可以逐步将这颗[From.GetPlanetMoon]环境改造为可以再度支持生命的星球。"
  TOXIC_TERRAFORMING_CANDIDATE_EFFECT:1 "如果我们选择§H$ap_detox$§!飞升特典，§Y[From.GetName]§!将可以被环境改造。"
@@ -728,6 +738,9 @@
  trait_technical_skill:0 "技工天赋"
  trait_technical_skill_desc:0 "§L额外的内部器官可以大大提高对电和磁场的先天敏感性。受改造者在反应堆里听到尖叫和低语的报告应该被忽略。§!"
  technical_skill_tooltip:0 "£pops£ 岗位生产的£energy£ 能量币：§G+15%§!"
+ trait_commercial_genius: "商业天才"
+ trait_commercial_genius_desc: "§L通过调整适应性和降低同理心，任何人都可以变成贸易方面的天才。追求无与伦比的商业主导地位比任何潜在的副作用都重要。§!"
+ trait_commercial_genius_tooltip: "£pops£岗位产出的£trade_value£贸易额：§G+25%§!"
  trait_crafted_smiles:0 "匠心微笑"
  trait_crafted_smiles_desc:0 "§L面部特征的轻微调整、肌肉发育增强和松弛相互结合，再加上一些外在化学物质，创造了永恒完美的微笑。 §!"
  crafted_smiles_tooltip:0 "£pops£ 岗位生产的£amenities£ 舒适度：§G+15%§!"

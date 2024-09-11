@@ -5,6 +5,9 @@
  trait_aquatic:0 "Aquatic"
  trait_aquatic_desc:1 "§LThis species is perfectly adapted to living in the depths of the ocean. However, on dry land, it is like a fish out of water.§!\n\n§RRequires§! §YOcean World§! §Rhomeworld§!."
  trait_aquatic_tooltip:2 "Housing Usage on §YOcean§! worlds and §YFlooded Habitats§!: §G-10%§!\nFood, Energy and Mineral output on §YOcean§! worlds: §G+10%§!\nHousing Usage on non-§YWet§! worlds: §R+30%§!\nHabitability on non-§YWet§! worlds: §R-20%§!\n\nThe §H$ap_hydrocentric$§! Ascension Perk amplifies this trait's effects."
+ trait_robot_aquatic: "Waterproof"
+ trait_robot_aquatic_desc: "§LInitially designed for exploring the ocean's depths, these machines face severe limitations when operating on dry land.§!\n\n§RRequires§! §YOcean World§! §Rhomeworld§!."
+ trait_robot_aquatic_tooltip: "Housing Usage on §YOcean§! worlds and §YFlooded Habitats§!: §G-10%§!\nFood, Energy and Mineral output on §YOcean§! worlds: §G+10%§!\nHousing Usage on non-§YWet§! worlds: §R+30%§!\nHabitability on non-§YWet§! worlds: §R-20%§!\n\nThe §H$ap_hydrocentric$§! Ascension Perk amplifies this trait's effects."
  trait_aquatic_remove_evolutionary_mastery:1 "§RRequires §Y$tr_genetics_resequencing$§! Tradition to remove.§!"
  trait_aquatic_remove_hydrocentric:0 "§RCannot remove §Y$trait_aquatic$§! trait after taking §Y$ap_hydrocentric$§! Ascension Perk.§!"
 
@@ -166,7 +169,7 @@
 
  ap_hydrocentric:0 "Hydrocentric"
  ap_hydrocentric_desc:0 "No longer shall we settle for "good enough" replacements for our oceanic abodes: no planet shall be deemed fit for colonization until it has been thoroughly inundated."
- ap_hydrocentric_tooltip:2 "Allows the construction of §YIce Mining Stations§! on starbases, which enable the §Y$decision_expand_planetary_sea$§! decision on §YOcean§! worlds and §Y$decision_flood_habitat$§! decision on §YHabitats§!.\nSpecies with the §Y$trait_aquatic$§! trait gain 50% greater benefits for living on §YOcean§! worlds, but penalties for living on non-§YWet§! worlds are likewise amplified."
+ ap_hydrocentric_tooltip:3 "Allows the construction of §YIce Mining Stations§! on starbases, which enable the §Y$decision_expand_planetary_sea$§! decision on §YOcean§! worlds and §Y$decision_flood_habitat$§! decision on §YHabitats§!.\nSpecies with the §Y$trait_aquatic$§! or §Y$trait_robot_aquatic$§! trait gain 50% greater benefits for living on §YOcean§! worlds, but penalties for living on non-§YWet§! worlds are likewise amplified."
  ap_hydrocentric_deluge_tooltip:0 "Unlocks the §YDeluge§! Colossus Weapon."
  ap_hydrocentric_deluge_pre_unlock_tooltip:0 "Unlocks the §YDeluge§! Colossus Weapon §R(requires §Y$ap_colossus$§! Ascension Perk)§!."
 
@@ -176,15 +179,15 @@
  has_frozen_terraforming_candidate:0 "§YFrozen terraforming candidate(s) present in the system.§!"
  has_toxic_terraforming_candidate:0 "§YToxic terraforming candidate(s) present in the system.§!"
 
- aquatics.1.name:0 "Evolved Aquatics"
- aquatics.1.desc:0 "We came from the ocean, our species evolving to be ideally suited to living in the depths of the seas. Even as we take to the stars, we have not abandoned our roots: the water is and shall always be our home. Now, our evolution is complete - no longer shall we adapt ourselves to living elsewhere, rather than shaping worlds to suit our needs. As we greet the warmth of a new day, we know that nothing need part us from the ocean ever again."
+ aquatics.1.name:0 "Advanced Aquatics"
+ aquatics.1.desc:0 "We came from the ocean, our species ideally suited to living in the depths of the seas. Even as we take to the stars, we have not abandoned our roots: the water is and shall always be our home. Now, our ascension is complete - no longer shall we adapt ourselves to living elsewhere rather than shaping worlds to suit our needs. As we greet the warmth of a new day, we know that nothing needs to take us from the ocean ever again."
  aquatic.1.A:0 "It shall be a home like no other."
 
  MESSAGE_FROZEN_TERRAFORM_FOUND_TITLE:0 "$aquatics.5.name$"
  MESSAGE_FROZEN_TERRAFORM_FOUND_DESC:0 "We have disovered another potential frozen terraforming candidate, [From.GetName] could make an excelent ocean world."
 
  aquatics.5.name:0 "Frozen Terraforming Candidate Discovered"
- aquatics.5.desc.intro:0 "Our detailed survey of [From.GetName] has revealed a world with a sufficiently thick layer of ice that it could be restored into a pleasant ocean world, if rendered significantly warmer and bequeathed with a breathable atmosphere."
+ aquatics.5.desc.intro:1 "Our detailed survey of [From.GetName] has revealed a world with a sufficiently thick layer of ice that it could be restored into a pleasant ocean world, if rendered significantly warmer and bequeathed with a hospitable atmosphere."
  aquatics.5.desc.1:0 "$aquatics.5.desc.intro$\n\nTerraforming this [From.GetPlanetMoon] would theoretically be possible, but we do not yet possess the means to accomplish this monumental task within a realistic timeframe."
  aquatics.5.desc.2:0 "$aquatics.5.desc.intro$\n\nThe energy costs would be daunting, but we do have the means to gradually terraform this [From.GetPlanetMoon] into something that would support life once again."
 
@@ -227,12 +230,16 @@
  origin_ocean_paradise:0 "Ocean Paradise"
  origin_ocean_paradise_desc:0 "Since its birth, this civilization has enjoyed peace in a generous environment with no natural enemies, enabling unhindered growth and opulence."
  origin_ocean_paradise_effects:2 "- $HOMEWORLD$$TABBED_NEW_LINE$- ['concept_pc_ocean'] (size: £planetsize£ 30)$TABBED_NEW_LINE$- $PLANETARY_MODIFIERS$ ['concept_ocean_paradise_mod']$TABBED_NEW_LINE$- $PLANETARY_FEATURES$ ['concept_crystal_reef']\n- ['concept_guaranteed_colonies']: Replaced with ['concept_pc_frozen', Frozen Worlds]"
+ origin_ocean_machines: "Subaquatic Machines"
+ origin_ocean_machines_desc: "Since its creation, this machine civilization has delved deep into the underwater realms of an abundant ocean untouched by natural adversaries."
+ origin_ocean_machines_effects: "- $HOMEWORLD$$TABBED_NEW_LINE$- ['concept_pc_ocean'] (size: £planetsize£ 30)$TABBED_NEW_LINE$- $PLANETARY_MODIFIERS$ ['concept_ocean_paradise_mod']$TABBED_NEW_LINE$- $PLANETARY_FEATURES$ ['concept_crystal_reef']\n- ['concept_guaranteed_colonies']: Replaced with ['concept_pc_frozen', Frozen Worlds]"
 
  START_SCREEN_OCEAN_PARADISE:0 ""Joy to those who possess the wisdom of acceptance." So goes a common proverb in [Root.GetAdj] society. The bounty of life is all around, once one learns to appreciate it. In such waters, long have we prospered.\n\nBut our elders do not sense the stagnation. They confuse our survival instincts with impatience. If we do not seek change, change will find us, and we will be unprepared. We cannot be alone in this vast universe. To keep our home, some of us must resolve to leave it.\n\nOur descents into the Abyss have proven worthwhile. Unworldly wreckage, perilously retrieved, precipitated a torrent of technological breakthroughs. At last, we are ready to journey beyond our oceans, to explore, to see, to learn, and to protect."
  START_SCREEN_OCEAN_PARADISE_HIVE:0 ""Joy to we who possess the wisdom of acceptance." The bounty of life is all around, once one learns to appreciate it. In such waters, long have we prospered.\n\nAlas, stagnation nears. If we do not seek change, change will find us, and we will be unprepared. We cannot be alone in this vast universe. To keep our home, part of us must resolve to leave it.\n\nOur descents into the Abyss have proven worthwhile. Unworldly wreckage, perilously retrieved, precipitated a torrent of technological breakthroughs. At last, we are ready to journey beyond our oceans, to explore, to see, to learn, and to protect."
+ START_SCREEN_OCEAN_PARADISE_ROBOT: "Long have we [Root.GetAdj] been able to enjoy the tranquility of the ocean, and our very frames seem optimized for an aquatic existence.\n\nBut existence is a swirling current, and if we do not adapt, we invite stagnation. We cannot be sure we are alone in this universe, and our home world is a pearl that risks being plucked.\n\nWe have stayed in a small pond, protected by our nebula, but no longer. With the introduction of the [GetStartingDrive], we are ready to sail the endless stellar seas."
 
  ocean_paradise:0 "Ocean Paradise"
- ocean_paradise_desc:0 "Few worlds boast conditions so fortunate. At the top of this planet's food chain, there is bliss. Its rich, flourishing resources could potentially last an eternity - if properly managed."
+ ocean_paradise_desc:0 "Few worlds boast conditions so fortunate. Its rich, flourishing resources could last an eternity - if properly managed."
  ocean_paradise_hive:0 "$ocean_paradise$"
  ocean_paradise_hive_desc:0 "$ocean_paradise_desc$"
 
@@ -241,10 +248,15 @@
 
  # Anglers Civic
  civic_anglers:0 "Anglers"
- civic_anglers_desc:0 "Adept at utilizing nature's bounty, this society provides for itself a stable influx of sustenance and economic value."
+ civic_anglers_desc:1 "This society is well-adapted to an aquatic environment, using the bounty of the sea to fuel its economy."
+ civic_machine_anglers: "Marine Machines"
+ civic_machine_anglers_desc: "This mechanical society is engineered for seamless operation in diverse aquatic environments and excels in crafting unparalleled marine infrastructure to drive its economy."
+ civic_tooltip_machine_anglers_effects: "On §HOcean Worlds§!, §HAgriculture Districts§! are uncapped.\nOn §YWet§! worlds, £job_farmer£ §Y$job_farmer_plural$§! are replaced by £job_angler£ §Y$job_angler_plural$§! and £job_pearl_diver£ §Y$job_pearl_diver_plural$§!.\n§Y$job_angler_plural$§! produce §Y8§! £food£ §Y$food$§! and §Y2§! £trade_value£ §Y$TRADE_VALUE$§!, and §Y$job_pearl_diver_plural$§! produce §Y6§! £consumer_goods£ §Y$consumer_goods$§! and §Y2§! £trade_value£ §Y$TRADE_VALUE$§!.\nAdds the §H$trait_robot_aquatic$§! trait."
  civic_corporate_anglers:1 "Trawling Operations"
  civic_corporate_anglers_desc:0 "$civic_anglers_desc$"
  civic_tooltip_anglers_effects:3 "On §HOcean Worlds§!, §HAgriculture Districts§! are uncapped.\nOn §YWet§! worlds, £job_farmer£ §Y$job_farmer_plural$§! are replaced by £job_angler£ §Y$job_angler_plural$§! and £job_pearl_diver£ §Y$job_pearl_diver_plural$§!.\n§Y$job_angler_plural$§! produce §Y8§! £food£ §Y$food$§! and §Y2§! £trade_value£ §Y$TRADE_VALUE$§!, and §Y$job_pearl_diver_plural$§! produce §Y6§! £consumer_goods£ §Y$consumer_goods$§! and §Y2§! £trade_value£ §Y$TRADE_VALUE$§!.\nAdds the §H$trait_aquatic$§! trait."
+ civic_corporate_machine_anglers: "Maritime Robotics"
+ civic_corporate_machine_anglers_desc: "$civic_machine_anglers_desc$"
  job_aqu_angler_effect_desc:1 "£job_angler£ $job_angler_plural$ produce £food£ §Y$food$§! and £trade_value£ §Y$TRADE_VALUE$§!"
  job_angler:0 "Angler"
  job_angler_plural:0 "Anglers"
@@ -257,4 +269,6 @@
  job_pearl_diver_desc:0 "Concerning cultivation and farming more than diving, these specialists still bring back a large variety of treasures from the depths."
  mod_job_pearl_diver_add:0 "Pearl Diver Jobs"
  job_pearl_diver_effect_desc:1 "£job_pearl_diver£ $job_pearl_diver_plural$ turn $r_food$ and $r_minerals$ into £consumer_goods£ §Y$consumer_goods$§! and £trade_value£ §Y$TRADE_VALUE$§!"
- civic_tooltip_not_anglers:0 "Does NOT have §Y$civic_anglers$§! Civic"
+ civic_tooltip_not_anglers:1 "Does NOT have an ['concept_angler_civics'] Civic"
+ concept_angler_civics: "Anglers"
+ concept_angler_civics_desc: "Anglers Civics consist of \n- ['civic:civic_anglers']$NEW_LINE$- ['civic:civic_corporate_anglers']$NEW_LINE$- ['civic:civic_machine_anglers']$NEW_LINE$- ['civic:civic_corporate_machine_anglers']"

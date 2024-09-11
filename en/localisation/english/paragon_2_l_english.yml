@@ -14,7 +14,7 @@
  leader_desc_scientist: "§E§HScientists§! can be assigned to pilot a §HScience Ship§!, or govern a §HPlanet§!, and occupy a valid §HCouncil Position§! at the same time§!."
  leader_desc_general:0 "§E§HGenerals§! can be assigned to lead an §HAssault Army§! and occupy a valid §HCouncil Position§! at the same time§!."
  leader_desc_governor:0 "§E§HGovernors§! can be assigned to govern a §HPlanet§! and occupy a valid §HCouncil Position§! at the same time§!."
- leader_desc_official: "§E§H$official_plural$§! can be assigned to represent our interests in a §HFederation§! or the §H[global_event_country.GetCommunityOrImperium]§!, or govern a §HPlanet§!, and occupy a valid §HCouncil Position§! at the same time§!."
+ leader_desc_official: "§E§H$official_plural$§! can be assigned to represent our interests in a §HFederation§! or the §H[GetCommunityOrImperium]§!, or govern a §HPlanet§!, and occupy a valid §HCouncil Position§! at the same time§!."
 
  EXTERNAL_POOL_AVAILABILITY_TITLE:0 "$NAME|Y$ is available as an external leader due to:"
 
@@ -103,6 +103,7 @@
  mod_councilor_gestalt_legion_exp_gain:1 "$councilor_gestalt_legion_with_icon$ $exp_gain$"
  mod_councilor_gestalt_regulatory_exp_gain:1 "$councilor_gestalt_regulatory_with_icon$ $exp_gain$"
  mod_councilor_ruler_dictatorial_exp_gain: "$councilor_ruler_dictatorial$ $exp_gain$"
+ mod_councilor_research_exp_gain: "$councilor_research$ Experience Gain"
  MOD_COUNCILOR_SKILL_ADD:0 "Effective Councilor Skill"
  ADDITIONAL_COUNCILOR_SKILL:0 "§HEffective Councilor Skill:§!"
 
@@ -614,7 +615,10 @@
  YOUR_OFFICIAL_PLURAL: "Your Officials"
  YOUR_LEADERS:0 "Your Leaders"
 
- CANNOT_REINFORCE_OVERSIZED_TEMPLATE:0 "§RCan not reinforce a template which is larger than the current Command Limit§!"
+ CANNOT_REINFORCE_OVERSIZED_TEMPLATE: "§RCannot reinforce a template which is larger than the current Command Limit§!"
+ CANNOT_REINFORCE_OVERSIZED_TEMPLATE_FEDERATION: "§RCannot reinforce Federation templates if they exceed the current Federation Naval Capacity§!"
+ CANNOT_REINFORCE_OVERSIZED_TEMPLATE_GDF: "§RCannot reinforce Galactic Defense Force templates if they exceed the current Galactic Defense Force Naval Capacity§!"
+ CANNOT_REINFORCE_OVERSIZED_TEMPLATE_IMPERIAL_ARMADA: "§RCannot reinforce Imperial Armada templates if they exceed the current Imperial Armada Naval Capacity§!"
 
  YOU_HAVE_NO_COMMANDERS_PLURAL: "You have no Commanders"
  YOU_HAVE_NO_GENERAL_PLURAL:0 "You have no Generals"
@@ -682,6 +686,9 @@
  MESSAGE_ALL_GAINED_TRAIT_DESC:0 "All eligible §YLeaders§! got the $TRAIT|Y$ trait."
 
  DISABLED_FOR_EMPTY_TEMPLATE:0 "Disabled for empty Fleet Templates"
+ COPY_TEMPLATE_CAPACITY_FULL_FEDERATION: "Copying this template would exceed the Federation Naval Capacity"
+ COPY_TEMPLATE_CAPACITY_FULL_GDF: "Copying this template would exceed the Galactic Defense Force Naval Capacity"
+ COPY_TEMPLATE_CAPACITY_FULL_IMPERIAL_ARMADA: "Copying this template would exceed the Imperial Armada Naval Capacity"
 
  COUNCIL_COHESION:0 "Cohesion"
  COUNCIL_COHESION_CONTRIBUTION:0 "$NAME$: $VALUE$"
@@ -1382,7 +1389,7 @@
  leader_trait_cyborg:0 "Cyborg"
  leader_trait_cyborg_desc:0 "This leader has been heavily augmented with cybernetic implants."
  leader_trait_synthetic:1 "Synth"
- leader_trait_synthetic_desc:0 "This synthetic leader is equipped with a large collection of assorted software upgrades."
+ leader_trait_synthetic_desc:0 "This synthetic leader is equipped with a large collection of assorted upgrades."
  leader_trait_psionic:0 "Psychic"
  leader_trait_psionic_desc:1 "This leader possesses powerful psionic abilities."
  leader_trait_chosen:0 "Chosen One"
@@ -1456,6 +1463,10 @@
  mod_leader_generals_consumer_goods_upkeep_add:0 "$r_consumer_goods$ $UPKEEP$"
  mod_leader_officials_consumer_goods_upkeep_add:0 "$r_consumer_goods$ $UPKEEP$"
  mod_leader_scientists_consumer_goods_upkeep_add:0 "$r_consumer_goods$ $UPKEEP$"
+ mod_leader_admirals_unity_upkeep_add: "$r_unity$ $UPKEEP$"
+ mod_leader_generals_unity_upkeep_add: "$r_unity$ $UPKEEP$"
+ mod_leader_scientists_unity_upkeep_add: "$r_unity$ $UPKEEP$"
+ mod_leader_governors_unity_upkeep_add: "$r_unity$ $UPKEEP$"
  mod_leader_scientists_volatile_motes_produces_add:0 "$mod_country_base_volatile_motes_produces_add$"
  mod_leader_scientists_exotic_gases_produces_add:0 "$mod_country_base_exotic_gases_produces_add$"
  mod_leader_scientists_rare_crystals_produces_add:0 "$mod_country_base_rare_crystals_produces_add$"
@@ -1504,7 +1515,7 @@
  mod_leader_officials_exotic_gases_produces_add:0 "$mod_country_base_exotic_gases_produces_add$"
  mod_leader_officials_sr_living_metal_produces_add:0 "$mod_country_base_sr_living_metal_produces_add$"
  mod_leader_officials_sr_dark_matter_produces_add:0 "$mod_country_base_sr_dark_matter_produces_add$"
-
+ mod_leader_scientists_nanites_produces_add: "Monthly £nanites£ Nanites"
  # Economic Categories
  planet_districts_farming:0 "$district_farming$"
  planet_districts_mining:0 "$district_mining$"
@@ -1513,8 +1524,8 @@
  mod_country_councilor_physics_research_produces_add:0 "$mod_leader_scientists_physics_research_produces_add$"
  mod_country_councilor_society_research_produces_add:0 "$mod_leader_scientists_society_research_produces_add$"
  mod_country_councilor_engineering_research_produces_add:0 "$mod_leader_scientists_engineering_research_produces_add$"
- mod_planet_priests_society_research_produces_add:0 "£society£ $SOCIETY$ from £job_priest£ £job_death_priest£ $job_priest_plural$"
- mod_planet_pop_assemblers_engineering_research_produces_add:0 "£engineering£ $ENGINEERING$ from £job_roboticist£ $job_roboticist_plural$"
+ mod_planet_priests_society_research_produces_add:0 "£society£ $society_research$ from [GetPriestIcon] [GetPriest]"
+ mod_planet_pop_assemblers_engineering_research_produces_add:1 "$r_engineering$ from [GetPopAssemblersPlural]"
 
  # Scientist resource discovery traits.
  paragon_2.2005.name:0 "Uncovered Hidden Resources"
@@ -1599,7 +1610,7 @@
  civic_tooltip_hive_upkeep_twister_effects:2 "Change §Y1§! Base $r_unity$ Leader Upkeep to §Y2§! $r_food$ (or $r_minerals$)"
 
  civic_heroic_tales:0 "Heroic Past"
- civic_heroic_tales_desc:1 "The legendary heroes of the past inspire this civilizations young people to achieve the extraordinary. As role models, government officials are expected to embody these ideals."
+ civic_heroic_tales_desc:1 "The legendary heroes of the past inspire each new generation to achieve the extraordinary. As role models, government officials embody these ideals."
  civic_heroic_tales_effects:0 "$tr_aptitude_adopt_desc$"
 
  civic_dystopian_society:1 "Oppressive Autocracy"

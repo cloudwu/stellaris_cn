@@ -14,7 +14,7 @@
  leader_desc_scientist: "§E§H科学官§!可以被指派去驾驶一艘§H科研船§!或督管一颗§H行星§!，同时还能占据一个生效的§H内阁席位§!§!。"
  leader_desc_general:0 "§E§H将军§!可以被指派去指挥一支§H突击部队§!，同时还能占据一个生效的§H内阁席位§!§!"
  leader_desc_governor:0 "§E§H总督§!可以被指派去治理一颗§H行星§!，同时还能占据一个生效的§H内阁席位§!§!"
- leader_desc_official: "§E§H$official_plural$§!可以被指派出席§H联邦§!或§H[global_event_country.GetCommunityOrImperium]§!，或是督管一颗§H行星§!，同时还能占据一个生效的§H内阁席位§!§!。"
+ leader_desc_official: "§E§H$official_plural$§!可以被指派出席§H联邦§!或§H[GetCommunityOrImperium]§!，或是督管一颗§H行星§!，同时还能占据一个生效的§H内阁席位§!§!。"
 
  EXTERNAL_POOL_AVAILABILITY_TITLE:0 "因以下原因，$NAME|Y$是一名可雇佣的外籍领袖："
 
@@ -103,6 +103,7 @@
  mod_councilor_gestalt_legion_exp_gain:1 "$councilor_gestalt_legion_with_icon$ $exp_gain$"
  mod_councilor_gestalt_regulatory_exp_gain:1 "$councilor_gestalt_regulatory_with_icon$ $exp_gain$"
  mod_councilor_ruler_dictatorial_exp_gain: "$councilor_ruler_dictatorial$ $exp_gain$"
+ mod_councilor_research_exp_gain: "$councilor_research$经验获得"
  MOD_COUNCILOR_SKILL_ADD:0 "有效内阁官员技能"
  ADDITIONAL_COUNCILOR_SKILL:0 "§H有效内阁官员技能：§!"
 
@@ -614,7 +615,10 @@
  YOUR_OFFICIAL_PLURAL: "你的行政官"
  YOUR_LEADERS:0 "你的领袖"
 
- CANNOT_REINFORCE_OVERSIZED_TEMPLATE:0 "§R无法增援超过当前指挥上限的模板§!"
+ CANNOT_REINFORCE_OVERSIZED_TEMPLATE: "§R无法增援超过当前指挥上限的模板§!"
+ CANNOT_REINFORCE_OVERSIZED_TEMPLATE_FEDERATION: "§R无法增援超过当前联邦军舰容量的模板§!"
+ CANNOT_REINFORCE_OVERSIZED_TEMPLATE_GDF: "§R无法增援超过当前泛银河防卫军军舰容量的模板§!"
+ CANNOT_REINFORCE_OVERSIZED_TEMPLATE_IMPERIAL_ARMADA: "§R无法增援超过当前帝国舰队军舰容量的模板§!"
 
  YOU_HAVE_NO_COMMANDERS_PLURAL: "你没有指挥官"
  YOU_HAVE_NO_GENERAL_PLURAL:0 "你没有将军"
@@ -682,6 +686,9 @@
  MESSAGE_ALL_GAINED_TRAIT_DESC:0 "符合条件的全体§Y领袖§!已获得$TRAIT|Y$特质"
 
  DISABLED_FOR_EMPTY_TEMPLATE:0 "禁用空舰队模板"
+ COPY_TEMPLATE_CAPACITY_FULL_FEDERATION: "复制该模板将超出联邦军舰容量上限"
+ COPY_TEMPLATE_CAPACITY_FULL_GDF: "复制该模板将超出泛银河防卫军军舰容量上限"
+ COPY_TEMPLATE_CAPACITY_FULL_IMPERIAL_ARMADA: "复制该模板将超出帝国舰队军舰容量上限"
 
  COUNCIL_COHESION:0 "团结度"
  COUNCIL_COHESION_CONTRIBUTION:0 "$NAME$：$VALUE$"
@@ -1382,7 +1389,7 @@
  leader_trait_cyborg:0 "义体人"
  leader_trait_cyborg_desc:0 "这位领袖通过电子神经植入体进行了大幅度的增强。"
  leader_trait_synthetic:1 "合成人"
- leader_trait_synthetic_desc:0 "这位合成人领袖装备了一个大规模软件升级整合包。"
+ leader_trait_synthetic_desc:0 "这位合成人领袖装备了一个大规模升级整合包。"
  leader_trait_psionic:0 "灵媒"
  leader_trait_psionic_desc:1 "这位领袖是一个强大的灵媒。"
  leader_trait_chosen:0 "天选之人"
@@ -1456,6 +1463,10 @@
  mod_leader_generals_consumer_goods_upkeep_add:0 "$r_consumer_goods$ $UPKEEP$"
  mod_leader_officials_consumer_goods_upkeep_add:0 "$r_consumer_goods$ $UPKEEP$"
  mod_leader_scientists_consumer_goods_upkeep_add:0 "$r_consumer_goods$ $UPKEEP$"
+ mod_leader_admirals_unity_upkeep_add: "$r_unity$ $UPKEEP$"
+ mod_leader_generals_unity_upkeep_add: "$r_unity$ $UPKEEP$"
+ mod_leader_scientists_unity_upkeep_add: "$r_unity$ $UPKEEP$"
+ mod_leader_governors_unity_upkeep_add: "$r_unity$ $UPKEEP$"
  mod_leader_scientists_volatile_motes_produces_add:0 "$mod_country_base_volatile_motes_produces_add$"
  mod_leader_scientists_exotic_gases_produces_add:0 "$mod_country_base_exotic_gases_produces_add$"
  mod_leader_scientists_rare_crystals_produces_add:0 "$mod_country_base_rare_crystals_produces_add$"
@@ -1504,7 +1515,7 @@
  mod_leader_officials_exotic_gases_produces_add:0 "$mod_country_base_exotic_gases_produces_add$"
  mod_leader_officials_sr_living_metal_produces_add:0 "$mod_country_base_sr_living_metal_produces_add$"
  mod_leader_officials_sr_dark_matter_produces_add:0 "$mod_country_base_sr_dark_matter_produces_add$"
-
+ mod_leader_scientists_nanites_produces_add: "每月£nanites£纳米机器人"
  # Economic Categories
  planet_districts_farming:0 "$district_farming$"
  planet_districts_mining:0 "$district_mining$"
@@ -1513,8 +1524,8 @@
  mod_country_councilor_physics_research_produces_add:0 "$mod_leader_scientists_physics_research_produces_add$"
  mod_country_councilor_society_research_produces_add:0 "$mod_leader_scientists_society_research_produces_add$"
  mod_country_councilor_engineering_research_produces_add:0 "$mod_leader_scientists_engineering_research_produces_add$"
- mod_planet_priests_society_research_produces_add:0 "£job_priest£ £job_death_priest£ $job_priest_plural$产出的£society£ $SOCIETY$"
- mod_planet_pop_assemblers_engineering_research_produces_add:0 "£job_roboticist£ $job_roboticist_plural$产出的£engineering£ $ENGINEERING$"
+ mod_planet_priests_society_research_produces_add:0 "[GetPriestIcon][GetPriest]产出的£society£$society_research$"
+ mod_planet_pop_assemblers_engineering_research_produces_add:1 "[GetPopAssemblersPlural]产出的$r_engineering$"
 
  # Scientist resource discovery traits.
  paragon_2.2005.name:0 "发现隐藏资源"
@@ -1599,7 +1610,7 @@
  civic_tooltip_hive_upkeep_twister_effects:2 "将§Y1§!基础$r_unity$领袖维护费替换为§Y2§!$r_food$（或$r_minerals$）"
 
  civic_heroic_tales:0 "英雄过往"
- civic_heroic_tales_desc:1 "过去的传奇英雄激励着这个文明的年轻人去实现非凡的成就。作为榜样，政府的官员也应践行这些理想。"
+ civic_heroic_tales_desc:1 "过去的传奇英雄激励着这个文明的每个新世代去实现非凡的成就。作为榜样，政府的官员整践行着这些理想。"
  civic_heroic_tales_effects:0 "$tr_aptitude_adopt_desc$"
 
  civic_dystopian_society:1 "压迫性独裁"

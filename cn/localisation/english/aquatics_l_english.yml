@@ -5,6 +5,9 @@
  trait_aquatic:0 "如鱼得水"
  trait_aquatic_desc:1 "§L这个物种完美地适应了海洋深层的生活。然而，在干燥的陆地上，它们就像没水之鱼一样。§!\n\n§R需要§!§Y海洋星球§!§R母星§!。"
  trait_aquatic_tooltip:2 "§Y海洋§!星球和§Y洪潮居住站§!上的住房使用：§G-10%§!\n§Y海洋§!星球上的食物、能源点数和矿物产出：§G+10%§!\n非§Y潮湿§!星球上的住房使用：§R+30%§!\n非§Y潮湿§!星球宜居性：§R-20%§!\n\n§H$ap_hydrocentric$§!飞升特典会强化这个特质的效果。"
+ trait_robot_aquatic: "防水"
+ trait_robot_aquatic_desc: "§L这些机器最初设计用于深海探索，在干燥陆地上的运作会受到严重的限制。§!\n\n§R需要§!§Y海洋星球§!§R母星§!。"
+ trait_robot_aquatic_tooltip: "§Y海洋§!星球和§Y洪潮轨道栖所§!上的住房使用：§G-10%§!\n§Y海洋§!星球上的食物、能量币和矿物产出：§G+10%§!\n非§Y潮湿§!星球上的住房使用：§R+30%§!\n非§Y潮湿§!星球宜居性：§R-20%§!\n\n§H$ap_hydrocentric$§!飞升特典会强化这个特质的效果。"
  trait_aquatic_remove_evolutionary_mastery:1 "§R需要§Y$tr_genetics_resequencing$§!传统才能移除这个特质。§!"
  trait_aquatic_remove_hydrocentric:0 "§R采纳§Y$ap_hydrocentric$§!飞升特典之后无法移除§Y$trait_aquatic$§!特质。§!"
 
@@ -166,7 +169,7 @@
 
  ap_hydrocentric:0 "水之心"
  ap_hydrocentric_desc:0 "我们不再需要为自己的海洋居所寻找“差不多就行”的替代品了：所有行星在充分地灌水之后才能成为理想的殖民目的地。"
- ap_hydrocentric_tooltip:2 "可以在太空基地建设§Y冰开采站§!，并以此在§Y海洋§!星球上开启§Y$decision_expand_planetary_sea$§!决议，以及在§Y居住站§!上开启§Y$decision_flood_habitat$§!决议。\n具有§Y$trait_aquatic$§!特质的物种在§Y海洋§!星球上可以获得额外50%的加成，但生活在非§Y潮湿§!星球上的惩罚也会相应增大。"
+ ap_hydrocentric_tooltip:3 "可以在太空基地建设§Y冰开采站§!，并以此在§Y海洋§!星球上解锁§Y$decision_expand_planetary_sea$§!决议，以及在§Y轨道栖所§!上解锁§Y$decision_flood_habitat$§!决议。\n具有§Y$trait_aquatic$§!或§Y$trait_robot_aquatic$§!特质的物种在§Y海洋§!星球上可以获得额外50%的加成，但生活在非§Y潮湿§!星球上的惩罚也会相应增大。"
  ap_hydrocentric_deluge_tooltip:0 "解锁§Y天洪浩荡§!巨像武器。"
  ap_hydrocentric_deluge_pre_unlock_tooltip:0 "解锁§Y天洪浩荡§!巨像武器§R（需要§Y$ap_colossus$§!飞升特典）§!。"
 
@@ -177,14 +180,14 @@
  has_toxic_terraforming_candidate:0 "§Y星系中有剧毒环境改造候选。§!"
 
  aquatics.1.name:0 "高等水生类"
- aquatics.1.desc:0 "我们来自大洋深处，演化使我们的物种完美地适应了深海环境下的生活。即使已经迈入星空，我们仍然没有忘记本源：水体是，也永远是我们的家园。如今，我们的演化已经完成了——我们不再需要适应其他环境，而是改造其他的星球使其适应我们的需求。当新一天的黎明到来时，我们清楚再也没有什么东西可以让我们与海洋分离了。"
+ aquatics.1.desc:0 "我们来自大洋深处，我们的物种完美地适应了深海环境下的生活。即使已经迈入星空，我们仍然没有忘记本源：水体是，也永远是我们的家园。如今，我们的飞升已经完成了——我们不再需要适应其他环境，而是改造其他的星球使其适应我们的需求。当新一天的黎明到来时，我们清楚再也没有什么东西可以让我们与海洋分离了。"
  aquatic.1.A:0 "这将是一个独一无二的家园。"
 
  MESSAGE_FROZEN_TERRAFORM_FOUND_TITLE:0 "$aquatics.5.name$"
  MESSAGE_FROZEN_TERRAFORM_FOUND_DESC:0 "我们发现了另一个潜在的寒冰地球化候选星球，[From.GetName] 可被改造为一个出色的海洋世界。"
 
  aquatics.5.name:0 "发现冰封环境改造候选"
- aquatics.5.desc.intro:0 "我们对[From.GetName]的详尽调查表明这颗行星拥有厚重冰层，因此可以转变为一颗怡人的海洋世界。我们只需将行星大幅度加热，并赋予它可以呼吸的大气即可。"
+ aquatics.5.desc.intro:1 "我们对[From.GetName]的详尽调查表明这颗行星拥有厚重冰层，因此可以转变为一颗怡人的海洋星球。我们只需将行星大幅度加热，并赋予它可以宜居的大气即可。"
  aquatics.5.desc.1:0 "$aquatics.5.desc.intro$\n\n对这颗[From.GetPlanetMoon]进行环境改造在理论上是可行的，但我们目前还不具有在有实际意义的时间框架内完成这一里程碑式任务所需要的技术手段。"
  aquatics.5.desc.2:0 "$aquatics.5.desc.intro$\n\n巨大的能耗令人望而却步，但我们确实已经掌握了必要技术手段，可以逐步将这颗[From.GetPlanetMoon]环境改造为可以再度支持生命的星球。"
 
@@ -227,12 +230,16 @@
  origin_ocean_paradise:0 "海洋天堂"
  origin_ocean_paradise_desc:0 "自这个文明诞生伊始他们就享受着物产丰富、无忧无虑的环境，使其能够不受阻碍地发展繁荣。"
  origin_ocean_paradise_effects:2 "$HOMEWORLD$$TABBED_NEW_LINE$- ['concept_pc_ocean']（规模：£planetsize£30）$TABBED_NEW_LINE$- $PLANETARY_MODIFIERS$['concept_ocean_paradise_mod']$TABBED_NEW_LINE$- $PLANETARY_FEATURES$['concept_crystal_reef']\n- ['concept_guaranteed_colonies']：替换为['concept_pc_frozen', 寒冰世界]"
+ origin_ocean_machines: "水生机械"
+ origin_ocean_machines_desc: "自这个机械文明诞生伊始他们就深潜于水下王国，享受着物产丰富的环境，不受任何自然的挑战。"
+ origin_ocean_machines_effects: "—$HOMEWORLD$$TABBED_NEW_LINE$—['concept_pc_ocean']（规模：£planetsize£30）$TABBED_NEW_LINE$—$PLANETARY_MODIFIERS$['concept_ocean_paradise_mod']$TABBED_NEW_LINE$—$PLANETARY_FEATURES$['concept_crystal_reef']\n—['concept_guaranteed_colonies']：替换为['concept_pc_frozen',冰封星球]"
 
  START_SCREEN_OCEAN_PARADISE:0 "[Root.GetAdj]社会有句谚语“知足常乐。”只要学会感恩，就会发现处处皆是生命的馈赠。在这样的水中，我们已经繁荣昌盛了很久。\n\n但我们中的老者并没有意识到这种停滞。他们将我们对生存的渴望视为急躁。如果我们不寻求改变，那么变化很可能会杀我们个措手不及。辽阔的宇宙中我们必然不是孤身一人。要想保护家园，有些人必须离开家园。\n\n事实证明，深入深渊是值得的。艰苦卓绝的打捞工作带回了令人惊叹的残骸，触发了洪水般的科技突跃。最终，我们终于准备好了突入大洋以外的世界，去探索、去见证、去学习、去保护。"
  START_SCREEN_OCEAN_PARADISE_HIVE:0 "“知足常乐。”只要学会感恩，就会发现处处皆是生命的馈赠。在这样的水中，我们已经繁荣昌盛了很久。\n\n大停滞迫在眉睫。如果我们不寻求改变，那么变化很可能会杀我们个措手不及。辽阔的宇宙中我们必然不是孤身一人。要想保护家园，有些人必须离开家园。\n\n事实证明，深入深渊是值得的。艰苦卓绝的打捞工作带回了令人惊叹的残骸，触发了洪水般的科技突跃。最终，我们终于准备好了突入大洋以外的世界，去探索、去见证、去学习、去保护。"
+ START_SCREEN_OCEAN_PARADISE_ROBOT: "长久以来，我们[Root.GetAdj]都享受着海洋的宁静，我们的身体结构似乎都完全适应了在水中生存。\n\n生存有如逆水行舟，不进则退。我们不能确定这个宇宙中是否还有他者，我们的家园会不会是一颗随时可能被摘走的明珠。\n\n我们一直呆在一方小小的池塘里，受着星云的庇护，但这已为陈迹。随着[GetStartingDrive]发明，我们已经准备好去往无尽的星辰大海中航行。"
 
  ocean_paradise:0 "海洋天堂"
- ocean_paradise_desc:0 "很少有星球拥有如此幸运的条件。在这个星球食物链的顶端，是极乐。其丰富、繁荣的资源可能会永恒持续下去——如果管理得当的话。"
+ ocean_paradise_desc:0 "很少有星球拥有如此幸运的条件。其丰富、繁荣的资源会永恒持续下去——如果管理得当的话。"
  ocean_paradise_hive:0 "$ocean_paradise$"
  ocean_paradise_hive_desc:0 "$ocean_paradise_desc$"
 
@@ -241,10 +248,15 @@
 
  # Anglers Civic
  civic_anglers:0 "渔夫"
- civic_anglers_desc:0 "这个社会善于利用大自然的恩惠，为自己提供稳定的生活资料和经济价值。"
+ civic_anglers_desc:1 "这个社会非常适应水生环境，擅于利用大海的馈赠来推动经济。"
+ civic_machine_anglers: "海洋机械"
+ civic_machine_anglers_desc: "这个机械社会的设计可满足在不同水体环境中的无缝运行，并且擅长打造无与伦比的海洋基础设施来推动其经济发展。"
+ civic_tooltip_machine_anglers_effects: "在§H海洋星球§!上，§H农业区§!没有上限限制。\n在§Y潮湿§!星球上，£job_farmer£§Y$job_farmer_plural$§!被替换为£job_angler£§Y$job_angler_plural$§!和£job_pearl_diver£§Y$job_pearl_diver_plural$§!。\n§Y$job_angler_plural$§!生产§Y8§!£food£§Y$food$§!和§Y2§!£trade_value£§Y$TRADE_VALUE$§!，而§Y$job_pearl_diver_plural$§!生产§Y6§!£consumer_goods£§Y$consumer_goods$§!和§Y2§!£trade_value£§Y$TRADE_VALUE$§!。\n增加§H$trait_robot_aquatic$§!特质。"
  civic_corporate_anglers:1 "网捕行动"
  civic_corporate_anglers_desc:0 "$civic_anglers_desc$"
  civic_tooltip_anglers_effects:3 "在§H海洋世界§!上，§H农业区§!没有上限限制。\n在§Y潮湿§!星球上，£job_farmer£ §Y$job_farmer_plural$§!被替换为£job_angler£ §Y$job_angler_plural$§!和£job_pearl_diver£ §Y$job_pearl_diver_plural$§!。\n§Y$job_angler_plural$ §! 生产 §Y8§! £food£ §Y$food$§! 和 §Y2§! £trade_value£ §Y$TRADE_VALUE$§!，以及§Y$job_pearl_diver_plural$ §! 生产 §Y6§! £consumer_goods£ §Y$consumer_goods$ §! 和 §Y2§! £trade_value£ §Y$TRADE_VALUE$§!。\n增加 §H$trait_aquatic$§! 特质。"
+ civic_corporate_machine_anglers: "海事机器人"
+ civic_corporate_machine_anglers_desc: "$civic_machine_anglers_desc$"
  job_aqu_angler_effect_desc:1 "£job_angler£ $job_angler_plural$生产 £food£ §Y$food$§!和 £trade_value£ §Y$TRADE_VALUE$§!"
  job_angler:0 "渔夫"
  job_angler_plural:0 "渔夫"
@@ -257,4 +269,6 @@
  job_pearl_diver_desc:0 "尽管比起潜水，这些专家更关心耕种和耕作，他们还是从海洋深处带回了各式各样的宝藏。"
  mod_job_pearl_diver_add:0 "珍珠潜水员岗位"
  job_pearl_diver_effect_desc:1 "£job_pearl_diver£ $job_pearl_diver_plural$ 将 $r_food$ 和 $r_minerals$ 转换为 £consumer_goods£ §Y$consumer_goods$§! 和 £trade_value£ §Y$TRADE_VALUE$§!"
- civic_tooltip_not_anglers:0 "没有公民性：§Y$civic_anglers$§!"
+ civic_tooltip_not_anglers:1 "没有['concept_angler_civics']类公民性"
+ concept_angler_civics: "渔夫"
+ concept_angler_civics_desc: "渔夫类公民性包括\n—['civic:civic_anglers']$NEW_LINE$—['civic:civic_corporate_anglers']$NEW_LINE$—['civic:civic_machine_anglers']$NEW_LINE$—['civic:civic_corporate_machine_anglers']"

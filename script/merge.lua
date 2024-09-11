@@ -10,10 +10,10 @@ local function readlist(path, ...)
 end
 
 local data = {
-	official_cn = readlist("cn3.11", list, { ["_english"] = "_simp_chinese" }),
-	cloudwu_cn = readlist("cn_last", list),
-	en_last = readlist("en3.10", list),
-	en_current = readlist("en3.11", list),
+	official_cn = readlist("3.13/simp_chinese", list, { ["_english"] = "_simp_chinese" }),
+	cloudwu_cn = readlist("3.11/cn/localisation/english", list),
+	en_last = readlist("3.11/en/localisation/english", list),
+	en_current = readlist("3.13/english", list),
 }
 
 local function english_only(en, s)
@@ -356,7 +356,7 @@ local function gen(output_path, input_path, filename, data)
 			-- 不用翻译
 			wf:write(line, "\n")
 		else
-			local d = data.output[key] or error(key)
+			local d = data.output[key] or error(key .. " not exist in " .. input_path .. filename)
 			wf:write(" ", key, ":", dig, " " , d.v, "\n")
 		end
 	end
@@ -368,7 +368,7 @@ end
 local function output(data)
 	for _, filename in ipairs(list) do
 		gen(root .. "cn/localisation/english/" ,
-			root .. "en/localisation/english/" ,
+			root .. "3.13/english/" ,
 			filename, data)
 	end
 end

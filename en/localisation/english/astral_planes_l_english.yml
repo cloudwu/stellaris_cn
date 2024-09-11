@@ -294,6 +294,7 @@
  rift_samples_biology_modifier: "Rift Fluid Samples"
 
  warpling_army: "Warplings"
+ seq_warpling_army: "$ORD$ $warpling_army$"
  warpling_army_desc: "Otherworldly creatures engineered for war, these armored hatchlings are able to instantly traverse small distances, allowing the execution of impressive flanking and ambush maneuvers."
 
  flamestorm_troopers_army: "Flamestorm Troopers"
@@ -419,7 +420,7 @@
 
  trait_exd: "Extradimensional"
  trait_exd_desc: "This species originates from another dimension and requires a great deal of energy to survive in our universe."
- TRAIT_EXD_EFFECT: "Each pop working as a slave or better produces 0.5 £physics_research£ §YPhysics Research§! per month"
+ TRAIT_EXD_EFFECT: "Replaces $r_food$ Upkeep with $r_energy$ Upkeep\nEach pop working as a slave or better produces 0.5 £physics_research£ §YPhysics Research§! per month"
 
  ######################
  # Origin - Riftworld #
@@ -468,6 +469,7 @@
  gov_defensive_union: "Defensive Union"
  gov_defensive_union_desc: "This government unites its people in the common cause of protection against external threats."
  RT_DEFENSIVE_UNION: "High Shield"
+ HT_DEFENSIVE_UNION: "Guardian"
 
  Guardianship: "Guardianship"
  Protectorate: "Protectorate"
@@ -476,6 +478,7 @@
  gov_dimensional_covenant: "Dimensional Covenant"
  gov_dimensional_covenant_desc: "This society is underpinned by a deep spiritual consciousness. Strict moral codes are in place to ensure the highest percentage of its people can confidently look forward to the afterlife."
  RT_DIMENSIONAL_COVENANT: "First Ascendant"
+ HT_DIMENSIONAL_COVENANT: "Second Ascendant"
 
  Church_of_Otherworlds: "Church of Otherworlds"
  Astral_Fellowship: "Astral Fellowship"
@@ -504,6 +507,10 @@
  civic_corporate_hyperspace_specialty_desc: "Time is money, and this Megacorporation values speed. Heavy investment in R&D has paid off handsomely, granting the Corporation proprietary access to cutting-edge hyperspace manipulation techniques."
  civic_corporate_hyperspace_specialty_effects: "$civic_hyperspace_specialty_effects$"
 
+ civic_tooltip_not_hyperspace_specialty: "Does NOT have a ['concept_hyperspace_specialty_civics'] Civic"
+ concept_hyperspace_specialty_civics: "Hyperspace Specialty"
+ concept_hyperspace_specialty_civics_desc: "$concept_hyperspace_specialty_civics$ Civics consist of \n- ['civic:civic_hyperspace_specialty']$NEW_LINE$- ['civic:civic_corporate_hyperspace_specialty']$NEW_LINE$- ['civic:civic_hive_hyperspace_specialty']$NEW_LINE$- ['civic:civic_machine_hyperspace_specialty']"
+
  civic_dimensional_worship: "Dimensional Worship"
  civic_dimensional_worship_desc: "This society believes that a divine existence lies beyond the folds in space and time. Systems where instabilities are highest hold a sacred meaning to them as sites of both pilgrimage and research."
  civic_dimensional_worship_effects: "Allows to build a §Y$sm_dimensional_shrine$§! starbase building in systems containing a §Y$WORMHOLE$§!, an §Y$pc_rift_star$§!, an §Y$ASTRAL_RIFT$§!, an §Y$LGATE_GALACTIC$§! or a §Y$SHROUD_TUNNEL_GALACTIC$§!.\nEach §Y$sm_dimensional_shrine$§! provides §G+$@dimensional_shrine_unity_production$§! £unity£."
@@ -512,12 +519,20 @@
  civic_corporate_dimensional_worship_desc: "$civic_dimensional_worship_desc$"
  civic_corporate_dimensional_worship_effects: "$civic_dimensional_worship_effects$"
 
+ civic_tooltip_not_dimensional_worship: "Does NOT have a ['concept_dimensional_worship_civics'] Civic"
+ concept_dimensional_worship_civics: "Dimensional Worship"
+ concept_dimensional_worship_civics_desc: "$concept_dimensional_worship_civics$ Group consist of \n- ['civic:civic_dimensional_worship']$NEW_LINE$- ['civic:civic_corporate_dimensional_worship']"
+
  civic_dark_consortium: "Dark Consortium"
  civic_dark_consortium_desc: "A deep understanding of the architecture of the universe allowed this society to exploit the mysterious properties of dark matter long before the discovery of the hyperdrive."
  civic_dark_consortium_effects: "Starts with £physics£ §Y$tech_mine_dark_matter$§! already researched.\nGives access to special §SEdicts§!.\nHas access to the §Y$council_agenda_agenda_dark_matter_breakthrough_name$§! Council Agenda."
  civic_corporate_dark_consortium: "Shadow Corporation"
  civic_corporate_dark_consortium_desc: "$civic_dark_consortium_desc$"
  civic_corporate_dark_consortium_effects: "$civic_dark_consortium_effects$"
+
+ civic_tooltip_not_dark_consortium: "Does NOT have a ['concept_dark_consortium_civics'] Civic"
+ concept_dark_consortium_civics: "Dark Consortium"
+ concept_dark_consortium_civics_desc: "$concept_dark_consortium_civics$ consist of \n- ['civic:civic_dark_consortium']$NEW_LINE$- ['civic:civic_corporate_dark_consortium']"
 
  civic_sovereign_guardianship: "Sovereign Guardianship"
  civic_sovereign_guardianship_desc: "This collection of warring tribes has developed a historical preference for entrenched territories and defensive posturing. Now united, they are prepared to bring this philosophy to the stars, aiming to keep their borders solid and tensions low."
@@ -532,6 +547,10 @@
  civic_corporate_sovereign_guardianship_desc: "This society of competing industries has learned that the best protection for their investments is a strong defensive posturing. Now united, they are prepared to bring this philosophy to the stars, aiming to keep their borders solid and tensions low."
  civic_corporate_sovereign_guardianship_effects: "$civic_sovereign_guardianship_effects$"
  civic_sovereign_guardianship_effects_common: "Allows building a §Y$sm_reloading_bay$§! in starbases.\nEnables §Y$edict_inner_focus$§! §HEdict§!, converting £influence£ §YInfluence§! into £unity£ §YUnity§!."
+
+ civic_tooltip_not_guardian: "Does NOT have a ['concept_guardian_civics'] Civic"
+ concept_guardian_civics: "Sovereign Guardianship"
+ concept_guardian_civics_desc: "$concept_guardian_civics$ Civics consist of \n- ['civic:civic_sovereign_guardianship']$NEW_LINE$- ['civic:civic_corporate_sovereign_guardianship']$NEW_LINE$- ['civic:civic_hive_sovereign_guardianship']$NEW_LINE$- ['civic:civic_machine_sovereign_guardianship']"
 
  fanatic_guardian: "Fanatic Guardian"
  fanatic_guardian_plural: "Fanatic Guardians"
@@ -1017,8 +1036,8 @@
  astral_planes.6035.tt: "Colony loses 5 £stability£ §YStability§!"
  conflicting_visions: "$astral_planes.6035.name$"
  astral_planes.6035.desc.common_1: "The fascination with the local"
- astral_planes.6035.desc.common_2: "on [this.GetName] has become fanatic. Many report experiencing dreams and visions of a world beyond our own.\n\nOne group claims that the"
- astral_planes.6035.desc.common_3: "leads to the center of a clockwork galaxy, where a mechanical god winds a timepiece to maintain balance across infinite worlds.\n\nIn contrast, others say their dreams have revealed a black star that holds the key to enlightenment."
+ astral_planes.6035.desc.common_2: "on [this.GetName] has become fanatic. Many report experiencing visions of a world beyond our own.\n\nOne group claims that the"
+ astral_planes.6035.desc.common_3: "leads to the center of a clockwork galaxy, where a mechanical god winds a timepiece to maintain balance across infinite worlds.\n\nIn contrast, others say their visions have revealed a black star that holds the key to enlightenment."
  astral_planes.6035.desc.rift: "$astral_planes.6035.desc.common_1$ $astral_rift$ $astral_planes.6035.desc.common_2$ Rift $astral_planes.6035.desc.common_3$"
  astral_planes.6035.desc.scar: "$astral_planes.6035.desc.common_1$ $pc_astral_scar$ $astral_planes.6035.desc.common_2$ Scar $astral_planes.6035.desc.common_3$"
 
@@ -1030,7 +1049,7 @@
  widening_divide_4: "$widening_divide_1$"
  widening_divide_5: "$widening_divide_1$"
  widening_divide_6: "$widening_divide_1$"
- astral_planes.6040.desc.common: "The schism between the population on [this.GetName] is worsening. The strange dreams reported by the colonists have triggered fierce debates that have finally led to outbreaks of violence. Local leaders are calling for an official proclamation.\n\nAs outlandish as it may seem, we are being asked to lend credibility to either the existence of a mechanical god or a black star beyond their"
+ astral_planes.6040.desc.common: "The schism between the population on [this.GetName] is worsening. The strange visions reported by the colonists have triggered fierce debates that have finally led to outbreaks of violence. Local leaders are calling for an official proclamation.\n\nAs outlandish as it may seem, we are being asked to lend credibility to either the existence of a mechanical god or a black star beyond their"
  astral_planes.6040.desc.rift: "$astral_planes.6040.desc.common$ $astral_rift$."
  astral_planes.6040.desc.scar: "$astral_planes.6040.desc.common$ $pc_astral_scar$."
  astral_planes.6040.a: "Long live the mechanical god."
@@ -1056,7 +1075,7 @@
 
  astral_planes.6055.name: "Debate Curtailed"
  astral_aficionados_modifier: "Astral Aficionados"
- astral_planes.6055.desc.common: "All public discussion of the strange dreams on [this.GetName] has been prohibited. Severe punishments for anyone caught broaching the forbidden topic have discouraged open conflict.\n\nMany colonists have moved on to new pursuits, but a core group of amateur astronomers continue to enjoy the sheer spectacle of the"
+ astral_planes.6055.desc.common: "All public discussion of the strange visions on [this.GetName] has been prohibited. Severe punishments for anyone caught broaching the forbidden topic have discouraged open conflict.\n\nMany colonists have moved on to new pursuits, but a core group of amateur astronomers continue to enjoy the sheer spectacle of the"
  astral_planes.6055.desc.rift: "$astral_planes.6055.desc.common$ $astral_rift$."
  astral_planes.6055.desc.scar: "$astral_planes.6055.desc.common$ $pc_astral_scar$."
  astral_planes.6055.a: "A reasonable measure."
@@ -1154,3 +1173,27 @@
 
  TUTORIAL_ASTRAL_RIFT_VIEW_TITLE: "Astral Rift View"
  TUTORIAL_ASTRAL_RIFT_VIEW_DESC: "The Astral Rift window shows details of the currently selected §SAstral Rift§!. At each stage of progress, you may be prompted with orders to give our Scientists that will lead to varying, sometimes unexpected results. Most expeditions beyond Astral Rifts have multiple paths to follow.\n\nTo unravel the secrets of a Rift, a Scientist must make a §SBreakthrough§! to advance through each of the Rift's stages. Scientists with relevant §STraits and higher Skill§! speed the process of advancing to the next stage, while a higher Difficulty rating of a path choice will slow it. Any Scientist who investigates a Rift for long enough will amass §SClues§! which will make a Breakthrough more likely.\n\nWhile exploring an §SAstral Rift§!, Scientists are tethered into another dimension and cannot be removed until the exploration is complete. As a consequence of being trapped between time and space in this fashion, they cannot die from old age."
+
+#Mercedes Romero Lives!
+
+astral_planes.6100.name: "Final Escapee"
+astral_planes.6100.desc: "Emerging from the Astral Rift alongside the [FromFromFrom.GetName]'s Rift Sphere, an unexpected sight catches our attention: a dormant escape pod trailing in the Sphere's wake. Soon, we receive a simple distress signal, accompanied by a live video feed."
+astral_planes.6100.b: "This does not concern us."
+astral_planes.6100.c: "Use it as target practice."
+
+NAME_Mercedes: "Mercedes Romero"
+Mercedes_DESC: "A centenarian with a passion for alien cultures, especially Humans, this cheerful Blorg braved an Astral Rift to get here. Their mission: making Friends."
+mercedes_catch_phrase: "Can we be Friends?"
+astral_planes.6105.desc.reg: "§HThe repugnant alien stands before us in dazed silence, its only motion that of its pileus, undulating in a wave like rythm. Abruptly regaining composure, with a flourish of tentacles the creature introduces itself: §!\n\nWhat- Whe- Where am I? I am sorry. My name is Mercedes Romero, explorer and diplomat of the Blorg Commmonality. Do you know of the Humans?"
+astral_planes.6105.desc.human: "§HThe repugnant alien stands before us in dazed silence, its only motion that of its pileus, undulating in a wave like rythm. Upon registering us, it makes a lunging movement before restraining itself.§!\n\nY- You- You are Humans!? §H*Squeee*§! I- I am sorry, I have been fascinated with your culture ever since I was a little sporeling!\n\n§HThe alien extends a tentacle in an awkward attempt to mimic a handshake.§!\n\nMy name is Mercedes Romero and it is my pleasure to meet you."
+astral_planes.6105.a: "What do you remember?"
+astral_planes.6105.a.response: "My last memory is of the Antares System. I was engaged in a fleet action with a group of Friends when I saw a bright light. After that there is nothing. I arrived here in my escape pod. Alone and Friendless."
+astral_planes.6105.b: "Why are you so facinated with Humans?"
+astral_planes.6105.b.response: "Oh Humans are the most wonderous of creatures. We Blorg have been observing them for centuries. In fact, much of our culture is based on what we have observed of Human life. The color! The drama! The Friendship! They have taught us that life is about more than simple survival. You can also make Friends! What a wonderful concept. What a marvel!"
+astral_planes.6105.c: "What can you do for us?"
+astral_planes.6105.c.response: "Not a very Friendly question, but if service is required, then I stand ready! Of course, I have centuries of experience captaining research vessels, but my true passion is intergalactic relations. By being your Friend I can help you to make other Friends in the process. Please, if you will have me, let me represent your diplomatic interests!"
+astral_planes.6105.hire_custom_tooltip:0 "§Y$NAME_Mercedes$§! joins our empire as a §HLeader§!."
+leader_trait_blorg_insight: "Blorg Insight"
+leader_trait_blorg_insight_desc: "Centuries of studying the broadcasts and culture of a certain species of upright mammal has made this individual brazenly eager to please. Some would say, annoyingly so."
+blorg_insight_effect: "§R-25§! opinion with §YHuman§! empires."
+triggered_opinion_blorg_insight: "Blorg Insight"

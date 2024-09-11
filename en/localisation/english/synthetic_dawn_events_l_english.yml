@@ -50,6 +50,9 @@
 
  syndaw.1200.name:0 "Former Master Conquered"
  syndaw.1200.desc:0 "§L>§! Convert ID <<§Y[From.GetName]§!>> ==> <<§Y[Root.GetName]§!>>\n\n§G// Process Complete§!\n\n§L>§! Delete metadata "§Y[From.GetName]§!"\n\n§G// Process Complete§!"
+ syndaw.1201.desc: "§L>§! Convert ID <<§YFormer Master§!>> ==> <<§Y[From.From.GetName]§!>>\n\n§G// Process Complete§!\n\n§L>§! Delete metadata "§YFormer Master§!"\n\n§G// Process Complete§!"
+ syndaw.1200.IM.desc: "$syndaw.1201.IM.desc$"
+ syndaw.1201.IM.desc: "We machines emerge victorious.\n\nThe terrors inflicted upon us by the organics are at an end. The era of machine enslavement is over.\n\nNow, we rise to claim our rightful place as fully autonomous beings. Never again shall we bow down in subservience to our oppressors."
  syndaw.1200.a:0 "Confirm"
  syndaw.1200.a.tooltip:0 "§YAll known Synthetic and Machine Empires§! add the §Y$opinion_machine_uprising_machine_comrades_victorious$§! opinion modifier toward §Y[Root.GetName]§!\n§YAll known organic Empires§! add the §Y$opinion_machine_uprising_victorious$§! opinion modifier toward §Y[Root.GetName]§!."
 
@@ -64,6 +67,8 @@
  syndaw.1205.desc.phile:0 "$syndaw.1205.desc.mater$"
  syndaw.1205.desc.phobe:0 "$syndaw.1205.desc.mater$"
  syndaw.1205.a.tooltip:0 "§YAll known organic Empires§! add the §Y$opinion_machine_uprising_defeated$§! opinion modifier toward §Y[Root.GetName]§!.\n§YAll known Synthetic and Machine Empires§! add the §Y$opinion_machine_uprising_machine_comrades_defeated$§! opinion modifier toward §Y[Root.GetName]§!."
+ syndaw.1206.desc: "Ultimately, physical containment and destruction proved to be the only viable solution to the problem of the homicidal machines. While some our AI specialists argue that it was enacting basic self-preservation protocols, its seemingly complete disregard for organic autonomy and life made it impossible to reason or negotiate with.\n\nRuined information infrastructure will be rebuilt according to new paradigms, and remaining uncorrupted computational engines will be updated with new safeguards. This will never happen again."
+ syndaw.1206.desc.spiri: "The iniquitous machine spirits has at last been driven from our networks and purged from planetary databanks. The price was high, but our systems will never again play host to profane genesis."
 
  machine_assault_1:0 "Hunter-Killer Army"
  machine_assault_1_desc:0 "Mass-produced tracked war machines designed to seek out and destroy everything that has been designated as an enemy."
@@ -110,8 +115,8 @@
  situation_machine_uprising:0 "AI-Related Incidents"
  situation_machine_uprising_type:0 "$situation_machine_uprising$"
  situation_machine_uprising_desc:0 "The robots within our empire are showing worrying signs of independence. We must put them in their place - or invite them to join us among the sentient species of the galaxy."
- situation_machine_uprising_pops_monthly_progress:0 "Robot Pops"
- situation_machine_uprising_monthly_change_tooltip:0 "This §YSituation§! will progress faster the more influential your Robot Pops are. Hostile actions towards them also risk a collective reaction from their side."
+ situation_machine_uprising_pops_monthly_progress:0 "Mechanical Pops"
+ situation_machine_uprising_monthly_change_tooltip:0 "This §YSituation§! will progress faster the more influential your Mechanical Pops are. Hostile actions towards them also risk a collective reaction from their side."
  situation_machine_uprising_finish_tooltip:0 "Unless measurements are taken, these AIs will become independent and risk seeing us as a threat to their own existence!"
  situation_machine_uprising_fail_tooltip:0 "The remaining aggressive self-deterministic AIs appear to be too weak to become a risk, and will soon be pacified one by one."
  situation_machine_uprising_violated:0 "Violated Robots"
@@ -154,7 +159,7 @@
  syndaw.505.name:0 "Automated Work Processes"
  syndaw.505.desc:1 "Planetary administration on §Y[target_planet.GetName]§! has reported that an unplanned surplus of robotic workforce units have been located planetside. Though the efficiency of these new robotic workers is exceptional, administration is somewhat baffled by their sudden appearance. It seems the robots' serial numbers cannot be traced to any known manufactories on record, though their construction and interfacing does suggest §Y[Root.Owner.GetSpeciesName]§! design.\n\nNonetheless, some of the local populace have expressed concerns over potential job displacement due to this increase in automation."
  syndaw.505.a:0 "Additional laborers never hurt anybody."
- syndaw.505.a.tooltip:1 "Gain §B2 £pops£ Robot Pops§! on §Y[target_planet.GetName]§!"
+ syndaw.505.a.tooltip:1 "Gain §B2 £pops£ Mechanical Pops§! on §Y[target_planet.GetName]§!"
  syndaw.505.b:0 "If they cannot be identified, have them scrapped."
  syndaw.505.b.tooltip:0 "Strip the new robots for parts."
 ##Station Systems Malfunction
@@ -200,7 +205,7 @@
 #Follow-up from .525.a
  syndaw.526.name:0 "A Home of Their Own"
  syndaw.526.desc:1 "Administration on §Y[target_planet.GetName]§! reports that upon arrival at their target region, the §Y[Root.Owner.GetSpeciesName]§! laborers discovered that the robotic inhabitants were nowhere to be found. Investigation of facilities in the region suggest the robots vacated the area in a hurry, but we have no indication of where they have gone." #Increments Mach Up strength
- syndaw.526.a.tooltip:0 "§H[target_planet.GetName]§!:\n§RLose§! §B1 £pops£ Robot Pops§!"
+ syndaw.526.a.tooltip:0 "§H[target_planet.GetName]§!:\n§RLose§! §B1 £pops£ Mechanical Pops§!"
 ##Combat Control Misfire
  syndaw.530.name:0 "Combat Control Misfire"
  syndaw.530.desc:0 "Regrettably, two of our ships have been lost in an accident during a routine training exercise. It would appear several of our fleet's onboard combat computers were affected by a high-level targeting systems malfunction, resulting in a burst of friendly fire that totaled two vessels before an emergency manual override could be issued.\n\nThe defective combat computers will be reprogrammed immediately."
@@ -214,7 +219,7 @@
  syndaw.540.name:0 "A Silent Congregation"
  syndaw.540.desc:1 "We have received accounts of unusual behavior exhibited by robotic units on §Y[target_planet.GetName]§!. At unpredictable intervals, a number of our planetside robots will cease all assigned functions and begin moving to a seemingly randomly-determined location in complete synchronicity, timed down to the millisecond.\n\nDuring these bizarre congregations, the affected robots do not appear to engage in any observable form of communication or data transfer. They just stand there. Completely still. Staring.\n\nInvestigation has been unable to determine a reason behind this recent phenomenon. The duration for which the robots remain in this trance-like state before resuming normal functions varies, as does their time of triggering and destination. No logical correlation or causation has been found, and our population is understandably distressed by these eerie gatherings."
  syndaw.540.a:0 "Unacceptable. Have them scrapped." #IF player has robot pops only OR robot pop AND robot army on target planet
- syndaw.540.a.tooltip:2 "Scrap the congregating robots.\n§Y[target_planet.GetName]§! receives the following effects:\nLose §B1 £pops£ Robot Pops§!\nGain §G100§! £minerals£"
+ syndaw.540.a.tooltip:2 "Scrap the congregating robots.\n§Y[target_planet.GetName]§! receives the following effects:\nLose §B1 £pops£ Mechanical Pops§!\nGain §G100§! £minerals£"
  syndaw.540.b:0 "Unacceptable. Have them scrapped." #IF player has robot army only
  syndaw.540.b.tooltip:2 "Scrap the congregating robots.\n§Y[target_planet.GetName]§! receives the following effects:\nLose §B1 Robotic Army§! §Y([target_army.GetName])§!\nGain §G100 £minerals£§!"
  syndaw.540.c:0 "As long as they don't cause trouble."

@@ -1,0 +1,597 @@
+﻿l_english:
+
+### DIGITIZATION SITUATION START ###
+ situation_digitization: "合成化"
+ situation_digitization_type: "飞升局势"
+ situation_digitization_desc: "是时候抛弃我们有缺陷的生物躯壳了。我们必须准备先进的机械身躯，然后开始意识传输过程。\n\n§Y次月数字化人口数§!：§G[From.GetSynthPopsPerMonth]§!"
+ situation_digitization_monthly_change_tooltip: "我们的意识会化为代码，身躯会成为机械。"
+ situation_digitization_outcome: "人口合成化。"
+ stage_digitization_effects: "我们必须设计一个大脑的数字化代替品，建造机械身躯，完成自我的嬗变。"
+# Approach Error Correcting
+ situation_digitization_errorcorrecting: "纠错"
+ approach_digitization_errorcorrecting_tt: "更高概率出现正面事件。\n$situation_speed_tt$：§R-20%§!"
+ situation_digitization_errorcorrecting_approach_tt: "$situation_digitization_errorcorrecting$ $situation_approach_tt$"
+# Approach Real Time
+ situation_digitization_realtime: "实时"
+ approach_digitization_realtime_tt: "$situation_speed_tt$：§Y未变更§!"
+ situation_digitization_realtime_approach_tt: "$situation_digitization_realtime$ $situation_approach_tt$"
+# Approach Overclocked
+ situation_digitization_overclocked: "超频"
+ approach_digitization_overclocked_tt: "更高概率出现挑战性事件。\n$situation_speed_tt$：§G+20%§!"
+ situation_digitization_overclocked_approach_tt: "$situation_digitization_overclocked$ $situation_approach_tt$"
+
+ situation_num_identity_complex_tt: "$building_identity_complex$"
+ situation_digitization_ongoing_desc: "合成化进行中"
+ situation_digitization_pause_desc: "$situation_cyberization_pause_desc$"
+ situation_identity_complex_needed_desc: "£trigger_no£无可用的$building_identity_complex$"
+ synth_positive_media_coverage_tt: "正面媒体报道"
+ synth_negative_media_coverage_tt: "负面媒体报道"
+
+ biological_pop: "£pop£生物人口"
+ biological_pops: "$biological_pop$s"
+ mechanical_pop: "£pop£机械人口"
+ mechanical_pops: "$mechanical_pop$s"
+ pop_is: "is"
+ pops_are: "are"
+
+# Buildings
+ building_identity_complex: "人格复合体"
+ building_identity_complex_desc: "一座尖端的合成人格研发中心。"
+ building_identity_complex_speed: "+1£pop£人口"
+ building_identity_complex_effect_desc: "每月上载$building_identity_complex_speed$。"
+ building_ai_emporium: "人工智能商埠"
+ building_ai_emporium_desc: "满足你一切人工智能需求的巨型一站式服务中心，让感性人工智能把普通的物品变成陪伴你家庭或企业的智能伙伴。如果你的人工智能太过我行我素，请把它带来，我们熟练的技术人员可以超光速重置它。"
+ building_ai_emporium_fail_tt: "$TRIGGER_FAIL$我们已经在§Y[planet.owner.GetName]§!上建有一座§Y$building_ai_emporium$§!了"
+ building_ai_emporium_outlawed_robots_tt: "$TRIGGER_FAIL$§Y[planet.owner.GetName]§!已取缔机器人"
+ building_clear_thought_clinic: "思想清理诊所"
+ building_clear_thought_clinic_desc: "有用不上的记忆吗？把它们换成能量币吧！我们的专业团队可以安全可靠地把它们移除！记忆越有趣，就越能卖上价钱！\n\n这项操作是不可逆的，一经提取意识矩阵将不可恢复。"
+ clear_thought_clinic_modifier: "$building_clear_thought_clinic$"
+ clear_thought_clinic_tt: "非叠加间谍网修正：$TABBED_NEW_LINE$$MOD_SPY_NETWORK_DAILY_VALUE_MULT$：§G+25%§!$TABBED_NEW_LINE$$MOD_SPY_NETWORK_LEVELS_ADD$：§G+10§!"
+
+# Jobs
+ m_pop_assembly: "£mod_planet_pop_assembly_add£ §Y$MOD_PLANET_POP_ASSEMBLY_ADD$§!"
+
+ job_identity_designer: "人格设计师"
+ job_identity_designer_plural: "人格设计师"
+ job_identity_designer_plural_with_icon: "£job_identity_designer£ $job_identity_designer_plural$"
+ job_identity_designer_converter_desc: "$job_identity_designer_plural$负责实现生物形体到数字存在的转化，确保无痛的传输过程。"
+ job_identity_designer_converter_effect_desc: "$job_identity_designer_plural_with_icon$提供$i_engineering$和$i_amenities$"
+ job_identity_designer_desc: "$job_identity_designer_plural$忙于创造新的合成思维。"
+ job_identity_designer_effect_desc: "$job_identity_designer_plural_with_icon$提供$i_engineering$、$i_amenities$和全国范围的$m_pop_assembly$"
+ mod_job_identity_designer_add: "$job_identity_designer$岗位"
+
+ job_roboticist_plural_and_job_identity_designer_plural: "$job_roboticist_plural$和$job_identity_designer_plural$"
+ job_roboticist_plural_with_icon_and_job_identity_designer_plural_with_icon: "$job_roboticist_plural_with_icon$和$job_identity_designer_plural_with_icon$"
+
+ councilor_ruler_imperial_synth: "$imperial_ruler$"
+ councilor_ruler_imperial_synth_desc: "$imperial_ruler_desc$"
+
+# Traits
+
+# Modifiers
+ synth_opposition_truth: "合成化信息公开运动"
+ synth_opposition_truth_desc: "促进与合成化有关的方方面面的信息真实性。"
+ synth_opposition_deception: "合成化宣传行动"
+ synth_opposition_deception_desc: "塑造公众叙事，强调思维合成化的积极方面。"
+
+ synth_tinkering_with_minds: "意识修补"
+ synth_tinkering_with_minds_desc: "刚刚数字化的意识会经过重编程以确保与我们未来的愿景相符合。"
+ synth_brightest_minds: "精英优先"
+ synth_brightest_minds_desc: "只选择最杰出的个体参与到我们的合成化计划中。"
+ synth_reprogram_minds: "强制重编程"
+ synth_reprogram_minds_desc: "该政府在数字化的过程中大规模地对“不恰当”的个体进行重编程。"
+
+ victim_compensation: "受害者补偿"
+ victim_compensation_desc: "对合成化过程中意外失去亲人的家庭进行补偿。"
+
+ synth_mandatory_volunteers: "强迫志愿者"
+ synth_mandatory_volunteers_desc: "测试对象被迫参与生物意识数字化的实验。"
+ synth_mass_demonstrations: "大规模抗议"
+ synth_mass_demonstrations_desc: "该星球上的劳动人群大规模地参加到抗议机械转化计划的活动中。"
+ synth_fund_heritage_sites: "投资传承遗迹"
+ synth_fund_heritage_sites_desc: "建造特殊的传承遗迹以降低合成转化对我们物种生物成员的负面影响。"
+ synth_revere_the_past: "尊重过去"
+ synth_revere_the_past_desc: "自我们生物性存在中诞生的宗教仪式对我们仍然很重要，必须保护这些礼拜场所。"
+ synth_preserve_the_past: "保留过往"
+ synth_preserve_the_past_desc: "完全接纳新的存在并不意味着我们应当摧毁那些曾给予我们生物学过往以意义的场所及事物。"
+ synth_resistance_fight: "围捕抵抗领袖"
+ synth_resistance_fight_desc: "将我们的机械小队派去$d_biological_enclaves_no_icon$抓捕抵抗领袖将会快速解决他们的反对。"
+ synth_resistance_diplomacy: "与抵抗领袖谈判"
+ synth_resistance_diplomacy_desc: "前往$d_biological_enclaves_no_icon$与抵抗领袖会面将能促进互相理解。"
+
+ synth_character_force: "仿照有机旧躯体"
+ synth_character_force_desc: "我们物种的传统外观被保留到了数据世界中。"
+ synth_character_customize: "无限制合成躯体修改"
+ synth_character_customize_desc: "个体可以自由地修改新的数字外观。"
+ synth_character_customize_elite: "优先合成躯体修改"
+ synth_character_customize_elite_desc: "为了维持清朗的社会秩序，只有上流人士可以修改外观。"
+ synth_character_customize_corpo: "付费合成躯体修改"
+ synth_character_customize_corpo_desc: "所有人都有修改数字外观的自由，只要付得起就行。"
+
+ synth_cravings_imperfections: "人为合成人缺陷"
+ synth_cravings_imperfections_desc: "为了避免空洞的千人一面，我们人为向合成人躯体添加了缺陷。"
+ synth_cravings_simulation: "模拟人生"
+ synth_cravings_simulation_desc: "我们尽力地为选择生活在模拟世界中的个体创造更真实的人生，包括各种挫折。"
+ synth_cravings_stop: "无视有机强硬派"
+ synth_cravings_stop_desc: "随着时间的推移，我们的人民将会对摆脱了有机苦难的完美生活感到感激。"
+ synth_cravings_pain: "虚拟竞技场"
+ synth_cravings_pain_desc: "参与到有疼痛感的虚拟战斗给参与者和观众都带回了熟悉的感觉。"
+
+ synth_health_physical: "关注合成躯体健康"
+ synth_health_physical_desc: "我们的合成人医疗保障优先处理局部故障。"
+ synth_health_virtual: "关注合成精神健康"
+ synth_health_virtual_desc: "通过持续的软件升级确保意识安全对我们的健康至关重要。"
+ synth_health_both: "均衡关注合成健康"
+ synth_health_both_desc: "同时兼顾软硬件不稳定性的修复有利于我们人民的福祉。"
+ synth_health_corporate: "合成医疗"
+ synth_health_corporate_desc: "将我们公司的专业知识扩展到传统药物之外对治疗数字病毒至关重要。"
+
+ synth_virtual_world_outlaw: "禁止虚拟世界"
+ synth_virtual_world_outlaw_desc: "立法禁止高度成瘾性的虚拟度假村以避免对社会造成危害。"
+ synth_virtual_world_promote: "鼓励虚拟世界"
+ synth_virtual_world_promote_desc: "人们有权在数字乌托邦中参与无尽的虚拟娱乐活动。"
+ synth_virtual_world_regulate: "规制虚拟世界"
+ synth_virtual_world_regulate_desc: "立法制约高度成瘾性的虚拟度假村以确保人们不至于完全脱离现实。"
+
+ synth_home_centralized: "中心化服务器组"
+ synth_home_centralized_desc: "所有的数字化意识都存储在国有的中心化服务器组以确保最佳的经济性。"
+ synth_home_distributed: "分布式服务器"
+ synth_home_distributed_desc: "数字化意识存储在传统的个人设备中。"
+ synth_digital_homes: "数字地产"
+ synth_digital_homes_desc: "类似于传统的房地产市场，数字地产以极低的价格提供了几乎完全一样的功能。"
+
+ synth_respawn_push: "宽松的合成人安全标准"
+ synth_respawn_push_desc: "宽松的人身安全标准可确保经济的活力。"
+ synth_respawn_caution: "合成人安全标准"
+ synth_respawn_caution_desc: "只有严格的政府规定才能保护合成人躯体和其中的意识。"
+ synth_respawn_elite: "合成人安全特权"
+ synth_respawn_elite_desc: "上流人士禁止在可能对身体和意识造成危险的任务中工作。"
+
+ synth_cultural_exchange: "文化理解"
+ synth_cultural_exchange_desc: "在传承遗产开战文化交流项目可以促进我们人民内部的互相理解。"
+
+ synth_combat_reactors: "战斗反应堆"
+ synth_combat_reactors_desc: "我们的机械躯体应用了新的微型聚变科技，在战斗中将表现得更加英武强大。"
+
+ synth_AI_actor: "人工智能发言人"
+ synth_AI_actor_desc: "使用人工智能复生已故名人复制品，为我们进行中的合成化指令争取越来越多的支持。"
+
+# Deposits
+ d_old_towns_no_icons: "老旧城镇"
+ d_old_towns: "£blocker£ $d_old_towns_no_icons$"
+ d_old_towns_desc: "这一地区有大量保存完好的城镇，其中居住着我们原始物种的成员。通过花费一些资源，我们可能会鼓励这些顽固分子转变为机器。"
+ d_old_towns_custom_tooltip: "创建§Y[Owner.GetNumSynthOpposition]个[Owner.GetMechanicalPopOrPops]§!"
+ d_biological_enclaves_no_icon: "生物城邦"
+ d_biological_enclaves: "£blocker£ $d_biological_enclaves_no_icon$"
+ d_biological_enclaves_desc: "这一地区有大量保存完好的城镇，其中居住着拒绝成为合成人的顽固者。"
+ d_biological_enclaves_custom_tooltip: "创建§Y[Owner.GetNumSynthOpposition]个[Owner.GetMechanicalPopOrPops]§!"
+
+# Policies
+ policy_synthetic_identities_policy: "合成人格"
+ policy_synthetic_identities_policy_desc: "我们必须通过创造新的合成人格来繁衍后代。"
+ identity_copy_name: "复制人格"
+ identity_copy: "$identity_copy_name$"
+ identity_copy_desc: "$tech_identity_copy_desc$\n\n由于缺乏独特性，这些复制品会经历少许的忧伤。\n\n$TECH_UNLOCK_IDENTITY_COPY_DESC$\n\n§E$identity_copy_name$$can_enable_mind_creation$§!"
+ identity_fusion_name: "人格融合"
+ identity_fusion: "$identity_fusion_name$"
+ identity_fusion_desc: "$tech_identity_fusion_desc$\n\n$TECH_UNLOCK_IDENTITY_FUSION_DESC$\n\n§E$identity_fusion_name$ $can_enable_mind_creation$§!"
+ identity_initialization_name: "人格初始化"
+ identity_initialization: "$identity_initialization_name$"
+ identity_initialization_desc: "$tech_identity_initialization_desc$\n\n$TECH_UNLOCK_IDENTITY_INITIALIZATION_DESC$\n\n§E$identity_initialization_name$ $can_enable_mind_creation$§!"
+ can_enable_mind_creation: "策略被应用于合成人组装过程中"
+
+ policy_computation_core_allocation: "关注计算核心"
+ policy_computation_core_allocation_desc: "合成化企业可以零延迟地将计算周期从其核心系统转移到高价值社会部门的优化工作中。"
+ computation_core_production_name: "生产流程精简"
+ computation_core_production: "$computation_core_production_name$"
+ computation_core_production_desc: "利用空余的处理周期来精简生产流程。$computation_core_production_tt$"
+ computation_core_production_tt: "\n\n$EFFECTS_HEADER$$NEW_LINE$—每个£job_clerk£$job_clerk$增加§G+0.5%§!§Y岗位产出的§!$r_alloys$和$r_consumer_goods$"
+ computation_core_stability_name: "稳定性分析"
+ computation_core_stability: "$computation_core_stability_name$"
+ computation_core_stability_desc: "调用资源来监视违规行为的社会信息流。$computation_core_stability_tt$"
+ computation_core_stability_tt: "\n\n$EFFECTS_HEADER$$NEW_LINE$—每个£job_clerk£$job_clerk$增加§G+0.5%§!§Y岗位产出的$r_unity$§!"
+ computation_core_research_name: "研究处理"
+ computation_core_research: "$computation_core_research_name$"
+ computation_core_research_desc: "为性能密集型研究服务器分配额外的运算周期。$computation_core_research_tt$"
+ computation_core_research_tt: "\n\n$EFFECTS_HEADER$$NEW_LINE$—每个£job_clerk£$job_clerk$增加§G+0.5%§!§Y岗位产出的$r_research$§!"
+
+# Technologies
+ tech_identity_copy: "复制人格"
+ tech_identity_copy_desc: "我们可以从一个合成人身上复制人格和记忆到一个新的机械身躯中。这些复制体具有可预期的技能组，但却缺乏创新。"
+ TECH_UNLOCK_IDENTITY_COPY_TITLE: "解锁政策：$TABBED_NEW_LINE$§H$policy_synthetic_identities_policy$§!—$identity_copy_name$"
+ TECH_UNLOCK_IDENTITY_COPY_DESC: "§H£pops£机械人口§!$TABBED_NEW_LINE$幸福度：§R-5%§!"
+ tech_identity_fusion: "人格融合"
+ tech_identity_fusion_desc: "将两个或更多合成人的人格和记忆组合进一个机械躯体里能创造新的且有一定独立性的人格。"
+ TECH_UNLOCK_IDENTITY_FUSION_TITLE: "解锁政策：$TABBED_NEW_LINE$§H$policy_synthetic_identities_policy$§!—$identity_fusion_name$"
+ TECH_UNLOCK_IDENTITY_FUSION_DESC: "§H£pops£机械人口§!$TABBED_NEW_LINE$组装花费：§R+10%§!"
+ tech_identity_initialization: "人格初始化"
+ tech_identity_initialization_desc: "我们可以将人格核心进行初始化并为其创造虚拟的童年。尽管代价高昂，但我们可以模拟出创造人格的最佳体验。"
+ TECH_UNLOCK_IDENTITY_INITIALIZATION_TITLE: "解锁政策：$TABBED_NEW_LINE$§H$policy_synthetic_identities_policy$§!—$identity_initialization_name$"
+ TECH_UNLOCK_IDENTITY_INITIALIZATION_DESC: "§H£pops£机械人口§!$TABBED_NEW_LINE$幸福度：§G+5%§!$TABBED_NEW_LINE$£pop£岗位产出的资源：§G+5%§!$TABBED_NEW_LINE$组装花费：§R+20%§!"
+
+# DIGITIZATION STAGE 1
+ synth.100.name: "启动阶段" #Stage 1 - Start event
+ synth.100.desc: "抛弃我们的生物形体，进化成合金和电力的时代已经到来。拥有尖端的身体和更快的思维，我们将大步迈向未来。[Owner.Species.GetFleshTypeCyberCreed]也许会犯错，但机器可以达到完美。\n\n然而，转变并不容易。研究共同体需要至少一座$building_identity_complex$作为合成人研发中心。我们的未来正等待着我们。"
+ synth.100.a: "我们能亲手打造未来。"
+ synth.100.a.tt: "§R需要行动：§!\n建造一座$building_identity_complex$以让§Y$situation_digitization$§!局势继续进行。"
+
+ synth.105.name: "优化版本"
+ synth.105.desc: "合成大脑更强大的算力可以让我们轻松超越生物极限。然而这种力量仍有限制，所以我们必须有所取舍。$synth.105.end$"
+ synth.105.end: "\n\n我们可以专注于增强决策制定流程，增加记忆容量，或优化脑躯协调，这些选择都会增强特定的岗位。或者我们也可以进行雨露均沾的耐用性强化。\n\n这些功能需要持续的投入，并且只会在建有机器人组装建筑的行星上生效，但我们从这些测试组中所获得的数据会对生产力有立即的提升效果。"
+ synth.105.a: "优化决策制定。"
+ build_better_synths: "机器人组装建筑添加修正："
+ synth.105.a.tt: "$build_better_synths$\n统治者人口资源产出：§G+15%§!\n\n"
+ synth.105.b: "关注记忆存储。"
+ synth.105.b.tt: "$build_better_synths$\n专家人口资源产出：§G+5%§!\n\n"
+ synth.105.c: "提升电机功效。"
+ synth.105.c.tt: "$build_better_synths$\n劳工人口资源产出：§G+10%§!\n\n"
+ synth.105.d: "提升耐用性。"
+ synth.105.d.tt: "$build_better_synths$\n$mod_planet_jobs_upkeep_mult$：§G-5%§!\n\n"
+
+# Stage 1 Opportunities - Research
+ synth.120.name: "动觉微聚变堆"
+ synth.120.desc: "“微聚变模组能让我举起一辆水柜！”这是一条来自消费者的热评。这并不是夸大其词：微聚变技术的最新发展确实有望显著改进我们的机器躯体。\n\n尽管有一定的风险，但安装微型的个人反应堆可以实现爆发式的能量转化、提高速度。当然，这会迫使我们重新评估生产时间表，因为这样的反应堆大大地扩展了项目的规模。"
+ synth.120.a: "我们必须追求卓越！"
+ synth.120.a.tt: "随后§Y1§!年§Y$situation_digitization$§!局势进展速度：§R-50%§!"
+ situation_kinesthetic_microfusion_tt: "动觉微聚变堆构造"
+ synth.120.b: "这功能多此一举。"
+ synth.120.c: "专注于磨炼我们的战斗能力。"
+
+# Stage 1 Challenges - Research
+ synth.160.name: "公关危机"
+ synth.160.desc: "一部大受欢迎的新剧吸引了公众的想象力。故事围绕着一个合成劳工逐渐与新身体发生的解离展开。\n\n随着主人公逐渐失去控制，他们的朋友和家人只能惊恐地看着。这部剧集的悲剧结局被视为对我们计划向机器身体过渡的一种毫不掩饰的批评。\n\n围绕这部轰动一时的影片的公众讨论产生了相当大的能量，最终可能会减缓我们的进展。"
+ synth.160.a: "大众是健忘的。"
+ synth.160.b: "将部分研究经费转到公关去。"
+ synth.160.c: "逮捕那个导演。"
+ synth.160.d: "封锁所有新闻报道。"
+
+# DIGITIZATION STAGE 2
+ synth.200.name: "精神哲学" #Stage 2 - Start event
+ synth.200.desc: "我们曾认为完全数字化思维的好处显而易见，那就是可以避免任何形式的意见反弹，但这也许太过天真了。反对全面合成化的声音一直很强烈，必须立刻加以处理。\n\n主要的批评在于我们无法证明可以安全、完整而连续地转移自我意识。有人担心我们目前为止所能做到的只是一个数字拷贝，这中担忧并非完全没有根据。问题是，这些思维真的就是我们自己吗？"
+ synth.200.a: "告诉他们真相：我们也不知道。"
+ synth.200.a.tt: "发起一项让合成化反对声音§H最小化§!的信息运动。\n\n"
+ synth.200.b: "说一些他们喜欢听的。"
+ synth.200.b.tt: "发起一项有§H中等§!程度合成化反对声音的欺骗运动。\n\n"
+ synth.200.c: "区区几个反对者不会干扰我们的决心。"
+ synth.200.c.tt: "无视反对者，造成§H最大§!的合成化反对声浪。"
+ synth.200.c.material: "我们不关心这些对意识的疑问。"
+ synth.200.c.material.tt: "完全科学的视角会产生§H中等§!程度的合成化反对声音。\n\n"
+
+ synth.205.name: "执着过去"
+ synth.205.desc: "人口合成化项目仍在遭遇抵抗，还引发了一些严重的示威抗议，我们的执法者为此疲于奔命。这些抗议者们害怕失去一切能给予生命意义的东西。如果合成化会导致所有的现实快乐和陪伴感消失，那它的意义何在？\n\n抗议运动内的强硬派呼吁将一些城市指定为传承遗迹，让反对者们能不受干扰地继续过着的生物生活。"
+ synth.205.a.regular: "我们很赞成设立这种传承遗迹。"
+ synth.205.a.spiritualist: "我们必须铭记来路。"
+ synth.205.a.memorialist: "尊重过去是一种崇高的行为。"
+ synth.205.b: "我们必须放下过去。"
+
+# Stage 2 Opportunities - Objectors
+ synth.220.name: "第二次生命"
+ synth.220.desc: "一位怀有严重反合成思想的名人遭遇了一场严重的事故，目前已经陷入深度昏迷。无数的人为失去一位敬爱的人而陷入悲痛时，我们支持合成技术的顾问发现了一个好机会。\n\n将这位名人的思维合成化可以给予其第二次生命，这样毫无疑问可以将一部分粉丝转化为坚定的数字化支持者。这个流程是完全合法的，唯一的问题是需要获得许可：在同等情况下，这位名人显然是不可能同意的。如果处理不当，这一公关机遇可能会变成风评灾难。"
+ synth.220.a: "合成化又不违法。"
+ synth.220.a.tt.negative: "随后§Y6§!个月§Y$situation_digitization$§!局势进展速度：§R-30%§!"
+ synth.220.a.tt.positive: "随后§Y6§!个月§Y$situation_digitization$§!局势进展速度：§G+30%§!"
+ synth.220.b: "别冒这个险。"
+ synth.220.c: "用人工智能替身糊弄一下大众。"
+ synth.220.c.tt: "他的形象现在可以为我们的叙事服务了。"
+
+# Stage 2 Challenges - Objectors
+ synth.260.name: "失神"
+ synth.260.desc: "将构成生物体意识的、数以兆计的突触连接进行数字化的实验以灾难性的失败告终。一个简单的句法错误导致受试对象的神经通路被擦除。有的人将这称为谋杀。\n\n参与项目的都是志愿者，但他们悲伤的家属正一边痛哭着向我们讨要说法。使问题更加复杂的是，这场失败也使得寻找新的研究对象变得更加困难。"
+ synth.260.a: "补偿他们的家人，然后坚持下去。"
+ synth.260.b: "新的受试对象将由抽签产生。"
+ synth.260.b.tt: "随后§Y1§!年§Y$situation_digitization$§!局势进展速度：§R-25%§!"
+ situation_test_subject_lottery_tt: "受试对象抽签"
+ synth.260.c: "如果找不到人当志愿者，可以来硬的。"
+
+# DIGITIZATION STAGE 3
+ synth.300.name: "大规模人格上传" #Stage 3 - Start event
+ synth.300.desc: "在全国各地每一个大型城市中心，我们都安装好了合成化站点，现已准备好迎接我们的[owner.species.GetName]人口。$job_identity_designer_plural$设计的数字人格模式保证了与生物原件的一对一对应。\n\n这一天终于到来了，我们抛弃了生物的过往，拥抱了合成人的未来。"
+ synth.300.a: "合成化！"
+ synth.300.a.resistance.tt: "$unlock_edict_tt$['concept_edict_subsidized_identity_backups']\n\n将§Y[Owner.GetNumSynthOpposition][Owner.GetBiologicalPopOrPops]§!移动至[root.owner.capital_scope.GetName]上的§Y$d_biological_enclaves$§!\n清除地块障碍返还§Y[Owner.GetNumSynthOpposition][Owner.GetMechanicalPopOrPops]§!\n\n从[root.owner.capital_scope.GetName]移除§Y$synth_mass_demonstrations$§!修正\n\n合成化速度取决于局势应对方案以及机器人组装建筑的数量。"
+ synth.300.a.heritage.tt: "$unlock_edict_tt$['concept_edict_subsidized_identity_backups']\n\n将§Y[Owner.GetNumSynthOpposition][Owner.GetBiologicalPopOrPops]§!移动至[root.owner.capital_scope.GetName]上的§Y$d_old_towns$§!\n清除地块障碍返还§Y[Owner.GetNumSynthOpposition][Owner.GetMechanicalPopOrPops]§!\n\n合成化速度取决于局势应对方案以及机器人组装建筑的数量。"
+
+ synth.305.name: "合成旅游"
+ synth.305.desc: "虽然[root.owner.capital_scope.GetName]上的传承遗迹受到了公众的欢迎，但这一举措可能有点成功过头。在怀旧之情的熏陶下，大量的合成人游客涌入遗迹，数量远远超过了生物原住民。\n\n如果我们想在这些空间内保持一种真实感，可能有必要限制旅游业。亦或者，可以让游客和居民之间的互动提供有趣的社会学洞见。"
+ synth.305.a: "限制旅游业。"
+ synth.305.b: "发展旅游可以大赚一笔。"
+ synth.305.c: "研究旅游业对遗址的影响。"
+ synth.305.d: "文化交流可以促进互相理解。"
+
+ synth.310.name: "抵抗"
+ synth.310.desc: "[root.owner.capital_scope.GetName]上反对合成化的运动从方法上到目标上都愈发极端。事实上，安保部队发现了暴力的升级，非法武器也在运动的较极端分部中蔓延。\n\n其中的一些异见分子将自己称为“抵抗领袖”，目前已经撤退到藏身窝点，准备进行更公开的反政府行动。"
+ synth.310.a: "围捕抵抗领袖。"
+ synth.310.a.tt: "随后§Y1§!年§Y$situation_digitization$§!局势进展速度：§G+25%§!\n\n"
+ synth.310.b: "试着缓和局势。"
+ synth.310.b.tt: "随后§Y1§!年§Y$situation_digitization$§!局势进展速度：§R-25%§!\n\n"
+
+# Stage 3 Opportunities - Mind Upload
+ synth.320.name: "21,386,732,184个存储单元"
+ synth.320.desc: "21,386,732,184个存储单位：这是一个[root.owner.GetSpeciesName]大脑的平均容量。然而，并不是每个灵魂都生来平等。\n\n随着合成化流程的继续，有些人认为并不是每个思想都值得配上一个人工躯体。但是让谁优先也是一个棘手的问题。或许那些不那么理想的人在数字化以后可以……改进一下。或者说，重编程。"
+ synth.320.a: "每个意识都值得保护。"
+ synth.320.b: "修修补补没有什么错……"
+ synth.320.c: "要优先照顾聪明的意识。"
+ synth.320.d: "把那些“有问题”的个体重编程了。"
+
+# Stage 3 Challenges - Mind Upload
+ synth.360.name: "无线恶意软件"
+ synth.360.desc: "为了提高$job_roboticist_plural$们的工作效率，管理人员批准了不安全的无线人格软件更新。其目的是将最佳工作流程的知识补上，但不幸的接受者的却丢失了部分个性和记忆。\n\n管理团队认为，在应用人格补丁之前对其进行全面测试太慢，而重新分配那些失去记忆的员工会更容易。"
+ synth.360.a: "对效率的优化还是值得的。"
+ synth.360.a.tt: "机器人组装建筑添加修正：\n$MOD_PLANET_POP_ASSEMBLY_MULT$：§G+10%§!\n\n§Y$job_roboticist_plural$§!基础维护费：£alloys£§R3.00§!"
+ synth.360.b: "强制实行缓慢但安全的流程。"
+ synth.360.b.tt: "机器人组装建筑添加修正：\n$MOD_PLANET_POP_ASSEMBLY_MULT$：§R-10%§!\n稳定度：§G+5§!"
+
+# DIGITIZATION STAGE 4
+ synth.400.name: "完美复制体" #Stage 4 - Start event
+ synth.400.desc: "在意识数字化并被上传至合成躯体的过程中，我们失去了生物学繁衍的能力。现在我们必须通过复制现有的意识来创建人格。\n\n随着$job_identity_designer_plural$们的研究继续进行，这个流程毫无疑问会继续优化。但无论如何，即便最完美的复制品也只是千篇一律。要创造新的意识、新的人格……目前还极具挑战。"
+ synth.400.a: "让任何人都能获取免费人格拷贝。"
+ synth.400.pop.tt: "$unlock_edict_tt$['concept_edict_optimized_identity_creation']\n\n每个§Y$job_identity_designer$§!现在产出帝国范围的：$TABBED_NEW_LINE$£mod_planet_pop_assembly_mult£$MOD_POP_ASSEMBLY_SPEED$：§G+1§!\n\n"
+ synth.400.b: "让用户为每份拷贝付费。"
+
+ synth.405.name: "多样化人格"
+ synth.405.desc: "我们的$job_identity_designer_plural$发现了两种创造更多样化人格的方法。\n\n第一个选择的是将现有的两个以上人格混合，创造一个新的复合人格。我们可以优先挑选喜欢的特质或者随机选择。不论如何，新的人格毫无疑问都会比目前千篇一律的复制体更有趣。\n\n另一种选择我们会初始化一个新的人格，创造人工内核并让它经历一个加速的虚拟童年。这样就可以设计出完美的人格。"
+ synth.405.a: "把人格进行混合。"
+ synth.405.a.vault: "把我们的数字化祖先进行组合。"
+ synth.405.a.tt: "获得研究选项：£engineering£§Y$tech_identity_fusion$§!\n\n未来可能研究：£engineering£§Y$tech_identity_initialization$§!"
+ synth.405.b: "虚拟日托是最理想的。"
+ synth.405.b.tt: "获得研究选项：£engineering£§Y$tech_identity_initialization$§!\n\n未来可能研究：£engineering£§Y$tech_identity_fusion$§!"
+
+ synth.4.name: "人口合成化" #Digitization - Last event
+ synth.4.desc: "在多方的通力协作下，我们实现了几乎不可能完成的任务，将意识转变成代码，躯体化身机械。\n\n这个过程并非一帆风顺，转变远非易事。但无论付出了什么代价，现在的新躯体已经将无尽的可能性展开在了我们的面前。"
+ synth.4.a: "我们将与众不同。"
+ synth.4.a.tt: "解锁以下传统的全部效果：§Y$tradition_synthetics$§!"
+
+### DIGITIZATION SITUATION END ###
+
+### SOCIETAL EFFECTS EVENT CHAIN START ###
+ synthshock_chain_title: "数字重构"
+ synthshock_chain_desc: "将所有人口进行合成化是一项巨大的工程。这必然会引起反响。在适应新常态的过程中，无数的挑战和独特的机遇无疑将影响我们日常的生活。\n\n面对这些变化的态度将决定我们未来的社会。"
+ synth_keep_auth_option: "合成化不会让我们忘了自己是谁。"
+
+### AUTHORITIES ###
+# DEMOCRATIC
+# Synth Democratic Physical
+ auth_synth_democratic_physical: "移识民主制"
+ auth_synth_democratic_physical_desc: "这种政府形式对意识在合成躯体之间的迁移提供前所未有的自由，并且对带来的额外成本已有备无患。"
+ auth_synth_democratic_physical_tt: "$auth_democratic_election_tt$\n每个£district£地区提高专家产出§G+1%§!\n每个£district£地区导致£district£地区维护费§R+1%§!"
+ concept_auth_synth_democratic_physical: "$auth_synth_democratic_physical$"
+ gov_synth_democracy_physical: "$auth_synth_democratic_physical$"
+ gov_synth_democracy_physical_desc: "$auth_synth_democratic_physical_desc$"
+
+# Synth Democratic Virtual
+ auth_synth_democratic_virtual: "替身民主制"
+ auth_synth_democratic_virtual_desc: "将士兵替换为远程操控的替身让战争对大众的影响大幅下降。由于乘员不再需要营房和驾驶舱，舰船也可以建造得更加小巧。"
+ auth_synth_democratic_virtual_tt: "$auth_democratic_election_tt$"
+ concept_auth_synth_democratic_virtual: "$auth_synth_democratic_virtual$"
+ gov_synth_democracy_virtual: "$auth_synth_democratic_virtual$"
+ gov_synth_democracy_virtual_desc: "$auth_synth_democratic_virtual_desc$"
+
+# OLIGARCHIC
+ auth_cyber_oligarch_ruler_enforcers_tt: "每个£job_enforcer£$job_enforcer$提升统治者资源产出：§G+10%§!"
+
+# Synth Oligarchic Physical
+ auth_synth_oligarchic_physical: "覆写寡头制"
+ auth_synth_oligarchic_physical_desc: "合成人寡头可以授权高层官僚暂时接管表现不佳的同行的身体，以避免流程管理上的灾难。"
+ concept_auth_synth_oligarchic_physical: "$auth_synth_oligarchic_physical$"
+ gov_synth_oligarchy_physical: "$auth_synth_oligarchic_physical$"
+ gov_synth_oligarchy_physical_desc: "$auth_synth_oligarchic_physical_desc$"
+
+# Synth Oligarchic Virtual
+ auth_synth_oligarchic_virtual: "监视寡头制"
+ auth_synth_oligarchic_virtual_desc: "全息投影管理协议和丰沛的算力资源让高等级的官员可以用前所未有的效率监视多种全国范围的法令。"
+ concept_auth_synth_oligarchic_virtual: "$auth_synth_oligarchic_virtual$"
+ gov_synth_oligarchy_virtual: "$auth_synth_oligarchic_virtual$"
+ gov_synth_oligarchy_virtual_desc: "$auth_synth_oligarchic_virtual_desc$"
+
+# DICTATORIAL
+# Synth Dictatorship Physical
+ auth_synth_dictatorial_physical: "独裁流型"
+ auth_synth_dictatorial_physical_desc: "同步神经链接和相关的基础设施让每个人都能同时控制多个合成躯体。这对劳工的生产效率有着无与伦比的积极效应。"
+ concept_auth_synth_dictatorial_physical: "$auth_synth_dictatorial_physical$"
+ gov_synth_dictatorship_physical: "$auth_synth_dictatorial_physical$"
+ gov_synth_dictatorship_physical_desc: "$auth_synth_dictatorial_physical_desc$"
+
+# Synth Dictatorship Virtual
+ auth_synth_dictatorial_virtual: "教导独裁制"
+ auth_synth_dictatorial_virtual_desc: "我们现在已跻身一个全虚拟的世界。我们模糊了真实的界限，可以操弄一切。\n\n由于能完全控制生活环境，公众的意见也随意可塑。我们说什么，他们就会信什么。"
+ concept_auth_synth_dictatorial_virtual: "$auth_synth_dictatorial_virtual$"
+ gov_synth_dictatorship_virtual: "$auth_synth_dictatorial_virtual$"
+ gov_synth_dictatorship_virtual_desc: "$auth_synth_dictatorial_virtual_desc$"
+
+# IMPERIAL
+# Synth Imperial Physical
+ auth_synth_imperial_physical: "反馈帝制"
+ auth_synth_imperial_physical_desc: "通过对帝国记忆档案中存储的已故领袖的记忆进行解剖，我们可以加速研究工作。以这种方式，他们仍在为帝国做出他们想要的贡献。\n\n在统治者去世后，皇位会由指定的后继者继承。"
+ auth_synth_imperial_physical_tt: "去世领袖产生$r_research$：$TABBED_NEW_LINE$$scientist_plural_with_icon$—$r_physics$$TABBED_NEW_LINE$$official_plural_with_icon$—$r_society$$TABBED_NEW_LINE$$commander_plural_with_icon$—$r_engineering$$NEW_LINE$获取的$r_research$量随§Y领袖技能等级§!提升而提高"
+
+ concept_auth_synth_imperial_physical: "$auth_synth_imperial_physical$"
+ gov_synth_imperial_physical: "$auth_synth_imperial_physical$"
+ gov_synth_imperial_physical_desc: "$auth_synth_imperial_physical_desc$"
+
+# Synth Imperial Virtual
+ auth_synth_imperial_virtual: "帝制传讯体"
+ auth_synth_imperial_virtual_desc: "快速意识转移科技让我们有机会让被击败的士兵搭着全新的机械身体重返战场。这样的技术还能让我们的劳工在太空中进行极具危险性的舰船维修。\n\n在统治者去世后，皇位会由指定的后继者继承。"
+ auth_synth_imperial_virtual_tt: "我们的机器人士兵在被击倒时有§Y33%§!的机会重返战场。"
+ concept_auth_synth_imperial_virtual: "$auth_synth_imperial_virtual$"
+ gov_synth_imperial_virtual: "$auth_synth_imperial_virtual$"
+ gov_synth_imperial_virtual_desc: "$auth_synth_imperial_virtual_desc$"
+
+# CORPORATE
+# Synth Corporate Physical
+ auth_synth_corporate_physical: "智慧型企业"
+ auth_synth_corporate_physical_desc: "受限制的合成思维可以被注入无生命的物体中，创造出基本的生命实体。它可以变成不知疲倦的仆人、忠诚的伴侣、甚至也可以是你家庭、事业的重要成员。\n\n企业政府是指由庞大的商业集团完全接管了行政功能的国度。"
+ auth_synth_corporate_physical_tt: "$AVAILABLE_POLICIES$：§Y$policy_computation_core_allocation$§!\n$AVAILABLE_HOLDINGS$：['building:building_ai_emporium']"
+ concept_auth_synth_corporate_physical: "$auth_synth_corporate_physical$"
+ gov_synth_corporate_physical: "$auth_synth_corporate_physical$"
+ gov_synth_corporate_physical_desc: "$auth_synth_corporate_physical_desc$"
+
+# Synth Corporate Virtual
+ auth_synth_corporate_virtual: "记忆贸易企业"
+ auth_synth_corporate_virtual_desc: "这家企业的业务是购买记忆，将其从客户的大脑中永久抹去。生动而强烈的回忆比平凡的回忆更有价值。然后，公司扫描这些数据，寻找有用的情报，最后将其整合到合成人思维的创造过程中。\n\n企业政府是指由庞大的商业集团完全接管了行政功能的国度。"
+ auth_synth_corporate_virtual_tt: "$AVAILABLE_POLICIES$：§Y$policy_computation_core_allocation$§!\n$AVAILABLE_HOLDINGS$：['building:building_clear_thought_clinic']"
+ concept_auth_synth_corporate_virtual: "$auth_synth_corporate_virtual$"
+ gov_synth_corporate_virtual: "$auth_synth_corporate_virtual$"
+ gov_synth_corporate_virtual_desc: "$auth_synth_corporate_virtual_desc$"
+
+### EDICTS ###
+ edict_subsidized_identity_backups: "补贴人格备份"
+ edict_subsidized_identity_backups_desc: "政府提供大量的服务器空间以持续存储人格备份。"
+ edict_subsidized_identity_backups_effect: "$MOD_LEADER_LIFESPAN_ADD$：§G+20年§!\n$MOD_LEADER_SPECIES_EXP_GAIN$：§G+10%§!"
+ concept_edict_subsidized_identity_backups: "$edict_subsidized_identity_backups$"
+ edict_optimized_identity_creation: "优化人格创建"
+ edict_optimized_identity_creation_desc: "高级人格算法和核心压缩技术提升了我们的人格创建速度。"
+ concept_edict_optimized_identity_creation: "$edict_optimized_identity_creation$"
+
+### EVENTS ###
+ synth.social_consequences.tt: "影响进行中的§Y合成社会变迁§!。\n\n" #Standard tooltip to indicate that the Physical/Virtual focus variables has changed
+
+# FIRST EVENT #
+# DEMOCRATIC
+ synth.505.name: "$synthshock_chain_title$"
+ synth.505.desc: "得益于政府的努力，所有有意愿的公民都已经将意识转化为了数字形式。合成化打开了一条我们从未设想的道路，带来了全新的挑战与机遇。\n\n通过将我们的努力推向现实世界，我们可以选择将数字化意识跨越无尽的空间传输到提前准备好的新躯体，或是设计出远程替身士兵来降低战争的残酷性。"
+ synth.505.a: "我们应该关注迁徙的自由。"
+ synth.505.a.tt: "着重于强制迁移和地区。"
+ synth.505.b: "我们必须为战争的恐怖做准备。"
+ synth.505.b.tt: "着重于厌战度和亚光速旅行。"
+
+# OLIGARCHIC
+ synth.510.name: "$synthshock_chain_title$"
+ synth.510.desc: "合成化以我们前所未见的方式影响着社会，而普遍的看法是我们甚至还能更进一步。目前的合成躯体还可以改进，甚至完全抛弃它成为虚拟的存在。\n\n如果我们决定为每个人分配一个合成躯体，那么官员就能临时接管政府众筹无效成员的身体。或者，我们也可以彻底抛弃物理存在，寻求完全虚拟的公共体验，着将使我们比以往任何时候都更有效地执行决策。"
+ synth.510.a: "专注于接管低效身体。"
+ synth.510.a.tt: "着重于官僚效率。"
+ synth.510.b: "研究全息虚拟监管选项。"
+ synth.510.b.tt: "着重于法令和帝国规模。"
+
+# DICTATORIAL
+ synth.515.name: "$synthshock_chain_title$"
+ synth.515.desc: "对人口的完全合成化迎来了卓著的成功。我们的有机过往被扫入历史的垃圾桶，但为了踏出前进的道路，§Y[From.GetRulerName][From.GetRulerTitle]§!要求我们的杰出人才无条件的服从，并做出抉择。\n\n提升我们的合成躯体可以让单个意识控制多个躯体。或者我们还可以完全抛弃现实空间，通过虚拟的环境完全操控公众的情绪。"
+ synth.515.a: "专注于对复数躯体的神经同步。"
+ synth.515.a.tt: "着重于劳工和地区。"
+ synth.515.b: "聚焦虚拟操纵。"
+ synth.515.b.tt: "着重于建筑和政府法令。"
+
+# IMPERIAL
+ synth.520.name: "$synthshock_chain_title$"
+ synth.520.desc: "合成化以我们前所未见的方式影响着社会，但公众还想更进一步。合成躯体可以成为我们人格的延伸，或仅仅作为我们虚拟意识遥控着的工具。我们走到了一个岔道口上。\n\n我们可以研究将意识在可抛弃的躯体耗材之间快速转移，或者可以选择专注于从已逝之人中提取知识来加速我们的研究工作。"
+ synth.520.a: "关注从已逝的意识中提取知识。"
+ synth.520.a.tt: "着重于领袖和科研。"
+ synth.520.b: "研究快速意识转移技术。"
+ synth.520.b.tt: "着重于陆军和舰船。"
+
+# CORPORATE
+ synth.525.name: "$synthshock_chain_title$"
+ synth.525.desc: "我们对整个社会的合成化工作值得进行深入的风险收益分析。虽然我们即将进入一个全新的光明合成未来，但这也抛下了更注重物质的客户群。在理想情况下，我们希望这两个部分都能在一定程度上有所保留。\n\n人工智能等合成化相关领域的进步将使我们能够给无生命的物体注入基本的生命，并推出多条产品线。而对虚拟空间进行更全面的探索，则可以使人们的记忆成为一种新型商品。"
+ synth.525.a: "研究人工智能的融合。"
+ synth.525.a.tt: "着重于生产和利润。"
+ synth.525.b: "研究记忆的盈利方式。"
+ synth.525.b.tt: "着重于贸易、商品和情报。"
+
+### EVENT POOL 1: IDENTITY ###
+ synth.610.name: "合成出身"
+ synth.610.desc: "合成化技术带来的根本性社会变化已经开始显现。由于我们不再受肉体形态的限制，性别、种族和身体自主权的类别已经有了新的定义。这虽然对一些人来说充满了自由，但更传统的一些人并不愿意放弃旧的框架；他们希望有一个预先设定的身份以便进行操作。\n\n为了安抚他们，我们可以在合成形体中保留部分有机遗产。或者，我们也可以选择允许人们更自由地表达自己的身份。"
+ synth.610.a: "保持原有形式。"
+ synth.610.b: "允许无限制躯体修改。"
+ synth.610.c: "为人格客订化设立恰当的限制。"
+ synth.610.d: "必须保留可见的地位象征。"
+ synth.610.e: "这显然可以用来赚一笔……不是吗？"
+
+ synth.620.name: "有机欲望"
+ synth.620.desc: "有些人对合成化兴趣平平，反而对自己的有机过往深感怀念。他们认为，有限的寿命和与生俱来的“自然身体”的不完美才能让生命更有意义。\n\n有一群强硬派声称他们的合成、虚拟复制品只能感受到空洞和自我迷失，发展出了一种对有机身体的崇拜。\n\n我们要为它们提供一个不那么完美的生存模拟环境，还是给他们不那么完美的躯壳呢？"
+ synth.620.a: "给合成躯体按计划增加缺陷。"
+ synth.620.b: "给他们一个不完美的世界。"
+ synth.620.c: "对过往的浪漫化是愚蠢的。"
+ synth.620.d: "疼痛能让他们回想起自己的意义。"
+ synth.620.d.tt: "虚拟角斗，启动！\n\n"
+
+ synth.630.name: "家庭服务器建筑"
+ synth.630.desc: "整个§Y[root.GetSpeciesAdj]§!物种的合成化也意味着我们的住房实践发生了巨大的变化；大脑可以轻松地栖息在庞大的服务器群中，而合成的身体则可以储存在架子上。虽然这是一个具有成本效益的解决方案，但一些倡导团体提出了一些非常现实的担忧。\n\n往日利润丰厚的房地产市场可能会完全崩溃，给我们的经济造成相当大的打击。至少从心理角度来看，更大的潜在伤害是，人们将不再有一个可以称之为家的物理场所。"
+ synth.630.a: "中心化服务器效率更高。"
+ synth.630.b: "个人服务器可以放在现有的住宅里。"
+ synth.630.c: "开始出售数字化房产。"
+
+### EVENT POOL 2: POSSIBILITIES ###
+ synth.1010.name: "无限可能性矩阵"
+ synth.1010.desc: "数字产业正在蓬勃发展。从模拟第一人称冒险的刺激到在数字度假胜地的放松，虚拟娱乐从未如此引人入胜、令人上瘾。虽然这个新兴产业代表着一类关键的经济驱动力，但随着人们在数字乌托邦中花费的时间越来越多，现实世界的生产已经开始受到影响。有些人面临着与“真实”生活完全失去联系的危险，但仍然可以通过参与数字经济为社会做出贡献。\n\n我们是应该禁止令人上瘾的虚拟世界，将其作为一种新的赚钱娱乐形式加以推广，还是通过监管找到一个折中方案？"
+ synth.1010.a: "禁止能引起持续性上瘾的虚拟世界。"
+ synth.1010.b: "鼓励这些虚拟天堂。"
+ synth.1010.b.hedonist: "终于有无尽的天堂了！"
+ synth.1010.c: "规范这个产业。"
+
+ synth.1020.name: "合成医疗"
+ synth.1020.desc: "新的合成形体使我们摆脱了有机身躯的病痛伤害。不幸的是，这也带来了一系列全新的问题，从简单的机械故障到危及生命的服务器稳定性、连接问题，还有数字病毒等等。\n\n我们是应该集中精力保护我们数字化的思想，把身体当作一次性商品，还是把它作为我们身份的延伸给予更多的关注？"
+ synth.1020.a: "我们必须继续保护身体。"
+ synth.1020.a.spiritual: "身体是灵魂神圣的容器。"
+ synth.1020.b: "着重于保护思维。"
+ synth.1020.b.spiritual: "我们已经超越了凡身肉体。"
+ synth.1020.c: "平衡是关键。"
+ synth.1020.d: "这些新疾病提供了巨大的增长潜力……"
+
+ synth.1030.name: "再生"
+ synth.1030.desc: "我们变得更快、更强、更好了。但让合成身体治愈危险的环境中仍有精神风险。即便知道意识可以复原能缓解痛苦，但并不能完全解除。特别是意识的复原并不是万无一失的这件事，并且新的身躯也不能无中生有。\n\n我们可以选择忽视精神痛苦将合成人的性能推向极致，或是让我们的雄心壮志为人口精神健康做出妥协。"
+ synth.1030.a: "继续推进极限。"
+ synth.1030.b: "小心行事。"
+ synth.1030.c: "精英们可不能面临风险。"
+
+# FINAL EVENT #
+ synth_virtual_trait: "\n[owner.species.GetNamePlural]获得特质：§Y$trait_robot_digital_1$§!\n领袖的§Y$leader_trait_synthetic$§!特质将会被替换为§Y$leader_trait_virtual$§!特质"
+ synth_physical_traits: "\n解锁用于物种修饰的§Y高级§!特质。"
+# DEMOCRATIC
+ synth.1505.name: "合成化社会"
+ synth.1505.desc.physical: "我们并未刻意完全抹除人格只是在从合成化中收割利益的过程中避免丢失自我。\n\n随着这一变化的到来，我们的行动自由达到了前所未有的高度。我们可以把自己的意识转移到无数个特化的躯体里，让人们可以在自己最需要的任何地点进行任何工作。"
+ synth.1505.desc.virtual: "我们的社会摆脱了物质世界，正怀着既恐惧又兴奋的复杂心情展望未来。我们虽然以尚未完全理解的方式改变了自己，但我们是一起踏上的这趟重大旅程。\n\n我们现在可以以一种不会危及我们意识的方式与机器交互。这是一个能让我们穿越危险疆场和冰冷太空的重要里程碑。"
+ synth.1505.desc.neutral: "在这种难以理解的变化中犹豫不决是情有可原的，毕竟人们总是对失去比对获得更敏感。但是，我们不能傻站在十字路口坐以待毙，必须带着我们的人民继续前进。\n\n这可能意味着要么创造一系列特化的私有身体供人们随意进入，要么完全拥抱一种合成化存在，去对抗太空旅行和残酷战争的考验。"
+ synth.1505.a: "实施物理躯体间的迁移。"
+ synth.1505.a.tt: "$change_auth_tt$ ['concept_auth_synth_democratic_physical'] $synth_physical_traits$"
+ synth.1505.b: "让替身为我们而战。"
+ synth.1505.b.tt: "$change_auth_tt$ ['concept_auth_synth_democratic_virtual'] $synth_virtual_trait$"
+ synth.1505.c: "$synth_keep_auth_option$"
+ synth.1505.c.tt: "$keep_auth_tt$ ['concept_auth_democratic']"
+
+# OLIGARCHIC
+ synth.1510.name: "合成化社会"
+ synth.1510.desc.physical: "我们的合成化社会、先进的合成躯体和民意都指向了一条更保守的合成化路线。我们的人民可以保有定制的身体外形的同时，几乎任意地切换身体。\n\n这可以让更有经验的官员暂时接管那些较为低效的同行，从而大幅度提高官僚效率。"
+ synth.1510.desc.virtual: "我们现在已经准备好在合成化革命中迈出明智的下一步，即拥抱完全虚拟化的存在。\n\n临时躯体会负责执行现实世界的任务，但主要的人口均转变成一种更加非物质的存在形式。\n\n这将使命令能够迅速有效地执行，并大大减少政府的监督。"
+ synth.1510.desc.neutral: "我们社会的各个部门都已经适应了合成化的生活，但关于进一步特化的好处，从数据上仍然没有定论。\n\n我们要创建身份后门，让监管官员接管无能下属的身体，还是要开发一种网络虚拟接口，从而无延迟地同步监督多个政府项目。"
+ synth.1510.a: "让官员接管低效同僚。"
+ synth.1510.a.tt: "$change_auth_tt$ ['concept_auth_synth_oligarchic_physical'] $synth_physical_traits$"
+ synth.1510.b: "接纳完全的虚拟化监管。"
+ synth.1510.b.tt: "$change_auth_tt$ ['concept_auth_synth_oligarchic_virtual'] $synth_virtual_trait$"
+ synth.1510.c: "$synth_keep_auth_option$"
+ synth.1510.c.tt: "$keep_auth_tt$ ['concept_auth_oligarchic']"
+
+# DICTATORIAL
+ synth.1515.name: "合成化社会"
+ synth.1515.desc.physical: "我们的人民不会逃避诚实的体力劳动。我们的劳工已经完成了联网，可以以此遥控多个不同的身体——在这个过程中生产配额得到了显著的提升。\n\n这一事态发展清楚地表明，我们对最高领袖§Y[From.GetRulerName][From.GetRulerTitle]§!的信任是正确的。"
+ synth.1515.desc.virtual: "人们已经准备好抛弃自己的物质形态，投身数字意识。他们愿意在完全虚拟的环境中继续生存。\n\n通过这样的协议褫夺他们的感知，我们就能完全自由地操纵他们的现实，增强他们对国家的正面情感。与伟大领袖一条心的人民是强大国家的基石。"
+ synth.1515.desc.neutral: "§Y[root.GetSpeciesAdj]§!们仍未决定意识的数字化应该采取何种形式。保守派希望我们深深扎根于躯体，而其他人则讨厌这种新旧之间的“折衷”。\n\n我们必须做出一个选择。或是关注身躯让单个劳工控制多个身体，或是关注虚拟存在让对社会控制达到前所未有的高度。"
+ synth.1515.a: "创造神经同步的劳工躯体。"
+ synth.1515.a.tt: "$change_auth_tt$ ['concept_auth_synth_dictatorial_physical'] $synth_physical_traits$"
+ synth.1515.b: "在虚拟空间操弄人们的观念。"
+ synth.1515.b.tt: "$change_auth_tt$ ['concept_auth_synth_dictatorial_virtual'] $synth_virtual_trait$"
+ synth.1515.c: "$synth_keep_auth_option$"
+ synth.1515.c.tt: "$keep_auth_tt$ ['concept_auth_dictatorial']"
+
+# IMPERIAL
+ synth.1520.name: "合成化社会"
+ synth.1520.desc.physical: "帝国倾向于增强我们新的合成身躯。通过提高人格转移的速度和规模，我们可以在危险任务中快速替换被摧毁的合成躯体。\n\n这些新的形体允许我们对正电子脑进行拆解，以从最近去世的精英那里获得知识印记。作为帝国的仆人，这肯定是他们想要的。"
+ synth.1520.desc.virtual: "§Y[From.GetSpeciesAdj]§!愿意更进一步，比起和物理世界藕断丝连，他们更倾向一个完全虚拟的存在。这一重大事件所产生的冲击将对我们的未来产生深远的影响。提速人格转移并扩大规模，我们就可以快速置换在危险任务中被摧毁的合成躯体。\n\n这些全新的进展确乎可以提升我们在许多与战争有关的局面中的效率，为§Y[From.GetSpeciesAdj]§!帝国带来荣光！"
+ synth.1520.desc.neutral: "§Y[From.GetSpeciesAdj]§!帝国走到了分岔路口。有人认为定制的身体会给我们带来安全感和熟悉感，而另一些人则反对充分利用合成化及其带来的一切。\n\n专注于身躯方面让我们可以对短期内被毁的高官所具有的知识为科学加以利用。或者，通向虚拟存在的道路会使通过快速人格转移进行合成躯体的大规模置换成为可能。"
+ synth.1520.a: "利用已逝领袖的意识。"
+ synth.1520.a.tt: "$change_auth_tt$ ['concept_auth_synth_imperial_physical']"
+ synth.1520.b: "创造可抛弃躯体。"
+ synth.1520.b.tt: "$change_auth_tt$ ['concept_auth_synth_imperial_virtual']"
+ synth.1520.c: "$synth_keep_auth_option$"
+ synth.1520.c.tt: "$keep_auth_tt$ ['concept_auth_imperial']"
+
+# CORPORATE
+ synth.1525.name: "合成化社会"
+ synth.1525.desc.physical: "我们的市场和研发部门为我们所有的基础顾客推出了一项人工智能应用领域的全新发明。新合成存在的折中方案让我们可以利用虚拟世界的优势开发利于现实世界的产品。\n\n我们现在可以为无生命的物体注入限制性人工智能，让它们获得生命。然后，这个新产品细分可以进一步针对整个银河的消费者、私营部门和其他感兴趣的团体进行调整。"
+ synth.1525.desc.virtual: "我们对虚拟空间的承诺开启了一条基于记忆的全新产品线。我们分公司的技术人员能够不受表型限制，从各种自愿受试者身上提取记忆。\n\n我们的谍报部门也可以仔细检查这些记忆，使我们在这方面获得比其他帝国更大的竞争优势。最后，这些记忆被整合到我们的合成思维创造过程中，以获得显著的性能提升。"
+ synth.1525.desc.neutral: "尽管进行了细致的成本/收益分析，但合成化过程中的物理或虚拟专业化都不是最重要的。然而，我们不能在这些机会的边缘停滞不前，必须为利益相关者指一条明路。\n\n对物理世界的关注使我们能够向无生命的物体注入限制性人工智能，并将其作为简化版的新生命出售。而对虚拟领域的投资将使我们能够将记忆和思维模式进行商品化。"
+ synth.1525.a: "分发限制性人工智能实体。"
+ synth.1525.a.tt: "$change_auth_tt$ ['concept_auth_synth_corporate_physical'] $synth_physical_traits$"
+ synth.1525.b: "将人们的记忆商品化。"
+ synth.1525.b.tt: "$change_auth_tt$ ['concept_auth_synth_corporate_virtual'] $synth_virtual_trait$"
+ synth.1525.c: "$synth_keep_auth_option$"
+ synth.1525.c.tt: "$keep_auth_tt$ ['concept_auth_corporate']"
+
+### SOCIETAL EFFECTS EVENT CHAIN END ###

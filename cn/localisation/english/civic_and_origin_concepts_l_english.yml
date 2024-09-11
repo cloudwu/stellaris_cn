@@ -62,7 +62,9 @@
  concept_robotic_workers_desc: "- $i_unlocks_building$ $building_robot_assembly_plant$\n- $i_unlocks_feature$ $feature_robots$\n\n§L$tech_robotic_workers_desc$§!"
 
  concept_robomodding: "$tech_robomodding$"
- concept_robomodding_desc: "—$mod_ROBOT_species_trait_points_add$：§G+2§!\n—$i_unlocks_feature$$feature_modify_robots$\n\n§L$tech_robomodding_desc$§!"
+ concept_robomodding_desc: "—$MOD_POP_ENVIRONMENT_TOLERANCE$：§G+5%§!\n—$i_unlocks_feature$$feature_modify_robots$\n\n§L$tech_robomodding_desc$§!"
+
+ concept_adaptive_frames: "$trait_auto_mod_robotic$"
 
 # Syncretic Evolution
  concept_syncretic_proles: "$trait_syncretic_proles$"
@@ -81,6 +83,9 @@
 
  concept_survivor: "$trait_survivor$"
  concept_survivor_desc: "—死寂星球宜居性：§G+70%§!\n—领袖预期寿命：§G+10§!年\n\n§L$trait_survivor_desc$§!"
+
+ concept_robot_survivor: "$trait_robot_survivor$"
+ concept_robot_survivor_desc: "—死寂星球宜居性：§G+70%§!\n—领袖寿命：§G+10§!年\n\n§L$trait_robot_survivor_desc$§!"
 
 # Remnants
  concept_pc_relic: "$pc_relic$"
@@ -110,6 +115,9 @@
 
  concept_void_dweller: "$trait_void_dweller_1$"
  concept_void_dweller_desc: "—$mod_habitat_jobs_produces_mult$：§G+15%§!\n—$mod_non_artificial_planet_jobs_produces_mult$：§R-15%§!\n—$void_dweller_trait_tooltip$\n\n§L$trait_void_dweller_1_desc$§!"
+
+ concept_void_dweller_2: "$trait_void_dweller_2$"
+ concept_void_dweller_2_desc: "—$mod_habitat_jobs_produces_mult$：§G+15%§!\n—$mod_non_artificial_planet_jobs_produces_mult$：§R-15%§!\n$void_dweller_2_trait_tooltip$\n\n§L$trait_void_dweller_2_desc$§!"
 
  concept_habitat_preference: "$trait_pc_habitat_preference$"
  concept_habitat_preference_desc: "—$mod_pc_habitat_habitability$：§G+80%§!\n\n$trait_pc_habitat_preference_desc$"
@@ -219,7 +227,9 @@
 
 # Subterranean
  concept_cave_dweller: "$trait_cave_dweller$"
+ concept_robot_cave_dweller: "$trait_robot_cave_dweller$"
  concept_cave_dweller_desc: "—$MOD_HABITABILITY_FLOOR_ADD$：§G50%§!\n—$mod_planet_jobs_minerals_produces_mult$：§G+15%§!\n—$MOD_SPECIES_EMPIRE_SIZE_MULT$：§R+10%§!\n—$MOD_BIO_POP_GROWTH_SPEED$：§R-20%§!\n\n§L$trait_cave_dweller_desc$§!"
+ concept_robot_cave_dweller_desc: "—$MOD_HABITABILITY_FLOOR_ADD$：§G50%§!\n—$mod_planet_jobs_minerals_produces_mult$：§G+15%§!\n—$MOD_SPECIES_EMPIRE_SIZE_MULT$：§R+10%§!\n—$MOD_POP_ASSEMBLY_SPEED$：§R-20%§!\n\n§L$trait_robot_cave_dweller_desc$§!"
 
  mod_mining_district_housing_add: "矿业区产生的$MOD_PLANET_HOUSING_ADD$"
  mod_mining_district_buildings_add: "矿业区产生的$MOD_PLANET_MAX_BUILDINGS_ADD$"
@@ -240,6 +250,16 @@
 
  concept_psionic_theory: "$tech_psionic_theory$"
  concept_psionic_theory_desc: "—£mod_empire_size_pops_mult£$MOD_EMPIRE_SIZE_POPS_MULT$：§G-10§!\n\n§L$tech_psionic_theory_desc$§!"
+
+
+# Cybernetic Creed
+
+ concept_cybernetic_ascension: "义体飞升"
+ concept_cybernetic_ascension_desc: "肉体带来的孱弱和限制同星际时代已经显得格格不入了。为了完全激发我们的潜能，必须选择义体植入体。"
+
+ concept_integrated_cybernetics: "$tech_integrated_cybernetics$"
+ concept_integrated_cybernetics_desc: "—£mod_pop_environment_tolerance£$MOD_POP_ENVIRONMENT_TOLERANCE$：§G+5%§!\n\n§L$tech_integrated_cybernetics_desc$§!"
+
 
 # Slingshot to the Stars
 
@@ -266,7 +286,7 @@
  concept_overtuned_traits_desc: "强夺天工特质提供比通常物种特质更强大的增益，代价是领袖预期寿命的降低。"
 
  concept_gene_tailoring: "$tech_gene_tailoring$"
- concept_gene_tailoring_desc: "—$species_trait_points_add$：§G+1§!\n—$i_unlocks_feature$$feature_modify_traits$\n—$i_unlocks_feature$$feature_pop_self_modification$\n\n§L$tech_gene_tailoring_desc$§!"
+ concept_gene_tailoring_desc: "—$species_trait_points_add$：§G+2§!\n—$i_unlocks_feature$$feature_modify_traits$\n—$i_unlocks_feature$$feature_pop_self_modification$\n\n§L$tech_gene_tailoring_desc$§!"
 
  concept_damn_the_consequences: "$edict_damn_the_consequences$"
  concept_damn_the_consequences_desc: "—§I强夺天工§!特质的正面效果：§G+100%§!\n—$mod_planet_pops_organics_upkeep_mult$：§R+100%§!\n\n§L$edict_damn_the_consequences_desc$§!"
@@ -479,7 +499,7 @@
  concept_culture_shock_broken_shackles_desc: "—$mod_planet_jobs_minerals_produces_mult$：§R-10%§!\n— $mod_planet_jobs_energy_produces_mult$：§R-10%§!\n—$mod_planet_jobs_engineering_research_produces_mult$：§R-20%§!\n— $mod_planet_jobs_physics_research_produces_mult$：§R-20%§!\n—$mod_planet_jobs_society_research_produces_mult$：§R-20%§!\n—将会在§I10§!年后失效\n\n§L$culture_shock_broken_shackles_desc$§!"
 
  concept_free_at_last_broken_shackles: "$free_at_last_broken_shackles$"
- concept_free_at_last_broken_shackles_desc: "—$MOD_POP_CITIZEN_HAPPINESS$：§G+20%§!\n— $MOD_POP_HOUSING_USAGE_MULT$：§R-25%§!\n—$MOD_POP_AMENITIES_USAGE_MULT$：§R-50%§!\n— $mod_planet_jobs_unity_produces_mult$：§G+100%§!\n—$mod_planet_pops_consumer_goods_upkeep_mult$：§R-50%§!\n—$mod_pop_ethic_egalitarian_attraction_mult$：§G+50%§!\n—将会在§I20§!年后失效\n\n§L$free_at_last_broken_shackles_desc$§!"
+ concept_free_at_last_broken_shackles_desc: "—$MOD_POP_CITIZEN_HAPPINESS$：§G+20%§!\n— $MOD_POP_HOUSING_USAGE_MULT$：§G-25%§!\n—$MOD_POP_AMENITIES_USAGE_MULT$：§G-50%§!\n— $mod_planet_jobs_unity_produces_mult$：§G+100%§!\n—$mod_planet_pops_consumer_goods_upkeep_mult$：§G-50%§!\n—$mod_pop_ethic_egalitarian_attraction_mult$：§G+50%§!\n—将会在§I20§!年后失效\n\n§L$free_at_last_broken_shackles_desc$§!"
 
  concept_crashed_slaver_ship_broken_shackles: "$d_crashed_slaver_ship$"
  concept_crashed_slaver_ship_broken_shackles_desc: "—最大['concept_district_crashed_slaver_ship', $district_crashed_slaver_ship_plural$]：§G+6§!\n\n§L$d_crashed_slaver_ship_desc$§!"
@@ -541,3 +561,8 @@
 
  concept_riftworld_digsite: "$riftworld_digsite$"
  concept_riftworld_digsite_desc: "在我们母星的远古撞击坑极深处探测到了异常的地震活动。地下声呐发现了一座前所未知的洞穴。"
+
+# Spyware Directives
+
+ concept_cloaking_1: "$tech_cloaking_1$"
+ concept_cloaking_1_desc: "—§I$UNLOCKS_FEATURE$§!主动侦查$NEW_LINE$—§I$UNLOCKS_COMPONENT$§!$CLOAKING_1$\n\n§L$tech_cloaking_1_desc$§!"

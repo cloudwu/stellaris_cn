@@ -168,12 +168,15 @@
 
  civic_idyllic_bloom:0 "田园绽放"
  civic_idyllic_bloom_desc:0 "这个社会一直花费大量时间在改善和爱护环境上，追求为居民们建造一个真正的天堂。"
- civic_hive_idyllic_bloom:0 "$civic_idyllic_bloom$"
+ civic_hive_idyllic_bloom:0 "菌根理想"
  civic_hive_idyllic_bloom_desc:0 "这个蜂巢思维十分爱护环境，建造一个追求完美协同的天堂。"
  civic_tooltip_idyllic_bloom_effects:2 "可以在你和你附庸初始物种的理想星球上建造£building£§Y$building_gaiaseeders$§!。\n$building_gaiaseeders_all_desc$\n当解锁更高级的£society£§Y环境改造§!科技后，£building£§Y$building_gaiaseeders$§!也可以在其他类型的行星上建造。"
- civic_tooltip_not_idyllic_bloom:0 "没有公民性：§Y$civic_idyllic_bloom$§!"
 
  disables_idyllic_bloom:0 "§R选择这个飞升天赋将使得$civic_idyllic_bloom$理念失效§!"
+
+ civic_tooltip_not_idyllic_bloom: "没有['concept_idyllic_bloom_civics']类公民性"
+ concept_idyllic_bloom_civics: "田园绽放"
+ concept_idyllic_bloom_civics_desc: "$concept_idyllic_bloom_civics$类公民性包括\n—['civic:civic_idyllic_bloom']$NEW_LINE$—['civic:civic_hive_idyllic_bloom']"
 
  gaia_seeder_bloomed_pops_effect: "盖娅播种器将[This.GetName]成功地转化为$pc_gaia$之后，它会用于让我们的人口进一步适应这颗星球。\n\n§Y$trait_plantoid_bloomed$§!和§Y$trait_plantoid_budding$§!特质的效果提高§G+50%§!。"
  gaia_seeder_bloom_timer_tooltip: "\n§Y[This.GetName]§!的下一次绽放将会在§Y[This.gaia_seeder_bloom_timer]§!发生。"
@@ -235,7 +238,7 @@
 
  trait_plantoid_phototrophic:0 "光合作用"
  trait_plantoid_phototrophic_desc:0 "§L这个物种需要食物和阳光维生。§!\n"
- TRAIT_PLANTOID_PHOTOTROPHIC_EFFECT:0 "将§Y50%§!的基础£food£§Y食物§!维护费替换为£energy£§Y能量币§!维护费。"
+ TRAIT_PLANTOID_PHOTOTROPHIC_EFFECT:0 "将§Y50%§!$r_food$维护费替换为$r_energy$维护费"
 
  trait_plantoid_radiotrophic:0 "辐射合成"
  trait_plantoid_radiotrophic_desc:0 "§L这个物种需要食物和低能辐射维生，因此可以在环境最恶劣的星球上生存。§!"
@@ -287,9 +290,13 @@
  catalytic_gestalt_additional_effects: "\n将£job_chemist_drone£§Y$job_chemist_drone_plural$§!、£job_translucer_drone£§Y$job_translucer_drone_plural$§!、以及£job_gas_refiner_drone£§Y$job_gas_refiner_drone_plural$§!的$r_minerals$维护费替换为$r_food$维护费。"
 
 # Machine Intelligence
- civic_machine_catalytic_processing:1 "$civic_hive_catalytic_processing$"
+ civic_machine_catalytic_processing:1 "有机改造"
  civic_machine_catalytic_processing_desc:0 "这个机械智能将多余的有机物重新加工成适合太空结构的先进资源。"
  civic_tooltip_machine_catalytic_processing_effects:0 "将£job_fabricator£§Y$job_fabricator_plural$§!岗位替换为£job_catalytic_drone£§Y$job_catalytic_drone_plural$§!岗位。$job_catalytic_drone_effect_desc$。"
+
+ civic_tooltip_not_catalytic: "没有['concept_catalytic_civics']类公民性"
+ concept_catalytic_civics: "催化加工"
+ concept_catalytic_civics_desc: "$concept_catalytic_civics$类公民性包括\n—['civic:civic_catalytic_processing']$NEW_LINE$—['civic:civic_corporate_catalytic_processing']$NEW_LINE$—['civic:civic_hive_catalytic_processing']$NEW_LINE$—['civic:civic_machine_catalytic_processing']"
 
 # Regular & Corporate
  job_catalytic_technician:0 "催化技师"

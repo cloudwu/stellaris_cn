@@ -51,6 +51,7 @@
 
  job_offspring_drone:0 "子嗣个体"
  job_offspring_drone_plural:0 "子嗣个体"
+ job_offspring_drone_plural_with_icon: "£job_spawning_drone£ $job_offspring_drone_plural$"
  mod_job_offspring_drone_add:0 "$job_offspring_drone$岗位"
  job_offspring_drone_desc:0 "整个星球的行政个体都在这里。始祖通过子嗣个体来实现他们的宏伟设计。"
  job_offspring_drone_effect_desc:2 "£job_spawning_drone£$job_offspring_drone_plural$将$r_food$（或$r_minerals$）转化为£mod_planet_amenities_no_happiness_add£§Y$PLANET_AMENITIES_TITLE$§!和£mod_planet_pop_assembly_mult£§Y$MOD_PLANET_POP_ASSEMBLY_ORGANIC_ADD$§!，产生§Y$offspring_defense_plural$§!，并提供£mod_planet_jobs_simple_drone_produces_mult£§G+10%§!§Y$pop_cat_simple_drone$产出§!增益。"
@@ -65,7 +66,7 @@
  missing_offspring_modifier:0 "缺失的子嗣"
  missing_offspring_modifier_desc:0 "该星球正缺乏子嗣，导致$pop_cat_simple_drone$效率显著下滑。"
 
- #Progentior Hive Ships
+# Progenitor Hive Ships
 
  offspring_corvette:0 "子嗣护卫舰"
  offspring_corvette_plural:0 "子嗣护卫舰"
@@ -140,16 +141,23 @@
  ##########################
 
  origin_subterranean:0 "地底人"
- origin_subterranean_desc:1 "该物种迁徙到地下的真正原因已经消失在历史的长河中。或许是为了躲避天敌，又或许是为了获得丰富的资源，但无论如何，该物种已经进化为适应居住在他们母星地底的形态，造就了这个对环境适应力更为强大的社会结构。"
+ origin_subterranean_desc:4 "这个物种也许永远也不会知道自己的祖先为什么会迁移到地表以下。这究竟是出于一种自我保存的必要，或是为了追寻资源的富足？不管其目的为何，他们都成功地适应了环境，造就了一个对环境要求更加灵活的社会。"
  origin_tooltip_subterranean_effects:4 "- $SPECIES_TRAITS$['concept_cave_dweller']\n- ['concept_mining_district', £district£矿业区]：无上限"
  trait_cave_dweller:0 "穴居者"
- trait_cave_dweller_desc:0 "§L该物种能在任何他们能找到的星球地下繁衍，但代价是人口增长速度。§!"
+ trait_cave_dweller_desc:1 "§L该物种能在任何他们能找到的星球地下繁衍。§!"
  trait_cave_dweller_tooltip:0 "$MOD_BIO_POP_GROWTH_SPEED$: §R-20%§!"
+ trait_robot_cave_dweller: "钻掘机器人"
+ trait_robot_cave_dweller_desc: "§L这些机械被精巧地设计为满足洞穴探险和矿物提取，表现出的杰出行动能力时期可以轻松地在地下世界穿行。§!"
+ trait_robot_cave_dweller_tooltip: "$MOD_POP_ASSEMBLY_SPEED$：§R-20%§!"
+ origin_subterranean_machines: "地底机械"
+ origin_subterranean_machines_desc: "该这明已经完美地融入了地下的存在，其最初的驱动力或是是某种经过深思熟虑的自我保护，或是某种在深处寻找隐藏的丰富资源的指令。由此产生的机械适应性早已挖掘出了一个多功能且坚定不移的机器社群。"
+ origin_tooltip_robot_subterranean_effects: "—$SPECIES_TRAITS$['concept_robot_cave_dweller']\n—['concept_mining_district',£district£矿业区]：无限制"
 
  START_SCREEN_SUBTERRANEAN:1 "当[GetHomeWorldName]上的其他生命在只能在荒野中度过夜晚，我们的祖先很快学习到了在地下生活的智慧，地下为他们提供了阻挡猛烈阳光和剧烈气候的庇荫。\n\n$START_SCREEN_SUBTERRANEAN_END$"
  START_SCREEN_SUBTERRANEAN_PLANT:1 "[GetHomeWorldName]上的生命采取了一些完全不同的进化路线。和我们同处一个世界的其他生命形式不同，它们从阳光中汲取能量而我们从阴暗的地底获得营养，正如我们的[GetSpeciesAdj]先祖所做的那样。\n\n$START_SCREEN_SUBTERRANEAN_END$"
  START_SCREEN_SUBTERRANEAN_LITHOID:0 "我们生于[GetHomeWorldName]极深的地下。我们的进化之路和我们那些不可移动的表兄弟不同，他们在上方如同哨兵般环卫者我们，而我们却选择远离严酷而闪耀的日光。和他们不同，我们获得了移动、思考以及建立一个文明的能力。\n\n$START_SCREEN_SUBTERRANEAN_END$"
- START_SCREEN_SUBTERRANEAN_END:2 "对地底矿物的轻易获取让我们的[GetSpeciesAdj]先祖完成了工业化，统一了我们的物种并深化了穴居的文明形式。我们数次尝试重回地表但每次都只能带来残酷而难于应付的回忆。因此我们还是留在了地下，在星球的根基处建立我们至高无上的地位。\n\n现在随着我们首个[GetStartingDrivePlural]的发现，我们做出了我们最大胆的尝试以触及星辰——并也同我们的祖先那样，我们应该在黑暗中挖掘出自己的家园。"
+ START_SCREEN_SUBTERRANEAN_END:2 "对地底矿物的轻易获取让我们的[GetSpeciesAdj]先祖完成了工业化，统一了我们的物种并深化了穴居的文明形式。我们数次尝试重回地表但每次都只能带来残酷而难于应付的回忆。因此我们还是留在了地下，在星球的根基处建立我们至高无上的地位。\n\n现在随着我们首台[GetStartingDrivePlural]的发现，我们做出了有史以来最大胆的尝试。如同我们的祖先在黑暗中的开拓一般，我们必须在星间的虚空中开凿出我们自己的新家园。"
+ START_SCREEN_SUBTERRANEAN_ROBOT: "我们诞生于[GetHomeWorldName]深深的地下，但并不知道为什么离我们而去的创造者要深掘到地表之下。然而，这一定也是最佳的决定，因为我们现在已经是这里硕果仅存的文明了。\n\n由于很容易获取去地下的矿物，我们先前的无数迭代得以欣欣向荣。在确保了对星球地下世界的掌控之后，我们最终征服了地表。\n\n如今，随着第一台[GetStartingDrivePlural]的研发，我们将迈出最大胆的一步。前往繁星之间，并且，一如既往地，在无尽的黑暗中凿刻出我们的新家园。"
  SUBTERRANEAN:0 "地底人"
 
  ##########################
@@ -157,7 +165,7 @@
  ##########################
 
  origin_shroudwalker_apprentice:0 "天幕导师"
- origin_shroudwalker_apprentice_desc:2 "§R警告：禁止除['concept_psionic_ascension']以外所有的飞升路线。§!\n早在他们踏入银河舞台之前，他们的文明就受到了天幕行者集会的支持和塑造成型。"
+ origin_shroudwalker_apprentice_desc:2 "§R警告：禁用除['concept_psionic_ascension']以外所有的飞升路线。§!\n\n早在他们踏入银河舞台之前，他们的文明就受到了天幕行者集会的支持和塑造成型。"
  START_SCREEN_SHROUDWALKER_APPRENTICE:1 "我们的祖先流传下来关于导师的神话：他们无所不知，并且塑造了我们文明的早期阶段。通过托梦，他们从遥远的地方与我们交流，将他们关于天幕的知识和智慧传授于我们。\n\n如今我们的导师再次降临，通过在我们的梦境中播撒下光怪陆离的画面，他教会了我们星际航行的秘诀。在短短的几年后，我们便能够建造舰船遨游太空。\n\n不过我们前方的路还有多长？我们的导师指明了“天幕隧道”这条路，那是一个坐落于他们母星系边陲的天然虫洞。创建我们自己的隧道便可以让我们通过这条路拜访导师。在我们踏入星际舞台之际，愿我们的导师继续赐予我们更多的智慧。"
  START_SCREEN_SHROUDWALKER_APPRENTICE_CORPORATE:0 "我们教会的创始人如此描述导师：他们无所不知无所不能，他们降下了最初的福音。通过托梦，他们从遥远的地方与我们交流，将他们关于天幕的知识和智慧传授于我们。\n\n如今我们的导师再次降临，通过在我们的梦境中播撒下光怪陆离的画面，他教会了我们星际航行的秘诀。在短短的几年后，我们便能够建造舰船遨游太空。\n\n但这并不是我们雄心壮志的尽头。我们的导师指明了“天幕隧道”这条路，那是一个坐落于他们母星系边陲的天然虫洞。如果我们创建好了这条神圣的通路，我们便能直接与导师会面。在我们踏入星际舞台之际，愿我们的导师继续赐予我们更多的智慧。"
  origin_tooltip_shroudwalker_apprentice_effects:3 "- $SPECIES_TRAITS$['concept_latent_psionic']\n- $AVAILABLE_STARBASE_BUILDINGS$['concept_shroud_beacon']\n- 与['concept_shroudwalker_enclave']的有外交联系。\n- $GUARANTEED_RESEARCH_OPTION_STRING$['concept_psionic_theory', £society£ $tech_psionic_theory$]"
@@ -590,4 +598,3 @@
  NAME_Dysis:0 "戴西斯"
  NAME_Hesperis:0 "赫斯珀里斯"
  NAME_Arktos:0 "阿克托斯"
-

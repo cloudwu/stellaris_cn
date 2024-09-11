@@ -17,7 +17,7 @@
  TRADITION_ADOPT_BUTTON:0 "树立"
  TRADITION_SELECT_BUTTON:0 "选择"
  TRADITIONS_ADOPT:1 "§E树立产生的效应§!：\n"
- TRADITIONS_FINISH:3 "§E完成效果§!：\n采纳所有$CATEGORY|Y$传统将会带来以下额外效果：\n"
+ TRADITIONS_FINISH:3 "§E完成效果§!：\n采纳所有$CATEGORY|Y$传统将获得：\n"
  TRADITIONS_FINISH_AP:2 "$MOD_COUNTRY_ASCENSION_PERKS_ADD$: §G+1§!"
  TRADITION_COST:0 "树立传统的开销"
  TRADITIONS_UNAFFORDABLE:0 "§R我们尚需§Y$RESOURCES$§!以树立此传统。§!"
@@ -223,6 +223,8 @@
  tr_harmony_utopian_dream_delayed:2 "建设乌托邦未来的梦想驱使我们的人民不断锐意进取。一个美好的明天值得我们去奋斗。"
  tr_harmony_mind_and_body:0 "身心合一"
  tr_harmony_mind_and_body_delayed:0 "通过结合新冥想技术和良好的饮食习惯，我们的大部分人口都享有比以往更长的预期寿命。"
+ tr_harmony_mind_and_body_immortal: "医疗冥想"
+ tr_harmony_mind_and_body_immortal_delayed: "借助纳米医学的力量，我们可以消除身体和心理上的有害压力。"
  tr_harmony_unity_of_self:0 "万众归一"
  tr_harmony_unity_of_self_desc:1 "尸化 £pop£ §Y人口§!可以提供 £unity£ 凝聚力。"
  tr_harmony_unity_of_self_delayed:0 "倘若一切有智生灵皆貌若吾等、思若吾等、行若吾等，星际大同必将实现。"
@@ -598,7 +600,7 @@
  tr_prosperity_trans_stellar_corporations_delayed:1 "一些有实力的企业乐意承担我们的大部分工业成本。"
 
  tr_prosperity_void_works:0 "模块化超结构"
- tr_prosperity_void_works_desc:1 "§Y$district_hab_housing_plural$§!提供的£housing£§Y$MOD_PLANET_HOUSING_ADD$§!：§G+1§!\n$mod_habitat_max_districts_mult$：§G+10%§!"
+ tr_prosperity_void_works_desc:1 "§Y$district_hab_housing_plural$§!提供的£housing£§Y$MOD_PLANET_HOUSING_ADD$§!：§G+1§!"
  tr_prosperity_void_works_delayed:1 "通过采用模块化建设技术，我们可以提高栖所的区块密集度。"
 
  tr_prosperity_creative_collectives:0 "创意共同体"
@@ -663,7 +665,7 @@
  tr_subterfuge_cloaking_finish_desc:0 "$tr_subterfuge_finish_effect$\n$MOD_SHIP_CLOAKING_STRENGTH_ADD$：§G+1§!\n$TRADITIONS_FINISH_AP$"
 
  tr_subterfuge_information_security:0 "信息安全"
- tr_subterfuge_information_security_delayed:1 "只有当保密的氛围无处不在的时候，我们才能在无数双眼睛的窥探下保住重要的信息。增强安保系统和反制措施才能让我们的敌人寸步难行。"
+ tr_subterfuge_information_security_delayed:2 "只有当保密的氛围无处不在的时候，我们才能在无数的窥探下保住重要的信息。增强安保系统和反制措施才能让我们的敌人寸步难行。"
 
  tr_subterfuge_nda:0 "保密协议"
  tr_subterfuge_nda_hive:0 "关闭开放性末梢"
@@ -782,72 +784,100 @@
 
  tr_genetics_resequencing:0 "基因重组"
  tr_genetics_resequencing_delayed:0 "基础生理结构再也无法限制我们一分一毫，基因于我们之手有如黏土之于刻刀一般可塑。"
- tr_genetics_resequencing_desc:0 "允许经由物种修饰技术§Y移除有益§!特质，§Y增加不利§!特质。"
+ tr_genetics_resequencing_desc:1 "允许经由物种修饰技术§Y移除有益§!特质，§Y增加不利§!特质。"
 
  tr_genetics_creation:0 "设计起源"
  tr_genetics_creation_delayed:0 "自然是个盲目的向导。我们早就已经大步超越了步履蹒跚的演化，成为了自己命运的主宰。"
- tr_genetics_creation_desc:0 "解锁用于物种修饰的§Y高级§!特质。\n允许将人口整合进或分离出§Y蜂巢思维§!。"
+ tr_genetics_creation_desc:1 "可通过物种修饰§Y调整§!人口§Y外貌§!\n允许将人口整合进或分离出§Y蜂巢思维§!。"
 
  tr_genetics_enhanced_expression:0 "等位基因表达"
  tr_genetics_enhanced_expression_delayed:0 "选择性靶向序列可以产生人工返祖现象，从而表达出一些已经退化了的特质。"
- tr_genetics_enhanced_expression_desc:0 "$mod_BIOLOGICAL_species_trait_picks_add$：§G+1§!\n允许经由物种修饰技术§Y调整§!物种§Y外观§!。"
+ tr_genetics_enhanced_expression_desc:1 "解锁用于物种修饰的§Y高级§!特质。"
+
+ tr_genetics_retrovirus:0 "逆转录病毒操控"
+ tr_genetics_retrovirus_delayed:1 "使用逆转录病毒试剂能让我们的人口快速适应任何环境。"
 
  tr_genetics_efficient_cloning:0 "干细胞刺激"
  tr_genetics_efficient_cloning_delayed:0 "优化克隆设施从而实现并行胚胎发育。"
  tr_genetics_efficient_cloning_desc:0 "§Y$building_clone_vats$§!产出额外§G+1.5§!§Y$MOD_PLANET_POP_ASSEMBLY_ORGANIC_ADD$§!。"
 
- tr_genetics_retrovirus:0 "逆转录病毒操控"
- tr_genetics_retrovirus_delayed:0 "使用逆转录病毒试剂是我们可以轻易地调整我们人口的基因。"
-
- tr_genetics_adopt_modifier_desc:0 "§Y解锁建筑：§!$building_clone_vats$\n$species_trait_points_add$：$POINTS|0=+$"
- tr_genetics_finish_modifier_desc:0 "$species_trait_points_add$“$POINTS|0=+$\n$TRADITIONS_FINISH_AP$”"
- tr_genetics_finish_extra_traits_modifier_desc:0 "$species_trait_points_add$: $POINTS|0=+$\n解锁稀有科技§Y转基因§!研究选项。\n$TRADITIONS_FINISH_AP$"
+ tr_genetics_adopt_modifier_desc:1 "§Y解锁建筑：§!$building_clone_vats$"
+ tr_genetics_finish_modifier_desc:1 "$TRADITIONS_FINISH_AP$"
+ tr_genetics_finish_extra_traits_modifier_desc:1 "解锁稀有科技§Y转基因§!研究选项。\n$mod_planet_buildings_clone_vats_upkeep_mult$：§G-33%§!\n$TRADITIONS_FINISH_AP$"
 
 ################################################################
 # Cybernetics
 ################################################################
 
  tradition_cybernetics:0 "义体"
- tradition_cybernetics_desc:0 "我们的未来在于肉体与机械的融合。"
+ tradition_cybernetics_desc:0 "我们的未来在于[Owner.Species.GetFleshTypeCyberCreed]与机械的融合。"
  tr_cybernetics_adopt:0 "义体传统"
- tr_cybernetics_adopt_desc:0 "解锁一项可以让所有物种获得§Y$trait_cybernetic$§!特质的§Y特殊项目§!。"
+ tr_cybernetics_adopt_desc:1 "开始一项给予创始物种§Y$trait_cybernetic$§!特质的§Y局势§!"
+ tr_cybernetics_adopt_utopia_desc: "解锁一项给予所有物种§Y$trait_cybernetic$§!特质的§Y特殊项目§!。"
  tr_cybernetics_adopt_hive:0 "$tr_cybernetics_adopt$"
  tr_cybernetics_adopt_hive_desc:0 "$tr_cybernetics_adopt_desc$"
+ tr_cybernetics_adopt_hive_utopia_desc: "$tr_cybernetics_adopt_utopia_desc$"
  tr_cybernetics_finish:0 "义体传统已完成"
+ tr_cybernetics_finish_situation_effects: "\n$tr_cybernetics_situation_during$局势速度：§G+25%§!$tr_cybernetics_situation_after$$mod_planet_cyborg_jobs_produces_mult$：§G+10%§!\n$mod_BIOLOGICAL_species_trait_picks_add$：§G+1§!\n$MOD_COUNTRY_ASCENSION_PERKS_ADD$：§G+1§!"
+
+ tr_cybernetics_situation_during: "§H在$situation_cyberization$期间§!\n"
+ tr_cybernetics_situation_after: "\n\n§S在$situation_cyberization$之后§!\n"
+ tr_cybernetics_situation: "$tr_cybernetics_situation_during$局势速度：§G+5%§!$tr_cybernetics_situation_after$"
 
  tr_cybernetics_transubstantiation_synthesis:0 "合成转化"
  tr_cybernetics_transubstantiation_synthesis_delayed:0 "没有植入机械装置者在新世界没有容身之地。"
  tr_cybernetics_transubstantiation_synthesis_desc:0 "$CYBORG_ASSIMILATION_CITIZENSHIP_ENABLED$"
+ tr_cybernetics_transubstantiation_synthesis_situation_effects: "$tr_cybernetics_situation$$tr_cybernetics_transubstantiation_synthesis_desc$"
 
  tr_cybernetics_organ_harvesting:0 "脏器收割"
- tr_cybernetics_organ_harvesting_desc:0 "在进行§Y净化§!的星球上获得§G+10%§!£mod_pop_growth_speed£$MOD_POP_GROWTH_SPEED$。"
+ tr_cybernetics_organ_harvesting_situation: "$tr_cybernetics_organ_harvesting$"
+ tr_cybernetics_organ_harvesting_desc:0 "在进行§Y净化§!的星球上获得§G+10%§!£mod_pop_growth_speed£§Y义体人$MOD_POP_GROWTH_SPEED$§!"
  tr_cybernetics_organ_harvesting_delayed:0 "那些不适格者最好的归宿就是回收再利用。"
+ tr_cybernetics_organ_harvesting_situation_effects: "$tr_cybernetics_situation$$tr_cybernetics_organ_harvesting_desc$"
 
  tr_cybernetics_metabolic_reprocessing:0 "代谢再处理"
  tr_cybernetics_metabolic_reprocessing_delayed:0 "将代谢废物再处理成有用的化学物质降低了维系我们人口所需的化学品。"
  tr_cybernetics_metabolic_reprocessing_hive_delayed:0 "$tr_cybernetics_metabolic_reprocessing_delayed$"
  tr_cybernetics_metabolic_reprocessing_hive_desc:0 "义体人维护费：§G-10%§!\n义体人口产生的帝国规模：§G-10%§!"
+ tr_cybernetics_metabolic_reprocessing_situation_effects: "$tr_cybernetics_situation$义体人维护费：§G-10%§!"
+ tr_cybernetics_metabolic_reprocessing_situation_hive_effects: "$tr_cybernetics_situation$$tr_cybernetics_metabolic_reprocessing_hive_desc$"
 
  tr_cybernetics_integrated_anatomy:0 "整合解剖学"
- tr_cybernetics_integrated_anatomy_delayed:0 "只有将肉体、机械和纳米碳复合材料融为一体才能让我们达到真正的完美。"
- tr_cybernetics_integrated_anatomy_desc:0 "允许经由物种修饰技术为具有§Y义体人§!特质的物种加上§Y义体人§!特质。这需要完成§Y$tech_gene_tailoring$§!研究。\n"
+ tr_cybernetics_integrated_anatomy_delayed:0 "只有将[Owner.Species.GetFleshTypeCyberCreed]、机械和纳米碳复合材料融为一体才能让我们达到真正的完美。"
+ tr_cybernetics_integrated_anatomy_desc:0 "允许经由物种修饰技术为具有§Y义体人§!特质的物种加上§Y义体类§!特质。\n"
+ tr_cybernetics_integrated_anatomy_situation_effects: "$tr_cybernetics_situation$$tr_cybernetics_integrated_anatomy_desc$$mod_BIOLOGICAL_species_trait_picks_add$：§G+1§!"
+ requires_tr_cybernetics_integrated_anatomy: "$TRIGGER_FAIL$需要§Y$tr_cybernetics_integrated_anatomy$§!传统。"
 
- tr_cybernetics_assembly_standards:0 "组装标准"
- tr_cybernetics_assembly_standards_delayed:0 "$policy_roboticist_output_desc$"
- tr_cybernetics_assembly_standards_desc:0 "§Y解锁政策：§!组装标准：义体部件、允许§Y£job_roboticist£ $job_roboticist_plural$§!通过§Y有机人口组装§!产出新的£pop£§Y义体人口§!。"
+ tr_cybernetics_augmentation_overload: "强化改造过载"
+ tr_cybernetics_augmentation_overload_delayed: "只有更多的$job_augmentor_plural$才能满足人民对植入体的需求。"
+ tr_cybernetics_augmentation_overload_desc: "每$building_augmentation_center$提供的$job_augmentor_plural_with_icon$：§G+2§!"
+ tr_cybernetics_augmentation_centers: "强化改造中心"
+ tr_cybernetics_augmentation_centers_desc: "§Y解锁建筑：§!$building_augmentation_center$"
+ tr_cybernetics_augmentation_centers_delayed: "$building_augmentation_center$是一座义体植入的枢纽。里面有购物商城、运营中心和机械商店。"
+ tr_cybernetics_augmentation_overload_situation_effects: "$tr_cybernetics_situation$$tr_cybernetics_augmentation_overload_desc$"
+
 
  tr_cybernetics_synaptic_sub_processing:0 "突触子程序"
+ tr_cybernetics_synaptic_sub_processing_situation: "$tr_cybernetics_synaptic_sub_processing$"
  tr_cybernetics_synaptic_sub_processing_delayed:0 "将例行思维模式装载到中央集线器能缓解我们上行节点的突触承载量。"
+ tr_cybernetics_synaptic_sub_processing_tt: "£building£§Y$building_spawning_pool$§!提供§G+2§!£job_augmentor_drone£§Y$job_augmentor_drone$§!岗位\n$MOD_EMPIRE_SIZE_DISTRICTS_MULT$：§G-25%§!"
+ tr_cybernetics_synaptic_sub_processing_situation_effects: "$tr_cybernetics_situation$$tr_cybernetics_synaptic_sub_processing_tt$"
 
  tr_cybernetics_modular_cybernetics:0 "模块化义体"
  tr_cybernetics_modular_cybernetics_delayed:0 "改进我们义体植入体的适配性可以缩短升级改造的工期。"
  tr_cybernetics_modular_cybernetics_hive_delayed:0 "$tr_cybernetics_modular_cybernetics_delayed$"
- tr_cybernetics_modular_cybernetics_tt:0 "$mod_ROBOT_species_trait_points_add$也作用于有机物种。"
+ tr_cybernetics_modular_cybernetics_tt:1 "§Y$mod_ROBOT_species_trait_points_add$§!和§Y$mod_ROBOT_species_trait_picks_add$§!也作用于有机物种。"
  tr_cybernetics_modular_cybernetics_tt_2:0 "$tr_cybernetics_modular_cybernetics_tt$\n$MOD_COUNTRY_MODIFY_SPECIES_COST_MULT$：§G-50%§!"
- tr_cybernetics_modular_cybernetics_hive_tt:0 "£building£§Y$building_spawning_pool$§!提供§G+2§!£job_cyber_drone£§Y$job_cyber_drone$§!岗位。\n$MOD_COUNTRY_MODIFY_SPECIES_COST_MULT$：§G-50%§!"
+ tr_cybernetics_modular_cybernetics_hive_tt:0 "$MOD_COUNTRY_MODIFY_SPECIES_COST_MULT$：§G-50%§!\n$mod_BIOLOGICAL_species_trait_points_add$：§G+3§!"
+ tr_cybernetics_modular_cybernetics_situation_effects: "$tr_cybernetics_situation$$tr_cybernetics_modular_cybernetics_tt_2$"
+ tr_cybernetics_modular_cybernetics_hive_situation_effects: "$tr_cybernetics_situation$$tr_cybernetics_modular_cybernetics_hive_tt$"
 
- REQUIRES_CYBORG_EMPIRE:0 "§R$TRIGGER_FAIL$我们尚未完成§Y血肉苦弱§!。§!"
+ REQUIRES_CYBORG_EMPIRE:1 "$TRIGGER_FAIL$完成§Y[GetCyberSituation]§!局势"
+ REQUIRES_CYBORG_EMPIRE_UTOPIA: "$TRIGGER_FAIL$完成§Y$FLESH_IS_WEAK_PROJECT$§!特殊项目"
  mod_planet_cyborg_jobs_produces_mult:0 "义体人口产出的资源"
+ mod_planet_cyborg_jobs_physics_research_produces_mult: "义体人口产出的£physics_research£$physics_research$"
+ mod_planet_cyborg_jobs_society_research_produces_mult: "义体人口产出的£society_research£$society_research$"
+ mod_planet_cyborg_jobs_engineering_research_produces_mult: "义体人口产出的£engineering_research£$engineering_research$"
 
 ################################################################
 # Cybernetics for Driven Assimilators
@@ -861,7 +891,7 @@
 
  tr_cybernetics_assimilator_inevitable_assimilation:0 "惯常整合"
  tr_cybernetics_assimilator_inevitable_assimilation_delayed:0 "通过重构整合流程，我们可以更有效的覆写任何有机体的思想。"
- tr_cybernetics_assimilator_inevitable_assimilation_desc:0 "允许整合§Y蜂巢思维§!人口。\n每年整合的£pops£人口数量增加§G1§!。"
+ tr_cybernetics_assimilator_inevitable_assimilation_desc:0 "允许整合§Y蜂巢思维§!人口。\n每年每星球整合的£pops£人口数量增加§G+1§!到§G+3§!之间。"
 
  tr_cybernetics_assimilator_metabolic_reprocessing:0 "代谢再处理"
  tr_cybernetics_assimilator_metabolic_reprocessing_delayed:0 "将代谢废物再处理成有用的化学物质降低了维系人口的所需。"
@@ -871,16 +901,14 @@
  tr_cybernetics_assimilator_integrated_anatomy_delayed:0 "只有将肉体、机械和纳米碳复合材料融为一体才能让我们达到真正的完美。"
  tr_cybernetics_assimilator_integrated_anatomy_desc:0 "解锁用于物种修饰的§Y义体人§!特质。"
 
- tr_cybernetics_assimilator_crucible:0 "熔炉星球"
- tr_cybernetics_assimilator_crucible_delayed:0 "我们应当为义体人的后代专门特化星球，确保他们快速增长以为集体产出部件。"
- tr_cybernetics_assimilator_crucible_desc:0 "获得§Y$col_crucible$§!殖民地规划类型。\n§Y熔炉星球§!提供§Y£job_crucible_drone£$job_crucible_drone$§!岗位，并增加£mod_pop_growth_speed£§Y$MOD_POP_GROWTH_SPEED$§!，但提高§Y$mod_planet_pops_upkeep_mult$§!并降低§Y岗位产出的资源§!"
+ tr_cybernetics_assimilator_gestation:0 "繁育星球"
+ tr_cybernetics_assimilator_gestation_delayed:0 "该行星专注于让有机单元无缝地孵育并转变成为完全融入集体的义体实体。"
+ tr_cybernetics_assimilator_gestation_desc:0 "解锁§Y$col_gestation$§!殖民地类型。\n§Y繁育星球§!提供§Y£job_gestation_drone£$job_gestation_drone$§!岗位以产生全帝国范围的£mod_pop_growth_speed£§Y$MOD_POP_GROWTH_SPEED$§!"
 
  tr_cybernetics_assimilator_modular_cybernetics:0 "模块化义体"
  tr_cybernetics_assimilator_modular_cybernetics_delayed:0 "改进我们义体植入体的互适配性可以缩短升级改造的工期。"
- tr_cybernetics_assimilator_modular_cybernetics_tt:0 "$mod_MACHINE_species_trait_points_add$也作用于有机物种。"
- tr_cybernetics_assimilator_modular_cybernetics_tt_2:0 "$tr_cybernetics_modular_cybernetics_tt$\n$MOD_COUNTRY_MODIFY_SPECIES_COST_MULT$：§G-50%§!"
-
- requires_assimilated_pops:0 "$TRIGGER_FAIL$要求整合完至少30个£pop£人口。我们目前已整合[root.num_assimilated_pops]人口。"
+ tr_cybernetics_assimilator_modular_cybernetics_tt:0 "§Y$mod_MACHINE_species_trait_points_add$§!和§Y$mod_MACHINE_species_trait_picks_add$§!也作用于义体物种。"
+ tr_cybernetics_assimilator_modular_cybernetics_tt_2:0 "$tr_cybernetics_assimilator_modular_cybernetics_tt$\n$MOD_COUNTRY_MODIFY_SPECIES_COST_MULT$：§G-50%§!"
 
 ################################################################
 # Synthetics #
@@ -889,35 +917,58 @@
  tradition_synthetics:0 "合成"
  tradition_synthetics_desc:0 "这便是合成时代的黎明。"
  tr_synthetics_adopt:0 "合成传统"
- tr_synthetics_adopt_machine_desc:0 "允许将其他机械整合成我们的初始物种。"
+ tr_synthetics_adopt_desc: "开始一项将创始物种转化为§Y$trait_mechanical$§!物种的§Y局势§!。"
+ tr_synthetics_adopt_utopia: "$tr_synthetics_adopt$"
+ tr_synthetics_adopt_utopia_desc: "解锁一项将我们公民的意识转移到§Y合成人§!躯体中去的§Y特殊项目§!。\n获得科技进展（若尚未完成研究）：$TABBED_NEW_LINE$£engineering£§Y$tech_synthetic_leaders$§!§G+10%§!"
+
  tr_synthetics_finish:0 "合成传统已完成"
- tr_synthetics_finish_desc:0 "£building£§Y首都建筑§!提供§G+1§!£job_roboticist£§Y$job_roboticist$§!岗位\n$mod_ROBOT_species_trait_picks_add$：§G+1§!\n$TRADITIONS_FINISH_AP$"
- tr_synthetics_finish_machine_desc:1 "所有§Y$trait_machine_unit$§!领袖获得§Y$leader_trait_ruler_synthetic$§!特质。\n£building£§Y首都建筑§!提供§G+1§!£job_replicator£§Y$job_replicator$§!岗位\n$TRADITIONS_FINISH_AP$"
+ tr_synthetics_finish_machine_desc:0 "所有§Y$trait_machine_unit$§!领袖获得§Y$leader_trait_synthetic$§!特质。"
+ tr_synthetics_finish_situation_effects: "\n$tr_synthetics_situation_during$局势速度：§G+25%§!$tr_synthetics_situation_after$$mod_ROBOT_species_trait_picks_add$：§G+2§!\n$mod_ROBOT_species_trait_points_add$：§G+2§!\n$MOD_COUNTRY_MODIFY_SPECIES_COST_MULT$：§G-50%§!\n$MOD_COUNTRY_ASCENSION_PERKS_ADD$：§G+1§!"
+
+ tr_synthetics_situation_during: "§H在$situation_digitization$期间§!\n"
+ tr_synthetics_situation_after: "\n\n§S在$situation_digitization$之后§!\n"
+ tr_synthetics_situation: "$tr_synthetics_situation_during$局势速度：§G+5%§!$tr_synthetics_situation_after$"
 
  tr_synthetics_maintenance_protocols:0 "维护协议"
  tr_synthetics_maintenance_protocols_delayed:0 "定期预防性维护将降低机器人单位的整体故障率。"
+ tr_synthetics_maintenance_protocols_situation_effects: "$tr_synthetics_situation$$MOD_POP_AMENITIES_USAGE_ROBOTIC_MULT$：§G-10%§!"
 
  tr_synthetics_optimization_algorithms:0 "优化算法"
  tr_synthetics_optimization_algorithms_delayed:0 "自我演进的优化算法提高了接入我们网络的机械劳工的生产力。"
+ tr_synthetics_optimization_algorithms_situation_effects: "$tr_synthetics_situation$$mod_planet_jobs_robotic_produces_mult$：§G+10%§!"
 
- tr_synthetics_synthetic_age:0 "合成时代"
- tr_synthetics_synthetic_age_delayed:0 "有机体的时代结束了。星系的未来属于机械。"
- tr_synthetics_synthetic_age_desc:0 "解锁一项将我们公民的心智传输至§Y合成人§!身体中的§Y特殊项目§!。\n完成该特殊项目将解锁§Y整合§!公民§Y物种权利§!，以便未来将更多的人口转化为§Y合成人§!。"
+ tr_synthetics_transubstatiation_synthesis:0 "$tr_cybernetics_transubstantiation_synthesis$"
+ tr_synthetics_transubstatiation_synthesis_delayed:0 "有机体的时代已经终结。星系的未来属于机械。"
+ tr_synthetics_transubstatiation_synthesis_desc:0 "获得§Y同化§!公民权§Y物种权利§!，允许未来新增的人口转变为§Y合成人§!。"
+ tr_synthetics_transubstatiation_synthesis_situation_effects: "$tr_synthetics_situation$$tr_synthetics_transubstatiation_synthesis_desc$"
 
- tr_synthetics_assembly_systems:0 "$tr_synthetics_synthetic_age$"
- tr_synthetics_assembly_systems_delayed:0 "$tr_synthetics_synthetic_age_delayed$"
+ tr_synthetics_assembly_systems:0 "$tr_synthetics_transubstatiation_synthesis$"
+ tr_synthetics_assembly_systems_delayed:0 "$tr_synthetics_transubstatiation_synthesis_delayed$"
  tr_synthetics_assembly_systems_desc:0 "解锁一项将我们公民的心智传输至§Y合成人§!身体中的§Y特殊项目§!。\n$MOD_PLANET_POP_ASSEMBLY_MULT$：§G+10%§!"
 
- tr_synthetics_power_systems:0 "高效能源系统"
- tr_synthetics_power_systems_delayed:0 "改进装载在我们子个体上的能源系统效率可以改进他们的特性集。"
+ tr_synthetics_power_systems: "高效能源系统"
+ tr_synthetics_power_systems_delayed: "几乎无限容量的个人电池使得按计划停工充电变得不再必要。"
+ tr_synthetics_power_systems_situation_effects: "$tr_synthetics_situation$$mod_planet_pops_robotics_upkeep_mult$：§G-25%§!\n$mod_planet_pop_assemblers_upkeep_mult$：§G-25%§!"
 
  tr_synthetics_prefabricated_components:0 "预制部件"
- tr_synthetics_prefabricated_components_delayed:0 "准备好预制部件补给可以降低子系统适应新环境所需的时间和资源。"
+ tr_synthetics_prefabricated_components_delayed: "通过交付标准化部件和安装指南，任何人都能学会自己安装更新。"
+ tr_synthetics_prefabricated_components_situation_effects: "$tr_synthetics_situation$£building£§Y首府建筑§!提供§G+1§!£job_roboticist£§Y$job_roboticist$§!岗位\n£job_roboticist£§Y$job_roboticist$§!提供§G+2§!$i_amenities$"
+ tr_synthetics_prefabricated_components_effects: "£building£§Y首府建筑§!提供§G+1§!£job_roboticist£§Y$job_roboticist$§!岗位\n£job_roboticist£§Y$job_roboticist$§!提供§G+2§!$i_amenities$"
+
+ tr_synthetics_prefabricated_components_machine: "$tr_synthetics_prefabricated_components$"
+ tr_synthetics_prefabricated_components_machine_delayed: "提前生产好的部件储备供应可以大大促进新模型的组装。"
+ tr_synthetics_prefabricated_components_machine_effects: "£building£§Y首府建筑§!提供§G+1§!£job_replicator£§Y$job_replicator$§!岗位"
 
  tr_synthetics_solid_state_actuators:0 "固相促动器"
- tr_synthetics_solid_state_actuators_delayed:0 "固相促动器促进了关键部件的小型化，让机器人单位可以为额外的子系统分配更多空间。"
+ tr_synthetics_solid_state_actuators_delayed:0 "尽管成本高昂，但固相促动器促进了部件的小型化，让领袖得以强化关键的子系统。"
+ tr_synthetics_solid_state_actuators_situation: "$tr_synthetics_solid_state_actuators$"
+ tr_synthetics_solid_state_actuators_situation_delayed: "$tr_synthetics_solid_state_actuators_delayed$"
+ tr_synthetics_solid_state_actuators_situation_effects: "$tr_synthetics_situation$$MOD_LEADER_LIFESPAN_ADD$：§G+20%§!"
+ tr_synthetics_solid_state_actuators_virtual: "$tr_synthetics_solid_state_actuators$"
+ tr_synthetics_solid_state_actuators_virtual_delayed: "$tr_synthetics_solid_state_actuators_virtual_desc$"
 
- requires_tradition_tr_synthetics_adopt:0 "$TRIGGER_FAIL$§R需要采纳§Y$tr_synthetics_adopt$§!。§!"
+ requires_tradition_tr_synthetics_adopt:0 "$TRIGGER_FAIL$§R需要采纳§Y$tr_synthetics_adopt$§!§!"
+ REQUIRES_SYNTHETIC_EMPIRE_UTOPIA: "$TRIGGER_FAIL$完成§Y$SYNTHETIC_EVOLUTION_PROJECT$§!特殊项目"
 
 ################################################################
 # Aptitude
@@ -1143,7 +1194,7 @@
  allow_raiding:0 "解锁§Y$bombardment_raiding$§!轨道轰炸模式，从而能够允许我们从被围攻的行星劫掠人口强制移居到我们的星球。"
 
  ap_defender_of_the_galaxy_effect_opinion:2 "能正常外交的国家的£opinion£§Y评价§!提升§G+20§!" 
- ap_defender_of_the_galaxy_modifier_desc:0 "对终局危机势力的伤害：§G+50%§!"
+ ap_defender_of_the_galaxy_modifier_desc:0 "对终末危机阵营造成伤害：§G+50%§!\n\n$ap_defender_of_the_galaxy_effect_opinion$\n\n§R星河卫士将不能选择化身天灾§!"
 
  ap_engineered_evolution:0 "受控演化"
  ap_the_flesh_is_weak:0 "血肉苦弱"
@@ -1182,6 +1233,7 @@
  ap_synthetic_age:0 "合成时代"
  ap_synthetic_age_desc:0 "有机体的时代已经过去了，银河的未来属于机械体。这是合成时代的黎明。"
  synthetic_age_tooltip:1 "解锁§Y$tradition_synthetics$§!传统树。\n$UNLOCKS_AGENDA$$council_agenda_agenda_synthetic_age_name$，解锁机械改造科技研究选项。"
+ synthetic_age_tooltip_machine_age: "开始§Y嬗变局势§!以解锁§Y$tradition_modularity$§!、§Y$tradition_virtuality$§!或§Y$tradition_nanotech$§!传统树。\n§R需要一个空格传统槽位§!\n$UNLOCKS_AGENDA$$council_agenda_agenda_synthetic_age_name$，获得机械改造科技研究选项。"
  ap_machine_worlds:0 "机械世界"
  ap_machine_worlds_desc:0 "我们应该将我们的星球塑造成自身的镜像，用金属的恒定完美取代有机生物的脆弱。"
  ap_hive_worlds:0 "$pc_hive$"

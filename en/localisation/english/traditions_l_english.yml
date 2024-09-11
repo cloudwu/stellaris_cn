@@ -17,7 +17,7 @@
  TRADITION_ADOPT_BUTTON:0 "Adopt"
  TRADITION_SELECT_BUTTON:0 "Select"
  TRADITIONS_ADOPT:1 "§EAdoption Effects§!:\n"
- TRADITIONS_FINISH:3 "§EFinisher Effects§!:\nAdopting all $CATEGORY|Y$ traditions will grant the following additional effects:\n"
+ TRADITIONS_FINISH:3 "§EFinisher Effects§!:\nAdopting all $CATEGORY|Y$ traditions grants:\n"
  TRADITIONS_FINISH_AP:2 "$MOD_COUNTRY_ASCENSION_PERKS_ADD$: §G+1§!"
  TRADITION_COST:0 "Tradition Cost"
  TRADITIONS_UNAFFORDABLE:0 "§RWe need an additional §Y$RESOURCES$§! before we can unlock this Tradition.§!"
@@ -223,6 +223,8 @@
  tr_harmony_utopian_dream_delayed:2 "The dream of a utopian future drives our people ever forwards. A better tomorrow is worth fighting for."
  tr_harmony_mind_and_body:0 "Mind and Body"
  tr_harmony_mind_and_body_delayed:0 "By embracing a combination of new meditation techniques and healthier eating habits, a large segment of our population enjoys a greater life expectancy than ever before."
+ tr_harmony_mind_and_body_immortal: "Medical Meditation"
+ tr_harmony_mind_and_body_immortal_delayed: "By utilizing our nanomedical capabilities we can remove harmful stress from both the mind and the body of our people."
  tr_harmony_unity_of_self:0 "Unity of Self"
  tr_harmony_unity_of_self_desc:1 "Necrophaging £pop£ §YPops§! provides £unity£ Unity."
  tr_harmony_unity_of_self_delayed:0 "Interstellar harmony would be greatly increased if all sentient beings looked, thought and acted as we do."
@@ -598,7 +600,7 @@
  tr_prosperity_trans_stellar_corporations_delayed:1 "There are powerful corporate entities willing to carry a large part of the cost of our industrial efforts."
 
  tr_prosperity_void_works:0 "Modular Superstructures"
- tr_prosperity_void_works_desc:1 "£housing£ §Y$MOD_PLANET_HOUSING_ADD$§! from §Y$district_hab_housing_plural$§!: §G+1§!\n$mod_habitat_max_districts_mult$: §G+10%§!"
+ tr_prosperity_void_works_desc:1 "£housing£ §Y$MOD_PLANET_HOUSING_ADD$§! from §Y$district_hab_housing_plural$§!: §G+1§!"
  tr_prosperity_void_works_delayed:1 "By implementing modular construction techniques, we can increase the zoning density of our habitats."
 
  tr_prosperity_creative_collectives:0 "Creative Collectives"
@@ -663,7 +665,7 @@
  tr_subterfuge_cloaking_finish_desc:0 "$tr_subterfuge_finish_effect$\n$MOD_SHIP_CLOAKING_STRENGTH_ADD$: §G+1§!\n$TRADITIONS_FINISH_AP$"
 
  tr_subterfuge_information_security:0 "Information Security"
- tr_subterfuge_information_security_delayed:1 "Only by embracing a tradition of secrecy can we protect vital information from prying eyes. Enhanced security systems and countermeasures deny our enemies any potential advantages."
+ tr_subterfuge_information_security_delayed:2 "Only by embracing a tradition of secrecy can we protect vital information from prying minds. Enhanced security systems and countermeasures deny our enemies any potential advantages."
 
  tr_subterfuge_nda:0 "Non-Disclosure Agreement"
  tr_subterfuge_nda_hive:0 "No Loose Ends"
@@ -782,72 +784,100 @@
 
  tr_genetics_resequencing:0 "Genetic Resequencing"
  tr_genetics_resequencing_delayed:0 "No longer are we limited by the basic biological structure of a species. As the sculptor shapes clay, DNA is ours to mold."
- tr_genetics_resequencing_desc:0 "Can §Yremove beneficial§! Traits and §Yadd detrimental§! Traits with Species Modification."
+ tr_genetics_resequencing_desc:1 "Can §Yremove beneficial§! Traits and §Yadd detrimental§! Traits with Species Modification"
 
  tr_genetics_creation:0 "Engineered Genesis"
  tr_genetics_creation_delayed:0 "Nature is a blind guide. We have moved beyond the lumbering processes of evolution, and have become masters of our own destiny."
- tr_genetics_creation_desc:0 "Unlocks §YAdvanced§! Traits for Species Modification.\nAllows the Assimilation of Pops into or out of a §YHive-Mind§!."
+ tr_genetics_creation_desc:1 "Can §Yalter§! Pop §Yappearance§! with Species Modification\nAllows the Assimilation of Pops into or out of a §YHive-Mind§!"
 
  tr_genetics_enhanced_expression:0 "Allelic Expression"
  tr_genetics_enhanced_expression_delayed:0 "Selectively targeting sequences allows for artificial atavism, in which previously regressed traits can be expressed."
- tr_genetics_enhanced_expression_desc:0 "$mod_BIOLOGICAL_species_trait_picks_add$: §G+1§!\nCan §Yalter§! Pop §Yappearance§! with Species Modification."
+ tr_genetics_enhanced_expression_desc:1 "Unlocks §YAdvanced§! Traits for Species Modification"
+
+ tr_genetics_retrovirus:0 "Retroviral Manipulation"
+ tr_genetics_retrovirus_delayed:1 "Retroviral agents allow our population to quickly acclimatize to any environment."
 
  tr_genetics_efficient_cloning:0 "Stem Cell Stimulation"
  tr_genetics_efficient_cloning_delayed:0 "Optimization of cloning facilities will allow for parallel embryonic development."
  tr_genetics_efficient_cloning_desc:0 "§Y$building_clone_vats$§! produce an additional §G+1.5§! §Y$MOD_PLANET_POP_ASSEMBLY_ORGANIC_ADD$§!."
 
- tr_genetics_retrovirus:0 "Retroviral Manipulation"
- tr_genetics_retrovirus_delayed:0 "Use of retroviral agents allows us to easily tailor the genetic make-up of our population."
-
- tr_genetics_adopt_modifier_desc:0 "§YUnlocks Building:§! $building_clone_vats$\n$species_trait_points_add$: $POINTS|0=+$"
- tr_genetics_finish_modifier_desc:0 "$species_trait_points_add$: $POINTS|0=+$\n$TRADITIONS_FINISH_AP$"
- tr_genetics_finish_extra_traits_modifier_desc:0 "$species_trait_points_add$: $POINTS|0=+$\nAllows research of rare §YTransgenesis§! technologies.\n$TRADITIONS_FINISH_AP$"
+ tr_genetics_adopt_modifier_desc:1 "§YUnlocks Building:§! $building_clone_vats$"
+ tr_genetics_finish_modifier_desc:1 "$TRADITIONS_FINISH_AP$"
+ tr_genetics_finish_extra_traits_modifier_desc:1 "Allows research of rare §YTransgenesis§! technologies\n$mod_planet_buildings_clone_vats_upkeep_mult$: §G-33%§!\n$TRADITIONS_FINISH_AP$"
 
 ################################################################
 # Cybernetics
 ################################################################
 
  tradition_cybernetics:0 "Cybernetics"
- tradition_cybernetics_desc:0 "Our future lies in the fusion of flesh and machine."
+ tradition_cybernetics_desc:0 "Our future lies in the fusion of [Owner.Species.GetFleshTypeCyberCreed] and machine."
  tr_cybernetics_adopt:0 "Cybernetic Traditions"
- tr_cybernetics_adopt_desc:0 "Unlocks a §YSpecial Project§! which grants all species the §Y$trait_cybernetic$§! trait."
+ tr_cybernetics_adopt_desc:1 "Starts a §YSituation§! to grant the founding species the §Y$trait_cybernetic$§! trait"
+ tr_cybernetics_adopt_utopia_desc: "Unlocks a §YSpecial Project§! to grant all species the §Y$trait_cybernetic$§! trait."
  tr_cybernetics_adopt_hive:0 "$tr_cybernetics_adopt$"
  tr_cybernetics_adopt_hive_desc:0 "$tr_cybernetics_adopt_desc$"
+ tr_cybernetics_adopt_hive_utopia_desc: "$tr_cybernetics_adopt_utopia_desc$"
  tr_cybernetics_finish:0 "Cybernetic Traditions Finished"
+ tr_cybernetics_finish_situation_effects: "\n$tr_cybernetics_situation_during$Situation Speed: §G+25%§!$tr_cybernetics_situation_after$$mod_planet_cyborg_jobs_produces_mult$: §G+10%§!\n$mod_BIOLOGICAL_species_trait_picks_add$: §G+1§!\n$MOD_COUNTRY_ASCENSION_PERKS_ADD$: §G+1§!"
+
+ tr_cybernetics_situation_during: "§HDuring $situation_cyberization$§!\n"
+ tr_cybernetics_situation_after: "\n\n§SAfter $situation_cyberization$§!\n"
+ tr_cybernetics_situation: "$tr_cybernetics_situation_during$Situation Speed: §G+5%§!$tr_cybernetics_situation_after$"
 
  tr_cybernetics_transubstantiation_synthesis:0 "Transubstantiation Synthesis"
  tr_cybernetics_transubstantiation_synthesis_delayed:0 "The new world has no room for those not infused with the machine."
  tr_cybernetics_transubstantiation_synthesis_desc:0 "$CYBORG_ASSIMILATION_CITIZENSHIP_ENABLED$"
+ tr_cybernetics_transubstantiation_synthesis_situation_effects: "$tr_cybernetics_situation$$tr_cybernetics_transubstantiation_synthesis_desc$"
 
  tr_cybernetics_organ_harvesting:0 "Organ Harvesting"
- tr_cybernetics_organ_harvesting_desc:0 "Planets with ongoing §YPurges§! gain §G+10%§! £mod_pop_growth_speed£ $MOD_POP_GROWTH_SPEED$."
+ tr_cybernetics_organ_harvesting_situation: "$tr_cybernetics_organ_harvesting$"
+ tr_cybernetics_organ_harvesting_desc:0 "Planets with ongoing §YPurges§! gain §G+10%§! £mod_pop_growth_speed£ §YCyborg $MOD_POP_GROWTH_SPEED$§!"
  tr_cybernetics_organ_harvesting_delayed:0 "Those deemed unsuitable are granted purpose only once recycled."
+ tr_cybernetics_organ_harvesting_situation_effects: "$tr_cybernetics_situation$$tr_cybernetics_organ_harvesting_desc$"
 
  tr_cybernetics_metabolic_reprocessing:0 "Metabolic Reprocessing"
  tr_cybernetics_metabolic_reprocessing_delayed:0 "Reprocessing metabolic waste into digestible chemical components reduces the required chemical upkeep for our population."
  tr_cybernetics_metabolic_reprocessing_hive_delayed:0 "$tr_cybernetics_metabolic_reprocessing_delayed$"
  tr_cybernetics_metabolic_reprocessing_hive_desc:0 "Cyborg Upkeep: §G-10%§!\nEmpire Size from Cyborg Pops: §G-10%§!"
+ tr_cybernetics_metabolic_reprocessing_situation_effects: "$tr_cybernetics_situation$Cyborg Upkeep: §G-10%§!"
+ tr_cybernetics_metabolic_reprocessing_situation_hive_effects: "$tr_cybernetics_situation$$tr_cybernetics_metabolic_reprocessing_hive_desc$"
 
  tr_cybernetics_integrated_anatomy:0 "Integrated Anatomy"
- tr_cybernetics_integrated_anatomy_delayed:0 "Only by alloying flesh, steel and nano-carbon composite can we truly reach perfection."
- tr_cybernetics_integrated_anatomy_desc:0 "Allows selection of §YCyborg§! traits for Species Modification that can be applied to species with the §YCybernetic§! trait. This requires §Y$tech_gene_tailoring$§! has been researched.\n"
+ tr_cybernetics_integrated_anatomy_delayed:0 "Only by alloying [Owner.Species.GetFleshTypeCyberCreed], steel, and nano-carbon composite can we truly reach perfection."
+ tr_cybernetics_integrated_anatomy_desc:0 "Allows selection of §YCyborg§! traits for Species Modification that can be applied to species with the §YCybernetic§! trait.\n"
+ tr_cybernetics_integrated_anatomy_situation_effects: "$tr_cybernetics_situation$$tr_cybernetics_integrated_anatomy_desc$$mod_BIOLOGICAL_species_trait_picks_add$: §G+1§!"
+ requires_tr_cybernetics_integrated_anatomy: "$TRIGGER_FAIL$Requires the §Y$tr_cybernetics_integrated_anatomy$§! Tradition."
 
- tr_cybernetics_assembly_standards:0 "Assembly Standards"
- tr_cybernetics_assembly_standards_delayed:0 "$policy_roboticist_output_desc$"
- tr_cybernetics_assembly_standards_desc:0 "§YUnlocks Policy:§! Assembly Standards - Cybernetic Components, allowing §Y£job_roboticist£ $job_roboticist_plural$§! produce new £pop£ §YCyborg Pops§! via §YOrganic Pop Assembly§!."
+ tr_cybernetics_augmentation_overload: "Augmentation Overload"
+ tr_cybernetics_augmentation_overload_delayed: "The only way to keep up with people's demand for implants are more $job_augmentor_plural$."
+ tr_cybernetics_augmentation_overload_desc: "$job_augmentor_plural_with_icon$ per $building_augmentation_center$: §G+2§!"
+ tr_cybernetics_augmentation_centers: "Augmentation Centers"
+ tr_cybernetics_augmentation_centers_desc: "§YUnlocks Building:§! $building_augmentation_center$"
+ tr_cybernetics_augmentation_centers_delayed: "The $building_augmentation_center$ is a hub for cybernetic implantation. Part shopping mall, part operating center, and part mechanic shop."
+ tr_cybernetics_augmentation_overload_situation_effects: "$tr_cybernetics_situation$$tr_cybernetics_augmentation_overload_desc$"
+
 
  tr_cybernetics_synaptic_sub_processing:0 "Synaptic Sub-Processing"
+ tr_cybernetics_synaptic_sub_processing_situation: "$tr_cybernetics_synaptic_sub_processing$"
  tr_cybernetics_synaptic_sub_processing_delayed:0 "Offloading routine thought patterns into central hubs decreases the synaptic load on our uplink nodes."
+ tr_cybernetics_synaptic_sub_processing_tt: "£building£ §Y$building_spawning_pool$§! provide §G+2§! £job_augmentor_drone£ §Y$job_augmentor_drone$§! Jobs\n$MOD_EMPIRE_SIZE_DISTRICTS_MULT$: §G-25%§!"
+ tr_cybernetics_synaptic_sub_processing_situation_effects: "$tr_cybernetics_situation$$tr_cybernetics_synaptic_sub_processing_tt$"
 
  tr_cybernetics_modular_cybernetics:0 "Modular Cybernetics"
  tr_cybernetics_modular_cybernetics_delayed:0 "Improving the compatibility of our cybernetic enhancements will reduce downtime while retrofitting."
  tr_cybernetics_modular_cybernetics_hive_delayed:0 "$tr_cybernetics_modular_cybernetics_delayed$"
- tr_cybernetics_modular_cybernetics_tt:0 "$mod_ROBOT_species_trait_points_add$ also apply to Organic species."
+ tr_cybernetics_modular_cybernetics_tt:1 "§Y$mod_ROBOT_species_trait_points_add$§! and §Y$mod_ROBOT_species_trait_picks_add$§! also apply to Organic species."
  tr_cybernetics_modular_cybernetics_tt_2:0 "$tr_cybernetics_modular_cybernetics_tt$\n$MOD_COUNTRY_MODIFY_SPECIES_COST_MULT$: §G-50%§!"
- tr_cybernetics_modular_cybernetics_hive_tt:0 "£building£ §Y$building_spawning_pool$§! provide §G+2§! £job_cyber_drone£ §Y$job_cyber_drone$§! Jobs.\n$MOD_COUNTRY_MODIFY_SPECIES_COST_MULT$: §G-50%§!"
+ tr_cybernetics_modular_cybernetics_hive_tt:0 "$MOD_COUNTRY_MODIFY_SPECIES_COST_MULT$: §G-50%§!\n$mod_BIOLOGICAL_species_trait_points_add$: §G+3§!"
+ tr_cybernetics_modular_cybernetics_situation_effects: "$tr_cybernetics_situation$$tr_cybernetics_modular_cybernetics_tt_2$"
+ tr_cybernetics_modular_cybernetics_hive_situation_effects: "$tr_cybernetics_situation$$tr_cybernetics_modular_cybernetics_hive_tt$"
 
- REQUIRES_CYBORG_EMPIRE:0 "§R$TRIGGER_FAIL$We have not completed §YThe Flesh is Weak§!.§!"
+ REQUIRES_CYBORG_EMPIRE:1 "$TRIGGER_FAIL$Has finished the §Y[GetCyberSituation]§! situation"
+ REQUIRES_CYBORG_EMPIRE_UTOPIA: "$TRIGGER_FAIL$Has completed §Y$FLESH_IS_WEAK_PROJECT$§! special project"
  mod_planet_cyborg_jobs_produces_mult:0 "Resources from Cyborg Pops"
+ mod_planet_cyborg_jobs_physics_research_produces_mult: "£physics_research£ $physics_research$ from Cyborg Pops"
+ mod_planet_cyborg_jobs_society_research_produces_mult: "£society_research£ $society_research$ from Cyborg Pops"
+ mod_planet_cyborg_jobs_engineering_research_produces_mult: "£engineering_research£ $engineering_research$ from Cyborg Pops"
 
 ################################################################
 # Cybernetics for Driven Assimilators
@@ -861,7 +891,7 @@
 
  tr_cybernetics_assimilator_inevitable_assimilation:0 "Inevitable Assimilation"
  tr_cybernetics_assimilator_inevitable_assimilation_delayed:0 "By refactoring our assimilation processes, we can more efficiently overwrite the mind of any organic."
- tr_cybernetics_assimilator_inevitable_assimilation_desc:0 "Allows the Assimilation of §YHive-Minded§! Pops.\nIncreases the number of £pops£ Pops assimilated each year by §G1§!."
+ tr_cybernetics_assimilator_inevitable_assimilation_desc:0 "Allows the Assimilation of §YHive-Minded§! Pops.\n£pops£ Pops assimilated each year per planet increased by between §G+1§! and §G+3§!."
 
  tr_cybernetics_assimilator_metabolic_reprocessing:0 "Metabolic Reprocessing"
  tr_cybernetics_assimilator_metabolic_reprocessing_delayed:0 "Reprocessing metabolic waste into digestible chemical components reduces population upkeep."
@@ -871,16 +901,14 @@
  tr_cybernetics_assimilator_integrated_anatomy_delayed:0 "Only through the amalgamation of flesh, steel, and nano-carbon composite can we truly reach perfection."
  tr_cybernetics_assimilator_integrated_anatomy_desc:0 "Unlocks §YCybernetic§! Traits for Species Modification."
 
- tr_cybernetics_assimilator_crucible:0 "Crucible Worlds"
- tr_cybernetics_assimilator_crucible_delayed:0 "We shall have worlds dedicated to our cyborg progeny, ensuring the swift growth of productive components for the collective."
- tr_cybernetics_assimilator_crucible_desc:0 "Gain access to the §Y$col_crucible$§! Colony Desigation.\n§YCrucible Worlds§! provide §Y£job_crucible_drone£ $job_crucible_drone$§! Jobs and have increased £mod_pop_growth_speed£ §Y$MOD_POP_GROWTH_SPEED$§! in exchange for increased §Y$mod_planet_pops_upkeep_mult$§! and decreased §YResources from Jobs§!"
+ tr_cybernetics_assimilator_gestation:0 "Gestation Worlds"
+ tr_cybernetics_assimilator_gestation_delayed:0 "A designated world that focuses on maturing and transitioning biological units seamlessly into fully integrated cybernetic entities of the collective."
+ tr_cybernetics_assimilator_gestation_desc:0 "Gain access to the §Y$col_gestation$§! Colony Desigation.\n§YGestation Worlds§! provide §Y£job_gestation_drone£ $job_gestation_drone$§! Jobs providing Empire-wide £mod_pop_growth_speed£ §Y$MOD_POP_GROWTH_SPEED$§!"
 
  tr_cybernetics_assimilator_modular_cybernetics:0 "Modular Cybernetics"
  tr_cybernetics_assimilator_modular_cybernetics_delayed:0 "Improving the intercompatibility of our cybernetic enhancements will reduce downtime when refitting."
- tr_cybernetics_assimilator_modular_cybernetics_tt:0 "$mod_MACHINE_species_trait_points_add$ also apply to Organic species."
- tr_cybernetics_assimilator_modular_cybernetics_tt_2:0 "$tr_cybernetics_modular_cybernetics_tt$\n$MOD_COUNTRY_MODIFY_SPECIES_COST_MULT$: §G-50%§!"
-
- requires_assimilated_pops:0 "$TRIGGER_FAIL$Requires to have assimilated at least 30 £pop£ Pops. We have currently assimilated [root.num_assimilated_pops] Pops."
+ tr_cybernetics_assimilator_modular_cybernetics_tt:0 "§Y$mod_MACHINE_species_trait_points_add$§! and §Y$mod_MACHINE_species_trait_picks_add$§! also apply to Cybernetic species."
+ tr_cybernetics_assimilator_modular_cybernetics_tt_2:0 "$tr_cybernetics_assimilator_modular_cybernetics_tt$\n$MOD_COUNTRY_MODIFY_SPECIES_COST_MULT$: §G-50%§!"
 
 ################################################################
 # Synthetics #
@@ -889,35 +917,58 @@
  tradition_synthetics:0 "Synthetics"
  tradition_synthetics_desc:0 "It is the dawn of a Synthetic Age."
  tr_synthetics_adopt:0 "Synthetic Traditions"
- tr_synthetics_adopt_machine_desc:0 "Allows assimilation of other machines into our primary species."
+ tr_synthetics_adopt_desc: "Starts a §YSituation§! to transform the founding species into a §Y$trait_mechanical$§! species."
+ tr_synthetics_adopt_utopia: "$tr_synthetics_adopt$"
+ tr_synthetics_adopt_utopia_desc: "Unlocks a §YSpecial Project§! to transfer the minds of our citizens into §YSynthetic§! bodies.\nTech progress gained (if not researched):$TABBED_NEW_LINE$£engineering£ §Y$tech_synthetic_leaders$§! §G+10%§!"
+
  tr_synthetics_finish:0 "Synthetic Traditions Finished"
- tr_synthetics_finish_desc:0 "£building£ §YCapital Buildings§! provide §G+1§! £job_roboticist£ §Y$job_roboticist$§! Jobs\n$mod_ROBOT_species_trait_picks_add$: §G+1§!\n$TRADITIONS_FINISH_AP$"
- tr_synthetics_finish_machine_desc:1 "All §Y$trait_machine_unit$§! leaders gain the §Y$leader_trait_synthetic$§! trait.\n£building£ §YCapital Buildings§! provide §G+1§! £job_replicator£ §Y$job_replicator$§! Jobs\n$TRADITIONS_FINISH_AP$"
+ tr_synthetics_finish_machine_desc:0 "All §Y$trait_machine_unit$§! leaders gain the §Y$leader_trait_synthetic$§! trait."
+ tr_synthetics_finish_situation_effects: "\n$tr_synthetics_situation_during$Situation Speed: §G+25%§!$tr_synthetics_situation_after$$mod_ROBOT_species_trait_picks_add$: §G+2§!\n$mod_ROBOT_species_trait_points_add$: §G+2§!\n$MOD_COUNTRY_MODIFY_SPECIES_COST_MULT$: §G-50%§!\n$MOD_COUNTRY_ASCENSION_PERKS_ADD$: §G+1§!"
+
+ tr_synthetics_situation_during: "§HDuring $situation_digitization$§!\n"
+ tr_synthetics_situation_after: "\n\n§SAfter $situation_digitization$§!\n"
+ tr_synthetics_situation: "$tr_synthetics_situation_during$Situation Speed: §G+5%§!$tr_synthetics_situation_after$"
 
  tr_synthetics_maintenance_protocols:0 "Maintenance Protocols"
  tr_synthetics_maintenance_protocols_delayed:0 "Routine preventative maintenance will reduce malfunctions across all robot units."
+ tr_synthetics_maintenance_protocols_situation_effects: "$tr_synthetics_situation$$MOD_POP_AMENITIES_USAGE_ROBOTIC_MULT$: §G-10%§!"
 
  tr_synthetics_optimization_algorithms:0 "Optimization Algorithms"
  tr_synthetics_optimization_algorithms_delayed:0 "Self-learning optimization algorithms lead to an increase in productivity for robotic workers connected to our network."
+ tr_synthetics_optimization_algorithms_situation_effects: "$tr_synthetics_situation$$mod_planet_jobs_robotic_produces_mult$: §G+10%§!"
 
- tr_synthetics_synthetic_age:0 "Synthetic Age"
- tr_synthetics_synthetic_age_delayed:0 "The age of organics is over. This galaxy's future belongs to the machines."
- tr_synthetics_synthetic_age_desc:0 "Unlocks a §YSpecial Project§! to transfer the minds of our citizens into §YSynthetic§! bodies.\nFinishing this special project grants access to the §YAssimilation§! Citizenship §YSpecies Right§!, allowing future additions to the populace to be turned into §YSynths§!."
+ tr_synthetics_transubstatiation_synthesis:0 "$tr_cybernetics_transubstantiation_synthesis$"
+ tr_synthetics_transubstatiation_synthesis_delayed:0 "The age of organics is over. This galaxy's future belongs to the machines."
+ tr_synthetics_transubstatiation_synthesis_desc:0 "Grants access to the §YAssimilation§! Citizenship §YSpecies Right§!, allowing future additions to the populace to be turned into §YSynths§!."
+ tr_synthetics_transubstatiation_synthesis_situation_effects: "$tr_synthetics_situation$$tr_synthetics_transubstatiation_synthesis_desc$"
 
- tr_synthetics_assembly_systems:0 "$tr_synthetics_synthetic_age$"
- tr_synthetics_assembly_systems_delayed:0 "$tr_synthetics_synthetic_age_delayed$"
+ tr_synthetics_assembly_systems:0 "$tr_synthetics_transubstatiation_synthesis$"
+ tr_synthetics_assembly_systems_delayed:0 "$tr_synthetics_transubstatiation_synthesis_delayed$"
  tr_synthetics_assembly_systems_desc:0 "Unlocks a §YSpecial Project§! to transfer the minds of our citizens into §YSynthetic§! bodies.\n$MOD_PLANET_POP_ASSEMBLY_MULT$: §G+10%§!"
 
- tr_synthetics_power_systems:0 "Efficient Power Systems"
- tr_synthetics_power_systems_delayed:0 "Improving the efficiency of the power systems onboard our Drones allows us to improve their feature set."
+ tr_synthetics_power_systems: "Efficient Power Systems"
+ tr_synthetics_power_systems_delayed: "With personal power cells of practically limitless capacity, there is no longer a need to schedule downtime for recharging."
+ tr_synthetics_power_systems_situation_effects: "$tr_synthetics_situation$$mod_planet_pops_robotics_upkeep_mult$: §G-25%§!\n$mod_planet_pop_assemblers_upkeep_mult$: §G-25%§!"
 
  tr_synthetics_prefabricated_components:0 "Prefabricated Components"
- tr_synthetics_prefabricated_components_delayed:0 "Having a ready supply of prefabricated components will reduce the time and resources required to adapt subsystems to new conditions."
+ tr_synthetics_prefabricated_components_delayed: "By shipping standardized components and an assembly instruction, anyone can put their next upgrade together."
+ tr_synthetics_prefabricated_components_situation_effects: "$tr_synthetics_situation$ £building£ §YCapital Buildings§! provide §G+1§! £job_roboticist£ §Y$job_roboticist$§! Jobs\n£job_roboticist£ §Y$job_roboticist$§! provide §G+2§! $i_amenities$"
+ tr_synthetics_prefabricated_components_effects: "£building£ §YCapital Buildings§! provide §G+1§! £job_roboticist£ §Y$job_roboticist$§! Jobs\n£job_roboticist£ §Y$job_roboticist$§! provide §G+2§! $i_amenities$"
+
+ tr_synthetics_prefabricated_components_machine: "$tr_synthetics_prefabricated_components$"
+ tr_synthetics_prefabricated_components_machine_delayed: "Having a ready supply of prefabricated components makes it easier to assemble new models."
+ tr_synthetics_prefabricated_components_machine_effects: "£building£ §YCapital Buildings§! provide §G+1§! £job_replicator£ §Y$job_replicator$§! Jobs"
 
  tr_synthetics_solid_state_actuators:0 "Solid-State Actuators"
- tr_synthetics_solid_state_actuators_delayed:0 "Solid-state actuators improve miniaturization of vital components, allowing robotic units to allocate greater space to additional subsystems."
+ tr_synthetics_solid_state_actuators_delayed:0 "Solid-state actuators improve component miniaturization which, though expensive, allows leaders to harden vital subsystems."
+ tr_synthetics_solid_state_actuators_situation: "$tr_synthetics_solid_state_actuators$"
+ tr_synthetics_solid_state_actuators_situation_delayed: "$tr_synthetics_solid_state_actuators_delayed$"
+ tr_synthetics_solid_state_actuators_situation_effects: "$tr_synthetics_situation$$MOD_LEADER_LIFESPAN_ADD$: §G+20%§!"
+ tr_synthetics_solid_state_actuators_virtual: "$tr_synthetics_solid_state_actuators$"
+ tr_synthetics_solid_state_actuators_virtual_delayed: "$tr_synthetics_solid_state_actuators_virtual_desc$"
 
- requires_tradition_tr_synthetics_adopt:0 "$TRIGGER_FAIL$§RRequires the §Y$tr_synthetics_adopt$§! to be adopted.§!"
+ requires_tradition_tr_synthetics_adopt:0 "$TRIGGER_FAIL$§RRequires the §Y$tr_synthetics_adopt$§! to be adopted§!"
+ REQUIRES_SYNTHETIC_EMPIRE_UTOPIA: "$TRIGGER_FAIL$Has completed §Y$SYNTHETIC_EVOLUTION_PROJECT$§! special project"
 
 ################################################################
 # Aptitude
@@ -1143,7 +1194,7 @@ reaffirmed_superiority_desc: "Our superiority is unassailable. No one is greater
  allow_raiding:0 "Unlocks the §Y$bombardment_raiding$§! bombardment stance, which in turn allows us to abduct pops from besieged planets and resettle them to our own worlds."
 
  ap_defender_of_the_galaxy_effect_opinion:2 "Increases the £opinion£ §YOpinion§! of empires capable of regular diplomacy by §G+200§!"
- ap_defender_of_the_galaxy_modifier_desc:0 "Damage to Endgame Crisis factions: §G+50%§!"
+ ap_defender_of_the_galaxy_modifier_desc:0 "Damage to Endgame Crisis factions: §G+50%§!\n\n$ap_defender_of_the_galaxy_effect_opinion$\n\n§RDefenders of the Galaxy may not choose to become a Crisis§!"
 
  ap_engineered_evolution:0 "Engineered Evolution"
  ap_the_flesh_is_weak:0 "The Flesh is Weak"
@@ -1182,6 +1233,7 @@ reaffirmed_superiority_desc: "Our superiority is unassailable. No one is greater
  ap_synthetic_age:0 "Synthetic Age"
  ap_synthetic_age_desc:0 "The age of organics has come and gone, the future of the galaxy belongs to the machines. This is the dawn of a synthetic age."
  synthetic_age_tooltip:1 "Gain access to the §Y$tradition_synthetics$§! tradition tree.\n$UNLOCKS_AGENDA$ $council_agenda_agenda_synthetic_age_name$, which grants Machine Modification technologies as Research Options."
+ synthetic_age_tooltip_machine_age: "Starts the §YTransformation Situation§! which unlocks the §Y$tradition_modularity$§!, §Y$tradition_virtuality$§! or §Y$tradition_nanotech$§! tradition trees.\n§RRequires an available tradition slot§!\n$UNLOCKS_AGENDA$ $council_agenda_agenda_synthetic_age_name$, which grants Machine Modification technologies as Research Options."
  ap_machine_worlds:0 "Machine Worlds"
  ap_machine_worlds_desc:0 "We shall shape our worlds into a mirror image of ourselves, replacing the frailty of biology with the immutable perfection of metal."
  ap_hive_worlds:0 "Hive Worlds"

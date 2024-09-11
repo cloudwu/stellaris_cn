@@ -168,12 +168,15 @@
 
  civic_idyllic_bloom:0 "Idyllic Bloom"
  civic_idyllic_bloom_desc:0 "This society has always spent much time on improving and caring for their environment, in pursuit of building a true paradise for its inhabitants."
- civic_hive_idyllic_bloom:0 "$civic_idyllic_bloom$"
+ civic_hive_idyllic_bloom:0 "Mycorrhizal Ideal"
  civic_hive_idyllic_bloom_desc:0 "The Hive Mind cares for the environment, building a paradise in pursuit of synergistic perfection."
  civic_tooltip_idyllic_bloom_effects:2 "Can build £building£ §Y$building_gaiaseeders$§! on your and your vassal's worlds ideal to your starting species.\n$building_gaiaseeders_all_desc$\nAs you unlock improved £society£ §YTerraforming§! technologies, £building£ §Y$building_gaiaseeders$§! can be constructed on additional planet types."
- civic_tooltip_not_idyllic_bloom:0 "Does NOT have §Y$civic_idyllic_bloom$§! Civic"
 
  disables_idyllic_bloom:0 "§RChoosing this Ascension Perk will deactivate the $civic_idyllic_bloom$ Civic.§!"
+
+ civic_tooltip_not_idyllic_bloom: "Does NOT have an ['concept_idyllic_bloom_civics'] Civic"
+ concept_idyllic_bloom_civics: "Idyllic Bloom"
+ concept_idyllic_bloom_civics_desc: "$concept_idyllic_bloom_civics$ Civics consist of \n- ['civic:civic_idyllic_bloom']$NEW_LINE$- ['civic:civic_hive_idyllic_bloom']"
 
  gaia_seeder_bloomed_pops_effect: "Having completed transformation of [This.GetName] into a $pc_gaia$, the Gaia Seeder will now transform our population to better adapt them to this world.\n\nIncreases the effects of the §Y$trait_plantoid_bloomed$§! and §Y$trait_plantoid_budding$§! Traits by §G+50%§!."
  gaia_seeder_bloom_timer_tooltip: "\nThe next Bloom on §Y[This.GetName]§! will occur on §Y[This.gaia_seeder_bloom_timer]§!."
@@ -235,7 +238,7 @@
 
  trait_plantoid_phototrophic:0 "Phototrophic"
  trait_plantoid_phototrophic_desc:0 "§LThis species is sustained by a combination of both food and sunlight.§!\n"
- TRAIT_PLANTOID_PHOTOTROPHIC_EFFECT:0 "Replaces §Y50%§! of Base £food£ §YFood§! Upkeep with £energy£ §YEnergy§! Upkeep."
+ TRAIT_PLANTOID_PHOTOTROPHIC_EFFECT:0 "Replaces §Y50%§! of $r_food$ Upkeep with $r_energy$ Upkeep"
 
  trait_plantoid_radiotrophic:0 "Radiotrophic"
  trait_plantoid_radiotrophic_desc:0 "§LThis species is sustained by a combination of both food and low-energy radiation, and as such can thrive on the most inhospitable of worlds.§!"
@@ -287,9 +290,13 @@
  catalytic_gestalt_additional_effects: "\n£job_chemist_drone£ §Y$job_chemist_drone_plural$§!, £job_translucer_drone£ §Y$job_translucer_drone_plural$§!, and £job_gas_refiner_drone£ §Y$job_gas_refiner_drone_plural$§! have their $r_minerals$ Upkeep replaced with $r_food$ Upkeep."
 
 # Machine Intelligence
- civic_machine_catalytic_processing:1 "$civic_hive_catalytic_processing$"
+ civic_machine_catalytic_processing:1 "Organic Retrofitting"
  civic_machine_catalytic_processing_desc:0 "The Machine Intelligence reprocesses redundant organic matter into advanced resources suitable for spacebound structures."
  civic_tooltip_machine_catalytic_processing_effects:0 "Replaces £job_fabricator£ §Y$job_fabricator_plural$§! with £job_catalytic_drone£ §Y$job_catalytic_drone_plural$§!. $job_catalytic_drone_effect_desc$.$catalytic_gestalt_additional_effects$"
+
+ civic_tooltip_not_catalytic: "Does NOT have a ['concept_catalytic_civics'] Civic"
+ concept_catalytic_civics: "Catalytic Processing"
+ concept_catalytic_civics_desc: "$concept_catalytic_civics$ Civics consists of \n- ['civic:civic_catalytic_processing']$NEW_LINE$- ['civic:civic_corporate_catalytic_processing']$NEW_LINE$- ['civic:civic_hive_catalytic_processing']$NEW_LINE$- ['civic:civic_machine_catalytic_processing']"
 
 # Regular & Corporate
  job_catalytic_technician:0 "Catalytic Technician"

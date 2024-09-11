@@ -773,14 +773,14 @@
  federations3.2120.desc:1 "Our study of the domes on [From.Planet.GetName] and elsewhere has reached an end. Each site is a vast astrological device, synchronized with others like it across interstellar distances.\n\nOur studies suggest that facilities like this one were treated as focal points for cosmic energy, affecting a general 'sense of place' for the ancient civilization which built them. Etched records speak of councils who would 'channel' these energies in order to guide their empire's fortunes.\n\nSuch observances did not halt their society's eventual decline, but in the millennia which followed there also came an inheritor who would translate and revive the practice. They too have since left these sites, for parts unknown.\n\nThe vast timepiece has slowly ticked on through the periods of at least two civilizations; its automated siren has now called on us to observe this ritual at sites across our region of space. Whether or not anything tangible results from it, the [from.owner.Federation.GetName] is now poised to observe..."
  #Finalé
  federations3.2135.name:0 "A Legacy in Motion"
- federations3.2135.desc:0 "One might say that the last of our data was gathered in the nick of time. Mere days after the last of our federation's findings was published, each domed site within [from.Federation.GetName] space burst into life. Cascades of light spilled upwards from sources deep underground, their beams cast squarely - and improbably - at our capitals.\n\nOur researchers are puzzled - how could the makers of these sites know? - but those on [root.Capital.GetName] are more concerned with a swath of dream-like visions which briefly appeared on every device with a visual output. The broadcast 'spoke' with singular purpose, proclaiming this to be a '§HTime of Knowing§!'.\n\nNo subsequent phenomena have been reported; the domed sites dimmed again, and have resumed their glacial 'ticking' through ages which now include our own."
+ federations3.2135.desc:0 "One might say that the last of our data was gathered in the nick of time. Mere days after the last of our federation's findings was published, each domed site within [from.Federation.GetName] space burst into life. Cascades of light spilled upwards from sources deep underground, their beams cast squarely - and improbably - at our capitals.\n\nOur researchers are puzzled - how could the makers of these sites know? - but those on [root.Capital.GetName] are more concerned with a swath of dreamlike visions which briefly appeared on every device with a visual output. The broadcast 'spoke' with singular purpose, proclaiming this to be a '§HTime of Knowing§!'.\n\nNo subsequent phenomena have been reported; the domed sites dimmed again, and have resumed their glacial 'ticking' through ages which now include our own."
  leylines_mod_knowing:0 "Genius Caeli: A Time of Knowing"
  leylines_mod_knowing_desc:0 "Our collaborative study of a strange, astrological device has granted us insight: the knowledge-expanding predictions of an ancient, spiritualist society."
- federations3.2136.desc:0 "Each of the once-noisy, domed sites within [from.Federation.GetName] space has, for a brief moment, burst into life. Cascades of light were reported spilling out from sources deep underground, their beams cast squarely - and improbably - at our capitals.\n\nOur researchers are puzzled - how could the makers of these sites know? - but those on [root.Capital.GetName] are more concerned with a swath of dream-like visions which briefly appeared on every device with a visual output. It's unclear what the broadcast was intended for, but a commonly-shared observation highlights feelings of §Hbalanced prosperity§!.\n\nNo subsequent phenomena have been reported; the domed sites dimmed again, and have resumed their mysterious, glacial 'ticking'."
+ federations3.2136.desc:0 "Each of the once-noisy, domed sites within [from.Federation.GetName] space has, for a brief moment, burst into life. Cascades of light were reported spilling out from sources deep underground, their beams cast squarely - and improbably - at our capitals.\n\nOur researchers are puzzled - how could the makers of these sites know? - but those on [root.Capital.GetName] are more concerned with a swath of dreamlike visions which briefly appeared on every device with a visual output. It's unclear what the broadcast was intended for, but a commonly-shared observation highlights feelings of §Hbalanced prosperity§!.\n\nNo subsequent phenomena have been reported; the domed sites dimmed again, and have resumed their mysterious, glacial 'ticking'."
  leylines_mod_lagom:0 "Genius Caeli: Balanced Prosperity"
  leylines_mod_lagom_desc:0 "Our collaborative study of a strange, astrological device has granted us insight: lessons in sustainability, from an ancient, spiritualist society."
  federations3.2137.name:0 "An Unknowable Legacy"
- federations3.2137.desc:0 "Sapients throughout the [from.Federation.GetName] have been startled by a sudden, apparent hijacking of visual feeds which coincided with a burst of activity from ancient, domed sites discovered some years ago. Cascades of light were reported spilling out from sources deep underground, their beams cast squarely - and improbably - at our capitals.\n\nOur researchers on [root.Capital.GetName] are puzzled by this broadcast of dream-like visions. It's unclear what it was intended for, and no subsequent phenomena have been reported which might lend us more clues. It would seem that we have simply missed an opportunity to study this phenomenon."
+ federations3.2137.desc:0 "Sapients throughout the [from.Federation.GetName] have been startled by a sudden, apparent hijacking of visual feeds which coincided with a burst of activity from ancient, domed sites discovered some years ago. Cascades of light were reported spilling out from sources deep underground, their beams cast squarely - and improbably - at our capitals.\n\nOur researchers on [root.Capital.GetName] are puzzled by this broadcast of dreamlike visions. It's unclear what it was intended for, and no subsequent phenomena have been reported which might lend us more clues. It would seem that we have simply missed an opportunity to study this phenomenon."
 
  ### BARELY CONTAINED EFFICIENCY (Joint Operation - Trade Leagues) by Douglas Furen ###
 
@@ -1110,8 +1110,8 @@
  TOAST_ORBITAL_BUILT_TITLE: "Orbital Built"
  TOAST_ORBITAL_BUILT_DESC: "An Orbital has been constructed in orbit of [target_planet.GetName]"
 
- d_hab_nanites_1:0 "Nanite Deposit"
- d_hab_nanites_1_desc:1 "This $habitat_complex$ is built near an exploitable source of nanites."
+ d_hab_nanites_3:0 "Nanite Deposit"
+ d_hab_nanites_3_desc:1 "This $habitat_complex$ is built near an exploitable source of nanites."
 
  UNLOCKS_ORBITAL: "§HUnlocks Orbital:§!"
  tech_habitat_1:0 "Orbital Habitats"
@@ -1257,6 +1257,8 @@
  minor_orbital_generic_plural: "$major_orbital_generic_plural$"
  num_generic_orbitals: "\nCurrent $major_orbital_generic_plural$: §Y[solar_system.GetNumOrbitalsGeneric]/[solar_system.GetMaxOrbitalsGeneric]§!"
 
+ habitat_system_tt: "§EHabitat Orbital Capacity:§!$TABBED_NEW_LINE$- Major Orbitals: §Y[root.GetNumMajorOrbitals]/[root.GetMaxMajorOrbitals]§! $TABBED_NEW_LINE$- Minor Orbitals: §Y[root.GetNumMinorOrbitals]/[root.GetMaxMinorOrbitals]§! $TABBED_NEW_LINE$- $major_orbital_mining_plural$: §Y[root.GetNumOrbitalsMining]/[root.GetMaxOrbitalsMining]§! $TABBED_NEW_LINE$- $major_orbital_science_plural$: §Y[root.GetNumOrbitalsScience]/[root.GetMaxOrbitalsScience]§! $TABBED_NEW_LINE$- $major_orbital_energy_plural$: §Y[root.GetNumOrbitalsEnergy]/[root.GetMaxOrbitalsEnergy]§!"
+
 # Knights of the Toxic God
  major_orbital_knights: "Demesne Outpost"
  major_orbital_knights_plural: "Demesne Outposts"
@@ -1286,7 +1288,7 @@
  edict_evacuation_protocols_desc:0 "We must establish a new home and prepare to evacuate our homeworld."
 
  edict_extended_shifts:0 "Extended Shifts"
- edict_extended_shifts_desc:0 "We must ask our workers to toil harder. Some blood, sweat and tears may be necessary for the Greater Good."
+ edict_extended_shifts_desc:1 "We must ask our workers to toil harder. Some [Root.GetBloodType], sweat and tears may be necessary for the Greater Good."
 
  edict_drone_overdrive:0 "Drone Overdrive"
  edict_drone_overdrive_desc:0 "Our drones will be worked harder, as more resources are required."

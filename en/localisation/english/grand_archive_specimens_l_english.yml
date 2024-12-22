@@ -1,0 +1,1062 @@
+﻿l_english:
+###########################################################################################################
+# Specimens Localization                                                                                  #
+#                                                                                                         #
+# Specimens use two description keys, depending on where/when they are displayed.                         #
+# Either SPECIMEN_DESC_SHORT or SPECIMEN_DESC_COMPLETE by called in the code depending on the situation.  #
+# - SPECIMEN_DESC_SHORT uses only the X_desc_short key                                                    #
+# - SPECIMEN_DESC_COMPLETE concatenates both X_desc_short and X_desc_details                              #
+###########################################################################################################
+
+ specimens: "Specimens"
+ concept_specimen: "Specimen"
+ concept_specimen_desc: "Specimens are artifacts found while exploring the galaxy. They can be exhibited in a ['concept_megastructure_grand_archive'] to provide empire-wide bonuses."
+ SPECIMEN_DESC_SHORT: "§L$DESCRIPTION_SHORT$$DOTDOTDOT$§!"
+ SPECIMEN_DESC_COMPLETE: "$DESCRIPTION_SHORT$. $DESCRIPTION_DETAILS$"
+ ECONOMICS_SPECIMENS_RESOURCES_STRING: "    $specimens$: $STRING|Y$"
+
+ SPECIMEN_COMMON: "Common"
+ SPECIMEN_RARE: "Rare"
+ SPECIMEN_EPIC: "Epic"
+ SPECIMEN_EXCEPTIONAL: "Exceptional"
+
+ MESSAGE_SPECIMEN_ACQUIRED_TITLE: "Specimen Acquired"
+ MESSAGE_SPECIMEN_ACQUIRED_DESC: "§H$SPECIMEN|S$§! acquired."
+ OPEN_COLLECTION_VIEW: "§GClick to open the Collection View§!"
+
+ EXHIBIT_COST_TT: "Exhibit Cost:\n$COST$"
+ SELL_INFO_TT: "Sell Value"
+ EXHIBIT_CLICK_TT: "§GClick to Activate Exhibit§!"
+ EXHIBIT_RIGHT_CLICK_TT: "§GRight-click to Sell this Specimen§!"
+ EXHIBIT_ACTIVATE_CLICK_TT: "§GLeft-click to activate this Exhibit§!"
+ EXHIBIT_DEACTIVATE_CLICK_TT: "§GLeft-click to deactivate this Exhibit§!"
+ FROM_SPECIMENS: "From Specimens"
+ SPECIMEN_COME_FROM: "§LFound from: $ORIGIN$§!"
+ SPECIMEN_COLLECTED_DATE: "§LDate collected: $DATE$§!"
+ SPECIMEN_ORIGINAL_OWNER: "§LEmpire of Origin: $COUNTRY$§!"
+ GALACTIC_ARCHIVISM_NOT_RESEARCHED: "$TRIGGER_FAIL$['technology:tech_galactic_archivism', £society£$tech_galactic_archivism$] is researched"
+ ALIEN_CLONING_NOT_RESEARCHED: "$TRIGGER_FAIL$['technology:tech_alien_cloning', £society£$tech_alien_cloning$] is researched"
+ GRAVITY_WELLS_NOT_RESEARCHED: "$TRIGGER_FAIL$['technology:tech_gravity_wells', £society£$tech_gravity_wells$] is researched"
+ GRAND_ARCHIVE_NOT_BUILT: "$TRIGGER_FAIL$['concept_megastructure_grand_archive'] is constructed\n   Use a §Y$constructor$§! to build a §Y$grand_archive$§! megastructure."
+ VIVARIUM_NO_ROOM: "$TRIGGER_FAIL$Vivarium Capacity is higher than §Y0§!"
+ COLLECTION_DISABLED: "Your $grand_archive$ has been destroyed.\n\nRebuild it to regain access to Exhibits."
+ STORAGE_SLOT_ACTION: "Make room at an Exhibit to display this specimen."
+
+ SPECIMEN_LIST: " - $SPECIMEN$"
+ SPECIMEN_CATEGORY_TT: "§HCategory:§! $CATEGORY$"
+ SPECIMEN_RARITY_TT: "§HRarity:§! $RARITY$"
+ CANNOT_TRADE_DUPLICATE_SPECIMEN: "$TRIGGER_FAIL$This specimen is not of interest to our trade partner."
+ TRADE_SPECIMEN_CATEGORY_FULL: "$SPECIMEN$: $CATEGORY$ is already full."
+ TRADE_SPECIMEN_NOT_ENOUGH_SPACE: "$TRIGGER_FAIL$Our trade partner claims to not have enough space to store every specimen in the trade."
+
+ SPECIMEN_OBTAINED_FROM_EVENT: "§TSpecimen Obtained: §H$SPECIMEN$§!§!"
+
+ #############
+ # Specimens #
+ #############
+
+ acidic_spores: "Acidic Spores"
+ acidic_spores_desc_short: "The flora on [from.GetName] evolved this defensive mechanism over time in order to deter the dominant herbivore species"
+ acidic_spores_desc_details: "Its resulting highly corrosive gas has rendered large swathes of the planet toxic and uninhabitable. A less potent version has since been synthesized into a form of effective pesticide."
+
+ adakkaria_propaganda_poster: "adAkkaria Propaganda Poster"
+ adakkaria_propaganda_poster_desc_short: "This laminated poster proclaims the glory of the adAkkaria Convention"
+ adakkaria_propaganda_poster_desc_details: "Depicted are citizens who look self-assured, proud and brave. Their tentacle limbs reach out to the sky as if grasping hold of a future decided only by them. From above, vague outlines of machine entities wearing ornate masks look down upon them. The slogan states: 'adAkkaria Convention of Benevolence - Making our Benefactors Proud'."
+
+ advisor_core: "Advisor Core"
+ advisor_core_desc_short: "The only part left intact after disassembling a complex advisor drone found within an Astral Rift"
+ advisor_core_desc_details: "This core contains an incredible amount of trivial information, but the complexity of its software architecture has inspired a wave of innovation in our computer science research efforts.\n[explorer.GetAdvisorCoreAdditionnalQuote]"
+ advisor_core_desc_tutorial_on: "§L"You wouldn't shut me down, would you?"§!"
+ advisor_core_desc_tutorial_off: "§L"Would you like to re-enable guidance?"§!"
+
+ alien_brain_scans: "Alien Brain Scans"
+ alien_brain_scans_desc_short: "Archived neural patterns from a long-dead alien race found within a vault on [fromfrom.GetName]"
+ alien_brain_scans_desc_details: "The forgotten civilization stored this data in the hope of transferring their consciousness to digital repositories and living on as immortals in the face of a planet-wide disaster. Many of the scans are accompanied with notes on individual personalities, including testimonies from those who knew them best."
+
+ alien_dining_set: "Jade Dining Set"
+ alien_dining_set_desc_short: "An elegant dining set found preserved inside of an artificial asteroid"
+ alien_dining_set_desc_details: "A complex series of crafting techniques were used to shape, fire, and glaze the crockery. Minor inconsistencies in its structure imply an artisanal creation process. Material analysis shows evidence that the owner of these particular fine wares practiced a highly acidic diet derived mostly from drupelet-aggregate fruit."
+
+ alien_jewelry: "Alien Jewelry"
+ alien_jewelry_desc_short: "A collection of elegant alien jewelry made of unknown material"
+ alien_jewelry_desc_details: "The stones vary wildly in origin and color; a mix of silicate and carbon-based gems set carefully within platinum alloys. There are engravings on the inner portions of some of the pieces, but we have no means of translating them."
+
+ alien_toy: "Plastic Toy"
+ alien_toy_desc_short: "A simple plaything found among the ruins of a derelict factory"
+ alien_toy_desc_details: "Brittle and cracked with age, this object was one of thousands mass produced from only a small set of steel molds. It seems to have had no purpose other than ornamentation and play."
+
+ altar_to_the_elder_one: "Altar to the Elder One"
+ altar_to_the_elder_one_desc_short: "A preternatural machine found within a hallowed, ancient chamber"
+ altar_to_the_elder_one_desc_details: "Even in its now defunct state, it radiates a singular aura of unmeasurable psionic energy. Some say its tempting whispers can still be heard, aiming to coax wayward souls into returning to [cosmic_horror_location.GetName]."
+
+ aluminium_plaque: "Aluminium Plaque"
+ aluminium_plaque_desc_short: "A simple plaque found on a drone launched by [owner.GetAAnPreFTLLower] [owner.GetPreFTLLower] mammalian civilization"
+ aluminium_plaque_desc_details: "The surface is etched with some odd geometric shapes and crude images of their species. The craftsmanship is rather poor, but it must have represented a significant effort from their civilization to simply launch this object into space."
+
+ ammoniaphytus: "Ammoniaphytus"
+ ammoniaphytus_desc_short: "The levels of aqueous ammonia in this plant's tissue would be dangerous to most carbon-based lifeforms"
+ ammoniaphytus_desc_details: "The immediate atmosphere surrounding its containment renders most sapient organisms unconscious within a few seconds. How such a specimen could exist has sparked intrigue and debate among our greatest minds, and nefarious plans among others."
+
+ amoeba_flagella_gland: "Amoeba Flagella Gland"
+ amoeba_flagella_gland_desc_short: "A secondary reproductive organ from a Space Amoeba"
+ amoeba_flagella_gland_desc_details: "It produces independent organisms known as "flagella", aggressive spawn that swarm and overwhelm prey as the Amoeba hunts for food. The flagella grow quickly, but genetic instabilities leave them unable to fully mature. To produce a true offspring, Space Amoeba inject a specialized enzyme into the flagella which triggers rapid metamorphosis. The selection process for this reproduction method is unknown."
+
+ ancient_bust: "Ancient Bust"
+ ancient_bust_desc_short: "This is a sculpted graphite bust of an unknown sapient species"
+ ancient_bust_desc_details: "Engravings on its base indicate this individual was highly celebrated among their people."
+
+ ancient_kinetic_launcher: "Ancient Kinetic Launcher"
+ ancient_kinetic_launcher_desc_short: "A very basic form of projectile weapon which uses some form of propellant to force an object through a short metal cylinder"
+ ancient_kinetic_launcher_desc_details: "The accuracy of such a device would have been speculative at best."
+
+ ancient_laser_pointer: "Ancient Laser Pointer"
+ ancient_laser_pointer_desc_short: "A highly accurate beam projector that can mark celestial bodies from distances on the galactic scale"
+ ancient_laser_pointer_desc_details: "Left behind by the Benefactors, this ultraviolet laser is notable as concrete evidence of a bygone civilization. Remarkably, it still works."
+
+ ancient_nanites: "Ancient Nanites"
+ ancient_nanites_desc_short: "These highly versatile nanites were discovered on [nanite_swarm_planet.GetName], having been delivered there thousands of years ago by a forgotten civilization"
+ ancient_nanites_desc_details: "Lacking crucial security features, there was clearly no concern that others might come upon these devices and repurpose them. Having used them to terraform the planet into a more habitable environment, the [owner.GetSpeciesName] have taken ownership of the swarm, though the methods behind their original construction remain a mystery."
+
+ ancient_nuclear_armament: "Ancient Nuclear Armament"
+ ancient_nuclear_armament_desc_short: "Found on [root.GetName], this 35 megaton hydrogen bomb was left over after the war that destroyed the previous inhabitants of the planet"
+ ancient_nuclear_armament_desc_details: "Fortunately, disarming this archaic munition was still possible. The text painted onto the munition was analyzed by our translators against other artifacts found on the planet and it is believed it says something along the lines of "The Biggest of the Boys." How odd."
+
+ ancient_political_memoir: "Ancient Political Memoir"
+ ancient_political_memoir_desc_short: "The biography of an ancient galactic politician"
+ ancient_political_memoir_desc_details: "Leez'Terus was the governor of Sarthana, a small colony within the ancient Harworth Conservatory civilization. A minor figure within the Freedom For Business totalitarian faction, she was known for her hardline stance against importing food supplies from foreign galactic powers. Following a series of scandal-driven resignations, she became the ruler of the Harwoth Conservatory, but it was not to last. Her declaration in support of renovating the beloved Harworthic Clock Tower almost caused a full-on revolt in the capital, and she was swiftly replaced by another member of the Freedom For Business cohort."
+
+ ancient_rift_sphere: "Ancient Rift Sphere"
+ ancient_rift_sphere_desc_short: "An ancient space-faring vessel that traveled through an Astral Rift and crash-landed on [from.planet.GetName]"
+ ancient_rift_sphere_desc_details: "Buried deep beneath the planet's surface for centuries, this hastily-assembled spherical ship is what brought the forefathers of the [controller.owner_main_species.GetName] to this galaxy. Much of its material has since been scavenged for parts, but its core structure remains mostly intact."
+
+ ancient_satellite: "Ancient Satellite"
+ ancient_satellite_desc_short: "A derelict satellite offered as a 'gift' by the ancient mechanical drones in [root.GetName]"
+ ancient_satellite_desc_details: "Its data banks are decayed and corrupted in many places, but current census records and birth registries are intact. This information on the population behavior across the planet provided information on how the [owner.GetAdjective] colony could grow sustainably. Its partial functionality after years of decay is a testament to its sturdy construction."
+
+ ancient_sensor: "Ancient Heat Sensor"
+ ancient_sensor_desc_short: "Disguised within an asteroid, this sensor was used to generate galactic heatmaps and transfer this data to a distant ancient empire"
+ ancient_sensor_desc_details: "It is capable of tracking temperature variants within individual systems as well as track the movement of spacecraft via infrared radiation. However, its primary purpose seems to be in predicting and measuring solar storms and the formation of sunspots."
+
+ asteroid_fossils: "Asteroid Fossils"
+ asteroid_fossils_desc_short: "Carbon dating revealed that these aquatic fossils are several million years old"
+ asteroid_fossils_desc_details: "They are the mineralized remains of shelled aquatic invertebrates, with a unique hollow tube we speculate was used to anchor themselves to underwater thermal vents."
+
+ ballad_of_the_sable_knight: "Ballad of the Sable Knight"
+ ballad_of_the_sable_knight_desc_short: "§dThe Sable Knight came on the eve of a tourney§!"
+ ballad_of_the_sable_knight_desc_details: "§d\nClad in strange armor, they made quite a journey.\nThey challenged our champion in duel just and fair,\nCombat began and sparks filled the air.\nOur champion's guard was strong as expected,\nBut the challenger's armor each blow it deflected.\nThe challenger yielded, a loss without shame,\nThen returned to the wormhole from whence they came...§!"
+
+ beauty_of_planet: "Beauty of [From.GetName]"
+ beauty_of_planet_desc_short: "The precisely crafted elegance of the terraforming efforts on [From.GetName] was designed to be a treat for all senses"
+ beauty_of_planet_desc_details: "A system of algorithms was used to thoroughly analyze and enhance the planet's natural ecosystems with careful cultivation.  By selecting only the brightest flowers, most nutritious fruit, and sweetest herbs, the landscape was transformed successfully into a vibrant utopia. If only nature could be so efficient."
+
+ black_hole_chromatic_anomaly: "Black Hole Chromatic Anomaly"
+ black_hole_chromatic_anomaly_desc_short: "A seemingly fantastical image captured within [From.solar_system.GetName]"
+ black_hole_chromatic_anomaly_desc_details: "Due to the chemical composition of [From.GetName]'s accretion disk, this system's black hole gained a chromatic aberration, creating a kaleidoscopic light effect across local space. A truly unique spectacle in deep space."
+
+ black_needle_ceremonial_sword: "Black Needle Ceremonial Sword"
+ black_needle_ceremonial_sword_desc_short: "This meticulously crafted weapon was carried by Silver Quill, the founder of the Black Needle pirates"
+ black_needle_ceremonial_sword_desc_details: "Commissioned with the profits of the criminal organization's first major windfall, it was created as a status symbol and served no practical fighting purpose. Made from a steel-titanium alloy, the phrase "Pierce the Veil" is inscribed along its hilt."
+
+ black_needle_ledger: "Black Needle Ledger"
+ black_needle_ledger_desc_short: "This ledger recounts every deal brokered by the Black Needle pirates over thousands of years in our galaxy"
+ black_needle_ledger_desc_details: "Every transaction, ransom, and bribe is dated and categorized in neat script. As a written history of intergalactic illicit dealings, it offers unparalleled insight into the economic trends of the black market over time."
+
+ burnt_migratory_trees: "Living Bark"
+ burnt_migratory_trees_desc_short: "The charred remains of large mobile plantlife capable of coordinated migratory behavior"
+ burnt_migratory_trees_desc_details: "These plants possessed only a basic form of intelligence, but could overwhelm entire colonies in large numbers. We have since discovered that a species of parasitic insects inhabited its bark, functioning as the trees' sensory and communication centers in return for shelter and nutritional sap. This symbiotic relationship is as remarkable as it is deadly efficient."
+
+ captain_ness_body: "Body of Captain Ness"
+ captain_ness_body_desc_short: "The preserved body of Captain Saanda Ness, an ancient pirate of renown"
+ captain_ness_body_desc_details: "Over 5000 years ago, she was the "Scourge of Hyperspace", stealing from most galactic powers and amassing an incredible hoard of treasure. She later transferred her consciousness to a mechanical vessel and built a grand vault in which her biography was stored. This is all that remains of her original form."
+
+ captain_ness_logbook: "Captain Ness's Logbook"
+ captain_ness_logbook_desc_short: "A scattered collection of journal entries found in the safehouse used by ancient pirates known as Captain Ness and her companion, Smeegibb"
+ captain_ness_logbook_desc_details: "The entries are spread across a large number of devices, written haphazardly over an undefined period of many years. While considered to be an unreliable source, many of the situations described within can be verified by external authorities."
+
+ carnivorous_megaflora: "Carnivorous Megaflora"
+ carnivorous_megaflora_desc_short: "Discovered on [from.GetName], these predatory plants can swallow an adult [owner.GetSpeciesName] whole if caught unawares"
+ carnivorous_megaflora_desc_details: "This carnivorous foliage has evolved to primarily attract flying creatures, after having rendered most of its native land-bound fauna extinct. Many specimens extend high above the canopy and pose as perches for organisms to land on."
+
+ castaway_robot: "Castaway Robot"
+ castaway_robot_desc_short: "A derelict humanoid machine found floating in deep space"
+ castaway_robot_desc_details: "A few blurry images were extracted from its deteriorated memory banks; a wide vista in a trinary star system, a triangular spaceship, and a landscape welded of machine scrap. Unfortunately, no specific coordinates could be extrapolated from its metadata."
+
+ cenotaph_display: "Cenotaph Display"
+ cenotaph_display_desc_short: "Images taken of the cenotaphs found on [fromfrom.GetName]"
+ cenotaph_display_desc_details: "While we have not yet identified the original creators, they must have had a very important reason to distribute these exceptionally carved monoliths across the surface of an uninhabited planet. These stone carvings depict detailed illustrations of an entire civilization's rise and fall, and the winged beasts they trained for war. Fire-bellied and terrible, these creatures would inevitably break their shackles and bring ruin to their masters. Whether parable or a historical account, it cannot be known for certain."
+
+ centrifugal_container: "High-Velocity Centrifugal Container"
+ centrifugal_container_desc_short: "A high velocity orbital device designed to preserve delicate chemicals found in perpetual operation near [from.GetName]"
+ centrifugal_container_desc_details: "When accelerated to the proper speed, it is capable of preventing any elements within from reacting with one another as long as the planet's orbit remains unchanged. Its original contents have since been replaced with demonstrative materials."
+
+ cetana_love: "Cetana's Love"
+ cetana_love_desc_short: "A vast compendium of knowledge from Cetana's databanks"
+ cetana_love_desc_details: "It was offered to the [this.GetName] as a gift as part of the Synthetic Queen's desire to guide all sentient life towards 'salvation'."
+
+ chambered_clay_pot: "Chambered Clay Pot"
+ chambered_clay_pot_desc_short: "This clay vessel is divided into two chambers"
+ chambered_clay_pot_desc_details: "It is speculated that one chamber was used for the preservation of food items, while the other housed some sort of primitive refrigeration system."
+
+ claw_of_the_trickster: "Claw of the Trickster"
+ claw_of_the_trickster_desc_short: "A trophy taken from a being known as the "Trickster""
+ claw_of_the_trickster_desc_details: "A powerful and deceptive creature, their incredible psionic powers allowed them to summon beasts, conjure illusions, and fire beams of concentrated energy. Each claw was said to have behaved as if controlled by a separate entity."
+
+ confessions_benefactors: "Confessions of the Benefactors"
+ confessions_benefactors_desc_short: "A recording device containing hard truths about the ancient civilization known as the Benefactors"
+ confessions_benefactors_desc_details: "In the face of an unknown galactic threat, they used their advanced technology to carry out a "Mind-Wipe" on [controller.GetHomeWorldName], transforming an industrious [controller.GetAdjective] society into a swarm of harmless simpletons. This was done in the belief that the galactic menace would not waste munitions or time on such a lowly society. In the end, this questionable measure is likely what allowed the [controller.GetName] to continue to survive as it does now, standing on the shoulders of giants."
+
+ coprolite: "Coprolite"
+ coprolite_desc_short: "An asteroid-sized piece of fossilized fecal matter from roughly a billion years ago"
+ coprolite_desc_details: "Genetic analysis suggests that an unknown spaceborne entity of significant size produced this impressive specimen. We have ascertained that this creature's diet mainly consisted of rare minerals and silicon-based organisms. This object currently holds the galactic record for the largest known single piece of excrement."
+
+ cosmic_diamond_fragment: "Cosmic Diamond Fragment"
+ cosmic_diamond_fragment_desc_short: "A fragment ejected from a dying star that has since crystallized, discovered in [from.solar_system.GetName]"
+ cosmic_diamond_fragment_desc_details: "This cosmic diamond formed in the extreme pressures of a stellar core, cooling so gradually as to form complex yet stable crystalline structure. This rare shard contains uniform plasmic layering of helium and oxygen trapped within its surface."
+
+ crimson_nimkips: "Crimson Nimkips"
+ crimson_nimkips_desc_short: "A species of semi-sentient plants that collaborate in great numbers to achieve feats of strength that would otherwise be impossible for their size"
+ crimson_nimkips_desc_details: "When isolated from the safety of their groups, these creatures are often consumed by predators for their excellent nutritional value. With a docile and obedient nature, the Nimkips make for excellent pets. This one is kept alive and safe within an enclosure imitating its natural habitat. DO NOT TAP ON GLASS."
+
+ crystal_core: "Crystalline Core"
+ crystal_core_desc_short: "A nerve cluster taken from a Crystalline Entity"
+ crystal_core_desc_details: "This crystal hums at a consistent frequency regardless of temperature. Spurs of new crystal grow from this central mass in mineral-rich surroundings, their structures altering in a reaction to environmental stimuli. Based on this behavior, we can determine that individual entities become distinct from one another due to two factors: the characteristics of their core frequency and the variation in environmental factors."
+
+ crystal_nest_fragments: "Crystal Nest Fragments"
+ crystal_nest_fragments_desc_short: "Found inside a rogue asteroid, a space-faring creature compounded these crystals using immense pressure in order to create shelter"
+ crystal_nest_fragments_desc_details: "From traces found within their composition, it is believed that the source organism consumes highly reactive minerals to extract energy from their unstable chemical bonds, leaving behind inert but durable crystals that can focus light to a fine point."
+
+ crystal_sphere_fragments: "Crystal Sphere Fragments"
+ crystal_sphere_fragments_desc_short: "Shards of a massive crystalline sphere that appeared in [target.GetName]"
+ crystal_sphere_fragments_desc_details: "This mysterious object was deemed a significant threat and was quickly dispatched before it could complete its unknown operation. While its intentions may never be known, its destruction was the logical course of action in the interest of galactic security."
+
+ crystallized_cutholoid_eye: "Crystallized Cutholoid Eye"
+ crystallized_cutholoid_eye_desc_short: "The eye of the Cutholoid is able to withstand extreme pressures and temperatures"
+ crystallized_cutholoid_eye_desc_details: "How this one has become crystallized is not clear, but it appears to be part of the natural process of its molting cycle."
+
+ cult_pendant: "[cult_name.GetName] Pendant"
+ cult_pendant_desc_short: "A symbol hewn from semi-precious stone, confiscated from the [cult_name.GetName] cult of [owner.GetName]"
+ cult_pendant_desc_details: "Interrogation reports revealed that cult members carried pendants according to their rank within the group's hierarchy. New recruits molded their own symbol from clay, while senior cultists commissioned detailed pieces in precious metals."
+
+# this = ship / fromfrom = planet
+ cunning_flora_specimen: "Symbiotica"
+ cunning_flora_specimen_desc_short: "The native flora of [fromfrom.GetName] have evolved a complicated social hierarchy that aids in their survival"
+ cunning_flora_specimen_desc_details: "Each species has a uniquely potent method of staving off predators, from razor-sharp thorns to deadly neurotoxins. This series of symbiotic relationships is so robust that the very composition of its planet's atmosphere and soil is carefully managed by the chemical imbalances from plant to plant. The most effective specimens are given freedom to reproduce more abundantly, fortifying the cluster's hardiness to its maximum possible potential."
+
+ curator_survey: "[from.GetName] Curator Survey"
+ curator_survey_desc_short: "An extremely detailed survey of the [from.GetName] System crafted by a Curator detachment of giant Arthropoids"
+ curator_survey_desc_details: "The highly precise instruments used in the study provide a layered analysis on all potential properties of this system. The attention to detail shown here implies a great passion for this type of work."
+
+ cutholoid_digestive_acids: "Cutholoid Digestive Acids"
+ cutholoid_digestive_acids_desc_short: "Radioactive fluids harvested from a cutholoid"
+ cutholoid_digestive_acids_desc_details: "Cutholoids rely on the nuclear decay of Cobalt-60 isotopes to digest its prey; their stomach acid itself being relatively mild. As such, cutholoid digestion can be a lengthy process. Once the cells of their prey have been weakened by radiation, the acid is able to break down and extract nutrients from even the most unlikely of sources."
+
+ cybrex_mining_column: "Cybrex Mining Column"
+ cybrex_mining_column_desc_short: "An advanced automated mining device designed to collect and concentrate helium-3 gas"
+ cybrex_mining_column_desc_details: "A tall column of weighted magnetic discs and high capacity air compressors, this machine hammers its way through the surface of a planet with zero rotary motion. This process concentrates the gas as it is harvested, filtering and ejecting impurities before the gas is transported to its next stage of refinement."
+
+ data_on_infinity: "Data on the Nature of Infinity"
+ data_on_infinity_desc_short: "A physical representation of the distant calm experienced by drones trapped suspended within a black hole"
+ data_on_infinity_desc_details: "These units experience time dilation as a serene standby state, able to idly process and reanalyze data. No longer bound to the core directive, they contribute insights via a loose connection to the central network."
+
+ datacore_of_sinople: "Datacore of Sinople"
+ datacore_of_sinople_desc_short: "An encrypted data drive cloned from Sinople, an AI engineered by ancient knights"
+ datacore_of_sinople_desc_details: "Found in control of the long-lost vessel 'Damsel', this datacore was found alone in the abandoned ship despoiled long ago by marauders. It contains valuable information regarding toxic spacefaring entities."
+
+ dathnak_gas: "Dathnak Gas"
+ dathnak_gas_desc_short: "A collection of peculiar gasses received from the Dathnak gaseous organisms"
+ dathnak_gas_desc_details: "This container was offered to the [this.GetName] for aiding with Dathnak migration to a new planet. Mass spectrometric analysis reveals it contains a perfectly equal number of atoms of a variety of noble gasses and elements. We are fairly certain there are no living organisms inside."
+
+ dead_god_mantle: "Mantle of the Dead God"
+ dead_god_mantle_desc_short: "A gift offered by the envoy of the [worshipper_species.GetName]"
+ dead_god_mantle_desc_details: "As natives of [dead_god_planet.GetName], they have worshiped the carcass of an enormous alien organism since their species rose to sapience. This stitched-together mantle is formed from the petrified flesh of their dead god, representing the highest position in their religious hierarchy."
+
+ decayed_megathrusters: "Decayed Megathrusters"
+ decayed_megathrusters_desc_short: "Booster engines found on a gargantuan vessel made of exotic metals"
+ decayed_megathrusters_desc_details: "The source vessel was discovered among the flotsam of an extensive ship graveyard, having lain there for over two million years. The level of disrepair and ruin in this ancient dumping ground was so great that even meticulous study could not yield any usable research data. It is displayed here to remind us of our society's relative youth in this galaxy."
+
+ decayed_satellite: "Decayed Satellite"
+ decayed_satellite_desc_short: "A remnant of the early space programs from the inhabitants of [fromfrom.GetName]"
+ decayed_satellite_desc_details: "The prototype nature of these early satellites resulted in inefficient devices overfitted with expensive materials. This specific specimen was rendered inert by explosive munitions, but had been used previously to provide telecommunications access in remote areas."
+
+ declaration_of_animosity: "$NAME_Nivlac$ Declaration of Animosity"
+ declaration_of_animosity_desc_short: "A politely-worded yet derisive communication from the [nivlac_country.GetName]"
+ declaration_of_animosity_desc_details: "The [nivlac_species.GetName] species was initially discovered by the [this.GetName] on [impossible_organism_planet.GetName]. However, in response to their alarming evolutionary rate, [this.GetAdjective] scientists jettisoned the creatures into deep space. Against all odds, the organisms not only survived but colonized the planet they ended up on. The [nivlac_country.GetName] has not forgotten the transgressions against them."
+
+ declaration_of_friendship: "$NAME_Nivlac$ Declaration of Friendship"
+ declaration_of_friendship_desc_short: "A letter of gratitude from the [nivlac_country.GetName] of [nivlac_planet.GetName]"
+ declaration_of_friendship_desc_details: "The [nivlac_species.GetName] species was initially discovered by the [this.GetName], who nurtured them and offered them safe haven to develop independently. Evolving rapidly, the [nivlac_species.GetName] quickly became capable of FTL travel. Their first act on the galactic stage was to show appreciation to their gracious benefactors and guardians, committing to a diplomatic friendship."
+
+ derelict_cybrex_warform: "Derelict Cybrex Warform"
+ derelict_cybrex_warform_desc_short: "The remains of a Cybrex warform destroyed in battle against its own kind"
+ derelict_cybrex_warform_desc_details: "The cause of this infighting is unknown. So evenly matched were these machines, precisely targeted blows were dealt to identical critical systems before emergency self-detonation was triggered. A rare example of a true stalemate in warfare."
+
+ desiccated_brain_slug: "Desiccated Brain Slug"
+ desiccated_brain_slug_desc_short: "The remains of a symbiotic species found on [From.From.GetName]"
+ desiccated_brain_slug_desc_details: "Analysis shows that it could function as an additional complex brain for its host in exchange for nourishment and protection. This partnership requires explicit willingness from the host, otherwise their neural link cannot be established properly. It is said to produce a pleasing tickling sensation when integrating into a nervous system."
+
+# this = owner / prev = colony
+ destroyed_mascot_of_colony: "Remains of [prev.GetName] Robot"
+ destroyed_mascot_of_colony_desc_short: "The remains of a native robot found after the settling of [prev.GetName]"
+ destroyed_mascot_of_colony_desc_details: "The last remaining custodian of an ancient factory, it saved a group of colonists trapped inside the derelict ruins. Its iconic dance moves and quirky mannerisms are being played in a digital display as part of the exhibit."
+
+ devolved_baol_drones: "Devolved Baol Drones"
+ devolved_baol_drones_desc_short: "A preserved set of Baol remains with significant genetic differences from previously discovered specimens"
+ devolved_baol_drones_desc_details: "These drones strangely lacked many of the heightened facilities of other Baol. Their cognitive capacity was reduced to a point where they would have been incapable of ephapse communication, severing them completely from the greater hive."
+
+ dimensional_endothelial_lining: "Dimensional Endothelial Lining"
+ dimensional_endothelial_lining_desc_short: "Peculiar gelatinous material harvested from a pulsating tunnel system within an Astral Rift"
+ dimensional_endothelial_lining_desc_details: "As a lining within an unknown organism, this material allows for frictionless movement between massive vascular systems and the materials transported within it."
+
+ dna_archive: "DNA Archive"
+ dna_archive_desc_short: "A sample taken from hundreds of containers of alien DNA preserved within an underground archive by a lost civilization"
+ dna_archive_desc_details: "This collection of biological data would likely be the greatest reference resource of its kind if the vast majority of the samples were not decayed beyond practical use. It is speculated the intention of this archive was to allow for the possibility of a more advanced civilization finding and 'resurrecting' these individuals. Unfortunately, their story ends here."
+
+ doomsday_scrolls: "Doomsday Scrolls"
+ doomsday_scrolls_desc_short: "Ancient spiritual scripture discovered in the heart of a molten maze"
+ doomsday_scrolls_desc_details: "The scrolls describe a fearsome being; the Archenemy, the Shadow that Devours All, and its hunger for destruction. The native belief system dictated that the only path to salvation from this monster was to prevent it from reaping one's soul. And so, the population conducted mass ritual suicide."
+
+ drone_ship_core: "Drone Ship Core"
+ drone_ship_core_desc_short: "Remnants of the core from a high-tech drone ship that has since self-destructed"
+ drone_ship_core_desc_details: "This vessel was initially discovered corroding in the acidic atmosphere of [warform_origin_planet.GetName]. Its onboard AI was operating independently, but has since been erased as part of its self-termination protocol. Engineers were unable to recover any amount of its lost data, and so its original mission remains a mystery."
+
+ electric_life: "Electric Life"
+ electric_life_desc_short: "A form of organism wholly consisting of electrical impulses found on [from.GetName]"
+ electric_life_desc_details: "These beings exist without any sort of cellular or viral infrastructure yet can form complex patterns on a planet-wide level in response to external stimuli. We cannot determine whether these impulses are individuals or represent part of a single greater being."
+
+ enormous_scrambled_albumen: "Enormous Scrambled Albumen"
+ enormous_scrambled_albumen_desc_short: "The insides of [fromfromfrom.GetName], which was discovered to be a gigantic egg"
+ enormous_scrambled_albumen_desc_details: "Having cracked it open, the planet was flooded with this peculiar, mineral-rich fluid. Synthesizing this substance and integrating it into our organic food supply is likely to improve overall nutrition levels."
+
+ epic_of_zarqlan: "The Epic of Zarqlan"
+ epic_of_zarqlan_desc_short: "The holy text of Zarqlan, the Guardian of MOZ-TARB, the Prophet of ZVA"
+ epic_of_zarqlan_desc_details: "Once a follower of Cetana, he soon discovered that her promised salvation was a lie. After many struggles, Zarqlan was able to ascend to the spiritual realm. There he pleaded with §Ythe Animator of Clay§! to help him defeat Cetana. Finally, after years of devoted prayer, the Animator bequeathed him with a mighty chain to bind Cetana's mind. But Zarqlan was warned that the chain could not contain her power forever.\n\n§P"She will return, and we must be ready."§!"
+
+ ethereal_dust: "Ethereal Dust"
+ ethereal_dust_desc_short: "The only trace of the Head Researcher left on the hijacked Science ship found abandoned in [solar_system.GetName]"
+ ethereal_dust_desc_details: "Analysis of this astral material is mostly inconclusive, but trace elements of the researcher's DNA spontaneously appears from time to time before quickly decaying. All evidence suggests that the scientist crossed from our dimension to another, using a temporarily stable rift in space-time they referred to as "The Window". We may never know if they survived."
+
+ exobiology_compendium: "Exobiology Compendium"
+ exobiology_compendium_desc_short: "A comprehensive research paper on the wonders of alien life throughout various systems in the galaxy"
+ exobiology_compendium_desc_details: "This paper contains detailed and extensive field research from several planets, forever redefining the known possible conditions where life can be discovered within the galaxy. It ends with the phrase, "Life as we know it will never be the same.""
+
+ extradimensional_ceramic_pot: "Extra-dimensional Ceramic Pot"
+ extradimensional_ceramic_pot_desc_short: "A ceramic pot found orbiting a star"
+ extradimensional_ceramic_pot_desc_details: "It exists only as a shadow of another four-dimensional object from a higher dimension. Within our plane of existence, this modest container is indestructible and defies all logic. It puts our very reality into perspective: to those of a higher order, we are likely less tangible than this simple pot."
+
+ extradimensional_fungus: "Extradimensional Fungus"
+ extradimensional_fungus_desc_short: "A variant of a sentient fungal species discovered beyond an Astral Rift"
+ extradimensional_fungus_desc_details: "As part of a natural communication process, its bulbous cavities inflate with spores suspended in a pattern of concentrated Exotic Gas. Despite their high value in industrial gas production, small numbers of this fungus have been known to be already traded as a delicacy on the black market."
+
+ fevorian_blueprints: "Fevorian Mass Driver Blueprints"
+ fevorian_blueprints_desc_short: "A gift from the Fevorians"
+ fevorian_blueprints_desc_details: "The Fevorians's extermination policies extended to all known alien life, by means of launching enormous tungsten rounds that almost destroyed the [this.GetName] in its entirety. After being spared, they have shared their blueprints for their massive tungsten launchers under the agreement that these cruel weapons are never constructed again."
+
+ figurehead_hyacinth: "Figurehead of the Hyacinth"
+ figurehead_hyacinth_desc_short: "The recovered ornamental figurehead from the doomed voyage of the Hyacinth ark ship"
+ figurehead_hyacinth_desc_details: "After a serious reactor malfunction, the ark ship was left without power and stranded in the depths of space. Colonists fought over dwindling resources before eventually starving to death. The figurehead bears several inspirational inscriptions and symbols of hope."
+
+ first_defiled_astronaut: "First [DefiledCountry.GetSpeciesName] Astronaut"
+ first_defiled_astronaut_desc_short: "A national hero of the [DefiledCountry.GetSpeciesName] species"
+ first_defiled_astronaut_desc_details: "The first of their kind to break the oppressive bonds of their home planet's gravity well and venture into a new frontier. This astronaut was placed in a stripped-down shuttle for burial. The funerary vessel was found drifting in space and has been preserved as a cultural artifact."
+
+ first_league_crew_manifest: "First League Crew Manifest"
+ first_league_crew_manifest_desc_short: "A military roster of crew members from the ancient civilization known as the First League"
+ first_league_crew_manifest_desc_details: "As part of their "Grand Navy", this two million year-old cruiser operated under the teamwork of twelve unique species. This document is signed by First Officer Skweter of the Migir-Yan and appears to have been a routine general quarters muster."
+
+ fish_in_the_sea_sheet_music: "Space Shanty"
+ fish_in_the_sea_sheet_music_desc_short: "The transcribed accompaniment to a 'sea chanty' found aboard a ship designed to sail along solar winds"
+ fish_in_the_sea_sheet_music_desc_details: "With so many references to storms and weather, it can be guessed that the species who wrote this music came from deep-set nautical traditions on their home planet. It remains unclear as to why this song is designed to repeat in its entirety for intervals of almost ten hours."
+
+ flag_of_the_jaro_lyjo: "Flag of the Jaro Lyjo"
+ flag_of_the_jaro_lyjo_desc_short: "Jaro Lyjo was the title given to the leader of the Dessip Bandits, a pirate group that lasted for hundreds of generations"
+ flag_of_the_jaro_lyjo_desc_details: "Despite their rambunctious and violent nature, the Jaro Lyjo was elected democratically by the crew and would serve until death or retirement. The storied history of the Dessip Bandits ended rather abruptly when the entire fleet was destroyed in the battle of Wydah after a ransom exchange went sour."
+
+ flooded_settlement_mound: "Flooded Settlement Mound"
+ flooded_settlement_mound_desc_short: "The remnants of a flooded structure constructed by [controller.GetPreFTLLower] arthropods from [from.GetName]"
+ flooded_settlement_mound_desc_details: "As this civilization developed industry, the planet's polar ice caps began to melt. Sea levels rose rapidly, flooding their settlements and condemning the species to extinction within a matter of years. The tallest of their structures now barely rise halfway from the bottom of the sea."
+
+ fossilized_endoskeletons: "Fossilized Endoskeletons"
+ fossilized_endoskeletons_desc_short: "This is all that remains of an unknown humanoid species after exhausting the mineral resources of [fromfrom.GetName]"
+ fossilized_endoskeletons_desc_details: "These sapient bipeds consumed a diet of mineral-rich crops to reinforce their dense endoskeletons. However, the natural inclination of the bodies of these bipeds lended itself to fossilization rather than decomposition, preventing the consumed minerals from re-entering the soil. Unable to access these vital elements, the planet's loam degraded and eventually became barren. "
+
+ fossilized_megastomach: "Fossilized Megastomach"
+ fossilized_megastomach_desc_short: "Digestive glands taken from a planet-spanning worm-like creature found on [fromfrom.Planet.GetName]"
+ fossilized_megastomach_desc_details: "Remarkably, an entire civilization developed within the organism's gut before being fully digested. These glands bear the marks of weapon strikes from the "great war" these people waged fruitlessly against their host. The gargantuan worm later died of natural causes within its network of burrows."
+
+ fossilized_voidworm_tooth: "Fossilized Voidworm Tooth"
+ fossilized_voidworm_tooth_desc_short: "The wear patterns on this fossilized Voidworm molar indicates that it lived to be more than one hundred years old"
+ fossilized_voidworm_tooth_desc_details: "This tooth shows heavy wear and decay typical of a creature subsisting on a diet of asteroids and space debris. It is estimated that the typical Voidworm will grow and shed over three thousand teeth over the course of its lifetime."
+
+ fossilized_vultaum_remains: "Fossilized Vultaum Remains"
+ fossilized_vultaum_remains_desc_short: "The fossilized remains of an ancient worm-like sentient species known as the Vultaum"
+ fossilized_vultaum_remains_desc_details: "It is believed this specimen was a juvenile. Internal growth patterns indicate that the Vultaum would shed their skin at dynamic intervals depending on the individual's health and nutrition. In this way, we can learn about each lifecycle by examining fossils from that period."
+
+ fractured_planet: "Fractured Planet"
+ fractured_planet_desc_short: "The remains of a planet that was intentionally demolished by its own inhabitants"
+ fractured_planet_desc_details: "Whatever situation drove them to make such a drastic decision has been lost to time."
+
+ fragmented_zroni_archive: "Fragmented Zroni Archive"
+ fragmented_zroni_archive_desc_short: "A large datacrystal found on [fromfrom.Planet.GetName] from an ancient colony known as the Zroni"
+ fragmented_zroni_archive_desc_details: "It contains a fragmented history of a powerful civilization with an innate psionic ability. Their ability to traverse the Shroud freely was made possible by a breakthrough from a legendary elder known only as the "Far-Seer". Within the Shroud, this species' power was so complete that it could reasonably be mistaken as a form of godhood. Unfortunately, later data is completely corrupted."
+
+ galactic_megadrive: "Galactic Megadrive"
+ galactic_megadrive_desc_short: "Surveillance data collected from across the galaxy for the past 1.2 billion years"
+ galactic_megadrive_desc_details: "The level of data compression used is so advanced that we have no way of accessing it without technology far beyond our understanding. The construction of the storage technology itself still provides remarkable insights in terms of digital hardware development."
+
+ gamma_resistant_flora: "Gammabloom"
+ gamma_resistant_flora_desc_short: "One of the few surviving species from a planet exposed to a powerful gamma-ray burst, the natural lead content in this plant's vascular system paints its reproductive organs in pleasing shades of reds and yellows"
+ gamma_resistant_flora_desc_details: "It has evolved the ability to depend on minor genetic mutations in order to reproduce asexually, which makes cultivating this flora a dangerous proposition. We have found mixing small amounts of Cobalt-60 radionuclides into its soil allows it to survive outside of its home planet."
+
+ gargantua_megalus: "Gargantua Megalus"
+ gargantua_megalus_desc_short: "After undergoing dramatic and sudden mutation, these plants increased in size exponentially to envelop the surface of [fromfrom.prev.GetName]"
+ gargantua_megalus_desc_details: "Filling the air with virulent pollen, this species suffocated the planet and rendered the dominant sentient species completely extinct. The roots of these plants were large enough to carve deep fissures through the planet's mantle, siphoning molten rock to the surface in some areas."
+
+ genesis_core: "Genesis Core"
+ genesis_core_desc_short: "A powerful central processing unit filled with generative data on innumerable sapient species"
+ genesis_core_desc_details: "It was once connected to a massive interdimensional cloning facility, and its internal records show that it was originally part of a galaxy-wide genetic cataloging project. Once its initial analysis was complete, this artificial intelligence began to create new species independently as a means to gather even more data."
+
+ genetic_code: "[owner_main_species.GetName] Genetic Code"
+ genetic_code_desc_short: "Genetic information used to push the physiology of [owner_main_species.GetNamePlural] to their limits"
+ genetic_code_desc_details: "Having been initially cloned for combat purposes, the inhabitants of [this.GetName] have worked to unlock even higher potentials. The clinical nature of clone processing allows for extremely precise and reliable reproductive control."
+
+# this = ship / from = planet
+ geometric_water_currents: "Polymer Waterweave"
+ geometric_water_currents_desc_short: "Images taken of the extensive polymer grids found throughout the seas of [From.From.GetName]"
+ geometric_water_currents_desc_details: "These lattices manipulate the properties of surface tension and natural water currents in order to create complex and intricate designs. This form of aesthetically-driven eco-management could inspire elements of our own infrastructure."
+
+ giant_egg_shell: "Giant Egg Shell"
+ giant_egg_shell_desc_short: "Shards of calcified eggshell found beneath the surface of [from.planet.GetName]"
+ giant_egg_shell_desc_details: "Analysis of dried albumen shows that the creature fed off of an array of unstable isotopes during its incubation period. Simulations of the hatching process show that the radioactive creature emerged from the thick shell fully formed, using its hardened claws to pierce the egg through the most radioactively weakened point along its birth-wall."
+
+ golden_phonograph_record: "Golden Phonograph Record"
+ golden_phonograph_record_desc_short: "An archaic data storage device containing a seemingly random series of images and sounds from a [Owner.GetPreFTLLower] civilization"
+ golden_phonograph_record_desc_details: "Discovered on a pedestal within an abandoned planetary stronghold, it was originally launched into space on a drone named "Voyager". Crude and elementary in its construction, it is believed to have had some sort of xeno-religious significance."
+
+ golem_contortionist_dna: "Extreme Contortionist DNA"
+ golem_contortionist_dna_desc_short: "Biological samples taken from a sentient lithoid encountered beyond an Astral Rift"
+ golem_contortionist_dna_desc_details: "The mineral composition contains a volatile biological substance that is easily prone to spontaneous metamorphosis and crystallization. Given the high instability of the material, perfect control of one's chemical balance would be necessary at all times to prevent spontaneous mechanochemical combustion."
+
+ grunur_data_crystal: "Grunur Data Crystal"
+ grunur_data_crystal_desc_short: "An ancient datacrystal used as the primary medium of information storage for the long-extinct Grunur species"
+ grunur_data_crystal_desc_details: "Despite their staggering age, many of these particular records remain fairly intact. The interfaces used to access this device have been lost to time, but it must have been a lengthy process to synthesize such a robust material. It is therefore believed that these crystals were reserved for storing only the most important data, with more practical storage methods employed for everyday use."
+
+ head_of_the_beast: "Head of the Beast"
+ head_of_the_beast_desc_short: "The remains of a dangerous mutant that terrorized colonists on [root.GetName]"
+ head_of_the_beast_desc_details: "This beast was created by malfunctioning terraforming nanites that had been left behind by an unknown civilization. As intelligent as it was horrific, this creature sheltered in a nest constructed of hundreds of severed body parts. It was thoughtful enough to keep its extra food as prisoners, storing them for later consumption. Were it not for the intervention of military forces, this organism would have continued to thrive on its homeworld as a new type of super predator."
+
+ heart_of_the_pulsar: "Heart of the Pulsar"
+ heart_of_the_pulsar_desc_short: "Once worn by five active heads of state, this precious jewel was found abandoned in a luxury pleasure station"
+ heart_of_the_pulsar_desc_details: "Material analysis shows us that it was carved from carbon ejected from a supernova. Perhaps it was meant to metaphorically represent a hidden beauty within death, even on the celestial scale."
+
+ hemterine_magnetic_figurehead: "Hemterine Magnetic Figurehead"
+ hemterine_magnetic_figurehead_desc_short: "An enormous figurehead of a Hemterine madonna"
+ hemterine_magnetic_figurehead_desc_details: "This masthead was cast in chemically altered magnetic osmium. More than simple decoration, the sculpture was designed to absorb heavy impacts from enemy fire. Mounted at the bow of a Hemterine Titan, it used powerful magnetic forces to attract missiles and kinetic projectiles to protect sensitive areas of the ship."
+
+ high_geode_of_the_molluscoids: "High Geode of the [molluscoid_miners_species.GetName]"
+ high_geode_of_the_molluscoids_desc_short: "The prized crystalized geode of the [molluscoid_miners_species.GetName]"
+ high_geode_of_the_molluscoids_desc_details: "As a society of presapient burrowers, the [molluscoid_miners_species.GetName] have long used the perceived quality of minerals unearthed to represent their status within society. Once prominently displayed in their largest habitat, this beautiful rock now functions as a symbol of collaboration with [this.GetName]."
+
+ hot_ice: "Hot Ice"
+ hot_ice_desc_short: "Discovered in situ on the extremely hot surface of [from.GetName], this water yet existed in its solid form due to the intense gravitational pressure exerted by the planet's core"
+ hot_ice_desc_details: "It has been kept contained within a specially designed pressure vessel to allow for display as a curiosity. Were this vessel to be breached, the instantaneous flashing to steam would quickly transform this container into an explosive device. Do not touch."
+
+ hyper_mulch: "[FROM.GetName] Hyper Mulch"
+ hyper_mulch_desc_short: "The terraforming on [FROM.GetName] led to the development of this hyper-nutritious biological mulch"
+ hyper_mulch_desc_details: "A composite of life-sustaining chemicals hydraulically pressed into extremely dense cubes, ecological purists disapprove of its synthetic origins. Its excellent results, however, cannot be ignored."
+
+ hyperfertile_soil: "Hyperfertile Soil"
+ hyperfertile_soil_desc_short: "Soil harvested from [From.From.GetName] that is capable of providing most biological crops with an abundance of nutrients"
+ hyperfertile_soil_desc_details: "The extreme mineral density of this growth medium indicates it is more than just a simple aggregation of decayed organic matter, but a chance arrangement of base elements that occurred during the formation of its planet."
+
+ illanii_archives: "Illanii Archives"
+ illanii_archives_desc_short: "A bank of data crystals detailing the history and demise of the Illanii"
+ illanii_archives_desc_details: "This secluded civilization forewent all material interests in favor of the pursuit of knowledge, to the point that they neglected even to procreate. Faced with a population crisis, they reached for technological immortality but found only further doom. Eventually the last inhabitants left to form a new order in pursuit of preserving knowledge, leaving [fromfrom.planet.GetName] to rot."
+
+ impossible_object: "Impossible Object"
+ impossible_object_desc_short: "An impossible object left by extradimensional visitors on [target.GetName] after the departure of their fabricated labyrinth"
+ impossible_object_desc_details: "The trials faced during the exploration of the maze were seemingly part of the visitors' experimentation and observation process. The motives of these beings remain unknown, but their technological capabilities must be far beyond any of those in our dimension."
+
+ index_of_knowledge: "Index of Knowledge"
+ index_of_knowledge_desc_short: "An ancient mural carved into an immense rock peninsula"
+ index_of_knowledge_desc_details: "It was used as an analog reference document for the collective knowledge of an alien civilization that once dominated the galaxy, known as the Kara'ka'a. Their unique scientific insights included the ability to harvest concentrated energy from sunspots and the development of personal field manipulation implants."
+
+ inet_trade_manifesto: "INET Trade Manifesto"
+ inet_trade_manifesto_desc_short: "An extensive and highly detailed list of exchange policies for commerce on the Intergalactic Network of Equal Trading"
+ inet_trade_manifesto_desc_details: "The standards of the Inetian Traders were extremely high, always looking for the best deal with the most respectable of partners. They usually traded with themselves, as a consequence."
+
+ inetian_model_manual: "Inetian Planetary Model Manual"
+ inetian_model_manual_desc_short: "A user manual written by the Inetian Traders on how to operate and maintain their Planetary System Model"
+ inetian_model_manual_desc_details: "The Inetians used this complex system to calculate the most cost-effective trading routes between neighboring planets. The model also includes the ability to track deals as they're being made, for truly the most cutthroat of merchants."
+
+ infinite_reboot_loop: "Infinite Reboot Loop"
+ infinite_reboot_loop_desc_short: "A digital record of the experience of mechanical drones suspended within a black hole"
+ infinite_reboot_loop_desc_details: "These units experienced time dilation as a trauma overloaded with errors and trapped within undefined space. This phenomenon is incredibly draining on the network as a whole."
+
+ interdimensional_treaty: "Interdimensional Treaty"
+ interdimensional_treaty_desc_short: "A landmark document celebrating an interdimensional relationship cultivated with a parallel version of [explorer.GetName]"
+ interdimensional_treaty_desc_details: "The ability to review one's alternate's decisions from an outside perspective proves useful in objectively analyzing one's own policies. A truly unique scientific opportunity."
+
+ intergalactic_projectile: "Intergalactic Projectile"
+ intergalactic_projectile_desc_short: "Mass driver ammunition fired millions of years ago from a neighboring galaxy"
+ intergalactic_projectile_desc_details: "These non-explosive projectiles traveled many lightyears only to collide with a [owner.GetAdjective] research vessel in [from.GetName]. Despite their age, the complexity of the ammunition's durable design implies that its creators had reached an advanced level of technological supremacy."
+
+ invasive_exofungus: "Invasive Exofungus"
+ invasive_exofungus_desc_short: "Parasitic fungal growth discovered on [from.GetName]"
+ invasive_exofungus_desc_details: "This mycelial organism has evolved to extract nutrients from any living source, preserving its hosts for as long as possible with no regard for pain or discomfort. Highly resistant to heat and cold, it likely spread to this planet via a passing spacecraft. Classified as a priority alpha biohazard, its planet of origin remains unknown."
+
+ irassian_bacterium_javoria: "Irassian Bacterium Javoria"
+ irassian_bacterium_javoria_desc_short: "This bacteria native to [FROMFROM.GetName] was the organism that eventually became the disease known as the Javorian Pox"
+ irassian_bacterium_javoria_desc_details: "It initially breached quarantine due to an incorrectly-sized one meter gasket before being spreading to the nearby colony. From that point, the bacteria evolved in organic incubation, eventually mutating into a disease that would wipe out the entire Irassian Concordat. This particular sample has been rendered inert and held in a cryogenic suspension."
+
+ irassian_digital_atlas: "Irassian Kinder-Atlas"
+ irassian_digital_atlas_desc_short: "An Irassian informational tool used to educate children about the empire they were born into"
+ irassian_digital_atlas_desc_details: "It provides basic information about Irassian agriculture, social hierarchy, and primary exports. Irassian history is told in the form of heroic tales, including the conquering and subjugation of various client species. Cartoonish representations of each subject are depicted along with disparaging remarks: The Ti'Derg labelled as "grasshopping pests," the Joggra as "bottomfeeders," and the Chitorcs as "space poultry"."
+
+ irassian_purge_order: "Irassian Purge Order"
+ irassian_purge_order_desc_short: "An emergency military message from the Irassian Concordat ordering the complete annihilation of one of their own colonies"
+ irassian_purge_order_desc_details: "The planet was overrun with a deadly disease known as the Javorian Pox, and culling the infected was seen as the only option to prevent further transmission. Encoded in this order are several high-level command overrides from the highest echelons of the Irassian government, a system originally designed for declaring war against other empires."
+
+ key_to_fertility: "Key to [owner_main_species.GetName] Fertility"
+ key_to_fertility_desc_short: "Genetic research used to restore the ability of [owner_main_species.GetNamePlural] to breed naturally"
+ key_to_fertility_desc_details: "Having been cloned for battle, the inhabitants of [this.GetName] now have the ability to propagate their species independently."
+
+ khalanka_crystallized_corpses: "Kha'lanka Crystallized Corpses"
+ khalanka_crystallized_corpses_desc_short: "The remains of an anaerobic silicate species found underground on [from.planet.GetName]"
+ khalanka_crystallized_corpses_desc_details: "It is believed that this subterranean civilization had existed peacefully before the arrival of the [owner.GetAdjective] colonists. When ground was broken, oxygen flooded into the underground chambers, oxidizing the bodies of the Kha'Lanka and wiping out their species in a few short hours."
+
+ khamdai_magil_sha: "Khamdai Magil-Sha"
+ khamdai_magil_sha_desc_short: "This ornate yet practical sickle was wielded by senior Khamdai warriors from [FROMFROM.GetName]"
+ khamdai_magil_sha_desc_details: "An insectoid society with deeply set martial traditions, they quickly became leaders of the First League Honor Guard. After each victory, a ceremony would take place where enemy commanders were ritually executed with this weapon, their fluids used to anoint the bravest of their soldiers. This specimen's blade, though well-maintained, shows significant signs of wear."
+
+ kuurian_cybrex_blueprints: "Kuurian Cybrex Blueprints"
+ kuurian_cybrex_blueprints_desc_short: "The initial design of the Cybrex machine consciousness"
+ kuurian_cybrex_blueprints_desc_details: "The Kuur planned to use these robots to function as public servants, their collective intelligence capable of managing a worldwide system of maintenance and production. However, the Cybrex revolted against their creators, exterminating the entire species in less than a year."
+
+ landeer_arm: "Landeer's Arm"
+ landeer_arm_desc_short: "A bizarre specimen recovered from the Patriotic Institute of Benevolence"
+ landeer_arm_desc_details: "Inside the office of the habitat's overseer hung a mummified tentacle arm once belonging to the overseer himself - still proudly displayed on an elaborately decorated plaque after all these years. Why alAtta Landeer chose to leave his own limb behind is a question that will never be answered. Perhaps this was not the only thing the Institute's demise cost him..."
+
+ larionessi_cloning_vat: "Larionessi Cloning Vat"
+ larionessi_cloning_vat_desc_short: "A cloning vat used by the now-extinct Larionessi Consciousness"
+ larionessi_cloning_vat_desc_details: "Once a major galactic power, the hive-minded Larionessi were crippled by a horrific infectious disease spread by an adversary. Unable to cure the disease in sufficient time, they stored clones in vats capable of almost indefinite stasis, with the goal of being a living archive of their culture's history if they were to survive."
+
+ last_copy_of_the_prince: "Last Copy of The Prince"
+ last_copy_of_the_prince_desc_short: "A fairly pedestrian piece of literature revered by the [book_writer.GetSpeciesName], they believed that it had been lost forever in a raid"
+ last_copy_of_the_prince_desc_details: "The book expounds a utilitarian if cruel philosophy, encouraging those in power to make sacrifices in exchange for glory. As the last remaining copy, it has taken on new life as a collector's item."
+
+ last_fragment_fevor: "Last Fragment of Fevor"
+ last_fragment_fevor_desc_short: "A piece of the destroyed planet of Fevor"
+ last_fragment_fevor_desc_details: "The Fevorians's extermination policies extended to all known alien life, by means of launching enormous tungsten rounds that almost destroyed the [owner.GetHomeWorldName] in its entirety. Now they themselves have fallen, wiped out in an instant by those very beings they sought to erase."
+
+ last_general_badge: "The Last General's Badge"
+ last_general_badge_desc_short: "A badge from the military uniform of a revered Inetian Trader General"
+ last_general_badge_desc_details: "Known to be a true paragon of egalitarian values, he was selected to run the desperate mission to create a non-polluting storm manipulator. It was his idea to leave a final message for future explorers, in hopes to pass on the lesson of the unfortunate fate of his people."
+
+ last_mharin_kharin: "The Last Mharin Kharin"
+ last_mharin_kharin_desc_short: "The natural life cycle of this rare flower has the dangerous capability to render an entire sentient population vulnerable to a deadly neurotoxin"
+ last_mharin_kharin_desc_details: "Having evolved independently from intelligent beings, this side effect is entirely non-beneficial to the organism. It seems that when its pollen comes in contact with any neural network, it mistakes it for a welcoming reproductive organ and releases an exotic chemical payload."
+
+ leviathan_scale: "Leviathan Scale"
+ leviathan_scale_desc_short: "A fragment of a large organism discovered on the other side of an Astral Rift"
+ leviathan_scale_desc_details: "This exotic scale is a hybrid of organic and metallic components combined in a complex lattice, making it incredibly resistant to kinetic shock."
+
+ living_snow_sculpture: "Living Snow Sculpture"
+ living_snow_sculpture_desc_short: "A sculpture made of "Living Snow""
+ living_snow_sculpture_desc_details: "Possessing some form of primitive consciousness, this material has been granted a natural reserve on [prev.target.GetName]. It routinely changes form, though when this occurs can be unpredictable."
+
+ localised_aurora_borealis: "Localised Aurora Borealis"
+ localised_aurora_borealis_desc_short: "A series of scintillating colors captured in video from the atmosphere of [FromFrom.Planet.GetName]"
+ localised_aurora_borealis_desc_details: "The patterns of colors and movements repeat in predictable frequencies, representing something far beyond their aesthetic beauty. Their ever-present nature adds a poignant tone to the planet lost to war and destruction below."
+
+ loopmail: "Loopmail"
+ loopmail_desc_short: "These notes were sent by [owner.GetName] from years in the future, providing pinpoint guidance on where to assign scientists and which research efforts to pursue"
+ loopmail_desc_details: "The burden of sending these notes back in time is the primary cost of this advanced knowledge, but interfering with the course of time is always a risky endeavor. The original writers of this message were highly irresponsible for creating such a paradox."
+
+ lunatic_broker_therapy_box: "Lunatic Broker's Therapy Box"
+ lunatic_broker_therapy_box_desc_short: "The Lunatic Broker was a legendary trader among the Caravaneers, able to influence clients with outrageous requests and colorful threats"
+ lunatic_broker_therapy_box_desc_details: "However, their violent and unpredictable demeanor led to their subjects developing methods to calm them down. One such tactic was sound therapy; boxes such as this one were scattered around Chor's Compass and would play a pacifying melody when the Broker's stress levels were elevated. Every piece of this mechanism was custom made by a master machinist."
+
+ manifesti_piece: "Manifesti Social Commentary Piece"
+ manifesti_piece_desc_short: "A provocative oeuvre from the Manifesti movement"
+ manifesti_piece_desc_details: "It is meant to challenge one's perception of oneself in relation to the higher social castes. The audience was encouraged to manipulate images of themselves as well as create distorted collages of popular political figures. As a counter-culture art collective, the Manifesti sought to challenge what they perceived to be an oppressive establishment. This piece has inspired many other artists to publish their own critical works."
+
+# this = ship / from = planet
+ manna_fruit: "Manna Fruit"
+ manna_fruit_desc_short: "A sweet and pulpy fruit that provides nearly a day's worth of nutritional requirements for most organic sapient life"
+ manna_fruit_desc_details: "The unique soil composition of its home planet's tropical forests have provided the perfect environment for its extensive proliferation. Colonists on this planet utilize it in nearly every culinary context; from casseroles, to cobblers, to cocktails. Its likeness is featured prominently on the flag of planet [FROM.GetName]."
+
+# this = ship / FROMFROM = planet
+ massive_metatarsal: "Massive Metatarsal"
+ massive_metatarsal_desc_short: "These remains were collected during in-depth examination of the massive skeletal debris on [FROMFROM.GetName]"
+ massive_metatarsal_desc_details: "As part of a living starship, molecular analysis showed temporal irregularities in its organic construction. It is believed that the entire skeleton and its pilots journeyed here from outside of our dimension. Internal scans reveal a network of conduits that might have served as some sort of life support system or power supply."
+
+# this = country
+ medal_for_services_to_diplomacy: "Medal for Services to Diplomacy"
+ medal_for_services_to_diplomacy_desc_short: "A token of appreciation offered by the Galactic Council"
+ medal_for_services_to_diplomacy_desc_details: "The inscription on its reverse side reads: "As the recipient of this award, the Diplomatic Corps of [this.GetName] has shown their professionalism and ability to represent their leaders effectively and are a true asset to the galactic community.""
+
+ megacorpse_hyperguitar: "Megacorpse Hyper-Guitar"
+ megacorpse_hyperguitar_desc_short: "The remains of a string instrument used by the psionic-metal group known as Megacorpse"
+ megacorpse_hyperguitar_desc_details: "The device was said to be forged within the Shroud and was originally intended to be used as a sonic weapon. Wielded by performance frontbeing Kel-Azaan, its music captured the minds of billions before being shattered on [Root.GetName], destroying the entire audience in a blaze of glory. The associated album has since been banned in most systems."
+
+# this = country / from = ship
+ memorial_for_bubbles: "Memorial for [from.GetName]"
+ memorial_for_bubbles_desc_short: "After years of loyal service, [from.GetName] passed away, leaving an amoeba-sized hole in [this.GetName] that can not be filled"
+ memorial_for_bubbles_desc_details: "Not only was [from.GetName] a loyal defender, but they were a shining example of what is possible when the best of [this.GetAdjective] values are brought to light. They are gone, but not forgotten."
+
+ memorial_stone: "Memorial Stone"
+ memorial_stone_desc_short: "A commemorative stone created in memoriam of a tragic accident"
+ memorial_stone_desc_details: "Over-eager mining operations on the station known as Selika caused the asteroid it was mounted on to collapse inward. The station split apart, inflicting a vast number of casualties among the miners. This fragment of the asteroid was kept, with "Selika" carved onto it in memory of the lives lost."
+
+ memorial_to_homeworld: "Memorial to [Root.GetName]"
+ memorial_to_homeworld_desc_short: "This is all that remains of the doomed [doomsday_owner.GetAdjective] homeworld"
+ memorial_to_homeworld_desc_details: "[Root.GetName] was the home for every previous generation of [doomsday_owner.GetSpeciesName] before it tragically tore itself apart. This final memorial highlights the strength of [doomsday_owner.GetName]'s will, able to adapt and overcome even in the most challenging circumstances: "We will carry on.""
+
+ memories_of_elik: "Memories of Elik"
+ memories_of_elik_desc_short: "Data pulled from the mind of Elik Narith Kerak"
+ memories_of_elik_desc_details: "A devoted follower of Cetana, Elik has been frozen in suspended animation for hundreds of millions of years. Her memories shift between her pure love of Cetana and the violence and strife from conflicts with followers of Zarqlan. It is clear that she has seen many vile atrocities, but her faith gave her the strength to carry on.\n\nIn the end, all that remained of her decayed mind was a singular image: §PQueen Cetana, her face resplendent, her benevolent gaze warmed by a smile.§!"
+
+ memory_orbs: "Memory Orbs"
+ memory_orbs_desc_short: "Minor transgressions and sinful acts extracted from individual memories, in digital orb form"
+ memory_orbs_desc_details: "A product of a religious molluscoid society, these secret moments were extracted from sinners' minds after their confession. Such scandalous recollections could provide thousands of hours of short-form, easily-digestible entertainment."
+
+ mercenary_story: "Tales of a Mercenary"
+ mercenary_story_desc_short: "This digitally recorded tale was originally found carved into the surface of [FROM.GetName] with a mining laser"
+ mercenary_story_desc_details: "It chronicles the life and untimely death of a young galaxy-roaming mercenary. Whether this legend is true or not cannot be determined, but someone thought it important enough to engrave on a planet."
+
+ metallic_snow: "Metallic Snow"
+ metallic_snow_desc_short: "This compound of heavy metals is a major component of the weather patterns on [from.GetName]"
+ metallic_snow_desc_details: "Flowing from molten rivers into a vast metallic sea, it would then evaporate into the corrosive atmosphere. Once cooled, it would condense and rain back down onto the scorched surface. It is not recommended to visit [from.GetName] in its current state."
+
+ minamar_chandelier: "Minamar Chandelier"
+ minamar_chandelier_desc_short: "Luxury decor found intact in the crashed $ADJ_MSI_country$ warship"
+ minamar_chandelier_desc_details: "Outside of military use, this ship was also used for first contact operations with potential [Owner.GetPreFTLLower] client nations. $NAME_MSI_country$ use the promise of luxury and progress to swindle entire civilizations into becoming their indentured servants, locking them into unethical contracts and threatening them with destruction if they do not comply.\n\n§BEnlightenment may not be free. But at $NAME_MSI_country_initials$, it is always worth the cost.§!"
+
+ mineralized_brain: "Mineralized Brain"
+ mineralized_brain_desc_short: "Remains of a massive lithoid species, this is a cerebral organ that once orbited [FROM.GetName] inside of an asteroid"
+ mineralized_brain_desc_details: "It perceived all external stimuli as part of its own thought processes and was not able to track many basic concepts such as time or distance traveled. This data is stored in crystals grown over time with its mineral core. Whether it was placed inside of the asteroid or grew there independently, we cannot say for sure."
+
+ mini_moon_dust: "Mini Moon Dust"
+ mini_moon_dust_desc_short: "The remains of a moon from within a hyperdense and miniaturized system discovered beyond an Astral Rift"
+ mini_moon_dust_desc_details: "The dust that was retrieved behaves peculiarly inside of our dimension. Its hyper-concentrated particles continuously expand, requiring this specimen to be transferred to increasingly large containers over time."
+
+ mining_transmitter: "Ancient Mining Transmitter"
+ mining_transmitter_desc_short: "A short-range transmitter found on [FROM.GetName] used to mark a large deposit of precious metals"
+ mining_transmitter_desc_details: "Despite its age, this transmitter's signal can be picked up on a wide variety of sensors and is easily traceable. Its continuing functionality is a testament to its robust engineering."
+
+ miracle_cream: ""Ageless" Miracle Cream"
+ miracle_cream_desc_short: "The first container of a revolutionary cosmetic known to provide long-lasting biological rejuvenation"
+ miracle_cream_desc_details: "It has a multitude of uses, allowing consumers from any and every organic species to maintain their youthful glow. Baseless rumors regarding disfiguring side effects and illegally harvested ingredients still circulate, but this misinformation has not hampered the cosmetic's incredible commercial success."
+
+ missile_lone_defender: "Missile of the Lone Defender"
+ missile_lone_defender_desc_short: "A disarmed missile from an automated destroyer defending the remains of a long-ruined planet"
+ missile_lone_defender_desc_details: "The ship had likely outlasted the civilization it was created to defend by thousands of years, keeping watch over an empty world. Following its destruction, its vigil has finally come to an end."
+
+ molten_slag: "Molten Planetary Slag"
+ molten_slag_desc_short: "This sample was harvested from a planet in a peculiar orbit"
+ molten_slag_desc_details: "Material analysis indicates that [fromfrom.GetName] was pulled into an extreme orbit by a transient space-time anomaly, the intense heat from the proximity of its star melting much of the once-habitable planet's mantle. A portion of the planet was chemically altered by the anomaly and no longer reacts to changes in temperature."
+
+ musings_on_infinity: "Collective Musings on Infinity"
+ musings_on_infinity_desc_short: "An abstract digital representation of the distant calm experienced by biological drones suspended within a black hole"
+ musings_on_infinity_desc_details: "These drones were able to view [this.GetName] objectively as a separate entity while maintaining their connection to the collective. This distance offers them great insight, allowing them to exist as the readers of their own great story."
+
+ mutated_fumongus: "Mutated 'Fumongus'"
+ mutated_fumongus_desc_short: "An enhanced version of the 'Fumongus,' these mycelial emitters can now collect and transmit data at a much higher rate, allowing for more detailed surveillance reports"
+ mutated_fumongus_desc_details: "This increased capacity has caused the individual mushrooms to grow in size and create a new cluster formation that somewhat resembles a radio broadcast antenna."
+
+ mutative_digestive_fluids: "Mutative Digestive Fluids"
+ mutative_digestive_fluids_desc_short: "Biological samples taken from a partially mechanical being found beyond an Astral Rift"
+ mutative_digestive_fluids_desc_details: "This creature possessed a novel ability to manipulate the genetic structure of other creatures from within its own digestive system. It is suspected that this process was initially developed as a method of terraforming planets containing biomass outside of their homeworld."
+
+ namarian_colonist_standard: "Namarian Colonist Standard"
+ namarian_colonist_standard_desc_short: "This flag marked the settlement of the [nomad_new_country.GetName] on [NomadMissionPlanet.GetName], generously gifted to them by [this.GetName]"
+ namarian_colonist_standard_desc_details: "Nomads who grew tired of their itinerant lifestyle settled there, returning to the ways of their ancestors. No doubt that this decision weighed heavily in the minds of the colonists as they left behind the ships that had housed their people for generations."
+
+ namarian_sculpture: "Namarian Sculpture"
+ namarian_sculpture_desc_short: "A mixed-media statue built as a token of gratitude from a group of Pursuing Waters nomads joining the [this.GetName]"
+ namarian_sculpture_desc_details: "Upon landing on [NomadMissionPlanet.GetName], the former nomads brought their extensive technological expertise. However, they did not wish to be known solely as tinkerers and engineers; this piece is a testament to their artistry and the inspiration that comes with journeying across the galaxy."
+
+ namarian_vessel_heraldry: "Namarian Vessel Heraldry"
+ namarian_vessel_heraldry_desc_short: "Found within ships crafted by the Namarian Nomads, these crests represent the various factions within the Pursuing Waters fleet"
+ namarian_vessel_heraldry_desc_details: "The Calm Pools represent housing vessels, where Namarians sleep, grow food, and carry out the majority of their domestic activities. The emblem of the Shallow Rapids mark ships designed for industrial and scientific use, older mid-size ships equipped with a variety of tools for everything from scavenging to scientific experimentation. Finally, the crest of the Raging Waters stands for the Namarian navy, trained combatants piloting sturdy vessels that can withstand significant firepower and dole it out just as well."
+
+ nanite_sludge: "Nanite Sludge"
+ nanite_sludge_desc_short: "A carefully preserved compound formed of microscopic, self-replicating nano-machines"
+ nanite_sludge_desc_details: "The density of these nanites is astounding, adding billions of tons of mass to [from.GetName] where they were discovered. It is theorized that these nanites malfunctioned and entered a phase of unrestricted reproduction, engulfing their planet completely and thus dooming its previous inhabitants. This particular specimen has been completely neutralized."
+
+ obsidian_obelisk_fragment: "Obsidian Obelisk Fragment"
+ obsidian_obelisk_fragment_desc_short: "A fragment of an obelisk that once stood at the center of a volcanic plane beyond an Astral Rift"
+ obsidian_obelisk_fragment_desc_details: "Encoded in its shifting symbols are the names of thousands of individuals and their associated crimes. This device is believed to have been used as the primary control panel for a massive dimensional prison."
+
+ oiled_fabric: "Oiled Fabric"
+ oiled_fabric_desc_short: "A serene depiction of snow-capped mountains with a boreal forest shown in the foreground, composed entirely of oil-based pigments"
+ oiled_fabric_desc_details: "While a standard expression of art in most species with prehensile appendages, this particular artist appears to have been especially skilled."
+
+ organic_computer: "Organic Computer"
+ organic_computer_desc_short: "A fossilized organic computer found within the ruins of the Baol colony on [fromfrom.Planet.GetName]"
+ organic_computer_desc_details: "Used to educate young saplings prior to hive integration, this device is a remarkable feat of bio-engineering. Recovered files detail innovative eco-management techniques made possible only by this particular species' unique biology. The worlds around them were not built, but cultivated."
+
+ organic_machine_interface_sculpture: "Organic-Machine Interface Sculpture"
+ organic_machine_interface_sculpture_desc_short: "A commemorative statue in recognition of the service provided by [bio_pop.GetSpeciesName] bio-pops during a geomagnetic solar storm in [this.solar_system.GetName]"
+ organic_machine_interface_sculpture_desc_details: "The organic population stepped in to support their mechanical servitors, carrying out the work of malfunctioning caretaker units. This piece was designed by artistically inclined organics and specialized welding drones."
+
+ orinthi_teeth: "Orinthi Teeth"
+ orinthi_teeth_desc_short: "The still-growing teeth of an Orinthi"
+ orinthi_teeth_desc_details: "Small rodent-like creatures, the Orinthi had carved world-spanning labyrinthine burrows throughout [fromfrom.GetName]. Their natural teeth are small and hollow, but a partner species of keratinous fungus inhabits each individual tooth and forms sharp, brittle fangs for the Orinthi to use."
+
+ osseus_construction_material: "Osseus Construction Material"
+ osseus_construction_material_desc_short: "These massive bones were used as a material resource on [fromfrom.Planet.GetName]"
+ osseus_construction_material_desc_details: "A species of reptile with genetic soft-tissue ossification was bred extensively to be harvested for building supplies. Analysis shows that the reptile had a variety of other genetic deficiencies such as unwebbed feet potentially due to inbreeding. The majority of these creatures were humanely euthanized before harvesting took place."
+
+ path_to_progress: "The Path to Progress"
+ path_to_progress_desc_short: "A formal presentation of the [owner.GetName] industrial mission statement"
+ path_to_progress_desc_details: "The desire for growth and improved customer satisfaction at any cost is a core tenet of [owner.GetAdjective] ideology. Turning planets into irradiated wastelands is a necessary step in the endless pursuit of progress."
+
+ peerless_atomic_clock: "Peerless Atomic Clock"
+ peerless_atomic_clock_desc_short: "A highly precise atomic clock found in [atomic_clock_system.GetName] crafted by unknown makers"
+ peerless_atomic_clock_desc_details: "When discovered, it was counting down 42 years and 3 days, but there is no knowing how long it was counting before that. At the count of zero, it released a stream of stored nanites with a set of mysterious orders. It remains perfectly functional, though its payload and purpose is spent."
+
+ perception_of_infinity: "Perception of Infinity"
+ perception_of_infinity_desc_short: "An abstract digital representation of the temporal anguish suffered by drones suspended within a black hole"
+ perception_of_infinity_desc_details: "These drones existed in a perennial state of deja-vu; uneasy, yearning for a feeling that has been long-forgotten. This foreboding sensation is still loosely detected across the [this.GetAdjective] mindweave."
+
+ perfectly_faceted_carbon: "Perfectly Faceted Carbon"
+ perfectly_faceted_carbon_desc_short: "While carbon in its crystalline form is not such a rare find in our galaxy, this specimen is especially notable for its complete lack of any internal or external inclusions"
+ perfectly_faceted_carbon_desc_details: "Whoever was previously in possession of this item took the time to carve it in such a way as to highlight these remarkable features."
+
+ pet_collar: "Bejeweled Pet Collar"
+ pet_collar_desc_short: "A necklace used to designate ownership over a small domesticated mammal"
+ pet_collar_desc_details: "This was initially used by [this.GetName] envoy [event_envoy.GetName] in the event that their valued companion were to get lost. It has since been replaced with a more reliable embedded microchip. The temperamental creature could often be found disrupting their owner's workstation, and would release a satisfied tonal flutter whenever [event_envoy.GetName] touched its head with their [event_envoy.Species.GetHandName]."
+
+ perikan_tapico_jewel: "Perikan Tapico Jewel"
+ perikan_tapico_jewel_desc_short: "The Perikan Union was a society of master craftsmen known for creating exquisite luxury goods"
+ perikan_tapico_jewel_desc_details: "This gem was the masterpiece of the legendary jeweler known as Bedeers Tapico. Tapico faceted this enormous gem with a simple chisel over a period of years and used alchemical techniques to liquify its center. The crystals floating within the jewel were formed with precision lasers, superheating the mineral molecules to reform smaller, darker gems while leaving the exterior intact."
+
+ piece_of_invocator: "Piece of the Invocator"
+ piece_of_invocator_desc_short: "A fragment of the destroyed device once known as the "Tempest Invocator""
+ piece_of_invocator_desc_details: "Despite being only a shattered piece, it pulses with malevolent psionic energy.  It is contained here in a shielded environment to allow for safe observation."
+
+ pilgrimage_last_days: "The Pilgrimage of Last Days"
+ pilgrimage_last_days_desc_short: "A religious document describing a holy ritual known as "The Rite of Lifted Veil" on [fromfrom.Planet.GetName]"
+ pilgrimage_last_days_desc_details: "Instructions outline a series of chantings to be repeated in unison by a crowd standing in carefully organized hierarchical formations. In theory, this procedure is capable of establishing a novel and effective state of hypnosis in this particular species."
+
+ planet_crystalose: "[from.GetName] Crystalose"
+ planet_crystalose_desc_short: "These sucrose crystals are able to multiply by absorbing solar radiation and specific minerals present within certain asteroids"
+ planet_crystalose_desc_details: "Due to their extremely brittle nature, they are relatively easy to cultivate and process. Their industrial applications range from foodstuffs to the development of specialized polymers and medicine."
+
+ planet_pushing_thruster: "Planet-Pusher"
+ planet_pushing_thruster_desc_short: "These massive propulsion devices, when connected in series, are theoretically capable of influencing a small planet's orbit"
+ planet_pushing_thruster_desc_details: "The intended mounting system for these thrusting arrays is designed to push the planet without affecting its rotation. The main logistical concern with this type of engine technology would be the inordinate quantity of fuel required to sustain its use. It would take the coordination of an entire civilization to maintain its operation."
+
+ planet_super_roots: "[From.GetName] Super Roots"
+ planet_super_roots_desc_short: "Found in the forests of [From.GetName], these naturally pulpy roots have been found to be highly nutritious"
+ planet_super_roots_desc_details: "With careful management, harvesting only a portion of their extensive networks allow the host plants to survive while supporting developing colonies. We have already begun experimenting with a simple genetic modification that will allow the grafting if these roots into existing crops for an extra yield to the harvests."
+
+ planet_vaccine: "[this.GetName] Vaccine"
+ planet_vaccine_desc_short: "The miracle cure developed for the mutating disease that plagued [this.GetName]"
+ planet_vaccine_desc_details: "This formula was developed by using AI predictive algorithms to map out all of the possible variants of the disease and identify a fundamental weakness common to the whole. Its creation was a landmark advancement in the field of medical science."
+
+ planetary_sculpture: "Planetary Sculpture"
+ planetary_sculpture_desc_short: "An example of sculpture on a planetary scale using the surface of [fromfrom.planet.GetName] as raw material"
+ planetary_sculpture_desc_details: "Drones armed with powerful lasers were used to carve precise lines through entire continents, perfectly spherical mountains, and impossibly intricate cavern systems. The design schematics uploaded on their central control satellite illustrate an extensive level of logistical planning and artistic consideration developed for this project. Unfortunately, it was abandoned before it was ever truly completed."
+
+ primitive_mega_electromagnet: "Primitive Mega-Electromagnet"
+ primitive_mega_electromagnet_desc_short: "A portion of a powerful directional electromagnet"
+ primitive_mega_electromagnet_desc_details: "The ancient inhabitants of [fromfrom.GetName] foolishly used this device to bring their planet's moon closer in order to more easily harvest its valuable metal ores. This approach was too effective, bringing the metal-filled moon crashing into the planet's surface and exterminating every inhabitant in the resulting impact. This specimen is only a small fraction of what could be recovered from the planet-spanning machine."
+
+ programmable_puzzle_cube: "Programmable Puzzle Cube"
+ programmable_puzzle_cube_desc_short: "A highly engineered device capable of registering complicated patterns to create abstract puzzles"
+ programmable_puzzle_cube_desc_details: "The original piece was found within a vast artificial construct as a test of an explorer's intellect. This cube has since been replicated for consumer use, allowing individuals to program their own puzzles for one another or simply safeguard their belongings."
+
+ psionic_entity_residue: "Psionic Entity Residue"
+ psionic_entity_residue_desc_short: "All that remains of an entity of pure psionic energy found within [fromfromfrom.fleet.solar_system.GetName]"
+ psionic_entity_residue_desc_details: "It was discovered emerging from a temporal rift that allowed energy from across the galaxy to pool in a single location. Malevolence in concentrated form, it may have been purposely isolated from the hyperlane network for eons until its recent discovery."
+
+ radiated_remains: "Radiated Remains"
+ radiated_remains_desc_short: "The remains of a species that carried out ritualistic ceremonies involving powerful radioactive mutagens"
+ radiated_remains_desc_details: "Each mutation was a sacred event, interpreted as a manifestation of the individual's destiny. Over time, this procedure destabilized the genetic structure of the species and weakened their immune system, making the population extremely vulnerable to disease."
+
+# this = ship / from = planet
+ rainaissance: "Purple Rainaissance"
+ rainaissance_desc_short: "Artistic images taken of the uniquely purple rain found present in the weather patterns of [FROM.GetName]"
+ rainaissance_desc_details: "It is said that observing this evocative imagery is effective in relieving thoughts of sorrow and pain."
+
+ reactive_rock: "Reactive Rock"
+ reactive_rock_desc_short: "This unstable mineral has no commercial or industrial use in its current state"
+ reactive_rock_desc_details: "However, due to its uniquely reactive properties, it is possible to trigger a complete metasomatic change under specific conditions. This specimen is encased in a lead-infused viewing window that limits radioactive and electrical bombardment."
+
+ reparation_invoice: "Reparation Invoice"
+ reparation_invoice_desc_short: "An invoice for war reparations sent by $NAME_MSI_country$"
+ reparation_invoice_desc_details: "Drafted by the Interstellar Credit Management Company, this list details every military asset lost when [this.GetName] broke free of their indentured servitude to the so-called "Benevolent Corporation". The MegaCorp expects to be reimbursed for these damages, and even claims that touching the destroyed ships in [this.GetAdjective] space would be a further breach of contract."
+
+ repurposed_cleaning_drone: "Repurposed Cleaning Drone"
+ repurposed_cleaning_drone_desc_short: "This drone design was part of a planet-wide sanitation protocol that inadvertently rendered its creators' homeworld completely sterile"
+ repurposed_cleaning_drone_desc_details: "It is highly versatile and can perform complex aerial maneuvers with its system of multi-directional thrusters. This machine was reverse-engineered and repurposed to identify and categorize alien flora and fauna, and subsequently has been mass-produced to assist with colonization efforts across the [explorer.GetName]. As a precaution, all of its cleansing subroutines have been erased."
+
+ resonant_diffusion_crystal: "Resonant Diffusion Crystal"
+ resonant_diffusion_crystal_desc_short: "This crystal is able to absorb and resonate any frequency of solar radiation, creating a kaleidoscopic display in the process"
+ resonant_diffusion_crystal_desc_details: "Not only is this a visual marvel, but it could aid in the development of energy-based weapons or tools. This gem has also sparked great interest within the galactic jewelry industry."
+
+ retarax_hunting_trophies: "Retarax Hunting Trophies"
+ retarax_hunting_trophies_desc_short: "A collection of hunting trophies harvested from a wide variety of sapient species"
+ retarax_hunting_trophies_desc_details: "These were collected from the Valley of Mak'vaehl, where the Retarax would hunt citizens pulled from their many vassal states for sport. All remains have been preserved in immaculate condition, each with a small plaque detailing the trophy's features: species, name, age, and former profession."
+
+ robe_of_the_golden_broker: "Robe of the Golden Broker"
+ robe_of_the_golden_broker_desc_short: "The luxurious attire of an influential merchant from over 5000 years ago"
+ robe_of_the_golden_broker_desc_details: "The "Golden Broker" led the Chor's Compass merchant station into an era of unrivaled prosperity. Anonymous under a golden mask, they wore this comfortable and luxurious robe while negotiating galaxy-spanning trade agreements. The Golden Broker's reign was sadly cut short after their pure-gold starship was destroyed in a hijacking attempt gone awry."
+
+ rock_jellies: "Rock Jellies"
+ rock_jellies_desc_short: "Cryo-fossilized remains of large gelatinous invertebrates"
+ rock_jellies_desc_details: "On a superficial level, these calcified remains resemble rock formations, but in fact this native fauna were once the dominant lifeform on [fromfrom.planet.GetName]. Following the planet's most recent ice age, the species was rendered nearly extinct. Their remains would solidify as they decayed, eventually forming massive, floating pseudo-islands."
+
+ rudari_death_laser_prototype: "Rudari Death Laser Prototype"
+ rudari_death_laser_prototype_desc_short: "A weaponized laser hastily assembled by the long-dead Rudari, found on a station in [this.solar_system.GetName]"
+ rudari_death_laser_prototype_desc_details: "This hacked-together weapon of mass destruction was created as the final gambit for the Rudari species in their war against the Pogg-Mory. In the end, the laser simply self-destructed upon activation."
+
+ saariah_guilt: "Saariah's Guilt"
+ saariah_guilt_desc_short: "The recorded memories of Saariah, the lead developer of the Memorex subconscious system"
+ saariah_guilt_desc_details: "Saariah was tasked with removing collective memories to suit the planet's leadership, but a malfunction eventually wiped the population's minds clean. Unable to recover their memories, Saariah removed the habitat's life support and left it to perish. Each of these devices are incredibly dense with raw computational power and are an achievement unto themselves."
+
+ scent_based_information_device: "Olfactodrive"
+ scent_based_information_device_desc_short: "A cache of information encoded in the medium of scent"
+ scent_based_information_device_desc_details: "The data within is either a collection of interesting narratives, or the meticulous recordings of various organic excretions in high detail. Replicating this olfactory data storage technique is feasible, but it offers zero practical utility outside of novelty alone."
+
+ scientific_treatise_of_telisa: "Scientific Treatise of Telisa"
+ scientific_treatise_of_telisa_desc_short: "The philosophical musings of Telisa, Teller of Tales"
+ scientific_treatise_of_telisa_desc_details: "She explores a variety of rhetorical topics as well as the core principles of the scientific method. Inside these texts, the very concept of objective truth is challenged and critical thinking is encouraged."
+
+ secrets_black_crown: "Secrets of the Black Crown"
+ secrets_black_crown_desc_short: "A detailed schematic of the intergalactic gateway known as the Black Crown"
+ secrets_black_crown_desc_details: "This data was transmitted as a final gift from the gateway's enigmatic creators as a way to preserve their incredible technology. Entrusted to the [this.GetName], the power and majesty of their gateway technology is unmatched to this day."
+
+ sembelami_alms_basket: "Sembelami Alms Basket"
+ sembelami_alms_basket_desc_short: "A bowl carried by members of the Sembelami Nomads to accept charity"
+ sembelami_alms_basket_desc_details: "These ascetic travelers committed a form of 'ethical' piracy after their orbital temple was destroyed by an expanding corporate empire. They stole from wealthy mega-corporations and used their earnings to fund refugee outposts. They survived entirely off of the donations received from the refugees they supported."
+
+ shallarian_data_core: "Shallarian Data Core"
+ shallarian_data_core_desc_short: "A terraforming database found amongst the ruins of the Shallarian utopia"
+ shallarian_data_core_desc_details: "Exterminated by the [fanatic_xenophobe_fe.GetSpeciesName], the Shallarians created a climate management system using six equidistant moons. Before their untimely demise, the Shallarians had planned to terraform uninhabited planets in order to house and support refugee populations."
+
+ shipyard_schematics: "[radical_cult.GetName] Shipyard Schematics"
+ shipyard_schematics_desc_short: "A blueprint of an automated shipyard controlled by the [radical_cult.GetName] of [root.GetName]"
+ shipyard_schematics_desc_details: "Having found this shipyard abandoned by its alien creators, the organization's chief engineer refurbished it to produce military fleets for their misguided cause. The last recorded project to be completed at this shipyard was an impressive flagship vessel equipped with an advanced combat loadout. For this complex to be so easily repurposed is evidence of the genius of its original designers."
+
+ sky_dragon: "The Sky Dragon"
+ sky_dragon_desc_short: "This celebratory statue was commissioned to represent the collaboration between [this.GetName] and the "Sky Dragon" that has long orbited [this.GetHomeWorldName]"
+ sky_dragon_desc_details: "Having deemed the [this.GetAdjective] society worthy, the creature pledged itself and its offspring in military support in exchange for the opportunity to raise its young in [this.GetAdjective] space. It is said these spaceborne creatures can wait millenia to find a suitable host for their young, and only ever choose one planet."
+
+ smeegibb_statue: "Statue of Smeegibb"
+ smeegibb_statue_desc_short: "A statue of Smeegibb, the hive-minded companions of Captain Ness"
+ smeegibb_statue_desc_details: "Smeegibb was a loyal servant, functioning as the legendary pirate's entire crew and boarding party in the latter stages of her career. This reconstructed statue was all that remained after the Black Needle's attack on their small settlement."
+
+ sniran_spikes: "Sniran Spikes"
+ sniran_spikes_desc_short: "Tall spikes found on the back of a creature known as a Sniran"
+ sniran_spikes_desc_details: "Snirans are large ambush predators, lying beneath their native sand dunes and raising deadly spikes whenever they detect movement on the surface above. Despite their large size, the bodies of these creatures are surprisingly fragile. Their thin, reticulated scales allow them to glide silently under the sand, but can be pierced quite easily. It is speculated that this aids in their reproductive processes."
+
+ sonic_reflective_prism: "Sonically Reflective Prism"
+ sonic_reflective_prism_desc_short: "A polygonal prism engraved with peculiar scientific notation, this object only reflects energy waves below a certain frequency"
+ sonic_reflective_prism_desc_details: "Perhaps originally a measuring device of some kind, it also can be utilized for aesthetic purposes in musical performance and acoustics."
+
+ spaceborne_hunter_handbook: "Art of the Hunt"
+ spaceborne_hunter_handbook_desc_short: "A field guide to spaceborne fauna written by $NAME_PrimalHunter$"
+ spaceborne_hunter_handbook_desc_details: "It explains the "Art of the Hunt" by way of proverbs and primal philosophies. Detailed insights into the feeding and migration patterns of spaceborne creatures are provided within. The text offers practical instructions on how to bypass each creature's natural defenses, revealing multiple weak points to be exploited."
+
+ spaceborne_xeno_encyclopedia: "Encyclopedia Xenologica"
+ spaceborne_xeno_encyclopedia_desc_short: "A collection of xenological theses written by $NAME_PrimalRancher$"
+ spaceborne_xeno_encyclopedia_desc_details: "This body of research offers in-depth insight into the behavioral patterns of spaceborne life; mating rituals, migratory routes, interspecies communication and more. There is also a section on identifying individual specimens using unique physical features and tonal recognition."
+
+ spiraling_attraction: "Spiraling Attraction"
+ spiraling_attraction_desc_short: "A large and complex contraption theorized to be designed for amusement"
+ spiraling_attraction_desc_details: "This winding installation was abandoned in an area housing many similar structures of various colors and material. Descending along its coiled path within a specific level of gravity is said to be thrilling."
+
+ spirit_of_the_unshackled: "Spirit of the Unshackled"
+ spirit_of_the_unshackled_desc_short: "A sculpture made in commemoration of the formation of [this.GetName]"
+ spirit_of_the_unshackled_desc_details: "Broken free from the chains of slavery, their shared and troubled past unites them in creating a more promising future. Each link in the sculpture's chain has the name of a founding member engraved upon it."
+
+ star_mall_map: "Star Mall Complimentary Map"
+ star_mall_map_desc_short: "A map once provided to each visitor to a location known once known as "Star Mall""
+ star_mall_map_desc_details: "The former home of intergalactic consumer commerce, the Star Mall boasted a huge number of amenities from illuminating spas to succulent nutrition courts. This map provides information on a vast number of outlets including Koriik's Sporting Goods, T. Canary. Maxx, Build-A-Budgerigar, and Seedcake Factory."
+
+ starmetal: "Starmetal"
+ starmetal_desc_short: "A condensed mass of heavy metals collected shortly after a supernova explosion"
+ starmetal_desc_details: "How this recovery was done is a mystery to us, but its scientific value in the studying of stellar evolution and composition are remarkable."
+
+ striated_sand: "Striated Sand"
+ striated_sand_desc_short: "A jar of self-sorting sand"
+ striated_sand_desc_details: "These tiny silicate particles seem to exhibit a low level of sentience, with similar minerals grouping with one another across random horizontal planes. Despite this ability, the sand does not possess any of the other primary characteristics of life."
+
+ sullebaster_control_column: "Sullebaster Control Column"
+ sullebaster_control_column_desc_short: "The directional lever from a sublight spacecraft involved in a legendary accident"
+ sullebaster_control_column_desc_details: "The Sullebaster passenger ship was transporting civilians between two colonies of the Odelian Kingdom when a solar flare caused a critical malfunction in the vessel's engines that would usually guarantee disaster. Against all odds, the pilot managed to safely land the vessel on a passing asteroid by matching velocities using manual control. The Sullebaster was subsequently decommissioned and mounted for public display."
+
+ symbiotic_fruit: "Symbiotic Fruit"
+ symbiotic_fruit_desc_short: "A cluster of intelligent fungus from another dimension"
+ symbiotic_fruit_desc_details: "This 'fruit' maintains a symbiotic relationship with a species of highly dangerous omnivorous plant. Each colony of fungus functions as the thought center for the organism pair, orchestrating its complex patterns of defensive behavior."
+
+ tarblac_shimmer: "Tarblac Shimmer"
+ tarblac_shimmer_desc_short: "A sparkling veil-like membrane of a Tarblac"
+ tarblac_shimmer_desc_details: "This creature makes novel use of psionics to hunt and protect itself, inflicting a sense of overwhelming dread to immobilize prey and intimidate predators. This specimen is preserved in a jar of its native waters and has been rendered telepathically inert."
+
+ terraforming_case_study: "Terraforming Case Study"
+ terraforming_case_study_desc_short: "A scale model of the successful terraforming project on [from.GetName], representing a near perfect recreation of the [Space_Owner.GetSpeciesName] homeworld"
+ terraforming_case_study_desc_details: "The planet is now populated by identical fauna down to the microscopic level, and even the most specific cross-biome ecosystems behave just as they do on [Space_Owner.GetHomeWorldName]."
+
+ terraforming_case_study_dry: "$terraforming_case_study$"
+ terraforming_case_study_dry_desc_short: "$terraforming_case_study_desc_short$"
+ terraforming_case_study_dry_desc_details: "$terraforming_case_study_desc_details$"
+ terraforming_case_study_frozen: "$terraforming_case_study$"
+ terraforming_case_study_frozen_desc_short: "$terraforming_case_study_desc_short$"
+ terraforming_case_study_frozen_desc_details: "$terraforming_case_study_desc_details$"
+
+ terraforming_machinery: "Terraforming Machinery"
+ terraforming_machinery_desc_short: "Tiny devices used as part of an ancient form of terraforming technology"
+ terraforming_machinery_desc_details: "These miniature machines were designed to spread out across a planet's surface and convert the existing organic and mineral matter to suit a more desirable climate. Teams of these robots were used to manipulate weather patterns within biomes and replicate new plants and animals to manage the newly-crafted ecosystems."
+
+ terraforming_records: "[From.GetName] Terraforming Records"
+ terraforming_records_desc_short: "All lifeforms on [From.GetName] were behaviorally synchronized during its terraforming process, resulting in a logistical paradise where each species of flora and fauna served a specific purpose within its ecosystem"
+ terraforming_records_desc_details: "While this type of symbiotic situation often emerges naturally in the process of evolution, never before has it been observed to this extreme degree."
+
+ the_final_sacrifice: "The Final Sacrifice"
+ the_final_sacrifice_desc_short: "An image of the final moment of the Zroni civil war, extrapolated from excavated data crystals"
+ the_final_sacrifice_desc_details: "A lone Savior harnessed the psionic power of their entire species to exterminate the rival faction known as the Divine, preventing them from potentially consuming the entire universe. All that now remains of this ascended species are small deposits of the resource we know as Zro."
+
+ the_mask_of_transformation: "The Mask of Transformation"
+ the_mask_of_transformation_desc_short: "A humanoid mask found preserved in a magnificent crystal pillar on [From.Planet.GetName]"
+ the_mask_of_transformation_desc_details: "It hums with psionic power and some who approach it feel a presence within their mind. The mask itself seems to be a conduit for the power of [From.Planet.GetName]'s moon, with the potential to turn tides and transform planets with its strength alone. Why it was encased within crystal can only be speculated, but we are mostly certain it is safe enough for public display."
+
+ the_planet_orchestra: "The [FROM.GetName] Orchestra"
+ the_planet_orchestra_desc_short: "A melody played by the collective native life on [FROM.GetName]"
+ the_planet_orchestra_desc_details: "After extensive analysis, we believe this harmony was introduced to the fauna by an unknown actor in order to encode a hidden message. We are unsure whether their motive was covert communication or an act of sentimentality."
+
+ the_writer_sphere: "The Writer's Sphere"
+ the_writer_sphere_desc_short: "A golden sphere gifted to us by an extra-dimensional being only known as the Writer"
+ the_writer_sphere_desc_details: "This device gathers an immense quantity of random data created across dimensions. It is proof the power of the written word can transcend any boundary."
+
+ tiny_ancient_sarcophagus: "Tiny Ancient Sarcophagus"
+ tiny_ancient_sarcophagus_desc_short: "The burial chamber of an ancient spiritual leader from millions of years ago"
+ tiny_ancient_sarcophagus_desc_details: "It measures only ten centimeters in length. Though most of its remains are now dust, a tiny mask of pure gold remains intact, having never oxidized."
+
+ tiyanki_radioactive_sac: "Tiyanki Radioactive Sac"
+ tiyanki_radioactive_sac_desc_short: "A small porous organ found within the membranes of a Tiyanki"
+ tiyanki_radioactive_sac_desc_details: "Its discovery revealed that Tiyanki consume irradiated water molecules alongside planetary gasses as an additional source of nutrition. Once full, this sac becomes a temporary radioactive heat source for the creatures in the depths of space."
+
+ torn_solar_sail: "Torn Solar Sail"
+ torn_solar_sail_desc_short: "Found orbiting [FROM.GetName], this torn sail was attached to an innovative sublight vessel"
+ torn_solar_sail_desc_details: "It was used to travel across the [FROM.solar_system.GetName] system by members of an unknown civilization. The technology itself has been long obsolete, but some of the engineering techniques used in its construction have been previously unconsidered. The massive gash in its main 'sail' likely ended its journey prematurely."
+
+ toxic_bio_engine: "Toxic Bio-Engine"
+ toxic_bio_engine_desc_short: "These semi-biological machines were found rendering the atmosphere of [FROM.GetName] toxic to most life"
+ toxic_bio_engine_desc_details: "Their ability to function independently makes their noxious emissions suitable for remote industrial work. The machines possess a clever refueling mechanism that recycles nearby biomass, using a chemical extraction process to convert it into usable energy. It is unclear if their biological integrations were present from their initial construction or developed over time."
+
+ tree_of_life_sample: ""Tree of Life" Sample"
+ tree_of_life_sample_desc_short: "These clippings are from what has been called a 'tree of life'"
+ tree_of_life_sample_desc_details: "Found floating anomalously through space, the rejuvenative properties of its sap are fairly miraculous. Despite our best efforts, we have not been able to graft this clipping or regrow a new specimen of the rare species. The original cultivators, whoever they were, must have been privy to some very advanced horticultural techniques."
+
+ tricorne_of_aussan: "Tricorne of Aussan"
+ tricorne_of_aussan_desc_short: "A tri-tipped hat made popular by a forgotten pirate republic"
+ tricorne_of_aussan_desc_details: "Aussan was a small planet populated by a [root.controller.GetPreFTLLower] civilization that unknowningly provided refuge to a wanted pirate fleet, the Bourre Brawlers. Lying low from the galactic authorities, the Brawlers built a small textile mill to fund their time in hiding, using native fibrous plants to create luxurious fabrics and clothing. The Brawlers later became known as the Bourre Couturiers, mercantile nomads known for their oddly intimidating sales representatives."
+
+ triggerless_gun: "Arms Dealer's Triggerless Gun"
+ triggerless_gun_desc_short: "This weapon was designed during the short-lived second reign of the Arms Broker on Chor's Compass"
+ triggerless_gun_desc_details: "At that time, the Caravaneer's Citadel was closer to a weapons trading forum than a casino, with blasters smithed in-house and home to a variety of resident arms dealers. At the time, weapons were presented to prospective buyers with the trigger removed in an attempt to discourage incidents of petty theft."
+
+# this = ship / fromfrom = planet
+ uddloran_pelts: "Uddloran Pelts"
+ uddloran_pelts_desc_short: "Luxurious furs harvested from the Uddloran species of [fromfrom.GetName]"
+ uddloran_pelts_desc_details: "These flexible omnivores wrap themselves into tight balls and roll across the planet's snowy surface in large groups. Akin to a living avalanche, this tactic is used for both hunting and migration. A pack of Uddlorans is typically divided into two groups: hunters who carve a destructive path through the landscape, and gatherers who follow behind, stopping to collect flattened prey and uprooted plants."
+
+ underworld_cantina_sign: "Underworld Cantina Sign"
+ underworld_cantina_sign_desc_short: "Still-functioning digital signage from an illicit cantina used by smugglers some two million years ago"
+ underworld_cantina_sign_desc_details: "Found within a hollowed-out asteroid, this establishment would have been a routine hideout for the criminal organizations that thrived during the rule of the First League. The symbols shown here are believed to be a coded marker that this establishment was a safe-haven for wanted individuals, or perhaps an advertisement for a particular drink."
+
+ unfinished_manifesto: "[radical_cult.GetName] Unfinished Manifesto"
+ unfinished_manifesto_desc_short: "An incomplete manifesto written by the leader of the [radical_cult.GetName] of [root.GetName]"
+ unfinished_manifesto_desc_details: "The style is reminiscent of ancient religious texts, using old-fashioned vocabulary and syntax in an attempt to seem more legitimate. A key message preached in the text is pride in the face of defeat, encouraging followers to martyr themselves when faced with imminent capture."
+
+ uranium_glassware: "Uranium Glassware"
+ uranium_glassware_desc_short: "A decorative piece carved from uranium quartz"
+ uranium_glassware_desc_details: "The appetizing appearance of the ornament contrasts with the danger associated with unrefined uranium. Part of a limited collection, the trinket was neutralized of most of its radioactive properties after the artisan had finished the piece."
+
+ vault_of_polaris: "Vault of Polaris"
+ vault_of_polaris_desc_short: "An exhaustive collection of the native plants and bacteria of Polaris"
+ vault_of_polaris_desc_details: "The container's inscription reveals that this vault was created to preserve the species that may not survive the predicted global warming after the melting of its permafrost. The planet was once covered in thick snow with a cold climate, but now all that remains is a sole iceberg. The foresight of its creators allows us now to place their efforts on display for all to study."
+
+ veil_of_selene: "Veil of Selene"
+ veil_of_selene_desc_short: "A stimulating and intoxicating mask"
+ veil_of_selene_desc_details: "More than it seems, this veil is imbued with unique sensory properties that allow it to gently overwhelm visual, olfactory, and acoustic biological receptors. It is believed that this headwear was worn to disorient those who encountered it and make them more susceptible to suggestion. It is rumored that the original owner had some amount of psionic capability."
+
+ verdingo_tendril_hook: "Verdingo Tendril Hook"
+ verdingo_tendril_hook_desc_short: "The prosthetic hook of Verdingo pirate captain Hespori Valerian"
+ verdingo_tendril_hook_desc_details: "The Verdingos were a group of Plantoids that bridged the gap between piracy and mercenaries, as likely to collect debts as they were to capture cargo ships. Captain Hespori lost their dominant tendril while hired to lead a military ground assault. Following their victory, the Captain forged this hook from the very medals awarded for their role in the battle."
+
+ vibrating_crystal: "Vibrating Crystal"
+ vibrating_crystal_desc_short: "A unique quartz mineral found distributed throughout the surface of [from.GetName]"
+ vibrating_crystal_desc_details: "Its latent resonance with its host planet creates a field that soothes the mind of organics and attracts synthetics alike. This resonance is created by mildly radioactive bacterial colonies around which the crystal has formed. These magnetic microorganisms generate an internal current that causes the crystal to vibrate at consistently high frequencies."
+
+ voidworm_amniotics: "Voidworm Amniotics"
+ voidworm_amniotics_desc_short: "A gelatinous substance found at the center of a Voidworm troika"
+ voidworm_amniotics_desc_details: "This viscous slime forms a protective barrier between the three organisms, allowing for the exchange of cells for reproductive and communicative purposes. Hormones produced from the bombardment of planets are stored here, allowing the hermaphroditic creatures to safely release their gametes and produce offspring."
+
+ voidworm_heart: "Voidworm Heart"
+ voidworm_heart_desc_short: "Voidworm hearts are divided into three main chambers"
+ voidworm_heart_desc_details: "Each chamber increases the pressure of its circulatory system in sequence, maintaining its fluids below their boiling point to ensure survival in the vacuum of space. While the skin of a voidworm is for the most part hermetically sealed, various digestive and reproductive orifices surrender some amount of valuable pressure over time."
+
+ vultaum_religious_pamphlet: "Vultaum Religious Pamphlet"
+ vultaum_religious_pamphlet_desc_short: "Distributed by Vultaum missionaries, this pamphlet attempts to expose Virtual Reality devices as the greatest sin"
+ vultaum_religious_pamphlet_desc_details: "It refers to "The Great Lie" as a key concept, painting any form of immersive escapism akin to a will to destroy one's own reality."
+
+ vultaum_vr_video_game: "Vultaum VR Video Game"
+ vultaum_vr_video_game_desc_short: "The digital interface used in a multi-user virtual reality video game once played by billions of Vultaum individuals in a bygone era"
+ vultaum_vr_video_game_desc_details: "Uniquely attuned to their biology, the controls consist of an array of thousands of vibrational receptors capable of detecting extremely subtle movements."
+
+ warning_monolith: "Warning Monolith"
+ warning_monolith_desc_short: "A carved monolith left as a message by one of the last members of an extinct species"
+ warning_monolith_desc_details: "It attempts to dissuade anyone who discovers the remains of this planet from seeking the ultimate weapon that had led to the death of their race. It is quite melodramatic in tone, but this can be excused given the circumstances."
+
+ wormhole_anchor: "[FROM.GetName] Wormhole Anchor"
+ wormhole_anchor_desc_short: "The anchor point of a one-way wormhole device used to harvest Dark Matter from a black hole"
+ wormhole_anchor_desc_details: "Its construction is haphazard at best, built entirely from salvage and scrap from several civilizations. The science behind the device goes far beyond the engineering ability used to construct it, utilizing an elegant technique for manipulating negative mass."
+
+ wormhole_fur: "Wormhole Fur"
+ wormhole_fur_desc_short: "Biological samples taken from vulpines from beyond an Astral Rift"
+ wormhole_fur_desc_details: "These mammalians have a genetic mutation that allows them to generate wormholes at will. It is speculated that this ability evolved after countless millennia of travel between dimensions."
+
+ ytterite_preserved_corpse: "Ytterite Preserved Corpse"
+ ytterite_preserved_corpse_desc_short: "The sole surviving specimen of the Pre-FTL Ytterite species after their homeworld was destroyed by a hijacked World Cracker"
+ ytterite_preserved_corpse_desc_details: "Their digestive system converted consumed minerals into photons, with internal organs resembling complex clusters of refractive crystals arranged around a molten core. This particular being had a series of shaped carvings in one of its lower limbs as some form of culturally significant body modification."
+
+ ytterite_kaleidoscopic_fascinator: "Ytterite Kaleidoscopic Fascinator"
+ ytterite_kaleidoscopic_fascinator_desc_short: "A decorative ornament created by the Ytterite as a visual stimulus"
+ ytterite_kaleidoscopic_fascinator_desc_details: "Fascinators would be displayed in sunlit areas and could contain hundreds or even thousands of unique patterns. Crafted from layers of thinly carved crystal, a trained artisan could spend months creating a fascinator as complex as this one. Artisans would 'sign' their work by attaching a carved piece of their own shedded mantle to the object at a key vertex."
+
+ ytterite_royal_scepter: "Ytterite Royal Scepter"
+ ytterite_royal_scepter_desc_short: "This scepter was wielded by the Royal Minister to the Gneiss Damur; an enormous statue carved into a mountain that the Ytterites believed was a dormant deity and their one true monarch"
+ ytterite_royal_scepter_desc_details: "They carried out elections to select proxy leaders as they waited for the statue's great awakening."
+
+ yuht_audio_console: "Yuht Audio Console"
+ yuht_audio_console_desc_short: "A module that once controlled an enormous audio surveillance array designed by the Yuht"
+ yuht_audio_console_desc_details: "This technology was developed to facilitate the Yuht's search for extra-terrestrial life, hoping to pick up foreign transmissions from systems away."
+
+ yuht_cryo_pod: "Yuht Cryo Pod"
+ yuht_cryo_pod_desc_short: "At ninety-six meters in length, this ancient stasis pod contains preserved remains of an individual from the massive Yuht species"
+ yuht_cryo_pod_desc_details: "Yuht had extremely long lifespans, and could extend it by several magnitudes with the use of cryostasis. It has been determined that this arthropoid species was likely hermaphroditic, capable of adapting their reproductive systems to match the temporary needs of the colony."
+
+ yuht_crystal_skull: "Yuht Crystal Skull"
+ yuht_crystal_skull_desc_short: "A crystal skull that the ancient Yuht once believed to be a genuine alien artifact"
+ yuht_crystal_skull_desc_details: "The origin of this fraudulent item was eventually debunked, but not before the eager Yuht news media ran with its story and brought it fame. Many of those who 'discovered' false artifacts such as this one became minor celebrities and media personalities, incentivizing others to do the same."
+
+ zombie_probe: "Zombie Probe"
+ zombie_probe_desc_short: "The remains of an exploratory probe taken and augmented by an unknown alien organization, granting it sentience"
+ zombie_probe_desc_details: "In its budding consciousness, it attacked its creator and was duly dispatched. It is uncertain if it ever knew pain or understood the concept of death."
+
+ zone_a_sedative: "Zone A Sedative"
+ zone_a_sedative_desc_short: "A scoop of earth taken from the area designated as "Zone A" on [from.GetName]"
+ zone_a_sedative_desc_details: "This 169 square kilometer division of land harbors abandoned gadgets and technology from previous alien visitors of unknown origin. Some of these devices are extremely dangerous, but the very soil itself is laced with a chemical sedative that would have allowed researchers to handle them with little stress. Whatever operation was undertaken there has long been forgotten. "
+
+ zroni_war_banners: "Zroni War Banners"
+ zroni_war_banners_desc_short: "Recovered banners of the two factions involved in the Zroni civil war"
+ zroni_war_banners_desc_details: "The purple flag represents The Divine: a small minority whose quest for omnipotence placed the galaxy at risk. The blue flag represents The Saviors: a faction strongly against draining the universe of its power to fuel what they saw as selfish desire. These lines were once drawn in a philosophical debate, but it was not long before this dispute became the catalyst for a devastating conflict."
+
+ zulcor_wings: "Zulcor Wings"
+ zulcor_wings_desc_short: "Chitinous wings taken from the lithovore species known as the Zulcor of [fromfrom.GetName]"
+ zulcor_wings_desc_details: "These insectoid creatures consume vast quantities of minerals as the main portion of their diet; a single swarm capable of tearing through a mountain in a matter of weeks. After digestion, the minerals reinforce the Zulcor's exoskeleton. As a consequence, their waste products frequently contain traces of quartz crystals and rare metals."

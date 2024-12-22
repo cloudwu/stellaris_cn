@@ -316,6 +316,8 @@
  IS_NOT_DAMAGED:0 "Planet is NOT damaged"
  HAS_HIT_POINTS:1 "Number of hull points are $COMPARATOR$ $NUM|Y$"
  HAS_NOT_HIT_POINTS:1 "Number of hull points are NOT $COMPARATOR$ $NUM|Y$"
+ HAS_SHIELD_HIT_POINTS: "Number of shield hit points are $COMPARATOR$ $NUM|Y$"
+ HAS_NOT_SHIELD_HIT_POINTS: "Number of shield hit points are NOT $COMPARATOR$ $NUM|Y$"
  IS_PLANET_SURVEYED:1 "Planet has been surveyed by $COUNTRY$"
  IS_PLANET_NOT_SURVEYED:1 "Planet has NOT been surveyed by $COUNTRY$"
  CAN_COLONIZE_TRIGGER:0 "Can be colonized by $COUNTRY$"
@@ -1080,6 +1082,9 @@
  HAS_NOT_CLOAKING_DETECTION_VALUE_TRIGGER:0 "Cloaking Detection value is NOT $COMPARE$ $VALUE|Y$"
  HAS_CLOAKING_DETECTION_VALUE_TRIGGER:0 "Cloaking Detection value is $COMPARE$ $VALUE|Y$"
 
+HAS_NOT_NUM_ASTEROID_BELTS: "Number of asteroid belt $VAL0|2Y$ is NOT $COMPARE$ $VAL1|2Y$"
+HAS_NUM_ASTEROID_BELTS:  "Number of asteroid belt $VAL0|2Y$ is $COMPARE$ $VAL1|2Y$"
+
  ####################################
  # Effects
  ####################################
@@ -1181,6 +1186,7 @@
  REDUCE_HITPOINTS:1 "Reduces the hull points of $SHIP|Y$"
  RESTORE_HITPOINTS:1 "Restores $SHIP|Y$ to its full hull points."
  DO_NOT_RESTORE_HITPOINTS:1 "Does not restore $SHIP|Y$ to its full hull points."
+ REDUCE_SHIELD: "Reduces the shield hit points of $SHIP|Y$"
  SET_SURVEYED:0 "Survey data collected.\n"
  SET_UNSURVEYED:0 "Survey data lost.\n"
  SET_VISITED_EFFECT:0 "Discovers the $SYSTEM|Y$ system.\n"
@@ -2186,5 +2192,7 @@
  DEACTIVATE_FOG_MACHINE_NO: "Fog macnine of country '$COUNTRY|Y$' has not been deactivated"
  FOG_MACHINE_AUTO_TRACKING_ON: "Allow the fog machine of country '$COUNTRY|Y$' to automatically track ownership of galactic objects"
  FOG_MACHINE_AUTO_TRACKING_OFF: "Disallow the fog machine of country '$COUNTRY|Y$' to automatically track ownership of galactic objects"
- TRIGGER_IS_ON_SLAVE_MARKET: "Is being sold on the slave market" # CD TODO
- TRIGGER_IS_NOT_ON_SLAVE_MARKET: "Is NOT being sold on the slave market" # CD TODO
+ TRIGGER_IS_ON_SLAVE_MARKET: "Is being sold on the slave market"
+ TRIGGER_IS_NOT_ON_SLAVE_MARKET: "Is NOT being sold on the slave market"
+ IS_INFERTILE_TRIGGER: "Is Infertile"
+ IS_NOT_INFERTILE_TRIGGER: "Is NOT Infertile"

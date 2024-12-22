@@ -3,6 +3,10 @@
  # Plantoids Species Pack
  ########################
 
+ PLANTOID_TITLE: "Plantoids Species Pack" # Do not translate
+ DLC_PLANTOID_RECOMMENDATION_DESC:1 "§SPlantoid Species Pack§! is a DLC containing portraits of sentient plants, putting down roots across the galaxy."
+ DLC_PLANTOID_RECOMMENDATION_PLANTS_REC:1 "We're recommending §SPlantoid Species Pack§! as this empire suits its botanical theme."
+
  ### Fruitful Partnership Origin
  ## By Giada Zavarise
 
@@ -45,20 +49,20 @@
  seeded_planet_3_modifier_tooltip: "$seeded_planet_1_modifier_tooltip$"
 
  MESSAGE_FRUITFUL_SEED_PLANTED_TITLE: "Seed Pod Planted"
- MESSAGE_FRUITFUL_SEED_PLANTED_OWNER: "Space fauna have brought our Seed Pods to $PLANET|Y$, in the $SYSTEM|Y$ system, where they generated a new forest."
- MESSAGE_FRUITFUL_SEED_PLANTED_NO_OWNER: "Space fauna have brought our Seed Pods to $PLANET|Y$, in the $SYSTEM|Y$ system. They will lie dormant until we're ready to open them."
+ MESSAGE_FRUITFUL_SEED_PLANTED_OWNER: "Space Fauna have brought our Seed Pods to $PLANET|Y$, in the $SYSTEM|Y$ system, where they generated a new forest."
+ MESSAGE_FRUITFUL_SEED_PLANTED_NO_OWNER: "Space Fauna have brought our Seed Pods to $PLANET|Y$, in the $SYSTEM|Y$ system. They will lie dormant until we're ready to open them."
 
  MESSAGE_FRUITFUL_SEED_LOST_TITLE: "Seed Pod Lost"
  MESSAGE_FRUITFUL_SEED_LOST: "We lost contact with our Seed Pods on $PLANET|Y$. It's likely they got destroyed."
 
  MESSAGE_FRUITFUL_SEED_CRITTER_TITLE: "Seeds Absorbed"
- MESSAGE_FRUITFUL_SEED_CRITTER: "Space fauna visiting $SYSTEM|Y$ ate the fruits of our garden, and are now carrying our Seed Pods across the stars."
+ MESSAGE_FRUITFUL_SEED_CRITTER: "Space Fauna visiting $SYSTEM|Y$ ate the fruits of our garden, and are now carrying our Seed Pods across the stars."
 
  OPEN_SEED_PODS_PROJECT: "Open Seed Pods on [this.GetName]"
- OPEN_SEED_PODS_PROJECT_DESC: "Space fauna have brought our dormant Seed Pods to §H[this.GetName]§!. By aiming a concentrated energy beam at the planet, we can stimulate their growth, turning an uninhabited rock into a verdant new colony."
+ OPEN_SEED_PODS_PROJECT_DESC: "Space Fauna have brought our dormant Seed Pods to §H[this.GetName]§!. By aiming a concentrated energy beam at the planet, we can stimulate their growth, turning an uninhabited rock into a verdant new colony."
 
  WEEDS_ARMY_PROJECT: "Grow Armies on [this.GetName]"
- WEEDS_ARMY_PROJECT_DESC: "Space fauna have brought our Seed Pods to §H[this.GetName]§! where they were cultivated and cared for by the §H[this.owner.GetName]§!. By aiming a concentrated energy beam towards the planet, we can stimulate growth, turning the forest into §HXenofloran Armies§!. The higher the level of the §HInvasive Xenoflora§! on the planet, the more armies will be spawned."
+ WEEDS_ARMY_PROJECT_DESC: "Space Fauna have brought our Seed Pods to §H[this.GetName]§! where they were cultivated and cared for by the §H[this.owner.GetName]§!. By aiming a concentrated energy beam towards the planet, we can stimulate growth, turning the forest into §HXenofloran Armies§!. The higher the level of the §HInvasive Xenoflora§! on the planet, the more armies will be spawned."
 
  FRUITFUL_SEED_POD: "Seed Pod"
 
@@ -70,7 +74,7 @@
  origin.7100.tooltip: "When entering a new system, Spaceborne Fauna will have a chance of leaving the §HSeed Pod§! on an habitable planet. Be patient."
 
  origin.7304.name: "Coordinated Dispersal"
- origin.7304.desc: "There are organic creatures in our fleet, all of whom share a taste for our starry fruit.\n\nIn the past, we always let others decide where our seeds would fall. Now we are the ones setting the course. A new feeling, but one we could get used to."
+ origin.7304.desc: "Though we can rely on wild space fauna to spread our §YSeed Pods§!, we can do so more reliably with those who have recently joined our fleets.\n\nOur §YStarseed Gardens§! will distribute seeds to creatures within our fold, whom we can then send directly to §Hcolonizable planets§! to establish a new garden."
 
  origin.7321.name: "Patience Bears Fruit"
  origin.7321.desc: "Our §YSeed Pod§! on §H[from.GetName]§! opened, and the newly born [root.GetSpeciesNamePlural] have begun to dig roots."
@@ -154,7 +158,9 @@
 
  # Study the Tyanki and get their tech
  origin.7000.name: "$story.501.name$"
- origin.7000.desc: "The §YTiyanki§! are the first alien species we encountered, and we already learned much about these docile creatures.\n\nCapable of accessing some lower dimension of subspace, these spaceborne lifeforms roam from system to system with remarkable ease. They graze on gases common to the upper layers of many gas giants, but have taken a liking to our fruits. They will rarely, if ever, attack, even when provoked.\n\nThe perfect carrier for our seeds: calm, innocuous, almost boring. Do they hide any secret?"
+ origin.7000.desc.common: "and we already learned much about these docile creatures.\n\nCapable of accessing some lower dimension of subspace, these spaceborne lifeforms roam from system to system with remarkable ease. They graze on gases common to the upper layers of many gas giants, but have taken a liking to our fruits. They will rarely, if ever, attack, even when provoked.\n\nThe perfect carrier for our seeds: calm, innocuous, almost boring. Do they hide any secret?"
+ origin.7000.desc.default: "The §YTiyanki§! are the first alien species we encountered, $origin.7000.desc.common$"
+ origin.7000.desc.beastmasters: "The §YTiyanki§! are a new alien species we encountered, $origin.7000.desc.common$"
  origin.7000.a: "Dedicate further time to their study."
  origin.7000.b: "We have other priorities."
 

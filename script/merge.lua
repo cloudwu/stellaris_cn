@@ -1,7 +1,7 @@
 local filelist = require "filelist"
 
 local root = "../"
---_VERBOSE = true
+_VERBOSE = true
 
 local list = filelist.filelist()
 
@@ -10,10 +10,10 @@ local function readlist(path, ...)
 end
 
 local data = {
-	official_cn = readlist("3.13/simp_chinese", list, { ["_english"] = "_simp_chinese" }),
-	cloudwu_cn = readlist("3.11/cn/localisation/english", list),
-	en_last = readlist("3.11/en/localisation/english", list),
-	en_current = readlist("3.13/english", list),
+	official_cn = readlist("3.14/simp_chinese", list, { ["_english"] = "_simp_chinese" }),
+	cloudwu_cn = readlist("3.13/cn/localisation/english", list),
+	en_last = readlist("3.13/en/localisation/english", list),
+	en_current = readlist("3.14/english", list),
 }
 
 local function english_only(en, s)

@@ -8,7 +8,7 @@
  i_consumer_goods: "£consumer_goods£ §I$consumer_goods$§!"
  i_unity: "£unity£ §I$unity$§!"
  i_influence: "£influence£ §I$influence$§!"
- i_research: "£physics£ £society£ £engineering£ §IResearch Points§!"
+ i_research: "£physics£ £society£ £engineering£ §IResearch Points§!"
  i_physics: "£physics£ §I$physics_research$§!"
  i_society: "£society£ §I$society_research$§!"
  i_engineering: "£engineering£ §I$engineering_research$§!"
@@ -199,11 +199,11 @@
  concept_machine_assimilator: "$civic_machine_assimilator$"
  concept_machine_assimilator_desc: "$civic_tooltip_machine_assimilator_effects$\n\n§L$civic_machine_assimilator_desc$§!"
 
-concept_pc_barren: "$pc_barren$"
-concept_pc_barren_desc: "- §RUninhabitable§!\n\n§L$pc_barren_desc$§!"
+ concept_pc_barren: "$pc_barren$"
+ concept_pc_barren_desc: "- §RUninhabitable§!\n\n§L$pc_barren_desc$§!"
 
-concept_pc_molten: "$pc_molten$"
-concept_pc_molten_desc: "- §RUninhabitable§!\n\n§L$pc_molten_desc$§!"
+ concept_pc_molten: "$pc_molten$"
+ concept_pc_molten_desc: "- §RUninhabitable§!\n\n§L$pc_molten_desc$§!"
 
 # Progenitor Hive
 
@@ -388,7 +388,7 @@ concept_pc_molten_desc: "- §RUninhabitable§!\n\n§L$pc_molten_desc$§!"
  concept_leader_trait_legendary_leader_desc: "$THIS_LEADER_TXT$:$TABBED_NEW_LINE$- $MOD_LEADER_LIFESPAN_ADD$: §G+40§!$TABBED_NEW_LINE$- Initial Leader Level: §G+3§!$TABBED_NEW_LINE$- Allows selection of unique §ILuminary Starting Traits§!\n\n$EMPIRE_EFFECTS_TXT$$TABBED_NEW_LINE$- $MOD_PLANET_STABILITY_ADD$: §G+1.5§!$TABBED_NEW_LINE$- $mod_planet_jobs_unity_produces_mult$: §G+3%§!\n\n§GThe Luminary grows in power over time.§!\n\n§LThe Unification Wars were a brutal affair. In the end, the Luminary brought peace and purpose to us all. The Luminary is the living symbol of what our species can achieve, and an inspiration to all.§!"
 
  concept_perfected_genes: "$trait_perfected_genes$"
- concept_perfected_genes_desc: "- $MOD_LEADER_LIFESPAN_ADD$: §G+25§!\n- $MOD_LEADER_SPECIES_EXP_GAIN$: §R-15%§!\n\n§L$trait_perfected_genes_desc$§!"
+ concept_perfected_genes_desc: "- $MOD_LEADER_LIFESPAN_ADD$: §G+25§!\n- $MOD_LEADER_SPECIES_EXP_GAIN$: §R-20%§!\n\n§L$trait_perfected_genes_desc$§!"
 
 ##
 
@@ -543,7 +543,7 @@ concept_pc_molten_desc: "- §RUninhabitable§!\n\n§L$pc_molten_desc$§!"
  concept_seed_bombing_desc: "\n- No damage to §IArmies§!\n- Heavy damage to §IPlanets§!\n- No damage to §IPops§!\n- Will bombard undefended planets\n- Spawns blockers on the planet\n\n§L$bombardment_seed_bombing$ carpets the planet with hyper-fertilized seed pods, causing an explosion of growth.§!"
 
  concept_tiyanki: "Tiyanki"
- concept_tiyanki_desc: "§LTiyanki are peaceful space fauna, capable of travelling along hyperlanes to find gas giants to graze upon.§!"
+ concept_tiyanki_desc: "§LTiyanki are peaceful Space Fauna, capable of travelling along hyperlanes to find gas giants to graze upon.§!"
 
  concept_seed_pod: "Seed Pod"
  concept_seed_pod_desc: "- Spread to colonizable planets by Space Fauna that grazed at Starseed Gardens \n- On Uninhabited Planets: ['concept_seeded_planet_0_modifier' ] \n- On Inhabited Planets: ['concept_seeded_planet_1_modifier' ]"
@@ -566,3 +566,65 @@ concept_pc_molten_desc: "- §RUninhabitable§!\n\n§L$pc_molten_desc$§!"
 
  concept_cloaking_1: "$tech_cloaking_1$"
  concept_cloaking_1_desc: "- §I$UNLOCKS_FEATURE$§! Active Reconnaissance $NEW_LINE$- §I$UNLOCKS_COMPONENT$§! $CLOAKING_1$\n\n§L$tech_cloaking_1_desc$§!"
+
+# Cosmic Storms
+
+ concept_storm_rider: "Storm Rider"
+ concept_storm_rider_desc: "These daredevil leaders live their lives one cosmic storm at a time! Audacious and bold, they enjoy a shorter lifespan and become less effective when put in Council Positions."
+
+
+# Primal Calling
+ concept_untamed_wilds_mod: "$untamed_wilds$"
+ concept_untamed_wilds_mod_desc: "- $MOD_PLANET_MAX_DISTRICTS_ADD$: §R$@untamed_wilds_districts|0$§!\n- $mod_planet_jobs_unity_produces_mult$: §G+15%§!\n- ['concept_ethic_based_jobs']: §G+1§!$TABBED_NEW_LINE$\t- per 20 $pops_with_icon$: §G+1§!\n\n§L$untamed_wilds_desc$§!"
+
+ concept_ethic_based_jobs: "Wrangler Jobs"
+ concept_ethic_based_jobs_desc: "These Jobs are given depending on the Empire's stance towards Space Fauna.$TABBED_NEW_LINE$- ['concept_wrangler', £job_wrangler£ $job_wrangler$]$TABBED_NEW_LINE$- ['concept_rancher', £job_rancher£ $job_rancher$]$TABBED_NEW_LINE$- ['concept_trophy_hunter', £job_trophy_hunter£ $job_trophy_hunter$]$TABBED_NEW_LINE$- ['concept_animal_handler', £job_animal_handler£ $job_animal_handler$]$TABBED_NEW_LINE$- ['concept_beastfighter', £job_beastfighter£ $job_beastfighter$]"
+
+ concept_voidlure: "Voidlure"
+ concept_voidlure_desc: "$sm_voidlure_desc$"
+
+ concept_primal_calling_stance: "Stance"
+ concept_primal_calling_stance_desc: "Based on ethics, choose ['concept_wrangler_stance'], ['concept_rancher_stance'], ['concept_animal_handler_stance'], ['concept_trophy_hunter_stance'], or equivalent Gestalt Stances ['concept_wild_consciousness_stance'], ['concept_symbiotic_partnership_stance'] or ['concept_hunter_killers_stance']."
+
+ concept_wrangler_stance: "Wrangler"
+ concept_wrangler_stance_desc: "- ['concept_wrangler',$job_wrangler_plural_with_icon$] remains the same\n- $GET_UNIQUE_EDICT$, ['edict:space_fauna_exhibition']\n - Get ['modifier:primal_calling_exhibit_modifier'] modifier"
+ concept_rancher_stance: "Rancher"
+ concept_rancher_stance_desc: "- ['concept_wrangler',$job_wrangler_plural_with_icon$] become ['concept_rancher',$job_rancher_plural_with_icon$]\n- $GET_UNIQUE_EDICT$, ['edict:beasts_burden']\n - Get ['modifier:primal_calling_exploit_modifier'] modifier"
+ concept_animal_handler_stance: "Animal Handler"
+ concept_animal_handler_stance_desc: "- ['concept_wrangler',$job_wrangler_plural_with_icon$] become ['concept_animal_handler',$job_animal_handler_plural_with_icon$]\n- ['concept_wildlife_ranch'] becomes ['concept_wildlife_sanctuary']\n- $GET_UNIQUE_EDICT$, ['edict:creature_welfare']\n - Get ['modifier:primal_calling_shelter_modifier'] modifier"
+ concept_trophy_hunter_stance: "Trophy Hunter"
+ concept_trophy_hunter_stance_desc: "- ['concept_wrangler',$job_wrangler_plural_with_icon$] become ['concept_trophy_hunter',$job_trophy_hunter_plural_with_icon$]\n- ['concept_wildlife_ranch'] becomes ['concept_hunting_grounds']\n- $GET_UNIQUE_EDICT$, ['edict:crack_the_whip']\n - Get ['modifier:primal_calling_hunt_modifier'] modifier"
+ concept_wild_consciousness_stance: "Wild Consciousness"
+ concept_wild_consciousness_stance_desc: "- ['concept_drone_wrangler',$job_drone_wrangler_plural_with_icon$] remains the same\n- $GET_UNIQUE_EDICT$, ['edict:exotic_network']\n - Get ['modifier:primal_calling_assimilate_modifier'] modifier"
+ concept_symbiotic_partnership_stance: "Symbiotic Partnership"
+ concept_symbiotic_partnership_stance_desc: "- ['concept_drone_wrangler',$job_drone_wrangler_plural_with_icon$] become ['concept_symbiosis_integrator',$job_symbiosis_integrator_plural_with_icon$]\n- ['concept_wildlife_ranch'] becomes ['concept_symbiosis_nexus']\n- $GET_UNIQUE_EDICT$, ['edict:defensive_instincts']\n - Get ['modifier:primal_calling_symbiosis_modifier'] modifier"
+ concept_hunter_killers_stance: "Hunter Killers"
+ concept_hunter_killers_stance_desc: "- ['concept_drone_wrangler',$job_drone_wrangler_plural_with_icon$] become ['concept_hunter_drone',$job_hunter_drone_plural_with_icon$]\n- ['concept_wildlife_ranch'] becomes ['concept_hunting_grounds']\n- $GET_UNIQUE_EDICT$, ['edict:biological_overdrive']\n - Get ['modifier:primal_calling_feed_modifier'] modifier"
+
+ concept_wildlife_ranch: "$wildlife_ranch$"
+ concept_wildlife_ranch_desc: "['concept_wrangler',$job_wrangler_plural_with_icon$ Jobs]: §G+2§!\n\nCan be upgraded.\n\n§L$wildlife_ranch_desc$§!"
+ concept_hunting_grounds: "$hunting_grounds$"
+ concept_hunting_grounds_desc: "['concept_trophy_hunter',$job_trophy_hunter_plural_with_icon$]: §G+2§!\n\nCan be upgraded."
+ concept_wildlife_sanctuary: "$wildlife_sanctuary$"
+ concept_wildlife_sanctuary_desc: "['concept_animal_handler',$job_animal_handler_plural_with_icon$]: §G+2§!\n\nCan be upgraded."
+ concept_symbiosis_nexus: "$symbiosis_nexus$"
+ concept_symbiosis_nexus_desc: "['concept_symbiosis_integrator',$job_symbiosis_integrator_plural_with_icon$]: §G+2§!\n\nCan be upgraded."
+
+# Treasure Hunters
+ concept_adventurous_spirit_trait: "$leader_trait_adventurous_spirit$"
+ concept_adventurous_spirit_trait_desc: "$leader_trait_adventurous_spirit_3_tt$\n\n§L$leader_trait_adventurous_spirit_desc$§!"
+
+# Galactic Curators
+ concept_megastructure_grand_archive: "$grand_archive$"
+ concept_megastructure_grand_archive_desc: "- Allows the display of acquired ['concept_specimen',Specimens].\n- Vivarium Capacity: §G+$@grand_archive_vivarium_capacity$§!\n\n§LThe Grand Archive preserves and exhibits the most valuable artifacts we have collected throughout the galaxy. Reserved within is also a dedicated Vivarium for live Space Fauna containment and observation.§!"
+
+# Beastmasters
+ concept_beastport: "$sm_beastport$"
+ concept_beastport_desc: "- Replaces ['concept_hatchery'] Starbase Building\n- Can build Civilian Ships along with cloning Space Fauna using $c_dna$."
+
+ concept_xeno_geology_holomuseum: "$xeno_geology_holomuseum$"
+ concept_xeno_geology_holomuseum_desc: "$xeno_geology_holomuseum_desc$"
+ concept_aesthetic_wonders_holomuseum: "$aesthetic_wonders_holomuseum$"
+ concept_aesthetic_wonders_holomuseum_desc: "$aesthetic_wonders_holomuseum_desc$"
+ concept_galactic_history_holomuseum: "$galactic_history_holomuseum$"
+ concept_galactic_history_holomuseum_desc: "$galactic_history_holomuseum_desc$"

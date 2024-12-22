@@ -1138,7 +1138,7 @@
  first_contact_critters.105.desc:0 "We have reached an impasse with the fleet identifying itself as the §H[This.ContactCountry.GetRealName]§!. This unusual presence ignored most of our diplomatic overtures, but we can infer that it represents a neutral entity which stands apart from galactic civilization.\n\nWe suspect that if the fleet possess any owners in the conventional sense, it would take extraordinary measures to reach them. With this in mind, we have summarized our findings for future teams of [this.owner.GetScientistPlural] to make use of - in case such an opportunity does arise." # though we use a country tag here, the value it returns could be e.g. 'Unscrupulous Salvagers' OR 'Modified Probe', i.e. not a true country
 
  further_fc_tiyanki_completed:0 "As the [This.ContactCountry.GetName] appear to belong to the same species of space whale, our first contact process with them has been declared complete too.\n"
- further_fc_amoebas_completed:0 "As the [This.ContactCountry.GetName] appear to belong to the same species of space fauna, our first contact process with them has been declared complete too.\n"
+ further_fc_amoebas_completed:1 "As the [This.ContactCountry.GetName] appear to belong to the same species of Space Fauna, our first contact process with them has been declared complete too.\n"
  further_fc_crystals_completed:0 "As the [This.ContactCountry.GetName] appear to be crystalline entities similar to the [Root.ContactCountry.GetName], our first contact process with them has been declared complete too.\n"
  further_fc_drones_completed:0 "As the [This.ContactCountry.GetName] appear to be a similar band of autonomous mining drones, our first contact process with them has been declared complete too.\n"
  further_fc_caravaneers_completed:0 "As the [This.ContactCountry.GetName] appear to be similar caravaneers, kin of the [Root.ContactCountry.GetSpeciesNamePlural], our first contact process with them has been declared complete too.\n"
@@ -1198,6 +1198,7 @@
  TRIGGER_IS_NOT_FEDERATION_FLEET:0 "Is NOT a Federation Fleet"
  SET_POLICY_COOLDOWN:0 "$POLICY_GROUP|Y$ policy is locked for $YEARS|Y$ years."
  SET_MIA_EFFECT:0 "$FLEET|Y$ goes missing in action and returns home."
+ SET_MIA_RETURN_DELAY_EFFECT: "$FLEET|Y$ comes back from MIA in $DAYS|Y$ days."
  SET_STAR_CLASS_EFFECT:0 "Star class is changed to $STAR_CLASS$."
  DESTROY_AND_SPAWN_DEBRIS_EFFECT:0 "$DESTROYED|Y$ is destroyed, spawning a debris project for $COUNTRY|Y$"
  SET_HOSTILE_EFFECT:0 "Sets the $TARGET|Y$ to §Rhostile§!"

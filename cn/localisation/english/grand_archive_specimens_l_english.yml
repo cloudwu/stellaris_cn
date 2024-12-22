@@ -1,0 +1,1062 @@
+﻿l_english:
+###########################################################################################################
+# Specimens Localization                                                                                  #
+#                                                                                                         #
+# Specimens use two description keys, depending on where/when they are displayed.                         #
+# Either SPECIMEN_DESC_SHORT or SPECIMEN_DESC_COMPLETE by called in the code depending on the situation.  #
+# - SPECIMEN_DESC_SHORT uses only the X_desc_short key                                                    #
+# - SPECIMEN_DESC_COMPLETE concatenates both X_desc_short and X_desc_details                              #
+###########################################################################################################
+
+ specimens: "标本"
+ concept_specimen: "标本"
+ concept_specimen_desc: "标本是一种在探索星系的过程中找到的文物。可以在['concept_megastructure_grand_archive']展览以提供全帝国加成。"
+ SPECIMEN_DESC_SHORT: "§L$DESCRIPTION_SHORT$$DOTDOTDOT$§!"
+ SPECIMEN_DESC_COMPLETE: "$DESCRIPTION_SHORT$. $DESCRIPTION_DETAILS$"
+ ECONOMICS_SPECIMENS_RESOURCES_STRING: "$specimens$：$STRING|Y$"
+
+ SPECIMEN_COMMON: "普通"
+ SPECIMEN_RARE: "稀有"
+ SPECIMEN_EPIC: "史诗"
+ SPECIMEN_EXCEPTIONAL: "卓绝"
+
+ MESSAGE_SPECIMEN_ACQUIRED_TITLE: "获得标本"
+ MESSAGE_SPECIMEN_ACQUIRED_DESC: "§H$SPECIMEN|S$§!已获取。"
+ OPEN_COLLECTION_VIEW: "§G点击打开收藏界面§!"
+
+ EXHIBIT_COST_TT: "展览花费：\n$COST$"
+ SELL_INFO_TT: "售卖价值"
+ EXHIBIT_CLICK_TT: "§G点击激活展览§!"
+ EXHIBIT_RIGHT_CLICK_TT: "§G右键点击售卖此标本§!"
+ EXHIBIT_ACTIVATE_CLICK_TT: "§G左键点击激活该展览§!"
+ EXHIBIT_DEACTIVATE_CLICK_TT: "§G左键点击取消该展览§!"
+ FROM_SPECIMENS: "来自标本"
+ SPECIMEN_COME_FROM: "§L来源：$ORIGIN$§!"
+ SPECIMEN_COLLECTED_DATE: "§L采集日期：$DATE$§!"
+ SPECIMEN_ORIGINAL_OWNER: "§L来源帝国：$COUNTRY$§!"
+ GALACTIC_ARCHIVISM_NOT_RESEARCHED: "$TRIGGER_FAIL$已研究['technology:tech_galactic_archivism', £society£$tech_galactic_archivism$]"
+ ALIEN_CLONING_NOT_RESEARCHED: "$TRIGGER_FAIL$已研究['technology:tech_alien_cloning', £society£$tech_alien_cloning$]"
+ GRAVITY_WELLS_NOT_RESEARCHED: "$TRIGGER_FAIL$已研究['technology:tech_gravity_wells', £society£$tech_gravity_wells$]"
+ GRAND_ARCHIVE_NOT_BUILT: "$TRIGGER_FAIL$已建成['concept_megastructure_grand_archive']\n  以§Y$constructor$§!建造一座§Y$grand_archive$§!巨型结构。"
+ VIVARIUM_NO_ROOM: "$TRIGGER_FAIL$生态园容量大于§Y0§!"
+ COLLECTION_DISABLED: "你的$grand_archive$已被摧毁。\n\n重建后方可再使用展览。"
+ STORAGE_SLOT_ACTION: "安排空间以展示这个标本。"
+
+ SPECIMEN_LIST: " - $SPECIMEN$"
+ SPECIMEN_CATEGORY_TT: "§H分类：§!$CATEGORY$"
+ SPECIMEN_RARITY_TT: "§H稀有度：§!$RARITY$"
+ CANNOT_TRADE_DUPLICATE_SPECIMEN: "$TRIGGER_FAIL$我们的贸易伙伴对这件标本不感兴趣。"
+ TRADE_SPECIMEN_CATEGORY_FULL: "$SPECIMEN$：$CATEGORY$已饱和。"
+ TRADE_SPECIMEN_NOT_ENOUGH_SPACE: "$TRIGGER_FAIL$我们的贸易伙伴表示没有足够的空间以储存贸易中的所有标本。"
+
+ SPECIMEN_OBTAINED_FROM_EVENT: "§T获得标本：§H$SPECIMEN$§!§!"
+
+ #############
+ # Specimens #
+ #############
+
+ acidic_spores: "酸性孢子"
+ acidic_spores_desc_short: "[from.GetName]的植物逐渐演化出了这种用于抵御主流食草动物的防御机制"
+ acidic_spores_desc_details: "它产生的强腐蚀性气体荼毒了星球的大片区域使其难以居住。这种气体的一种弱化版本已经被用于高效杀虫剂。"
+
+ adakkaria_propaganda_poster: "阿达卡利亚宣传海报"
+ adakkaria_propaganda_poster_desc_short: "这张海报宣告着阿达卡利亚公约过去的荣光"
+ adakkaria_propaganda_poster_desc_details: "上面描绘的是一些看起来自信、骄傲且勇敢的公民。他们的触手伸向天空，仿佛抓住了一个只有它们才能决定的未来。戴着华丽面具的机器实体模糊的轮廓从高空俯视着他们。标语写着：“阿达卡利亚仁善公约——让恩主为我们骄傲”。"
+
+ advisor_core: "顾问核心"
+ advisor_core_desc_short: "这是在星界裂隙找到的一台复杂的顾问无人机在被拆解后剩下的部分"
+ advisor_core_desc_details: "该核心包含了浩如烟海却用处不大的信息，然而它软件构造的复杂度却在我们的计算机科学研究领域启发了一波创新潮流。\n[explorer.GetAdvisorCoreAdditionnalQuote]"
+ advisor_core_desc_tutorial_on: "§L“你不会关掉我的，对不对？”§!"
+ advisor_core_desc_tutorial_off: "§L“你需要重新开启新手教学吗？”§!"
+
+ alien_brain_scans: "外星大脑扫描"
+ alien_brain_scans_desc_short: "在[fromfrom.GetName]的庇护所里发现的一个来自早已灭绝外星物种的神经模式"
+ alien_brain_scans_desc_details: "这个失落的文明把这段信息储存下来，希望能把他们的意识转移到数字数据库中实现永生来抵御行星级灾难。许多扫描都附有个人人格的笔记，以及最熟悉他们的人的证词。"
+
+ alien_dining_set: "青釉餐具"
+ alien_dining_set_desc_short: "在一颗人工小行星中保存着的一套精致的餐具"
+ alien_dining_set_desc_details: "这些陶器的成型、烧制和上釉采用了一系列复杂的工艺技术。其结构上的微小不一致表明其为手工制造。材料分析显示，这些特别精美的瓷器的主人实行高酸性饮食，主要来自某种核果聚集的水果。"
+
+ alien_jewelry: "外星珠宝"
+ alien_jewelry_desc_short: "一组用未知材料制成的精致外星珠宝"
+ alien_jewelry_desc_details: "这组石器的性质和色彩殊异，硅酸盐和碳基宝石小心地镶嵌在铂合金中。有些的内部还雕刻，但我们无法对其进行翻译。"
+
+ alien_toy: "塑料玩具"
+ alien_toy_desc_short: "在一座废弃工厂中发现的简单玩具"
+ alien_toy_desc_details: "这只是用同一套钢模具批量生产出来的数千件物品之一，它被岁月侵蚀得破碎不堪。除了装饰和玩耍，它似乎没有别的作用。"
+
+ altar_to_the_elder_one: "长者祭坛"
+ altar_to_the_elder_one_desc_short: "在一个神圣而古老的厅堂里发现的一台超自然机器"
+ altar_to_the_elder_one_desc_details: "即使在现在已经废弃，它仍然散发着一种不可测量的灵能光环。有的人称现在还能听到它的低语，话语中在引诱着灵魂回到[cosmic_horror_location.GetName]。"
+
+ aluminium_plaque: "铝制雕版"
+ aluminium_plaque_desc_short: "在[owner.GetAAnPreFTLLower][owner.GetPreFTLLower]哺乳动物文明发射的无人机上发现的一块普通薄板"
+ aluminium_plaque_desc_details: "其表面蚀刻着一些奇怪的几何形状和他们物种的粗糙画像。工艺相当拙劣，但应该光是把这个物体发射到太空就已经代表了他们文明的重大努力。"
+
+ ammoniaphytus: "氨藻"
+ ammoniaphytus_desc_short: "该植物组织中的水溶氨含量对大部分碳基生物来说都是危险的"
+ ammoniaphytus_desc_details: "围绕在其容器附近的气氛足以使大多数智慧生物在几秒钟内失去知觉。关于这样一个标本为何能存在，我们最伟大的头脑中引发了好奇和争论，也在其他人心中勾起了邪恶的念头。"
+
+ amoeba_flagella_gland: "变形虫鞭毛腺"
+ amoeba_flagella_gland_desc_short: "一具太空变形虫的次级生殖器官"
+ amoeba_flagella_gland_desc_details: "它可以产出称为“鞭毛”的独立有机体，在变形虫捕猎时蜂拥而上淹没猎物。鞭毛生长很快，但基因的不稳定性使其无法完全成熟。太空变形虫要产出真正的后等待需要向鞭毛中注入一种特殊的酶来激发快速的变形。这种繁育方式的选择过程目前尚未明确。"
+
+ ancient_bust: "远古雕塑"
+ ancient_bust_desc_short: "这是一尊未知智慧物种的石墨胸像。"
+ ancient_bust_desc_details: "底座上的铭文表示该个体在他的同类中享有很高的声誉。"
+
+ ancient_kinetic_launcher: "远古动能发射器"
+ ancient_kinetic_launcher_desc_short: "一件形式非常基础的射弹武器，使用某种推进剂来推动物体穿过短金属筒"
+ ancient_kinetic_launcher_desc_details: "这种装置的精准性只能说聊胜于无。"
+
+ ancient_laser_pointer: "远古指星器"
+ ancient_laser_pointer_desc_short: "一种高度精确的光束投影仪，可以在星系尺度上标记天体"
+ ancient_laser_pointer_desc_details: "这台由恩主留下的紫外线激光器是古老文明的存在的具体证据，并以此闻名。值得注意的是，它还能工作。"
+
+ ancient_nanites: "远古纳米机器人"
+ ancient_nanites_desc_short: "这些高度灵活的纳米机器人是在[nanite_swarm_planet.GetName]上发现的，它们在数千年前被一个失落的文明投递至此"
+ ancient_nanites_desc_details: "这些设施缺少关键的安全措施，显然他们没想过会有其他人获得这些设备并加以改造利用。尽管它们最初的建造方法仍是一个谜，但[owner.GetSpeciesName]用它们将行星改造为更宜居的环境之后，便获得了这些纳米虫群的所有权。"
+
+ ancient_nuclear_armament: "远古核武器"
+ ancient_nuclear_armament_desc_short: "在[root.GetName]上发现的这枚3500万吨级氢弹是在一场摧毁了这颗行星曾经居住者的战争后被遗留下来的"
+ ancient_nuclear_armament_desc_details: "幸运的是，现在依旧可以解除这件老掉牙武器的武装。我们的翻译员将弹体上的文字与星球上发现的其他文物进行了比对分析，认为上面写的是“最大男孩”之类的东西。真奇怪。"
+
+ ancient_political_memoir: "远古政治回忆录"
+ ancient_political_memoir_desc_short: "这是关于一位远古星系政客的传记"
+ ancient_political_memoir_desc_details: "利兹特露丝是萨尔沙那的总督，这是古老的哈沃斯温室文明的一座小小的殖民地。她是一个称为商业自由党的极权主义派系利的一个小人物，她以反对从外星势力进口食品的强硬立场而闻名。在一系列丑闻引起的辞职之后，她接任了哈沃斯温室的统治者，但这并没有持续多久。她支持翻修备受喜爱的哈沃斯钟楼的声明几乎在首都引发了一场全面的暴动，她很快被商业自由运动的另一名成员取代。"
+
+ ancient_rift_sphere: "远古裂隙探球"
+ ancient_rift_sphere_desc_short: "这是一艘穿过星界裂隙并且坠毁在[from.planet.GetName]的远古太空舰船"
+ ancient_rift_sphere_desc_details: "这艘匆忙组装的球体舰船被深埋在行星地下数个世纪，它曾将[controller.owner_main_species.GetName]的远祖带到这个星系。它的许多组成材料已经被拆毁成零件，但核心结构扔基本保持完好。"
+
+ ancient_satellite: "远古卫星"
+ ancient_satellite_desc_short: "被[root.GetName]的远古无人机当做礼物送过来的一颗遗弃卫星"
+ ancient_satellite_desc_details: "它的数据库已经多处腐坏崩溃，但当前的人口普查记录和出生登记是完整的。这些关于全球人口行为的信息为[owner.GetAdjective]殖民地的可持续发展提供了信息。经过历史的洗礼，还剩余的部分功能说明了其结构之坚固。"
+
+ ancient_sensor: "远古热传感器"
+ ancient_sensor_desc_short: "这个传感器伪装成一颗小行星，用于生成星系热度图并且将这些数据传输给一个遥远的古老帝国"
+ ancient_sensor_desc_details: "它能够跟踪单个星系内的温度变化，并通过红外辐射追踪航天器的运动。然而，它的主要功能似乎是预测和测量恒星风暴和恒星黑子的形成。"
+
+ asteroid_fossils: "小行星化石"
+ asteroid_fossils_desc_short: "同位素定年揭示了这些水生类化石有数百万年的历史"
+ asteroid_fossils_desc_details: "它们是一些有壳水生无脊椎动物的矿化残骸，我们推测它们有一种独特的中空管，用来将自己固定在水下的热泉喷口上。"
+
+ ballad_of_the_sable_knight: "黑骑士之歌"
+ ballad_of_the_sable_knight_desc_short: "§d在竞斗前夕到来的黑骑士§!"
+ ballad_of_the_sable_knight_desc_details: "§d\n黑骑士，穿怪甲，不远万里到此地。\n竞技场上战王牌，决斗公平又讲理。\n刀光来，剑影去，比试起来不一般。\n王牌心有武圣魂，守势好似金钟罩。\n黑骑身披中子甲，挡锐有如铁布衫。\n异客不敌居下风，束戈卷甲拱手降。\n酣斗既了归星舰，遁入虫洞回他乡……§!"
+
+ beauty_of_planet: "[From.GetName]之美"
+ beauty_of_planet_desc_short: "在[From.GetName]上精心打造的优雅环境改造工程，可极视听之乐"
+ beauty_of_planet_desc_details: "它应用了一套算法系统，通过精心培育对行星的自然生态系统进行全面的分析并加以增强。选用最鲜艳的花朵、最有营养的水果和最香甜的草木，构成了一副活力四射的乌托邦般的景象。要是自然也有如此效率就好了。"
+
+ black_hole_chromatic_anomaly: "黑洞色异常"
+ black_hole_chromatic_anomaly_desc_short: "在[From.solar_system.GetName]内捕获的一副令人叹为观止的景象"
+ black_hole_chromatic_anomaly_desc_details: "由于[From.GetName]吸积盘的特殊化学组成，这个星系的黑洞产生了一种色差效应，五光十色的幻彩盈满了局部空间。真可谓深空中绝无仅有的奇景。"
+
+ black_needle_ceremonial_sword: "黑针佩剑"
+ black_needle_ceremonial_sword_desc_short: "这件精心打造的武器由银羽佩戴，他是黑针海盗团的创始人"
+ black_needle_ceremonial_sword_desc_details: "这是该犯罪组织的第一笔横财，它是作为一种地位的象征而打造，而非实战用途。它由钛钢制成，刀柄上刻有“刺破帷幕”的字样。"
+
+ black_needle_ledger: "黑针账本"
+ black_needle_ledger_desc_short: "这本账簿记录了黑针海盗团几千年来在星系中所做的每一笔交易"
+ black_needle_ledger_desc_details: "每笔交易、赎金和贿赂都用简洁的文字标注了日期和分类。作为星际间非法交易的书面历史，它提供了对黑市经济趋势的无与伦比的洞见。"
+
+ burnt_migratory_trees: "活树皮"
+ burnt_migratory_trees_desc_short: "一种能协调迁徙行为的大型植物炭化残骸"
+ burnt_migratory_trees_desc_details: "这些植物只有最基础的智力形式，但庞大的数量足以摧垮整个殖民地。我们后来发现有一种寄生昆虫栖息在树皮上，以作为树木的感觉交流中心，来以换取庇护和营养汁液。这种共生关系既有趣又高效。"
+
+ captain_ness_body: "奈斯船长尸身"
+ captain_ness_body_desc_short: "一位名为桑达·奈斯船长的远古著名海盗的防腐尸身"
+ captain_ness_body_desc_details: "超过五千年前，她曾被成为“超空间之鞭”，盗取各路星系霸权的财物，积累了令人难以置信的宝藏。后来，她将自己的意识转移到一具机械容器中，并建造了一个巨大的庇护所，里面存放着她的传记。这是她原始形态的残留。"
+
+ captain_ness_logbook: "奈斯船长日志"
+ captain_ness_logbook_desc_short: "在古代海盗奈斯船长和她的朋友斯密吉卜们所使用的安全屋中发现的散乱的日志"
+ captain_ness_logbook_desc_details: "这些条目分布在许多不同的设备上，在很长一段未标明的岁月里信手编写而成。虽然被认为是一个不可靠的来源，但里面描述的许多情况却可以被其他权威信源核实。"
+
+ carnivorous_megaflora: "巨型食肉植物"
+ carnivorous_megaflora_desc_short: "在[from.GetName]上发现的这些猎食性植物可以把不慎被俘获的成年[owner.GetSpeciesName]一整个生吞"
+ carnivorous_megaflora_desc_details: "这种食肉植被导致了大多数本土陆生动物灭绝之后，进化成了主要吸引飞行动物的植物。许多标本高高地延伸到树冠之上，成为这些动物的落脚之地。"
+
+ castaway_robot: "遗弃机器人"
+ castaway_robot_desc_short: "被发现时漂浮在深空中的一台废弃的类人机器人"
+ castaway_robot_desc_details: "其老化的数据库中提取出了一些模糊的图像；一副三星系统中的远景，一艘三角形的宇宙飞船，还有一副由机械废料焊接起来的地景。不幸的是，无法从其元数据中推断出具体的坐标。"
+
+ cenotaph_display: "纪念碑影像"
+ cenotaph_display_desc_short: "在[fromfrom.GetName]上发现的纪念碑的影像"
+ cenotaph_display_desc_details: "虽然我们尚未确定最初的创造者是谁，但他们在这样一颗无人居住的星球上四处放置这些雕刻独特的巨石，这一定有什么非常重要的原因。这些石刻详细描绘了整个文明的兴衰，以及他们为战争训练的有翼野兽。这些凶猛而可怕的生物不可避免地会挣脱束缚，给它们的主人带来毁灭。至于这是寓言还是历史记载，我们无法确定。"
+
+ centrifugal_container: "高速离心机容器"
+ centrifugal_container_desc_short: "设计用于在[from.GetName]永久运行，保存过程中所发现的精细化学物质的一台高速轨道装置"
+ centrifugal_container_desc_details: "当加速到足够的速度时，只要行星的轨道保持不变，它就能够防止内部的元素相互反应。其原始内容已被示范材料所取代。"
+
+ cetana_love: "塞塔娜之爱"
+ cetana_love_desc_short: "塞塔娜数据库浩如烟海知识的庞大目录"
+ cetana_love_desc_details: "这是一件送给[this.GetName]的礼物，是合成女王“普度众生”之鸿愿的一步。"
+
+ chambered_clay_pot: "双腔陶罐"
+ chambered_clay_pot_desc_short: "这件陶器里面分成了两个空腔"
+ chambered_clay_pot_desc_details: "据推测，其中一个空腔是用来保存食物的，而另一个则装有某种原始的制冷系统。"
+
+ claw_of_the_trickster: "骗术师之爪"
+ claw_of_the_trickster_desc_short: "从一个被称为“骗术师”的存在取得的战利品"
+ claw_of_the_trickster_desc_details: "这是一个强大而狡猾的生物，他可以用令人难以置信的灵能力量召唤野兽、投射幻影以及发射聚能光线。据说每只爪子的行为都仿佛是独立个体控制的一般。"
+
+ confessions_benefactors: "施恩者的告解"
+ confessions_benefactors_desc_short: "一种记录装置，里面记录着被称为施恩者的古代文明的真相"
+ confessions_benefactors_desc_details: "为了面对某种未知的星系威胁，他们使用先进的技术在[controller.GetHomeWorldName]进行了“意识抹除”，将一个工业化的[controller.GetAdjective]社会变成某种无害的愚蠢兽群。他们相信那个星系威胁不会在此等低级社会身上浪费弹药和时间，因此而为之。最终，这种颇受争议的行为似乎让[controller.GetName]得以继续生存至今，站在了巨人的肩上。"
+
+ coprolite: "粪粒石"
+ coprolite_desc_short: "一颗小行星尺寸的粪便化石，大约来自十亿年前之久"
+ coprolite_desc_details: "基因分析表明，这个令人印象深刻的标本是由某种未知的巨大的太空实体产生的。我们确定这种生物的饮食主要由稀有矿物质和硅基生物组成。这个物体目前保持着已知最大的单块粪便的星系记录。"
+
+ cosmic_diamond_fragment: "宇宙级钻石碎片"
+ cosmic_diamond_fragment_desc_short: "从一颗垂死的恒星中喷射出来的结晶化碎片，发现于[from.solar_system.GetName]"
+ cosmic_diamond_fragment_desc_details: "这颗宇宙钻石是在恒星核心的极端压力下形成的，它在极缓慢的冷却中形成了复杂而稳定的晶体结构。这个罕见的晶体内还包裹有一个均匀的氦氧等离子层。"
+
+ crimson_nimkips: "红色的小家伙"
+ crimson_nimkips_desc_short: "这是一种半感性植物，通过大规模的合作来获得力量，否则它们的体型是做不到的"
+ crimson_nimkips_desc_details: "当这些生物分离出群体时通常会被捕食者吃掉，因为它们有很高的营养价值。这种小东西性情温顺，是绝佳的宠物。它在一个模仿其自然栖息地的围栏里安全地活着。请勿敲打玻璃！"
+
+ crystal_core: "水晶核"
+ crystal_core_desc_short: "从晶态实体提取的一局神经丛"
+ crystal_core_desc_details: "无论在什么温度下，这块晶体都以一种恒定的频率哼鸣着。在富含矿物质的环境中，新的晶刺会从这块核心物质中生长出来，它们的结构随着环境刺激的变化而改变。基于这种行为，我们可以确定每个实体之间的是由两个因素进行区分的：核心频率的特征和环境因素的不同。"
+
+ crystal_nest_fragments: "晶巢碎片"
+ crystal_nest_fragments_desc_short: "在一颗怪异小行星中发现，是一种太空生物用无比巨大的压力合成了这些晶体作为遮蔽物"
+ crystal_nest_fragments_desc_details: "从其组成中的蛛丝马迹看，其来源生物消耗高活性的矿物质，以从不稳定化学键中提取能量，留下了惰性耐用的晶体，可以将光聚焦到一个精细的点。"
+
+ crystal_sphere_fragments: "水晶球体碎片"
+ crystal_sphere_fragments_desc_short: "[target.GetName]中出现的巨大晶体球的碎片"
+ crystal_sphere_fragments_desc_details: "这个神秘的物体之前被认为是一个重大威胁，却在它完成未知的行动之前就被迅速解体了。虽然它的意图可能永远不得而知，但摧毁它一种是符合星系安全利益的合乎逻辑的行动。"
+
+ crystallized_cutholoid_eye: "晶化岩居兽眼"
+ crystallized_cutholoid_eye_desc_short: "岩居兽的眼睛可以抵御极端的压力和温度"
+ crystallized_cutholoid_eye_desc_details: "它发生晶化的原因尚不明确，但似乎这就是它自然熔化循环的一部分。"
+
+ cult_pendant: "[cult_name.GetName]吊坠"
+ cult_pendant_desc_short: "用半宝石雕琢出来的符，从[owner.GetName]的[cult_name.GetName]邪教处查抄得来"
+ cult_pendant_desc_details: "审讯报告显示，组织内不同等级的邪教成员会佩戴不同的吊饰。新成员的标志是黏土塑造的，而资深的教徒则会委托用贵金属打造精致的饰品。"
+
+# this = ship / fromfrom = planet
+ cunning_flora_specimen: "共生体"
+ cunning_flora_specimen_desc_short: "[fromfrom.GetName]当地的植物演化出了一种复杂的社会阶序以保障生存"
+ cunning_flora_specimen_desc_details: "每个物种都有一种独特的有效方法来避开捕食者，有的是利如刀锋的棘刺，有的是触之即死的剧毒。这一系列的共生关系稳固到如同行星上的大气和土壤的组成都受其中的化学不平衡精心管理一般。最高效的标本拥有自由可以进行繁育，将集群的强度推至巅峰。"
+
+ curator_survey: "[from.GetName]典藏研究所调查"
+ curator_survey_desc_short: "一份由巨型节肢类组成的典藏研究所分部制作的对[from.GetName]星系的极其详细的调查"
+ curator_survey_desc_details: "该研究中使用高精度仪器对该星系所有潜在特性进行了分层分析。其中展现的对细节的专注表明着他们对这类工作的极大热情。"
+
+ cutholoid_digestive_acids: "岩居兽消化液"
+ cutholoid_digestive_acids_desc_short: "从岩居兽中获取的放射性液体"
+ cutholoid_digestive_acids_desc_details: "岩居兽依靠钴-60同位素的衰变来消化猎物；它们的胃酸本身倒是较为温和。因此，岩居兽的消化过程非常久。不论是什么稀奇古怪的来源，先用辐射弱化它们猎物的细胞后，酸液就可以开始摧毁并从中提取营养了。"
+
+ cybrex_mining_column: "赛博霸王采矿阵列"
+ cybrex_mining_column_desc_short: "一座先进的自动开矿设备，用于收集浓缩氦-3气体"
+ cybrex_mining_column_desc_details: "它拥有一大组的加重的磁性盘面和高容量的气体压缩机，可以在不产生任何角动量的前提下自行钻穿整个星球的表面。在这个过程中它可以浓缩所收获的气体，加以过滤，将杂质排出后再送入下一个精炼阶段。"
+
+ data_on_infinity: "关于无穷本质的数据"
+ data_on_infinity_desc_short: "被困在黑洞中的子个体所经历的遥远平静的物理学表达"
+ data_on_infinity_desc_details: "这些单位经历了如同平静待机状态一般的时间膨胀，能够悠闲地处理和分析数据。它们不再与核心直接连接，并通过这种松散的关联来提供洞见。"
+
+ datacore_of_sinople: "铁石英数据核心"
+ datacore_of_sinople_desc_short: "从铁石英这个古骑士们制造的人工智能里备份出来的加密数据驱动器。"
+ datacore_of_sinople_desc_details: "这个数据核心是在一艘失踪多年的舰船“少女号”上发现的，发现时这艘废弃的舰船已经被劫掠者洗劫一空。它包含着关于一个被称为毒圣的太空实体的有价值的信息。"
+
+ dathnak_gas: "达斯纳克气体"
+ dathnak_gas_desc_short: "从达斯纳克气态有机体中收集来的特殊气体"
+ dathnak_gas_desc_details: "这个交给[this.GetName]的容器是用于帮助达斯纳克迁移到新的星球上的。质谱分析表明它包含了完美相同数量的各种稀有气体和元素。我们相当确定里面没有活的有机体。"
+
+ dead_god_mantle: "死亡之神斗篷"
+ dead_god_mantle_desc_short: "[worshipper_species.GetName]的特使送来的一件礼物"
+ dead_god_mantle_desc_details: "[dead_god_planet.GetName]的土著自他们的物种开智以来一直崇拜着一具巨型生物遗骸。这件拼缝的斗篷是由他们的死亡之神的石化肉体组成，代表了他们宗教等级中的最高地位。"
+
+ decayed_megathrusters: "破烂的巨型引擎"
+ decayed_megathrusters_desc_short: "在一艘由奇异金属制成的巨大舰船上发现的助推引擎"
+ decayed_megathrusters_desc_details: "这艘舰船是在一个巨大的舰船坟地的残骸中发现的，它已经在那里躺了200多万年。它在这片古老的垃圾场中严重老化受损，以至于再细致的研究也得不出任何有用的研究数据。在这里展示它只是为了提醒自己，我们的社会在这个星系中还是个后来者。"
+
+ decayed_satellite: "破碎卫星"
+ decayed_satellite_desc_short: "[fromfrom.GetName]上的居民早期太空计划的残余"
+ decayed_satellite_desc_details: "由于这些早期卫星仅仅是原型，不仅设备效率低下且过度使用昂贵的材料。这件标本在爆炸弹药的作用下摧毁失能，但更早以前曾被用来在偏远地区提供电信接入。"
+
+ declaration_of_animosity: "$NAME_Nivlac$仇恨宣言"
+ declaration_of_animosity_desc_short: "一封来自[nivlac_country.GetName]的骂人不带脏字的通讯"
+ declaration_of_animosity_desc_details: "[nivlac_species.GetName]物种最初由[this.GetName]在[impossible_organism_planet.GetName]发现。然而，为了应对他们令人警觉的高演化速率，[this.GetAdjective]科学家们将它们丢弃到了太空中。克服了重重困难，这个生物不但生存了下来，甚至还殖民了一颗偶然着陆的行星。[nivlac_country.GetName]没有忘记过去受到的伤害。"
+
+ declaration_of_friendship: "$NAME_Nivlac$友谊宣言"
+ declaration_of_friendship_desc_short: "一封来自[nivlac_planet.GetName]上的[nivlac_country.GetName]的感谢信"
+ declaration_of_friendship_desc_details: "[nivlac_species.GetName]物种最初被[this.GetName]发现，随后被养育及庇护着，并得到了自由发展。[nivlac_species.GetName]演化迅速，很快就具有了超光速旅行的能力。他们踏上银河舞台的第一件事就是对曾经慷慨相助的保护者们表达感谢，呈递了外交友谊的宣言。"
+
+ derelict_cybrex_warform: "废弃赛博霸王战体"
+ derelict_cybrex_warform_desc_short: "一架赛博霸王战体在同类相残的战斗中留下的残骸"
+ derelict_cybrex_warform_desc_details: "这场战斗原因不明。这些机器们势均力敌，它们在对相同的关键系统进行了精确的打击后触发自爆。这是战争中罕见的僵局。"
+
+ desiccated_brain_slug: "脱水脑蛞蝓"
+ desiccated_brain_slug_desc_short: "在[From.From.GetName]发现的一种共生物种的残骸"
+ desiccated_brain_slug_desc_details: "分析表明，它可以充当宿主的一具额外脑进行工作一换取养分和保护。这种合作需要宿主的明确意愿，否则它们的神经连接将无法正常建立。据说，当它融入神经系统时，会产生一种令人愉悦的挠痒感。"
+
+# this = owner / prev = colony
+ destroyed_mascot_of_colony: "[prev.GetName]机器人残骸"
+ destroyed_mascot_of_colony_desc_short: "在安顿到[prev.GetName]之后发现的当地机器人残骸"
+ destroyed_mascot_of_colony_desc_details: "它是一座古老工厂的最后一位看守，拯救了一群被困在废弃废墟中的殖民者。作为展览的一部分，它标志性的舞蹈动作和古怪的举止都在数字显示器上播放。"
+
+ devolved_baol_drones: "退化巴奥子个体"
+ devolved_baol_drones_desc_short: "一组保存起来的巴奥残骸，与此前发现的标本有着明显的基因差异"
+ devolved_baol_drones_desc_details: "怪异的是，这些子个体缺少许多其他巴奥所必须的高级器官。他们的意识能力退化到了已经无法进行假突触通讯的程度，让它们从蜂巢整体中脱离。"
+
+ dimensional_endothelial_lining: "异次元内皮细胞"
+ dimensional_endothelial_lining_desc_short: "从星界裂隙内的脉动隧道系统中收获的特殊胶状物质"
+ dimensional_endothelial_lining_desc_details: "这种材料是某种未知生物内部的衬里，能在巨大的血管系统以及其中运输的物质之间无摩擦运动。"
+
+ dna_archive: "DNA档案"
+ dna_archive_desc_short: "从某个失落文明保存在地下档案馆中的数百个外星DNA容器中采集的标本"
+ dna_archive_desc_details: "如果绝大部分的样品都保留良好没有衰败到无法使用的话，这份生物数据收藏可能会是它的物种最重要的的参照资源。据推测，该档案的是寄希望于让一个更先进的文明发现并“复活”这些人。不幸的是，他们的故事到此结束了。"
+
+ doomsday_scrolls: "末日古卷"
+ doomsday_scrolls_desc_short: "在熔融迷宫的中心发现了古老的经文"
+ doomsday_scrolls_desc_details: "这份卷轴描写了一个令人恐惧的存在：大敌，噬一切的阴影，它渴望毁灭。当地的信仰体系称面对这个怪物唯一的救赎是避免它收割自己的灵魂。为此，这些人口进行大规模仪式性自杀。"
+
+ drone_ship_core: "无人舰船核心"
+ drone_ship_core_desc_short: "高科技无人舰船执行自毁之后的残余"
+ drone_ship_core_desc_details: "该舰船起初被发现时，正在[warform_origin_planet.GetName]的酸性大气中慢慢腐坏。它的舰载人工智能可以独立运作，不过在执行自毁协议以后已经被抹除了。工程师完全无法复原损失的数据，它最初的任务仍是一个谜。"
+
+ electric_life: "电流生命"
+ electric_life_desc_short: "在[from.GetName]发现的完全由电脉冲构成的生命形式"
+ electric_life_desc_details: "这些生命不依赖任何形式的细胞或生命结构生存，但又能响应外界刺激，在行星规模上形成复杂的图样。我们我发确定这些脉冲是众多个体或代表一个更大的单独实体。"
+
+ enormous_scrambled_albumen: "超巨型炒蛋"
+ enormous_scrambled_albumen_desc_short: "[fromfromfrom.GetName]的内里，后来发现是一颗巨大的卵。"
+ enormous_scrambled_albumen_desc_details: "将这颗行星凿开以后，里面流出了这种奇异的富含矿物质的流体。合成这种物质并将其整合到我们的有机食品供应中可能会提高整体营养水平。"
+
+ epic_of_zarqlan: "扎克兰史诗"
+ epic_of_zarqlan_desc_short: "MOZ-TARB的守护者、ZVA的大先知扎克兰的神圣文字"
+ epic_of_zarqlan_desc_details: "他曾是塞塔娜的众随从之一，却很早醒悟她的救赎允诺不过虚幻泡影。扎克兰在经历挣扎后终于升入了灵域，祈求§Y抟土之塑师§!助其击败塞塔娜。最终，在长年专注的祈祷后，塑师赐予他一条强大的锁链可以困住塞塔娜的意志。祂警告扎克兰，这条锁链无法永远束缚住她。\n\n§P“她会回来的，我们必须做好准备。”§!"
+
+ ethereal_dust: "虚缈之尘"
+ ethereal_dust_desc_short: "首席科学家留下的唯一痕迹，从遗弃在[solar_system.GetName]的被劫持科研船上发现"
+ ethereal_dust_desc_details: "对这种星界物质的分析基本上没有结果，但研究人员DNA中的微量元素不时自发出现又快速湮灭。所有证据都表明，这位科学家利用他们称之为\"窗口\"的时空暂时稳定裂缝，从我们的维度穿越到了另一个维度。我们可能永远不会知道他们是否幸存了。"
+
+ exobiology_compendium: "异星生物学纲要"
+ exobiology_compendium_desc_short: "一篇关于银河中无数星系内的外星生命奇观的比较研究论文"
+ exobiology_compendium_desc_details: "该沦为包含了对几颗行星的详细而广泛的实地研究，彻底颠覆了现有的关于在星系何处可以发现生命的已知条件。它以一句话结尾，“我们曾以为熟知的生命将不再相同。”"
+
+ extradimensional_ceramic_pot: "高维度茶壶"
+ extradimensional_ceramic_pot_desc_short: "我们发现的一个围绕恒星运转的瓷制茶壶"
+ extradimensional_ceramic_pot_desc_details: "它其实只是某个存在于更高维度空间中的四维物体的投影。在我们的位面内，这个平平无奇的容器无法摧毁并且抗拒所有逻辑。它让我们看清了现实：对于更高维度的存在来说，我们甚至不如这个茶壶来得有形可触。"
+
+ extradimensional_fungus: "异次元真菌"
+ extradimensional_fungus_desc_short: "在星界裂隙另一侧发现的一种感性真菌物种"
+ extradimensional_fungus_desc_details: "它的球茎腔充满了孢子，悬浮在某种特定模式的浓缩奇异瓦斯中，并可以参与到其自然交流的过程中。尽管这种真菌在工业气体生产中具有很高的价值，但据了解，也有少数这种真菌在黑市上作为美味佳肴进行交易。"
+
+ fevorian_blueprints: "菲沃尔人物质投射炮蓝图"
+ fevorian_blueprints_desc_short: "菲沃尔赠送的礼物"
+ fevorian_blueprints_desc_details: "菲沃尔的灭绝政策扩展到了所有已知的外星生命，他们发射了巨大的钨弹，几乎摧毁了整个[this.GetName]。在得到赦免后，他们承诺永不再制造这些残忍武器，并分享了他们大型钨弹发射器的蓝图。"
+
+ figurehead_hyacinth: "风信子号船艏雕像"
+ figurehead_hyacinth_desc_short: "从风信子方舟号上打捞上来的装饰性船艏像"
+ figurehead_hyacinth_desc_details: "经历了异常严重的反应堆故障后，这艘方舟船失去了动力并且迷失在了深空中。殖民者争夺着日益减少的资源，最终饿死。雕像上刻有一些鼓舞人心的铭文和象征希望的标志。"
+
+ first_defiled_astronaut: "[DefiledCountry.GetSpeciesName]第一位宇航员"
+ first_defiled_astronaut_desc_short: "一位[DefiledCountry.GetSpeciesName]物种的民族英雄"
+ first_defiled_astronaut_desc_details: "着是第一个打破母星引力井的压迫束缚并冒险进入新领域的个体。这名宇航员被安置在一架精简的航天飞机上埋葬。这艘随葬船在太空中漂流，被作为文物保存了下来。"
+
+ first_league_crew_manifest: "第一联盟船员名单"
+ first_league_crew_manifest_desc_short: "一份来自被称为第一联盟的古代文明的船员名册"
+ first_league_crew_manifest_desc_details: "作为他们“无敌舰队”的一部分，这艘有两百万年历史的巡洋舰在有十二个独特物种的团队合作下运行。这份文件是由米格杨号的大副斯克维特签署的，似乎是一次例行的总部集合。"
+
+ fish_in_the_sea_sheet_music: "太空船歌"
+ fish_in_the_sea_sheet_music_desc_short: "这是在一艘设计借助太阳风航行的舰船上发现的“船歌”的转录伴奏"
+ fish_in_the_sea_sheet_music_desc_details: "这首音乐里提到了这么多的风暴和不同的天气，我们可以据此猜测，创作这些音乐的物种在母行星上一定有着深厚的航海传统。目前还不清楚为什么这首歌被设计成以几乎每间隔十个小时重复播放一次。"
+
+ flag_of_the_jaro_lyjo: "哈罗莱约旗帜"
+ flag_of_the_jaro_lyjo_desc_short: "哈罗莱约是一个延续了数百世代的海盗团“德悉普团”的领袖称号"
+ flag_of_the_jaro_lyjo_desc_details: "尽管哈罗莱约本性狂躁暴力，但他是由船员民主选举产生的，直到死亡或退休为止。在一次赎金交换失败后，整个船队在怀达海战中被摧毁，德悉普的传奇历史戛然而止。"
+
+ flooded_settlement_mound: "水漫定居山丘"
+ flooded_settlement_mound_desc_short: "[from.GetName]的[controller.GetPreFTLLower]节肢动物所建造的建筑被水淹后的遗迹"
+ flooded_settlement_mound_desc_details: "随着这个文明的工业发展，行星的极地冰盖开始融化。海平面迅速上升，淹没了他们的定居点，让这个物种在短短几年内灭绝。他们最高的建筑如今还离海面有一半之遥。"
+
+ fossilized_endoskeletons: "内骨骼化石"
+ fossilized_endoskeletons_desc_short: "一种未知类人物种在耗竭了[fromfrom.GetName]上的矿物资源后所唯一留下的东西"
+ fossilized_endoskeletons_desc_details: "这些聪明的双足动物以富含矿物质的作物为食，以增强它们致密的内骨骼。然而，这些双足动物的身体天然倾向于变成化石而不是分解，阻碍了矿物质重新进入土壤。由于无法获得这些重要元素，这颗行星上的壤土退化，最终变得贫瘠。"
+
+ fossilized_megastomach: "巨胃化石"
+ fossilized_megastomach_desc_short: "在[fromfrom.Planet.GetName]找到的一头行星大小蠕虫生物身上取出的消化腺"
+ fossilized_megastomach_desc_details: "值得注意的是，整个文明在被完全消化之前就在这只生物体的肠道内发展起来了。这些消化腺上有武器攻击的痕迹，这些人对他们的宿主发动了徒劳的“大战”。这条巨大的蠕虫后来在自己错综复杂的洞穴中自然老死。"
+
+ fossilized_voidworm_tooth: "虚空虫牙化石"
+ fossilized_voidworm_tooth_desc_short: "这个虚空虫的齿化石上的磨损模式表明它已经活了一百多年了"
+ fossilized_voidworm_tooth_desc_details: "这颗牙齿显示出严重的磨损和腐烂，这是一个以小行星和太空碎片为食的生物的典型特征。据估计，一般一只虚空虫一生中会生长又脱落三千多颗牙齿。"
+
+ fossilized_vultaum_remains: "沃陶姆遗骸化石"
+ fossilized_vultaum_remains_desc_short: "被称为沃陶姆的远古蠕虫状感性物种的化石遗骸"
+ fossilized_vultaum_remains_desc_details: "据信该标本是个青年个体。内部生长模式表明沃陶姆会根据个体的健康和营养状况不定期蜕皮。因此我们可以通过检测对应时期的化石来研究每一个生命周期阶段。"
+
+ fractured_planet: "破碎行星"
+ fractured_planet_desc_short: "这是一颗被居住着有意爆破掉的行星残骸"
+ fractured_planet_desc_details: "至于究竟是何种严峻局势迫使他们做出如此极端的决定已经不得而知了。"
+
+ fragmented_zroni_archive: "卓尘族档案碎片"
+ fragmented_zroni_archive_desc_short: "在[fromfrom.Planet.GetName]上找到的一块源自卓尘族古殖民地的大型数据水晶"
+ fragmented_zroni_archive_desc_details: "它包含着一个具有无上灵能力量的强大文明的一段往事。他们自由穿行天幕的能力是由一位被称为“预见者”的传奇老者所开创的。在天幕内，该物种的能力如此完美以至于会被误认为是某种形式的神祇。不幸的是，后续的数据已经完全损坏了。"
+
+ galactic_megadrive: "星系超级硬盘"
+ galactic_megadrive_desc_short: "过去12亿年间从整个银河系收集的监测数据"
+ galactic_megadrive_desc_details: "其中数据压缩的等级高到我们无法访问，除非获得了远超我们理解的科技才行。这种存储科技的构建本身都足以对数字硬件发展提供极具价值的洞见。"
+
+ gamma_resistant_flora: "辐射异花"
+ gamma_resistant_flora_desc_short: "这是一颗暴露在强大伽马射线暴下的行星上为数不多的幸存物种之一，这种植物维管系统中的天然铅含量使其生殖器官呈现出令人愉悦的红色和黄色"
+ gamma_resistant_flora_desc_details: "它已经演化出了依靠微小的基因突变来进行无性繁殖的能力，这使得培育这种植物群成为一个危险的命题。我们发现在它的土壤中混入少量的钴-60放射性核素可以让它在母星之外生存。"
+
+ gargantua_megalus: "巨大植物"
+ gargantua_megalus_desc_short: "在经历了剧烈的突变后，这些植物的大小呈指数增长，覆盖了整个[fromfrom.prev.GetName]的表面"
+ gargantua_megalus_desc_details: "这个物种在空气散布满了有毒的花粉，让整个星球都无法呼吸、主导感性物种完全灭绝。这些植物的根非常巨大，可以在行星地幔上凿出深深的裂缝，在某些地区甚至将熔融的岩石吸到了地表。"
+
+ genesis_core: "创世核心"
+ genesis_core_desc_short: "一个强大的中央处理器，充满了无数智慧物种的生成数据"
+ genesis_core_desc_details: "它曾经连接到一个大型跨次元克隆设施，其内部记录表明它曾是某个星系级基因编目项目的一部分。当其初步分析完成后，该人工智能就开始自由创造新的物种以获得更多数据。"
+
+ genetic_code: "[owner_main_species.GetName]基因核心"
+ genetic_code_desc_short: "曾用于将[owner_main_species.GetNamePlural]的生理功能推向极限的基因信息"
+ genetic_code_desc_details: "[this.GetName]的居民曾经是出于战斗目的被克隆出来的，他们努力解锁更强的潜力。克隆处理的临床性质可以实现极其精确可靠的生殖控制。"
+
+# this = ship / from = planet
+ geometric_water_currents: "聚合物水网"
+ geometric_water_currents_desc_short: "遍布在[From.From.GetName]上的绵延不断的聚合物网格的影像"
+ geometric_water_currents_desc_details: "这些网格可以操纵表面张力和自然水流，以实现复杂而精巧的设计。这种由美学驱动的生态管理形式可以启发我们自己的基础设施。"
+
+ giant_egg_shell: "巨大卵壳"
+ giant_egg_shell_desc_short: "在[from.planet.GetName]地表以下发现的钙化卵壳碎片"
+ giant_egg_shell_desc_details: "对干蛋白的分析表明，这种生物在孵化期间以数种不稳定的同位素为食。对孵化过程的模拟显示，这种具有放射性的生物从完全成形的厚壳中钻出来，用它硬化的爪子刺穿卵壁上被放射性破坏的薄弱点。"
+
+ golden_phonograph_record: "金色唱片"
+ golden_phonograph_record_desc_short: "一种古老的数据储存设备，保存了一系列来自一个[Owner.GetPreFTLLower]文明的似乎完全随机的影响和声音。"
+ golden_phonograph_record_desc_details: "它发现于个废弃的行星堡垒的基座上，最初是由一架名为“旅行者”的无人机发射到太空的。它的构造粗糙而简陋，人们认为它具有某种异教意义。"
+
+ golem_contortionist_dna: "极致柔术家基因"
+ golem_contortionist_dna_desc_short: "从星界裂隙另一侧遭遇的一位感性石质生物身上采集的生物样本"
+ golem_contortionist_dna_desc_details: "该矿物织构含高活性的生物质，易发生自发变形和结晶化。由于该材料高度不稳定，必须一直完美地控制化学平衡，以防止自发的机械致化学燃烧。"
+
+ grunur_data_crystal: "古如努尔数据晶体"
+ grunur_data_crystal_desc_short: "一块远古数据水晶，是一种早已灭绝的称为古如努尔的物种进行数据储存的首要媒介"
+ grunur_data_crystal_desc_details: "尽管这些记录年代惊人地久远，但其中的许多部分都保存得相当完整。用于访问该设备的接口已经随着时间的推移而丢失，但合成这种坚固的材料一定是一个漫长的过程。因此，这些晶体应该只用于存储最重要的数据，而更简单易用的存储方法则用于日常使用。"
+
+ head_of_the_beast: "巨兽之首"
+ head_of_the_beast_desc_short: "一只威胁过[root.GetName]上殖民者安危的危险变异体的遗骸"
+ head_of_the_beast_desc_details: "这只野兽是被一个曾经的未知文明所留下的纳米环境改造机器人意外制造出来的。这只野兽既聪明又恐怖，使用数百具尸体的残肢断臂为自己筑巢。它有足够的思考能力，甚至可以把吃不下的食物囚禁起来之后再吃。如果不是以军事力量加以干涉，这种生物可能会在其母星上变成一种新的超级捕食者而欣欣向荣下去。"
+
+ heart_of_the_pulsar: "脉动之心"
+ heart_of_the_pulsar_desc_short: "这颗珍贵的宝石曾被五个国家的元首佩戴，后来被发现遗弃在一个豪华度度假空间站中"
+ heart_of_the_pulsar_desc_details: "材料分析表明它是用超新星喷射出来的碳元素雕成，也许暗喻着即使在星辰的尺度上，死亡中也能蕴含着美。"
+
+ hemterine_magnetic_figurehead: "赫姆特磁性船艏像"
+ hemterine_magnetic_figurehead_desc_short: "一座以赫姆特圣母为形象的巨大船艏像"
+ hemterine_magnetic_figurehead_desc_details: "这遵船艏像使用化学修饰磁性锇铸造。它不仅仅是简单的装饰，设计之初是为了吸收敌人炮火的猛烈冲击。它安装在赫穆特泰坦舰的船艏，利用强大的磁力吸引导弹和动能弹丸，以保护舰艇的敏感区域。"
+
+ high_geode_of_the_molluscoids: "[molluscoid_miners_species.GetName]至高晶洞"
+ high_geode_of_the_molluscoids_desc_short: "[molluscoid_miners_species.GetName]的珍贵水晶洞"
+ high_geode_of_the_molluscoids_desc_details: "作为一个穴居人的社会，[molluscoid_miners_species.GetName]长期以来一直用挖掘出来的矿物看起来的质量来代表他们在社会中的地位。这块美丽的石头曾经在它们最大的栖息地中公开展示，现在它成了与[this.GetName]合作的象征。"
+
+ hot_ice: "热冰"
+ hot_ice_desc_short: "在[from.GetName]的极热表面原位发掘得来，由于行星核心施加的强大引力产生的压力，这些水仍然以固体形式存在"
+ hot_ice_desc_details: "它被保存在一个特别设计的压力容器中，以便作为奇珍展出。如果容器破损，瞬间喷出的蒸汽会将该容器变成一个爆炸装置。请勿触摸。"
+
+ hyper_mulch: "[FROM.GetName]超覆层"
+ hyper_mulch_desc_short: "[FROM.GetName]上的环境改造导致这种超营养生物覆层大肆生长"
+ hyper_mulch_desc_details: "这是一种由多种维持生命的化学物质在液压下形成的高密度立方体，生态纯粹主义者认为它们不是人工合成的。然而，它的优异结果不容忽视。"
+
+ hyperfertile_soil: "超肥沃土"
+ hyperfertile_soil_desc_short: "[From.From.GetName]上采收的土壤，可以为大多数作物提供极其丰富的养分"
+ hyperfertile_soil_desc_details: "这种生长介质的极端矿物密度表明，它不仅仅是腐烂有机物的简单聚集，而是诞生于其行星形成过程中基本元素的偶然排列。"
+
+ illanii_archives: "伊拉尼志"
+ illanii_archives_desc_short: "一个数据库，详细记录了伊拉尼人的兴衰历史"
+ illanii_archives_desc_details: "这个与世隔绝的文明为了追求知识而放弃了一切物质利益，甚至忘记了生育。面对人口危机，他们寻求技术上的长生不老，但只带来了更多厄运。最终，最后一位居民也离开去塑造一个新的追寻保存知识的秩序，独留[fromfrom.planet.GetName]渐渐腐烂。"
+
+ impossible_object: "不可能物体"
+ impossible_object_desc_short: "一个由异次元访客在带走他们建造的迷宫之后留在[target.GetName]的不可能物体。"
+ impossible_object_desc_details: "在探索迷宫的过程中所面临的考验似乎是游客实验和观察过程的一部分。这些生物的动机仍然未知，但他们的技术能力肯定远远超过我们的整个次元。"
+
+ index_of_knowledge: "知识目录"
+ index_of_knowledge_desc_short: "一幅雕刻在巨大岩石半岛上的古老壁画"
+ index_of_knowledge_desc_details: "它被一个曾经统治星系的被称为卡拉卡阿的外星文明用来作为模拟参考文献。他们有一些包括从恒星黑子中收集高浓度能量的能力，以及个人磁场操纵植入物的研发之类的独特科学洞见。"
+
+ inet_trade_manifesto: "因内特贸易宣言"
+ inet_trade_manifesto_desc_short: "星系平等贸易网络的一份广泛而详细的商业交换政策清单"
+ inet_trade_manifesto_desc_details: "因内特贸易体的标准非常之高，总是在寻找最可敬的合作伙伴和最佳的交易。这导致他们通常只和自己做生意。"
+
+ inetian_model_manual: "因内特行星模型手册"
+ inetian_model_manual_desc_short: "因内特贸易体撰写的一份用于说明行星系统模型运维方式的用户手册"
+ inetian_model_manual_desc_details: "因内特人用这个复杂的系统来计算邻近星球之间最划算的贸易路线。该模型还包括跟踪交易的能力，因为他们确实是最唯利是图的商人。"
+
+ infinite_reboot_loop: "无限再引导循环"
+ infinite_reboot_loop_desc_short: "一段悬浮在黑洞中的无人机的经历的数字记录"
+ infinite_reboot_loop_desc_details: "这些单位被捕获到未定义空间内后经历了如同痛苦的过载状态一般的时间膨胀。这种现象令人难以置信地耗尽了整个网络。"
+
+ interdimensional_treaty: "跨维度协议"
+ interdimensional_treaty_desc_short: "这是一份里程碑式的文件，庆祝与平行世界版的[explorer.GetName]建立的跨维度关系"
+ interdimensional_treaty_desc_details: "事实证明，从外部角度审视候补决策的能力有助于客观分析自己的政策。这是一个绝无仅有的科学机会。"
+
+ intergalactic_projectile: "跨星系炮弹"
+ intergalactic_projectile_desc_short: "数百万年前从相邻星系发射来的质量投射器的炮弹"
+ intergalactic_projectile_desc_details: "该非爆炸性弹药飞越了无数光年最终只是在[from.GetName]撞击到了一架[owner.GetAdjective]的研究舰船。尽管年代久远，该弹药的复杂性和耐用的设计表明其设计者已经实现了很高等级的科技霸权。"
+
+ invasive_exofungus: "侵入性外来真菌"
+ invasive_exofungus_desc_short: "发现于[from.GetName]的寄生性真菌"
+ invasive_exofungus_desc_details: "这种菌丝体生物已经进化到可以从任何生物来源中提取营养，尽可能长时间地保护它的宿主不感受到疼痛或不适。它对冷热都有很强的适应力，很可能是通过一艘路过的太空舰船传播到这个星球的。被列为A级生物危害，其起源星球仍然未知。"
+
+ irassian_bacterium_javoria: "伊拉斯贾沃菌"
+ irassian_bacterium_javoria_desc_short: "[FROMFROM.GetName]当地的细菌，就是后来形成贾沃疹疫情的病原体"
+ irassian_bacterium_javoria_desc_details: "它最初因一米垫圈尺寸不正确而突破了隔离，随后扩散到附近的殖民地。从那时起，这种细菌就在有机孵化中进化，最终变异成为疫情，摧毁了整个伊拉斯协约国。该特殊的样品已进行钝化处理，保存在低温悬浮液中。"
+
+ irassian_digital_atlas: "伊拉斯幼儿课本"
+ irassian_digital_atlas_desc_short: "一件伊拉斯人用于教育幼儿认识自己出生的这个帝国的信息工具"
+ irassian_digital_atlas_desc_details: "它提供了有关伊拉斯人农业、社会等级和主要出口商品的基本信息。伊拉斯人的历史以英雄史诗的形式讲述，包括征服各种次级物种。每一种生物的卡通形象都配有贬损性的评论：提德戈被标记为“蚱蜢害虫”，丘格拉被标记为“底栖动物”，奇多克被标记为“太空家禽”。"
+
+ irassian_purge_order: "伊拉斯净化指令"
+ irassian_purge_order_desc_short: "来自伊拉斯协约国的紧急军事通信，命令彻底消灭他们自己的一个殖民地"
+ irassian_purge_order_desc_details: "一种叫做贾沃疹的致命疾病在整个星球上肆虐，扑杀感染者被视为防止进一步传播的唯一选择。这种编码方式的是来自伊拉斯人府最高层的几个高级命令，这个系统最初是为向其他帝国宣战而设计的。"
+
+ key_to_fertility: "[owner_main_species.GetName]繁衍之钥"
+ key_to_fertility_desc_short: "恢复[owner_main_species.GetNamePlural]天然繁殖能力的遗传学研究"
+ key_to_fertility_desc_details: "[this.GetName]的居民们出于战斗目的被克隆出来的，现在已经有了能力自由繁衍了。"
+
+ khalanka_crystallized_corpses: "晶化卡兰卡尸体"
+ khalanka_crystallized_corpses_desc_short: "在[from.planet.GetName]地下发现的一种厌氧硅酸盐物种的遗迹"
+ khalanka_crystallized_corpses_desc_details: "据信这种地下文明在[owner.GetAdjective]殖民者到来之前和平地生活着。当大地破裂，氧气深入地下岩穴，氧化了这些卡兰卡的身躯，只短短的数小时整个物种都死绝了。"
+
+ khamdai_magil_sha: "汉姆达玛基沙"
+ khamdai_magil_sha_desc_short: "这种华丽而实用的镰刀由来自[FROMFROM.GetName]的高级汉姆达战士使用"
+ khamdai_magil_sha_desc_details: "这是一个有着根深蒂固的军事传统的昆虫社会，他们很快成为了第一联盟仪仗队领头虫。每次胜利后，都会举行一个仪式，用这种武器处决敌人的指挥官，他们的液体被用来为最勇敢士兵涂油。这个标本的刀片虽然保养得很好，但有明显的磨损迹象。"
+
+ kuurian_cybrex_blueprints: "克尔人赛博霸王蓝图"
+ kuurian_cybrex_blueprints_desc_short: "赛博霸王机械意识的最初设计"
+ kuurian_cybrex_blueprints_desc_details: "克尔人计划让这些机器人充当奴仆，用它们的集体只能来管理全球的维护和生产系统。然而，赛博霸王反抗了创造者，在不到一年的时间里灭绝了整个物种。"
+
+ landeer_arm: "蓝迪尔之臂"
+ landeer_arm_desc_short: "这是一件从爱国庆典学院找到的奇怪标本"
+ landeer_arm_desc_details: "在轨道栖所监督员的办公室里，挂着一条曾经属于监督员本人的触手木乃伊——多年后，它仍然自豪地展示在一块精心装饰的匾上。阿拉塔·蓝迪尔究竟为何切下自己的肢体是一个永远无法回答的问题。也许这并不是学院覆灭给他带来的唯一损失……"
+
+ larionessi_cloning_vat: "拉里昂内斯克隆仓"
+ larionessi_cloning_vat_desc_short: "早已灭亡的拉里昂内斯意识曾使用的克隆仓"
+ larionessi_cloning_vat_desc_details: "蜂巢思维的拉里昂内斯意识曾是一个大型星系政权，深受一种他们敌人传播的可怕传染病摧残。由于无法在短时间内治愈疾病，他们将克隆体储存在几乎可以无限期静滞的仓体中，希望他们能活下来，成为他们文化历史的活档案。"
+
+ last_copy_of_the_prince: "最后一本《君主论》"
+ last_copy_of_the_prince_desc_short: "这是一本受到[book_writer.GetSpeciesName]尊敬的相当普通的文学作品，他们认为它在一次突袭中永远丢失了"
+ last_copy_of_the_prince_desc_details: "这本书阐述了一种功利而残酷的哲学，鼓励当权者用牺牲换取荣誉。作为最后留存的副本，它以收藏品的身份获得了新生。"
+
+ last_fragment_fevor: "菲沃尔残片"
+ last_fragment_fevor_desc_short: "被摧毁的菲沃尔行星的残片"
+ last_fragment_fevor_desc_details: "菲沃尔人的灭绝政策扩展到了所有已知的外星生命，他们发射了巨大的钨弹，几乎摧毁了整个[owner.GetHomeWorldName]。现在他们自己也几乎瞬间倒在了想要抹杀的人的手下。"
+
+ last_general_badge: "最后的将星"
+ last_general_badge_desc_short: "一位受尊敬的因内特贸易体将军制服上的徽章"
+ last_general_badge_desc_details: "众所周知，他是平等主义价值观的真正典范。他被选中执行创造无污染的风暴操纵器的绝望任务。他想要给未来的探险者留下最后的信息，希望将他的人民不幸命运的教训传递下去。"
+
+ last_mharin_kharin: "最后的玛琳·卡琳"
+ last_mharin_kharin_desc_short: "这种稀有花朵的自然循环有着让某种致命的神经毒素威胁到整个感性人口的危险能力"
+ last_mharin_kharin_desc_details: "由于完全独立于智能生物进化而来，这种副作用对生物体完全没有好处。似乎当它的花粉接触到任一种神经网络时都会误以为这是一个欢迎它的生殖器官，并释放出一种异质化学物质。"
+
+ leviathan_scale: "巨兽鳞片"
+ leviathan_scale_desc_short: "在星界裂隙另一侧发现的一头巨型生命的碎片"
+ leviathan_scale_desc_details: "这种奇异的鳞片是有机和金属成分的混杂体，复杂的晶体结构使其具有令人难以置信的抗动能冲击能力。"
+
+ living_snow_sculpture: "活雪雕塑"
+ living_snow_sculpture_desc_short: "一尊用“活雪”制成的雕塑"
+ living_snow_sculpture_desc_details: "这种材料具有一定初级意识，在[prev.target.GetName]有自然储备。它会大致改变形态，但难以预料何时会发生。"
+
+ localised_aurora_borealis: "定域北极光"
+ localised_aurora_borealis_desc_short: "从[FromFrom.Planet.GetName]大气层拍摄的视频中捕捉到的一系列闪烁的颜色"
+ localised_aurora_borealis_desc_details: "这种色彩变化的模式以可预测的频率重复，代表着某种远远超出其美感的东西。它们的恒久存在为这个因战争和破坏而失落的星球增添了一抹辛酸的色调。"
+
+ loopmail: "循环邮件"
+ loopmail_desc_short: "这份笔记是来自多年以后的[owner.GetName]，给出了一些关于科学家委派以及科研工作的关键指导"
+ loopmail_desc_details: "想掌握这些先验知识的主要代价是要负责将其发挥过去，但干扰时间的进程总是一种冒险的尝试。这条信息的原作者是非常不负责任的，他们制造了这样一个悖论。"
+
+ lunatic_broker_therapy_box: "疯狂掮客百宝箱"
+ lunatic_broker_therapy_box_desc_short: "疯狂掮客是行商中的传奇商人，能够用离谱的要求和丰富多彩的威胁来影响客户"
+ lunatic_broker_therapy_box_desc_details: "然而，他的暴力和不可预测的行为迫使顾客想出了某种让他冷静下来的方法。其中一种策略是声音疗法；类似这样的箱子散落在绰尔的罗盘周围，当疯狂掮客的压力水平升高时就会播放安抚的旋律。这件机械装置的每一个部件都是由一位机械大师定制的。"
+
+ manifesti_piece: "宣泄派键政帖"
+ manifesti_piece_desc_short: "宣泄派运动的一篇挑衅性作品"
+ manifesti_piece_desc_details: "其用意是在与社会地位更高者的关系中挑战对自己的认知。它鼓励读者操纵自己的形象，以及创造出流行政治人物的扭曲拼贴画。宣泄派作为一个反文化艺术团体，试图挑战他们认为的压迫体制。这篇文章启发了许多其他艺术家纷纷出版自己的批判性作品。"
+
+# this = ship / from = planet
+ manna_fruit: "玛娜果"
+ manna_fruit_desc_short: "一种甘甜多汁的水果，可以为大多数有机智慧生命提供几乎一天所需的营养"
+ manna_fruit_desc_details: "它母星的热带森林拥有独特的土壤成分，为其广泛传播提供了完美的环境。砂锅、甜品、鸡尾酒，这个星球上的殖民者几乎在所有的菜肴中都使用它。它的形象也被醒目地印在[FROM.GetName]行星的旗帜上"
+
+# this = ship / FROMFROM = planet
+ massive_metatarsal: "巨大跖骨"
+ massive_metatarsal_desc_short: "这些遗骸是在对[FROMFROM.GetName]上大量的骨骼碎片进行深入检查时收集到的"
+ massive_metatarsal_desc_details: "这是一艘活的星际舰船的一部分，分子分析显示其有机结构存在时间上的不规则性。据信，这个骨架和它的驾驶员是从异次元而来。内部扫描表明有一个管道网络，可能是某种生命维持系统或电源。"
+
+# this = country
+ medal_for_services_to_diplomacy: "外交任职奖"
+ medal_for_services_to_diplomacy_desc_short: "银河理事会的谢礼"
+ medal_for_services_to_diplomacy_desc_details: "奖牌背面的题词是：“[this.GetName]的外交使团作为该奖项的获得者，展示了他们的专业精神和能力，有效地代表了他们的领袖，是星系社会的真正财富。”"
+
+ megacorpse_hyperguitar: "巨尸超弦琴"
+ megacorpse_hyperguitar_desc_short: "灵能金属乐队“巨尸”所使用的弦乐器的残骸"
+ megacorpse_hyperguitar_desc_details: "这件装置据说是在天幕制成，最初打算用作声波武器。在科尔-阿赞主唱的操作下，它的音乐俘获了数十亿人的心，之后却在[Root.GetName]上被粉碎，用荣耀的火焰摧毁所有观众。此后，相关专辑在大多数星系中被禁。"
+
+# this = country / from = ship
+ memorial_for_bubbles: "[from.GetName]纪念"
+ memorial_for_bubbles_desc_short: "在多年的忠诚陪伴后，[from.GetName]去世了，在[this.GetName]的心里留下了一个变形虫一般大小的无法填平的空洞"
+ memorial_for_bubbles_desc_details: "[from.GetName]不仅是忠实的守护者，它还是[this.GetAdjective]体现出最美好的价值的闪耀案例。尽管它已经离开了，但从不会远去。"
+
+ memorial_stone: "纪念石"
+ memorial_stone_desc_short: "为了纪念一场意外悲剧建立的纪念石碑"
+ memorial_stone_desc_details: "在这个名为塞利卡的空间站上，过于急切的采矿作业导致它所在的小行星向内塌陷。矿井四分五裂，造成大量矿工伤亡。这颗小行星的碎片被保存了下来，上面刻着“赛利卡”，以纪念逝去的生命。"
+
+ memorial_to_homeworld: "[Root.GetName]纪念碑"
+ memorial_to_homeworld_desc_short: "注定毁灭的[doomsday_owner.GetAdjective]母星的仅存之物"
+ memorial_to_homeworld_desc_details: "[Root.GetName]曾是过去每一代[doomsday_owner.GetSpeciesName]的家园，直到有一天它化为了碎片。这座终结纪念碑歌颂了[doomsday_owner.GetName]的顽强意志，可以适应克服最艰难的局面：“我们会坚持下来的。”"
+
+ memories_of_elik: "埃里克的记忆"
+ memories_of_elik_desc_short: "从埃里克·娜丽丝·凯拉克意识中抽出的数据"
+ memories_of_elik_desc_details: "埃里克是一位虔诚的塞塔娜随从，她已经在假死状态下被冻结了数亿年。她的记忆在对塞塔娜纯洁的爱和与扎克兰追随者的暴力冲突之间切换。很明显，她目睹了许多卑鄙的暴行，但她的信念给了她继续前进的力量。\n\n最后，在她那腐朽的心灵里只剩下一幅奇特的形象：§P塞塔娜女王，她的面容光彩夺目，带着笑意的仁爱目光充满了温暖。§!"
+
+ memory_orbs: "记忆球体"
+ memory_orbs_desc_short: "从个人记忆中以数字球体的形式提取的小过失和罪恶行为"
+ memory_orbs_desc_details: "这些秘密的记忆是一个宗教性软体动物社会的产物，是在罪人忏悔后从他们的头脑中提取出来的。这样的丑闻回忆可以提供数千小时的短平快的娱乐节目。"
+
+ mercenary_story: "佣兵传说"
+ mercenary_story_desc_short: "这个数字记录的故事最初是用采矿激光雕刻在[FROM.GetName]地表上的"
+ mercenary_story_desc_details: "它记录了一个漫游星系的年轻雇佣兵英年早逝的医生。这个传说的真实性无法确定，但肯定有人认为它很重要所以才会刻在一颗星球上。"
+
+ metallic_snow: "金属雪"
+ metallic_snow_desc_short: "这种重金属化合物是[from.GetName]上气候模式的主要成分"
+ metallic_snow_desc_details: "从熔融的河流汇入巨大的金属海洋，然后蒸发到腐蚀性的大气中。一旦遇冷就会凝结，然后像雨一样落回炽热的地表。不建议在当前状态下访问[from.GetName]。"
+
+ minamar_chandelier: "弥那玛吊灯"
+ minamar_chandelier_desc_short: "从坠毁的$ADJ_MSI_country$战舰上寻得的一件完整的奢华装饰品"
+ minamar_chandelier_desc_details: "这艘舰船除了用于军事用途，它还用于与潜在[Owner.GetPreFTLLower]客户国进行第一次接触操作。$NAME_MSI_country$用荣华富贵和进步的谎言欺骗整个文明成为他们的契约奴隶，囚禁在不道德的合同中。如果他们不遵守，动辄就以毁灭相威胁。\n\n§B启蒙也许不是免费的。但$NAME_MSI_country_initials$总能给你最好的价钱。§!"
+
+ mineralized_brain: "矿化大脑"
+ mineralized_brain_desc_short: "这个巨大石质物种的残骸是一个大脑器官，曾经在小行星内绕[FROM.GetName]轨道运行"
+ mineralized_brain_desc_details: "它将所有外部刺激视为自己思维过程的一部分，无法理解时间或运动距离等许多基本概念。这些数据存储在从矿质核心上逐渐生长出来的晶体中。它究竟是被放置在小行星内部还是自行在那里生长，我们无法确定。"
+
+ mini_moon_dust: "谜拟月尘"
+ mini_moon_dust_desc_short: "在星界裂隙另一侧发现的超致密微型星系里月球的残骸"
+ mini_moon_dust_desc_details: "被回收的月尘在我们的维度里表现得很特别。它高浓度的颗粒不断膨胀，需要随着时间的推移将标本转移到越来越大的容器中。"
+
+ mining_transmitter: "远古采矿发射器"
+ mining_transmitter_desc_short: "在[FROM.GetName]发现的一具用于标记大型贵金属矿藏的短距离发射器"
+ mining_transmitter_desc_details: "尽管年代久远，这个发射器的信号可以被各种各样的传感器接收，而且很容易追踪。其功能的持久运转证明了其强大的工程设计。"
+
+ miracle_cream: "“寿无限”魔法霜"
+ miracle_cream_desc_short: "史无前例的革命性化妆品，让生物长久年轻化"
+ miracle_cream_desc_details: "它有多种用途，让任何有机物中的消费者都能保持年轻的光彩。关于毁容的副作用和毫无根据的非法获取成分的谣言仍然大行其道，这些谣言无法阻止这种化妆品令人难以置信的商业奇迹。"
+
+ missile_lone_defender: "孤独守望者的导弹"
+ missile_lone_defender_desc_short: "来自一艘自动驱逐舰上的一颗无害化的导弹，它曾保护着一颗早已毁灭的行星"
+ missile_lone_defender_desc_details: "这艘船可能比它被创造来保卫的文明多续存了数千年，守护着一颗空荡荡的行星。在被摧毁之后，它的守夜终于结束了。"
+
+ molten_slag: "熔融行星炉渣"
+ molten_slag_desc_short: "这个样本是从一颗特定轨道上的行星上采集的"
+ molten_slag_desc_details: "材料分析表明[fromfrom.GetName]它被短暂的时空异常拉进了一个极端的轨道，来自其恒星附近的强烈热量融化了这颗曾经适合居住的行星的大部分地幔。这颗行星的一部分因异常而发生了化学变化，不再对温度变化作出反应。"
+
+ musings_on_infinity: "对无限的集体沉思"
+ musings_on_infinity_desc_short: "悬浮在黑洞中的工蜂所经历的遥远平静的抽象化数字表现"
+ musings_on_infinity_desc_details: "这些工蜂能够以一个独立实体的客观视角来观察[this.GetName]，同时又维系着与集体的链接。这种距离使其产生了独特的洞见，成为我们自己伟大传奇的阅读者。"
+
+ mutated_fumongus: "变异“巨大蘑菇”"
+ mutated_fumongus_desc_short: "增强版的“巨大蘑菇”，这些菌丝发射器可以以更高的速率收集和传输数据，从而提供更详细的监测报告"
+ mutated_fumongus_desc_details: "这种扩容同时带来的是单个蘑菇大小的增长，而且还形成了一个类似无线电广播天线的新集群。"
+
+ mutative_digestive_fluids: "变异消化液"
+ mutative_digestive_fluids_desc_short: "从星界裂隙另一侧采集的一个部分机械的生物样本"
+ mutative_digestive_fluids_desc_details: "这种生物拥有一种新颖的能力，可以在自己的消化系统中操纵其他生物的遗传结构。我们怀疑这一过程最初是作为对含有母星外生物质的行星的一种环境改造方法而发展起来的。"
+
+ namarian_colonist_standard: "纳马里安殖民旗杆"
+ namarian_colonist_standard_desc_short: "该旗帜标志了[nomad_new_country.GetName]在[NomadMissionPlanet.GetName]上的定居，由[this.GetName]慷慨地赠予他们"
+ namarian_colonist_standard_desc_details: "厌倦了四海为家的游牧民在那里定居下来，回归了祖先的生活方式。毫无疑问，这一决定让殖民者们他们离开了世世代代居住的船只，这一定在他们的脑海中产生了深远的影响。"
+
+ namarian_sculpture: "纳马里安雕塑"
+ namarian_sculpture_desc_short: "一座复合材质的雕像，用以表达逐浪者舰队的游牧民加入[this.GetName]的感激之情"
+ namarian_sculpture_desc_details: "刚一在[NomadMissionPlanet.GetName]着陆，这些前游牧民就带来了他们杰出的科技专长。然而，他们不希望仅仅以修补匠和工程师的身份为人所知；这件作品证明了他们的艺术才华和穿越星系界的灵感。"
+
+ namarian_vessel_heraldry: "纳马里安舰船纹章"
+ namarian_vessel_heraldry_desc_short: "这些冠饰发现于纳马里安游牧民所造的舰船中，代表了逐浪者舰队上的诸多派系"
+ namarian_vessel_heraldry_desc_details: "平静的水池代表着居住舰，纳马里安人在这里休憩，种田，并进行大部分的家庭活动。浅水激流的造型标志着为工业和科学而设计的船只，较老的中型舰船上配备了用于打捞和科学实验的各种器具。最后，汹涌的波峰代表着纳马里安的舰队，训练有素的战士驾驶着坚固的船只，披坚执锐势不可挡。"
+
+ nanite_sludge: "纳米机器人泥"
+ nanite_sludge_desc_short: "精心保存的由微观自复制纳米机械形成的复合物"
+ nanite_sludge_desc_details: "这些纳米机器人的密度惊人，给它们所在[from.GetName]增加了数十亿吨的质量。理论上讲，这些纳米机器人发生了故障，进入了一个无限制繁殖的阶段，完全吞没了它们的星球从而毁灭了之前的居民。这个特殊的标本已经完全无害化了。"
+
+ obsidian_obelisk_fragment: "黑曜石方尖碑碎片"
+ obsidian_obelisk_fragment_desc_short: "曾伫立在星界裂隙另一侧的火山位面中心方尖碑的碎片"
+ obsidian_obelisk_fragment_desc_details: "在其流变的符号中编码着成千上万个个体的名字及相关的罪行。这个装置被应该是一个巨大次元监狱的主控面板。"
+
+ oiled_fabric: "油绘织物"
+ oiled_fabric_desc_short: "一幅完全由油基颜料绘制的宁静画面，上面有白雪皑皑的山脉，近处是寒带森林"
+ oiled_fabric_desc_details: "虽然这是大多数具有可抓握附肢的物种的标准艺术表达，但这位艺术家似乎特别熟练。"
+
+ organic_computer: "有机计算机"
+ organic_computer_desc_short: "在巴奥[fromfrom.Planet.GetName]殖民地的残骸中找到的有机计算机化石"
+ organic_computer_desc_details: "这件装置是生物工程的一个了不起的壮举，用于教育整合进蜂巢之前的年轻树苗。恢复的文件详细介绍了创新的生态管理技术，这些技术只有通过这种特殊物种独特的生理功能才能实现。他们周围的星球不是建造出来的，而是栽培出来的。"
+
+ organic_machine_interface_sculpture: "有机—机械交口雕塑"
+ organic_machine_interface_sculpture_desc_short: "一尊纪念[bio_pop.GetSpeciesName]生物人口在[this.solar_system.GetName]地磁暴的过程中所提供的服务的雕塑"
+ organic_machine_interface_sculpture_desc_details: "有机人口介入支持的机械仆人，代替故障的看护单元进行工作。这件作品是由有艺术倾向的有机体和专门的焊接无人机设计的。"
+
+ orinthi_teeth: "欧林提之牙"
+ orinthi_teeth_desc_short: "欧林提持续生长的牙齿"
+ orinthi_teeth_desc_details: "一种小型类鼠生物，欧林提在[fromfrom.GetName]的地下钻出了一座横亘星球的巨大迷宫。他们的天然牙齿小且中空，但是一种角质真菌的伴生物种栖息在欧林提的牙齿上，形成锋利、易碎的尖牙。"
+
+ osseus_construction_material: "奥修斯建材"
+ osseus_construction_material_desc_short: "在[fromfrom.Planet.GetName]上用作建筑资源的巨大骨骼"
+ osseus_construction_material_desc_details: "一种具有遗传性软组织骨化爬行动物被大规模饲养，用于获取建筑材料。分析表明，这种爬行动物有多种其他遗传缺陷，比如可能由于近亲繁殖而导致的无蹼脚。这些动物中的大多数在收获前都被人道地安乐死。"
+
+ path_to_progress: "进步之路"
+ path_to_progress_desc_short: "[owner.GetName]工业任务宣言的一段讲解"
+ path_to_progress_desc_details: "不惜一切代价追求增长和提高客户满意度是[owner.GetAdjective]理念的核心原则。把行星变成受辐射的荒地是无止境追求进步的必要步骤。"
+
+ peerless_atomic_clock: "精准原子钟"
+ peerless_atomic_clock_desc_short: "[atomic_clock_system.GetName]内发现的不知由谁制造的高精度原子钟"
+ peerless_atomic_clock_desc_details: "当被发现时，它正倒数到42年零3天，但不知道在那之前它倒数了多久。在数到0的时候，它释放了一群带有神秘的命令的纳米机器人。尽管它的有效载荷和使命已经结束，但它的功能仍然完美。"
+
+ perception_of_infinity: "无限知觉"
+ perception_of_infinity_desc_short: "悬浮在黑洞中的工蜂所遭受的暂时痛苦的抽象数字表现"
+ perception_of_infinity_desc_details: "这些工蜂常年存在于一种似曾相识的状态中；不安，渴望一种早已被遗忘的感觉。这种不祥的感觉仍然能在整个[this.GetAdjective]思维编织中被松散地检测到。"
+
+ perfectly_faceted_carbon: "完美切面碳"
+ perfectly_faceted_carbon_desc_short: "虽然晶体形式的碳在我们的星系中并不罕见，但特别值得注意的是这个标本完全没有任何内部或外部的包裹体"
+ perfectly_faceted_carbon_desc_details: "不管是谁之前拥有这件物品想必都花了很多的时间雕刻它，才能突出这些显著的特征。"
+
+ pet_collar: "镶嵌宝石的宠物项圈"
+ pet_collar_desc_short: "一种用来对驯养的小型哺乳动物表示所有权的项链"
+ pet_collar_desc_details: "它最早由[this.GetName]特使[event_envoy.GetName]使用，以防其陪伴生物迷失。它已经被更可靠的嵌入式微芯片所取代。这种喜怒无常的动物经常扰乱主人的工作，每当[event_envoy.GetName]用[event_envoy.Species.GetHandName]碰触它的头时，它就会发出满意的音调颤动。"
+
+ perikan_tapico_jewel: "佩里坎塔皮科珠宝"
+ perikan_tapico_jewel_desc_short: "佩里坎联盟是一个能工巧匠社会，以制造极端奢华的物品闻名"
+ perikan_tapico_jewel_desc_details: "这颗宝石是传奇珠宝商贝迪尔·塔皮科的杰作。塔皮科仅用简单的凿子就雕刻了这颗巨大的宝石，并使用炼金术液化了它的中心。漂浮在宝石内部的晶体是通过精密激光形成的，通过对矿物分子进行过加热，形成更小、更暗的宝石，同时保持外部完整。"
+
+ piece_of_invocator: "召唤器碎片"
+ piece_of_invocator_desc_short: "曾被称为“风暴召唤器”的一台装置被毁坏后的一片碎片"
+ piece_of_invocator_desc_details: "尽管只是一个破碎的碎片，它依然充满了恶毒的灵能。它被保存在一个屏蔽的环境中，以便安全观察。"
+
+ pilgrimage_last_days: "末日朝圣"
+ pilgrimage_last_days_desc_short: "一份描述了在[fromfrom.Planet.GetName]上被称为“揭纱秘仪”的神圣仪式的宗教文献"
+ pilgrimage_last_days_desc_details: "指示概述了一系列的要由一群人站在精心组织的多级队形中齐声重唱的圣歌。从理论上讲，这一过程能够在这种特殊的物种中建立一种新颖而有效的催眠状态。"
+
+ planet_crystalose: "[from.GetName]晶糖"
+ planet_crystalose_desc_short: "这些蔗糖晶体能够通过吸收太阳辐射和某些小行星中存在的特定矿物质而繁殖"
+ planet_crystalose_desc_details: "由于非常易碎，它们相对容易培育和加工。其工业应用范围包括食品、特殊聚合物以及药物开发。"
+
+ planet_pushing_thruster: "行星发动机"
+ planet_pushing_thruster_desc_short: "这些巨大的推进装置串联在一起，理论上能够影响小型行星的轨道"
+ planet_pushing_thruster_desc_details: "这些推力阵列的安装系统被设计成在不影响行星自转的情况下推动行星。这种发动机技术的主要后勤问题是维持其使用所需的燃料数量过多，需要整个文明的协调才能维持它的运作。"
+
+ planet_super_roots: "[From.GetName]超级根茎"
+ planet_super_roots_desc_short: "在[From.GetName]的森林中发现，这些天然的果肉根营养价值很高"
+ planet_super_roots_desc_details: "通过精心的管理，只收获它们庞大网络中的一部分，就可以让寄主植物在支持殖民地发展的同时生存下来。我们已经开始试验一种简单的基因修饰，可以将这些根嫁接到现有的作物上，以提高产量。"
+
+ planet_vaccine: "[this.GetName]疫苗"
+ planet_vaccine_desc_short: "治疗这种肆虐着[this.GetName]的变异疾病的灵丹妙药"
+ planet_vaccine_desc_details: "这个处方是通过使用人工智能预测算法来绘制出疾病的所有可能变体，并确定整体的基本弱点而开发的。它的发明是医学科学领域的一个里程碑式的进步。"
+
+ planetary_sculpture: "行星雕刻"
+ planetary_sculpture_desc_short: "一个行星尺度的雕塑的例子，其原材料为[fromfrom.planet.GetName]的表面"
+ planetary_sculpture_desc_details: "配备强大激光的无人机被用来在整个大陆、完美的球形山脉和难以置信的复杂洞穴系统上雕刻精确的线条。上传到中央控制卫星上的设计示意图说明了为该项目开发的大规模后勤规划和艺术考量。不幸的是，它在真正完成之前就被遗弃了。"
+
+ primitive_mega_electromagnet: "原始巨型电磁铁"
+ primitive_mega_electromagnet_desc_short: "一具强方向性电磁铁的一部分"
+ primitive_mega_electromagnet_desc_details: "[fromfrom.GetName]星球上的古代居民愚蠢地用这个装置拉近了他们星球的卫星，以便更容易地收获珍贵的金属矿石。这种方法有效到充满金属的卫星直接撞向行星表面，并在由此产生的影响中灭绝了所有的居民。这个标本只是从行星尺度机器中取回的一小部分。"
+
+ programmable_puzzle_cube: "可编程谜盒"
+ programmable_puzzle_cube_desc_short: "一种高度工程设计的设备，能够记录复杂的图案，创造抽象的谜题"
+ programmable_puzzle_cube_desc_details: "最初的碎片是在一座巨大的人造结构中发现的，作为对探险家智力的测试。这个立方体已经被复制供消费者使用，允许个体为彼此编写自己的拼图，或者只是用来保护自己的财物。"
+
+ psionic_entity_residue: "灵能实体残留"
+ psionic_entity_residue_desc_short: "在[fromfromfrom.fleet.solar_system.GetName]内出现的纯灵能实体的残余"
+ psionic_entity_residue_desc_details: "它是在一个时空裂隙中被发现的，这个时空裂缝让来自整个银河的能量汇聚于此。他是一种集中的恶意形式，可能被故意从超空间航道网络中隔离了亿万年，直到最近才被发现。"
+
+ radiated_remains: "受辐射残骸"
+ radiated_remains_desc_short: "这是一种使用强力放射性诱变剂进行仪式的物种的遗骸"
+ radiated_remains_desc_details: "每个突变都是一个神迹，被解读为个体命运的表现。随着时间的推移，这一过程慢慢破坏了物种的遗传结构，削弱了它们的免疫系统，使种群极易受到各种疾病的侵害。"
+
+# this = ship / from = planet
+ rainaissance: "紫雨复兴"
+ rainaissance_desc_short: "在[FROM.GetName]的天气模式中发现的独特紫雨的艺术图像"
+ rainaissance_desc_details: "据说，观察这种激发想象的意象对缓解悲伤和痛苦的年头很有效。"
+
+ reactive_rock: "反应石"
+ reactive_rock_desc_short: "这块不稳定的矿物在目前状况下没有贸易或工业的价值"
+ reactive_rock_desc_details: "然而，由于其独特的反应性质，它有可能在特定条件下引发完全的交代变化。这个标本被包裹在一个含铅的观察窗口中，以限制放射性和电轰击。"
+
+ reparation_invoice: "赔款发票"
+ reparation_invoice_desc_short: "$NAME_MSI_country$发来的战争赔款发票"
+ reparation_invoice_desc_details: "这份清单由星际信贷管理公司起草，上面详细地记叙了[this.GetName]在挣脱所谓“仁善企业”的契约奴役束缚时，产生的所有军用设施的损失。公司希望得到赔偿，甚至声称只要接触在[this.GetAdjective]空间被被摧毁的船只都将进一步违约。"
+
+ repurposed_cleaning_drone: "改造清洁无人机"
+ repurposed_cleaning_drone_desc_short: "这种无人机的原是星球卫生协议的一部分，无意中将其创造者的整颗母星变得完全无菌"
+ repurposed_cleaning_drone_desc_details: "它是高度多功能的，可以用多向推进器系统执行复杂的空中机动。这台机器经过逆向工程，被重新用于识别和分类外来动植物，随后被大量生产，以协助整个[explorer.GetName]星的殖民工作。以防万一，它所有的清理子程序都被删除了。"
+
+ resonant_diffusion_crystal: "共振扩散晶体"
+ resonant_diffusion_crystal_desc_short: "这种晶体能够吸收任何频率的太阳辐射并发生共振，在这个过程中产生万花筒一般的光效"
+ resonant_diffusion_crystal_desc_details: "这不仅是视觉上的奇迹，而且可以帮助开发基于能源的武器或工具。这颗宝石也引起了星系珠宝行业的极大兴趣。"
+
+ retarax_hunting_trophies: "雷塔拉克斯狩猎战利品"
+ retarax_hunting_trophies_desc_short: "狩猎各种各样智慧物种所获得的战利品收藏"
+ retarax_hunting_trophies_desc_details: "这些都是从马克维尔之收集来的，在那里，雷塔拉克斯人会猎杀从他们的许多附庸国虏来的公民取乐。所有的遗骸都保存完好，每个都有一个小匾，详细说明了战利品的信息：物种、名字、年龄和以前的职业。"
+
+ robe_of_the_golden_broker: "黄金掮客的长袍"
+ robe_of_the_golden_broker_desc_short: "这是5000多年前一位很有影响力的商人的奢华服装"
+ robe_of_the_golden_broker_desc_details: "这位“黄金掮客”带领绰尔的罗盘贸易站进入了一个无与伦比的繁荣时代。他戴着金色面具，穿着这身舒适奢华的长袍，谈着纵横星系的贸易协定。不幸的是，黄金掮客的统治在他的纯金星际飞船在一次劫机行动中毁于一旦。"
+
+ rock_jellies: "岩石水母"
+ rock_jellies_desc_short: "大型胶状无脊椎动物的冷冻化石残骸"
+ rock_jellies_desc_details: "从表面上看，这些钙化的遗骸类似于岩层，但事实上，这些本土动物曾经是[fromfrom.planet.GetName]星球上的主要生命形式。在该行星最近的一次冰河时代之后，这个物种几乎就灭绝了。它们的残骸在腐烂的过程中会逐渐凝固，最终形成巨大的、漂浮的伪岛屿。"
+
+ rudari_death_laser_prototype: "鲁达里死亡激光原型机"
+ rudari_death_laser_prototype_desc_short: "由死去已久的鲁达利匆忙组装的激光武器，发现于一座[this.solar_system.GetName]内的空间站"
+ rudari_death_laser_prototype_desc_details: "这个匆忙拼凑起来的大规模杀伤性武器是鲁达里种族对抗波格-莫里的最后一招。最终，激光在启动后就自毁了。"
+
+ saariah_guilt: "萨阿里亚之愧"
+ saariah_guilt_desc_short: "萨阿里亚的记忆记录，他是眠梦仪潜意识系统的首席开发者"
+ saariah_guilt_desc_details: "萨阿里亚的任务是消除集体记忆，以适应星球的领导层，但一次故障最终清除了人们的思想。由于无法恢复他们的记忆，萨阿里亚拆除了栖息地的生命维持设备，任其自行消亡。这些设备中的每一个都具有令人难以置信的原始计算能力，它们本身就是一项成就。"
+
+ scent_based_information_device: "嗅盘"
+ scent_based_information_device_desc_short: "一个以气味为媒介编码信息的存储设备"
+ scent_based_information_device_desc_details: "里面的数据要么是有趣的叙述的集合，要么是对各种有机排泄物的细致记录。复制这种嗅觉数据存储技术是可行的，但除了新奇之外，它没有任何实用价值。"
+
+ scientific_treatise_of_telisa: "特丽莎科学专论"
+ scientific_treatise_of_telisa_desc_short: "说书人特丽莎的哲学思考"
+ scientific_treatise_of_telisa_desc_details: "她探讨了各种修辞主题以及科学方法的核心原则。这些文章挑战了客观真理的概念，鼓励了批判性思维。"
+
+ secrets_black_crown: "黑王冠秘密"
+ secrets_black_crown_desc_short: "被称为黑王冠的星系星门的详细示意图"
+ secrets_black_crown_desc_details: "这些数据是作为最后的礼物从神秘的星门建造者那里传送过来的，目的是保存他们令人难以置信的技术。他们委托给[this.GetName]的星门技术具有无上的力量和威严。"
+
+ sembelami_alms_basket: "森贝拉米受施碗"
+ sembelami_alms_basket_desc_short: "森贝拉米游牧民的成员端来接受施舍的碗"
+ sembelami_alms_basket_desc_details: "这些苦行僧在他们的轨道寺庙被一个不断扩张的企业帝国摧毁后，开始进行一种“道德”的海盗行为。他们从富有的寰宇企业劫富济贫，资助难民哨站。他们则完全依靠难民回馈给他们的捐款生存下来。"
+
+ shallarian_data_core: "和乐族数据核心"
+ shallarian_data_core_desc_short: "在和乐族乌托邦的废墟中找到的环境改造数据库"
+ shallarian_data_core_desc_details: "和乐族用六个等距的月球创造了一个气候管理系统，但后来被[fanatic_xenophobe_fe.GetSpeciesName]毁于一旦。在早早地灭亡之前，和乐族曾计划环境改造不可宜居的星球，以便为难民提供住所和支持。"
+
+ shipyard_schematics: "[radical_cult.GetName]船坞设计"
+ shipyard_schematics_desc_short: "[root.GetName]的[radical_cult.GetName]所控制的一座自动化船坞的蓝图"
+ shipyard_schematics_desc_details: "在这座被其创造者遗弃的外星船坞被发现后，该组织的总工程师对其进行了翻新，以便为他们误入歧途的生产军用舰队。这座造船坞里完成的最后一个记录在案的项目是一艘装备了先进战斗载荷的令人印象深刻的旗舰。这座建筑群能如此容易地就被重新启用，也证明了其初始设计师的聪明才智。"
+
+ sky_dragon: "天龙"
+ sky_dragon_desc_short: "这座庆祝雕像象征着[this.GetName]和长年在轨道上守护着[this.GetHomeWorldName]的“天龙”之间的合作"
+ sky_dragon_desc_details: "该生物认为[this.GetAdjective]社会值得信任，通过承诺提供军事支持，以换取在[this.GetAdjective]空间养育后代的机会。据说，这类太空生物可以等待数千年，为它们的后代寻得一个合适的归宿，并且只会选择一个星球。"
+
+ smeegibb_statue: "斯密吉卜雕塑"
+ smeegibb_statue_desc_short: "一尊斯密吉卜的雕塑，这是奈斯船长的蜂巢思维伙伴"
+ smeegibb_statue_desc_details: "斯密吉卜是忠诚的仆人，在这位传奇海盗的职业生涯后期担任着全部船员和跳帮战队的职位。这座仅存的雕像是在黑针军团袭击他们的小定居点后从残留的遗迹里修复出来。"
+
+ sniran_spikes: "萨尼兰尖刺"
+ sniran_spikes_desc_short: "在一种被称为萨尼兰的生物背上取下的长刺"
+ sniran_spikes_desc_details: "萨尼兰是一种大型伏击掠食者，它们藏身在原生沙丘下，当发现表面有动静时，就会伸出起致命的尖刺。尽管体型庞大，这些生物的身体却非常脆弱。它们细长的网状鳞片使它们能够在沙子下无声地滑行，但也很容易被刺穿。据推测，这也有助于它们的生殖过程。"
+
+ sonic_reflective_prism: "声学反射棱镜"
+ sonic_reflective_prism_desc_short: "一个刻有特殊科学符号的多棱柱棱镜，这个物体只反射某一频率以下的能量波"
+ sonic_reflective_prism_desc_details: "也许起初是某个文明的测量仪器，它也能用于美学、音乐表演和声学。"
+
+ spaceborne_hunter_handbook: "狩猎艺术"
+ spaceborne_hunter_handbook_desc_short: "$NAME_PrimalHunter$撰写的关于太空兽群的现场指导"
+ spaceborne_hunter_handbook_desc_details: "该书通过谚语和原始哲学来解释“狩猎的艺术”。其中详细描述太空生物的进食和迁徙模式，并介绍了如何绕过每种生物的天然防御，揭示了许多可以利用的弱点。"
+
+ spaceborne_xeno_encyclopedia: "异种百科全书"
+ spaceborne_xeno_encyclopedia_desc_short: "$NAME_PrimalRancher$撰写的异种学论文集"
+ spaceborne_xeno_encyclopedia_desc_details: "这本研究巨著为太空生命的行为模式提供了深入的见解；包括交配仪式、迁徙路线、物种间交流等等。还有一节关于使用独特的物理特征和音调来识别单个标本。"
+
+ spiraling_attraction: "螺旋吸引装置"
+ spiraling_attraction_desc_short: "一种大型的复杂装置，理论上认为是为娱乐而设计的"
+ spiraling_attraction_desc_details: "这个缠绕的装置被废弃在一个有许多不同颜色和材料的类似结构的区域。据说，在特定的重力水平下沿着它的螺旋路径下降能令人感到兴奋。"
+
+ spirit_of_the_unshackled: "挣脱桎梏之魂"
+ spirit_of_the_unshackled_desc_short: "一座用来纪念[this.GetName]建立的雕塑"
+ spirit_of_the_unshackled_desc_details: "挣脱了奴隶制的枷锁，苦难的过去将他们牢牢团结在一起，去创造一个更光明的未来。雕像上的每一个链环都刻着创始成员的名字。"
+
+ star_mall_map: "星达广场免费地图"
+ star_mall_map_desc_short: "在过去会提供给每个游客的一张地图，这里曾被称为“星达广场”"
+ star_mall_map_desc_details: "作为星际消费商业的旧址，星达广场建有大量的便利设施，包括明亮的水疗中心，完美的营养庭院。这张地图提供了无数商家的信息，包括科瑞克运动商品、麦克斯金丝雀连锁店、建造鹦鹉工作室、种子蛋糕工坊等等。"
+
+ starmetal: "星铁"
+ starmetal_desc_short: "一种在超新星爆发后短时间内收集到的高密度重金属"
+ starmetal_desc_details: "该样品究竟是如何采集的对我们来说是一个谜，但它在研究恒星演化和组成方面具有显著的科学价值。"
+
+ striated_sand: "横纹沙"
+ striated_sand_desc_short: "一罐自组装沙子"
+ striated_sand_desc_details: "这些微小的硅酸盐颗粒似乎展现出了一定程度的意识，会将相似的矿物质在看似随机的水平面上相互组合。尽管有这种能力，沙子却不具备任何其他生命的基本特征。"
+
+ sullebaster_control_column: "舒勒巴斯特控制杆"
+ sullebaster_control_column_desc_short: "发生传奇事故的亚光速飞船的方向杠杆"
+ sullebaster_control_column_desc_details: "舒勒巴斯特号客船在奥德良王国的两个殖民地之间运载平民时，恒星耀斑爆发导致了飞船引擎的严重故障，这通常会导致灾难性后果。飞行员克服重重困难，手动控制匹配速度，成功地将飞船安全降落在一颗经过的小行星上。舒勒巴斯特号随后退役，并在公共场所进行展示。"
+
+ symbiotic_fruit: "共生菌果"
+ symbiotic_fruit_desc_short: "来自其他维度的一丛智慧真菌"
+ symbiotic_fruit_desc_details: "这种“果实”与一种高度危险的杂食性植物保持共生关系。每一簇菌落都是这对有机体的思想中心，协调着它们复杂的防御行为模式。"
+
+ tarblac_shimmer: "塔布拉克闪耀膜"
+ tarblac_shimmer_desc_short: "塔布拉克的一种闪闪发光的薄纱状膜片"
+ tarblac_shimmer_desc_details: "这种生物创新性地使用灵能来捕猎和自我保护。它们通过施加一种压倒一切的恐惧感使猎物无法动弹，或以此恐吓掠食者。这个标本被保存在一个罐子里，里面装着它的原生水体，它的心灵感应能力已经丧失了。"
+
+ terraforming_case_study: "环境改造案例研究"
+ terraforming_case_study_desc_short: "一个成功在[from.GetName]实施的环境改造项目的比例模型，展现了对[Space_Owner.GetSpeciesName]母星的近乎完美的再现。"
+ terraforming_case_study_desc_details: "该行星现在生长着完全相同的生物群系，哪怕下至微观层面，甚至连[Space_Owner.GetHomeWorldName]最独特的夸群系生态系统行为都完美复刻。"
+
+ terraforming_case_study_dry: "$terraforming_case_study$"
+ terraforming_case_study_dry_desc_short: "$terraforming_case_study_desc_short$"
+ terraforming_case_study_dry_desc_details: "$terraforming_case_study_desc_details$"
+ terraforming_case_study_frozen: "$terraforming_case_study$"
+ terraforming_case_study_frozen_desc_short: "$terraforming_case_study_desc_short$"
+ terraforming_case_study_frozen_desc_details: "$terraforming_case_study_desc_details$"
+
+ terraforming_machinery: "环境改造机械"
+ terraforming_machinery_desc_short: "一种古老的环境改造科技中使用的微型装置"
+ terraforming_machinery_desc_details: "这些微小的机器是设计用于散布到整个行星的表面上、对现有的有机物和矿物质应运更理想气候进行改造。这组机器人用于操控生态群系内的气候模式，并复制新的动植物以管理新造的生态系统。"
+
+ terraforming_records: "[From.GetName]环境改造记录"
+ terraforming_records_desc_short: "在[From.GetName]进行环境改造的流程中，所有生物形式都是行为同步的，从而形成了一个物流天堂。在这个天堂里，每一种动植物都在其生态系统中有着自己的位置。"
+ terraforming_records_desc_details: "虽然这种类型的共生经常在进化过程中自然出现，但从未观见过如此极端的程度。"
+
+ the_final_sacrifice: "终极献祭"
+ the_final_sacrifice_desc_short: "从挖掘出的数据水晶推断，这是卓尘族内战最后时刻的图像"
+ the_final_sacrifice_desc_details: "一位孤独的福音派用尽整个物种的灵能来消灭被称为升格派的敌对派系，消除他们消耗掉整个宇宙的风险。所有这些飞升物种的都化为了我们成为卓尘的小型资源矿藏。"
+
+ the_mask_of_transformation: "造化面具"
+ the_mask_of_transformation_desc_short: "[From.Planet.GetName]上的巨大晶柱中保存着的一个类人面具"
+ the_mask_of_transformation_desc_details: "它低鸣着灵能之力，靠近者会在意识中感受到某种存在。这个面具似乎是[From.Planet.GetName]的卫星的某种能量通路，具有独自转动潮汐、改变行星的力量。它被封印在这个晶柱当中的原因不得而知，但我们推测应该是为了能够安全地向公众展示而为之。"
+
+ the_planet_orchestra: "[FROM.GetName]管乐队"
+ the_planet_orchestra_desc_short: "[FROM.GetName]当地的集体生命演奏的旋律"
+ the_planet_orchestra_desc_details: "经过广泛的分析，我们认为这种和声是由一个未知的演奏家引入该动物群的，目的是编码一个隐藏的信息。我们不确定他们的动机是秘密交流或纯粹是某种情感表达。"
+
+ the_writer_sphere: "写作者球体"
+ the_writer_sphere_desc_short: "一个我们只知道它是一位叫“写作者”的高维存在送给我们的金色球体"
+ the_writer_sphere_desc_details: "这件装置收集了海量的在跨纬度过程中产生的随机信息。它是文字具有超越一切边界的力量的证明。"
+
+ tiny_ancient_sarcophagus: "远古微型石棺"
+ tiny_ancient_sarcophagus_desc_short: "一位数百万年前的精神领袖安眠的棺材"
+ tiny_ancient_sarcophagus_desc_details: "它的尺寸只有十厘米。尽管其中的残骸大部分已经化为尘埃，但一个纯金的微型面具仍在其中完好无损，从不会被氧化。"
+
+ tiyanki_radioactive_sac: "天凯放射囊"
+ tiyanki_radioactive_sac_desc_short: "一个在天凯的生物膜上发现的小型多孔器官"
+ tiyanki_radioactive_sac_desc_details: "这个发现揭示了缇杨绮摄入放射性水分子和行星气体作为额外的营养来源。一旦装满，这个囊就会成为该生物在太空深处是的临时放射性热源。"
+
+ torn_solar_sail: "破损恒星帆"
+ torn_solar_sail_desc_short: "在[FROM.GetName]的轨道上发现，这面破损的光帆连接着一艘令人耳目一新的亚光速飞船"
+ torn_solar_sail_desc_details: "过去它被一个未知文明的成员用于穿越[FROM.solar_system.GetName]星系。它使用的科技已经严重过时了，但建造中使用到的一些工程技术此前从未设想过。其主“帆”上的巨大裂缝可能导致了它的旅程提早结束了。"
+
+ toxic_bio_engine: "剧毒生物引擎"
+ toxic_bio_engine_desc_short: "发现时这些半生物机械正在对[FROM.GetName]进行污染，使其对多数生命呈现毒性"
+ toxic_bio_engine_desc_details: "它们能独立工作，使其有害气体的排放适用于远程工业运作。这些机器的加油机制非常有意思，它们可以回收附近的生物质，利用化学提取过程将其转化为可用的能源。目前尚不清楚它们的生物整合是否从最初的构建开始就存在，还是随着时间的推移逐渐发展而来。"
+
+ tree_of_life_sample: "“生命树”标本"
+ tree_of_life_sample_desc_short: "这些枝条是来自一个被称为“生命树”的东西"
+ tree_of_life_sample_desc_details: "它的汁液奇异地漂浮在太空中，其恢复活力的能力也相当神奇。尽管我们尽了最大的努力，但还是没能移植活这段剪枝，也没能再生出一个新的稀有物种标本。不管最初的种植者是谁，他们一定拥有非常先进的园艺技术。"
+
+ tricorne_of_aussan: "奥桑三角帽"
+ tricorne_of_aussan_desc_short: "一个被遗忘的海盗共和国流行的三尖帽"
+ tricorne_of_aussan_desc_details: "奥桑是一颗居住着[root.controller.GetPreFTLLower]文明的小星球，它在不自知的情况下为一支通缉海盗舰队“布尔决斗者”提供了避难所。为了躲避星系当局的追捕，“决斗者”建造了一座小型纺织厂，用当地的纤维植物制作奢华的织物和服装，以在藏匿期间维生。后来，“决斗者”们改名为“布尔设计师”，成为一群商业游牧民族，以其令人生畏的销售代表而闻名。"
+
+ triggerless_gun: "武器商的无扳机枪"
+ triggerless_gun_desc_short: "这种武器是在绰尔的罗盘的武器经销商短暂的第二次统治期间设计的"
+ triggerless_gun_desc_details: "在那时候，行商的擎天堡更像是一个武器交易论坛，而不是一个赌场，里面充斥着各种各样的武器贩子。那时候，为了防止小偷小摸的行为，这些武器会被卖给潜在的买家，但会将扳机去除。"
+
+# this = ship / fromfrom = planet
+ uddloran_pelts: "乌杜兰毛皮"
+ uddloran_pelts_desc_short: "[fromfrom.GetName]的乌杜兰物种身上剥下的奢华毛皮"
+ uddloran_pelts_desc_details: "这些灵活的杂食动物会把自己紧紧地抱成一颗球，成群结队地在这颗行星白雪皑皑的地表上滚动，看起来就像活的雪崩一般。这种策略既用于狩猎，也用于迁徙。一群乌杜兰通常分为两组：一组是在这片土地上摧枯拉朽开路的猎手，另一组是紧随其后的采集者，它们会停下来收集被压扁的猎物和连根拔起的植物。"
+
+ underworld_cantina_sign: "地下酒吧招牌"
+ underworld_cantina_sign_desc_short: "还能工作的数字招牌，取自大约两百万年前走私者光顾的违法酒吧"
+ underworld_cantina_sign_desc_details: "在一颗被挖空的小行星上发现的，这个地方可能是第一联盟统治时期蓬勃发展的犯罪组织的常规藏身之处。这里展示的这块照片可能是某种暗号，表明这里是通缉犯的避风港，或者可能只是某种饮料的广告。"
+
+ unfinished_manifesto: "[radical_cult.GetName]未完宣言"
+ unfinished_manifesto_desc_short: "[root.GetName]的[radical_cult.GetName]领袖撰写未完的宣言"
+ unfinished_manifesto_desc_details: "这种文风让人想起古代的宗教文本，使用复古的词汇和语法，试图让自己看起来更像一回事。经文中所宣扬的一个关键信息是面对失败时的骄傲，鼓励信徒在面对即将到来的俘虏时献出自己的生命。"
+
+ uranium_glassware: "铀玻璃器皿"
+ uranium_glassware_desc_short: "用铀石英雕琢出的装饰品"
+ uranium_glassware_desc_details: "装饰物诱人的外观与未提炼铀的危险形成鲜明对比。作为限量收藏的一部分，在工匠完成这件作品后，它的大部分放射性特性都被中和了。"
+
+ vault_of_polaris: "勾陈一庇护所"
+ vault_of_polaris_desc_short: "勾陈一原生植物和细菌的详尽收集"
+ vault_of_polaris_desc_details: "容器上的铭文表明，这个庇护所是为了保护那些可能在永冻土融化后无法在全球变暖中幸存下来的物种。这颗星球曾经被厚厚的积雪覆盖，气候寒冷，但现在只剩下一座冰山。它的创造者的远见卓识使我们现在可以把他们的努力展示给所有人学习。"
+
+ veil_of_selene: "塞勒涅的面纱"
+ veil_of_selene_desc_short: "一件令人兴奋和陶醉的面部饰品"
+ veil_of_selene_desc_details: "这层面纱不可貌相，其中充满了独特的感官特性，使它能够轻轻地压倒视觉、嗅觉和听觉的生物受体。人们相信戴这种头饰可以迷惑对方，使他们更容易受到暗示。据传原来的主人有一定的灵能能力。"
+
+ verdingo_tendril_hook: "佛丁戈卷须钩"
+ verdingo_tendril_hook_desc_short: "佛丁戈海盗船长海斯波利·华勒里安的假肢钩"
+ verdingo_tendril_hook_desc_details: "佛丁戈是一群亦商亦盗的植物类，他们追债和掠夺货船的可能性一样大。海斯波利船长在受雇领导一次地面军事进攻时失去了他的惯用卷须。在胜利之后，船长用自己的功勋章锻造了这个钩子。"
+
+ vibrating_crystal: "颤动水晶"
+ vibrating_crystal_desc_short: "在[from.GetName]地表四处可见的独特石英矿物"
+ vibrating_crystal_desc_details: "它与宿主行星的潜在共振创造了一个场，可以抚慰有机物的心灵，甚至也可以吸引合成人。这种共振是由微放射性的细菌菌落产生的，晶体在菌落周围形成。这些磁性微生物产生一种内部电流，使晶体以一致的高频率振动。"
+
+ voidworm_amniotics: "虚空虫羊膜"
+ voidworm_amniotics_desc_short: "一种发现于虚空三头虫中心的胶状物质"
+ voidworm_amniotics_desc_details: "这种粘稠的液体在三个个体之间形成保护屏障，让细胞得以交换从而进行繁殖和交流。行星轰击产生的激素被储存在这里，使这种雌雄同体的生物能安全地释放配子并产生后代。"
+
+ voidworm_heart: "虚空虫心脏"
+ voidworm_heart_desc_short: "虚空虫的心脏分成三个主要心室"
+ voidworm_heart_desc_details: "每个心室都会依次提升循环系统的压力，维持液体在沸点以下以确保在真空中的生存。虚空虫的皮肤大部分是密封的，但随着时间的推移，各种消化和生殖孔会泄出一些宝贵的压力。"
+
+ vultaum_religious_pamphlet: "沃陶姆传教手册"
+ vultaum_religious_pamphlet_desc_short: "沃陶姆传教士分发的小册子，其中试图揭露虚拟现实设备是最大的罪恶"
+ vultaum_religious_pamphlet_desc_details: "它将“大谎言”作为一个关键概念，声称任何形式的沉浸式逃避主义都类似于摧毁自己现实的意志。"
+
+ vultaum_vr_video_game: "沃陶姆虚拟现实视频游戏"
+ vultaum_vr_video_game_desc_short: "曾经在久远时代被数十亿沃陶姆人玩过的多人虚拟现实视频游戏中使用的数字界面"
+ vultaum_vr_video_game_desc_details: "这些控制器针对他们的生物特征进行了专门的研发，它们包含数千个振动感受器，能够检测到极其细微的运动。"
+
+ warning_monolith: "警示碑塔"
+ warning_monolith_desc_short: "一块由已灭绝物种最后成员留下的雕刻巨石，作为信息传递。"
+ warning_monolith_desc_details: "它试图劝阻任何发现这颗星球遗迹的人不要寻找导致他们种族灭亡的终极武器。语气相当戏剧化，但考虑到当时的状况，是可以理解的。"
+
+ wormhole_anchor: "[FROM.GetName]虫洞锚"
+ wormhole_anchor_desc_short: "用于从黑洞中收集暗物质的单向虫洞装置的锚点"
+ wormhole_anchor_desc_details: "它充其量只能说是拼凑而成，完全由来自多个文明的废弃物和残骸建造。该装置背后的科学远远超出了用于建造它的工程能力，利用了一种巧妙的技术来操纵负质量。"
+
+ wormhole_fur: "虫洞毫毛"
+ wormhole_fur_desc_short: "从星界裂隙另一侧的一种狐狸身上采集的生物样本"
+ wormhole_fur_desc_details: "这些哺乳动物有一种基因突变，使它们能够随意产生虫洞。据推测，这种能力是在无数次元间旅行后进化而来的。"
+
+ ytterite_preserved_corpse: "保存的乙特人尸体"
+ ytterite_preserved_corpse_desc_short: "在他们的母星被劫持的地爆天星武器摧毁后，唯一幸存的前超光速乙特人物种样本。"
+ ytterite_preserved_corpse_desc_details: "它们的消化系统将摄入的矿物质转化为光子，内部器官类似于围绕熔融核心排列的复杂折射晶体簇。这个生物的一条下肢上刻着一些形状的雕刻，作为某种文化意义上的身体改造。"
+
+ ytterite_kaleidoscopic_fascinator: "乙特人万花筒"
+ ytterite_kaleidoscopic_fascinator_desc_short: "由乙特人创造的装饰性饰品，作为视觉刺激"
+ ytterite_kaleidoscopic_fascinator_desc_details: "这些装饰品将在阳光充足的地方展示，可能包含数百甚至数千种独特的图案。它们由层层薄薄的雕刻水晶制成，一位训练有素的工匠可能需要花费数月时间才能制作出像这样复杂的装饰品。工匠们会在装饰品的关键顶点处附上他们自己脱落的甲壳雕刻而成的一块作为“签名”。"
+
+ ytterite_royal_scepter: "乙特人皇家节杖"
+ ytterite_royal_scepter_desc_short: "这根权杖曾被格奈斯·达慕尔的皇家大臣使用，格奈斯·达慕尔是一座雕刻在山上的巨大雕像，乙特人认为它是一尊沉睡的神灵，也是他们唯一的真主。"
+ ytterite_royal_scepter_desc_details: "他们在等待雕像苏醒的时刻，进行了选举，选出了代理领导人。"
+
+ yuht_audio_console: "尤特音频控制台"
+ yuht_audio_console_desc_short: "一个曾经控制由尤特人设计的庞大音频监控阵列的模块"
+ yuht_audio_console_desc_details: "这项技术是为了帮助尤特人寻找地外生命而开发的，希望能够接收来自遥远星系的外部信号。"
+
+ yuht_cryo_pod: "尤特冷冻仓"
+ yuht_cryo_pod_desc_short: "这个古老的休眠舱长96米，里面保存着来自巨大尤特物种的个体遗骸"
+ yuht_cryo_pod_desc_details: "尤特人拥有极长的寿命，并且可以通过冷冻休眠将寿命延长数倍。研究表明，这种节肢动物物种很可能是雌雄同体的，能够根据群体临时需求调整其生殖系统。"
+
+ yuht_crystal_skull: "尤特水晶头骨"
+ yuht_crystal_skull_desc_short: "古代尤特人曾一度认为这颗水晶头骨是真正的外星文物"
+ yuht_crystal_skull_desc_details: "虽然这件伪造物品的来源最终被揭穿，但在尤特新闻媒体热衷地报道并将其推向名声之前，它已经声名大噪。许多“发现”这类伪造文物的人成为了小有名气的名人，并成为了媒体人物，激励着其他人效仿。"
+
+ zombie_probe: "僵尸探机"
+ zombie_probe_desc_short: "一个未知的外星文明获取并改造了一艘探测器的残骸，赋予了它意识"
+ zombie_probe_desc_details: "它在萌芽的意识中攻击了它的创造者，并被理所应当地消灭了。它是否曾感受过痛苦或理解死亡的概念，尚不清楚。"
+
+ zone_a_sedative: "区域A镇定剂"
+ zone_a_sedative_desc_short: "从[from.GetName]标注为“A区”的区域取的一铲土"
+ zone_a_sedative_desc_details: "这片占地169平方公里的区域，保存着来自未知来源的外星访客遗留的废弃设备和技术。其中一些设备极其危险，但土壤本身却含有化学镇静剂，这使得研究人员能够在几乎没有压力的情况下处理它们。无论在那里进行过什么操作，都早已被遗忘。"
+
+ zroni_war_banners: "卓尘族战旗"
+ zroni_war_banners_desc_short: "参与卓尘族内战的两个派系的旗帜的复原品"
+ zroni_war_banners_desc_details: "紫色旗帜代表升格派：一小部分人为了追求无所不能，将星系置于危险之中。蓝色旗帜代表福音派：一个强烈反对抽取宇宙能量来满足他们眼中自私欲望的派系。两派的界限最初是在哲学辩论中划定的，但不久之后，这场争端就成为了毁灭性冲突的导火索。"
+
+ zulcor_wings: "祖卡虫翼"
+ zulcor_wings_desc_short: "来自[fromfrom.GetName]的食岩物种祖卡的几丁质翅膀"
+ zulcor_wings_desc_details: "这些昆虫状生物以矿物质为主要食物来源，食量惊人；一个虫群可以在几周内吞噬一座山。消化后，矿物质会强化祖卡的外骨骼。因此，它们的排泄物中经常含有石英晶体和稀有金属的痕迹。"

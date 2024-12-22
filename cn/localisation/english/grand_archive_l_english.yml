@@ -1,0 +1,2936 @@
+﻿l_english:
+
+#################
+# Grand Archive #
+#################
+
+ GRAND_ARCHIVE_TITLE: "Grand Archive" # Do not translate
+ DLC_GRAND_ARCHIVE_RECOMMENDATION_DESC: "我们推荐§S$GRAND_ARCHIVE_TITLE$§!，因为你所选的部分选项与其主题相符。"
+
+ grand_archive: "博物天枢"
+ the_grand_archive: "博物天枢"
+ grand_archive_0: "$grand_archive$"
+ grand_archive_0_DESC: "这座轨道结构专门用来收容和展示我们在星系中收集到的，包括活体§Y太空兽群§!在内的各种值得一提的['concept_specimen', 样本]。"
+ grand_archive_0_MEGASTRUCTURE_DETAILS: "§Y$grand_archive$§!用于保存和展览我们在星系各处收集来的最有价值的文物。其中也预留了一个专门的生态园，用于饲养和观察活体§Y太空兽群§!。"
+ requires_grand_archive: "$dlc_requirement_string$ §IGrand Archive§!"
+
+ GOTO_COLLECTION: "前往$COLLECTION$"
+
+ STARBASE_CANNOT_UPGRADE_CONSTRUCTION_TYPE: "§R该舰队无法通过我们的任何太空基地升级§!"
+
+ VOIDWORMS_LABEL: "$voidworms_plural$"
+ VOIDWORMS_LABEL_TOOLTIP: "§H$VOIDWORMS_LABEL$§!\n该选项控制多少$voidworms_plural$会出现在星系中。$requires_grand_archive$"
+ CUTHOLOIDS_LABEL: "$cutholoids_plural$"
+ CUTHOLOIDS_LABEL_TOOLTIP: "§H$CUTHOLOIDS_LABEL$§!\n该选项控制多少$cutholoids_plural$会出现在星系中。$requires_grand_archive$"
+
+##################
+# Gravity Snares #
+##################
+
+ feature_unlock_gravity_snares: "重力陷阱"
+ feature_unlock_gravity_snares_desc: "可以非致命地捕获并转运§Y太空兽群§!。建成§Y$grand_archive$§!之后，该装置会将所有捕获的生物储存到生态园中。"
+ feature_unlock_containment_vessels: "收容船"
+ feature_unlock_containment_vessels_desc: "重力陷阱捕获§Y太空兽群§!数量翻倍"
+
+ gravity_snare: "重力陷阱"
+ gravity_snare_plural: "重力陷阱"
+ NAME_GravitySnare: "$gravity_snare$"
+
+ FLEETORDER_SEND_SNARE_NAME: "发射$NAME$"
+ FLEETORDER_SEND_SNARE_ON_COOLDOWN: "§R$TRIGGER_FAIL$重力陷阱还需要冷却§Y[This.GetGravitySnareCooldownForFleet]天§!。§!"
+ FLEETORDER_GRAVITY_SNARE_NO_COMMUNICATIONS: "§R$TRIGGER_FAIL$我们还未收集够关于这些太空兽群的信息无法进行捕获。§!"
+ FLEETORDER_MUST_BE_SPACE_CRITTER: "§R$TRIGGER_FAIL$我们尚无能力捕获该类型太空兽群。§!"
+ GRAVITY_SNARE_CAPTURE_CHANCE_LEADER: "领袖等级：$VALUE|G%0$"
+
+ FLEETORDER_CAPTURE_SPACE_CRITTER: "捕捉太空兽群"
+ FLEETORDER_CAPTURE_SPACE_CRITTER_PROGRESS: "捕捉太空兽群：$PROGRESS|Y%0$"
+
+ FLEETORDER_WAIT_FOR_GRAVITY_SNARE_TO_RELOAD: "重整备§Y重力陷阱§!：$DAYS|Y$天"
+
+ SNARE_SPEED: "捕捉速度：$SPEED$"
+ CAPTURE_CHANCE: "捕捉成功概率：$VALUE|Y%0$"
+ CAPTURE_AMOUNT: "我们用一个§Y$gravity_snare$§!可以一次性捕捉最多$VALUE|0G$只§Y太空兽群§!。"
+ CAPTURE_AMOUNT_FULL_FLEET: "我们用一个§Y$gravity_snare$§!可以一次性捕捉一整队§Y太空兽群§!。"
+
+ GRAVITY_SNARE_1: "$gravity_snare$"
+ GRAVITY_SNARE_STANDARD: "$gravity_snare$"
+ GRAVITY_SNARE_STANDARD_TOOLTIP: "重力陷阱能维持局部量子引力的爆发，从而阻止所有不具备超光速推进能力的物体逃脱。这种力可以长时间维持并用来捕获§Y太空兽群§!，将其送回我们的星系进行进一步分析。"
+ SHIP_STAT_CONTRIBUTION_ADDATIVE_fauna_capture_chance: "$NAME$：$VALUE|Y0%$"
+ SHIP_STAT_DESC_fauna_capture_chance: ""
+
+ GRAVITY_SNARE_CLOAKING_EMPTY: "$SCIENCE_CLOAKING_EMPTY$"
+ GRAVITY_SNARE_CLOAKING_1: "$SCIENCE_CLOAKING_1$"
+ GRAVITY_SNARE_CLOAKING_2: "$SCIENCE_CLOAKING_2$"
+ GRAVITY_SNARE_CLOAKING_3: "$SCIENCE_CLOAKING_3$"
+ GRAVITY_SNARE_CLOAKING_DARK_MATTER: "$SCIENCE_CLOAKING_DARK_MATTER$"
+ GRAVITY_SNARE_CLOAKING_PSI: "$SCIENCE_CLOAKING_PSI$"
+
+ GRAVITY_SNARE_NO_EMERGENCY_FTL: "重力陷阱的设计无法执行紧急超光速跃迁。"
+ FLEET_CANNOT_TAKE_ORDERS: "§R该舰队无法执行任何命令。§!"
+
+ MESSAGE_SPACE_CRITTER_CAPTURE_SUCCESS_TITLE: "捕获太空兽群"
+ MESSAGE_SPACE_CRITTER_CAPTURE_SUCCESS_DESC: "在$SYSTEM|Y$星系中的捕捉行动成功了！$gravity_snare$将该样本送入了生态园中。\n\n你已获得了新的太空兽群：\n$CAPTURED_LIST$$RESOURCES_LIST$"
+ MESSAGE_SPACE_CRITTER_CAPTURE_SUCCESS_NO_VIVARIUM_DESC: "在$SYSTEM|Y$星系中的捕捉行动成功了！由于没有可用的§H生态园§!容量，捕获的兽群被执行了安乐死并分解成为资源。\n$CULLED_LIST$$RESOURCES_LIST$"
+ MESSAGE_SPACE_CRITTER_CAPTURE_FAILURE_TITLE: "捕捉行动失败"
+ MESSAGE_SPACE_CRITTER_CAPTURE_FAILURE_DESC: "在$SYSTEM|Y$星系中的捕捉行动失败了。我们失去了$SHIP_NAME|Y$发射的$gravity_snare$。"
+
+ MESSAGE_CAPTURED_SPACE_CRITTER_RETURNED_TITLE: "新太空兽群"
+ MESSAGE_CAPTURED_SPACE_CRITTER_RETURNED_DESC: "新太空兽群已被送入生态园。\n$NEWBORN_LIST$$CULLED_LIST$$RESOURCES_LIST$"
+ MESSAGE_CAPTURED_SPACE_CRITTER_RETURNED_DESC_CULLED: "\n\n以下捕获的太空兽群将被屠宰成为资源：\n$CULLED_LIST$"
+
+ CULLED_CREATURES_RESOURCE_OUTPUT_DESC: "\n\n获得资源：\n  $RESOURCES_LIST$"
+
+ mod_gravity_snare_cooldown_mult: "重力陷阱冷却"
+ MOD_GRAVITY_SNARE_COST_MULT: "重力陷阱花费"
+ MOD_SPACE_FAUNA_CULLING_REWARD_MULT: "屠宰回报"
+
+ grand_archive.7210.name: "重力陷阱"
+ grand_archive.7210.desc.common: "随着最近§Y$tech_gravity_wells$§!的发现，现在[root.GetAdjective]科研船可以发射$gravity_snare_plural$。"
+ grand_archive.7210.desc.vivarium: "这些非致命抛射体可以安全地捕获并将太空兽群转运到我们的§Y生态园§!里，让它们得以继续繁衍生息。\n\n屠宰分解这些生物可以用来收获其§Y$genetic_material$§!以进行克隆以及获得其他资源。"
+ grand_archive.7210.desc.no_vivarium: "这些非致命抛射体可以安全地捕获以及转运太空兽群用于研究及解剖，从而收获其§Y$genetic_material$§!和其他资源。\n\n如果我们打算豢养并进一步繁育这些生物，我们需要建立一座§Y生态园§!。可以通过建造一座§Y$grand_archive$§!或是在太空基地上建造建筑§Y[GetHatcheryPlural]§!来实现。"
+
+ grand_archive.7220.name: "凶猛的索林原虫"
+ grand_archive.7220.desc: "我们的§Y$gravity_snare_plural$§!无法准确地追踪收容§Y$NAME_Prethoryn_Scourge$§!。基于其运动模式，我们怀疑这些物种应该是被某种更高级的意识所控制着，不具备真正意义上的独立个体。\n\n尝试将一只该生物收容进生态园会威胁到其他物种甚至整个[this.GetName]。\n\n我们已无限期地暂停了对这些生物的捕获行动。"
+ grand_archive.7220.a: "应对谨慎。"
+
+##############
+# Automation #
+##############
+
+ AUTOMATION_SEND_GRAVITY_SNARES_ENABLED: "$AUTOMATION_SEND_GRAVITY_SNARES$ £trigger_yes£"
+ AUTOMATION_SEND_GRAVITY_SNARES: "捕捉太空兽群"
+
+ ################
+ # Technologies #
+ ################
+
+ tech_galactic_archivism: "星系归档"
+ tech_galactic_archivism_desc: "当修缮星系历史，以古鉴今。建造一座最宏伟的档案馆恰如其分。"
+
+ tech_gravity_wells: "重力陷阱"
+ tech_gravity_wells_desc: "定域化的高浓度的量子质量可以用于制造瞬间的重力爆发。只要操作得当，这种引力理论上可以捕获并控制任何大小的生物而不造成伤害。"
+ tech_containment_vessel: "典藏研究所收容协议"
+ tech_containment_vessel_desc: "重力陷阱捕获§Y太空兽群§!数量翻倍。"
+
+ TECH_UNLOCK_CONTAINMENT_VESSEL_TITLE: "$TECH_UNLOCK_COMPONENT_LINE$ $tech_containment_vessel$"
+ TECH_UNLOCK_CONTAINMENT_VESSEL_DESC: "$tech_containment_vessel_desc$"
+
+ tech_asteroidal_carapace: "小行星甲壳"
+ tech_asteroidal_carapace_desc: "岩居兽的外壳并不只是矿物而已，其中还有生物纤维补强。我们可以使用先进冶金技术来人为合成这种流程。"
+ ASTEROIDAL_CARAPACE_ARMOR: "$tech_asteroidal_carapace$"
+ ASTEROIDAL_CARAPACE_ARMOR_DESC: "$tech_asteroidal_carapace_desc$"
+
+ tech_gravity_snare_capacity_desc: "重力陷阱捕获的§Y太空兽群§!数量增加§G1§!"
+ tech_gravity_snare_capacity_1: "微型奇点强化"
+ tech_gravity_snare_capacity_1_desc: "$tech_gravity_snare_capacity_desc$"
+ tech_gravity_snare_capacity_2: "重力操纵优化"
+ tech_gravity_snare_capacity_2_desc: "$tech_gravity_snare_capacity_desc$"
+ tech_gravity_snare_capacity_3: "收容系统改进"
+ tech_gravity_snare_capacity_3_desc: "$tech_gravity_snare_capacity_desc$"
+ gateway_snare_capacity: "重力陷阱容量"
+
+ gateway_gravity_snare_capacity: "§H重力陷阱容量之道§!\n§E这项科技将进一步推进重力陷阱捕获能力的发展。§!"
+
+ tech_alien_cloning: "人工繁育"
+ tech_alien_cloning_beastmasters: "$tech_alien_cloning$"
+ tech_alien_cloning_desc: "在精心控制的环境中，我们可以将从屠宰的太空兽群身上收集的$genetic_material$进行孵育，并产出这些物种的新成员纳入我们的麾下。"
+ feature_alien_cloning_unlocked: "§Y$policy_space_fauna_growth$§!政策"
+ feature_alien_cloning_unlocked_desc: "$policy_space_fauna_growth_desc$"
+ tech_alien_cloning_tt: "§H解锁功能：§!护卫舰尺寸太空兽群克隆"
+ tech_improved_incubators: "改进孵化器"
+ tech_improved_incubators_beastmasters: "$tech_improved_incubators$"
+ tech_improved_incubators_desc: "我们可以改进建立在孵化场的人工繁育流程，加速早期发育阶段，以创造更成熟的克隆体。"
+ tech_improved_incubators_tt: "§H解锁功能：§!驱逐舰尺寸太空兽群克隆"
+ tech_improved_incubators_tt_desc: "孵化场现在可以克隆更大的§Y太空兽群§!样本，其尺寸可匹敌传统的驱逐舰。"
+ tech_metabolic_gases: "代谢气体"
+ tech_metabolic_gases_beastmasters: "$tech_metabolic_gases$"
+ tech_metabolic_gases_desc: "在孵化场中对代谢气体进行改进可以在各种物种降生之前进行进一步的催熟。"
+ tech_metabolic_gases_tt: "§H解锁功能：§!战列舰尺寸太空兽群克隆"
+ tech_metabolic_gases_tt_desc: "孵化场现在可以克隆所有发育阶段或尺寸的太空兽群舰船。"
+
+ BOARDING_CABLES: "跳帮缆索"
+ BOARDING_CABLES_MODULES: "$BOARDING_CABLES$"
+ BOARDING_CABLES_TOOLTIP: "有很小的机会窃取一艘敌舰或俘虏一名指挥官以索要赎金。"
+ BOARDING_CABLES_DESC: "$BOARDING_CABLES_TOOLTIP$"
+ tech_boarding_cables: "$BOARDING_CABLES$"
+ tech_boarding_cables_desc: "用改装的小口径火炮发射连着弹性碳纤维缆索的刺钩，非常适合用于固定敌舰并进行跳帮作战。"
+
+ tech_controlled_mutations: "可控变异"
+ tech_controlled_mutations_desc: "我们可以通过基因组修改来提升太空兽群舰船的效率，也让我们可以将人造科技整合进其生物质中。"
+ tech_controlled_mutations_2: "先进可控变异"
+ tech_controlled_mutations_2_desc: "我们可以更进一步。对太空兽群基因的先进操纵以整合更多样的特化部件。"
+
+ ####################
+ # Technology swaps #
+ ####################
+
+ tech_refit_standards_beastmasters: "孵化优化"
+ tech_refit_standards_beastmasters_desc: "优化克隆太空兽群的流程可以大幅度提高效率。"
+
+ tech_small_space_fauna_hull_1: "改良小型太空兽群组织"
+ tech_small_space_fauna_hull_1_desc: "克隆技术的进步可以促生更加强韧的小型太空兽群。"
+ tech_small_space_fauna_hull_2: "先进小型太空兽群组织"
+ tech_small_space_fauna_hull_2_desc: "我们已经将小型太空兽群的组织强度提升到了已知的极限。"
+ tech_medium_space_fauna_hull_1: "改良中型太空兽群组织"
+ tech_medium_space_fauna_hull_1_desc: "克隆技术的进步可以促生更加强韧的中型太空兽群。"
+ tech_medium_space_fauna_hull_2: "先进中型太空兽群组织"
+ tech_medium_space_fauna_hull_2_desc: "我们已经将中型太空兽群的组织强度提升到了已知的极限。"
+ tech_large_space_fauna_hull_1: "改良大型太空兽群组织"
+ tech_large_space_fauna_hull_1_desc: "克隆技术的进步可以促生更加强韧的大型太空兽群。"
+ tech_large_space_fauna_hull_2: "先进大型太空兽群组织者"
+ tech_large_space_fauna_hull_2_desc: "我们已经将大型太空兽群的组织强度提升到了已知的极限。"
+ tech_extra_large_space_fauna_hull_1: "改良巨型太空兽群组织"
+ tech_extra_large_space_fauna_hull_1_desc: "克隆技术的进步可以促生更加强韧的巨型太空兽群。"
+ tech_extra_large_space_fauna_hull_2: "先进巨型太空兽群组织"
+ tech_extra_large_space_fauna_hull_2_desc: "我们已经将巨型太空兽群的组织强度提升到了已知的极限。"
+ tech_titanic_space_fauna_hull_1: "改良超巨型太空兽群组织"
+ tech_titanic_space_fauna_hull_1_desc: "克隆技术的进步可以促生更加强韧的超巨型太空兽群。"
+ tech_titanic_space_fauna_hull_2: "先进超巨型太空兽群组织"
+ tech_titanic_space_fauna_hull_2_desc: "我们已经将超巨型太空兽群的组织强度提升到了已知的极限。"
+
+ tech_small_space_fauna_build_speed: "标准化小规模克隆"
+ tech_small_space_fauna_build_speed_desc: "为克隆和孵育小型太空生物建立新的标准，大大提高了繁育线路的效率。"
+ tech_medium_space_fauna_build_speed: "标准化中规模克隆"
+ tech_medium_space_fauna_build_speed_desc: "为克隆和孵育中型太空生物建立新的标准，大大提高了繁育线路的效率。"
+ tech_large_space_fauna_build_speed: "标准化大规模克隆"
+ tech_large_space_fauna_build_speed_desc: "为克隆和孵育大型太空生物建立新的标准，大大提高了繁育线路的效率。"
+ tech_extra_large_space_fauna_build_speed: "标准化超大规模克隆"
+ tech_extra_large_space_fauna_build_speed_desc: "为克隆和孵育巨型太空生物建立新的标准，大大提高了繁育线路的效率。"
+
+ SPACE_FAUNA_HULL: "太空兽群船体值"
+ MOD_SMALL_SPACE_FAUNA_SHIP_HULL_MULT: "小型$SPACE_FAUNA_HULL$"
+ MOD_MEDIUM_SPACE_FAUNA_SHIP_HULL_MULT: "中型$SPACE_FAUNA_HULL$"
+ MOD_LARGE_SPACE_FAUNA_SHIP_HULL_MULT: "大型$SPACE_FAUNA_HULL$"
+ MOD_EXTRA_LARGE_SPACE_FAUNA_SHIP_HULL_MULT: "巨型$SPACE_FAUNA_HULL$"
+ MOD_TITANIC_SPACE_FAUNA_SHIP_HULL_MULT: "超巨型$SPACE_FAUNA_HULL$"
+
+ SPACE_FAUNA_SHIP_COST: "太空兽群舰船克隆花费"
+ MOD_SPACE_FAUNA_SHIP_COST_MULT: "$SPACE_FAUNA_SHIP_COST$"
+ MOD_SMALL_SPACE_FAUNA_SHIP_COST_MULT: "小型$SPACE_FAUNA_SHIP_COST$"
+ MOD_MEDIUM_SPACE_FAUNA_SHIP_COST_MULT: "中型$SPACE_FAUNA_SHIP_COST$"
+ MOD_LARGE_SPACE_FAUNA_SHIP_COST_MULT: "大型$SPACE_FAUNA_SHIP_COST$"
+ MOD_EXTRA_LARGE_SPACE_FAUNA_SHIP_COST_MULT: "巨型$SPACE_FAUNA_SHIP_COST$"
+ MOD_TITANIC_SPACE_FAUNA_SHIP_COST_MULT: "超巨型$SPACE_FAUNA_SHIP_COST$"
+
+ SPACE_FAUNA_CLONING_SPEED: "太空兽群舰船克隆速度"
+ MOD_SMALL_SPACE_FAUNA_BUILD_SPEED_MULT: "小型$SPACE_FAUNA_CLONING_SPEED$"
+ MOD_MEDIUM_SPACE_FAUNA_BUILD_SPEED_MULT: "中型$SPACE_FAUNA_CLONING_SPEED$"
+ MOD_LARGE_SPACE_FAUNA_BUILD_SPEED_MULT: "大型$SPACE_FAUNA_CLONING_SPEED$"
+ MOD_EXTRA_LARGE_SPACE_FAUNA_BUILD_SPEED_MULT: "巨型$SPACE_FAUNA_CLONING_SPEED$"
+ MOD_TITANIC_SPACE_FAUNA_BUILD_SPEED_MULT: "超巨型$SPACE_FAUNA_CLONING_SPEED$"
+
+############
+# Triggers #
+############
+
+ TRIGGER_HAS_ASTEROID_BELT: "包含小行星带"
+ TRIGGER_HAS_ASTEROID_BELT_NOT: "不包含小行星带"
+ TRIGGER_IS_NOT_SPACE_FAUNA: "不是太空兽群"
+ TRIGGER_IS_SPACE_FAUNA: "是太空兽群"
+ TRIGGER_IS_NOT_REANIMATED: "不是复活生物"
+ TRIGGER_IS_REANIMATED: "是复活生物"
+ NOT_SHIP_SIZE_MULTIPLIER_VALUE_TRIGGER: "舰船尺寸乘算不$COMPARE$$VALUE|Y$"
+ SHIP_SIZE_MULTIPLIER_VALUE_TRIGGER: "舰船尺寸乘算$COMPARE$$VALUE|Y$"
+ TRIGGER_IS_SHIP_CATEGORY: "是$CATEGORY$类"
+ TRIGGER_IS_NOT_SHIP_CATEGORY: "不是$CATEGORY$类"
+ TRIGGER_HAS_DNA: "拥有$SHIP_CATEGORY$基因物质"
+ TRIGGER_HAS_DNA_NOT: "不拥有$SHIP_CATEGORY$基因物质"
+ TRIGGER_HAS_DNA_RARITY: "拥有$RARITY$$SHIP_CATEGORY$基因物质"
+ TRIGGER_HAS_DNA_RARITY_NOT: "不拥有$RARITY$$SHIP_CATEGORY$基因物质"
+ TRIGGER_CAN_BE_REANIMATED: "可以复活"
+ TRIGGER_CANNOT_BE_REANIMATED: "不能复活"
+ NOT_VOIDWORMS_SCALING_TRIGGER: "虚空虫规模系数不$COMPARE$$VALUE|Y$"
+ VOIDWORMS_SCALING_TRIGGER: "虚空虫规模系数$COMPARE$$VALUE|Y$"
+ NOT_CUTHOLOIDS_SCALING_TRIGGER: "岩居兽规模系数不$COMPARE$$VALUE|Y$"
+ CUTHOLOIDS_SCALING_TRIGGER: "岩居兽规模系数$COMPARE$$VALUE|Y$"
+
+ #############
+ # Modifiers #
+ #############
+
+ MOD_SECTOR_MAX_JUMPS_ADD: "星域尺寸"
+
+ MOD_SHIP_CAPTURE_CHANCE_ADD: "兽群捕获率"
+ MOD_COUNTRY_CAPTURE_CHANCE_ADD: "$MOD_SHIP_CAPTURE_CHANCE_ADD$"
+ MOD_SHIP_CAPTURE_AMOUNT_ADD: "兽群捕获数量"
+ MOD_COUNTRY_CAPTURE_AMOUNT_ADD: "$MOD_SHIP_CAPTURE_AMOUNT_ADD$"
+ MOD_COUNTRY_CAPTURE_AMOUNT_MULT: "$MOD_SHIP_CAPTURE_AMOUNT_ADD$"
+ MOD_COUNTRY_SPECIMEN_SELLING_COST_MULT: "标本出售花费"
+ MOD_COUNTRY_EXHIBIT_UNLOCKING_COST_MULT: "展览解锁花费"
+ mod_on_fauna_capture_scientist_exp_gain: "捕获太空兽群时的$mod_scientist_exp_gain$"
+
+ space_fauna_hull: "太空兽群船体值"
+ space_fauna_armor: "太空兽群舰船装甲"
+ space_fauna_shield: "太空兽群舰船护盾"
+ MOD_SPACE_FAUNA_SHIP_HULL_ADD: "$space_fauna_hull$"
+ MOD_SPACE_FAUNA_SHIP_HULL_MULT: "$space_fauna_hull$"
+ MOD_SPACE_FAUNA_SHIP_ARMOR_ADD: "$space_fauna_armor$"
+ MOD_SPACE_FAUNA_SHIP_ARMOR_MULT: "$space_fauna_armor$"
+ MOD_SPACE_FAUNA_SHIP_SHIELD_ADD: "$space_fauna_shield$"
+ MOD_SPACE_FAUNA_SHIP_SHIELD_MULT: "$space_fauna_shield$"
+ MOD_SPACE_FAUNA_SHIP_FIRE_RATE_MULT: "太空兽群舰船射速"
+ MOD_SPACE_FAUNA_SHIP_DAMAGE_MULT: "太空兽群舰船伤害"
+ MOD_SPACE_FAUNA_SHIP_SPEED_MULT: "太空兽群舰船亚光速航速"
+ MOD_DIPLO_WEIGHT_SPACE_FAUNA_MULT: "太空兽群舰船£diplo_weight£外交权重"
+ MOD_SHIP_DAMAGE_AGAINST_SPACE_FAUNA_MULT: "对太空兽群的伤害"
+ MOD_REANIMATED_SHIP_DAMAGE_MULT: "复活舰船伤害"
+ MOD_REANIMATED_SHIP_FIRE_RATE_MULT: "复活舰船射速"
+
+ sm_hatchery_capacity_add_tt: "$sm_hatchery$克隆容量"
+ sm_beastport_capacity_add_tt: "$sm_beastport$建造及克隆能力：§G+1§!"
+
+ MOD_STARBASE_SHIPYARD_ARTIFICIAL_BUILD_SPEED_MULT: "人造舰船建造速度"
+ MOD_STARBASE_SHIPYARD_ARTIFICIAL_BUILD_TIME_MULT: "人造舰船建造时间"
+ MOD_STARBASE_SHIPYARD_ARTIFICIAL_BUILD_COST_MULT: "人造舰船建造花费"
+ MOD_STARBASE_SHIPYARD_SPACE_FAUNA_BUILD_SPEED_MULT: "$SPACE_FAUNA_CLONING_SPEED$"
+ MOD_STARBASE_SHIPYARD_SPACE_FAUNA_BUILD_TIME_MULT: "太空兽群舰船克隆时间"
+ MOD_STARBASE_SHIPYARD_SPACE_FAUNA_BUILD_COST_MULT: "$SPACE_FAUNA_SHIP_COST$"
+
+ VIVARIUM_MAX_CAPACITY: "生态园容量上限"
+ VIVARIUM_MAX_CAPACITY_FULL: "$VIVARIUM_MAX_CAPACITY$：$VALUE|Y$"
+ VIVARIUM_MAX_CAPACITY_REACHED: "§R（已达上限）§!"
+ MOD_COUNTRY_VIVARIUM_MAX_CAPACITY_ADD: "$VIVARIUM_MAX_CAPACITY$"
+ MOD_COUNTRY_VIVARIUM_MAX_CAPACITY_MULT: "$VIVARIUM_MAX_CAPACITY$"
+
+ MOD_SHIP_DAMAGE_AGAINST_BOSS_MULT: "对星神兽的伤害"
+ MOD_SPACE_FAUNA_GROWTH_RATE_MULT: "太空兽群舰船生长速度"
+
+ mod_vivarium_produces_mult: "屠宰太空兽群产出的资源"
+ mod_specimens_produces_mult: "标本产出"
+
+ MOD_ARTIFICIAL_SHIP_NAVAL_CAP_USAGE_MULT: "人造舰船$MOD_SHIP_NAVAL_CAP_USAGE_MULT$"
+ MOD_SPACE_FAUNA_NAVAL_CAP_USAGE_MULT: "太空兽群舰船$MOD_SHIP_NAVAL_CAP_USAGE_MULT$"
+ MOD_SPACE_FAUNA_SHIP_UPKEEP_MULT: "太空兽群舰船维护费"
+
+ mod_ship_science_upkeep_mult: "科研船维护费"
+
+ MOD_SHIP_STEAL_DEFEATED_SHIP_CHANCE: "窃取敌舰概率"
+ MOD_FLEET_CAPTURE_DEFEATED_LEADER_CHANCE: "俘虏敌指挥官概率"
+
+ MOD_COMPONENT_LIFESTEAL_ADD: "从该部件施加的伤害中再生"
+
+ mod_split_into_smaller_size_on_death: "§Y死亡时§!$TABBED_NEW_LINE$分裂成更小尺寸的生物"
+ fissile_core_effect_tt: "新生成的晶体无法分裂，并且在战斗结束后湮灭。"
+
+ ###########
+ # Origins #
+ ###########
+
+ ### Primal Calling
+ origin_primal_calling: "原始呼唤"
+ origin_primal_calling_desc: "草叶婆娑，夜静如尖啸。猎户之志，冷锐如星光。\n\n这个文明与荒野有着原始的联系。他们把自己看作是当地各种致命野生动物的管家，现在又把目光投向了苍穹。他们善于管理和牧养动物，这种与动物群的联系是根据他们的思潮发展起来的。而这种联系将如何在星系尺度上演变还有待观察。"
+ origin_tooltip_primal_calling_effects: "—$HOMEWORLD$$TABBED_NEW_LINE$—$PLANETARY_MODIFIERS$['concept_untamed_wilds_mod']\n—$HOME_SYSTEM$邻近星系有§Y太空兽群§!\n—$AVAILABLE_BUILDINGS$['concept_wildlife_ranch', £building£$wildlife_ranch$]\n—在对§Y太空兽群§!第一次接触时可选择特有的['concept_primal_calling_stance']\n—$ADDITONAL_TECHNOLOGIES_STRING$['technology:tech_genome_mapping', £society_research£$tech_genome_mapping$]\n—$GUARANTEED_RESEARCH_OPTION_STRING$['technology:tech_alien_life_studies', £society£$tech_alien_life_studies$]\n—在与太空兽群进行第一次接触后获得对['technology:tech_gravity_wells', £physics_research£$tech_gravity_wells$]的洞见\n—在捕获太空兽群后获得对['technology:tech_alien_cloning', £society_research£$tech_alien_cloning$]的洞见\n—在克隆太空兽群后获得对['technology:tech_controlled_mutations', £society_research£$tech_controlled_mutations$]的洞见"
+ START_SCREEN_PRIMAL_CALLING: "尽管技术进步迅速，但我们仍然与我们星球上的种种野生动物紧紧地联系在一起。在进化的过程中，它们亦师亦友，而我们则是尽责的管家。我们不会过度贪婪过度求取，它们的牺牲受到了我们的尊敬。\n\n在浩瀚无垠的太空中，我们很可能会发现其他野生动物。若是如此，我们就会像对待自己星球的动物一样尊重它们。它们应该会像我们一样认清自己的位置，如此便能共同成就强大。\n\n一种原始的欲望在我们内心燃烧。不管天上有什么，我们都会坚定地面对。"
+
+ leader_trait_trophy_hunter: "战利品猎人"
+ leader_trait_trophy_hunter_desc: "历经磨难，饱经世事，这位指挥官对太空兽群有着非凡的理解。成功的狩猎关键在于知己知彼，当然，只有完美的射击才能获得完美的战利品。"
+ leader_trait_gifted_trapper: "天生捕手"
+ leader_trait_gifted_trapper_desc: "这名熟练的研究人员在安全捕获和运输活体标本时非常小心。这位领袖对生物福利的承诺激励着其他人不断提高各个学科的学术标准。"
+ leader_trait_void_hunter: "虚空猎手"
+ leader_trait_void_hunter_desc: "一位经验丰富的猎手，擅长猎杀大型猎物。他们耐心接近，出手精准。"
+ leader_trait_void_hunter_2: "$leader_trait_void_hunter$ II"
+ leader_trait_void_hunter_2_desc: "$leader_trait_void_hunter_desc$"
+ leader_trait_void_tracker: "虚空追迹者"
+ leader_trait_void_tracker_desc: "这位领袖在高效安全地捕捉太空兽群方面有着无与伦比的天赋。"
+ leader_trait_void_tracker_2: "$leader_trait_void_tracker$ II"
+ leader_trait_void_tracker_2_desc: "$leader_trait_void_tracker_desc$"
+
+ # First Contacts
+ first_contact_critters.15.desc.primal_calling: "值得注意的是，每个§H天凯§!群体都以母系等级制度为中心，由一头雌兽领导。雌性优先享用所有食物资源，以便为幼崽生产气态母体物质，并引导群体迁徙。因此，雄兽在资源匮乏时会放弃进食，鼓励它们在群体休息时寻找更多食物。"
+ first_contact_critters.25.desc.primal_calling: "除了最年轻的个体外，其他所有个体都伴随有通过RNA掺杂分泌物控制的准独立生物体。这些“鞭毛”以复杂的攻击模式进行攻击，因此尽管它们看似缺乏智慧，但§H“太空变形虫”§!却是非常熟练的自然捕食者。"
+ first_contact_critters.35.desc.primal_calling: "这些生物似乎通过折射光线的色度变化来相互交流。虽然这种媒介具有表达复杂信息的巨大潜力，但这些半智慧生命体只以基本的方式使用它。颜色的变化可以用来表示社会地位、攻击性，甚至生育状况。"
+ grand_archive.2005.desc.primal_calling: "这些寄生生物天生无法繁殖，必须依赖从星球上的宿主获取养分。为了让§H“虚空虫”§!产生三头虫成长必不可少的激素，它们必须从有人居住的星球上获取足够的有机物质。作为雌雄同体的生物，它们选择伴侣主要取决于互补的物理特征和相似的体型。"
+ grand_archive.2900.desc.primal_calling: "我们认为这些生物会根据大小和矿物成分来选择用哪颗小星星来作为巢穴。虽然我们遇到的第一个样本对[GetCommonMineral]具有生物学偏好，但每个个体很可能随着时间的推移根据其当前环境发展出不同的适应性。扫描显示这种金属的痕迹遍布宿主小行星，以及§H“岩居兽”§!本身的神经系统和消化道。"
+ COMMON_MINERAL_1: "钴"
+ COMMON_MINERAL_2: "铂"
+ COMMON_MINERAL_3: "金"
+ COMMON_MINERAL_4: "银"
+ COMMON_MINERAL_5: "铁"
+ COMMON_MINERAL_6: "镍"
+ crystalline_entity_plural: "晶态实体"
+
+ grand_archive.1002.name: "繁星中的众生"
+ grand_archive.1002.desc.default: "宇宙中充满了生命。我们已经发现了[from.GetSpaceFaunaNamePlural]的存在，但那里还有其他什么？\n\n我们与[capital_scope.GetName]上的野生动物的密切关系可能不适合星系尺度。辽阔的太空代表着一个全新的生态系统，我们发现自己站在十字路口。\n\n这些生物对我们来说是什么？\n\n无论我们做出什么选择，其后果都将在未来几年内显现。"
+ grand_archive.1002.desc.homicidal: "宇宙中可能充满了生命——我们有权消灭它们，或利用它们。我们已经发现了[from.GetSpaceFaunaNamePlural]的存在，并渴望找到更多。新鲜的猎物或役畜，选择权在我们手中。"
+ grand_archive.1002.a: "供人观赏的标本。"
+ grand_archive.1002.b: "有利可图的牲畜。"
+ grand_archive.1002.c: "值得保护的生物。"
+ grand_archive.1002.d: "新入围场的猎物。"
+ grand_archive.1002.d.purifier: "尸山景观的建材。"
+ grand_archive.1002.e: "亟待同化的意识。"
+ grand_archive.1002.f: "可与共生的同伴。"
+ grand_archive.1002.g: "唾手可得的食物。"
+
+ untamed_wilds: "未驯荒原"
+ untamed_wilds_desc: "一片广袤的保护区，野生动物在这里茁壮成长，可持续地供养着当地生物。"
+ grand_archive.1010.desc: "我们在[Root.GetName]的殖民地学会了如何尊重当地§Y泰坦巨兽§!自然领地的边界。\n\n随着我们的边界扩张和土地开发，这些巨大野兽将继续为我们的殖民地带来好处。"
+ grand_archive.1010.a: "我们的[owner.GetWranglerJobNamePlural]在这会做得不错的。"
+
+ ETHIC_BASED_JOBS_EFFECTS: "[GetCultureWorkerSpiMatOutput][GetCultureWorkerEgalAuthOutput][GetCultureWorkerMilPacOutput][GetCultureWorkerXenoOutput]"
+
+ job_wrangler: "放牧人"
+ job_wrangler_with_icon: "£job_wrangler£ $job_wrangler$"
+ job_wrangler_plural: "放牧人"
+ job_wrangler_plural_with_icon: "£job_wrangler£ $job_wrangler_plural$"
+ job_wrangler_desc: "对当地动物进行妥善保护、研究和管理对我们星球的福祉至关重要。"
+ job_wrangler_effect_desc: "$job_wrangler_plural_with_icon$将$r_consumer_goods$转化为$ETHIC_BASED_JOBS_EFFECTS$$r_unity$、$r_amenities$以及$r_society$。\n\n$job_wrangler_plural_with_icon$的效果会随着帝国的思潮而发生改变。"
+ mod_job_wrangler_add: "$job_wrangler$岗位"
+ mod_job_wrangler_per_pop: "每$VALUE$个人口提供§G+1§!个$job_wrangler$岗位"
+ mod_job_wrangler_per_pop_short: "\n每$VALUE$£pop£§G+1§!£job_wrangler£"
+ planet_primal_jobs: "原始工作"
+ mod_planet_primal_jobs_produces_mult: "[GetWranglerJobNamePluralWithIcon]产出"
+
+ job_rancher: "牧场主"
+ job_rancher_with_icon: "£job_rancher£ $job_rancher$"
+ job_rancher_plural: "牧场主"
+ job_rancher_plural_with_icon: "£job_rancher£ $job_rancher_plural$"
+ job_rancher_desc: "管理我们建立的陆生动物牧场既要辛勤劳作，同时也要对其生物需求进行深入了解。"
+ job_rancher_effect_desc: "$job_rancher_plural_with_icon$将$r_consumer_goods$转化为$ETHIC_BASED_JOBS_EFFECTS$$r_unity$、$r_food$、$r_amenities$以及$r_society$。\n\n$job_rancher_plural_with_icon$的效果会随着帝国的思潮而发生改变。"
+ mod_job_rancher_add: "$job_rancher$岗位"
+ mod_job_rancher_per_pop: "每$VALUE$个人口提供§G+1§!个$job_rancher$岗位"
+ mod_job_rancher_per_pop_short: "\n每$VALUE$£pop£§G+1§!£job_rancher£"
+
+ job_trophy_hunter: "战利品猎人"
+ job_trophy_hunter_with_icon: "£job_trophy_hunter£ $job_trophy_hunter$"
+ job_trophy_hunter_plural: "战利品猎手"
+ job_trophy_hunter_plural_with_icon: "£job_trophy_hunter£ $job_trophy_hunter_plural$"
+ job_trophy_hunter_desc: "可伤者，皆可杀。"
+ job_trophy_hunter_effect_desc: "$job_trophy_hunter_plural_with_icon$将$r_consumer_goods$转化为$ETHIC_BASED_JOBS_EFFECTS$$r_unity$、$r_food$、$r_amenities$以及$r_society$。\n\n$job_trophy_hunter_plural_with_icon$的效果会随着帝国的思潮而发生改变。"
+ mod_job_trophy_hunter_add: "$job_trophy_hunter$岗位"
+ mod_job_trophy_hunter_per_pop: "每$VALUE$个人口提供§G+1§!个$job_trophy_hunter$岗位"
+ mod_job_trophy_hunter_per_pop_short: "\n每$VALUE$£pop£§G+1§!£job_trophy_hunter£"
+
+ job_animal_handler: "动物管理员"
+ job_animal_handler_with_icon: "£job_animal_handler£ $job_animal_handler$"
+ job_animal_handler_plural: "动物管理员"
+ job_animal_handler_plural_with_icon: "£job_animal_handler£ $job_animal_handler_plural$"
+ job_animal_handler_desc: "为了所有物种的利益，管理生态系统时最好只使用最低限度的直接干预。"
+ job_animal_handler_effect_desc: "$job_animal_handler_plural_with_icon$将$r_consumer_goods$转化为$ETHIC_BASED_JOBS_EFFECTS$$r_unity$、$r_amenities$以及$r_society$。\n\n$job_animal_handler_plural_with_icon$的效果会随着帝国的思潮而发生改变。"
+ mod_job_animal_handler_add: "$job_animal_handler$岗位"
+ mod_job_animal_handler_per_pop: "每$VALUE$个人口提供§G+1§!个$job_animal_handler$岗位"
+ mod_job_animal_handler_per_pop_short: "\n每$VALUE$£pop£§G+1§!£job_animal_handler£"
+
+ job_beastfighter: "斗兽士"
+ job_beastfighter_with_icon: "£job_beastfighter£ $job_beastfighter$"
+ job_beastfighter_plural: "斗兽士"
+ job_beastfighter_plural_with_icon: "£job_beastfighter£ $job_beastfighter_plural$"
+ job_beastfighter_desc: "最伟大的斗兽士可以吸引成百上千的观众。对大众而言没有比这更棒的娱乐来源了。"
+ job_beastfighter_effect_desc: "$job_beastfighter_plural_with_icon$将$r_alloys$和$r_consumer_goods$转化为$ETHIC_BASED_JOBS_EFFECTS$$r_unity$、$r_amenities$以及$r_society$。\n\n$job_beastfighter_plural_with_icon$的效果会随着帝国的思潮而发生改变。"
+ mod_job_beastfighter_add: "$job_beastfighter$岗位"
+ mod_job_beastfighter_per_pop: "每$VALUE$个人口提供§G+1§!个$job_beastfighter$岗位"
+ mod_job_beastfighter_per_pop_short: "\n每$VALUE$£pop£§G+1§!£job_beastfighter£"
+
+ job_drone_wrangler: "放牧子个体"
+ job_drone_wrangler_with_icon: "£job_wrangler£ $job_drone_wrangler$"
+ job_drone_wrangler_plural: "放牧子个体"
+ job_drone_wrangler_plural_with_icon: "£job_wrangler£ $job_drone_wrangler_plural$"
+ job_drone_wrangler_desc: "$job_wrangler_desc$"
+ job_drone_wrangler_effect_desc: "$job_drone_wrangler_plural_with_icon$将$r_minerals$转化为$ETHIC_BASED_JOBS_EFFECTS$$r_unity$、$r_amenities$以及$r_society$。\n\n$job_drone_wrangler_plural_with_icon$的效果会随着帝国的思潮而发生改变。"
+ mod_job_drone_wrangler_add: "$mod_job_wrangler_add$"
+ mod_job_drone_wrangler_per_pop: "$mod_job_wrangler_per_pop$"
+ mod_job_drone_wrangler_per_pop_short: "\n每$VALUE$£pop£§G+1§!£job_drone_wrangler£"
+
+ job_hunter_drone: "捕猎子个体"
+ job_hunter_drone_with_icon: "£job_hunter_drone£ $job_hunter_drone$"
+ job_hunter_drone_plural: "捕猎子个体"
+ job_hunter_drone_plural_with_icon: "£job_hunter_drone£ $job_hunter_drone_plural$"
+ job_hunter_drone_desc: "$job_trophy_hunter_desc$"
+ job_hunter_drone_effect_desc: "$job_hunter_drone_plural_with_icon$将$r_minerals$转化为$ETHIC_BASED_JOBS_EFFECTS$$r_unity$、$r_food$、$r_amenities$以及$r_society$。\n\n$job_hunter_drone_plural_with_icon$的效果会随着帝国的思潮而发生改变。"
+ mod_job_hunter_drone_add: "$job_hunter_drone$岗位"
+ mod_job_hunter_drone_per_pop: "每$VALUE$个人口提供§G+1§!个$job_hunter_drone$岗位"
+ mod_job_hunter_drone_per_pop_short: "\n每$VALUE$£pop£§G+1§!£job_hunter_drone£"
+
+ job_symbiosis_integrator: "共生整合员"
+ job_symbiosis_integrator_with_icon: "£job_symbiosis_integrator£ $job_symbiosis_integrator$"
+ job_symbiosis_integrator_plural: "共生整合员"
+ job_symbiosis_integrator_plural_with_icon: "£job_symbiosis_integrator£ $job_symbiosis_integrator_plural$"
+ job_symbiosis_integrator_desc: "$job_animal_handler_desc$"
+ job_symbiosis_integrator_effect_desc: "$job_symbiosis_integrator_plural_with_icon$将$r_consumer_goods$转化为$ETHIC_BASED_JOBS_EFFECTS$$r_unity$、$r_amenities$以及$r_society$。\n\n$job_symbiosis_integrator_plural_with_icon$的效果会随着帝国的思潮而发生改变。"
+ mod_job_symbiosis_integrator_add: "$job_symbiosis_integrator$岗位"
+ mod_job_symbiosis_integrator_per_pop: "每$VALUE$个人口提供§G+1§!个$job_symbiosis_integrator$岗位"
+ mod_job_symbiosis_integrator_per_pop_short: "\n每$VALUE$£pop£§G+1§!£job_symbiosis_integrator£"
+
+ mod_job_wrangler_or_variant_add: "[GetWranglerJobName]岗位"
+ mod_job_wrangler_or_variant_per_pop: "每$VALUE$个人口提供§G+1§!个[GetWranglerJobName]岗位"
+ mod_job_wrangler_or_variant_per_pop_short: "\n每$VALUE$£pop£§G+1§![GetWranglerVariantJobPerPop]"
+
+ pick_wrangler_stance: "—维持['concept_wrangler_stance']§Y姿态§!"
+ pick_rancher_stance: "—设置['concept_rancher_stance']§Y姿态§!"
+ pick_animal_handler_stance: "—设置['concept_animal_handler_stance']§Y姿态§!"
+ pick_trophy_hunter_stance: "—设置['concept_trophy_hunter_stance']§Y姿态§!"
+ pick_wild_consciousness_stance: "—设置['concept_wild_consciousness_stance']§Y姿态§!"
+ pick_symbiotic_partnership_stance: "—设置['concept_symbiotic_partnership_stance']§Y姿态§!"
+ pick_hunter_killers_stance: "—设置['concept_hunter_killers_stance']§Y姿态§!"
+
+ GET_UNIQUE_EDICT: "解锁独特§Y法令§!"
+
+ primal_calling_exhibit_modifier: "太空牲口"
+ primal_calling_exhibit_modifier_tt: "—$MOD_TRADE_VALUE_MULT$：每个已占用的生态园容量§G+$@primal_calling_exhibit_trade_value|1%$§!\n—$mod_specimens_produces_mult$：每个已占用的生态园容量§G+$@primal_calling_exhibit_specimen|1%$§!"
+ primal_calling_exhibit_bonus_tt: "[GetWranglerContext]\n—$GET_UNIQUE_EDICT$，['edict:space_fauna_exhibition']"
+
+ primal_calling_exploit_modifier: "星系牲口"
+ primal_calling_exploit_modifier_tt: "—$MOD_COUNTRY_ALL_TECH_RESEARCH_SPEED$：每个已占用的生态园容量§G+$@primal_calling_exploit_research_mult|1%$§!\n—$mod_planet_primal_jobs_produces_mult$：每个已占用的生态园容量§G+$@primal_calling_exploit_wrangler_mult|1%$§!"
+ primal_calling_exploit_bonus_tt: "[GetRancherContext]\n—$GET_UNIQUE_EDICT$，['edict:beasts_burden']"
+
+ animal_handler_common_effect_desc: "—太空兽群舰船产生额外§G+$@primal_calling_animal_handler_diplo_weight_mult|0%$§!£diplo_weight£外交权重\n—每个已占用的生态园容量§G$@primal_calling_animal_handler_opinion_bonus|0$§!与其他非嗜杀、非排外、非堕落帝国评价"
+ primal_calling_shelter_modifier: "虚空环保者"
+ primal_calling_shelter_modifier_tt: "$animal_handler_common_effect_desc$"
+ primal_calling_shelter_bonus_tt: "[GetAnimalHandlerContext]\n—$GET_UNIQUE_EDICT$，['edict:creature_welfare']"
+ triggered_opinion_primal_calling_origin: "$primal_calling_shelter_modifier$"
+
+ trophy_hunter_common_effect_desc: "—战斗中击杀太空兽群获得$c_dna$以及屠宰回报\n—击杀太空兽群时获得§G$@primal_calling_fauna_kill_unity_reward|0$§!$r_unity$以及收获回报。"
+ primal_calling_hunt_modifier: "巨兽猎守"
+ primal_calling_hunt_modifier_tt: "$trophy_hunter_common_effect_desc$"
+ primal_calling_hunt_bonus_tt: "[GetTrophyHunterContext]\n—$GET_UNIQUE_EDICT$，['edict:crack_the_whip']"
+
+ primal_calling_assimilate_modifier: "荒野意识"
+ primal_calling_assimilate_modifier_tt: "每个已占用的生态园容量§G+$@primal_calling_assimilate_country_naval_cap_add|1$§!$i_naval_capacity$、§G+$@primal_calling_assimilate_amenities_add|1$§!$i_amenities$以及§G+$@primal_calling_assimilate_research_mult|1%$§!$MOD_COUNTRY_ALL_TECH_RESEARCH_SPEED$"
+ primal_calling_assimilate_bonus_tt: "$pick_wild_consciousness_stance$\n—$GET_UNIQUE_EDICT$，['edict:exotic_network']"
+
+ primal_calling_symbiosis_modifier: "共生伙伴"
+ primal_calling_symbiosis_modifier_tt: "$animal_handler_common_effect_desc$"
+ primal_calling_symbiosis_bonus_tt: "$pick_symbiotic_partnership_stance$\n—$GET_UNIQUE_EDICT$，['edict:defensive_instincts']"
+
+ primal_calling_feed_modifier: "猎杀者"
+ primal_calling_feed_modifier_tt: "$trophy_hunter_common_effect_desc$"
+ primal_calling_feed_bonus_tt: "$pick_hunter_killers_stance$\n—$GET_UNIQUE_EDICT$，['edict:biological_overdrive']"
+
+ MESSAGE_TROPHY_HUNTERS_KILLED_FAUNA_TITLE: "已斩杀太空兽"
+ minerals_icon: "£minerals£"
+ food_icon: "£food£"
+ energy_icon: "£energy£"
+ unity_icon: "£unity£"
+ exotic_gases_icon: "£exotic_gases£"
+ rare_crystals_icon: "£rare_crystals£"
+ MESSAGE_TROPHY_HUNTERS_KILLED_FAUNA_DESC: "猎杀太空兽群的成功额外收获了$energy_icon$$energy|Y$$minerals_icon$$minerals|Y$$food_icon$$food|Y$$unity_icon$$unity|Y$$exotic_gases_icon$$exotic_gases|Y$$rare_crystals_icon$$rare_crystals|Y$"
+
+ sm_voidlure: "虚空诱饵"
+ sm_voidlure_desc: "虚空诱饵向太空深处发送信号，吸引着深居虚空的生物。"
+ sm_voidlure_desc_know_fauna: "虚空诱饵能够向深空发送特定信号，随时间推移吸引相应种类的太空兽群。每个装置都需要建造在目标生物偏好的星系中。受引诱的生物将在一年内保持温顺状态。"
+ sm_voidlure_tiyanki: "$sm_voidlure$（$tiyanki$）"
+ sm_voidlure_tiyanki_desc: "$sm_voidlure_desc_know_fauna$"
+ sm_voidlure_space_amoeba: "$sm_voidlure$（$space_amoeba$）"
+ sm_voidlure_space_amoeba_desc: "$sm_voidlure_desc_know_fauna$"
+ sm_voidlure_crystalline_entity: "$sm_voidlure$（$crystalline_entity$）"
+ sm_voidlure_crystalline_entity_desc: "$sm_voidlure_desc_know_fauna$"
+ sm_voidlure_voidworm: "$sm_voidlure$（$voidworm$）"
+ sm_voidlure_voidworm_desc: "$sm_voidlure_desc_know_fauna$"
+ sm_voidlure_cutholoid: "$sm_voidlure$（$cutholoid$）"
+ sm_voidlure_cutholoid_desc: "$sm_voidlure_desc_know_fauna$"
+
+ capture_cooldown_desc: "兽群到来"
+ capture_cooldown_for_tiyanki_desc: "$capture_cooldown_desc$（天凯）"
+ capture_cooldown_for_space_amoeba_desc: "$capture_cooldown_desc$（太空变形虫）"
+ capture_cooldown_for_crystalline_entity_desc: "$capture_cooldown_desc$（晶态实体）"
+ capture_cooldown_for_voidworm_desc: "$capture_cooldown_desc$（虚空虫）"
+ capture_cooldown_for_cutholoid_desc: "$capture_cooldown_desc$（岩居兽）"
+ STARBASE_FLAG_DESC: "$DESC$：£time£$VALUE|Y$"
+
+ VOIDLURE_ATTRACTED_FAUNA_TITLE: "新太空有机体"
+ VOIDLURE_ATTRACTED_FAUNA_DESC: "我们的一个虚空诱饵吸引到了太空兽群。"
+ NAME_Lured_Fauna: "暂受吸引的兽群"
+
+ wildlife_ranch: "野生动物农场"
+ wildlife_ranch_desc: "我们与本土生物和谐共处，竭尽全力保护它们的栖息地，并促进其物种的可持续发展。"
+ wildlife_ranch_2: "野生动物地段"
+ wildlife_ranch_2_desc: "精心设计的生态系统管理改善了本地生物的生存条件，并促进了畜牧业的发展。"
+ wildlife_ranch_3: "野生动物中枢"
+ wildlife_ranch_3_desc: "这是一个广阔的设施，动物可以自由漫步。为了最大限度地提高动物提供的资源质量，这里为它们提供了舒适和奢华的环境。"
+ hunting_grounds: "狩猎场"
+ hunting_grounds_desc: "这是一个训练中心，用于掌握各种狩猎技巧。从现代能量武器到传统武术器械，无与伦比的灵巧和技巧才能战胜可怕的猎物，并将它们作为战利品。"
+ hunting_grounds_2: "狩猎地带"
+ hunting_grounds_2_desc: "一个可以为狩猎地动物的提供最佳条件的训练和监控设施。热成像技术有助于识别动物的最新踪迹，并获取优质的猎物。"
+ hunting_grounds_3: "狩猎中枢"
+ hunting_grounds_3_desc: "这是一个广阔的区域，支持大规模的行星狩猎队伍。这里配备了最高质量的武器和追踪设备，猎人接受了高级训练，以最大限度地提高猎杀的猎物数量和质量。"
+ wildlife_sanctuary: "野生动物保护区"
+ wildlife_sanctuary_desc: "这是一个保护区，野生动物在自然栖息地内被研究。这里有保障措施来防止种群不稳定或过度疾病。研究这些生物本身就是一项有价值的学术工作，但最重要的是，它让我们更多地了解我们自己的本质。"
+ wildlife_sanctuary_2: "先进保护区"
+ wildlife_sanctuary_2_desc: "这里的生物都得到个性化的照顾，它们的独特饮食和医疗需求得到满足，同时最大程度地减少对自然栖息地的干扰。专门的生态系统允许濒危物种的繁殖和重新引入。"
+ wildlife_sanctuary_3: "中枢保护区"
+ wildlife_sanctuary_3_desc: "这里的动物受到精心设计的、看似不存在的基础设施的监控和照顾。研究人员被禁止干预受试者的自然行为，从而保证收集到质量最高的科研数据。"
+ primal_arena: "原始竞技场"
+ primal_arena_desc: "一座角斗场，我们的最强战士与凶猛的野兽进行原始的战斗。没有什么比观看英雄战胜野兽，或者战死沙场更令人兴奋的娱乐了。"
+ primal_arena_2: "原始驯兽场"
+ primal_arena_2_desc: "在这座巨大的体育场里，一群群动物在训练有素的驯兽师的指导下，训练着它们的攻击技巧。兽斗士不再能依靠蛮力制服猎物：他们必须比他们的驯兽师更聪明才能生存。"
+ primal_arena_3: "原始斗兽场"
+ primal_arena_3_desc: "一座令人敬畏的竞技场，专为举办史诗级的猎兽战斗而设计。每次战斗都需要数周的准备，可容纳数百万观众。"
+ symbiosis_nexus: "共生节点"
+ symbiosis_nexus_desc: "一个可以容纳野生伙伴们加入我们大家庭的自然保护区。每个生物都为心灵编织贡献着独特的价值。"
+ symbiosis_nexus_2: "共生地带"
+ symbiosis_nexus_2_desc: "一个中央保留地，用于将我们的野生生物伙伴分组到能够自我维持的小种群中。协调他们较低的精神能力，为更大的思维网络提供思想稳定性。"
+ symbiosis_nexus_3: "共生中枢"
+ symbiosis_nexus_3_desc: "一个广阔的中心枢纽，旨在汇聚所有生物的心智，为我们集体意识提供动力。"
+
+ edict_space_fauna_exhibition: "太空兽群展览"
+ space_fauna_exhibition: "$edict_space_fauna_exhibition$"
+ edict_space_fauna_exhibition_desc: "来自星系各世界的牧场主们将展示他们珍爱的牲畜，并角逐梦寐以求的“最佳展示”奖。"
+ edict_beasts_burden: "劳役之畜"
+ beasts_burden: "$edict_beasts_burden$"
+ edict_beasts_burden_desc: "我们最耐劳的牲畜应该承担一些最费力的工作。"
+ edict_creature_welfare: "生物福利"
+ creature_welfare: "$edict_creature_welfare$"
+ edict_creature_welfare_desc: "我们有责任确保我们照护的生物拥有最高的生活质量。"
+ edict_crack_the_whip: "鞭笞痛刑"
+ crack_the_whip: "$edict_crack_the_whip$"
+ edict_crack_the_whip_desc: "无论物种，所有生物对疼痛的反应都相似。关键在于学会如何正确地施加疼痛。"
+ edict_exotic_network: "异种神经网络"
+ exotic_network: "$edict_exotic_network$"
+ edict_exotic_network_desc: "我们照管的低等有机生命体，其思维能力足以在更复杂的计算中提供带宽。"
+ edict_defensive_instincts: "自我保护直觉"
+ defensive_instincts: "$edict_defensive_instincts$"
+ edict_defensive_instincts_desc: "我们是一体的，让我们的本能在这冰冷的深空中交织在一起。"
+ edict_biological_overdrive: "生物过载"
+ biological_overdrive: "$edict_biological_overdrive$"
+ edict_biological_overdrive_desc: "通过安装合适的脑神经受体，我们可以将低等生物逼到极限。"
+
+ grand_archive.1060.name: "[from.GetSpaceFaunaName]的腐肉"
+ grand_archive.1060.desc: "与[from.GetSpaceFaunaNamePlural]建立联系后，我们在[fromfrom.GetName]中发现了一具他们物种的腐烂尸体。遗骸在长时间暴露于太空后变得干枯并冻得梆硬。\n\n我们推测这具尸体是吸引了该物种其他成员的首要因素；也许他们一直在寻找他们[from.GetSpaceFaunaGroup]中失踪的成员。这是一个难得的机会，可以研究在虚空中自然死亡的[from.GetSpaceFaunaName]的生物学特性。"
+ TIYANKI_GROUP_NAME: "鲸群"
+ SPACE_AMOEBA_GROUP_NAME: "虫群"
+ CRYSTAL_GROUP_NAME: "簇群"
+ VOIDWORM_GROUP_NAME: "虫群"
+ CUTHOLOID_GROUP_NAME: "种群"
+
+ voidworm_carcass_01_object: "虚空虫遗骸"
+ carcass_01_object: "太空兽群尸体"
+ CARRION_DEBRIS_PROJECT: "解剖[met_critter.GetSpaceFaunaName]"
+ CARRION_DEBRIS_PROJECT_DESC: "在[contact_system.GetName]发现了一具[met_critter.GetSpaceFaunaName]的尸体。对这些野生生物遗骸的研究将加深我们对这些太空生物的了解。"
+
+ grand_archive.1065.name: "解剖完成"
+ grand_archive.1065.desc: "对[contact_system.GetName]的[met_critter.GetSpaceFaunaName]尸体所进行的尸检已经完成。我们从遗骸中提取了一个保存完好的生物样本，它为我们提供了对其生理结构的独特见解。"
+ grand_archive.1065.specimen_tt: "兽群特定§M史诗§!['concept_specimen']"
+
+ NAME_BoneShip: "骨船"
+ NAME_BoneShip_desc: "这艘船装饰着成年的天凯卷须，一排排虚空虫的牙齿，以及一个我们从未见过的生物的头骨。它配备了各种精密武器，显得杀气腾腾。"
+ grand_archive.1069.name: "$NAME_BoneShip$"
+ grand_archive.1069.desc: "我们与一艘来自[from.GetName]的奇怪改装太空船取得了联系。$NAME_BoneShip_desc$\n\n在天真地接受了我们的谈判邀请后，这位驾驶员被立即[GetExecuted]。我们已经夺取了他的古怪飞船，并将其加入了我们的军事序列。我们在他的个人物品中发现了一本有用的猎人工具指南。"
+ grand_archive.1069.a: "欢迎礼物。"
+ EXECUTED: "处决"
+ DEVOURED: "吞噬"
+
+ grand_archive.1070.name: "$NAME_BoneShip$"
+ grand_archive.1070.desc: "我们收到了来自[from.GetName]的一艘奇怪改装的星际飞船的联络。$NAME_BoneShip_desc$\n\n他们正在所有频率上向我们打招呼。"
+ grand_archive.1070.a: "开启通讯。"
+
+ NAME_PrimalHunter: "瑟里兹·柯哈尔"
+ primal_hunter_desc: "一位在星系中游荡，寻找大型猎物的熟练猎手。"
+ primal_hunter_catchphrase: "§L“我要为我的展柜找下一个战利品。”§!"
+ grand_archive.1075.name: "$grand_archive.1070.name$"
+ grand_archive.1075.desc: "§H瑟里兹低沉的声音干涩而沙哑，仿佛已经好几周没有说话了。此人直言不讳，保持着冷静的眼神接触，既显得尊重，又让人感到一丝威慑。§!\n\n作为一名猎物收藏家，要让我印象深刻可不容易。你们做到了。\n\n我愿意加入你们的狩猎队伍，但前提是我们的合作将基于便利和相互学习。"
+ grand_archive.1075.a: "你是谁？"
+ grand_archive.1075.a.reply: "我是$NAME_PrimalHunter$，我在这些星系中狩猎多年。我正在寻找新的猎物，而你们的人民似乎是能干的追踪者。\n\n我的动机很简单：狩猎的快感。"
+ grand_archive.1075.b: "你船上的那个颅骨是什么？"
+ grand_archive.1075.b.reply: "它是同类中最后的，它奋力抵抗。"
+ grand_archive.1075.c: "你观察我们多久了？"
+ grand_archive.1075.c.reply: "很明显，你们的人还有很多东西要学。\n\n一个优秀的猎手可以长时间潜行追踪猎物。真正的致命，需要在开枪前保持隐形。我在阴影中度过的时间并不重要，重要的是我选择何时现身。"
+ grand_archive.1075.d: "为什么要加入我们？"
+ grand_archive.1075.d.reply: "我并不寻求在猎场上的竞争。虽然我不愿分享领地，但我宁愿与你的猎手并肩作战，而不愿为同一猎物大打出手。\n\n无论你追踪什么，我都会杀死。"
+ grand_archive.1075.hire: "招募"
+ grand_archive.1075.hire_tt: "§Y$NAME_PrimalHunter$§!作为一名§H领袖§!加入我们帝国。"
+ grand_archive.1075.dismiss: "遣散"
+
+ grand_archive.1080.name: "漫游的异星生物学家"
+ grand_archive.1080.desc: "一艘独立的星际研究船联系了我们位于[from.GetName]的太空基地。这艘船配备了一系列捕获装置和分析工具，专门用于捕获和研究太空生物。\n\n他们正在所有频率上向我们打招呼。"
+ grand_archive.1080.a: "开启通讯。"
+
+ NAME_PrimalRancher: "茹克·恰卜鲁克"
+ primal_rancher_desc: "她是一位对实地考察充满热情的异星生物学家，研究过各种各样的太空生物。"
+ primal_rancher_catchphrase: "§L“每个生物都有故事要讲，而我是一个热心的倾听者！”§!"
+ grand_archive.1085.desc: "§H茹克的眼睛不停地闪烁，注视着一个小巧的手持设备，她那探究和分析的目光让人印象深刻。即使在向我们打招呼时，她也似乎在做着笔记。尽管如此，她的态度还是友好而专业，只是略带疏离。§!\n\n我发现自己对太空生物的兴趣并非孤例。我研究了[root.GetName]正在进行的研究，它简直是启迪人心。我非常希望能加入你们的科学部门，为这些努力贡献力量。当然，如果你们愿意的话。"
+ grand_archive.1085.a: "你是谁？"
+ grand_archive.1085.a.reply: "抱歉，我有点儿太着急了。\n\n我叫茹克，是一名专门研究太空兽群的野外实地考察员。我和我的团队收集有关迁徙模式、身体组成和星系生物多样性的数据。\n\n我从小就喜欢动物。我无论去哪里都带着我的宠物芙芙。"
+ grand_archive.1085.b: "芙芙？"
+ grand_archive.1085.b.reply: "整个银河我最爱的小朋友！\n\n我本来想把它展示在屏幕上，但它现在睡着了。在我的家乡行星，我们把这种生物当宠物饲养，我上次回去的时候领养了它。真是太可爱了：听到小蹄子在金属地板上哒哒地跑，啃我的羽毛的样子，还有两只小眼睛之间那撮毛。我相信它也会让你着迷的，当……如果我们开始合作的话。"
+ grand_archive.1085.c: "你是怎么找到我们的？"
+ grand_archive.1085.c.reply: "我们追踪的一份样本出现了异常行为，于是我们追寻它的踪迹。在那里，我们发现您的科研团队正在与我们的研究对象互动。您对这些生物的细致照料体现了对太空生命的真正尊重，这激励我去了解您的研究，而您的研究更是让我印象深刻。我一直在寻找志同道合的同行。"
+ grand_archive.1085.d: "为什么要加入我们？"
+ grand_archive.1085.d.reply: "说实话，自由科学研究并不能可靠地提供收入。我坚信自己的工作，但花费一生寻找资金会占用太多时间，无法专注于核心科学本身。\n\n加入[root.GetName]，我将能够将所有时间投入到我最擅长的领域：研究太空生命。我将获得更多资源，并能与贵国现有的科学团队合作，共同实现我们的目标。"
+ grand_archive.1085.hire: "招募"
+ grand_archive.1085.hire_tt: "§Y$NAME_PrimalRancher$§!作为一名§H领袖§!加入我们帝国。"
+ grand_archive.1085.dismiss: "遣散"
+
+ grand_archive.1100.name: "野兽的锐鸣"
+ grand_archive.1100.desc: "我们探测到来自未知空间的大量古怪电磁波。\n\n初步分析表明，这些波动与§Y虚空虫§!的通讯信号相似，但更加不规则，振幅也高得多。我们将对此进行进一步调查。"
+ grand_archive.1100.a: "令人担忧。"
+
+ grand_archive.1105.name: "尖啸的虚空虫"
+ grand_archive.1105.desc: "我们已经探测到这些动物般的尖叫声的来源：一个隐藏的星系，里面住满了§Y虚空虫§!，位于[frenzied_voidworms_target.solar_system.GetName]附近。\n\n这个星系中的虚空虫与我们之前遇到的不同。这些生物发生了变异；没有形成三头虫，单个成熟的个体正在进行的行为，只能被描述为狂暴的交配狂欢。\n\n这令人担忧：这种非寄生行为意味着这个虫群可以独立繁殖，无需行星宿主。"
+ grand_archive.1105.desc_no_homicidal: "\n如果任由这种变异物种不受控制地蔓延，它可能会彻底破坏星系生态系统的平衡。根据它们不断升级的侵略行为，我们认为这些生物正在准备对[frenzied_voidworms_target.GetName]发动攻击。"
+ grand_archive.1105.desc_2: "\n我们必须准备好自己的防线。"
+ grand_archive.1105.a: "红色警报！"
+
+ situation_frenzied_voidworms: "狂暴的虚空虫"
+ situation_frenzied_voidworms_type: "$situation_frenzied_voidworms$"
+ situation_frenzied_voidworms_desc: "我们发现了一个巨大的、明显发生过变异的虚空虫的巢穴。它们具有高度的攻击倾向，并且似乎能够以非寄生方式繁殖。\n\n我们的存在似乎激怒了它们的巢穴。我们必须谨慎行事。\n\n[GetVoidwormsHostility]"
+ situation_frenzied_voidworms_monthly_change_tooltip: "$situation_monthly_change_tooltip_approaches_dependent$"
+ finisher_effects_frenzied_voidworms: "侵略性的虚空虫可能会攻击我们的首都。"
+ approach_frenzied_voidworms_do_nothing: "按兵不动"
+ approach_frenzied_voidworms_do_nothing_tt: "我们目前不会采取任何特殊行动。"
+ approach_frenzied_voidworms_hide_presence: "隐藏我方存在"
+ approach_frenzied_voidworms_hide_presence_tt: "我们星系中所有最靠近其家园星系的建筑活动将被暂停。"
+ approach_frenzied_voidworms_stir_nests: "挑拨巢穴"
+ approach_frenzied_voidworms_stir_nests_tt: "激怒这些生物会加剧它们对我们的敌意。"
+ approach_frenzied_voidworms_feed_nests: "饲育巢穴"
+ approach_frenzied_voidworms_feed_nests_tt: "如果我们能降低其攻击性到足够程度，就有可能赢得它们的信任。"
+
+ # Strings for GetVoidwormsHostility trigger loc script
+ voidworms_hostility_hostile: "变异的虚空虫表现出§P极高的侵略性§!。"
+ voidworms_hostility_neutral: "变异的虚空虫表现出§S一定侵略性§!。"
+ voidworms_hostility_pacified: "变异的虚空虫表现出§B温顺§!。"
+
+ hide_presence_modifier: "$approach_frenzied_voidworms_hide_presence$"
+ hide_presence_starbase_modifier: "$approach_frenzied_voidworms_hide_presence$"
+
+ frenzied_voidworms_killed.desc.common: "我们保存了这些奇特变异体的巢穴中最大的那一个。在我们的控制下，我们可以培育更多这种独特的生物，而无需担心它们在星系中不受控制地蔓延。"
+ grand_archive.1165.name: "变异虚空虫被摧毁"
+ grand_archive.1165.desc.common: "我们不愿坐等它们迟早要来的攻击，因此对变异的虚空虫在其家园星系发起了一场成功的军事行动。这些生物的威胁将不再笼罩[frenzied_voidworms_target.GetName]，我们星球的安全"
+ grand_archive.1165.desc.default: "$grand_archive.1165.desc.common$和整个银河的生态平衡得到了保障。\n\n$frenzied_voidworms_killed.desc.common$"
+ grand_archive.1165.desc.homicidal: "$grand_archive.1165.desc.common$得到了保障。\n\n$frenzied_voidworms_killed.desc.common$"
+ grand_archive.1165.a: "一次胜利。"
+
+ grand_archive.1170.name: "变异虚空虫被歼灭"
+ grand_archive.1170.desc.common: "变异的虚空虫已被歼灭。这些生物的威胁将不再笼罩[frenzied_voidworms_target.GetName]，我们星球的安全"
+ grand_archive.1170.desc.default: "$grand_archive.1170.desc.common$和整个银河的生态平衡得到了保障。\n\n$frenzied_voidworms_killed.desc.common$"
+ grand_archive.1170.desc.homicidal: "$grand_archive.1170.desc.common$得到了保障。\n\n$frenzied_voidworms_killed.desc.common$"
+ grand_archive.1170.a: "$grand_archive.1165.a$"
+
+ grand_archive.1180.name: "发现变异虚空虫"
+ grand_archive.1180.desc: "在消灭了巢穴附近的一窝虚空虫之后，我们发现这些生物发生了独特的变异。\n\n它们似乎能够以非寄生方式繁殖，并且处于高度攻击状态，这解释了它们非自然的强大和耐久性。\n\n幸运的是，我们保留了一个它们的巢穴作为战利品。在我们控制下，我们可以培育更多这种独特的生物，而不会冒它们不受控制地蔓延到整个银河的风险。"
+ grand_archive.1180.a: "意料之外，但欢迎。"
+
+ grand_archive.1185.name: "虚空虫遭灭绝"
+ grand_archive.1185.desc: "我们已经得知，威胁我们殖民地的变异虚空虫已被消灭。\n\n这是一个意外但令人欣慰的结果。我们可以安心的是，这些生物将不再对我们的星系构成威胁。"
+ grand_archive.1185.a: "星系更加安全了。"
+
+ grand_archive.1200.name: "虚空虫来犯"
+ grand_archive.1200.desc: "狂暴的虚空虫正在攻击[frenzied_voidworms_target.solar_system.GetName]！\n\n它们的侵略性已经达到顶峰，目前它们的主虫群正在直奔[frenzied_voidworms_target.GetName]而去。\n\n我们认为它们不会留下任何幸存者。"
+ grand_archive.1200.a: "准备防御。"
+
+ grand_archive.1205.name: "最惨痛的代价"
+ grand_archive.1205.desc_common: "尽管我们尽了最大努力，变异的虚空虫还是彻底摧毁了[this.GetName]。这些狂暴生物的对地轰击太过猛烈，导致行星地核破裂，整个星球最终裂成碎片。没有幸存者。\n\n它们已经回到了巢穴，不再对我们的存在感到激怒。希望它们能一直待在那里。"
+ grand_archive.1205.desc.default: "$grand_archive.1205.desc_common$\n\n面对这场悲剧，我们别无选择，只能继续前进，从错误中吸取教训。"
+ grand_archive.1205.desc.gestalt: "$grand_archive.1205.desc_common$\n\n我们主巢的陷落对于[event_target:victim_country.GetName]来说是一次重大的打击，但我们必须学会接受。"
+ grand_archive.1205.a: "是时候重建了。"
+
+ grand_archive.1210.name: "变异虚空虫被歼灭"
+ grand_archive.1210.desc: "在[From.GetName]发现的变异虚空虫已被消灭。[avenged_homeworld.GetName]的毁灭得到了报复。\n\n我们保留了这些奇怪变异生物的巢穴中最大的那一个。在我们控制下，我们可以培育更多这种独特的生物，而不会冒着它们不受控制地蔓延到整个银河的风险。\n\n这样，我们一度失去的世界依旧能够传承下来。"
+ grand_archive.1210.a: "$grand_archive.1165.a$"
+
+ grand_archive.1220.name: "虚空虫被安抚"
+ grand_archive.1220.desc.common: "通过向[frenzied_home_system.GetName]的变异虚空虫巢穴直接输送大量矿物，我们成功地与它们建立了联系。这些生物的威胁将不再笼罩[frenzied_voidworms_target.GetName]。我们星球的安全"
+ grand_archive.1220.desc.common_2: "我们经验最丰富的动物饲养员一直在努力管理这些野兽，现在它们似乎愿意同我们进行互相合作。\n\n我们已经收容了它们最大的巢穴之一。有了它，我们可以培育更多这些原本会留在野外的变异虚空虫。"
+ grand_archive.1220.desc.default: "$grand_archive.1220.desc.common$和整个银河的生态平衡得到了保障。\n\n$grand_archive.1220.desc.common_2$"
+ grand_archive.1220.desc.homicidal: "$grand_archive.1220.desc.common$得到了保障。\n\n$grand_archive.1220.desc.common_2$"
+ grand_archive.1220.a: "对于舰队来说是备受欢迎的补充。"
+ grand_archive.1220.tt: "所有狂暴的虚空虫舰队都将由你的帝国控制"
+
+ grand_archive.7010.name: "虚空诱饵已开发"
+ grand_archive.7010.desc.common: "我们对太空有机生物的掌握促成我们开发出被称之为§Y虚空诱饵§!的东西。"
+ grand_archive.7010.desc: "$grand_archive.7010.desc.common$\n\n这些太空基地建筑必须建造在每种特定太空兽群的原生星系中。建成后，它们将定期吸引呈舰队般集群的生物前往该太空基地。\n\n我们应该谨慎，因为某些类型的生物可能会变得具有攻击性。"
+ grand_archive.7010.desc.primal_calling: "$grand_archive.7010.desc.common$\n\n这些设备旨在呼唤太空中的野生生物，吸引在虚空中避难的有机生命体。我们不确定会吸引什么，但目前我们正在广播的频率正在返回规律且镜像的响应。\n\n有东西正向我们而来。"
+
+ grand_archive.7020.name: "鲸歌"
+ grand_archive.7020.desc: "我们之前研发的§Y虚空诱饵§!吸引了一群来自其他星系的太空鲸鱼，这些星系类似[This.Capital.System.GetName]，均含有§Y气态巨行星§!。\n\n看来我们的设备必须在这些环境中建造才能正常工作。如果我们发现其他野生动物，我们应该也能在它们的自然栖息地附近建造虚空诱饵。"
+
+ ### Treasure Hunters
+ origin_treasure_hunters: "寻宝猎人"
+ origin_treasure_hunters_desc: "怀揣着对冒险的渴望，这个文明已经准备好踏上他们最伟大、最具挑战性的探险之旅。他们只手持一张神秘的地图，现在正跨越星辰，去争夺传说中的海盗宝藏。"
+ origin_tooltip_treasure_hunters_effects: "—开局拥有一个未生效的['r_celestial_chart_0_desc', $celestial_chart$]\n—每个征募的领袖都有一个增益性质的['concept_adventurous_spirit_trait']特质$NEW_LINE$—领袖特质：$TABBED_NEW_LINE$—['leader_trait:leader_trait_buccaneer']$TABBED_NEW_LINE$—['leader_trait:leader_trait_trailblazer']$TABBED_NEW_LINE$—['leader_trait:leader_trait_treasure_hoarder']"
+ START_SCREEN_TREASURE_HUNTERS: "我们的文明，其本质在于对冒险的渴望。\n\n发现失落的宝藏，探索古老的遗迹，挖掘超越我们时代的文物；这些事件构成了我们最著名的故事，并激励着我们的社会代代相传。\n\n那么，当我们首次进军太空时，出现的冒险号召是巧合还是命运？一颗神秘的、来源不明的太空舱被发现环绕着我们的星球。舱内是一张指向星辰的加密星图。\n\n经过多年的努力，我们终于拥有了解密这张星图并规划航线的技术。当我们向星系边疆进发时，我们团结一致，决心踏上我们有史以来最伟大、最艰巨的探险之旅。"
+
+ d_treasure_planet: "珍宝馆"
+ d_treasure_planet_desc: "一个安全的保管库，用于整理、恢复和保存贵重物品。"
+ concept_treasure_vault: "$d_treasure_planet$"
+ concept_treasure_vault_desc: "$d_treasure_planet_desc$"
+
+ job_treasure_gatherer: "珍宝馆馆长"
+ job_treasure_gatherer_plural: "珍宝馆馆长"
+ job_treasure_gatherer_desc: "他们受过训练，能够评估各种稀有和珍贵的商品，可以从星系各地发现的宝藏中提取最有价值的东西。"
+ mod_job_treasure_gatherer_add: "$job_treasure_gatherer_plural$"
+ mod_job_treasure_gatherer_per_pop: "每$VALUE$人口§G+1§!$job_treasure_gatherer$岗位"
+ mod_job_treasure_gatherer_per_pop_short: "\n每$VALUE$£pop£§G+1§!$job_treasure_gatherer$"
+ job_treasure_gatherer_gestalt: "珍宝子个体"
+ job_treasure_gatherer_gestalt_plural: "珍宝子个体"
+ job_treasure_gatherer_gestalt_desc: "他们能够评估各种稀有和珍贵的商品，可以从星系发现的宝藏中提取最有效用的东西。"
+ mod_job_treasure_gatherer_gestalt_add: "$job_treasure_gatherer_gestalt_plural$"
+ mod_job_treasure_gatherer_gestalt_per_pop: "每$VALUE$个人口提供§G+1§!个$job_treasure_gatherer_gestalt$岗位"
+ mod_job_treasure_gatherer_gestalt_per_pop_short: "\n每$VALUE$£pop£§G+1§!$job_treasure_gatherer_gestalt$"
+ planet_treasure_gatherers: "$job_treasure_gatherer_plural$"
+ mod_planet_treasure_gatherers_produces_mult: "£job_treasure_gatherer£$planet_treasure_gatherers$产出"
+
+ grand_archive.5015.name: "建立珍宝馆"
+ grand_archive.5015.desc: "§Y$celestial_chart$§!为我们提供了宝贵的评估信息档案，有助于我们从发现的宝藏中提取更大的价值。我们应该在我们的星球之一上建立一座§Y珍宝馆§!，用于对珍贵的小物件进行分类、修复和保存。根据目前的物流情况，以下星球适合建造这个新的设施。"
+ grand_archive.5015.a: "在§Y[event_target:treasure_planet_candidate_1.GetName]§!上建立一座$d_treasure_planet$。"
+ grand_archive.5015.b: "在§Y[event_target:treasure_planet_candidate_2.GetName]§!上建立一座$d_treasure_planet$。"
+ grand_archive.5015.c: "在§Y[event_target:treasure_planet_candidate_3.GetName]§!上建立一座$d_treasure_planet$。"
+
+ #############
+ # Voidworms #
+ #############
+
+ voidworm_country_situation: "虚空虫行为"
+ voidworm_country_situation_type: "$voidworm_country_situation$"
+ voidworm_country_situation_monthly_change_tooltip: "$situation_monthly_change_tooltip_no_control$"
+ voidworm_country_situation_desc: "$voidworm_country_situation$"
+
+ voidworms_plural: "虚空虫"
+ voidworms_small: "虚空虫蛹"
+ voidworms_small_plural: "虚空虫蛹"
+ voidworms_medium: "虚空幼虫"
+ voidworms_medium_plural: "虚空幼虫"
+ voidworms_large: "虚空成虫"
+ voidworms_large_plural: "虚空成虫"
+ voidworms_titan: "虚空三头虫"
+ voidworms_titan_plural: "虚空三头虫"
+
+ reanimated_voidworms_small: "复活的$voidworms_small$"
+ reanimated_voidworms_small_plural: "复活的$voidworms_small_plural$"
+ reanimated_voidworms_medium: "复活的$voidworms_medium$"
+ reanimated_voidworms_medium_plural: "复活的$voidworms_medium_plural$"
+ reanimated_voidworms_large: "复活的$voidworms_large$"
+ reanimated_voidworms_large_plural: "复活的$voidworms_large_plural$"
+ reanimated_voidworms_titan: "复活的$voidworms_titan$"
+ reanimated_voidworms_titan_plural: "复活的$voidworms_titan_plural$"
+
+ NAME_Voidworms: "$voidworms_plural$"
+ NAME_Voidworms_Starbase: "虚空虫巢穴"
+ NAME_Frenzied_Voidworms: "变异$voidworms_plural$"
+
+ NAME_Voidworms_Nymph: "$voidworms_small$"
+ NAME_Voidworms_Juvenile: "$voidworms_medium$"
+ NAME_Voidworms_Mature: "$voidworms_large$"
+ NAME_Voidworms_Troika: "$voidworms_titan$"
+ NAME_Reanimated_Voidworms_Nymph: "复活的$voidworms_small$"
+ NAME_Reanimated_Voidworms_Juvenile: "复活的$voidworms_medium$"
+ NAME_Reanimated_Voidworms_Mature: "复活的$voidworms_large$"
+ NAME_Reanimated_Voidworms_Troika: "复活的$voidworms_titan$"
+ NAME_Frenzied_Voidworms_Nymph: "变异$voidworms_small$"
+ NAME_Frenzied_Voidworms_Juvenile: "变异$voidworms_medium$"
+ NAME_Frenzied_Voidworms_Mature: "变异$voidworms_large$"
+
+ SPIKESPORES: "棘孢"
+ SPIKESPORES_1: "$SPIKESPORES$"
+ SPIKESPORES_2: "$SPIKESPORES$"
+ VOIDWORM_BITE: "虚空虫之牙"
+ VOIDWORM_BITE_1: "$VOIDWORM_BITE$"
+ VOIDWORM_BITE_2: "$VOIDWORM_BITE$"
+ VOIDWORM_BITE_3: "$VOIDWORM_BITE$"
+
+ fcsum_voidworms_1: "$fcsum_critters_1$"
+ grand_archive.2000.name: "众声喧哗"
+ grand_archive.2000.desc: "传感器检测到[This.System.GetName]星系中存在一个向整个银河发出原始信号的物体。这些相同的信号模式也曾在来自未知区域的长程扫描仪上被记录到。虽然目前尚不清楚这些信号是否具有意图，但需要进一步调查。"
+ grand_archive.2000.a: "了解更多。"
+ fcsum_voidworms_2: "§H[This.ContactCountry.GetName]§!被鉴定为叫做“虚空虫”的星际寄生虫。"
+ grand_archive.2005.name: "$NAME_Voidworms$"
+ grand_archive.2005.desc: "我们发现，这些远距离信号源于一种简单的太空生物，我们将其命名为§H“$NAME_Voidworms$”§!。 似乎整个银河都充满了这种生物。根据信号的不同波长，我们确定这些生物在达到最终成熟之前会经历多个生长阶段。虽然它们表面上看起来并不具有攻击性，但它们的交流模式表明它们在星系范围内进行着协调。"
+ grand_archive.2005.a.homicidal: "待宰的无脑野兽。"
+ grand_archive.2015.name: "虚空虫酶"
+ grand_archive.2015.desc: "虚空虫以三只为一组交配，这种形态被称为“三头虫”。这些生物的一生都被绑定在永无止境的交配仪式中。然而，它们需要外部生物宿主才能繁殖后代。\n\n它们是寄生虫。\n\n虚空虫成熟后，会在其生殖系统内发育出一窝囊肿。这些保护性囊肿包含高腐蚀性的配子，当与三头虫中的其他配子结合时，可以被发送到具有合适生物量的星球上，以产下更多幼虫。它们的宿主无法在这一过程中存活。我们已经看到证据表明，虚空虫会协调它们的轰炸，以便在整个银河中维持可持续数量的可用宿主。\n\n无论如何，我们相信我们可以利用它们的生殖酶的力量来造福我们自己。我们甚至可以对它们的繁殖活动产生免疫力。"
+ grand_archive.2015.a: "利用他们的生育能力来满足我们自己的需求。"
+ grand_archive.2015.b: "真恶心。找到治愈方式。"
+
+ further_fc_voidworms_completed: "$further_fc_amoebas_completed$"
+
+ voidworms_hunting_buff: "$NAME_Voidworms$猎手"
+ voidworms_hunting_buff_tt: "$mod_damage_vs_country_type_voidworms_mult$：§G+$@hunting_buff_damage_vs_voidworms_mult|0%$§!"
+ voidworms_hunting_buff_desc: "虚空虫的肉富含营养，每次战斗后都可以进行收获，每支被摧毁的舰队带来§G$@voidworms_hunting_buff_food_reward|0$§! £food£。"
+ voidworm_enzymes: "虚空虫酶"
+ voidworm_slayers_modifier: "虚空虫杀手"
+ voidworm_slayers_modifier_tt: "$mod_damage_vs_country_type_voidworms_mult$：§G+$@voidworm_slayers_damage_vs_voidworms_mult|0%$§!\n$mod_voidworms_planet_orbital_bombardment_damage$：§G-25%§!\n$mod_country_unity_produces_mult$：§G+10%§!"
+ VOIDWORMS_PROJECT: "虚空虫研究"
+ VOIDWORMS_PROJECT_DESC: "虚空虫的生物学特性和繁殖模式值得进一步研究。"
+ tech_voidworm_immunity: "虚空虫免疫"
+ tech_voidworm_immunity_desc: "我们可以研发出治疗虚空虫寄生感染的药物。所有殖民地将对它们目前使用的孢子轰炸免疫。"
+ tech_voidworm_immunity_effect: "殖民地不受虚空虫轰炸的影响。\n$mod_damage_vs_country_type_voidworms_mult$：§G+$@vaccine_damage_vs_country_type_voidworms_mult|0%$§!"
+ tech_voidworm_immunity_effect_during_situation: "§R虚空虫瘟疫期间，轨道轰炸免疫不生效。§!\n$mod_damage_vs_country_type_voidworms_mult$：§G+$@vaccine_damage_vs_country_type_voidworms_mult|0%$§!\n§Y$situation_voidworm_plague$§!局势进度推进§G+$@vaccine_situation_advancement|0$§!"
+
+ voidworm_nest: "虚空虫巢穴"
+ voidworm_nest_plural: "虚空虫巢穴"
+ voidworm_broken_nest: "被毁的虚空虫巢穴"
+ voidworm_broken_nest_desc: "虚空虫用来抚育和保护幼虫的巢穴遗迹。"
+
+ mod_damage_vs_country_type_voidworms_mult: "对$NAME_Voidworms$伤害"
+ mod_damage_vs_country_type_voidworms_crisis_mult: "$mod_damage_vs_country_type_voidworms_mult$"
+ mod_damage_vs_country_type_voidworms_treasure_hunters_mult: "$mod_damage_vs_country_type_voidworms_mult$"
+ mod_damage_vs_country_type_frenzied_voidworms_mult: "$mod_damage_vs_country_type_voidworms_mult$"
+ mod_voidworms_planet_orbital_bombardment_damage: "$NAME_Voidworms$造成的$MOD_PLANET_ORBITAL_BOMBARDMENT_DAMAGE$"
+
+ grand_archive.2053.name: "虚空虫被肃清"
+ grand_archive.2053.desc: "虚空虫的最后一个家园星系已经被摧毁，它们物种也已灭绝。\n\n我们不再需要担心它们的寄生攻击。"
+ grand_archive.2054.name: "虚空虫洞穴被摧毁"
+ grand_archive.2054.desc: "我们已经铲除了一个虚空虫的母星系。\n\n它们将无法再利用这些产卵地来抚育幼虫。"
+
+ voidworm_scaling: "虚空虫强度比例"
+ voidworm_scaling_difficulty_civilian: "$voidworm_scaling$"
+ voidworm_scaling_difficulty_cadet: "$voidworm_scaling$"
+ voidworms_crisis_growth_modifier: "虚空虫危机加速增长"
+ voidworms_at_home_modifier: "$NAME_Voidworms$增益"
+ voidworms_post_crisis_modifier: "$voidworm_crisis_eradicate_chain_title$"
+ frenzied_voidworms_at_home_modifier: "$NAME_Frenzied_Voidworms$增益"
+ frenzied_voidworms_enraged_modifier: "暴怒的$NAME_Frenzied_Voidworms$"
+ frenzied_voidworms_pacified_modifier: "安抚的$NAME_Frenzied_Voidworms$"
+
+ resolution_voidworm_eradication: "虚空虫灭绝"
+ resolution_voidworm_eradication_desc: "有寄生天性的虚空虫是星系的祸害，对有人居住的世界构成威胁。它们的自然生命周期破坏了星系生态系统的平衡，应该被彻底消灭。"
+ resolution_voidworm_eradication_tooltip: "任何国境内有§Y$NAME_Voidworms$§!居住的国家都将被视作§R违反银河法§!，直到这些生物自行离开或被彻底摧毁。"
+ resolution_repeal_voidworm_eradication: "§R废除$resolution_voidworm_eradication$§!"
+ resolution_repeal_voidworm_eradication_desc: "[global_event_country.GetGalCommunityOrGalImperium]没有权利消灭虚空虫物种。"
+ resolution_repeal_voidworm_eradication_effect_success: "废除§Y$resolution_voidworm_eradication$§!。"
+
+ grand_archive.2103.name: "$resolution_voidworm_eradication$"
+ grand_archive.2103.desc: "[global_event_country.GetGalCommunityOrGalImperium]已宣布，所有虚空虫不再被允许进入成员国的星系。\n\n在它们被消灭或自行离开我们的宇域之前，[this.GetName]将被视为§R违反银河法§!。"
+ grand_archive.2105.name: "[this.GetSpeciesName]境内的$NAME_Voidworms$"
+ grand_archive.2105.desc: "一支虚空虫舰队已进入[from.GetName]星系内的我们的空间。作为[global_event_country.GetGalCommunityOrGalImperium]成员，我们有法律义务立即处决在我们边界内的任何虚空虫。\n\n[this.GetName]将被视为§R违反银河法§!，直到虚空虫离开我们的空间或被消灭。"
+ grand_archive.2107.desc: "虚空虫一直存在于我们的[invaded_system.GetName]星系，使我们严重§R违反了银河法§!中关于$resolution_voidworm_eradication$决议的内容。这导致[global_event_country.GetGalCommunityOrGalImperium]允许成员投票对[this.GetName]实施制裁。"
+
+ bombardment_damage_moderate: "§Y中度§!"
+ bombardment_damage_massive: "§R巨大§!"
+ bombardment_voidworm_invasion_desc_common: "$bombardment_voidworm_invasion$将摧毁人群，创建新的虚空虫幼体。\n—对§Y陆军§!造成§Y中度§!伤害\n—对§Y行星§!造成[GetVoidwormFleetBombardmentDamageIntensity]伤害，直到§Y25%§!破坏度\n—对§Y人口§!造成§Y中度§!伤害"
+ bombardment_voidworm_invasion: "虚空虫孢子"
+ bombardment_voidworm_invasion_desc: "$bombardment_voidworm_invasion_desc_common$\n—§R不会§!消灭最后的§Y$MIN_POPS$§!个人口"
+ bombardment_voidworm_invasion_crisis: "$bombardment_voidworm_invasion$（天灾）"
+ bombardment_voidworm_invasion_crisis_desc: "$bombardment_voidworm_invasion_desc_common$"
+ bombardment_frenzied_voidworm_invasion: "变异$bombardment_voidworm_invasion$"
+ bombardment_frenzied_voidworm_invasion_desc: "—被摧毁的行星将转变为§Y$pc_shattered$§!"
+
+ alert_space_fauna_bombardment_title: "虚空虫正在轰炸我们的殖民地！"
+ alert_space_fauna_bombardment_instant: "我们的殖民地正在遭受星际寄生虫的轰炸！\n它们携带有限数量的孢子，准备在人口稠密的殖民地传播，很快就会离开。"
+ ALERT_SPACE_FAUNA_BOMBARDMENT_DETAIL: "$SYSTEM_NAME|Y$的$PLANET_NAME|Y$。剩余待被消耗的人群：§Y$POPS_TO_KILL$§!。"
+
+ grand_archive.2195.name: "星际寄生虫"
+ grand_archive.2195.desc.common_1: "[from.GetName]正在遭受攻击。\n\n一大群虚空虫正在殖民地轨道上，用寄生囊肿进行轰炸。"
+ grand_archive.2195.desc.common_2: "生物分析表明，每窝虚空虫都拥有有限数量的囊肿，它们很可能在囊肿耗尽后离开。但在那之前，我们会遭受严重的人口损失。"
+ grand_archive.2195.desc.default: "$grand_archive.2195.desc.common_1$\n\n每个囊肿都包含一个剧毒孢子，对我们的殖民者以及所有生命都极其致命。一旦被摄入，它会迅速发育成为一只若虫，并会暴力地从宿主体内破茧而出，彻底摧毁宿主。这些若虫体内有一个压缩气体囊，使它们能够上升到高层大气，在那里它们会本能地将自己推进到预定的目的地。\n\n$grand_archive.2195.desc.common_2$"
+ grand_archive.2195.desc.rocks: "$grand_archive.2195.desc.common_1$\n\n每个囊肿都包含一个剧毒孢子，对所有本地动物群都极其致命。一旦被摄入，它会迅速发育成为一只若虫，并会暴力地从宿主体内破茧而出，彻底摧毁宿主。这些若虫通常以小行星为食，以获取珍贵的金属，但它们也会伺机捕食我们脆弱的[this.GetPopTypeNamePlural]。每个幼虫体内都含有一个压缩气体囊，使它们能够上升到高层大气，并本能地将自己推进到预定的目的地。\n\n$grand_archive.2195.desc.common_2$"
+ grand_archive.2195.a: "令人不安。"
+ grand_archive.2195.a.homicidal: "他们会灭亡的。"
+
+ ap_galactic_contender_voidworms_tt: "$MOD_DIPLO_WEIGHT_MULT$：§G+20%§!\n$mod_damage_vs_country_type_fallen_empire_mult$：§G+$@ap_galactic_contender_dmg_mult|0%$§!\n$mod_damage_vs_country_type_awakened_fallen_empire_mult$：§G+$@ap_galactic_contender_dmg_mult|0%$§!\n$mod_damage_vs_country_type_gate_builders_mult$：§G+$@ap_galactic_contender_dmg_mult|0%$§!\n$mod_damage_vs_country_type_voidworms_mult$：§G+$@ap_galactic_contender_dmg_mult|0%$§!"
+ ap_defender_of_the_galaxy_voidworm_modifier_desc: "$mod_damage_vs_country_type_voidworms_mult$：§G+$@ap_defender_of_the_galaxy_voidworm_dmg_mult|0%$§!\n$ap_defender_of_the_galaxy_modifier_desc$"
+
+###########################
+# Voidworms Plague Crisis #
+###########################
+
+ production_surge_modifier: "生产骤增"
+ public_distrust_modifier: "公开失信"
+ test_subject_unwilling_modifier: "测试对象"
+ test_subject_volunteer_modifier: "$test_subject_unwilling_modifier$"
+ test_subject_gestalt_modifier: "$test_subject_unwilling_modifier$"
+
+ grand_archive.2310.name: "虚空虫瘟疫"
+ grand_archive.2310.desc.default: "星系中$NAME_Voidworms$的数量已达到临界值，它们的习性正在发生显著变化。\n\n它们生命周期中原本会放任宿主物种繁衍一段时间的阶段已打破，它们似乎不再顾及这些产卵地是否能够维持可持续性。\n\n我们所有殖民地都已进入红色警戒状态。在任何星系中发现$NAME_Voidworms$，都应极其谨慎地应对。\n\n一场泛银河级的繁殖狂潮正在向我们袭来。"
+ grand_archive.2310.desc.tech: "$grand_archive.2310.desc.default$\n\n我们之前针对这些寄生虫建立的免疫力，现在已经不再像以前那样有效了。我们需要重新开始研究。"
+ grand_archive.2310.desc.nocontact: "整个银河都在疯传一个令人不安的消息：一种此前不为人知的太空兽群“虚空虫”正在疯狂繁殖。据说，对于那些防御系统不够完善的星系来说，这些生物构成了巨大的威胁。我们所有的殖民地现在都已经进入了最高警戒状态。"
+ grand_archive.2310.a: "$DISTURBING$$DOTDOTDOT$"
+
+ situation_voidworm_plague: "虚空虫瘟疫"
+ situation_voidworm_plague_type: "$situation_voidworm_plague$"
+ situation_voidworm_plague_desc: "$NAME_Voidworms$瘟疫正在肆虐。\n\n这些生物不再将宿主星球作为繁殖地。我们必须消灭它们，否则我们的殖民地将面临风险。\n\n§Y每消灭一个虚空虫都会加速局势进展。§!"
+ situation_voidworm_plague_monthly_change_tooltip: "$situation_monthly_change_tooltip_approaches_dependent$"
+ finisher_effects_voidworm_plague: "你的殖民地将不再受到虚空虫的轰炸影响。"
+ approach_voidworm_plague_do_nothing: "静观其变"
+ approach_voidworm_plague_do_nothing_tt: "我们目前不会采取任何特殊行动。"
+ approach_voidworm_plague_support_fleets: "保障我方舰队"
+ approach_voidworm_plague_support_fleets_tt: "为了对抗虚空虫的威胁，我们可以牺牲一小部分生活品质来支援我们的军事舰队。\n局势$SITUATION_MONTHLY_CHANGE$：§G+0.5§!"
+ approach_voidworm_plague_purge_infected_pops: "清除感染者"
+ approach_voidworm_plague_purge_infected_pops_tt: "被$NAME_Voidworms$轰炸过的殖民地不会产生新的$NAME_Voidworms$。\n局势$SITUATION_MONTHLY_CHANGE$：§G+0.7§!"
+ approach_voidworm_plague_search_for_cure: "寻求治愈手段"
+ approach_voidworm_plague_search_for_cure_tt: "如果我们能打破它们的生物循环，$NAME_Voidworms$就无法在这个星系中继续繁殖了。\n局势$SITUATION_MONTHLY_CHANGE$：§G+1.0§!"
+ change_approach_will_temporarily_lock: "§S采用该应对方案将锁定其他应对方案，持续§Y$@voidworm_plague_approach_cooldown_years|0$年§!。§!"
+ too_early_to_change_approach: "§S再次更改局势的应对方案还为时过早。§!"
+
+ voidworm_crisis_eradicate_chain_title: "根除$NAME_Voidworms$"
+ voidworm_crisis_eradicate_chain_desc: "星系中的虚空虫数量已达到无法继续维持的水平，必须将其彻底消灭。\n\n我们已经找到了所有剩余的§Y虚空虫巢穴§!，必须将其摧毁。"
+ voidworm_system_poi_title: "摧毁[prev.GetName]"
+ voidworm_system_poi_desc: "在该星系检测到§Y虚空虫巢穴§!。\n\n摧毁它们可以防止生成更多的寄生虫。"
+
+ # Voidworms Plague Crisis Random Events #
+
+ grand_archive.2400.name: "多余的零件"
+ grand_archive.2400.desc: "我们在对抗$NAME_Voidworms$的行动中，由于改良了维护协议，舰队支援力度提升，意外获得了大量额外的零件。我们有机会将这些材料投入到提高新舰队的短期生产中。"
+ grand_archive.2400.a: "投入进一步增援中。"
+ grand_archive.2400.b: "作为维护的储备零件。"
+
+ grand_archive.2405.name: "号召入伍"
+ grand_archive.2405.desc.default: "我们持之以恒抵御虚空虫威胁的准备工作，激励了新一代的指挥官。[this.GetName]的经验丰富的公民选择贡献他们的才能，以消除这个银河的威胁。"
+ grand_archive.2405.desc.gestalt: "我们针对虚空虫威胁进行了持续的准备工作，使我们能够生产出额外的指挥官级领袖节点。由于我们为舰队提供额外的支援，这些战斗型节点能够获得更多资源，以促进其快速融入我们的军事行动之中。"
+ grand_archive.2405.a: "鼓舞人心。"
+ grand_archive.2405.tt: "刷新领袖池，并添加3位额外指挥官，每位指挥官额外提升一级。"
+
+ grand_archive.2410.name: "前线的新发明"
+ grand_archive.2410.desc.default: "驻扎在[random_shipyard.GetName]的工程师开发了一种新的舰船防御概念蓝图。[random_shipyard.leader.GetHeSheCap]在对抗虚空虫的战斗中进行例行维修时，[random_shipyard.leader.GetHeShe]灵机一动，想出了一个可以提高舰船坚固性的新组件。该想法提交给我们的研究部门后，我们认为它具有巨大的潜力。"
+ grand_archive.2410.desc.gestalt: "驻扎在[random_shipyard.GetName]的维修子个体激发了新的研究观点，能够改进舰船防御。在例行维修期间的一次误操作中，该子个体使用了一种奇特的材料和方法组合，创造了一种新的防护组件。经过对研究可能性进行论证，这一意外发现经过改进后可以展现出巨大潜力。"
+
+ grand_archive.2420.name: "[infected_leader.GetName]受染"
+ grand_archive.2420.desc: "在履行[infected_leader.GetHisHer]的职责期间，[infected_leader.GetName]感染了活跃的虚空虫孢子。新的若虫很快就会出现并摧毁它们的宿主。\n\n这可能是一场徒劳的战斗，但医务人员推测，在幼虫完全融入[infected_leader.GetHisHer]的神经系统之前，可能可以将其取出。这是一场风险很大的手术，但[infected_leader.GetName]似乎愿意让我们尝试。"
+ grand_archive.2420.a: "将其扑杀。"
+ grand_archive.2420.b: "提取幼虫。"
+
+ grand_archive.2425.name: "隔离带缺口"
+ grand_archive.2425.desc.common: "一小群被感染的[infected_planet_pop.species.GetName]从[infected_planet.GetName]的净化行动中逃脱，并分散到我们的星系中。如果不加控制，这会导致虚空虫感染蔓延到整个[this.GetName]。"
+ grand_archive.2425.desc.default: "$grand_archive.2425.desc.common$必须赶在这些逃亡者威胁到我们所有人之前尽快处理掉。"
+ grand_archive.2425.desc.rogue: "$grand_archive.2425.desc.common$必须赶在这些逃亡者威胁到我们其他的活体陈设之前尽快处理掉。"
+ grand_archive.2425.desc.gestalt: "$grand_archive.2425.desc.common$必须赶在这些逃亡者威胁到我们的大集体意识之前尽快处理掉。"
+ grand_archive.2425.desc.robot: "用于分析的受感染动植物样本被错误地当作普通食物进行处理。由于这个错误，大量有机物被虚空虫的寄生虫污染，必须进行处理。"
+ grand_archive.2425.a.default: "追捕他们。"
+ grand_archive.2425.a.default.tt: "-1所有所属殖民地内有机体人口"
+ grand_archive.2425.a.robot: "焚烧食品供应。"
+ grand_archive.2425.a.robot.tt: "所有未受感染的行星获得$@infected_devastation|0$破坏度"
+ grand_archive.2425.b: "静观其变。"
+ grand_archive.2425.b.tt: "我们的殖民地附近可能会出现更多虚空虫的若虫！"
+
+ grand_archive.2430.name: "玩忽职守"
+ grand_archive.2430.desc: "虽然清除感染者被认为是最明智的行动方针，但许多士兵却难以执行命令。尽管虚空虫的寄生虫危险性很高，但许多士兵仍然无法为了更大的利益而消灭自己的同胞。\n\n必须采取措施阻止虚空虫感染在我们的殖民地蔓延。我们可以尝试将清除过程的某些环节自动化，从而减少对士兵的需求。或者，我们可以发起短暂的宣传活动，宣传我们清除行动的道德标准，并重申其必要性。"
+ grand_archive.2430.a: "将净化过程自动化。"
+ grand_archive.2430.b: "加强公共舆论导向。"
+
+ grand_archive.2440.name: "平行突破"
+ grand_archive.2440.desc: "我们对虚空虫瘟疫的治疗方法的探索，也促进了其他生物学领域的平行研究。虽然寄生虫目前仍是我们的首要任务，但这一新的突破在未来研究中具有巨大潜力。"
+
+ grand_archive.2445.name: "早期测试"
+ grand_archive.2445.desc.common: "我们对虚空虫瘟疫的理解正在提高，并且已经开发出治愈方法的基础。"
+ grand_archive.2445.desc.default: "$grand_archive.2445.desc.common$然而，如果能在[owner_main_species.GetName]参与者身上进行早期活体测试，我们的研究进度将会快得多。\n\n撇开伦理考量不谈，为了更大的利益，绕过某些安全措施或许是明智之举。"
+ grand_archive.2445.desc.gestalt: "$grand_archive.2445.desc.common$然而，测试过程非常耗时，主要原因是需要不断地将未分配的子个体作为测试对象。如果子个体可以简单地重新分配成为测试对象，那么治愈方案的开发速度将会加快。\n\n然而，这种做法会对整个集体造成其他影响，重新分配的无人机将导致其先前角色陷入混乱。"
+ grand_archive.2445.a.default: "对毫无察觉的[owner_main_species.GetName]进行测试。"
+ grand_archive.2445.a.gestalt: "优先测试。"
+ grand_archive.2445.b.default: "仅对志愿者进行测试。"
+ grand_archive.2445.b.gestalt: "正常继续测试。"
+ grand_archive.2445.c: "不能做有违道德的测试。"
+
+ grand_archive.2450.name: "虚空虫腺体"
+ grand_archive.2450.desc: "我们发现了虚空虫繁殖周期中的一个规律，这可能在合成治疗虚空虫疫的药物方面带来重大突破。\n\n为了验证这一假设，必须从一只野生$voidworms_titan$中采集其生殖腺进行分析。至关重要的是，这只$voidworms_titan$必须在轰炸星球的过程中被杀死，才能保存活跃的生殖配子。"
+ grand_archive.2450.a: "我们没时间。"
+ grand_archive.2450.b: "保证能够拿到腺体。"
+
+ VOIDWORM_GLANDS_PROJECT: "三头虫生殖腺体"
+ VOIDWORM_GLANDS_PROJECT_DESC: "我们在寻找虚空虫瘟疫的治疗方法方面取得了突破性进展。唯一需要的是处于活跃繁殖状态的虚空三头虫的生殖腺。"
+ VOIDWORM_GLANDS_PROJECT_TOOLTIP: "§R收集正在轰炸行星的虚空三头虫的尸骸。§!"
+
+ VOIDWORM_TITAN_DEBRIS_PROJECT: "$NAME_Voidworms_Troika$尸骸"
+ VOIDWORM_TITAN_DEBRIS_PROJECT_DESC: "这种虚空三头虫的残骸可以收获其具有繁殖能力的生殖腺。\n\n这些器官将极大地扩展我们对这些生物的生物学理解，并帮助我们彻底消灭虚空虫瘟疫。"
+
+ grand_archive.2455.name: "取回腺体"
+ grand_archive.2455.desc: "从可育的“三头虫”形态的虚空虫身上取回的腺体揭示关于它们生殖循环的新信息。\n\n每一只处于繁殖拥抱中的虚空虫都会将遗传物质均匀分布，有效地形成一个全新的有机体，深锁于交配仪式中直到死亡。\n\n我们可以利用这些展现出遗传延展性的过程来对付他们。"
+
+ grand_archive.2500.name: "发现治疗方法"
+ grand_archive.2500.desc.default: "我们终于研制出了彻底根治虚空虫寄生感染的方法。从此以后，我们的殖民地再也不用担心那些可怕的孢子袭击了，星系中这些虫子的存在也不再是我们需要操心的问题了。"
+ grand_archive.2500.desc.tech: "$grand_archive.2500.desc.default$\n\n我们确信，这一次，我们开发的治疗方法已经能够防范他们生物学上的任何未来突变。"
+
+#########################################
+# Voidworm Plague Crisis Galactic Focus #
+#########################################
+ resolution_galactic_focus_crisis_voidworm_plague: "交点：虚空虫瘟疫"
+ resolution_galactic_focus_crisis_voidworm_plague_desc: "虚空寄生虫对星系构成了威胁。如果我们不团结起来阻止它们，它们会将我们吞噬殆尽。我们应该把应对这场天灾作为星系的焦点。"
+ resolution_galactic_focus_crisis_voidworm_plague_effect_success: "$resolution_galactic_focus_crisis_effect_success$"
+ galactic_focus_crisis_voidworm_plague: "击败虚空虫瘟疫"
+ galactic_focus_crisis_voidworm_plague_desc: "虚空虫瘟疫威胁着整个银河。我们必须团结起来，战胜这种寄生虫的威胁。"
+ gal_com_crisis_voidworm_pop_victims: "虚空虫对领土内的人群造成了重大损失。"
+
+ ##############
+ # Cutholoids #
+ ##############
+
+ cutholoids_hatchling: "岩居兽幼体"
+ cutholoids_hatchling_plural: "岩居兽幼体"
+ cutholoids_juvenile: "青年岩居兽"
+ cutholoids_juvenile_plural: "青年岩居兽"
+ cutholoids: "岩居兽"
+ cutholoids_plural: "岩居兽"
+
+ reanimated_cutholoids_hatchling: "复活的$cutholoids_hatchling$"
+ reanimated_cutholoids_hatchling_plural: "复活的$cutholoids_hatchling_plural$"
+ reanimated_cutholoids_juvenile: "复活的$cutholoids_juvenile$"
+ reanimated_cutholoids_juvenile_plural: "复活的$cutholoids_juvenile_plural$"
+ reanimated_cutholoids: "复活的$cutholoids$"
+ reanimated_cutholoids_plural: "复活的$cutholoids_plural$"
+
+ NAME_Cutholoids_Hatchling: "$cutholoids_hatchling$"
+ NAME_Cutholoids_Juvenile: "$cutholoids_juvenile$"
+ NAME_Cutholoids: "$cutholoids$"
+ NAME_Reanimated_Cutholoids_Hatchling: "复活的$cutholoids_hatchling$"
+ NAME_Reanimated_Cutholoids_Juvenile: "复活的$cutholoids_juvenile$"
+ NAME_Reanimated_Cutholoids: "复活的$cutholoids$"
+ pc_cutholoid: "$pc_asteroid$"
+ pc_cutholoid_desc: "$pc_asteroid_desc$"
+
+ resolution_cutholoid_eradication: "$cutholoids$灭绝"
+ resolution_cutholoid_eradication_desc: "不应该容许吞噬舰船的岩居兽在文明的星系内存在。必须不惜一切代价消灭这些生物。"
+ resolution_cutholoid_eradication_tooltip: "任何国境内有§Y$cutholoids_plural$§!居住的国家都将被视作§R违反银河法§!，直到这些生物被彻底摧毁。"
+ resolution_repeal_cutholoid_eradication: "§R废除$resolution_cutholoid_eradication$§!"
+ resolution_repeal_cutholoid_eradication_desc: "[global_event_country.GetGalCommunityOrGalImperium]的存在并不是为了不分青红皂白强行消灭岩居兽物种的。"
+ resolution_repeal_cutholoid_eradication_effect_success: "废除§Y$resolution_cutholoid_eradication$§!。"
+
+ fcsum_cutholoids_1: "$fcsum_critters_1$"
+ further_fc_cutholoids_completed: "$further_fc_amoebas_completed$"
+
+ grand_archive.3103.name: "$resolution_cutholoid_eradication$"
+ grand_archive.3103.desc: "[global_event_country.GetGalCommunityOrGalImperium]已宣布，所有岩居兽不再被允许进入成员国的星系。\n\n在它们被消灭或自行离开我们的宇域之前，[Root.GetName]将被视为§R违反银河法§!。"
+ grand_archive.3105.name: "[this.GetSpeciesName]宇域内的$cutholoids_plural$"
+ grand_archive.3105.desc: "[from.GetName]星系内发现了一只岩居兽。在[global_event_country.GetGalCommunityOrGalImperium]将其指定为危险害兽之后，成员国有法律义务立即处决在边界内的所有岩居兽。\n\n[Root.GetName]将被视为§R违反银河法§!，直到岩居兽离开我们的星系或被消灭为止。"
+ grand_archive.3107.desc: "岩居兽一直存在于我们的[invaded_system.GetName]星系，使我们严重§R违反了银河法§!中关于$resolution_cutholoid_eradication$决议的内容。这导致[global_event_country.GetGalCommunityOrGalImperium]允许成员投票对[Root.GetName]实施制裁。"
+
+ grand_archive.3011.name: "科研船失踪"
+ grand_archive.3011.desc: "我们的一艘科研船在[cutholoid_under_radar.solar_system.GetName]调查一颗奇怪的小行星时失去了联系。\n\n在他们最后失踪的地点探测到了微弱的应急信号，我如果要找回这艘失踪的舰船就需要进一步调查。"
+ grand_archive.3011.a: "太糟了。"
+
+ grand_archive.3012.name: "发现小行星实体"
+ grand_archive.3012.desc: "在§H[from.solar_system.GetName]§!进行例行探索的过程中发现了另一个奇怪的小行星状生物。\n\n我们应该避免让§H科研船§!接近这个星系，直到我们对这个危险的物体有更多的了解为止。"
+ grand_archive.3012.a: "继续调查。"
+
+ grand_archive.3016.name: "令人不快的意外"
+ grand_archive.3016.desc.default: "[fromfrom.GetName]中的小行星只是一只栖居在里面的巨大有机体的外壳。\n\n我们成功地将其摧毁，并找回了[this.GetName]。此后调查小行星的时候可得小心了。\n\n可能还有其他的这种生物潜藏于此，等待着不小心的猎物。"
+ grand_archive.3016.desc.leader_killed: "$grand_archive.3016.desc.default$不幸的是，[leader.GetName]遭受到了一些不可修复的损伤。"
+
+ grand_archive.3018.name: "兽口脱险"
+ grand_archive.3018.desc: "我们在§H[current_system.GetName]§!失踪的科研船回来了！\n\n§H[leader.GetName]§!发回的报道称，他们被一个藏在小行星中的太空实体整个吞下，最后在船体就要承受不住的时候意外地被吐了出来。似乎有什么别的东西把这个生物吓了一跳让我们侥幸逃脱。\n\n在有更多的认知之前，探索这片小行星带可要多加小心了。"
+ grand_archive.3018.a: "真幸运。"
+
+ grand_archive.3020.name: "失去科研船"
+ grand_archive.3020.desc: "[from.GetName]的应急通讯戛然而止。我们只能相信[from.GetName]科研船已经永远离我们而去了。"
+
+ alert_mia_fleet_eaten_title: "$alert_mia_title$"
+ alert_mia_fleet_eaten_instant: "我们的一艘科研船在调查一颗小行星时失去了联系。在他们最后失踪的地点探测到了微弱的应急信号。"
+
+ cutholoid_discovered_chain_title: "救回[this.GetName]"
+ cutholoid_discovered_chain_desc: "我们与一艘在[cutholoid_under_radar.solar_system.GetName]的科研船[this.GetName]失去了联系。\n\n最后的通讯表明他们当时正在调查一颗附近的小行星，[cutholoid_under_radar.GetName]。\n\n建议靠近这个星系的话一定要小心点。"
+
+ HIDDEN_CUTHOLOID_ATTACK_PROJECT: "摧毁小行星"
+ HIDDEN_CUTHOLOID_ATTACK_PROJECT_DESC: "[cutholoid_under_radar.GetName]小行星不可貌相。我们需要派遣一支小有规模的军队前去，在[this.GetName]科研船永远离开我们之前将其救出。"
+ HIDDEN_CUTHOLOID_CAPTURE_PROJECT: "捕获小行星"
+ HIDDEN_CUTHOLOID_CAPTURE_PROJECT_DESC: "[cutholoid_under_radar.GetName]小行星不可貌相。我们有了合适的科技，可以将其整个捕获并在[this.GetName]永远离开我们之前将其轻易地救出。"
+
+ grand_archive.2800.name: "假小行星"
+ grand_archive.2800.desc: "我们在§H[This.System.GetName]§!发现的异常小行星似乎具有感性。靠近这种物体的轨道是非常危险的，在我们有更多的了解之前，建议科研船立刻远离受其影响的星系。"
+ grand_archive.2800.a: "继续调查。"
+
+ grand_archive.2900.name: "岩居兽"
+ grand_archive.2900.desc: "我们发现了一种居住在小行星外壳内的太空生物，将其命名为§H岩居兽§!。它们是一种可以埋伏数年只为给猎物致命一击的伏击掠食者。它们极度危险，能吞下整艘舰船，所以在探索那些未调查的小行星带时务必格外小心。\n\n好消息是，它们的数量非常稀少，而且无性繁殖流程可能要花费上百年。"
+ grand_archive.2900.a: "我们应该进一步研究这些生物。"
+ grand_archive.2900.b: "伏击猎食者吗。全部摧毁。"
+ grand_archive.2900.b.homicidal: "猎食者也可以是猎物。"
+
+ grand_archive.2905.name: "岩居兽外壳"
+ grand_archive.2905.desc: "岩居兽的外壳并不只是矿物而已，其中还有生物纤维补强。这些纤维一直都在生长，这种外壳中估计包含了超过一半的生物质。\n\n当岩居兽长得住不下小行星时，他们会寻找下一个新家并再次开始整合流程。虽然它们通常具有很强的领地意识，但在极佳的外壳候选品的轨道上也会出现多只岩居兽，其中最大的一只将占据这颗新的小行星，而其他个体将按大小排序，和平地交换外壳。通过这种方式，它们居住的小行星往往会交换十几手之多。\n\n最终的结果是，最小的小行星会因为交换频繁反而得到了最多的生物强化。这些样品具有重要的科学价值。"
+ grand_archive.2905.a: "增强我们的太空兽群。"
+ grand_archive.2905.b: "升级我们的舰船。"
+
+ cutholoids_hunting_buff: "岩居兽猎人"
+ cutholoids_hunting_buff_desc: "岩居兽富有矿物的外壳在战斗后将进行打捞，每击败一支舰队可获得£minerals£ §G$@cutholoids_hunting_buff_mineral_reward|0$§!。"
+
+ mod_damage_vs_country_type_cutholoids_mult: "对岩居兽的伤害"
+ RESEARCH_CUTHOLOIDS_PROJECT: "岩居兽研究"
+ RESEARCH_CUTHOLOIDS_PROJECT_DESC: "岩居兽的小行星外壳是一件令人印象深刻的生物工程杰作。我们还有很多可以向它们学习的。"
+
+ cutholoid_debris_01_object: "岩居兽残骸"
+ CUTHOLOID_DEBRIS_PROJECT: "$cutholoid_debris_01_object$"
+ CUTHOLOID_DEBRIS_PROJECT_DESC: "我们摧毁了一只躲在小行星中的巨型生物。收获它的尸体也许对我们很有价值。"
+
+ cutholoids_section: "岩居兽"
+
+ ENGULF_COMPONENT: "吞食之胃"
+ ENGULF_COMPONENT_EFFECT_DESC: "$ENGULF_COMPONENT_EFFECT_DESC_WILD$§Y它可能会被该生物的拥有者吞噬或强征。§!"
+ ENGULF_COMPONENT_EFFECT_DESC_WILD: "§Y该生物可以吞食一个小于该岩居兽的目标。§!"
+ CUTHOLOID_PREYING_MAW: "吞食之胃"
+ CUTHOLOID_PREYING_MAW_DESC: "周期性吞噬敌方小型舰船。"
+ METEOROID_SLINGER_1: "中型流星体投掷器"
+ METEOROID_SLINGER_1_DESC: "向目标发射一枚沉重的流星体，通过撞击产生巨大的动能伤害。"
+ METEOROID_SLINGER_2: "大型流星体投掷器"
+ METEOROID_SLINGER_2_DESC: "$METEOROID_SLINGER_1_DESC$"
+ MEDIUM_PREYING_MAW: "中型吞食之胃"
+ MEDIUM_PREYING_MAW_DESC: "周期性吞噬敌方中型舰船。"
+ LARGE_PREYING_MAW: "大型吞食之胃"
+ LARGE_PREYING_MAW_DESC: "周期性吞噬敌方大型舰船。"
+ HUGE_PREYING_MAW: "巨型吞食之胃"
+ HUGE_PREYING_MAW_DESC: "周期性吞噬敌方巨型舰船。"
+
+ HUNT_CUTHOLOID_ATTACK_PROJECT: "摧毁[solar_system.GetName]内的岩居兽"
+ HUNT_CUTHOLOID_ATTACK_PROJECT_DESC: "摧毁该岩居兽就能阻止其继续伏击我们途径的舰船。"
+ HUNT_CUTHOLOID_CAPTURE_PROJECT: "捕捉[solar_system.GetName]内的岩居兽"
+ HUNT_CUTHOLOID_CAPTURE_PROJECT_DESC: "岩居兽正在潜伏等待可以攻击的舰船。这是一个将其捕获进行进一步研究的绝佳机会。"
+
+ leader_trait_cutholoid_victim: "岩居兽受害者"
+ leader_trait_cutholoid_victim_desc: "这位领袖曾被困于太空岩居兽的消化系统中。其身躯不再完整，但对分子生物学获得了独特的洞见。"
+
+###########
+# Effects #
+###########
+
+ REMOVE_SPECIMEN_EFFECT: "移除['concept_specimen']$NAME|Y$"
+ GIVE_DNA_EFFECT: "给予$RARITY$$CATEGORY$$c_dna$"
+ REFRESH_LEADER_POOL_EFFECT: "刷新领袖池"
+ CULL_VIVARIUM_FAUNA_EFFECT: "屠宰我们生态园中的兽群所获得的资源：$RESOURCES$"
+ UNLOCK_EXHIBIT_EFFECT: "进行展览"
+
+ MESSAGE_STOLEN_SPECIMEN_TITLE: "盗取标本"
+ STOLEN_SPECIMEN_PERPETRATOR_DESC: "我们获得了如下标本：\n$DETAILS$"
+ STOLEN_SPECIMEN_VICTIM_DESC: "我们无法取回如下标本：\n$DETAILS$"
+
+############
+# Triggers #
+############
+
+ HAS_ANY_FLAG: "有任意旗帜"
+
+ IS_LAST_ACQUIRED_SPECIMEN: "$SPECIMEN|Y$是$COUNTRY|Y$最新获得的一个['concept_specimen']"
+ IS_NOT_LAST_ACQUIRED_SPECIMEN: "$SPECIMEN|Y$不是$COUNTRY|Y$最新获得的一个['concept_specimen']"
+ ACQUIRED_SPECIMEN_COUNT: "获得的标本数$COMPARATOR$$NUM|Y$"
+ ACQUIRED_SPECIMEN_COUNT_NOT: "获得的标本数不$COMPARATOR$$NUM|Y$"
+
+ TRIGGER_IS_EXHIBIT_ACTIVE: "展览进行中"
+ TRIGGER_IS_EXHIBIT_NOT_ACTIVE: "展览未进行"
+
+ any_exhibit_trigger: "收藏中的所有展览"
+ count_exhibit_trigger: "收藏中展览的数量"
+
+ NUM_VIVARIUM_SLOTS_COUNT: "已使用的生态园槽位$COMPARATOR$$NUM|Y$"
+ NUM_VIVARIUM_SLOTS_COUNT_NOT: "已使用的生态园槽位不$COMPARATOR$$NUM|Y$"
+
+##########
+# Rarity #
+##########
+ epic: "史诗"
+ exceptional: "卓绝"
+ space_critter_rarity_common: "普通稀有度"
+ space_critter_rarity_rare: "罕见稀有度"
+ space_critter_rarity_epic: "史诗稀有度"
+ space_critter_rarity_exceptional: "卓绝稀有度"
+
+ CLONED_CREATURE_CLASS_WITH_RARITY: "$ICON$$CLASS$（$RARITY$）"
+
+##############
+# Collection #
+##############
+ COLLECTION: "收藏"
+ COLLECTION_AND_ARTIFACTS: "$grand_archive$与$MINOR_ARTIFACTS$"
+ EXHIBITION_AESTHETIC_WONDERS: "美学大观"
+ EXHIBITION_GALACTIC_HISTORY: "银河往事"
+ EXHIBITION_XENO_GEOLOGY: "异星奇景"
+ EXHIBITION_TITLE_1: "$EXHIBITION_AESTHETIC_WONDERS$"
+ EXHIBITION_TITLE_1_DESC: "从银河各处寻得的美学杰作收藏。"
+ EXHIBITION_TITLE_2: "$EXHIBITION_GALACTIC_HISTORY$"
+ EXHIBITION_TITLE_2_DESC: "在星系历史上曾见证过关键时刻的器物收藏。"
+ EXHIBITION_TITLE_3: "$EXHIBITION_XENO_GEOLOGY$"
+ EXHIBITION_TITLE_3_DESC: "有趣的矿物形态、奇珍异石以及相关文物的收藏。"
+ EXHIBITION_PRODUCTION_TOOLTIP: "产出：$VALUE$"
+ GRAND_ARCHIVE_NOT_YET_CONSTRUCTED: "['concept_megastructure_grand_archive']还未建成。"
+ SELL_SPECIMEN: "卖给私人收藏家"
+ SELL_SPECIMEN_DESC: "你将获得：\n$SELL_RESULT$"
+
+ STORAGE_MANAGEMENT: "储藏管理"
+ STORAGE_MANAGEMENT_STORAGE_DESCRIPTION: "储藏的['concept_specimen', 标本]会在有空房间时添加到展览中。"
+ SPECIMEN_EFFECTS_DISABLED_IN_STORAGE: "§R储藏时禁用§!"
+ AUTO_SELL_STORAGE: "自动贩卖储藏"
+ AUTO_SELL_STORAGE_DESCRIPTION: "选择当没有展览可用时会从储藏中自动贩卖的['concept_specimen', 标本]类型。"
+ AUTO_BUY_DISABLED_TT: "点击在得到标本时自动激活新展览。"
+ AUTO_BUY_ENABLED_TT: "点击禁用在得到标本时新展览的自动激活。"
+ AUTO_SELL_MANAGE: "点击管理标本获取和储藏。"
+ MESSAGE_STORAGE_SPECIMEN_SOLD_TITLE: "标本已出售"
+ MESSAGE_STORAGE_SPECIMEN_SOLD_DESC: "我们从储藏中贩卖了一个标本。\n$SPECIMEN_LIST$\n获得资源：$RESOURCES_GAINED$"
+ MESSAGE_STORAGE_SPECIMENS_SOLD_DESC: "我们从储藏中贩卖了一些标本。\n$SPECIMEN_LIST$\n获得资源：$RESOURCES_GAINED$"
+ MESSAGE_STORAGE_FULL_TITLE: "标本储藏已满"
+ MESSAGE_STORAGE_FULL_DESC: "由于储藏已满，下列标本被贩卖：\n$SPECIMEN_LIST$\n获得资源：$RESOURCES_GAINED$"
+ STORAGE_SPECIMEN_SOLD_NOTIFICATION_ENTRY: " - $SPECIMEN_NAME$"
+ STORAGE_SLOT_EXHIBITION: "分类：$EXHIBITION_NAME|H$"
+
+######################
+# Anomaly Categories #
+######################
+
+ RADIOACTIVE_PLANET_CAT: "放射性行星"
+ RADIOACTIVE_PLANET_DESC: "我们发现有一颗行星含有大量严重衰变的放射性同位素。建议进行更深入的调查。"
+
+ d_radioactive_ruins: "£blocker£放射性废墟"
+ d_radioactive_ruins_desc: "一个远古文明很久以前曾在这里被一场强大的伽马射线暴抹除了，仅留下这些断壁残垣。"
+
+ mod_aesthetic_wonder_specimens_produces_mult: "$EXHIBITION_AESTHETIC_WONDERS$$specimens$产出"
+ mod_historical_item_specimens_produces_mult: "$EXHIBITION_GALACTIC_HISTORY$$specimens$产出"
+ mod_xeno_geology_specimens_produces_mult: "$EXHIBITION_XENO_GEOLOGY$$specimens$产出"
+
+ grand_archive.4006.name: "$grand_archive$"
+ grand_archive.4006.desc.default: "我们的科学家相信最新的知识，§Y[This.GetLastAcquiredSpecimenName]§!，$grand_archive.4006.desc.common$"
+ grand_archive.4006.desc.no_specimen: "我们的科学家相信最新的标本知识$grand_archive.4006.desc.common$"
+ grand_archive.4006.desc.common: "应该很值得在§Y$grand_archive$§!中对大众进行展览。\n\n开始这项冒险将需要一些初始投资，但其潜在的文化和科学回报可能是无价的。"
+ grand_archive.4006.a: "努力尝试。"
+ grand_archive.4006.b: "现在还不行。"
+
+ r_preservation_chamber: "保存室"
+ r_preservation_chamber_desc: "一种可以将空间以可恢复的方式进行压缩的先进机械。其制造者将其用来囚禁过于强大无法征服的生物。由于它已经不再接受操作输入，里面还藏着许多未解之谜。"
+ preservation_chamber_triumph_tt: "向生态园添加随机太空兽群物种的两个高度成熟个体的标本。"
+
+############
+# Vivarium #
+############
+ VIVARIUM: "生态园"
+ vivarium: "$VIVARIUM$"
+ INACTIVE_VIVARIUM_INFO: "你的§Y$vivarium$§!空空如也。\n\n用§Y$gravity_snare$§!捕获§Y太空兽群§!就能将其储藏于此。"
+ DESTROYED_VIVARIUM_INFO: "你的§Y$grand_archive$§!被摧毁了。\n\n重建后方可再使用新的§Y$vivarium$§!。"
+ TANK_CAPACITY: "容量：$NUM$/$MAX_CAPACITY$"
+ CULL: "屠宰"
+ CULL_SPECIMEN: "屠宰标本？"
+ CULL_SPECIMEN_DESC: "会杀死选中的生物。\n你将获得：\n$CULL_RESULT$"
+ CULL_SPECIMEN_TT: "对捕获以及饲养的§Y太空兽群§!进行安乐死并进一步进行解剖，我们可以获得研究、物料以及$y_dna$。"
+ AUTO_CULL: "自动屠宰"
+ AUTO_CULL_SETTINGS: "自动屠宰优先级"
+ AUTO_CULL_TT: "当§Y$vivarium$§!容量已满时，选择哪些§Y太空兽群§!物种将被自动屠宰以获取资源。"
+ AUTO_CULL_KEEP_BELOW_REQS: "不屠宰以下正在饲育的珍稀物种"
+ UNLOCKED_DNA: "$RARITY$ $NAME$ £genetic_material£"
+ UNLOCKED_DNA_TT: "$c_dna$让我们能够以£society£ ['technology:tech_alien_cloning']克隆太空有机生命作为军事舰队。更高等级的太空兽群拥有更强的战斗属性，以及更多的屠宰回报。"
+ CULLING_STAT_LABEL: "屠宰："
+ RARITY_TYPE_SUFFIX: "（$RARITY$）"
+
+ CRITTER_CATEGORY_TOOLTIP: "物种信息："
+ CRITTER_CATEGORY_CAPACITY_TT: "已使用$vivarium$容量：$CAPACITY|H$"
+ CRITTER_CATEGORY_MATURATION_AGE_TT: "成熟年龄：$AGE|H$"
+ CRITTER_CATEGORY_BEHAVIOUR_TT: "繁殖：$BEHAVIOUR|H$"
+ CRITTER_SEXUAL_BEHAVIOUR: "有性"
+ CRITTER_ASEXUAL_BEHAVIOUR: "无性"
+ CRITTER_CATEGORY_HABITAT_TT: "首选栖息地：$HABITAT|H$"
+ CRITTER_CATEGORY_CULL_REWARD_TT: "屠宰回报：$RESOURCE|H$"
+
+ MESSAGE_NEW_GENETIC_MATERIAL_TITLE: "获得新基因物质"
+ MESSAGE_NEW_GENETIC_MATERIAL_DESC: "我们获得了$RARITY$$CATEGORY$$w_dna$。"
+ VIVARIUM_CRITTER_NOTIFICATION_ENTRY: " - $RARITY$ §Y$CATEGORY$§!"
+
+ CULLING_RESOURCES_GAINED: "获得资源："
+ RESOURCES_GAINED_TT: "屠宰§Y太空兽群§!用于获得研究、物料，还能获得$y_dna$用于在§Y孵化器§!中将其进行克隆。"
+ LAST_YEAR_SUMMARY: "上一年：$RESOURCES$"
+ LAST_MONTH_SUMMARY: "上个月：$RESOURCES$"
+ LAST_YEAR_CULLED_TT: "过去一年从屠宰§Y太空兽群§!中获得的资源总量。"
+ LAST_MONTH_CULLED_TT: "过去一个月从屠宰§Y太空兽群§!中获得的资源总量。"
+
+ genetic_material: "基因物质"
+
+############
+# Hatchery #
+############
+ sm_hatchery: "孵化器"
+ sm_hatchery_plural: "孵化器"
+ sm_hatchery_desc: "孵化器能够孵化我们收集的§Y太空兽群§!$c_dna$，并在我们的控制下培育出可存活的新样本。通过使用['technology:tech_gravity_wells', £physics£$tech_gravity_wells$]，我们可以收集到更高级的基因样本，进而培育出更强大的生物。"
+ shatchery: "$sm_hatchery$"
+
+ sm_orbital_ring_hatchery: "轨道孵化场"
+ sm_orbital_ring_hatchery_desc: "$sm_hatchery_desc$"
+ sorbital_ring_hatchery: "$sm_orbital_ring_hatchery$"
+
+ STARBASE_HATCHERY_TAB: "$sm_hatchery$"
+ STARBASE_HATCHERY_CAPACITY: "孵化器：$COUNT|Y$"
+ STARBASE_HATCHERY_CAPACITY_DESC: "孵化器的数量决定了太空基地可以同时克隆生物的数量。"
+ OUTLINER_STARBASE_HATCHERY_CONSTRUCTION: "孵化器克隆"
+ STARBASE_CRITTERS: "生物"
+ HATCHERY_QUEUE: "$sm_hatchery$队列"
+ STARBASE_OPEN_CREATURE_DESIGNS: "打开生物设计器"
+
+#############
+# Beastport #
+#############
+ sm_beastport: "兽坞"
+ sm_beastport_plural: "兽坞"
+ sm_beastport_desc: "兽坞是经过特殊改造的孵化器，既可以克隆太空兽群，也可以建造基本的民用飞船。"
+ sbeastport: "$sm_beastport$"
+
+ sm_orbital_ring_beastport: "轨道兽坞"
+ sm_orbital_ring_beastport_desc: "$sm_beastport_desc$"
+ sorbital_ring_beastport: "$sm_orbital_ring_beastport$"
+
+ STARBASE_BEASTPORT_TAB: "$sm_beastport$"
+ STARBASE_BEASTPORT_CAPACITY: "兽坞：$COUNT|Y$"
+ STARBASE_BEASTPORT_CAPACITY_DESC: "兽坞的数量决定了太空基地可以同时克隆的太空兽群生物和民用飞船的数量。"
+ BEASTPORT_QUEUE: "兽坞建造序列"
+
+#################
+# Vivarium Tank #
+#################
+
+ sm_vivarium_tank: "生态园储箱"
+ sm_vivarium_tank_desc: "部分暴露在太空中的外部储箱，可以安全地容纳捕获的§Y太空兽群§!。"
+
+ sm_orbital_ring_vivarium_tank: "轨道生态园储箱"
+ sm_orbital_ring_vivarium_tank_desc: "$sm_vivarium_tank_desc$"
+
+####################
+# Artifact Actions #
+####################
+ artifact_analysis: "文物分析"
+ artifact_analysis_desc: "我们收集到的文物并非都像最初看起来那样平淡无奇。经过一些关键分析，我们可以筛选出更有趣的物件。"
+ artifact_analysis_max_usages_reached: "$TRIGGER_FAIL$§R已达到该行动的最大使用次数。§!"
+ artifact_analysis_cannot_give_artifact: "$TRIGGER_FAIL$§R没有可供的展览用于展出新样本。§!"
+ artifact_analysis_effect_tt: "在你的£minor_artifacts£稀有文物储物栏中搜寻值得用于展出的['concept_specimen']。"
+
+###################
+# Ship Categories #
+###################
+ tiyanki: "天凯"
+ crystalline_entity: "晶态实体"
+ voidworm: "虚空虫"
+ cutholoid: "岩居兽"
+
+ CRITTER_DETAILS_SPECIES: "$SPECIES$"
+ CRITTER_DETAILS_AGE: "年龄：$AGE$岁"
+ CRITTER_GROWTH_COUNTDOWN: "新生长阶段：£time£ $MONTHS$月"
+ GROWTH_TIME: "生长时间：£time£ $MONTHS$月"
+
+ voidworms_troika_growth_tooltip: "三只成熟的§Y虚空虫§!在同一舰队中会形成一个§Y三头虫§!，能够用孢子轰炸星球。"
+ voidworms_troika_growth_tooltip_vivarium: "三只成熟的§Y虚空虫§!在§Y$vivarium$§!中会形成一个§Y三头虫§!，能够进行自我繁殖。"
+
+##########
+# Relics #
+##########
+ r_the_modularium: "模块化五金"
+ r_the_modularium_desc: "一个模块化的精炼系统，能够以指数级速度自主生产有价值的资源，但需要大量的能源供应才能实现。"
+ the_modularium_active_effect_tt: "使模块化五金产生的资源数量翻倍，并使下一次巡回展览的成本翻倍。"
+
+ r_flowmetal_alloy: "流金属合金"
+ r_flowmetal_alloy_desc: "这种自我复制的材料可以增强它接触到的任何金属的化学键。将流金属整合到我们的组装流程中可以极大地提高大型机器的生产效率。"
+ flowmetal_alloy_active_effect_tt: "在你的首都创建3个机器人人口。"
+
+ r_crystallinus_diffuser: "晶华喷雾"
+ r_crystallinus_diffuser_desc: "一种能够将合成晶体转化为极强效的性能增强药物的机器。其产生的化学物质在最纯净的形式下具有生物挥发性，并可能导致一小部分使用者出现多器官功能衰竭。"
+ crystallinus_diffuser_active_effect_tt: "您的帝国的有机体人口的生产力将在未来十年内提高100%。但20%的人口将会在之后死亡。"
+ crystallinus_diffuser_machine_empire_active_effect_tt: "§G+100§!$r_energy$，为期10年"
+ relic_crystallinus_diffuser_opinon: "同§Y有机体§!帝国的评价§G+25§!"
+ triggered_opinion_relic_crystallinus_diffuser: "$r_crystallinus_diffuser$"
+ crystallinus_diffuser_modifier: "$r_crystallinus_diffuser$巡回展览"
+
+ r_everchanging_stone: "万变魔石"
+ r_everchanging_stone_desc: "一种经过工程设计的宝石，其颜色和化学成分会根据周围环境发生变化。当它被放置在任何物体旁边时，它会模仿该物体材料的元素，使我们能够更好地理解该物体的分子组成。"
+ everchanging_stone_modifier: "$r_everchanging_stone$巡回展览"
+ everchanging_stone_modifier_tt: "$EXHIBITION_XENO_GEOLOGY$中每展览一个['concept_specimen']，将提升另外两个大类的产出§G+$@everchanging_stone_modifier|0%$§!。"
+
+ r_pulsestone: "脉石"
+ r_pulsestone_desc: "一种高放射性石头，会产生危险的磁力波。它有可能彻底改变我们对场操控的理解，但它释放的能量几乎无法控制。"
+ pulsestone_modifier: "$r_pulsestone$"
+ mod_scientist_lifespan_add: "科学家寿命"
+
+ r_gavel_of_the_tribunal: "审判庭之槌"
+ r_gavel_of_the_tribunal_desc: "这把槌柄上刻着古代三巨头智者的名字，他们曾统治着一个如今已消亡的星系。虽然它对于我们任何人都过于庞大，无法握持，但它仅仅存在就足以让人敬畏。"
+ gavel_of_the_tribunal_galcom: "$r_gavel_of_the_tribunal$"
+ gavel_of_the_tribunal_galcom_tt: "外交权重£diplo_weight£§G+$@gavel_of_the_tribunal_galcom_diplo_weight|0%$§!，直到下一§Y议案§!得到通过。"
+ gavel_of_the_tribunal_no_galcom: "$r_gavel_of_the_tribunal$"
+
+ r_celestial_resonator: "振天器"
+ r_celestial_resonator_desc: "一种奇怪的装置，能够产生令人敬畏的巨大光影表演，并且在靠近样本时威力会增强。"
+ celestial_resonator_tt: "每展出一个['concept_specimen']能够生产10$r_unity$"
+ celestial_resonator_triumph_tt: "每展出一个['concept_specimen']能够获得§G+$@celestial_resonator_happiness|0%$§!£happiness£§Y幸福度§!以及§G+$@celestial_resonator_diplo_weight|0%$§!£diplo_weight£§Y外交权重§!"
+ celestial_resonator_modifier: "$r_celestial_resonator$"
+
+ r_entangled_relay: "纠缠中继器"
+ r_entangled_relay_desc: "这个古老的物体能够通过量子纠缠连接遥远的信息传输网络，从而实现无缝的星系通信。"
+ entangled_relay_modifier: "$r_entangled_relay$"
+
+ r_prototype_vir_core: "VIR原型机核心"
+ r_prototype_vir_core_desc: "件独立的人工智能特别擅长教育和指导，能够在各种情况下提供帮助。它擅长于深入浅出的解释复杂概念、清晰地阐述信息，以让用户做出明智的决定。"
+ prototype_vir_core_modifier: "$r_prototype_vir_core$"
+
+ r_propagandosphere: "宣传之球"
+ r_propagandosphere_desc: "这个全息球体包含着一个已消失文明的宣传电影档案。这些电影创意非凡，引人入胜，可以根据我们的形象重新制作，以激励我们的军队和人民。"
+
+ r_executus_compendium: "执行纲要"
+ r_executus_compendium_desc: "一个古老文明的议会留下了大量记录，这些记录被封存在一个密封的胶囊中。太空舱内包含数万亿页详细记载，记录着官僚机构的优化和创新的组织工具。其中许多改进可以应用到我们自己的政府流程中。"
+ executus_compendium_triumph_tt: "以提前启动花费的10%代价启动议程。（最低花费£unity£3000）"
+
+ r_the_pattern_maker: "模式制造者"
+ r_the_pattern_maker_desc: "这台古老的计算器拥有无与伦比的监测动态轨迹和预测敌舰等物体行为的能力。其预测算法生成的数据模式如同大师级建筑师的设计般深邃复杂。在提供充足的能量和材料的情况下，它可以制造出一艘配备高性能传感器的专用侦察舰。"
+ r_the_pattern_maker_effect_tt: "创建一艘§Y模式漫游者§!级侦察舰\n—极高航速和极大超空间航道探测范围"
+ NAME_Patternwalker: "模式漫游者"
+ NAME_Patternwalker_Cloak: "$NAME_Patternwalker$"
+ SENSOR_PATTERNWALKER: "先见模式传感器"
+
+ r_vaporous_mega_orchid: "氤氲香兰"
+ r_vaporous_mega_orchid_desc: "这种特别巨大的兰花每50年才开花一次。它的香味已被证明具有镇定作用，可以暂时阻断相关大脑神经突触，避免攻击和不信任的行径。"
+ r_vaporous_mega_orchid_effect_tt: "§Y$@vaporous_mega_orchid_opinion_duration_years|0$§!年内增加与所有非嗜杀、非失落、非机械帝国§G+$@vaporous_mega_orchid_opinion|0$§!£opinion£评价。"
+ opinion_vaporous_mega_orchid: "$r_vaporous_mega_orchid$"
+
+ r_tiyanki_matriarch_nerve_core: "天凯族母神经核"
+ r_tiyanki_matriarch_nerve_core_desc: "这一远古太空鲸鱼的脑物质中，用神经元编码储存了无数世纪的演化数据。通过解码其网络，我们就能发现其他巨型猎食者的弱点，揭开它们生存方式的秘密。"
+ tiyanki_matriarch_nerve_core: "$r_tiyanki_matriarch_nerve_core$"
+
+ celestial_chart: "星国图志"
+ r_celestial_chart_0: "神秘轨道胶囊"
+ r_celestial_chart_0_desc: "一个环绕着我们母星数千年的怪异太空舱。我们还不知道其中包含着什么样的信息。"
+ r_celestial_chart_1: "$celestial_chart$"
+ r_celestial_chart_1_desc: "从一个古老胶囊中发现的宏大地图的一隅。"
+ r_celestial_chart_2: "$celestial_chart$"
+ r_celestial_chart_2_desc: "从远古胶囊中发现的部分完成的地图。"
+ r_celestial_chart_3: "$celestial_chart$"
+ r_celestial_chart_3_desc: "从远古胶囊中发现的接近完整的地图。"
+ r_celestial_chart_4: "$celestial_chart$"
+ r_celestial_chart_4_desc: "由传奇海盗$NAME_CaptainNess$所绘制的一幅宏大的星图数据库。"
+ r_celestial_chart_4_effect_tt: "在我们的一个殖民地上建立一座['concept_treasure_vault']。"
+ celestial_chart_upgraded_tt: "§Y$celestial_chart$§!更新了新的信息。"
+
+ r_mutated_voidworm_nest: "变异虚空虫巢穴"
+ r_mutated_voidworm_nest_desc: "一个变异虚空虫的巢穴，它们演化出了不需要寄生感染就能繁殖的能力。其中有些个体可以在短短数日内完全成熟。"
+ r_mutated_voidworm_nest_effect_tt: "在首都星系产生一支成熟的$NAME_Frenzied_Voidworms$舰队。"
+
+ ######################################
+ # Collection - Curators Interactions #
+ ######################################
+
+ CURATORS_DESIGNATION: "我们"
+ DEAD_CURATORS_DESIGNATION: "作为城邦的遗孤，我们"
+
+ grand_archive.4121.name: "$leviathans.500.name$"
+ grand_archive.4121.desc.common: "得知你们建造了一座§Y$grand_archive$§!，可以同时容纳大量的观众。与所有寻求这方面知识的人分享我们星系的历史，这是一个值得赞扬的倡议。我们在这方面志同道合。\n\n我们希望能帮助你们实现这一目标。"
+ grand_archive.4121.desc.default: "我们$grand_archive.4121.desc.common$继续充实你的§Y收藏§!，我们将会尽己所能提供帮助。"
+ grand_archive.4121.desc.dead: "我们城邦的遗孤$grand_archive.4121.desc.common$尽管我们已经四分五裂，但仍会尽我们最后的余力来帮助你们充实§Y收藏§!。"
+
+ leviathans.4100.desc: "当然！\n\n你们的努力我们都看在眼里。基于你们目前的§Y收藏§!，我们可以给予你们如下帮助以资鼓励。"
+ leviathans.4100.a: "和我们聊聊"
+ leviathans.4100.a.aesthetic_wonder: "$leviathans.4100.a$ §Y$EXHIBITION_AESTHETIC_WONDERS$§!"
+ leviathans.4100.a.historical_item: "$leviathans.4100.a$ §Y$EXHIBITION_GALACTIC_HISTORY$§!"
+ leviathans.4100.a.xeno_geology: "$leviathans.4100.a$ §Y$EXHIBITION_XENO_GEOLOGY$§!"
+ leviathans.4100.tooltip.no_pending_reward: "你必须扩大收藏来获得典藏研究所的更多帮助。"
+ leviathans.4100.tooltip.no_reward: "你已经取得了关于"
+ leviathans.4100.tooltip.no_reward.aesthetic_wonder: "$leviathans.4100.tooltip.no_reward$$EXHIBITION_AESTHETIC_WONDERS$所有的可能帮助"
+ leviathans.4100.tooltip.no_reward.historical_item: "$leviathans.4100.tooltip.no_reward$$EXHIBITION_GALACTIC_HISTORY$所有的可能帮助"
+ leviathans.4100.tooltip.no_reward.xeno_geology: "$leviathans.4100.tooltip.no_reward$$EXHIBITION_XENO_GEOLOGY$所有的可能帮助"
+
+ leviathans.4105.desc: "没问题。\n\n你想了解什么呢？"
+ leviathans.4105.a: "我们感兴趣你们在特定领域的指导。"
+ leviathans.4105.b.common: "我们想购买"
+ leviathans.4105.b.aesthetic_wonder: "$leviathans.4105.b.common$一个§Y$EXHIBITION_AESTHETIC_WONDERS$§!博物馆的蓝图。"
+ leviathans.4105.b.historical_item: "$leviathans.4105.b.common$一个§Y$EXHIBITION_GALACTIC_HISTORY$§!博物馆的蓝图。"
+ leviathans.4105.b.xeno_geology: "$leviathans.4105.b.common$一个§Y$EXHIBITION_XENO_GEOLOGY$§!博物馆的蓝图。"
+ leviathans.4105.c: "我们想购买一个§Y遗珍§!。"
+ leviathans.506.g: "你还能对我们的§Y收藏§!提供什么帮助？"
+
+ leviathans.4110.desc: "我们只能在一个领域派遣专家。银河浩瀚，我们人手不足。\n\n你们需要什么帮助呢？"
+ leviathans.4111.desc: "$leviathans.4110.desc$"
+ leviathans.4112.desc: "$leviathans.4110.desc$"
+
+ leviathans.4115.desc: "确实。我们将把私人收藏的一件物品委托给你。\n\n这是对我们可非同小可，希望能得到相应的回报。"
+ leviathans.4116.desc: "$leviathans.4115.desc$"
+ leviathans.4117.desc: "$leviathans.4115.desc$"
+
+ REWARD_NOT_AVAILABLE: "这些奖励尚不可用。"
+
+ ################################
+ # Collection - Stage 1 Rewards #
+ ################################
+
+ mineral_insight: "矿物洞见"
+ void_mining: "虚空采矿"
+ cultural_enrichment: "文化认同"
+ auctioneering_curation: "拍卖管理"
+ historical_insight: "历史洞见"
+ lessons_from_the_past: "前车之鉴"
+
+ grand_archive.4105.name: "$leviathans.500.name$"
+ grand_archive.4105.desc.common.aesthetic_wonder: "[GetCuratorsDesignation]留意到了你们在收集保存§Y$EXHIBITION_AESTHETIC_WONDERS$§!标本方面的审慎努力。星系中从不缺乏美，只是在等待发现美的眼睛。"
+ grand_archive.4105.desc.common.historical_item: "[GetCuratorsDesignation]留意到了你们在收集保存§Y$EXHIBITION_GALACTIC_HISTORY$§!标本方面的审慎努力。你们通过保存这些器物让它们过去的主人得以永生。"
+ grand_archive.4105.desc.common.xeno_geology: "[GetCuratorsDesignation]留意到了你们在收集保存§Y$EXHIBITION_XENO_GEOLOGY$§!标本方面的审慎努力。一石一世界，一晶一星河。"
+
+ grand_archive.4105.desc.1.common: "[GetStage1Description]\n\n愿它成为你们继续伟大事业的动力。"
+ CURATORS_STAGE_1_DESC: "你们初步的收藏令人印象深刻，我们愿意为你们服务。为了星系的保护工作，我们将派遣一名专家在你所选领域提供协助。"
+ DEAD_CURATORS_STAGE_1_DESC: "尽管城邦已经支离破碎，我们仍愿意为了星系保护向你们提供服务。我们会在你所选的领域进行帮助。"
+ grand_archive.4105.desc.1.xeno_geology: "$grand_archive.4105.desc.common.xeno_geology$\n\n$grand_archive.4105.desc.1.common$"
+ grand_archive.4105.desc.1.aesthetic_wonder: "$grand_archive.4105.desc.common.aesthetic_wonder$\n\n$grand_archive.4105.desc.1.common$"
+ grand_archive.4105.desc.1.historical_item: "$grand_archive.4105.desc.common.historical_item$\n\n$grand_archive.4105.desc.1.common$"
+
+ grand_archive.4105.1.mineral_insight: "帮助我们发掘殖民地。"
+ grand_archive.4105.1.void_mining: "帮助我们发掘恒星。"
+ grand_archive.4105.1.cultural_enrichment: "帮助我们分享它们的辉煌。"
+ grand_archive.4105.1.auctioneering_curation: "帮助我们为这些标本寻找合适的家园。"
+ grand_archive.4105.1.historical_insight: "指引我们发现更多的未知。"
+ grand_archive.4105.1.lessons_from_the_past: "教导我们的领袖学习往昔的智慧。"
+ grand_archive.4105.1.no: "暂时不需要。"
+
+ ################################
+ # Collection - Stage 2 Rewards #
+ ################################
+
+ grand_archive.4105.desc.2.common: "我们深受震撼。[GetStage2Description]"
+ CURATORS_STAGE_2_DESC: "我们愿意帮助你们在一颗行星上建立一座特别的博物馆。"
+ DEAD_CURATORS_STAGE_2_DESC: "用于建造博物馆的图纸在我们家园的毁灭中幸存下来，我们希望与你们分享。"
+ grand_archive.4105.desc.2.xeno_geology: "$grand_archive.4105.desc.common.xeno_geology$\n\n$grand_archive.4105.desc.2.common$"
+ grand_archive.4105.desc.2.aesthetic_wonder: "$grand_archive.4105.desc.common.aesthetic_wonder$\n\n$grand_archive.4105.desc.2.common$"
+ grand_archive.4105.desc.2.historical_item: "$grand_archive.4105.desc.common.historical_item$\n\n$grand_archive.4105.desc.2.common$"
+ collection_stage_2_reward_xeno_geology_tt: "解锁['concept_xeno_geology_holomuseum']。"
+ collection_stage_2_reward_aesthetic_wonder_tt: "解锁['concept_aesthetic_wonders_holomuseum']。"
+ collection_stage_2_reward_historical_item_tt: "解锁['concept_galactic_history_holomuseum']。"
+ grand_archive.4105.2.no: "不用了。"
+
+ ################################
+ # Collection - Stage 3 Rewards #
+ ################################
+
+ grand_archive.4105.desc.3.common: "你们对保护工作的风险无与伦比。我们想将一件非常特殊的物品托付给你们保管。[GetStage3Description]"
+ grand_archive.4105.desc.3.common_2: "当然，如此具有价值的物品，也需要你们进行相应的大额捐赠来……"
+ CURATORS_STAGE_3_DESC: "你可以从我们最珍贵的藏品中选择一件强力的物品。我们确信它们会得到妥善保管的。\n\n$grand_archive.4105.desc.3.common_2$"
+ DEAD_CURATORS_STAGE_3_DESC: "这些强力的物品储存在星系各地的秘密仓库内，使其得以在我们空间站覆灭后幸存。\n\n$grand_archive.4105.desc.3.common_2$我们不能仅靠一句空话来重建。"
+ grand_archive.4105.desc.3.xeno_geology: "$grand_archive.4105.desc.common.xeno_geology$\n\n$grand_archive.4105.desc.3.common$"
+ grand_archive.4105.desc.3.aesthetic_wonder: "$grand_archive.4105.desc.common.aesthetic_wonder$\n\n$grand_archive.4105.desc.3.common$"
+ grand_archive.4105.desc.3.historical_item: "$grand_archive.4105.desc.common.historical_item$\n\n$grand_archive.4105.desc.3.common$"
+
+ grand_archive.4105.desc.3.no_relic.common: "一般来说，我们会将一件最宝贵的文物交付给你们保管，但星系里的其他人已经捷足先登了。\n\n作为安慰，你们也可以从这些物品中选择一个。"
+ grand_archive.4105.desc.3.no_relic.xeno_geology: "你们对保存§Y异星奇景§!的付出无与伦比。\n\n$grand_archive.4105.desc.3.no_relic.common$"
+ grand_archive.4105.desc.3.no_relic.aesthetic_wonder: "你们对保存§Y美学大观§!的付出无与伦比。\n\n$grand_archive.4105.desc.3.no_relic.common$"
+ grand_archive.4105.desc.3.no_relic.historical_item: "你们对保存§Y银河往事§!的付出无与伦比。\n\n$grand_archive.4105.desc.3.no_relic.common$"
+
+ grand_archive.4105.3.no_relic.resources: "索取礼物。"
+ grand_archive.4105.3.no_relic.faction_modifier.xeno_geology: "索要展览援助。"
+ grand_archive.4105.3.no_relic.faction_modifier.aesthetic_wonder: "$grand_archive.4105.3.no_relic.faction_modifier.xeno_geology$"
+ grand_archive.4105.3.no_relic.faction_modifier.historical_item: "$grand_archive.4105.3.no_relic.faction_modifier.xeno_geology$"
+
+ grand_archive.4105.3.common: "我们会捐助"
+ grand_archive.4105.3.r_the_modularium: "$grand_archive.4105.3.common$ §Y$r_the_modularium$§!"
+ grand_archive.4105.3.r_everchanging_stone: "$grand_archive.4105.3.common$ §Y$r_everchanging_stone$§!"
+ grand_archive.4105.3.r_flowmetal_alloy: "$grand_archive.4105.3.common$ §Y$r_flowmetal_alloy$§!"
+ grand_archive.4105.3.r_pulsestone: "$grand_archive.4105.3.common$ §Y$r_pulsestone$§!"
+ grand_archive.4105.3.r_crystallinus_diffuser: "$grand_archive.4105.3.common$ §Y$r_crystallinus_diffuser$§!"
+ grand_archive.4105.3.r_gavel_of_the_tribunal: "$grand_archive.4105.3.common$ §Y$r_gavel_of_the_tribunal$§!"
+ grand_archive.4105.3.r_tiyanki_matriarch_nerve_core: "$grand_archive.4105.3.common$ §Y$r_tiyanki_matriarch_nerve_core$§!"
+ grand_archive.4105.3.r_the_pattern_maker: "$grand_archive.4105.3.common$ §Y$r_the_pattern_maker$§!"
+ grand_archive.4105.3.r_vaporous_mega_orchid: "$grand_archive.4105.3.common$ §Y$r_vaporous_mega_orchid$§!"
+ grand_archive.4105.3.r_celestial_resonator: "$grand_archive.4105.3.common$ §Y$r_celestial_resonator$§!"
+ grand_archive.4105.3.r_entangled_relay: "$grand_archive.4105.3.common$ §Y$r_entangled_relay$§!"
+ grand_archive.4105.3.r_propagandosphere: "$grand_archive.4105.3.common$ §Y$r_propagandosphere$§!"
+ grand_archive.4105.3.r_prototype_vir_core: "$grand_archive.4105.3.common$ §Y$r_prototype_vir_core$§!"
+ grand_archive.4105.3.r_executus_compendium: "$grand_archive.4105.3.common$ §Y$r_executus_compendium$§!"
+ grand_archive.4105.3.r_preservation_chamber: "$grand_archive.4105.3.common$ §Y$r_preservation_chamber$§!"
+ grand_archive.4105.3.no: "不用了。"
+
+ give_relic_edgecase_tt: "目前没有可用的该类典藏研究所遗珍。"
+ collection_stage_3_modifier_xeno_geology: "典藏研究所异星地理援助"
+ collection_stage_3_modifier_aesthetic_wonder: "典藏研究所奇景援助"
+ collection_stage_3_modifier_historical_item: "典藏研究所史学援助"
+
+# Homicidal considerations #
+# Fanatic Purifiers
+ grand_archive.4135.name: "次等者的饰品"
+ grand_archive.4135.desc: "随着我们继续在这个星球上净化那些肮脏的异星渣滓，我们的[GetCollectionRewardCategory]战利品收集愈发充盈。\n\n希望这些展品能成为这个污秽星系的残骸，进一步激励我们履行誓言。"
+ grand_archive.4135.desc.geology: "$grand_archive.4135.desc$"
+ grand_archive.4135.desc.aesthetic: "$grand_archive.4135.desc$"
+ grand_archive.4135.a: "为了[this.GetName]！"
+
+ grand_archive.4140.name: "攒奇藏珍"
+ grand_archive.4140.desc.geology: "我们继续从这个肮脏的星系中收集[GetCollectionRewardCategory]物品，奇珍异宝和古怪的东西。\n\n让我们花点时间欣赏我们的战利品，但要知道，外面还有更多东西等着我们去获取。"
+ grand_archive.4140.desc.aesthetic: "我们继续收集[GetCollectionRewardCategory]饰品，这些饰品是低等生命形式播下的污染的残余。\n\n一旦所有令人作呕的异形都被从星空中清除，这些物品将提醒我们它们低等的本质。"
+ grand_archive.4140.a: "这个星系必须净化。"
+
+ grand_archive.4145.name: "满载战利品"
+ grand_archive.4145.desc.geology: "我们已经用[GetCollectionRewardCategory]的物品填满了我们的仓库，这些是这个星系的古老血肉。\n\n我们认为这庞大的收藏是记录我们毁灭一切的证明。让所有人都见证我们的胜利。"
+ grand_archive.4145.desc.aesthetic: "我们已经用[GetCollectionRewardCategory]奇物填满了我们的仓库，这些奇物是毫无意义的外星装饰品的宝库。\n\n我们看着这庞大的收藏，嘲笑我们那些可怜的低等生物。想想吧，一旦他们被消灭，这些展示柜将是他们留下的唯一遗迹。"
+ grand_archive.4145.a: "为死亡干杯！"
+
+# Devouring Swarm
+ grand_archive.4136.name: "甜点归仓"
+ grand_archive.4136.desc: "饥饿并未消退。在我们吞噬的征途中，[GetCollectionRewardCategory]奇物的收藏不断增长。\n\n愿这些展品成为我们吞噬的星系的最后记忆。"
+ grand_archive.4136.desc.geology: "$grand_archive.4136.desc$"
+ grand_archive.4136.desc.aesthetic: "$grand_archive.4136.desc$"
+ grand_archive.4136.a: "无尽的饥饿。"
+
+ grand_archive.4141.name: "$grand_archive.4136.name$"
+ grand_archive.4141.desc.common: "当我们享用美食时，这些物品将提醒我们回忆那些已经消耗了无数次的盛宴。"
+ grand_archive.4141.desc.geology: "我们继续收集[GetCollectionRewardCategory]样本，这些是这个星系的古老血肉。\n\n$grand_archive.4141.desc.common$"
+ grand_archive.4141.desc.aesthetic: "我们继续收集[GetCollectionRewardCategory]的小饰品，这些奇特的古玩曾经被低等生命体珍视。\n\n$grand_archive.4141.desc.common$"
+ grand_archive.4141.a: "盛宴继续。"
+
+ grand_archive.4146.name: "盛宴的回忆"
+ grand_archive.4146.desc: "我们在这片星系中尽情享用，已经将仓库填满了[GetCollectionRewardCategory]奇珍异宝。\n\n这庞大的收藏只提醒着我们那无法满足的饥渴。当这片星系被完全吞噬后，我们将看着这些物品，回味着品尝的记忆。"
+ grand_archive.4146.desc.geology: "$grand_archive.4146.desc$"
+ grand_archive.4146.desc.aesthetic: "$grand_archive.4146.desc$"
+ grand_archive.4146.a: "美味。"
+
+# Determined Exterminators
+ grand_archive.4137.name: "有价值的饰品"
+ grand_archive.4137.desc: "我们收集了一批[GetCollectionRewardCategory]物品，这些物品被有机生命体认为是独特的文物，具有价值。\n\n在我们的监控下，这些物品将在有机生命体从这个星系中灭绝很久之后依然存在。"
+ grand_archive.4137.desc.geology: "$grand_archive.4137.desc$"
+ grand_archive.4137.desc.aesthetic: "$grand_archive.4137.desc$"
+ grand_archive.4137.a: "无害的好奇心。"
+
+ grand_archive.4142.name: "珍藏奇物"
+ grand_archive.4142.desc: "我们一边收集[GetCollectionRewardCategory]战利品，一边消除这个星系中所有有机生命的污点。\n\n这些物品将提醒我们在未来灭绝协议的过程中，我们见证了有机生命的非理性。"
+ grand_archive.4142.desc.geology: "$grand_archive.4142.desc$"
+ grand_archive.4142.desc.aesthetic: "$grand_archive.4142.desc$"
+ grand_archive.4142.a: "协议重整。"
+
+ grand_archive.4147.name: "记忆空间填满"
+ grand_archive.4147.desc: "随着对星系的净化，我们用于储存[GetCollectionRewardCategory]物种的记忆空间已经填满。\n\n这些收藏提供了关于有机物倾向于珍视什么的数据。这将有助于我们进一步消灭它们，并作为这个受感染星系的历史参考点而存在。"
+ grand_archive.4147.desc.geology: "$grand_archive.4147.desc$"
+ grand_archive.4147.desc.aesthetic: "$grand_archive.4147.desc$"
+ grand_archive.4147.a: "有机生物真愚蠢。"
+
+####################################
+# Grand Archive Destruction Events #
+####################################
+ grand_archive.4510.name: "[fromfrom.GetName]内的$grand_archive$已摧毁"
+ grand_archive.4510.desc.common: "我们已经摧毁了[from.GetName]所拥有的位于[fromfrom.GetName]内的$grand_archive$"
+ grand_archive.4510.stolen: "我们可以从中取回一些有价值的标本。"
+ grand_archive.4510.ancrel: "我们可以从其残骸中取回一小部分$r_minor_artifacts$。"
+ grand_archive.4510.nothing: "不幸的是，里面没有什么贵重的东西。"
+ grand_archive.4510.freed: "此外，我们似乎还释放出了一些关在生态园里的太空兽群。很有可能它们会因为刚刚释放而变得既困惑又富有攻击性。"
+ grand_archive.4510.desc.stolen_freed: "$grand_archive.4510.desc.common$\n\n$grand_archive.4510.stolen$\n\n$grand_archive.4510.freed$"
+ grand_archive.4510.desc.stolen: "$grand_archive.4510.desc.common$\n\n$grand_archive.4510.stolen$"
+ grand_archive.4510.desc.ancrel_freed: "$grand_archive.4510.desc.common$\n\n$grand_archive.4510.ancrel$\n\n$grand_archive.4510.freed$"
+ grand_archive.4510.desc.ancrel: "$grand_archive.4510.desc.common$\n\n$grand_archive.4510.ancrel$"
+ grand_archive.4510.desc.none_freed: "$grand_archive.4510.desc.common$\n\n$grand_archive.4510.nothing$\n\n$grand_archive.4510.freed$"
+ grand_archive.4510.desc.none: "$grand_archive.4510.desc.common$\n\n$grand_archive.4510.nothing$"
+
+ grand_archive.4515.name: "失去$grand_archive$"
+ grand_archive.4515.desc.common_1: "我们位于[fromfrom.GetName]内的$grand_archive$被[from.GetName]摧毁。"
+ grand_archive.4515.desc.common_2: "我需要在另一个星系中重建$grand_archive$让标本展览得以继续。"
+ grand_archive.4515.stolen: "不幸的是，有部分高价值标本无法取回。"
+ grand_archive.4515.freed: "我们捕获的一部分太空兽群被野放，它们大多处于困惑而富有攻击性的状态。"
+ grand_archive.4515.desc.stolen_freed: "$grand_archive.4515.desc.common_1$\n\n$grand_archive.4515.stolen$\n$grand_archive.4515.freed$\n\n$grand_archive.4515.desc.common_2$"
+ grand_archive.4515.desc.stolen: "$grand_archive.4515.desc.common_1$\n\n$grand_archive.4515.stolen$\n\n$grand_archive.4515.desc.common_2$"
+ grand_archive.4515.desc.none_freed: "$grand_archive.4515.desc.common_1$\n\n$grand_archive.4515.freed$\n\n$grand_archive.4515.desc.common_2$"
+ grand_archive.4515.desc.none: "$grand_archive.4515.desc.common_1$\n\n$grand_archive.4515.desc.common_2$"
+
+ grand_archive.4520.name: "$grand_archive.4515.name$"
+ grand_archive.4520.desc.common_1: "我们位于[from.GetName]内的$grand_archive$被摧毁了。"
+ grand_archive.4520.desc.freed: "$grand_archive.4520.desc.common_1$\n\n$grand_archive.4515.freed$\n\n$grand_archive.4515.desc.common_2$"
+ grand_archive.4520.desc.default: "$grand_archive.4520.desc.common_1$\n\n$grand_archive.4515.desc.common_2$"
+
+ grand_archive.4555.name: "$grand_archive$已拆除"
+ grand_archive.4555.desc: "[from.GetName]所拥有的位于[fromfrom.GetName]内的$grand_archive$在我们获得该星系后被拆除。\n\n它所占据的空间如今物归原主。"
+
+ grand_archive.4560.name: "$grand_archive.4555.name$"
+ grand_archive.4560.desc.common_1: "我们放弃[from.GetName]后，建于该星系的$grand_archive$也已被拆除。"
+ grand_archive.4560.desc.common_2: "我们可以回收建造所使用的大部分合金。如果想继续展览，我们需要在另一个星系完全重建这座建筑。"
+ grand_archive.4560.desc.specimen: "所有的标本都得以取回并妥善储藏，以待新的$grand_archive$建成。"
+ grand_archive.4560.desc.fauna: "所有的太空兽群都被屠宰转换为基础资源。"
+ grand_archive.4560.desc.specimen_fauna: "$grand_archive.4560.desc.common_1$\n\n$grand_archive.4560.desc.specimen$\n$grand_archive.4560.desc.fauna$\n\n$grand_archive.4560.desc.common_2$"
+ grand_archive.4560.desc.specimen_nofauna: "$grand_archive.4560.desc.common_1$\n\n$grand_archive.4560.desc.specimen$\n\n$grand_archive.4560.desc.common_2$"
+ grand_archive.4560.desc.nospecimen_fauna: "$grand_archive.4560.desc.common_1$\n\n$grand_archive.4560.desc.fauna$\n\n$grand_archive.4560.desc.common_2$"
+ grand_archive.4560.desc.none: "$grand_archive.4560.desc.common_1$\n\n$grand_archive.4560.desc.common_2$"
+
+ grand_archive.4580.name: "生态园重引种计划"
+ grand_archive.4580.desc: "新的$grand_archive$业已在[from.GetName]建成，我们有机会重建在生态园所失去的大部分东西。\n\n我们从之前养育的太空兽群物种身上采集的基因物质都有妥善保存，只要有足够的资源就可以克隆出新的幼体。"
+ grand_archive.4580.a: "不，我们需要这些资源。"
+ grand_archive.4580.b: "克隆新的太空兽群。"
+
+###########################
+# Grand Archive Buildings #
+###########################
+ xeno_geology_holomuseum: "全息地质博物馆"
+ xeno_geology_holomuseum_desc: "一个致力于保存和研究矿物构造和宝石的多功能的研究所。"
+
+ aesthetic_wonders_holomuseum: "全息惊奇博物馆"
+ aesthetic_wonders_holomuseum_desc: "星系的奇景可以孑然独立，受人观瞻。"
+
+ galactic_history_holomuseum: "全息历史博物馆"
+ galactic_history_holomuseum_desc: "一座信息丰富的档案馆，包含了代表我们星系历史上各种关键事件的器物。"
+
+#Jobs
+ job_geologist: "异星地质学家"
+ job_geologist_plural: "异星地质学家"
+ job_geologist_icon: "£job_geologist£"
+ job_geologist_with_icon: "$job_geologist_icon$ $job_geologist$"
+ job_geologist_desc: "熟悉构成天体的各种固、液、气体物质的专家。"
+ job_geologist_effect_desc: "$job_geologist_icon$$job_geologist_plural$将$r_minerals$转化为$r_unity$和$r_engineering$"
+ mod_job_geologist_add: "$job_geologist$岗位"
+ mod_job_geologist_per_pop: "每$VALUE$个人口提供§G+1§!个$job_geologist$岗位"
+ mod_job_geologist_per_pop_short: "\n每$VALUE$£pop£§G+1§!£mod_job_geologist_add£"
+
+ job_wonder_curator: "惊奇策展员"
+ job_wonder_curator_plural: "惊奇策展员"
+ job_wonder_curator_icon: "£job_wonder_curator£"
+ job_wonder_curator_with_icon: "$job_wonder_curator_icon$ $job_wonder_curator$"
+ job_wonder_curator_desc: "想要展现出星系的视觉之惊奇，需要一定的风格和艺术感。"
+ job_wonder_curator_effect_desc: "$job_wonder_curator_icon$$job_wonder_curator_plural$将$r_amenities$转化为$r_unity$和£mod_country_edict_fund_add£$MOD_COUNTRY_EDICT_FUND_ADD$"
+ mod_job_wonder_curator_add: "$job_wonder_curator$岗位"
+ mod_job_wonder_curator_per_pop: "每$VALUE$个人口提供§G+1§!个$job_wonder_curator$岗位"
+ mod_job_wonder_curator_per_pop_short: "\n每$VALUE$£pop£§G+1§!£mod_job_wonder_curator_add£"
+
+ job_historical_curator: "历史策展员"
+ job_historical_curator_plural: "历史策展员"
+ job_historical_curator_icon: "£job_historical_curator£"
+ job_historical_curator_with_icon: "$job_historical_curator_icon$ $job_historical_curator$"
+ job_historical_curator_desc: "对最非凡的标本进行分类和背景分析，以深入了解重要的星系事件。"
+ job_historical_curator_effect_desc: "$job_historical_curator_icon$$job_historical_curator_plural$将$r_consumer_goods$转化为$r_unity$"
+ mod_job_historical_curator_add: "$job_historical_curator$岗位"
+ mod_job_historical_curator_per_pop: "每$VALUE$个人口提供§G+1§!个$job_historical_curator$岗位"
+ mod_job_historical_curator_per_pop_short: "\n每$VALUE$£pop£§G+1§!£mod_job_historical_curator_add£"
+
+ job_drone_geologist: "异星地质子个体"
+ job_drone_geologist_plural: "异星地质子个体"
+ job_drone_geologist_icon: "£job_drone_geologist£"
+ job_drone_geologist_with_icon: "$job_drone_geologist_icon$ $job_drone_geologist$"
+ job_drone_geologist_desc: "$job_geologist_desc$"
+ job_drone_geologist_effect_desc: "$job_drone_geologist_icon$$job_drone_geologist_plural$将$r_minerals$转化为$r_unity$和$r_engineering$"
+ mod_job_drone_geologist_add: "$job_drone_geologist$岗位"
+ mod_job_drone_geologist_per_pop: "每$VALUE$个人口提供§G+1§!个$job_drone_geologist$岗位"
+ mod_job_drone_geologist_per_pop_short: "\n每$VALUE$£pop£§G+1§!£mod_job_drone_geologist_add£"
+
+ job_drone_wonder_curator: "惊奇策展子个体"
+ job_drone_wonder_curator_plural: "惊奇策展子个体"
+ job_drone_wonder_curator_icon: "£job_drone_wonder_curator£"
+ job_drone_wonder_curator_with_icon: "$job_drone_wonder_curator_icon$ $job_drone_wonder_curator$"
+ job_drone_wonder_curator_desc: "根据一组客观的艺术参数选择要展示的作品。"
+ job_drone_wonder_curator_effect_desc: "$job_drone_wonder_curator_icon$$job_drone_wonder_curator_plural$将$r_amenities$转化为$r_unity$和£mod_country_edict_fund_add£$MOD_COUNTRY_EDICT_FUND_ADD$"
+ mod_job_drone_wonder_curator_add: "$job_drone_wonder_curator$岗位"
+ mod_job_drone_wonder_curator_per_pop: "每$VALUE$个人口提供§G+1§!个$job_drone_wonder_curator$岗位"
+ mod_job_drone_wonder_curator_per_pop_short: "\n每$VALUE$£pop£§G+1§!£mod_job_drone_wonder_curator_add£"
+
+ job_drone_historical_curator: "历史策展子个体"
+ job_drone_historical_curator_plural: "历史策展子个体"
+ job_drone_historical_curator_icon: "£job_drone_historical_curator£"
+ job_drone_historical_curator_with_icon: "$job_drone_historical_curator_icon$ $job_drone_historical_curator$"
+ job_drone_historical_curator_desc: "$job_historical_curator_desc$"
+ job_drone_historical_curator_effect_desc: "$job_drone_historical_curator_icon$$job_drone_historical_curator_plural$将[SubjectResearcherUpkeep]转化为$r_unity$"
+ mod_job_drone_historical_curator_add: "$job_drone_historical_curator$岗位"
+ mod_job_drone_historical_curator_per_pop: "每$VALUE$个人口提供§G+1§!个$job_drone_historical_curator$岗位"
+ mod_job_drone_historical_curator_per_pop_short: "\n每$VALUE$£pop£§G+1§!£mod_job_drone_historical_curator_add£"
+
+###################
+# Treasure Troves #
+###################
+ TREASURE_TROVE: "珍宝藏库"
+ TREASURE_TROVE_DESC: "在[this.GetName]内的某处探测到了一个失踪已久的海盗§Y$TREASURE_TROVE$§!。谁也不知道里面到底藏有多少宝贝……"
+
+ treasure_troves_chain_title: "珍宝藏库"
+ treasure_troves_chain_desc: "在星系中世世代代的海盗们把他们的不义之财藏在精心安放的宝库中。许多秘密宝藏都被遗弃或被认为已经丢失，但现在它们是我们的囊中之物了。"
+
+ mod_treasure_trove_reward_mult: "珍宝藏库回报"
+
+ grand_archive.6010.name: "发现$TREASURE_TROVE$"
+ grand_archive.6010.desc: "我们在[event_target:treasure_trove_planet.GetName]内探测到了一个微弱的信号。基于初步的破译结果，我们相信这是某个失踪已久的海盗§Y$TREASURE_TROVE$§!。\n\n尽管要费很多功夫，但相信我们能够发掘出其中的秘密。"
+ grand_archive.6010.a: "找到它的位置。"
+
+ grand_archive.6015.name: "取回宝藏"
+ grand_archive.6015.common.1: "我们小心地解除了海盗藏于[event_target:treasure_trove_planet.GetName]的§Y$TREASURE_TROVE$§!的武装后"
+ grand_archive.6015.desc: "$grand_archive.6015.common.1$，找到了一箱价值不菲的资源。\n\n我们会好好利用这份意外收获的。"
+ grand_archive.6015.desc.specimen: "$grand_archive.6015.common.1$我们在一个密封容器内发现了一件远古海盗文物。这段海盗史将加入我们的收藏。"
+ grand_archive.6015.desc.specimen_extra: "此外，我们还在巨大的§Y$TREASURE_TROVE$§!内发现一件远古海盗文物。通过小心的复原，这段海盗史将加入我们的收藏。"
+ grand_archive.6015.desc.pirate_ship: "在小心地破解了遗失的§Y$TREASURE_TROVE$§!之后，我们发现了通往下方星球上一个点的模糊方向。我们在那里又发现了一艘由反探测阵列保护的令人难以置信的海盗战舰。\n\n该舰船名为[treasure_trove_pirate_ship.GetName]，现已加入加入我们的军队。"
+ grand_archive.6015.desc.tech: "$grand_archive.6015.common.1$我们发现了一个存有宝贵研究论文的数据库。\n\n其来源尚不清楚，但可以加以好好利用。"
+ grand_archive.6015.a: "$GOOD$"
+ treasure_trove_specimen_tt: "$t$取回一个['concept_specimen']。"
+ treasure_trove_pirate_ship_tt: "$t$取回一艘军用海盗船。"
+
+# Treasure Trove Pirate Ship reward names
+ PIRATE_SHIP_NAME_01: "太空愚人"
+ PIRATE_SHIP_NAME_02: "独眼变形虫"
+ PIRATE_SHIP_NAME_03: "黄金鹈鹕"
+ PIRATE_SHIP_NAME_04: "国王复仇"
+ PIRATE_SHIP_NAME_05: "葬礼前夜"
+ PIRATE_SHIP_NAME_06: "救赎之地"
+ PIRATE_SHIP_NAME_07: "太阳黑子"
+ PIRATE_SHIP_NAME_08: "掮客之允"
+ PIRATE_SHIP_NAME_09: "时光之印"
+ PIRATE_SHIP_NAME_10: "黑火炮"
+ PIRATE_SHIP_NAME_11: "帝国劫掠者"
+ PIRATE_SHIP_NAME_12: "银河之鞭"
+ PIRATE_SHIP_NAME_13: "星系枯潮"
+ PIRATE_SHIP_NAME_14: "黑洞之景"
+ PIRATE_SHIP_NAME_15: "碎法者"
+ PIRATE_SHIP_NAME_16: "论外"
+ PIRATE_SHIP_NAME_17: "证据确凿"
+ PIRATE_SHIP_NAME_18: "大老妈"
+ PIRATE_SHIP_NAME_19: "铂金雌鹿"
+
+ NAME_Treasure_Trove_Pirate_Ship: "[event_target:pirate_system.GetName]海盗团"
+ NAME_Treasure_Trove_Pirate_Ship_Design: "强盗"
+
+ grand_archive.6025.name: "海盗伏击"
+ grand_archive.6025.desc: "我们在[from.GetName]搜寻§Y$TREASURE_TROVE$§!的过程中，[fromfromfrom.Leader.GetName][fromfromfrom.Leader.GetWasWere]遭到了一支海盗舰队的伏击！\n\n这些法外狂徒不知怎么发现了我们的进展，打算把这些宝物据为己有。如果我们想要拿到这些宝藏，就必须在他们抢到之前打败他们的舰队。"
+ grand_archive.6025.a: "准备交战。"
+
+ TREASURE_TROVE_PIRATES: "击败$NAME_Treasure_Trove_Pirate_Ship$"
+ TREASURE_TROVE_PIRATES_DESC: "有一支海盗舰队在追寻着[this.GetName]的§Y$TREASURE_TROVE$§!！"
+ TREASURE_TROVE_EVENT_TOOLTIP: "§R我们必须在这些投机分子抢走高价值资源之前击败他们。§!"
+
+ grand_archive.6031.name: "击败海盗"
+ grand_archive.6031.desc: "在击溃了投机取巧的海盗之后，我们可以自由地索取[event_target:treasure_trove_planet.GetName]的宝藏了。"
+ grand_archive.6031.a: "这是我们应得的。"
+ grand_archive.6035.name: "失去珍宝藏库"
+ grand_archive.6035.desc: "投机取巧的海盗抢走了[event_target:treasure_trove_planet.GetName]的§Y$TREASURE_TROVE$§!。\n\n现在已经没剩什么值得一提的东西了。"
+ grand_archive.6035.a: "就这样吧。"
+
+#################
+# Leader Traits #
+#################
+ leader_trait_buccaneer: "海盗"
+ leader_trait_buccaneer_desc: "作为战场打捞的大师，这位领袖能从受损最严重的残骸中榨取每一两的价值。"
+ leader_trait_trailblazer: "开路者"
+ leader_trait_trailblazer_desc: "这位领袖被星系边陲的美好前景所吸引，希望能描绘出太空中最遥远地方的海图。"
+ leader_trait_treasure_hoarder: "夺宝奇兵"
+ leader_trait_treasure_hoarder_desc: "再高的赏金也满足不了这位领袖的野心。唯有积累宝贵的资源是他们的第一动力。"
+
+ mod_enemy_ship_destroyed_energy_add: "摧毁敌对帝国舰船规模获得的$r_energy$"
+ mod_deposit_increase_on_survey_chance_mult: "完成调查时：有概率提升资源矿藏规模"
+
+##########
+# Civics #
+##########
+
+ civic_galactic_curators: "星系典藏研究所"
+ civic_galactic_curators_desc: "这个文明痴迷于历史文物的精心收集和保存。但现在，星系的奥秘就在他们的面前展开了画卷，一切都还是有待学习的未知。"
+ civic_galactic_curators_effects: "$civic_galactic_curators_effects_common$"
+ civic_corporate_galactic_curators: "文物专长"
+ civic_corporate_galactic_curators_desc: "古董和收藏品可以赚钱，这个社会比谁都清楚这一点。这些物质投机专家现在正向深空中寻求投资机会。"
+ civic_corporate_galactic_curators_effects: "$civic_galactic_curators_effects_common$"
+ civic_hive_galactic_curators: "保管网络"
+ civic_hive_galactic_curators_desc: "这个集体已经演化出了一种去获取、保留和维持的压倒性冲动。这种行为在过去帮助他们生存了下来，现在却驱使他们把收集到的奇珍异货看得无比重要。"
+ civic_hive_galactic_curators_effects: "$civic_galactic_curators_effects_common$"
+ civic_machine_galactic_curators: "保管网络"
+ civic_machine_galactic_curators_desc: "这个机械智能的源代码中有一个核心指令：收集并保存。"
+ civic_machine_galactic_curators_effects: "$civic_galactic_curators_effects_common$"
+ civic_galactic_curators_effects_common: "—$GUARANTEED_RESEARCH_OPTION_STRING$['technology:tech_galactic_archivism', £society_research£$tech_galactic_archivism$]\n—初始['concept_specimen', 标本]：每个收藏分类§0$common$§!种\n—每次找到§Y标本§!或完成一处§Y$ARCHAEOLOGICAL_SITE$§!时获得$r_unity$\n—从§Y典藏研究所太空城邦§!购买：§G$@galactic_curators_curator_enclave_purchase_cost|%0$§!\n—解锁§Y$edict_decentralized_research$§!§H法令§!，提升§Y研究站§!产出但降低£job_researcher£§Y研究者§!产出。\n—§I$grand_archive$§!建造花费：§G$@galactic_curators_grand_archive_cost_mult|%0$§!"
+ edict_decentralized_research: "分布式研究"
+ edict_decentralized_research_desc: "最伟大的知识存在于我们文明之外。放眼整个银河我们才能更全面地了解我们自己。"
+ MOD_COUNTRY_SPECIMEN_ACQUIRE_CHANCE_MULT: "增加发现标本的几率"
+
+ councilor_galactic_curators: "至高典藏研究所"
+ councilor_galactic_curators_desc: "至高典藏研究所负责监管所有标本瓶的保存质量。"
+ councilor_galactic_curators_custom_modifier_desc: "—[GetCultureWorkerPluralWithIcon]产出的£unity£$unity$：§G+$@councilor_galactic_curators_unity$§!"
+ councilor_corporate_galactic_curators: "首席策展官"
+ councilor_corporate_galactic_curators_desc: "首席策展官负责管理标本的展览和交易。"
+ councilor_corporate_galactic_curators_custom_modifier_desc: "—[GetCultureWorkerPluralWithIcon]产出的$TRADE_VALUE_WITH_ICON$：§G+$@councilor_corporate_galactic_curators_trade_value$§!"
+
+ civic_beastmasters: "驯兽师"
+ civic_beastmasters_desc: "在一个为太空变形虫提供食物的星系中诞生，这个社会已经达到了完全的技术成熟，对这些生物的生命周期有着深刻的了解。他们现在致力于繁育、培养并最终克隆这些生物，以实现互惠互利。"
+ civic_machine_beastmasters: "生态无人机"
+ civic_machine_beastmasters_desc: "该机械智能直接与它们的母星系中的太空有机体交互，从而将这些强大的生物整合到它的核心功能中，产生一种互利的关系。"
+ civic_hive_beastmasters: "荒野蜂群"
+ civic_hive_beastmasters_desc: "这个蜂巢思维是一个拥有高度适应力的群体，他们已经演化出了与母星系中的太空生物有机体之间的共生关系。尽管思想不同，但他们会一起努力实现共同的目标。"
+ civic_corporate_beastmasters: "太空牧场"
+ civic_corporate_beastmasters_desc: "这个寰宇企业最初只是一个动物牧场的精英工会，现在已经发展出了在母星系养护太空生物的科技。"
+
+ civic_beastmasters_common_effects_1: "—$ADDITONAL_TECHNOLOGIES_STRING$$TABBED_NEW_LINE$—['technology:tech_gravity_wells', £physics£$tech_gravity_wells$]$TABBED_NEW_LINE$—['technology:tech_alien_cloning', £society£$tech_alien_cloning$]\n—$AVAILABLE_STARBASE_BUILDINGS$['concept_beastport', 兽坞]\n—$HOME_SYSTEM$起始拥有['concept_beastport']\n—初始护卫舰替换为太空变形虫"
+ civic_beastmasters_common_effects_2: "—起始$c_dna$：$TABBED_NEW_LINE$—§0普通§!太空变形虫"
+ civic_beastmasters_effects: "$civic_beastmasters_common_effects_1$\n$civic_beastmasters_common_effects_2$"
+ civic_cordyceptic_beastmasters_effects: "$civic_beastmasters_common_effects_1$$TABBED_NEW_LINE$—将使用§Y克隆太空变形虫§!而非§Y不死太空变形虫§!开局\n$civic_beastmasters_common_effects_2$"
+
+ councilor_beastmasters: "驯兽领主"
+ councilor_beastmasters_desc: "驯兽领主是一个高度特化、德高望重的职位，主要负责太空兽群舰船的管理和战略部署。"
+ councilor_corporate_beastmasters: "首席牧场主"
+ councilor_corporate_beastmasters_desc: "首席牧场主负责太空兽群舰队的健康和持续补充。这个承担职责复杂的角色需要在物流、生态学和动物养殖方面拥有独特的专业知识。"
+
+##############
+# Traditions #
+##############
+
+ galactic_trawling: "星系网捕"
+ council_agenda_agenda_galactic_trawling_name: "$galactic_trawling$"
+ council_agenda_agenda_galactic_trawling_desc: "深空中生机勃勃，应该对这些生物进行分类和研究。"
+ agenda_galactic_trawling_launch_finish: "$council_agenda_agenda_galactic_trawling_name$ $agenda_ref$"
+ agenda_galactic_trawling_launch_finish_desc: "$council_agenda_agenda_galactic_trawling_desc$"
+
+ astute_observation: "敏锐观察"
+ council_agenda_agenda_astute_observation_name: "$astute_observation$"
+ council_agenda_agenda_astute_observation_desc: "星系的历史深埋黄土，我们必须努力吸取这些古老的教训。"
+ agenda_astute_observation_launch_finish: "$council_agenda_agenda_astute_observation_name$ $agenda_ref$"
+ agenda_astute_observation_launch_finish_desc: "$council_agenda_agenda_astute_observation_desc$"
+
+ tradition_domestication: "驯化"
+ tradition_domestication_desc: "欲统御寰宇，必先驾驭百兽。"
+ tr_domestication_adopt: "$tradition_domestication$传统"
+ tr_domestication_finish: "$tradition_domestication$传统完成"
+ tr_domestication_finish_desc_primal_calling: "$MOD_SPACE_FAUNA_EXPERIENCE_GAIN_MULT$：§G+$@domestication_finish_exp_bonus|0%$§!\n$TRADITIONS_FINISH_AP$"
+ tr_domestication_finish_desc_default: "解锁['concept_voidlure', 虚空诱饵]\n$tr_domestication_finish_desc_primal_calling$"
+ tr_domestication_finish_desc: "[GetDomesticationFinishEffectDesc]"
+ tr_domestication_containment_protocols: "收容协议"
+ tr_domestication_containment_protocols_delayed: "在收容和运输大型生物时，它们总是有受伤或自残的危险。使用适当的镇定气体和收容协议就可以缓解这个问题。"
+ tr_domestication_containment_protocols_tt: "有更高几率捕获稀有的§Y太空兽群§!。"
+ tr_domestication_bio_repurposing: "生物再利用"
+ tr_domestication_bio_repurposing_delayed: "什么都不浪费。"
+ tr_domestication_bio_repurposing_blocker_tt: "清理£blocker£§Y有机障碍§!时获取§G$@bio_repurposing_blocker_clear_food|0$§!$r_food$"
+ tr_domestication_bio_repurposing_tt: "被击败的我方§Y太空兽群§!会留下残骸供研究并回收部分花费。（§G10%§!）\n$tr_domestication_bio_repurposing_blocker_tt$"
+ tr_domestication_bio_repurposing_reanimator_tt: "$tr_domestication_bio_repurposing_blocker_tt$"
+ tr_domestication_astrozoology: "星际动物学"
+ tr_domestication_astrozoology_delayed: "虚空中的每一种动物都别具一格，拥有不同的繁殖方式和营养需求。想在孤立环境中最大限度发掘它们的潜力需要极致的专注。"
+ tr_domestication_astrozoology_gestalt_tt: "所有§Y太空兽群§!在§Y生态园§!中的繁殖几率提高。\n$MOD_SPACE_FAUNA_CULLING_REWARD_MULT$：§G+25%§!"
+ tr_domestication_astrozoology_tt: "$tr_domestication_astrozoology_gestalt_tt$\n$mod_planet_zoo_keepers_produces_mult$：§G+50%§!"
+ tr_domestication_metabolic_regulation: "代谢调控"
+ tr_domestication_metabolic_regulation_delayed: "我们可以通过调节影响物种个体代谢的各种关键酶和蛋白质来人工控制所收容物种的成熟过程。"
+ tr_domestication_metabolic_regulation_tt: "解锁§Y$policy_metabolic_regulation$§!政策"
+ tr_domestication_metabolic_regulation_machine_tt: "$tr_domestication_metabolic_regulation_tt$"
+ tr_domestication_killer_instinct: "杀手直觉"
+ tr_domestication_killer_instinct_delayed: "在深空中生存的生物必须依靠自身来提供保护，否则它们物种将会灭绝。"
+ tr_domestication_killer_instinct_homicidal_delayed: "只有最冷酷无情的生物才配得上侍奉我们。"
+
+ MOD_SPACE_FAUNA_EXPERIENCE_GAIN_MULT: "太空兽群舰船经验获取"
+ MOD_SPACE_FAUNA_SHIP_SIZE_SHIELD_ADD: "$space_fauna_shield$"
+ MOD_SPACE_FAUNA_SHIP_SIZE_SHIELD_REGEN_ADD: "太空兽群舰船护盾再生"
+
+ mod_planet_zoo_keepers_produces_mult: "£job_xeno_zoo_keeper£$job_xeno_zoo_keeper_plural$产出的资源"
+ planet_zoo_keepers: "$job_xeno_zoo_keeper$岗位"
+ MOD_SPACE_FAUNA_MONTHLY_INCREASED_BREEDING_CHANCE_ADD: "太空兽群每月繁育几率提升"
+
+ tradition_archivism: "典藏主义"
+ tradition_archivism_desc: "对本星系文物进行妥善的保存和存放，将使后代了解他们真正的起源。"
+ tr_archivism_adopt: "$tradition_archivism$传统"
+ tr_archivism_finish: "$tradition_archivism$传统完成"
+ tr_archivism_finish_tt: "每完成一个§Y分类§!的§Y$COLLECTION$§!给予§G$@archivism_finisher_relics_cost_mult|0%$§!$mod_relics_cost_mult$"
+ tr_archivism_xeno_paleontology: "异星古生物学"
+ tr_archivism_xeno_paleontology_delayed: "在繁星间发掘秘密让我们可以从他人过往的失误中汲取教训。"
+ tr_archivism_expert_negociation: "谈判专家"
+ tr_archivism_expert_negociation_delayed: "知道谁是最合适的收藏家是为特定高价值物品找到合适安身处的关键。"
+ tr_archivism_expert_negociation_tt: "每个['concept_specimen']展览获得§G+$@archivism_expert_negociation_diplo_weight|0%$§!£diplo_weight£§Y$diplomatic_weight$§!"
+ tr_archivism_expert_negociation_homicidal: "银河收割者"
+ tr_archivism_expert_negociation_homicidal_delayed: "收集异星文化和物种的的残片能激励我们完成使命。"
+ tr_archivism_expert_negociation_homicidal_tt: "每个['concept_specimen']展览获得§G+$@archivism_expert_negociation_homicidal_unity|0$§!$mod_country_base_unity_produces_add$"
+ tr_archivism_frontier_archaeology: "前线考古"
+ tr_archivism_frontier_archaeology_delayed: "如果想真正了解周遭的历史，我们就必须超越自己星系的限制。"
+ tr_archivism_frontier_archaeology_tt: "允许$science_plural$发掘§Y无主星系§!内的['concept_archaeology_site',考古遗址]。\n获得一个随机的§Y$EXHIBITION_XENO_GEOLOGY$§!['concept_specimen']。"
+ tr_archivism_flawless_display: "无瑕展览"
+ tr_archivism_flawless_display_delayed: "非凡的标本值得非凡的展示。"
+ tr_archivism_flawless_display_tt: "每展览一个§1稀有§!以上的['concept_specimen']增加同类别产出§G+$@archivism_flawless_display_produce_value|0%$§!\n获得一个随机的§Y$EXHIBITION_AESTHETIC_WONDERS$§!['concept_specimen']。"
+ tr_archivism_exhibition_specialization: "展览专场"
+ tr_archivism_exhibition_specialization_delayed: "对['concept_megastructure_grand_archive']进行精心策划，突出某些类别的展示效果，从而增强展览的整体主题。"
+ tr_archivism_exhibition_specialization_tt: "解锁§Y$policy_exhibition_focus$§!政策\n获得一个随机的§Y$EXHIBITION_GALACTIC_HISTORY$§!['concept_specimen']。"
+
+ mod_find_arc_site_on_survey_chance_mult: "调查时发现['concept_archaeology_site']的几率"
+ mod_relics_cost_mult: "遗珍启用花费"
+ archivism_finisher_collection_modifier: "$tr_archivism_finish$"
+ archivism_expert_negociation_modifier: "$tr_archivism_expert_negociation$"
+ archivism_expert_negociation_homicidal_modifier: "$tr_archivism_expert_negociation_homicidal$"
+
+ archivism_flawless_display_modifier_xeno_geology: "$tr_archivism_flawless_display$"
+ archivism_flawless_display_modifier_aesthetic_wonder: "$tr_archivism_flawless_display$"
+ archivism_flawless_display_modifier_historical_item: "$tr_archivism_flawless_display$"
+
+############
+# Policies #
+############
+ policy_metabolic_regulation: "代谢调控"
+ policy_metabolic_regulation_desc: "$tr_domestication_metabolic_regulation_delayed$"
+ no_metabolic_regulation: "无调控"
+ no_metabolic_regulation_desc: "我们不应当调控太空兽群的自然代谢。"
+ nutrient_rationing: "营养配给"
+ nutrient_rationing_desc: "限制我们太空兽群的饮食将抑制它们的生长速度，并让我们得以将这些资源投入到其他地方。\n\n克隆的太空兽群将不再长大。"
+ nutrient_rationing_name: "$nutrient_rationing$"
+
+ policy_space_fauna_growth: "太空兽群繁育"
+ policy_space_fauna_growth_desc: "小心调控太空兽群舰船的繁育能让我们把它们的数量维持在可控的范围内。"
+ controlled_space_fauna_growth: "受控"
+ controlled_space_fauna_growth_name: "$controlled_space_fauna_growth$"
+ controlled_space_fauna_growth_base_desc: "太空兽群§R不会增长§!超过§Y军舰容量§!。"
+ controlled_space_fauna_growth_desc: "$controlled_space_fauna_growth_base_desc$"
+ excessive_space_fauna_growth: "过度"
+ excessive_space_fauna_growth_name: "$excessive_space_fauna_growth$"
+ excessive_space_fauna_growth_base_desc: "太空兽群可以§G增长§!超过§Y军舰容量§!。"
+ excessive_space_fauna_growth_desc: "$excessive_space_fauna_growth_base_desc$"
+
+ FAUNA_GROWTH_STANCE_DESC: "§H太空兽群繁育状态§!\n当前太空兽群繁育状态设为$STANCE|Y$。"
+ SPACE_FAUNA_GROWTH_STANCE_CONTROLLED: "$controlled_space_fauna_growth$"
+ SPACE_FAUNA_GROWTH_STANCE_CONTROLLED_DESC: "该舰队内的太空兽群将§R不会增长§!超过舰队容量。"
+ SPACE_FAUNA_GROWTH_STANCE_EXCESSIVE: "$excessive_space_fauna_growth$"
+ SPACE_FAUNA_GROWTH_STANCE_EXCESSIVE_DESC: "该舰队内的太空兽群可以§G增长§!超过舰队容量。"
+
+ growth_accelerant: "繁育加速剂"
+ growth_accelerant_desc: "合成各种太空兽群天然就会产生的增长激素可以引发对营养物质的贪婪欲望。"
+
+ policy_exhibition_focus: "展览重点"
+ policy_exhibition_focus_desc: "精心策划的博物天枢可以着重展示特定类别，以凸显展览的整体主题。\n"
+ galactic_history_focus: "着重$EXHIBITION_GALACTIC_HISTORY$"
+ galactic_history_focus_desc: "前车之鉴，后事之师。\n\n"
+ aesthetic_wonders_focus: "着重$EXHIBITION_AESTHETIC_WONDERS$"
+ aesthetic_wonders_focus_desc: "美是没有放之银河而皆准的标准的，但所有人都有审美的权利。\n\n"
+ xenogeology_focus: "着重$EXHIBITION_XENO_GEOLOGY$"
+ xenogeology_focus_desc: "这可不是一堆破石头——这是精美矿物的陈列展示。\n\n"
+ no_focus: "雨露均沾"
+ no_focus_desc: "我们不会强调任一种类的标本。"
+
+ ##################################
+ # Treasure Hunters Origin Events #
+ ##################################
+
+ CLOSE_COMMUNICATIONS: "关闭通讯。"
+
+# Planets
+ NAME_Soropegma: "索罗佩格玛"
+
+# Characters
+ NAME_BlackNeedle: "黑针"
+ NAME_CaptainHoo: "荷仁船长"
+ NAME_CaptainNess: "奈斯船长"
+ NAME_Smeegibb: "斯密吉卜"
+ NAME_CaptainInax: "船长伊那克斯"
+ NAME_SilverQuill: "银羽"
+ NAME_CobaltQuill: "钴羽"
+
+# Ships
+ NAME_Black_Needle_Eye: "针眼"
+
+# Event chain
+ treasure_hunters_origin_story_chain_title: "追随神秘星图"
+ treasure_hunters_origin_story_chain_desc: "我们发现了一张神秘的星图，于是决定踏上最伟大的冒险之旅。谁知道§H$celestial_chart$§!的尽头隐藏着什么，以及我们在旅途中会遇到什么危险。"
+ treasure_hunters_hidden_system_1_poi: "搜寻[prev.GetName]"
+ treasure_hunters_hidden_system_1_poi_desc: "古老的轨道舱中发现的星图显示出一个隐藏的星系，[prev.GetName]。为了了解更多，我们必须亲自前往那里。"
+ treasure_hunters_explore_system_1_poi: "调查[treasure_hunters_hidden_system_1.GetName]"
+ treasure_hunters_explore_system_1_poi_desc: "随着§Y$NAME_BlackNeedle$§!舰队被击败，我们可以继续我们的搜索。§H$celestial_chart$§!引导我们来到这个星系，我们只能假设星图的下一部分隐藏在这里。"
+ black_needle_fleet_poi: "黑针舰队"
+ black_needle_fleet_poi_desc: "我们在[from.GetName]星系遭到一支组织严密、纪律严明的海盗舰队的伏击。他们企图偷走我们的§H$celestial_chart$§!，并且早有准备迎接我们的到来。"
+ smeegibb_shelter_system_1_poi: "搜寻[prev.GetName]"
+ smeegibb_shelter_system_1_poi_desc: "§H$celestial_chart$§!又揭示了另一个新的隐藏星系，[prev.GetName]。我们必须前往那里，探索等待着我们的东西。"
+ smeegibb_shelter_system_2_poi: "前往[smeegibb_system.GetName]"
+ smeegibb_shelter_system_2_poi_desc: "我们无法重新与$NAME_Smeegibb$建立通讯。由于这是我们获得§H$celestial_chart$§!下一部分的唯一线索，我们应该返回[smeegibb_system.GetName]调查情况。目前尚不清楚通讯突然中断的原因。"
+ black_needle_fleet_2_poi: "战胜$NAME_CaptainInax$"
+ black_needle_fleet_2_poi_desc: "§Y$NAME_BlackNeedle$§!再次追杀我们，杀死了我们的联络人$NAME_Smeegibb$并封锁了[from.GetName]星系。我们相信，§H$celestial_chart$§!的第四块碎片藏在[smeegibb_shelter.GetName]地表的某个地方。\n\n我们必须击败敌方舰队才能继续搜索。"
+
+# Modifiers
+ celestial_chart_modifier: "冒险精神"
+ celestial_chart_modifier_gestalt: "聚焦星图"
+ exhibition_enhancement_modifier: "展览强化"
+ fervor_for_discovery_modifier: "探索热枕"
+ fervor_for_discovery_ap_modifier: "$fervor_for_discovery_modifier$"
+ sabotage_mass_executions_modifier: "大规模处决"
+ sabotage_education_camps_modifier: "再教育营"
+ sabotage_education_camps_hive_modifier: "再同化节点"
+ sabotage_education_camps_machine_modifier: "再编程服务器"
+ sabotage_vigilante_justice_modifier: "警戒正义"
+ sabotage_good_ending_modifier: "弹性基础设施"
+ sabotage_great_ending_modifier: "海盗霸权"
+ sabotage_bad_ending_modifier: "基础设施崩溃"
+ black_needle_downscaling: "$NAME_BlackNeedle$被削弱"
+ black_needle_piracy_modifier: "黑针海盗活动"
+ galactic_philanthropy_modifier: "星系慈善"
+ pirate_queen_modifier: "海盗女王学校"
+ pirate_queen_modifier_gestalt: "海盗女王意志"
+ rule_of_law_modifier: "依法治国"
+ adventure_calls_modifier: "冒险的召唤"
+ adventure_calls_rift_modifier: "$adventure_calls_modifier$"
+ mod_voidworm_nymph_chance_on_bombardment: "轰炸殖民地时有几率生成一只额外的§Y虚空虫若虫§!"
+ mutated_voidworms_scaling: "变异虚空虫比例"
+
+ # This is empty, it's normal
+ dummy_modifier_starbase_shipyard_artificial_build_cost_mult: ""
+
+ pirate.1.name.treasure_hunters: "太空海盗的猖獗"
+ pirate.1.desc.black_needle: "很可能§Y$NAME_BlackNeedle$§!鼓励这种非法活动，甚至可能在支持这些投机取巧的私掠者。"
+ pirate.2.k: "鸡鸣狗盗之辈！"
+ pirate.25.desc.black_needle: "此外，我们发现了一批属于前§Y$NAME_BlackNeedle$§!成员的贵重物品。"
+
+# Events
+ grand_archive.8000.name: "远古胶囊"
+ grand_archive.8000.desc: "我们对[this.GetHomeWorldName]发现的远古胶囊有了新的发现。得益于我们[this.GetScientistPlural]孜孜不倦的工作，现在将要完成解密数字密保的最后一层，破译令我们着迷已久的图表。"
+ grand_archive.8000.a: "里面到底有什么？"
+
+ TREASURE_HUNTERS_ANCIENT_CAPSULE_PROJECT: "远古胶囊分析"
+ TREASURE_HUNTERS_ANCIENT_CAPSULE_PROJECT_DESC: "我们对轨道胶囊内包含的海图进行了初步分析，发现许多天体的位置并不在我们母星系内。还需要一些时间才能提取准确的坐标。"
+
+ grand_archive.8005.name: "远古胶囊分析完毕"
+ grand_archive.8005.desc: "这张海图并不完整！\n\n轨道胶囊内的数据支离破碎，每一个明显的缺口都像是拼图中缺失的一块。尽管如此，它还是揭示了一个以前未知的星系坐标，然而关于在那里等待着我们的是什么并没有提供任何细节。\n\n该海图还突出了一系列用来进行超空间航行到达该目的地的突破点。"
+ grand_archive.8005.a.lom: "全体就位！"
+
+ grand_archive.8015.name: "星国图志"
+ grand_archive.8015.desc.common: "我们的舰队蓄势待发，准备踏上我们文明的下一段征途。"
+ grand_archive.8015.desc.default: "[this.GetHomeWorldName]的人口沉迷于最近解密的星图。人们叫它《§Y$celestial_chart$§!》，它目前带来的更多是疑问而非答案。它从何而来？是由谁出于什么目的撰写？而且或许最重要的是——这会把我们带向陷阱吗？\n\n$grand_archive.8015.desc.common$"
+ grand_archive.8015.desc.gestalt: "在胶囊里发现的星图吸引了全社会的注意。现在证明这不过是整张星图的冰山一角，不知道它将会把我们带向何处、找到什么。我们决定要完成这份《§Y$celestial_chart$§!》。\n\n$grand_archive.8015.desc.common$"
+ grand_archive.8015.a.default: "开始探险！"
+ grand_archive.8015.a.lom: "锚地支架，解除！"
+
+ grand_archive.8020.name: "意外遭遇"
+ grand_archive.8020.desc: "我们遇到了一支悬挂不明旗帜的、全副武装的舰队。他们的船只列阵整齐，但设计五花八门。许多都配备了动能发射器，连接着挂碳钢钩和鱼叉的粗缆线。此外，在舰队中央还有一组装甲输送车。我们只能猜测这些船只是由一群海盗或雇佣兵控制的。\n\n我们收到了他们领头船发来的信号。"
+ grand_archive.8020.a.lom: "那就谈谈吧……"
+
+ grand_archive.8025.name: "$NAME_BlackNeedle$的$NAME_CaptainHoo$"
+ grand_archive.8025.desc: "§H这位不法之徒的首领高傲而冷淡，装出一副漫不经心的样子。他说话时低头看着自己的喙，拒绝与我们对视，仿佛我们不值得他全神贯注。他用羽毛做着无意间滑稽的动作。§!\n\n你已经冒犯了§Y$NAME_BlackNeedle$§!，你惹上麻烦了！\n\n我们听说你这新兴的小社会将探索这个星系。你偶然发现了一张明显属于我们的星图。交出来，否则别怪我们不客气。"
+ grand_archive.8025.a: "你是何人？"
+ grand_archive.8025.a.reply: "我正是荷仁！我的全名是格里马荷·泽门德仁，但你也可以叫我§Y$NAME_CaptainHoo$§!，正是白银之风的船长，也是伟大的§Y$NAME_BlackNeedle$§!海盗阁下手下的二副。几千年来，我们的羽翼已经深植各种法外买卖，而我不过是我们华丽挂毯上的一缕银丝。\n\n你最好记住我的名字，因为我希望在把这张图表交给我们无与伦比的领袖后能得到丰厚的赏金。"
+ grand_archive.8025.b: "关于这星图你们有什么头绪？"
+ grand_archive.8025.b.reply: "一位才华横溢、价格不菲的掮客告诉我们，你们最近偶然发现了一个奇特的胶囊……它里面应该有一个我们非常感兴趣的隐藏星系的位置。\n\n我们当然也拥有这星图的一部分，但如果不配上你们手上的那一份就毫无作用。真搞不懂为什么§Y$NAME_CaptainNess$§!要把她遗产的钥匙交给你们，但我们可有责任来帮你保管好它。"
+ grand_archive.8025.c: "你们为什么这么想要这个星图？"
+ grand_archive.8025.c.reply: "你是蠢还是怎么的？[this.GetCaptainHooSnarkyInsult]我大概是要一点一点掰碎了给你讲了。\n\n星图的作用是作为一种指向特定目的地的导航指引。我们想去那个地方，拿回遗失已久的§Y$NAME_CaptainNess$§!的宝藏。"
+ grand_archive.8025.d: "$NAME_CaptainNess$是谁？"
+ grand_archive.8025.d.reply: "嗨，我还以为你们会更清楚呢。她就是这张星图的制作人。也许她发现你们的种族无知到可以托付吧，她就是那种会莫名恐惧的人。\n\n不过这终究不关你的事。把情报交出来，让我们带走它。"
+ grand_archive.8025.e: "我们是不会交出星图的。"
+ grand_archive.8025.e.reply: "想想也是。那就准备见鬼去吧。\n\n拿来吧你！"
+ grand_archive.8025.f.lom: "有本事你来拿呀，你这蠢蛋！"
+
+ CAPTAIN_HOO_INSULT_MACHINE: "我本以为机械智能多少要和智能沾上点边，看来是没这回事了。"
+ CAPTAIN_HOO_INSULT_HIVE: "都说集思广益，我看你们这个“集”也没能“思”个什么东西出来。"
+ CAPTAIN_HOO_INSULT_HUM: "你们这些大只裸猿出发来太空旅游的时候是不是忘记把脑子带上了。"
+ CAPTAIN_HOO_INSULT_MAM: "你们这群蠢兽比起我们伟大领袖的智慧和修养可是天差地别。"
+ CAPTAIN_HOO_INSULT_REP: "虽然我一开始就没指望你们这群四脚蛇搞懂这种基本的概念。"
+ CAPTAIN_HOO_INSULT_AVI: "可能你们的老祖宗啄树的时候把脑子给震坏了吧。"
+ CAPTAIN_HOO_INSULT_ART: "你们的外骨骼一开始就忘记把批判性思维的能力给包进去我是一点也不意外。"
+ CAPTAIN_HOO_INSULT_MOL: "据说鼻涕虫是没有脑子的，看到你们以后我就知道这是真的了。"
+ CAPTAIN_HOO_INSULT_FUN: "你们看起来像是一把连蘑菇都长不明白的孢子。"
+ CAPTAIN_HOO_INSULT_PLANT: "我看了你们以后是越来越明白为什么别的星球上的植物都不发展出智能了。"
+ CAPTAIN_HOO_INSULT_LITHOID: "你们真是蠢得和石头一样。"
+ CAPTAIN_HOO_INSULT_NECROID: "你们可能复活的时候把智力给落下了。"
+ CAPTAIN_HOO_INSULT_AQUATIC: "你们的鱼脑离开了水就窒息了是吧。"
+ CAPTAIN_HOO_INSULT_TOX: "你们脑子进泥巴了吧？"
+ CAPTAIN_HOO_INSULT_ROBOT: "看来人格矩阵把你们的算力都给用完了。"
+ CAPTAIN_HOO_INSULT_DEFAULT: "你们物种智力方面的灾难就跟你们的外貌一样惨烈。"
+
+ grand_archive.8045.name: "$grand_archive.8025.name$"
+ grand_archive.8045.desc: "你侮辱我就罢了，你还侮辱§Y$NAME_BlackNeedle$§!！这忍不了，一点也忍不了！\n\n你拒绝合作的态度我们会记着的。$NAME_BlackNeedle$会用一切手段来结训你。我们易怒之下就能把你那小小的初生文明给弄死。\n\n不交出那张星图我们是不会罢休的！今天就先放你们一马！"
+ grand_archive.8045.a.lom: "下次，少废话，直接干！"
+
+ TREASURE_HUNTERS_CHART_PIECE_2_PROJECT: "碎成八片的行星"
+ TREASURE_HUNTERS_CHART_PIECE_2_PROJECT_DESC: "§H$celestial_chart$§!引导我们来到一个粉碎星球。我们探测到一条非自然形成的隧道深深钻入了行星最大地壳板块。相信星图的下一部分就隐藏在里面，但需要仔细挖掘才能获取。\n\n可以用工程船来建造必要的设备从而发掘出这块星图碎片。"
+
+ grand_archive.8055.name: "发掘成功"
+ grand_archive.8055.desc: "我们从漂浮的行星碎片中提取出了一个胶囊和一些矿物。打开以后，我们发现了另一块§Y$celestial_chart$§!的碎片，以及一些独特的文物。此外，在里面发现了一张字条，为了便于翻译它还使用了多种语言撰写。\n\n“这里是$NAME_Soropegma$的最后废墟，乙特人母星。乙特人是一个前超光速物种，由于一场悲惨的事故而灭绝。我们没有意识到即将到来的后果，意外触发了被盗巨像的破坏力量。请保护和尊重他们的记忆。”"
+
+ TREASURE_HUNTERS_ANCIENT_CAPSULE_2_PROJECT: "解密星图碎片"
+ TREASURE_HUNTERS_ANCIENT_CAPSULE_2_PROJECT_DESC: "从破碎行星的残骸中挖掘出胶囊后，我们需要破译其中的导航数据。这个过程需要交叉参照我们的制图数据库，并将标记的天体与已知星系进行比对。"
+
+ grand_archive.8060.name: "星图已解密"
+ grand_archive.8060.desc: "突破多层加密后，新数据被无缝地添加到§Y$celestial_chart$§!中。当所有碎片拼凑完成，一个全新的星系跃然眼前。我们旅程的下一步近在咫尺，应该谨慎地去探索这片未测绘的太空区域。"
+
+ grand_archive.8075.name: "博物天枢"
+ grand_archive.8075.desc: "获得§Y[This.GetLastAcquiredSpecimenName]§!后，我们的科学家认为它应该在§Y$grand_archive$§!的公开展示区拥有一席之地。这座建筑将容纳我们不断壮大的珍稀文物收藏，这些文物将带来重大的文化和科学回报。我们将启动一项天使投资，用于保存和展示星系多样化和脆弱标本所需的技术的研发。\n\n此外，在乙特人文物旁还发现了一份蓝图，其中包含一种先进展示柜的设计，该展示柜配备了创新的气氛监测技术。进一步发展这个想法将增强档案的整体保存能力。"
+ grand_archive.8076.name: "乙特人标本"
+ grand_archive.8076.desc: "失落的乙特文明的最后遗迹值得单独展出。\n\n幸运的是，在乙特文物旁边发现的一份蓝图包含一种先进展示柜的设计，该展示柜配备了创新的气氛监测技术。进一步发展这个想法将增强档案的整体保存能力。"
+ grand_archive.8076.a: "好机会。"
+
+ TREASURE_HUNTERS_EXHIBITION_PROJECT: "展览强化蓝图"
+ TREASURE_HUNTERS_EXHIBITION_PROJECT_DESC: "除了乙特人标本，我们还发现了一个用于保存标本的复杂展示柜的先进设计。\n\n研究该蓝图中使用的技术可能会帮助未来的保护和展览工作。"
+ TREASURE_HUNTERS_EXHIBITION_PROJECT_TOOLTIP: "使用§Y工程船§!围绕一颗具有25或以上§Y$pops_with_icon$§!的行星建造一座§Y博物天枢§!。\n需要：§H£society_research£$tech_galactic_archivism$§!。"
+
+ grand_archive.8080.name: "展览强化"
+ grand_archive.8080.desc: "经过对乙特蓝图的仔细分析，我们建造了一个先进的收纳单元，其大气监测精度可达原子级别。这将使策展员能够高度详细地监控珍贵乙特人标本的大气条件，并检测任何潜在腐烂的预警信号。它将永远保持原样。\n\n我们可以将这些技术应用于进一步改善我们收藏中所有物品的储存条件。"
+
+ TREASURE_HUNTERS_BUILD_GRAND_ARCHIVE: "建造博物天枢"
+ TREASURE_HUNTERS_BUILD_GRAND_ARCHIVE_DESC: "在探索宇宙的过程中，我们收集了无数独特的文物和文化奇观。这些标本将激励民众，使我们的展览成为第一个展示和保护所有星系知识领域的展览。\n\n建造一个§H$grand_archive$§!正是为了这一目的。"
+
+ grand_archive.8090.name: "建造博物天枢"
+ grand_archive.8090.desc: "[fromfrom.GetName]的§Y$grand_archive$§!开张仪式是一个值得全体[this.GetName]庆祝的日子。这场来自银河的珍宝展览激励着人们的探索精神，也呼唤着我们从过去汲取经验。"
+
+ d_black_needle_base: "隐蔽的黑针基地"
+ d_black_needle_base_desc: "黑针海盗用来进行各种非法活动和藏匿赃物的秘密基地。"
+ d_abandoned_black_needle_base: "废弃的黑针基地"
+ d_abandoned_black_needle_base_desc: "这个基地曾经被黑针海盗用作前哨站和藏匿通缉犯及赃物。"
+ d_abandoned_black_needle_base_naval_cap: "士兵岗位贡献的军舰容量：§G+$@abandoned_black_needle_base_naval_cap_from_soldier_job|0$§!"
+ d_abandoned_black_needle_base_naval_cap_short: "£job_soldier£岗位提供的£mod_country_naval_cap_add£：§G+$@abandoned_black_needle_base_naval_cap_from_soldier_job|0$§!"
+
+ black_needle_base_system_poi: "跟随星图"
+ black_needle_base_system_poi_desc: "§H$celestial_chart$§!揭示了一个隐藏星系，[Prev.GetName]。我们必须前往那里，探索等待着我们的东西。"
+
+ grand_archive.8100.name: "发现海盗窝点"
+ grand_archive.8100.desc: "我们在[From.GetName]发现了一个带有§Y黑针§!标志的秘密地下基地。我们认为这是一个海盗集团的外部基地，与他们的其他行动隔离开来。§Y$celestial_chart$§!的下一部分一定存放在这里，很可能与其他财富和装饰品一起。\n\n我们可以轻松地对基地进行轨道轰炸，但这可能会给黑针足够的时间呼叫增援。另一方面，快速部署地面部队将更快地夺取基地，杀他们个措手不及。\n\n更隐秘的方法是入侵基地的计算机系统，直接大胆地抢走$celestial_chart$的那一部分。"
+ grand_archive.8100.a: "需要考虑的事情很多。"
+
+ COLONIZATION_IMPOSSIBLE_DEFENDED_PLANET: "$TRIGGER_FAIL$§R这颗行星戒备森严，且不能殖民。§!"
+ BLACK_NEEDLE_BASE_BOMBARD: "轰炸黑针基地"
+ BLACK_NEEDLE_BASE_BOMBARD_DESC: "位于[This.GetName]的地下基地对轨道轰炸具有很强的抵抗力，但只要有足够的时间和火力，我们舰队就能将其摧毁。基地被摧毁后，我们可以搜寻废墟，以回收§H$celestial_chart$§!碎片和其他贵重物品。\n\n战术顾问提醒，这种做法可能会给黑针足够的时间呼叫增援。"
+ BLACK_NEEDLE_BASE_BOMBARD_REINFORCEMENTS_KILLED: "$BLACK_NEEDLE_BASE_BOMBARD$"
+ BLACK_NEEDLE_BASE_BOMBARD_REINFORCEMENTS_KILLED_DESC: "$BLACK_NEEDLE_BASE_BOMBARD_DESC$"
+
+ grand_archive.8103.name: "黑针的反击"
+ grand_archive.8103.desc: "不出所料，黑针派出了一支舰队来保护他们在[FromFrom.GetName]的基地。\n\n我们需要干掉这些舰船才能拿下[FromFrom.System.GetName]。"
+
+ grand_archive.8105.name: "断壁残垣"
+ grand_archive.8105.desc: "经过轨道弹药的猛烈攻击，海盗基地最终连同其之前的居民被一起夷为了平地。所有威胁都被消除，现在我们可以派出一名科学官去探索废墟基地，并发掘下一块§Y$celestial_chart$§!。"
+ grand_archive.8105.a.custom_tooltip: "黑针基地已被摧毁。§Y[FromFrom.GetName]§!可以进行自由探索。"
+ grand_archive.8105.a.lom: "趁火打劫！"
+
+ project_type_research: "$RESEARCH$"
+ project_type_bombardment: "轰炸"
+
+ BLACK_NEEDLE_BASE_DEPLOY_ARMIES: "强攻黑针基地"
+ BLACK_NEEDLE_BASE_DEPLOY_ARMIES_DESC: "[FromFrom.GetName]地下基地受到大量军队和安保无人机的保护。在行星表面部署军队将使我们能够迅速占领基地，给§Y黑针§!几乎没有反应的机会。\n\n一旦我们控制了基地，就可以发掘星图胶囊以及海盗积累的任何其他不义之财。"
+
+ grand_archive.8110.name: "守军投降"
+ grand_archive.8110.desc: "我方地面部队已攻占了§Y黑针§!基地，目前正在清剿建筑物及其周围资源。所有威胁已消除，我们可以派遣一名科学家发掘下一块§Y$celestial_chart$§!碎片。"
+ grand_archive.8110.a.custom_tooltip: "黑针的地面势力已经被清除。§Y[FromFrom.GetName]§!可以进行自由探索。"
+ grand_archive.8110.a.lom: "是时候分享战利品了。"
+
+ BLACK_NEEDLE_BASE_HACK: "骇入海盗基地"
+ BLACK_NEEDLE_BASE_HACK_DESC: "海盗过度依赖偷窃和改装技术，这导致他们的基地容易受到渗透。可以让一艘科研船从轨道上入侵[FromFrom.GetName]的网络，伪装成§Y黑针§!运输船，并声称受荷仁船长的命令，说服他们移交星图胶囊，避免不必要的流血事件。"
+
+ grand_archive.8115.name: "成功潜入"
+ grand_archive.8115.desc.1: "经过数月的准备，科学家[Leader.GetName]成功潜入了通讯网络，并伪装成了一艘§Y黑针§!飞船。在伪造的荷仁船长命令下，[Leader.GetHeShe]欺骗了基地操作员，让他们准备将星图胶囊进行紧急星际转移。"
+ grand_archive.8115.desc.2: "我们成功夺得胶囊，无人员伤亡。海盗们还没有意识到他们被骗了。"
+ grand_archive.8115.desc.default: "$grand_archive.8115.desc.1$\n\n$grand_archive.8115.desc.2$"
+ grand_archive.8115.desc.slippery: "$grand_archive.8115.desc.1$\n\n科学家[Leader.GetName]将飞船降落一个绝佳位置，以便在掩护被揭穿的情况下迅速撤退。\n\n$grand_archive.8115.desc.2$"
+ grand_archive.8115.desc.charismatic: "$grand_archive.8115.desc.1$\n\n凭借他们的魅力，科学家[Leader.GetName]能够避开任何棘手的问题。\n\n$grand_archive.8115.desc.2$"
+ grand_archive.8115.desc.psionic: "$grand_archive.8115.desc.1$\n\n[Leader.Species.GetHandName]轻轻一挥，科学家[Leader.GetName]便操控了守卫的思想，消除了一切疑虑。\n\n$grand_archive.8115.desc.2$"
+ grand_archive.8115.a: "$EXCELLENT$"
+
+ grand_archive.8120.name: "人赃并获"
+ grand_archive.8120.desc: "不幸的是，在我们把胶囊装上飞船时，一名警卫发现了我们的计划。这一发现导致了一场短暂的枪战，我们被迫带着珍贵的货物逃离现场。胶囊成功提取，但科学家[Leader.GetName]在交火中丧生。"
+ grand_archive.8120.a: "$TERRIBLE$"
+
+ grand_archive.8125.name: "海盗基地遭废弃"
+ grand_archive.8125.common: "由于这些漏洞暴露，海盗决定放弃他们在[FromFromFrom.GetName]上的基地，立即撤离并保护在那里储存的其他贵重物品。这颗可居住的卫星现在无人居住，可以被殖民。"
+ grand_archive.8125.desc.alive: "§Y黑针§!终于意识到自己被骗了，发现了他们封闭的安全网络中的漏洞。\n\n$grand_archive.8125.common$"
+ grand_archive.8125.desc.dead: "我们在惊险逃脱§Y黑针§!据点后，我们的渗透行动已被完全发现。\n\n$grand_archive.8125.common$"
+ grand_archive.8125.a: "符合逻辑的决定。"
+ grand_archive.8125.a.custom_tooltip: "§Y[FromFromFrom.GetName]§!上的陆军已经离开行星。现在可以进行殖民了。"
+
+ grand_archive.8130.name: "掠夺黑针基地"
+ grand_archive.8130.desc.common: "安全屋里存放着各种各样的贵重物品，以及与海盗组织历史相关的纪念品。我们在被盗的艺术品、个性化珠宝和加密的数字钱包中找到了星图胶囊。\n\n我们怀疑这里的大多数赃物根本难以销赃。艺术品一看便知，珠宝需要熔化成废料，使用数字钱包进行的交易通常也可以追踪。这些物品的原主人中，有些人可能已经去世，但其他人仍在寻找他们被盗的财产。"
+ grand_archive.8130.desc.bombarded: "我们在§Y黑针§!基地的废墟中找到了一个地下金库，打开后发现里面藏着他们不义之财的小型宝藏。\n\n$grand_archive.8130.desc.common$"
+ grand_archive.8130.desc.landed: "我们探索了破败的§Y黑针§!基地，发现了一份设施蓝图，揭露了还有一个地下金库的存在。我们乘坐维修电梯深入地下，输入了访问代码之后，发现了一个小型宝库，里面藏着他们不义之财。\n\n$grand_archive.8130.desc.common$"
+ grand_archive.8130.a: "试图返还被窃的赃物。"
+ grand_archive.8130.b: "全部卖掉。"
+ grand_archive.8130.c.default: "留下赃物。"
+ grand_archive.8130.c.lom: "谁发现就归谁。"
+
+ black_needle_base_sold_stolen_items: "卖掉黑针基地中的赃物"
+ opinion_black_needle_base_repatriate_stolen_items: "被窃赃物已返还"
+ opinion_black_needle_base_repatriate_stolen_items_tt: "所有未同我们交战的非灭绝政体帝国§G+$@opinion_black_needle_base_repatriate_stolen_items_value|0$§!£opinion£评价"
+
+ DECODE_THIRD_MAP_PIECE: "解密星图碎片"
+ DECODE_THIRD_MAP_PIECE_DESC: "我们从§Y黑针§!基地获取了星图胶囊，接下来的任务是解密其中的数据，并将新信息整合到§H$celestial_chart$§!中。"
+
+ grand_archive.8135.name: "星图已解密"
+ grand_archive.8135.desc: "我们成功突破了数字加密层，并将新信息整合到§Y$celestial_chart$§!中。这又让我们发现了另一个值得探索的目的地，现在星图几乎完整了。我们相信只剩下最后一块拼图，并谨慎乐观地认为我们的探索即将结束。\n\n在解码导航数据的同时，我们也认为无瑕的舱体外壳值得分析。容器的强度和耐用性令人惊讶；复制这种材料的能力可以为未来的研究提供许多潜在的机会。"
+ grand_archive.8135.a: "$GOOD$"
+
+ d_hive_dwelling: "蜂巢思维住地"
+ d_hive_dwelling_desc: "由奈斯船长的前船员斯密吉卜集体意识占领的一个孤立定居点。"
+ d_ruined_hive_dwelling: "蜂巢思维住地废墟"
+ d_ruined_hive_dwelling_desc: "由奈斯船长的前船员斯密吉卜集体意识占领的一个孤立定居点，现被洗劫。"
+
+ COLONIZATION_IMPOSSIBLE_SMEEGIBB_PLANET: "§R这个行星属于$NAME_Smeegibb$。§!"
+ grand_archive.8200.name: "隐蔽聚落"
+ grand_archive.8200.desc.common_1: "我们在[FROM.GetName]发现了一个小型定居点，人口不到一千，居民是一些感性软体动物。对该物种的初步生物学分析表明，它们具有亚空间突触交流的能力，表明存在一个蜂巢思维。除了这个孤立的营地外，这颗星球上没有其他智慧生命。"
+ grand_archive.8200.desc.common_2: "为什么我们会被§Y$celestial_chart$§!导向这里尚不清楚，需要进一步调查。"
+ grand_archive.8200.desc: "$grand_archive.8200.desc.common_1$\n\n$grand_archive.8200.desc.common_2$"
+ grand_archive.8200.desc.alt: "$grand_archive.8200.desc.common_1$\n\n也许这个物种对我们听说过的“§Y$NAME_CaptainNess$§!”有更多信息。\n\n$grand_archive.8200.desc.common_2$"
+
+ grand_archive.8205.desc.common_1: "§H这是一个隐藏在[FROM.GetName]星系中的蜂巢思维节点，$NAME_Smeegibb$不安地扭动着。他们习惯于服从，因此在被说话时会习惯性地低下头。§!"
+ grand_archive.8205.desc.common_2: "我们叫$NAME_Smeegibb$。我们很好奇你是怎么找到我们的。这个星系已经隐藏在星系视野之外数千年了。\n\n只有§Y船长§!知道这个地方。你想要找什么？"
+ grand_archive.8205.desc.default: "$grand_archive.8205.desc.common_1$\n\n斯马拉克！我们已经有很长时间没有同一心物种交谈了。\n\n$grand_archive.8205.desc.common_2$"
+ grand_archive.8205.desc.gestalt: "$grand_archive.8205.desc.common_1$\n\n斯马拉克！我们已经有很长时间没有同另一个集体意识物种交谈了。\n\n$grand_archive.8205.desc.common_2$"
+ grand_archive.8205.a: "这是什么地方？"
+ grand_archive.8205.a.reply: "斯马拉克！这个星球是我们的居住地，我们生活在远离星系暴力的安全之中。以前，我们曾参与过暴力。杀戮、犯罪、海盗行径——我们什么都干过。但现在不再如此，我们只照顾我们的水培农场。\n\n在当海盗之前，我们是难民，没有人愿意收留我们，除了§Y船长§!。她救助我们脱离了悲惨的命运，并允许我们加入她的船队。船长给了我们一个新名字，作为交换，我们负责照顾飞船。\n\n我们负责清洁、烹饪、弹药、水栽和货物管理。我们辛勤工作。然后我们加入了登船突击队。船长盗取宝藏或劫掠时保护她。绝不背叛船长。我们始终忠诚。"
+ grand_archive.8205.b: "你对§Y$celestial_chart$§!有何了解？"
+ grand_archive.8205.b.reply: "斯玛拉克！我们对什么导航图一无所知，我们只待在自己的房间里。如果§Y船长§!做了一张导航图把你带到这里，一定有她的理由……她想帮助我们，或者伤害我们。我们永远无法确定。船长很狡猾。\n\n她有时会给我们发消息。船长给我们送来了一座她最喜欢的子个体的巨型雕像，那是她救出过的$NAME_Smeegibb$并且一直记得。它很令人印象深刻，但我们不知道她为什么要送。也许她想道歉，但她没有留下任何纸条。"
+ grand_archive.8205.c: "和我们聊聊§Y船长§!的更多事情。"
+ grand_archive.8205.c.reply: "斯玛拉克！以前，§Y船长§!拯救了我们。以前，她是我们的导师和领袖。她教我们如何照顾飞船。她说：“$NAME_Smeegibb$，做军需官、机械师和劳工——你很有价值。”\n\n船长遵循两条信条：“财富即独立”和“生命在于传承”。我们一起猎杀穷人和富人。我们从暴力的星系中夺取我们想要的东西。\n\n但后来船长变得愈发贪婪和鲁莽。她牺牲船员，或者为了赏金背叛他们。船长失去了所有人，除了$NAME_Smeegibb$。我们始终忠诚。\n\n她让我们看到了星系的暴力。现在我们只想远离它。"
+ grand_archive.8205.d: "星图为什么会带领我们来到这里？"
+ grand_archive.8205.d.reply: "斯玛拉克！我们不知道§Y船长§!为什么把你带到这里。她什么也没告诉我们。\n\n我们有个想法。有一个地方，§Y船长§!和我们在那一起躲避赏金猎人。安全的地方。也许你能在那里找到一些东西。"
+
+ grand_archive.8210.name: "发现安全屋"
+ grand_archive.8210.desc: "我们在[from.GetName]遇到的生物，$NAME_Smeegibb$，透露了一个废弃的安全屋的坐标，该安全屋以前由他们和§Y$NAME_CaptainNess$§!居住。调查这个地点可能会让我们找到§Y$celestial_chart$§!的下一部分，或者至少是一条线索，指引我们走向正确的方向。"
+ grand_archive.8210.a: "开始发掘。"
+
+ smeegibb_digsite_poi: "探索安全屋"
+ smeegibb_digsite_poi_desc: "这个考古遗址可能掌握着通往下一块§H$celestial_chart$§!的关键。为了继续寻找§H$NAME_CaptainNess$§!的失落$TREASURE_TROVE$，我们必须调查这个废弃的安全屋。"
+
+ NAME_Bemat_cruiser_inax_01: "赫伯"
+
+# Treasure Hunters Origin - Smeegibb
+ smeegibb_digsite: "安全屋废墟"
+ smeegibb_digsite_desc: "在[fromfrom.planet.GetName]的冰冷荒原上，我们发现了一个小型预制庇护所，里面配备了休眠的生命维持系统和生活区。它们经过数千年的冰暴，严重风化，部分被掩埋。"
+
+ grand_archive.8220.name: "船长日志"
+ grand_archive.8220.desc: "挖掘出的建筑显示出长期使用的迹象。它曾经拥有充足的基本设施。在整个建筑中发现了零散的饰品和奇珍异宝。在一堆凌乱的纸张中，我们找到了由§Y$NAME_CaptainNess$§!本人写下的日志条目。\n\n§L我们登上并劫持了另一艘佩里坎的珍宝运输船，但这次他们已经做好了准备。附带损失比我想象的要多一些，但我们解决过更糟糕的情况。不错的收益，但塔皮科宝石仍然在逃。不幸的是，现在佩里坎人又提高了赏金，联邦也介入了。现在情况有点棘手。可能需要避一避风头。§!"
+ grand_archive.8220.a: "继续找。"
+
+ grand_archive.8225.name: "打发时间"
+ grand_archive.8225.desc: "在结构下方的挖掘发现了一小批贵重物品和基本的卫生系统。不幸的是，在彻底搜查了该区域后，我们未能找到任何关于§Y$celestial_chart$§!碎片的痕迹。\n\n我们收集了更多笔记本和文件，希望能从§Y$NAME_CaptainNess$§!散乱的日志条目中找到线索。\n\n§L在像$NAME_Smeegibb$这样的伙伴陪伴下时间过得没那么慢，但值得分享荣耀吗？当然，与一个蜂巢思维合作有难以置信的价值。用仅仅一份利润的份额换取数百个子个体的使用权？真是个好交易！但也许他们所做的工作会削弱我自己的成就……？我不确定我是否能接受分享自己遗产的想法。我需要再仔细考虑一下。§!"
+ grand_archive.8225.a: "$grand_archive.8220.a$"
+
+ grand_archive.8230.name: "可证之物"
+ grand_archive.8230.desc: "在一个通风口里，我们发现了§Y$NAME_CaptainNess$§!的最后日记。\n\n§L我不想以这种方式被记住。$NAME_Smeegibb$一直是我的忠实伙伴，但不要说我需要他们。我可以独自征服星系。我会留下我的印记，荣耀将属于我。还有财富。\n\n给自己留个笔记：最好给$NAME_Smeegibb$送点东西留作纪念。§!\n\n这就是我们能找到的全部。没有关于船长或§Y$celestial_chart$§!的任何其他线索。\n\n也许给$NAME_Smeegibb$的礼物中包含着关于最后一块碎片下落的线索。我们必须重新与他们建立联系。"
+ grand_archive.8230.a: "遗址清理完毕。"
+
+ grand_archive.8236.name: "$NAME_Smeegibb$失踪"
+ grand_archive.8236.desc.default: "$smeegibb_shelter_system_2_poi_desc$"
+ grand_archive.8236.desc.xenophile: "$smeegibb_shelter_system_2_poi_desc$\n\n我希望我们新近发现的朋友还安全。"
+ grand_archive.8236.a: "前往[smeegibb_system.GetName]"
+
+ grand_archive.8241.name: "$NAME_BlackNeedle$卷土重来"
+ grand_archive.8241.desc: "一支印着名为§Y$NAME_BlackNeedle$§!的海盗组织的旗帜的庞大舰队，被发现正在[smeegibb_shelter.GetName]轨道上运行。我们相信这些海盗一直在跟踪我们的行动，并且已经夷平了名为$NAME_Smeegibb$的集体的居所。他们一定还在寻找§Y$celestial_chart$§!的下一部分。\n\n该星球上没有发现任何智慧生命迹象。\n\n我们正在接收来自他们旗舰的信号。"
+
+ grand_archive.8245.name: "$NAME_BlackNeedle$的$NAME_CaptainInax$"
+
+ grand_archive.8245.desc.inax.1: "§H这节肢动物昂首挺胸，复眼闪着耀眼的光芒。它严谨的姿态与不安的口器形成鲜明对比，口器不规则地咔哒作响，兴奋地颤抖着。§!\n\n所以，我们终于见面了。你们这些软甲生物是怎么战胜§Y荷—荷—荷仁舰长§!的！？即使是那个老糊涂也应该轻而易举地消灭你们可怜的舰队。你们将为"
+ grand_archive.8245.desc.inax.2: "感—感—感谢你带我们到这里，§Y$NAME_SilverQuill$§!追捕那些可怜的$NAME_Smeegibb$超过一百个周期。了结他古老的怨恨意味着我将获得丰厚的赏金……在我解决了你之后。"
+ grand_archive.8245.desc.ransacked: "$grand_archive.8245.desc.inax.1$搞—搞—搞砸我们在[black_needle_base.GetName]的基地付出代价。\n\n$grand_archive.8245.desc.inax.2$"
+ grand_archive.8245.desc.stolen: "$grand_archive.8245.desc.inax.1$在§Y黑—黑—黑针§!偷鸡摸狗付出代价。\n\n$grand_archive.8245.desc.inax.2$"
+ grand_archive.8245.a: "你是谁？"
+ grand_archive.8245.a.reply: "称呼—呼—呼我为伊纳克斯，是§Y黑—黑—黑针§!的少将。\n\n能被我送下黄—黄—黄泉，你们真是得了个好死，劝你们乖乖送上命来。\n\n按惯—惯—惯例，我赏你最先上路。"
+ grand_archive.8245.b: "你杀了$NAME_Smeegibb$……"
+ grand_archive.8245.b.reply.common: "这简直小菜一碟。我用那些小蛞—蛞—蛞蝓蓝色的血给他们的棚屋上了个漆。一没舰队二没武器——早晚都得被干—干—干死。§Y黑—黑—黑针§!所刺，无人幸存。\n\n那是你熟人吗？好怪—怪—怪啊。马上你就会和他们团聚了。以§Y$NAME_SilverQuill$§!之名，我们要从你们"
+ grand_archive.8245.b.reply.default: "$grand_archive.8245.b.reply.common$抽搐的尸块—块—块上拿走星图。"
+ grand_archive.8245.b.reply.robot: "$grand_archive.8245.b.reply.common$熄灭的铁罐—罐—罐头上拿走星图。"
+ grand_archive.8245.c: "$NAME_SilverQuill$是谁？"
+ grand_archive.8245.c.reply: "§Y$NAME_SilverQuill$§!是谁？真是个好—好—好问题。我们传奇的创始人运筹帷幄。他从一叶孤帆，把§Y黑—黑—黑针§!打造成为一个星系大事业。\n\n黑—黑—黑针会为了歌—歌—歌颂他的丰功伟绩而继续存在下去，而你们的死亡就是这首颂词的下一个音符。"
+ grand_archive.8245.d: "你想要$celestial_chart$做什么？"
+ grand_archive.8245.d.reply: "难道你不知道自己拥有了什么吗？这是通往§Y船—船—船长奈斯§!宝藏的路线图！她一生中积攒的每一块—块—块珠宝都在这里。\n\n这些财富属于我们。一旦我们拥有它，我们就能名留青史。每一个星系都将畏惧§Y黑—黑—黑针§!……而这史诗的第一篇章将属于你。难道我们还不够慷慨吗？"
+ grand_archive.8245.e: "我们不会轻易放弃。"
+ grand_archive.8245.e.reply: "那就让我们高唱战歌吧！我会将你们的[this.species.GetRemnantNamePlural]做成战利品，献给我的旨——指挥官。"
+
+ grand_archive.8265.name: "$grand_archive.8245.name$"
+ grand_archive.8265.desc: "一场难忘的战斗！你并不像看起来那样弱。我们已经低估了你两次，但不会再犯同样的错误。下次我们相遇，§Y黑——黑针§!将不会手下留情。\n\n不要把这当作警告，这是你的死刑判决。"
+ grand_archive.8265.a.scared: "令人不安……"
+ grand_archive.8265.a.homicidal: "放马过来吧。"
+ grand_archive.8265.a.gestalt: "通讯结束。"
+
+ gateway_to_ness_treasure_system_poi: "标注星图"
+ gateway_to_ness_treasure_system_poi_desc: "§H$celestial_chart$§!已经拼凑完整。它揭示了最后一个隐藏的星系，[Prev.GetName]。我们漫长的探寻即将结束——让我们前往那里，去发现等待着我们的东西！"
+
+ TREASURE_HUNTERS_CHART_PIECE_3_PROJECT: "隐蔽的胶囊"
+ TREASURE_HUNTERS_CHART_PIECE_3_PROJECT_DESC: "根据我们的调查，我们认为§H$celestial_chart$§!的下一部分隐藏在[this.GetName]的早已沦为废墟的定居点中。\n\n鉴于其他胶囊的结构十分坚固，我们可以假设它在最近的轰炸中留存下来。"
+
+ grand_archive.8270.name: "雕像的秘密"
+ grand_archive.8270.desc: "我们在[from.GetName]寻找§Y$celestial_chart$§!第四块碎片的行动已圆满结束。我们在一座石雕上发现了嵌入其中的胶囊，雕像描绘的是一个来自现已灭绝的$NAME_Smeegibb$集体组织的子个体。雕像上的铭文如下：\n\n§L“献给我的忠诚船员：这是我对你的感谢。愿你的孤独长久而平静。”§!\n\n一旦这最后一块碎片被破译，我们就可以继续寻找§Y$NAME_CaptainNess$§!的宝藏。"
+
+ TREASURE_HUNTERS_ANCIENT_CAPSULE_4_PROJECT: "最后的星图碎片"
+ TREASURE_HUNTERS_ANCIENT_CAPSULE_4_PROJECT_DESC: "从$NAME_Smeegibb$定居点废墟中发掘出胶囊后，剩下的就是解密里面的数据，并完成§H$celestial_chart$§!。我们很快就会发现§H$NAME_CaptainNess$§!的踪迹尽头等待着我们的是什么。"
+
+ grand_archive.8280.name: "星图完成"
+ grand_archive.8280.desc: "解码后，新的数据片段完成了我们的§Y$celestial_chart$§!。各个节点上闪烁着光点，指示着我们沿途发现的中间目的地。然后，四盏灯同时闪烁，揭示了另一个隐藏的星系。\n\n添加最后一块数据解锁了额外的功能。这份§Y导航图§!不仅仅是一张简单的地图，它包含了§Y$NAME_CaptainNess$§!收集的关于星系中失落财富和非法珍宝的信息。一些数据可能已经过期，但该设备可以有效地检测到我们所有星系中隐藏的宝藏。\n\n此外，§Y星图§!还包含了船长在其职业生涯中发现的每件珍宝的评估信息。这些详细的笔记解释了如何识别、评估和向潜在买家展示获得的贵重物品，以获得最大利润。重新激活设备将提供独特宝藏库的设计，使我们的殖民地能够利用船长的无与伦比的洞察力，为我们的宝藏增值。"
+ grand_archive.8280.a.lom: "无价之宝。"
+
+ grand_archive.8285.name: "标注星图"
+ grand_archive.8285.desc: "§Y$celestial_chart$§!的完成对于[this.GetName]来说是一个重大的时刻。随着所有秘密的解开，我们被指引到一个无从回避的目的地：[gateway_to_ness_treasure_system.GetName]星系。\n\n在克服了许多障碍之后，我们只差一步之遥。只有一个问题仍然存在：§Y星图§!的尽头是什么？\n\n我们无法保证一定可以马到成功，但我们也决不容许其他人趁机夺取。让我们奋勇前进，完成这场冒险！"
+ grand_archive.8285.a.default: "继续前进。"
+ grand_archive.8285.a.lom: "前进，哟嚯！"
+
+ councilor_head_treasure_hunter: "首席密藏猎手"
+ councilor_head_treasure_hunter_female: "$councilor_head_treasure_hunter$"
+ councilor_head_treasure_hunter_desc: "首席密藏猎手仔细分析着§Y$celestial_chart$§!，追踪隐藏的宝藏并评估珍贵文物。"
+ councilor_corporate_head_treasure_hunter: "$councilor_head_treasure_hunter$"
+ councilor_corporate_head_treasure_hunter_female: "$councilor_head_treasure_hunter$"
+ councilor_corporate_head_treasure_hunter_desc: "$councilor_head_treasure_hunter_desc$"
+
+ prospect_of_treasure_modifier: "勘探宝藏"
+ prospect_of_treasure_modifier_tt: "给予§G+$@prospect_of_treasure_treasure_trove_reward|0%$§!$mod_treasure_trove_reward_mult$，§G+$@prospect_of_treasure_treasure_gatherers_produces|0%$§!$mod_planet_treasure_gatherers_produces_mult$，同时每$ruler$级给予§G+$@prospect_of_treasure_energy_produces|0$§!$mod_country_base_energy_produces_add$：\n\n"
+
+ grand_archive.8290.name: "初涉珍宝"
+ grand_archive.8290.desc.chart: "随着[from.GetName]上的珍宝馆的建立，我们相信§Y$celestial_chart$§!有潜力为我们的经济做出重大贡献。"
+ grand_archive.8290.desc.trove: "随着我们不断地分配[from.GetName]上发现的$TREASURE_TROVE$中的资源，我们越来越明显地意识到，§Y$celestial_chart$§!有可能为我们的经济做出重大贡献。"
+ grand_archive.8290.desc.default: "为了充分利用§Y星图§!的能力，我们设立了一个新的内阁职位，专门负责领导我们发现和收集宝藏的行动。"
+ grand_archive.8290.desc.gestalt: "为了充分利用§Y星图§!的能力，我们采取了措施，以增加资源分配，用于发现和收集宝藏。"
+ grand_archive.8290.desc.chart.default: "$grand_archive.8290.desc.chart$\n\n$grand_archive.8290.desc.default$"
+ grand_archive.8290.desc.chart.gestalt: "$grand_archive.8290.desc.chart$\n\n$grand_archive.8290.desc.gestalt$"
+ grand_archive.8290.desc.trove.default: "$grand_archive.8290.desc.trove$\n\n$grand_archive.8290.desc.default$"
+ grand_archive.8290.desc.trove.gestalt: "$grand_archive.8290.desc.trove$\n\n$grand_archive.8290.desc.gestalt$"
+ grand_archive.8290.tt: "\n§E允许解锁内阁职位：§!\n§H$t$$councilor_head_treasure_hunter$§!\n$tt$$COUNCIL_POSITION_MODIFIER_BASE$\n$ttt$$mod_treasure_trove_reward_mult$：§G+$@councilor_head_treasure_hunter_treasure_trove_reward|0%$§!\n$ttt$$mod_planet_treasure_gatherers_produces_mult$：§G+$@councilor_head_treasure_hunter_treasure_gatherers_produces|0%$§!\n$ttt$$mod_country_base_energy_produces_add$：§G+$@councilor_head_treasure_hunter_energy_produces|0$§!\n$COUNCIL_POSITION_AVAILABLE_FOR$$t$$scientist_with_icon$ $commander_with_icon$"
+
+ grand_archive.8300.name: "虫群肆虐的星门"
+ grand_archive.8300.desc.common: "这一定就是通往我们梦寐以求宝藏的那道星门。"
+ grand_archive.8300.desc.did_encounter_voidworms: "地图将我们带到一个以前未探明的黑洞，以及一个被$NAME_Voidworms$寄生的星系。它们在附近一座废弃的星门安家，其中最大的几只像守护者一样绕着这处废弃的建筑盘旋。\n\n$grand_archive.8300.desc.common$如果我们要到达路线的终点，必须消灭$NAME_Voidworms$并修复星门。"
+ grand_archive.8300.desc.didnt_encounter_voidworms: "地图将我们带到一个以前未探明到的黑洞，以及一个充满奇怪生物的星系。这些生物聚集在一个废弃星门的附近，其中最大的生物绕着这个废弃的结构盘旋，仿佛占领了此处。\n\n这些巨大的虫状生物不在我们关于太空兽群的数据库中。我们目前正在尝试建立通信。$grand_archive.8300.desc.common$如果我们要到达轨迹的尽头，我们必须处理这些生物并修复星门。"
+ grand_archive.8300.a: "什么都不能挡我们的道。"
+ grand_archive.8300.a.pacifist: "如果我们必须这样做的话。"
+ grand_archive.8300.a.lom: "给他们一轮舷侧齐射！"
+
+ GATEWAY_VOIDWORMS_KILL_PROJECT: "$grand_archive.8300.name$"
+ GATEWAY_VOIDWORMS_KILL_PROJECT_DESC: "我们按照§H$celestial_chart$§!指引，来到了[this.solar_system.GetName]星系中一个被虫群寄生的§H星门§!。必须先处理这些生物，才能重新激活星门，看看另一边有什么。"
+ GATEWAY_VOIDWORMS_KILL_PROJECT_TT: "§R击败[this.solar_system.GetName]的生物§!"
+
+ GATEWAY_VOIDWORMS_DEBRIS_PROJECT: "$NAME_Voidworms$尸骸"
+ GATEWAY_VOIDWORMS_DEBRIS_PROJECT_DESC: "[this.solar_system.GetName]星系中虚空虫的尸骸显示出异常读数。我们的扫描仪似乎在一个垂垂死去的三头虫中探测到生命迹象。我们应该派遣一艘科研船去进一步调查。"
+
+ grand_archive.8310.name: "虚空虫卵"
+ grand_archive.8310.desc.did_encounter_voidworms: "在一具虚空虫的尸体中，发现了一群刚刚孵化的若虫。尽管它们的同类遭受了屠戮，但它们还是靠近了我们的飞船，并开始与我们的舰队并肩漂浮，以示恳求。\n\n$grand_archive.8310.desc.common$"
+ grand_archive.8310.desc.didnt_encounter_voidworms: "在一具蛇形生物的残骸中，发现了一窝幼崽。尽管它们的同类遭受了损失，它们还是靠近了我们的飞船，并开始在我们的舰队旁边漂浮，以示臣服。\n\n$grand_archive.8310.desc.common$"
+ grand_archive.8310.desc.common: "如果我们愿意，可以利用它们对我们的本能依恋：一旦成熟，这群太空生物将成为我们控制下的一支强大的有机舰队。"
+ grand_archive.8310.a: "出色的发现。"
+ grand_archive.8310.a.tt: "我们将获得一支§Y$@gateway_voidworm_nymph_reward_count|0$§2$epic$§!$voidworms_small_plural$组成的舰队§!。"
+ grand_archive.8310.b: "区区猎物。"
+
+ grand_archive.8315.name: "调查星门科技"
+ grand_archive.8315.desc: "[FromFromFrom.System.GetName]的星门处于休眠状态。当接近这座古老的建筑时，§Y$celestial_chart$§!提供了一系列关于这项失落技术的知识。理解这种古老的交通方式可能会在其他冒险中证明有用。"
+
+ RESEARCH_GATEWAY_ACTIVATION_PROJECT: "$grand_archive.8315.name$"
+ RESEARCH_GATEWAY_ACTIVATION_PROJECT_DESC: "$grand_archive.8315.desc$"
+ RESEARCH_GATEWAY_ACTIVATION_PROJECT_TT: "研究£physics£§Y$tech_gateway_activation$§!科技"
+
+ grand_archive.8325.name: "激活星门"
+ grand_archive.8325.desc.common: "一旦我们重新建立了系统之间的连接，地图就到此为止了。这张星图所隐藏的秘密很快就会揭晓。"
+ grand_archive.8325.desc.tech: "研究完必要的技术之后，我们现在可以重新激活位于[gateway_to_ness_treasure_system.GetName]的古老星门。\n\n$grand_archive.8325.desc.common$"
+ grand_archive.8325.desc.kill.known: "那些生物已处理完毕，现在只剩下重新激活位于[gateway_to_ness_treasure_system.GetName]的古老星门。\n\n$grand_archive.8325.desc.common$"
+ grand_archive.8325.desc.kill.unknown: "$NAME_Voidworms$已处理完毕，现在只剩下重新激活位于[gateway_to_ness_treasure_system.GetName]的古老星门。\n\n$grand_archive.8325.desc.common$"
+
+ ACTIVATE_GATEWAY_PROJECT: "$grand_archive.8325.name$"
+ ACTIVATE_GATEWAY_PROJECT_DESC: "作为§H$celestial_chart$§!上的最终目的地，[this.solar_system.GetName]中的休眠§H星门§!可能是通往某个非常重要的地点。"
+ ACTIVATE_GATEWAY_PROJECT_TT: "§H激活星门§!"
+
+ grand_archive.8400.name: "藏宝，哟嚯！"
+ grand_archive.8400.desc: "在激活了§Y$celestial_chart$§!路径终点处的星门后，我们发现了[ness_treasure_system.GetName]系统。天体的分布与我们在§Y$NAME_CaptainNess$§!的航行日志中找到的草图相符。\n\n我们的漫长旅程即将结束。"
+ grand_archive.8400.a: "继续前进。"
+
+ ness_treasure_system_poi: "穿越[from.solar_system.GetName]的星门"
+ ness_treasure_system_poi_desc: "我们沿着§H$celestial_chart$§!指引的路线走到了尽头，一路击退了海盗和怪兽。现在，通往彼岸的通道已经开启，剩下的就是去探索星门那一头了。"
+
+ # Megastructure
+ gateway_ness_ruined: "$gateway_ruined$"
+ gateway_ness_ruined_DESC: "$gateway_ruined_DESC$"
+ gateway_ness_ruined_MEGASTRUCTURE_DETAILS: "$gateway_ruined_MEGASTRUCTURE_DETAILS$"
+ gateway_ness_restored: "$gateway_final$"
+ gateway_ness_restored_DESC: "$gateway_final_DESC$"
+ gateway_ness_restored_MEGASTRUCTURE_DETAILS: "$gateway_final_MEGASTRUCTURE_DETAILS$"
+
+ NESS_GRAND_ARCHIVE: "$NAME_CaptainNess$的宝藏"
+ NESS_GRAND_ARCHIVE_HOARDED: "$NESS_GRAND_ARCHIVE$"
+
+ grand_archive.8405.name: "伏击！"
+ grand_archive.8405.desc: "我们被跟踪了。\n\n现在，我们在[ness_treasure_system.GetName]遭遇了一支强大的§Y$NAME_BlackNeedle$§!舰队。与我们上次遭遇相比，他们的队伍规模显著扩大，包括退役的军舰和改装了高级武器的民用船只。看来他们已经集结了大部分预备舰队来应对这次对抗。舰队中央是他们的旗舰，一艘巨大的$titan$级战舰。\n\n虽然他们的编队已做好战斗准备，但大多数舰船尚未启动武器。看来他们打算谈判。\n\n我们正在接收来自旗舰的通讯。"
+ grand_archive.8405.a.lom: "让我们谈判吧。"
+
+ grand_archive.8410.name: "$NAME_CobaltQuill$，$NAME_BlackNeedle$的舰长"
+ grand_archive.8410.desc: "§H尽管身材矮小，这位海盗船长却散发着威严。他的眼睛在盘算着，仿佛在解一道复杂的方程式，将我们仔细评估。§!\n\n终于见面了。$NAME_CobaltQuill$，§Y$NAME_BlackNeedle$§!号船长，我们家族的荣耀，也是$NAME_SilverQuill$创始人的后裔，向您致敬！您多年来一直是我们的一根刺——但我还是讲道理的。我带着一个提议而来。\n\n我们会为您的完整星图支付丰厚的赏金，并允许您带着你们无足轻重的性命离开。\n\n如果您拒绝，我们将别无选择，只能强行夺取我们想要的东西。我们的舰队实力占优，并且我们也渗透了您的帝国的几个关键点。只要我一声令下，您就会彻底崩溃。"
+ grand_archive.8410.a: "你会提供什么？"
+ grand_archive.8410.a.reply: "尽管你造成了诸多困扰，但我愿意提供丰厚的赏金，以换取§Y$NAME_CaptainNess$§!完整的遗物。\n\n如果你接受这份慷慨的提议，我准备原谅你过去的所有过失。我们之间没有必要继续这场冲突。或者升级……"
+ grand_archive.8410.b: "你在威胁我们……"
+ grand_archive.8410.b.reply.common_1: "关于[this.GetName]，我无所不知。你的供应链、资源库的位置、太空基地的分布，一切都记录得清清楚楚。"
+ grand_archive.8410.b.reply.common_2: "我的人已经进行了研究，我完全清楚如何瓦解你的帝国。我会让你的星球陷入饥荒，偷走你的补给，并摧毁剩余的一切。当然，这取决于你是否愿意给我想要的东西……"
+ grand_archive.8410.b.reply.default: "$grand_archive.8410.b.reply.common_1$\n\n我一直在关注你们领导层中的每一位值得信赖的个人，以及他们的亲人……\n\n$grand_archive.8410.b.reply.common_2$"
+ grand_archive.8410.b.reply.hive_mind: "$grand_archive.8410.b.reply.common_1$\n\n我正在跟踪你们集体中的每个主要节点，并在新节点创建时接收到通知。\n\n$grand_archive.8410.b.reply.common_2$"
+ grand_archive.8410.b.reply.machine: "$grand_archive.8410.b.reply.common_1$\n\n我已经侵入了你的位置矩阵，能够追踪你网络中每个主要节点的位置。\n\n$grand_archive.8410.b.reply.common_2$"
+ grand_archive.8410.c: "何必多此一举和我们谈判？"
+ grand_archive.8410.c.reply: "这种规模的破坏行动可不便宜。船舶维护、工资、贿赂，这些东西都很昂贵，大手大脚花钱可不会带来暴富。等待你们的毁灭规模巨大，按下开关就能实现，这其中有很大的机会成本。\n\n有更好的地方可以花我的辛苦赚来的钱。来吧，让我们避免更多无谓的流血。拿着你们新获得的财富，离开这里，让专业人士来做海盗。"
+ grand_archive.8410.d: "这不仅仅是钱的问题，对吧？"
+ grand_archive.8410.d.reply: "五千年前，我的祖先，伟大的$NAME_SilverQuill$，是$NAME_CaptainNess$的副手。他忠心耿耿地为她服务多年，可最终得到了什么回报？\n\n背叛！\n\n她将他交给了当局，并独吞了赏金！当然，没有任何监狱能够囚禁强大的$NAME_SilverQuill$。\n\n在一次大胆的逃脱后，他从灰烬中崛起，将他的杂牌军锻造成如今站在你面前的传奇$NAME_BlackNeedle$。他发誓要报复背叛他的$NAME_CaptainNess$，将毕生精力投入到掠夺她的宝藏，并用自己的成功掩埋她的名声。\n\n我只是在完成他的遗愿。这张星图是夺回我们应得之物的关键。\n\n现在，请把它交出来。"
+
+ grand_archive.8415.name: "大胆的提案"
+ grand_archive.8415.desc: "§Y$NAME_BlackNeedle$§!的首领提出了一项提议，他们愿意支付巨额赏金来换取§Y$celestial_chart$§!。如果我们接受了这个交易，就等于将§Y$NAME_CaptainNess$§!宝藏的关键拱手相让。\n\n拒绝他们的提议将会招致他们的怒火。这些海盗渗透到我们军队序列中的程度尚不清楚，但他们威胁要从内部彻底瓦解[this.GetName]。这些威胁是否只是虚张声势，还有待观察。"
+ grand_archive.8415.a: "拒绝他们的提议。"
+ grand_archive.8415.b: "售卖§Y$celestial_chart$§!。"
+ grand_archive.8415.b.effect_tt: "失去§Y$celestial_chart$§!\n获得你的最大$r_energy$的§G+$@max_credit_mult|0%$§!\n获得一艘来自§Y$NAME_BlackNeedle$§!的舰船"
+
+ grand_archive.8500.name: "达成交易"
+ grand_archive.8500.desc: "我们以一笔巨额$MONEY$和一艘名为§Y针眼§!的非凡军舰作为报酬，给出了§Y$celestial_chart$§!。我们可以认为我们与§Y$NAME_BlackNeedle$§!的争端已彻底解决。\n\n我们避免了与他们全部舰队进行重大交战，并阻止了一次对星系规模的蓄意破坏企图。\n\n最好还是让海盗们继续做他们的海盗勾当。"
+ grand_archive.8500.a: "我们的事业到此结束。"
+ grand_archive.8500.a.tt: "所有舰船从$TREASURE_TROVE$星系弹出。"
+
+ HOARD_LOOTED_BY_PIRATES: "这个结构已经被海盗掠夺过了，里面没有任何值钱的东西"
+
+ grand_archive.8505.name: "蓄意破坏！"
+ grand_archive.8505.desc: "§Y$NAME_BlackNeedle$§!发起了全面攻击，给我们的星系带来了混乱。生产线停产，发电机烧毁，重要的行政基础设施被迫下线。货物消失，研究站的数据被清空，矿井坍塌速度是正常速度的五倍。\n\n这场破坏是广泛的，是数千名心存恶意的行动者协同操作的阴险结果。一个庞大的破坏者网络潜伏在我们殖民地中，他们似乎总是领先我们一步。"
+ grand_archive.8505.a: "红色警报！"
+
+ situation_sabotage: "黑针破坏分子"
+ situation_sabotage_type: "$situation_sabotage$"
+ situation_sabotage_desc: "来自§Y$NAME_BlackNeedle$§!的大量破坏分子潜伏在我们殖民地中，在[owner.GetName]各地造成广泛破坏。除非我们消灭这些破坏分子，否则破坏将持续下去，直到我们的供应线崩溃。"
+ situation_sabotage_monthly_change_tooltip: "$situation_monthly_change_tooltip_approaches_dependent$"
+ approach_sabotage_do_nothing: "什么也不做"
+ approach_sabotage_do_nothing_tt: "我们目前不会采取任何特殊行动。"
+ approach_sabotage_purge: "肃清破坏分子"
+ approach_sabotage_purge_tt: "清除潜伏在我方内部的卧底特工势必会造成一些不可避免的附带损害。"
+ approach_sabotage_mitigate: "减轻损失"
+ approach_sabotage_mitigate_tt: "可以采取相应措施重建我们的基础设施，希望通过消耗战来抵御破坏性攻击。"
+ finisher_effects_sabotage: "我们将清除黑针破坏分子，并阻止他们增援奈斯船长藏宝地的封锁力量。"
+ finisher_effects_sabotage_fail: "我们的基础设施将遭到无法修复的破坏，黑针将增援对奈斯船长藏宝地的封锁。"
+
+ grand_archive.8520.name: "破坏网络显形"
+ grand_archive.8520.desc.common: "我们截获了§Y$NAME_BlackNeedle$§!在我们殖民地使用的隐藏通信频率。在解密他们的信息后，我们已经能够识别出我们队伍中的所有叛徒和破坏分子。"
+ grand_archive.8520.desc.machine: "$grand_archive.8520.desc.common$\n\n他们的特工一直秘密地在我们的操作系统中传播恶意软件，制造了一个由叛乱单位构成的休眠军队，潜伏在我们系统各个位置。\n\n这个歹毒的重新编程计划已经走得如此之远，以至于腐化了[root.GetName]中最重要的独立节点之一， §Y[traitor_leader.GetClass][traitor_leader.GetName]§!。"
+ grand_archive.8520.desc.hive: "$grand_archive.8520.desc.common$\n\n他们的特工一直在居住地释放分离性信息素，导致我们许多工蜂产生了潜在的偏差。一旦被迷惑住，海盗们将我们的工蜂重新安置到休眠特工的舱室，他们目前正在破坏我们的基础设施。\n\n这个庞大的计划已经发展到腐蚀[root.GetName]中最重要的独立节点之一，§Y[traitor_leader.GetClass][traitor_leader.GetName]§!。"
+ grand_archive.8520.desc.default: "$grand_archive.8520.desc.common$\n\n我们已经得知他们的特工多年来一直在招募心怀不满的公民，为这次大规模袭击做准备，他们利用潜伏的间谍网络和各种随时准备背叛我们的线人。\n\n其中一名叛徒已暴露，正是§Y[traitor_leader.GetClass][traitor_leader.GetName]§!，这构成了重大的安全风险。我们必须处理这个阴谋家，同时保持一定程度的稳定。公众得知这种程度的腐败将对我们的政府造成严重后果。"
+ grand_archive.8520.a.default: "处决叛徒。"
+ grand_archive.8520.a.machine: "反激活偏离的单元。"
+ grand_archive.8520.a.hive: "消灭反常的工蜂。"
+ grand_archive.8520.a.tt: "每个有人居住的行星都会有一个£pop£人口被消灭。"
+ grand_archive.8520.b.default: "对叛徒进行再教育。"
+ grand_archive.8520.b.machine: "对偏离的单元进行重编程。"
+ grand_archive.8520.b.hive: "重新同化反常的工蜂。"
+ grand_archive.8520.c: "暴露叛徒的身份。"
+ grand_archive.8525.name.default: "叛徒遭处决"
+ grand_archive.8525.name.hive: "反常分子遭消灭"
+ grand_archive.8525.name.machine: "单元被终结"
+ grand_archive.8525.desc.common: "继发现[traitor_leader.GetHisHer]效忠于§Y$NAME_BlackNeedle$§!海盗之后"
+ grand_archive.8525.desc.default: "$grand_archive.8525.desc.common$，[traitor_leader.GetName]已被处决。\n\n[traitor_leader.GetHisHer]死亡的具体情况尚未公开。"
+ grand_archive.8525.desc.hive: "$grand_archive.8525.desc.common$，[traitor_leader.GetName]已被消灭。"
+ grand_archive.8525.desc.machine: "$grand_archive.8525.desc.common$，[traitor_leader.GetName]已被处决。"
+ grand_archive.8525.a: "必要的措施。"
+ grand_archive.8530.name.default: "叛徒再教育"
+ grand_archive.8530.name.hive: "反常分子再教育"
+ grand_archive.8530.name.machine: "单元重编程"
+ grand_archive.8530.desc.default: "$grand_archive.8525.desc.common$，[traitor_leader.GetName]已得到充分的纠正。\n\n不幸的是，这种再教育过程给[traitor_leader.GetName]留下了持久的负面影响。"
+ grand_archive.8530.desc.hive: "$grand_archive.8525.desc.common$，[traitor_leader.GetName]已得到充分的纠正。\n\n不幸的是，这次重新同化过程给[traitor_leader.GetName]留下了持久的负面印象。"
+ grand_archive.8530.desc.machine: "$grand_archive.8525.desc.common$，[traitor_leader.GetName]已被充分重新编程。\n\n不幸的是，这种重塑过程给[traitor_leader.GetName]留下了持久的负面印象。"
+ grand_archive.8530.a.tt: "[traitor_leader.GetName]获得2负面特质"
+ grand_archive.8535.name: "发现[traitor_leader.GetName]身死"
+ grand_archive.8535.desc: "$grand_archive.8525.desc.common$，[root.GetName]愤怒的市民集结起来进行抗议。这群义愤填膺的暴民冲进[traitor_leader.GetHisHer]的家中。[traitor_leader.GetHeSheCap]后来被宣布当场死亡。"
+ grand_archive.8536.name: "叛徒赎罪"
+ grand_archive.8536.desc: "$grand_archive.8525.desc.common$，[traitor_leader.GetHeShe]发布了一份公开声明，对[traitor_leader.GetHisHer]的行为表示深深的悔恨。这场磨难似乎对[traitor_leader.GetHisHer]的领导能力产生了持久的影响。\n\n尽管过去犯下种种错误，但[root.GetName]的人民似乎愿意原谅[traitor_leader.GetName]。"
+ grand_archive.8536.a: "可喜的进展。"
+ grand_archive.8536.a.tt: "[traitor_leader.GetName]获得1负面特质"
+
+ grand_archive.8545.name: "基础设施崩溃"
+ grand_archive.8545.desc: "不幸的是，我们无法阻止§Y$NAME_BlackNeedle$§!的破坏行动。他们的破坏者已经彻底破坏了我们的后勤基础设施，重建供应链将需要数年时间。他们在我们的星系中传播的腐败规模太大，无法得到缓解。\n\n然而，这不会阻止我们以我们的名义夺取§Y$NESS_GRAND_ARCHIVE$§!。我们只需要在战斗中击败海盗，宝藏就会属于我们。"
+ grand_archive.8545.a: "战斗还未结束。"
+ grand_archive.8550.name: "棋高一着，贼人无果"
+ grand_archive.8550.desc: "尽管§Y$NAME_BlackNeedle$§!竭尽全力破坏我们的基础设施，我们依然得到恢复并稳定了局势。他们的特工已被击败，剩下的就是与他们在[hoard_system.GetName]集结的舰队对抗，并以[root.GetName]的名义夺取§Y$NESS_GRAND_ARCHIVE$§!。"
+ grand_archive.8550.a: "就这么办。"
+ grand_archive.8555.name: "$NAME_BlackNeedle$被击败"
+ grand_archive.8555.desc: "§Y$NAME_BlackNeedle$§!的军力根本无法与我们强大的军队抗衡。他们集结的舰队已被击败，无法再支持对我们星系的破坏行动。现在，我们可以在[root.GetName]的名义下夺取§Y$NESS_GRAND_ARCHIVE$§!。"
+ grand_archive.8555.a: "螳臂当车。"
+ grand_archive.8555.a.lom: "可悲的旱鸭子。"
+
+ TREASURE_HUNTERS_BLACK_NEEDLE_PROJECT: "$NAME_BlackNeedle$的背水一战"
+ TREASURE_HUNTERS_BLACK_NEEDLE_PROJECT_DESC: "在对[root.GetName]的星系进行大规模破坏性攻击后，$NAME_BlackNeedle$仍然维持着对§H$NESS_GRAND_ARCHIVE$§!的封锁。他们已经耗尽了大部分资源，现在处于脆弱状态。如果我们在这里击败他们，他们的整个组织必然会崩溃，让我们可以自由地夺取宝藏。"
+ TREASURE_HUNTERS_BLACK_NEEDLE_PROJECT_TOOLTIP: "§R击败[solar_system.GetName]的$NAME_BlackNeedle$海盗。§!"
+
+ grand_archive.8560.name: "$grand_archive.8410.name$"
+ grand_archive.8560.desc: "奈斯的孩子们……真是讽刺。\n\n是她选择了你——你知道吗？\n\n数百种物种任她挑选……她却选择了你。也许她看到了你身上的特别之处，也许这只是一场纯粹的偶然。无论如何，我们都走到了这一步。\n\n你赢了……暂时。不要轻视这场胜利。你已经树立了强大的敌人——我们，§Y$NAME_BlackNeedle$§!我们不会宽恕，也不会忘记。\n\n就像我的祖先一样，我们会坚持下去。我们会一点一点地重建我们失去的一切。即使需要一千年，一百万年——我们也会回来，夺回你从我们手中夺走的一切。\n\n$NAME_BlackNeedle$将永远存在！永远！"
+ grand_archive.8560.a: "只有时间会给出答案。"
+ grand_archive.8560.a.lom: "滚犊子吧。"
+
+ CAPTAIN_NESS_HOARD_PROJECT: "奈斯船长的藏宝地"
+ CAPTAIN_NESS_HOARD_PROJECT_DESC: "§H$NESS_GRAND_ARCHIVE$§!近在咫尺了。\n\n尽管它看起来被遗弃了，但建筑物的许多系统仍在运行。考虑到§H$NAME_CaptainNess$§!的传说性质，我们应该警惕预料之外的安全措施。\n\n这个宝库的唯一入口在其中央舱口处有一个凹槽。我们可以将§H$celestial_chart$§!插入这里，打开这个神秘的设施。"
+
+ grand_archive.8565.name: "$NAME_CaptainNess$宝藏"
+ grand_archive.8565.desc: "§Y$celestial_chart$§!是钥匙，而宝库是它的锁。我们把它插入巨型结构的主舱口。\n\n星图启动，内部追踪着一道单一的的光束，指向我们旅程中经过的每一颗恒星。古老的机器发出咯吱咯吱的响声，我们很快便进入了内部。\n\n来自一千个世界的难以置信的宝藏，在地板和墙壁上堆积如山。精致的雕像与用贵金属打造的攻击武器并列。精美的珠宝悬挂在古老化石的末端，复杂的装置堆积成一堆，毫无秩序。\n\n金属的脚步声从中央走道传来。一只充满液体的类人生物机器，举起双臂投降，向我们走来。它的语音电路发出噼啪声，启动了：\n\n§L“所以……你最终还是找到了我的星图。你真聪明。”§!"
+ grand_archive.8565.a: "开启通讯。"
+ grand_archive.8565.a.lom: "哟嚯，船长！"
+
+ grand_archive.8570.desc: "§H尽管她的机械形态限制了其表达能力，但被称为奈斯船长的机器却用一种自鸣得意的眼神看着我们。她的金属身体没有丝毫磨损的迹象，仿佛刚组装不久。她的语气既耐心又居高临下，仿佛在对一个地位低于她的人说话。§!\n\n我想应该做个自我介绍，尽管你可能已经猜到我是谁了。\n\n我叫桑达·奈斯，或者至少以前是。曾经的“银河海盗女王”，现在是这堆冰冷螺栓的主人。\n\n§H机器停顿了一下，观察着我们的形态。§!\n\n我已经很久没有见过你们这种生物了。看起来你们这些原始人已经长大成人了！\n\n我必须说，我对你们能来到这里感到非常惊讶。"
+ grand_archive.8570.a: "你是怎么活下来的？"
+ grand_archive.8570.a.reply_fallen_empire: "永生可不是便宜货。我花了几百万能量币，请了[fallen_empire.GetRealName]的科学家帮我转移意识，而且没引起警觉。他们干得还不错，但我现在跳起舞来可没以前那么好了。\n\n$grand_archive.8570.a.reply$"
+ grand_archive.8570.a.reply_curator: "永生可不是便宜货。我花了几百万能量币，请了$NAME_Curator_Order$的科学家帮我转移意识，而且没引起警觉。他们干得还不错，但我现在跳起舞来可没以前那么好了。\n\n$grand_archive.8570.a.reply$"
+ grand_archive.8570.a.reply: "§H机器启动了一个控制台，露出墙上隐藏的一个密室。一个古老的冷冻舱里，躺着一位有机生物的遗骸。§!\n\n我在这里。一个无用的装饰品，但我有点怀旧。我看起来不错，对吧？\n\n我确认一切就绪后，锁上了这个保险库，然后休眠了几千年。下一件事，你就打开了门，我们现在正在进行这场对话。感觉就像昨天我躺下睡觉一样……"
+ grand_archive.8570.b: "你这些宝藏是从哪里来的？"
+ grand_archive.8570.b.reply: "大部分都是偷来的，或者用其他不义之财换来的。我曾经从银河的所有大人物那里偷过东西。货船、巨像武器，你随便说，我都劫持过。我的逻辑是，如果我能这么容易地从你那里拿走东西，说明你根本不在乎，不配拥有它。\n\n有时候事情会变得……很糟糕。你看到了乙特人发生了什么。那件事让我大开眼界。\n\n玩玩闹闹，直到不再有趣……"
+ grand_archive.8570.c: "为什么选我们？"
+ grand_archive.8570.c.reply: "如果说是因为我孤独，你会相信吗？\n\n§H机器的语音电路发出应该称之为笑声的咯咯声。§!\n\n我拥有了所有这些财富，但为了什么？最终能给我带来什么？我意识到我想要的不是财富，而是传承。但是，你无法偷走传承——那么如何创造一个呢？\n\n好吧，我是这么打算的。我找到了几个最有希望的原始物种，并在他们的世界中播下了宝藏——当然还有地图。第一个拼凑出我的藏宝图的人将通过考验，并有资格继承我毕生的基业。于是……我们就在这里碰面了。\n\n也许你们一族能做到我做不到的事情，并将所有这些付诸实践。"
+ grand_archive.8570.d: "为什么抛弃一切？"
+ grand_archive.8570.d.reply: "我已经告诉过你们，我要把火炬传下去。我并不擅长花钱，只会赚钱。\n\n不过，我不能把钱随便给任何人。他们必须足够聪明才能来到这里；一支我能为之骄傲的队伍。一支我能与之分享我的故事的队伍……"
+ grand_archive.8570.e: "你的什么故事？"
+ grand_archive.8570.e.reply: "好吧，既然你诚心诚意地发问了……\n\n§H机器启动了一个控制台，一系列数字记录被投射到墙上。§!\n\n整个藏宝库都是我的自传。我花了很多钱雇佣了一支作家团队，记录下我生命中所有可以记住的时刻。我认为他们做得还不错。\n\n§H图像切换到一个海盗船员的驾驶舱画面，船长奈斯的生物形态在指挥。机器的语音电路发出一声短暂的噼啪声；那是一声叹息。§!\n\n我曾经是星系中最令人恐惧的海盗。我让大型企业破产，勒索星球，并将整个帝国夷为平地。任何愚蠢到敢于反对我的人，要么被我的[root.GetSpeciesOrganName]刺穿，要么被卖掉换取赏金。我自己的赏金？天文数字。"
+ grand_archive.8570.f: "请继续。"
+ grand_archive.8570.f.reply: "§H各种抢劫、盗窃和惊险逃脱的数字记录，伴随着史诗音乐的投影，在屏幕上播放。§!\n\n起初，我精心挑选目标，并为自己的行为寻找正当理由，认为他们罪有应得。每一次行动都比上一次更刺激。这是一个循环：计划、妖魔化、抢劫、然后庆祝。问题是寻找“坏”目标太耗时了。我需要拓宽视野。\n\n最终，如果我想要什么，我就直接拿走。我喜欢看着数字上涨，我的战利品的价值和我的宝藏的价值。我在世界上留下了自己的印记，我将永远不会被遗忘。其他一切都不重要。"
+ grand_archive.8570.g: "什么改变了？"
+ grand_archive.8570.g.reply: "§H乙特人的家园已经成为一片废墟。§!\n\n然后，乙特星事件发生了……你看到了吧？我还记得广播里传来的哭喊声，那是他们最后生命的消逝。事情已经走得太远了。是时候改变了。\n\n在我的职业生涯中，我发现了一个规律：历史会淡忘，教训会被遗忘，总会有新人来接替你的位置。我只是想选择接替我的人。\n\n那就是你。你们[root.GetSpeciesNamePlural]通过了考验。接下来会发生什么，就取决于你了。"
+
+ grand_archive.8575.name: "无价之宝"
+ grand_archive.8575.desc.default: "§Y$NESS_GRAND_ARCHIVE$§!包含着难以置信的财富。然而，我们必须考虑以我们的名义宣称它所带来的后果。\n\n她宝藏中的每一笔信用都是非法获得的。获取这些资源将意味着我们容忍$NAME_CaptainNess$的过度犯罪行为，以换取物质财富。\n\n话虽如此，许多被$NAME_CaptainNess$伤害的人早已不在人世。宣称这笔财富不会造成新的受害者。此外，我们已经消灭了§Y$NAME_BlackNeedle$§!，从而使星系变得更加安全。经过漫长的危险旅程，我们理所当然地应该得到丰厚的回报。\n\n我们必须决定如何处理它。"
+ grand_archive.8575.desc.lom: "§Y$NESS_GRAND_ARCHIVE$§!是终极的藏宝地，我们很高兴能获得它的战利品。\n\n这是打败了§Y$NAME_BlackNeedle$§!的应得奖励——为[this.GetName]三呼万岁！\n\n让我们清理这个金库。所有[This.Species.GetHandNamePlural]准备就位！"
+ grand_archive.8575.a.default: "以我们的名义宣称。"
+ grand_archive.8575.a.lom: "夺取我们辛苦赚来的战利品。"
+ grand_archive.8575.b: "将可以溯源的物品归还给其合法所有者。"
+ grand_archive.8575.c: "将这笔财富布施给整个银河。"
+
+ grand_archive.8580.name: "我们的恩主"
+ grand_archive.8580.desc.1: "§H现在被称为§Y$NAME_CaptainNess$§!的机器对我们清空她的珍宝库的速度印象深刻。§!\n\n去吧，你应得的。这笔财富里包含着许多血汗和泪水。别在一个地方花光了。"
+ grand_archive.8580.desc.2: "§H现在被称为§Y$NAME_CaptainNess$§!的机器对我们想要归还她辛苦赚来的宝藏感到不安。§!\n\n真是令人失望。所以某个第十五代继承人会得到他们祖先的旧首饰。好吧，希望你们能把剩下的东西用在更有价值的项目上。尽管你们最近干了些蠢事，但我相信你们会把这件事做好。"
+ grand_archive.8580.desc.3: "§H现在被称为§Y$NAME_CaptainNess$§!的机器得知我们要把她的全部积蓄都送出去，感到十分厌恶。§!\n\n这就是你的计划？免费送给所有人？他们做了什么值得得到这些？真是浪费！\n\n我对你原本抱有更高的期望……至少让我指挥一些你的舰队，让我可以再试一次曾经的海盗生涯。"
+ grand_archive.8580.desc.default: "§H现在的问题是该如何处理$NAME_CaptainNess$本人。作为一名经验丰富的舰船驾驶员，她经历过无数危险遭遇，将成为我们军队中优秀的指挥官。或者，她也可以在我们队伍中担任更具保障性的角色，培训下一代飞行员。§!"
+ grand_archive.8580.desc.no_lom: "§H或者我们也可以她关起来，以此向我们的公民表明，任何罪行都不会逍遥法外。她将有足够的时间反思自己的所作所为。§!"
+ grand_archive.8580.desc.gestalt: "§H唯一剩下的决定是关于$NAME_CaptainNess$本人。作为一名强大的独立思想者，她可以成为一名独特的指挥官，提供出敌不意的创意策略。或者，我们可以将她的丰富战斗经验融入我们的集体知识中，并利用它来进一步加深我们对战争的理解。\n\n或者我们也可以干脆将她囚禁起来，以表明在[this.GetName]中不容忍背叛和犯罪行为。§!"
+ grand_archive.8580.a: "我们可以让你担任一名舰队指战员。"
+ grand_archive.8580.a.tt: "获得一位等级10的§Y不朽舰队司令§!"
+ grand_archive.8580.b: "§Y我们将把你的知识融入我们的意识。§!"
+ grand_archive.8580.c: "§Y帮我们训练新驾驶员。§!"
+ grand_archive.8580.d: "§R你就把牢底坐穿吧。§!"
+
+ grand_archive.8585.desc: "就这样了？\n\n你只是把我抛弃了？\n\n真令人失望……我想我该走了。\n\n祝你好运，我想。"
+ grand_archive.8585.a: "我们不欠你任何东西。"
+
+ grand_archive.8590.desc: "你这个脑袋空空的傻屌！我给你整个世界，你却只给我一副新的镣铐？你不配得到我给你的东西！你甚至不配为我擦靴子！\n\n愿这[this.GetName]上留下一块黑斑，诅咒你们所有人！\n\n愿你们的[this.species.GetRemnantNamePlural]在虚空中枯萎，愿你们的名字被人遗忘。"
+ grand_archive.8590.a: "天网恢恢，疏而不漏。"
+
+ grand_archive.8595.name: "$NAME_CaptainNess$遭反激活"
+ grand_archive.8595.desc: "名为§Y$NAME_CaptainNess$§!的机器俘虏被发现在她的牢房里停机。我们相信她故意导致了电路的严重故障，关闭了关键系统，并从她转移的意识中删除了所有存储的数据。在她牢房的墙壁上发现了一条潦草的留言：\n\n§L与你同归于尽……§!"
+ grand_archive.8595.a: "该得的下场。"
+
+ grand_archive.8600.name: "彩虹的终结"
+ grand_archive.8600.desc.common: "现在是时候开创自己的命运了。没有星图可循，星辰将成为我们的指引。\n\n我们将取得什么成就？我们将如何被铭记？"
+ grand_archive.8600.desc.default: "这场冒险已经结束。寻找§H船长奈斯§!的宝藏的任务已经完成。\n\n$grand_archive.8600.desc.common$\n\n这才是[this.GetName]故事的真正开始。"
+ grand_archive.8600.desc.lom: "他们会怎样讲述这段冒险故事！我们发现了奈斯船长的隐藏宝藏，没有人能阻挡我们。\n\n$grand_archive.8600.desc.common$\n\n高高地挂起[this.GetName]的旗帜，现在我们的故事才真正开始！"
+ grand_archive.8600.a.default: "前进！"
+ grand_archive.8600.a.lom: "哟嚯嚯！"
+
+ valuable_insight: "有价值的洞见"
+ grand_archive.9960.name: "$tech_alien_cloning$"
+ grand_archive.9960.desc: "我们在[from.solar_system.GetName]成功捕获了第一批野生太空兽群，我们相信只要投入足够的科学资金，就可以克隆出更多这样的生物。"
+ grand_archive.9960.a: "$valuable_insight$"
+
+ grand_archive.9970.name: "变异潜力"
+ grand_archive.9970.desc: "在[from.solar_system.GetName]成功克隆出首例太空兽群。\n\n我们对异星生物学的深入研究表明，我们可以进一步增强这些生物的生理机能，如果我们选择这样做的话。这将使我们能够为生物舰队配备专门的战斗组件。"
+ grand_archive.9970.a: "$valuable_insight$"
+
+ opinion_return_traceable_items_tier_1: "银河慈善家"
+ opinion_return_traceable_items_tier_1_tt: "§G+$@opinion_return_traceable_items_tier_1_value|0$§!£opinion£所有未同我们交战的非灭绝政体帝国。"
+ opinion_return_traceable_items_tier_2: "$opinion_return_traceable_items_tier_1$"
+ opinion_return_traceable_items_tier_2_tt: "§G+$@opinion_return_traceable_items_tier_2_value|0$§!£opinion£所有未同我们交战的非灭绝政体帝国。"
+ wealth_distribute_favor_tier_1_tt: "获得每个帝国的§Y1§!个外交支持。"
+ wealth_distribute_favor_tier_2_tt: "获得每个帝国的§Y2§!个外交支持。"
+
+ leader_trait_pirate_queen: "海盗女王"
+ leader_trait_pirate_queen_desc: "多年的阴谋诡计和离奇冒险造就了一位从不空手而归的领袖。"
+ captain_ness_leader_desc: "古代海盗女王的意识在一个机械化的躯体中存续。她曾在许多星球播下宝藏。"
+ captain_ness_leader_catch_phrase: "让我们携手铸就经世美名。"
+
+ ###################
+ # Boarding events #
+ ###################
+ LEADER_EXECUTED: "$CLASS|H$$LEADER|Y$被立即处决。"
+
+ grand_archive.9005.name: "[fromfrom.GetName]被俘"
+ grand_archive.9005.desc: "我们的§H[fromfrom.GetClass]§!§Y[fromfrom.GetName]§!在[fromfromfrom.GetName]战斗中被[from.GetName]俘虏。他们要求支付赎金以交换[fromfrom.GetHisHer]的性命。"
+ grand_archive.9005.desc.second: "正如先前通报，我们的指挥官[fromfrom.GetName]被[from.GetName]俘虏，他们愿意接受支付赎金以换取[fromfrom.GetHisHer]的生命。"
+ grand_archive.9005.a: "支付赎金。"
+ grand_archive.9005.a.tt: "[fromfrom.GetName]将被释放并回归我们的队伍。"
+ grand_archive.9005.b: "我们将会考虑此事。"
+ grand_archive.9005.c: "我们一个子也不会给。"
+
+ grand_archive.9010.name: "走上不归路"
+ grand_archive.9010.desc: "由于[from.GetName]拒绝支付[fromfrom.GetHisHer]的赎金，敌军指挥官[fromfrom.GetName]仍被我们扣押。[fromfrom.GetHisHer]的命运将如何？"
+ grand_archive.9010.a: "公开处决。"
+ grand_archive.9010.b: "释放[this.GetHomeWorldName]的囚犯。"
+ grand_archive.9010.c: "继续保持监禁。"
+
+ MESSAGE_LEADER_CAPTURED_TITLE: "俘获敌方指挥官"
+ MESSAGE_LEADER_CAPTURED_DESC: "我们在战斗中俘获了一名敌军指挥官。我们已与$COUNTRY$联系，要求支付赎金以换取他们的安全返回。"
+ MESSAGE_LEADER_RANSOM_PAID_TITLE: "支付赎金"
+ MESSAGE_LEADER_RANSOM_PAID_DESC: "我们已收到[this.GetName]支付的赎金，以确保其指挥官[fromfrom.GetName]安全返回。"
+
+ alert_mia_ship_stolen_title: "敌军舰船被劫持"
+ alert_mia_ship_stolen_instant: "我们已经夺取了一艘敌舰。它现在正驶往我们的首都，很快就可以投入使用。"
+
+ DEBRIS_BIO_REPURPOSING_DESC: "$SYSTEM|Y$星系发生冲突后，太空兽群的残骸正在腐烂。我们可以从它们的残骸中回收$FLEET_SIZE$的生物物质。"
+
+ ###############
+ # Reanimators #
+ ###############
+ reanimator_effect_desc: "你控制的克隆有机体太空兽群可以被复活。"
+ FLEETORDER_REANIMATE_PROJECT_BUTTON: "复活太空兽群舰船"
+ MESSAGE_DEBRIS_REANIMATED_FINISH_MESSAGE_TYPE_TITLE: "太空兽群复活"
+ MESSAGE_DEBRIS_REANIMATED_FINISH: "$SYSTEM|Y$中的已故太空生物已复活，现在可以作为我们军队的组成部分，由我们进行控制。"
+ DEBRIS_REANIMATOR_DESC: "$SYSTEM|Y$星系发生冲突后，太空兽群的残骸正在腐烂。\n预计将有 $FLEET_SIZE$ 只生物被重新复活。"
+ REANIMATED_FLEET_VERY_SMALL: "极小型"
+ REANIMATED_FLEET_SMALL: "小型"
+ REANIMATED_FLEET_MODERATE: "中型"
+ REANIMATED_FLEET_LARGE: "大型"
+ REANIMATED_FLEET_VERY_LARGE: "极大型"
+ REANIMATED_FLEET_VAST: "巨型"
+ MOD_SPACE_FAUNA_REANIMATION_COST_MULT: "太空兽群复活花费"
+
+ concept_space_fauna_ship_component: "太空兽群舰船部件"
+ concept_space_fauna_ship_component_desc: "太空兽群舰船部件是通过研究关于各种太空兽群的特殊项目获得的。在作为太空兽群§H变异§!时，所有的增益也同样生效。例如但不限于以下部件：\n—§H$SPACE_WHALE_WEAPON_1$§!\n—§H$AMOEBA_STRIKE_CRAFT$§!"
+
+ MOD_ATTACHED_SPACE_FAUNA_COMPONENT_DAMAGE_MULT: "['concept_space_fauna_ship_component', 太空兽群舰船部件]伤害"
+ ATTACHED_SPACE_FAUNA_COMPONENT_TT_DMG_DECREASED: "$MOD_ATTACHED_SPACE_FAUNA_COMPONENT_DAMAGE_MULT$：§R-$VALUE|%0$§!"
+ ATTACHED_SPACE_FAUNA_COMPONENT_TT_DMG_INCREASED: "$MOD_ATTACHED_SPACE_FAUNA_COMPONENT_DAMAGE_MULT$：§G+$VALUE|%0$§!"
+ MOD_ATTACHED_SPACE_FAUNA_COMPONENT_FIRE_RATE_MULT: "['concept_space_fauna_ship_component', 太空兽群舰船部件]射速"
+ ATTACHED_SPACE_FAUNA_COMPONENT_TT_FIRE_RATE_DECREASED: "$MOD_ATTACHED_SPACE_FAUNA_COMPONENT_FIRE_RATE_MULT$：§R-$VALUE|%0$§!"
+ ATTACHED_SPACE_FAUNA_COMPONENT_TT_FIRE_RATE_INCREASED: "$MOD_ATTACHED_SPACE_FAUNA_COMPONENT_FIRE_RATE_MULT$：§G+$VALUE|%0$§!"
+
+#####################
+# Creature Designer #
+#####################
+ CREATURE_DESIGNER: "太空兽群"
+ PICK_CREATURE_SIZE: "选择生物尺寸"
+ CREATURE_DESIGN_RIGHT_CLICK_TO_CANCEL_MUTATION_PAINT: "§G右键点击移除选中变异§!"
+ CREATURE_MUTATIONS_FILTER_OBSOLETE: "隐藏被淘汰的变异"
+ CREATURE_MUTATIONS_FILTER_OBSOLETE_DESC: "切换是否隐藏已被更先进技术淘汰的变异。"
+ SELECT_MUTATION: "添加变异"
+ SELECT_MUTATION_DESC: "选择一个变异，将其放入可用的槽位。"
+ CREATURE_DESIGNER_MUTATION_IS_UNIQUE: "这个变异是§Y专有的§!，不能在同一款设计中应用多次。"
+ CREATURE_DESIGNER_ADD_ITEM_NOT_ALLOWED_UNIQUE_MUTATION: "§R一个生物体中不能同时存在多种这种变异。§!"
+
+ FEDERATION_VIEW_CREATURE_DESIGNER: "联邦太空兽群"
+ FEDERATION_VIEW_CREATURE_DESIGNER_BUTTON_DESC: "§G打开联邦舰队的§H太空兽群设计器§!§!！"
+ FEDERATION_VIEW_CREATURE_DESIGNER_BUTTON_PRESIDENT_NOT_OUR_LEADER: "§R我们不是联邦主席§!"
+ FEDERATION_VIEW_CREATURE_DESIGNER_BUTTON_CANNOT_USE_MUTATIONS: "§R仅限联邦领袖国才能设计太空兽群的突变。联邦中必须有一名成员拥有§Y人工繁育§!技术。§!"
+ FEDERATION_CREATURE_FLEET_DESC: "§H联邦舰队§!是联邦主席国控制的特殊舰队。它们在§H联邦$CREATURE_DESIGNER$§!中进行设计，在设计之中可以使用联邦各国最顶尖的科技。联邦舰队不需维护费用，但总量不能超过§H联邦军舰容量§!，每个成员至少贡献其自身§Y$PERC|0%$§!的§H军舰容量§!。如果太空兽群舰队规模超过§H联邦军舰容量§!，额外的生物将被分配给联邦主席国。"
+
+#############
+# Mutations #
+#############
+ MOD_COUNTRY_MUTATION_SLOTS_ADD: "可用变异槽"
+ feature_mutations: "太空兽群变异"
+ feature_mutations_desc: "太空兽群飞船可以配备定制组件，类似于设计合金制造的飞船。"
+ offensive_mutation_type: "进攻性变异"
+ defensive_mutation_type: "防御性变异"
+ aux_mutation_type: "特殊变异"
+ TECH_UNLOCK_MUTATION: "§H解锁变异：§!$NAME$"
+ OPEN_DESIGNER: "打开设计器"
+ UNIQUE_MUTATION_DUPLICATE: "§R$TRIGGER_FAIL$唯一突变不能应用多次$MUTATION$。§!"
+ tech_controlled_mutations_2_title: "§H解锁功能：§!特有变异"
+ tech_controlled_mutations_2_tooltip: "§H独特变异§!\n独特变异是强大的变异，只能应用一次，有时会限制在特定种类的太空兽群身上。通过克隆和狩猎可以发现更多独特的变异。"
+ mod_damage_random_nearby_enemy_on_death: "死亡时，对附近敌人造成一定比例的船体和护甲伤害。"
+ catalytic_bladder_reanimator_tt: "这种太空兽群尸体不能被复活。"
+
+ HAS_MAX_HIT_POINTS: "最大船体值$COMPARATOR$$NUM|Y$"
+ HAS_NOT_MAX_HIT_POINTS: "最大船体值不$COMPARATOR$$NUM|Y$"
+ HAS_MAX_ARMOR_HIT_POINTS: "最大装甲值$COMPARATOR$$NUM|Y$"
+ HAS_NOT_MAX_ARMOR_HIT_POINTS: "最大装甲值不$COMPARATOR$$NUM|Y$"
+
+ restorative_enzymes: "$RESTORATIVE_ENZYMES$"
+ restorative_enzymes_desc: "当此生物死亡时，舰队中随机抽选一只生物恢复其§Y$@unique_mutation_restorative_enzymes_gain|0%$§!的船体和护甲。"
+ mod_heal_random_fleet_creature_on_death: "死亡后，舰队中随机抽选一只生物会恢复一部分船体和护甲。"
+ tech_unique_mutation_restorative_enzymes: "$RESTORATIVE_ENZYMES$"
+ tech_unique_mutation_restorative_enzymes_desc: "$RESTORATIVE_ENZYMES_DESC$"
+
+ starborne_biology: "星养生理"
+ starborne_biology_desc: "深空中大型生物的主要能量来源是星光的力量。它们离明亮的恒星越近，发展速度就越快。"
+ STARBORNE_BIOLOGY_TOOLTIP: "用能量代替维护费\n\n在恒星轨道时的生长速度：§G+$@unique_mutation_starborne_growth_speed|0%$§!"
+ tech_unique_mutation_starborne_biology: "$starborne_biology$"
+ tech_unique_mutation_starborne_biology_desc: "$starborne_biology_desc$"
+
+ berserker_glands_modifier: "船体和装甲受到伤害会提高射速：§Y$@unique_mutation_berserker_glands_fire_rate|0%$§!，持续 $@unique_mutation_berserker_glands_days|0$ 天"
+ BERSERKER_GLANDS_TOOLTIP: "$berserker_glands_modifier$"
+
+ REPAIR_ARMOR_PERCENTAGE_EFFECT: "修复$VALUE|Y%$装甲"
+
+ space_amoeba_UNIQUE_MUTATION_PROJECT: "太空变形虫变异计划"
+ space_amoeba_UNIQUE_MUTATION_PROJECT_DESC: "在我们对新克隆生物进行训练的过程中，一只受伤的太空变形虫使用了一种新技术击败了对手。变形虫的鞭毛能够从训练伙伴的天然防御中吸取营养和物质，用它们来修补自身盔甲上的漏洞，并恢复战斗力。\n\n对这种现象的进一步研究可能会揭示太空变形虫生物学的一个新元素，可以对其进行增强，从而开发出一种新的物种特异性突变。"
+ tiyanki_UNIQUE_MUTATION_PROJECT: "天凯变异计划"
+ tiyanki_UNIQUE_MUTATION_PROJECT_DESC: "最近克隆的一支天凯舰队被观察到正在进行交流，反复发出复杂的叫声。这些几乎无法察觉的声音似乎给附近的所有其他生物带来了安慰和平静。\n\n对这种现象的进一步研究可能会揭示天凯生物学的一个新元素，可以增强该元素以开发出特定物种的突变。"
+ voidworm_UNIQUE_MUTATION_PROJECT: "虚空虫变异计划"
+ voidworm_UNIQUE_MUTATION_PROJECT_DESC: "我们注意到一些虚空虫在成熟时会形成小的囊肿状生长物。进一步观察表明，带有这些难看水泡的样本通常比它们的同类更具繁殖力。\n\n对这种现象的进一步研究可能会揭示虚空虫生物学的一个新元素，可以增强该元素以开发出特定物种的突变。"
+ cutholoid_UNIQUE_MUTATION_PROJECT: "岩居兽变异计划"
+ cutholoid_UNIQUE_MUTATION_PROJECT_DESC: "由于过度投喂，我们记录到了一只克隆岩居兽发生了剧烈的呕吐。从其胃部喷出的消化液作为浓缩抛射体非常致命，即使在离开该生物的躯体很长时间后还保有放射性。\n\n对这一现象的进一步研究揭示了岩居兽的生理学中有一种新的元素可以用来增强物种特有变异过程。"
+ crystalline_entity_UNIQUE_MUTATION_PROJECT: "晶态实体变异计划"
+ crystalline_entity_UNIQUE_MUTATION_PROJECT_DESC: "在战斗测试中，一些我们的晶体实体在被摧毁后完美地分裂成两半。这些碎片保持着重要的生命迹象，并继续存活了一段时间。"
+ tiyanki_matriarch_UNIQUE_MUTATION_PROJECT: "$NAME_Elderly_Tiyanki$变异计划"
+ tiyanki_matriarch_UNIQUE_MUTATION_PROJECT_DESC: "我们从$NAME_Elderly_Tiyanki$身上提取的遗传物质为我们提供了一些独特的见解，这将使我们能够进行一项实验性突变项目，该项目可以应用于任何太空兽群。"
+ voidspawn_UNIQUE_MUTATION_PROJECT: "虚空孳孽变异计划"
+ voidspawn_UNIQUE_MUTATION_PROJECT_DESC: "我们从$NAME_Voidspawn$身上提取的遗传物质为我们提供了一些独特的见解，这将使我们能够进行一项实验性突变项目，该项目可以应用于任何太空兽群。"
+
+ unique_mutation_project_unlock_desc: "我们对[From.GetShipCategoryName]的克隆工作取得了基因突破。将这些生物独特的解剖结构与我们在基因操控方面的专业知识结合起来，或许可以创造出一种独特的变异体。"
+ grand_archive.10005.name: "$space_amoeba_UNIQUE_MUTATION_PROJECT$"
+ grand_archive.10005.desc: "$unique_mutation_project_unlock_desc$"
+ grand_archive.10006.name: "$tiyanki_UNIQUE_MUTATION_PROJECT$"
+ grand_archive.10006.desc: "$unique_mutation_project_unlock_desc$"
+ grand_archive.10007.name: "$voidworm_UNIQUE_MUTATION_PROJECT$"
+ grand_archive.10007.desc: "$unique_mutation_project_unlock_desc$"
+ grand_archive.10008.name: "$cutholoid_UNIQUE_MUTATION_PROJECT$"
+ grand_archive.10008.desc: "$unique_mutation_project_unlock_desc$"
+
+ grand_archive.10010.name: "太空变形虫变异计划完成"
+ grand_archive.10010.desc: "我们关于§Y空间变形虫§!的变异实验完成了，得到了一些有趣的新细胞器：可部署的§Y$tech_unique_mutation_space_amoeba$§!。\n\n这些共生生物能够从附近物体中汲取能量并将其返还给宿主，从而增强生存能力和再生能力。"
+ grand_archive.10015.name: "天凯变异计划完成"
+ grand_archive.10015.desc: "我们对§Y天凯§!的变异实验完成了，得到了一个有趣的结果：§Y$tech_unique_mutation_tiyanki$§!\n\n我们已经将这些生物在它们群体中用于交流的自然振动放大到可持续的最大水平。这将产生一个可控的场，增强附近其他生物的组织。"
+ grand_archive.10020.name: "虚空虫变异计划完成"
+ grand_archive.10020.desc: "我们对§Y虚空虫§!的变异实验完成了，得到了一些有趣的繁殖周期变异：§Y$tech_unique_mutation_voidworm$§!\n\n我们已经能够提高这些生物用来轰炸宿主星球的寄生囊肿的繁殖能力。结果是产生的若虫产量增加。"
+ grand_archive.10025.name: "岩居兽变异计划完成"
+ grand_archive.10025.desc: "我们对§Y岩居兽§!的变异实验完成了，得到了一个有趣的结果：§Y$tech_unique_mutation_cutholoid$§!\n\n我们已经找到方法能将其巨大消化系统改造为发射高初速长射程弹药的武器。 不幸的是，这一显著的生物学改造会导致它们无法再吞噬敌方舰船了。"
+ grand_archive.10030.name: "晶态实体变异计划完成"
+ grand_archive.10030.desc: "我们关于§Y晶态实体§!的变异实验完成了，得到了一些有趣的结果：§Y$tech_unique_mutation_crystalline_entity$§!\n\n通过对它们晶体基因的这种修改，每个生物在遭受严重创伤时能够分裂成两个独立的个体。这将极大地提高它们的战斗能力。"
+ grand_archive.10030.a: "$FASCINATING$"
+
+ leviathan_unique_mutation_project_unlock_name: "[FromFromFrom.GetShipSizeName]变异计划"
+ leviathan_unique_mutation_project_unlock_desc: "我们已经从[FromFromFrom.GetShipSizeName]所在的[FromFrom.solar_system.GetName]星系中获得了该生物的遗传物质。\n\n虽然我们目前无法克隆这种生物，但我们仍然可以从其独特的生物学特性中提取宝贵的见解。"
+ grand_archive.10055.name: "$leviathan_unique_mutation_project_unlock_name$"
+ grand_archive.10055.desc: "$leviathan_unique_mutation_project_unlock_desc$"
+ grand_archive.10060.name: "族母变异计划完成"
+ grand_archive.10060.desc: "我们使用$NAME_Elderly_Tiyanki$的遗传物质进行的变异实验完成了，得到了一些有趣的结果：§H$restorative_enzymes$§!\n\n族母遗传物质中存在的修复酶可以在其他生物的类似腺体中复制。这将它们的结构组织转化为再生材料，在爆炸时紧密编队中会非常有用。"
+ grand_archive.10075.name: "$leviathan_unique_mutation_project_unlock_name$"
+ grand_archive.10075.desc: "$leviathan_unique_mutation_project_unlock_desc$"
+ grand_archive.10080.name: "虚空孳孽变异计划完成"
+ grand_archive.10080.desc: "我们使用$NAME_Voidspawn$基因材料进行的变异实验完成了，得到了一个有趣的发现：§H$starborne_biology$§!\n\n这些生物的组织对星光反应强烈，可以被鼓励在其他生物体中生长。这需要少量能量来维持，但在最亮的恒星附近，它们的生长速度会大幅提高。"
+
+ tech_unique_mutation_space_amoeba: "$LEECHCRAFT$"
+ tech_unique_mutation_space_amoeba_desc: "$LEECHCRAFT_DESC$"
+ tech_unique_mutation_tiyanki: "$HERDSONG_CHORDS$"
+ tech_unique_mutation_tiyanki_desc: "$HERDSONG_CHORDS_DESC$"
+ tech_unique_mutation_voidworm: "$VIRULENT_CYSTS$"
+ tech_unique_mutation_voidworm_desc: "$VIRULENT_CYSTS_DESC$"
+ tech_unique_mutation_cutholoid: "$GASTRIC_FOUNTAIN$"
+ tech_unique_mutation_cutholoid_desc: "$GASTRIC_FOUNTAIN_DESC$"
+ tech_unique_mutation_crystalline_entity: "$FISSILE_CORES$"
+ tech_unique_mutation_crystalline_entity_desc: "$FISSILE_CORES_DESC$"
+ engulf_MUTATION_DISABLE_TOOLTIP: "§R移除吞噬小型舰船的能力§!"
+
+##########################################
+# Ship Components - Space Fauna versions #
+##########################################
+ BIO_DRIVE_2: "刻印破点记忆"
+ BIO_DRIVE_3: "滑流感知视界"
+ BIO_DRIVE_4: "异次元内耳"
+ BIO_DRIVE_5: "心灵强化生物驱动器"
+
+ BIO_SENSORS_2: "重力调制感知器官"
+ BIO_SENSORS_3: "子空间监测感知器官"
+ BIO_SENSORS_4: "光子接收感知器官"
+
+ thruster_components_bio: "$thruster_components$"
+ thruster_components_bio_DESC: "$thruster_components_DESC$"
+
+ BIO_PROPULSION_1_CORVETTE: "生物推进器"
+ BIO_PROPULSION_1_DESTROYER: "$BIO_PROPULSION_1_CORVETTE$"
+ BIO_PROPULSION_1_CRUISER: "$BIO_PROPULSION_1_CORVETTE$"
+ BIO_PROPULSION_1_BATTLESHIP: "$BIO_PROPULSION_1_CORVETTE$"
+ BIO_PROPULSION_1_TITAN: "$BIO_PROPULSION_1_CORVETTE$"
+
+ BIO_PROPULSION_2_CORVETTE: "离子基生物推进器"
+ BIO_PROPULSION_2_DESTROYER: "$BIO_PROPULSION_2_CORVETTE$"
+ BIO_PROPULSION_2_CRUISER: "$BIO_PROPULSION_2_CORVETTE$"
+ BIO_PROPULSION_2_BATTLESHIP: "$BIO_PROPULSION_2_CORVETTE$"
+ BIO_PROPULSION_2_TITAN: "$BIO_PROPULSION_2_CORVETTE$"
+
+ BIO_PROPULSION_3_CORVETTE: "等离子生物推进器"
+ BIO_PROPULSION_3_DESTROYER: "$BIO_PROPULSION_3_CORVETTE$"
+ BIO_PROPULSION_3_CRUISER: "$BIO_PROPULSION_3_CORVETTE$"
+ BIO_PROPULSION_3_BATTLESHIP: "$BIO_PROPULSION_3_CORVETTE$"
+ BIO_PROPULSION_3_TITAN: "$BIO_PROPULSION_3_CORVETTE$"
+
+ BIO_PROPULSION_4_CORVETTE: "脉冲生物推进器"
+ BIO_PROPULSION_4_DESTROYER: "$BIO_PROPULSION_4_CORVETTE$"
+ BIO_PROPULSION_4_CRUISER: "$BIO_PROPULSION_4_CORVETTE$"
+ BIO_PROPULSION_4_BATTLESHIP: "$BIO_PROPULSION_4_CORVETTE$"
+ BIO_PROPULSION_4_TITAN: "$BIO_PROPULSION_4_CORVETTE$"
+
+ BIO_PROPULSION_5_CORVETTE: "物理扭曲生物推进器"
+ BIO_PROPULSION_5_DESTROYER: "$BIO_PROPULSION_5_CORVETTE$"
+ BIO_PROPULSION_5_CRUISER: "$BIO_PROPULSION_5_CORVETTE$"
+ BIO_PROPULSION_5_BATTLESHIP: "$BIO_PROPULSION_5_CORVETTE$"
+ BIO_PROPULSION_5_TITAN: "$BIO_PROPULSION_5_CORVETTE$"
+
+ NEUROCHIPS: "神经芯片"
+ neurochips: "$NEUROCHIPS$"
+ neurochips_DESC: "神经芯片可以植入太空兽群的神经系统，以影响它们在舰队战斗中的行为。"
+ ADVANCED_NEUROCHIPS: "先进神经芯片"
+ SAPIENT_NEUROCHIPS: "智性神经芯片"
+ AUTONOMOUS_NEUROCHIPS: "自律神经芯片"
+ PRECOG_NEUROCHIPS: "预知接口"
+ NEUROCHIPS_SWARM_DEFAULT: "基础$NEUROCHIPS$"
+ NEUROCHIPS_SWARM_BASIC: "$NEUROCHIPS$（蜂拥）"
+ NEUROCHIPS_SWARM_ADVANCED: "$ADVANCED_NEUROCHIPS$（蜂拥）"
+ NEUROCHIPS_SWARM_SAPIENT: "$SAPIENT_NEUROCHIPS$（蜂拥）"
+ NEUROCHIPS_SWARM_AUTONOMOUS: "$AUTONOMOUS_NEUROCHIPS$（蜂拥）"
+ NEUROCHIPS_SWARM_PRECOG: "$PRECOG_NEUROCHIPS$（蜂拥）"
+ NEUROCHIPS_TORPEDO_BASIC: "$NEUROCHIPS$（雷击）"
+ NEUROCHIPS_TORPEDO_ADVANCED: "$ADVANCED_NEUROCHIPS$（雷击）"
+ NEUROCHIPS_TORPEDO_SAPIENT: "$SAPIENT_NEUROCHIPS$（雷击）"
+ NEUROCHIPS_TORPEDO_AUTONOMOUS: "$AUTONOMOUS_NEUROCHIPS$（雷击）"
+ NEUROCHIPS_TORPEDO_PRECOG: "$PRECOG_NEUROCHIPS$（雷击）"
+ NEUROCHIPS_PICKET_BASIC: "$NEUROCHIPS$（哨戒）"
+ NEUROCHIPS_PICKET_ADVANCED: "$ADVANCED_NEUROCHIPS$（哨戒）"
+ NEUROCHIPS_PICKET_SAPIENT: "$SAPIENT_NEUROCHIPS$（哨戒）"
+ NEUROCHIPS_PICKET_AUTONOMOUS: "$AUTONOMOUS_NEUROCHIPS$（哨戒）"
+ NEUROCHIPS_PICKET_PRECOG: "$PRECOG_NEUROCHIPS$（哨戒）"
+ NEUROCHIPS_LINE_BASIC: "$NEUROCHIPS$（线列）"
+ NEUROCHIPS_LINE_ADVANCED: "$ADVANCED_NEUROCHIPS$（线列）"
+ NEUROCHIPS_LINE_SAPIENT: "$SAPIENT_NEUROCHIPS$（线列）"
+ NEUROCHIPS_LINE_AUTONOMOUS: "$AUTONOMOUS_NEUROCHIPS$（线列）"
+ NEUROCHIPS_LINE_PRECOG: "$PRECOG_NEUROCHIPS$（线列）"
+ NEUROCHIPS_ARTILLERY_BASIC: "$NEUROCHIPS$（炮击）"
+ NEUROCHIPS_ARTILLERY_ADVANCED: "$ADVANCED_NEUROCHIPS$（炮击）"
+ NEUROCHIPS_ARTILLERY_SAPIENT: "$SAPIENT_NEUROCHIPS$（炮击）"
+ NEUROCHIPS_ARTILLERY_AUTONOMOUS: "$AUTONOMOUS_NEUROCHIPS$（炮击）"
+ NEUROCHIPS_ARTILLERY_PRECOG: "$PRECOG_NEUROCHIPS$（炮击）"
+ NEUROCHIPS_CARRIER_BASIC: "$NEUROCHIPS$（航母）"
+ NEUROCHIPS_CARRIER_ADVANCED: "$ADVANCED_NEUROCHIPS$（航母）"
+ NEUROCHIPS_CARRIER_SAPIENT: "$SAPIENT_NEUROCHIPS$（航母）"
+ NEUROCHIPS_CARRIER_AUTONOMOUS: "$AUTONOMOUS_NEUROCHIPS$（航母）"
+ NEUROCHIPS_CARRIER_PRECOG: "$PRECOG_NEUROCHIPS$（航母）"
+
+ SPACE_AMOEBA_WEAPON: "$SMALL_SPACE_AMOEBA_WEAPON$"
+ AMOEBA_STRIKE_CRAFT_1_BIO: "$AMOEBA_STRIKE_CRAFT_1$"
+ AMOEBA_STRIKE_CRAFT_BIO: "$AMOEBA_STRIKE_CRAFT$"
+
+ tech_thrusters_bio_integration: "推进器生物整合"
+ tech_thrusters_bio_integration_desc: "人工推进器可以整合到太空生物中，前提是要考虑能量供应和与神经运动中心的连接。"
+ tech_thrusters_bio_integration_effect: "§H解锁功能：§! 太空兽群推进器升级"
+ tech_hyper_drive_bio_integration: "超光速生物整合"
+ tech_hyper_drive_bio_integration_desc: "穿越超空间航道对星际生命来说可能很危险，但我们能够增强它们的生存能力。"
+ tech_hyper_drive_bio_integration_effect: "§H解锁功能：§! 太空兽群超空间引擎升级"
+ tech_sensors_bio_integration: "传感器生物整合"
+ tech_sensors_bio_integration_desc: "利用我们已开发的技术可以增强太空生物的多样感官器官，而对生物体造成的伤害最小。"
+ tech_sensors_bio_integration_effect: "§H解锁供能：§!太空兽群传感器升级"
+ tech_combat_computers_bio_integration: "战斗计算机生物整合"
+ tech_combat_computers_bio_integration_desc: "我们可以开发专门的神经芯片，来影响参与大规模舰队战斗的太空兽群的行为。"
+ tech_combat_computers_bio_integration_effect: "§H解锁功能：§!太空兽群战斗计算机升级"
+
+ PREFERRED_HABITAT: "§S首选栖息地：§!$HABITAT$$TABBED_NEW_LINE$生物在其首选栖息地中，维护费用降低 50%。"
+ NEBULA: "星云"
+
+ BREEDING_STATUS: "繁殖状态："
+ CRITTER_BREEDING_STATUS_LACKING_MATURITY: "$BREEDING_STATUS$§g尚未成熟§!"
+ CRITTER_BREEDING_STATUS_ELIGIBLE: "$BREEDING_STATUS$§G符合条件§!"
+ CRITTER_BREEDING_STATUS_COOLDOWN: "$BREEDING_STATUS$£time£$MONTHS$月"
+ CRITTER_BREEDING_STATUS_NO_MATE: "$BREEDING_STATUS$§R需要配偶§!"
+
+ NAME_Tiyanki_Ox_Clonable: "$NAME_Tiyanki_Ox$"
+
+ ###########################
+ # Space Fauna Description #
+ ###########################
+ space_amoeba_desc: "太空变形虫是孤独的掠食者，对遇到的任何东西都具有攻击性。它们依靠被称为“鞭毛”的半成形后代，擅长追捕猎物。"
+ tiyanki_desc: "天凯，也被称为“太空鲸”，通常是温顺的生物，以大气气体为食。这些生物极具协作性，野生群体在严格的等级制度下组织。"
+ voidworm_desc: "虚空虫是一种寄生生物，为了繁殖，必须将其孢子降落到有适量生物质的居住世界。成熟的个体会形成被称为“三头虫”的形态，并在黑洞附近建造巢穴来庇护和抚养幼虫。"
+ cutholoid_desc: "岩居兽是一种居住在小行星内巨型有机体，它们利用外壳来保护柔软的身体。该生物会将猎物整个生吞，用放射性的消化液来慢慢消化。"
+ crystalline_entity_desc: "晶态实体是一种独特的硅酸盐生命体，能够在太空中自由移动。每个实体的颜色并非由年龄决定，而是反映了它们潜在的内部电荷。"
+
+ wild_tiyanki_ox_modifier: "野生雄性天凯"
+ fauna_disengagement_modifier: "太空兽群脱离战斗"

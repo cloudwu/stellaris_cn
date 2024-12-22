@@ -8,7 +8,7 @@
  i_consumer_goods: "£consumer_goods£ §I$consumer_goods$§!"
  i_unity: "£unity£ §I$unity$§!"
  i_influence: "£influence£ §I$influence$§!"
- i_research: "£physics£ £society£ £engineering£§I研究点数§!"
+ i_research: "£physics£ £society£ £engineering£ §I研究点数§!"
  i_physics: "£physics£ §I$physics_research$§!"
  i_society: "£society£ §I$society_research$§!"
  i_engineering: "£engineering£ §I$engineering_research$§!"
@@ -388,7 +388,7 @@
  concept_leader_trait_legendary_leader_desc: "$THIS_LEADER_TXT$：$TABBED_NEW_LINE$—$MOD_LEADER_LIFESPAN_ADD$：§G+40§!$TABBED_NEW_LINE$—初始领袖等级：§G+3§!$TABBED_NEW_LINE$—允许选择独特的§I光耀者的初始特质§!\n\n$EMPIRE_EFFECTS_TXT$$TABBED_NEW_LINE$—$MOD_PLANET_STABILITY_ADD$：§G+1.5§!$TABBED_NEW_LINE$—$mod_planet_jobs_unity_produces_mult$：§G+3%§!\n\n§G随着时间的推移，光耀者的力量在增长。§!\n\n§L统一战争是一场残酷的战争。最后，光耀者给我们带来了和平和目标。“光耀者”是我们物种所能实现的成就的生动象征，也是对大家的激励。§!"
 
  concept_perfected_genes: "$trait_perfected_genes$"
- concept_perfected_genes_desc: "—$MOD_LEADER_LIFESPAN_ADD$：§G+25§!\n—$MOD_LEADER_SPECIES_EXP_GAIN$：§R-15%§!\n\n§L$trait_perfected_genes_desc$§!"
+ concept_perfected_genes_desc: "—$MOD_LEADER_LIFESPAN_ADD$：§G+25§!\n—$MOD_LEADER_SPECIES_EXP_GAIN$：§R-20%§!\n\n§L$trait_perfected_genes_desc$§!"
 
 ##
 
@@ -566,3 +566,65 @@
 
  concept_cloaking_1: "$tech_cloaking_1$"
  concept_cloaking_1_desc: "—§I$UNLOCKS_FEATURE$§!主动侦查$NEW_LINE$—§I$UNLOCKS_COMPONENT$§!$CLOAKING_1$\n\n§L$tech_cloaking_1_desc$§!"
+
+# Cosmic Storms
+
+ concept_storm_rider: "风暴骑士"
+ concept_storm_rider_desc: "这些蛮勇的领袖以迎接一场宇宙风暴般度过一生！他们勇敢无畏，不过在担任内阁职位时能力却略显不足。"
+
+
+# Primal Calling
+ concept_untamed_wilds_mod: "$untamed_wilds$"
+ concept_untamed_wilds_mod_desc: "—$MOD_PLANET_MAX_DISTRICTS_ADD$：§R$@untamed_wilds_districts|0$§!\n—$mod_planet_jobs_unity_produces_mult$：§G+15%§!\n—['concept_ethic_based_jobs']：§G+1§!$TABBED_NEW_LINE$\t-每20$pops_with_icon$：§G+1§!\n\n§L$untamed_wilds_desc$§!"
+
+ concept_ethic_based_jobs: "放牧人岗位"
+ concept_ethic_based_jobs_desc: "这些岗位依据帝国对太空兽群的态度产生。$TABBED_NEW_LINE$—['concept_wrangler', £job_wrangler£ $job_wrangler$]$TABBED_NEW_LINE$—['concept_rancher', £job_rancher£ $job_rancher$]$TABBED_NEW_LINE$—['concept_trophy_hunter', £job_trophy_hunter£ $job_trophy_hunter$]$TABBED_NEW_LINE$—['concept_animal_handler', £job_animal_handler£ $job_animal_handler$]$TABBED_NEW_LINE$—['concept_beastfighter', £job_beastfighter£ $job_beastfighter$]"
+
+ concept_voidlure: "虚空诱饵"
+ concept_voidlure_desc: "$sm_voidlure_desc$"
+
+ concept_primal_calling_stance: "姿态"
+ concept_primal_calling_stance_desc: "基于此思潮，选取['concept_wrangler_stance']、['concept_rancher_stance']、['concept_animal_handler_stance']、['concept_trophy_hunter_stance']或等价格式塔姿态['concept_wild_consciousness_stance']、['concept_symbiotic_partnership_stance']或['concept_hunter_killers_stance']。"
+
+ concept_wrangler_stance: "放牧人"
+ concept_wrangler_stance_desc: "—['concept_wrangler',$job_wrangler_plural_with_icon$]保持不变\n—$GET_UNIQUE_EDICT$，['edict:space_fauna_exhibition']\n —获得['modifier:primal_calling_exhibit_modifier']修正"
+ concept_rancher_stance: "牧场主"
+ concept_rancher_stance_desc: "—['concept_wrangler',$job_wrangler_plural_with_icon$]变为['concept_rancher',$job_rancher_plural_with_icon$]\n—$GET_UNIQUE_EDICT$，['edict:beasts_burden']\n —获得['modifier:primal_calling_exploit_modifier']修正"
+ concept_animal_handler_stance: "动物管理员"
+ concept_animal_handler_stance_desc: "—['concept_wrangler',$job_wrangler_plural_with_icon$]变为['concept_animal_handler',$job_animal_handler_plural_with_icon$]\n—['concept_wildlife_ranch']变为['concept_wildlife_sanctuary']\n—$GET_UNIQUE_EDICT$，['edict:creature_welfare']\n —获得['modifier:primal_calling_shelter_modifier']修正"
+ concept_trophy_hunter_stance: "战利品猎人"
+ concept_trophy_hunter_stance_desc: "—['concept_wrangler',$job_wrangler_plural_with_icon$]变为['concept_trophy_hunter',$job_trophy_hunter_plural_with_icon$]\n—['concept_wildlife_ranch']变为['concept_hunting_grounds']\n—$GET_UNIQUE_EDICT$、['edict:crack_the_whip']\n —获得['modifier:primal_calling_hunt_modifier']修正"
+ concept_wild_consciousness_stance: "荒野意识"
+ concept_wild_consciousness_stance_desc: "—['concept_drone_wrangler',$job_drone_wrangler_plural_with_icon$]保持不变\n—$GET_UNIQUE_EDICT$，['edict:exotic_network']\n —获得['modifier:primal_calling_assimilate_modifier']修正"
+ concept_symbiotic_partnership_stance: "共生伙伴"
+ concept_symbiotic_partnership_stance_desc: "—['concept_drone_wrangler',$job_drone_wrangler_plural_with_icon$]变为['concept_symbiosis_integrator',$job_symbiosis_integrator_plural_with_icon$]\n—['concept_wildlife_ranch']变为['concept_symbiosis_nexus']\n—$GET_UNIQUE_EDICT$，['edict:defensive_instincts']\n —获得['modifier:primal_calling_symbiosis_modifier']修正"
+ concept_hunter_killers_stance: "猎人杀手"
+ concept_hunter_killers_stance_desc: "—['concept_drone_wrangler',$job_drone_wrangler_plural_with_icon$]变为['concept_hunter_drone',$job_hunter_drone_plural_with_icon$]\n—['concept_wildlife_ranch']变为['concept_hunting_grounds']\n—$GET_UNIQUE_EDICT$。['edict:biological_overdrive']\n —获得['modifier:primal_calling_feed_modifier']修正"
+
+ concept_wildlife_ranch: "$wildlife_ranch$"
+ concept_wildlife_ranch_desc: "['concept_wrangler',$job_wrangler_plural_with_icon$ Jobs]：§G+2§!\n\n可被升级。\n\n§L$wildlife_ranch_desc$§!"
+ concept_hunting_grounds: "$hunting_grounds$"
+ concept_hunting_grounds_desc: "['concept_trophy_hunter',$job_trophy_hunter_plural_with_icon$]：§G+2§!\n\n可被升级。"
+ concept_wildlife_sanctuary: "$wildlife_sanctuary$"
+ concept_wildlife_sanctuary_desc: "['concept_animal_handler',$job_animal_handler_plural_with_icon$]：§G+2§!\n\n可被升级。"
+ concept_symbiosis_nexus: "$symbiosis_nexus$"
+ concept_symbiosis_nexus_desc: "['concept_symbiosis_integrator',$job_symbiosis_integrator_plural_with_icon$]：§G+2§!\n\n可被升级。"
+
+# Treasure Hunters
+ concept_adventurous_spirit_trait: "$leader_trait_adventurous_spirit$"
+ concept_adventurous_spirit_trait_desc: "$leader_trait_adventurous_spirit_3_tt$\n\n§L$leader_trait_adventurous_spirit_desc$§!"
+
+# Galactic Curators
+ concept_megastructure_grand_archive: "$grand_archive$"
+ concept_megastructure_grand_archive_desc: "—可以展示获得的['concept_specimen',样本]。\n—生态园容量：§G+$@grand_archive_vivarium_capacity$§!\n\n§L博物天枢可以保存及展示我们在整个银河中收集而来的最具有价值的文物。其中也预留了专门的生态园用于容纳、观察活体太空兽群。§!"
+
+# Beastmasters
+ concept_beastport: "$sm_beastport$"
+ concept_beastport_desc: "—替换['concept_hatchery']太空基地建筑\n—可以在使用$c_dna$克隆太空兽群之外建造民用舰船。"
+
+ concept_xeno_geology_holomuseum: "$xeno_geology_holomuseum$"
+ concept_xeno_geology_holomuseum_desc: "$xeno_geology_holomuseum_desc$"
+ concept_aesthetic_wonders_holomuseum: "$aesthetic_wonders_holomuseum$"
+ concept_aesthetic_wonders_holomuseum_desc: "$aesthetic_wonders_holomuseum_desc$"
+ concept_galactic_history_holomuseum: "$galactic_history_holomuseum$"
+ concept_galactic_history_holomuseum_desc: "$galactic_history_holomuseum_desc$"

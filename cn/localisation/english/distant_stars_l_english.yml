@@ -1,5 +1,9 @@
 ﻿l_english:
 
+ DISTANT_STARS_TITLE: "Distant Stars Story Pack" # Do not translate
+ DLC_DISTANT_STARS_RECOMMENDATION_DESC:1 "§S《遥远繁星》§!故事包为星系带来了更多奇异遭遇者的故事，以及虚空深处蛰伏的生物"
+ DLC_DISTANT_STARS_RECOMMENDATION_SCIENCE_REC:1 "我们推荐§S《遥远繁星》§!，因为你选定的部分设置与其以探索太空和科学发现为核心的机制和内容吻合。"
+
  AIANOM_LUMP_CAT:0 "轨道碎片"
  AIANOM_LUMP_CAT_desc:0 "传感器在环[Root.GetName]轨道上记录了可能有趣的实体。"
  AIANOM_MININGDEPO_CAT:0 "地表回应"
@@ -233,23 +237,14 @@
  distar.51.g:0 "$NAME_Blaze$。"
  distar.51.h:0 "$NAME_Nova$。"
  NAME_Bubbles:0 "泡泡"
- NAME_Bubbles_seed: "泡泡（£seed_pod£）"
  NAME_Nyx:0 "夜神"
- NAME_Nyx_seed: "司夜女神（£seed_pod£）"
  NAME_Renegade:0 "变节者"
- NAME_Renegade_seed: "叛逆（£seed_pod£）"
  NAME_Euka:0 "欧加" # TODO Euka
- NAME_Euka_seed: "爱慕（£seed_pod£）"
  NAME_Cyto:0 "细胞" # TODO Cyto
- NAME_Cyto_seed: "细胞（£seed_pod£）"
  NAME_Boomer:0 "轰隆" # TODO Boomer
- NAME_Boomer_seed: "布玛猫（£seed_pod£）"
  NAME_Bloomer: "绽放"
- NAME_Bloomer_seed: "绽放（£seed_pod£）"
  NAME_Blaze:0 "烈焰"# TODO Blaze
- NAME_Blaze_seed: "烈焰（£seed_pod£）"
  NAME_Nova:0 "新星"
- NAME_Nova_seed: "新星（£seed_pod£）"
  distar.51.more:0 "全都很糟糕。我们应该想一些更好的。"
  distar.52.name:0 "迷路的年幼变形虫"
  distar.52.desc:0 "研究人员报告在[From.From.GetName]附近发现的迷路的变形虫幼虫不再跟随我们的科研舰队。报告称，在跟随了几周后，这只幼虫使用某种生物超空间引擎进入了超空间航道。可能它认出了同类的领地或者信号。也许它只是厌倦了追逐我们的飞船。\n\n虽然我们的飞船按照指示抑制了研究幼虫的欲望，但被动扫描带来了有关这只生物生理的一些启示。"
@@ -270,21 +265,14 @@
  distar.55.g:0 "$NAME_Bluey$。"
  distar.55.h:0 "$NAME_Zeke$。"
  NAME_Blitz:0 "闪袭"
- NAME_Blitz_seed: "闪电（£seed_pod£）"
  NAME_Zero:0 "零点"
- NAME_Zero_seed: "洁萝（£seed_pod£）"
  NAME_Kos:0 "科斯" # TODO Kos
- NAME_Kos_seed: "科斯（£seed_pod£）"
  NAME_Deva:0 "梵天"
- NAME_Deva_seed: "歌姬（£seed_pod£）"
  NAME_Amemba:0 "阿美巴"
- NAME_Amemba_seed: "阿米巴（£seed_pod£）"
  NAME_Beauregarde:0 "保丽加" # TODO Beauregarde French beautiful gaze
- NAME_Beauregarde_seed: "博雷加德（£seed_pod£）"
  NAME_Bluey:0 "老蓝头" # TODO Old Bluey
- NAME_Bluey_seed: "老布鲁伊（£seed_pod£）"
  NAME_Zeke:0 "泽克" # TODO Zeke Derived from Hebrew yehezq'el (God strengthens).
- NAME_Zeke_seed: "齐科（£seed_pod£）"
+ seed_pod_fleet_suffix: "（£seed_pod£）"
  distar.56.desc:0 "我们已经拥有打破时空界限的能力，能够超光速航行。然而我们却无法为这只变形虫起名。\n\n这是我们的最后机会了。"
  distar.56.a:0 "$NAME_Storm$。"
  distar.56.b:0 "$NAME_Ghost$。"
@@ -1607,7 +1595,8 @@
  distar.3020.name:0 "被困的科学家"
  distar.3020.desc:2 "小行星[From.GetName]上的船骸来自一艘坠毁的科研船。科研船属于现在被困在那里的科学家[stranded_scientist_leader.GetName]。这位科学家自称来自于一个我们迄今未知的种族[stranded_scientist_species.GetName]。\n\n在船骸中，她设法联络到了我们负责指挥[Root.GetName]的科学官[Root.GetLeaderName]并请求救援。她解释说自己是由于导航传感器的故障而坠毁的，并已经被困在小行星上数年之久。\n\n她声称她的科学知识举世无双，极有价值。她之所以能够幸存就是这一点的明证。"
  distar.3020.a:0 "她可以加入我们的事业。"
- distar.3020.a.tooltip:0 "[stranded_scientist_leader.GetName]加入了[Root.Owner.GetName]，并会分享她的科技知识。"
+ distar.3020.a.tooltip:0 "§Y[stranded_scientist_leader.GetName]§!，一位6级$scientist_with_icon$，加入[Root.Owner.GetName]，并将分享其所掌握的科技知识。"
+ stranded_scientist_background: "§Y[Root.GetName]§!被发现搁浅于[Root.GetHomeWorldBiome]§Y[Root.GetBackgroundPlanet]§!"
  distar.3020.b:0 "不行。把她丢下。"
  distar.3020.b.tooltip:0 "[stranded_scientist_leader.GetName]被留下面对自己的命运。"
 

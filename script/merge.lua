@@ -1,7 +1,7 @@
 local filelist = require "filelist"
 
 local root = "../"
-_VERBOSE = true
+--_VERBOSE = true
 
 local list = filelist.filelist()
 
@@ -371,7 +371,7 @@ end
 local function output(data)
 	for _, filename in ipairs(list) do
 		gen(root .. "cn/localisation/english/" ,
-			root .. "3.13/english/" ,
+			root .. "3.14/english/" ,
 			filename, data)
 	end
 end

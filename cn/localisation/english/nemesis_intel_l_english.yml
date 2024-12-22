@@ -1138,7 +1138,7 @@
  first_contact_critters.105.desc:0 "我们与这支自称是§H[This.ContactCountry.GetRealName]§!的舰队陷入了僵局。 这个不寻常的来客对我们大部分的外交姿态置之不理，但我们可以推断它代表一个独立于银河系文明的中立实体。\n\n我们推测，若舰队有传统意义上的所有者，则需要采取非常措施才能接近他们。考虑到这一点，我们总结了目前的发现，供未来的[this.owner.GetScientistPlural]团队使用（如有必要）。" # though we use a country tag here, the value it returns could be e.g. 'Unscrupulous Salvagers' OR 'Modified Probe', i.e. not a true country
 
  further_fc_tiyanki_completed:0 "由于[This.ContactCountry.GetName]与太空巨鲸应属于同一个物种，因此我们与其的第一次接触也就此宣告成功。\n"
- further_fc_amoebas_completed:0 "由于[This.ContactCountry.GetName]与太空生物应属于同一个物种，因此我们与其的第一次接触也就此宣告成功。\n"
+ further_fc_amoebas_completed:1 "由于[This.ContactCountry.GetName]与太空生物应属于同一个物种，因此我们与其的第一次接触也就此宣告成功。\n"
  further_fc_crystals_completed:0 "由于[This.ContactCountry.GetName]是与[Root.ContactCountry.GetName]非常相似的晶态实体，因此我们与其的第一次接触也就此宣告成功。\n"
  further_fc_drones_completed:0 "由于[This.ContactCountry.GetName]与自动采矿无人机相似，因此我们与其的第一次接触也就此宣告成功。\n"
  further_fc_caravaneers_completed:0 "由于[This.ContactCountry.GetName]应为相似的太空行商，[Root.ContactCountry.GetSpeciesNamePlural]的一员，因此我们与其的第一次接触也就此宣告成功。\n"
@@ -1198,6 +1198,7 @@
  TRIGGER_IS_NOT_FEDERATION_FLEET:0 "不是联邦舰队"
  SET_POLICY_COOLDOWN:0 "$POLICY_GROUP|Y$政策将锁定$YEARS|Y$年。"
  SET_MIA_EFFECT:0 "$FLEET|Y$在任务中失踪并返回母星。"
+ SET_MIA_RETURN_DELAY_EFFECT: "$FLEET|Y$将于$DAYS|Y$天后从任务中失踪归来。"
  SET_STAR_CLASS_EFFECT:0 "恒星类别变更为$STAR_CLASS$。"
  DESTROY_AND_SPAWN_DEBRIS_EFFECT:0 "$DESTROYED|Y$被摧毁，$COUNTRY|Y$生成了一个残骸项目"
  SET_HOSTILE_EFFECT:0 "将$TARGET|Y$设置为§R敌对§!"

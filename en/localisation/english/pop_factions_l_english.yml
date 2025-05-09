@@ -109,6 +109,9 @@
  SUPREMACIST_OPPRESSIVE_SUBJUGATION_POLICY:0 "Oppressive Subjugation Policy"
  SUPREMACIST_NO_OPPRESSIVE_SUBJUGATION_POLICY:0 "$SUPREMACIST_OPPRESSIVE_SUBJUGATION_POLICY$"
  SUPREMACIST_NO_OPPRESSIVE_SUBJUGATION_POLICY_DESC:0 "Our subjects are here to serve us, and they should always know it. Showing leniency towards them will upset the [Root.GetName]."
+ SUPREMACIST_UNPLUGGED_CYBERIZE: "Embrace Our Machine Identity"
+ SUPREMACIST_UNPLUGGED_NOT_CYBERIZE: "$SUPREMACIST_UNPLUGGED_DECYBERIZE$"
+ SUPREMACIST_UNPLUGGED_CYBERIZE_DESC: "Refining and updating the cybernetics gifted to us by the Machine will reinvigorate our fearsome legacy, and so will please the [root.GetName]."
 
  # XENOISTS
  XENOIST_PASSIVE_STUDY:0 "Indirect Xenology"
@@ -174,6 +177,9 @@
  XENOIST_XENOLOGICAL_CONSERVATION:0 "Xeno Zoological Conservation"
  XENOIST_NO_XENOLOGICAL_CONSERVATION:0 "$XENOIST_XENOLOGICAL_CONSERVATION$"
  XENOIST_XENOLOGICAL_CONSERVATION_DESC:0 "Building an $building_xeno_zoo$ in the spirit of scientific study and preservation will please the [root.GetName]." # returns 'an Alien Zoo'
+ XENOIST_UNPLUGGED_DECYBERIZE: "Deny Our Machine Identity"
+ XENOIST_UNPLUGGED_NOT_DECYBERIZE: "$XENOIST_UNPLUGGED_DECYBERIZE$"
+ XENOIST_UNPLUGGED_DECYBERIZE_DESC: "Rejecting the cybernetics inflicted upon us by the Machine will give other empires less cause to fear us, and so will please the [root.GetName]."
 
 
  # IMPERIALISTS
@@ -231,6 +237,9 @@
  IMPERIALIST_FLEET_USAGE_LOW:0 "Low Naval Capacity Usage"
  IMPERIALIST_FLEET_USAGE_NOT_LOW:0 "$IMPERIALIST_FLEET_USAGE_LOW$"
  IMPERIALIST_FLEET_USAGE_LOW_DESC:0 "Maintaining a fleet well below our empire's capacity will significantly displease the [Root.GetName]."
+ IMPERIALIST_UNPLUGGED_CYBERIZE: "$SUPREMACIST_UNPLUGGED_CYBERIZE$"
+ IMPERIALIST_UNPLUGGED_NOT_CYBERIZE: "$SUPREMACIST_UNPLUGGED_NOT_CYBERIZE$"
+ IMPERIALIST_UNPLUGGED_CYBERIZE_DESC: "$SUPREMACIST_UNPLUGGED_CYBERIZE_DESC$"
 
  # ISOLATIONISTS
  ISOLATIONIST_PHILOSOPHY:0 "Stalwart Defense"
@@ -278,6 +287,9 @@
  ISOLATIONIST_REPEAL_PROACTIVE_FIRST_CONTACT_POLICY:0 "Proactive First Contact Protocols"
  ISOLATIONIST_NO_PROACTIVE_FIRST_CONTACT_POLICY:0 "$ISOLATIONIST_REPEAL_PROACTIVE_FIRST_CONTACT_POLICY$"
  ISOLATIONIST_REPEAL_PROACTIVE_FIRST_CONTACT_POLICY_DESC:0 "The [Root.GetName] do not consider it appropriate to broadcast information about ourselves across the stars to anyone who may be listening."
+ ISOLATIONIST_UNPLUGGED_DECYBERIZE: "Deny Machine Oppression"
+ ISOLATIONIST_UNPLUGGED_NOT_DECYBERIZE: "$ISOLATIONIST_UNPLUGGED_NOT_DECYBERIZE$"
+ ISOLATIONIST_UNPLUGGED_DECYBERIZE_DESC: "Rejecting and removing cybernetic augments in order to reclaim our biological and political sovereignty will please the [root.GetName]."
 
  # TRADITIONALISTS
  TRADITIONALIST_NO_ROBOTS:0 "Life Organic"
@@ -349,6 +361,9 @@
  TRADITIONALIST_ELEVATED_CREED: "Elevated [Root.Owner.GetCyberCreed]"
  TRADITIONALIST_NO_CREED: "Lack of Creed"
  TRADITIONALIST_ELEVATED_CREED_DESC: "[Root.GetCyberCreed] are pleased by us fully embracing their teachings."
+ TRADITIONALIST_UNPLUGGED_DECYBERIZE: "Organic Identity"
+ TRADITIONALIST_UNPLUGGED_NOT_DECYBERIZE: "$TRADITIONALIST_UNPLUGGED_DECYBERIZE$"
+ TRADITIONALIST_UNPLUGGED_DECYBERIZE_DESC: "Rejecting and removing cybernetic augments in order to reclaim our biological legacy will please the [root.GetName]."
 
  # TECHNOLOGISTS
  TECHNOLOGIST_ROBOTS:0 "Machine Love"
@@ -384,6 +399,9 @@
  TECHNOLOGIST_FEDERATION_ANTI:0 "$spiritualist_federation$"
  TECHNOLOGIST_FEDERATION_ANTI_NOT_SPIRITUALIST:0 "$spiritualist_federation$"
  TECHNOLOGIST_FEDERATION_ANTI_DESC:0 "Being a member of a $spiritualist_federation$ will displease the [Root.GetName]."
+ TECHNOLOGIST_UNPLUGGED_CYBERIZE: "Cyborg Identity"
+ TECHNOLOGIST_UNPLUGGED_NOT_CYBERIZE: "$TECHNOLOGIST_UNPLUGGED_CYBERIZE$"
+ TECHNOLOGIST_UNPLUGGED_CYBERIZE_DESC: "Reclaiming and tapping further into the potential of our cybernetic augments will please the [root.GetName]."
 
  # PROGRESSIVES
  PROGRESSIVE_NO_AUTO:0 "Anti-Autocratic"
@@ -413,6 +431,9 @@
  PROGRESSIVE_FEDERATION:0 "$hegemony_federation$"
  PROGRESSIVE_FEDERATION_NOT_HEGEMONY:0 "$hegemony_federation$"
  PROGRESSIVE_FEDERATION_DESC:0 "Being a member of a $hegemony_federation$ will displease the [Root.GetName]."
+ PROGRESSIVE_UNPLUGGED_DECYBERIZE: "$XENOIST_UNPLUGGED_DECYBERIZE$"
+ PROGRESSIVE_UNPLUGGED_NOT_DECYBERIZE: "$XENOIST_UNPLUGGED_DECYBERIZE$"
+ PROGRESSIVE_UNPLUGGED_DECYBERIZE_DESC: "$XENOIST_UNPLUGGED_DECYBERIZE_DESC$"
 
  # TOTALITARIANS
  TOTALITARIAN_AUTOCRACY:0 "Autocracy"
@@ -425,7 +446,7 @@
  TOTALITARIAN_STRATIFICATION_DESC:1 "Ensuring a stratified society - be it through a stratified economy, slavery or even purging - will please the [Root.GetName]."
  TOTALITARIAN_NO_STRATIFICATION:0 "$TOTALITARIAN_STRATIFICATION$"
  TOTALITARIAN_SLAVERY:0 "Baseline Slavery"
- TOTALITARIAN_SLAVERY_DESC:0 "Keeping at least §Y12§! Pops enslaved will please the [Root.GetName]."
+ TOTALITARIAN_SLAVERY_DESC:0 "Keeping at least §Y12§! £pop£ §HPops§! enslaved will please the [Root.GetName]."
  TOTALITARIAN_NO_SLAVERY:0 "$TOTALITARIAN_SLAVERY$"
  TOTALITARIAN_ELITISM:0 "Elitism"
  TOTALITARIAN_ELITISM_DESC:0 "Policies that allow the enhancement of our Leaders will please the [Root.GetName]."
@@ -454,6 +475,9 @@
  TOTALITARIAN_FEDERATION:0 "$hegemony_federation$"
  TOTALITARIAN_FEDERATION_NOT_HEGEMONY:0 "$hegemony_federation$"
  TOTALITARIAN_FEDERATION_DESC:0 "Being a member of a $hegemony_federation$ will please the [Root.GetName]."
+ TOTALITARIAN_UNPLUGGED_STATUS_QUO: "Embodied Identity"
+ TOTALITARIAN_UNPLUGGED_NOT_STATUS_QUO: "$TOTALITARIAN_UNPLUGGED_STATUS_QUO$"
+ TOTALITARIAN_UNPLUGGED_STATUS_QUO_DESC: "Giving up our elite military augments or yielding to a collective mind-state will displease the [root.GetName]."
 
  # PROSPERITY
  PROSPERITY_PHILOSOPHY:0 "Defensive Stance"
@@ -489,6 +513,9 @@
  PROSPERITY_FEDERATION:0 "$military_federation$"
  PROSPERITY_FEDERATION_NOT_MILITARIST:0 "$military_federation$"
  PROSPERITY_FEDERATION_DESC:0 "Being a member of a $military_federation$ will displease the [Root.GetName]."
+ PROSPERITY_UNPLUGGED_DECYBERIZE: "$XENOIST_UNPLUGGED_DECYBERIZE$"
+ PROSPERITY_UNPLUGGED_NOT_DECYBERIZE: "$XENOIST_UNPLUGGED_NOT_DECYBERIZE$"
+ PROSPERITY_UNPLUGGED_DECYBERIZE_DESC: "$XENOIST_UNPLUGGED_DECYBERIZE_DESC$"
 
  FACTION_COUNTRY_SEPARATIST:0 "[parameter:owner.GetSpeciesAdj] Separatists"
 
@@ -645,10 +672,10 @@
  FACTION_ACTION_SLAVE_EMANCIPATE_ALL_DESC:1 "Emancipate every enslaved Pop."
 
  # Slave Actions
- FACTION_ACTION_MALCONTENT_SLAVES_INTERSTELLAR_RAILROAD_TOOLTIP_1:0 "There are at least §R4§! Pops in the faction."
- FACTION_ACTION_MALCONTENT_SLAVES_INTERSTELLAR_RAILROAD_TOOLTIP_2:1 "There are at least §R6§! Pops in the faction."
- FACTION_ACTION_MALCONTENT_SLAVES_INTERSTELLAR_RAILROAD_TOOLTIP_3:1 "There are at least §R8§! Pops in the faction."
- FACTION_ACTION_MALCONTENT_SLAVES_INTERSTELLAR_RAILROAD_TOOLTIP_4:1 "There are more than §R10§! Pops in the faction."
+ FACTION_ACTION_MALCONTENT_SLAVES_INTERSTELLAR_RAILROAD_TOOLTIP_1:0 "There are at least §R400§! £pop£ §HPops§! in the faction."
+ FACTION_ACTION_MALCONTENT_SLAVES_INTERSTELLAR_RAILROAD_TOOLTIP_2:1 "There are at least §R600§! £pop£ §HPops§! in the faction."
+ FACTION_ACTION_MALCONTENT_SLAVES_INTERSTELLAR_RAILROAD_TOOLTIP_3:1 "There are at least §R800§! £pop£ §HPops§! in the faction."
+ FACTION_ACTION_MALCONTENT_SLAVES_INTERSTELLAR_RAILROAD_TOOLTIP_4:1 "There are more than §R1K§! £pop£ §HPops§! in the faction."
 
 
  FACTION_ACTION_SLAVE_HARSH_TREATMENT:0 "Harsh Treatment"
@@ -762,7 +789,7 @@
  pft_pretender_desc:0 "Supporters of the current Pretender are drawn to this Faction, and they work to instate them as ruler."
 
  POP_FACTION_PRETENDER_ATTRITION_TITLE:0 "Attrition"
- POP_FACTION_PRETENDER_ATTRITION_DESC:0 "A Pop loses interest in the cause, §Gdeserting the Faction§!."
+ POP_FACTION_PRETENDER_ATTRITION_DESC:0 "100 Pops lose interest in the cause, §Gdeserting the Faction§!."
  POP_FACTION_PRETENDER_DEMAND_TITLE:0 "Surrender the throne to §Y[parameter:pretender.GetName]§!"
  POP_FACTION_PRETENDER_DEMAND_DESC:0 "[Root.Owner.GetRulerTitle] §Y[Root.Owner.GetRulerName]§! will be exiled and §Y[parameter:pretender.GetName]§! will assume the throne."
  POP_FACTION_PRETENDER_INSTALL_TITLE:0 "Install Pretender"
@@ -775,20 +802,45 @@
  ### New Events
  factions.1.title:0 "Faction Founded"
  factions.1.desc:1 "A new faction has recently been gaining traction in the internal political landscape of the [Root.Owner.GetName]. They call themselves the [Root.GetName], and their members have been pushing hard for us to deal with the various issues that concern them.\n\nWe are likely to see the emergence of additional factions in the future, as our population grows and their ethics drift in different directions. A disgruntled faction will be a source of trouble, but those that approve of the government's actions could prove useful..."
- factions.1.desc.start:1 "A new faction has recently been gaining traction in the internal political landscape of the [Root.Owner.GetName]. They call themselves the §H[Root.GetName]§!. "
+ factions.1.desc.start:1 "A new faction has recently been gaining traction in the internal political landscape of the [Root.Owner.GetName]. They call themselves the §H[Root.GetName]§!. " # trailing space is important
+ MESSAGE_FACTION_FORMED_TITLE: "New Faction"
+ factions.1.desc.start_short:1 "A §H[Root.GetFactionType]§! has formed, calling themselves the §H[Root.GetName]§!."
  factions.1.desc.firstfinisher:0 "A disgruntled faction will be a source of trouble, but one that approves of the government's actions could prove useful..."
  factions.1.desc.imperialist:0 "Their members have been pushing hard for us to assert our military dominance over the rest of the galaxy.\n\n"
  factions.1.desc.isolationist:0 "Their members are advocating for closed borders and non-interference with galactic affairs.\n\n"
  factions.1.desc.progressive:0 "Their members work for equality and justice for all denizens of our empire.\n\n"
- factions.1.desc.prosperity:1 "Their members lobby for a national focus on financial growth and stability through peaceful means."
+ factions.1.desc.prosperity:2 "Their members lobby for a national focus on financial growth and stability through peaceful means.\n\n"
  factions.1.desc.supremacist:0 "Their members seek to assert the primacy of the [Root.Owner.GetSpeciesAdj] species, by curtailing the rights of aliens if necessary.\n\n"
  factions.1.desc.technologist:0 "Their members have been pushing hard for the advancement of the sciences.\n\n"
  factions.1.desc.totalitarian:0 "Their members have been pushing hard for an extreme centralization of political and military power.\n\n"
  factions.1.desc.traditionalist:0 "Their members support spiritualist and conservative values.\n\n"
  factions.1.desc.xenoist:0 "Their members have been pushing hard for friendly relations with alien species.\n\n"
+ MESSAGE_TRADITIONALIST_FACTION_FORMED_TITLE:0 "New Traditionalist Faction"
+ MESSAGE_IMPERIALIST_FACTION_FORMED_TITLE:0 "New Imperialist Faction"
+ MESSAGE_SUPREMACIST_FACTION_FORMED_TITLE:0 "New Supremacist Faction"
+ MESSAGE_ISOLATIONIST_FACTION_FORMED_TITLE:0 "New Isolationist Faction"
+ MESSAGE_TOTALITARIAN_FACTION_FORMED_TITLE:0 "New Totalitarian Faction"
+ MESSAGE_PROGRESSIVE_FACTION_FORMED_TITLE:0 "New Progressive Faction"
+ MESSAGE_PROSPERITY_FACTION_FORMED_TITLE:0 "New Propsperity Faction"
+ MESSAGE_TECHNOLOGIST_FACTION_FORMED_TITLE:0 "New Technologist Faction"
+ MESSAGE_XENOIST_FACTION_FORMED_TITLE:0 "New Xenoist Faction"
+ MESSAGE_MANIFESTI_FACTION_FORMED_TITLE:0 "New Manifesti Faction"
+ 
+ factions.1.desc.unplugged_start: "A new faction has emerged in the nascent political landscape of the [Root.Owner.GetName]. They call themselves the §H[Root.GetName]§!. " # trailing space is important
+ factions.1.desc.unplugged_imperialist: "Their members are committed to wielding every formidable, augmented weapon in our arsenal to assert dominance over the rest of the galaxy.\n\n"
+ factions.1.desc.unplugged_isolationist: "Their members are advocating for closed borders, and a society free of interference from machines and other galactic entities.\n\n"
+ factions.1.desc.unplugged_progressive: "Their members seek friendly accord with our galactic neighbors and justice for all denizens of our empire.\n\n"
+ factions.1.desc.unplugged_prosperity: "Their members lobby for mercantile growth and stability through peaceful means, free of militaristic augmentation.\n\n"
+ factions.1.desc.unplugged_supremacist: "Their members seek to assert the primacy of the [Root.Owner.GetSpeciesAdj] species, augmented by formidable machines of our own making.\n\n"
+ factions.1.desc.unplugged_technologist: "Their members have been pushing hard for advancement of the sciences, and better understanding of our augments.\n\n"
+ factions.1.desc.unplugged_totalitarian: "Their members have been pushing hard for an extreme centralization of sovereign political power and military might, modelled on what we know of Machine Intelligences.\n\n"
+ factions.1.desc.unplugged_traditionalist: "Their members support spiritualist and conservative values, many of which align with theories about our natural, organic past.\n\n"
+ factions.1.desc.unplugged_xenoist: "Their members have been pushing hard for friendly relations with alien species, unburdened by the specter of our Machine past.\n\n" # 'Machine' as an adjective in reference to the intelligence that once assimilated us
 
  factions.2000.title:0 "Governing Ethics Shift in the [TargetFaction.Owner.GetName]"
  factions.2000.desc.start:0 "Following a long period of growing support for the §Y[TargetFaction.GetName]§!, the §Y[TargetFaction.Owner.GetName]§! has finally embraced the faction, adopting their core values and policies."
+ factions.2000.desc_short: "§Y[TargetFaction.Owner.GetName]§! has embraced a §H[TargetFaction.GetFactionType]§!, becoming more §H[TargetFaction.GetEthicEquivelent]§!."
+ MESSAGE_FACTION_EMBRACED_TITLE: "Governing Ethics Shift"
  factions.2000.desc.imperialist:0 "As a result of bringing this faction into their government, they have become more outwardly §HMilitaristic§!.\n\n"
  factions.2000.desc.isolationist:0 "As a result of bringing this faction into their government, they have become more outwardly §HXenophobic§!.\n\n"
  factions.2000.desc.progressive:0 "As a result of bringing this faction into their government, they have become more outwardly §HEgalitarian§!.\n\n"
@@ -798,6 +850,17 @@
  factions.2000.desc.totalitarian:0 "As a result of bringing this faction into their government, they have become more outwardly §HAuthoritarian§!.\n\n"
  factions.2000.desc.traditionalist:0 "As a result of bringing this faction into their government, they have become more outwardly §HSpiritualist§!.\n\n"
  factions.2000.desc.xenoist:0 "As a result of bringing this faction into their government, they have become more outwardly §HXenophilic§!.\n\n"
+ MESSAGE_TRADITIONALIST_FACTION_EMBRACED_TITLE:0 "Traditionalist Ethics Embraced"
+ MESSAGE_IMPERIALIST_FACTION_EMBRACED_TITLE:0 "Imperialist Ethics Embraced"
+ MESSAGE_SUPREMACIST_FACTION_EMBRACED_TITLE:0 "Supremacist Ethics Embraced"
+ MESSAGE_ISOLATIONIST_FACTION_EMBRACED_TITLE:0 "Isolationist Ethics Embraced"
+ MESSAGE_TOTALITARIAN_FACTION_EMBRACED_TITLE:0 "Totalitarian Ethics Embraced"
+ MESSAGE_PROGRESSIVE_FACTION_EMBRACED_TITLE:0 "Progressive Ethics Embraced"
+ MESSAGE_PROSPERITY_FACTION_EMBRACED_TITLE:0 "Prosperity Ethics Embraced"
+ MESSAGE_TECHNOLOGIST_FACTION_EMBRACED_TITLE:0 "Technologist Ethics Embraced"
+ MESSAGE_XENOIST_FACTION_EMBRACED_TITLE:0 "Xenoist Ethics Embraced"
+ MESSAGE_MANIFESTI_FACTION_EMBRACED_TITLE:0 "Manifesti Ethics Embraced"
+
 
  factions.3000.name:0 "The Political Frontier"
  factions.3000.desc:0 "Established Factions and fledgling movements alike have taken an unusually keen interest in our new colony on §Y[root.GetName]§!. From the moment we announced settlement of this modest [root.GetPlanetHabitat], nearly every political voice in the [root.owner.GetName] has had something to say about it.\n\nOur analysts don't suspect that anything truly radical is taking root on [root.GetName], but they advise some caution. It's clear our various political entities intend to campaign vigorously on this burgeoning world."
@@ -851,8 +914,8 @@
  faction.10.a.tooltip:0 "§HEnslaved Pops§! on §H[unrest_planet.GetName]§! gain the §RSlave Unrest§! modifier for §Y4 years§!."
 
  faction.15.title:0 "Slave Violence!"
- faction.15.desc:0 "Roving mobs - comprised of derelict slaves - have gotten into violent confrontations with other members of the populace on [roving_gangs_planet.GetName], resulting in the untimely death of a Pop.\n\nIt remains to be seen how the associates of the deceased will react to this incident."
- faction.15.a.tooltip:0 "[roving_gangs_planet]:\n§Y1 Pop§! §Rdies§!."
+ faction.15.desc:0 "Roving mobs - comprised of derelict slaves - have gotten into violent confrontations with other members of the populace on [roving_gangs_planet.GetName], resulting in the untimely death of 100 Pops.\n\nIt remains to be seen how the associates of the deceased will react to this incident."
+ faction.15.a.tooltip:0 "[roving_gangs_planet]:\n§R100§! £pop£ §HPops§! die."
 
  faction.50.title:0 "Interstellar Railroad!"
  faction.50.desc:0 "It appears that some of the more radical elements in our slave population have banded together to, essentially, remove slaves from [Root.Owner.GetAdj] territories.\n\nWe do not know how a crime on this scale was committed, but we are fairly certain that the slaves are now free, somewhere outside of [Root.Owner.GetAdj] space."
@@ -986,7 +1049,7 @@
  faction.700.title:0 "Slaves Taken!"
  faction.700.desc:0 "The rabid [Root.GetName] have allegedly forced some of the [Root.Owner.GetName] non-[Root.Owner.GetSpeciesAdj] populations into indentured servitude."
  faction.700.a:0 "This is an outrage."
- faction.700.a.tooltip:0 "Slaves:\n§Y+2§! Pops"
+ faction.700.a.tooltip:0 "Slaves:\n§Y+200§! £pop£ §HPops§!"
 
  faction.701.title:0 "The [parameter:rebelling_faction.GetName] Rebel!"
  faction.701.desc:0 "Supposedly fed up with the [Root.Owner.GetName]'s soft stance on the brutish aliens amongst us, the would-be slave owners of [parameter:planet.GetName] have come together, as a confederation of communities, to declare their independence."

@@ -331,6 +331,8 @@
  preset_satellite:0 "卫星国"
  preset_signatory:0 "条约国"
  preset_thrall:0 "仆从国"
+ preset_political_client: "傀儡国"
+ preset_herald: "马前卒"
  preset_satrapy:0 "辖地"
  preset_relic_satrapy:0 "$preset_satrapy$"
 
@@ -509,8 +511,8 @@
  HOLDINGS_EMPTY_corporate:0 "没有企业地产"
  HOLDINGS_EMPTY_subject_holding:0 "没有宗主地产"
  HOLDINGS_EMPTY:0 "没有地产"
- HOLDINGS_DESC_corporate:0 "§Y企业§!政体的帝国可以设立分部，进而启用§Y企业地产§!。"
- HOLDINGS_DESC_subject_holding:0 "在附属国§Y协议§!允许的前提下，§Y宗主地产§!只能由宗主在其附属国的行星上修建。"
+ HOLDINGS_DESC_corporate:0 "['authority:auth_corporate']帝国可以设立['concept_branch_office']，进而能建造§H企业地产§!。"
+ HOLDINGS_DESC_subject_holding:0 "在附属国['concept_subject_agreement']允许的前提下，['concept_overlord_holding']才可由§H宗主§!在其§H附属国§!的行星上修建。"
  CLICK_TO_OPEN_PLANET_VIEW_HOLDINGS:0 "§G点击打开行星视图§!"
  AGREEMENTS_HOLDINGS_TITLE:0 "地产§Y（$CURRENT$/$MAXIMUM$）§!"
  BUILDING_SLOT_OPEN_AGREEMENTS_HOLDINGS_DESC:0 "§E一座地产只能由宗主在其附属国的行星上建造。§!"
@@ -540,11 +542,11 @@
  holding_material_requisitorium_desc:1 "一个监管当地矿物产出、提取和纯化的部门。他们总能购得最好的土地并为他们的赞助人获得利益。"
  holding_produce_requisitorium:2 "并购部"
  holding_produce_requisitorium_desc:1 "一个监管当地产出的部门。除了征收一些微不足道的税收以外，一些物产也很容易在弯弯绕绕的官僚手续当中不翼而飞。"
- job_energy_requisitioned_effect_desc:2 "£job_technician£ [Root.EnergyProducer]为属国生产§R-3§!$r_energy$，为宗主生产§G4§!$r_energy$。"
- job_minerals_requisitioned_effect_desc:2 "£job_miner£[Root.MineralsProducer]为属国生产§R-2§!$r_minerals$，为宗主生产§G3§!$r_minerals$。"
- job_alloy_requisitioned_effect_desc:3 "£job_foundry£[Root.AlloysProducer]为属国生产§R-1§!$r_alloys$，为宗主生产§G2§!$r_alloys$，并增加附属国[Root.AlloysProducerResources]的维护费。"
- job_food_requisitioned_effect_desc:2 "£job_farmer£[Root.FoodProducer]为属国生产§R-3§!$r_food$，为宗主生产§G4§!$r_food$。"
- job_consumer_goods_requisitioned_effect_desc:4 "[Root.ConsumerGoodsProducerIcon][Root.ConsumerGoodsProducer]为属国生产§R-3§!$r_consumer_goods$，增加附属国$r_minerals$维护费，为宗主生产§G4§!$r_consumer_goods$。"
+ job_energy_requisitioned_effect_desc: "[Root.EnergyProducerWithIcon]为属国生产§R-3§!$r_energy$，为宗主生产§G4§!$r_energy$。"
+ job_minerals_requisitioned_effect_desc: "[Root.MineralsProducerWithIcon]为属国生产§R-2§!$r_minerals$，为宗主生产§G3§!$r_minerals$。"
+ job_alloy_requisitioned_effect_desc: "[Root.AlloysProducerWithIcon]为属国生产§R-1§!$r_alloys$，为宗主生产§G2§!$r_alloys$，并增加附属国[Root.AlloysProducerResources]的维护费。"
+ job_food_requisitioned_effect_desc: "[Root.FoodProducerWithIcon]为属国生产§R-3§!$r_food$，为宗主生产§G4§!$r_food$。"
+ job_consumer_goods_requisitioned_effect_desc: "[Root.ConsumerGoodsProducerWithIcon]为属国生产§R-3§!$r_consumer_goods$，增加附属国$r_minerals$维护费，为宗主生产§G4§!$r_consumer_goods$。"
  blocker_tied_to_splinter_hive:0 "$TRIGGER_FAIL$§R只要§Y分离蜂巢§!地产存在，这个地块障碍就会留在这里。§!"
  no_free_district_for_splinter_hive:0 "$TRIGGER_FAIL$§R这个行星上没有空闲的地区来安置我们昂贵的产卵复合体。§!"
  holding_splinter_hive:0 "分离蜂巢"
@@ -559,11 +561,11 @@
  holding_overlord_vigil_command_desc:0 "一处指挥中心，专门针对——专门负责——计算提升防御措施的可行手段。"
  holding_parasitic_algorithms:0 "科研部"
  holding_parasitic_algorithms_desc:0 "一个负责监督当地科学与研究进展的部门，将为其雇主带回最有价值的突破和发现。"
- holding_parasitic_algorithms_effect_desc:2 "[Root.ResearchProducerIcon][Root.ResearchProducer]将附属国的[Root.SubjectResearcherUpkeep]转化为宗主国的$r_research$。"
+ holding_parasitic_algorithms_effect_desc:2 "[Root.ResearchProducerWithIcon]将附属国的[Root.SubjectResearcherUpkeep]转化为宗主国的$r_research$。"
 
  holding_noble_vacation_homes:0 "贵族行宫"
  holding_noble_vacation_homes_desc:0 "身在异乡亦有家，此处便是宗主国精英阶层们的放浪形骸之地；只要在这里得到充分的释放，就不会在家里惹乱子。"
- holding_noble_vacation_homes_effect:0 "每座$holding_noble_vacation_homes$给予宗主国的首都§G+2§!£stability£。"
+ holding_noble_vacation_homes_effect:0 "每座$holding_noble_vacation_homes$给予宗主国的首都§G+2§!$r_stability$。"
 
  holding_dread_outpost:0 "恐惧前哨"
  holding_dread_outpost_desc:0 "恐惧前哨是一座神秘的建筑，它可以产生邪恶的亡者大军，同时将阴暗的数据发送回这个行星的宗主国。"
@@ -578,7 +580,7 @@
 
  holding_reemployment_center:0 "再就业中心"
  holding_reemployment_center_desc:1 "不要浪费任何资源，包括附庸的尸体。利用再就业中心，宗主可以确保附庸的行星上永远都有充足的雇员，虽然其中工作的质量可能参差不齐。"
- holding_reemployment_center_effect:0 "\n一个新£pop£§Y僵尸人口§!将在§Y[Planet.reemployment_center_timer]§!复苏"
+ holding_reemployment_center_effect:0 "\n§Y100§!£pop£§Y僵尸人口§!将在§Y[Planet.reemployment_center_timer]§!复苏"
 
  holding_recruitment_office:0 "招募办公室"
  holding_recruitment_office_desc:0 "人人都有义务尽忠职守，因此宗主向我们提供军事训练，并以观摩宗主舰队为奖赏。公民权来自于服役。"
@@ -589,13 +591,15 @@
  holding_park_ranger_lodge_desc:0 "宗主喜欢与自然和谐共处，并希望与他们的附庸分享这一乐趣。为了维系这种乐趣，这里始终至少保留着部分可供享受的自然环境。"
  no_free_district_for_ranger_lodge:0 "$TRIGGER_FAIL$§R此处已经没有尚未开发的处女地供我们保护了。§!"
  blocker_tied_to_ranger_lodge:0 "$TRIGGER_FAIL$§R在§Y$holding_park_ranger_lodge$§!只要地产存在，这个障碍就会永远留存。§!"
+ no_ranger_lodge_wilderness: "$TRIGGER_FAIL$§R荒野的星球本就充满了未开发的自然。§!"
 
  holding_tree_of_life_sapling:1 "生命之树苗"
  holding_tree_of_life_sapling_desc:0 "这位宗主同他们的生命之树已经共存许久，如今已经无法想象没有它的生活。现在，他们想要让自己的附庸们也享受同等的机遇。"
+ no_tree_of_life_sapling_wilderness: "$TRIGGER_FAIL$§R荒野的环境对外星幼苗而言危机四伏。§!"
 
  holding_franchise_headquarters:0 "连锁企业总部"
  holding_franchise_headquarters_desc:0 "这些办公室利用企业管理手段，通过行星范围的强制训练和团队建设活动，保证子公司的利益同其宗主一致。"
- holding_franchise_headquarters_effect:0 "\n£job_clerk£§Y$job_clerk_plural$§!为附属国生产§R-1§!£trade_value£§Y贸易额§!，为宗主生产§G0.25§!£unity£§Y$unity$§!。"
+ holding_franchise_headquarters_effect:0 "\n[clerk.GetIcon]§Y[clerk.GetNamePlural]§!为附属国生产§R-1§!$r_trade$，为宗主生产§G0.25§!£unity£§Y$unity$§!。"
  no_branch_office:0 "$TRIGGER_FAIL$§R需要一个[owner.overlord.GetName]分部§!"
  planet_corporate_franchising_meddling:0 "企业干涉"
  holding_franchise_headquarters_ethics_effect:0 "\n如果宗主拥有极端思潮，提供该思潮§G+100%§!思潮吸引力。"
@@ -608,6 +612,7 @@
 
  holding_organic_sanctuary:0 "有机庇护所"
  holding_organic_sanctuary_desc:0 "尽管和宗主星球上的设施相比，这颗行星上的疗养设施在规模上要有限得多，然而居住其中的活体陈设仍然享受到了比过去更高的生活标准。"
+ no_organic_sanctuary_wilderness: "$TRIGGER_FAIL$§R荒野不适合$job_bio_trophy_plural$长时间居住。§!"
 
  holding_sacrificial_shrine:0 "祭献神龛"
  holding_sacrificial_shrine_desc:0 "对生死轮回的大研究不应仅仅局限于宗主国；附庸也必须探索生死之间的转变。"
@@ -646,9 +651,9 @@
  holding_noble_vacation_home_modifier:0 "惬意的贵族"
  mod_planet_jobs_unity_upkeep_mult:0 "£job£ 岗位所需的 £unity£ $unity$维护费"
  MOD_SUBJECT_TECH_COST_MULT:0 "科技研究花费"
- mod_planet_refiners_exotic_gases_produces_mult:0 "£job_gas_refiner£ [Root.Refiners]产出"
- mod_planet_translucers_rare_crystals_produces_mult:0 "£job_translucer£ [Root.Translucers]产出"
- mod_planet_chemists_volatile_motes_produces_mult:0 "£job_chemist£ [Root.Chemists]产出"
+ mod_planet_refiners_exotic_gases_produces_mult:0 "[gas_refiner.GetIcon][Root.Refiners]产出"
+ mod_planet_translucers_rare_crystals_produces_mult:0 "[translucer.GetIcon][Root.Translucers]产出"
+ mod_planet_chemists_volatile_motes_produces_mult:0 "[chemist.GetIcon][Root.Chemists]产出"
  divided_patronage:0 "分散的荫蔽"
  divided_patronage_desc:0 "我们宗主的注意力被分散到了太多的附属国之间。"
  feudal_lord:0 "封建领主"
@@ -823,16 +828,16 @@
  job_overlord_offspring_drone_feeder_drone_effect_desc:4 "£job_overlord_breeder£$job_overlord_offspring_drone_feeder_plural$花费$r_food$（或$r_minerals$）解锁§Y$offspring_defense_plural$§!并提升£mod_planet_jobs_simple_drone_produces_mult£§Y$mod_planet_jobs_simple_drone_produces_mult$§!。"
 
  # Overlord Metallurgist/Foundry Drone/Fabricator/Catalytic Technician/Catalytic Drone
- job_overlord_metallurgist:0 "宗主国$job_foundry$"
- job_overlord_metallurgist_plural:0 "宗主国$job_foundry_plural$"
+ job_overlord_metallurgist:0 "宗主国[foundry.GetName]"
+ job_overlord_metallurgist_plural:0 "宗主国[foundry.GetNamePlural]"
  mod_job_overlord_metallurgist_add:0 "$job_overlord_metallurgist$岗位"
  job_overlord_metallurgist_desc:0 "$job_foundry_desc$"
  job_overlord_foundry_drone:0 "宗主国$job_alloy_drone$"
  job_overlord_foundry_drone_plural:0 "宗主国$job_alloy_drone_plural$"
  mod_job_overlord_foundry_drone_add:0 "$job_overlord_alloy_drone$岗位"
  job_overlord_foundry_drone_desc:0 "$job_alloy_drone_desc$"
- job_overlord_fabricator:0 "宗主国$job_fabricator$"
- job_overlord_fabricator_plural:0 "宗主国$job_fabricator_plural$"
+ job_overlord_fabricator:0 "宗主国[fabricator.GetName]"
+ job_overlord_fabricator_plural:0 "宗主国[fabricator.GetNamePlural]"
  mod_job_overlord_fabricator_add:0 "$job_overlord_fabricator$岗位"
  job_overlord_fabricator_desc:0 "$job_fabricator_desc$"
  job_overlord_catalytic_technician:0 "宗主国$job_catalytic_technician$"
@@ -843,8 +848,8 @@
  job_overlord_catalytic_drone_plural:0 "宗主国$job_catalytic_drone_plural$"
  mod_job_overlord_catalytic_drone_add:0 "$job_overlord_catalytic_drone$岗位"
  job_overlord_catalytic_drone_desc:0 "$job_catalytic_drone_desc$"
- job_overlord_alloy_producer_effect_desc:0 "£job_foundry£宗主国[Root.AlloysProducer]将附属国的£minerals£§Y$minerals$§!转化为£alloys£§Y$alloys$§!再交付给宗主国。"
- job_overlord_alloy_producer_catalytic_effect_desc:0 "£job_foundry£宗主国[Root.AlloysProducer]将附属国的£food£§Y$food$§!转化为£alloys£§Y$alloys$§!再交付给宗主国。"
+ job_overlord_alloy_producer_effect_desc:0 "[foundry.GetIcon]宗主国[Root.AlloysProducer]将附属国的£minerals£§Y$minerals$§!转化为£alloys£§Y$alloys$§!再交付给宗主国。"
+ job_overlord_alloy_producer_catalytic_effect_desc:0 "[foundry.GetIcon]宗主国[Root.AlloysProducer]将附属国的£food£§Y$food$§!转化为£alloys£§Y$alloys$§!再交付给宗主国。"
 
  # Overlord Beholders
  job_overlord_beholder:0 "宗主国监察官"
@@ -879,7 +884,7 @@
  job_overlord_reassigner_drone_plural:0 "$job_overlord_reassigner$子个体"
  mod_job_overlord_reassigner_drone_add:0 "$job_overlord_reassigner$岗位"
  job_overlord_reassigner_drone_desc:0 "$job_overlord_reassigner_desc$"
- job_overlord_reassigner_effect_desc:1 "£job_necromancer£$job_overlord_reassigner_plural$为附属国提供£pop£§Y僵尸人口§!。"
+ job_overlord_reassigner_effect_desc:1 "£job_necromancer£$job_overlord_reassigner_plural$为附属国提供£pop£§H僵尸人口§!。"
 
 # Overlord Recruiters
  job_overlord_recruiter:0 "宗主国征兵官"
@@ -891,7 +896,7 @@
  job_overlord_recruiter_drone_plural:0 "$job_overlord_recruiter$子个体"
  mod_job_overlord_recruiter_drone_add:0 "$job_overlord_recruiter$岗位"
  job_overlord_recruiter_drone_desc:0 "$job_overlord_recruiter_desc$"
- job_overlord_recruiter_effect_desc:1 "£job_soldier£$job_overlord_recruiter_plural$为附属国提供£defense_army£§Y防御部队§!，这些部队在服役期满之后有一定几率加入我们帝国。"
+ job_overlord_recruiter_effect_desc:1 "[soldier.GetIcon]$job_overlord_recruiter_plural$为附属国提供£defense_army£§Y防御部队§!，这些部队在服役期满之后有一定几率加入我们帝国。"
 
 # Overlord Rangers
  job_overlord_ranger:0 "宗主国护林员"
@@ -938,7 +943,7 @@
  job_overlord_mortal_initiate_drone_plural:1 "$job_overlord_mortal_initiate$ 子个体"
  mod_job_overlord_mortal_initiate_drone_add:1 "$job_overlord_mortal_initiate$ 岗位"
  job_overlord_mortal_initiate_drone_desc:0 "我们宗主国的风俗习惯或许看上去奇怪而神秘，但我们是他们的一部分。我们子个体的一小部分被指派去加入宗主国的“生命的研究”，这项研究最终会以它们的自愿祭献收场。"
- job_overlord_mortal_initiate_effect_desc:0 "£job_mortal_initiate£$job_overlord_mortal_initiate_plural$为附属国产出£unity£§Y凝聚力§!，£amenities£§Y$amenity$§!以及£society£§Y研究点§!。$job_overlord_mortal_initiate$可以被用于§Y祭献§!。"
+ job_overlord_mortal_initiate_effect_desc:0 "[mortal_initiate.GetIcon]$job_overlord_mortal_initiate_plural$为附属国产出£unity£§Y凝聚力§!，£amenities£§Y$amenity$§!以及£society£§Y研究点§!。$job_overlord_mortal_initiate$可以被用于§Y祭献§!。"
 
 # Overlord Managers
  job_overlord_manager:0 "宗主国经理"
@@ -946,7 +951,7 @@
  job_overlord_manager_plural:0 "宗主国经理"
  mod_job_overlord_manager_add:0 "$job_overlord_manager$岗位"
  job_overlord_manager_desc:0 "中层管理人员能够优化当地白领工人的行为，使其同宗主国的长期企业规划产生协同作用。"
- job_overlord_manager_effect_desc:0 "£job_manager£$job_overlord_manager_plural$为附属国将£consumer_goods£§Y$consumer_goods$§!转变为£unity£§Y凝聚力§!和£mod_trade_value_add£§Y$TRADE_VALUE$§!，为宗主国转变为£unity£§Y凝聚力§!。"
+ job_overlord_manager_effect_desc:0 "£job_manager£$job_overlord_manager_plural$将£consumer_goods£§Y$consumer_goods$§!转化为附属国的£unity£§Y凝聚力§!和$r_trade$，以及宗主国的£unity£§Y凝聚力§!。"
 
  planet_holdings:0 "地产"
  planet_overlord_propagandists:0 "宗主国宣传家"
@@ -979,7 +984,7 @@
  r_society:0 "£society£ §Y社会学研究§!"
  r_engineering:0 "£engineering£ §Y工程学研究§!"
  r_amenities:2 "£mod_planet_amenities_add£§Y舒适度§!"
- r_trade_value:2 "£mod_trade_value_add£ §Y贸易额§!"
+ r_trade:2 "£trade£§Y贸易额§!"
  r_loyalty:1 "£loyalty£ §Y每月忠诚度§!"
  r_rare_crystals:1 "£rare_crystals£ §Y$rare_crystals$§!"
  r_volatile_motes:1 "£volatile_motes£ §Y$volatile_motes$§!"
@@ -1015,6 +1020,9 @@
  # Pop Type
  pop_mechanical:0 "机械体"
  pop_organic:0 "有机体"
+
+ # Empire Parameters
+ r_stability: "£stability£§Y稳定度§!"
 
  # Approximation headers
  PRODUCES_RESOURCES_FOR_OVERLORD:0 "为宗主生产 "
@@ -1057,12 +1065,12 @@
  # Scholarium Planetary Sensors
  specialist.900.name:1 "古怪的传感器读数"
  specialist.900.desc:1 "我们在[From.GetName]上获取了一些奇怪的读数，很有可能表明其上有生命存在。由于这些信号较为微弱，而且在我们试图与之联系时毫无反应，所以如果想弄清真相，我们需要派出一支研究团队。"
- specialist.900.desc.gestalt:0 "我们捕捉到了一些来自[From.GetName]的读数，这可能意味着生命的出现。我们应该派遣一些无人机，搞清楚是什么在发射这样一个信号。"
+ specialist.900.desc.gestalt:0 "我们捕捉到了一些来自[From.GetName]的读数，这可能意味着生命的存在。我们应该派遣一些[root.GetIndividualNamePlural]，搞清楚是什么在发射信号。"
  specialist.900.A:0 "真是有趣。"
 
  specialist.905.name:0 "工程学宝箱"
  specialist.905.desc:0 "我们派遣往[From.GetName]的专家向我们发回了一份报告。[Root.SensorReadings]\n\n[Root.SensorReadingsEngineering]"
- specialist.905.desc.gestalt:0 "我们位于[From.GetName]已经探明了古怪读数产生的缘由。[Root.SensorReadings]\n\n[Root.SensorReadingsEngineering]"
+ specialist.905.desc.gestalt:0 "我们位于[From.GetName]的[root.GetIndividualNamePlural]已经探明了古怪读数产生的缘由。[Root.SensorReadings]\n\n[Root.SensorReadingsEngineering]"
 
  specialist.910.name:0 "社会学宝箱"
  specialist.910.desc:0 "我们派遣往[From.GetName]的舰船向我们发回了态势更新。[Root.SensorReadings]\n\n[Root.SensorReadingsSociety]"
@@ -1070,11 +1078,11 @@
 
  specialist.915.name:0 "物理学宝箱"
  specialist.915.desc:0 "我们位于[From.GetName]的专家发回了事关他们所发现的消息。[Root.SensorReadings]\n\n[Root.SensorReadingsPhysics]"
- specialist.915.desc.gestalt:0 "我们位于[From.GetName]的无人机最近在追踪古怪读数这一任务上取得了显著的进展。[Root.SensorReadings]\n\n[Root.SensorReadingsPhysics]"
+ specialist.915.desc.gestalt:0 "我们位于[From.GetName]的[root.GetIndividualNamePlural]最近在追踪古怪读数这一任务上取得了显著的进展。[Root.SensorReadings]\n\n[Root.SensorReadingsPhysics]"
 
  specialist.920.name:0 "罕见的宝箱"
  specialist.920.desc:1 "在[From.GetName]的团队有一些新消息要汇报。[Root.SensorReadings]\n\n[Root.SensorReadingsRare]"
- specialist.920.desc.gestalt:0 "有关我们位于[From.GetName]的无人机的最新发现传来了好消息。"
+ specialist.920.desc.gestalt:0 "有关我们位于[From.GetName]的[root.GetIndividualNamePlural]的最新发现传来了好消息。" #e.g. 'our symbionts' latest findings'
 
  SCHOLARIUM_PLANETARY_SENSORS:0 "学邦传感器反常"
  SCHOLARIUM_PLANETARY_SENSORS_DESC:1 "我们在[From.GetName]上获得了一个不寻常的信号，似乎是在尝试与我们联系。然而我们还不能与这个信号源进行沟通，如果想对其了解更多，我们需要派遣一艘舰船进行仔细检查。"
@@ -1090,9 +1098,9 @@
  SensorReadingsSociety1:0 "当他们搜索地址周边区域的时候，设法找到了一个看上去像是空救生舱的东西，里面还有一个未知的、外星生命体的残骸。他们打算尽可能快地将样品带回做进一步测试。"
  SensorReadingsSociety2:0 "我们之前捕捉到的信号读数来源于一台仍然以某种方式运转的机器，我们的小队设法从机器中提取到了一些有关制造它的文明的文件。由于我们先前对这个文明不甚了解，我们将其纳入了数据库——尽管他们看上去来自于一个更加古老的纪元。"
  SensorReadingsSociety3:0 "尽管当地了无智慧生命迹象，此地仍然是很多动物的繁育之地，而且这些动物看上去学会了使用破损的机械作为求爱展示的道具。我们的小队将会带回其中一部分以作进一步的留观。"
- SensorReadingsSociety3Gestalt:0 "看上去当地的野生动物使用了部分内部机械作为它们求爱展示的道具。尽管我们通常对于这些动物毫无兴趣，我们的无人机还是将这些有趣生物的一部分带回作后续的留观。"
+ SensorReadingsSociety3Gestalt:0 "看上去当地的野生动物使用了部分内部机械作为它们求爱展示的道具。尽管我们通常对于这些动物毫无兴趣，我们的[root.GetIndividualNamePlural]还是将这些有趣生物的一部分带回作后续的留观。"
  SensorReadingsSociety4:0 "当他们对当前区域进行筛选的时候，他们遇到了一座小型图书馆，里面满是记载了各种当地动物的生物学细节的书籍，这些书籍来自许多原定居者曾经造访过的行星。我们的小队将会带回这些书籍，并开始破解书中使用的语言，并且将其中提取到的一切信息添加到我们的数据库。"
- SensorReadingsSociety4Gestalt:0 "在对该地点执行彻底搜寻之后，我们的无人机发现了一处图书馆。其中的书籍详尽地介绍了几千种外星植物的生物学细节，标本来自于原居住者造访过的每一个星球。我们会将这些书籍带回改善我们的数据库。"
+ SensorReadingsSociety4Gestalt:0 "在对该地点执行彻底搜寻之后，我们发现了一处图书馆。其中的书籍详尽地介绍了几千种外星植物的生物学细节，标本来自于原居住者造访过的每一个星球。我们会将这些书籍带回改善我们的数据库。"
 
  SensorReadingsPhysics1:0 "尽管没有剩下什么有用的东西，我们的小队还是找到了一些记载不同行星的地质活动的研究论文——至少根据上面的图画，他们自己是这么认为的。他们会将自己认为能够抢救的一切资料带回，然后尽可能快地对其进行破解。"
  SensorReadingsPhysics1Gestalt:0 "尽管没有剩下什么有用的材料，我们的工程无人机还是定位到了一些记载不同行星的地质活动的研究论文。能够抢救的一切资料将会被带回，然后尽可能快地对其进行破解。"
@@ -1103,17 +1111,17 @@
  SensorReadingsPhysics4Gestalt:0 "尽管缺乏必要的维护，有一台此前用于支持此处参与设施的聚变反应堆仍在继续运行。 我们的工程子个体将对其进行进一步调查，以期能有所发现。"
 
  SensorReadingsEngineering1:0 "当我们的专家在此处的废墟中梳理时，他们找到了一些几乎完好无损的舰船部件。 虽然在长久的年岁中劣化失效，但我们的工程师相信他们可以从中筛选出一些信息"
- SensorReadingsEngineering1Gestalt:0 "我们的子个体在梳理废墟时发现了一些舰船部件。尽管由于长期劣化而不堪使用，但我们相信还是可以从中筛选出一些信息。"
+ SensorReadingsEngineering1Gestalt:0 "在梳理废墟时，我们的[root.GetIndividualNamePlural]发现了一些舰船部件。尽管由于长期劣化而不堪使用，但我们相信还是可以从中筛选出一些信息。"
  SensorReadingsEngineering2:0 "尽管此处颇为荒凉，我们的专家们还是发现了一些前所未见的建筑材料。他们完成发掘和分析工作之后，样品将会送回进行进一步测试。"
- SensorReadingsEngineering2Gestalt:0 "我们的子个体发现了一件我们此前从未见过的建筑材料。尽管应该无法直接使用，但我们可以将其带回去进行进一步分析。"
+ SensorReadingsEngineering2Gestalt:0 "我们的[root.GetIndividualNamePlural]发现了一件我们此前从未见过的建筑材料。尽管应该无法直接使用，但我们可以将其带回去进行进一步分析。"
  SensorReadingsEngineering3:0 "尽管没有在此处发现任何智慧生物，我们的发掘人员还是在往深处挖掘时发现了一些无人机。它们已经严重受损，难以完整地进行逆向工程，但我们的技术人员相信这些分散的部件仍能给我们提供新的建造科技。"
- SensorReadingsEngineering3Gestalt:0 "我们的发掘子个体发现了一些与我们自身网络相似的信号，再稍微深挖之后发现了两台老旧损坏的自动机器人。尽管损伤已经无法修复，但我们相信通过对它们的部件进行逆向工程，我们还是能对它们的建造方式有更多了解。"
+ SensorReadingsEngineering3Gestalt:0 "我们的发掘[root.GetIndividualNamePlural]发现了一些与我们自身集体意识底层相似的信号，再稍微深挖之后发现了两台老旧损坏的自动机器人。尽管损伤已经无法修复，但我们相信通过对它们的部件进行逆向工程，我们还是能对它们的建造方式有更多了解。"
  SensorReadingsEngineering4:0 "在废墟中筛选时，他们发现了一个曾存放着材料的小金库残骸，现在空无一物——很可能是很久以前就被海盗偷走的了。 然而，其中还留下了一些关于原始居民如何开采这些相同材料的蓝图，这可能会派上用场。"
 
  SensorReadingsRare1:0 "尽管此处一片狼藉，我们的团队还是找到了一台完全没有被时间、野生动物或海盗所损伤的机器。它们相信只要能够尽快破译它，其中一定蕴含着能带来科学突破的秘密。"
- SensorReadingsRare1Gestalt:0 "尽管此处其他部分七零八落，我们的子个体还是发现了一台没有被时间、野生动物或海盗损坏的机器。只要能尽快破译它，我们就有希望能从中发掘出深埋的秘密。"
+ SensorReadingsRare1Gestalt:0 "尽管此处其他部分七零八落，我们的[root.GetIndividualNamePlural]还是发现了一台没有被时间、野生动物或海盗损坏的机器。只要能尽快破译它，我们就有希望能从中发掘出深埋的秘密。"
  SensorReadingsRare2:0 "就在我们的团队要离开这个区域时，他们发现了一小箱蓝图和研究论文。据我们的专家称，这些内容不但很容易破解，而且其中的一些甚至可以解决一些我们最近开展的研究中所遇到的难题。"
- SensorReadingsRare2Gestalt:0 "就在我们的维护子个体要离开这个区域前，他们发现了一小箱蓝图和研究论文。这些内容不但很容易破解，而且我们相信其中的一些甚至可以解决一些我们最近开展的研究中所遇到的难题。"
+ SensorReadingsRare2Gestalt:0 "就在我们的维护[root.GetIndividualNamePlural]要离开这个区域前，他们发现了一小箱蓝图和研究论文。这些内容不但很容易破解，而且我们相信其中的一些甚至可以解决一些我们最近开展的研究中所遇到的难题。"
 
  # Prospectorium Resource Discovery
  specialist.1150.title:0 "发现资源"
@@ -1379,6 +1387,8 @@
  preset_satellite_desc:0 "卫星国是一种堕落帝国特有的附属国类型，有责任每月向其远古的宗主上交研究点税。"
  preset_signatory_desc:0 "条约国是一种堕落帝国特有的附属国类型，他们的外交完全受宗主国控制。"
  preset_thrall_desc:0 "仆从国是一种堕落帝国特有的附属国类型，有责任每月向其远古的宗主上交基础资源税，并且无权拓展边界。"
+ preset_political_client_desc: "傀儡国是一种堕落帝国特有的附属国类型，必须支持其远古宗主的所有政治事务。"
+ preset_herald_desc: "马前卒是一种堕落帝国特有的附属国类型，有责任加入其远古宗主发起的所有战争。"
  preset_scion_desc:1 "先辈子弟是一种特殊的附属国类型，有一个堕落帝国宗主知道他们的发展历程。"
  preset_satrapy_desc:0 "辖地是一种可汗特有的附属国类型，有责任每月向其战狂宗主上交舰队和基础资源税。"
  preset_relic_satrapy_desc:1 "$preset_satrapy_desc$" # [LocEditor:ForFutureBatchExport]

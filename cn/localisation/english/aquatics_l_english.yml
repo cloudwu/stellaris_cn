@@ -1,19 +1,19 @@
 ﻿l_english:
 
  AQUATICS_TITLE: "Aquatics Species Pack" # Do not translate
- DLC_AQUATICS_RECOMMENDATION_DESC:0 "《水生族》提供海量的全新选择，允许你揭示向往的全新生活。一大波新的自定义选项让你的帝国如浪潮般涌入《Stellaris》的银河舞台，同时还有精选的全新物种肖像、舰船模型、起源以及其他新内容。"
+ DLC_AQUATICS_RECOMMENDATION_DESC:0 "《水生族》提供海量的全新选择，允许你揭示向往的全新生活。一大波新的自定义选项让你的帝国如浪潮般涌入《群星》的星海舞台，同时还有精选的全新物种肖像、舰船模型、起源以及其他新内容。"
  DLC_AQUATICS_RECOMMENDATION_COSMETICS:0 "我们推荐购买《水生族》，因为我们注意到你很喜欢装饰性补充包。"
  DLC_AQUATICS_RECOMMENDATION_MOL:0 "我们推荐购买《水生族》，因为我们注意到你特别喜欢像鱼一样的外观。"
- DLC_AQUATICS_RECOMMENDATION_OCEAN:0 "我们推荐购买《水生族》，因为它开拓了定居海洋星球的全新可能性。"
+ DLC_AQUATICS_RECOMMENDATION_OCEAN:0 "我们推荐购买《水生族》，因为它开拓了定居海洋世界的全新可能性。"
 
  vo_aquatics_voice:0 "水生"
 
  trait_aquatic:0 "如鱼得水"
- trait_aquatic_desc:1 "§L这个物种完美地适应了海洋深层的生活。然而，在干燥的陆地上，它们就像没水之鱼一样。§!\n\n§R需要§!§Y海洋星球§!§R母星§!。"
- trait_aquatic_tooltip:2 "§Y海洋§!星球和§Y洪潮居住站§!上的住房使用：§G-10%§!\n§Y海洋§!星球上的食物、能源点数和矿物产出：§G+10%§!\n非§Y潮湿§!星球上的住房使用：§R+30%§!\n非§Y潮湿§!星球宜居性：§R-20%§!\n\n§H$ap_hydrocentric$§!飞升特典会强化这个特质的效果。"
+ trait_aquatic_desc:1 "§L这个物种完美地适应了海洋深层的生活。然而，在干燥的陆地上，它们就像没水之鱼一样。§!"
+ trait_aquatic_tooltip:2 "§Y海洋§!星球和§Y洪潮轨道栖所§!上的住房使用：§G-10%§!\n    —§Y海洋§!星球上的食物、能量币和矿物产出：§G+10%§!\n    —非§Y潮湿§!星球上的住房使用：§R+30%§!\n    —非§Y潮湿§!星球宜居性：§R-20%§!\n\n§H$ap_hydrocentric$§!飞升特典会强化这个特质的效果。"
  trait_robot_aquatic: "防水"
  trait_robot_aquatic_desc: "§L这些机器最初设计用于深海探索，在干燥陆地上的运作会受到严重的限制。§!\n\n§R需要§!§Y海洋星球§!§R母星§!。"
- trait_robot_aquatic_tooltip: "§Y海洋§!星球和§Y洪潮轨道栖所§!上的住房使用：§G-10%§!\n§Y海洋§!星球上的食物、能量币和矿物产出：§G+10%§!\n非§Y潮湿§!星球上的住房使用：§R+30%§!\n非§Y潮湿§!星球宜居性：§R-20%§!\n\n§H$ap_hydrocentric$§!飞升特典会强化这个特质的效果。"
+ trait_robot_aquatic_tooltip: "$trait_aquatic_tooltip$"
  trait_aquatic_remove_evolutionary_mastery:1 "§R需要§Y$tr_genetics_resequencing$§!传统才能移除这个特质。§!"
  trait_aquatic_remove_hydrocentric:0 "§R采纳§Y$ap_hydrocentric$§!飞升特典之后无法移除§Y$trait_aquatic$§!特质。§!"
 
@@ -162,8 +162,10 @@
  aquatics.305.desc.pre-ftl:0 "[This.GetName]汇报在[From.GetName]星系目击了一条骇人的太空巨龙！这个星系也正好是[root.GetAAnPreFTLLower][Owner.GetPreFTLLower]文明的家园：其中一颗行星已经显示出了聚落的迹象。\n\n目前为止，这条龙还没对我们采取行动，也没有与这个星系中的另一群居民存在冲突的迹象。也许我们最好还是别管他们吧。" # e.g. 'home to an unsophisticated civilization' or 'home to a pre-FTL civilization'
 
  space_dragon_origin:0 "天龙"
+ space_dragon_origin_cap: "$space_dragon_origin$"
  space_dragon_origin_plural:0 "天龙"
  space_dragon_origin_baby:0 "雏龙" #Has to be short for interface reasons
+ space_dragon_origin_baby_cap: "$space_dragon_origin_baby$"
  space_dragon_origin_baby_plural:0 "雏龙"
  requires_dragon_hatchery:0 "$TRIGGER_FAIL$需要一座§Y龙孵化器§!"
  sm_dragon_hatchery:0 "龙孵化器"
@@ -190,12 +192,13 @@
  aquatic.1.A:0 "这将是一个独一无二的家园。"
 
  MESSAGE_FROZEN_TERRAFORM_FOUND_TITLE:0 "$aquatics.5.name$"
- MESSAGE_FROZEN_TERRAFORM_FOUND_DESC:0 "我们发现了另一个潜在的寒冰地球化候选星球，[From.GetName] 可被改造为一个出色的海洋世界。"
+ MESSAGE_FROZEN_TERRAFORM_FOUND_DESC:0 "我们发现了另一个潜在的冰封环境改造候选，[From.GetName]可以被改造成一颗极好的海洋星球。"
 
  aquatics.5.name:0 "发现冰封环境改造候选"
  aquatics.5.desc.intro:1 "我们对[From.GetName]的详尽调查表明这颗行星拥有厚重冰层，因此可以转变为一颗怡人的海洋星球。我们只需将行星大幅度加热，并赋予它可以宜居的大气即可。"
  aquatics.5.desc.1:0 "$aquatics.5.desc.intro$\n\n对这颗[From.GetPlanetMoon]进行环境改造在理论上是可行的，但我们目前还不具有在有实际意义的时间框架内完成这一里程碑式任务所需要的技术手段。"
  aquatics.5.desc.2:0 "$aquatics.5.desc.intro$\n\n巨大的能耗令人望而却步，但我们确实已经掌握了必要技术手段，可以逐步将这颗[From.GetPlanetMoon]环境改造为可以再度支持生命的星球。"
+ aquatics.5.desc.a: "一颗仍存有希望的星球……"
 
  FROZEN_TERRAFORMING_CANDIDATE_EFFECT:0 "如果我们选择§H$ap_hydrocentric$§!飞升天赋并研究£society£§H$tech_climate_restoration$§!科技，§Y[From.GetName]§!将可以被环境改造。"
 
@@ -257,24 +260,38 @@
  civic_anglers_desc:1 "这个社会非常适应水生环境，擅于利用大海的馈赠来推动经济。"
  civic_machine_anglers: "海洋机械"
  civic_machine_anglers_desc: "这个机械社会的设计可满足在不同水体环境中的无缝运行，并且擅长打造无与伦比的海洋基础设施来推动其经济发展。"
- civic_tooltip_machine_anglers_effects: "在§H海洋星球§!上，§H农业区§!没有上限限制。\n在§Y潮湿§!星球上，£job_farmer£§Y$job_farmer_plural$§!被替换为£job_angler£§Y$job_angler_plural$§!和£job_pearl_diver£§Y$job_pearl_diver_plural$§!。\n§Y$job_angler_plural$§!生产§Y8§!£food£§Y$food$§!和§Y2§!£trade_value£§Y$TRADE_VALUE$§!，而§Y$job_pearl_diver_plural$§!生产§Y6§!£consumer_goods£§Y$consumer_goods$§!和§Y2§!£trade_value£§Y$TRADE_VALUE$§!。\n增加§H$trait_robot_aquatic$§!特质。"
+ civic_tooltip_machine_anglers_effects: "$civic_tooltip_anglers_start$\n增加§Y$trait_robot_aquatic$§!特质。"
  civic_corporate_anglers:1 "网捕行动"
  civic_corporate_anglers_desc:0 "$civic_anglers_desc$"
- civic_tooltip_anglers_effects:3 "在§H海洋世界§!上，§H农业区§!没有上限限制。\n在§Y潮湿§!星球上，£job_farmer£ §Y$job_farmer_plural$§!被替换为£job_angler£ §Y$job_angler_plural$§!和£job_pearl_diver£ §Y$job_pearl_diver_plural$§!。\n§Y$job_angler_plural$ §! 生产 §Y8§! £food£ §Y$food$§! 和 §Y2§! £trade_value£ §Y$TRADE_VALUE$§!，以及§Y$job_pearl_diver_plural$ §! 生产 §Y6§! £consumer_goods£ §Y$consumer_goods$ §! 和 §Y2§! £trade_value£ §Y$TRADE_VALUE$§!。\n增加 §H$trait_aquatic$§! 特质。"
+ civic_tooltip_corporate_anglers_effects: "$civic_tooltip_anglers_effects$\nThe £building£ §Y$building_food_conglomerate$§! $megacorp_civic_branch_office_building_effect$"
+ civic_tooltip_anglers_effects:3 "$civic_tooltip_anglers_start$\n增加§Y$trait_aquatic$§!特质。"
+ civic_tooltip_anglers_start: "在§Y海洋星球§!上，§Y农业区§!没有上限。\n在§Y潮湿§!星球上，§Y农业区§!有£zone£§Y$zone_anglers$§!特化。"
  civic_corporate_machine_anglers: "海事机器人"
  civic_corporate_machine_anglers_desc: "$civic_machine_anglers_desc$"
- job_aqu_angler_effect_desc:1 "£job_angler£ $job_angler_plural$生产 £food£ §Y$food$§!和 £trade_value£ §Y$TRADE_VALUE$§!"
+ civic_tooltip_corporate_machine_anglers_effects: "$civic_tooltip_machine_anglers_effects$\nThe £building£ §Y$building_food_conglomerate$§! $megacorp_civic_branch_office_building_effect$"
+ job_aqu_angler_effect_desc:1 "£job_angler£$job_angler_plural$生产£food£§Y$food$§!和$r_trade$"
+ angler: "$job_angler$"
  job_angler:0 "渔夫"
  job_angler_plural:0 "渔夫"
+ job_angler_plural_with_icon: "£job_angler£ $job_angler_plural$"
  job_angler_desc:0 "虽然鱼钩和鱼线已成为过去，但从大自然中可持续地种植和运输食物需要同样的耐心、大量的计划以及十分的呵护。"
  mod_job_angler_add:0 "渔夫岗位"
- job_farmers_and_anglers:0 "$job_farmer_plural$ 和 £job_angler£ $job_angler_plural$"
- job_farmer_and_angler:0 "$job_farmer$ 和 £job_angler£ $job_angler$"
+ job_farmers_and_anglers:0 "[farmer.GetNamePlural]和£job_angler£$job_angler_plural$"
+ job_farmer_and_angler:0 "[farmer.GetName]和£job_angler£$job_angler$"
+ pearl_diver: "$job_pearl_diver$"
  job_pearl_diver:0 "珍珠潜水员"
  job_pearl_diver_plural:0 "珍珠潜水员"
+ job_pearl_diver_plural_with_icon: "£job_pearl_diver£ $job_pearl_diver_plural$"
  job_pearl_diver_desc:0 "尽管比起潜水，这些专家更关心耕种和耕作，他们还是从海洋深处带回了各式各样的宝藏。"
  mod_job_pearl_diver_add:0 "珍珠潜水员岗位"
- job_pearl_diver_effect_desc:1 "£job_pearl_diver£ $job_pearl_diver_plural$ 将 $r_food$ 和 $r_minerals$ 转换为 £consumer_goods£ §Y$consumer_goods$§! 和 £trade_value£ §Y$TRADE_VALUE$§!"
+ job_pearl_diver_effect_desc:1 "£job_pearl_diver£$job_pearl_diver_plural$将$r_food$和$r_minerals$转化为£consumer_goods£§Y$consumer_goods$§!和$r_trade$"
+
+ pearl_crafter: "$job_pearl_crafter$"
+ job_pearl_crafter: "珍珠工匠"
+ job_pearl_crafter_plural: "珍珠工匠"
+ job_pearl_crafter_desc: "熟练且具有创业的工匠，这些专家用大海深处的瑰宝制作各式各样的奢侈品。"
+ job_pearl_crafter_effect_desc: "£job_pearl_diver£$job_pearl_diver_plural$将$r_food$和$r_minerals$转化为$r_consumer_goods$和$r_trade$"
+
  civic_tooltip_not_anglers:1 "没有['concept_angler_civics']类公民性"
  concept_angler_civics: "渔夫"
  concept_angler_civics_desc: "渔夫类公民性包括\n—['civic:civic_anglers']$NEW_LINE$—['civic:civic_corporate_anglers']$NEW_LINE$—['civic:civic_machine_anglers']$NEW_LINE$—['civic:civic_corporate_machine_anglers']"

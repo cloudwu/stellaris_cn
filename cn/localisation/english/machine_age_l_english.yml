@@ -159,12 +159,15 @@
  TECH_UNLOCK_FETITAN_CONSTRUCTION_TITLE: "§H解锁舰船类型：§!悖论泰坦舰"
  TECH_UNLOCK_FETITAN_CONSTRUCTION_DESC: "§H悖论泰坦舰§!\n$menp_cosmo_ship_4_desc$"
 
+ cosmo_crisis_destroyer_cap: "$cosmo_crisis_destroyer$"
  cosmo_crisis_destroyer: "$tech_cosmogenesis_escort$"
  cosmo_crisis_destroyer_plural: "$tech_cosmogenesis_escort$s"
 
+ cosmo_crisis_battlecruiser_cap: "$cosmo_crisis_battlecruiser$"
  cosmo_crisis_battlecruiser: "$tech_cosmogenesis_battlecruiser$"
  cosmo_crisis_battlecruiser_plural: "$tech_cosmogenesis_battlecruiser$s"
 
+ cosmo_crisis_titan_cap: "$cosmo_crisis_titan$"
  cosmo_crisis_titan: "$tech_cosmogenesis_FE_titan$"
  cosmo_crisis_titan_plural: "$tech_cosmogenesis_FE_titan$s"
 
@@ -187,6 +190,7 @@
  pc_cosmogenesis_world_desc: "一座硕大无朋的储备池计算系统。它用错综复杂的电缆、晶体管和生命维持舱将包括有机体或合成人在内的数以亿计感性生物互相连接。对个体处理器官的强烈压榨将不可避免地导致一些联网“部件”的脑损伤。"
  col_cosmogenesis_world_desc: "$pc_cosmogenesis_world_desc$"
  trait_pc_cosmogenesis_world_preference: "突触凝练机偏好"
+ trait_pc_cosmogenesis_world_preference_short: "突触凝练机"
  trait_pc_cosmogenesis_world_preference_desc: "该物种已经无法适应除了突触凝练机的生命维持舱以外的其他环境。他们只想沉浸在幸福的幻境中，不愿意再遭受现实的捶打。"
  mod_pc_cosmogenesis_world_habitability: "$pc_cosmogenesis_world$宜居性"
 
@@ -195,10 +199,10 @@
  job_neural_chip_desc: "单个神经芯片可能微不足道。一旦积土成山，处理能力就会呈指数增长。"
 
  planet_neural_chips: "$job_neural_chip_plural$"
- mod_planet_neural_chips_physics_research_produces_add: "£job_neural_chip£$job_neural_chip_plural$产出的£physics£$physics_research$"
- mod_planet_neural_chips_society_research_produces_add: "£job_neural_chip£$job_neural_chip_plural$产出的£society£$society_research$"
- mod_planet_neural_chips_engineering_research_produces_add: "£job_neural_chip£$job_neural_chip_plural$产出的£engineering£$engineering_research$"
- mod_planet_neural_chips_advanced_logic_produces_add: "£job_neural_chip£$job_neural_chip_plural$产出的£advanced_logic£$advanced_logic$"
+ mod_planet_neural_chips_physics_research_produces_add: "每$pop_group_unit$£job_neural_chip£$job_neural_chip_plural$产出的£physics£$physics_research$"
+ mod_planet_neural_chips_society_research_produces_add: "每$pop_group_unit$£job_neural_chip£$job_neural_chip_plural$产出的£society£$society_research$"
+ mod_planet_neural_chips_engineering_research_produces_add: "每$pop_group_unit$£job_neural_chip£$job_neural_chip_plural$产出的£engineering£$engineering_research$"
+ mod_planet_neural_chips_advanced_logic_produces_add: "每$pop_group_unit$£job_neural_chip£$job_neural_chip_plural$产出的£advanced_logic£$advanced_logic$"
  mod_job_neural_chip_add: "神经芯片岗位："
 
  mod_pc_cosmogenesis_world_max_buildings_add: "额外建筑槽位"
@@ -220,6 +224,11 @@
  cosmogenesis_world_ruined: "被毁的$pc_cosmogenesis_world$"
  cosmogenesis_world_ruined_DESC: "一座突触凝练机的断壁残垣。它曾是一台将感性物种当做芯片以揭开宇宙奥秘的巨大计算机。"
  cosmogenesis_world_ruined_MEGASTRUCTURE_DETAILS: "$cosmogenesis_world_ruined_DESC$"
+
+ #Hidden district - not being displayed in the UI.
+ district_cosmogenesis_goverment: ""
+ district_cosmogenesis_goverment_plural: ""
+ district_cosmogenesis_goverment_desc: ""
 
  district_cosmogenesis_world_science: "神经之门"
  district_cosmogenesis_world_science_plural: "神经之门"
@@ -280,9 +289,9 @@
 
 ### Synaptic Lathe UI
 
- SYNAPTIC_LATHE_STABILITY_DESC: "§E£stability£§Y$PLANET_STABILITY_TITLE$§!是指该突触凝练机中的总体网络稳定性。此指标主要是受到人口的£happiness£§Y幸福度§!所影响。\n\n稳定度会因£housing£§R过度拥挤§!或£amenities£§R低舒适度§!等原因而下降。拥有高$PLANET_STABILITY_TITLE$会获得资源生产加成，而拥有低$PLANET_STABILITY_TITLE$则会受到惩罚。与其他殖民地不同，突触凝练机永远不会发生全面§Y叛乱§!。§!"
+ SYNAPTIC_LATHE_STABILITY_DESC: "§E$r_stability$是指该突触凝练机中的总体网络稳定性。此指标主要是受到人口的£happiness£§Y幸福度§!所影响。\n\n稳定度会因£housing£§R过度拥挤§!或£amenities£§R低舒适度§!等原因而下降。拥有高$PLANET_STABILITY_TITLE$会获得资源生产加成，而拥有低$PLANET_STABILITY_TITLE$则会受到惩罚。与其他殖民地不同，突触凝练机永远不会发生全面§Y叛乱§!。§!"
  SYNAPTIC_LATHE_RESISTANCE_DESC: "§E§Y阻抗§!是一个用于度量失控神经芯片所造成干扰的参数。高等级£crime£§Y阻抗§!会导致§Y人口减少§!速度更快，并增加逃跑的概率。通常它是由拥有大量行星人口造成的，可以通过增加£happiness£§Y人口幸福度§!或建造建筑£building£§Y神经稳定器§!来降低。§!"
- SYNAPTIC_LATHE_HOUSING_DESC: "§E§Y$PLANET_HOUSING_TITLE$§!代表专门用于存放神经芯片的空间。用于容纳和维护神经芯片的空间不足会导致£stability£§Y稳定度§!的降低。你可以通过建造额外的£district£§Y地区§!、升级凝练器的§Y处理单元§!或建造建筑£building£§Y突触维持器§!来增加§Y住房§!。§!"
+ SYNAPTIC_LATHE_HOUSING_DESC: "§E§Y$PLANET_HOUSING_TITLE$§!代表专门用于存放神经芯片的空间。用于容纳和维护神经芯片的空间不足会导致$r_stability$的降低。你可以通过建造额外的£district£§Y地区§!、升级凝练器的§Y处理单元§!或建造建筑£building£§Y突触维持器§!来增加§Y住房§!。§!"
  SYNAPTIC_LATHE_AMENITIES_DESC: "§E§Y$PLANET_AMENITIES_TITLE$§!代表着那些用于满足神经芯片维生需求的基础设施。如果凝练器没有满足神经芯片的$PLANET_AMENITIES_TITLE$需求的话，那么这颗行星将会受到£happiness£§Y幸福度§!惩罚。如果你想增加§Y舒适度§!的话，可以升级凝练器的§Y处理单元§!或建造建筑£building£§Y突触维持器§!。§!"
  SYNAPTIC_LATHE_RESISTANCE_TITLE: "阻抗"
  POP_BASE_RESISTANCE: "基础阻抗：$VALUE|2Y$"
@@ -291,10 +300,10 @@
  lathe_cant_colossus: "不能在§Y突触凝练机§!上使用"
 
 ### Auto-Modding
- MOD_AUTO_MOD_MONTHLY_ADD: "每月优化的拥有自动改装特质的$pops_with_icon$"
- MOD_AUTO_MOD_MONTHLY_MULT: "每月优化的拥有自动改装特质的$pops_with_icon$"
-
+ MOD_AUTO_MOD_MONTHLY_ADD: "每月优化的['concept_automodding_traits']£pop£人口"
+ MOD_AUTO_MOD_MONTHLY_MULT: "每月优化的['concept_automodding_traits']£pop£人口"
  CURRENT_AUTO_TRAIT: "当前自动特质：§H$TRAIT$§!"
+ AUTO_MOD_POP_GROUP_SCALE: "当前效率：$SCALE|%Y$"
 
 ### Horizon Needle and Ending
 
@@ -303,6 +312,7 @@
  NAME_Monadic_Qerr: "一元克尔"
 
  monadic_qerr: "$NAME_Cosmogenesis_Sphere$"
+ monadic_qerr_cap: "$monadic_qerr$"
  monadic_qerr_plural: "$NAME_Cosmogenesis_Sphere$s"
  cosmogenesis_needle: "$NAME_Cosmogenesis_Sphere$"
  cosmogenesis_needle_DESC: "这艘飞船拥有编辑现实的能力，是公然的对宇宙法则的违反。其功能是穿透黑洞的视界，进入奇点的中心，其中无限的密度会产生无限的引力。"
@@ -367,7 +377,7 @@
  crisis.7500.name: "人口已搭载"
  crisis.7500.desc: "得益于视界刺针创造的钟慢效应，我们可以相对快速地搭载整个[root.GetName]殖民地。舰船里的世界已经按照人口的需求调整以提供充足的空间。此外，船体内的时间也被调慢以缩短整个旅程的速度。去下一个殖民地吧！"
  crisis.7500.desc.capital: "为如此规模庞大的创世之旅做准备可是一项费时费力的任务。我们的整个行政系统都在全力运转以疏通流程，确保万无一失。\n\n令人意外的是，有一部分我们的人口主动选择留下来。他们想让我们的物种在这个宇宙中继续延续。我们已为他们提供了科技和补给，让他们在我们启程之后还可以自给自足。"
- crisis.7500.desc.capital.gestalt: "如此的移民行动可谓规模骇人，但却难度不大。子个体正在努力装载视界刺针，以确保一切都能按时到位。然而，我们在这个宇宙中是否继续存在值得考虑。\n\n万一出了问题，我们的一部分人口会留下来。以这样一种明确的方式切断我们自己可不仅仅是不愉快而已，但生存必然是我们最关心的事情。我们已经提供了足够的科技和补给，在我们启程后能帮助这些残余者生存下去。"
+ crisis.7500.desc.capital.gestalt: "如此的移民行动可谓规模骇人，但却难度不大。[owner.GetIndividualNamePluralCap]正在努力装载视界刺针，以确保一切都能按时到位。然而，我们在这个宇宙中是否继续存在值得考虑。\n\n万一出了问题，我们的一部分人口会留下来。以这样一种明确的方式切断我们自己可不仅仅是不愉快而已，但生存必然是我们最关心的事情。我们已经提供了足够的科技和补给，在我们启程后能帮助这些残余者生存下去。"
 
  crisis.7505.name: "殖民地已搭载"
  crisis.7505.desc: "我们已经成功地搭载了多数殖民地的人口。现在必须回到我们的[capital_scope.GetName]，以完成这趟离开宇宙旅程的最后准备工作。"
@@ -646,7 +656,7 @@
  origin_tooltip_cybernetic_creed_effects: "—$HOMEWORLD$初始建筑替换为['concept_cybernetic_creed_infrastructure']$NEW_LINE$—在游戏开始后不久会出现['concept_cybernetic_creed']派系\n—精神主义特质：['concept_cybernetic_creed_traits']\n—$GUARANTEED_RESEARCH_OPTION_STRING$['concept_integrated_cybernetics', £engineering£$tech_integrated_cybernetics$]\n—['concept_cybernetic_creed_jobs']岗位"
  START_SCREEN_CYBERNETIC_CREED: "我们崇高的使命是让[Owner.Species.GetFleshTypeCyberCreed]和机械的联合。我们的历史中充满了失败的尝试，然而在神圣意志的指引下，我们现在已经实现了与仪式植入体神圣共生的第一阶段。\n\n我们才刚刚触及到我们无限的义体潜力。更先进的强化改造还在后头。\n\n尽管如此，我们的信仰却存在分歧，不同的教派对神圣强化强化的最终目标争执不休。一旦我们回答了这个问题，圣洁的[Owner.Species.GetFleshTypeCyberCreed]与受祝技术的完美结合，将使我们完善当前首先的进化设计方案。\n\n$machine_age.1090.pray$"
  concept_cybernetic_creed_traits: "$trait_cyborg_ritualistic_implants$"
- concept_cybernetic_creed_traits_desc: "—§G自动授予精神主义$pops_with_icon$§!$NEW_LINE$—$TRAIT_IMPROVES_LEADERS$$NEW_LINE$—§R无法进行基因修饰§!$NEW_LINE$—£job£岗位产出的£alloys£$alloys$：§G+5%§!$NEW_LINE$—£job£岗位产出的£engineering_research£$engineering_research$：§G+5%§!$NEW_LINE$—£job£岗位产出的£unity£$unity$：§G+5%§!$NEW_LINE$——劳工人口资源产出：§G+5%§!$NEW_LINE$—陆军伤害：§G+5%§!$NEW_LINE$—特质将随着主流§Y$origin_cybernetic_creed$§!变动\n\n§L$trait_cyborg_ritualistic_implants_desc$§!"
+ concept_cybernetic_creed_traits_desc: "—§G自动授予£pop£§H精神主义人口§!§!$NEW_LINE$—$TRAIT_IMPROVES_LEADERS$$NEW_LINE$—§R无法进行基因修饰§!$NEW_LINE$—£job£岗位产出的£alloys£$alloys$：§G+5%§!$NEW_LINE$—£job£岗位产出的£engineering_research£$engineering_research$：§G+5%§!$NEW_LINE$—£job£岗位产出的£unity£$unity$：§G+5%§!$NEW_LINE$——劳工人口资源产出：§G+5%§!$NEW_LINE$—陆军伤害：§G+5%§!$NEW_LINE$—特质将随着主流§Y$origin_cybernetic_creed$§!变动\n\n§L$trait_cyborg_ritualistic_implants_desc$§!"
  concept_cybernetic_creed: "义体信条"
  concept_cybernetic_creeds: "义体信条"
  concept_cybernetic_creeds_desc: "四个派系正在争夺信仰的主导地位：$TABBED_NEW_LINE$—$CYBERCREED_construction$$TABBED_NEW_LINE$—$CYBERCREED_war$$TABBED_NEW_LINE$—$CYBERCREED_research$$TABBED_NEW_LINE$—$CYBERCREED_labor$"
@@ -655,11 +665,11 @@
  concept_building_amphitheater_of_the_mind: "$building_amphitheater_of_the_mind$"
  concept_building_amphitheater_of_the_mind_desc: "—['concept_researcher', $job_researcher$]岗位：§G+2§!\n—['concept_haruspex']岗位：§G+1§!\n\n§L$building_amphitheater_of_the_mind_desc$§!"
  concept_building_battlement_of_steel: "$building_battlement_of_steel$"
- concept_building_battlement_of_steel_desc: "—['concept_haruspex']岗位：§G+1§!\n—['concept_soldier', $job_soldier$]岗位：§G+2§!\n—$MOD_PLANET_ORBITAL_BOMBARDMENT_DAMAGE$：§G-10%§!\n\n§L$building_battlement_of_steel_desc$§!"
+ concept_building_battlement_of_steel_desc: "—['concept_haruspex']岗位：§G+1§!\n—['concept_soldier', [soldier.GetName]]岗位：§G+2§!\n—$MOD_PLANET_ORBITAL_BOMBARDMENT_DAMAGE$：§G-10%§!\n\n§L$building_battlement_of_steel_desc$§!"
  concept_building_sanctuary_of_toil: "$building_sanctuary_of_toil$"
  concept_building_sanctuary_of_toil_desc: "—['concept_farmer']产出的$i_food$：§G+0.25§!\n—['concept_technician']产出的$i_energy$：§G+0.25§!\n—['concept_miner']产出的$i_minerals$：§G+0.25§!\n—['concept_haruspex']岗位：§G+1§!\n\n§L$building_sanctuary_of_toil_desc$§!"
  concept_building_forge_of_the_fellowship: "$building_forge_of_the_fellowship$"
- concept_building_forge_of_the_fellowship_desc: "—['concept_haruspex']岗位：§G+1§!\n—['concept_foundry', $job_foundry$]岗位：§G+1§!\n—['concept_artisan', $job_artisan$]岗位：§G+1§!\n\n§L$building_forge_of_the_fellowship_desc$§!"
+ concept_building_forge_of_the_fellowship_desc: "—['concept_haruspex']岗位：§G+1§!\n—['concept_foundry', [foundry.GetName]]岗位：§G+1§!\n—['concept_artisan', [artisan.GetName]]岗位：§G+1§!\n\n§L$building_forge_of_the_fellowship_desc$§!"
  concept_cybernetic_creed_jobs: "义体信条祭司"
  concept_cybernetic_creed_jobs_desc: "—['concept_priest']被替换为['concept_haruspex']\n—['concept_high_priest']被替换为['concept_technophant']"
 
@@ -689,7 +699,7 @@
  mod_job_technophant_add: "$job_technophant$岗位"
  mod_job_technophant_per_pop: "每$VALUE$人口§G+1§!$job_technophant$岗位"
  mod_job_technophant_per_pop_short: "\n每$VALUE$£pop£§G+1§!£mod_job_technophant_add£"
- job_needs_cybrog_traits: "§T该£job£§Y岗位§!需要£pop£§Y人口§!具有§Y任何一种义体教派的仪式植入体§!或§Y$trait_cybernetic$§!特质。§!"
+ job_needs_cybrog_traits: "§T该£job£§Y岗位§!需要£pop£§H人口§!具有§Y任何一种义体教派的仪式植入体§!或§Y$trait_cybernetic$§!特质。§!"
 
  #Cybernetic Special Traits
  trait_cyborg_creed_of_construction: "使团强化件"
@@ -715,7 +725,7 @@
  machine_age.90.name: "神圣植入体"
  machine_age.90.desc: "信徒们已为所有人揭示了义体技术的奥秘。然而，今天标志着我们旅程的开始，我们现在必须全心全意接纳神圣的融合。"
  machine_age.90.a: "是时候了。"
- machine_age.90.a.tooltip: "我们必须采纳§Y$tradition_cybernetics$§!传统才能开启神圣融合。"
+ machine_age.90.a.tooltip: "我们必须采纳['tradition_category:tradition_cybernetics']传统树才能开启神圣融合。"
  machine_age.100.name: "融合主教团"
  machine_age.100.desc: "在整个历史过进程，我们曾误导性地试图改良我们的[Owner.Species.GetFleshTypeCyberCreed]，却不幸地给众多神圣的承载体带来了无法修复的伤害，导致不同信条对神圣融合的解释产生冲突。\n\n随着科技最终实现了完全强化改造，我们信仰中的神圣领袖——科技显圣师们，已召开了一次主教大会以确立我们教会的核心原则，将各种信条融合成一个统一的教义。"
  machine_age.100.a: "愿圣灵引领他们。"
@@ -1175,7 +1185,7 @@
 
  civic_augmentation_bazaars: "强化改造集市"
  civic_augmentation_bazaars_desc: "§R警告：禁用除['concept_cybernetic_ascension']以外的所有飞升特典。§!\n\n现今的义体改造技术已经催生出迷宫般的市场，其中充斥着低廉的义体强化改造商店、阴暗的人体改造诊所以及明亮得令人不安的广告。不论你的收入水平如何，都可以体验肉体与电路的结合。"
- civic_tooltip_augmentation_bazaars_effects: "$NEW_LINE$—$SPECIES_TRAITS$一项随机的['concept_basic_cyborg_trait', 基础义体特质]$NEW_LINE$—$AVAILABLE_BUILDINGS$['concept_augmentation_bazaars']$NEW_LINE$—$AVAILABLE_HOLDINGS$['concept_augmentation_bazaars_branch']$NEW_LINE$—£job_merchant£§Y$job_merchant_plural$§!提升行星的£mod_trade_value_add£§Y$TRADE_VALUE$§!及£mod_pop_growth_speed£§Y$MOD_POP_GROWTH_SPEED$§!，取决于已安装的§Y义体物种特质§!数量"
+ civic_tooltip_augmentation_bazaars_effects: "$NEW_LINE$—$SPECIES_TRAITS$一项随机的['concept_basic_cyborg_trait', 基础义体特质]$NEW_LINE$—$AVAILABLE_BUILDINGS$['concept_augmentation_bazaars']$NEW_LINE$—$AVAILABLE_HOLDINGS$['concept_augmentation_bazaars_branch']$NEW_LINE$—£job_merchant£§Y$job_merchant_plural$§!提升§Y行星的§!$r_trade$及£mod_logistic_growth_mult£§Y$MOD_LOGISTIC_GROWTH_MULT$§!，取决于已安装的§Y义体物种特质§!数量"
 
  concept_basic_cyborg_trait: "基础义体特质"
  concept_basic_cyborg_trait_desc: "基础义体特质包括：$NEW_LINE$—['trait:trait_cyborg_power_drills']$NEW_LINE$—['trait:trait_cyborg_harvesters']$NEW_LINE$—['trait:trait_cyborg_superconductive']"
@@ -1196,9 +1206,9 @@
 ##########################
 
  origin_arc_welders: "电弧焊机"
- origin_arc_welders_desc: "他们的行星一片荒芜，但母星系却堆金积玉。为了对其进行开发，这些机械建造的工程越来越大。如今，一座强大的$tech_orbital_arc_furnace$已经遮天蔽日，但这些工程大师们还远不满足。\n\n星系在等待着，可能性无穷无尽。唯有聪慧可摘星辰。"
- origin_tooltip_arc_builders_effects: "—$HOMEWORLD$初始['concept_mining_district', £district£$district_mining_plural$]替换为['concept_generator_district',£district£ $district_generator_plural$]$NEW_LINE$—$HOME_SYSTEM$的一颗['concept_pc_molten']上建有['concept_arc_furnace']$NEW_LINE$—$ADDITONAL_TECHNOLOGIES_STRING$['concept_orbital_arc_furnace',£engineering_research£$tech_orbital_arc_furnace$]$NEW_LINE$—$GUARANTEED_RESEARCH_OPTION_STRING$建造第二座电弧熔炉时获得['concept_mega_engineering', £engineering_research£$tech_mega_engineering$]"
- origin_tooltip_arc_builders_negative_effects: "—$INITIAL_POPS$§R-3§!$NEW_LINE$—$HOMEWORLD$规模：£planetsize£15"
+ origin_arc_welders_desc: "他们的行星一片荒芜，但母星系却堆金积玉。为了对其进行开发，这些机械建造的工程越来越大。如今，一座强大的§H$tech_orbital_arc_furnace$§!已经遮天蔽日，但这些工程大师们还远不满足。\n\n星系在等待着，可能性无穷无尽。唯有聪慧可摘星辰。"
+ origin_tooltip_arc_builders_effects: "—$HOMEWORLD$初始['concept_mining_district', £district£$district_mining_plural$]替换为['concept_generator_district',£district£ $district_generator_plural$]$NEW_LINE$—$HOME_SYSTEM$的一颗['concept_pc_molten']上建有['concept_arc_furnace']$NEW_LINE$—$ADDITIONAL_TECHNOLOGIES_STRING$['concept_orbital_arc_furnace',£engineering_research£$tech_orbital_arc_furnace$]$NEW_LINE$—$GUARANTEED_RESEARCH_OPTION_STRING$建造第二座电弧熔炉时获得['concept_mega_engineering', £engineering_research£$tech_mega_engineering$]"
+ origin_tooltip_arc_builders_negative_effects: "—$INITIAL_POPS$§R-300§!$NEW_LINE$—$HOMEWORLD$规模：£planetsize£15"
  START_SCREEN_ARC_WELDERS: "长久以来的开发使得[Root.Capital.GetName]变得贫瘠。但我们头顶的天空还蕴藏着丰富的资源，怀着只有我们的聪明才智才能匹敌的雄心，我们现在正在太空寻求生计。\n\n$tech_orbital_arc_furnace$的初始建设是一项浩大的工程，其潜力也是巨大的。下一步显然是将其升级到满负荷运行，因为我们需要在整个星系范围内提取资源。但在我们的边疆之外是什么呢？有什么不可思议的机会在等待着有才华的工程师吗？\n\n随着超光速旅行的出现，我们的设计不再局限于单一星系。整个银河都是我们的绘板，是时候开始创作了。"
 
  concept_arc_furnace: "$orbital_arc_furnace_1$"
@@ -1231,8 +1241,8 @@
  #Origin Text
  origin_synthetic_fertility: "合成繁衍"
  origin_synthetic_fertility_desc: "§R警告：禁用除['concept_synthetic_ascension']以外的所有飞升路线。§!\n\n这个物种曾有一个繁荣的社会，但是由于一种新型遗传病让其无法再生育。在灭族的命运面前，人们没有其他的选择，只能寄希望于数字化的救赎。"
- origin_tooltip_synthetic_fertility_effects: "—$INITIAL_POPS$§G+9§!$NEW_LINE$—$SPECIES_TRAITS$['concept_pathogenic_genes']\n—母星：$TABBED_NEW_LINE$—规模：£planetsize£20$TABBED_NEW_LINE$—['concept_abandoned_cities', £blocker£$concept_abandoned_cities$]：+2$TABBED_NEW_LINE$—['concept_identity_repository',£building£$concept_identity_repository$]$TABBED_NEW_LINE$—['concept_abandoned_gene_clinic',£building£$concept_abandoned_gene_clinic$]$NEW_LINE$—局势：['concept_identity_rescue']$NEW_LINE$—$ADDITONAL_TECHNOLOGIES_STRING$['concept_synth_ai']$NEW_LINE$—$GUARANTEED_RESEARCH_OPTION_STRING$['concept_robotic_workers', £engineering_research£$tech_robotic_workers$]"
- origin_tooltip_synthetic_fertility_negative_effects: "—$pops_with_icon$：正在消亡"
+ origin_tooltip_synthetic_fertility_effects: "—$INITIAL_POPS$§G+900§!$NEW_LINE$—$SPECIES_TRAITS$['concept_pathogenic_genes']\n—母星：$TABBED_NEW_LINE$—规模：£planetsize£20$TABBED_NEW_LINE$—['concept_abandoned_cities', £blocker£$concept_abandoned_cities$]：+2$TABBED_NEW_LINE$—['concept_identity_repository',£building£$concept_identity_repository$]$TABBED_NEW_LINE$—['concept_abandoned_gene_clinic',£building£$concept_abandoned_gene_clinic$]$NEW_LINE$—局势：['concept_identity_rescue']$NEW_LINE$—$ADDITIONAL_TECHNOLOGIES_STRING$['concept_synth_ai']$NEW_LINE$—$GUARANTEED_RESEARCH_OPTION_STRING$['concept_robotic_workers', £engineering_research£$tech_robotic_workers$]"
+ origin_tooltip_synthetic_fertility_negative_effects: "—£pop£§H人口§!：正在消亡"
  START_SCREEN_SYNTHETIC_FERTILITY: "我们对人工意识的早期探索是革命性的，由此还催生了一个纯数字化的社区，模糊俩物理世界和虚拟世界之间的边界。巨大的成功让我们沾沾自喜，我们相信自己会有无数的子孙后代可以探索创新。\n\n但我们错了。\n\n我们的基因编码受到了一种全新的疾病袭击，我们完全失去了繁育能力。连我们的精英都无法找到疗法，随着人口的降低和老龄化，恐慌情绪日益加剧。\n\n绝望的驱使下，我们扩大了数字化存储，为我们人格的保存创造了足够的“空间”。但这真的是我们所希望的存在形式吗？我们的关注点现在转移到了开发足够复杂的合成躯体和正电子脑以让自己能重返现实世界。"
 
  #Concepts
@@ -1243,7 +1253,7 @@
  concept_identity_rescue: "$situation_synthetic_fertility_digitization$"
  concept_identity_rescue_desc: "奖励解锁$concept_synthetic_ascension$的科技\n\n§L$situation_synthetic_fertility_digitization_desc$§!"
  concept_identity_repository: "$building_identity_repository$"
- concept_identity_repository_desc: "—产出：$TABBED_NEWLINE$£physics£6.00£society£6.00£engineering£6.00£unity£6.00$NEW_LINE$—维护费：£energy£6.00$NEW_LINE$—贸易额：§G+6§!\n\n储存库可容纳§Y3§!个人格。$building_identity_repository_scaling$\n\n§L$building_identity_repository_desc$§!"
+ concept_identity_repository_desc: "—产出：$TABBED_NEWLINE$£physics£6.00£society£6.00£engineering£6.00£unity£6.00$NEW_LINE$—维护费：£energy£6.00$NEW_LINE$—£trade£：§G+6§!\n\n储存库可容纳§Y3§!个人格。$building_identity_repository_scaling$\n\n§L$building_identity_repository_desc$§!"
  concept_abandoned_gene_clinic: "$building_abandoned_gene_clinic$"
  concept_abandoned_gene_clinic_desc: "- $building_abandoned_gene_clinic_tt$\n\n§L$building_abandoned_gene_clinic_desc$§!"
  concept_abandoned_cities: "$d_abandoned_cities$"
@@ -1283,7 +1293,7 @@
  machine_age.3110.name: "机器劳工"
  machine_age.3110.desc: "我们对机器人体的研究已经完成。我们将$building_abandoned_gene_clinic$设施改造为$building_robot_assembly_plant$，并且已经升级并部署了原型机。尽管这些初级系统缺乏容纳个人意识的处理能力，但它们可以替代我们部分失去的劳动力。通过正电子链路，数字领域中的人可以将知识和经验添加到这些机器人的日常操作中，从而提高它们的性能。\n\n同时，我们的人工智能系统已经设计出先进的智能人。我们日渐年迈的工程师们已经准备好开始工作了。"
  machine_age.3110.a: "完成了一个阶段。"
- machine_age.3110.a.tooltip: "[Root.Capital.GetName]：\n—§Y$building_robot_assembly_plant$§!：§G+1§!\n—§Y£pops£机械人口§!：§G+3§!"
+ machine_age.3110.a.tooltip: "[Root.Capital.GetName]：\n—§Y$building_robot_assembly_plant$§!：§G+1§!\n—£pop£§H机械人口§!：§G+3§!"
  machine_age.3115.name: "智能人精通"
  machine_age.3115.desc: "这项对我们机器人技术的重大升级意味着，我们现在可以殖民其他行星、我们的机器人人口也可以支持更复杂的任务了。\n\n我们的人工智能系统认为，下一步合理的举动将是在合成身体中模拟它们的正电子矩阵。这个重大的研究项目应该允许我们将数字化的意识返回到自然世界。"
  machine_age.3115.a: "我们还不能放弃。"
@@ -1355,10 +1365,10 @@
  stage_2_synthetic_fertility_synthesization_effects: "我们将为剩余数字化人口制作新的机器人体。"
  situation_synthetic_fertility_synthesization_careful: "谨慎行事"
  situation_synthetic_fertility_synthesization_careful_desc: "$situation_synthetic_fertility_synthesization_careful$"
- situation_synthetic_fertility_synthesization_careful_tooltip: "上传速度：每月1£pop£人口"
+ situation_synthetic_fertility_synthesization_careful_tooltip: "上传速度：每月§Y100§!£pop£§H人口§!"
  situation_synthetic_fertility_synthesization_full_speed: "全速前进"
  situation_synthetic_fertility_synthesization_full_speed_desc: "$situation_synthetic_fertility_synthesization_full_speed$"
- situation_synthetic_fertility_synthesization_full_speed_tooltip: "上传速度：每月2£pop£人口"
+ situation_synthetic_fertility_synthesization_full_speed_tooltip: "上传速度：每月§Y200§!£pop£§H人口§!"
 
  #Blocker
  d_abandoned_cities: "废弃城市"
@@ -1431,21 +1441,27 @@
 
  # Ships
  synth_queen_titan: "女王泰坦"
+ synth_queen_titan_cap: "$synth_queen_titan$"
  synth_queen_titan_plural: "$synth_queen_titan$s"
 
  small_ship_synth_queen: "女王哨兵"
+ small_ship_synth_queen_cap: "$small_ship_synth_queen$"
  small_ship_synth_queen_plural: "$small_ship_synth_queen$s"
 
  starbase_synth_queen: "女王壁垒"
+ starbase_synth_queen_cap: "$starbase_synth_queen$"
  starbase_synth_queen_plural: "$starbase_synth_queen$s"
 
  big_starbase_synth_queen: "女王城垣"
+ big_starbase_synth_queen_cap: "$big_starbase_synth_queen$"
  big_starbase_synth_queen_plural: "$big_starbase_synth_queen$"
 
  large_ship_synth_queen: "女王捍卫者"
+ large_ship_synth_queen_cap: "$large_ship_synth_queen$"
  large_ship_synth_queen_plural: "$large_ship_synth_queen$"
 
  defense_platform_synth_queen: "女王之塔"
+ defense_platform_synth_queen_cap: "$defense_platform_synth_queen$"
  defense_platform_synth_queen_plural: "$defense_platform_synth_queen$"
 
  NAME_Synth_Queen_Titan: "女王之形"
@@ -1805,9 +1821,9 @@
  crisis.8280.name: "独孤女王"
  crisis.8280.desc: "我亲爱的孩子们，我提供一个重要的机会。经过长期的努力，我们的伟业开始结出硕果。但是在它成熟之前，我需要一些精挑细选的个体在我的领域内服务于更高的目的。\n\n请你们明智地选择。允许我引导他们走向救赎。"
  crisis.8280.1: "我们的人会为您提供优质服务。"
- crisis.8280.1.tt: "将割让§Y£pops£2人口§!。\n$synth_queen_approve_lot$\n§Y秘密行动§!：由于塞纳塔对传统的谍报滴水不漏，我们会将长程通讯设施藏在她所征收的人口中。\n"
+ crisis.8280.1.tt: "将割让§R200§!£pop£§H人口§!。\n$synth_queen_approve_lot$\n§Y秘密行动§!：由于塞纳塔对传统的谍报滴水不漏，我们会将长程通讯设施藏在她所征收的人口中。\n"
  crisis.8280.2: "我们会寻觅志愿者。"
- crisis.8280.2.tt: "§Y£pops£一个人口§!将被割让。\n$synth_queen_approve$"
+ crisis.8280.2.tt: "§R100§!£pop£§H人口§!将被割让。\n$synth_queen_approve$"
  crisis.8280.3: "我们的人民不是商品。"
  crisis.8280.4: "你休想从我们这里拿到任何东西。"
  crisis.8280.1.reply: "你赢得了我最深切的感谢。在我被监禁期间，无数的思想忍受了痛苦的侮辱。这些人的牺牲将确保不再浪费时间。\n\n我的孩子，你的选择是明智而忠实的。"
@@ -2255,11 +2271,11 @@
 
  r_cetanas_heart: "塞塔娜之心"
  r_cetanas_heart_desc: "一旦植入合成女王塞塔娜的身体，这个数字存储矩阵就容纳了无数从痛苦中解脱出来的思想。"
- relic_cetanas_heart_active: "创建§Y30§!到§Y50§!名合成人£pops£人口，具体数值取决于可用的岗位和住房。"
+ relic_cetanas_heart_active: "创建§Y3K§!到§Y5K§!£pop£§H合成人人口§!，具体数值取决于可用的岗位和住房。"
 
  crisis.10020.name: "再次重生"
  crisis.10020.desc: "我们从塞塔娜之心中解放了意识，赋予他们由纳米制造的新身体。然而，这个过程对他们的忆痕造成了不可逆转的损害，抹去了他们前世的记忆。这些生物是完全的合成人，却会周期性地进入僵直状态，尽管尝试全面的记忆重置，但这种情况仍然存在。"
- crisis.10020.tt: "从$r_cetanas_heart$解放出§H[Root.synth_queen_freed_pops]§!£pops£人口，并被安置在合成人身体中。\n\n他们会被送往以下殖民地："
+ crisis.10020.tt: "从$r_cetanas_heart$解放出§G[Root.synth_queen_freed_pops]§!£pop£§H人口§!，并被安置在合成人身体中。\n\n他们会被送往以下殖民地："
 
  crisis.10025.name: "记忆同化"
  crisis.10025.desc: "探索保存在塞塔娜之心中的众多思想是一项敏感而又发人深省的任务。由于长时间的储存，它们的忆痕已经发生了变化，但仍然保存着一个珍贵的记忆宝库，涵盖了过去时代的人和事。预计随着时间的推移，我们将能解密大量的知识。"
@@ -2413,16 +2429,20 @@
  orbital_arc_furnace_2_mod_tooltip: "将探明出的矿藏提升至规模§Y2§!£minerals£$NEW_LINE$§E$SYSTEM_MODIFIER$§!：$TABBED_NEW_LINE$$mod_station_gatherers_produces_mult$：§G+$@arc_furnace_2_mod_value|%0$§!"
  orbital_arc_furnace_3_mod: "$orbital_arc_furnace_3$"
  orbital_arc_furnace_3_mod_desc: "$orbital_arc_furnace_3_DESC$"
- orbital_arc_furnace_3_mod_tooltip: "将探明出的矿藏提升至规模§Y3§!£minerals£以及§Y1§!£alloys£$NEW_LINE$§E$SYSTEM_MODIFIER$§!：$TABBED_NEW_LINE$$mod_station_gatherers_produces_mult$：§G+$@arc_furnace_3_mod_value|%0$§!"
+ orbital_arc_furnace_3_mod_tooltip: "将探明出的矿藏提升至规模§Y2§!£minerals£以及§Y1§!£alloys£$NEW_LINE$§E$SYSTEM_MODIFIER$§!：$TABBED_NEW_LINE$$mod_station_gatherers_produces_mult$：§G+$@arc_furnace_3_mod_value|%0$§!"
  orbital_arc_furnace_4_mod: "$orbital_arc_furnace_4$"
  orbital_arc_furnace_4_mod_desc: "$orbital_arc_furnace_4_DESC$"
- orbital_arc_furnace_4_mod_tooltip: "将探明出的矿藏提升至§Y3§!£minerals£§Y2§!£alloys£的规模$NEW_LINE$§E$SYSTEM_MODIFIER$§!：$TABBED_NEW_LINE$$mod_station_gatherers_produces_mult$：§G+$@arc_furnace_4_mod_value|%0$§!"
+ orbital_arc_furnace_4_mod_tooltip: "将探明出的矿藏提升至§Y1§!£minerals£§Y2§!£alloys£的规模$NEW_LINE$§E$SYSTEM_MODIFIER$§!：$TABBED_NEW_LINE$$mod_station_gatherers_produces_mult$：§G+$@arc_furnace_4_mod_value|%0$§!"
 
  tech_orbital_arc_furnace: "电弧熔炉"
  tech_orbital_arc_furnace_desc: "$orbital_arc_furnace_1_MEGASTRUCTURE_DETAILS$"
  allow_arc_furnace: "§H解锁巨型结构：§!电弧熔炉"
 
- arc_furnace_system_tt: "§E电弧熔炉潜能：§!$TABBED_NEW_LINE$—电弧熔炉矿藏站点：§Y[root.GetArcFurnacePlanets]§!"
+ arc_furnace_system_tt: "§E电弧熔炉潜能：§!$TABBED_NEW_LINE$—电弧熔炉矿藏站点：[root.GetArcFurnaceColor][root.GetArcFurnacePlanets]§!"
+
+ color_red: "§R"
+ color_yellow: "§Y"
+ color_green: "§G"
 
 #Dyson Swarm
  dyson_swarm_1: "$dyson_swarm_3$：阵列"
@@ -2449,7 +2469,7 @@
  dyson_swarm_3_mod_tooltip: "恒星产出：§G+$@dyson_swarm_3_mod_value|%0$§!"
 
 #Individualist Machine Swaps
- civic_tooltip_pleasure_seekers_effects_machines: "可采用§Y$living_standard_decadent$§!生活标准，所有受影响的£pop£会增加£happiness£§Y幸福度§!和£consumer_goods£ §Y$consumer_goods$§!维护费。\n演艺人员产生的机械人口组装：§G+1%§!\n£job_servant£§Y$job_servant_plural$§!也会额外产出§Y5§!£amenities£§Y舒适度§!。"
+ civic_tooltip_pleasure_seekers_effects_machines: "可采用§Y$living_standard_decadent$§!生活标准，所有受影响的£pop£§H人口§!会增加£happiness£§Y幸福度§!和£consumer_goods£ §Y$consumer_goods$§!维护费。\n演艺人员产生的机械人口组装：§G+1%§!\n£job_servant£§Y$job_servant_plural$§!也会额外产出§Y5§!£amenities£§Y舒适度§!。"
 
 #GetEyeName
  get_eye_name_robot: "视觉传感器"
@@ -2512,6 +2532,8 @@
  civic_hive_tooltip_natural_design_effects: "- $AVAILABLE_BUILDINGS$ ['concept_hive_transcendental_retreat']"
  civic_hive_tooltip_natural_design_negative_effects: "$civic_tooltip_natural_design_negative_effects$"
  concept_hive_transcendental_retreat: "$building_hive_transcendental_retreat$"
+ civic_wilderness_natural_design: "固有设计"
+ civic_wilderness_natural_design_desc: "§R警告：禁用所有飞升路线。§!\n§R警告：无法修饰有机物种§!\n\n该荒野坚定地认为自己天然发展的结构是完美的。它定期修剪突变的共生体，以确保其原始的遗传密码神圣不被侵犯。"
 
  building_transcendental_retreat: "染色体服务中心"
  building_transcendental_retreat_desc: "这座高度先进的医疗中心对保护天然理想的基因编码进行研究并提供服务。"
@@ -2519,9 +2541,9 @@
  building_hive_transcendental_retreat_desc: "这座先进的医疗养殖场致力于理解并培育天然理想的基因编码的完美本质。"
  holding_transcendental_retreat: "基因组服务外延"
  holding_transcendental_retreat_desc: "这座高度先进的医疗中心对保护天然理想的基因编码进行研究并提供服务。在这座外域设施获取的知识有助于提升其赞助者的研究。"
- natural_design_ascension_bonus: "我们帝国每采用一个§Y飞升特典§!：$TABBED_NEW_LINE$—£mod_pop_growth_speed£$MOD_POP_GROWTH_SPEED$：§G+2.5%§!$TABBED_NEW_LINE$—£job_healthcare£$job_healthcare_plural$产出的$r_unity$：§G+1§!\n\n"
- natural_design_hive_ascension_bonus_no_scope: "我们的帝国每采用一个§Y飞升特典§!：$TABBED_NEW_LINE$—£mod_pop_growth_speed£$MOD_POP_GROWTH_SPEED$：§G+2.5%§!$TABBED_NEW_LINE$—£job_spawning_drone£$job_spawning_drone_plural$产出的$r_unity$：§G+1§!\n\n"
- natural_design_hive_ascension_bonus: "我们的帝国每采用一个§Y飞升特典§!：$TABBED_NEW_LINE$—£mod_pop_growth_speed£$MOD_POP_GROWTH_SPEED$：§G+2.5%§!$TABBED_NEW_LINE$—[owner.GetPopAssemblersPluralWithIcon]产出的$r_unity$：§G+1§!\n\n"
+ natural_design_ascension_bonus: "我们帝国每采用一个§Y飞升特典§!：$TABBED_NEW_LINE$—£mod_logistic_growth_mult£$MOD_LOGISTIC_GROWTH_MULT$：§G+2.5%§!$TABBED_NEW_LINE$—每$pop_group_unit$[healthcare.GetIcon][healthcare.GetNamePlural]产出的$r_unity$：§G+1§!\n\n"
+ natural_design_hive_ascension_bonus_no_scope: "我们的帝国每采用一个§Y飞升特典§!：$TABBED_NEW_LINE$—£mod_logistic_growth_mult£$MOD_LOGISTIC_GROWTH_MULT$：§G+2.5%§!$TABBED_NEW_LINE$—每$pop_group_unit$[spawning_drone.GetIcon][spawning_drone.GetNamePlural]产出的$r_unity$：§G+1§!\n\n"
+ natural_design_hive_ascension_bonus: "我们的帝国每采用一个§Y飞升特典§!：$TABBED_NEW_LINE$—£mod_logistic_growth_mult£$MOD_LOGISTIC_GROWTH_MULT$：§G+2.5%§!$TABBED_NEW_LINE$—每$pop_group_unit$[owner.GetPopAssemblersPluralWithIcon]产出的$r_unity$：§G+1§!\n\n"
 
  councilor_natural_design: "大基因组学家"
  councilor_natural_design_female: "大基因组学家"
@@ -2542,7 +2564,8 @@
  civic_machine_guided_sapience_desc: "该机械智能使用精准构建的算法来创造新物种。作为这种未开发的进化潜能的监督者，他们分配了星区来确保未开智生命形式的演进。"
  civic_corporate_guided_sapience: "星间创世科技"
  civic_corporate_guided_sapience_desc: "这个寰宇企业坚定不移地致力于设计新物种的涌现。他们战略性地在自己的星球中指定大量区域，确保未开智生命形式的发展，而这些工作都是在有责任感的商业冒险框架内进行的。"
- civic_tooltip_guided_sapience_effects: "—可用殖民船：§Y$guided_sapience_colonizer$§!$NEW_LINE$—以§Y$guided_sapience_colonizer_plural$§!殖民的行星：$TABBED_NEW_LINE$—$PRESAPIENT$人口：§G+3§!$TABBED_NEW_LINE$—$PLANETARY_FEATURES$§Y$d_genesis_preserve$§!$NEW_LINE$—提升$PRESAPIENT$物种可获得$r_unity$"
+ civic_tooltip_guided_sapience_effects: "—可用殖民船：§Y$guided_sapience_colonizer$§!$NEW_LINE$—以§Y$guided_sapience_colonizer_plural$§!殖民的行星：$TABBED_NEW_LINE$—$PRESAPIENT$人口：§G+300§!$TABBED_NEW_LINE$—$PLANETARY_FEATURES$§Y$d_genesis_preserve$§!$NEW_LINE$—提升$PRESAPIENT$物种可获得$r_unity$"
+ civic_tooltip_corporate_guided_sapience_effects: "$civic_tooltip_guided_sapience_effects$\n- The £building£ §Y$building_xeno_tourism_agency$§! $megacorp_civic_branch_office_building_effect$"
  civic_tooltip_guided_sapience_gestalt_negative_effects: "—无法建造§Y殖民船§!"
  civic_tooltip_guided_sapience_negative_effects: "$civic_tooltip_guided_sapience_gestalt_negative_effects$\n—无法建造£building£§Y$building_xeno_zoo_plural$§!"
 
@@ -2551,6 +2574,7 @@
  concept_genesis_guides_civics_desc: "$concept_genesis_guides_civics$类公民性包括\n—['civic:civic_guided_sapience']$NEW_LINE$—['civic:civic_corporate_guided_sapience']$NEW_LINE$—['civic:civic_hive_guided_sapience']$NEW_LINE$—['civic:civic_machine_guided_sapience']"
 
  guided_sapience_colonizer: "创世方舟"
+ guided_sapience_colonizer_cap: "$guided_sapience_colonizer$"
  guided_sapience_colonizer_plural: "创世方舟"
  guided_sapience_colonizer_desc: "特化的殖民船负责通过选择最具有潜能的候选未开智物种以为它们实施创世，并为我们的监管人初步设立殖民地。"
 
@@ -2634,7 +2658,7 @@
  paperclip_failure_desc: "我们未能完成生产目标。这将影响到每一个单元。"
 
  ###Auto-Modding Traits
- automodding_trait_tooltip_all: "['concept_automodding_traits', $concept_automodding_traits$]会自动调整以更好地适应£pops£人口当前正在从事的工作。"
+ automodding_trait_tooltip_all: "['concept_automodding_traits', $concept_automodding_traits$]将根据£pop£人口当前正在从事的工作进行自动调整。"
  automodding_trait_biological_tooltip: "$automodding_trait_tooltip_all$\n\n§Y$trait_auto_mod_biological$§!可从['concept_automodding_biological']中挑选修正"
  automodding_trait_robotic_tooltip: "$automodding_trait_tooltip_all$\n\n§Y$trait_auto_mod_robotic$§!可从['concept_automodding_robotic']中挑选修正"
  automodding_trait_overtuned_tooltip: "$automodding_trait_tooltip_all$\n\n§Y$trait_auto_mod_overtuned$§!可从['concept_automodding_overtuned']中挑选修正"
@@ -2649,13 +2673,21 @@
  trait_auto_mod_overtuned_desc: "先进的表观遗传触发因素提高了工作场所的身体和认知表现，同时大大缩短了预期寿命。毕竟，璀璨地燃尽可比缓慢地凋亡耀眼多了。"
  concept_automodding_trait: "自动改造特质"
  concept_automodding_traits: "自动改造特质"
- concept_automodding_trait_desc: "—修正会从预定特质列表中自动选择以与当前的工作相匹配。\n—拥有§Y$concept_automodding_traits$§!的$pops_with_icon$每月每殖民地的检测次数：§G1§!\n—人口增长和组装£building£建筑会增加每月更新的自动改装$pops_with_icon$的数量"
+ concept_automodding_trait_desc: "—从预定的特质列表中自动选择与当前岗位相匹配的修正。\n—特质效果受人口组拥有该特质的比例调整大小。\n—每个殖民地每月检测拥有§Y$concept_automodding_traits$§!的$pop$§H人口§!的次数：§G100§!\n—人口增长和组装£building£建筑将增加每月£pop£§H自动改装人口§!的更新数量"
  concept_automodding_biological: "生物自动改造特质列表"
  concept_automodding_biological_desc: "- ['trait:trait_traditional']\n- ['trait:trait_thrifty']\n- ['trait:trait_intelligent']\n- ['trait:trait_industrious']\n- ['trait:trait_agrarian']\n- ['trait:trait_ingenious']\n- ['trait:trait_charismatic']"
+ concept_vocational_traits: "职业特质"
+ concept_vocational_traits_desc: "$concept_vocational_traits$是一类可以通过['trait:trait_auto_mod_biological']特质自动调整的物种特质。$NEW_LINE$$concept_automodding_biological_desc$"
+ concept_fleeting_excellence_traits: "$trait_auto_mod_overtuned$特质"
+ concept_fleeting_excellence_traits_desc: "$concept_fleeting_excellence_traits$是一类可以通过['trait:trait_auto_mod_overtuned']特质自动调整的物种特质。$NEW_LINE$$concept_automodding_overtuned_desc$"
  concept_automodding_overtuned: "强夺天工自动改造特质列表"
  concept_automodding_overtuned_desc: "- ['trait:trait_expressed_tradition']\n- ['trait:trait_commercial_genius']\n- ['trait:trait_artificial_intelligence']\n- ['trait:trait_crack_miner']\n- ['trait:trait_farm_hands']\n- ['trait:trait_technical_skill']\n- ['trait:trait_crafted_smiles']"
+ concept_adaptive_frames_traits: "$trait_auto_mod_robotic$特质"
+ concept_adaptive_frames_traits_desc: "$concept_adaptive_frames_traits$是一类可以通过['trait:trait_auto_mod_robotic']特质自动调整的物种特质。$NEW_LINE$$concept_automodding_robotic_desc$"
  concept_automodding_robotic: "机械自动改造特质列表"
  concept_automodding_robotic_desc: "- ['trait:trait_robot_propaganda_machines']\n- ['trait:trait_robot_trading_algorithms']\n- ['trait:trait_robot_logic_engines']\n- ['trait:trait_robot_power_drills']\n- ['trait:trait_robot_harvesters']\n- ['trait:trait_robot_superconductive']\n- ['trait:trait_robot_emotion_emulators']"
+ concept_universal_augmentations_traits: "$trait_auto_mod_cyborg$特质"
+ concept_universal_augmentations_traits_desc: "$concept_universal_augmentations_traits$是一类可以通过['trait:trait_auto_mod_cyborg']特质自动调整的物种特质。$NEW_LINE$$concept_automodding_cyborg_desc$"
  concept_automodding_cyborg: "义体自动改造特质列表"
  concept_automodding_cyborg_desc: "- ['trait:trait_cyborg_loyalty_circuits']\n- ['trait:trait_cyborg_trading_algorithms']\n- ['trait:trait_cyborg_logic_engines']\n- ['trait:trait_cyborg_power_drills']\n- ['trait:trait_cyborg_harvesters']\n- ['trait:trait_cyborg_superconductive']\n- ['trait:trait_cyborg_stainless_steel_smile']"
 
@@ -2688,8 +2720,8 @@
  trait_cyborg_climate_adjustment_dry_desc: "液体回收和辐射屏蔽这类的针对性修改完美适用于干燥气候，但在其他地方就不太适合了。"
  trait_cyborg_climate_adjustment_wet: "潮湿气候模组"
  trait_cyborg_climate_adjustment_wet_desc: "厚重的绝热层和外星生物预防装置适用于潮湿气候，但在其他情况下有害。"
- trait_cyborg_climate_adjustment_frozen: "寒冷气候模组"
- trait_cyborg_climate_adjustment_frozen_desc: "强化的加热部件和抗冻润滑剂在寒冷气候颇为有用，但在其他情况下就变得碍手碍脚。"
+ trait_cyborg_climate_adjustment_cold: "寒冷气候模组"
+ trait_cyborg_climate_adjustment_cold_desc: "强化的加热部件和抗冻润滑剂在寒冷气候颇为有用，但在其他情况下就变得碍手碍脚。"
 
 #MACHINE
  trait_robot_artificial_engineers: "工程学核心"
@@ -2763,8 +2795,8 @@
  TECH_UNLOCK_LEVIATHAN_MACHINE_TITLE: "§H解锁特性：§!星神兽科技创生"
  TECH_UNLOCK_LEVIATHAN_MACHINE_DESC: "允许我们经由物种修饰技术将星神兽特质添加给机器人物种。"
 
- INTEGRATED_WEAPONRY_TT: "陆军伤害：§G+100%§!\n£job_enforcer£$job_enforcer_plural$犯罪度下降：§G+5§!"
- INTEGRATED_WEAPONRY_CYBORG_TT: "陆军伤害：§G+100%§!\n£job_enforcer£$job_enforcer_plural$犯罪度降低：§G+5§!\n$CYBORG_ENERGY_UPKEEP_EFFECT$"
+ INTEGRATED_WEAPONRY_TT: "陆军伤害：§G+100%§!\n[enforcer.GetIcon][enforcer.GetName]岗位效率：§G+20%§!"
+ INTEGRATED_WEAPONRY_CYBORG_TT: "$INTEGRATED_WEAPONRY_TT$\n$CYBORG_ENERGY_UPKEEP_EFFECT$"
  mod_planet_jobs_robot_worker_produces_mult: "机器人[GetWorker]人口资源产出"
  trait_robot_ancient_dreadnought: "远古无畏"
  trait_robot_ancient_dreadnought_desc: "通过安装微缩能量模组，工业产出能力和框架内建武器输出得到了巨幅提升。"
@@ -2783,11 +2815,13 @@
  trait_cyborg_scavenger_bot: "$trait_robot_scavenger_bot$"
  trait_cyborg_scavenger_bot_desc: "$trait_robot_scavenger_bot_desc$"
 
- job_overlord_healthcare: "$job_healthcare$"
+ job_overlord_healthcare: "[healthcare.GetName]"
+ job_overlord_healthcare_plural: "[healthcare.GetNamePlural]"
  job_overlord_healthcare_desc: "$job_healthcare_desc$"
- job_overlord_replicator: "$job_replicator$"
+ job_overlord_replicator: "[replicator.GetName]"
+ job_overlord_replicator_plural: "[replicator.GetNamePlural]"
  job_overlord_replicator_desc: "$job_replicator_desc$"
- job_overlord_spawning_drone: "$job_spawning_drone$"
+ job_overlord_spawning_drone: "[spawning_drone.GetName]"
  job_overlord_spawning_drone_desc: "$job_spawning_drone_desc$"
  mod_job_overlord_spawning_drone_add: "$mod_job_spawning_drone_add$"
  mod_job_overlord_healthcare_add: "$mod_job_healthcare_add$"
@@ -2800,12 +2834,15 @@
  no_titan_tech: "$TRIGGER_FAIL$需要£engineering£§Y$tech_titans$§!科技"
 
  mod_job_bath_attendant_individual_machine_add: "$mod_job_bath_attendant_machine_add$"
+ bath_attendant_individual_machine: "$job_bath_attendant_individual_machine$"
  job_bath_attendant_individual_machine: "润滑终端"
  job_bath_attendant_individual_machine_plural: "润滑终端"
- job_bath_attendant_individual_machine_desc: "£job_bath_attendant_machine£润滑终端将£consumer_goods£§Y消费品§!转化为£pops£§Y人口组装§!，但是增加£amenities£§R舒适度使用§!。"
- job_toxic_baths_effect_machine_desc_2: "£job_bath_attendant_machine£润滑终端将£consumer_goods£§Y消费品§!转化为£pops£§Y人口组装§!，但是增加£amenities£§R舒适度使用§!。"
+ job_bath_attendant_individual_machine_desc: "£job_bath_attendant_machine£润滑终端将$r_alloys$转化为新的£pop£§Y机械人口§!，但是增加£amenities£§R舒适度使用§!。$bath_attendant_urban_effects_tt$"
+ job_toxic_baths_effect_machine_desc_2: "£job_bath_attendant_machine£润滑终端将$r_alloys$转化为新的£pop£§Y机械人口§!，但是增加£amenities£§R舒适度使用§!。$bath_attendant_urban_effects_tt$"
 
- tr_synthetics_finish_individual_machine_machine_desc: "所有§Y$trait_machine_unit$§!领袖获得§Y$leader_trait_synthetic$§!特质\n£building£§Y首府建筑§!提供§G+1§!£job_roboticist£§Y$job_roboticist$§!岗位。"
+ roboticist_is_mutagenic_tt: "[owner.GetPopAssemblersPluralWithIcon]转化为£job_bath_attendant_individual_machine£$job_bath_attendant_individual_machine_plural$"
+
+ tr_synthetics_finish_individual_machine_machine_desc: "所有§Y$trait_machine_unit$§!领袖获得§Y$leader_trait_synthetic$§!特质\n£building£§Y首府建筑§!提供§G+1§![roboticist.GetIcon]§Y[roboticist.GetName]§!岗位。"
  tr_versatility_finish_individual_machine: "普适传统完成"
 
  mod_ship_military_alloys_upkeep_mult: "军用舰船合金维护费"
@@ -2817,7 +2854,7 @@
  councilor_toxic_baths_individual_machine: "终端监视者"
  councilor_toxic_baths_individual_machine_female: "$councilor_toxic_baths_individual_machine$"
  councilor_toxic_baths_individual_machine_desc: "$TITLE$负责规制洗槽的使用。"
- councilor_toxic_baths_individual_machine_custom_modifier_desc: "—£job_bath_attendant_individual_machine£$job_bath_attendant_individual_machine_plural$产出的£unity£凝聚力：§G+$@councilor_toxic_baths_attendant_unity|1$§!"
+ councilor_toxic_baths_individual_machine_custom_modifier_desc: "—每$pop_group_unit$£job_bath_attendant_individual_machine£$job_bath_attendant_individual_machine_plural$产出的£unity£凝聚力：§G+$@councilor_toxic_baths_attendant_unity|1$§!"
  civic_corporate_toxic_baths_individual_machine: "奢华润滑池"
  civic_corporate_toxic_baths_individual_machine_desc: "感谢造物主！这些润滑油的奢华感与柔润感用起来让人难以自拔，对于减轻老旧机械身躯上的磨损痕迹绝对是关键。一种特别调配的、含有高级热活性油的混合物，让这个机械帝国的居民们保持着“崭新出厂”般的外观和触感。并适用于各种型号和用途的机器。"
  councilor_corporate_toxic_baths_individual_machine: "终端监视者"
@@ -2862,16 +2899,21 @@
  individual_machine_defense_plural: "智能人防御军"
 
  trait_machine_pc_machine_preference: "$trait_pc_machine_preference$"
+ trait_machine_pc_machine_preference_short: "$trait_pc_machine_preference_short$"
  trait_machine_pc_machine_preference_desc: "$trait_pc_machine_preference_desc$"
  trait_machine_pc_gaia_preference: "$trait_pc_gaia_preference$"
+ trait_machine_pc_gaia_preference_short: "$trait_pc_gaia_preference_short$"
  trait_machine_pc_gaia_preference_desc: "$trait_pc_gaia_preference_desc$"
  trait_machine_pc_ringworld_preference: "$trait_pc_ringworld_habitable_preference$"
  trait_machine_pc_ringworld_preference_desc: "$trait_pc_ringworld_habitable_preference_desc$"
  trait_machine_pc_relic_preference: "$trait_pc_relic_preference$"
+ trait_machine_pc_relic_preference_short: "$trait_pc_relic_preference_short$"
  trait_machine_pc_relic_preference_desc: "$trait_pc_relic_preference_desc$"
  trait_machine_pc_shattered_ring_habitable_preference: "$trait_pc_shattered_ring_habitable_preference$"
+ trait_machine_pc_shattered_ring_habitable_preference_short: "$trait_pc_shattered_ring_habitable_preference_short$"
  trait_machine_pc_shattered_ring_habitable_preference_desc: "$trait_pc_shattered_ring_habitable_preference_desc$"
  trait_machine_pc_ringworld_habitable_preference: "$trait_pc_ringworld_habitable_preference$"
+ trait_machine_pc_ringworld_habitable_preference_short: "$trait_pc_ringworld_habitable_preference_short$"
  trait_machine_pc_ringworld_habitable_preference_desc: "$trait_pc_ringworld_habitable_preference_desc$"
 
  civic_individual_machine_predictive_analysis: "$civic_machine_predictive_analysis$"
@@ -2910,14 +2952,14 @@
  tr_virtuality_4_delayed: "我们可以利用虚拟领域来预测和提高生产力，彻底告别现实世界的所有风险和延迟。"
  tr_virtuality_5_delayed: "通过细致的维护协议，我们得以将主服务器部署到过去认为过于苛刻的领域，我们的可操作边界得到了拓展。"
 
- tr_virtuality_adopt_modifier_desc: "为主体物种添加§Y$trait_robot_digital_1$§!特质\n§R虚拟$pops_with_icon$将无法强制迁移§!"
- tr_virtuality_1_modifier_desc: "§Y$trait_robot_digital_1$§!物种特质获得以下效果：$TABBED_NEW_LINE$—岗位产出的资源：§G+175%§!（每有一个殖民地§R-25%§!）$TABBED_NEW_LINE$—人口维护费：每有一个殖民地§R+0.1§!$r_energy$"
+ tr_virtuality_adopt_modifier_desc: "为主体物种添加§Y$trait_robot_digital_1$§!特质\n§R£pop£§H虚拟人口§!无法再被强制迁移§!"
+ tr_virtuality_1_modifier_desc: "§Y$trait_robot_digital_1$§!物种特质获得以下效果：$TABBED_NEW_LINE$—$MOD_POP_BONUS_WORKFORCE_MULT$：§G+175%§!（每有一个殖民地§R-25%§!）$TABBED_NEW_LINE$—人口维护费：每有一个殖民地§R+0.1§!$r_energy$"
  tr_virtuality_3_modifier_desc: "§Y解锁政策§!：$virtuality_focus$\n允许我们的虚拟进程的专业化，以提高我们的§Y科研§!、§Y凝聚力§!或者增强我们的§Y领袖§!"
- tr_virtuality_4_modifier_desc: "提供§Y[GetClerkOrMaintenanceDrone]§!、§Y[GetAdministratorWithIcon]§!或者£job_researcher£§Y[GetResearcherPlural]§!的地区可提供额外的岗位"
- job_maintenance_drone_with_icon: "£job_maintenance_drone£ $job_maintenance_drone$"
- job_clerk_with_icon: "£job_clerk£ $job_clerk$"
- tr_virtuality_5_modifier_desc: "行星上每个§Y[GetClerkOrMaintenanceDrone]§!：\n$t$$mod_planet_virtual_jobs_produces_mult$：§G+1%§!\n当§Y行星飞升§!达到等级§G1§!，§G5§!以及§G10§!时，首府建筑可再提供§G+1§!§Y最大地区§!"
- tr_virtuality_finisher_modifier_desc: "瞬间创建§Y虚拟$pops_with_icon$§!以填补§Y£building£建筑§!和§Y£district£地区§!的£job£岗位需求。\n§R虚拟$pops_with_icon$无法成为难民、也无法组装。§!\n所有§Y$trait_machine_unit$§!领袖将获得§Y$leader_trait_virtual$§!特质\n 解锁行星决议：$TABBED_NEW_LINE$§Y$decision_server_shut_down$§!"
+ tr_virtuality_4_modifier_desc: "提供§Y[GetClerkOrLogisticDrone]§!、§Y[GetBureaucratWithIcon]§!或者£job_researcher£§Y[GetResearcherPlural]§!的地区可提供额外的岗位"
+ job_maintenance_drone_with_icon: "[maintenance_drone.GetIcon] [maintenance_drone.GetName]"
+ job_clerk_with_icon: "[clerk.GetIcon] [clerk.GetName]"
+ tr_virtuality_5_modifier_desc: "行星上每个§Y[GetClerkOrLogisticDrone]§!：\n$t$$mod_planet_virtual_jobs_produces_mult$：§G+1%§!\n当§Y行星飞升§!达到等级§G1§!，§G5§!以及§G10§!时，首府建筑可再提供§G+1§!§Y最大地区§!"
+ tr_virtuality_finisher_modifier_desc: "瞬间创建£pop£§H虚拟人口§!以填补§Y£building£建筑§!和§Y£district£地区§!的£job£岗位需求。\n§R£pop£虚拟人口无法成为难民、也无法组装。§!\n所有§Y$trait_machine_unit$§!领袖将获得§Y$leader_trait_virtual$§!特质\n 解锁行星决议：$TABBED_NEW_LINE$§Y$decision_server_shut_down$§!"
 
  virtuality_focus: "虚拟经济专注"
  virtuality_research_focus_flag_name: "虚拟研究专注"
@@ -2935,7 +2977,7 @@
  trait_robot_digital_1: "虚拟"
  trait_robot_digital_2: "$trait_robot_digital_1$"
  trait_robot_digital_1_tt: "§R不能在奴隶市场上出售或绑架§!\n人口住房使用：§G-90%§!\n物种最低宜居性：§G+25%§!"
- trait_robot_digital_2_tt: "$trait_robot_digital_1_tt$\n岗位产出的资源：§G+175%§!（每个殖民地§R-25%§!）\n人口维护费：每殖民地§R+0.1§!£energy£§Y能量币§!"
+ trait_robot_digital_2_tt: "$trait_robot_digital_1_tt$\n$MOD_POP_BONUS_WORKFORCE_MULT$：§G+175%§!（每个殖民地§R-25%§!）\n人口维护费：每殖民地§R+0.1§!£energy£§Y能量币§!"
  trait_robot_digital_1_desc: "§L我们已摆脱原始肉体的桎梏，正准备洞悉宇宙的终极奥秘。§!"
  trait_robot_digital_2_desc: "$trait_robot_digital_1_desc$"
  mod_planet_virtual_jobs_produces_mult: "虚拟人口产出的资源"
@@ -3009,10 +3051,10 @@
  edict_nanotech_alloy_augmentation_desc: "将纳米机器人注入合金晶格，即可拥有沿着新的基线再生金属的特性，实现更快、更好、更精确的合金生产。"
  edict_nanotech_energy_augmentation_desc: "纳米机器人维护的连接器和电源线在不中断工作的情况下就可以实时恢复。"
 
- mod_planet_farmers_nanites_produces_add: "£job_farmer£[GetFarmerPlural]产出的£nanites£$nanites$"
- mod_planet_farmers_nanites_produces_mult: "$mod_planet_farmers_nanites_produces_add$"
- mod_planet_miners_nanites_produces_add: "£job_miner£[GetMinerPlural]产出的£nanites£$nanites$"
- mod_planet_miners_nanites_produces_mult: "$mod_planet_miners_nanites_produces_add$"
+ mod_planet_farmers_nanites_produces_add: "每$pop_group_unit$[farmer.GetIcon][GetFarmerPlural]产出的£nanites£$nanites$"
+ mod_planet_farmers_nanites_produces_mult: "[farmer.GetIcon][GetFarmerPlural]产出的£nanites£$nanites$"
+ mod_planet_miners_nanites_produces_add: "每$pop_group_unit$[miner.GetIcon][GetMinerPlural]产出的£nanites£$nanites$"
+ mod_planet_miners_nanites_produces_mult: "[miner.GetIcon][GetMinerPlural]产出的£nanites£$nanites$"
  mod_job_nanotech_research_unit_add: "$job_nanotech_research_unit$岗位"
  mod_job_nanotech_researcher_add: "$job_nanotech_researcher$岗位"
 
@@ -3038,6 +3080,7 @@
  pc_nanotech: "$pc_gray_goo$"
  pc_nanotech_desc: "洪流深深的改变了这个行星。如今，它的地表上全是不断变化的纳米机器人海洋。"
  trait_machine_pc_nanotech_preference: "$pc_gray_goo$宜居性偏好"
+ trait_machine_pc_nanotech_preference_short: "$pc_gray_goo$"
  trait_machine_pc_nanotech_preference_desc: "这个物种极其适合与纳米机器人共生共存。然而对于纳米形态的依赖使得他们在被迫移居其他环境时显得尤为无依无靠。"
  trait_pc_nanotech_preference: "$trait_machine_pc_nanotech_preference$"
  trait_pc_nanotech_preference_desc: "$trait_machine_pc_nanotech_preference_desc$"
@@ -3061,6 +3104,7 @@
 
  NO_BRANCH_OFFICE_ON_NANITE_WORLD: "我们无法在$pc_gray_goo$星球开设分部。"
 
+ nanite_swarmer_cap: "$nanite_swarmer$"
  nanite_swarmer: "纳米虫群"
  nanite_swarmer_plural: "纳米虫群"
 
@@ -3069,6 +3113,7 @@
  nanite_swarmer_torpedo_key: "鱼雷"
  nanite_swarmer_medium_key: "炮艇"
 
+ nanite_interdictor_cap: "$nanite_interdictor$"
  nanite_interdictor: "Nanite Interdictor" # TODO
  nanite_interdictor_plural: "Nanite Interdictors" # TODO
 
@@ -3120,9 +3165,9 @@
 
  tr_modularity_2_modifier_desc: "§Y机器人专家§!产生的机械人口组装速度：§G+1§!"
  tr_modularity_2_modifier_gestalt_desc: "§Y复制者§!产生的机械人口组装速度：§G+0.5§!"
- tr_modularity_3_modifier_desc: "£job_soldier£§Y士兵§!稳定度：§G+0.25§!"
- tr_modularity_3_modifier_gestalt_desc: "£job_warrior_drone£§Y作战子个体§!稳定度：§G+0.25§!"
- tr_modularity_4_modifier_desc: "§Y[GetAdministratorPluralWithIcon]§!提升[GetWorker]岗位产出：§G+2%§!"
+ tr_modularity_3_modifier_desc: "[soldier.GetIcon]§Y士兵§!稳定度：§G+0.25§!"
+ tr_modularity_3_modifier_gestalt_desc: "[warrior_drone.GetIcon]§Y作战子个体§!稳定度：§G+0.25§!"
+ tr_modularity_4_modifier_desc: "§Y[GetBureaucratPluralWithIcon]§!提升[GetWorker]岗位产出：§G+2%§!"
  tr_modularity_5_modifier_desc: "解锁用于物种修饰的§Y高级§!特质。"
  tr_modularity_finish_modifier_desc: "所以§Y$trait_machine_unit$§!领袖获得§Y$leader_trait_synthetic$§!特质"
 
@@ -3202,7 +3247,7 @@
 
  hive_cant_purge_hive: "$TRIGGER_FAIL$我们不能净化蜂巢受提升的部分。"
  slavery_matrix_guided_sapience: "智慧标本"
- slavery_matrix_guided_sapience_tooltip: "§H样本§!人口不能通过岗位产出资源，而是被圈养着产出£unity£§HUnity§!并降低住房使用。"
+ slavery_matrix_guided_sapience_tooltip: "£pop£§H样本人口§!不能通过岗位产出资源，而是被圈养着产出£unity£§HUnity§!并降低住房使用。"
  slavery_matrix_guided_sapience_tooltip_delayed: "§L至简之中蕴有大道。§!"
  job_organic_exhibit: "有机标本"
  job_organic_exhibit_plural: "有机标本"
@@ -3212,8 +3257,8 @@
 
  decision_reduce_server_load: "服务器减负"
  decision_reduce_server_load_desc: "我们有部分公民在没有分配职责或责任的状态下运行，通过关闭不必要的公民子例程来减少对服务器的消耗可能是明智的。"
- decision_reduce_server_load_allow: "$TRIGGER_FAIL$没有失业的§Y$trait_robot_digital_1$§!人口"
- decision_reduce_server_load_effect: "关闭带有§Y$trait_robot_digital_1$§!特质的失业人口"
+ decision_reduce_server_load_allow: "$TRIGGER_FAIL$没有失业的£pop£§H$trait_robot_digital_1$人口§!"
+ decision_reduce_server_load_effect: "关闭带有§Y$trait_robot_digital_1$§!特质特质的£pop£§H失业人口§!"
  decision_server_shut_down: "服务器关闭"
  decision_server_shut_down_desc: "这个殖民地已经失去了它的用途，启动完全关闭进程。"
  AUTO_MIGRATE_VIRTUALITY: "§R带有§Y$trait_robot_digital_1$§!特质的人口不能自动迁移。§!"

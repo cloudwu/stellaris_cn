@@ -59,11 +59,6 @@
  UNTIL_CANCELLED:0 "一直生效直到主动取消"
  HAS_ENVOY_COOLDOWN:0 "可以重新指派"
  HAS_NOT_ENVOY_COOLDOWN:0 "不可重新指派"
- SYSTEM_TRADE_VALUE_LESS_THAN:1 "$TYPE$ 不$COMPARE$$VAL|0Y$" #TYPE: TOTAL_TRADE/COLLECTED_TRADE/UNCOLLECTED_TRADE
- SYSTEM_TRADE_VALUE_AT_LEAST:1 "$TYPE$ $COMPARE$$VAL|0Y$"
- TOTAL_TRADE:0 "贸易价值"
- COLLECTED_TRADE:0 "已收集的贸易价值"
- UNCOLLECTED_TRADE:0 "未收集的贸易价值"
  SOLAR_SYSTEM:0 "太阳系"
  any_pop_faction_trigger:0 "任意人口派系"
  count_pop_faction_trigger:1 "人口派系$CONDITIONS$数量$IS_NOT$$COMPARATOR$$NUM|Y$"
@@ -102,7 +97,7 @@
  SORT_BY_DESIGNATION:0 "按殖民地规划类型排序"
  SORT_BY_UNEMPLOYMENT:0 "按失业率排序"
  HABITABILITY_RESETTLEMENT_CHANGE:0 "宜居性将由$CURRENT|0=-%$变更为$NEW|0=-%$"
- CLICK_TO_RESETTLE_POP_ADVANCED:0 "按住CTRL并点击以转移§Y5§!人口\n\n按住Shift并点击以转移§Y所有§!人口"
+ CLICK_TO_RESETTLE_POP_ADVANCED:0 "£ctrl£点击可以转移§Y500§!£pop£§H人口§!\n\n£shift£点击可以转移§Y所有§!£pop£§H人口§!"
  EMPIRE_EMPLOYMENT:0 "帝国就业率"
  EMPLOYED_POPULATION:0 "就业人口"
  EMPIRE_LEADERS:0 "帝国领袖"
@@ -197,12 +192,15 @@
 
  getenvoy_machine:0 "外交单元"
  getenvoy_hive:0 "外交工蜂"
+ getenvoy_wilderness: "外交化身"
  getenvoy_normal:0 "特使"
  getenvoycap_machine:0 "外交单元"
  getenvoycap_hive:0 "外交工蜂"
+ getenvoycap_wilderness: "外交化身"
  getenvoycap_normal:0 "特使"
  getenvoyplural_machine:0 "外交单元"
  getenvoyplural_hive:0 "外交工蜂"
+ getenvoyplural_wilderness: "外交化身"
  getenvoyplural_normal:0 "特使"
 
  envoy_events.3.name:0 "银河段子手"
@@ -623,12 +621,14 @@
  ancrel.14510.b:0 "在不伤害它的前提下监视其生长。"
  ancrel.14510.c:0 "让这个神圣的生命体在和平中成长吧。"
  ancrel.14510.d:0 "策展人肯定愿意为这个标本付个好价钱。"
+ ancrel.14510.e: "多棒的再生潜力！"
 
  ancrel.14520.name:0 "主脑"
  ancrel.14520.desc:0 "在一个庞大的地下穴室中，一只天凯竖立地站着，钟型的脑袋微微地摇晃着，它细线一样的触手舒展开来，连接着穴室的外墙。看上去它成为了某种控制单元，不断操纵、指引着这个行星级别墓地的生长。但是这个生物现在已经死了，被我们用来前往这个地方的挖掘设备毁灭了。核心周边的外壳变得苍白而易碎，整个地方经历了第二次死亡。"
 
  ancrel.14910.name:0 "环境污染"
  ancrel.14910.desc:1 "我们探险队的一名成员在探索隧道的时候突然消失了。搜寻小队花了好几天时间试图定位[Owner.GetScientist]，结果发现这人被一堵墙给包裹住，身体被触手死死地缠住。\n\n把[Owner.GetScientist]解救出来花费了不少时间和精力。[Owner.GetScientist]并不只是被简单地缠住了：这堵墙正试图在分子层面将[Owner.GetScientist]融合，使其成为墙体表面的一部分。\n\n现在[Owner.GetScientist]的状态稳定了下来，但此人拒绝离开我们的科研船——即使是在那里，也在用极度怀疑的状态死死地盯着墙壁，生怕还会有下一次袭击。"
+ ancrel.14910.b.evopred: "获取生物质的一种有趣途径。"
 
  ### Amoebas by Pierre du Plessis ###
 
@@ -669,7 +669,7 @@
  name_thalassocracy_agency_abbreviated:0 "ECA"
  pirate.155.desc.regular:1 "[root.GetName]代表：$pirate.155.proclamation$\n\n我们理解，关卡检查有时会让人精神绷得紧紧的。只要我们相互合作，就不会有人受到伤害。请放心，我们会将正式占有的每一粒谷物和每一块矿石充分利用在[thalassocracy_species.GetName]生态居住繁殖计划中。我方对你方的贴心表示无比感激。\n\n$pirate.155.thalassocracy_signoff$"
  pirate.155.desc.machine:0 "[root.GetName]的构造体代表：封锁现已在[thalassocracy_target_system.GetName]生效。从此以后，该区域的所有机械单位都将成为$NAME_Thalassocracy$的臣民，为我们服务。反抗的舰队将遭到武力镇压。\n\n我们理解此举可能会对你国造成物质上的极大不便。但我们保证，只要我们的$name_Thalassocracy_agency$军官达到其指定配额，我们就会停止此举措。你一定对我们这样的指令系统面临的压力能够表示理解。\n\n在$NAME_Thalassocracy_species$的生态居住繁殖图景中，你方重新编程的无人机将承担崇高的使命。$pirate.155.thalassocracy_signoff$"
- pirate.155.desc.hive:0 "[root.GetName]实体代表：$pirate.155.proclamation$\n\n我们理解，关卡检查有时可能很艰难。只要我们相互合作，就不会有无人机受到伤害，否则，它们可能会遇到麻烦。请放心，我们会将占有的每一粒谷物和每一块矿石充分利用在$NAME_Thalassocracy_species$生态居住繁殖计划中。希望你们能共同考虑此提议，我们感激不尽。\n\n$pirate.155.thalassocracy_signoff$"
+ pirate.155.desc.hive:0 "[root.GetName]实体代表：$pirate.155.proclamation$\n\n我们理解，关卡检查有时会让人精神崩的紧紧的。只要我们相互合作，就能防止你们的[root.GetIndividualNamePlural]受伤，否则，它们可能会遇到麻烦。请放心，我们会将占有的每一粒谷物和每一块矿石充分利用在[thalassocracy_species.GetName]生态居住繁殖计划中。希望你们能共同考虑此提议，我们感激不尽。\n\n$pirate.155.thalassocracy_signoff$"
  pirate.155.proclamation:0 "暂时封锁现已在[thalassocracy_target_system.GetName]生效。在此星系加工和运输的食物及矿物现在会被$NAME_Thalassocracy$$name_thalassocracy_agency$军官查封。所有非商用飞船将遭到驱逐，若执意前行则会受到炮火攻击。这些条件将一直生效，直至我们完成$name_thalassocracy_agency_abbreviated$配额。"
  pirate.155.thalassocracy_signoff:0 "亲手打造更加光明的未来！"
  pirate.155.a:0 "什么？！"
@@ -679,8 +679,10 @@
  pirate.155.corp:0 "真是大胆的行动，[thalassocracy_species.GetAdj]。你们虽然蠢钝如猪，但确实胆大包天。"
  #Ship sizes
  bemat_corvette:0 "全副武装的轻巡洋舰"
+ bemat_corvette_cap: "$bemat_corvette$"
  bemat_corvette_plural:0 "全副武装的轻巡洋舰"
  bemat_cruiser:0 "$cruiser$"
+ bemat_cruiser_cap: "$bemat_cruiser$"
  bemat_cruiser_plural:0 "$cruiser_plural$"
  bemat_destroyer:0 "驱逐舰"
  bemat_destroyer_plural:0 "驱逐舰"
@@ -1116,7 +1118,7 @@
  UNLOCKS_ORBITAL: "§H解锁轨道站：§!"
  tech_habitat_1:0 "轨道栖所"
  tech_habitat_1_desc:0 "允许建设规模庞大、自给自足的轨道栖所。"
- allow_habitats:1 "§H解锁巨型结构：§!$habitat_central_complex$\n$UNLOCKS_ORBITAL$$major_orbital_plural$\n$UNLOCKS_ORBITAL$$minor_orbital_plural$"
+ allow_habitats:1 "§H解锁巨型结构：§!$habitat_central_complex$"
 
  tech_habitat_2:1 "栖所扩张"
  tech_habitat_2_desc:0 "相较于如今的高效设计，我们早期的栖所只能算原始罢了。"
@@ -1147,30 +1149,8 @@
 
  max_one_orbital_per_system: "$TRIGGER_FAIL$§R我们在每个星系内只能建造一座这种轨道站§!"
 
- d_system_resources:1 "轨道站承载"
- d_system_resources_desc:1 "围绕星系内各个天体建造的轨道站可以为轨道复合体提供额外的生活和工作空间。"
- system_resources_tooltip: "§Y[solar_system.GetName]§!星系可以支持：$TABBED_NEW_LINE$大型轨道站：§Y[solar_system.GetNumMajorOrbitals]/[solar_system.GetMaxMajorOrbitals]§!$TABBED_NEW_LINE$小型轨道站：§Y[solar_system.GetNumMinorOrbitals]/[solar_system.GetMaxMinorOrbitals]§!\n\n目前轨道站提供："
-
- d_orbital_research: "$major_orbital_science_plural$"
- d_orbital_research_desc: "$district_hab_science_desc$"
- d_orbital_research_tt: "§Y[solar_system.GetName]§!星系可以支持：$TABBED_NEW_LINE$$major_orbital_science_plural$：§Y[solar_system.GetNumOrbitalsScience]/[solar_system.GetMaxOrbitalsScience]§!\n\n轨道站目前提供："
-
- d_orbital_energy: "$major_orbital_energy_plural$"
- d_orbital_energy_desc: "$district_hab_energy_desc$"
- d_orbital_energy_tt: "§Y[solar_system.GetName]§!星系可以支持：$TABBED_NEW_LINE$$major_orbital_energy_plural$：§Y[solar_system.GetNumOrbitalsEnergy]/[solar_system.GetMaxOrbitalsEnergy]§!\n\n轨道站目前提供："
-
- d_orbital_mining: "$major_orbital_mining_plural$"
- d_orbital_mining_desc: "$district_hab_mining_desc$"
- d_orbital_mining_tt: "§Y[solar_system.GetName]§!星系可以支持：$TABBED_NEW_LINE$$major_orbital_mining_plural$：§Y[solar_system.GetNumOrbitalsMining]/[solar_system.GetMaxOrbitalsMining]§!\n\n轨道站目前提供："
-
- d_ruined_major_orbital: "废弃的大型轨道站"
- d_ruined_major_orbital_desc: "该轨道站发生过灾难性的壳体损伤。必须进行维修才能恢复其居住功能。"
-
- d_ruined_minor_orbital: "废弃的小型轨道站"
- d_ruined_minor_orbital_desc: "$d_ruined_major_orbital_desc$"
-
  habitat_0_MEGASTRUCTURE_DETAILS:2 "§H轨道栖所§!\n§Y$pc_habitat$§!是一种用于永久性居住的可自持空间站。"
- habitat_0_CONSTRUCTION_INFO_DELAYED:5 "同时将建成一座§Y$major_orbital$§!，给予：\n$t$—$major_orbital_effect$"
+ habitat_0_CONSTRUCTION_INFO_DELAYED:5 ""
  habitat_0:0 "轨道栖所"
  habitat_0_DESC:0 "环绕飞一局星球轨道上的居住用空间站，能够在远离地表之处容纳若干§H人口§!和§H建筑§!。"
 
@@ -1189,10 +1169,9 @@
 
  habitat_central_complex: "轨道栖所中心复合体"
  habitat_central_complex_plural: "轨道栖所中心复合体"
- habitat_central_complex_DESC: "§Y$habitat_complex$§!的核心轨道站，可以容纳若干£pop£§Y人口§!并在非宜居行星的轨道上为£building£§Y建筑§!和£district£§Y地区§!提供空间。"
+ habitat_central_complex_DESC: "§Y$habitat_complex$§!的核心轨道站，可以容纳若干£pop£§H人口§!并在非宜居行星的轨道上为£building£§Y建筑§!和£district£§Y地区§!提供空间。"
  habitat_central_complex_MEGASTRUCTURE_DETAILS: "§Y$habitat_complex$§!是一系列用于永久居住的自持空间站的集合体。"
- habitat_central_complex_CONSTRUCTION_INFO_DELAYED: "$REQUIREMENTS_HEADER$$major_orbital_requirements$\n\n$EFFECTS_HEADER$$NEW_LINE$—将创建一座可殖民的（规模：£planetsize£6）§Y轨道栖所§!。$NEW_LINE$—$habitat_0_CONSTRUCTION_INFO_DELAYED$"
-
+ habitat_central_complex_CONSTRUCTION_INFO_DELAYED: "$REQUIREMENTS_HEADER$$major_orbital_requirements$\n\n$EFFECTS_HEADER$$NEW_LINE$—将创建一座可殖民的（规模：£planetsize£6）§Y轨道栖所§!。"
 
  requires_habitat_central_complex: "$TRIGGER_FAIL$§R需要星系中存在一座$habitat_central_complex$§!"
  requires_not_habitat_central_complex: "$TRIGGER_FAIL$§R星系内已存在$habitat_central_complex$，无法建造。§!"
@@ -1200,74 +1179,20 @@
  add_research_options_voidborn:0 "升级栖所后获得的研究选项：\n£engineering_research£§Y$tech_habitat_3$§!"
 
  HABITAT_PLANET_NAME:1 "[FROM.from.solar_system.GetName]轨道栖所复合体"
- TARGET_ORBITAL_NAME: "[FROM.from.planet.GetName]轨道站"
+ TARGET_ORBITAL_NAME: "[prevprev.GetName]轨道站"
 
- orbital_DESC_GENERIC: "一座设计用于为当地§Y$habitat_central_complex$§!的人口提供额外居住和工作空间的基础轨道站。"
+ orbital_DESC_GENERIC: "设计用于为当地§Y$habitat_central_complex$§!的人口提供额外居住和工作空间。"
  orbital_MEGASTRUCTURE_DETAILS_ENDING: "是一座设计用于为当地§Y$habitat_central_complex$§!的人口提供额外居住和工作空间的基础轨道站。"
- orbital_DELAYED_START: "—§Y$habitat_central_complex$§!：\n$t$—"
 
- major_orbital: "大型轨道站"
- major_orbital_plural: "大型轨道站"
- major_orbital_effect: "£mod_planet_max_districts_add£最大地区槽位：§G+0.5§!\n$t$—$orbital_effect$"
- major_orbital_NAME: "$major_orbital$"
- major_orbital_DESC: "$orbital_DESC_GENERIC$"
- major_orbital_MEGASTRUCTURE_DETAILS: "一座§Y$major_orbital$§!$orbital_MEGASTRUCTURE_DETAILS_ENDING$"
- major_orbital_CONSTRUCTION_INFO_DELAYED: "$REQUIREMENTS_HEADER$ $major_orbital_requirements$ \n\n$EFFECTS_HEADER$ $NEW_LINE$$orbital_DELAYED_START$$major_orbital_effect$"
- major_orbital_requirements: "$NEW_LINE$- $major_planetary_body_requirements$"
- major_planetary_body_requirements: "必须建造在一颗大型天体的轨道上"
- orbital_effect: "依照行星矿藏：\n$tt$—£mod_district_hab_science_max£§Y$district_hab_science_plural$§!：§G+3§!\n$tt$—£mod_district_hab_energy_max£§Y$district_hab_energy_plural$§!：§G+3§!\n$tt$—£mod_district_hab_mining_max£§Y$district_hab_mining_plural$§!：§G+3§!\n$tt$—£mod_planet_max_buildings_add£§Y$MOD_PLANET_MAX_BUILDINGS_ADD$§!：§G+0.50§!"
+ habitat_major_orbital: "大型轨道站"
+ habitat_major_orbital_DESC: "一座$orbital_DESC_GENERIC$§Y$habitat_major_orbital$§!。"
+ habitat_major_orbital_MEGASTRUCTURE_DETAILS: "A §Y$habitat_major_orbital$§! $orbital_MEGASTRUCTURE_DETAILS_ENDING$"
 
- minor_orbital: "小型轨道站"
- minor_orbital_plural: "小型轨道站"
- minor_orbital_effect: "$orbital_effect$"
- minor_orbital_NAME: "$minor_orbital$"
- minor_orbital_DESC: "$minor_orbital_DESC_GENERIC$"
- minor_orbital_MEGASTRUCTURE_DETAILS: "一座§Y$minor_orbital$§!$orbital_MEGASTRUCTURE_DETAILS_ENDING$"
- minor_orbital_CONSTRUCTION_INFO_DELAYED: "$REQUIREMENTS_HEADER$$minor_orbital_requirements$ \n\n$EFFECTS_HEADER$ $NEW_LINE$$orbital_DELAYED_START$$minor_orbital_effect$"
- minor_orbital_requirements: "$NEW_LINE$- $minor_planetary_body_requirements$"
- minor_planetary_body_requirements: "必须建造在一颗小型天体（小行星或卫星）的轨道上"
- requires_is_minor_planetary_body: "$TRIGGER_FAIL$§R$minor_planetary_body_requirements$§!"
+ habitat_minor_orbital: "小型轨道站"
+ habitat_minor_orbital_DESC: "一座$orbital_DESC_GENERIC$§Y$habitat_minor_orbital$§!。"
+ habitat_minor_orbital_MEGASTRUCTURE_DETAILS: "A §Y$habitat_minor_orbital$§! $orbital_MEGASTRUCTURE_DETAILS_ENDING$"
 
- major_orbital_resource: "Resource Extraction Orbital"
- major_orbital_resource_plural: "Resource Extraction Orbitals"
- minor_orbital_resource: "$major_orbital_resource$"
- minor_orbital_resource_plural: "$major_orbital_resource_plural$"
-
- major_orbital_mining: "航天采矿轨道站"
- major_orbital_mining_plural: "航天采矿轨道站"
- minor_orbital_mining: "$major_orbital_mining$"
- minor_orbital_mining_plural: "$major_orbital_mining_plural$"
- num_mining_orbitals: "\n现有$major_orbital_mining_plural$：§Y[solar_system.GetNumOrbitalsMining]、[solar_system.GetMaxOrbitalsMining]§!"
-
- major_orbital_science: "零重力研究轨道站"
- major_orbital_science_plural: "零重力研究轨道站"
- minor_orbital_science: "$major_orbital_science$"
- minor_orbital_science_plural: "$major_orbital_science_plural$"
- num_science_orbitals: "\n现有$major_orbital_science_plural$：§Y[solar_system.GetNumOrbitalsScience]/[solar_system.GetMaxOrbitalsScience]§!"
-
- major_orbital_energy: "反应堆轨道站"
- major_orbital_energy_plural: "反应堆轨道站"
- minor_orbital_energy: "$major_orbital_energy$"
- minor_orbital_energy_plural: "$major_orbital_energy_plural$"
- num_energy_orbitals: "\n现有$major_orbital_energy_plural$：§Y[solar_system.GetNumOrbitalsEnergy]/[solar_system.GetMaxOrbitalsEnergy]§!"
-
- major_orbital_generic: "住房轨道站"
- major_orbital_generic_plural: "住房轨道站"
- minor_orbital_generic: "$major_orbital_generic$"
- minor_orbital_generic_plural: "$major_orbital_generic_plural$"
- num_generic_orbitals: "\n现有$major_orbital_generic_plural$：§Y[solar_system.GetNumOrbitalsGeneric]/[solar_system.GetMaxOrbitalsGeneric]§!"
-
- habitat_system_tt: "§E轨道栖所轨道站容量：§!$TABBED_NEW_LINE$—大型轨道站：§Y[root.GetNumMajorOrbitals]/[root.GetMaxMajorOrbitals]/§!$TABBED_NEW_LINE$—小型轨道站：§Y[root.GetNumMinorOrbitals]/[root.GetMaxMinorOrbitals]§!$TABBED_NEW_LINE$—$major_orbital_mining_plural$：§Y[root.GetNumOrbitalsMining]/[root.GetMaxOrbitalsMining]§!$TABBED_NEW_LINE$—$major_orbital_science_plural$：§Y[root.GetNumOrbitalsScience]/[root.GetMaxOrbitalsScience]§!$TABBED_NEW_LINE$—$major_orbital_energy_plural$：§Y[root.GetNumOrbitalsEnergy]/[root.GetMaxOrbitalsEnergy]§!"
-
-# Knights of the Toxic God
- major_orbital_knights: "辖地前哨站"
- major_orbital_knights_plural: "辖地前哨站"
- major_orbital_knights_effect: "£mod_planet_max_districts_add£最大地区槽位：§G+0.5§!\n$t$—£mod_job_knight_add£骑士岗位：§G+1§!"
- major_orbital_knights_NAME: "$major_orbital_knights$"
- major_orbital_knights_DESC: "$orbital_DESC_GENERIC$"
- major_orbital_knights_MEGASTRUCTURE_DETAILS: "一座§Y$major_orbital_knights$§!$orbital_MEGASTRUCTURE_DETAILS_ENDING$"
- major_orbital_knights_CONSTRUCTION_INFO_DELAYED: "$REQUIREMENTS_HEADER$$NEW_LINE$—$major_planetary_body_requirements$$NEW_LINE$—§Y$habitat_central_complex$§!必须拥有£building£§Y$building_order_castle$§!或£building£§Y$building_order_keep$§!\n\n$EFFECTS_HEADER$$NEW_LINE$$orbital_DELAYED_START$$major_orbital_knights_effect$"
- requires_knights_castle_or_keep: "$TRIGGER_FAIL$§R需要一座§Y$building_order_castle$§!或§Y$building_order_keep$§!§!"
+ habitat_system_tt: "§E轨道栖所潜力：§!$TABBED_NEW_LINE$—最大地区数：§Y[root.GetHabitatMaxDistricts]§!"
 
 ###########
 # EDICTS
@@ -1275,8 +1200,8 @@
 
 
  edict_extended_healthcare_coverage:0 "延展医疗"
- edict_extended_healthcare_coverage_desc:0 "此法令可为§Y$building_clinic$§!和§Y$building_hospital$§!设施提供额外资源。"
- edict_extended_healthcare_coverage_tooltip:0 "拥有§Y$building_clinic$§!或§Y$building_hospital$§!的行星获得§G+10%§!§Y人口增长§!。"
+ edict_extended_healthcare_coverage_desc:0 "此法令可为§Y$building_medical_2$§!和§Y$building_medical_3$§!设施提供额外资源。"
+ edict_extended_healthcare_coverage_tooltip:0 "拥有§Y$building_medical_2$§!或§Y$building_medical_3$§!的行星获得§G+10%§!§Y人口增长§!。"
 
  edict_nutritional_plenitude:0 "$food_policy_generous$"
  edict_nutritional_plenitude_desc:0 "$food_policy_generous_desc$"
@@ -1288,7 +1213,7 @@
  edict_evacuation_protocols_desc:0 "我们必须建立一个新的家园，并从我们的母星上撤离。"
 
  edict_extended_shifts:0 "延长轮换"
- edict_extended_shifts_desc:1 "我们必须要求我们的劳工更加卖力干活。[Root.GetBloodType]、汗与眼泪是必要的，一切皆是为了上上善道。"
+ edict_extended_shifts_desc:1 "我们必须要求我们的劳工更加卖力干活。在上上善道面前，区区粉骨碎身又称得上什么。"
 
  edict_drone_overdrive:0 "成员超载"
  edict_drone_overdrive_desc:0 "我们的成员会更加勤勉地工作，因而需要更多资源。"
@@ -1307,23 +1232,23 @@
  edict_fleet_supremacy:0 "舰队霸权"
  edict_fleet_supremacy_desc:0 "我们的舰队是投射武力的最佳途径。此法令将优先考虑舰队，而非其他次要需求。"
 
- edict_farming_subsidies_tooltip:0 "将£job_farmer£$job_farmer_plural$的维护费提高£energy£§Y0.5§!"
+ edict_farming_subsidies_tooltip:0 "[farmer.GetIcon][farmer.GetNamePlural]的维护费提高£energy£§Y0.5§!"
 
  edict_capacity_subsidies:0 "产能补贴"
  edict_capacity_subsidies_desc:0 "$edict_capacity_overload_desc$"
- edict_capacity_subsidies_tooltip:0 "将£job_technician£$job_technician_plural$的维护费提高£energy£§Y0.5§!"
+ edict_capacity_subsidies_tooltip:0 "[technician.GetIcon][technician.GetNamePlural]的维护费提高£energy£§Y0.5§!"
 
  edict_mining_subsidies:0 "采矿补贴"
  edict_mining_subsidies_desc:0 "$edict_production_targets_desc$"
- edict_mining_subsidies_tooltip:0 "将£job_miner£$job_miner_plural$的维护费提高£energy£§Y0.5§!"
+ edict_mining_subsidies_tooltip:0 "[miner.GetIcon][miner.GetNamePlural]的维护费提高£energy£§Y0.5§!"
 
  edict_industrial_subsidies:0 "工业补贴"
  edict_industrial_subsidies_desc:0 "成功可以通过获得的物资来衡量。此法令可为我们的工厂提供额外资源，以便提高产量。"
- edict_industrial_subsidies_tooltip:0 "将£job_artisan£$job_artisan_plural$的维护费提高£energy£§Y1§!"
+ edict_industrial_subsidies_tooltip:0 "[artisan.GetIcon][artisan.GetNamePlural]的维护费提高£energy£§Y1§!"
 
  edict_forge_subsidies:0 "冶金补贴"
  edict_forge_subsidies_desc:0 "我们的帝国急需更加专业化的冶金和贵金属开采能力。这项法令为我们的合金铸造厂提供了额外的资源，使其生产能力进一步提高。"
- edict_forge_subsidies_tooltip:0 "£job_foundry£$job_foundry_plural$的£energy£维护费增加§Y1§!"
+ edict_forge_subsidies_tooltip:0 "[foundry.GetIcon][foundry.GetNamePlural]的维护费提高£energy£§Y1§!"
 
  edict_research_subsidies:0 "研究补贴"
  edict_research_subsidies_desc:0 "知识就是力量。此法令将我们的工作重心放在科技发展上。"

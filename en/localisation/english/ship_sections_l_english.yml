@@ -7,22 +7,25 @@
  # Rear sections have a flavor-name followed by the key-word "Bulwark"
  #
  ####################################
- 
+
 
  ####################################
  # Juggernaut
  ####################################
- 
+
  CORE_JUGGERNAUT_SECTION:0 "Juggernaut"
- 
+
  ####################################
  # Titan
  ####################################
- 
+
  TITAN_BOW:0 "Titan Bow"
  TITAN_MID:0 "Titan Core"
  TITAN_STERN:1 "Titan Stern"
- 
+ BIO_TITAN_BOW: "$TITAN_BOW$"
+ BIO_TITAN_MID: "$TITAN_MID$"
+ BIO_TITAN_STERN: "$TITAN_STERN$"
+
  ####################################
  # Battleship
  ####################################
@@ -52,14 +55,14 @@
 
  ####################################
  # Constructor
- #################################### 
+ ####################################
  CONSTRUCTOR_MID_M1S1:1 "Construction Ship"
  CONSTRUCTOR_MID_S3:0 "Developer Core"
  CONSTRUCTOR_MID_MU1:0 "Fuser Core"
 
  ####################################
  # Corvette
- #################################### 
+ ####################################
  CORVETTE_MID_M1S1:3 "Torpedo Boat"
  CORVETTE_MID_S3:1 "Interceptor"
  CORVETTE_MID_S1:1 "Shifter Core"
@@ -67,7 +70,7 @@
 
  ####################################
  # Cruiser
- #################################### 
+ ####################################
  CRUISER_BOW_L1:1 "Artillery Bow"
  CRUISER_BOW_M1S2:3 "Torpedo Bow"
  CRUISER_BOW_M2:1 "Broadside Bow"
@@ -80,7 +83,7 @@
 
  ####################################
  # Destroyer
- #################################### 
+ ####################################
  DESTROYER_BOW_M1S2:1 "Gunship Bow"
  DESTROYER_BOW_S3:1 "Picket Ship Bow"
  DESTROYER_BOW_L1:1 "Artillery Bow"
@@ -90,14 +93,14 @@
 
  ####################################
  # Science
- #################################### 
+ ####################################
  SCIENCE_MID_M1S1:1 "Science Ship"
  SCIENCE_MID_S3:0 "Trailblazer Core"
  SCIENCE_MID_MU1:0 "Insight Core"
- 
+
  ####################################
  # Science
- #################################### 
+ ####################################
  LIGHT_MILITARY_STATION_SECTION:0 "Light Station Section"
  PD_MILITARY_STATION_SECTION:0 "Point-Defense Station Section"
  MEDIUM_MILITARY_STATION_SECTION:0 "Medium Station Section"
@@ -112,7 +115,7 @@
 
  ####################################
  # Other
- #################################### 
+ ####################################
  MISSILE_DEFAULT:1 "Torpedo Section"
  DEFAULT_CONSTRUCTION_SECTION:1 "Construction Ship"
  DEFAULT_COLONIZATION_SECTION:1 "Colony Ship"
@@ -126,4 +129,5 @@
  SHIP_COLOSSUS_SECTION:0 "Colossus"
  GHOST_SHIP_SECTION:0 "Ghost Ship Frame"
  lost_swarm_adult:0 "Locust"
+ lost_swarm_adult_cap: "$lost_swarm_adult$"
  lost_swarm_adult_plural:0 "Locusts"

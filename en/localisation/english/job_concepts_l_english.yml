@@ -1,27 +1,61 @@
 ﻿l_english:
 
- concept_technician: "$job_technician_plural$"
+# Above each concept definition are instructions on usage, including an icon where one exists.
+#   Note that between the icon and the term there's a non-breaking space. When you copy the usage example, it will keep the non-breaking space.
+#   This is important to not get a line break between the icon and the concept.
+# Use a concept link with icon the first time a new concept is mentioned, then use §H without an icon for repeated uses.
+# Use §H with an icon the first time a concept is used withing its own description.
+# Use §H without an icon if the concept is used more than once.
+
+ # Singular: £mod_job_technician_add£ ['concept_technician'] or £mod_job_technician_add£ §H$concept_technician$§!
+ # Plural: £mod_job_technician_add£ ['concept_technicians'] or £mod_job_technician_add£ §H$concept_technicians$§!
+ concept_technician: "$job_technician$"
+ concept_technicians: "$job_technician_plural$"
  concept_technician_desc: "$job_technician_plural$ produce $i_energy$.\n\n§L$job_technician_desc$§!"
 
- concept_farmer: "$job_farmer_plural$"
+ # Singular: £mod_job_farmer_add£ ['concept_farmer'] or £mod_job_farmer_add£ §H$concept_farmer$§!
+ # Plural: £mod_job_farmer_add£ ['concept_farmers'] or £mod_job_farmer_add£ §H$concept_farmers$§!
+ concept_farmer: "$job_farmer$"
+ concept_farmers: "$job_farmer_plural$"
  concept_farmer_desc: "$job_farmer_plural$ produce $i_food$.\n\n§L$job_farmer_desc$§!"
 
- concept_miner: "$job_miner_plural$"
+ # Singular: £mod_job_miner_add£ ['concept_miner'] or £mod_job_miner_add£ §H$concept_miner$§!
+ # Plural: £mod_job_miner_add£ ['concept_miners'] or £mod_job_miner_add£ §H$concept_miners$§!
+ concept_miner: "$job_miner$"
+ concept_miners: "$job_miner_plural$"
  concept_miner_desc: "$job_miner_plural$ produce $i_minerals$.\n\n§L$job_miner_desc$§!"
 
- concept_researcher: "$job_researcher_plural$"
+ # Singular: £job_researcher£ ['concept_researcher'] or £job_researcher£ §H$concept_researcher$§!
+ # Plural: £job_researcher£ ['concept_researchers'] or £job_researcher£ §H$concept_researchers$§!
+ concept_researcher: "$job_researcher$"
+ concept_researchers: "$job_researcher_plural$"
  concept_researcher_desc: "$job_researcher_plural$ turn $i_consumer_goods$ into $i_research$\n\n§L$job_researcher_desc$§!"
 
  concept_foundry: "$job_foundry_plural$"
  concept_foundry_desc: "$job_foundry_plural$ turn $i_minerals$ into $i_alloys$.\n\n§L$job_foundry_desc$§!"
 
- concept_artisan: "$job_artisan_plural$"
+ # Singular: £mod_job_artisan_add£ ['concept_artisan'] or £mod_job_artisan_add£ §H$concept_artisan$§!
+ # Plural: £mod_job_artisan_add£ ['concept_artisans'] or £mod_job_artisan_add£ §H$concept_artisans$§!
+ concept_artisan: "$job_artisan$"
+ concept_artisans: "$job_artisan_plural$"
  concept_artisan_desc: "$job_artisan_plural$ turn $i_minerals$ into $i_consumer_goods$.\n\n§L$job_artisan_desc$§!"
 
- concept_soldier: "$job_soldier_plural$"
+ # Singular: £pop£ ['concept_bio_trophy'] or £pop£ §H$concept_bio_trophy$§!
+ # Plural: £pop£ ['concept_bio_trophies'] or £pop£ §H$concept_bio_trophies$§!
+ concept_bio_trophy: "$job_bio_trophy$"
+ concept_bio_trophies: "$job_bio_trophy_plural$"
+ concept_bio_trophy_desc: "$job_bio_trophy_effect_desc$\n\n§L$job_artisan_desc$§!"
+
+ # Singular: £job_soldier£ ['concept_soldier'] or £job_soldier£ §H$concept_soldier$§!
+ # Plural: £job_soldier£ ['concept_soldiers'] or £job_soldier£ §H$concept_soldiers$§!
+ concept_soldier: "$job_soldier$"
+ concept_soldiers: "$job_soldier_plural$"
  concept_soldier_desc: "$job_soldier_plural$ produce $i_naval_capacity$ and $i_defense_armies$.\n\n§L$job_soldier_desc$§!"
 
- concept_priest: "$job_priest_plural$"
+ # Singular: £job_priest£ ['concept_priest'] or £job_priest£ §H$concept_priest$§!
+ # Plural: £job_priest£ ['concept_priests'] or £job_priest£ §H$concept_priests$§!
+ concept_priest: "$job_priest$"
+ concept_priests: "$job_priest_plural$"
  concept_priest_desc: "$job_priest_plural$ turn $i_consumer_goods$ into $i_unity$ and $i_amenities$.\n\n§L$job_priest_desc$§!"
 
  concept_high_priest: "$job_high_priest_plural$"
@@ -34,7 +68,7 @@
  concept_technophant_desc: "$job_technophant_plural$ turn $i_consumer_goods$ into $i_engineering$ and $i_unity$.\n\n§LExalted interpreters of divine wetware. They guide the people toward a perfect fusion of flesh and machine.§!"
 
  concept_roboticist: "$job_roboticist_plural$"
- concept_roboticist_desc: "$job_roboticist_plural$ turn $i_alloys$ into new £pops£ §IMechanical Pops§!.\n\n§L$job_roboticist_desc$§!"
+ concept_roboticist_desc: "$job_roboticist_plural$ turn $i_alloys$ into new £pop£ §IMechanical Pops§!.\n\n§L$job_roboticist_desc$§!"
 
  concept_archaeoengineers: "$job_archaeoengineers_plural$"
  concept_archaeoengineers_desc: "$job_archaeoengineers_plural$ turn $i_consumer_goods$ into $i_research$.\n\n§L$job_archaeoengineers_desc$§!"
@@ -49,13 +83,13 @@
  concept_overlord_arborist_desc: "$job_overlord_arborist_plural$ turn Subject $i_food$ into $i_food$ for the Overlord.\n\n§L$job_overlord_arborist_desc$§!"
 
  concept_replicator: "$job_replicator_plural$"
- concept_replicator_desc: "$job_replicator_plural$ turn $i_alloys$ into new £pop£ §IMachine Pops§!.\n\n§L$job_replicator_desc$§!"
+ concept_replicator_desc: "$job_replicator_plural$ turn $i_alloys$ into new £pop£ §IMachine Pops§!.\n\n§L$job_replicator_desc$§!"
 
  concept_spawning_drone: "$job_spawning_drone_plural$"
- concept_spawning_drone_desc: "$job_spawning_drone_plural$ turn $i_food$ (or $i_minerals$) into £mod_planet_amenities_no_happiness_add£ §I$PLANET_AMENITIES_TITLE$§! and £mod_planet_pop_assembly_mult£ §I$MOD_PLANET_POP_ASSEMBLY_ORGANIC_ADD$§!.\n\n§L$job_spawning_drone_desc$§!"
+ concept_spawning_drone_desc: "$job_spawning_drone_plural$ turn $i_food$ (or $i_minerals$) into £mod_planet_amenities_no_happiness_add£ §I$PLANET_AMENITIES_TITLE$§! and £mod_planet_pop_assembly_mult£ §I$MOD_BONUS_POP_GROWTH$§!.\n\n§L$job_spawning_drone_desc$§!"
 
  concept_offspring_drone: "$job_offspring_drone_plural$"
- concept_offspring_drone_desc: "$job_offspring_drone_plural$ turn $i_food$ (or $i_minerals$) into £mod_planet_amenities_no_happiness_add£ §I$PLANET_AMENITIES_TITLE$§! and £mod_planet_pop_assembly_mult£ §I$MOD_PLANET_POP_ASSEMBLY_ORGANIC_ADD$§!, spawn §I$offspring_defense_plural$§!, and provide a £mod_planet_jobs_simple_drone_produces_mult£ §G+10%§! increase in §I$pop_cat_simple_drone$ output§!.\n\n§L$job_offspring_drone_desc$§!"
+ concept_offspring_drone_desc: "$job_offspring_drone_plural$ turn $i_food$ (or $i_minerals$) into £mod_planet_amenities_no_happiness_add£ §I$PLANET_AMENITIES_TITLE$§! and £mod_planet_pop_assembly_mult£ §I$MOD_BONUS_POP_GROWTH$§!, spawn §I$offspring_defense_plural$§!, and provide a £mod_planet_jobs_simple_drone_produces_mult£ §G+10%§! increase in §I$pop_cat_simple_drone$ output§!.\n\n§L$job_offspring_drone_desc$§!"
 
  concept_offspring_feeder: "$job_overlord_offspring_drone_feeder_plural$"
  concept_offspring_feeder_desc: "$job_overlord_offspring_drone_feeder_plural$ use $i_food$ (or $i_minerals$) provide access to §I$offspring_defense_plural$§! and an increase in £mod_planet_jobs_worker_produces_mult£ §IWorker Pop Resource Output§!.\n\n§L$job_overlord_offspring_drone_feeder_desc$§!"
@@ -73,13 +107,16 @@
  concept_overlord_knight_desc: "£job_knight£ $job_overlord_knight_plural$ turn $i_alloys$ into $i_stability$ and spawn $i_defense_armies$ for the Subject, and $i_unity$ and $i_research$ for the Overlord.\nCompleting §YKnightly Quests§! can further improve their output.\n\n§L$job_overlord_knight_desc$§!"
 
  concept_healthcare: "$job_healthcare_plural$"
- concept_healthcare_desc: "$job_healthcare_plural$ turn $i_consumer_goods$ into $i_amenities$, £mod_pop_growth_speed£ §I$MOD_POP_GROWTH_SPEED$§!, £mod_planet_pop_assembly_organic_mult£ §I$MOD_PLANET_POP_ASSEMBLY_ORGANIC_MULT$§! and increase £mod_pop_environment_tolerance£ §IPlanet Habitability§!.\n\n§L$job_healthcare_desc$§!"
+ concept_healthcare_desc: "$job_healthcare_plural$ turn $i_consumer_goods$ into $i_amenities$, £mod_logistic_growth_mult£ §I$MOD_LOGISTIC_GROWTH_MULT$§!, £mod_planet_pop_assembly_organic_mult£ §I$MOD_PLANET_POP_ASSEMBLY_ORGANIC_MULT$§!, and increase £mod_pop_environment_tolerance£ §IPlanet Habitability§!.\n\n§L$job_healthcare_desc$§!"
 
  concept_bureaucrat: "$job_bureaucrat_plural$"
  concept_bureaucrat_desc: "$job_bureaucrat_plural$ turn $i_consumer_goods$ into $i_unity$.\n\n§L$job_bureaucrat_desc$§!"
 
- concept_clerk: "$job_clerk_plural$"
- concept_clerk_desc: "$job_clerk_plural$ produce $i_trade_value$ and $i_amenities$.\n\n§L$job_clerk_desc$§!"
+ # Singular: £mod_job_clerk_add£ ['concept_clerk'] or £mod_job_clerk_add£ §H$concept_clerk$§!
+ # Plural: £mod_job_clerk_add£ ['concept_clerks'] or £mod_job_clerk_add£ §H$concept_clerks$§!
+ concept_clerk: "$job_clerk$"
+ concept_clerks: "$job_clerk_plural$"
+ concept_clerk_desc: "$job_clerk_plural$ produce $r_trade$ and $i_amenities$.\n\n§L$job_clerk_desc$§!"
 
  concept_unifier: "$job_unifier_plural$"
  concept_unifier_desc: "$job_unifier_plural$ turn $i_consumer_goods$ and $i_food$ (or $i_minerals$) into $i_unity$ and $i_amenities$.\n\n§L$job_unifier_desc$§!"
@@ -112,18 +149,55 @@
  concept_entertainer_desc: "$job_entertainer_plural$ turn $i_consumer_goods$ into $i_unity$ and $i_amenities$.\n\n§L$job_entertainer_desc$§!"
 
  concept_wrangler: "$job_wrangler_plural$"
- concept_wrangler_desc: "$job_wrangler_plural$ turn $i_consumer_goods$ into $i_unity$, $i_amenities$ and $i_society$.\n\n$job_wrangler_plural$' effects vary depending on the Empire's ethics.\n\n§L$job_wrangler_desc$§!"
+ concept_wrangler_desc: "$job_wrangler_plural$ turn $i_consumer_goods$ into $i_unity$, $i_amenities$ and $i_society$.\n\nThe effects of $job_wrangler_plural$ vary depending on the Empire's ethics.\n\n§L$job_wrangler_desc$§!"
+
  concept_rancher: "$job_rancher_plural$"
- concept_rancher_desc: "$job_rancher_plural$ turn $i_consumer_goods$ into $i_unity$, $i_amenities$ and $i_society$.\n\n$job_rancher_plural$' effects vary depending on the Empire's ethics.\n\n§L$job_rancher_desc$§!"
+ concept_rancher_desc: "$job_rancher_plural$ turn $i_consumer_goods$ into $i_unity$, $i_amenities$ and $i_society$.\n\nThe effects of $job_rancher_plural$ vary depending on the Empire's ethics.\n\n§L$job_rancher_desc$§!"
+
  concept_trophy_hunter: "$job_trophy_hunter_plural$"
- concept_trophy_hunter_desc: "$job_trophy_hunter_plural$ turn $i_consumer_goods$ into $i_unity$, $i_food$, $i_amenities$ and $i_society$.\n\n$job_trophy_hunter_plural$' effects vary depending on the Empire's ethics.\n\n§L$job_trophy_hunter_desc$§!"
+ concept_trophy_hunter_desc: "$job_trophy_hunter_plural$ turn $i_consumer_goods$ into $i_unity$, $i_food$, $i_amenities$ and $i_society$.\n\nThe effects of $job_trophy_hunter_plural$ vary depending on the Empire's ethics.\n\n§L$job_trophy_hunter_desc$§!"
+
  concept_animal_handler: "$job_animal_handler_plural$"
- concept_animal_handler_desc: "$job_animal_handler_plural$ turn $i_consumer_goods$ into $i_unity$, $i_amenities$ and $i_society$.\n\n$job_animal_handler_plural$' effects vary depending on the Empire's ethics.\n\n§L$job_animal_handler_desc$§!"
+ concept_animal_handler_desc: "$job_animal_handler_plural$ turn $i_consumer_goods$ into $i_unity$, $i_amenities$ and $i_society$.\n\nThe effects of $job_animal_handler_plural$ vary depending on the Empire's ethics.\n\n§L$job_animal_handler_desc$§!"
+
  concept_beastfighter: "$job_beastfighter_plural$"
- concept_beastfighter_desc: "$job_beastfighter_plural$ turn $i_alloys$ and $i_consumer_goods$ or $i_minerals$ into $i_unity$, $i_amenities$ and $i_society$.\n\n$job_beastfighter_plural$' effects vary depending on the Empire's ethics.\n\n§L$job_beastfighter_desc$§!"
+ concept_beastfighter_desc: "$job_beastfighter_plural$ turn $i_alloys$ and $i_consumer_goods$ or $i_minerals$ into $i_unity$, $i_amenities$ and $i_society$.\n\nThe effects of $job_beastfighter_plural$ vary depending on the Empire's ethics.\n\n§L$job_beastfighter_desc$§!"
+
  concept_drone_wrangler: "$job_drone_wrangler_plural$"
- concept_drone_wrangler_desc: "$job_drone_wrangler_plural$ turn $i_minerals$ into $i_unity$, $i_amenities$ and $i_society$.\n\n$job_drone_wrangler_plural$' effects vary depending on the Empire's ethics.\n\n§L$job_drone_wrangler_desc$§!"
+ concept_drone_wrangler_desc: "$job_drone_wrangler_plural$ turn $i_minerals$ into $i_unity$, $i_amenities$ and $i_society$.\n\nThe effects of $job_drone_wrangler_plural$ vary depending on the Empire's ethics.\n\n§L$job_drone_wrangler_desc$§!"
+
  concept_hunter_drone: "$job_hunter_drone_plural$"
- concept_hunter_drone_desc: "$job_hunter_drone_plural$ turn $i_minerals$ into $i_unity$, $i_food$, $i_amenities$ and $i_society$.\n\n$job_hunter_drone_plural$' effects vary depending on the Empire's ethics.\n\n§L$job_hunter_drone_desc$§!"
+ concept_hunter_drone_desc: "$job_hunter_drone_plural$ turn $i_minerals$ into $i_unity$, $i_food$, $i_amenities$ and $i_society$.\n\nThe effects of $job_hunter_drone_plural$ vary depending on the Empire's ethics.\n\n§L$job_hunter_drone_desc$§!"
+
  concept_symbiosis_integrator: "$job_symbiosis_integrator_plural$"
- concept_symbiosis_integrator_desc: "$job_symbiosis_integrator_plural$ turn $i_minerals$ into $i_unity$, $i_amenities$ and $i_society$.\n\n$job_symbiosis_integrator_plural$' effects vary depending on the Empire's ethics.\n\n§L$job_symbiosis_integrator_desc$§!"
+ concept_symbiosis_integrator_desc: "$job_symbiosis_integrator_plural$ turn $i_minerals$ into $i_unity$, $i_amenities$ and $i_society$.\n\nThe effects of $job_symbiosis_integrator_plural$ vary depending on the Empire's ethics.\n\n§L$job_symbiosis_integrator_desc$§!"
+
+ # Singular: £mod_job_foundry_add£ ['concept_metallurgist'] or £mod_job_foundry_add£ §H$concept_metallurgist$§!
+ # Plural: £mod_job_foundry_add£ ['concept_metallurgists'] or £mod_job_foundry_add£ §H$concept_metallurgists$§!
+ concept_metallurgist: "$job_foundry$"
+ concept_metallurgists: "$job_foundry_plural$"
+ concept_metallurgist_desc: "$job_foundry_effect_desc$.\n\n§L$job_foundry_desc$§!"
+
+ concept_sand_whisperer: "$job_sand_whisperer_plural$"
+ concept_sand_whisperer_desc: "$job_sand_whisperer_plural$ produce $i_zro$"
+
+ concept_sand_caretaker: "$job_sand_caretaker_plural$"
+ concept_sand_caretaker_desc: "$job_sand_caretaker_plural$ produce $i_zro$"
+
+ concept_drone_sand_whisperer: "$job_drone_sand_whisperer_plural$"
+ concept_drone_sand_whisperer_desc: "$job_drone_sand_whisperer_plural$ produce $i_zro$"
+
+ concept_drone_sand_caretaker: "$job_drone_sand_caretaker_plural$"
+ concept_drone_sand_caretaker_desc: "$job_drone_sand_caretaker_plural$ produce $i_zro$"
+
+ concept_space_junk_collector: "$job_space_junk_collector_plural$"
+ concept_space_junk_collector_desc: "$job_space_junk_collector_plural$ produce $i_alloys$"
+
+ concept_drone_space_junk_collector: "$job_drone_space_junk_collector_plural$"
+ concept_drone_space_junk_collector_desc: "$job_drone_space_junk_collector_plural$ produce $i_alloys$"
+
+ concept_enforcer: "$job_enforcer_plural$"
+ concept_enforcer_desc: "$job_enforcer_plural$ reduce $i_crime$ and spawn $i_defense_armies$.\n\n§L$job_enforcer_desc$§!"
+
+ concept_educator: "$job_educator_plural$"
+ concept_educator_desc: "$job_educator_plural$ produce $i_unity$, reduce $i_crime$, increase §IGoverning Ethics Attraction§!, and spawn $i_defense_armies$.\n\n§L$job_educator_desc$§!"

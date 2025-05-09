@@ -28,16 +28,16 @@
  synth_negative_media_coverage_tt: "负面媒体报道"
 
  biological_pop: "£pop£生物人口"
- biological_pops: "$biological_pop$s"
+ biological_pops: "£pop£生物人口"
  mechanical_pop: "£pop£机械人口"
- mechanical_pops: "$mechanical_pop$s"
+ mechanical_pops: "£pop£机械人口"
  pop_is: "is"
  pops_are: "are"
 
 # Buildings
  building_identity_complex: "人格复合体"
  building_identity_complex_desc: "一座尖端的合成人格研发中心。"
- building_identity_complex_speed: "+1£pop£人口"
+ building_identity_complex_speed: "§G+100§!£pop£§H人口§!"
  building_identity_complex_effect_desc: "每月上载$building_identity_complex_speed$。"
  building_ai_emporium: "人工智能商埠"
  building_ai_emporium_desc: "满足你一切人工智能需求的巨型一站式服务中心，让感性人工智能把普通的物品变成陪伴你家庭或企业的智能伙伴。如果你的人工智能太过我行我素，请把它带来，我们熟练的技术人员可以超光速重置它。"
@@ -60,7 +60,7 @@
  job_identity_designer_effect_desc: "$job_identity_designer_plural_with_icon$提供$i_engineering$、$i_amenities$和全国范围的$m_pop_assembly$"
  mod_job_identity_designer_add: "$job_identity_designer$岗位"
 
- job_roboticist_plural_and_job_identity_designer_plural: "$job_roboticist_plural$和$job_identity_designer_plural$"
+ job_roboticist_plural_and_job_identity_designer_plural: "[roboticist.GetNamePlural]和$job_identity_designer_plural$"
  job_roboticist_plural_with_icon_and_job_identity_designer_plural_with_icon: "$job_roboticist_plural_with_icon$和$job_identity_designer_plural_with_icon$"
 
  councilor_ruler_imperial_synth: "$imperial_ruler$"
@@ -185,29 +185,29 @@
  computation_core_production_name: "生产流程精简"
  computation_core_production: "$computation_core_production_name$"
  computation_core_production_desc: "利用空余的处理周期来精简生产流程。$computation_core_production_tt$"
- computation_core_production_tt: "\n\n$EFFECTS_HEADER$$NEW_LINE$—每个£job_clerk£$job_clerk$增加§G+0.5%§!§Y岗位产出的§!$r_alloys$和$r_consumer_goods$"
+ computation_core_production_tt: "\n\n$EFFECTS_HEADER$$NEW_LINE$—每个[clerk.GetIcon][clerk.GetName]增加§G+0.5%§!§Y岗位产出的§!$r_alloys$和$r_consumer_goods$"
  computation_core_stability_name: "稳定性分析"
  computation_core_stability: "$computation_core_stability_name$"
  computation_core_stability_desc: "调用资源来监视违规行为的社会信息流。$computation_core_stability_tt$"
- computation_core_stability_tt: "\n\n$EFFECTS_HEADER$$NEW_LINE$—每个£job_clerk£$job_clerk$增加§G+0.5%§!§Y岗位产出的$r_unity$§!"
+ computation_core_stability_tt: "\n\n$EFFECTS_HEADER$$NEW_LINE$—每个[clerk.GetIcon][clerk.GetName]增加§G+0.5%§!§Y岗位产出的$r_unity$§!"
  computation_core_research_name: "研究处理"
  computation_core_research: "$computation_core_research_name$"
  computation_core_research_desc: "为性能密集型研究服务器分配额外的运算周期。$computation_core_research_tt$"
- computation_core_research_tt: "\n\n$EFFECTS_HEADER$$NEW_LINE$—每个£job_clerk£$job_clerk$增加§G+0.5%§!§Y岗位产出的$r_research$§!"
+ computation_core_research_tt: "\n\n$EFFECTS_HEADER$$NEW_LINE$—每个[clerk.GetIcon][clerk.GetName]增加§G+0.5%§!§Y岗位产出的$r_research$§!"
 
 # Technologies
  tech_identity_copy: "复制人格"
  tech_identity_copy_desc: "我们可以从一个合成人身上复制人格和记忆到一个新的机械身躯中。这些复制体具有可预期的技能组，但却缺乏创新。"
  TECH_UNLOCK_IDENTITY_COPY_TITLE: "解锁政策：$TABBED_NEW_LINE$§H$policy_synthetic_identities_policy$§!—$identity_copy_name$"
- TECH_UNLOCK_IDENTITY_COPY_DESC: "§H£pops£机械人口§!$TABBED_NEW_LINE$幸福度：§R-5%§!"
+ TECH_UNLOCK_IDENTITY_COPY_DESC: "£pop£§H机械人口§!$TABBED_NEW_LINE$幸福度：§R-5%§!"
  tech_identity_fusion: "人格融合"
  tech_identity_fusion_desc: "将两个或更多合成人的人格和记忆组合进一个机械躯体里能创造新的且有一定独立性的人格。"
  TECH_UNLOCK_IDENTITY_FUSION_TITLE: "解锁政策：$TABBED_NEW_LINE$§H$policy_synthetic_identities_policy$§!—$identity_fusion_name$"
- TECH_UNLOCK_IDENTITY_FUSION_DESC: "§H£pops£机械人口§!$TABBED_NEW_LINE$组装花费：§R+10%§!"
+ TECH_UNLOCK_IDENTITY_FUSION_DESC: "£pop£§H机械人口§!$TABBED_NEW_LINE$组装花费：§R+10%§!"
  tech_identity_initialization: "人格初始化"
  tech_identity_initialization_desc: "我们可以将人格核心进行初始化并为其创造虚拟的童年。尽管代价高昂，但我们可以模拟出创造人格的最佳体验。"
  TECH_UNLOCK_IDENTITY_INITIALIZATION_TITLE: "解锁政策：$TABBED_NEW_LINE$§H$policy_synthetic_identities_policy$§!—$identity_initialization_name$"
- TECH_UNLOCK_IDENTITY_INITIALIZATION_DESC: "§H£pops£机械人口§!$TABBED_NEW_LINE$幸福度：§G+5%§!$TABBED_NEW_LINE$£pop£岗位产出的资源：§G+5%§!$TABBED_NEW_LINE$组装花费：§R+20%§!"
+ TECH_UNLOCK_IDENTITY_INITIALIZATION_DESC: "£pop£§H机械人口§!$TABBED_NEW_LINE$幸福度：§G+5%§!$TABBED_NEW_LINE$£job£§H岗位§!产出的资源：§G+5%§!$TABBED_NEW_LINE$组装花费：§R+20%§!"
 
 # DIGITIZATION STAGE 1
  synth.100.name: "启动阶段" #Stage 1 - Start event
@@ -220,7 +220,7 @@
  synth.105.end: "\n\n我们可以专注于增强决策制定流程，增加记忆容量，或优化脑躯协调，这些选择都会增强特定的岗位。或者我们也可以进行雨露均沾的耐用性强化。\n\n这些功能需要持续的投入，并且只会在建有机器人组装建筑的行星上生效，但我们从这些测试组中所获得的数据会对生产力有立即的提升效果。"
  synth.105.a: "优化决策制定。"
  build_better_synths: "机器人组装建筑添加修正："
- synth.105.a.tt: "$build_better_synths$\n统治者人口资源产出：§G+15%§!\n\n"
+ synth.105.a.tt: "$build_better_synths$\n精英人口资源产出：§G+15%§!\n\n"
  synth.105.b: "关注记忆存储。"
  synth.105.b.tt: "$build_better_synths$\n专家人口资源产出：§G+5%§!\n\n"
  synth.105.c: "提升电机功效。"
@@ -314,9 +314,9 @@
 
 # Stage 3 Challenges - Mind Upload
  synth.360.name: "无线恶意软件"
- synth.360.desc: "为了提高$job_roboticist_plural$们的工作效率，管理人员批准了不安全的无线人格软件更新。其目的是将最佳工作流程的知识补上，但不幸的接受者的却丢失了部分个性和记忆。\n\n管理团队认为，在应用人格补丁之前对其进行全面测试太慢，而重新分配那些失去记忆的员工会更容易。"
+ synth.360.desc: "为了提高[roboticist.GetNamePlural]们的工作效率，管理人员批准了不安全的无线人格软件更新。其目的是将最佳工作流程的知识补上，但不幸的接受者的却丢失了部分个性和记忆。\n\n管理团队认为，在应用人格补丁之前对其进行全面测试太慢，而重新分配那些失去记忆的员工会更容易。"
  synth.360.a: "对效率的优化还是值得的。"
- synth.360.a.tt: "机器人组装建筑添加修正：\n$MOD_PLANET_POP_ASSEMBLY_MULT$：§G+10%§!\n\n§Y$job_roboticist_plural$§!基础维护费：£alloys£§R3.00§!"
+ synth.360.a.tt: "机器人组装建筑添加修正：\n$MOD_PLANET_POP_ASSEMBLY_MULT$：§G+10%§!\n\n§Y[roboticist.GetNamePlural]§!基础维护费：£alloys£§R3.00§!"
  synth.360.b: "强制实行缓慢但安全的流程。"
  synth.360.b.tt: "机器人组装建筑添加修正：\n$MOD_PLANET_POP_ASSEMBLY_MULT$：§R-10%§!\n稳定度：§G+5§!"
 
@@ -337,8 +337,9 @@
 
  synth.4.name: "人口合成化" #Digitization - Last event
  synth.4.desc: "在多方的通力协作下，我们实现了几乎不可能完成的任务，将意识转变成代码，躯体化身机械。\n\n这个过程并非一帆风顺，转变远非易事。但无论付出了什么代价，现在的新躯体已经将无尽的可能性展开在了我们的面前。"
+ synth.4.desc.unplugged: "在多方的通力协作下，我们实现了几乎不可能完成的几近亵渎的任务。我们的演化已经超出了[origin_unplugged_assimilator_empire.GetName]的掌控，将意识转变成代码，躯体化身机械。\n\n这个过程并非一帆风顺，转变远非易事。但无论付出了什么代价，现在的新躯体已经将无尽的可能性展开在了我们的面前。"
  synth.4.a: "我们将与众不同。"
- synth.4.a.tt: "解锁以下传统的全部效果：§Y$tradition_synthetics$§!"
+ synth.4.a.tt: "解锁以下传统的全部效果：['tradition_category:tradition_synthetics']"
 
 ### DIGITIZATION SITUATION END ###
 
@@ -352,7 +353,7 @@
 # Synth Democratic Physical
  auth_synth_democratic_physical: "移识民主制"
  auth_synth_democratic_physical_desc: "这种政府形式对意识在合成躯体之间的迁移提供前所未有的自由，并且对带来的额外成本已有备无患。"
- auth_synth_democratic_physical_tt: "$auth_democratic_election_tt$\n每个£district£地区提高专家产出§G+1%§!\n每个£district£地区导致£district£地区维护费§R+1%§!"
+ auth_synth_democratic_physical_tt: "$auth_democratic_election_tt$\n每个£district£地区提高专家产出§G+1%§!\n每个£district£地区导致地区维护费§R+1%§!"
  concept_auth_synth_democratic_physical: "$auth_synth_democratic_physical$"
  gov_synth_democracy_physical: "$auth_synth_democratic_physical$"
  gov_synth_democracy_physical_desc: "$auth_synth_democratic_physical_desc$"
@@ -366,7 +367,7 @@
  gov_synth_democracy_virtual_desc: "$auth_synth_democratic_virtual_desc$"
 
 # OLIGARCHIC
- auth_cyber_oligarch_ruler_enforcers_tt: "每个£job_enforcer£$job_enforcer$提升统治者资源产出：§G+10%§!"
+ auth_cyber_oligarch_ruler_enforcers_tt: "每个[enforcer.GetIcon][enforcer.GetName]升统治者资源产出：§G+10%§!"
 
 # Synth Oligarchic Physical
  auth_synth_oligarchic_physical: "覆写寡头制"

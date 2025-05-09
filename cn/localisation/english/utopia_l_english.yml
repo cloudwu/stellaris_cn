@@ -59,10 +59,10 @@
  ap_master_builders_habitat_size:2 "我帝国的§H轨道栖所§!将额外拥有§Y2§!块闲置地区。"
  allow_edict_consectrated_worlds:5 "§H解锁决策：§!$decision_consecrated_worlds$"
  describe_edict_consectrated_worlds:5 "§E祝圣无人居住的行星（最多§Y3§!颗），增强§Y精神主义道德吸引力§!和§Y全帝国内的舒适度§!，并增加£unity£§Y凝聚力产出§!，具体效果取决于行星在宗教中的重要程度。§!"
- allow_machine_worlds:2 "§H解锁环境改造方案：§!机械世界"
- describe_machine_worlds:7 "对大部分有机生物不宜居\n£district£§Y协调地区§!，§Y发电地区§!，以及§Y矿业区§!无数量限制\n£district£§Y工业区§!，§Y协调地区§!，§Y发电地区§!，以及§Y矿业区§!提供的住房和岗位数量翻倍\n£pop£人口的资源产出：§G+10%§!\n住房使用：§G-10%§!\n§R全部农业区将被摧毁§!"
- allow_hive_worlds:0 "§H解锁环境改造选项：§!蜂巢世界"
- describe_hive_worlds:1 "§Y蜂巢世界§!是一种不适合非蜂群思维人口居住的特殊行星类别，但不受行星地貌带来的£district£ §Y电力§!、§Y矿业§!和§Y农业区§!数量限制，同时§Y蜂巢区§!更加高效。居住在§Y蜂巢世界§!上的£pop£ §Y人口§!§Y资源产出§!增加§G+10%§!。"
+ allow_machine_worlds:3 "§H解锁环境改造选项：§!机械星球\n§H解锁机械星球特区：§!$zone_machine_replication$"
+ describe_machine_worlds:7 "对大部分有机生物不宜居\n£district£§Y中枢§!地区无数量限制\n所有£district£§Y地区§!提供的住房和岗位数量翻倍\n£pop£人口的资源产出：§G+10%§!\n住房使用：§G-10%§!\n§R将摧毁所有乡村地区§!"
+ allow_hive_worlds:1 "§H解锁环境改造选项：§!蜂巢星球\n§H解锁蜂巢星球特区：§!$zone_hive_spawning$"
+ describe_hive_worlds:1 "对非蜂巢物种不宜居。\n£district£§Y蜂巢§!地区无数量限制\n所有£district£§Y地区§!提供的住房和岗位数量翻倍\n£pop£人口的资源产出：§G+10%§!\n住房使用：§G-10%§!\n§R将摧毁所有乡村地区§!"
 
  ALLOW_PSI_CORPS:1 "解锁建筑：§Y$building_psi_corps$§!。"
  ALLOW_PSI_ARMIES:0 "可以征募§H$psionic_army_plural$§!。"
@@ -169,7 +169,7 @@
  SYNTHETIC_EVOLUTION_PROJECT:0 "$ap_synthetic_evolution$"
  SYNTHETIC_EVOLUTION_PROJECT_DESC:0 "放弃充满缺陷的有机体拥抱不朽的时候到了。我们必须为全体人口准备先进的合成人化身，然后开始意识转移的过程。"
 
- TRAIT_IMPROVES_LEADERS:0 "§G来自于这个种族的领袖有额外的特质和加成§!"
+ TRAIT_IMPROVES_LEADERS:0 "来自该物种的星宿有额外特质"
 
  trait_cybernetic:0 "义体化"
  trait_cybernetic_desc:0 "§L此种族大量运用神经机械学，其程度致其个体可被称为义体人。他们已经适应将有机身体部件替换成先进的义体版本。§!\n"
@@ -230,8 +230,8 @@
  leader_trait_reformer:0 "改革家"
  leader_trait_reformer_desc:0 "这位领袖是改革家，致力于建设社会的美好明天。"
 
- leader_trait_ruler_hive_mind:0 "蜂群思维"
- leader_trait_ruler_hive_mind_desc:1 "这位领袖是构成蜂群思维的大量认知器官的不朽中枢。"
+ leader_trait_ruler_hive_mind:0 "[owner.GetRulerTitle]"
+ leader_trait_ruler_hive_mind_desc:1 "这位领袖是构成[owner.GetGestaltEntityName]庞大认知系统的不朽的纽带。"
 
  ASCENSION_PERKS:0 "飞升特典"
  ASCENSION_PERKS_DESC:0 "飞升特典是特殊的奖励，我帝国可以通过完成一棵传统树来解锁。"

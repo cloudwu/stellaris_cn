@@ -9,42 +9,60 @@
  DLC_LEVIATHANS_RECOMMENDATION_ROBOT_REC:1 "我们推荐§S《星神兽》§!，因为该帝国的特质与此 DLC 中以探索太空和对抗大型生物为核心的机制和内容吻合。"
 
  station_xs:0 "古代岗哨"
+ station_xs_cap: "$station_xs$"
  station_xs_plural:0 "古代岗哨"
  station_s:0 "古代守卫"
+ station_s_cap: "$station_s$"
  station_s_plural:0 "古代守卫"
  station_m:0 "古代看守"
+ station_m_cap: "$station_m$"
  station_m_plural:0 "古代看守"
  station_l:0 "古代护卫"
+ station_l_cap: "$station_l$"
  station_l_plural:0 "古代护卫"
  station_xl:0 "古代宝库"
+ station_xl_cap: "$station_xl$"
  station_xl_plural:0 "古代宝库"
  space_amoeba_mother:0 "太空变形虫之母"
+ space_amoeba_mother_cap: "$space_amoeba_mother$"
  space_amoeba_mother_plural:0 "太空变形虫之母"
  ancient_mining_drone:0 "古代采矿无人机"
+ ancient_mining_drone_cap: "$ancient_mining_drone$"
  ancient_mining_drone_plural:0 "古代采矿无人机群"
  ancient_corvette:0 "古代战斗无人机"
+ ancient_corvette_cap: "$ancient_corvette$"
  ancient_corvette_plural:0 "古代战斗无人机群"
  ancient_destroyer:0 "古代驱逐舰"
+ ancient_destroyer_cap: "$ancient_destroyer$"
  ancient_destroyer_plural:0 "古代驱逐舰队"
  pirate_cruiser:0 "海盗巡洋舰"
+ pirate_cruiser_cap: "$pirate_cruiser$"
  pirate_cruiser_plural:0 "海盗巡洋舰队"
  homebase:0 "基地"
+ homebase_cap: "$homebase$"
  homebase_plural:0 "基地"
  hive_asteroid:0 "蜂巢小行星"
+ hive_asteroid_cap: "$hive_asteroid$"
  hive_asteroid_plural:0 "蜂巢小行星"
 
  wraith_01_blue:0 "蓝色幽灵"
+ wraith_01_blue_cap: "$wraith_01_blue$"
  wraith_01_blue_plural:0 "蓝色幽灵"
  sphere:0 "无极机器"
+ sphere_cap: "$sphere$"
  sphere_plural:0 "无极机器"
  npc_warship_01:0 "无畏舰"
+ npc_warship_01_cap: "$npc_warship_01$"
  npc_warship_01_plural:0 "无畏舰"
 
  wraith_01:0 "幽灵"
+ wraith_01_cap: "$wraith_01$"
  wraith_01_yellow:0 "幽灵"
  wraith_01_red:0 "幽灵"
+ wraith_01_red_cap: "$wraith_01_red$"
  wraith_01_plural:0 "幽灵"
  wraith_01_yellow_plural:0 "幽灵"
+ wraith_01_yellow_cap: "$wraith_01_yellow_plural$"
  wraith_01_red_plural:0 "幽灵"
  wraith_frequency_sync:0 "幽灵频率同步"
  spectral_residue_studies:0 "幽灵残渣研究"
@@ -173,15 +191,15 @@
 #  leviathans.125.b.reply:0 "Very good. The food will be delivered to you in a perfectly edible condition."
 #  leviathans.125.c.reply:0 "Your people will not be going hungry this cycle! Food shipments shall commence immediately."
 
- leviathans.125.desc.z1:1 "我们有一位才华横溢的执行经理随时待命，准备前往[Root.GetName]，解决您任何一片星域的困境。§H贸易额§!的事就交给专家来解决吧！"
- leviathans.125.desc.z1.gestalt:0 "我们有一位才华横溢的高管随时待命，准备……嗯？你说什么？\n\n“买方须知”很好，但是我还是有义务通知您，我们的顾问真的只专注于§H贸易额§!。 我不确定这是否适合你，毕竟……您与这一概念似乎有些格格不入。"
+ leviathans.125.desc.z1:1 "我们有一位才华横溢的执行经理随时待命，准备前往[Root.GetName]，解决您任何一片星域的困境。$r_trade$的事就交给专家来解决吧！"
+ leviathans.125.desc.z1.gestalt:0 "我们有一位才华横溢的高管随时待命，准备……嗯？你说什么？\n\n“买方须知”很好，但是我还是有义务通知您，我们的顾问真的只专注于$r_trade$。我不确定这是否适合你，毕竟……您与这一概念似乎有些格格不入。"
  leviathans.125.z1:0 "成交。"
  leviathans.125.z1.gestalt:0 "我们知道，并且仍打算这么做。"
  leviathans.126.desc:0 "很好。我们乐意与[Root.GetName]分享我们的技能。"
  leviathans.126.desc.alt: "太好了！愿我们都能从彼此……独特的商业方式中获益。"
 
  already_hired_trader_official:2 "§R我们已经从[enclave_country.GetName]雇佣了一位领袖§!。"
- recruit_trader_leader:1 "将一位具有§Y贸易联络人特质§!的[enclave_country.GetAdj]§Y官员§!加入§H领袖§!池中。"
+ recruit_trader_leader:1 "将一位具有§Y$councilor_enclave_trader$§!特质的[enclave_country.GetAdj]§Y行政官§!加入§H领袖§!池中。"
  requires_trader_enclave:0 "§R需要在星系中有一个§Y贸易城邦§!。§!"
 
  sm_trader_proxy_office:0 "贸易代理人办公室"
@@ -189,7 +207,7 @@
  requires_trade_enclave:0 "§R需要在星系中有一个§Y贸易城邦§!。§!"
 
  leader_trait_enclave_trader:0 "飞地商人"
- leader_trait_enclave_trader_desc:0 "招募自一个独立的商人飞地，这位领袖尤其擅长最大化贸易价值。"
+ leader_trait_enclave_trader_desc:0 "招募自一个独立的商人城邦，这位领袖尤其擅长使贸易额最大化。"
  trader_catch_phrase: "§L“现在说说那笔小小的咨询费……”§!"
 
  leader_trait_xuracorp_liaison: "旭然集团联络人"
@@ -211,9 +229,9 @@
  councilor_enclave_trader_female: "$councilor_enclave_trader$"
  councilor_enclave_trader_desc: "内各种中有一名来自星系三大商业中心之一的联络员，他们负责提供星系内经纪公司的内幕信息。"
  councilor_enclave_trader_unlock_title: "§H来自$NAME_Muutagan_Merchant_Guild$、$NAME_Riggan_Commerce_Exchange$或$NAME_XuraCorp$的内阁席位§!"
- councilor_enclave_trader_conditional_tooltip: "领袖拥有§Y贸易联络人§!特质。"
+ councilor_enclave_trader_conditional_tooltip: "领袖拥有§Y$councilor_enclave_trader$§!特质。"
 
- unlocks_trader_council_position: "\n§E允许解锁内阁席位：§!\n§H$t$$councilor_enclave_trader$§!\n$tt$$COUNCIL_POSITION_MODIFIER_BASE$\n$ttt$$MOD_TRADE_VALUE_MULT$：§G+2%§!\n$ttt$$MOD_COUNTRY_TRADE_FEE$§G-1%§!\n$COUNCIL_POSITION_AVAILABLE_FOR$$t$$official_with_icon$\n\n$COUNCIL_POSITION_REQUIREMENTS$$councilor_enclave_trader_conditional_tooltip$"
+ unlocks_trader_council_position: "\n§E允许解锁内阁席位：§!\n§H$t$$councilor_enclave_trader$§!\n$tt$$COUNCIL_POSITION_MODIFIER_BASE$\n$ttt$$r_trade$：§G+2%§!\n$ttt$$MOD_COUNTRY_TRADE_FEE$§G-1%§!\n$COUNCIL_POSITION_AVAILABLE_FOR$$t$$official_with_icon$\n\n$COUNCIL_POSITION_REQUIREMENTS$$councilor_enclave_trader_conditional_tooltip$"
 
 
  leviathans.131.desc:3 "这种§Y易爆微粒§!是瑞玵的珍贵调味料。它以独一无二的味道在宇宙中声名远扬——它独一无二的爆炸性也同样声名远扬。我们只卖给最宝贵的贸易伙伴，[Root.GetName]便是其一。\n\n只要你接受这合理的价格，我们愿意在十个标准年里向你出口易爆微粒。 "
@@ -311,9 +329,11 @@
 # ARTISAN ENCLAVE
 ##################
 
+ ENCLAVE_DIPLOMACY_TITLE: "城邦外交"
+
  leviathans.295.desc:0 "一位访客！这真是何等令人欣喜的场合！噢，请原谅我的表示。我坚持介绍得要按照规矩来。我们是艺术家联盟。\n\n我们的成员都全身心地将自己的生命投身于艺术、音乐、文化，以及其他任何让智慧生命体的存在有所意义的事业。轻便，如果你愿意分享我们创造的奇迹，不要犹豫，赶紧联系我们！"
 
- leviathans.300.name:0 "艺术家团体"
+ leviathans.300.name:0 "§Y太空城邦：§!艺术家联盟"
  leviathans.300.desc:3 "你好！我是艺术家联盟的首席大师，衷心祝愿你今天也是才思如泉涌。\n\n我们能为您做什么？为您打造一个用于欣赏的艺术作品？或者您希望赞助我们城邦的充满异域之美的创作？" #'do you for' phrasing is intentional, humorous
  leviathans.300a.desc:0 "嗯？噢，请原谅，我不小心陷入了冥想状态。有时候我的这种天赋有点……太强势了。我们还有什么能够为你做的吗？"
  leviathans.300b.desc:0 "你是否一度驻足，惊叹于它极度的宏伟？我们到了，你请。这是何等的几率！我都能听到此起彼伏的歌功颂德了。"
@@ -332,7 +352,7 @@
  leviathans.300.e:0 "你还能做什么？"
  leviathans.300.f:1 "我们想要投资一个§Y文化中心§!。"
 
- leviathans.301.name:0 "[from.GetName]" #country — may return as an unknown name
+ leviathans.301.name:0 "The [from.GetName]" #country - may return as an unknown name
  leviathans.301.desc:0 "艺术家联盟拒绝回应我们的招呼。"
  leviathans.301.desc.unknown:1 "别说翻译了，只要我们发给[From.GetName]讯息，他们立马关闭所有通讯频道，拒绝与我们交流。"
  leviathans.301.a:0 "他们好大的胆子啊？！"
@@ -364,6 +384,12 @@
  leviathans.337.name:0 "背叛"
  leviathans.337.desc:1 "§Y星球盛典§!突然停止了。艺术家联盟已经收拾好行李离开了，一句解释都没有。\n\n我们彻底搜索他们的营地和演出舞台后发现，大量存放的资源已经消失。"
  leviathans.337.a:0 "一群小偷！"
+ leviathans.337.a.tooltip:0 "艺术家联盟在10年内拒收任何通讯。"
+ leviathans.337.b:0 "这倒也是出好戏。"
+ leviathans.337.b.tooltip:0 "原谅艺术家联盟的违约行为。"
+ leviathans.337.c:0 "查抄他们的营地。"
+ tent_heist: "帐篷劫掠"
+ cultural_clemency: "文化仁慈"
  leviathans.315.desc:1 "尊敬的[Root.GetRulerName][Root.GetRulerTitle]：十年前[Root.GetName]承诺赞助艺术家联盟，并已如约履行。\n\n上一期的赞助已经接近尾声，谨慎起见请允许我们再度询问：您是否愿意续订全星系最精美的艺术和工艺品？"
 
  leviathans.321.name:0 "致赞助人的新闻通讯"
@@ -458,7 +484,7 @@
  leviathans.506.d:0 "您还有其它可以提供的吗？"
 #  leviathans.506.a.reply:0 "We are transmitting the survey data to you now."
 
- leviathans.507.name:0 "科研协助"
+ leviathans.507.name:0 "§Y太空城邦：§!典藏研究所科研协助"
  leviathans.507.desc:1 "当然。我们将向您开放我们数据库的有限访问权限十年。这会提高您行星上§H研究实验室§!的效率。\n\n自然，我们要对这服务收取一定的费用。但我认为您一定会发现，我们的价格非常合理。"
  leviathans.507.a:0 "我们想购买这项服务。"
  leviathans.507.a.reply:0 "真是明智的选择，[Root.GetSpeciesNamePlural]的后代一定会感谢您的这次选择。"
@@ -476,9 +502,10 @@
  leviathans.508.h:1 "给我们讲讲§Y$NAME_Automated_Dreadnought$§!的事。"
  leviathans.508.i:1 "给我们讲讲§Y$NAME_Wraith$§!的事。"
  leviathans.508.j:1 "给我们讲讲虚空孳孽。" # [LocEditor:ForFutureBatchExport]
- leviathans.508.k:1 "给我们讲讲$leviathans.555.name$。" #Scavenger Bot [LocEditor:ForFutureBatchExport]
- leviathans.508.l:1 "给我们讲讲$leviathans.556.name$。" #Tiyanki Matriarch [LocEditor:ForFutureBatchExport]
+ leviathans.508.k:1 "给我们讲讲§Y$NAME_Scavenger_Bot$§!。" #Scavenger Bot
+ leviathans.508.l:1 "给我们讲讲§Y$NAME_Elderly_Tiyanki$§!。" #Tiyanki Matriarch
  leviathans.508.m:0 "给我们讲讲§Y$NAME_Toxic_God$§!。" #Toxic God
+ leviathans.508.n: "给我们讲讲§Y$NAME_Opus_Sentinel$§!。" #Opus Sentinel (Unplugged)
 
  leviathans.506.f:0 "我们的舰队跟它对抗的话，结果会如何？"
  leviathans.5106.f1.reply:0 "不好，非常不好。\n\n等等，难道你想要……？ 我的天，用你那点飞船？这…这将是场屠杀！"
@@ -530,6 +557,18 @@
  leviathans.558.B:0 "该怎么击败它？"
  leviathans.558.BB:0 "重新给我们讲讲应该如何同它战斗。"
  leviathans.558.B.reply:0 "过去撞见它的人中有少数几个幸存者。根据报告，它带有腐蚀性的毒液能够烧蚀任何形态的装甲。护盾相对来说更加有用一丁点。此外，在它的背上生活的那些生物在剧毒实体受到威胁的时候，会像蜂群一样发动攻击。我们只能建议你带着压倒性的军力去接近它。"
+
+ leviathans.559.name: "$NAME_Opus_Sentinel$"
+ leviathans.559.desc: "那个颇为神经质的自动化机械体来到这个星系的时间并不长，但不要被这种新奇所迷惑。$NAME_Opus_Sentinel$的创造者们在被一台专横的机器同化之前，就已经是他们所在领域中最杰出的工程师之一。我们不知道自那时起，那个机器意识遭遇了怎样严酷的命运，但从哨兵那痛苦的扭动来看：情况似乎相当不稳定。如果你决定满足自己的好奇心，务必小心行事。"
+ leviathans.559.desc.unplugged: "恕我冒昧，但我以为您会比我们更了解此事！与我们所研究的对象相比，那个颇为不安的自动化机械体是个新面孔，但作为对手同样令人畏惧。\n\n我们知道，即便在被同化之前，$NAME_Opus_Sentinel$背后的工程师们也被认为是该领域最优秀的人才。因此，那艘战舰不容小觑。我们不太清楚的是，这艘船是如何与[origin_unplugged_assimilator_empire.GetName]如此疏远的。从“哨兵”痛苦的扭动来看，我们推测情况仍然相当不稳定。您是否同意这一评估，[root.GetSpeciesName]？"
+ leviathans.559.a: "你是说它在守护着什么吗？"
+ leviathans.559.a.reply: "正是，尽管我们并不确切知道是什么。我们的一些联系人认为，哨兵正在保卫分裂的[origin_unplugged_assimilator_empire.GetName]所剩下的任何东西；另一些人则暗示，这颗星球本身蕴藏着某种宝藏。我们所知道的是，这艘战舰的建造比其[origin_unplugged_assimilator_empire.GetAdj]同类坚固得多，甚至高出一个数量级。无论它在保护什么，$NAME_Opus_Sentinel$都在坚持，尽管有明显的痛苦迹象，甚至可能是极度的煎熬。"
+ leviathans.559.b: "我们宁愿不谈这件事。"
+ leviathans.559.b.reply: "完全可以理解。我们只是出于好奇。\n\n还有其他我可以帮您的吗？"
+ leviathans.559.c: "我们能在哪里找到这个实体？"
+ leviathans.559.c.reply: "鉴于您是我们较为信任的客户之一……我可以告知您，$NAME_Opus_Sentinel$最后一次被目击到是在守护§Y[origin_unplugged_machine_legacy_core.GetName]星系§!\n\n考虑到我们对这艘饱经战火、问题重重的战舰仍然知之甚少，请您放心：我们将以极大的兴趣观察您与它的遭遇细节！"
+ unplugged_curator_poi_opus_sentinel_desc: "我们从典藏研究所那里购买了这些坐标，他们报告称$NAME_Opus_Sentinel$最后一次出现在该区域。"
+
 
  leviathans.590.name:0 "雇佣科学家"
  leviathans.590.desc:0 "我们可以安排我们最杰出的科学家之一为您服务。这不是随便就能提供给谁的，明白吗！\n\n一笔合适的…捐助是必须的，然后我们会安排行程。"
@@ -756,9 +795,9 @@
  leviathans.1062.desc:0 "完成了。§Y完成了！§!\n\n我们用某种方式解决了这个问题，多亏了你们的帮助。万物的有机本质躲避着我们，答案一直在我们的身后。当然了，谢谢你们，小家伙们。宇宙如此广阔，却又如此渺小。不过如今我们能够看穿这一切的简单荣光。这太美了。\n\n现在既然我们算出了无极，我们就只有一件事情可做了，那就是向你们阐明真理。再见了，年轻人们。"
  leviathans.1062.a:0 "很高兴我们帮上了忙。"
  leviathans.1063.desc:0 "无极机器消失在了高康大黑洞中，然后……什么都没发生。它成功了吗？它尝试了什么？我们恐怕永远不会知道了。它外壳的细微残余留在黑洞事件视界外的漩涡里——我们或许可以从中获取一些信息。\n\n这是一位奇特朋友最后的礼物。"
- leviathans.1063.a.tooltip:1 "添加下列至[technosphere_ship.GetStarName]：\n£physics£物理学数据§G+4§!\n£society£社会学数据§G+4§!\n£engineering£工程学数据§G+4§!"
+ leviathans.1063.a.tooltip:1 "[technosphere_ship.GetStarName]增加下列内容：\n£physics£物理学研究§G+4§!\n£society£社会学研究§G+4§!\n£engineering£工程学研究§G+4§!"
  leviathans.1065.desc:1 "无极机器消失在了高康大黑洞中，它所研究的东西用了如此漫长的时间。当它经过黑洞的事件视界时，黑洞开始波动，进入的光线变少，吸入其中的物质的漩涡变慢。一刹那它放出了超过任何恒星亮度的光芒并开始将物质喷射回宇宙。\n\n黑洞在缩小，不再符合我们先前的称呼，现在我们叫它“庞大固埃”。黑洞在周围引起更强的时间膨胀。我们观察到庞大固埃内部有一个镜像宇宙，在黑洞的另一头，正在诞生。无极机器向我们展示了真理。黑洞是子宫，而宇宙是它们的后代。\n\n研究这个镜像宇宙肯定会教给我们很多所居住的宇宙的知识。从另一个开端学习"
- leviathans.1065.a.tooltip:2 "添加下列至[technosphere_ship.GetStarName]：\n£physics£物理学数据§G+10§!\n£society£社会学数据§G+10§!\n£engineering£工程学数据§G+10§!\n\n"
+ leviathans.1065.a.tooltip:2 "[technosphere_ship.GetStarName]将获得：\n£physics£物理学研究§G+10§!\n£society£社会学研究§G+10§!\n£engineering£工程学研究§G+10§!\n\n"
  leviathans.1074.name:1 "庞大固埃基地"
  leviathans.1074.desc:1 "我们失去了环庞大固埃黑洞轨道上的基地，也失去了它独特的科研潜力。"
  leviathans.1076.desc:1 "我们获得了环庞大固埃黑洞轨道上的基地控制权。黑洞的特性增强了我们的科研能力。"
@@ -1053,18 +1092,25 @@
  xuragel_effect:1 "\n§Y旭然凝胶§!给予适居性§G+10%§!"
  muutagan_crystals_effect:2 "\n§Y穆塔钢水晶§!给予幸福度§G+10%§!"
  space_dragon_baby:0 "以太龙兽幼体"
+ space_dragon_baby_cap: "$space_dragon_baby$"
  space_dragon_baby_plural:0 "以太龙兽幼体"
  enclave_station:0 "飞地基地"
+ enclave_station_cap: "$enclave_station$"
  enclave_station_plural:0 "飞地基地"
  space_dragon_red:0 "以太龙兽"
+ space_dragon_red_cap: "$space_dragon_red$"
  space_dragon_red_plural:0 "以太龙兽"
  stellarite:1 "群星吞噬者"
+ stellarite_cap: "$stellarite$"
  stellarite_plural:1 "群星吞噬者"
  dimensional_horror:0 "次元恶魔"
+ dimensional_horror_cap: "$dimensional_horror$"
  dimensional_horror_plural:0 "次元恶魔"
  automated_dreadnought:0 "无畏舰"
+ automated_dreadnought_cap: "$automated_dreadnought$"
  automated_dreadnought_plural:0 "无畏舰"
  technosphere:0 "无极机器"
+ technosphere_cap: "$technosphere$"
  technosphere_plural:0 "无极机器"
 
  guardian_hard:0 "困难守护者难度"

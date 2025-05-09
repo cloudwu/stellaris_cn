@@ -12,9 +12,8 @@
  GAMESETUP_COUNTRY_INVALID_ORIGIN:0 "You need to select an Origin before continuing"
  ORIGIN_INITIALIZER_RESTRICTION:0 "Cannot change due to current Origin selection"
 
- pops_with_icon: "£pops£ Pops"
- INITIAL_POPS: "Initial §I$pops_with_icon$§!:"
- ADDITONAL_TECHNOLOGIES_STRING: "Additional Starting Technologies:"
+ INITIAL_POPS: "Initial £pop£ §IPops§!:"
+ ADDITIONAL_TECHNOLOGIES_STRING: "Additional Starting Technologies:"
  MISSING_TECHNOLOGIES_STRING: "Missing Starting Technologies:"
  GUARANTEED_RESEARCH_OPTION_STRING: "Guaranteed Research Options:"
  STARTING_NOT_HOMEWORLD: "- Starting planet is NOT this empire's homeworld."
@@ -42,17 +41,17 @@
 
  origin_default:0 "Prosperous Unification"
  origin_default_desc:1 "Through its strife and triumphs, this society has reached every young civilization's ambition: a homeworld with unified goals, and a path open to the stars."
- origin_tooltip_default_effects_start: "- $INITIAL_POPS$ §G+4§!$NEW_LINE$- $HOMEWORLD$$TABBED_NEW_LINE$- ['concept_generator_district', £district£ $district_generator_plural$]: §G+1§!"
+ origin_tooltip_default_effects_start: "- $INITIAL_POPS$ §G+400§!$NEW_LINE$- $HOMEWORLD$$TABBED_NEW_LINE$- ['concept_generator_district', £district£ $district_generator_plural$]: §G+1§!"
  origin_tooltip_default_effects_end: "$TABBED_NEW_LINE$- $PLANETARY_MODIFIERS$ ['concept_prosp_uni']$NEW_LINE$- $GUARANTEED_RESEARCH_OPTION_STRING$ ['concept_planetary_unification', £society_research£ $tech_planetary_unification$]"
  origin_tooltip_default_effects:3 "$origin_tooltip_default_effects_start$$TABBED_NEW_LINE$- ['concept_farming_district', £district£ $district_farming_plural$]: §G+1§!$origin_tooltip_default_effects_end$"
  origin_tooltip_default_effects_lithoid: "$origin_tooltip_default_effects_start$$TABBED_NEW_LINE$- ['concept_mining_district', £district£ $district_mining_plural$]: §G+1§!$origin_tooltip_default_effects_end$"
 
  origin_mechanists:0 "$civic_mechanists$"
  origin_mechanists_desc:0 "This civilization has been preoccupied with the idea of metallic automatons since the early Steam Age. Although many said it could not be done, the first true robots left the assembly lines long before even rudimentary space flight was achieved."
- origin_tooltip_mechanists_effects:3 "- ['concept_robots', £mod_planet_jobs_robotic_produces_mult£ Robot] §I$pops_with_icon$§!: 8$TABBED_NEW_LINE$- Mechanical Trait: ['concept_adaptive_frames']$NEW_LINE$- Homeworld: ['concept_robot_assembly_plant',£building£ Robot Assembly Plant]$NEW_LINE$- $ADDITONAL_TECHNOLOGIES_STRING$$TABBED_NEW_LINE$- ['concept_powered_exoskeletons', £engineering_research£ $tech_powered_exoskeletons$]$TABBED_NEW_LINE$- ['concept_robotic_workers', £engineering_research£ $tech_robotic_workers$]$NEW_LINE$- $GUARANTEED_RESEARCH_OPTION_STRING$ ['concept_robomodding', £engineering_research£ $tech_robomodding$]"
+ origin_tooltip_mechanists_effects:3 "- ['concept_robots', £mod_planet_jobs_robotic_produces_mult£ Robot] £pop£ §HPops§!: 800$TABBED_NEW_LINE$- Mechanical Trait: ['concept_adaptive_frames']$NEW_LINE$- Homeworld: ['concept_robot_assembly_plant',£building£ Robot Assembly Plant]$NEW_LINE$- $ADDITIONAL_TECHNOLOGIES_STRING$$TABBED_NEW_LINE$- ['concept_powered_exoskeletons', £engineering_research£ $tech_powered_exoskeletons$]$TABBED_NEW_LINE$- ['concept_robotic_workers', £engineering_research£ $tech_robotic_workers$]$NEW_LINE$- $GUARANTEED_RESEARCH_OPTION_STRING$ ['concept_robomodding', £engineering_research£ $tech_robomodding$]"
  origin_syncretic_evolution:0 "$civic_syncretic_evolution$"
  origin_syncretic_evolution_desc:0 "A second species forms an integral part of this civilization. They are big, strong, and most of them have the intelligence of a particularly dim-witted child. Ancient wars have culled their species of their most aggressive tendencies, leaving them quite servile."
- origin_tooltip_syncretic_evolution_effects: "- Organic £pop£ §IPops§! with ['concept_syncretic_proles'] Trait: 12"
+ origin_tooltip_syncretic_evolution_effects: "- £pop£ §IOrganic Pops§! with ['concept_syncretic_proles'] Trait: 1.2K"
  origin_life_seeded:0 "$civic_life_seeded$"
  origin_life_seeded_desc:1 "This civilization's home is a paradise, possibly designed just for them."
  origin_tooltip_life_seeded_effects: "- $HOMEWORLD$ ['concept_pc_gaia'] (Size: £planetsize£ 30) with §IRare Planetary Features§!$NEW_LINE$- $SPECIES_TRAITS$ ['concept_gaia_preference']"
@@ -67,14 +66,14 @@
  origin_tooltip_post_apocalyptic_machines_effects: "- $HOMEWORLD$ ['concept_pc_nuked']$NEW_LINE$- $SPECIES_TRAITS$ ['concept_robot_survivor']"
 
  origin_shattered_ring:0 "Shattered Ring"
- origin_shattered_ring_desc:1 "This civilization inhabits a Ring World built by unknown forerunners. If it can be understood and fully repaired it will grant them great power."
+ origin_shattered_ring_desc:1 "This civilization inhabits a §HRing World§! built by unknown forerunners. If it can be understood and fully repaired it will grant them great power."
  origin_tooltip_shattered_ring_effects:3 "- $HOMEWORLD$ ['concept_pc_shattered_ring']$NEW_LINE$- ['concept_guaranteed_colonies']: Colonizable Ring World Segments instead of Planets$NEW_LINE$- $SPECIES_TRAITS$ ['concept_ring_preference']"
  origin_tooltip_shattered_ring_effects_lithoid:0 "§R- WARNING: Challenging Origin for Lithoids due to a scarcity of minerals.§!$NEW_LINE$$origin_tooltip_shattered_ring_effects$"
 
  origin_remnants:0 "Remnants"
  origin_remnants_desc:1 "This civilization once spanned the void, controlling much of the galaxy. They were eventually defeated and almost destroyed, but after a long period of destitution they are returning to the stars."
  origin_tooltip_remnants_effects:5 "- $HOMEWORLD$$TABBED_NEW_LINE$- ['concept_pc_relic'] (Size: £planetsize£ 22)$TABBED_NEW_LINE$- ['concept_ruined_arcology', $concept_ruined_arcology$]: +6 [GetRemnantAncientRelicEffect]"
- RemnantAncientRelicEffect:1 "$TABBED_NEW_LINE$- ['concept_archaeostudies_faculty', £building£ $building_archaeostudies_faculty$]$NEW_LINE$- $ADDITONAL_TECHNOLOGIES_STRING$ ['concept_archaeostudies', £society£ $tech_archaeostudies$]"
+ RemnantAncientRelicEffect:1 "$TABBED_NEW_LINE$- ['concept_archaeostudies_faculty', £building£ $building_archaeostudies_faculty$]$NEW_LINE$- $ADDITIONAL_TECHNOLOGIES_STRING$ ['concept_archaeostudies', £society£ $tech_archaeostudies$]"
 
  origin_tree_of_life:0 "Tree of Life"
  origin_tree_of_life_desc:0 "This Hive evolved in a symbiotic relationship with a vast Tree. The Tree grants them many benefits, but its loss would cripple them."
@@ -144,8 +143,10 @@
  d_sr_power_grid_desc:0 "The damaged power grid supplying this segment has frequent shorts and brownouts."
  d_sr_power_grid_tooltip:0 "§R$MISSING_TECHNOLOGY$: $tech_power_hub_1$§!"
 
+ juggernaut_cap: "$juggernaut$"
  juggernaut:0 "Juggernaut"
  juggernaut_plural:0 "Juggernauts"
+ juggernaut_logistics: "Juggernaut Logistics"
  mega_shipyard_0:0 "$mega_shipyard_3$ Site"
  mega_shipyard_0_DESC:0 "The construction site station serves as the base for the future construction of a $mega_shipyard_3$."
  mega_shipyard_0_MEGASTRUCTURE_DETAILS:1 "A massive Starbase dedicated entirely to shipbuilding, the §Y$mega_shipyard_3$§! has 20 production berths to build or upgrade ships."
@@ -201,8 +202,8 @@
  rediscover_tech:0 "\nThese ruins likely contain some of our lost knowledge."
 
  civic_hive_empath:0 "Empath"
- civic_hive_empath_desc:0 "The Hive Mind can reach out and touch the minds of others, giving them a glimpse of our will that helps them understand."
- civic_tooltip_empath_effects:0 "Reduces the £opinion£ Opinion penalty Hive Minds normally have with biological empires.\n\n"
+ civic_hive_empath_desc:0 "The collective can reach out and touch the minds of others, giving them a glimpse of our will that helps them understand."
+ civic_tooltip_empath_effects:0 "Reduces the £opinion£ Opinion penalty Gestalts normally have with biological empires.\n\n"
  triggered_opinion_hive_mind_empath:0 "$civic_hive_empath$"
 
  servitor_mission_accomplished:0 "Mission Accomplished"
@@ -335,13 +336,22 @@
 
  requires_embassy_or_improving_relations: "$TRIGGER_FAIL$§RRequires an §YEmbassy§! OR an Envoy §YImproving Relations§!§!"
 
- requires_10_trust_or_neutral: "$TRIGGER_FAIL$§RRequires $OPINION_NEUTRAL$ OR §Y10§! Trust§!"
+ requires_10_trust_or_neutral: "$TRIGGER_FAIL$§RRequires [GetTrust10] Trust§!"
 
- requires_20_trust_or_good: "$TRIGGER_FAIL$§RRequires $OPINION_GOOD$ OR §Y20§! Trust§!"
+ requires_20_trust_or_good: "$TRIGGER_FAIL$§RRequires [GetTrust20] Trust§!"
 
- requires_30_trust_or_excellent: "$TRIGGER_FAIL$§RRequires $OPINION_EXCELLENT$ OR §Y30§! Trust§!"
+ requires_30_trust_or_excellent: "$TRIGGER_FAIL$§RRequires [GetTrust30] Trust§!"
 
- requires_50_trust_or_excellent: "$TRIGGER_FAIL$§RRequires $OPINION_EXCELLENT$ OR §Y50§! Trust§!"
+ requires_50_trust_or_excellent: "$TRIGGER_FAIL$§RRequires [GetTrust50] Trust§!"
+
+ neutral_five: "$OPINION_NEUTRAL$ OR §Y5§!"
+ neutral_ten: "$OPINION_NEUTRAL$ OR §Y10§!"
+ good_ten: "$OPINION_GOOD$ OR §Y10§!"
+ exellent_fifteen: "$OPINION_EXCELLENT$ OR §Y15§!"
+ good_twenty: "$OPINION_GOOD$ OR §Y20§!"
+ excellent_twenty_five: "$OPINION_EXCELLENT$ OR §Y25§!"
+ excellent_thirty: "$OPINION_EXCELLENT$ OR §Y30§!"
+ excellent_fifty: "$OPINION_EXCELLENT$ OR §Y50§!"
 
  EMPIRE_OVERVIEW:0 "Empire Overview"
 
@@ -747,6 +757,7 @@
  gal_com_ongoing_grey_goo_crisis:0 "There is a Gray Tempest crisis ongoing"
  gal_com_ongoing_great_khan_crisis:0 "There is a Great Khan crisis ongoing"
  gal_com_exists_awakened_fallen_empire:0 "There is an Awakened Fallen Empire"
+ gal_com_is_awakened_empire: "They are an Awakened Fallen Empire"
  gal_com_owns_high_crime_planet:0 "They have a planet with high crime"
  gal_com_owns_planet_with_criminal_syndicate_branch_office:0 "They have a planet with a Criminal Syndicate Branch Office"
  gal_com_emperor_unfriendly_to_proposer:0 "They are the Galactic Emperor and don't like the proposer"
@@ -891,7 +902,7 @@
  spiritualist_envoys_1_effect:0 "§YEnvoys§! assigned to the Federation will now provide §G50%§! more §YCohesion§! and increase §YSpiritualist§! ethic attraction within our Empire by §Y20%§!."
  culture_workers_1:0 "Promotion of Culture"
  culture_workers_1_desc:0 "Our blend of cultural identities is our strength. By promoting it, we will immeasurably increase our might."
- culture_workers_1_effect:0 "§YPlanetary Capitals§! provide §G+1§! £job_culture_worker£ §Y$job_culture_worker_plural$§!. This effect is doubled for §YSystem Capital-Complexes§!."
+ culture_workers_1_effect:0 "$mod_planet_civilians_unity_produces_add$: §G+1§!\n£job_civilian£ $job_civilian_plural$ gain additional effects from Empire's ethics"
  president_spiritualist_1:0 "Spread the Holy Word"
  president_spiritualist_1_desc:0 "We cannot guarantee that spiritualist interests will be protected unless we are able to encode them into galactic law."
  unity_trade_1:0 "Ecclesiastical Funding"
@@ -903,7 +914,7 @@
  president_spiritualist_2_desc:0 "Leadership of this holy covenant is a grand step towards spiritual ascension."
  all_the_priests_1:0 "Empowerment of the Priestly Class"
  all_the_priests_1_desc:0 "The more priests, the less spiritual impurity we will be forced to tolerate."
- all_the_priests_1_effect:0 "£unity£ Unity-focused §YColony Designations§! will produce an extra §G+1§! £job_priest£ §Y$job_priest_plural$§! jobs per 25 pops (this can be further increased via planetary ascension)"
+ all_the_priests_1_effect:0 "£unity£ Unity-focused §YColony Designations§! will produce an extra §G+1§! £job_priest£ §Y$job_priest_plural$§! jobs per 25 £pop£ §HPops§! (this can be further increased via Colony Ascension)"
  all_the_priests_2:0 "Saintly Hierarchy"
  all_the_priests_2_desc:0 "With our increased focus on matters of spirituality, the priestly classes have swelled to unwieldy proportions. The most talented among them shall now be promoted into an expanded ecclesiastical leadership."
  all_the_priests_2_effect:0 "§YSacred Nexuses§! and equivalent buildings provide §G+1§! £job_high_priest£ §Y$job_high_priest_plural$§!"
@@ -1184,7 +1195,7 @@
  decision_end_extradimensional_experimentation_desc:0 "This experimentation is dangerous and must end. What were we thinking?"
  federations.10020.name:0 "$resolution_galacticstudies_extradimensional_experimentation$"
  federations.10020.desc:1 "The secrets of this universe are not all that is out there.\n\nThe [global_event_country.GetGalCommunityOrGalImperium] has authorized the use of reality-altering substances to enhance our research, allowing our scientists in Advanced Research Complexes to probe other realities for the truth."
- federations.10020.desc_gestalt:1 "The secrets of this universe are not all that is out there.\n\nThe [global_event_country.GetGalCommunityOrGalImperium] has authorized the use of reality-altering substances to enhance our research, allowing our research drones in Advanced Research Complexes to probe other realities for the truth."
+ federations.10020.desc_gestalt:1 "The secrets of this universe are not all that is out there.\n\nThe [global_event_country.GetGalCommunityOrGalImperium] has authorized the use of reality-altering substances to enhance our research, allowing our [root.GetResearcherPlural] in Advanced Research Complexes to probe other realities for the truth."
 
 
  # Industry
@@ -1314,6 +1325,7 @@
  federations.10010.name:0 "$resolution_greatergood_greater_than_ourselves$"
  federations.10010.desc:1 "Alongside the rights enshrined in recent [global_event_country.GetGalCommunityOrGalImperium] resolutions, we ask additional responsibilities of our workers.\n\nWe can now encourage unemployed workers to voluntarily resettle to other worlds we control that have available housing, jobs, and are of adequate habitability."
  federations.10010.desc_gestalt:1 "The [global_event_country.GetGalCommunityOrGalImperium] has passed regulations granting additional privileges for their worker drones.\n\nWhile this is largely meaningless to us, we can at least benefit from some of the infrastructure they have created in order to resettle inactive simple drones."
+ federations.10010.desc_wilderness: "The [global_event_country.GetGalCommunityOrGalImperium] has passed regulations granting additional privileges for their workers.\n\nWhile this ruling is largely meaningless to us, we can derive some token benefit from the infrastructure they created for resettling their own inactive drones and laborers."
 
  resolution_greatergood_balance_in_the_middle:0 "Balance in the Middle"
  resolution_greatergood_balance_in_the_middle_desc:0 "We must tackle inequality in all of its forms, enforcing fairness by any means necessary. What good is a feast if you have already had enough, and why should it go to waste when your neighbor is hungry?"
@@ -1772,8 +1784,9 @@
  Envoy_Action:0 "Assign Envoy"
  ENVOY_ACTION_TITLE:1 "Envoy Assignments"
  ENVOY_UNASSIGN_TITLE:0 "Unassign Envoys"
- ENVOY_UNASSIGN_DESC:0 "Unassigning envoys will make them stop their current assignment and return to our capital, ready for their next task."
+ ENVOY_UNASSIGN_DESC:0 "When Envoys are unassigned, they stop their current task and become available for new assignments."
  ENVOY_STATUS_UNAVAILABLE:0 "§R$SPECIAL_PROJECT_STATUS_UNAVAILABLE$§!"
+ CLICK_OPEN_ENVOY: "Click to open Envoy Assignments"
  improve_relations:0 "Improve Relations"
  improve_relations_TITLE:0 "Improve Relations"
  improve_relations_DESC:0 "Send an envoy to them who will work on improving their opinion of us."
@@ -1810,7 +1823,7 @@
 
  ENVOYS_HEADER:0 "§HEnvoys§!"
 
- ENVOYS_STATUS:0 "$ASSIGNED|Y$ out of $TOTAL|Y$ Envoys have assignments\n$h_line$§EEnvoys handle first contact with unknown aliens, are sent to other empires for diplomatic tasks, and manage spy networks.$tt_gain$§Y-§! Build an £megastructure£ §HInterstellar Assembly§! megastructure.\n§Y-§! Utilize certain §HCivics§!, §HBuildings§!, §HFederation Perks§!, and §HLeader Traits§!.§!"
+ ENVOYS_STATUS:0 "Assigned Envoys: $ASSIGNED|Y$/$TOTAL|Y$\n$h_line$§t$concept_envoy_desc$§!\n\n§GClick ['concept_envoy'] to open the Databank\nClick £envoy£ in the menu to open $ENVOY_ACTION_TITLE$§!"
  ASSIGN_ENVOY:0 "Assign Envoy"
  ASSIGN_ENVOY_NOT_MEMBER_TOOLTIP:0 "§HAssign Envoy§!\n§RYou need to be a member of the Galactic Community to assign envoys§!"
  ASSIGN_ENVOY_TOOLTIP:1 "§HAssign Official§!\n§GClick to open the Assign Official view§!"
@@ -1992,24 +2005,29 @@
  ################
 
  col_bureau:2 "Unification Center"
- col_bureau_desc:4 "An entire world dedicated to unifying our empire."
- col_bureaucracy_custom:1 "Administrative Capacity from Bureaucrats is increased by §G2§!.\nBureaucrat Job Upkeep reduced by §G10%§!. \n£pop£ Pop Ethics Shift Chance reduced by §G20%§!."
+ col_bureau_tt:4 "An entire world dedicated to unifying our empire."
+ col_bureau_desc:1 "Boosts £unity£ §SUnity§! output."
+ col_bureaucracy_custom:1 "Administrative Capacity from Bureaucrats is increased by §G2§!.\nBureaucrat Job Upkeep reduced by §G10%§!."
 
 
  col_bureau_spiritualist:0 "Ecclesiastical Center"
  col_bureau_spiritualist_desc:0 "$col_bureau_desc$"
 
  col_bureau_hive:0 "$col_bureau$"
+ col_bureau_hive_tt: "$col_bureau_tt$"
  col_bureau_hive_desc:0 "$col_bureau_desc$"
 
  col_bureau_machine:0 "$col_bureau$"
+ col_bureau_machine_tt: "$col_bureau_tt$"
  col_bureau_machine_desc:0 "$col_bureau_desc$"
 
  col_trophy_machine:0 "Sanctuary World"
  col_trophy_machine_desc:0 "A world dedicated to the care and protection of organic life."
+ col_trophy_machine_tt: "A cradle of compassion where all organic life is sacred, and even the soil seems to breathe in peace."
 
  col_habitat_bureau:1 "Unification Station"
  col_habitat_bureau_desc:1 "An entire habitat dedicated to unifying our empire."
+ col_habitat_bureau_tt: "These sanctums of governance and vision shape the empire's unity, harmonizing disparate worlds into a singular purpose through doctrine, diplomacy, and sheer will."
 
  col_habitat_bureau_spiritualist:0 "Ecclesiastical Station"
  col_habitat_bureau_spiritualist_desc:0 "$col_habitat_bureau_desc$"
@@ -2143,12 +2161,14 @@
  mod_job_gas_plant_engineer_gestalt_per_pop:2 "§G+1§! $job_gas_plant_engineer_gestalt$ Job per $VALUE$ Pops"
  mod_job_gas_plant_engineer_gestalt_per_pop_short:0 "\n§G+1§! £mod_job_gas_extraction_drone_add£ per $VALUE$ £pop£"
 
+ cave_cleaner: "$job_cave_cleaner$"
  job_cave_cleaner:0 "Cave Cleaner"
  job_cave_cleaner_plural:0 "Cave Cleaners"
  job_cave_cleaner_desc:0 "These workers clear out burned-out Cave Mushroom passages to unearth mineral veins."
  mod_job_cave_cleaner_add:0 "$job_cave_cleaner$ Jobs"
  mod_job_cave_cleaner_per_pop:2 "§G+1§! $job_cave_cleaner$ Job per $VALUE$ Pops"
  mod_job_cave_cleaner_per_pop_short:0 "\n§G+1§! £mod_job_miner_add£ per $VALUE$ £pop£"
+ miner_is_cave_cleaner_tt: "$job_miner_plural_with_icon$ are converted into [miner.GetIcon] $job_cave_cleaner_plural$"
 
  job_cave_cleaner_gestalt:0 "Cave Cleaner Drone"
  job_cave_cleaner_gestalt_plural:0 "Cave Cleaner Drones"
@@ -2214,7 +2234,7 @@
 
  ### Origin - Galactic Doorstep text
  origin_galactic_doorstep:0 "Galactic Doorstep"
- origin_galactic_doorstep_desc:1 "This civilization has a dormant Gateway in their home system - potential technological benefit, or a looming menace?"
+ origin_galactic_doorstep_desc:1 "This civilization has a dormant §HGateway§! in their home system - potential technological benefit, or a looming menace?"
  origin_tooltip_galactic_doorstep_effects:3 "- $HOME_SYSTEM$ Dormant ['concept_gateway']"
 
  START_SCREEN_GALACTIC_DOORSTEP:0 "The mysterious construct in our solar system was discovered a few hundred years ago. Due to its dark, metallic properties the artifact was named The Black Crown, and its majestic presence had profound effect on our society - it unified our people in both spirit and pursuit.\n\nSpace flight became the highest priority of our scientific community, and the eager quest for this technology brought with it a series of other beneficial discoveries.\n\nThe Black Crown turned out to be dormant, but we learned an important lesson; it's not the destination that matters - it's the journey. And now - thanks to the beckoning of the Black Crown - our species has the means by which we can visit the stars."
@@ -2546,6 +2566,7 @@
  galcom.16.desc:0 "Several spacefaring empires, some of them unknown to us, have banded together to form a "§HGalactic Community§!." This supranational institution is to serve as a forum where important matters can be discussed.\n\nAlthough we were not involved in its founding, the other members have extended an invitation to the [Root.GetName] for formal membership. Should we accept?"
  galcom.16.a:0 "Yes, let us join this community."
  galcom.16.b:0 "No, we will take no part in this."
+ galcom.16.c: "We do not care for this "Community.""
 
  galcom.51.name:0 "Formation of the Galactic Council"
  galcom.51.desc:0 "The members of the Galactic Community have voted to establish a Galactic Council. Membership in this august body will be limited to representatives from the three most powerful and influential empires in the Community. Until a new Council is elected, these are the §H[council_member_1.GetName]§!, the §H[council_member_2.GetName]§!, and the §H[council_member_3.GetName]§!.\n\nThe members of the Council are expected to lead and safeguard the Galactic Community. Their increased powers allow them to cut through some of the red tape that so often inhibits the decision-making process in large political institutions."
@@ -2572,25 +2593,28 @@
  origin_fallen_empire_desc:0 "This civilization greatly predates the current generation of galactic powers. Eons of stagnation gradually reduced their empire to a mere shadow of what it once was."
  origin_enlightened:0 "Enlightened"
  origin_enlightened_desc:0 "The natural development of this civilization was greatly accelerated by the interference of another party, who helped them become a spacefaring culture."
+ origin_fallen_empire_hive: "$origin_fallen_empire$"
+ origin_fallen_empire_hive_desc: "$origin_fallen_empire_desc$"
 
  origin_default_pre_ftl:0 "Developing Civilization"
  origin_default_pre_ftl_desc:0 "This civilization has yet to become spacefaring, however with a little encouragement or a great deal of time they may yet become an actor on the galactic stage."
 
  origin_void_dwellers:0 "Void Dwellers"
  origin_void_dwellers_desc:1 "This civilization has made its home in space for as long as it has maintained records - life in a typical planetary environment is anathema to them. They live in several orbital habitats that were only recently united."
- origin_tooltip_void_dwellers_effects:9 "- $HOMEWORLD$ ['concept_pc_habitat']$NEW_LINE$- $SPECIES_TRAITS$$TABBED_NEW_LINE$- ['concept_void_dweller', $trait_void_dweller_1$]$TABBED_NEW_LINE$- ['concept_habitat_preference', $trait_pc_habitat_preference$]$NEW_LINE$- $ADDITONAL_TECHNOLOGIES_STRING$ ['concept_habitat_1', £engineering_research£ $tech_habitat_1$]$NEW_LINE$- $GUARANTEED_RESEARCH_OPTION_STRING$ ['concept_habitat_2', £engineering_research£ $tech_habitat_2$]$NEW_LINE$- ['concept_guaranteed_colonies']: Resource-rich systems instead of Colonizable Planets $NEW_LINE$- $ap_voidborn_habitat_effect$"
+ origin_tooltip_void_dwellers_effects:9 "- $HOMEWORLD$ ['concept_pc_habitat']$NEW_LINE$- $SPECIES_TRAITS$$TABBED_NEW_LINE$- ['concept_void_dweller', $trait_void_dweller_1$]$TABBED_NEW_LINE$- ['concept_habitat_preference', $trait_pc_habitat_preference$]$NEW_LINE$- $ADDITIONAL_TECHNOLOGIES_STRING$ ['concept_habitat_1', £engineering_research£ $tech_habitat_1$]$NEW_LINE$- $GUARANTEED_RESEARCH_OPTION_STRING$ ['concept_habitat_2', £engineering_research£ $tech_habitat_2$]$NEW_LINE$- ['concept_guaranteed_colonies']: Resource-rich systems instead of Colonizable Planets $NEW_LINE$- $ap_voidborn_habitat_effect$"
  trait_void_dweller_1:0 "Void Dweller"
  trait_void_dweller_1_desc:2 "§LThis species thrives in orbital habitats, with an inherent ability to efficiently navigate their maze-like corridors and complicated architecture. They are at ease in zero gravity but do not respond well to a planetary environment.§!"
- void_dweller_trait_tooltip:0 "Pop Happiness on Non-Artificial Worlds: §R-30%§!"
+ void_dweller_trait_tooltip:0 "Pop Happiness on Non-Artificial Worlds: §R-30%§!\n$void_dweller_bonus_workforce_tt$"
+ void_dweller_bonus_workforce_tt: "$t$- $MOD_POP_BONUS_WORKFORCE_MULT$ on Habitats: §G+15%§!\n$t$- $MOD_POP_BONUS_WORKFORCE_MULT$ on Non-Artificial Worlds: §R-15%§!"
  origin_void_machines: "Voidforged"
  origin_void_machines_desc: "At first, the creators of this machine civilization designed them for eternal space travel, fully optimizing them to function seamlessly in zero gravity environments. After enduring eons of isolation, these machines have recently restored unity among the orbital habitats scattered throughout their home system."
- origin_tooltip_void_machines_effects: "- $HOMEWORLD$ ['concept_pc_habitat']$NEW_LINE$- $SPECIES_TRAITS$$TABBED_NEW_LINE$- ['concept_void_dweller_2', $trait_void_dweller_2$]$TABBED_NEW_LINE$- ['concept_habitat_preference', $trait_pc_habitat_preference$]$NEW_LINE$- $ADDITONAL_TECHNOLOGIES_STRING$ ['concept_habitat_1', £engineering_research£ $tech_habitat_1$]$NEW_LINE$- $GUARANTEED_RESEARCH_OPTION_STRING$ ['concept_habitat_2', £engineering_research£ $tech_habitat_2$]$NEW_LINE$- ['concept_guaranteed_colonies']: Resource-rich systems instead of Colonizable Planets $NEW_LINE$- $ap_voidborn_habitat_effect$"
+ origin_tooltip_void_machines_effects: "- $HOMEWORLD$ ['concept_pc_habitat']$NEW_LINE$- $SPECIES_TRAITS$$TABBED_NEW_LINE$- ['concept_void_dweller_2', $trait_void_dweller_2$]$TABBED_NEW_LINE$- ['concept_habitat_preference', $trait_pc_habitat_preference$]$NEW_LINE$- $ADDITIONAL_TECHNOLOGIES_STRING$ ['concept_habitat_1', £engineering_research£ $tech_habitat_1$]$NEW_LINE$- $GUARANTEED_RESEARCH_OPTION_STRING$ ['concept_habitat_2', £engineering_research£ $tech_habitat_2$]$NEW_LINE$- ['concept_guaranteed_colonies']: Resource-rich systems instead of Colonizable Planets $NEW_LINE$- $ap_voidborn_habitat_effect$"
  trait_void_dweller_2:1 "Zero-G Optimized"
  trait_void_dweller_2_desc:1 "§LThese machines thrive in orbital habitats, programmed with algorithms to efficiently navigate their maze-like corridors and complicated architecture. However, their optimized construction is poorly suited to a planetary environment.§!"
- void_dweller_2_trait_tooltip: "Robot Upkeep on Non-Artificial Worlds: §R+15%§!"
+ void_dweller_2_trait_tooltip: "Robot Upkeep on Non-Artificial Worlds: §R+15%§!\n$void_dweller_bonus_workforce_tt$"
  mod_habitat_max_districts_mult: "Habitat $MOD_PLANET_MAX_DISTRICTS_MULT$"
  mod_habitat_max_districts_add: "$mod_habitat_max_districts_mult$"
- mod_habitat_districts_building_slots_add: "Building Slots from Non-Urban Habitat Districts"
+ mod_habitat_districts_minor_add: "$mod_habitat_max_districts_add$ from Minor Celestial Bodies"
  mod_habitat_districts_housing_add: "Housing from Habitat Districts"
  hab_mining_deposits: "Habitat Mining Deposits"
  hab_research_deposits: "Habitat Research Deposits"
@@ -2598,7 +2622,7 @@
  mod_hab_research_deposits_produces_mult: "Resources from $hab_research_deposits$"
  hab_deposits: "Habitat Deposits"
  mod_hab_deposits_produces_mult: "Resources from $hab_deposits$"
- mod_habitat_district_jobs_add: "Jobs from Habitat Districts"
+ mod_habitat_district_jobs_mult: "Jobs from Habitat Districts"
  d_arcane_replicator:0 "Arcane Replicator"
  d_arcane_replicator_desc:0 "This ancient machine is nestled deep within the habitat's interior, built into its main reactor from where it also draws its power. A relic of whomever originally built this habitat, its matter replication technology is utterly incomprehensible to us."
  START_SCREEN_VOID_DWELLERS:3 "To most, the vacuum of space is a hostile environment to be conquered or overcome. To us, it is home.\n\nFor thousands of years, our kind has resided on several separate space stations orbiting the suns in our trinary system. Whether our predecessors or someone else built them, we do not know.\n\nSome speculate that the shattered planetary remnants orbiting the stars alongside us are remnants of our creators' homeworld, but the truth remains elusive.\n\nOnly a few centuries have passed since the invention, or rediscovery, of spaceflight capable of bridging the gap between our stations. Suspicion and mistrust gradually yielded to trade and cooperation. With the construction of our first[GetStartingDrivePlural]-capable ship, the habitats had united under one flag."
@@ -2858,7 +2882,7 @@
  origin_tooltip_common_ground_effects:2 "- Leader of a §Inon-Hegemony§! ['concept_common_ground_federation']$federation_origin_end$"
  START_SCREEN_COMMON_GROUND:1 "Decades ago, when our first crude sublight probes visited the star systems near our own, we discovered the presence of two distinct alien civilizations. Despite the radical differences in our physiology, it quickly became apparent that we had more things in common than not. Like us, they were also on the cusp of unlocking practical interstellar travel.\n\nA bond was formed between our three civilizations, which eventually led to the birth of a federation - we would combine our efforts, and when we were ready to spread out into the cosmos, whatever was out there would be faced by us standing together."
  origin_tooltip_common_ground_npc_effects:1 "- Start as a member of a non-§HHegemony§! federation with two additional members"
- federation_origin_end: "\n- ['concept_guaranteed_colonies']: Replaced with Federation members\n- Selected Traditions: $TABBED_NEW_LINE$- ['concept_diplomacy_traditions'] $TABBED_NEW_LINE$- ['concept_tr_diplomacy_the_federation']"
+ federation_origin_end: "\n- ['concept_guaranteed_colonies']: Replaced with Federation members\n- $ADDITIONAL_TECHNOLOGIES_STRING$ ['technology:tech_federation_code']"
  opinion_common_ground:0 "Common Ground"
  origin_common_ground_npc:0 "$origin_common_ground$"
  origin_common_ground_npc_desc:0 "$origin_common_ground_desc$"
@@ -3104,8 +3128,8 @@
  challenge_type_psionic_battle_desc:0 "The matter of who should be leading our Federation is too important to be decided within the mundane limits of our corporeal realm. Each empire will send their most powerful psychics to face off against one another in a titanic battle that will momentarily rend the very fabric of reality.\n\n§YVictory will depend on:\n- The number of Pops with psionic traits\n- The number of Pops with the Telepath job\n- Zro offerings§!\n\n§REmpires without psionic Pops cannot participate and must forfeit.§!"
  challenge_type_bidding_war_desc:1 "All the wonders of advanced civilizations can ultimately be traced back to one simple concept: an abundance of resources. The right to rule should not therefore be measured by native intelligence or brute strength, but by depth of pocket.\n\n§YVictory will depend on:\n- Energy Credits (£energy£) available\n- Energy Credits (£energy£) spent§!\n\n§HBids are paid into a central fund. How this fund is distributed afterwards is a matter left to the winner's discretion.§!"
  challenge_type_thesis_desc:0 "The mantle of leadership must never be granted to the foolish or ignorant. Instead we choose trial by science: exposing the wisdom and insights of ruler and empire alike to the scrutiny of public examination, as each investigates an issue currently facing our Federation.\n\n§YVictory will depend on:\n- The Ruler's Leader and Scientist traits\n- Technology level§!\n\n§HEach thesis will be reviewed within 60 days.§!\n\n§REmpires which lack a ruler and at least one scientist at the time of the examination will forfeit.§!"
- requires_psionic_pops:0 "Requires at least one member having a Pop with a §YPsionic§! or §YLatent Psionic§! trait"
- challenge_type_conclave_desc:0 "Spiritual purity and the pursuit of traditionalist values shall be the criteria upon which we shall judge our leaders. Only the one most blessed by divine favor shall be deemed worthy of leading us.\n\n§YVictory will depend on:\n- Portion of population working as $job_priest_plural$ or other spiritual jobs\n- Unity investment (traditions, planetary ascension, and available stockpile)§!\n\n§HEach thesis will be reviewed within 60 days.§!\n\n§REmpires which lack a ruler and at least one scientist at the time of the examination will forfeit.§!"
+ requires_psionic_pops:0 "Requires at least one member having a £pop£ §HPop§! with a §Y$trait_psionic$§! or §Y$trait_latent_psionic$§! trait"
+ challenge_type_conclave_desc:0 "Spiritual purity and the pursuit of traditionalist values shall be the criteria upon which we shall judge our leaders. Only the one most blessed by divine favor shall be deemed worthy of leading us.\n\n§YVictory will depend on:\n- Portion of population working as $job_priest_plural$ or other spiritual jobs\n- Unity investment (traditions, Colony Ascension, and available stockpile)§!\n\n§HEach thesis will be reviewed within 60 days.§!\n\n§REmpires which lack a ruler and at least one scientist at the time of the examination will forfeit.§!"
 
  origin.205.desc:0 "Dearest [Root.GetSpeciesNamePlural]. As always, we have been observing you, and one of your leaders has attracted our attention. Indeed, the reputation of your [desired_leader.GetTitle], §H[desired_leader.GetName]§!, has reached all the way to our capital.\n\nGiven [desired_leader.GetHerHis] unusual skills, we would like to offer a permanent position on [scion_master.Capital.GetName]. A great honor, to be sure. Please arrange for [desired_leader.GetHerHis] transfer as soon as possible."
  origin.205.a:0 "It shall be done."
@@ -3159,7 +3183,7 @@
  aura_bombardment:0 "$aura_category_defensive$"
 
  mod_weapon_type_point_defense_weapon_damage_mult:0 "Point Defense Damage"
- mod_weapon_type_point_defense_weapon_fire_rate_mult:0 "Point Defense Firing Rate"
+ mod_weapon_type_point_defense_weapon_fire_rate_mult:0 "Point Defense Fire Rate"
 
  void_dweller_system_NAME:0 "Void Dwellers"
  void_dweller_system_DESC:0 "This will always be the starting system when using the Void Dwellers Origin."
@@ -3324,12 +3348,16 @@
  planet_destruction.1000.A:0 "So be it."
  planet_destruction.1000.B:0 "They flail pretty well for those being flash-converted to plasma."
 
+ titan_hunter: "$job_titan_hunter$"
  job_titan_hunter:0 "Titan Hunter"
  job_titan_hunter_plural:0 "Titan Hunters"
+ job_titan_hunter_plural_with_icon: "£hunter_gatherer£ $job_titan_hunter_plural$"
  job_titan_hunter_desc:0 "Fearless individuals who hunt the planet's titanic lifeforms for food. Their bones, teeth and tusks also make impressive - and valuable - trophies."
  mod_job_titan_hunter_add:0 "$job_titan_hunter$ Jobs"
  mod_job_titan_hunter_per_pop:0 "§G+1§! $job_titan_hunter$ Job per $VALUE$ Pops"
  mod_job_titan_hunter_per_pop_short:0 "\n§G+1§! £mod_job_hunter_gatherer_add£ per $VALUE$ £pop£"
+ farmer_is_titan_hunter_tt: "$job_farmer_plural_with_icon$ are converted into $job_titan_hunter_plural_with_icon$"
+
  building_hab_fe_capital:0 "$building_hab_capital$"
  building_hab_fe_capital_desc:0 "$building_hab_capital_desc$"
  NAME_League_of_Non-Aligned_Powers:0 "League of Non-Aligned Powers"
@@ -3362,6 +3390,8 @@
  BUILD_PLAN_NEEDED_INCOME:0 "Needed Extra Income"
  BUILD_PLAN_PREDICTION:0 "Predicted BuildPlan result"
  BUILD_PLAN_DETAILS:0 "BuildPlanDetails saving set to $BOOL|Y$"
+ BUILD_PLAN_CREATED: "AI Build plan created"
+ NO_BUILD_PLAN_CREATED: "Could not create AI build plan for this Empire"
 
  action.123.name:0 "Last [From.GetSpeciesNamePlural] Abducted"
  action.123.desc:1 "The last of the [GetPreFTLLower] §H[From.GetSpeciesNamePlural]§! have been abducted into slavery from the surface of [From.From.GetName], their homeworld. A few scattered survivors might still be roaming the [From.From.GetPlanetMoon]'s wilderness, but not enough to maintain any kind of civilization."
@@ -3664,6 +3694,7 @@
  # Jobs
  ####################################
 
+ bluelotus_drone: "$job_bluelotus_technician$"
  job_bluelotus_technician:0 "Transmuter"
  job_bluelotus_technician_plural:0 "Transmuters"
  job_bluelotus_technician_desc:0 "Specialist scientists who work on the Blue Lotus project to transmute everyday silicates into useful alloys."
@@ -3750,7 +3781,7 @@
  golden_rule_debrief_hive_mind_invest:0 "All is one. One is all."
  golden_rule_debrief_hive_mind_distribute:0 "Deviations are so... Uncomfortable."
  golden_rule_debrief_hive_mind_appropriate:0 "We see no other option."
- golden_rule_debrief_machine_invest:0 "Expected Trade Value increase at 9.83%."
+ golden_rule_debrief_machine_invest:0 "Expected Trade increase at 9.83%."
  golden_rule_debrief_machine_distribute:0 "Financial distribution routine initiated."
  golden_rule_debrief_machine_appropriate:0 "Suggested action for optimal net gain:\nMaximum Acquisition."
 

@@ -1,0 +1,148 @@
+﻿l_english:
+
+### CONCEPTS
+#
+# Above each concept definition are instructions on usage, including an icon where one exists.
+#   Note that between the icon and the term there's a non-breaking space. When you copy the usage example, it will keep the non-breaking space.
+#   This is important to not get a line break between the icon and the concept.
+# Use a concept link with icon the first time a new concept is mentioned, then use §H without an icon for repeated uses.
+# Use §H with an icon the first time a concept is used withing its own description.
+# Use §H without an icon if the concept is used more than once.
+
+ ui_available_tabs: "\n\n可用选项卡：\n"
+
+ # View: £interface£ ['concept_empire_view'] or £interface£ §H$concept_empire_view$§!
+ concept_empire_view: "帝国界面"
+ concept_empire_view_desc: "了解帝国概况。$ui_available_tabs$[GetConceptEmpireAdvisor]"
+ empire_view_tab_empire: "§H$EMPIRE$§!"
+ empire_view_tab_demographics: "§H$DEMOGRAPHICS_TITLE$§!"
+ empire_view_tab_advisor: "§H$GOVERNMENT_ADVISOR_TAB$§!"
+ concept_empire_view_tabs_advisor: "$concept_empire_view_tabs_no_advisor$\n—$empire_view_tab_advisor$：选择顾问语音"
+ concept_empire_view_tabs_no_advisor: "—$empire_view_tab_empire$：列出['concept_authority']、['concept_civics']以及['concept_empire_modifiers']\n—$empire_view_tab_demographics$：查看['concept_pops']及其所受影响"
+
+ # View: £interface£ ['concept_situation_log_view'] or £interface£ §H$concept_situation_log_view$§!
+ concept_situation_log_view: "$MENU_PANEL__SITUATION_LOG_TITLE$界面"
+ concept_situation_log_view_desc: "£interface£§H$concept_situation_log_view$§!总览当前进行中的事务。$ui_available_tabs$$concept_situation_log_view_tabs$"
+ situation_log_view_tab_situation_log: "§H$topbar_button_situation_name$§!"
+ situation_log_view_tab_timeline: "§H$TIMELINE$§!"
+ situation_log_view_tab_anomilies: "§H$ANOMALIES$§!"
+ situation_log_view_tab_victory: "§H$VICTORIES$§!"
+ concept_situation_log_view_tabs: "—$situation_log_view_tab_situation_log$：列出['concept_event_chains']、['concept_special_projects']以及['concept_first_contacts']\n—$situation_log_view_tab_timeline$：查看['concept_milestones']['concept_empire_focuses']\n—$situation_log_view_tab_anomilies$：展示['concept_anomalies']\n—$situation_log_view_tab_victory$：查看['concept_scoreboard']"
+
+ # View: £interface£ ['concept_government_view'] or £interface£ §H$concept_government_view$§!
+ concept_government_view: "$topbar_button_council_name$界面"
+ concept_government_view_desc: "§H$concept_government_view$§!可以对政府进行管理。$ui_available_tabs$$concept_government_view_tabs$"
+ government_view_tab_council: "§H$COUNCIL$§!"
+ government_view_tab_factions: "§H$FACTIONS$§!"
+ government_view_tab_policies_and_edicts: "§H$EDICTS_AND_POLICIES$§!"
+ concept_government_view_tabs: "—$government_view_tab_council$：管理['concept_council']和['concept_agendas']\n—$government_view_tab_factions$：查看['concept_factions']\n—$government_view_tab_policies_and_edicts$：选择['concept_policies']和['concept_edicts']"
+
+ # View: £interface£ ['concept_society_management_view'] or £interface£ §H$concept_society_management_view$§!
+ concept_society_management_view: "$TRADITION_VIEW_TITLE$界面" # Use this alias when referring to the concept
+ concept_society_management: "$TRADITION_VIEW_TITLE$"			# Left out 'View' to fit in the Databank UI
+ concept_society_management_desc: "§H$concept_society_management_view$§!可以对传统进行管理。$ui_available_tabs$[GetConceptSocietyManagement]"
+ society_management_view_tab_traditions: "§H$TRADITIONS$§!"
+ society_management_view_tab_crisis: "§H$CRISIS_TAB$§!"
+ concept_society_management_view_crisis: "$concept_society_management_view_no_crisis$\n—$society_management_view_tab_crisis$：追踪作为['concept_crisis']的进展"
+ concept_society_management_view_no_crisis: "—$society_management_view_tab_traditions$：选择['concept_traditions']和['concept_ascension_perks']"
+
+ # View: £interface£ ['concept_technology_view'] or £interface£ §H$concept_technology_view$§!
+ concept_technology_view: "$TECHNOLOGY$界面"
+ concept_technology_view_desc: "£interface£§H$concept_technology_view$§!展示了帝国在£physics£ ['concept_physics_research']，£society£ ['concept_society_research']，以及£engineering£ ['concept_engineering_research']领域的研究进展。通过该界面可选择研究项目并管理科技优先级。\n\n新的['concept_technologies']会从可用选项中半随机呈现，以体现科学探索的不可预测性。"
+
+ # View: £interface£ ['concept_leaders_view'] or £interface£ §H$concept_leaders_view$§!
+ concept_leaders_view: "$topbar_button_leaders_name$界面"
+ concept_leaders_view_desc: "£interface£§H$concept_leaders_view$§!提供帝国境内所有活跃的['concept_leaders']的概览，包括他们的职责、['concept_leader_traits']、经验等级和当前的任务。 通过此界面，可以招募新的领袖，重新分配现有领袖，或使其退役。"
+
+ # View: £interface£ ['concept_species_view'] or £interface£ §H$concept_species_view$§!
+ concept_species_view: "$topbar_button_species_name$界面"
+ concept_species_view_desc: "£interface£§H$concept_species_view$§!提供帝国境内所有已知['concept_species']的全面列表。通过此界面，可以检查和修饰['concept_species_traits']，并管理人口权利，例如公民身份、兵役和['concept_living_standards']。\n\n此视图对于驾驭多种族帝国的复杂性至关重要，在这样的帝国中，政策、生物学和意识形态交织在一起，塑造着银河社会。"
+
+ # View: £interface£ ['concept_planets_and_sector_view'] or £interface£ §H$concept_planets_and_sector_view$§!
+ concept_planets_and_sector_view: "$PLANET_LIST$界面" # Use this alias when referring to the concept
+ concept_planets_and_sector: "$PLANET_LIST$"			# Left out 'View' to fit in the Databank UI
+ concept_planets_and_sector_desc: "£interface£§H$concept_planets_and_sector$§!界面提供帝国境内所有£colony£ ['concept_colonies']和£sector£ ['concept_sector']的集中概览。\n\n在该视图中，也可以分配['concept_governors']。"
+
+ # View: £interface£ ['concept_expansion_planner'] or
+ concept_expansion_planner: "$MENU_PANEL__EXPANSION_PLANNER_TITLE$"
+ concept_expansion_planner_desc: "£interface£§H$concept_expansion_planner$§!列出了可能殖民的£planet£['concept_planets']。从该窗口中可以直接进行殖民，并将会自动建造£colony_ship£['concept_colony_ship']。\n\n£planet£§H$concept_planets$§!必须先通过£science_ship£['concept_science_ship']的调查，并且所有在其上发现的£anomaly£['concept_anomalies']必须先完成研究后才能进行殖民。\n\n此外，在该行星所在的星系还需要建立['concept_starbase']，这样才能将该行星划入帝国的疆域内。"
+
+ # View: £interface£ ['concept_fleet_management_view'] or £interface£ §H$concept_fleet_management_view$§!
+ concept_fleet_management_view: "$topbar_button_fleet_manager_name$界面" # Use this alias when referring to the concept
+ concept_fleet_management: "$topbar_button_fleet_manager_name$"				# Left out 'View' to fit in the Databank UI
+ concept_fleet_management_desc: "设计舰船、建立舰队。新的§H舰船尺寸§!和['concept_components']需要通过研究所需['concept_technologies']进行解锁。$ui_available_tabs$[GetConceptFleetManagement]"
+ fleet_management_view_tab_fleet_manager: "§H$FLEET_MANAGER_VIEW$§!"
+ fleet_management_view_tab_ship_designer: "§H$SHIP_DESIGNER$§!"
+ concept_fleet_management_view_space_fauna: "$concept_fleet_management_view_no_space_fauna$\n—§H$CREATURE_DESIGNER$§!：塑造['concept_space_fauna']"
+ concept_fleet_management_view_no_space_fauna: "—$fleet_management_view_tab_fleet_manager$：组织['concept_fleets']\n—$fleet_management_view_tab_ship_designer$：设计['concept_military_ships']"
+
+ # View: £interface£ ['concept_contacts_view'] or £interface£ §H$concept_contacts_view$§!
+ concept_contacts_view: "通讯界面"
+ concept_contacts_view_desc: "£interface£§H$concept_contacts_view$§!列出了所有已知的帝国、独立飞地和外星实体。通过该界面，可以发起['concept_diplomacy']，并评估彼此关系。它是星际通讯和外国情报的中心枢纽。"
+ contacts_view_tab_contacts: "§H$topbar_button_contacts_name$§!"
+ contacts_view_tab_agreements: "§H$AGREEMENTS_LIST_TITLE$§!"
+ concept_contacts_view_tabs: "—$contacts_view_tab_contacts$：进行['concept_diplomacy']\n—$contacts_view_tab_agreements$：审查['concept_subject_agreements']"
+
+ # View: £interface£ ['concept_discoveries_view'] or £interface£ §H$concept_discoveries_view$§!
+ concept_discoveries_view: "$topbar_button_discoveries_name$界面"
+ concept_discoveries_view_desc: "£interface£§H$concept_discoveries_view$§!目录收录了星系中发现的重要物体和现象，包括['concept_relics']、古代遗物和其他具有持久重要性的星系珍品。$ui_available_tabs$[GetConceptDiscovery]"
+ discoveries_view_tab_relics: "§H$relics$§!"
+ discoveries_view_tab_collection: "§H$COLLECTION$§!"
+ discoveries_view_tab_vivarium: "§H$VIVARIUM$§!"
+ discoveries_view_tab_astral_actions: "§H$ASTRAL_ACTIONS$§!"
+ concept_discovery_view_base: "—$discoveries_view_tab_relics$：管理['concept_relics']"
+ concept_discovery_view_base_ancrel: "$concept_discovery_view_base$和['concept_minor_artifacts']"
+ concept_discovery_view_base_archive: "$concept_discovery_view_base$\n—$discoveries_view_tab_collection$：展示['concept_specimens']\n—$discoveries_view_tab_vivarium$：繁育['concept_space_fauna']"
+ concept_discovery_view_base_ancrel_archive: "$concept_discovery_view_base$\n—$discoveries_view_tab_collection$：展示['concept_specimens']和['concept_minor_artifacts']\n—$discoveries_view_tab_vivarium$：繁育['concept_space_fauna']"
+ concept_discovery_view_base_astral: "$concept_discovery_view_base$\n$concept_discovery_view_astral$"
+ concept_discovery_view_base_ancrel_astral: "$concept_discovery_view_base_ancrel$\n$concept_discovery_view_astral$"
+ concept_discovery_view_base_archive_astral: "$concept_discovery_view_base_archive$\n$concept_discovery_view_astral$"
+ concept_discovery_view_base_ancrel_archive_astral: "$concept_discovery_view_base_ancrel_archive$\n$concept_discovery_view_astral$"
+ concept_discovery_view_astral: "—$discoveries_view_tab_astral_actions$：激活['concept_astral_actions']"
+
+ # View: £interface£ ['concept_claims_view'] or £interface£ §H$concept_claims_view$§!
+ concept_claims_view: "$CLAIMS_VIEW$界面"
+ concept_claims_view_desc: "£interface£§H$concept_claims_view$§!显示帝国拥有的所有领土['concept_claims']。['concept_galaxy_map']的外交模式清晰地展示了有争议的星系以及未来潜在冲突的爆发点。"
+
+ # View: £interface£ ['concept_market_view'] or £interface£ §H$concept_market_view$§!
+ concept_market_view: "$MARKET_VIEW$界面"
+ concept_market_view_desc: "£interface£§H$concept_market_view$§!提供了一个星际贸易的总览，包括用于买卖资源或建立周期性的月度交易之类的信息。"
+
+ # View: £interface£ ['concept_colony_view'] or £interface£ §H$concept_colony_view$§!
+ concept_colony_view: "殖民地界面"
+ concept_colony_view_desc: "£interface£§H$concept_colony_view$§!可以对£colony£['concept_colony']进行管理。在合适的未殖民£planet£['concept_planets']或['concept_habitats']上，该界面可以用于开始§H殖民§!流程。$ui_available_tabs$$concept_colony_view_tabs$"
+ colony_view_tab_planet_summary: "§H$PLANET_TAB$§!"
+ colony_view_tab_management: "§H$MANAGEMENT_TAB$§!"
+ colony_view_tab_population: "§H$POPULATION_TAB$§!"
+ colony_view_tab_armies: "§H$GROUND_COMBAT_TAB$§!"
+ colony_view_tab_holdings: "§H$CORPORATE_TAB$§!"
+ concept_colony_view_tabs: "—$colony_view_tab_planet_summary$：展示殖民地£district£['concept_districts']、£building£['concept_buildings']及所指派的['concept_governor']的总览。可以在此设置['concept_designation']或启用['concept_planet_automation']。\n—$colony_view_tab_management$：战士所有行星特征及人口增减情况。在此可以颁布['concept_decisions']、['concept_planetary_ascension']或发起['concept_terraforming']。\n—$colony_view_tab_population$：按不同£job£['concept_job']阶层展示殖民地人口。\n—$colony_view_tab_armies$：展示殖民地所存在的陆军，以及该殖民地所遭受到的['concept_devastation']。\n—$colony_view_tab_holdings$：总览殖民地的所有['concept_overlord_holdings']。"
+
+ # View: £interface£ ['concept_starbase_view'] or £interface£ §H$concept_starbase_view$§!
+ concept_starbase_view: "太空基地界面"
+ concept_starbase_view_desc: "£interface£§H$concept_starbase_view$§!可以对一座['concept_starbase']进行管理。$ui_available_tabs$$concept_starbase_view_tabs$"
+ starbase_view_tab_command: "§H$STARBASE_STARBASE_TAB$§!"
+ starbase_view_tab_defenses: "§H$STARBASE_DEFENSES_TAB$§!"
+ starbase_view_tab_armies: "§H$MACRO_BUILDER_TAB$§!"
+ starbase_view_tab_shipyard: "§H$STARBASE_SHIPYARD_TAB$§!"
+ concept_starbase_view_tabs: "—$starbase_view_tab_command$：总览太空基地的§H模块§!和§H建筑§!。当研究所需['concept_technology']后还可以将太空基地升级至下一等级\n—$starbase_view_tab_defenses$：展示所存在的['concept_defense_platforms']，并可以通过点击型号进一步建造\n—$starbase_view_tab_armies$：提供一种大批量组建§H$assault_army_plural$§!的方式。军队会在£sector£['concept_sector']内可用的£colony£['concept_colonies']上组建，并会在该太空基地或是开启了§H集合陆军部队§!的§H陆军§!处集合\n—$starbase_view_tab_shipyard$：用于建造['concept_civilian_ships']和['concept_military_ships']"
+
+ # View: £interface£ ['concept_system_map'] or £interface£ §H$concept_system_map$§!
+ concept_system_map: "星系地图"
+ concept_system_map_desc: "£interface£§H$concept_system_map$§!提供了一个星系的详细视图，包括['concept_celestial_objects']，['concept_civilian_space_stations']，['concept_fleets']以及轨道基础设施。它允许在星系内精确管理建造、殖民、作战行动和科学活动。"
+
+ # View: £interface£ ['concept_galaxy_map'] or £interface£ §H$concept_galaxy_map$§!
+ concept_galaxy_map: "银河地图"
+ concept_galaxy_map_desc: "£interface£§H$concept_galaxy_map$§!提供已知星系的战略概览，显示£system£ ['concept_systems']、['concept_empire']边界以及['concept_hyperlanes']。它是探索、扩张和星际协调的主要界面。"
+
+ # View: £interface£ ['concept_navigation_bar'] or £interface£ §H$concept_navigation_bar$§!
+ concept_navigation_bar: "导航栏"
+ concept_navigation_bar_desc: "£interface£§H$concept_navigation_bar$§!在屏幕的左侧。\n\n它可以在交互时展开或锁定为最小化。\n\n展开状态下可以访问设置，对菜单项目重新排序。这也会改变用于快速打开各个菜单项的快捷键。"
+
+ # View: £interface£ ['concept_resource_bar'] or £interface£ §H$concept_resource_bar$§!
+ concept_resource_bar: "资源栏"
+ concept_resource_bar_desc: "£interface£§H$concept_resource_bar$§!在屏幕的顶端。\n\n其中显示如£energy£['concept_energy']等各种§H资源§!以及如£trade_value£['concept_trade']、['concept_research']、['concept_starbase_capacity']还有['concept_naval_capacity']等各种指标。\n\n在其最右端是用于调整游戏速度快慢、暂停和解除暂停的§H时间控制§!。\n\n在§H时间控制§!下方是§H音乐播放器§!。"
+
+ # View: £interface£ ['concept_outliner'] or £interface£ §H$concept_outliner$§!
+ concept_outliner: "总览"
+ concept_outliner_desc: "£interface£§H$concept_outliner$§!提供了对帝国关键信息和要素的快速访问，包括£colony£ ['concept_colonies']、['concept_fleets']和['concept_civilian_space_stations']。作为一个可定制的界面，它允许快速导航和追踪信息，提供实时状态更新，并能直接控制重要行动。"

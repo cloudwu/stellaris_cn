@@ -84,7 +84,7 @@
  situation.5.B:0 "我们没有时间。"
  situation.10.name:0 "惊奇的活动"
  situation.10.desc:0 "看上去[Target.GetName]上的这个异星迷宫在试图吸引我们的注意。我们的[Owner.GetResearchers]很不情愿将这么一个事物归为一栋建筑，但是恐怕我们只能这么认为：迷宫现在不再坐落于遥远的群山之中，而是距离我们的一个主要居住点很短的距离。一天接一天，它令人费解地变换着自己的位置，而且其入口的那个警告标志也消失了——事实上，它看上去好像……在邀请我们。\n\n尽管有些好奇宝宝忍不住头铁进去了，我们的[Owner.GetResearchers]还是劝告谨慎对待。唯一清楚的是，我们不能再满足于从远处观察迷宫了——必须采取新的方案。"
- situation.10.desc.gestalt:0 "看上去[Target.GetName]上的这个异星迷宫在试图吸引我们的注意。尽管一栋建筑会有任何形式的意识这一点看上去很不可思议，但是恐怕我们只能这么认为：迷宫现在不再坐落于遥远的群山之中，而是距离我们的一个主要子个体存储区域很短的距离。一天接一天，它令人费解地变换着自己的位置，而且其入口的那个警告标志也消失了——事实上，它看上去好像……在邀请我们。\n\n这一改变的出现，会让我们阻止子个体闯入其中更加的困难，除非我们拉警戒线隔绝这片区域。"
+ situation.10.desc.gestalt:0 "看上去[Target.GetName]上的这个异星迷宫在试图吸引我们的注意。尽管一栋建筑会有任何形式的意识这一点看上去很不可思议，但是恐怕我们只能这么认为：迷宫现在不再坐落于遥远的群山之中，而是距离我们的一个主要存储区域很短的距离。一天接一天，它令人费解地变换着自己的位置，而且其入口的那个警告标志也消失了——事实上，它看上去好像……在邀请我们。\n\n这一改变的出现，会让我们阻止[owner.GetIndividualNamePlural]闯入其中更加的困难，除非我们拉警戒线隔绝这片区域。"
  situation.10.A:0 "隔离这片区域——谁都不允许进入！"
  situation.10.A.tooltip:0 "这个方案将花费每月 £energy£ §R10§!§Y能量币§!。"
  situation.10.B:0 "或许我们终究还是要调查它。"
@@ -94,10 +94,10 @@
  situation.15.desc.base.end:1 "我们的[Root.GetResearchers]看到这个改变都呆了，现在要阻止人进入这个结构可以说是难上加难。"
  situation.15.desc.standard:0 "$situation.15.desc.base$警告危险的标志已经消失了；现在，可爱的[Owner.Species.GetClass][Owner.Species.GetSpawnNamePlural]在入口附近爬来爬去，祈求我们的关注。除此之外，不知怎的，入口里面视线的尽头，似乎显露出的是无边无际的沙滩以及无止尽的明媚阳光。\n\n$situation.15.desc.base.end$"
  situation.15.desc.human:0 "$situation.15.desc.base$警告危险的标志已经消失了；现在，可爱的小猫咪在入口附近爬来爬去，一边喵喵叫祈求我们的关注。除此之外，不知怎的，入口里面视线的尽头，似乎显露出的是无边无际的沙滩以及无止尽的明媚阳光。\n\n$situation.15.desc.base.end$"
- situation.15.desc.gestalt.base:0 "这个迷宫似乎对于我们毫不重视的态度闹脾气了。整个结构开始逐渐发生改变，从一幢冷峻的摩天大楼变成了装饰奢华的子个体存储设施。"
- situation.15.desc.gestalt.base.end:1 "我们的[Root.GetResearchers]看到这个改变都呆了，现在要阻止子个体进入这个结构可以说是难上加难。"
+ situation.15.desc.gestalt.base:0 "这个迷宫似乎对于我们毫不重视的态度闹脾气了。整个结构开始逐渐发生改变，从一幢冷峻的摩天大楼变成了装饰奢华的存储设施。"
+ situation.15.desc.gestalt.base.end:1 "我们的[Root.Owner.GetResearchers]看到这个改变都呆了，现在要阻止[Root.Owner.GetIndividualNamePlural]进入这个结构可以说是难上加难。"
  situation.15.desc.machine:0 "$situation.15.desc.base$警告危险的标志已经消失了；现在，提供高质量齿轮机油的装置，划痕去除服务，以及磁盘碎片快速清理援助就在入口触手可得的地方。\n\n$situation.15.desc.gestalt.base.end$"
- situation.15.desc.hive:0 "$situation.15.desc.base$警告危险的标志已经消失了；现在，提供高质量子个体营养膏的装置，神经舒缓体验，以及附属物替代品就在入口触手可得的地方。\n\n$situation.15.desc.gestalt.base.end$"
+ situation.15.desc.hive:0 "$situation.15.desc.base$警告危险的标志已经消失了；现在，提供高质量[Root.Owner.GetIndividualNamePlural]营养膏的装置，神经舒缓体验，以及附肢替换件就在入口触手可得的地方。\n\n$situation.15.desc.gestalt.base.end$"
  situation.15.A:0 "我们得加倍努力。"
  situation.15.A.tooltip:0 "我们当前的方案将多花费每月£unity£§R10§!点§Y凝聚力§!。"
  situation.20.name:0 "禁欲的奖励"
@@ -111,7 +111,7 @@
  situation.40.desc:0 "我们派去调查迷宫的[Owner.GetResearchers]刚一进入，我们同他们的通讯链接就被切断了。我们焦急地等待，但是几天以来没有收到任何消息。随着时间流逝，我们不得不放弃搜寻我们失踪的人。\n\n接着，正当我们放弃一切希望的时候，他们重新冒了出来！然后，这只是带给我们更多的问题：[Owner.GetResearchers]宣称完全不记得他们在迷宫里待过，然后他们的探险记录也被严重篡改。不仅如此，尽管他们只在迷宫里经过了几周，他们看上去却像老了好几岁！"
  situation.45.name:0 "持续的困惑"
  situation.45.desc:0 "对迷宫的进一步探索带来了各种各样的结果，有时是令人不安的那种。有一次，[Owner.GetResearchers]进入后没过几秒就出来了，而且回答不出为什么这么快就返回。而在另一次，他们消失在迷宫中长达数周，但回来后却似乎比去之前更加年轻了，记忆也随之出现了数年的空缺。一些队员返回时容光焕发，而某些队员却是身受重伤。\n\n随着时间推移，入口处的警示不断改变，“进入者自行承担风险”变成了“擅闯者死”，最后则是“警告！警告！不要进入迷宫，否则整颗星球就会灰飞烟灭”。墙壁上毛骨悚然，嵌入着[Owner.GetAdj][Owner.Species.GetRemnantNamePlural]的躯壳，然而最近没有出现不明的失踪事件，因此我们也不知道他们究竟是从哪里来的。\n\n目前尚不清楚更进一步的研究究竟会带来什么，正如[Owner.GetResearchers]说的那样，我们无法证实或者证伪这些警告。然而，这已经使得自愿进入迷宫的人数量骤减。"
- situation.45.desc.hive:0 "对迷宫的进一步探索带来了各种各样的结果，有时是令人不安的那种。一次，我们的[Owner.GetResearchers]只进去了几秒钟，而且说不出为什么这么快就回来了。有一次，他们进去了几周，但回来时记忆中的空白长达一年。一些小组返回时的身体状况比他们离开时更好，而有些人则带着严重的新伤痕。\n\n随着时间的推移，入口处的标志也在发生变化。“进入者自行承担风险。”先是变成了“脱离集体的危险”，最后变成了“警告！警告！不要进入迷宫，否则行星会原地爆炸。”墙壁上毛骨悚然，镶嵌着[Owner.GetAdj][Owner.Species.GetRemnantNamePlural]的躯壳，然而最近没有出现不明的失踪事件，因此我们也不知道他们究竟是从哪里来的。\n\n目前尚不清楚更进一步的研究究竟会带来什么，正如[Owner.GetResearchers]说的那样，我们无法证实或者证伪这些警告。然而，这已经使得进入迷宫的子个体数量骤减。"
+ situation.45.desc.hive:0 "对迷宫的进一步探索带来了各种各样的结果，有时是令人不安的那种。一次，我们的[Owner.GetResearchers]只进去了几秒钟，而且说不出为什么这么快就回来了。有一次，他们进去了几周，但回来时记忆中的空白长达一年。一些小组返回时的身体状况比他们离开时更好，而有些人则带着严重的新伤痕。\n\n随着时间的推移，入口处的标志也在发生变化。“进入者自行承担风险。”先是变成了“脱离集体的危险”，最后变成了“警告！警告！不要进入迷宫，否则行星会原地爆炸。”墙壁上毛骨悚然，镶嵌着[Owner.GetAdj][Owner.Species.GetRemnantNamePlural]的躯壳，然而最近没有出现不明的失踪事件，因此我们也不知道他们究竟是从哪里来的。\n\n目前尚不清楚更进一步的研究究竟会带来什么，正如[Owner.GetResearchers]说的那样，我们无法证实或者证伪这些警告。然而，这已经使得进入迷宫的[owner.GetIndividualNamePlural]数量骤减。"
  situation.45.desc.machine:0 "对迷宫的进一步探索带来了各种各样的结果，有时是令人不安的那种。一次，我们的[Owner.GetResearchers]只进去了几秒钟，而且无法回馈为什么这么快就回来了。有一次，他们进去了几周，但回来时硬盘存储已经被清空。一些小组返回时的外壳的比他们离开时加崭新，而有些则带着严重的损伤并缺失了一些部件。\n\n随着时间的推移，入口处的标志也在发生变化。“进入者自行承担风险。”先是变成了“拆解危险”，最后变成了“警告！警告！不要进入迷宫，否则行星会原地爆炸。”墙壁上毛骨悚然，镶嵌着[Owner.GetAdj][Owner.Species.GetRemnantNamePlural]的躯壳，然而最近没有出现不明的失踪事件，因此我们也不知道他们究竟是从哪里来的。\n\n目前尚不清楚更进一步的研究究竟会带来什么，正如[Owner.GetResearchers]说的那样，我们无法证实或者证伪这些警告。然而，这已经使得进入迷宫的子个体数量骤减。"
  situation.50.name:0 "消失"
  situation.50.desc:0 "那些警告最终没有成真，迷宫的消失没有毁灭[Target.GetName]。相反，迷宫消失得悄无声息——当某天来临，它就已经不在了。但迷宫还是留下了一条信息：“我们感谢你们如此友好地允许我们研究你们这个位面的生命体。事实证明，我们的...努力起到了回报。幸运的是，异次元安全部对你们非常……感兴趣，他们为我们顺利退出提供了资金。作为我们善意的象征，我们在研究实验室中留下了一个微小的时空异常现象。我们希望它对于你们来说足够...有趣。""
@@ -122,6 +122,7 @@
 
  d_space_time_anomaly:0 "时空异常"
  d_space_time_anomaly_desc:0 "一处非常稳定的时空异常，由一种在该星球进行研究的知性物种所留。它的存在显然会带来深远的科学影响。"
+ physicist_is_space_time_researcher_tt: "$job_physicist_plural_with_icon$转化为$job_dimensional_portal_researcher_plural_with_icon$"
 
  situation_living_snow:0 "白雪异变"
  situation_living_snow_type:0 "白雪异变"
@@ -189,7 +190,7 @@
  protect_simple_drones:0 "保护低级子个体"
  protect_complex_drones:0 "保护复合子个体"
  protect_everydrone:0 "保护所有子个体"
- approach_protect_effect:0 "消耗£energy£能量币来减少每个月受到的§Y辐射损伤§!量（每个£pop£人口£energy£§Y[target.energy_cost]§!）"
+ approach_protect_effect:0 "消耗£energy£§H能量币§!来减少每个月受到的§Y辐射损伤§!量（每个£pop£§H人口§!£energy£§Y[target.energy_cost]§!）"
  protect_nobody:0 "不保护"
  approach_protect_nobody_effect:0 "在§Y辐射损伤§!面前完全不保护子个体。"
 
@@ -228,9 +229,9 @@
  situation.200.b:0 "优先保护复合子个体。"
  situation.200.c:0 "确保我们所有的子个体都有保护。"
  situation.200.d:0 "错误：无法分派预算。"
- situation.200.a.tooltip:0 "消耗£energy£§Y[Root.simple_drones_cost]§!来保护£pop£§Y[Root.simple_drones_counter]低级子个体§!（每个£pop£人口消耗£energy£§Y[Root.energy_cost]§!）。\n添加§Y5年§!的§Y磁力破坏§!修正。"
- situation.200.b.tooltip:0 "消耗£energy£§Y[Root.complex_drones_cost]§!来保护£pop£§Y[Root.complex_drones_counter]复合子个体§!（每个£pop£人口消耗£energy£§Y[Root.energy_cost]§!）。\n添加§Y5年§!的§Y磁力破坏§!修正。"
- situation.200.c.tooltip:0 "消耗£energy£§Y[Root.total_drones_cost]§!来保护£pop£§Y[Root.total_drones_counter]子个体§!（每个£pop£人口消耗£energy£§Y[Root.energy_cost]§!）。\n添加§Y5年§!的§Y磁力破坏§!修正。"
+ situation.200.a.tooltip:0 "消耗£energy£§Y[Root.simple_drones_cost]§!来保护£pop£§H[Root.simple_drones_counter_100]低级子个体§!（每个£pop£§H人口§!消耗£energy£§Y[Root.energy_cost]§!）。\n添加§Y5年§!的§Y磁力破坏§!修正。"
+ situation.200.b.tooltip:0 "消耗£energy£§Y[Root.complex_drones_cost]§!来保护£pop£§H[Root.complex_drones_counter_100]复合子个体§!（每个£pop£§H人口§!消耗£energy£§Y[Root.energy_cost]§!）。\n添加§Y5年§!的§Y磁力破坏§!修正。"
+ situation.200.c.tooltip:0 "消耗£energy£§Y[Root.total_drones_cost]§!来保护£pop£§H[Root.total_drones_counter_100]子个体§!（每个£pop£§H人口§!消耗£energy£§Y[Root.energy_cost]§!）。\n添加§Y5年§!的§Y磁力破坏§!修正。"
  situation.200.d.tooltip:0 "不保护子个体。\n添加§Y5年§!的§Y磁力破坏§!修正。"
 
  situation.202.name:0 "地磁风暴"
@@ -255,7 +256,7 @@
 
  situation.210.desc.2:0 "§Y错误：神经矩阵震颤/振动/战栗。可能原因：受损人偶疯狂跳舞。线缆缠绕。§!"
  situation.210.a.2:0 "切断他们的线缆"
- situation.210.a.2.tooltip:0 "让£pop£§Y低级子个体§!离开舞台。"
+ situation.210.a.2.tooltip:0 "让£pop£§H低级子个体§!离开舞台。"
  situation.210.b.2:0 "欢呼喝彩，快看他们跳舞！"
  situation.210.b.2.tooltip:0 "我自由了！"
  situation.210.c.2:0 "解开线缆的结。"
@@ -468,7 +469,7 @@
  situation.590.name:0 "事件视界"
  situation.590.desc.base:0 "§Y[Target.GetName]§!已经越过了黑洞的事件视界。由于时间膨胀效应，空间站的残影将会在它本身消失很长时间以后仍然留存，在我们的传感器数据上永远刻下它的痕迹。"
  situation.590.desc.normal:0 "$situation.590.desc.base$\n\n即使光线也无法穿过黑洞的内轨道，空间站及其乘员的最后时刻将永远未知。"
- situation.590.desc.hive:0 "$situation.590.desc.base$\n\n除非我们迅速切断与空间站内子个体的所有联系，否则对所有已知物理定律崩溃的直接可能会不可挽回地损害我们的集体意识。"
+ situation.590.desc.hive:0 "$situation.590.desc.base$\n\n除非我们迅速切断与空间站内[owner.GetIndividualNamePlural]的所有联系，否则对所有已知物理定律崩溃的直接可能会不可挽回地损害我们的集体意识。"
  situation.590.desc.machine:0 "警告：§Y[Target.GetName]§!已非常接近黑洞的事件视界。重力吸引：无法逃脱。时间膨胀：剧增。建议执行行动：空间站内残存子个体自毁，以避免直接遭受已知物理定律的崩溃。\n\n§R严重警告：§!若继续维持神经链接，我们的集体意识将遭受无法修复的损伤。"
  situation.590.a:1 "子个体自毁。"
  situation.590.b:1 "我们必须见证坠落。"
@@ -485,7 +486,7 @@
 
  #Bad ending
  situation.592.name:0 "$situation.591.name$"
- situation.592.desc.hive:0 "$situation.591.base.hive$\n\n这感觉太痛苦了。我们的整个意识困于恒久的、永远落后一步的既视感中。正在尝试切断与无人机的连接，但该过程需要无限长的时间才能生效。\n\n我们学到了不少东西，但是代价是什么呢？"
+ situation.592.desc.hive:0 "$situation.591.base.hive$\n\n这感觉太痛苦了。我们的整个意识困于恒久的、永远落后一步的既视感中。正在尝试切断与[owner.GetIndividualNamePlural]的连接，但该过程需要无限长的时间才能生效。\n\n我们学到了不少东西，但是代价是什么呢？"
  situation.592.desc.machine:0 "$situation.591.base.machine$\n\n状况报告：遭受认知创伤。无法应对黑洞内时间膨胀。\n尝试切断与无人机链接。预计完成时间：43504967826056783年。\n\n结论：维持链接的决定具有一定启发性，但同时极具破坏性。在任何情况下均不可再重蹈覆辙。"
 
  # Ending 2: escape
@@ -577,6 +578,7 @@
 
  faction_loan_taken:0 "借入贷款"
  country_defaulted:0 "帝国拖欠债务"
+ country_defaulted_wilderness: "$country_defaulted$"
  consumer_goods_rationing:0 "消费品配给"
  consumer_goods_rationing_desc:0 "为缓解消费品短缺，我们已经制定了配给制度。"
 
@@ -621,6 +623,7 @@
  deficit.140.B.tooltip:0 "关闭全部的生物反应堆。我们就不再需要支出相应的维护费了。"
  deficit.145.desc:0 "我们的食物债务已经无可救药。大幅削减将会强制执行，我们将别无选择接受破产并重组我们的契约。"
  deficit.145.desc.gestalt:0 "我们的食物耗尽了。我们无法再为子个体或其他需要食物以维持运转的实体提供给养。大幅削减将会强制执行，我们别无选择，只能对我们的资源分发系统强制执行大规模重组。"
+ deficit.145.desc.wilderness: "我们或许最珍视之物——自然资源的平衡——已经失守。我们的给养储备已经耗尽，导致整个食物链陷入困境。为了确保最大的生存机会，我们现在必须采取严厉的配给制和大规模的资源重新分配。"
 
  deficit.155.name:0 "消费主义受挫"
  deficit.155.desc:0 "消费品的短缺导致[Root.Owner.GetName]境内生活水平的严重下滑。不满的声音日益显现，采取紧急行动的呼吁越来越广泛，很明显，供应的完全崩溃只有数月之遥了。"
@@ -632,9 +635,9 @@
  deficit.170.desc:1 "[Owner.GetFinancialAdvisorAgencyCap]现在愈发关心我们帝国发生的合金短缺。如果不能尽快弥补上我们的支出，我们的工业部门将会收到广泛的影响。"
  deficit.170.desc.machine:1 "预算警告：当前合金支出已经超过了接下来数月的支出阈值。若不能解决短缺，将会给我们的工业区域造成广泛的扰乱。"
  deficit.170.A:1 "将§Y[robots_planet.GetName]§!的机器人拆成零件。"
- deficit.170.A.tooltip:2 "拆解[robots_planet.GetName]上的所有机器人（£pop£§Y[robots_planet.recycled_robots]子个体§!）以获取£alloys£§Y[robots_planet.total_alloys_gained]合金§!"
+ deficit.170.A.tooltip:2 "拆解[robots_planet.GetName]上的所有机器人（£pop£§H[robots_planet.recycled_robots]子个体§!）以获取£alloys£§Y[robots_planet.total_alloys_gained]合金§!"
  deficit.170.B:1 "合并。循环。拆解§Y[robots_planet.GetName]§!上的智能人。"
- deficit.170.B.tooltip:2 "拆解[robots_planet.GetName]上的一半人口（£pop£§Y[robots_planet.recycled_robots]子个体§!）以获取£alloys£§Y[robots_planet.total_alloys_gained]合金§!"
+ deficit.170.B.tooltip:2 "拆解[robots_planet.GetName]上的一半人口（£pop£§H[robots_planet.recycled_robots]子个体§!）以获取£alloys£§Y[robots_planet.total_alloys_gained]合金§!"
 
  deficit.175.desc:1 "由于无法解决合金短缺，我们被迫宣布破产并违约债务。[Owner.GetFinancialAdvisorAgencyCap]正在起草新的紧缩经济计划以削减开支，避免这种情况再度发生。"
 
@@ -644,6 +647,7 @@
  deficit.185.B:0 "或许我们需要竭尽开采资源。"
  deficit.185.C:0 "我们可以忍受“超稀有”水晶。"
  deficit.190.desc:0 "我们稀有水晶的供给已经枯竭到即使关键系统都无法获得补充。[Owner.GetFinancialAdvisorAgencyCap]调侃道如今它已经可以称呼为“极稀有”水晶了，他同时还强制执行了急剧的削减以期能恢复收支平衡。"
+ deficit.190.desc.wilderness: "我们的$rare_crystals$储备已消耗到无法维持多项关键功能的程度。在极端情况下，我们那些依赖这种珍贵资源的特化共生体将面临生命危险。\n\n为避免进一步的生命损失和生产力下滑，我们现在必须采取极端手段来确保系统重新恢复平衡。"
 
  deficit.200.name:1 "严峻高爆粉尘赤字"
  deficit.200.desc:1 "由于管理缺失和大肆的浪费，我们的高爆粉尘库存已经完全枯竭！这种战略资源在包括合金冶炼和军事发展等诸多领域有着广泛的应用。尽快补充库存对确保我们帝国经济繁荣至关重要。"
@@ -652,6 +656,7 @@
  deficit.200.C:1 "我们可以忍受“超罕见”微粒。"
  deficit.205.desc:1 "长期的高爆粉尘短缺导致了一场全国性的经济危机。由于无法弥补赤字，我们被迫宣布破产并违约债务。[Owner.GetFinancialAdvisorAgencyCap]正在起草新的紧缩经济计划以削减开支，避免这种情况再度发生。"
  deficit.205.desc.gestalt:0 "长期的高爆粉尘短缺导致了一场全国性的补给链崩溃。很显然我们已经无法继续维持我们对该物质的消耗。[Owner.GetFinancialAdvisorAgencyCap]正在起草新的紧缩经济计划以削减开支，避免这种情况再度发生。"
+ deficit.205.desc.wilderness: "我们各世界之间$volatile_motes$的短缺已造成广泛的混乱，尤其是那些生命完全依赖于它的极端微生物共生体。为了防止生命和生产力的进一步损失，我们现在必须实行剧烈的变革，以确保基本生命的延续，希望我们能尽快恢复平衡。"
 
 
  deficit.215.name:1 "严峻奇异瓦斯赤字"
@@ -713,7 +718,7 @@
  situation.1000.name:0 "[This.GetLeviathanTargetName]"
  situation.1000.desc.small:0 "这一天终于来临。我们的[Owner.GetSensoryWorkers]已经就位，准备为我们对§Y[This.GetTrophyName]§!进行全面的探索。随着研究的开始，我们将一小部分意识集中在§Y[Target.GetName]§!上，以消化吸收对异常项目的研究。然而，让我们将残余物拖到[Target.GetPlanetHabitat]以后发现，结果并不如我们希望的那么有趣。\n\n就在这项进程开始之后不久，我们决定将研究转移到位于[Target.GetName]的中央团簇，由特化的[Owner.GetSensoryWorkers]对其进行持续观测。希望能从中有更多的发现。"
  situation.1000.desc.standard:0 "这一天终于来临。我们的[Owner.GetSensoryWorkers]已经就位，准备为我们对§Y[This.GetTrophyName]§!进行全面的探索。随着研究的开始，我们将一小部分意识集中在§Y[Target.GetName]§!上，以消化吸收对异常项目的研究。当天，整个[Owner.GetName]的产出率整整降低了§H0.2%§!。\n\n探测数据被深深映在我们的意识当中，并转移到到位于[Target.GetName]的中央团簇，由特化的[Owner.GetSensoryWorkers]对其进行持续观测。"
- situation.1000.desc.large:0 "这一天终于来临。大量[Owner.GetSensoryWorkers]已经就位，准备为我们对§Y[This.GetTrophyName]§!进行切实的探索。随着研究的开始，我们将整个意识集中在§Y[Target.GetName]§!上，以消化吸收对这一令我们全神贯注的异常项目的研究。几个危险境地的子个体因一时分神而受伤，甚至还有几个失踪了。我们对此无比痴迷。\n\n在初步研究完成后，我们决定将其转移到到位于[Target.GetName]的中央团簇，由特化的[Owner.GetSensoryWorkers]对其进行持续观测。我们近乎虔诚地部署了这一研究任务，并持续分配一部分意识对其进行观测。"
+ situation.1000.desc.large:0 "这一天终于来临。大量[Owner.GetSensoryWorkers]已经就位，准备为我们对§Y[This.GetTrophyName]§!进行切实的探索。随着研究的开始，我们将整个意识集中在§Y[Target.GetName]§!上，以消化吸收对这一令我们全神贯注的异常项目的研究。几个危险境地的[owner.GetIndividualNamePlural]因一时分神而受伤，甚至还有几个失踪了。我们对此无比痴迷。\n\n在初步研究完成后，我们决定将其转移到到位于[Target.GetName]的中央团簇，由特化的[Owner.GetSensoryWorkers]对其进行持续观测。我们近乎虔诚地部署了这一研究任务，并持续分配一部分意识对其进行观测。"
  situation.1000.a:0 "令人失望的结果。"
  situation.1000.b:0 "我们会记住[This.GetLeviathanTargetName]的。"
  situation.1000.c:1 "比起[This.GetTrophyName]，如今我们更加了解自己了。" # [LocEditor:ForFutureBatchExport]
@@ -839,6 +844,7 @@
  situation.1145.desc.base:1 "我们的[capital_star.GetName]遭遇了一场异常的恒星活动低谷期。由于温度的降低，恒星黑子以史无前例的数量大量出现，让恒星的辐射发生了非常明显的衰弱。"
  situation.1145.desc.regular:1 "$situation.1145.desc.base$\n[capital_scope.GetName]上的居民已经开始囤积核热毯，减少外出。希望我们能尽早回到温暖的日子。"
  situation.1145.desc.gestalt:1 "$situation.1145.desc.base$\n我们已经分派了更多的能量用于产热，并指示所有子个体凑成团簇一同行动以减少热量散失。我们一定能熬过去的。"
+ situation.1145.desc.wilderness: "$situation.1145.desc.base$\n\n尽管这场骚动触动了我们共同本能深处的恐惧，但鉴于我们知晓母星此前造成的破坏：我们将坚持下去。 我们已分配更多能量用于供暖我们的庇护所，而我们的共生体们也将学会为了取暖而更加紧密地依偎在一起。"
  situation.1145.a:0 "把暖气开到最大。"
 
  situation.1150.name:0 "凛冬已至"
@@ -970,6 +976,7 @@
 
  sensor_operatior:0 "传感器操作员"
  sensory_drones:0 "传感子个体"
+ sensory_symbionts: "传感共生体"
  observation_subroutines:0 "观测子程序"
 
  parade:0 "游行"

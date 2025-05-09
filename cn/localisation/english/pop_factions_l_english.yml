@@ -109,6 +109,9 @@
  SUPREMACIST_OPPRESSIVE_SUBJUGATION_POLICY:0 "霸道统御政策"
  SUPREMACIST_NO_OPPRESSIVE_SUBJUGATION_POLICY:0 "$SUPREMACIST_OPPRESSIVE_SUBJUGATION_POLICY$"
  SUPREMACIST_NO_OPPRESSIVE_SUBJUGATION_POLICY_DESC:0 "我们的属国应当为我们服务，他们应对此牢记于心。对他们展现宽容会让[Root.GetName]感到沮丧。"
+ SUPREMACIST_UNPLUGGED_CYBERIZE: "接纳我们的机械身份"
+ SUPREMACIST_UNPLUGGED_NOT_CYBERIZE: "$SUPREMACIST_UNPLUGGED_DECYBERIZE$"
+ SUPREMACIST_UNPLUGGED_CYBERIZE_DESC: "完善和更新机器智能赋予我们的义体将重振我们令人敬畏的遗产，同时也会取悦[root.GetName]。"
 
  # XENOISTS
  XENOIST_PASSIVE_STUDY:0 "间接外星研究"
@@ -174,6 +177,9 @@
  XENOIST_XENOLOGICAL_CONSERVATION:0 "异种动物保护"
  XENOIST_NO_XENOLOGICAL_CONSERVATION:0 "$XENOIST_XENOLOGICAL_CONSERVATION$"
  XENOIST_XENOLOGICAL_CONSERVATION_DESC:0 "本着科学研究和保护的精神建造一座$building_xeno_zoo$，能够取悦[root.GetName]。" # returns 'an Alien Zoo'
+ XENOIST_UNPLUGGED_DECYBERIZE: "拒绝我们的机械身份"
+ XENOIST_UNPLUGGED_NOT_DECYBERIZE: "$XENOIST_UNPLUGGED_DECYBERIZE$"
+ XENOIST_UNPLUGGED_DECYBERIZE_DESC: "拒绝机器智能强加给我们的义体会减少其他帝国对我们的恐惧，同时也会取悦[root.GetName]。"
 
 
  # IMPERIALISTS
@@ -231,6 +237,9 @@
  IMPERIALIST_FLEET_USAGE_LOW:0 "低舰队容量使用率"
  IMPERIALIST_FLEET_USAGE_NOT_LOW:0 "$IMPERIALIST_FLEET_USAGE_LOW$"
  IMPERIALIST_FLEET_USAGE_LOW_DESC:0 "维持远低于我们帝国的容量的舰队将招致[Root.GetName]的不满。"
+ IMPERIALIST_UNPLUGGED_CYBERIZE: "$SUPREMACIST_UNPLUGGED_CYBERIZE$"
+ IMPERIALIST_UNPLUGGED_NOT_CYBERIZE: "$SUPREMACIST_UNPLUGGED_NOT_CYBERIZE$"
+ IMPERIALIST_UNPLUGGED_CYBERIZE_DESC: "$SUPREMACIST_UNPLUGGED_CYBERIZE_DESC$"
 
  # ISOLATIONISTS
  ISOLATIONIST_PHILOSOPHY:0 "坚定防御" # FIXME not intended to attack
@@ -278,6 +287,9 @@
  ISOLATIONIST_REPEAL_PROACTIVE_FIRST_CONTACT_POLICY:0 "主动的第一次接触协议"
  ISOLATIONIST_NO_PROACTIVE_FIRST_CONTACT_POLICY:0 "$ISOLATIONIST_REPEAL_PROACTIVE_FIRST_CONTACT_POLICY$"
  ISOLATIONIST_REPEAL_PROACTIVE_FIRST_CONTACT_POLICY_DESC:0 "[Root.GetName]认为向星空中可能的监听者广播我们的信息是不合适的。"
+ ISOLATIONIST_UNPLUGGED_DECYBERIZE: "拒绝机械压迫"
+ ISOLATIONIST_UNPLUGGED_NOT_DECYBERIZE: "$ISOLATIONIST_UNPLUGGED_NOT_DECYBERIZE$"
+ ISOLATIONIST_UNPLUGGED_DECYBERIZE_DESC: "决绝并移除义体强化体、重获自己的生物和政治主权将会取悦[root.GetName]。"
 
  # TRADITIONALISTS
  TRADITIONALIST_NO_ROBOTS:0 "有机生命"
@@ -349,6 +361,9 @@
  TRADITIONALIST_ELEVATED_CREED: "升格[Root.Owner.GetCyberCreed]"
  TRADITIONALIST_NO_CREED: "缺少信条"
  TRADITIONALIST_ELEVATED_CREED_DESC: "[Root.GetCyberCreed]将会因为我们完全接纳他们的教义而被取悦。"
+ TRADITIONALIST_UNPLUGGED_DECYBERIZE: "有机身份"
+ TRADITIONALIST_UNPLUGGED_NOT_DECYBERIZE: "$TRADITIONALIST_UNPLUGGED_DECYBERIZE$"
+ TRADITIONALIST_UNPLUGGED_DECYBERIZE_DESC: "拒绝并决绝并移除义体强化体、重获自己的生物遗产将会取悦[root.GetName]。"
 
  # TECHNOLOGISTS
  TECHNOLOGIST_ROBOTS:0 "机器热爱"
@@ -384,6 +399,9 @@
  TECHNOLOGIST_FEDERATION_ANTI:0 "$spiritualist_federation$"
  TECHNOLOGIST_FEDERATION_ANTI_NOT_SPIRITUALIST:0 "$spiritualist_federation$"
  TECHNOLOGIST_FEDERATION_ANTI_DESC:0 "成为某个$spiritualist_federation$的一员会使得[Root.GetName]不满。"
+ TECHNOLOGIST_UNPLUGGED_CYBERIZE: "义体身份"
+ TECHNOLOGIST_UNPLUGGED_NOT_CYBERIZE: "$TECHNOLOGIST_UNPLUGGED_CYBERIZE$"
+ TECHNOLOGIST_UNPLUGGED_CYBERIZE_DESC: "取回并进一步深挖我们的义体强化体潜能将会取悦[root.GetName]。"
 
  # PROGRESSIVES
  PROGRESSIVE_NO_AUTO:0 "反对独裁"
@@ -413,6 +431,9 @@
  PROGRESSIVE_FEDERATION:0 "$hegemony_federation$"
  PROGRESSIVE_FEDERATION_NOT_HEGEMONY:0 "$hegemony_federation$"
  PROGRESSIVE_FEDERATION_DESC:0 "成为某个$hegemony_federation$的一员会使得[Root.GetName]不满。"
+ PROGRESSIVE_UNPLUGGED_DECYBERIZE: "$XENOIST_UNPLUGGED_DECYBERIZE$"
+ PROGRESSIVE_UNPLUGGED_NOT_DECYBERIZE: "$XENOIST_UNPLUGGED_DECYBERIZE$"
+ PROGRESSIVE_UNPLUGGED_DECYBERIZE_DESC: "$XENOIST_UNPLUGGED_DECYBERIZE_DESC$"
 
  # TOTALITARIANS
  TOTALITARIAN_AUTOCRACY:0 "专制"
@@ -425,7 +446,7 @@
  TOTALITARIAN_STRATIFICATION_DESC:1 "确保一个等级森严的社会——包括经济分层、奴隶制度甚至肃清——可取悦[Root.GetName]。"
  TOTALITARIAN_NO_STRATIFICATION:0 "$TOTALITARIAN_STRATIFICATION$"
  TOTALITARIAN_SLAVERY:0 "基线奴隶制"
- TOTALITARIAN_SLAVERY_DESC:0 "保持至少§Y12§!奴隶人口可取悦[Root.GetName]。"
+ TOTALITARIAN_SLAVERY_DESC:0 "保持至少§Y12§!£pop£§H人口§!的奴隶可以取悦[Root.GetName]。"
  TOTALITARIAN_NO_SLAVERY:0 "$TOTALITARIAN_SLAVERY$"
  TOTALITARIAN_ELITISM:0 "精英主义"
  TOTALITARIAN_ELITISM_DESC:0 "允许强化领袖的政策可取悦[Root.GetName]。"
@@ -454,6 +475,9 @@
  TOTALITARIAN_FEDERATION:0 "$hegemony_federation$"
  TOTALITARIAN_FEDERATION_NOT_HEGEMONY:0 "$hegemony_federation$"
  TOTALITARIAN_FEDERATION_DESC:0 "成为某个$hegemony_federation$的一员会取悦[Root.GetName]。"
+ TOTALITARIAN_UNPLUGGED_STATUS_QUO: "具现身份"
+ TOTALITARIAN_UNPLUGGED_NOT_STATUS_QUO: "$TOTALITARIAN_UNPLUGGED_STATUS_QUO$"
+ TOTALITARIAN_UNPLUGGED_STATUS_QUO_DESC: "放弃我们的精英军用强化体或屈服于集体意识国家将会使[root.GetName]不悦。"
 
  # PROSPERITY
  PROSPERITY_PHILOSOPHY:0 "防御姿态"
@@ -489,6 +513,9 @@
  PROSPERITY_FEDERATION:0 "$military_federation$"
  PROSPERITY_FEDERATION_NOT_MILITARIST:0 "$military_federation$"
  PROSPERITY_FEDERATION_DESC:0 "成为某个$military_federation$的一员会使得[Root.GetName]不满。"
+ PROSPERITY_UNPLUGGED_DECYBERIZE: "$XENOIST_UNPLUGGED_DECYBERIZE$"
+ PROSPERITY_UNPLUGGED_NOT_DECYBERIZE: "$XENOIST_UNPLUGGED_NOT_DECYBERIZE$"
+ PROSPERITY_UNPLUGGED_DECYBERIZE_DESC: "$XENOIST_UNPLUGGED_DECYBERIZE_DESC$"
 
  FACTION_COUNTRY_SEPARATIST:0 "[parameter:owner.GetSpeciesAdj]分离主义者"
 
@@ -645,10 +672,10 @@
  FACTION_ACTION_SLAVE_EMANCIPATE_ALL_DESC:1 "解放所有被奴役人口。"
 
  # Slave Actions
- FACTION_ACTION_MALCONTENT_SLAVES_INTERSTELLAR_RAILROAD_TOOLTIP_1:0 "党派至少有§R4§!人口。"
- FACTION_ACTION_MALCONTENT_SLAVES_INTERSTELLAR_RAILROAD_TOOLTIP_2:1 "党派至少有§R6§!人口。"
- FACTION_ACTION_MALCONTENT_SLAVES_INTERSTELLAR_RAILROAD_TOOLTIP_3:1 "党派至少有§R8§!人口。"
- FACTION_ACTION_MALCONTENT_SLAVES_INTERSTELLAR_RAILROAD_TOOLTIP_4:1 "党派至少有§R10§!人口。"
+ FACTION_ACTION_MALCONTENT_SLAVES_INTERSTELLAR_RAILROAD_TOOLTIP_1:0 "此派系有至少§R400§!£pop£§H人口§!。"
+ FACTION_ACTION_MALCONTENT_SLAVES_INTERSTELLAR_RAILROAD_TOOLTIP_2:1 "此派系有至少§R600§!£pop£§H人口§!。"
+ FACTION_ACTION_MALCONTENT_SLAVES_INTERSTELLAR_RAILROAD_TOOLTIP_3:1 "此派系有至少§R800§!£pop£§H人口§!。"
+ FACTION_ACTION_MALCONTENT_SLAVES_INTERSTELLAR_RAILROAD_TOOLTIP_4:1 "此派系有至少§R1K§!£pop£§H人口§!。"
 
 
  FACTION_ACTION_SLAVE_HARSH_TREATMENT:0 "严厉镇压"
@@ -762,7 +789,7 @@
  pft_pretender_desc:0 "此党派由觊觎当前政权者的支持者组成，他们的目的就是要取缔当前政府成为统治者。"
 
  POP_FACTION_PRETENDER_ATTRITION_TITLE:0 "内部摩擦"
- POP_FACTION_PRETENDER_ATTRITION_DESC:0 "党派中有一人口对党派方针感到失望，决定§G脱离该党派§!。"
+ POP_FACTION_PRETENDER_ATTRITION_DESC:0 "派系中的100人口对派系的事业感到失望，决定§G脱离该派系§!。"
  POP_FACTION_PRETENDER_DEMAND_TITLE:0 "向§Y[parameter:pretender.GetName]§!交出权力"
  POP_FACTION_PRETENDER_DEMAND_DESC:0 "[Root.Owner.GetRulerTitle]§Y[Root.Owner.GetRulerName]§!将被驱逐出境，而§Y[parameter:pretender.GetName]§!登基。"
  POP_FACTION_PRETENDER_INSTALL_TITLE:0 "觊觎者上位"
@@ -775,20 +802,45 @@
  ### New Events
  factions.1.title:0 "党派成立"
  factions.1.desc:1 "一个新的派系正在[Root.Owner.GetName]的政治圈中逐渐壮大。他们自称[Root.GetName]，其成员正紧密敦促我们处理他们关心的诸多诉求。\n\n可以预见，随着人口的增长和思潮的分化，各种派系都将如雨后春笋般冒出。要求得不到满足的派系会成为麻烦的源头，而支持帝国工作的派系可以为我们所用……"
- factions.1.desc.start:1 "一个新的派系正在[Root.Owner.GetName]的政界中逐渐壮大。他们自称§H[Root.GetName]§!。 "
+ factions.1.desc.start:1 "一个新的派系正在[Root.Owner.GetName]的政界中逐渐壮大。他们自称§H[Root.GetName]§!。 " #trailing space is important
+ MESSAGE_FACTION_FORMED_TITLE: "新派系"
+ factions.1.desc.start_short:1 "有一个§H[Root.GetFactionType]§!已经组建成型，他们自称为§H[Root.GetName]§!。"
  factions.1.desc.firstfinisher:0 "心生不满的党派会成为麻烦之源，但那些支持政府活动的党派可能会有用……"
  factions.1.desc.imperialist:0 "其成员努力推动我们使用军事力量统御银河。\n\n"
  factions.1.desc.isolationist:0 "其成员提倡关闭边界，不干预银河事务。\n\n"
  factions.1.desc.progressive:0 "其成员为我帝国所有居民争取平等和正义。\n\n"
- factions.1.desc.prosperity:1 "其成员为让国家专注于使用和平手段推动经济稳定和增长而四处游说。\n\n"
+ factions.1.desc.prosperity:2 "其成员为让国家专注于使用和平手段推动经济稳定和增长而四处游说。\n\n"
  factions.1.desc.supremacist:0 "其成员寻求维护 [Root.Owner.GetSpeciesAdj] 种族的至上地位，如有必要不惜限制外星人的权利。\n\n"
  factions.1.desc.technologist:0 "其成员努力推动科学发展。\n\n"
  factions.1.desc.totalitarian:0 "其成员努力推动政治军事力量的中央极权。\n\n"
  factions.1.desc.traditionalist:0 "其成员支持精神主义和保守价值观。\n\n"
  factions.1.desc.xenoist:0 "其成员努力推动与星种族的友谊。\n\n"
+ MESSAGE_TRADITIONALIST_FACTION_FORMED_TITLE:0 "New Traditionalist Faction"
+ MESSAGE_IMPERIALIST_FACTION_FORMED_TITLE:0 "New Imperialist Faction"
+ MESSAGE_SUPREMACIST_FACTION_FORMED_TITLE:0 "New Supremacist Faction"
+ MESSAGE_ISOLATIONIST_FACTION_FORMED_TITLE:0 "New Isolationist Faction"
+ MESSAGE_TOTALITARIAN_FACTION_FORMED_TITLE:0 "New Totalitarian Faction"
+ MESSAGE_PROGRESSIVE_FACTION_FORMED_TITLE:0 "New Progressive Faction"
+ MESSAGE_PROSPERITY_FACTION_FORMED_TITLE:0 "New Propsperity Faction"
+ MESSAGE_TECHNOLOGIST_FACTION_FORMED_TITLE:0 "New Technologist Faction"
+ MESSAGE_XENOIST_FACTION_FORMED_TITLE:0 "New Xenoist Faction"
+ MESSAGE_MANIFESTI_FACTION_FORMED_TITLE:0 "New Manifesti Faction"
+ 
+ factions.1.desc.unplugged_start: "一个新的派系正在[Root.Owner.GetName]稚嫩的政界中浮出水面。他们自称为§H[Root.GetName]§!。" #trailing space is important
+ factions.1.desc.unplugged_imperialist: "他们的成员致力于使用我们武器库中所有强大的强化体武器来统治星系的其余部分。\n\n"
+ factions.1.desc.unplugged_isolationist: "他们的成员提倡封闭边界，创造一个不受机器和其他星系实体干扰的社会。\n\n"
+ factions.1.desc.unplugged_progressive: "他们的成员寻求与星系邻居达成友好协议，以及为我们帝国的所有居民伸张正义。\n\n"
+ factions.1.desc.unplugged_prosperity: "他们的成员游说通过和平手段实现商业增长和稳定，避免军国主义扩张。\n\n"
+ factions.1.desc.unplugged_supremacist: "他们的成员致力于维护[Root.Owner.GetSpeciesAdj]物种的优先地位，用我们自己生产的强大机械加以增强。\n\n"
+ factions.1.desc.unplugged_technologist: "他们的成员致力于科学的进步以及对自身强化件的理解。\n\n"
+ factions.1.desc.unplugged_totalitarian: "他们的成员一直致力于推动主权政治权力和军事力量的极端集中，尽可能效仿我们所知的机械智能。\n\n"
+ factions.1.desc.unplugged_traditionalist: "他们的成员支持唯心与保守观念，与我们过去自然、有机的理念相一致。\n\n"
+ factions.1.desc.unplugged_xenoist: "他们的成员致力于推动与其他外星物种的友好关系，摆脱过去机械意识留下的阴影。\n\n" #'Machine' as an adjective in reference to the intelligence that once assimilated us
 
  factions.2000.title:0 "[TargetFaction.Owner.GetName]的执政道德准则转变"
  factions.2000.desc.start:0 "由于§Y[TargetFaction.GetName]§!的支持率长期持续增长，§Y[TargetFaction.Owner.GetName]§!最终拥立了该党派，采纳了他们的核心价值观和政治理念。"
+ factions.2000.desc_short: "§Y[TargetFaction.Owner.GetName]§!接纳了§H[TargetFaction.GetFactionType]§!，倾向§H[TargetFaction.GetEthicEquivelent]§!。"
+ MESSAGE_FACTION_EMBRACED_TITLE: "主流思潮转变"
  factions.2000.desc.imperialist:0 "作为该党派进入政府的结果，国家更偏好§H军国主义§!。\n\n"
  factions.2000.desc.isolationist:0 "作为该党派进入政府的结果，国家更偏好§H排外主义§!。\n\n"
  factions.2000.desc.progressive:0 "作为该党派进入政府的结果，国家更偏好§H平等主义§!。\n\n"
@@ -798,6 +850,17 @@
  factions.2000.desc.totalitarian:0 "作为该党派进入政府的结果，国家更偏好§H威权主义§!。\n\n"
  factions.2000.desc.traditionalist:0 "作为该党派进入政府的结果，国家更偏好§H精神主义§!。\n\n"
  factions.2000.desc.xenoist:0 "作为该党派进入政府的结果，国家更偏好§H亲外主义§!。\n\n"
+ MESSAGE_TRADITIONALIST_FACTION_EMBRACED_TITLE:0 "Traditionalist Ethics Embraced"
+ MESSAGE_IMPERIALIST_FACTION_EMBRACED_TITLE:0 "Imperialist Ethics Embraced"
+ MESSAGE_SUPREMACIST_FACTION_EMBRACED_TITLE:0 "Supremacist Ethics Embraced"
+ MESSAGE_ISOLATIONIST_FACTION_EMBRACED_TITLE:0 "Isolationist Ethics Embraced"
+ MESSAGE_TOTALITARIAN_FACTION_EMBRACED_TITLE:0 "Totalitarian Ethics Embraced"
+ MESSAGE_PROGRESSIVE_FACTION_EMBRACED_TITLE:0 "Progressive Ethics Embraced"
+ MESSAGE_PROSPERITY_FACTION_EMBRACED_TITLE:0 "Prosperity Ethics Embraced"
+ MESSAGE_TECHNOLOGIST_FACTION_EMBRACED_TITLE:0 "Technologist Ethics Embraced"
+ MESSAGE_XENOIST_FACTION_EMBRACED_TITLE:0 "Xenoist Ethics Embraced"
+ MESSAGE_MANIFESTI_FACTION_EMBRACED_TITLE:0 "Manifesti Ethics Embraced"
+
 
  factions.3000.name:0 "政治热点"
  factions.3000.desc:0 "既有派系和新兴运动都对我们在§Y[root.GetName]§!建立的新殖民地产生了异常浓烈的兴趣。从我们宣布在这个适宜的[root.GetPlanetHabitat]定居的那一刻起，[root.owner.GetName]内的几乎所有政权都对此有话要说。\n\n我们的分析人士认为没有什么重大变故正在[root.GetName]酝酿，但还是建议小心谨慎。显然，我们的各种政治实体打算就着这个新兴世界大肆宣传。"
@@ -851,8 +914,8 @@
  faction.10.a.tooltip:0 "§H[unrest_planet.GetName]§!上的§H受奴役人口§!获得§R奴隶动乱§!调整因素，持续§Y4年§!。"
 
  faction.15.title:0 "奴隶暴力！"
- faction.15.desc:0 "玩忽职守的奴隶组成游荡的暴民，与[roving_gangs_planet.GetName]上的其他人口产生了暴力冲突，导致对方人口死亡。\n\n死者的家属对此如何反应，尚待观察。"
- faction.15.a.tooltip:0 "[roving_gangs_planet]：\n§Y1人口§!§R死亡§!。"
+ faction.15.desc:0 "一群暴徒——由擅离职守的奴隶组成——和[roving_gangs_planet.GetName]上的其他平民产生了激烈的冲突，并导致100口不幸逝世。\n\n死者的家属对这一事件的反应仍待观察。"
+ faction.15.a.tooltip:0 "[roving_gangs_planet]：\n§R100§!£pop£§H人口§!死亡。"
 
  faction.50.title:0 "星际铁路！"
  faction.50.desc:0 "似乎我们的奴隶中一些激进分子集结了起来，想将奴隶人口转移出[Root.Owner.GetAdj]领土。\n\n虽然尚不清楚这么大规模的犯罪是如何进行的，但可以确定的是，奴隶们已经逃离[Root.Owner.GetName] ，重获自由之身。"
@@ -986,7 +1049,7 @@
  faction.700.title:0 "强制奴役！"
  faction.700.desc:0 "据说激进的[Root.GetName]强制奴役了[Root.Owner.GetName]的一些非[Root.Owner.GetSpeciesAdj]人口。"
  faction.700.a:0 "这是一场恶劣的暴行。"
- faction.700.a.tooltip:0 "奴隶：\n§Y+2§!人口"
+ faction.700.a.tooltip:0 "奴隶：\n§Y+200§!£pop£§H人口§!"
 
  faction.701.title:0 "[parameter:rebelling_faction.GetName]叛变！"
  faction.701.desc:0 "[parameter:planet.GetName]上那群自称是奴隶主的人似乎是受够了[Root.Owner.GetName]对外星人的软弱态度，决定建立同盟，并宣布独立。"

@@ -1,6 +1,15 @@
 ﻿l_english:
 
- # Shorthand with §I highlighting
+### CONCEPTS
+#
+# Above each concept definition are instructions on usage, including an icon where one exists.
+#   Note that between the icon and the term there's a non-breaking space. When you copy the usage example, it will keep the non-breaking space.
+#   This is important to not get a line break between the icon and the concept.
+# Use a concept link with icon the first time a new concept is mentioned, then use §H without an icon for repeated uses.
+# Use §H with an icon the first time a concept is used withing its own description.
+# Use §H without an icon if the concept is used more than once.
+
+# Shorthand with §I highlighting
  i_energy: "£energy£ §I$energy$§!"
  i_minerals: "£minerals£ §I$minerals$§!"
  i_food: "£food£ §I$food$§!"
@@ -13,7 +22,7 @@
  i_society: "£society£ §I$society_research$§!"
  i_engineering: "£engineering£ §I$engineering_research$§!"
  i_amenities: "£amenities£§I舒适度§!"
- i_trade_value: "£trade_value£§I贸易额§!"
+ i_trade_value: "$r_trade$"
  i_loyalty: "£loyalty£§I每月忠诚度§!"
  i_rare_crystals: "£rare_crystals£ §I$rare_crystals$§!"
  i_volatile_motes: "£volatile_motes£ §I$volatile_motes$§!"
@@ -26,13 +35,14 @@
  i_strategic: "£rare_crystals£ £exotic_gases£ £volatile_motes£§I战略资源§!"
  i_strategic_plural: "£rare_crystals£ £exotic_gases£ £volatile_motes£§I战略资源§!"
  i_stability: "£mod_planet_stability_add£ §I$PLANET_STABILITY_TITLE$§!"
+ i_crime: "£crime£ §I$PLANET_CRIME_TITLE$§!"
  i_naval_capacity: "£mod_country_naval_cap_add£§I军舰容量§!"
  i_defense_armies: "£defense_army£§I防御部队§!"
  i_unlocks_building: "§I解锁建筑：§!"
  i_unlocks_feature: "§I解锁特性：§!"
  i_unlocks_orbital: "§I解锁轨道站：§!"
 
- ### Civic and Origin Concepts
+### Civic and Origin Concepts
 
 # Prosperous Unification
  concept_planetary_unification: "$tech_planetary_unification$"
@@ -41,19 +51,12 @@
  concept_prosp_uni: "$prosp_uni_mod$"
  concept_prosp_uni_desc: "—$MOD_POP_HAPPINESS$：§G+15%§!\n—$MOD_PLANET_AMENITIES_MULT$：§G+25%§!\n—$mod_planet_jobs_produces_mult$：§G+10%§!\n—将在§I20§!年后过期。\n\n§L$prosp_uni_mod_desc$§!"
 
- concept_generator_district: "$district_generator$"
- concept_generator_district_desc: "—£housing£$MOD_PLANET_HOUSING_ADD$：§G+2§!\n—£mod_job_technician_add£['concept_technician', $job_technician$]岗位：§G+2§!\n\n§L$district_generator_desc$§!"
- concept_farming_district: "$district_farming$"
- concept_farming_district_desc: "—£housing£$MOD_PLANET_HOUSING_ADD$：§G+2§!\n—£mod_job_farmer_add£['concept_farmer', $job_farmer$]岗位：§G+2§!\n\n§L$district_farming_desc$§!"
- concept_mining_district: "$district_mining$"
- concept_mining_district_desc: "—£housing£$MOD_PLANET_HOUSING_ADD$：§G+2§!\n—£mod_job_miner_add£['concept_miner', $job_miner$]岗位：§G+2§!\n\n§L$district_mining_desc$§!"
-
 # Mechanist
  concept_robots: "$feature_robots$"
  concept_robots_desc: "$feature_robots_desc$"
 
  concept_robot_assembly_plant: "$building_robot_assembly_plant$"
- concept_robot_assembly_plant_desc: "—£job_roboticist£['concept_roboticist', $job_roboticist$]岗位：§G+1§!\n\n§L$building_robot_assembly_plant_desc$§!"
+ concept_robot_assembly_plant_desc: "—[roboticist.GetIcon]['concept_roboticist', roboticist.GetName]岗位：§G+100§!\n\n§L$building_robot_assembly_plant_desc$§!"
 
  concept_powered_exoskeletons: "$tech_powered_exoskeletons$"
  concept_powered_exoskeletons_desc: "—$MOD_ARMY_DAMAGE_MULT$：§G+5%§!\n—劳工人口资源产出：§G+5%§!\n\n§L$tech_powered_exoskeletons_desc$§!"
@@ -98,7 +101,7 @@
  concept_archaeostudies_desc: "- $i_unlocks_building$ $building_archaeostudies_faculty$\n\n§L$tech_archaeostudies_desc$§!"
 
  concept_archaeostudies_faculty: "$building_archaeostudies_faculty$"
- concept_archaeostudies_faculty_desc: "—$mod_category_archaeostudies_research_speed_mult$：§G+100%§!\n—$mod_country_resource_max_minor_artifacts_add$：§G+1000§!\n—£job_archaeoengineers£['concept_archaeoengineers', $job_archaeoengineers$]岗位：§G+3§!\n\n$building_archaeostudies_faculty_relic_effect$\n\n§L$building_archaeostudies_faculty_desc$§!"
+ concept_archaeostudies_faculty_desc: "—$mod_category_archaeostudies_research_speed_mult$：§G+100%§!\n—$mod_country_resource_max_minor_artifacts_add$：§G+1000§!\n—£job_archaeoengineers£['concept_archaeoengineers', $job_archaeoengineers$]岗位：§G+300§!\n\n$building_archaeostudies_faculty_relic_effect$\n\n§L$building_archaeostudies_faculty_desc$§!"
 
 # Shattered Ring
 
@@ -114,16 +117,16 @@
  concept_pc_habitat_desc: "—$MOD_PLANET_COLONY_DEVELOPMENT_SPEED_MULT$：§G+200%§!\n—基础宜居性：§Y40%§!\n\n§L$pc_habitat_desc$§!"
 
  concept_void_dweller: "$trait_void_dweller_1$"
- concept_void_dweller_desc: "—$mod_habitat_jobs_produces_mult$：§G+15%§!\n—$mod_non_artificial_planet_jobs_produces_mult$：§R-15%§!\n—$void_dweller_trait_tooltip$\n\n§L$trait_void_dweller_1_desc$§!"
+ concept_void_dweller_desc: "—在非人工星球上的人口幸福度：§R-30%§!\n—在轨道栖所上的$MOD_POP_BONUS_WORKFORCE_MULT$：§G+15%§!\n—在非人工星球上的$MOD_POP_BONUS_WORKFORCE_MULT$：§R-15%§!\n\n§L$trait_void_dweller_1_desc$§!"
 
  concept_void_dweller_2: "$trait_void_dweller_2$"
- concept_void_dweller_2_desc: "—$mod_habitat_jobs_produces_mult$：§G+15%§!\n—$mod_non_artificial_planet_jobs_produces_mult$：§R-15%§!\n$void_dweller_2_trait_tooltip$\n\n§L$trait_void_dweller_2_desc$§!"
+ concept_void_dweller_2_desc: "非人工星球机器人维护费：§R+15%§!\n—在轨道栖所上的$MOD_POP_BONUS_WORKFORCE_MULT$：§G+15%§!\n—在非人工星球上的$MOD_POP_BONUS_WORKFORCE_MULT$：§R-15%§!\n\n§L$trait_void_dweller_2_desc$§!"
 
  concept_habitat_preference: "$trait_pc_habitat_preference$"
  concept_habitat_preference_desc: "—$mod_pc_habitat_habitability$：§G+80%§!\n\n$trait_pc_habitat_preference_desc$"
 
  concept_habitat_1: "$tech_habitat_1$"
- concept_habitat_1_desc: "—§I解锁巨型结构：§!$habitat_central_complex$\n—$i_unlocks_orbital$$major_orbital_plural$\n—$i_unlocks_orbital$$minor_orbital_plural$\n\n§L$tech_habitat_1_desc$§!"
+ concept_habitat_1_desc: "—§I解锁巨型结构：§!$habitat_central_complex$\n\n§L$tech_habitat_1_desc$§!"
 
  concept_habitat_2: "$tech_habitat_2$"
  concept_habitat_2_desc:1 "§I解锁建筑§!：$building_hab_major_capital$\n\n§L$tech_habitat_2_desc$§!"
@@ -136,19 +139,19 @@
 # Tree of Life
 
  concept_tree_of_life: "$d_tree_of_life_home$"
- concept_tree_of_life_desc: "—$MOD_POP_GROWTH_SPEED$：§G+15%§!\n—$mod_planet_jobs_society_research_produces_mult$：§G+10%§!\n—$MOD_PLANET_HOUSING_ADD$：§G+10§!\n—$mod_district_farming_max$：§G+4§!\n—维护费：4$i_food$\n\n§L$d_tree_of_life_home_desc$§!"
+ concept_tree_of_life_desc: "—$MOD_LOGISTIC_GROWTH_MULT$：§G+15%§!\n—$mod_planet_jobs_society_research_produces_mult$：§G+10%§!\n—$MOD_PLANET_HOUSING_ADD$：§G+1000§!\n—$mod_district_farming_max$：§G+4§!\n—维护费：4$i_food$\n\n§L$d_tree_of_life_home_desc$§!"
 
  concept_tree_of_life_sapling: "$d_tree_of_life_colony$"
- concept_tree_of_life_sapling_desc: "—$MOD_POP_GROWTH_SPEED$：§G+10%§!\n—$mod_planet_jobs_society_research_produces_mult$：§G+10%§!\n—$MOD_PLANET_HOUSING_ADD$：§G+5§!\n—$mod_district_farming_max$：§G+2§!\n—维护费：2$i_food$\n\n§L$d_tree_of_life_colony_desc$§!"
+ concept_tree_of_life_sapling_desc: "—$MOD_LOGISTIC_GROWTH_MULT$：§G+10%§!\n—$mod_planet_jobs_society_research_produces_mult$：§G+10%§!\n—$MOD_PLANET_HOUSING_ADD$：§G+500§!\n—$mod_district_farming_max$：§G+2§!\n—维护费：2$i_food$\n\n§L$d_tree_of_life_colony_desc$§!"
 
  concept_tree_of_life_holding: "$holding_tree_of_life_sapling$"
- concept_tree_of_life_holding_desc: "—$MOD_MONTHLY_LOYALTY_GAIN$：§G+1§!\n—$MOD_POP_ENVIRONMENT_TOLERANCE$：§G+10%§!\n—£job_farmer£['concept_farmer']产出的£food£食物：§G+1§!\n—£mod_job_ranger_add£['concept_overlord_arborist', $job_overlord_arborist$]岗位：§G+1§!\n\n§L$holding_tree_of_life_sapling_desc$§!"
+ concept_tree_of_life_holding_desc: "—$MOD_MONTHLY_LOYALTY_GAIN$：§G+1§!\n—$MOD_POP_ENVIRONMENT_TOLERANCE$：§G+10%§!\n—[farmer.GetIcon]['concept_farmer']产出的£food£食物：§G+1§!\n—£mod_job_ranger_add£['concept_overlord_arborist', $job_overlord_arborist$]岗位：§G+1§!\n\n§L$holding_tree_of_life_sapling_desc$§!"
 
  concept_transplant_tree_of_life: "$decision_transplant_tree$"
  concept_transplant_tree_of_life_desc: "—向该殖民地增加一个§I$d_tree_of_life_colony$§!行星特征。\n\n§L$decision_transplant_tree_desc$§!"
 
  concept_no_lifetree: "$no_lifetree$"
- concept_no_lifetree_desc: "$NEW_LINE$—行星建造速度：§R-50%§!$NEW_LINE$—岗位产出的资源：§R-25%§!$NEW_LINE$—岗位维护费：§R+10%§!$NEW_LINE$—稳定度：§R-5%§!\n\n§L$no_lifetree_desc$§!"
+ concept_no_lifetree_desc: "$NEW_LINE$—行星基础设施建造速度：§R-50%§!$NEW_LINE$—岗位产出的资源：§R-25%§!$NEW_LINE$—岗位维护费：§R+10%§!$NEW_LINE$—稳定度：§R-5%§!\n\n§L$no_lifetree_desc$§!"
 
 # On the Shoulders of Giants
 
@@ -171,24 +174,24 @@
 
 
  concept_massive_crater: "$d_lithoid_crater$"
- concept_massive_crater_desc: "—['concept_lithoid_traits']效果：§G+50%§!\n—$MOD_PLANET_MAX_DISTRICTS_ADD$：§G+6§!\n—$mod_district_mining_max$：§G+6§!\n—$mod_district_farming_max$：§R-6§!\n—$MOD_POP_GROWTH_SPEED$：§G+25%§!\n\n§L$d_lithoid_crater_desc$§!"
+ concept_massive_crater_desc: "—['concept_lithoid_traits']效果：§G+50%§!\n—$MOD_PLANET_MAX_DISTRICTS_ADD$：§G+6§!\n—$mod_district_mining_max$：§G+6§!\n—$mod_district_farming_max$：§R-6§!\n—$MOD_LOGISTIC_GROWTH_MULT$：§G+25%§!\n\n§L$d_lithoid_crater_desc$§!"
 
  concept_buried_lithoids: "$d_buried_lithoids$"
- concept_buried_lithoids_desc: "—清理时间：£time£360§I天§!\n—清理花费：1000$i_minerals$\n—清理完成时：§G+1§!§I石质§!£pop£§I人口§!\n\n§L$d_buried_lithoids_desc$§!"
+ concept_buried_lithoids_desc: "—清理时间：£time£360§I天§!\n—清理花费：1000$i_minerals$\n—清理完成时：§G+100§!£pop£§I石质人口§!\n\n§L$d_buried_lithoids_desc$§!"
 
  concept_lithoid_crater: "$lithoid_crater$"
  concept_lithoid_crater_desc: "—非石质人口的宜居性：§R-50%§!\n\n§L$lithoid_crater_desc$§!"
 
  concept_experimental_crater: "$holding_experimental_crater$"
- concept_experimental_crater_desc: "—产出：£physics£ 4 £engineering£ 8\n—$MOD_MONTHLY_LOYALTY_GAIN$：§R-1§!\n—£mod_job_miner_add£['concept_miner', $job_miner$]岗位：§G+3§!\n—§Y警告：§!来袭的殖民“船”可能会发生§R爆炸§!\n\n§L$holding_experimental_crater_desc$§!"
+ concept_experimental_crater_desc: "—产出：£physics£ 4 £engineering£ 8\n—$MOD_MONTHLY_LOYALTY_GAIN$：§R-1§!\n—£mod_job_miner_add£['concept_miner', miner.GetName]岗位：§G+300§!\n—§Y警告：§!来袭的殖民“船”可能会发生§R爆炸§!\n\n§L$holding_experimental_crater_desc$§!"
 
 # Resource Consolidation
 
  concept_pc_machine: "$pc_machine$"
- concept_pc_machine_desc: "—基础宜居性：§Y0%§!\n—$mod_planet_jobs_produces_mult$：§G+10%§!\n—$MOD_POP_HOUSING_USAGE_MULT$：§G-10%§!\n—$MOD_PLANET_MAX_BUILDINGS_ADD$：§G+12§!\n—$mod_job_replicator_add$：§G+1§!\n—$MOD_PLANET_RESETTLEMENT_UNEMPLOYED_DESTINATION_MULT$：§G+50%§!\n\n§L$pc_machine_desc$§!"
+ concept_pc_machine_desc: "—基础宜居性：§Y0%§!\n—$mod_planet_jobs_produces_mult$：§G+10%§!\n—$MOD_POP_HOUSING_USAGE_MULT$：§G-10%§!\n—$MOD_PLANET_RESETTLEMENT_UNEMPLOYED_DESTINATION_MULT$：§G+50%§!\n\n§L$pc_machine_desc$§!"
 
  concept_malfunctioning_replicator_bay: "$d_resource_consolidation_1$"
- concept_malfunctioning_replicator_bay_desc: "—清理时间：\n$tt$—£time£360§I天§!\n—清理花费：\n$tt$—600$i_minerals$\n—£mod_job_replicator_add£['concept_replicator', $job_replicator$]岗位：§R-1§!\n—$MOD_PLANET_MAX_DISTRICTS_ADD$：§R-1§!\n\n§L$d_resource_consolidation_1_desc$§!"
+ concept_malfunctioning_replicator_bay_desc: "—清理时间：\n$tt$—£time£360§I天§!\n—清理花费：\n$tt$—600$i_minerals$\n—$MOD_PLANET_MAX_DISTRICTS_ADD$：§R-1§!\n\n§L$d_resource_consolidation_1_desc$§!"
 
  concept_consolidated_resources: "$d_machine_minerals$"
  concept_consolidated_resources_desc: "—产出：25$i_minerals$\n\n§L$d_resource_consolidation_1_desc$§!"
@@ -208,13 +211,13 @@
 # Progenitor Hive
 
  concept_spawning_pools: "$building_spawning_pool$"
- concept_spawning_pools_desc: "—£mod_job_spawning_drone_add£['concept_spawning_drone', $job_spawning_drone$]岗位：§G+1§!\n\n§L$building_spawning_pool_desc$§!"
+ concept_spawning_pools_desc: "—£mod_job_spawning_drone_add£['concept_spawning_drone', spawning_drone.GetName]岗位：§G+100§!\n\n§L$building_spawning_pool_desc$§!"
 
  concept_offspring_nests: "$building_offspring_nest$"
- concept_offspring_nests_desc: "—£mod_job_spawning_drone_add£['concept_offspring_drone', $job_offspring_drone$]岗位：§G+1§!\n\n§L$building_offspring_nest_desc$§!"
+ concept_offspring_nests_desc: "—£mod_job_spawning_drone_add£['concept_offspring_drone', $job_offspring_drone$]岗位：§G+100§!\n\n§L$building_offspring_nest_desc$§!"
 
  concept_offspring_holding: "$holding_offspring_nest$"
- concept_offspring_holding_desc: "—£mod_job_spawning_drone_add£['concept_offspring_feeder',$job_overlord_offspring_drone_feeder$]岗位：§G+1§!\n\n§L$holding_offspring_nest_desc$§!"
+ concept_offspring_holding_desc: "—£mod_job_spawning_drone_add£['concept_offspring_feeder', $job_overlord_offspring_drone_feeder$]岗位：§G+100§!\n\n§L$holding_offspring_nest_desc$§!"
 
  concept_insufficient_offspring_oversight: "子嗣监管不足"
  concept_insufficient_offspring_oversight_desc: "—$MOD_SHIP_MILITARY_SPEED_MULT$：§R-50§!\n—$MOD_OWNED_SHIP_EVASION_MULT$：§R-50%§!\n—$MOD_OWNED_SHIP_FIRE_RATE_MULT$：§R-50%§!\n—$MOD_OWNED_SHIP_ACCURACY_MULT$：§R-50%§!\n\n§L没有子嗣引导的舰队会变得组织混乱、效率低下。§!"
@@ -228,11 +231,10 @@
 # Subterranean
  concept_cave_dweller: "$trait_cave_dweller$"
  concept_robot_cave_dweller: "$trait_robot_cave_dweller$"
- concept_cave_dweller_desc: "—$MOD_HABITABILITY_FLOOR_ADD$：§G50%§!\n—$mod_planet_jobs_minerals_produces_mult$：§G+15%§!\n—$MOD_SPECIES_EMPIRE_SIZE_MULT$：§R+10%§!\n—$MOD_BIO_POP_GROWTH_SPEED$：§R-20%§!\n\n§L$trait_cave_dweller_desc$§!"
+ concept_cave_dweller_desc: "—$MOD_HABITABILITY_FLOOR_ADD$：§G50%§!\n—$mod_planet_jobs_minerals_produces_mult$：§G+15%§!\n—$MOD_SPECIES_EMPIRE_SIZE_MULT$：§R+10%§!\n—$MOD_BIO_LOGISTIC_GROWTH_MULT$：§R-20%§!\n\n§L$trait_cave_dweller_desc$§!"
  concept_robot_cave_dweller_desc: "—$MOD_HABITABILITY_FLOOR_ADD$：§G50%§!\n—$mod_planet_jobs_minerals_produces_mult$：§G+15%§!\n—$MOD_SPECIES_EMPIRE_SIZE_MULT$：§R+10%§!\n—$MOD_POP_ASSEMBLY_SPEED$：§R-20%§!\n\n§L$trait_robot_cave_dweller_desc$§!"
 
  mod_mining_district_housing_add: "矿业区产生的$MOD_PLANET_HOUSING_ADD$"
- mod_mining_district_buildings_add: "矿业区产生的$MOD_PLANET_MAX_BUILDINGS_ADD$"
 
 # Teachers of the Shroud
 
@@ -286,7 +288,7 @@
  concept_overtuned_traits_desc: "强夺天工特质提供比通常物种特质更强大的增益，代价是领袖预期寿命的降低。"
 
  concept_gene_tailoring: "$tech_gene_tailoring$"
- concept_gene_tailoring_desc: "—$species_trait_points_add$：§G+2§!\n—$i_unlocks_feature$$feature_modify_traits$\n—$i_unlocks_feature$$feature_pop_self_modification$\n\n§L$tech_gene_tailoring_desc$§!"
+ concept_gene_tailoring_desc: "- $i_unlocks_feature$ $feature_modify_traits$ \n- $i_unlocks_feature$ $feature_pop_self_modification$\n\n§L$tech_gene_tailoring_desc$§!"
 
  concept_damn_the_consequences: "$edict_damn_the_consequences$"
  concept_damn_the_consequences_desc: "—§I强夺天工§!特质的正面效果：§G+100%§!\n—$mod_planet_pops_organics_upkeep_mult$：§R+100%§!\n\n§L$edict_damn_the_consequences_desc$§!"
@@ -294,19 +296,20 @@
 # Knights of the Toxic God
 
  concept_order_keep: "$building_order_keep$"
- concept_order_keep_desc: "§R该建筑无法被移除或禁用！§!\n—£mod_planet_immigration_pull_add£$MOD_PLANET_IMMIGRATION_PULL_ADD$：§G+5§!\n—£mod_planet_resettlement_unemployed_destination_mult£$MOD_PLANET_RESETTLEMENT_UNEMPLOYED_DESTINATION_MULT$：§G+100%§!\n—£mod_job_knight_add£['concept_knight', $job_knight$]岗位：§G+2§!\n$t$—每10$pops_with_icon$：§G+1§!\n—£mod_job_squire_add£['concept_squire', $job_squire$]岗位：：§G+1§!\n\n§L$building_order_keep_desc$§!"
+ concept_order_keep_desc: "§R该建筑无法被移除或禁用！§!\n—£mod_planet_immigration_pull_add£$MOD_PLANET_IMMIGRATION_PULL_ADD$：§G+5§!\n—£mod_planet_resettlement_unemployed_destination_mult£$MOD_PLANET_RESETTLEMENT_UNEMPLOYED_DESTINATION_MULT$：§G+100%§!\n—£mod_job_knight_add£['concept_knight', knight.GetName]岗位：§G+200§!\n—£mod_job_squire_add£['concept_squire', squire.GetName]岗位：§G+100§!\n\n§L$building_order_keep_desc$§!"
 
  concept_orders_demesne: "$district_orders_demesne$"
- concept_orders_demesne_desc: "—£mod_planet_housing_add£$MOD_PLANET_HOUSING_ADD$：§G+4§!\n—£mod_pop_environment_tolerance£$MOD_POP_ENVIRONMENT_TOLERANCE$：§G+2.5%§!\n——£mod_job_squire_add£['concept_squire', $job_squire$]岗位：§G+3§!\n\n§L$district_orders_demesne_desc$§!"
+
+ concept_orders_demesne_desc: "—£mod_planet_housing_add£$MOD_PLANET_HOUSING_ADD$：§G+400§!\n—£mod_pop_environment_tolerance£$MOD_POP_ENVIRONMENT_TOLERANCE$：§G+2.5%§!\n——£mod_job_squire_add£['concept_squire', squire.GetName]岗位：§G+300§!\n\n§L$district_orders_demesne_desc$§!"
 
  concept_knight_commandery: "$holding_knight_commandery$"
- concept_knight_commandery_desc: "£mod_country_naval_cap_add£$MOD_COUNTRY_NAVAL_CAP_ADD$：§G+4§!\n£mod_job_knight_add£['concept_overlord_knight', $job_overlord_knight$]岗位：§G+1§!\n\n§L$holding_knight_commandery_desc$§!"
+ concept_knight_commandery_desc: "£mod_country_naval_cap_add£$MOD_COUNTRY_NAVAL_CAP_ADD$：§G+4§!\n£mod_job_knight_add£['concept_overlord_knight', $job_overlord_knight$]岗位：§G+100§!\n\n§L$holding_knight_commandery_desc$§!"
 
  concept_knights_quest: "$situation_toxic_knights$"
- concept_knights_quest_desc: "解锁£job_knight£§I$job_knight$§!岗位的强力修正以及§I$concept_toxic_features$§!。\n\n§L$situation_toxic_knights_desc$§!"
+ concept_knights_quest_desc: "解锁[knight.GetIcon]§I[knight.GetName]§!岗位的强力修正以及§I$concept_toxic_features$§!。\n\n§L$situation_toxic_knights_desc$§!"
 
  concept_order_jobs: "骑士团岗位"
- concept_order_jobs_desc: "$NEW_LINE$- ['concept_knight_commander', £job_knight_commander£ $job_knight_commander$] $NEW_LINE$- ['concept_knight', £job_knight£ $job_knight$]"
+ concept_order_jobs_desc: "$NEW_LINE$- ['concept_knight_commander', £job_knight_commander£ $job_knight_commander$] $NEW_LINE$- ['concept_knight', [knight.GetIcon] [knight.GetName]]"
 
  concept_toxic_features: "毒性行星特征"
  concept_toxic_features_desc: "$NEW_LINE$- ['concept_pools_most_venemous'] $NEW_LINE$- ['concept_pestilential_wasteland'] $NEW_LINE$- ['concept_deitys_swarms'] $NEW_LINE$- ['concept_blight_upon_the_land'] $NEW_LINE$- ['concept_envenomed_seas']"
@@ -334,7 +337,7 @@
  concept_pc_ocean_desc: "—基础宜居性：§Y0%§!\n\n§L$pc_ocean_desc$§!"
 
  concept_ocean_paradise_mod: "$ocean_paradise$"
- concept_ocean_paradise_mod_desc: "—$MOD_POP_HAPPINESS$：§G+15%§!\n—$MOD_POP_GROWTH_SPEED$：§G+10%§!\n—$mod_planet_jobs_produces_mult$：§G+5%§!\n\n§L$ocean_paradise_desc$§!"
+ concept_ocean_paradise_mod_desc: "—$MOD_POP_HAPPINESS$：§G+15%§!\n—$MOD_LOGISTIC_GROWTH_MULT$：§G+10%§!\n—$mod_planet_jobs_produces_mult$：§G+5%§!\n\n§L$ocean_paradise_desc$§!"
 
  concept_crystal_reef: "$d_crystal_reef$"
  concept_crystal_reef_desc: "—$mod_building_crystal_mines_max$：§G+2§!\n\n§L$d_crystal_reef_desc$§!"
@@ -353,28 +356,28 @@
  concept_planetary_government_desc: "- $i_unlocks_building$ $building_capital$\n- $i_unlocks_building$ $building_precinct_house$\n- $i_unlocks_building$ $building_bureaucratic_1$\n\n§L$tech_planetary_government_desc$§!"
 
  concept_corvettes: "$tech_corvettes$"
- concept_corvettes_desc: "—§I解锁舰船类型§!：$corvette$\n\n§L$tech_corvettes_desc$§!"
+ concept_corvettes_desc: "—§I$UNLOCKS_SHIP_TYPE$§!：$corvette$\n\n§L$tech_corvettes_desc$§!"
 
- concept_clinic: "$building_clinic$"
- concept_clinic_desc: "—£mod_job_healthcare_add£['concept_healthcare', $job_healthcare$]岗位：§G+2§!\n\n§L$building_clinic_desc$§!"
+ concept_clinic: "$building_medical_2$"
+ concept_clinic_desc: "—£mod_job_healthcare_add£['concept_healthcare', healthcare.GetName]岗位：§G+200§!\n\n§L$building_medical_2_desc$§!"
 
  concept_mineral_purification_plant: "$building_mineral_purification_plant$"
- concept_mineral_purification_plant_desc: "—£mod_job_miner_add£['concept_miner', $job_miner$]岗位：§G+1§!\n—£job_miner£$job_miner_plural$产出的£minerals£矿物：§G+1§!\n\n§L$building_mineral_purification_plant_desc$§!"
+ concept_mineral_purification_plant_desc: "—£mod_job_miner_add£['concept_miner', miner.GetName]岗位：§G+100§!\n—[miner.GetIcon][miner.GetNamePlural]产出的£minerals£矿物：§G+1§!\n\n§L$building_mineral_purification_plant_desc$§!"
 
  concept_energy_grid: "$building_energy_grid$"
- concept_energy_grid_desc: "—£mod_job_technician_add£['concept_technician', $job_technician$]岗位：§G+1§!\n—£job_technician£$job_technician_plural$产出的£energy£能量币：§G+1§!\n\n§L$building_energy_grid_desc$§!"
+ concept_energy_grid_desc: "—£mod_job_technician_add£['concept_technician', technician.GetName]岗位：§G+100§!\n—[technician.GetIcon][technician.GetNamePlural]产出的£energy£能量币：§G+1§!\n\n§L$building_energy_grid_desc$§!"
 
  concept_bureaucratic_1: "$building_bureaucratic_1$"
- concept_bureaucratic_1_desc: "—['concept_bureaucrat', $job_bureaucrat$]岗位：§G+2§!\n\n§L$building_bureaucratic_1_desc$§!"
+ concept_bureaucratic_1_desc: "—['concept_bureaucrat', bureaucrat.GetName]岗位：§G+200§!\n\n§L$building_bureaucratic_1_desc$§!"
 
  concept_commercial_zone: "$building_commercial_zone$"
- concept_commercial_zone_desc: "—['concept_clerk', $job_clerk$]岗位：§G+3§!\n\n§L$building_commercial_zone_desc$§!"
+ concept_commercial_zone_desc: "—['concept_clerk', clerk.GetName]岗位：§G+300§!\n\n§L$building_commercial_zone_desc$§!"
 
  concept_payback_unified_purpose: "$payback_unified_purpose$"
  concept_payback_unified_purpose_desc: "—$MOD_POP_HAPPINESS$：§G+15§!\n—$MOD_PLANET_AMENITIES_MULT$：§G+25%§!\n—$mod_planet_jobs_produces_mult$：§G+10%§!\n—['concept_unifier', $job_unifier$]岗位：§G+2%§!\n—在§I20§!年后过期\n\n§L$payback_unified_purpose_desc$§!"
 
  concept_advanced_infrastructure: "先进基础设施"
- concept_advanced_infrastructure_desc: "$NEW_LINE$—将['concept_bureaucratic_1', £building£ $building_bureaucratic_1$]和['concept_commercial_zone', £building£ $building_commercial_zone$]替换为：$TABBED_NEW_LINE$—['concept_clinic', £building£ $building_clinic$]$TABBED_NEW_LINE$—['concept_mineral_purification_plant', £building£ $building_mineral_purification_plant$]$TABBED_NEW_LINE$—['concept_energy_grid', £building£ $building_energy_grid$]"
+ concept_advanced_infrastructure_desc: "$NEW_LINE$—将['concept_bureaucratic_1', £building£ $building_bureaucratic_1$]和['concept_commercial_zone', £building£ $building_commercial_zone$]替换为：$TABBED_NEW_LINE$—['concept_clinic', £building£ $building_medical_2$]$TABBED_NEW_LINE$—['concept_mineral_purification_plant', £building£ $building_mineral_purification_plant$]$TABBED_NEW_LINE$—['concept_energy_grid', £building£ $building_energy_grid$]"
 
  concept_payback_debris_field: "$payback_debris_field$"
  concept_payback_debris_field_desc: "—$MOD_POP_ENVIRONMENT_TOLERANCE$：§R-30%§!\n—$mod_planet_structures_cost_mult$：§R+15%§!\n—$mod_planet_structures_upkeep_mult$：§R+50%§!\n—开始破坏度：§R33%§!\n\n§L$payback_debris_field_desc$§!"
@@ -393,31 +396,32 @@
 ##
 
  concept_angler: "$job_angler_plural$"
- concept_angler_desc: "$job_angler_plural$是一种产出$i_food$和$i_trade_value$的§I农民§!岗位。\n\n§L$job_angler_desc$§!"
+ concept_angler_desc: "$job_angler_plural$是一种产出$i_food$和$r_trade$的§I农民§!岗位。\n\n§L$job_angler_desc$§!"
 
  concept_pearl_diver: "$job_pearl_diver_plural$"
- concept_pearl_diver_desc: "$job_pearl_diver_plural$是一种将$i_food$和$i_minerals$转化为$i_consumer_goods$和$i_trade_value$的§I工匠§!岗位。\n\n§L$job_pearl_diver_desc$§!"
+ concept_pearl_diver_desc: "$job_pearl_diver_plural$是一种将$i_food$和$i_minerals$转化为$i_consumer_goods$和$r_trade$的§I工匠§!岗位。\n\n§L$job_pearl_diver_desc$§!"
 
  concept_hab_capital: "$building_hab_capital$"
- concept_hab_capital_desc: "—£mod_planet_housing_add£$MOD_PLANET_HOUSING_ADD$：§G+3§!\n—£amenities£$PLANET_AMENITIES_TITLE$：§G+3§!\n—£building£$MOD_PLANET_MAX_BUILDINGS_ADD$：§G+1§!\n—£mod_job_administrator_add£$job_politician$岗位：§G+1§!\n\n§L$building_hab_capital_desc$§!"
+
+ concept_hab_capital_desc: "—£mod_planet_housing_add£$MOD_PLANET_HOUSING_ADD$：§G+300§!\n—£amenities£$PLANET_AMENITIES_TITLE$：§G+300§!\n—£job_politician£$job_politician$岗位：§G+100§!\n\n§L$building_hab_capital_desc$§!"
 
  concept_hydroponics_farm: "$building_hydroponics_farm$"
- concept_hydroponics_farm_desc: "—£mod_job_farmer_add£$job_farmer$岗位：§G+2§!\n\n§L$building_hydroponics_farm_desc$§!"
+ concept_hydroponics_farm_desc: "—£mod_job_farmer_add£[farmer.GetName]岗位：§G+200§!\n\n§L$building_hydroponics_farm_desc$§!"
 
  concept_noble: "$job_noble_plural$"
  concept_noble_desc: "£job_noble£$job_noble_plural$将$i_consumer_goods$转化为['concept_unity', £unity£ $concept_unity$]、$i_amenities$和$i_stability$。\n\n§L$job_noble_desc$§!"
 
  concept_noble_estates: "$building_noble_estates$"
- concept_noble_estates_desc: "£mod_planet_housing_add£$MOD_PLANET_HOUSING_ADD$：§G+1§!\n£mod_job_noble_add£$mod_job_noble_add$：§G+1§!\n\n§L$building_noble_estates_desc$§!"
+ concept_noble_estates_desc: "£mod_planet_housing_add£$MOD_PLANET_HOUSING_ADD$：§G+100§!\n£mod_job_noble_add£$mod_job_noble_add$：§G+1§!\n\n§L$building_noble_estates_desc$§!"
 
  concept_noble_vacation_homes: "$holding_noble_vacation_homes$"
  concept_noble_vacation_homes_desc: "$holding_noble_vacation_homes_effect$\n\n§L$holding_noble_vacation_homes_desc$§!"
 
  concept_death_priest: "$job_death_priest$"
- concept_death_priest_desc: "$job_death_priest_plural$是一种将$i_consumer_goods$转化为['concept_unity', £unity£ $concept_unity$]、['concept_society_research', £society£ $concept_society_research$]和$i_amenities$的§I官员§!岗位\n\n§L$job_death_priest_desc$§!"
+ concept_death_priest_desc: "$job_death_priest_plural$是一种将$i_consumer_goods$转化为['concept_unity', £unity£$concept_unity$]、['concept_society_research', £society£$concept_society_research$]和$i_amenities$的§I官僚§!岗位\n\n§L$job_death_priest_desc$§!"
 
- concept_mortal_initiate: "$job_mortal_initiate_plural$"
- concept_mortal_initiate_desc: "$job_mortal_initiate_plural$是一种产出['concept_unity', £unity£ $concept_unity$]、['concept_society_research', £society£ $concept_society_research$]和$i_amenities$的§I官员§!岗位\n\n§L$job_mortal_initiate_desc$§!"
+ concept_mortal_initiate: "[mortal_initiate.GetNamePlural]"
+ concept_mortal_initiate_desc: "[mortal_initiate.GetNamePlural]是一种产出['concept_unity', £unity£$concept_unity$]、['concept_society_research', £society£$concept_society_research$]和$i_amenities$的§I官员§!岗位\n\n§L$job_mortal_initiate_desc$§!"
 
  concept_sacrificial_temple: "$building_sacrificial_temple_1$"
  concept_sacrificial_temple_desc: "£mod_job_death_priest_add£$mod_job_death_priest_add$：§G+1§!\n£mod_job_mortal_initiate_add£$mod_job_mortal_initiate_add$：§G+1§!\n£mod_ethic_attraction_mult£$mod_pop_ethic_spiritualist_attraction_mult$：§G+5%§!\n\n§L$building_sacrificial_temple_1_desc$§!"
@@ -430,8 +434,10 @@
 
 # Common Ground/Hegemony
 
+ # Singular: ['concept_federation'] or §H$concept_federation$§!
+ # Plural: -
  concept_federation: "联邦"
- concept_federation_desc: "联邦是由航天文明组成的超国家联盟。"
+ concept_federation_desc: "§H$concept_federation$§!是由航天文明组成的超国家联盟。\n\n指派£official£['concept_official']来协调外交事宜，§H$concept_federation$§!的稳定度和§H团结度§!就会提升，并将由此解锁§H联邦增益§!。"
 
  concept_common_ground_federation: "$concept_federation$"
  concept_common_ground_federation_desc: "$concept_federation_desc$\n\n联邦有多种不同的类型：\n—['concept_default_federation']\n—['concept_military_federation']\n—['concept_research_federation']\n—['concept_spiritualist_federation']\n—['concept_trade_federation']"
@@ -472,13 +478,13 @@
 # Necrophage
 
  concept_necrophage_elevation_chamber: "$building_necrophage_elevation_chamber$"
- concept_necrophage_elevation_chamber_desc: "—['concept_necro_apprentice', £mod_job_apprentice_add£ $job_necro_apprentice$]工作： §G+1-3§!$DOUBLE_NEW_LINE$§L等待转变者在升格之室中舒适地练习着仪式。§!"
+ concept_necrophage_elevation_chamber_desc: "—['concept_necro_apprentice', £mod_job_apprentice_add£ necro_apprentice.GetName]工作： §G+100~300§!$DOUBLE_NEW_LINE$§L等待转变者在升格之室中舒适地练习着仪式。§!"
 
- concept_necro_apprentice: "$job_necro_apprentice$"
- concept_necro_apprentice_desc: "—$job_necro_apprentice_plural$将£consumer_goods£§I$consumer_goods$§!和£food£§I$food$§!转化为£unity£§I$unity$§!和£mod_planet_amenities_add£§I$PLANET_AMENITIES_TITLE$§!$NEW_LINE$—每隔§I10§!年一次，$job_necro_apprentice_plural$将会在一场§I升格仪式§!中转化。$DOUBLE_NEW_LINE$§L$job_necro_apprentice_desc$§!"
+ concept_necro_apprentice: "[necro_apprentice.GetName]"
+ concept_necro_apprentice_desc: "—[necro_apprentice.GetNamePlural]将£consumer_goods£§I$consumer_goods$§!和£food£§I$food$§!转化为£unity£§I$unity$§!和£mod_planet_amenities_add£§I$PLANET_AMENITIES_TITLE$§!$NEW_LINE$—每隔§I10§!年一次的§I升格仪式§!中[necro_apprentice.GetNamePlural]将被转化。$DOUBLE_NEW_LINE$§L$job_necro_apprentice_desc$§!"
 
  concept_necrophage_trait: "$trait_necrophage$"
- concept_necrophage_trait_desc: "—$MOD_LEADER_LIFESPAN_ADD$：§G+80§! $NEW_LINE$- $MOD_POP_GROWTH_SPEED$：§R-75%§! $NEW_LINE$—$MOD_PLANET_POP_ASSEMBLY_ORGANIC_MULT$：§R-50%§! $NEW_LINE$—$mod_planet_pops_organics_food_upkeep_mult$：§G-50%§! $NEW_LINE$— $mod_planet_pops_organics_minerals_upkeep_mult$：§G-50%§!$NEW_LINE$—$mod_planet_pops_organics_energy_upkeep_mult$：§G-50%§!$NEW_LINE$—$mod_planet_jobs_ruler_produces_mult$：§G+5%§!$NEW_LINE$—$mod_planet_jobs_specialist_only_produces_mult$：§G+5%§!$NEW_LINE$—$mod_planet_jobs_worker_only_produces_mult$：§R-10%§!$NEW_LINE$—$trait_necrophage_gestalt_tooltip$$DOUBLE_NEW_LINE$§L$trait_necrophage_desc$§!"
+ concept_necrophage_trait_desc: "—$MOD_LEADER_LIFESPAN_ADD$：§G+80§! $NEW_LINE$- $MOD_LOGISTIC_GROWTH_MULT$：§R-75%§! $NEW_LINE$—$MOD_BONUS_POP_GROWTH_MULT$：§R-50%§! $NEW_LINE$—$mod_planet_pops_organics_food_upkeep_mult$：§G-50%§! $NEW_LINE$— $mod_planet_pops_organics_minerals_upkeep_mult$：§G-50%§!$NEW_LINE$—$mod_planet_pops_organics_energy_upkeep_mult$：§G-50%§!$NEW_LINE$—$mod_planet_jobs_ruler_produces_mult$：§G+5%§!$NEW_LINE$—$mod_planet_jobs_specialist_only_produces_mult$：§G+5%§!$NEW_LINE$—$mod_planet_jobs_worker_only_produces_mult$：§R-10%§!$NEW_LINE$—$trait_necrophage_gestalt_tooltip$$DOUBLE_NEW_LINE$§L$trait_necrophage_desc$§!"
 
 # Clone Army
 
@@ -486,12 +492,12 @@
  concept_clone_soldier_infertile_desc: "—$MOD_POP_GOVERNMENT_ETHIC_ATTRACTION$：§G+50%§!$NEW_LINE$—$MOD_LEADER_LIFESPAN_ADD$：§R-40§!$NEW_LINE$—$MOD_ARMY_DAMAGE_MULT$：§G+50%§!$NEW_LINE$—$genelock_trait_tooltip$$NEW_LINE$—$TRAIT_INFERTILE$$NEW_LINE$—$TRAIT_IMPROVES_LEADERS$$DOUBLE_NEW_LINE$§L$trait_clone_soldier_infertile_desc$§!"
 
  concept_cloning: "$tech_cloning$"
- concept_cloning_desc: "- $MOD_POP_GROWTH_SPEED$ §G+10%§!$DOUBLE_NEW_LINE$§L$tech_cloning_desc$§!"
+ concept_cloning_desc: "- $MOD_LOGISTIC_GROWTH_MULT$ §G+10%§!$DOUBLE_NEW_LINE$§L$tech_cloning_desc$§!"
  concept_gene_banks: "$tech_gene_banks$"
  concept_gene_banks_desc: "—§I解锁陆军：§!克隆人部队$DOUBLE_NEW_LINE$§L$tech_gene_banks_desc$§!"
 
  concept_clone_army_clone_vat: "$building_clone_army_clone_vat$"
- concept_clone_army_clone_vat_desc: "—国家上限：§I5§!$NEW_LINE$—$MOD_PLANET_POP_ASSEMBLY_ORGANIC_ADD$：§G+0-25§!$NEW_LINE$—$building_clone_army_clone_vat_effect_desc$$DOUBLE_NEW_LINE$§L$building_clone_army_clone_vat_desc$§!"
+ concept_clone_army_clone_vat_desc: "—国家上限：§I5§!$NEW_LINE$—$MOD_BONUS_POP_GROWTH$：§G+0-25§!$NEW_LINE$—$building_clone_army_clone_vat_effect_desc$$DOUBLE_NEW_LINE$§L$building_clone_army_clone_vat_desc$§!"
 
 # Broken Shackles
 
@@ -505,7 +511,7 @@
  concept_crashed_slaver_ship_broken_shackles_desc: "—最大['concept_district_crashed_slaver_ship', $district_crashed_slaver_ship_plural$]：§G+6§!\n\n§L$d_crashed_slaver_ship_desc$§!"
 
  concept_district_crashed_slaver_ship: "$district_crashed_slaver_ship$"
- concept_district_crashed_slaver_ship_desc: "—£housing£ $MOD_PLANET_HOUSING_ADD$：§G+4§!\n—£building£ $MOD_PLANET_MAX_BUILDINGS_ADD$：§G+0.75§!\n—£mod_job_broken_shackles_scavenger_add£['concept_broken_shackles_scavenger', $job_broken_shackles_scavenger$]岗位：§G+1§!\n\n§L$district_crashed_slaver_ship_desc$§!"
+ concept_district_crashed_slaver_ship_desc: "—£housing£ $MOD_PLANET_HOUSING_ADD$：§G+400§!\n—£building£ $MOD_PLANET_MAX_BUILDINGS_ADD$：§G+0.75§!\n—£mod_job_broken_shackles_scavenger_add£['concept_broken_shackles_scavenger', $job_broken_shackles_scavenger$]岗位：§G+1§!\n\n§L$district_crashed_slaver_ship_desc$§!"
 
  concept_broken_shackles_buildings: "飞船残骸"
  concept_broken_shackles_buildings_desc: "$NEW_LINE$—初始建筑被替换为：$TABBED_NEW_LINE$—['concept_low_tech_capital', £building£$concept_low_tech_capital$]$TABBED_NEW_LINE$—['concept_low_tech_admin_hub', £building£$concept_low_tech_admin_hub$]$TABBED_NEW_LINE$—['concept_low_tech_research_lab', £building£$concept_low_tech_research_lab$]$TABBED_NEW_LINE$—['concept_low_tech_scrap_refinery', £building£$concept_low_tech_scrap_refinery$]$TABBED_NEW_LINE$—['concept_low_tech_power_plant', £building£$concept_low_tech_power_plant$]$TABBED_NEW_LINE$—['concept_low_tech_farm', £building£$concept_low_tech_farm$]"
@@ -517,22 +523,22 @@
  concept_broken_shackles_digsite_desc: "§L$broken_shackles_desc$§!"
 
  concept_low_tech_scrap_refinery: "$building_low_tech_scrap_refinery$"
- concept_low_tech_scrap_refinery_desc: "—£mod_job_miner_add£['concept_low_tech_miner', $job_low_tech_miner$]岗位： §G+2§!\n—£mod_job_low_tech_laborer_add£['concept_low_tech_laborer', $job_low_tech_laborer$]岗位：§G+2§!\n\n§L$building_low_tech_scrap_refinery_desc$§!"
+ concept_low_tech_scrap_refinery_desc: "—£mod_job_miner_add£['concept_low_tech_miner', $job_low_tech_miner$]岗位： §G+200§!\n—£mod_job_low_tech_laborer_add£['concept_low_tech_laborer', $job_low_tech_laborer$]岗位：§G+200§!\n\n§L$building_low_tech_scrap_refinery_desc$§!"
 
  concept_low_tech_admin_hub: "$building_low_tech_admin_hub$"
- concept_low_tech_admin_hub_desc: "—£mod_job_low_tech_bureaucrat_add£['concept_low_tech_bureaucrat', $job_low_tech_bureaucrat$]岗位：§G+2§!\n\n§L$building_low_tech_admin_hub_desc$§!"
+ concept_low_tech_admin_hub_desc: "—£mod_job_low_tech_bureaucrat_add£['concept_low_tech_bureaucrat', $job_low_tech_bureaucrat$]岗位：§G+200§!\n\n§L$building_low_tech_admin_hub_desc$§!"
 
  concept_low_tech_power_plant: "$building_low_tech_power_plant$"
- concept_low_tech_power_plant_desc: "—£mod_job_technician_add£['concept_low_tech_technician', $job_low_tech_technician$]岗位：§G+2§!\n\n§L$building_low_tech_power_plant_desc$§!"
+ concept_low_tech_power_plant_desc: "—£mod_job_technician_add£['concept_low_tech_technician', $job_low_tech_technician$]岗位：§G+200§!\n\n§L$building_low_tech_power_plant_desc$§!"
 
  concept_low_tech_farm: "$building_low_tech_farm$"
- concept_low_tech_farm_desc: "—£mod_job_low_tech_farmer_add£['concept_low_tech_farmer', $job_low_tech_farmer$]岗位：§G+2§!\n\n\n§L$building_low_tech_farm_desc$§!"
+ concept_low_tech_farm_desc: "—£mod_job_low_tech_farmer_add£['concept_low_tech_farmer', $job_low_tech_farmer$]岗位：§G+200§!\n\n\n§L$building_low_tech_farm_desc$§!"
 
  concept_low_tech_capital: "$building_low_tech_capital$"
- concept_low_tech_capital_desc: "—£housing£$MOD_PLANET_HOUSING_ADD$：§G+4§!$NEW_LINE$—£amenities£$PLANET_AMENITIES_TITLE$：§G+7§!$NEW_LINE$—£building£$MOD_PLANET_MAX_BUILDINGS_ADD$：§G+1§!$NEW_LINE$—£mod_job_colonist_add£['concept_colonist', $job_colonist$]岗位：§G+2§!$NEW_LINE$—£mod_job_low_tech_warrior_add£['concept_low_tech_warrior', $job_low_tech_warrior$]岗位： §G+1§!\n\n§L$building_low_tech_capital_desc$§!"
+ concept_low_tech_capital_desc: "—£housing£$MOD_PLANET_HOUSING_ADD$：§G+4§!$NEW_LINE$—£amenities£$PLANET_AMENITIES_TITLE$：§G+7§!$NEW_LINE$—£building£$MOD_PLANET_MAX_BUILDINGS_ADD$：§G+1§!$NEW_LINE$—£mod_job_colonist_add£['concept_colonist', colonist.GetName]岗位：§G+200§!$NEW_LINE$—£mod_job_low_tech_warrior_add£['concept_low_tech_warrior', $job_low_tech_warrior$]岗位： §G+100§!\n\n§L$building_low_tech_capital_desc$§!"
 
  concept_low_tech_research_lab: "$building_low_tech_research_lab$"
- concept_low_tech_research_lab_desc: "—£mod_job_low_tech_researcher_add£['concept_low_tech_researcher', $job_low_tech_researcher$]岗位：§G+2§!\n\n§L$building_low_tech_research_lab_desc$§!"
+ concept_low_tech_research_lab_desc: "—£mod_job_low_tech_researcher_add£['concept_low_tech_researcher', $job_low_tech_researcher$]岗位：§G+200§!\n\n§L$building_low_tech_research_lab_desc$§!"
 
 # Fruitful Partnership
 
@@ -556,8 +562,11 @@
 
 # Riftworld
 
- concept_astral_rift: "$ASTRAL_RIFT$"
- concept_astral_rift_desc: "$ASTRAL_RIFTS$是一种异常的时空裂缝，从中会泄露维度间的物质。在研究了£physics£§Y$tech_rift_sphere$§!科技后可以用有科学家指挥的§Y科研船§!进行探索。"
+ # Singular: ['concept_astral_rift'] or §H$concept_astral_rift$§!
+ # Plural: ['concept_astral_rifts'] or §H$concept_astral_rifts$§!
+ concept_astral_rift: "星界裂隙"
+ concept_astral_rifts: "星界裂隙"
+ concept_astral_rift_desc: "§H$concept_astral_rifts$§!是一种异常的时空裂缝，会从中泄露维度间物质。在研究了£physics£§H$tech_rift_sphere$§!科技后可以用有科学官指挥的£science_ship£['concept_science_ships']进行探索。"
 
  concept_riftworld_digsite: "$riftworld_digsite$"
  concept_riftworld_digsite_desc: "在我们母星的远古撞击坑极深处探测到了异常的地震活动。地下声呐发现了一座前所未知的洞穴。"
@@ -572,10 +581,9 @@
  concept_storm_rider: "风暴骑士"
  concept_storm_rider_desc: "这些蛮勇的领袖以迎接一场宇宙风暴般度过一生！他们勇敢无畏，不过在担任内阁职位时能力却略显不足。"
 
-
 # Primal Calling
  concept_untamed_wilds_mod: "$untamed_wilds$"
- concept_untamed_wilds_mod_desc: "—$MOD_PLANET_MAX_DISTRICTS_ADD$：§R$@untamed_wilds_districts|0$§!\n—$mod_planet_jobs_unity_produces_mult$：§G+15%§!\n—['concept_ethic_based_jobs']：§G+1§!$TABBED_NEW_LINE$\t-每20$pops_with_icon$：§G+1§!\n\n§L$untamed_wilds_desc$§!"
+ concept_untamed_wilds_mod_desc: "—$MOD_PLANET_MAX_DISTRICTS_ADD$：§R$@untamed_wilds_districts|0$§!\n—$mod_planet_jobs_unity_produces_mult$：§G+15%§!\n—['concept_ethic_based_jobs']：§G+1§!$TABBED_NEW_LINE$\t—每§Y20§!£pop£§H人口§!：§G+1§!\n\n§L$untamed_wilds_desc$§!"
 
  concept_ethic_based_jobs: "放牧人岗位"
  concept_ethic_based_jobs_desc: "这些岗位依据帝国对太空兽群的态度产生。$TABBED_NEW_LINE$—['concept_wrangler', £job_wrangler£ $job_wrangler$]$TABBED_NEW_LINE$—['concept_rancher', £job_rancher£ $job_rancher$]$TABBED_NEW_LINE$—['concept_trophy_hunter', £job_trophy_hunter£ $job_trophy_hunter$]$TABBED_NEW_LINE$—['concept_animal_handler', £job_animal_handler£ $job_animal_handler$]$TABBED_NEW_LINE$—['concept_beastfighter', £job_beastfighter£ $job_beastfighter$]"
@@ -619,8 +627,11 @@
  concept_megastructure_grand_archive_desc: "—可以展示获得的['concept_specimen',样本]。\n—生态园容量：§G+$@grand_archive_vivarium_capacity$§!\n\n§L博物天枢可以保存及展示我们在整个银河中收集而来的最具有价值的文物。其中也预留了专门的生态园用于容纳、观察活体太空兽群。§!"
 
 # Beastmasters
+
+ # Singular: ['concept_beastport'] or §H$concept_beastport$§!
+ # Plural: -
  concept_beastport: "$sm_beastport$"
- concept_beastport_desc: "—替换['concept_hatchery']太空基地建筑\n—可以在使用$c_dna$克隆太空兽群之外建造民用舰船。"
+ concept_beastport_desc: "—替换['concept_hatchery']太空基地建筑\n—可以在使用£genetic_material£['concept_dna']克隆太空兽群之外建造民用舰船。"
 
  concept_xeno_geology_holomuseum: "$xeno_geology_holomuseum$"
  concept_xeno_geology_holomuseum_desc: "$xeno_geology_holomuseum_desc$"
@@ -628,3 +639,22 @@
  concept_aesthetic_wonders_holomuseum_desc: "$aesthetic_wonders_holomuseum_desc$"
  concept_galactic_history_holomuseum: "$galactic_history_holomuseum$"
  concept_galactic_history_holomuseum_desc: "$galactic_history_holomuseum_desc$"
+
+# Evolutionary Predators
+ concept_genetic_ascension: "基因飞升"
+ concept_genetic_ascension_desc: "演化的缺陷荼毒我们太久太久。重塑自我才能释放出基因的全部潜能。"
+
+ concept_mutation_ascension: "变异飞升"
+ concept_mutation_ascension_desc: "演化的缺陷荼毒我们太久太久。重塑自我才能释放出基因的全部潜能。"
+
+# Wilderness (overlapping with Environmentalist)
+ concept_natural_blocker: "天然障碍"
+ concept_natural_blocker_desc: "£blocker£['concept_blockers']是一类行星特征，包括：\n—$d_deep_sinkhole$\n—$d_quicksand_basin$\n—$d_active_volcano$\n—$d_mountain_range$\n—$d_dangerous_wildlife_blocker$\n—$d_dense_jungle$\n—$d_toxic_kelp$\n—$d_noxious_swamp$\n—$d_massive_glacier$"
+ concept_natural_blockers: "天然障碍"
+ concept_natural_blockers_desc: "$concept_natural_blocker_desc$"
+ concept_purity_ascension: "纯洁飞升"
+ concept_purity_ascension_desc: "$bio.20.a$"
+
+# Unplugged
+ concept_cybernetic_traits: "义体"
+ concept_cybernetic_traits_desc: "义体特质提供比通常物种特质更独特的增益，代价是花费额外的$r_energy$维护费。"

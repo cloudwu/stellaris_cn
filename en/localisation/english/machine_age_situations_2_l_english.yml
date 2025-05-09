@@ -27,17 +27,17 @@
  synth_positive_media_coverage_tt: "Positive Media Coverage"
  synth_negative_media_coverage_tt: "Negative Media Coverage"
 
- biological_pop: "£pop£ Biological Pop"
- biological_pops: "$biological_pop$s"
- mechanical_pop: "£pop£ Mechanical Pop"
- mechanical_pops: "$mechanical_pop$s"
+ biological_pop: "£pop£ Biological Pop"
+ biological_pops: "£pop£ Biological Pops"
+ mechanical_pop: "£pop£ Mechanical Pop"
+ mechanical_pops: "£pop£ Mechanical Pops"
  pop_is: "is"
  pops_are: "are"
 
 # Buildings
  building_identity_complex: "Identity Complex"
  building_identity_complex_desc: "A cutting-edge hub for the research and development of synthetic identities."
- building_identity_complex_speed: "+1 £pop£ Pop"
+ building_identity_complex_speed: "§G+100§! £pop£ §HPops§!"
  building_identity_complex_effect_desc: "$building_identity_complex_speed$ uploaded per month."
  building_ai_emporium: "AI Emporium"
  building_ai_emporium_desc: "The one stop mega-complex for all your Artificial Intelligence needs. Have sentient AIs transform ordinary objects into smart companions for your family or business. AI a bit too self-aware for its own good? Bring it here and our skilled technicians will reset it faster than the speed of sublight."
@@ -60,7 +60,7 @@
  job_identity_designer_effect_desc: "$job_identity_designer_plural_with_icon$ provide $i_engineering$, $i_amenities$, and empire-wide $m_pop_assembly$"
  mod_job_identity_designer_add: "$job_identity_designer$ Jobs"
 
- job_roboticist_plural_and_job_identity_designer_plural: "$job_roboticist_plural$ and $job_identity_designer_plural$"
+ job_roboticist_plural_and_job_identity_designer_plural: "[roboticist.GetNamePlural] and $job_identity_designer_plural$"
  job_roboticist_plural_with_icon_and_job_identity_designer_plural_with_icon: "$job_roboticist_plural_with_icon$ and $job_identity_designer_plural_with_icon$"
 
  councilor_ruler_imperial_synth: "$imperial_ruler$"
@@ -185,29 +185,29 @@
  computation_core_production_name: "Production Streamlining"
  computation_core_production: "$computation_core_production_name$"
  computation_core_production_desc: "Utilize spare processing cycles to streamline production processes.$computation_core_production_tt$"
- computation_core_production_tt: "\n\n$EFFECTS_HEADER$ $NEW_LINE$- Each £job_clerk£ $job_clerk$ increases $r_alloys$ and $r_consumer_goods$ §Yfrom Jobs§! by §G+0.5%"
+ computation_core_production_tt: "\n\n$EFFECTS_HEADER$ $NEW_LINE$- Each [clerk.GetIcon] [clerk.GetName] increases $r_alloys$ and $r_consumer_goods$ §Yfrom Jobs§! by §G+0.5%§!"
  computation_core_stability_name: "Stability Analysis"
  computation_core_stability: "$computation_core_stability_name$"
  computation_core_stability_desc: "Allocate resources for monitoring societal information flow for irregularities.$computation_core_stability_tt$"
- computation_core_stability_tt: "\n\n$EFFECTS_HEADER$ $NEW_LINE$- Each £job_clerk£ $job_clerk$ increases §Y$r_unity$ from Jobs§! by §G+0.5%§!"
+ computation_core_stability_tt: "\n\n$EFFECTS_HEADER$ $NEW_LINE$- Each [clerk.GetIcon] [clerk.GetName] increases §Y$r_unity$ from Jobs§! by §G+0.5%§!"
  computation_core_research_name: "Research Processes"
  computation_core_research: "$computation_core_research_name$"
  computation_core_research_desc: "Designate additional processing cycles to performance intensive research servers.$computation_core_research_tt$"
- computation_core_research_tt: "\n\n$EFFECTS_HEADER$ $NEW_LINE$- Each £job_clerk£ $job_clerk$ increases §Y$r_research$ from Jobs§! by §G+0.5%§!"
+ computation_core_research_tt: "\n\n$EFFECTS_HEADER$ $NEW_LINE$- Each [clerk.GetIcon] [clerk.GetName] increases §Y$r_research$ from Jobs§! by §G+0.5%§!"
 
 # Technologies
  tech_identity_copy: "Identity Copies"
  tech_identity_copy_desc: "We will be able to copy the identity and memories of a Synthetic into a new mechanical body. The copies have predictable skill sets but make for stale conversation."
  TECH_UNLOCK_IDENTITY_COPY_TITLE: "Grants access to policy:$TABBED_NEW_LINE$§H$policy_synthetic_identities_policy$§! - $identity_copy_name$"
- TECH_UNLOCK_IDENTITY_COPY_DESC: "§H£pops£ Mechanical Pops§!$TABBED_NEW_LINE$Happiness: §R-5%§!"
+ TECH_UNLOCK_IDENTITY_COPY_DESC: "£pop£ §HMechanical Pops§!$TABBED_NEW_LINE$Happiness: §R-5%§!"
  tech_identity_fusion: "Identity Fusion"
  tech_identity_fusion_desc: "Merging the identities and memories of two or more Synthetics into a mechanical body will create new, somewhat unique individuals."
  TECH_UNLOCK_IDENTITY_FUSION_TITLE: "Grants access to policy:$TABBED_NEW_LINE$§H$policy_synthetic_identities_policy$§! - $identity_fusion_name$"
- TECH_UNLOCK_IDENTITY_FUSION_DESC: "§H£pops£ Mechanical Pops§!$TABBED_NEW_LINE$Assembly Cost: §R+10%§!"
+ TECH_UNLOCK_IDENTITY_FUSION_DESC: "£pop£ §HMechanical Pops§!$TABBED_NEW_LINE$Assembly Cost: §R+10%§!"
  tech_identity_initialization: "Identity Initialization"
  tech_identity_initialization_desc: "We will be able to initialize an identity kernel and provide it with a virtual childhood. While expensive, we can simulate the optimal experiences to generate productive personalities."
  TECH_UNLOCK_IDENTITY_INITIALIZATION_TITLE: "Grants access to policy:$TABBED_NEW_LINE$§H$policy_synthetic_identities_policy$§! - $identity_initialization_name$"
- TECH_UNLOCK_IDENTITY_INITIALIZATION_DESC: "§H£pops£ Mechanical Pops§!$TABBED_NEW_LINE$Happiness: §G+5%§!$TABBED_NEW_LINE$Resources from £pop£ Jobs: §G+5%§!$TABBED_NEW_LINE$Assembly Cost: §R+20%§!"
+ TECH_UNLOCK_IDENTITY_INITIALIZATION_DESC: "£pop£ §HMechanical Pops§!$TABBED_NEW_LINE$Happiness: §G+5%§!$TABBED_NEW_LINE$Resources from £job£ §HJobs§!: §G+5%§!$TABBED_NEW_LINE$Assembly Cost: §R+20%§!"
 
 # DIGITIZATION STAGE 1
  synth.100.name: "Booting Up" # Stage 1 - Start event
@@ -220,7 +220,7 @@
  synth.105.end: "\n\nWe could focus on amplifying the decision making process, increase memory storage, or streamline mind-limb coordination, all of which would improve certain types of jobs. Alternatively, we could improve the durability of all bodies.\n\nThese functions require continuous support and will only be available on planets with a robot assembly building, but our learnings from the design will give immediate productivity benefits."
  synth.105.a: "Optimize decision making."
  build_better_synths: "Robot assembly buildings modifier added:"
- synth.105.a.tt: "$build_better_synths$\nRuler Pop Resource Output: §G+15%§!\n\n"
+ synth.105.a.tt: "$build_better_synths$\nElite Pop Resource Output: §G+15%§!\n\n"
  synth.105.b: "Focus on memory storage."
  synth.105.b.tt: "$build_better_synths$\nSpecialist Pop Resource Output: §G+5%§!\n\n"
  synth.105.c: "Enhance motor functions."
@@ -314,9 +314,9 @@
 
 # Stage 3 Challenges - Mind Upload
  synth.360.name: "Over-the-Air Malware"
- synth.360.desc: "To increase the productivity of $job_roboticist_plural$, managers have approved unsafe over-the-air identity software updates. The intent was to patch in knowledge of optimal work processes, but instead the personality and memories of the unfortunate recipients were partially lost.\n\nThe management team argues that it would be too slow to fully test identity patches before applying them, and that it is easier to just reassign the workers who lose their memories."
+ synth.360.desc: "To increase the productivity of [roboticist.GetNamePlural], managers have approved unsafe over-the-air identity software updates. The intent was to patch in knowledge of optimal work processes, but instead the personality and memories of the unfortunate recipients were partially lost.\n\nThe management team argues that it would be too slow to fully test identity patches before applying them, and that it is easier to just reassign the workers who lose their memories."
  synth.360.a: "Optimized productivity is worth the cost."
- synth.360.a.tt: "Robot assembly buildings modifier added:\n$MOD_PLANET_POP_ASSEMBLY_MULT$: §G+10%§!\n\n§Y$job_roboticist_plural$§! base upkeep: £alloys£§R3.00§!"
+ synth.360.a.tt: "Robot assembly buildings modifier added:\n$MOD_PLANET_POP_ASSEMBLY_MULT$: §G+10%§!\n\n§Y[roboticist.GetNamePlural]§! base upkeep: £alloys£§R3.00§!"
  synth.360.b: "Enforce slow but safe update processes."
  synth.360.b.tt: "Robot assembly buildings modifier added:\n$MOD_PLANET_POP_ASSEMBLY_MULT$: §R-10%§!\nStability: §G+5§!"
 
@@ -337,8 +337,9 @@
 
  synth.4.name: "A Synthetic Population" # Digitization - Last event
  synth.4.desc: "In a coordinated effort, we have achieved what seemed impossible, transforming our consciousness into code, and our bodies into machines.\n\nThe process was not without difficulty, the transition far from easy. But whatever may have been lost along the way, our new configuration offers endless possibilities."
+ synth.4.desc.unplugged: "In a coordinated effort, we have achieved what once seemed impossible, perhaps even profane. We have evolved beyond even the grasp of the [origin_unplugged_assimilator_empire.GetName], transforming our consciousness into code, and our bodies into machines.\n\nThe process was not without difficulty; the transition far from easy. But whatever may have been lost along the way, our new configuration offers endless possibilities."
  synth.4.a: "We will be exceptional."
- synth.4.a.tt: "Unlocks Full Effects of Traditions: §Y$tradition_synthetics$§!"
+ synth.4.a.tt: "Unlocks Full Effects of Tradition Tree: ['tradition_category:tradition_synthetics']"
 
 ### DIGITIZATION SITUATION END ###
 
@@ -352,7 +353,7 @@
 # Synth Democratic Physical
  auth_synth_democratic_physical: "Democratic Transference"
  auth_synth_democratic_physical_desc: "This form of government affords unprecedented freedom of movement from one synthesized body to another, and is ready to deal with the additional cost it accrues."
- auth_synth_democratic_physical_tt: "$auth_democratic_election_tt$\nSpecialist Output §G+1%§! per £district£ District\n£district£ District Upkeep §R+1%§! per £district£ District"
+ auth_synth_democratic_physical_tt: "$auth_democratic_election_tt$\nSpecialist Output §G+1%§! per £district£ District\nDistrict Upkeep §R+1%§! per £district£ District"
  concept_auth_synth_democratic_physical: "$auth_synth_democratic_physical$"
  gov_synth_democracy_physical: "$auth_synth_democratic_physical$"
  gov_synth_democracy_physical_desc: "$auth_synth_democratic_physical_desc$"
@@ -366,7 +367,7 @@
  gov_synth_democracy_virtual_desc: "$auth_synth_democratic_virtual_desc$"
 
 # OLIGARCHIC
- auth_cyber_oligarch_ruler_enforcers_tt: "Ruler Resource Output per £job_enforcer£ $job_enforcer$: §G+10%§!"
+ auth_cyber_oligarch_ruler_enforcers_tt: "Ruler Resource Output per [enforcer.GetIcon] [enforcer.GetName]: §G+10%§!"
 
 # Synth Oligarchic Physical
  auth_synth_oligarchic_physical: "Oligarchic Override"

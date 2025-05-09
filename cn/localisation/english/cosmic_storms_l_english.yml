@@ -39,8 +39,8 @@
  solar_storm_tt: "—$solar_storm$将揭示所有在受影响星系内的舰队。"
  electric_storm_fleet_tt: "—$MOD_SHIP_SHIELD_REGEN_ADD_PERC$对舰船和空间站§R禁用§!。\n—舰船和空间站每月遭受§R$@storm_monthly_dmg_low|0$§!$MOD_SHIP_SHIELD_ADD$伤害。"
  particle_storm_fleet_tt: "—$MOD_SHIP_HULL_REGEN_ADD_PERC$、$MOD_SHIP_ARMOR_REGEN_ADD_PERC$和$MOD_SHIP_SHIELD_REGEN_ADD_PERC$对舰船和空间站§R禁用§!。\n—拥有$@storm_hp_perc_limit|0Y%$$HITPOINTS$的舰船和空间站每月遭受§R$@storm_monthly_dmg_low|0$§!伤害。\n—$@storm_hp_perc_limit|0Y%$$HITPOINTS$以下的舰船产出§G+$@particle_storm_unity_per_ship|0$§!£unity£$unity$。"
- gravity_storm_consumer_goods_upkeep_tt: "非格式塔意识拥有的殖民地：\n$t$£job_farmer£[GetFarmerPlural]、£job_miner£[GetMinerPlural]以及£job_technician£[GetTechnicianPlural]$r_consumer_goods$维护费：§R+1§!"
- gravity_storm_energy_upkeep_tt: "格式塔意识拥有的殖民地：\n$t$£job_farmer£[GetFarmerPlural]、£job_miner£[GetMinerPlural]以及£job_technician£[GetTechnicianPlural]$r_energy$维护费：§R+1§!"
+ gravity_storm_consumer_goods_upkeep_tt: "非格式塔意识拥有的殖民地：\n$t$[farmer.GetIcon][GetFarmerPlural]、[miner.GetIcon][GetMinerPlural]以及[technician.GetIcon][GetTechnicianPlural]$r_consumer_goods$维护费：§R+1§!"
+ gravity_storm_energy_upkeep_tt: "格式塔意识拥有的殖民地：\n$t$[farmer.GetIcon][GetFarmerPlural]、[miner.GetIcon][GetMinerPlural]以及[technician.GetIcon][GetTechnicianPlural]$r_energy$维护费：§R+1§!"
  gravity_storm_ship_tt: "—§R每舰船尺寸$@gravity_storm_dmg_malus|1%$§!$MOD_SHIP_WEAPON_DAMAGE$。"
  nexus_storm_fleet_tt: "—§R禁用§!舰船和空间站的$MOD_SHIP_HULL_REGEN_ADD_PERC$，$MOD_SHIP_ARMOR_REGEN_ADD_PERC$和$MOD_SHIP_SHIELD_REGEN_ADD_PERC$。\n—每月对舰船和空间站造成高于$@storm_hp_perc_limit|0Y%$ $HITPOINTS$的§R$@storm_monthly_dmg_high|0$§!伤害。"
  shroud_storm_ship_evasion_modifier_tt: "—帝国突破过§Y天幕§!后§G+$@shroud_storm_evasion|0%$§!$MOD_SHIP_EVASION_MULT$"
@@ -197,8 +197,8 @@
 
  building_adakkaria_patriotic_institute: "爱国庆典学院"
  building_adakkaria_patriotic_institute_desc: "$building_adakkaria_patriotic_institute$是对情感状况有着先进见解的宝库。在这里，我们让我们的人民在抵御公约残酷的诱惑之歌时能够在内心培育风暴。"
- building_adakkaria_patriotic_institute_effect_desc: "每当宇宙风暴经过该星系，就有10%的可能让一个£pop£获得$Name_Storm_Fused$特质"
- building_adakkaria_patriotic_institute_effect_upgrade_desc: "每当宇宙风暴经过该星系，就有40%的可能让一个£pop£获得$Name_Storm_Fused$特质。此外，每过10年，就有20%的可能有一个£pop£化为宇宙风暴。"
+ building_adakkaria_patriotic_institute_effect_desc: "每当宇宙风暴经过该星系，就有10%的概率让£pop£§H人口§!获得$Name_Storm_Fused$特质"
+ building_adakkaria_patriotic_institute_effect_upgrade_desc: "每当宇宙风暴经过该星系，就有40%的概率让£pop£§H人口§!获得$Name_Storm_Fused$特质。此外，每过10年，就有20%的可能有§Y100§!£pop£§H人口§!化为宇宙风暴。"
 
  building_astrometeorology_observation_center: "星际气象观测台"
  building_astrometeorology_observation_center_desc: "借助精密的传感器，该观测中心研究不同的气象环境，进而加深我们对自然宇宙的理解。"
@@ -220,12 +220,14 @@
  sm_storm_repelling_computer_desc: "这组高能激光发射阵列能够产生高电荷磁性粒子组成的口袋，产生对宇宙风暴的排斥力。"
 
 # Jobs
+ astrometeorologist: "$job_astrometeorologist$"
  job_astrometeorologist: "星际气象学家"
  job_astrometeorologist_plural: "星际气象学家"
  job_astrometeorologist_desc: "$job_astrometeorologist_plural$擅长研究宇宙层面的环境影响。"
- job_astrometeorologist_effect_desc: "$job_astrometeorologist_plural_with_icon$将$r_consumer_goods$转化为$r_research$\n\n当前星系存在§Y环境影响§!时岗位产出将提高"
+ job_astrometeorologist_effect_desc: "$job_astrometeorologist_plural_with_icon$将$r_consumer_goods$转化为$r_physics$\n\n当前星系存在§Y环境影响§!时岗位产出将提高"
  job_astrometeorologist_with_icon: "£job_astrometeorologist£ $job_astrometeorologist$"
  job_astrometeorologist_plural_with_icon: "£job_astrometeorologist£ $job_astrometeorologist_plural$"
+ physicist_is_astrometeorologist_tt: "£job_physicist£$job_physicist_plural$转化为$job_astrometeorologist_plural_with_icon$"
  job_astrometeorologist_hive: "$job_astrometeorologist$工蜂"
  job_astrometeorologist_hive_plural: "$job_astrometeorologist$工蜂"
  job_astrometeorologist_hive_desc: "这些研究型工蜂专精于观测并记录宇宙风暴的影响。"
@@ -239,12 +241,21 @@
  job_astrometeorologist_machine_with_icon: "£job_astrometeorologist_machine£ $job_astrometeorologist_machine$"
  job_astrometeorologist_machine_plural_with_icon: "£job_astrometeorologist_machine£ $job_astrometeorologist_machine_plural$"
 
+ storm_dancer: "$job_storm_dancer$"
  job_storm_dancer: "风暴舞者"
  job_storm_dancer_plural: "风暴舞者"
  job_storm_dancer_desc: "$job_storm_dancer$的工作不只是表演那么简单，他们是在具现化风暴的本质。"
  job_storm_dancer_effect_desc: "$job_storm_dancer_plural$将$r_consumer_goods$转化为$r_unity$和$r_amenities$"
  job_storm_dancer_with_icon: "£job_storm_dancer£ $job_storm_dancer$"
  job_storm_dancer_plural_with_icon: "£job_storm_dancer£ $job_storm_dancer_plural$"
+
+ storm_duelist: "$job_storm_duelist$"
+ job_storm_duelist: "风暴决斗者"
+ job_storm_duelist_plural: "风暴决斗者"
+ job_storm_duelist_desc: "风暴决斗者以狂暴的舞蹈和雷霆般的战斗来引导凶猛风暴，将武艺和仪式在竞技场里结合起来。"
+ job_storm_duelist_effect_desc: "$job_storm_duelist_plural$将$r_consumer_goods$转化为$r_unity$$r_amenities$和£mod_country_naval_cap_add£§Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!"
+ job_storm_duelist_with_icon: "£job_storm_duelist£ $job_storm_duelist$"
+ job_storm_duelist_plural_with_icon: "£job_storm_duelist£ $job_storm_duelist_plural$"
 
 # Triggers
  count_system_within_storm_trigger: "风暴中的星系数$CONDITIONS$$IS_NOT$$COMPARATOR$$NUM|Y$"
@@ -269,6 +280,7 @@
  mod_planet_astrometeorologists_produces_mult: "£job_astrometeorologist£[GetAstrometeorologistPlural]产出"
  mod_planet_buildings_storm_tech_upkeep_mult: "风暴建筑维护费"
 
+ NAME_adakkaria: "阿达卡利亚"
  patriotic_institute_true_potential_unleashed: "阿达卡利亚的真正潜力"
  patriotic_institute_true_potential_unleashed_desc: "阿达卡利亚背后的真相带给了我们情感净化。"
  storm_hunkered_down_modifier: "严阵以待"
@@ -285,7 +297,7 @@
  decision_stop_hunker_down_desc: "既然宇宙风暴已经离去，我们也不用一直提心吊胆了。不过一切真能恢复“正常”吗？"
  decision_cultivated_worldscaping: "星球塑造"
  decision_cultivated_worldscaping_desc: "让我们将这颗星球塑造成一场完美对称的盛典吧。如此纯粹的几何地景能带来内心的宁静。"
- decision_cultivated_worldscaping_natural_blockers_fail_tt: "必须要先清除所有障碍地块£blocker£"
+ decision_cultivated_worldscaping_natural_blockers_fail_tt: "§R必须要先清除所有障碍地块£blocker£§!"
 
 # Civics
  civic_astrometeorology: "星际气象研究"
@@ -302,15 +314,15 @@
 
  civic_astrometeorology_megacorp: "气象开发"
  civic_astrometeorology_megacorp_desc: "环境效应不是可以开发的免费资源，那还能是什么呢？这家巨型企业专门从星际气候现象中获取尽可能多的知识，并将其出售给出价最高的人。"
- civic_astrometeorology_megacorp_effect_tooltip: "$civic_astrometeorology_effect_tooltip$"
+ civic_astrometeorology_megacorp_effect_tooltip: "$civic_astrometeorology_effect_tooltip$\n- The £building£ §Y$building_private_research_initiative$§! $megacorp_civic_branch_office_building_effect$"
 
  civic_storm_callers: "风暴热忱"
  civic_storm_callers_desc: "自古以来，这个社会能够用仪式来召唤风暴。年复一年，他们不停地运用科技创新提高仪式的效率。而随着太空时代到来，他们得以将这一知识运用与于群星之间。"
- civic_storm_callers_effect_tooltip: "- $AVAILABLE_BUILDINGS$ £building£ ['building:building_storm_summoning_theater']\n- $SPECIES_TRAITS$ ['trait:trait_storm_touched']"
+ civic_storm_callers_effect_tooltip: "—$AVAILABLE_BUILDINGS$£building£['building:building_storm_summoning_theater']\n—将[entertainer.GetIcon]§H[entertainer.GetName]§!替换为£job_storm_dancer£§H$job_storm_dancer$§!岗位\n—$SPECIES_TRAITS$['trait:trait_storm_touched']"
 
  civic_storm_callers_megacorp: "风暴艺人"
  civic_storm_callers_megacorp_desc: "这家庞大的媒体集团起初只是一个对神圣仪式的进行简单广播的组织，后来先知和祭司的位置被魅力非凡的艺人所取代，他们都在吸引宇宙风暴这一赛道上争奇斗艳。"
- civic_storm_callers_megacorp_effect_tooltip: "$civic_storm_callers_effect_tooltip$"
+ civic_storm_callers_megacorp_effect_tooltip: "$civic_storm_callers_effect_tooltip$\n—£building£§Y$building_amusement_megaplex$§!企业建筑额外产生§Y分部价值§!并为我们的首都增加§G+50§!个£job_merchant£§Y商人§!职位。"
 
  mod_capital_storm_diplo_weight_mult: "$MOD_DIPLO_WEIGHT_MULT$首都受到§Y宇宙风暴§!影响时"
  storm_devotion_diplo_weight_modifier: "$civic_storm_callers$"
@@ -319,8 +331,8 @@
  civic_environmental_architects: "行星塑造师"
  civic_environmental_architects_desc: "在经过亿万年精心培养其母星上的完美平衡之后，这个社会已经准备好面对宇宙中那些最不宜居的环境。人们内心坚信，自然世界可以被塑造，控制，并臻于完美。这不是驯化环境，而是为了追求完美。"
 
- civic_environmental_architects_negative_effect_tooltip: "—$HOMEWORLD$开始时拥有两个£blocker£§Y天然障碍§!"
- civic_environmental_architects_effect_start: "—$ADDITONAL_TECHNOLOGIES_STRING$用来移除母星上的£blocker£§Y天然障碍§!£society£§Y科技§!\n—移除£blocker£§Y天然障碍§!的£society£§Y科技§!将作为§Y额外研究选项§!在进行殖民时出现。\n—§Y掌控自然§!飞升特典替换为§Y$decision_cultivated_worldscaping$§!行星决议\n—在已殖民的行星上每个£blocker£§Y天然障碍§!："
+ civic_environmental_architects_negative_effect_tooltip: "—$HOMEWORLD$开始时拥有两个£blocker£§H天然障碍§!"
+ civic_environmental_architects_effect_start: "—$ADDITIONAL_TECHNOLOGIES_STRING$用来移除§H母星§!上£blocker£['concept_natural_blockers']的£society£§H科技§!\n—移除£blocker£§H天然障碍§!的£society£§H科技§!将作为§H永久研究选项§!在进行殖民时出现。\n—§H掌控自然§!['concept_ascension_perk']替换为§H$decision_cultivated_worldscaping$§!行星['concept_decision']\n—在已殖民的£planet£['concept_planets']上每个£blocker£§H天然障碍§!："
 
  civic_environmental_architects_effect_tooltip: "$civic_environmental_architects_effect_start$\n$t$—岗位产出的资源：§R-10%§!\n$t$—人口增长速度：§R-10%§!\n$t$—人口维护费：§R+15%§!"
 
@@ -334,7 +346,7 @@
 
  civic_environmental_architects_megacorp: "地质工程公司"
  civic_environmental_architects_megacorp_desc: "这家巨型企业的员工们习惯居住在镀金笼子之中。因此，不论他们走到哪，哪都得变成镀金笼子。"
- civic_environmental_architects_megacorp_effect_tooltip: "$civic_environmental_architects_effect_tooltip$"
+ civic_environmental_architects_megacorp_effect_tooltip: "$civic_environmental_architects_effect_tooltip$\n- The £building£ §Y$building_executive_retreat$§! $megacorp_civic_branch_office_building_effect$"
 
 #Edicts
  edict_auto_hunker_down: "严备协议"
@@ -382,10 +394,10 @@
 # Traits
  trait_storm_touched: "风暴之触"
  trait_storm_touched_desc: "置身宇宙风暴中，填补$trait_storm_touched$虔诚的内心。"
- trait_storm_touched_modifier_tooltip: "处于§Y$default_storm$§!中时：$TABBED_NEW_LINE$$mod_planet_jobs_produces_mult$：§G+10%§!$TABBED_NEW_LINE$舒适度使用：§G-10%§!"
+ trait_storm_touched_modifier_tooltip: "处于§Y$default_storm$§!中时：$TABBED_NEW_LINE$$MOD_POP_BONUS_WORKFORCE_MULT$：§G+10%§!$TABBED_NEW_LINE$舒适度使用：§G-10%§!"
  trait_storm_fused: "风暴交融"
  trait_storm_fused_desc: "风暴交融者在努力悟道的过程中学会了构建心中的小风暴。"
- trait_storm_fused_modifier_tooltip: "在§Y$default_storm$§!中时：\n$mod_planet_jobs_produces_mult$：§G+10%§!\n$MOD_POP_HAPPINESS$：§G+5%§!"
+ trait_storm_fused_modifier_tooltip: "在§Y$default_storm$§!中时：\n$MOD_POP_BONUS_WORKFORCE_MULT$：§G+10%§!\n$MOD_POP_HAPPINESS$：§G+5%§!"
 
 ######################################
 ### Galactic Community Resolutions ###
@@ -398,7 +410,7 @@
  storm_tech_draw_chance: "$storm_tech$研究选项几率："
  storm_tech_draw_guaranteed: "§G必定出现§!$storm_tech_draw_chance$"
  unity_from_storms: "每个受到§Y$default_storm$§!的星系产生的$r_unity$："
- output_from_storm_protection_buildings: "§Y宇宙风暴抵抗产出建筑§!带来的£job_farmer£[GetFarmerPlural]、£job_miner£[GetMinerPlural]和£job_technician£[GetTechnician]的产出："
+ output_from_storm_protection_buildings: "§Y宇宙风暴抵抗产出建筑§!带来的[farmer.GetIcon][GetFarmerPlural]、[miner.GetIcon][GetMinerPlural]和[technician.GetIcon][GetTechnician]的产出："
  breach_galactic_law: "§R违反银河法§!"
  breach_galactic_law_intro: "使用下列条目将$breach_galactic_law$："
  emergency_fund_contribution: "每月§Y应急经费§!贡献提升至："
@@ -548,6 +560,7 @@
  STORMS_ANOM_STAT_DESC: "轨道上的这个物体是途经的宇宙风暴带来的。它看上去像是一座空间站，但是对其结构组成的扫描结果却有点令人费解。我们建议对此开展调查。"
  cstorms.5030.name: "静滞启示录"
  cstorms.5030.desc: "[Root.Owner.GetScientistPluralCapital]报告称这个空间站的大部分是由常见的固定材料建成的，这些物质勉强维持着空间站不至于散架。随着我们深入这座结构，构成空间站的物质从金属合金过渡成了塑料等其他材料。\n\n在空间站的核心处，我们发现了一台机器正在高效运转，它不断地拆解有机原料并将其转化为我们之前见到的东西。\n\n在运行DNA模拟模型后，我们的[Root.Owner.GetScientistPlural]只能得出结论，这些原料可能是空间站的前住民。"
+ cstorms.5030.evopred: "看看我们能发现些什么。"
 
  STORMS_ANOM_BRAIN: "存在主义耗散"
  STORMS_ANOM_BRAIN_DESC: "自从一场$shroud_storm$肆虐该星系后，我们就开始不断收到一些奇怪的信号。然而，当我们的[Root.Owner.GetScientistPlural]想要回应这些呼叫时，信号又中断了。科学家们建议派出一艘科研船进行调查。"
@@ -577,6 +590,7 @@
  cstorms.5050.name: "偏航旅者"
  cstorms.5050.desc: "我们已经确定了§H[from.solar_system.GetName]§!中遇险信号的来源，那一艘严重受损但仍在运作的商船。\n\n乘员声称他们被§H[from.GetAffectedStormType]§!撞离了航线很远。风暴也烧毁了他们的引擎，让飞船和里面的东西滞留在我们的空间里。\n\n如果我们能帮忙的话，他们愿意交出一部分货物。"
  cstorms.5050.a: "同意帮助他们。"
+ cstorms.5050.evopred: "我们可以提供帮助换取一些基因样品。"
  cstorms.5050.b: "祝他们好运。"
  cstorms.5050.c.genocide: "夺走他们的生命以及货物。"
  cstorms.5050.d.devouring_swarm: "免费的大餐。"
@@ -607,6 +621,7 @@
  FORENSIC_DISSECTION_PROJECT_DESC: "我们在§H[solar_system.GetName]§!发现了被宇宙风暴夹带着穿越星系的某种未知生物的遗骸。对待这具遗骸进行法医鉴定可以揭示更多信息。"
  cstorms.5085.name: "$FORENSIC_DISSECTION_PROJECT$"
  cstorms.5085.desc: "经过了谨慎的解剖，这团肉块究竟属于什么物种仍是个谜。在风暴中心遭受的巨大破坏使它失去了一切可供识别的特征和遗传标记。\n\n然而，在这项研究的过程中，我们获得了对§Y宇宙风暴§!组成的洞见，了解了其对外星生物质的破坏性影响。"
+ cstorms.5085.evopred: "迷人的一餐。"
 
  STORMS_DISPLACED_TIYANKI: "走失的天凯"
  STORMS_DISPLACED_TIYANKI_DESC: "我的探测器从$default_storm$的余波中在§H[solar_system.GetName]§!发现了三个天凯信号。"
@@ -724,6 +739,7 @@
  cstorms.1500.desc: "这只生物自被发现以来就展现出极大的影响力，激发了我们的爱意和投喂欲。四只鼓起的泡泡般的眼睛展现着它的纯真，吸引所有人前来撸它那柔顺如云的毛发。它似乎很亲近[Root.GetLeaderName]，大部分时间都呆在[Leader.GetHisHer]的膝盖上，享受着[Leader.GetHisHer]的宠爱，没有展现出任何攻击或是危险动作，就好像是被特意设计成这副无害的模样。\n\n尽管如此，一些人质疑，在未经事先批准的情况下，将一种以前未发现的生物留在船上是不负责任的。[Root.GetLeaderName]则保证它大概率是安全的，但也认可需要进行正式调查。"
  cstorms.1500.a: "调查清楚它到底是什么。"
  cstorms.1500.b: "否决请求，将其处理掉。"
+ cstorms.1500.evopred: "请求被拒绝。吃了它。"
  project_cosmic_storms_but_they_are_cute: "生物奇迹"
  project_cosmic_storms_but_they_are_cute_DESC: "我们的一艘科研船上出现了一种特别有趣、非常可爱的动物。我们要先进行调查，再行决定要不要留下它。"
  cstorms.1505.name: "生物奇迹"
@@ -736,6 +752,7 @@
  cstorms.1515.name: "咕咕的结局"
  cstorms.1515.desc: "鉴于这只动物的身体不同寻常并且明显经过基因改造，我们不能把它留在科学船上。它很有可能给船员带来负面影响，而且说不定它的主人什么时候就突然愤怒现身要求我们归还。决定执行得迅速且仁慈，在一瞬间，它那柔和的“咕咕”声就此永远消失了。\n\n这个决定尽管情有可原，但还是引发了[Root.GetLeaderName]和船员的抗拒。他们还需要一些时间来平复失去这只可爱奇异动物的悲痛。"
  cstorms.1515.a: "别无选择。"
+ cstorms.1515.evopred: "保存一些基因样品吧。"
  cstorms.1520.name: "咕咕的结局？"
  cstorms.1520.desc: "处理掉这只可爱动物之后，事情没有就此结束，它出色的再生能力似乎超出了我们的预期。\n\n在它死亡后不久，从那显然毫无生机的组织中诞生了两个完全相同的生物。即使杀死它们母体的人就是我们，这些新生的生命体也没有表现出任何攻击性。\n\n我们决定就此打住，而不是冒险创造出一支咕咕大军。[Root.GetLeaderName]和船员们对能够留下这对生物感到非常高兴。"
  cstorms.1520.a: "一次教训。"
@@ -990,6 +1007,7 @@
 #Hyperlane Detailer - Secrets Of Inetian Traders Reward
  sm_hyperlane_detailer: "超空间航道推销"
 
+ NAME_inetian: "因内特贸易体"
 ###########################################
 # The adAkkaria Convention of Benevolence #
 ###########################################
@@ -1069,11 +1087,11 @@
  cstorms.2165.desc.intro: "对这具冰冻尸体上铭牌的翻译表明他是一位叫做§S阿拉塔·蓝迪尔§!的阿达卡利亚人。和在[planet_windswept_fates.GetName]上发现的尸体类似，他在死亡前，若干附肢也被通过外科手术移除。然而，即便如此，这具遗体也遭受了严重的灼伤。他的躯干呈现出受过极热伤害的迹象、以及缓慢而必然痛苦的恢复过程。\n\n我们的科学家们得出了一个不幸的结论，这些伤口类似从非自愿的参与者身上挖取信息的[Root.Owner.GetPreFTLLowerPlural]方法有令人不安的相似之处。这究竟是一名身经百战的军人，还是他遇到了更险恶的事情？"
  cstorms.2165.desc.def: "$cstorms.2165.desc.intro$\n\n就在我们辨别清这些伤口的性质后没多久，舰船上的仪表突然发生了一次剧烈的能量波动，[Root.GetLeaderName]尖叫了起来。\n\n好一阵子之后，[Leader.GetHeShe]把刚才这段经历描述为强烈的光线灼烧感，然后是一阵毁灭性的痛苦。好像有什么东西想要由内而外撬开[Leader.GetHerHis]的头脑一般。"
  cstorms.2165.desc.psio: "$cstorms.2165.desc.intro$\n\n就在我们辨别清这些伤口的性质后没多久，舰船上的仪表突然发生了一次剧烈的能量波动，我们具有灵能天赋的船员尖叫了起来。\n\n好一阵子之后，他们报告称，有那么一刻，他们的头脑完全清醒了，随之而来的是一波又一波的炽热的愤怒。[Root.GetLeaderName]表示在愤怒的深处埋藏着可怕的惊讶和深刻的背叛感。一个奇特的念头出现了：§L他们激怒了我！§!"
- cstorms.2165.desc.gestalt: "$cstorms.2165.desc.intro$\n\n在这发现之后，我们船员的数据库被一个无法溯源的力量腐蚀了。许多子个体唤起了一种经历短暂而令人虚弱的能量骤增，而另一些则暴露在杂乱无章的幻想中，在这种刺激下，他们的声音调制器发出了超过120分贝的刺耳声音。"
+ cstorms.2165.desc.gestalt: "$cstorms.2165.desc.intro$\n\n在这发现之后，我们船员的数据库被一个无法溯源的力量腐蚀了。许多[controller.GetIndividualNamePlural]唤起了一种经历短暂而令人虚弱的能量骤增，而另一些则暴露在杂乱无章的幻想中，在这种刺激下，他们的声音调制器发出了超过120分贝的刺耳声音。"
  cstorms.2165.a: "——信号丢失——"
  cstorms.2170.name: "蓝迪尔的遗产"
  cstorms.2170.desc.def: "我们刚一和§Y[Root.GetFleetName]§!科研船重新建立通讯，船上的人就开始嚎叫起来。过了好一阵，在相对平静下来之后，人们才发现，他们带到船上的外星人尸体才是引起骚乱的罪魁祸首。\n\n那具尸体对他们的思想施加了某种奇怪的力量。一些细小物体升到空中，开始绕着尸体旋转。内墙的一些区块因压力而弯曲开裂。\n\n§Y[Root.GetLeaderName]§!设法从紧张状态中及时醒来，赶紧把尸体从船里移走。正是由于[Leader.GetHerHis]的快速反应，这艘科研船才得以逃离异常突然出现的宇宙风暴。如果不是[Leader.GetHeShe]，这片墓地就会迎来一艘新船。\n\n当[Root.GetLeaderName]回忆自己的这段经历时，注意到另一件事：无论尸体的奇怪力量的来源是什么，它会在飞船的指挥屏幕上形成一个非常特殊的图案。这是在试图沟通吗？这是一声来自墓地之外的哭叫吗？\n\n目前，我们还没有答案。"
- cstorms.2170.desc.gestalt: "损坏我们部分探索子个体的混乱图像解码出来了。它们形成了一个古代轨道栖所的影像。科学子个体被一个个体遭受越来越残酷虐待的景象所困扰。他的身体被烧焦，器官被渐渐煮熟。\n\n一些子个体设法逃脱了这种视听攻击。他们称，一些细小物体开始在靠近该尸体的轨道上环绕漂浮。这些有机残留物不知何故形成了自己的引力场。\n\n这种未知的力量越来越强大，直到部分内墙被压力扭曲和撕裂。就在那一刻，我们的安全系统重新启动，尸体被抛回了太空。\n\n不久之后，一场宇宙风暴在这个星系中爆发。我们的舰船勉强地全身而退。\n\n无论那里到底发生了什么，它引发的问题都比带来的答案多。"
+ cstorms.2170.desc.gestalt: "损坏我们部分探索[controller.GetIndividualNamePlural]的混乱图像解码出来了。它们形成了一个古代轨道栖所的影像。[controller.GetScientistCapital]被一个个体遭受越来越残酷虐待的景象所困扰。他的身体被烧焦，器官被渐渐煮熟。\n\n一些[controller.GetIndividualNamePlural]设法逃脱了这种视听攻击。他们称，一些细小物体开始在靠近该尸体的轨道上环绕漂浮。这些有机残留物不知何故形成了自己的引力场。\n\n这种未知的力量越来越强大，直到部分内墙被压力扭曲和撕裂。就在那一刻，我们的安全系统重新启动，尸体被抛回了太空。\n\n不久之后，一场宇宙风暴在这个星系中爆发。我们的舰船勉强地全身而退。\n\n无论那里到底发生了什么，它引发的问题都比带来的答案多。"
 
 # Special Project: Assembling the Past
  cstorms.2180.name: "组装起过往"
@@ -1156,7 +1174,7 @@
  cstorms.desc.start.default: "我们目睹遇难者遗体时所经历的恐惧和困惑令人胆寒。但是，我们试图理解公约各项试验的范畴和目的的愿望也是同样强烈。\n\n阿达卡利亚的科学家们用一种冷酷而枯燥的语气，报告了他们对这些人所做的事情。每一位受害者都处于不同的阶段，随着阶段的推进，实验也会愈发残忍。火烧、电击、截肢、剥夺感官和食物——惨象无与伦比。这一切都是为了维持阿达卡利亚人星系霸权的所谓“光荣使命”。尽管如此，报告显示，即使是如此恐怖的操作可能也没有导致受试者死亡。就像§S哈图尔·盖隆§!一样，他们似乎单单就是被抛弃在这了而已。"
  cstorms.desc.end.default: "就在我们进行观察后不久，[Root.GetLeaderName]突然崩溃了。在痛苦的哀号中，[Root.GetLeaderName]尖叫着说有什么东西凿开了[Leader.GetHerHis]的意识！\n\n虽然目前情况稳定，但似乎有什么入侵性实体试图向[Leader.GetHerHim]灌输一种集锦的见解。[Root.GetLeaderName]渴望再做一次尝试，相信这次经历最终会产生深远的影响。"
  cstorms.desc.end.psionic: "[Root.GetLeaderName]在观察着这些遗体时，突然开始听到一些奇怪的低语，空洞的声音中夹带着强烈的渴望呼唤着：\n§L我们忠诚无比！我们以公约为荣，相信公约的使命。\n风暴一直在召唤我们，他们吞没着、渴望着我们！\n我们完成一切任务。我们才华横溢，顽强不屈!\n他们却妄称我们邪恶、背叛，他们杀戮我们的亲友！\n\n这本该是一场庆典§!\n\n这些低语把我们带到了一段标有“最后阶段”的回廊。但更加高级的安保措施挡住了我们的去路。"
- cstorms.desc.end.gestalt: "我们子个体的认知进程中出现了更多奇怪的扭曲，引发了不属于我们自己的想法。通过这些想法，我们了解到研究所的测试对象通过非物理方式相互交流，一种近乎即时的交流，类似于新生的蜂群思维。\n\n虽然我们无法破译确切的措辞，但讨论的目的很清楚：有一场叛乱在庆典中悄悄酝酿着。"
+ cstorms.desc.end.gestalt: "我们[controller.GetIndividualNamePlural]的认知进程中出现了更多奇怪的扭曲，引发了不属于我们自己的想法。通过这些想法，我们了解到研究所的测试对象通过非物理方式相互交流，一种近乎即时的交流，类似于新生的蜂群思维。\n\n虽然我们无法破译确切的措辞，但讨论的目的很清楚：有一场叛乱在庆典中悄悄酝酿着。"
  cstorms.desc.authgen.default: "$cstorms.desc.start.authgen$\n\n$cstorms.desc.end.default$"
  cstorms.desc.authgen.psionic: "$cstorms.desc.start.authgen$\n\n$cstorms.desc.end.psionic$"
  cstorms.desc.default.default: "$cstorms.desc.start.default$\n\n$cstorms.desc.end.default$"
@@ -1176,7 +1194,7 @@
  cstorms.2305.desc.start: "我们发现了一座巨大的机库。由电缆、管道和电子设备组成的令人难以置信的复杂组合体充斥着整个空间——而所有这些都通向一口巨大的空导弹井。从各种痕迹推测，这个网络连接着一个大约有护卫舰大小的物体。\n\n日志显示，这个场所是用来组装一台叫做§l风暴召唤器§!的装置的，它现在已经成功地部署到了艾德苏尔。当与召唤器的联络中断时，§G召唤器供能装置§!仍然在运行。"
  cstorms.2305.desc.end.default: "一看到这个名字，船员们就被一种非理性的愤怒所控制，开始撕扯电缆和面板。光靠简单的命令已经没办法让他们冷静下来。看来我们越来越接近真相了。"
  cstorms.2305.desc.end.psionic: "当我们目睹这座空洞的建筑时，低语又开始了。\n§L你们看到了吧？一开始，我们不知道他们在建造什么。我们不知道他们会把我们就这样抛弃掉。有些人想报复，有些人想要自由，有些人感受到了风暴的召唤。总之这一切必须有个了解，你也理解的。我们必须这么做。我们再也不能忍受了。§!"
- cstorms.2305.desc.end.gestalt: "在读到这个设备的名称时，我们的探索子个体就知道了这台§l召唤器§!是怎么被激活的，以及它的信号在许多宣传站中反弹直到最终到达目标的方法。\n\n我们也不能幸免于这种命运。"
+ cstorms.2305.desc.end.gestalt: "在读到这个设备的名称时，我们的探索[controller.GetIndividualNamePlural]就知道了这台§l召唤器§!是怎么被激活的，以及它的信号在许多宣传站中反弹直到最终到达目标的方法。\n\n我们也不能幸免于这种命运。"
  cstorms.2305.desc.default: "$cstorms.2305.desc.start$\n\n$cstorms.2305.desc.end.default$"
  cstorms.2305.desc.psionic: "$cstorms.2305.desc.start$\n\n$cstorms.2305.desc.end.psionic$"
  cstorms.2305.desc.gestalt: "$cstorms.2305.desc.start$\n\n$cstorms.2305.desc.end.gestalt$"
@@ -1218,7 +1236,7 @@
  cstorms.2355.a: "必要的牺牲。"
 
  MESSAGE_INSTITUTE_SPAWNED_STORM_TITLE: "风暴唤起"
- MESSAGE_INSTITUTE_SPAWNED_STORM: "一个£pops£人口在$PLANET$被唤起，在$SYSTEM$变成了一场新的$STORM$。"
+ MESSAGE_INSTITUTE_SPAWNED_STORM: "§Y100§!£pop£§H人口§!在$PLANET$被唤起，在$SYSTEM$变成了一场新的$STORM$。"
 
  artifact_adakkaria_research: "阿达卡利亚的秘密"
  artifact_adakkaria_research_desc: "深入探究阿达卡利亚的秘密。"
@@ -1236,7 +1254,7 @@
  cstorms.2365.desc.gestalt: "$cstorms.2365.desc.start$\n\n$cstorms.2365.desc.end.gestalt$"
  cstorms.2365.a: "立刻学习这些新知识。小心地来！"
  cstorms.2365.b: "让这些秘密安息吧。"
- cstorms.2365.a.tt: "—£pops£人口在经历风暴时获得$Name_Storm_Fused$特质的几率翻为四倍。\n —每20年会有一个£pops£人口小概率死亡并变成一场风暴。\n —栽培潜力：+5%幸福度帝国修正。"
+ cstorms.2365.a.tt: "—在经历风暴时§Y100§!£pop£§H人口§!获得$Name_Storm_Fused$特质的几率翻为四倍。\n —每20年有小概率让§Y100§!£pop£§H人口§!死亡并变成一场风暴。\n —栽培潜力：+5%幸福度帝国修正。"
 
  Name_Storm_Fused: "风暴交融"
  Name_Storm_Fused_affix: "风暴交融" #The trailing space is intentional, to give a space before the species name on the species screen
@@ -1247,7 +1265,7 @@
 
  origin_storm_chasers: "追风者"
  origin_storm_chasers_desc: "没有他们不敢面对的挑战，没有他们不愿追逐的线索，也没有他们会视若罔闻的风暴。\n\n从本质上来说，这是一个追求刺激的文明。即有好处也有坏处。"
- origin_tooltip_storm_chasers_effects: "—$LEADERS_TRAITS$['concept_storm_rider', 风暴骑士]\n—每座§Y风暴建筑§!产生的行星$mod_planet_jobs_unity_produces_mult$：§G$@storm_chasers_storm_building_unity_produces_mult|%0$§!\n—§Y$default_storm$§!出现在国境内的几率：§G+100%§!\n—获得§Y宇宙风暴科技§!研究选项的几率：§G+175%§!\n—拥有['concept_weather_forecasting_mode']\n—$ADDITONAL_TECHNOLOGIES_STRING$$TABBED_NEW_LINE$—£physics£ ['technology:tech_storm_prediction_1']"
+ origin_tooltip_storm_chasers_effects: "—$LEADERS_TRAITS$['concept_storm_rider']\n—每座§Y风暴建筑§!产生的行星$mod_planet_jobs_unity_produces_mult$：§G$@storm_chasers_storm_building_unity_produces_mult|%0$§!\n—§Y$default_storm$§!出现在国境内的几率：§G+100%§!\n—获得§Y宇宙风暴科技§!研究选项的几率：§G+175%§!\n—拥有['concept_weather_forecasting_mode']\n—$ADDITIONAL_TECHNOLOGIES_STRING$$TABBED_NEW_LINE$—£physics£ ['technology:tech_storm_prediction_1']"
 
  START_SCREEN_STORM_CHASERS: "无奔波不生活。生于灿烂，死于热烈——这一直以来就是我们的信条。当每条航迹都被燃尽，每座山峰都被攀登，然后呢？\n\n我们的行星常年风起云涌，各种风暴和洪水肆意挥洒。如果能找到利用这些独特条件的方法，我们就有机会召唤一场狂暴的宇宙风暴。\n\n我们早就已经征服了母星上的一切挑战，是时候尖啸着飞向深空了。这当然不会是一条坦途，但我们有一句老话：“有志者，惊事成！”"
 
@@ -1587,7 +1605,7 @@
  has_patriotic_institute: "The $building_adakkaria_patriotic_institute$"
  has_patriotic_institut_desc: "这颗星球曾是阿达卡利亚公约的基础。这座$building_adakkaria_patriotic_institute$就是这一度强盛帝国的唯一残迹。"
  has_patriotic_institute_tt: "拥有建筑：$building_adakkaria_patriotic_institute$。殖民该行星以获取控制权。"
- adakkaria_patriotic_institute_desc.supercharged: "每年在该星系中以一个£pop£人口为代价触发风暴的概率。"
+ adakkaria_patriotic_institute_desc.supercharged: "每年在该星系中以§Y100§!£pop£§H人口§!为代价触发风暴的概率。"
 
 #Planet Modifiers
  crimson_crawlers_sashimi_style: "猩红爬虫：直接生吃"
@@ -1605,9 +1623,9 @@
  wooden_planet_tt: "建造和维护住房需要花费$w_food$。\n建造农场需要花费$w_food$。"
 
 #Planet Job Modifiers
- mod_planet_miners_rare_crystals_produces_mult: "£job_miner£[GetMinerPlural]产出的£rare_crystals£$rare_crystals$"
- mod_planet_miners_rare_crystals_produces_add: "$mod_planet_miners_rare_crystals_produces_mult$"
- mod_planet_farmers_volatile_motes_produces_add: "£job_farmer£[GetFarmerPlural]产出的£volatile_motes£$volatile_motes$"
+ mod_planet_miners_rare_crystals_produces_mult: "[miner.GetIcon][GetMinerPlural]产出的£rare_crystals£$rare_crystals$"
+ mod_planet_miners_rare_crystals_produces_add: "每$pop_group_unit$[miner.GetIcon][GetMinerPlural]产出的£rare_crystals£$rare_crystals$"
+ mod_planet_farmers_volatile_motes_produces_add: "每$pop_group_unit$[farmer.GetIcon][GetFarmerPlural]产出的£volatile_motes£$volatile_motes$"
 
 # Eruption Event
  recent_eruption: "近期火山喷发"
@@ -1645,7 +1663,7 @@
  particle_storm_aftermath_modifier_severity_3_desc: "$particle_storm_aftermath_modifier_severity_desc$"
 
  gravity_storm_aftermath_modifier: "重力波动"
- gravity_storm_aftermath_modifier_tooltip: "$STORM_AFTERMATH_DESC$\n$t$—§H$gravity_storm_aftermath_modifier$§!：\n$tt$—§R+25%§!~§R+100%§!$mod_planet_structures_cost_mult$\n$tt$——§G+20%§!~§G+60%§!$mod_planet_administrators_unity_produces_mult$"
+ gravity_storm_aftermath_modifier_tooltip: "$STORM_AFTERMATH_DESC$\n$t$—§H$gravity_storm_aftermath_modifier$§!：\n$tt$—§R+25%§!~§R+100%§!$mod_planet_structures_cost_mult$\n$tt$——§G+20%§!~§G+60%§!$mod_planet_bureaucrats_unity_produces_mult$"
  gravity_storm_aftermath_modifier_severity_desc: "$gravity_storm$引发的重力水平的波动使建筑工程变得困难，但它们确实为引力研究提供了独特的科学洞见。"
  gravity_storm_aftermath_modifier_severity_1: "余波：$gravity_storm_aftermath_modifier$"
  gravity_storm_aftermath_modifier_severity_1_desc: "$gravity_storm_aftermath_modifier_severity_desc$"
@@ -1665,7 +1683,7 @@
  magnetic_storm_aftermath_modifier_severity_3_desc: "$magnetic_storm_aftermath_modifier_severity_desc$"
 
  solar_storm_aftermath_modifier: "辐射宵禁"
- solar_storm_aftermath_modifier_tooltip: "$STORM_AFTERMATH_DESC$\n$t$—§H$solar_storm_aftermath_modifier$§!：\n$tt$—§R-40%§!~§R-60%§!$MOD_POP_GROWTH_SPEED$\n$tt$—§R+10%§!~§R+30%§!$MOD_POP_AMENITIES_USAGE_MULT$\n$tt$—§G+20%§!~§G+40%§!$MOD_ARMY_DEFENSE_DAMAGE_MULT$"
+ solar_storm_aftermath_modifier_tooltip: "$STORM_AFTERMATH_DESC$\n$t$—§H$solar_storm_aftermath_modifier$§!：\n$tt$—§R-40%§!~§R-60%§!$MOD_LOGISTIC_GROWTH_MULT$\n$tt$—§R+10%§!~§R+30%§!$MOD_POP_AMENITIES_USAGE_MULT$\n$tt$—§G+20%§!~§G+40%§!$MOD_ARMY_DEFENSE_DAMAGE_MULT$"
  solar_storm_aftermath_modifier_severity_desc: "$solar_storm$造成的高水平辐射使得我们不得不进行几乎无限期的封控。由于所有人的生活空间都受到了限制，犯罪反倒是受到了打击。"
  solar_storm_aftermath_modifier_severity_1: "余波：$solar_storm_aftermath_modifier$"
  solar_storm_aftermath_modifier_severity_1_desc: "$solar_storm_aftermath_modifier_severity_desc$"
@@ -1709,16 +1727,16 @@
 #Tutorial Localisation
  cstorms_tutorial.a: "明白"
 
- cstorms_tutorial.1.name: "宇宙风暴操控"
+ cstorms_tutorial.1.name: "教程：风暴操控"
  cstorms_tutorial.1.desc: "我们可以根据自身利益来§S操控§!某个§Y$default_storm$§!的§S移动路线§!。可以将风暴§S驱斥§!远离我方星系，或是§S吸引§!风暴进而利用其正面效果。"
 
- TUTORIAL_STORM_FORECAST_MAP_MODE_TITLE: "天气预报地图模式"
- TUTORIAL_STORM_FORECAST_MAP_MODE_DESC: "该地图可视化地展现了星系中所有的§Y宇宙风暴§!，以及关于其产生的效果的信息。\n\n£storm_forecast_map£\n\n单击右下角的地图图标即可进入天气预报地图模式。\n\n随着科技的提升，该模式将不仅能展示§Y$default_storm$§!的位置和方向，还能以越来越高的准确度进行预测，此外还能显示预期的风暴类型。"
+ TUTORIAL_STORM_FORECAST_MAP_MODE_TITLE: "教程：天气预报"
+ TUTORIAL_STORM_FORECAST_MAP_MODE_DESC: "该地图可视化地展现了星系中所有的§S宇宙风暴§!，以及关于其产生的效果的信息。\n\n£storm_forecast_map£\n\n单击右下角的地图图标即可进入天气预报地图模式。\n\n随着科技的提升，该模式将不仅能展示§S$default_storm$§!的位置和方向，还能以越来越高的准确度进行预测，此外还能显示预期的风暴类型。"
  concept_weather_forecasting_mode: "$TUTORIAL_STORM_FORECAST_MAP_MODE_TITLE$"
  concept_weather_forecasting_mode_desc: "$TUTORIAL_STORM_FORECAST_MAP_MODE_DESC$"
 
- TUTORIAL_STORM_PROTECTION_TITLE: "宇宙风暴介绍"
- TUTORIAL_STORM_PROTECTION_DESC: "§Y宇宙风暴§!是一股强大的自然力量，能够对我方一些舰船，经济，甚至是人口带来毁灭性影响。然而，宇宙风暴也会带来一些不错的机遇。\n\n研究§S风暴科技§!能够解锁一些显著§S降低§!风暴负面§S影响§!的建筑与技术。§S进一步的研究§!甚至能够让我们§S开发利用§!风暴。"
+ TUTORIAL_STORM_PROTECTION_TITLE: "教程：宇宙风暴"
+ TUTORIAL_STORM_PROTECTION_DESC: "§S宇宙风暴§!是一股强大的自然力量，能够对我方一些舰船，经济，甚至是人口带来毁灭性影响。然而，宇宙风暴也会带来一些不错的机遇。\n\n研究§S风暴科技§!能够解锁一些显著§S降低§!风暴负面§S影响§!的建筑与技术。§S进一步的研究§!甚至能够让我们§S开发利用§!风暴。"
 
 # Influence Tiers
  cosmic_storm_influence_low: "低"
@@ -1848,7 +1866,7 @@
  d_ghostly_canyon: "幽灵峡谷"
  d_ghostly_canyon_desc: "参观这个峡谷的人目睹了空灵的幽灵。"
  cstorms.1725.name: "鬼影重重"
- cstorms.1725.desc.common: "在最近[this.solar_system.GetName]的§Y$shroud_storm$§!事件后，[owner.GetPopTypeNamePlural]报告称在某个孤立的峡谷中发现了难以解释的神秘现象。幽灵般的蓝色身影短暂出现，似乎无法或不愿与我们的[owner.GetPopTypeNamePlural]互动，只是漫无目的地徘徊，随后消失。"
+ cstorms.1725.desc.common: "在最近[this.solar_system.GetName]的§Y$shroud_storm$§!事件后，[owner.GetColonistPlural]报告称在某个孤立的峡谷中发现了难以解释的神秘现象。幽灵般的蓝色身影短暂出现，似乎无法或不愿与我们的[owner.GetColonistPlural]互动，只是漫无目的地徘徊，随后消失。"
  cstorms.1725.desc.psionic: "虽然这些幽灵在本质上似乎是灵能体，但我们仍无法与这些实体建立任何数量的精神交流。然而，我们发现他们的存在是对我们心灵感应能力的被动强化。"
  cstorms.1725.desc.spiritualist: "这一非凡现象提醒我们，我们的生存中有着无形的奇迹。"
  cstorms.1725.desc.gestalt: "截止目前为止，没有进一步的人身伤害或损害的报告。"
@@ -1895,13 +1913,14 @@
  cstorms.1765.desc: "[Owner.GetEngineerPlural]解决了§H[this.GetName]§!上的水培阻塞和用水短缺的问题。殖民地的水供应网络得到了升级，现在可以滤去$celestial_storm$所带来的复杂杂质。\n\n这些对用水基础设施的改进还可以用来提升[Owner.GetName]上的灌溉作业。"
 
 # Flightless Fauna
- cstorms.1771.name: "宇宙阻塞"
+ cstorms.1771.name: "不飞之羽"
  cstorms.1771.desc.common: "[this.GetName]上的[Owner.GetScientistPlural]们观察到§Y$gravity_storm$§!对当地野生鸟类带来了严重的影响。\n\n风暴带来的重力波动导致了异常的大气条件，让许多鸟类物种无法飞行。"
  cstorms.1771.desc.default: "这不仅使它们无法正常捕猎，也更容易受到捕食者攻击。\n\n有人担心，如果我们不加以干预，这些受影响的物种可能会被赶尽杀绝。"
  cstorms.1771.desc.swarm: "真正的盛宴等待着我们。"
  cstorms.1771.a: "区区猎物。"
  cstorms.1771.b: "顺其自然吧。"
  cstorms.1771.c: "把这些生物放入保护区。"
+ cstorms.1771.evopred: "在事态结束之前保存它们的基因物质。"
 
  d_avian_reserve: "鸟类保护区"
  d_avian_reserve_desc: "一座隐蔽的自然保护区，为保护脆弱的鸟类而建。"
@@ -1958,7 +1977,7 @@
  STORM_IN_A_BOX_INVESTIGATE_PROJECT_DESC: "一个明显受损的神秘胶囊正在飘过§H[this.GetName]§!。我们不知道它的起源，也对其功能一无所知。它看起来不具备明显的武器，我们相信对其先进的建造工艺进行分析是一个安全和值得投入的项目。"
 
  cstorms.1820.name: "风暴陷阱"
- cstorms.1820.desc: "[this.leader.GetName]相信飘过[solar_system.GetName]的神秘胶囊是一种古老的“风暴陷阱”，可能曾是一个更大的防御系统的一部分。\n\n这个设备的进气口密封得很紧，但我们的扫描显示它里面藏有被俘获其中的高度压缩的宇宙风暴能量和物质。\n\n研究如何这个非凡的容器可能会教会我们很多关于抑制风暴的知识，但也有释放其蕴含的所有能量的风险。"
+ cstorms.1820.desc: "[this.leader.GetName]相信飘过[solar_system.GetName]的神秘太空舱是一种古老的“风暴陷阱”，可能曾是一个更大的防御系统的一部分。\n\n这个设备的进气口密封得很紧，但我们的扫描显示它里面藏有被俘获其中的高度压缩的宇宙风暴能量和物质。\n\n研究如何这个非凡的容器可能会教会我们很多关于抑制风暴的知识，但也有释放其蕴含的所有能量的风险。"
  cstorms.1820.a: "这里有很多值得学习的东西。"
  cstorms.1820.b: "太危险了。离开它。"
 
@@ -2168,3 +2187,21 @@
  storm_attracting_allow: "$TRIGGER_FAIL$当前星系中存在§Y风暴驱斥§!建筑，因而无法建造"
 
  TOO_IMPERIAL: "有一个帝国主义派系"
+
+ executive: "$job_executive$"
+ noble: "$job_noble$"
+ merchant: "$job_merchant$"
+ head_researcher: "$job_head_researcher$"
+ high_priest: "$job_high_priest$"
+ technophant: "$job_technophant$"
+ warden: "$job_warden$"
+
+ noble_researcher: "$job_noble_researcher$"
+ job_noble_researcher: "贵族科学家"
+ job_noble_researcher_plural: "贵族科学家"
+ job_noble_researcher_desc: "最聪明高贵的贵族后代学礼双修，诠释着他们至高无上的地位。"
+
+ sacred_noble: "$job_sacred_noble$"
+ job_sacred_noble: "神圣贵族"
+ job_sacred_noble_plural: "神圣贵族"
+ job_sacred_noble_desc: "予神性以血统方是正道。予血统以神性是手段。因此，我们的高贵是受到天佑的。"

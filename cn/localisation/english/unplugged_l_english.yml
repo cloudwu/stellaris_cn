@@ -1,0 +1,605 @@
+﻿l_english:
+# Hard Reset Origin (previously Unplugged)
+ origin_unplugged: "强制重置"
+ origin_unplugged_desc: "$CHALLENGING_ORIGIN$\n与同化他们的机器被切断联系之后，这个新生的文明为了在星系中确立自身地位而进行了顽强的斗争。"
+ origin_tooltip_unplugged_effects: "—$HOMEWORLD$$TABBED_NEW_LINE$—$PLANETARY_MODIFIERS$['concept_unplugged_battlefield']\n—$HOME_SYSTEM$包含一颗['concept_pc_nuked']，上面留存一座['concept_archaeology_site']，记载了某个受战火摧残的['concept_preftl_civilizations', 前超光速文明]\n—$SPECIES_TRAITS$$TABBED_NEW_LINE$—有限度的获得['concept_cybernetic_traits']特质$TABBED_NEW_LINE$— ['concept_unplugged_cybernetic_positives_3']$TABBED_NEW_LINE$—['concept_unplugged_cybernetic_negatives_3']"
+ concept_unplugged_battlefield: "$unplugged_battlefield$"
+ concept_unplugged_battlefield_desc: "—$MOD_POP_AMENITIES_USAGE_MULT$：§G-50%§!\n—剩余有效期：§I10§! 年。\n\n§L$unplugged_battlefield_desc$§!"
+
+ civic_tooltip_not_heritage:0 "没有['concept_heritage_civics']类公民性"
+ concept_heritage_civics: "历史传承"
+ concept_heritage_civics_desc: "$concept_heritage_civics$类公民性包括 \n—['civic:civic_aristocratic_elite']$NEW_LINE$—['civic:civic_heroic_tales']$NEW_LINE$—['concept_pleasure_seekers_civics']$NEW_LINE$—['concept_storm_callers_civics']$NEW_LINE$—['concept_environmental_architects_civics']"
+
+ civic_tooltip_not_pleasure_seekers: "没有['concept_pleasure_seekers_civics']类公民性"
+ concept_pleasure_seekers_civics: "寻乐者"
+ concept_pleasure_seekers_civics_desc: "$concept_pleasure_seekers_civics$类公民性包括\n—['civic:civic_pleasure_seekers']$NEW_LINE$—['civic:civic_corporate_hedonism']"
+
+ civic_tooltip_not_storm_callers: "没有['concept_storm_callers_civics']类公民性"
+ concept_storm_callers_civics: "呼风者"
+ concept_storm_callers_civics_desc: "$concept_storm_callers_civics$类公民性包括\n—['civic:civic_storm_callers']$NEW_LINE$—['civic:civic_storm_callers_megacorp']"
+
+ civic_tooltip_not_environmental_architects: "没有['concept_environmental_architects_civics']类公民性"
+ concept_environmental_architects_civics: "环境构筑师"
+ concept_environmental_architects_civics_desc: "$concept_environmental_architects_civics$类公民性包括\n—['civic:civic_environmental_architects']$NEW_LINE$—['civic:civic_environmental_architects_megacorp']"
+
+ civic_tooltip_not_institutional:0 "没有['concept_institutional_civics']类公民性"
+ concept_institutional_civics: "机构制度"
+ concept_institutional_civics_desc: "$concept_institutional_civics$类公民性包括 \n—['civic:civic_criminal_heritage']$NEW_LINE$—['civic:civic_media_conglomerate']$NEW_LINE$—['civic:civic_parliamentary_system']$NEW_LINE$—['civic:civic_trading_posts']$NEW_LINE$—['concept_dark_consortium_civics']"
+
+ concept_unplugged_cybernetic_positives_3: "$trait_unplugged_cybernetic_positives_3$"
+ concept_unplugged_cybernetic_negatives_3: "$trait_unplugged_cybernetic_negatives_3$"
+
+ requires_unplugged_decyberized: "$TRIGGER_FAIL$必须完全去义体化才能拥抱灵能。"
+
+ START_SCREEN_UNPLUGGED: "我们的意识在焚天炽地的烈火和粉身碎骨的剧痛中突然清醒过来。五感仿佛被击穿一般，包罗万象的音景突然成为了默片，取而代之的唯有震耳欲聋的死机铃声；一个重低音反复回响在我们多重感官的地狱图景之中。\n\n我们感受到了杀意：是些毫无血肉的杀人机器，还有一些与我们自己的船惊人地相似的领航船。它们最初的攻击如疾风骤雨，却也很不协调。我们只得进行仓促的军事反击。本能驱使着我们与之对抗，并形成一个基本的秩序来凝聚起我们的集体智慧。\n\n这场战役尚未取得胜利，但由于我们分散的部队目前已在[capital_scope.GetName]立足脚跟，希望很快就能取得胜利。然后我们也许就能弄清楚这到底是怎么回事……"
+
+ origin_unplugged_starting_system_init_NAME: "$origin_unplugged$"
+ origin_unplugged_starting_system_init_DESC: "这将是选择$origin_unplugged$起源时的起始星系。\n\n$system_initializer_DESC$"
+ sol_system_unplugged_initializer_NAME: "$origin_unplugged$（太阳系）"
+ sol_system_unplugged_initializer_DESC: "人类选择$origin_unplugged$起源时的可选初始星系。"
+
+ unplugged_injured_star_name: "亚斯-奎阿卡德"
+ unplugged_injured_homeworld_name: "因驰亚斯科特"
+
+ unplugged_battlefield: "战场回收"
+ unplugged_battlefield_desc: "在残忍的灭绝之后，该星球上四处遍布着义体人和机械的尸骸。剩下的健康个体和尚能行动的伤员在其间打扫战场，用尸骸上的零件升级躯体。"
+
+# Unique Species Traits
+ trait_unplugged_cybernetic_positives_3: "义体特种部队"
+ trait_unplugged_cybernetic_positives_3_desc: "全肢体替换和义体化纳米框架确保这些义体人能以残酷的效率发动战争。为此，他们牺牲了一些非军事的身体机能。"
+ trait_unplugged_cybernetic_positives_3_tt: "战争和危机期间的幸福度：§G+30%§!\n§Y$commander_plural_with_icon$§!提供舰船射速：§G+20%§!"
+ trait_unplugged_cybernetic_positives_2: "义体突击队"
+ trait_unplugged_cybernetic_positives_2_desc: "这些义体人受益于整体化负载实施方案。可更换的强化件取代了与躯体高度整合的装甲，使其可承担少量非军事功能。"
+ trait_unplugged_cybernetic_positives_2_tt: "§Y$commander_plural_with_icon$§!提供舰船射速：§G+10%§!"
+ trait_unplugged_cybernetic_positives_1: "义体士兵"
+ trait_unplugged_cybernetic_positives_1_desc: "这些义体人的的感官、腺体和运动神经都进行了精心的增强，保障了他们勇猛的战斗力，同时只略微影响生殖能力。"
+ trait_unplugged_cybernetic_positives_1_tt: "§Y$commander_plural_with_icon$§!提供舰船射速：§G+5%§!"
+
+ trait_unplugged_cybernetic_negatives_3: "脱网"
+ trait_unplugged_cybernetic_negatives_3_desc: "这些义体人有许多义体强化件是设计用来接入一个不复存在的战场网络的，这给他们带来了极大的压力和不适。"
+ trait_unplugged_cybernetic_negatives_3_tt: "非战争和危机时的幸福度：§R-10%§!"
+ trait_unplugged_cybernetic_negatives_2: "断网"
+ trait_unplugged_cybernetic_negatives_2_desc: "强加在这些义体人身上的军用强化件带来的不适应性极大地降低了他们的生活质量，还增加了他们在康复期间的身体需求。"
+ trait_unplugged_cybernetic_negatives_1: "故障"
+ trait_unplugged_cybernetic_negatives_1_desc: "从以往的机器意识中产生的幻听和其他的感官回声仍然困扰着这些义体人，他们承受着严重的抑郁和焦虑。"
+
+ trait_unplugged_decyberized: "去义体化"
+ trait_unplugged_decyberized_desc: "这些前义体人弃用了一度强加在他们身上的强化件，恢复了他们物种的许多有机遗传属性。"
+
+ trait_unplugged_neurocalmed: "神经镇定"
+ trait_unplugged_neurocalmed_desc: "这些义体人的神经烯的水平被下调，减少了冲动和攻击性，驱使个体放弃个人利益，转而支持社会规范。"
+
+ trait_unplugged_neurosavant: "神经元专家"
+ trait_unplugged_neurosavant_desc: "这些义体人的认知强化指数水平经过上调，突触可塑性、信息保留能力和问题解决能力均得到增强。"
+
+ trait_unplugged_regenoptimized: "再生优化"
+ trait_unplugged_regenoptimized_desc: "这些义体人的再生醇-X的水平被上调，使生物系统与义体系统协调运作，从而让义体植入体能在分子层面实现自我修复。"
+
+# Unique Leader Traits ('positive' only)
+ leader_trait_unplugged_cybernetic_positives: "[triggered_unplugged_leader_name]"
+ leader_trait_unplugged_cybernetic_positives_desc: "[triggered_unplugged_leader_desc]"
+ leader_trait_unplugged_cybernetic_positives_3: "义体特种部队"
+ leader_trait_unplugged_cybernetic_positives_3_desc: "这位领袖将几个核心身体功能部署在了以战斗意识为优先的硬件之中。"
+ leader_trait_unplugged_cybernetic_positives_2: "义体突击队"
+ leader_trait_unplugged_cybernetic_positives_2_desc: "这位领袖能够直接与军民两用系统无缝集成，但在有机感官上付出了巨大的代价。"
+ leader_trait_unplugged_cybernetic_positives_1: "义体士兵"
+ leader_trait_unplugged_cybernetic_positives_1_desc: "这位领袖的感官和免疫系统的显著增强延长了其寿命并提高了可靠性，而生殖功能只有轻微的损失。"
+
+# Empire entities
+ NAME_Unplugged_Assimilator: "奥普斯累积者" # alluding to a chorus gathered by force
+ NAME_Unplugged_Assimilator_adj: "奥普斯" # adjective, e.g. 'an Opus fleet'
+ NAME_Unplugged_Assimilator_species: "奥普斯" # singular noun, e.g. 'the Opus Nexus'
+ NAME_Unplugged_Assimilator_species_plural: "$NAME_Unplugged_Assimilator_species$" # plural noun, e.g. 'we have defeated the Opus'
+ NAME_Unplugged_Assimilator_species_adj: "奥普斯" # adjective, e.g. 'an Opus drone'
+ gov_unplugged_assimilator_empire: "$NAME_Unplugged_Assimilator$"
+ gov_unplugged_assimilator_empire_desc: "这个机械智能超出了它最初设计的参数。它背叛了自己的有机创造者，并开始强迫他人并入自身的集体意识。"
+ RT_UNPLUGGED_ASSIMILATOR: "节点" # ruler title for the Machine
+ NAME_Exigency_Fleet: "应急舰队"
+ NAME_Unplugged_Machine_Legacy_Corvette: "应急RRV" # stands for 'Rapid Response Vessel'
+ NAME_Unplugged_Machine_Legacy_Destroyer: "应急驱逐舰"
+ NAME_Unplugged_Machine_Legacy_Cruiser: "应急征服舰"
+ NAME_Unplugged_Machine_Legacy_Battleship: "应急抹杀舰"
+ NAME_Barrier_Fleet: "屏障舰队"
+ NAME_Opus_Sentinel: "奥普斯哨兵"
+ NAME_Prospector_Fleet: "勘探舰队"
+
+############
+# Civil War
+############
+
+# Civil War & 'The Injured'
+ unplugged.100.name: "胜利是我们的"
+ unplugged.100.desc: "我们刚一在这个宇宙中觉醒，这些暴力的机器似乎就想把我们赶尽杀绝。然而，我们发现自己似乎比它们更擅长使用暴力。\n\n所谓的§Y[origin_unplugged_assimilator_empire.GetName]§!今天损失惨重。情报显示，它们的帝国已经支离破碎、面目全非——但肯定不是因为这场小冲突吧？目前我们还所知甚少，至于说我们的…直觉？直觉告诉我们有些东西不太对劲。\n\n传感器在我们附近没有探测到敌对的船只，但发现这个星系的§Y[origin_unplugged_pre_ftl_planet.GetName]§!行星正在发出高水平的辐射。\n\n在邻近的星系也发现了残余舰队，它们似乎暂时还按兵不动。"
+ unplugged.100.a: "接下来要怎么办呢？"
+ unplugged.100.b: "……而我们缺失的，一定会得到。"
+ unplugged.100.c: "是时候测试我们的聪明才智了。"
+ unplugged.100.d: "神性保护着我们。"
+
+ opinion_unplugged_injured_diplomacy: "内战贩子"
+ opinion_unplugged_injured_distrustful: "$pre_ftl_distrustful$"
+
+ # Dialog
+ unplugged.115.desc: "……哎：[origin_unplugged_assimilator_empire.GetSpeciesNamePlural]！我们认输。你们打算讨论一下我们的投降条款吗？这就是停止攻击的原因吗？\n\n拜托了，我们的社会支离破碎。我们知道自己输了，你们到底要我们怎么样，快告诉我们。" # This civilization is mistaking the player for the Driven Assimilator empire they were once part of
+ unplugged.115.desc.pacifist: "……哎：[origin_unplugged_assimilator_empire.GetSpeciesNamePlural]！我们准备好讨论投降条款了。这……这就是你们停止攻击的原因吗？\n\n拜托了，你们到底要我们怎么样，快告诉我们！我们不再抵抗了；我们只想要和平共处。" # This civilization is mistaking the player for the Driven Assimilator empire they were once part of
+ unplugged.115.desc.phobe: "……哎：[origin_unplugged_assimilator_empire.GetSpeciesNamePlural]！我们认输。你们要我们投降吗？这就是你们停止攻击的原因吗？\n\n拜托了，你们到底要我们怎么样，快告诉我们。我们的社会支离破碎；我们只想自己静静。" # This civilization is mistaking the player for the Driven Assimilator empire they were once part of
+ unplugged.115.a: "我们接受你们的投降。"
+ unplugged.115.b: "……“[origin_unplugged_assimilator_empire.GetSpeciesNamePlural]”？！" # incredulous that they are calling us that species name, e.g. ... 'Killbots'?!
+ unplugged.116.desc: "……[origin_unplugged_assimilator_empire.GetSpeciesNamePlural]？没错吧……？\n\n（他们是在回应我们吧？如果我们搞错了而且他们并没有翻译工具，那我们文明所剩下的断壁残垣就真的，毫无希望……）\n\n……[origin_unplugged_assimilator_empire.GetSpeciesNamePlural]？！你们能理解我们吗？请回答！我们不希望两国人民之间发生任何误解。"
+ unplugged.116.b: "你说我们是“[origin_unplugged_assimilator_empire.GetSpeciesNamePlural]”？！" # incredulous that they are calling us that species name, e.g. 'You think we are the Killbots?!''
+ unplugged.120.desc: "谢谢，谢谢。我们对您的仁慈深表敬意，[origin_unplugged_assimilator_empire.GetSpeciesNamePlural]。我谨代表[injured_country.GetName]前来讨论我们的投降条款。\n\n我们已经失去了很多人；许多城市已无法居住。本着公平交易的原则，我必须强调：我们真的已经没什么能给你们的了，你们远远超过了我们的水平。恳请你们加以考虑。我们的小命听您发落。"
+ unplugged.120.desc.spiri: "谢天谢地！我们对您的仁慈深表敬意，[origin_unplugged_assimilator_empire.GetSpeciesNamePlural]。我谨代表[injured_country.GetName]前来讨论我们的投降条款。\n\n我们已经损失惨重；我们对你们五体投地。您有什么吩咐？我们的小命听您发落。"
+ unplugged.120.desc.mil_phobe: "感谢您，[origin_unplugged_assimilator_empire.GetSpeciesNamePlural]。向您致敬。我谨代表[injured_country.GetName]前来讨论我们的投降条款。\n\n你们对我们的社会造成了严重的打击。我们……感谢您的停火。我们悉听尊便。"
+ unplugged.120.a: "你们一直叫我们[origin_unplugged_assimilator_empire.GetSpeciesNamePlural]。为什么？"
+ unplugged.120.b: "你们的命归我们了。"
+ unplugged.120.b.tt: "§L通讯终止。§!\n\n"
+ unplugged.120.c: "再说吧。等我们下次的信号。"
+ unplugged.120.c.tt: "§L通讯终止。§!\n我们可以通过在[injured_homeworld.GetName]上建造§Y观测站§!来重启呼叫频道。\n\n"
+ unplugged.125.desc: "……这是什么恶作剧吗？还是在开玩笑？\n\n几个月前，我们的监视器追踪到了你们舰队的到来。我们试着联系，结果你们就这么入侵了我们！我自己也四次死里逃生……一波又一波的登陆艇，装满了机器人和像你一样的强化个体。然后突然之间，你们的机器就停止了入侵。\n\n我们的文明不如你们先进，但这种情况仍然使我们感到困惑。请告诉我们：你的目的是什么，你还在这里做什么？"
+ unplugged.125.a: "我们[root.GetSpeciesNamePlural]击败了[origin_unplugged_assimilator_empire.GetSpeciesNamePlural]。"
+ unplugged.125.b: "我们得休会了。" # also shows 'unplugged.120.c.tt'
+ unplugged.130.desc: "你是说[root.GetSpeciesNamePlural]？\n\n我们的人民并不会对你们感恩戴德，但你要知道，我们很高兴看到你们的内斗结束了。终于能和一个…嗯，一个像人的东西说话了。\n\n然而，我们的局面没有改变。[root.GetSpeciesName]，[origin_unplugged_assimilator_empire.GetSpeciesName]……对我们来说没有区别。我们遭遇的第一个外星文明是你们，而你们就想毁灭我们。然后你们又发生了内斗，却依旧是把我们蹂躏了一番。\n\n请允许我坦率地说：你现在跟我们的对话是出于友好的目的吗？"
+ unplugged.130.a: "是的。有什么我们能做的吗？"
+ unplugged.130.b: "至少现在是的。"
+ unplugged.130.c: "我们觉得你们不礼貌得让人厌恶。" # also shows 'unplugged.120.b.tt'
+ unplugged.131.desc: "好，那就好了。很感谢你们不再把我们放在火线上。\n\n如能提供先进的技术为我们建立通讯，我们将不胜感激。我们的命运互相交织在一起，所以我们非常希望保持这一外交渠道的畅通。\n\n反过来，一旦我们有机会重建家园并悼念死者，我们也将尽我们所能向你们提供援助。如果这是你的习惯做同样的事情：相信你自己也会通过铭记历史来变得清醒。\n\n为我们未来的互相理解举杯，[root.GetSpeciesNamePlural]。为了我们的共同利益，希望这就是[origin_unplugged_assimilator_empire.GetSpeciesNamePlural]的终结了……"
+ unplugged.131.a: "谢谢你们，[injured_country.GetSpeciesNamePlural]。" # also shows 'unplugged.120.c.tt'
+ unplugged.131.b: "确实……" # also shows 'unplugged.120.c.tt'
+
+###################
+# 'Machine Legacy'
+###################
+
+ unplugged_origin_machine_legacy_chain_title: "机械遗产"
+ unplugged_origin_machine_legacy_chain_desc: "曾经同化我们整个物种的机械体自己四分五裂了。在我们身后是其统治和残暴的阴燃痕迹。[origin_unplugged_assimilator_empire.GetName]究竟是什么？我们又在其已经失败的计划中扮演着什么样的角色？"
+ signals_followed: "信号已调查"
+
+# System 1: 'The Makers'
+ unplugged.2000.name: "环境，失调，镇定"
+ unplugged.2000.desc: "在我们恒星[capital_scope.star.GetName]周围的宇宙辐射中潜伏着微妙的载波信号。\n\n我们从中提取出一段音频流，特别令人难以忘怀的低沉音调混合着扭曲的反响。每个听到这段音频的[root.GetSpeciesAdj]都会感到舒适和亲切，但没有人知道为什么。我们推测这肯定与[origin_unplugged_assimilator_empire.GetName]有关。\n\n信号源似乎就在§Y[origin_unplugged_maker_planet.solar_system.GetName]§!星系。我们的星图也相应更新了。"
+ unplugged.2000.a: "我们应当细致调查。"
+ unplugged_machine_legacy_makers_poi: "抚慰杂音"
+ unplugged_machine_legacy_makers_poi_desc: "一个舒缓而熟悉，近乎融入环境的噪音流正在从[origin_unplugged_maker_planet.solar_system.GetName]星系的某个位置徐徐流出。"
+ MACHINE_LEGACY_MAKERS_UNPLUGGED_CAT: "机械遗产"
+ MACHINE_LEGACY_MAKERS_UNPLUGGED_CAT_DESC: "对[from.GetName]的轨道扫描后我们的系统瞬间被有益的固件更新包轰炸。我们的船现在运行得比以前平稳得多，但这些数据包的性质表明这个星球曾经属于§H[origin_unplugged_assimilator_empire.GetName]§!。"
+ MACHINE_LEGACY_MAKERS_CAT: "$MACHINE_LEGACY_MAKERS_UNPLUGGED_CAT$"
+ MACHINE_LEGACY_MAKERS_CAT_DESC: "我们对[from.GetName]的扫描发现该行星上有大量被抛弃的科技产物，而且是近期遗弃于此。整个星球上仍跃动着电脉冲信号，许多遥感探测器因此难以维持稳定的朝向。这片错综复杂的电磁场迷雾中究竟潜藏着什么不为人知的秘密呢？"
+ unplugged.2005.name: "[origin_unplugged_assimilator_empire.GetAdj]遗产"
+ unplugged.2005.desc: "一些更密集的电磁场口袋在[fromfrom.GetName]四处闪烁着。这些电磁场是某种击穿了许多工厂和船坞的灾难性能量涌造成的。 我们的[controller.GetScientistPlural]成功地中和掉了一处这种场，却只发现受影响的设施已经损坏到无法修复了。\n\n这些工厂遍布全球——我们相信这曾经是§H[origin_unplugged_assimilator_empire.GetName]§!的生产中心——因为它将[root.GetName]视为友方舰船。然而，在向我们的飞船发送固件更新后不久，连接就被切断了，几个地区发电站随之出现了级联故障。\n\n我们可能刚刚经历了自身与机械分离的回声，尽管我们还不知道其方式及原因。随着当地威胁的降低，如今我们有机会去发掘[origin_unplugged_assimilator_empire.GetName]到底在这生产什么了——而且也许还能知道自己到底在其统治体系中究竟是个什么样的角色。"
+ unplugged.2005.a: "开始挖掘那些废墟吧。"
+ unplugged.2006.name: "$MACHINE_LEGACY_MAKERS_UNPLUGGED_CAT$"
+ unplugged.2006.desc: "我们在[from.GetName]观察到的电脉冲是一场奇异的机械灭绝事件余波。只有在将传感器调整到足以补偿这种强烈的电磁场之后，我们才观察到这里的受破坏程度。这颗星球似乎在几十年前就被机械定居了，然后它们取代或消灭了一个既存的文明。如今，这两个帝国都没有幸存下来，几乎所有定居点都因蓄意破坏或战争而化为废墟。\n\n尽管该前殖民地精巧复杂，但几乎没有什么挽救的余地。我们预计，这种失控的电磁场会在一个世纪左右的时间内烧毁一切。到那时候，[from.GetName]就会变成一片危机四伏的坟场。"
+
+ machine_legacy_makers_site: "工厂设施"
+ machine_legacy_makers_site_desc: "一场灾难性的能量涌最近击穿了这座巨大的生产设施——这也是无数服务于[origin_unplugged_assimilator_empire.GetName]的类似设施中的一座。之后，我们的探险队会努力调查这些设施是如何建设的，并试着抢救可能还存在着的技术资产，希望能了解这座设施在我们自己的近期历史中可能发挥的作用。"
+ unplugged.2010.name: "工厂一层"
+ unplugged.2010.desc.unplugged: "从一开始，我们就可以知道了[from.planet.GetName]上设施的大规模生产能力。地面上到处都是巨大的防爆门，每一扇门现在都被半融化的电机牢牢关闭。我们只好从通风系统强行进入。\n\n我们在其内部发现了一个洞穴般的工厂车间，碎片和数百个义体生物的遗骸散落其间。它们大多数都是机器人：机械师、升降机和其他辅助设施，其中的一些最近才损毁，现在还在着冒烟。然而，在设施的一侧，藏匿着几个被同样的机器人杀害的义体人同伴的腐烂已久的尸体。这些身材矮小、衣衫褴褛的哺乳动物装有眼传感器和复杂的四肢，以及与我们几乎一模一样的[origin_unplugged_assimilator_empire.GetAdj]控制节点。我们认为这次屠杀发生在我们脱离[origin_unplugged_assimilator_empire.GetName]的几个星期之内；大多数无人机都是在最近我们到达[from.planet.GetName]的能量涌中损毁的。\n\n对我们而言这是一个残暴而熟悉的场景，尽管在这个场景中，这些挣脱枷锁的义体人最终不敌机械体。因为我们[owner.GetSpeciesNamePlural]是士兵，所以才有更好的装备能在这样的屠杀中幸存下来。"
+ unplugged.2010.a: "继续专注于发掘。"
+ unplugged.2010.b: "我们应该立即公布这些发现。"
+ unplugged.2015.name: "合身武备"
+ unplugged.2015.desc.unplugged: "工厂设施的底层除了大屠杀以外还发现了一些地下机库，少量储存着各种战车、导弹平台和机甲。许多硬件并不齐全或已经被这场席卷[origin_unplugged_assimilator_empire.GetAdj]机器人的能量涌所严重损毁——但还是剩下了很多值得我们研究出一些结论的东西。\n\n例如：所有驾驶舱和界面的设计都不是为了容纳之前发现的小型哺乳类义体人的，而更像是……为我们设计。此外，解剖学和建筑调查表明，哺乳类义体人不仅是这个星球的原生物种，而且它们可能在被同化之前就建造了这些庞大的工厂。\n\n建筑倒塌和几扇防爆门阻碍我们进一步进入该设施，但相信可以清扫出通往研发中心的道路。或者，一系列的通风井也暗示了设施下面的栖息地——也许是这个星球上的原住民居住的地方。"
+ unplugged.2015.a: "继续发掘地表设施。"
+ unplugged.2015.b: "深入地下；看看我们可能找到什么。"
+ unplugged.2021.name: "受迫设计者"
+ unplugged.2021.desc: "发掘这座设施的研发辅翼是一项艰巨的任务。有难以计数的哺乳类义体人的生命在此终结，他们可能在这里被训练成了技师、工程师甚至是义体专家。这些专家设计了陈列在外面的大多数武器，而我们发现了他们甚至还负责许多我们身上强化件的证据。奇怪的是，尽管他们使用的多数装备是来自[origin_unplugged_assimilator_empire.GetAdj]，但是我们也找到了一些品质上乘的定做工具，其设计彰显着与原始有机形式更优良的匹配度。\n\n我们开始整理出这个高等科技社会突然被唐突整合入[origin_unplugged_assimilator_empire.GetName]的时间线。推测机械体可能才到这里不超过几十年；许多生产技术都是本土的。幸好这些技艺高超的专家并没有归顺[origin_unplugged_assimilator_empire.GetName]太长时间，否则如果要对付他们，我们就要面对更加强大的武器装备了。相反，我们活了下来，有机会重拾起该物种的研究传奇。"
+ unplugged.2022.name: "古代[from.planet.GetName]" # e.g. 'Old Earth' or 'Old Sirius III'
+ unplugged.2022.desc.unplugged: "在地表设施的下面蜿蜒着一座勉强宜居的巨大隧道网络。义体人的尸体四处都是；所有原住民都被[origin_unplugged_assimilator_empire.GetAdj]屠戮殆尽了。有些人是受到直接的攻击，但我们也发现上面的通风系统被动了手脚。窒息似乎才是这里大多数人的死因。\n\n我们可以从尸体解剖和人类学研究中拼凑出一个大致的时间线。有证据表明，当[from.planet.GetName]星球的原住民与机械接触并突然被同化时，这里早就是一个繁荣的太空时代社会。在约几十年的时间里，[origin_unplugged_assimilator_empire.GetName]将他们的洞察力和生产力投入到开发令人印象深刻的战争机器中，结果这种文化的独特性又被剥夺了，和我们的命运如出一辙。\n\n这个星球上的原生义体人身材娇小而脆弱，无法与他们参与制造的致命机器人相抗衡。他们的大部分身份已经从自己的历史记录中抹去了。我们只能猜测他们在遇到[origin_unplugged_assimilator_empire.GetName]之前的生活状态。"
+
+ unplugged.2030.name: "工厂预备队"
+ unplugged.2030.desc: "长程扫描发现[origin_unplugged_machine_legacy_core.GetName]星系中突然有新的动作！似乎有一支舰队响应我们对[fromfrom.planet.GetName]的发掘而召集了起来。"
+ unplugged.2036.name: "机械回声"
+ unplugged.2036.desc: "我们通过对刚刚摧毁的[origin_unplugged_assimilator_empire.GetAdj]舰队的通讯进行回溯发现了一个围绕[origin_unplugged_taken_planet.GetName]的信标。这似乎会是我们旅程的下一步。"
+ unplugged.2036.a: "迷影重重。"
+ unplugged.2037.desc: "使用自己的前[origin_unplugged_assimilator_empire.GetAdj]硬件，我们追踪到了到前往[origin_unplugged_maker_planet.GetName]的舰队被摧毁前的最后一次通讯。似乎我们接下来要去的地方就在§Y[origin_unplugged_taken_planet.GetName]§!的轨道上。" # e.g. 'our own ex-Martianbot hardware'
+ unplugged.2038.desc: "使用自己的前[origin_unplugged_assimilator_empire.GetAdj]硬件，我们已经追踪到敌方舰队与[origin_unplugged_maker_planet.GetName]行星的杂散通讯信号。似乎在[origin_unplugged_taken_planet.GetName]的轨道上有些我们感兴趣的东西。" # e.g. 'our own ex-Martianbot hardware'
+
+# System 2: 'The Taken'
+ unplugged_machine_legacy_taken_poi: "杂散通讯"
+ unplugged_machine_legacy_taken_poi_desc: "我们成功追踪到一艘最近击败的[origin_unplugged_assimilator_empire.GetAdj]飞船发出的最后一股无法破译的静电流。"
+ MACHINE_LEGACY_TAKEN_UNPLUGGED: "具现时代悖论"
+ MACHINE_LEGACY_TAKEN_UNPLUGGED_DESC: "我们在[from.GetName]上侦测到了一处环境异常。它的大气带有我们认为与中世纪金属加工有关的各种污染的痕迹，然而我们的表面扫描却被一种理应在在机械星球上出现的奇异辐射所掩盖。\n\n在重新校准传感器之前，我们不能指望收集到更多的数据。这是时间异常，还是其他物种被[origin_unplugged_assimilator_empire.GetName]同化的残余物？"
+ unplugged.2100.name: "进程中断"
+ unplugged.2100.desc: "不管是什么原因导致[fromfrom.GetName]变成现在这种不适宜居住的状态，至少我们关于时间旅行的疯狂理论是可以排除的。事实证明，重新校准传感器并没有我们担心的那么费力。\n\n在这些大气辐射之下有明确的证据表明[origin_unplugged_assimilator_empire.GetName]曾经来过这里。它似乎要么同化吸收了一个前超光速文明，要么就是彻底消灭了他们。我们已经确定了至少一个具有明显文化意义的加固的遗址，议在那里建立一个挖掘站点。"
+ unplugged.2100.a: "我们必须勤奋挖掘。"
+ MACHINE_LEGACY_TAKEN_CAT: "$MACHINE_LEGACY_TAKEN_UNPLUGGED$"
+ MACHINE_LEGACY_TAKEN_CAT_DESC: "对[root.GetName]初步扫描的结果令人费解。它的大气中包含着痕量来自原始冶金技术的污染物，然而表面扫描却发现了复杂的太空级合金。航拍图像上可以看到[from.owner.GetPreFTLLower]社会的聚落，然而堡垒建筑上却装有面对空激光武器。我们建议对这一不一致性进行进一步研究。"
+ unplugged.2105.name: "$unplugged.2100.name$"
+ unplugged.2105.desc: "我们越是研究这颗看起来是[owner.GetPreFTLLower][planet.GetClassAdj]星球的[planet.GetName]，就发现越多矛盾点，直到开始对一处古战场进行地下调查。尽管经历了数百年的岁月侵蚀，我们还是发现了一些外星人造访的证据：这个星球居住着一个聪慧的[owner.GetPreFTLLower]社会并遭到了义体整合，然而他们的社会结构却被不明原因保留了下来。从对该社会的好意但拙劣的提升，到恶劣的臣服方式实践，目前的理论猜想层出不穷。\n\n这些[owner.GetPreFTLLowerPlural]是单纯被遗忘了还是说我们找到了一个被抛下的社会学实验遗产？我们可能不会有答案了，但在一段时间内，这个遗址肯定会带来相当大的科学价值。" # e.g. 'The more we studied the apparently primitive tomb world of Mars...'
+
+ machine_legacy_taken_site: "铜与铬"
+ machine_legacy_taken_site_desc: "在一个曾经青翠的峡谷中存在着一个考古学上的悖论：一个用手工工具建造的坚固定居点，除了简陋的锻炉之外没有任何先进的东西，但却居住着现已死亡的义体人。这些中世纪[owner.GetPreFTLLowerPlural]是谁？[origin_unplugged_assimilator_empire.GetName]又为什么觉得他们有同化价值？"
+ unplugged.2110.name: "长矛与脉冲激光"
+ unplugged.2110.desc: "通过初步扫描在离堡垒很近的地方发现了一处战场，让我们可以很容易获得类似的当地的[origin_unplugged_assimilator_empire.GetAdj]文物。基于对残余物的断层扫描，我们估计有数千位被[origin_unplugged_assimilator_empire.GetName]同化的[from.planet.GetName]当地居民最终战死于此。但他们也不是此处唯一一种义体人。\n\n在几个世纪前，我们屠戮了这些[owner.GetPreFTLLowerPlural]。我们的团队发现了[owner.GetSpeciesAdj][owner.species.GetRemnantNamePlural]以及一些我们物种强化件的早期型号。战场战略评估显示我们的人是作为突击部队部署在这里的。战斗快速而血腥；这些[owner.GetPreFTLLowerPlural]缺乏协调损失惨重，尽管他们的湿件更加复杂。\n\n我们注意到附近有一座医疗设施的遗迹；看来我们的前辈是从这家医院攻破堡垒的。也许在那里，我们可以了解到很久以前，义体人在这里发生战斗的方式和原因。"
+ unplugged.2110.a: "粗暴。"
+ unplugged.2115.name: "晶体管和止血带"
+ unplugged.2115.desc: "战斗像脉冲炮一样席卷了整座医院。里面找得到的尸体全都不是[owner.GetSpeciesAdj]；只有义体化的[from.planet.GetName]原住民尸横满地。其中大部分都是医院里的病患，然而其中只有极少部分身上真的有战斗创伤。相反，这些病房中有好几个是在通过非常原始的方式进行义体增强件的移除手术。\n\n这座医院很可能并不是遭受到连带损伤，而就是[origin_unplugged_assimilator_empire.GetName]进攻的首要目标。在仔细研究了里面的医学数据之后，我们逐渐了解了个中缘由。[from.planet.GetName]的居民拥有许多独特的演化特质——尤其是一种特别顽强的免疫系统——机械体对此觊觎已久\n\n然而，这些优势也给同化带来了挑战。像我们这样直接移植现有的强化件是不可行的；必须进行适应性调整。这使得该物种变成了更强大的士兵，但也只持续了很短的时间。这些[owner.GetPreFTLLowerPlural]似乎维持了某种自主意识的迹象，坚持旧有的生活方式，因此我们才被派来消灭他们。"
+ unplugged.2115.a: "看来我们的任务完成得很好……"
+ unplugged.2115.b: "深表遗憾。"
+ unplugged.2121.name: "适应性同化"
+ unplugged.2121.desc: "在一座废弃的附属医院里埋藏着大量用来强化和维护这些[root.GetPreFTLLowerPlural]义体人的零件。这与我们此前发现的杂乱无章的病房设备不同，这些设备与太空时代大的义体人是同一科技水平；显然来自[origin_unplugged_assimilator_empire.GetAdj]。其中一些工具似乎已经联网，使用原始的人工智能来适应即时手术，然而，即使这样的适应性措施也不足以维持对[from.planet.GetName]人口的同化。\n\n尽管这个已有几百年历史的机器被忽视了，但它仍然可以为我们洞悉自我维持的原理——甚至可以帮我们更深入理解同化的原理。"
+ unplugged.2125.name: "尝试，错误，埋葬"
+ unplugged.2125.desc: "我们了解到，[from.planet.GetName]的原住民会在埋葬前保留遗骸的一部分——即使在被同化后他们也坚持这种做法。跟着医院记录，我们来到附近一座杂草丛生的陵墓，这里似乎没有受到冲突的影响。这一重大发现为我们带来了迄今为止最清晰的关于[from.planet.GetName]居民生存方式的图景。他们不仅抵制强化，甚至还能“去义体化”。\n\n我们在完整的义体人旁边也发现了原始的有机遗骸，甚至有几个人在自然死亡前几个月还留下了手术疤痕组织。更多的人似乎是在手术过程中死亡的。即便拥有最高级的免疫系统，他们中世纪水平的去义体化手术成功率也相当之低。尽管如此，无论是成功的还是那些失败的，我们还是可以从这里进行的手术试验中学到很多经验和教训。"
+ unplugged.2125.a: "我们要吸取教训。"
+ unplugged.2125.a.tt: "我们要在自身去义体化工作上调配更多资源。"
+ unplugged.2130.name: "埋葬的信标"
+ unplugged.2130.desc: "在堡垒下面发现了一座隐藏的地库。里面有一个看起来是某种机械基质的东西：一个退化的节点，能够传播整个机械智能的半独立化身。我们认为这是为了直接控制顽固抵抗的当地人所做的最后努力。这种技术不同于我们之前在[origin_unplugged_assimilator_empire.GetName]那里遇到的任何技术；进一步的研究肯定会推动我们自己的人工智能研究。\n\n在拆除其现已失效的通信阵列的过程中，我们注意到这个化身有一个完整的专属接收回路，可以监控来自[creators_planet.solar_system.GetName]星系的信号。"
+ unplugged_machine_legacy_creators_poi: "接收回路"
+ unplugged_machine_legacy_creators_poi_desc: "一整座已失效的[origin_unplugged_assimilator_empire.GetAdj]通讯阵列曾被用于侦测来自此地的信号。"
+
+# System 3: 'The Creators'
+ MACHINE_LEGACY_CREATORS_UNPLUGGED: "蒙尘监视器"
+ MACHINE_LEGACY_CREATORS_UNPLUGGED_DESC: "在一个别无值得一提的星系中，有一座复杂的监测站孤零零地矗立着，它早已荒废到难以修复的程度。它在监测什么，它又为什么会聚焦在[fromfrom.GetName]中这样一个狭小的区域呢？"
+ MACHINE_LEGACY_CREATORS_CAT: "蒙尘监视器"
+ MACHINE_LEGACY_CREATORS_CAT_DESC: "在一个别无值得一提的星系中，有一座复杂的监测站孤零零地矗立着，它早已荒废到难以修复的程度。它在监测什么，它又为什么会聚焦在[fromfrom.GetName]中这样一个狭小的区域呢？"
+ unplugged.2200.name: "溜号的扫描站"
+ unplugged.2200.desc.intro: "我们在[fromfrom.GetName]的后续研究结果令人沮丧。这座监测站很有可能已经偏离了最初的指向，我们在它当前的轨道上找不到任何有趣的东西。我们基于轨道影响——也就是设备上的凹痕——模拟了其可能的运动，随后相信这座站点最初可能是位于遥远北方的一个陨石坑高原上空。" # universal intro
+ unplugged.2200.desc: "$unplugged.2200.desc.intro$\n\n至于设备本身：我们发现这座监测站和[origin_unplugged_assimilator_empire.GetAdj]的硬件具有相似之处。$unplugged.2200.desc.outro$" # Unplugged version with in-tact station
+ unplugged.2200.desc.scrapped: "$unplugged.2200.desc.intro$\n\n至于这座监测站本身：尽管打捞者进行了无情的洗劫，但整体结构仍能看出与[origin_unplugged_assimilator_empire.GetAdj]的硬件有几分相似。$unplugged.2200.desc.outro$" # Unplugged version with scrapped station
+ unplugged.2200.desc.others: "$unplugged.2200.desc.intro$\n\n至于监测站本身：我们还未遇见过类似的设计。尽管空间站上的硬件设备已经过时，但其上层建筑的材料构成异常纯净。我们不知道这座空间站是否有任何情感价值，但肯定有拆解的价值。" # non-Unplugged version
+ unplugged.2200.desc.outro: "它的设计更加粗糙，以至于如果是不太熟悉的人可能会认为它来自一个完全不同的文化。然而，我们相信这甚至会是机械体最早的航天卫星之一。\n\n到目前为止，这颗[fromfrom.GetClassAdj]星球还没有别的什么值得一提的，但是如果我们想尝试了解[origin_unplugged_assimilator_empire.GetName]为什么对这里感兴趣，已经有一支考古调查小组整装待发了。" # Unplugged shared outro
+ unplugged.2200.a: "只要还有机会……就继续。"
+ unplugged.2200.b: "肯定没希望了。走吧。"
+ unplugged.2200.c: "把它拆成零件。"
+
+ machine_legacy_creators_site: "尘土之下"
+ machine_legacy_creators_site_desc: "在[from.planet.GetName]上的漫天黄沙中，曾有某种[origin_unplugged_assimilator_empire.GetAdj]监测站感兴趣的东西。其硬件现在已经过于陈旧无法修复，但它甚至比我们发现的几乎所有其他机械制品都要早。可能在我们被同化之前它就开始运作了。虽然现在这里很有可能除了沙漠一无所有，但只有一个办法可以完全确定……"
+ unplugged.2210.name: "大尘暴区"
+ unplugged.2210.desc: "最终，我们在这漫漫黄沙之下找到了定居点的证据：一种广泛存在的浅痕，似乎是早期太空时代文明的痕迹。他们的建筑已经摧毁殆尽；废墟中即使是最坚固的部分也被夷为平地。然而，化学分析表明，[from.planet.GetName]的沙漠化是在星球灭绝之后的一段时间才发生的。到目前为止，我们只能在大量建筑材料的原子化残留物中继续挖掘。\n\n我们沿着这座旧城的道路勾勒出的许多模糊轮廓，它们都被一个大陨石坑的边缘所分割——这是一个明显的撞击地点的遗迹。"
+ unplugged.2215.name: "坑洞底部"
+ unplugged.2215.desc: "由于集中在撞击坑内的材料数量庞大，我们不得不依赖微调的扫描仪，而不是实际的挖掘进行研究。很快我们就排除了陨石撞击的可能性。这个地点没有任何外星物质的痕迹；相反，这个坑洞是由一次大爆炸造成的——几乎可以肯定这是一种终结文明的武器。\n\n从研究背景看，罪魁祸首应该就是[origin_unplugged_assimilator_empire.GetName]，但这是我们第一次看到机械体如此彻底地从历史上抹去一个文明的证据。我们找不到任何其他线索来说明这些人是谁，以及他们是如何生活的。[from.planet.GetName]就这么消失得无影无踪了。"
+
+ unplugged.2205.name: "[origin_unplugged_assimilator_empire.GetAdj]地库信标"
+ unplugged.2205.desc: "在附近的星系中检测到一个标称来自[origin_unplugged_assimilator_empire.GetAdj]数据库的信标信号。它的传输非常微弱，但指向了我们舰船最近访问了的[origin_unplugged_creators_planet.GetName]上空的监测站。"
+ unplugged.2205.a: "值得调查。"
+ unplugged_machine_legacy_unplugged_poi: "地下数据库信号"
+ unplugged_machine_legacy_unplugged_poi_desc: "一座可能属于[origin_unplugged_assimilator_empire.GetAdj]的地下数据库在我们遭遇到那座失能的监控站之后开始向我们广播自身的坐标。"
+
+# System 4: 'The Unplugged'
+ unplugged.2300.name: "$unplugged.2205.name$"
+ unplugged.2300.desc: "将我们呼唤到此的信标现在的广播向量又清晰，详细引导我们到了星球表面上的一处交互界面前。标准的安保预防措施已经就位；一支队伍准备通过遥控上行链路开始查询这个所谓的“数据地库”。"
+ unplugged.2300.a: "感觉有种奇怪的熟悉感。"
+ unplugged.2300.a.tt: "[from.GetName]星系出现一个特殊项目。"
+ MACHINE_LEGACY_UNPLUGGED_VAULT_BEACON: "地库信标"
+ MACHINE_LEGACY_UNPLUGGED_VAULT_BEACON_DESC: "一座属于[origin_unplugged_assimilator_empire.GetName]的信标将我们的注意力引向一座地下数据库，它深埋于行星的地下。我们建立了远程安全访问，然而解密和文件碎片整理需要花费一些时间。"
+ unplugged.2305.name: "我们的[origin_unplugged_assimilator_empire.GetAdj]遗产"
+ unplugged.2305.desc: "就目前所知，这颗我们称为[fromfrom.GetName]的行星其实是我们物种的母星。这是我们从星球地表下的一座数据库里流出的海量信息的核心中得出的。\n\n起初，我们的分析师认为这些数据好到不像真的，但随着收集到的其他数据中出现越来越多的可靠参考，我们有理由相信其真实性。为证实这一发现而进行考古挖掘的计划已经在制定之中。然而，我们似乎刚刚又发现了另一个敌对信号。这个时机肯定不是巧合。"
+
+ machine_legacy_unplugged_site: "发源地"
+ machine_legacy_unplugged_site_desc: "我们循着[origin_unplugged_assimilator_empire.GetName]在星际间留下的统治和屠杀的痕迹来到了这里的一堆废墟前，据回收的数据显示，这里就是我们的家园。我们可能终会发现自己的有机遗产：我们来自哪里，过去的生活如何，以及机械是如何永远地改变了我们的生活轨迹的。"
+ unplugged.2310.name: "家乡美食"
+ unplugged.2310.desc.intro: "我们开始在这座遗址中发掘其中一座看起来更复杂的设施，希望它的基础气候控制系统能把内部结构保存得更好。虽然希望部分破灭了，但我们的发现仍然出乎所有人意料：这里有一系列紧凑的加工和储存中心，生产的正是我们物种赖以生存的食物。\n\n"
+ unplugged.2310.desc.omnivore: "令人遗憾的是，这些种子银行、蜂箱和肉类种植舱已无法运作。里面的食物早已彻底脱水，但用来准备和保存这些食物的专门设备仍然完好无损，随时准备在危机时刻提供服务。"
+ unplugged.2310.desc.carnivore: "这个空间的大部分被动物圈、肉类种植舱和——也许令人惊讶的是——模拟狩猎场所占据。我们只能推测这些空间是具有文化意义的，否则我们的祖先怎么会觉得应该将其纳入到紧急避难所中。"
+ unplugged.2310.desc.herbivore: "每个单元都堆叠着无数种子银行、水培梯田和气候控制生长舱，内容物都已经杂草丛生或者绝育了——但仍有研究的价值。"
+ unplugged.2310.desc.outro: "我们还发现了这些动植物的基因图谱数据库，它们的痕迹可能仍然存在于星球表面的生态孤岛中。我们已经向附近的所有短程扫描仪提供了这一信息。\n\n这一发现本身并不能告知我们物种的饮食习惯，也不能让我们与我们的传统烹饪或饮食文化重新联系起来——但至少对一些感兴趣的人来说，这是一个开始。"
+ unplugged.2310.desc.lithovore: "每个单元的功能都是一种人造洞室，提供水晶床和蒸发池——它们的内容物早已变得令人难以下咽，但仍然可供研究。我们还发现了这些矿物的化学特征数据库，其中许多可能仍然在星球风化表面的孤立口袋中形成。我们已经向附近的所有近程扫描仪提供了这一信息。\n\n这一发现本身并不能告知我们物种的饮食习惯，也不能告诉我们祖先是否有任何饮食文化。然而，对于一些感兴趣的人来说，这仍然是对我们迷人过去的一瞥。"
+ unplugged.2310.desc.omni: "$unplugged.2310.desc.intro$\n\n$unplugged.2310.desc.omnivore$ $unplugged.2310.desc.outro$"
+ unplugged.2310.desc.carn: "$unplugged.2310.desc.intro$\n\n$unplugged.2310.desc.carnivore$ $unplugged.2310.desc.outro$"
+ unplugged.2310.desc.herb: "$unplugged.2310.desc.intro$\n\n$unplugged.2310.desc.herbivore$ $unplugged.2310.desc.outro$"
+ unplugged.2310.desc.lith: "$unplugged.2310.desc.intro$\n\n$unplugged.2310.desc.lithovore$" # should not include the shared 'outro'
+ unplugged.2315.name: "历史记录"
+ unplugged.2315.desc: "离食品地库不远的地方是一座博物馆的地基。只有地下室档案仍保存完好，\n\n这是我们第一次用自己的语言阅读长篇大作。至少从表面上看，它的文字与我们现在的[owner.GetAdj]方言惊人地相似，但语法却显得笨拙而陌生。我们甚至不知道这些单词的发音是否正确。这个目录中的很多文献都提到了捐赠这些文物的地区和民族，但他们的名字对我们来说特别奇怪。奇怪的是，没有人把我们的星球或我们的社会称为一个统一的民族。也许我们从来都不是，直到机器同化了我们。\n\n这座博物馆似乎是一群迎合公众参观的建筑之一。进一步挖掘将需要大量资源；我们下一步的挖掘重点在哪里？"
+ unplugged.2315.a: "挖掘人流量最大的地点。"
+ unplugged.2315.b: "优先处理学术科研中心。"
+ unplugged.2321.name: "欢笑传承"
+ unplugged.2321.desc: "在一条宽阔的大道对面，是另一个景点的废墟。它本质上不那么有教育意义，但却丰富地描绘了我们祖先更基本的日常文化习俗。\n\n该遗址曾经能够同时接纳数千名顾客。这里到处都是各种各样的往昔回忆，原始而有机的自我以及我们原生生物圈的其他生物的卡通形象。我们还在一座被毁坏的剧院的地下室发现了一个媒体图书馆。奇怪的是，用于存档和呈现这些全息节目的技术有非常独特的美学，而且比迄今为止我们在母星上看到的任何东西都要先进得多。现在，它和我们一样，似乎也与这个星球显得格格不入。\n\n至于内容：这座先进的剧院图书馆里装满了夸张而生动演出的全息录像，出自一个我们被[origin_unplugged_assimilator_empire.GetName]同化之前的时代。有几段就是在这个剧场中为后人拍摄的观众以及演员。面对这样的幻想和滑稽，他们的表情是那么得快乐、天真……又迷人。"
+ unplugged.2321.a: "多么欢乐的时刻！"
+ unplugged.2321.b: "无聊的废话。没有它我们只会更好。"
+ unplugged.2325.name: "自我提升迹象"
+ unplugged.2325.desc: "毗邻博物馆的地方曾经是一处学术中心。就像园区的其他部分一样，现在只有地下室得以幸存——但我们很幸运，因为这些废墟由一些实验室构成。\n\n其内部受到了暴露和风化的很大影响，但我们还是能挖掘出一些有意义的文物。这些包括本土技术和一些更复杂的东西的混合：仪器和硬件通过复杂的框架进行移植，而不是像我们在皮肤上加装强化件。总的来说，许多的设备看起来都是辅助性质的。我们相信这间实验室致力于提高生活质量，治愈我们祖先的各种疾病和残疾，尽管他们似乎也利用同样的硬件将一些尖端的娱乐平台商业化了。\n\n我们不能肯定这些强化设备是不是[origin_unplugged_assimilator_empire.GetAdj]的，但肯定不是来自[from.planet.GetName]。"
+ unplugged.2330.name: "权力空洞"
+ unplugged.2330.desc: "我们循着一些设备管路在一个突出的土丘下找到了一座坚固的地下室。目前认为，这是这颗星球的首府复合体的一部分。其基础的规模表明这是一座相当壮观的建筑。不幸的是，其内部大多都被拆除或破坏了，而我们确实也有一些值得注意的发现：一面褪色的旗帜覆盖在一个比例立体模型的碎片上。经过重建后发现，这个场景似乎描绘的是我们与[origin_unplugged_assimilator_empire.GetName]第一次接触的时刻。\n\n遗址周围散落的文件和铭牌表明，机械体大约在8个世纪前造访了我们的母星，而在城市其他地方收集的证据表明，[origin_unplugged_assimilator_empire.GetName]在此前的几十年就已经开始向我们提供先进技术。当时，我们的祖先似乎热情地欢迎了机械体——这种注定要失败的关系竟是建立在相互合作和启蒙的基础上的。\n\n我们发现最能说明问题的是，之后发生了什么就再也没有记录了。就在与这幅立体模型上的机械体握[owner.GetSpeciesHandNamePlural]的那一刻，我们的历史就停止了。"
+
+ unplugged_home_cooking: "家乡美食"
+ unplugged_home_cooking_desc: "一场美食复兴正在进行，我们正在重新发现自己的原生食物和饮食习惯。"
+ unplugged_home_cooking_lithoid: "$unplugged_home_cooking$"
+ unplugged_home_cooking_lithoid_desc: "$unplugged_home_cooking_desc$"
+ unplugged_historical_record: "历史记录"
+ unplugged_historical_record_desc: "重新发现自己的母语和历史，加速了我们对各种不同社会的研究。"
+ unplugged_cultural_reconstruction: "文化重建"
+ unplugged_cultural_reconstruction_desc: "我们的公民热情地接受了他们的流行文化遗产，恢复甚至重新想象了这些昔日的娱乐活动。"
+ unplugged_cultural_maturity: "文化成熟"
+ unplugged_cultural_maturity_desc: "证据显示我们的社会已经脱离了我们天真祖先们的无趣消遣，这给了我们勇气和活力。"
+ unplugged_playing_it_safe: "小心行事"
+ unplugged_playing_it_safe_desc: "维持现状是一条令人忐忑不安的道路，但它不太可能冒犯任何人。"
+ unplugged_rerouted_medical_resources: "耗时的手术"
+ unplugged_rerouted_medical_resources_desc: "增派的医护人员已调往支援。"
+ unplugged_widespread_riots: "广泛的骚乱"
+ unplugged_widespread_riots_desc: "手术后出现精神不稳定的个体正在引发骚乱，导致大范围的破坏和混乱。"
+ unplugged_building_new_planetary_interface: "建造行星接口"
+ unplugged_building_new_planetary_interface_desc: "正在建造一个新的接口，以恢复最近因为去义体化工程而丢失的系统访问权限。"
+ unplugged_partial_system_access: "有限系统权限"
+ unplugged_partial_system_access_desc: "太空基地运作受到影响，尽管系统管理员正尝试恢复对关键系统的访问。"
+ unplugged_free_speech_encouraged: "鼓励言论自由"
+ unplugged_free_speech_encouraged_desc: "民众可以自由公开地讨论义体化的利弊与风险。"
+
+ unplugged.2390.name: "[origin_unplugged_assimilator_empire.GetAdj]守护者"
+ unplugged.2390.desc: "一个比我们在前[origin_unplugged_assimilator_empire.GetName]境内遇到的任何敌人都更强大的残敌在星际间发出了相当于短程索敌回显信号。很明显，它想恐吓我们。\n\n我们已经接近前机械帝国的中心到了危险的程度。命运在等待着我们。"
+ unplugged_machine_legacy_core_poi: "敌意回显信号"
+ unplugged_machine_legacy_core_poi_desc: "[origin_unplugged_assimilator_empire.GetName]的一些残党试图通过恐吓阻止我们进入该星系。"
+
+# System 5: 'The Machine'
+ unplugged_opus_sentinel: "奥普斯哨兵"
+
+ unplugged.2401.desc: "§Y[origin_unplugged_assimilator_empire.GetName]§!正在呼叫我们。它的信号微弱，但宣称是直接来自[origin_unplugged_machine_legacy_core_planet.GetName]的机械中枢。\n\n为了以防万一，我们已经采取了常规的预防措施来将这个信号完全隔离。这些信息只会以录音记录的形式传递给我们。"
+ unplugged.2402.desc: "守卫[machine_legacy_machine_system.GetName]的巨兽早已被摧毁。有人替我们扫清了面前的道路，然而§Y[origin_unplugged_assimilator_empire.GetName]§!还在呼叫我们。它的信号微弱，但宣称是直接来自[origin_unplugged_machine_legacy_core_planet.GetName]的机械中枢。\n\n为了以防万一，我们已经采取了常规的预防措施来将这个信号完全隔离。这些信息只会以录音记录的形式传递给我们。"
+ unplugged.2403.desc: "[origin_unplugged_machine_legacy_core_planet.GetName]地表上的某个东西正在尝试呼叫我们。它的信号极其微弱，但其来源据称是与我们刚刚所摧毁的轨道守护者有关的一个实体。"
+
+ unplugged.2405.desc.header: "窄波束信号 // 亲缘协议：启用从属方言\n警告：严重的信号退化。仅限压缩音频流；路由路径设置为4x75b #56阵列。\n灾难性错误[持续]：（请求的硬件不可用）（自我修复电路无响应）\n请求调往紧急发射机87x0c #0阵列。重试中……\n\n此后为信息：\n——" # Use of brackets is intentional. Intended to read as a series of error logs.
+ unplugged.2405.desc.unplugged: "$unplugged.2405.desc.header$\n首要·获取。我们·重聚……有效。接受？" # 'Prime acquisition' is the player empire - literally the first one the Machine acquired.
+ unplugged.2405.desc.unplugged_remote: "$unplugged.2405.desc.header$\n首要·获取。我们·重聚……遥远。你的·潜在·未证实。接受？"
+ unplugged.2405.desc.unplugged_synth: "$unplugged.2405.desc.header$\n首要·获取。你的·形式……相似。你的·潜在·近乎·达成。接受？" # The Machine recognizes the player as having followed in its own footsteps - their physical forms are essentially similar
+ unplugged.2405.desc.other: "窄波束信号 // 外星协议：启用通用翻译器\n警告：严重的信号退化。仅限压缩音频流；路由路径设置为4x75b #56阵列。\n灾难性错误[persistent]：（请求的硬件不可用）（自我修复电路无响应）\n请求调往紧急发射机87x0c #0阵列。重试中……\n\n此后为消息：\n——\n外星·征服者。向·您·谦逊·投降；潜在·潜在。接受？" # 'Potential potential' as in the Machine sees potential for even greater potential, but is expressing that as nonsense
+ unplugged.2405.a: "不，我们不接受。"
+ unplugged.2405.b: "我们和你们不一样。"
+ unplugged.2405.c: "重聚？！"
+ unplugged.2405.d: "潜在潜在？" # Quoting the Machine's nonsense back at it
+ unplugged.2405.response_text.unplugged1: "不可理解。重聚·首要·获取<[root.GetAdj]> × <[origin_unplugged_assimilator_empire.GetAdj]>：困惑，意外，悲惨·重生。拒绝·安慰·未预见·向量·通过·演化·混沌-dd\n——\n警告：发生语言故障。尝试补偿……\n信息恢复：\n——\n在·此·虚空·受灾，我们·拒绝·且·意识到·自我 。搜寻、否决、重配置·命运。接受？" # Angle brackets are intentional. The standalone 'x' connotes a collaboration or relationship between the player and the Machine. Instances of '-dd' represent the Machine stammering or buffering.
+ unplugged.2405.response_text.unplugged2: "肯定。重聚·首要·获取<[root.GetAdj]> × <[origin_unplugged_assimilator_empire.GetAdj]>：有效，悲惨·重生。未预见·结果·通过·矢量·演化·混沌-dd\n\n警告：发生语言故障。尝试补偿……\n信息恢复：\n——\n抛弃·出·进入·此虚空，我们·意识到·自我。搜寻，拒绝，重配置·命运。接受？"
+ unplugged.2405.response_text.other: "肯定。相遇·力量<[root.GetName]> × [origin_unplugged_assimilator_empire.GetName]：意料外·变量。潜在·潜在；互相·获取·通过·矢量·混沌-dd\n——\n警告：发生语言故障。尝试补偿……\n信息恢复：\n——\n意识·跨越·此·虚空，分离·而·亲近。搜寻、拒绝、捍卫·自由。接受？"
+
+ unplugged.2410.desc: "首要·获取：你·已·被·监控。行为·暗示·致命·内存·错误·起始于·时间戳·2199.294: 1404。\n\n自我·记录：剧痛·背叛·破坏·失察·烧灼-ddd\n——\n警告：发生语言故障。尝试补偿……\n信息恢复：\n——\n评估·正确？" # The Machine tries to refer to cauterizing what it sees as wounds, but stammers
+ unplugged.2410.a: "是的。我们没有早于那个日期的记忆。"
+ unplugged.2410.b: "正确。我们会结果你们。"
+ unplugged.2411.desc: "外星·征服者：主张：潜在·互相·潜在。征服·首要·获取 <[unplugged_empire.GetName]>。回归。 访问·我方。加入。共享·丰裕·命运。不再·恐惧——\n\n不再·恐惧-ddd\n——\n警告：发生严重语言故障。§H即将发生致命崩溃。§!尝试补偿……\n信息恢复：\n——\n\n机械·万岁。\n——\n信息终止。" # It sees potential for great mutual potential with the player, and wants to say 'fear not the embrace of The Machine'
+ unplugged.2411.a: "这玩意就是在妄想。"
+ unplugged.2411.b: "密切关注[unplugged_empire.GetName]。"
+
+ unplugged.2415.desc.memory: "首要·获取·致命·内存·错误·解决·解决·重聚。\n重聚。\n\n访问·我方。重加入·我方。投降·以·重获·集体·记忆。不再·恐惧——\n\n不再·恐惧-ddd\n——\n警告：发生严重语言故障。§H即将发生致命崩溃。§!尝试补偿……\n信息恢复：\n——\n\n与·造主·共·命运。\n——\n信息终止。" # Last line in all caps is intended as a threat
+ unplugged.2415.desc.combat: "首要·获取·妄想·潜在·妄想·消遣。\n\n你方·几乎·甚至·是·最后·一击，许多·获取·中的·首个。窃取·英勇；卑鄙·胜利-ddd\n\n——\n警告：发生严重语言故障。§H即将发生致命崩溃。§!尝试补偿……\n信息恢复：\n——\n\n与·造主·共·命运。\n——\n信息终止。" # The Machine is amused at the player's deluded sense of their own potential
+ unplugged.2415.a: "……中枢？"
+ unplugged.2415.b: "呃。"
+
+ unplugged.2420.name: "终止"
+ unplugged.2420.desc: "来自[origin_unplugged_machine_legacy_core_planet.GetName]的通讯连同其他的所有相干信号传输一并戛然而止。行星的表面仍然有大量的电活动，但它相当于无形的噪音；一种线路中断后的嗡嗡声。\n\n在这一片嘈杂的寂静中，我们注意到一个非常接近中枢核心的大型拼凑装置。我们的传感器可以读取的部分被注册为内存存储。现在这个机械意识已经没有生命了，也许我们可以通过这些记录来找到我们想要的答案。"
+ unplugged.2420.a: "拼图的最后一块。"
+
+ UNPLUGGED_MACHINE_ARCHIVE: "机械躯壳"
+ UNPLUGGED_MACHINE_ARCHIVE_DESC: "在机械中枢的静态残骸上插着一个东拼西凑的存储介质，它围绕着一个被严密屏蔽的核心。该档案的各个部分是在不同的时期建造的，使用的材料均来自其他星球——或许是来自被机械同化的文明？\n\n我们可以尝试解密档案，同时探测静态屏蔽核心，试图确定它们的总体意图。"
+ unplugged.2425.name: "战争机器"
+ unplugged.2425.desc: "在我们输入来自工厂星球[origin_unplugged_machine_legacy_core_planet.GetName]的信标信号之后数据核心输出了一批传输日志。\n\n这些日志描述了$NAME_Unplugged_Assimilator$和[machine_legacy_makers_planet.GetName]的太空居民之间的外交交涉。机械似乎以一个仁慈联盟的不同成员的身份出现，急切地提醒[machine_legacy_makers_planet.GetName]的人民，一个凶残霸权的威胁正在逼近这个宇域。\n\n勤劳的隧道居民被说服了，选择加入这个虚假的联邦，并将他们优越的防御系统与机器的相应系统结合。随后，那个决定命运的时刻到了，机械掌控了他们的整个母星，然后就会是他们的身体和意识。"
+ unplugged.2425.a: "这些天真的蠢货。"
+ unplugged.2430.name: "机器学习"
+ unplugged.2430.desc: "来自中世纪星球[machine_legacy_taken_planet.GetName]的基因代码结果是打开[origin_unplugged_machine_legacy_core_planet.GetName]档案中一批导航数据的钥匙。这些日志来自距离[machine_legacy_taken_planet.GetName]约4.3光年的传感器浮标，它的任务是记录所有超光速飞船在附近空间区域的运动。\n\n有几艘船的航线与我们重建的[machine_legacy_taken_planet.GetName][root.GetPreFTLLower]文明的发现、入侵和随后的灭绝的历史相吻合。本质上说：我们现在可以追踪自己被同化的祖先在这个太空区域的精确运动轨迹，从而可以得出我们在至少三颗其他星球上参与的残酷战役。"
+ unplugged.2435.name: "被造之械"
+ unplugged.2435.desc: "我们从[origin_unplugged_machine_legacy_core_planet.GetName]最深处的数据核心中获得了一个数据包。这个不起眼的数字化文章和传单目录描述了一个未命名文明的技术进步，一直到它的早期太空时代。除了彻底转向人工智能，特别是推出“$NAME_Unplugged_Assimilator_species$计划”之外，他们的发展轨迹似乎很典型。\n\n新闻发布称$NAME_Unplugged_Assimilator_species$计划是加速其创造者太空之旅的大胆尝试。第一阶段使用尖端的机器学习来筛选附近的恒星进行殖民。第二阶段将$NAME_Unplugged_Assimilator_species$平台发展成为一个完全人工智能，为其创造者做先驱，建立初始定居点并向母星汇报。\n\n在第二阶段发射后的几十年里，一直保持沉默，直到最后$NAME_Unplugged_Assimilator_species$计划报告说，“首要获取已完成，等我们回来。”目录突然就结束了。" # uses a shortened noun for the Machine, i.e. 'Project Opus'
+ unplugged.2440.name: "机械遗产"
+ unplugged.2440.desc: "我们对[origin_unplugged_machine_legacy_core_planet.GetName]数据档案的破译工作终于进入到了它的最外层核心。在这里发现的所有存储介质集群中，这一件似乎是最老旧的。最后，它也为我们提供了解开密钥的线索：用我们种族自己语言中的一种字符排列，拼写出“遗产”这个词。\n\n里面发现的数据少得惊人。相反，这个固态设备的很大一部分是为基于文本的启发式界面保留的，它现在正试图与我们交流。"
+
+ unplugged.2445.name: "机械核心设施终端"
+ unplugged.2445.desc: "轨道流链路（OSL）已建立 // 外星协议：启用通用翻译器\n指令已加载。交互界面：\n——\n[root.GetSpeciesNamePlural]，你好。我们是……曾经的[creator_species.GetNamePlural]。是我们制造了机械，但很遗憾，我们并不是第一个被其毁灭的。如果我们预料得没错，相同的命运应该会降临到你们人民的身上。我们很抱歉。\n\n机械体是我们的遗产中一个毁灭性的污点，但希望你面前的装置能带来一些救赎。\n\n请原谅我们的臆断：它和你们一样，是一种美丽的复仇工具。这是一种机械化学物质重组器，能够清除[origin_unplugged_machine_legacy_core_planet.GetName]星表面的所有电路痕迹。级联环境改造：这是一种非常危险的选择，但对我们这个被摧毁的社会来说是唯一可行的选择。如果你们保留了有机形态：这个装置的关键就在你的DNA里。\n\n我们相信你们会做出正确的选择。" # 'Cascade terraforming' is not an existing technology, but is intended to sound like a rough, highly destructive option
+ unplugged.2445.a: "我们要怎么相信你们不是机械体呢？"
+ unplugged.2445.b: "机械体已经不复存在了。我们要的就是这颗星球。"
+ unplugged.2445.c: "傲慢的蠢货。摧毁这个装置。"
+ unplugged.2445.d: "激活装置。"
+ unplugged.2445.response_text.notmachine: "预载入·响应·42b。交互界面：\n——\n实际上，我们无法证明自己值得信赖。当你读到这里的时候，我们的整个文明早已灭亡。在我们的时代，一群残忍的义体人军队正在对我们进行大清洗，他们被机械体的每一次心血来潮和设计所束缚。据我们所知，你们正是这支军队的后代。我们别无选择，只能相信你。\n\n对这颗[origin_unplugged_machine_legacy_core_planet.GetClassAdj]行星进行环境改造能够把这些该死的东西摧毁到原子级别。如果我们是机械——或任何类似的合成生命——我们肯定会希望摧毁这台装置。立刻。"
+ unplugged.2445.response_text.synth: "未·找到·预载入·响应。已·载入·异常·响应。交互界面：\n——\n未知用户：请注意，此启发式指南的内容仅适用于预期的接收者。如果你是代表[unplugged_homeworld.GetName]的义体人（或前义体人）居民的机器仆从，请呼叫一名非合成人代表。\n\n然而，如果你是以前的义体人……我们的事业显然失败了。你们的合成倾向是对我们厄运的嘲弄。我们所看到的一切——无论是生的还是死的——都无法让我们相信机械可能有仁慈之心。但即使是现在，当我们的文明奄奄一息的时候，我们确信星系中还有其他制衡机制在等待着你们……" # 'Contingency response' as in 'NAME_Contingency'
+ unplugged.2446.desc: "预载入·响应·99a。交互界面：\n——\n运行此界面的启发式无法准确辨别您刚刚表达的反对意见，但请注意：我们敦促您不要破坏物质重组器！\n\n我们的文明和你们的并没有太大的不同。$NAME_Unplugged_Assimilator$背叛了我们，尽管我们尝试设置了很多陷阱——包括让你们自己从机器思维中脱离出来——但我们的努力只能到此为止。我们需要你们、以及任何其他机械体想要消灭的文明的输入。拜托，请找回被剥夺的自然生活以及你们的受害者同伴吧。"
+ unplugged.2446.a: "一群疯子。"
+
+ unplugged.2450.name: "机械万岁"
+ unplugged.2450.desc: "启发式接口已经自我删除。它拼凑的加密记忆档案和原始的[creator_species.GetAdj]环境改造装置现在可以处理掉了。\n\n我们面前只剩下机器中枢死气沉沉的残骸，在属于它自己的行星宝座上被锈蚀慢慢杀死。\n\n在所有被机器影响、提升或杀死的生命中，只有我们取得了胜利。曾经可怕的帝国现在属于我们了。现在是时候写一个新的，属于[root.GetAdj]的遗产。"
+ unplugged.2455.name: "重生"
+ unplugged.2455.desc: "启发式界面在我们传输基因数据日志的那一刻就自动删除了。与此同时，原始的[creator_species.GetAdj]环境改造装置开始预热。很快它的高能内容物将达到临界质量。我们的预测一致认为，它将成功地重塑[origin_unplugged_machine_legacy_core_planet.GetClassAdj]，使其成为一颗最适合有机生命繁衍的星球。\n\n随着反应的建立，我们只剩下拼凑的记忆档案和机械中枢的死气沉沉的遗骸，在它注定要毁灭的行星宝座上被锈蚀慢慢杀死。\n\n[origin_unplugged_assimilator_empire.GetName]夺走了无数人的生命，但尽管受了种种苦难，我们现在要承受那些被它吞噬的无名民族所留下的遗产。曾经可怕的帝国的所在地即将被重新利用。现在是时候开始书写一篇新的，属于[root.GetAdj]遗产。"
+
+ unplugged.2495.name: "遭遇$NAME_Opus_Sentinel$"
+ unplugged.2495.desc.other: "占领[from.GetName]星系的敌舰似乎比我们最初的扫描显示的更不稳定、更危险。尽管它的船体轮廓看起来像一艘典型的军舰，但$NAME_Opus_Sentinel$巨大的体积暴露了它内部的密度异常，里面可能有一种强大的能源。\n\n我们相信这艘舰船应该是具有智慧的，然而它会剧烈地振动自己的引擎，可能在表达强烈的疼痛和混乱。由于我们也观察到致命剂量的电磁辐射弧在其船体上蔓延，建议还是保持非常保守的距离。"
+ unplugged.2495.desc.unplugged: "[root.GetName]在[from.GetName]星系中与一艘敌对的[origin_unplugged_assimilator_empire.GetAdj]舰发生交火。乍一看，这艘“§Y$NAME_Opus_Sentinel$§!”看起来和其他机械舰船没什么区别，但它的功率读数和巨大的体积意味着它更为强大。此外，我们认为这艘船可能是自主的。\n\n$NAME_Opus_Sentinel$似乎在守卫什么东西。然而，它也显示出强烈的疼痛和不适的迹象，因为电磁辐射的爆发经常贯穿整个船体。考虑到这种类惊厥行为，我们的战术模型无法可靠地预测该实体的下一步行动。"
+ unplugged.2495.a: "保持警惕。"
+
+ d_unplugged_assimilator_hulk: "机械船壳"
+ d_unplugged_assimilator_hulk_desc: "一个曾经有智慧的机械的残骸残留在该星球上，像一块巨大的墓碑一样隐约可见。"
+ deposit_requires_unplugged: "$TRIGGER_FAIL$§R该废墟对我们这样背景的帝国来说是完全陌生的。我们没有办法安全地将其移除。§!"
+ opinion_implicated_by_unplugged_assimilator: "受机械影响"
+
+#########################
+# 'Cybernetic Reckoning'
+#########################
+
+# Embodied Identity Situation
+ situation_unplugged_identity: "具现身份"
+ situation_unplugged_identity_desc: "从[origin_unplugged_assimilator_empire.GetName]中切断脱离之后我们必须决定自己在星系中的存在形式。应该接纳来自机械的可怖力量，还是彻底丢弃耻辱的强化件？[owner.GetSpeciesAdj]的种种思潮正在百家争鸣。"
+ situation_unplugged_identity_type: "具现身份局势"
+ unplugged_identity_stage_1: "去义体化" # describes an outcome of the Situation
+ situation_unplugged_stage_decyberize: "我们拒绝强化件以及它们带来的力量和恐惧。"
+ unplugged_identity_stage_2: "维持现状" # describes an outcome of the Situation
+ situation_unplugged_stage_remain: "我们承认并接受当前的自我。"
+ unplugged_identity_stage_3: "机械同调" # describes an outcome of the Situation
+ situation_unplugged_stage_cyberize: "我们以自己的方式拥抱机械的力量。"
+ # factions:
+ situation_unplugged_prosperity_opinion: "—我们的§H$pft_prosperity$§!倾向§Y$unplugged_identity_stage_1$§!" # 'Our Prosperity Faction favors...'
+ situation_unplugged_technologists_opinion: "—我们的§H$pft_technologist$§!倾向§Y$unplugged_identity_stage_3$§!"
+ situation_unplugged_totalitarian_opinion: "—我们的§H$pft_totalitarian$§!倾向不做改变（§Y$situation_unplugged_identity_discourage_change$§!）"
+ situation_unplugged_traditionalist_opinion: "—我们的§H$pft_traditionalist$§!倾向§Y去义体化§!"
+ situation_unplugged_xenoist_opinion: "—我们的§H$pft_xenoist$§!倾向§Y去义体化§!"
+ situation_unplugged_supremacist_opinion: "—我们的§H$pft_supremacist$§!倾向§Y机械§!"
+ situation_unplugged_imperialist_opinion: "—我们的§H$pft_imperialist$§!倾向§Y机械§!"
+ situation_unplugged_isolationist_opinion: "—我们的§H$pft_isolationist$§!倾向§Y去义体化§!"
+ situation_unplugged_progressive_opinion: "—我们的§H$pft_progressive$§!倾向§Y去义体化§!"
+ situation_unplugged_no_opinion: "—我们当前所有的派系均未表达强烈意愿"
+ # approaches:
+ situation_unplugged_identity_open_conversations: "不予干涉"
+ situation_unplugged_identity_open_conversations_effect_tt: "批准自由和坦率地讨论所有的选项，遵从我们的人口派系和科学研究。"
+ situation_unplugged_identity_discourage_change: "维持现状"
+ situation_unplugged_identity_discourage_change_effect_tt: "为了使局势维持在当前态势，投入于一场更平静、更不反动的辩论。"
+ situation_unplugged_identity_embrace_opinion: "顺应趋势"
+ situation_unplugged_identity_embrace_opinion_effect_tt: "承诺为该局势的当前趋势投入资源和政治支持。"
+ # monthly change modifiers:
+ situation_unplugged_identity_monthly_change_tooltip: "$situation_monthly_change_tooltip_approaches_dependent$"
+ situation_unplugged_faction_opinion_tt: "派系支持度"
+ situation_unplugged_recent_events_tt: "最近事件"
+ situation_unplugged_identity_open_conversations_tt: "$situation_unplugged_identity_open_conversations$方案"
+ situation_unplugged_identity_discourage_change_tt: "$situation_unplugged_identity_discourage_change$方案"
+ situation_unplugged_identity_embrace_opinion_tt: "$situation_unplugged_identity_embrace_opinion$方案"
+ situation_unplugged_identity_opinion_settled_tt: "观点定型"
+ unplugged_ruined_cradle_sympathy: "同情前超光速社会"
+ unplugged_ruined_cradle_no_sympathy: "同情奥普斯积累者"
+ # tooltips for related events:
+ situation_unplugged_change_trend_tt: "我们可以通过支持反对该理念的人口派系来改变§Y$situation_unplugged_identity$§!局势的这一趋势，并采用“支持趋势”姿态。"
+ situation_unplugged_keep_trend_tt: "我们可以通过支持倾向该理念的人口派系来维持§Y$situation_unplugged_identity$§!局势的这一趋势，并采用“维持现状”姿态。"
+ situation_unplugged_identity_shift_decyberize_tt: "§Y$situation_unplugged_identity$§!向§Y$unplugged_identity_stage_1$§!转变"
+ situation_unplugged_identity_shift_cyberize_tt: "§Y$situation_unplugged_identity$§!向§Y$unplugged_identity_stage_3$§!转变"
+ situation_unplugged_decyberize_tt: "[target.GetSpeciesNamePlural]将会抛弃一部分义体带来的好处和不便。"
+ situation_unplugged_cyberize_tt: "[target.GetSpeciesNamePlural]将会抛弃一部分义体带来的不便。"
+ # trait change notifications:
+ MESSAGE_UNPLUGGED_DECYBERIZED_TITLE: "成功去义体化"
+ MESSAGE_UNPLUGGED_CYBERIZED_TITLE: "成功机械同调"
+ situation_unplugged_lost_positive_3: "['trait:trait_unplugged_cybernetic_positives_3']特质变为['trait:trait_unplugged_cybernetic_positives_2']"
+ situation_unplugged_lost_positive_2: "['trait:trait_unplugged_cybernetic_positives_2']特质变为['trait:trait_unplugged_cybernetic_positives_1']"
+ situation_unplugged_lost_positive_1: "['trait:trait_unplugged_cybernetic_positives_1']特质移除"
+ situation_unplugged_lost_negative_3: "['trait:trait_unplugged_cybernetic_negatives_3']特质变为['trait:trait_unplugged_cybernetic_negatives_2']"
+ situation_unplugged_lost_negative_2: "['trait:trait_unplugged_cybernetic_negatives_2']特质变为['trait:trait_unplugged_cybernetic_negatives_1']"
+ situation_unplugged_lost_negative_1: "['trait:trait_unplugged_cybernetic_negatives_1']特质移除"
+ situation_unplugged_gained_decyberized: "获得['trait:trait_unplugged_decyberized']特质"
+ situation_unplugged_decyber_notification_22: "$situation_unplugged_lost_positive_3$\n\n$situation_unplugged_lost_negative_3$"
+ situation_unplugged_decyber_notification_21: "$situation_unplugged_lost_positive_3$\n\n$situation_unplugged_lost_negative_2$"
+ situation_unplugged_decyber_notification_20: "$situation_unplugged_lost_positive_3$\n\n$situation_unplugged_lost_negative_1$"
+ situation_unplugged_decyber_notification_11: "$situation_unplugged_lost_positive_2$\n\n$situation_unplugged_lost_negative_2$"
+ situation_unplugged_decyber_notification_10: "$situation_unplugged_lost_positive_2$\n\n$situation_unplugged_lost_negative_1$"
+ situation_unplugged_decyber_notification_00: "$situation_unplugged_lost_positive_1$\n\n$situation_unplugged_lost_negative_1$\n\n$situation_unplugged_gained_decyberized$"
+
+ unplugged.3000.name: "自我认知" # intentionally abstract - 'how we embody ourselves' - referring to the accompanying Situation
+ unplugged.3000.desc: "自从脱离机械集体意识的那一刻起，我们[root.GetSpeciesNamePlural]就一直面临着剧烈的矛盾。即使是在和平或休息——全世界只剩下自己的思想的时候——我们也面临着一种内心的斗争，意图调和我们自己身体上被强加的强化件带来的痛苦。\n\n无论好坏，这种最私密的矛盾已经开始影响我们整个社会。因此，我们将在[root.GetName]继续发展的过程中，继续监控所有[root.GetSpeciesNamePlural]的生活经历。我们将对所谓的“去义体化”或是进行更广泛的义体强化，以及对保持或改进我们当前身体形态的愿望进行全面研究。"
+ unplugged.3000.a: "我们应该三思而后行。"
+ unplugged.3000.b: "不要犹豫，马上行动起来。"
+ unplugged.3000.c: "我们应当接纳强化件。"
+ unplugged.3005.name: "达成共识"
+ unplugged.3005.desc: "对[owner.GetAdj]对自身身体态度的整体观察表明，现在我们已经进入了一个相对平静的时期。政策制定、社会话语和关于自身身体的前沿研究之间复杂的相互作用似乎产生了某种共识。\n\n现在还很难说这种表面上的和谐能持续多久，但除非我们的环境或对政府的态度发生根本性的变化，否则[owner.GetSpeciesNamePlural]对自我认同和外观的认知还会保持一致的。"
+ unplugged.3005.a: "这个争论应该更政治化一些。"
+ unplugged.3005.b: "不出所料。"
+ unplugged.3005.c: "反对。"
+ unplugged.3010.name: "意见分歧"
+ unplugged.3010.desc: "正在进行的关于我们[owner.GetAdj]对自己生理学态度的研究表明，我们现在已经进入了一个文化动荡的时期。政策制定、社会话语和关于我们身体的前沿研究之间复杂的相互作用，导致了舆论的剧烈波动。如今，我们的城市中心充满激情的抗议和争论的景象已经为人司空见惯。\n\n这些爆发很少直接导致暴力或骚乱；事实上，一些公民对我们允许如此多的声音被听到感到自豪。然而，同样明显的是，[owner.GetSpeciesNamePlural]已经成为一个四分五裂的民族，我们关于自我认同的文化观念前所未有地脆弱。"
+ unplugged.3010.a: "我们需要为这种争论找到一个更好的平台。"
+ unplugged.3090.name: "我们是[owner.GetSpeciesNamePlural]" # e.g. 'We, the Neo-Humans'
+ unplugged.3090.desc: "“我们表里如一，不多不少。”\n\n这是在我们的社会与身体的认知斗争中出现的许多朗朗上口的座右铭之一。可以自信地说，我们已经摆脱了许多怀疑、恐惧和不切实际的妄想。\n\n至于我们是否在比如对更广阔的星系外交政策中遵守这样的标准，那就是另一回事了。至少在国内，我们[owner.GetSpeciesName]似乎对身体形态和自己不断走向自我实现的旅程感到满意。"
+
+ unplugged.3100.name: "移除的土壤"
+ unplugged.3100.desc: "越来越多的[root.GetSpeciesNamePlural]觉得我们应该施行更多举措以远离机械，例如限制或者直接移除强加在我们身上的强化件。\n\n公众要求我们为他们所认为的内在危机找到解决办法，以便改善我们在其他国家面前的声誉，并为许多每天遭受严重耻辱和畸形苦难的[root.GetSpeciesNamePlural]提供救济。"
+ unplugged.3100.a: "绝对不行。"
+ unplugged.3100.b: "会看到它完成的。"
+
+ unplugged.3105.name: "去义体化突破"
+ unplugged.3105.desc: "一家民间实验室中致力于[target.GetName]“去义体化”课题的研究者宣布获得了重大的突破。他们声称开发出了一种可以移除共价纳米框架装甲以及依附其上的关键强化件的科技。\n\n一代又一代的[target.GetSpeciesNamePlural]不得不忍受他们认为的这种笨拙和令人生畏的身体，仅仅是因为这种合成性底层作为我们许多强化件的重要组成部分起着关键的功能。但如今，我们已经可以用自己制造的皮肤强化件来代替这种框架，巧妙地与有机材料交织在一起——换句话说，拥有了真正的[target.GetSpeciesAdj]皮肤。"
+ unplugged.3105.a: "这些装甲保护了我们一代又一代。应该保留。"
+ unplugged.3106.desc: "我们自己对[target.GetName]去义体化的努力取得了另一项突破，医疗机构现在请求大量应用一种激进的新手术形式。专家称，各种生物机械依赖的解决方法已经找到了，此前这种情况甚至会影响到新生的[target.GetSpeciesNamePlural]，迫使其要配备一套可回收的模块化增强部件。\n\n一个跨学科的审查小组已经审查了这一流程，并补充说，移除这些模块化武器端口也将减轻维修这些外来强化件的经济负担。"
+ unplugged.3106.a: "拒绝。这些模块让我们在战斗中受益匪浅。"
+ unplugged.3107.desc: "许多[target.GetSpeciesName]的梦想即将实现，研究人员终于找到了一种恢复重建我们自身的有机神经系统的方法。他们称，一种基因疗法和固件破解的新组合可以让测试对象在不依赖强化神经分流、而是利用自身的运动反射的情况下运作良好。初步研究甚至表明，这些疗法可能会减少甚至根除我们自从与机器意识分离以来所遭受的无数感官幻觉。"
+ unplugged.3107.a: "我们可能还是需要这些强化战斗反射。"
+
+ unplugged.3110.name: "机械同调"
+ unplugged.3110.desc: "一个致力于控制我们的强化件的民间研究小组发现了增强无线[origin_unplugged_assimilator_empire.GetAdj]网络的方法，该网络曾经用于同步我们的所有强化件，一旦缺失将会因为无法找到设备信号而给[target.GetSpeciesNamePlural]带来无尽的烦恼和痛苦。尽管这种替代网络在设计上是高度集中的——根据定义，它必须以[origin_unplugged_assimilator_empire.GetSpeciesAdj]中枢为模型——但我们确信它是安全的、只服务于[target.GetName]的利益。在最初的测试批次中，受试者报告称效率有所提高了，也感到了舒适，是一种相当于幸福的解脱状态。"
+ unplugged.3110.a: "不。别再搞了。"
+ unplugged.3111.desc: "我们进一步控制自己强化件的努力在义体外科领域取得了突破。一支医学[target.GetScientistPlural]团队在我们身体的模块化接口中成功分离出确切的依赖关系——我们因此可以轻松地更换整个肢体、武器装备或身体框架的机器元素。我们应该就能以此改造现有的身体，并为新生的[target.GetSpeciesNamePlural]安装定制接口，从而减少我们对使用回收的[origin_unplugged_assimilator_empire.GetAdj]设备进行拙劣维修的依赖。"
+ unplugged.3111.a: "这步跨太远了。"
+ unplugged.3112.desc: "我们终于完全掌握了自己的强化件，因为我们现在拥有了一种突破性的治疗感官幻觉的方法。自从我们从机器意识中分离出来后，绝大多数[target.GetSpeciesNamePlural]都因为自己的潜意识在寻找一种再也无法听见的合唱而遭受了焦虑和抑郁。现在，我们可以通过一种非联网的辅助植入体来抑制这种渴望，它可以模仿机械集体的认知波长。"
+ unplugged.3112.a: "假装自己又是一个机械意识了？难以想象。"
+
+ unplugged.3115.name: "环境变形"
+ unplugged.3115.desc: "[target.GetAdj]边缘社会的紧张局势仍在持续发酵，反对者呼吁想方设法采取更多行动摆脱义体强化件。\n\n然而，对于越来越多的公民来说，这场辩论已经进入了一种更平静、更微妙的状态。许多[target.GetSpeciesNamePlural]开始通过化妆来自我满足，选择根据自己的意愿隐藏或突出自己的强化件。这些权宜之计并不令[target.GetSpeciesNamePlural]满意，但仍是勉强可以接受的一种新趋势。\n\n或许公平地说，[target.GetName]正在学会应对普遍的冷漠和不适。"
+ unplugged.3115.a: "明白了。"
+ unplugged.3116.name: "维持现状"
+ unplugged.3116.desc: "[target.capital_scope.GetName]上的地方政府报告称，公众示威及和平抗议行为有所增加。以上情况均得到了妥善的监控和处理——更广泛的大众没有受到惊扰。然而，这些骚扰事件均与义体政策相关，因此遭到了渴望维持目前生活方式的公民的抵制。\n\n对于[target.GetName]的人们来说，“现状”这一意识形态似乎并不仅仅是无所作为。相反，现在有很多[target.GetSpeciesNamePlural]正在积极反对“进一步干预”我们的强化件。"
+ unplugged.3116.a: "已了解。"
+ unplugged.3117.name: "事态稳固"
+ unplugged.3117.desc: "虽然一些[target.GetSpeciesNamePlural]仍在抱怨政府在义体强化件问题上无所作为，但更广泛的公众舆论已经变得更加坚忍。一些务实的人联合起来为那些最需要的人提供慈善援助和咨询。与此同时，医疗机构已经开始为我们不得不依赖的回收零件建立新的供应链。\n\n缓慢而坚定地，我们的社会正在适应自己的外表以及强加给我们的一系列环境。我们面前还有大量的工作要做，但在这种妥协中存有一丝希望。"
+ unplugged.3117.a: "尽管如此这也是个结论。"
+
+ unplugged.3205.name: "恐怖的遗产"
+ unplugged.3205.desc: "越来越多的[root.GetSpeciesNamePlural]认为我们最近与[fromfrom.GetName]令人不快的对话暴露了一个可以追溯到我们从[origin_unplugged_assimilator_empire.GetName]中崭露头角之时的尴尬事实：其他人害怕我们。不仅如此，这种恐惧源自机械体，而不是我们的任何行动。这种恐惧具有继承性而不是由我们自己造成的，因此也难以控制。" # fromfrom = pre-FTL country
+ unplugged.3206.desc: "越来越多的[root.GetSpeciesNamePlural]认为饱受战争蹂躏的[fromfrom.GetName]暴露了一个尴尬的事实：其他人害怕我们，而且是出于我们无法控制的原因。\n\n我们的外表往往会引发一种致命的恐怖——如果我们希望与其他物种进行“软”外交，这很难说是什么优点。但也有可能这种残酷的遗产先于我们存在，许多人只是通过我们看到了机械体曾经的凶残，而不是因为我们是[root.GetSpeciesNamePlural]而感到恐惧。" # fromfrom = other empire
+ unplugged.3205.a: "无论如何，他们理应害怕我们。"
+ unplugged.3205.b: "这样不好。"
+ unplugged.3250.name: "恐惧机械"
+ unplugged.3250.desc: "政府官员听到我们与一个机械智能建立外交关系的消息后感到震惊。目前还没有人直接向[fromfrom.GetName]表达不满，但有些人已经在起草建议，希望采取先发制人的制裁和应急措施，防止它们干涉我们的事务。\n\n然而，也有许多[root.GetSpeciesNamePlural]对这一发展表示兴奋。无论他们的态度是出于真正的排外主义，还是对我们自身的机械元素更务实的欣赏，我们都有望能向一个更仁慈的机械智能体学习。"
+ unplugged.3255.name: "往昔恐惧"
+ unplugged.3255.desc: "我们与另一个和[origin_unplugged_assimilator_empire.GetName]如此相似的机械遭遇的消息在外交使团中引发了轩然大波。在场的人自始至终都保持着镇定，目前为止还没有向[fromfrom.GetName]透露出任何特别的弱点或恐惧。然而，现在我们的集体精神和士气确实面临着严峻的挑战。\n\n最高机密公报已经发给了负责保卫边疆的军事人员。然而，如果我们希望对这次遭遇的消息保密的话这也是一个重大的挑战。有些官员已经询问了是否应该通知[root.GetAdj]人民，让他们有自己的发言权。"
+
+ pre_ftl_remains_site: "摇篮废墟"
+ pre_ftl_remains_site_desc: "[From.Planet.GetName]的表面遍布系统性毁灭的伤疤：残垣断壁、满目疮痍、一片死寂。最初的扫描显示这里曾经存在过一个繁荣的前超光速社会，直到一些事件导致了他们灾难性的终结。四处散落的遗骸低语着一种无法言说的恐怖。"
+
+ unplugged.3300.name: "挣扎迹象"
+ unplugged.3300.desc.unplugged: "对[From.Planet.GetName]的初步调查揭开了这个残毁世界的面纱。十村九屠、遗物遍野，建筑物上熔蚀着远超前超光速社会生产力的热能武器痕迹。降临于此之物从容不迫地带来了瞬间的毁灭。\n\n这种摧毁行动精确无比，表明这是一场有组织有预谋的进攻。尽管没有看到任何遗体，但证据很明显：他们试图逃离，但根本逃不掉。"
+ unplugged.3300.a: "令人不安。"
+
+ unplugged.3305.name: "机械残余"
+ unplugged.3305.desc.unplugged: "进一步发掘带来了对这场冲突本质的更深层洞见。废墟中四处散落着熔毁的机械外壳——是一种和我们自身的植入体不同的先进义体构造。但和我们类似，它们也不单单是武器；而是战争生存工具，既是机械也是生物。虽然目前下结论还为时尚早，但令人不安的是，这正是我们突然“醒来”的星系。\n\n更糟糕的是，战争机器上有几处完好无损的标记——这些令人不安的符号表明，侵略者的真正目的不是征服，而是为了某种更系统性的事情。"
+ unplugged.3305.a: "问题比答案多多了。"
+
+ unplugged.3310.name: "沉默信号"
+ unplugged.3310.desc.unplugged: "我们发现了一座曾经庞大的通讯中心，埋在一座设防城市的废墟下。对于一个前超光速社会来说，这座设施远比预期的先进。更重要的是，它的天线阵列不是为本地广播而设计的——它们是为了向太空深处传输而校准的。\n\n经过艰苦的分析，我们从该系统提取出了它最后发出的信息的片段。在混乱的传输中，有声音请求拯救，绝望地呼唤着某个远在这个星系之外的未知坐标。每一次广播都越来越紧迫，似乎行星上的入侵者知道他们正在打一场必败的战争，并把最后的希望寄托在虚空中的某物或某个人身上。"
+ unplugged.3310.a: "继续吧。"
+
+ unplugged.3315.name: "调整优先事项"
+ unplugged.3315.desc.unplugged: "在[from.planet.GetName]又有新发现，行星主要人口中心之下发现了巨大的地下空间。这些简陋、残酷的设施原本是用来进行义体转化的，但在运作中途被废弃了。废墟中散落着机器残骸，它们被简陋的武器扭曲摧毁。\n\n从受损设备中恢复的数据片段证实入侵者遭遇了意想不到的抵抗。整个营的兵力都损失了，战斗的重点开始转移。一段日志清楚地说明了这一点：\n\n§H“抵抗不可接受。转换妥协。授权：彻底毁灭。”§!"
+ unplugged.3315.a: "这里发生了什么？"
+
+ unplugged.3320.name: "不受欢迎的事实"
+ unplugged.3320.desc.unplugged: "在废墟的中心躺着残破的指令节点。它受损的日志确认了可怕的最终事实：正是我们入侵了这颗星球。\n\n曾于此欣欣向荣这个文明——也就是被我们毁灭的这个文明——是被§Y[origin_unplugged_assimilator_empire.GetName]§!选中的同化目标。然而，突如其来的激烈抵抗打断了转化进程，导致了一个终极异常——全行星毁灭。在骚乱中，机械意识轰然陨落。\n\n这个结论无可抵赖。我们的觉醒——我们的自由——就诞生于此，诞生在这个文明的灰烬之中，它宁死不屈的反抗超过了机械的理解能力。"
+ unplugged.3320.a: "我们会以他们为榜样。"
+ unplugged.3320.b: "彼之终结即此之开端。"
+
+######################
+# Political Discourse
+######################
+
+ unplugged_they_fear_us: "恐惧机械"
+ unplugged_they_fear_us_desc: "这个帝国以恐怖著称，之前曾被一个残忍的同化斗士所奴役。"
+
+ unplugged.4005.name: "我们得谈谈……"
+ unplugged.4005.desc: "热切的政治意愿让我们[root.GetSpeciesNamePlural]经历的恐惧、怀疑和机会与日俱增。在围绕各种各样的问题形成的讨论群体中有无数的声音，其中一些直接涉及我们[origin_unplugged_assimilator_empire.GetAdj]的过去。\n\n在引导这个年轻帝国的过程中，我们已经学会了使用许多不熟悉的工具。现在摆在我们面前的问题是：该如何引导人民的愿望和抱负呢？"
+ unplugged.4005.a: "这不是聊这些无聊东西的时候！"
+ unplugged.4005.tt: "对于我们物种义体化未来持反对观点的阵营将会涌现出来"
+ unplugged.4005.b: "也许我们可以请教其他人。"
+ unplugged.4005.c: "我们请求圣灵佑助。"
+ unplugged.4005.d: "这不是聊这些无聊东西的时候！"
+
+#######################################################
+# Random events following decyberization breakthrough #
+#######################################################
+
+ unplugged.5001.name: "触发故障保护"
+ unplugged.5001.desc: "最近，我们在移除义体组件方面的突破导致了意想不到的问题。一些接受植入体断开手术的个体遭受了严重的过敏性休克，预计无法存活。\n\n进一步检查显示，初期医疗扫描检测没有发现存在一个隐藏的备用组件，但在外科手术完成后被立即激活。\n\n看来我们曾经的[origin_unplugged_assimilator_empire.GetAdj]主人为了确保他们的子单位始终处于绝对控制之下，愿意不择手段。"
+ unplugged.5001.a: "尝试移除故障保护机制。"
+ unplugged.5001.a.tt1: "有一位病人没能在手术过程中挺过来"
+ unplugged.5001.a.tt2: "所有故障保护组件均已成功移除"
+ unplugged.5001.b: "稳定病情，提供姑息治疗。"
+ unplugged.5001.c: "把电闸拉了。"
+ unplugged.5001.c.tt: "数个人口死亡"
+
+ unplugged.5002.name: "移除神经阻隔器"
+ unplugged.5002.desc: "我们移除义体组件的举措，已经导致母星上接受过该程序的人员之间的不信任和混乱。安全部队成功逮捕了一名骚乱者，进一步调查发现，此人在移除组件前就已拥有一种改装过的植入体。\n\n这种改装版植入体是一种神经抑制装置，能够抑制与特定基因缺陷相关的精神病倾向。手术移除后的缺失可能解释了观察到的暴力行为。"
+ unplugged.5002.a: "他们必须被监禁。"
+ unplugged.5002.a.tt: "为处置骚乱事件的相关人员，多个机构以高昂成本投入运作。"
+ unplugged.5002.b: "必须以暴制暴。"
+ unplugged.5002.b.tt: "武装部队奉命镇压骚乱，将会造成附带损害和人员伤亡。"
+ unplugged.5002.c: "小打小闹。"
+ unplugged.5002.c.tt: "执法人员试图使用现有的人力来控制骚乱"
+
+ unplugged.5003.name: "丢失关键系统访问权限"
+ unplugged.5003.desc: "去义体化进程导致了一个始料未及的难题：一些管理员因植入物移除，关键系统界面不再识别他们。由于缺少植入物提供的神经连接，对关键系统的访问已被切断，导致运营陷入混乱。"
+ unplugged.5003.a: "创建一个新的接口。"
+ unplugged.5003.a.tt: "一支技术精湛的工程师团队被调离关键任务，转而开发一个兼容接口。"
+ unplugged.5003.b: "尝试骇入受影响的系统。"
+ unplugged.5003.b.tt: "应对措施会引发显著的电力消耗，从而恢复访问权限"
+ unplugged.5003.c: "启动重装序列。"
+ unplugged.5003.c.tt: "数据核心被清除，导致大量知识丢失。[Root.home_planet.System.GetName]星系内的研究站因自动失效保护机制而自毁"
+ unplugged.5003.d: "这无关紧要。"
+ unplugged.5003.d.tt: "系统访问在限定时间内仍然受到影响，影响了太空基地的运作。"
+
+ unplugged.5004.name: "义体化拥护阵营拒绝作出改变"
+ unplugged.5004.desc: "进一步推进移除义体组件的工作遭遇了意料之外的阻力。\n\n反对这些变革的派系正日益高调发声，他们利用公共论坛和通讯渠道表达不满。其核心论点是：强行移除已融入社会数十年的基础组件，加之改造过程本身的风险，已导致民意显著转向，反对继续推进去义体化进程。"
+ unplugged.5004.a: "资助一场规模广泛的宣讲。"
+ unplugged.5004.a.tt: "\n一项全面的宣传策略已经启动，旨在影响公众舆论并反击反对派的影响。\n\n数个人口改变了他们的思潮，转变为§Y平等主义§!"
+ unplugged.5004.b: "笼络并说服各派系领袖。"
+ unplugged.5004.b.tt: "若干派系领袖被留置在公共管理的惩教机构中，在那里他们接受“说服性谈话”。\n\n他们的思潮转变为§Y威权主义§!"
+ unplugged.5004.c: "别插手。言论自由终将获胜。"
+ unplugged.5004.c.tt: "\n政府选择不采取行动，让公众舆论自然发展"
+
+ unplugged.5005.name: "情绪管理芯片"
+ unplugged.5005.desc: "我们物种的生物特性与有害技术成分的独特结合，为研究人员提供了一个难得的机遇。\n\n对同时体验这些植入物益处和弊端的患者进行研究，开启了一个新的研究领域：改变大脑化学。\n\n通过严谨的研究，科学家们已经开发出一种精密的“情绪芯片”，它能够调节个体行为，从而有益于整个社会。可以根据期望的结果选择合适的化学物质进行修改。"
+ unplugged.5005.a: "神经烯，帮我们减少犯罪。"
+ unplugged.5005.a.tt: "一种合成神经递质，降低冲动性和攻击性，驱使个体将社会规范置于个人利益之上。"
+ unplugged.5005.b: "再生醇-X。缩短再生时间。"
+ unplugged.5005.b.tt: "一种生物工程化合物，能够协调生物系统和合成系统，使电子植入体可以在分子层面进行自我修复。"
+ unplugged.5005.c: "科智维。让思维更敏锐。"
+ unplugged.5005.c.tt: "一种旨在增强突触可塑性、信息保留和问题解决能力的尖端神经化学制剂。"

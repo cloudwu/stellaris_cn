@@ -23,7 +23,7 @@
  paragon_2.2105.tt:0 "从现在起，§H著名领袖§!可能会联系我们。"
  sm_recruitment_office:0 "星际招募办公室"
  sm_recruitment_office_desc:0 "语言学家、猎头和探索者，他们通力协作，在所有已知的星系内踏破铁鞋寻找才华卓著者。著名领袖可以在这里招募来为我们的事业服务。\n\n帝国限制：§Y1§!"
- sm_recruitment_office_tooltip:0 "帝国修正\n$t$外部领袖储备规模：§G+1§!\n$t$领袖经验获得：§G+10%§!\n$t$提升§H著名领袖§!联络我们的概率。"
+ sm_recruitment_office_tooltip:0 "帝国修正\n$t$$MOD_COUNTRY_EXTERNAL_LEADER_POOL_SIZE$：§G+1§!\n$t$领袖经验获得：§G+10%§!\n$t$提升§H著名领袖§!联络我们的概率。"
 
  HIRE:1 "招募"
  HIRE.tt:0 "为我们的帝国效力吧。"
@@ -89,7 +89,7 @@
  paragon.40200.b:0 "你为什么要加入我们？"
  paragon.40200.b.response:0 "我觉得你们的坦率和诚实很吸引人。你和我一样看到了合作中蕴含的可能性。能和这样开放的灵魂生活在一起是一种荣幸。"
  paragon.40200.c:0 "你的文化特长是怎么来的呢？"
- paragon.40200.c.response:0 "理解一个外星文化的最好方式就是拥抱它。我第一次爱上一个人是在一颗外星球上。我被我的伴侣和他们的文化深深吸引，尽管我们已经不在一起了，但那段感情教会了我宽容和尊重的意义。从那以后，我尝试着在我所访问的地方尽可能多地学习，不再受各种偏见的拖累。"
+ paragon.40200.c.response:0 "理解一个外星文化的最好方式就是拥抱它。我初沐爱河是在一颗外星球上，他们的文化深深吸引了我。尽管我们已经不在一起了，但那段感情教会了我宽容和尊重的意义。从那以后，我尝试着在我所访问的地方尽可能多地学习，不再受各种偏见的拖累。"
  paragon.40200.hire_custom_tooltip:0 "§Y$NAME_xenophile2$§!作为一名§H领袖§!加入了我们的帝国。"
 
  paragon.40300.name:0 "$NAME_militarist1$"
@@ -459,7 +459,7 @@
  paragon.41520.name:0 "追随召唤"
  paragon.41520.desc:1 "多年来，§Y[Root.GetName]§!一直通过强大的灵能梦向虚空呼喊。现在，几艘载有许多物种成员的民用飞船出现在[planet_governed.GetName]轨道上。他们愿意为我们服务，以期和他们的先知一起生活。"
  paragon.41520.a:0 "他们将会加入我们的族群。"
- paragon.41520.a.custom_tooltip:0 "在[event_target:planet_governed.GetName]增加§Y3§!个精神主义的灵能人口。"
+ paragon.41520.a.custom_tooltip:0 "在[event_target:planet_governed.GetName]增加§Y300§!个精神主义的灵能人口。"
  paragon.41520.b:0 "我们不欢迎他们。"
 
  # Nasuz Demetor / spiritualist2
@@ -770,8 +770,10 @@
 
  #MODIFIERS AND OTHERS
 
- mod_planet_clerks_unity_produces_add:0 "£job_clerk£$job_clerk_plural$产出的£unity£$unity$"
+ mod_planet_clerks_unity_produces_add:0 "每$pop_group_unit$[clerk.GetIcon][clerk.GetNamePlural]产出的£unity£$unity$"
  planet_clerks:0 "职员岗位"
+ planet_civilians: "平民岗位"
+ mod_planet_civilians_unity_produces_add:0 "每$pop_group_unit$£job_civilian£$job_civilian_plural$产出的£unity£$unity$"
 
  commanding_presence:0 "威风堂堂"
  commanding_presence_desc:0 "凭借我们领袖的意志力，我们能够在太空中扩展我们帝国的议程，并迫使其他人听从我们的命令。"
@@ -779,10 +781,10 @@
  paragon_origin_strengthened_government_i_desc:0 "我们的帝国致力于创造一个管理更完善、更稳定的政府。"
  paragon_origin_strengthened_government_ii:0 "$paragon_origin_strengthened_government_i$I"
  paragon_origin_strengthened_government_ii_desc:0 "$paragon_origin_strengthened_government_i_desc$特殊课程和政府职位的预筛选是实现这一目标的先决条件。"
- paragon_origin_strengthened_government_ii_tt:1 "每个£job_clerk£§Y$job_clerk$§!获得§Y25%§!的$POLITICAL_POWER$提升\n£job_clerk£$job_clerk_plural$产生的£unity£$unity$：§G+0.5§!"
+ paragon_origin_strengthened_government_ii_tt:1 "每个[civilian.GetIcon]§Y[civilian.GetName]§!获得§Y25%§!的$POLITICAL_POWER$提升\n[civilian.GetIcon][civilian.GetNamePlural]产出的£unity£$unity$：§G+0.5§!"
  paragon_origin_strengthened_government_iii:0 "$paragon_origin_strengthened_government_i$II"
  paragon_origin_strengthened_government_iii_desc:0 "$paragon_origin_strengthened_government_ii_desc$ 为了进一步增强文书工作人员，我们实施了新的规定。只有最正直和忠诚的公民才能申请这份工作。"
- paragon_origin_strengthened_government_iii_tt:1 "每个£job_clerk£§Y$job_clerk$§!获得§Y50%§!的$POLITICAL_POWER$提升\n£job_clerk£$job_clerk_plural$产生£unity£$unity$：§G+1§!\n£job_clerk£$job_clerk_plural$产生£mod_country_edict_fund_add£$MOD_COUNTRY_EDICT_FUND_ADD$：§G+1§!"
+ paragon_origin_strengthened_government_iii_tt:1 "每个[civilian.GetIcon]§Y[civilian.GetName]§!获得§Y50%§!的$POLITICAL_POWER$提升\n[civilian.GetIcon][civilian.GetNamePlural]产生£unity£$unity$：§G+1§!\n[civilian.GetIcon][civilian.GetNamePlural]产生£mod_country_edict_fund_add£$MOD_COUNTRY_EDICT_FUND_ADD$：§G+1§!"
  paragon_origin_humble_monument:0 "朴素的纪念碑"
  paragon_origin_humble_monument_desc:0 "这座不起眼的纪念碑是为了纪念我们光荣的、把国家带向了星空的领袖。"
  paragon_origin_rich_monument:0 "华丽的纪念碑"
@@ -856,10 +858,10 @@
  leader_trait_legendary_story:0 "历史事实"
  leader_trait_legendary_story_desc:0 "这位领导人将作为臭名昭著的代表载入史册。"
 
- paragon_origin_psionic_ascension:1 "\n\n§P能量外溢：§!\n在一次灵能仪式之后，这位领袖成为了通往天幕的媒介。我们所有人的灵能被引导到[Root.GetHimHer]身上，使这位领袖成为一尊准神。然而，这种力量是有代价的，我们必须牺牲其他灵能个体来维持媒介渠道。\n十年间维护费：§R[owner.paragon_origin_ascension]§!£pop£$POPS$"
+ paragon_origin_psionic_ascension:1 "\n\n§P能量外溢：§!\n在一次灵能仪式之后，这位领袖成为了通往天幕的媒介。我们所有人的灵能被引导到[Root.GetHimHer]身上，使这位领袖成为一尊准神。然而，这种力量是有代价的，我们必须牺牲其他灵能个体来维持媒介渠道。\n十年间维护费：§R[owner.paragon_origin_ascension]§!£pop£ $POPS$"
  paragon_origin_cybernetic_ascension:0 "\n\n§P地核之心：§!\n从地核中形成，这一独特的电子神经植入体需要持续输入£sr_dark_matter£$sr_dark_matter$来维持其有效性。"
  paragon_origin_synthetic_ascension:0 "\n\n§P肉体永恒：§!\n通过创建一台独特的正电子脑并将其装入活性金属躯体，我们将$leader_trait_legendary_leader$复活了。为了维系[Root.GetHimHer]的存在，我们需要持续供应£sr_living_metal£$sr_living_metal$。"
- paragon_origin_genetic_ascension:0 "\n\n§P重铸基因：§!\n在无数次尝试将$leader_trait_legendary_leader$的基因拼接如其他天赋异禀的个体中，一位试验品成功地在手术中存活下来并呈现出了有益形状。然而，为了维持遗传性状的稳定性需要定期注入新的基因材料。\n十年度维护费：§R[owner.paragon_origin_ascension]§!£pop£$POPS$"
+ paragon_origin_genetic_ascension:0 "\n\n§P重铸基因：§!\n在无数次尝试将$leader_trait_legendary_leader$的基因拼接如其他天赋异禀的个体中，一位试验品成功地在手术中存活下来并呈现出了有益形状。然而，为了维持遗传性状的稳定性需要定期注入新的基因材料。\n十年度维护费：§R[owner.paragon_origin_ascension]§!£pop£ $POPS$"
  paragon_origin_null_loc:0 " "
 
  #Ethic Traits
@@ -881,7 +883,7 @@
  leader_trait_legendary_scientific_diplomacy:0 "人才虹吸"
  leader_trait_legendary_scientific_diplomacy_desc:1 "通过提供最好的条件，我们可以吸引最聪明的人才。这位领袖专门招聘符合条件的人员。"
  leader_trait_legendary_scientific_diplomacy_tt:1 "$t$§Y移民条约§!产出§G$@scientific_diplomacy_1_amt$§! £physics£ £society£ £engineering£§Y研究点§!\n$leader_trait_legendary_origin_desc$"
- leader_trait_legendary_scientific_diplomacy_2_tt:0 "$t$§Y移民条约§!产生§G$@scientific_diplomacy_2_amt$§! £physics£ £society£ £engineering£ §Y研究点§!\n$leader_trait_legendary_origin_desc$"
+ leader_trait_legendary_scientific_diplomacy_2_tt:0 "$t$§Y移民条约§!产生§G$@scientific_diplomacy_2_amt$§!£physics£ £society£ £engineering£§Y研究点§!\n$leader_trait_legendary_origin_desc$"
  leader_trait_legendary_scientific_diplomacy_3_tt:0 "$t$§Y移民条约§!产生§G$@scientific_diplomacy_3_amt$§! £physics£ £society£ £engineering£ §Y研究点§!\n$leader_trait_legendary_origin_desc$                                                                                              "
  leader_trait_legendary_autarky:0 "自给经济派"
  leader_trait_legendary_autarky_desc:1 "这位领袖会努力争取国家实现内部大循环。"
@@ -891,9 +893,9 @@
  leader_trait_legendary_industry_titan_desc:0 "这位领袖认为健康的经济是所有伟大国家的根基。"
  leader_trait_legendary_great_inventor:0 "大发明家"
  leader_trait_legendary_great_inventor_desc:0 "这位领袖是机器人学的先锋，也是我们劳动力自动化领域的首席研究员。"
- leader_trait_legendary_great_inventor_tt:1 "$t$£job_roboticist£$job_roboticist_plural$产生£amenities£舒适度：§G+1§!\n$leader_trait_legendary_origin_desc$"
- leader_trait_legendary_great_inventor_2_tt:0 "$t$£amenities£舒适度来自£job_roboticist£$job_roboticist_plural$：§G+２§!\n$leader_trait_legendary_origin_desc$"
- leader_trait_legendary_great_inventor_3_tt:0 "$t$£amenities£舒适度来自£job_roboticist£$job_roboticist_plural$：§G+３§!\n$leader_trait_legendary_origin_desc$"
+ leader_trait_legendary_great_inventor_tt:1 "$t$[roboticist.GetIcon][roboticist.GetNamePlural]产生£amenities£舒适度：§G+1§!\n$leader_trait_legendary_origin_desc$"
+ leader_trait_legendary_great_inventor_2_tt:0 "[roboticist.GetIcon][roboticist.GetNamePlural]产出的$t$£amenities£舒适度：§G+2§!\n$leader_trait_legendary_origin_desc$"
+ leader_trait_legendary_great_inventor_3_tt:0 "[roboticist.GetIcon][roboticist.GetNamePlural]产出的$t$£amenities£舒适度：§G+3§!\n$leader_trait_legendary_origin_desc$"
  leader_trait_legendary_genetic_purist:0 "基因艺术家"
  leader_trait_legendary_genetic_purist_desc:1 "这位领袖对遗传操纵方面的造诣是传奇的。"
  leader_trait_legendary_evervigilant:0 "警钟长鸣"
@@ -908,7 +910,7 @@
  leader_trait_legendary_dreamlike_desc:1 "这位领袖很容易粗心大意，经常忘记不那么重要的任务。"
  leader_trait_legendary_harsh_ruler:0 "粗暴"
  leader_trait_legendary_harsh_ruler_desc:0 "这位领袖对任何问题的回答都是残酷的镇压，这导致了与当地居民关系的疏远。"
- leader_trait_legendary_harsh_ruler_tt:1 "$t$£job_enforcer£§Y$job_enforcer_plural$§!和£job_telepath£§Y$job_telepath_plural$§!降低§R2.5%§!£happiness£§Y$HAPPINESS$§!"
+ leader_trait_legendary_harsh_ruler_tt:1 "$t$[enforcer.GetIcon]§Y[enforcer.GetNamePlural]§!和£job_telepath£§Y$job_telepath_plural$§!降低§R2.5%§!£happiness£§Y$HAPPINESS$§!"
  leader_trait_legendary_too_open:0 "幼稚"
  leader_trait_legendary_too_open_desc:1 "这位领袖很容易轻信他人，原谅过错。有些人经常利用这点。"
  leader_trait_legendary_hoplofobia:0 "胆小"
@@ -1487,4 +1489,3 @@
  mod_leader_generals_food_upkeep_add:0 "$r_food$ $UPKEEP$"
  mod_leader_scientists_food_upkeep_add:0 "$r_food$ $UPKEEP$"
  mod_leader_officials_food_upkeep_add:0 "$r_food$ $UPKEEP$"
- 

@@ -23,7 +23,7 @@
  paragon_2.2105.tt:0 "From now on, §HRenowned Leaders§! can contact us."
  sm_recruitment_office:0 "Interstellar Recruitment Office"
  sm_recruitment_office_desc:0 "Linguists, headhunters, explorers: they work together to scour the known stars in search of talent. Here, leaders of renown can be recruited to serve our cause.\n\nEmpire Limit: §Y1§!"
- sm_recruitment_office_tooltip:0 "Empire Modifier\n$t$External Leader Pool Size: §G+1§!\n$t$Leader Experience Gain: §G+10%§!\n$t$Increase chance for §HRenowned Leader§! to contact us."
+ sm_recruitment_office_tooltip:0 "Empire Modifier\n$t$$MOD_COUNTRY_EXTERNAL_LEADER_POOL_SIZE$: §G+1§!\n$t$Leader Experience Gain: §G+10%§!\n$t$Increase chance for §HRenowned Leader§! to contact us."
 
  HIRE:1 "Enlist"
  HIRE.tt:0 "Serve our empire well."
@@ -89,7 +89,7 @@
  paragon.40200.b:0 "Why do you want to join us?"
  paragon.40200.b.response:0 "You have an openness and honesty that I find appealing. Like me, you see the possibilities in collaboration. It will be a privilege to live among such open souls."
  paragon.40200.c:0 "How did you come by your cultural expertise?"
- paragon.40200.c.response:0 "The best way to understand a foreign culture is to embrace it. I discovered love for the first time on an alien world. I was fascinated by my partner and their culture, and even though we're no longer together, that relationship taught the meaning of tolerance and respect. Since then, I have tried to assimilate as much as I can in the places I visit, free from the burden of judgement."
+ paragon.40200.c.response:0 "The best way to understand a foreign culture is to embrace it. I discovered love for the first time on an alien world. I was fascinated by my partner and their culture, and even though we're no longer together, that relationship taught the meaning of tolerance and respect. Since then, I have tried to assimilate as much as I can in the places I visit, free from the burden of judgment."
  paragon.40200.hire_custom_tooltip:0 "§Y$NAME_xenophile2$§! joins our empire as a §HLeader§!."
 
  paragon.40300.name:0 "$NAME_militarist1$"
@@ -459,7 +459,7 @@
  paragon.41520.name:0 "Heeding the Call"
  paragon.41520.desc:1 "For years, §Y[Root.GetName]§! has been calling out into the void via powerful psionic dreams. Now, several civilian ships carrying members of many species have appeared in orbit around [planet_governed.GetName]. In exchange for a chance to live with their prophet, they are willing to serve us."
  paragon.41520.a:0 "They will be a part of our flock."
- paragon.41520.a.custom_tooltip:0 "Adds §Y3§! Spiritualist, Psionic Pops to [event_target:planet_governed.GetName]."
+ paragon.41520.a.custom_tooltip:0 "Adds §Y300§! Spiritualist, Psionic Pops to [event_target:planet_governed.GetName]."
  paragon.41520.b:0 "They are not welcome."
 
  # Nasuz Demetor / spiritualist2
@@ -513,7 +513,7 @@
  paragon.3004.name:0 "Forgotten Admiral"
  paragon.3004.intro: "Our engineering team has ably assisted the alien crew. The vessel's designation translates roughly to 'First Talon', and their commander has identified himself as Skrand Sharpbeak, an admiral of renown.\n\nBy comparing data from the First Talon's databanks and our own, we have confirmed that Skrand and his crew were trapped within the gate for several millennia. For them, it was a short trip - but for the rest of the galaxy, thousands of years passed by."
  paragon.3004.a.desc: "$paragon.3004.intro$\n\nThanks to our excavation on Skravird, at least we can point Admiral Sharpbeak towards his home planet, but everything and everyone he has have ever loved is long since gone."
- paragon.3004.b.desc: "$paragon.3004.intro$\n\nThey have no home to return to. Everything and everyone they have have ever loved is long since gone." 
+ paragon.3004.b.desc: "$paragon.3004.intro$\n\nThey have no home to return to. Everything and everyone they have have ever loved is long since gone."
  paragon.3004.a:0 "A sad fate."
 
  paragon.3005.name:0 "Skrand Sharpbeak"
@@ -770,8 +770,10 @@
 
  #MODIFIERS AND OTHERS
 
- mod_planet_clerks_unity_produces_add:0 "£unity£ $unity$ from £job_clerk£ $job_clerk_plural$"
+ mod_planet_clerks_unity_produces_add:0 "£unity£ $unity$ per $pop_group_unit$ [clerk.GetIcon] [clerk.GetNamePlural]"
  planet_clerks:0 "Clerk Jobs"
+ planet_civilians: "Civilian Jobs"
+ mod_planet_civilians_unity_produces_add:0 "£unity£ $unity$ per $pop_group_unit$ £job_civilian£ $job_civilian_plural$"
 
  commanding_presence:0 "Commanding Presence"
  commanding_presence_desc:0 "Through the sheer willpower of our leader, we are able to extend our empire's agenda across space, and force others to heed our command."
@@ -779,10 +781,10 @@
  paragon_origin_strengthened_government_i_desc:0 "Our empire has focused on creating a better-managed and more stable government."
  paragon_origin_strengthened_government_ii:0 "$paragon_origin_strengthened_government_i$I"
  paragon_origin_strengthened_government_ii_desc:0 "$paragon_origin_strengthened_government_i_desc$ Special courses and pre-screening for government positions are a prerequisite to achieving this goal."
- paragon_origin_strengthened_government_ii_tt:1 "Each £job_clerk£ §Y$job_clerk$§! gets a §Y25%§! increase in $POLITICAL_POWER$\n£unity£ $unity$ from £job_clerk£ $job_clerk_plural$: §G+0.5§!"
+ paragon_origin_strengthened_government_ii_tt:1 "Each [civilian.GetIcon] §Y[civilian.GetName]§! gets a §Y25%§! increase in $POLITICAL_POWER$\n£unity£ $unity$ from [civilian.GetIcon] [civilian.GetNamePlural]: §G+0.5§!"
  paragon_origin_strengthened_government_iii:0 "$paragon_origin_strengthened_government_i$II"
  paragon_origin_strengthened_government_iii_desc:0 "$paragon_origin_strengthened_government_ii_desc$ To further strengthen our clerical staff, we have implemented new regulations. Only the most upstanding and loyal citizens can apply for the job."
- paragon_origin_strengthened_government_iii_tt:1 "Each £job_clerk£ §Y$job_clerk$§! gets a §Y50%§! increase in $POLITICAL_POWER$\n£unity£ $unity$ from £job_clerk£ $job_clerk_plural$: §G+1§!\n£mod_country_edict_fund_add£ $MOD_COUNTRY_EDICT_FUND_ADD$ from £job_clerk£ $job_clerk_plural$: §G+1§!"
+ paragon_origin_strengthened_government_iii_tt:1 "Each [civilian.GetIcon] §Y[civilian.GetName]§! gets a §Y50%§! increase in $POLITICAL_POWER$\n£unity£ $unity$ from [civilian.GetIcon] [civilian.GetNamePlural]: §G+1§!\n£mod_country_edict_fund_add£ $MOD_COUNTRY_EDICT_FUND_ADD$ from [civilian.GetIcon] [civilian.GetNamePlural]: §G+1§!"
  paragon_origin_humble_monument:0 "Humble Monument"
  paragon_origin_humble_monument_desc:0 "This modest monument is a tribute to our glorious leader, who elevated our nation to the stars."
  paragon_origin_rich_monument:0 "Rich Monument"
@@ -856,14 +858,14 @@
  leader_trait_legendary_story:0 "Historical Deeds"
  leader_trait_legendary_story_desc:0 "This leader will go down in history as a figure of great notoriety."
 
- paragon_origin_psionic_ascension:1 "\n\n§PPower Overflowing:§!\nAfter a psionic ritual, this leader became a conduit to the Shroud. The psionic energy of our entire people is channeled into [Root.GetHimHer], making this leader a quasi-divine being. However, such power comes at a cost, and we must sacrifice other psionic individuals to maintain the conduit.\nDecennial Upkeep: §R[owner.paragon_origin_ascension]§! £pop£ $POPS$"
+ paragon_origin_psionic_ascension:1 "\n\n§PPower Overflowing:§!\nAfter a psionic ritual, this leader became a conduit to the Shroud. The psionic energy of our entire people is channeled into [Root.GetHimHer], making this leader a quasi-divine being. However, such power comes at a cost, and we must sacrifice other psionic individuals to maintain the conduit.\nDecennial Upkeep: §R[owner.paragon_origin_ascension]§! £pop£ $POPS$"
  paragon_origin_cybernetic_ascension:0 "\n\n§PCore Heart:§!\nFormed from a planetary core, this unique cybernetic implant requires a constant supply of £sr_dark_matter£ $sr_dark_matter$ to maintain its efficiency."
  paragon_origin_synthetic_ascension:0 "\n\n§PFlesh Eternal:§!\nBy creating a unique positronic brain and encasing it inside a Living Metal body, we brought the $leader_trait_legendary_leader$ back to life. To sustain [Root.GetHimHer] we need a constant supply of £sr_living_metal£ $sr_living_metal$."
- paragon_origin_genetic_ascension:0 "\n\n§PRestored Genes:§!\nAfter several attempts at splicing the DNA of the $leader_trait_legendary_leader$ into other talented individuals, a single patient managed to survive the operation and develop beneficial traits. However, new genetic material needs to be injected regularly to maintain genomic stability.\nDecennial Upkeep: §R[owner.paragon_origin_ascension]§! £pop£ $POPS$"
+ paragon_origin_genetic_ascension:0 "\n\n§PRestored Genes:§!\nAfter several attempts at splicing the DNA of the $leader_trait_legendary_leader$ into other talented individuals, a single patient managed to survive the operation and develop beneficial traits. However, new genetic material needs to be injected regularly to maintain genomic stability.\nDecennial Upkeep: §R[owner.paragon_origin_ascension]§! £pop£ $POPS$"
  paragon_origin_null_loc:0 " "
 
  #Ethic Traits
- leader_trait_legendary_origin_desc:1 "\n§GLuminary Ruler Trait§!"
+ leader_trait_legendary_origin_desc:1 "§GLuminary Ruler Trait§!"
  leader_trait_legendary_military_knowledge:0 "Inspired Commander"
  leader_trait_legendary_military_knowledge_desc:0 "A brilliant military commander, loved by the troops."
  leader_trait_legendary_foe_hammer:1 "Unwavering Aggressor"
@@ -880,9 +882,9 @@
  leader_trait_legendary_gunboat_diplomacy_desc:0 "This leader favors displays of power. A well-placed threat is sometimes worth a thousand words."
  leader_trait_legendary_scientific_diplomacy:0 "Brain Poacher"
  leader_trait_legendary_scientific_diplomacy_desc:1 "By offering the best, we can attract the brightest minds. This leader specializes in the recruitment of qualified personnel."
- leader_trait_legendary_scientific_diplomacy_tt:1 "$t$§YMigration Pacts§! produce §G$@scientific_diplomacy_1_amt$§! £physics£ £society£ £engineering£ §YResearch Points§!\n$leader_trait_legendary_origin_desc$"
- leader_trait_legendary_scientific_diplomacy_2_tt:0 "$t$§YMigration Pacts§! produce §G$@scientific_diplomacy_2_amt$§! £physics£ £society£ £engineering£ §YResearch Points§!\n$leader_trait_legendary_origin_desc$"
- leader_trait_legendary_scientific_diplomacy_3_tt:0 "$t$§YMigration Pacts§! produce §G$@scientific_diplomacy_3_amt$§! £physics£ £society£ £engineering£ §YResearch Points§!\n$leader_trait_legendary_origin_desc$"
+ leader_trait_legendary_scientific_diplomacy_tt:1 "§YMigration Pacts§! produce §G$@scientific_diplomacy_1_amt$§! £physics£ £society£ £engineering£ §YResearch Points§!\n$t$- $leader_trait_legendary_origin_desc$"
+ leader_trait_legendary_scientific_diplomacy_2_tt:0 "§YMigration Pacts§! produce §G$@scientific_diplomacy_2_amt$§! £physics£ £society£ £engineering£ §YResearch Points§!\n$t$- $leader_trait_legendary_origin_desc$"
+ leader_trait_legendary_scientific_diplomacy_3_tt:0 "§YMigration Pacts§! produce §G$@scientific_diplomacy_3_amt$§! £physics£ £society£ £engineering£ §YResearch Points§!\n$t$- $leader_trait_legendary_origin_desc$"
  leader_trait_legendary_autarky:0 "Autark"
  leader_trait_legendary_autarky_desc:1 "This leader will strive to ensure the nation's self-sufficiency."
  leader_trait_legendary_natural_ruler:0 "Enlightened Ruler"
@@ -891,9 +893,9 @@
  leader_trait_legendary_industry_titan_desc:0 "This leader sees a healthy economy as the foundation of any great nation."
  leader_trait_legendary_great_inventor:0 "Great Inventor"
  leader_trait_legendary_great_inventor_desc:0 "This leader is a pioneer in robotics and our lead researcher in workforce automation."
- leader_trait_legendary_great_inventor_tt:1 "$t$£amenities£ Amenities from £job_roboticist£ $job_roboticist_plural$: §G+1§!\n$leader_trait_legendary_origin_desc$"
- leader_trait_legendary_great_inventor_2_tt:0 "$t$£amenities£ Amenities from £job_roboticist£ $job_roboticist_plural$: §G+2§!\n$leader_trait_legendary_origin_desc$"
- leader_trait_legendary_great_inventor_3_tt:0 "$t$£amenities£ Amenities from £job_roboticist£ $job_roboticist_plural$: §G+3§!\n$leader_trait_legendary_origin_desc$"
+ leader_trait_legendary_great_inventor_tt:1 "£amenities£ Amenities from £job_roboticist£ $job_roboticist_plural$: §G+1§!\n$t$- $leader_trait_legendary_origin_desc$"
+ leader_trait_legendary_great_inventor_2_tt:0 "£amenities£ Amenities from £job_roboticist£ $job_roboticist_plural$: §G+2§!\n$t$- leader_trait_legendary_origin_desc$"
+ leader_trait_legendary_great_inventor_3_tt:0 "$£amenities£ Amenities from £job_roboticist£ $job_roboticist_plural$: §G+3§!\n$t$- $leader_trait_legendary_origin_desc$"
  leader_trait_legendary_genetic_purist:0 "Genome Artist"
  leader_trait_legendary_genetic_purist_desc:1 "This leader's flair for genetic manipulation is legendary."
  leader_trait_legendary_evervigilant:0 "Ever Vigilant"
@@ -908,7 +910,7 @@
  leader_trait_legendary_dreamlike_desc:1 "This leader is easily distracted and often forgets about less important tasks."
  leader_trait_legendary_harsh_ruler:0 "Brutal"
  leader_trait_legendary_harsh_ruler_desc:0 "This leader's answer to any issue is brutal oppression, which alienates the local population."
- leader_trait_legendary_harsh_ruler_tt:1 "$t$£job_enforcer£ §Y$job_enforcer_plural$§! and £job_telepath£ §Y$job_telepath_plural$§! reduce £happiness£ §Y$HAPPINESS$§! by §R2.5%§!"
+ leader_trait_legendary_harsh_ruler_tt:1 "£job_enforcer£ §Y$job_enforcer_plural$§! and £job_telepath£ §Y$job_telepath_plural$§! reduce £happiness£ §Y$HAPPINESS$§! by §R2.5%§!"
  leader_trait_legendary_too_open:0 "Naive"
  leader_trait_legendary_too_open_desc:1 "This leader is too trusting and forgiving. Others find it easy to abuse these qualities."
  leader_trait_legendary_hoplofobia:0 "Fearful"
@@ -1487,4 +1489,3 @@
  mod_leader_generals_food_upkeep_add:0 "$r_food$ $UPKEEP$"
  mod_leader_scientists_food_upkeep_add:0 "$r_food$ $UPKEEP$"
  mod_leader_officials_food_upkeep_add:0 "$r_food$ $UPKEEP$"
- 

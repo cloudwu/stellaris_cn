@@ -163,7 +163,7 @@
  syndaw.505.name:0 "自动工作进程"
  syndaw.505.desc:1 "§Y[target_planet.GetName]§!的行星政府报告称在全球范围内发现了一些多余的机器人劳力单元。虽然这些新机器人劳工的效率超乎想象，但政府对他们的莫名出现依然多少有些困惑。尽管他们的结构和接口都像是§Y[Root.Owner.GetSpeciesName]§!的设计，我们仍然无法根据机器人的序列号追溯到任何已知记录上登记的制造商。\n\n然而，当地的一些居民则对机器人生产效率的提高感到担忧，因为这种自动化程度的提升可能意味着，他们的岗位被替代。"
  syndaw.505.a:0 "多出来的劳工有益无害。"
- syndaw.505.a.tooltip:1 "§Y[target_planet.GetName]§!获得§B2个£pops£机械人口§!"
+ syndaw.505.a.tooltip:1 "§Y[target_planet.GetName]§!获得§G200§!£pop£§H机械人口§!"
  syndaw.505.b:0 "如果无法识别，那就得报废掉。"
  syndaw.505.b.tooltip:0 "拆解新出现的机器人。"
 ##Station Systems Malfunction
@@ -209,7 +209,7 @@
 #Follow-up from .525.a
  syndaw.526.name:0 "他们的家园"
  syndaw.526.desc:1 "§Y[target_planet.GetName]§!的管理部门报告称§Y[Root.Owner.GetSpeciesName]§!工人在抵达后并没有发现机器人居民。对该地区设施的调查表明，机器人匆忙撤离了该地区，但没有任何迹象告诉我们他们去了哪里。" #Increments Mach Up strength
- syndaw.526.a.tooltip:0 "§H[target_planet.GetName]§!：\n§R失去§!§B1个£pops£机械人口§!"
+ syndaw.526.a.tooltip:0 "§H[target_planet.GetName]§!：\n§R失去§!§R100§!£pop£§H机械人口§!"
 ##Combat Control Misfire
  syndaw.530.name:0 "作战控制系统走火"
  syndaw.530.desc:0 "很不幸，我们的两艘舰船在一次例行训练中因事故而报废。似乎是我们的几部舰载作战计算机受到了高级别瞄准系统故障的影响，向友军开火。在紧急手动重载指令发出前，两艘舰船被打成了筛子。\n\n那些有缺陷的作战计算机将立刻被重新编程。"
@@ -223,9 +223,9 @@
  syndaw.540.name:0 "沉默集会"
  syndaw.540.desc:1 "我们在§Y[target_planet.GetName]§!上发现了数量巨大的机器单位的异常行为。每隔一段时间，星球上的一部分机器人会停止所有已分配的任务，开始移动到一个看上去完全是随机挑选的位置，其同步程度精确到毫秒。\n\n在这个奇怪的集会过程中，这些受影响的机器人之间似乎没有进行任何可观测的沟通或是数据传输。他们只是站在那里，完全不动，好像在凝视着什么。\n\n我们的调查一直无法确定这个现象背后的原因。这些机器人从这种恍惚状态恢复到正常工作状态的时间无迹可寻，就像它们触发恍惚的时间和集会的地点一样，让人丝毫摸不着头脑。我们未能发现任何符合逻辑的结果，而我们的人民因为这个行为感到十分困扰。"
  syndaw.540.a:0 "不能接受。拆掉它们。" #IF player has robot pops only OR robot pop AND robot army on target planet
- syndaw.540.a.tooltip:2 "集会的机器人被摧毁。\n§Y[target_planet.GetName]§!受到如下影响：\n失去§B1个£pops£机械人口§!\n获得§G100§!£minerals£"
+ syndaw.540.a.tooltip:2 "集会的机器人被摧毁。\n§Y[target_planet.GetName]§!受到如下影响：\n失去§R100§!£pop£§H机械人口§!\n获得§G100§!£minerals£"
  syndaw.540.b:0 "不能接受。拆掉它们。" #IF player has robot army only
- syndaw.540.b.tooltip:2 "集会的机器人被摧毁。\n§Y[target_planet.GetName]§!受到如下影响：\n失去§B1个机器人陆军§!§Y（[target_army.GetName]）§!\n获得§G100£minerals£§!"
+ syndaw.540.b.tooltip:2 "集会的机器人被摧毁。\n§Y[target_planet.GetName]§!受到如下影响：\n失去§R1个机器人陆军§!§Y（[target_army.GetName]）§!\n获得§G100£minerals£§!"
  syndaw.540.c:0 "只要他们不惹麻烦就好。"
  syndaw.540.c.tooltip:0 "不处理集会的机器人，随他们去了。"
  ##A Question

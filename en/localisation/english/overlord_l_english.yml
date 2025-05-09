@@ -57,12 +57,13 @@
  MESSAGE_FINAL_OFFSPRING_SHIP_TITLE:0 "Last Offspring Ship Defeated"
  MESSAGE_FINAL_OFFSPRING_SHIP_DESC:0 "Our last §YOffspring Ship§! in the $SYSTEM|Y$ system has fallen, leaving our fleets without proper command."
 
+ offspring_drone: "$job_offspring_drone$"
  job_offspring_drone:0 "Offspring Drone"
  job_offspring_drone_plural:0 "Offspring Drones"
- job_offspring_drone_plural_with_icon: "£job_spawning_drone£ $job_offspring_drone_plural$"
+ job_offspring_drone_plural_with_icon: "[spawning_drone.GetIcon] $job_offspring_drone_plural$"
  mod_job_offspring_drone_add:0 "$job_offspring_drone$ Jobs"
  job_offspring_drone_desc:0 "The administrator of the entire planet resides here. It is through Offspring drones that the Progenitor enacts their grand design."
- job_offspring_drone_effect_desc:2 "£job_spawning_drone£ $job_offspring_drone_plural$ turn $r_food$ (or $r_minerals$) into £mod_planet_amenities_no_happiness_add£ §Y$PLANET_AMENITIES_TITLE$§! and £mod_planet_pop_assembly_mult£ §Y$MOD_PLANET_POP_ASSEMBLY_ORGANIC_ADD$§!, spawn §Y$offspring_defense_plural$§!, and provide a £mod_planet_jobs_simple_drone_produces_mult£ §G+10%§! increase in §Y$pop_cat_simple_drone$ output§!."
+ job_offspring_drone_effect_desc:2 "[spawning_drone.GetIcon] $job_offspring_drone_plural$ turn $r_food$ (or $r_minerals$) into £mod_planet_amenities_no_happiness_add£ §Y$PLANET_AMENITIES_TITLE$§! and £mod_planet_pop_assembly_mult£ §Y$MOD_BONUS_POP_GROWTH$§!, spawn §Y$offspring_defense_plural$§!, and provide a £mod_planet_jobs_simple_drone_produces_mult£ §G+10%§! increase in §Y$pop_cat_simple_drone$ output§!."
  building_offspring_nest:0 "Offspring Nest"
  building_offspring_nest_desc:1 "This fortified nest safely harbors the local Offspring while also accelerating growth for the rest of the nearby hive."
  offspring_nest_tooltip:1 "\n§HOnly Progenitor Hive-Minded species may be assembled by the Offspring Nest.§!\n"
@@ -75,7 +76,8 @@
  missing_offspring_modifier_desc:0 "This planet is missing an Offspring leading to a significant drop in $pop_cat_simple_drone$ efficiency."
 
 # Progenitor Hive Ships
-
+ OFFSPRING_SHIP_DESC: "As an Offspring, this ship is capable of projecting the Progenitor's will."
+ offspring_corvette_cap: "$offspring_corvette$"
  offspring_corvette:0 "Offspring Corvette"
  offspring_corvette_plural:0 "Offspring Corvettes"
  OFFSPRING_CORVETTE_MID_M1S1:0 "$CORVETTE_MID_M1S1$"
@@ -83,6 +85,7 @@
  OFFSPRING_CORVETTE_MID_S1:0 "$CORVETTE_MID_S1$"
  OFFSPRING_CORVETTE_MID_S2PD1:0 "$CORVETTE_MID_S2PD1$"
 
+ offspring_cruiser_cap: "$offspring_cruiser$"
  offspring_cruiser:0 "Offspring Cruiser"
  offspring_cruiser_plural:0 "Offspring Cruisers"
  OFFSPRING_CRUISER_BOW_L1:0 "$CRUISER_BOW_L1$"
@@ -95,6 +98,7 @@
  OFFSPRING_CRUISER_STERN_M1:0 "$CRUISER_STERN_M1$"
  OFFSPRING_CRUISER_STERN_S2:0 "$CRUISER_STERN_S2$"
 
+ offspring_destroyer_cap: "$offspring_destroyer$"
  offspring_destroyer:0 "Offspring Destroyer"
  offspring_destroyer_plural:0 "Offspring Destroyers"
  OFFSPRING_DESTROYER_BOW_M1S2:0 "$DESTROYER_BOW_M1S2$"
@@ -104,6 +108,7 @@
  OFFSPRING_DESTROYER_STERN_S2:0 "$DESTROYER_STERN_S2$"
  OFFSPRING_DESTROYER_STERN_M1:0 "$DESTROYER_STERN_M1$"
 
+ offspring_battleship_cap: "$offspring_battleship$"
  offspring_battleship:0 "Offspring Battleship"
  offspring_battleship_plural:0 "Offspring Battleships"
  OFFSPRING_BATTLESHIP_BOW_L1M1S2:0 "$BATTLESHIP_BOW_L1M1S2$"
@@ -124,6 +129,7 @@
  OFFSPRING_BATTLESHIP_STERN_S4:0 "$BATTLESHIP_STERN_S4$"
 
  SHIP_AURA_OFFSPRING:0 "$OFFSPRING_AURA$"
+ SHIP_BIO_AURA_OFFSPRING: "$OFFSPRING_AURA$"
  OFFSPRING_AURA:0 "Offspring Oversight"
  sm_offspring_outlook:0 "Offspring Outlook"
  sm_offspring_outlook_desc:0 "A starbase module allowing an Offspring to oversee and administrate ongoing battles within the system.\n"
@@ -153,12 +159,12 @@
  origin_tooltip_subterranean_effects:4 "- $SPECIES_TRAITS$ ['concept_cave_dweller']\n- ['concept_mining_district', £district£ Mining Districts]: Uncapped"
  trait_cave_dweller:0 "Cave Dweller"
  trait_cave_dweller_desc:1 "§LThis species thrives under the surface of any planet they can inhabit.§!"
- trait_cave_dweller_tooltip:0 "$MOD_BIO_POP_GROWTH_SPEED$: §R-20%§!"
+ trait_cave_dweller_tooltip: "$MOD_BIO_LOGISTIC_GROWTH_MULT$: §R-20%§!"
  trait_robot_cave_dweller: "Molebots"
  trait_robot_cave_dweller_desc: "§LThese machines are masterfully crafted for cave exploration and mineral extraction, showcasing exceptional maneuverability which enables them to effortlessly traverse through underground spaces.§!"
  trait_robot_cave_dweller_tooltip: "$MOD_POP_ASSEMBLY_SPEED$: §R-20%§!"
  origin_subterranean_machines: "Subterranean Machines"
- origin_subterranean_machines_desc: "This civilization has flawlessly intergated into subterranean existence, initially driven by either calculated self-preservation or a directive to locate of hidden, abundant resources in the depths. The resulting mechanical adaptations have unearthed a versatile and unwavering community of machines."
+ origin_subterranean_machines_desc: "This civilization has flawlessly integrated into subterranean existence, initially driven by either calculated self-preservation or a directive to locate of hidden, abundant resources in the depths. The resulting mechanical adaptations have unearthed a versatile and unwavering community of machines."
  origin_tooltip_robot_subterranean_effects: "- $SPECIES_TRAITS$ ['concept_robot_cave_dweller']\n- ['concept_mining_district', £district£ Mining Districts]: Uncapped"
 
  START_SCREEN_SUBTERRANEAN:1 "While other beings on [GetHomeWorldName] would spend their nights out in the wilds, our ancestors soon learned the wisdom of underground dwellings, sheltered from harsh light and climates.\n\n$START_SCREEN_SUBTERRANEAN_END$"
@@ -200,7 +206,7 @@
  ################################
 
  origin_star_slingshot:0 "Slingshot to the Stars"
- origin_star_slingshot_desc:1 "Once, the skies above this civilization were illuminated by shooting stars; then came a long season of darkness. Taking to the heavens in search of answers, the first offworld explorers discovered a dormant (and long abandoned) $quantum_catapult_1$."
+ origin_star_slingshot_desc:1 "Once, the skies above this civilization were illuminated by shooting stars; then came a long season of darkness. Taking to the heavens in search of answers, the first offworld explorers discovered a dormant (and long abandoned) §H$quantum_catapult_1$§!."
  START_SCREEN_STAR_SLINGSHOT:0 "Since time immemorial our people have seen the night sky occasionally lit up by innumerable shooting stars, and even until recently our scientists have been unable to explain the phenomenon. As we have started exploring the galaxy we have finally gotten the equipment necessary to track down the cause of these disturbances - an old structure our engineers have called a $quantum_catapult_1$.\n\n$START_SCREEN_STAR_SLINGSHOT_SECOND_PART$"
  START_SCREEN_STAR_SLINGSHOT_GESTALT:0 "Since the earliest moments of our consciousness we have occasionally seen the sky lit up by innumerable shooting stars, and been unable to come to terms with what might cause this weird phenomenon. As we have freed ourselves from the shackles of our homeworld, we have managed to obtain the tools necessary to track down the cause of this disturbance - a $quantum_catapult_1$.\n\n$START_SCREEN_STAR_SLINGSHOT_SECOND_PART$"
  START_SCREEN_STAR_SLINGSHOT_SECOND_PART:0 "Though dormant, partly in ruins, and abandoned, we believe it can be restored to former glory. If it works as envisioned, it will be our gateway to the rest of the galaxy."
@@ -277,7 +283,9 @@
  origin.5705.desc:0 "After careful consideration, we have decided to invest a significant amount of resources into helping you specialize your empire. It will enable your empire to play an important role in the future of all our friends and allies.\n\nWe were not entirely sure what your people would be more comfortable with, however: a militarized specialization? A scholarly one? Or are you more interested in materials and minerals?"
  origin.5705.desc.reconsider:0 "So... Have you given it a second thought?"
  origin.5705.a:0 "A military-focused deal sounds perfect."
- origin.5705.a.tt:2 "§Y[ROOT.GetName]§! will convert to a §Y$specialist_bulwark$§! specialist - focused on military and defense.\n§Y[Root.GetName]§! will pay an $r_influence$ tithe for expanding.\nReceive a fleet of §YDestroyers§! and the technology necessary to craft more from the §Y[overlord_empire.GetName]§!."
+ origin.5705.a.tt_intro: "§Y[ROOT.GetName]§! will convert to a §Y$specialist_bulwark$§! specialist - focused on military and defense.\n§Y[Root.GetName]§! will pay an $r_influence$ tithe for expanding."
+ origin.5705.a.tt:2 "$origin.5705.a.tt_intro$\nReceive a fleet of §YDestroyers§! and the technology necessary to craft more from the §Y[overlord_empire.GetName]§!."
+ origin.5705.a.bioships.tt: "$origin.5705.a.tt_intro$\nReceive a fleet of §Y$mauler_stage_2_plural$§! and the technology necessary to craft more from the §Y[overlord_empire.GetName]§!."
  origin.5705.b:0 "Could you tell us more about Bulwarks?"
  origin.5705.c:0 "Our people are more scholarly in nature."
  origin.5705.c.tt:1 "§Y[ROOT.GetName]§! will convert to a §Y$specialist_scholarium$§! specialist - focused on research and technology.\n§Y[ROOT.GetName]§! will pay an $r_influence$ tithe for expanding.\nReceive a §YScience Ship§! and a §YScientist§! from the §Y[overlord_empire.GetName]§!."

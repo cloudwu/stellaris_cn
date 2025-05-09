@@ -401,7 +401,7 @@
  astral_rift_difficulty_decrease_2: "$astral_rift_difficulty_decrease_1$"
  astral_rift_difficulty_decrease_3: "$astral_rift_difficulty_decrease_1$"
 
- mod_planet_researchers_sr_dark_matter_produces_add: "£sr_dark_matter£ $sr_dark_matter$ from £job_researcher£ [GetResearcherPlural]"
+ mod_planet_researchers_sr_dark_matter_produces_add: "£sr_dark_matter£ $sr_dark_matter$ per $pop_group_unit$ £job_researcher£ [GetResearcherPlural]"
 
  ##########
  # Traits #
@@ -425,7 +425,7 @@
 
  trait_exd: "Extradimensional"
  trait_exd_desc: "This species originates from another dimension and requires a great deal of energy to survive in our universe."
- TRAIT_EXD_EFFECT: "Replaces $r_food$ Upkeep with $r_energy$ Upkeep\nEach pop working as a slave or better produces 0.5 £physics_research£ §YPhysics Research§! per month"
+ TRAIT_EXD_EFFECT: "Replaces $r_food$ Upkeep with $r_energy$ Upkeep\nEvery $pop_group_unit$ £pop£ §HPops§! working as a slave or better produces 0.5 £physics_research£ §YPhysics Research§! per month"
 
  ######################
  # Origin - Riftworld #
@@ -450,7 +450,7 @@
  riftworld_digsite: "Ancient Crater"
  riftworld_digsite_desc: "We've detected anomalous seismic activity from deep inside an ancient crater on the surface of [Planet.GetName]. Underground sonar revealed a previously unknown cavity."
  astral_planes.2125.name: "High Speed Impact"
- astral_planes.2125.desc: "Initial excavations into the base of the crater revealed a fully-formed cylinder of impactite lodged deep into the earth.\n\nThis vein must have originated from a meteoric impact of extremely high velocity. Initial calculations demonstrate the object must have arrived at a mesurable fraction of the speed of light. It's a wonder that it made it to the surface."
+ astral_planes.2125.desc: "Initial excavations into the base of the crater revealed a fully-formed cylinder of impactite lodged deep into the earth.\n\nThis vein must have originated from a meteoric impact of extremely high velocity. Initial calculations demonstrate the object must have arrived at a measurable fraction of the speed of light. It's a wonder that it made it to the surface."
  astral_planes.2125.a: "Continue excavations."
  astral_planes.2130.name: "Underground Caverns"
  astral_planes.2130.desc: "At the termination point of the impactite vein, we have discovered an expansive cave system.\n\nPools of underground water support thin lines of pale vegetation along the cavern walls. At the bottom of one of these pools lies the remnants of an anomalous spherical object. It is not a natural formation, and appears to be the source of this impact site."
@@ -461,7 +461,7 @@
  astral_planes.2140.desc.common: "We have recovered a cache of documents from within the ancient sphere, each written in an archaic version of our own language. Several of these mention names associated with our most sacred legends.\n\nAn intricate network of ladders snakes upward from the impact site to a massive tunnel system. Based on the varying ages of the rope fibers, these caverns must have been occupied for several generations as the crash survivors worked their way toward the surface.\n\nHowever, nothing we'd discovered thus far could have prepared us for the final revelation: one of the upper chambers contained a burial site. DNA analysis conducted on the remains within revealed a shocking truth: these people are our ancestors.\n\nWhere exactly they came from, or why this place was forgotten, is yet unknown. The salvaged documents are in a poorly preserved state, but we have recovered a data log from the sphere. It clearly shows that the vessel arrived in our star system by means of the Astral Rift near [from.planet.GetName]."
  astral_planes.2140.desc.has_rift_sphere: "$astral_planes.2140.desc.common$\n\nWhile clearly less advanced than our own tech, this sphere is a testament to its builders desperation and ingenuity. This was a final effort to escape what must have been a terrible fate on the far side of the rift."
  astral_planes.2140.desc.default: "$astral_planes.2140.desc.common$\n\nWith some study, we should be able to replicate and even improve upon the technology required to construct a vessel with these dimension-spanning capabilities."
- astral_planes.2140.desc.machine.common: "We have recovered a data cache from within the ancient sphere, a cache that was encoded in an archaic version of our file system.\n\nAn intricate network of ladders snakes upward from the impact site to a massive tunnel system. Based on the varying ages of the rope fibers, these caverns must have been occupied for several iterations as the crash survivors worked their way toward the surface.\n\nOne of the upper sites contained parts reminiscent of those used by our earliest models. These survivors were our predecesors.\n\nWhere exactly they came from, or why this location was lost, is yet unknown. The data long we recovered from the sphere clearly shows that the vessel arrived in our star system by means of the Astral Rift near [from.planet.GetName]."
+ astral_planes.2140.desc.machine.common: "We have recovered a data cache from within the ancient sphere, a cache that was encoded in an archaic version of our file system.\n\nAn intricate network of ladders snakes upward from the impact site to a massive tunnel system. Based on the varying ages of the rope fibers, these caverns must have been occupied for several iterations as the crash survivors worked their way toward the surface.\n\nOne of the upper sites contained parts reminiscent of those used by our earliest models. These survivors were our predecessors.\n\nWhere exactly they came from, or why this location was lost, is yet unknown. The data long we recovered from the sphere clearly shows that the vessel arrived in our star system by means of the Astral Rift near [from.planet.GetName]."
  astral_planes.2140.desc.machine.has_rift_sphere: "$astral_planes.2140.desc.machine.common$\n\nWhile clearly less advanced than our own tech, this sphere is a testament to its builders' desperation and ingenuity. This was a final effort to escape what must have been a terrible fate on the far side of the rift."
  astral_planes.2140.desc.machine: "$astral_planes.2140.desc.machine.common$\n\nWith some study, we should be able to replicate and even improve upon the technology required to construct a vessel with these dimension-spanning capabilities."
  astral_planes.2140.a: "We have found our birthplace."
@@ -503,14 +503,14 @@
  civic_hyperspace_specialty_desc: "This society has always embraced speed. The manipulation of hyperspace is just another thoroughfare, and those with aptitude in the field have risen to the highest caste."
  civic_hyperspace_specialty_effects: "£physics£ §Y$tech_hyper_drive_2$§! is Guaranteed Research Option.\nHas Low Intel on all systems within 3 Hyperlanes of your starting system."
  civic_hive_hyperspace_specialty: "Hyperspace Synchronicity"
- civic_hive_hyperspace_specialty_desc: "This collective seeks speed. The methodologies of hyperspace manipulation are embedded deep within the mind of every drone, granting the collective a progressive understanding of the fundamental principles of distance over time."
+ civic_hive_hyperspace_specialty_desc: "This collective seeks speed. The methodologies of hyperspace manipulation are embedded deep throughout the collective, enabling a progressive understanding of the fundamental principles of distance over time."
  civic_hive_hyperspace_specialty_effects: "$civic_hyperspace_specialty_effects$"
- civic_machine_hyperspace_specialty: "Hyperspace Synchronicity"
+ civic_machine_hyperspace_specialty: "Hyperspace Calculations"
  civic_machine_hyperspace_specialty_desc: "This collective seeks speed. Theories of hyperspace manipulation are hard-wired into the processing unit of every drone, granting the collective a progressive understanding of the fundamental principles of distance over time."
  civic_machine_hyperspace_specialty_effects: "$civic_hyperspace_specialty_effects$"
  civic_corporate_hyperspace_specialty: "Hyperspace Trade"
  civic_corporate_hyperspace_specialty_desc: "Time is money, and this Megacorporation values speed. Heavy investment in R&D has paid off handsomely, granting the Corporation proprietary access to cutting-edge hyperspace manipulation techniques."
- civic_corporate_hyperspace_specialty_effects: "$civic_hyperspace_specialty_effects$"
+ civic_corporate_hyperspace_specialty_effects: "$civic_hyperspace_specialty_effects$\nThe £building£ §Y$building_amusement_megaplex$§! $megacorp_civic_branch_office_building_effect$"
 
  civic_tooltip_not_hyperspace_specialty: "Does NOT have a ['concept_hyperspace_specialty_civics'] Civic"
  concept_hyperspace_specialty_civics: "Hyperspace Specialty"
@@ -522,7 +522,7 @@
  civic_dimensional_worship_effects_additional: "- Chance for [ 'concept_astral_rift', $ASTRAL_RIFTS$ ] to appear in systems you control: §G+100%§!$NEW_LINE$- §MRare technologies§! now appear at §Y1.1§! times the normal rate. This effect would change a §Y1%§! chance into a §Y1.1%§! chance."
  civic_corporate_dimensional_worship: "Dimensional Enterprise"
  civic_corporate_dimensional_worship_desc: "$civic_dimensional_worship_desc$"
- civic_corporate_dimensional_worship_effects: "$civic_dimensional_worship_effects$"
+ civic_corporate_dimensional_worship_effects: "$civic_dimensional_worship_effects$\nThe £building£ §Y$building_xeno_tourism_agency$§! $megacorp_civic_branch_office_building_effect$"
 
  civic_tooltip_not_dimensional_worship: "Does NOT have a ['concept_dimensional_worship_civics'] Civic"
  concept_dimensional_worship_civics: "Dimensional Worship"
@@ -533,7 +533,7 @@
  civic_dark_consortium_effects: "Starts with £physics£ §Y$tech_mine_dark_matter$§! already researched.\nGives access to special §SEdicts§!.\nHas access to the §Y$council_agenda_agenda_dark_matter_breakthrough_name$§! Council Agenda."
  civic_corporate_dark_consortium: "Shadow Corporation"
  civic_corporate_dark_consortium_desc: "$civic_dark_consortium_desc$"
- civic_corporate_dark_consortium_effects: "$civic_dark_consortium_effects$"
+ civic_corporate_dark_consortium_effects: "$civic_dark_consortium_effects$\nThe £building£ §Y$building_private_research_initiative$§! $megacorp_civic_branch_office_building_effect$"
 
  civic_tooltip_not_dark_consortium: "Does NOT have a ['concept_dark_consortium_civics'] Civic"
  concept_dark_consortium_civics: "Dark Consortium"
@@ -544,7 +544,7 @@
  civic_sovereign_guardianship_effects: "Unlocks §Y$fanatic_guardian_plural$§! as defense armies.\n$civic_sovereign_guardianship_effects_common$"
  civic_hive_sovereign_guardianship: "Guardian Cluster"
  civic_hive_sovereign_guardianship_desc: "This collective has developed a historical preference for entrenched territories and defensive posturing. They are prepared to bring this philosophy to the stars, aiming to keep their borders solid and tensions low."
- civic_hive_sovereign_guardianship_effects: "$civic_sovereign_guardianship_effects$"
+ civic_hive_sovereign_guardianship_effects: "Unlocks §Y$machine_fanatic_guardian_plural$§! as defense armies.\n$civic_sovereign_guardianship_effects_common$"
  civic_machine_sovereign_guardianship: "Guardian Matrix"
  civic_machine_sovereign_guardianship_desc: "This mechanical collective has developed a procedural preference for entrenched territories and defensive posturing. They are prepared to bring this effective strategy to the stars, aiming to keep their borders solid and tensions low."
  civic_machine_sovereign_guardianship_effects: "Unlocks §Y$machine_fanatic_guardian_plural$§! as defense armies.\n$civic_sovereign_guardianship_effects_common$"
@@ -594,18 +594,18 @@
  councilor_hyperspace_specialty: "Hyperlane Supervisor"
  councilor_hyperspace_specialty_female: "$councilor_hyperspace_specialty$"
  councilor_hyperspace_specialty_desc: "The $TITLE$ helps ensure the safety and security of our interstellar logistics network."
- councilor_hyperspace_specialty_custom_modifier_desc: "Each $sm_warp_fluctuator$ starbase building also provides §G+$@councilor_hyperspace_specialty_warp_fluctuator_stability$§! Stability"
+ councilor_hyperspace_specialty_custom_modifier_desc: "Each §Y$sm_warp_fluctuator$§! starbase building also provides §G+$@councilor_hyperspace_specialty_warp_fluctuator_stability$§! £stability£ Stability"
  councilor_hyperspace_specialty_corporate: "$councilor_hyperspace_specialty$"
  councilor_hyperspace_specialty_corporate_female: "$councilor_hyperspace_specialty_corporate$"
  councilor_hyperspace_specialty_corporate_desc: "$councilor_hyperspace_specialty_desc$"
  councilor_dimensional_worship: "Astral Minister"
  councilor_dimensional_worship_female: "$councilor_dimensional_worship$"
  councilor_dimensional_worship_desc: "The $TITLE$ unify our priesthood under a single guiding vision in order to better serve our people."
- councilor_dimensional_worship_custom_modifier_desc: "Each $job_priest_name_with_icon$ also provides §G+$@councilor_dimensional_worship_priest_physics$§! £physics£ §YPhysics§!"
+ councilor_dimensional_worship_custom_modifier_desc: "£physics£ §YPhysics§! per $pop_group_unit$ $job_priest_name_plural_with_icon$: §G+$@councilor_dimensional_worship_priest_physics$§! "
  councilor_dimensional_worship_corporate: "$councilor_dimensional_worship$"
  councilor_dimensional_worship_corporate_female: "$councilor_dimensional_worship_corporate$"
  councilor_dimensional_worship_corporate_desc: "$councilor_dimensional_worship_desc$"
- councilor_dimensional_worship_corporate_custom_modifier_desc: "Each $job_priest_name_with_icon$ also produces §G+$@councilor_dimensional_worship_priest_physics$§! £physics£ §YPhysics§! and provides §G+$@councilor_dimensional_worship_priest_trade_value$§! $r_trade_value$"
+ councilor_dimensional_worship_corporate_custom_modifier_desc: "- £physics£ §YPhysics§! per $pop_group_unit$ $job_priest_name_plural_with_icon$: §G+$@councilor_dimensional_worship_priest_physics$§!\n- $r_trade$ per $pop_group_unit$ $job_priest_name_plural_with_icon$: §G+$@councilor_dimensional_worship_priest_trade_value$§! "
 
  councilor_dark_consortium: "Shadow Weaver"
  councilor_dark_consortium_female: "$councilor_dark_consortium$"
@@ -653,6 +653,7 @@
  machine_plasmic_core_effect: "Gives a random leader 3 random positive traits."
  plasmic_core_effect: "Every pop on a random planet gain the §Y$trait_plasmic$§! trait."
  plasmic_core_no_suitable_planet: "$TRIGGER_FAIL$§RNo available planets without §Y$trait_plasmic$§! inhabitants.§!"
+ plasmic_core_effect_evopred: "Gives §G50%§! progress to the §Y$evolutionary_predators_situation$§! situation. Additionally the §Y$trait_plasmic$§! trait may be added upon completion."
 
  effect_random_bypass: "Random Bypass"
  effect_every_bypass: "Every Bypass"
@@ -921,7 +922,7 @@
 
  pm_formless_haven: "Formless Haven"
  pm_formless_haven_desc: "The last bastion of the beings known as the Formless. Other-dimensional species will be settled here from time to time under their protection."
- pm_formless_haven_tt: "§YSpawn 5 Pops§! from another species on this planet"
+ pm_formless_haven_tt: "Spawn §Y500§! £pop£ §HPops§! from another species on this planet"
 
  preset_luminarium: "Luminarium"
  preset_luminarium_desc: "A Luminarium is a subject type created by the owner of the Eternal Throne. Those who claim this seat hold influence over the Formless, whose dimension-spanning empire has since fallen into ruin."
@@ -1031,14 +1032,14 @@
 
  astral_planes.6030.name: "Astralnomical Marvel"
  astralnomical_interest_modifier: "Astralnomical Interest"
- astralnomical_interest_tt: "Each Organic Non-Slave £pop£ Pop produces 1 £physics_research£ §YPhysics Research§! per month."
+ astralnomical_interest_tt: "Each Non-Slave £pop£ §HOrganic Pop§! produces 1 £physics_research£ §YPhysics Research§! per month."
  astral_planes.6030.desc.common_1: "Colonists on [this.GetName] have developed a fascination with the"
  astral_planes.6030.desc.common_2: "visible in the sky from the planet's southern hemisphere. Rampant speculation exists about its origins, as well as what dangers or opportunities it might present.\n\nAmateur astronomers from across the [owner.GetName] have flocked to the planet to see it for themselves."
  astral_planes.6030.desc.rift: "$astral_planes.6030.desc.common_1$ $astral_rift$ $astral_planes.6030.desc.common_2$"
  astral_planes.6030.desc.scar: "$astral_planes.6030.desc.common_1$ $pc_astral_scar$ $astral_planes.6030.desc.common_2$"
 
  astral_planes.6035.name: "Conflicting Visions"
- astral_planes.6035.tt: "Colony loses 5 £stability£ §YStability§!"
+ astral_planes.6035.tt: "Colony loses 5 $r_stability$"
  conflicting_visions: "$astral_planes.6035.name$"
  astral_planes.6035.desc.common_1: "The fascination with the local"
  astral_planes.6035.desc.common_2: "on [this.GetName] has become fanatic. Many report experiencing visions of a world beyond our own.\n\nOne group claims that the"
@@ -1047,7 +1048,7 @@
  astral_planes.6035.desc.scar: "$astral_planes.6035.desc.common_1$ $pc_astral_scar$ $astral_planes.6035.desc.common_2$ Scar $astral_planes.6035.desc.common_3$"
 
  astral_planes.6040.name: "Widening Divide"
- astral_planes.6040.tt: "Colony loses between 5 and 10 £stability£ §YStability§!"
+ astral_planes.6040.tt: "Colony loses between 5 and 10 $r_stability$"
  widening_divide_1: "$astral_planes.6040.name$"
  widening_divide_2: "$widening_divide_1$"
  widening_divide_3: "$widening_divide_1$"
@@ -1125,6 +1126,7 @@
  d_weapon_extraction_facility: "Weapon Extraction Facility"
  d_weapon_extraction_facility_desc: "This facility processes ancient weapons from caches left by a lost civilization."
 
+ munitions_decommissioner: "$job_munitions_decommissioner$"
  job_munitions_decommissioner: "Munitions Decommissioner"
  job_munitions_decommissioner_plural: "Munitions Decommissioners"
  job_munitions_decommissioner_desc: "These practical researchers inspect and reverse-engineer ancient weapons to fit our modern specifications."
@@ -1138,15 +1140,18 @@
  job_munitions_decommissioning_drone_desc: "These drones efficiently disassemble ancient weapons to fit our modern specifications."
  mod_job_munitions_decommissioning_drone_add: "$job_munitions_decommissioning_drone$ Jobs"
 
+ astral_researcher: "$job_astral_researcher$"
  job_astral_researcher: "Astral Researcher"
  job_astral_researcher_plural: "Astral Researchers"
  job_astral_researcher_icon: "£job_astral_researcher£"
  job_astral_researcher_with_icon: "$job_astral_researcher_icon$ $job_astral_researcher$"
+ job_astral_researcher_plural_with_icon: "$job_astral_researcher_icon$ $job_astral_researcher_plural$"
  job_astral_researcher_desc: "The strands of space-time contain the secrets of every dimension, including our own. These researchers work tirelessly to decipher their significance while minimizing paradoxes."
  job_astral_researcher_effect_desc: "£job_astral_researcher£ $job_astral_researcher_plural$ turn $r_consumer_goods$ into $r_research$ and $r_astral_threads$"
  mod_job_astral_researcher_add: "$job_astral_researcher$ Jobs"
  mod_job_astral_researcher_per_pop: "§G+1§! $job_astral_researcher$ Job per $VALUE$ Pops"
  mod_job_astral_researcher_per_pop_short: "\n§G+1§! £mod_job_astral_researcher_add£ per $VALUE$ £pop£"
+ physicist_is_astral_researcher_tt: "£job_physicist£ $job_physicist_plural$ are converted into $job_astral_researcher_plural_with_icon$"
 
  job_astral_drone: "Astral Drone"
  job_astral_drone_plural: "Astral Drones"
@@ -1173,7 +1178,7 @@
 # Tutorials #
 #############
 
- TUTORIAL_ASTRAL_ACTIONS_VIEW_TITLE: "Astral Actions"
+ TUTORIAL_ASTRAL_ACTIONS_VIEW_TITLE: "Tutorial: Astral Actions"
  TUTORIAL_ASTRAL_ACTIONS_VIEW_DESC: "The Astral Actions screen allows us to spend our $ASTRAL_THREADS_ICON$ on various empire-wide effects. The more §SAstral Rifts§! we explore, the more actions we will unlock. Some actions are repeatable over time, while others can be used only once to unlock new abilities or technologies."
 
  TUTORIAL_ASTRAL_RIFT_VIEW_TITLE: "Astral Rift View"

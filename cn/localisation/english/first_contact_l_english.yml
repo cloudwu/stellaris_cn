@@ -21,7 +21,7 @@
 
  origin_slavers:0 "通天之梯"
  origin_slavers_desc:0 "自打$NAME_MSI_country$的董事会第一次将我们的文明送抵星辰，我们就明白这样一个道理，宇宙是如此瑰丽璀璨，不将其分享给他人乃是暴殄天物。从那时起，我们就不遗余力地帮助欠发展的文明实现超光速旅行。\n\n尽管启蒙并不是免费的，但在$NAME_MSI_country_initials$，这是一笔值得的投资。"
- origin_tooltip_slavers_effects:0 "—游戏开始时成为§H高级帝国§!\n—开局时拥有一些被奴役的£pops£§H人口§!，它们是从银河的各个§H前超光速文明§!处绑架得来。\n—允许采用§H$bombardment_raiding$§!轰炸姿态，能够从行星上绑架£pops£§H人口§!，并将其重新迁移到你的殖民地。"
+ origin_tooltip_slavers_effects:0 "—游戏开始时成为§H高级帝国§!\n—开局时拥有一些被奴役的£pop£§H人口§!，它们是从银河的各个§H前超光速文明§!处绑架得来。\n—允许采用§H$bombardment_raiding$§!轰炸姿态，能够从行星上绑架£pop£§H人口§!，并将其重新迁移到你的殖民地。"
 
  opinion_former_slaves:0 "前奴隶"
  opinion_slavers:0 "前奴隶主"
@@ -43,8 +43,10 @@
  origin_payback:0 "血债血偿"
  origin_payback_desc:1 "§R警告：具有挑战性的起源§!\n这个文明曾被一个异星帝国造访过，这个帝国强行启蒙了他们，之后奴役了他们。如今他们击退了入侵者，但那些入侵者有朝一日还会回来吗？"
  origin_tooltip_payback_effects:2 "$HOMEWORLD$$TABBED_NEW_LINE$- ['concept_advanced_infrastructure']$TABBED_NEW_LINE$- $PLANETARY_MODIFIERS$['concept_payback_unified_purpose']$NEW_LINE$- $HOME_SYSTEM$['concept_payback_digsite']['concept_archaeology_site']$NEW_LINE$- 会有一个['concept_advanced_empires', 高级帝国]和数个['concept_preftl_civilizations']无视星系设置出现$NEW_LINE$- 一个前超光速文明：被提升为§I$origin_broken_shackles$§!起源"
+ zone_payback_enlightenment: "提升中心"
+ zone_payback_enlightenment_desc: "启蒙可能不是免费的。但是在$NAME_MSI_country_initials$，总是能物有所值。"
 
- origin_tooltip_payback_negative_effects: "—$INITIAL_POPS$§R-10§!$NEW_LINE$—$HOMEWORLD$$TABBED_NEW_LINE$—['concept_payback_debris_field']行星修正$TABBED_NEW_LINE$—['concept_payback_ship_debris']：+6$TABBED_NEW_LINE$—破坏度：§R33%§!$NEW_LINE$—$HOME_SYSTEM$§I资源贮藏§!未被开发$NEW_LINE$—$MISSING_TECHNOLOGIES_STRING$$TABBED_NEW_LINE$—['concept_basic_science_lab_1', £physics_research£ $tech_basic_science_lab_1$]$TABBED_NEW_LINE$—['concept_planetary_government', £society_research£ $tech_planetary_government$]$TABBED_NEW_LINE$—['concept_corvettes', £engineering_research£ $tech_corvettes$]"
+ origin_tooltip_payback_negative_effects: "—$INITIAL_POPS$§R-1K§!$NEW_LINE$—$HOMEWORLD$$TABBED_NEW_LINE$—['concept_payback_debris_field']行星修正$TABBED_NEW_LINE$—['concept_payback_ship_debris']：+6$TABBED_NEW_LINE$—破坏度：§R33%§!$NEW_LINE$—$HOME_SYSTEM$§I资源贮藏§!未被开发$NEW_LINE$—$MISSING_TECHNOLOGIES_STRING$$TABBED_NEW_LINE$—['concept_basic_science_lab_1', £physics_research£ $tech_basic_science_lab_1$]$TABBED_NEW_LINE$—['concept_planetary_government', £society_research£ $tech_planetary_government$]$TABBED_NEW_LINE$—['concept_corvettes', £engineering_research£ $tech_corvettes$]"
 
  START_SCREEN_PAYBACK:0 "我们曾经做过一个交易。\n\n当来自外部星辰的访客显露身形时，他们向我们提供了一份公平的合同：技术启蒙，分期偿还。在一代人的时间里，我们的行星被转变成为了一个所谓的“先进文明”。\n\n然后我们才了解到小字条款：为了偿还我们的“债务”，他们坚持要我们为他们劳作，而且是无限期的。我们的领袖对此反对，但这些外来者马上翻脸动用了暴力。我们奋起反抗。\n\n我们赢了，但是赢得十分艰难，并且为此付出了惨烈得代价。现在，我们的科学家终于从过去我们摧毁的飞船上，通过逆向工程攻破了超光速旅行的秘密。宇宙很大，但迟早我们肯定会再次遇到我们的“恩人”。而实际上，我们也迫不及待，摩拳擦掌。\n\n现在是时候血债血偿了。"
 
@@ -99,12 +101,12 @@
 
  ## Out of Warranty
  payback_out_of_warranty_chain_title:0 "保障超期"
- payback_out_of_warranty_chain_desc:0 "前入侵者为我们建造的§Y$building_clinic$§!已经年久失修。其中的大部分科技超出了我们目前的认知，但我们还是可以试着§S修复§!一下。\n\n§L与其他的帝国签订研究条款将会提高我们成功的概率。[GetAgreementStatus]§!"
+ payback_out_of_warranty_chain_desc:0 "前入侵者为我们建造的§Y$building_medical_2$§!已经年久失修。其中的大部分科技超出了我们目前的认知，但我们还是可以试着§S修复§!一下。\n\n§L与其他的帝国签订科研协议将会提高我们成功的概率。[GetAgreementStatus]§!"
  payback_repair_clinic_no_agreement:0 "我们尚且没有同任何能够帮助我们的国家签署科研协议。"
  payback_repair_clinic_yes_agreement:0 "我们同一个能够帮助我们的国家签署了科研协议。"
 
  payback_declining_healthcare:0 "恶化的医疗保障"
- payback_declining_healthcare_desc:0 "由于失去了$building_clinic$，我们的生活质量受到了严重影响。"
+ payback_declining_healthcare_desc:0 "由于失去了$building_medical_2$，我们的生活质量受到了严重影响。"
  payback_declining_healthcare_alt:0 "替代药物"
  payback_declining_healthcare_alt_desc:0 "别忘了服用你的维生素！"
  payback_declining_healthcare_necro:0 "$payback_declining_healthcare$"
@@ -114,19 +116,19 @@
 
  # Gene Clinic is breaking down
  origin.4300.name:0 "保障超期"
- origin.4300.base.desc:0 "“我们要终结疾病。”\n\n这就是入侵者们赢得我们的方式。我们允许他们在[Root.GetHomeWorldName]上建造§Y$building_clinic$§!，在一代人的时间里根除了绝大多数最要命的疾病。然而现在，这些诊所正在停摆，多年的高强度使用导致里面的机器陷入了停滞状态。我们无法得知这些入侵者的先进技术是如何正常运作的。我们能否对其进行逆向工程？或者我们应该把这个有毒的礼物改造成某种真正属于我们的东西？\n"
+ origin.4300.base.desc:0 "“我们要终结疾病。”\n\n这就是入侵者们赢得我们的方式。我们允许他们在[Root.GetHomeWorldName]上建造§Y$building_medical_2$§!，在一代人的时间里根除了绝大多数最要命的疾病。然而现在，这些诊所正在停摆，多年的高强度使用导致里面的机器陷入了停滞状态。我们无法得知这些入侵者的先进技术是如何正常运作的。我们能否对其进行逆向工程？或者我们应该把这个有毒的礼物改造成某种真正属于我们的东西？\n"
  origin.4300.aliens.phobe.desc:0 "$origin.4300.base.desc$尽管其他国家可能也有类似的设施，但是向异种求助无疑会让我族蒙羞。"
  origin.4300.aliens.phile.desc:0 "$origin.4300.base.desc$其他国家可能也有类似的设施。我们应该开口求助。"
  origin.4300.noaliens.desc:0 "$origin.4300.base.desc$如果我们多认识些朋友就好了。 "
- origin.4300.a:0 "尝试修复$building_clinic$。"
- origin.4300.a.tooltip:0 "在行星面板上选择§Y$building_clinic$§!，点击§S修复§!按钮尝试对其修复。同其他国家签署§S科研协议§!能够提高成功修复的概率。"
- origin.4300.b:0 "重新改造$building_clinic$。"
- origin.4300.b.tooltip:0 "将§Y$building_clinic$§!转变成一座§Y$building_autochthon_monument$§!，花费会有所减少。"
- origin.4300.b.memorialist.tooltip:0 "将§Y$building_clinic$§!转变成一座§Y$building_galactic_memorial_1$§!，花费会有所减少。"
+ origin.4300.a:0 "尝试修复$building_medical_2$。"
+ origin.4300.a.tooltip:0 "在行星面板上选择§Y$building_medical_2$§!，点击§S修复§!按钮尝试对其修复。同其他国家签署§S科研协议§!能够提高成功修复的概率。"
+ origin.4300.b:0 "重新改造$building_medical_2$。"
+ origin.4300.b.tooltip:0 "将§Y$building_medical_2$§!转变成一座§Y$building_autochthon_monument$§!，花费会有所减少。"
+ origin.4300.b.memorialist.tooltip:0 "将§Y$building_medical_2$§!转变成一座§Y$building_galactic_memorial_1$§!，花费会有所减少。"
 
  # Building repaired!
  origin.4301.name:0 "紧急修复"
- origin.4301.base.desc:0 "我们的前入侵者或许会将这一切视作来去无踪的狗屎运，或者宣称修复工作是由他们主导的。他们甚至会说，我们所做的对§Y$building_clinic$§!背后的技术进行逆向工程压根就不是什么壮举。"
+ origin.4301.base.desc:0 "我们的前入侵者或许会将这一切视作来去无踪的狗屎运，或者宣称修复工作是由他们主导的。他们甚至会说，我们所做的对§Y$building_medical_2$§!背后的技术进行逆向工程压根就不是什么壮举。"
  origin.4301.noagreement.desc:0 "$origin.4301.base.desc$但不管他们说什么，我们都自主独立地完成了，没有他们的任何协助，这下胜利独属于我们了。"
  origin.4301.agreement.desc:0 "$origin.4301.base.desc$但不管他们说什么，在慷慨的盟友派出的专家的帮助下，我们都完成了。"
  origin.4301.a:0 "或许……外星人也不全都是那么坏？"
@@ -134,7 +136,7 @@
 
  # Building still broken
  origin.4302.name:0 "修复的正当性"
- origin.4302.desc:0 "事实证明，要想对使§Y$building_clinic$§!运转的技术进行逆向工程，这件事比我们料想的更具挑战性。但我们的[root.GetEngineerPlural]仍然充满希望。他们说，自己只是需要更多的时间。然而，随着成本和失败开始堆积，一些人认为应当对诊所进行改造，使其用于另一项事务。"
+ origin.4302.desc:0 "事实证明，要想对使§Y$building_medical_2$§!运转的技术进行逆向工程，这件事比我们料想的更具挑战性。但我们的[root.GetEngineerPlural]仍然充满希望。他们说，自己只是需要更多的时间。然而，随着成本和失败开始堆积，一些人认为应当对诊所进行改造，使其用于另一项事务。"
  origin.4302.a:0 "这次没那么容易失败了。"
  origin.4302.a.tooltip:0 "$origin.4300.a.tooltip$"
  origin.4302.b:0 "$origin.4300.b$"
@@ -143,15 +145,15 @@
 
  # Building broken beyond repair
  origin.4303.name:0 "拙劣的修复工作"
- origin.4303.desc:0 "我们尝试维修§Y$building_clinic$§!的努力最终失败了：巨大的爆炸吞没了建筑，现场死伤惨重。\n\n无疑，前入侵者一定正在嗤嗤嘲笑我们的自大、愚蠢和鲁莽。这次失败我们咎由自取，但这堂课我们也同样印象深刻。"
+ origin.4303.desc:0 "我们尝试维修§Y$building_medical_2$§!的努力最终失败了：巨大的爆炸吞没了建筑，现场死伤惨重。\n\n无疑，前入侵者一定正在嗤嗤嘲笑我们的自大、愚蠢和鲁莽。这次失败我们咎由自取，但这堂课我们也同样印象深刻。"
 
  # Building Repurposed
  origin.4304.name:0 "焕然一新的硬件"
- origin.4304.desc:0 "我们的§Y$building_clinic$§!可能不再能够治愈疾病，但是通过将一些关键部件拆卸下来，并将其重新用于纪念馆的展出，至少我们能够开始治愈入侵者留下的疤痕。与过去和解，我们才能逐渐克服这一切。"
+ origin.4304.desc:0 "我们的§Y$building_medical_2$§!可能不再能够治愈疾病，但是通过将一些关键部件拆卸下来，并将其重新用于纪念馆的展出，至少我们能够开始治愈入侵者留下的疤痕。与过去和解，我们才能逐渐克服这一切。"
 
  # No building - people getting sick
  origin.4305.name:0 "医保危机"
- origin.4305.desc:0 "由于我们失去了§Y$building_clinic$§!，医疗保障的质量急剧下降。曾经很容易治愈的遗传病和慢性病病例又开始上升，我们的预期寿命中位数返回到了占领前的水平。公众对医疗保障系统的信心已经达到了新的低点，我们中的一些人甚至开始感叹，入侵者走了不如不走。"
+ origin.4305.desc:0 "由于我们失去了§Y$building_medical_2$§!，医疗保障的质量急剧下降。曾经很容易治愈的遗传病和慢性病病例又开始上升，我们的预期寿命中位数返回到了占领前的水平。公众对医疗保障系统的信心已经达到了新的低点，我们中的一些人甚至开始感叹，入侵者走了不如不走。"
  origin.4305.a:0 "在医疗研究方面加倍投入。"
  origin.4305.a.tooltip:0 "提高发现§Y$tech_frontier_health$§!科技的可能性。"
  origin.4305.b:0 "鼓励替代疗法。"
@@ -160,7 +162,7 @@
 
  # Rediscovering genetic healthcare
  origin.4306.name:0 "自给自足"
- origin.4306.desc:0 "在掌握了基因工程的奥秘之后，我们的人民现在有能力建造§Y$building_clinic$§!，其能力水平同入侵者先前留下来的那些一模一样。对我们的人民来说，这是极其光荣的一天：证明我们无需[root.species.GetHandName]的把控，也能触及星辰。"
+ origin.4306.desc:0 "在掌握了基因工程的奥秘之后，我们的人民现在有能力建造§Y$building_medical_2$§!，其能力水平同入侵者先前留下来的那些一模一样。对我们的人民来说，这是极其光荣的一天：证明我们无需[root.species.GetHandName]的把控，也能触及星辰。"
 
  ## Arc Site
 
@@ -275,7 +277,7 @@
  payback_debt_collectors_chain_energy:3 "我们同意每25年支付一次[root.debt_collectors_energy_payment]能量币。"
  payback_debt_collectors_chain_consumer_goods:1 "We agreed to pay §R2500§! £consumer_goods£ §H$consumer_goods$§! every 15 years."
  payback_debt_collectors_chain_alloys:1 "We agreed to pay §R1250§! £alloys£ §H$alloys$§! every 15 years."
- payback_debt_collectors_chain_pops:3 "我们同意每25年交付收债人5人口。"
+ payback_debt_collectors_chain_pops:3 "我们同意每15年交付收债人§R200§!£pop£§H人口§!。"
  payback_debt_collectors_chain_refused_won:0 "我们拒绝进行交易，与收债人进行作战，并且获胜了。但他们总有一天会回来的。"
  payback_debt_collectors_chain_refused_lost:0 "我们拒绝进行交易，与收债人进行作战，但是输了。他们总有一天还会回来的。"
  payback_debt_collectors_chain_empty:0 ""
@@ -381,7 +383,7 @@
  origin.4018.desc:0 "如果你无法或不愿意支付能量币，你可以向§H$NAME_MSI_country$§!提供一定比例的劳动力储备来抵扣你的债务。你的工人将被送往指定工作场所，并获得基本食宿，直到他们成功偿还债务。\n\n值得注意的是，上述劳工不需要有完整公民权。任何具有劳动能力的都可以。"
  origin.4018.a:0 "实际上，我们更愿意用能量币支付。"
  origin.4018.b:0 "我们就这么办。"
- origin.4018.b.tooltip:1 "宣誓在收债人返回时提供§B2 £pops£ 人口§!。"
+ origin.4018.b.tooltip:1 "承诺下次收债人返回时给出§R200§!£pop£§H人口§!。"
  origin.4018.c:0 "这么说你想要奴隶？"
  origin.4018.c.response:0 "正确的术语是“契约仆人”。奴隶制是一种不公平的做法，依靠的是利用现存的权力结构进行剥削。我们的交易完全基于合约条款。"
  origin.4018.d:0 "我们拒绝支付。"
@@ -406,7 +408,7 @@
  origin.4025.name:0 "收缴资产进行中"
  origin.4025.desc:1 "在我们的舰队被击败后，收债人突袭了[PLANET.GetName]，绑架了我们的许多族人。比起这次战败更加令人心痛的，是他们留下的“账单”，告诉我们这些被扣押的人们将被用来偿还我们的“债务”。收债人说，我们应该心怀感恩，债务清算后我们的族人就能回家。还债时间大约只要59275年左右。"
  origin.4025.a:0 "下一次我们会做好准备。"
- origin.4025.a.tooltip:0 "收债人夺走§B5 £pops£ 人口§!。\n\n收债人将于§Y[root.owner.payback_debt_collectors_timer]§!回来。"
+ origin.4025.a.tooltip:0 "收债人夺走§R500§!£pop£§H人口§!。\n\n收债人将于§Y[root.owner.payback_debt_collectors_timer]§!回来。"
 
  # Hub - subsequent encounters
  origin.4030.name:0 "收债人"
@@ -414,15 +416,15 @@
  origin.4030.desc.energy:1 "$origin.4030.desc.base$\n\n根据我们之间的协定，我们这次将收缴总额为§G5000§! £energy£ §H$energy$§!的费用来偿还你的债务。"
  origin.4030.desc.consumer_goods:0 "$origin.4030.desc.base$\n\n根据我们之间的协定，我们这次将收缴总额为§R2500§! £consumer_goods£ §H$consumer_goods$§!用于偿还你们的债务。"
  origin.4030.desc.alloys:0 "$origin.4030.desc.base$\n\n根据我们之间的协定，我们这次将收缴总额为§R1250§! £alloys£ §H$alloys$§!用于偿还你们的债务。"
- origin.4030.desc.pops:1 "$origin.4030.desc.base$\n\n根据我们之间的协定，我们这次将收缴总共§B 5 £pops£ 人口§!，通过尽心尽力的劳动来偿还你的债务。"
+ origin.4030.desc.pops:1 "$origin.4030.desc.base$\n\n根据我们之间的协定，我们这次将收缴愿意尽心尽力的劳动来偿还你债务的共计§R200§!£pop£§H人口§!。"
  origin.4030.desc.defeated:0 "亲爱的[owner.GetName]，\n\n我们再次代表§H$NAME_MSI_country$§!就债务未偿一事与你联系。我们只希望和平解决此事，同时希望贵方更愿意参与建设性的对话。"
  origin.4030.desc.furious:0 "亲爱的[owner.GetName]，\n\n这是我们的最后警告：你欠§H$NAME_MSI_country$§!的债务亟需偿还。尽管我们多次试图和平解决此事，你始终没有表达出合作的意愿。如果你再次拒绝执行偿还计划，我们将别无选择，只能采取所有必要的手段收缴你的资产。"
  origin.4030.a:0 "我们很乐意协商解决问题。"
  origin.4030.b:1 "这是你所要求的能量币。"
  origin.4030.c:0 "好好对待我们的人民。"
- origin.4030.c.tooltip:0 "损失 §B2 £pops£ 人口§!"
+ origin.4030.c.tooltip:0 "失去§R200§!£pop£§H人口§!"
  origin.4030.d:0 "这里是一些……劳力。"
- origin.4030.d.tooltip:0 "损失 §B2 £pops£ 奴隶§! "
+ origin.4030.d.tooltip:0 "失去§R200§!£pop£§H奴隶§!"
  origin.4030.e:0 "我们没法支付。"
  origin.4030.f:0 "我们不会支付。"
  origin.4030.g:0 "抱歉，能再说一遍你是谁吗？"
@@ -561,7 +563,7 @@
 
  origin_broken_shackles:0 "粉碎枷锁"
  origin_broken_shackles_desc:1 "$CHALLENGING_ORIGIN$\n这个文明始于一艘奴隶船上的发起的兵变，现在由多种多样的前超光速物种组成。"
- START_SCREEN_BROKEN_SHACKLES:0 "终于自由了！\n\n有些人生来便负着枷锁。还有的负债累累，然后被作为契约奴隶任人买卖。但前主人的科技并不能保护他们周全。我们密谋反叛。在一场短暂但血腥的斗争中，我们杀死了俘虏我们的人，也重创了他们的运奴船。我们不得已紧急迫降到[Root.Capital.GetName]的表面上。\n\n尽管我们来自五湖四海和不同的物种，但在您的领导下我们找到了共同的目标。假以时日，这艘运奴船受损的系统就能修好，藏在其中的大量秘密-包括我们曾经母星的位置-也能被揭晓。\n\n我们已挣脱枷锁。现在就开始劳动吧。"
+ START_SCREEN_BROKEN_SHACKLES:0 "终于自由了！\n\n有些人生来便负着枷锁。还有的负债累累，然后被作为契约奴隶任人买卖。但前主人的科技并不能保护他们周全。我们密谋反叛。在一场短暂但血腥的斗争中，我们杀死了俘虏我们的人，也重创了他们的运奴船。我们不得已紧急迫降到[Root.Capital.GetName]的表面上。\n\n尽管我们来自五湖四海和不同的物种，但我们找到了共同的目标。假以时日，这艘运奴船受损的系统就能修好，藏在其中的大量秘密-包括我们曾经母星的位置-也能被揭晓。\n\n我们已挣脱枷锁。现在就开始劳动吧。"
  START_SCREEN_BROKEN_SHACKLES_MEGACORP:0 "终于自由*了！\n\n有些人生来便负着枷锁。还有的负债累累，然后被作为契约奴隶任人买卖。然而我们都畅想着，能够过上轻松而富足的生活。我们密谋反叛。在一场短暂但血腥的斗争中，我们杀死了俘虏我们的人，也重创了他们的运奴船。我们不得已紧急迫降到[Root.Capital.GetName]的表面上。\n\n尽管我们来自五湖四海和不同的物种，但在您的领导下我们找到了共同的目标。我们的前主人也许非常残酷，但他们懂得经营生活。我们应该像他们一样坚定地追求我们的利益。假以时日，这艘运奴船受损的系统就能修好，藏在其中的大量秘密-包括我们曾经母星的位置-也能被揭晓。我们已挣脱枷锁。是时候成立公司了。\n\n*法律告示：\n此处使用“自由”一词并不代表本公司将提供任何折扣或进行任何影响[Root.GetName]股东收益的活动。如对此或其他术语有任何疑问，或是希望退出[Root.Capital.GetName]上的持续存在，请在[Root.Capital.GetName]的$building_bureaucratic_1$联系我们的法律或安保专家，以获取他们的快速处理。"
  origin_tooltip_broken_shackles_effects:1 "- $INITIAL_POPS$来自星系各处['concept_preftl_civilizations']的物种$NEW_LINE$- $STARTING_PLANET$$TABBED_NEW_LINE$- ['concept_free_at_last_broken_shackles']行星修正$TABBED_NEW_LINE$- ['concept_crashed_slaver_ship_broken_shackles']行星特征$TABBED_NEW_LINE$- ['concept_broken_shackles_buildings']$NEW_LINE$- $STARTING_SYSTEM$['concept_broken_shackles_digsite']['concept_archaeology_site']$NEW_LINE$- 无视星系设置生成一个['concept_advanced_empires', 高级电脑帝国]以及数个前超光速文明$NEW_LINE$- 某个前超光速文明：会成为该帝国的物种和母星$NEW_LINE$某个前超光速文明：提升为§I$origin_payback$§!起源"
 
@@ -581,8 +583,8 @@
  origin.111.1.desc:0 "自我们宣布夺取自由以来，我们已经历经了许多磨难。那艘载运我们抵达此地的舰船已经被我们发掘出了一切有价值的东西，现在它已经没有什么秘密可言了。\n\n但是，我们决不能忘记过去的牺牲，更不能忘记挣脱镣铐的代价。坠毁的运奴船将被改造成一个公共纪念馆，以纪念我们国家的诞生。"
  origin.111.2.desc:0 "自我们抵达此地以来，我们已经经历了许多磨难。尽管我们失去了对那艘载运我们到达此地的飞船的控制权，那艘船上遗留的东西不再对我们有价值，我们的科技也进步到了空前的阶段，那里对我们来说已经不再有什么秘密了。\n\n如果我们有一天将其复原，我们应当把这个地方改成一个纪念馆，以便我们在勇敢地走向未来时，还能记住我们卑微的开始。"
  origin_111.a:0 "$origin.111.name$!"
- origin_111.tooltip:0 "在§Y[Root.Capital.GetName]§!上解锁§Y$decision_unshackled_memorial$§!决议。\n$decision_unshackled_memorial_effects$\n\n§Y$district_crashed_slaver_ship_plural$§!将提供£job_clerk£§Y$job_clerk_plural$§!岗位以替代£job_broken_shackles_scavenger£§Y$job_broken_shackles_scavenger$§!岗位。"
- decision_unshackled_memorial_effects:0 "-将§Y$d_crashed_slaver_ship$§!转化为§Y$d_crashed_slaver_ship_memorial$§!，提供§G+2§!£job_culture_worker£$job_culture_worker$岗位\n-§Y$district_crashed_slaver_ship_plural$§!、§Y$building_low_tech_scrap_refinery$§!、§Y$building_low_tech_power_plant$§!和§Y$building_low_tech_farm$§!将转化为高级基础设施。"
+ origin_111.tooltip:0 "在§Y[Root.Capital.GetName]§!上解锁§Y$decision_unshackled_memorial$§!决议。\n$decision_unshackled_memorial_effects$\n—§Y$district_crashed_slaver_ship_plural$§!将提供[clerk.GetIcon]§Y[clerk.GetNamePlural]§!岗位以替代£job_broken_shackles_scavenger£§Y$job_broken_shackles_scavenger$§!岗位。"
+ decision_unshackled_memorial_effects:0 "-§Y$d_crashed_slaver_ship$§!及相关的基础设施会被转化为先进基础设施。"
 
 
  #Pre-FTL Homeworlds Found
@@ -1011,7 +1013,7 @@
  job_low_tech_manager:0 "监督者"
  job_low_tech_manager_plural:0 "监督者"
  job_low_tech_manager_desc:0 "我们的旧奴隶主将自己帝国每日行政管理的绝大部分都委派给了自己的契约奴隶。其结果就是造就了一批高度受训的经理人。"
- job_low_tech_manager_effect_desc:0 "£job_low_tech_manager£$job_low_tech_manager_plural$将$r_consumer_goods$转化为$r_unity$和$r_trade_value$"
+ job_low_tech_manager_effect_desc:0 "£job_low_tech_manager£$job_low_tech_manager_plural$将$r_consumer_goods$转化为$r_unity$和$r_trade$"
  mod_job_low_tech_manager_add:0 "$job_low_tech_manager$岗位"
 
  building_low_tech_farm:0 "应急农场"
@@ -1046,6 +1048,10 @@
  d_crashed_slaver_ship_memorial:0 "挣脱桎梏纪念碑"
  d_crashed_slaver_ship_memorial_desc:0 "围绕着坠毁的运奴船的残骸，人们建造了公共纪念碑和博物馆。入口处的铭文写道“记忆是自由的摇篮”。"
 
+ zone_broken_shackles_memorial: "挣脱桎梏纪念"
+ zone_broken_shackles_memorial_desc: "$d_crashed_slaver_ship_memorial_desc$"
+ zone_broken_shackles_memorial_effect_desc: "$bureaucrat_is_culture_worker_tt$\n\n"
+
  decision_unshackled_memorial:0 "$d_crashed_slaver_ship_memorial$"
  decision_unshackled_memorial_desc:0 "我们会在坠毁的运奴船的残骸周围建造一个纪念碑，用于纪念在过去牺牲的先烈。"
  decision_unshackled_memorial_tt:0 "§Y$d_crashed_slaver_ship$§!替换为§Y$d_crashed_slaver_ship_memorial$§!。\n部分§Y建筑§!和§Y地区§!将会转化为先进基础设施。"
@@ -1070,7 +1076,7 @@
  origin_fear_of_the_dark:0 "黑暗之怖"
  origin_fear_of_the_dark_desc:0 "一个世纪以前，在帝国的母星系，其中的一颗行星被一颗古怪的小行星摧毁了。一些人认为这是某个外星物种的恶意攻击。其他人则把这些担忧当作纯粹的妄想症。两类人之间的关系变得愈发紧张，最后无可奈何之下，帝国将一个新近完成地形改造的星球给予这些恐宇派。"
  origin_tooltip_fear_of_the_dark_effects:1 "- $HOME_SYSTEM$曾属于你帝国一部分的分离主义者派系创造的['concept_preftl_civilizations', 前超光速文明]，提供专属事件和增益。"
- origin_tooltip_fear_of_the_dark_negative_effects:  "- $INITIAL_POPS$ §R-8§!"
+ origin_tooltip_fear_of_the_dark_negative_effects:  "- $INITIAL_POPS$ §R-800§!"
  START_SCREEN_FEAR_OF_THE_DARK_START:0 "一个世纪以前，被我们称为“大分裂者”的行星发生了爆炸。这便是我们 "
  START_SCREEN_FEAR_OF_THE_DARK_REGULAR:0 "$START_SCREEN_FEAR_OF_THE_DARK_START$分裂的开端。\n\n起先我们对这颗星球的毁灭不太在意，充其量只是一件怪事罢了，但[GetHomeWorldName]的一些人认为这其实是一场针对我们物种的有预谋的袭击。这些人认定是我们的无线电信号被远处的某些外星人发现了，他们便以这种足以毁灭行星的武器回应我们。这些反对者敦促我们做好应对这些外星人再次来袭甚至摧毁我们的准备。更多的人则认为他们的忧虑是杞人忧天。\n\n两个派别之间的政治割裂日益加深。蔓延全球的内乱最终促成了一项协议，为这些反对者们寻找到一个环境改造候选星球，这样他们就可以在其中隐居，不受我们的干涉。$START_SCREEN_FEAR_OF_THE_DARK_END$"
  START_SCREEN_FEAR_OF_THE_DARK_MEGACORP:0 "$START_SCREEN_FEAR_OF_THE_DARK_START$互相疏远的开端。\n\n在那场事故以后，忧心忡忡的经理们向董事会发来请求，希望能关停所有现存的行星间无线电通讯设施，取消太空探索计划。他们相信大分裂者一定是某种外来的力量在尝试摧毁[GetHomeWorldName]。这项请求当然被否决了。\n\n这些经理们将董事会的决议称为“史诗级误判”，并激活了公民协议中的一项副条款，他们有权公开斥责董事会。为了安抚股东和增强消费者信心，决定向持异议的经理提供一份新合同。作为放弃与 [GetName] 有关的任何权利的交换，他们将获得一颗环境改造候选星球，并且保证他们的财政自主。$START_SCREEN_FEAR_OF_THE_DARK_END$"
@@ -1124,7 +1130,7 @@
  origin.6005.desc.end3:0 "出于在学术上的杰出表现，[fotd_Leader.GetSheHeCap]将获得[Owner.GetHomeWorldName]上的一个著名奖项。[fotd_Leader.GetSheHeCap]也同意在我们这里待上一段时间，就自己的研究举行一系列讲座。"
  origin.6005.desc.end4:0 "[fotd_Leader.GetSheHeCap]会研究当地的[GetStudyTopic]，并试图利用这些来改善[fotd_habitants.capital_scope.GetName]上的生活。"
  origin.6005.a:0 "只要你遵守这个社会的规范 ，那么你就会受到欢迎。"
- origin.6005.a.tt:0 "将§Y[fotd_Leader.GetName]§!作为§Y科学家§!添加到我们的领袖储备。"
+ origin.6005.a.tt:0 "将§Y[fotd_Leader.GetName]§!作为§H科学官§!添加到我们的§H$RECRUITABLE_LEADERS$§!。"
  origin.6005.b:0 "管好你自己。"
 
  origin.6006.desc.base1:0 "一位来自[fotd_habitants.Capital.GetName]的指挥官提出要加入我们的舰队，担任临时指挥官。[fotd_Leader.GetSheHeCap]的动机尚不清楚，但我们的线人告诉我们，这可能牵涉到一起丑闻。"
@@ -1132,7 +1138,7 @@
  origin.6006.desc.base3:0 "由于指挥官[fotd_Leader.GetName]在最近一次联合舰队演习上的出色表现，我们决定扩大此人的权限，让其指挥一支真正的舰队舰队。"
  origin.6006.desc.base4:1 "因涉嫌将[fotd_Leader.GetHerHis]指挥的舰船置于过度危险之中而被暂时调离岗位，不服气的指挥官[fotd_Leader.GetName]请求加入我们的舰队。尽管[fotd_Leader.GetName]名声在外，那些曾与[fotd_Leader.GetHerHim]一起服役的人仍然尊重[fotd_Leader.GetHerHis]的才能。"
  origin.6006.a:0 "只要你不叛逃。"
- origin.6006.a.tt:0 "将§Y[fotd_Leader.GetName]§!作为§Y指挥官§!添加到我们的领袖储备。"
+ origin.6006.a.tt:0 "将§Y[fotd_Leader.GetName]§!作为§H指挥官§!添加到我们的§H$RECRUITABLE_LEADERS$§!。"
  origin.6006.b:0 "对于一根松动的鱼雷管来说，你也太胖了！"
 
  origin.6010.name:0 "渴望[fotd_seperatist_planet.GetName]"
@@ -1204,7 +1210,7 @@
  origin.6060.name:0 "顶级掠食者"
  origin.6060.desc:0 "自[FromFrom.solar_system.GetName]星系传来的消息深深震撼了我们的母星。如果像这样的怪物都能够存在，那么在太空深处还可能潜伏着什么样的威胁？在我们的人民中，要求移民到[fotd_seperatist_planet.GetName]的申请已经飙升。然而此时此刻，我们很难责怪他们。"
  origin.6060.a:0 "难道我们错了？"
- origin.6060.a.tt:1 "§R2§!£pops£人口会移民前往[fotd_seperatist_planet.GetName]"
+ origin.6060.a.tt:1 "§R200§!£pop£§H人口§!会移民前往[fotd_seperatist_planet.GetName]"
  origin.6060.b:0 "不！[fotd_seperatist_planet.GetName]才是错误的！我们必须一起面对这个。"
 
  origin.6065.name:0 "所作所为的后果"
@@ -1675,7 +1681,7 @@
  awareness.910.desc:0 "我们一直明目张胆地在§Y[contact_empire_system.GetName]§!星系进行行动，对于隐藏自己的行动丝毫没有任何注意。尽管他们的技术水平不高，但是即使是§Y[contact_empire.GetName]§!也注意到了我们的行动。现在第一次接触不可避免了。"
 
  awareness.920.name:0 "谁在盯着观察者？"
- awareness.920.desc:0 "我们围绕§Y[fromfrom.GetName]§!建造了一座观测站来研究上面的居民，但却意识到§Y[contact_empire.GetSpeciesNamePlural]§!反而是在研究我们：他们完全清楚其他外星物种的存在，并很快注意到了我们的科学家和无人机的存在。\n\n我们先前在这个星系的活动一定已经让[fromfrom.owner.GetName]警醒，意识到了我们存在的一切。当前情况下，保持我们的存在隐形化已经没有什么意义。"
+ awareness.920.desc:0 "我们围绕§Y[fromfrom.GetName]§!建造了一座观测站来研究上面的居民，但却意识到§Y[contact_empire.GetSpeciesNamePlural]§!反而是在研究我们：他们完全清楚其他外星物种的存在，并很快注意到了我们[root.GetScientistPlural]的到来。\n\n我们先前在这个星系的活动一定已经让[fromfrom.owner.GetName]对我们的存在有所警觉。当前情况下，保持我们的存在隐形化已经没有什么意义。"
 
  AWARENESS_MONTHLY:0 "觉醒进程"
  AWARENESS_MONTHLY_VALUE:0 "每月变化: $VALUE|=0Y$"
@@ -1937,15 +1943,15 @@
  observation_unforeseen_problems_desc:0 "由于一些意料之外的问题，观测这个行星的任务比原本规划的更具挑战。"
 
  fircon.2001.name:0 "医疗副作用"
- fircon.2001.desc:0 "使用安静的无人机和牵引光束，我们能够成功地收集、分析和研究毫无防备的[pre_ftl_species.GetName]个体，之后再将其送还到自己的居所。不幸的是，牵引光束对于[pre_ftl_species.GetNamePlural]的生理机能产生了预料之外的效果。在返回家中以后，这些样品开始遭受疖子、疹子以及不受控制地打喷嚏，在回到家中的三个小时之后其外表皮还会发生溶解。这种神秘的溶肤病已经酿成了全国范围内的卫健紧急事件，而验尸报告毫无疑问会揭示外部干预的证据。"
+ fircon.2001.desc:0 "使用隐身[GetIndividualNamePlural]和牵引光束，我们能够成功地收集、分析和研究毫无防备的[pre_ftl_species.GetName]个体，之后再将其送还到自己的居所。不幸的是，牵引光束对于[pre_ftl_species.GetAdj]的生理机能产生了预料之外的效果。在返回家中以后，这些样品开始遭受疖子、疹子以及不受控制地打喷嚏，在回到家中的三个小时之后其外表皮还会发生溶解。这种神秘的溶肤病已经酿成了全国范围内的卫健紧急事件，而验尸报告毫无疑问会揭示外部干预的证据。"
  fircon.2001.a:0 "重新绑架样品，用来研究我们的光束的效果！"
  fircon.2001.b:0 "降低牵引光束的能量，并蛰伏一阵子。"
  fircon.2001.c:0 "增强牵引光束的能量，并在土著身上测试。"
 
  fircon.2011.name:0 "天上正在下[pre_ftl_species.GetNamePlural]！"
- fircon.2011.base.desc:0 "从[pre_ftl_planet.GetName]上收集活体样本的时候发生了事故。由于计算错误，我们的无人机上配备的牵引光束强度不足。不仅没有得到样本，我们的无人机只能短暂地让它们悬浮在空中，然后立马掉到地面上。"
+ fircon.2011.base.desc:0 "从[pre_ftl_planet.GetName]上收集活体样本的时候发生了事故。由于计算错误，我们的[GetIndividualNamePlural]上配备的牵引光束强度不足。不仅没有得到样本，我们只能短暂地让它们悬浮在空中，然后立马掉到地面上。"
  fircon.2011.noavian.desc:0 "$fircon.2011.base.desc$\n\n其中一些样本掉到了建筑和树的顶部，当地人困惑不已，各种各样的古怪理论冒了出来。"
- fircon.2011.avian.desc:0 "$fircon.2011.base.desc$\n\n我们试图收集的鸟类样本发现这样的事故特别好玩。这些胆子很大的样本甚至开始追逐我们的无人机，希望借此上升，而且完全是出于寻求乐子。"
+ fircon.2011.avian.desc:0 "$fircon.2011.base.desc$\n\n我们试图收集的鸟类样本发现这样的事故特别好玩。这些胆子很大的样本甚至开始追逐我们的[GetIndividualNamePlural]，希望也能被带走，而且完全是出于寻求乐子。"
  fircon.2011.a:0 "修复牵引光束。"
  fircon.2011.b:0 "转换到被动观测。"
  fircon.2011.b.tt:0 "把我们的观测站任务变更为§Y被动观测§!"
@@ -1990,6 +1996,7 @@
  fircon.2545.b:0 "有机体意识评估：脆弱。"
  fircon.2545.c:0 "也许是一种灵媒触染？"
  fircon.2545.d:0 "带走优异子个体进行研究。"
+ fircon.2545.e: "如此不同，又如此引人入胜……"
 
  fircon.2546.name:0 "正在研究优异子个体"
  fircon.2546.desc:0 "[pre_ftl_planet.GetName]的“优异子个体”已经成功捕获并使其进入睡眠状态。尽管我们已经非常小心，但肯定还是被[pre_ftl_planet.GetPlanetHabitat]上的其他子个体发现了，每次我们的空间站运行到靠近它们居住地的位置，它们都好像能够感应到优异子个体接近一般。\n\n我们研究优异子个体的大脑在跨维度沟通方面得到了有趣的结果，但我们尚未摸清它控制其他子个体和吞噬萌芽意识的具体能力。"
@@ -2223,7 +2230,7 @@
  fircon.7500.f:0 "对任何使用我们形象的东西都要征收版税。"
 
  fircon.7505.name:0 "万象归一"
- fircon.7505.desc:0 "§Y[pre_ftl_planet.GetName]§!上正在发生有趣的社会变革。\n\n由于他们只有我们作为参考，那里的人们开始相信宇宙中的所有生命都像我们一样：互相连接、合而为一。在别无其他参照的情况下，[pre_ftl_country.GetSpeciesNamePlural]急切地希望我们的子个体能进入他们的机构。他们的误解给予我们提升他们文明的良机。然而，如果得知了外面世界的真相（包括非格式塔物种的存在），他们必定会降低对我们的信任。"
+ fircon.7505.desc:0 "§Y[pre_ftl_planet.GetName]§!上正在发生有趣的社会变革。\n\n由于他们只有我们作为参考，那里的人们开始相信宇宙中的所有生命都像我们一样：互相连接、合而为一。在别无其他参照的情况下，[pre_ftl_country.GetSpeciesNamePlural]急切地希望我们的[root.GetIndividualNamePlural]能进入他们的机构。他们的误解给予我们提升他们文明的良机。然而，如果得知了外面世界的真相（包括非格式塔物种的存在），他们必定会降低对我们的信任。"
  fircon.7505.a.hive:0 "是的，我们是一个整体。"
  fircon.7505.a.machine:0 "确认。你们是一个个的个体。"
  fircon.advance_tech:0 "[pre_ftl_country.GetName]会挺进到下一个科技等级。"
@@ -2232,17 +2239,17 @@
  fircon.7505.c:0 "更正他们的误解。"
 
  MESSAGE_PRE_FTL_DISTRUSTFUL_TITLE:0 "不信任的外交"
- MESSAGE_PRE_FTL_DISTRUSTFUL:0 "由于我们近期的行动，$COUNTRY|Y$对我们显示出了不信任，因此封锁了外交通道一段时间。"
+ MESSAGE_PRE_FTL_DISTRUSTFUL:1 "由于我们近期的行动，$COUNTRY|Y$对我们显示出了不信任，因此封锁了外交通道一段时间。"
 
  fircon.7510.name:0 "教蜂巢去制造"
  fircon.7510.desc.base:0 "我们希望能够促进对蜂巢的教育计划，这一举措取得了成功，我们计划继续教他们一些基本的化学知识。差不多是立刻，他们就推导出了基于这些原理的最具破坏的应用，我们前脚还没离开他们的大气层，后脚他们就开始对邻近的蜂巢发动战争。现在，数以百万计的子个体正在死亡。"
  fircon.7510.desc.gestalt:0 "我们的[Root.GetScientistPlural]在§Y[pre_ftl_planet.GetName]§!进行的任务取得了成功。$fircon.7510.desc.base$"
  fircon.7510.desc.regular:0 "我们的科学家十分动摇地离开了§Y[pre_ftl_planet.GetName]§!。$fircon.7510.desc.base$"
  fircon.7510.a:0 "阻止这个！"
- fircon.7510.a.tt:1 "§R[pre_ftl_planet.GetName]上有§Y2§!£pops£人口死亡。§!"
+ fircon.7510.a.tt:1 "[pre_ftl_planet.GetName]上§R200§!£pop£§H人口§!死亡。"
  fircon.7510.b.regular:0 "这就是进化的本质。"
  fircon.7510.b.gestalt:0 "符合预期。"
- fircon.7510.b.tt:1 "§R[pre_ftl_planet.GetName]上有§Y5§!£pops£人口死亡。§!"
+ fircon.7510.b.tt:1 "[pre_ftl_planet.GetName]上§R500§!£pop£§H人口§!死亡。"
  #Modifiers
  stuffed_toy:0 "填充玩具"
  stuffed_toy_desc:0 "一个仿照我们形象的填充玩具，使我们充满决心。"
@@ -2284,8 +2291,8 @@
  sweet_tooth_blockade:0 "安全封锁"
  sweet_tooth_blockade_desc:0 "我们调配了资源对[sweet_planet.GetName]实行全域静默，方便打击猖獗的毒品贸易。"
 
- building_primitive_clinic:0 "$building_clinic$"
- building_primitive_clinic_desc:0 "$building_clinic_desc$"
+ building_primitive_clinic:0 "$building_medical_2$"
+ building_primitive_clinic_desc:0 "$building_medical_2_desc$"
 
  #Land Grabs
  fircon.8035.name:0 "抢地运动"
@@ -2455,7 +2462,7 @@
  fircon.8525.name:0 "加入我们"
  fircon.8525.desc:0 "起初，来自[preftl_lone_drone_planet.GetName]的孤独子个体被巨大的转变所吓倒。然而，在最初的文化冲击消退后，子个体现在正在适应作为个体的生活。也许具有讽刺意味的是，它已经变得像我们一样了。"
  fircon.8525.a:0 "欢迎。"
- fircon.8525.a.tt:0 "一位新的科学家将被添加到领袖储备中。"
+ fircon.8525.a.tt:0 "一位新的§H科学官§!将被添加到§H$RECRUITABLE_LEADERS$§!中。"
  opinion_lone_drone:0 "再同化令它很高兴。"
 
  # list effects/triggers
@@ -2521,13 +2528,13 @@
  paradisiacal_habitat:0 "天堂般的居住站"
  paradisiacal_habitat_desc:0 "尽管该居住站完全是人工建成，但其中的空气散布着田园的气息，让无论再天差地别的所有智慧生物都能想起自己的家乡。"
 
- paradisiacal_habitat_science: "$paradisiacal_habitat$"
+ paradisiacal_habitat_science: "天堂般的研究轨道栖所"
  paradisiacal_habitat_science_desc: "$paradisiacal_habitat_desc$"
 
- paradisiacal_habitat_energy: "$paradisiacal_habitat$"
+ paradisiacal_habitat_energy: "天堂般的发电轨道栖所"
  paradisiacal_habitat_energy_desc: "$paradisiacal_habitat_desc$"
 
- paradisiacal_habitat_mining: "$paradisiacal_habitat$"
+ paradisiacal_habitat_mining: "天堂般的采矿轨道栖所"
  paradisiacal_habitat_mining_desc: "$paradisiacal_habitat_desc$"
 
  fircon.3510.name:0 "天选民"
@@ -2550,14 +2557,14 @@
 # Eager Explorers #
 ###################
 
- eager_explorers_base_effect:1 "§R开局将陷入科技和基础设施的劣势，£pops£人口比正常开局要少10！§!\n开局拥有2艘§H$explorer_vessel_plural$§!，以及一艘配备§H亚空间引擎§!的§H$engineer_vessel$§!，这使它们无法进行超空间旅行，但能提供有限的跃迁引擎能力。\n增加发现§H超光速航行§!科技的概率"
+ eager_explorers_base_effect:1 "§R开局将陷入科技和基础设施的劣势，比正常开局要少1K£pop£人口！§!\n开局拥有2艘§H$explorer_vessel_plural$§!，以及一艘配备§H亚空间引擎§!的§H$engineer_vessel$§!，这使它们无法进行超空间旅行，但能提供有限的跃迁引擎能力。\n提升§H超光速旅行§!科技的发现概率。"
 
  civic_eager_explorers:0 "渴求的探险家"
  civic_eager_explorers_desc:0 "出于对星空的渴望，这个文明在好几个发展阶段都加速了进程，比大多数国家更早地达到了探索银河的时代。"
  civic_eager_explorers_effects:0 "$eager_explorers_base_effect$\n提高发现§H宇航技术§!科技的几率。"
  civic_privatized_exploration:0 "私人探险"
  civic_privatized_exploration_desc:0 "多年来，这个文明被告知超空间引擎几乎就要完成了。他们耐心地等待着，然而一直以来，负责该项目的子公司都在悄悄地将资金转入他们自己的私人账户。当欺诈行径最终被揭露时，公司只能仓促之下提供实验性、探索性的船只。"
- civic_privatized_exploration_effects:0 "$eager_explorers_base_effect$\n开局就拥有§H$tech_starbase_3$§!科技，并且在母星系有一座已经建成的§H$tech_starbase_3$§!。"
+ civic_privatized_exploration_effects:0 "$eager_explorers_base_effect$\n开局就拥有§H$tech_starbase_3$§!科技，并且在母星系有一座已经建成的§H$tech_starbase_3$§!。\n£building£§Y$building_private_mining_consortium$§!$megacorp_civic_branch_office_building_effect$"
  civic_hive_stargazers:0 "观星者"
  civic_hive_stargazers_desc:0 "在凝视着夜空的奇迹之后，这个蜂巢思维一直渴望向外探索。为了追求这一雄心壮志，其他形式的发展被搁置一边，并建造了一支能够进行有限亚空间旅行的小型船队。"
  civic_hive_stargazers_effects:1 "$eager_explorers_base_effect$\n添加§H$trait_stargazer$§!特质。\n开局时对起始星团的情报为低。"
@@ -2577,12 +2584,15 @@
  trait_stargazer:0 "观星者"
  trait_stargazer_desc:0 "$trait_presapient_starborn_desc$"
 
+ explorer_vessel_cap: "$explorer_vessel$"
  explorer_vessel:0 "探险船"
  explorer_vessel_plural:0 "探险船"
  NAME_Explorer_Vessel:0 "$explorer_vessel$"
+ engineer_vessel_cap: "$engineer_vessel$"
  engineer_vessel:0 "工程船"
  engineer_vessel_plural:0 "工程船"
  NAME_Engineer_Vessel:0 "$engineer_vessel$"
+ colony_vessel_cap: "$colony_vessel$"
  colony_vessel:0 "殖民船只"
  colony_vessel_plural:0 "殖民船只"
 

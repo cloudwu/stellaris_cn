@@ -57,12 +57,13 @@
  MESSAGE_FINAL_OFFSPRING_SHIP_TITLE:0 "最后的子嗣舰船被击败"
  MESSAGE_FINAL_OFFSPRING_SHIP_DESC:0 "我们在$SYSTEM|Y$星系中最后一艘§Y子嗣舰船§!被击败，我们的舰队失去了必要的指挥控制。"
 
+ offspring_drone: "$job_offspring_drone$"
  job_offspring_drone:0 "子嗣个体"
  job_offspring_drone_plural:0 "子嗣个体"
- job_offspring_drone_plural_with_icon: "£job_spawning_drone£ $job_offspring_drone_plural$"
+ job_offspring_drone_plural_with_icon: "[spawning_drone.GetIcon] $job_offspring_drone_plural$"
  mod_job_offspring_drone_add:0 "$job_offspring_drone$岗位"
  job_offspring_drone_desc:0 "整个星球的行政个体都在这里。始祖通过子嗣个体来实现他们的宏伟设计。"
- job_offspring_drone_effect_desc:2 "£job_spawning_drone£$job_offspring_drone_plural$将$r_food$（或$r_minerals$）转化为£mod_planet_amenities_no_happiness_add£§Y$PLANET_AMENITIES_TITLE$§!和£mod_planet_pop_assembly_mult£§Y$MOD_PLANET_POP_ASSEMBLY_ORGANIC_ADD$§!，产生§Y$offspring_defense_plural$§!，并提供£mod_planet_jobs_simple_drone_produces_mult£§G+10%§!§Y$pop_cat_simple_drone$产出§!增益。"
+ job_offspring_drone_effect_desc:2 "[spawning_drone.GetIcon]$job_offspring_drone_plural$将$r_food$（或$r_minerals$）转化为£mod_planet_amenities_no_happiness_add£§Y$PLANET_AMENITIES_TITLE$§!和£mod_planet_pop_assembly_mult£§Y$MOD_BONUS_POP_GROWTH$§!，产生§Y$offspring_defense_plural$§!，并提供£mod_planet_jobs_simple_drone_produces_mult£§G+10%§!§Y$pop_cat_simple_drone$产出§!增益。"
  building_offspring_nest:0 "子嗣巢穴"
  building_offspring_nest_desc:1 "这座加固的巢穴庇佑着当地的子嗣，并且还能加速周围蜂巢的发展。"
  offspring_nest_tooltip:1 "\n§H只有始祖蜂巢物种才可能被子嗣巢穴组装§!\n"
@@ -75,7 +76,8 @@
  missing_offspring_modifier_desc:0 "该星球正缺乏子嗣，导致$pop_cat_simple_drone$效率显著下滑。"
 
 # Progenitor Hive Ships
-
+ OFFSPRING_SHIP_DESC: "作为子嗣，这艘船可以投射始祖的意志。"
+ offspring_corvette_cap: "$offspring_corvette$"
  offspring_corvette:0 "子嗣护卫舰"
  offspring_corvette_plural:0 "子嗣护卫舰"
  OFFSPRING_CORVETTE_MID_M1S1:0 "$CORVETTE_MID_M1S1$"
@@ -83,6 +85,7 @@
  OFFSPRING_CORVETTE_MID_S1:0 "$CORVETTE_MID_S1$"
  OFFSPRING_CORVETTE_MID_S2PD1:0 "$CORVETTE_MID_S2PD1$"
 
+ offspring_cruiser_cap: "$offspring_cruiser$"
  offspring_cruiser:0 "子嗣巡洋舰"
  offspring_cruiser_plural:0 "子嗣巡洋舰"
  OFFSPRING_CRUISER_BOW_L1:0 "$CRUISER_BOW_L1$"
@@ -95,6 +98,7 @@
  OFFSPRING_CRUISER_STERN_M1:0 "$CRUISER_STERN_M1$"
  OFFSPRING_CRUISER_STERN_S2:0 "$CRUISER_STERN_S2$"
 
+ offspring_destroyer_cap: "$offspring_destroyer$"
  offspring_destroyer:0 "子嗣驱逐舰"
  offspring_destroyer_plural:0 "子嗣驱逐舰"
  OFFSPRING_DESTROYER_BOW_M1S2:0 "$DESTROYER_BOW_M1S2$"
@@ -104,6 +108,7 @@
  OFFSPRING_DESTROYER_STERN_S2:0 "$DESTROYER_STERN_S2$"
  OFFSPRING_DESTROYER_STERN_M1:0 "$DESTROYER_STERN_M1$"
 
+ offspring_battleship_cap: "$offspring_battleship$"
  offspring_battleship:0 "子嗣战列舰"
  offspring_battleship_plural:0 "子嗣战列舰"
  OFFSPRING_BATTLESHIP_BOW_L1M1S2:0 "$BATTLESHIP_BOW_L1M1S2$"
@@ -124,6 +129,7 @@
  OFFSPRING_BATTLESHIP_STERN_S4:0 "$BATTLESHIP_STERN_S4$"
 
  SHIP_AURA_OFFSPRING:0 "$OFFSPRING_AURA$"
+ SHIP_BIO_AURA_OFFSPRING: "$OFFSPRING_AURA$"
  OFFSPRING_AURA:0 "子嗣监管台"
  sm_offspring_outlook:0 "子嗣瞭望台"
  sm_offspring_outlook_desc:0 "能够让子嗣监管并指挥星系内正在进行的战斗的太空基地模块。\n"
@@ -153,7 +159,7 @@
  origin_tooltip_subterranean_effects:4 "- $SPECIES_TRAITS$['concept_cave_dweller']\n- ['concept_mining_district', £district£矿业区]：无上限"
  trait_cave_dweller:0 "穴居者"
  trait_cave_dweller_desc:1 "§L该物种能在任何他们能找到的星球地下繁衍。§!"
- trait_cave_dweller_tooltip:0 "$MOD_BIO_POP_GROWTH_SPEED$: §R-20%§!"
+ trait_cave_dweller_tooltip: "$MOD_BIO_LOGISTIC_GROWTH_MULT$：§R-20%§!"
  trait_robot_cave_dweller: "钻掘机器人"
  trait_robot_cave_dweller_desc: "§L这些机械被精巧地设计为满足洞穴探险和矿物提取，表现出的杰出行动能力时期可以轻松地在地下世界穿行。§!"
  trait_robot_cave_dweller_tooltip: "$MOD_POP_ASSEMBLY_SPEED$：§R-20%§!"
@@ -200,7 +206,7 @@
  ################################
 
  origin_star_slingshot:0 "射向星际"
- origin_star_slingshot_desc:1 "曾几何时，该文明的天空短暂地被流星所照亮，紧接着就陷入了长久的黑暗。此后他们试图冲出天际以寻求答案，并在第一次太空征程中发现了一座休眠中（并且早已被遗弃）的$quantum_catapult_1$。"
+ origin_star_slingshot_desc:1 "曾几何时，该文明的天空短暂地被流星所照亮，紧接着就陷入了长久的黑暗。此后他们试图冲出天际以寻求答案，并在第一次太空征程中发现了一座休眠中（并且早已被遗弃）的§H$quantum_catapult_1$§!。"
  START_SCREEN_STAR_SLINGSHOT:0 "自上古以来我们的人民就能时不时地看到夜空被无数流星所照亮，但至今我们的科学家还是不能解释这种现象。随着我们开始探索星系，我们最终获得了追踪这些扰动现象原因的必要装备——一个被我们的工程师称为$quantum_catapult_1$的古老构造。\n\n$START_SCREEN_STAR_SLINGSHOT_SECOND_PART$"
  START_SCREEN_STAR_SLINGSHOT_GESTALT:0 "自我们鸿蒙初开之时便能时不时地看到天空被无数的流星所照亮，并完全无法理解是什么可能造成了这种奇怪的现象。随着我们终于脱出母星的桎梏，我们成功地获得了追踪这些扰动现象原因的必要工具——一个$quantum_catapult_1$。\n\n$START_SCREEN_STAR_SLINGSHOT_SECOND_PART$"
  START_SCREEN_STAR_SLINGSHOT_SECOND_PART:0 "尽管陷入休眠，部分被毁还遭到遗弃，我们依旧坚信其能回复往日的荣光。如果按照我们的预期工作，它将成为通往银河各处的星门。"
@@ -277,7 +283,9 @@
  origin.5705.desc:0 "经过深思熟虑，我们决定投资一大笔资源来援助你们的国家进行特化。在未来，这将让你们的帝国在我们所有的伙伴和盟友中扮演更加重要的角色。\n\n我们还不太确定你们的人民更喜欢怎么样的角色，军事化？专精学术？或你们更感兴趣矿物和物质财富？"
  origin.5705.desc.reconsider:0 "那么……你有重新考虑吗？"
  origin.5705.a:0 "军事专精听起来棒极了。"
- origin.5705.a.tt:2 "§Y[ROOT.GetName]§!将会转变为§Y$specialist_bulwark$§!特化，致力于军事和防卫。\n§Y[Root.GetName]§!将支付$r_influence$作为扩张什一税。\n从§Y[overlord_empire.GetName]§!处获得一支§Y驱逐舰§!舰队以及相应的建造科技。"
+ origin.5705.a.tt_intro: "§Y[ROOT.GetName]§!将会转变为§Y$specialist_bulwark$§!特化，致力于军事和防务。\n§Y[Root.GetName]§!将支付$r_influence$作为扩张什一税。"
+ origin.5705.a.tt:2 "$origin.5705.a.tt_intro$\n从§Y[overlord_empire.GetName]§!处接收一支§Y驱逐舰§!舰队以及扩建所需的军事科技。"
+ origin.5705.a.bioships.tt: "$origin.5705.a.tt_intro$\n从§Y[overlord_empire.GetName]§!处接收一支§Y$mauler_stage_2_plural$§!舰队以及扩建所需的军事科技。"
  origin.5705.b:0 "能不能再详细介绍一下戍邦？"
  origin.5705.c:0 "我们的人民更热爱学识。"
  origin.5705.c.tt:1 "§Y[ROOT.GetName]§!将会转变为§Y$specialist_scholarium$§!特化，致力于研究科技。\n§Y[ROOT.GetName]§!将支付$r_influence$作为扩张什一税。\n从§Y[overlord_empire.GetName]§!处获得一艘§Y科研船§!和一位§Y科学家§!。"

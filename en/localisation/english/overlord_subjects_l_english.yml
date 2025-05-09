@@ -331,6 +331,8 @@
  preset_satellite:0 "Satellite"
  preset_signatory:0 "Signatory"
  preset_thrall:0 "Thrall"
+ preset_political_client: "Political Client"
+ preset_herald: "Herald"
  preset_satrapy:0 "Satrapy"
  preset_relic_satrapy:0 "$preset_satrapy$"
 
@@ -509,8 +511,8 @@
  HOLDINGS_EMPTY_corporate:0 "No Corporate holdings"
  HOLDINGS_EMPTY_subject_holding:0 "No Overlord holdings"
  HOLDINGS_EMPTY:0 "No holdings"
- HOLDINGS_DESC_corporate:0 "A branch office can be established by §YCorporate§! empires to enable §Ycorporate holdings§!."
- HOLDINGS_DESC_subject_holding:0 "§YOverlord holdings§! can only be built by Overlords on Subject planets if agreed upon in their Subject §YAgreement§!."
+ HOLDINGS_DESC_corporate:0 "A ['concept_branch_office'] can be established by ['authority:auth_corporate'] empires to enable §HCorporate Holdings§!."
+ HOLDINGS_DESC_subject_holding:0 "['concept_overlord_holding'] can only be built by §HOverlords§! on §HSubject§! planets if agreed upon in their ['concept_subject_agreement']."
  CLICK_TO_OPEN_PLANET_VIEW_HOLDINGS:0 "§GClick to open Planet View§!"
  AGREEMENTS_HOLDINGS_TITLE:0 "Holdings §Y($CURRENT$/$MAXIMUM$)§!"
  BUILDING_SLOT_OPEN_AGREEMENTS_HOLDINGS_DESC:0 "§EA Holding can be constructed by the Overlord on one of the Subject's planets.§!"
@@ -540,11 +542,11 @@
  holding_material_requisitorium_desc:1 "A ministry overseeing local mineral production, extraction, and purification. They often secure the best land purchases and reap the benefits for their patron."
  holding_produce_requisitorium:2 "Ministry of Acquisition"
  holding_produce_requisitorium_desc:1 "A ministry overseeing local produce. In addition to placing a small tax on this world, some products have a tendency to disappear into their convoluted, bureaucratic process."
- job_energy_requisitioned_effect_desc:2 "£job_technician£ [Root.EnergyProducer] produces §R-3§! $r_energy$ for the Subject and §G4§! $r_energy$ for the Overlord."
- job_minerals_requisitioned_effect_desc:2 "£job_miner£ [Root.MineralsProducer] produces §R-2§! $r_minerals$ for the Subject and §G3§! $r_minerals$ for the Overlord."
- job_alloy_requisitioned_effect_desc:3 "£job_foundry£ [Root.AlloysProducer] produces §R-1§! $r_alloys$ for the Subject and §G2§! $r_alloys$ for the Overlord, with an increase in [Root.AlloysProducerResources] upkeep for the Subject."
- job_food_requisitioned_effect_desc:2 "£job_farmer£ [Root.FoodProducer] produces §R-3§! $r_food$ for the Subject and §G4§! $r_food$ for the Overlord."
- job_consumer_goods_requisitioned_effect_desc:4 "[Root.ConsumerGoodsProducerIcon] [Root.ConsumerGoodsProducer] produces §R-3§! $r_consumer_goods$ for the Subject and §G4§! $r_consumer_goods$ for the Overlord with an increase in $r_minerals$ upkeep for the Subject."
+ job_energy_requisitioned_effect_desc: "[Root.EnergyProducerWithIcon] produce §R-3§! $r_energy$ for the Subject and §G4§! $r_energy$ for the Overlord."
+ job_minerals_requisitioned_effect_desc: "[Root.MineralsProducerWithIcon] produce §R-2§! $r_minerals$ for the Subject and §G3§! $r_minerals$ for the Overlord."
+ job_alloy_requisitioned_effect_desc: "[Root.AlloysProducerWithIcon] produce §R-1§! $r_alloys$ for the Subject and §G2§! $r_alloys$ for the Overlord, with an increase in [Root.AlloysProducerResources] upkeep for the Subject."
+ job_food_requisitioned_effect_desc: "[Root.FoodProducerWithIcon] produce §R-3§! $r_food$ for the Subject and §G4§! $r_food$ for the Overlord."
+ job_consumer_goods_requisitioned_effect_desc: "[Root.ConsumerGoodsProducerWithIcon] produces §R-3§! $r_consumer_goods$ for the Subject and §G4§! $r_consumer_goods$ for the Overlord with an increase in $r_minerals$ upkeep for the Subject."
  blocker_tied_to_splinter_hive:0 "$TRIGGER_FAIL$§RThis blocker will remain as long as the §YSplinter Hive§! Holding exists.§!"
  no_free_district_for_splinter_hive:0 "$TRIGGER_FAIL$§RNo free district on this planet for our expansive spawning complex.§!"
  holding_splinter_hive:0 "Splinter Hive"
@@ -559,11 +561,11 @@
  holding_overlord_vigil_command_desc:0 "A command center specialized in - and delegated to - calculating the best possible means of increasing defensive measures."
  holding_parasitic_algorithms:0 "Ministry of Science"
  holding_parasitic_algorithms_desc:0 "A ministry overseeing local research and science, bringing the most noteworthy breakthroughs and discoveries back to their benefactor."
- holding_parasitic_algorithms_effect_desc:2 "[Root.ResearchProducerIcon] [Root.ResearchProducer] turn Subject [Root.SubjectResearcherUpkeep] into $r_research$ for the Overlord."
+ holding_parasitic_algorithms_effect_desc:2 "[Root.ResearchProducerWithIcon] turn Subject [Root.SubjectResearcherUpkeep] into $r_research$ for the Overlord."
 
  holding_noble_vacation_homes:0 "Noble Chateaus"
  holding_noble_vacation_homes_desc:0 "A home away from home, this is the perfect place for the Overlord's ruling elite to let off steam, so that they don't cause incidents back home."
- holding_noble_vacation_homes_effect:0 "Each $holding_noble_vacation_homes$ grants §G+2§! £stability£ stability in the Overlord's capital."
+ holding_noble_vacation_homes_effect:0 "Each $holding_noble_vacation_homes$ grants §G+2§! $r_stability$ in the Overlord's capital."
 
  holding_dread_outpost:0 "Dread Outpost"
  holding_dread_outpost_desc:0 "The Dread Outpost is an arcane structure that produces unholy reanimated armies while sending back insidious data to this planet's Overlord."
@@ -578,7 +580,7 @@
 
  holding_reemployment_center:0 "Reemployment Center"
  holding_reemployment_center_desc:1 "Never leave a resource unexploited, even if that resource is the Subject's dead. With the Reemployment Center, the Overlord can ensure that the Subject's planets are always filled with employees even though the quality of work might vary."
- holding_reemployment_center_effect:0 "\nA new £pop£ §YZombie Pop§! will be reanimated on §Y[Planet.reemployment_center_timer]§!"
+ holding_reemployment_center_effect:0 "\n§Y100§! new £pop£ §YZombie Pops§! will be reanimated on §Y[Planet.reemployment_center_timer]§!"
 
  holding_recruitment_office:0 "Recruitment Office"
  holding_recruitment_office_desc:0 "Everyone must do their part. That is why the Overlord is offering military training in exchange for a tour in their fleet. Service guarantees citizenship."
@@ -589,13 +591,15 @@
  holding_park_ranger_lodge_desc:0 "The Overlord has an interest in co-existing with nature and wishes to spread this joy to its Vassal. To ensure that there always is at least some nature left to enjoy."
  no_free_district_for_ranger_lodge:0 "$TRIGGER_FAIL$§RNo untouched nature remains on this planet for us to protect.§!"
  blocker_tied_to_ranger_lodge:0 "$TRIGGER_FAIL$§RThis blocker will remain as long as the §Y$holding_park_ranger_lodge$§! Holding exists.§!"
+ no_ranger_lodge_wilderness: "$TRIGGER_FAIL$§RUntouched nature is already abundant on Wilderness worlds.§!"
 
  holding_tree_of_life_sapling:1 "Tree of Life Sprout"
  holding_tree_of_life_sapling_desc:0 "The Overlord has existed with their Tree of Life for so long that they can no longer imagine life without it. Now, they want to share the same opportunity with their vassals."
+ no_tree_of_life_sapling_wilderness: "$TRIGGER_FAIL$§RThe Wilderness' environment is hostile to alien saplings.§!"
 
  holding_franchise_headquarters:0 "Franchise Headquarters"
  holding_franchise_headquarters_desc:0 "These offices allow Corporate Management to realign the Subsidiary's interests with that of their Overlord through mandatory planet-wide training and team-building exercises."
- holding_franchise_headquarters_effect:0 "\n£job_clerk£ §Y$job_clerk_plural$§! produce §R-1§! £trade_value£ §YTrade Value§! for the Subject and produce §G0.25§! £unity£ §Y$unity$§! for the Overlord."
+ holding_franchise_headquarters_effect:0 "\n[clerk.GetIcon] §Y[clerk.GetNamePlural]§! produce §R-1§! $r_trade$ for the Subject and produce §G0.25§! £unity£ §Y$unity$§! for the Overlord."
  no_branch_office:0 "$TRIGGER_FAIL$§RRequires a [owner.overlord.GetName] Branch Office.§!"
  planet_corporate_franchising_meddling:0 "Corporate Interference"
  holding_franchise_headquarters_ethics_effect:0 "\nIf the Overlord has Fanatic Ethics, provides §G+100%§! Ethics Attraction for that Ethos."
@@ -608,6 +612,7 @@
 
  holding_organic_sanctuary:0 "Organic Haven"
  holding_organic_sanctuary_desc:0 "Although the care facilities on this planet are more limited in scope than those found on the Overlord's worlds, the bio-trophies inside still enjoy a much more comfortable standard of living than they are used to."
+ no_organic_sanctuary_wilderness: "$TRIGGER_FAIL$§RThe Wilderness is unfit for long-term habitation by $job_bio_trophy_plural$.§!"
 
  holding_sacrificial_shrine:0 "Sacrificial Shrine"
  holding_sacrificial_shrine_desc:0 "The great study of the cycle should not be limited to the Overlord; the turning of life and death must be explored through the Vassal as well."
@@ -646,9 +651,9 @@
  holding_noble_vacation_home_modifier:0 "Relaxed Nobles"
  mod_planet_jobs_unity_upkeep_mult:0 "£unity£ $unity$ Upkeep from £job£ Jobs"
  MOD_SUBJECT_TECH_COST_MULT:0 "Technology Research Cost"
- mod_planet_refiners_exotic_gases_produces_mult:0 "£job_gas_refiner£ [Root.Refiners] Output"
- mod_planet_translucers_rare_crystals_produces_mult:0 "£job_translucer£ [Root.Translucers] Output"
- mod_planet_chemists_volatile_motes_produces_mult:0 "£job_chemist£ [Root.Chemists] Output"
+ mod_planet_refiners_exotic_gases_produces_mult:0 "[gas_refiner.GetIcon] [Root.Refiners] Output"
+ mod_planet_translucers_rare_crystals_produces_mult:0 "[translucer.GetIcon] [Root.Translucers] Output"
+ mod_planet_chemists_volatile_motes_produces_mult:0 "[chemist.GetIcon] [Root.Chemists] Output"
  divided_patronage:0 "Divided Patronage"
  divided_patronage_desc:0 "Our Overlord's attention is divided among too many subjects."
  feudal_lord:0 "Feudal Lord"
@@ -795,7 +800,7 @@
  mod_job_overlord_breeder_drone_add:0 "$mod_job_overlord_breeder_add$"
  job_overlord_breeder_desc:2 "$job_overlord_offspring_drone_feeder_drone_desc$ It's also a fairly well paid job."
  job_overlord_breeder_drone_desc:0 "Feeding the newborn drones is an important part of ensuring the young spawn can grow correctly, quickly, and effectively."
- job_overlord_breeder_effect_desc:2 "£job_overlord_breeder£ $job_overlord_breeder_plural$ turn Subject [Root.OverlordConsumes] into §G2§! £pop£ §YPop Assembly§! for Overlord capital.\nAn §Y$d_spawning_complex_blocker$§! blocker will spawn on the planet, occupying a district slot."
+ job_overlord_breeder_effect_desc:2 "£job_overlord_breeder£ $job_overlord_breeder_plural$ turn Subject [Root.OverlordConsumes] into §G2§! £pop£ §YPop Assembly§! for Overlord capital.\nAn §Y$d_spawning_complex_blocker$§! blocker will spawn on the planet, occupying a district slot."
  job_overlord_breeder_drone_effect_desc:0 "$job_overlord_breeder_effect_desc$"
 
  # Mind Thrall
@@ -823,16 +828,16 @@
  job_overlord_offspring_drone_feeder_drone_effect_desc:4 "£job_overlord_breeder£ $job_overlord_offspring_drone_feeder_plural$ use $r_food$ (or $r_minerals$) provide access to §Y$offspring_defense_plural$§! and an increase in £mod_planet_jobs_simple_drone_produces_mult£ §Y$mod_planet_jobs_simple_drone_produces_mult$§!."
 
  # Overlord Metallurgist/Foundry Drone/Fabricator/Catalytic Technician/Catalytic Drone
- job_overlord_metallurgist:0 "Overlord $job_foundry$"
- job_overlord_metallurgist_plural:0 "Overlord $job_foundry_plural$"
+ job_overlord_metallurgist:0 "Overlord [foundry.GetName]"
+ job_overlord_metallurgist_plural:0 "Overlord [foundry.GetNamePlural]"
  mod_job_overlord_metallurgist_add:0 "$job_overlord_metallurgist$ Jobs"
  job_overlord_metallurgist_desc:0 "$job_foundry_desc$"
  job_overlord_foundry_drone:0 "Overlord $job_alloy_drone$"
  job_overlord_foundry_drone_plural:0 "Overlord $job_alloy_drone_plural$"
  mod_job_overlord_foundry_drone_add:0 "$job_overlord_alloy_drone$ Jobs"
  job_overlord_foundry_drone_desc:0 "$job_alloy_drone_desc$"
- job_overlord_fabricator:0 "Overlord $job_fabricator$"
- job_overlord_fabricator_plural:0 "Overlord $job_fabricator_plural$"
+ job_overlord_fabricator:0 "Overlord [fabricator.GetName]"
+ job_overlord_fabricator_plural:0 "Overlord [fabricator.GetNamePlural]"
  mod_job_overlord_fabricator_add:0 "$job_overlord_fabricator$ Jobs"
  job_overlord_fabricator_desc:0 "$job_fabricator_desc$"
  job_overlord_catalytic_technician:0 "Overlord $job_catalytic_technician$"
@@ -843,8 +848,8 @@
  job_overlord_catalytic_drone_plural:0 "Overlord $job_catalytic_drone_plural$"
  mod_job_overlord_catalytic_drone_add:0 "$job_overlord_catalytic_drone$ Jobs"
  job_overlord_catalytic_drone_desc:0 "$job_catalytic_drone_desc$"
- job_overlord_alloy_producer_effect_desc:0 "£job_foundry£ Overlord [Root.AlloysProducer] turn Subject £minerals£ §Y$minerals$§! into £alloys£ §Y$alloys$§! for the Overlord."
- job_overlord_alloy_producer_catalytic_effect_desc:0 "£job_foundry£ Overlord [Root.AlloysProducer] turn Subject £food£ §Y$food$§! into £alloys£ §Y$alloys$§! for the Overlord."
+ job_overlord_alloy_producer_effect_desc:0 "[foundry.GetIcon] Overlord [Root.AlloysProducer] turn Subject £minerals£ §Y$minerals$§! into £alloys£ §Y$alloys$§! for the Overlord."
+ job_overlord_alloy_producer_catalytic_effect_desc:0 "[foundry.GetIcon] Overlord [Root.AlloysProducer] turn Subject £food£ §Y$food$§! into £alloys£ §Y$alloys$§! for the Overlord."
 
  # Overlord Beholders
  job_overlord_beholder:0 "Overlord Beholder"
@@ -879,7 +884,7 @@
  job_overlord_reassigner_drone_plural:0 "$job_overlord_reassigner$ Drones"
  mod_job_overlord_reassigner_drone_add:0 "$job_overlord_reassigner$ Jobs"
  job_overlord_reassigner_drone_desc:0 "$job_overlord_reassigner_desc$"
- job_overlord_reassigner_effect_desc:1 "£job_necromancer£ $job_overlord_reassigner_plural$ provide the subject with £pop£ §YZombie Pops§!."
+ job_overlord_reassigner_effect_desc:1 "£job_necromancer£ $job_overlord_reassigner_plural$ provide the subject with £pop£ §HZombie Pops§!."
 
 # Overlord Recruiters
  job_overlord_recruiter:0 "Overlord Recruiter"
@@ -891,7 +896,7 @@
  job_overlord_recruiter_drone_plural:0 "$job_overlord_recruiter$ Drones"
  mod_job_overlord_recruiter_drone_add:0 "$job_overlord_recruiter$ Jobs"
  job_overlord_recruiter_drone_desc:0 "$job_overlord_recruiter_desc$"
- job_overlord_recruiter_effect_desc:1 "£job_soldier£ $job_overlord_recruiter_plural$ provide the subject with £defense_army£ §YDefense Armies§! with a chance of joining our empire after their tour of duty is complete."
+ job_overlord_recruiter_effect_desc:1 "[soldier.GetIcon] $job_overlord_recruiter_plural$ provide the subject with £defense_army£ §YDefense Armies§! with a chance of joining our empire after their tour of duty is complete."
 
 # Overlord Rangers
  job_overlord_ranger:0 "Overlord Ranger"
@@ -938,7 +943,7 @@
  job_overlord_mortal_initiate_drone_plural:1 "$job_overlord_mortal_initiate$ Drones"
  mod_job_overlord_mortal_initiate_drone_add:1 "$job_overlord_mortal_initiate$ Jobs"
  job_overlord_mortal_initiate_drone_desc:0 "The customs of our Overlord may seem strange and mysterious, yet we are to be a part of them. A few of our drones have been designated to join what the Overlord calls 'a study of life', one which concludes with their willing sacrifice."
- job_overlord_mortal_initiate_effect_desc:0 "£job_mortal_initiate£ $job_overlord_mortal_initiate_plural$ produce £unity£ §YUnity§!, £amenities£ §Y$amenity$§! and £society£ §YResearch§! for the Subject. $job_overlord_mortal_initiate$ can be used for §YSacrifices§!."
+ job_overlord_mortal_initiate_effect_desc:0 "[mortal_initiate.GetIcon] $job_overlord_mortal_initiate_plural$ produce £unity£ §YUnity§!, £amenities£ §Y$amenity$§! and £society£ §YResearch§! for the Subject. $job_overlord_mortal_initiate$ can be used for §YSacrifices§!."
 
 # Overlord Managers
  job_overlord_manager:0 "Overlord Manager"
@@ -946,7 +951,7 @@
  job_overlord_manager_plural:0 "Overlord Managers"
  mod_job_overlord_manager_add:0 "$job_overlord_manager$ Jobs"
  job_overlord_manager_desc:0 "Middle managers that optimize the behavior of the local white-collar workers to synergize with the Overlord's long-term corporate trajectory."
- job_overlord_manager_effect_desc:0 "£job_manager£ $job_overlord_manager_plural$ turn £consumer_goods£ §Y$consumer_goods$§! into £unity£ §YUnity§! and £mod_trade_value_add£ §Y$TRADE_VALUE$§! for the Subject, and £unity£ §YUnity§! for the Overlord."
+ job_overlord_manager_effect_desc:0 "£job_manager£ $job_overlord_manager_plural$ turn £consumer_goods£ §Y$consumer_goods$§! into £unity£ §YUnity§! and $r_trade$ for the Subject, and £unity£ §YUnity§! for the Overlord."
 
  planet_holdings:0 "Holdings"
  planet_overlord_propagandists:0 "Overlord Propagandists"
@@ -979,7 +984,7 @@
  r_society:0 "£society£ §YSociety Research§!"
  r_engineering:0 "£engineering£ §YEngineering Research§!"
  r_amenities:2 "£mod_planet_amenities_add£ §YAmenities§!"
- r_trade_value:2 "£mod_trade_value_add£ §YTrade Value§!"
+ r_trade:2 "£trade£ §YTrade§!"
  r_loyalty:1 "£loyalty£ §YMonthly Loyalty§!"
  r_rare_crystals:1 "£rare_crystals£ §Y$rare_crystals$§!"
  r_volatile_motes:1 "£volatile_motes£ §Y$volatile_motes$§!"
@@ -1015,6 +1020,9 @@
  # Pop Type
  pop_mechanical:0 "Mechanical"
  pop_organic:0 "Organic"
+
+ # Empire Parameters
+ r_stability: "£stability£ §YStability§!"
 
  # Approximation headers
  PRODUCES_RESOURCES_FOR_OVERLORD:0 "Produces for Overlord: "
@@ -1057,12 +1065,12 @@
  # Scholarium Planetary Sensors
  specialist.900.name:1 "Abnormal Sensor Readings"
  specialist.900.desc:1 "We have picked up some curious readings from [From.GetName], possibly indicating the presence of life. Given the weakness of these signals and the lack of response as we attempt to contact these lifeforms, we must send a research team if we are to figure out what might have happened."
- specialist.900.desc.gestalt:0 "We have picked up some readings from [From.GetName], possibly indicating the presence of life. We should send some drones to look into whatever might be transmitting a signal."
+ specialist.900.desc.gestalt:0 "We have picked up some readings from [From.GetName], possibly indicating the presence of life. We should send some [root.GetIndividualNamePlural] to look into whatever might be transmitting a signal."
  specialist.900.A:0 "Interesting."
 
  specialist.905.name:0 "Engineering Cache"
  specialist.905.desc:0 "We have received a report from the specialists we sent to [From.GetName]. [Root.SensorReadings]\n\n[Root.SensorReadingsEngineering]"
- specialist.905.desc.gestalt:0 "Our drones at [From.GetName] have found the cause of the unusual readings. [Root.SensorReadings]\n\n[Root.SensorReadingsEngineering]"
+ specialist.905.desc.gestalt:0 "Our [root.GetIndividualNamePlural] at [From.GetName] have found the cause of the unusual readings. [Root.SensorReadings]\n\n[Root.SensorReadingsEngineering]"
 
  specialist.910.name:0 "Society Cache"
  specialist.910.desc:0 "We have an update from the ship we sent to [From.GetName]. [Root.SensorReadings]\n\n[Root.SensorReadingsSociety]"
@@ -1070,11 +1078,11 @@
 
  specialist.915.name:0 "Physics Cache"
  specialist.915.desc:0 "Our specialists at [From.GetName] have sent news of their findings. [Root.SensorReadings]\n\n[Root.SensorReadingsPhysics]"
- specialist.915.desc.gestalt:0 "Our drones at [From.GetName] have recently made great progress in tracking down the strange readings. [Root.SensorReadings]\n\n[Root.SensorReadingsPhysics]"
+ specialist.915.desc.gestalt:0 "Our [root.GetIndividualNamePlural] at [From.GetName] have recently made great progress in tracking down the strange readings. [Root.SensorReadings]\n\n[Root.SensorReadingsPhysics]"
 
  specialist.920.name:0 "Rare Cache"
- specialist.920.desc:1 "The team at [From.GetName] has news to share with us.  [Root.SensorReadings]\n\n[Root.SensorReadingsRare]"
- specialist.920.desc.gestalt:0 "There's good news from [From.GetName] after our drones' latest findings."
+ specialist.920.desc:1 "The team at [From.GetName] has news to share with us. [Root.SensorReadings]\n\n[Root.SensorReadingsRare]"
+ specialist.920.desc.gestalt:0 "There's good news from [From.GetName] after our [root.GetIndividualNamePlural]' latest findings." # e.g. 'our symbionts' latest findings'
 
  SCHOLARIUM_PLANETARY_SENSORS:0 "Scholarium Sensor Abnormality"
  SCHOLARIUM_PLANETARY_SENSORS_DESC:1 "We have picked up on uncommon signals coming from [From.GetName], seemingly trying to initiate contact with us. We have been unable to communicate with whatever or whoever it is, and will have to send a ship to inspect it more closely if we want to learn more about what it might be."
@@ -1090,9 +1098,9 @@
  SensorReadingsSociety1:0 "As they searched through the site, they managed to find a seemingly vacant lifepod with what looked like it the remains of an unknown, alien lifeform. They will bring the sample back for further tests as soon as they can."
  SensorReadingsSociety2:0 "One of the machines responsible for the signals we had picked up on was still somewhat operable, and our team managed to extract some files about the civilization it supposedly hails from. As they are previously unknown to us they will be entered into our databases - though they seem to be from a much older era."
  SensorReadingsSociety3:0 "Though uninhabited by sentient beings, it is the breeding grounds for a group of animals, who have seemingly learned to use some of the broken machinery as part of their courtship display. Our team will bring some of them back to be monitored further."
- SensorReadingsSociety3Gestalt:0 "It seems the local wildlife have started using the machinery from the interior as part of their courtship display. Though usually of little interest to us, our drones will bring some of these curious beings back to be monitored further."
+ SensorReadingsSociety3Gestalt:0 "It seems the local wildlife have started using the machinery from the interior as part of their courtship display. Though usually of little interest to us, our [root.GetIndividualNamePlural] will bring some of these curious beings back to be monitored further."
  SensorReadingsSociety4:0 "As they sifted through the area, they came across a small library with books they think detail the biology of various local fauna, from the many different planets the original inhabitants had visited. Our team will bring them back and start deciphering the language used in the books, and add whatever information they can glean from them to our own databases."
- SensorReadingsSociety4Gestalt:0 "After scouring the location, our drones discovered a small library. The books inside detailed the biology of thousands of exo-fauna, specimens from each of the planets the original inhabitants visited. These will be brought back to improve our own database."
+ SensorReadingsSociety4Gestalt:0 "After scouring the location, we discovered a small library. The books inside detailed the biology of thousands of exo-fauna, specimens from each of the planets the original inhabitants visited. These will be brought back to improve our own database."
 
  SensorReadingsPhysics1:0 "Though not much of use was left behind, our team managed to find some research papers on geological activity from different planets - or at least so they think, based on the illustrations. They will bring everything they think can survive the journey back, to be deciphered as soon as possible."
  SensorReadingsPhysics1Gestalt:0 "Though very few useful materials were left behind, our engineering drones did locate some research papers on geological activity from different planets. Everything that can survive the journey back will be returned, and deciphered as soon as possible."
@@ -1103,17 +1111,17 @@
  SensorReadingsPhysics4Gestalt:0 "An old fusion reactor was keeping what was left of the place still running, in spite of the lack of necessary maintenance. Our engineering drones will investigate it further to see if there is anything we can learn from it."
 
  SensorReadingsEngineering1:0 "When they were combing through the ruins of the place, our specialists managed to find some mostly intact ship parts. Though no longer functional due to degradation over time, our engineers believe they can sift some information from them."
- SensorReadingsEngineering1Gestalt:0 "As they combed the ruins, our drones came upon several ship parts. Though no longer functional due to degradation over time, we believe we can sift some information from the pieces."
+ SensorReadingsEngineering1Gestalt:0 "As we combed the ruins, our [root.GetIndividualNamePlural] came upon several ship parts. Though no longer functional due to degradation over time, we believe we can sift some information from the pieces."
  SensorReadingsEngineering2:0 "Though it is somewhat desolate, our specialists have found several uses of a building material they have never seen before. When they have finished their excavations and analysis of the area, samples will be brought back for further testing."
- SensorReadingsEngineering2Gestalt:0 "Our drones have come upon a particular building material unlike any we have ever seen before. Though it is unlikely that it can be of use to us, it will be brought back to be analyzed further."
+ SensorReadingsEngineering2Gestalt:0 "Our [root.GetIndividualNamePlural] have come upon a building material unlike any we have ever seen before. Though it is unlikely that it can be of use to us, it will be brought back to be analyzed further."
  SensorReadingsEngineering3:0 "Though there are no sentient beings to be found, our excavators found several drones when they dug a bit deeper. Though they are damaged beyond the point of being able to be reverse-engineered in their totality, our technicians believe their disparate parts might teach us new building techniques."
- SensorReadingsEngineering3Gestalt:0 "Our excavation drones came upon a signal somewhat similar to our own network, and after digging a bit deeper a pair of old broken automatons. Though damaged beyond repair, we believe we can reverse-engineer some of their parts to gain greater insight into how they once worked."
+ SensorReadingsEngineering3Gestalt:0 "Our excavation [root.GetIndividualNamePlural] came upon a signal similar to that which underlies our own shared consciousness, and after digging a bit deeper a pair of old broken automatons. Though damaged beyond repair, we believe we can reverse-engineer some of their parts to gain greater insight into how they once worked."
  SensorReadingsEngineering4:0 "As they were sifting through the ruins they found the remains of a small vault that once held materials, now empty - and most likely stolen by pirates, perhaps ages ago. They left behind some blueprints of how the original inhabitants had been mining these very same materials however, which might come in handy."
 
  SensorReadingsRare1:0 "Despite the damage done to the rest of the location, our team managed to find a machine entirely unscathed by time, wildlife, or pirates. They believe it might hold the secrets of a scientific breakthrough, as soon as they can decipher them."
- SensorReadingsRare1Gestalt:0 "Though most of the location is falling apart, our drones managed to find a machine entirely unscathed by time, wildlife, or pirates. We hope that it might divulge some long forgotten secrets - once we manage to decipher it."
+ SensorReadingsRare1Gestalt:0 "Though most of the location is falling apart, our [root.GetIndividualNamePlural] managed to find a machine entirely unscathed by time, wildlife, or pirates. We hope that it might divulge some long forgotten secrets - once we manage to decipher it."
  SensorReadingsRare2:0 "As they were about to leave the area, our team came across a cabinet of blueprints and research papers. Not only were they supposedly easy to decipher, but our specialists believe some of them might shine a light on some research we had only recently begun working on ourselves."
- SensorReadingsRare2Gestalt:0 "As we looked through the area one last time, one of our maintenance drones came across a cabinet of blueprints and research papers. Not only were they easy to decipher, but we believe they might shine a light on some research we had only recently begun working on ourselves."
+ SensorReadingsRare2Gestalt:0 "As we looked through the area one last time, one of our [root.GetIndividualNamePlural] came across a cabinet of blueprints and research papers. Not only were they easy to decipher, but we believe they might shine a light on some research we had only recently begun working on ourselves."
 
  # Prospectorium Resource Discovery
  specialist.1150.title:0 "Resource Discovery"
@@ -1379,6 +1387,8 @@
  preset_satellite_desc:0 "A Satellite is a Fallen Empire Subject type obligated to pay a significant research tax to their ancient Overlord."
  preset_signatory_desc:0 "A Signatory is a Fallen Empire Subject type with no independent diplomacy from their ancient Overlord."
  preset_thrall_desc:0 "A Thrall is a Fallen Empire Subject type obligated to pay a monthly basic resource tax to their ancient Overlord and with no ability to expand their borders."
+ preset_political_client_desc: "A Political Client is a Fallen Empire Subject type that has to support their ancient Overlord in all matters political."
+ preset_herald_desc: "A Herald is a Fallen Empire Subject type obligated to join in every war their ancient Overlord starts."
  preset_scion_desc:1 "A Scion is a Subject type that was guided through their development by a Fallen Empire Overlord."
  preset_satrapy_desc:0 "A Satrapy is a Khan Subject type obligated to pay their warmongering Overlord both ships and basic resources."
  preset_relic_satrapy_desc:1 "A Satrapy is a Subject type continuing the traditions of the Great Khan that is obligated to provide their Overlord with both ships and resources."

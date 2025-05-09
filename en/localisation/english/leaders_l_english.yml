@@ -37,7 +37,7 @@
  subclass_commander_admiral: "Admiral"
  subclass_commander_admiral_desc: "The stoic presence of a decisive Admiral steels the nerves of the crew as they engage the enemy."
  subclass_commander_admiral_hive: "$subclass_commander_admiral$"
- subclass_commander_admiral_hive_desc: "The presence of a dedicated Admiral drone ensures the fleet remains cohesive as it engages the enemy."
+ subclass_commander_admiral_hive_desc: "The presence of a dedicated Admiral ensures the fleet remains cohesive as it engages the enemy."
  subclass_commander_admiral_machine: "$subclass_commander_admiral$"
  subclass_commander_admiral_machine_desc: "The presence of a dedicated Admiral unit ensures the fleet remains synchronized as it engages the enemy."
  commander_admiral_subclass: "§GVeteran Class focused on fleets and naval combat§!"
@@ -82,7 +82,7 @@
  subclass_official_governor:0 "Industrialist"
  subclass_official_governor_desc:1 "Knowledge and skills in maintaining production quotas or material procurement come naturally to this leader."
  subclass_official_governor_hive:0 "Production Oversight"
- subclass_official_governor_hive_desc:2 "This drone was selectively bred to guide others in the production process."
+ subclass_official_governor_hive_desc:2 "This [owner.GetIndividualName] was selectively bred to guide others in the production process."
  subclass_official_governor_machine:0 "Efficiency Loop"
  subclass_official_governor_machine_desc:1 "This unit is equipped to isolate and delete inefficient production patterns."
 
@@ -97,7 +97,7 @@
  subclass_scientist_explorer:0 "Explorer"
  subclass_scientist_explorer_desc:1 "To explore unknown worlds, catalog new species, and encounter new civilizations: this leader is the embodiment of such ideals."
  subclass_scientist_explorer_hive:0 "Explorer"
- subclass_scientist_explorer_hive_desc:1 "To explore unknown worlds, catalog new species, and encounter new civilizations: the guiding impulse of this intrepid drone."
+ subclass_scientist_explorer_hive_desc:1 "To explore unknown worlds, catalog new species, and encounter new civilizations: the guiding impulse of this intrepid [owner.GetIndividualName]."
  subclass_scientist_explorer_machine:0 "Explorer"
  subclass_scientist_explorer_machine_desc:1 "To explore unknown worlds, catalog new species, and encounter new civilizations: the guiding programming of this intrepid unit."
 
@@ -111,26 +111,26 @@
  subclass_scientist_governor:0 "Analyst"
  subclass_scientist_governor_desc:0 "Being at the forefront of science, conducting experiments, and researching new technologies to better the empire is the main concern of any determined Analyst."
  subclass_scientist_governor_hive:0 "Analyst"
- subclass_scientist_governor_hive_desc:2 "Being at the forefront of science, conducting experiments, and researching new technologies to better the hive are the main concerns of an analyst drone."
+ subclass_scientist_governor_hive_desc:2 "Being at the forefront of science, conducting experiments, and researching new technologies to better the [owner.GetGestaltEntityName] are the main concerns of an analyst [owner.GetIndividualName]."
  subclass_scientist_governor_machine:0 "Analyst"
  subclass_scientist_governor_machine_desc:1 "Being at the forefront of science, conducting experiments, and researching new technologies to improve efficiency are the main concerns for any determined analyst unit."
 
  subclass_scientist_councilor: "Statistician"
  subclass_scientist_councilor_desc: "Statisticians are the driving force behind the management of research teams and projects. Focusing on new technologies, these individuals pursue knowledge relentlessly."
  subclass_scientist_councilor_hive: "Statistician"
- subclass_scientist_councilor_hive_desc: "Statisticians are the main driving force behind the management of research teams and projects. These drones pursue knowledge relentlessly."
+ subclass_scientist_councilor_hive_desc: "Statisticians are the main driving force behind the management of research teams and projects. They pursue knowledge relentlessly."
  subclass_scientist_councilor_machine: "Statistician"
- subclass_scientist_councilor_machine_desc: "Statisticians are the main driving force behind the management of research teams and projects. These units pursue knowledge relentlessly."
+ subclass_scientist_councilor_machine_desc: "$subclass_scientist_councilor_hive_desc$"
 
 
  ### TRAITS
 
- leader_trait_ignore_leader_cap_tt: "$t$Does not count towards Leader Capacity"
+ leader_trait_ignore_leader_cap_tt: "Does not count towards Leader Capacity"
 
  leader_trait_scout:0 "Scout"
  leader_trait_scout_desc:2 "This leader is an expert at reconnaissance, having the technical skill to slip past even the most dangerous entities."
  leader_trait_scout_hive:0 "Scout"
- leader_trait_scout_hive_desc:1 "This drone is specialized for reconnaissance, ensuring we get the most out of long-range starship sensors."
+ leader_trait_scout_hive_desc:1 "This [owner.GetIndividualName] is specialized for reconnaissance, ensuring we get the most out of long-range starship sensors."
  leader_trait_scout_machine:0 "Scout"
  leader_trait_scout_machine_desc:1 "This unit is specialized for reconnaissance, ensuring we get the most out of long-range starship sensors."
 
@@ -146,31 +146,31 @@
  leader_trait_selfcare_expert_desc: "A vat-grown clone with the same skills, personality and demeanor will replace this leader after death."
  leader_trait_selfcare_expert_machine: "Backup Copy"
  leader_trait_selfcare_expert_machine_desc: "A robotic copy with the same skills, personality and demeanor will replace this leader after [Root.GetHeShe] stops functioning."
- leader_trait_selfcare_expert_hive: "Drone Clone"
- leader_trait_selfcare_expert_hive_desc: "A vat-grown drone with the same skills, personality and demeanor will replace this leader after death."
+ leader_trait_selfcare_expert_hive: "[owner.GetIndividualNameCap] Clone"
+ leader_trait_selfcare_expert_hive_desc: "A vat-grown [owner.GetIndividualName] with the same skills, personality and demeanor will replace this leader after death."
  leader_trait_selfcare_expert_effect: "Upon death: generate a copy of the leader with the same skills, level, and half the current age."
 
  leader_trait_midas_touch:0 "Vibrant Storyteller"
  leader_trait_midas_touch_desc:1 "Often off-world, this leader has borne witness to truly amazing, far-flung places. [Root.GetHisHer] exploits inspire the populace, providing valuable insights into rare resources and anomalous occurrences."
- leader_trait_midas_touch_effect:4 "$t$On Researching any Anomaly:\n$tt$All $scientist_plural_with_icon$ gain §G+300§! experience"
+ leader_trait_midas_touch_effect:4 "On Researching any Anomaly:\n$tt$All $scientist_plural_with_icon$ gain §G+300§! experience"
 
  leader_trait_speed_chaser: "Speed Chaser"
  leader_trait_speed_chaser_desc: "Burn bright, die young, and leave a blazing trail for others to follow."
 
- leader_trait_destructive:2 "Controversial Reputation"
- leader_trait_destructive_desc:1 "Many would be happy to see this leader go. Their mere presence hurts our cohesion."
+ leader_trait_destructive: "Destructive"
+ leader_trait_destructive_desc: "This leader neglects the care of spacecraft and machinery, leading to frequent repairs and ongoing maintenance to keep them operational."
 
  leader_trait_collective_wisdom:1 "Detail-Oriented"
  leader_trait_collective_wisdom_desc:2 "A meticulous academic who works slowly, but produces incredible amounts of research."
- leader_trait_collective_wisdom_effect:2 "$TABBED_NEW_LINE$Grants §G+$@trait_collective_wisdom_soc_amt|0$§! $mod_leader_scientists_society_research_produces_add$ while Excavating Archaeology Sites"
- leader_trait_collective_wisdom_ancrel_effect:1 "$TABBED_NEW_LINE$Grants §G+$@trait_collective_wisdom_soc_amt|0$§! $mod_leader_scientists_society_research_produces_add$ and §G+$@trait_collective_wisdom_ma_amt|0$§! £minor_artifacts£ $MINOR_ARTIFACTS$ while Excavating Archaeology Sites"
+ leader_trait_collective_wisdom_effect:2 "Grants §G+$@trait_collective_wisdom_soc_amt|0$§! $mod_leader_scientists_society_research_produces_add$ while Excavating Archaeology Sites"
+ leader_trait_collective_wisdom_ancrel_effect:1 "Grants §G+$@trait_collective_wisdom_soc_amt|0$§! $mod_leader_scientists_society_research_produces_add$ and §G+$@trait_collective_wisdom_ma_amt|0$§! £minor_artifacts£ $MINOR_ARTIFACTS$ while Excavating Archaeology Sites"
  leader_trait_collective_wisdom_2:0 "$leader_trait_collective_wisdom$ II"
  leader_trait_collective_wisdom_2_desc:0 "$leader_trait_collective_wisdom_desc$"
  leader_trait_collective_wisdom_2_effect:1 "+20 £society£ §Y$society_research$§! while excavating a site."
 
- leader_trait_observant:1 "Observer"
+ leader_trait_observant: "Observant"
  leader_trait_observant_desc:2 "A set of self-built, powerful scanners allow this leader to see further and plan the journey ahead."
- leader_trait_observant_hive:1 "Observer"
+ leader_trait_observant_hive: "Observant"
  leader_trait_observant_hive_desc:2 "$leader_trait_observant_desc$"
  leader_trait_observant_machine:0 "Deep Scan"
  leader_trait_observant_machine_desc:2 "$leader_trait_observant_desc$"
@@ -180,7 +180,7 @@
  leader_trait_observant_2_machine:0 "$leader_trait_observant_machine$ II"
  leader_trait_observant_2_machine_desc:0 "$leader_trait_observant_machine_desc$"
 
- leader_trait_resolution_category_focus_favor_intro: "$t$When you Support a Resolution that passes in this Category:\n$tt$"
+ leader_trait_resolution_category_focus_favor_intro: "$t$- When you Support a Resolution that passes in this Category:\n$tt$"
  leader_trait_resolution_category_focus_favor_outro: "Chance to gain 1 §YFavor§! with the Proposing Empire:"
  leader_trait_resolution_category_focus_1_favor_tt: "$leader_trait_resolution_category_focus_favor_intro$$leader_trait_resolution_category_focus_favor_outro$ §G+$@resolution_focus_amt_1|0$%§!"
  leader_trait_resolution_category_focus_2_favor_tt: "$leader_trait_resolution_category_focus_favor_intro$$leader_trait_resolution_category_focus_favor_outro$ §G+$@resolution_focus_amt_2|0$%§!"
@@ -194,7 +194,7 @@
 
  leader_trait_resolution_category_politics_traditions_focus: "Focus: Politics Traditions"
  leader_trait_resolution_category_politics_traditions_focus_desc: "This delegate takes a special interest in all matters related to Politics Traditions."
- leader_trait_resolution_category_politics_traditions_focus_tt: "$GALCOM_EFFECTS_TXT$$TABBED_NEW_LINE$Voting Strength on §YPolitics Traditions§! Resolutions:"
+ leader_trait_resolution_category_politics_traditions_focus_tt: "$GALCOM_EFFECTS_TXT$$TABBED_NEW_LINE$- Voting Strength on §YPolitics Traditions§! Resolutions:"
  leader_trait_resolution_category_politics_traditions_focus_1_tt: "$leader_trait_resolution_category_politics_traditions_focus_tt$ §G+5%§!\n$leader_trait_resolution_category_focus_1_favor_tt$"
  leader_trait_resolution_category_politics_traditions_focus_2_tt: "$leader_trait_resolution_category_politics_traditions_focus_tt$ §G+15%§!\n$leader_trait_resolution_category_focus_2_favor_tt$"
  leader_trait_resolution_category_politics_traditions_focus_3_tt: "$leader_trait_resolution_category_politics_traditions_focus_tt$ §G+25%§!\n$leader_trait_resolution_category_focus_3_favor_tt$"
@@ -234,14 +234,14 @@
 
  leader_trait_resolution_category_sanctions_focus: "Focus: Sanctions"
  leader_trait_resolution_category_sanctions_focus_desc:  "This delegate takes a special interest in all matters related to Galactic Sanctions."
- leader_trait_resolution_category_sanctions_focus_tt: "$GALCOM_EFFECTS_TXT$$TABBED_NEW_LINE$Voting Strength on §YGalactic Sanctions§! Resolutions:"
- leader_trait_resolution_category_sanctions_focus_1_tt: "$leader_trait_resolution_category_sanctions_focus_tt$ §G+5%§!\n$leader_trait_resolution_category_focus_1_favor_tt$"
- leader_trait_resolution_category_sanctions_focus_2_tt: "$leader_trait_resolution_category_sanctions_focus_tt$ §G+15%§!\n$leader_trait_resolution_category_focus_2_favor_tt$"
- leader_trait_resolution_category_sanctions_focus_3_tt: "$leader_trait_resolution_category_sanctions_focus_tt$ §G+25%§!\n$leader_trait_resolution_category_focus_3_favor_tt$"
+ leader_trait_resolution_category_sanctions_focus_tt: "$GALCOM_EFFECTS_TXT$$TABBED_NEW_LINE$- Voting Strength on §YGalactic Sanctions§! Resolutions:"
+ leader_trait_resolution_category_sanctions_focus_1_tt: "$leader_trait_resolution_category_sanctions_focus_tt$ §G+100%§!\n$leader_trait_resolution_category_focus_1_favor_tt$"
+ leader_trait_resolution_category_sanctions_focus_2_tt: "$leader_trait_resolution_category_sanctions_focus_tt$ §G+200%§!\n$leader_trait_resolution_category_focus_2_favor_tt$"
+ leader_trait_resolution_category_sanctions_focus_3_tt: "$leader_trait_resolution_category_sanctions_focus_tt$ §G+500%§!\n$leader_trait_resolution_category_focus_3_favor_tt$"
 
  leader_trait_supporting_voter: "Mutual Support"
  leader_trait_supporting_voter_desc: "This leader is always eager to congratulate others for their success."
- leader_trait_supporting_voter_tt: "£diplo_weight£ §Y[GetGalCommunityOrGalImperium]§! §EEffects§!:$TABBED_NEW_LINE$Support for a passed Resolution grants 1 §YFavor§! and 5 §YTrust§! with the proposing empire"
+ leader_trait_supporting_voter_tt: "£diplo_weight£ §Y[GetGalCommunityOrGalImperium]§! §EEffects§!:$TABBED_NEW_LINE$- Support for a passed Resolution grants 1 §YFavor§! and 5 §YTrust§! with the proposing empire"
 
  MESSAGE_SUPPORTING_VOTER: "Favor Gained"
  MESSAGE_FAVOR_SUPPORTING_VOTER_DESC: "Thanks to the skill of $LEADER$, we have managed to gain a Favor and 5 Trust with the $WHO|Y$."
@@ -275,9 +275,9 @@
 
  leader_trait_ambassador_favor_maker: "Opportunist"
  leader_trait_ambassador_favor_maker_desc: "This sly ambassador is quick to turn every perceived slight into blackmail material."
- leader_trait_ambassador_favor_maker_effect: "$EMPIRE_EFFECTS_TXT$$TABBED_NEW_LINE$Envoys §YImproving Relations§! have a §G0.25%§! chance each month of acquiring a §YFavor§!"
- leader_trait_ambassador_favor_maker_2_effect: "$EMPIRE_EFFECTS_TXT$$TABBED_NEW_LINE$Envoys §YImproving Relations§! have a §G0.50%§! chance each month of acquiring a §YFavor§!"
- leader_trait_ambassador_favor_maker_3_effect: "$EMPIRE_EFFECTS_TXT$$TABBED_NEW_LINE$Envoys §YImproving Relations§! have a §G1%§! chance each month of acquiring a §YFavor§!"
+ leader_trait_ambassador_favor_maker_effect: "$EMPIRE_EFFECTS_TXT$$TABBED_NEW_LINE$- Envoys §YImproving Relations§! have a §G0.25%§! chance each month of acquiring a §YFavor§!"
+ leader_trait_ambassador_favor_maker_2_effect: "$EMPIRE_EFFECTS_TXT$$TABBED_NEW_LINE$- Envoys §YImproving Relations§! have a §G0.50%§! chance each month of acquiring a §YFavor§!"
+ leader_trait_ambassador_favor_maker_3_effect: "$EMPIRE_EFFECTS_TXT$$TABBED_NEW_LINE$- Envoys §YImproving Relations§! have a §G1%§! chance each month of acquiring a §YFavor§!"
 
  leader_trait_ambassador_pact_keeper: "Charmer"
  leader_trait_ambassador_pact_keeper_desc: "Graceful manners help this leader gain favorful conditions when negotiating diplomatic agreements."
@@ -293,7 +293,7 @@
 
  leader_trait_explorer_cloaking_focus: "Confidential Research"
  leader_trait_explorer_cloaking_focus_desc: "Some discoveries are best kept hidden."
- leader_trait_explorer_cloaking_focus_3_tt: "$t$Maximum $SHIP_SHIELD_REDUCTION_CLOAKING$: §Y50%§!"
+ leader_trait_explorer_cloaking_focus_3_tt: "Maximum $SHIP_SHIELD_REDUCTION_CLOAKING$: §Y50%§!"
 
  leader_trait_academic_minor_artifacts_expert: "Antiquarian"
  leader_trait_academic_minor_artifacts_expert_desc: "Where other academics see trash, this scholar sees treasures. This meticulous leader never leaves an archaeological site before examining every scrap."

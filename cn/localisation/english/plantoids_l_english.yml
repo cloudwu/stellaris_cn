@@ -101,7 +101,7 @@
  origin.7500.desc: "我们与太空生物的关系相当独特，但我们并不是唯一尊重它们生存权的人。银河共同体刚刚通过的一项议案将有助于保护这些奇妙生物。"
 
  origin.7510.name: "太空兽群面临的危险"
- origin.7510.desc: "太空生物一直是我们的朋友，但并非所有的银河共同体成员都像我们一样热爱这些太空生物。 他们刚刚通过的决议将我们的朋友——以及我们自己——的生命置于危险之中。"
+ origin.7510.desc: "太空生物一直是我们的朋友，但并非所有的银河共同体成员都像我们一样热爱这些太空生物。他们刚刚通过的决议将我们的朋友——以及我们自己——的生命置于危险之中。"
 
  origin.7600.name: "种瓜得瓜，种豆得豆"
  origin.7600.desc: "我们的敌人认为我们会屈服于他们的力量，就像被风吹倒的芦苇一样。 他们忘记了植物有刺。\n\n我们的士兵睡在他们的土地上。 如果有需要，我们可以将我们的§H外星入侵植物§! 转变为陆军，保护我们的一切，扼杀他们所谓的他们拥有的东西。 我们只需将能量束引导到指定的行星即可开始我们的入侵行动。"
@@ -165,7 +165,7 @@
  origin.7000.b: "我们还有更要紧的事情。"
 
  TIYANKIS_PROJECT: "天凯观测"
- TIYANKIS_PROJECT_DESC: "把一些空间站人员投入到对缇杨奇的研究中，可以让我们进一步了解这些宁静而神秘的太空生物的习性。"
+ TIYANKIS_PROJECT_DESC: "把一些空间站人员投入到对天凯的研究中，可以让我们进一步了解这些宁静而神秘的太空生物的习性。"
 
  origin.7005.name: "$story.501.name$"
  origin.7005.desc: "通过对这些太空朋友进食习性的研究，我们的科学家获得了研究突破。$tech_space_whale_weapon_1_desc$。这项科技毫无疑问是非常有用的。"
@@ -176,6 +176,8 @@
  civic_idyllic_bloom_desc:0 "这个社会一直花费大量时间在改善和爱护环境上，追求为居民们建造一个真正的天堂。"
  civic_hive_idyllic_bloom:0 "菌根理想"
  civic_hive_idyllic_bloom_desc:0 "这个蜂巢思维十分爱护环境，建造一个追求完美协同的天堂。"
+ civic_wilderness_idyllic_bloom: "$civic_hive_idyllic_bloom$"
+ civic_wilderness_idyllic_bloom_desc: "荒野渴望一种真正完美的协同状态，因此授权植物和真菌共生体来改变周围的世界。"
  civic_tooltip_idyllic_bloom_effects:2 "可以在你和你附庸初始物种的理想星球上建造£building£§Y$building_gaiaseeders$§!。\n$building_gaiaseeders_all_desc$\n当解锁更高级的£society£§Y环境改造§!科技后，£building£§Y$building_gaiaseeders$§!也可以在其他类型的行星上建造。"
 
  disables_idyllic_bloom:0 "§R选择这个飞升天赋将使得$civic_idyllic_bloom$理念失效§!"
@@ -187,7 +189,7 @@
  gaia_seeder_bloomed_pops_effect: "盖娅播种器将[This.GetName]成功地转化为$pc_gaia$之后，它会用于让我们的人口进一步适应这颗星球。\n\n§Y$trait_plantoid_bloomed$§!和§Y$trait_plantoid_budding$§!特质的效果提高§G+50%§!。"
  gaia_seeder_bloom_timer_tooltip: "\n§Y[This.GetName]§!的下一次绽放将会在§Y[This.gaia_seeder_bloom_timer]§!发生。"
  MESSAGE_POPS_IDYLLIC_BLOOMED_TITLE: "人口绽放"
- MESSAGE_POPS_IDYLLIC_BLOOMED: "$PLANET|Y$上的盖娅播种器又一次引发了绽放，增加了$VALUE|Y$£pops£人口。"
+ MESSAGE_POPS_IDYLLIC_BLOOMED: "$PLANET|Y$上的盖娅播种器又一次引发了绽放，增加了我们的£pop£人口。"
 
  gaiaseeders_tomb_world:0 "$TRIGGER_FAIL$需要£society£§Y$tech_climate_restoration$§!以在§Y废土世界§!上建造。"
  gaiaseeders_same_climate_start:0 "$TRIGGER_FAIL$需要£society£§Y$tech_terrestrial_sculpting$§!以在其上建造"
@@ -244,11 +246,11 @@
 
  trait_plantoid_phototrophic:0 "光合作用"
  trait_plantoid_phototrophic_desc:0 "§L这个物种需要食物和阳光维生。§!\n"
- TRAIT_PLANTOID_PHOTOTROPHIC_EFFECT:0 "将§Y50%§!$r_food$维护费替换为$r_energy$维护费"
+ TRAIT_PLANTOID_PHOTOTROPHIC_EFFECT:0 "将§Y50%§!$r_food$（或$r_minerals$）维护费替换为$r_energy$维护费"
 
  trait_plantoid_radiotrophic:0 "辐射合成"
  trait_plantoid_radiotrophic_desc:0 "§L这个物种需要食物和低能辐射维生，因此可以在环境最恶劣的星球上生存。§!"
- TRAIT_PLANTOID_RADIOTROPHIC_EFFECT:1 "$TRAIT_PLANTOID_PHOTOTROPHIC_EFFECT$\n§Y废土世界§!上的人口将会移除该£energy£ §Y能源点数§!维护费\n§Y废土世界§!上的人口增长速度§G+10%§!\n废土世界宜居性：§G+10%§!"
+ TRAIT_PLANTOID_RADIOTROPHIC_EFFECT:1 "$TRAIT_PLANTOID_PHOTOTROPHIC_EFFECT$\n    —§Y死寂星球§!上的人口将会移除该£energy£ §Y能量币§!维护费\n    —§Y死寂星球§!上的人口增长速度§G+10%§!\n    —死寂星球宜居性：§G+10%§!"
  trait_harvested_radiotrophic:0 "$trait_plantoid_radiotrophic$"
  trait_harvested_radiotrophic_desc:0 "$trait_plantoid_radiotrophic_desc$"
  trait_lithoid_radiotrophic:0 "$trait_plantoid_radiotrophic$"
@@ -259,8 +261,8 @@
  trait_plantoid_budding_desc:0 "§L除了通常的受精卵或者孢子生殖之外，这个物种还可以进行出芽生殖。§!"
  trait_lithoid_budding:0 "析晶化"
  trait_lithoid_budding_desc:0 "§L除了通常的繁衍方式以外，该物种可以通过复制晶格并使其生长的方式进行自体繁衍。§!"
- TRAIT_PLANTOID_BUDDING_EFFECT:1 "每个具有奴役或更高生活标准的人口产生0.02£mod_pop_growth_speed£§Y$MOD_PLANET_POP_ASSEMBLY_ORGANIC_ADD$§!\n\n该效果可以同其他提供$MOD_PLANET_POP_ASSEMBLY_ORGANIC_ADD$的来源，比如£building£§H$building_clone_vats$§!或者£job_spawning_drone£§H$job_spawning_drone_plural$§!叠加。"
- TRAIT_LITHOID_BUDDING_EFFECT:0 "$TRAIT_PLANTOID_BUDDING_EFFECT$\n\n§H$trait_lithoid$特质§!改变了该特质的效果。"
+ TRAIT_PLANTOID_BUDDING_EFFECT: "每个具有奴役或更高生活标准的$pop_group_unit$£pop£§H人口§!产生2£mod_logistic_growth_mult£§Y$MOD_BONUS_POP_GROWTH$§!。\n\n该效果可以同其他提供$MOD_BONUS_POP_GROWTH$的来源，比如£building£§Y$building_clone_vats$§!或者£job_spawning_drone£§Y$job_spawning_drone_plural$§!叠加。"
+ TRAIT_LITHOID_BUDDING_EFFECT:0 "$TRAIT_PLANTOID_BUDDING_EFFECT$"
 
  trait_advanced_phototrophic:0 "$trait_plantoid_phototrophic$"
  trait_advanced_phototrophic_desc:0 "§L通过先进的基因科技，该物种现在可以部分依靠阳光自养。§!"
@@ -275,30 +277,30 @@
 
  trait_plantoid_bloomed: "盛放"
  trait_plantoid_bloomed_desc: "这个物种受到盖娅播种器的转化效应的影响，在盖娅星球生活时会萌发出互惠的地衣花朵。"
- plantoid_bloomed_trait_tooltip: "在盖娅星球上的效果：\n$t$$mod_planet_jobs_produces_mult$：§G+10%§!\n$t$$MOD_POP_GROWTH_SPEED$：§G+10%§!\n$t$$MOD_POP_AMENITIES_USAGE_MULT$：§G-10%§!\n$t$$MOD_POP_HOUSING_USAGE_MULT$：§G-10%§!\n\n这些效果能被£building£$building_gaiaseeders_4$提升。"
+ plantoid_bloomed_trait_tooltip: "在盖娅星球上的效果：\n$t$$mod_planet_jobs_produces_mult$：§G+10%§!\n$t$$MOD_LOGISTIC_GROWTH_MULT$：§G+10%§!\n$t$$MOD_POP_AMENITIES_USAGE_MULT$：§G-10%§!\n$t$$MOD_POP_HOUSING_USAGE_MULT$：§G-10%§!\n\n这些效果能被£building£$building_gaiaseeders_4$提升。"
 ### Catalytic Processing by Byron Aytoun
 
 # Regular
  civic_catalytic_processing:0 "催化加工"
  civic_catalytic_processing_desc:0 "这个文明的工业专注于研究催化化学，并揭开了使用有机材料建造太空构造的奥秘。"
- civic_tooltip_catalytic_processing_effects:0 "将£job_foundry£§Y$job_foundry_plural$§!岗位替换为£job_catalytic_technician£§Y$job_catalytic_technician_plural$§!岗位。$job_catalytic_technician_effect_desc$。\n£job_chemist£§Y$job_chemist_plural$§!、£job_translucer£§Y$job_translucer_plural$§!和£job_gas_refiner£§Y$job_gas_refiner_plural$§!的$r_minerals$维护费将替换为$r_food$维护费。"
+ civic_tooltip_catalytic_processing_effects:0 "将[foundry.GetIcon]§Y[foundry.GetNamePlural]§!岗位替换为£job_catalytic_technician£§Y$job_catalytic_technician_plural$§!岗位。$job_catalytic_technician_effect_desc$。\n[artisan.GetIcon]§Y[artisan.GetNamePlural]§!的$r_minerals$维护费替换为$r_food$维护费。"
 
 # Corporate
  civic_corporate_catalytic_processing:1 "催化回收"
  civic_corporate_catalytic_processing_desc:0 "这个寰宇企业通过将过量的有机物转化为适合太空建材的先进资源的方式来实现利润最大化。"
- civic_tooltip_catalytic_processing_corporate_effects:0 "$civic_tooltip_catalytic_processing_effects$"
+ civic_tooltip_catalytic_processing_corporate_effects:0 "$civic_tooltip_catalytic_processing_effects$\nThe £building£ §Y$building_private_shipyards$§! $megacorp_civic_branch_office_building_effect$"
 
 # Hive Mind
  civic_hive_catalytic_processing:1 "有机再加工"
  civic_hive_catalytic_processing_desc:0 "这个蜂巢将多余的有机物重新加工成适合太空结构的先进资源。"
  civic_tooltip_hive_catalytic_processing_effects:0 "将£job_alloy_drone£§Y$job_alloy_drone_plural$§!岗位替换为£job_catalytic_drone£§Y$job_catalytic_drone_plural$§!岗位。$job_catalytic_drone_effect_desc$。"
 
- catalytic_gestalt_additional_effects: "\n将£job_chemist_drone£§Y$job_chemist_drone_plural$§!、£job_translucer_drone£§Y$job_translucer_drone_plural$§!、以及£job_gas_refiner_drone£§Y$job_gas_refiner_drone_plural$§!的$r_minerals$维护费替换为$r_food$维护费。"
+ catalytic_gestalt_additional_effects: "\n[artisan_drone.GetIcon]§Y[artisan_drone.GetNamePlural]§!的$r_minerals$维护费替换为$r_food$维护费。"
 
 # Machine Intelligence
  civic_machine_catalytic_processing:1 "有机改造"
  civic_machine_catalytic_processing_desc:0 "这个机械智能将多余的有机物重新加工成适合太空结构的先进资源。"
- civic_tooltip_machine_catalytic_processing_effects:0 "将£job_fabricator£§Y$job_fabricator_plural$§!岗位替换为£job_catalytic_drone£§Y$job_catalytic_drone_plural$§!岗位。$job_catalytic_drone_effect_desc$。"
+ civic_tooltip_machine_catalytic_processing_effects:0 "将£job_catalytic_drone£§Y$job_catalytic_drone_plural$§!岗位替换为[fabricator.GetIcon]§Y[fabricator.GetNamePlural]§!岗位。$job_catalytic_drone_effect_desc$。$catalytic_gestalt_additional_effects$"
 
  civic_tooltip_not_catalytic: "没有['concept_catalytic_civics']类公民性"
  concept_catalytic_civics: "催化加工"
@@ -307,6 +309,7 @@
 # Regular & Corporate
  job_catalytic_technician:0 "催化技师"
  job_catalytic_technician_plural:0 "催化技师"
+ job_catalytic_technician_plural_with_icon: "£job_catalytic_technician£ $job_catalytic_technician_plural$"
  job_catalytic_technician_desc:0 "需要大量训练有素的专业人员将原生有机物转化为坚固耐久的合金，这些合金将成为各种高级建筑必需的原材料。"
  job_catalytic_technician_effect_desc:0 "£job_catalytic_technician£ $job_catalytic_technician_plural$将£food£ §Y$food$§!加工为£alloys£ §Y$alloys$§!"
  mod_job_catalytic_technician_add:0 "$job_catalytic_technician$岗位"
@@ -314,15 +317,17 @@
  mod_job_catalytic_technician_per_pop_short:0 "\n每$VALUE$ £pop£提供§G+1§!个£mod_job_catalytic_technician_add£岗位"
 
 # Gestalt
+ catalytic_drone: "$job_catalytic_drone$"
  job_catalytic_drone:0 "催化子个体"
  job_catalytic_drone_plural:0 "催化子个体"
+ job_catalytic_drone_plural_with_icon: "£job_catalytic_drone£ $job_catalytic_drone_plural$"
  job_catalytic_drone_desc:0 "珍贵的矿物质由高度专业化的催化工蜂加工成牢固的合金以用作舰队发展和高级建筑材料。"
- job_catalytic_drone_effect_desc:0 "£job_catalytic_drone£$job_catalytic_drone_plural$将£food£§Y$food$§!加工为£alloys£ §Y$alloys$§!"
+ job_catalytic_drone_effect_desc:0 "£job_catalytic_drone£§Y$job_catalytic_drone_plural$§!将£food£§Y$food$§!转化为£alloys£ §Y$alloys$§!"
  mod_job_catalytic_drone_add:0 "$job_catalytic_drone$岗位"
  mod_job_catalytic_drone_per_pop:0 "每$VALUE$个人口提供§G+1§!个$job_catalytic_drone$岗位"
  mod_job_catalytic_drone_per_pop_short:0 "\n每$VALUE$£pop£提供§G+1§!个£mod_job_catalytic_drone_add£岗位"
 
  ### Invasive Species trait
  trait_invasive: "入侵物种"
- TRAIT_INVASIVE_EFFECT: "§Y只能选择负面或植物特质§!\n\n宜居性：每选择一个负面特质§G+5%§!\n人口增长速度：每选择一个负面特质§G+5%§!"
+ TRAIT_INVASIVE_EFFECT: "§Y只能选择负面或植物特质§!\n\n    —宜居性：每选择一个负面特质§G+5%§!\n    —人口增长速度：每选择一个负面特质§G+5%§!"
  trait_invasive_desc: "快速繁衍。擅于拓殖。百无一用。"

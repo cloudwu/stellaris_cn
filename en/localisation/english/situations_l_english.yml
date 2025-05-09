@@ -84,7 +84,7 @@
  situation.5.B:0 "We don't have time for this."
  situation.10.name:0 "Surprising Movements"
  situation.10.desc:0 "It appears that the alien labyrinth on [Target.GetName] is attempting to attract our attention. Our [Owner.GetResearchers] are loath to ascribe such agency to a building, but that is the only way to put it: the labyrinth is now no longer situated in a remote mountain pass, but is now instead located a short distance from one of our main settlements. From one day to the next, it inexplicably shifted its location, and the warning signs at the entrance have disappeared - in fact, it now looks... inviting.\n\nWhile some are curious to enter, our [Owner.GetResearchers] urge caution. What is clear, however, is that we can no longer content ourselves with observing the labyrinth - a new approach will be necessary."
- situation.10.desc.gestalt:0 "It appears that the alien labyrinth on [Target.GetName] is attempting to attract our attention. While it seems surprising that a building would possess any form of consciousness, that is the only way to put it: the labyrinth is now no longer situated in a remote mountain pass, but is now instead located a short distance from one of our main drone storage areas. From one day to the next, it inexplicably shifted its location, and the warning signs at the entrance have disappeared - in fact, it now looks... inviting.\n\nThis change will make it harder to prevent any drones from stumbling into it, unless we make an effort to cordon off the area."
+ situation.10.desc.gestalt:0 "It appears that the alien labyrinth on [Target.GetName] is attempting to attract our attention. While it seems surprising that a building would possess any form of consciousness, that is the only way to put it: the labyrinth is now no longer situated in a remote mountain pass, but is now instead located a short distance from one of our main storage areas. From one day to the next, it inexplicably shifted its location, and the warning signs at the entrance have disappeared - in fact, it now looks... inviting.\n\nThis change will make it harder to prevent any [owner.GetIndividualNamePlural] from stumbling into it, unless we make an effort to cordon off the area."
  situation.10.A:0 "Cordon off the area - none may enter!"
  situation.10.A.tooltip:0 "This Approach will cost £energy£ §R10§! §YEnergy§! a month."
  situation.10.B:0 "Perhaps we should investigate it after all."
@@ -94,10 +94,10 @@
  situation.15.desc.base.end:1 "Our [Root.Owner.GetResearchers] are bemused at the changes, and it is becoming ever harder to prevent anyone from entering the structure."
  situation.15.desc.standard:0 "$situation.15.desc.base$ Gone is the sign warning of danger; now, adorable [Owner.Species.GetClass] [Owner.Species.GetSpawnNamePlural] crawl around the entrance, begging for attention, and somehow, the insides give the impression of vast beaches and unending sunrises just beyond sight.\n\n$situation.15.desc.base.end$"
  situation.15.desc.human:0 "$situation.15.desc.base$ Gone is the sign warning of danger; now, adorable kittens crawl around the entrance, mewing for attention, and somehow, the insides give the impression of vast beaches and unending sunrises just beyond sight.\n\n$situation.15.desc.base.end$"
- situation.15.desc.gestalt.base:0 "The labyrinth appears to resent our lack of attention. The entire structure has gradually changed in appearance, morphing from a forbidding edifice into what looks remarkably like a luxurious drone storage facility."
- situation.15.desc.gestalt.base.end:1 "Our [Root.Owner.GetResearchers] are bemused at the changes, and it is becoming ever harder to prevent drones from entering the structure."
+ situation.15.desc.gestalt.base:0 "The labyrinth appears to resent our lack of attention. The entire structure has gradually changed in appearance, morphing from a forbidding edifice into what looks remarkably like a luxurious storage facility."
+ situation.15.desc.gestalt.base.end:1 "Our [Root.Owner.GetResearchers] are bemused at the changes, and it is becoming ever harder to prevent [Root.Owner.GetIndividualNamePlural] from entering the structure."
  situation.15.desc.machine:0 "$situation.15.desc.base$ Gone is the sign warning of danger; now, devices offering high-quality gear oil, scratch removal services, and rapid disk defragmentation aids are in view just inside the entrance.\n\n$situation.15.desc.gestalt.base.end$"
- situation.15.desc.hive:0 "$situation.15.desc.base$ Gone is the sign warning of danger; now, devices offering drones high-quality nutrition, comforting neural vibes, and appendage replacements are in view just inside the entrance.\n\n$situation.15.desc.gestalt.base.end$"
+ situation.15.desc.hive:0 "$situation.15.desc.base$ Gone is the sign warning of danger; now, devices offering [Root.Owner.GetIndividualNamePlural] high-quality nutrition, comforting neural vibes, and appendage replacements are in view just inside the entrance.\n\n$situation.15.desc.gestalt.base.end$"
  situation.15.A:0 "We will have to redouble our efforts."
  situation.15.A.tooltip:0 "Our current Approach will now cost an additional £unity£ §R10§! §YUnity§! per month."
  situation.20.name:0 "A Reward for Obstinance"
@@ -111,7 +111,7 @@
  situation.40.desc:0 "Our communication link to the [Owner.GetResearchers] we sent into the labyrinth was cut off almost as soon as they entered. Nothing was heard for several days as we waited anxiously. As time passed, we resigned ourselves to the loss of our people.\n\nThen, once all hope was lost, they reemerged! However, this has only raised further questions: the [Owner.GetResearchers] claim to have no memory of their stay within the labyrinth, and their recordings of their expedition are horribly garbled. Furthermore, even though they were in the labyrinth for a matter of weeks, they seem to have aged several years!"
  situation.45.name:0 "Continued Perplexity"
  situation.45.desc:0 "Further expeditions into the labyrinth have yielded varying, at times unnerving results. On one occasion, our [Owner.GetResearchers] were in for mere seconds, and could give no answer as to why they turned back so quickly. On another, they were gone for weeks, but came back seemingly younger than they had left, and with year-long gaps in their memories. Some groups returned in a better physical state than they had left; others bore fresh scars of serious injuries.\n\nOver time, the sign at the entrance has changed, too. "Enter at your own risk" became "Danger of death," and finally "WARNING! WARNING! Do not enter the labyrinth. If you do, the planet will explode." In a macabre touch, [Owner.GetAdj] [Owner.Species.GetRemnantNamePlural] adorn the walls - though exactly where they came from is not apparent, since there have been no recent unexplained disappearances.\n\nIt is not clear what further study will bring - as our [Owner.GetResearchers] point out, we have no way to confirm or deny the warning stated on the sign. It is, however, becoming ever harder to find volunteers to enter the labyrinth."
- situation.45.desc.hive:0 "Further expeditions into the labyrinth have yielded varying, at times unnerving results. On one occasion, our [Owner.GetResearchers] were in for mere seconds, and could give no answer as to why they turned back so quickly. On another, they were gone for weeks, but came back with year-long gaps in their memories. Some groups returned in a better physical state than they had left; others bore fresh scars of serious injuries.\n\nOver time, the sign at the entrance has changed, too. "Enter at your own risk" became "Danger of disembodiment," and finally "WARNING! WARNING! Do not enter the labyrinth. If you do, the planet will explode." In a macabre touch, [Owner.GetAdj] [Owner.Species.GetRemnantNamePlural] adorn the walls - though exactly where they came from is not apparent, since there have been no recent unexplained disappearances.\n\nIt is not clear what further study will bring - as our [Owner.GetResearchers] point out, we have no way to confirm or deny the warning stated on the sign. It is, however, becoming ever harder to find drones to enter the labyrinth."
+ situation.45.desc.hive:0 "Further expeditions into the labyrinth have yielded varying, at times unnerving results. On one occasion, our [Owner.GetResearchers] were in for mere seconds, and could give no answer as to why they turned back so quickly. On another, they were gone for weeks, but came back with year-long gaps in their memories. Some groups returned in a better physical state than they had left; others bore fresh scars of serious injuries.\n\nOver time, the sign at the entrance has changed, too. "Enter at your own risk" became "Danger of disembodiment," and finally "WARNING! WARNING! Do not enter the labyrinth. If you do, the planet will explode." In a macabre touch, [Owner.GetAdj] [Owner.Species.GetRemnantNamePlural] adorn the walls - though exactly where they came from is not apparent, since there have been no recent unexplained disappearances.\n\nIt is not clear what further study will bring - as our [Owner.GetResearchers] point out, we have no way to confirm or deny the warning stated on the sign. It is, however, becoming ever harder to find [owner.GetIndividualNamePlural] to enter the labyrinth."
  situation.45.desc.machine:0 "Further expeditions into the labyrinth have yielded varying, at times unnerving results. On one occasion, our [Owner.GetResearchers] were in for mere seconds, and could give no answer as to why they turned back so quickly. On another, they were gone for weeks, and returned with their hard drives wiped. Some groups returned showing less wear and tear on their casing; others sported large dents or missing appendages.\n\nOver time, the sign at the entrance has changed, too. "Enter at your own risk" became "Danger of disassembly," and finally "WARNING! WARNING! Do not enter the labyrinth. If you do, the planet will explode." In a macabre touch, [Owner.GetAdj] [Owner.Species.GetRemnantNamePlural] adorn the walls - though exactly where they came from is not apparent, since there have been no recent unexplained disappearances.\n\nIt is not clear what further study will bring - as our [Owner.GetResearchers] point out, we have no way to confirm or deny the warning stated on the sign. It is, however, becoming ever harder to find drones to enter the labyrinth."
  situation.50.name:0 "A Departure"
  situation.50.desc:0 "Contrary to its warnings, the labyrinth's disappearance did not destroy [Target.GetName]. Instead, its departure was quite unremarkable - from one day to the next, it was simply gone. A message was left behind: "We thank you for so kindly allowing us to study the Beings of your Dimension. It has proven most useful to our... endeavors. Fortunately, you proved sufficiently... fascinating to the Ministry of Extradimensional Security for them to provide us funding for a smooth exit. As a token of our goodwill, we leave you a minor space-time anomaly at the site of our laboratory. We hope it will prove... diverting.""
@@ -122,6 +122,7 @@
 
  d_space_time_anomaly:0 "Space-Time Anomaly"
  d_space_time_anomaly_desc:0 "A remarkably stable space-time anomaly left behind by an extradimensional species which conducted research on the planet. The scientific implications of its existence are, apparently, quite profound."
+ physicist_is_space_time_researcher_tt: "$job_physicist_plural_with_icon$ are converted into $job_dimensional_portal_researcher_plural_with_icon$"
 
  situation_living_snow:0 "Unusual Snow"
  situation_living_snow_type:0 "Unusual Snow"
@@ -189,7 +190,7 @@
  protect_simple_drones:0 "Shield Simple Drones"
  protect_complex_drones:0 "Shield Complex Drones"
  protect_everydrone:0 "Shield All Drones"
- approach_protect_effect:0 "Spend £energy£ Energy to reduce the amount of §Yradiation damage§! you gain each month. (£energy£ §Y[target.energy_cost]§! per £pop£ Pop)"
+ approach_protect_effect:0 "Spend £energy£ §HEnergy§! to reduce the amount of §Yradiation damage§! you gain each month. (£energy£ §Y[target.energy_cost]§! per £pop£ §HPop§!)"
  protect_nobody:0 "No Shielding"
  approach_protect_nobody_effect:0 "Don't shield drones from §Yradiation damage§!."
 
@@ -228,9 +229,9 @@
  situation.200.b:0 "Prioritize shielding complex drones."
  situation.200.c:0 "Ensure all our drones are shielded."
  situation.200.d:0 "Error: unable to allocate budget."
- situation.200.a.tooltip:0 "Spend £energy£§Y[Root.simple_drones_cost]§! to shield £pop£ §Y[Root.simple_drones_counter] Simple Drones§! (£energy£ §Y[Root.energy_cost]§! per £pop£ Pop).\n§YMagnetic Disruption§! modifier added for §Y5 Years§!."
- situation.200.b.tooltip:0 "Spend £energy£§Y[Root.complex_drones_cost]§! to shield £pop£ §Y[Root.complex_drones_counter] Complex Drones§! (£energy£ §Y[Root.energy_cost]§! per £pop£ Pop).\n§YMagnetic Disruption§! modifier added for §Y5 Years§!."
- situation.200.c.tooltip:0 "Spend £energy£§Y[Root.total_drones_cost]§! to shield £pop£ §Y[Root.total_drones_counter] Drones§! (£energy£ §Y[Root.energy_cost]§! per £pop£ Pop).\n§YMagnetic Disruption§! modifier added for §Y5 Years§!."
+ situation.200.a.tooltip:0 "Spend £energy£§Y[Root.simple_drones_cost]§! to shield £pop£ §H[Root.simple_drones_counter_100] Simple Drones§! (£energy£ §Y[Root.energy_cost]§! per £pop£ §HPop§!).\n§YMagnetic Disruption§! modifier added for §Y5 Years§!."
+ situation.200.b.tooltip:0 "Spend £energy£§Y[Root.complex_drones_cost]§! to shield £pop£ §H[Root.complex_drones_counter_100] Complex Drones§! (£energy£ §Y[Root.energy_cost]§! per £pop£ §HPop§!).\n§YMagnetic Disruption§! modifier added for §Y5 Years§!."
+ situation.200.c.tooltip:0 "Spend £energy£§Y[Root.total_drones_cost]§! to shield £pop£ §H[Root.total_drones_counter_100] Drones§! (£energy£ §Y[Root.energy_cost]§! per £pop£ §HPop§!).\n§YMagnetic Disruption§! modifier added for §Y5 Years§!."
  situation.200.d.tooltip:0 "Don't shield drones.\n§YMagnetic Disruption§! modifier added for §Y5 Years§!."
 
  situation.202.name:0 "Geomagnetic Storm"
@@ -255,7 +256,7 @@
 
  situation.210.desc.2:0 "§YError: neural matrices shaking / vibrating / trembling. Possible cause: damaged mannequins dancing madly. Tangling wires.§!"
  situation.210.a.2:0 "Cut their wires."
- situation.210.a.2.tooltip:0 "Kick the £pop£ §YSimple Drones§! off the stage."
+ situation.210.a.2.tooltip:0 "Kick the £pop£ §HSimple Drones§! off the stage."
  situation.210.b.2:0 "Clap, clap, watch them dance."
  situation.210.b.2.tooltip:0 "There are no strings on me."
  situation.210.c.2:0 "Untangle the wires."
@@ -468,7 +469,7 @@
  situation.590.name:0 "Event Horizon"
  situation.590.desc.base:0 "§Y[Target.GetName]§! is crossing the black hole's event horizon. Due to the effects of time dilatation, its afterimage will persist long after the station itself is gone, a memory forever etched in our sensor data."
  situation.590.desc.normal:0 "$situation.590.desc.base$\n\nNot even light can cross the inner orbit of a black hole: the final moments of the station and its personnel will forever remain unknown."
- situation.590.desc.hive:0 "$situation.590.desc.base$\n\nUnless we quickly sever all connection with the drones inside the station, the firsthand experience of the breakdown of all known laws of physics may irreparably damage our shared consciousness."
+ situation.590.desc.hive:0 "$situation.590.desc.base$\n\nUnless we quickly sever all connection with the [owner.GetIndividualNamePlural] inside the station, the firsthand experience of the breakdown of all known laws of physics may irreparably damage our shared consciousness."
  situation.590.desc.machine:0 "Warning: §Y[Target.GetName]§! dangerously close to event horizon. Gravity pull: inescapable. Time dilatation: increasing. Recommended course of action: self-termination of all drones residing inside the station to avoid the collective experience of the breakdown of all known laws of physics.\n\n§RSevere warning:§! chance of irreparable damage to our collective consciousness if the neural link is maintained."
  situation.590.a:1 "Self-terminate drones."
  situation.590.b:1 "We must witness the fall."
@@ -485,7 +486,7 @@
 
  #Bad ending
  situation.592.name:0 "$situation.591.name$"
- situation.592.desc.hive:0 "$situation.591.base.hive$\n\nIt's excruciating. A perennial sense of deja-vu, of forever being a step behind. We are trying to sever connection with the drones, but it will take an infinite amount of time for the process to take effect.\n\nWe have learned much. But at what cost?"
+ situation.592.desc.hive:0 "$situation.591.base.hive$\n\nIt's excruciating. A perennial sense of deja-vu, of forever being a step behind. We are trying to sever connection with the [owner.GetIndividualNamePlural], but it will take an infinite amount of time for the process to take effect.\n\nWe have learned much. But at what cost?"
  situation.592.desc.machine:0 "$situation.591.base.machine$\n\nStatus report: suffering cognitive trauma. Unable to cope with the time dilatation within the black hole.\nAttempting to sever connection with the drones. Estimated completion date: 43504967826056783 years.\n\nConclusion: our decision to maintain connection was instructive but ultimately harmful. Do not repeat under any circumstance."
 
  # Ending 2: escape
@@ -577,6 +578,7 @@
 
  faction_loan_taken:0 "Loan Taken"
  country_defaulted:0 "Empire Defaulted"
+ country_defaulted_wilderness: "$country_defaulted$"
  consumer_goods_rationing:0 "Consumer Good Rationing"
  consumer_goods_rationing_desc:0 "Rationing has been instituted to alleviate our consumer goods shortages."
 
@@ -621,6 +623,7 @@
  deficit.140.B.tooltip:0 "All active Bio-Reactors are disabled. We will no longer have to pay their upkeep."
  deficit.145.desc:0 "Our food debt has become terminal. Sharp cutbacks will be enforced, as we have no choice but to accept bankruptcy and default on our obligations."
  deficit.145.desc.gestalt:0 "Our food has run out. We simply cannot provide any sustenance to the drones and other entities that require it to function. Sharp cutbacks will be enforced, as we have no choice but to make large-scale reallocations to our resource distribution system."
+ deficit.145.desc.wilderness: "That which we perhaps hold most precious - the balance of our natural resources - has failed. Our feed stocks have run out, causing distress throughout the food web. We must now resort to harsh rationing and large-scale reallocation of resources in order to ensure the greatest chance for survival."
 
  deficit.155.name:0 "Consumerism Thwarted"
  deficit.155.desc:0 "The shortages of consumer goods have led to a precipitous drop in living standards within the [Root.Owner.GetName]. Voices of discontent are growing ever stronger, and urgent calls to action are increasingly widespread as it becomes clear that a total breakdown in supplies is only months away."
@@ -632,9 +635,9 @@
  deficit.170.desc:1 "[Owner.GetFinancialAdvisorAgencyCap] is getting increasingly concerned about the alloy shortage befalling our empire. Failure to recoup our expenses will bring widespread disruptions to our industry sector."
  deficit.170.desc.machine:1 "Budget warning: alloy expenditures surpassing expenditures for multiple subsequent months. Failure to resolve the shortage will bring widespread disruptions to our industry sector."
  deficit.170.A:1 "Scrap robots on §Y[robots_planet.GetName]§! for parts."
- deficit.170.A.tooltip:2 "Dismantle all robots on [robots_planet.GetName] (£pop£ §Y[robots_planet.recycled_robots] Drones§!) to gain £alloys£ §Y[robots_planet.total_alloys_gained] Alloys§!"
+ deficit.170.A.tooltip:2 "Dismantle all robots on [robots_planet.GetName] (£pop£ §H[robots_planet.recycled_robots] Drones§!) to gain £alloys£ §Y[robots_planet.total_alloys_gained] Alloys§!"
  deficit.170.B:1 "Consolidate. Recycle. Dismantle droids on §Y[robots_planet.GetName]§!."
- deficit.170.B.tooltip:2 "Dismantle half of the population on [robots_planet.GetName] (£pop£ §Y[robots_planet.recycled_robots] Drones§!) to gain £alloys£ §Y[robots_planet.total_alloys_gained] Alloys§!"
+ deficit.170.B.tooltip:2 "Dismantle half of the population on [robots_planet.GetName] (£pop£ §H[robots_planet.recycled_robots] Drones§!) to gain £alloys£ §Y[robots_planet.total_alloys_gained] Alloys§!"
 
  deficit.175.desc:1 "Having failed to resolve our alloys shortage, we have been forced to declare bankruptcy and default on our debts. [Owner.GetFinancialAdvisorAgencyCap] is drafting a new austerity plan to cut expenses and preventing this situation from ever happening again."
 
@@ -644,6 +647,7 @@
  deficit.185.B:0 "We will have to overexploit our deposits."
  deficit.185.C:0 "We can live with our crystals being rarer."
  deficit.190.desc:0 "Our supply of rare crystals has diminished to the point that even critical systems can no longer be supported. [Owner.GetFinancialAdvisorAgencyCap], which recommends that they be renamed to "rarest crystals", is enforcing harsh cutbacks to return our usage of them to sustainable levels."
+ deficit.190.desc.wilderness: "Our supply of $rare_crystals$ has diminished to the point we can no longer maintain several critical functions. In extreme instances, we risk the lives of our more specialized symbionts who depend on this precious resource.\n\nTo prevent further loss of life and productivity, we must now rely on drastic means to ensure we once again reach equilibrium."
 
  deficit.200.name:1 "Acute Volatile Mote Deficits"
  deficit.200.desc:1 "Due to mismanagement and reckless expenditures, our Volatile Motes reserves have completely evaporated! This strategic resource is widely used in multiple fields, ranging from alloys production to military development. Replenishing our supplies is of paramount importance to ensure the economic prosperity of our empire."
@@ -652,6 +656,7 @@
  deficit.200.C:1 "We can live with our motes becoming more elusive."
  deficit.205.desc:1 "The long-running shortage of volatile motes resulted in an empire-wide economic crash. Unable to repay our deficits, we were forced to declare bankruptcy and forfeit on our debts. [Owner.GetFinancialAdvisorAgencyCap] is drafting a new financial plan, enforcing harsh cutback to rebalance our budget."
  deficit.205.desc.gestalt:0 "The long-running shortage of volatile motes resulted in an empire-wide supply chain crash. It has become clear that we can no longer sustain our use of this material. [Owner.GetFinancialAdvisorAgencyCap] is drafting a new financial plan, enforcing harsh cutback to rebalance our budget."
+ deficit.205.desc.wilderness: "The shortage of $volatile_motes$ among our worlds has caused widespread disruption, not least to those extremophile worker-symbionts whose very lives depend on it. To prevent further loss of life and productivity, we must now institute drastic change to ensure basic continuity of life, in the hopes we might soon regain equilibrium."
 
 
  deficit.215.name:1 "Acute Exotic Gas Deficits"
@@ -713,7 +718,7 @@
  situation.1000.name:0 "[This.GetLeviathanTargetName]"
  situation.1000.desc.small:0 "The day has arrived. Our [Owner.GetSensoryWorkers] were in place and ready to give us a thorough exploration of the §Y[This.GetTrophyName]§!. As the study, began a small portion of our consciousness focused on §Y[Target.GetName]§! to absorb the study of the anomalous item. However, the revelations were not as interesting as we had hoped as we dragged the remains to the [Target.GetPlanetHabitat].\n\nShortly after the process began, we decided to move the study to the center of our cluster on [Target.GetName], where the specialized [Owner.GetSensoryWorkers] will continuously observe it. Hopefully something more will come of it."
  situation.1000.desc.standard:0 "The day has arrived. Our [Owner.GetSensoryWorkers] were in place and ready to give us a thorough exploration of the §Y[This.GetTrophyName]§!. As the study began, a significant portion of our consciousness focused on §Y[Target.GetName]§! to absorb the import of this anomalous item. Productivity in the [Owner.GetName] was reduced by a whole §H0.2%§! for the day.\n\nThe sensory data was then archived deep in our consciousness before being placed in the center of our cluster on [Target.GetName], where the specialized [Owner.GetSensoryWorkers] will continuously observe it."
- situation.1000.desc.large:0 "The day has arrived. A massive amount of [Owner.GetSensoryWorkers] were in place and ready to give us an exacting exploration of the §Y[This.GetTrophyName]§!. As the study began, for a moment, our entire consciousness focused on §Y[Target.GetName]§! to absorb the study of the anomalous item which preoccupied us so. Several drones caught up in precarious situations were injured in the momentary distraction, and a few were even lost. So great was our fascination.\n\nAfter the initial study was complete, we decided to move it to the center of our cluster on [Target.GetName], where the specialized [Owner.GetSensoryWorkers] will continuously observe it. We placed it down, almost reverently, and continue to dedicate a part of our consciousness to the observation."
+ situation.1000.desc.large:0 "The day has arrived. A massive amount of [Owner.GetSensoryWorkers] were in place and ready to give us an exacting exploration of the §Y[This.GetTrophyName]§!. As the study began, for a moment, our entire consciousness focused on §Y[Target.GetName]§! to absorb the study of the anomalous item which preoccupied us so. Several [owner.GetIndividualNamePlural] caught up in precarious situations were injured in the momentary distraction, and a few were even lost. So great was our fascination.\n\nAfter the initial study was complete, we decided to move it to the center of our cluster on [Target.GetName], where the specialized [Owner.GetSensoryWorkers] will continuously observe it. We placed it down, almost reverently, and continue to dedicate a part of our consciousness to the observation."
  situation.1000.a:0 "Disappointing Results."
  situation.1000.b:0 "We will remember the [This.GetLeviathanTargetName]."
  situation.1000.c:1 "In the [This.GetTrophyName], we have found ourselves."
@@ -839,6 +844,7 @@
  situation.1145.desc.base:1 "We are experiencing an unusually inactive solar cycle from [capital_star.GetName]. Sunspots have appeared in unprecedented numbers because of the reduced temperature of our star, leading to a noticeable decrease in solar radiation."
  situation.1145.desc.regular:1 "$situation.1145.desc.base$\n\nInhabitants of [capital_scope.GetName] have taken to stocking up on fission-powered blankets and minimizing trips outside. Hopefully, we will return to warmer times soon."
  situation.1145.desc.gestalt:1 "$situation.1145.desc.base$\n\nWe have allocated more energy to our heating budget and have instructed all drones to huddle closer to each other to preserve heat. We will endure this."
+ situation.1145.desc.wilderness: "$situation.1145.desc.base$\n\nThough this disturbance strikes fear into the core of our shared instincts, knowing the damage our home star has wreaked before: we shall endure. We have allocated more energy for heating our sheltered dwellings, and our symbionts shall learn to huddle closer to each other for warmth."
  situation.1145.a:0 "Crank up our heaters."
 
  situation.1150.name:0 "Great Chill"
@@ -970,6 +976,7 @@
 
  sensor_operatior:0 "sensor operators"
  sensory_drones:0 "sensory drones"
+ sensory_symbionts: "sensory symbionts"
  observation_subroutines:0 "observation subroutines"
 
  parade:0 "parade"

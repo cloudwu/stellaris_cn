@@ -7,22 +7,25 @@
  # Rear sections have a flavor-name followed by the key-word "Bulwark"
  #
  ####################################
- 
+
 
  ####################################
  # Juggernaut
  ####################################
- 
+
  CORE_JUGGERNAUT_SECTION:0 "主宰"
- 
+
  ####################################
  # Titan
  ####################################
- 
+
  TITAN_BOW:0 "泰坦舰首"
  TITAN_MID:0 "泰坦核心"
  TITAN_STERN:1 "泰坦舰尾"
- 
+ BIO_TITAN_BOW: "$TITAN_BOW$"
+ BIO_TITAN_MID: "$TITAN_MID$"
+ BIO_TITAN_STERN: "$TITAN_STERN$"
+
  ####################################
  # Battleship
  ####################################
@@ -52,14 +55,14 @@
 
  ####################################
  # Constructor
- #################################### 
+ ####################################
  CONSTRUCTOR_MID_M1S1:1 "工程船"
  CONSTRUCTOR_MID_S3:0 "开发器核心"
  CONSTRUCTOR_MID_MU1:0 "熔凝器核心"
 
  ####################################
  # Corvette
- #################################### 
+ ####################################
  CORVETTE_MID_M1S1:3 "鱼雷艇"
  CORVETTE_MID_S3:1 "截击舰"
  CORVETTE_MID_S1:1 "位移器核心"
@@ -67,7 +70,7 @@
 
  ####################################
  # Cruiser
- #################################### 
+ ####################################
  CRUISER_BOW_L1:1 "火炮舰首"
  CRUISER_BOW_M1S2:3 "鱼雷舰首"
  CRUISER_BOW_M2:1 "齐射舰首"
@@ -80,7 +83,7 @@
 
  ####################################
  # Destroyer
- #################################### 
+ ####################################
  DESTROYER_BOW_M1S2:1 "炮艇舰首"
  DESTROYER_BOW_S3:1 "警戒舰首"
  DESTROYER_BOW_L1:1 "火炮舰首"
@@ -90,14 +93,14 @@
 
  ####################################
  # Science
- #################################### 
+ ####################################
  SCIENCE_MID_M1S1:1 "科研船"
  SCIENCE_MID_S3:0 "开拓者核心"
  SCIENCE_MID_MU1:0 "洞察力核心"
- 
+
  ####################################
  # Science
- #################################### 
+ ####################################
  LIGHT_MILITARY_STATION_SECTION:0 "轻型基地模块"
  PD_MILITARY_STATION_SECTION:0 "点防御基地模块"
  MEDIUM_MILITARY_STATION_SECTION:0 "中型基地模块"
@@ -112,7 +115,7 @@
 
  ####################################
  # Other
- #################################### 
+ ####################################
  MISSILE_DEFAULT:1 "鱼雷模块"
  DEFAULT_CONSTRUCTION_SECTION:1 "工程船"
  DEFAULT_COLONIZATION_SECTION:1 "殖民船"
@@ -126,4 +129,5 @@
  SHIP_COLOSSUS_SECTION:0 "巨像"
  GHOST_SHIP_SECTION:0 "幽灵船身"
  lost_swarm_adult:0 "蝗灾"
+ lost_swarm_adult_cap: "$lost_swarm_adult$"
  lost_swarm_adult_plural:0 "蝗灾"

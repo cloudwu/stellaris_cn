@@ -319,7 +319,7 @@
  ### Primal Calling
  origin_primal_calling: "原始呼唤"
  origin_primal_calling_desc: "草叶婆娑，夜静如尖啸。猎户之志，冷锐如星光。\n\n这个文明与荒野有着原始的联系。他们把自己看作是当地各种致命野生动物的管家，现在又把目光投向了苍穹。他们善于管理和牧养动物，这种与动物群的联系是根据他们的思潮发展起来的。而这种联系将如何在星系尺度上演变还有待观察。"
- origin_tooltip_primal_calling_effects: "—$HOMEWORLD$$TABBED_NEW_LINE$—$PLANETARY_MODIFIERS$['concept_untamed_wilds_mod']\n—$HOME_SYSTEM$邻近星系有§Y太空兽群§!\n—$AVAILABLE_BUILDINGS$['concept_wildlife_ranch', £building£$wildlife_ranch$]\n—在对§Y太空兽群§!第一次接触时可选择特有的['concept_primal_calling_stance']\n—$ADDITONAL_TECHNOLOGIES_STRING$['technology:tech_genome_mapping', £society_research£$tech_genome_mapping$]\n—$GUARANTEED_RESEARCH_OPTION_STRING$['technology:tech_alien_life_studies', £society£$tech_alien_life_studies$]\n—在与太空兽群进行第一次接触后获得对['technology:tech_gravity_wells', £physics_research£$tech_gravity_wells$]的洞见\n—在捕获太空兽群后获得对['technology:tech_alien_cloning', £society_research£$tech_alien_cloning$]的洞见\n—在克隆太空兽群后获得对['technology:tech_controlled_mutations', £society_research£$tech_controlled_mutations$]的洞见"
+ origin_tooltip_primal_calling_effects: "—$HOMEWORLD$$TABBED_NEW_LINE$—$PLANETARY_MODIFIERS$['concept_untamed_wilds_mod']\n—$HOME_SYSTEM$邻近星系有§Y太空兽群§!\n—$AVAILABLE_BUILDINGS$['concept_wildlife_ranch', £building£$wildlife_ranch$]\n—在对§Y太空兽群§!第一次接触时可选择特有的['concept_primal_calling_stance']\n—$ADDITIONAL_TECHNOLOGIES_STRING$['technology:tech_genome_mapping', £society_research£$tech_genome_mapping$]\n—$GUARANTEED_RESEARCH_OPTION_STRING$['technology:tech_alien_life_studies', £society£$tech_alien_life_studies$]\n—在与太空兽群进行第一次接触后获得对['technology:tech_gravity_wells', £physics_research£$tech_gravity_wells$]的洞见\n—在捕获太空兽群后获得对['technology:tech_alien_cloning', £society_research£$tech_alien_cloning$]的洞见\n—在克隆太空兽群后获得对['technology:tech_controlled_mutations', £society_research£$tech_controlled_mutations$]的洞见。"
  START_SCREEN_PRIMAL_CALLING: "尽管技术进步迅速，但我们仍然与我们星球上的种种野生动物紧紧地联系在一起。在进化的过程中，它们亦师亦友，而我们则是尽责的管家。我们不会过度贪婪过度求取，它们的牺牲受到了我们的尊敬。\n\n在浩瀚无垠的太空中，我们很可能会发现其他野生动物。若是如此，我们就会像对待自己星球的动物一样尊重它们。它们应该会像我们一样认清自己的位置，如此便能共同成就强大。\n\n一种原始的欲望在我们内心燃烧。不管天上有什么，我们都会坚定地面对。"
 
  leader_trait_trophy_hunter: "战利品猎人"
@@ -366,7 +366,7 @@
  grand_archive.1010.desc: "我们在[Root.GetName]的殖民地学会了如何尊重当地§Y泰坦巨兽§!自然领地的边界。\n\n随着我们的边界扩张和土地开发，这些巨大野兽将继续为我们的殖民地带来好处。"
  grand_archive.1010.a: "我们的[owner.GetWranglerJobNamePlural]在这会做得不错的。"
 
- ETHIC_BASED_JOBS_EFFECTS: "[GetCultureWorkerSpiMatOutput][GetCultureWorkerEgalAuthOutput][GetCultureWorkerMilPacOutput][GetCultureWorkerXenoOutput]"
+ ETHIC_BASED_JOBS_EFFECTS: "[GetCivilianSpiMatOutput][GetCivilianEgalAuthOutput][GetCivilianMilPacOutput][GetCivilianXenoOutput]"
 
  job_wrangler: "放牧人"
  job_wrangler_with_icon: "£job_wrangler£ $job_wrangler$"
@@ -465,7 +465,7 @@
  GET_UNIQUE_EDICT: "解锁独特§Y法令§!"
 
  primal_calling_exhibit_modifier: "太空牲口"
- primal_calling_exhibit_modifier_tt: "—$MOD_TRADE_VALUE_MULT$：每个已占用的生态园容量§G+$@primal_calling_exhibit_trade_value|1%$§!\n—$mod_specimens_produces_mult$：每个已占用的生态园容量§G+$@primal_calling_exhibit_specimen|1%$§!"
+ primal_calling_exhibit_modifier_tt: "—$r_trade$：每个已占用的生态园容量§G+$@primal_calling_exhibit_trade_value|1%$§!\n—$mod_specimens_produces_mult$：每个已占用的生态园容量§G+$@primal_calling_exhibit_specimen|1%$§!"
  primal_calling_exhibit_bonus_tt: "[GetWranglerContext]\n—$GET_UNIQUE_EDICT$，['edict:space_fauna_exhibition']"
 
  primal_calling_exploit_modifier: "星系牲口"
@@ -478,7 +478,7 @@
  primal_calling_shelter_bonus_tt: "[GetAnimalHandlerContext]\n—$GET_UNIQUE_EDICT$，['edict:creature_welfare']"
  triggered_opinion_primal_calling_origin: "$primal_calling_shelter_modifier$"
 
- trophy_hunter_common_effect_desc: "—战斗中击杀太空兽群获得$c_dna$以及屠宰回报\n—击杀太空兽群时获得§G$@primal_calling_fauna_kill_unity_reward|0$§!$r_unity$以及收获回报。"
+ trophy_hunter_common_effect_desc: "—战斗中击杀太空兽群获得£genetic_material£['concept_dna']以及屠宰回报\n—击杀太空兽群时获得§G$@primal_calling_fauna_kill_unity_reward|0$§!$r_unity$以及收获回报。"
  primal_calling_hunt_modifier: "巨兽猎守"
  primal_calling_hunt_modifier_tt: "$trophy_hunter_common_effect_desc$"
  primal_calling_hunt_bonus_tt: "[GetTrophyHunterContext]\n—$GET_UNIQUE_EDICT$，['edict:crack_the_whip']"
@@ -775,22 +775,30 @@
 
  voidworms_plural: "虚空虫"
  voidworms_small: "虚空虫蛹"
+ voidworms_small_cap: "$voidworms_small$"
  voidworms_small_plural: "虚空虫蛹"
  voidworms_medium: "虚空幼虫"
+ voidworms_medium_cap: "$voidworms_medium$"
  voidworms_medium_plural: "虚空幼虫"
  voidworms_large: "虚空成虫"
+ voidworms_large_cap: "$voidworms_large$"
  voidworms_large_plural: "虚空成虫"
  voidworms_titan: "虚空三头虫"
+ voidworms_titan_cap: "$voidworms_titan$"
  voidworms_titan_plural: "虚空三头虫"
 
- reanimated_voidworms_small: "复活的$voidworms_small$"
- reanimated_voidworms_small_plural: "复活的$voidworms_small_plural$"
- reanimated_voidworms_medium: "复活的$voidworms_medium$"
- reanimated_voidworms_medium_plural: "复活的$voidworms_medium_plural$"
- reanimated_voidworms_large: "复活的$voidworms_large$"
- reanimated_voidworms_large_plural: "复活的$voidworms_large_plural$"
- reanimated_voidworms_titan: "复活的$voidworms_titan$"
- reanimated_voidworms_titan_plural: "复活的$voidworms_titan_plural$"
+ reanimated_voidworms_small: "$voidworms_small$"
+ reanimated_voidworms_small_cap: "$reanimated_voidworms_small$"
+ reanimated_voidworms_small_plural: "$voidworms_small_plural$"
+ reanimated_voidworms_medium: "$voidworms_medium$"
+ reanimated_voidworms_medium_cap: "$reanimated_voidworms_medium$"
+ reanimated_voidworms_medium_plural: "$voidworms_medium_plural$"
+ reanimated_voidworms_large: "$voidworms_large$"
+ reanimated_voidworms_large_cap: "$reanimated_voidworms_large$"
+ reanimated_voidworms_large_plural: "$voidworms_large_plural$"
+ reanimated_voidworms_titan: "$voidworms_titan$"
+ reanimated_voidworms_titan_cap: "$reanimated_voidworms_titan$"
+ reanimated_voidworms_titan_plural: "$voidworms_titan_plural$"
 
  NAME_Voidworms: "$voidworms_plural$"
  NAME_Voidworms_Starbase: "虚空虫巢穴"
@@ -834,6 +842,8 @@
  voidworms_hunting_buff: "$NAME_Voidworms$猎手"
  voidworms_hunting_buff_tt: "$mod_damage_vs_country_type_voidworms_mult$：§G+$@hunting_buff_damage_vs_voidworms_mult|0%$§!"
  voidworms_hunting_buff_desc: "虚空虫的肉富含营养，每次战斗后都可以进行收获，每支被摧毁的舰队带来§G$@voidworms_hunting_buff_food_reward|0$§! £food£。"
+ grand_archive.2005.a.voidwormhunt: "每摧毁一支虚空虫舰队§G+$@voidworms_hunting_buff_food_reward|0$§!£food£"
+
  voidworm_enzymes: "虚空虫酶"
  voidworm_slayers_modifier: "虚空虫杀手"
  voidworm_slayers_modifier_tt: "$mod_damage_vs_country_type_voidworms_mult$：§G+$@voidworm_slayers_damage_vs_voidworms_mult|0%$§!\n$mod_voidworms_planet_orbital_bombardment_damage$：§G-25%§!\n$mod_country_unity_produces_mult$：§G+10%§!"
@@ -887,7 +897,7 @@
  bombardment_damage_massive: "§R巨大§!"
  bombardment_voidworm_invasion_desc_common: "$bombardment_voidworm_invasion$将摧毁人群，创建新的虚空虫幼体。\n—对§Y陆军§!造成§Y中度§!伤害\n—对§Y行星§!造成[GetVoidwormFleetBombardmentDamageIntensity]伤害，直到§Y25%§!破坏度\n—对§Y人口§!造成§Y中度§!伤害"
  bombardment_voidworm_invasion: "虚空虫孢子"
- bombardment_voidworm_invasion_desc: "$bombardment_voidworm_invasion_desc_common$\n—§R不会§!消灭最后的§Y$MIN_POPS$§!个人口"
+ bombardment_voidworm_invasion_desc: "$bombardment_voidworm_invasion_desc_common$\n—§R不会§!消灭最后的§Y$MIN_POPS$§!£pop£§H人口§!"
  bombardment_voidworm_invasion_crisis: "$bombardment_voidworm_invasion$（天灾）"
  bombardment_voidworm_invasion_crisis_desc: "$bombardment_voidworm_invasion_desc_common$"
  bombardment_frenzied_voidworm_invasion: "变异$bombardment_voidworm_invasion$"
@@ -901,7 +911,7 @@
  grand_archive.2195.desc.common_1: "[from.GetName]正在遭受攻击。\n\n一大群虚空虫正在殖民地轨道上，用寄生囊肿进行轰炸。"
  grand_archive.2195.desc.common_2: "生物分析表明，每窝虚空虫都拥有有限数量的囊肿，它们很可能在囊肿耗尽后离开。但在那之前，我们会遭受严重的人口损失。"
  grand_archive.2195.desc.default: "$grand_archive.2195.desc.common_1$\n\n每个囊肿都包含一个剧毒孢子，对我们的殖民者以及所有生命都极其致命。一旦被摄入，它会迅速发育成为一只若虫，并会暴力地从宿主体内破茧而出，彻底摧毁宿主。这些若虫体内有一个压缩气体囊，使它们能够上升到高层大气，在那里它们会本能地将自己推进到预定的目的地。\n\n$grand_archive.2195.desc.common_2$"
- grand_archive.2195.desc.rocks: "$grand_archive.2195.desc.common_1$\n\n每个囊肿都包含一个剧毒孢子，对所有本地动物群都极其致命。一旦被摄入，它会迅速发育成为一只若虫，并会暴力地从宿主体内破茧而出，彻底摧毁宿主。这些若虫通常以小行星为食，以获取珍贵的金属，但它们也会伺机捕食我们脆弱的[this.GetPopTypeNamePlural]。每个幼虫体内都含有一个压缩气体囊，使它们能够上升到高层大气，并本能地将自己推进到预定的目的地。\n\n$grand_archive.2195.desc.common_2$"
+ grand_archive.2195.desc.rocks: "$grand_archive.2195.desc.common_1$\n\n每个囊肿都包含一个剧毒孢子，对所有本地动物群都极其致命。一旦被摄入，它会迅速发育成为一只若虫，并会暴力地从宿主体内破茧而出，彻底摧毁宿主。这些若虫通常以小行星为食，以获取珍贵的金属，但它们也会伺机捕食我们脆弱的[this.GetColonistPlural]。每个幼虫体内都含有一个压缩气体囊，使它们能够上升到高层大气，并本能地将自己推进到预定的目的地。\n\n$grand_archive.2195.desc.common_2$"
  grand_archive.2195.a: "令人不安。"
  grand_archive.2195.a.homicidal: "他们会灭亡的。"
 
@@ -956,11 +966,11 @@
  grand_archive.2405.desc.default: "我们持之以恒抵御虚空虫威胁的准备工作，激励了新一代的指挥官。[this.GetName]的经验丰富的公民选择贡献他们的才能，以消除这个银河的威胁。"
  grand_archive.2405.desc.gestalt: "我们针对虚空虫威胁进行了持续的准备工作，使我们能够生产出额外的指挥官级领袖节点。由于我们为舰队提供额外的支援，这些战斗型节点能够获得更多资源，以促进其快速融入我们的军事行动之中。"
  grand_archive.2405.a: "鼓舞人心。"
- grand_archive.2405.tt: "刷新领袖池，并添加3位额外指挥官，每位指挥官额外提升一级。"
+ grand_archive.2405.tt: "刷新§H$RECRUITABLE_LEADERS$§!，并添加3位额外§H指挥官§!，每位指挥官额外提升一级。"
 
  grand_archive.2410.name: "前线的新发明"
  grand_archive.2410.desc.default: "驻扎在[random_shipyard.GetName]的工程师开发了一种新的舰船防御概念蓝图。[random_shipyard.leader.GetHeSheCap]在对抗虚空虫的战斗中进行例行维修时，[random_shipyard.leader.GetHeShe]灵机一动，想出了一个可以提高舰船坚固性的新组件。该想法提交给我们的研究部门后，我们认为它具有巨大的潜力。"
- grand_archive.2410.desc.gestalt: "驻扎在[random_shipyard.GetName]的维修子个体激发了新的研究观点，能够改进舰船防御。在例行维修期间的一次误操作中，该子个体使用了一种奇特的材料和方法组合，创造了一种新的防护组件。经过对研究可能性进行论证，这一意外发现经过改进后可以展现出巨大潜力。"
+ grand_archive.2410.desc.gestalt: "驻扎在[random_shipyard.GetName]的维修[root.GetIndividualName]激发了新的研究观点，能够改进舰船防御。在例行维修期间的一次误操作中，该[root.GetIndividualName]使用了一种奇特的材料和方法组合，创造了一种新的防护组件。经过对研究可能性进行论证，这一意外发现经过改进后可以展现出巨大潜力。"
 
  grand_archive.2420.name: "[infected_leader.GetName]受染"
  grand_archive.2420.desc: "在履行[infected_leader.GetHisHer]的职责期间，[infected_leader.GetName]感染了活跃的虚空虫孢子。新的若虫很快就会出现并摧毁它们的宿主。\n\n这可能是一场徒劳的战斗，但医务人员推测，在幼虫完全融入[infected_leader.GetHisHer]的神经系统之前，可能可以将其取出。这是一场风险很大的手术，但[infected_leader.GetName]似乎愿意让我们尝试。"
@@ -990,9 +1000,9 @@
 
  grand_archive.2445.name: "早期测试"
  grand_archive.2445.desc.common: "我们对虚空虫瘟疫的理解正在提高，并且已经开发出治愈方法的基础。"
- grand_archive.2445.desc.default: "$grand_archive.2445.desc.common$然而，如果能在[owner_main_species.GetName]参与者身上进行早期活体测试，我们的研究进度将会快得多。\n\n撇开伦理考量不谈，为了更大的利益，绕过某些安全措施或许是明智之举。"
- grand_archive.2445.desc.gestalt: "$grand_archive.2445.desc.common$然而，测试过程非常耗时，主要原因是需要不断地将未分配的子个体作为测试对象。如果子个体可以简单地重新分配成为测试对象，那么治愈方案的开发速度将会加快。\n\n然而，这种做法会对整个集体造成其他影响，重新分配的无人机将导致其先前角色陷入混乱。"
- grand_archive.2445.a.default: "对毫无察觉的[owner_main_species.GetName]进行测试。"
+ grand_archive.2445.desc.default: "$grand_archive.2445.desc.common$然而，如果能在[owner_main_species.GetAdj]参与者身上进行早期活体测试，我们的研究进度将会快得多。\n\n撇开伦理考量不谈，为了更大的利益，绕过某些安全措施或许是明智之举。"
+ grand_archive.2445.desc.gestalt: "$grand_archive.2445.desc.common$然而，测试过程非常耗时，主要原因是需要不断地将未分配的[root.GetIndividualNamePlural]作为测试对象。如果[root.GetIndividualNamePlural]可以简单地重新分配成为测试对象，那么治愈方案的开发速度将会加快。\n\n然而，这种做法会对整个集体造成其他影响，重新分配的[root.GetIndividualNamePlural]将导致其先前角色陷入混乱。"
+ grand_archive.2445.a.default: "对毫无察觉的[owner_main_species.GetNamePlural]进行测试。"
  grand_archive.2445.a.gestalt: "优先测试。"
  grand_archive.2445.b.default: "仅对志愿者进行测试。"
  grand_archive.2445.b.gestalt: "正常继续测试。"
@@ -1032,18 +1042,24 @@
  ##############
 
  cutholoids_hatchling: "岩居兽幼体"
+ cutholoids_hatchling_cap: "$cutholoids_hatchling$"
  cutholoids_hatchling_plural: "岩居兽幼体"
  cutholoids_juvenile: "青年岩居兽"
+ cutholoids_juvenile_cap: "$cutholoids_juvenile$"
  cutholoids_juvenile_plural: "青年岩居兽"
  cutholoids: "岩居兽"
+ cutholoids_cap: "$cutholoids$"
  cutholoids_plural: "岩居兽"
 
- reanimated_cutholoids_hatchling: "复活的$cutholoids_hatchling$"
- reanimated_cutholoids_hatchling_plural: "复活的$cutholoids_hatchling_plural$"
- reanimated_cutholoids_juvenile: "复活的$cutholoids_juvenile$"
- reanimated_cutholoids_juvenile_plural: "复活的$cutholoids_juvenile_plural$"
- reanimated_cutholoids: "复活的$cutholoids$"
- reanimated_cutholoids_plural: "复活的$cutholoids_plural$"
+ reanimated_cutholoids_hatchling: "$cutholoids_hatchling$"
+ reanimated_cutholoids_hatchling_cap: "$reanimated_cutholoids_hatchling$"
+ reanimated_cutholoids_hatchling_plural: "$cutholoids_hatchling_plural$"
+ reanimated_cutholoids_juvenile: "$cutholoids_juvenile$"
+ reanimated_cutholoids_juvenile_cap: "$reanimated_cutholoids_juvenile$"
+ reanimated_cutholoids_juvenile_plural: "$cutholoids_juvenile_plural$"
+ reanimated_cutholoids: "$cutholoids$"
+ reanimated_cutholoids_cap: "$reanimated_cutholoids$"
+ reanimated_cutholoids_plural: "$cutholoids_plural$"
 
  NAME_Cutholoids_Hatchling: "$cutholoids_hatchling$"
  NAME_Cutholoids_Juvenile: "$cutholoids_juvenile$"
@@ -1117,6 +1133,7 @@
 
  cutholoids_hunting_buff: "岩居兽猎人"
  cutholoids_hunting_buff_desc: "岩居兽富有矿物的外壳在战斗后将进行打捞，每击败一支舰队可获得£minerals£ §G$@cutholoids_hunting_buff_mineral_reward|0$§!。"
+ grand_archive.2900.b.cutholoidhunt: "每摧毁一支虚空虫舰队§G+$@cutholoids_hunting_buff_mineral_reward|0$§!£minerals£"
 
  mod_damage_vs_country_type_cutholoids_mult: "对岩居兽的伤害"
  RESEARCH_CUTHOLOIDS_PROJECT: "岩居兽研究"
@@ -1157,8 +1174,8 @@
 ###########
 
  REMOVE_SPECIMEN_EFFECT: "移除['concept_specimen']$NAME|Y$"
- GIVE_DNA_EFFECT: "给予$RARITY$$CATEGORY$$c_dna$"
- REFRESH_LEADER_POOL_EFFECT: "刷新领袖池"
+ GIVE_DNA_EFFECT: "给予$RARITY$$CATEGORY$£genetic_material£['concept_dna']"
+ REFRESH_LEADER_POOL_EFFECT: "刷新$RECRUITABLE_LEADERS$"
  CULL_VIVARIUM_FAUNA_EFFECT: "屠宰我们生态园中的兽群所获得的资源：$RESOURCES$"
  UNLOCK_EXHIBIT_EFFECT: "进行展览"
 
@@ -1269,13 +1286,13 @@
  CULL: "屠宰"
  CULL_SPECIMEN: "屠宰标本？"
  CULL_SPECIMEN_DESC: "会杀死选中的生物。\n你将获得：\n$CULL_RESULT$"
- CULL_SPECIMEN_TT: "对捕获以及饲养的§Y太空兽群§!进行安乐死并进一步进行解剖，我们可以获得研究、物料以及$y_dna$。"
+ CULL_SPECIMEN_TT: "对捕获以及饲养的§Y太空兽群§!进行安乐死并进一步进行解剖，我们可以获得研究、物料以及£genetic_material£§Y$genetic_material$§!。"
  AUTO_CULL: "自动屠宰"
  AUTO_CULL_SETTINGS: "自动屠宰优先级"
  AUTO_CULL_TT: "当§Y$vivarium$§!容量已满时，选择哪些§Y太空兽群§!物种将被自动屠宰以获取资源。"
  AUTO_CULL_KEEP_BELOW_REQS: "不屠宰以下正在饲育的珍稀物种"
  UNLOCKED_DNA: "$RARITY$ $NAME$ £genetic_material£"
- UNLOCKED_DNA_TT: "$c_dna$让我们能够以£society£ ['technology:tech_alien_cloning']克隆太空有机生命作为军事舰队。更高等级的太空兽群拥有更强的战斗属性，以及更多的屠宰回报。"
+ UNLOCKED_DNA_TT: "£genetic_material£['concept_dna']让我们能够以£society£ ['technology:tech_alien_cloning']克隆太空有机生命作为军事舰队。更高等级的太空兽群拥有更强的战斗属性，以及更多的屠宰回报。"
  CULLING_STAT_LABEL: "屠宰："
  RARITY_TYPE_SUFFIX: "（$RARITY$）"
 
@@ -1289,11 +1306,11 @@
  CRITTER_CATEGORY_CULL_REWARD_TT: "屠宰回报：$RESOURCE|H$"
 
  MESSAGE_NEW_GENETIC_MATERIAL_TITLE: "获得新基因物质"
- MESSAGE_NEW_GENETIC_MATERIAL_DESC: "我们获得了$RARITY$$CATEGORY$$w_dna$。"
+ MESSAGE_NEW_GENETIC_MATERIAL_DESC: "我们获得了$RARITY$$CATEGORY$£genetic_material£$genetic_material$。"
  VIVARIUM_CRITTER_NOTIFICATION_ENTRY: " - $RARITY$ §Y$CATEGORY$§!"
 
  CULLING_RESOURCES_GAINED: "获得资源："
- RESOURCES_GAINED_TT: "屠宰§Y太空兽群§!用于获得研究、物料，还能获得$y_dna$用于在§Y孵化器§!中将其进行克隆。"
+ RESOURCES_GAINED_TT: "屠宰§Y太空兽群§!用于获得研究、物料，还能获得£genetic_material£§Y$genetic_material$§!用于在§Y孵化器§!中将其进行克隆。"
  LAST_YEAR_SUMMARY: "上一年：$RESOURCES$"
  LAST_MONTH_SUMMARY: "上个月：$RESOURCES$"
  LAST_YEAR_CULLED_TT: "过去一年从屠宰§Y太空兽群§!中获得的资源总量。"
@@ -1306,7 +1323,7 @@
 ############
  sm_hatchery: "孵化器"
  sm_hatchery_plural: "孵化器"
- sm_hatchery_desc: "孵化器能够孵化我们收集的§Y太空兽群§!$c_dna$，并在我们的控制下培育出可存活的新样本。通过使用['technology:tech_gravity_wells', £physics£$tech_gravity_wells$]，我们可以收集到更高级的基因样本，进而培育出更强大的生物。"
+ sm_hatchery_desc: "孵化器能够孵化我们收集的§Y太空兽群§!£genetic_material£['concept_dna']，并在我们的控制下培育出可存活的新样本。通过使用['technology:tech_gravity_wells', £physics£$tech_gravity_wells$]，我们可以收集到更高级的基因样本，进而培育出更强大的生物。"
  shatchery: "$sm_hatchery$"
 
  sm_orbital_ring_hatchery: "轨道孵化场"
@@ -1319,7 +1336,7 @@
  OUTLINER_STARBASE_HATCHERY_CONSTRUCTION: "孵化器克隆"
  STARBASE_CRITTERS: "生物"
  HATCHERY_QUEUE: "$sm_hatchery$队列"
- STARBASE_OPEN_CREATURE_DESIGNS: "打开生物设计器"
+ STARBASE_OPEN_CREATURE_DESIGNS: "生物设计器"
 
 #############
 # Beastport #
@@ -1382,7 +1399,7 @@
 
  r_flowmetal_alloy: "流金属合金"
  r_flowmetal_alloy_desc: "这种自我复制的材料可以增强它接触到的任何金属的化学键。将流金属整合到我们的组装流程中可以极大地提高大型机器的生产效率。"
- flowmetal_alloy_active_effect_tt: "在你的首都创建3个机器人人口。"
+ flowmetal_alloy_active_effect_tt: "在你的首都创建§G300§!§Y机器人£pop£人口§!。"
 
  r_crystallinus_diffuser: "晶华喷雾"
  r_crystallinus_diffuser_desc: "一种能够将合成晶体转化为极强效的性能增强药物的机器。其产生的化学物质在最纯净的形式下具有生物挥发性，并可能导致一小部分使用者出现多器官功能衰竭。"
@@ -1861,24 +1878,24 @@
  civic_galactic_curators_effects: "$civic_galactic_curators_effects_common$"
  civic_corporate_galactic_curators: "文物专长"
  civic_corporate_galactic_curators_desc: "古董和收藏品可以赚钱，这个社会比谁都清楚这一点。这些物质投机专家现在正向深空中寻求投资机会。"
- civic_corporate_galactic_curators_effects: "$civic_galactic_curators_effects_common$"
+ civic_corporate_galactic_curators_effects: "$civic_galactic_curators_effects_common$\n- The £building£ §Y$building_public_relations_office$§! $megacorp_civic_branch_office_building_effect$"
  civic_hive_galactic_curators: "保管网络"
  civic_hive_galactic_curators_desc: "这个集体已经演化出了一种去获取、保留和维持的压倒性冲动。这种行为在过去帮助他们生存了下来，现在却驱使他们把收集到的奇珍异货看得无比重要。"
  civic_hive_galactic_curators_effects: "$civic_galactic_curators_effects_common$"
  civic_machine_galactic_curators: "保管网络"
  civic_machine_galactic_curators_desc: "这个机械智能的源代码中有一个核心指令：收集并保存。"
  civic_machine_galactic_curators_effects: "$civic_galactic_curators_effects_common$"
- civic_galactic_curators_effects_common: "—$GUARANTEED_RESEARCH_OPTION_STRING$['technology:tech_galactic_archivism', £society_research£$tech_galactic_archivism$]\n—初始['concept_specimen', 标本]：每个收藏分类§0$common$§!种\n—每次找到§Y标本§!或完成一处§Y$ARCHAEOLOGICAL_SITE$§!时获得$r_unity$\n—从§Y典藏研究所太空城邦§!购买：§G$@galactic_curators_curator_enclave_purchase_cost|%0$§!\n—解锁§Y$edict_decentralized_research$§!§H法令§!，提升§Y研究站§!产出但降低£job_researcher£§Y研究者§!产出。\n—§I$grand_archive$§!建造花费：§G$@galactic_curators_grand_archive_cost_mult|%0$§!"
+ civic_galactic_curators_effects_common: "—$GUARANTEED_RESEARCH_OPTION_STRING$['technology:tech_galactic_archivism', £society_research£$tech_galactic_archivism$]\n—初始['concept_specimen', 标本]：每个收藏分类§0$common$§!种\n—每次找到§H标本§!或完成一处§H$ARCHAEOLOGICAL_SITE$§!时获得$r_unity$\n—从§H典藏研究所太空城邦§!购买：§G$@galactic_curators_curator_enclave_purchase_cost|%0$§!\n—解锁§H$edict_decentralized_research$§!法令，提升§H研究站§!产出但降低£job_researcher£§H研究者§!产出。\n—§H$grand_archive$§!建造花费：§G$@galactic_curators_grand_archive_cost_mult|%0$§!"
  edict_decentralized_research: "分布式研究"
  edict_decentralized_research_desc: "最伟大的知识存在于我们文明之外。放眼整个银河我们才能更全面地了解我们自己。"
  MOD_COUNTRY_SPECIMEN_ACQUIRE_CHANCE_MULT: "增加发现标本的几率"
 
  councilor_galactic_curators: "至高典藏研究所"
  councilor_galactic_curators_desc: "至高典藏研究所负责监管所有标本瓶的保存质量。"
- councilor_galactic_curators_custom_modifier_desc: "—[GetCultureWorkerPluralWithIcon]产出的£unity£$unity$：§G+$@councilor_galactic_curators_unity$§!"
+ councilor_galactic_curators_custom_modifier_desc: "—每$pop_group_unit$[GetCultureWorkerPluralWithIcon]产出的£unity£$unity$：§G+$@councilor_galactic_curators_unity$§!"
  councilor_corporate_galactic_curators: "首席策展官"
  councilor_corporate_galactic_curators_desc: "首席策展官负责管理标本的展览和交易。"
- councilor_corporate_galactic_curators_custom_modifier_desc: "—[GetCultureWorkerPluralWithIcon]产出的$TRADE_VALUE_WITH_ICON$：§G+$@councilor_corporate_galactic_curators_trade_value$§!"
+ councilor_corporate_galactic_curators_custom_modifier_desc: "—每$pop_group_unit$[GetCultureWorkerPluralWithIcon]产出的$TRADE_VALUE_WITH_ICON$：§G+$@councilor_corporate_galactic_curators_trade_value$§!"
 
  civic_beastmasters: "驯兽师"
  civic_beastmasters_desc: "在一个为太空变形虫提供食物的星系中诞生，这个社会已经达到了完全的技术成熟，对这些生物的生命周期有着深刻的了解。他们现在致力于繁育、培养并最终克隆这些生物，以实现互惠互利。"
@@ -1886,12 +1903,15 @@
  civic_machine_beastmasters_desc: "该机械智能直接与它们的母星系中的太空有机体交互，从而将这些强大的生物整合到它的核心功能中，产生一种互利的关系。"
  civic_hive_beastmasters: "荒野蜂群"
  civic_hive_beastmasters_desc: "这个蜂巢思维是一个拥有高度适应力的群体，他们已经演化出了与母星系中的太空生物有机体之间的共生关系。尽管思想不同，但他们会一起努力实现共同的目标。"
+ civic_wilderness_beastmasters: "$civic_hive_beastmasters$"
+ civic_wilderness_beastmasters_desc: "该荒野敞开自我，以与其母星系的太空生物共生。尽管并未完全整合进共生智能内，这些有机生命也会为共同目标通力协作。"
  civic_corporate_beastmasters: "太空牧场"
  civic_corporate_beastmasters_desc: "这个寰宇企业最初只是一个动物牧场的精英工会，现在已经发展出了在母星系养护太空生物的科技。"
 
- civic_beastmasters_common_effects_1: "—$ADDITONAL_TECHNOLOGIES_STRING$$TABBED_NEW_LINE$—['technology:tech_gravity_wells', £physics£$tech_gravity_wells$]$TABBED_NEW_LINE$—['technology:tech_alien_cloning', £society£$tech_alien_cloning$]\n—$AVAILABLE_STARBASE_BUILDINGS$['concept_beastport', 兽坞]\n—$HOME_SYSTEM$起始拥有['concept_beastport']\n—初始护卫舰替换为太空变形虫"
- civic_beastmasters_common_effects_2: "—起始$c_dna$：$TABBED_NEW_LINE$—§0普通§!太空变形虫"
+ civic_beastmasters_common_effects_1: "—$ADDITIONAL_TECHNOLOGIES_STRING$$TABBED_NEW_LINE$—['technology:tech_gravity_wells', £physics£$tech_gravity_wells$]$TABBED_NEW_LINE$—['technology:tech_alien_cloning', £society£$tech_alien_cloning$]\n—$AVAILABLE_STARBASE_BUILDINGS$['concept_beastport', 兽坞]\n—$HOME_SYSTEM$起始拥有['concept_beastport']\n—初始§H护卫舰§!替换为§H太空变形虫§!"
+ civic_beastmasters_common_effects_2: "—起始£genetic_material£['concept_dna']：$TABBED_NEW_LINE$—§0普通§!太空变形虫"
  civic_beastmasters_effects: "$civic_beastmasters_common_effects_1$\n$civic_beastmasters_common_effects_2$"
+  civic_corporate_beastmasters_effects: "$civic_beastmasters_common_effects_1$\n$civic_beastmasters_common_effects_2$\n- The £building£ §Y$building_food_conglomerate$§! $megacorp_civic_branch_office_building_effect$"
  civic_cordyceptic_beastmasters_effects: "$civic_beastmasters_common_effects_1$$TABBED_NEW_LINE$—将使用§Y克隆太空变形虫§!而非§Y不死太空变形虫§!开局\n$civic_beastmasters_common_effects_2$"
 
  councilor_beastmasters: "驯兽领主"
@@ -2173,7 +2193,7 @@
 
  TREASURE_HUNTERS_EXHIBITION_PROJECT: "展览强化蓝图"
  TREASURE_HUNTERS_EXHIBITION_PROJECT_DESC: "除了乙特人标本，我们还发现了一个用于保存标本的复杂展示柜的先进设计。\n\n研究该蓝图中使用的技术可能会帮助未来的保护和展览工作。"
- TREASURE_HUNTERS_EXHIBITION_PROJECT_TOOLTIP: "使用§Y工程船§!围绕一颗具有25或以上§Y$pops_with_icon$§!的行星建造一座§Y博物天枢§!。\n需要：§H£society_research£$tech_galactic_archivism$§!。"
+ TREASURE_HUNTERS_EXHIBITION_PROJECT_TOOLTIP: "使用§Y工程船§!围绕一颗具有2.5K或以上£pop£§H人口§!的行星建造一座§Y博物天枢§!。\n需要：§H£society_research£$tech_galactic_archivism$§!。"
 
  grand_archive.8080.name: "展览强化"
  grand_archive.8080.desc: "经过对乙特蓝图的仔细分析，我们建造了一个先进的收纳单元，其大气监测精度可达原子级别。这将使策展员能够高度详细地监控珍贵乙特人标本的大气条件，并检测任何潜在腐烂的预警信号。它将永远保持原样。\n\n我们可以将这些技术应用于进一步改善我们收藏中所有物品的储存条件。"
@@ -2189,7 +2209,7 @@
  d_abandoned_black_needle_base: "废弃的黑针基地"
  d_abandoned_black_needle_base_desc: "这个基地曾经被黑针海盗用作前哨站和藏匿通缉犯及赃物。"
  d_abandoned_black_needle_base_naval_cap: "士兵岗位贡献的军舰容量：§G+$@abandoned_black_needle_base_naval_cap_from_soldier_job|0$§!"
- d_abandoned_black_needle_base_naval_cap_short: "£job_soldier£岗位提供的£mod_country_naval_cap_add£：§G+$@abandoned_black_needle_base_naval_cap_from_soldier_job|0$§!"
+ d_abandoned_black_needle_base_naval_cap_short: "[soldier.GetIcon]岗位提供的£mod_country_naval_cap_add£：§G+$@abandoned_black_needle_base_naval_cap_from_soldier_job|0$§!"
 
  black_needle_base_system_poi: "跟随星图"
  black_needle_base_system_poi_desc: "§H$celestial_chart$§!揭示了一个隐藏星系，[Prev.GetName]。我们必须前往那里，探索等待着我们的东西。"
@@ -2506,7 +2526,7 @@
  grand_archive.8520.a.default: "处决叛徒。"
  grand_archive.8520.a.machine: "反激活偏离的单元。"
  grand_archive.8520.a.hive: "消灭反常的工蜂。"
- grand_archive.8520.a.tt: "每个有人居住的行星都会有一个£pop£人口被消灭。"
+ grand_archive.8520.a.tt: "每个有人居住的行星都会有§R100§!£pop£§H人口§!被消灭。"
  grand_archive.8520.b.default: "对叛徒进行再教育。"
  grand_archive.8520.b.machine: "对偏离的单元进行重编程。"
  grand_archive.8520.b.hive: "重新同化反常的工蜂。"
@@ -2670,7 +2690,7 @@
  ###############
  # Reanimators #
  ###############
- reanimator_effect_desc: "你控制的克隆有机体太空兽群可以被复活。"
+ reanimator_effect_desc: "控制的克隆有机§H太空兽群§!可以被复活。"
  FLEETORDER_REANIMATE_PROJECT_BUTTON: "复活太空兽群舰船"
  MESSAGE_DEBRIS_REANIMATED_FINISH_MESSAGE_TYPE_TITLE: "太空兽群复活"
  MESSAGE_DEBRIS_REANIMATED_FINISH: "$SYSTEM|Y$中的已故太空生物已复活，现在可以作为我们军队的组成部分，由我们进行控制。"
@@ -2775,6 +2795,8 @@
  grand_archive.10007.desc: "$unique_mutation_project_unlock_desc$"
  grand_archive.10008.name: "$cutholoid_UNIQUE_MUTATION_PROJECT$"
  grand_archive.10008.desc: "$unique_mutation_project_unlock_desc$"
+ grand_archive.10009.name: "$crystalline_entity_UNIQUE_MUTATION_PROJECT$"
+ grand_archive.10009.desc: "$unique_mutation_project_unlock_desc$"
 
  grand_archive.10010.name: "太空变形虫变异计划完成"
  grand_archive.10010.desc: "我们关于§Y空间变形虫§!的变异实验完成了，得到了一些有趣的新细胞器：可部署的§Y$tech_unique_mutation_space_amoeba$§!。\n\n这些共生生物能够从附近物体中汲取能量并将其返还给宿主，从而增强生存能力和再生能力。"

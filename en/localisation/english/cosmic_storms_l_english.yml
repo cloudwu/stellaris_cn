@@ -39,8 +39,8 @@
  solar_storm_tt: "- A $solar_storm$ reveals every fleet in affected systems."
  electric_storm_fleet_tt: "- $MOD_SHIP_SHIELD_REGEN_ADD_PERC$ is §Rdisabled§! for ships and stations.\n- Inflicts §R$@storm_monthly_dmg_low|0$§! $MOD_SHIP_SHIELD_ADD$ Damage per month to ships and stations."
  particle_storm_fleet_tt: "- $MOD_SHIP_HULL_REGEN_ADD_PERC$, $MOD_SHIP_ARMOR_REGEN_ADD_PERC$ and $MOD_SHIP_SHIELD_REGEN_ADD_PERC$ are §Rdisabled§! for ships and stations.\n- Inflicts §R$@storm_monthly_dmg_low|0$§! Damage per month to ships and stations with more than $@storm_hp_perc_limit|0Y%$ $HITPOINTS$.\n- Gain §G+$@particle_storm_unity_per_ship|0$§! £unity£ $unity$ from Ships at $@storm_hp_perc_limit|0Y%$ $HITPOINTS$ or less."
- gravity_storm_consumer_goods_upkeep_tt: "If a colony's owner is NOT a Gestalt Consciousness empire:\n$t$£job_farmer£ [GetFarmerPlural], £job_miner£ [GetMinerPlural] and £job_technician£ [GetTechnicianPlural] $r_consumer_goods$ Upkeep: §R+1§!"
- gravity_storm_energy_upkeep_tt: "If a colony's owner is a Gestalt Consciousness empire:\n$t$£job_farmer£ [GetFarmerPlural], £job_miner£ [GetMinerPlural] and £job_technician£ [GetTechnicianPlural] $r_energy$ Upkeep: §R+1§!"
+ gravity_storm_consumer_goods_upkeep_tt: "If a colony's owner is NOT a Gestalt Consciousness empire:\n$t$[farmer.GetIcon] [GetFarmerPlural], [miner.GetIcon] [GetMinerPlural] and [technician.GetIcon] [GetTechnicianPlural] $r_consumer_goods$ Upkeep: §R+1§!"
+ gravity_storm_energy_upkeep_tt: "If a colony's owner is a Gestalt Consciousness empire:\n$t$[farmer.GetIcon] [GetFarmerPlural], [miner.GetIcon] [GetMinerPlural] and [technician.GetIcon] [GetTechnicianPlural] $r_energy$ Upkeep: §R+1§!"
  gravity_storm_ship_tt: "- §R$@gravity_storm_dmg_malus|1%$§! $MOD_SHIP_WEAPON_DAMAGE$ per ship size."
  nexus_storm_fleet_tt: "- $MOD_SHIP_HULL_REGEN_ADD_PERC$, $MOD_SHIP_ARMOR_REGEN_ADD_PERC$ and $MOD_SHIP_SHIELD_REGEN_ADD_PERC$ are §Rdisabled§! for ships and stations.\n- Inflicts §R$@storm_monthly_dmg_high|0$§! Damage per month to ships and stations with more than $@storm_hp_perc_limit|0Y%$ $HITPOINTS$."
  shroud_storm_ship_evasion_modifier_tt: "- §G+$@shroud_storm_evasion|0%$§! $MOD_SHIP_EVASION_MULT$ when the empire has breached the §YShroud§!."
@@ -197,8 +197,8 @@
 
  building_adakkaria_patriotic_institute: "Patriotic Institute of Celebration"
  building_adakkaria_patriotic_institute_desc: "The $building_adakkaria_patriotic_institute$ is a trove of advanced insights into the sentient condition. Here we empower people to cultivate their inner tempest while avoiding the luring song of the Convention's cruelty."
- building_adakkaria_patriotic_institute_effect_desc: "If a cosmic storm passes this system, there is a 10% chance a £pop£ gains the $Name_Storm_Fused$ trait."
- building_adakkaria_patriotic_institute_effect_upgrade_desc: "If a cosmic storm passes this system, there is a 40% chance one £pop£ gains the $Name_Storm_Fused$ trait. Additionally, there is a 20% chance every 10 years a £pop£ is transformed into a cosmic storm."
+ building_adakkaria_patriotic_institute_effect_desc: "If a cosmic storm passes this system, there is a 10% chance that £pop£ §HPops§! gain the $Name_Storm_Fused$ trait."
+ building_adakkaria_patriotic_institute_effect_upgrade_desc: "If a cosmic storm passes this system, there is a 40% chance that £pop£ §HPops§! gain the $Name_Storm_Fused$ trait. Additionally, there is a 20% chance every 10 years that §Y100§! £pop£ §HPops§! are transformed into a cosmic storm."
 
  building_astrometeorology_observation_center: "Astrometeorology Observatory"
  building_astrometeorology_observation_center_desc: "With delicate sensors, this observation center studies diverse environmental conditions to better our understanding of the natural universe."
@@ -220,12 +220,14 @@
  sm_storm_repelling_computer_desc: "This array of powerful lasers is able to create pockets of highly charged magnetic particles, creating a natural repellent force against cosmic storms."
 
 # Jobs
+ astrometeorologist: "$job_astrometeorologist$"
  job_astrometeorologist: "Astrometeorologist"
  job_astrometeorologist_plural: "Astrometeorologists"
  job_astrometeorologist_desc: "$job_astrometeorologist_plural$ are specialized in researching cosmic environmental effects."
- job_astrometeorologist_effect_desc: "$job_astrometeorologist_plural_with_icon$ turn $r_consumer_goods$ into $r_research$\n\nJob Output is increased when an §YEnvironmental Effect§! is present in this System"
+ job_astrometeorologist_effect_desc: "$job_astrometeorologist_plural_with_icon$ turn $r_consumer_goods$ into $r_physics$\n\nJob Output is increased when an §YEnvironmental Effect§! is present in this System."
  job_astrometeorologist_with_icon: "£job_astrometeorologist£ $job_astrometeorologist$"
  job_astrometeorologist_plural_with_icon: "£job_astrometeorologist£ $job_astrometeorologist_plural$"
+ physicist_is_astrometeorologist_tt: "£job_physicist£ $job_physicist_plural$ are converted into $job_astrometeorologist_plural_with_icon$"
  job_astrometeorologist_hive: "$job_astrometeorologist$ Drone"
  job_astrometeorologist_hive_plural: "$job_astrometeorologist$ Drones"
  job_astrometeorologist_hive_desc: "These research drones are specialized to detect and catalog the effects of cosmic storms."
@@ -239,12 +241,21 @@
  job_astrometeorologist_machine_with_icon: "£job_astrometeorologist_machine£ $job_astrometeorologist_machine$"
  job_astrometeorologist_machine_plural_with_icon: "£job_astrometeorologist_machine£ $job_astrometeorologist_machine_plural$"
 
+ storm_dancer: "$job_storm_dancer$"
  job_storm_dancer: "Storm Dancer"
  job_storm_dancer_plural: "Storm Dancers"
  job_storm_dancer_desc: "Far from a simple entertainer, the work of a $job_storm_dancer$ is to embody the very essence of the storm."
  job_storm_dancer_effect_desc: "$job_storm_dancer_plural$ turn $r_consumer_goods$ into $r_unity$ and $r_amenities$"
  job_storm_dancer_with_icon: "£job_storm_dancer£ $job_storm_dancer$"
  job_storm_dancer_plural_with_icon: "£job_storm_dancer£ $job_storm_dancer_plural$"
+
+ storm_duelist: "$job_storm_duelist$"
+ job_storm_duelist: "Storm Duelist"
+ job_storm_duelist_plural: "Storm Duelists"
+ job_storm_duelist_desc: "Martial meets ritual in the arena as Storm Duelists channel the ferocity of the tempest in violent choreography and electrifying combat."
+ job_storm_duelist_effect_desc: "$job_storm_duelist_plural$ turn $r_consumer_goods$ into $r_unity$ $r_amenities$, and £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!"
+ job_storm_duelist_with_icon: "£job_storm_duelist£ $job_storm_duelist$"
+ job_storm_duelist_plural_with_icon: "£job_storm_duelist£ $job_storm_duelist_plural$"
 
 # Triggers
  count_system_within_storm_trigger: "Number of systems within storm$CONDITIONS$ $IS_NOT$ $COMPARATOR$ $NUM|Y$"
@@ -269,10 +280,11 @@
  mod_planet_astrometeorologists_produces_mult: "£job_astrometeorologist£ [GetAstrometeorologistPlural] Output"
  mod_planet_buildings_storm_tech_upkeep_mult: "Storm building upkeep"
 
+ NAME_adakkaria: "adAkkaria"
  patriotic_institute_true_potential_unleashed: "The True Potential of The adAkkaria"
  patriotic_institute_true_potential_unleashed_desc: "The truth behind the adAkkaria experiments brought us catharsis."
  storm_hunkered_down_modifier: "Hunker Down"
- storm_hunkered_down_modifier_tt: "Doubles the §Rupkeep§! costs, but also doubles the §Geffectiveness§! of the §Y$building_storm_resistant_production$§! and §Y$building_advanced_storm_resistant_production$§!"
+ storm_hunkered_down_modifier_tt: "Doubles the §Rupkeep§! costs, but also doubles the §Geffectiveness§! of the §Y$building_storm_resistant_production$§! and §Y$building_advanced_storm_resistant_production$§!."
  storm_hunkered_down_modifier_disabled_tt: "Ends the $decision_hunker_down$ decision. Halves §Gupkeep§! costs, but also returns the §Reffectiveness§! of the §Y$building_storm_resistant_production$§! and §Y$building_advanced_storm_resistant_production$§! to their original values."
  cultivated_worldscaping_modifier: "$decision_cultivated_worldscaping$"
  cultivated_worldscaping_modifier_desc: "The landscape has been altered to create a sublime geometric experience, prioritizing form over life. Any remaining flora has been reduced to a monoculture to eliminate discordant elements."
@@ -285,7 +297,7 @@
  decision_stop_hunker_down_desc: "Once the danger of the cosmic storm has passed, we can relax our precautions. But will things ever truly return to 'normal'?"
  decision_cultivated_worldscaping: "Cultivated Worldscaping"
  decision_cultivated_worldscaping_desc: "Let us sculpt this world into a celebration of perfect symmetry. To observe the pure geometry of the landscape will bring serenity."
- decision_cultivated_worldscaping_natural_blockers_fail_tt: "All blockers £blocker£ need to be removed"
+ decision_cultivated_worldscaping_natural_blockers_fail_tt: "§RAll £blocker£ Blockers need to be removed§!"
 
 # Civics
  civic_astrometeorology: "Astrometeorology"
@@ -302,15 +314,15 @@
 
  civic_astrometeorology_megacorp: "Weather Exploitation"
  civic_astrometeorology_megacorp_desc: "What are environmental effects if not another free resource to exploit? This megacorp specializes in acquiring as much knowledge from astrometeorological phenomena as they can and sell it to the highest bidder."
- civic_astrometeorology_megacorp_effect_tooltip: "$civic_astrometeorology_effect_tooltip$"
+ civic_astrometeorology_megacorp_effect_tooltip: "$civic_astrometeorology_effect_tooltip$\n- The £building£ §Y$building_private_research_initiative$§! $megacorp_civic_branch_office_building_effect$"
 
  civic_storm_callers: "Storm Devotion"
  civic_storm_callers_desc: "Ever since ancient times, this society has been able to attract tempests through their rituals. Over the years, they combined technical innovations to enhance their efficiency. With the dawn of the space age, they now seek to take this knowledge to the stars."
- civic_storm_callers_effect_tooltip: "- $AVAILABLE_BUILDINGS$ £building£ ['building:building_storm_summoning_theater']\n- $SPECIES_TRAITS$ ['trait:trait_storm_touched']"
+ civic_storm_callers_effect_tooltip: "- $AVAILABLE_BUILDINGS$ £building£ ['building:building_storm_summoning_theater']\n- Replaces [entertainer.GetIcon] §H[entertainer.GetName]§! Jobs with £job_storm_dancer£ §H$job_storm_dancer$§! Jobs\n- $SPECIES_TRAITS$ ['trait:trait_storm_touched']"
 
  civic_storm_callers_megacorp: "Storm Influencers"
  civic_storm_callers_megacorp_desc: "What started as a simple broadcast of sacred rituals, has since blossomed into a massive media conglomerate. Seers and priests were replaced by charismatic entertainers, all competing to gain a modicum of attention as they appeal to the cosmic storms themselves."
- civic_storm_callers_megacorp_effect_tooltip: "$civic_storm_callers_effect_tooltip$"
+ civic_storm_callers_megacorp_effect_tooltip: "$civic_storm_callers_effect_tooltip$\n- The £building£ §Y$building_amusement_megaplex$§! Corporate Building generates additional §YBranch Office Value§! and adds §G+50§! £job_merchant£ §YMerchant§! jobs to our Capital."
 
  mod_capital_storm_diplo_weight_mult: "$MOD_DIPLO_WEIGHT_MULT$ while Capital is affected by a §YCosmic Storm§!"
  storm_devotion_diplo_weight_modifier: "$civic_storm_callers$"
@@ -319,14 +331,14 @@
  civic_environmental_architects: "Planetscapers"
  civic_environmental_architects_desc: "After eons of carefully cultivating a perfect balance on their homeworld, this society is ready to tend to even the most inhospitable environments among the stars. At their core, these people believe nature can be shaped, controlled, and perfected. Not to tame, but in service of perfect beauty."
 
- civic_environmental_architects_negative_effect_tooltip: "- $HOMEWORLD$ Starts with two £blocker£ §YNatural Blockers§!"
- civic_environmental_architects_effect_start: "- $ADDITONAL_TECHNOLOGIES_STRING$ £society£ §YTechnology§! to remove £blocker£ §YNatural Blockers§! on your Homeworld\n- £blocker£ §YNatural Blockers§! removal £society£ §YTechnologies§! are granted as §YAdditional Research Options§! upon Colonization\n- §YMastery of Nature§! Ascension Perk replaced with §Y$decision_cultivated_worldscaping$§! Planetary Decision\n- For each £blocker£ §YNatural Blocker§! on Colonized Planet:"
+ civic_environmental_architects_negative_effect_tooltip: "- $HOMEWORLD$ Starts with two £blocker£ §HNatural Blockers§!"
+ civic_environmental_architects_effect_start: "- $ADDITIONAL_TECHNOLOGIES_STRING$ £society£ §HTechnologies§! to remove £blocker£ ['concept_natural_blockers'] on the §HHomeworld§!\n- £society£ §HTechnologies§! to remove £blocker£ §HNatural Blockers§! are granted as §HPermanent Research Options§! upon Colonization\n- §HMastery of Nature§! ['concept_ascension_perk'] replaced with §H$decision_cultivated_worldscaping$§! Planetary ['concept_decision']\n- For each £blocker£ §HNatural Blocker§! on Colonized £planet£ ['concept_planets']:"
 
  civic_environmental_architects_effect_tooltip: "$civic_environmental_architects_effect_start$\n$t$- Resources from Jobs: §R-10%§!\n$t$- Pop Growth Speed: §R-10%§!\n$t$- Pop Upkeep: §R+15%§!"
 
  civic_environmental_architects_hive: "Cultivation Drones"
  civic_environmental_architects_hive_desc: "Being a part of a great organism allows these drones to recognize opportunities inside the greatest organism of all: nature. They seek to control and shape natural systems to the collective's desires."
- civic_environmental_architects_hive_effect_tooltip: "$civic_environmental_architects_effect_start$\n- $t$- Resources from Jobs: §R-10%§!\n$t$- Pop Assembly: §R-10%§!\n$t$- Pop Upkeep: §R+15%§!"
+ civic_environmental_architects_hive_effect_tooltip: "$civic_environmental_architects_effect_start$\n$t$- Resources from Jobs: §R-10%§!\n$t$- Pop Assembly: §R-10%§!\n$t$- Pop Upkeep: §R+15%§!"
 
  civic_environmental_architects_machine: "Gardening Protocols"
  civic_environmental_architects_machine_desc: "While the organic precursors are gone, their machine creations still maintain a preference for the old aesthetics. The natural world is fertile ground for programmed perfectionism."
@@ -334,7 +346,7 @@
 
  civic_environmental_architects_megacorp: "Geo-Engineering Inc."
  civic_environmental_architects_megacorp_desc: "The employees of this Megacorp are used to living inside a golden cage. Accordingly, the corporation will build one wherever they go."
- civic_environmental_architects_megacorp_effect_tooltip: "$civic_environmental_architects_effect_tooltip$"
+ civic_environmental_architects_megacorp_effect_tooltip: "$civic_environmental_architects_effect_tooltip$\n- The £building£ §Y$building_executive_retreat$§! $megacorp_civic_branch_office_building_effect$"
 
 #Edicts
  edict_auto_hunker_down: "Hunker Down Protocols"
@@ -382,10 +394,10 @@
 # Traits
  trait_storm_touched: "Storm Touched"
  trait_storm_touched_desc: "Being inside a cosmic storm fills the $trait_storm_touched$ with devotional aspiration."
- trait_storm_touched_modifier_tooltip: "While in a §Y$default_storm$§!:$TABBED_NEW_LINE$$mod_planet_jobs_produces_mult$: §G+10%§!$TABBED_NEW_LINE$Amenity Usage: §G-10%§!"
+ trait_storm_touched_modifier_tooltip: "While in a §Y$default_storm$§!:$TABBED_NEW_LINE$$MOD_POP_BONUS_WORKFORCE_MULT$: §G+10%§!$TABBED_NEW_LINE$Amenity Usage: §G-10%§!"
  trait_storm_fused: "Storm Fused"
  trait_storm_fused_desc: "The Storm Fused learned to cultivate their Inner Storm as they strain for enlightenment."
- trait_storm_fused_modifier_tooltip: "While in a §Y$default_storm$§!:\n$mod_planet_jobs_produces_mult$: §G+10%§!\n$MOD_POP_HAPPINESS$: §G+5%§!"
+ trait_storm_fused_modifier_tooltip: "While in a §Y$default_storm$§!:\n$MOD_POP_BONUS_WORKFORCE_MULT$: §G+10%§!\n$MOD_POP_HAPPINESS$: §G+5%§!"
 
 ######################################
 ### Galactic Community Resolutions ###
@@ -398,7 +410,7 @@
  storm_tech_draw_chance: "$storm_tech$ Research Option Chance:"
  storm_tech_draw_guaranteed: "$storm_tech_draw_chance$ §GGuaranteed§!"
  unity_from_storms: "$r_unity$ per system affected by a §Y$default_storm$§!:"
- output_from_storm_protection_buildings: "£job_farmer£ [GetFarmerPlural], £job_miner£ [GetMinerPlural], and £job_technician£ [GetTechnician] Output from §YCosmic Storm Resistant Production Buildings§!:"
+ output_from_storm_protection_buildings: "[farmer.GetIcon] [GetFarmerPlural], [miner.GetIcon] [GetMinerPlural], and [technician.GetIcon] [GetTechnician] Output from §YCosmic Storm Resistant Production Buildings§!:"
  breach_galactic_law: "§RBreach of Galactic Law§!"
  breach_galactic_law_intro: "Use of the following is in $breach_galactic_law$:"
  emergency_fund_contribution: "Monthly §YEmergency Fund§! contributions increased to:"
@@ -548,6 +560,7 @@
  STORMS_ANOM_STAT_DESC: "This orbiting object has been left behind by a passing cosmic storm. It looks like a space station but scans of its structural composition is returning most confusing results. We recommend investigating."
  cstorms.5030.name: "Stationary Apocalypse"
  cstorms.5030.desc: "[Root.Owner.GetScientistPluralCapital] report that much of this space station is constructed from everyday stationary objects, barely holding it together. Deeper into the structure, the materials transition from metal alloys to plastics and other substances.\n\nInside the heart of the construct we found a machine, still in the process of efficiently deconstructing organic material and shaping it into the very items encountered so far.\n\nAfter running a DNA simulation model, our [Root.Owner.GetScientistPlural] have been forced to conclude that the material likely came from the former inhabitants of this outpost."
+ cstorms.5030.evopred: "See if we can't gain something here."
 
  STORMS_ANOM_BRAIN: "Existentialist Dissipation"
  STORMS_ANOM_BRAIN_DESC: "Ever since a $shroud_storm$ raged through this system, we've been receiving strange signals. However, as soon as our [Root.Owner.GetScientistPlural] try to answer this cacophony of hails, it dissipates again. They recommend sending a science vessel."
@@ -561,22 +574,23 @@
  cstorms.1605.desc: "Boarding the station and activating the telescopes took some finessing from our [Root.Owner.GetScientistPlural], but it was nothing they could not handle. However, the corner of the galaxy the instruments were pointed at showed nothing of note.\n\nSome interesting artifacts were found scattered around the station: detailed images recorded from the telescopes, neatly presented in decorative frames. Every single capture is focussed on cosmic storms, with multiple prints of each storm that has passed through this system. The telescope operator used different angles, zoom levels, and even artistic tilts to show the storms in their best light.\n\nUpon deeper investigation, the artwork is the only interesting find aboard the abandoned station. We will archive them so many future generations can enjoy these images of rare power and beauty."
 
  STORMS_ANOM_POLYCHROMATIC: "Polychromatic Star"
- STORMS_ANOM_POLYCHROMATIC_DESC: "The passing of a cosmic storm through [from.solar_system.GetName] has transformed the visual appearance of the system's star. In the aftermath of the storm, the star's coronal layer presents as a swirl of ever-changing colors, ejecting polychromatic flares in all directions. The phenomenon warrants further analysis."
+ STORMS_ANOM_POLYCHROMATIC_DESC: "The passing of a cosmic storm through the [from.solar_system.GetName] system has transformed the visual appearance of the system's star. In the aftermath of the storm, the star's coronal layer presents as a swirl of ever-changing colors, ejecting polychromatic flares in all directions. The phenomenon warrants further analysis."
  cstorms.5035.name: "$STORMS_ANOM_POLYCHROMATIC$"
  cstorms.5035.desc: "[root.leader.GetName] reports fascinating changes in [From.GetStarName]'s fusion reactions since the passage of the [from.GetAffectedStormType].\n\nIt appears that the storm induced unexpected nuclear reactions within the star's core, resulting in a steady release of [from.GetEarnedResources] from its convective zones.\n\nThese complex and idiosyncratic reactions are producing the unusual polychromatic flaring we have observed. In any case, it will continue to be a source worthy of close study for some time."
  cstorms.5035.a: "Study these new processes."
  cstorms.5035.b: "Harvest these new resources."
 
  STORMS_ANOM_TRIPLETS: "Asteroid Triplets"
- STORMS_ANOM_TRIPLETS_DESC: "A passing cosmic storm deposited three new asteroids in [from.solar_system.GetName]. These celestial bodies are prone to inexplicable changes of direction, making it impossible to predict their trajectories. Further research is needed."
+ STORMS_ANOM_TRIPLETS_DESC: "A passing cosmic storm deposited three new asteroids in the [from.solar_system.GetName] system. These celestial bodies are prone to inexplicable changes of direction, making it impossible to predict their trajectories. Further research is needed."
  cstorms.5040.name: "$STORMS_ANOM_TRIPLETS$"
- cstorms.5040.desc: "[root.leader.GetName] discovered that the asteroids deposited in [from.solar_system.GetName] possess highly unstable magnetic fields, causing them to ricochet haphazardly off the system's existing magnetospheres.\n\n[root.leader.GetName] stabilized them by adding magnetic compensators to each asteroid, regulating their trajectories and thus making them amenable to resource extraction efforts."
+ cstorms.5040.desc: "[root.leader.GetName] discovered that the asteroids deposited in the [from.solar_system.GetName] system possess highly unstable magnetic fields, causing them to ricochet haphazardly off the system's existing magnetospheres.\n\n[root.leader.GetName] stabilized them by adding magnetic compensators to each asteroid, regulating their trajectories and thus making them amenable to resource extraction efforts."
 
  STORMS_ANOM_TRAVELLERS: "Aftermath Distress Signal"
- STORMS_ANOM_TRAVELLERS_DESC: "In the aftermath of the §H[from.GetAffectedStormType]§! an unidentified distress signal has been detected in §H[from.solar_system.GetName]§!."
+ STORMS_ANOM_TRAVELLERS_DESC: "In the aftermath of the §H[from.GetAffectedStormType]§! an unidentified distress signal has been detected in the §H[from.solar_system.GetName]§! system."
  cstorms.5050.name: "Displaced Travelers"
- cstorms.5050.desc: "We have identified the source of the distress signal in §H[from.solar_system.GetName]§! as a heavily damaged but still functioning mercantile vessel.\n\nThe occupants claim they have been knocked a great distance off course by the §H[from.GetAffectedStormType]§!. The storm has also burnt out their engines, leaving the ship and its contents stranded in our space.\n\nThey are willing to part with a portion of their cargo if we can help."
+ cstorms.5050.desc: "We have identified the source of the distress signal in the §H[from.solar_system.GetName]§! system as a heavily damaged but still functioning mercantile vessel.\n\nThe occupants claim they have been knocked a great distance off course by the §H[from.GetAffectedStormType]§!. The storm has also burnt out their engines, leaving the ship and its contents stranded in our space.\n\nThey are willing to part with a portion of their cargo if we can help."
  cstorms.5050.a: "Agree to help them."
+ cstorms.5050.evopred: "We will help in exchange for some DNA samples."
  cstorms.5050.b: "Wish them luck."
  cstorms.5050.c.genocide: "Take their lives and cargo."
  cstorms.5050.d.devouring_swarm: "A free meal."
@@ -584,19 +598,19 @@
  STORMS_COSMIC_SLUDGE: "Cosmic Sludge"
  STORMS_COSMIC_SLUDGE_DESC: "Mass sensors monitoring §H[from.solar_system.GetName]§! are showing erratic readings in the aftermath of the §H[from.GetAffectedStormType]§!.\n\nSystem diagnostics show no sign of a technical error with the equipment. These readings require further investigation."
  cstorms.5060.name: "$STORMS_COSMIC_SLUDGE$"
- cstorms.5060.desc: "The erratic sensor readings in §H[from.solar_system.GetName]§! are derived from an exceptional debris formation left in the wake of the §H[from.GetAffectedStormType]§!.\n\nThis drifting entity is an amorphous blob of cosmic sludge, forged in the extreme pressures of the storm. Its innumerable constituent elements have formed a uniquely reactive compound.\n\nFocused study of its chemistry could yield valuable astrometeorological insights into the conditions that produced it."
+ cstorms.5060.desc: "The erratic sensor readings in the §H[from.solar_system.GetName]§! system are derived from an exceptional debris formation left in the wake of the §H[from.GetAffectedStormType]§!.\n\nThis drifting entity is an amorphous blob of cosmic sludge, forged in the extreme pressures of the storm. Its innumerable constituent elements have formed a uniquely reactive compound.\n\nFocused study of its chemistry could yield valuable astrometeorological insights into the conditions that produced it."
  cstorms.5060.a: "Study its composition."
  cstorms.5060.b: "Break it down."
 
  STORMS_SHATTERED_SATTELITE: "Shattered Satellite"
- STORMS_SHATTERED_SATTELITE_DESC: "In the aftermath of the §H[from.GetAffectedStormType]§!, an unidentified object has been detected in §H[from.solar_system.GetName]§!. Further analysis of this debris could provide valuable insights."
+ STORMS_SHATTERED_SATTELITE_DESC: "In the aftermath of the §H[from.GetAffectedStormType]§!, an unidentified object has been detected in the §H[from.solar_system.GetName]§! system. Further analysis of this debris could provide valuable insights."
  cstorms.5070.name: "$STORMS_SHATTERED_SATTELITE$"
- cstorms.5070.desc: "The object in §H[from.solar_system.GetName]§! is the wreckage of an ancient satellite equipped with complex astrometeorological sensor arrays. We believe that it was swept a great distance across the galaxy in the wake of the §H[from.GetAffectedStormType]§!.\n\nNow damaged beyond repair, its central databases contain a vast store of information that we can repurpose for our own needs.\n\nThe rest of the satellite is only salvageable as scrap."
+ cstorms.5070.desc: "The object in the §H[from.solar_system.GetName]§! system is the wreckage of an ancient satellite equipped with complex astrometeorological sensor arrays. We believe that it was swept a great distance across the galaxy in the wake of the §H[from.GetAffectedStormType]§!.\n\nNow damaged beyond repair, its central databases contain a vast store of information that we can repurpose for our own needs.\n\nThe rest of the satellite is only salvageable as scrap."
 
  STORMS_EVISCERATED_FAUNA: "Foreign Object"
- STORMS_EVISCERATED_FAUNA_DESC: "Sensors in §H[from.solar_system.GetName]§! have detected an unknown object brought into the system by the recent §H[from.GetAffectedStormType]§!.\n\nCloser inspection is needed to verify the nature of the anomaly."
+ STORMS_EVISCERATED_FAUNA_DESC: "Sensors in the §H[from.solar_system.GetName]§! system have detected an unknown object brought into the system by the recent §H[from.GetAffectedStormType]§!.\n\nCloser inspection is needed to verify the nature of the anomaly."
  cstorms.5080.name: "Organic Debris"
- cstorms.5080.desc.common: "The foreign object in §H[from.solar_system.GetName]§! was discovered to be a large mass of organic remains originating from some type of spaceborne fauna. Having had any identifiable features shredded apart by the cosmic storm, it is impossible to correctly catalog the biological debris."
+ cstorms.5080.desc.common: "The foreign object in the §H[from.solar_system.GetName]§! system was discovered to be a large mass of organic remains originating from some type of spaceborne fauna. Having had any identifiable features shredded apart by the cosmic storm, it is impossible to correctly catalog the biological debris."
  cstorms.5080.desc.swarm: "Fortunately, it remains mostly edible."
  cstorms.5080.desc.default: "[leader.GetName] is confident that a more detailed forensic analysis of the creature's remains would reveal more information about the nature of its origins and the effects of a §Y[from.GetAffectedStormType]§! on similar space faring organisms."
  cstorms.5080.a: "We hunger."
@@ -604,14 +618,15 @@
  cstorms.5080.c: "Dispose of the remains."
 
  FORENSIC_DISSECTION_PROJECT: "Forensic Dissection"
- FORENSIC_DISSECTION_PROJECT_DESC: "We have encountered the remains of an unknown creature in §H[solar_system.GetName]§! dragged across the galaxy by a cosmic storm. Forensic dissection of the corpse should reveal more information."
+ FORENSIC_DISSECTION_PROJECT_DESC: "We have encountered the remains of an unknown creature in the §H[solar_system.GetName]§! system dragged across the galaxy by a cosmic storm. Forensic dissection of the corpse should reveal more information."
  cstorms.5085.name: "$FORENSIC_DISSECTION_PROJECT$"
  cstorms.5085.desc: "After careful dissection, the original species of this visceral mass remains a mystery. The extraordinary damage taken in the epicenter of the storm has stripped it of any recognizable features or genetic markers.\n\nHowever, in the process of this study we have gained insight into the composition of §YCosmic Storms§! and their devastating effects on xenobiological matter."
+ cstorms.5085.evopred: "A fascinating meal."
 
  STORMS_DISPLACED_TIYANKI: "Displaced Tiyanki"
- STORMS_DISPLACED_TIYANKI_DESC: "In the aftermath of the $default_storm$ our sensors have detected three Tiyanki signatures in §H[solar_system.GetName]§!."
+ STORMS_DISPLACED_TIYANKI_DESC: "In the aftermath of the $default_storm$ our sensors have detected three Tiyanki signatures in the §H[solar_system.GetName]§! system."
  cstorms.5090.name: "$STORMS_DISPLACED_TIYANKI$"
- cstorms.5090.desc.common: "The three Tiyanki signatures in §H[solar_system.GetName]§! have been identified as a set of displaced and malnourished calves.\n\nThe §Y$default_storm$§! has separated these calves from their larger pod, leaving them to fend for themselves.\n\nThey are unlikely to survive for long in open space. Our sensors show they are attempting to call for their pod but are having no success."
+ cstorms.5090.desc.common: "The three Tiyanki signatures in the §H[solar_system.GetName]§! system have been identified as a set of displaced and malnourished calves.\n\nThe §Y$default_storm$§! has separated these calves from their larger pod, leaving them to fend for themselves.\n\nThey are unlikely to survive for long in open space. Our sensors show they are attempting to call for their pod but are having no success."
  cstorms.5090.desc.swarm: "We could boost their cries for help and use them as bait to draw in a larger feast."
  cstorms.5090.desc.default: "Our communication systems could be used to boost their cries for help and attract their pod into the system."
  cstorms.5090.a.default: "Boost their signal."
@@ -623,10 +638,10 @@
  cstorms.5090.c.tt: "Add 3 §Y$NAME_Tiyanki_Hatchling$§! of random rarity to your ['concept_vivarium']"
 
  REUNITE_POD_PROJECT: "Reuniting the Pod"
- REUNITE_POD_PROJECT_DESC: "Three Tiyanki calves are lost and wandering [this.solar_system.GetName] separated from their pod by a cosmic storm. We can help reunite them with their pod by boosting their cries to attract the rest of their pod to the system."
+ REUNITE_POD_PROJECT_DESC: "Three Tiyanki calves are lost and wandering the [this.solar_system.GetName] system, separated from their pod by a cosmic storm. We can help reunite them with their pod by boosting their cries to attract the rest of their pod to the system."
 
  cstorms.5095.name: "Tiyanki Reunited"
- cstorms.5095.desc.common: "A Tiyanki cow and bull have both appeared in §H[solar_system.GetName]§! having heard the amplified cries of the three displaced calves.\n\nThe juvenile Tiyanki have been reintegrated back into their pod, and already appear much happier and healthier.\n\nThe cow has deposited a large mass of debris near our science vessel, seemingly as some kind of appreciation for our assistance. To our surprise this curious offering contains several usable materials."
+ cstorms.5095.desc.common: "A Tiyanki cow and bull have both appeared in the §H[solar_system.GetName]§! system having heard the amplified cries of the three displaced calves.\n\nThe juvenile Tiyanki have been reintegrated back into their pod, and already appear much happier and healthier.\n\nThe cow has deposited a large mass of debris near our science vessel, seemingly as some kind of appreciation for our assistance. To our surprise this curious offering contains several usable materials."
  cstorms.5095.desc.swarm: "Of course, these larger beasts are the true prize; primed and ready for the slaughter."
 
 ###########################################
@@ -696,7 +711,7 @@
  letters_of_the_manifold: "Letters From Between the Manifold"
  stormbound_event_ship_object: "$cs_stormbound_chain_title$"
  cstorms.1310.name: "Stormbound Rises"
- cstorms.1310.desc: "We are receiving strange reports from the [This.GetName]. Apparently, the last cosmic storm raging in that sector revealed a ship of unknown origin. Bearing no call sign, it somehow cruised through the tempest as if entirely unaffected by the surrounding violence.\n\nIt did not respond to hails, and as soon as the storm dissipated, so did the vessel itself. This might have been dismissed as instrument artifacting, but the visual evidence spoke for itself.\n\nCould this be a display of incredibly advanced technology, or is there something more ominous at play? We will be sure to report back any occurrences of this mysterious vessel."
+ cstorms.1310.desc: "We are receiving strange reports from the [This.GetName] system. Apparently, the last cosmic storm raging in that sector revealed a ship of unknown origin. Bearing no call sign, it somehow cruised through the tempest as if entirely unaffected by the surrounding violence.\n\nIt did not respond to hails, and as soon as the storm dissipated, so did the vessel itself. This might have been dismissed as instrument artifacting, but the visual evidence spoke for itself.\n\nCould this be a display of incredibly advanced technology, or is there something more ominous at play? We will be sure to report back any occurrences of this mysterious vessel."
  cstorms.1313.name: "Stormbound Returns"
  cstorms.1313.desc: "One of the research stations in [This.GetName] came to us with a startling report: During the last cosmic storm, a strange ship had almost collided with the outpost. Visual reports show it was the same ominous vessel first reported some time ago.\n\nAccording to the space station, the hulls on the vessel were constructed from a strange amalgamation of organic compounds, calcium minerals and metallic alloys.\n\nNo organic life was detected, leading us to speculate that either this vessel was automated, or had somehow gone rogue.\n\nHowever, the most baffling thing was yet to come: large sections of its propulsion system were clearly shattered by space debris. This vessel should have been dead in space.\n\nIf we assign a science vessel to monitor the next cosmic storm, they might be able to find out more about this mysterious craft."
  cstorms.1313.a: "We have no time for such nonsense."
@@ -724,6 +739,7 @@
  cstorms.1500.desc: "From the moment the creature was discovered, its impact was undeniable, inspiring love and devotion among us almost instantaneously. Its four bulging eyes displayed innocence and invited anyone to stroke its soft, cloud-like fur. It seems particularly attached to [Root.GetLeaderName], spending most of its time on [Leader.GetHisHer] lap enjoying [Leader.GetHisHer] affections, not showing any signs of aggression or danger. It is as if it was perfectly engineered to be as inoffensive as possible.\n\nStill, some skeptics have pointed out how irresponsible it would be to keep a previously undiscovered life form aboard the ship without prior approval. [Root.GetLeaderName] vouched that it is definitely probably safe, but has agreed to request a formal investigation."
  cstorms.1500.a: "Find out what it is."
  cstorms.1500.b: "Request denied. Get rid of it."
+ cstorms.1500.evopred: "Request denied. Eat it."
  project_cosmic_storms_but_they_are_cute: "Biological Marvel"
  project_cosmic_storms_but_they_are_cute_DESC: "A most intriguing, positively adorable animal was found aboard one of our science vessels. An investigation into the creature's biological qualities is required before we decide to keep it or not."
  cstorms.1505.name: "Biological Marvel"
@@ -736,6 +752,7 @@
  cstorms.1515.name: "The end of Gurr"
  cstorms.1515.desc: "Given its unusual and clearly genetically engineered body, the creature could not stay aboard the science vessel. The risk of it adversely affecting the crew, or an aggrieved owner appearing to demand its return was simply too great. The deed was done swiftly and mercifully. In an instant, its soft "gurr" was silenced forever.\n\nWhile understandable, this decision has prompted an emotional backlash from [Root.GetLeaderName] and the crew. It will take some time to get over the loss of this adorable freak of nature."
  cstorms.1515.a: "There was no other choice."
+ cstorms.1515.evopred: "Let's save a DNA sample."
  cstorms.1520.name: "The end of Gurr?"
  cstorms.1520.desc: "Neutralizing the adorable creature was meant to be the end of it, but its remarkable regenerative characteristics seemed to have gone further than we could have guessed.\n\nNot too long after its demise, two identical copies of the creature were spawned from its apparently lifeless tissue. Even after our decision to terminate its progenitor's life, the resulting lifeforms are not showing any signs of aggression.\n\nWe shall leave it at this, rather than risk creating an army of Gurrs. [Root.GetLeaderName] and the crew have expressed their delight at being allowed to keep the pair."
  cstorms.1520.a: "Lesson learned."
@@ -963,7 +980,7 @@
  cstorms.190.name: "Stable Orbit"
  cstorms.190.desc: "The space station orbiting [From.Planet.GetName] is much larger than originally anticipated. It appears to be more than just a station, boasting research instruments as well as sophisticated life support systems and extensive deep space sensors. This may indicate the facility was used more as a long-term colony, rather than a minor waypoint.\n\nIt is in a dismal state, however. The hull has been compromised, with catastrophic decompression having blown out entire sectors. It is unclear whether the damage was caused from the outside, or from within. Fortunately, orbit control and axis stabilization are still operational, explaining why the structure has not drifted into the star or broken out in an unstoppable spin.\n\nGetting inside without destabilizing this fastidiously maintained balance will be difficult."
  cstorms.191.name: "Impressive Pressure"
- cstorms.191.desc: "To enter the station in [This.System.GetName] it was necessary to pry open an undamaged airlock without causing further implosions. The internals of the station were still pressurized, successfully mimicking a typical planetary atmosphere despite its impressive age.\n\nIt took days to create a perfect seal between our ship and the station, meticulously equalizing the air pressure. Eventually we were able to open the door safely. Unfortunately, we were immediately met with another obstacle: a blocked corridor, clogged with twisted support beams and rubble from nearby depressurization. It will take some time before we can proceed."
+ cstorms.191.desc: "To enter the station in the [This.System.GetName] system, it was necessary to pry open an undamaged airlock without causing further implosions. The internals of the station were still pressurized, successfully mimicking a typical planetary atmosphere despite its impressive age.\n\nIt took days to create a perfect seal between our ship and the station, meticulously equalizing the air pressure. Eventually we were able to open the door safely. Unfortunately, we were immediately met with another obstacle: a blocked corridor, clogged with twisted support beams and rubble from nearby depressurization. It will take some time before we can proceed."
  cstorms.192.name: "Inner Tomb"
  cstorms.192.desc: "After clearing a way forward, we began to explore the station in search of answers.\n\nA thorough investigation revealed that the station was built not to observe the cosmos, but rather to protect something, with much of its elaborate scanning equipment directed internally. Personal effects belonging to Inetian Trader citizens were found, as well as logs describing station life. They spoke of an important payload, kept in a tightly guarded chamber somewhere within the base. While it did not take long to locate, the room was revealed to be a tomb.\n\nDesiccated, near-mummified remains occupied the space, each of them members of the Inetian Traders' empire. Given their mundane positions, it seems they did not put up a fight, but simply sat down to die. What happened here?"
  cstorms.193.name: "Hubris"
@@ -990,6 +1007,7 @@
 #Hyperlane Detailer - Secrets Of Inetian Traders Reward
  sm_hyperlane_detailer: "Hyperlane Detailer"
 
+ NAME_inetian: "Inetian Traders"
 ###########################################
 # The adAkkaria Convention of Benevolence #
 ###########################################
@@ -1029,7 +1047,7 @@
 
 # Event: A Site Barren and Bare
  cstorms.245.name: "A Site Barren and Bare"
- cstorms.245.desc: "The passing of a cosmic storm in [planet_windswept_fates.System.GetName] has uncovered a site of possible archeological significance on [planet_windswept_fates.GetName].\n\nPreliminary scans of §Y[planet_windswept_fates.GetName]§! indicate a devastatingly unstable atmosphere where vast planetary storms dominate the landscape. Our [Root.Owner.GetScientistPlural] would never have expected remnants of a civilization on a world like this and believe we could learn much from investigating."
+ cstorms.245.desc: "The passing of a cosmic storm in the [planet_windswept_fates.System.GetName] system has uncovered a site of possible archeological significance on [planet_windswept_fates.GetName].\n\nPreliminary scans of §Y[planet_windswept_fates.GetName]§! indicate a devastatingly unstable atmosphere where vast planetary storms dominate the landscape. Our [Root.Owner.GetScientistPlural] would never have expected remnants of a civilization on a world like this and believe we could learn much from investigating."
  cstorms.245.a: "Prepare a landing party!"
 
 # Digsite: Windswept Fates
@@ -1069,15 +1087,15 @@
  cstorms.2165.desc.intro: "Translation of the frozen body's name tag revealed him to be an adAkkaria member named §SalAtta Landeer§!. Much like the corpse found at [planet_windswept_fates.GetName], several of his appendages were surgically removed before death. However, in this case, the body is also badly burned. His torso especially shows signs of extreme heat damage, as well as a slow, and surely painful, recovery.\n\nOur scientists came to the unfortunate conclusion that these wounds bore disturbing similarities to [Root.Owner.GetPreFTLLowerPlural] methods of extracting information from unwilling participants. Was this a war veteran, or did something more sinister befall him?"
  cstorms.2165.desc.def: "$cstorms.2165.desc.intro$\n\nNo sooner had we identified the nature of these wounds, our vessel's instruments experienced a sudden, sharp power surge and [Root.GetLeaderName] began to scream.\n\nMuch later, [Leader.GetHeShe] would describe the experience as a searing of intense light, followed by a wave of devastating pain. It was as if something was trying to crack open [Leader.GetHerHis] mind... from the inside out."
  cstorms.2165.desc.psio: "$cstorms.2165.desc.intro$\n\nNo sooner had we identified the nature of these wounds, our vessel's instruments experienced a sudden, sharp power surge and our psionically gifted crew began to scream.\n\nMuch later, they would report a moment of supreme clarity, followed by wave after wave of molten, mind-searing anger. [Root.GetLeaderName] stated that deep beneath the rage was buried a horrific surprise and a profound sense of betrayal. The singular thought arrived: §LThey have invoked me!§!"
- cstorms.2165.desc.gestalt: "$cstorms.2165.desc.intro$\n\nFollowing this discovery, our crew's databanks were corrupted by an untraceable force. Several drones recalled experiencing a brief and debilitating power surge, while others were exposed to scrambled and disjointed imagery, provoking their voice modulators to emit a piercing sound at more than 120 decibels"
+ cstorms.2165.desc.gestalt: "$cstorms.2165.desc.intro$\n\nFollowing this discovery, our crew's databanks were corrupted by an untraceable force. Several [controller.GetIndividualNamePlural] recalled experiencing a brief and debilitating power surge, while others were exposed to scrambled and disjointed imagery, provoking their voice modulators to emit a piercing sound at more than 120 decibels."
  cstorms.2165.a: "-- Signal Lost --"
  cstorms.2170.name: "Landeer's Legacy"
  cstorms.2170.desc.def: "No sooner had we re-established communication with the science ship §Y[Root.GetFleetName]§! than we were subjected to the howling cries of its crew. Much later, after a relative calm had been restored, it was revealed that the alien body they brought onboard was responsible for the outcry.\n\nThe corpse itself was exerting some strange power of their minds. Small objects rose into the air and began to orbit the body. Sections of the interior walls were warped and rent by the pressure.\n\n§Y[Root.GetLeaderName]§! managed to awaken from [Leader.GetHerHis] catatonic state just in time to expunge the corpse from the vessel. And it was [Leader.GetHerHis] quick reaction that also allowed the science ship to escape the sudden emergence of a cosmic storm. Had [Leader.GetHeShe] not, the graveyard would have welcomed a new ship.\n\nAs [Root.GetLeaderName] recounted [Leader.GetHerHis] experience, [Leader.GetHeShe] noted something else: whatever the source of the corpse's strange power, it also caused the a very particular pattern to form on the vessel's command screens. Was this an attempt to communicate? A cry from beyond the grave?\n\nFor now, we have no answers."
- cstorms.2170.desc.gestalt: "The scrambled images corrupting some of our exploration drones were decoded. They formed an image of an ancient habitat. Science drones were beset by the sight and sound of an individual being subjected to increasingly cruel treatment. His body was burned, his organs cooked.\n\nSome drones managed to escape the audio-visual assault. They stated that several small objects began to float in close orbit to the body. The organic remains had somehow developed their own gravitational field.\n\nThis unknown force grew in strength until sections of the interior walls were warped and rent by the pressure. It was that moment that our safety systems re-engaged, and the body was jettisoned back into space.\n\nSoon after, a cosmic storm was unleashed in the system. Our vessel barely made it out intact.\n\nWhatever transpired there has precipitated more questions than answers."
+ cstorms.2170.desc.gestalt: "The scrambled images corrupting some of our exploration [controller.GetIndividualNamePlural] were decoded. They formed an image of an ancient habitat. [controller.GetScientistCapital] were beset by the sight and sound of an individual being subjected to increasingly cruel treatment. His body was burned, his organs cooked.\n\nSome [controller.GetIndividualNamePlural] managed to escape the audio-visual assault. They stated that several small objects began to float in close orbit to the body. The organic remains had somehow developed their own gravitational field.\n\nThis unknown force grew in strength until sections of the interior walls were warped and rent by the pressure. It was that moment that our safety systems re-engaged, and the body was jettisoned back into space.\n\nSoon after, a cosmic storm was unleashed in the system. Our vessel barely made it out intact.\n\nWhatever transpired there has precipitated more questions than answers."
 
 # Special Project: Assembling the Past
  cstorms.2180.name: "Assembling the Past"
- cstorms.2180.desc: "After [FromFrom.Leader.GetName]'s experience in §Y[planet_assembling_the_past.System.GetName]§!, our scientists are even more driven to discover what exactly happened with the adAkkaria Convention. The data we gathered during our exploration of [planet_windswept_fates.GetName] and the flotilla graveyard revealed that the galaxy was littered with adAkkaria propaganda stations.\n\nWhat's more, after a set of long discussions, they also suspect that the pattern observed in [Root.GetName]'s glitching was a set of directions to a previously undiscovered system!\n\nA special project has been created to investigate this new system."
+ cstorms.2180.desc: "After [FromFrom.Leader.GetName]'s experience in the §Y[planet_assembling_the_past.System.GetName]§! system, our scientists are even more driven to discover what exactly happened with the adAkkaria Convention. The data we gathered during our exploration of [planet_windswept_fates.GetName] and the flotilla graveyard revealed that the galaxy was littered with adAkkaria propaganda stations.\n\nWhat's more, after a set of long discussions, they also suspect that the pattern observed in [Root.GetName]'s glitching was a set of directions to a previously undiscovered system!\n\nA special project has been created to investigate this new system."
  project_adakkaria_tracing_history: "Tracing History"
  project_adakkaria_tracing_history_DESC: "The coordinates point to a planet in the [planet_assembling_the_past.System.GetName] system. An exploration vessel should be sent to investigate what relevance this planet may have had for the adAkkaria Convention."
 
@@ -1085,7 +1103,7 @@
  NAME_Patriotic_Institute_of_Exalted_Benevolence: "Exalted Benevolence"
 
  cstorms.2185.name: "The Ancient Habitat"
- cstorms.2185.desc: "At first we feared our investigation into [From.solar_system.GetName] had led to a dead end. The directions pointed to a planet suffering from unstable magnetic fields of such severity that its landscape was all but decimated. It was unlikely anything of value could have survived such an onslaught.\n\nHowever, orbiting the planet was an ancient habitat, bearing architectural similarities to the adaAkkaria broadcast station. While hermetically locked from the outside, we were able to generate an entrance signal based on information recovered from the adAkkaria databases.\n\nIt has been eons since anyone last boarded this station. There is no way to know what lies waiting inside."
+ cstorms.2185.desc: "At first we feared our investigation into the [From.solar_system.GetName] system had led to a dead end. The directions pointed to a planet suffering from unstable magnetic fields of such severity that its landscape was all but decimated. It was unlikely anything of value could have survived such an onslaught.\n\nHowever, orbiting the planet was an ancient habitat, bearing architectural similarities to the adaAkkaria broadcast station. While hermetically locked from the outside, we were able to generate an entrance signal based on information recovered from the adAkkaria databases.\n\nIt has been eons since anyone last boarded this station. There is no way to know what lies waiting inside."
  cstorms.2185.a: "Exercise caution."
 
 # The Patriotic Institute of Exalted Benevolence
@@ -1156,7 +1174,7 @@
  cstorms.desc.start.default: "The dread and confusion we experienced at witnessing the remains of the victims was daunting. But so is our desire to comprehend the extent and purpose of the Convention's experiments.\n\nIn a stark and sterile tone, the adAkkarian scientists reported what they had done to these people. Each victim was assigned a phase, and as the phases increased, so did the brutality of their treatment. Fire, electricity, maiming, deprivation of senses and sustenance - nothing was too cruel. Everything for the sake of the glorious mission to maintain adAkkarian Supremacy in the galaxy. Still, reports indicate that even these obscenities may not ultimately have killed the subjects. Much like with §ShaToor Gailon§!, many seemed simply to have given up."
  cstorms.desc.end.default: "Just moments after our observations, [Root.GetLeaderName] collapsed. Between wails of pain, [Root.GetLeaderName] screamed that something was breaking open [Leader.GetHerHis] mind!\n\nThough stable for now, it seems as if some invading entity sought to instill [Leader.GetHerHim] with a radical insight. [Root.GetLeaderName] is keen to try again, believing the experience could ultimately have a profound effect."
  cstorms.desc.end.psionic: "As [Leader.GetHeShe] observed these bodies, [Root.GetLeaderName] began to hear strange whispers, a disembodied voice that called out with great longing:\n§LWe were loyal! We praised the Convention, and believed in its mission.\nThe storms kept calling to us. They engulfed us, desired us!\nWe did what they asked. We were talented and tenacious!\nThey call us evil, they call us traitors, they kill our friends!\n\nTHIS WAS MEANT TO BE A CELEBRATION§!\n\nThe whispers led us to a corridor labeled 'The Final Phase.' But the more advanced security measures in place did not permit access."
- cstorms.desc.end.gestalt: "More strange distortions occurred within our drones' cognitive processes, sparking thoughts that were not our own. Through them, we learned that the test subjects of the Institute spoke with one another through non-physical means, a near instantaneous transmission akin to a nascent hive mind.\n\nWhile we were unable to decipher the exact wording, the purpose of discussion was clear: a revolt was brewing inside Celebration."
+ cstorms.desc.end.gestalt: "More strange distortions occurred within our [controller.GetIndividualNamePlural]' cognitive processes, sparking thoughts that were not our own. Through them, we learned that the test subjects of the Institute spoke with one another through non-physical means, a near instantaneous transmission akin to a nascent hive mind.\n\nWhile we were unable to decipher the exact wording, the purpose of discussion was clear: a revolt was brewing inside Celebration."
  cstorms.desc.authgen.default: "$cstorms.desc.start.authgen$\n\n$cstorms.desc.end.default$"
  cstorms.desc.authgen.psionic: "$cstorms.desc.start.authgen$\n\n$cstorms.desc.end.psionic$"
  cstorms.desc.default.default: "$cstorms.desc.start.default$\n\n$cstorms.desc.end.default$"
@@ -1176,7 +1194,7 @@
  cstorms.2305.desc.start: "We have discovered an enormous hangar. An incredibly complex constellation of wires, pipes, and electronics dominated the space - all leading towards a massive, though empty, missile silo. From all appearances, this web had been connected to an object roughly the size of a corvette.\n\nLogs state the this place was used to assemble an apparatus called the §lTempest Invocator§!, and that it had been deployed successfully in the adSul system. While contact with the Invocator was disrupted, the §Ginvocator power supply§! remains in place."
  cstorms.2305.desc.end.default: "Upon reading the name, the crew was overcome with an irrational sense of rage and began ripping out cables and paneling. It took more than a simple order to calm them down. We are moving ever closer to the truth."
  cstorms.2305.desc.end.psionic: "As we perceived the empty construct, the whispers began again.\n§LYou see it, don't you? At first, we did not know what they were building. We didn't know they would dispose of us. Some wanted revenge. Some of us wanted to be free. Some felt the call of the storms. It had to end, you understand. We had to. We could not take it any longer.§!"
- cstorms.2305.desc.end.gestalt: "Upon reading the name of this device, our exploration drones determined how the §lInvocator§! was activated, and the method by which its signal bounced through the many propaganda stations until arriving at last at its target.\n\nAnd we were not immune to that fate."
+ cstorms.2305.desc.end.gestalt: "Upon reading the name of this device, our exploration [controller.GetIndividualNamePlural] determined how the §lInvocator§! was activated, and the method by which its signal bounced through the many propaganda stations until arriving at last at its target.\n\nAnd we were not immune to that fate."
  cstorms.2305.desc.default: "$cstorms.2305.desc.start$\n\n$cstorms.2305.desc.end.default$"
  cstorms.2305.desc.psionic: "$cstorms.2305.desc.start$\n\n$cstorms.2305.desc.end.psionic$"
  cstorms.2305.desc.gestalt: "$cstorms.2305.desc.start$\n\n$cstorms.2305.desc.end.gestalt$"
@@ -1218,7 +1236,7 @@
  cstorms.2355.a: "Sacrifices must be made."
 
  MESSAGE_INSTITUTE_SPAWNED_STORM_TITLE: "Storm Invoked"
- MESSAGE_INSTITUTE_SPAWNED_STORM: "A £pops£ pop has invoked themselves on $PLANET$, becoming a new $STORM$ in $SYSTEM$."
+ MESSAGE_INSTITUTE_SPAWNED_STORM: "§Y100§! £pop£ §HPops§! have invoked themselves on $PLANET$, becoming a new $STORM$ in $SYSTEM$."
 
  artifact_adakkaria_research: "Secrets of the adAkkaria"
  artifact_adakkaria_research_desc: "Delve deeper into the secrets of the adAkkaria."
@@ -1236,7 +1254,7 @@
  cstorms.2365.desc.gestalt: "$cstorms.2365.desc.start$\n\n$cstorms.2365.desc.end.gestalt$"
  cstorms.2365.a: "Engage with this new knowledge. Gently!"
  cstorms.2365.b: "No, let these secrets rest."
- cstorms.2365.a.tt: "- Chance of a £pops£ pop gaining the $Name_Storm_Fused$ trait during a storm quadrupled.\n - Every 20 years there is a small chance a £pops£ pop dies and becomes a storm.\n - Cultivate Potential: +5% Happiness Empire modifier."
+ cstorms.2365.a.tt: "- Chance of §Y100§! £pop£ §HPops§! gaining the $Name_Storm_Fused$ trait during a storm quadrupled.\n - Every 20 years there is a small chance that §Y100§! £pop£ §HPops§! die and become a storm.\n - Cultivate Potential: +5% Happiness Empire modifier."
 
  Name_Storm_Fused: "Storm-Fused"
  Name_Storm_Fused_affix: "Storm-Fused " # The trailing space is intentional, to give a space before the species name on the species screen
@@ -1247,7 +1265,7 @@
 
  origin_storm_chasers: "Storm Chasers"
  origin_storm_chasers_desc: "There is no challenge they will not face, no lead they'll fail to chase - and no storm they will ignore.\n\nAt its core, this is a civilization seeking thrills. To its benefit, and to its detriment."
- origin_tooltip_storm_chasers_effects: "- $LEADERS_TRAITS$ ['concept_storm_rider']\n- Planet $mod_planet_jobs_unity_produces_mult$ per §YStorm Building§!: §G+$@storm_chasers_storm_building_unity_produces_mult|%0$§! \n- §Y$default_storm$§! Appearance Chance Within Borders: §G+100%§! \n- §YCosmic Storm Technology§! Research Option Chance: §G+175%§!\n- Access to the ['concept_weather_forecasting_mode']\n- $ADDITONAL_TECHNOLOGIES_STRING$$TABBED_NEW_LINE$- £physics£ ['technology:tech_storm_prediction_1']"
+ origin_tooltip_storm_chasers_effects: "- $LEADERS_TRAITS$ ['concept_storm_rider']\n- Planet $mod_planet_jobs_unity_produces_mult$ per §YStorm Building§!: §G+$@storm_chasers_storm_building_unity_produces_mult|%0$§! \n- §Y$default_storm$§! Appearance Chance Within Borders: §G+100%§! \n- §YCosmic Storm Technology§! Research Option Chance: §G+175%§!\n- Access to the ['concept_weather_forecasting_mode']\n- $ADDITIONAL_TECHNOLOGIES_STRING$$TABBED_NEW_LINE$- £physics£ ['technology:tech_storm_prediction_1']"
 
  START_SCREEN_STORM_CHASERS: "What's life without the rush? Burn fast and die radically - that's always been our way. But when every trail is blazed and even the tallest peak is scaled, what next?\n\nOur planet has always been a stormy one, prone to tempests and deluges of all kinds. If we find ways to use these unique conditions, we have a chance to summon a raging cosmic storm.\n\nOur legendary forebears long since mastered the challenges of our homeworld. The time has come to blast off screaming into the void. It will not be easy, but as the old saying goes, "Only the bold can reach the horizon.""
 
@@ -1331,7 +1349,7 @@
  cstorms.3110.desc.outro: "By injecting energy into the natural storms, we can generate the conditions for electric storms.\n\nPlanetary core manipulation could reorient the magnetic field of [owner.capital_scope.GetName] to give rise to magnetic storms.\n\nFinally, by reversing the tachyon polarity at specific planetary sites, field changes can produce gravity storms."
  cstorms.3110.desc.regular: "We have learned how to kickstart the tempestuous vibrations of [owner.capital_scope.GetName], shaping them into the ultimate experience. But we must decide which storm type is the most glorious.\n\n$cstorms.3110.desc.outro$"
  cstorms.3110.desc.hive: "We have learned how to kickstart the tempestuous vibrations of [owner.capital_scope.GetName], shaping them into the ultimate experience. But we have yet to decide which storm type is the most glorious.\n\n$cstorms.3110.desc.outro$"
- cstorms.3110.desc.machine: "We have learned how to kickstart the tempestuous vibrations of [owner.capital_scope.GetName], shaping them into the ultimate experience. But our value judgement processes are stuck in recursive loops trying to determine which storm type is the most glorious.\n\n$cstorms.3110.desc.outro$"
+ cstorms.3110.desc.machine: "We have learned how to kickstart the tempestuous vibrations of [owner.capital_scope.GetName], shaping them into the ultimate experience. But our value judgment processes are stuck in recursive loops trying to determine which storm type is the most glorious.\n\n$cstorms.3110.desc.outro$"
  cstorms.3110.a: "Charge the clouds."
  cstorms.3110.a.tt: "Seed a planetary §Y$electric_storm$§!."
  cstorms.3110.b: "Magnetize the core."
@@ -1587,7 +1605,7 @@
  has_patriotic_institute: "The $building_adakkaria_patriotic_institute$"
  has_patriotic_institut_desc: "This planet was once the foundation of the adAkkaria Convention. The $building_adakkaria_patriotic_institute$ is all that is left of this once mighty civilization."
  has_patriotic_institute_tt: "Has building: $building_adakkaria_patriotic_institute$. Colonize this planet to gain ownership."
- adakkaria_patriotic_institute_desc.supercharged: "Chance every year a Storm is triggered in the system at the cost of one £pop£ pop."
+ adakkaria_patriotic_institute_desc.supercharged: "Chance every year a Storm is triggered in the system at the cost of §Y100§! £pop£ §HPops§!."
 
 #Planet Modifiers
  crimson_crawlers_sashimi_style: "Crimson Crawlers: Raw Consumption"
@@ -1605,9 +1623,9 @@
  wooden_planet_tt: "Housing costs $w_food$ to build and upkeep.\nFarms cost $w_food$ to build."
 
 #Planet Job Modifiers
- mod_planet_miners_rare_crystals_produces_mult: "£rare_crystals£ $rare_crystals$ from £job_miner£ [GetMinerPlural]"
- mod_planet_miners_rare_crystals_produces_add: "$mod_planet_miners_rare_crystals_produces_mult$"
- mod_planet_farmers_volatile_motes_produces_add: "£volatile_motes£ $volatile_motes$ from £job_farmer£ [GetFarmerPlural]"
+ mod_planet_miners_rare_crystals_produces_mult: "£rare_crystals£ $rare_crystals$ from [miner.GetIcon] [GetMinerPlural]"
+ mod_planet_miners_rare_crystals_produces_add: "£rare_crystals£ $rare_crystals$ per $pop_group_unit$ [miner.GetIcon] [GetMinerPlural]"
+ mod_planet_farmers_volatile_motes_produces_add: "£volatile_motes£ $volatile_motes$ per $pop_group_unit$ [farmer.GetIcon] [GetFarmerPlural]"
 
 # Eruption Event
  recent_eruption: "Recent Eruption Occurred"
@@ -1645,7 +1663,7 @@
  particle_storm_aftermath_modifier_severity_3_desc: "$particle_storm_aftermath_modifier_severity_desc$"
 
  gravity_storm_aftermath_modifier: "Gravitational Flux"
- gravity_storm_aftermath_modifier_tooltip: "$STORM_AFTERMATH_DESC$\n$t$- §H$gravity_storm_aftermath_modifier$§!:\n$tt$- §R+25%§! to §R+100%§! $mod_planet_structures_cost_mult$\n$tt$- §G+20%§! to §G+60%§! $mod_planet_administrators_unity_produces_mult$"
+ gravity_storm_aftermath_modifier_tooltip: "$STORM_AFTERMATH_DESC$\n$t$- §H$gravity_storm_aftermath_modifier$§!:\n$tt$- §R+25%§! to §R+100%§! $mod_planet_structures_cost_mult$\n$tt$- §G+20%§! to §G+60%§! $mod_planet_bureaucrats_unity_produces_mult$"
  gravity_storm_aftermath_modifier_severity_desc: "While fluctuating gravity levels from the $gravity_storm$ have made building difficult, they do provide unique insights into gravity and space-time."
  gravity_storm_aftermath_modifier_severity_1: "Aftermath: $gravity_storm_aftermath_modifier$"
  gravity_storm_aftermath_modifier_severity_1_desc: "$gravity_storm_aftermath_modifier_severity_desc$"
@@ -1665,7 +1683,7 @@
  magnetic_storm_aftermath_modifier_severity_3_desc: "$magnetic_storm_aftermath_modifier_severity_desc$"
 
  solar_storm_aftermath_modifier: "Radioactive Lockdown"
- solar_storm_aftermath_modifier_tooltip: "$STORM_AFTERMATH_DESC$\n$t$- §H$solar_storm_aftermath_modifier$§!:\n$tt$- §R-40%§! to §R-60%§! $MOD_POP_GROWTH_SPEED$\n$tt$- §R+10%§! to §R+30%§! $MOD_POP_AMENITIES_USAGE_MULT$\n$tt$- §G+20%§! to §G+40%§! $MOD_ARMY_DEFENSE_DAMAGE_MULT$"
+ solar_storm_aftermath_modifier_tooltip: "$STORM_AFTERMATH_DESC$\n$t$- §H$solar_storm_aftermath_modifier$§!:\n$tt$- §R-40%§! to §R-60%§! $MOD_LOGISTIC_GROWTH_MULT$\n$tt$- §R+10%§! to §R+30%§! $MOD_POP_AMENITIES_USAGE_MULT$\n$tt$- §G+20%§! to §G+40%§! $MOD_ARMY_DEFENSE_DAMAGE_MULT$"
  solar_storm_aftermath_modifier_severity_desc: "High levels of radiation caused by the $solar_storm$ necessitate near permanent lockdown. Given the heavily controlled living spaces, armed control of the planet has become significantly easier at a cost of a despondent population."
  solar_storm_aftermath_modifier_severity_1: "Aftermath: $solar_storm_aftermath_modifier$"
  solar_storm_aftermath_modifier_severity_1_desc: "$solar_storm_aftermath_modifier_severity_desc$"
@@ -1709,16 +1727,16 @@
 #Tutorial Localisation
  cstorms_tutorial.a: "Understood"
 
- cstorms_tutorial.1.name: "Cosmic Storm Manipulation"
+ cstorms_tutorial.1.name: "Tutorial: Storm Manipulation"
  cstorms_tutorial.1.desc: "We can §Smanipulate§! the §Spath§! of a §Y$default_storm$§! for our own benefit. Either to §Sdeflect§! them away from our systems, or §Sattract§! them to utilize their positive effects."
 
- TUTORIAL_STORM_FORECAST_MAP_MODE_TITLE: "Weather Forecast Map Mode"
- TUTORIAL_STORM_FORECAST_MAP_MODE_DESC: "This map mode visualizes any §YCosmic Storms§! in the galaxy, with information on their effects.\n\n£storm_forecast_map£\n\nTo access the weather forecast map mode, click the map icon in the bottom right.\n\nWith advanced technology, it can be upgraded to give increasingly accurate predictions not only of the location and direction of a §Y$default_storm$§!, but also what type of storm to expect."
+ TUTORIAL_STORM_FORECAST_MAP_MODE_TITLE: "Tutorial: Weather Forecast"
+ TUTORIAL_STORM_FORECAST_MAP_MODE_DESC: "This map mode visualizes any §SCosmic Storms§! in the galaxy, with information on their effects.\n\n£storm_forecast_map£\n\nTo access the weather forecast map mode, click the map icon in the bottom right.\n\nWith advanced technology, it can be upgraded to give increasingly accurate predictions not only of the location and direction of a §S$default_storm$§!, but also what type of storm to expect."
  concept_weather_forecasting_mode: "$TUTORIAL_STORM_FORECAST_MAP_MODE_TITLE$"
  concept_weather_forecasting_mode_desc: "$TUTORIAL_STORM_FORECAST_MAP_MODE_DESC$"
 
- TUTORIAL_STORM_PROTECTION_TITLE: "Cosmic Storm Introduction"
- TUTORIAL_STORM_PROTECTION_DESC: "§YCosmic Storms§! are a formidable force of nature. They can have devastating effects on our fleets, economy, and even our population. However, they can also provide great opportunities.\n\nResearching §SStorm Technology§! provides us with buildings and tech to greatly §Sreduce§! the negative §Seffects§! of a storm. With §Sadditional research§! should even be able to take §Sadvantage§! of the storms."
+ TUTORIAL_STORM_PROTECTION_TITLE: "Tutorial: Cosmic Storms"
+ TUTORIAL_STORM_PROTECTION_DESC: "§SCosmic Storms§! are a formidable force of nature. They can have devastating effects on our fleets, economy, and even our population. However, they can also provide great opportunities.\n\nResearching §SStorm Technology§! provides us with buildings and tech to greatly §Sreduce§! the negative §Seffects§! of a storm. With §Sadditional research§! should even be able to take §Sadvantage§! of the storms."
 
 # Influence Tiers
  cosmic_storm_influence_low: "Low"
@@ -1848,7 +1866,7 @@
  d_ghostly_canyon: "Ghostly Canyon"
  d_ghostly_canyon_desc: "Ethereal apparitions are witnessed by those who visit this canyon."
  cstorms.1725.name: "Ghostly Apparitions"
- cstorms.1725.desc.common: "Following the recent §Y$shroud_storm$§! in [this.solar_system.GetName], [owner.GetPopTypeNamePlural] report inexplicable sightings of ethereal apparitions in an isolated canyon. These ghostly blue figures appear briefly, unable or unwilling to interact with our [owner.GetPopTypeNamePlural], wandering aimlessly before dissipating."
+ cstorms.1725.desc.common: "Following the recent §Y$shroud_storm$§! in the [this.solar_system.GetName] system, [owner.GetColonistPlural] report inexplicable sightings of ethereal apparitions in an isolated canyon. These ghostly blue figures appear briefly, unable or unwilling to interact with our [owner.GetColonistPlural], wandering aimlessly before dissipating."
  cstorms.1725.desc.psionic: "While the apparitions appear to be psionic in nature, we have not been able to establish any amount of mental communication with these entities. However, we've found their presence to be a passive reinforcement to our own telepathic abilities."
  cstorms.1725.desc.spiritualist: "This remarkable phenomenon is providing a welcome reminder of the intangible wonders of our existence."
  cstorms.1725.desc.gestalt: "No physical harm or aggressive behavior has thus far been reported."
@@ -1895,13 +1913,14 @@
  cstorms.1765.desc: "The [Owner.GetEngineerPlural] have dealt with the hydroponic blockages and water shortages on §H[this.GetName]§!. The colony's water supply network has been improved and can now filter out complex impurities such as those introduced by the $celestial_storm$.\n\nThese improvements to our water infrastructure can be repurposed to improve irrigation efforts across the [Owner.GetName]."
 
 # Flightless Fauna
- cstorms.1771.name: "Cosmic Clogging"
+ cstorms.1771.name: "Flightless Fauna"
  cstorms.1771.desc.common: "The [Owner.GetScientistPlural] on [this.GetName] have observed harsh repercussions of the §Y$gravity_storm$§! on the local avian wildlife.\n\nThe gravitational fluctuations brought on by the storm are leading to erratic atmospheric conditions, rendering several species of avian fauna incapable of flight."
  cstorms.1771.desc.default: "Not only is this preventing the creatures unable to hunt as normal, it is also leaving them vulnerable to predators.\n\nThere is concern that the afflicted species may be hunted to extinction if we do not intervene."
  cstorms.1771.desc.swarm: "A veritable feast awaits us."
  cstorms.1771.a: "Easy Prey."
  cstorms.1771.b: "Let nature take its course."
  cstorms.1771.c: "Place the creatures in a reserve."
+ cstorms.1771.evopred: "Save their DNA before the end."
 
  d_avian_reserve: "Avian Reserve"
  d_avian_reserve_desc: "A secluded nature reserve built to house vulnerable species of avian fauna."
@@ -1955,10 +1974,10 @@
  cstorms.1816.a: "Investigate."
 
  STORM_IN_A_BOX_INVESTIGATE_PROJECT: "Study the Capsule"
- STORM_IN_A_BOX_INVESTIGATE_PROJECT_DESC: "A mysterious and visibly-damaged capsule is drifting through §H[this.GetName]§!. We know neither its origin nor function. It possesses no evident weaponry and we believe further analysis of its advanced construction would be a safe and worthwhile venture."
+ STORM_IN_A_BOX_INVESTIGATE_PROJECT_DESC: "A mysterious and visibly-damaged capsule is drifting through the §H[this.GetName]§! system. We know neither its origin nor function. It possesses no evident weaponry and we believe further analysis of its advanced construction would be a safe and worthwhile venture."
 
  cstorms.1820.name: "Storm Trap"
- cstorms.1820.desc: "[this.leader.GetName] believes that the mysterious capsule drifting through [solar_system.GetName] is an ancient "storm trap", which may have once been part of a larger defense grid.\n\nThe device's intake port is sealed tightly, but our readings suggest it is holding the compressed energy and matter of a captive cosmic storm inside.\n\nFinding a way to open this remarkable container may teach us a great deal about storm mitigation, although at the risk of releasing whatever forces are currently contained within."
+ cstorms.1820.desc: "[this.leader.GetName] believes that the mysterious capsule drifting through the [solar_system.GetName] system is an ancient "storm trap", which may have once been part of a larger defense grid.\n\nThe device's intake port is sealed tightly, but our readings suggest it is holding the compressed energy and matter of a captive cosmic storm inside.\n\nFinding a way to open this remarkable container may teach us a great deal about storm mitigation, although at the risk of releasing whatever forces are currently contained within."
  cstorms.1820.a: "There is much to learn here."
  cstorms.1820.b: "Too dangerous. Leave it be."
 
@@ -1966,8 +1985,8 @@
  STORM_IN_A_BOX_TRAP_PROJECT_DESC: "An ancient "storm trap" is drifting freely through space, carrying a compressed cosmic storm within. Opening it would provide valuable insights into storm management and mitigation, at the risk of releasing whatever forces are trapped inside."
 
  cstorms.1826.name: "Storm Released"
- cstorms.1826.desc: "[leader.GetName] completed analysis of the ancient storm trap's workings and was able to unlock its intake mechanism. As the ports opened, the §H[from.GetStormType]§! held inside was released into the void of [solar_system.GetName].\n\nStudy of the trap's complex engineering has produced fascinating insights into storm-resistant materials and structures, though we still do not understand how the device is capable of containing storms entirely. This knowledge will greatly aid us in weathering future cosmic disturbances."
- cstorms.1826.storm_tt: "A small, low-level §Y$default_storm$§! spawns in [solar_system.GetName]"
+ cstorms.1826.desc: "[leader.GetName] completed analysis of the ancient storm trap's workings and was able to unlock its intake mechanism. As the ports opened, the §H[from.GetStormType]§! held inside was released into the void of the [solar_system.GetName] system.\n\nStudy of the trap's complex engineering has produced fascinating insights into storm-resistant materials and structures, though we still do not understand how the device is capable of containing storms entirely. This knowledge will greatly aid us in weathering future cosmic disturbances."
+ cstorms.1826.storm_tt: "A small, low-level §Y$default_storm$§! spawns in the [solar_system.GetName] system"
  storm_trap_insight_modifier: "Storm Trap Insight"
  storm_trap_insight_modifier_tt: "Reduces the negative effects of §YCosmic Storms§! by §G10%§!."
 
@@ -2016,7 +2035,7 @@
  situation_initiate_storm_desc_destabilize: "We are destabilizing the gravity fields of §H[target.GetName]§! to seed a §Y$gravity_storm$§!."
  situation_initiate_storm_desc_scramble: "We are scrambling the celestial dust around §H[target.GetName]§! to seed a §Y$celestial_storm$§!."
  situation_initiate_storm_monthly_change_tooltip: "$situation_monthly_change_tooltip_approaches_dependent$"
- situation_initiate_storm_finisher_effects: "A $default_storm$ of relevant type is created in [target.solar_system.GetName]."
+ situation_initiate_storm_finisher_effects: "A $default_storm$ of relevant type is created in the [target.solar_system.GetName] system."
  approach_situation_initiate_storm_supercharge: "Supercharge the Star"
  approach_situation_initiate_storm_supercharge_tt: "Begin preparations for a §Y$solar_storm$§![GetGatherStormSuperchargeTTSecond][GetGatherStormSuperchargeTTThird]"
  approach_situation_initiate_storm_overfeed: "Oversaturate the Star"
@@ -2037,7 +2056,7 @@
  approach_situation_locked_tt: "Another approach is already in progress."
 
  cstorms.2000.name: "Storm Preparation"
- cstorms.2000.desc_common_1: "We are now in position in §H[target.solar_system.GetName]§! and ready to begin the necessary preparations to generate a §Y$default_storm$§!.\n\nBy temporarily supercharging [target.GetName], we can create the ideal conditions to seed the desired astrometeorological reaction."
+ cstorms.2000.desc_common_1: "We are now in position in the §H[target.solar_system.GetName]§! system and ready to begin the necessary preparations to generate a §Y$default_storm$§!.\n\nBy temporarily supercharging [target.GetName], we can create the ideal conditions to seed the desired astrometeorological reaction."
  cstorms.2000.desc_tech: "\nUsing advanced energy manipulation methods, we could oversaturate [target.GetName] with raw materials to form a more structurally complex storm."
  cstorms.2000.desc_common_2: "\nThis will be a time-consuming endeavor, but the end result will be a great achievement for [owner.GetName]. The star itself will remain entirely intact after the operation is complete."
  cstorms.2000.a: "Supercharge the Star."
@@ -2048,8 +2067,8 @@
  cstorms.2000.c: "Abort the project."
 
  cstorms.2010.name: "Storm Calibration"
- cstorms.2010.desc_irradiate_only: "The preparations towards the $default_storm$ in §H[target.solar_system.GetName]§! have reached a pivotal stage. The next actions require intense focus and new resource commitments to forge a §Y$solar_storm$§! by manipulating the solar winds of §H[target.GetName]§!"
- cstorms.2010.desc_others: "The preparations towards the $default_storm$ in §H[target.solar_system.GetName]§! have reached a critical juncture. The next actions are crucial, and require more focused resource commitments to the cause."
+ cstorms.2010.desc_irradiate_only: "The preparations towards the $default_storm$ in the §H[target.solar_system.GetName]§! system have reached a pivotal stage. The next actions require intense focus and new resource commitments to forge a §Y$solar_storm$§! by manipulating the solar winds of §H[target.GetName]§!"
+ cstorms.2010.desc_others: "The preparations towards the $default_storm$ in the §H[target.solar_system.GetName]§! system have reached a critical juncture. The next actions are crucial, and require more focused resource commitments to the cause."
  cstorms.2010.a: "Intensify solar winds."
  cstorms.2010.a.tt: "$approach_situation_initiate_storm_irradiate_tt$\nCost $@irradiate_alloy_upkeep|0$ $r_alloys$ Monthly, $@default_monthly_progress$ Progress/Month"
  cstorms.2010.b: "Sever electron fields."
@@ -2059,8 +2078,8 @@
  cstorms.2010.d: "Abandon the project."
 
  cstorms.2015.name: "$cstorms.2010.name$"
- cstorms.2015.desc_one_tech_only: "The preparations towards the $default_storm$ in §H[target.solar_system.GetName]§! have reached a pivotal stage. The next actions of [storm_researcher.GetName] require intense focus and new resource commitments to take advantage of the bloated state of [target.GetName]."
- cstorms.2015.desc_others: "The preparations towards the $default_storm$ in §H[target.solar_system.GetName]§! have reached a critical juncture. The next actions of [storm_researcher.GetName] are crucial, and require more focused resource commitments to the cause, if we are to properly take advantage of the bloated of state of [target.GetName]."
+ cstorms.2015.desc_one_tech_only: "The preparations towards the $default_storm$ in the §H[target.solar_system.GetName]§! system have reached a pivotal stage. The next actions of [storm_researcher.GetName] require intense focus and new resource commitments to take advantage of the bloated state of [target.GetName]."
+ cstorms.2015.desc_others: "The preparations towards the $default_storm$ in the §H[target.solar_system.GetName]§! system have reached a critical juncture. The next actions of [storm_researcher.GetName] are crucial, and require more focused resource commitments to the cause, if we are to properly take advantage of the bloated of state of [target.GetName]."
  cstorms.2015.a: "Agitate particles."
  cstorms.2015.a.tt: "$approach_situation_initiate_storm_agitate_tt$\nCost $@rare_resource_upkeep|0$ $r_volatile_motes$ Monthly, $@default_monthly_progress$ Progress/Month"
  cstorms.2015.b: "Destabilize gravitational fields."
@@ -2168,3 +2187,21 @@
  storm_attracting_allow: "$TRIGGER_FAIL$Cannot be built if any §YStorm Repulsion§! Building is present in system"
 
  TOO_IMPERIAL: "Has an Imperialist Faction"
+
+ executive: "$job_executive$"
+ noble: "$job_noble$"
+ merchant: "$job_merchant$"
+ head_researcher: "$job_head_researcher$"
+ high_priest: "$job_high_priest$"
+ technophant: "$job_technophant$"
+ warden: "$job_warden$"
+
+ noble_researcher: "$job_noble_researcher$"
+ job_noble_researcher: "Noble Scientist"
+ job_noble_researcher_plural: "Noble Scientists"
+ job_noble_researcher_desc: "The brightest and most noble of scions are educated in both decorum and the scientific method, to better explain their positions of supremacy."
+
+ sacred_noble: "$job_sacred_noble$"
+ job_sacred_noble: "Sacred Noble"
+ job_sacred_noble_plural: "Sacred Nobles"
+ job_sacred_noble_desc: "Divinity by Inheritance is the way. Inheritance by Divinity is the means. Thus we are blessed with nobility."

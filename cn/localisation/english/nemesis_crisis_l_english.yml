@@ -6,7 +6,7 @@
 
  # Menace name
  menace_name:1 "$menace$："
- 
+
  # Crisis Path names
  crisis_path_destruction_name:0 "毁灭之路"
  crisis_path_destruction_desc:0 "秩序是反自然的。真正的自然应当处于混沌之中。\n\n我们不是在毁灭宇宙，而是在修复它。"
@@ -16,7 +16,7 @@
 
  crisis_path_deception_name:0 "诡诈之路"
  crisis_path_deception_desc:0 "如果所有人的目光都被舞台中央那位蹦蹦跳跳的小丑吸引了，那么你就能在阴影中干更多的活了。"
- 
+
  # Menacing Actions
  menacing_actions_name:0 "威慑行动"
  menacing_actions_destruction_title:0 "$menacing_actions_name$——$crisis_path_destruction_name$"
@@ -44,10 +44,10 @@
  menacing_actions_supremacy_vassalize_empire_title:0 "附庸一个帝国"
  menacing_actions_supremacy_vassalize_empire_desc:0 "附庸一个帝国会获得§H100§!点 £menace£ 威慑力。"
  menacing_actions_supremacy_invade_primitives_title:0 "入侵原始文明"
- menacing_actions_supremacy_invade_primitives_desc:0 "被入侵土著星球上的每个 £pops£ 人口会使你获得§H1§!点 £menace£ 威慑力。"
+ menacing_actions_supremacy_invade_primitives_desc:0 "被入侵土著星球上的每个£pop£人口将使你获得§H1§!£menace£威慑力。"
  menacing_actions_supremacy_sent_marauders_title:0 "发动劫掠行动"
- menacing_actions_supremacy_sent_marauders_desc:0 "在劫掠中劫得的每个 £pops£ 人口会使你获得§H50§!点 £menace£ 威慑力。"
- 
+ menacing_actions_supremacy_sent_marauders_desc:0 "每个在掠袭轨道轰炸中劫得的£pop£ £人口将使你获得§H50§!£menace£威慑力。"
+
  # Menacing Actions - Deception
  menacing_actions_deception_force_resolution_title:0 "强行通过"
  menacing_actions_deception_force_resolution_desc:0 "通过一个大多数国家反对的议案会获得§H5§!点 £menace£ 威慑力。"
@@ -59,7 +59,7 @@
  menacing_actions_deception_call_in_favor_desc:0 "请求的每点 £favor£ 人情会使你获得§H1§!点 £menace£ 威慑力。"
  menacing_actions_deception_win_humiliation_war_title:0 "赢得羞辱之战"
  menacing_actions_deception_win_humiliation_war_desc:0 "赢得一场羞辱之战会获得§H200§!点 £menace£ 威慑力。"
- 
+
  # Crisis Perks
  crisis_perk:0 "天灾特典"
  crisis_perk_plural:0 "天灾特典"
@@ -72,7 +72,7 @@
 
  ### menp_undertaker:0 "Undertaker"
  ### menp_undertaker_desc:0 "'Death' is such a strong word. We are merely returning their matter to its initial state."
- ### crisis_perks_destruction_undertaker_unlock:0 "Purge 50 £pops£ Pops to unlock this $crisis_perk$."
+ ### crisis_perks_destruction_undertaker_unlock:0 "Purge §Y50§! £pop£ Pops to unlock this $crisis_perk$."
  ### undertaker_passive:0 "Purging generates £menace£ Menace."
  ### undertaker_active:0 "Purging speed is greatly increased, and generates £alloy£ Alloys."
  ### menp_ship-chipper:0 "Ship-chipper"
@@ -85,7 +85,7 @@
  ### crisis_perks_destruction_death_from_above_unlock:0 "Destroy 10 buildings through bombardment to unlock this $crisis_perk$."
  ### menp_death_from_above_passive:0 "When bombarding, Planet Devastation is 20% faster."
  ### menp_death_from_above_active:0 "Unlocks Armageddon Bombardment."
- 
+
  crisis_perks_supremacy_privateering_title:0 "私掠许可"
  crisis_perks_supremacy_privateering_desc:0 "亲自上阵打击敌人？！噢，拜托，有人会帮我们料理这事的。"
  crisis_perks_supremacy_privateering_unlock:0 "解锁此$crisis_perk$需要先同时雇佣4支掠夺者舰队。"
@@ -117,8 +117,8 @@
  crisis_perks_deception_shadowplay_unlock:0 "解锁此$crisis_perk$需要先完成§H10项谍报行动§!。"
  crisis_perks_deception_shadowplay_passive:0 "谍报行动速度加快20%，开销减少20%。"
  crisis_perks_deception_shadowplay_active:0 "获得其它帝国的§G+20情报§!。"
- 
- # Crisis UI 
+
+ # Crisis UI
  menace_value: "£menace£ $VAL|0$"
  menace_gaining: "完成§H天灾目标§!以获取§Y威慑力§!。"
  menace_desc: "威慑力是一种用于衡量我们与天幕中的灾祸能量共鸣程度的数值。"
@@ -169,28 +169,28 @@
  casus_belli_cb_path_destruction:0 "毁灭"
  war_goal_wg_path_destruction:1 "毁灭之路"
  war_goal_wg_path_destruction_desc:0 "前进，摧毁，让一切归于死亡。"
- MENACE_PERK_NOT_FOUND:0 "$COUNTRY|Y$无威慑特典$PERK|Y$"
- MENACE_PERK_ALREADY_ACTIVE:0 "$COUNTRY|Y$已启用威慑特典$PERK|Y$"
- MENACE_PERK_NOT_ACTIVE:0 "$COUNTRY|Y$未启用威慑特典$PERK|Y$"
+ MENACE_PERK_NOT_FOUND:0 "$COUNTRY|Y$没有天灾增益：$PERK|Y$"
+ MENACE_PERK_ALREADY_ACTIVE:0 "$COUNTRY|Y$已经启用天灾增益$PERK|Y$"
+ MENACE_PERK_NOT_ACTIVE:0 "$COUNTRY|Y$未启用天灾增益$PERK|Y$"
  MENACE_PERK_ACTIVATION_TOO_RECENT:0 "$TRIGGER_FAIL$$PERK|Y$在$DATE|Y$前无法移除"
  LOCKED_RED:0 "§R锁定§!"
- FROM_PERKS:0 "来自威慑特典"
+ FROM_PERKS:0 "天灾增益产生"
  MENACE_PERK_EFFECTS_DESC:0 "$EFFECTS$\n$EFFECT$"
- 
+
  menace:0 "威慑力"
  TRADITIONS_TAB_SHORT:0 "传统和飞升特典"
  RELICS_TAB_SHORT:0 "遗珍"
  CRISIS_TAB_SHORT:0 "天灾"
- CRISIS_TAB_DISABLED:1 "只有搭配$TRAD|Y$或§Y$ap_cosmogenesis$§!飞升特典才可用"
+ CRISIS_TAB_DISABLED:1 "只有搭配$TRAD|Y$、§Y$ap_cosmogenesis$§!或§Y$ap_behemoths$§!飞升特典才可用"
  CRISIS_TAB_DESC:2 "你就是反派吗？"
 
  new_crisis_perks_tt:0 "\n§G新天灾特典已解锁§!"
- can_advance_crisis_progression:0 "我们§Y天灾进度§!的下一个等级已解锁"
- can_advance_crisis_progression_final:0 "我们§Y天灾进度§!的§R最终等级§!已解锁"
+ can_advance_crisis_progression:0 "我们正在推进§Y天灾进度§!以解锁下一等级"
+ can_advance_crisis_progression_final:0 "我们正在推进§Y天灾进度§!以解锁§R最终等级§!"
  unlock_crisis_corvette:0 "§Y$crisis_corvette_plural$§!现在可供建造"
  unlock_crisis_destroyer:0 "§Y$crisis_destroyer_plural$§!现在可供建造"
  unlock_crisis_cruiser:0 "§Y$crisis_cruiser_plural$§!现在可供建造"
- 
+
  count_owned_army_trigger:0 "拥有的军队$CONDITIONS$数量$IS_NOT$$COMPARATOR$$NUM|Y$"
  count_owned_army_all_trigger:0 "$IS_ALL_NOT$拥有的军队满足下列条件"
 

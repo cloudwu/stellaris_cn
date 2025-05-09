@@ -34,12 +34,14 @@
  job_robot_caretaker_plural:0 "Robot Caretakers"
  job_robot_caretaker_desc:0 "A caretaker maintains the robot who has become something of a mascot for the planet."
  mod_job_robot_caretaker_add:0 "$job_robot_caretaker$ Jobs"
+ turtle_miner: "$job_turtle_miner$"
  job_turtle_miner:0 "Nemma Miner"
  job_turtle_miner_plural:0 "Nemma Miners"
  job_turtle_miner_desc:0 "Using powerful drills, we can harvest both the mineral shell and the  biological innards of the giant native Nemmas."
  job_turtle_miner_gestalt:0 "Nemma Mining Drone"
  job_turtle_miner_gestalt_plural:0 "Nemma Mining Drones"
  job_turtle_miner_gestalt_desc:0 "Using powerful drills, we can harvest both the mineral shell and the  biological innards of the giant native Nemmas."
+ miner_is_turtle_miner_tt: "$job_miner_plural_with_icon$ are converted into [miner.GetIcon] $job_turtle_miner_plural$"
  mod_job_turtle_miner_add:0 "$job_turtle_miner$ Jobs"
  mod_job_turtle_miner_gestalt_add:0 "$job_turtle_miner_gestalt$ Jobs"
  mod_job_turtle_miner_per_pop:1 "§G+1§! $job_turtle_miner$ Job per $VALUE$ Pops"
@@ -74,7 +76,7 @@
  TAME_THE_SWARM_DESC:0 "Our advanced knowledge of Artificial Intelligence can be used to reprogram and tame the nanites. They could be a great asset in building structures on the planet - and with their link to the world's ecosystem, it should be possible to instruct the nanites to create a second homeworld."
  TAME_THE_SWARM_DESC_ARTIFICIAL:0 "Our advanced knowledge of Artificial Intelligence can be used to reprogram and tame the nanites. They could be a great asset in building structures on the planet - and with their link to the world's ecosystem, it should be possible to instruct the nanites to create a paradise."
 
- ENLIGHTEN_RADIO:0 "Enlighten the Radiotropic"
+ ENLIGHTEN_RADIO:0 "Enlighten the Radiotrophic"
  ENLIGHTEN_RADIO_DESC:0 "These plants that can live and thrive on worlds with more radiation than atmosphere could be an excellent addition to our empire. But before then, we will need to enhance their minds and teach them thousands of years of progress in a few months."
 
  GAS_RESTORATION:0 "[From.GetName] Restoration Project"
@@ -91,7 +93,7 @@
  # Decisions
  decision_crystalline_refugees:0 "Settle Crystalline Refugees"
  decision_crystalline_refugees_desc:0 "Find a home for the $NAME_Central_Crystal_Species$ refugees, who have been banished from their homeland in the $NAME_Central_Crystal_Country$."
- decision_crystalling_refugees_effect_tt:0 "§G5§! §H$NAME_Central_Crystal_Species$§! £pops£ Pops will move to §Y[Root.GetName]§!."
+ decision_crystalling_refugees_effect_tt:0 "§G500§! £pop£ §H$NAME_Central_Crystal_Species$ Pops§! will move to §Y[Root.GetName]§!."
 
  decision_crystalline_architecture:0 "Crystalline Construction"
  decision_crystalline_architecture_desc:0 "A team of engineers sent by the $NAME_Central_Crystal_Country$ will improve the layout of the habitat."
@@ -184,6 +186,7 @@
  anomaly.6810.c:0 "§BAttempt to contact our fellow arthropoids.§!"
  anomaly.6810.d:0 "§BVent them out.§!"
  anomaly.6810.d.tooltip:0 "Use our advance knowledge of habitats to breach the station's atmosphere."
+ anomaly.6810.e.evopred: "§BAquire their genomes!§!"
  anomaly.6815.name:0 "The Giant Alien Arthropoids"
  anomaly.6815.desc:0 "Oh, hello there! Sorry about destroying your probe earlier. It's just that we are conducting some very delicate experiments here, and we were worried that outside interference could alter the results - I'm sure you understand. Now, how can we help you?"
  anomaly.6815.a:0 "Wait, so you are not a hostile infestation?"
@@ -276,6 +279,7 @@
  anomaly.6900.b:0 "Who made you?"
  anomaly.6900.c:0 "Who came before us?"
  anomaly.6900.d:0 "What are we?"
+ anomaly.6900.evopred: "What is the tastiest?"
  anomaly.6900.e:0 "Best to observe it from afar."
 
 # Don't Count Your Planets
@@ -288,9 +292,11 @@
  anomaly.6910.name:0 "Galactic Omelet"
  anomaly.6910.desc.start:0 "The insides of [FromFromFrom.GetName] were not what we expected. Instead of some infant titanic lifeform, we've simply uncovered genetic slop. The entire planet is filled with genetic material and resources. What all this material would have become is unclear, but our galaxy is probably safer, not knowing."
  anomaly.6910.desc.hatchling:0 "While similar to the voidspawn our civilization encountered before, this egg would have created something much grander."
+ anomaly.6910.b.evopred: "Feast on the yolk!"
  anomaly.6915.name:0 "Gratitude"
  anomaly.6915.desc.regular:0 "§R"IT LIVES! IT LIVES AGAIN! We are nothing but insignificant specks compared to such a creature; what does the ephemeral squabbling between empires matter in the face of such great-"§!\n\nThe last transmission of the [Root.GetName] cuts off there, and when we use our probes to scan the remains of [FromFromFrom.GetName], we find a hollow shell. It seems the creature had little gratitude to show its liberators."
  anomaly.6915.desc.gestalt:0 "Our [Owner.GetScientistPlural] dispatched to the [Solar_System.GetName] system all reacted in alarm shortly before losing contact with the [Owner.GetBrainName], only telling us that §R"It's loose."§! The last transmission of the [Root.GetName] cuts off as the egg begins to crack open, and when we use our probes to scan the remains of [FromFromFrom.GetName], we find a hollow shell. It seems the creature had little gratitude for its liberator."
+ anomaly.6915.b.evopred: "Gather what is left."
 
 # Heat from Below
 
@@ -502,9 +508,13 @@
  nemma_world_chain_title: "Nemma World"
  nemma_world_chain_desc: "The titanic Nemma inhabit one of our worlds and we have already built the foundation of a colony on their backs. We will need to decide what to do with them."
 
+ stratovent_researcher: "$job_stratovent_researcher$"
  job_stratovent_researcher: "Vent Researcher"
+ job_stratovent_researcher_with_icon: "£job_xeno_zoo_keeper£ $job_stratovent_researcher$"
  job_stratovent_researcher_plural: "Vent Researchers"
+ job_stratovent_researcher_plural_with_icon: "£job_xeno_zoo_keeper£ $job_stratovent_researcher_plural$"
  job_stratovent_researcher_desc: "Researchers specialized in studying spaceborne fauna and guiding travelers to see them."
+ biologist_is_vent_researcher_tt: "$job_biologist_plural_with_icon$ are converted into $job_stratovent_researcher_plural_with_icon$"
  job_stratovent_refiner: "Vent Refiner"
  job_stratovent_refiner_plural: "Vent Refiners"
  job_stratovent_refiner_desc: "Workers specialized in gathering and refining precious gasses from the Stratospheric Vents."
@@ -724,7 +734,7 @@
  terra.80.name:0 "Radioactive Flora"
  terra.80.desc:0 "While cleaning out the radiation in §Y[From.GetName]'s§! atmosphere and soil, our [Root.GetTerraformerPlural] had to call in our xenobiologists. They had found a species that seemed to thrive off the radiation and was now wilting. Even more curious, this species appears to be presapient and on the cusp of achieving sentience. Now, as the final soil scrubbers are approaching, we have to decide what to do with this new life."
  terra.80.a:0 "We have destroyed their habitat, now we have to preserve them."
- terra.80.a.tooltip:0 "4 presapient §YRadiotrophic £pops£ pops§! will be added to the [This.GetName]."
+ terra.80.a.tooltip:0 "400 presapient £pop£ §HRadiotrophic Pops§! will be added to the [This.GetName]."
  terra.80.b:0 "Why not let them join us?"
  terra.80.c.indifferent:0 "Harvest their genetic material."
  terra.80.c.xenophile:0 "Study their biology."
@@ -732,9 +742,9 @@
  terra.80.c.tooltip:0 "Unlocks the §Y$trait_plantoid_radiotrophic$§! trait for genemodding."
  terra.80.d:0 "Why are we even bothering with this weed. Finish the terraforming."
  terra.85.name:0 "A Radiating Reception"
- terra.85.desc:0 "Having spent years acclimating and adjusting the radiotropic plants found on §Y[FromFromFrom.GetName]§!, we now are ready to allow them into our society. While an incredibly young species, they seem to excel in harvesting energy."
+ terra.85.desc:0 "Having spent years acclimating and adjusting the radiotrophic plants found on §Y[FromFromFrom.GetName]§!, we now are ready to allow them into our society. While an incredibly young species, they seem to excel in harvesting energy."
  terra.85.a:0 "Welcome!"
- terra.85.a.tooltip:0 "6 §YRadiotrophic £pops£ pops§! will be added to our Empire."
+ terra.85.a.tooltip:0 "§G600§! £pop£ §HRadiotrophic Pops§! will be added to our Empire."
  terra.90.name:0 "Weapons Cache"
  terra.90.desc:0 "Restoring a Tomb World is always hard work and often very repetitive: section off an area, clear out any rubble, replace the soil, purify any remaining water, and add new fauna. As the terraforming process on §Y[From.GetName]§! was winding to a close, our [Root.GetTerraformerPlural] discovered a sizeable underground metal container, and based on its fortifications, it is assumed that this is a weapons cache."
  terra.90.a:0 "Curious."
@@ -746,7 +756,7 @@
  terra.105.desc.generic:0 "It seems like our [Owner.GetLinguists] mistranslated the word 'library' as 'armory'. We had assumed the incorrect meaning of 'source of power', which was only apparent after opening the cache and being greeted by further xeno script. §Y"If you are reading this, that means that we survived the war and are now ready to rebuild. I spent many long months creating this library while our world's situation worsened, accompanied by my friend and faithful companion. But since you are reading this, that means that someone did survive, so please take part in your heritage. All the cultural works of our people my friend and I could gather are collected here, and let the first you see be a representation of my dearest friend."§!\n\nThe remains of a bipedal mammal and a metal statue of a four-legged long-snouted animal stands under the plaque."
  terra.105.desc.earth:0 "It seems like our [Owner.GetLinguists] mistranslated the word 'library' as 'armory'. We had assumed the incorrect meaning of 'source of power', which was only apparent after opening the cache and being greeted by further xeno script. §Y"If you are reading this, that means that we survived the war and are now ready to rebuild. I spent many long months creating this library while our world's situation worsened, accompanied by my friend and faithful companion Walter. But since you are reading this, that means that someone did survive, so please take part in your heritage. All the cultural works of our people Walter and I could gather are collected here, and let the first you see be a representation of my dearest friend."§!\n\nThe remains of a bipedal mammal and a metal statue of a four-legged long-snouted animal stands under the plaque."
  terra.105.a:0 "Pet the statue."
- terra.105.b:0 "Catalogue the alien media."
+ terra.105.b:0 "Catalog the alien media."
  terra.105.c:0 "We were promised weapons, melt the library and statue down and use it for missiles."
 
  #Deposit
@@ -1025,6 +1035,7 @@
 
  site_space_shanty_dig:0 "Message in a Bottle"
  space_shanty_intro:0 "We have found the wreckage of an archaic spaceship of unusual design. Instead of using propulsion similar to that of modern ships, the craft relied on large sails unfurled in the vacuum of space. Presumably, the ship harvested solar energy and drifted on the solar winds created by starlight. Our archaeologists are eager to uncover the secrets concealed within this spacecraft."
+ space_shanty_intro_bio: "The drifting remains of an ancient entity have been discovered in the depths of space. Its form is unlike any living vessel we have known, it possesses vast, membranous sails, once capable of unfurling in the cosmic winds, basking in the radiation of distant stars like a great celestial leviathan gliding on unseen currents.\n\nNow, it is little more than a withered husk, its frame cracked and exposed, its once-lustrous sails reduced to tattered remnants. Whether this being was engineered, evolved, or something in between remains uncertain. Our bio-archeologists are eager to study its remains, to listen for echoes of its final journey, and perhaps, just perhaps, to learn the song it once sang to the stars."
 
  ancrel.15021.name:0 "Message in a Bottle"
  ancrel.15021.desc:0 "As we expected, the interior of this 'solar sailer' is appropriately archaic. The bridge resembles the deck of an old planetbound sailing ship designed to sail on watery seas.\n\nThe deck plating appears to be metal, but most surfaces are covered with carved wood, a contrast to the glass-like substance on viewports and datascreens.\n\nPowering up the ship's computers, we have found a datafile with an old-fashioned seafarers' song. According to our archaeologist, this melody was once known as a 'sea chanty' or 'space shanty.' We are attempting to transcribe the lyrics."
@@ -1177,7 +1188,7 @@
  colony.9880.desc:0 "In their continued distress, the other [Owner.GetGovernmentName] has lashed out and manically taken a hold of the [Owner.GetSoldierPlural] on [Target.GetName]! We must organize our defense drones before we are overrun."
  colony.9880.a.machine:0 "Emergency Protocols: Defend [Target.GetName]"
  colony.9880.a.hive:0 "Defeat the divergences, suppress the Beta-World."
- colony.9880.a.tt:0 "Gain §Y4§! defensive armies at the cost of §R1§! £pops£ pop."
+ colony.9880.a.tt:0 "Gain §Y400§! defensive armies at the cost of §R100§! £pop£ §HPops§!."
  colony.9880.b:0 "Analyze why the Beta-Universe reacted like this."
 
  colony.9885.desc.hive:0 "The final divergent drone has been defeated. Our communication drones are once again detecting the presence of the other Overmind, but it's acting a lot submissively this time, waiting for us to initiate communication.\n\n"§BThis Mind apologises - instinctive reactions are getting harder to suppress as §RThe Static§! nears. We will ensure that we restrain ourselves in the future.§!""
@@ -1224,7 +1235,7 @@
  trait_notofthisworld_desc:0 "§BThis species is not from this universe and is degrading slowly§!."
  trait_robot_notofthisworld:0 "Not of This World"
  trait_robot_notofthisworld_desc:0 "§BThese machines are not from this universe and are degrading slowly§!."
- TRAIT_NOTOFTHISWORLD_EFFECT:0 "Each pop working as a slave or better produces 0.5 £physics_research£ §YPhysics Research§! per month."
+ TRAIT_NOTOFTHISWORLD_EFFECT:0 "Every $pop_group_unit$ £pop£ §HPops§! working as a slave or better produces 0.5 £physics_research£ §YPhysics Research§! per month."
 
  # Event Chain
  negative_mass_title: "Negative Mass"
@@ -1291,7 +1302,7 @@
 
  colony.9220.name:0 "Remembrance Hall" #first opportunity
  colony.9220.desc:0 "We delved into the corridors at [Root.GetName] and discovered a large hall, which is strangely devoid of the pipe machines covering every other hallway and wall. It looks like whoever built this place took special care of it - there are many statues here in excellent condition, depicting bipedal individuals. With some traces of detail they have mostly a uniform appearance. Unfortunately, there is no evidence of what this hall was, other than some monumental tribute to probably historical figures."
- colony.9220.a:0 "Catalogue the finding." #casual
+ colony.9220.a:0 "Catalog the finding." #casual
  colony.9220.a.desc:0 "It's just a useless piece of old art, with no real value."
  colony.9220.b:0 "This is fine craftsmanship." #master crafters
  colony.9220.b.desc:0 "Some of our craftsmen are astonished by the work created by those aliens. They find a hint of old beauty and harmony in their art."
@@ -1442,6 +1453,7 @@
  colony.9301.name:0 "Invaluable Insight"
  colony.9301.desc:0 "We have gained invaluable insight into the unique weather systems of [Root.GetName]. In addition to expanding our understanding of chemical elements, our recent research has had positive implications for food production."
  colony.9301.a:0 "A positive conclusion."
+ puddle_technician: "$job_puddle_technician$"
  job_puddle_technician:0 "Puddle Technician"
  job_puddle_technician_plural:0 "Puddle Technicians"
  job_puddle_technician_desc:0 "Diversification of food production is a worthwhile endeavor."
@@ -1450,6 +1462,7 @@
  d_metallic_puddles_desc:0 "Rare meteorology allows Puddle Technicians to harvest food and alloys simultaneously."
 #  d_metallic_puddles_gestalt:0 "$d_metallic_puddles$"
 #  d_metallic_puddles_gestalt_desc:0 "Rare meteorology allows Puddle Technicians to harvest food and alloys simultaneously."
+ puddle_technician_drone: "$job_puddle_technician_drone$"
  job_puddle_technician_drone:0 "Puddle Technician Drone"
  job_puddle_technician_drone_plural:0 "Puddle Technician Drones"
  job_puddle_technician_drone_desc:0 "Utilizing the unique meteorology to harvest additional resources will benefit the collective."
@@ -1474,6 +1487,7 @@
  job_manufactorium_complex_drone_desc:0 "These highly specialized drones operate delicate and ancient machinery, creating resources at a fraction of the usual cost."
  mod_job_manufactorium_complex_drone_add:0 "$job_manufactorium_complex_drone$ Jobs"
 
+ manufactorium_scraper: "$job_manufactorium_scraper$"
  job_manufactorium_scraper:0 "Dismantler"
  job_manufactorium_scraper_plural:0 "Dismantlers"
  job_manufactorium_scraper_desc:0 "Breaking the ancient machinery apart is a risky but rewarding task. These workers will have a lot on their hands, given the size of the facility."
@@ -1580,29 +1594,29 @@
 
  #Events
  colony.9900.name: "Missed The Morning Check-in"
- colony.9900.desc: "Recently, numerous [Owner.GetPopTypeNamePlural] have gone missing on [Root.GetName]. The only discernible pattern is that each was alone at the time of their disappearance. As news began to spread, a collective fear of going unescorted has gripped the colony. This state of unrest is causing considerable problems for our day-to-day operations."
+ colony.9900.desc: "Recently, numerous [Owner.GetColonistPlural] have gone missing on [Root.GetName]. The only discernible pattern is that each was alone at the time of their disappearance. As news began to spread, a collective fear of going unescorted has gripped the colony. This state of unrest is causing considerable problems for our day-to-day operations."
  colony.9900.a: "Implement tracking procedures."
- colony.9900.a.tooltip: "One pop has gone missing from [Root.GetName]. An expensive tracking system will be used to help us solve this mystery."
+ colony.9900.a.tooltip: "§Y100§! £pop£ §HPops§! have gone missing from [Root.GetName]. An expensive tracking system will be used to help us solve this mystery."
  colony.9900.b: "There is no need to panic."
- colony.9900.b.tooltip: "One pop has gone missing from [Root.GetName]."
+ colony.9900.b.tooltip: "§Y100§! £pop£ §HPops§! have gone missing from [Root.GetName]."
  colony.9905.name: "Lucky Scan"
- colony.9905.desc.a: "Thanks to the implementation of the tracking system on [Root.GetName] we have a substantial lead.\n\nAs the most recent of our [Owner.GetPopTypeNamePlural] disappeared, and we quickly followed up with a scan of their last location ping. A decaying residue of charged particles was found in each instance.\n\nWe've established a special project to determine the true nature of the particles and their involvement in our missing [Owner.GetPopTypeNamePlural]."
- colony.9905.desc.b: "We've had a lucky break on [Root.GetName]! We have uncovered the location of the most recent [Owner.GetPopTypeNamePlural] to go missing. A detailed scan of the area revealed a decaying residue of charged particles.\n\nWe've established a special project to determine the true nature of the particles and their involvement in our missing [Owner.GetPopTypeNamePlural]."
+ colony.9905.desc.a: "Thanks to the implementation of the tracking system on [Root.GetName] we have a substantial lead.\n\nAs the most recent of our [Owner.GetColonistPlural] disappeared, and we quickly followed up with a scan of their last location ping. A decaying residue of charged particles was found in each instance.\n\nWe've established a special project to determine the true nature of the particles and their involvement in our missing [Owner.GetColonistPlural]."
+ colony.9905.desc.b: "We've had a lucky break on [Root.GetName]! We have uncovered the location of the most recent [Owner.GetColonistPlural] to go missing. A detailed scan of the area revealed a decaying residue of charged particles.\n\nWe've established a special project to determine the true nature of the particles and their involvement in our missing [Owner.GetColonistPlural]."
  colony.9905.a: "Get to the bottom of this."
  colony.9905.a.tooltip: "Another pop goes missing from [Root.GetName]."
  colony.9910.name: "Holding Pattern"
  colony.9910.desc: "Using the residue as a reference, a system-wide scan found evidence of the particles within [Root.GetName]'s moon.\n\nA search of the lunar surface revealed a few small airlocks buried under centuries of dust. Inside was an abandoned complex of admin offices, long-range matter transporters, and field manipulation systems connected to a network of highly advanced stasis pods.\n\nFrozen in the pods were many individuals, including our missing colonists. There is little doubt that this facility functioned as a prison. We have yet to determine why they were taken and how we can free them."
  colony.9910.a: "Excellent"
  colony.9915.name: "Escape From The Moon"
- colony.9915.desc: "Far from a conspiracy, our missing [Owner.GetPopTypeNamePlural] were imprisoned because of a glitch.\n\nA computer error reactivated the prison's aging transporter system and randomly identified our [Owner.GetPopTypeNamePlural] as guilty. The facility's architects used the pods for both prisoner storage and re-education. Freeing our people was relatively easy, but many original prisoners are still stuck in stasis fields. It should be possible to release them, although the lack of prison records means we cannot know the full extent of their criminal pasts.\n\nAlternatively, we could restore the prison, giving special wardens control of its transporter system."
- colony.9915.a: "A useful device for wayward [Owner.GetPopTypeNamePlural]."
- colony.9915.a.tooltip: "Our missing [Owner.GetPopTypeNamePlural] will return. We will gain a functional stasis prison."
+ colony.9915.desc: "Far from a conspiracy, our missing [Owner.GetColonistPlural] were imprisoned because of a glitch.\n\nA computer error reactivated the prison's aging transporter system and randomly identified our [Owner.GetColonistPlural] as guilty. The facility's architects used the pods for both prisoner storage and re-education. Freeing our people was relatively easy, but many original prisoners are still stuck in stasis fields. It should be possible to release them, although the lack of prison records means we cannot know the full extent of their criminal pasts.\n\nAlternatively, we could restore the prison, giving special wardens control of its transporter system."
+ colony.9915.a: "A useful device for wayward [Owner.GetColonistPlural]."
+ colony.9915.a.tooltip: "Our missing [Owner.GetColonistPlural] will return. We will gain a functional stasis prison."
  colony.9915.b: "No one belongs in a prison like this."
- colony.9915.b.tooltip: "Our missing [Owner.GetPopTypeNamePlural] will return and we will shut down the prison. The remaining prisoners will be freed, which could have negative effects for the colony."
+ colony.9915.b.tooltip: "Our missing [Owner.GetColonistPlural] will return and we will shut down the prison. The remaining prisoners will be freed, which could have negative effects for the colony."
  colony.9915.c: "Set up a gradual release program."
  colony.9915.c.tooltip: "We will screen and support individuals as they leave the prison, facilitating a smoother transition for the colony."
  colony.9915.d: "Pre-packaged meals? Excellent."
- colony.9915.d.tooltip: "Our missing [Owner.GetPopTypeNamePlural] will return. We will modify the prison as a food factory, allowing the hive to feast on the prisoners in stasis."
+ colony.9915.d.tooltip: "Our missing [Owner.GetColonistPlural] will return. We will modify the prison as a food factory, allowing the hive to feast on the prisoners in stasis."
  colony.9920.name: "Bad Neighbors"
  colony.9920.desc: "Most of the released prisoners on [Root.GetName] were hardened criminals. Having the group of them suddenly released has been causing issues for the colony."
  colony.9920.a: "Unfortunate."
@@ -1627,7 +1641,7 @@
 
  #Special Project
  STASIS_PRISON_PROJECT: "Particle Mystery"
- STASIS_PRISON_PROJECT_DESC: "[Owner.GetPopTypeNamePluralCap] on [Root.GetName] have been disappearing. A break in the investigation indicated the presence of a uniquely charged particle residue. We will use all available information to locate the missing [Owner.GetPopTypeNamePlural]."
+ STASIS_PRISON_PROJECT_DESC: "[Owner.GetColonistPluralCap] on [Root.GetName] have been disappearing. A break in the investigation indicated the presence of a uniquely charged particle residue. We will use all available information to locate the missing [Owner.GetColonistPlural]."
 
  #Jobs
  job_stasis_warden:0 "Stasis Warden"
@@ -1713,13 +1727,13 @@
  job_myrmeku_power_farmer_desc: "Technicians that harness energy from Myrmeku colonies."
  mod_job_myrmeku_power_farmer_add: "$job_myrmeku_power_farmer$ Jobs"
  mod_job_myrmeku_power_farmer_per_pop: "§G+1§! $job_myrmeku_power_farmer$ Job per $VALUE$ Pops"
- mod_job_myrmeku_power_farmer_per_pop_short: "\n§G+1§! £job_technician£ per $VALUE$ £pop£"
+ mod_job_myrmeku_power_farmer_per_pop_short: "\n§G+1§! [technician.GetIcon] per $VALUE$ £pop£"
  job_myrmeku_power_farmer_gestalt: "Myrmeku Power Drone"
  job_myrmeku_power_farmer_gestalt_plural: "Myrmeku Power Drones"
  job_myrmeku_power_farmer_gestalt_desc: "Tech-Drones that harness energy from Myrmeku colonies."
  mod_job_myrmeku_power_farmer_gestalt_add: "$job_myrmeku_power_farmer_gestalt$ Jobs"
  mod_job_myrmeku_power_farmer_gestalt_per_pop: "§G+1§! $job_myrmeku_power_farmer_gestalt$ Job per $VALUE$ Pops"
- mod_job_myrmeku_power_farmer_gestalt_per_pop_short: "\n§G+1§! £job_technician_drone£ per $VALUE$ £pop£"
+ mod_job_myrmeku_power_farmer_gestalt_per_pop_short: "\n§G+1§! [technician_drone.GetIcon] per $VALUE$ £pop£"
  # Planet Modifiers
  planet_myrmeku_attacks: "Myrmeku Attacks"
  planet_myrmeku_attacks_desc: "[Owner.GetColonistPluralCapital] have been attacked by tiny insects."
@@ -1748,7 +1762,7 @@
  colony.9360.name: "Memory Eaters"
  colony.9360.desc: "With astounding speed, the Myrmeku have built several sprawling structures close to our settlement. Their attacks are no longer limited to the perimeter, but have also begun inside housing structures.\n\nThe large number of subjects available for autopsy has revealed the disturbing reason why the Myrmeku are interested in us: The insects consume the insulation material of our §Ymemory chips§!.\n\nThis is only fatal for the victim in the short term, as memory circuits can be replaced and backups restored. However, replacing the parts means delays for the construction of new [Owner.GetColonistPlural]."
  colony.9360.a: "Seal off our colony."
- colony.9360.a.tt: "Focus on securing the buildings.\n\n§Y$planet_myrmeku_attacks$§! modifier updated to\nMechanical Pop Assembly Speed: §R-10%§!\nPlanetary Build Speed: §R-10%§!"
+ colony.9360.a.tt: "Focus on securing the buildings.\n\n§Y$planet_myrmeku_attacks$§! modifier updated to\nMechanical Pop Assembly Speed: §R-10%§!\nPlanetary Infrastructure Build Speed: §R-10%§!"
  colony.9360.b: "Upgrade our bodies."
  colony.9360.b.tt: "Focus on securing the [Owner.GetColonistPlural].\n\n§Y$planet_myrmeku_attacks$§! modifier updated to\nMechanical Pop Assembly Speed: §R-10%§!\nRobot Upkeep: §R+10%§!"
  colony.9360.c: "Destroy the Myrmeku colonies."
@@ -1841,24 +1855,28 @@
  d_mineral_seabed: "Rich Seabed"
  d_mineral_seabed_desc: "The seabed is littered with high-quality minerals."
 
+ mineral_diver: "$job_mineral_diver$"
  job_mineral_diver: "Deep Sea Diver"
  job_mineral_diver_plural: "Deep Sea Divers"
  job_mineral_diver_desc: "Deep sea experts who recover sunken minerals from the ocean depths."
  job_mineral_diver_add: "$job_mineral_diver$ Jobs"
  job_mineral_diver_per_pop: "§G+1§! $job_mineral_diver$ Job per $VALUE$ Pops"
- job_mineral_diver_per_pop_short: "\n§G+1§! £job_miner£ per $VALUE$ £pop£"
+ job_mineral_diver_per_pop_short: "\n§G+1§! [miner.GetIcon] per $VALUE$ £pop£"
  mod_job_mineral_diver_add: "$job_mineral_diver$ Jobs"
  mod_job_mineral_diver_per_pop: "§G+1§! $job_mineral_diver$ Job per $VALUE$ Pops"
- mod_job_mineral_diver_per_pop_short: "\n§G+1§! £job_miner£ per $VALUE$ £pop£"
+ mod_job_mineral_diver_per_pop_short: "\n§G+1§! [miner.GetIcon] per $VALUE$ £pop£"
+ miner_is_mineral_diver_tt: "$job_miner_plural_with_icon$ are converted into [miner.GetIcon] $job_mineral_diver_plural$"
+
+
  job_mineral_diver_drone: "Underwater Drone"
  job_mineral_diver_drone_plural: "Underwater Drones"
  job_mineral_diver_drone_desc: "Mining Drones that can withstand great pressure to collect sunken minerals from the ocean depths."
  mod_job_mineral_diver_drone_add: "$job_mineral_diver_drone$ Jobs"
  mod_job_mineral_diver_drone_per_pop: "§G+1§! $job_mineral_diver_drone$ Job per $VALUE$ Pops"
- mod_job_mineral_diver_drone_per_pop_short: "\n§G+1§! £job_mining_drone£ per $VALUE$ £pop£"
+ mod_job_mineral_diver_drone_per_pop_short: "\n§G+1§! [mining_drone.GetIcon] per $VALUE$ £pop£"
  job_mineral_diver_drone_add: "$job_mineral_diver_drone$ Jobs"
  job_mineral_diver_drone_per_pop: "§G+1§! $job_mineral_diver_drone$ Job per $VALUE$ Pops"
- job_mineral_diver_drone_per_pop_short: "\n§G+1§! £job_mining_drone£ per $VALUE$ £pop£"
+ job_mineral_diver_drone_per_pop_short: "\n§G+1§! [mining_drone.GetIcon] per $VALUE$ £pop£"
 
 ## Event Chain: Rapid Desertification
  RAPID_DESERTIFICATION_CAT: "Rapid Desertification"
@@ -1946,3 +1964,23 @@
  anomaly.7200.name: "Closing Aperture"
  anomaly.7200.desc: "Seddom is an eerie spectacle. The swirling planets are wreathed in darkness; nearby is a breach in the very fabric of our universe, a cosmic maw that devours the very radiance of the system's star.\n\nDespite the seemingly natural arrangement of planetoids, further analysis has revealed that they are arranged with mathematical precision. Millennia ago, some incredible force orchestrated the orbital bodies of this system into a specialized pattern, one which has not only mitigated the effects of the tear, but prevented it from spreading into the wider galaxy.\n\nWe arrive here at an auspicious moment - a monumental work nears completion. This system's restoration is imminent."
  anomaly.7200.a: "Thank you for fixing our galaxy."
+
+# Geocentric Experiment
+ NAME_Orrery_Site: "Celestial Orrery Site"
+ GEOCENTRIC_EXPERIMENT_CAT: "Celestial Orrery"
+ GEOCENTRIC_EXPERIMENT_CAT_DESC: "Strange gravimetric readings have been detected throughout the [from.Solar_System.GetName] system, pulsing from the inner astroid belt to the desolate planet at the heart of the system."
+ anomaly.8000.name: "$GEOCENTRIC_EXPERIMENT_CAT$"
+ anomaly.8000.desc: "The gravitational stability of the [from.Solar_System.GetName] system is maintained by §Y$sr_dark_matter$§! emitters positioned within its asteroid belt. These emitters are controlled by a supercomputer located on the central planet. Records from this central computer suggest the entire system was an experimental site for gravity manipulation, established by an ancient civilization."
+ anomaly.8000.tt: "Adds §Y$d_physics_1$§! and §Y$d_dark_matter_deposit_1$§! to every §Y$GRAVITY_STABILIZER$ Asteroid§!"
+
+ anomaly.8000.b: "Take the machinary apart."
+ anomaly.8000.b.tt: "§RThis is a bad idea§!"
+
+ GRAVITY_STABILIZER: "Gravity Manipulator"
+ NAME_GRAVITY_STABILIZER_I: "$GRAVITY_STABILIZER$ I"
+ NAME_GRAVITY_STABILIZER_II: "$GRAVITY_STABILIZER$ II"
+ NAME_GRAVITY_STABILIZER_III: "$GRAVITY_STABILIZER$ III"
+ NAME_GRAVITY_STABILIZER_IIII: "$GRAVITY_STABILIZER$ IIII"
+
+ d_geocentric_experiment: "Celestial Orrery Supercomputer"
+ d_geocentric_experiment_desc: "The supercomputer that has kept the Celestial Orrery from gravitational collapse."

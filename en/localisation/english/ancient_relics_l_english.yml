@@ -56,10 +56,10 @@
  FROM_RELICS:0 "From Relics"
 
  #Tutorial
- TUTORIAL_RELICS_VIEW_TITLE:0 "Relics and Minor Artifacts"
- TUTORIAL_RELICS_VIEW_DESC:2 "The Relics screen allows us to view and activate our §YRelics§!, and also to enact decisions making use of §YMinor Artifacts§!. Decisions marked with "(Planetary Decision)" are shown here only for reference and can instead be enacted from a Planet's Decision screen."
+ TUTORIAL_RELICS_VIEW_TITLE:0 "Tutorial: Relics"
+ TUTORIAL_RELICS_VIEW_DESC:2 "The Relics screen allows us to view and activate our §HRelics§!, and also to enact decisions making use of §HMinor Artifacts§!.\n\nDecisions marked with §YPlanetary Decision§! are shown here only for reference and can instead be enacted from a Planet's Decision screen."
 
- TUTORIAL_ARCHAEOLOGY_VIEW_TITLE:0 "Archaeology view"
+ TUTORIAL_ARCHAEOLOGY_VIEW_TITLE:0 "Tutorial: Archaeology"
  TUTORIAL_ARCHAEOLOGY_VIEW_DESC:0 "The Archaeology window shows details of the currently selected §YArchaeology site§!. After progress is made you can still go back and read previous stages by clicking the rune icons.\n\nTo unravel the secrets of a Site, a Scientist must make a §YBreakthrough§! to advance through each of the Site's stages. Scientists with relevant §YTraits and higher Skill§! speed the process of advancing to the next stage, while a higher Difficulty rating of a Site will slow it. Any Scientist who investigates a Site for long enough will amass §YClues§! which will make a Breakthrough more likely."
 
  RELICS_AND_ARTIFACTS:0 "$RELICS$ and $MINOR_ARTIFACTS$"
@@ -68,9 +68,11 @@
  archaeologist_1:0 "archaeologist"
  archaeologist_2:0 "archaeology-unit"
  archaeologist_3:0 "archaeology-drone"
+ archaeologist_symbiont: "symbiont excavator"
  archaeologists_1:0 "archaeologists"
  archaeologists_2:0 "archaeology-units"
  archaeologists_3:0 "archaeology-drones"
+ archaeologist_symbionts: "symbiont excavators"
 
  bombardment_pox:0 "Javorian Pox"
  bombardment_pox_desc:0 "$bombardment_pox$ Bombardment showers the planet with a deadly pathogen.\n- §YModerate§! damage to §YArmies§!\n- §ELight§! damage to §YPlanet§!\n- §ENo§! damage to §YMechanical Pops§!\n- §RCatastrophic§! damage to §YOrganic Pops§!\n- Will bombard undefended planets\n- Can reduce planets to lifeless Tomb Worlds"
@@ -78,6 +80,7 @@
  pc_relic:0 "Relic World"
  pc_relic_desc:0 "A city once stretched across this entire world. Only ancient and abandoned ruins remain now, their original inhabitants long since departed."
  trait_pc_relic_preference:0 "Relic World Preference"
+ trait_pc_relic_preference_short:0 "Relic World"
  trait_pc_relic_preference_desc:0 "$trait_pc_arctic_preference_desc$"
  mod_pc_relic_habitability:0 "Relic World Habitability"
  d_collapsed_spire:1 "£blocker£ Collapsed Spire"
@@ -309,13 +312,13 @@
  artifact_find_peaceful_application_leader_improvement:0 "Management Insights"
  artifact_find_peaceful_application_leader_improvement_desc:0 "Ancient lessons and team building exercises have provided new insights to your leaders."
  artifact_find_peaceful_application_amenities_hivemind:0 "Efficient Maintenance"
- artifact_find_peaceful_application_amenities_hivemind_desc:0 "Our study of minor artifacts have uncovered techniques for our maintenance drones to exploit."
+ artifact_find_peaceful_application_amenities_hivemind_desc:0 "Our study of minor artifacts has uncovered techniques for our maintenance drones to exploit."
  artifact_find_peaceful_application_leader_improvement_hivemind:0 "Pheromone Enhancement"
- artifact_find_peaceful_application_leader_improvement_hivemind_desc:0 "Study of minor artifacts have allowed us to enhance our pheromones, making it easier to lead."
+ artifact_find_peaceful_application_leader_improvement_hivemind_desc:0 "Study of minor artifacts has allowed us to enhance our pheromones, making it easier to lead."
  artifact_find_peaceful_application_amenities_machine:0 "$artifact_find_peaceful_application_amenities$"
- artifact_find_peaceful_application_amenities_machine_desc:0 "Study of minor artifacts have yielded a 3% reduction in the battery size of small electronics, increasing our efficiency."
+ artifact_find_peaceful_application_amenities_machine_desc:0 "Study of minor artifacts has yielded a 3% reduction in the battery size of small electronics, increasing our efficiency."
  artifact_find_peaceful_application_leader_improvement_machine:0 "Algorithm Refinement"
- artifact_find_peaceful_application_leader_improvement_machine_desc:0 "Study of minor artifacts have yielded slightly more efficient algorithms for our leaders."
+ artifact_find_peaceful_application_leader_improvement_machine_desc:0 "Study of minor artifacts has yielded slightly more efficient algorithms for our leaders."
 
  artifact_lgate_clue:0 "Discover L-Gate Insight"
  artifact_lgate_clue_desc:0 "We should be able to piece together more of the mysteries surrounding the L-Gates using these artifacts."
@@ -509,14 +512,14 @@
  planet_artifact_relays_hivemind_desc:0 "Our $job_synapse_drone_plural$ are using minor artifacts to enhance our $pop_cat_simple_drone_plural$."
 
  artifact_artifact_relays_machine:0 "$artifact_artifact_relays_hivemind$"
- artifact_artifact_relays_machine_desc:0 "The $decision_artifact_relays_machine$ decision improves the communication abilities of our $job_coordinator_plural$ on one of our planets."
+ artifact_artifact_relays_machine_desc:0 "The $decision_artifact_relays_machine$ decision improves the communication abilities of our [coordinator.GetNamePlural] on one of our planets."
  artifact_artifact_relays_machine_effect:1 "$decision_artifact_relays_machine_desc$\n\n$artifact_action_planetary_decision$"
 
  decision_artifact_relays_machine:0 "Incorporate Artifact Relays"
- decision_artifact_relays_machine_desc:0 "By using minor artifacts to relay signals, our $job_coordinator_plural$ are able to enhance the efficiency of all of our $pop_cat_simple_drone_plural$."
- decision_artifact_relays_machine_effect:0 "£job_coordinator£ §Y$job_coordinator_plural$§! on the planet each provide §G+1%§! Menial Drone Output and §G+2§! Stability."
+ decision_artifact_relays_machine_desc:0 "By using minor artifacts to relay signals, our [coordinator.GetNamePlural] are able to enhance the efficiency of all of our $pop_cat_simple_drone_plural$."
+ decision_artifact_relays_machine_effect:0 "[coordinator.GetIcon] §Y[coordinator.GetNamePlural]§! on the planet each provide §G+1%§! Menial Drone Output and §G+2§! Stability."
  planet_artifact_relays_machine:0 "$planet_artifact_relays_hivemind$"
- planet_artifact_relays_machine_desc:0 "Our $job_coordinator_plural$ are using minor artifacts to enhance our $pop_cat_simple_drone_plural$."
+ planet_artifact_relays_machine_desc:0 "Our [coordinator.GetNamePlural] are using minor artifacts to enhance our $pop_cat_simple_drone_plural$."
 
  minor_artifacts_found:0 "$minor_artifacts$ Found:"
 
@@ -585,7 +588,7 @@
  r_pox_sample_desc:0 "A sample of the dreaded Javorian Pox that wiped out the Irassian species. Although harmless to most other life forms, the virus that causes the disease has many unique genetic properties, some of which can actually prolong life in most organics.\n\nThe virus could also be used to create a new strain of the Javorian Pox that can infect non-Irassians. Although not as virulent or lethal as the original disease was to the Irassians, it would still make a potent biological weapon."
  r_cryo_core:0 "Yuht Cryo Core"
  r_cryo_core_desc:0 "As the Yuht never discovered the existence of hyperspace, they depended on their long lifespans and cryogenic technology to travel between the stars. This prototype cryo core was created by Yuht scientists shortly before their empire fell to the Jabbardeeni.\n\nThe cryo field generated by this core is well beyond our current levels of technology. "
- r_cryo_core_effect:0 "New colonies start with §Y1§! additional £pops£ Pop."
+ r_cryo_core_effect:0 "New colonies start with §G100§! additional £pop£ §HPops§!."
 
  r_war_forge:0 "Cybrex War Forge"
  r_war_forge_desc:1 "A relatively small and portable war forge, the last of its kind in the universe. It is a relic from the time when the Cybrex made war upon the galaxy, before their "Adjustment" made them change their ways.\n\nThe forge's ability to produce warships has been permanently disabled by the Cybrex, but still has the capacity to convert massive amounts of minerals into alloys."
@@ -811,6 +814,9 @@
  ancrel.10004.nourishment_center:0 "$ancrel.10004.desc$\n\nWe now have the ability to build and upgrade a §Y$building_nourishment_complex$§! on one of our planets."
  ancrel.10004.class_4_singularity:0 "$ancrel.10004.desc$\n\nWe now have the ability to build and upgrade a §Y$building_class_3_singularity$§! on one of our planets."
 
+ MESSAGE_FALLEN_EMPIRE_BUILDING_GAINED_TITLE: "Fallen Empire Building Gained"
+ MESSAGE_FALLEN_EMPIRE_BUILDING_GAINED: "We now have the capacity to build a §Y[GetFallenEmpireBuilding]§!."
+
  ancrel.10010.name:0 "$artifact_find_military_applications$"
  ancrel.10010.desc:0 "What aspect shall we focus on?"
  ancrel.10020.name:0 "$artifact_find_peaceful_applications$"
@@ -845,6 +851,7 @@
  job_assimilation_desc:0 "This pop is being integrated into our collective."
  pop_category_assimilation:0 "$pop_cat_assimilation$ Living Standards"
  space_dragon_blue:1 "Grand Dragon"
+ space_dragon_blue_cap: "$space_dragon_blue$"
  space_dragon_blue_plural:1 "Grand Dragons"
 
  STEAL_ALL_ARTIFACT:0 "$THIEF|Y$ steals §YALL§! artifacts from $VICTIM|Y$"
@@ -870,11 +877,14 @@
  # SHATTERED RING JOBS
  ##################
 
+ scrap_miner: "$job_scrap_miner$"
  job_scrap_miner:0 "Scrap Miner"
  job_scrap_miner_plural:0 "Scrap Miners"
  job_scrap_miner_desc:0 "$job_scrap_miner_plural$ explore the depths of the shattered ring world for materials suitable for construction."
  job_scrap_miner_effect_desc:0 "£job_scrap_miner£ $job_scrap_miner_plural$ produce £minerals£ §Y$minerals$§! and £alloys£ §Y$alloys$§!."
+ miner_is_scrap_miner_tt: "$job_miner_plural_with_icon$ are converted into [miner.GetIcon] $job_scrap_miner_plural$"
 
+ scrap_miner_drone: "$job_scrap_miner_drone$"
  job_scrap_miner_drone:0 "Scrap Miner Drone"
  job_scrap_miner_drone_plural:0 "Scrap Miner Drones"
  job_scrap_miner_drone_desc:0 "$job_scrap_miner_drone_plural$ explore the depths of the shattered ring world for materials suitable for construction."
@@ -890,7 +900,7 @@
  building_scrap_processing_plant_desc:0 "Processing plants for material scavenged from the ring."
  building_scrap_processing_hub_desc:0 "Massive hubs where material scavenged from the ring is received and then shuttled to arrays of purifiers."
 
- mod_planet_miners_alloys_produces_add:0 "£alloys£ $alloys$ from £job_miner£ [GetMinerPlural]"
+ mod_planet_miners_alloys_produces_add: "£alloys£ $alloys$ per $pop_group_unit$ [miner.GetIcon] [GetMinerPlural]"
 
 
  ###########################
@@ -920,7 +930,7 @@
  tech_archaeostudies_desc:0 "This new field of studies focuses on the practical applications of ancient artifacts. We are far from being the first galactic civilization to tread these stars. With a bit of work, their legacies could secure our future."
 
  tech_secrets_cybrex:0 "Cybrex Mining Hub"
- tech_secrets_cybrex_desc:0 "To build their ring world, the Cybrex relied on highly efficient mining drones to survey and harvest orbital resources. Cybrex-made memory chips and sensors could outfit our own mining drones, so that we might put their millennia old algorithms to good use."
+ tech_secrets_cybrex_desc: "To build their ring world, the Cybrex relied on highly efficient mining drones to survey and harvest orbital resources. Cybrex-made memory chips and sensors could augment our own mining operations, so that we might put their millennia old algorithms to good use."
  tech_secrets_league:0 "First League Filing Offices"
  tech_secrets_league_desc:0 "The sprawling empire of the First League dwarfed our own at its peak, and relied on implacable bureaucracy to keep the wheels of the state in motion. The quantic filing arrays they used afforded them unprecedented efficiency in the sorting and storing of documents."
  tech_secrets_irassian:0 "Irassian Naval Yards"
@@ -951,7 +961,7 @@
  tech_archaeo_refinery:0 "Ancient Refinery"
  tech_archaeo_refinery_desc:0 "This millennia-old processing equipment has an efficiency rate above 100%. Its functioning remains alien, but its production gains are substantial."
  tech_archaeo_pk_devolving_beam:0 "Devolving Beam"
- tech_archaeo_pk_devolving_beam_desc:0 "A colossal mind-wiping cannon, which unleashes a planet-wide wave of energy returning most sentient life to a pre-sapient state. Engineers estimate that with additional tuning, it might also be used to wipe clean memory banks and disable robotic units."
+ tech_archaeo_pk_devolving_beam_desc:0 "A colossal mind-wiping cannon which unleashes a planet-wide wave of energy, returning most sentient life to a pre-sapient state. We estimate that with additional tuning, it might also be used to wipe clean memory banks and disable robotic units."
  tech_archaeo_mass_drivers:0 "Ancient Macro Batteries"
  tech_archaeo_mass_drivers_desc:0 "These cannons of gargantuan size deliver relatively slow but devastating projectiles, and can fire pretty much anything, from scrap metal, to asteroid chunks."
  tech_archaeo_lasers:0 "Ancient Cavitation Collapser"
@@ -967,14 +977,14 @@
 
 
  # Buildings and Modules
-
- building_archaeostudies_faculty_relic_effect:1 "If built on a §YRelic World§!:\n$t$-  Research Speed (Archaeostudies): §G+50%§!\n$t$- £minor_artifacts£ Minor Artifacts from £job_researcher£ $job_archaeoengineers_plural$: §G+0.3§!"
+ biologist_is_archaeo_engineer_tt: "£job_biologist£ $job_biologist_plural$ are converted into $job_archaeoengineers_plural_with_icon$"
+ building_archaeostudies_faculty_relic_effect:1 "$t$$biologist_is_archaeo_engineer_tt$\nIf built on a §YRelic World§!:\n$t$- Research Speed (Archaeostudies): §G+50%§!\n$t$- $mod_planet_biologists_minor_artifacts_produces_add$: §G+0.5§!"
  building_archaeostudies_faculty:0 "Faculty of Archaeostudies"
  building_archaeostudies_faculty_desc:0 "A series of laboratories dedicated to the studies of technological applications of minor artifacts retrieved from elder empires."
 
  building_league_offices:0 "$tech_secrets_league$"
  building_league_offices_desc:0 "$tech_secrets_league_desc$"
- building_league_offices_effect:0 "[Owner.GetAdministratorPluralWithIcon] produce an additional §G+1§! £amenities£ Amenities."
+ building_league_offices_effect:0 "[Owner.GetBureaucratPluralWithIcon] produce an additional §G+1§! £amenities£ Amenities."
 
  sm_cybrex_mining_hub:0 "$tech_secrets_cybrex$"
  sm_cybrex_mining_hub_desc:0 "$tech_secrets_cybrex_desc$\n"
@@ -1024,14 +1034,19 @@
 
  # Jobs
 
+ archaeoengineers: "$job_archaeoengineers$"
  job_archaeoengineers:1 "Archaeo-Engineer"
+ job_archaeoengineers_with_icon: "£job_archaeoengineers£ $job_archaeoengineers$"
  job_archaeoengineers_plural:1 "Archaeo-Engineers"
+ job_archaeoengineers_plural_with_icon: "£job_archaeoengineers£ $job_archaeoengineers_plural$"
  job_archaeoengineers_desc:0 "Sometimes, it belongs in a warship, not a museum."
- job_archaeoengineers_effect_desc:1 "£job_researcher£ $job_archaeoengineers_plural$ turn $r_consumer_goods$ into £physics£ £society£ £engineering£ §YResearch Points§!"
+ job_archaeoengineers_effect_desc:1 "$job_archaeoengineers_plural_with_icon$ turn $r_consumer_goods$ into $r_society$"
+ archaeo_drone: "$job_archaeo_drone$"
  job_archaeo_drone:1 "Archaeo-Engineering Drone"
  job_archaeo_drone_plural:1 "Archaeo-Engineering Drones"
  job_archaeo_drone_desc:1 "For a Hive, cultural preservation doesn't hold as much power as an archaeolaser."
  job_archaeo_drone_effect_desc:2 "£job_researcher£ $job_archaeo_drone_plural$ turn $r_minerals$ into £physics£ £society£ £engineering£ §YResearch Points§!"
+ archaeo_unit: "$job_archaeo_unit$"
  job_archaeo_unit:1 "Archaeo-Engineering Unit"
  job_archaeo_unit_plural:1 "Archaeo-Engineering Units"
  job_archaeo_unit_desc:0 "Specialized drones for the careful manipulation and study of ancient artifacts."

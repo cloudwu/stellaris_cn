@@ -37,7 +37,7 @@
  subclass_commander_admiral: "舰队司令"
  subclass_commander_admiral_desc: "一位坚忍的舰队上将的果敢指挥能使船员们在与敌人交战时意志更为坚定。"
  subclass_commander_admiral_hive: "$subclass_commander_admiral$"
- subclass_commander_admiral_hive_desc: "在专职的舰队工蜂指挥下，舰队可以在面对敌军时保持团结一致。"
+ subclass_commander_admiral_hive_desc: "在专职的舰队司令指挥下，舰队可以在面对敌军时保持团结一致。"
  subclass_commander_admiral_machine: "$subclass_commander_admiral$"
  subclass_commander_admiral_machine_desc: "在专职的舰队无人机协调下，舰队可以在面对敌军时保持步调一致。"
  commander_admiral_subclass: "§G专注舰队与太空海战的老练级领袖§!"
@@ -82,7 +82,7 @@
  subclass_official_governor:0 "产业专员"
  subclass_official_governor_desc:1 "对于这些领袖来说，维持生产配额或采购大量原材料的知识和技能宛如与生俱来。"
  subclass_official_governor_hive:0 "生产监察"
- subclass_official_governor_hive_desc:2 "这只工蜂是专门为了帮助那些在生产过程中需要指导的工蜂而选育的。"
+ subclass_official_governor_hive_desc:2 "该[owner.GetIndividualName]是专门为了帮助那些在生产过程中需要指导者而选育的。"
  subclass_official_governor_machine:0 "效率回路"
  subclass_official_governor_machine_desc:1 "该单元有能力分离并删除那些低效的生产模式。"
 
@@ -97,7 +97,7 @@
  subclass_scientist_explorer:0 "探索者"
  subclass_scientist_explorer_desc:1 "探索新星球，登记新物种，遭遇新文明：这位领袖是这句格言的身体力行者。"
  subclass_scientist_explorer_hive:0 "探索者"
- subclass_scientist_explorer_hive_desc:1 "探索新星球，登记新物种，遭遇新文明：这是这只无畏的工蜂的主导推动力。"
+ subclass_scientist_explorer_hive_desc:1 "探索新星球，登记新物种，遭遇新文明：这是这个无畏的[owner.GetIndividualName]的主导推动力。"
  subclass_scientist_explorer_machine:0 "探索者"
  subclass_scientist_explorer_machine_desc:1 "探索新星球，登记新物种，遭遇新文明：这是这只无畏的单元的主导推动力。"
 
@@ -111,26 +111,26 @@
  subclass_scientist_governor:0 "分析专员"
  subclass_scientist_governor_desc:0 "分析专员奋斗在科学的第一线，他们的工作中心在于指导实验、研究新科技为帝国做出贡献。"
  subclass_scientist_governor_hive:0 "分析工蜂"
- subclass_scientist_governor_hive_desc:2 "分析工蜂奋斗在科学的第一线，他们的工作中心在于指导实验、研究新科技为帝国做出贡献。"
+ subclass_scientist_governor_hive_desc:2 "分析[owner.GetIndividualName]奋斗在科学的第一线，他们的工作中心在于指导实验、研究新科技为[owner.GetGestaltEntityName]做出贡献。"
  subclass_scientist_governor_machine:0 "分析单元"
  subclass_scientist_governor_machine_desc:1 "分析单元奋斗在科学的第一线，他们的工作中心在于指导实验、研究新科技为帝国做出贡献。"
 
  subclass_scientist_councilor: "统计学家"
  subclass_scientist_councilor_desc: "研究者是每一个科研团队和项目背后最主要的推动力。这些人专注于研究新科技，不知疲倦地追求着新知识。"
  subclass_scientist_councilor_hive: "统计工蜂"
- subclass_scientist_councilor_hive_desc: "统计工蜂是每一个科研团队和项目背后最主要的推动力。这些工蜂坚持不懈地追求新知识。"
+ subclass_scientist_councilor_hive_desc: "统计者是每一个科研团队和项目背后最主要的推动力。它们坚持不懈地追求新知识。"
  subclass_scientist_councilor_machine: "统计单元"
- subclass_scientist_councilor_machine_desc: "统计单元是每一个科研团队和项目背后最主要的推动力。这些单元坚持不懈地追求新知识。"
+ subclass_scientist_councilor_machine_desc: "$subclass_scientist_councilor_hive_desc$"
 
 
  ### TRAITS
 
- leader_trait_ignore_leader_cap_tt: "$t$不计入领袖上限。"
+ leader_trait_ignore_leader_cap_tt: "不计入领袖上限。"
 
  leader_trait_scout:0 "侦查专家"
  leader_trait_scout_desc:2 "这位领袖是一名侦查专家，这种专业技术能帮助他们避开太空中最危险的威胁。"
  leader_trait_scout_hive:0 "侦察专家"
- leader_trait_scout_hive_desc:1 "这只工蜂专耕于侦察领域，能够最大限度地利用舰船长程传感器。"
+ leader_trait_scout_hive_desc:1 "该[owner.GetIndividualName]专耕于侦察领域，能够最大限度地利用舰船长程传感器。"
  leader_trait_scout_machine:0 "侦察专家"
  leader_trait_scout_machine_desc:1 "该单元专耕于侦察领域，能够最大化利用舰船长程传感器。"
 
@@ -146,31 +146,31 @@
  leader_trait_selfcare_expert_desc: "在这位领袖死后会被另一位具有一样的技能、人格和行为模式的仓生克隆人替代。"
  leader_trait_selfcare_expert_machine: "备份拷贝"
  leader_trait_selfcare_expert_machine_desc: "在这位领袖停止工作后另一台与[Root.GetHeShe]具有相同技能、性格和行为模式的机器拷贝将会取而代之。"
- leader_trait_selfcare_expert_hive: "工蜂克隆"
- leader_trait_selfcare_expert_hive_desc: "在这位领袖死后会被另一位具有一样的技能、人格和行为模式的仓生克隆工蜂替代。"
+ leader_trait_selfcare_expert_hive: "克隆[owner.GetIndividualNameCap]"
+ leader_trait_selfcare_expert_hive_desc: "在这位领袖死后会被另一位具有一样的技能、人格和行为模式的仓生克隆[owner.GetIndividualName]替代。"
  leader_trait_selfcare_expert_effect: "死亡时：产生当前领袖的复制品，拥有一样的技能、等级以及一半的年龄。"
 
  leader_trait_midas_touch:0 "活力讲古人"
  leader_trait_midas_touch_desc:1 "这位领袖经常在深空工作，见证了真正令人惊叹的遥远之地。[Root.GetHisHer]事迹鼓舞着大众，提供了星系中稀有资源和异常事件的信息。"
- leader_trait_midas_touch_effect:4 "$t$完成异常现象时:\n$tt$所有$scientist_plural_with_icon$获得§G+300§!经验"
+ leader_trait_midas_touch_effect:4 "完成异常现象时:\n$tt$所有$scientist_plural_with_icon$获得§G+300§!经验"
 
  leader_trait_speed_chaser: "天妒英才"
  leader_trait_speed_chaser_desc: "这位领袖的一生如焰火般激烈而短暂，燃烧自己，照亮后人前进的道路。"
 
- leader_trait_destructive:2 "毁誉参半"
- leader_trait_destructive_desc:1 "会有不少人乐见这位领袖滚蛋的。他的存在会影响我们的团结。"
+ leader_trait_destructive: "设备杀手"
+ leader_trait_destructive_desc: "这位领袖缺乏对宇航和机械的细心，导致需要频繁的维修和持续维护才能正常运转。"
 
  leader_trait_collective_wisdom:1 "细致入微"
  leader_trait_collective_wisdom_desc:2 "这位细致的学者工作进展缓慢，但能产出大量的研究成果。"
- leader_trait_collective_wisdom_effect:2 "$TABBED_NEW_LINE$在发掘考古遗址过程中获得§G+$@trait_collective_wisdom_soc_amt|0$§! $mod_leader_scientists_society_research_produces_add$"
- leader_trait_collective_wisdom_ancrel_effect:1 "$TABBED_NEW_LINE$在发掘考古遗址的时候获得§G+$@trait_collective_wisdom_soc_amt|0$§! $mod_leader_scientists_society_research_produces_add$ 和 §G+$@trait_collective_wisdom_ma_amt|0$§! £minor_artifacts£ $MINOR_ARTIFACTS$"
+ leader_trait_collective_wisdom_effect:2 "在发掘考古遗址过程中获得§G+$@trait_collective_wisdom_soc_amt|0$§!$mod_leader_scientists_society_research_produces_add$"
+ leader_trait_collective_wisdom_ancrel_effect:1 "在发掘考古遗址的时候获得§G+$@trait_collective_wisdom_soc_amt|0$§! $mod_leader_scientists_society_research_produces_add$ 以及 §G+$@trait_collective_wisdom_ma_amt|0$§! £minor_artifacts£ $MINOR_ARTIFACTS$"
  leader_trait_collective_wisdom_2:0 "$leader_trait_collective_wisdom$ II"
  leader_trait_collective_wisdom_2_desc:0 "$leader_trait_collective_wisdom_desc$"
  leader_trait_collective_wisdom_2_effect:1 "发掘遗址时+20£society£§Y$society_research$§!。"
 
- leader_trait_observant:1 "观察敏锐"
+ leader_trait_observant: "观察敏锐"
  leader_trait_observant_desc:2 "一组自制的强劲扫描器，可以让这位领袖看得更远，计划更超前。"
- leader_trait_observant_hive:1 "观察敏锐"
+ leader_trait_observant_hive: "观察敏锐"
  leader_trait_observant_hive_desc:2 "$leader_trait_observant_desc$"
  leader_trait_observant_machine:0 "深度扫描"
  leader_trait_observant_machine_desc:2 "$leader_trait_observant_desc$"
@@ -180,7 +180,7 @@
  leader_trait_observant_2_machine:0 "$leader_trait_observant_machine$ II"
  leader_trait_observant_2_machine_desc:0 "$leader_trait_observant_machine_desc$"
 
- leader_trait_resolution_category_focus_favor_intro: "$t$当你支持一项属于该分类的议案：\n$tt$"
+ leader_trait_resolution_category_focus_favor_intro: "$t$- 当你支持一项属于该分类的议案：\n$tt$"
  leader_trait_resolution_category_focus_favor_outro: "从提出过获得1§Y外交支持§!的概率："
  leader_trait_resolution_category_focus_1_favor_tt: "$leader_trait_resolution_category_focus_favor_intro$$leader_trait_resolution_category_focus_favor_outro$ §G+$@resolution_focus_amt_1|0$%§!"
  leader_trait_resolution_category_focus_2_favor_tt: "$leader_trait_resolution_category_focus_favor_intro$$leader_trait_resolution_category_focus_favor_outro$ §G+$@resolution_focus_amt_2|0$%§!"
@@ -194,7 +194,7 @@
 
  leader_trait_resolution_category_politics_traditions_focus: "专精：权术传统"
  leader_trait_resolution_category_politics_traditions_focus_desc: "这位代表对所有与政治传统有关的事务表现出特别的兴趣。"
- leader_trait_resolution_category_politics_traditions_focus_tt: "$GALCOM_EFFECTS_TXT$$TABBED_NEW_LINE$§Y权术传统§!议案的投票权重："
+ leader_trait_resolution_category_politics_traditions_focus_tt: "$GALCOM_EFFECTS_TXT$$TABBED_NEW_LINE$- §Y权术传统§!议案的投票权重："
  leader_trait_resolution_category_politics_traditions_focus_1_tt: "$leader_trait_resolution_category_politics_traditions_focus_tt$ §G+5%§!\n$leader_trait_resolution_category_focus_1_favor_tt$"
  leader_trait_resolution_category_politics_traditions_focus_2_tt: "$leader_trait_resolution_category_politics_traditions_focus_tt$ §G+15%§!\n$leader_trait_resolution_category_focus_2_favor_tt$"
  leader_trait_resolution_category_politics_traditions_focus_3_tt: "$leader_trait_resolution_category_politics_traditions_focus_tt$ §G+25%§!\n$leader_trait_resolution_category_focus_3_favor_tt$"
@@ -234,14 +234,14 @@
 
  leader_trait_resolution_category_sanctions_focus: "专精：制裁"
  leader_trait_resolution_category_sanctions_focus_desc: "这位代表对所有与星际制裁有关的事物表现出特别的兴趣。"
- leader_trait_resolution_category_sanctions_focus_tt: "$GALCOM_EFFECTS_TXT$$TABBED_NEW_LINE$对§Y星际制裁§!议案的投票权重："
- leader_trait_resolution_category_sanctions_focus_1_tt: "$leader_trait_resolution_category_sanctions_focus_tt$ §G+5%§!\n$leader_trait_resolution_category_focus_1_favor_tt$"
- leader_trait_resolution_category_sanctions_focus_2_tt: "$leader_trait_resolution_category_sanctions_focus_tt$ §G+15%§!\n$leader_trait_resolution_category_focus_2_favor_tt$"
- leader_trait_resolution_category_sanctions_focus_3_tt: "$leader_trait_resolution_category_sanctions_focus_tt$ §G+25%§!\n$leader_trait_resolution_category_focus_3_favor_tt$"
+ leader_trait_resolution_category_sanctions_focus_tt: "$GALCOM_EFFECTS_TXT$$TABBED_NEW_LINE$- 对§Y星际制裁§!议案的投票权重："
+ leader_trait_resolution_category_sanctions_focus_1_tt: "$leader_trait_resolution_category_sanctions_focus_tt$ §G+100%§!\n$leader_trait_resolution_category_focus_1_favor_tt$"
+ leader_trait_resolution_category_sanctions_focus_2_tt: "$leader_trait_resolution_category_sanctions_focus_tt$ §G+200%§!\n$leader_trait_resolution_category_focus_2_favor_tt$"
+ leader_trait_resolution_category_sanctions_focus_3_tt: "$leader_trait_resolution_category_sanctions_focus_tt$ §G+500%§!\n$leader_trait_resolution_category_focus_3_favor_tt$"
 
  leader_trait_supporting_voter: "相互支援"
  leader_trait_supporting_voter_desc: "这位领袖总是渴望为他人的成功热烈鼓掌。"
- leader_trait_supporting_voter_tt: "£diplo_weight£§Y[GetGalCommunityOrGalImperium]§!§E效果§!：$TABBED_NEW_LINE$支持议案通过时获得来自提案国的1个§Y外交支持§!和5§Y信任度§!"
+ leader_trait_supporting_voter_tt: "£diplo_weight£§Y[GetGalCommunityOrGalImperium]§!§E效果§!：$TABBED_NEW_LINE$- 支持议案通过时获得来自提案国的1个§Y外交支持§!和5§Y信任度§!"
 
  MESSAGE_SUPPORTING_VOTER: "获得外交支持"
  MESSAGE_FAVOR_SUPPORTING_VOTER_DESC: "多亏了我们$LEADER$的技巧，我们博取了$WHO|Y$的一个外交支持和5信任度。"
@@ -275,9 +275,9 @@
 
  leader_trait_ambassador_favor_maker: "见机行事"
  leader_trait_ambassador_favor_maker_desc: "这位狡猾的外交使节能把他察觉到的每一个细微失误都变成勒索的资材。"
- leader_trait_ambassador_favor_maker_effect: "$EMPIRE_EFFECTS_TXT$$TABBED_NEW_LINE$特使§Y改善关系§!每月有 §G0.25%§!概率获得一个§Y外交支持r§!。"
- leader_trait_ambassador_favor_maker_2_effect: "$EMPIRE_EFFECTS_TXT$$TABBED_NEW_LINE$特使§Y改善关系§!每月有 §G0.50%§!概率获得一个§Y外交支持§!。"
- leader_trait_ambassador_favor_maker_3_effect: "$EMPIRE_EFFECTS_TXT$$TABBED_NEW_LINE$特使§Y改善关系§!每月有§G1%§!概率获得一个§Y外交支持§!。"
+ leader_trait_ambassador_favor_maker_effect: "$EMPIRE_EFFECTS_TXT$$TABBED_NEW_LINE$- 特使§Y改善关系§!每月有 §G0.25%§!概率获得一个§Y外交支持§!。"
+ leader_trait_ambassador_favor_maker_2_effect: "$EMPIRE_EFFECTS_TXT$$TABBED_NEW_LINE$- 特使§Y改善关系§!每月有 §G0.50%§!概率获得一个§Y外交支持§!。"
+ leader_trait_ambassador_favor_maker_3_effect: "$EMPIRE_EFFECTS_TXT$$TABBED_NEW_LINE$- 特使§Y改善关系§!每月有§G1%§!概率获得一个§Y外交支持§!。"
 
  leader_trait_ambassador_pact_keeper: "温文尔雅"
  leader_trait_ambassador_pact_keeper_desc: "优雅的利益让这位领袖在斡旋外交协议的过程中获得有利的条件。"
@@ -293,7 +293,7 @@
 
  leader_trait_explorer_cloaking_focus: "机密研究"
  leader_trait_explorer_cloaking_focus_desc: "对一些发现最好还是保守秘密为好。"
- leader_trait_explorer_cloaking_focus_3_tt: "$t$最大$SHIP_SHIELD_REDUCTION_CLOAKING$：§Y50%§!"
+ leader_trait_explorer_cloaking_focus_3_tt: "最大$SHIP_SHIELD_REDUCTION_CLOAKING$：§Y50%§!"
 
  leader_trait_academic_minor_artifacts_expert: "文物学者"
  leader_trait_academic_minor_artifacts_expert_desc: "可能在一些人眼中的破铜烂铁在这位前沿学者眼中也是无上至宝。这位细致的领袖在彻底弄清每一件残片之前绝不会离开考古发掘现场。"

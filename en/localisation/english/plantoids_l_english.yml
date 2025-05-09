@@ -98,10 +98,10 @@
  origin.7400.desc: "Our distant [owner.GetColonistPlural] on §Y[Root.GetName]§! deployed an §Y$starbase_outpost$§! around the star, gaining control of the §Y[Root.GetStarName]§! system."
 
  origin.7500.name: "Safety For The Spaceborne Fauna"
- origin.7500.desc: "Our relationship with spaceborne creatures is fairly unique, but we are not alone in respecting their right to exist; a resolution that has just passed in the Galacitc Community will help protect the lives of these wondrous creatures."
+ origin.7500.desc: "Our relationship with spaceborne creatures is fairly unique, but we are not alone in respecting their right to exist; a resolution that has just passed in the Galactic Community will help protect the lives of these wondrous creatures."
 
  origin.7510.name: "Danger For The Spaceborne Fauna"
- origin.7510.desc: "Spaceborne creatures have always be our friends, but not all members of the Galactic Community share our love for the void-dwellers. The resolution they just passed puts the livehood of our friends - and ours - at a risk."
+ origin.7510.desc: "Spaceborne creatures have always be our friends, but not all members of the Galactic Community share our love for the void-dwellers. The resolution they just passed puts the livelihood of our friends - and ours - at a risk."
 
  origin.7600.name: "You Reap What You Sow"
  origin.7600.desc: "Our enemies think we will bend to their strength, like reeds blown down by the wind. They forget that plants have thorns.\n\nOur soldiers sleep in their ground. Should the need arise, we can turn our §HInvasive Xenoflora§! into armies, to protect what is ours and to strangle what they call their own. We need only to direct an energy beam to the desired planet in order to begin our invasion."
@@ -164,18 +164,20 @@
  origin.7000.a: "Dedicate further time to their study."
  origin.7000.b: "We have other priorities."
 
- TIYANKIS_PROJECT: "Tyanki Observation"
- TIYANKIS_PROJECT_DESC: "Dedicating some space station personnel to the study of the Tyankis could give us further insights into the life of these pacific, mysterious voidborne creatures."
+ TIYANKIS_PROJECT: "Tiyanki Observation"
+ TIYANKIS_PROJECT_DESC: "Dedicating some space station personnel to the study of the Tiyankis could give us further insights into the life of these pacific, mysterious voidborne creatures."
 
  origin.7005.name: "$story.501.name$"
- origin.7005.desc: "By studying the feeding habits of our voidborne friends, our scientists have made a scientific breaktrough. $tech_space_whale_weapon_1_desc$. This technology will doubtlessly prove useful."
+ origin.7005.desc: "By studying the feeding habits of our voidborne friends, our scientists have made a scientific breakthrough. $tech_space_whale_weapon_1_desc$. This technology will doubtlessly prove useful."
 
  ### Civics
 
  civic_idyllic_bloom:0 "Idyllic Bloom"
- civic_idyllic_bloom_desc:0 "This society has always spent much time on improving and caring for their environment, in pursuit of building a true paradise for its inhabitants."
+ civic_idyllic_bloom_desc:0 "This society has long dedicated itself to environmental care and improvement, striving to create a true paradise for its inhabitants."
  civic_hive_idyllic_bloom:0 "Mycorrhizal Ideal"
  civic_hive_idyllic_bloom_desc:0 "The Hive Mind cares for the environment, building a paradise in pursuit of synergistic perfection."
+ civic_wilderness_idyllic_bloom: "$civic_hive_idyllic_bloom$"
+ civic_wilderness_idyllic_bloom_desc: "This Wilderness desires a truly synergistic state of perfection, and so empowers its floral and fungal symbionts to transform the world around them."
  civic_tooltip_idyllic_bloom_effects:2 "Can build £building£ §Y$building_gaiaseeders$§! on your and your vassal's worlds ideal to your starting species.\n$building_gaiaseeders_all_desc$\nAs you unlock improved £society£ §YTerraforming§! technologies, £building£ §Y$building_gaiaseeders$§! can be constructed on additional planet types."
 
  disables_idyllic_bloom:0 "§RChoosing this Ascension Perk will deactivate the $civic_idyllic_bloom$ Civic.§!"
@@ -187,7 +189,7 @@
  gaia_seeder_bloomed_pops_effect: "Having completed transformation of [This.GetName] into a $pc_gaia$, the Gaia Seeder will now transform our population to better adapt them to this world.\n\nIncreases the effects of the §Y$trait_plantoid_bloomed$§! and §Y$trait_plantoid_budding$§! Traits by §G+50%§!."
  gaia_seeder_bloom_timer_tooltip: "\nThe next Bloom on §Y[This.GetName]§! will occur on §Y[This.gaia_seeder_bloom_timer]§!."
  MESSAGE_POPS_IDYLLIC_BLOOMED_TITLE: "Pops Bloomed"
- MESSAGE_POPS_IDYLLIC_BLOOMED: "Our Gaia Seeder on $PLANET|Y$ has released another Bloom, improving $VALUE|Y$ £pops£ Pops."
+ MESSAGE_POPS_IDYLLIC_BLOOMED: "Our Gaia Seeder on $PLANET|Y$ has released another Bloom, improving our £pop£ Pops."
 
  gaiaseeders_tomb_world:0 "$TRIGGER_FAIL$Requires £society£ §Y$tech_climate_restoration$§! to build on §YTomb Worlds§!."
  gaiaseeders_same_climate_start:0 "$TRIGGER_FAIL$Requires £society£ §Y$tech_terrestrial_sculpting$§! to build on"
@@ -244,11 +246,11 @@
 
  trait_plantoid_phototrophic:0 "Phototrophic"
  trait_plantoid_phototrophic_desc:0 "§LThis species is sustained by a combination of both food and sunlight.§!\n"
- TRAIT_PLANTOID_PHOTOTROPHIC_EFFECT:0 "Replaces §Y50%§! of $r_food$ Upkeep with $r_energy$ Upkeep"
+ TRAIT_PLANTOID_PHOTOTROPHIC_EFFECT:0 "Replaces §Y50%§! of $r_food$ (or $r_minerals$) Upkeep with $r_energy$ Upkeep"
 
  trait_plantoid_radiotrophic:0 "Radiotrophic"
  trait_plantoid_radiotrophic_desc:0 "§LThis species is sustained by a combination of both food and low-energy radiation, and as such can thrive on the most inhospitable of worlds.§!"
- TRAIT_PLANTOID_RADIOTROPHIC_EFFECT:1 "$TRAIT_PLANTOID_PHOTOTROPHIC_EFFECT$\nThis £energy£ §YEnergy§! Upkeep is removed for Pops living on §YTomb Worlds§!.\nPop Growth Speed on §YTomb Worlds§! §G+10%§!\nTomb World Habitability: §G+10%§!"
+ TRAIT_PLANTOID_RADIOTROPHIC_EFFECT:1 "$TRAIT_PLANTOID_PHOTOTROPHIC_EFFECT$\n    - This £energy£ §YEnergy§! Upkeep is removed for Pops living on §YTomb Worlds§!.\n    - Pop Growth Speed on §YTomb Worlds§! §G+10%§!\n    - Tomb World Habitability: §G+10%§!"
  trait_harvested_radiotrophic:0 "$trait_plantoid_radiotrophic$"
  trait_harvested_radiotrophic_desc:0 "$trait_plantoid_radiotrophic_desc$"
  trait_lithoid_radiotrophic:0 "$trait_plantoid_radiotrophic$"
@@ -259,8 +261,8 @@
  trait_plantoid_budding_desc:0 "§LThis species is capable of reproduction by budding, in addition to the more usual fertilization of seeds or spores.§!"
  trait_lithoid_budding:0 "Crystallization"
  trait_lithoid_budding_desc:0 "§LWith crystalline growths, this species is capable of generating self replicating lattices of themselves, in addition to the more usual reproductive methods.§!"
- TRAIT_PLANTOID_BUDDING_EFFECT:1 "Each pop working as a slave or better produces 0.02 £mod_pop_growth_speed£ §Y$MOD_PLANET_POP_ASSEMBLY_ORGANIC_ADD$§!.\n\nThis stacks with other sources of $MOD_PLANET_POP_ASSEMBLY_ORGANIC_ADD$ such as £building£ §H$building_clone_vats$§! or £job_spawning_drone£ §H$job_spawning_drone_plural$§!."
- TRAIT_LITHOID_BUDDING_EFFECT:0 "$TRAIT_PLANTOID_BUDDING_EFFECT$\n\nThe §H$trait_lithoid$ Trait§! modifies this trait's effects."
+ TRAIT_PLANTOID_BUDDING_EFFECT: "Every $pop_group_unit$ £pop£ §HPops§! working as a slave or better produces 0.02 £mod_logistic_growth_mult£ §Y$MOD_BONUS_POP_GROWTH$§!.\n\nThis stacks with other sources of $MOD_BONUS_POP_GROWTH$ such as £building£ §Y$building_clone_vats$§! or £job_spawning_drone£ §Y$job_spawning_drone_plural$§!."
+ TRAIT_LITHOID_BUDDING_EFFECT:0 "$TRAIT_PLANTOID_BUDDING_EFFECT$"
 
  trait_advanced_phototrophic:0 "$trait_plantoid_phototrophic$"
  trait_advanced_phototrophic_desc:0 "§LThrough advanced genetic engineering, this species is now partially sustained by sunlight.§!"
@@ -275,30 +277,30 @@
 
  trait_plantoid_bloomed: "Bloomed"
  trait_plantoid_bloomed_desc: "This species has been exposed to the transformational effects of a Gaia Seeder, causing it to sprout mutualistic blooms of lichen when living on Gaia Worlds."
- plantoid_bloomed_trait_tooltip: "Effects on Gaia Worlds:\n$t$$mod_planet_jobs_produces_mult$: §G+10%§!\n$t$$MOD_POP_GROWTH_SPEED$: §G+10%§!\n$t$$MOD_POP_AMENITIES_USAGE_MULT$: §G-10%§!\n$t$$MOD_POP_HOUSING_USAGE_MULT$: §G-10%§!\n\nThese effects are increased by a £building£ $building_gaiaseeders_4$."
+ plantoid_bloomed_trait_tooltip: "Effects on Gaia Worlds:\n$t$$mod_planet_jobs_produces_mult$: §G+10%§!\n$t$$MOD_LOGISTIC_GROWTH_MULT$: §G+10%§!\n$t$$MOD_POP_AMENITIES_USAGE_MULT$: §G-10%§!\n$t$$MOD_POP_HOUSING_USAGE_MULT$: §G-10%§!\n\nThese effects are increased by a £building£ $building_gaiaseeders_4$."
 ### Catalytic Processing by Byron Aytoun
 
 # Regular
  civic_catalytic_processing:0 "Catalytic Processing"
  civic_catalytic_processing_desc:0 "By focusing their industrial efforts on catalytic chemistry, this civilization has unlocked the key to using organic materials in the construction of spacebound structures."
- civic_tooltip_catalytic_processing_effects:0 "Replaces £job_foundry£ §Y$job_foundry_plural$§! with £job_catalytic_technician£ §Y$job_catalytic_technician_plural$§!. $job_catalytic_technician_effect_desc$.\n£job_chemist£ §Y$job_chemist_plural$§!, £job_translucer£ §Y$job_translucer_plural$§!, and £job_gas_refiner£ §Y$job_gas_refiner_plural$§! have their $r_minerals$ Upkeep replaced with $r_food$ Upkeep."
+ civic_tooltip_catalytic_processing_effects:0 "Replaces £job_foundry£ §Y$job_foundry_plural$§! with £job_catalytic_technician£ §Y$job_catalytic_technician_plural$§!.\n$job_catalytic_technician_effect_desc$.\n[artisan.GetIcon] §Y[artisan.GetNamePlural]§! have their $r_minerals$ Upkeep replaced with $r_food$ Upkeep."
 
 # Corporate
  civic_corporate_catalytic_processing:1 "Catalytic Recyclers"
  civic_corporate_catalytic_processing_desc:0 "This Megacorporation seeks to maximize profits by recycling excess organic matter into advanced resources suitable for spacebound structures."
- civic_tooltip_catalytic_processing_corporate_effects:0 "$civic_tooltip_catalytic_processing_effects$"
+ civic_tooltip_catalytic_processing_corporate_effects:0 "$civic_tooltip_catalytic_processing_effects$\nThe £building£ §Y$building_private_shipyards$§! $megacorp_civic_branch_office_building_effect$"
 
 # Hive Mind
  civic_hive_catalytic_processing:1 "Organic Reprocessing"
  civic_hive_catalytic_processing_desc:0 "The Hive Mind reprocesses excess organic matter into advanced resources suitable for spacebound structures."
  civic_tooltip_hive_catalytic_processing_effects:0 "Replaces £job_alloy_drone£ §Y$job_alloy_drone_plural$§! with £job_catalytic_drone£ §Y$job_catalytic_drone_plural$§!. $job_catalytic_drone_effect_desc$.$catalytic_gestalt_additional_effects$"
 
- catalytic_gestalt_additional_effects: "\n£job_chemist_drone£ §Y$job_chemist_drone_plural$§!, £job_translucer_drone£ §Y$job_translucer_drone_plural$§!, and £job_gas_refiner_drone£ §Y$job_gas_refiner_drone_plural$§! have their $r_minerals$ Upkeep replaced with $r_food$ Upkeep."
+ catalytic_gestalt_additional_effects: "\n[artisan_drone.GetIcon] §Y[artisan_drone.GetNamePlural]§! have their $r_minerals$ Upkeep replaced with $r_food$ Upkeep."
 
 # Machine Intelligence
  civic_machine_catalytic_processing:1 "Organic Retrofitting"
  civic_machine_catalytic_processing_desc:0 "The Machine Intelligence reprocesses redundant organic matter into advanced resources suitable for spacebound structures."
- civic_tooltip_machine_catalytic_processing_effects:0 "Replaces £job_fabricator£ §Y$job_fabricator_plural$§! with £job_catalytic_drone£ §Y$job_catalytic_drone_plural$§!. $job_catalytic_drone_effect_desc$.$catalytic_gestalt_additional_effects$"
+ civic_tooltip_machine_catalytic_processing_effects:0 "Replaces [fabricator.GetIcon] §Y[fabricator.GetNamePlural]§! with £job_catalytic_drone£ §Y$job_catalytic_drone_plural$§!. $job_catalytic_drone_effect_desc$.$catalytic_gestalt_additional_effects$"
 
  civic_tooltip_not_catalytic: "Does NOT have a ['concept_catalytic_civics'] Civic"
  concept_catalytic_civics: "Catalytic Processing"
@@ -307,6 +309,7 @@
 # Regular & Corporate
  job_catalytic_technician:0 "Catalytic Technician"
  job_catalytic_technician_plural:0 "Catalytic Technicians"
+ job_catalytic_technician_plural_with_icon: "£job_catalytic_technician£ $job_catalytic_technician_plural$"
  job_catalytic_technician_desc:0 "Highly trained workers are needed to turn raw organic matter into durable alloys necessary for advanced construction."
  job_catalytic_technician_effect_desc:0 "£job_catalytic_technician£ $job_catalytic_technician_plural$ turn £food£ §Y$food$§! into £alloys£ §Y$alloys$§!"
  mod_job_catalytic_technician_add:0 "$job_catalytic_technician$ Jobs"
@@ -314,15 +317,17 @@
  mod_job_catalytic_technician_per_pop_short:0 "\n§G+1§! £mod_job_catalytic_technician_add£ per $VALUE$ £pop£"
 
 # Gestalt
+ catalytic_drone: "$job_catalytic_drone$"
  job_catalytic_drone:0 "Catalytic Drone"
  job_catalytic_drone_plural:0 "Catalytic Drones"
+ job_catalytic_drone_plural_with_icon: "£job_catalytic_drone£ $job_catalytic_drone_plural$"
  job_catalytic_drone_desc:0 "Valuable organic compounds are processed into durable alloys for naval development and advanced construction by highly-specialized Catalytic Drones."
- job_catalytic_drone_effect_desc:0 "£job_catalytic_drone£ $job_catalytic_drone_plural$ turn £food£ §Y$food$§! into £alloys£ §Y$alloys$§!"
+ job_catalytic_drone_effect_desc:0 "£job_catalytic_drone£ §Y$job_catalytic_drone_plural$§! turn £food£ §Y$food$§! into £alloys£ §Y$alloys$§!"
  mod_job_catalytic_drone_add:0 "$job_catalytic_drone$ Jobs"
  mod_job_catalytic_drone_per_pop:0 "§G+1§! $job_catalytic_drone$ Job per $VALUE$ Pops"
  mod_job_catalytic_drone_per_pop_short:0 "\n§G+1§! £mod_job_catalytic_drone_add£ per $VALUE$ £pop£"
 
  ### Invasive Species trait
  trait_invasive: "Invasive Species"
- TRAIT_INVASIVE_EFFECT: "§YCan only select negative or botanical traits§!\n\nHabitability: §G+5%§! for each negative trait selected\nPop Growth Speed: §G+5%§! for each negative trait selected"
+ TRAIT_INVASIVE_EFFECT: "§YCan only select negative or botanical traits§!\n\n    - Habitability: §G+5%§! for each negative trait selected\n    - Pop Growth Speed: §G+5%§! for each negative trait selected"
  trait_invasive_desc: "Rapid reproduction. High dispersal ability. Zero useful capabilities."

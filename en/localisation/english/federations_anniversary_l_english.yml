@@ -59,11 +59,6 @@
  UNTIL_CANCELLED:0 "Until Cancelled"
  HAS_ENVOY_COOLDOWN:0 "Can be reassigned"
  HAS_NOT_ENVOY_COOLDOWN:0 "Cannot be reassigned"
- SYSTEM_TRADE_VALUE_LESS_THAN:1 "$TYPE$ NOT $COMPARE$ $VAL|0Y$" #TYPE: TOTAL_TRADE/COLLECTED_TRADE/UNCOLLECTED_TRADE
- SYSTEM_TRADE_VALUE_AT_LEAST:1 "$TYPE$ $COMPARE$ $VAL|0Y$"
- TOTAL_TRADE:0 "Trade Value"
- COLLECTED_TRADE:0 "Collected Trade Value"
- UNCOLLECTED_TRADE:0 "Uncollected Trade Value"
  SOLAR_SYSTEM:0 "Solar System"
  any_pop_faction_trigger:0 "Any Pop Faction"
  count_pop_faction_trigger:1 "Number of Pop Factions$CONDITIONS$ $IS_NOT$ $COMPARATOR$ $NUM|Y$"
@@ -102,7 +97,7 @@
  SORT_BY_DESIGNATION:0 "Sort by Colony Designation"
  SORT_BY_UNEMPLOYMENT:0 "Sort by Unemployment"
  HABITABILITY_RESETTLEMENT_CHANGE:0 "Habitability will change from $CURRENT|0=-%$ to $NEW|0=-%$"
- CLICK_TO_RESETTLE_POP_ADVANCED:0 "CTRL-Click to transfer §Y5§! Pops\n\nShift-Click to transfer §Yall§! Pops"
+ CLICK_TO_RESETTLE_POP_ADVANCED:0 "£ctrl£-click to transfer §Y500§! £pop£ §HPops§!\n\n£shift£-click to transfer §YAll§! £pop£ §HPops§!"
  EMPIRE_EMPLOYMENT:0 "Empire Employment"
  EMPLOYED_POPULATION:0 "Employed Pops"
  EMPIRE_LEADERS:0 "Empire Leaders"
@@ -197,12 +192,15 @@
 
  getenvoy_machine:0 "diplomatic unit"
  getenvoy_hive:0 "diplomatic drone"
+ getenvoy_wilderness: "diplomatic avatar"
  getenvoy_normal:0 "envoy"
  getenvoycap_machine:0 "Diplomatic unit"
  getenvoycap_hive:0 "Diplomatic drone"
+ getenvoycap_wilderness: "Diplomatic Avatar"
  getenvoycap_normal:0 "Envoy"
  getenvoyplural_machine:0 "diplomatic units"
  getenvoyplural_hive:0 "diplomatic drones"
+ getenvoyplural_wilderness: "diplomatic avatars"
  getenvoyplural_normal:0 "envoys"
 
  envoy_events.3.name:0 "A Contribution to Galactic Comedy"
@@ -623,12 +621,14 @@
  ancrel.14510.b:0 "Monitor its growth without harming it."
  ancrel.14510.c:0 "Let this sacred life-form growth in peace."
  ancrel.14510.d:0 "The Curators will pay a good price for this specimen."
+ ancrel.14510.e: "What great regenerative potential!"
 
  ancrel.14520.name:0 "Mother Brain"
  ancrel.14520.desc:0 "In a vast underground chamber, a Tiyanki stands upright, bell swaying lightly, its wiry tentacles spread on the floor to connect with the outer walls of the chamber. It appeared to be some sort of control unit, controlling and directing the growth of the grave mound. But the creature is now dead, destroyed by the mining equipment we used to get access to this same place. The shells around the core are pallid and brittle; soon, this whole place will die a second death."
 
  ancrel.14910.name:0 "Environmental Contamination"
  ancrel.14910.desc:1 "A member of our expedition team disappeared while exploring a tunnel. The retrieval squad spent days trying to locate the [Owner.GetScientist], only to find them partly encased in a wall, body tightly wrapped in tentacles.\n\nFreeing the [Owner.GetScientist] took considerable time and effort. The [Owner.GetScientist] was not simply tied: the wall was trying to fuse with the [Owner.GetScientist] at a molecular level, turning them into a part of the surface.\n\nThe [Owner.GetScientist] is now in stable condition, but refuses to leave our science ship - and even there, they keep watching the walls with extreme suspicion as though fearing another attack."
+ ancrel.14910.b.evopred: "An intriguing way to acquire biomatter."
 
  ### Amoebas by Pierre du Plessis ###
 
@@ -669,7 +669,7 @@
  name_thalassocracy_agency_abbreviated:0 "ECA"
  pirate.155.desc.regular:1 "Representatives of the [root.GetName]: $pirate.155.proclamation$\n\nSometimes these customs checks can be stressful. We understand. Co-operate, and no one need be harmed. And please, rest assured that every grain and ore we solemnly claim will be put to good use within the [thalassocracy_species.GetName] eco-hab propagation scheme. We are grateful for your consideration.\n\n$pirate.155.thalassocracy_signoff$"
  pirate.155.desc.machine:0 "Representative construct of the [root.GetName]: a blockade is now in effect at [thalassocracy_target_system.GetName]. Any and all machine units in this region are henceforth subjects of the [thalassocracy_country.GetName]; they will be made to service us. Resisting fleets will be fired upon.\n\nWe appreciate that this operation may represent a material inconvenience to you. We assure you that it will conclude, once our $name_thalassocracy_agency$ officers meet their designated quotas. Surely you can understand the pressures of a directive like ours.\n\nA worthy sense of purpose awaits your re-programmed drones within the [thalassocracy_species.GetName] eco-hab propagation scheme. $pirate.155.thalassocracy_signoff$"
- pirate.155.desc.hive:0 "Representative entity of the [root.GetName]: $pirate.155.proclamation$\n\nSometimes these customs checks can be stressful. We understand. Co-operate, and no drones need be harmed or otherwise inconvenienced. And please, rest assured that every grain and ore we claim will go to good homes within the [thalassocracy_species.GetName] eco-hab propagation scheme. We are grateful for your collective consideration.\n\n$pirate.155.thalassocracy_signoff$"
+ pirate.155.desc.hive:0 "Representative entity of the [root.GetName]: $pirate.155.proclamation$\n\nSometimes these customs checks can be stressful. We understand. Co-operate, and no [root.GetIndividualNamePlural] need be harmed or otherwise inconvenienced. And please, rest assured that every grain and ore we claim will go to good homes within the [thalassocracy_species.GetName] eco-hab propagation scheme. We are grateful for your collective consideration.\n\n$pirate.155.thalassocracy_signoff$"
  pirate.155.proclamation:0 "a temporary blockade is now in effect at [thalassocracy_target_system.GetName]. Processing and transportation of food and minerals through this system are now subject to seizure by $name_thalassocracy_agency$ officers of the [thalassocracy_country.GetName]. All non-merchant vessels will be turned away, or else fired upon. These conditions shall remain in effect until our $name_thalassocracy_agency_abbreviated$ quotas can be met."
  pirate.155.thalassocracy_signoff:0 "For a brighter, self-made future!"
  pirate.155.a:0 "What?!"
@@ -679,8 +679,10 @@
  pirate.155.corp:0 "A bold move, [thalassocracy_species.GetAdj]. Foolish, but bold."
  #Ship sizes
  bemat_corvette:0 "Armed Yacht"
+ bemat_corvette_cap: "$bemat_corvette$"
  bemat_corvette_plural:0 "Armed Yachts"
  bemat_cruiser:0 "$cruiser$"
+ bemat_cruiser_cap: "$bemat_cruiser$"
  bemat_cruiser_plural:0 "$cruiser_plural$"
  bemat_destroyer:0 "Sloop"
  bemat_destroyer_plural:0 "Sloops"
@@ -787,7 +789,7 @@
 # EVENT TEXT
  # - Intro -
  fedev.605.name:0 "Upcoming Trial: Logistics Remodelling"
- fedev.605.desc:0 "The routing of various goods is the life-blood of our prosperous trade federation. But so far each empire has relied on their own logistic standards with regards to container design, loading procedures, and shipping pipelines.\n\nIn order to maximize efficiency, a new trial project will commence in a few years - one that aims to investigate and trial a new, specific shipping standard that would be applied to all members of the federation.\n\nParticipation requires a system with at least §H50 Trade Value§! flowing through it. Furthermore, the existence of an §HOffworld Trading Company§! would mean increased statistical data, and so is encouraged.\n\nDue to the vast scope of this project, some costs will apply. But it's for the greater good. That is to say: more future profit.\n\nEvery member of the federation is strongly encouraged to participate."
+ fedev.605.desc:0 "The routing of various goods is the life-blood of our prosperous trade federation. But so far each empire has relied on their own logistic standards with regards to container design, loading procedures, and shipping pipelines.\n\nIn order to maximize efficiency, a new trial project will commence in a few years - one that aims to investigate and trial a new, specific shipping standard that would be applied to all members of the federation.\n\nParticipation requires a system with at least §H50 Trade§! flowing through it. Furthermore, the existence of an §HOffworld Trading Company§! would mean increased statistical data, and so is encouraged.\n\nDue to the vast scope of this project, some costs will apply. But it's for the greater good. That is to say: more future profit.\n\nEvery member of the federation is strongly encouraged to participate."
  fedev.605.a:0 "An excellent initiative!"
  # - Trial starts - Participants only -
  fedev.615.name:0 "Trial Participation - Granted"
@@ -796,7 +798,7 @@
  fedev.615.a:0 "We are doing our part!"
  # - Trial starts - Not participating -
  fedev.620.name:0 "Trial Participation - Denied"
- fedev.620.desc:0 "The logistical remodelling trial has begun! However, §Y[From.GetName]§! has been found lacking in facilities necessary for participation in the trial. The lack of a §HTrade Hub§! in a system with sufficient Trade Value flowing through it is nothing short of baffling.\n\nTo miss out on a potentially beneficial project is a mistake, but to miss out on such a supreme business opportunity as Trade Value? That's almost a crime!\n\nFor shame, [From.GetSpeciesNamePlural]! For shame!"
+ fedev.620.desc:0 "The logistical remodelling trial has begun! However, §Y[From.GetName]§! has been found lacking in facilities necessary for participation in the trial. The lack of a §HTrade Hub§! in a system with sufficient Trade flowing through it is nothing short of baffling.\n\nTo miss out on a potentially beneficial project is a mistake, but to miss out on such a supreme business opportunity as Trade? That's almost a crime!\n\nFor shame, [From.GetSpeciesNamePlural]! For shame!"
  fedev.620.a:0 "It is what it is."
  # - Special Project completed -
  fedev.625.name:0 "Remodelling Complete"
@@ -1116,7 +1118,7 @@
  UNLOCKS_ORBITAL: "§HUnlocks Orbital:§!"
  tech_habitat_1:0 "Orbital Habitats"
  tech_habitat_1_desc:0 "Allows the construction of largely self-sustaining Orbital Habitats."
- allow_habitats:1 "§HUnlocks Megastructure:§! $habitat_central_complex$\n$UNLOCKS_ORBITAL$ $major_orbital_plural$\n$UNLOCKS_ORBITAL$ $minor_orbital_plural$"
+ allow_habitats:1 "§HUnlocks Megastructure:§! $habitat_central_complex$"
 
  tech_habitat_2:1 "Habitat Expansion"
  tech_habitat_2_desc:0 "Our early habitats were primitive things compared to the efficient designs we can now develop."
@@ -1147,30 +1149,8 @@
 
  max_one_orbital_per_system: "$TRIGGER_FAIL$§RWe can only build one Orbital of this type per system§!"
 
- d_system_resources:1 "Orbital Capacity"
- d_system_resources_desc:1 "The construction of orbitals around celestial bodies throughout the system provides additional living and working space for the Orbital Complex."
- system_resources_tooltip: "The §Y[solar_system.GetName]§! System can support: $TABBED_NEW_LINE$ Major Orbitals: §Y[solar_system.GetNumMajorOrbitals]/[solar_system.GetMaxMajorOrbitals]§! $TABBED_NEW_LINE$ Minor Orbitals: §Y[solar_system.GetNumMinorOrbitals]/[solar_system.GetMaxMinorOrbitals]§!\n\nOrbitals currently provide:"
-
- d_orbital_research: "$major_orbital_science_plural$"
- d_orbital_research_desc: "$district_hab_science_desc$"
- d_orbital_research_tt: "The §Y[solar_system.GetName]§! System can support:  $TABBED_NEW_LINE$$major_orbital_science_plural$: §Y[solar_system.GetNumOrbitalsScience]/[solar_system.GetMaxOrbitalsScience]§!\n\nOrbitals currently provide:"
-
- d_orbital_energy: "$major_orbital_energy_plural$"
- d_orbital_energy_desc: "$district_hab_energy_desc$"
- d_orbital_energy_tt: "The §Y[solar_system.GetName]§! System can support:  $TABBED_NEW_LINE$$major_orbital_energy_plural$: §Y[solar_system.GetNumOrbitalsEnergy]/[solar_system.GetMaxOrbitalsEnergy]§!\n\nOrbitals currently provide:"
-
- d_orbital_mining: "$major_orbital_mining_plural$"
- d_orbital_mining_desc: "$district_hab_mining_desc$"
- d_orbital_mining_tt: "The §Y[solar_system.GetName]§! System can support:  $TABBED_NEW_LINE$$major_orbital_mining_plural$: §Y[solar_system.GetNumOrbitalsMining]/[solar_system.GetMaxOrbitalsMining]§!\n\nOrbitals currently provide:"
-
- d_ruined_major_orbital: "Ruined Major Orbital"
- d_ruined_major_orbital_desc: "This orbital has experienced a catastrophic hull failure. Repairs must be done before habitation functions can be resumed."
-
- d_ruined_minor_orbital: "Ruined Minor Orbital"
- d_ruined_minor_orbital_desc: "$d_ruined_major_orbital_desc$"
-
  habitat_0_MEGASTRUCTURE_DETAILS:2 "§HHabitat§!\nAn §Y$pc_habitat$§! is a self-sustaining space station designed for permanent habitation."
- habitat_0_CONSTRUCTION_INFO_DELAYED:5 "A §Y$major_orbital$§! will also be constructed, granting:\n$t$- $major_orbital_effect$"
+ habitat_0_CONSTRUCTION_INFO_DELAYED:5 ""
  habitat_0:0 "Habitat"
  habitat_0_DESC:0 "A habitation station that orbits an uninhabitable planet, capable of housing several §HPops§! and §HBuildings§! away from the surface."
 
@@ -1189,10 +1169,9 @@
 
  habitat_central_complex: "Habitat Central Complex"
  habitat_central_complex_plural: "Habitat Central Complexes"
- habitat_central_complex_DESC: "The central orbital of a §Y$habitat_complex$§!, capable of housing several £pop£ §YPops§! and providing space for £building£ §YBuildings§! and £district£ §YDistricts§! in orbit of uninhabitable planets."
+ habitat_central_complex_DESC: "The central orbital of a §Y$habitat_complex$§!, capable of housing several £pop£ §HPops§! and providing space for £building£ §YBuildings§! and £district£ §YDistricts§! in orbit of uninhabitable planets."
  habitat_central_complex_MEGASTRUCTURE_DETAILS: "A §Y$habitat_complex$§! is a collection of self-sustaining orbitals designed for permanent habitation."
- habitat_central_complex_CONSTRUCTION_INFO_DELAYED: "$REQUIREMENTS_HEADER$ $major_orbital_requirements$ \n\n$EFFECTS_HEADER$ $NEW_LINE$- A Colonisable (Size: £planetsize£ 6) §YHabitat§! will be created. $NEW_LINE$- $habitat_0_CONSTRUCTION_INFO_DELAYED$"
-
+ habitat_central_complex_CONSTRUCTION_INFO_DELAYED: "$REQUIREMENTS_HEADER$ $major_orbital_requirements$ \n\n$EFFECTS_HEADER$ $NEW_LINE$- A Colonizable (Size: £planetsize£ 6) §YHabitat§! will be created."
 
  requires_habitat_central_complex: "$TRIGGER_FAIL$§RRequires a $habitat_central_complex$ present in the system§!"
  requires_not_habitat_central_complex: "$TRIGGER_FAIL$§RCannot build due to existing $habitat_central_complex$ in the system§!"
@@ -1200,74 +1179,20 @@
  add_research_options_voidborn:0 "Research options gained after upgrading a Habitat:\n£engineering_research£§Y$tech_habitat_3$§!"
 
  HABITAT_PLANET_NAME:1 "[FROM.from.solar_system.GetName] Habitat Complex"
- TARGET_ORBITAL_NAME: "[FROM.from.planet.GetName] Orbital"
+ TARGET_ORBITAL_NAME: "[prevprev.GetName] Orbital"
 
- orbital_DESC_GENERIC: "A basic orbital designed to provide additional living and working quarters for the population of the local §Y$habitat_central_complex$§!."
+ orbital_DESC_GENERIC: "designed to provide additional living and working quarters for the population of the local §Y$habitat_central_complex$§!."
  orbital_MEGASTRUCTURE_DETAILS_ENDING: "is a basic orbital designed to provide additional living and working quarters for the population of the local §Y$habitat_central_complex$§!."
- orbital_DELAYED_START: "- §Y$habitat_central_complex$§!:\n$t$- "
 
- major_orbital: "Major Orbital"
- major_orbital_plural: "Major Orbitals"
- major_orbital_effect: "£mod_planet_max_districts_add£ Max District Slots: §G+0.50§!\n$t$- $orbital_effect$"
- major_orbital_NAME: "$major_orbital$"
- major_orbital_DESC: "$orbital_DESC_GENERIC$"
- major_orbital_MEGASTRUCTURE_DETAILS: "A §Y$major_orbital$§! $orbital_MEGASTRUCTURE_DETAILS_ENDING$"
- major_orbital_CONSTRUCTION_INFO_DELAYED: "$REQUIREMENTS_HEADER$ $major_orbital_requirements$ \n\n$EFFECTS_HEADER$ $NEW_LINE$$orbital_DELAYED_START$$major_orbital_effect$"
- major_orbital_requirements: "$NEW_LINE$- $major_planetary_body_requirements$"
- major_planetary_body_requirements: "Must be built in orbit of a major planetary body"
- orbital_effect: "Depending on planetary deposit:\n$tt$- £mod_district_hab_science_max£ §Y$district_hab_science_plural$§!: §G+3§!\n$tt$- £mod_district_hab_energy_max£ §Y$district_hab_energy_plural$§!: §G+3§!\n$tt$- £mod_district_hab_mining_max£ §Y$district_hab_mining_plural$§!: §G+3§!\n$tt$- £mod_planet_max_buildings_add£ §Y$MOD_PLANET_MAX_BUILDINGS_ADD$§!: §G+0.50§!"
+ habitat_major_orbital: "Major Orbital"
+ habitat_major_orbital_DESC: "A §Y$habitat_major_orbital$§! $orbital_DESC_GENERIC$"
+ habitat_major_orbital_MEGASTRUCTURE_DETAILS: "A §Y$habitat_major_orbital$§! $orbital_MEGASTRUCTURE_DETAILS_ENDING$"
 
- minor_orbital: "Minor Orbital"
- minor_orbital_plural: "Minor Orbitals"
- minor_orbital_effect: "$orbital_effect$"
- minor_orbital_NAME: "$minor_orbital$"
- minor_orbital_DESC: "$minor_orbital_DESC_GENERIC$"
- minor_orbital_MEGASTRUCTURE_DETAILS: "A §Y$minor_orbital$§! $orbital_MEGASTRUCTURE_DETAILS_ENDING$"
- minor_orbital_CONSTRUCTION_INFO_DELAYED: "$REQUIREMENTS_HEADER$$minor_orbital_requirements$ \n\n$EFFECTS_HEADER$ $NEW_LINE$$orbital_DELAYED_START$$minor_orbital_effect$"
- minor_orbital_requirements: "$NEW_LINE$- $minor_planetary_body_requirements$"
- minor_planetary_body_requirements: "Must be built in orbit of a minor planetary body (asteroid or moon)"
- requires_is_minor_planetary_body: "$TRIGGER_FAIL$§R$minor_planetary_body_requirements$§!"
+ habitat_minor_orbital: "Minor Orbital"
+ habitat_minor_orbital_DESC: "A §Y$habitat_minor_orbital$§! $orbital_DESC_GENERIC$"
+ habitat_minor_orbital_MEGASTRUCTURE_DETAILS: "A §Y$habitat_minor_orbital$§! $orbital_MEGASTRUCTURE_DETAILS_ENDING$"
 
- major_orbital_resource: "Resource Extraction Orbital"
- major_orbital_resource_plural: "Resource Extraction Orbitals"
- minor_orbital_resource: "$major_orbital_resource$"
- minor_orbital_resource_plural: "$major_orbital_resource_plural$"
-
- major_orbital_mining: "Astro-Mining Orbital"
- major_orbital_mining_plural: "Astro-Mining Orbitals"
- minor_orbital_mining: "$major_orbital_mining$"
- minor_orbital_mining_plural: "$major_orbital_mining_plural$"
- num_mining_orbitals: "\nCurrent $major_orbital_mining_plural$: §Y[solar_system.GetNumOrbitalsMining]/[solar_system.GetMaxOrbitalsMining]§!"
-
- major_orbital_science: "Zero-G Research Orbital"
- major_orbital_science_plural: "Zero-G Research Orbitals"
- minor_orbital_science: "$major_orbital_science$"
- minor_orbital_science_plural: "$major_orbital_science_plural$"
- num_science_orbitals: "\nCurrent $major_orbital_science_plural$: §Y[solar_system.GetNumOrbitalsScience]/[solar_system.GetMaxOrbitalsScience]§!"
-
- major_orbital_energy: "Reactor Orbital"
- major_orbital_energy_plural: "Reactor Orbitals"
- minor_orbital_energy: "$major_orbital_energy$"
- minor_orbital_energy_plural: "$major_orbital_energy_plural$"
- num_energy_orbitals: "\nCurrent $major_orbital_energy_plural$: §Y[solar_system.GetNumOrbitalsEnergy]/[solar_system.GetMaxOrbitalsEnergy]§!"
-
- major_orbital_generic: "Housing Orbital"
- major_orbital_generic_plural: "Housing Orbitals"
- minor_orbital_generic: "$major_orbital_generic$"
- minor_orbital_generic_plural: "$major_orbital_generic_plural$"
- num_generic_orbitals: "\nCurrent $major_orbital_generic_plural$: §Y[solar_system.GetNumOrbitalsGeneric]/[solar_system.GetMaxOrbitalsGeneric]§!"
-
- habitat_system_tt: "§EHabitat Orbital Capacity:§!$TABBED_NEW_LINE$- Major Orbitals: §Y[root.GetNumMajorOrbitals]/[root.GetMaxMajorOrbitals]§! $TABBED_NEW_LINE$- Minor Orbitals: §Y[root.GetNumMinorOrbitals]/[root.GetMaxMinorOrbitals]§! $TABBED_NEW_LINE$- $major_orbital_mining_plural$: §Y[root.GetNumOrbitalsMining]/[root.GetMaxOrbitalsMining]§! $TABBED_NEW_LINE$- $major_orbital_science_plural$: §Y[root.GetNumOrbitalsScience]/[root.GetMaxOrbitalsScience]§! $TABBED_NEW_LINE$- $major_orbital_energy_plural$: §Y[root.GetNumOrbitalsEnergy]/[root.GetMaxOrbitalsEnergy]§!"
-
-# Knights of the Toxic God
- major_orbital_knights: "Demesne Outpost"
- major_orbital_knights_plural: "Demesne Outposts"
- major_orbital_knights_effect: "£mod_planet_max_districts_add£ Max District Slots: §G+0.50§! \n$t$- £mod_job_knight_add£ Knight Jobs: §G+1§!"
- major_orbital_knights_NAME: "$major_orbital_knights$"
- major_orbital_knights_DESC: "$orbital_DESC_GENERIC$"
- major_orbital_knights_MEGASTRUCTURE_DETAILS: "An §Y$major_orbital_knights$§! $orbital_MEGASTRUCTURE_DETAILS_ENDING$"
- major_orbital_knights_CONSTRUCTION_INFO_DELAYED: "$REQUIREMENTS_HEADER$ $NEW_LINE$- $major_planetary_body_requirements$ $NEW_LINE$- §Y$habitat_central_complex$§! must have £building£ §Y$building_order_castle$§! or £building£ §Y$building_order_keep$§!\n\n$EFFECTS_HEADER$ $NEW_LINE$$orbital_DELAYED_START$$major_orbital_knights_effect$"
- requires_knights_castle_or_keep: "$TRIGGER_FAIL$§RRequires a §Y$building_order_castle$§! or §Y$building_order_keep$§!§!"
+ habitat_system_tt: "§EHabitat Potential:§!$TABBED_NEW_LINE$- Maximum Districts: §Y[root.GetHabitatMaxDistricts]§!"
 
 ###########
 # EDICTS
@@ -1275,8 +1200,8 @@
 
 
  edict_extended_healthcare_coverage:0 "Extended Healthcare Coverage"
- edict_extended_healthcare_coverage_desc:0 "This Edict provides additional resources to §Y$building_clinic$§! and §Y$building_hospital$§! facilities."
- edict_extended_healthcare_coverage_tooltip:0 "Planets with §Y$building_clinic$§! or §Y$building_hospital$§! gain §G+10%§! §YPop Growth§!."
+ edict_extended_healthcare_coverage_desc:0 "This Edict provides additional resources to §Y$building_medical_2$§! and §Y$building_medical_3$§! facilities."
+ edict_extended_healthcare_coverage_tooltip:0 "Planets with §Y$building_medical_2$§! or §Y$building_medical_3$§! gain §G+10%§! §YPop Growth§!."
 
  edict_nutritional_plenitude:0 "$food_policy_generous$"
  edict_nutritional_plenitude_desc:0 "$food_policy_generous_desc$"
@@ -1288,7 +1213,7 @@
  edict_evacuation_protocols_desc:0 "We must establish a new home and prepare to evacuate our homeworld."
 
  edict_extended_shifts:0 "Extended Shifts"
- edict_extended_shifts_desc:1 "We must ask our workers to toil harder. Some [Root.GetBloodType], sweat and tears may be necessary for the Greater Good."
+ edict_extended_shifts_desc:1 "We must ask our workers to toil harder. A few broken bodies do not weigh much against the Greater Good."
 
  edict_drone_overdrive:0 "Drone Overdrive"
  edict_drone_overdrive_desc:0 "Our drones will be worked harder, as more resources are required."
@@ -1307,23 +1232,23 @@
  edict_fleet_supremacy:0 "Fleet Supremacy"
  edict_fleet_supremacy_desc:0 "Our navy is our best means to project power. This Edict will prioritize them above lesser needs."
 
- edict_farming_subsidies_tooltip:0 "Increases the upkeep of £job_farmer£ $job_farmer_plural$ by £energy£§Y0.5§!"
+ edict_farming_subsidies_tooltip:0 "Increases the upkeep of [farmer.GetIcon] [farmer.GetNamePlural] by £energy£§Y0.5§!"
 
  edict_capacity_subsidies:0 "Capacity Subsidies"
  edict_capacity_subsidies_desc:0 "$edict_capacity_overload_desc$"
- edict_capacity_subsidies_tooltip:0 "Increases the upkeep of £job_technician£ $job_technician_plural$ by £energy£§Y0.5§!"
+ edict_capacity_subsidies_tooltip:0 "Increases the upkeep of [technician.GetIcon] [technician.GetNamePlural] by £energy£§Y0.5§!"
 
  edict_mining_subsidies:0 "Mining Subsidies"
  edict_mining_subsidies_desc:0 "$edict_production_targets_desc$"
- edict_mining_subsidies_tooltip:0 "Increases the upkeep of £job_miner£ $job_miner_plural$ by £energy£§Y0.5§!"
+ edict_mining_subsidies_tooltip:0 "Increases the upkeep of [miner.GetIcon] [miner.GetNamePlural] by £energy£§Y0.5§!"
 
  edict_industrial_subsidies:0 "Industrial Subsidies"
  edict_industrial_subsidies_desc:0 "Success can be measured by the acquisition of things. This Edict provides our factories with additional resources so production can be increased."
- edict_industrial_subsidies_tooltip:0 "Increases the upkeep of £job_artisan£ $job_artisan_plural$ by £energy£§Y1§!"
+ edict_industrial_subsidies_tooltip:0 "Increases the upkeep of [artisan.GetIcon] [artisan.GetNamePlural] by £energy£§Y1§!"
 
  edict_forge_subsidies:0 "Forge Subsidies"
  edict_forge_subsidies_desc:0 "Our empire thirsts for more specialized alloys and precious metals. This Edict provides our foundries with additional resources so production can be increased."
- edict_forge_subsidies_tooltip:0 "Increases the upkeep of £job_foundry£ $job_foundry_plural$ by £energy£§Y1§!"
+ edict_forge_subsidies_tooltip:0 "Increases the upkeep of [foundry.GetIcon] [foundry.GetNamePlural] by £energy£§Y1§!"
 
  edict_research_subsidies:0 "Research Subsidies"
  edict_research_subsidies_desc:0 "Knowledge is power. This Edict focuses our efforts on advancing technology."

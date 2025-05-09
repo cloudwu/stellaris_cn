@@ -3,17 +3,16 @@ local filelist = require "filelist"
 local root = "../"
 --_VERBOSE = true
 
-local list = filelist.filelist()
-
 local function readlist(path, ...)
-	return filelist.readlist(root .. path .. "/", ...)
+	local list = filelist.filelist(root .. path)
+	return filelist.readlist(root .. path .. "/", list, ...)
 end
 
 local data = {
-	official_cn = readlist("3.14/simp_chinese", list, { ["_english"] = "_simp_chinese" }),
-	cloudwu_cn = readlist("3.13/cn/localisation/english", list),
-	en_last = readlist("3.13/en/localisation/english", list),
-	en_current = readlist("3.14/english", list),
+	official_cn = readlist("4.05/simp_chinese", { ["_english"] = "_simp_chinese" }),
+	cloudwu_cn = readlist "3.14/mod/localisation/english",
+	en_last = readlist "3.14/english",
+	en_current = readlist "4.05/english",
 }
 
 local function english_only(en, s)
@@ -351,6 +350,7 @@ local function gen(output_path, input_path, filename, data)
 	if not f then
 		return
 	end
+	print ("Write " .. filename)
 	local wf = assert(io.open(output_path .. filename, "wb"))
 
 	for line in f:lines() do
@@ -369,9 +369,10 @@ local function gen(output_path, input_path, filename, data)
 end
 
 local function output(data)
+	local list = filelist.filelist (root .. "4.05/english/")
 	for _, filename in ipairs(list) do
 		gen(root .. "cn/localisation/english/" ,
-			root .. "3.14/english/" ,
+			root .. "4.05/english/" ,
 			filename, data)
 	end
 end

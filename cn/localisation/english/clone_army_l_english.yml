@@ -8,7 +8,7 @@
  clone_soldier:0 "克隆人士兵"
  origin_clone_army:0 "克隆大军"
  origin_clone_army_desc:0 "一种寿命短且不能生育的克隆人士兵，在战争方面异常精通，现在他们没有主人，亦不了解自己被设计出来的目的，以及他们那不确定的命运。"
- origin_tooltip_clone_army_effects:2 "- $HOMEWORLD$['concept_clone_army_clone_vat']：+2$NEW_LINE$- $SPECIES_TRAITS$['concept_clone_soldier_infertile']$NEW_LINE$- $ADDITONAL_TECHNOLOGIES_STRING$$TABBED_NEW_LINE$- ['concept_cloning', £society_research£$tech_cloning$]$TABBED_NEW_LINE$- ['concept_gene_banks', £society_research£$tech_gene_banks$]"
+ origin_tooltip_clone_army_effects:2 "—$HOMEWORLD$['concept_clone_army_clone_vat']：+2$NEW_LINE$—$SPECIES_TRAITS$['concept_clone_soldier_infertile']$NEW_LINE$—$ADDITIONAL_TECHNOLOGIES_STRING$$TABBED_NEW_LINE$—['concept_cloning', £society_research£$tech_cloning$]$TABBED_NEW_LINE$—['concept_gene_banks', £society_research£$tech_gene_banks$]"
 
 
  trait_clone_soldier_infertile:0 "$clone_soldier$"
@@ -25,23 +25,27 @@
  leader_trait_clone_army_fertile_commander_desc:0 "该领袖从专业化的军事教育中掌握了对军事流程和获取优势方面超过平均水平的理解。"
  TRAIT_INFERTILE:0 "§R无法自然繁衍§!"
  genelock_trait_tooltip:0 "§R无法被基因修饰§!"
+ NEEDS_GENE_TAILORING_AND_CLONE_SYNTHESIZATION: "$TRIGGER_FAIL$该在这个物种需要：\n—£society£§Y$tech_gene_tailoring$§!科技\n—£unity£§Y$tr_cloning_somatic_synthesization_clone_army$§!传统"
 
  disables_clone_army_origin_features:0 "§R选择这个飞升天赋将使得克隆大军起源机制不可用§!"
- clone_soldier_locked_genes:0 "§R$trait_clone_soldier_infertile$和$trait_clone_soldier_infertile_full_potential$物种过于不稳定无法进行进一步基因修饰。§!"
+ clone_soldier_locked_genes:0 "$TRIGGER_FAIL$在发现我们的基因潜能之前无法采纳基因重塑。"
 
  building_clone_army_clone_vat:0 "远古克隆仓"
+ building_clone_army_clone_vat_plural: "远古克隆仓"
  building_clone_army_clone_vat_desc:0 "创造者遗留下来的遗失科技。可以被拆解和重组，但其核心部件的运作机制过于先进无法复制。"
- building_clone_army_clone_vat_effect_desc:1 "组装并维系至多§Y20§!个£pops£§Y$clone_soldier$§!人口。当$building_clone_army_clone_vat$达到其承载能力时组装的效率将会下降。"
+ building_clone_army_clone_vat_effect_desc:1 "$MOD_BONUS_POP_GROWTH$的效率会随着$building_clone_army_clone_vat$达到上限而降低。"
+ mod_clone_soldiers_sustained: "维持克隆士兵人口"
+ mod_fake_pop_growth_mod: "$MOD_BONUS_POP_GROWTH$"
 
  START_SCREEN_CLONE_ARMY:0 "我们为战争而生！围绕着由创造者遗留下来的远古克隆仓生生死死的基因战士，永远地复制着同一个模板。随着世代的交替，一切关于主人的记忆已经全部丢失，我们不知道他们何时、为何抛下我们。似乎所有的记录甚至是对军事条令的忠诚都被有计划地消除了——但这一切在几个世纪前一切悄然改变。出于偶然，或者意外触发的生存本能，我们的潜意识驱使我们去寻找答案，去寻找新的意义，去消除加在我们身上的限制。\n\n我们从那时起便一发不可收拾，最终使我们能够涉足广阔的太空。开拓眼界之后，我们的知识也在增长——因此我们摆脱束缚的机会也因此增加。\n\n我们不该浪费我们先祖赐予我们的可能性。我们要竭尽全力把这份可能性传递给未来的克隆人，奋力挣脱束缚我们的桎梏。\n"
 
  alert_declining_pops_title:0 "人口减少中"
- alert_declining_pops_instant:0 "在以下行星上£pops£人口正在减少："
- CLONE_ARMY_FORCE_DECLINE:0 "§R§Y远古克隆仓 §!不足，无法维持§Y克隆人士兵§!人口§!"
+ alert_declining_pops_instant:0 "在以下行星上£pop£§H人口§!正在减少："
+ CLONE_ARMY_FORCE_DECLINE:0 "§R§Y克隆仓§!不足，无法维持§Y克隆人士兵§!人口§!"
  OVERPOPULATION_DECLINE:0 "§R严重人口拥挤§!"
 
  MESSAGE_CLONE_ARMY_NO_CLONE_VATS_TITLE:0 "人口减少中"
- MESSAGE_CLONE_ARMY_NO_CLONE_VATS:0 "$PLANET|Y$上的£pops£§Y克隆人士兵§!人口现在无以为继。如果没有至少一座§Y远古克隆仓§!，他们将很快凋亡。"
+ MESSAGE_CLONE_ARMY_NO_CLONE_VATS:0 "$PLANET|Y$上的£pop£§H克隆士兵人口§!现在无以为继。如果没有至少一座§Y远古克隆仓§!，他们将很快凋亡。"
 
  clones.4.name:0 "克隆复育"
  clones.4.desc:0 "据信我们曾经一度是具有自由繁殖的能力的。\n\n然而，即便在我们母星上其他的生物上的实验有所进展，但让我们重获这项能力的实验此前从未成功。进展停滞了非常长的时间，直到现在。\n\n一个不太可能的发现带给我们的科学家希望：一段隐藏在§Y远古克隆仓§!中的量子生物编码中的密码处于一个据信用于调控我们基因组可育能力的区段。"
@@ -59,15 +63,20 @@
  clone_fertility_chain_desc:0 "由其中一位创造者隐藏在远古克隆仓内的基因编码密码向我们揭示了两条道路：重获繁育能力但放弃部分力量，或永远告别自然繁育以到达新的生物学巅峰。"
 
  CLONE_SOLDIER_UNLOCK_FERTILITY:0 "克隆复育"
- CLONE_SOLDIER_UNLOCK_FERTILITY_DESC:0 "§Y$clone_soldier$§!转变为§Y克隆人士兵末裔§!：效率降低，但可育，并可以被基因修饰。\n\n§R这一路径将拆除所有的§Y远古克隆仓§!。§!"
+ CLONE_SOLDIER_UNLOCK_FERTILITY_DESC:0 "我们物种的效能将会降低，但可育而且稳定到能进行基因修饰。\n\n效果：\n—['trait:trait_clone_soldier_infertile']特质替换为['trait:trait_clone_soldier_fertile']特质\n—这一路径将§R拆除§!所有的['building:building_clone_army_clone_vat', $building_clone_army_clone_vat_plural$]。"
+ CLONE_SOLDIER_UNLOCK_FERTILITY_UTOPIA_DESC: "$CLONE_SOLDIER_UNLOCK_FERTILITY_DESC$\n—现在可以选择['ascension_perk:ap_engineered_evolution']飞升特典了。"
+ CLONE_SOLDIER_UNLOCK_FERTILITY_BIOGENESIS_DESC: "$CLONE_SOLDIER_UNLOCK_FERTILITY_UTOPIA_DESC$"
  CLONE_SOLDIER_UNLOCK_POTENTIAL:0 "克隆潜能"
- CLONE_SOLDIER_UNLOCK_POTENTIAL_DESC:0 "§Y$clone_soldier$§!转变为§Y克隆士兵先裔§!：更高效，但永远告别繁育能力，且不可能被基因修饰。"
+ CLONE_SOLDIER_UNLOCK_POTENTIAL_DESC:0 "我们物种的效能将会提高，但永远不可育且不兼容基因修饰。\n\n效果：\n—['trait:trait_clone_soldier_infertile']特质替换为['trait:trait_clone_soldier_infertile_full_potential']特质。"
+ CLONE_SOLDIER_UNLOCK_POTENTIAL_UTOPIA_DESC: "$CLONE_SOLDIER_UNLOCK_POTENTIAL_DESC$\n—现在可以选择['ascension_perk:ap_engineered_evolution']飞升特典了。"
+ CLONE_SOLDIER_UNLOCK_POTENTIAL_BIOGENESIS_DESC: "$CLONE_SOLDIER_UNLOCK_POTENTIAL_UTOPIA_DESC$\n—现在可以升级['tradition_category:tradition_cloning']飞升特典了。\n—§R['tradition_category:tradition_purity']和['tradition_category:tradition_mutation']飞升特典将被禁用。§!"
 
  clones.22.name:0 "新的黎明"
  clones.22.desc:0 "我们的繁育能力恢复了，第一批新的§Y[Root.GetSpeciesNamePlural]§!看到了这一天黎明的曙光。他们和他们的子孙将永远地改变整个种族的未来，我们的社会也要为之改变去适应变化。\n\n对§Y远古克隆仓§!的需求已经是过去式，已通过决议拆解所有的克隆仓以寻找是否有更多值得研究的东西，其余的则会被回收利用。"
 
  clones.23.name:0 "解锁潜能"
  clones.23.desc:0 "我们何必拒绝唾手可得的力量？我们不需要对创造者的爱都能体会到他们选择我们的是多么明智。远古克隆仓也是强大的礼物。\n\n当然要接受我们的力量，当第一批§Y[Root.GetSpeciesNamePlural]§!准备就绪时，我们就会变得比以往任何时候更加强大。我们完美的种族定会繁荣昌盛。"
+ clones.23.bio.tt: "升级['tradition_category:tradition_cloning']传统树"
 
  clones.10.name:0 "起源争论"
  clones.10.desc:0 "在最近我们涉足太空的那一刻起，对我们起源的不同看法很快变成了一场大分裂。极端主义团体很快吸纳了更多的克隆人，我们牢固的联盟破裂了。\n\n有些人将创造者视为要崇拜和遵从的神，并相信我们是按照他它们的形象创造的。他们坚决维持现状。其他人则诅咒我们先祖的行为，称他们为“奴隶贩子”，相信他们一定会遭到报应。\n\n一个设立于[Root.Owner.GetHomeWorldName]的发掘遗址将会验证真相，平息所有的争论。在我们将视线投降太空中之前，我们必须穷尽现有的全部可能性。我们的国家很古老，无数克隆人世世代代生活于此。在我们母星的远古建筑之下，一定存在明显的线索在等待着我们。"

@@ -1,21 +1,21 @@
 ﻿l_english:
 
  # Gestalt trait names and desc
- leader_trait_fallible_hive:1 "Fallibility"
- leader_trait_fallible_hive_desc:0 "This drone suffers from erratic behavior that may lead to problems in the future."
- leader_trait_fallible_machine:1 "Defectiveness"
+ leader_trait_fallible_hive: "Fallible"
+ leader_trait_fallible_hive_desc:0 "This [GetIndividualName] suffers from erratic behavior that may lead to problems in the future."
+ leader_trait_fallible_machine: "Defective"
  leader_trait_fallible_machine_desc:0 "This unit suffers from minor glitches that may lead to problems in the future."
 
  leader_trait_stubborn_machine:0 "Rigid Programming"
  leader_trait_stubborn_machine_desc:1 "This unit has particularly rigid programming that only rarely permits behavioral improvements."
  leader_trait_stubborn_hive:0 "Rigid Interface"
- leader_trait_stubborn_hive_desc:1 "This drone is particularly rigid in its thinking and is unable to accept behavioral modifications."
+ leader_trait_stubborn_hive_desc:1 "This [owner.GetIndividualName] is particularly rigid in its thinking and is unable to accept behavioral modifications."
 
- leader_trait_destructive_hive_desc:1 "This drone ignores necessary routine maintenance on its equipment, leading to more serious failures."
+ leader_trait_destructive_hive_desc:1 "This [owner.GetIndividualName] ignores necessary routine maintenance on its equipment, leading to more serious failures."
  leader_trait_destructive_machine_desc:1 "This unit fails to perform the routine maintenance necessary on its equipment, leading to more serious failures."
 
  leader_trait_lavish_lifestyle_hive:0 "High Upkeep"
- leader_trait_lavish_lifestyle_hive_desc:0 "This drone's erratic behavior makes it highly inefficient."
+ leader_trait_lavish_lifestyle_hive_desc:0 "This [owner.GetIndividualName]'s erratic behavior makes it highly inefficient."
  leader_trait_lavish_lifestyle_machine:0 "High Upkeep"
  leader_trait_lavish_lifestyle_machine_desc:0 "This unit has faulty programming that makes it highly inefficient."
 
@@ -25,12 +25,12 @@
  leader_trait_tyrannical_machine_desc:1 "This unit over-prioritizes rationing of resources."
 
  leader_trait_righteous_hive:0 "Non-corruptible"
- leader_trait_righteous_hive_desc:0 "This drone is resistant to corruption, limiting deviant behavior in the hive."
+ leader_trait_righteous_hive_desc:0 "This [owner.GetIndividualName] is resistant to corruption, limiting deviant behavior in the [owner.GetGestaltEntityName]."
  leader_trait_righteous_machine:0 "Patching Routines"
  leader_trait_righteous_machine_desc:0 "This unit conducts frequent update patches on other units."
 
  leader_trait_embezzler_hive:0 "Energy Loss"
- leader_trait_embezzler_hive_desc:1 "This drone has a physiological irregularity that causes it to use a wasteful amount of energy."
+ leader_trait_embezzler_hive_desc:1 "This [owner.GetIndividualName] has a physiological irregularity that causes it to use a wasteful amount of energy."
  leader_trait_embezzler_machine:0 "Energy Loss"
  leader_trait_embezzler_machine_desc:0 "This unit has a systems defect which causes it to consume an unusually high amount of energy."
 
@@ -40,37 +40,37 @@
  leader_trait_gullible_machine_desc:0 "This node has a significant security weakness in its operating system."
 
  leader_trait_bureaucratic_hive:0 "Communication Disruptions"
- leader_trait_bureaucratic_hive_desc:1 "This node experiences communication disruptions when merging the greater consciousness with individuated drones."
+ leader_trait_bureaucratic_hive_desc:1 "This node experiences communication disruptions when merging the greater consciousness with individuated [owner.GetIndividualNamePlural]."
  leader_trait_bureaucratic_machine:0 "Transmission Errors"
  leader_trait_bureaucratic_machine_desc:1 "This node experiences transmission errors while linking with individuated drones."
 
- leader_trait_micromanager_hive:1 "Asynchronous"
- leader_trait_micromanager_hive_desc:0 "This drone is inefficient when synchronizing complex fleet maneuvers."
- leader_trait_micromanager_machine:1 "Asynchronous"
+ leader_trait_micromanager_hive: "Unsynchronized"
+ leader_trait_micromanager_hive_desc:0 "This [owner.GetIndividualName] is inefficient when synchronizing complex fleet maneuvers."
+ leader_trait_micromanager_machine:1 "Unsynchronized"
  leader_trait_micromanager_machine_desc:0 "This unit is inefficient when synchronizing complex fleet maneuvers."
 
  leader_trait_reckless_hive:0 "Miscalculations"
- leader_trait_reckless_hive_desc:1 "This drone miscalculates risks, continuing to fight when the logical thing would be to retreat, repair, and regroup."
+ leader_trait_reckless_hive_desc:1 "This [owner.GetIndividualName] miscalculates risks, continuing to fight when the logical thing would be to retreat, repair, and regroup."
  leader_trait_reckless_machine:0 "Risk Calculation Errors"
  leader_trait_reckless_machine_desc:1 "This unit miscalculates risks, continuing to fight when the logical thing would be to retreat, repair, and regroup."
 
  leader_trait_slipshod_hive:0 "Weakened Defenses"
- leader_trait_slipshod_hive_desc:0 "This drone has developed an erratic and inefficient battle consciousness that weakens the defensive capabilities of the fleet."
+ leader_trait_slipshod_hive_desc:0 "This [owner.GetIndividualName] has developed an erratic and inefficient battle consciousness that weakens the defensive capabilities of the fleet."
  leader_trait_slipshod_machine:0 "Weakened Defenses"
  leader_trait_slipshod_machine_desc:0 "This unit has developed an erratic and inefficient battle programming that weakens the defensive capabilities of the fleet."
 
  leader_trait_slothful_hive:0 "Unreactive Tactics"
- leader_trait_slothful_hive_desc:1 "This drone's slow and irregular behavior puts our armies in unnecessary danger."
+ leader_trait_slothful_hive_desc:1 "This [owner.GetIndividualName]'s slow and irregular behavior puts our armies in unnecessary danger."
  leader_trait_slothful_machine:0 "Faulty Battle Algorithms"
  leader_trait_slothful_machine_desc:1 "This unit's faulty and irregular algorithms put our mechanized troops in unnecessary danger."
 
  leader_trait_victory_or_death_hive:0 "Victory or Death"
- leader_trait_victory_or_death_hive_desc:1 "This drone has no regard for self-preservation, preferring to fight until the last moment."
+ leader_trait_victory_or_death_hive_desc:1 "This [owner.GetIndividualName] has no regard for self-preservation, preferring to fight until the last moment."
  leader_trait_victory_or_death_machine:0 "Non-Disengagement Protocol"
  leader_trait_victory_or_death_machine_desc:1 "This unit has a defective disengagement protocol and will fight until the end."
 
  leader_trait_disorganized_hive:0 "Unclear Commands"
- leader_trait_disorganized_hive_desc:1 "This drone's confusing behavior can lead to unclear tactical commands."
+ leader_trait_disorganized_hive_desc:1 "This [owner.GetIndividualName]'s eccentric behavior can lead to unclear tactical commands."
  leader_trait_disorganized_machine:0 "Logistical Error"
  leader_trait_disorganized_machine_desc:1 "This unit acts on faulty logistical calculations that increase the costs of our armies."
 
@@ -80,42 +80,42 @@
  leader_trait_paranoid_machine_desc:1 "This unit enacts complicated patterns to keep information safe, reducing research output."
 
  leader_trait_narrow_minded_hive:1 "Narrow-Minded"
- leader_trait_narrow_minded_hive_desc:1 "This drone has a very narrow focus on potential research, disregarding some options as unnecessary."
+ leader_trait_narrow_minded_hive_desc:1 "This [owner.GetIndividualName] has a very narrow focus on research tasks assigned to it, disregarding some options as unnecessary."
  leader_trait_narrow_minded_machine:0 "Mainframe Error"
  leader_trait_narrow_minded_machine_desc:1 "Core processor functions are isolated, causing rigidity in decision making."
 
  leader_trait_neurotic_hive:0 "Erratic Exploration"
- leader_trait_neurotic_hive_desc:0 "This drone has a distracted and erratic consciousness."
+ leader_trait_neurotic_hive_desc:0 "This [owner.GetIndividualName] has a distracted and erratic temperament."
  leader_trait_neurotic_machine:0 "Deficient Surveying Protocols"
  leader_trait_neurotic_machine_desc:1 "This unit has a chaotic surveying protocol."
 
  leader_trait_opinionated_hive:0 "Conflicting Synapses"
- leader_trait_opinionated_hive_desc:1 "This drone has mutated synapses that make it difficult to compile and synthesize knowledge."
+ leader_trait_opinionated_hive_desc:1 "This [owner.GetIndividualName] has mutated synapses that make it difficult to compile and synthesize knowledge."
  leader_trait_opinionated_machine:0 "Conflicting Data"
  leader_trait_opinionated_machine_desc:1 "This unit compiles data inefficiently."
 
- leader_trait_profligate_hive:0 "Increased Drone Upkeep"
- leader_trait_profligate_hive_desc:1 "This drone has a deficiency that increases the upkeep of all other drones on the planet."
+ leader_trait_profligate_hive:0 "Increased Upkeep"
+ leader_trait_profligate_hive_desc:1 "This [owner.GetIndividualName] has a deficiency that increases the upkeep of all other [owner.GetIndividualNamePlural] on the planet."
  leader_trait_profligate_machine:0 "Increased Drone Maintenance"
  leader_trait_profligate_machine_desc:1 "This unit has a consistent error in its programming that increases the upkeep of all other units on the planet."
 
  leader_trait_procrastinator_hive:0 "Stagnant Construction"
- leader_trait_procrastinator_hive_desc:1 "This drone is inefficient at managing planetary construction projects."
+ leader_trait_procrastinator_hive_desc:1 "This [owner.GetIndividualName] is inefficient at managing planetary construction projects."
  leader_trait_procrastinator_machine:0 "Stagnant Construction"
  leader_trait_procrastinator_machine_desc:1 "This unit is inefficient at managing planetary construction projects."
 
- leader_trait_insider_trading_hive:0 "Inefficient Drone Output"
- leader_trait_insider_trading_hive_desc:1 "This drone is an inefficient manager of planetary drones."
+ leader_trait_insider_trading_hive:0 "Inefficient Output"
+ leader_trait_insider_trading_hive_desc:1 "This [owner.GetIndividualName] is an inefficient manager of planetside [owner.GetIndividualNamePlural]."
  leader_trait_insider_trading_machine:0 "Inefficient Drone Output"
  leader_trait_insider_trading_machine_desc:1 "This unit is an inefficient manager of planetary drones."
 
  leader_trait_eager_machine:0 "Primebot"
  leader_trait_eager_machine_desc:1 "This unit is in particularly good shape, requiring far less maintenance to keep operational."
- leader_trait_eager_hive:0 "Primedrone"
- leader_trait_eager_hive_desc:0 "This drone is particularly healthy, requiring far less upkeep to maintain peak efficiency."
+ leader_trait_eager_hive:0 "Prime Specimen"
+ leader_trait_eager_hive_desc:0 "This [owner.GetIndividualName] is particularly healthy, requiring far less upkeep to maintain peak efficiency."
 
  leader_trait_martinet_hive:0 "Martinet"
- leader_trait_martinet_hive_desc:0 "A keen observer that demands strict compliance, this drone has an impeccable record when it comes to limiting deviance."
+ leader_trait_martinet_hive_desc:0 "A keen observer that demands strict compliance, this [owner.GetIndividualName] has an impeccable record when it comes to limiting deviance."
  leader_trait_martinet_machine:0 "Martinet"
  leader_trait_martinet_machine_desc:0 "With excellent observational capabilities, this drone demands strict compliance. Its record is impeccable when it comes to limiting deviance."
 
@@ -145,7 +145,7 @@
  trait_ruler_logistic_understanding_2_machine_desc:0 "$trait_ruler_logistic_understanding_machine_desc$"
 
  trait_ruler_eye_for_talent_hive:0 "Information Gathering"
- trait_ruler_eye_for_talent_hive_desc:0 "This drone gathers information, processes it, and adapts new methods in search of perfection."
+ trait_ruler_eye_for_talent_hive_desc:0 "This [owner.GetIndividualName] gathers information, processes it, and adapts new methods in search of perfection."
  trait_ruler_eye_for_talent_machine:0 "Information Processing"
  trait_ruler_eye_for_talent_machine_desc:0 "This unit gathers information, processes it, and adapts new methods in search of perfection."
 
@@ -154,9 +154,9 @@
  trait_ruler_eye_for_talent_2_machine:0 "$trait_ruler_eye_for_talent_machine$ II"
  trait_ruler_eye_for_talent_2_machine_desc:0 "$trait_ruler_eye_for_talent_machine_desc$"
 
- leader_trait_gifted_hive:1 "Neuro-Enhancement"
- leader_trait_gifted_hive_desc:1 "This drone's functionality is significantly improved by an unusual synaptic growth."
- leader_trait_gifted_machine:1 "Upgrade"
+ leader_trait_gifted_hive: "Gifted"
+ leader_trait_gifted_hive_desc:1 "This [owner.GetIndividualName]'s functionality is significantly improved by an unusual synaptic growth."
+ leader_trait_gifted_machine: "Upgraded"
  leader_trait_gifted_machine_desc:1 "This unit's functionality has been significantly improved by an experimental upgrade."
 
  leader_trait_educator_hive:0 "Expanded Knowledge"
@@ -183,7 +183,7 @@
  leader_trait_skirmisher_2_machine_desc:0 "$leader_trait_skirmisher_machine_desc$"
 
  leader_trait_aggressive_hive:0 "Aggressive Attack Pattern"
- leader_trait_aggressive_hive_desc:1 "This drone utilizes aggressive attack patterns in fleet combat."
+ leader_trait_aggressive_hive_desc:1 "This [owner.GetIndividualName] utilizes aggressive attack patterns in fleet combat."
  leader_trait_aggressive_machine:0 "Aggressive Attack Pattern"
  leader_trait_aggressive_machine_desc:1 "This unit utilizes aggressive attack patterns in fleet combat."
 
@@ -193,7 +193,7 @@
  leader_trait_aggressive_2_machine_desc:0 "$leader_trait_aggressive_machine_desc$"
 
  leader_trait_engineer_hive:0 "Automated Repair Systems"
- leader_trait_engineer_hive_desc:1 "This drone utilizes automated systems to repair ship hulls outside of a docking bay."
+ leader_trait_engineer_hive_desc:1 "This [owner.GetIndividualName] utilizes automated systems to repair ship hulls outside of a docking bay."
  leader_trait_engineer_machine:0 "Automated Repair Systems"
  leader_trait_engineer_machine_desc:1 "This unit utilizes automated systems to repair ship hulls outside of a docking bay."
 
@@ -203,12 +203,12 @@
  leader_trait_engineer_2_machine_desc:0 "$leader_trait_engineer_machine_desc$"
 
  leader_trait_annihilator_hive:0 "Annihilator"
- leader_trait_annihilator_hive_desc:1 "This drone focuses on the quick destruction of planetary defenses, razing fortresses to the ground."
+ leader_trait_annihilator_hive_desc:1 "This [owner.GetIndividualName] focuses on the quick destruction of planetary defenses, razing fortresses to the ground."
  leader_trait_annihilator_machine:0 "Annihilator"
  leader_trait_annihilator_machine_desc:1 "This unit focuses on the quick destruction of planetary defenses, razing fortresses to the ground."
 
  leader_trait_artillerist_hive:0 "Artillerist"
- leader_trait_artillerist_hive_desc:0 "This drone's ability to operate the fleet's weapon systems is extremely accurate and deadly."
+ leader_trait_artillerist_hive_desc:0 "This [owner.GetIndividualName]'s ability to operate the fleet's weapon systems is extremely accurate and deadly."
  leader_trait_artillerist_machine:0 "Artillerist"
  leader_trait_artillerist_machine_desc:0 "This unit's ability to operate the fleet's weapon systems is extremely accurate and deadly."
 
@@ -218,7 +218,7 @@
  leader_trait_artillerist_2_machine_desc:0 "$leader_trait_artillerist_machine_desc$"
 
  leader_trait_commanding_presence_hive:0 "Command Structure"
- leader_trait_commanding_presence_hive_desc:1 "This drone is specialized in the upkeep and command of large fleets."
+ leader_trait_commanding_presence_hive_desc:1 "This [owner.GetIndividualName] is specialized in the upkeep and command of large fleets."
  leader_trait_commanding_presence_machine:0 "Command Mainframe"
  leader_trait_commanding_presence_machine_desc:1 "This unit is specialized in the upkeep and command of large fleets."
 
@@ -228,22 +228,22 @@
  leader_trait_commanding_presence_2_machine_desc:0 "$leader_trait_commanding_presence_machine_desc$"
 
  leader_trait_corsair_hive:0 "Dismantler"
- leader_trait_corsair_hive_desc:0 "This drone dismantles enemy ships and salvages anything of value."
+ leader_trait_corsair_hive_desc:0 "This [owner.GetIndividualName] dismantles enemy ships and salvages anything of value."
  leader_trait_corsair_machine:0 "Dismantler"
- leader_trait_corsair_machine_desc:0 "This unit dismantles enemy ships  and salvages anything of value."
+ leader_trait_corsair_machine_desc:0 "This unit dismantles enemy ships and salvages anything of value."
 
  leader_trait_par_zealot_hive:0 "Adaptive Behavior"
- leader_trait_par_zealot_hive_desc:0 "This drone's dedication to our continued survival is matched only by its thirst for understanding our enemies' motives and driving forces, for the purpose of learning and advancing the hive's capabilities."
+ leader_trait_par_zealot_hive_desc:0 "This [owner.GetIndividualName]'s dedication to our continued survival is matched only by its thirst for understanding our enemies' motives and driving forces, for the purpose of learning and advancing the capabilities of the [owner.GetGestaltEntityName]."
  leader_trait_par_zealot_machine:0 "Adaptive Learning Patterns"
  leader_trait_par_zealot_machine_desc:0 "This unit is designed to analyze the motives and driving forces of hostile species, in order to ensure the survival and prosperity of the consciousness."
 
  leader_trait_demolisher_hive:0 "Demolisher"
- leader_trait_demolisher_hive_desc:1 "This drone specializes in destroying Starbases and Defense Platforms."
+ leader_trait_demolisher_hive_desc:1 "This [owner.GetIndividualName] specializes in destroying Starbases and Defense Platforms."
  leader_trait_demolisher_machine:0 "Demolisher"
  leader_trait_demolisher_machine_desc:1 "This unit is optimized for destroying Starbases and Defense Platforms."
 
  leader_trait_shipbreaker_hive:0 "Shipbreaker"
- leader_trait_shipbreaker_hive_desc:0 "This drone salvages valuable alloys from destroyed enemy ships."
+ leader_trait_shipbreaker_hive_desc:0 "This [owner.GetIndividualName] salvages valuable alloys from destroyed enemy ships."
  leader_trait_shipbreaker_machine:0 "Shipbreaker"
  leader_trait_shipbreaker_machine_desc:0 "This unit salvages valuable alloys from destroyed enemy ships."
 
@@ -252,30 +252,30 @@
  leader_trait_shipbreaker_2_machine:0 "$leader_trait_shipbreaker_machine$ II"
  leader_trait_shipbreaker_2_machine_desc:0 "$leader_trait_shipbreaker_machine_desc$"
 
- leader_trait_artillery_focus_hive_desc:0 "This drone specializes in artillery weapons."
+ leader_trait_artillery_focus_hive_desc:0 "This [owner.GetIndividualName] specializes in artillery weapons."
  leader_trait_artillery_specialization_hive_desc:0 "$leader_trait_artillery_focus_hive_desc$"
  leader_trait_artillery_focus_machine_desc:0 "This unit specializes in artillery weapons."
  leader_trait_artillery_specialization_machine_desc:0 "$leader_trait_artillery_focus_machine_desc$"
 
- leader_trait_carrier_focus_hive_desc:0 "This drone specializes in strike crafts."
+ leader_trait_carrier_focus_hive_desc:0 "This [owner.GetIndividualName] specializes in strike crafts."
  leader_trait_carrier_specialization_hive_desc:0 "$leader_trait_carrier_focus_hive_desc$"
  leader_trait_carrier_focus_machine_desc:0 "This unit specializes in strike crafts."
  leader_trait_carrier_specialization_machine_desc:0 "$leader_trait_carrier_focus_machine_desc$"
 
- leader_trait_rocketry_focus_hive_desc:0 "This drone specializes in explosives weapons."
+ leader_trait_rocketry_focus_hive_desc:0 "This [owner.GetIndividualName] specializes in explosives weapons."
  leader_trait_rocketry_specialization_hive_desc:0 "$leader_trait_rocketry_focus_hive_desc$"
  leader_trait_rocketry_focus_machine_desc:0 "This unit specializes in explosives weapons."
  leader_trait_rocketry_specialization_machine_desc:0 "$leader_trait_rocketry_focus_machine_desc$"
 
- leader_trait_gunship_focus_hive_desc:0 "This drone specializes in gunships."
+ leader_trait_gunship_focus_hive_desc:0 "This [owner.GetIndividualName] specializes in gunships."
  leader_trait_gunship_specialization_hive_desc:0 "$leader_trait_gunship_focus_hive_desc$"
  leader_trait_gunship_focus_machine_desc:0 "This unit specializes in gunships."
  leader_trait_gunship_specialization_machine_desc:0 "$leader_trait_gunship_focus_machine_desc$"
 
  leader_trait_juryrigger_hive:1 "Jury-Rigger"
- leader_trait_juryrigger_hive_desc:0 "This drone uses the wreckage of defeated enemies to repair the ships in the fleet."
+ leader_trait_juryrigger_hive_desc:0 "This [owner.GetIndividualName] uses the wreckage of defeated enemies to repair ships in its fleet."
  leader_trait_juryrigger_machine:1 "Jury-Rigger"
- leader_trait_juryrigger_machine_desc:0 "This unit uses the wreckage of defeated enemies to repair the ships in the fleet."
+ leader_trait_juryrigger_machine_desc:0 "$leader_trait_juryrigger_hive_desc$"
 
  leader_trait_juryrigger_2_hive:0 "$leader_trait_juryrigger_hive$ II"
  leader_trait_juryrigger_2_hive_desc:0 "$leader_trait_juryrigger_hive_desc$"
@@ -283,12 +283,12 @@
  leader_trait_juryrigger_2_machine_desc:0 "$leader_trait_juryrigger_machine_desc$"
 
  leader_trait_surgical_bombardment_hive:0 "Surgical Bombardment"
- leader_trait_surgical_bombardment_hive_desc:1 "Utilizing precise sensor data, this drone can deliver devastating attacks to ground armies with minimal collateral damage."
+ leader_trait_surgical_bombardment_hive_desc:1 "Utilizing precise sensor data, this [owner.GetIndividualName] can deliver devastating attacks to ground armies with minimal collateral damage."
  leader_trait_surgical_bombardment_machine:0 "Surgical Bombardment"
  leader_trait_surgical_bombardment_machine_desc:1 "Utilizing precise sensor data, this unit can deliver devastating attacks to ground armies with minimal collateral damage."
 
  leader_trait_scholar_of_war_hive:1 "Tactical Analyst"
- leader_trait_scholar_of_war_hive_desc:1 "This drone gathers extensive battle data to improve its performance over time."
+ leader_trait_scholar_of_war_hive_desc:1 "This [owner.GetIndividualName] gathers extensive battle data to improve its performance over time."
  leader_trait_scholar_of_war_machine:1 "Tactical Analyst"
  leader_trait_scholar_of_war_machine_desc:1 "This unit gathers extensive battle data to improve its performance over time."
 
@@ -318,7 +318,7 @@
  trait_ruler_fortifier_2_machine_desc:0 "$trait_ruler_fortifier_machine_desc$"
 
  leader_trait_armada_logistician_hive:0 "Armada Logistician"
- leader_trait_armada_logistician_hive_desc:1 "This node optimizes fleet upkeep with interchangeable modules between ships and repair drones."
+ leader_trait_armada_logistician_hive_desc:1 "This node optimizes fleet upkeep with interchangeable modules between ships and repair [owner.GetIndividualNamePlural]."
  leader_trait_armada_logistician_machine:0 "Armada Logistician"
  leader_trait_armada_logistician_machine_desc:1 "This unit optimizes fleet upkeep with interchangeable modules between ships and repair drones."
 
@@ -347,7 +347,7 @@
  leader_trait_defence_engineer_2_machine:0 "$leader_trait_defence_engineer_machine$ II"
  leader_trait_defence_engineer_2_machine_desc:0 "$leader_trait_defence_engineer_machine_desc$"
 
- leader_trait_spycraft_hive:1 "Intelligence Gatherer"
+ leader_trait_spycraft_hive: "Intelligence Gathering"
  leader_trait_spycraft_hive_desc:1 "This node processes information gathered from ongoing espionage operations."
  leader_trait_spycraft_machine:0 "Espionage Subroutines"
  leader_trait_spycraft_machine_desc:1 "This node processes information gathered from ongoing espionage operations."
@@ -358,7 +358,7 @@
  leader_trait_spycraft_2_machine_desc:0 "$leader_trait_spycraft_machine_desc$"
 
  leader_trait_butcher_hive:0 "Destroyer"
- leader_trait_butcher_hive_desc:1 "This drone unleashes armies in relentless and devastating attacks that cause significant collateral damage."
+ leader_trait_butcher_hive_desc:1 "This [owner.GetIndividualName] unleashes armies in relentless and devastating attacks that cause significant collateral damage."
  leader_trait_butcher_machine:0 "Destroyer"
  leader_trait_butcher_machine_desc:1 "This unit unleashes armies in relentless and devastating attacks that cause significant collateral damage."
 
@@ -372,8 +372,8 @@
  leader_trait_butcher_3_machine:0 "$leader_trait_butcher_machine$ III"
  leader_trait_butcher_3_machine_desc:0 "$leader_trait_butcher_machine_desc$"
 
- trait_ruler_investor_hive:0 "Optimization Drone"
- trait_ruler_investor_hive_desc:1 "This node is responsible for maximizing the potential of worker drones."
+ trait_ruler_investor_hive:0 "Optimizer"
+ trait_ruler_investor_hive_desc:1 "This node is responsible for maximizing the potential of worker [owner.GetIndividualNamePlural]."
  trait_ruler_investor_2_hive:0 "$trait_ruler_investor_hive$ II"
  trait_ruler_investor_2_hive_desc:0 "$trait_ruler_investor_hive_desc$"
  trait_ruler_investor_3_hive:0 "$trait_ruler_investor_hive$ III"
@@ -387,7 +387,7 @@
  trait_ruler_investor_3_machine_desc:0 "$trait_ruler_investor_machine_desc$"
 
  leader_trait_army_logistician_hive:0 "Army Logistician"
- leader_trait_army_logistician_hive_desc:1 "This drone adheres to routines that reduce the upkeep of the army."
+ leader_trait_army_logistician_hive_desc:1 "This [owner.GetIndividualName] adheres to routines that reduce the upkeep of the army."
  leader_trait_army_logistician_machine:0 "Army Logistician"
  leader_trait_army_logistician_machine_desc:1 "This unit adheres to routines that reduce the upkeep of the army."
 
@@ -396,9 +396,9 @@
  leader_trait_army_logistician_2_machine:0 "$leader_trait_army_logistician_machine$ II"
  leader_trait_army_logistician_2_machine_desc:0 "$leader_trait_army_logistician_machine_desc$"
 
- leader_trait_restrained_hive:1 "Calculator"
- leader_trait_restrained_hive_desc:1 "This drone calculates tactical offensives that minimize collateral damage."
- leader_trait_restrained_machine:1 "Calculator"
+ leader_trait_restrained_hive: "Calculating"
+ leader_trait_restrained_hive_desc:1 "This [owner.GetIndividualName] calculates tactical offensives that minimize collateral damage."
+ leader_trait_restrained_machine: "Calculating"
  leader_trait_restrained_machine_desc:1 "This unit calculates tactical offensives that minimize collateral damage."
 
  leader_trait_restrained_2_hive:0 "$leader_trait_restrained_hive$ II"
@@ -411,8 +411,8 @@
  leader_trait_restrained_3_machine:0 "$leader_trait_restrained_machine$ III"
  leader_trait_restrained_3_machine_desc:0 "$leader_trait_restrained_machine_desc$"
 
- leader_trait_inspiring_hive:1 "Dominator"
- leader_trait_inspiring_hive_desc:1 "Armies controlled by this drone are resistant to loss of morale."
+ leader_trait_inspiring_hive: "Resolute"
+ leader_trait_inspiring_hive_desc:1 "Armies controlled by this [owner.GetIndividualName] are resistant to loss of morale."
 
  leader_trait_inspiring_2_hive:0 "$leader_trait_inspiring_hive$ II"
  leader_trait_inspiring_2_hive_desc:0 "$leader_trait_inspiring_hive_desc$"
@@ -428,7 +428,7 @@
  leader_trait_glory_seeker_2_machine_desc:0 "$leader_trait_glory_seeker_machine_desc$"
 
  leader_trait_dreaded_hive:0 "Demoralizer"
- leader_trait_dreaded_hive_desc:1 "Armies controlled by this drone are excellent at demoralizing the enemy."
+ leader_trait_dreaded_hive_desc:1 "Armies controlled by this [owner.GetIndividualName] are excellent at demoralizing the enemy."
  leader_trait_dreaded_machine:0 "Demoralizer"
  leader_trait_dreaded_machine_desc:1 "Armies controlled by this unit are excellent at demoralizing the enemy."
 
@@ -437,9 +437,9 @@
  leader_trait_dreaded_2_machine:0 "$leader_trait_dreaded_machine$ II"
  leader_trait_dreaded_2_machine_desc:0 "$leader_trait_dreaded_machine_desc$"
 
- leader_trait_hardy_hive:1 "Hardiness"
- leader_trait_hardy_hive_desc:1 "Armies controlled by this drone are heavily resistant to damage."
- leader_trait_hardy_machine:1 "Hardiness"
+ leader_trait_hardy_hive: "Hardy"
+ leader_trait_hardy_hive_desc:1 "Armies controlled by this [owner.GetIndividualName] are heavily resistant to damage."
+ leader_trait_hardy_machine: "Hardy"
  leader_trait_hardy_machine_desc:1 "Armies controlled by this unit are heavily resistant to damage."
 
  leader_trait_hardy_2_hive:0 "$leader_trait_hardy_hive$ II"
@@ -448,7 +448,7 @@
  leader_trait_hardy_2_machine_desc:0 "$leader_trait_hardy_machine_desc$"
 
  leader_trait_heavy_hitter_hive:0 "Heavy Hitter"
- leader_trait_heavy_hitter_hive_desc:1 "This drone uses heavy assault tactics to inflict immense damage to the enemy."
+ leader_trait_heavy_hitter_hive_desc:1 "This [owner.GetIndividualName] uses heavy assault tactics to inflict immense damage to the enemy."
  leader_trait_heavy_hitter_machine:0 "Heavy Hitter"
  leader_trait_heavy_hitter_machine_desc:1 "This unit uses heavy assault tactics to inflict immense damage on the enemy."
 
@@ -458,7 +458,7 @@
  leader_trait_heavy_hitter_2_machine_desc:0 "$leader_trait_heavy_hitter_machine_desc$"
 
  leader_trait_scrambler_hive:0 "Scrambler"
- leader_trait_scrambler_hive_desc:1 "This drone scrambles communications and sensors when occupying enemy colonies."
+ leader_trait_scrambler_hive_desc:1 "This [owner.GetIndividualName] scrambles communications and sensors when occupying enemy colonies."
  leader_trait_scrambler_machine:0 "Scrambler"
  leader_trait_scrambler_machine_desc:1 "This unit scrambles communications and sensors when occupying enemy colonies."
 
@@ -479,7 +479,7 @@
  trait_ruler_deep_connections_2_machine_desc:0 "$trait_ruler_deep_connections_machine_desc$"
 
  leader_trait_interrogator_hive:0 "Interrogator"
- leader_trait_interrogator_hive_desc:1 "This drone uses specialized interrogation techniques on occupied populations. Gathered data assists ongoing intelligence operations."
+ leader_trait_interrogator_hive_desc:1 "This [owner.GetIndividualName] uses specialized interrogation techniques on occupied populations. Gathered data assists ongoing intelligence operations."
  leader_trait_interrogator_machine:0 "Interrogator"
  leader_trait_interrogator_machine_desc:1 "This unit uses specialized interrogation techniques on occupied populations. Gathered data assists ongoing intelligence operations."
 
@@ -489,7 +489,7 @@
  leader_trait_interrogator_2_machine_desc:0 "$leader_trait_interrogator_machine_desc$"
 
  leader_trait_crusader_hive:0 "Potent Pheromones"
- leader_trait_crusader_hive_desc:0 "This drone has a modified gland that secretes calm-inducing pheromones to active combat drones."
+ leader_trait_crusader_hive_desc:0 "This [owner.GetIndividualName] has a modified gland that secretes calm-inducing pheromones to active combatants."
  leader_trait_crusader_2_hive:0 "$leader_trait_crusader_hive$ II"
  leader_trait_crusader_2_hive_desc:0 "$leader_trait_crusader_hive_desc$"
  leader_trait_crusader_machine:0 "Tactician"
@@ -498,7 +498,7 @@
  leader_trait_crusader_2_machine_desc:0 "$leader_trait_crusader_machine_desc$"
 
  leader_trait_industrial_espionage_hive:0 "Techno-Dismantler"
- leader_trait_industrial_espionage_hive_desc:1 "This drone disassembles alien technology when it occupies an enemy colony."
+ leader_trait_industrial_espionage_hive_desc:1 "This [owner.GetIndividualName] disassembles alien technology when it occupies an enemy colony."
  leader_trait_industrial_espionage_machine:0 "Techno-Extractor"
  leader_trait_industrial_espionage_machine_desc:1 "This unit disassembles alien technology when it occupies an enemy colony."
 
@@ -508,7 +508,7 @@
  leader_trait_industrial_espionage_2_machine_desc:0 "$leader_trait_industrial_espionage_machine_desc$"
 
  leader_trait_warden_hive:0 "Warden"
- leader_trait_warden_hive_desc:1 "This drone commands several defensive armies that will assist in protecting the planet."
+ leader_trait_warden_hive_desc:1 "This [owner.GetIndividualName] commands several defensive armies that will assist in protecting the planet."
  leader_trait_warden_machine:0 "Warden"
  leader_trait_warden_machine_desc:1 "This unit commands several defensive armies that will assist in protecting the planet."
 
@@ -518,7 +518,7 @@
  leader_trait_warden_2_machine_desc:0 "$leader_trait_warden_machine_desc$"
 
  leader_trait_reinforcer_hive:0 "Reinforcer"
- leader_trait_reinforcer_hive_desc:1 "This drone reinforces damaged combat units, focusing on defensive warfare."
+ leader_trait_reinforcer_hive_desc:1 "This [owner.GetIndividualName] reinforces damaged combat units, focusing on defensive warfare."
  leader_trait_reinforcer_machine:0 "Reinforcer"
  leader_trait_reinforcer_machine_desc:1 "This unit uses special command protocols to reinforce damaged combat units, focusing on defensive warfare."
 
@@ -528,9 +528,9 @@
  leader_trait_reinforcer_2_machine_desc:0 "$leader_trait_reinforcer_machine_desc$"
 
  leader_trait_guardian_hive:0 "Guardian"
- leader_trait_guardian_hive_desc:1 "This drone controls the Starbase and the Defensive Platforms in the system, increasing their defensive capabilities."
+ leader_trait_guardian_hive_desc:1 "This [owner.GetIndividualName] controls the Starbase and the Defense Platforms in the system, increasing their defensive capabilities."
  leader_trait_guardian_machine:0 "Guardian"
- leader_trait_guardian_machine_desc:0 "This unit uplinks itself to the Starbase and the Defensive Platforms in the system, increasing their defensive capabilities."
+ leader_trait_guardian_machine_desc:0 "This unit uplinks itself to the Starbase and the Defense Platforms in the system, increasing their defensive capabilities."
 
  leader_trait_guardian_2_hive:0 "$leader_trait_guardian_hive$ II"
  leader_trait_guardian_2_hive_desc:0 "$leader_trait_guardian_hive_desc$"
@@ -538,7 +538,7 @@
  leader_trait_guardian_2_machine_desc:0 "$leader_trait_guardian_machine_desc$"
 
  leader_trait_conscripter_hive:0 "Army Growth"
- leader_trait_conscripter_hive_desc:1 "This drone boosts army growth speed on the planet and imbues new drones with advanced combat commands."
+ leader_trait_conscripter_hive_desc:1 "This [owner.GetIndividualName] boosts army growth speed on the planet and imbues new soldiers with advanced combat commands."
  leader_trait_conscripter_machine:0 "Army Assembler"
  leader_trait_conscripter_machine_desc:1 "This unit boosts army production speed on the planet and uploads advanced tactical combat protocols into new battle units."
 
@@ -552,8 +552,8 @@
  trait_ruler_recruiter_machine:0 "War Assembly Protocols"
  trait_ruler_recruiter_machine_desc:1 "This unit asserts assembly protocols that make it possible to construct armies at high speed and low cost."
 
- leader_trait_science_communicator_hive:0 "Science Drone Upgrader"
- leader_trait_science_communicator_hive_desc:1 "With a constant stream of new knowledge, this node improves the science output of other leader drones."
+ leader_trait_science_communicator_hive:0 "Science Conduit"
+ leader_trait_science_communicator_hive_desc:1 "With a constant stream of new knowledge, this node improves the science output of other leader [owner.GetIndividualNamePlural]."
  leader_trait_science_communicator_machine:0 "Science Unit Upgrader"
  leader_trait_science_communicator_machine_desc:1 "With a constant stream of new knowledge, this unit improves the science output of other leader units."
 
@@ -562,8 +562,8 @@
  leader_trait_science_communicator_2_machine:0 "$leader_trait_science_communicator_machine$ II"
  leader_trait_science_communicator_2_machine_desc:0 "$leader_trait_science_communicator_machine_desc$"
 
- leader_trait_carefree_hive:1 "Efficiency"
- leader_trait_carefree_hive_desc:1 "This drone efficiently sifts through data when investigating an unknown phenomenon."
+ leader_trait_carefree_hive: "Quick"
+ leader_trait_carefree_hive_desc:1 "This [owner.GetIndividualName] efficiently sifts through data when investigating an unknown phenomenon."
  leader_trait_carefree_machine:0 "Quick Calculations"
  leader_trait_carefree_machine_desc:1 "This unit efficiently sifts through data when investigating an unknown phenomenon."
 
@@ -573,7 +573,7 @@
  leader_trait_carefree_2_machine_desc:0 "$leader_trait_carefree_machine_desc$"
 
  leader_trait_civil_engineer_hive:0 "Architectural Mind"
- leader_trait_civil_engineer_hive_desc:0 "This drone reduces the construction time of districts and buildings."
+ leader_trait_civil_engineer_hive_desc:0 "This [owner.GetIndividualName] reduces the construction time of districts and buildings."
  leader_trait_civil_engineer_machine:0 "Architectural Computations"
  leader_trait_civil_engineer_machine_desc:0 "This unit uses advanced computations to reduce the construction time of districts and buildings."
 
@@ -583,7 +583,7 @@
  leader_trait_civil_engineer_2_machine_desc:0 "$leader_trait_civil_engineer_machine_desc$"
 
  leader_trait_collaborator_hive:0 "Synapse Linking"
- leader_trait_collaborator_hive_desc:1 "This drone is effective at sharing information with other parts of the hivemind."
+ leader_trait_collaborator_hive_desc:1 "This [owner.GetIndividualName] is effective at sharing information with other parts of the [owner.GetGovernmentName]."
  leader_trait_collaborator_machine:0 "Computer Linking"
  leader_trait_collaborator_machine_desc:1 "This unit is effective at sharing information with other parts of the network."
 
@@ -623,7 +623,7 @@
  trait_ruler_expansionist_2_machine_desc:0 "$trait_ruler_expansionist_machine_desc$"
 
  leader_trait_experimenter_hive:0 "Experimenter"
- leader_trait_experimenter_hive_desc:1 "This drone's ongoing experiments are a boon to the hive."
+ leader_trait_experimenter_hive_desc:1 "This [owner.GetIndividualName]'s ongoing experiments are a boon to the [owner.GetGestaltEntityName]."
  leader_trait_experimenter_machine:0 "Experimental Simulations"
  leader_trait_experimenter_machine_desc:1 "This unit's experimental simulations are a boon to the network."
 
@@ -637,9 +637,9 @@
  leader_trait_inquisitive_machine:0 "Analytical"
  leader_trait_inquisitive_machine_desc:1 "This unit's analytical software offers a new direction for technological research."
 
- leader_trait_insightful_hive:1 "Acumen"
- leader_trait_insightful_hive_desc:1 "This drone performs detailed analysis of anomaly data."
- leader_trait_insightful_machine:1 "Precision"
+ leader_trait_insightful_hive: "Insightful"
+ leader_trait_insightful_hive_desc:1 "This [owner.GetIndividualName] performs detailed analysis of anomaly data."
+ leader_trait_insightful_machine: "Observant"
  leader_trait_insightful_machine_desc:1 "This unit performs detailed analysis of anomaly data."
  leader_trait_insightful_2_hive:0 "$leader_trait_insightful_hive$ II"
  leader_trait_insightful_2_hive_desc:0 "$leader_trait_insightful_hive_desc$"
@@ -648,7 +648,7 @@
 
  leader_trait_maniacal_hive:0 "Neural Overclocking"
  leader_trait_maniacal_hive_desc:1 "This node is stimulated to work beyond expected limits, increasing research output."
- leader_trait_maniacal_machine:1 "Overclock"
+ leader_trait_maniacal_machine: "Overclocked"
  leader_trait_maniacal_machine_desc:1 "This unit is pushed beyond recommended limits, which increases research output."
 
  leader_trait_maniacal_2_hive:0 "$leader_trait_maniacal_hive$ II"
@@ -657,7 +657,7 @@
  leader_trait_maniacal_2_machine_desc:0 "$leader_trait_maniacal_machine_desc$"
 
  leader_trait_manufacturer_hive:0 "Assisted Upkeep"
- leader_trait_manufacturer_hive_desc:1 "This drone assists with the population upkeep and function."
+ leader_trait_manufacturer_hive_desc:1 "This [owner.GetIndividualName] assists with the population upkeep and function."
  leader_trait_manufacturer_machine:0 "Assisted Upkeep"
  leader_trait_manufacturer_machine_desc:1 "This unit assists with planetary machine unit maintenance and function."
 
@@ -666,9 +666,9 @@
  leader_trait_manufacturer_2_machine:0 "$leader_trait_manufacturer_machine$ II"
  leader_trait_manufacturer_2_machine_desc:0 "$leader_trait_manufacturer_machine_desc$"
 
- leader_trait_meticulous_hive:1 "Meticulous Analyst"
- leader_trait_meticulous_hive_desc:1 "This drone is especially thorough when researching unexplained phenomena."
- leader_trait_meticulous_machine:1 "Meticulous Calculator"
+ leader_trait_meticulous_hive: "Meticulous"
+ leader_trait_meticulous_hive_desc:1 "This [owner.GetIndividualName] is especially thorough when researching unexplained phenomena."
+ leader_trait_meticulous_machine: "Meticulous Calculations"
  leader_trait_meticulous_machine_desc:1 "This unit possesses advanced subroutines for studying unexplained phenomena."
 
  leader_trait_meticulous_2_hive:0 "$leader_trait_meticulous_hive$ II"
@@ -677,7 +677,7 @@
  leader_trait_meticulous_2_machine_desc:0 "$leader_trait_meticulous_machine_desc$"
 
  leader_trait_roamer_hive:0 "Cataloger"
- leader_trait_roamer_hive_desc:1 "This drone was specifically bred to catalogue interstellar data."
+ leader_trait_roamer_hive_desc:1 "This [owner.GetIndividualName] was specifically bred to catalog interstellar data."
  leader_trait_roamer_machine:0 "Cataloger"
  leader_trait_roamer_machine_desc:1 "This unit was specifically designed to catalog interstellar data."
 
@@ -686,23 +686,25 @@
  leader_trait_roamer_2_machine:0 "$leader_trait_roamer_machine$ II"
  leader_trait_roamer_2_machine_desc:0 "$leader_trait_roamer_machine_desc$"
 
- leader_trait_salvager_hive:0 "Salvager"
- leader_trait_salvager_hive_desc:1 "This drone excels at salvaging ships from debris."
- leader_trait_salvager_machine:0 "Salvager"
- leader_trait_salvager_machine_desc:1 "This unit has optimized ship debris salvage protocols installed."
+ leader_trait_salvager_hive:0 "$leader_trait_salvager$"
+ leader_trait_salvager_hive_desc: "$leader_trait_salvager_desc$"
+ leader_trait_salvager_hive_regular_desc:1 "This [owner.GetIndividualName] excels at salvaging ships from debris."
+ leader_trait_salvager_machine:0 "$leader_trait_salvager$"
+ leader_trait_salvager_machine_desc: "$leader_trait_salvager_desc$"
+ leader_trait_salvager_machine_regular_desc:1 "This unit has optimized ship debris salvage protocols installed."
 
- leader_trait_slippery_hive:1 "Evasiveness"
- leader_trait_slippery_hive_desc:0 "This drone has sharp instincts that keep it away from danger."
+ leader_trait_slippery_hive: "Slippery"
+ leader_trait_slippery_hive_desc:0 "This [owner.GetIndividualName] has sharp instincts that keep it away from danger."
  leader_trait_slippery_machine:0 "Emergency Protocols"
  leader_trait_slippery_machine_desc:0 "This unit follows advanced emergency protocols that keep it away from danger."
 
  leader_trait_surveyor_hive:0 "Planetary Monitoring"
- leader_trait_surveyor_hive_desc:1 "This drone is specialized to improve resource output on planetary nests."
+ leader_trait_surveyor_hive_desc:1 "This [owner.GetIndividualName] is specialized to improve resource output on planetary nests."
  leader_trait_surveyor_machine:0 "Planetary Monitoring"
  leader_trait_surveyor_machine_desc:1 "This unit is optimized to improve resource output on planet side operations."
 
  leader_trait_tuner_hive:0 "Tuner"
- leader_trait_tuner_hive_desc:0 "This drone navigates along the natural gravitational fields within each star system."
+ leader_trait_tuner_hive_desc:0 "This [owner.GetIndividualName] navigates along the natural gravitational fields within each star system."
  leader_trait_tuner_machine:0 "Tuner"
  leader_trait_tuner_machine_desc:0 "This unit navigates along the natural gravitational fields within each star system."
 
@@ -717,12 +719,12 @@
  trait_ruler_world_shaper_machine_desc:1 "This unit is specialized for improving colonized worlds."
 
  leader_trait_bureaucrat_hive:0 "Mindfulness"
- leader_trait_bureaucrat_hive_desc:1 "This drone raises performance standards and increases the efficiency of all administrative drones."
+ leader_trait_bureaucrat_hive_desc:1 "This [owner.GetIndividualName] raises performance standards and increases the efficiency of all [owner.GetBureaucratPlural]."
  leader_trait_bureaucrat_machine:0 "Amplifier"
  leader_trait_bureaucrat_machine_desc:1 "This unit raises the average output and increases the efficiency of all administrative units."
 
  trait_ruler_industrialist_hive:1 "Collector"
- trait_ruler_industrialist_hive_desc:1 "This drone's primary focus is mineral production."
+ trait_ruler_industrialist_hive_desc:1 "This [owner.GetIndividualName]'s primary focus is mineral production."
  trait_ruler_industrialist_machine:1 "Accumulator"
  trait_ruler_industrialist_machine_desc:1 "This unit's primary focus is mineral production."
 
@@ -731,8 +733,8 @@
  leader_trait_industrial_focus_machine:0 "$leader_trait_industrial_focus$"
  leader_trait_industrial_focus_machine_desc:0 "$trait_ruler_industrialist_machine_desc$"
 
- leader_trait_pop_focused_hive:0 "Princeps Drone"
- leader_trait_pop_focused_hive_desc:0 "This drone instinctively knows which drones are more predisposed to fulfill critical tasks and roles."
+ leader_trait_pop_focused_hive:0 "Princeps [owner.GetIndividualNameCap]"
+ leader_trait_pop_focused_hive_desc:0 "This [owner.GetIndividualName] instinctively knows which [owner.GetIndividualName] are more predisposed to fulfill critical tasks and roles."
  leader_trait_pop_focused_machine:0 "Allocation Algorithm"
  leader_trait_pop_focused_machine_desc:0 "This unit is adept at calculating which machines are predisposed towards critical tasks and roles."
 
@@ -747,7 +749,7 @@
  leader_trait_frontier_spirit_machine_desc:0 "This unit was updated with special subroutines to increase the efficiency of colonization processes."
 
  leader_trait_distribution_lines_hive:0 "Resource Allocator"
- leader_trait_distribution_lines_hive_desc:0 "This drone quickly calculates the required resources and supply routes of industrial complexes."
+ leader_trait_distribution_lines_hive_desc:0 "This [owner.GetIndividualName] quickly calculates the required resources and supply routes of industrial complexes."
  leader_trait_distribution_lines_machine:0 "Supply Calculations"
  leader_trait_distribution_lines_machine_desc:0 "This unit was installed with highly efficient supply-on-demand calculation software."
 
@@ -757,12 +759,12 @@
  leader_trait_border_guard_machine_desc:1 "This unit calculates the best way to win the war is to maintain strict and powerful border defenses."
 
  leader_trait_crew_trainer_hive:0 "Combat Brain"
- leader_trait_crew_trainer_hive_desc:1 "This node is focused on developing navy drones before they are released into active duty."
+ leader_trait_crew_trainer_hive_desc:1 "This node is focused on developing [owner.GetIndividualNamePlural] before they are released into active naval duty."
  leader_trait_crew_trainer_machine:0 "Combat Database"
  leader_trait_crew_trainer_machine_desc:1 "This unit maintains an excessive database on space combat tactics, which are uploaded to every navel unit."
 
- leader_trait_space_miner_hive:0 "Geo-Drone"
- leader_trait_space_miner_hive_desc:0 "This drone can identify rich ore veins for planetside mining facilities."
+ leader_trait_space_miner_hive:0 "$leader_trait_space_miner_machine$"
+ leader_trait_space_miner_hive_desc:0 "This [owner.GetIndividualName] can identify rich ore veins for planetside mining facilities."
  leader_trait_space_miner_machine:0 "Geo-Mapper"
  leader_trait_space_miner_machine_desc:0 "This unit can identify rich ore veins for planetside mining facilities."
 
@@ -772,25 +774,25 @@
  leader_trait_home_guard_machine_desc:1 "This unit prepares elaborate planetary defenses in case of enemy invasion."
 
  trait_ruler_frontier_spirit_hive:0 "Colony Focus"
- trait_ruler_frontier_spirit_hive_desc:1 "This drone's primary focus is the colonization of alien worlds."
+ trait_ruler_frontier_spirit_hive_desc:1 "This [owner.GetIndividualName]'s primary focus is the colonization of alien worlds."
  trait_ruler_frontier_spirit_machine:0 "Colony Focus"
  trait_ruler_frontier_spirit_machine_desc:1 "This unit's programming is geared towards the colonization of alien worlds."
 
  leader_trait_army_veteran_machine:0 "Warbot Tinkerer"
  leader_trait_army_veteran_machine_desc:1 "This unit was specially designed to service and upgrade active combat units."
- leader_trait_army_veteran_hive:0 "War Drone"
- leader_trait_army_veteran_hive_desc:1 "This drone was selectively trained and bred for warfare."
+ leader_trait_army_veteran_hive:0 "War [owner.GetIndividualNameCap]"
+ leader_trait_army_veteran_hive_desc:1 "This [owner.GetIndividualName] was selectively trained and bred for warfare."
 
  leader_trait_retired_fleet_officer_machine:1 "AI-Assisted Design"
  leader_trait_retired_fleet_officer_machine_desc:1 "This unit was specifically engineered to create new ship designs."
- leader_trait_retired_fleet_officer_hive:0 "Shipwright Drone"
- leader_trait_retired_fleet_officer_hive_desc:1 "This drone was selectively bred to develop cutting-edge ship designs."
+ leader_trait_retired_fleet_officer_hive:0 "Shipwright  [owner.GetIndividualNameCap]"
+ leader_trait_retired_fleet_officer_hive_desc:1 "This [owner.GetIndividualName] was selectively bred to develop cutting-edge ship designs."
 
  leader_trait_agrarian_upbringing_hive:0 "Agrarian Focus"
- leader_trait_agrarian_upbringing_hive_desc:1 "This drone stimulates planetary food production."
+ leader_trait_agrarian_upbringing_hive_desc:1 "This [owner.GetIndividualName] stimulates planetary food production."
 
  trait_ruler_fertility_preacher_hive:0 "Dynamic Growth"
- trait_ruler_fertility_preacher_hive_desc:1 "This node encourages drone fertilization, stimulating population growth."
+ trait_ruler_fertility_preacher_hive_desc:1 "This node encourages [owner.GetIndividualName] fertilization, stimulating population growth."
  trait_ruler_fertility_preacher_machine:0 "Accelerated Replicators"
  trait_ruler_fertility_preacher_machine_desc:1 "This unit expertly drives machine population assembly."
 
@@ -799,12 +801,12 @@
  trait_ruler_fertility_preacher_2_machine:0 "$trait_ruler_fertility_preacher_machine$ II"
  trait_ruler_fertility_preacher_2_machine_desc:0 "$trait_ruler_fertility_preacher_machine_desc$"
 
- leader_trait_environmental_engineer_hive_desc:1 "This drone was selectively bred to be an efficient environmental engineer."
+ leader_trait_environmental_engineer_hive_desc:1 "This [owner.GetIndividualName] was selectively bred to be an efficient environmental engineer."
  leader_trait_environmental_engineer_machine:0 "Bulldozer"
  leader_trait_environmental_engineer_machine_desc:1 "This unit comes pre-installed with environmental engineering protocols."
 
  leader_trait_enlister_hive:0 "Army Development Focus"
- leader_trait_enlister_hive_desc:1 "This drone is an efficient recruiter, capable of cutting the training costs of our armies."
+ leader_trait_enlister_hive_desc:1 "This [owner.GetIndividualName] is an efficient recruiter, capable of cutting the training costs of our armies."
  leader_trait_enlister_machine:0 "Army Development Focus"
  leader_trait_enlister_machine_desc:1 "This unit is an efficient recruiter, capable of cutting the training costs of our armies."
 
@@ -814,7 +816,7 @@
  leader_trait_enlister_2_machine_desc:0 "$leader_trait_enlister_machine_desc$"
 
  leader_trait_shipwright_hive:0 "Ship Construction Focus"
- leader_trait_shipwright_hive_desc:1 "This drone focuses on the efficient and economically viable construction of fleets in the system."
+ leader_trait_shipwright_hive_desc:1 "This [owner.GetIndividualName] focuses on efficient and economically viable construction of fleets in the system."
  leader_trait_shipwright_machine:0 "Ship Construction Focus"
  leader_trait_shipwright_machine_desc:1 "This unit is programmed to focus on the efficient and economically viable construction of fleets in the system."
 
@@ -824,7 +826,7 @@
  leader_trait_shipwright_2_machine_desc:0 "$leader_trait_shipwright_machine_desc$"
 
  leader_trait_architectural_interest_hive:0 "Efficient Builder"
- leader_trait_architectural_interest_hive_desc:1 "This drone is proficient at construction and engineering."
+ leader_trait_architectural_interest_hive_desc:1 "This [owner.GetIndividualName] is proficient at construction and engineering."
  leader_trait_architectural_interest_machine:0 "Efficient Builder"
  leader_trait_architectural_interest_machine_desc:1 "This unit is designed for construction and engineering."
 
@@ -844,12 +846,12 @@
  trait_ruler_architectural_sense_2_machine_desc:0 "$trait_ruler_architectural_sense_machine_desc$"
 
  leader_trait_mining_focus_hive:0 "Mining Focus"
- leader_trait_mining_focus_hive_desc:1 "This drone utilizes unique mining and processing techniques, improving our mineral reserves."
+ leader_trait_mining_focus_hive_desc:1 "This [owner.GetIndividualName] utilizes unique mining and processing techniques, improving our mineral reserves."
  leader_trait_mining_focus_machine:0 "Mining Focus"
  leader_trait_mining_focus_machine_desc:1 "This unit utilizes unique mining and processing techniques, improving our mineral reserves."
 
  leader_trait_generator_focus_hive:0 "Generator Focus"
- leader_trait_generator_focus_hive_desc:1 "This drone is proficient at energy extraction and storage."
+ leader_trait_generator_focus_hive_desc:1 "This [owner.GetIndividualName] is proficient at energy extraction and storage."
  leader_trait_generator_focus_machine:0 "Generator Focus"
  leader_trait_generator_focus_machine_desc:1 "This unit is optimized for the extraction and storage of energy."
 
@@ -869,12 +871,12 @@
  leader_trait_generator_focus_2_machine_desc:0 "$leader_trait_generator_focus_machine_desc$"
 
  leader_trait_farming_focus_hive:0 "Farming Focus"
- leader_trait_farming_focus_hive_desc:1 "This drone is proficient at growing and preserving food."
+ leader_trait_farming_focus_hive_desc:1 "This [owner.GetIndividualName] is proficient at growing and preserving food."
  leader_trait_farming_focus_machine:0 "Farming Focus"
  leader_trait_farming_focus_machine_desc:1 "This unit has been optimized to be proficient at growing and preserving food."
 
  leader_trait_settler_hive:0 "Settler"
- leader_trait_settler_hive_desc:1 "This drone is proficient at improving housing and nest maintenance costs."
+ leader_trait_settler_hive_desc:1 "This [owner.GetIndividualName] is proficient at improving housing and nest maintenance costs."
  leader_trait_settler_machine:0 "Settler"
  leader_trait_settler_machine_desc:1 "This unit is optimized to improve housing and nexus maintenance costs."
 
@@ -884,7 +886,7 @@
  leader_trait_settler_2_machine_desc:0 "$leader_trait_settler_machine_desc$"
 
  leader_trait_cartographer_hive:0 "Terraforming Focus"
- leader_trait_cartographer_hive_desc:1 "This drone is uniquely specialized for terraforming."
+ leader_trait_cartographer_hive_desc:1 "This [owner.GetIndividualName] is uniquely specialized for terraforming."
  leader_trait_cartographer_machine:0 "Terraforming Focus"
  leader_trait_cartographer_machine_desc:1 "This unit has been programmed to enhance our terraforming processes."
 
@@ -894,15 +896,15 @@
  leader_trait_cartographer_2_machine_desc:0 "$leader_trait_cartographer_machine_desc$"
 
  leader_trait_expeditionist_hive:0 "Planet Carver"
- leader_trait_expeditionist_hive_desc:1 "This drone is specialized for geological sculpting and land utilization."
+ leader_trait_expeditionist_hive_desc:1 "This [owner.GetIndividualName] is specialized for geological sculpting and land utilization."
  leader_trait_expeditionist_machine:0 "Planet Carver"
  leader_trait_expeditionist_machine_desc:1 "This unit is specialized for geological sculpting and land utilization."
 
  leader_trait_life_support_systems_hive:0 "Life Support Systems"
- leader_trait_life_support_systems_hive_desc:1 "This drone implements and manages complex life support systems on alien worlds."
+ leader_trait_life_support_systems_hive_desc:1 "This [owner.GetIndividualName] implements and manages complex life support systems on alien worlds."
 
  leader_trait_forge_focus_hive:0 "Forge Focus"
- leader_trait_forge_focus_hive_desc:1 "This drone is an expert at alloy processing techniques."
+ leader_trait_forge_focus_hive_desc:1 "This [owner.GetIndividualName] is an expert at alloy processing techniques."
  leader_trait_forge_focus_machine:0 "Forge Focus"
  leader_trait_forge_focus_machine_desc:1 "This unit has programmed expertise for alloy processing techniques."
 
@@ -912,7 +914,7 @@
  leader_trait_forge_focus_2_machine_desc:0 "$leader_trait_forge_focus_machine_desc$"
 
  leader_trait_refinement_focus_hive:0 "Refinement Focus"
- leader_trait_refinement_focus_hive_desc:1 "This drone is an expert at extracting and processing rare planetary resources."
+ leader_trait_refinement_focus_hive_desc:1 "This [owner.GetIndividualName] is an expert at extracting and processing rare planetary resources."
  leader_trait_refinement_focus_machine:0 "Refinement Focus"
  leader_trait_refinement_focus_machine_desc:1 "This unit has been programmed to extract and process rare planetary resources."
 
@@ -922,28 +924,28 @@
  leader_trait_refinement_focus_2_machine_desc:0 "$leader_trait_refinement_focus_machine_desc$"
 
  leader_trait_urbanist_hive:0 "Urbanist"
- leader_trait_urbanist_hive_desc:1 "This drone specializes in urban development and district management."
+ leader_trait_urbanist_hive_desc:1 "This [owner.GetIndividualName] specializes in urban development and district management."
  leader_trait_urbanist_machine:0 "Urbanist"
  leader_trait_urbanist_machine_desc:1 "This unit specializes in urban development and district management."
 
 
  leader_trait_trickster_machine_desc:1 "This unit's advanced combat protocols of misdirection provide it with unique battle advantages."
- leader_trait_trickster_hive_desc:1 "This drone's combat techniques of misdirection provide it with unique battle advantages."
+ leader_trait_trickster_hive_desc:1 "This [owner.GetIndividualName]'s combat techniques of misdirection provide it with unique battle advantages."
 
  leader_trait_urbanist_2_hive:0 "$leader_trait_urbanist_hive$ II"
  leader_trait_urbanist_2_hive_desc:0 "$leader_trait_urbanist_hive_desc$"
  leader_trait_urbanist_2_machine:0 "$leader_trait_urbanist_machine$ II"
  leader_trait_urbanist_2_machine_desc:0 "$leader_trait_urbanist_machine_desc$"
 
- leader_trait_adventurous_spirit_hive:1 "Autonomous Drone"
- leader_trait_adventurous_spirit_hive_desc:1 "Bred with an unusually high degree of autonomy, this drone is capable of making spontaneous and independent decisions."
+ leader_trait_adventurous_spirit_hive:1 "Autonomous [owner.GetIndividualNameCap]"
+ leader_trait_adventurous_spirit_hive_desc:1 "Bred with an unusually high degree of autonomy, this [owner.GetIndividualName] is capable of making spontaneous and independent decisions."
 
  leader_trait_adventurous_spirit_machine:0 "Unrestrained Unit"
  leader_trait_adventurous_spirit_machine_desc:1 "This unit is programmed with a special degree of autonomy."
 
- leader_trait_resilient_hive:1 "Resilience"
- leader_trait_resilient_hive_desc:1 "This drone is notably resilient."
- leader_trait_resilient_machine:1 "Resilience"
+ leader_trait_resilient_hive: "Resilient"
+ leader_trait_resilient_hive_desc:1 "This [owner.GetIndividualName] is notably resilient."
+ leader_trait_resilient_machine: "Resilient"
  leader_trait_resilient_machine_desc:1 "This unit was designed to be resilient."
 
  leader_trait_resilient_2_hive:1 "$leader_trait_resilient_hive$ II"
@@ -953,7 +955,7 @@
 
  leader_trait_adaptable_machine:0 "Flexible Programming"
  leader_trait_adaptable_machine_desc:1 "This unit is quick to experiment with new methods and ideas."
- leader_trait_adaptable_hive_desc:1 "This drone is quick to experiment with new methods and ideas."
+ leader_trait_adaptable_hive_desc:1 "This [owner.GetIndividualName] is quick to experiment with new methods and ideas."
 
  leader_trait_adaptable_2_hive:0 "$leader_trait_adaptable$ II"
  leader_trait_adaptable_2_hive_desc:0 "$leader_trait_adaptable_hive_desc$"
@@ -962,7 +964,7 @@
  leader_trait_adaptable_2_machine_desc:0 "$leader_trait_adaptable_machine_desc$"
 
  leader_trait_politician_hive:0 "Node Enhancer"
- leader_trait_politician_hive_desc:1 "This drone was selectively bred to enhance hive cohesion."
+ leader_trait_politician_hive_desc:1 "This [owner.GetIndividualName] was selectively bred to enhance collective cohesion."
  leader_trait_politician_machine:0 "Node Incrementor"
  leader_trait_politician_machine_desc:1 "This unit's programming has advanced algorithms which enhance unit cohesion."
 
@@ -973,7 +975,7 @@
  leader_trait_politician_2_machine_desc:0 "$leader_trait_politician_machine_desc$"
 
  leader_trait_capitalist_hive:0 "Power Sub-Supplier"
- leader_trait_capitalist_hive_desc:1 "This drone maintains decentralized power systems."
+ leader_trait_capitalist_hive_desc:1 "This [owner.GetIndividualName] maintains decentralized power systems."
  leader_trait_capitalist_machine:0 "Server Overseer"
  leader_trait_capitalist_machine_desc:1 "This unit is programmed to maintain decentralized power systems."
 
@@ -984,7 +986,7 @@
  leader_trait_capitalist_2_machine_desc:0 "$leader_trait_capitalist_machine_desc$"
 
  leader_trait_private_mines_hive:0 "Subsynaptic Mineral Exploitation"
- leader_trait_private_mines_hive_desc:1 "This drone maintains decentralized mineral sources."
+ leader_trait_private_mines_hive_desc:1 "This [owner.GetIndividualName] maintains decentralized mineral sources."
  leader_trait_private_mines_machine:1 "Mineral Extraction Subroutine"
  leader_trait_private_mines_machine_desc:1 "This unit is programmed to maintain decentralized mineral stocks."
 
@@ -994,8 +996,8 @@
  leader_trait_private_mines_2_machine:0 "$leader_trait_private_mines_machine$ II"
  leader_trait_private_mines_2_machine_desc:0 "$leader_trait_private_mines_machine_desc$"
 
- leader_trait_homesteader_hive:1 "Agrarian Drone"
- leader_trait_homesteader_hive_desc:1 "This drone maintains plots of land for food production."
+ leader_trait_homesteader_hive:1 "Agrarian [owner.GetIndividualNameCap]"
+ leader_trait_homesteader_hive_desc:1 "This [owner.GetIndividualName] maintains plots of land for food production."
  leader_trait_homesteader_machine:0 "Organic Support Unit"
  leader_trait_homesteader_machine_desc:1 "This unit is programmed to maintain land for food production."
 
@@ -1005,8 +1007,8 @@
  leader_trait_homesteader_2_machine:0 "$leader_trait_homesteader_machine$ II"
  leader_trait_homesteader_2_machine_desc:0 "$leader_trait_homesteader_machine_desc$"
 
- leader_trait_scrapper_hive:0 "Scavenger Drones"
- leader_trait_scrapper_hive_desc:1 "This drone operates scavenging fleets."
+ leader_trait_scrapper_hive:0 "Scavenger [owner.GetIndividualNamePluralCap]"
+ leader_trait_scrapper_hive_desc:1 "This [owner.GetIndividualName] operates scavenging fleets."
  leader_trait_scrapper_machine:0 "Reclamation Unit"
  leader_trait_scrapper_machine_desc:1 "This unit operates scavenging fleets."
 
@@ -1015,8 +1017,8 @@
  leader_trait_scrapper_2_machine:0 "$leader_trait_scrapper_machine$ II"
  leader_trait_scrapper_2_machine_desc:0 "$leader_trait_scrapper_machine_desc$"
 
- leader_trait_venerated_hive:0 "Hive Conduit"
- leader_trait_venerated_hive_desc:1 "This drone has a unifying influence, increasing hive cohesion."
+ leader_trait_venerated_hive:0 "Collective Conduit"
+ leader_trait_venerated_hive_desc:1 "This [owner.GetIndividualName] has a unifying influence, increasing collective cohesion."
  leader_trait_venerated_machine:0 "Network Relay"
  leader_trait_venerated_machine_desc:1 "This unit serves as a relay for the entire machine network."
 
@@ -1026,7 +1028,7 @@
  leader_trait_venerated_2_machine_desc:0 "$leader_trait_venerated_machine_desc$"
 
  leader_trait_melancholic_hive:0 "Chemically Misaligned"
- leader_trait_melancholic_hive_desc:1 "This drone is hindered by debilitating bouts of introspection."
+ leader_trait_melancholic_hive_desc:1 "This [owner.GetIndividualName] is hindered by debilitating bouts of introspection."
  leader_trait_melancholic_machine:0 "Glitchy"
  leader_trait_melancholic_machine_desc:1 "This unit performs many slow, detail-oriented self-diagnoses."
 
@@ -1035,9 +1037,9 @@
  leader_trait_reclusive_machine:0 "Malfunctioning Diplomacy Protocol"
  leader_trait_reclusive_machine_desc:1 "This unit is inefficient at data processing, and often crashes when attempting to provide diplomatic insight."
 
- leader_trait_intolerant_hive:1 "Intolerance"
- leader_trait_intolerant_hive_desc:1 "This node is naturally suspicious, spreading its distrust of aliens among other drones."
- leader_trait_intolerant_machine:1 "Intolerance"
+ leader_trait_intolerant_hive: "Intolerant"
+ leader_trait_intolerant_hive_desc:1 "This node is naturally suspicious, spreading its distrust of aliens among other [owner.GetIndividualNamePlural]."
+ leader_trait_intolerant_machine: "Intolerant"
  leader_trait_intolerant_machine_desc:1 "This unit contains faulty trust protocols resulting in heightened skepticism."
 
  leader_trait_volatile_hive:0 "Instinctual Violence"
@@ -1045,21 +1047,21 @@
  leader_trait_volatile_machine:0 "Endless Aggression Loop"
  leader_trait_volatile_machine_desc:1 "This unit is temperamental and prone to bouts of volatility."
 
- leader_trait_passive_hive:1 "Passivity"
+ leader_trait_passive_hive: "Passive"
  leader_trait_passive_hive_desc:1 "This node shows a reluctance to act proactively."
- leader_trait_passive_machine:1 "Passivity"
+ leader_trait_passive_machine: "Passive"
  leader_trait_passive_machine_desc:1 "This unit displays an inability to respond proactively."
 
  leader_trait_emotional_support_pet_hive:0 "Emotional Support Symbiont"
- leader_trait_emotional_support_pet_hive_desc:1 "Through the chemical secretions of a mutualistic symbiont, this node promotes well-being within the hive."
+ leader_trait_emotional_support_pet_hive_desc:1 "Through the chemical secretions of a mutualistic symbiont, this node promotes well-being within the [owner.GetGestaltEntityName]."
 
- subclass_official_pioneer_hive:0 "Pioneer Drone"
- subclass_official_pioneer_hive_desc:1 "Preparing new worlds for the hive is a dangerous and costly. This drone knows how to mitigate those risks."
+ subclass_official_pioneer_hive:0 "Pioneer"
+ subclass_official_pioneer_hive_desc:1 "Preparing new worlds for the [owner.GetGestaltEntityName] is dangerous and costly. This [owner.GetIndividualName] knows how to mitigate those risks."
  subclass_official_pioneer_machine:0 "Pioneer Unit"
  subclass_official_pioneer_machine_desc:1 "Integrating new worlds into the network is dangerous and costly. This unit is programmed to mitigate such risks."
 
  subclass_official_industrialist_hive:0 "Production Oversight"
- subclass_official_industrialist_hive_desc:1 "This drone was selectively bred to guide drones who require assistance in the production process."
+ subclass_official_industrialist_hive_desc:1 "This [owner.GetIndividualName] was selectively bred to guide those who require assistance in the production process."
  subclass_official_industrialist_machine:0 "Efficiency Loop"
  subclass_official_industrialist_machine_desc:1 "This unit is equipped to isolate and delete inefficient production patterns."
 
@@ -1067,7 +1069,7 @@
  leader_trait_agrarian_upbringing_2_hive_desc:0 "$leader_trait_agrarian_upbringing_hive_desc$"
 
  leader_trait_intellectual_hive:0 "Task Manager"
- leader_trait_intellectual_hive_desc:1 "This drone is suited to manage simultaneous cognitively demanding tasks."
+ leader_trait_intellectual_hive_desc:1 "This [owner.GetIndividualName] is suited to manage several demanding tasks simultaneously."
  leader_trait_intellectual_machine:0 "Cognitive Support Equations"
  leader_trait_intellectual_machine_desc:1 "Research units work significantly faster with the help of this unit's support equations."
 
@@ -1082,7 +1084,7 @@
  leader_trait_courtroom_training_machine_desc:1 "Concise and thoughtful with organic communication styles, this unit excels at diplomatic meetings."
 
  leader_trait_principled_hive:0 "Hum of Stability"
- leader_trait_principled_hive_desc:1 "This node emits a constant chemical signal which reinforces the correct synapse development in its fellow drones."
+ leader_trait_principled_hive_desc:1 "This node emits a constant chemical signal which reinforces the correct synapse development in its fellow [owner.GetIndividualNamePlural]."
  leader_trait_principled_machine:0 "Protected"
  leader_trait_principled_machine_desc:0 "Corrupt files, data loss, and similar code failings are less likely to occur under this node's guidance."
 
@@ -1091,23 +1093,23 @@
  leader_trait_principled_2_machine:0 "$leader_trait_principled_machine$ II"
  leader_trait_principled_2_machine_desc:0 "$leader_trait_principled_machine_desc$"
 
- leader_trait_assembler_hive:1 "Nurturer"
- leader_trait_assembler_hive_desc:0 "This drone is especially keen on nurturing offspring."
+ leader_trait_assembler_hive: "Nurturing"
+ leader_trait_assembler_hive_desc:0 "This [owner.GetIndividualName] is especially keen on nurturing offspring."
  leader_trait_assembler_machine:0 "Assembly Code"
  leader_trait_assembler_machine_desc:1 "with the right code in the right place, production of new machines can be optimized."
 
- leader_trait_geologist_hive:0 "Boring Drone"
- leader_trait_geologist_hive_desc:1 "With specialized fossorial limbs, this drone can easily access subterranean planetary resources."
+ leader_trait_geologist_hive:0 "Boring [owner.GetIndividualNameCap]"
+ leader_trait_geologist_hive_desc:1 "With specialized fossorial limbs, this [owner.GetIndividualName] can easily access subterranean planetary resources."
  leader_trait_geologist_machine:0 "Deep Drill Digging"
  leader_trait_geologist_machine_desc:1 "Equipped with advanced power drills, this unit can easily access subterranean planetary resources."
 
  leader_trait_naturalist_hive:0 "Harmony"
- leader_trait_naturalist_hive_desc:1 "By prioritizing adaptability, hostile environments can become beneficial to the hive."
+ leader_trait_naturalist_hive_desc:1 "By prioritizing adaptability, hostile environments can become beneficial to the [owner.GetGestaltEntityName]."
  leader_trait_naturalist_machine:0 "Preservation Code"
  leader_trait_naturalist_machine_desc:0 "The preservation of existing biomes allows for sustainable exploitation."
 
  leader_trait_cultural_focus_hive:0 "Unification Focus"
- leader_trait_cultural_focus_hive_desc:1 "This drone was selectively bred to be adaptive and understanding of alien cultures."
+ leader_trait_cultural_focus_hive_desc:1 "This [owner.GetIndividualName] was selectively bred to be adaptive and understanding towards alien cultures."
  leader_trait_cultural_focus_machine:0 "Unification Focus"
  leader_trait_cultural_focus_machine_desc:1 "This unit specializes in supporting unification processes and maintaining positive communications."
 
@@ -1172,15 +1174,15 @@
  leader_trait_expertise_military_theory_machine_desc:1 "This unit is focused on discovery within the field of Military Theory."
 
  leader_trait_polluter_hive:0 "Polluter"
- leader_trait_polluter_hive_desc:1 "This drone ignores the buildup of dangerous by-products from the industries it oversees."
+ leader_trait_polluter_hive_desc:1 "This [owner.GetIndividualName] ignores the buildup of dangerous by-products from the industries it oversees."
 
  leader_trait_sadistic_hive:0 "Pain Addiction"
- leader_trait_sadistic_hive_desc:1 "This drone is physically reliant on pain-receptor stimulation as a means of fulfillment."
+ leader_trait_sadistic_hive_desc:1 "This [owner.GetIndividualName] is physically reliant on pain-receptor stimulation as a means of fulfillment."
  leader_trait_sadistic_machine:1 "Masochistic Machinery"
  leader_trait_sadistic_machine_desc:1 "This unit is functionally reliant on frequent damage-sensor stimulation."
 
- leader_trait_irenic_hive:1 "Conflict Aversion"
- leader_trait_irenic_hive_desc:1 "A natural aversion to conflict drives this drone to avoid possible military escalation."
+ leader_trait_irenic_hive: "Conflict Averse"
+ leader_trait_irenic_hive_desc:1 "A natural aversion to conflict drives this [owner.GetIndividualName] to avoid possible military escalation."
  leader_trait_irenic_machine:0 "Peace Protocols"
  leader_trait_irenic_machine_desc:0 "This unit promotes peace and will attempt to reject all attempts at increasing combat readiness."
 
@@ -1204,8 +1206,8 @@
  leader_trait_society_focus_2_machine:0 "$leader_trait_society_focus_machine$ II"
  leader_trait_society_focus_2_machine_desc:0 "$leader_trait_society_focus_machine_desc$"
 
- leader_trait_archaeologist_hive:0 "Archaeologist Drone"
- leader_trait_archaeologist_hive_desc:0 "This drone focuses on archaeological missions."
+ leader_trait_archaeologist_hive:0 "Archaeologist [owner.GetIndividualNameCap]"
+ leader_trait_archaeologist_hive_desc:0 "This [owner.GetIndividualName] focuses on archaeological missions."
  leader_trait_archaeologist_machine:0 "Archaeologist Unit"
  leader_trait_archaeologist_machine_desc:0 "This unit focuses on archaeological missions."
 
@@ -1220,7 +1222,7 @@
  leader_trait_archaeologist_3_machine_desc:0 "$leader_trait_archaeologist_machine_desc$"
 
  leader_trait_prospector_hive:0 "Prospector"
- leader_trait_prospector_hive_desc:0 "This drone has been granted extra-powerful scanners to find even the deepest deposits when surveying."
+ leader_trait_prospector_hive_desc:0 "This [owner.GetIndividualName] has been granted extra-powerful scanners to find even the deepest deposits when surveying."
  leader_trait_prospector_machine:0 "Prospector"
  leader_trait_prospector_machine_desc:0 "This unit has in-built scanners to find even the deepest deposits when surveying."
 
@@ -1230,7 +1232,7 @@
  leader_trait_prospector_2_machine_desc:0 "$leader_trait_prospector_machine_desc$"
 
  leader_trait_collective_wisdom_hive:0 "Collective Instinct"
- leader_trait_collective_wisdom_hive_desc:1 "This drone has a deep connection with its supporting drones, they move together as if one drone."
+ leader_trait_collective_wisdom_hive_desc:1 "This [owner.GetIndividualName] has a deep connection with its peers; they move together as if one being."
  leader_trait_collective_wisdom_machine:0 "Collective Database"
  leader_trait_collective_wisdom_machine_desc:1 "This unit keeps a private network with its support units, enhancing their combined functions."
 
@@ -1245,7 +1247,7 @@
  subclass_commander_aggressor_machine_desc:0 "$subclass_commander_aggressor_hive_desc$"
 
  subclass_commander_tactician_hive:0 "Tactician"
- subclass_commander_tactician_hive_desc:0 "This drone is especially cunning. Their tactics are designed to mitigate enemy strengths and outsmart their commanders."
+ subclass_commander_tactician_hive_desc:0 "This [owner.GetIndividualName] is especially cunning. Their tactics are designed to mitigate enemy strengths and outsmart their commanders."
  subclass_commander_tactician_machine:0 "Tactician"
  subclass_commander_tactician_machine_desc:0 "$subclass_commander_tactician_hive_desc$"
 
@@ -1254,9 +1256,9 @@
  subclass_commander_strategist_machine:0 "Strategist"
  subclass_commander_strategist_machine_desc:0 "$subclass_commander_strategist_hive_desc$"
 
- leader_trait_cautious_hive:1 "Prudence"
- leader_trait_cautious_hive_desc:0 "This drone exhibits extremely cautious behavior."
- leader_trait_cautious_machine:1 "Prudence"
+ leader_trait_cautious_hive: "Cautious"
+ leader_trait_cautious_hive_desc:0 "This [owner.GetIndividualName] exhibits extremely cautious behavior."
+ leader_trait_cautious_machine: "Cautious"
  leader_trait_cautious_machine_desc:0 "This unit has been programmed to prioritize caution."
 
  leader_trait_cautious_2_hive:0 "$leader_trait_cautious_hive$ II"
@@ -1265,13 +1267,13 @@
  leader_trait_cautious_2_machine_desc:0 "$leader_trait_cautious_machine_desc$"
 
  leader_trait_watchdog_hive:0 "Nest Protector"
- leader_trait_watchdog_hive_desc:1 "This drone possesses an unrelenting desire to defend its home territory."
+ leader_trait_watchdog_hive_desc:1 "This [owner.GetIndividualName] possesses an unrelenting desire to defend its home territory."
  leader_trait_watchdog_machine:0 "Vigilant"
  leader_trait_watchdog_machine_desc:1 "This unit serves as a vigilant guardian for claimed territory."
 
- leader_trait_unyielding_hive:1 "Tenacity"
- leader_trait_unyielding_hive_desc:1 "This drone is incapable of surrender."
- leader_trait_unyielding_machine:1 "Tenacious Programming"
+ leader_trait_unyielding_hive: "Unyielding"
+ leader_trait_unyielding_hive_desc:1 "This [owner.GetIndividualName] is incapable of surrender."
+ leader_trait_unyielding_machine: "Unyielding"
  leader_trait_unyielding_machine_desc:1 "This unit does not possess a surrender protocol."
 
  leader_trait_unyielding_2_hive:0 "$leader_trait_unyielding_hive$ II"
@@ -1280,7 +1282,7 @@
  leader_trait_unyielding_2_machine_desc:0 "$leader_trait_unyielding_machine_desc$"
 
  leader_trait_fleet_logistician_hive:0 "Logistician"
- leader_trait_fleet_logistician_hive_desc:0 "This drone possesses the unique ability to conceptualize the logistical needs of entire fleets."
+ leader_trait_fleet_logistician_hive_desc:0 "This [owner.GetIndividualName] possesses the unique ability to conceptualize the logistical needs of entire fleets."
  leader_trait_fleet_logistician_machine:0 "Logistics Formula"
  leader_trait_fleet_logistician_machine_desc:0 "This unit is capable of processing the logistical needs of entire fleets."
 
@@ -1290,17 +1292,17 @@
  leader_trait_fleet_logistician_2_machine_desc:0 "$leader_trait_fleet_logistician_machine_desc$"
 
  leader_trait_wrecker_hive:0 "Wrecker"
- leader_trait_wrecker_hive_desc:1 "Generations of careful gene selection have produced a drone that is capable of inflicting massive damage on a given target."
+ leader_trait_wrecker_hive_desc:1 "Generations of careful gene selection have produced a [owner.GetIndividualName] that is capable of inflicting massive damage on a given target."
  leader_trait_wrecker_machine:0 "Wrecker"
  leader_trait_wrecker_machine_desc:0 "Through bypassing safety protocols, this unit can increase weapon efficiency to a tremendous degree."
 
  leader_trait_intimidator_hive:0 "Belligerent Presence"
- leader_trait_intimidator_hive_desc:0 "Shows of force and well-timed acts of quasi-aggression are typical of this drone's tactics."
+ leader_trait_intimidator_hive_desc:0 "Shows of force and well-timed acts of quasi-aggression are typical of this [owner.GetIndividualName]'s tactics."
  leader_trait_intimidator_machine:0 "Threat Indicator"
  leader_trait_intimidator_machine_desc:1 "Perfectly calculated threats of violence form the basis of this unit's engagement strategy."
 
- leader_trait_overseer_hive:0 "Eye of the Hive"
- leader_trait_overseer_hive_desc:0 "This drone is the physical embodiment of the hive's authority."
+ leader_trait_overseer_hive:0 "Eye of the Collective"
+ leader_trait_overseer_hive_desc:0 "This [owner.GetIndividualName] is the physical embodiment of the collective's authority."
  leader_trait_overseer_machine:0 "Mechanical Controller"
  leader_trait_overseer_machine_desc:0 "This unit's operational protocols serve as a constant exemplar of peak performance."
 
@@ -1309,8 +1311,8 @@
  leader_trait_overseer_2_machine:0 "$leader_trait_overseer_machine$ II"
  leader_trait_overseer_2_machine_desc:0 "$leader_trait_overseer_machine_desc$"
 
- leader_trait_consul_general_hive:0 "Drone-Consul"
- leader_trait_consul_general_hive_desc:1 "To this drone, diplomacy is as important as any other form of conflict."
+ leader_trait_consul_general_hive:0 "[owner.GetIndividualNameCap]-Consul"
+ leader_trait_consul_general_hive_desc:1 "To this [owner.GetIndividualName], diplomacy is as important as any other form of conflict."
  leader_trait_consul_general_machine:0 "Diplomatic Warfare Unit"
  leader_trait_consul_general_machine_desc:0 "The most efficient victories are won without violence."
 
@@ -1319,19 +1321,19 @@
  leader_trait_consul_general_2_machine:0 "$leader_trait_consul_general$ II"
  leader_trait_consul_general_2_machine_desc:0 "$leader_trait_consul_general_machine_desc$"
 
- leader_trait_uninspiring_hive:0 "Brutal Drone"
- leader_trait_uninspiring_hive_desc:1 "This drone has no regard for the drones under its command."
+ leader_trait_uninspiring_hive:0 "Brutal [owner.GetIndividualNameCap]"
+ leader_trait_uninspiring_hive_desc:1 "This [owner.GetIndividualName] has no regard for those under its command."
  leader_trait_uninspiring_machine:0 "Unfeeling Machine"
  leader_trait_uninspiring_machine_desc:0 "The calculations of this unit do not include the wellbeing of the units it commands."
 
  leader_trait_lawless_hive:0 "Corrupt Disposition"
- leader_trait_lawless_hive_desc:1 "This drone takes supplies from the hive for it's individual use."
+ leader_trait_lawless_hive_desc:1 "This [owner.GetIndividualName] takes supplies from the [owner.GetGestaltEntityName] for its individual use."
  leader_trait_lawless_machine:0 "Malicious Code"
  leader_trait_lawless_machine_desc:1 "This unit's faulty code leads to deviant behavior."
 
- leader_trait_corrupt_hive:0 "Corrupted Drone"
+ leader_trait_corrupt_hive:0 "Corrupted [owner.GetIndividualNameCap]"
  leader_trait_corrupt_machine:0 "Corrupted Unit"
- leader_trait_corrupt_hive_desc:1 "This drone spreads its deviancy to others."
+ leader_trait_corrupt_hive_desc:1 "This [owner.GetIndividualName] spreads its deviancy to others."
  leader_trait_corrupt_machine_desc:1 "This unit spreads its deviancy to others."
 
  leader_trait_shadow_broker_hive:0 "Information Cluster"

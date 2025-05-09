@@ -42,38 +42,13 @@ function M.readlist(path, list, replace)
 	return dict
 end
 
-local function readlist(filename)
-	local list = {}
-	local f = assert(io.open(filename))
-	for line in f:lines() do
-		table.insert(list, line)
-	end
-	f:close()
-	return list
-end
-
-local function appendlist(list, append, prefix)
-	for _, v in ipairs(append) do
-		table.insert(list, prefix .. v)
-	end
-	return list
-end
-
-function M.filelist(listfile)
-	listfile = listfile or {
-		"filelist.txt",
-		["name_lists/"] = "name_lists.txt",
-		["random_names/"] = "random_names.txt",
-	}
+function M.filelist(dir)
+	local h = io.popen ("cd " .. dir .. "&& ls *.yml name_lists/*.yml random_names/*.yml")
+	local list = h:read "a"
+	h:close()
 	local r = {}
-	for k,v in pairs(listfile) do
-		local list = readlist(v)
-		if type(k) == "number" then
-			appendlist(r, list, "")
-		else
-			local list = readlist(v)
-			appendlist(r, list, k)
-		end
+	for filename in list:gmatch "[^\r\n]+" do
+		r[#r+1] = filename
 	end
 	return r
 end

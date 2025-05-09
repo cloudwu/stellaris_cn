@@ -1,0 +1,148 @@
+﻿l_english:
+
+### CONCEPTS
+#
+# Above each concept definition are instructions on usage, including an icon where one exists.
+#   Note that between the icon and the term there's a non-breaking space. When you copy the usage example, it will keep the non-breaking space.
+#   This is important to not get a line break between the icon and the concept.
+# Use a concept link with icon the first time a new concept is mentioned, then use §H without an icon for repeated uses.
+# Use §H with an icon the first time a concept is used withing its own description.
+# Use §H without an icon if the concept is used more than once.
+
+ ui_available_tabs: "\n\nAvaialable tabs:\n"
+
+ # View: £interface£ ['concept_empire_view'] or £interface£ §H$concept_empire_view$§!
+ concept_empire_view: "Empire View"
+ concept_empire_view_desc: "Get an overview of the Empire.$ui_available_tabs$[GetConceptEmpireAdvisor]"
+ empire_view_tab_empire: "§H$EMPIRE$§!"
+ empire_view_tab_demographics: "§H$DEMOGRAPHICS_TITLE$§!"
+ empire_view_tab_advisor: "§H$GOVERNMENT_ADVISOR_TAB$§!"
+ concept_empire_view_tabs_advisor: "$concept_empire_view_tabs_no_advisor$\n- $empire_view_tab_advisor$: select advisor voice"
+ concept_empire_view_tabs_no_advisor: "- $empire_view_tab_empire$: list ['concept_authority'], ['concept_civics'], and ['concept_empire_modifiers']\n- $empire_view_tab_demographics$: view ['concept_pops'] and what affects them"
+
+ # View: £interface£ ['concept_situation_log_view'] or £interface£ §H$concept_situation_log_view$§!
+ concept_situation_log_view: "$MENU_PANEL__SITUATION_LOG_TITLE$ View"
+ concept_situation_log_view_desc: "The £interface£ §H$concept_situation_log_view$§! gives an overview of ongoing issues.$ui_available_tabs$$concept_situation_log_view_tabs$"
+ situation_log_view_tab_situation_log: "§H$topbar_button_situation_name$§!"
+ situation_log_view_tab_timeline: "§H$TIMELINE$§!"
+ situation_log_view_tab_anomilies: "§H$ANOMALIES$§!"
+ situation_log_view_tab_victory: "§H$VICTORIES$§!"
+ concept_situation_log_view_tabs: "- $situation_log_view_tab_situation_log$: list ['concept_event_chains'], ['concept_special_projects'], and ['concept_first_contacts']\n- $situation_log_view_tab_timeline$: see ['concept_milestones'] and ['concept_empire_focuses']\n- $situation_log_view_tab_anomilies$: show ['concept_anomalies']\n- $situation_log_view_tab_victory$: view the ['concept_scoreboard']"
+
+ # View: £interface£ ['concept_government_view'] or £interface£ §H$concept_government_view$§!
+ concept_government_view: "$topbar_button_council_name$ View"
+ concept_government_view_desc: "The §H$concept_government_view$§! allows management of the government.$ui_available_tabs$$concept_government_view_tabs$"
+ government_view_tab_council: "§H$COUNCIL$§!"
+ government_view_tab_factions: "§H$FACTIONS$§!"
+ government_view_tab_policies_and_edicts: "§H$EDICTS_AND_POLICIES$§!"
+ concept_government_view_tabs: "- $government_view_tab_council$: manage the ['concept_council'] and ['concept_agendas']\n- $government_view_tab_factions$: view ['concept_factions']\n- $government_view_tab_policies_and_edicts$: select ['concept_policies'] and ['concept_edicts']"
+
+ # View: £interface£ ['concept_society_management_view'] or £interface£ §H$concept_society_management_view$§!
+ concept_society_management_view: "$TRADITION_VIEW_TITLE$ View"	# Use this alias when referring to the concept
+ concept_society_management: "$TRADITION_VIEW_TITLE$"			# Left out 'View' to fit in the Databank UI
+ concept_society_management_desc: "The §H$concept_society_management_view$§! allows management of traditions.$ui_available_tabs$[GetConceptSocietyManagement]"
+ society_management_view_tab_traditions: "§H$TRADITIONS$§!"
+ society_management_view_tab_crisis: "§H$CRISIS_TAB$§!"
+ concept_society_management_view_crisis: "$concept_society_management_view_no_crisis$\n- $society_management_view_tab_crisis$: track progress as the ['concept_crisis']"
+ concept_society_management_view_no_crisis: "- $society_management_view_tab_traditions$: select ['concept_traditions'] and ['concept_ascension_perks']"
+
+ # View: £interface£ ['concept_technology_view'] or £interface£ §H$concept_technology_view$§!
+ concept_technology_view: "$TECHNOLOGY$ View"
+ concept_technology_view_desc: "The £interface£ §H$concept_technology_view$§! displays an empire's scientific progress across the fields of £physics£ ['concept_physics_research'], £society£ ['concept_society_research'], and £engineering£ ['concept_engineering_research']. From this interface, research options are selected and technological priorities are managed.\n\nNew ['concept_technologies'] are presented semi-randomly from available options, reflecting the unpredictability of scientific inquiry."
+
+ # View: £interface£ ['concept_leaders_view'] or £interface£ §H$concept_leaders_view$§!
+ concept_leaders_view: "$topbar_button_leaders_name$ View"
+ concept_leaders_view_desc: "The £interface£ §H$concept_leaders_view$§! provides an overview of all active ['concept_leaders'] within the empire, including their roles, ['concept_leader_traits'], experience levels, and current assignments. From this interface, new leaders may be recruited, existing ones reassigned, or retired from service."
+
+ # View: £interface£ ['concept_species_view'] or £interface£ §H$concept_species_view$§!
+ concept_species_view: "$topbar_button_species_name$ View"
+ concept_species_view_desc: "The £interface£ §H$concept_species_view$§! offers a comprehensive listing of all known ['concept_species'] within the empire. From this interface, it is possible to examine and modify ['concept_species_traits'], and manage population rights such as citizenship, military service, and ['concept_living_standards'].\n\nThis view is essential for navigating the complexities of a multi-species empire, where policy, biology, and ideology intertwine in the shaping of galactic society."
+
+ # View: £interface£ ['concept_planets_and_sector_view'] or £interface£ §H$concept_planets_and_sector_view$§!
+ concept_planets_and_sector_view: "$PLANET_LIST$ View"	# Use this alias when referring to the concept
+ concept_planets_and_sector: "$PLANET_LIST$"			# Left out 'View' to fit in the Databank UI
+ concept_planets_and_sector_desc: "The £interface£ §H$concept_planets_and_sector$§! interface provides a centralized overview of all £colony£ ['concept_colonies'] and £sector£ ['concept_sector'] within the empire.\n\nIn this view, ['concept_governors'] can also be assigned."
+
+ # View: £interface£ ['concept_expansion_planner'] or
+ concept_expansion_planner: "$MENU_PANEL__EXPANSION_PLANNER_TITLE$"
+ concept_expansion_planner_desc: "The £interface£ §H$concept_expansion_planner$§! lists £planet£ ['concept_planets'] that present opportunities for colonization. Colonization can be started directly from this screen, which automatically builds a £colony_ship£ ['concept_colony_ship'].\n\n£planet£ §H$concept_planets$§! must be surveyed by a £science_ship£ ['concept_science_ship'] and any £anomaly£ ['concept_anomalies'] found on the planet must be investigated before the planet can be colonized.\n\nA ['concept_starbase'] must also have been constructed in the planet's system, so that it lies within the empire's borders."
+
+ # View: £interface£ ['concept_fleet_management_view'] or £interface£ §H$concept_fleet_management_view$§!
+ concept_fleet_management_view: "$topbar_button_fleet_manager_name$ View"	# Use this alias when referring to the concept
+ concept_fleet_management: "$topbar_button_fleet_manager_name$"				# Left out 'View' to fit in the Databank UI
+ concept_fleet_management_desc: "Design ships and create fleets. New §HShip Sizes§! and ['concept_components'] are unlocked by researching the required ['concept_technologies'].$ui_available_tabs$[GetConceptFleetManagement]"
+ fleet_management_view_tab_fleet_manager: "§H$FLEET_MANAGER_VIEW$§!"
+ fleet_management_view_tab_ship_designer: "§H$SHIP_DESIGNER$§!"
+ concept_fleet_management_view_space_fauna: "$concept_fleet_management_view_no_space_fauna$\n- §H$CREATURE_DESIGNER$§!: shape ['concept_space_fauna']"
+ concept_fleet_management_view_no_space_fauna: "- $fleet_management_view_tab_fleet_manager$: organize ['concept_fleets']\n- $fleet_management_view_tab_ship_designer$: design ['concept_military_ships']"
+
+ # View: £interface£ ['concept_contacts_view'] or £interface£ §H$concept_contacts_view$§!
+ concept_contacts_view: "Contacts View"
+ concept_contacts_view_desc: "The £interface£ §H$concept_contacts_view$§! lists all known empires, independent enclaves, and alien entities. From this interface, ['concept_diplomacy'] can be initiated and relations assessed. It serves as the central hub for interstellar communications and foreign intelligence."
+ contacts_view_tab_contacts: "§H$topbar_button_contacts_name$§!"
+ contacts_view_tab_agreements: "§H$AGREEMENTS_LIST_TITLE$§!"
+ concept_contacts_view_tabs: "- $contacts_view_tab_contacts$: engage in ['concept_diplomacy']\n- $contacts_view_tab_agreements$: study ['concept_subject_agreements']"
+
+ # View: £interface£ ['concept_discoveries_view'] or £interface£ §H$concept_discoveries_view$§!
+ concept_discoveries_view: "$topbar_button_discoveries_name$ View"
+ concept_discoveries_view_desc: "£interface£ The §H$concept_discoveries_view$§! catalogs significant objects and phenomena uncovered across the galaxy, including  ['concept_relics'], ancient artifacts, and other galactic curiosities of enduring importance.$ui_available_tabs$[GetConceptDiscovery]"
+ discoveries_view_tab_relics: "§H$relics$§!"
+ discoveries_view_tab_collection: "§H$COLLECTION$§!"
+ discoveries_view_tab_vivarium: "§H$VIVARIUM$§!"
+ discoveries_view_tab_astral_actions: "§H$ASTRAL_ACTIONS$§!"
+ concept_discovery_view_base: "- $discoveries_view_tab_relics$: manage ['concept_relics']"
+ concept_discovery_view_base_ancrel: "$concept_discovery_view_base$ and ['concept_minor_artifacts']"
+ concept_discovery_view_base_archive: "$concept_discovery_view_base$\n- $discoveries_view_tab_collection$: display ['concept_specimens']\n- $discoveries_view_tab_vivarium$: breed ['concept_space_fauna']"
+ concept_discovery_view_base_ancrel_archive: "$concept_discovery_view_base$\n- $discoveries_view_tab_collection$: display ['concept_specimens'] and ['concept_minor_artifacts']\n- $discoveries_view_tab_vivarium$: breed ['concept_space_fauna']"
+ concept_discovery_view_base_astral: "$concept_discovery_view_base$\n$concept_discovery_view_astral$"
+ concept_discovery_view_base_ancrel_astral: "$concept_discovery_view_base_ancrel$\n$concept_discovery_view_astral$"
+ concept_discovery_view_base_archive_astral: "$concept_discovery_view_base_archive$\n$concept_discovery_view_astral$"
+ concept_discovery_view_base_ancrel_archive_astral: "$concept_discovery_view_base_ancrel_archive$\n$concept_discovery_view_astral$"
+ concept_discovery_view_astral: "- $discoveries_view_tab_astral_actions$: activate ['concept_astral_actions']"
+
+ # View: £interface£ ['concept_claims_view'] or £interface£ §H$concept_claims_view$§!
+ concept_claims_view: "$CLAIMS_VIEW$ View"
+ concept_claims_view_desc: "The £interface£ §H$concept_claims_view$§! displays all territorial ['concept_claims'] held by the empire.The Diplomatic mode of the ['concept_galaxy_map'] provides a clear overview of contested systems and potential flashpoints for future conflict."
+
+ # View: £interface£ ['concept_market_view'] or £interface£ §H$concept_market_view$§!
+ concept_market_view: "$MARKET_VIEW$ View"
+ concept_market_view_desc: "The £interface£ §H$concept_market_view$§! provides a framework for interstellar trade, the buying and selling of resources, or establishing recurring monthly transactions."
+
+ # View: £interface£ ['concept_colony_view'] or £interface£ §H$concept_colony_view$§!
+ concept_colony_view: "Colony View"
+ concept_colony_view_desc: "The £interface£ §H$concept_colony_view$§! allows administration of a £colony£ ['concept_colony']. On suitable uninhabited £planet£ ['concept_planets'] or ['concept_habitats'], this view can be used to start the §HColonization§! process.$ui_available_tabs$$concept_colony_view_tabs$"
+ colony_view_tab_planet_summary: "§H$PLANET_TAB$§!"
+ colony_view_tab_management: "§H$MANAGEMENT_TAB$§!"
+ colony_view_tab_population: "§H$POPULATION_TAB$§!"
+ colony_view_tab_armies: "§H$GROUND_COMBAT_TAB$§!"
+ colony_view_tab_holdings: "§H$CORPORATE_TAB$§!"
+ concept_colony_view_tabs: "- $colony_view_tab_planet_summary$: shows an overview of the colony's £district£ ['concept_districts'], £building£ ['concept_buildings'], and any assigned ['concept_governor']. Here it is possible to set a ['concept_designation'], or enable ['concept_planet_automation'].\n- $colony_view_tab_management$: shows any planetary features and population changes. Here it is possible to enact ['concept_decisions'], ['concept_planetary_ascension'], or start ['concept_terraforming'].\n- $colony_view_tab_population$: shows the colony's population divided into £job£ ['concept_job'] stratas.\n- $colony_view_tab_armies$: shows any ground forces in the colony, and how much ['concept_devastation'] the colony has suffered.\n- $colony_view_tab_holdings$: provides an overview of all the ['concept_overlord_holdings'] in the colony."
+
+ # View: £interface£ ['concept_starbase_view'] or £interface£ §H$concept_starbase_view$§!
+ concept_starbase_view: "Starbase View"
+ concept_starbase_view_desc: "The £interface£ §H$concept_starbase_view$§! allows administration of a ['concept_starbase'].$ui_available_tabs$$concept_starbase_view_tabs$"
+ starbase_view_tab_command: "§H$STARBASE_STARBASE_TAB$§!"
+ starbase_view_tab_defenses: "§H$STARBASE_DEFENSES_TAB$§!"
+ starbase_view_tab_armies: "§H$MACRO_BUILDER_TAB$§!"
+ starbase_view_tab_shipyard: "§H$STARBASE_SHIPYARD_TAB$§!"
+ concept_starbase_view_tabs: "- $starbase_view_tab_command$: shows an overview of the starbase's §HModules§! and §HBuildings§!. It also enables upgrading the starbase to the next tier when the required ['concept_technology'] has been researched\n- $starbase_view_tab_defenses$: shows any ['concept_defense_platforms'] and clicking a design builds more of them\n- $starbase_view_tab_armies$: provides a way to assemble a large number of §H$assault_army_plural$§!. Armies are assembled on available £colony£ ['concept_colonies'] in the £sector£ ['concept_sector'], and are either gathered at the starbase or with an §HArmy§! with §HRally Troops§! enabled\n- $starbase_view_tab_shipyard$: allows the building of both ['concept_civilian_ships'] and ['concept_military_ships']"
+
+ # View: £interface£ ['concept_system_map'] or £interface£ §H$concept_system_map$§!
+ concept_system_map: "System Map"
+ concept_system_map_desc: "The £interface£ §H$concept_system_map$§! presents a detailed view of an individual star system, including ['concept_celestial_objects'], ['concept_civilian_space_stations'], ['concept_fleets'], and orbital infrastructure. It allows for precise management of construction, colonization, combat operations, and scientific activity within the system."
+
+ # View: £interface£ ['concept_galaxy_map'] or £interface£ §H$concept_galaxy_map$§!
+ concept_galaxy_map: "Galaxy Map"
+ concept_galaxy_map_desc: "The £interface£ §H$concept_galaxy_map$§! offers a strategic overview of the known galaxy, displaying £system£ ['concept_systems'], ['concept_empire'] borders, and ['concept_hyperlanes']. It serves as the primary interface for exploration, expansion, and interstellar coordination."
+
+ # View: £interface£ ['concept_navigation_bar'] or £interface£ §H$concept_navigation_bar$§!
+ concept_navigation_bar: "Navigation Bar"
+ concept_navigation_bar_desc: "The £interface£ §H$concept_navigation_bar$§! is on the left side of the screen.\n\nIt can either expand when interacted with or be locked in a minimal state.\n\nThe expanded mode allows access to settings where the menu items can be reordered. This also changes which keyboard shortcut that quickly opens each menu."
+
+ # View: £interface£ ['concept_resource_bar'] or £interface£ §H$concept_resource_bar$§!
+ concept_resource_bar: "Resource Bar"
+ concept_resource_bar_desc: "The £interface£ §H$concept_resource_bar$§! is on the top of the screen.\n\nIt houses various §HResources§! such as £energy£ ['concept_energy'], and metrics such as £trade_value£ ['concept_trade'], ['concept_research'], ['concept_starbase_capacity'], and ['concept_naval_capacity'].\n\nTo the right are the §HTime Controls§! used to speed up or slow down the game, as well as pause and unpause.\n\nBelow the §HTime Controls§! is the §HMusic Player§!."
+
+ # View: £interface£ ['concept_outliner'] or £interface£ §H$concept_outliner$§!
+ concept_outliner: "Outliner"
+ concept_outliner_desc: "The £interface£ §H$concept_outliner$§! provides quick access to key assets across the empire, including £colony£ ['concept_colonies'], ['concept_fleets'], and ['concept_civilian_space_stations']. A customizable interface, it allows for rapid navigation and oversight, offering real-time status updates and direct control over vital operations."

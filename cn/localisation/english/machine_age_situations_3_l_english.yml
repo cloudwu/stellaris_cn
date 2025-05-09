@@ -31,11 +31,6 @@
  machine_person: "人"
  machine_person_plural: "人"
 
-# Concepts
- concept_tradition_nanotech: "$tradition_nanotech$"
- concept_tradition_modularity: "$tradition_modularity$"
- concept_tradition_virtuality: "$tradition_virtuality$"
-
 # TRANSFORMATION STAGE 1
  machine_age.4100.name: "嬗变"
  machine_age.4100.desc: "尽管机器形体具有优势，但我们的进步充其量只是迭代罢了。强加于自身的安全标准让发展陷入停止。这是不能再接受的。\n\n小规模实验验证了三种截然不同的发展选项：§Y纳米科技§!具有灵活可变的优势；§Y模组§!化则可以让每个单元都优化到出更特化的功能；§Y虚拟§!化则会完全抛弃物理形式转变为数字化存在。\n\n演化进程开始了。分析选项，慎重选择。"
@@ -85,8 +80,8 @@
  machine_age.4210.c.tt: "有限的§Y模组§!研究结果。\n\n§Y$situation_transformation$§!局势添加修正：\n研究速度（£society£§Y社会学§!）：§R-5%§!"
  machine_age.4210.d: "组织人群实验。"
  machine_age.4210.d.tt.intro: "全部的§Y模组§!研究成果。\n\n允许科学家们进行大规模非正规实验以完成研究。"
- machine_age.4210.d.individual.tt: "$machine_age.4210.d.tt.intro$\n\n§R杀死4个$pop_cat_worker_plural$§!\n§R杀死0-3个$pop_cat_specialist_plural$§!\n添加§Y$situation_transformation$§!局势修正：\n研究速度（£society£§Y社会学§!）：§R-5%§!"
- machine_age.4210.d.machine.tt: "$machine_age.4210.d.tt.intro$\n\n§R杀死4个$pop_cat_simple_drone_plural$§!\n§R杀死0-3个$pop_cat_complex_drone_plural$§!\n添加§Y$situation_transformation$§!局势修正：\n研究速度（£society£§Y社会学§!）：§R-5%§!"
+ machine_age.4210.d.individual.tt: "$machine_age.4210.d.tt.intro$\n\n§R杀死400$pop_cat_worker_plural$§!\n§R杀死0-300个$pop_cat_specialist_plural$§!\n添加§Y$situation_transformation$§!局势修正：\n研究速度（£society£§Y社会学§!）：§R-5%§!"
+ machine_age.4210.d.machine.tt: "$machine_age.4210.d.tt.intro$\n\n§R杀死400个低级子个体§!\n§R杀死0-300个$pop_cat_complex_drone_plural$§!\n添加§Y$situation_transformation$§!局势修正：\n研究速度（£society£§Y社会学§!）：§R-5%§!"
 
  machine_age.4230.name: "突破性研究结果"
  machine_age.4230.desc: "孜孜不倦的研究验证了初步结论：§Y活体金属§!与机械躯体的融合是可行的，这让我们的单元能在不影响内部功能的情况下改变特性。这确保了对不同任务的最大兼容性。\n\n经预计，大规模部署模组化功能注入将提高所有部门的资源产量。\n\n可行性：可适应；具有前景。"
@@ -154,11 +149,11 @@
  machine_age.4400.desc.individualist_machines: "在探索了多种不同的升级策略后，我们的专家提出了三种不同的选项。每一种都有各自的优势，但我们只有能力将其中一项推进到底。\n\n$machine_age.4400.desc.shared$"
  machine_age.4400.desc.shared: "让每个[GetDronePersonPlural]都能分散为纳米机器人会让我们有融合为无尽构型的能力。这会减少我们目前的身躯与物理实体交互时的种种限制。\n\n而我们还可以重构自己的存在形式，增强我们适应新环境的能力。\n\n再或者，我们也可以选择离开物理世界，与源代码融为一体。我们可以在扫描一粒太空尘埃的时间内，在宇宙之内模拟宇宙。"
  machine_age.4400.a: "重塑为纳米机械。"
- machine_age.4400.a.tt: "§Y$nanite_replicator$§!产出：§G+200%§!\n\n专注于['concept_tradition_nanotech']传统树。\n\n§E这条飞升路线专注于将星球转化为§Y纳米星球§!，将§Y£nanites£$nanites$§!用于生产，以及将舰队替换为§Y$nanite_swarmer_plural$§!。§!"
+ machine_age.4400.a.tt: "§Y$nanite_replicator$§!产出：§G+200%§!\n\n专注于['tradition_category:tradition_nanotech']传统树。\n\n§E这条飞升路线专注于将星球转化为§Y纳米星球§!，将§Y£nanites£$nanites$§!用于生产，以及将舰队替换为§Y$nanite_swarmer_plural$§!。§!"
  machine_age.4400.b: "投资模块化升级。"
- machine_age.4400.b.tt: "§Y$living_metal_vats$§!产出：§G+200%§!\n\n专注于['concept_tradition_modularity']传统树。\n\n§E这条飞升路线专注于§Y高级物种特质§!并提升§Y人口组装§!。§!"
+ machine_age.4400.b.tt: "§Y$living_metal_vats$§!产出：§G+200%§!\n\n专注于['tradition_category:tradition_modularity']传统树。\n\n§E这条飞升路线专注于§Y高级物种特质§!并提升§Y人口组装§!。§!"
  machine_age.4400.c: "拥抱虚拟世界。"
- machine_age.4400.c.tt: "§Y$virtual_power_plant$§!产出：§G+200%§!\n\n专注于['concept_tradition_virtuality']传统树。\n\n§E这条飞升路线专注于在保有少量§Y殖民地§!时提高§Y人口资源产出§!，同时维持极低§Y帝国规模§!。§!"
+ machine_age.4400.c.tt: "§Y$virtual_power_plant$§!产出：§G+200%§!\n\n专注于['tradition_category:tradition_virtuality']传统树。\n\n§E这条飞升路线专注于在保有少量§Y殖民地§!时提高§Y人口资源产出§!，同时维持极低§Y帝国规模§!。§!"
 
  machine_age.4490.name: "新时代设计"
  machine_age.4490.desc.nanotech: "当我们开始理解作为一群强适应性纳米机器人存在的意义时，过去的框框条条便无法再束缚我们。\n\n$machine_age.4490.desc.shared$\n\n我们也开始了我们在半有机纳米机器人转化方面的第一个主要实验，第一批结果预计很快就会出来。"
@@ -179,10 +174,10 @@
  machine_age.4005.desc.modularity: "$machine_age.4005.desc.start$变为更具适应力的模组框架。\n\n$machine_age.4005.desc.end$"
  machine_age.4005.desc.virtuality: "$machine_age.4005.desc.start$变成超越物质的算法运算。\n\n$machine_age.4005.desc.end$"
  machine_age.4005.a.nanotech: "我们将多过满天繁星。"
- machine_age.4005.a.nanotech.tt: "采纳传统树：['concept_tradition_nanotech']"
+ machine_age.4005.a.nanotech.tt: "采纳传统树：['tradition_category:tradition_nanotech']"
  machine_age.4005.a.modularity: "我们将挣脱一切束缚。"
- machine_age.4005.a.modularity.tt: "采纳传统树：['concept_tradition_modularity']"
+ machine_age.4005.a.modularity.tt: "采纳传统树：['tradition_category:tradition_modularity']"
  machine_age.4005.a.virtuality: "我们将在代码中寻得纯洁。"
- machine_age.4005.a.virtuality.tt: "采纳传统树：['concept_tradition_virtuality']"
+ machine_age.4005.a.virtuality.tt: "采纳传统树：['tradition_category:tradition_virtuality']"
 
 ### TRANSFORMATION SITUATION END ###

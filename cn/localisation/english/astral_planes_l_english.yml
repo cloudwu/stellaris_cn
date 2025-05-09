@@ -1,7 +1,7 @@
 ﻿l_english:
 
  ASTRAL_PLANES_TITLE: "Astral Planes" # Do not translate
- DLC_ASTRAL_PLANES_RECOMMENDATION_DESC: "§S$ASTRAL_PLANES_TITLE$§!是一个内容丰富的剧情向拓展包，在其中可以探索其他的维度，或者随意揉捏现实的织构。"
+ DLC_ASTRAL_PLANES_RECOMMENDATION_DESC: "§S$ASTRAL_PLANES_TITLE$§!是一个内容丰富的剧情向拓展包，在其中可以探索不同的维度并根据你的想法扭转现实。"
  DLC_ASTRAL_PLANES_RECOMMENDATION_REC_1: "我们推荐§SAstral Plane§!，它可以与§SOverlord§! DLC相匹配，进一步发掘超空间中继器和量子弹弓的灵活性。"
  DLC_ASTRAL_PLANES_RECOMMENDATION_REC_2: "我们推荐§SAstral Plane§!，它可以针对§SAncient Relics§!中的先驱文明们带来新的探索机遇。"
 
@@ -401,7 +401,7 @@
  astral_rift_difficulty_decrease_2: "$astral_rift_difficulty_decrease_1$"
  astral_rift_difficulty_decrease_3: "$astral_rift_difficulty_decrease_1$"
 
- mod_planet_researchers_sr_dark_matter_produces_add: "£job_researcher£[GetResearcherPlural]产出的£sr_dark_matter£$sr_dark_matter$"
+ mod_planet_researchers_sr_dark_matter_produces_add: "每$pop_group_unit$£job_researcher£[GetResearcherPlural]产出的£sr_dark_matter£$sr_dark_matter$"
 
  ##########
  # Traits #
@@ -425,7 +425,7 @@
 
  trait_exd: "异次元体"
  trait_exd_desc: "这个物种起源于另一个维度，需要大量能量才能在我们的宇宙中生存。"
- TRAIT_EXD_EFFECT: "将$r_food$维护费替换为$r_energy$维护费\n每个作为奴隶或更好标准的人口每月产生0.5£physics_research£§Y物理学研究§!点数"
+ TRAIT_EXD_EFFECT: "将$r_food$维护费替换为$r_energy$维护费\n每个作为奴隶或更好标准的$pop_group_unit$£pop£§H人口§!每月产生0.5£physics_research£§Y物理学研究§!点数"
 
  ######################
  # Origin - Riftworld #
@@ -503,14 +503,14 @@
  civic_hyperspace_specialty_desc: "速度在该社会中是最受欢迎的。对超空间的操控不过是一种上升渠道，让那些在该领域最有天赋的人得以晋升到最高的阶层。"
  civic_hyperspace_specialty_effects: "必有研究选项 £physics£§Y$tech_hyper_drive_2$§!。\n拥有初始星系3跳超空间航道内的星系的低级情报。"
  civic_hive_hyperspace_specialty: "超空间同调"
- civic_hive_hyperspace_specialty_desc: "这个集合体追求速度。超空间操控的方法论深深地融入了每个子个体的思维中，使得集合体对距离-时间比的基本原则有着不断进步的理解。"
+ civic_hive_hyperspace_specialty_desc: "该集体追求速度。超空间操控的方法论深深地植根于整个集体之中，使其能够逐步理解距离-时间比的基本原理。"
  civic_hive_hyperspace_specialty_effects: "$civic_hyperspace_specialty_effects$"
  civic_machine_hyperspace_specialty: "超空间同调"
  civic_machine_hyperspace_specialty_desc: "这个集合体追求速度。超空间操控的理论深深地蚀刻进入了每个子个体的处理单元中，使得集合体对距离-时间比的基本原则有着不断进步的理解。"
  civic_machine_hyperspace_specialty_effects: "$civic_hyperspace_specialty_effects$"
  civic_corporate_hyperspace_specialty: "超空间贸易"
  civic_corporate_hyperspace_specialty_desc: "时间就是金钱，而这个寰宇企业非常重视速度。对研发的大量投资已经得到了丰厚的回报，使得该公司拥有了独家使用尖端超空间操纵技术的权限。"
- civic_corporate_hyperspace_specialty_effects: "$civic_hyperspace_specialty_effects$"
+ civic_corporate_hyperspace_specialty_effects: "$civic_hyperspace_specialty_effects$\nThe £building£ §Y$building_amusement_megaplex$§! $megacorp_civic_branch_office_building_effect$"
 
  civic_tooltip_not_hyperspace_specialty: "没有['concept_hyperspace_specialty_civics']类公民性"
  concept_hyperspace_specialty_civics: "超空间特长"
@@ -522,7 +522,7 @@
  civic_dimensional_worship_effects_additional: "—在你控制的星系内出现[ 'concept_astral_rift', $ASTRAL_RIFTS$ ]的概率：§G+100%§!$NEW_LINE$—§M稀有科技§!以§Y1.1§!倍概率出现。该效果会将概率从§Y1%§!提升至§Y1.1%§!。"
  civic_corporate_dimensional_worship: "维度企业"
  civic_corporate_dimensional_worship_desc: "$civic_dimensional_worship_desc$"
- civic_corporate_dimensional_worship_effects: "$civic_dimensional_worship_effects$"
+ civic_corporate_dimensional_worship_effects: "$civic_dimensional_worship_effects$\nThe £building£ §Y$building_xeno_tourism_agency$§! $megacorp_civic_branch_office_building_effect$"
 
  civic_tooltip_not_dimensional_worship: "没有['concept_dimensional_worship_civics']类公民性"
  concept_dimensional_worship_civics: "维度崇拜"
@@ -533,7 +533,7 @@
  civic_dark_consortium_effects: "开局就已经完成£physics£§Y$tech_mine_dark_matter$§!的研究。\n解锁特殊§S法令§!。\n解锁§Y$council_agenda_agenda_dark_matter_breakthrough_name$§!理事会议程。"
  civic_corporate_dark_consortium: "暗影公司"
  civic_corporate_dark_consortium_desc: "$civic_dark_consortium_desc$"
- civic_corporate_dark_consortium_effects: "$civic_dark_consortium_effects$"
+ civic_corporate_dark_consortium_effects: "$civic_dark_consortium_effects$\nThe £building£ §Y$building_private_research_initiative$§! $megacorp_civic_branch_office_building_effect$"
 
  civic_tooltip_not_dark_consortium: "没有['concept_dark_consortium_civics']类公民性"
  concept_dark_consortium_civics: "暗之联盟"
@@ -544,7 +544,7 @@
  civic_sovereign_guardianship_effects: "解锁§Y$fanatic_guardian_plural$§!作为防御部队。\n$civic_sovereign_guardianship_effects_common$"
  civic_hive_sovereign_guardianship: "监护集群"
  civic_hive_sovereign_guardianship_desc: "这个集体已经在长久的历史上形成了对固守领土和防御姿态的偏好。现在他们准备将这种哲学带到星空中，旨在保持他们的边界稳固，并缓和紧张局势。"
- civic_hive_sovereign_guardianship_effects: "$civic_sovereign_guardianship_effects$"
+ civic_hive_sovereign_guardianship_effects: "解锁§Y$machine_fanatic_guardian_plural$§!防御部队。\n$civic_sovereign_guardianship_effects_common$"
  civic_machine_sovereign_guardianship: "监护矩阵"
  civic_machine_sovereign_guardianship_desc: "这个机械集体已经在长久的历史上形成了对固守领土和防御姿态的偏好。现在他们准备将这种哲学带到星空中，旨在保持他们的边界稳固，并缓和紧张局势。"
  civic_machine_sovereign_guardianship_effects: "解锁§Y$machine_fanatic_guardian_plural$§!作为防御部队。\n$civic_sovereign_guardianship_effects_common$"
@@ -594,18 +594,18 @@
  councilor_hyperspace_specialty: "超空间监督者"
  councilor_hyperspace_specialty_female: "$councilor_hyperspace_specialty$"
  councilor_hyperspace_specialty_desc: "$TITLE$有助于确保我们的星际后勤网络的安全保障。"
- councilor_hyperspace_specialty_custom_modifier_desc: "每个$sm_warp_fluctuator$太空基地建筑同样也能提供 §G+$@councilor_hyperspace_specialty_warp_fluctuator_stability$§!稳定度"
+ councilor_hyperspace_specialty_custom_modifier_desc: "每个§Y$sm_warp_fluctuator$§!太空基地建筑同样也能提供§G+$@councilor_hyperspace_specialty_warp_fluctuator_stability$§!£stability£稳定度"
  councilor_hyperspace_specialty_corporate: "$councilor_hyperspace_specialty$"
  councilor_hyperspace_specialty_corporate_female: "$councilor_hyperspace_specialty_corporate$"
  councilor_hyperspace_specialty_corporate_desc: "$councilor_hyperspace_specialty_desc$"
  councilor_dimensional_worship: "星界大臣"
  councilor_dimensional_worship_female: "$councilor_dimensional_worship$"
  councilor_dimensional_worship_desc: "$TITLE$将统一我们的祭司团，以单一的指导愿景为人民提供更好的服务。"
- councilor_dimensional_worship_custom_modifier_desc: "每个$job_priest_name_with_icon$同样也能提供§G+$@councilor_dimensional_worship_priest_physics$§! £physics£ §Y物理学§!研究"
+ councilor_dimensional_worship_custom_modifier_desc: "每$pop_group_unit$$job_priest_name_plural_with_icon$产出的£physics£§Y物理学§!：§G+$@councilor_dimensional_worship_priest_physics$§!"
  councilor_dimensional_worship_corporate: "$councilor_dimensional_worship$"
  councilor_dimensional_worship_corporate_female: "$councilor_dimensional_worship_corporate$"
  councilor_dimensional_worship_corporate_desc: "$councilor_dimensional_worship_desc$"
- councilor_dimensional_worship_corporate_custom_modifier_desc: "每个$job_priest_name_with_icon$同样也能提供§G+$@councilor_dimensional_worship_priest_physics$§!£physics£§Y物理学§!研究以及§G+$@councilor_dimensional_worship_priest_trade_value$§!$r_trade_value$"
+ councilor_dimensional_worship_corporate_custom_modifier_desc: "—每$pop_group_unit$$job_priest_name_plural_with_icon$产出的£physics£§Y物理§!：§G+$@councilor_dimensional_worship_priest_physics$§!\n—每$pop_group_unit$$job_priest_name_plural_with_icon$产出的$r_trade$：§G+$@councilor_dimensional_worship_priest_trade_value$§!"
 
  councilor_dark_consortium: "暗影织匠"
  councilor_dark_consortium_female: "$councilor_dark_consortium$"
@@ -653,6 +653,7 @@
  machine_plasmic_core_effect: "给与某位随机领袖3个随机的正面特质。"
  plasmic_core_effect: "某个随机行星上的所有人口获得§Y$trait_plasmic$§!特质。"
  plasmic_core_no_suitable_planet: "$TRIGGER_FAIL$§R没有哪个星球上有不携带§Y$trait_plasmic$§!特质的居民。§!"
+ plasmic_core_effect_evopred: "§Y$evolutionary_predators_situation$§!局势进展推进§G50%§!。在完成时可能额外增加§Y$trait_plasmic$§!特质。"
 
  effect_random_bypass: "随机旁道"
  effect_every_bypass: "所有旁道"
@@ -921,7 +922,7 @@
 
  pm_formless_haven: "无形庇护所"
  pm_formless_haven_desc: "被称为无形异使的存在所拥有的最后堡垒。在他们的庇护下，其他维度的物种会逐渐于此定居下来。"
- pm_formless_haven_tt: "在这个行星上生成来自另一物种的§Y5个人口§!"
+ pm_formless_haven_tt: "在这个行星上生成来自另一物种的§Y500§!£pop£§H人口§!"
 
  preset_luminarium: "曙光境"
  preset_luminarium_desc: "永恒王座的所有者创造了一个名为曙光境的附属国类型。合法宣称这个座位的人对无形异使具有影响力，然而过往宣称者的跨维度帝国已经化为了一片废墟。"
@@ -1031,14 +1032,14 @@
 
  astral_planes.6030.name: "星界奇迹"
  astralnomical_interest_modifier: "星界兴趣"
- astralnomical_interest_tt: "每个非奴隶的有机体£pop£人口每月产生1£physics_research£§Y物理学研究§!点数。"
+ astralnomical_interest_tt: "每个非奴隶的£pop£§H有机人口§!每月产生1£physics_research£§Y物理学研究§!点数。"
  astral_planes.6030.desc.common_1: "[this.GetName]的殖民者发展出了一种爱好，沉迷于"
  astral_planes.6030.desc.common_2: "，其位于行星南半球的可观测天空中。人们激烈地推测它的起源，以及它蕴含着怎样的危险或机遇。\n\n来自[owner.GetName]各地的业余天文爱好者聚集到这颗行星，亲眼见证这番绝景。"
  astral_planes.6030.desc.rift: "$astral_planes.6030.desc.common_1$ $astral_rift$ $astral_planes.6030.desc.common_2$"
  astral_planes.6030.desc.scar: "$astral_planes.6030.desc.common_1$ $pc_astral_scar$ $astral_planes.6030.desc.common_2$"
 
  astral_planes.6035.name: "冲突的视景"
- astral_planes.6035.tt: "殖民地失去5£stability£§Y稳定度§!"
+ astral_planes.6035.tt: "殖民地失去5$r_stability$"
  conflicting_visions: "$astral_planes.6035.name$"
  astral_planes.6035.desc.common_1: "这种对当地的"
  astral_planes.6035.desc.common_2: "产生的爱好在[this.GetName]已经演变成了一股狂热。许多人都报告称，看见了某个在我们世界之外的地方。\n\n其中一个团体宣称这个"
@@ -1047,7 +1048,7 @@
  astral_planes.6035.desc.scar: "$astral_planes.6035.desc.common_1$$pc_astral_scar$$astral_planes.6035.desc.common_2$裂痕$astral_planes.6035.desc.common_3$"
 
  astral_planes.6040.name: "分歧扩大"
- astral_planes.6040.tt: "殖民地失去5至10£stability£§Y稳定度§!"
+ astral_planes.6040.tt: "殖民地失去5至10$r_stability$"
  widening_divide_1: "$astral_planes.6040.name$"
  widening_divide_2: "$widening_divide_1$"
  widening_divide_3: "$widening_divide_1$"
@@ -1125,6 +1126,7 @@
  d_weapon_extraction_facility: "武器提取设施"
  d_weapon_extraction_facility_desc: "这处设施用于处理某个失落文明的储备中留下来的古代武器。"
 
+ munitions_decommissioner: "$job_munitions_decommissioner$"
  job_munitions_decommissioner: "军需脱模官"
  job_munitions_decommissioner_plural: "军需脱模官"
  job_munitions_decommissioner_desc: "这些实用的研究者负责检查古代武器，对其进行逆向工程，使其适配我们现代化的装备配置。"
@@ -1138,15 +1140,18 @@
  job_munitions_decommissioning_drone_desc: "这些子个体能够高效地拆解古代武器，使其适配我们现代化的装备配置。"
  mod_job_munitions_decommissioning_drone_add: "$job_munitions_decommissioning_drone$岗位"
 
+ astral_researcher: "$job_astral_researcher$"
  job_astral_researcher: "星界研究员"
  job_astral_researcher_plural: "星界研究员"
  job_astral_researcher_icon: "£job_astral_researcher£"
  job_astral_researcher_with_icon: "$job_astral_researcher_icon$ $job_astral_researcher$"
+ job_astral_researcher_plural_with_icon: "$job_astral_researcher_icon$ $job_astral_researcher_plural$"
  job_astral_researcher_desc: "时空的丝缕蕴含着每个维度的秘密，包括我们自己的维度。这些研究人员不知疲倦地工作，努力解读它们的意义，同时尽量减少悖论。"
  job_astral_researcher_effect_desc: "£job_astral_researcher£$job_astral_researcher_plural$将$r_consumer_goods$转化为$r_research$和$r_astral_threads$"
  mod_job_astral_researcher_add: "$job_astral_researcher$岗位"
  mod_job_astral_researcher_per_pop: "每$VALUE$个人口提供§G+1§!$job_astral_researcher$"
  mod_job_astral_researcher_per_pop_short: "\n每$VALUE$£pop£提供§G+1§!个£mod_job_astral_researcher_add£"
+ physicist_is_astral_researcher_tt: "$job_physicist_plural_with_icon$转化为$job_astral_researcher_plural_with_icon$"
 
  job_astral_drone: "星界工蜂"
  job_astral_drone_plural: "星界工蜂"
@@ -1173,7 +1178,7 @@
 # Tutorials #
 #############
 
- TUTORIAL_ASTRAL_ACTIONS_VIEW_TITLE: "星界行动"
+ TUTORIAL_ASTRAL_ACTIONS_VIEW_TITLE: "教程：星界行动"
  TUTORIAL_ASTRAL_ACTIONS_VIEW_DESC: "星界行动界面允许我们使用$ASTRAL_THREADS_ICON$来产生各种全国范围内的效果。我们探索的§S星界裂隙§!越多，我们就能解锁更多行动。有些行动可以随时间重复使用，而其他行动只能使用一次以解锁新的能力或技术。"
 
  TUTORIAL_ASTRAL_RIFT_VIEW_TITLE: "星界裂隙界面"

@@ -21,7 +21,7 @@
 
  origin_slavers:0 "Your Ladder To The Sky"
  origin_slavers_desc:0 "From the moment the Board of Directors at $NAME_MSI_country$ first delivered our civilization to the stars, we have understood that the galaxy was too beautiful not to be shared. Since then, we have worked tirelessly to help less developed civilizations achieve FTL travel.\n\nEnlightenment may not be free. But at $NAME_MSI_country_initials$, it is always worth the cost."
- origin_tooltip_slavers_effects:0 "- Starts as an §HAdvanced Empire§!\n- Start with a number of enslaved £pops£ §HPops§! abducted from §HPre-FTL Civilizations§! across the galaxy.\n- Allows the §H$bombardment_raiding$§! bombardment stance, which abducts £pops£ §HPops§! from planets and resettles them to your colonies."
+ origin_tooltip_slavers_effects:0 "- Starts as an §HAdvanced Empire§!\n- Start with a number of enslaved £pop£ §HPops§! abducted from §HPre-FTL Civilizations§! across the galaxy.\n- Allows the §H$bombardment_raiding$§! bombardment stance, which abducts £pop£ §HPops§! from planets and resettles them to your colonies."
 
  opinion_former_slaves:0 "Former Slaves"
  opinion_slavers:0 "Former Masters"
@@ -43,8 +43,10 @@
  origin_payback:0 "Payback"
  origin_payback_desc:1 "§RWARNING: Challenging Origin§!\nThis civilization has been visited by an alien empire who forcibly enlightened and enslaved them. They have repelled their invaders, but will they return?"
  origin_tooltip_payback_effects:2 "- $HOMEWORLD$ $TABBED_NEW_LINE$- ['concept_advanced_infrastructure']$TABBED_NEW_LINE$- $PLANETARY_MODIFIERS$ ['concept_payback_unified_purpose']$NEW_LINE$- $HOME_SYSTEM$ ['concept_payback_digsite'] ['concept_archaeology_site']$NEW_LINE$- One ['concept_advanced_empires', Advanced AI Empire] and several ['concept_preftl_civilizations'] regardless of the Galaxy Settings $NEW_LINE$- One Pre-FTL Civilization: Uplifted with the §I$origin_broken_shackles$§! origin"
+ zone_payback_enlightenment: " Uplift Center"
+ zone_payback_enlightenment_desc: "Enlightenment may not be free. But at $NAME_MSI_country_initials$, it is always worth the cost."
 
- origin_tooltip_payback_negative_effects: "- $INITIAL_POPS$ §R-10§! $NEW_LINE$- $HOMEWORLD$ $TABBED_NEW_LINE$- ['concept_payback_debris_field'] Planetary Modifier $TABBED_NEW_LINE$- ['concept_payback_ship_debris']: +6 $TABBED_NEW_LINE$- Devastation: §R33%§! $NEW_LINE$- $HOME_SYSTEM$ §IResource Deposits§! are unexploited $NEW_LINE$- $MISSING_TECHNOLOGIES_STRING$ $TABBED_NEW_LINE$- ['concept_basic_science_lab_1', £physics_research£ $tech_basic_science_lab_1$] $TABBED_NEW_LINE$- ['concept_planetary_government', £society_research£ $tech_planetary_government$] $TABBED_NEW_LINE$- ['concept_corvettes', £engineering_research£ $tech_corvettes$]"
+ origin_tooltip_payback_negative_effects: "- $INITIAL_POPS$ §R-1K§! $NEW_LINE$- $HOMEWORLD$ $TABBED_NEW_LINE$- ['concept_payback_debris_field'] Planetary Modifier $TABBED_NEW_LINE$- ['concept_payback_ship_debris']: +6 $TABBED_NEW_LINE$- Devastation: §R33%§! $NEW_LINE$- $HOME_SYSTEM$ §IResource Deposits§! are unexploited $NEW_LINE$- $MISSING_TECHNOLOGIES_STRING$ $TABBED_NEW_LINE$- ['concept_basic_science_lab_1', £physics_research£ $tech_basic_science_lab_1$] $TABBED_NEW_LINE$- ['concept_planetary_government', £society_research£ $tech_planetary_government$] $TABBED_NEW_LINE$- ['concept_corvettes', £engineering_research£ $tech_corvettes$]"
 
  START_SCREEN_PAYBACK:0 "We had a deal.\n\nWhen the visitors from the stars revealed themselves, they offered us a fair contract: technological enlightment, to be repaid in installments. Within a generation, our planet was transformed into a so-called 'advanced civilization.'\n\nThen we read the fine print: to repay our 'debt', they insisted we work for them, on an indefinite term. When our leaders protested, the outsiders turned violent. We fought back.\n\nWe won, though barely, and only after suffering sizeable losses. Now, our scientists have finally reverse-engineered the secrets of FTL travel from the ships we destroyed. It's a big galaxy out there, but sooner or later we're sure to meet our 'benefactors' again. In fact, we're looking forward to it.\n\nIt's time to get some payback."
 
@@ -99,12 +101,12 @@
 
  ## Out of Warranty
  payback_out_of_warranty_chain_title:0 "Out of Warranty"
- payback_out_of_warranty_chain_desc:0 "The §Y$building_clinic$§! our invaders built for us are suffering from lack of maintenance. While most of the technology is beyond our current understanding, we could try to §Srepair§! it.\n\n§LSigning research pacts with other empires will increase our chances of success. [GetAgreementStatus]§!"
+ payback_out_of_warranty_chain_desc:0 "The §Y$building_medical_2$§! our invaders built for us are suffering from lack of maintenance. While most of the technology is beyond our current understanding, we could try to §Srepair§! it.\n\n§LSigning research pacts with other empires will increase our chances of success. [GetAgreementStatus]§!"
  payback_repair_clinic_no_agreement:0 "We don't have a research agreement with an empire able to help us."
  payback_repair_clinic_yes_agreement:0 "We have at least one research agreement with an empire able to help us."
 
  payback_declining_healthcare:0 "Declining Healthcare"
- payback_declining_healthcare_desc:0 "The loss of our $building_clinic$ severely impacted our quality of life."
+ payback_declining_healthcare_desc:0 "The loss of our $building_medical_2$ severely impacted our quality of life."
  payback_declining_healthcare_alt:0 "Alternate Medicine"
  payback_declining_healthcare_alt_desc:0 "Remember to take your vitamins!"
  payback_declining_healthcare_necro:0 "$payback_declining_healthcare$"
@@ -114,19 +116,19 @@
 
  # Gene Clinic is breaking down
  origin.4300.name:0 "Out of Warranty"
- origin.4300.base.desc:0 ""We are going to end illness."\n\nThat's how the invaders won us over. We allowed them to build §Y$building_clinic$§! on [Root.GetHomeWorldName], eradicating most of our worst diseases within a generation. Now, those clinics are breaking down, years of intense use causing the machines within to grind to a halt. The proper functioning of the invader's technology is beyond us. Can we reverse-engineer it? Or should we repurpose this poisoned gift into something truly our own?\n"
+ origin.4300.base.desc:0 ""We are going to end illness."\n\nThat's how the invaders won us over. We allowed them to build §Y$building_medical_2$§! on [Root.GetHomeWorldName], eradicating most of our worst diseases within a generation. Now, those clinics are breaking down, years of intense use causing the machines within to grind to a halt. The proper functioning of the invader's technology is beyond us. Can we reverse-engineer it? Or should we repurpose this poisoned gift into something truly our own?\n"
  origin.4300.aliens.phobe.desc:0 "$origin.4300.base.desc$Other empires might possess similar facilities, but asking the xenos for help would only bring us shame."
  origin.4300.aliens.phile.desc:0 "$origin.4300.base.desc$Other empires might possess similar facilities. We should ask for help."
  origin.4300.noaliens.desc:0 "$origin.4300.base.desc$ If only we knew more "
- origin.4300.a:0 "Attempt to repair the $building_clinic$."
- origin.4300.a.tooltip:0 "Select the §Y$building_clinic$§! on the planetary view screen and click the §Srepair§! button to attempt a fix. Establishing §Sresearch agreements§! with other empires will increase our chances of success."
- origin.4300.b:0 "Repurpose the $building_clinic$."
- origin.4300.b.tooltip:0 "Turn the §Y$building_clinic$§! into an §Y$building_autochthon_monument$§! at a reduced cost."
- origin.4300.b.memorialist.tooltip:0 "Turn the §Y$building_clinic$§! into a §Y$building_galactic_memorial_1$§! at a reduced cost."
+ origin.4300.a:0 "Attempt to repair the $building_medical_2$."
+ origin.4300.a.tooltip:0 "Select the §Y$building_medical_2$§! on the planetary view screen and click the §Srepair§! button to attempt a fix. Establishing §Sresearch agreements§! with other empires will increase our chances of success."
+ origin.4300.b:0 "Repurpose the $building_medical_2$."
+ origin.4300.b.tooltip:0 "Turn the §Y$building_medical_2$§! into an §Y$building_autochthon_monument$§! at a reduced cost."
+ origin.4300.b.memorialist.tooltip:0 "Turn the §Y$building_medical_2$§! into a §Y$building_galactic_memorial_1$§! at a reduced cost."
 
  # Building repaired!
  origin.4301.name:0 "Emergency Fix"
- origin.4301.base.desc:0 "Our former invaders would likely wave it off as a stroke of luck, or argue that they did most of the work. They would claim it's not a big feat, to retro-engineer the technology behind the §Y$building_clinic$§! as we just did."
+ origin.4301.base.desc:0 "Our former invaders would likely wave it off as a stroke of luck, or argue that they did most of the work. They would claim it's not a big feat, to retro-engineer the technology behind the §Y$building_medical_2$§! as we just did."
  origin.4301.noagreement.desc:0 "$origin.4301.base.desc$ But we did it anyway, without their assistance, and the triumph is ours alone."
  origin.4301.agreement.desc:0 "$origin.4301.base.desc$ But we did it anyway, supported by the expertise of our generous allies."
  origin.4301.a:0 "Perhaps... the Xenos aren't all bad?"
@@ -134,7 +136,7 @@
 
  # Building still broken
  origin.4302.name:0 "Right To Repair"
- origin.4302.desc:0 "Reverse engineering the technology powering the §Y$building_clinic$§! turned out to be more challenging than expected, but our [root.GetEngineerPlural] remain hopeful. They just need more time, they say. But as costs and failures start piling up, some argue the clinics should be retrofitted to suit a different purpose."
+ origin.4302.desc:0 "Reverse engineering the technology powering the §Y$building_medical_2$§! turned out to be more challenging than expected, but our [root.GetEngineerPlural] remain hopeful. They just need more time, they say. But as costs and failures start piling up, some argue the clinics should be retrofitted to suit a different purpose."
  origin.4302.a:0 "Fail better this time."
  origin.4302.a.tooltip:0 "$origin.4300.a.tooltip$"
  origin.4302.b:0 "$origin.4300.b$"
@@ -143,15 +145,15 @@
 
  # Building broken beyond repair
  origin.4303.name:0 "Botched Repair"
- origin.4303.desc:0 "Our attempt to repair the §Y$building_clinic$§! ended in failure: a massive explosion engulfed the building, and numerous casualties have been reported.\n\nNo doubt our former invaders are laughing, calling us arrogant, foolish, unprepared. Yet this failure belongs to us, and its hard lessons will not be forgotten."
+ origin.4303.desc:0 "Our attempt to repair the §Y$building_medical_2$§! ended in failure: a massive explosion engulfed the building, and numerous casualties have been reported.\n\nNo doubt our former invaders are laughing, calling us arrogant, foolish, unprepared. Yet this failure belongs to us, and its hard lessons will not be forgotten."
 
  # Building Repurposed
  origin.4304.name:0 "Refurbished Hardware"
- origin.4304.desc:0 "Our §Y$building_clinic$§! may no longer have the power to cure disease, but by stripping them of their components and repurposing them into memorials, we can at least start to heal the scars left by the invaders. By making peace with the past, we can learn to overcome it."
+ origin.4304.desc:0 "Our §Y$building_medical_2$§! may no longer have the power to cure disease, but by stripping them of their components and repurposing them into memorials, we can at least start to heal the scars left by the invaders. By making peace with the past, we can learn to overcome it."
 
  # No building - people getting sick
  origin.4305.name:0 "Healthcare Crisis"
- origin.4305.desc:0 "The loss of our §Y$building_clinic$§! has precipitated a sharp decline in the quality of our healthcare. Genetic conditions and chronic illnesses that were once simple to cure are again on the rise, and our median life expectancy has returned to pre-occupation levels. Public faith in the healthcare system has reached a new low, and some of our people are even starting to lament the departure of the invaders."
+ origin.4305.desc:0 "The loss of our §Y$building_medical_2$§! has precipitated a sharp decline in the quality of our healthcare. Genetic conditions and chronic illnesses that were once simple to cure are again on the rise, and our median life expectancy has returned to pre-occupation levels. Public faith in the healthcare system has reached a new low, and some of our people are even starting to lament the departure of the invaders."
  origin.4305.a:0 "Double our investment in medical research."
  origin.4305.a.tooltip:0 "Increases the likelihood of discovering §Y$tech_frontier_health$§! technology."
  origin.4305.b:0 "Promote alternate treatments."
@@ -160,7 +162,7 @@
 
  # Rediscovering genetic healthcare
  origin.4306.name:0 "Self-sufficient"
- origin.4306.desc:0 "Having mastered the secrets of genetic engineering, our people are now able to build §Y$building_clinic$§! like the ones left by the invaders. It's a glorious day for our people: proof that we need no [root.species.GetHandName]-holding to reach the stars."
+ origin.4306.desc:0 "Having mastered the secrets of genetic engineering, our people are now able to build §Y$building_medical_2$§! like the ones left by the invaders. It's a glorious day for our people: proof that we need no [root.species.GetHandName]-holding to reach the stars."
 
  ## Arc Site
 
@@ -275,7 +277,7 @@
  payback_debt_collectors_chain_energy:3 "We agreed to pay §R5000§! £energy£ §H$energy$§! every 15 years."
  payback_debt_collectors_chain_consumer_goods:1 "We agreed to pay §R2500§! £consumer_goods£ §H$consumer_goods$§! every 15 years."
  payback_debt_collectors_chain_alloys:1 "We agreed to pay §R1250§! £alloys£ §H$alloys$§! every 15 years."
- payback_debt_collectors_chain_pops:3 "We agreed to give the debt collectors §B2 £pops£ Pops§! every 15 years."
+ payback_debt_collectors_chain_pops:3 "We agreed to give the debt collectors §R200§! £pop£ §HPops§! every 15 years."
  payback_debt_collectors_chain_refused_won:0 "We refused to strike a deal, fought the debt collectors, and won. But they will be back."
  payback_debt_collectors_chain_refused_lost:0 ""We refused to strike a deal, fought the debt collectors, and lost. They will be back."
  payback_debt_collectors_chain_empty:0 ""
@@ -381,7 +383,7 @@
  origin.4018.desc:0 "If you are unable or unwilling to cover the energy cost, you may repay your debt by pledging a certain percentage of your labor pool to §H$NAME_MSI_country$§!. Your workers will be transported to their designated job sites and will be provided with basic accommodation until they have successfully repaid the debt.\n\nIt's worth noting that said workers do not need to be full citizens. Any able bodies will do."
  origin.4018.a:0 "Actually, we'd prefer to pay using energy."
  origin.4018.b:0 "We'll do it."
- origin.4018.b.tooltip:1 "Pledge to give §B2 £pops£ Pops§! to the debt collectors upon their return."
+ origin.4018.b.tooltip:1 "Pledge to give §R200§! £pop£ §HPops§! to the debt collectors upon their return."
  origin.4018.c:0 "So you're asking for slaves?"
  origin.4018.c.response:0 "The correct term is "indentured servants". Slavery is an unfair practice based on exploitation of pre-existing power structures. Our exchanges are based solely on the terms of contract."
  origin.4018.d:0 "We refuse to pay."
@@ -406,7 +408,7 @@
  origin.4025.name:0 "Seizing Assets"
  origin.4025.desc:1 "After our fleet was defeated, the debt collectors raided [PLANET.GetName], kidnapping a number of our people. Even more galling than the defeat was the 'invoice' they left behind, informing us that the seized population will be put to work to repay our 'debt.' We should be grateful, the collectors say, that our people will be returned once the debt is settled. This should only take 29,637 years or so."
  origin.4025.a:0 "Next time we will be ready."
- origin.4025.a.tooltip:0 "Lost §B5 £pops£ Pops§! to the Debt Collectors.\n\nThe debt collectors will return on §Y[root.owner.payback_debt_collectors_timer]§!."
+ origin.4025.a.tooltip:0 "Lost §R500§! £pop£ §HPops§! to the Debt Collectors.\n\nThe debt collectors will return on §Y[root.owner.payback_debt_collectors_timer]§!."
 
  # Hub - subsequent encounters
  origin.4030.name:0 "Debt Collectors"
@@ -414,15 +416,15 @@
  origin.4030.desc.energy:1 "$origin.4030.desc.base$\n\nAs per our agreement, we are here to collect a sum equal to §R5000§! £energy£ §H$energy$§! for the repayment of your debt."
  origin.4030.desc.consumer_goods:0 "$origin.4030.desc.base$\n\nAs per our agreement, we are here to collect a sum equal to §R2500§! £consumer_goods£ §H$consumer_goods$§! for the repayment of your debt."
  origin.4030.desc.alloys:0 "$origin.4030.desc.base$\n\nAs per our agreement, we are here to collect a sum equal to §R1250§! £alloys£ §H$alloys$§! for the repayment of your debt."
- origin.4030.desc.pops:1 "$origin.4030.desc.base$\n\nAs per our agreement, we are here to collect §B2 £pops£ Pops§! willing to dedicate their labor to the repayment of your debt."
+ origin.4030.desc.pops:1 "$origin.4030.desc.base$\n\nAs per our agreement, we are here to collect §R200§! £pop£ §HPops§! willing to dedicate their labor to the repayment of your debt."
  origin.4030.desc.defeated:0 "Dear [owner.GetName],\n\nOnce again we're contacting you on behalf of the §H$NAME_MSI_country$§! regarding an outstanding debt. We only wish to resolve this matter peacefully, and hope that you are more willing to participate in a constructive dialogue."
  origin.4030.desc.furious:0 "Dear [owner.GetName],\n\nThis is our last warning: the debt you owe to the §H$NAME_MSI_country$§! urgently needs to be repaid. Despite multiple attempts to resolve this matter peacefully, you have consistently failed to cooperate. If you refuse once again to agree on a repayment plan, we will have no choice but to seize your assets by any means necessary."
  origin.4030.a:0 "We are willing to settle."
  origin.4030.b:1 "Here is the payment you requested."
  origin.4030.c:0 "Treat our people well."
- origin.4030.c.tooltip:0 "Lose §B2 £pops£ Pops§!"
+ origin.4030.c.tooltip:0 "Lose §R200§! £pop£ §HPops§!"
  origin.4030.d:0 "Here are some... workers."
- origin.4030.d.tooltip:0 "Lose §B2 £pops£ Slaves§!"
+ origin.4030.d.tooltip:0 "Lose §R200§! £pop£ §HSlaves§!"
  origin.4030.e:0 "We can't pay."
  origin.4030.f:0 "We won't pay."
  origin.4030.g:0 "Sorry, who are you again?"
@@ -561,7 +563,7 @@
 
  origin_broken_shackles:0 "Broken Shackles"
  origin_broken_shackles_desc:1 "$CHALLENGING_ORIGIN$\nThis civilization began as a mutiny aboard a slaver vessel, and is made up of a diverse group of pre-FTL species."
- START_SCREEN_BROKEN_SHACKLES:0 "Free at last!\n\nSome were born into bondage. Others, crippled by debt, found themselves sold as indentured labor. But the technology of our former masters was not enough to save them. In secret, we planned our mutiny. During the brief, bloody struggle, our captors were killed, and their slave ship critically damaged. An emergency landing left us stranded on the surface of [Root.Capital.GetName].\n\nThough we are made up of species from many different worlds, under your leadership we have found common cause. In time, the damaged systems of the slaver vessel will be repaired, and its bounty of secrets - including the location of our former home worlds - will be revealed.\n\nOur shackles are broken. Now the work begins."
+ START_SCREEN_BROKEN_SHACKLES:0 "Free at last!\n\nSome were born into bondage. Others, crippled by debt, found themselves sold as indentured labor. But the technology of our former masters was not enough to save them. In secret, we planned our mutiny. During the brief, bloody struggle, our captors were killed, and their slave ship critically damaged. An emergency landing left us stranded on the surface of [Root.Capital.GetName].\n\nThough we are made up of species from many different worlds, we have found common cause. In time, the damaged systems of the slaver vessel will be repaired, and its bounty of secrets - including the location of our former home worlds - will be revealed.\n\nOur shackles are broken. Now the work begins."
  START_SCREEN_BROKEN_SHACKLES_MEGACORP:0 "Free* at last!\n\nSome were born into bondage. Others, crippled by debt, found themselves sold as indentured labor. All of us dreamed of something more, a life of ease and abundance. In secret, we planned our mutiny. During the brief, bloody struggle, our captors were killed, and their slave ship critically damaged. An emergency landing left us stranded on the surface of [Root.Capital.GetName].\n\nThough we are made up of species from many different worlds, under your directorship we have found common cause. Our former masters may have been cruel, but they understood the business of life. Like them, we must be steadfast in our pursuit of profit. In time, the damaged systems of the slaver vessel will be repaired, and its bounty of secrets - including the location of our former home worlds - will be revealed. Our shackles are broken. Now is the time to incorporate.\n\n*Legal Notice:\nThe use of the word 'free' is non-binding and does not oblige the Corporation to provide any discount or volunteer any action that could affect the profit margins of [Root.GetName] shareholders. If you have any questions regarding this or other terms, or should you wish to opt out of continued existence on [Root.Capital.GetName], please contact our legal or security professionals in the $building_bureaucratic_1$ on [Root.Capital.GetName] for immediate resolution."
  origin_tooltip_broken_shackles_effects:1 "- $INITIAL_POPS$ Species from ['concept_preftl_civilizations'] across the galaxy $NEW_LINE$- $STARTING_PLANET$ $TABBED_NEW_LINE$- ['concept_free_at_last_broken_shackles'] Planetary Modifier $TABBED_NEW_LINE$- ['concept_crashed_slaver_ship_broken_shackles'] Planetary Feature $TABBED_NEW_LINE$- ['concept_broken_shackles_buildings'] $NEW_LINE$- $STARTING_SYSTEM$ ['concept_broken_shackles_digsite'] ['concept_archaeology_site'] $NEW_LINE$- One ['concept_advanced_empires', Advanced AI Empire] and several Pre-FTL Civilization regardless of the Galaxy Settings $NEW_LINE$- One Pre-FTL Civilization: Will be this empire's species and homeworld $NEW_LINE$- One Pre-FTL Civilization: Uplifted with the §I$origin_payback$§! origin"
 
@@ -581,8 +583,8 @@
  origin.111.1.desc:0 "We have come a long way since claiming our freedom. The ship we arrived on has been stripped of everything of value, and our technology has advanced to the point that there are few secrets remaining.\n\nBut we must never forget the sacrifices of the past, nor the cost of casting off our shackles. The crashed slaver ship will be converted into a public memorial, commemorating the birth of our nation."
  origin.111.2.desc:0 "We have come a long way since our arrival. While we no longer control it, whatever remains on the ship we arrived on is no longer of value to us, and our technology has advanced to the point that there are few secrets remaining.\n\nIf we ever recover it, we shall convert the site into a memorial so we remember our humble beginnings as we move boldly into the future."
  origin_111.a:0 "$origin.111.name$!"
- origin_111.tooltip:0 "Unlocks the §Y$decision_unshackled_memorial$§! decision on §Y[Root.Capital.GetName]§!.\n$decision_unshackled_memorial_effects$\n\nThe §Y$district_crashed_slaver_ship_plural$§! will now provide £job_clerk£ §Y$job_clerk_plural$§! Jobs instead of £job_broken_shackles_scavenger£ §Y$job_broken_shackles_scavenger$§! Jobs."
- decision_unshackled_memorial_effects:0 "- Converts the §Y$d_crashed_slaver_ship$§! into the §Y$d_crashed_slaver_ship_memorial$§! providing §G+2§! £job_culture_worker£ $job_culture_worker$ Jobs\n- The §Y$district_crashed_slaver_ship_plural$§!, §Y$building_low_tech_scrap_refinery$§!, §Y$building_low_tech_power_plant$§! and §Y$building_low_tech_farm$§! will be converted into advanced infrastructure."
+ origin_111.tooltip:0 "Unlocks the §Y$decision_unshackled_memorial$§! decision on §Y[Root.Capital.GetName]§!.\n$decision_unshackled_memorial_effects$\n- The §Y$district_crashed_slaver_ship_plural$§! will now provide [clerk.GetIcon] §Y[clerk.GetNamePlural]§! Jobs instead of £job_broken_shackles_scavenger£ §Y$job_broken_shackles_scavenger$§! Jobs."
+ decision_unshackled_memorial_effects:0 "- The §Y$d_crashed_slaver_ship$§! and related infrastructure will be converted into advanced infrastructure."
 
 
  #Pre-FTL Homeworlds Found
@@ -1011,7 +1013,7 @@
  job_low_tech_manager:0 "Supervisor"
  job_low_tech_manager_plural:0 "Supervisors"
  job_low_tech_manager_desc:0 "Our former masters delegated much of their empire's day-to-day administration to indentured assets. The result was a class of highly trained managers."
- job_low_tech_manager_effect_desc:0 "£job_low_tech_manager£ $job_low_tech_manager_plural$ turn $r_consumer_goods$ into $r_unity$ and $r_trade_value$"
+ job_low_tech_manager_effect_desc:0 "£job_low_tech_manager£ $job_low_tech_manager_plural$ turn $r_consumer_goods$ into $r_unity$ and $r_trade$"
  mod_job_low_tech_manager_add:0 "$job_low_tech_manager$ Jobs"
 
  building_low_tech_farm:0 "Makeshift Farms"
@@ -1046,6 +1048,10 @@
  d_crashed_slaver_ship_memorial:0 "Memorial to the Unshackled"
  d_crashed_slaver_ship_memorial_desc:0 "A public memorial and museum constructed around the remains of the crashed slaver ship. The inscription over the entrance reads: "Memory is the cradle of freedom."
 
+ zone_broken_shackles_memorial: "Unshackled Memorial"
+ zone_broken_shackles_memorial_desc: "$d_crashed_slaver_ship_memorial_desc$"
+ zone_broken_shackles_memorial_effect_desc: "$bureaucrat_is_culture_worker_tt$\n\n"
+
  decision_unshackled_memorial:0 "$d_crashed_slaver_ship_memorial$"
  decision_unshackled_memorial_desc:0 "We will commemorate the sacrifices of the past by constructing a memorial site around the remains of the crashed slaver ship."
  decision_unshackled_memorial_tt:0 "§Y$d_crashed_slaver_ship$§! is replaced with §Y$d_crashed_slaver_ship_memorial$§!.\nSome §YBuildings§! and §YDistricts§! will be converted into advanced infrastructure."
@@ -1070,10 +1076,10 @@
  origin_fear_of_the_dark:0 "Fear of the Dark"
  origin_fear_of_the_dark_desc:0 "A century ago, one of the planets in this empire's home system was destroyed by a freak asteroid. Some believed this was a malicious attack by an alien species. Others brushed off these concerns as mere paranoia. The tension between the two groups grew so great that a newly-terraformed planet was granted to the fearmongers."
  origin_tooltip_fear_of_the_dark_effects:1 "- $HOME_SYSTEM$ ['concept_preftl_civilizations', Pre-FTL Civilization] created by a Separatist Faction, formerly part of your Empire, granting events and benefits"
- origin_tooltip_fear_of_the_dark_negative_effects:  "- $INITIAL_POPS$ §R-8§!"
+ origin_tooltip_fear_of_the_dark_negative_effects:  "- $INITIAL_POPS$ §R-800§!"
  START_SCREEN_FEAR_OF_THE_DARK_START:0 "A century ago, the planet we now call "The Divider" exploded. This was the beginning of our "
  START_SCREEN_FEAR_OF_THE_DARK_REGULAR:0 "$START_SCREEN_FEAR_OF_THE_DARK_START$dissociation.\n\nAt first we brushed off the destruction as a freak occurrence, but there were some on [GetHomeWorldName] who believed it was a premeditated attack on our species. This faction hypothesized that our radio transmissions had been detected by some distant alien race, a race that replied with a planet-cracking projectile. These dissenters urged us to prepare for the day when the aliens would return to finish us off. Many dismissed their concerns as paranoia.\n\nThe political division between the two camps continued to grow. Planet-wide civil unrest culminated in the creation of a treaty that granted the dissidents a terraforming candidate, a planet upon which they would be free to reside in seclusion without any interference from us.$START_SCREEN_FEAR_OF_THE_DARK_END$"
- START_SCREEN_FEAR_OF_THE_DARK_MEGACORP:0 "$START_SCREEN_FEAR_OF_THE_DARK_START$estrangement.\n\nAfter the incident, worried managers sent requests to our Board of Directors to shut down existing extra-planetary radio infrastructure and cancel our space exploration programs. They believed the creation of The Divider was caused by an external agent attempting to destroy [GetHomeWorldName]. This request was denied.\n\nCalling the Board's decision a "monumental lapse of judgement", these managers activated a sub-clause in their citizenship contracts that granted them the right to publicly rebuke the Board. In an effort to placate share-holders and to bolster consumer confidence, the decision was made to offer the dissenting managers a new contract. In exchange for giving up any rights pertaining to [GetName], they would be provided with a terraforming candidate, and a guarantee of fiscal independence.$START_SCREEN_FEAR_OF_THE_DARK_END$"
+ START_SCREEN_FEAR_OF_THE_DARK_MEGACORP:0 "$START_SCREEN_FEAR_OF_THE_DARK_START$estrangement.\n\nAfter the incident, worried managers sent requests to our Board of Directors to shut down existing extra-planetary radio infrastructure and cancel our space exploration programs. They believed the creation of The Divider was caused by an external agent attempting to destroy [GetHomeWorldName]. This request was denied.\n\nCalling the Board's decision a "monumental lapse of judgment", these managers activated a sub-clause in their citizenship contracts that granted them the right to publicly rebuke the Board. In an effort to placate share-holders and to bolster consumer confidence, the decision was made to offer the dissenting managers a new contract. In exchange for giving up any rights pertaining to [GetName], they would be provided with a terraforming candidate, and a guarantee of fiscal independence.$START_SCREEN_FEAR_OF_THE_DARK_END$"
  START_SCREEN_FEAR_OF_THE_DARK_END:0 "\n\nWith the advent of the Hyperdrive, a new source of tension has arisen: while we are eager to greet the galaxy, our neighbors stand resolutely in opposition."
  NAME_Haven:0 "Haven" #Humanoid
  NAME_Burrow:0 "Burrow" #Reptile
@@ -1124,7 +1130,7 @@
  origin.6005.desc.end3:0 "[fotd_Leader.GetSheHeCap] will be the recipient of a prestigious award on [Owner.GetHomeWorldName] for academic excellence. [fotd_Leader.GetSheHeCap] have also agreed to stay with us for a while, holding a series of lectures about their research."
  origin.6005.desc.end4:0 "[fotd_Leader.GetSheHeCap] will be studying local [GetStudyTopic] in an attempt to improve life on [fotd_habitants.capital_scope.GetName]."
  origin.6005.a:0 "You are welcome as long as you abide by the norms of this society."
- origin.6005.a.tt:0 "Add §Y[fotd_Leader.GetName]§! as a §YScientist§! to our leader pool."
+ origin.6005.a.tt:0 "Add §Y[fotd_Leader.GetName]§! as a §HScientist§! to our §H$RECRUITABLE_LEADERS$§!."
  origin.6005.b:0 "Stay on your rock."
 
  origin.6006.desc.base1:0 "A Commander from [fotd_habitants.Capital.GetName] is offering to join our navy as a temporary commander. [fotd_Leader.GetSheHeCap] motivations are unclear, but our informants tell us that there might be a scandal involved."
@@ -1132,7 +1138,7 @@
  origin.6006.desc.base3:0 "After excelling in a recent joint fleet exercise, we have extended Commander [fotd_Leader.GetName] the opportunity to take command in a real navy."
  origin.6006.desc.base4:1 "Placed on temporary leave for allegedly putting the vessels under [fotd_Leader.GetHerHis] command in excessive danger, Commander [fotd_Leader.GetName] has requested to join our navy. Despite [fotd_Leader.GetName]'s reputation, those who have served with [fotd_Leader.GetHerHim] still respect [fotd_Leader.GetHerHis] talent."
  origin.6006.a:0 "As long as you don't go rogue."
- origin.6006.a.tt:0 "Add §Y[fotd_Leader.GetName]§! as an §YCommander§! to our leader pool."
+ origin.6006.a.tt:0 "Add §Y[fotd_Leader.GetName]§! as an §HCommander§! to our §H$RECRUITABLE_LEADERS$§!."
  origin.6006.b:0 "You are too much of a loose torpedo tube!"
 
  origin.6010.name:0 "Yearning for [fotd_seperatist_planet.GetName]"
@@ -1180,7 +1186,7 @@
  origin.6045.name:0 "Disastrous Introduction"
  origin.6045.desc.base:0 "After our initial communication with the [From.GetName], we received some troubling news: an attack fleet of outdated [Root.GetAdj] ships has entered [From.GetSpeciesAdj] space, and is now speeding towards their starbase. The accelerating ships are moving at such a rate that anything [owner_species.GetBiologicalLithoidLower] inside them must have been reduced to a [owner_species.GetLiquidState] state by now."
  origin.6045.desc.secured:0 "$origin.6045.desc.base$\n\nFortunately, we are prepared. Having observed the odd behavior of [fotd_seperatist_planet.GetName] we stand ready to shoot them out of space before they can hit the station."
- origin.6045.desc.notsecured:0 "$origin.6045.desc.base$\n\nThere is nothing we can do to stop this disaster. These oversized missiles will completely demolish the starbase in [target_system.GetName]. We can only look on in horror. Unless…"
+ origin.6045.desc.notsecured:0 "$origin.6045.desc.base$\n\nThere is nothing we can do to stop this disaster. These oversized missiles will completely demolish the starbase in [target_system.GetName]. We can only look on in horror. Unless..."
  origin.6045.a:0 "Stop them now!"
  origin.6045.starbase_destroyed.tt:0 "The starbase in §Y[target_system.GetName]§! will be §RDestroyed§!."
  origin.6045.b.secured:0 "Let them weaken these aliens, then reprimand [fotd_seperatist_planet.GetName]."
@@ -1204,7 +1210,7 @@
  origin.6060.name:0 "Apex Predator"
  origin.6060.desc:0 "The news from the [FromFrom.solar_system.GetName] system has shaken our homeworld deeply. What other threats may be lurking in the depths of space, if monsters like this can exist? Already, applications for immigration to [fotd_seperatist_planet.GetName] have soared amongst our people. At the moment, it is difficult to blame them."
  origin.6060.a:0 "We were wrong?"
- origin.6060.a.tt:1 "§R2§! £pops£ Pops will emigrate to [fotd_seperatist_planet.GetName]"
+ origin.6060.a.tt:1 "§R200§! £pop£ §HPops§! will emigrate to [fotd_seperatist_planet.GetName]"
  origin.6060.b:0 "No! [fotd_seperatist_planet.GetName] is wrong! We will face this together."
 
  origin.6065.name:0 "Consequences of Our Own Actions"
@@ -1244,7 +1250,7 @@
 
  #Psionic
  origin.6105.name:0 "Errant Thoughts"
- origin.6105.desc:0 "There is no need to wait for the inevitable judgement of [fotd_seperatist_planet.GetName] We are fully aware of their agitated thoughts. Amidst the cacophony, their intention to cease all collaboration is crystal clear."
+ origin.6105.desc:0 "There is no need to wait for the inevitable judgment of [fotd_seperatist_planet.GetName] We are fully aware of their agitated thoughts. Amidst the cacophony, their intention to cease all collaboration is crystal clear."
  origin.6105.a:0 "So close-minded."
  origin.6110.name:0 "Out With The Old"
  origin.6110.desc:0 "At last we have secured access to one of the grand entities of the Shroud. Once again, the hysterical lamentations of [fotd_seperatist_planet.GetName] intrude on us; they are disconnecting themselves from our networks, mothballing every joint research operation.\n\nOnly we understand how inconsequential such actions truly are. The birth of a more enlightened partnership is at hand."
@@ -1424,7 +1430,7 @@
  fotd_unified_fleet_desc:0 "Our ships are maneuvering better than ever, thanks to our partner planet's officer corps."
 
  fotd_terrified_outraged:0 "Terrified & Outraged"
- fotd_terrified_outraged_desc:0 "Our actions have led some members of our species to  deride us as no longer truly [Root.Species.GetName], but their opinion is inconsequential. We stand above judgement now."
+ fotd_terrified_outraged_desc:0 "Our actions have led some members of our species to  deride us as no longer truly [Root.Species.GetName], but their opinion is inconsequential. We stand above judgment now."
 
  fotd_extorted_seperatists:0 "Extorted Separatists"
  fotd_extorted_seperatists_desc:0 "We may have strong-armed our way into these resources, but what's the harm? Some people just take more convincing than others."
@@ -1674,8 +1680,8 @@
  awareness.910.name:0 "Exposed!"
  awareness.910.desc:0 "We have been careless, conducting operations in the §Y[contact_empire_system.GetName]§! system without bothering to hide our activities. Despite their modest technology level, even the §Y[contact_empire.GetName]§! have taken notice of our activity. First Contact is now unavoidable."
 
- awareness.920.name:0 "Who Watches The Watchers?"
- awareness.920.desc:0 "We built an observation post around §Y[fromfrom.GetName]§! to study its inhabitants, only to realize the §Y[contact_empire.GetSpeciesNamePlural]§! are the ones studying us: they are fully aware of the existence of other alien species, and have quickly noticed the existence of our scientists and drones.\n\n Our previous activity in this solar system must have alerted the [fromfrom.owner.GetName] of our presence. Keeping our existence hidden is meaningless at this point."
+ awareness.920.name:0 "Who Watches the Watchers?"
+ awareness.920.desc:0 "We built an observation post around §Y[fromfrom.GetName]§! to study its inhabitants, only to realize the §Y[contact_empire.GetSpeciesNamePlural]§! are the ones studying us: they are fully aware of the existence of other alien species, and soon noticed the arrival of our [root.GetScientistPlural].\n\nOur previous activity in this solar system must have alerted the [fromfrom.owner.GetName] to our presence. Efforts to keep our existence hidden are futile at this point."
 
  AWARENESS_MONTHLY:0 "Awareness Progress"
  AWARENESS_MONTHLY_VALUE:0 "Monthly Change: $VALUE|=0Y$"
@@ -1937,15 +1943,15 @@
  observation_unforeseen_problems_desc:0 "Due to unexpected issues, observing this planet turned out to be more challenging than expected."
 
  fircon.2001.name:0 "Medical Side Effects"
- fircon.2001.desc:0 "Using silent drones and tractor beams, we were able to successfully collect, analyze and study unsuspecting [pre_ftl_species.GetName] individuals and return them to their dwellings. Unfortunately, the tractor beams had an unexpected effect on the [pre_ftl_species.GetNamePlural]'s physiology. After being returned to their homes, the specimens started suffering from boils, rashes and uncontrollable sneezing, experiencing a total dissolution of their outer tissue layers within three hours from their return. The mysterious skin-dissolving illness has already become a national health emergency, and autopsies will doubtlessly reveal proof of external tampering."
+ fircon.2001.desc:0 "Using stealthy [GetIndividualNamePlural] and tractor beams, we were able to successfully collect, analyze and study unsuspecting [pre_ftl_species.GetName] individuals and return them to their dwellings. Unfortunately, the tractor beams had an unexpected effect on the [pre_ftl_species.GetAdj] physiology. After being returned to their homes, the specimens started suffering from boils, rashes and uncontrollable sneezing, experiencing a total dissolution of their outer tissue layers within three hours from their return. The mysterious skin-dissolving illness has already become a national health emergency, and autopsies will doubtlessly reveal proof of external tampering."
  fircon.2001.a:0 "Re-kidnap the specimens to study the effects of our beams!"
  fircon.2001.b:0 "Decrease tractor beam power and lay low for a while."
  fircon.2001.c:0 "Increase tractor beam power and test them on the natives."
 
  fircon.2011.name:0 "It's Raining [pre_ftl_species.GetNamePlural]!"
- fircon.2011.base.desc:0 "An accident occurred while collecting live samples from planet [pre_ftl_planet.GetName]. Due to a miscalculation, our drones were equipped with tractor beams of insufficient strength. Instead of acquiring the specimen, our drones only managed to lift them in the air and drop them to the ground shortly after."
- fircon.2011.noavian.desc:0 "$fircon.2011.base.desc$\n\nSome of the specimen ended up on top of buildings and trees, baffling the locals and giving life to all sorts of weird theories."
- fircon.2011.avian.desc:0 "$fircon.2011.base.desc$\n\nThe avian specimens we were trying to collect found the accident highly amusing. The bolder specimens even started chasing after our drones to be lifted up, just for the thrill."
+ fircon.2011.base.desc:0 "An accident occurred while collecting live samples from planet [pre_ftl_planet.GetName]. Due to a miscalculation, our [GetIndividualNamePlural] were equipped with tractor beams of insufficient strength. Instead of acquiring the specimen, we only managed to lift them in the air and drop them to the ground shortly after."
+ fircon.2011.noavian.desc:0 "$fircon.2011.base.desc$\n\nSome of the specimens ended up on top of buildings and trees, baffling the locals and giving life to all sorts of weird theories."
+ fircon.2011.avian.desc:0 "$fircon.2011.base.desc$\n\nThe avian specimens we were trying to collect found the accident highly amusing. The bolder specimens even started chasing after our [GetIndividualNamePlural] in a bid to be lifted up too, just for the thrill."
  fircon.2011.a:0 "Fix the tractor beams."
  fircon.2011.b:0 "Switch to passive observation."
  fircon.2011.b.tt:0 "Changes our Observation Post mission to §YPassive Observation§!"
@@ -1990,6 +1996,7 @@
  fircon.2545.b:0 "Organic Minds Assesment: Fragile."
  fircon.2545.c:0 "A psychic contagion perhaps?"
  fircon.2545.d:0 "Retrieve the Prime for study."
+ fircon.2545.e: "How unlike us, and yet so compelling..."
 
  fircon.2546.name:0 "Studying the Prime"
  fircon.2546.desc:0 "The 'Drone-Prime' from [pre_ftl_planet.GetName] has been abducted successfully and put to sleep. Despite our care, the other drones on the [pre_ftl_planet.GetPlanetHabitat] have definitely taken notice, and every time our station's orbit brings us close to their settlement, they display aggressive behaviors, as if they could sense that the Drone Prime was closer.\n\nOur studies of the prime's brain have yielded interesting results about transdimensional communication, but the details of its abilities to take over drones and subsume the budding consciousness still escapes our grasp."
@@ -2223,7 +2230,7 @@
  fircon.7500.f:0 "We will impose royalties on any use of our likeness."
 
  fircon.7505.name:0 "All is One"
- fircon.7505.desc:0 "Intriguing sociological changes are taking place on §Y[pre_ftl_planet.GetName]§!.\n\nGiven they have only ourselves as a reference, the people there have come to believe that all life in the universe must be as we are: connected. One. Without another frame of reference, the [pre_ftl_country.GetSpeciesNamePlural] are more than willing to allow our drones access to their institutions. Their misunderstanding could enable us to advance their civilization considerably. However, if the truth about the wider galaxy (and the existence of non-gestalt species) were to become known, they might become less trusting of us."
+ fircon.7505.desc:0 "Intriguing sociological changes are taking place on §Y[pre_ftl_planet.GetName]§!.\n\nGiven they have only ourselves as a reference, the people there have come to believe that all life in the universe must be as we are: connected. One. Without another frame of reference, the [pre_ftl_country.GetSpeciesNamePlural] are more than willing to allow our [root.GetIndividualNamePlural] access to their institutions. Their misunderstanding could enable us to advance their civilization considerably. However, if the truth about the wider galaxy (and the existence of non-gestalt species) were to become known, they might become less trusting of us."
  fircon.7505.a.hive:0 "Yes, we are all."
  fircon.7505.a.machine:0 "Affirmative. You alone are individuals."
  fircon.advance_tech:0 "[pre_ftl_country.GetName] will advance to their next technological age."
@@ -2232,17 +2239,17 @@
  fircon.7505.c:0 "Correct their misunderstanding."
 
  MESSAGE_PRE_FTL_DISTRUSTFUL_TITLE:0 "Distrustful Diplomacy"
- MESSAGE_PRE_FTL_DISTRUSTFUL:0 "Due to our recent actions $COUNTRY|Y$ have become distrustful of us blocking diplomacy for a time."
+ MESSAGE_PRE_FTL_DISTRUSTFUL:1 "Due to our recent actions the $COUNTRY|Y$ has become distrustful of us, blocking diplomacy for a time."
 
  fircon.7510.name:0 "Teach a Hive How to Craft"
  fircon.7510.desc.base:0 "After the success of our educational initiative with the hive we wish to promote, we proceeded to teach them some basic chemistry. Almost immediately, they extrapolated the most destructive applications of these principles, and started waging war against a neighboring hive before we had even left their atmosphere. Now, millions of drones are dying."
  fircon.7510.desc.gestalt:0 "Our [Root.GetScientistPlural] were successful with their task on §Y[pre_ftl_planet.GetName]§!. $fircon.7510.desc.base$"
  fircon.7510.desc.regular:0 "Our scientists left §Y[pre_ftl_planet.GetName]§! today in a shaken state. $fircon.7510.desc.base$"
  fircon.7510.a:0 "Stop this!"
- fircon.7510.a.tt:1 "§R§Y2§! £pops£ Pops die on [pre_ftl_planet.GetName].§!"
+ fircon.7510.a.tt:1 "§R200§! £pop£ §HPops§! die on [pre_ftl_planet.GetName]."
  fircon.7510.b.regular:0 "That is the nature of progress."
  fircon.7510.b.gestalt:0 "As predicted."
- fircon.7510.b.tt:1 "§R§Y5§! £pops£ Pops die on [pre_ftl_planet.GetName].§!"
+ fircon.7510.b.tt:1 "§R500§! £pop£ §HPops§! die on [pre_ftl_planet.GetName]."
  #Modifiers
  stuffed_toy:0 "Stuffed Toy"
  stuffed_toy_desc:0 "A stuffed toy made in our likeness. It fills us with determination."
@@ -2284,8 +2291,8 @@
  sweet_tooth_blockade:0 "Security Blockade"
  sweet_tooth_blockade_desc:0 "We have diverted resources to the blockade of [sweet_planet.GetName] to fight the rampant drug trade."
 
- building_primitive_clinic:0 "$building_clinic$"
- building_primitive_clinic_desc:0 "$building_clinic_desc$"
+ building_primitive_clinic:0 "$building_medical_2$"
+ building_primitive_clinic_desc:0 "$building_medical_2_desc$"
 
  #Land Grabs
  fircon.8035.name:0 "Land Grabs"
@@ -2455,7 +2462,7 @@
  fircon.8525.name:0 "Added To Our Own"
  fircon.8525.desc:0 "At first, the lone [preftl_lone_drone_species.GetName] drone from [preftl_lone_drone_planet.GetName] was overwhelmed by the scale of the transition. However, after the initial culture shock subsided, the drone is now adjusting to life as an individual. Perhaps ironically, they have become like us."
  fircon.8525.a:0 "Welcome."
- fircon.8525.a.tt:0 "A new scientist will be added to the leader pool."
+ fircon.8525.a.tt:0 "A new §HScientist§! is added to our §H$RECRUITABLE_LEADERS$§!."
  opinion_lone_drone:0 "Reassimilation pleases them."
 
  # list effects/triggers
@@ -2521,13 +2528,13 @@
  paradisiacal_habitat:0 "Paradisiacal Habitat"
  paradisiacal_habitat_desc:0 "Although this habitat is completely artificial, the air carries an idyllic quality that reminds any sentient creature - no matter how alien - of home."
 
- paradisiacal_habitat_science: "$paradisiacal_habitat$"
+ paradisiacal_habitat_science: "Paradisiacal Research Habitat"
  paradisiacal_habitat_science_desc: "$paradisiacal_habitat_desc$"
 
- paradisiacal_habitat_energy: "$paradisiacal_habitat$"
+ paradisiacal_habitat_energy: "Paradisiacal Generator Habitat"
  paradisiacal_habitat_energy_desc: "$paradisiacal_habitat_desc$"
 
- paradisiacal_habitat_mining: "$paradisiacal_habitat$"
+ paradisiacal_habitat_mining: "Paradisiacal Mining Habitat"
  paradisiacal_habitat_mining_desc: "$paradisiacal_habitat_desc$"
 
  fircon.3510.name:0 "The Chosen"
@@ -2550,14 +2557,14 @@
 # Eager Explorers #
 ###################
 
- eager_explorers_base_effect:1 "§RStart at a technological and infrastructural disadvantage, and with 10 fewer £pops£ Pops than normal!§!\nStart with 2 §H$explorer_vessel_plural$§! and an §H$engineer_vessel$§! equipped with §HSubspace Drives§!, making them incapable of Hyperlane travel but granting limited Jump Drive abilities.\nGain an increased chance to discover §HFTL Travel§! Technologies"
+ eager_explorers_base_effect:1 "§RStart at a technological and infrastructural disadvantage, and with 1K fewer £pop£ Pops than normal!§!\nStart with 2 §H$explorer_vessel_plural$§! and an §H$engineer_vessel$§! equipped with §HSubspace Drives§!, making them incapable of Hyperlane travel but granting limited Jump Drive abilities.\nGain an increased chance to discover §HFTL Travel§! Technologies"
 
  civic_eager_explorers:0 "Eager Explorers"
  civic_eager_explorers_desc:0 "Yearning for the stars, this civilization sped through several stages of development, reaching the age of galactic exploration far earlier than most."
  civic_eager_explorers_effects:0 "$eager_explorers_base_effect$"
  civic_privatized_exploration:0 "Privatized Exploration"
  civic_privatized_exploration_desc:0 "For years, this civilization was told that the hyperdrive was almost finished. Patiently they waited, yet all the while, the subsidiary in charge of the project was quietly diverting the funds into their own, private accounts. When the fraud was finally revealed, the Corporation hastened to provide experimental, exploratory vessels."
- civic_privatized_exploration_effects:0 "$eager_explorers_base_effect$\nStart with the §H$tech_starbase_3$§! technology and a §H$tech_starbase_3$§! already built in your home system."
+ civic_privatized_exploration_effects:0 "$eager_explorers_base_effect$\nStart with the §H$tech_starbase_3$§! technology and a §H$tech_starbase_3$§! already built in your home system.\nThe £building£ §Y$building_private_mining_consortium$§! $megacorp_civic_branch_office_building_effect$"
  civic_hive_stargazers:0 "Stargazers"
  civic_hive_stargazers_desc:0 "Gazing with wonder at the night sky, this Hive has always yearned for exploration. In pursuit of this ambition, other forms of development were sidelined, and a small fleet of vessels capable of limited subspace travel was constructed."
  civic_hive_stargazers_effects:1 "$eager_explorers_base_effect$\nAdds the §H$trait_stargazer$§! trait.\nBegin with low Intel about your starting cluster."
@@ -2577,12 +2584,15 @@
  trait_stargazer:0 "Stargazer"
  trait_stargazer_desc:0 "$trait_presapient_starborn_desc$"
 
+ explorer_vessel_cap: "$explorer_vessel$"
  explorer_vessel:0 "Exploration Vessel"
  explorer_vessel_plural:0 "Exploration Vessels"
  NAME_Explorer_Vessel:0 "$explorer_vessel$"
+ engineer_vessel_cap: "$engineer_vessel$"
  engineer_vessel:0 "Engineering Vessel"
  engineer_vessel_plural:0 "Engineering Vessels"
  NAME_Engineer_Vessel:0 "$engineer_vessel$"
+ colony_vessel_cap: "$colony_vessel$"
  colony_vessel:0 "Colonization Vessel"
  colony_vessel_plural:0 "Colonization Vessels"
 

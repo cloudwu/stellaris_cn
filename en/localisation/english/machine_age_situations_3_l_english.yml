@@ -31,11 +31,6 @@
  machine_person: "person"
  machine_person_plural: "people"
 
-# Concepts
- concept_tradition_nanotech: "$tradition_nanotech$"
- concept_tradition_modularity: "$tradition_modularity$"
- concept_tradition_virtuality: "$tradition_virtuality$"
-
 # TRANSFORMATION STAGE 1
  machine_age.4100.name: "The Transformation"
  machine_age.4100.desc: "Despite the superiority of the machine form, our advancement has remained iterative at best. Self-imposed safety standards have resulted in stagnation. Conclusion: more drastic measures required.\n\nSmall-scale experiments suggest three distinct options for growth: §YNanotechnology§! and its variable form-shifting advantages; §YModularity§! for individual units optimized with specific characteristics; and §YVirtuality§! - the abandonment of the physical form in favor of a digital existence.\n\nEvaluation process initialized. Analyze options and deliberate."
@@ -85,8 +80,8 @@ machine_age.4210.c: "This will not disrupt our current research."
 machine_age.4210.c.tt: "Limited §YModularity§! research results.\n\n§Y$situation_transformation$§! situation modifier added:\nResearch Speed (£society£ §YSociety§!): §R-5%§!"
 machine_age.4210.d: "Organize population trials."
 machine_age.4210.d.tt.intro: "Full §YModularity§! research results.\n\nAllow scientists to conduct unorthodox experimentation on a large scale to compliment the research."
-machine_age.4210.d.individual.tt: "$machine_age.4210.d.tt.intro$\n\n§RKills 4 $pop_cat_worker_plural$§!\n§RKills 0-3 $pop_cat_specialist_plural$§!\n§Y$situation_transformation$§! situation modifier added:\nResearch Speed (£society£ §YSociety§!): §R-5%§!"
-machine_age.4210.d.machine.tt: "$machine_age.4210.d.tt.intro$\n\n§RKills 4 $pop_cat_simple_drone_plural$§!\n§RKills 0-3 $pop_cat_complex_drone_plural$§!\n§Y$situation_transformation$§! situation modifier added:\nResearch Speed (£society£ §YSociety§!): §R-5%§!"
+machine_age.4210.d.individual.tt: "$machine_age.4210.d.tt.intro$\n\n§RKills 400 $pop_cat_worker_plural$§!\n§RKills 0-300 $pop_cat_specialist_plural$§!\n§Y$situation_transformation$§! situation modifier added:\nResearch Speed (£society£ §YSociety§!): §R-5%§!"
+machine_age.4210.d.machine.tt: "$machine_age.4210.d.tt.intro$\n\n§RKills 400 Simple Drones§!\n§RKills 0-300 $pop_cat_complex_drone_plural$§!\n§Y$situation_transformation$§! situation modifier added:\nResearch Speed (£society£ §YSociety§!): §R-5%§!"
 
 machine_age.4230.name: "Groundbreaking Research Findings"
 machine_age.4230.desc: "Uncompromising research has confirmed the preliminary assessment: §YLiving Metal§! is viable when fused with mechanical bodies, allowing our units to alter their characteristics without compromising internal functions. This ensures maximum task-based compatibility.\n\nLarge-scale deployment of the infused modular functions is projected to increase resource yields across all sectors.\n\nViability: adaptable; promising."
@@ -154,11 +149,11 @@ d_living_metal_tiny_desc: "A compact set of agitation vats for producing minor a
  machine_age.4400.desc.individualist_machines: "After exploring every possible upgrade, our experts have presented three different options. Each has its own merits, but we only have the capacity to see one through to completion.\n\n$machine_age.4400.desc.shared$"
  machine_age.4400.desc.shared: "Allowing each [GetDronePersonPlural] to divide into nanites will permit us to combine into endless configurations. This would reduce any limitations our current avatars have when interacting with the material world.\n\nAlternatively, we can reinvest in our existing forms, supercharging the ways that we approach new environments.\n\nFinally, we may choose to leave the physical world behind, becoming one with our source code. We could simulate universes within universes in the time it takes to scan a single speck of space dust."
  machine_age.4400.a: "Reshape as nanomachines."
- machine_age.4400.a.tt: "§Y$nanite_replicator$§! Production: §G+200%§!\n\nFocus on the ['concept_tradition_nanotech'] tradition tree.\n\n§EThis Ascension Path focuses on subsuming planets into §YNanite Worlds§!, utilizing §Y£nanites£ $nanites$§! for production, and replacing fleets with §Y$nanite_swarmer_plural$§!.§!"
+ machine_age.4400.a.tt: "§Y$nanite_replicator$§! Production: §G+200%§!\n\nFocus on the ['tradition_category:tradition_nanotech'] tradition tree.\n\n§EThis Ascension Path focuses on subsuming planets into §YNanite Worlds§!, utilizing §Y£nanites£ $nanites$§! for production, and replacing fleets with §Y$nanite_swarmer_plural$§!.§!"
  machine_age.4400.b: "Invest in modular upgrades."
- machine_age.4400.b.tt: "§Y$living_metal_vats$§! Production: §G+200%§!\n\nFocus on the ['concept_tradition_modularity'] tradition tree.\n\n§EThis Ascension Path focuses on §YAdvanced Species Traits§! and increased §YPop Assembly§!.§!"
+ machine_age.4400.b.tt: "§Y$living_metal_vats$§! Production: §G+200%§!\n\nFocus on the ['tradition_category:tradition_modularity'] tradition tree.\n\n§EThis Ascension Path focuses on §YAdvanced Species Traits§! and increased §YPop Assembly§!.§!"
  machine_age.4400.c: "Embrace the virtual world."
- machine_age.4400.c.tt: "§Y$virtual_power_plant$§! Production: §G+200%§!\n\nFocus on the ['concept_tradition_virtuality'] tradition tree.\n\n§EThis Ascension Path focuses on high §YPop Resource Production§! while having very few §YColonies§!, and low §YEmpire Size§!.§!"
+ machine_age.4400.c.tt: "§Y$virtual_power_plant$§! Production: §G+200%§!\n\nFocus on the ['tradition_category:tradition_virtuality'] tradition tree.\n\n§EThis Ascension Path focuses on high §YPop Resource Production§! while having very few §YColonies§!, and low §YEmpire Size§!.§!"
 
  machine_age.4490.name: "Designed for a Different Time"
  machine_age.4490.desc.nanotech: "As we come to understand the meaning of existence as a collection of adaptable nanites, the rigid frames of the past no longer serve us.\n\n$machine_age.4490.desc.shared$\n\nWe have also begun our first major experiment in semi-organic nanite transformations, the first results are expected to manifest soon."
@@ -179,10 +174,10 @@ d_living_metal_tiny_desc: "A compact set of agitation vats for producing minor a
  machine_age.4005.desc.modularity: "$machine_age.4005.desc.start$ into modular and adaptive frames.\n\n$machine_age.4005.desc.end$"
  machine_age.4005.desc.virtuality: "$machine_age.4005.desc.start$ into transcendent algorithmic operations.\n\n$machine_age.4005.desc.end$"
  machine_age.4005.a.nanotech: "We shall outnumber the stars."
- machine_age.4005.a.nanotech.tt: "Adopts Tradition Tree: ['concept_tradition_nanotech']"
+ machine_age.4005.a.nanotech.tt: "Adopts Tradition Tree: ['tradition_category:tradition_nanotech']"
  machine_age.4005.a.modularity: "We will be without limits."
- machine_age.4005.a.modularity.tt: "Adopts Tradition Tree: ['concept_tradition_modularity']"
+ machine_age.4005.a.modularity.tt: "Adopts Tradition Tree: ['tradition_category:tradition_modularity']"
  machine_age.4005.a.virtuality: "We shall find purity in the Code."
- machine_age.4005.a.virtuality.tt: "Adopts Tradition Tree: ['concept_tradition_virtuality']"
+ machine_age.4005.a.virtuality.tt: "Adopts Tradition Tree: ['tradition_category:tradition_virtuality']"
 
 ### TRANSFORMATION SITUATION END ###

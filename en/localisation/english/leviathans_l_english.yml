@@ -9,42 +9,60 @@
  DLC_LEVIATHANS_RECOMMENDATION_ROBOT_REC:1 "We're recommending §SLeviathans§! as the makeup of this empire suits its mechanics and content - namely, exploring space and facing up to large Space Fauna."
 
  station_xs:0 "Ancient Sentinel"
+ station_xs_cap: "$station_xs$"
  station_xs_plural:0 "Ancient Sentinels"
  station_s:0 "Ancient Defender"
+ station_s_cap: "$station_s$"
  station_s_plural:0 "Ancient Defenders"
  station_m:0 "Ancient Warden"
+ station_m_cap: "$station_m$"
  station_m_plural:0 "Ancient Wardens"
  station_l:0 "Ancient Guardian"
+ station_l_cap: "$station_l$"
  station_l_plural:0 "Ancient Guardians"
  station_xl:0 "Ancient Vault"
+ station_xl_cap: "$station_xl$"
  station_xl_plural:0 "Ancient Vaults"
  space_amoeba_mother:0 "Space Amoeba Mother"
+ space_amoeba_mother_cap: "$space_amoeba_mother$"
  space_amoeba_mother_plural:0 "Space Amoeba Mothers"
  ancient_mining_drone:0 "Ancient Mining Drone"
+ ancient_mining_drone_cap: "$ancient_mining_drone$"
  ancient_mining_drone_plural:0 "Ancient Mining Drones"
  ancient_corvette:0 "Ancient Combat Drone"
+ ancient_corvette_cap: "$ancient_corvette$"
  ancient_corvette_plural:0 "Ancient Combat Drones"
  ancient_destroyer:0 "Ancient Destroyer"
+ ancient_destroyer_cap: "$ancient_destroyer$"
  ancient_destroyer_plural:0 "Ancient Destroyers"
  pirate_cruiser:0 "Pirate Cruiser"
+ pirate_cruiser_cap: "$pirate_cruiser$"
  pirate_cruiser_plural:0 "Pirate Cruisers"
  homebase:0 "Home Base"
+ homebase_cap: "$homebase$"
  homebase_plural:0 "Home Bases"
  hive_asteroid:0 "Hive Asteroid"
+ hive_asteroid_cap: "$hive_asteroid$"
  hive_asteroid_plural:0 "Hive Asteroids"
 
  wraith_01_blue:0 "Blue Wraith"
+ wraith_01_blue_cap: "$wraith_01_blue$"
  wraith_01_blue_plural:0 "Blue Wraiths"
  sphere:0 "The Infinity Machine"
+ sphere_cap: "$sphere$"
  sphere_plural:0 "The Infinity Machines"
  npc_warship_01:0 "Dreadnought"
+ npc_warship_01_cap: "$npc_warship_01$"
  npc_warship_01_plural:0 "Dreadnoughts"
 
  wraith_01:0 "Spectral"
+ wraith_01_cap: "$wraith_01$"
  wraith_01_yellow:0 "Spectral"
  wraith_01_red:0 "Spectral"
+ wraith_01_red_cap: "$wraith_01_red$"
  wraith_01_plural:0 "Wraiths"
  wraith_01_yellow_plural:0 "Wraiths"
+ wraith_01_yellow_cap: "$wraith_01_yellow_plural$"
  wraith_01_red_plural:0 "Wraiths"
  wraith_frequency_sync:0 "Spectral Frequency Synchronization"
  spectral_residue_studies:0 "Spectral Residue Studies"
@@ -173,15 +191,15 @@
 #  leviathans.125.b.reply:0 "Very good. The food will be delivered to you in a perfectly edible condition."
 #  leviathans.125.c.reply:0 "Your people will not be going hungry this cycle! Food shipments shall commence immediately."
 
- leviathans.125.desc.z1:1 "We have a talented executive standing by, ready to migrate to the [Root.GetName] and get any of your sectors back out of the red. Entrust your §HTrade Value§! to an expert!"
- leviathans.125.desc.z1.gestalt:0 "We have a talented executive standing by, ready to... Hm. Are you sure?\n\n'Buyer beware' is all well and good, but still: I feel obliged to inform you that our consultants really only specialize in §HTrade Value§!. I'm not sure they would be a good fit for you, given your... unusual relationship with that concept."
+ leviathans.125.desc.z1:1 "We have a talented executive standing by, ready to migrate to the [Root.GetName] and get any of your sectors back out of the red. Entrust your $r_trade$ to an expert!"
+ leviathans.125.desc.z1.gestalt:0 "We have a talented executive standing by, ready to... Hm. Are you sure?\n\n'Buyer beware' is all well and good, but still: I feel obliged to inform you that our consultants really only specialize in $r_trade$. I'm not sure they would be a good fit for you, given your... unusual relationship with that concept."
  leviathans.125.z1:0 "Deal."
  leviathans.125.z1.gestalt:0 "We understand, and wish to proceed anyway."
  leviathans.126.desc:0 "Excellent! We are happy to share our skills with the [Root.GetName]."
  leviathans.126.desc.alt: "Excellent! May we both profit from each other's... distinct approach to commerce."
 
  already_hired_trader_official:2 "§RWe have already recruited a leader from the [enclave_country.GetName]§!."
- recruit_trader_leader:1 "Adds a [enclave_country.GetAdj] §YOfficial§! with a §YTrader Liaison Trait§! to the §HLeaders§! pool."
+ recruit_trader_leader:1 "Adds a [enclave_country.GetAdj] §YOfficial§! with a §Y$councilor_enclave_trader$§! Trait to the §HLeaders§! pool."
  requires_trader_enclave:0 "§RRequires a §YTrader Enclave§! in the system.§!"
 
  sm_trader_proxy_office:0 "Trader Proxy Office"
@@ -189,7 +207,7 @@
  requires_trade_enclave:0 "§RRequires a §YTrader Enclave§! in the system.§!"
 
  leader_trait_enclave_trader:0 "Enclave Trader"
- leader_trait_enclave_trader_desc:0 "Recruited from one of the independent merchant Enclaves, this leader is particularly adept at maximizing Trade Value."
+ leader_trait_enclave_trader_desc:0 "Recruited from one of the independent merchant Enclaves, this leader is particularly adept at maximizing Trade."
  trader_catch_phrase: "§L"Now about that small consulting fee..."§!"
 
  leader_trait_xuracorp_liaison: "XuraCorp Liaison"
@@ -211,9 +229,9 @@
  councilor_enclave_trader_female: "$councilor_enclave_trader$"
  councilor_enclave_trader_desc: "A liaison from one of the three hubs of galactic commerce sits on the council, granting insider information on brokerages across the galaxy."
  councilor_enclave_trader_unlock_title: "§HCouncil Position from the $NAME_Muutagan_Merchant_Guild$, $NAME_Riggan_Commerce_Exchange$, or $NAME_XuraCorp$§!"
- councilor_enclave_trader_conditional_tooltip: "Leader has a §YTrader Liaison§! Trait."
+ councilor_enclave_trader_conditional_tooltip: "Leader has a §Y$councilor_enclave_trader$§! Trait."
 
- unlocks_trader_council_position: "\n§EAllows the unlocking of Council Position:§!\n§H$t$$councilor_enclave_trader$§!\n$tt$$COUNCIL_POSITION_MODIFIER_BASE$\n$ttt$$MOD_TRADE_VALUE_MULT$: §G+2%§!\n$ttt$$MOD_COUNTRY_TRADE_FEE$ §G-1%§!\n$COUNCIL_POSITION_AVAILABLE_FOR$$t$$official_with_icon$\n\n$COUNCIL_POSITION_REQUIREMENTS$$councilor_enclave_trader_conditional_tooltip$"
+ unlocks_trader_council_position: "\n§EAllows the unlocking of Council Position:§!\n§H$t$$councilor_enclave_trader$§!\n$tt$$COUNCIL_POSITION_MODIFIER_BASE$\n$ttt$$r_trade$: §G+2%§!\n$ttt$$MOD_COUNTRY_TRADE_FEE$ §G-1%§!\n$COUNCIL_POSITION_AVAILABLE_FOR$$t$$official_with_icon$\n\n$COUNCIL_POSITION_REQUIREMENTS$$councilor_enclave_trader_conditional_tooltip$"
 
 
  leviathans.131.desc:3 "The §YVolatile Mote§! is a prized Riggan condiment. It is renowned throughout the galaxy for its distinct flavor, which is unlike any other - and its explosiveness, which is also unlike any other. We sell it only to our most valued trading partners, among which we count the [Root.GetName].\n\nIf you can meet our modest price, we are willing to export Volatile Motes to you for a period of ten standard years."
@@ -311,9 +329,11 @@
 # ARTISAN ENCLAVE
 ##################
 
+ ENCLAVE_DIPLOMACY_TITLE: "Enclave Diplomacy"
+
  leviathans.295.desc:0 "A visitor! This is a joyous occasion indeed! Oh, forgive my manners. I believe introductions are in order. We are the Artisan Troupe.\n\nOur members have dedicated their lives to the pursuit of art, music, culture and all the other things which makes existence bearable to a sapient being. Please, if you would like to share in the wonder of our creations, do not hesitate to contact us!"
 
- leviathans.300.name:0 "The Artisan Troupe"
+ leviathans.300.name:0 "§YEnclave:§! The Artisan Troupe"
  leviathans.300.desc:3 "Greetings! I, the headmaster of the Artisan Troupe, wish you a creative day.\n\nWhat can we do you for? Perhaps produce a work of art for you to enjoy? Or maybe you wish to sponsor our enclave in its creation of otherworldly beauty?" #'do you for' phrasing is intentional, humorous
  leviathans.300a.desc:0 "Hm? Oh, please excuse my reverie. Sometimes this muse of mine is simply... overpowering. Is there anything else we can do for you?"
  leviathans.300b.desc:0 "Have you ever stopped to wonder at the sheer majesty of it all? Here we are, and there you are. What fantastic odds! I feel a ballad coming on."
@@ -332,7 +352,7 @@
  leviathans.300.e:0 "What else can you do?"
  leviathans.300.f:1 "We want to invest in a §YMinistry of Culture§!."
 
- leviathans.301.name:0 "The [from.GetName]" #country — may return as an unknown name
+ leviathans.301.name:0 "The [from.GetName]" #country - may return as an unknown name
  leviathans.301.desc:0 "The Artisan Troupe won't respond to our hails."
  leviathans.301.desc.unknown:1 "Translations aside, once we exchanged our information with [From.GetName] they closed down all channels and refused to speak to us."
  leviathans.301.a:0 "How dare they?!"
@@ -364,6 +384,12 @@
  leviathans.337.name:0 "The Betrayal"
  leviathans.337.desc:1 "The §YFestival of Worlds§! has abruptly stopped. The Artisan Troupe has packed their bags and left, without saying a word about why.\n\nThorough searches of their campsites and arenas have revealed only that a substantial quantity of resources has disappeared."
  leviathans.337.a:0 "Thieves!"
+ leviathans.337.a.tooltip:0 "The Artisan Troupe will refuse any communique for 10 years."
+ leviathans.337.b:0 "All part of the fun."
+ leviathans.337.b.tooltip:0 "The Artisan Troupe are forgiven for their transgressions."
+ leviathans.337.c:0 "Confiscate their campsite."
+ tent_heist: "Tent Heist"
+ cultural_clemency: "Cultural Clemency"
  leviathans.315.desc:1 "Esteemed [Root.GetRulerTitle] [Root.GetRulerName]: a decade ago the [Root.GetName] pledged to support the Artisan Troupe, and so you have.\n\nThe time of your patronage is coming to an end, but it would be remiss of us not to ask: would you care to renew your subscription to the finest arts and crafts in the galaxy?"
 
  leviathans.321.name:0 "Patron Newsletter"
@@ -458,7 +484,7 @@
  leviathans.506.d:0 "What else did you have to offer?"
 #  leviathans.506.a.reply:0 "We are transmitting the survey data to you now."
 
- leviathans.507.name:0 "Research Aid"
+ leviathans.507.name:0 "§YEnclave:§! The Curators Research Aid"
  leviathans.507.desc:1 "Of course. We are prepared to offer you limited access to our extensive databanks for a period of ten standard years. This should provide a significant boost to the research efforts of your planetside §HResearch Labs§!.\n\nWe will require compensation for this service, naturally, but I think you'll find that our prices are very reasonable."
  leviathans.507.a:0 "We would like to purchase this service."
  leviathans.507.a.reply:0 "A wise choice, that future generations of [Root.GetSpeciesNamePlural] will no doubt laud you for."
@@ -471,14 +497,15 @@
  leviathans.508.c:1 "Tell us about the §Y$NAME_Enigmatic_Fortress$§!."
  leviathans.508.d:1 "Tell us about the §Y$NAME_Stellar_Devourer$§!."
  leviathans.508.e:1 "Tell us about the §Y$NAME_Dimensional_Horror$§!."
- leviathans.508.f:1 "Tell us about the §Y$NAME_Alien_Hive$§!." #Asteroid Hive
+ leviathans.508.f:1 "Tell us about the §Y$NAME_Alien_Hive$§!." # Asteroid Hive
  leviathans.508.g:1 "Tell us about the §Y$NAME_Infinity_Machine$§!."
  leviathans.508.h:1 "Tell us about the §Y$NAME_Automated_Dreadnought$§!."
  leviathans.508.i:1 "Tell us about the §Y$NAME_Wraith$§!."
  leviathans.508.j:1 "Tell us about the §Y$NAME_Voidspawn$§!."
- leviathans.508.k:1 "Tell us about the §Y$NAME_Scavenger_Bot$§!." #Scavenger Bot
- leviathans.508.l:1 "Tell us about the §Y$NAME_Elderly_Tiyanki$§!." #Tiyanki Matriarch
- leviathans.508.m:0 "Tell us about the §Y$NAME_Toxic_God$§!." #Toxic God
+ leviathans.508.k:1 "Tell us about the §Y$NAME_Scavenger_Bot$§!." # Scavenger Bot
+ leviathans.508.l:1 "Tell us about the §Y$NAME_Elderly_Tiyanki$§!." # Tiyanki Matriarch
+ leviathans.508.m:0 "Tell us about the §Y$NAME_Toxic_God$§!." # Toxic God
+ leviathans.508.n: "Tell us about the §Y$NAME_Opus_Sentinel$§!." # Opus Sentinel (Unplugged)
 
  leviathans.506.f:0 "How would our current fleet fare against it in battle?"
  leviathans.5106.f1.reply:0 "Poorly. Very poorly.\n\nWait a second, you're not actually thinking of...? My goodness, with the ships you have? It... it would be a slaughter!"
@@ -530,6 +557,18 @@
  leviathans.558.B:0 "How is it defeated?"
  leviathans.558.BB:0 "Remind us how we can fight it."
  leviathans.558.B.reply:0 "There have been few survivors to its past encounters. According to reports, its corrosive poisons are able to burn through all forms of armor. Shields are only slightly more useful. Furthermore, the creatures living on its back will supposedly act as an attack swarm when it is threatened. We can only suggest you approach it with overwhelming force."
+
+ leviathans.559.name: "$NAME_Opus_Sentinel$"
+ leviathans.559.desc: "That rather twitchy automaton is a relative newcomer to the galaxy, but don't be fooled by such novelty. The $NAME_Opus_Sentinel$'s creators were counted among the finest engineers in their sector even before they were assimilated by a tyrannical machine. We do not know what harsh fate has befallen the machine consciousness since then, but if the Sentinel's agonized writhing is anything to go by: the whole situation appears quite volatile. Tread carefully, should you decide to slake your curiosity."
+ leviathans.559.desc.unplugged: "Forgive my impertinence, but I assumed you would know more about it than we do! That rather twitchy automaton is a newcomer compared to what we usually study here, but is no less fearsome an opponent.\n\nWe know that even before they were assimilated, the engineers behind the $NAME_Opus_Sentinel$ were counted among the finest in their sector. That warship is therefore not to be underestimated. What is less clear to us is how the vessel became so detached from the [origin_unplugged_assimilator_empire.GetName]. We gather from the Sentinel's agonized writhing that the whole situation remains quite volatile. Would you agree with assessment, [root.GetSpeciesName]?"
+ leviathans.559.a: "You say it is guarding something?"
+ leviathans.559.a.reply: "Indeed, though we do not know precisely what. Some of our contacts believe the Sentinel is defending whatever remains of the splintered [origin_unplugged_assimilator_empire.GetName]; others suggest the planet itself holds some treasure. What we do know is that this warship was built more robustly than any of its [origin_unplugged_assimilator_empire.GetAdj] peers by an order of magnitude. Whatever it is protecting out there, the $NAME_Opus_Sentinel$ perseveres despite clear signs of distress, or perhaps even agony."
+ leviathans.559.b: "We prefer not to talk about it."
+ leviathans.559.b.reply: "Quite understandable. We are merely curious.\n\nIs there anything else I can help you with?"
+ leviathans.559.c: "Where can we find this entity?"
+ leviathans.559.c.reply: "Seeing as how you are one of our more trustworthy clients... I can tell you the $NAME_Opus_Sentinel$ was last seen guarding the §Y[origin_unplugged_machine_legacy_core.GetName] system§!.\n\nGiven how much we still do not know about this ferociously troubled warship, rest assured: we shall observe the particulars of your encounter with keen interest!"
+ unplugged_curator_poi_opus_sentinel_desc: "We bought these coordinates from the Curators, who report the $NAME_Opus_Sentinel$ was last seen in this area."
+
 
  leviathans.590.name:0 "Hire Scientist"
  leviathans.590.desc:0 "We are willing to pledge the services of one of our most brilliant scientists to your cause. This is not an offer we make to just anyone, you understand!\n\nA suitable... donation will of course be necessary, before traveling arrangements can be made."
@@ -756,9 +795,9 @@
  leviathans.1062.desc:0 "It is done. §YIt is done!§!\n\nSomehow we've solved it. You helped. The organic nature of things eluded us, the answer lied behind us all this time. Of course. Thank you, little ones. The universe is vast, yet so small. But now we see it all in its simple glory. It's lovely.\n\nNow that we have calculated infinity, there is but one thing we can do now. We can show you the truth. Farewell, young ones."
  leviathans.1062.a:0 "Glad we could help."
  leviathans.1063.desc:0 "The Infinity Machine disappears into Gargantua. And then... nothing happens. Did it succeed? What did it try to do? We may never know. A tiny residue of its hull remains within the vortex outside the event horizon - we might be able to learn some of its information from it.\n\nA final gift from an odd friend."
- leviathans.1063.a.tooltip:1 "Adds the following to [technosphere_ship.GetStarName]:\n£physics£ Physics Data §G+4§!\n£society£ Society Data §G+4§!\n£engineering£ Engineering Data §G+4§!"
+ leviathans.1063.a.tooltip:1 "Adds the following to [technosphere_ship.GetStarName]:\n£physics£ Physics Research §G+4§!\n£society£ Society Research §G+4§!\n£engineering£ Engineering Research §G+4§!"
  leviathans.1065.desc:1 "The Infinity Machine disappears into Gargantua, the thing it studied for so long. As it passes the event horizon, the black hole begins to fluctuate. It takes in less light and the swirls of matter being sucked into it slow down. In an instant it lets out more light than any sun and starts radiating matter back into the universe.\n\nThe black hole shrinks, unfitting of its name we now dub it "Pantagruel," causing time dilation to become even stronger around it. Within Pantagruel one can gaze into a mirror universe, the other end of the black hole, one just beginning. The Infinity Machine has shown us the truth. The black holes are wombs, and universes their offspring.\n\nStudying this mirror universe is bound to teach us much about the one we live in. Learning from other beginnings."
- leviathans.1065.a.tooltip:2 "Adds the following to [technosphere_ship.GetStarName]:\n£physics£ Physics Data §G+10§!\n£society£ Society Data §G+10§!\n£engineering£ Engineering Data §G+10§!\n\n"
+ leviathans.1065.a.tooltip:2 "Adds the following to [technosphere_ship.GetStarName]:\n£physics£ Physics Research §G+10§!\n£society£ Society Research §G+10§!\n£engineering£ Engineering Research §G+10§!\n\n"
  leviathans.1074.name:1 "Pantagruel Station"
  leviathans.1074.desc:1 "We've lost the station in orbit of the Pantagruel Black Hole, losing its unique research capabilities."
  leviathans.1076.desc:1 "We've gained access to a station in orbit of the Pantagruel Black Hole. The black hole's unique characteristics opens up for enhanced research capabilities."
@@ -1053,18 +1092,25 @@ leviathans.3230.desc: "The inhabitants of the [from.solar_system.GetName] system
  xuragel_effect:1 "\n§YXuraGel§! grants Habitability §G+10%§!"
  muutagan_crystals_effect:2 "\n§YMuutagan Crystals§! grant Happiness §G+10%§!"
  space_dragon_baby:0 "Immature Ether Drake"
+ space_dragon_baby_cap: "$space_dragon_baby$"
  space_dragon_baby_plural:0 "Immature Ether Drakes"
  enclave_station:0 "Enclave Station"
+ enclave_station_cap: "$enclave_station$"
  enclave_station_plural:0 "Enclave Stations"
  space_dragon_red:0 "Ether Drake"
+ space_dragon_red_cap: "$space_dragon_red$"
  space_dragon_red_plural:0 "Ether Drakes"
  stellarite:1 "Stellar Devourer"
+ stellarite_cap: "$stellarite$"
  stellarite_plural:1 "Stellar Devourers"
  dimensional_horror:0 "Dimensional Horror"
+ dimensional_horror_cap: "$dimensional_horror$"
  dimensional_horror_plural:0 "Dimensional Horrors"
  automated_dreadnought:0 "Dreadnought"
+ automated_dreadnought_cap: "$automated_dreadnought$"
  automated_dreadnought_plural:0 "Dreadnoughts"
  technosphere:0 "Infinity Machine"
+ technosphere_cap: "$technosphere$"
  technosphere_plural:0 "Infinity Machines"
 
  guardian_hard:0 "Hard Guardian Difficulty"

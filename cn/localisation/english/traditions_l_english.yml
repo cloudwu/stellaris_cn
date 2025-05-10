@@ -17,7 +17,7 @@
  TRADITION_ADOPT_BUTTON:0 "树立"
  TRADITION_SELECT_BUTTON:0 "选择"
  TRADITIONS_ADOPT:1 "§E树立产生的效应§!：\n"
- TRADITIONS_FINISH:3 "§E完成效果§!：\n采纳所有$CATEGORY|Y$传统将获得：\n"
+ TRADITIONS_FINISH:3 "§E完成效果§!：\n树立所有$CATEGORY|Y$传统将获得：\n"
  TRADITIONS_FINISH_AP:2 "$MOD_COUNTRY_ASCENSION_PERKS_ADD$: §G+1§!"
  TRADITION_COST:0 "树立传统的开销"
  TRADITIONS_UNAFFORDABLE:0 "§R我们尚需§Y$RESOURCES$§!以树立此传统。§!"
@@ -309,7 +309,7 @@
  tr_supremacy_great_game_machine_delayed:0 "将导弹瞄准计算机与我们的外交人工智能联网，这是星际关系中最伟大的革新。"
  tr_supremacy_great_game_hive_delayed:0 "从根本上说，我蜂巢之外的一切都是潜在的营养质来源。搞清楚应该先猎取哪个是个愉快的问题。"
 
- tr_supremacy_fleet_logistical_corps:0 "舰队后勤队"
+ tr_supremacy_fleet_logistical_corps:0 "舰队后勤"
  tr_supremacy_fleet_logistical_corps_desc:1 "§Y$mod_ships_upkeep_mult$§!减少§G10%§!，§Y$MOD_COUNTRY_NAVAL_CAP_MULT$§!增加§G20%§!。"
  tr_supremacy_fleet_logistical_corps_delayed:0 "我们的舰队经常部署至浩瀚银河的各个角落，因此需要建立专业的后勤队保障舰队顺利运转。"
  tr_supremacy_fleet_logistical_corps_machine:0 "自动化中途补给"
@@ -989,13 +989,13 @@
  tr_aptitude_adopt:0 "天赋传统"
  tr_aptitude_finish:0 "天赋传统完成"
  tr_aptitude_adopt_desc:0 "领袖起始特质：§G+1§!"
- tr_aptitude_the_empire_needs_you:0 "帝国需要你！"
+ tr_aptitude_the_empire_needs_you:0 "帝国荣耀"
  tr_aptitude_the_empire_needs_you_delayed:0 "许多年轻人的梦想是成为帝国最受尊敬的领袖之一。"
  tr_aptitude_the_empire_needs_you_hive:0 "脱颖而出"
  tr_aptitude_the_empire_needs_you_hive_delayed:0 "培养潜在的领导者对我们的伟大至关重要。"
  tr_aptitude_the_empire_needs_you_machine:0 "脱颖而出"
  tr_aptitude_the_empire_needs_you_machine_delayed:0 "我们能且只能在为帝国产出更具适应性的领袖中取得潜力的最大值。"
- tr_aptitude_specialist_training:0 "专长训练"
+ tr_aptitude_specialist_training:0 "专业特训"
  tr_aptitude_specialist_training_delayed:0 "严格的培训计划可以确保我们的领袖拥有蓬勃发展所必要的各种技能。"
  tr_aptitude_specialist_training_hive:0 "$tr_aptitude_specialist_training$"
  tr_aptitude_specialist_training_hive_delayed:0 "严格的条件可以确保成功培育出[GetGestaltEntityName]的特种成员。"
@@ -1013,7 +1013,7 @@
  tr_aptitude_healthcare_program_hive_delayed:0 "更具价值的特化[GetIndividualNamePlural]应当分配部分维护自身躯体的功能，并允许消耗更高级的养分。"
  tr_aptitude_healthcare_program_machine:0 "预防性维护"
  tr_aptitude_healthcare_program_machine_delayed:0 "通过持续的系统监视，我们可以管理好包括备份频率和高强度维修流程等一切事情，来提升领袖的产出能力。"
- tr_aptitude_champions_of_the_empire:0 "帝国先锋"
+ tr_aptitude_champions_of_the_empire:0 "帝国精锐"
  tr_aptitude_champions_of_the_empire_delayed:0 "我们相信自己的领袖，让他们拥有绝对的权力来影响帝国的运行方式。"
  tr_aptitude_champions_of_the_empire_hive:0 "分钟级自治"
  tr_aptitude_champions_of_the_empire_hive_delayed:0 "[GetGestaltEntityName]愿意向最强的单体们授予分钟级的自治权以惠及整体。"
@@ -1113,7 +1113,7 @@
 
  tr_enmity_rise_to_the_occasion: "迎难而上"
  tr_enmity_rise_to_the_occasion_delayed: "面对越来越多的敌手，我们团结一致。"
- tr_enmity_rise_to_the_occasion_effect: "每个宿敌$mod_country_official_cap_add$：§G+0.50§!\n每个宿敌$mod_country_commander_cap_add$：§G+0.50§!\n每个宿敌$mod_country_scientist_cap_add$：§G+0.50§!"
+ tr_enmity_rise_to_the_occasion_effect: "每个劲敌$mod_country_official_cap_add$：§G+0.50§!\n每个劲敌$mod_country_commander_cap_add$：§G+0.50§!\n每个劲敌$mod_country_scientist_cap_add$：§G+0.50§!"
 
  tr_enmity_consumate_contrarian: "完美反制"
  tr_enmity_consumate_contrarian_delayed: "阻止对手的计划和实施自己的计划一样令人感到畅快。"
@@ -1127,9 +1127,9 @@
 
  tr_enmity_eclipse: "永无天日"
  tr_enmity_eclipse_delayed: "第三，给你的对手蒙上永远的阴影。"
- tr_enmity_eclipse_effect: "在§Y羞辱战争§!中获胜，每有一个§Y宿敌§!将获得§G2%§!额外$r_research$和$r_unity$产出增益，持续§Y10§!年。"
+ tr_enmity_eclipse_effect: "在§Y羞辱战争§!中获胜，每有一个§Y劲敌§!将获得§G2%§!额外$r_research$和$r_unity$产出增益，持续§Y10§!年。"
 
- enmity_humiliate: "[GetName]获得§Y10§!年的§Y重申优越§!修正，使每有一个§Y宿敌§!获得§G2%§!的$r_research$和$r_unity$产出增益。"
+ enmity_humiliate: "[GetName]获得§Y10§!年的§Y重申优越§!修正，使每有一个§Y劲敌§!获得§G2%§!的$r_research$和$r_unity$产出增益。"
  reaffirmed_superiority: "重申优越"
  reaffirmed_superiority_desc: "我们的优越不容置疑，我们的地位至高无上。"
 

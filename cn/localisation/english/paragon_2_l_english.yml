@@ -163,8 +163,8 @@
  OPEN_COUNCIL_VIEW_GESTALT:0 "§G点击打开内阁界面§!"
  COUNCIL_POSITION_FROM_CIVIC:1 "§E内阁席位：\n$t$ $NAME|H$§!"
  COUNCIL_POSITION_TOOLTIP_NAME:0 "§H$NAME$§!"
- COUNCIL_POSITION_MODIFIER_BASE:1 "每§Y技能等级§!的£empire£ §Y帝国§!§E效果§!："
- COUNCIL_POSITION_CURRENT_MODIFIER:0 "当前效果（$NAME$：等级$LEVEL$）："
+ COUNCIL_POSITION_MODIFIER_BASE:1 "§Y技能等级§!每级赋予£empire£ §Y帝国§!§E效应§!："
+ COUNCIL_POSITION_CURRENT_MODIFIER:0 "当前效应（$NAME$：等级$LEVEL$）："
  COUNCIL_POSITION_AVAILABLE_FOR:1 "\n§E可选§!：\n"
  COUNCIL_RULER_POSITION_AVAILABLE_FOR_CLASS:0 "潜在领袖类型："
  COUNCIL_POSITION_AVAILABLE_FOR_CLASS:0 "$t$$CLASS$\n"
@@ -667,9 +667,9 @@
 
  GOTO_LEADER:0 "§H$GOTO$§!§G前往该领袖。§!"
 
- LEADER_UI_DISMISS_ENABLED:0 "遣散§Y$LEADER_NAME$§!"
+ LEADER_UI_DISMISS_ENABLED:0 "解职§Y$LEADER_NAME$§!"
 
- LEADER_BACKGROUND_DESC:0 "§Y[Root.GetName]§!来自[Root.GetHomeWorldBiome]§Y$PLANET$§!，此前[Root.GetSheHe]为§Y$JOB$§!。"
+ LEADER_BACKGROUND_DESC:0 "§Y[Root.GetName]§!出身[Root.GetHomeWorldBiome]§Y$PLANET$§!，[Root.GetHisHer]旧业§Y$JOB$§!。"
 
  LEADER_ETHIC:0 "§H执政道德准则吸引力§!\n$ETHIC|Y$\n这位领袖能提供§H执政道德准则吸引力：\n\n§!$EMPIRE_EFFECTS_TXT$:$TABBED_NEW_LINE$§G$@council_ethic_attraction|%0$§! $ETHIC$ 执政道德准则吸引力\n\n$PLANET_EFFECTS_TXT$:$TABBED_NEW_LINE$§G50%§! $ETHIC$ 执政道德准则吸引力\n\n$SECTOR_EFFECTS_TXT$:$TABBED_NEW_LINE$§G25%§! $ETHIC$ 执政道德准则吸引力"
  ETHIC_A:0 "一位"
@@ -677,16 +677,16 @@
  BACKGROUND_A_CLASS:0 "[Root.Class_A_An] [Root.GetClass]"
  BACKGROUND_AN_ETHIC_CLASS:0 "[Root.Ethic_A_An] [Root.GetBackgroundEthic] [Root.GetClass]"
 
- MESSAGE_NEGATIVE_TRAIT_TITLE:0 "新负面特质"
- negative_trait_acquired_desc:0 "§Y$LEADER$§!得到了一个负面特质。"
- MESSAGE_GAINED_TRAIT_TITLE:0 "新特质"
+ MESSAGE_NEGATIVE_TRAIT_TITLE:0 "新增负面特质"
+ negative_trait_acquired_desc:0 "§Y$LEADER$§!获得一个负面特质。"
+ MESSAGE_GAINED_TRAIT_TITLE:0 "新增特质"
 
- MESSAGE_GAINED_TRAIT_DESC:0 "$NAME|Y$得到了$TRAIT_NAME|H$特质。"
+ MESSAGE_GAINED_TRAIT_DESC:0 "$NAME|Y$获得$TRAIT_NAME|H$特质。"
  MESSAGE_GAINED_SUBCLASS_TITLE:0 "新老练领袖"
  MESSAGE_GAINED_SUBCLASS_DESC:0 "$NAME|Y$现在已是一位§v老手§!"
 
- message_tradition_effect_title:0 "传统效果"
- MESSAGE_TRADITION_EFFECT_ACTIVATED:0 "传统效果已激活"
+ message_tradition_effect_title:0 "传统效应"
+ MESSAGE_TRADITION_EFFECT_ACTIVATED:0 "传统效应已激活"
  message_tradition_effect_amongst_peers_effect_desc:0 "§Y$tr_statecraft_amongst_peers$§!§H传统§!已激活\n"
 
  MESSAGE_SALVAGED_SHIPS_FROM_DEBRIS_TITLE:0 "舰船已打捞"
@@ -873,7 +873,7 @@
  leader_trait_cartographer_desc:1 "这位领袖是地质测绘的专家，可以提升我们环境改造的效率。"
  leader_trait_cartographer_2:0 "$leader_trait_cartographer$ II"
  leader_trait_cartographer_2_desc:0 "$leader_trait_cartographer_desc$"
- leader_trait_enlister:0 "征募者"
+ leader_trait_enlister:0 "一呼百应"
  leader_trait_enlister_desc:1 "这位领袖是征兵宣传大师，知道如何让新鲜血液迅速有效地流入部队中。"
  leader_trait_enlister_2:0 "$leader_trait_enlister$ II"
  leader_trait_enlister_2_desc:0 "$leader_trait_enlister_desc$"
@@ -1662,7 +1662,7 @@
 
  # Fake Background Jobs
  job_none:0 "无"
- job_none_plural: ""
+ job_none_plural: "无"
  job_none_desc:0 ""
  job_captain:0 "舰长"
  job_captain_plural: ""
@@ -1696,3 +1696,4 @@
  job_government_employee:0 "政府官员"
  job_government_employee_plural: ""
  job_government_employee_desc:0 ""
+ job_:0 "无"

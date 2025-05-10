@@ -28,7 +28,7 @@
  requires_megacorp: "$dlc_requirement_string$ §I巨型企业§!"
  requires_dis_stars: "$dlc_requirement_string$ §Y遥远繁星故事包§!"
 
- tt_gain: "\n\n获取方式：\n"
+ tt_gain: "\n\n提升途径：\n"
  tt_use: "\n\n用途：\n"
  tt_market: "在£market£['concept_market']上购买。"
  tt_no_need_hive: "§R$auth_hive_mind_plural$不使用该资源。§!"
@@ -55,7 +55,7 @@
  # Singular: £trade_value£ ['concept_trade'] or §H$concept_trade$§!
  # Plural: -
  concept_trade: "贸易"
- concept_trade_desc: "$r_trade$代表['concept_empire']境内的日常经济活动、贸易流动和后勤能力。\n\n可以用于['concept_ship_upkeep']、['concept_colony_upkeep']以及购买其他资源。$tt_gain$—建造能提供$r_trade$产出的£job£['concept_jobs']的£building£['concept_buildings']。\n—在星际贸易额贮藏上建造£mining_station£['concept_mining_stations']\n—在£market£['concept_market']售卖资源"
+ concept_trade_desc: "$r_trade$代表['concept_empire']境内的日常经济活动、贸易流动和后勤能力。\n\n可以用于['concept_ship_upkeep']、['concept_colony_upkeep']以及购买其他资源。$tt_gain$—创建能提供$r_trade$产出的£job£['concept_jobs']的£building£['concept_buildings']。\n—在星际贸易额贮藏上建造£mining_station£['concept_mining_stations']\n—在£market£['concept_market']售卖资源"
 
  # Singular: £building£ ['concept_building'] or £building£ §H$concept_building$§!
  # Plural: £building£ ['concept_buildings'] or £building£ §H$concept_buildings$§!
@@ -117,7 +117,7 @@
  # Plural: £district£ ['concept_districts'] or £district£ §H$concept_districts$§!
  concept_district: "$DISTRICT$"
  concept_districts: "$DISTRICTS$"
- concept_district_desc: "£district£§H$concept_districts$§!是£colony£['concept_colony']中的特化区域。例如['concept_generator_districts']、['concept_mining_districts']还有['concept_farming_districts']等等。\n\n通常用于提供£housing£['concept_housing']和£job£['concept_jobs']。$tt_gain$—在£interface£['concept_colony_view']建造更多§H$concept_districts$§!"
+ concept_district_desc: "£district£§H$concept_districts$§!是£colony£['concept_colony']中的专业化区划。例如['concept_generator_districts']、['concept_mining_districts']还有['concept_farming_districts']等等。\n\n通常用于提供£housing£['concept_housing']和£job£['concept_jobs']。$tt_gain$—在£interface£['concept_colony_view']建造更多§H$concept_districts$§!"
 
  # Singular: ['concept_edict'] or §H$concept_edict$§!
  # Plural: ['concept_edicts'] or §H$concept_edicts$§!
@@ -133,7 +133,7 @@
  # Singular: -
  # Plural: £energy£ ['concept_energy'] or £energy£ §H$concept_energy$§!
  concept_energy: "能量币"
- concept_energy_desc: "£energy£§H能量币§!是可传输能量的存储单元，对所有太空['concept_empires']都至关重要。\n\n它可以用于['concept_ships']和['concept_buildings']的维护费、清理行星£blocker£['concept_blockers']以及与其他帝国交易。$tt_gain$—建造£district£['concept_generator_districts']\n—在蕴含能源的['concept_celestial_objects']上建造£mining_station£['concept_mining_stations']。\n—$tt_market$。"
+ concept_energy_desc: "£energy£§H能量币§!是可转移能量的存储单元，对所有太空['concept_empires']都至关重要。\n\n它可以用于['concept_ships']和['concept_buildings']的维护费、清理行星£blocker£['concept_blockers']以及与其他帝国交易。$tt_gain$—建造£district£['concept_generator_districts']\n—在蕴含能源的['concept_celestial_objects']上建造£mining_station£['concept_mining_stations']。\n—$tt_market$。"
 
  # Singular: ['concept_authority'] or §H$concept_authority$§!
  # Plural: ['concept_authorities'] or §H$concept_authorities$§!
@@ -231,12 +231,12 @@
  # Plural: £job£ ['concept_jobs'] or §H$concept_jobs$§!
  concept_job: "岗位"
  concept_jobs: "岗位"
- concept_job_desc: "£job£§H$concept_jobs$§!代表£pop£['concept_pops']在帝国内所从事的职能和专业，决定了资源产出、研究输出e社会功能。岗位由£district£['concept_districts']、£building£['concept_buildings']及其他行星特征提供，各种类型的岗位可以满足不同的经济、科研或军事需求。\n\n§H$concept_jobs$§!的分配直接影响着经济的稳定性、政治动向以及帝国的整体效能。\n\n§H$concept_jobs$§!可以在£interface£['concept_colony_view']进行管理。"
+ concept_job_desc: "£job£§H$concept_jobs$§!代表£pop£['concept_pops']在帝国内所从事的职能和专业，决定了资源产出、研究输出e社会功能。岗位由£district£['concept_districts']、£building£['concept_buildings']及其他行星地貌提供，各种类型的岗位可以满足不同的经济、科研或军事需求。\n\n§H$concept_jobs$§!的分配直接影响着经济的稳定性、政治动向以及帝国的整体效能。\n\n§H$concept_jobs$§!可以在£interface£['concept_colony_view']进行管理。"
 
  # Singular: £job£ ['concept_job'] or §H$concept_job$§!
  # -
  concept_unemployment: "失业"
- concept_unemployment_desc: "£pop£ §H失业人口§!缺少可以做的£job£ ['concept_job']。他们不但不产生资源，还会降低这个£colony£ ['concept_colony']的£stability£ ['concept_stability']。"
+ concept_unemployment_desc: "£pop£ §H失业人口§!缺少可以工作的£job£ ['concept_job']。他们不但不产生资源，还会降低这个£colony£ ['concept_colony']的£stability£ ['concept_stability']。"
 
  # Singular: ['concept_l_gate'] or §H$concept_l_gate$§!
  # Plural: ['concept_l_gates'] or §H$concept_l_gates$§!
@@ -270,10 +270,10 @@
  # Plural: £minerals£ ['concept_minerals'] or £minerals£ §H$concept_minerals$§!
  concept_minerals: "矿物"
  concept_minerals_desc: "[GetConceptMinerals]"
- concept_minerals_desc_start: "£minerals£§H矿物§!涵盖各式用于建造的基础资源。\n\n通常用于建造行星£building£['concept_buildings']和民用£mining_station££science_ship£['concept_civilian_space_stations']，此外还可以精炼成为£alloys£['concept_alloys']。"
+ concept_minerals_desc_start: "£minerals£§H矿物§!涵盖各式用于建造的基础资源。\n\n通常用于建造行星表面的£building£['concept_buildings'] 以及 £mining_station£ §H$concept_mining_station$§ £science_ship£ ['concept_civilian_space_stations']。此外还可以将其精炼成£alloys£['concept_alloys']"
  concept_minerals_desc_end: "$tt_gain$—建造£district£['concept_mining_districts']。\n—在蕴含矿物的['concept_celestial_objects']上建造£mining_station£['concept_mining_stations']。\n—$tt_market$"
  concept_minerals_desc_regular: "$concept_minerals_desc_start$或£consumer_goods£['concept_consumer_goods']。$concept_minerals_desc_end$"
- concept_minerals_desc_hive: "$concept_minerals_desc_start$.$concept_minerals_desc_end$"
+ concept_minerals_desc_hive: "$concept_minerals_desc_start$。$concept_minerals_desc_end$"
 
  # Singular: £mining_station£ ['concept_mining_station'] or £mining_station£ §H$concept_mining_station$§!
  # Plural: £mining_station£ ['concept_mining_stations'] or £mining_station£ §H$concept_mining_stations$§!
@@ -463,9 +463,9 @@
 
  # Singular: ['concept_claim'] or §H$concept_claim$§!
  # Plural: ['concept_claims'] or §H$concept_claims$§!
- concept_claim: "宣称"
- concept_claims: "宣称"
- concept_claim_desc: "§H$concept_claims$§!代表对外国控制的星系的领土主张。宣称主要用于为征服['concept_wars']寻求正当性，允许帝国在胜利时夺取争议星系。\n\n宣称通过支出£influence£['concept_influence']设置，花费多少根据星系距离、战略价值和现有其他帝国的§H$concept_claims$§!而增加。在进攻性战争的过程中宣称领土的花费更高，所以精明的帝国会提前宣称。\n\n宣称可以在£interface£['concept_claims_view']进行管理。"
+ concept_claim: "领土主张"
+ concept_claims: "领土主张"
+ concept_claim_desc: "§H$concept_claims$§!代表对外国所控星系的领土主张。领土主张主要为征服['concept_wars']寻求正当性，允许帝国在胜利时夺取争议星系。\n\n领土主张通过支出£influence£['concept_influence']设立，其开销受星系距离、战略价值和现有其他帝国的§H$concept_claims$§!之影响而增加。在进攻性战争的过程中作领土主张的开销更高，所以精明的帝国会作提前宣称。\n\n领土主张可以在£interface£['concept_claims_view']进行管理。"
 
  # Singular: ['concept_research_agreement'] or §H$concept_research_agreement$§!
  # Plural: ['concept_research_agreements'] or §H$concept_research_agreements$§!
@@ -492,7 +492,7 @@
  # Singular: £empire_sprawl£ ['concept_empire_size'] or £empire_sprawl£ §H$concept_empire_size$§!
  # Plural: -
  concept_empire_size: "帝国规模"
- concept_empire_size_desc: "£empire_sprawl£§H$concept_empire_size$§!是对国土宽广程度的度量，具体包含所控制的£district£['concept_districts']、£system£['concept_systems']、£colony£['concept_colonies']和£pop£['concept_pops']等形式。\n\n高§H$concept_empire_size$§!对行政能力造成负担，并且会增加['concept_technologies']、['concept_traditions']和['concept_edicts']的花费。\n\n['concept_empire']也会因此更容易受到谍报活动的渗透。"
+ concept_empire_size_desc: "£empire_sprawl£§H$concept_empire_size$§!是对国土宽广程度的度量，具体受所控制的£district£['concept_districts']、£system£['concept_systems']、£colony£['concept_colonies']和£pop£['concept_pops']等因素影响。\n\n§H$concept_empire_size$§!过高会对行政能力造成负担，并且会增加['concept_technologies']、['concept_traditions']和['concept_edicts']的开销。\n\n['concept_empire']也会因此更容易受到谍报活动的渗透。"
 
  # Singular: £unity£ ['concept_unity'] or £unity£ §H$concept_unity$§!
  # Plural: -
@@ -501,7 +501,7 @@
  concept_unity_desc_regular: "£unity£§H$concept_unity$§!反映了社会整体的决心和意识形态的强韧程度。它将凝聚民心的共同目标具现化，对社会团体和政府起指导作用。$concept_unity_desc_end$\n—提升['concept_factions']的['concept_approval']和['concept_support']\n—采纳['tradition_category:tradition_mercantile']传统['tradition:tr_mercantile_adaptive_economic_policies']及改变['concept_policy', $policy_trade_policy$]"
  concept_unity_desc_hive: "£unity£§H$concept_unity$§!反映['authority:auth_hive_mind']的决心和专一目标。它具现化引导蜂巢的集体意志，指挥遥远的节点和子个体。$concept_unity_desc_end$"
  concept_unity_desc_machine: "£unity£§H$concept_unity$§!反映了['authority:auth_machine_intelligence']的决心和处理一致性。它将引导机械的计算目标具现化，对遥远的节点和无人机起指导作用。$concept_unity_desc_end$"
- concept_unity_desc_end: "\n\n对内部事务极为重要，例如可以解锁新['concept_traditions']、招募['concept_leaders']、飞升£colony£['concept_colonies']、颁布['concept_edicts']以及管理['concept_resettlement']。$tt_gain$—建造能提供产出§H$concept_unity$§!£job£['concept_jobs']的£building£['concept_buildings']。"
+ concept_unity_desc_end: "\n\n其对内部事务极为重要，例如可以解锁新['concept_traditions']、招募['concept_leaders']、飞升£colony£['concept_colonies']、颁布['concept_edicts']以及管理['concept_resettlement']。$tt_gain$—建造能提供产出§H$concept_unity$§!£job£['concept_jobs']的£building£['concept_buildings']。"
 
  # Singular: ['concept_leader'] or §H$concept_leader$§!
  # Plural: ['concept_leaders'] or §H$concept_leaders$§!
@@ -583,7 +583,7 @@
  # Plural: ['concept_envoys'] or §H$concept_envoys$§!
  concept_envoy: "特使"
  concept_envoys: "特使"
- concept_envoy_desc: "§H特使§!负责与未知外星人的['concept_first_contact']、管理间谍网络，以及与其他['concept_empires']的['concept_diplomacy']活动。$tt_gain$—建造§H星际集会§!£megastructure£['concept_megastructure']\n—利用特定的£building£['concept_buildings']、['concept_leader_traits']、以及['concept_civics']\n—解锁['concept_federation']增益§H$extra_envoy_1$§!"
+ concept_envoy_desc: "§H特使§!负责与未知外星人的['concept_first_contact']、管理间谍网络，以及与其他['concept_empires']的['concept_diplomacy']活动。$tt_gain$—建造§H星际集会§!£megastructure£['concept_megastructure']\n—通过特定的£building£['concept_buildings']、['concept_leader_traits']、以及['concept_civics']\n—解锁['concept_federation']增益§H$extra_envoy_1$§!"
 
  # Singular: ['concept_civic'] or §H$concept_civic$§!
  # Plural: ['concept_civics'] or §H$concept_civics$§!
@@ -594,7 +594,7 @@
  # Singular: ['concept_starbase_capacity'] or §H$concept_starbase_capacity$§!
  # Plural: -
  concept_starbase_capacity: "太空基地容量"
- concept_starbase_capacity_desc: "§H$concept_starbase_capacity$§!显示能有效支持升级的['concept_starbases']数量，['concept_outposts']不计入。\n\n超出§H$concept_starbase_capacity$§!将提升['concept_starbase_upkeep']。$tt_gain$—掌控更多['concept_owned_systems']。\n—利用特定的['concept_technologies']和['concept_traditions']。"
+ concept_starbase_capacity_desc: "§H$concept_starbase_capacity$§!指可以高效支持几处升级版['concept_starbases']（不计['concept_outposts']）。\n\n超出§H$concept_starbase_capacity$§!会导致['concept_starbase_upkeep']上升。$tt_gain$—掌控更多['concept_owned_systems']。\n—通过特定的['concept_technologies']和['concept_traditions']。"
 
  # Singular: ['concept_starbase_upkeep'] or §H$concept_starbase_upkeep$§!
  # Plural: -
@@ -603,14 +603,14 @@
 
  # Singular: ['concept_owned_system'] or §H$concept_owned_system$§!
  # Plural: ['concept_owned_systems'] or §H$concept_owned_systems$§!
- concept_owned_system: "拥有星系"
- concept_owned_systems: "拥有星系"
- concept_owned_system_desc: "§H$concept_owned_systems$§!是完全由一个帝国掌控的£system£['concept_systems']，无论是直接扩张或是征服而来。拥有所有权后，帝国即可在其中建设['concept_starbases']、提取资源、设立£colony£['concept_colonies']。\n\n维持星系的掌控会增加帝国的£empire_sprawl£['concept_empire_size']，以招商的星系则会影响行政效率和官僚花费。"
+ concept_owned_system: "实控星系"
+ concept_owned_systems: "实控星系"
+ concept_owned_system_desc: "§H$concept_owned_systems$§!是完全由一个帝国掌控的£system£['concept_systems']，无论是直接扩张或是征服而来。获得所有权后，帝国即可在其中建设['concept_starbases']、提取资源、设立£colony£['concept_colonies']。\n\n维持星系的掌控会增加帝国的£empire_sprawl£['concept_empire_size']，拥有的星系数量会影响行政效率和官僚开销。"
 
  # Singular: ['concept_naval_capacity'] or §H$concept_naval_capacity$§!
  # Plural: -
  concept_naval_capacity: "军舰容量"
- concept_naval_capacity_desc: "§H$concept_naval_capacity$§!表示可以有效支援的['concept_fleet_size']的总和。\n\n超出§H$concept_naval_capacity$§!将提升['concept_ship_upkeep']。$tt_gain$—在['concept_starbases']建造§H锚地§!模块\n—利用特定£job£['concept_jobs']，例如£building£['building:building_stronghold']所提供的\n—利用特定['concept_technologies']和['concept_traditions']"
+ concept_naval_capacity_desc: "§H$concept_naval_capacity$§!表示可以高效支持的['concept_fleet_size']的总和。\n\n超出§H$concept_naval_capacity$§!['concept_ship_upkeep']将上升。$tt_gain$—在['concept_starbases']建造§H锚地§!模块\n—通过特定£job£['concept_jobs']，例如£building£['building:building_stronghold']提升\n—通过特定['concept_technologies']和['concept_traditions']"
 
  # Singular: ['concept_governor'] or §H$concept_governor$§!
  # Plural: ['concept_governors'] or §H$concept_governors$§!
@@ -722,7 +722,7 @@
 
  # Singular: £crime£ ['concept_crime'] or £crime£ §H$concept_crime$§!
  # Plural: -
- concept_crime: "犯罪度"
+ concept_crime: "犯罪率"
  concept_crime_desc: "£crime£§H$concept_crime$§!反映£colony£['concept_colony']上的犯罪活动水平和无序程度。\n\n高§H$concept_crime$§!可能触发负面事件并降低£stability£['concept_stability']。\n\n人口数量多将影响§H$concept_crime$§!。可以通过提高£happiness£['concept_happiness']或将£pop£['concept_pops']指派到例如£job_enforcer£§H$job_enforcer_plural$§!等£job£['concept_jobs']上来降低。"
 
  # Singular: £happiness£ ['concept_happiness'] or £happiness£ §H$concept_happiness$§!
@@ -754,7 +754,7 @@
  # Plural: £blocker£ ['concept_blockers'] or £blocker£ §H$concept_blockers$§!
  concept_blocker: "地块障碍"
  concept_blockers: "地块障碍"
- concept_blocker_desc: "£blocker£§H$concept_blocker$§!是£colony£['concept_colony']上一种阻碍其他行星特征或特定£district£['concept_districts']建设的行星特征。\n\n有些§H$concept_blockers$§!可以通过花费资源进行清理，并且通常需要特定['concept_technologies']。可以在£interface£['concept_colony_view']进行管理。"
+ concept_blocker_desc: "£blocker£§H$concept_blocker$§!是£colony£['concept_colony']上一种阻碍其他行星地貌或特定£district£['concept_districts']建设的行星地貌。\n\n有些§H$concept_blockers$§!可以通过花费资源进行清理，并且通常需要特定['concept_technologies']。可以在£interface£['concept_colony_view']进行管理。"
 
  # Singular: ['concept_event_chain'] or §H$concept_event_chain$§!
  # Plural: ['concept_event_chains'] or §H$concept_event_chains$§!
@@ -858,7 +858,7 @@
  # Singular: £research£ ['concept_research'] or £research£ §H$concept_research$§!
  # Plural: -
  concept_research: "研究"
- concept_research_desc: "£research£§H$concept_research$§!是获取三个基干领域科学知识的过程，它们是：£physics£['concept_physics_research']、£society£['concept_society_research']以及£engineering£['concept_engineering_research']。每个领域是独立发展的，都会产生新的['concept_technologies']。\n\n研究速度可能受到国内因素、['concept_leader_traits']或诸如['concept_diplomatic_pacts', $concept_research_agreements$]等外部因素影响。"
+ concept_research_desc: "£research£§H$concept_research$§!是获取三个基础领域科学知识的过程，它们是：£physics£['concept_physics_research']、£society£['concept_society_research']以及£engineering£['concept_engineering_research']。每个领域是独立发展的，都会产生新的['concept_technologies']。\n\n研究速度可能受到国家状况、['concept_leader_traits']或诸如['concept_diplomatic_pacts', $concept_research_agreements$]等外部因素影响。"
  concept_research_tooltip: "$concept_research_desc$\n\n§G点击['concept_research']打开数据库§!\n点击菜单中的£research£展开列表"
 
  # Singular 1: ['concept_modifier'] or §H$concept_modifier$§!
@@ -979,5 +979,5 @@
  # Singular: -
 # Plural: £strategic_resource£ ['concept_strategic_resources'] or £strategic_resource£ §H$concept_strategic_resources$§!
  concept_strategic_resources: "战略资源"
- concept_strategic_resources_desc: "£strategic_resource£§H$concept_strategic_resources$§!是稀有且效果拔群的物质，对先进技术、基础设施和星舰系统至关重要。\n\n典型的战略资源包括£sr_volatile_motes£§H$volatile_motes$§!、£sr_exotic_gases£§H$exotic_gases$§!以及£rare_crystals£§H$rare_crystals$§!。\n\n§H稀有资源§!是价值更高或其特性更为捉摸不定的特殊物质，具有极其先进的用途。除其他用途外，稀有与战略资源可用于建造['concept_civilian_ships']、['concept_military_ships']、['concept_starbases']及['concept_megastructures']。\n$tt_gain$—建造£zone£ §H$zone_industrial_plural$§!或£zone£ §H$zone_foundry_plural$§!\n—建造相关建筑\n—$tt_market$"
+ concept_strategic_resources_desc: "£strategic_resource£§H$concept_strategic_resources$§!是稀有且效果拔群的物质，对先进技术、基础设施和星舰系统至关重要。\n\n典型的战略资源包括£volatile_motes£§H$volatile_motes$§!、£exotic_gases£§H$exotic_gases$§!以及£rare_crystals£§H$rare_crystals$§!。\n\n§H稀有资源§!是价值更高、特性更为捉摸不定的特殊物质，具有极其先进的用途。除其他用途外，稀有资源与战略资源可用于建造['concept_civilian_ships']、['concept_military_ships']、['concept_starbases']及['concept_megastructures']。\n$tt_gain$—建造£zone£ §H$zone_industrial_plural$§!或£zone£ §H$zone_foundry_plural$§!\n—建造相关建筑\n—$tt_market$"
  concept_strategic_resources_tooltip: "$concept_strategic_resources_desc$\n\n§G点击['concept_strategic_resources']打开数据库§!\n点击菜单中的£strategic_resource£展开列表"

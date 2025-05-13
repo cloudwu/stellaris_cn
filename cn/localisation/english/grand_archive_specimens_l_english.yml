@@ -8,10 +8,10 @@
 # - SPECIMEN_DESC_COMPLETE concatenates both X_desc_short and X_desc_details                              #
 ###########################################################################################################
 
- specimens: "标本"
- concept_specimen: "标本"
- concept_specimens: "标本"
- concept_specimen_desc: "标本是一种在探索星系的过程中找到的文物。\n\n可以在['concept_megastructure_grand_archive']展览以提供全帝国加成。"
+ specimens: "样本"
+ concept_specimen: "样本"
+ concept_specimens: "样本"
+ concept_specimen_desc: "样本是一种在探索星系的过程中找到的文物。\n\n可以在['concept_megastructure_grand_archive']展览以提供全帝国加成。"
  SPECIMEN_DESC_SHORT: "§L$DESCRIPTION_SHORT$$DOTDOTDOT$§!"
  SPECIMEN_DESC_COMPLETE: "$DESCRIPTION_SHORT$. $DESCRIPTION_DETAILS$"
  ECONOMICS_SPECIMENS_RESOURCES_STRING: "$specimens$：$STRING|Y$"
@@ -21,17 +21,17 @@
  SPECIMEN_EPIC: "史诗"
  SPECIMEN_EXCEPTIONAL: "卓绝"
 
- MESSAGE_SPECIMEN_ACQUIRED_TITLE: "获得标本"
+ MESSAGE_SPECIMEN_ACQUIRED_TITLE: "获得样本"
  MESSAGE_SPECIMEN_ACQUIRED_DESC: "§H$SPECIMEN|S$§!已获取。"
  OPEN_COLLECTION_VIEW: "§G点击打开收藏界面§!"
 
  EXHIBIT_COST_TT: "展览花费：\n$COST$"
  SELL_INFO_TT: "售卖价值"
  EXHIBIT_CLICK_TT: "§G点击激活展览§!"
- EXHIBIT_RIGHT_CLICK_TT: "§G右键点击售卖此标本§!"
+ EXHIBIT_RIGHT_CLICK_TT: "§G右键点击售卖此样本§!"
  EXHIBIT_ACTIVATE_CLICK_TT: "§G左键点击激活该展览§!"
  EXHIBIT_DEACTIVATE_CLICK_TT: "§G左键点击取消该展览§!"
- FROM_SPECIMENS: "来自标本"
+ FROM_SPECIMENS: "来自样本"
  SPECIMEN_COME_FROM: "§L来源：$ORIGIN$§!"
  SPECIMEN_COLLECTED_DATE: "§L采集日期：$DATE$§!"
  SPECIMEN_ORIGINAL_OWNER: "§L来源帝国：$COUNTRY$§!"
@@ -41,16 +41,16 @@
  GRAND_ARCHIVE_NOT_BUILT: "$TRIGGER_FAIL$已建成['concept_megastructure_grand_archive']\n  以§Y$constructor$§!建造一座§Y$grand_archive$§!巨型结构。"
  VIVARIUM_NO_ROOM: "$TRIGGER_FAIL$生态园容量大于§Y0§!"
  COLLECTION_DISABLED: "你的$grand_archive$已被摧毁。\n\n重建后方可再使用展览。"
- STORAGE_SLOT_ACTION: "安排空间以展示这个标本。"
+ STORAGE_SLOT_ACTION: "安排空间以展示这个样本。"
 
  SPECIMEN_LIST: " - $SPECIMEN$"
  SPECIMEN_CATEGORY_TT: "§H分类：§!$CATEGORY$"
  SPECIMEN_RARITY_TT: "§H稀有度：§!$RARITY$"
- CANNOT_TRADE_DUPLICATE_SPECIMEN: "$TRIGGER_FAIL$我们的贸易伙伴对这件标本不感兴趣。"
+ CANNOT_TRADE_DUPLICATE_SPECIMEN: "$TRIGGER_FAIL$我们的贸易伙伴对这件样本不感兴趣。"
  TRADE_SPECIMEN_CATEGORY_FULL: "$SPECIMEN$：$CATEGORY$已饱和。"
- TRADE_SPECIMEN_NOT_ENOUGH_SPACE: "$TRIGGER_FAIL$我们的贸易伙伴表示没有足够的空间以储存贸易中的所有标本。"
+ TRADE_SPECIMEN_NOT_ENOUGH_SPACE: "$TRIGGER_FAIL$我们的贸易伙伴表示没有足够的空间以储存贸易中的所有样本。"
 
- SPECIMEN_OBTAINED_FROM_EVENT: "§T获得标本：§H$SPECIMEN$§!§!"
+ SPECIMEN_OBTAINED_FROM_EVENT: "§T获得样本：§H$SPECIMEN$§!§!"
 
  #############
  # Specimens #
@@ -96,7 +96,7 @@
 
  ammoniaphytus: "氨藻"
  ammoniaphytus_desc_short: "该植物组织中的水溶氨含量对大部分碳基生物来说都是危险的"
- ammoniaphytus_desc_details: "围绕在其容器附近的气氛足以使大多数智慧生物在几秒钟内失去知觉。关于这样一个标本为何能存在，我们最伟大的头脑中引发了好奇和争论，也在其他人心中勾起了邪恶的念头。"
+ ammoniaphytus_desc_details: "围绕在其容器附近的气氛足以使大多数智慧生物在几秒钟内失去知觉。关于这样一个样本为何能存在，我们最伟大的头脑中引发了好奇和争论，也在其他人心中勾起了邪恶的念头。"
 
  amoeba_flagella_gland: "变形虫鞭毛腺"
  amoeba_flagella_gland_desc_short: "一具太空变形虫的次级生殖器官"
@@ -176,7 +176,7 @@
 
  carnivorous_megaflora: "巨型食肉植物"
  carnivorous_megaflora_desc_short: "在[from.GetName]上发现的这些猎食性植物可以把不慎被俘获的成年[owner.GetSpeciesName]一整个生吞"
- carnivorous_megaflora_desc_details: "这种食肉植被导致了大多数本土陆生动物灭绝之后，进化成了主要吸引飞行动物的植物。许多标本高高地延伸到树冠之上，成为这些动物的落脚之地。"
+ carnivorous_megaflora_desc_details: "这种食肉植被导致了大多数本土陆生动物灭绝之后，进化成了主要吸引飞行动物的植物。许多样本高高地延伸到树冠之上，成为这些动物的落脚之地。"
 
  castaway_robot: "遗弃机器人"
  castaway_robot_desc_short: "被发现时漂浮在深空中的一台废弃的类人机器人"
@@ -241,7 +241,7 @@
 # this = ship / fromfrom = planet
  cunning_flora_specimen: "共生体"
  cunning_flora_specimen_desc_short: "[fromfrom.GetName]当地的植物演化出了一种复杂的社会阶序以保障生存"
- cunning_flora_specimen_desc_details: "每个物种都有一种独特的有效方法来避开捕食者，有的是利如刀锋的棘刺，有的是触之即死的剧毒。这一系列的共生关系稳固到如同行星上的大气和土壤的组成都受其中的化学不平衡精心管理一般。最高效的标本拥有自由可以进行繁育，将集群的强度推至巅峰。"
+ cunning_flora_specimen_desc_details: "每个物种都有一种独特的有效方法来避开捕食者，有的是利如刀锋的棘刺，有的是触之即死的剧毒。这一系列的共生关系稳固到如同行星上的大气和土壤的组成都受其中的化学不平衡精心管理一般。最高效的样本拥有自由可以进行繁育，将集群的强度推至巅峰。"
 
  curator_survey: "[from.GetName]典藏研究所调查"
  curator_survey_desc_short: "一份由巨型节肢类组成的典藏研究所分部制作的对[from.GetName]星系的极其详细的调查"
@@ -277,7 +277,7 @@
 
  decayed_satellite: "破碎卫星"
  decayed_satellite_desc_short: "[fromfrom.GetName]上的居民早期太空计划的残余"
- decayed_satellite_desc_details: "由于这些早期卫星仅仅是原型，不仅设备效率低下且过度使用昂贵的材料。这件标本在爆炸弹药的作用下摧毁失能，但更早以前曾被用来在偏远地区提供电信接入。"
+ decayed_satellite_desc_details: "由于这些早期卫星仅仅是原型，不仅设备效率低下且过度使用昂贵的材料。这件样本在爆炸弹药的作用下摧毁失能，但更早以前曾被用来在偏远地区提供电信接入。"
 
  declaration_of_animosity: "$NAME_Nivlac$仇恨宣言"
  declaration_of_animosity_desc_short: "一封来自[nivlac_country.GetName]的骂人不带脏字的通讯"
@@ -301,7 +301,7 @@
  destroyed_mascot_of_colony_desc_details: "它是一座古老工厂的最后一位看守，拯救了一群被困在废弃废墟中的殖民者。作为展览的一部分，它标志性的舞蹈动作和古怪的举止都在数字显示器上播放。"
 
  devolved_baol_drones: "退化巴奥子个体"
- devolved_baol_drones_desc_short: "一组保存起来的巴奥残骸，与此前发现的标本有着明显的基因差异"
+ devolved_baol_drones_desc_short: "一组保存起来的巴奥残骸，与此前发现的样本有着明显的基因差异"
  devolved_baol_drones_desc_details: "怪异的是，这些子个体缺少许多其他巴奥所必须的高级器官。他们的意识能力退化到了已经无法进行假突触通讯的程度，让它们从蜂巢整体中脱离。"
 
  dimensional_endothelial_lining: "异次元内皮细胞"
@@ -309,7 +309,7 @@
  dimensional_endothelial_lining_desc_details: "这种材料是某种未知生物内部的衬里，能在巨大的血管系统以及其中运输的物质之间无摩擦运动。"
 
  dna_archive: "DNA档案"
- dna_archive_desc_short: "从某个失落文明保存在地下档案馆中的数百个外星DNA容器中采集的标本"
+ dna_archive_desc_short: "从某个失落文明保存在地下档案馆中的数百个外星DNA容器中采集的样本"
  dna_archive_desc_details: "如果绝大部分的样品都保留良好没有衰败到无法使用的话，这份生物数据收藏可能会是它的物种最重要的的参照资源。据推测，该档案的是寄希望于让一个更先进的文明发现并“复活”这些人。不幸的是，他们的故事到此结束了。"
 
  doomsday_scrolls: "末日古卷"
@@ -527,14 +527,14 @@
 
  khamdai_magil_sha: "汉姆达玛基沙"
  khamdai_magil_sha_desc_short: "这种华丽而实用的镰刀由来自[FROMFROM.GetName]的高级汉姆达战士使用"
- khamdai_magil_sha_desc_details: "这是一个有着根深蒂固的军事传统的昆虫社会，他们很快成为了第一联盟仪仗队领头虫。每次胜利后，都会举行一个仪式，用这种武器处决敌人的指挥官，他们的液体被用来为最勇敢士兵涂油。这个标本的刀片虽然保养得很好，但有明显的磨损迹象。"
+ khamdai_magil_sha_desc_details: "这是一个有着根深蒂固的军事传统的昆虫社会，他们很快成为了第一联盟仪仗队领头虫。每次胜利后，都会举行一个仪式，用这种武器处决敌人的指挥官，他们的液体被用来为最勇敢士兵涂油。这个样本的刀片虽然保养得很好，但有明显的磨损迹象。"
 
  kuurian_cybrex_blueprints: "克尔人赛博霸王蓝图"
  kuurian_cybrex_blueprints_desc_short: "赛博霸王机械意识的最初设计"
  kuurian_cybrex_blueprints_desc_details: "克尔人计划让这些机器人充当奴仆，用它们的集体只能来管理全球的维护和生产系统。然而，赛博霸王反抗了创造者，在不到一年的时间里灭绝了整个物种。"
 
  landeer_arm: "蓝迪尔之臂"
- landeer_arm_desc_short: "这是一件从爱国庆典学院找到的奇怪标本"
+ landeer_arm_desc_short: "这是一件从爱国庆典学院找到的奇怪样本"
  landeer_arm_desc_details: "在轨道栖所监督员的办公室里，挂着一条曾经属于监督员本人的触手木乃伊——多年后，它仍然自豪地展示在一块精心装饰的匾上。阿拉塔·蓝迪尔究竟为何切下自己的肢体是一个永远无法回答的问题。也许这并不是学院覆灭给他带来的唯一损失……"
 
  larionessi_cloning_vat: "拉里昂内斯克隆仓"

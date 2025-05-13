@@ -255,7 +255,7 @@
  MOD_SHIP_CAPTURE_AMOUNT_ADD: "兽群捕获数量"
  MOD_COUNTRY_CAPTURE_AMOUNT_ADD: "$MOD_SHIP_CAPTURE_AMOUNT_ADD$"
  MOD_COUNTRY_CAPTURE_AMOUNT_MULT: "$MOD_SHIP_CAPTURE_AMOUNT_ADD$"
- MOD_COUNTRY_SPECIMEN_SELLING_COST_MULT: "标本出售花费"
+ MOD_COUNTRY_SPECIMEN_SELLING_COST_MULT: "样本出售花费"
  MOD_COUNTRY_EXHIBIT_UNLOCKING_COST_MULT: "展览解锁花费"
  mod_on_fauna_capture_scientist_exp_gain: "捕获太空兽群时的$mod_scientist_exp_gain$"
 
@@ -296,7 +296,7 @@
  MOD_SPACE_FAUNA_GROWTH_RATE_MULT: "太空兽群舰船生长速度"
 
  mod_vivarium_produces_mult: "屠宰太空兽群产出的资源"
- mod_specimens_produces_mult: "标本产出"
+ mod_specimens_produces_mult: "样本产出"
 
  MOD_ARTIFICIAL_SHIP_NAVAL_CAP_USAGE_MULT: "人造舰船$MOD_SHIP_NAVAL_CAP_USAGE_MULT$"
  MOD_SPACE_FAUNA_NAVAL_CAP_USAGE_MULT: "太空兽群舰船$MOD_SHIP_NAVAL_CAP_USAGE_MULT$"
@@ -324,13 +324,13 @@
 
  leader_trait_trophy_hunter: "战利品猎人"
  leader_trait_trophy_hunter_desc: "历经磨难，饱经世事，这位指挥官对太空兽群有着非凡的理解。成功的狩猎关键在于知己知彼，当然，只有完美的射击才能获得完美的战利品。"
- leader_trait_gifted_trapper: "天生捕手"
- leader_trait_gifted_trapper_desc: "这名熟练的研究人员在安全捕获和运输活体标本时非常小心。这位领袖对生物福利的承诺激励着其他人不断提高各个学科的学术标准。"
+ leader_trait_gifted_trapper: "天赋捕手"
+ leader_trait_gifted_trapper_desc: "这名熟练的研究人员在安全捕获和运输活体样本时非常小心。这位领袖对生物福利的承诺激励着其他人不断提高各个学科的学术标准。"
  leader_trait_void_hunter: "虚空猎手"
  leader_trait_void_hunter_desc: "一位经验丰富的猎手，擅长猎杀大型猎物。他们耐心接近，出手精准。"
  leader_trait_void_hunter_2: "$leader_trait_void_hunter$ II"
  leader_trait_void_hunter_2_desc: "$leader_trait_void_hunter_desc$"
- leader_trait_void_tracker: "虚空追迹者"
+ leader_trait_void_tracker: "虚空循迹"
  leader_trait_void_tracker_desc: "这位领袖在高效安全地捕捉太空兽群方面有着无与伦比的天赋。"
  leader_trait_void_tracker_2: "$leader_trait_void_tracker$ II"
  leader_trait_void_tracker_2_desc: "$leader_trait_void_tracker_desc$"
@@ -1179,9 +1179,9 @@
  CULL_VIVARIUM_FAUNA_EFFECT: "屠宰我们生态园中的兽群所获得的资源：$RESOURCES$"
  UNLOCK_EXHIBIT_EFFECT: "进行展览"
 
- MESSAGE_STOLEN_SPECIMEN_TITLE: "盗取标本"
- STOLEN_SPECIMEN_PERPETRATOR_DESC: "我们获得了如下标本：\n$DETAILS$"
- STOLEN_SPECIMEN_VICTIM_DESC: "我们无法取回如下标本：\n$DETAILS$"
+ MESSAGE_STOLEN_SPECIMEN_TITLE: "盗取样本"
+ STOLEN_SPECIMEN_PERPETRATOR_DESC: "我们获得了如下样本：\n$DETAILS$"
+ STOLEN_SPECIMEN_VICTIM_DESC: "我们无法取回如下样本：\n$DETAILS$"
 
 ############
 # Triggers #
@@ -1191,8 +1191,8 @@
 
  IS_LAST_ACQUIRED_SPECIMEN: "$SPECIMEN|Y$是$COUNTRY|Y$最新获得的一个['concept_specimen']"
  IS_NOT_LAST_ACQUIRED_SPECIMEN: "$SPECIMEN|Y$不是$COUNTRY|Y$最新获得的一个['concept_specimen']"
- ACQUIRED_SPECIMEN_COUNT: "获得的标本数$COMPARATOR$$NUM|Y$"
- ACQUIRED_SPECIMEN_COUNT_NOT: "获得的标本数不$COMPARATOR$$NUM|Y$"
+ ACQUIRED_SPECIMEN_COUNT: "获得的样本数$COMPARATOR$$NUM|Y$"
+ ACQUIRED_SPECIMEN_COUNT_NOT: "获得的样本数不$COMPARATOR$$NUM|Y$"
 
  TRIGGER_IS_EXHIBIT_ACTIVE: "展览进行中"
  TRIGGER_IS_EXHIBIT_NOT_ACTIVE: "展览未进行"
@@ -1235,18 +1235,18 @@
  SELL_SPECIMEN_DESC: "你将获得：\n$SELL_RESULT$"
 
  STORAGE_MANAGEMENT: "储藏管理"
- STORAGE_MANAGEMENT_STORAGE_DESCRIPTION: "储藏的['concept_specimen', 标本]会在有空房间时添加到展览中。"
+ STORAGE_MANAGEMENT_STORAGE_DESCRIPTION: "储藏的['concept_specimen', 样本]会在有空房间时添加到展览中。"
  SPECIMEN_EFFECTS_DISABLED_IN_STORAGE: "§R储藏时禁用§!"
  AUTO_SELL_STORAGE: "自动贩卖储藏"
- AUTO_SELL_STORAGE_DESCRIPTION: "选择当没有展览可用时会从储藏中自动贩卖的['concept_specimen', 标本]类型。"
- AUTO_BUY_DISABLED_TT: "点击在得到标本时自动激活新展览。"
- AUTO_BUY_ENABLED_TT: "点击禁用在得到标本时新展览的自动激活。"
- AUTO_SELL_MANAGE: "点击管理标本获取和储藏。"
- MESSAGE_STORAGE_SPECIMEN_SOLD_TITLE: "标本已出售"
- MESSAGE_STORAGE_SPECIMEN_SOLD_DESC: "我们从储藏中贩卖了一个标本。\n$SPECIMEN_LIST$\n获得资源：$RESOURCES_GAINED$"
- MESSAGE_STORAGE_SPECIMENS_SOLD_DESC: "我们从储藏中贩卖了一些标本。\n$SPECIMEN_LIST$\n获得资源：$RESOURCES_GAINED$"
- MESSAGE_STORAGE_FULL_TITLE: "标本储藏已满"
- MESSAGE_STORAGE_FULL_DESC: "由于储藏已满，下列标本被贩卖：\n$SPECIMEN_LIST$\n获得资源：$RESOURCES_GAINED$"
+ AUTO_SELL_STORAGE_DESCRIPTION: "选择当没有展览可用时会从储藏中自动贩卖的['concept_specimen', 样本]类型。"
+ AUTO_BUY_DISABLED_TT: "点击在得到样本时自动激活新展览。"
+ AUTO_BUY_ENABLED_TT: "点击禁用在得到样本时新展览的自动激活。"
+ AUTO_SELL_MANAGE: "点击管理样本获取和储藏。"
+ MESSAGE_STORAGE_SPECIMEN_SOLD_TITLE: "样本已出售"
+ MESSAGE_STORAGE_SPECIMEN_SOLD_DESC: "我们从储藏中贩卖了一个样本。\n$SPECIMEN_LIST$\n获得资源：$RESOURCES_GAINED$"
+ MESSAGE_STORAGE_SPECIMENS_SOLD_DESC: "我们从储藏中贩卖了一些样本。\n$SPECIMEN_LIST$\n获得资源：$RESOURCES_GAINED$"
+ MESSAGE_STORAGE_FULL_TITLE: "样本储藏已满"
+ MESSAGE_STORAGE_FULL_DESC: "由于储藏已满，下列样本被贩卖：\n$SPECIMEN_LIST$\n获得资源：$RESOURCES_GAINED$"
  STORAGE_SPECIMEN_SOLD_NOTIFICATION_ENTRY: " - $SPECIMEN_NAME$"
  STORAGE_SLOT_EXHIBITION: "分类：$EXHIBITION_NAME|H$"
 
@@ -1266,14 +1266,14 @@
 
  grand_archive.4006.name: "$grand_archive$"
  grand_archive.4006.desc.default: "我们的科学家相信最新的知识，§Y[This.GetLastAcquiredSpecimenName]§!，$grand_archive.4006.desc.common$"
- grand_archive.4006.desc.no_specimen: "我们的科学家相信最新的标本知识$grand_archive.4006.desc.common$"
+ grand_archive.4006.desc.no_specimen: "我们的科学家相信最新的样本知识$grand_archive.4006.desc.common$"
  grand_archive.4006.desc.common: "应该很值得在§Y$grand_archive$§!中对大众进行展览。\n\n开始这项冒险将需要一些初始投资，但其潜在的文化和科学回报可能是无价的。"
  grand_archive.4006.a: "努力尝试。"
  grand_archive.4006.b: "现在还不行。"
 
  r_preservation_chamber: "保存室"
  r_preservation_chamber_desc: "一种可以将空间以可恢复的方式进行压缩的先进机械。其制造者将其用来囚禁过于强大无法征服的生物。由于它已经不再接受操作输入，里面还藏着许多未解之谜。"
- preservation_chamber_triumph_tt: "向生态园添加随机太空兽群物种的两个高度成熟个体的标本。"
+ preservation_chamber_triumph_tt: "向生态园添加随机太空兽群物种的两个高度成熟个体的样本。"
 
 ############
 # Vivarium #
@@ -1284,7 +1284,7 @@
  DESTROYED_VIVARIUM_INFO: "你的§Y$grand_archive$§!被摧毁了。\n\n重建后方可再使用新的§Y$vivarium$§!。"
  TANK_CAPACITY: "容量：$NUM$/$MAX_CAPACITY$"
  CULL: "屠宰"
- CULL_SPECIMEN: "屠宰标本？"
+ CULL_SPECIMEN: "屠宰样本？"
  CULL_SPECIMEN_DESC: "会杀死选中的生物。\n你将获得：\n$CULL_RESULT$"
  CULL_SPECIMEN_TT: "对捕获以及饲养的§Y太空兽群§!进行安乐死并进一步进行解剖，我们可以获得研究、物料以及£genetic_material£§Y$genetic_material$§!。"
  AUTO_CULL: "自动屠宰"
@@ -1534,13 +1534,13 @@
  lessons_from_the_past: "前车之鉴"
 
  grand_archive.4105.name: "$leviathans.500.name$"
- grand_archive.4105.desc.common.aesthetic_wonder: "[GetCuratorsDesignation]留意到了你们在收集保存§Y$EXHIBITION_AESTHETIC_WONDERS$§!标本方面的审慎努力。星系中从不缺乏美，只是在等待发现美的眼睛。"
- grand_archive.4105.desc.common.historical_item: "[GetCuratorsDesignation]留意到了你们在收集保存§Y$EXHIBITION_GALACTIC_HISTORY$§!标本方面的审慎努力。你们通过保存这些器物让它们过去的主人得以永生。"
- grand_archive.4105.desc.common.xeno_geology: "[GetCuratorsDesignation]留意到了你们在收集保存§Y$EXHIBITION_XENO_GEOLOGY$§!标本方面的审慎努力。一石一世界，一晶一星河。"
+ grand_archive.4105.desc.common.aesthetic_wonder: "[GetCuratorsDesignation]留意到了你们在收集保存§Y$EXHIBITION_AESTHETIC_WONDERS$§!样本方面的审慎努力。银河中从不缺乏美，只是在等待发现美的眼睛。"
+ grand_archive.4105.desc.common.historical_item: "[GetCuratorsDesignation]留意到了你们在收集保存§Y$EXHIBITION_GALACTIC_HISTORY$§!样本方面的审慎努力。你们通过保存这些器物让它们过去的主人得以永生。"
+ grand_archive.4105.desc.common.xeno_geology: "[GetCuratorsDesignation]留意到了你们在收集保存§Y$EXHIBITION_XENO_GEOLOGY$§!样本方面的审慎努力。一石一世界，一晶一银河。"
 
  grand_archive.4105.desc.1.common: "[GetStage1Description]\n\n愿它成为你们继续伟大事业的动力。"
- CURATORS_STAGE_1_DESC: "你们初步的收藏令人印象深刻，我们愿意为你们服务。为了星系的保护工作，我们将派遣一名专家在你所选领域提供协助。"
- DEAD_CURATORS_STAGE_1_DESC: "尽管城邦已经支离破碎，我们仍愿意为了星系保护向你们提供服务。我们会在你所选的领域进行帮助。"
+ CURATORS_STAGE_1_DESC: "你们初步的收藏令人印象深刻，我们愿意为你们服务。为了银河的保护工作，我们将派遣一名专家在你所选领域提供协助。"
+ DEAD_CURATORS_STAGE_1_DESC: "尽管城邦已经支离破碎，我们仍愿意为了保护银河向你们提供服务。我们会在你所选的领域进行帮助。"
  grand_archive.4105.desc.1.xeno_geology: "$grand_archive.4105.desc.common.xeno_geology$\n\n$grand_archive.4105.desc.1.common$"
  grand_archive.4105.desc.1.aesthetic_wonder: "$grand_archive.4105.desc.common.aesthetic_wonder$\n\n$grand_archive.4105.desc.1.common$"
  grand_archive.4105.desc.1.historical_item: "$grand_archive.4105.desc.common.historical_item$\n\n$grand_archive.4105.desc.1.common$"
@@ -1548,7 +1548,7 @@
  grand_archive.4105.1.mineral_insight: "帮助我们发掘殖民地。"
  grand_archive.4105.1.void_mining: "帮助我们发掘恒星。"
  grand_archive.4105.1.cultural_enrichment: "帮助我们分享它们的辉煌。"
- grand_archive.4105.1.auctioneering_curation: "帮助我们为这些标本寻找合适的家园。"
+ grand_archive.4105.1.auctioneering_curation: "帮助我们为这些样本寻找合适的家园。"
  grand_archive.4105.1.historical_insight: "指引我们发现更多的未知。"
  grand_archive.4105.1.lessons_from_the_past: "教导我们的领袖学习往昔的智慧。"
  grand_archive.4105.1.no: "暂时不需要。"
@@ -1674,7 +1674,7 @@
 ####################################
  grand_archive.4510.name: "[fromfrom.GetName]内的$grand_archive$已摧毁"
  grand_archive.4510.desc.common: "我们已经摧毁了[from.GetName]所拥有的位于[fromfrom.GetName]内的$grand_archive$"
- grand_archive.4510.stolen: "我们可以从中取回一些有价值的标本。"
+ grand_archive.4510.stolen: "我们可以从中取回一些有价值的样本。"
  grand_archive.4510.ancrel: "我们可以从其残骸中取回一小部分$r_minor_artifacts$。"
  grand_archive.4510.nothing: "不幸的是，里面没有什么贵重的东西。"
  grand_archive.4510.freed: "此外，我们似乎还释放出了一些关在生态园里的太空兽群。很有可能它们会因为刚刚释放而变得既困惑又富有攻击性。"
@@ -1687,8 +1687,8 @@
 
  grand_archive.4515.name: "失去$grand_archive$"
  grand_archive.4515.desc.common_1: "我们位于[fromfrom.GetName]内的$grand_archive$被[from.GetName]摧毁。"
- grand_archive.4515.desc.common_2: "我需要在另一个星系中重建$grand_archive$让标本展览得以继续。"
- grand_archive.4515.stolen: "不幸的是，有部分高价值标本无法取回。"
+ grand_archive.4515.desc.common_2: "我需要在另一个星系中重建$grand_archive$让样本展览得以继续。"
+ grand_archive.4515.stolen: "不幸的是，有部分高价值样本无法取回。"
  grand_archive.4515.freed: "我们捕获的一部分太空兽群被野放，它们大多处于困惑而富有攻击性的状态。"
  grand_archive.4515.desc.stolen_freed: "$grand_archive.4515.desc.common_1$\n\n$grand_archive.4515.stolen$\n$grand_archive.4515.freed$\n\n$grand_archive.4515.desc.common_2$"
  grand_archive.4515.desc.stolen: "$grand_archive.4515.desc.common_1$\n\n$grand_archive.4515.stolen$\n\n$grand_archive.4515.desc.common_2$"
@@ -1706,7 +1706,7 @@
  grand_archive.4560.name: "$grand_archive.4555.name$"
  grand_archive.4560.desc.common_1: "我们放弃[from.GetName]后，建于该星系的$grand_archive$也已被拆除。"
  grand_archive.4560.desc.common_2: "我们可以回收建造所使用的大部分合金。如果想继续展览，我们需要在另一个星系完全重建这座建筑。"
- grand_archive.4560.desc.specimen: "所有的标本都得以取回并妥善储藏，以待新的$grand_archive$建成。"
+ grand_archive.4560.desc.specimen: "所有的样本都得以取回并妥善储藏，以待新的$grand_archive$建成。"
  grand_archive.4560.desc.fauna: "所有的太空兽群都被屠宰转换为基础资源。"
  grand_archive.4560.desc.specimen_fauna: "$grand_archive.4560.desc.common_1$\n\n$grand_archive.4560.desc.specimen$\n$grand_archive.4560.desc.fauna$\n\n$grand_archive.4560.desc.common_2$"
  grand_archive.4560.desc.specimen_nofauna: "$grand_archive.4560.desc.common_1$\n\n$grand_archive.4560.desc.specimen$\n\n$grand_archive.4560.desc.common_2$"
@@ -1755,7 +1755,7 @@
  job_historical_curator_plural: "历史策展员"
  job_historical_curator_icon: "£job_historical_curator£"
  job_historical_curator_with_icon: "$job_historical_curator_icon$ $job_historical_curator$"
- job_historical_curator_desc: "对最非凡的标本进行分类和背景分析，以深入了解重要的星系事件。"
+ job_historical_curator_desc: "对最非凡的样本进行分类和背景分析，以深入了解重要的星系事件。"
  job_historical_curator_effect_desc: "$job_historical_curator_icon$$job_historical_curator_plural$将$r_consumer_goods$转化为$r_unity$"
  mod_job_historical_curator_add: "$job_historical_curator$岗位"
  mod_job_historical_curator_per_pop: "每$VALUE$个人口提供§G+1§!个$job_historical_curator$岗位"
@@ -1885,16 +1885,16 @@
  civic_machine_galactic_curators: "保管网络"
  civic_machine_galactic_curators_desc: "这个机械智能的源代码中有一个核心指令：收集并保存。"
  civic_machine_galactic_curators_effects: "$civic_galactic_curators_effects_common$"
- civic_galactic_curators_effects_common: "—$GUARANTEED_RESEARCH_OPTION_STRING$['technology:tech_galactic_archivism', £society_research£$tech_galactic_archivism$]\n—初始['concept_specimen', 标本]：每个收藏分类§0$common$§!种\n—每次找到§H标本§!或完成一处§H$ARCHAEOLOGICAL_SITE$§!时获得$r_unity$\n—从§H典藏研究所太空城邦§!购买：§G$@galactic_curators_curator_enclave_purchase_cost|%0$§!\n—解锁§H$edict_decentralized_research$§!法令，提升§H研究站§!产出但降低£job_researcher£§H研究者§!产出。\n—§H$grand_archive$§!建造花费：§G$@galactic_curators_grand_archive_cost_mult|%0$§!"
+ civic_galactic_curators_effects_common: "—$GUARANTEED_RESEARCH_OPTION_STRING$['technology:tech_galactic_archivism', £society_research£$tech_galactic_archivism$]\n—初始['concept_specimen', 样本]：每个收藏分类§0$common$§!种\n—每次找到§H样本§!或完成一处§H$ARCHAEOLOGICAL_SITE$§!时获得$r_unity$\n—从§H典藏研究所太空城邦§!购买：§G$@galactic_curators_curator_enclave_purchase_cost|%0$§!\n—解锁§H$edict_decentralized_research$§!法令，提升§H研究站§!产出但降低£job_researcher£§H研究者§!产出。\n—§H$grand_archive$§!建造花费：§G$@galactic_curators_grand_archive_cost_mult|%0$§!"
  edict_decentralized_research: "分布式研究"
  edict_decentralized_research_desc: "最伟大的知识存在于我们文明之外。放眼整个银河我们才能更全面地了解我们自己。"
- MOD_COUNTRY_SPECIMEN_ACQUIRE_CHANCE_MULT: "增加发现标本的几率"
+ MOD_COUNTRY_SPECIMEN_ACQUIRE_CHANCE_MULT: "增加发现样本的几率"
 
  councilor_galactic_curators: "至高馆长"
- councilor_galactic_curators_desc: "至高典藏研究所馆长负责监管所有标本瓶的保存质量。"
+ councilor_galactic_curators_desc: "至高典藏研究所馆长负责监管所有样本瓶的保存质量。"
  councilor_galactic_curators_custom_modifier_desc: "—每$pop_group_unit$[GetCultureWorkerPluralWithIcon]产出的£unity£$unity$：§G+$@councilor_galactic_curators_unity$§!"
  councilor_corporate_galactic_curators: "首席馆长"
- councilor_corporate_galactic_curators_desc: "首席馆长负责管理标本的展览和交易。"
+ councilor_corporate_galactic_curators_desc: "首席馆长负责管理样本的展览和交易。"
  councilor_corporate_galactic_curators_custom_modifier_desc: "—每$pop_group_unit$[GetCultureWorkerPluralWithIcon]产出的$TRADE_VALUE_WITH_ICON$：§G+$@councilor_corporate_galactic_curators_trade_value$§!"
 
  civic_beastmasters: "驯兽大师"
@@ -1987,7 +1987,7 @@
  tr_archivism_frontier_archaeology_delayed: "如果想真正了解周遭的历史，我们就必须超越自己星系的限制。"
  tr_archivism_frontier_archaeology_tt: "允许$science_plural$发掘§Y无主星系§!内的['concept_archaeology_site',考古遗址]。\n获得一个随机的§Y$EXHIBITION_XENO_GEOLOGY$§!['concept_specimen']。"
  tr_archivism_flawless_display: "无瑕展览"
- tr_archivism_flawless_display_delayed: "非凡的标本值得非凡的展示。"
+ tr_archivism_flawless_display_delayed: "非凡的样本值得非凡的展示。"
  tr_archivism_flawless_display_tt: "每展览一个§1稀有§!以上的['concept_specimen']增加同类别产出§G+$@archivism_flawless_display_produce_value|0%$§!\n获得一个随机的§Y$EXHIBITION_AESTHETIC_WONDERS$§!['concept_specimen']。"
  tr_archivism_exhibition_specialization: "展览专场"
  tr_archivism_exhibition_specialization_delayed: "对['concept_megastructure_grand_archive']进行精心策划，突出某些类别的展示效果，从而增强展览的整体主题。"
@@ -2043,7 +2043,7 @@
  xenogeology_focus: "着重$EXHIBITION_XENO_GEOLOGY$"
  xenogeology_focus_desc: "这可不是一堆破石头——这是精美矿物的陈列展示。\n\n"
  no_focus: "雨露均沾"
- no_focus_desc: "我们不会强调任一种类的标本。"
+ no_focus_desc: "我们不会强调任一种类的样本。"
 
  ##################################
  # Treasure Hunters Origin Events #
@@ -2186,7 +2186,7 @@
  grand_archive.8060.desc: "突破多层加密后，新数据被无缝地添加到§Y$celestial_chart$§!中。当所有碎片拼凑完成，一个全新的星系跃然眼前。我们旅程的下一步近在咫尺，应该谨慎地去探索这片未测绘的太空区域。"
 
  grand_archive.8075.name: "博物天枢"
- grand_archive.8075.desc: "获得§Y[This.GetLastAcquiredSpecimenName]§!后，我们的科学家认为它应该在§Y$grand_archive$§!的公开展示区拥有一席之地。这座建筑将容纳我们不断壮大的珍稀文物收藏，这些文物将带来重大的文化和科学回报。我们将启动一项天使投资，用于保存和展示星系多样化和脆弱标本所需的技术的研发。\n\n此外，在乙特人文物旁还发现了一份蓝图，其中包含一种先进展示柜的设计，该展示柜配备了创新的气氛监测技术。进一步发展这个想法将增强档案的整体保存能力。"
+ grand_archive.8075.desc: "获得§Y[This.GetLastAcquiredSpecimenName]§!后，我们的科学家认为它应该在§Y$grand_archive$§!的公开展示区拥有一席之地。这座建筑将容纳我们不断壮大的珍稀文物收藏，这些文物将带来重大的文化和科学回报。我们将启动一项天使投资，用于保存和展示银河多样化和脆弱样本所需的技术的研发。\n\n此外，在乙特人文物旁还发现了一份蓝图，其中包含一种先进展示柜的设计，该展示柜配备了创新的气氛监测技术。进一步发展这个想法将增强档案的整体保存能力。"
  grand_archive.8076.name: "乙特人标本"
  grand_archive.8076.desc: "失落的乙特文明的最后遗迹值得单独展出。\n\n幸运的是，在乙特文物旁边发现的一份蓝图包含一种先进展示柜的设计，该展示柜配备了创新的气氛监测技术。进一步发展这个想法将增强档案的整体保存能力。"
  grand_archive.8076.a: "好机会。"

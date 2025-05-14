@@ -143,7 +143,7 @@
  tr_domination_drone_network_delayed:0 "我们改进了意识网络与其成员沟通的方式，大幅提高了他们的效率。"
 
  tr_domination_trust_officers:0 "公信警官"
- tr_domination_trust_officers_desc:3 "§Y解锁法令：§!$edict_enhanced_surveillance$\n[enforcer.GetIcon]§Y[enforcer.GetNamePlural]§!也会产出§Y1§!£unity£凝聚力"
+ tr_domination_trust_officers_desc:3 "§Y解锁法令：§!$edict_enhanced_surveillance$\n每 100 [enforcer.GetIcon]§Y[enforcer.GetNamePlural]§!：£unity£§Y凝聚力§!§G+1§!"
  tr_domination_trust_officers_delayed:0 "执法人员的重要工作只有在公众的配合后才能真正成功。组建直接与民众合作的公信警官部队有助于确保民众的密切配合。"
  tr_domination_judgment_corps:0 "审判团"
  tr_domination_judgment_corps_desc:3 "§Y解锁法案：§!$edict_enhanced_surveillance$"
@@ -635,7 +635,7 @@
  tr_mercantile_insider_trading:0 "内幕交易"
  tr_mercantile_insider_trading_delayed:2 "在合适的地方遇到合适的客户能够让生意的结果完全不同。与有影响力的商人往来能够让我们在资源市场用最合心意的价格买到东西。"
  tr_mercantile_trickle_up_economics:0 "积少成多"
- tr_mercantile_trickle_up_economics_desc:2 "每100§Y$job_civilian_plural_with_icon$§!产出的$r_trade$：§G+1§!\n每100§Y$job_civilian_plural_with_icon$§!产出的$r_amenities$：§G+100§!"
+ tr_mercantile_trickle_up_economics_desc:2 "每100§Y$job_civilian_plural_with_icon$§!产出的$r_trade$：§G+1§!\n每100§Y$job_civilian_plural_with_icon$§!的$r_consumer_goods$ 维护费：§R+0.1§!\n每100§Y$job_civilian_plural_with_icon$§!产出的$r_amenities$：§G+100§!"
  tr_mercantile_trickle_up_economics_delayed:1 "我们整个社会都能从公务员制度和日常贸易的投资中获益。"
  tr_mercantile_commercial_enterprise:0 "商业集团"
  tr_mercantile_commercial_enterprise_desc:1 "每$pop_group_unit$§Y$job_trader_plural_with_icon$§!产出的$r_amenities$：§G+200§!\n有£zone£§Y$zone_trade$§!或£building£§Y贸易建筑§!的£district£§Y$district_city_plural$§!提供更多§Y$job_trader_with_icon$§!岗位。"
@@ -960,12 +960,12 @@
 
  tr_synthetics_prefabricated_components:0 "预制部件"
  tr_synthetics_prefabricated_components_delayed: "通过交付标准化部件和安装指南，任何人都能学会自己安装更新。"
- tr_synthetics_prefabricated_components_situation_effects: "$tr_synthetics_situation$£building£§Y首府建筑§!提供§G+1§![roboticist.GetIcon]§Y[roboticist.GetName]§!岗位\n[roboticist.GetIcon]§Y[roboticist.GetName]§!提供§G+2§!$i_amenities$"
- tr_synthetics_prefabricated_components_effects: "£building£§Y首府建筑§!提供§G+100§![roboticist.GetIcon]§Y[roboticist.GetName]§!岗位\n[roboticist.GetIcon]§Y[roboticist.GetName]§!提供§G+2§!$i_amenities$"
+ tr_synthetics_prefabricated_components_situation_effects: "$tr_synthetics_situation$£building£§Y首府建筑§!提供§G+100§!每100[roboticist.GetIcon]§Y[roboticist.GetName]§!岗位\n[roboticist.GetIcon]§Y[roboticist.GetName]§!提供§G+200§!$i_amenities$"
+ tr_synthetics_prefabricated_components_effects: "£building£§Y首府建筑§!提供§G+100§![roboticist.GetIcon]§Y每100[roboticist.GetName]§!岗位\n[roboticist.GetIcon]§Y[roboticist.GetName]§!提供§G+200§!$i_amenities$"
 
  tr_synthetics_prefabricated_components_machine: "$tr_synthetics_prefabricated_components$"
  tr_synthetics_prefabricated_components_machine_delayed: "提前生产好的部件储备供应可以大大促进新模型的组装。"
- tr_synthetics_prefabricated_components_machine_effects: "£building£§Y首府建筑§!提供§G+1§![replicator.GetIcon]§Y[replicator.GetName]§!岗位"
+ tr_synthetics_prefabricated_components_machine_effects: "£building£§Y首府建筑§!提供§G+100§![replicator.GetIcon]§Y[replicator.GetName]§!岗位"
 
  tr_synthetics_solid_state_actuators:0 "固相促动器"
  tr_synthetics_solid_state_actuators_delayed:0 "尽管成本高昂，但固相促动器促进了部件的小型化，让领袖得以强化关键的子系统。"
@@ -1229,7 +1229,7 @@
  ap_interstellar_dominion:0 "星际主权"
  ap_eternal_vigilance:0 "戒备森严"
  ap_eternal_vigilance_desc:0 "暴露弱点会招来攻击。入侵我领土必须要付出高昂的代价，以至于敌人望而却步。"
- ap_eternal_vigilance_tt: "基于§Y$ap_eternal_vigilance$§!政策，每座§Y太空基地§!周围每6个月都会建成一座§Y防御平台§!"
+ ap_eternal_vigilance_tt: "基于§Y$ap_eternal_vigilance$§!政策，每座§Y太空基地§!周围每6个月都会建成一座§Y防御平台§!，直到容量上限的§Y50%§!"
  policy_eternal_vigilance_policy: "$ap_eternal_vigilance$"
  policy_eternal_vigilance_policy_desc: "盾有多坚固，取决于持盾的手臂有多强。"
  eternal_vigilance_full_spending: "全力投入"

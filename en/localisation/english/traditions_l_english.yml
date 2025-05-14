@@ -143,7 +143,7 @@
  tr_domination_drone_network_delayed:0 "We have improved the ways in which our consciousness communicates with its drones, greatly increasing their efficiency."
 
  tr_domination_trust_officers:0 "Public Trust Officers"
- tr_domination_trust_officers_desc:3 "§YUnlocks Edict:§! $edict_enhanced_surveillance$\n[enforcer.GetIcon] §Y[enforcer.GetNamePlural]§! also produce §Y1§! £unity£ Unity"
+ tr_domination_trust_officers_desc:3 "§YUnlocks Edict:§! $edict_enhanced_surveillance$\n£unity£ §YUnity§! per 100 [enforcer.GetIcon] §Y[enforcer.GetNamePlural]§!: §G+1§! "
  tr_domination_trust_officers_delayed:0 "The important work done by law enforcement officials can only truly be successful if they have the cooperation of the public. Creating a corps of Public Trust Officers that work directly with the population will help ensure that this cooperation is freely given."
  tr_domination_judgment_corps:0 "Judgment Corps"
  tr_domination_judgment_corps_desc:3 "§YUnlocks Edict:§! $edict_enhanced_surveillance$"
@@ -635,7 +635,7 @@
  tr_mercantile_insider_trading:0 "Insider Trading"
  tr_mercantile_insider_trading_delayed:2 "Knowing the right people in the right places can make a world of difference. Influential merchant contacts will let us buy from resource markets at favorable rates."
  tr_mercantile_trickle_up_economics:0 "Trickle Up Economics"
- tr_mercantile_trickle_up_economics_desc:2 "$r_trade$ per 100 §Y$job_civilian_plural_with_icon$§!: §G+1§!\n$r_amenities$ per 100 §Y$job_civilian_plural_with_icon$§!: §G+100§!"
+ tr_mercantile_trickle_up_economics_desc:2 "$r_trade$ per 100 §Y$job_civilian_plural_with_icon$§!: §G+1§!\n$r_consumer_goods$ Upkeep per 100 §Y$job_civilian_plural_with_icon$§!: §R+0.1§!\n$r_amenities$ per 100 §Y$job_civilian_plural_with_icon$§!: §G+100§!"
  tr_mercantile_trickle_up_economics_delayed:1 "Our whole society reaps the benefits of an investment in civil service and everyday trade."
  tr_mercantile_commercial_enterprise:0 "Commercial Enterprise"
  tr_mercantile_commercial_enterprise_desc:1 "$r_amenities$ per $pop_group_unit$ §Y$job_trader_plural_with_icon$§!: §G+200§!\n£district£ §Y$district_city_plural$§! with a £zone£ §Y$zone_trade$§!, and £building£ §YTrade Buildings§!, receive additional §Y$job_trader_with_icon$§! Jobs."
@@ -960,12 +960,12 @@
 
  tr_synthetics_prefabricated_components:0 "Prefabricated Components"
  tr_synthetics_prefabricated_components_delayed: "By shipping standardized components and an assembly instruction, anyone can put their next upgrade together."
- tr_synthetics_prefabricated_components_situation_effects: "$tr_synthetics_situation$ £building£ §YCapital Buildings§! provide §G+1§! [roboticist.GetIcon] §Y[roboticist.GetName]§! Jobs\n[roboticist.GetIcon] §Y[roboticist.GetName]§! provide §G+2§! $i_amenities$"
- tr_synthetics_prefabricated_components_effects: "£building£ §YCapital Buildings§! provide §G+100§! [roboticist.GetIcon] §Y[roboticist.GetName]§! Jobs\n[roboticist.GetIcon] §Y[roboticist.GetName]§! provide §G+2§! $i_amenities$"
+ tr_synthetics_prefabricated_components_situation_effects: "$tr_synthetics_situation$ £building£ §YCapital Buildings§! provide §G+100§! [roboticist.GetIcon] §Y[roboticist.GetName]§! Jobs\n$i_amenities$ per 100 [roboticist.GetIcon] §Y[roboticist.GetName]§!: §G+200§!"
+ tr_synthetics_prefabricated_components_effects: "£building£ §YCapital Buildings§! provide §G+100§! [roboticist.GetIcon] §Y[roboticist.GetName]§! Jobs\n$i_amenities$ per 100 [roboticist.GetIcon] §Y[roboticist.GetName]§!: §G+200§!"
 
  tr_synthetics_prefabricated_components_machine: "$tr_synthetics_prefabricated_components$"
  tr_synthetics_prefabricated_components_machine_delayed: "Having a ready supply of prefabricated components makes it easier to assemble new models."
- tr_synthetics_prefabricated_components_machine_effects: "£building£ §YCapital Buildings§! provide §G+1§! [replicator.GetIcon] §Y[replicator.GetName]§! Jobs"
+ tr_synthetics_prefabricated_components_machine_effects: "£building£ §YCapital Buildings§! provide §G+100§! [replicator.GetIcon] §Y[replicator.GetName]§! Jobs"
 
  tr_synthetics_solid_state_actuators:0 "Solid-State Actuators"
  tr_synthetics_solid_state_actuators_delayed:0 "Solid-state actuators improve component miniaturization which, though expensive, allows leaders to harden vital subsystems."
@@ -1229,7 +1229,7 @@
  ap_interstellar_dominion:0 "Interstellar Dominion"
  ap_eternal_vigilance:0 "Eternal Vigilance"
  ap_eternal_vigilance_desc:0 "To display weakness is to invite attack. The price of invading our space must be so high that as few as possible are prepared to meet it."
- ap_eternal_vigilance_tt: "Every 6 months a §YDefense Platform§! will be built around every §YStarbase§! depending on the §Y$ap_eternal_vigilance$§! policy"
+ ap_eternal_vigilance_tt: "Every 6 months a §YDefense Platform§! will be built around every §YStarbase§! depending on the §Y$ap_eternal_vigilance$§! policy, up to a max of §Y50%§! capacity"
  policy_eternal_vigilance_policy: "$ap_eternal_vigilance$"
  policy_eternal_vigilance_policy_desc: "A shield is only as strong as the one that holds it."
  eternal_vigilance_full_spending: "Full Spending"

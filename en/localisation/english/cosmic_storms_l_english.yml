@@ -227,19 +227,23 @@
  job_astrometeorologist_effect_desc: "$job_astrometeorologist_plural_with_icon$ turn $r_consumer_goods$ into $r_physics$\n\nJob Output is increased when an §YEnvironmental Effect§! is present in this System."
  job_astrometeorologist_with_icon: "£job_astrometeorologist£ $job_astrometeorologist$"
  job_astrometeorologist_plural_with_icon: "£job_astrometeorologist£ $job_astrometeorologist_plural$"
- physicist_is_astrometeorologist_tt: "£job_physicist£ $job_physicist_plural$ are converted into $job_astrometeorologist_plural_with_icon$"
+ physicist_is_astrometeorologist_tt: "\n£job_physicist£ $job_physicist_plural$ are converted into $job_astrometeorologist_plural_with_icon$.\n\n§Y$job_astrometeorologist_with_icon$§! output is increased when an §YEnvironmental Effect§! is present in this System."
+ astrometeorologist_hive: "$job_astrometeorologist_hive$"
  job_astrometeorologist_hive: "$job_astrometeorologist$ Drone"
  job_astrometeorologist_hive_plural: "$job_astrometeorologist$ Drones"
  job_astrometeorologist_hive_desc: "These research drones are specialized to detect and catalog the effects of cosmic storms."
  job_astrometeorologist_hive_effect_desc: "$job_astrometeorologist_hive_plural_with_icon$ turn $r_minerals$ into $r_research$\n\nJob Output is increased when an §YEnvironmental Effect§! is present in this System"
  job_astrometeorologist_hive_with_icon: "£job_astrometeorologist£ $job_astrometeorologist_hive$"
  job_astrometeorologist_hive_plural_with_icon: "£job_astrometeorologist_hive£ $job_astrometeorologist_hive_plural$"
+ physics_brain_drone_is_astrometeorologist_tt: "\n£job_brain_drone_physicist£ $job_brain_drone_physicist$ are converted into $job_astrometeorologist_hive_plural_with_icon$.\n\n§Y$job_astrometeorologist_hive_with_icon$§! output is increased when an §YEnvironmental Effect§! is present in this System."
+ astrometeorologist_machine: "$job_astrometeorologist_machine$"
  job_astrometeorologist_machine: "$job_astrometeorologist$ Unit"
  job_astrometeorologist_machine_plural: "$job_astrometeorologist$ Units"
  job_astrometeorologist_machine_desc: "These research units painstakingly detail every astronomical event as to learn more from it."
  job_astrometeorologist_machine_effect_desc: "$job_astrometeorologist_machine_plural_with_icon$ turn $r_energy$ into $r_research$\n\nJob Output is increased when an §YEnvironmental Effect§! is present in this System"
  job_astrometeorologist_machine_with_icon: "£job_astrometeorologist_machine£ $job_astrometeorologist_machine$"
  job_astrometeorologist_machine_plural_with_icon: "£job_astrometeorologist_machine£ $job_astrometeorologist_machine_plural$"
+ physics_calculator_is_astrometeorologist_tt: "\n£job_calculator_physicist£ $job_calculator_physicist_plural$ are converted into $job_astrometeorologist_machine_plural_with_icon$.\n\n§Y$job_astrometeorologist_machine_with_icon$§! output is increased when an §YEnvironmental Effect§! is present in this System."
 
  storm_dancer: "$job_storm_dancer$"
  job_storm_dancer: "Storm Dancer"
@@ -302,7 +306,7 @@
 # Civics
  civic_astrometeorology: "Astrometeorology"
  civic_astrometeorology_desc: "With deep respect for the forces of nature, this species goes to great lengths to uncover the inner workings of environmental phenomena. As they set out across the stars, they take with them a particular interest in astrometeorology. Central to their ambitions are the most fantastic and potentially destructive of all astronomical events, the cosmic storms themselves.\n"
- civic_astrometeorology_effect_tooltip: "- $AVAILABLE_BUILDINGS$ £building£ ['building:building_astrometeorology_observation_center']\n- $HOMEWORLD$ £building£ ['building:building_research_lab_1'] replaced by £building£ §Y$building_astrometeorology_observation_center$§!"
+ civic_astrometeorology_effect_tooltip: "$t$- $AVAILABLE_BUILDINGS$ £building£ ['building:building_astrometeorology_observation_center']$TABBED_NEW_LINE$- $ADDITIONAL_BUILDINGS_STRING$ £building£ §Y$building_astrometeorology_observation_center$§!"
 
  civic_astrometeorology_hive: "Climate Modeling"
  civic_astrometeorology_hive_desc: "As the collective reaches for the stars, their consciousness is entranced by the sight of astrometeorological phenomena. These drones expand their home for a noble purpose: to study environmental effects and find wonder in even the cosmic storms themselves."
@@ -314,7 +318,7 @@
 
  civic_astrometeorology_megacorp: "Weather Exploitation"
  civic_astrometeorology_megacorp_desc: "What are environmental effects if not another free resource to exploit? This megacorp specializes in acquiring as much knowledge from astrometeorological phenomena as they can and sell it to the highest bidder."
- civic_astrometeorology_megacorp_effect_tooltip: "$civic_astrometeorology_effect_tooltip$\n- The £building£ §Y$building_private_research_initiative$§! $megacorp_civic_branch_office_building_effect$"
+ civic_astrometeorology_megacorp_effect_tooltip: "$civic_astrometeorology_effect_tooltip$ $TABBED_NEW_LINE$- The £building£ §Y$building_private_research_initiative$§! $megacorp_civic_branch_office_building_effect$"
 
  civic_storm_callers: "Storm Devotion"
  civic_storm_callers_desc: "Ever since ancient times, this society has been able to attract tempests through their rituals. Over the years, they combined technical innovations to enhance their efficiency. With the dawn of the space age, they now seek to take this knowledge to the stars."
@@ -1732,7 +1736,7 @@
 
  TUTORIAL_STORM_FORECAST_MAP_MODE_TITLE: "Tutorial: Weather Forecast"
  TUTORIAL_STORM_FORECAST_MAP_MODE_DESC: "This map mode visualizes any §SCosmic Storms§! in the galaxy, with information on their effects.\n\n£storm_forecast_map£\n\nTo access the weather forecast map mode, click the map icon in the bottom right.\n\nWith advanced technology, it can be upgraded to give increasingly accurate predictions not only of the location and direction of a §S$default_storm$§!, but also what type of storm to expect."
- concept_weather_forecasting_mode: "$TUTORIAL_STORM_FORECAST_MAP_MODE_TITLE$"
+ concept_weather_forecasting_mode: "Weather Forecasting Mode"
  concept_weather_forecasting_mode_desc: "$TUTORIAL_STORM_FORECAST_MAP_MODE_DESC$"
 
  TUTORIAL_STORM_PROTECTION_TITLE: "Tutorial: Cosmic Storms"

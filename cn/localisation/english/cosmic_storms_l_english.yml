@@ -227,19 +227,23 @@
  job_astrometeorologist_effect_desc: "$job_astrometeorologist_plural_with_icon$将$r_consumer_goods$转化为$r_physics$\n\n当前星系存在§Y环境影响§!时岗位产出将提高"
  job_astrometeorologist_with_icon: "£job_astrometeorologist£ $job_astrometeorologist$"
  job_astrometeorologist_plural_with_icon: "£job_astrometeorologist£ $job_astrometeorologist_plural$"
- physicist_is_astrometeorologist_tt: "£job_physicist£$job_physicist_plural$转化为$job_astrometeorologist_plural_with_icon$"
+ physicist_is_astrometeorologist_tt: "\n£job_physicist£$job_physicist_plural$转化为$job_astrometeorologist_plural_with_icon$。\n\n当这个星系存在§Y环境效应§!时，§Y$job_astrometeorologist_with_icon$§!产出增加。"
+ astrometeorologist_hive: "$job_astrometeorologist_hive$"
  job_astrometeorologist_hive: "$job_astrometeorologist$工蜂"
  job_astrometeorologist_hive_plural: "$job_astrometeorologist$工蜂"
  job_astrometeorologist_hive_desc: "这些研究型工蜂专精于观测并记录宇宙风暴的影响。"
  job_astrometeorologist_hive_effect_desc: "$job_astrometeorologist_hive_plural_with_icon$将$r_minerals$转化为$r_research$\n\n当前星系存在§Y环境影响§!时岗位产出将提高"
  job_astrometeorologist_hive_with_icon: "£job_astrometeorologist£ $job_astrometeorologist_hive$"
  job_astrometeorologist_hive_plural_with_icon: "£job_astrometeorologist_hive£ $job_astrometeorologist_hive_plural$"
+ physics_brain_drone_is_astrometeorologist_tt: "\n£job_brain_drone_physicist£ $job_brain_drone_physicist$转化为$job_astrometeorologist_hive_plural_with_icon$。\n\n当这个星系存在§Y环境效应§!时，§Y$job_astrometeorologist_hive_with_icon$§!产出增加。"
+ astrometeorologist_machine: "$job_astrometeorologist_machine$"
  job_astrometeorologist_machine: "$job_astrometeorologist$单元"
  job_astrometeorologist_machine_plural: "$job_astrometeorologist$单元"
  job_astrometeorologist_machine_desc: "这些研究型单元勤勤恳恳，事无巨细地记录着天文事件，并从中汲取更多知识。"
  job_astrometeorologist_machine_effect_desc: "$job_astrometeorologist_machine_plural_with_icon$将$r_energy$转化为$r_research$\n\n当前星系存在§Y环境影响§!时岗位产出将提高"
  job_astrometeorologist_machine_with_icon: "£job_astrometeorologist_machine£ $job_astrometeorologist_machine$"
  job_astrometeorologist_machine_plural_with_icon: "£job_astrometeorologist_machine£ $job_astrometeorologist_machine_plural$"
+ physics_calculator_is_astrometeorologist_tt: "\n£job_calculator_physicist£ $job_calculator_physicist_plural$ 转化为$job_astrometeorologist_machine_plural_with_icon$。\n\n当这个星系存在§Y环境效应§!时，§Y$job_astrometeorologist_machine_with_icon$§!产出增加。"
 
  storm_dancer: "$job_storm_dancer$"
  job_storm_dancer: "风暴舞者"
@@ -302,7 +306,7 @@
 # Civics
  civic_astrometeorology: "星际气象研究"
  civic_astrometeorology_desc: "怀揣着对自然力量的尊重，这个种群不遗余力地研究自然气候内在的运作机制。在踏足星空之后，他们对于星际气象展现了极大的兴趣。而他们雄心壮志的核心就是探索宇宙风暴这一迷人又蕴含极大破坏力的现象。\n"
- civic_astrometeorology_effect_tooltip: "—$AVAILABLE_BUILDINGS$£building£ ['building:building_astrometeorology_observation_center']\n—$HOMEWORLD$£building£ ['building:building_research_lab_1']替换为£building£ §Y$building_astrometeorology_observation_center$§!"
+ civic_astrometeorology_effect_tooltip: "$t$- $AVAILABLE_BUILDINGS$£building£ ['building:building_astrometeorology_observation_center']$TABBED_NEW_LINE$- $ADDITIONAL_BUILDINGS_STRING$替换为£building£ §Y$building_astrometeorology_observation_center$§!"
 
  civic_astrometeorology_hive: "气候建模"
  civic_astrometeorology_hive_desc: "随着这个种群踏足星空，他们的集体意识就被天体间的气候现象所吸引。蜂群为了一个崇高的目标而拓展疆域：研究宇宙风暴对外界环境产生的影响，并探索种种奇观。为此他们不惜亲身踏入风暴。"
@@ -314,7 +318,7 @@
 
  civic_astrometeorology_megacorp: "气象开发"
  civic_astrometeorology_megacorp_desc: "环境效应不是可以开发的免费资源，那还能是什么呢？这家巨型企业专门从星际气候现象中获取尽可能多的知识，并将其出售给出价最高的人。"
- civic_astrometeorology_megacorp_effect_tooltip: "$civic_astrometeorology_effect_tooltip$\n- The £building£ §Y$building_private_research_initiative$§! $megacorp_civic_branch_office_building_effect$"
+ civic_astrometeorology_megacorp_effect_tooltip: "$civic_astrometeorology_effect_tooltip$ $TABBED_NEW_LINE$- £building£ §Y$building_private_research_initiative$§! $megacorp_civic_branch_office_building_effect$"
 
  civic_storm_callers: "风暴热忱"
  civic_storm_callers_desc: "自古以来，这个社会能够用仪式来召唤风暴。年复一年，他们不停地运用科技创新提高仪式的效率。而随着太空时代到来，他们得以将这一知识运用与于群星之间。"
@@ -1732,7 +1736,7 @@
 
  TUTORIAL_STORM_FORECAST_MAP_MODE_TITLE: "教程：天气预报"
  TUTORIAL_STORM_FORECAST_MAP_MODE_DESC: "该地图可视化地展现了星系中所有的§S宇宙风暴§!，以及关于其产生的效果的信息。\n\n£storm_forecast_map£\n\n单击右下角的地图图标即可进入天气预报地图模式。\n\n随着科技的提升，该模式将不仅能展示§S$default_storm$§!的位置和方向，还能以越来越高的准确度进行预测，此外还能显示预期的风暴类型。"
- concept_weather_forecasting_mode: "$TUTORIAL_STORM_FORECAST_MAP_MODE_TITLE$"
+ concept_weather_forecasting_mode: "天气预报模式"
  concept_weather_forecasting_mode_desc: "$TUTORIAL_STORM_FORECAST_MAP_MODE_DESC$"
 
  TUTORIAL_STORM_PROTECTION_TITLE: "教程：宇宙风暴"

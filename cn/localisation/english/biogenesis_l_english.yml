@@ -2190,7 +2190,7 @@
  defensive_stations_tracking_add_tt: "$defensive_stations_tracking_add$：$VARIABLE|0=+$"
 
  defensive_stations_weapon_range_mult: "太空基地和防御站武器射程"
- defensive_stations_weapon_range_mult_tt: "$defensive_stations_weapon_range_mult$：$VARIABLE|0%=+$"
+ defensive_stations_weapon_range_mult_tt: "$defensive_stations_weapon_range_mult$：$VARIABLE|1%=+$"
 
 # Bodysnatcher
 
@@ -2792,8 +2792,8 @@
  job_transference_volunteer: "志愿移识者"
  job_transference_volunteer_plural: "$job_transference_volunteer$s"
  job_transference_volunteer_desc: "对许多人来说，与野兽的心灵联系是种后发的观念。恒久不变，但又无比遥远。然而，对一些人来说，与它合并的需求是无法抑制的。这些志愿者就像一个管道，他们的思想慢慢地融入到这个野兽的集体中。"
- job_transference_volunteer_effect_desc: "\n£job_transference_volunteer£$job_transference_volunteer_plural$生产£unity£§Y凝聚力§!，增加行星$r_stability$，并且让我们的§Y舰船§!更加强大。\n每6个月，会有§Y10%§!工作在此岗位上的人口被§Y移识§!。这将杀死他们，但是会让地区的资源产出翻倍。\n\n§G已移识的人口§!：[num_tranferred_pops]"
- mod_job_transference_drone_add: "$job_transference_drone$岗位"
+ job_transference_volunteer_effect_desc: "\n£job_transference_volunteer£ [GetTransferenceVolunteerDrone] 生产£unity£§Y凝聚力§!，增加行星$r_stability$，并且让我们的§Y舰船§!更加强大。\n每6个月，会有§Y10%§!工作在此岗位上的人口被§Y移识§!。这将杀死他们，但是会让地区的资源产出翻倍。\n\n§G已移识的人口§!：[num_tranferred_pops]"
+ mod_job_transference_drone_add: "[GetTransferenceVolunteerDrone]岗位"
  job_transference_drone: "移识子个体"
  job_transference_drone_plural: "$job_transference_drone$s"
  job_transference_drone_desc: "虽然心灵链接在野兽和我们之间建立了永久的联系，但转移是一个缓慢的过程。如果没有这些预防措施，我们就有可能粉碎双方的精神，毁掉一切。"
@@ -3129,7 +3129,8 @@
  behemoth_finale_situation_type: "$behemoth_finale_situation$"
  behemoth_finale_situation_monthly_change_tooltip: "提升§Y生长因数§!的方式：\n—击杀其他§Y噬天巨兽§!、§Y星神兽§!或§Y生物舰船§!\n—吞食§Y宜居行星§!。\n—吞食£pop£§H人口§!。"
  behemoth_empire_size_desc: "帝国规模"
- growth_factor_desc: "生长因数"
+ growth_factor_desc: "生长系数"
+ wilderness_behemoth: "$origin_wilderness$"
  concept_growth_factor: "$growth_factor_desc$"
  concept_growth_factor_desc: "生长因数用于衡量你的噬天巨兽吸收的营养物质数量，并影响局势的进展速度。\n\n每月减少§R0.75%§!\n\n$behemoth_finale_situation_monthly_change_tooltip$\n\n每$pop_group_unit$£pop£§H被转化人口§!的最小值等于§G0.5%§!。"
  behemoth_finale_situation_desc: "我们需要一些时间来适应如此庞大的形态。在融入这个身体的过程中，我们必须时刻保持对周围环境的警觉。如今，我们与虚空之间已无任何阻隔。\n\n我们当前的['concept_growth_factor']为：§G[growth_factor_value]%§!"

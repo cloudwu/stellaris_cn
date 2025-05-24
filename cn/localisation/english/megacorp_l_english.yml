@@ -885,10 +885,10 @@
 
  planet_unemployment: "$unemployment_resources$"
 
- mod_planet_civilians_physics_research_produces_add: "每$pop_group_unit$£job_civilian£$job_civilian_plural$产出的$physics_research_with_icon$"
- mod_planet_civilians_society_research_produces_add: "每$pop_group_unit$£job_civilian£$job_civilian_plural$产出的$society_research_with_icon$"
- mod_planet_civilians_engineering_research_produces_add: "每$pop_group_unit$£job_civilian£$job_civilian_plural$产出的$engineering_research_with_icon$"
- mod_planet_civilians_consumer_goods_upkeep_add: "每$pop_group_unit$£job_civilian£$job_civilian_plural$的£consumer_goods£$consumer_goods$维护费"
+ mod_planet_civilians_physics_research_produces_add: "每$pop_group_unit$ [civilian.GetIcon] [civilian.GetNamePlural]产出的$physics_research_with_icon$"
+ mod_planet_civilians_society_research_produces_add: "每$pop_group_unit$ [civilian.GetIcon] [civilian.GetNamePlural]产出的$society_research_with_icon$"
+ mod_planet_civilians_engineering_research_produces_add: "每$pop_group_unit$ [civilian.GetIcon] [civilian.GetNamePlural]产出的$engineering_research_with_icon$"
+ mod_planet_civilians_consumer_goods_upkeep_add: "每$pop_group_unit$ [civilian.GetIcon] [civilian.GetNamePlural]的£consumer_goods£$consumer_goods$维护费"
 
  mod_pop_category_civilians_physics_research_produces_add: "每$pop_group_unit$$CIVILIANS$产出的$physics_research_with_icon$"
  mod_pop_category_civilians_society_research_produces_add: "每$pop_group_unit$$CIVILIANS$产出的$society_research_with_icon$"
@@ -1608,7 +1608,7 @@
  job_ranger_plural:0 "护林员"
  job_ranger_plural_with_icon: "£job_ranger£ $job_ranger_plural$"
  job_ranger_desc:0 "负责保护我们的行星清洁和大自然的特殊个体。"
- job_ranger_effect_desc:2 "£job_ranger£$job_ranger_plural$产出£amenities£§Y舒适度§!和£society_research£§Y$society_research$§!。取决于存在的£blocker£['concept_natural_blocker']，可能也会产出$r_energy$、$r_food$和$r_minerals$。"
+ job_ranger_effect_desc:2 "£job_ranger£$job_ranger_plural$产出£amenities£§Y舒适度§!和£society_research£§Y$society_research$§!。取决于存在的每个£blocker£['concept_natural_blocker']，可能也会产出$r_energy$、$r_food$和$r_minerals$。"
  mod_job_ranger_add:0 "$job_ranger$岗位"
  mod_job_ranger_per_pop:0 "每$VALUE$人口提供§G+1§!个$job_ranger$岗位"
  mod_job_ranger_per_pop_short:0 "\n每$VALUE$ £pop£ 提供§G+1§!£mod_job_ranger_add£"
@@ -2024,6 +2024,7 @@
  ## MODIFIERS ##
  MOD_POP_DEMOTION_TIME_MULT: "人口降级时间"
  pop_unemployment_demotion_time_mult: "$MOD_POP_DEMOTION_TIME_MULT$"
+ pop_unemployment_demotion_time_mult_tt: "$t$- $MOD_POP_DEMOTION_TIME_MULT$：$VARIABLE|0%=-$"
  mod_pop_complex_drone_unemployment_demotion_time_mult:1 "复合子个体$pop_unemployment_demotion_time_mult$"
  mod_pop_simple_drone_unemployment_demotion_time_mult:1 "低级子个体$pop_unemployment_demotion_time_mult$"
  mod_pop_ruler_unemployment_demotion_time_mult:1 "精英$pop_unemployment_demotion_time_mult$"
@@ -5190,7 +5191,7 @@
  trait_pc_machine_preference_short:0 "机械星球"
  trait_pc_machine_preference_desc:0 "$trait_pc_arctic_preference_desc$"
 
- civic_tooltip_warrior_culture_effects:2 "—将£job_entertainer£§Y$job_entertainer$§!岗位替换为£job_duelist£§Y$job_duelist$§!岗位。\n£job_duelist£§Y$job_duelist_plural$§!将£alloys£§Y$alloys$§!转化为£unity£§Y$unity$§!、£mod_planet_amenities_add£§Y$PLANET_AMENITIES_TITLE$§!和£mod_country_naval_cap_add£§Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!。\n—将£job_xeno_zoo_animal£§Y$job_xeno_zoo_animal$§!岗位替换为£job_xeno_zoo_beast£§Y$job_xeno_zoo_beast$§!岗位。"
+ civic_tooltip_warrior_culture_effects:2 "- 将£job_entertainer£§Y$job_entertainer$§!岗位替换为£job_duelist£§Y$job_duelist$§!岗位。\n- £job_duelist£§Y$job_duelist_plural$§!将£alloys£§Y$alloys$§!转化为£unity£§Y$unity$§!、£mod_planet_amenities_add£§Y$PLANET_AMENITIES_TITLE$§!和£mod_country_naval_cap_add£§Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!。\n- 将£job_xeno_zoo_animal£§Y$job_xeno_zoo_animal$§!岗位替换为£job_xeno_zoo_beast£§Y$job_xeno_zoo_beast$§!岗位。"
  RESTORE_JOBS:0 "恢复职位£job£"
  RESTORE_JOBS_COUNT:0 "$RESTORE_JOBS$（$COUNT|Y$个）"
  TOOLTIP_RESTORE_JOBS_TITLE:0 "恢复职位"

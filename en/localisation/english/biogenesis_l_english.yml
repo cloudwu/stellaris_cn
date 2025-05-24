@@ -2190,7 +2190,7 @@
  defensive_stations_tracking_add_tt: "$defensive_stations_tracking_add$: $VARIABLE|0=+$"
 
  defensive_stations_weapon_range_mult: "Starbase and Defensive Stations Weapon Range"
- defensive_stations_weapon_range_mult_tt: "$defensive_stations_weapon_range_mult$: $VARIABLE|0%=+$"
+ defensive_stations_weapon_range_mult_tt: "$defensive_stations_weapon_range_mult$: $VARIABLE|1%=+$"
 
 # Bodysnatcher
 
@@ -2792,8 +2792,8 @@
  job_transference_volunteer: "Transference Volunteer"
  job_transference_volunteer_plural: "$job_transference_volunteer$s"
  job_transference_volunteer_desc: "For many, the mindlink with the Beast is but an afterthought. Constant, but remote. For some however, the need to merge with it is irrepressible. These volunteers act as a conduit as their minds are slowly absorbed into the beastly collective."
- job_transference_volunteer_effect_desc: "\n£job_transference_volunteer£ $job_transference_volunteer_plural$ produce £unity£ §YUnity§!, increase planet $r_stability$ and make our §YShips§! stronger.\n§Y10%§! of Pops working this job will get §YTransferred§! every 6 months. Killing them, but multiplying the District's resource output.\n\n§GPops Transferred§!: [num_tranferred_pops]"
- mod_job_transference_drone_add: "$job_transference_drone$ Jobs"
+ job_transference_volunteer_effect_desc: "\n£job_transference_volunteer£ [GetTransferenceVolunteerDrone] produce £unity£ §YUnity§!, increase planet $r_stability$ and make our §YShips§! stronger.\n§Y10%§! of Pops working this job will get §YTransferred§! every 6 months. Killing them, but multiplying the District's resource output.\n\n§GPops Transferred§!: [num_tranferred_pops]"
+ mod_job_transference_drone_add: "[GetTransferenceVolunteerDrone] Jobs"
  job_transference_drone: "Transference Drone"
  job_transference_drone_plural: "$job_transference_drone$s"
  job_transference_drone_desc: "While the mindlink established a permanent connection between the Beast and us, the transference is a slow process. Without these precautions we risk shattering both psyches and ruin everything."
@@ -3130,6 +3130,7 @@
  behemoth_finale_situation_monthly_change_tooltip: "Increase your §YGrowth Factor§! by:\n- Killing other §YBehemoths§!, §YLeviathans§! or §YBiological Ships§!\n- Eating §YHabitable Planets§!.\n- Eating £pop£ §HPops§!."
  behemoth_empire_size_desc: "Empire Size"
  growth_factor_desc: "Growth Factor"
+ wilderness_behemoth: "$origin_wilderness$"
  concept_growth_factor: "$growth_factor_desc$"
  concept_growth_factor_desc: "Growth Factor is a measure of the quantity of nutrients absorbed by your Behemoth, and affects how fast the situation will progress.\n\nEvery month, it decreases by §R0.75%§!\n\n$behemoth_finale_situation_monthly_change_tooltip$\n\nThe Minimum Value is equal to §G0.5%§! per $pop_group_unit$ £pop£ §HTransferred Pops§!."
  behemoth_finale_situation_desc: "It will take some time for us to adjust to a form so massive in scale. As we grow into this body, we must remain aware of our surroundings. There now stands nothing between us and the void.\n\nOur current ['concept_growth_factor'] is: §G[growth_factor_value]%§!"

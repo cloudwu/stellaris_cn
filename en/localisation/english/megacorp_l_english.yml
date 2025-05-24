@@ -885,10 +885,10 @@
 
  planet_unemployment: "$unemployment_resources$"
 
- mod_planet_civilians_physics_research_produces_add: "$physics_research_with_icon$ per $pop_group_unit$ £job_civilian£ $job_civilian_plural$"
- mod_planet_civilians_society_research_produces_add: "$society_research_with_icon$ per $pop_group_unit$ £job_civilian£ $job_civilian_plural$"
- mod_planet_civilians_engineering_research_produces_add: "$engineering_research_with_icon$ per $pop_group_unit$ £job_civilian£ $job_civilian_plural$"
- mod_planet_civilians_consumer_goods_upkeep_add: "£consumer_goods£ $consumer_goods$ Upkeep per $pop_group_unit$ £job_civilian£ $job_civilian_plural$"
+ mod_planet_civilians_physics_research_produces_add: "$physics_research_with_icon$ per $pop_group_unit$ [civilian.GetIcon] [civilian.GetNamePlural]"
+ mod_planet_civilians_society_research_produces_add: "$society_research_with_icon$ per $pop_group_unit$ [civilian.GetIcon] [civilian.GetNamePlural]"
+ mod_planet_civilians_engineering_research_produces_add: "$engineering_research_with_icon$ per $pop_group_unit$ [civilian.GetIcon] [civilian.GetNamePlural]"
+ mod_planet_civilians_consumer_goods_upkeep_add: "£consumer_goods£ $consumer_goods$ Upkeep per $pop_group_unit$ [civilian.GetIcon] [civilian.GetNamePlural]"
 
  mod_pop_category_civilians_physics_research_produces_add: "$physics_research_with_icon$ per $pop_group_unit$ $CIVILIANS$"
  mod_pop_category_civilians_society_research_produces_add: "$society_research_with_icon$ per $pop_group_unit$ $CIVILIANS$"
@@ -1560,9 +1560,9 @@
 
  job_roboticist:0 "Roboticist"
  job_roboticist_plural:0 "Roboticists"
- job_roboticist_plural_with_icon: "[roboticist.GetIcon] [roboticist.GetNamePlural]"
+ job_roboticist_plural_with_icon: "[roboticist.GetIcon] [roboticist.GetNamePlural]"
  job_roboticist_desc:1 "These technicians build robots, that the robots may build for the nation."
- job_roboticist_effect_desc:1 "[roboticist.GetIcon] [roboticist.GetNamePlural] turn £alloys£ §Y$alloys$§! into new £pop£ §YMechanical Pops§!"
+ job_roboticist_effect_desc:1 "[roboticist.GetIcon] [roboticist.GetNamePlural] turn £alloys£ §Y$alloys$§! into new £pop£ §YMechanical Pops§!"
  job_roboticist_individual_machine_effect_desc: "[roboticist.GetIcon] [roboticist.GetNamePlural] turn £alloys£ §Y$alloys$§! into new £pop£ §YMachine Pops§!"
  job_roboticist_cyborg_effect_desc:0 "[roboticist.GetIcon] [roboticist.GetNamePlural] turn £alloys£ §Y$alloys$§! into new £pop£ §HCyborg Pops§!"
  mod_job_roboticist_add:0 "[roboticist.GetName] Jobs"
@@ -1608,7 +1608,7 @@
  job_ranger_plural:0 "Rangers"
  job_ranger_plural_with_icon: "£job_ranger£ $job_ranger_plural$"
  job_ranger_desc:0 "Special individuals tasked with ensuring that our planets remain clean and natural."
- job_ranger_effect_desc:2 "£job_ranger£ $job_ranger_plural$ produce £amenities£ §YAmenities§! and £society_research£ §Y$society_research$§!. They also produce $r_energy$, $r_food$ and $r_minerals$ depending on the £blocker£ ['concept_natural_blocker'] present."
+ job_ranger_effect_desc:2 "£job_ranger£ $job_ranger_plural$ produce £amenities£ §YAmenities§! and £society_research£ §Y$society_research$§!. They also produce $r_energy$, $r_food$ and $r_minerals$ depending on each £blocker£ ['concept_natural_blocker'] present."
  mod_job_ranger_add:0 "$job_ranger$ Jobs"
  mod_job_ranger_per_pop:0 "§G+1§! $job_ranger$ Job per $VALUE$ Pops"
  mod_job_ranger_per_pop_short:0 "\n§G+1§! £mod_job_ranger_add£ per $VALUE$ £pop£"
@@ -2024,6 +2024,7 @@
  ## MODIFIERS ##
  MOD_POP_DEMOTION_TIME_MULT: "Pop Demotion Time"
  pop_unemployment_demotion_time_mult: "$MOD_POP_DEMOTION_TIME_MULT$"
+ pop_unemployment_demotion_time_mult_tt: "$t$- $MOD_POP_DEMOTION_TIME_MULT$: $VARIABLE|0%=-$"
  mod_pop_complex_drone_unemployment_demotion_time_mult:1 "Complex Drone $pop_unemployment_demotion_time_mult$"
  mod_pop_simple_drone_unemployment_demotion_time_mult:1 "Simple Drone $pop_unemployment_demotion_time_mult$"
  mod_pop_ruler_unemployment_demotion_time_mult:1 "Elite $pop_unemployment_demotion_time_mult$"
@@ -5190,7 +5191,7 @@
  trait_pc_machine_preference_short:0 "Machine World"
  trait_pc_machine_preference_desc:0 "$trait_pc_arctic_preference_desc$"
 
- civic_tooltip_warrior_culture_effects:2 "- Replaces £job_entertainer£ §Y$job_entertainer$§! Jobs with £job_duelist£ §Y$job_duelist$§! Jobs.\n£job_duelist£ §Y$job_duelist_plural$§! turn £alloys£ §Y$alloys$§! into £unity£ §Y$unity$§!, £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§! and £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!.\n- Replaces £job_xeno_zoo_animal£ §Y$job_xeno_zoo_animal$§! Jobs with £job_xeno_zoo_beast£ §Y$job_xeno_zoo_beast$§! Jobs."
+ civic_tooltip_warrior_culture_effects:2 "- Replaces £job_entertainer£ §Y$job_entertainer$§! Jobs with £job_duelist£ §Y$job_duelist$§! Jobs.\n- £job_duelist£ §Y$job_duelist_plural$§! turn £alloys£ §Y$alloys$§! into £unity£ §Y$unity$§!, £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!, and £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!.\n- Replaces £job_xeno_zoo_animal£ §Y$job_xeno_zoo_animal$§! Jobs with £job_xeno_zoo_beast£ §Y$job_xeno_zoo_beast$§! Jobs."
  RESTORE_JOBS:0 "Restore Jobs £job£"
  RESTORE_JOBS_COUNT:0 "$RESTORE_JOBS$ ($COUNT|Y$)"
  TOOLTIP_RESTORE_JOBS_TITLE:0 "Restore Jobs"

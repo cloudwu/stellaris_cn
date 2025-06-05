@@ -167,7 +167,9 @@
 
  tr_domination_finish:0 "统御传统完成"
  tr_domination_federations_finish:0 "$tr_domination_finish$"
+ tr_domination_federations_wilderness_finish: "$tr_domination_finish$"
  tr_domination_federations_finish_desc:0 "$MOD_EMPIRE_SIZE_POPS_MULT$§G-10%§!\n允许使用§Y$hegemony_federation$§!联邦类型。\n已解锁飞升天赋：§G+1§!"
+ tr_domination_finish_wilderness_desc: "来自于地区的 $EMPIRE_SIZE$ ：§G-10%§!\n获得§Y$hegemony_federation$§! 联邦类型。\n解锁飞升特典：§G+1§!"
 
  ################################################################
  # PURITY
@@ -652,6 +654,27 @@
  tr_mercantile_worker_coop_improved_ownership_delayed: "通过采纳一项更为灵活处理控股合同的政策，我们就可以激励公民就更加高效地工作。"
 
  mod_planet_worker_ownership_jobs_produces_mult: "$living_standard_worker_ownership$生活标准下的人口产出的资源"
+ 
+################################################################
+# Logistics
+################################################################
+
+ tradition_logistics: "后勤"
+ tradition_logistics_desc: "我们将迭代优化 [This.GetAdj] 后勤流程。"
+ tr_logistics_adopt: "后勤传统"
+ tr_logistics_finish: "后勤传统完成"
+ tr_logistics_1: "嵌套协调"
+ tr_logistics_1_delayed: "提高系统效率，通过共享功能促进统一。"
+ tr_logistics_1_tt: "每个 $pop_group_unit$ $job_logistics_drone_plural_with_icon$ 的 $trade_with_icon$：§G+2§!"
+ tr_logistics_2: "分布式分发系统"
+ tr_logistics_2_delayed: "扩展的物流无人机网络提高了分发的灵活性并降低了操作冗余。"
+ tr_logistics_2_tt: "§Y来至于 £district£ 地区，£zone£ 地区特化，以及 £building£ 非首都建筑的 $job_logistics_drone_plural_with_icon$§!： §G+50%§!"
+ tr_logistics_3: "自动保养"
+ tr_logistics_3_delayed: "自治的维护无人机确保殖民地维护不需要监督。"
+ tr_logistics_4: "银河兑换效率"
+ tr_logistics_4_delayed: "增强的跨星系跟踪可最大程度地减少损失和浪费。"
+ tr_logistics_5: "补给预测模式"
+ tr_logistics_5_delayed: "战争充满着混乱。但我们的补给线例外。我们在需求出现之前就看到了，并做出了适当的回应。" 
 
 ################################################################
 # Subterfuge
@@ -763,7 +786,7 @@
  tr_psionics_psionic_assimilation_delayed:0 "可洞穿一切颠倒梦幻的眼闭上了。唯有尽一切所能方可再度开眼，使我等真正的力量觉醒。"
 
  tr_psionics_breach_shroud:0 "突入天幕"
- tr_psionics_breach_shroud_desc:0 "解锁一个§Y特殊项目§!以突入天幕\n灵能使现在产出额外§G+5%§!$mod_planet_psionic_jobs_produces_mult$"
+ tr_psionics_breach_shroud_desc:0 "解锁一个§Y特殊项目§!以突入天幕\n$每$pop_group_unit$ [telepath.GetIcon] [telepath.GetNamePlural] 的 $mod_psionic_pop_bonus_workforce_mult$ ：§G+5%§!"
  tr_psionics_breach_shroud_delayed:0 "不可估量的力量源泉正在呼唤我们，我们却仍需学习如何汲取。"
 
  tr_psionics_shrouded_encryption:0 "天幕通讯"

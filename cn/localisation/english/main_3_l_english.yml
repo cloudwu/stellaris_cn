@@ -1162,6 +1162,7 @@
  COLONIZABLE_OUTSIDE_SENSOR:0 "§R行星超出了传感器范围。§!"
  COLONIZABLE_MISSING_TECH:2 "§R还需要$TECHNAME|Y$§!"
  COLONIZABLE_NO_VALID_SPECIES: "§R没有可以殖民的物种。§!"
+ COLONIZABLE_SPECIES_UNABLE_TO_COLONIZE: "§R这个物种无法殖民§!"
  COLONIZABLE_DESC:0 "可居住：\n此行星可以被我殖民："
  COLONIZABLE_UNSURVEYED_REVEAL_DATA:0 "§H我们需要勘察此行星，获得详细信息。§!"
  HABITABLE_DESC:0 "可居住：\n我们当前无法殖民此世界。"
@@ -3933,6 +3934,9 @@
  job_slave_unprocessing: "再利用"
  job_slave_unprocessing_plural: "$job_slave_unprocessing$"
  job_slave_unprocessing_desc: "致力于解放"
+ job_presapient_unprocessing: "再利用"
+ job_presapient_unprocessing_plural: "$job_presapient_unprocessing$"
+ job_presapient_unprocessing_desc: "致力于开智"
  job_bio_trophy_processing: "$job_bio_trophy$"
  job_bio_trophy_processing_plural: "$job_bio_trophy_plural$"
  job_bio_trophy_processing_desc: "$job_bio_trophy_desc$"
@@ -4086,7 +4090,7 @@
  mod_pop_knight_commander_bonus_workforce_mult: "$job_knight_commander_plural$$BONUS_WORKFORCE_FOR$"
  mod_pop_enforcer_bonus_workforce_mult: "[enforcer.GetNamePlural]$BONUS_WORKFORCE_FOR$"
  mod_pop_educator_bonus_workforce_mult: "$job_educator_plural$$BONUS_WORKFORCE_FOR$"
- mod_pop_telepath_bonus_workforce_mult: "$job_telepath_plural$$BONUS_WORKFORCE_FOR$"
+ mod_pop_telepath_bonus_workforce_mult: "[telepath.GetNamePlural]$BONUS_WORKFORCE_FOR$"
  mod_pop_knight_bonus_workforce_mult: "[knight.GetNamePlural]$BONUS_WORKFORCE_FOR$"
  mod_pop_patrol_drone_bonus_workforce_mult: "[patrol_drone.GetNamePlural]$BONUS_WORKFORCE_FOR$"
  mod_pop_low_tech_laborer_bonus_workforce_mult: "$job_low_tech_laborer_plural$$BONUS_WORKFORCE_FOR$"
@@ -4097,6 +4101,10 @@
  mod_pop_low_tech_warrior_workforce_mult: "$job_low_tech_warrior_plural$$BONUS_WORKFORCE_FOR$"
  mod_pop_neural_chip_bonus_workforce_mult: "$job_neural_chip_plural$$BONUS_WORKFORCE_FOR$"
  mod_pop_mortal_initiate_bonus_workforce_mult: "$job_mortal_initiate_plural$$BONUS_WORKFORCE_FOR$"
+ 
+ mod_robotic_pop_bonus_workforce_mult: "机械人口$BONUS_WORKFORCE_FOR$"
+ mod_cyborg_pop_bonus_workforce_mult: "义体化人口$BONUS_WORKFORCE_FOR$"
+ mod_organic_pop_bonus_workforce_mult: "有机人口$BONUS_WORKFORCE_FOR$"
 
  ## Custom Tooltips for multi-line bonus workforce traits
 
@@ -4167,6 +4175,7 @@
  mod_pop_cat_ruler_bonus_workforce_mult: "$pop_cat_ruler_plural$岗位效率"
  mod_pop_cat_specialist_bonus_workforce_mult: "专家岗位效率"
  mod_pop_cat_worker_bonus_workforce_mult: "劳工岗位效率"
+ mod_pop_cat_civilian_bonus_workforce_mult: "公民岗位效率"
 
  #Zones
  planet_zone: "地区特化"
@@ -4185,8 +4194,9 @@
  zone_construction_zone_has_building_being_built: "§R无法移除正在建造建筑的地区特化。§!"
  zone_construction_zone_being_replaced: "§R无法移除正在被移除的地区特化。§!"
  zone_construction_zone_slot_construction: "§R地区特化槽已经有一个在队列中的建造任务。§!"
- zone_construction_replace_title: "是否替换该地区特化？"
- zone_construction_replace_message: "确定要替换掉该地区特化吗？新的种类可能无法支持部分现有建筑，将可能导致其被拆除。匹配的建筑会被保留。"
+ zone_construction_replace_title: "替换特化"
+ zone_construction_replace_message: "确定想要替换§Y$CURRENT$§! 为 §Y$REPLACEMENT$§!吗？\n§R将拆除未完成建筑：§!"
+ zone_construction_replace_message_entry: "§R- $AMOUNT$x £building£ $NAME$§!" 
  zone_construction_click_to_replace: "§G点击更改该地区特化。§!"
  zone_construction_building_will_be_moved: "§G£building£$NAME$将会保留。§!"
  zone_construction_building_will_be_removed: "§R£building£$NAME$将被移除。§!"
@@ -4241,11 +4251,13 @@
  building_automation_2: "优化建筑"
  building_automation_2_desc: "去过那里的人都说，“优化一切”"
 
+ mod_planet_farmers_trade_produces_add: "每 $pop_group_unit$ [farmer.GetIcon] [farmer.GetNamePlural] 的 $trade_with_icon$"
  mod_planet_farmers_trade_produces_add: "[farmer.GetNamePlural]产出"
  mod_planet_soldiers_produces_mult: "[soldier.GetNamePlural]产出"
  mod_planet_traders_produces_mult: "[trader.GetNamePlural]产出"
  mod_pop_healthcare_bonus_workforce_mult: "[farmer.GetNamePlural]$BONUS_WORKFORCE_FOR$"
  mod_pop_soldier_bonus_workforce_mult: "[soldier.GetNamePlural]$BONUS_WORKFORCE_FOR$"
+ mod_pop_warrior_drone_bonus_workforce_mult: "[warrior_drone.GetNamePlural]$BONUS_WORKFORCE_FOR$"
  mod_pop_civilian_bonus_workforce_mult: "$job_civilian_plural$$BONUS_WORKFORCE_FOR$"
 
  zone_urban: "都市扩建"
@@ -4468,8 +4480,9 @@
  specialist_and_complex_drone_cat_bonus_workforce_mult: "$pop_cat_specialist_plural$和$pop_cat_complex_drone_plural$$BONUS_WORKFORCE_FOR$"
  specialist_and_complex_drone_cat_bonus_workforce_mult_tt: "$t$- $specialist_and_complex_drone_cat_bonus_workforce_mult$ $VARIABLE|1%=+$"
  roboticist_jobs_bonus_workforce_mult: "机器人$BONUS_WORKFORCE_FOR$"
- roboticist_jobs_bonus_workforce_mult_tt: "- ['concept_planet_roboticists']$BONUS_WORKFORCE_FOR$ ：$VARIABLE|1%=+$"
-
+ roboticist_jobs_bonus_workforce_mult_tt: "['concept_planet_roboticists']$BONUS_WORKFORCE_FOR$ ：$VARIABLE|1%=+$"
+ everyone_but_dystopian_specialist_workforce_mult: "$MOD_POP_BONUS_WORKFORCE_MULT$"
+ everyone_but_dystopian_specialist_workforce_tt: "$MOD_POP_BONUS_WORKFORCE_MULT$: $VARIABLE|1%=+$" 
 
  concept_planet_miners: "矿业岗位"
  concept_planet_miners_desc: "矿业岗位包括：$TABBED_NEW_LINE$—[miner.GetNamePlural]$TABBED_NEW_LINE$—[mining_drone.GetNamePlural]"

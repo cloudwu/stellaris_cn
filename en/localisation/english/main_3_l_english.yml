@@ -1162,6 +1162,7 @@
  COLONIZABLE_OUTSIDE_SENSOR:0 "§RPlanet is outside of Sensor Range.§!"
  COLONIZABLE_MISSING_TECH:2 "§RDoes NOT have $TECHNAME|Y$§!"
  COLONIZABLE_NO_VALID_SPECIES: "§RNo valid species to colonize.§!"
+ COLONIZABLE_SPECIES_UNABLE_TO_COLONIZE: "§RThis species is unable to colonize§!"
  COLONIZABLE_DESC:0 "Habitable:\nThis planet can be colonized by us: "
  COLONIZABLE_UNSURVEYED_REVEAL_DATA:0 "§HWe need to survey this planet to gain detailed information.§!"
  HABITABLE_DESC:0 "Habitable:\nWe currently cannot colonize this world."
@@ -3934,6 +3935,9 @@
  job_slave_unprocessing: "Repurposing"
  job_slave_unprocessing_plural: "$job_slave_unprocessing$"
  job_slave_unprocessing_desc: "Working towards liberation"
+ job_presapient_unprocessing: "Repurposing"
+ job_presapient_unprocessing_plural: "$job_presapient_unprocessing$"
+ job_presapient_unprocessing_desc: "Working towards sapience"
  job_bio_trophy_processing: "$job_bio_trophy$"
  job_bio_trophy_processing_plural: "$job_bio_trophy_plural$"
  job_bio_trophy_processing_desc: "$job_bio_trophy_desc$"
@@ -4087,7 +4091,7 @@
  mod_pop_knight_commander_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ $job_knight_commander_plural$"
  mod_pop_enforcer_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ [enforcer.GetNamePlural]"
  mod_pop_educator_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ $job_educator_plural$"
- mod_pop_telepath_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ $job_telepath_plural$"
+ mod_pop_telepath_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ [telepath.GetNamePlural]"
  mod_pop_knight_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ [knight.GetNamePlural]"
  mod_pop_patrol_drone_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ [patrol_drone.GetNamePlural]"
  mod_pop_low_tech_laborer_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ $job_low_tech_laborer_plural$"
@@ -4098,6 +4102,10 @@
  mod_pop_low_tech_warrior_workforce_mult: "$BONUS_WORKFORCE_FOR$ $job_low_tech_warrior_plural$"
  mod_pop_neural_chip_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ $job_neural_chip_plural$"
  mod_pop_mortal_initiate_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ $job_mortal_initiate_plural$"
+
+ mod_robotic_pop_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ Mechanical and Machine Pops"
+ mod_cyborg_pop_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ Cybernetic Pops"
+ mod_organic_pop_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ Organic Pops"
 
  ## Custom Tooltips for multi-line bonus workforce traits
 
@@ -4168,6 +4176,7 @@
  mod_pop_cat_ruler_bonus_workforce_mult: "Job Efficiency for $pop_cat_ruler_plural$"
  mod_pop_cat_specialist_bonus_workforce_mult: "Job Efficiency for Specialists"
  mod_pop_cat_worker_bonus_workforce_mult: "Job Efficiency for Workers"
+ mod_pop_cat_civilian_bonus_workforce_mult: "Job Efficiency for Civilians"
 
  #Zones
  planet_zone: "District Specialization"
@@ -4186,8 +4195,9 @@
  zone_construction_zone_has_building_being_built: "§RCannot remove a District Specialization in which Buildings are under construction.§!"
  zone_construction_zone_being_replaced: "§RCannot remove a District Specialization that is already being removed.§!"
  zone_construction_zone_slot_construction: "§RDistrict Specialization Slot already has a queued construction.§!"
- zone_construction_replace_title: "Replace this District Specialization?"
- zone_construction_replace_message: "Are you sure you want to replace this District Specialization? The new type may not support some or all existing Buildings, which could result in their destruction. Compatible Buildings will be retained."
+ zone_construction_replace_title: "Replace Specialization"
+ zone_construction_replace_message: "Are you sure you want to replace §Y$CURRENT$§! with §Y$REPLACEMENT$§!?\n§RThis will demolish incompatible Buildings:§!"
+ zone_construction_replace_message_entry: "§R- $AMOUNT$x £building£ $NAME$§!"
  zone_construction_click_to_replace: "§GClick to change this District Specialization.§!"
  zone_construction_building_will_be_moved: "§G£building£ $NAME$ will be retained.§!"
  zone_construction_building_will_be_removed: "§R£building£ $NAME$ will be removed.§!"
@@ -4242,11 +4252,12 @@
  building_automation_2: "Optimization Building"
  building_automation_2_desc: "Those who have been there say, 'It optimizes.'"
 
- mod_planet_farmers_trade_produces_add: "[farmer.GetNamePlural] Production Output"
+ mod_planet_farmers_trade_produces_add: "$trade_with_icon$ per $pop_group_unit$ [farmer.GetIcon] [farmer.GetNamePlural]"
  mod_planet_soldiers_produces_mult: "[soldier.GetNamePlural] Production Output"
  mod_planet_traders_produces_mult: "[trader.GetNamePlural] Production Output"
  mod_pop_healthcare_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ [farmer.GetNamePlural]"
  mod_pop_soldier_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ [soldier.GetNamePlural]"
+ mod_pop_warrior_drone_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ [warrior_drone.GetNamePlural]"
  mod_pop_civilian_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ $job_civilian_plural$"
 
  zone_urban: "Urban Expansion"
@@ -4469,8 +4480,9 @@
  specialist_and_complex_drone_cat_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ $pop_cat_specialist_plural$ & $pop_cat_complex_drone_plural$"
  specialist_and_complex_drone_cat_bonus_workforce_mult_tt: "$t$- $specialist_and_complex_drone_cat_bonus_workforce_mult$ $VARIABLE|1%=+$"
  roboticist_jobs_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ Roboticst jobs"
- roboticist_jobs_bonus_workforce_mult_tt: "- $BONUS_WORKFORCE_FOR$ ['concept_planet_roboticists']: $VARIABLE|1%=+$"
-
+ roboticist_jobs_bonus_workforce_mult_tt: "$BONUS_WORKFORCE_FOR$ ['concept_planet_roboticists']: $VARIABLE|1%=+$"
+ everyone_but_dystopian_specialist_workforce_mult: "$MOD_POP_BONUS_WORKFORCE_MULT$"
+ everyone_but_dystopian_specialist_workforce_tt: "$MOD_POP_BONUS_WORKFORCE_MULT$: $VARIABLE|1%=+$"
 
  concept_planet_miners: "Mining Jobs"
  concept_planet_miners_desc: "Mining jobs include: $TABBED_NEW_LINE$- [miner.GetNamePlural] $TABBED_NEW_LINE$- [mining_drone.GetNamePlural]"
@@ -4864,11 +4876,11 @@
 
  mod_pop_roboticist_bonus_workforce_mult: "Job Efficiency for $job_roboticist_plural$"
  mod_pop_identity_designer_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ $job_identity_designer_plural$"
- automation_tooltip: "Building Upkeep per automated District: §R£energy£ $@b3_upkeep$§!"
- automation_2_tooltip: "Building Upkeep per automated District: §R£energy£$@b4_upkeep$§!"
+ automation_tooltip: "Building Upkeep per Automated District: §R£energy£+$@b3_upkeep$§!"
+ automation_2_tooltip: "Building Upkeep per Automated District: §R£energy£+$@b4_upkeep$§!"
 
- automation_city_tooltip: "Building Upkeep per automated District: §R£energy£$@b4_upkeep$§!"
- automation_city_2_tooltip: "Building Upkeep per automated District: §R£energy£$@b5_upkeep$§!"
+ automation_city_tooltip: "Building Upkeep per Automated District: §R£energy£+$@b4_upkeep$§!"
+ automation_city_2_tooltip: "Building Upkeep per Automated District: §R£energy£$+@b5_upkeep$§!"
 
  building_automation_city_1: "$building_automation_1$"
  building_automation_city_1_desc: "$building_automation_1_desc$"

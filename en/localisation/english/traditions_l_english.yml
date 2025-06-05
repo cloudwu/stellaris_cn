@@ -167,7 +167,9 @@
 
  tr_domination_finish:0 "Domination Traditions Finished"
  tr_domination_federations_finish:0 "$tr_domination_finish$"
+ tr_domination_federations_wilderness_finish: "$tr_domination_finish$"
  tr_domination_federations_finish_desc:0 "$MOD_EMPIRE_SIZE_POPS_MULT$ §G-10%§!\nGrants access to the §Y$hegemony_federation$§! Federation type.\nAscension Perks Unlocked: §G+1§!"
+ tr_domination_finish_wilderness_desc: "$EMPIRE_SIZE$ from Districts: §G-10%§!\nGrants access to the §Y$hegemony_federation$§! Federation type.\nAscension Perks Unlocked: §G+1§!"
 
  ################################################################
  # PURITY
@@ -654,6 +656,27 @@
  mod_planet_worker_ownership_jobs_produces_mult: "Resources from Pops with the $living_standard_worker_ownership$ Living Standard"
 
 ################################################################
+# Logistics
+################################################################
+
+ tradition_logistics: "Logistics"
+ tradition_logistics_desc: "We will recursively optimize [This.GetAdj] logistic processes."
+ tr_logistics_adopt: "Logistics Traditions"
+ tr_logistics_finish: "Logistics Traditions Finished"
+ tr_logistics_1: "Nested Coordination"
+ tr_logistics_1_delayed: "Enhanced systemic efficiency, fostering unity through shared function."
+ tr_logistics_1_tt: "$trade_with_icon$ per $pop_group_unit$ $job_logistics_drone_plural_with_icon$: §G+2§!"
+ tr_logistics_2: "Distributed Delivery Systems"
+ tr_logistics_2_delayed: "An expanded logistics drone network increases distribution flexibility and reduces operational redundancy."
+ tr_logistics_2_tt: "§Y$job_logistics_drone_plural_with_icon$§! from £district£ Districts, £zone£ District Specializations, and £building£ Non-Capital Buildings: §G+50%§!"
+ tr_logistics_3: "Autonomous Maintenance"
+ tr_logistics_3_delayed: "Self-governing maintenance drones ensure colony upkeep without the need for oversight."
+ tr_logistics_4: "Galactic Exchange Efficiencies"
+ tr_logistics_4_delayed: "Enhanced tracking across star systems minimizes loss and waste."
+ tr_logistics_5: "Predictive Resupply Patterns"
+ tr_logistics_5_delayed: "War is chaos. Our supply lines are not. We see the need before it arises, and we respond appropriately."
+
+################################################################
 # Subterfuge
 ################################################################
 
@@ -763,7 +786,7 @@
  tr_psionics_psionic_assimilation_delayed:0 "The eye that pierces all veils is closed. Only with great effort can it be opened, and our true power awakened."
 
  tr_psionics_breach_shroud:0 "Breach the Shroud"
- tr_psionics_breach_shroud_desc:0 "Unlocks a §YSpecial Project§! to Breach the Shroud.\nTelepaths now provide an additional §G+5%§! $mod_planet_psionic_jobs_produces_mult$."
+ tr_psionics_breach_shroud_desc:0 "Unlocks a §YSpecial Project§! to Breach the Shroud.\n$mod_psionic_pop_bonus_workforce_mult$ per $pop_group_unit$ [telepath.GetIcon] [telepath.GetNamePlural]: §G+5%§!"
  tr_psionics_breach_shroud_delayed:0 "A wellspring of unimaginable power calls out to us, but we have yet to learn how to draw from it."
 
  tr_psionics_shrouded_encryption:0 "Shrouded Communications"

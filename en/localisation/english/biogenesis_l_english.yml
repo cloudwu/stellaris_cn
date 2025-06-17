@@ -1581,7 +1581,7 @@
  concept_automodding_hab_preference_desc: "Regular:\n- ['trait:trait_auto_dry_preference']\n- ['trait:trait_auto_wet_preference']\n- ['trait:trait_auto_cold_preference']\n\nSpecial:\n- ['trait:trait_auto_pc_nuked_preference']\n- ['trait:trait_auto_pc_gaia_preference']\n- ['trait:trait_auto_pc_hive_preference']\n\nArtificial:\n- ['trait:trait_auto_pc_city_preference']\n- ['trait:trait_auto_pc_relic_preference']\n- ['trait:trait_auto_pc_habitat_preference']\n- ['trait:trait_auto_pc_ringworld_habitable_preference']\n- ['trait:trait_auto_pc_cosmogenesis_world_preference']"
 
  auto_base_tt: "§G$@auto_base|0%$§!"
- auto_ideal_bonus_tt: "§G+$@auto_ideal_bonus|0%$§!"
+ auto_ideal_bonus_tt: "§G$@auto_ideal_bonus|0%$§!"
  auto_base_bonus_sum_tt: "§G$@auto_base_bonus_sum|0%$§!"
  auto_base_penalty_sum_tt: "§R$@auto_base_penalty_sum|0%$§!"
 
@@ -2055,8 +2055,8 @@
  DSC_OFFSPRING_OUTLOOK: "$sm_offspring_outlook$"
  DSC_OFFSPRING_OUTLOOK_DESC: "$sm_offspring_outlook_desc$"
 
- missing_prereq_techs_and: "$RESULT$Requires all the following:\n" # TODO CD
- missing_prereq_techs_or: "$RESULT$Requires any of the following:\n" # TODO CD
+ missing_prereq_techs_and: "$RESULT$Requires all the following:\n"
+ missing_prereq_techs_or: "$RESULT$Requires any of the following:\n"
 
  MEGASTRUCTURE_BUILD_INSIDE_GRAVITY_WELL: "$TRIGGER_FAIL$Cannot build $STRUCTURE|Y$ outside a system's gravity well"
  MEGASTRUCTURE_TOO_CLOSE_TO_OBJECT: "$TRIGGER_FAIL$Cannot build $STRUCTURE|Y$ too close to $TARGET|Y$"
@@ -2621,7 +2621,7 @@
 
  #Control
  bio.3305.name: "A Complete Collection"
- bio.3305.desc: "§HThis is a pre-recorded message. Do not attempt to reply.§!\n\nWe have altered this communication for your understanding. Your limited language has been accounted for. A group of §Y[target_pop.GetSpeciesNamePlural]§! must be surrendered immediately for assimilation. Their deviance can not be tolerated. Will not be tolerated.\n\nThe transport is already positioned outside §Y[target_pop.Planet.GetName]§!. Time is against you. Failure to comply jeopardizes stability."
+ bio.3305.desc: "§HThis is a pre-recorded message. Do not attempt to reply.§!\n\nWe have altered this communication for your understanding. Your limited language has been accounted for. A §Y[target_pop.GetSpeciesName]§! must be surrendered immediately for assimilation. Their deviance can not be tolerated. Will not be tolerated.\n\nThe transport is already positioned outside §Y[target_pop.Planet.GetName]§!. Time is against you. Failure to comply jeopardizes stability."
  bio.3305.a: "We must comply."
  bio.3305.a.tooltip: "1 §Y[target_pop.GetSpeciesName]§! on §Y[target_pop.Planet.GetName]§! will be transferred to §Y[fallen_empire_hive_control.Capital.GetName]§!"
  bio.3305.b: "You will have to take them from us!"

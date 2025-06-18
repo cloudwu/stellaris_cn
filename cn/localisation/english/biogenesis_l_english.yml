@@ -1581,7 +1581,7 @@
  concept_automodding_hab_preference_desc: "普通：\n—['trait:trait_auto_dry_preference']\n—['trait:trait_auto_wet_preference']\n—['trait:trait_auto_cold_preference']\n\n特殊：\n—['trait:trait_auto_pc_nuked_preference']\n—['trait:trait_auto_pc_gaia_preference']\n—['trait:trait_auto_pc_hive_preference']\n\n人工：\n—['trait:trait_auto_pc_city_preference']\n—['trait:trait_auto_pc_relic_preference']\n—['trait:trait_auto_pc_habitat_preference']\n—['trait:trait_auto_pc_ringworld_habitable_preference']\n—['trait:trait_auto_pc_cosmogenesis_world_preference']"
 
  auto_base_tt: "§G$@auto_base|0%$§!"
- auto_ideal_bonus_tt: "§G+$@auto_ideal_bonus|0%$§!"
+ auto_ideal_bonus_tt: "§G$@auto_ideal_bonus|0%$§!"
  auto_base_bonus_sum_tt: "§G$@auto_base_bonus_sum|0%$§!"
  auto_base_penalty_sum_tt: "§R$@auto_base_penalty_sum|0%$§!"
 
@@ -2055,8 +2055,8 @@
  DSC_OFFSPRING_OUTLOOK: "$sm_offspring_outlook$"
  DSC_OFFSPRING_OUTLOOK_DESC: "$sm_offspring_outlook_desc$"
 
- missing_prereq_techs_and: "$RESULT$需要以下全部：\n" #TODO CD
- missing_prereq_techs_or: "$RESULT$需要以下任一：\n" #TODO CD
+ missing_prereq_techs_and: "$RESULT$需要以下全部：\n"
+ missing_prereq_techs_or: "$RESULT$需要以下任一：\n"
 
  MEGASTRUCTURE_BUILD_INSIDE_GRAVITY_WELL: "$TRIGGER_FAIL$无法在星系的引力井外建造$STRUCTURE|Y$"
  MEGASTRUCTURE_TOO_CLOSE_TO_OBJECT: "$TRIGGER_FAIL$无法在离$TARGET|Y$过近的地方建造$STRUCTURE|Y$"
@@ -2621,7 +2621,7 @@
 
  #Control
  bio.3305.name: "完整收藏"
- bio.3305.desc: "§H这是一则预先录制的信息。请勿尝试回复。§!\n\n我们已调整此通讯以便你理解。已考虑到你们有限的语言能力。必须立即上缴一组§Y[target_pop.GetSpeciesNamePlural]§!用于同化。他们的异常不能容忍。绝不容忍。\n\n运输船已在§Y[target_pop.Planet.GetName]§!外待命。时间紧迫。拒绝配合将危及稳定。"
+ bio.3305.desc: "§H这是一则预先录制的信息。请勿尝试回复。§!\n\n我们已调整此通讯以便你理解。已考虑到你们有限的语言能力。必须立即上缴一个§Y[target_pop.GetSpeciesName]§!用于同化。他们的异常不能容忍。绝不容忍。\n\n运输船已在§Y[target_pop.Planet.GetName]§!外待命。时间紧迫。拒绝配合将危及稳定。"
  bio.3305.a: "我们必须遵从。"
  bio.3305.a.tooltip: "§Y[target_pop.Planet.GetName]§!上的 1 §Y[target_pop.GetSpeciesName]§!将会被转变为§Y[fallen_empire_hive_control.Capital.GetName]§!"
  bio.3305.b: "你得先打败我们才行！"

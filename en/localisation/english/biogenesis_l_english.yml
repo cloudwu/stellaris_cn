@@ -125,7 +125,7 @@
  concept_automodding_malleable: "Malleable Genes Auto-Mod Trait List"
  concept_automodding_malleable_desc: "- ['trait:trait_malleable_minerals']\n- ['trait:trait_malleable_energy']\n- ['trait:trait_malleable_food']\n- ['trait:trait_malleable_research']\n- ['trait:trait_malleable_unity']\n- ['trait:trait_malleable_forge']\n- ['trait:trait_malleable_trade']\n- ['trait:trait_malleable_ameneties']"
  concept_adaptive_evolution: "Adaptive Evolution"
- concept_adaptive_evolution_desc: "The situation progresses as DNA of other lifeforms is consumed.\n§GOn Complete:§!\n$t$- Choose a new species trait based on the species recently consumed\n§YProgressed by:§!\n$t$- Colonizing new planets\n$t$- Purging or keeping other species as livestock\n$t$- Keeping other species within your Empire as slaves or at a higher standard\n$t$- Employing alien leaders on your Council\n$t$- Keeping Biological Vassals\n$t$-Forming Commercial Pacts as a MegaCorp\n$t$- Encountering alien life through events"
+ concept_adaptive_evolution_desc: "The situation progresses as DNA of other lifeforms is consumed.\n§GOn Complete:§!\n$t$- Choose a new species trait based on the species recently consumed\n§YProgressed by:§!\n$t$- Colonizing new planets\n$t$- Purging or keeping other species as livestock\n$t$- Keeping other species within your Empire as slaves or at a higher standard\n$t$- Employing alien leaders on your Council\n$t$- Keeping Biological Vassals\n$t$- Forming Commercial Pacts as a MegaCorp\n$t$- Encountering alien life through events"
  concept_genetic_soup: "$genetic_soup$"
  concept_genetic_soup_desc: "$fresh_biosphere_tt$\n\n§L$genetic_soup_desc$§!"
 
@@ -234,7 +234,7 @@
  concept_toxoid_genes: "Toxoid Genes"
  concept_toxoid_genes_desc: "Toxoid Species Traits:\n$t$['trait:trait_acidic_vascularity']\n$t$['trait:trait_spare_organs']"
  concept_evopred_genetic_insights: "Genetic Insights"
- concept_evopred_genetic_insights_desc: "§YGenetic Insights can be gained by:§!\n$t$- Colonizing new planets\n$t$- Purging or keeping other species as Livestock\n$t$- Keeping other species within our Empire as slaves or better\n$t$- Employing alien leaders on our ['concept_council']\n$t$- Keeping vassals with with §YGenetic Tithe§! Agreeement\n$t$- For Megacorps, maintaining Commercial Pacts\n$t$- Encountering alien life through events"
+ concept_evopred_genetic_insights_desc: "§YGenetic Insights can be gained by:§!\n$t$- Colonizing new planets\n$t$- Purging or keeping other species as Livestock\n$t$- Keeping other species within our Empire as slaves or better\n$t$- Employing alien leaders on our ['concept_council']\n$t$- Keeping vassals with §YGenetic Tithe§! Agreeement\n$t$- For Megacorps, maintaining Commercial Pacts\n$t$- Encountering alien life through events"
 
  situation_evolutionary_predators_consume: "Consume"
  evolutionary_predators_consume_tooltip: "Increases Situation Progress from §YLivestock§! and §YPurged Pops§! by §G+50%§!"
@@ -248,6 +248,10 @@
  evolutionary_predators_council: "Councilor Variety"
  evolutionary_predators_subjects: "Subject Variety"
  evolutionary_predators_megacorp: "Commercial Pact Extraction"
+
+ evopred_small_progress: "Progresses the §YAdaptive Evolution§! Situation by §G5%§!"
+ evopred_medium_progress: "Progresses the §YAdaptive Evolution§! Situation by §G10%§!"
+ evopred_large_progress: "Progresses the §YAdaptive Evolution§! Situation by §G20%§!"
  evopred_base_extracted: "DNA will be added to our next evolution."
  evopred_humanoid_extracted: "§YHumanoid§! $evopred_base_extracted$"
  evopred_mammalian_extracted: "§YMammalian§! $evopred_base_extracted$"
@@ -1182,7 +1186,7 @@
  job_genomic_researcher_plural_with_icon: "£job_genomic_researcher£ $job_genomic_researcher_plural$"
  job_genomic_researcher_desc: "$job_genomic_researcher_plural$ conduct research into our genetic future."
  job_genomic_researcher_effect_desc: "£job_genomic_researcher£ $job_genomic_researcher_plural$ turn $r_consumer_goods$ into $r_society$ and $r_amenities$"
- job_genomic_researcher_situation_effect_desc: "£job_genomic_researcher£ $job_genomic_researcher_plural$ turn $r_consumer_goods$ into $r_society$, $r_amenities$ and increase §Y$genetic_ascension_situation$ Monthly Situation Progress§!"
+ job_genomic_researcher_situation_effect_desc: "£job_genomic_researcher£ $job_genomic_researcher_plural$ increase §Y$genetic_ascension_situation$ Monthly Situation Progress§!"
  mod_job_genomic_researcher_add: "$job_genomic_researcher$ Jobs"
  healthcare_is_genomic_researcher_tt: "£job_healthcare£ $job_healthcare_plural$ are converted into $job_genomic_researcher_plural_with_icon$"
 
@@ -1193,9 +1197,9 @@
  job_genomic_drone_plural_with_icon: "£job_genomic_drone£ $job_genomic_drone_plural$"
  job_genomic_drone_desc: "$job_genomic_drone_plural$ conduct research into our genetic future."
  job_genomic_drone_effect_desc: "£job_genomic_drone£ $job_genomic_drone_plural$ turn $r_food$ (or $r_minerals$) into $r_society$ and $r_amenities$"
- job_genomic_drone_situation_effect_desc: "£job_genomic_drone£ $job_genomic_drone_plural$ turn $r_food$ (or $r_minerals$) into $r_society$, $r_amenities$ and increase §Y$genetic_ascension_situation$ Monthly Situation Progress§!"
+ job_genomic_drone_situation_effect_desc: "£job_genomic_drone£ $job_genomic_drone_plural$ increase §Y$genetic_ascension_situation$ Monthly Situation Progress§!"
  mod_job_genomic_drone_add: "$job_genomic_drone$ Jobs"
- spawning_is_genomic_researcher_tt: "$job_genomic_drone_plural_with_icon$ are converted into $job_genomic_researcher_plural_with_icon$"
+ spawning_is_genomic_researcher_tt: "£job_spawning_drone£ $job_spawning_drone_plural$ are converted into $job_genomic_drone_plural_with_icon$"
 
  # Approach Unlocks
 
@@ -1412,7 +1416,7 @@
  LEADERS_GAIN_CLONES: "All eligible Leaders gain the §Y$leader_trait_has_backup_clone$§! trait"
 
  concept_backup_clones: "$leader_trait_has_backup_clone_plural$"
- concept_backup_clones_desc: "- New Leaders may start with the §Y$leader_trait_has_backup_clone$§! trait $NEW_LINE$- Leaders may gain the §Y$leader_trait_has_backup_clone$§! trait when levelling up $NEW_LINE$- Leaders with the §Y$leader_trait_has_backup_clone$§! trait can avoid death"
+ concept_backup_clones_desc: "- New Leaders may start with the §Y$leader_trait_has_backup_clone$§! trait $NEW_LINE$- Leaders may gain the §Y$leader_trait_has_backup_clone$§! trait when levelling up $NEW_LINE$- Leaders with the §Y$leader_trait_has_backup_clone$§! trait can avoid death $NEW_LINE$- Leaders with the §Y$leader_trait_legendary_leader$§! trait cannot be cloned"
 
  leader_trait_has_backup_clone: "Backup Clone"
  leader_trait_has_backup_clone_plural: "Backup Clones"
@@ -1466,13 +1470,25 @@
  tr_mutation_finish: "$tradition_mutation$ Traditions Finished"
  tr_mutation_finish_tt: "Allows the adoption of [GetMutationAuthorities]\n[GetGenomicSwap]"
  tr_mutation_environmental_integration: "Environmental Integration"
- tr_mutation_environmental_integration_delayed: "We will adapt our genetic structures to thrive in diverse environments."
+ tr_mutation_environmental_integration_delayed: "We will adapt our genetic structures to thrive in diverse environments.[GetEnvironmentalIntegrationSwapTT]"
  tr_mutation_environmental_integration_tt: "[GetEnvironmentalIntegrationEffects]"
  tr_mutation_environmental_integration_1_tt: "The §YFounder Species'§! current Habitability Trait is replaced with ['trait:trait_auto_hab_preference']\n$EXCEED_HABITABILITY_CAP_TT$"
  tr_mutation_environmental_integration_2_tt: "$tr_mutation_environmental_integration_1_tt$\nThe §Y$council_agenda_agenda_mutation_divergence_name$§! Council Agenda will now also grant the §Y$trait_auto_hab_preference$§! Habitability Trait"
- EXCEED_HABITABILITY_CAP_TT: "Species with §Y$trait_auto_hab_preference$§! can reach §G200%§! Habitability, granting the following for every §G10%§! Habitability above §G100%§!: $TABBED_NEW_LINE$- $MOD_POP_BONUS_WORKFORCE_MULT$: §G$@auto_adapted_production|2%$§!$TABBED_NEW_LINE$- $MOD_POP_HOUSING_USAGE_MULT$: §G$@auto_adapted_housing|2%$§!$TABBED_NEW_LINE$- $MOD_POP_AMENITIES_USAGE_MULT$: §G$@auto_adapted_amenities|%2$§!"
+ EXCEED_HABITABILITY_CAP_TT: "Species with §Y$trait_auto_hab_preference$§! can reach §G175%§! Habitability, $HIGH_HABITABILITY_EFFECTS_TT$"
+ tr_mutation_environmental_integration_swap_tt: "\n\n§WThis Tradition is upgraded if §H$concept_mutation_authorities$§! are adopted.§!"
+ HIGH_HABITABILITY_EFFECTS_TT: "granting the following for every §G10%§! Habitability above §G100%§!: $TABBED_NEW_LINE$- $MOD_POP_BONUS_WORKFORCE_MULT$: §G$@auto_adapted_production|2%$§!$TABBED_NEW_LINE$- $MOD_POP_HOUSING_USAGE_MULT$: §G$@auto_adapted_housing|2%$§!$TABBED_NEW_LINE$- $MOD_POP_AMENITIES_USAGE_MULT$: §G$@auto_adapted_amenities|%2$§!"
+ tr_mutation_empowered_environmental_integration: "Empowered $tr_mutation_environmental_integration$"
+ tr_mutation_empowered_environmental_integration_delayed: "$tr_mutation_environmental_integration_delayed$"
+ tr_mutation_empowered_environmental_integration_tt: "[GetEmpoweredEnvironmentalIntegrationEffects]"
+ tr_mutation_empowered_environmental_integration_1_tt: "The §YFounder Species'§! current Habitability Trait is replaced with ['trait:trait_auto_hab_preference']\n$EMPOWERED_EXCEED_HABITABILITY_CAP_TT$ "
+ tr_mutation_empowered_environmental_integration_2_tt: "$tr_mutation_empowered_environmental_integration_1_tt$\nThe §Y$council_agenda_agenda_mutation_divergence_name$§! Council Agenda will now also grant the §Y$trait_auto_hab_preference$§! Habitability Trait"
+ EMPOWERED_EXCEED_HABITABILITY_CAP_TT: "§YOrganic Species§! can reach §G250%§! Habitability, $HIGH_HABITABILITY_EFFECTS_TT$"
+ MOD_UNCAPPED_HABITABILITY_CEIL_ADD: "$trait_auto_hab_preference$ Limit"
+ empowered_environmental_integration_tradition_tt: "The §Y$tr_mutation_environmental_integration$§! Tradition is upgraded"
  tr_mutation_environmental_integration_evo_pred: "$tr_mutation_environmental_integration$"
  tr_mutation_environmental_integration_evo_pred_delayed: "$tr_mutation_environmental_integration_delayed$"
+ tr_mutation_empowered_environmental_integration_evo_pred: "$tr_mutation_empowered_environmental_integration$"
+ tr_mutation_empowered_environmental_integration_evo_pred_delayed: "$tr_mutation_empowered_environmental_integration_delayed$"
  tr_mutation_planned_polymorphism: "Planned Polymorphism"
  tr_mutation_planned_polymorphism_delayed: "Strategic induction of polymorphism will optimize our genetic traits."
  tr_mutation_planned_polymorphism_tt: "Effects of ['concept_automodding_adaptive', Adaptive Traits] are increased to §G+$@adaptive_boosted_output|0%$§!\n$CAN_ASSIMILATE_HIVES$"
@@ -1647,20 +1663,20 @@
  trait_leader_genetic_purist_desc: "This leader's work is guided by an unshakable vision of genetic perfection, and an intolerance for imperfection in all its forms."
 
  auth_bio_democratic_purity: "Phenotypical Autonomy"
- auth_bio_democratic_purity_tt: "$pop_effects_from_purity_header$ $TABBED_NEW_LINE$- £mod_pop_happiness£ $MOD_POP_HAPPINESS$: $plus_minus_icon$§Y$@purity_traits_happiness|1%$§! $DOUBLE_NEW_LINE$$authority_grants_genetic_purist_tt$ $TABBED_NEW_LINE$- $mod_leaders_upkeep_mult$ $minus_plus_icon$§Y5.0%§! $TABBED_NEW_LINE$- $MOD_LEADER_SPECIES_EXP_GAIN$ $plus_minus_icon$§Y5.0%§!"
+ auth_bio_democratic_purity_tt: "$pop_effects_from_purity_header$ $TABBED_NEW_LINE$- £mod_pop_happiness£ $MOD_POP_HAPPINESS$: $plus_minus_icon$§Y$@purity_traits_happiness|1%$§! $DOUBLE_NEW_LINE$$authority_grants_genetic_purist_tt$ $TABBED_NEW_LINE$- $mod_leaders_upkeep_mult$ $minus_plus_icon$§Y2.5%§! $TABBED_NEW_LINE$- $MOD_LEADER_SPECIES_EXP_GAIN$ $plus_minus_icon$§Y2.5%§!"
  auth_bio_democratic_purity_desc: "Bodily self-determination is a right. The state empowers individuals to modify their vessels as they see fit. Limited only by their imagination, the body becomes the ultimate canvas."
 
  auth_bio_oligarchic_purity: "Eugenic Hierarchy"
  auth_bio_oligarchic_purity_tt: "$eugenic_political_power_effects$"
  auth_bio_oligarchic_purity_desc: "Absolute power must be entrusted to the genetically ordained elite, the purest and most capable stewards of this civilization's destiny. Beneath them, each citizen fulfills a predefined role, meticulously tailored to their inherited genetic potential. Contentment flows not from ambition, but from accepting one's designated purpose."
- eugenic_political_power_effects: "$pop_effects_from_purity_header$ $TABBED_NEW_LINE$- $MOD_POP_BONUS_WORKFORCE_MULT$: $plus_minus_icon$§Y$@purity_traits_bonus_workforce_mult|1%$§! $DOUBLE_NEW_LINE$$authority_grants_genetic_purist_tt$ $TABBED_NEW_LINE$- $MOD_COUNCIL_AGENDA_PROGRESS_SPEED$: $plus_minus_icon$§Y$@purity_traits_council_speed|Y1%$§!"
+ eugenic_political_power_effects: "$pop_effects_from_purity_header$ $TABBED_NEW_LINE$- $MOD_POP_BONUS_WORKFORCE_MULT$: $plus_minus_icon$§Y$@purity_traits_bonus_workforce_mult|2%$§! $DOUBLE_NEW_LINE$$authority_grants_genetic_purist_tt$ $TABBED_NEW_LINE$- $MOD_COUNCIL_AGENDA_PROGRESS_SPEED$: $plus_minus_icon$§Y$@purity_traits_council_speed|Y1%$§!"
 
  auth_bio_dictatorial_purity: "Nucleic Judiciary"
  auth_bio_dictatorial_purity_tt: "$pop_effects_from_purity_header$ $TABBED_NEW_LINE$£society£ Society Research Produced per $pop_group_unit$ £pop£ Pops: $plus_minus_icon$§Y$@purity_traits_resource$§! $DOUBLE_NEW_LINE$$authority_grants_genetic_purist_tt$ $TABBED_NEW_LINE$- Planetary $MOD_PLANET_CRIME_ADD$: $minus_plus_icon$§Y5.0§! $TABBED_NEW_LINE$- Sector $MOD_PLANET_CRIME_ADD$: $minus_plus_icon$§Y2.5§! $TABBED_NEW_LINE$- Planetary $MOD_PLANET_STABILITY_ADD$: $plus_minus_icon$§Y5.0§! $TABBED_NEW_LINE$- Sector $MOD_PLANET_STABILITY_ADD$: $plus_minus_icon$§Y2.5§!"
  auth_bio_dictatorial_purity_desc: "This government wields genetic and biometric data as tools of pre-emptive justice, scrutinizing every citizen's genetic code for criminal predispositions. By intervening before transgression, it ensures order through meticulous oversight. True justice is not reactive but preventive, safeguarding society by eliminating crime at the root."
 
  auth_bio_imperial_purity: "Biotic Dominion"
- auth_bio_imperial_purity_tt: "£leader£ §Y$imperial_ruler$§! and §YHeir§! Effects from ['concept_genetic_purity']:$TABBED_NEW_LINE$- $MOD_LEADER_SKILL_ADD$: $plus_minus_icon$§Y$@purity_traits_imperial_level|2$§! $DOUBLE_NEW_LINE$£leader£ Leaders of our §Y[Ruler.GetTitle]'s Species§! gain the §Y$imperial_bloodline$§! trait\n£leader£ §YImperial Bloodline§! Effects from ['concept_genetic_purity']: $TABBED_NEW_LINE$- $MOD_LEADER_LIFESPAN_MULT$: $plus_minus_icon$§Y$@purity_traits_imperial_bloodline|1%$§! $TABBED_NEW_LINE$- $MOD_LEADER_SPECIES_EXP_GAIN$: $plus_minus_icon$§Y$@purity_traits_leader_xp|1%$§!"
+ auth_bio_imperial_purity_tt: "£leader£ §Y$imperial_ruler$§! and §YHeir§! Effects from ['concept_genetic_purity']:$TABBED_NEW_LINE$- $MOD_LEADER_SKILL_ADD$: $plus_minus_icon$§Y$@purity_traits_imperial_level|2$§! $DOUBLE_NEW_LINE$£leader£ Leaders of our §Y[Ruler.GetTitle]'s Species§! gain the §Y$imperial_bloodline$§! trait\n£leader£ §YImperial Bloodline§! Effects from ['concept_genetic_purity']: $TABBED_NEW_LINE$- $MOD_LEADER_LIFESPAN_MULT$: $plus_minus_icon$§Y$@purity_traits_imperial_bloodline|1%$§! $TABBED_NEW_LINE$- $MOD_LEADER_SPECIES_EXP_GAIN$: $plus_minus_icon$§Y$@purity_traits_imperial_bloodline|1%$§!"
  auth_bio_imperial_purity_desc: "Championing genetic excellence, this government extends its leaders' lifespans while relentlessly pursuing biotic perfection. Society's prosperity hinges on the survival and propagation of only the finest genes, ensuring a future defined by superiority. The unyielding curation of the genetic pool guarantees progress, with longevity and perfection as its ultimate rewards."
 
  auth_bio_corporate_purity: "Organic Syndicate"
@@ -1724,18 +1740,19 @@
 
  # Mutation
 
+ auth_mutation_habitability_tt: "Organic Species can reach §G175%§! Habitability"
  auth_bio_democratic_mutation: "Biodiverse Liberty"
  auth_bio_democratic_mutation_desc: "This society upholds the principle that each individual's body is their temple, fully under their own design and control. Within a framework of freedom and unwavering support, citizens are empowered to realize their unique potential, shaping themselves and their futures as they see fit."
  auth_bio_oligarchic_mutation: "Catalytic Command"
  auth_bio_oligarchic_mutation_desc: "Power is concentrated in an elite class endowed with superior genetic mutations, granting them unparalleled authority. Operating beyond the confines of ordinary law, they wield their abilities to protect and guide society, taking whatever actions are deemed necessary to ensure its survival and prosperity."
  auth_bio_dictatorial_mutation: "Hybrid Mandate"
  auth_bio_dictatorial_mutation_desc: "This society mandates genetic mutation as the cornerstone of its advancement. Those who are content to remain as nature made them face immediate internment or termination, ensuring that only the genetically superior contribute to the species' relentless drive toward perfection."
- auth_bio_dictatorial_mutation_tt: "\n£crime£ Crime from [enforcer.GetIcon] [enforcer.GetName]s §G-5§!"
+ auth_bio_dictatorial_mutation_tt: "\n£crime£ Crime from [enforcer.GetIcon] [enforcer.GetName]s §G-5§!\n$auth_mutation_habitability_tt$"
  auth_bio_imperial_mutation: "Genomic Expansionist"
  auth_bio_imperial_mutation_desc: "Embracing the unpredictable power of random mutation, this empire taps into untold potential, fostering innovations and abilities that traditional methods could never achieve. In the race for dominance, the chaos of mutation becomes their greatest advantage, propelling them toward unrivaled supremacy."
  auth_bio_corporate_mutation: "Organ Usury"
  auth_bio_corporate_mutation_desc: "Under this authority, the financing of organs and body parts is made accessible to all through flexible payment plans. Missed payments result in swift repossession or the forfeiture of agreed-upon collateral. This system ensures a steady supply and demand cycle, where every body part is both a commodity and a commitment."
- auth_bio_corporate_mutation_tt: "$organic_leaders_have_trade_upkeep$\n$r_trade$ per $pop_group_unit$ £pop£ Pops from ['trait:trait_spare_organs']: §G+0.10§!"
+ auth_bio_corporate_mutation_tt: "$organic_leaders_have_trade_upkeep$\n$r_trade$ per $pop_group_unit$ £pop£ Pops from ['trait:trait_spare_organs']: §G+0.5§!\n$auth_mutation_habitability_tt$"
 
  auth_bio_democratic_evopred: "Genetic Electorate"
  auth_bio_democratic_evopred_desc: "While difficult to manage, this society has gained partial control over their malleable genome. The people will decide how their mutations will manifest."
@@ -1759,7 +1776,7 @@
  auth_bio_hive_mind_evopred: "Chimeral Consciousness"
  auth_bio_hive_mind_evopred_desc: "This hive mind has tired of simple self-transformation. Each new colony can become part of its living tapestry, in an ever-shifting fusion of landscape and flesh. As borders dissolve in the Chimeral Consciousness, creatures and worlds become one."
  auth_bio_hive_mind_evopred_tt: "$auth_bio_evopred_tt$\nAutomatically Terraforms colonies into §YHive Worlds§!\nIncreases ['concept_adaptive_evolution'] Progress from purging alien §YSpecies§! by §G+100%§!"
- auth_bio_evopred_tt: "$EMPIRE_SIZE$ from Pops per Species Trait: §G-1%§!"
+ auth_bio_evopred_tt: "$EMPIRE_SIZE$ from Pops per Species Trait: §G-1%§!\n$auth_mutation_habitability_tt$"
 
  # Hive Advanced Authorities
 
@@ -1866,6 +1883,8 @@
  BYPASS_NAME_STARLIT_WORMHOLE: "$SYSTEM$ $BYPASS_STARLIT_WORMHOLE$"
  BYPASS_DESC_STARLIT_WORMHOLE: "A wormhole with unique properties."
  BYPASS_DESC_UNKNOWN_STARLIT_WORMHOLE: "$BYPASS_DESC_STARLIT_WORMHOLE$"
+ ENTRY_BYPASS_STARLIT_WORMHOLE: "$BYPASS_TYPE$"
+ EXIT_BYPASS_STARLIT_WORMHOLE: "$BYPASS_TYPE$"
  starlit_wormhole_modifier: "$STARLIT_WORMHOLE_GALACTIC$"
  d_ruined_hatchery: "£blocker£ Ruined Hatchery"
  d_ruined_hatchery_desc: "This automated industrial complex employed self-sustaining power generation to continuously produce biological machines."
@@ -2186,7 +2205,7 @@
  civic_machine_stalwart_network: "Stalwart Network"
  civic_machine_stalwart_network_desc: "This Machine Intelligence specializes into defensive military procedures, combining hard defense with hit and run protocols."
 
- defensive_stations_tracking_add: "Starbase and Defensive Stations Tracking"
+ defensive_stations_tracking_add: "$t$- Starbase and Defensive Stations Tracking"
  defensive_stations_tracking_add_tt: "$defensive_stations_tracking_add$: $VARIABLE|0=+$"
 
  defensive_stations_weapon_range_mult: "Starbase and Defensive Stations Weapon Range"
@@ -2389,7 +2408,7 @@
  NAME_Chance_of_Glory: "Chance of Glory"
  death_world: "Death World"
  death_world_desc: "Although technically habitable, this world is a true nightmare to live on. Every local form of wildlife, from flora to fauna, down to the unassuming critters has proven deadlier than the most fearsome predators on our home planet."
- d_lethal_ecosphere_blocker: "Lethal Ecosphere"
+ d_lethal_ecosphere_blocker: "£blocker£ Lethal Ecosphere"
  d_lethal_ecosphere_blocker_desc: "Specimens and experiments discarded by the War fragment constantly vie for survival in bloody unnatural selection. These incredibly hostile training grounds are sure to prove lethal for most soldiers but survivors would undoubtedly come out of this as relentless killing machines."
  war_experimental_scaling_modifier: "$NAME_Experimental_Ship$"
 

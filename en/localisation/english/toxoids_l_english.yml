@@ -25,6 +25,7 @@
  mod_job_knight_per_pop:0 "§G+1§! [knight.GetName] Job per $VALUE$ Pops"
  mod_job_knight_per_pop_short:0 "\n§G+1§! [knight.GetIcon] per $VALUE$ £pop£"
  planet_knights:0 "Knights"
+ mod_planet_knights_upkeep_mult: "[knight.GetName] Upkeep"
 
  job_squire:0 "Squire"
  job_squire_plural:0 "Squires"
@@ -37,8 +38,8 @@
  mod_planet_squires_food_produces_add: "£food£ $food$ per $pop_group_unit$ [squire.GetIcon] [squire.GetNamePlural]"
  mod_planet_squires_exotic_gases_produces_add: "£exotic_gases£ $exotic_gases$ per $pop_group_unit$ [squire.GetIcon] [squire.GetNamePlural]"
 
- knights_more_unity_tooltip:1 "[knight.GetIcon] §Y[knight.GetNamePlural]§! will now produce §G+3§! additional £unity£ Unity.\nThe £job_knight_commander£ §Y$job_knight_commander$§! will now produce §G+4§! additional £unity£ Unity."
- knights_more_research_tooltip:1 "[knight.GetIcon] §Y[knight.GetNamePlural]§! will now produce §G+2§! additional £physics_research£ £society_research£ £engineering_research£ Research.\nThe £job_knight_commander£ §Y$job_knight_commander$§! will now produce §G+2§! additional £physics_research£ £society_research£ £engineering_research£ Research."
+ knights_more_unity_tooltip:1 "[knight.GetIcon] §Y[knight.GetNamePlural]§! will now produce §G+3§! additional £unity£ Unity and their §YUpkeep§! is increased by §R15%§!.\nThe £job_knight_commander£ §Y$job_knight_commander$§! will now produce §G+4§! additional £unity£ Unity."
+ knights_more_research_tooltip:1 "[knight.GetIcon] §Y[knight.GetNamePlural]§! will now produce §G+2§! additional £physics_research£ £society_research£ £engineering_research£ Research and their §YUpkeep§! is increased by §R15%§!.\nThe £job_knight_commander£ §Y$job_knight_commander$§! will now produce §G+2§! additional £physics_research£ £society_research£ £engineering_research£ Research."
 
  job_knight_commander:0 "Lord Commander"
  job_knight_commander_plural:0 "Lord Commanders"
@@ -776,7 +777,7 @@
  trait_commercial_genius_tooltip: "$BONUS_WORKFORCE_FOR$ ['concept_planet_traders']: §G+25%§!"
  trait_crafted_smiles:0 "Crafted Smiles"
  trait_crafted_smiles_desc:0 "§LSlightly shifted facial features, a mix of enhanced and slackened muscular development - and of course outside chemicals - have created the perfect smile. Forever.§!"
- crafted_smiles_tooltip:0 "$BONUS_WORKFORCE_FOR$ ['concept_planet_entertainers']: §G+15%§!"
+ crafted_smiles_tooltip:0 "$BONUS_WORKFORCE_FOR$ ['concept_planet_influential']: §G+15%§!"
  trait_low_maintenance:0 "Low Maintenance"
  trait_low_maintenance_desc:1 "§LReduced consumption, excretion, and rest rates have resulted in twice the beings for half the price. However, demand for protein-rich meals has increased.§!"
  low_maintenance_tooltip:0 "Pop Consumer Goods Upkeep: §G-10%§!"

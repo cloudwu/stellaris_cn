@@ -68,7 +68,7 @@
 
  origin_shattered_ring:0 "Shattered Ring"
  origin_shattered_ring_desc:1 "This civilization inhabits a §HRing World§! built by unknown forerunners. If it can be understood and fully repaired it will grant them great power."
- origin_tooltip_shattered_ring_effects:3 "- $HOMEWORLD$ ['concept_pc_shattered_ring']$NEW_LINE$- ['concept_guaranteed_colonies']: Colonizable Ring World Segments instead of Planets$NEW_LINE$- $SPECIES_TRAITS$ ['concept_ring_preference']"
+ origin_tooltip_shattered_ring_effects:3 "- $HOMEWORLD$ ['concept_pc_shattered_ring']$NEW_LINE$- ['concept_guaranteed_colonies']: Replaced with Colonizable Ring World Segments that have £blocker£ §RBlockers§! decreasing £mod_pop_environment_tolerance£ Habitability $NEW_LINE$- $SPECIES_TRAITS$ ['concept_ring_preference']"
  origin_tooltip_shattered_ring_effects_lithoid:0 "§R- WARNING: Challenging Origin for Lithoids due to a scarcity of minerals.§!$NEW_LINE$$origin_tooltip_shattered_ring_effects$"
 
  origin_remnants:0 "Remnants"
@@ -115,7 +115,7 @@
  d_tree_of_life_colony_desc:1 "An offshoot of the Great Tree, transplanted here by the Hive. It will take millennia for it to fully mature."
  d_lithoid_crater:0 "Massive Crater"
  d_lithoid_crater_desc:0 "The impact site of the meteorite which brought Lithoids to this planet."
- d_lithoid_crater_custom_tooltip: "$t$Increases the effect of §YLithoid Traits§! by §G+50%§!"
+ d_lithoid_crater_custom_tooltip: "$t$Increases the positive effects of §YLithoid Traits§! by §G+50%§!"
  d_buried_lithoids:2 "£blocker£ Buried Lithoids"
  d_buried_lithoids_desc:0 "These Lithoids were driven deep into the ground when they fell from orbit."
  lithoid_crater:0 "Lithoid Crater"
@@ -905,7 +905,7 @@
  spiritualist_envoys_1_effect:0 "§YEnvoys§! assigned to the Federation will now provide §G50%§! more §YCohesion§! and increase §YSpiritualist§! ethic attraction within our Empire by §Y20%§!."
  culture_workers_1:0 "Promotion of Culture"
  culture_workers_1_desc:0 "Our blend of cultural identities is our strength. By promoting it, we will immeasurably increase our might."
- culture_workers_1_effect:0 "$mod_planet_civilians_unity_produces_add$: §G+1§!\n£job_civilian£ $job_civilian_plural$ gain additional effects from Empire's ethics"
+ culture_workers_1_effect:0 "$mod_planet_civilians_unity_produces_add$: §G+1§!\n[civilian.GetIcon] [civilian.GetNamePlural] gain additional effects from Empire's ethics"
  president_spiritualist_1:0 "Spread the Holy Word"
  president_spiritualist_1_desc:0 "We cannot guarantee that spiritualist interests will be protected unless we are able to encode them into galactic law."
  unity_trade_1:0 "Ecclesiastical Funding"
@@ -1183,7 +1183,7 @@
 
  resolution_galacticstudies_ethical_guideline_refactoring:0 "Ethical Guideline Refactoring"
  resolution_galacticstudies_ethical_guideline_refactoring_desc:0 "To possess the ability to further science provides a moral imperative to do so, free from outdated ethical concepts that restrain us. We do what we must because we can."
- resolution_galacticstudies_ethical_guideline_refactoring_tooltip:0 "Empires must use the most powerful §YLeader Enhancement§! policy available to them or be in §RBreach of Galactic Law§!!\n\nEmpires that are §YEgalitarian§! may be unable to meet this requirement and will be in §RBreach of Galactic Law§!!"
+ resolution_galacticstudies_ethical_guideline_refactoring_tooltip:0 "The §Y$research_restriction_dangerous_forbidden$§! policy is §Rbanned§!.\nEnables the §Y$research_restriction_dangerous_encouraged$§! policy.\nEmpires must use the most powerful §YLeader Enhancement§! policy available to them or be in §RBreach of Galactic Law§!!\n\nEmpires that are §YEgalitarian§! may be unable to meet this requirement and will be in §RBreach of Galactic Law§!!"
 
  resolution_galacticstudies_extradimensional_experimentation:0 "Extradimensional Experimentation"
  resolution_galacticstudies_extradimensional_experimentation_desc:0 "Preliminary studies suggest that extensive use of reality-altering substances can grant researchers unexpected insights.\n\n§RAfter all, what's the worst that could happen?§!"
@@ -3825,6 +3825,7 @@
  federations.10110.desc:1 "The [global_event_country.GetGalCommunityOrGalImperium] has passed the §Y$resolution_galacticstudies_ethical_guideline_refactoring$§! resolution, requiring empires to use the most powerful §YLeader Enhancement§! policy available to them.\n\nOur Empire is currently in breach of this resolution. Shall we change our policies to be in compliance?"
  federations.10110.selected_lineages:0 "Our Empire will change our §Y$policy_leader_enhancement$§! policy to §Y$leader_enhancement_selected_lineages$§!."
  federations.10110.capacity_boosters:0 "Our Empire will change our §Y$policy_leader_enhancement$§! policy to §Y$leader_enhancement_capacity_boosters$§!."
+ federations.10110.research_restriction: "Our Empire will change our §Y$policy_research_restriction_policy$§! policy to §Y$research_restriction_no_restriction$§!."
 
  federations.10200.desc:1 "The [global_event_country.GetGalCommunityOrGalImperium] has passed the §Y$resolution_greatergood_five_year_plans$§! resolution, which bans §Y$living_standard_subsistence$§! living standards.\n\nOur Empire is currently in breach of this resolution. Shall we change our policies to be in compliance?"
  federations.10200.living_standard_stratified:0 "Our Empire will change all species with §Y$living_standard_subsistence$§! living standards to §Y$living_standard_stratified$§! if they qualify for it, or §Y$living_standard_normal$§! if absolutely necessary."

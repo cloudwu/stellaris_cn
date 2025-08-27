@@ -1733,6 +1733,12 @@
  galactic_history_holomuseum_desc: "An informative archive populated with items that represent key events in our galaxy's history."
 
 #Jobs
+ curator: "$job_curator$"
+ job_curator: "Museum Curator"
+ job_curator_plural: "Museum Curators"
+ job_curator_desc: "$job_historical_curator_desc$"
+ entertainers_are_curators_tt: "Replaces £job_entertainer£ §Y$job_entertainer$§! Jobs with £job_historical_curator£ §Y$job_curator$§! Jobs"
+
  job_geologist: "Xeno-Geologist"
  job_geologist_plural: "Xeno-Geologists"
  job_geologist_icon: "£job_geologist£"
@@ -1762,6 +1768,12 @@
  mod_job_historical_curator_add: "$job_historical_curator$ Jobs"
  mod_job_historical_curator_per_pop: "§G+1§! $job_historical_curator$ Job per $VALUE$ Pops"
  mod_job_historical_curator_per_pop_short: "\n§G+1§! £mod_job_historical_curator_add£ per $VALUE$ £pop£"
+
+ curator_drone: "$job_curator_drone$"
+ job_curator_drone: "Curator Drone"
+ job_curator_drone_plural: "Curator Drones"
+ job_curator_drone_desc: "$job_drone_historical_curator_desc$"
+ evaluators_are_curator_drones_tt: "Replaces £job_evaluator£ §Y$job_evaluator$§! Jobs with £job_historical_curator£ §Y$job_curator_drone$§! Jobs"
 
  job_drone_geologist: "Xenogeologist Drone"
  job_drone_geologist_plural: "Xenogeologist Drones"
@@ -1877,27 +1889,25 @@
 
  civic_galactic_curators: "Galactic Curators"
  civic_galactic_curators_desc: "The meticulous collection and preservation of historical artifacts has always fascinated this civilization. But now, with the mysteries of the galaxy at their doorstep, there is everything left to learn."
- civic_galactic_curators_effects: "$civic_galactic_curators_effects_common$"
+ civic_galactic_curators_effects: "$civic_galactic_curators_effects_common$\n- $entertainers_are_curators_tt$"
  civic_corporate_galactic_curators: "Antiquarian Expertise"
  civic_corporate_galactic_curators_desc: "There is money to be made in antiques and collectibles, which this society knows better than anyone else.  Experts in material speculation, they now look skyward for investment opportunities."
- civic_corporate_galactic_curators_effects: "$civic_galactic_curators_effects_common$\n- The £building£ §Y$building_public_relations_office$§! $megacorp_civic_branch_office_building_effect$"
+ civic_corporate_galactic_curators_effects: "$civic_galactic_curators_effects_common$\n- $entertainers_are_curators_tt$\n- The £building£ §Y$building_public_relations_office$§! $megacorp_civic_branch_office_building_effect$"
  civic_hive_galactic_curators: "Caretaker Network"
  civic_hive_galactic_curators_desc: "This collective has evolved an overwhelming compulsion to take, keep, and maintain. This behavior, which aided their survival in the past, now drives them to display their gathered tokens in grand arrangement."
  civic_hive_galactic_curators_effects: "$civic_galactic_curators_effects_common$"
  civic_machine_galactic_curators: "Caretaker Network"
  civic_machine_galactic_curators_desc: "This Machine Intelligence has a core directive in its source code: Collect and Preserve."
  civic_machine_galactic_curators_effects: "$civic_galactic_curators_effects_common$"
- civic_galactic_curators_effects_common: "- $GUARANTEED_RESEARCH_OPTION_STRING$ ['technology:tech_galactic_archivism', £society_research£$tech_galactic_archivism$]\n- Initial ['concept_specimen', Specimens]: One §0$common$§! of each Collection Category \n- Gain $r_unity$ each time you find a §HSpecimen§! or complete an §H$ARCHAEOLOGICAL_SITE$§! \n- Purchases from the §HCurator Enclave§!: §G$@galactic_curators_curator_enclave_purchase_cost|%0$§!\n- Enables the §H$edict_decentralized_research$§! Edict, increasing §HResearch Station§! Output but decreasing £job_researcher£ §H[GetResearcherPlural]§! Output\n- §H$grand_archive$§! Construction Cost: §G$@galactic_curators_grand_archive_cost_mult|%0$§!"
+ civic_galactic_curators_effects_common: "- $GUARANTEED_RESEARCH_OPTION_STRING$ ['technology:tech_galactic_archivism', £society_research£$tech_galactic_archivism$]\n- Initial ['concept_specimen', Specimens]: One §0$common$§! of each Collection Category \n- Gain $r_unity$ each time you find a §YSpecimen§! or complete an §Y$ARCHAEOLOGICAL_SITE$§! \n- Purchases from the §YCurator Enclave§!: §G$@galactic_curators_curator_enclave_purchase_cost|%0$§!\n- Enables the §Y$edict_decentralized_research$§! Edict, increasing §YResearch Station§! Output but decreasing £job_researcher£ §Y[GetResearcher]§! Job Output"
  edict_decentralized_research: "Decentralized Research"
  edict_decentralized_research_desc: "The greatest knowledge lies external to our own civilization. By focusing on the greater whole of the galaxy, we can come to a more complete understanding of ourselves."
  MOD_COUNTRY_SPECIMEN_ACQUIRE_CHANCE_MULT: "Increased chance to discover Specimens"
 
  councilor_galactic_curators: "Supreme Curator"
  councilor_galactic_curators_desc: "The Supreme Curator is in charge of overseeing the preservation quality of all Specimens."
- councilor_galactic_curators_custom_modifier_desc: "- £unity£ $unity$ per $pop_group_unit$ [GetCultureWorkerPluralWithIcon]: §G+$@councilor_galactic_curators_unity$§!"
  councilor_corporate_galactic_curators: "Curation Officer"
  councilor_corporate_galactic_curators_desc: "The Curation Officer is in charge of managing the exhibition and sale of Specimens."
- councilor_corporate_galactic_curators_custom_modifier_desc: "- $TRADE_VALUE_WITH_ICON$ per $pop_group_unit$ [GetCultureWorkerPluralWithIcon]: §G+$@councilor_corporate_galactic_curators_trade_value$§!"
 
  civic_beastmasters: "Beastmasters"
  civic_beastmasters_desc: "Coming to full, technological maturity in a system that serves as a feeding ground for Space Amoebas, this society has acquired a deep knowledge of their life cycle. They now work to nurture, raise, and ultimately clone these creatures for mutual benefit."

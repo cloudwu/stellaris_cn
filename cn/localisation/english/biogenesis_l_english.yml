@@ -248,6 +248,10 @@
  evolutionary_predators_council: "内阁多样性"
  evolutionary_predators_subjects: "附属国多样性"
  evolutionary_predators_megacorp: "商业协议抽提"
+ 
+ evopred_small_progress: "推进 §Y演化适应§! 局势的进展 §G5%§!"
+ evopred_medium_progress: "推进 §Y演化适应§! 局势的进展 §G10%§!"
+ evopred_large_progress: "推进 §Y演化适应§! 局势的进展 §G20%§!" 
  evopred_base_extracted: "我们的下次演化将新增"
  evopred_humanoid_extracted: "$evopred_base_extracted$§Y人型类§!基因。"
  evopred_mammalian_extracted: "$evopred_base_extracted$§Y哺乳类§!基因。"
@@ -1182,7 +1186,7 @@
  job_genomic_researcher_plural_with_icon: "£job_genomic_researcher£ $job_genomic_researcher_plural$"
  job_genomic_researcher_desc: "$job_genomic_researcher_plural$进行关于我们基因未来的研究。"
  job_genomic_researcher_effect_desc: "£job_genomic_researcher£$job_genomic_researcher_plural$将$r_consumer_goods$转化为$r_society$和$r_amenities$"
- job_genomic_researcher_situation_effect_desc: "£job_genomic_researcher£$job_genomic_researcher_plural$将$r_consumer_goods$转化为$r_society$、$r_amenities$并提升§Y$genetic_ascension_situation$每月局势进展§!"
+ job_genomic_researcher_situation_effect_desc: "£job_genomic_researcher£$job_genomic_researcher_plural$提升§Y$genetic_ascension_situation$每月局势进展§!"
  mod_job_genomic_researcher_add: "$job_genomic_researcher$岗位"
  healthcare_is_genomic_researcher_tt: "£job_healthcare£$job_healthcare_plural$转化为$job_genomic_researcher_plural_with_icon$"
 
@@ -1193,9 +1197,9 @@
  job_genomic_drone_plural_with_icon: "£job_genomic_drone£ $job_genomic_drone_plural$"
  job_genomic_drone_desc: "$job_genomic_drone_plural$进行关于我们基因未来的研究。"
  job_genomic_drone_effect_desc: "£job_genomic_drone£$job_genomic_drone_plural$将$r_food$（或$r_minerals$）转化为$r_society$和$r_amenities$"
- job_genomic_drone_situation_effect_desc: "£job_genomic_drone£$job_genomic_drone_plural$将$r_food$（或$r_minerals$）转化为$r_society$、$r_amenities$并提升§Y$genetic_ascension_situation$每月局势进展§!"
+ job_genomic_drone_situation_effect_desc: "£job_genomic_drone£$job_genomic_drone_plural$提升§Y$genetic_ascension_situation$每月局势进展§!"
  mod_job_genomic_drone_add: "$job_genomic_drone$岗位"
- spawning_is_genomic_researcher_tt: "$job_genomic_drone_plural_with_icon$转化为$job_genomic_researcher_plural_with_icon$"
+ spawning_is_genomic_researcher_tt: "£job_spawning_drone£ $job_spawning_drone_plural$转化为$job_genomic_drone_plural_with_icon$"
 
  # Approach Unlocks
 
@@ -1412,7 +1416,7 @@
  LEADERS_GAIN_CLONES: "所有可用领袖获得§Y$leader_trait_has_backup_clone$§!特质"
 
  concept_backup_clones: "$leader_trait_has_backup_clone_plural$"
- concept_backup_clones_desc: "—新领袖初始可能拥有§Y$leader_trait_has_backup_clone$§!特质$NEW_LINE$—领袖升级时可能获得§Y$leader_trait_has_backup_clone$§!特质$NEW_LINE$—拥有§Y$leader_trait_has_backup_clone$§!特质的领袖可以避免死亡"
+ concept_backup_clones_desc: "—新领袖初始可能拥有§Y$leader_trait_has_backup_clone$§!特质$NEW_LINE$—领袖升级时可能获得§Y$leader_trait_has_backup_clone$§!特质$NEW_LINE$—拥有§Y$leader_trait_has_backup_clone$§!特质的领袖可以避免死亡$NEW_LINE$- 有 §Y$leader_trait_legendary_leader$§! 特质的领袖无法被克隆"
 
  leader_trait_has_backup_clone: "备用克隆体"
  leader_trait_has_backup_clone_plural: "备用克隆体"
@@ -1466,13 +1470,25 @@
  tr_mutation_finish: "$tradition_mutation$传统完成"
  tr_mutation_finish_tt: "解锁[GetMutationAuthorities]\n[GetGenomicSwap]"
  tr_mutation_environmental_integration: "环境整合"
- tr_mutation_environmental_integration_delayed: "我们将适应自己的基因结构才能在不同环境中发展繁荣。"
+ tr_mutation_environmental_integration_delayed: "我们将适应自己的基因结构才能在不同环境中发展繁荣。[GetEnvironmentalIntegrationSwapTT]"
  tr_mutation_environmental_integration_tt: "[GetEnvironmentalIntegrationEffects]"
  tr_mutation_environmental_integration_1_tt: "§Y创始物种§!当前的宜居性特质替换为['trait:trait_auto_hab_preference']\n$EXCEED_HABITABILITY_CAP_TT$"
  tr_mutation_environmental_integration_2_tt: "$tr_mutation_environmental_integration_1_tt$\n§Y$council_agenda_agenda_mutation_divergence_name$§!内阁议程也将给予§Y$trait_auto_hab_preference$§!宜居性特质"
- EXCEED_HABITABILITY_CAP_TT: "拥有§Y$trait_auto_hab_preference$§!特质的物种宜居性可以达到§G200%§!，且超出§G100%§!的部分每§G10%§!赋予：$TABBED_NEW_LINE$—$MOD_POP_BONUS_WORKFORCE_MULT$：§G$@auto_adapted_production|2%$§!$TABBED_NEW_LINE$—$MOD_POP_HOUSING_USAGE_MULT$：§G$@auto_adapted_housing|2%$§!$TABBED_NEW_LINE$—$MOD_POP_AMENITIES_USAGE_MULT$：§G$@auto_adapted_amenities|%2$§!"
+ EXCEED_HABITABILITY_CAP_TT: "拥有§Y$trait_auto_hab_preference$§!特质的物种可达到§G175%§!宜居性$HIGH_HABITABILITY_EFFECTS_TT$"
+ tr_mutation_environmental_integration_swap_tt: "当采纳§H$concept_mutation_authorities$§!时，\n\n§W此传统将被升级§!"
+ HIGH_HABITABILITY_EFFECTS_TT: "超出§G100%§!物种宜居性的部分每§G10%§!赋予：$TABBED_NEW_LINE$—$MOD_POP_BONUS_WORKFORCE_MULT$：§G$@auto_adapted_production|2%$§!$TABBED_NEW_LINE$—$MOD_POP_HOUSING_USAGE_MULT$：§G$@auto_adapted_housing|2%$§!$TABBED_NEW_LINE$—$MOD_POP_AMENITIES_USAGE_MULT$：§G$@auto_adapted_amenities|%2$§!"
+ tr_mutation_empowered_environmental_integration: "授权$tr_mutation_environmental_integration$"
+ tr_mutation_empowered_environmental_integration_delayed: "$tr_mutation_environmental_integration_delayed$"
+ tr_mutation_empowered_environmental_integration_tt: "[GetEmpoweredEnvironmentalIntegrationEffects]"
+ tr_mutation_empowered_environmental_integration_1_tt: "§Y创始物种§!当前的宜居性特质替换为['trait:trait_auto_hab_preference']\n$EMPOWERED_EXCEED_HABITABILITY_CAP_TT$"
+ tr_mutation_empowered_environmental_integration_2_tt: "$tr_mutation_empowered_environmental_integration_1_tt$\n§Y$council_agenda_agenda_mutation_divergence_name$§!内阁议程也将给予§Y$trait_auto_hab_preference$§!宜居性特质"
+ EMPOWERED_EXCEED_HABITABILITY_CAP_TT: "§Y有机物种§!可达到§G250%§!宜居性，$HIGH_HABITABILITY_EFFECTS_TT$"
+ MOD_UNCAPPED_HABITABILITY_CEIL_ADD: "$trait_auto_hab_preference$极限"
+ empowered_environmental_integration_tradition_tt: "§Y$tr_mutation_environmental_integration$§!传统已升级"
  tr_mutation_environmental_integration_evo_pred: "$tr_mutation_environmental_integration$"
  tr_mutation_environmental_integration_evo_pred_delayed: "$tr_mutation_environmental_integration_delayed$"
+ tr_mutation_empowered_environmental_integration_evo_pred: "$tr_mutation_empowered_environmental_integration$"
+ tr_mutation_empowered_environmental_integration_evo_pred_delayed: "$tr_mutation_empowered_environmental_integration_delayed$"
  tr_mutation_planned_polymorphism: "计划多态"
  tr_mutation_planned_polymorphism_delayed: "多态性的策略性诱导将优化我们的遗传性状。"
  tr_mutation_planned_polymorphism_tt: "['concept_automodding_adaptive', Adaptive Traits]的效果提升至§G+$@adaptive_boosted_output|0%$§!\n$CAN_ASSIMILATE_HIVES$"
@@ -1647,20 +1663,20 @@
  trait_leader_genetic_purist_desc: "该领袖的工作被不可动摇的基因纯净观所引导，对所有类型的不完美都好不容忍。"
 
  auth_bio_democratic_purity: "表型自治制"
- auth_bio_democratic_purity_tt: "$pop_effects_from_purity_header$$TABBED_NEW_LINE$—£mod_pop_happiness£$MOD_POP_HAPPINESS$：$plus_minus_icon$§Y$@purity_traits_happiness|1%$§!$DOUBLE_NEW_LINE$$authority_grants_genetic_purist_tt$$TABBED_NEW_LINE$—$mod_leaders_upkeep_mult$$minus_plus_icon$§Y5.0%§!$TABBED_NEW_LINE$—$MOD_LEADER_SPECIES_EXP_GAIN$$plus_minus_icon$§Y5.0%§!"
+ auth_bio_democratic_purity_tt: "$pop_effects_from_purity_header$$TABBED_NEW_LINE$—£mod_pop_happiness£$MOD_POP_HAPPINESS$：$plus_minus_icon$§Y$@purity_traits_happiness|1%$§!$DOUBLE_NEW_LINE$$authority_grants_genetic_purist_tt$$TABBED_NEW_LINE$—$mod_leaders_upkeep_mult$$minus_plus_icon$§Y2.5%§!$TABBED_NEW_LINE$—$MOD_LEADER_SPECIES_EXP_GAIN$$plus_minus_icon$§Y2.5%§!"
  auth_bio_democratic_purity_desc: "身体自决是一种权利。国家授权个体按照自己喜欢的方式改造身体。身体就是终极画布，唯一的限制只有想象力。"
 
  auth_bio_oligarchic_purity: "优生阶序制"
  auth_bio_oligarchic_purity_tt: "$eugenic_political_power_effects$"
  auth_bio_oligarchic_purity_desc: "绝对的权力必须托付给遗传上注定的精英，他们是这个文明命运最纯洁、最有能力的公仆。在他们之下，每位公民从事着都根据自身的基因潜质量身定制的职位。只有每个人的命中注定的人生意义可以带来满足，而不是野心。"
- eugenic_political_power_effects: "$pop_effects_from_purity_header$$TABBED_NEW_LINE$—$MOD_POP_BONUS_WORKFORCE_MULT$：$plus_minus_icon$§Y$@purity_traits_bonus_workforce_mult|1%$§!$DOUBLE_NEW_LINE$$authority_grants_genetic_purist_tt$$TABBED_NEW_LINE$—$MOD_COUNCIL_AGENDA_PROGRESS_SPEED$：$plus_minus_icon$§Y$@purity_traits_council_speed|Y1%$§!"
+ eugenic_political_power_effects: "$pop_effects_from_purity_header$$TABBED_NEW_LINE$—$MOD_POP_BONUS_WORKFORCE_MULT$：$plus_minus_icon$§Y$@purity_traits_bonus_workforce_mult|2%$§!$DOUBLE_NEW_LINE$$authority_grants_genetic_purist_tt$$TABBED_NEW_LINE$—$MOD_COUNCIL_AGENDA_PROGRESS_SPEED$：$plus_minus_icon$§Y$@purity_traits_council_speed|Y1%$§!"
 
  auth_bio_dictatorial_purity: "核酸司法制"
  auth_bio_dictatorial_purity_tt: "$pop_effects_from_purity_header$$TABBED_NEW_LINE$每$pop_group_unit$£pop£人口产出£society£社会学研究：$plus_minus_icon$§Y$@purity_traits_resource$§!$DOUBLE_NEW_LINE$$authority_grants_genetic_purist_tt$$TABBED_NEW_LINE$—行星$MOD_PLANET_CRIME_ADD$：$minus_plus_icon$§Y5.0§!$TABBED_NEW_LINE$—星域$MOD_PLANET_CRIME_ADD$：$minus_plus_icon$§Y2.5§!$TABBED_NEW_LINE$—行星$MOD_PLANET_STABILITY_ADD$：$plus_minus_icon$§Y5.0§!$TABBED_NEW_LINE$—星域$MOD_PLANET_STABILITY_ADD$：$plus_minus_icon$§Y2.5§!"
  auth_bio_dictatorial_purity_desc: "该政府将基因和生物特征数据作为先发制人的司法工具，通过仔细检查每位公民的基因密码以寻找犯罪倾向。通过在违规行为发生之前进行干预，这种细致的监督可以确保秩序。真正的正义不是守株待兔，而是未雨绸缪，只有从根源上消除犯罪才能保护社会。"
 
  auth_bio_imperial_purity: "生物自治领"
- auth_bio_imperial_purity_tt: "['concept_genetic_purity']对£leader£§Y$imperial_ruler$§!及§Y继承人§!的效果：$TABBED_NEW_LINE$—$MOD_LEADER_SKILL_ADD$：$plus_minus_icon$§Y$@purity_traits_imperial_level|2$§!$DOUBLE_NEW_LINE$我们§Y[Ruler.GetTitle]同物种§!的£leader£领袖获得§Y$imperial_bloodline$§!特质\n['concept_genetic_purity']对£leader£§Y帝国血脉§!的效果：$TABBED_NEW_LINE$—$MOD_LEADER_LIFESPAN_MULT$：$plus_minus_icon$§Y$@purity_traits_imperial_bloodline|1%$§!$TABBED_NEW_LINE$—$MOD_LEADER_SPECIES_EXP_GAIN$：$plus_minus_icon$§Y$@purity_traits_leader_xp|1%$§!"
+ auth_bio_imperial_purity_tt: "['concept_genetic_purity']对£leader£§Y$imperial_ruler$§!及§Y继承人§!的效果：$TABBED_NEW_LINE$—$MOD_LEADER_SKILL_ADD$：$plus_minus_icon$§Y$@purity_traits_imperial_level|2$§!$DOUBLE_NEW_LINE$我们§Y[Ruler.GetTitle]同物种§!的£leader£领袖获得§Y$imperial_bloodline$§!特质\n['concept_genetic_purity']对£leader£§Y帝国血脉§!的效果：$TABBED_NEW_LINE$—$MOD_LEADER_LIFESPAN_MULT$：$plus_minus_icon$§Y$@purity_traits_imperial_bloodline|1%$§!$TABBED_NEW_LINE$—$MOD_LEADER_SPECIES_EXP_GAIN$：$plus_minus_icon$§Y$@purity_traits_imperial_bloodline|1%$§!"
  auth_bio_imperial_purity_desc: "作为基因卓越的捍卫者，这一政体在孜孜不倦追求生命完美的同时，也延长了其领袖的寿命。社会的昌盛源于最优秀基因的保存与繁衍，开创至高无上的未来。对基因库的严苛管理确保了进步的步伐，以长生与完美为最终馈赠。"
 
  auth_bio_corporate_purity: "器官集团"
@@ -1724,18 +1740,19 @@
 
  # Mutation
 
+ auth_mutation_habitability_tt: "有机生物种族可以达到 §G175%§! 宜居度"
  auth_bio_democratic_mutation: "生物多样自由制"
  auth_bio_democratic_mutation_desc: "这个社会恪守一项信条：个体的形躯犹如圣殿，由己主宰，任凭设计与掌控。在自由不羁与坚定支持的框架下，公民们获得实现独特潜能的力量，得以随心塑造自身与未来。"
  auth_bio_oligarchic_mutation: "催化统御"
  auth_bio_oligarchic_mutation_desc: "权力集中于一个基因突变优异的精英阶层，赋予他们无与伦比的权威。他们超脱于常规法律之外，运用自身能力守护并引导社会，采取一切必要手段以确保社会的存续与繁荣。"
  auth_bio_dictatorial_mutation: "混合授权"
  auth_bio_dictatorial_mutation_desc: "这个社会将基因突变奉为进步的基石。那些安于自然形态的个体将面临即刻拘禁或处决，确保唯有基因优异者才能为物种迈向完美的不懈追求贡献力量。"
- auth_bio_dictatorial_mutation_tt: "\n[enforcer.GetIcon][enforcer.GetName]降低的£crime£犯罪率§G-5§!"
+ auth_bio_dictatorial_mutation_tt: "\n[enforcer.GetIcon][enforcer.GetName]降低的£crime£犯罪率§G-5§!\n$auth_mutation_habitability_tt$"
  auth_bio_imperial_mutation: "基因霸政"
  auth_bio_imperial_mutation_desc: "这个帝国拥抱随机突变的不可预测之力，挖掘无尽潜能，培育传统方法永远无法企及的创新与能力。在争夺霸权的竞逐中，突变的混沌成为他们最大的优势，推动他们迈向无可匹敌的至高统治。"
  auth_bio_corporate_mutation: "器官高利贷"
  auth_bio_corporate_mutation_desc: "在这种体制下，器官和身体部件的融资通过灵活的付款计划向所有人开放。一旦出现欠款，将立即被收回器官或没收约定的抵押物。这个体系确保了一个稳定的供需循环，每一个身体部件既是商品，也是契约。"
- auth_bio_corporate_mutation_tt: "$organic_leaders_have_trade_upkeep$\n每$pop_group_unit$£pop£人口从['trait:trait_spare_organs']产出的$r_trade$：§G+0.10§!"
+ auth_bio_corporate_mutation_tt: "$organic_leaders_have_trade_upkeep$\n每$pop_group_unit$£pop£人口从['trait:trait_spare_organs']产出的$r_trade$：§G+0.5§!\n$auth_mutation_habitability_tt$"
 
  auth_bio_democratic_evopred: "基因选民"
  auth_bio_democratic_evopred_desc: "尽管难以管理，该社会还是部分控制了可塑性基因组。人们将决定自身的突变如何显现。"
@@ -1759,7 +1776,7 @@
  auth_bio_hive_mind_evopred: "奇美拉意识"
  auth_bio_hive_mind_evopred_desc: "该蜂巢思维倦于简单的自我传播。每个新的殖民地都在成为它的活体挂毯，点缀着不断变化的景观和肉体的融合。生物和星球成为一体，边界消融于奇美拉意识之中。"
  auth_bio_hive_mind_evopred_tt: "$auth_bio_evopred_tt$\n自动将殖民地环境改造为§Y蜂巢星球§!\n净化外星人；外星§Y物种§!提升的['concept_adaptive_evolution']进展§G+100%§!"
- auth_bio_evopred_tt: "每个物种特质降低人口产生的$EMPIRE_SIZE$：§G+1%§!"
+ auth_bio_evopred_tt: "每个物种特质降低人口产生的$EMPIRE_SIZE$：§G-1%§!\n$auth_mutation_habitability_tt$"
 
  # Hive Advanced Authorities
 
@@ -1866,6 +1883,8 @@
  BYPASS_NAME_STARLIT_WORMHOLE: "$SYSTEM$ $BYPASS_STARLIT_WORMHOLE$"
  BYPASS_DESC_STARLIT_WORMHOLE: "具有独特性质的虫洞。"
  BYPASS_DESC_UNKNOWN_STARLIT_WORMHOLE: "$BYPASS_DESC_STARLIT_WORMHOLE$"
+ ENTRY_BYPASS_STARLIT_WORMHOLE: "$BYPASS_TYPE$"
+ EXIT_BYPASS_STARLIT_WORMHOLE: "$BYPASS_TYPE$" 
  starlit_wormhole_modifier: "$STARLIT_WORMHOLE_GALACTIC$"
  d_ruined_hatchery: "£blocker£毁坏孵化器"
  d_ruined_hatchery_desc: "这座自动工业复合体使用自维持发电机，持续不断地产出生物机器。"
@@ -2186,7 +2205,7 @@
  civic_machine_stalwart_network: "顽强网络"
  civic_machine_stalwart_network_desc: "这个机器智能专门研究防御性军事流程，将硬防御和游击战手续结合在一起。"
 
- defensive_stations_tracking_add: "太空基地和防御站追踪"
+ defensive_stations_tracking_add: "$t$- 太空基地和防御站追踪"
  defensive_stations_tracking_add_tt: "$defensive_stations_tracking_add$：$VARIABLE|0=+$"
 
  defensive_stations_weapon_range_mult: "太空基地和防御站武器射程"
@@ -2389,7 +2408,7 @@
  NAME_Chance_of_Glory: "荣耀之机"
  death_world: "死亡星球"
  death_world_desc: "尽管这颗星球理论上是宜居的，但在这里居住可谓噩梦。所有的当地野生物种，无论是动物或是植物，甚至不起眼的小东西，事实上都比我们母星上最可怕的掠食者更致命。"
- d_lethal_ecosphere_blocker: "致命生态圈"
+ d_lethal_ecosphere_blocker: "£blocker£ 致死生态圈"
  d_lethal_ecosphere_blocker_desc: "被战争碎片遗弃的实验体和标本在这里不断进行着血腥的非自然选择。这片极度危险的训练场地对大多数士兵来说无疑是致命的，但幸存者必将蜕变为无情的杀戮机器。"
  war_experimental_scaling_modifier: "$NAME_Experimental_Ship$"
 

@@ -68,7 +68,7 @@
 
  origin_shattered_ring:0 "破碎之环"
  origin_shattered_ring_desc:1 "这一文明生活在未知先驱们建造的§H环形世界§!之中。一经理解及修复完好，他们将获得巨大的力量。"
- origin_tooltip_shattered_ring_effects:3 "- $HOMEWORLD$['concept_pc_shattered_ring']$NEW_LINE$- ['concept_guaranteed_colonies']：可殖民的环形世界区块而非行星$NEW_LINE$- $SPECIES_TRAITS$['concept_ring_preference']"
+ origin_tooltip_shattered_ring_effects:3 "- $HOMEWORLD$['concept_pc_shattered_ring']$NEW_LINE$- ['concept_guaranteed_colonies']：替换为可殖民的环世界区块，其上有导致居住环境下降的 £mod_pop_environment_tolerance£ £blocker£ §R障碍§!$NEW_LINE$- $SPECIES_TRAITS$['concept_ring_preference']"
  origin_tooltip_shattered_ring_effects_lithoid:0 "§R-警告：这个起源因为矿物稀缺将对石质类具有挑战性。§!$NEW_LINE$$origin_tooltip_shattered_ring_effects$"
 
  origin_remnants:0 "复国孑遗"
@@ -115,7 +115,7 @@
  d_tree_of_life_colony_desc:1 "蜂群移植在此的一根巨树枝桠。它需要数千年的时间才能完全成熟。"
  d_lithoid_crater:0 "巨型陨石坑"
  d_lithoid_crater_desc:0 "将石质类带到这颗行星的陨石撞击点。"
- d_lithoid_crater_custom_tooltip: "$t$增强§Y石质特质§!的效果§G+50%§!"
+ d_lithoid_crater_custom_tooltip: "$t$增强§Y石质特质§!的正面效果§G+50%§!"
  d_buried_lithoids:2 "£blocker£埋藏的石质生物"
  d_buried_lithoids_desc:0 "这些石质类从轨道下坠撞击地面时被深深埋入地下。"
  lithoid_crater:0 "石质类陨石坑"
@@ -905,7 +905,7 @@
  spiritualist_envoys_1_effect:0 "指派到联邦的§Y特使§!将产出额外§G50%§!§Y团结度§!并提升帝国范围内§Y精神主义§!思潮吸引力§Y20%§!。"
  culture_workers_1:0 "文化促进"
  culture_workers_1_desc:0 "我们复合的文化身份的就是我们的力量。促进文化就是对我们自身力量的极大提升。"
- culture_workers_1_effect:0 "$mod_planet_civilians_unity_produces_add$：§G+1§!\n£job_civilian£$job_civilian_plural$从帝国思潮获得额外效果"
+ culture_workers_1_effect:0 "$mod_planet_civilians_unity_produces_add$：§G+1§!\n[civilian.GetIcon] [civilian.GetNamePlural]从帝国思潮获得额外效果"
  president_spiritualist_1:0 "传播圣地"
  president_spiritualist_1_desc:0 "我们唯有将其写入银河法才能确保精神主义者的利益受到保护。"
  unity_trade_1:0 "教会预算"
@@ -1183,7 +1183,7 @@
 
  resolution_galacticstudies_ethical_guideline_refactoring:0 "重构伦理准则"
  resolution_galacticstudies_ethical_guideline_refactoring_desc:0 "追寻更加深刻的科学原理迫使我们从陈腐的伦理观念的禁锢中解放出来。我们做我们必须做的事，因为我们能做。"
- resolution_galacticstudies_ethical_guideline_refactoring_tooltip:0 "所有帝国必须使用各自允许的最高级别的§Y$policy_leader_enhancement$§!政策，否则将视作§R违反银河法§!！\n\n§Y平等主义§!帝国可能无法满足这一要求，因此将§R违反银河法§!！"
+ resolution_galacticstudies_ethical_guideline_refactoring_tooltip:0 "§R禁用§!§Y$research_restriction_dangerous_forbidden$§!政策.\n可使用§Y$research_restriction_dangerous_encouraged$§!政策。\n所有帝国必须使用各自允许的最高级别的§Y$policy_leader_enhancement$§!政策，否则将视作§R违反银河法§!！\n\n§Y平等主义§!帝国可能无法满足这一要求，因此将§R违反银河法§!！"
 
  resolution_galacticstudies_extradimensional_experimentation:0 "异次元体实验方法"
  resolution_galacticstudies_extradimensional_experimentation_desc:0 "初步研究表明，大量使用现实更改物质可以给予研究者意想不到的见解。\n\n§R反正，能有多坏的结果呢？§!"
@@ -3825,6 +3825,7 @@
  federations.10110.desc:1 "[global_event_country.GetGalCommunityOrGalImperium]已经通过了§Y$resolution_galacticstudies_ethical_guideline_refactoring$§!决议案，要求各国在可用范围内采取最有力的§Y$policy_leader_enhancement$§!政策。\n\n我国现违背该决议案内容，是否要修改对应政策以遵守决议案？"
  federations.10110.selected_lineages:0 "我帝国会将我们的§Y$policy_leader_enhancement$§!政策调整为§Y$leader_enhancement_selected_lineages$§!。"
  federations.10110.capacity_boosters:0 "我帝国会将我们的§Y$policy_leader_enhancement$§!政策调整为§Y$leader_enhancement_capacity_boosters$§!。"
+ federations.10110.research_restriction: "我帝国会将§Y$policy_research_restriction_policy$§! 政策调整为§Y$research_restriction_no_restriction$§!。"
 
  federations.10200.desc:1 "[global_event_country.GetGalCommunityOrGalImperium]已经通过了§Y$resolution_greatergood_five_year_plans$§!决议案，禁止使用§Y$living_standard_subsistence$§!生活标准。\n\n我国现违背该决议案内容，是否要修改对应政策以遵守决议案？"
  federations.10200.living_standard_stratified:0 "对于所有处于§Y$living_standard_subsistence$§!生活标准下且具有相应资格的种族，我帝国会将其生活标准调整为§Y$living_standard_stratified$§!，如有绝对必要，则调整为§Y$living_standard_normal$§!。"

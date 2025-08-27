@@ -25,6 +25,7 @@
  mod_job_knight_per_pop:0 "每$VALUE$个人口提供§G+1§![knight.GetName]岗位"
  mod_job_knight_per_pop_short:0 "\n每$VALUE$£pop£§G+1§![knight.GetIcon]"
  planet_knights:0 "骑士"
+ mod_planet_knights_upkeep_mult: "[knight.GetName]维护费"
 
  job_squire:0 "扈从"
  job_squire_plural:0 "扈从"
@@ -37,8 +38,8 @@
  mod_planet_squires_food_produces_add: "每$pop_group_unit$[squire.GetIcon][squire.GetNamePlural]产出的£food£$food$"
  mod_planet_squires_exotic_gases_produces_add: "每$pop_group_unit$[squire.GetIcon][squire.GetNamePlural]产出的£exotic_gases£$exotic_gases$"
 
- knights_more_unity_tooltip:1 "[knight.GetIcon]§Y[knight.GetNamePlural]§!会额外产生§G+3§!£unity£凝聚力。\n£job_knight_commander£§Y$job_knight_commander$§!会生产额外§G+4§!£unity£凝聚力。"
- knights_more_research_tooltip:1 "[knight.GetIcon]§Y[knight.GetNamePlural]§!会额外产生§G+2§!£physics_research£ £society_research£ £engineering_research£研究。\n£job_knight_commander£§Y$job_knight_commander$§!会生产额外§G+2§!£physics_research£ £society_research£ £engineering_research£研究。"
+ knights_more_unity_tooltip:1 "[knight.GetIcon]§Y[knight.GetNamePlural]§!会额外产生§G+3§!£unity£凝聚力，§Y维护费§! 上升§R15%§!。\n£job_knight_commander£§Y$job_knight_commander$§!会生产额外§G+4§!£unity£凝聚力。"
+ knights_more_research_tooltip:1 "[knight.GetIcon]§Y[knight.GetNamePlural]§!会额外产生§G+2§!£physics_research£ £society_research£ £engineering_research£研究，§Y维护费§! 上升§R15%§!。\n£job_knight_commander£§Y$job_knight_commander$§!会生产额外§G+2§!£physics_research£ £society_research£ £engineering_research£研究。"
 
  job_knight_commander:0 "骑士领主"
  job_knight_commander_plural:0 "骑士领主"
@@ -776,7 +777,7 @@
  trait_commercial_genius_tooltip: "['concept_planet_traders']$BONUS_WORKFORCE_FOR$：§G+25%§!"
  trait_crafted_smiles:0 "匠心微笑"
  trait_crafted_smiles_desc:0 "§L面部特征的轻微调整、肌肉发育增强和松弛相互结合，再加上一些外在化学物质，创造了永恒完美的微笑。 §!"
- crafted_smiles_tooltip:0 "['concept_planet_entertainers']$BONUS_WORKFORCE_FOR$：§G+15%§!"
+ crafted_smiles_tooltip:0 "['concept_planet_influential']$BONUS_WORKFORCE_FOR$：§G+15%§!"
  trait_low_maintenance:0 "低廉维护"
  trait_low_maintenance_desc:1 "§L降低消耗、排泄和休息率使其事半功倍。然而对高蛋白食物的需求提升了。§!"
  low_maintenance_tooltip:0 "人口消费品维护费：§G-10%§!"

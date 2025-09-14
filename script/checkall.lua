@@ -3,7 +3,7 @@ local scriptpath = "."
 
 local filelist = require "filelist"
 
-local list = filelist.filelist()
+local list = filelist.filelist(filepath)
 
 local check_text = assert(loadfile(scriptpath .. "/check.lua"))()
 

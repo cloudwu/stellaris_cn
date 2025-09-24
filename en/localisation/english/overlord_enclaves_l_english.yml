@@ -37,8 +37,8 @@
  enclave.2.tooltip.bb:1 "No other enclave in system"
  enclave.2.tooltip.c:0 "System must be under our control"
  enclave.2.tooltip.cc:0 "System is under our control"
- enclave.2.tooltip.d:0 "No free mercenary capacity"
- enclave.2.tooltip.dd:0 "Mercenary capacity available"
+ enclave.2.tooltip.d: "No free enclave capacity"
+ enclave.2.tooltip.dd: "Enclave capacity available"
  enclave.2.tooltip.e:1 "System requires an asteroid or a moon"
  enclave.2.tooltip.ee:1 "System has an asteroid or a moon"
  enclave.2.tooltip.f:0 "We must be the owner of this fleet"
@@ -50,8 +50,11 @@
  enclave.26.a:0 "They will pay for this."
  enclave.27:0 "Emergency Fleet Recall"
  enclave.27.desc:0 "Dear valued client,\n\nAs we currently find ourselves under attack, we have urgent need to recall our own forces. As per our contract, we will immediately enact clause 285b.15, and our fleet will leave your service as soon as this notice reaches you. We look forward to renewing our partnership once this unfortunate situation is resolved, and apologize for any inconvenience."
+ enclave.27.desc.mindwarden: "We have received communication from the [mercenary_enclave_country.GetName]:\n\n§H[root.GetName],\n\nWe are under attack, and must therefore recall our own forces immediately. In accordance with our contract, the [mercenary_fleet.GetName] will leave your service forthwith.\n\nWe trust that you will understand the urgency of this situation and the necessity of our actions.§!"
  enclave.27.a:0 "Best of luck."
+ enclave.27.a.mindwarden: "May they overcome this threat."
  enclave.27.b:0 "This is outrageous!"
+ enclave.27.b.mindwarden: "We should have read the small print."
  enclave.28:0 "Peace Deal"
  enclave.28.desc:0 "Attention, [Root.GetName], a year has passed since your recent regrettable act of aggression. We of the [mercenary_enclave_country.GetName] are ready to let bygones be bygones - after all, conflict may be profitable, but not when it comes between business partners. If you would simply offer an apology, and send us a modest token of goodwill, we are willing to overlook this unfortunate incident."
  enclave.28.a:0 "Die and rot, mercenary scum."
@@ -153,7 +156,7 @@
  mercenary_fleet_size_upgrade_4:0 "$mercenary_fleet_size_upgrade_1$ IV"
  mercenary_fleet_size_upgrade_5:0 "$mercenary_fleet_size_upgrade_1$ V"
  hired_mercenary_fleet_naval_cap_usage:0 "Naval Capacity Usage for Hired Mercenary Fleet"
- country_enclave_capacity_decrease_modifier:0 "Mercenary Enclaves Created"
+ country_enclave_capacity_decrease_modifier: "Enclaves Created"
 
  tactic_v_khan:0 "Mercenary Tactics: The Khan"
  tactic_v_gray:0 "Mercenary Tactics: The Gray Tempest"
@@ -387,6 +390,9 @@
  enclave.405.psionic.n.desc:0 "So, the sojourners return! It is pleasant to see you again. We have been waiting."
  enclave.405.psionic.o.desc:0 "Of all the tenets we hold to in the §H[shroudwalker_enclave_country.GetName]§!, few are held more dearly than this: even those as elevated as ourselves can be sure of finding our fellows in the galaxy.\n\nSo, fellow ascendent one: how may we serve each other?"
  enclave.405.hostile.a.desc:0 "Interloper, your hostility precedes you like a foul miasma. We are a peaceful coven, but know this: if you intend to inflict harm upon us, you shall find such folly visited back upon you tenfold. We are the §H[shroudwalker_enclave_country.GetName]§!, and though our reach may appear lacking, our wrath is devastating."
+ enclave.405.desc.mindwardens: "Your reputation precedes you.\n\nWe shall hold no counsel with those who fear the §HShroud§!. Your limited vision of the cosmos will chain us all to the ground."
+ enclave.405.desc.mindwardens_trust: "The ignorant prejudices of the [mindwarden_enclave_country.GetName] have poisoned your mind. What irony...\n\nWe will hold no counsel with those who hold such ties with fools."
+ enclave.405.desc.end_of_the_cycle: ""You have awoken horror far beyond your understanding, and with it have doomed this galaxy.\n\nWe are unwilling to court madness itself. Be gone from us!""
  enclave.405.a:1 "What is to be our §Yfate§!?"
  enclave.405.b:2 "Would you be willing to send us a §Yteacher§! from your order?"
  enclave.405.c:1 "Can you give us §Yinsight§! on another empire?"
@@ -397,6 +403,11 @@
  enclave.405.e:0 "Could you teach us how to harvest §YZro§!?"
  enclave.405.e.tt:0 "We need at least §Y50§! £opinion£ Opinion with the §Y[shroudwalker_enclave_country.GetName]§! to ask about §YZro§! harvesting."
  enclave.405.f:0 "We met someone claiming to be a §YVeilfarer§!..."
+ enclave.405.g: "Open an §YAstral Rift§!."
+ enclave.405.g.tt: "§Y50§! £opinion£ Opinion with the §Y[shroudwalker_enclave_country.GetName]§! is required before we can open an §YAstral Rift§!."
+ enclave.405.h: "Help us open our §Yminds§!."
+ enclave.405.h.tt: "§Y90§! £opinion£ Opinion with the §Y[shroudwalker_enclave_country.GetName]§! is required before they will assist us in opening our minds."
+ enclave.405.i: "We seek mastery of the §YShroud§!."
 
  enclave.410.desc:1 "Ah, a momentous query - no less poignant for being asked by so many before you. Such a question carries a heavy price, but we can provide answers.\n\nKnow this, however: the Shroud allows us to perceive events which have not yet come to pass, and this knowledge shall help guide your course. But it is beyond the power of any one event to alter the turning of the galaxy.\n\nIf you would strike this bargain, know that your aspirations should extend no further than to be better prepared. But oh, what grand designs may be built upon even the merest glimpse at what is to come..."
  enclave.410.a:0 "We will consider something else."
@@ -956,7 +967,7 @@
 
  shroud_beacon_active_tooltip:0 "The [Root.GetName] has an active §YShroud Beacon§!."
 
-# shroudwalker_teacher_explanation:1 "\nUnlocks the §Yplanetary decision§! §H$decision_shroudwalker_teacher$§! with the following effects:\n£amenities£ $MOD_PLANET_AMENITIES_MULT$: §G+5%§!\n$mod_planet_jobs_unity_produces_mult$: §G+10%§!\n$mod_planet_telepaths_unity_produces_add$: §G+3§!"
+# shroudwalker_teacher_explanation:1 "\nUnlocks the §Yplanetary decision§! §H$decision_shroudwalker_teacher$§! with the following effects:\n£amenities£ $MOD_PLANET_AMENITIES_MULT$: §G+5%§!\n$mod_planet_jobs_unity_produces_mult$: §G+10%§!\n$mod_planet_enforcers_unity_produces_add$: §G+3§!"
 
  shroudwalker_teacher_explanation:2 "\nWe will hire a Level 5 Official with the §Y$leader_trait_shroudwalker$§! Trait."
 

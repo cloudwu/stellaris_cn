@@ -206,7 +206,6 @@
 
  mod_job_soldier_or_warrior_add: "[GetSoldierJobsAdd]"
  mod_job_soldier_stability_add:2 "Stability per $pop_group_unit$ [soldier.GetIcon] [GetSoldier] Jobs"
- mod_planet_bureaucrats_stability_produces_add: "£mod_planet_stability_add£ Stability per $pop_group_unit$ [bureaucrat.GetIcon] [bureaucrat.GetNamePlural]"
  mod_job_researcher_naval_cap_add: "£mod_country_naval_cap_add£ $MOD_COUNTRY_NAVAL_CAP_ADD$ per $pop_group_unit$ £job_researcher£ [GetResearcher] Jobs"
  mod_job_preacher_trade_add: "$r_trade$ per $pop_group_unit$ £job_preacher£ $job_preacher_plural$"
 
@@ -241,8 +240,8 @@
  mod_BIOLOGICAL_bonus_pop_growth: "Monthly Biological Pop Growth"
  mod_LITHOID_bonus_pop_growth: "Monthly Lithoid Pop Growth"
  MOD_BONUS_POP_GROWTH_MULT: "Monthly Organic Pop Growth Multiplier"
- mod_BIOLOGICAL_bonus_pop_growth_mult: "Montly Biological Pop Growth Multiplier"
- mod_LITHOID_bonus_pop_growth_mult: "Montly Lithoid Pop Growth Multiplier"
+ mod_BIOLOGICAL_bonus_pop_growth_mult: "Monthly Biological Pop Growth Multiplier"
+ mod_LITHOID_bonus_pop_growth_mult: "Monthly Lithoid Pop Growth Multiplier"
  MOD_POP_ASSEMBLY_SPEED:2 "Pop Assembly Speed"
  MOD_PLANET_POP_ASSEMBLY_ADD:1 "Monthly Mechanical Pop Assembly"
  MOD_PLANET_POP_ASSEMBLY_MULT:1 "Mechanical Pop Assembly Speed"
@@ -367,9 +366,12 @@
  EMERGENCY_JUMP:0 "Emergency Jump"
  MOD_SHIP_ANOMALY_FAIL_RISK:0 "Anomaly Fail Risk"
  MOD_SHIP_ANOMALY_RESEARCH_SPEED:0 "Anomaly Research Speed"
+ MOD_SHIP_ANOMALY_RESEARCH_SPEED_UNINHABITABLE: "Uninhabitable Planet $MOD_SHIP_ANOMALY_RESEARCH_SPEED$"
  MOD_SHIP_ANOMALY_GENERATION_CHANCE:0 "Anomaly Discovery Chance"
+ MOD_SHIP_ANOMALY_GENERATION_CHANCE_UNINHABITABLE: "Uninhabitable Planet $MOD_SHIP_ANOMALY_GENERATION_CHANCE$"
  MOD_SHIP_ANOMALY_GENERATION_CHANCE_MULT:0 "$MOD_SHIP_ANOMALY_GENERATION_CHANCE$"
  MOD_SHIP_SCIENCE_SURVEY_SPEED:0 "Survey Speed"
+ MOD_SHIP_SCIENCE_SURVEY_SPEED_UNINHABITABLE: "Uninhabitable Planet $MOD_SHIP_SCIENCE_SURVEY_SPEED$"
  MOD_SHIP_TRACKING_ADD:0 "Tracking"
  MOD_SHIP_TRACKING_MULT:0 "Tracking"
  MOD_SHIP_STARTING_EXPERIENCE_ADD:0 "Ship Starting Experience"
@@ -498,12 +500,6 @@
  mod_planet_buildings_factories_cost_mult:0 "Factories Cost"
  mod_planet_buildings_refineries_cost_mult:0 "Refineries Cost"
  mod_planet_buildings_strongholds_cost_mult:0 "Fortress Cost"
- mod_planet_metallurgists_upkeep_mult:1 "[GetAlloyProducer] Upkeep"
- mod_planet_artisans_upkeep_mult:1 "[GetArtisan] Upkeep"
- mod_planet_researchers_upkeep_mult:1 "[GetResearcherPluralWithIcon] Upkeep"
- mod_planet_refiners_upkeep_mult:0 "Refiner Upkeep"
- mod_planet_chemists_upkeep_mult:0 "Chemist Upkeep"
- mod_planet_translucers_upkeep_mult:0 "Translucer Upkeep"
  mod_planet_district_mining_build_speed_mult:0 "Mining District Build Speed"
  mod_planet_district_farming_build_speed_mult:0 "Agriculture District Build Speed"
  mod_planet_district_generator_build_speed_mult:0 "Generator District Build Speed"
@@ -645,8 +641,8 @@
  MOD_STARBASE_DEFENSE_PLATFORM_CAPACITY_MULT:0 "$MOD_STARBASE_DEFENSE_PLATFORM_CAPACITY_ADD$"
  MOD_COUNTRY_STARBASE_CAPACITY_ADD:0 "$STARBASE_CAPACITY_TITLE$"
  MOD_COUNTRY_STARBASE_CAPACITY_MULT:0 "$STARBASE_CAPACITY_TITLE$"
- MOD_COUNTRY_ENCLAVE_CAPACITY_ADD:0 "Mercenary Enclave Capacity"
- MOD_COUNTRY_ENCLAVE_CAPACITY_MULT:0 "Mercenary Enclave Capacity"
+ MOD_COUNTRY_ENCLAVE_CAPACITY_ADD: "Enclave Capacity"
+ MOD_COUNTRY_ENCLAVE_CAPACITY_MULT: "Enclave Capacity"
  mod_starbase_buildings_cost_mult:0 "Starbase Building Cost"
  mod_starbase_modules_cost_mult:0 "Starbase Module Cost"
 
@@ -730,8 +726,7 @@
  mod_country_base_sr_living_metal_produces_add:0 "Monthly £sr_living_metal£ Living Metal"
  mod_country_base_sr_dark_matter_produces_add:0 "Monthly £sr_dark_matter£ Dark Matter"
  mod_country_base_sr_zro_produces_add:0 "Monthly £sr_zro£ Zro"
-
-
+ mod_country_sr_zro_produces_mult: "£sr_zro£ Zro"
 
  mod_country_monuments_influence_produces_add:0 "$MOD_COUNTRY_INFLUENCE_GAIN_ADD$"
  mod_country_suppression_influence_upkeep_add:0 "Influence Upkeep"
@@ -1866,6 +1861,8 @@
  MOD_CATAPULT_RANGE_BASE:0 "Quantum Catapult Range (Base)"
  MOD_CATAPULT_RANGE_MULT:0 "Quantum Catapult Range"
  mod_quantum_catapult_megastructure_bypass_windup_mult:0 "Quantum Catapult Windup"
+
+ planet_observators: "Observators"
 
  mod_country_consumer_goods_cost_mult:0 "Consumer goods upkeep"
 

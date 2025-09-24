@@ -25,18 +25,16 @@
  mod_job_knight_per_pop:0 "§G+1§! [knight.GetName] Job per $VALUE$ Pops"
  mod_job_knight_per_pop_short:0 "\n§G+1§! [knight.GetIcon] per $VALUE$ £pop£"
  planet_knights:0 "Knights"
- mod_planet_knights_upkeep_mult: "[knight.GetName] Upkeep"
+ job_knight_plural_and_commander_with_icon: "£job_knight_commander£ $job_knight_commander_plural$ and [knight.GetIcon] [knight.GetNamePlural]"
 
  job_squire:0 "Squire"
  job_squire_plural:0 "Squires"
+ job_squire_plural_with_icon: " [squire.GetIcon] [squire.GetNamePlural]"
  job_squire_desc:1 "Becoming a knight takes years of training. Those seeking admission into the Order must first serve a knight, learning from their example even as they strive to make their noble lives more comfortable."
  job_squire_effect_desc:2 "[squire.GetIcon] [squire.GetNamePlural] provide $r_amenities$ and increase §Y$MOD_POP_BONUS_WORKFORCE_MULT$§! of §Y[knight.GetIcon] [knight.GetNamePlural]§!."
  mod_job_squire_add:0 "[squire.GetName] Jobs"
  mod_job_squire_per_pop:0 "§G+1§! [squire.GetName] Job per $VALUE$ Pops"
  mod_job_squire_per_pop_short:0 "\n§G+1§! £mod_job_squire_add£ per $VALUE$ £pop£"
-
- mod_planet_squires_food_produces_add: "£food£ $food$ per $pop_group_unit$ [squire.GetIcon] [squire.GetNamePlural]"
- mod_planet_squires_exotic_gases_produces_add: "£exotic_gases£ $exotic_gases$ per $pop_group_unit$ [squire.GetIcon] [squire.GetNamePlural]"
 
  knights_more_unity_tooltip:1 "[knight.GetIcon] §Y[knight.GetNamePlural]§! will now produce §G+3§! additional £unity£ Unity and their §YUpkeep§! is increased by §R15%§!.\nThe £job_knight_commander£ §Y$job_knight_commander$§! will now produce §G+4§! additional £unity£ Unity."
  knights_more_research_tooltip:1 "[knight.GetIcon] §Y[knight.GetNamePlural]§! will now produce §G+2§! additional £physics_research£ £society_research£ £engineering_research£ Research and their §YUpkeep§! is increased by §R15%§!.\nThe £job_knight_commander£ §Y$job_knight_commander$§! will now produce §G+2§! additional £physics_research£ £society_research£ £engineering_research£ Research."
@@ -801,7 +799,7 @@
  excessive_endurance_tooltip:0 "Habitability: §G+30%§!$TABBED_NEW_LINE$- $MOD_POP_BONUS_WORKFORCE_MULT$: §G+5%§!"
 
  edict_damn_the_consequences:0 "Damn the Consequences"
- edict_damn_the_consequences_desc:1 "This Edict pushes our genetic modifications to the very limit, doubling their effect but also causing an increased amount of terrible side-effects, including sudden catastrophic combustion.\n\n§RWhat could possibly go wrong?§!"
+ edict_damn_the_consequences_desc:1 "This Edict pushes our genetic modifications to the very limit, doubling their effect but also causing an increased amount of terrible side-effects, including sudden catastrophic combustion.\n\n§RDamn the Consequences ignores ['concept_edict_fund'] and will always use 80% of your monthly $unity_with_icon$ income!§!"
  edict_damn_the_consequences_effects:0 "All positive effects from §HOvertuned§! Traits are doubled."
 
  # Deposit for Exotic Metabolism

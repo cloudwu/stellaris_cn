@@ -246,11 +246,11 @@
 
  trait_plantoid_phototrophic:0 "Phototrophic"
  trait_plantoid_phototrophic_desc:0 "§LThis species is sustained by a combination of both food and sunlight.§!\n"
- TRAIT_PLANTOID_PHOTOTROPHIC_EFFECT:0 "Replaces §Y50%§! of $r_food$ (or $r_minerals$) Upkeep with $r_energy$ Upkeep"
+ TRAIT_PLANTOID_PHOTOTROPHIC_EFFECT:0 "Replaces §Y50%§! of $food_with_icon$ (or $minerals_with_icon$) Upkeep with $energy_with_icon$ Upkeep"
 
  trait_plantoid_radiotrophic:0 "Radiotrophic"
  trait_plantoid_radiotrophic_desc:0 "§LThis species is sustained by a combination of both food and low-energy radiation, and as such can thrive on the most inhospitable of worlds.§!"
- TRAIT_PLANTOID_RADIOTROPHIC_EFFECT:1 "$TRAIT_PLANTOID_PHOTOTROPHIC_EFFECT$\n    - This £energy£ §YEnergy§! Upkeep is removed for Pops living on §YTomb Worlds§!.\n    - Pop Growth Speed on §YTomb Worlds§! §G+10%§!\n    - Tomb World Habitability: §G+10%§!"
+ TRAIT_PLANTOID_RADIOTROPHIC_EFFECT:1 "$TRAIT_PLANTOID_PHOTOTROPHIC_EFFECT$\n$t$- This £energy£ §YEnergy§! Upkeep is removed for Pops living on §YTomb Worlds§!.\n$t$- Pop Growth Speed on §YTomb Worlds§! §G+10%§!\n$t$- Tomb World Habitability: §G+10%§!"
  trait_harvested_radiotrophic:0 "$trait_plantoid_radiotrophic$"
  trait_harvested_radiotrophic_desc:0 "$trait_plantoid_radiotrophic_desc$"
  trait_lithoid_radiotrophic:0 "$trait_plantoid_radiotrophic$"
@@ -259,6 +259,7 @@
 
  trait_plantoid_budding:0 "Budding"
  trait_plantoid_budding_desc:0 "§LThis species is capable of reproduction by budding, in addition to the more usual fertilization of seeds or spores.§!"
+ trait_plantoid_budding_portrait_override_tt: "Or any species that reproduce via vegetative propagation"
  trait_lithoid_budding:0 "Crystallization"
  trait_lithoid_budding_desc:0 "§LWith crystalline growths, this species is capable of generating self replicating lattices of themselves, in addition to the more usual reproductive methods.§!"
  TRAIT_PLANTOID_BUDDING_EFFECT: "Every $pop_group_unit$ £pop£ §HPops§! working as a slave or better produces 0.02 £mod_logistic_growth_mult£ §Y$MOD_BONUS_POP_GROWTH$§!.\n\nThis stacks with other sources of $MOD_BONUS_POP_GROWTH$ such as £building£ §Y$building_clone_vats$§! or £job_spawning_drone£ §Y$job_spawning_drone_plural$§!."

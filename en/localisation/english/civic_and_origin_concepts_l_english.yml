@@ -41,6 +41,7 @@
  i_unlocks_building: "§IUnlocks Building:§!"
  i_unlocks_feature: "§IUnlocks Feature:§!"
  i_unlocks_orbital: "§IUnlocks Orbital:§!"
+ i_leader_exp_gain: "£mod_leader_species_exp_gain£ §I$MOD_LEADER_SPECIES_EXP_GAIN$§!"
 
 ### Civic and Origin Concepts
 
@@ -188,7 +189,12 @@
 # Resource Consolidation
 
  concept_pc_machine: "$pc_machine$"
- concept_pc_machine_desc: "- Base Habitability: §Y0%§!\n- $mod_planet_jobs_produces_mult$: §G+10%§!\n- $MOD_POP_HOUSING_USAGE_MULT$: §G-10%§!\n- $MOD_PLANET_RESETTLEMENT_UNEMPLOYED_DESTINATION_MULT$: §G+50%§!\n\n§L$pc_machine_desc$§!"
+ concept_pc_machine_desc: "$pc_machine_effects$\n\n§L$pc_machine_desc$§!"
+
+ pc_machine_effects: "- Base Habitability: §Y0%§!\n- $mod_planet_jobs_produces_mult$: §G+10%§!\n- $MOD_POP_HOUSING_USAGE_MULT$: §G-10%§!\n- $MOD_PLANET_RESETTLEMENT_UNEMPLOYED_DESTINATION_MULT$: §G+50%§!"
+
+ concept_prototype_pc_machine: "Prototype $concept_pc_machine$"
+ concept_prototype_pc_machine_desc: "$pc_machine_effects$ $NEW_LINE$- Initial £blocker£ Blockers reduce Jobs from Districts, Housing, and District Capacity.\n\n§L$pc_machine_desc$§!"
 
  concept_malfunctioning_replicator_bay: "$d_resource_consolidation_1$"
  concept_malfunctioning_replicator_bay_desc: "- Time to Clear:\n$tt$- £time£ 360 §IDays§!\n- Cost to Clear:\n$tt$- 600 $i_minerals$\n- $MOD_PLANET_MAX_DISTRICTS_ADD$: §R-1§!\n\n§L$d_resource_consolidation_1_desc$§!"
@@ -243,6 +249,9 @@
 
  concept_psionic_ascension: "Psionic Ascension"
  concept_psionic_ascension_desc: "By unlocking the latent psionic abilities of the mind, it is possible to tap into and draw immense power from The Shroud."
+
+ concept_attunement: "Attunement"
+ concept_attunement_desc: "$ATTUNEMENT_TT$"
 
  concept_shroud_beacon: "$sm_shroud_beacon$"
  concept_shroud_beacon_desc: "$sm_shroud_beacon_desc$"
@@ -658,3 +667,15 @@
 # Unplugged
  concept_cybernetic_traits: "Cybernetic"
  concept_cybernetic_traits_desc: "Cybernetic Traits provide specialized benefits compared to regular species traits at the cost of additional $r_energy$ upkeep."
+
+# Shroud-Forged
+ concept_shroud_rift_deposit: "$d_shroud_rift_deposit$"
+ concept_shroud_rift_deposit_desc: "$MOD_PLANET_CRIME_NO_HAPPINESS_MULT$: §R+5%§!\n- Produces: 1 $i_zro$\n\n§L$d_shroud_rift_deposit_desc$§!"
+
+# Experimental Testing
+ concept_experimental_testing: "$situation_experimental_testing$"
+ concept_experimental_testing_desc: "Grants a random £physics£ £society£ £engineering£ technology insight upon completion.\n\n§L$situation_experimental_testing_desc_lore$§!"
+ concept_experimental_testing_hive_mind: "$concept_experimental_testing$"
+ concept_experimental_testing_hive_mind_desc: "$concept_experimental_testing_desc$"
+ concept_experimental_testing_corporate: "$concept_experimental_testing$"
+ concept_experimental_testing_corporate_desc: "$concept_experimental_testing_desc$"

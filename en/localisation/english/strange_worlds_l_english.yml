@@ -188,7 +188,7 @@
  strange_worlds.185.c: "Deploy additional enforcement."
 
  strange_worlds.190.name: "Something in the Water"
- strange_worlds.190.desc_intro: "After extensive environmental surveys of §Y[Root.GetName]§!, our scientists have identified the cause of the interdistrict hostility.\n\nDeep within the planetary mantle lies the decaying corpse of a giant organism. Following millenia of decomposition, spinal fluid from the long-dead creature seeped into the planet's groundwater, lacing it with a psionic bacteria. This mind-altering microbe subsequently entered the nervous systems of our [Owner.GetColonistPlural] and induced strong territorial instincts that were likely properties of the original animal.\n\n"
+ strange_worlds.190.desc_intro: "After extensive environmental surveys of §Y[Root.GetName]§!, our scientists have identified the cause of the interdistrict hostility.\n\nDeep within the planetary mantle lies the decaying corpse of a giant organism. Following millennia of decomposition, spinal fluid from the long-dead creature seeped into the planet's groundwater, lacing it with a psionic bacteria. This mind-altering microbe subsequently entered the nervous systems of our [Owner.GetColonistPlural] and induced strong territorial instincts that were likely properties of the original animal.\n\n"
  strange_worlds.190.desc_non_psionic: "We should be able to address the issue by running the water supply through a complex series of uniquely-purposed high-grade filters.\n\n"
  strange_worlds.190.desc_psionic: "This exotic impurity is interfering with our natural psionic abilities.$strange_worlds.190.desc_non_psionic$"
  strange_worlds.190.desc_outro_non_psionic: "Alternatively, our scientists are confident that the bacteria can be genetically modified at the cellular level, redirecting the territorial tendencies towards more productive ends."
@@ -380,7 +380,7 @@
  strange_worlds.3075.desc_homicidal: "\nThe impending chaos should make for an excellent research opportunity."
  strange_worlds.3075.a: "Discredit proof of our existence."
  strange_worlds.3075.b: "Continue observations."
- strange_worlds.3075.b_ct: "The £society£ §YSociety§! Research ouput from the observation post is doubled"
+ strange_worlds.3075.b_ct: "The £society£ §YSociety§! Research output from the observation post is doubled"
 
  strange_worlds.3080.name: "The Truth Is Out There"
  strange_worlds.3080.desc: "Our operators have successfully discredited the evidence of our existence on §Y[event_target:pre_ftl_planet.GetName]§!.\n\nWith the images debunked and the eyewitnesses' credibility destroyed, construction of the "ladders to heaven" has stopped. Embarrassed by their perceived foolishness, the once-divided nations have made a commitment towards the pursuit of rational inquiry and the scientific method.\n\nThe building sites for the ladders have been repurposed into centers of higher learning, as a new wave of scholars come together to debunk the myths of the "Sky Citadel"."
@@ -388,9 +388,9 @@
  strange_worlds.3080.a_ct: "[event_target:pre_ftl_country.GetName] makes 50% progress towards the next age\n[event_target:pre_ftl_country.GetName] becomes Materialist."
 
  strange_worlds.3085.name: "The Great Ladder Wars"
- strange_worlds.3085.desc: "In their efforts to construct "ladders to heaven," tensions between the [Root.GetPreFTLLower] nations of §Y[event_target:pre_ftl_planet.GetName]§! led to an all-out global conflict. Fighting over ever-dwindling resources, the past two years of carnage known as the "Great Ladder Wars" have at last come to an end.\n\nThe key terms of the peace treaty are to present a united front against their common enemy, the "Sky Citadel." As the [event_target:pre_ftl_planet.Owner.GetSpeciesNamePlural] rebuild their wartorn world, their increased paranoia and hatred of the unknown will make future interactions with them more challenging."
+ strange_worlds.3085.desc: "In their efforts to construct "ladders to heaven," tensions between the [Root.GetPreFTLLower] nations of §Y[event_target:pre_ftl_planet.GetName]§! led to an all-out global conflict. Fighting over ever-dwindling resources, the past two years of carnage known as the "Great Ladder Wars" have at last come to an end.\n\nThe key terms of the peace treaty are to present a united front against their common enemy, the "Sky Citadel." As the [event_target:pre_ftl_planet.Owner.GetSpeciesNamePlural] rebuild their war-torn world, their increased paranoia and hatred of the unknown will make future interactions with them more challenging."
  strange_worlds.3085.a: "Problems for later."
- strange_worlds.3085.a_ct: "The £society£ §YSociety§! Research ouput from the observation post returns to normal"
+ strange_worlds.3085.a_ct: "The £society£ §YSociety§! Research output from the observation post returns to normal"
 
  create_hibernators_pops_ct: "Create $@hibernators_pops_created|*0$ £job_pre_sapient£ Pre-Sapient Pops with the §Y$trait_seasonal_dormancy$§! trait"
 
@@ -482,7 +482,7 @@
  living_metal_mega_construction_insight_ct: "Living Metal Mega-Construction Edict base cost: §G-50%§!"
 
  d_coagulated_landscape: "Coagulated Landscape"
- d_coagulated_landscape_ct: "A viscous ooze pulses out of the planetary surface, congealing to form a nearly impenetrable hazardous material. This leaves little space in which to build safely.\n"
+ d_coagulated_landscape_desc: "A viscous ooze pulses out of the planetary surface, congealing to form a nearly impenetrable hazardous material. This leaves little space in which to build safely."
 
  d_shimmering_structure: "Shimmering Structure"
  d_shimmering_structure_desc: "A large, shimmering structure of unknown origin."
@@ -536,7 +536,7 @@
 
  trait_psionic_ephapse: "Psionic Ephapse"
  trait_psionic_ephapse_desc: "After long-term exposure to mind-altering bacteria, this species' digestive system produces psionic probiotics that promote telepathic communication between affected individuals."
- trait_psionic_ephapse_modifier_tooltip: "If Species is §Y$trait_psionic$§! or §Y$trait_latent_psionic$§!:\n£unity£ Unity from £job£ Jobs: §G+5%§!\n£research£ Research from £job£ Jobs: §G+5%§!"
+ trait_psionic_ephapse_modifier_tooltip: "If Species is §Y$trait_psionic$§! or §Y$trait_latent_psionic$§!:\n$bureaucrat_jobs_bonus_workforce_mult$: §G+5%§!\n$researcher_jobs_bonus_workforce_mult$: §G+5%§!"
 
  sand_caretaker_name: "Sand Caretaker"
  sand_caretaker_name_plural: "Sand Caretakers"
@@ -591,20 +591,13 @@
  mod_job_drone_space_junk_collector_per_pop: "§G+1§!£drone_space_junk_collector£ $job_drone_space_junk_collector$ Job per $VALUE$ £pop£ Pops"
  mod_job_drone_space_junk_collector_per_pop_short: "\n§G+1§!£drone_space_junk_collector£$ job_drone_space_junk_collector$ Job per $VALUE$ £pop£"
 
- mod_planet_technician_rare_crystals_produces_add: "£rare_crystals£ $rare_crystals$ per $pop_group_unit$ [technician.GetIcon] [GetTechnician]"
-
- mod_planet_technician_exotic_gases_produces_add: "£exotic_gases£ $exotic_gases$ per $pop_group_unit$ [technician.GetIcon] [GetTechnician]"
-
  mod_planet_deposits_produces_mult: "Resources generated from deposits"
 
  mod_planet_jobs_complex_drone_society_research_produces_mult: "£society_research£ $society_research$ per $pop_group_unit$ $pop_cat_complex_drone_plural$ £job£ Jobs"
 
  mod_planet_districts_hab_energy_upkeep_mult: "Energy District Upkeep"
 
- mod_planet_technician_food_produces_add: "£food£ $food$ per $pop_group_unit$ [technician.GetIcon] [GetTechnician]"
-
  mod_planet_broken_shackles_scavenger_produces_mult: "£job_broken_shackles_scavenger£ $job_broken_shackles_scavenger$ Output"
- mod_planet_clerks_produces_mult: "[clerk.GetIcon] [clerk.GetName] Output"
 
  tech_enhanced_cryosleep_sedatives: "Enhanced Cryosleep Sedatives"
  tech_enhanced_cryosleep_sedatives_desc: "Sedatives based on a rare enzyme enable enhanced cryosleep, greatly improving organic species' tolerance of long-distance space travel."

@@ -84,7 +84,7 @@
 
  mod_gravity_snare_cooldown_mult: "Gravity Snare Cooldown"
  MOD_GRAVITY_SNARE_COST_MULT: "Gravity Snare Cost"
- MOD_SPACE_FAUNA_CULLING_REWARD_MULT: "Culling Reward"
+ MOD_SPACE_FAUNA_CULLING_REWARD_MULT: "Resources from Culling"
 
  grand_archive.7210.name: "Gravity Snares"
  grand_archive.7210.desc.common: "Following the recent discovery of §Y$tech_gravity_wells$§!, [root.GetAdjective] science ships are now able to launch $gravity_snare_plural$."
@@ -297,7 +297,7 @@
  MOD_SHIP_DAMAGE_AGAINST_BOSS_MULT: "Damage vs Leviathans"
  MOD_SPACE_FAUNA_GROWTH_RATE_MULT: "Space Fauna Ship Growth Rate"
 
- mod_vivarium_produces_mult: "Resources from Culling Space Fauna"
+ mod_vivarium_produces_mult: "Resources from Culling, Hunting, and Capturing Space Fauna"
  mod_specimens_produces_mult: "Specimens Output"
 
  MOD_ARTIFICIAL_SHIP_NAVAL_CAP_USAGE_MULT: "Artificial Ships $MOD_SHIP_NAVAL_CAP_USAGE_MULT$"
@@ -1260,7 +1260,7 @@
  RADIOACTIVE_PLANET_DESC: "We have discovered a planet containing large quantities of heavily decayed radioactive isotopes. Further investigation is warranted."
 
  d_radioactive_ruins: "£blocker£ Radioactive Ruins"
- d_radioactive_ruins_desc: "An ancient civilization was wiped out here by a powerful gamma-ray burst long ago. These ruins are all that remain. "
+ d_radioactive_ruins_desc: "An ancient civilization was wiped out here by a powerful gamma-ray burst long ago. These ruins are all that remain."
 
  mod_aesthetic_wonder_specimens_produces_mult: "$EXHIBITION_AESTHETIC_WONDERS$ $specimens$ Output"
  mod_historical_item_specimens_produces_mult: "$EXHIBITION_GALACTIC_HISTORY$ $specimens$ Output"
@@ -1315,8 +1315,8 @@
  RESOURCES_GAINED_TT: "Cull §YSpace Fauna§! in order to gain research, resources and new £genetic_material£ §Y$genetic_material$§! for cloning them in §YHatcheries§!."
  LAST_YEAR_SUMMARY: "Last Year: $RESOURCES$"
  LAST_MONTH_SUMMARY: "Last Month: $RESOURCES$"
- LAST_YEAR_CULLED_TT: "The total amount of resources gained from culling §YSpace Fauna§! in the last year."
- LAST_MONTH_CULLED_TT: "The total amount of resources gained from culling §YSpace Fauna§! in the last month."
+ LAST_YEAR_CULLED_TT: "The total amount of resources gained from culling, hunting and capturing §YSpace Fauna§! in the last year."
+ LAST_MONTH_CULLED_TT: "The total amount of resources gained from culling, hunting, and capturing §YSpace Fauna§! in the last month."
 
  genetic_material: "Genetic Material"
 
@@ -1881,7 +1881,7 @@
  leader_trait_treasure_hoarder_desc: "No bounty is high enough to satisfy this leader's ambition. The accumulation of valuable resources is their primary motivation."
 
  mod_enemy_ship_destroyed_energy_add: "$r_energy$ per size of Enemy Ship Destroyed"
- mod_deposit_increase_on_survey_chance_mult: "On Completing Survey: Chance to increase Resource Deposit Size"
+ mod_deposit_increase_on_survey_chance_mult: "On Completing Survey:\n$t$Chance to increase Resource Deposit Size"
 
 ##########
 # Civics #
@@ -1965,8 +1965,7 @@
  tr_domestication_bio_repurposing_reanimator_tt: "$tr_domestication_bio_repurposing_blocker_tt$"
  tr_domestication_astrozoology: "Astrozoology"
  tr_domestication_astrozoology_delayed: "The creatures of the void are each unique in their breeding patterns and nutritional needs. It takes great attention to raise them to their greatest potential in an isolated environment."
- tr_domestication_astrozoology_gestalt_tt: "Increased chance of Breeding for all §YSpace Fauna§! in the §YVivarium§!.\n$MOD_SPACE_FAUNA_CULLING_REWARD_MULT$: §G+25%§!"
- tr_domestication_astrozoology_tt: "$tr_domestication_astrozoology_gestalt_tt$\n$mod_planet_zoo_keepers_produces_mult$: §G+50%§!"
+ tr_domestication_astrozoology_tt: "Upon Capturing or Breeding Space Fauna: $NEW_LINE$$t$- Culling Resources Gained: §G200%§!"
  tr_domestication_metabolic_regulation: "Metabolic Regulation"
  tr_domestication_metabolic_regulation_delayed: "We can artificially control the maturation of contained species by regulating various key enzymes and proteins that affect their individual metabolisms."
  tr_domestication_metabolic_regulation_tt: "Unlocks the §Y$policy_metabolic_regulation$§! Policies"
@@ -2261,11 +2260,11 @@
 
  grand_archive.8115.name: "Maneuver Successful"
  grand_archive.8115.desc.1: "After months of preparation, Scientist [Leader.GetName] successfully infiltrated the communications network and impersonated a §YBlack Needle§! vessel. Under fabricated orders from Captain Hoo, [Leader.GetHeShe] [Leader.GetHasHave] tricked the base operators into preparing the capsule for emergency off-world transfer."
+ grand_archive.8115.desc.slippery: "Scientist [Leader.GetName] landed their vessel in perfect position to make a hasty retreat in case their cover was blown."
+ grand_archive.8115.desc.charismatic: "Using their charisma and charm, Scientist [Leader.GetName] [Leader.GetWasWere] able to avoid any difficult questions."
+ grand_archive.8115.desc.psionic_organic: "With a simple flick of the [Leader.Species.GetHandName], Scientist [Leader.GetName] manipulated the minds of the guards to allay any suspicions."
+ grand_archive.8115.desc.psionic_machine: "Through psionic coercion, [Leader.GetName] [Leader.GetWasWere] easily able to manipulate the inferior minds of the guards to avoid further suspicions."
  grand_archive.8115.desc.2: "The capsule was secured with no casualties. The pirates have not yet understood that they were duped."
- grand_archive.8115.desc.default: "$grand_archive.8115.desc.1$\n\n$grand_archive.8115.desc.2$"
- grand_archive.8115.desc.slippery: "$grand_archive.8115.desc.1$\n\nScientist [Leader.GetName] landed their vessel in perfect position to make a hasty retreat in case their cover was blown.\n\n$grand_archive.8115.desc.2$"
- grand_archive.8115.desc.charismatic: "$grand_archive.8115.desc.1$\n\nUsing their charisma and charm, Scientist [Leader.GetName] [Leader.GetWasWere] able to avoid any difficult questions.\n\n$grand_archive.8115.desc.2$"
- grand_archive.8115.desc.psionic: "$grand_archive.8115.desc.1$\n\nWith a simple flick of the [Leader.Species.GetHandName], Scientist [Leader.GetName] manipulated the minds of the guards to allay any suspicions.\n\n$grand_archive.8115.desc.2$"
  grand_archive.8115.a: "$EXCELLENT$"
 
  grand_archive.8120.name: "Caught Red-Handed"
@@ -2703,7 +2702,7 @@
  ###############
  # Reanimators #
  ###############
- reanimator_effect_desc: "Controlled cloned organic §HSpace Fauna§! can be reanimated"
+ reanimator_effect_desc: "Controlled cloned organic §YSpace Fauna§! can be reanimated"
  FLEETORDER_REANIMATE_PROJECT_BUTTON: "Reanimate Space Fauna Ships"
  MESSAGE_DEBRIS_REANIMATED_FINISH_MESSAGE_TYPE_TITLE: "Space Fauna Reanimated"
  MESSAGE_DEBRIS_REANIMATED_FINISH: "The deceased spaceborne creatures in $SYSTEM|Y$ have been reanimated and can now be controlled as part of our military."

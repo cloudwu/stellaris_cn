@@ -33,10 +33,12 @@
  trait_egg_laying: "Egg Laying"
  trait_egg_laying_desc: "The young of this species do not develop inside a parent, but inside the protective shell of an egg. This allows for rapid growth during times of plenty."
  trait_egg_laying_effect: "Pop Growth Speed: §G+15%§! while living on a planet with a local $r_food$ (or $r_minerals$) §GProduction Surplus§!"
+ trait_egg_laying_portrait_override_tt: "Or any oviparous species"
 
  trait_seasonal_dormancy: "Seasonal Dormancy"
  trait_seasonal_dormancy_desc: "This species has evolved on a planet with cyclical seasons that support hibernation. In the modern age, these seasonal triggers can be artificially simulated to efficiently store less productive members of society."
  trait_seasonal_dormancy_effect: "Employed Pop Upkeep: §G-15%§!\n    - Unemployed and ['concept_denizen'] Pop Upkeep: §G-75%§!"
+ trait_seasonal_dormancy_portrait_override_tt: "Or any hibernating species"
 
  trait_hollow_bones: "Hollow Bones"
  trait_hollow_bones_desc: "The fragile bones of this species allow them to move elegantly and with ease. However, they are also more susceptible to the gravitational effects of their world."
@@ -46,6 +48,7 @@
  trait_rooted_desc: "This species literally takes root in whichever environment they find themselves, making removal a highly traumatic experience."
  AUTO_MIGRATE_ROOTED: "§RRooted Pops cannot migrate.§!"
  trait_rooted_effect: "§RPops will not Automatically Resettle§!\n    - Resettlement Cost: §R+200%§!"
+ trait_rooted_portrait_override_tt: "Or any environmentally-bound species"
 
  trait_acidic_vascularity: "Acidic Vascularity"
  trait_acidic_vascularity_desc: "The internal fluids of this species serve as their most potent defense. Highly corrosive and lethal, these liquids ensure that any enemies regret poking holes."
@@ -54,12 +57,15 @@
 
  trait_shelled: "Shelled"
  trait_shelled_desc: "Whether naturally grown or found by chance (or design), this species carries their homes with them. These shells provide a protective sanctuary, ensuring there is always a place to rest for the night."
+ trait_shelled_portrait_override_tt: "Or any shell-bearing species"
 
  trait_camouflage: "Camouflage"
  trait_camouflage_desc: "Masters of disguise, this species seamlessly merges with their surroundings, rendering themselves nearly invisible to predators and prey alike. Their innate understanding of optics gives them an edge in guerilla warfare."
+ trait_camouflage_portrait_override_tt: "Or any camouflage-capable species"
 
  trait_chromalogs: "Chromalogs"
  trait_chromalogs_desc: "Harnessing the artistry of color, this species has transcended mere camouflage, evolving to communicate through the vibrant and intricate patterns displayed on their bodies."
+ trait_chromalogs_portrait_override_tt: "Or any species using body coloration to communicate"
 
  trait_brittle: "Brittle"
  trait_brittle_desc: "Plagued by inherent fragility, this species must exercise extreme caution in daily activities to avoid cracking up during even the most mundane tasks."
@@ -67,6 +73,7 @@
  trait_familial: "Familial"
  trait_familial_desc: "Bound by deep, enduring relationships with their closest relatives, this species forms highly efficient and cohesive collectives."
  trait_familial_effect: "Happiness per §Y100§! £pop£ Pops with this Trait on the same planet: §G0.1%§! (Max: §G+20%§!)"
+ trait_familial_portrait_override_tt: "Or any familial species"
 
  trait_permeable_skin: "Permeable Skin"
  trait_permeable_skin_desc: "Specially developed skin that requires ideal conditions coats this species. As long as this species does not stray far from their home climate that shouldn't be a problem."
@@ -77,18 +84,23 @@
  trait_genetic_memory: "Genetic Memory"
  trait_genetic_memory_desc: "Passing down knowledge and learnings from one generation to the next has been the start of many civilizations. This species has taken it a step further by encoding survival insights directly into their genetic code, ensuring that each generation is born with the accumulated wisdom of their ancestors."
  trait_genetic_memory_effect: "Habitability from Colony Age: §G+0.5%§! per Year (Max. §G+25%§!)"
+ trait_genetic_memory_portrait_override_tt: "Or any species with inherited survival instincts"
 
  trait_nascent_stage: "Nascent Stage"
  trait_nascent_stage_desc: "This species gives birth at an early stage of development, resulting in a prolonged period where the young are incapable of contributing to society. During this time, they remain blissfully unaware of the responsibilities and burdens that come with sapience."
  trait_nascent_stage_effect: "Newly grown Pops with this trait spend the first §Y5§! Years after being grown as a Pre-Sapient."
+ trait_nascent_stage_portrait_override_tt: "Or any species with an extended infancy period"
+
  trait_presapient_stage: "Pre-Sapient"
  trait_presapient_stage_desc: "Spending a brief time bereft of conscious thought, this species will soon grow up to be a fully sapient being."
 
  trait_flight: "Flight"
  trait_flight_desc: "This species soars above the constraints of the earth, freely navigating the skies. Their cities feature unique, dense layouts, optimized for aerial inhabitants. In conflict, they prove to be elusive and difficult targets."
+ trait_flight_portrait_override_tt: "Or any species adapted to aerial life"
 
  trait_spatial_mastery: "Spatial Mastery"
  trait_spatial_mastery_desc: "Not only capable of flight, this species possesses unique cerebral adaptations, enabling them to instinctively process and navigate three-dimensional spaces. These abilities make them unparalleled in planning battles, surveying planets, and managing cities."
+ trait_spatial_mastery_portrait_override_tt: "Or any species gifted in three-dimensional navigation"
 
  trait_spare_organs: "Spare Organs"
  trait_spare_organs_desc: "This species evolved redundant organs to survive even the most grievous injuries - a successful adaptation, as evidenced by their continued existence."
@@ -295,6 +307,7 @@
  bio.1005.toxoid: "The Toxoids are §Gsour§!."
  bio.1005.plasmic: "Stabilizing Plasmic DNA would be an impressive feat."
  bio.1005.leviathan: "What can the Titans of the galaxy teach us?"
+ bio.1005.psionic: "What within the Psionic genome fuels such cognitive prowess?"
  bio.1005.random: "Embrace the chaos - let our instincts guide us!"
  bio.1005.no_reward: "We are complex enough."
  bio.1005.unnatural_selection: "Let mutation unlock abilities beyond our natural limitations!"
@@ -1203,7 +1216,7 @@
 
  # Approach Unlocks
 
- engineered_evolution_biogenesis_tt: "- Starts the §Y$genetic_ascension_situation$ Situation§! which unlocks the ['tradition_category:tradition_purity'], ['tradition_category:tradition_cloning'] or ['tradition_category:tradition_mutation'] Tradition Trees.\n- $UNLOCKS_AGENDA$ §Y$council_agenda_agenda_engineered_evolution_name$§!, which grants Genetic Modification technologies as Research Options\n- $genomic_research_facility_unlocked_tt$\n- $REQUIRES_TRADITION_SLOT$"
+ engineered_evolution_biogenesis_tt: "- Starts the §Y$genetic_ascension_situation$ Situation§! which unlocks the ['tradition_category:tradition_purity'], ['tradition_category:tradition_cloning'] or ['tradition_category:tradition_mutation'] Tradition Trees.$TABBED_NEW_LINE$- $REQUIRES_TRADITION_SLOT$\n- $UNLOCKS_AGENDA$ §Y$council_agenda_agenda_engineered_evolution_name$§!, which grants Genetic Modification technologies as Research Options\n- $genomic_research_facility_unlocked_tt$"
 
  purity_traditions_unlocked_tt: "Allows Adoption of ['tradition_category:tradition_purity'] upon conclusion of the §Y$genetic_ascension_situation$ Situation§!."
  cloning_traditions_unlocked_tt: "Allows Adoption of ['tradition_category:tradition_cloning'] upon conclusion of the §Y$genetic_ascension_situation$ Situation§!."
@@ -2469,7 +2482,7 @@
  large_fallen_stinger_plural: "$ship_growth_stage_4$ $stinger_class_plural_cap$"
  cosmo_crisis_weaver: "$tech_cosmogenesis_weaver$"
  cosmo_crisis_weaver_cap: "$tech_cosmogenesis_weaver$"
- cosmo_crisis_weaver_plural: "Quandry Weavers"
+ cosmo_crisis_weaver_plural: "Quandary Weavers"
  cosmo_crisis_mauler: "$tech_cosmogenesis_mauler$"
  cosmo_crisis_mauler_cap: "$tech_cosmogenesis_mauler$"
  cosmo_crisis_mauler_plural: "Cipher Maulers"
@@ -2627,6 +2640,7 @@
  bio.3220.necroid: "Give us the necroid modification."
  bio.3220.aquatic: "Give us the aquatic modification."
  bio.3220.toxoid: "Give us the toxoid modification."
+ bio.3220.psionic: "Give us the psionic modification."
  bio.3220.evopred: "We wont stay the same for long."
  bio.3220.b: "We won't change a species on your whim!"
 
@@ -2795,7 +2809,7 @@
  menp_behemoth_bioship_2: "Better Glandular Stimulation"
  menp_behemoth_bioship_2_desc: "With purpose built probes we are artificially stimulating the endocrine glands of the Behemoth to produce growth hormones for accelerated development."
  menp_behemoth_society_2: "Transversal Enquiries"
- menp_behemoth_society_2_desc: "At the intersection of natural selection and bioengineering, an incomparable force is born."
+ menp_behemoth_society_2_desc: "At the intersection of natural selection and bio-engineering, an incomparable force is born."
  menp_behemoth_food_2: "Nutrient Overload"
  menp_behemoth_food_2_desc: "Sating the ravenous appetite of a Behemoth may well prove impossible. Producing genetically modified food on a massive scale is only the start."
 
@@ -2832,7 +2846,7 @@
  unlocks_behemoth_ever_hungry: "Unlocks the $behemoth_finale_situation$ Situation. Feast on this galaxy to grow in size and power and become the ultimate starborne predator.\n"
  menp_behemoth_ever_hungry_desc: "We are in agony, the constant need to feed becoming our sole motivation for existing. There is a pit within us that can never be filled, no matter how much we consume. We require nothing short of a galaxy-sized feast to quell this pain."
  menp_behemoth_egg_2: "Ravenous Progeny"
- unlocks_behemoth_egg_2: "Unlocks the ability for §YClass IV Behemoths§! to lay §YEggs§! and pepretuate its species.\n"
+ unlocks_behemoth_egg_2: "Unlocks the ability for §YClass IV Behemoths§! to lay §YEggs§! and perpetuate its species.\n"
  menp_behemoth_egg_2_desc: "Our spawn will gorge on the carcass of the galaxy. Their hunger knows no end. Through the infinity of time, they shall feast."
 
  mod_shipclass_military_hull_mult: "Military Ships Hull"
@@ -2974,7 +2988,7 @@
  UNSETTLING: "Unsettling."
 
  biocrisis.197.name: "Quis Venabitur Ipsos Venatori"
- biocrisis.197.desc: "Uncovering the Behemoth's fate took years, and we’re still in the dark. With no Hyperlanes reaching that far, we relied on theory and half-mad science to guess what happened in its final moments.\n\nThe creature showed no fear. It simply flew on. Then, in an instant, its form warped, spiraling inward like twisted fabric, and vanished. No struggle. No trace.\n\nTheories abound: a new form of FTL? Hidden by a deep-space rift or an anomaly? Or more concerning, folded into inexistence by an exterior power? Whatever the truth, it lies far beyond our reach... and possibly our comprehension."
+ biocrisis.197.desc: "Uncovering the Behemoth's fate took years, and we're still in the dark. With no Hyperlanes reaching that far, we relied on theory and half-mad science to guess what happened in its final moments.\n\nThe creature showed no fear. It simply flew on. Then, in an instant, its form warped, spiraling inward like twisted fabric, and vanished. No struggle. No trace.\n\nTheories abound: a new form of FTL? Hidden by a deep-space rift or an anomaly? Or more concerning, folded into inexistence by an exterior power? Whatever the truth, it lies far beyond our reach... and possibly our comprehension."
  biocrisis.197.a: "Perhaps it is best not to think about it."
  biocrisis.197.b: "Our captured Prethoryns grow restless."
 

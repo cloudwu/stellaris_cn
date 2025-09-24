@@ -46,6 +46,8 @@
  SPECIMEN_LIST: " - $SPECIMEN$"
  SPECIMEN_CATEGORY_TT: "§HCategory:§! $CATEGORY$"
  SPECIMEN_RARITY_TT: "§HRarity:§! $RARITY$"
+ SPECIMEN_NOT_TRADABLE: "$TRIGGER_FAIL$§RThis specimen cannot be traded.§!"
+ SPECIMEN_NOT_SELLABLE: "$TRIGGER_FAIL$§RThis specimen cannot be sold.§!"
  CANNOT_TRADE_DUPLICATE_SPECIMEN: "$TRIGGER_FAIL$This specimen is not of interest to our trade partner."
  TRADE_SPECIMEN_CATEGORY_FULL: "$SPECIMEN$: $CATEGORY$ is already full."
  TRADE_SPECIMEN_NOT_ENOUGH_SPACE: "$TRIGGER_FAIL$Our trade partner claims to not have enough space to store every specimen in the trade."
@@ -90,7 +92,7 @@
  altar_to_the_elder_one_desc_short: "A preternatural machine found within a hallowed, ancient chamber"
  altar_to_the_elder_one_desc_details: "Even in its now defunct state, it radiates a singular aura of unmeasurable psionic energy. Some say its tempting whispers can still be heard, aiming to coax wayward souls into returning to [cosmic_horror_location.GetName]."
 
- aluminium_plaque: "Aluminium Plaque"
+ aluminium_plaque: "Aluminum Plaque"
  aluminium_plaque_desc_short: "A simple plaque found on a drone launched by [owner.GetAAnPreFTLLower] [owner.GetPreFTLLower] mammalian civilization"
  aluminium_plaque_desc_details: "The surface is etched with some odd geometric shapes and crude images of their species. The craftsmanship is rather poor, but it must have represented a significant effort from their civilization to simply launch this object into space."
 
@@ -378,7 +380,7 @@
 
  fossilized_endoskeletons: "Fossilized Endoskeletons"
  fossilized_endoskeletons_desc_short: "This is all that remains of an unknown humanoid species after exhausting the mineral resources of [fromfrom.GetName]"
- fossilized_endoskeletons_desc_details: "These sapient bipeds consumed a diet of mineral-rich crops to reinforce their dense endoskeletons. However, the natural inclination of the bodies of these bipeds lended itself to fossilization rather than decomposition, preventing the consumed minerals from re-entering the soil. Unable to access these vital elements, the planet's loam degraded and eventually became barren. "
+ fossilized_endoskeletons_desc_details: "These sapient bipeds consumed a diet of mineral-rich crops to reinforce their dense endoskeletons. However, the natural inclination of the bodies of these bipeds lent itself to fossilization rather than decomposition, preventing the consumed minerals from re-entering the soil. Unable to access these vital elements, the planet's loam degraded and eventually became barren. "
 
  fossilized_megastomach: "Fossilized Megastomach"
  fossilized_megastomach_desc_short: "Digestive glands taken from a planet-spanning worm-like creature found on [fromfrom.Planet.GetName]"
@@ -395,6 +397,10 @@
  fractured_planet: "Fractured Planet"
  fractured_planet_desc_short: "The remains of a planet that was intentionally demolished by its own inhabitants"
  fractured_planet_desc_details: "Whatever situation drove them to make such a drastic decision has been lost to time."
+
+ fragment_of_reckoning: "Fragment of Reckoning"
+ fragment_of_reckoning_desc_short: "A partially tangible remnant of great psionic force"
+ fragment_of_reckoning_desc_details: "Known in this dimension as the Reckoning, this entity was responsible for the destructive transformation of [event_target:shrouded_planet.GetName]. This particular fragment was contained by a civilization specializing in Psionic Theory shortly before their demise."
 
  fragmented_zroni_archive: "Fragmented Zroni Archive"
  fragmented_zroni_archive_desc_short: "A large datacrystal found on [fromfrom.Planet.GetName] from an ancient colony known as the Zroni"
@@ -454,7 +460,7 @@
  hemterine_magnetic_figurehead_desc_details: "This masthead was cast in chemically altered magnetic osmium. More than simple decoration, the sculpture was designed to absorb heavy impacts from enemy fire. Mounted at the bow of a Hemterine Titan, it used powerful magnetic forces to attract missiles and kinetic projectiles to protect sensitive areas of the ship."
 
  high_geode_of_the_molluscoids: "High Geode of the [molluscoid_miners_species.GetName]"
- high_geode_of_the_molluscoids_desc_short: "The prized crystalized geode of the [molluscoid_miners_species.GetName]"
+ high_geode_of_the_molluscoids_desc_short: "The prized crystallized geode of the [molluscoid_miners_species.GetName]"
  high_geode_of_the_molluscoids_desc_details: "As a society of presapient burrowers, the [molluscoid_miners_species.GetName] have long used the perceived quality of minerals unearthed to represent their status within society. Once prominently displayed in their largest habitat, this beautiful rock now functions as a symbol of collaboration with [this.GetName]."
 
  hot_ice: "Hot Ice"
@@ -511,7 +517,7 @@
 
  irassian_digital_atlas: "Irassian Kinder-Atlas"
  irassian_digital_atlas_desc_short: "An Irassian informational tool used to educate children about the empire they were born into"
- irassian_digital_atlas_desc_details: "It provides basic information about Irassian agriculture, social hierarchy, and primary exports. Irassian history is told in the form of heroic tales, including the conquering and subjugation of various client species. Cartoonish representations of each subject are depicted along with disparaging remarks: The Ti'Derg labelled as "grasshopping pests," the Joggra as "bottomfeeders," and the Chitorcs as "space poultry"."
+ irassian_digital_atlas_desc_details: "It provides basic information about Irassian agriculture, social hierarchy, and primary exports. Irassian history is told in the form of heroic tales, including the conquering and subjugation of various client species. Cartoonish representations of each subject are depicted along with disparaging remarks: The Ti'Derg labelled as "grasshopping pests," the Joggra as "bottom-feeders," and the Chitorcs as "space poultry"."
 
  irassian_purge_order: "Irassian Purge Order"
  irassian_purge_order_desc_short: "An emergency military message from the Irassian Concordat ordering the complete annihilation of one of their own colonies"
@@ -565,7 +571,7 @@
  living_snow_sculpture_desc_short: "A sculpture made of "Living Snow""
  living_snow_sculpture_desc_details: "Possessing some form of primitive consciousness, this material has been granted a natural reserve on [prev.target.GetName]. It routinely changes form, though when this occurs can be unpredictable."
 
- localised_aurora_borealis: "Localised Aurora Borealis"
+ localised_aurora_borealis: "Localized Aurora Borealis"
  localised_aurora_borealis_desc_short: "A series of scintillating colors captured in video from the atmosphere of [FromFrom.Planet.GetName]"
  localised_aurora_borealis_desc_details: "The patterns of colors and movements repeat in predictable frequencies, representing something far beyond their aesthetic beauty. Their ever-present nature adds a poignant tone to the planet lost to war and destruction below."
 
@@ -778,7 +784,7 @@
  radiated_remains_desc_details: "Each mutation was a sacred event, interpreted as a manifestation of the individual's destiny. Over time, this procedure destabilized the genetic structure of the species and weakened their immune system, making the population extremely vulnerable to disease."
 
 # this = ship / from = planet
- rainaissance: "Purple Rainaissance"
+ rainaissance: "Purple Renaissance"
  rainaissance_desc_short: "Artistic images taken of the uniquely purple rain found present in the weather patterns of [FROM.GetName]"
  rainaissance_desc_details: "It is said that observing this evocative imagery is effective in relieving thoughts of sorrow and pain."
 
@@ -844,7 +850,7 @@
 
  sky_dragon: "The Sky Dragon"
  sky_dragon_desc_short: "This celebratory statue was commissioned to represent the collaboration between [this.GetName] and the "Sky Dragon" that has long orbited [this.GetHomeWorldName]"
- sky_dragon_desc_details: "Having deemed the [this.GetAdjective] society worthy, the creature pledged itself and its offspring in military support in exchange for the opportunity to raise its young in [this.GetAdjective] space. It is said these spaceborne creatures can wait millenia to find a suitable host for their young, and only ever choose one planet."
+ sky_dragon_desc_details: "Having deemed the [this.GetAdjective] society worthy, the creature pledged itself and its offspring in military support in exchange for the opportunity to raise its young in [this.GetAdjective] space. It is said these spaceborne creatures can wait millennia to find a suitable host for their young, and only ever choose one planet."
 
  smeegibb_statue: "Statue of Smeegibb"
  smeegibb_statue_desc_short: "A statue of Smeegibb, the hive-minded companions of Captain Ness"
@@ -955,7 +961,7 @@
 
  tricorne_of_aussan: "Tricorne of Aussan"
  tricorne_of_aussan_desc_short: "A tri-tipped hat made popular by a forgotten pirate republic"
- tricorne_of_aussan_desc_details: "Aussan was a small planet populated by a [root.controller.GetPreFTLLower] civilization that unknowningly provided refuge to a wanted pirate fleet, the Bourre Brawlers. Lying low from the galactic authorities, the Brawlers built a small textile mill to fund their time in hiding, using native fibrous plants to create luxurious fabrics and clothing. The Brawlers later became known as the Bourre Couturiers, mercantile nomads known for their oddly intimidating sales representatives."
+ tricorne_of_aussan_desc_details: "Aussan was a small planet populated by a [root.controller.GetPreFTLLower] civilization that unknowingly provided refuge to a wanted pirate fleet, the Bourre Brawlers. Lying low from the galactic authorities, the Brawlers built a small textile mill to fund their time in hiding, using native fibrous plants to create luxurious fabrics and clothing. The Brawlers later became known as the Bourre Couturiers, mercantile nomads known for their oddly intimidating sales representatives."
 
  triggerless_gun: "Arms Dealer's Triggerless Gun"
  triggerless_gun_desc_short: "This weapon was designed during the short-lived second reign of the Arms Broker on Chor's Compass"

@@ -496,7 +496,7 @@
  leader_trait_admiral_warform_desc:1 "The blessing of the Animator of Clay has allowed the warform to survive in the most hostile conditions, and adapt to its corrosive environment."
 
  leader_trait_admiral_warform_node:0 "Corrosive Survivor Teachings"
- leader_trait_admiral_warform_node_desc:0 "The unique knowlege of the warform has become our own."
+ leader_trait_admiral_warform_node_desc:0 "The unique knowledge of the warform has become our own."
  warform_leader_desc:0 "An ancient combat computer ready to serve our empire after having spent centuries in a toxic graveyard."
  warform_leader_catch_phrase:0 "§LRETURNING TO PREVIOUS DIRECTIVE... SERVE MAKERS§!"
  distar.170.name:0 "Broken Union"
@@ -610,6 +610,7 @@
  distar.242.name:0 "Psionic Entity"
  distar.242.desc:0 "The [Root.GetName] has encountered a massive being of pure energy in the [From.GetName] System! A veritable vortex of psionic forces, this entity should only be approached with the utmost caution.\n\nBafflingly, the [From.GetName] system itself seems to be entirely devoid of any connection to the subspace hyperlane network. Whether this entity's presence has severed the system's hyperlane connections, or if unexpected subspace fluctuations trapped it here is unknown.\n\nOne matter is known, however: the repeating signal we first registered in the [sealed_entry_system.GetName] system appears to originate from [tanker_planet.GetName]."
  distar.242.desc.psi:0 "The [Root.GetName] has encountered a massive being of pure energy in the [From.GetName] System! A veritable vortex of psionic forces, our crew senses intense malevolence emanating from the entity.\n\nBafflingly, the [From.GetName] system itself seems to be entirely devoid of any connection to the subspace hyperlane network. Whether this entity's presence has severed the system's hyperlane connections, or if unexpected subspace fluctuations trapped it here is unknown.\n\nOne matter is known, however: the repeating signal we first registered in the [sealed_entry_system.GetName] system appears to originate from [tanker_planet.GetName]."
+ distar.242.desc.psi_hive_robot: "The [Root.GetName] has made first contact with a non-corporeal energy-being in the [From.GetName] system. Our [Owner.GetTelepathPlural] have identified the entity as a potentially hostile, sentient vortex of psionic force.\n\nThe [From.GetName] system is completely disconnected from the hyperlane network. It is unclear if the disconnect is by design, or due to an external force. We can however confirm that the repeating signal we first observed in the [sealed_entry_system.GetName] system likely originates from [tanker_planet.GetName]."
  distar.243.name:0 "Entity Silenced"
  distar.243.desc:0 "With the destruction of the malevolent psionic entity that had been sealed in the [sealed_system.GetName] System, our science vessels should be able to safely explore this unique section of space devoid of hyperlanes."
  distar.244.name:0 "Marvels of Medicine"
@@ -624,7 +625,7 @@
  distar.246.f.response:0 "§EUn--fortunately, a hyperdrive malfunction led Drop Pods 114 through 175 to exit hyperspace eighteen parsecs from our intended destination.\n\nI have attended the citizens as best I could. I managed to prevent cannibalism for one-thousand-eight-hundred-and-forty days. Un--fortunately, their air supply eventually ran out.\n\nDo you have citizens in need of tending, <<UNIDENTIFIED VISITOR C>>? If so, I would be happy to care for them.§!"
  distar.246.a:1 "Welcome Caretaker!"
  distar.246.a.tooltip:0 "§YOfficial $NAME_Caretaker$§! is added to our §H$RECRUITABLE_LEADERS$§!."
- distar.246.b:1 "Analyse its parts."
+ distar.246.b:1 "Analyze its parts."
  distar.246.b.tooltip:0 "Examine the machine unit for engineering insight."
  distar.246.c:0 "Our policies forbid the use of advanced AIs. Close the channel."
  distar.246.d.destroy:0 "Destroy it!"
@@ -901,7 +902,7 @@
  caretaker_leader_desc:0 "A machine specialized in caring for others. The failures of the past are embedded in its memory banks."
  caretaker_leader_catch_phrase:0 "$distar.249.desc$"
  leader_trait_govenor_caretaker:0 "Caretaker"
- leader_trait_govenor_caretaker_desc:0 "Ensuring nutrients are available, that the workspace is clean, and that the wards are properly stimulated all fall under the perview of a Caretaker."
+ leader_trait_govenor_caretaker_desc:0 "Ensuring nutrients are available, that the workspace is clean, and that the wards are properly stimulated all fall under the purview of a Caretaker."
  leader_trait_govenor_caretaker_node:0 "Caretaker Teachings"
  leader_trait_govenor_caretaker_node_desc:0 "The unique knowledge of the Caretaker has become our own."
 
@@ -1956,7 +1957,8 @@
  action.92.pitharan:1 "During its survey of [From.GetName], the [Root.GetName] discovered a previously unknown strategic resource dubbed §HPitharan Dust§!. This fine, energy-dense dust serves as an excellent fertilizer. Its use should greatly enhance our food production."
  action.92.engos:1 "During its survey of [From.GetName], the [Root.GetName] discovered a previously unknown strategic resource dubbed §HEngos Vapor§!. This vapor is a naturally occurring stimulant that helps all forms of life perform at maximum capacity."
  action.92.neutronium:1 "During its survey of [From.GetName], the [Root.GetName] discovered a previously unknown strategic resource dubbed §HNeutronium§!. It is a super-dense substance composed of neutrons that can be forged into extremely resistant hulls."
- action.92.zro:1 "The [Root.GetName] has discovered a previously unknown strategic resource dubbed §HZro§! in the §Y[Root.Fleet.GetStarName]§! system. It is a rare aerosol with unknown origin, and when ingested, it enhances the PSI abilities of psionically-gifted individuals.$action.92.part3$"
+ action.92.zro.common: "The [Root.GetName] has discovered a previously unknown strategic resource dubbed §H$sr_zro$§! in the §Y[Root.Fleet.GetStarName]§! system."
+ action.92.zro: "$action.92.zro.common$ It is a rare aerosol of unknown origin, and when [Root.Owner.GetIngestedLoc], it enhances the abilities of psionically-gifted [Root.Owner.GetIndividualNamePlural].$action.92.part3$"
  action.92.dark_matter:1 "The [Root.GetName] has discovered a previously unknown strategic resource dubbed §HDark Matter§! in the §Y[Root.Fleet.GetStarName]§! system. It seemingly defying several natural laws, and could potentially revolutionize the sciences."
  action.92.satramene:1 "During its survey of [From.GetName], the [Root.GetName] discovered a previously unknown strategic resource dubbed §HSatramene Gas§!. This gas is a naturally occurring stimulant that has a calming effect on most beings, typically prompting consensus-seeking behaviors in groups. It is potentially addictive."
  action.92.living_metal:1 "The [Root.GetName] has discovered a previously unknown strategic resource dubbed §HLiving Metal§! in the §Y[Root.Fleet.GetStarName]§! system. It has characteristics usually seen only in biological life forms, and will always attempt to regenerate back into the shape it was stabilized into."
@@ -1964,6 +1966,12 @@
  action.92.terraform_gases:1 "During its survey of [From.GetName], the [Root.GetName] discovered large deposits of various rare §HTerraforming Gases§!. With a steady supply of these gases, the process of terraforming planets would become less costly."
  action.92.has_tech:0 "\nWe have the technology - if we control this system, we can extract this resource.$action.92.generic$"
  action.92.no_tech:0 "\nWe cannot extract this resource yet, but we could establish control over the system for future exploitation.$action.92.generic$"
+
+ action.92.zro.mindwarden: "$action.92.zro.common$\n\nThe properties of this rare aerosol have been noted to exhibit anomalous neuroinvasive effects, and has therefore been designated as a class alpha controlled substance. It may yet prove valuable in developing mentally insulative technologies.$action.92.generic$"
+
+ action.942.name: "$sr_zro$ Deposit Discovered"
+ action.942.desc: "The [Root.GetName] has discovered deposits of the strategic resource ID: §H'$sr_zro$'§! in the §H[Root.Fleet.GetStarName]§! system.\n\nThis rare aerosol has many applications. Analysis has shown that processed samples can even affect the functioning of [Owner.GetSpeciesAdj] units with 'psionic' properties, such as the Shroud-Forged. With our $tech_mine_zro$ technology, we will be capable of extracting this resource if we control the [Root.Fleet.GetStarName] system.$action.92.generic$"
+ action.942.a: "An optimal discovery."
 
  action.92.garanthium.tooltip:0 "§Y$sr_garanthium$§!\n§E$sr_garanthium_desc$§!"
  action.92.lythuric.tooltip:0 "§Y$sr_lythuric$§!\n§E$sr_lythuric_desc$§!"

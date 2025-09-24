@@ -503,7 +503,6 @@
 
  mod_planet_executives_produces_mult:0 "£job_executive£ $job_executive_plural$ Output"
  mod_planet_managers_produces_mult:0 "£job_manager£ $job_manager_plural$ Output"
- mod_planet_bio_trophies_produces_mult:0 "£job_bio_trophy£ $job_bio_trophy_plural$ Output"
 
  artifact_artifact_relays_hivemind:1 "Artifact Relays §E(Planetary Decision)§!"
  artifact_artifact_relays_hivemind_desc:0 "The $decision_artifact_relays_hivemind$ decision improves the communication abilities of our $job_synapse_drone_plural$ on one of our planets."
@@ -884,9 +883,9 @@
  scrap_miner: "$job_scrap_miner$"
  job_scrap_miner:0 "Scrap Miner"
  job_scrap_miner_plural:0 "Scrap Miners"
- job_scrap_miner_desc:0 "$job_scrap_miner_plural$ explore the depths of the shattered ring world for materials suitable for construction."
+ job_scrap_miner_desc:0 "$job_scrap_miner_plural$ explore the depths of the shattered remains for materials suitable for construction."
  job_scrap_miner_effect_desc:0 "£job_scrap_miner£ $job_scrap_miner_plural$ produce £minerals£ §Y$minerals$§! and £alloys£ §Y$alloys$§!."
- miner_is_scrap_miner_tt: "$job_miner_plural_with_icon$ are converted into [miner.GetIcon] $job_scrap_miner_plural$"
+ miner_is_scrap_miner_tt: "£job_miner£ $job_miner_plural$ are converted into [miner.GetIcon] $job_scrap_miner_plural$"
 
  scrap_miner_drone: "$job_scrap_miner_drone$"
  job_scrap_miner_drone:0 "Scrap Miner Drone"
@@ -903,9 +902,6 @@
 
  building_scrap_processing_plant_desc:0 "Processing plants for material scavenged from the ring."
  building_scrap_processing_hub_desc:0 "Massive hubs where material scavenged from the ring is received and then shuttled to arrays of purifiers."
-
- mod_planet_miners_alloys_produces_add: "£alloys£ $alloys$ per $pop_group_unit$ [miner.GetIcon] [GetMinerPlural]"
-
 
  ###########################
  # ARCHAEOTECHNOLOGIES
@@ -988,8 +984,10 @@
 
 
  # Buildings and Modules
- biologist_is_archaeo_engineer_tt: "£job_biologist£ $job_biologist_plural$ are converted into $job_archaeoengineers_plural_with_icon$"
- building_archaeostudies_faculty_relic_effect:1 "$t$$biologist_is_archaeo_engineer_tt$\nIf built on a §YRelic World§!:\n$t$- Research Speed (Archaeostudies): §G+50%§!\n$t$- $mod_planet_biologists_minor_artifacts_produces_add$: §G+0.5§!"
+ biologist_is_archaeo_engineer_tt: "$t$£job_biologist£ $job_biologist_plural$ are converted into $job_archaeoengineers_plural_with_icon$"
+ biology_drone_is_archaeo_engineer_tt: "$t$£job_brain_drone_biologist£ $job_brain_drone_biologist_plural$ are converted into £job_archaeo_drone£ $job_archaeo_drone_plural$"
+ biology_unit_is_archaeo_engineer_tt: "$t$£job_calculator_biologist£ $job_calculator_biologist_plural$ are converted into £job_archaeo_unit£ $job_archaeo_unit_plural$"
+ building_archaeostudies_faculty_relic_effect:1 "\nIf built on a §YRelic World§!:\n$t$- Research Speed (Archaeostudies): §G+50%§!\n$t$- $mod_planet_biologists_minor_artifacts_produces_add$: §G+0.5§!"
  building_archaeostudies_faculty:0 "Faculty of Archaeostudies"
  building_archaeostudies_faculty_desc:0 "A series of laboratories dedicated to the studies of technological applications of minor artifacts retrieved from elder empires."
 

@@ -370,7 +370,7 @@
  tradition_diplomacy:0 "Diplomacy"
  tradition_diplomacy_desc:0 "The surest way to destroy your enemies is to make them your friends."
  tr_diplomacy_adopt:0 "Diplomacy Traditions"
- tr_diplomacy_adopt_desc:2 "§YUnlocks Edict:§! $edict_diplomatic_grants$\n§Y$MOD_COUNTRY_DIPLOMACY_INFLUENCE_COST$§! reduced by §G50%§!."
+ tr_diplomacy_adopt_desc:2 "§YUnlocks Edict:§! $edict_diplomatic_grants$"
 
  tr_diplomacy_the_federation:0 "The Federation"
  tr_diplomacy_the_federation_desc:2 "$TECH_UNLOCK_DIPLOMATIC_ACTION_CREATE_FEDERATION_TITLE$\n§Y$MOD_COUNTRY_ENVOYS_ADD$§! are increased by §G1§!."
@@ -689,6 +689,8 @@
  tr_subterfuge_finish_desc:1 "$tr_subterfuge_finish_effect$\n$TRADITIONS_FINISH_AP$"
  tr_subterfuge_cloaking_finish:0 "$tr_subterfuge_finish$"
  tr_subterfuge_cloaking_finish_desc:0 "$tr_subterfuge_finish_effect$\n$MOD_SHIP_CLOAKING_STRENGTH_ADD$: §G+1§!\n$TRADITIONS_FINISH_AP$"
+ tr_subterfuge_cloaking_finish_shroud_desc: "$tr_subterfuge_finish_effect$\n$MOD_SHIP_CLOAKING_STRENGTH_ADD$: §G+1§!\nGain access to ['concept_proxy_wars']\n$TRADITIONS_FINISH_AP$"
+ tr_subterfuge_finish_shroud_desc: "$tr_subterfuge_finish_effect$\nGain access to ['concept_proxy_wars']\n$TRADITIONS_FINISH_AP$"
 
  tr_subterfuge_information_security:0 "Information Security"
  tr_subterfuge_information_security_delayed:2 "Only by embracing a tradition of secrecy can we protect vital information from prying minds. Enhanced security systems and countermeasures deny our enemies any potential advantages."
@@ -768,7 +770,7 @@
 ################################################################
 
  tradition_psionics:0 "Psionics"
- tradition_psionics_desc:0 "We shall unlock the power within the [Root.GetSpeciesAdj] mind."
+ tradition_psionics_desc:0 "We shall unlock the power within the [Root.GetSpeciesAdj] [GetNeuralSystemLoc]."
 
  tr_psionics_adopt:0 "Psionic Traditions"
  tr_psionics_adopt_tooltip:0 "All pops from your primary species will gain the §Y$trait_latent_psionic$§! trait."
@@ -777,9 +779,11 @@
  tr_psionics_finish:0 "Psionic Traditions Finished"
  tr_psionics_finish_desc:0 "Unlocks a §YSpecial Project§! to form a Covenant.\n$MOD_COUNTRY_EDICT_FUND_ADD$: §G+50§!\nAscension Perks Unlocked: §G+1§!"
 
- tr_psionics_psi_corps:0 "Psi-Corps"
+ tr_psionics_psi_corps:0 "$building_psi_corps$"
  tr_psionics_psi_corps_desc:1 "$ALLOW_PSI_CORPS$"
- tr_psionics_psi_corps_delayed:0 "The Psi-Corps, like an ever-vigilant eye, will peer into the minds of our citizens, defending society from those who might do it harm."
+ tr_psionics_psi_corps_delayed: "[GetPsionicPsiCorpsDelayed]"
+ tr_psionics_psi_corps_delayed_organic:0 "The Psi Corps, like an ever-vigilant eye, will peer into the minds of our [GetCitizenPlural], defending society from those who might do it harm."
+ tr_psionics_psi_corps_delayed_machine:0 "The Psi Corps, like an ever-vigilant eye, will keep watch over our [GetCitizenPlural], defending society from those who might do it harm."
 
  tr_psionics_psionic_assimilation:0 "Great Awakening"
  tr_psionics_psionic_assimilation_desc:0 "All §Y$trait_latent_psionic$§! species will unlock their full psionic potential.\nAllows §YPsionic Assimilation§! of other species, unlocking their latent abilities."
@@ -795,9 +799,7 @@
  tr_psionics_mind_readers_delayed:0 "The thoughts of other empires echo in the Shroud; by listening, our Telepaths can learn much to our advantage."
  tr_psionics_mind_readers_tooltip:0 "$MOD_ADD_BASE_COUNTRY_INTEL$: §G+10§!\nGives access to the §YSight Beyond Sight§! empire Edict."
 
- REQUIRES_BREACHED_SHROUD:0 "§R$TRIGGER_FAIL$Requires to have Breached the Shroud.§!"
-
- mod_planet_psionic_jobs_produces_mult:0 "Resources from Psionic Pops"
+ REQUIRES_BREACHED_SHROUD: "§R$TRIGGER_FAIL$Requires Breaching the Shroud.§!"
 
 ################################################################
 # Genetics
@@ -891,7 +893,7 @@
  tr_cybernetics_synaptic_sub_processing:0 "Synaptic Sub-Processing"
  tr_cybernetics_synaptic_sub_processing_situation: "$tr_cybernetics_synaptic_sub_processing$"
  tr_cybernetics_synaptic_sub_processing_delayed:0 "Offloading routine thought patterns into central hubs decreases the synaptic load on our uplink nodes."
- tr_cybernetics_synaptic_sub_processing_tt: "£building£ §Y$building_spawning_pool$§! provide §G+2§! £job_augmentor_drone£ §Y$job_augmentor_drone$§! Jobs\n$MOD_EMPIRE_SIZE_DISTRICTS_MULT$: §G-25%§!"
+ tr_cybernetics_synaptic_sub_processing_tt: "£building£ §Y$building_spawning_pool$§! provide §G+200§! £job_augmentor_drone£ §Y$job_augmentor_drone$§! Jobs\n$MOD_EMPIRE_SIZE_DISTRICTS_MULT$: §G-25%§!"
  tr_cybernetics_synaptic_sub_processing_situation_effects: "$tr_cybernetics_situation$$tr_cybernetics_synaptic_sub_processing_tt$"
 
  tr_cybernetics_modular_cybernetics:0 "Modular Cybernetics"
@@ -1232,7 +1234,7 @@
  ap_the_flesh_is_weak:0 "The Flesh is Weak"
  ap_synthetic_evolution:0 "Synthetic Evolution"
  ap_world_shaper:0 "World Shaper"
- ap_mind_over_matter:0 "Mind over Matter"
+ ap_mind_over_matter:0 "Mind Over Matter"
 
  ap_master_builders:0 "Master Builders"
  ap_imperial_prerogative:0 "Imperial Prerogative"
@@ -1274,12 +1276,14 @@
  ap_the_flesh_is_weak_desc:0 "The limits and constraints imposed on us by our feeble organic bodies are simply unacceptable. To reach our full potential, we must turn to cybernetic implants."
  ap_synthetic_evolution_desc:0 "It is time to abandon the flawed organic vessels that imprison our minds. By transferring our neural patterns into synthetic bodies, we will achieve a higher state of being."
 
- ap_mind_over_matter_desc:0 "Only a fraction of the potential contained within our minds has been unlocked. The latent psionic abilities of our species are only now beginning to manifest in certain individuals."
+ ap_mind_over_matter_desc: "[GetMindOverMatterDesc]"
+ ap_mind_over_matter_desc_organic: "Only a fraction of the potential contained within our minds has been unlocked. The latent psionic abilities of our species are only now beginning to manifest in certain [GetIndividualNamePlural]."
+ ap_mind_over_matter_desc_machine: "Only a fraction of the potential contained within our processing has been unlocked. The latent psionic abilities of our circuitry are only now beginning to manifest in certain [GetIndividualNamePlural]."
 
  ap_synthetic_age:0 "Synthetic Age"
  ap_synthetic_age_desc:0 "The age of organics has come and gone, the future of the galaxy belongs to the machines. This is the dawn of a synthetic age."
  synthetic_age_tooltip:1 "$access_tradition_tree$ ['tradition_category:tradition_synthetics']\n$UNLOCKS_AGENDA$ $council_agenda_agenda_synthetic_age_name$, which grants Machine Modification technologies as Research Options."
- synthetic_age_tooltip_machine_age: "Starts the §Y$situation_transformation$§! situation which unlocks the ['tradition_category:tradition_modularity'], ['tradition_category:tradition_virtuality'], or ['tradition_category:tradition_nanotech'] tradition trees.\n$UNLOCKS_AGENDA$ $council_agenda_agenda_synthetic_age_name$, which grants Machine Modification technologies as Research Options.\n- $REQUIRES_TRADITION_SLOT$"
+ synthetic_age_tooltip_machine_age: "Starts the §Y$situation_transformation$§! situation which unlocks the ['tradition_category:tradition_modularity'], ['tradition_category:tradition_virtuality'], or ['tradition_category:tradition_nanotech'] tradition trees.$TABBED_NEW_LINE$- $REQUIRES_TRADITION_SLOT$\n$UNLOCKS_AGENDA$ $council_agenda_agenda_synthetic_age_name$, which grants Machine Modification technologies as Research Options."
  ap_machine_worlds:0 "Machine Worlds"
  ap_machine_worlds_desc:0 "We shall shape our worlds into a mirror image of ourselves, replacing the frailty of biology with the immutable perfection of metal."
  ap_hive_worlds:0 "Hive Worlds"
@@ -1328,7 +1332,7 @@
 
  ap_organo_machine_interfacing:0 "Organo-Machine Interfacing"
  ap_organo_machine_interfacing_desc:0 "$ap_the_flesh_is_weak_desc$"
- organo_machine_interfacing_tooltip:1 "- Gain access to the §Y$tradition_cybernetics$§! tradition tree.\n- $UNLOCKS_AGENDA$ $council_agenda_agenda_organo_machine_interfacing_name$, which grants Cybernetic technologies as Research Options.\n- $REQUIRES_TRADITION_SLOT$"
+ organo_machine_interfacing_tooltip:1 "- Gain access to the §Y$tradition_cybernetics$§! tradition tree.$TABBED_NEW_LINE$- $REQUIRES_TRADITION_SLOT$\n- $UNLOCKS_AGENDA$ $council_agenda_agenda_organo_machine_interfacing_name$, which grants Cybernetic technologies as Research Options."
  requires_technology_integrated_cybernetics:0 "$TRIGGER_FAIL$Requires the £engineering£ §Y$tech_integrated_cybernetics$§! technology."
 
  ap_organo_machine_interfacing_assimilator:1 "$ap_organo_machine_interfacing$"

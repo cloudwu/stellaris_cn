@@ -53,6 +53,7 @@
  action_astral_splitting_no_rift_spawning_location: "$TRIGGER_FAIL$§RThere are no valid systems in which we can split open a new Rift.§!"
  action_astral_splitting_tooltip: "Create an $ASTRAL_RIFT$ in a random system you control.\nMust control a system without any adjacent $ASTRAL_RIFTS$."
  action_astral_splitting_too_many_rifts: "$TRIGGER_FAIL$§RWe have pushed our capacity to forcefully open new rifts in space and time to its limit.§!"
+ action_astral_splitting_no_rift_spawning_location_tt: "§RThere are no valid systems in which we can split open a new Rift.§!"
 
  action_gain_physics_insight: "Gain Physics Insight"
  action_gain_physics_insight_desc: "Allow our scientists to requisition $ASTRAL_THREADS_ICON$ to further our understanding of physics."
@@ -305,6 +306,10 @@
  flamestorm_troopers_army: "Flamestorm Troopers"
  flamestorm_troopers_army_desc: "Geared for incendiary warfare, these squads tend to inflict considerable amounts of collateral damage."
 
+ astral_planes.210.name: "Scientist Returns"
+ astral_planes.210.desc: "[fromfrom.leader.GetName] returned from exploring an $ASTRAL_RIFT$ to find a galaxy lost to the End. Many of the places they knew have vanished completely from this existence.\n\nThey are still uncertain if they returned to the correct dimension at all, and appear to be experiencing a form of cognitive shock as a result."
+ astral_planes.210.a: "Welcome back?"
+
 ###########
 # Effects #
 ###########
@@ -401,8 +406,6 @@
  astral_rift_difficulty_decrease_2: "$astral_rift_difficulty_decrease_1$"
  astral_rift_difficulty_decrease_3: "$astral_rift_difficulty_decrease_1$"
 
- mod_planet_researchers_sr_dark_matter_produces_add: "£sr_dark_matter£ $sr_dark_matter$ per $pop_group_unit$ £job_researcher£ [GetResearcherPlural]"
-
  ##########
  # Traits #
  ##########
@@ -425,7 +428,7 @@
 
  trait_exd: "Extradimensional"
  trait_exd_desc: "This species originates from another dimension and requires a great deal of energy to survive in our universe."
- TRAIT_EXD_EFFECT: "Replaces $r_food$ Upkeep with $r_energy$ Upkeep\nEvery $pop_group_unit$ £pop£ §HPops§! working as a slave or better produces 0.5 £physics_research£ §YPhysics Research§! per month"
+ TRAIT_EXD_EFFECT: "- $energy_with_icon$ Upkeep per $pop_group_unit$ £pop£ Pops: §R+$@living_standard_energy_normal|*0$§!\n$t$- Every $pop_group_unit$ £pop£ §HPops§! working as a slave or better produces 0.5 £physics_research£ §YPhysics Research§! per month"
 
  ######################
  # Origin - Riftworld #
@@ -433,10 +436,13 @@
 
  origin_riftworld: "Riftworld"
  origin_riftworld_desc: "A massive rift in space and time looms near this civilization's homeworld. After studying the phenomenon for millennia, recent advances in starship technology will allow them to finally reach out and discover what secrets it might hold."
- origin_tooltip_riftworld_effects: "- Homeworld: ['concept_riftworld_digsite'] ['concept_archaeology_site'] $NEW_LINE$- Chance for [ 'concept_astral_rift', $ASTRAL_RIFTS$ ] to appear in systems you control: §G+100%§!"
+ origin_tooltip_riftworld_effects: "- $HOMEWORLD$ ['concept_riftworld_digsite'] ['concept_archaeology_site']$NEW_LINE$- Colonized Planets in systems with [ 'concept_astral_rift',$ASTRAL_RIFTS$]: ['modifier:riftworld_affinity']$NEW_LINE$- Chance for §Y$ASTRAL_RIFTS$§! to appear in systems you control: §G+100%§!"
  START_SCREEN_RIFTWORLD: "For as long as we can remember, the Great Rift has loomed in the skies above [GetHomeWorldName]. Legends propose that our past is intimately entwined with this mysterious celestial scar and an ancient impact site near our capital.\n\nFor generations, the site was revered, but little understood. However, recent seismic activity has uncovered subsurface anomalies in the crater. Preparations are already underway to drill into its core. Opinions remain divided on what we may uncover there.$START_SCREEN_RIFTWORLD_END$"
  START_SCREEN_RIFTWORLD_MACHINE: "For as long as our databanks reach back, the Great Rift has loomed in the skies above [GetHomeWorldName]. Our internal clocks are synced with the frequency of the celestial scar and our earliest records describe an ancient impact site near our capital.\n\nFor many iterations, the site was left alone, but little understood. However, recent seismic activity has uncovered subsurface anomalies in the crater. Preparations are already underway to drill into its core.$START_SCREEN_RIFTWORLD_END$"
  START_SCREEN_RIFTWORLD_END: "\n\nIs it simple coincidence that this has occurred at the advent of Hyperdrive technology? Just as we reach for the heavens, our attention is pulled back to the ground. Perhaps what what lies beneath the surface of this world is meant to aid us on our journey to the stars. Perhaps it can prepare us for whatever lies beyond the Rift."
+
+ riftworld_affinity: "Rift Affinity"
+ riftworld_affinity_desc: "Our societal development under the influence of interdimensional forces drives a fervor for further research."
 
  astral_planes.2105.name: "Strange Transmission"
  astral_planes.2105.desc: "In the aftermath of the exploration of the Astral Rift in §H[From.solar_system.GetName]§!, a mysterious transmission was received.\n\nOur [GetScientistPlural] have determined its origin to be from beyond the rift itself, and have only been able to translate a few words."
@@ -967,6 +973,7 @@
  SKIN_GANGRENE: "gangrene"
  SKIN_GEODES: "geodes"
  SKIN_EXTERIOR: "exterior"
+ SKIN_ABSTRACT: "surface"
 
  ###########
  # Agendas #
@@ -1203,8 +1210,8 @@ astral_planes.6105.desc.reg: "§HThe repugnant alien stands before us in dazed s
 astral_planes.6105.desc.human: "§HThe repugnant alien stands before us in dazed silence, its only motion that of its pileus, undulating in a wave like rythm. Upon registering us, it makes a lunging movement before restraining itself.§!\n\nY- You- You are Humans!? §H*Squeee*§! I- I am sorry, I have been fascinated with your culture ever since I was a little sporeling!\n\n§HThe alien extends a tentacle in an awkward attempt to mimic a handshake.§!\n\nMy name is Mercedes Romero and it is my pleasure to meet you."
 astral_planes.6105.a: "What do you remember?"
 astral_planes.6105.a.response: "My last memory is of the Antares System. I was engaged in a fleet action with a group of Friends when I saw a bright light. After that there is nothing. I arrived here in my escape pod. Alone and Friendless."
-astral_planes.6105.b: "Why are you so facinated with Humans?"
-astral_planes.6105.b.response: "Oh Humans are the most wonderous of creatures. We Blorg have been observing them for centuries. In fact, much of our culture is based on what we have observed of Human life. The color! The drama! The Friendship! They have taught us that life is about more than simple survival. You can also make Friends! What a wonderful concept. What a marvel!"
+astral_planes.6105.b: "Why are you so fascinated with Humans?"
+astral_planes.6105.b.response: "Oh Humans are the most wondrous of creatures. We Blorg have been observing them for centuries. In fact, much of our culture is based on what we have observed of Human life. The color! The drama! The Friendship! They have taught us that life is about more than simple survival. You can also make Friends! What a wonderful concept. What a marvel!"
 astral_planes.6105.c: "What can you do for us?"
 astral_planes.6105.c.response: "Not a very Friendly question, but if service is required, then I stand ready! Of course, I have centuries of experience captaining research vessels, but my true passion is intergalactic relations. By being your Friend I can help you to make other Friends in the process. Please, if you will have me, let me represent your diplomatic interests!"
 astral_planes.6105.hire_custom_tooltip:0 "§Y$NAME_Mercedes$§! joins our empire as a §HLeader§!."

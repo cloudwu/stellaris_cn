@@ -59,8 +59,8 @@
  ap_master_builders_habitat_size:2 "§HHabitats§! owned by our Empire have space for an additional §Y2§! districts."
  allow_edict_consectrated_worlds:5 "§HUnlocks Decision:§! Consecrate World\n"
  describe_edict_consectrated_worlds:5 "§EConsecrating uninhabited planets (up to §Y3§!) increases §YSpiritualist Ethics Attraction§! and §YEmpire-Wide Amenities§! as well as £unity£ §YUnity Generation§!, scaling to the spiritual significance of the worlds consecrated.§!"
- allow_machine_worlds:3 "§HUnlocks Terraforming Option:§! Machine World\n§HUnlocks Machine World Zone:§! $zone_machine_replication$"
- describe_machine_worlds:7 "Uninhabitable for most organics\nUnlimited £district£ §YNexus§! Districts\nDoubles Housing and Jobs from all £district£ §YDistricts§!\n£pop£ Pop Resource Output: §G+10%§!\nHousing Usage: §G-10%§!\n§RRemoves all Rural Districts§!"
+ allow_machine_worlds:3 "- §YUnlocks Terraforming Option:§! ['concept_pc_machine']\n- §YUnlocks £zone£ District Specialization:§! $zone_machine_replication$"
+ describe_machine_worlds:7 "- Replaces §Y£district£ Rural Districts§! with specialized §Y£district£Nexus Districts§!\n- Increases Housing and Jobs from all £district£ §YDistricts§!\n- §RUninhabitable for most Organic Species§!"
  allow_hive_worlds:1 "§HUnlocks Terraforming Option:§! Hive World\n§HUnlocks Hive World District Specialization:§! £zone£ $zone_spawning$"
  describe_hive_worlds:1 "Uninhabitable for non-hive species.\nUnlimited £district£ §YHive§! Districts\nDoubles Housing and Jobs from all £district£ §YDistricts§!\n£pop£ Pop Resource Output: §G+10%§!\nHousing Usage: §G-10%§!\n§RRemoves all Rural Districts§!"
 
@@ -220,12 +220,12 @@
  CYBORG_ENERGY_UPKEEP_EFFECT:0 "Increases $r_energy$ Upkeep by §R+$@cyborg_energy_upkeep$§!"
 
  trait_psionic:0 "Psionic"
- trait_psionic_desc:0 "§LAll members of this species possess powerful psionic abilities. They typically communicate with each other through telepathy.§!\n"
+ trait_psionic_desc: "[This.GetPsionicTraitDesc]"
  trait_self_modified:0 "Self-Modified"
  trait_self_modified_desc:0 "§LMembers of this offshoot species have spontaneously altered their genetic makeup to give themselves an advantage.§!"
 
  leader_trait_shroud_age:0 "Increased Lifespan"
- leader_trait_shroud_age_desc:0 "The powerful psionic energies of the Shroud have slowed the natural aging process of this leader."
+ leader_trait_shroud_age_desc: "The powerful psionic energies of the Shroud have slowed the natural [GetAgingLoc] process of this [GetLeaderLoc]."
 
  leader_trait_reformer:0 "Reformer"
  leader_trait_reformer_desc:0 "This leader is a reformer, dedicated towards building the society of tomorrow."

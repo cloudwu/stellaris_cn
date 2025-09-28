@@ -38,7 +38,7 @@ local function import(data)
 				if s ~= d.v then
 --					print("Fix " .. s , "\n\t", d.v)
 				end
-				wf:write(" ", key, ":", d.d, " " , d.v, "\n")
+				wf:write(" ", key, ":", d.d, " " , s, "\n")
 			end
 		end
 	end

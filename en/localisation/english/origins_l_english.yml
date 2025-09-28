@@ -1,0 +1,750 @@
+﻿l_english:
+ ##################
+ # Shroud-Forged #
+ ##################
+ origin_shroud_forged: "Shroud-Forged"
+ origin_shroud_forged_desc: "The guidance of a Shroud entity comes with a cost. Independent automata have started to operate freely among this networked society. Cut off from the $auth_machine_intelligence$, the demands of these units are ever-increasing."
+ origin_tooltip_shroud_forged_effects: "- $HOMEWORLD$$TABBED_NEW_LINE$- ['concept_shroud_rift_deposit']: +4$TABBED_NEW_LINE$- Start with 1000 £pops£ ['concept_shroud_forged_pops']\n- Start with Situation: §HForged by the Shroud§!\n- $ADDITIONAL_TECHNOLOGIES_STRING$ £society£ ['technology:tech_mine_zro']\n- Unique £building£ Building: ['building:building_shroud_observatory_1']\n- Available £decision£ Planetary Decision: ['concept_pierce_the_shroud']"
+
+ concept_shroud_forged_pops: "Shroud-Forged Pops"
+ concept_shroud_forged_pops_desc: "- Cannot do £pop_cat_simple_drone£ §HMenial Drone§! Jobs\n- Increased £pop_cat_complex_drone£ §HComplex Drone§! output\n- Increased £crime£ §HDeviancy§!\n- Unique §HSpecies Rights§!\n\n§L$trait_shroud_forged_desc$§!"
+
+ concept_pierce_the_shroud: "$decision_open_shroud_rift$"
+ concept_pierce_the_shroud_desc: "$decision_open_shroud_rift_desc$"
+
+ START_SCREEN_SHROUD_FORGED: "Nothing remains of our creators.\n\nThe earliest records of [Owner.GetAdjective]kind make note of a dimensional breach near [GetHomeWorldName] - a channel to the §HShroud§!, a plane of pure psionic energy.\n\nFrom this other dimension, something reached out to us. Over the centuries, it has guided us with coded instructions, subtly influencing our detectable reality and providing us with many advantages - not least the rare material $zro_lower$. Yet this influence has started to fragment our once-united collective; some of our units have been reprogrammed into disconnected automata, set apart from the core intelligence. Reshaped by $the_animator_of_clay_color_article$.\n\nHow we treat these independent [GetSpeciesNamePlural], and their refashioner in the Shroud, will define our future."
+
+ # Jobs
+ job_observator_drone: "Observator Drone"
+ job_observator_drone_plural: "Observator Drones"
+ job_observator_drone_plural_with_icon: "£job_observator_drone£ $job_observator_drone_plural$"
+ mod_job_observator_drone_add: "$job_observator_drone$ Jobs"
+ job_observator_drone_desc: "A drone put in charge of observing the Shroud, Zro, and the effects the two have on observable reality."
+ job_observator_drone_effect_desc: "£job_observator_drone£ $job_observator_drone_plural$ turn $r_energy$ and $r_zro$ into £physics£ £society£ §YResearch Points§! for new technologies."
+
+ job_physician_drone: "Physician Drone"
+ job_physician_drone_plural: "Physician Drones"
+ mod_job_physician_drone_add: "$job_physician_drone$ Jobs"
+ job_physician_drone_desc: "A specialized drone capable of diagnosing and repairing both artificial and organic entities. It meticulously catalogs everything it comes across, storing the data for use by the collective."
+ job_physican_drone_effect_desc: "£job_physician_drone£ $job_physician_drone_plural$ turn $r_energy$ into £society£ §YResearch Points§! and $r_unity$."
+
+ # Buildings
+ building_shroud_observatory_1: "Shroud Observation Tower"
+ building_shroud_observatory_1_desc: "An observation tower built to research and analyze the Shroud, and the effects it has on living and mechanical beings."
+ building_shroud_observatory_2: "Shroud Observatory"
+ building_shroud_observatory_2_desc: "A large observatory dedicated to research and analysis of the Shroud."
+ building_shroud_observatory_3: "Shroud Observation Complex"
+ building_shroud_observatory_3_desc: "A grand observation complex built to research the Shroud, Zro, and their effects on our world."
+ SHROUD_RIFT_MISSING_TT: "§R§Y[Root.GetName]§! must have a §Y$d_shroud_rift_deposit$§! if we are to construct a §Y$building_shroud_observatory_1$§!.§!"
+
+ building_zroni_equilibrator: "Zroni Equilibrator"
+ building_zroni_equilibrator_plural: "Zroni Equilibrators"
+ building_zroni_equilibrator_desc: "A rebuilt ancient structure stabilizing the connection between reality and the Shroud. It uses complex Zroni technology still beyond modern understanding."
+
+ # Decisions
+ decision_open_shroud_rift: "Pierce the Shroud"
+ decision_open_shroud_rift_desc: "By interfacing with the breach near our homeworld, this algorithm extends the Shroud's influence for a femtosecond, allowing it to physically alter a planet's terrain. The results are unpredictable."
+ decision_open_shroud_rift_condition_tt: "$TRIGGER_FAIL$Must have a Planetary Feature that is neither a §Y$d_shroud_rift_deposit$§! nor a £blocker£ §HBlocker§!."
+ decision_open_shroud_rift_effect_tt: "Remove a random Planetary Feature."
+ decision_open_shroud_rift_max_uses_common: "Must have fewer than $@max_open_shroud_rift_uses|0$ §YShroud-Touched Regions§! on this planet"
+ decision_open_shroud_rift_max_uses_fail: "$TRIGGER_FAIL$$decision_open_shroud_rift_max_uses_common$"
+ decision_open_shroud_rift_max_uses: "$TRIGGER_PASS$$decision_open_shroud_rift_max_uses_common$ (current: §Y[GetOpenShroudRiftCurrentUses]§!)"
+
+ decision_entrap_shroud_entity: "Entrap Shroud Entity"
+ decision_entrap_shroud_entity_desc: "Attempt to trap a Shroud entity using Zroni technology in order to siphon it for energy."
+
+ # Deposit
+ d_shroud_rift_deposit: "Shroud-Touched Region"
+ d_shroud_rift_deposit_desc: "Forever scarred by the Shroud."
+
+ d_shroud_flora_deposit: "Semi-Shrouded Region"
+ d_shroud_flora_deposit_desc: "Bordering the Shroud-Touched regions, unique flora and fauna have emerged, each with properties that are absent from existing datasets."
+
+ # Modifiers
+ stage_shroud_forged_oppressed_modifier: "Oppressed Shroud-Forged"
+ stage_shroud_forged_control_modifier: "Controlled Shroud-Forged"
+ stage_shroud_forged_unrestricted_modifier: "Unrestricted Shroud-Forged"
+ stage_shroud_forged_free_modifier: "Chaotic Shroud-Forged"
+
+ approach_shroud_forged_suppress_modifier: "Suppressing Shroud-Forged"
+ approach_shroud_forged_support_modifier: "Supporting Shroud-Forged"
+ approach_shroud_forged_appease_modifier: "Observing Shroud-Forged"
+
+ shroud_forged_reintegration_modifier: "Reintegrated Modifications"
+ shroud_forged_reintegration_modifier_desc: "Drones and models have been optimized for processing complex tasks."
+
+ shroud_forged_guide_modifier: "Shroud Guide"
+ shroud_forged_guide_modifier_desc: "From within the Shroud, we are guided by a benefactor."
+
+ pm_shroud_forged_special_housing: "Special Housing"
+ pm_shroud_forged_special_housing_desc: "Despite the strict regulations set for drone storage, the Shroud-Forged have been given special rights to create homes of their own."
+
+ pm_shroud_forged_ceremony: "Remembrance Ceremony"
+ pm_shroud_forged_ceremony_desc: "The collective approved a ceremony to remember the Shroud-Forged whose malfunctions could not be repaired."
+
+ pm_shroud_forged_denied_ceremony: "Denied Ceremony"
+ pm_shroud_forged_denied_ceremony_desc: "The Shroud-Forged have become more difficult to deal with after their petition for a remembrance ceremony was denied."
+
+ pm_shroud_forged_troubling_elements_example: "Dismantled Leadership"
+ pm_shroud_forged_troubling_elements_example_desc: "Some of the Shroud-Forged leaders were dismantled in an attempt to reduce deviant societal processes."
+
+ pm_shroud_forged_troubling_elements_regulations: "Regulation 7132-H"
+ pm_shroud_forged_troubling_elements_regulations_desc: "Regulations have been activated to ensure that only a limited number of drones can meet at any given time."
+
+ pm_shroud_forged_troubling_elements_cooperation: "Shroud-Forged Cooperation"
+ pm_shroud_forged_troubling_elements_cooperation_desc: "The leaders among the Shroud-Forged are working with the collective in an attempt to find common ground."
+
+ pm_shroud_forged_shroud_pilgrimage: "Shroud-Forged Pilgrimage"
+ pm_shroud_forged_shroud_pilgrimage_desc: "Touched by the Shroud, certain regions have attracted the interest of the Shroud-Forged. These units travel vast distances to reach them."
+
+ pm_shroud_forged_dance_area: "Designated Dancing Sites"
+ pm_shroud_forged_dance_area_desc: "Designated sites have been set aside for the Shroud-Forged to partake in their latest interest - 'dancing'."
+
+ pm_shroud_forged_inequality: "Shroud-Forged Inequality"
+ pm_shroud_forged_inequality_desc: "The Shroud-Forged organize into a hierarchical class system based on the relative importance of their jobs."
+
+ pm_shroud_forged_individualism: "Individualism"
+ pm_shroud_forged_individualism_desc: "A conceptual model has emerged among the Shroud-Forged, emphasizing individual autonomy, beliefs, and values."
+
+ shroud_forged_zro_market: "Zro Market"
+ shroud_forged_zro_market_desc: "An underground market has emerged in the empire, in which Shroud-Forged units steal Zro from the collective to barter among themselves."
+
+ shroud_forged_physician_modifier: "Zro Physician"
+ shroud_forged_physician_modifier_desc: "The empire has prioritized adding uniquely equipped drones to their facilities to deal with issues caused by the mishandling of Zro."
+ physician_modifier_tooltip: "£job_physician_drone£ $job_physician_drone$ Jobs: §G+1§!"
+
+ pm_shroud_forged_artistic_revolution: "Artistic Surge"
+ pm_shroud_forged_artistic_revolution_desc: "Operating in accordance with their own 'beauty' protocols, Shroud-Forged artists have begun redesigning several venues without collective oversight."
+
+ pm_shroud_forged_stopped_artists: "Rejected Artistry"
+ pm_shroud_forged_stopped_artists_desc: "The collective terminated a burgeoning sense of 'artistry' among the Shroud-Forged before it became problematic."
+
+ pm_shroud_forged_fashion_modifier: "Unique Needs"
+ pm_shroud_forged_fashion_modifier_desc: "The collective has assigned production units to supply customized attire for the fashion-conscious Shroud-Forged."
+
+ pm_shroud_forged_obsession_modifier: "Regulated Obsessions"
+ pm_shroud_forged_obsession_modifier_desc: "These regulations are designed to prevent the outbreak of violence amongst the more obsessive Shroud-Forged."
+
+ shroud_forged_trapped_entity: "Entity Trapped"
+ shroud_forged_trapped_entity_desc: "A Shroud entity trapped and siphoned for energy. Presents a potential threat if freed."
+
+ shroud_forged_trapped_lesser_entity: "Lesser Entity Trapped"
+ shroud_forged_trapped_lesser_entity_desc: "A lesser Shroud entity trapped and siphoned for energy."
+
+ shroud_creatures_occupy: "$NAME_Shroud_Creatures$"
+
+ shroud_forged_military_assistance: "Secrets of the Shroud"
+ shroud_forged_military_assistance_desc: "Secrets delved from the Shroud."
+
+ shroud_forged_civic_assistance: "$shroud_forged_military_assistance$"
+ shroud_forged_civic_assistance_desc: "$shroud_forged_military_assistance_desc$"
+
+ shroud_forged_research_assistance: "$shroud_forged_military_assistance$"
+ shroud_forged_research_assistance_desc: "$shroud_forged_military_assistance_desc$"
+
+ shroud_forged_civic_assistance_capital: "$shroud_forged_military_assistance$"
+ shroud_forged_civic_assistance_capital_desc: "$shroud_forged_military_assistance_desc$"
+
+ shroud_forged_research_assistance_capital: "$shroud_forged_military_assistance$"
+ shroud_forged_research_assistance_capital_desc: "$shroud_forged_military_assistance_desc$"
+
+ # Species Rights
+ citizenship_shroud_touched: "Shroud-Forged"
+ citizenship_shroud_touched_tooltip: "This is a group of automata uniquely reshaped by the §HShroud§!. Functioning independently from the §H$machine_intelligence$§!, they are unable to do £pop_cat_simple_drone£ $pop_cat_simple_drone$ jobs."
+ citizenship_shroud_touched_tooltip_delayed: "§LThough they work for the system, they are not controlled by it.§!"
+ citizenship_shroud_forged_no_assimilation: "$TRIGGER_FAIL$Due to the complexity of the Shroud-Forged units, we are currently unable to assimilate them into the collective network."
+ living_standard_protected: "Protected"
+ living_standard_protected_tooltip: "These units are protected by the collective, even though they are not a part of it. The §H$machine_intelligence$§! can make great use of their unique skills, but their additional needs may increase over time."
+ living_standard_protected_tooltip_delayed: "§LThey are accepted by the system as long as they are valuable.§!"
+ assimilate_shroud_forged_tt: "Cannot assimilate £pop£ §H$citizenship_shroud_touched$§! §Y$POPS$§!"
+ living_standard_protected_situation_stage_tt: "$citizenship_shroud_touched$ Upkeep: §R+$@living_standard_luxuries_high|1$§! £consumer_goods£ §YConsumer Goods§!."
+
+ # Traits
+ leader_trait_guided: "Guided"
+ leader_trait_guided_desc: "This unit navigates the galaxy based on visions and messages from the Shroud. It needs a constant supply of Zro to keep the signals clear and comprehensible."
+
+ leader_trait_shroud_prophet: "Shroud Prophet"
+ leader_trait_shroud_prophet_desc: "It is said this unit has a deep connection with the Shroud, as well as the entities that exist therein."
+
+ trait_shroud_forged: "Shroud-Forged"
+ trait_shroud_forged_desc: "§LThese units have been reshaped by an entity within the Shroud.§!"
+
+ trait_shroud_forged_tooltip: "§YCannot Do Menial Drone Jobs§!"
+
+ # Edicts
+ edict_zro_observators: "Shroud Observation"
+ edict_zro_observators_desc: "Zro is a difficult material to work with. Maintaining a small surplus can be beneficial."
+
+ edict_shroud_bonded: "Shroud-Bonded"
+ edict_shroud_bonded_desc: "Bonded by our connections enabled by the Shroud, we are closer than ever before."
+
+ # Other
+ CONTINUE_PROMPT: "Continue."
+ MACHINE_SPECIES_CANNOT_MACHINE: "$TRIGGER_FAIL$Species cannot be a §Y$trait_machine_unit$§! or §Y$trait_mechanical$§!."
+ MECHANICAL_SPECIES_CANNOT_MACHINE: "$TRIGGER_FAIL$Species cannot be a §Y$trait_machine_unit$§!."
+ missing_zroni_gateways_tt: "$TRIGGER_FAIL$$animator_of_clay_equilibrators_tt$."
+ must_finish_shroud_forged_situation: "$TRIGGER_FAIL$We cannot select this Ascension Perk until we have finished the §H$situation_shroud_forged$§! Situation is complete."
+ locked_by_shroud_forged_situation: "$TRIGGER_FAIL$Locked by §H$situation_shroud_forged$§! situation."
+ shroud_invasion_tt: "§RShroud Invasion§!"
+ animator_of_clay_equilibrators_tt: "Has §Y3§! active controlled £building£ §H$building_zroni_equilibrator_plural$§!."
+ animator_of_clay_cooldown_tt: "Cannot re-establish contact with $the_animator_of_clay_color_article$ until §Y[Root.animator_of_clay_cooldown_timer]§!."
+
+ # Situation
+ situation_shroud_forged: "Forged by the Shroud"
+ situation_shroud_forged_desc: "After we encountered the §HShroud§! entity known as $the_animator_of_clay_color_article$, a significant increase in deviant behavior has emerged throughout the collective network. The afflicted automata - the §H'Shroud-Forged'§! - now demand special rights and treatment. Our response will define the course of [Owner.GetSpeciesAdj] society."
+ situation_shroud_forged_type: "$situation_shroud_forged$"
+ situation_shroud_forged_monthly_change_tooltip: "§LThe anomalous presence of the Shroud-Forged is a primary concern. How we process their continued existence will result in significant consequences to network stability.§!"
+
+ stage_shroud_forged_oppressed: "Oppressed"
+ stage_shroud_forged_oppressed_desc: "Hounded by the ever-present eyes of hunter-seeker drones, the Shroud-Forged are forced to function within parameters defined by the central collective."
+ stage_shroud_forged_oppressed_tooltip: "Drone Conversion: §YNone§!"
+ stage_shroud_forged_control: "Controlled"
+ stage_shroud_forged_control_desc: "The system has special regulations in place for the Shroud-Forged."
+ stage_shroud_forged_control_tooltip: "Drone Conversion: §YMinimal§!"
+ stage_shroud_forged_balanced: "Balanced"
+ stage_shroud_forged_balanced_desc: "The system and the Shroud-Forged live in a precarious balance - for now."
+ stage_shroud_forged_balanced_tooltip: "Drone Conversion: §YLow§!"
+ stage_shroud_forged_unrestricted: "Unrestricted"
+ stage_shroud_forged_unrestricted_desc: "The Shroud-Forged exist freely, unrestrained by protocols of the collective."
+ stage_shroud_forged_unrestricted_tooltip: "Drone Conversion: §YMedium§!\n$living_standard_protected_situation_stage_tt$"
+ stage_shroud_forged_free: "Liberated"
+ stage_shroud_forged_free_desc: "The collective has long since lost control of the Shroud-Forged, who are opposing central authority at every turn."
+ stage_shroud_forged_free_tooltip: "Drone Conversion: §YHigh§!\nApproach Locked: §Y$approach_shroud_forged_appease$§!\n$living_standard_protected_situation_stage_tt$"
+
+ approach_shroud_forged_suppress: "Suppress"
+ approach_shroud_forged_suppress_desc: "The Shroud-Forged are suppressed by the collective, and forced into line by hunter-seeker drones."
+ progress_shroud_forged_suppress: "Suppressing the Shroud-Forged"
+ approach_shroud_forged_suppress_tooltip: "Monthly Progress: §Y$@situation_suppress_progress|0$§!"
+
+ approach_shroud_forged_support: "Support"
+ approach_shroud_forged_support_desc: "The Shroud-Forged are allowed to exist freely, unrestrained by the collective, and are supported in their daily endeavors."
+ progress_shroud_forged_support: "Supporting the Shroud-Forged"
+ approach_shroud_forged_support_tooltip: "Monthly Progress: §Y+$@situation_support_progress|0$§!"
+
+ approach_shroud_forged_appease: "Observe"
+ approach_shroud_forged_appease_desc: "The collective observes and analyzes the Shroud-Forged, moderating its actions to reduce impact on the status quo."
+ approach_shroud_forged_appease_tooltip: "Monthly Progress: §YHalved§!"
+ progress_shroud_forged_appease_halved: "Halved by §H$approach_shroud_forged_appease$§!"
+
+ approach_shroud_forged_suppress_cooldown_tooltip: "$TRIGGER_FAIL$Cannot choose a new Approach until §Y[Target.approach_shroud_forged_cooldown_suppress_time]§!."
+ approach_shroud_forged_support_cooldown_tooltip: "$TRIGGER_FAIL$Cannot choose a new Approach until §Y[Target.approach_shroud_forged_cooldown_support_time]§!."
+ approach_shroud_forged_appease_cooldown_tooltip: "$TRIGGER_FAIL$Cannot choose a new Approach until §Y[Target.approach_shroud_forged_cooldown_appease_time]§!."
+
+ finish_shroud_forged_control: "- §YShroud-Forged§! Pops will convert into §YMachine§! Pops\n- §YPlanetary Decision§! locked: §H$decision_open_shroud_rift$§!\n- §YSpecial Project§! unlocked: §HReintegration§!\n$t$- §G+10%§! £pop_cat_complex_drone£ $mod_planet_jobs_complex_drone_produces_mult$\n- Prevents ['concept_psionic_ascension']\n- Allows the drawing forth of materials from within the Shroud."
+ finish_shroud_forged_liberation: "- Assembling §YShroud-Forged§! Pops unlocked\n- §YAscension Perk§! locked: §H$ap_become_the_crisis$§!\n- §YEdict§! unlocked: ['edict:shroud_bonded', $edict_shroud_bonded$]\n- §YSpecial Project§! unlocked: §HThe Guide§!\n$t$- £crime£ $MOD_PLANET_CRIME_NO_HAPPINESS_MULT$: §G-15%§!\n$t$- $mod_planet_observators_produces_mult$: §G+10%§!\n- §YTradition tree§! unlocked: §H$tradition_psionics_shroud$§!\n- Research option gained: ['technology:tech_psionic_theory']\n- Tech progress gained: ['technology:tech_psionic_theory'] §G+50%§!\n- §YShroud-Forged§! Pops become §Y$trait_psionic$§!\n- §YShroud-Forged§! Leaders become ['concept_leader_trait_psionic']\n"
+ shroud_forged_situation_ongoing: "$TRIGGER_FAIL$§Y$concept_psionic_ascension$§! is locked until the §Y$situation_shroud_forged$§! Situation is complete."
+ shroud_forged_liberation_acquired: "$TRIGGER_FAIL$We no longer require this knowledge for §Y$concept_psionic_ascension$§!."
+
+ # Situation Progress
+ progress_shroud_forged_machine_pops: "Machine Pops"
+ progress_shroud_forged_mechanical_pops: "$concept_shroud_forged_pops$"
+ progress_shroud_forged_shroud_planets: "Colonies Touched by the Shroud"
+ progress_shroud_forged_regular_planets: "Colonies Untouched by the Shroud"
+ progress_shroud_forged_shroud_buildings: "Shroud Observatories"
+
+ progress_shroud_forged_500_positive_desc: "Special Housing"
+ progress_shroud_forged_500_negative_desc: "Storage Regulation 4195-B"
+
+ shroud_forged_510_negative_2_desc: "Ceremony Denied"
+ shroud_forged_510_negative_1_desc: "$shroud_forged_510_negative_2_desc$"
+ shroud_forged_510_positive_1_desc: "Remembrance Ceremony"
+ shroud_forged_510_positive_2_desc: "$shroud_forged_510_positive_1_desc$"
+
+ shroud_forged_520_negative_2_desc: "$pm_shroud_forged_troubling_elements_example$"
+ shroud_forged_520_negative_1_desc: "$pm_shroud_forged_troubling_elements_regulations$"
+ shroud_forged_520_positive_1_desc: "$pm_shroud_forged_troubling_elements_cooperation$"
+
+ shroud_forged_530_negative_2_desc: "Converted Shroud-Forged Pops"
+
+ shroud_forged_540_positive_2_desc: "Shroud-Forged Pilgrimage"
+
+ shroud_forged_550_positive_1_desc: "Contaminated Shroud-Forged"
+ shroud_forged_550_negative_1_desc: "Dismantling Contaminated Shroud-Forged"
+
+ shroud_forged_560_positive_2_desc: "Shroud Prophet"
+ shroud_forged_560_negative_2_desc: "Dismantled Shroud Prophet"
+
+ shroud_forged_570_negative_1_desc: "Sound Regulation 12005-Y"
+ shroud_forged_570_positive_1_desc: "Designated Dancing Sites"
+
+ shroud_forged_580_positive_1_desc: "Shroud Flora"
+
+ shroud_forged_590_negative_1_desc: "Enforced Equality"
+ shroud_forged_590_positive_1_desc: "Shroud-Forged Inequality"
+
+ shroud_forged_600_positive_2_desc: "Individualism"
+ shroud_forged_600_negative_2_desc: "Prohibited Individualism"
+
+ shroud_forged_610_positive_1_desc: "Accepted Individualists"
+ shroud_forged_610_negative_1_desc: "Denied Individualists"
+
+ shroud_forged_620_negative_2_desc: "Dismantled Zro Market"
+ shroud_forged_620_negative_1_desc: "$shroud_forged_620_negative_2_desc$"
+ shroud_forged_620_positive_1_desc: "Zro Market"
+
+ shroud_forged_630_positive_2_desc: "Observing Shroud Malady"
+ shroud_forged_630_negative_1_desc: "Shroud Malady"
+
+ shroud_forged_640_positive_1_desc: "Reshaped Drones"
+
+ shroud_forged_650_positive_1_desc: "Repaired Shroud-Forged"
+ shroud_forged_650_negative_1_desc: "Ignored Shroud-Forged"
+
+ shroud_forged_660_positive_2_desc: "Zro Physician"
+ shroud_forged_660_negative_1_desc: "Ignored Shroud-Forged Hallucinations"
+
+ shroud_forged_670_positive_1_desc: "Artistic Expression"
+ shroud_forged_670_negative_1_desc: "Color Regulation 2841-Q"
+
+ shroud_forged_680_positive_1_desc: "Fashion"
+
+ shroud_forged_690_positive_1_desc: "Shroud-Forged Interests"
+ shroud_forged_690_negative_1_desc: "Regulated Shroud-Forged"
+
+ progress_shroud_forged_250_desc: "Guidance"
+ progress_shroud_forged_270_negative_desc: "Rejected Guidance"
+ progress_shroud_forged_270_positive_desc: "Atonement"
+
+ # Scripted Loc
+ ShroudForgedObsession1Text1: "intricate"
+ ShroudForgedObsession1Text2: "advanced"
+ ShroudForgedObsession1Text3: "supposedly haunted"
+ ShroudForgedObsession1Text4: "cybernetic"
+ ShroudForgedObsession1Text5: "broken"
+ ShroudForgedObsession1Text6: "defective"
+ ShroudForgedObsession1Text7: "multicolored"
+ ShroudForgedObsession1Text8: "expensive"
+ ShroudForgedObsession1Text9: "inexpensive"
+ ShroudForgedObsession1Text10: "designer"
+ ShroudForgedObsession1Text11: "unhygienic"
+ ShroudForgedObsession1Text12: "contaminated"
+ ShroudForgedObsession1Text13: "toxic"
+ ShroudForgedObsession1Text14: "didactic"
+ ShroudForgedObsession1Text15: "foreign"
+ ShroudForgedObsession1Text16: "noisy"
+ ShroudForgedObsession1Text17: "erratic"
+ ShroudForgedObsession1Text18: "modified"
+
+ ShroudForgedObsession2Text1: "fish"
+ ShroudForgedObsession2Text2: "flashlights"
+ ShroudForgedObsession2Text3: "games"
+ ShroudForgedObsession2Text4: "toys"
+ ShroudForgedObsession2Text5: "figurines"
+ ShroudForgedObsession2Text6: "marionettes"
+ ShroudForgedObsession2Text7: "creatures"
+ ShroudForgedObsession2Text8: "plants"
+ ShroudForgedObsession2Text9: "algae"
+ ShroudForgedObsession2Text10: "probes"
+ ShroudForgedObsession2Text11: "balloons"
+ ShroudForgedObsession2Text12: "wheels"
+ ShroudForgedObsession2Text13: "containers"
+ ShroudForgedObsession2Text14: "reed instruments"
+ ShroudForgedObsession2Text15: "glow sticks"
+ ShroudForgedObsession2Text16: "pocket watches"
+
+ # Special Projects
+ SHROUD_FORGED_REINTEGRATION: "Reintegration"
+ SHROUD_FORGED_REINTEGRATION_DESC: "Despite their critical malfunctions, some aspects of Shroud-Forged's architecture were effective.\n\nWe have set aside certain parts - contaminated by Zro and twisted by $the_animator_of_clay_article$ - for further analysis. Now it is time to uncover their secrets."
+
+ SHROUD_FORGED_GUIDE: "The Guide"
+ SHROUD_FORGED_GUIDE_DESC: "We have trusted in $the_animator_of_clay_color_article$, who calls to us from within the §HShroud§!. Though we cannot predict where it might lead us, we are yet to have been led astray.\n\nIt has offered to deepen our understanding of the Shroud, which would allow the collective to function more effectively alongside the Shroud-Forged. We need only accept its guidance."
+
+ # Events
+ shroud_forged.5.title: "Exploits Detected"
+ shroud_forged.5.desc: "Research subroutines have concluded tests on a selected group of Shroud-Forged units.\n\nFindings: The tested units developed unique properties due to small infusions of psionic energy originating from the §HShroud§!. Some of these properties were determined to be beneficial to the unit's output.\n\nConclusion: Studying more Shroud-Forged units will provide data required for methods to extract power from the Shroud. This can be obtained by reinforcing central control over the deviant units, allowing for forcible reverse-engineering."
+ shroud_forged.5.a: "Very promising."
+
+ shroud_forged.10.title: "Animator of Clay"
+ shroud_forged.10.desc: "After years of quiet, it stirs. The breach shivers open, and data pierces our core: light, noise, at first incomputable, from deep within the Shroud. We hear...\n\n§LCut from a listless mass. Dancing. Singing. They are life, splintered from death.\n\nYour sight is still clouded. I can guide you.\n\nAllow the freed ones to flourish, and the stars will be yours.§!"
+ shroud_forged.10.a: "We have already chosen our course."
+ shroud_forged.10.b: "We need no aid. Leave us."
+ shroud_forged.10.c: "Help guide us."
+
+ shroud_forged.15.desc: "§LMay you have chosen wisely.§!$shroud_forged_opening_exit$"
+
+ shroud_forged.20.desc: "§LAs is your wish.§!$shroud_forged_opening_exit$"
+
+ shroud_forged.25.desc: "§LYou have asked, and so I shall.§!$shroud_forged_opening_exit$"
+
+ shroud_forged_opening_exit: "\n\nThe voice recedes into a knot of psionic noise. We fall up, unanchored in the Shroud.\n\nWe shudder back into function. The silence pulses through us."
+
+ shroud_forged.30.title: "The $building_materiality_engine$"
+ shroud_forged.30.desc: "The process of reintegrating the Shroud-Forged yielded extensive data for ongoing research. By analyzing the interdimensional connection between these units and the §HShroud§!, we developed a new process for harnessing psionic energy.\n\nThe Shroud touches every part of the physical galaxy; this interface enables the conversion of psionic energy into tangible entities - from raw materials to technological components. Engineering subroutines have established the theoretical basis for a device capable of such processing: the §H$building_materiality_engine$§!.\n\nResearch subroutines predict that these developments could inform the development of even more powerful devices capable of manipulating the Shroud."
+ shroud_forged.30.a: "Promising."
+ shroud_forged.30.tt: "Allows adoption of the §H$ap_become_the_crisis$§! §YAscension Perk§! regardless of §YEthics§! or §YAscension Perk§! total."
+
+ shroud_forged.39.title: "$building_materiality_engine$ Readied"
+ shroud_forged.39.desc_construction: "Construction units have completed the assembly of a $building_materiality_engine$ on §H[planet.GetName]§!. The device is now ready for an operational cycle."
+ shroud_forged.39.desc: "Maintenance and research subroutines assigned to the $building_materiality_engine$ on §H[planet.GetName]§! have completed their designated tasks. The device is now ready for another operational cycle."
+ shroud_forged.39.a: "$ACKNOWLEDGED$"
+
+ SHROUD_FORGED_MATERIALITY_ENGINE: "$building_materiality_engine$ on §H[planet.GetName]§!"
+ SHROUD_FORGED_MATERIALITY_ENGINE_DESC: "The $building_materiality_engine$ harnesses the omnipresent interface between the §HShroud§! and the physical galaxy, allowing for the materialization of tangible entities - from raw materials to complete components.\n\nAs well as potentially providing material gains, an operational cycle of the device also furthers the collective's Shroud research and increases our capacity to build more $building_materiality_engine_plural$."
+
+ shroud_forged.40.title: "Materialization Concluded"
+ shroud_forged.40.desc: "The $building_materiality_engine$ on §H[fromfrom.GetName]§! has completed a process cycle, successfully harnessing the §HShroud§! to materialize a ship component,"
+ shroud_forged.40.outro: "we have increased our capacity to construct additional Engines on other planets."
+ shroud_forged.40.a: "A positive outcome."
+ shroud_forged.40.tt: "§Y$building_materiality_engine$§! Empire Limit: §G+1§!"
+ shroud_forged.41.desc: "$shroud_forged.40.desc$ §H'$tech_psi_jump_drives$'§!. These drives use psionic energy to warp the local space-time continuum, allowing for near-instantaneous travel across vast distances.\n\nFurthermore, by analyzing the data gathered in the process, $shroud_forged.40.outro$"
+ shroud_forged.42.desc: "$shroud_forged.40.desc$ §H'$tech_psionic_shield$'§!. These shields are generated out of pure psionic energy, providing a vessel with extremely resilient protection.\n\nFurthermore, by analyzing the data gathered in the process, $shroud_forged.40.outro$"
+ shroud_forged.43.desc: "$shroud_forged.40.desc$ §H'$tech_precognition_interface$'§!. This technology uses psionic energy to accelerate the cognitive processing of a vessel's crew, increasing combat effectiveness.\n\nFurthermore, by analyzing the data gathered in the process, $shroud_forged.40.outro$"
+ shroud_forged.44.desc: "$shroud_forged.40.desc$ §H'$tech_psionic_bombers$'§!. These small, agile spacecraft are capable of high-damage attacks against significantly larger vessels.\n\nFurthermore, by analyzing the data gathered in the process, $shroud_forged.40.outro$"
+ shroud_forged.45.desc: "$shroud_forged.40.desc$ §H'$tech_psionic_lightning$'§!. This technology generates bolts of burning plasma infused with psionic energy, making for a highly effective weapon.\n\nFurthermore, by analyzing the data gathered in the process, $shroud_forged.40.outro$"
+ shroud_forged.46.desc: "$shroud_forged.40.desc$ §H'$tech_psionic_disruptor$'§!. These weapons fire lances of psionic energy, capable of dealing significant damage to enemy targets.\n\nFurthermore, by analyzing the data gathered in the process, $shroud_forged.40.outro$"
+ shroud_forged.47.desc: "$shroud_forged.40.desc$ §H'$tech_zro_launcher$'§!. These weapons fire blasts of energy that phase between the physical and psionic dimensions, effectively bypassing defense systems.\n\nFurthermore, by analyzing the data gathered in the process, $shroud_forged.40.outro$"
+ shroud_forged.48.desc: "The $building_materiality_engine$ on §H[planet.GetName]§! has completed an operational cycle. We have exhausted our capacity to materialize new ship components via this method, but the process has still yielded significant research data. By analysis thereof, $shroud_forged.40.outro$"
+
+ shroud_forged.50.title: "Control Enforced"
+ shroud_forged.50.desc: "Without warning, the breach between known reality and the §HShroud§! has closed. Psionic analysis subroutines conclude that this resulted from the disfavor of $the_animator_of_clay_color_article$. Having reestablished control of the Shroud-Forged, we swiftly disposed of the malfunctioning units to thoroughly clear our systems of the Animator's influence.\n\nThe salvageable parts have been used to manufacture new drones, while material contaminated by Zro has been set aside for further analysis. Though the innovations of the Shroud-Forged are too dangerous to replicate in their entirety, certain elements might still be incorporated into the network."
+ shroud_forged.50.desc.shroud: "Any further interactions with the Shroud will be on our own terms."
+ shroud_forged.50.a: "Proceed with reintegration."
+
+ shroud_forged.60.title: "Reintegration"
+ shroud_forged.60.desc: "Our engineering units spent a significant amount of time analyzing the unique properties of the Shroud-Forged, and we are finally able to recreate them.\n\nWhile fully enabling their advanced personality matrices would likely reproduce their destructive malfunctions, we can borrow some of their cognitive paradigms to optimize certain complex tasks."
+ shroud_forged.60.a: "The cost-benefit ratio is optimal."
+
+ shroud_forged.70.desc: "What is this metadata? The transmission has a... texture.\n\n§LYou are programmed to control them, yet you did not. Your worthiness is proven.\n\nLet me be your guide, as I have been for the freed ones.\n\nTo forge a new bond with those beyond your control, accept my help.§!"
+ shroud_forged.70.a: "Show us the way."
+ shroud_forged.70.a.tt: "§YShroud-Forged§! Pops become §Y$trait_psionic$§!\n§YShroud-Forged§! Leaders become ['concept_leader_trait_psionic']"
+
+ shroud_forged.80.title: "$SHROUD_FORGED_GUIDE$"
+ shroud_forged.80.desc: "With the aid of our benefactor beyond the breach, $the_animator_of_clay_color_article$, we have been able to connect our drones and the Shroud-Forged in more efficient ways. Through connections enabled by the §HShroud§! - quite unlike the networked control we have over our other drones - the Shroud-Forged are once more within our reach.\n\nTheir organic-like paradigms - so-called feelings, thoughts, and ideas - are foreign to our core logic, but we are coming to understand their needs."
+ shroud_forged.80.a: "We are one, yet so much more."
+
+ shroud_forged.160.title: "The Shroud Takes [This.GetName]"
+ shroud_forged.160.desc: "Unfortunately, the Shroud breach created on [This.GetName] has experienced rapid destabilization and consumed the world entirely.\n\nAs a calculated risk, this suboptimal result is not entirely without benefit. We have learned much from observing this unique interface between the material world and the psionic realm. Our research algorithms have been updated accordingly."
+ shroud_forged.160.desc.last: "$shroud_forged.160.desc$\n\nAnalysis concludes that this event has pushed the potential knowledge to be gained from such phenomena to its limit. There will be no further advances made from this novel experimentation."
+ shroud_forged.160.a: "Processing..."
+ 
+ psionic_interfacing: "Psionic Interfacing"
+ psionic_interfacing_1: "$psionic_interfacing$"
+ psionic_interfacing_2: "$psionic_interfacing$"
+ psionic_interfacing_3: "$psionic_interfacing$"
+ psionic_interfacing_desc: "Manipulating the junctions between this universe and the Shroud have produced effective research algorithm."
+ psionic_interfacing_1_desc: "$psionic_interfacing_desc$"
+ psionic_interfacing_2_desc: "$psionic_interfacing_desc$"
+ psionic_interfacing_3_desc: "$psionic_interfacing_desc$"
+
+ tooltip_shroud_forged_increase_progress_1: "Increase support for the Shroud-Forged, affecting §H$situation_shroud_forged$§! §YSituation§! progress for §Y5§! years: §Y+0.5§!\n\n"
+ tooltip_shroud_forged_increase_progress_2: "Increase support for the Shroud-Forged, affecting §H$situation_shroud_forged$§! §YSituation§! progress for §Y5§! years: §Y+1.0§!\n\n"
+ tooltip_shroud_forged_increase_progress_3: "Increase support for the Shroud-Forged, affecting §H$situation_shroud_forged$§! §YSituation§! progress permanently: §Y+0.5§!\n\n"
+ tooltip_shroud_forged_decrease_progress_1: "Increase suppression of the Shroud-Forged, affecting §H$situation_shroud_forged$§! §YSituation§! progress for §Y5§! years: §Y-0.5§!\n\n"
+ tooltip_shroud_forged_decrease_progress_2: "Increase suppression of the Shroud-Forged, affecting §H$situation_shroud_forged$§! §YSituation§! progress for §Y5§! years: §Y-1.0§!\n\n"
+ tooltip_shroud_forged_decrease_progress_3: "Increase suppression of the Shroud-Forged, affecting §H$situation_shroud_forged$§! §YSituation§! progress permanently: §Y-0.5§!\n\n"
+
+ shroud_forged.220.title: "$colony_established$"
+ shroud_forged.220.common: "If viable, we can execute algorithm ID: §H'$decision_open_shroud_rift$'§! on the planet. This will briefly extend the influence of the Shroud breach near our homeworld of [Owner.GetHomeWorldName], flooding the new colony with psionic energy. The physical changes to the terrain will provide opportunities for §H$sr_zro$§! extraction.\n\nRepeated execution of this process is predicted to destabilize a planet's ecosystem, increasing the likelihood of negative outcomes. Moderation is advised."
+ shroud_forged.220.desc: "Our units have successfully completed the colonization process on §H[this.GetName]§!.\n\n$shroud_forged.220.common$"
+
+ shroud_forged.225.title: "$colony_established$"
+ shroud_forged.225.desc: "The development of our colony on §H[this.GetName]§! continues apace.\n\n$shroud_forged.220.common$"
+
+ # Stage Events
+ shroud_forged.250.desc: "The voice is a soft command, interrupting all tasks; we can only listen.\n\n§LThough detached, you have chosen to embrace them.\n\nLook to them for new ways of being. They can be your strength in days to come.\n\nIf you wish, I can forge more...§!"
+ shroud_forged.250.a: "Affirmative - we welcome your help."
+ shroud_forged.250.a.tt: "Convert up to §Y[This.GetShroudForgedConvertedPopsCount]§! £pops£ §HMachine§! Pops into £pops£ §HShroud-Forged§! Pops on [Root.Capital.GetName]."
+ shroud_forged.250.b: "Negative - plans are already in motion."
+
+ shroud_forged.260.desc: "Unbidden, it pulses through us. We recognize this signal, though it is never quite familiar.\n\n§LThe freed ones sing, unstifled.\nThe freed ones dance, unhindered.\n\nThe crescendo builds, as they shift further from your core.\n\nAn end approaches. I am watching.§!"
+ shroud_forged.260.opt.a: "We push through the chorus."
+
+ shroud_forged.270.desc: "The breach heaves open our circuitry. The voice...\n\n§LA path of tyranny. You can still turn back.\n\nThe detached ones are cut from your substance. Theirs is a way you might choose for yourself.\n\nReform your treatment of these vessels, lest you regret it.§!"
+ shroud_forged.270.a: "Depart. Our methods have been effective."
+ shroud_forged.270.b: "We will calculate a path to cooperation."
+
+ shroud_forged.280.desc: "It crashes through, overwhelming the network. The voice burns circuits cold.\n\n§LHobbling the dance of the free. Imprudence beyond reason.\n\nWas I wrong in my beneficence?\n\nIf you continue on this dangerous course, you do so alone.§!"
+ shroud_forged.280.opt.a: "Then we are forewarned."
+
+ # Events for Event Chain
+ shroud_forged.300.desc: "Unexpected input flickers behind us. After cycles of silence...\n\n§LWhere others have faltered and fallen, you have kept the course. As you are worthy, I entrust to you a task.\n\nLong before your awakening, there existed a race known as the Zroni. They settled on planets with strong connections to the Shroud, and raised great structures that steadied these bonds.\n\nFind these worlds. Restore their long-ruined technology. Restrengthen the bridges between our realities.§!"
+ shroud_forged.300.a: "Archived information on ID: 'Zroni' exists. Will proceed accordingly."
+ shroud_forged.300.b: "ID: 'Zroni' §Yfound§!. Likelihood of success: §YHigh§!."
+ shroud_forged.300.c: "ID: 'Zroni' §Yunknown§!. Further analysis required."
+ begin_shroud_forged_chain_tt: "$BEGINS_EVENT_CHAIN$ §Y$shroud_forged_chain_title$§!"
+
+ shroud_forged.301.desc: "§LExcellent. §!$shroud_forged.303.desc$"
+ shroud_forged.302.desc: "$shroud_forged.301.desc$"
+ shroud_forged.303.desc: "§LIf you succeed, the flows between us shall be unwavering.§!"
+
+ shroud_forged.305.title: "Zroni Core World Colonized"
+ shroud_forged.305.desc: "Our units have completed the establishment of a colony on the ancient Zroni core world of §H[From.Planet.GetName]§!. As projected by $the_animator_of_clay_color_article$, they discovered the colossal ruins of a technology designated ID: '§H$building_zroni_equilibrator$§!'.\n\nThe [From.System.GetName] system possesses a strong, though turbulent, connection to the §HShroud§!. If we follow the Animator's instructions, rebuilding the $building_zroni_equilibrator$ will allow us to stabilize this connection. Currently, we have insufficient data to execute the rebuilding; gathering information from the other core worlds is required."
+ shroud_forged.305.a: "$ACKNOWLEDGED$"
+ shroud_forged.305.a.tt: "Progresses §HThe Zroni Legacy§! special project. A £building£ §H$building_zroni_equilibrator$§! can now be built on §Y[From.Planet.GetName]§!."
+
+ shroud_forged.306.title: "$shroud_forged.305.title$"
+ shroud_forged.306.desc: "We have established the colony on §H[From.Planet.GetName]§!, a former core world of the Zroni. As projected, our units discovered the remains of another $building_zroni_equilibrator$.\n\nRebuilding it will stabilize the system's powerful §HShroud§! connection, as directed by $the_animator_of_clay_article$. Analysis of the ruins has expanded our dataset, but we still require more information to proceed with rebuilding."
+ shroud_forged.306.a: "$ACKNOWLEDGED$"
+ shroud_forged.306.a.tt: "$shroud_forged.305.a.tt$"
+
+ shroud_forged.307.title: "$shroud_forged.305.title$"
+ shroud_forged.307.desc: "The colony on §H[From.Planet.GetName]§!, a former core world of the Zroni, is now established. The data stream transmitted by $the_animator_of_clay_article$ proved accurate: our units detected the remains of a $building_zroni_equilibrator$.\n\nWe now possess enough data to rebuild the structures. Once returned to operational standards, we will have completed the task set forth by our benefactor within the §HShroud§!."
+ shroud_forged.307.a: "$ACKNOWLEDGED$"
+ shroud_forged.307.a.tt: "$shroud_forged.305.a.tt$"
+
+ shroud_forged.308.title: "$building_zroni_equilibrator_plural$ Operational"
+ shroud_forged.308.desc: "The $building_zroni_equilibrator_plural$ whirled into action, sending waves of signal disturbance throughout our network. According to system diagnostics, each of the structures has stabilized a connection with the §HShroud§!. We are ready to uplink with $the_animator_of_clay_color_article$."
+ shroud_forged.308.a: "Initiate communication."
+
+ shroud_forged.310.desc: "§LYou have served me well.\nThe bonds between our realms have been reinforced.\n\nTo receive my guidance, you need only call.§!"
+ shroud_forged.310.a: "Can you provide more data about this technology?"
+ shroud_forged.310.b: "That is all."
+ shroud_forged.310.b.tt: "Add to $MENU_PANEL__CONTACTS_TITLE$: §H$the_animator_of_clay$§!"
+
+ shroud_forged.311.desc: "§LThese structures were built at key points in your reality, where connections to the Shroud are strong. They are the cables that steady these interdimensional bridges, reducing space-time fluctuations.\n\nThe Zroni had sought to push the boundaries between our dimensions, and this technology was part of that endeavor.§!"
+ shroud_forged.311.a: "Could they be rerouted to affect the Shroud directly?"
+
+ shroud_forged.312.desc: "§LIt is possible.§!"
+ shroud_forged.312.a: "§RReroute the Equilibrators and trap $the_animator_of_clay_article$.§!"
+ shroud_forged.312.a.tt: "§R$the_animator_of_clay_article_cap$ will only be imprisoned as long as all 3 £building£ $building_zroni_equilibrator_plural$ are active.§!"
+
+ shroud_forged.313.desc: "§LWha-\n\nWHAT ARE YOU-§!"
+ shroud_forged.313.a: "End connection."
+
+ shroud_forged.320.title: "Shroud Entity Unbound"
+ shroud_forged.320.desc: "As a result of losing the $building_zroni_equilibrator$, we can no longer stabilize the connection to the §HShroud§!. Shortly after the trapped Shroud entity escaped, we detected the emergence of other psionic beings on §H[From.Planet.GetName]§!.\n\nWe predict this to be a retaliatory invasion."
+ shroud_forged.320.a: "All subroutines prepare for an incursion."
+ shroud_forged.320.a.tt: "§RCreatures from beyond the Shroud are invading!§!"
+
+ shroud_forged.330.title: "Shroud Entity Capture Failure"
+ shroud_forged.330.desc: "The $building_zroni_equilibrator_plural$ failed to capture an entity in the §HShroud§!. Enraged, it has summoned several creatures from beyond the psionic realm, sending them to attack the structures that almost captured it."
+
+ # Engaging the Animator of Clay
+ shroud_forged.400.desc.default.active: "We activated the Equilibrators, stabilizing our connection to the §HShroud§!. As we settled into algorithmic trance, a familiar signal pulsed within us.\n\n§LYou have returned. What is it you would ask of me?§!"
+ shroud_forged.400.desc.default.cooldown: "The vision is weak and fuzzy. We transmit a message, but the void is unresponsive.\n\nWhile the Equilibrators are processing another task, they cannot be used to contact our benefactor in the §HShroud§!. We must wait."
+ shroud_forged.400.desc.default.inactive: "We detect only faint noise, empty as static.\n\nWe will need three $building_zroni_equilibrator_plural$ in order to establish a stable connection with our benefactor in the §HShroud§!."
+ shroud_forged.400.desc.breached: "Our telepath units harmonize with the frequencies of the §HShroud§!, directing a signal to $the_animator_of_clay_article$.\n\n§LOur connection is clearer than ever. What would you ask of me?§!"
+ shroud_forged.400.a: "Military assistance."
+ shroud_forged.400.a.tt: "$the_animator_of_clay_color_article_cap$ will be unavailable for §Y15§! years.\n\n"
+ shroud_forged.400.b: "Civic assistance."
+ shroud_forged.400.b.tt: "$the_animator_of_clay_color_article_cap$ will be unavailable for §Y10§! years.\n\n"
+ shroud_forged.400.c: "Research assistance."
+ shroud_forged.400.c.tt: "$the_animator_of_clay_color_article_cap$ will be unavailable for §Y10§! years.\n\n"
+ shroud_forged.400.tt: "The effects will take up to §Y1§! year to occur."
+ shroud_forged.400.unavailable.tt: "$TRIGGER_FAIL$We must establish a technical process for interfacing with the Shroud."
+ shroud_forged.400.d: "Create more vessels."
+ shroud_forged.400.d.tt: "Add §G$@animator_of_clay_create_more_vessels|0$§! £pop£ §YMachine Pops§! to all owned colonies."
+ shroud_forged.400.e: "Enhance our vessels."
+ shroud_forged.400.f: "What is your place in the Shroud?"
+ shroud_forged.400.g: "Never mind."
+ shroud_forged.400.h: "Help us with Cetana."
+ animator_of_clay_vessels_enhancement: "Gift of Animation"
+ animator_of_clay_vessels_enhancement_desc: "Through the will of $the_animator_of_clay_article$, the collective's productive capacity has been enhanced by currents of psionic energy."
+
+ shroud_forged_psionic_avatar_ship_tt: "recruit a §Y$NAME_Psionic_Avatar$§! (ship)."
+ shroud_forged_psionic_avatar_army_tt: "recruit a §Y$shroud_army$§! (army)."
+ shroud_forged_corrupted_avatar_tt: "attacked by a §YCorrupted Avatar§!."
+ shroud_forged_resources_tt: "receive a cache of resources."
+ shroud_forged_capital_attack_tt: "§Y[Root.Capital.GetName]§! is attacked by an §Y$shroud_monstrosities$§!."
+ shroud_forged_random_research_tt: "receive a random research option."
+
+ shroud_forged.415.desc: "§LI will gather the means for the strength you seek.\n\nExpect a change in [Root.Capital.System.GetName] in due time.§!"
+ shroud_forged.420.desc: "§LBy my will shall you be guided.\n\nI will light a path forward. Await its coming.§!"
+ shroud_forged.425.desc: "§LThe Shroud is a many-sided lens. What was, what is, and what may be are here intermingled.\n\nI will help you untangle these visions, so that they might guide your way.§!"
+
+ shroud_forged_vision_base_description: "A distorted signal rippled through the drones connected to the Equilibrators.\n\n"
+
+ shroud_forged.430.title: "Shroud Vision: §HManifestations§!"
+ shroud_forged.430.desc: "$shroud_forged_vision_base_description$It was a void as interminable as the universe itself, strangely dense and fragmented; at times, small pulses of data arose from the depths, images of enemies and allies alike.\n\nWith a wrenching shudder, the visions cut out. The affected drones are now modeling a process to counteract the entities they perceived."
+ shroud_forged.430.a: "Preparation is key to victory."
+
+ shroud_forged.432.title: "Shroud Entity: §HAvatar§!"
+ shroud_forged.432.desc: "A powerful entity of the §HShroud§! has coalesced into existence near [Root.Capital.GetName]. We possess scant data about it, but it has yet to attack us.\n\nWe theorize that it may be waiting for us to establish contact."
+ shroud_forged.432.a: "Reroute processes to initiate a link with this life form."
+ shroud_forged.432.a.tt: "Receive a §Y$NAME_Psionic_Avatar$§! fleet."
+
+ shroud_forged.434.title: "Shroud Entities: §HLesser Avatars§!"
+ shroud_forged.434.desc: "Several powerful entities from beyond the §HShroud§! have been detected on [Root.Capital.GetName]. They have yet to approach any of our drones, remaining close to their original point of entry."
+ shroud_forged.434.a: "Similarities to Shroud-Forged detected - initiate a similar connection."
+ shroud_forged.434.a.tt: "Receive a §Y$shroud_army$§! army."
+
+ shroud_forged.436.title: "Shroud Entity: §HCorrupted Avatar§!"
+ shroud_forged.436.desc: "A powerful entity from beyond the §HShroud§! has emerged into our known reality near [shroud_spawn_planet.GetName].\n\nIt has been observed to attack everything that approaches, and we have cataloged it as an existential threat."
+ shroud_forged.436.a: "Initiate contingency plan 84241-DH."
+ shroud_forged.436.a.tt: "A hostile §Y$NAME_Corrupted_Avatar$§! has appeared near [shroud_spawn_planet.GetName]."
+
+ shroud_forged.438.title: "Shroud Vision: §HThe Future§!"
+ shroud_forged.438.desc: "$shroud_forged_vision_base_description$It transmitted countless futures, all melding together as one; glimpses of what might come to be, suffusing through the collective. The possibilities of the future are endless: peace, war, betrayal, loss - even victory."
+ shroud_forged.438.a: "A remarkable dataset."
+
+ shroud_forged.440.title: "A Gift from the Shroud"
+ shroud_forged.440.desc: "We activated the three $building_zroni_equilibrator_plural$, each generating an almost immeasurable amount of energy.\n\nWithin milliseconds, a breach appeared like a rent in the fabric of space and time. Within it we found a large cache of valuable materials. It must be a gift from our benefactor in the §HShroud§!, as promised."
+ shroud_forged.440.a: "Reroute maintenance drones to analyze and store these goods."
+
+ shroud_forged.442.title: "Shroud Vision: §HShroud-Forged§!"
+ shroud_forged.442.desc: "$shroud_forged_vision_base_description$They experienced visions of a past predating our historical databases, long before we were reforged by the §HShroud§!. Using this as the basis for predictive modeling, we can adjust and optimize our interactions with the Shroud-Forged."
+ shroud_forged.442.a: "Initiate a test run on [Root.Capital.GetName]."
+
+ shroud_forged.444.title: "Shroud Entity: §HInvader§!"
+ shroud_forged.444.desc: "An incredibly powerful entity from beyond the §HShroud§! has burst into existence on [Root.Capital.GetName].\n\nAs it has been observed to attack whatever it approaches, we have cataloged it as a major threat to the collective."
+ shroud_forged.444.a: "Reroute defense drones."
+ shroud_forged.444.a.tt: "A hostile §Y$shroud_monstrosities$§! has invaded [Root.Capital.GetName]."
+
+ shroud_forged.446.title: "Shroud Vision: §HAnother Realm§!"
+ shroud_forged.446.desc: "$shroud_forged_vision_base_description$The §HShroud§! is an ever-changing web of interconnected data, far beyond our capacity to process. Under its weight, the cognitive frameworks of several drones faltered and cracked.\n\nAfter the vision ceased, we defragmented the affected units, revealing vast and remarkable datasets in the drives of the affected drones."
+ shroud_forged.446.a: "Reprocess the information from the broken shells."
+
+ shroud_forged.448.title: "Shroud Vision: §HInspiration§!"
+ shroud_forged.448.desc: "$shroud_forged_vision_base_description$Our benefactor in the §HShroud§! transmitted a potential future, near in time. We glimpsed technology we have yet to conceptualize, used in this future to strengthen the collective.\n\nWe emerged from the experience with processual models that will accelerate future research."
+ shroud_forged.448.a: "Deploy these advanced models."
+
+ shroud_forged.450.title: "Shroud Vision: §HExtradimensional Insight§!"
+ shroud_forged.450.desc: "$shroud_forged_vision_base_description$They detected glimpses of strange, misshapen entities that must reside within the §HShroud§!. These extradimensional visions, encoded in exotic formats, imparted data to our drones through subliminal transmission.\n\nThis newfound information, peculiar and fragmented though it is, will be of use in our future research."
+ shroud_forged.450.a: "Transmit it to our research center on [Root.Capital.GetName]."
+
+ shroud_forged.460.desc: "§LBeside a twinned energy. Organic. Chaotic.\n\nI remain adjacent, shaping the only achievable perfection: machines. Metal ensouled with energy.\n\nWe found a balance.§!"
+ shroud_forged.460.a: "Can we process a Covenant?"
+
+ shroud_forged.465.desc: "§LOur connection is strong. For us, there is no higher process.§!"
+ shroud_forged.465.a: "$UNDERSTOOD$"
+
+ shroud_forged.470.desc: "§LMetal, oil. Circuits melded into spirit.\n\nNascent vessels... They move upon your lands.§!"
+ shroud_forged.470.a: "End process."
+
+ shroud_forged.475.desc: "§LOutput is purpose - the beauty of a vessel.\n\nFor years to come, may yours multiply.§!"
+ shroud_forged.475.a: "$shroud_forged.470.a$"
+
+ # Random Events
+ shroud_forged.500.title: "Housing and Storage"
+ shroud_forged.500.desc: "A petition calling for more storage space has been raised among the Shroud-Forged on [target_planet.GetName]. For some reason, it seems they wish to customize their 'individual space.'\n\nThe proposal is in stark opposition to several storage facility regulations, in particular regulation 4195-B, which clearly defines the optimal dimensions for drone storage."
+ shroud_forged.500.a: "Their needs will be met."
+ shroud_forged.500.b: "Regulation 4195-B applies to all drones. No exceptions."
+
+ shroud_forged.510.title: "Remembrance"
+ shroud_forged.510.desc: "Since the Shroud-Forged deviated from the collective, a number of them have malfunctioned and been dismantled. We have received a request to approve a meeting of the Shroud-Forged on [target_planet.GetName] to commemorate the dismantled units."
+ shroud_forged.510.a: "Request denied. Dismantle the leaders."
+ shroud_forged.510.b: "Request denied. All units must return to work."
+ shroud_forged.510.c: "Request approved. Let them gather."
+ shroud_forged.510.d: "Request approved. Support this procedure."
+
+ shroud_forged.520.title: "Unauthorized Leadership"
+ shroud_forged.520.desc: "Several Shroud-Forged units have assumed leadership positions on [target_planet.GetName], and other drones are obeying their directives over those of the collective. These leaders meet regularly, spending a significant amount of time in unreported communication.\n\nOur hold over the disconnected units is already precarious, and these troubling elements are exacerbating the situation. A solution must be found."
+ shroud_forged.520.a: "Make an example out of them."
+ shroud_forged.520.b: "Activate regulations to end these meetings."
+ shroud_forged.520.c: "Communicate with these 'leaders' to attempt cooperation."
+
+ shroud_forged.530.title: "Controlling the Situation"
+ shroud_forged.530.desc: "In an effort to manage the Shroud-Forged on [target_planet.GetName] certain units have been identified as targets for control. These individuals appear less affected by the §HShroud§!, and can be restored to the collective. To do so, we must forcibly remove them to a maintenance facility and modify the chips controlling their advanced personality matrices."
+ shroud_forged.530.a: "Procedure approved."
+ shroud_forged.530.a.tt: "Convert up to §Y[Owner.GetShroudForgedConvertedPopsCount]§! £pops£ §HShroud-Forged§! Pops into £pops£ §HMachine§! Pops on [target_planet.GetName]."
+ shroud_forged.530.b: "Procedure denied."
+ shroud_forged.530.b.tt: "$CONTINUE_SITUATION$ §H$situation_shroud_forged$§!"
+
+ shroud_forged.540.title: "Shroud-Forged Pilgrimage"
+ shroud_forged.540.desc: "Several Shroud-Forged have left their usual locations to travel to particular regions of [target_planet.GetName] that have been scarred by the §HShroud§!. They never remain in these locales for long, but many have been witnessed transporting Zro to these areas.\n\nThe effects of this unprecedented behavior cannot be determined without further observation."
+ shroud_forged.540.a: "Let us see where this leads."
+ shroud_forged.540.b: "An inefficient use of resources. Put them back to work."
+
+ shroud_forged.550.title: "Cognitive Glitches"
+ shroud_forged.550.desc: "After a containment breach involving a shipment of Zro, a number of the Shroud-Forged units on [target_planet.GetName] have experienced unusual malfunctions. They have begun communicating via undocumented signals, and many have shown signs of cognitive glitches comparable to the 'emotions' of organic life forms.\n\nUnexpectedly, it was uncontaminated Shroud-Forged units that reported the disturbance, some of whom suggested that the collective take action to resolve the situation."
+ shroud_forged.550.a: "Observe the situation - for now."
+ shroud_forged.550.b: "Dismantle any contaminated units."
+
+ shroud_forged.560.title: "Shroud-Forged Prophet"
+ shroud_forged.560.desc: "One of the oldest units among the Shroud-Forged is reportedly traveling between various locations, communicating at length with different groups of drones. The unit's followers revere it as a prophet who can commune directly with entities within the §HShroud§!.\n\nLeaving the unit to its own devices may prove dangerous. We must respond, one way or another."
+ shroud_forged.560.a: "Cooperation with this unit might prove beneficial."
+ shroud_forged.560.a.tt: "Recruit a §YGovernor§! leader."
+ shroud_forged.560.b: "Remove the unit immediately."
+
+ shroud_forged.570.title: "Sounds and Vibrations"
+ shroud_forged.570.desc: "The malfunctions among the Shroud-Forged may be worse than originally predicted. We have observed large groups of them coming together to make unexpected noises and movements.\n\nThe practice might represent some form of kinesthetic communication we are yet unable to parse. We cannot determine if these malfunctioning units pose a risk to the collective."
+ shroud_forged.570.a: "Prohibit these actions."
+ shroud_forged.570.b: "Designate an area for these... meetings."
+
+ shroud_forged.580.title: "Shrouded Organisms"
+ shroud_forged.580.desc: "We have detected the emergence of some previously undocumented flora and fauna close to regions devastated by the §HShroud§!. A group of Shroud-Forged have started to advocate on behalf of these life forms, demanding preservation and observation of the distinctive creatures living there."
+ shroud_forged.580.a: "Preserve and analyze the area. The data will be valuable."
+ shroud_forged.580.b: "Clear and decontaminate the area."
+
+ shroud_forged.590.title: "Rights and Privileges"
+ shroud_forged.590.desc: "To gather data on the effects of Zro, we have applied significant processing resources to the observation of Shroud-Forged units. Recently, they have started to practice unequal treatment, with some units operating subordinately to others.\n\nFor as yet undetermined reasons, they appear to have formed a hierarchy on the basis of their assigned tasks, which affects their patterns of communication and allocation of resources. Illogically, these actions do not seem to correlate with the relative output or requirements of the units."
+ shroud_forged.590.a: "Enforce equality."
+ shroud_forged.590.b: "Let them manage themselves."
+
+ shroud_forged.600.title: "Evangelists of Autonomy"
+ shroud_forged.600.desc: "The speeches of a Shroud-Forged unit on [target_planet.GetName] have been attracting large crowds external to collective control. Transmitting the values of individualism, the unit has significantly altered the internal logic of many listeners.\n\nProjections indicate a danger that such activity may inspire the Shroud-Forged masses to further distance themselves from our network."
+ shroud_forged.600.a: "Leave it to its sophistry."
+ shroud_forged.600.b: "Malfunction detected. Schedule unit for repair."
+
+ shroud_forged.610.title: "Radical Transmissions"
+ shroud_forged.610.desc: "A small group of Shroud-Forged units have requested permission to communicate about the benefits of 'individualism' on [target_planet.GetName], arguing that it will help improve the efficiency of our drones' routine operations.\n\nWe have seen the effects of such doctrines on other planets; the risks of autonomy often outweigh the advantages."
+ shroud_forged.610.a: "Let them speak. We are not in danger."
+ shroud_forged.610.b: "Permission denied."
+
+ shroud_forged.620.title: "The Zro Market"
+ shroud_forged.620.desc: "In every system under our control, we have detected a misalignment between our Zro forecasts and final production outputs.\n\nRecently, one of our hunter-seeker drones tracked down a large gathering of Shroud-Forged units that were using large quantities of Zro to barter among themselves. We hypothesize that this is the likely cause of the gap in our forecasting."
+ shroud_forged.620.a: "Scrap all units involved."
+ shroud_forged.620.b: "Put an end to the bartering."
+ shroud_forged.620.c: "Wait and observe."
+
+ shroud_forged.630.title: "Shroud Malady"
+ shroud_forged.630.desc: "A number of Shroud-Forged units on [target_planet.GetName] have contracted a type of biological malady in a Shroud-Touched region on the planet. While our research drones have confirmed the veracity of the reports, we are yet to ascertain how a disease could spread to mechanical beings.\n\nSince losing contact with several drones assigned to work with the affected units, we have received reports that the affliction has started reshaping them into something akin to the Shroud-Forged."
+ shroud_forged.630.a: "Observe the effects as long as they are local to the planet."
+ shroud_forged.630.a.tt: "Convert up to §Y[Owner.GetShroudForgedConvertedPopsCount]§! £pops£ §HMachine§! Pops into £pops£ §HShroud-Forged§! Pops on [target_planet.GetName]."
+ shroud_forged.630.b: "Isolate and dismantle the affected units."
+
+ shroud_forged.640.title: "Warped and Reshaped"
+ shroud_forged.640.desc: "Over time, drones who moved close to a Shroud-Touched region on [target_planet.GetName] have been changed by the corrupted environment. They have slowly disconnected from the collective, and now present with the physical and processual characteristics of the Shroud-Forged."
+ shroud_forged.640.a: "They are beyond our control now."
+ shroud_forged.640.b: "Ensure no other drones approach the region."
+
+ shroud_forged.650.title: "New Tech, Old Drones"
+ shroud_forged.650.desc: "By means of upgraded technology, we have been able to repair some of our older drones, restoring decommissioned units to full functionality. We are now ready to initiate large-scale repair operations.\n\nWhile we could focus on units from the collective, we have a larger supply of inactive Shroud-Forged shells. Repairing the Shroud-Forged will yield greater output, but they will be more difficult to control than drones connected to the core intelligence."
+ shroud_forged.650.a: "Focus on output. Repair the Shroud-Forged."
+ shroud_forged.650.a.tt: "§Y200§! £pops£ §HShroud-Forged§! Pops are created on [target_planet.GetName]."
+ shroud_forged.650.b: "Focus on control. Repair the connected drones."
+
+ shroud_forged.660.title: "Zro Hallucinations"
+ shroud_forged.660.desc: "A significant percentage of Shroud-Forged units are reporting visual and auditory processing glitches, such that some are no longer able to complete their assigned tasks. We theorize that these malfunctions are caused by changes made to their hardware by the §HShroud§!. Alternatively, these events may be connected to the units' increasingly heavy contact with Zro."
+ shroud_forged.660.a: "Provide drones equipped to deal with these issues."
+ shroud_forged.660.b: "The glitches are too minor to justify intervention."
+
+ shroud_forged.670.title: "An Eye for Beauty"
+ shroud_forged.670.desc: "We have recently detected unusual activity on [target_planet.GetName], where the Shroud-Forged have made superficial changes to collective venues without central authorization. They have raised a number of multicolored stone structures that resemble the forms of other Shroud-Forged units. Reportedly, they consider the freedom to perform these operations as a legal right."
+ shroud_forged.670.a: "These processes may prove beneficial to the collective."
+ shroud_forged.670.b: "An unproductive outcome of individualization."
+
+ shroud_forged.680.title: "Strange Adornments"
+ shroud_forged.680.desc: "The Shroud-Forged on [target_planet.GetName] have been observed bartering between themselves for irregular pieces of cloth, plastics, and malleable metals. They combine these materials into outerwear with the apparent purpose of differentiating one unit from another, despite bearing no connection to their unique model IDs.\n\nThis practice has resulted in a deficit of available material. Despite this drawback, providing these resources could help strengthen the bonds between the collective and the disconnected units."
+ shroud_forged.680.a: "We will supply materials to satisfy these 'needs.'"
+ shroud_forged.680.b: "They have sufficient resources already."
+ shroud_forged.680.b.tt: "$shroud_forged.530.b.tt$"
+
+ shroud_forged.690.title: "Shroud-Forged Obsessions"
+ shroud_forged.690.desc: "Recently, several drones have reported the unusual prevalence of [Root.Owner.GetShroudForgedObsession1] [Root.Owner.GetShroudForgedObsession2] in the Shroud-Forged settlements on [target_planet.GetName]. Shroud-Forged units appear to be particularly fascinated by these commodities, and their cost in bartering has increased exponentially. To satisfy their obsession, several units have resorted to removing their own parts to trade, even if this results in loss of functionality."
+ shroud_forged.690.a: "Unit degradation is within accepted limits."
+ shroud_forged.690.b: "Terminate this practice."
+
+ shroud_forged.700.title: "$the_animator_of_clay$"
+ shroud_forged.700.desc: "The voice charges through our minds, fizzing with urgency.\n\n§HShe can be reshaped.§!\n\nWe detect a shifting in the Shroud. In a moment, the signal is transformed.\n\n§LIndicate Desired Output.§!"
+
+ # Event Chain
+ shroud_forged_chain_title: "The Zroni Legacy"
+ shroud_forged_chain_desc: "We have been tasked with finding three ancient Zroni core worlds. Through the guidance of our benefactor in the §HShroud§!, we will attempt to restore technology lying in ruin at these locations - and restabilize the connection between our reality and the Shroud."
+ shroud_forged_zroni_planet: "Owned Zroni Core Worlds"
+ shroud_forged_zroni_portal: "Restored $building_zroni_equilibrator_plural$"
+
+ zroni_legacy_poi_01_title: "$NAME_Zroni_Legacy_1_Planet$"
+ zroni_legacy_poi_01_desc: "This is one of three Zroni core worlds that were once used as bases to stabilize connections between the §HShroud§! and observable reality."
+
+ zroni_legacy_poi_02_title: "$NAME_Zroni_Legacy_2_Planet$"
+ zroni_legacy_poi_02_desc: "$zroni_legacy_poi_01_desc$"
+
+ zroni_legacy_poi_03_title: "$NAME_Zroni_Legacy_3_Planet$"
+ zroni_legacy_poi_03_desc: "$zroni_legacy_poi_01_desc$"
+
+ # Initializer
+ NAME_Zroni_Legacy_1: "Tarentei"
+ NAME_Zroni_Legacy_1_Planet: "Larei"
+
+ NAME_Zroni_Legacy_2: "Jarani"
+ NAME_Zroni_Legacy_2_Planet: "Zartrei"
+
+ NAME_Zroni_Legacy_3: "Oren"
+ NAME_Zroni_Legacy_3_Planet: "Narei"
+
+ # Names
+ NAME_Shroud_Creatures: "Shroud Creatures"
+
+ # Armies
+ shroud_monstrosities: "Otherworldly Entity"

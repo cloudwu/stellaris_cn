@@ -41,6 +41,7 @@
  i_unlocks_building: "§I解锁建筑：§!"
  i_unlocks_feature: "§I解锁特性：§!"
  i_unlocks_orbital: "§I解锁轨道站：§!"
+ i_leader_exp_gain: "£mod_leader_species_exp_gain£§I$MOD_LEADER_SPECIES_EXP_GAIN$§!"
 
 ### Civic and Origin Concepts
 
@@ -188,7 +189,12 @@
 # Resource Consolidation
 
  concept_pc_machine: "$pc_machine$"
- concept_pc_machine_desc: "—基础宜居性：§Y0%§!\n—$mod_planet_jobs_produces_mult$：§G+10%§!\n—$MOD_POP_HOUSING_USAGE_MULT$：§G-10%§!\n—$MOD_PLANET_RESETTLEMENT_UNEMPLOYED_DESTINATION_MULT$：§G+50%§!\n\n§L$pc_machine_desc$§!"
+ concept_pc_machine_desc: "$pc_machine_effects$\n\n§L$pc_machine_desc$§!"
+ 
+ pc_machine_effects: "—基础宜居性：§Y0%§!\n—$mod_planet_jobs_produces_mult$：§G+10%§!\n—$MOD_POP_HOUSING_USAGE_MULT$：§G-10%§!\n—$MOD_PLANET_RESETTLEMENT_UNEMPLOYED_DESTINATION_MULT$：§G+50%§!"
+ 
+ concept_prototype_pc_machine: "原型$concept_pc_machine$"
+ concept_prototype_pc_machine_desc: "$pc_machine_effects$$NEW_LINE$—初始£blocker£障碍会降低来自区划的岗位、住房以及区划容量。\n\n§L$pc_machine_desc$§!"
 
  concept_malfunctioning_replicator_bay: "$d_resource_consolidation_1$"
  concept_malfunctioning_replicator_bay_desc: "—清理时间：\n$tt$—£time£360§I天§!\n—清理花费：\n$tt$—600$i_minerals$\n—$MOD_PLANET_MAX_DISTRICTS_ADD$：§R-1§!\n\n§L$d_resource_consolidation_1_desc$§!"
@@ -243,6 +249,9 @@
 
  concept_psionic_ascension: "灵能飞升"
  concept_psionic_ascension_desc: "通过解锁意识中的灵能能力，就有可能触及天幕，从中汲取无尽的能量。"
+
+ concept_attunement: "调和度"
+ concept_attunement_desc: "$ATTUNEMENT_TT$"
 
  concept_shroud_beacon: "$sm_shroud_beacon$"
  concept_shroud_beacon_desc: "$sm_shroud_beacon_desc$"
@@ -658,3 +667,15 @@
 # Unplugged
  concept_cybernetic_traits: "义体"
  concept_cybernetic_traits_desc: "义体特质提供比通常物种特质更独特的增益，代价是花费额外的$r_energy$维护费。"
+
+# Shroud-Forged
+ concept_shroud_rift_deposit: "$d_shroud_rift_deposit$"
+ concept_shroud_rift_deposit_desc: "$MOD_PLANET_CRIME_NO_HAPPINESS_MULT$：§R+5%§!\n—产出：1$i_zro$\n\n§L$d_shroud_rift_deposit_desc$§!"
+ 
+# Experimental Testing
+ concept_experimental_testing: "$situation_experimental_testing$"
+ concept_experimental_testing_desc: "完成时获得一项随机£physics£ £society£ £engineering£科技洞见。\n\n§L$situation_experimental_testing_desc_lore$§!"
+ concept_experimental_testing_hive_mind: "$concept_experimental_testing$"
+ concept_experimental_testing_hive_mind_desc: "$concept_experimental_testing_desc$"
+ concept_experimental_testing_corporate: "$concept_experimental_testing$"
+ concept_experimental_testing_corporate_desc: "$concept_experimental_testing_desc$"

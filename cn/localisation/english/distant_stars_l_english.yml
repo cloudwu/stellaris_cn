@@ -610,6 +610,7 @@
  distar.242.name:0 "灵能实体"
  distar.242.desc:0 "[Root.GetName]在[From.GetName]星系内遭遇了纯粹能量的巨型存在！一个真正的灵能力量漩涡，这个实体必须极其谨慎地接近。\n\n令人费解的是，[From.GetName]星系自身似乎完全没有任何连接到亚空间超航道网络的连接。我们不知道是这个实体的存在切断了星系的超航道连接，还是意外的亚空间波动将它困在此处。\n\n但是，有一件事是明确的：我们首先在[sealed_entry_system.GetName]星系中记录的重复信号似乎正来自[tanker_planet.GetName]。"
  distar.242.desc.psi:0 "[Root.GetName]在[From.GetName]星系内遭遇了纯粹能量的巨型存在！一个真正的灵能力量漩涡，我们的船组感受到来自实体的强烈恶意。\n\n令人费解的是，[From.GetName]星系自身似乎完全没有任何连接到亚空间超航道网络的连接。我们不知道是这个实体的存在切断了星系的超航道连接，还是意外的亚空间波动将它困在此处。\n\nn但是，有一件事是明确的：我们首先在[sealed_entry_system.GetName]星系中记录的重复信号似乎正来自[tanker_planet.GetName]。"
+ distar.242.desc.psi_hive_robot: "[Root.GetName]在[From.GetName]星系首次接触到一个非实体的能量生命体。我方[Owner.GetTelepathPlural]已确认该实体是一个具有潜在敌意的、具有一定智慧的灵能漩涡。\n\n[From.GetName]星系完全脱离超空间航道网络。目前尚不清楚这种脱离是人为设计还是外力所致。但可以确定的是，我们最初在[sealed_entry_system.GetName]星系观测到的重复信号很可能源自[tanker_planet.GetName]。"
  distar.243.name:0 "实体静默"
  distar.243.desc:0 "随着封在[sealed_system.GetName]星系内的恶意灵能实体的毁灭，我们的科研船应该能安全地探索这个独特的缺少超空间航道的空间区域。"
  distar.244.name:0 "医学奇迹"
@@ -1956,7 +1957,8 @@
  action.92.pitharan:1 "在对 [From.GetName] 的勘察中，[Root.GetName] 发现了一种之前从未见过的被称为§H铍烯兰粉末§!的战略资源。$sr_pitharan_desc$"
  action.92.engos:1 "在对 [From.GetName] 的勘察中，[Root.GetName] 发现了一种之前从未见过的被称为§H萦戈气体§!的战略资源。$sr_engos_desc$"
  action.92.neutronium:1 "在对 [From.GetName] 的勘察中，[Root.GetName] 发现了一种之前从未见过的被称为§H中子矿§!的战略资源。$sr_neutronium_desc$"
- action.92.zro:1 "[Root.GetName]在§Y[Root.Fleet.GetStarName]§!星系发现了一种前所未知的战略资源，称为§H卓尘§!。这是一种来源不明的气溶胶，吸入后可以让拥有灵能天赋的个体提升灵能力。$action.92.part3$"
+ action.92.zro.common: "[Root.GetName]在§Y[Root.Fleet.GetStarName]§!星系发现了一种前所未知的战略资源，称为§H$sr_zro$§!。"
+ action.92.zro: "$action.92.zro.common$这是一种来源不明的气溶胶，[Root.Owner.GetIngestedLoc]后可以让拥有天赋的[Root.Owner.GetIndividualNamePlural]提升灵能力。$action.92.part3$"
  action.92.dark_matter:1 "[Root.GetName]在§Y[Root.Fleet.GetStarName]§!星系发现了一种前所未知的战略资源，称为§H暗物质§!。它似乎打破了一些物理法则，具有引发科学革命的潜力。"
  action.92.satramene:1 "在对 [From.GetName] 的勘察中，[Root.GetName] 发现了一种之前从未见过的被称为§H赛特宁气体§!的战略资源。$sr_satramene_desc$"
  action.92.living_metal:1 "[Root.GetName]在§Y[Root.Fleet.GetStarName]§!星系发现了一种前所未知的战略资源，称为§H活体金属§!。其具有通常只能在有机生物形式上才能见到的特性，会自动恢复成被稳定塑造好的形态。"
@@ -1964,6 +1966,12 @@
  action.92.terraform_gases:1 "在对 [From.GetName] 的勘察中，[Root.GetName] 发现了一种之前从未见过的被称为§H环境改造气体§!的战略资源。$sr_terraform_gases_desc$"
  action.92.has_tech:0 "\n我们拥有相应的科技——要是能够控制该星系，就能攫取这份资源。$action.92.generic$"
  action.92.no_tech:0 "\n虽说我们尚不能提取这种资源，但应该考虑在该星系建立控制，以便日后开发。$action.92.generic$"
+
+ action.92.zro.mindwarden: "$action.92.zro.common$\n\n这种稀有的气溶胶表现出一种异常的神经侵入效应特性，因此被指定为一类A级管制品。它在开发精神隔离技术方面可能具有价值。$action.92.generic$"
+
+ action.942.name: "发现$sr_zro$矿藏"
+ action.942.desc: "[Root.GetName]在§H[Root.Fleet.GetStarName]§!星系中发现了战略资源：§H“$sr_zro$”§!的储备。\n\n这种稀有气溶胶具有多种用途。分析表明，经过处理的样本甚至能影响具有“灵能”特性的[Owner.GetSpeciesAdj]个体——例如天幕造物——的机能。凭借我们的$tech_mine_zro$技术，只要控制[Root.Fleet.GetStarName]星系就能实现该资源的开采。$action.92.generic$"
+ action.942.a: "最优的发现。"
 
  action.92.garanthium.tooltip:0 "§Y$sr_garanthium$§!\n§E$sr_garanthium_desc$§!"
  action.92.lythuric.tooltip:0 "§Y$sr_lythuric$§!\n§E$sr_lythuric_desc$§!"

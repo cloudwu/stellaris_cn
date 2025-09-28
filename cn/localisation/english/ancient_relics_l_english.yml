@@ -503,7 +503,6 @@
 
  mod_planet_executives_produces_mult:0 "£job_executive£$job_executive_plural$产出"
  mod_planet_managers_produces_mult:0 "£job_manager£$job_manager_plural$产出"
- mod_planet_bio_trophies_produces_mult:0 "£job_bio_trophy£$job_bio_trophy_plural$产出"
 
  artifact_artifact_relays_hivemind:1 "文物中继§E（行星决策）§!"
  artifact_artifact_relays_hivemind_desc:0 "$decision_artifact_relays_hivemind$决策能够增强我们一颗行星上$job_synapse_drone_plural$的交流能力。"
@@ -884,9 +883,9 @@
  scrap_miner: "$job_scrap_miner$"
  job_scrap_miner:0 "拆解矿工"
  job_scrap_miner_plural:0 "拆解矿工"
- job_scrap_miner_desc:0 "$job_scrap_miner_plural$探索破碎环世界的深处以寻找适合建设的材料。"
+ job_scrap_miner_desc:0 "$job_scrap_miner_plural$探索破碎的残骸深处以寻找适合建设的材料。"
  job_scrap_miner_effect_desc:0 "£job_scrap_miner£ $job_scrap_miner_plural$生产£minerals£ §Y$minerals$§!和£alloys£§Y$alloys$§!。"
- miner_is_scrap_miner_tt: "$job_miner_plural_with_icon$转化为[miner.GetIcon]$job_scrap_miner_plural$"
+ miner_is_scrap_miner_tt: "£job_miner£ $job_miner_plural$ 转化为[miner.GetIcon]$job_scrap_miner_plural$"
 
  scrap_miner_drone: "$job_scrap_miner_drone$"
  job_scrap_miner_drone:0 "拆解采矿成员"
@@ -903,9 +902,6 @@
 
  building_scrap_processing_plant_desc:0 "处理从环上回收的材料加工厂。"
  building_scrap_processing_hub_desc:0 "此庞大的中心空间站会接收从环上回收矿物然后分配给各个矿物处理站精炼出优质矿物。"
-
- mod_planet_miners_alloys_produces_add: "每$pop_group_unit$[miner.GetIcon][GetMinerPlural]产出的£alloys£$alloys$"
-
 
  ###########################
  # ARCHAEOTECHNOLOGIES
@@ -988,8 +984,10 @@
 
 
  # Buildings and Modules
- biologist_is_archaeo_engineer_tt: "$job_biologist_plural_with_icon$转化为$job_archaeoengineers_plural_with_icon$"
- building_archaeostudies_faculty_relic_effect:1 "$t$$biologist_is_archaeo_engineer_tt$\n若建立在§Y遗落星球§!上：\n$t$—研究速度（远古学）：§G+50%§!\n$t$—$mod_planet_biologists_minor_artifacts_produces_add$：§G+0.5§!"
+ biologist_is_archaeo_engineer_tt: "$t$£job_biologist£ $job_biologist_plural$ 转化为 $job_archaeoengineers_plural_with_icon$"
+ biology_drone_is_archaeo_engineer_tt: "$t$£job_brain_drone_biologist£ $job_brain_drone_biologist_plural$ 转化为 £job_archaeo_drone£ $job_archaeo_drone_plural$"
+ biology_unit_is_archaeo_engineer_tt: "$t$£job_calculator_biologist£ $job_calculator_biologist_plural$ 转化为 £job_archaeo_unit£ $job_archaeo_unit_plural$"
+ building_archaeostudies_faculty_relic_effect:1 "\nIf built on a §YRelic World§!:\n$t$- Research Speed (Archaeostudies): §G+50%§!\n$t$- $mod_planet_biologists_minor_artifacts_produces_add$: §G+0.5§!" 
  building_archaeostudies_faculty:0 "远古学院"
  building_archaeostudies_faculty_desc:0 "一系列致力于研究从古代帝国取回的稀有文物在科技方面应用的实验室。"
 

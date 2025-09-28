@@ -84,7 +84,7 @@
 
  mod_gravity_snare_cooldown_mult: "重力陷阱冷却"
  MOD_GRAVITY_SNARE_COST_MULT: "重力陷阱花费"
- MOD_SPACE_FAUNA_CULLING_REWARD_MULT: "屠宰回报"
+ MOD_SPACE_FAUNA_CULLING_REWARD_MULT: "屠宰产出的资源"
 
  grand_archive.7210.name: "重力陷阱"
  grand_archive.7210.desc.common: "随着最近§Y$tech_gravity_wells$§!的发现，现在[root.GetAdjective]科研船可以发射$gravity_snare_plural$。"
@@ -297,7 +297,7 @@
  MOD_SHIP_DAMAGE_AGAINST_BOSS_MULT: "对星神兽的伤害"
  MOD_SPACE_FAUNA_GROWTH_RATE_MULT: "太空兽群舰船生长速度"
 
- mod_vivarium_produces_mult: "屠宰太空兽群产出的资源"
+ mod_vivarium_produces_mult: "屠宰、狩猎和捕捉太空兽群产出的资源"
  mod_specimens_produces_mult: "样本产出"
 
  MOD_ARTIFICIAL_SHIP_NAVAL_CAP_USAGE_MULT: "人造舰船$MOD_SHIP_NAVAL_CAP_USAGE_MULT$"
@@ -1315,8 +1315,8 @@
  RESOURCES_GAINED_TT: "屠宰§Y太空兽群§!用于获得研究、物料，还能获得£genetic_material£§Y$genetic_material$§!用于在§Y孵化器§!中将其进行克隆。"
  LAST_YEAR_SUMMARY: "上一年：$RESOURCES$"
  LAST_MONTH_SUMMARY: "上个月：$RESOURCES$"
- LAST_YEAR_CULLED_TT: "过去一年从屠宰§Y太空兽群§!中获得的资源总量。"
- LAST_MONTH_CULLED_TT: "过去一个月从屠宰§Y太空兽群§!中获得的资源总量。"
+ LAST_YEAR_CULLED_TT: "过去一年从屠宰、狩猎和捕捉§Y太空兽群§!中获得的资源总量。"
+ LAST_MONTH_CULLED_TT: "过去一个月从屠宰、狩猎和捕捉§Y太空兽群§!中获得的资源总量。"
 
  genetic_material: "基因物质"
 
@@ -1881,7 +1881,7 @@
  leader_trait_treasure_hoarder_desc: "再高的赏金也满足不了这位领袖的野心。唯有积累宝贵的资源是他们的第一动力。"
 
  mod_enemy_ship_destroyed_energy_add: "摧毁敌对帝国舰船规模获得的$r_energy$"
- mod_deposit_increase_on_survey_chance_mult: "完成调查时：有概率提升资源矿藏规模"
+ mod_deposit_increase_on_survey_chance_mult: "完成调查时：\n$t$有概率提升资源矿藏规模"
 
 ##########
 # Civics #
@@ -1925,9 +1925,6 @@
  civic_beastmasters_common_effects_2: "$t$- 开局£genetic_material£ ['concept_dna']:$TABBED_NEW_LINE$$t$- §0常规n§! 太空变形虫"
  civic_beastmasters_effects: "$civic_beastmasters_common_effects_1$\n$civic_beastmasters_ships$\n$civic_beastmasters_common_effects_2$"
  civic_corporate_beastmasters_effects: "$civic_beastmasters_common_effects_1$\n$civic_beastmasters_ships$\n$civic_beastmasters_common_effects_2$\n$t$- £building£ §Y$building_food_conglomerate$§! $megacorp_civic_branch_office_building_effect$"
- civic_beastmasters_common_effects_2: "—开局£genetic_material£['concept_dna']：$TABBED_NEW_LINE$—§0普通§!太空变形虫"
- civic_beastmasters_effects: "$civic_beastmasters_common_effects_1$\n$civic_beastmasters_common_effects_2$"
-  civic_corporate_beastmasters_effects: "$civic_beastmasters_common_effects_1$\n$civic_beastmasters_common_effects_2$\n- The £building£ §Y$building_food_conglomerate$§! $megacorp_civic_branch_office_building_effect$"
  civic_cordyceptic_beastmasters_effects: "$civic_beastmasters_common_effects_1$$TABBED_NEW_LINE$—将使用§Y克隆太空变形虫§!而非§Y不死太空变形虫§!开局\n$civic_beastmasters_common_effects_2$"
 
  councilor_beastmasters: "驯兽领主"
@@ -1968,8 +1965,7 @@
  tr_domestication_bio_repurposing_reanimator_tt: "$tr_domestication_bio_repurposing_blocker_tt$"
  tr_domestication_astrozoology: "星际动物学"
  tr_domestication_astrozoology_delayed: "虚空中的每一种动物都别具一格，拥有不同的繁殖方式和营养需求。想在孤立环境中最大限度发掘它们的潜力需要极致的专注。"
- tr_domestication_astrozoology_gestalt_tt: "所有§Y太空兽群§!在§Y生态园§!中的繁殖几率提高。\n$MOD_SPACE_FAUNA_CULLING_REWARD_MULT$：§G+25%§!"
- tr_domestication_astrozoology_tt: "$tr_domestication_astrozoology_gestalt_tt$\n$mod_planet_zoo_keepers_produces_mult$：§G+50%§!"
+ tr_domestication_astrozoology_tt: "当捕捉或繁育太空兽群时：$NEW_LINE$$t$—屠宰资源获取量：§G200%§!"
  tr_domestication_metabolic_regulation: "代谢调控"
  tr_domestication_metabolic_regulation_delayed: "我们可以通过调节影响物种个体代谢的各种关键酶和蛋白质来人工控制所收容物种的成熟过程。"
  tr_domestication_metabolic_regulation_tt: "解锁§Y$policy_metabolic_regulation$§!政策"
@@ -2264,11 +2260,11 @@
 
  grand_archive.8115.name: "成功潜入"
  grand_archive.8115.desc.1: "经过数月的准备，科学家[Leader.GetName]成功潜入了通讯网络，并伪装成了一艘§Y黑针§!飞船。在伪造的荷仁船长命令下，[Leader.GetHeShe]欺骗了基地操作员，让他们准备将星图胶囊进行紧急星际转移。"
+ grand_archive.8115.desc.slippery: "科学家[Leader.GetName]将飞船降落一个绝佳位置，以便在掩护被揭穿的情况下迅速撤退。"
+ grand_archive.8115.desc.charismatic: "凭借他们的魅力，科学家[Leader.GetName]能够避开任何棘手的问题。"
+ grand_archive.8115.desc.psionic_organic: "[Leader.Species.GetHandName]轻轻一挥，科学家[Leader.GetName]便操控了守卫的思想，消除了一切疑虑。"
+ grand_archive.8115.desc.psionic_machine: "通过灵压，[Leader.GetName]轻易地便操控了守卫的思想，消除了一切疑虑。"
  grand_archive.8115.desc.2: "我们成功夺得胶囊，无人员伤亡。海盗们还没有意识到他们被骗了。"
- grand_archive.8115.desc.default: "$grand_archive.8115.desc.1$\n\n$grand_archive.8115.desc.2$"
- grand_archive.8115.desc.slippery: "$grand_archive.8115.desc.1$\n\n科学家[Leader.GetName]将飞船降落一个绝佳位置，以便在掩护被揭穿的情况下迅速撤退。\n\n$grand_archive.8115.desc.2$"
- grand_archive.8115.desc.charismatic: "$grand_archive.8115.desc.1$\n\n凭借他们的魅力，科学家[Leader.GetName]能够避开任何棘手的问题。\n\n$grand_archive.8115.desc.2$"
- grand_archive.8115.desc.psionic: "$grand_archive.8115.desc.1$\n\n[Leader.Species.GetHandName]轻轻一挥，科学家[Leader.GetName]便操控了守卫的思想，消除了一切疑虑。\n\n$grand_archive.8115.desc.2$"
  grand_archive.8115.a: "$EXCELLENT$"
 
  grand_archive.8120.name: "人赃并获"
@@ -2706,7 +2702,7 @@
  ###############
  # Reanimators #
  ###############
- reanimator_effect_desc: "控制的克隆有机§H太空兽群§!可以被复活。"
+ reanimator_effect_desc: "控制的克隆有机§Y太空兽群§!可以被复活。"
  FLEETORDER_REANIMATE_PROJECT_BUTTON: "复活太空兽群舰船"
  MESSAGE_DEBRIS_REANIMATED_FINISH_MESSAGE_TYPE_TITLE: "太空兽群复活"
  MESSAGE_DEBRIS_REANIMATED_FINISH: "$SYSTEM|Y$中的已故太空生物已复活，现在可以作为我们军队的组成部分，由我们进行控制。"

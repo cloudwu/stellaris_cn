@@ -25,18 +25,16 @@
  mod_job_knight_per_pop:0 "每$VALUE$个人口提供§G+1§![knight.GetName]岗位"
  mod_job_knight_per_pop_short:0 "\n每$VALUE$£pop£§G+1§![knight.GetIcon]"
  planet_knights:0 "骑士"
- mod_planet_knights_upkeep_mult: "[knight.GetName]维护费"
+ job_knight_plural_and_commander_with_icon: "£job_knight_commander£$job_knight_commander_plural$和[knight.GetIcon][knight.GetNamePlural]"
 
  job_squire:0 "扈从"
  job_squire_plural:0 "扈从"
+ job_squire_plural_with_icon: " [squire.GetIcon] [squire.GetNamePlural]" 
  job_squire_desc:1 "成为一名骑士需要数年的训练。那些谋求进入骑士团的人必须从侍奉一名骑士做起，以他们为楷模学习，甚至要努力让他们的贵族生活过的舒适。"
  job_squire_effect_desc:2 "[squire.GetIcon][squire.GetNamePlural]提供$r_amenities$并提升§Y[knight.GetIcon][knight.GetNamePlural]§!的§Y$MOD_POP_BONUS_WORKFORCE_MULT$§!。"
  mod_job_squire_add:0 "[squire.GetName]岗位"
  mod_job_squire_per_pop:0 "每$VALUE$个人口提供§G+1§!个[squire.GetName]岗位"
  mod_job_squire_per_pop_short:0 "\n每$VALUE$£pop£ §G+1§!£mod_job_squire_add£"
-
- mod_planet_squires_food_produces_add: "每$pop_group_unit$[squire.GetIcon][squire.GetNamePlural]产出的£food£$food$"
- mod_planet_squires_exotic_gases_produces_add: "每$pop_group_unit$[squire.GetIcon][squire.GetNamePlural]产出的£exotic_gases£$exotic_gases$"
 
  knights_more_unity_tooltip:1 "[knight.GetIcon]§Y[knight.GetNamePlural]§!会额外产生§G+3§!£unity£凝聚力，§Y维护费§! 上升§R15%§!。\n£job_knight_commander£§Y$job_knight_commander$§!会生产额外§G+4§!£unity£凝聚力。"
  knights_more_research_tooltip:1 "[knight.GetIcon]§Y[knight.GetNamePlural]§!会额外产生§G+2§!£physics_research£ £society_research£ £engineering_research£研究，§Y维护费§! 上升§R15%§!。\n£job_knight_commander£§Y$job_knight_commander$§!会生产额外§G+2§!£physics_research£ £society_research£ £engineering_research£研究。"
@@ -801,7 +799,7 @@
  excessive_endurance_tooltip:0 "宜居性：§G+30%§!$TABBED_NEW_LINE$- $MOD_POP_BONUS_WORKFORCE_MULT$：§G+5%§!"
 
  edict_damn_the_consequences:0 "不问后果"
- edict_damn_the_consequences_desc:1 "该法令将我们的基因修饰推向极致，使其效果翻倍，但同时也使出现恶性副作用的概率上升了，包括突发灾难性的爆燃。\n\n§R还能出什么问题呢？§!"
+ edict_damn_the_consequences_desc: "该法令将我们的基因修饰推向极致，使其效果翻倍，但同时也使出现恶性副作用的概率有所上升，包括突发灾难性的爆燃。\n\n§R无惧后果将无视['concept_edict_fund']，并始终消耗你每月$unity_with_icon$收入的80%！§!"
  edict_damn_the_consequences_effects:0 "所有因§H强夺天工§!而导致的正面效果翻倍。"
 
  # Deposit for Exotic Metabolism

@@ -246,11 +246,11 @@
 
  trait_plantoid_phototrophic:0 "光合作用"
  trait_plantoid_phototrophic_desc:0 "§L这个物种需要食物和阳光维生。§!\n"
- TRAIT_PLANTOID_PHOTOTROPHIC_EFFECT:0 "将§Y50%§!$r_food$（或$r_minerals$）维护费替换为$r_energy$维护费"
+ TRAIT_PLANTOID_PHOTOTROPHIC_EFFECT:0 "将§Y50%§!$food_with_icon$（或$minerals_with_icon$）维护费替换为$energy_with_icon$维护费"
 
  trait_plantoid_radiotrophic:0 "辐射合成"
  trait_plantoid_radiotrophic_desc:0 "§L这个物种需要食物和低能辐射维生，因此可以在环境最恶劣的星球上生存。§!"
- TRAIT_PLANTOID_RADIOTROPHIC_EFFECT:1 "$TRAIT_PLANTOID_PHOTOTROPHIC_EFFECT$\n    —§Y死寂星球§!上的人口将会移除该£energy£ §Y能量币§!维护费\n    —§Y死寂星球§!上的人口增长速度§G+10%§!\n    —死寂星球宜居性：§G+10%§!"
+ TRAIT_PLANTOID_RADIOTROPHIC_EFFECT:1 "$TRAIT_PLANTOID_PHOTOTROPHIC_EFFECT$\n$t$- §Y死寂星球§!上的人口将会移除该£energy£ §Y能量币§!维护费\n$t$- §Y死寂星球§!上的人口增长速度§G+10%§!\n$t$- 死寂星球宜居性：§G+10%§!"
  trait_harvested_radiotrophic:0 "$trait_plantoid_radiotrophic$"
  trait_harvested_radiotrophic_desc:0 "$trait_plantoid_radiotrophic_desc$"
  trait_lithoid_radiotrophic:0 "$trait_plantoid_radiotrophic$"
@@ -259,6 +259,7 @@
 
  trait_plantoid_budding:0 "出芽生殖"
  trait_plantoid_budding_desc:0 "§L除了通常的受精卵或者孢子生殖之外，这个物种还可以进行出芽生殖。§!"
+ trait_plantoid_budding_portrait_override_tt: "或任何通过营养繁殖进行繁衍的物种"
  trait_lithoid_budding:0 "析晶化"
  trait_lithoid_budding_desc:0 "§L除了通常的繁衍方式以外，该物种可以通过复制晶格并使其生长的方式进行自体繁衍。§!"
  TRAIT_PLANTOID_BUDDING_EFFECT: "每个具有奴役或更高生活标准的$pop_group_unit$£pop£§H人口§!产生2£mod_logistic_growth_mult£§Y$MOD_BONUS_POP_GROWTH$§!。\n\n该效果可以同其他提供$MOD_BONUS_POP_GROWTH$的来源，比如£building£§Y$building_clone_vats$§!或者£job_spawning_drone£§Y$job_spawning_drone_plural$§!叠加。"

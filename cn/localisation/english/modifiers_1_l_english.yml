@@ -206,7 +206,6 @@
 
  mod_job_soldier_or_warrior_add: "[GetSoldierJobsAdd]"
  mod_job_soldier_stability_add:2 "每$pop_group_unit$[soldier.GetIcon][GetSoldier]岗位产生的稳定度"
- mod_planet_bureaucrats_stability_produces_add: "每个 $pop_group_unit$ [bureaucrat.GetIcon] [bureaucrat.GetNamePlural] £mod_planet_stability_add£ 稳定度"
  mod_job_researcher_naval_cap_add: "每$pop_group_unit$£job_researcher£[GetResearcher]产生的£mod_country_naval_cap_add£$MOD_COUNTRY_NAVAL_CAP_ADD$"
  mod_job_preacher_trade_add: "每$pop_group_unit$£job_preacher£$job_preacher_plural$产出的$r_trade$"
 
@@ -367,9 +366,12 @@
  EMERGENCY_JUMP:0 "紧急跃迁"
  MOD_SHIP_ANOMALY_FAIL_RISK:0 "异常现象失败风险"
  MOD_SHIP_ANOMALY_RESEARCH_SPEED:0 "异常现象研究速度"
+ MOD_SHIP_ANOMALY_RESEARCH_SPEED_UNINHABITABLE: "非宜居行星$MOD_SHIP_ANOMALY_RESEARCH_SPEED$"
  MOD_SHIP_ANOMALY_GENERATION_CHANCE:0 "异常现象发现机会"
+ MOD_SHIP_ANOMALY_GENERATION_CHANCE_UNINHABITABLE: "非宜居行星$MOD_SHIP_ANOMALY_GENERATION_CHANCE$"
  MOD_SHIP_ANOMALY_GENERATION_CHANCE_MULT:0 "$MOD_SHIP_ANOMALY_GENERATION_CHANCE$"
  MOD_SHIP_SCIENCE_SURVEY_SPEED:0 "勘察速度"
+ MOD_SHIP_SCIENCE_SURVEY_SPEED_UNINHABITABLE: "非宜居行星$MOD_SHIP_SCIENCE_SURVEY_SPEED$"
  MOD_SHIP_TRACKING_ADD:0 "追踪"
  MOD_SHIP_TRACKING_MULT:0 "追踪"
  MOD_SHIP_STARTING_EXPERIENCE_ADD:0 "舰船初始经验"
@@ -498,12 +500,6 @@
  mod_planet_buildings_factories_cost_mult:0 "民用工厂成本"
  mod_planet_buildings_refineries_cost_mult:0 "精炼厂成本"
  mod_planet_buildings_strongholds_cost_mult:0 "堡垒成本"
- mod_planet_metallurgists_upkeep_mult:1 "冶金师维护费" 
- mod_planet_artisans_upkeep_mult:1 "工匠维护费" 
- mod_planet_researchers_upkeep_mult:1 "研究人员维护费" 
- mod_planet_refiners_upkeep_mult:0 "精炼师维护费"
- mod_planet_chemists_upkeep_mult:0 "化合师维护费"
- mod_planet_translucers_upkeep_mult:0 "透镜师维护费"
  mod_planet_district_mining_build_speed_mult:0 "矿业区建造速度"
  mod_planet_district_farming_build_speed_mult:0 "农业区建造速度"
  mod_planet_district_generator_build_speed_mult:0 "电力区建造速度"
@@ -645,8 +641,8 @@
  MOD_STARBASE_DEFENSE_PLATFORM_CAPACITY_MULT:0 "$MOD_STARBASE_DEFENSE_PLATFORM_CAPACITY_ADD$"
  MOD_COUNTRY_STARBASE_CAPACITY_ADD:0 "$STARBASE_CAPACITY_TITLE$"
  MOD_COUNTRY_STARBASE_CAPACITY_MULT:0 "$STARBASE_CAPACITY_TITLE$"
- MOD_COUNTRY_ENCLAVE_CAPACITY_ADD:0 "佣兵城邦容量"
- MOD_COUNTRY_ENCLAVE_CAPACITY_MULT:0 "佣兵城邦容量"
+ MOD_COUNTRY_ENCLAVE_CAPACITY_ADD:0 "佣兵容量"
+ MOD_COUNTRY_ENCLAVE_CAPACITY_MULT:0 "佣兵容量"
  mod_starbase_buildings_cost_mult:0 "太空基地建造费用"
  mod_starbase_modules_cost_mult:0 "太空基地模块成本"
 
@@ -730,8 +726,7 @@
  mod_country_base_sr_living_metal_produces_add:0 "每月£sr_living_metal£活金属"
  mod_country_base_sr_dark_matter_produces_add:0 "每月£sr_dark_matter£暗物质"
  mod_country_base_sr_zro_produces_add:0 "每月£sr_zro£卓尘"
-
-
+ mod_country_sr_zro_produces_mult: "£sr_zro£卓尘"
 
  mod_country_monuments_influence_produces_add:0 "$MOD_COUNTRY_INFLUENCE_GAIN_ADD$"
  mod_country_suppression_influence_upkeep_add:0 "影响力维护费"
@@ -1866,6 +1861,8 @@
  MOD_CATAPULT_RANGE_BASE:0 "量子弹弓作用距离（基础）"
  MOD_CATAPULT_RANGE_MULT:0 "量子弹弓作用距离"
  mod_quantum_catapult_megastructure_bypass_windup_mult:0 "量子弹弓充能"
+
+ planet_observators: "观测者"
 
  mod_country_consumer_goods_cost_mult:0 "消费品维护费"
 

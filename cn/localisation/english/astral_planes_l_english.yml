@@ -53,6 +53,7 @@
  action_astral_splitting_no_rift_spawning_location: "$TRIGGER_FAIL$§R我们没有可供进行裂分创造新的裂隙的星系。§!"
  action_astral_splitting_tooltip: "在随机一个你控制的星系内创造一道$ASTRAL_RIFT$。\n必须控制一个不与其他$ASTRAL_RIFTS$毗邻的星系。"
  action_astral_splitting_too_many_rifts: "$TRIGGER_FAIL$§R我们已经把自己强制打开全新时空裂隙的能力推到了极限。§!"
+ action_astral_splitting_no_rift_spawning_location_tt: "§R无有效星系可以分裂出新的裂隙。§!"
 
  action_gain_physics_insight: "获得物理学洞见"
  action_gain_physics_insight_desc: "允许科学家利用$ASTRAL_THREADS_ICON$以推进我们对物理学的理解。"
@@ -304,6 +305,10 @@
 
  flamestorm_troopers_army: "焰爆部队"
  flamestorm_troopers_army_desc: "这些小队为燃烧战而设计，往往造成相当大的连带伤害。"
+ 
+ astral_planes.210.name: "科学家返回"
+ astral_planes.210.desc: "[fromfrom.leader.GetName]从一趟寻找因终末而消失的星系的$ASTRAL_RIFT$探险中返回了。他熟悉的许多地方已经完全从本现实中消失了。\n\n他还不确定自己回到的是不是正确的维度，显然是受到了一定的认知冲击。"
+ astral_planes.210.a: "欢迎回来？"
 
 ###########
 # Effects #
@@ -401,8 +406,6 @@
  astral_rift_difficulty_decrease_2: "$astral_rift_difficulty_decrease_1$"
  astral_rift_difficulty_decrease_3: "$astral_rift_difficulty_decrease_1$"
 
- mod_planet_researchers_sr_dark_matter_produces_add: "每$pop_group_unit$£job_researcher£[GetResearcherPlural]产出的£sr_dark_matter£$sr_dark_matter$"
-
  ##########
  # Traits #
  ##########
@@ -425,7 +428,7 @@
 
  trait_exd: "异次元体"
  trait_exd_desc: "这个物种起源于另一个维度，需要大量能量才能在我们的宇宙中生存。"
- TRAIT_EXD_EFFECT: "将$r_food$维护费替换为$r_energy$维护费\n每个作为奴隶或更好标准的$pop_group_unit$£pop£§H人口§!每月产生0.5£physics_research£§Y物理学研究§!点数"
+ TRAIT_EXD_EFFECT: "- 每$pop_group_unit$£pop£人口的$energy_with_icon$维护费：§R+$@living_standard_energy_normal|*0$§!\n$t$—每个作为奴隶或更好标准的$pop_group_unit$£pop£§H人口§!每月产生0.5£physics_research£§Y物理学研究§!点数"
 
  ######################
  # Origin - Riftworld #
@@ -433,10 +436,13 @@
 
  origin_riftworld: "裂隙当空"
  origin_riftworld_desc: "一道巨大的时空裂隙高悬于该文明母星的穹顶。在研究这一现象近千年后，最近的星舰科技进展使其终于可以靠近他，并且发掘潜藏其中的秘密。"
- origin_tooltip_riftworld_effects: "- 母星：['concept_riftworld_digsite']['concept_archaeology_site']$NEW_LINE$- 在你控制的星系内出现[ 'concept_astral_rift', $ASTRAL_RIFTS$ ]的概率：§G+100%§!"
+ origin_tooltip_riftworld_effects: "—$HOMEWORLD$['concept_riftworld_digsite']['concept_archaeology_site']$NEW_LINE$—有[ 'concept_astral_rift',$ASTRAL_RIFTS$]的星系内的殖民行星：['modifier:riftworld_affinity']$NEW_LINE$—在你控制的星系内出现§Y$ASTRAL_RIFTS$§!的概率：§G+100%§!"
  START_SCREEN_RIFTWORLD: "自我们有记忆起，大裂隙就在[GetHomeWorldName]的天空中高悬着。传说我们的遥远过去与这道天界之痕还有我们首都附近的天降之坑相互纠缠。\n\n我们祖祖辈辈都将这个撞击坑视为圣地，却对其知之甚少。然而，最近的地震活动却让坑下的一处异常现象重见天日。我们正在着手向其核心钻探。至于在坑里到底会有什么发现，人们莫衷一是。$START_SCREEN_RIFTWORLD_END$"
  START_SCREEN_RIFTWORLD_MACHINE: "穷尽我们数据库所能追溯的最早时间，大裂隙就早已高悬于[GetHomeWorldName]的上空。我们的内部时钟于该裂隙天体的频率相同步，而最早的记录则记录了一处位于我们首都附近的远古撞击坑。\n\n无数次迭代以来，该撞击坑都被保留下来，但却对其几乎没有任何了解。然而，最近的地震活动却让坑下的一处异常现象重见天日。我们正在准备向其核心钻探。$START_SCREEN_RIFTWORLD_END$"
  START_SCREEN_RIFTWORLD_END: "\n\n这难道只是一个发生在我们超空间引擎科技取得进展时的普通巧合吗？就在我们直抵天界时，我们的注意力被重新拉回了地面上。也许在这颗星球的地下潜藏着的是对于我们前往星间旅行的启迪，也许它可以让我们做好应对裂隙另一端的事物的准备。"
+
+ riftworld_affinity: "裂隙亲和"
+ riftworld_affinity_desc: "我们的社会发展在跨维度存在的影响下，激发出对科学研究进行深化探索的热情。"
 
  astral_planes.2105.name: "怪异通讯"
  astral_planes.2105.desc: "从§H[From.solar_system.GetName]§!内星界裂隙的爆炸余波中，我们收到了一段奇怪的通讯。\n\n[GetScientistPlural]们认为它源某个自远超裂隙本身的地方，且目前尚且只破译了其中的只言片语。"
@@ -967,6 +973,7 @@
  SKIN_GANGRENE: "坏疽"
  SKIN_GEODES: "晶洞"
  SKIN_EXTERIOR: "外围"
+ SKIN_ABSTRACT: "表面"
 
  ###########
  # Agendas #

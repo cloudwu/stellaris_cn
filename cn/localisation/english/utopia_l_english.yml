@@ -59,8 +59,8 @@
  ap_master_builders_habitat_size:2 "我帝国的§H轨道栖所§!将额外拥有§Y2§!块闲置地区。"
  allow_edict_consectrated_worlds:5 "§H解锁决策：§!$decision_consecrated_worlds$"
  describe_edict_consectrated_worlds:5 "§E祝圣无人居住的行星（最多§Y3§!颗），增强§Y精神主义道德吸引力§!和§Y全帝国内的舒适度§!，并增加£unity£§Y凝聚力产出§!，具体效果取决于行星在宗教中的重要程度。§!"
- allow_machine_worlds:3 "§H解锁环境改造选项：§!机械星球\n§H解锁机械星球特区：§!$zone_machine_replication$"
- describe_machine_worlds:7 "对大部分有机生物不宜居\n£district£§Y中枢§!地区无数量限制\n所有£district£§Y地区§!提供的住房和岗位数量翻倍\n£pop£人口的资源产出：§G+10%§!\n住房使用：§G-10%§!\n§R将摧毁所有乡村地区§!"
+ allow_machine_worlds:3 "- §Y解锁环境改造选项：§!['concept_pc_machine']\n—§Y解锁£zone£区域特化：§!$zone_machine_replication$"
+ describe_machine_worlds:7 "- 将§Y£district£乡村区域§!替换为§Y£district£中枢区域§!\n—增加所有£district£§Y区域§!\n的住房和岗位—§R大多有机物种不宜居住§!"
  allow_hive_worlds:1 "§H解锁环境改造选项：§!蜂巢星球\n§H解锁蜂巢星球地区特化：§!£zone£ $zone_spawning$"
  describe_hive_worlds:1 "对非蜂巢物种不宜居。\n£district£§Y蜂巢§!地区无数量限制\n所有£district£§Y地区§!提供的住房和岗位数量翻倍\n£pop£人口的资源产出：§G+10%§!\n住房使用：§G-10%§!\n§R将摧毁所有乡村地区§!"
 
@@ -220,12 +220,12 @@
  CYBORG_ENERGY_UPKEEP_EFFECT:0 "增加$r_energy$维护费§R+$@cyborg_energy_upkeep$§!"
 
  trait_psionic:0 "灵能"
- trait_psionic_desc:0 "§L此种族的所有个体都拥有强大的灵能能力。他们通常通过心灵感应来相互交流。§!\n"
+ trait_psionic_desc: "[This.GetPsionicTraitDesc]"
  trait_self_modified:0 "自我修饰"
  trait_self_modified_desc:0 "§L此分支种族自发改变了他们的基因结构，为他们带来了更多优势。§!"
 
  leader_trait_shroud_age:0 "延年益寿"
- leader_trait_shroud_age_desc:0 "天幕的强大灵能力量延缓了此领袖的自然衰老过程。"
+ leader_trait_shroud_age_desc: "天幕的强大灵能力量延缓了此[GetLeaderLoc]的自然[GetAgingLoc]过程。"
 
  leader_trait_reformer:0 "改革家"
  leader_trait_reformer_desc:0 "这位领袖是改革家，致力于建设社会的美好明天。"

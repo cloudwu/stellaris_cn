@@ -669,6 +669,7 @@
  WRONG_SECTOR_CANT_BUILD:0 "无法管理星域内的行星地块。"
  CANT_MOVE_POP:1 "无法移动人口。"
  PLANET_VIEW_EMBARK_ALL:0 "全数起航"
+ PLANET_VIEW_ARMIES_COUNT: "当前部队：$VALUE|Y0$"
  PLANET_VIEW_RETREAT:0 "撤退"
  PLANET_VIEW_LAND_ALL:0 "全部着陆"
  PLANET_VIEW_ATTACK:0 "进攻"
@@ -886,6 +887,7 @@
  SPECIAL_PROJECT_STATUS_COMPLETED:0 "已完成"
  SPECIAL_PROJECT_STATUS_FAILED:0 "已失败"
  SPECIAL_PROJECT_STATUS_TIMED_OUT:0 "已过期"
+ SPECIAL_PROJECT_STATUS_ABORTED: "放弃"
  MISSION_SUCCESS: "完成"
  MISSION_FAILED: "失败"
  MISSION_ABORTED: "取消"
@@ -1175,8 +1177,6 @@
  TIMELINE_EVENT_HATCH_BEHEMOTH_TOOLTIP: "§HBehemoth Hatchling§!\n§YMilestone§!\n\nThe first Behemoth Hatchling emerged from its egg on §L[GetDate]§!" # TODO
  TIMELINE_EVENT_HATCH_BEHEMOTH: "Behemoth Hatchling\n§L[GetDate]§!" # TODO
 
-
-
 # Galactic Events
 
  TIMELINE_EVENT_GALACTIC_MARKET_TOOLTIP: "§H泛银河贸易市场§!\n§Y银河事件§!\n\n商贸连接繁星。泛银河贸易市场正式成立，成为了银河的经济中心。贸易自由流动，财富在瞬间此起彼落，整个帝国的命运如今只掌握在供需之间。"
@@ -1189,8 +1189,6 @@
  TIMELINE_EVENT_WAR_IN_HEAVEN: "远古者之战\n§L[GetDate]§!"
  TIMELINE_EVENT_NEXUS_STORM_TOOLTIP: "§H枢纽风暴§!\n\n§Y银河事件§!\n一场前所未有的风暴突然出现在[EVENT_TARGET_0.GetName]星系。枢纽风暴肆虐一个个星系，舰船倾而星球毁。"
  TIMELINE_EVENT_NEXUS_STORM: "风暴无期\n§L[GetDate]§!"
-
-
 
  ####################################
  # Empire View
@@ -1433,14 +1431,17 @@
  FLEET_VIEW_INVESTIGATE_DISABLED_BY_CLOAKING_DESC:1 "§RWe cannot launch a First Contact investigation while Cloaked.§!"
  FLEET_VIEW_REINFORCE_HEADER:0 "增援舰队"
  FLEET_VIEW_REINFORCE_CLICK:0 "§G点击从最近的船坞增援舰队§!"
- FLEET_VIEW_TURN_INTO_MERCENARY_ENCLAVE_HEADER:1 "转换为佣兵城邦"
- FLEET_VIEW_TURN_INTO_MERCENARY_ENCLAVE_DESCRIPTION:0 "$FLEET_VIEW_TURN_INTO_MERCENARY_ENCLAVE_CLICK$"
- FLEET_VIEW_TURN_INTO_MERCENARY_ENCLAVE_CLICK:2 "将这支舰队转换为一个§Y佣兵城邦§!。§R我们会失去这支舰队的控制权。§!"
- FLEET_VIEW_MERCENARY_ENCLAVE_CAPACITY_AVAILABLE:0 "$VALUE|Y$"
- FLEET_VIEW_MERCENARY_ENCLAVE_CAPACITY_UNAVAILABLE:0 "$VALUE|R$"
- FLEET_VIEW_MERCENARY_ENCLAVE_CAPACITY_DESCRIPTION:0 "佣兵容量：$VALUE$"
- FLEET_VIEW_MERCENARY_ENCLAVE_CAPACITY_VERBOSE:0 "§E佣兵城邦§!可以向其他帝国提供一段时间的§H佣兵舰队§!。§Y佣兵容量§!可以由§Y公民性、飞升特典§!或§Y银河议案§!提升。"
- FLEET_VIEW_MERCENARY_ENCLAVE_UNFULFILLED_CONDITIONS:0 "§R未满足条件：§!"
+ FLEET_VIEW_TURN_INTO_ENCLAVE_HEADER: "转化为[This.GetEnclaveName]"
+ FLEET_VIEW_TURN_INTO_ENCLAVE_DESCRIPTION: "将这支舰队转换为一个§Y[This.GetEnclaveName]§!。§R我们会失去这支舰队的控制权。§!"
+ FLEET_VIEW_ENCLAVE_CAPACITY_AVAILABLE: "$VALUE|Y$"
+ FLEET_VIEW_ENCLAVE_CAPACITY_UNAVAILABLE: "$VALUE|R$"
+ FLEET_VIEW_ENCLAVE_CAPACITY_DESCRIPTION: "城邦容量：$VALUE$"
+ FLEET_VIEW_ENCLAVE_CAPACITY_VERBOSE: "§E[This.GetEnclavePlural]§!可以让§H[This.GetEnclaveFleetPlural]§!为帝国效力一段时间。§Y城邦容量§!可以通过§Y国民理念、飞升天赋§!或§Y星系议案§!来提升。"
+ FLEET_VIEW_ENCLAVE_UNFULFILLED_CONDITIONS: "§R未满足条件：§!"
+ ENCLAVE_DEFAULT: "佣兵城邦"
+ ENCLAVE_PLURAL: "佣兵城邦"
+ ENCLAVE_FLEET_NAME: "佣兵舰队"
+ ENCLAVE_FLEET_PLURAL: "佣兵舰队"
 
  SHIP_SIZE_MULTIPLIER:0 "舰船规模：£navy_size£ §H$VALUE|0$§!"
  SHIP_SIZE:1 "§H$SIZE$§!"
@@ -1551,7 +1552,6 @@
  LEADER_BACKGROUND_ETHIC:0 "思潮：$ETHIC|H$"
  COUNCIL_DYNAMIC_BACKGROUND:0 "[Root.GetScriptedCouncilBackground]"
  LEADER_RECRUITMENT_SCRIPTED_GREETING:1 "§L[Root.GetScriptedLeaderRecruitedGreeting]§!"
- COUNCIL_AGENDA_DESC_SUFFIX:0 "[Root.GetScriptedCouncilAgendaDescSuffix]"
 
  ####################################
  # Ship Designer
@@ -1962,7 +1962,7 @@
  DEMOGRAPHICS_TOOLTIP:1 "§H人口统计§!\n人口统计概览。"
  GOVERNMENT_ADVISOR_TAB:0 "顾问"
  GOVERNMENT_ADVISOR_TAB_TOOLTIP:0 "§H$EMPIRE_ADVISOR$§!\n顾问语音设置。"
- SPECIES_DEMOGRAPHICS:0 "$SPECIES|H$\n人口比例：$PERCENTAGE|H%$"
+ SPECIES_DEMOGRAPHICS:0 "$SPECIES|H$\n人口：$POP_AMOUNT|Y$\n人口比例：$PERCENTAGE|Y0%$"
 
  #EMPIRE TAB
  LEADER_NAME_DESC:0 "§H统治者头衔和名称§!"
@@ -4230,8 +4230,7 @@
  trade_desc: "§t$concept_trade_desc$§!\n\n§G点击['concept_trade']打开数据库\n在菜单中点击£trade£打开['concept_market']§!"
 
  sr_zro:0 "卓尘"
- sr_zro_desc:0 "一种由独特粒子组成的罕见气溶胶。它在一些世界的陨石坑中被发现，不过其真正来源依然是未解之谜。若具灵能天赋者将其摄入体内，卓尘将极大提高灵能并可能使服用者上瘾。"
-
+ sr_zro_desc: "一种在异星粒子中存在的极其稀有的气溶胶，随着陨石撞击被一起发现。不过其真正的来源依然是个未解之谜。若拥有灵能天赋的[GetIndividualNamePlural]将卓尘[GetIngestedLoc]后，它会是一种能极大的提高灵能力量（并可能导致成瘾）的[GetDrugLoc]。"
  sr_living_metal:0 "活金属"
  sr_living_metal_desc:1 "这种无机金属有着通常生命形式才具备的特征，会自动恢复到其被塑造好的形态。"
 
@@ -4631,7 +4630,7 @@
  building_alien_sanctuary:0 "外星圣所"
  building_alien_sanctuary_desc:0 "$tech_alien_sanctuary_desc$"
  building_psi_corps:0 "灵团修行所" # NOTE 原文只有psi corps两个单词，结合描述补上修行所让它看起来像个设施会比较好的感觉
- building_psi_corps_desc:0 "所有具有灵能天赋的个体从我们帝国的各处来此所磨练本领。\n\n§Y灵团是你的朋友。相信灵团。§!"
+ building_psi_corps_desc: "帝国的各路精英灵能[GetIndividualNamePlural]被征召到此军团中发挥各自的专长。\n\n§Y灵能军团是你的[GetPsiCorpFriend]。相信我们。§!"
  psionic_bonus_workforce_from_telepaths_tt: "\n$mod_psionic_pop_bonus_workforce_mult$ 随 [telepath.GetIcon] [telepath.GetName] 岗位增长"
  building_hive_synapse:0 "蜂群突触"
  building_hive_synapse_desc:0 "增强我蜂群思维的信号使我们的工蜂高效工作。"

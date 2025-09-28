@@ -37,8 +37,8 @@
  enclave.2.tooltip.bb:1 "星系中无其他太空城邦"
  enclave.2.tooltip.c:0 "星系必须处于我们的控制下"
  enclave.2.tooltip.cc:0 "星系处于我们的控制下"
- enclave.2.tooltip.d:0 "佣兵城邦容量不足"
- enclave.2.tooltip.dd:0 "佣兵城邦容量有余"
+ enclave.2.tooltip.d:0 "城邦容量不足"
+ enclave.2.tooltip.dd:0 "城邦容量有余"
  enclave.2.tooltip.e:1 "星系内需要有一个小行星或卫星"
  enclave.2.tooltip.ee:1 "星系内有小行星或卫星"
  enclave.2.tooltip.f:0 "我们必须是该舰队的所有者"
@@ -50,8 +50,11 @@
  enclave.26.a:0 "他们会为此付出代价。"
  enclave.27:0 "舰队紧急召回"
  enclave.27.desc:0 "尊敬的客户：\n\n由于目前遭受攻击，我们迫切需要召回自己的舰队。根据合同第285b条，我们的舰队将在收到通知后立即停止为您服务。不过一旦我们将这一不幸的局势处理完毕，我们就将恢复我们的合作关系，并对由此带来的不便表示歉意。"
+ enclave.27.desc.mindwarden: "刚刚我们收到了[mercenary_enclave_country.GetName]发来的讯息：\n\n§H[root.GetName]，\n\n我们目前正遭受攻击，必须立刻召回己方武装。根据合约相关条款，[mercenary_fleet.GetName]将即刻停止为您服务。\n\n我们相信，您能够理解当前我方局势之紧迫与召回武装之必要。§!"
  enclave.27.a:0 "祝你们好运。"
+ enclave.27.a.mindwarden: "愿他们击破敌军。"
  enclave.27.b:0 "这也太不像话了！"
+ enclave.27.b.mindwarden: "我们下次应该好好读读合同条款各项细则。"
  enclave.28:0 "和平协定"
  enclave.28.desc:0 "注意了！[Root.GetName]，距离你们发动这场令人遗憾的侵略已经过去整整一年了。我们，[mercenary_enclave_country.GetName]，愿意不计前嫌；不管怎样，冲突尽管有时候是有利可图的，但如果是两位生意伙伴之间发生冲突的话那就不可能了。如果你们愿意简明地发表一份致歉声明，向我们传达出些许的善意，我们愿意既往不咎。"
  enclave.28.a:0 "去死吧，唯利是图的渣滓。"
@@ -153,7 +156,7 @@
  mercenary_fleet_size_upgrade_4:0 "$mercenary_fleet_size_upgrade_1$ IV"
  mercenary_fleet_size_upgrade_5:0 "$mercenary_fleet_size_upgrade_1$ V"
  hired_mercenary_fleet_naval_cap_usage:0 "受雇佣兵舰队军舰容量使用"
- country_enclave_capacity_decrease_modifier:0 "建立佣兵城邦"
+ country_enclave_capacity_decrease_modifier:0 "建立城邦"
 
  tactic_v_khan:0 "佣兵战术：大可汗"
  tactic_v_gray:0 "佣兵战术：灰蛊风暴"
@@ -387,6 +390,9 @@
  enclave.405.psionic.n.desc:0 "那么，我们的旅伴回来了！很高兴再次看到你。我们等候多时。"
  enclave.405.psionic.o.desc:0 "在我们§H[shroudwalker_enclave_country.GetName]§!坚持的所有信条中，少有比这一条更坚定的：即使地位崇高如我们一般，也肯定能在银河中找到同伴。\n\n那么，我飞升了的朋友：我们能为彼此做些什么？"
  enclave.405.hostile.a.desc:0 "闯入者，你的敌意就像恶臭的瘴气一样笼罩着自己。我们是和平的集会，但你要知道：如果你想让我们遭受苦难，你会发现这种愚蠢的行径将以十倍奉还。我们是§H[shroudwalker_enclave_country.GetName]§!，尽管我们看似鞭长莫及，但我们的愤怒将会毁天灭地。"
+ enclave.405.desc.mindwardens: "你可真是名过其实。\n\n我们拒绝与畏惧§H天幕§!之人共商大计。你们对宇宙的狭隘认知终将令我们所有人固步自封。"
+ enclave.405.desc.mindwardens_trust: "[mindwarden_enclave_country.GetName]的无知偏见毒害了你的思想。多么讽刺啊……\n\n我们绝不会与和那些蠢货有染的人共商前途。"
+ enclave.405.desc.end_of_the_cycle: "“你唤醒了远超你理解的恐怖，它宣告了银河的末日。\n\n我们不愿去面对这样的疯狂事物。离我们远点！”"
  enclave.405.a:1 "我们的命运将会如何？" # [LocEditor:ForFutureBatchExport]
  enclave.405.b:2 "你们愿意从你们的组织里派一位老师过来吗？" # [LocEditor:ForFutureBatchExport]
  enclave.405.c:1 "你能给我们一些有关其他帝国的见解吗？" # [LocEditor:ForFutureBatchExport]
@@ -397,6 +403,11 @@
  enclave.405.e:0 "你能教我们如何开采§Y卓尘§!吗？"
  enclave.405.e.tt:0 "我们需要至少与§Y[shroudwalker_enclave_country.GetName]§!有§Y50§! £opinion£ 评价才能询问§Y卓尘§!开采事宜。"
  enclave.405.f:0 "我们遇到了一个自称是§Y“面纱旅人”§!的人……"
+ enclave.405.g: "打开一处§Y星界裂隙§!。"
+ enclave.405.g.tt: "在我们打开一处§Y星界裂隙§!之前需要先满足与§Y[shroudwalker_enclave_country.GetName]§!的评价大于§Y50§!£opinion£。"
+ enclave.405.h: "帮助我们开放§Y心灵§!。"
+ enclave.405.h.tt: "在我们开放心灵之前需要先满足与§Y[shroudwalker_enclave_country.GetName]§!的评价大于§Y90§!£opinion£。"
+ enclave.405.i: "我们将探索§Y天幕§!的灵妙。"
 
  enclave.410.desc:1 "啊哈，一个重要的问题——和前人所问相比，深刻程度可谓不相上下。这么一个问题有不菲的价格，不过我们可以回答。\n\n然而，要知道：天幕允许我们感知尚未发生的事件，而这些知识将帮助指导你们的道路。但任何单一的事件都不足以撼动银河的运转。\n\n如果你有意达成这笔交易，那么相比于拓展抱负，你应该去做更充分的准备。但是，哦，哪怕是对顷刻将至之事的最细微一瞥，都可能建立起什么样的宏伟计划啊……"
  enclave.410.a:0 "我们还是考虑别的事情。"
@@ -956,7 +967,7 @@
 
  shroud_beacon_active_tooltip:0 "[Root.GetName]拥有一个启用的§Y天幕信标§!。"
 
-# shroudwalker_teacher_explanation:1 "\nUnlocks the §Yplanetary decision§! §H$decision_shroudwalker_teacher$§! with the following effects:\n£amenities£ $MOD_PLANET_AMENITIES_MULT$: §G+5%§!\n$mod_planet_jobs_unity_produces_mult$: §G+10%§!\n$mod_planet_telepaths_unity_produces_add$: §G+3§!"
+# shroudwalker_teacher_explanation:1 "\nUnlocks the §Yplanetary decision§! §H$decision_shroudwalker_teacher$§! with the following effects:\n£amenities£ $MOD_PLANET_AMENITIES_MULT$: §G+5%§!\n$mod_planet_jobs_unity_produces_mult$: §G+10%§!\n$mod_planet_enforcers_unity_produces_add$: §G+3§!"
 
  shroudwalker_teacher_explanation:2 "\n我们将雇佣一位具有§Y$leader_trait_shroudwalker$§!特质的等级5行政官。"
 

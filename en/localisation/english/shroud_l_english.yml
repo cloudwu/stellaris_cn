@@ -8,6 +8,7 @@
 
  ap_interdimensional_processing: "Interdimensional Processing"
  ap_interdimensional_processing_desc: "Our calculation potential is limited when constrained only to the three physical dimensions. There is more to be gained by reaching our network into the spaces beyond the void."
+ requires_not_ap_interdimensional_processing: "$TRIGGER_FAIL$May not have the §Y$ap_interdimensional_processing$§! Ascension Perk."
 
  vo_psionic_voice: "Psionic"
 
@@ -117,9 +118,8 @@
  shroud.7121.a.tt: "$change_auth_tt$ [GetCorporealAuthority]"
 
 # Transcendent
- transcendent_trait_common_tt: "§Y$trait_psionic$§! species trait grants additional effects:$TABBED_NEW_LINE$- $pop_cat_ruler_plural$ and [GetSpecialist] Job Efficiency: §G+10%§!$TABBED_NEW_LINE$- [GetWorker] Job Efficiency: §R-10%§!"
- transcendent_trait_tt: "$mod_psionic_aura_hyperlane_range_add$: §G+2§!\n$transcendent_trait_common_tt$\n['concept_leader_trait_psionic'] trait gains §G$@transcendent_psionic_leader_speed_mult|0%$§! Council Agenda Speed"
- transcendent_trait_gestalt_tt: "$transcendent_trait_common_tt$"
+ transcendent_trait_common_tt: "§Y$trait_psionic$§! Species Trait grants additional effects:$TABBED_NEW_LINE$- $pop_cat_ruler_plural$ and [GetSpecialist] Job Efficiency: §G+10%§!$TABBED_NEW_LINE$- [GetWorker] Job Efficiency: §R-10%§!"
+ transcendent_trait_tt: "$mod_psionic_aura_hyperlane_range_add$: §G+2§!\n$transcendent_trait_common_tt$\n['concept_leader_trait_psionic'] Leader Trait grants additional effects: $TABBED_NEW_LINE$- §G+$@transcendent_psionic_leader_speed_mult|0%$§! Council Agenda Speed $TABBED_NEW_LINE$- $MOD_LEADER_LIFESPAN_ADD$: §G+60§! $TABBED_NEW_LINE$- Non-Transcendent effects are increased by §G+50%§!"
 
  auth_shroud_democratic_transcendent: "Transcendent Democracy"
  auth_shroud_democratic_transcendent_desc: "All transcended minds are of equal status in the Shroud, while elections ensure equality in the corporeal realm. Voting by psionic ballot, citizens elect their representatives to the governing conclave which seeks consensus through telepathic contemplation."
@@ -157,13 +157,13 @@
 
  auth_shroud_hive_transcendent: "Transcendent Ethermind"
  auth_shroud_hive_transcendent_desc: "Moving as one into the Shroud, this collective now feels more at home in the Shroud than in its physical forms. Each journey beyond the veil increases the combined wisdom of this new ethermind."
- transcendent_hive_mind_tt: "$mod_psionic_aura_hyperlane_range_add$: §G+2§!\n$transcendent_trait_gestalt_tt$\n§YLeaders§! gain §Y$@transcendent_hive_mind_leader_exp|0$§! experience after each $DELVE$.\n$MOD_PLANET_STABILITY_MULT$: §G+10%§!\n$mod_planet_jobs_complex_drone_produces_mult$: §G+10%§!\n$MOD_EMPIRE_SIZE_MULT$: §G-10%§!\n$MOD_POP_ENVIRONMENT_TOLERANCE$: §R-10%§!"
+ transcendent_hive_mind_tt: "$transcendent_trait_tt$\n§YLeaders§! gain §Y$@transcendent_hive_mind_leader_exp|0$§! experience after each $DELVE$.\n$MOD_PLANET_STABILITY_MULT$: §G+10%§!\n$mod_planet_jobs_complex_drone_produces_mult$: §G+10%§!\n$MOD_EMPIRE_SIZE_MULT$: §G-10%§!\n$MOD_POP_ENVIRONMENT_TOLERANCE$: §R-10%§!"
  gov_shroud_transcendent_hive: "$auth_shroud_hive_transcendent$"
  gov_shroud_transcendent_hive_desc: "$auth_shroud_hive_transcendent_desc$"
 
  auth_shroud_machine_transcendent: "Transcendent Mainframe"
  auth_shroud_machine_transcendent_desc: "Most of this network's processing has been moved inside of the Shroud, where calculations can be achieved at unprecedented levels of speed. System operations in the realm of mundanity are now considered clumsy and obsolete."
- transcendent_machine_tt: "$mod_psionic_aura_hyperlane_range_add$: §G+2§!\n$transcendent_trait_gestalt_tt$\n$@transcendent_machine_research_per_attunement|2=+%$ Research Speed per Attunement Point\nGain £physics_research£ £society_research£ £engineering_research£ random research every time you §Y$DELVE$§!\n§YSubroutine§! Upkeep per $pop_group_unit$ $job_telepath_swap_plural_with_icon$: $@transcendent_machine_calculator_upkeep|0=-%$\n$MOD_COUNCIL_AGENDA_PROGRESS_SPEED$: §G+25%§!\n£pop£ Pops with the ['trait:trait_robot_psionic'] trait gain $@transcendent_machine_pop_upkeep|0=-%$ Upkeep\n$mod_station_researchers_produces_mult$: §R-20%§!"
+ transcendent_machine_tt: "$transcendent_trait_tt$\n$@transcendent_machine_research_per_attunement|2=+%$ Research Speed per Attunement Point\nGain £physics_research£ £society_research£ £engineering_research£ random research every time you §Y$DELVE$§!\n§YSubroutine§! Upkeep per $pop_group_unit$ $job_telepath_swap_plural_with_icon$: $@transcendent_machine_calculator_upkeep|0=-%$\n$MOD_COUNCIL_AGENDA_PROGRESS_SPEED$: §G+25%§!\n£pop£ Pops with the ['trait:trait_robot_psionic'] trait gain $@transcendent_machine_pop_upkeep|0=-%$ Upkeep\n$mod_station_researchers_produces_mult$: §R-20%§!"
  gov_shroud_transcendent_machine: "$auth_shroud_machine_transcendent$"
  gov_shroud_transcendent_machine_desc: "$auth_shroud_machine_transcendent_desc$"
  transcendent_machine_research_modifier: "$auth_shroud_machine_transcendent$"
@@ -426,6 +426,11 @@
 #==========================
 # Components
 #==========================
+
+ weapon_type_psionic: "§Y$PSIONIC$§!"
+ mod_weapon_type_psionic_weapon_damage_mult: "Psionic Weapon Damage"
+ mod_weapon_type_psionic_weapon_fire_rate_mult: "Psionic Weapon Fire Rate"
+
  PSIONIC_STRIKE_CRAFT: "$tech_psionic_bombers$"
  PSIONIC_STRIKE_CRAFT_DESC: "$tech_psionic_bombers_desc$"
  BIO_PSIONIC_STRIKE_CRAFT: "$PSIONIC_SAPPERS$"
@@ -493,11 +498,13 @@
 
  SHROUD_SEAL: "Shroud Seal"
  SHROUD_SEAL_PLURAL: "Shroud Seals"
- SHROUD_SEAL_IN_SYSTEM: "This system contains a $SHROUD_SEAL$, weakening nearby §Y$PSIONIC_AURA_PLURAL$§!."
+ SHROUD_SEAL_IN_SYSTEM: "This system contains a $SHROUD_SEAL$, weakening nearby §Y$PSIONIC_AURA_PLURAL$§!. It can only be dismantled by the system owner."
 
  shroud_seal: "$SHROUD_SEAL$"
  shroud_seal_DESC: "This sophisticated machine emits low-frequency waves capable of counteracting psionic energy, thereby dissipating and eventually nullifying $PSIONIC_AURA_PLURAL$."
- shroud_seal_MEGASTRUCTURE_DETAILS: "The §Y$SHROUD_SEAL$§! attenuates nearby §Y$PSIONIC_AURA_PLURAL$§!. §Y$PSIONIC_AURA$§! in this system decay by $@shroud_seal_decrease|0$ intensity, and adjacent systems by -1."
+ shroud_seal_MEGASTRUCTURE_DETAILS: "The §Y$SHROUD_SEAL$§! attenuates nearby §Y$PSIONIC_AURA_PLURAL$§! and reduces the effectiveness of §YPsionic Ship Components§!."
+
+ shroud_seal_modifier: "$SHROUD_SEAL$"
 
  requires_no_existing_shroud_seal: "$TRIGGER_FAIL$Cannot build due to existing $SHROUD_SEAL$ in the system."
  shroud_seal_dismantle_conditions_tt: "$TRIGGER_FAIL$Hostiles in this system prevent us from safely dismantling the $SHROUD_SEAL$."
@@ -511,6 +518,7 @@
  seq_abomination_army: "$ORD$ $abomination_army$ Army"
 
  mindwarden_army: "Assault Wardens"
+ mindwarden_army_desc: "These specialized units have received extensive training in anti-psionic techniques and technologies, making them powerful opponents against mind-invading targets."
  NAME_Mindwarden_Army: "$mindwarden_army$"
 
 #==========================
@@ -588,6 +596,9 @@
  building_materiality_engine_plural: "Materiality Engines"
  building_materiality_engine_desc: "The psionic energy of the Shroud adjoins every point in the physical galaxy. The $building_materiality_engine$ exploits this interface, making it possible to reach across dimensions and materialize valuable components and resources."
  building_materiality_engine_tt: "Initiates a §YSpecial Project§! to derive psionic ['concept_component'] technology from the §HShroud§!. When this project is complete, it increases the output of this building and the amount of §H$building_materiality_engine_plural$§! that can be built."
+
+ biology_unit_is_observator_tt: "$t$£job_calculator_biologist£ $job_calculator_biologist_plural$ are converted into $job_observator_drone_plural_with_icon$"
+ physics_unit_is_extradimensional_research_unit_tt: "$t$£job_calculator_physicist£ $job_calculator_physicist_plural$ are converted into £job_extradimensional_research_unit£ $job_extradimensional_research_unit_plural$"
 
 #==========================
 # Callings
@@ -698,9 +709,9 @@
 
  civic_entropy_drinkers_corporate: "Corporate Vampires"
  civic_entropy_drinkers_corporate_desc: "$civic_ap_blockade_tt$\n\nThis $gov_megacorporation$ drains valuable metabolism from idle population via parasitic psychic connections. Once properly collected, these energies can be redistributed to senior management."
- civic_entropy_drinkers_corporate_effects: "Enables the following §H$EDICTS$§!:$TABBED_NEW_LINE$- ['edict:energy_drain',$edict_energy_drain$]$TABBED_NEW_LINE$- ['edict:sanguine_council',$edict_sanguine_council$]$TABBED_NEW_LINE$- ['edict:psychic_feast',$edict_psychic_feast$]\nCan construct: £building£['building:building_lifecrypt_corporate_1'].\nLeaders start with the ['concept_leader_trait_psionic'] trait."
+ civic_entropy_drinkers_corporate_effects: "Enables the following §H$EDICTS$§!:$TABBED_NEW_LINE$- ['edict:energy_drain',$edict_energy_drain$]$TABBED_NEW_LINE$- ['edict:sanguine_council',$edict_sanguine_council$]$TABBED_NEW_LINE$- ['edict:psychic_feast',$edict_psychic_feast$]\nCan construct: £building£['building:building_lifecrypt_corporate_1'].\nLeaders start with the ['concept_leader_trait_psionic'] trait.\nThe £building£ §Y$building_executive_retreat$§! $megacorp_civic_branch_office_building_effect$"
 
- # Superstitious Beliefs
+# Superstitious Beliefs
  civic_tooltip_not_superstitious_beliefs: "Does NOT have a ['concept_superstitious_beliefs_civics'] Civic"
 
  civic_superstitious_beliefs_desc_common: "Proper ceremonies must be performed before every major decision to harmonize with the unseen forces that shape their destiny."
@@ -722,7 +733,7 @@
  civic_corporate_superstitious_beliefs_desc: "This corporation claims to have discovered a ritualistic mechanism to predict the future, leveraging esoteric pattern recognition and cyclical anomaly analysis. To maximize outcomes, future gains and losses are weighed alongside the KPIs of ideal celestial alignments."
  civic_corporate_superstitious_beliefs_effects: "Replaces:\n$t$- £job_priest£ $job_priest_plural$ with £job_superstitious_beliefs_priest_corporate£ $job_superstitious_beliefs_priest_corporate_plural$\n$t$- £job_high_priest£ $job_high_priest_plural$ with £job_superstitious_beliefs_high_priest_corporate£ $job_superstitious_beliefs_high_priest_corporate_plural$\n$civic_superstitious_beliefs_common_effects$"
 
- # Twisted Experimenters
+# Twisted Experimenters
  civic_twisted_experimenters: "Experimental Sentencing"
  civic_twisted_experimenters_desc: "Judicial processing and thirst for knowledge share a single solution in this society. Working in utmost secrecy, researchers conduct harsh experiments on test subjects drawn from the criminal underworld. The occasional fatality is the cost of progress."
  civic_twisted_experimenters_effects: "Starts with ['concept_experimental_testing'] situation, which grants technology insight upon completion.\nCan construct and starts with: £building£['building:building_experimentation_chambers_1'].\nAll non-Machine slaves get access to the ['concept_slave_orderly'] Slave Job.\nAccess to ['concept_slave_army']: §Y$abomination_army$§!"
@@ -747,12 +758,15 @@
  experimenters_ermerging_crime_4: "Environments like this are a rich source of test subjects for our [GetExperimentalEngineerPlural]."
 
 # Secret Societies
+ civic_tooltip_not_secret_societies: "Does NOT have a ['concept_secret_societies_civics'] Civic"
+
  civic_secret_societies: "Secret Societies"
  civic_secret_societies_desc: "A cabal of elite and secretive figures weave complicated political threads behind the scenes of this society, entwining internal affairs with those of other worlds."
  civic_secret_societies_effects: "Clandestine ['concept_ss_factions'] will emerge after contacting other empires.\nStarts with the ability to conduct ['concept_proxy_wars'].\n$job_bureaucrat_plural_with_icon$ will produce $i_unity$ per active and successful §YProxy War§!.\nStarts in ['concept_first_contact'] with two neighboring empires.\n$INFILTRATION_LEVEL$ gained on empires after §Y$first_contact$§!: §G+$@secret_society_infiltration_gain|0$§!"
 
  civic_secret_societies_corporate: "Influential Cartel"
  civic_secret_societies_corporate_desc: "This $gov_megacorporation$'s most powerful offices conduct extraplanetary operations on a strictly need-to-know basis. If you need to ask, you don't need to know."
+ civic_secret_societies_corporate_effects: "Clandestine ['concept_ss_factions'] will emerge after contacting other empires.\nStarts with the ability to conduct ['concept_proxy_wars'].\n$job_bureaucrat_plural_with_icon$ will produce $i_unity$ per active and successful §YProxy War§!.\nStarts in ['concept_first_contact'] with two neighboring empires.\n$INFILTRATION_LEVEL$ gained on empires after §Y$first_contact$§!: §G+$@secret_society_infiltration_gain|0$§!\nThe £building£ §Y$building_corporate_embassy$§! $megacorp_civic_branch_office_building_effect$"
 
  shroud.5012.title: "Secret Societies Emerge"
  shroud.5012.desc: "Our suspicions have been justified. The [first_neighbor.GetAdjective] and [second_neighbor.GetAdjective] civilizations have confirmed they have been contacted through unofficial channels before more formal communications began.\n\nThese §HFactions§! now emerge from our own shadows and acknowledge their existence. Known as §H$pft_the_curtain$§!, §H$pft_the_masquerade$§! and §H$pft_the_grand_dance$§!, these once-secret organizations are now openly requesting formal dialogue with us.\n\nWhat they want, and how they know what they know, may never truly be understood by us. It may be in our best interest to operate within their demands."
@@ -763,7 +777,7 @@
  shroud.5013.desc: "There are those among us who operate behind the curtains of diplomacy. Now we suspect their reach is not limited to our homeworld.\n\nDespite only recently venturing into the stars, we have entered communications with other life forms with remarkable ease. This seems like more than coincidence. We suspect that these interstellar relationships originate behind the closed doors of several secret §HFactions§! that have deeply embedded themselves within our society.\n\nPerhaps once we know more about these beings, those within our shadows will reveal themselves."
  shroud.5013.a: "Are they with us, or against us?"
 
- # Chosen
+# Chosen
  civic_ap_blockade_tt: "§RWARNING: Blocks all Ascension Paths except for ['concept_psionic_ascension'].§!"
  civic_chosen: "Chosen"
  civic_chosen_desc: "$civic_ap_blockade_tt$\n\nInfluenced by the Shroud in their early history, this society is bound to a pact of patronage with a powerful entity."
@@ -778,6 +792,7 @@
 
  civic_corporate_chosen: "Chosen Executives"
  civic_corporate_chosen_desc: "$civic_ap_blockade_tt$\n\nSince their founding, this corporation has owed its success to a mysterious Shroud entity, and has been operating under a pact of patronage ever since."
+ civic_corporate_chosen_effects: "$civic_chosen_effects$\n- The £building£ §Y$building_psionic_offices$§! $megacorp_civic_branch_office_building_effect$"
 
  civic_tooltip_not_chosen: "Does NOT have a ['concept_chosen_civics'] Civic"
  concept_chosen_civics: "Chosen"
@@ -822,12 +837,14 @@
 # Tankbound
  civic_tankbound: "Tankbound"
  civic_tankbound_desc: "This society's members live out their existences suspended in vats of specialized bio-fluids. As such, they are heavily reliant on assistive equipment and incapable of engaging directly in physical work."
- civic_tankbound_effects: "Adds the ['trait:trait_tankbound'] trait.\nRural Districts have their Worker Jobs fully §YAutomated§!.\n['concept_colonist', $job_colonist$] Jobs are $SPECIALISTS$.\nStart with insight on ['technology:tech_assembly_pattern', £engineering£$tech_assembly_pattern$] Technology.\n£district£ §YUrban§! Districts have additional §Y$job_production_overseer_with_icon$§! jobs.\n\n§EModifiers:§!$TABBED_NEW_LINE$- $mod_planet_jobs_upkeep_mult$: $@civic_tankbound_job_upkeep|0=-%$$TABBED_NEW_LINE$- $MOD_BONUS_AUTOMATED_WORKFORCE_MULT$: $@civic_tankbound_efficiency_mult|0=+%$$TABBED_NEW_LINE$- Rural Districts Energy Upkeep: $@civic_tankbound_district_upkeep|0=-%$"
+ civic_tankbound_effects_base: "Adds the ['trait:trait_tankbound'] trait.\nRural Districts have their Worker Jobs fully §YAutomated§!.\n['concept_colonist', $job_colonist$] Jobs are $SPECIALISTS$.\nStart with insight on ['technology:tech_assembly_pattern', £engineering£$tech_assembly_pattern$] Technology.\n£district£ §YUrban§! Districts have additional §Y$job_production_overseer_with_icon$§! jobs."
+ civic_tankbound_effects: "$civic_tankbound_effects_base$$civic_tankbound_modifiers$"
+ civic_tankbound_modifiers: "\n\n§EModifiers:§!$TABBED_NEW_LINE$- $mod_planet_jobs_upkeep_mult$: $@civic_tankbound_job_upkeep|0=-%$$TABBED_NEW_LINE$- $MOD_BONUS_AUTOMATED_WORKFORCE_MULT$: $@civic_tankbound_efficiency_mult|0=+%$$TABBED_NEW_LINE$- Rural Districts Energy Upkeep: $@civic_tankbound_district_upkeep|0=-%$"
  civic_tankbound_negative_effects: "$t$- Start with 2K fewer £pop£ Pops than normal"
 
  civic_tankbound_corporate: "Corporate Thinktank"
  civic_tankbound_corporate_desc: "This society universally adopted an experimental product in the form of specialized habitation vats. As a result, they are heavily reliant on assistive equipment and incapable of engaging directly in physical work."
- civic_tankbound_corporate_effects: "$civic_tankbound_effects$"
+ civic_tankbound_corporate_effects: "$civic_tankbound_effects_base$\nThe £building£ §Y$building_virtual_entertainment_studios$§! $megacorp_civic_branch_office_building_effect$$civic_tankbound_modifiers$"
 
  tankbound_efficiency_malus: "$civic_tankbound$"
  tankbound_corporate_efficiency_malus: "$civic_tankbound_corporate$"
@@ -2089,8 +2106,6 @@
  job_production_overseer_desc: "Production Overseers work to eliminate inefficiencies and maximize the outputs from complex manufacturing processes."
  job_production_overseer_effect_desc: "$job_production_overseer_with_icon$ turn $i_consumer_goods$ into $i_unity$ and $i_amenities$"
  job_production_overseer_with_icon: "£job_production_overseer£ $job_production_overseer_plural$"
- planet_production_overseer_worker: "Workers"
- mod_planet_production_overseer_worker_produces_mult: "Worker production"
  mod_job_production_overseer_add: "$job_production_overseer$ Jobs"
 
 # Specialist Colonist
@@ -2106,7 +2121,6 @@
  job_extradimensional_research_unit: "Extra-dimensional Research Unit"
  job_extradimensional_research_unit_plural: "Extra-dimensional Research Units"
  job_extradimensional_research_unit_desc: "Dedicated research units focused on studies into the dimensions of thought."
- mod_job_extradimensional_research_unit_add: "$job_extradimensional_research_unit$ Jobs"
 
  covenant_eater_telepath_tt: "£mod_country_naval_cap_add£ $MOD_COUNTRY_NAVAL_CAP_ADD$ per $pop_group_unit$ $job_telepath_swap_plural_with_icon$: $@telepath_eater_naval_cap|0=+$"
  covenant_cradle_telepath_tt: "[GetCradleCovenantTelepathEffect]"
@@ -2166,7 +2180,7 @@
  MESSAGE_PSIONIC_AURA_MAX_INTENSITY_the_eater_of_worlds_DESC: "$MESSAGE_PSIONIC_AURA_MAX_INTENSITY_DESC$\n- Corvettes manifested in $SYSTEM$: §Y10§!\n- $aura_intensity_lost_level_tt$"
  MESSAGE_PSIONIC_AURA_MAX_INTENSITY_the_cradle_of_souls_DESC: "$MESSAGE_PSIONIC_AURA_MAX_INTENSITY_DESC$\n- Defense Platforms in $STARBASE$: §G+5§!\n- $aura_intensity_lost_level_tt$"
  MESSAGE_PSIONIC_AURA_MAX_INTENSITY_the_instrument_of_desire_DESC: "$MESSAGE_PSIONIC_AURA_MAX_INTENSITY_DESC$\n- Planetary Ascensions available in $SYSTEM$: §G$VALUE$§!\n- $aura_intensity_lost_level_tt$"
- MESSAGE_PSIONIC_AURA_MAX_INTENSITY_the_composer_of_strands_DESC: "$MESSAGE_PSIONIC_AURA_MAX_INTENSITY_DESC$\n- Shrouded Vegetation blockers added to $SYSTEM$: §Y$VALUE$§!\n- $aura_intensity_lost_level_tt$"
+ MESSAGE_PSIONIC_AURA_MAX_INTENSITY_the_composer_of_strands_DESC: "$MESSAGE_PSIONIC_AURA_MAX_INTENSITY_DESC$\n- $d_shroudstone$ blockers added to $SYSTEM$: §Y$VALUE$§!\n- $aura_intensity_lost_level_tt$"
 
  MESSAGE_AURA_INTENSIFICATION_INSIGHT_TITLE: "Aura Intensification Breakthrough"
  MESSAGE_AURA_INTENSIFICATION_INSIGHT_DESC: "We have gathered enough attunement in the §HShroud§! to gain insight on §H$tech_aura_intensification$§! technology. This will allow our §H$PSIONIC_AURA$§! to spread into other systems."
@@ -2694,8 +2708,8 @@
  po_establish_migration_treaty: "Establish a §H$PACT_migration_treaty$§!."
  po_establish_migration_treaty_plural: "Establish §HMigration Treaties§!: ($INDEX$/$MAX$)"
 
- po_establish_trade_agreement: "Establish a §HTrade Deal§!."
- po_establish_trade_agreement_plural: "Establish §HTrade Deals§!: ($INDEX$/$MAX$)"
+ po_establish_trade_agreement: "Establish a §HCommercial Pact§!."
+ po_establish_trade_agreement_plural: "Establish §HCommercial Pacts§!: ($INDEX$/$MAX$)"
 
  po_form_or_upgrade_federation: "Form or upgrade a £federation£ Federation."
  po_form_or_upgrade_federation_plural: "Form or upgrade £federation£ Federations: ($INDEX$/$MAX$)"
@@ -3419,7 +3433,7 @@
  PSIONIC_AURA_INTENSITY_TOTAL_TT: "The total accumulated §HIntensity§! of our $PSIONIC_AURA$. When an aura reaches maximum §HIntensity§! in a system, it will spread across hyperlanes where possible."
  TECH_PSIONIC_AURA_TT: "§R$PSIONIC_AURA_UNLOCK_TT$§!"
  TECH_AURA_INTENSIFICATION_TT: "§REstablish a Covenant to unlock ['technology:tech_aura_intensification'] Technology.§!"
- AURA_INTENSITY_INCREASE_TT: "$MOD_PSIONIC_AURA_INTENSITY_ADD$ is increased by £pop£ §H$trait_psionic$ $POPS$§! and their §H$HAPPINESS$§!, £job_priest£ §H$job_priest_plural$§!, £leader£ §H$trait_psionic$ $governor_plural$§!, and §HShrouded Worlds§!."
+ AURA_INTENSITY_INCREASE_TT: "$MOD_PSIONIC_AURA_INTENSITY_ADD$ is increased by £pop£ §H$trait_psionic$ $POPS$§!, §H$HAPPINESS$§!, £job_priest£ §H$job_priest_plural$§!, £job_telepath£ §H$job_telepath_plural$§!, £leader£ §H$trait_psionic$ $governor_plural$§!, and §HShrouded Worlds§!."
  AURA_INTENSITY_INCREASE_EOTC_TT: "The Intensity Gain of the §R$end_aura$§! is also increased by the presence of military fleets."
 
  AURA_EFFECTS_DESC: "A §H$PSIONIC_AURA$§! affects all fleets and colonies within the system it occupies."
@@ -4544,7 +4558,7 @@
  ACCORD_INTENSIFICATION_desc: "Nothing can stifle the inevitability of the $end_aura$. With great surge of will, the path to oblivion is laid open for all!"
  ACCORD_INTENSIFICATION_TT: "Increase §H$PSIONIC_AURA$§! Intensity gains by §G+50§! and disable all §H$SHROUD_SEAL_PLURAL$§! in the galaxy for 3 years."
  ACCORD_INTENSIFICATION_TRIGGER: "£trigger_no£ §R§Y$situation_end_of_the_cycle$§! §HSituation§! $stage_4$ has been reached§!"
- ACCORD_INTENSIFICATION_TRIGGER_ONCE: "§RThis $ACTIVE_ACCORD$ has already been activated and cannot be repeated.§!\n\n"
+ ACCORD_INTENSIFICATION_TRIGGER_COOLDOWN: "§RThis $ACTIVE_ACCORD$ can't be reactivated until §Y[this.intensification_cooldown_timer]§!§!.\n\n"
  ACCORD_ANNIHILATION: "Annihilation"
  ACCORD_ANNIHILATION_desc: "Oblivion can never be sated, but its maw lies ever open."
  ACCORD_ANNIHILATION_TT: "§Y$situation_end_of_the_cycle$§! §HSituation§! Progress: §G-60§!"
@@ -4937,6 +4951,8 @@
  START_SCREEN_MINDWARDENS: "The records of our ancestors tell of a psychic plague that once devastated [GetHomeWorldName]. Otherworldly forces attacked their minds, and destructive radiation was diffused throughout the atmosphere - all encouraged by psionic practitioners from within [GetSpeciesAdj] society.\n\nIn response to these threats, our ancestors built the $building_ancient_ward_1$ to protect against mind-invading forces. With only routine maintenance, this venerable structure has proven strong enough to defend all [GetSpeciesNamePlural] from the threat of psionic influence, and its core technology has informed the development of other defenses of the mind.\n\nAs our civilization prepares to voyage beyond the orbit of [capital_scope.System.GetName], we are faced with the unknown. What psychic threats might lurk beyond our ken?"
  mindwarden_system_init_NAME: "$origin_mindwardens$"
  mindwarden_system_init_DESC: "This will always be the starting system when using the $origin_mindwardens$ Origin.\n\n$system_initializer_DESC$"
+ mindwarden_sol_system_init_NAME: "$origin_mindwardens$ (Sol)"
+ mindwarden_sol_system_init_DESC: "Optional starting system for $origin_mindwardens$ Origin, using Sol as a base.\n\n$system_initializer_DESC$"
 
  building_ancient_ward_1: "Ancient Ward"
  building_ancient_ward_1_desc: "This ancestral structure uses an array of psionic attenuators to insulate the entire planet against mind-invading forces."

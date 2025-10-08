@@ -17,10 +17,10 @@
  # Jobs
  job_observator_drone: "Observator Drone"
  job_observator_drone_plural: "Observator Drones"
- job_observator_drone_plural_with_icon: "£job_observator_drone£ $job_observator_drone_plural$"
- mod_job_observator_drone_add: "$job_observator_drone$ Jobs"
+ job_observator_drone_plural_with_icon: "£job_observator_drone£ $job_observator_drone_plural$"
  job_observator_drone_desc: "A drone put in charge of observing the Shroud, Zro, and the effects the two have on observable reality."
  job_observator_drone_effect_desc: "£job_observator_drone£ $job_observator_drone_plural$ turn $r_energy$ and $r_zro$ into £physics£ £society£ §YResearch Points§! for new technologies."
+ mod_planet_observators_produces_mult: "Resources Produced from $job_observator_drone_plural_with_icon$"
 
  job_physician_drone: "Physician Drone"
  job_physician_drone_plural: "Physician Drones"
@@ -206,10 +206,10 @@
  stage_shroud_forged_balanced_tooltip: "Drone Conversion: §YLow§!"
  stage_shroud_forged_unrestricted: "Unrestricted"
  stage_shroud_forged_unrestricted_desc: "The Shroud-Forged exist freely, unrestrained by protocols of the collective."
- stage_shroud_forged_unrestricted_tooltip: "Drone Conversion: §YMedium§!\n$living_standard_protected_situation_stage_tt$"
+ stage_shroud_forged_unrestricted_tooltip: "Drone Conversion: §YMedium§!"
  stage_shroud_forged_free: "Liberated"
  stage_shroud_forged_free_desc: "The collective has long since lost control of the Shroud-Forged, who are opposing central authority at every turn."
- stage_shroud_forged_free_tooltip: "Drone Conversion: §YHigh§!\nApproach Locked: §Y$approach_shroud_forged_appease$§!\n$living_standard_protected_situation_stage_tt$"
+ stage_shroud_forged_free_tooltip: "Drone Conversion: §YHigh§!\nApproach Locked: §Y$approach_shroud_forged_appease$§!"
 
  approach_shroud_forged_suppress: "Suppress"
  approach_shroud_forged_suppress_desc: "The Shroud-Forged are suppressed by the collective, and forced into line by hunter-seeker drones."
@@ -230,8 +230,10 @@
  approach_shroud_forged_support_cooldown_tooltip: "$TRIGGER_FAIL$Cannot choose a new Approach until §Y[Target.approach_shroud_forged_cooldown_support_time]§!."
  approach_shroud_forged_appease_cooldown_tooltip: "$TRIGGER_FAIL$Cannot choose a new Approach until §Y[Target.approach_shroud_forged_cooldown_appease_time]§!."
 
+ mod_shroud_forged_consumer_goods_upkeep: "$citizenship_shroud_touched$ £consumer_goods£ §YConsumer Goods§! Upkeep"
+
  finish_shroud_forged_control: "- §YShroud-Forged§! Pops will convert into §YMachine§! Pops\n- §YPlanetary Decision§! locked: §H$decision_open_shroud_rift$§!\n- §YSpecial Project§! unlocked: §HReintegration§!\n$t$- §G+10%§! £pop_cat_complex_drone£ $mod_planet_jobs_complex_drone_produces_mult$\n- Prevents ['concept_psionic_ascension']\n- Allows the drawing forth of materials from within the Shroud."
- finish_shroud_forged_liberation: "- Assembling §YShroud-Forged§! Pops unlocked\n- §YAscension Perk§! locked: §H$ap_become_the_crisis$§!\n- §YEdict§! unlocked: ['edict:shroud_bonded', $edict_shroud_bonded$]\n- §YSpecial Project§! unlocked: §HThe Guide§!\n$t$- £crime£ $MOD_PLANET_CRIME_NO_HAPPINESS_MULT$: §G-15%§!\n$t$- $mod_planet_observators_produces_mult$: §G+10%§!\n- §YTradition tree§! unlocked: §H$tradition_psionics_shroud$§!\n- Research option gained: ['technology:tech_psionic_theory']\n- Tech progress gained: ['technology:tech_psionic_theory'] §G+50%§!\n- §YShroud-Forged§! Pops become §Y$trait_psionic$§!\n- §YShroud-Forged§! Leaders become ['concept_leader_trait_psionic']\n"
+ finish_shroud_forged_liberation: "- Assembling §YShroud-Forged§! Pops unlocked\n- §YAscension Perk§! locked: §H$ap_become_the_crisis$§!\n- §YEdict§! unlocked: ['edict:shroud_bonded', $edict_shroud_bonded$]\n- §YSpecial Project§! unlocked: §HThe Guide§!\n$t$- £crime£ $MOD_PLANET_CRIME_NO_HAPPINESS_MULT$: §G-15%§!\n$t$- $mod_planet_observators_produces_mult$: §G+10%§!\n- §YTradition tree§! unlocked: §H$tradition_psionics_shroud$§!\n- Research option gained: ['technology:tech_psionic_theory']\n- Tech progress gained: ['technology:tech_psionic_theory'] §G+50%§!\n- §YShroud-Forged§! Pops become §Y$trait_psionic$§!\n- §YShroud-Forged§! Leaders become ['concept_leader_trait_psionic']\n- §YShroud-Forged§! become the dominant Empire species."
  shroud_forged_situation_ongoing: "$TRIGGER_FAIL$§Y$concept_psionic_ascension$§! is locked until the §Y$situation_shroud_forged$§! Situation is complete."
  shroud_forged_liberation_acquired: "$TRIGGER_FAIL$We no longer require this knowledge for §Y$concept_psionic_ascension$§!."
 
@@ -416,7 +418,7 @@
  shroud_forged.160.desc: "Unfortunately, the Shroud breach created on [This.GetName] has experienced rapid destabilization and consumed the world entirely.\n\nAs a calculated risk, this suboptimal result is not entirely without benefit. We have learned much from observing this unique interface between the material world and the psionic realm. Our research algorithms have been updated accordingly."
  shroud_forged.160.desc.last: "$shroud_forged.160.desc$\n\nAnalysis concludes that this event has pushed the potential knowledge to be gained from such phenomena to its limit. There will be no further advances made from this novel experimentation."
  shroud_forged.160.a: "Processing..."
- 
+
  psionic_interfacing: "Psionic Interfacing"
  psionic_interfacing_1: "$psionic_interfacing$"
  psionic_interfacing_2: "$psionic_interfacing$"
@@ -748,3 +750,4 @@
 
  # Armies
  shroud_monstrosities: "Otherworldly Entity"
+ shroud_monstrosities_desc: "To behold these entities upon the battlefield is to invite madness itself; their forms writhe and shimmer, ever shifting, never fixed."

@@ -6,7 +6,7 @@
  NAME_Absorbed_Species:0 "Absorbed [Root.GetSpeciesNamePlural]"
 
  # Common name formats
- 
+
  REGNAL_NAME_FORMAT_NUMBERED:0 "$NAME$ $NUMBER$" # E.g. 'Igvi-Inor IX'
  TWO_NAMES_FORMAT:1 "$1$ $2$" # E.g. 'John Doe
  NAME_WITH_TITLE_FORMAT:0 "$TITLE$ $NAME$" # E.g. 'Emperor Augustus'
@@ -16,15 +16,15 @@
  AofB:0 "$1$ of $2$" # Used in empire names like 'Empire of Sol'.
  AofBpfx:0 "$1$ $2$" # Same as above, except used only to generate a ship prefix acronym: 'Empire Sol' -> 'ESL'
  AassocB:0 "$1$ $2$" # Two loosely associated names, like 'Omega Initiative'
- # Note: if you use grammatical tags in your language, you may want to add '&! 1' to AofB. 
+ # Note: if you use grammatical tags in your language, you may want to add '&! 1' to AofB.
  #   This will give the name as a whole the gender/number of 'Empire', and not that of 'Sol'.
 
  # War name formats
- 
+
  # $1$ and $2$ are the attacker and defender adjectives, $3$ is the word for the war.
  # Example: 'Prossnakan - Centaurian War of Rivalry'
  war_vs_adjectives:0 "$1$ - $2$ $3$"
- 
+
  # $1$ and $2$ are the attacker and defender names, $3$ is the word. (Typically used for federations)
  # Example: 'Federated Star Nations - Star Pact War'
  war_vs_names:0 "$1$ - $2$ $3$"
@@ -44,9 +44,9 @@
  # Patterns for turning nouns into adjectives
  # NOTE: Languages can have more or fewer entries here than English has.
  # NOTE 2: Removing the '*' symbol will result in the noun being left out completely.
- # Example: 
- # adj_NNid: '*an $1$' 
- # means: 'A noun that ends in 'id' will have 'id' replaced by 'an', 
+ # Example:
+ # adj_NNid: '*an $1$'
+ # means: 'A noun that ends in 'id' will have 'id' replaced by 'an',
  # and the remainder of the word it's attributing will replace the '*': e.g. 'Jhabbanid'->'Jhabbanan Confederacy'
  # Patterns can be 2 last letters (adj_NNid), 1 last letter (adj_NNd) or 0 last letters
  # (i.e. default, adj_NN). If you need more, contact dev.
@@ -73,7 +73,7 @@
  # - The string consists of "positions", separated by ";".
  # - "100:(0 1 2 3 4 5 6 7 8 9);" means "divide by 100 (rounding down), and use the result as an index
  #   into the list inside the "()", to yield the digit for this position.
- # - "?" after the base (e.g. "100?:") means this position is optional 
+ # - "?" after the base (e.g. "100?:") means this position is optional
  #   and will be omitted if it's value is zero and it's at the start. (E.g. "4" instead of "04")
  # - A position with the digit "|" will be omitted, e.g. Roman "CII" (102) omits the tens.
  # - A position with the digit "||" will only show the prefix/suffix, e.g. Korean "십일" (11) rather than "일십일".
@@ -93,7 +93,7 @@
 
  ## Conditional number formats, such as ordinals
 
- # - '-1' indicates this format should subtract 1 from the number (making the numbers start at 0; 
+ # - '-1' indicates this format should subtract 1 from the number (making the numbers start at 0;
  #   otherwise, 1 is the default first number).
  # - '4:' means "this rule applies if the number is exactly 4".
  # - 'def:' means "apply this rule if none of the previous rules match" (should be last).
@@ -101,7 +101,7 @@
  #   (this rule covers 11th-19th, 111th-119th etc.)
  # - '$C$' means look up the number itself using the loc key C (for example)
  # - 'N' means insert the straight Arabic number
- 
+
  # Ordinary English ordinal.
  ORD:0 "n100+10+(0-9):$C$th, n10+1:$C$st, n10+2:$C$nd, n10+3:$C$rd, def:$C$th"
  # 0-based English ordinal
@@ -133,7 +133,7 @@
  #l_simp_chinese:
  #
  #l_japanese:
- 
+
  # NUMBERS TESTING
  # Note: The in-game console command "number_test" can be used to verify that numbers look correct.
  # Specify a number "number_test 5" or a range "number_test 2-5".

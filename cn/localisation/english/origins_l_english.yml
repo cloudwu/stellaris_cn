@@ -16,11 +16,11 @@
 
  # Jobs
  job_observator_drone: "观测子个体"
- job_observator_drone_plural: "观测子个体"
- job_observator_drone_plural_with_icon: "£job_observator_drone£$job_observator_drone_plural$"
+ job_observator_drone_plural_with_icon: "£job_observator_drone£ $job_observator_drone_plural$"
  mod_job_observator_drone_add: "$job_observator_drone$岗位"
  job_observator_drone_desc: "负责观测天幕、卓尘以及它们对可观测现实产生的影响的子个体。"
  job_observator_drone_effect_desc: "£job_observator_drone£$job_observator_drone_plural$将$r_energy$和$r_zro$转化为£physics£ £society£§Y研究点数§!以解锁新科技。"
+ mod_planet_observators_produces_mult: "来自 $job_observator_drone_plural_with_icon$ 的资源产出"
 
  job_physician_drone: "医生子个体"
  job_physician_drone_plural: "医生子个体"
@@ -206,10 +206,10 @@
  stage_shroud_forged_balanced_tooltip: "子个体转化：§Y低§!"
  stage_shroud_forged_unrestricted: "无限制"
  stage_shroud_forged_unrestricted_desc: "虚铸者自由存在，不受集体的协议限制。"
- stage_shroud_forged_unrestricted_tooltip: "子个体转化：§Y中§!\n$living_standard_protected_situation_stage_tt$"
+ stage_shroud_forged_unrestricted_tooltip: "子个体转化：§Y中§!"
  stage_shroud_forged_free: "解放"
  stage_shroud_forged_free_desc: "集体已经完全失去了对虚铸者的控制，他们在一切地方反对着权威。"
- stage_shroud_forged_free_tooltip: "子个体转化：§Y高§!\n解锁应对方案：§Y$approach_shroud_forged_appease$§!\n$living_standard_protected_situation_stage_tt$"
+ stage_shroud_forged_free_tooltip: "子个体转化：§Y高§!\n解锁应对方案：§Y$approach_shroud_forged_appease$§!"
 
  approach_shroud_forged_suppress: "镇压"
  approach_shroud_forged_suppress_desc: "集体镇压虚铸者，由猎歼无人机强迫其遵守规矩。"
@@ -230,8 +230,10 @@
  approach_shroud_forged_support_cooldown_tooltip: "$TRIGGER_FAIL$在§Y[Target.approach_shroud_forged_cooldown_support_time]§!之前无法另选应对方案。"
  approach_shroud_forged_appease_cooldown_tooltip: "$TRIGGER_FAIL$在§Y[Target.approach_shroud_forged_cooldown_appease_time]§!之前无法另选应对方案。"
 
+ mod_shroud_forged_consumer_goods_upkeep: "$citizenship_shroud_touched$£consumer_goods£§Y消费品§!维护费"
+
  finish_shroud_forged_control: "—§Y虚铸者§!将被转化为§Y机械§!人口\n—解锁§Y行星决议§!：§H$decision_open_shroud_rift$§!\n—解锁§Y特殊项目§!：§H重同化§!\n$t$—§G+10%§!£pop_cat_complex_drone£$mod_planet_jobs_complex_drone_produces_mult$\n—避免['concept_psionic_ascension']\n—可以从天幕内抽出材料。"
- finish_shroud_forged_liberation: "—解锁§Y虚铸者§!人口组装\n—解锁§Y飞升特典§!：§H$ap_become_the_crisis$§!\n—解锁§Y法令§!：['edict:shroud_bonded', $edict_shroud_bonded$]\n—解锁§Y特殊项目§!：§H指引§!\n$t$—£crime£$MOD_PLANET_CRIME_NO_HAPPINESS_MULT$：§G-15%§!\n$t$—$mod_planet_observators_produces_mult$：§G+10%§!\n—解锁§Y传统树§!：§H$tradition_psionics_shroud$§!\n—获得研究选项：['technology:tech_psionic_theory']\n—获得科技进展：['technology:tech_psionic_theory']§G+50%§!\n—§Y虚铸者§!人口获得§Y$trait_psionic$§!\n—§Y虚铸者§!领袖获得['concept_leader_trait_psionic']\n"
+ finish_shroud_forged_liberation: "—解锁§Y虚铸者§!人口组装\n—解锁§Y飞升特典§!：§H$ap_become_the_crisis$§!\n—解锁§Y法令§!：['edict:shroud_bonded', $edict_shroud_bonded$]\n—解锁§Y特殊项目§!：§H指引§!\n$t$—£crime£$MOD_PLANET_CRIME_NO_HAPPINESS_MULT$：§G-15%§!\n$t$—$mod_planet_observators_produces_mult$：§G+10%§!\n—解锁§Y传统树§!：§H$tradition_psionics_shroud$§!\n—获得研究选项：['technology:tech_psionic_theory']\n—获得科技进展：['technology:tech_psionic_theory']§G+50%§!\n—§Y虚铸者§!人口获得§Y$trait_psionic$§!\n—§Y虚铸者§!领袖获得['concept_leader_trait_psionic']\n—§Y虚铸者§!成为帝国的主要物种。"
  shroud_forged_situation_ongoing: "$TRIGGER_FAIL$在§Y$situation_shroud_forged$§!局势完成之前无法选用§Y$concept_psionic_ascension$§!"
  shroud_forged_liberation_acquired: "$TRIGGER_FAIL$我们在§Y$concept_psionic_ascension$§!上不再需要该知识。"
 
@@ -748,3 +750,4 @@
 
  # Armies
  shroud_monstrosities: "异世之物"
+ shroud_monstrosities_desc: "在战场上直视这些实体等同于直面疯狂本身；它们的形体扭曲闪烁，永不停歇，无法固定。"

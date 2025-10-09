@@ -60,7 +60,7 @@
  concept_robot_assembly_plant_desc: "—[roboticist.GetIcon]['concept_roboticist', roboticist.GetName]岗位：§G+100§!\n\n§L$building_robot_assembly_plant_desc$§!"
 
  concept_powered_exoskeletons: "$tech_powered_exoskeletons$"
- concept_powered_exoskeletons_desc: "—$MOD_ARMY_DAMAGE_MULT$：§G+5%§!\n—劳工人口资源产出：§G+5%§!\n\n§L$tech_powered_exoskeletons_desc$§!"
+ concept_powered_exoskeletons_desc: "—$MOD_ARMY_DAMAGE_MULT$：§G+5%§!\n—劳工岗位效率：§G+5%§!\n\n§L$tech_powered_exoskeletons_desc$§!"
 
  concept_robotic_workers: "$tech_robotic_workers$"
  concept_robotic_workers_desc: "- $i_unlocks_building$ $building_robot_assembly_plant$\n- $i_unlocks_feature$ $feature_robots$\n\n§L$tech_robotic_workers_desc$§!"
@@ -79,17 +79,17 @@
  concept_pc_gaia_desc: "—基础宜居性：§Y100%§!\n—$mod_planet_jobs_produces_mult$：§G+10%§!\n—$MOD_BIOLOGICAL_POP_HAPPINESS$：§G+10%§!\n—$MOD_LITHOID_POP_HAPPINESS$：§G+10%§!\n—$MOD_PLANET_RESETTLEMENT_UNEMPLOYED_DESTINATION_MULT$：§G+50%§!\n\n§L$pc_gaia_desc$§!"
 
  concept_gaia_preference: "$trait_pc_gaia_preference$"
- concept_gaia_preference_desc: "—盖娅星球宜居性：§G+100%§!\n\n§L$trait_pc_gaia_preference_desc$§!"
+ concept_gaia_preference_desc: "—盖娅世界宜居性：§G+100%§!\n\n§L$trait_pc_gaia_preference_desc$§!"
 
 # Post-Apocalyptic
  concept_pc_nuked: "$pc_nuked$"
  concept_pc_nuked_desc: "—基础宜居性：§Y0%§!\n\n§L$pc_nuked_desc$§!"
 
  concept_survivor: "$trait_survivor$"
- concept_survivor_desc: "—死寂星球宜居性：§G+70%§!\n—领袖预期寿命：§G+10§!年\n\n§L$trait_survivor_desc$§!"
+ concept_survivor_desc: "—废土世界宜居性：§G+70%§!\n—领袖预期寿命：§G+10§!年\n\n§L$trait_survivor_desc$§!"
 
  concept_robot_survivor: "$trait_robot_survivor$"
- concept_robot_survivor_desc: "—死寂星球宜居性：§G+70%§!\n—领袖寿命：§G+10§!年\n\n§L$trait_robot_survivor_desc$§!"
+ concept_robot_survivor_desc: "—废土世界宜居性：§G+70%§!\n—领袖寿命：§G+10§!年\n\n§L$trait_robot_survivor_desc$§!"
 
 # Remnants
  concept_pc_relic: "$pc_relic$"
@@ -237,15 +237,15 @@
 # Subterranean
  concept_cave_dweller: "$trait_cave_dweller$"
  concept_robot_cave_dweller: "$trait_robot_cave_dweller$"
- concept_cave_dweller_desc: "—$MOD_HABITABILITY_FLOOR_ADD$：§G50%§!\n—$mod_planet_jobs_minerals_produces_mult$：§G+15%§!\n—$MOD_SPECIES_EMPIRE_SIZE_MULT$：§R+10%§!\n—$MOD_BIO_LOGISTIC_GROWTH_MULT$：§R-20%§!\n\n§L$trait_cave_dweller_desc$§!"
- concept_robot_cave_dweller_desc: "—$MOD_HABITABILITY_FLOOR_ADD$：§G50%§!\n—$mod_planet_jobs_minerals_produces_mult$：§G+15%§!\n—$MOD_SPECIES_EMPIRE_SIZE_MULT$：§R+10%§!\n—$MOD_POP_ASSEMBLY_SPEED$：§R-20%§!\n\n§L$trait_robot_cave_dweller_desc$§!"
+ concept_cave_dweller_desc: "—$MOD_HABITABILITY_FLOOR_ADD$：§G50%§!\n—$mod_pop_miner_bonus_workforce_mult$：§G+15%§!\n—$MOD_SPECIES_EMPIRE_SIZE_MULT$：§R+10%§!\n—$MOD_BIO_LOGISTIC_GROWTH_MULT$：§R-20%§!\n\n§L$trait_cave_dweller_desc$§!"
+ concept_robot_cave_dweller_desc: "—$MOD_HABITABILITY_FLOOR_ADD$：§G50%§!\n—$mod_pop_miner_bonus_workforce_mult$：§G+15%§!\n—$MOD_SPECIES_EMPIRE_SIZE_MULT$：§R+10%§!\n—$MOD_POP_ASSEMBLY_SPEED$：§R-20%§!\n\n§L$trait_robot_cave_dweller_desc$§!"
 
  mod_mining_district_housing_add: "矿业区产生的$MOD_PLANET_HOUSING_ADD$"
 
 # Teachers of the Shroud
 
  concept_latent_psionic: "$trait_latent_psionic$"
- concept_latent_psionic_desc: "—$mod_planet_jobs_physics_research_produces_mult$：§G+10%§!\n—$mod_planet_jobs_society_research_produces_mult$：§G+10%§!\n—$mod_planet_jobs_engineering_research_produces_mult$：§G+10%§!\n—$mod_planet_jobs_unity_produces_mult$：§G+5%§!\n\n§L$trait_latent_psionic_desc$§!"
+ concept_latent_psionic_desc: "['concept_intelligent'] 的岗位效率：§G+10%§!\n- $mod_pop_bureaucrat_bonus_workforce_mult$：§G+5%§!\n\n§L$trait_latent_psionic_desc$§!"
 
  concept_psionic_ascension: "灵能飞升"
  concept_psionic_ascension_desc: "通过解锁意识中的灵能能力，就有可能触及天幕，从中汲取无尽的能量。"
@@ -371,16 +371,16 @@
  concept_clinic_desc: "—£mod_job_healthcare_add£['concept_healthcare', healthcare.GetName]岗位：§G+200§!\n\n§L$building_medical_2_desc$§!"
 
  concept_mineral_purification_plant: "$building_mineral_purification_plant$"
- concept_mineral_purification_plant_desc: "—£mod_job_miner_add£['concept_miner', miner.GetName]岗位：§G+100§!\n—[miner.GetIcon][miner.GetNamePlural]产出的£minerals£矿物：§G+1§!\n\n§L$building_mineral_purification_plant_desc$§!"
+ concept_mineral_purification_plant_desc: "- 来自 £job_miner£ 矿工的资源产出：§G+20%§!\n\n§L$building_mineral_purification_plant_desc$§!"
 
  concept_energy_grid: "$building_energy_grid$"
- concept_energy_grid_desc: "—£mod_job_technician_add£['concept_technician', technician.GetName]岗位：§G+100§!\n—[technician.GetIcon][technician.GetNamePlural]产出的£energy£能量币：§G+1§!\n\n§L$building_energy_grid_desc$§!"
+ concept_energy_grid_desc: "- 来至 £job_technician£ 技工的资源产出“：§G+20%§!\n\n§L$building_energy_grid_desc$§!"
 
  concept_bureaucratic_1: "$building_bureaucratic_1$"
- concept_bureaucratic_1_desc: "—['concept_bureaucrat', bureaucrat.GetName]岗位：§G+200§!\n\n§L$building_bureaucratic_1_desc$§!"
+ concept_bureaucratic_1_desc: "- £mod_job_bureaucrat_add£ ['concept_bureaucrat', bureaucrat.GetName]岗位：§G+200§!\n\n§L$building_bureaucratic_1_desc$§!"
 
  concept_commercial_zone: "$building_commercial_zone$"
- concept_commercial_zone_desc: "—['concept_clerk', clerk.GetName]岗位：§G+300§!\n\n§L$building_commercial_zone_desc$§!"
+ concept_commercial_zone_desc: "- [trader.GetIcon] ['concept_trader', [trader.GetName]] 岗位： §G+200§!\n\n§L$building_commercial_zone_desc$§!" 
 
  concept_payback_unified_purpose: "$payback_unified_purpose$"
  concept_payback_unified_purpose_desc: "—$MOD_POP_HAPPINESS$：§G+15§!\n—$MOD_PLANET_AMENITIES_MULT$：§G+25%§!\n—$mod_planet_jobs_produces_mult$：§G+10%§!\n—['concept_unifier', $job_unifier$]岗位：§G+200%§!\n—在§I20§!年后过期\n\n§L$payback_unified_purpose_desc$§!"
@@ -493,7 +493,7 @@
  concept_necro_apprentice_desc: "—[necro_apprentice.GetNamePlural]将£consumer_goods£§I$consumer_goods$§!和£food£§I$food$§!转化为£unity£§I$unity$§!和£mod_planet_amenities_add£§I$PLANET_AMENITIES_TITLE$§!$NEW_LINE$—每隔§I10§!年一次的§I升格仪式§!中[necro_apprentice.GetNamePlural]将被转化。$DOUBLE_NEW_LINE$§L$job_necro_apprentice_desc$§!"
 
  concept_necrophage_trait: "$trait_necrophage$"
- concept_necrophage_trait_desc: "—$MOD_LEADER_LIFESPAN_ADD$：§G+80§! $NEW_LINE$- $MOD_LOGISTIC_GROWTH_MULT$：§R-75%§! $NEW_LINE$—$MOD_BONUS_POP_GROWTH_MULT$：§R-50%§! $NEW_LINE$—$mod_planet_pops_organics_food_upkeep_mult$：§G-50%§! $NEW_LINE$— $mod_planet_pops_organics_minerals_upkeep_mult$：§G-50%§!$NEW_LINE$—$mod_planet_pops_organics_energy_upkeep_mult$：§G-50%§!$NEW_LINE$—$mod_planet_jobs_ruler_produces_mult$：§G+5%§!$NEW_LINE$—$mod_planet_jobs_specialist_only_produces_mult$：§G+5%§!$NEW_LINE$—$mod_planet_jobs_worker_only_produces_mult$：§R-10%§!$NEW_LINE$—$trait_necrophage_gestalt_tooltip$$DOUBLE_NEW_LINE$§L$trait_necrophage_desc$§!"
+ concept_necrophage_trait_desc: "—$MOD_LEADER_LIFESPAN_ADD$：§G+80§! $NEW_LINE$- $MOD_LOGISTIC_GROWTH_MULT$：§R-75%§! $NEW_LINE$—$MOD_BONUS_POP_GROWTH_MULT$：§R-50%§! $NEW_LINE$—$mod_planet_pops_organics_food_upkeep_mult$：§G-50%§! $NEW_LINE$— $mod_planet_pops_organics_minerals_upkeep_mult$：§G-50%§!$NEW_LINE$—$mod_planet_pops_organics_energy_upkeep_mult$：§G-50%§!$NEW_LINE$- 精英岗位效率：§G+5%§!$NEW_LINE$- 专家岗位效率：§G+5%§!$NEW_LINE$- 劳工岗位效率：§R-10%§!$NEW_LINE$—$trait_necrophage_gestalt_tooltip$$DOUBLE_NEW_LINE$§L$trait_necrophage_desc$§!"
 
 # Clone Army
 
@@ -592,7 +592,7 @@
 
 # Primal Calling
  concept_untamed_wilds_mod: "$untamed_wilds$"
- concept_untamed_wilds_mod_desc: "—$MOD_PLANET_MAX_DISTRICTS_ADD$：§R$@untamed_wilds_districts|0$§!\n—$mod_planet_jobs_unity_produces_mult$：§G+15%§!\n—['concept_ethic_based_jobs']：§G+1§!$TABBED_NEW_LINE$\t—每§Y20§!£pop£§H人口§!：§G+1§!\n\n§L$untamed_wilds_desc$§!"
+ concept_untamed_wilds_mod_desc: "—$MOD_PLANET_MAX_DISTRICTS_ADD$：§R$@untamed_wilds_districts|0$§!\n—$mod_planet_jobs_unity_produces_mult$：§G+15%§!\n—['concept_ethic_based_jobs']：§G+100§!$TABBED_NEW_LINE$\t—每§Y20§!£pop£§H人口§!：§G+1§!\n\n§L$untamed_wilds_desc$§!"
 
  concept_ethic_based_jobs: "放牧人岗位"
  concept_ethic_based_jobs_desc: "这些岗位依据帝国对太空兽群的态度产生。$TABBED_NEW_LINE$—['concept_wrangler', £job_wrangler£ $job_wrangler$]$TABBED_NEW_LINE$—['concept_rancher', £job_rancher£ $job_rancher$]$TABBED_NEW_LINE$—['concept_trophy_hunter', £job_trophy_hunter£ $job_trophy_hunter$]$TABBED_NEW_LINE$—['concept_animal_handler', £job_animal_handler£ $job_animal_handler$]$TABBED_NEW_LINE$—['concept_beastfighter', £job_beastfighter£ $job_beastfighter$]"
@@ -619,13 +619,13 @@
  concept_hunter_killers_stance_desc: "—['concept_drone_wrangler',$job_drone_wrangler_plural_with_icon$]变为['concept_hunter_drone',$job_hunter_drone_plural_with_icon$]\n—['concept_wildlife_ranch']变为['concept_hunting_grounds']\n—$GET_UNIQUE_EDICT$。['edict:biological_overdrive']\n —获得['modifier:primal_calling_feed_modifier']修正"
 
  concept_wildlife_ranch: "$wildlife_ranch$"
- concept_wildlife_ranch_desc: "['concept_wrangler',$job_wrangler_plural_with_icon$ Jobs]：§G+2§!\n\n可被升级。\n\n§L$wildlife_ranch_desc$§!"
+ concept_wildlife_ranch_desc: "['concept_wrangler',$job_wrangler_plural_with_icon$ Jobs]：§G+200§!\n\n可被升级。\n\n§L$wildlife_ranch_desc$§!"
  concept_hunting_grounds: "$hunting_grounds$"
- concept_hunting_grounds_desc: "['concept_trophy_hunter',$job_trophy_hunter_plural_with_icon$]：§G+2§!\n\n可被升级。"
+ concept_hunting_grounds_desc: "['concept_trophy_hunter',$job_trophy_hunter_plural_with_icon$]：§G+200§!\n\n可被升级。"
  concept_wildlife_sanctuary: "$wildlife_sanctuary$"
- concept_wildlife_sanctuary_desc: "['concept_animal_handler',$job_animal_handler_plural_with_icon$]：§G+2§!\n\n可被升级。"
+ concept_wildlife_sanctuary_desc: "['concept_animal_handler',$job_animal_handler_plural_with_icon$]：§G+200§!\n\n可被升级。"
  concept_symbiosis_nexus: "$symbiosis_nexus$"
- concept_symbiosis_nexus_desc: "['concept_symbiosis_integrator',$job_symbiosis_integrator_plural_with_icon$]：§G+2§!\n\n可被升级。"
+ concept_symbiosis_nexus_desc: "['concept_symbiosis_integrator',$job_symbiosis_integrator_plural_with_icon$]：§G+200§!\n\n可被升级。"
 
 # Treasure Hunters
  concept_adventurous_spirit_trait: "$leader_trait_adventurous_spirit$"

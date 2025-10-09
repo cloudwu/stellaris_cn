@@ -8,6 +8,7 @@
 
  ap_interdimensional_processing: "跨维度运算"
  ap_interdimensional_processing_desc: "如果只限制在三维空间中，我们的运算潜力将十分有限。将网络延伸至虚空彼端，我们还大有可得。"
+ requires_not_ap_interdimensional_processing: "$TRIGGER_FAIL$不能拥有§Y$ap_interdimensional_processing$§!飞升天赋。"
 
  vo_psionic_voice: "灵能"
 
@@ -118,8 +119,7 @@
 
 # Transcendent
  transcendent_trait_common_tt: "§Y$trait_psionic$§!物种特质获得额外效果：$TABBED_NEW_LINE$-$pop_cat_ruler_plural$和[GetSpecialist]岗位效率：§G+10%§!$TABBED_NEW_LINE$-[GetWorker]岗位效率：§R-10%§!"
- transcendent_trait_tt: "$mod_psionic_aura_hyperlane_range_add$：§G+2§!\n$transcendent_trait_common_tt$\n['concept_leader_trait_psionic']特质将带来§G$@transcendent_psionic_leader_speed_mult|0%$§!内阁议程速度加成"
- transcendent_trait_gestalt_tt: "$transcendent_trait_common_tt$"
+ transcendent_trait_tt: "$mod_psionic_aura_hyperlane_range_add$: §G+2§!\n$transcendent_trait_common_tt$\n['concept_leader_trait_psionic'] 领袖特质赋予额外效果: $TABBED_NEW_LINE$- §G+$@transcendent_psionic_leader_speed_mult|0%$§! 内阁议程速度 $TABBED_NEW_LINE$- $MOD_LEADER_LIFESPAN_ADD$: §G+60§! $TABBED_NEW_LINE$- 非超越效果增加 §G+50%§!"
 
  auth_shroud_democratic_transcendent: "超凡民主制"
  auth_shroud_democratic_transcendent_desc: "所有的超然意识在天幕中天然平等，而选举则保障了肉身世界的平等。通过灵能投票，公民选举代表进入执政秘会，通过心灵感应冥想寻求共识。"
@@ -157,13 +157,13 @@
 
  auth_shroud_hive_transcendent: "超凡思维"
  auth_shroud_hive_transcendent_desc: "超越凡尘，合一入圣，比起物理形式，这个集体思维反而对天幕更加驾轻就熟。每趟去往帷幕彼岸的旅程都会让这个超然思维的集体智慧有所增长。"
- transcendent_hive_mind_tt: "$mod_psionic_aura_hyperlane_range_add$：§G+2§!\n$transcendent_trait_gestalt_tt$\n§Y领袖§!在每次$DELVE$后获得§Y$@transcendent_hive_mind_leader_exp|0$§!。\n$MOD_PLANET_STABILITY_MULT$：§G+10%§!\n$mod_planet_jobs_complex_drone_produces_mult$：§G+10%§!\n$MOD_EMPIRE_SIZE_MULT$：§G-10%§!\n$MOD_POP_ENVIRONMENT_TOLERANCE$：§R-10%§!"
+ transcendent_hive_mind_tt: "$transcendent_trait_tt$\n§Y领袖§!在每次$DELVE$后获得§Y$@transcendent_hive_mind_leader_exp|0$§!。\n$MOD_PLANET_STABILITY_MULT$：§G+10%§!\n$mod_planet_jobs_complex_drone_produces_mult$：§G+10%§!\n$MOD_EMPIRE_SIZE_MULT$：§G-10%§!\n$MOD_POP_ENVIRONMENT_TOLERANCE$：§R-10%§!"
  gov_shroud_transcendent_hive: "$auth_shroud_hive_transcendent$"
  gov_shroud_transcendent_hive_desc: "$auth_shroud_hive_transcendent_desc$"
 
  auth_shroud_machine_transcendent: "超凡主机"
  auth_shroud_machine_transcendent_desc: "这个网络中的大部分运算已经迁移至天幕内，运算速度可以达到前所未有的高度。在凡尘运作的操作系统已然笨拙过时。"
- transcendent_machine_tt: "$mod_psionic_aura_hyperlane_range_add$：§G+2§!\n$transcendent_trait_gestalt_tt$\n每点调和度$@transcendent_machine_research_per_attunement|2=+%$研究速度\n每次§Y$DELVE$§!产出£physics_research£ £society_research£ £engineering_research£随机研究点数\n每$pop_group_unit$§Y子例程§!维护费$job_telepath_swap_plural_with_icon$：$@transcendent_machine_calculator_upkeep|0=-%$\n$MOD_COUNCIL_AGENDA_PROGRESS_SPEED$：§G+25%§!\n带有['trait:trait_robot_psionic']特质的£pop£人口维护费$@transcendent_machine_pop_upkeep|0=-%$\n$mod_station_researchers_produces_mult$：§R-20%§!"
+ transcendent_machine_tt: "$transcendent_trait_tt$\n每点调和度$@transcendent_machine_research_per_attunement|2=+%$研究速度\n每次§Y$DELVE$§!产出£physics_research£ £society_research£ £engineering_research£随机研究点数\n每$pop_group_unit$§Y子例程§!维护费$job_telepath_swap_plural_with_icon$：$@transcendent_machine_calculator_upkeep|0=-%$\n$MOD_COUNCIL_AGENDA_PROGRESS_SPEED$：§G+25%§!\n带有['trait:trait_robot_psionic']特质的£pop£人口维护费$@transcendent_machine_pop_upkeep|0=-%$\n$mod_station_researchers_produces_mult$：§R-20%§!"
  gov_shroud_transcendent_machine: "$auth_shroud_machine_transcendent$"
  gov_shroud_transcendent_machine_desc: "$auth_shroud_machine_transcendent_desc$"
  transcendent_machine_research_modifier: "$auth_shroud_machine_transcendent$"
@@ -426,6 +426,11 @@
 #==========================
 # Components
 #==========================
+
+ weapon_type_psionic: "§Y$PSIONIC$§!"
+ mod_weapon_type_psionic_weapon_damage_mult: "$PSIONIC$武器伤害"
+ mod_weapon_type_psionic_weapon_fire_rate_mult: "$PSIONIC$武器射速"
+
  PSIONIC_STRIKE_CRAFT: "$tech_psionic_bombers$"
  PSIONIC_STRIKE_CRAFT_DESC: "$tech_psionic_bombers_desc$"
  BIO_PSIONIC_STRIKE_CRAFT: "$PSIONIC_SAPPERS$"
@@ -493,11 +498,13 @@
 
  SHROUD_SEAL: "天幕封印"
  SHROUD_SEAL_PLURAL: "天幕封印"
- SHROUD_SEAL_IN_SYSTEM: "该星系包含一个$SHROUD_SEAL$，削弱了附近的§Y$PSIONIC_AURA_PLURAL$§!。"
+ SHROUD_SEAL_IN_SYSTEM: "该星系包含一个$SHROUD_SEAL$，削弱了附近的§Y$PSIONIC_AURA_PLURAL$§!。它只能由星系所有者拆解。"
 
  shroud_seal: "$SHROUD_SEAL$"
  shroud_seal_DESC: "这台复杂的机器释放可以中和灵能能量的低频率波，以此驱散并逐渐消除$PSIONIC_AURA_PLURAL$。"
- shroud_seal_MEGASTRUCTURE_DETAILS: "§Y$SHROUD_SEAL$§!可以削弱附近的§Y$PSIONIC_AURA_PLURAL$§!。§Y$PSIONIC_AURA$§!在该星系中强度降低$@shroud_seal_decrease|0$，在相邻星系中-1。"
+ shroud_seal_MEGASTRUCTURE_DETAILS: "§Y$SHROUD_SEAL$§!可以削弱附近的§Y$PSIONIC_AURA_PLURAL$§!并削减§Y灵能船组件§!的效能。"
+
+ shroud_seal_modifier: "$SHROUD_SEAL$"
 
  requires_no_existing_shroud_seal: "$TRIGGER_FAIL$星系内已存在$SHROUD_SEAL$，无法建造。"
  shroud_seal_dismantle_conditions_tt: "$TRIGGER_FAIL$该星系中存在敌军，我们无法安全拆解$SHROUD_SEAL$。"
@@ -512,6 +519,7 @@
 
  mindwarden_army: "灵督突击队"
  NAME_Mindwarden_Army: "$mindwarden_army$"
+ mindwarden_army_desc: "这些特化单位接受了反灵能技术与战术的全面训练，因此成为对抗心灵入侵目标的强大对手。"
 
 #==========================
 # Branch-Office Buildings
@@ -588,6 +596,9 @@
  building_materiality_engine_plural: "物现引擎"
  building_materiality_engine_desc: "天幕的灵能能量毗邻着物理宇宙的每一个点。$building_materiality_engine$正是利用这种位面交界处，使其可以触及其他维度，将有用的部件和资源进行物质具现化。"
  building_materiality_engine_tt: "发起§Y特殊项目§!，从§H天幕§!中衍生出灵能['concept_component']科技。项目完成时，将提高该建筑的技术以及所能建造的§H$building_materiality_engine_plural$§!数量。"
+ 
+ biology_unit_is_observator_tt: "$t$£job_calculator_biologist£$job_calculator_biologist_plural$转化为$job_observator_drone_plural_with_icon$"
+ physics_unit_is_extradimensional_research_unit_tt: "$t$£job_calculator_physicist£$job_calculator_physicist_plural$转化为£job_extradimensional_research_unit£$job_extradimensional_research_unit_plural$"
 
 #==========================
 # Callings
@@ -698,7 +709,7 @@
 
  civic_entropy_drinkers_corporate: "吸血企业"
  civic_entropy_drinkers_corporate_desc: "$civic_ap_blockade_tt$\n\n该$gov_megacorporation$利用寄生心灵链接从闲散人口中汲取宝贵的新陈代谢。通过妥善收集来的能量可以重新分配给高级主管人员。"
- civic_entropy_drinkers_corporate_effects: "解锁以下§H$EDICTS$§!：$TABBED_NEW_LINE$—['edict:energy_drain',$edict_energy_drain$]$TABBED_NEW_LINE$—['edict:sanguine_council',$edict_sanguine_council$]$TABBED_NEW_LINE$—['edict:psychic_feast',$edict_psychic_feast$]\n可以建造：£building£['building:building_lifecrypt_corporate_1']。\n领袖初始拥有['concept_leader_trait_psionic']特质。"
+ civic_entropy_drinkers_corporate_effects: "解锁以下§H$EDICTS$§!：$TABBED_NEW_LINE$—['edict:energy_drain',$edict_energy_drain$]$TABBED_NEW_LINE$—['edict:sanguine_council',$edict_sanguine_council$]$TABBED_NEW_LINE$—['edict:psychic_feast',$edict_psychic_feast$]\n可以建造：£building£['building:building_lifecrypt_corporate_1']。\n领袖初始拥有['concept_leader_trait_psionic']特质。\n£building£ §Y$building_executive_retreat$§! $megacorp_civic_branch_office_building_effect$"
 
  # Superstitious Beliefs
  civic_tooltip_not_superstitious_beliefs: "没有['concept_superstitious_beliefs_civics']类公民性"
@@ -747,12 +758,15 @@
  experimenters_ermerging_crime_4: "像这样的实验对我们的[GetExperimentalEngineerPlural]而言可是丰富的测试对象资源。"
 
 # Secret Societies
+ civic_tooltip_not_secret_societies: "没有['concept_secret_societies_civics']类公民性"
+ 
  civic_secret_societies: "秘密结社"
  civic_secret_societies_desc: "一个由精英和神秘人物组成的小组织在这个社会的幕后编织着复杂的政治脉络，将其他星球的外交内政互相交织在一起。"
  civic_secret_societies_effects: "在与其他帝国接触时会出现隐秘的['concept_ss_factions']。\n初始拥有进行['concept_proxy_wars']的能力。\n$job_bureaucrat_plural_with_icon$将会视正在进行以及成功的§Y代理人战争§!产出$i_unity$\n游戏开始时与两个相邻帝国发生['concept_first_contact']。\n在§Y$first_contact$§!后获得对其他帝国的$INFILTRATION_LEVEL$：§G+$@secret_society_infiltration_gain|0$§!"
 
  civic_secret_societies_corporate: "影响力企业"
  civic_secret_societies_corporate_desc: "该$gov_megacorporation$最强大的办公室在严格保密的基础上进行外星行动。如果你不知道，你就没必要知道。"
+ civic_secret_societies_corporate_effects: "在与其他帝国接触时会出现隐秘的['concept_ss_factions']。\n初始拥有进行['concept_proxy_wars']的能力。\n$job_bureaucrat_plural_with_icon$将会视正在进行以及成功的§Y代理人战争§!产出$i_unity$。\n游戏开始时与两个相邻帝国发生['concept_first_contact']。\n在§Y$first_contact$§!后获得对其他帝国的$INFILTRATION_LEVEL$：§G+$@secret_society_infiltration_gain|0$§!\n£building£§Y$building_corporate_embassy$§!$megacorp_civic_branch_office_building_effect$"
 
  shroud.5012.title: "秘密结社出现"
  shroud.5012.desc: "我们的怀疑得到了确认。[first_neighbor.GetAdjective]与[second_neighbor.GetAdjective]的文明证实，他们在正式进行外交之前，曾通过非正式渠道开展过联系。\n\n这些§H派系§!如今从我们的阴影中现身，承认了他们的存在。它们被称为§H$pft_the_curtain$§!、§H$pft_the_masquerade$§!以及§H$pft_the_grand_dance$§!。这群曾经的秘密组织如今正公开请求与我们展开正式对话。\n\n至于它们想要什么，以及它们是如何知晓所知之事，我们也许永远无法真正知道。但为了我们的最佳利益，也许我们应当遵循他们的命令行事。"
@@ -778,6 +792,7 @@
 
  civic_corporate_chosen: "天选主管"
  civic_corporate_chosen_desc: "$civic_ap_blockade_tt$\n\n在历史的早期受到天幕的影响，该企业与某个强大的实体间签订了契约。"
+ civic_corporate_chosen_effects: "$civic_chosen_effects$\n—£building£§Y$building_psionic_offices$§!$megacorp_civic_branch_office_building_effect$"
 
  civic_tooltip_not_chosen: "没有['concept_chosen_civics']类公民性"
  concept_chosen_civics: "天选"
@@ -822,12 +837,14 @@
 # Tankbound
  civic_tankbound: "罐中之体"
  civic_tankbound_desc: "该社会的成员在专门的生物溶液罐中度过一生。因此他们严重依赖辅助设备，无法直接从事体力劳动。"
- civic_tankbound_effects: "增加['trait:trait_tankbound']特质。\n乡村地区的劳工岗位完全§Y自动化§!。\n['concept_colonist', $job_colonist$]为专家岗位。\n起始拥有['technology:tech_assembly_pattern', £engineering£$tech_assembly_pattern$]科技洞见。\n将§Y$job_clerk_with_icon$§!替换为§Y$job_production_overseer_with_icon$§!。\n\n§E修正：§!$TABBED_NEW_LINE$—$mod_planet_jobs_upkeep_mult$: $@civic_tankbound_job_upkeep|0=-%$$TABBED_NEW_LINE$—$MOD_BONUS_AUTOMATED_WORKFORCE_MULT$：$@civic_tankbound_efficiency_mult|0=+%$$TABBED_NEW_LINE$—乡村地区能量币维护费：$@civic_tankbound_district_upkeep|0=-%$"
+ civic_tankbound_effects_base: "增加['trait:trait_tankbound']特质。\n乡村区的劳工岗位完全§Y自动化§!。\n['concept_colonist', $job_colonist$]岗位为$SPECIALISTS$。\n起始拥有['technology:tech_assembly_pattern', £engineering£$tech_assembly_pattern$]科技洞见。\n£district£§Y都市§!区拥有额外的§Y$job_production_overseer_with_icon$§!岗位。"
+ civic_tankbound_effects: "$civic_tankbound_effects_base$$civic_tankbound_modifiers$"
+ civic_tankbound_modifiers: "\n\n§E修正：§!$TABBED_NEW_LINE$—$mod_planet_jobs_upkeep_mult$：$@civic_tankbound_job_upkeep|0=-%$$TABBED_NEW_LINE$—$MOD_BONUS_AUTOMATED_WORKFORCE_MULT$：$@civic_tankbound_efficiency_mult|0=+%$$TABBED_NEW_LINE$—农业区能量币维护费：$@civic_tankbound_district_upkeep|0=-%$"
  civic_tankbound_negative_effects: "$t$—起始比正常少2K£pop£人口"
 
  civic_tankbound_corporate: "企业脑罐"
  civic_tankbound_corporate_desc: "该社会普遍采用了一种特化的实验性栖息罐产品。因此他们严重依赖辅助设备，无法直接从事体力劳动。"
- civic_tankbound_corporate_effects: "$civic_tankbound_effects$"
+ civic_tankbound_corporate_effects: "$civic_tankbound_effects_base$\n£building£§Y$building_virtual_entertainment_studios$§!$megacorp_civic_branch_office_building_effect$$civic_tankbound_modifiers$"
 
  tankbound_efficiency_malus: "$civic_tankbound$"
  tankbound_corporate_efficiency_malus: "$civic_tankbound_corporate$"
@@ -2089,8 +2106,6 @@
  job_production_overseer_desc: "产出监察者负责消除低效现象，最大限度地提高复杂制造过程的产出。"
  job_production_overseer_effect_desc: "$job_production_overseer_with_icon$将$i_consumer_goods$转化为$i_unity$和$i_amenities$"
  job_production_overseer_with_icon: "£job_production_overseer£$job_production_overseer_plural$"
- planet_production_overseer_worker: "劳工"
- mod_planet_production_overseer_worker_produces_mult: "劳工产出"
  mod_job_production_overseer_add: "$job_production_overseer$岗位"
 
 # Specialist Colonist
@@ -2106,7 +2121,6 @@
  job_extradimensional_research_unit: "高维度研究单元"
  job_extradimensional_research_unit_plural: "高维度研究单元"
  job_extradimensional_research_unit_desc: "专注于研究思想维度的研究单元。"
- mod_job_extradimensional_research_unit_add: "$job_extradimensional_research_unit$岗位"
 
  covenant_eater_telepath_tt: "每$pop_group_unit$$job_telepath_swap_plural_with_icon$产生的£mod_country_naval_cap_add£$MOD_COUNTRY_NAVAL_CAP_ADD$：$@telepath_eater_naval_cap|0=+$"
  covenant_cradle_telepath_tt: "[GetCradleCovenantTelepathEffect]"
@@ -2166,7 +2180,7 @@
  MESSAGE_PSIONIC_AURA_MAX_INTENSITY_the_eater_of_worlds_DESC: "$MESSAGE_PSIONIC_AURA_MAX_INTENSITY_DESC$\n—$SYSTEM$内显现护卫舰：§Y10§!\n—$aura_intensity_lost_level_tt$"
  MESSAGE_PSIONIC_AURA_MAX_INTENSITY_the_cradle_of_souls_DESC: "$MESSAGE_PSIONIC_AURA_MAX_INTENSITY_DESC$\n—$STARBASE$的防御平台：§G+5§!\n—$aura_intensity_lost_level_tt$"
  MESSAGE_PSIONIC_AURA_MAX_INTENSITY_the_instrument_of_desire_DESC: "$MESSAGE_PSIONIC_AURA_MAX_INTENSITY_DESC$\n—$SYSTEM$系内可用行星飞升：§G$VALUE$§!\n—$aura_intensity_lost_level_tt$"
- MESSAGE_PSIONIC_AURA_MAX_INTENSITY_the_composer_of_strands_DESC: "$MESSAGE_PSIONIC_AURA_MAX_INTENSITY_DESC$\n—$SYSTEM$系内增加天幕化植被障碍：§Y$VALUE$§!\n—$aura_intensity_lost_level_tt$"
+ MESSAGE_PSIONIC_AURA_MAX_INTENSITY_the_composer_of_strands_DESC: "$MESSAGE_PSIONIC_AURA_MAX_INTENSITY_DESC$\n—$SYSTEM$系内增加$d_shroudstone$障碍：§Y$VALUE$§!\n—$aura_intensity_lost_level_tt$"
 
  MESSAGE_AURA_INTENSIFICATION_INSIGHT_TITLE: "光环增强突破"
  MESSAGE_AURA_INTENSIFICATION_INSIGHT_DESC: "我们获得了足够多的§H天幕§!调和度，可以获得关于§H$tech_aura_intensification$§!科技的洞见。我们将可以把§H$PSIONIC_AURA$§!传播到其他星系中。"
@@ -2694,8 +2708,8 @@
  po_establish_migration_treaty: "签订一条§H$PACT_migration_treaty$§!。"
  po_establish_migration_treaty_plural: "签订§H移民协议§!：（$INDEX$/$MAX$）"
 
- po_establish_trade_agreement: "签订一条§H贸易协定§!。"
- po_establish_trade_agreement_plural: "签订§H贸易协定§!：（$INDEX$/$MAX$）"
+ po_establish_trade_agreement: "签订一条§H商业协定§!。"
+ po_establish_trade_agreement_plural: "签订§H商业协定§!：（$INDEX$/$MAX$）"
 
  po_form_or_upgrade_federation: "建立或升级£federation£联邦。"
  po_form_or_upgrade_federation_plural: "建立或升级£federation£联邦：（$INDEX$/$MAX$）"
@@ -3419,7 +3433,7 @@
  PSIONIC_AURA_INTENSITY_TOTAL_TT: "我们$PSIONIC_AURA$的总计§H强度§!。星系中的光环到达最大§H强度§!时便会通过超空间航道传播向所有能抵达的方向。"
  TECH_PSIONIC_AURA_TT: "§R$PSIONIC_AURA_UNLOCK_TT$§!"
  TECH_AURA_INTENSIFICATION_TT: "§R签订契约以解锁['technology:tech_aura_intensification']科技。§!"
- AURA_INTENSITY_INCREASE_TT: "$MOD_PSIONIC_AURA_INTENSITY_ADD$因£pop£§H$trait_psionic$$POPS$§!及其§H$HAPPINESS$§!、£job_priest£§H$job_priest_plural$§!、£leader£§H$trait_psionic$$governor_plural$§!和§H天幕星球§!而增加。"
+ AURA_INTENSITY_INCREASE_TT: "$MOD_PSIONIC_AURA_INTENSITY_ADD$因£pop£§H$trait_psionic$$POPS$§!、§H$HAPPINESS$§!、£job_priest£§H$job_priest_plural$§!、£job_telepath£§H$job_telepath_plural$§!、£leader£§H$trait_psionic$$governor_plural$§!和§H天幕世界§!而增加。"
  AURA_INTENSITY_INCREASE_EOTC_TT: "§R$end_aura$§!的强度增长也因军事舰队的存在而提高。"
 
  AURA_EFFECTS_DESC: "§H$PSIONIC_AURA$§!会影响其占领的星系中所有的舰队和殖民地。"
@@ -4544,7 +4558,7 @@
  ACCORD_INTENSIFICATION_desc: "一切抵抗在$end_aura$面前都是螳臂当车。强大意志涌动之处，终焉之路已为万物开启！"
  ACCORD_INTENSIFICATION_TT: "提升§H$PSIONIC_AURA$§!强度§G+50§!并禁用星系内所有§H$SHROUD_SEAL_PLURAL$§!3年。"
  ACCORD_INTENSIFICATION_TRIGGER: "£trigger_no£§R§Y$situation_end_of_the_cycle$§!§H局势已经达到§!的$stage_4$§!"
- ACCORD_INTENSIFICATION_TRIGGER_ONCE: "§R该$ACTIVE_ACCORD$已经激活且无法重复。§!\n\n"
+ ACCORD_INTENSIFICATION_TRIGGER_COOLDOWN: "§R此$ACTIVE_ACCORD$在§Y[this.intensification_cooldown_timer]§!§!前无法激活。\n\n"
  ACCORD_ANNIHILATION: "消除"
  ACCORD_ANNIHILATION_desc: "终焉永远不会被填满，但它的大口永远敞开。"
  ACCORD_ANNIHILATION_TT: "§Y$situation_end_of_the_cycle$§!§H局势§!进展：§G-60§!"
@@ -4937,6 +4951,8 @@
  START_SCREEN_MINDWARDENS: "我们先祖留下来的记录讲述了一场摧毁过[GetHomeWorldName]的灵能瘟疫。超自然的力量攻击了他们的心智，毁灭性的辐射散布在大气中——而这都是[GetSpeciesAdj]社会中的灵能尝试引起的。\n\n为了应对这些威胁，先祖们建造了$building_ancient_ward_1$来抵御入侵心智的力量。仅依靠日常维护，这座古老的建筑就已经强大到足以保护所有[GetSpeciesNamePlural]免受灵能影响的威胁，它的核心技术也为其他心灵防御的发展提供了信息。\n\n随着我们的文明准备扬帆越过[capital_scope.System.GetName]的轨道，等待我们的只有位置。在我们陌生的世界里又有什么样的灵能威胁在等待着我们呢？"
  mindwarden_system_init_NAME: "$origin_mindwardens$"
  mindwarden_system_init_DESC: "这将是选择$origin_mindwardens$起源时的固定起始星系。\n\n$system_initializer_DESC$"
+ mindwarden_sol_system_init_NAME: "$origin_mindwardens$（太阳系）"
+ mindwarden_sol_system_init_DESC: "$origin_mindwardens$起源可选的起始星系，以太阳系为基础。\n\n$system_initializer_DESC$"
 
  building_ancient_ward_1: "远古堡场"
  building_ancient_ward_1_desc: "这座古老的结构使用一系列灵能衰减器来隔离整个星球免受精神入侵力量的侵害。"

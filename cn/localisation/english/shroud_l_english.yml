@@ -216,7 +216,7 @@
 
  auth_shroud_machine_corporeal: "灵能网络"
  auth_shroud_machine_corporeal_desc: "通过将它们的网络编穿进迷雾重重的灵能涌流——天幕之中，这些机器实现了近乎瞬时的数据传输。每一个字节都蕴含着强大的灵能意志，这种配置能够极大地影响周围的物理空间。"
- corporeal_machine_tt: "$corporeal_trait_tt$\n每$pop_group_unit$$job_coordinator_with_icon$带来的$MOD_PSIONIC_AURA_EFFECTIVENESS_MULT$：$@corporeal_machine_coordinator_effectiveness|0=+%$\n$MOD_COUNCIL_AGENDA_PROGRESS_SPEED$：§G+25%§!\n$mod_pop_cat_complex_drone_bonus_workforce_mult$：§G+10%§!\n$mod_leaders_upkeep_mult$：§G-50%§!\n$mod_planet_bureaucrats_upkeep_mult$：§R+30%§!"
+ corporeal_machine_tt: "$corporeal_trait_tt$\n每$pop_group_unit$$job_telepath_drone_swap_with_icon$带来的$MOD_PSIONIC_AURA_EFFECTIVENESS_MULT$：$@corporeal_machine_aura_effectiveness|0=+%$\n$MOD_COUNCIL_AGENDA_PROGRESS_SPEED$：§G+25%§!\n$mod_pop_cat_complex_drone_bonus_workforce_mult$：§G+10%§!\n$mod_leaders_upkeep_mult$：§G-50%§!\n$mod_planet_bureaucrats_upkeep_mult$：§R+30%§!"
  gov_shroud_corporeal_machine: "$auth_shroud_machine_corporeal$"
  gov_shroud_corporeal_machine_desc: "$auth_shroud_machine_corporeal_desc$"
 
@@ -227,6 +227,9 @@
  MOD_ATTUNEMENT_MULT: "超主调和度"
  mod_council_agenda_early_activation_cost_mult: "内阁议程提早颁行花费"
 
+#==========================
+# Policies
+#==========================
  policy_psionic_choir: "灵能唱诗"
  policy_psionic_choir_desc: "灵能使集体与天幕的能量协调。他们的旋律在帝国的灵能人口中回响，将他们的努力汇聚提升。"
  song_of_calming: "平静之歌"
@@ -239,6 +242,19 @@
  song_of_luxury_desc: "一首充满幸福放纵的灵能民歌。\n\n"
  song_of_knowing: "全知颂歌"
  song_of_knowing_desc: "一股带有复杂节奏与旋律的灵能回响。\n\n"
+ 
+ policy_psionic_suppression_policy: "灵能压制"
+ policy_psionic_suppression_policy_desc: "该政策控制在接管星系时，是否拆解可压制$PSIONIC_AURA_PLURAL$的装置。"
+ psionic_suppression_dismantle: "拆解"
+ psionic_suppression_dismantle_name: "$psionic_suppression_dismantle$"
+ psionic_suppression_dismantle_desc: "压制$PSIONIC_AURA_PLURAL$的装置将被自动拆解。"
+ psionic_suppression_allow: "允许"
+ psionic_suppression_allow_name: "$psionic_suppression_allow$"
+ psionic_suppression_allow_desc: "压制$PSIONIC_AURA_PLURAL$的装置将保留在原位。"
+ 
+ shroud.80.title: "灵能压制已被拆解"
+ shroud.80.desc: "在接管§H[from.GetName]§!星系时，我们发现并随后拆解了可压制我等$PSIONIC_AURA$的机械装置。"
+ shroud.80.a: "我们的心智获得解放。"
 
 #==========================
 # Phenotype traits
@@ -863,6 +879,8 @@
  mod_planet_districts_generator_energy_upkeep_add: "$planet_districts_generators$能量币维护费"
  mod_planet_districts_rw_generator_energy_upkeep_add: "$planet_districts_rw_generator$能量币维护费"
  mod_planet_districts_rw_farming_energy_upkeep_add: "$planet_districts_rw_farming$能量币维护费"
+ mod_planet_districts_hab_energy_energy_upkeep_add: "$planet_districts_hab_energy$能量币维护费"
+ mod_planet_districts_hab_mining_energy_upkeep_add: "$planet_districts_hab_mining$能量币维护费" 
  MOD_BONUS_AUTOMATED_WORKFORCE_MULT: "自动劳动力效率"
 
  mod_job_technician_automated_workforce_mult: "$job_technician_plural_with_icon$$MOD_PLANET_DISTRICT_AUTOMATED_WORKFORCE$"
@@ -981,6 +999,7 @@
  deed_complete_operation: "渗透"
  deed_ascend_planet: "飞升"
  deed_pick_mercantile_or_domination_tradition: "并购"
+ deed_pick_logistics_or_domination_tradition: "$deed_pick_mercantile_or_domination_tradition$"
  deed_clear_blocker: "清理"
  deed_upgrade_building_capital: "定都"
  deed_upgrade_building_non_capital: "建造"
@@ -995,6 +1014,7 @@
  deed_clone_space_fauna: "繁育"
  deed_consecrate_planet: "祝圣"
  deed_pick_adaptability_or_expansion_tradition: "扩张"
+ deed_pick_versatility_or_expansion_tradition: "$deed_pick_adaptability_or_expansion_tradition$"
  deed_apply_species_template: "嫁接"
  deed_apply_species_template_desc: "$t$受被修饰的£pop£$POPS$数量倍乘。"
  deed_host_new_species: "招徕"
@@ -1346,6 +1366,15 @@
  enclaves_built: "$ENCLAVE_MINDWARDEN_PLURAL$已成立"
  dividends_received: "收到分红"
  shroud_seals_built: "星系内的$SHROUD_SEAL_PLURAL$"
+
+ chain_aura_suppressors_title: "§H$PSIONIC_AURA$§!阻抗"
+ chain_aura_suppressors_desc: "该§H$end_aura$§!正受到能衰装置的挑战，这些外来机械可衰减灵能。我等受其主宰之意志所驱，必须拆解这些亵渎之器。"
+ chain_aura_suppressors_seal: "§Y[prev.GetName]§!系内§H$SHROUD_SEAL$§!"
+ chain_aura_suppressors_seal_desc: "位于[prev.GetName]恒星系的$SHROUD_SEAL$挑战了§H$end_aura$§!的伸展。\n\n§R必须将其拆解。§!"
+ chain_aura_suppressors_suppressor: "§Y[prev.GetName]§!上的§H$building_psionic_suppressor$§!"
+ chain_aura_suppressors_suppressor_desc: "位于[prev.GetName]的$building_psionic_suppressor$挑战了§H$end_aura$§!的伸展。\n\n§R我们必须摧毁它。§!"
+ chain_aura_suppressors_ward: "§Y[prev.GetName]§!上的§H$building_ancient_ward_2$§!"
+ chain_aura_suppressors_ward_desc: "位于[prev.GetName]的所谓$building_ancient_ward_2$挑战了§H$end_aura$§!的伸展。\n\n§R我们必须摧毁它。§!"
 
 #==========================
 # Events
@@ -2053,6 +2082,17 @@
  superstitious_beliefs_high_priest_corporate: "$job_superstitious_beliefs_high_priest_corporate$"
  job_superstitious_beliefs_high_priest_corporate_icon: "£job_superstitious_beliefs_high_priest_corporate£"
 
+ # Superstitious Beliefs & Death Cult
+ corpse_reader: "读尸者"
+ job_corpse_reader: "$corpse_reader$"
+ job_corpse_reader_plural: "读尸者"
+ job_corpse_reader_desc: "通过观察并解析每具尸体独特的腐朽过程，星系的奥秘将向我们揭示。"
+ 
+ corpse_broker: "尸体掮客"
+ job_corpse_broker: "$corpse_broker$"
+ job_corpse_broker_plural: "尸体掮客"
+ job_corpse_broker_desc: "逝者的器官与骨骼可作为占卜仪式的供品而卖出好价钱。"
+
 # Test Subjects
  # Test Subjects (Normal)
  job_test_subject: "实验对象"
@@ -2132,6 +2172,11 @@
  covenant_composer_telepath_gestalt_tt: "每$pop_group_unit$$job_telepath_swap_plural_with_icon$产生的$MOD_POP_ASSEMBLY_SPEED$：$@telepath_composer_growth|0=+%$"
  covenant_whisperers_telepath_tt: "每$pop_group_unit$$job_telepath_swap_plural_with_icon$产出的£research£：$@telepath_whisperers_research|0=+$"
 
+ # Purge Sacrifice jobs
+ job_purge_sacrifice: "$purge_sacrifice$"
+ job_purge_sacrifice_plural: "$purge_sacrifice$"
+ job_purge_sacrifice_desc: "$purge_sacrifice_tooltip_delayed$"
+
 #==========================
 # Messages
 #==========================
@@ -2177,7 +2222,7 @@
  MESSAGE_PSIONIC_AURA_MAX_INTENSITY_DESC: "我们在§H$SYSTEM$§!系内的§Y$PSIONIC_AURA$§!已达强度峰值，显昭出了超主的恩赐。"
  aura_intensity_lost_level_tt: "$PSIONIC_AURA$强度等级：§R-1§!"
  MESSAGE_PSIONIC_AURA_MAX_INTENSITY_whisperers_in_the_void_DESC: "$MESSAGE_PSIONIC_AURA_MAX_INTENSITY_DESC$\n—获得$VALUE$研究点\n—$aura_intensity_lost_level_tt$"
- MESSAGE_PSIONIC_AURA_MAX_INTENSITY_the_eater_of_worlds_DESC: "$MESSAGE_PSIONIC_AURA_MAX_INTENSITY_DESC$\n—$SYSTEM$内显现护卫舰：§Y10§!\n—$aura_intensity_lost_level_tt$"
+ MESSAGE_PSIONIC_AURA_MAX_INTENSITY_the_eater_of_worlds_DESC: "$MESSAGE_PSIONIC_AURA_MAX_INTENSITY_DESC$\n—$SYSTEM$内显现护卫舰：§Y[GetEaterOfWorldsSpawnedCorvettesScaled]§!\n—$aura_intensity_lost_level_tt$"
  MESSAGE_PSIONIC_AURA_MAX_INTENSITY_the_cradle_of_souls_DESC: "$MESSAGE_PSIONIC_AURA_MAX_INTENSITY_DESC$\n—$STARBASE$的防御平台：§G+5§!\n—$aura_intensity_lost_level_tt$"
  MESSAGE_PSIONIC_AURA_MAX_INTENSITY_the_instrument_of_desire_DESC: "$MESSAGE_PSIONIC_AURA_MAX_INTENSITY_DESC$\n—$SYSTEM$系内可用行星飞升：§G$VALUE$§!\n—$aura_intensity_lost_level_tt$"
  MESSAGE_PSIONIC_AURA_MAX_INTENSITY_the_composer_of_strands_DESC: "$MESSAGE_PSIONIC_AURA_MAX_INTENSITY_DESC$\n—$SYSTEM$系内增加$d_shroudstone$障碍：§Y$VALUE$§!\n—$aura_intensity_lost_level_tt$"
@@ -2753,8 +2798,14 @@
  po_pick_mercantile_or_domination_tradition: "采纳一项£traditions£§H$tradition_domination$§!或§H$tradition_mercantile$§!传统。"
  po_pick_mercantile_or_domination_tradition_plural: "采纳£traditions£§H$tradition_domination$§!或§H$tradition_mercantile$§!传统：（$INDEX$/$MAX$）"
 
+ po_pick_logistics_or_domination_tradition: "采纳一项£traditions£§H$tradition_domination$§!或§H$tradition_logistics$§!传统。"
+ po_pick_logistics_or_domination_tradition_plural: "采纳£traditions£§H$tradition_domination$§!或§H$tradition_logistics$§!传统：（$INDEX$/$MAX$）"
+
  po_pick_adaptability_or_expansion_tradition: "采纳一项£traditions£§H$tradition_adaptability$§!或§H$tradition_expansion$§!传统。"
  po_pick_adaptability_or_expansion_tradition_plural: "采纳£traditions£§H$tradition_adaptability$§!或§H$tradition_expansion$§!传统：（$INDEX$/$MAX$）"
+
+ po_pick_versatility_or_expansion_tradition: "采纳一项£traditions£§H$tradition_versatility$§!或§H$tradition_expansion$§!传统。"
+ po_pick_versatility_or_expansion_tradition_plural: "采纳£traditions£§H$tradition_versatility$§!或§H$tradition_expansion$§!传统：（$INDEX$/$MAX$）"
 
  po_psionically_assimilate_pop: "灵能同化一个£pop£人口。"
  po_psionically_assimilate_pop_plural: "灵能同化£pop£人口：（$INDEX$/$MAX$）"
@@ -3162,9 +3213,9 @@
 # End of the Cycle
  situation_end_of_the_cycle: "$name_eotc$"
  situation_end_of_the_cycle_desc: "我们已经与$end_of_the_cycle_color_article$签订了契约，获得了无上力量。我们的[Owner.GetTelepathPlural]们认为，这笔交易的代价可以通过集体灵能出神来推迟——但只能推迟这么长时间。\n\n超主的意志将会化为强力的$PSIONIC_AURA$降临。如果我们想实现终末，就要把散播这个光环作为我们的终极目标。随着我们愈发人多势众，心智之力也在增长，光环的力量和范围也会随之扩大。\n\n有待征服的星系：§Y[Owner.GetEndCycleGalaxySystemsLeft]§!"
- situation_end_of_the_cycle_effects_1: "该阶段结束后，我们将被施以§H$ACCORD_CREATION$§!的力量。"
- situation_end_of_the_cycle_effects_2: "该阶段该阶段结束后，我们将被施以§H$ACCORD_DISTORTION$§!的力量。"
- situation_end_of_the_cycle_effects_3: "该阶段结束后，我们将被施以§H$ACCORD_INTENSIFICATION$§!的力量。"
+ situation_end_of_the_cycle_effects_1: "该阶段结束后，我们将被施以§H$ACCORD_CREATION$§!的力量。\n$eotc_opinion_modifier_tooltip$"
+ situation_end_of_the_cycle_effects_2: "该阶段该阶段结束后，我们将被施以§H$ACCORD_DISTORTION$§!的力量。\n$eotc_opinion_modifier_tooltip$\n$eotc_opinion_modifier_2_tooltip$"
+ situation_end_of_the_cycle_effects_3: "该阶段结束后，我们将被施以§H$ACCORD_INTENSIFICATION$§!的力量。\n$eotc_opinion_modifier_tooltip$\n$eotc_opinion_modifier_3_tooltip$"
  situation_end_of_the_cycle_effects_4: "该阶段结束后，我们所获力量的代价终将显现。"
  approach_situation_end_of_the_cycle_let_it_come: "放马过来"
  approach_situation_end_of_the_cycle_be_cautious: "小心为妙"
@@ -3176,9 +3227,12 @@
  situation_end_of_the_cycle_finish_effects: "§R报应终有时。§!"
  initial_absorbed_consciousness_bonus: "吸收意识"
  absorbed_consciousness_intensification_1: "吸收意识增强"
- absorbed_consciousness_intensification_2: "吸收意识增强"
- absorbed_consciousness_intensification_3: "吸收意识增强"
- absorbed_consciousness_intensification_4: "吸收意识增强"
+ absorbed_consciousness_intensification_2: "$absorbed_consciousness_intensification_1$"
+ absorbed_consciousness_intensification_3: "$absorbed_consciousness_intensification_1$"
+ absorbed_consciousness_intensification_4: "$absorbed_consciousness_intensification_1$"
+ eotc_opinion_modifier_tooltip: "由其他帝国每个受到§H$end_aura$§!影响的恒星系对我国的$OPINION$降低：§R-15§!"
+ eotc_opinion_modifier_2_tooltip: "其他帝国对我国的$OPINION$：§R-200§!"
+ eotc_opinion_modifier_3_tooltip: "其他帝国对我国的$OPINION$：§R-500§!"
 
  shroud.4950.title: "恶毒光环"
  shroud.4950.desc.1: "我们的数据显示，该光环有极强的负面影响。如果不加以应对，它将会快速传遍整个银河。"
@@ -4015,18 +4069,19 @@
  shroud.4135.title: "$end_of_the_cycle_article_cap$"
  shroud.4135.desc: "毫无预兆地我们被撕入了天幕。一个若隐若现的存在袭击了我们的意识。\n\n祂是$end_of_the_cycle_color_article$，祂一直在等待着我们。我们的[GetTelepathPlural]在出神中突然开始齐呼，众口一声地说：§R“时机未到。”§!缓了一下后。§R“但并非不可。”§!\n\n祂没有说更多，但给了我们一个价码——力量、知识以及无尽的财富随我们取用。\n\n§R只要我们能带向终末。§!"
  shroud.4135.a: "$utopia.3308.a$"
- shroud.4135.a.tt: "将所有已知超主的领域替换为$end_of_the_cycle_color_article$。\n我们有50年的时间来将星系吞入其§H$end_aura$§!之中。如果成功，游戏将会结束。\n$covenant.cycle.tooltip$$shroud.8450.a.tech_tooltip$\n$shroud.4135.psionic_components_insight$\n\n这将解除与所有其他超主的契约"
+ shroud.4135.a.tt: "将所有已知超主的领域替换为$end_of_the_cycle_color_article$。\n我们有50年的时间来将星系吞入其§H$end_aura$§!之中。如果成功，游戏将会结束。\n$covenant.cycle.tooltip$$shroud.8450.a.tech_tooltip$\n$shroud.4135.psionic_components_insight$\n\n这将解除与所有其他超主的契约\n$eotc_opinion_modifier_tooltip$"
  shroud.4135.b: "退出天幕尝试忘记。"
  shroud.4135.b.forging_our_own_path: "前路既定，孑然独行。"
  shroud.4135.psionic_components_insight: "获得所有['concept_psionic_components']科技的进展：§G+10%§!"
  concept_psionic_components: "灵能部件"
  concept_psionic_components_desc: "$tech_psionic_bombers$\n$tech_psionic_lightning$\n$tech_psionic_disruptor$\n$tech_zro_launcher$\n$tech_psionic_shield$\n$tech_precognition_interface$\n$tech_psi_jump_drives$"
+ triggered_opinion_eotc_situation_stage1: "召唤终末"
 
  shroud.4140.title: "休戚与共"
  shroud.4140.desc: "我们的命运与$end_of_the_cycle_color_article$绑定在一起；祂的光环所到之处，我们的人口便兴盛繁衍。我们得到了一个简单的结论：妨碍光环就是妨碍[This.GetName]，就该彻底铲除。\n\n只要愿意，我们加可以抛开对军事目标的一切限制，毫不留情地征服敌人。没有什么可以阻挡终末的上上善道。"
  shroud.4140.a: "愿天命得以实现。"
- shroud.4140.a.tooltip: "解锁['concept_total_war']§H宣战理由§!\n其他帝国每个受到§H$end_aura$§!影响的星系对我国的$OPINION$降低：§R-15§!"
- triggered_opinion_eotc_situation_stage2: "召唤终末"
+ shroud.4140.a.tooltip: "解锁['concept_total_war']§H宣战理由§!\n$eotc_opinion_modifier_2_tooltip$"
+ triggered_opinion_eotc_situation_stage2: "终末先驱"
 
  shroud.4145.title: "铲除"
  shroud.4145.desc_1.common_1: "随着§R$end_aura$§!渐渐填满星系，我们感受到了越来越强烈的抵抗。"
@@ -4035,9 +4090,9 @@
  shroud.4145.desc_1.homicidal: "$shroud.4145.desc_1.common_1$我们敌人的反感正变得越来越根深蒂固。$shroud.4145.desc_1.common_2$"
  shroud.4145.desc_2: "受超主意愿的启发，我们发明了一种消耗能量和物质来充能光环的新方法。可以献祭这个宇宙的物质来推进终末。"
  shroud.4145.a: "必须尽我们所能。"
- shroud.4145.a.tooltip: "其他帝国对我国的$OPINION$：§R-500§!\n解锁法令：\n$t$—['edict:annihilation_of_matter', $edict_annihilation_of_matter$]\n$t$—['edict:annihilation_of_energy', $edict_annihilation_of_energy$][GetDimensionalCollapseEdictGain]"
+ shroud.4145.a.tooltip: "$eotc_opinion_modifier_3_tooltip$\n解锁法令：\n$t$—['edict:annihilation_of_matter', $edict_annihilation_of_matter$]\n$t$—['edict:annihilation_of_energy', $edict_annihilation_of_energy$][GetDimensionalCollapseEdictGain]"
  shroud.4145.dimensional_collapse: "\n$t$—['edict:dimensional_collapse', $edict_dimensional_collapse$]"
- triggered_opinion_eotc_situation_stage3: "终末先驱"
+ triggered_opinion_eotc_situation_stage3: "$triggered_opinion_eotc_situation_stage2$"
 
  shroud.4150.title: "终末之始"
  shroud.4150.desc: "我们的超主无言而说。我们感受到了轮回终末的迫近，新的能量也随之在[This.GetName]中涌动。这种紧迫感鼓舞着我们。\n\n如果我们想令终末之意满足，所有[This.GetSpeciesNamePlural]就需要把一切力量集中到同一个方向上。我们必须显现超主的力量，将祂的光环延伸到星系的最远处。"
@@ -4473,7 +4528,7 @@
  ACCORD_HUNGER_desc: "$the_eater_of_worlds_article_cap$渴望着战争。"
  ACCORD_DOOM: "末日"
  ACCORD_DOOM_desc: "我们将向最憎恶的仇敌释放$the_eater_of_worlds_article$的毁灭之意。"
- ACCORD_DOOM_TT: "自动与周边关系最差的帝国进入['concept_total_war']。\n将占领该帝国星球上所有的人口以§H$purge_sacrifice$§!的方式净化，其效果为：£happiness£§Y$HAPPINESS$§!：§G-1000%§!、$i_unity$：§G+5§!、$i_zro$：§G+2§!。"
+ ACCORD_DOOM_TT: "自动与周边关系最差的帝国进入['concept_total_war']。\n将占领该帝国星球上所有的人口以§H$purge_sacrifice$§!的方式净化，其效果为：§R-1000%§!£happiness£§Y$HAPPINESS$§!、§G+5§!$i_unity$、§G+2§!$i_zro$。"
  ACCORD_DIGEST: "消化"
  ACCORD_DIGEST_desc: "$the_eater_of_worlds_article$无尽的食欲必须满足。"
  ACCORD_DIGEST_TT: "我方§H$PSIONIC_AURA$§!内的敌对行星增加§Y$DEVASTATION$§!：§G+$@accord_digest_devastation|0$§!\n我方§H$PSIONIC_AURA$§!内的敌对舰船损失§Y$HULL$§!和§Y$ARMOR$§!：§G$@accord_digest_ship_malus|0%$§!\n$ACCORD_LOOSE_INTENSITY$"
@@ -4545,6 +4600,7 @@
  ACCORD_FRACTALIZATION: "分型化"
  ACCORD_FRACTALIZATION_desc: "$end_aura$将我们物理现实的一部分扭进了天幕中，产生向外螺旋放射的可用体积。一旦这些射线建立起来，它们就会一直存在，直到终末到来。"
  ACCORD_FRACTALIZATION_TT: "我方§H$PSIONIC_AURA$§!中的§Y$mod_station_researchers_produces_mult$§!与§Y$mod_station_gatherers_produces_mult$§!：§G+100%§!"
+ fractalization_effect_tt: "§Y$ACCORD_FRACTALIZATION$§!：$TABBED_NEW_LINE$$mod_station_researchers_produces_mult$：§G+[GetFractalizationValue]%§!$TABBED_NEW_LINE$$mod_station_gatherers_produces_mult$：§G+[GetFractalizationValue]%§!"
  ACCORD_FRACTALIZATION_TRIGGER: "£trigger_no£§R§Y$situation_end_of_the_cycle$§!§H局势§!已经达到$stage_2$§!"
  ACCORD_CREATION: "创造"
  ACCORD_CREATION_desc: "在这些消沉的岁月里，$end_of_the_cycle_article$对本现实越抓越牢。来自其他维度的整颗星球都可能被带到这里，而更多的则会被喂给无可逃避的虚无。"
@@ -4613,6 +4669,8 @@
  requires_valid_hindsight_target: "§R需要我方的§Y$PSIONIC_AURA$§!当前能影响到至少一个我方拥有的殖民地§!"
 
  purge_sacrifice: "献祭"
+ purge_sacrifice_tooltip: "受影响人口被献祭予$the_eater_of_worlds_color_article$，作为回报将赐予我们$i_zro$与$i_unity$。"
+ purge_sacrifice_tooltip_delayed: "§L吞噬者渴望的不止于战斗。敌者的尸体是心仪的贡品。§!"
  war_goal_wg_devour_total_war: "吞噬战争"
  war_goal_wg_devour_total_war_desc: "发动战争来填饱$the_eater_of_worlds_article$无尽的饥饿。"
  REFRESH_SPECIES_RIGHTS_EFFECT: "刷新物种权利"

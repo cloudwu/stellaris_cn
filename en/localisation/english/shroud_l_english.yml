@@ -216,7 +216,7 @@
 
  auth_shroud_machine_corporeal: "Psionic Grid"
  auth_shroud_machine_corporeal_desc: "By threading their networks through the veiled currents of the Shroud, these machines achieve near-instantaneous data transfer. Each byte imbued with a potent psionic will, this configuration is capable of greatly influencing the physical space around it."
- corporeal_machine_tt: "$corporeal_trait_tt$\n$MOD_PSIONIC_AURA_EFFECTIVENESS_MULT$ per $pop_group_unit$ $job_coordinator_with_icon$: $@corporeal_machine_coordinator_effectiveness|0=+%$\n$MOD_COUNCIL_AGENDA_PROGRESS_SPEED$: §G+25%§!\n$mod_pop_cat_complex_drone_bonus_workforce_mult$: §G+10%§!\n$mod_leaders_upkeep_mult$: §G-50%§!\n$mod_planet_bureaucrats_upkeep_mult$: §R+30%§!"
+ corporeal_machine_tt: "$corporeal_trait_tt$\n$MOD_PSIONIC_AURA_EFFECTIVENESS_MULT$ per $pop_group_unit$ $job_telepath_drone_swap_with_icon$: $@corporeal_machine_aura_effectiveness|0=+%$\n$MOD_COUNCIL_AGENDA_PROGRESS_SPEED$: §G+25%§!\n$mod_pop_cat_complex_drone_bonus_workforce_mult$: §G+10%§!\n$mod_leaders_upkeep_mult$: §G-50%§!\n$mod_planet_bureaucrats_upkeep_mult$: §R+30%§!"
  gov_shroud_corporeal_machine: "$auth_shroud_machine_corporeal$"
  gov_shroud_corporeal_machine_desc: "$auth_shroud_machine_corporeal_desc$"
 
@@ -227,6 +227,9 @@
  MOD_ATTUNEMENT_MULT: "Patron Attunement"
  mod_council_agenda_early_activation_cost_mult: "Council Agenda Early Launch Cost"
 
+#==========================
+# Policies
+#==========================
  policy_psionic_choir: "Psionic Choir"
  policy_psionic_choir_desc: "Telepaths gather to harmonize with the energies of the Shroud. Their melodies reverberate within the empire's psionic population, focusing and elevating their efforts."
  song_of_calming: "Song of Calming"
@@ -239,6 +242,19 @@
  song_of_luxury_desc: "A psionic lay of blissful indulgence.\n\n"
  song_of_knowing: "Song of Knowing"
  song_of_knowing_desc: "A psionic resonance of complex patterns and rhythms.\n\n"
+
+ policy_psionic_suppression_policy: "Psionic Suppression"
+ policy_psionic_suppression_policy_desc: "This policy controls whether or not we will dismantle devices that suppress $PSIONIC_AURA_PLURAL$ when taking control of a system."
+ psionic_suppression_dismantle: "Dismantle"
+ psionic_suppression_dismantle_name: "$psionic_suppression_dismantle$"
+ psionic_suppression_dismantle_desc: "Devices that suppress $PSIONIC_AURA_PLURAL$ will be automatically dismantled."
+ psionic_suppression_allow: "Allowed"
+ psionic_suppression_allow_name: "$psionic_suppression_allow$"
+ psionic_suppression_allow_desc: "Devices that suppress $PSIONIC_AURA_PLURAL$ will remain in place."
+
+ shroud.80.title: "Psionic Suppression Dismantled"
+ shroud.80.desc: "In taking control of the §H[from.GetName]§! system, we have discovered and subsequently dismantled machines capable of suppressing our $PSIONIC_AURA$."
+ shroud.80.a: "Our minds are freed."
 
 #==========================
 # Phenotype traits
@@ -863,6 +879,8 @@
  mod_planet_districts_generator_energy_upkeep_add: "$planet_districts_generators$ Energy Upkeep"
  mod_planet_districts_rw_generator_energy_upkeep_add: "$planet_districts_rw_generator$ Energy Upkeep"
  mod_planet_districts_rw_farming_energy_upkeep_add: "$planet_districts_rw_farming$ Energy Upkeep"
+ mod_planet_districts_hab_energy_energy_upkeep_add: "$planet_districts_hab_energy$ Energy Upkeep"
+ mod_planet_districts_hab_mining_energy_upkeep_add: "$planet_districts_hab_mining$ Energy Upkeep"
  MOD_BONUS_AUTOMATED_WORKFORCE_MULT: "Automated Workforce Efficiency"
 
  mod_job_technician_automated_workforce_mult: "$job_technician_plural_with_icon$ $MOD_PLANET_DISTRICT_AUTOMATED_WORKFORCE$"
@@ -981,6 +999,7 @@
  deed_complete_operation: "Infiltrating"
  deed_ascend_planet: "Ascending"
  deed_pick_mercantile_or_domination_tradition: "Incorporating"
+ deed_pick_logistics_or_domination_tradition: "$deed_pick_mercantile_or_domination_tradition$"
  deed_clear_blocker: "Clearing"
  deed_upgrade_building_capital: "Capitalizing"
  deed_upgrade_building_non_capital: "Building"
@@ -995,6 +1014,7 @@
  deed_clone_space_fauna: "Breeding"
  deed_consecrate_planet: "Consecrating"
  deed_pick_adaptability_or_expansion_tradition: "Expanding"
+ deed_pick_versatility_or_expansion_tradition: "$deed_pick_adaptability_or_expansion_tradition$"
  deed_apply_species_template: "Grafting"
  deed_apply_species_template_desc: "$t$Multiplied by the number of modified £pop£ $POPS$."
  deed_host_new_species: "Hosting"
@@ -1346,6 +1366,15 @@
  enclaves_built: "$ENCLAVE_MINDWARDEN_PLURAL$ established"
  dividends_received: "Dividends received"
  shroud_seals_built: "$SHROUD_SEAL_PLURAL$ in the galaxy"
+
+ chain_aura_suppressors_title: "§H$PSIONIC_AURA$§! Impedance"
+ chain_aura_suppressors_desc: "The §H$end_aura$§! is being challenged by foreign devices capable of psionic attenuation. The will of our patron compels us to dismantle these blasphemous machines."
+ chain_aura_suppressors_seal: "§H$SHROUD_SEAL$§! in §Y[prev.GetName]§!"
+ chain_aura_suppressors_seal_desc: "A $SHROUD_SEAL$ in the [prev.GetName] system challenges the reach of the §H$end_aura$§!.\n\n§RIt must be dismantled.§!"
+ chain_aura_suppressors_suppressor: "§H$building_psionic_suppressor$§! on §Y[prev.GetName]§!"
+ chain_aura_suppressors_suppressor_desc: "The $building_psionic_suppressor$ on [prev.GetName] challenges the reach of the §H$end_aura$§!.\n\n§RWe must destroy it.§!"
+ chain_aura_suppressors_ward: "§H$building_ancient_ward_2$§! on §Y[prev.GetName]§!"
+ chain_aura_suppressors_ward_desc: "A so-called $building_ancient_ward_2$ on [prev.GetName] challenges the reach of the §H$end_aura$§!.\n\n§RWe must destroy it.§!"
 
 #==========================
 # Events
@@ -2053,6 +2082,17 @@
  superstitious_beliefs_high_priest_corporate: "$job_superstitious_beliefs_high_priest_corporate$"
  job_superstitious_beliefs_high_priest_corporate_icon: "£job_superstitious_beliefs_high_priest_corporate£"
 
+ # Superstitious Beliefs & Death Cult
+ corpse_reader: "Corpse Reader"
+ job_corpse_reader: "$corpse_reader$"
+ job_corpse_reader_plural: "Corpse Readers"
+ job_corpse_reader_desc: "By observing and interpreting each corpse's unique decomposition, the mysteries of the galaxy will be revealed to us."
+
+ corpse_broker: "Corpse Broker"
+ job_corpse_broker: "$corpse_broker$"
+ job_corpse_broker_plural: "Corpse Brokers"
+ job_corpse_broker_desc: "The organs and bones of the deceased can fetch a good price as supplies for divination rituals."
+
 # Test Subjects
  # Test Subjects (Normal)
  job_test_subject: "Test Subject"
@@ -2132,6 +2172,11 @@
  covenant_composer_telepath_gestalt_tt: "$MOD_POP_ASSEMBLY_SPEED$ per $pop_group_unit$ $job_telepath_swap_plural_with_icon$: $@telepath_composer_growth|0=+%$"
  covenant_whisperers_telepath_tt: "£research£ Research per $pop_group_unit$ $job_telepath_swap_plural_with_icon$: $@telepath_whisperers_research|0=+$"
 
+# Purge Sacrifice jobs
+ job_purge_sacrifice: "$purge_sacrifice$"
+ job_purge_sacrifice_plural: "$purge_sacrifice$"
+ job_purge_sacrifice_desc: "$purge_sacrifice_tooltip_delayed$"
+
 #==========================
 # Messages
 #==========================
@@ -2177,7 +2222,7 @@
  MESSAGE_PSIONIC_AURA_MAX_INTENSITY_DESC: "Our §Y$PSIONIC_AURA$§! in §H$SYSTEM$§! has reached maximum intensity and manifested a blessing from our Patron."
  aura_intensity_lost_level_tt: "$PSIONIC_AURA$ Intensity level: §R-1§!"
  MESSAGE_PSIONIC_AURA_MAX_INTENSITY_whisperers_in_the_void_DESC: "$MESSAGE_PSIONIC_AURA_MAX_INTENSITY_DESC$\n- Gain $VALUE$ Research\n- $aura_intensity_lost_level_tt$"
- MESSAGE_PSIONIC_AURA_MAX_INTENSITY_the_eater_of_worlds_DESC: "$MESSAGE_PSIONIC_AURA_MAX_INTENSITY_DESC$\n- Corvettes manifested in $SYSTEM$: §Y10§!\n- $aura_intensity_lost_level_tt$"
+ MESSAGE_PSIONIC_AURA_MAX_INTENSITY_the_eater_of_worlds_DESC: "$MESSAGE_PSIONIC_AURA_MAX_INTENSITY_DESC$\n- Corvettes manifested in $SYSTEM$: §Y[GetEaterOfWorldsSpawnedCorvettesScaled]§!\n- $aura_intensity_lost_level_tt$"
  MESSAGE_PSIONIC_AURA_MAX_INTENSITY_the_cradle_of_souls_DESC: "$MESSAGE_PSIONIC_AURA_MAX_INTENSITY_DESC$\n- Defense Platforms in $STARBASE$: §G+5§!\n- $aura_intensity_lost_level_tt$"
  MESSAGE_PSIONIC_AURA_MAX_INTENSITY_the_instrument_of_desire_DESC: "$MESSAGE_PSIONIC_AURA_MAX_INTENSITY_DESC$\n- Planetary Ascensions available in $SYSTEM$: §G$VALUE$§!\n- $aura_intensity_lost_level_tt$"
  MESSAGE_PSIONIC_AURA_MAX_INTENSITY_the_composer_of_strands_DESC: "$MESSAGE_PSIONIC_AURA_MAX_INTENSITY_DESC$\n- $d_shroudstone$ blockers added to $SYSTEM$: §Y$VALUE$§!\n- $aura_intensity_lost_level_tt$"
@@ -2753,8 +2798,14 @@
  po_pick_mercantile_or_domination_tradition: "Adopt a £traditions£ §H$tradition_domination$§! or §H$tradition_mercantile$§! Tradition."
  po_pick_mercantile_or_domination_tradition_plural: "Adopt £traditions£ §H$tradition_domination$§! or §H$tradition_mercantile$§! Traditions: ($INDEX$/$MAX$)"
 
+ po_pick_logistics_or_domination_tradition: "Adopt a £traditions£ §H$tradition_domination$§! or §H$tradition_logistics$§! Tradition."
+ po_pick_logistics_or_domination_tradition_plural: "Adopt £traditions£ §H$tradition_domination$§! or §H$tradition_logistics$§! Traditions: ($INDEX$/$MAX$)"
+
  po_pick_adaptability_or_expansion_tradition: "Adopt an £traditions£ §H$tradition_adaptability$§! or §H$tradition_expansion$§! Tradition."
  po_pick_adaptability_or_expansion_tradition_plural: "Adopt £traditions£ §H$tradition_adaptability$§! or §H$tradition_expansion$§! Traditions: ($INDEX$/$MAX$)"
+
+ po_pick_versatility_or_expansion_tradition: "Adopt a £traditions£ §H$tradition_versatility$§! or §H$tradition_expansion$§! Tradition."
+ po_pick_versatility_or_expansion_tradition_plural: "Adopt £traditions£ §H$tradition_versatility$§! or §H$tradition_expansion$§! Traditions: ($INDEX$/$MAX$)"
 
  po_psionically_assimilate_pop: "Psionically assimilate a £pop£ Pop."
  po_psionically_assimilate_pop_plural: "Psionically assimilate £pop£ Pops: ($INDEX$/$MAX$)"
@@ -3162,9 +3213,9 @@
 # End of the Cycle
  situation_end_of_the_cycle: "$name_eotc$"
  situation_end_of_the_cycle_desc: "We have forged a Covenant with $end_of_the_cycle_color_article$, granting us overwhelming power. Our [Owner.GetTelepathPlural] theorize that the cost of our bargain can be deferred by collective psionic trance - but only for so long.\n\nThe will of our patron is manifested in an intense $PSIONIC_AURA$. If we intend to realize the End, the spread of this Aura must be our ultimate goal. As our numbers grow, and the strength of our minds increases, so too will the Aura's power and reach.\n\nSystems remaining to be conquered: §Y[Owner.GetEndCycleGalaxySystemsLeft]§!"
- situation_end_of_the_cycle_effects_1: "When this phase passes, the power of §H$ACCORD_CREATION$§! shall be bestowed on us."
- situation_end_of_the_cycle_effects_2: "When this phase passes, the power of §H$ACCORD_DISTORTION$§! shall be bestowed on us."
- situation_end_of_the_cycle_effects_3: "When this phase passes, the power of §H$ACCORD_INTENSIFICATION$§! shall be bestowed on us."
+ situation_end_of_the_cycle_effects_1: "When this phase passes, the power of §H$ACCORD_CREATION$§! shall be bestowed on us.\n$eotc_opinion_modifier_tooltip$"
+ situation_end_of_the_cycle_effects_2: "When this phase passes, the power of §H$ACCORD_DISTORTION$§! shall be bestowed on us.\n$eotc_opinion_modifier_tooltip$\n$eotc_opinion_modifier_2_tooltip$"
+ situation_end_of_the_cycle_effects_3: "When this phase passes, the power of §H$ACCORD_INTENSIFICATION$§! shall be bestowed on us.\n$eotc_opinion_modifier_tooltip$\n$eotc_opinion_modifier_3_tooltip$"
  situation_end_of_the_cycle_effects_4: "When this phase passes, the price of our power shall be revealed."
  approach_situation_end_of_the_cycle_let_it_come: "Let It Come"
  approach_situation_end_of_the_cycle_be_cautious: "Be Cautious"
@@ -3176,9 +3227,12 @@
  situation_end_of_the_cycle_finish_effects: "§RThere will be a reckoning.§!"
  initial_absorbed_consciousness_bonus: "Absorbed Consciousness"
  absorbed_consciousness_intensification_1: "Absorbed Consciousness Intensification"
- absorbed_consciousness_intensification_2: "Absorbed Consciousness Intensification"
- absorbed_consciousness_intensification_3: "Absorbed Consciousness Intensification"
- absorbed_consciousness_intensification_4: "Absorbed Consciousness Intensification"
+ absorbed_consciousness_intensification_2: "$absorbed_consciousness_intensification_1$"
+ absorbed_consciousness_intensification_3: "$absorbed_consciousness_intensification_1$"
+ absorbed_consciousness_intensification_4: "$absorbed_consciousness_intensification_1$"
+ eotc_opinion_modifier_tooltip: "Other empires' $OPINION$ of us for each of their systems affected by the §H$end_aura$§!: §R-15§!"
+ eotc_opinion_modifier_2_tooltip: "Other empires' $OPINION$ of us: §R-200§!"
+ eotc_opinion_modifier_3_tooltip: "Other empires' $OPINION$ of us: §R-500§!"
 
  shroud.4950.title: "Malevolent Aura"
  shroud.4950.desc.1: "Our data indicate that this Aura has extremely deleterious effects. Without countermeasures, it is projected to spread rapidly throughout the galaxy."
@@ -4015,18 +4069,19 @@
  shroud.4135.title: "$end_of_the_cycle_article_cap$"
  shroud.4135.desc: "Without warning, we are torn into the Shroud. A looming presence assaults our minds.\n\nIt is $end_of_the_cycle_color_article$ and it has always been waiting for us. Our [GetTelepathPlural] suddenly call out from within their trance, a dozen voices in a perfect unison: §R\"IT IS NOT YET YOUR TIME.\"§! A pause. §R\"BUT IT COULD BE.\"§!\n\nNothing more is said, but a bargain has been offered - we know that much. Power, knowledge and wealth beyond measure are ours for the taking.\n\n§RIf we will only bring forth the End.§!"
  shroud.4135.a: "$utopia.3308.a$"
- shroud.4135.a.tt: "Replaces the domains of all known patrons with $end_of_the_cycle_color_article$.\nWe will be granted at least 50 years to consume the galaxy in the §H$end_aura$§!. If we succeed, the game ends.\n$covenant.cycle.tooltip$$shroud.8450.a.tech_tooltip$\n$shroud.4135.psionic_components_insight$\n\nRevert the Accords of all other Patrons"
+ shroud.4135.a.tt: "Replaces the domains of all known patrons with $end_of_the_cycle_color_article$.\nWe will be granted at least 50 years to consume the galaxy in the §H$end_aura$§!. If we succeed, the game ends.\n$covenant.cycle.tooltip$$shroud.8450.a.tech_tooltip$\n$shroud.4135.psionic_components_insight$\n\nRevert the Accords of all other Patrons\n$eotc_opinion_modifier_tooltip$"
  shroud.4135.b: "Exit the Shroud and try to forget."
  shroud.4135.b.forging_our_own_path: "Our path is set. We walk alone."
  shroud.4135.psionic_components_insight: "Tech progress gained on all ['concept_psionic_components']: §G+10%§!"
  concept_psionic_components: "Psionic Components"
  concept_psionic_components_desc: "$tech_psionic_bombers$\n$tech_psionic_lightning$\n$tech_psionic_disruptor$\n$tech_zro_launcher$\n$tech_psionic_shield$\n$tech_precognition_interface$\n$tech_psi_jump_drives$"
+ triggered_opinion_eotc_situation_stage1: "Summoning the End"
 
  shroud.4140.title: "All or Nothing"
  shroud.4140.desc: "Our fate is bound to $end_of_the_cycle_color_article$; wherever its Aura flourishes, so too does our population. A simple conclusion has arisen within us: anything that impedes the Aura impedes the [This.GetName], and so must be eliminated.\n\nShould we wish it, we can cast aside any existing limits on our military aims and conquer our enemies without mercy. Nothing need stand in the way of the End's supremacy."
  shroud.4140.a: "May destiny be fulfilled."
- shroud.4140.a.tooltip: "Gain access to the ['concept_total_war'] §HCasus Belli§!\nOther empires' $OPINION$ of us for each of their systems affected by the §H$end_aura$§!: §R-15§!"
- triggered_opinion_eotc_situation_stage2: "Summoning the End"
+ shroud.4140.a.tooltip: "Gain access to the ['concept_total_war'] §HCasus Belli§!\n$eotc_opinion_modifier_2_tooltip$"
+ triggered_opinion_eotc_situation_stage2: "Harbingers of the End"
 
  shroud.4145.title: "Annihilation"
  shroud.4145.desc_1.common_1: "As the §R$end_aura$§! suffuses the galaxy, we sense a growing resistance."
@@ -4035,9 +4090,9 @@
  shroud.4145.desc_1.homicidal: "$shroud.4145.desc_1.common_1$ Our enemies' antipathy is becoming ever more entrenched. $shroud.4145.desc_1.common_2$"
  shroud.4145.desc_2: "Inspired by our patron's will, we have devised new methods of expending energy and matter to fuel the Aura. The very stuff of the universe may be sacrificed to advance the End."
  shroud.4145.a: "We must do all that is necessary."
- shroud.4145.a.tooltip: "Other empires' $OPINION$ of us: §R-500§!\nUnlocks Edicts:\n$t$- ['edict:annihilation_of_matter', $edict_annihilation_of_matter$]\n$t$- ['edict:annihilation_of_energy', $edict_annihilation_of_energy$][GetDimensionalCollapseEdictGain]"
+ shroud.4145.a.tooltip: "$eotc_opinion_modifier_3_tooltip$\nUnlocks Edicts:\n$t$- ['edict:annihilation_of_matter', $edict_annihilation_of_matter$]\n$t$- ['edict:annihilation_of_energy', $edict_annihilation_of_energy$][GetDimensionalCollapseEdictGain]"
  shroud.4145.dimensional_collapse: "\n$t$- ['edict:dimensional_collapse', $edict_dimensional_collapse$]"
- triggered_opinion_eotc_situation_stage3: "Harbingers of the End"
+ triggered_opinion_eotc_situation_stage3: "$triggered_opinion_eotc_situation_stage2$"
 
  shroud.4150.title: "The Coming of the End"
  shroud.4150.desc: "Our patron speaks silently. As we sense the imminence of cycle's end, renewed energy surges throughout the [This.GetName]. We are invigorated with urgency.\n\nIf we wish to satisfy the will of the End, the collective energy of all [This.GetSpeciesNamePlural] must be applied toward one purpose. We must manifest our patron's power, and complete the spread of its Aura to the furthest reaches of the galaxy."
@@ -4473,7 +4528,7 @@
  ACCORD_HUNGER_desc: "$the_eater_of_worlds_article_cap$ is ravenous for conflict."
  ACCORD_DOOM: "Doom"
  ACCORD_DOOM_desc: "We will unleash the destructive will of $the_eater_of_worlds_article$ upon our most hated enemy."
- ACCORD_DOOM_TT: "Automatically enter ['concept_total_war'] with the neighboring empire we have the worst relations with.\nSets all pops from that empire on occupied planets to be Purged by §H$purge_sacrifice$§! with the following effects: £happiness£ §Y$HAPPINESS$§!: §G-1000%§!, $i_unity$: §G+5§!, $i_zro$: §G+2§!."
+ ACCORD_DOOM_TT: "Automatically enter ['concept_total_war'] with the neighboring empire we have the worst relations with.\nSets all pops from that empire to be Purged by §H$purge_sacrifice$§! with the following effects: §R-1000%§! £happiness£ §Y$HAPPINESS$§!, §G+5§! $i_unity$, §G+2§! $i_zro$."
  ACCORD_DIGEST: "Digest"
  ACCORD_DIGEST_desc: "The limitless appetite of $the_eater_of_worlds_article$ must be sated."
  ACCORD_DIGEST_TT: "§Y$DEVASTATION$§! on war opponents' planets within our §H$PSIONIC_AURA$§!: §G+$@accord_digest_devastation|0$§!\n§Y$HULL$§! and §Y$ARMOR$§! of war opponents' ships within our §H$PSIONIC_AURA$§!: §G$@accord_digest_ship_malus|0%$§!\n$ACCORD_LOOSE_INTENSITY$"
@@ -4545,6 +4600,7 @@
  ACCORD_FRACTALIZATION: "Fractalization"
  ACCORD_FRACTALIZATION_desc: "The $end_aura$ twists portions of our physical reality into the Shroud, granting unexplored volumes with which to spiral outward. Once these threads are established, they remain in place until the End arrives."
  ACCORD_FRACTALIZATION_TT: "§Y$mod_station_researchers_produces_mult$§! and §Y$mod_station_gatherers_produces_mult$§! within our §H$PSIONIC_AURA$§!: §G+100%§!"
+ fractalization_effect_tt: "From §Y$ACCORD_FRACTALIZATION$§!:$TABBED_NEW_LINE$$mod_station_researchers_produces_mult$: §G+[GetFractalizationValue]%§!$TABBED_NEW_LINE$$mod_station_gatherers_produces_mult$: §G+[GetFractalizationValue]%§!"
  ACCORD_FRACTALIZATION_TRIGGER: "£trigger_no£ §R§Y$situation_end_of_the_cycle$§! §HSituation§! $stage_2$ has been reached§!"
  ACCORD_CREATION: "Creation"
  ACCORD_CREATION_desc: "In these waning years, $end_of_the_cycle_article$'s grip on this reality strengthens. Whole worlds from other dimensions can be brought into this one, feeding even more into inevitable nothingness."
@@ -4613,6 +4669,8 @@
  requires_valid_hindsight_target: "§RRequires that our §Y$PSIONIC_AURA$§! is currently affecting at least one of our owned colonies§!"
 
  purge_sacrifice: "Sacrifice"
+ purge_sacrifice_tooltip: "Affected Pops are offered in sacrifice to $the_eater_of_worlds_color_article$, which repays us in $i_zro$ and $i_unity$."
+ purge_sacrifice_tooltip_delayed: "§LThe Eater craves more than conflict alone. The bodies of our enemies are fitting tribute.§!"
  war_goal_wg_devour_total_war: "Devouring War"
  war_goal_wg_devour_total_war_desc: "War is waged to sate the endless hunger of $the_eater_of_worlds_article$."
  REFRESH_SPECIES_RIGHTS_EFFECT: "Refresh Species Rights"

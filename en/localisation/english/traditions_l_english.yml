@@ -786,7 +786,12 @@
  tr_psionics_psi_corps_delayed_machine:0 "The Psi Corps, like an ever-vigilant eye, will keep watch over our [GetCitizenPlural], defending society from those who might do it harm."
 
  tr_psionics_psionic_assimilation:0 "Great Awakening"
- tr_psionics_psionic_assimilation_desc:0 "All §Y$trait_latent_psionic$§! species will unlock their full psionic potential.\nAllows §YPsionic Assimilation§! of other species, unlocking their latent abilities."
+ tr_psionics_psionic_assimilation_desc:0 "All §Y$trait_latent_psionic$§! species will unlock their full psionic potential.\nAllows §YPsionic Assimilation§! of other species, unlocking their latent abilities.\n[GetPsionicAssimilationEffectShroud]"
+ tr_psionics_psionic_assimilation_desc_indiv_organic: "$CAN_ASSIMILATE_HIVES$."
+ tr_psionics_psionic_assimilation_desc_hive_mind: "$CAN_ASSIMILATE_HIVES$."
+ tr_psionics_psionic_assimilation_desc_indiv_machine: "Can assimilate §YMachine§! and §YMechanical§! Species."
+ tr_psionics_psionic_assimilation_desc_gestalt_machine: "$tr_psionics_psionic_assimilation_desc_indiv_machine$"
+ tr_psionics_psionic_assimilation_desc_driven_assimilators: "$tr_psionics_psionic_assimilation_desc_indiv_machine$\nRetains the ability to assimilate §YOrganic species§! through §H$living_standard_ego_assimilation$§!.\n$CAN_ASSIMILATE_HIVES$."
  tr_psionics_psionic_assimilation_delayed:0 "The eye that pierces all veils is closed. Only with great effort can it be opened, and our true power awakened."
 
  tr_psionics_breach_shroud:0 "Breach the Shroud"
@@ -1184,7 +1189,7 @@
 
  requires_ap_mind_over_matter:2 "$TRIGGER_FAIL$Requires the §Y$ap_mind_over_matter$§! Ascension Perk or the §Y$origin_shroudwalker_apprentice$§! Origin."
  requires_not_ap_mind_over_matter:1 "$TRIGGER_FAIL$May not have the §Y$ap_mind_over_matter$§! Ascension Perk."
- describe_decision_mastery_of_nature:1 "§YUnlocks Decision:§! Mastery of Nature$TABBED_NEW_LINE$- Max Districts §Y+2§! $TABBED_NEW_LINE$- Max Resource Districts from Planetary Features §G+50%§!"
+ describe_decision_mastery_of_nature:1 "Chance for §YBlocker Clearing§! Research Options: §G×4§!\n§YUnlocks Decision:§! Mastery of Nature$TABBED_NEW_LINE$- Max Districts: §Y+2§! $TABBED_NEW_LINE$- Max Resource Districts from Planetary Features: §G+50%§!"
  decision_mastery_of_nature:1 "Mastery of Nature"
  decision_mastery_of_nature_desc:0 "[GetMasteryOverNatureDecisionDesc]"
  decision_mastery_of_nature_desc_normal:0 "Our civilization requires room to grow, so we shall make that room. Nature must not stand in the way of progress."

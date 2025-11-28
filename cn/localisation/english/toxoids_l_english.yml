@@ -36,8 +36,8 @@
  mod_job_squire_per_pop:0 "每$VALUE$个人口提供§G+1§!个[squire.GetName]岗位"
  mod_job_squire_per_pop_short:0 "\n每$VALUE$£pop£ §G+1§!£mod_job_squire_add£"
 
- knights_more_unity_tooltip:1 "[knight.GetIcon]§Y[knight.GetNamePlural]§!会额外产生§G+3§!£unity£凝聚力，§Y维护费§! 上升§R15%§!。\n£job_knight_commander£§Y$job_knight_commander$§!会生产额外§G+4§!£unity£凝聚力。"
- knights_more_research_tooltip:1 "[knight.GetIcon]§Y[knight.GetNamePlural]§!会额外产生§G+2§!£physics_research£ £society_research£ £engineering_research£研究，§Y维护费§! 上升§R15%§!。\n£job_knight_commander£§Y$job_knight_commander$§!会生产额外§G+2§!£physics_research£ £society_research£ £engineering_research£研究。"
+ knights_more_unity_tooltip:1 "[knight.GetIcon]§Y[knight.GetNamePlural]§!会额外产生§G+2§!£unity£凝聚力，并且其§Y维护费§!提高§R15%§!。\n£job_knight_commander£§Y$job_knight_commander$§!会生产额外§G+4§!£unity£凝聚力。"
+ knights_more_research_tooltip:1 "[knight.GetIcon]§Y[knight.GetNamePlural]§!现在将额外生成§G+1§!的£physics_research£ £society_research£ £engineering_research£研究，其§Y维护费§!增加§R15%§!。\n£job_knight_commander£§Y$job_knight_commander$§!现在将额外生成§G+2§!的£physics_research£ £society_research£ £engineering_research£研究。"
 
  job_knight_commander:0 "骑士领主"
  job_knight_commander_plural:0 "骑士领主"
@@ -316,7 +316,6 @@
  toxoids.7165.a:0 "我们还会再见面的，毫无疑问。"
  toxoids.7165.a.tooltip:0 "激光刃也可以转化为实用的工具。\n\n§Y[knight.GetNamePlural]§!将提升全帝国的£alloys£§Y合金§!产出。"
  luminous_blades:1 "光刃"
- luminous_blades_tt: "$MOD_ARMY_DAMAGE_MULT$：§G+25%§!\n[knight.GetIcon]§Y[knight.GetName]§!岗位取消$r_alloys$维护费"
  luminous_blades_desc:1 "骗术师的激光刃可以作为我们骑士军备中的得力工具。"
 
  toxoids.7195.name:0 "[questing_knight_15.GetFirstName]骑士传：林中女巫"
@@ -412,7 +411,7 @@
  toxoids.7315.name:0 "毒圣试炼：通过考验"
  toxoids.7315.desc:0 "毒圣被打败了，如今听任我们摆布。\n\n分析表明，虽然其分泌物的化学成分与我们在母星上发现的成分相近，但并不完全相同。难道这是真神的后裔？或者还有其他的同类？或者这只是一头普通的太空野兽？无论真相是什么，我们的科学家都认为经过悉心照料它可以恢复健康。我们可以随意差遣它了。"
  toxoids.7315.a:0 "噢毒圣啊，将我们的敌人毁灭殆尽！ "
- toxoids.7315.a.tt:0 "试炼完成。已成功控制§Y毒圣§!，可作为毒化星球的§Y巨像§!。§R由于试炼完毕，许多[knight.GetIcon]骑士将会逐渐离开骑士团。§!"
+ toxoids.7315.a.tt:0 "结束任务。控制§Y毒素之神§!，一座可毒化星球的§Y巨像§!。\n解锁将§Y有毒星球改造为适居星球的环境改造候选项§!。在我们的边界内共有§Y[This.num_toxic_terraform_candidates]§!个此类存在。\n§R任务结束后，许多[knight.GetIcon]骑士最终会离开该教团。§!"
  toxoids.7315.b:0 "这不是我们的神。屠戮它！"
  toxoids.7315.b.tt:0 "骗术师终究是对的。这不是我们的神。试炼还要继续。"
  toxoids.7320.name:0 "骑士团的命运"
@@ -799,7 +798,7 @@
  excessive_endurance_tooltip:0 "宜居性：§G+30%§!$TABBED_NEW_LINE$- $MOD_POP_BONUS_WORKFORCE_MULT$：§G+5%§!"
 
  edict_damn_the_consequences:0 "不问后果"
- edict_damn_the_consequences_desc: "该法令将我们的基因修饰推向极致，使其效果翻倍，但同时也使出现恶性副作用的概率有所上升，包括突发灾难性的爆燃。\n\n§R无惧后果将无视['concept_edict_fund']，并始终消耗你每月$unity_with_icon$收入的80%！§!"
+ edict_damn_the_consequences_desc:1 "该法令将我们的基因修饰推向极致，使其效果翻倍，但同时也使出现恶性副作用的概率有所上升，包括突发灾难性的爆燃。\n\n§R无惧后果将无视['concept_edict_fund']，并始终消耗你每月$unity_with_icon$收入的80%！§!"
  edict_damn_the_consequences_effects:0 "所有因§H强夺天工§!而导致的正面效果翻倍。"
 
  # Deposit for Exotic Metabolism

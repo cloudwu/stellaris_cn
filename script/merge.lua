@@ -10,10 +10,10 @@ local function readlist(path, ...)
 end
 
 local data = {
-	official_cn = readlist("4.05/simp_chinese", { ["_english"] = "_simp_chinese" }),
-	cloudwu_cn = readlist "3.14/mod/localisation/english",
-	en_last = readlist "3.14/english",
-	en_current = readlist "4.05/english",
+	official_cn = readlist("4.2/simp_chinese", { ["_english"] = "_simp_chinese" }),
+	cloudwu_cn = readlist "4.1/chinese",
+	en_last = readlist "4.1/english",
+	en_current = readlist "4.2/english",
 }
 
 local function english_only(en, s)
@@ -312,10 +312,10 @@ local function gen(output_path, input_path, filename, data)
 end
 
 local function output(data)
-	local list = filelist.filelist (root .. "4.05/english/")
+	local list = filelist.filelist (root .. "4.2/english/")
 	for _, filename in ipairs(list) do
 		gen(root .. "cn/localisation/english/" ,
-			root .. "4.05/english/" ,
+			root .. "4.2/english/" ,
 			filename, data)
 	end
 end

@@ -1,0 +1,444 @@
+﻿l_english:
+
+# Ascension Perk
+ ap_galactic_hyperthermia: "星系热症"
+ ap_galactic_hyperthermia_desc: "宇宙诞生于火焰，却冷却为黑暗险恶之地。要繁荣昌盛，我们必须提高温度，即便这会导致其他生命消亡。"
+ must_be_infernals: "$TRIGGER_FAIL$要求人口为地狱者。"
+
+# UI
+ entropy_crystals: "结晶熵"
+ entropy_crystals_name: "$entropy_crystals$："
+ entropy_crystals_value: "£entropy_crystals£ $VAL|0$"
+ entropy_crystals_gaining: "完成§H危机目标§!以获得更多£entropy_crystals£§Y$entropy_crystals$§!。"
+ entropy_crystals_desc: "这片参差闪烁的能量矩阵竟能保持稳定，刚好能够作为燃料运输或嵌入设备。"
+ mod_country_base_entropy_crystals_produces_add: "每月£entropy_crystals£$entropy_crystals$"
+ entropy_crystals_crisis_objective: "$menace_crisis_objective$"
+ entropy_crystals_crisis_objective_gained: "获得£entropy_crystals£"
+ entropy_crystals_crisis_objective_reward: "$REWARD$"
+ entropy_crystals_crisis_objective_progress: "我们从此危机目标中获得了£entropy_crystals£$AMOUNT$。"
+ entropy_crystals_crisis_level_locked: "解锁该等级需要：\n" # remove?
+ entropy_crystals_crisis_level_unlocked: "达到$LEVEL$可获得下列奖励：\n"
+ entropy_crystals_crisis_level_desc: "要提升危机等级，需要累积$entropy_crystals$并建造§Y$galactic_crucible_4$§!。"
+ entropy_crystals_crisis_level_unlock: "拥有£entropy_crystals£§Y$CURRENCY$§!$entropy_crystals$"
+ entropy_crystals_current_value: "当前值：§Y$VALUE|0$§!"
+ entropy_crystals_crisis_description_title: "$ap_galactic_hyperthermia$"
+ entropy_crystals_crisis_description: "$menace_crisis_description_intro$\n\n操控能量的新方法，将大幅增强我们的实力。需利用群星之火点燃新时代。"
+ entropy_crystals_crisis_howto_title: "力量源泉"
+ entropy_crystals_crisis_howto: "完成§H危机目标§!产生£entropy_crystals£§H$entropy_crystals$§!，用于升级$galactic_crucible_4$并解锁下一危机等级。"
+
+# Level
+ crisis_hyperthermia_already_ongoing: "另一个帝国已开始控制银河系核心。"
+ crisis_hyperthermia_already_happened: "另一个帝国已控制银河系核心并重塑了星系。"
+ crisis_hyperthermia_level_1: "§R关注§!"
+ crisis_hyperthermia_level_1_desc: "$crisis_level_1_desc$"
+ crisis_hyperthermia_lv1_tt: "£trigger_yes£已完成§Y$INF_CRISIS_ENTROPY$§!特殊项目"
+ crisis_hyperthermia_lv1_req_tt: "£trigger_no£已完成§Y$INF_CRISIS_ENTROPY$§!特殊项目"
+ crisis_hyperthermia_level_2: "§R风险§!"
+ crisis_hyperthermia_level_2_desc: "$crisis_level_2_desc$"
+ crisis_hyperthermia_lv2_tt: "£trigger_yes£已建成§Y$galactic_crucible_0$§!巨型结构并升级为§Y$galactic_crucible_1$§!"
+ crisis_hyperthermia_lv2_req_tt: "£trigger_no£已建成§Y$galactic_crucible_0$§!巨型结构并升级为§Y$galactic_crucible_1$§!"
+ crisis_hyperthermia_level_3: "§R危险§!"
+ crisis_hyperthermia_level_3_desc: "$crisis_level_3_desc$"
+ crisis_hyperthermia_lv3_tt: "£trigger_yes£已升级§Y$galactic_crucible_1$§!巨型结构"
+ crisis_hyperthermia_lv3_req_tt: "£trigger_no£已升级§Y$galactic_crucible_1$§!巨型结构"
+ crisis_hyperthermia_level_4: "§R灾难§!"
+ crisis_hyperthermia_level_4_desc: "$crisis_level_4_desc$"
+ crisis_hyperthermia_lv4_tt: "£trigger_yes£已升级§Y$galactic_crucible_2$§!巨型结构"
+ crisis_hyperthermia_lv4_req_tt: "£trigger_no£已升级§Y$galactic_crucible_2$§!巨型结构"
+ crisis_hyperthermia_dec_lv4_tt: "£trigger_yes£已完成§Y$INF_CRISIS_ENTROPY_EVIL$§!特殊项目"
+ crisis_hyperthermia_lv4_dec_req_tt: "£trigger_no£已完成§Y$INF_CRISIS_ENTROPY_EVIL$§!特殊项目"
+ crisis_hyperthermia_level_5: "§R现存威胁§!"
+ crisis_hyperthermia_level_5_desc: "$crisis_level_5_desc$"
+ crisis_hyperthermia_lv5_tt: "£trigger_yes£已升级§Y$galactic_crucible_3$§!巨型结构"
+ crisis_hyperthermia_lv5_req_tt: "£trigger_no£已升级§Y$galactic_crucible_3$§!巨型结构"
+
+# MPerks Level 1
+ menp_hyperthermia_crystals: "$entropy_crystals$"
+ menp_hyperthermia_crystals_desc: "§Y$entropy_crystals$§!标志受控能量不稳定化领域的突破。掌控有此不稳定资源，我们能重塑星系秩序。"
+ unlocks_entropy_objectives: "通过完成§H危机目标§!积累£entropy_crystals£§Y$entropy_crystals$§!。"
+ menp_hyperthermia_harnessing: "熵能利用"
+ menp_hyperthermia_harnessing_desc: "将§Y$entropy_crystals$§!合成融入工业，实现对不稳定资源的更高效利用，使技术重点契合战略目标。"
+ unlocks_entropy_edict: "§H解锁法令：§!$edict_entropy_harnessing$"
+ menp_hyperthermia_crucible: "星系熔炉"
+ menp_hyperthermia_crucible_desc: "这座计划中的熔炉将成为利用恒星熵能的核心引擎。它能够将熵能结晶化并实现传输，将成为我们炽热力量的象征，照耀整个星际。"
+ unlocks_galactic_crucible: "§H解锁巨型结构：§!$galactic_crucible_0$"
+
+# MPerks Level 2
+ menp_hyperthermia_conc_entropy: "浓缩熵能"
+ menp_hyperthermia_conc_entropy_desc: "$entropy_conduit_plural$对现阶段实力扩张至关重要。提升熔炉产出将加快向辉煌燃烧未来迈进。"
+ unlocks_conduit_spawn: "§H$UNLOCKS_SHIP_TYPE$：§!$entropy_conduit$\n—§Y$entropy_conduit_plural$$LENS_FLARE_BEAM$§!由§Y$galactic_crucible_4$§!自动产生并飞赴邻近星系。\n—目标星系内殖民地获得加成。\n—装备£ship_xl_slot£§Y§!武器，命中敌人可使其瘫痪数日。\n\n"
+ menp_hyperthermia_radiant: "光辉野心"
+ menp_hyperthermia_radiant_desc: "成为点燃星系的火花，无暇犹豫或顾虑繁文缛节，不能再浪费时间改造各种系统。为实现目标，必须大幅提升建造能力。"
+ menp_hyperthermia_ignition: "强制点火"
+ menp_hyperthermia_ignition_desc: "有时，单靠努力还不够。需要将技术推向新的高度，释放其真正潜能。现在是时候放宽安全限制，最大化产出。"
+ unlocks_crucible_overclocking: "解锁§Y$galactic_crucible_1$§!§H巨型结构§!的“超频”功能。"
+
+# MPerks Level 3
+ menp_hyperthermia_cruiser: "$ember_cruiser$"
+ menp_hyperthermia_cruiser_desc: "这些舰艇配备尖端技术，将不稳定的热流转换为定向的毁灭性能量，将敌人化为焦炭。"
+ unlocks_ember_cruiser: "§H$UNLOCKS_SHIP_TYPE$：§!$ember_cruiser$"
+ menp_hyperthermia_flames: "吞噬之焰"
+ menp_hyperthermia_flames_desc: "我们构筑的乌托邦不容任何异议。任何抵抗力量都将迎来母星的火焰洗礼。"
+ unlocks_firestorm_stance: "§H解锁环境改造：§!$pc_volcanic$\n§H解锁轰炸姿态：§!$bombardment_firestorm$\n\n"
+ menp_hyperthermia_coronal: "日冕喷发"
+ menp_hyperthermia_coronal_desc: "我们的$entropy_conduit_plural$目前通过散热保持稳定。若将热量排放至周围空间，$entropy_conduit_plural$就会成为毁灭敌人的利器。"
+ unlocks_conduit_damage: "§Y$entropy_conduit_plural$§!对敌方舰船和空间站造成被动伤害。\n\n"
+
+# MPerks Level 4
+ menp_hyperthermia_reactors: "日核聚变反应堆"
+ menp_hyperthermia_reactors_desc: "将§Y$entropy_crystals$§!用于军用科技，解锁无可匹敌的推进系统。舰船将如烈焰般穿梭恒星。"
+ menp_hyperthermia_solarflare: "人造太阳耀斑"
+ menp_hyperthermia_solarflare_desc: "星系部分地区以前不在我们的掌控之下，不过这种情况即将结束。不久，我方$entropy_conduit_plural$将遍布群星，精准摧毁一切胆敢反抗的力量。"
+ unlocks_conduit_borders: "§Y$entropy_conduit_plural$§!自动跨越边界进入地方领地。\n\n"
+ menp_hyperthermia_armada: "炽焰舰队"
+ menp_hyperthermia_armada_desc: "星系诸势力正联合对抗我们，必须进行全面动员。每位公民均须为能源战线奉献力量，共同燃起我方圣权崛起的火焰。"
+ unlocks_blazing_navalcap: "§Y[GetAlloyProducerPlural]§!和§Y[GetResearcherPlural]§!提升£navy_size£§Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!.\n\n"
+
+# MPerks Level 5
+ menp_hyperthermia_battleship: "$ember_battleship$"
+ menp_hyperthermia_battleship_desc: "枪管如即将吞没星系的火风暴般炽热，这些大型舰船将构成保卫熔炉的防御主力。"
+ unlocks_ember_battleship: "§H$UNLOCKS_SHIP_TYPE$：§!$ember_battleship$\n—可装备£ship_xl_slot£§Y$LENS_FLARE_BEAM$§!武器。"
+ menp_hyperthermia_critical_mass: "临界质量"
+ menp_hyperthermia_critical_mass_desc: "恒星外层的熵能活动增强导致恒星发出的辐射量激增，使整个星系加速升温。"
+ unlocks_conduit_boost: "§Y$entropy_conduit_plural$§!随所控星系数量增加而增强。\n\n$hyperthermia_map_perc$\n\n"
+ hyperthermia_map_perc: "覆盖星系§G20%§!：$TABBED_NEW_LINE$—$entropy_conduit_plural$对邻近殖民地造成毁灭性打击$TABBED_NEW_LINE$—受影响殖民地逐渐流失£pop£$POPS$$TABBED_NEW_LINE$—仅影响非§Y地狱§!物种帝国$TABBED_NEW_LINE$—所需星系：§Y[root.hyperthermia_systems_var]§!"
+ menp_hyperthermia_ammunition: "熵能弹药"
+ menp_hyperthermia_ammunition_desc: "弹药设计革新：标准军备增添微型熵核，撞击瞬间释放不稳定的热能冲击，杀伤力显著增强。"
+
+# Misc
+ entropy_crystals_deficit: "$entropy_crystals$短缺"
+ edict_entropy_harnessing: "熵能利用"
+ edict_entropy_harnessing_desc: "将$entropy_crystals$生产整合入基础设施，使我们充分发挥技术优势，最大限度利用这种不稳定新资源。"
+ mod_planet_technician_entropy_crystals_produces_add: "£entropy_crystals£§Y$entropy_crystals$§!来自£job_technician£[GetTechnician]"
+ mod_shipsize_ember_cruiser_weapon_damage: "$MOD_SHIP_WEAPON_DAMAGE$（$ember_cruiser$）"
+ mod_shipsize_ember_battleship_weapon_damage: "$MOD_SHIP_WEAPON_DAMAGE$（$ember_battleship$）"
+ mod_conduit_spawnrate_add: "£time£$entropy_conduit$建造时间"
+ mod_conduit_spawnrate_switch: "$entropy_conduit$建造：§R禁用§!"
+ mod_conduit_spawnrate_switch_short: "§R禁用$entropy_conduit$建造§!"
+ mod_shipsize_ember_cruiser_speed_mult: "$MOD_SHIP_SPEED_MULT$（$ember_cruiser$）"
+ mod_shipsize_ember_battleship_speed_mult: "$MOD_SHIP_SPEED_MULT$（$ember_battleship$）"
+ ENTROPY_WORMHOLE: "$NATURAL_WORMHOLE_GALACTIC$"
+ BYPASS_ENTROPY_WORMHOLE: "$ENTROPY_WORMHOLE_GALACTIC$"
+ BYPASS_DESC_UNKNOWN_ENTROPY_WORMHOLE: "我们未见过此种构造"
+ ENTROPY_WORMHOLE_GALACTIC: "奇异虫洞"
+ ENTROPY_WORMHOLE_DESC: "该星系包含一个通往$DEST|Y$的§Y虫洞§!"
+ ENTROPY_WORMHOLE_DESC_UNEXPLORED: "该星系内包含一个§R未探索的§!§Y虫洞§!"
+ ENTRY_BYPASS_ENTROPY_WORMHOLE: "$BYPASS_TYPE$"
+ EXIT_BYPASS_ENTROPY_WORMHOLE: "离开$BYPASS_TYPE$"
+ personality_hyperthermia_empire: "热力帝国"
+ personality_hyperthermia_empire_desc: "热力统治的帝国推崇能量、熵与恒星之火。他们不以征服为名，而是以火热雕刻星系，灼烧万物。"
+ triggered_opinion_hyperthermia_empire: "$personality_hyperthermia_empire$帝国"
+ mod_job_metallurgist_naval_cap_add: "£mod_country_naval_cap_add£来自£job_foundry£[GetAlloyProducer]岗位$MOD_COUNTRY_NAVAL_CAP_ADD$"
+ crisis_thermophile_adaptation: "热耐性适应"
+ crisis_thermophile_adaptation_desc: ""
+ crisis_conduit_stop: "$mod_conduit_spawnrate_switch$" # modifier is hidden
+ crisis_conduit_stop_desc: ""
+
+ sm_gravitational_centrifuge: "引力离心机"
+ sm_gravitational_centrifuge_desc: "该结构利用强引力梯度，在分子层面分解废料，将其转化为可结晶的熵等离子体以备储存与利用。"
+ gravitational_centrifuge_tt: "完成危机目标§H$crisobj_entropy_starbase_name$§!"
+ requires_multiple_stars_or_or_bh: "§R需§Y二元§!、§Y三元§!星系或§Y$pc_black_hole$§!。§!"
+
+# Conduit Starforming
+ crisis_conduit_buff: "恒星监察"
+ crisis_conduit_buff_desc: "本地恒星大气突发剧变，诱发全星系范围的强烈太阳耀斑。对他者而言这是灾难，对我们却是繁荣兴盛的机遇。"
+ TERRAFORM_ORDER: "改造恒星"
+ TERRAFORM_ORDER_DESC: "将目标恒星缓慢转变为§Y$pc_m_giant_star$§!。"
+ TERRAFORM_ORDER_RESEARCH: "借助结晶熵的叠加能量潜力，小型恒星可成为巨大的红巨星。"
+ FLEETORDER_TERRAFORM_BUTTON: "$TERRAFORM_ORDER$"
+ FLEETORDER_TERRAFORM: "星铸$PLANET|Y$（$PROGRESS|Y%0$）"
+ FLEETORDER_BOOST_STAR: "点燃恒星"
+ CAN_NOT_TERRAFORM_STAR: "$TRIGGER_FAIL$必须为主星。"
+ CAN_NOT_CRISIS_TERRAFORM_STAR_CLASS: "$TRIGGER_FAIL$转变的恒星类型无效。"
+ CAN_NOT_CRISIS_TERRAFORM_STAR_MEGASTRUCTURE: "$TRIGGER_FAIL$轨道上的巨型结构阻碍转变。"
+ VALID_TERRAFORM_STAR: "该恒星可进行环境改造。"
+ STATION_CAN_NOT_TERRAFORM_STAR: "导管站必须在轨道上。"
+
+# Objectives
+ crisobj_own_volcanics_name: "拥有火山星球"
+ crisobj_own_volcanics_desc: "星系热量上升促进火山活动，利于推进火热使命。应优先殖民§Y火山星球§!，抢占先机。\n\n每年提供被动§Y$entropy_crystals$§!收益，随§Y$pc_volcanic$§!殖民地数量增长。"
+ crisobj_create_volcanics_name: "制造火山星球"
+ crisobj_create_volcanics_desc: "扩展星体火山活动推动熵晶经济。依靠环境改造技术，可在任何选定行星引发持久火山活动。\n\n环境改造行星变为§Y$pc_volcanic$§!。"
+ crisobj_own_red_stars_name: "拥有红色恒星"
+ crisobj_own_red_stars_desc: "我们应优先在红色恒星周边建立殖民系统。其广阔辐射表面适合热能采集。\n\n每月提供被动§Y$entropy_crystals$§!收益，随每个位于边界内的§Y$pc_m_star$§!或§Y$pc_m_giant_star$§!增长。"
+ crisobj_create_red_stars_name: "制造红色恒星"
+ crisobj_create_red_stars_desc: "通过熵晶驱动，令恒星膨胀为红巨星，助力火热帝国崛起。\n\n经§Y$entropy_conduit_plural$§!环境改造的恒星成为§Y$pc_m_giant_star$§!。"
+ crisobj_planet_firestorm_name: "行星纵火"
+ crisobj_planet_firestorm_desc: "时机已到，借由火风暴轰击向劲敌彰显我们的绝对霸权，将其星球化为灰烬。\n\n使用§Y$bombardment_firestorm$§!轰炸殖民地，造成§R100%毁灭§!。"
+ crisobj_lens_beam_impact_name: "扰乱舰队"
+ crisobj_lens_beam_impact_desc: "寒冷温带星球无益。需重塑表面，融化成符合我方需求形态。\n\n使用装备于§Y$entropy_conduit_plural$§!和§Y$ember_battleship_plural$§!的£ship_xl_slot£§Y$LENS_FLARE_BEAM$§!武器，轰炸敌方星球。"
+ crisobj_entropy_starbase_name: "拥有引力离心机"
+ crisobj_entropy_starbase_desc: "引力离心机助我们搜集更多$entropy_crystals$。\n\n在§Y双星§!、§Y三合星§!或§Y$pc_black_hole$§!建造§!$sm_gravitational_centrifuge$§Y太空基地建筑。"
+
+# Ships
+ NAME_Ember_Cruiser: "炽焰毁灭者"
+ ember_cruiser_cap: "$ember_cruiser$"
+ ember_cruiser: "余烬$cruiser$"
+ ember_cruiser_plural: "余烬$cruiser_plural$"
+ EMBER_CRUISER_BOW_L1: "$CRUISER_BOW_L1$"
+ EMBER_CRUISER_BOW_M1S2: "$CRUISER_BOW_M1S2$"
+ EMBER_CRUISER_BOW_M2: "$CRUISER_BOW_M2$"
+ EMBER_CRUISER_MID_S2HB: "$CRUISER_MID_S2HB$"
+ EMBER_CRUISER_MID_L1M1: "$CRUISER_MID_L1M1$"
+ EMBER_CRUISER_MID_M3: "$CRUISER_MID_M3$"
+ EMBER_CRUISER_MID_M2S2: "$CRUISER_MID_M2S2$"
+ EMBER_CRUISER_STERN_M1: "$CRUISER_STERN_M1$"
+ EMBER_CRUISER_STERN_S2: "$CRUISER_STERN_S2$"
+
+ NAME_Ember_Battleship: "炎热熔炉"
+ ember_battleship_cap: "$ember_battleship$"
+ ember_battleship: "余烬$battleship$"
+ ember_battleship_plural: "余烬$battleship_plural$"
+ EMBER_BATTLESHIP_BOW_L1M1S2: "$BATTLESHIP_BOW_L1M1S2$"
+ EMBER_BATTLESHIP_BOW_L2: "$BATTLESHIP_BOW_L2$"
+ EMBER_BATTLESHIP_BOW_M1S2SHB: "$BATTLESHIP_BOW_M1S2SHB$"
+ EMBER_BATTLESHIP_BOW_XL: "$BATTLESHIP_BOW_M2S4$"
+ EMBER_BATTLESHIP_MID_L2M2: "$BATTLESHIP_MID_L2M2$"
+ EMBER_BATTLESHIP_MID_L3: "$BATTLESHIP_MID_L3$"
+ EMBER_BATTLESHIP_MID_M4SHB: "$BATTLESHIP_MID_M4SHB$"
+ EMBER_BATTLESHIP_MID_S4LHB: "$BATTLESHIP_MID_S4LHB$"
+ EMBER_BATTLESHIP_STERN_L1: "$BATTLESHIP_STERN_L1$"
+ EMBER_BATTLESHIP_STERN_M2: "$BATTLESHIP_STERN_M2$"
+
+ conduit_station_cap: "$entropy_conduit$"
+ conduit_station: "$entropy_conduit$"
+ conduit_station_plural: "$entropy_conduit_plural$"
+ NAME_Conduit_Station: "$NAME_Entropy_Conduit$" 
+ entropy_conduit_cap: "$entropy_conduit$"
+ entropy_conduit: "导管"
+ entropy_conduit_plural: "导管群"
+ entropy_conduit_key: "导管核心"
+ NAME_Entropy_Conduit: "熵能导管"
+
+# Weapon
+ LENS_FLARE_BEAM: "透镜麻痹者"
+ LENS_FLARE_BEAM_DESC: "该武器发射的光束经精密校准，能够干扰敌方的关键控制系统，为无抗力打击创造短暂窗口。"
+ lfb_on_hit_stun_tt: "§Y使目标瘫痪§!，无法移动或反击，持续时间为§G7天§!。"
+ lf_weapon_stun_effect: "§R$LENS_FLARE_BEAM$撞击§!"
+ lf_weapon_stun_effect_desc: "   " # not visible
+
+# Megastructure
+ galactic_crucible_0: "星系熔炉框架"
+ galactic_crucible_0_DESC: "$galactic_crucible_4$的基础结构，用以支持并引导整座空间站的建造。"
+ galactic_crucible_0_MEGASTRUCTURE_DETAILS: "这座庞大空间站虹吸宿主恒星能量，驱动自动化船坞生产§Y$entropy_conduit_plural$§!，在那里，正建造着足以改写恒星命运的舰艇。"
+ galactic_crucible_1: "$galactic_crucible_4$底盘"
+ galactic_crucible_1_DESC: "核心设施完工后，$galactic_crucible_4$成为一座功能齐全的空间站。熵晶系统的建设已启动。"
+ galactic_crucible_2: "$galactic_crucible_4$核心"
+ galactic_crucible_2_DESC: "$galactic_crucible_4$现完全运作，准备扩展部署§Y$entropy_crystals$§!。未来所有升级均基于此基础。\n\n§H完成特殊项目以解锁下一阶段。§!"
+ galactic_crucible_3: "$galactic_crucible_4$枢纽"
+ galactic_crucible_3_DESC: "扩张中的$galactic_crucible_4$现具备模块化熵系统，设计支持无缝重构与扩展。技术人员可提升容量并降低低效。"
+ galactic_crucible_4: "星系熔炉"
+ galactic_crucible_4_DESC: "$galactic_crucible_4$全线武装、全力运转，准备将炽烈净火撒遍星域。熵通量系统已达理论峰值效率。"
+ galactic_crucible_5: "$galactic_crucible_4$研究院"
+ galactic_crucible_5_DESC: "$galactic_crucible_4$已完成不可逆重构，可防止高能失控造成危险，确保帝国稳定并持续成为繁荣的能源源泉。"
+ galactic_crucible_ruined: "废弃$galactic_crucible_4$"
+ galactic_crucible_ruined_DESC: "废弃的造船厂，曾经为实现堕落帝国的炽热野心而建。"
+ galactic_crucible_ruined_MEGASTRUCTURE_DETAILS: "广袤废墟仍闪烁着不规则的热斑脉动。"
+ SPAWN_CONDUITS: "$entropy_conduit_plural$"
+ SPAWN_CONDUITS_DESC: "$galactic_crucible_4$自动建造$entropy_conduit_plural$。它们将前往可转变为§Y$pc_m_giant_star$§!的恒星。"
+ megastructure_overclocking_desc: "通过战略性超频，此巨型结构可超出标准操作极限，解锁独特效果。"
+ overclock_mode: "模式："
+ overclock_gc_default: "$overclock_mode$§H默认§!"
+ overclock_gc_default_desc: "稳定且适度地产出结晶熵。\n"
+ overclock_gc_high: "$overclock_mode$§H超频§!"
+ overclock_gc_high_desc: "利用大量储能，提高导管建造速度。\n"
+ overclock_gc_eco: "$overclock_mode$§H产能§!"
+ overclock_gc_eco_desc: "大量合金投资，提高结晶熵产量。\n"
+ overclock_gc_war: "$overclock_mode$§H协调中心§!"
+ overclock_gc_war_desc: "$galactic_crucible_4$可为附近舰船大量供应备用能量，最大化防御舰队战力。\n"
+
+# Event Chain
+ galactic_hyperthermia_chain_title: "$ap_galactic_hyperthermia$"
+ galactic_hyperthermia_chain_desc: "我们已决定以烈焰开辟未来，准备将整个银河没于烈火之中。"
+
+# Special Projects
+ INF_CRISIS_ENTROPY: "新能量源"
+ INF_CRISIS_ENTROPY_DESC: "火焰长久以来在我们社会中举足轻重，而今我们能以创新方式驾驭其混沌力量。科学家梦寐以求的能源即将展现，其超越维持现有文明，能助我们跃向星际。\n\n§H效果：§!解锁新£entropy_crystals£§Y$entropy_crystals$§!资源。"
+ INF_CRISIS_ENTROPY_EVIL: "策划火风暴"
+ INF_CRISIS_ENTROPY_EVIL_DESC: "熔炉为我们指明了新路。摒弃愚昧，重塑炽热星系，焚尽拒绝者。\n\n§H效果：§!\n—解锁§Y$galactic_crucible_4$§!下一升级。\n—§Y$entropy_conduit_plural$§!现可转换敌方恒星。\n\n" # Crystallized Entropy is used to its full potential
+ INF_CRISIS_ENTROPY_GOOD: "意外关联"
+ INF_CRISIS_ENTROPY_GOOD_DESC: "熔炉具备强大能量产出，但并不稳定。若将其性能永久下调至适中水平，既可确保我方长期繁荣，也能避免对星系及邻邦构成威胁，维护地区稳定与善意关系。" # Crystallized Entropy can be used for the economy
+
+# Countdown Situation
+ situation_galactic_hyperthermia_timer: "动员"
+ situation_galactic_hyperthermia_timer_type: "$situation_galactic_hyperthermia_timer$"
+ situation_galactic_hyperthermia_timer_desc: "我们对§Y$entropy_crystals$§!的掌控即将开启星系激变。已开通连接星系核心6个星系的虫洞。\n若在各星系建立§Y$entropy_conduit_plural$§!设施，并守护免受干涉，我们即可燃烧整个银河。"
+ situation_galactic_hyperthermia_timer_monthly_change_tooltip: "当前向星系核辐射的熵能水平达到顶峰时，星系将被燃烧殆尽。"
+ situation_gh_timer_outcome: "情报显示多国或筹备战争阻止我方计划。若措手不及，计划将夭折。"
+ situation_gh_approach_timer: "迎接余波"
+ situation_gh_approach_timer_tt: "时机已到，一场席卷星系的浩大战争即将爆发。"
+ situation_gh_difficulty_progress: "难度"
+ situation_gh_opponent_progress: "每个对立帝国§G-0.1§!"
+
+# Crisis Situation
+ situation_galactic_hyperthermia: "星系火风暴"
+ situation_galactic_hyperthermia_type: "$situation_galactic_hyperthermia$"
+ situation_galactic_hyperthermia_monthly_change_tooltip: "星系接近完全点燃的速度。"
+ situation_hyperthermia_desc_perp: "§L我们憧憬着火焰乌托邦，为达成愿景必须清除一切阻碍。第一束火光已升起，必须助长其燃烧，让烈焰蔓延至星系的每一个角落。§!\n\n$situation_hyperthermia_stats$"
+ situation_hyperthermia_desc: "§L§Y[event_target:hyperthermia_empire.GetName]§!点燃群星，迎战星系最炽烈的火焰，只有一次机会，如果失败，一切都将化为灰烬。§!\n\n$situation_hyperthermia_stats$"
+ situation_hyperthermia_stats: "§H夺取的核心星系：§![event_target:hyperthermia_empire.gh_crisis_core_var]"
+
+ situation_galactic_hyperthermia_outcome: "[GetHyperthermiaOutcome]"
+ situation_gh_outcome_perp: "若行动成功，火雨将吞噬整个银河，唯有拥火者能在灰烬中屹立。恒星亦难以幸免；数十亿年后，它将被改造为我们母星的模样。"
+ situation_gh_outcome_other: "一旦§Y[hyperthermia_empire.GetName]§!成功，整个银河将化为灰烬，只剩那些嗜热的族群得以存续。"
+
+ situation_galactic_hyperthermia_progress: "§Y$entropy_conduit_plural$§!占领的星系核心星系数量决定每月进度。\n$TABBED_NEW_LINE$—少于§Y3§!个：§R-3§!$TABBED_NEW_LINE$—占领§Y3§!个：§Y0§!$TABBED_NEW_LINE$—多于§Y3§!个：§G+3§!\n\n当前进度"
+ situation_galactic_hyperthermia_stage1: "最低要求($stage_1$)。"
+
+ situation_gh_approach_perp: "燃起火焰"
+ situation_gh_approach_perp_tt: "错过即永远。我们必须成功，否则一切成就皆付东流。"
+ situation_gh_approach_other: "熄灭火焰"
+ situation_gh_approach_other_tt: "此帝国是星系稳定的隐患。全方位应对已非可选方案，而是唯一出路。"
+
+# Events
+# NOTE: Remove most #comments below after texts are done
+ infernals.1000.name: "新力量"
+ infernals.1000.desc: "[GetHyperthermiaIntroIfRedGiant]"
+ infernals.1000.descNormal: "我方[GetScientistPlural]报告发现一项全新技术，可将熵锁定于高能晶体阵列中储存。此§Y$entropy_crystals$§!可存运大量热能，适用于工业、经济与星际用途。\n\n模拟结果表明，此能量可用于环境改造行星气候，使其升温，甚至推动恒星向红巨星阶段演化。理论上，还可回收星系中逸散的熵能并转化为热量，进而系统推动银河热膨胀。\n\n§H特殊项目立项：§!§Y$INF_CRISIS_ENTROPY$§!"
+ infernals.1000.descRedGiant: "我方[GetScientistPlural]分析曾点燃红巨星的§Y$entropy_crystals$§!，一度险毁文明。现已可被重新设计改造，使其适用于工业体系、经济结构以及恒星级能源运输。\n\n模拟结果显示，此能量可用于环境改造行星气候，使其升温，甚至推动恒星向红巨星阶段演化。理论上，还可回收星系中逸散的熵能并转化为热量，进而星系推动热膨胀。\n\n§H特殊项目立项：§!§Y$INF_CRISIS_ENTROPY$§!" # Intro if you've learned about entropy from the Red Giant Miners
+
+ infernals.1005.name: "结晶成果"
+ infernals.1005.desc1: "我们完成首个能量采集和转化§Y$entropy_crystals$§!基础设施。该晶体能够储存海量热能，使工业层面的储能与运输效率远超以往一切技术。\n\n由于红巨星拥有庞大的辐射表面与强劲热流，它是部署此技术的理想场域。更何况这些恒星皆在我方可控体系内。\n\n技术人员正调整工艺使其适用于工业化生产，探索利用环境熵合成$entropy_crystals$。伴随新经济的崛起，财富与权势都将随之暴涨。[GetScientistPlural]规模化制造项目已启动。\n\n§H解锁巨型结构：§!§Y$galactic_crucible_0$§!" # Reaching lv1
+ infernals.1005.desc2: "现有的§Y$entropy_crystals$§!样本让我们在无需再以母星为代价的前提下，也能进行采集与合成。该晶体能够储存海量热能，使工业层面的储能与运输效率远超以往一切技术。\n\n由于红巨星拥有庞大的辐射表面与强劲热流，它是部署此技术的理想场域。更何况这些恒星皆在我方可控星系内。\n\n技术人员正调整工艺使其适用于工业化生产，探索利用环境熵合成$entropy_crystals$。伴随新经济的崛起，财富与权势都将随之暴涨。[GetScientistPlural]规模化制造项目已启动。\n\n§H解锁巨型结构：§!§Y$galactic_crucible_0$§!" # Reaching lv1
+ infernals.1005.a: "须启动建设。"
+ infernals.1005.a.tt: "派遣$constructor$围绕恒星建造§Y$galactic_crucible_0$§!。"
+ infernals.1005.b: "命令子个体开工。"
+ infernals.1005.b.tt: "派遣$constructor$围绕恒星建造§Y$galactic_crucible_0$§!。"
+
+ infernals.1006.name: "热耐性进化"
+ infernals.1006.desc: "我们踏上点燃星系的道路，但自身必须做好面对高温的准备。适应更高温度将助我们在这炽热的新未来中繁荣。"
+ infernals.1006.descRedGiant: "在全力逆转恒星变化的同时，我们自身必须做好面对高温的准备。适应更高温度将助我们在这炽热的新未来中繁荣。"
+
+ infernals.1010.name: "启动$entropy_conduit_plural$"
+ infernals.1010.desc: "$galactic_crucible_1$可部署§Y$entropy_conduit_plural$§!可引导并强化恒星的熵能，一旦发送，它们就会回收并强化恒星的能量输出。使其演化为红巨星，从而将星系加热至支撑帝国扩张基础设施的水平。\n\n此类§Y$entropy_conduit_plural$§!能够定期生产并自主运作，目前仅限于我方领土，但未来有望扩展至整个银河，推动帝国持续增长。\n\n§H可升级的巨型结构如下：§!§Y$galactic_crucible_2$§!" # Reaching lv2
+ infernals.1010.a: "$entropy_crystals$产量将加速。"
+ infernals.1010.b: "迫切需要征服更多恒星。"
+
+ infernals.1015.name: "温度将如何提升？"
+ infernals.1015.desc: "§Y$entropy_crystals$§!研究揭示惊天秘密：在高浓度下，该物质可被用于制造足以摧毁整颗行星的武器。若我方掌握此力量，整个银河或将归于我手。\n\n但若追求军事应用，将破坏与邻邦脆弱信任。谁又能保证此武器不会反噬自身？\n\n若望证我方意图，必须公然削弱$galactic_crucible_2$，禁止生产此类武器。否则，终会有人将其用于杀戮，即我方或他人。\n\n§H该抉择将解锁特殊项目§!。" # Reaching lv3 & decision
+ infernals.1015.a: "煽动战争火焰！" # evil path
+ infernals.1015.a.desc: "解锁危机等级$crisis_hyperthermia_level_4$。\n" #\n\n§HIssues Special Project:§! §Y$INF_CRISIS_ENTROPY_EVIL$§!
+ infernals.1015.b: "抑制野心。" # good path
+ infernals.1015.b.desc: "阻止接触危机等级$crisis_hyperthermia_level_4$。\n\n§H特殊项目立项：§!§Y$INF_CRISIS_ENTROPY_GOOD$§!将§Y$galactic_crucible_2$§!转变为§Y$galactic_crucible_5$§!。"
+
+ infernals.1020.name: "烈焰之中"
+ infernals.1020.desc: "我方对§Y$entropy_crystals$§!及§Y$INF_CRISIS_ENTROPY_EVIL$项目§!之调查确认毁灭性武器潜力属实。掌握此等力量后，外交礼节将不再约束我们的行动。\n\n由于其激进的军事化应用，$galactic_crucible_3$扩张可以加速。武器越早解锁，我们越早称霸。\n\n§H巨型结构升级可用：§!§Y$galactic_crucible_4$§!" # Finishing special project for evil path
+ infernals.1020.a: "我们必须为战争做好准备。"
+ infernals.1020.a.tt: "—§Y$galactic_crucible_4$§!扩张应为优先事项。\n—$unlocks_conduit_damage$"
+ infernals.1020.b: "我们的对手将成为火焰的引燃物。"
+ infernals.1020.b.tt: "—§Y$galactic_crucible_4$§!扩张应为优先事项。\n—$unlocks_conduit_damage$"
+
+ infernals.1021.name: "稳定的余辉"
+ infernals.1021.desc: "$galactic_crucible_3$已被成功削弱，确保其不再能被扩展或用于破坏性目的。虽然失去了其全部潜能令人遗憾，但继续那条道路将带来灾难风险及所有外交关系的崩溃。\n\n幸运的是，即使功能受限，$galactic_crucible_5$仍将是强大且繁荣的能源来源。我们在越过界限前选择了退步，保障了与银河共同体合作的未来，同时依然从这项非凡科学中获益。\n\n§H巨型结构升级可用：§!§Y$galactic_crucible_5$§!" # Finishing special project for good path
+ infernals.1021.a: "合作使我们共同受益。"
+ infernals.1021.b: "和谐带来繁荣。"
+
+ infernals.1025.name: "环绕核心"
+ infernals.1025.desc: "我们对§Y$entropy_conduit_plural$§!的持续研究以及将恒星转化为红巨星的研究表明，我们或许能够扩大行动规模，直接使银河系核心过热，从而在整个银河触发热级联，把它改造成对我们更为适宜的环境。\n\n我们已确定六个核心周边星系，可作为此计划的作业枢纽。这些星系位于星系超空间航路网络之外，但相关稳定虫洞的构建工作正紧锣密鼓进行。" # Reaching lv4
+ infernals.1025.a: "只有我们适合在烈焰中生存。"
+ infernals.1025.a.tt: "其他物种将试图反对我们。准备星系战争。"
+ infernals.1025.b: "整个银河将在熊熊烈焰中归一。"
+ infernals.1025.b.tt: "其他物种将试图反对我们。准备星系战争。"
+
+ infernals.1030.name: "点火竞赛"
+ infernals.1030.desc: "$galactic_crucible_4$现已全面武装并投入运行。随着虫洞通道完工，我们已取得通往围绕星系核心六个集结星系的通道。\n\n我们开始进行核心过热工作。其它帝国可能察觉并试图进入这些星系，但暂时我们占有优势，核心已屈服于我们的意志。\n\n§H使用虫洞保护星系核心星系§!" # Reaching lv5, lanes open in 3 years!
+ infernals.1030.a: "开始在核心星系中部署。"
+ infernals.1030.a.tt: "在六个星系核心星系中部署§Y$entropy_conduit_plural$§!，我们就能一次性使整个银河过热。必须着手准备。"
+ infernals.1030.b: "我们的未来因火焰而光明。"
+ infernals.1030.b.tt: "$infernals.1030.a.tt$"
+
+ infernals.1035.name: "星系火警"
+ infernals.1035.desc: "对立帝国已强行开启通往我们靠近星系核心集结地的超空间航路。随着我们持续使核心超热，必须为抵抗做好准备。\n\n但我们不会被阻止。宇宙中寒冷黑暗将被驱散，取而代之的是我们崛起未来的炽热辉煌。"
+# core is now connected with the galaxy!
+ infernals.1035.a: "他们永远无法扑灭我们。"
+ infernals.1035.b: "让他们前赴后继于熊熊烈焰中吧。"
+
+ infernals.1040.name: "暴风临近"
+ infernals.1040.desc: "星系核心开始躁动。环绕超大质量黑洞的熵水平激增，向附近星系释放出热辐射波动。\n\n正当恐慌蔓延时，一支由多星球勇敢科学家组成的小组揭示了连接核心周边六个星系的新近超空间航路。这些星系据悉拥有由§Y[hyperthermia_empire.GetName]§!运作的设施，正在积极使核心过热。这种鲁莽干预将引发星系级火风暴，将毁灭所有未能阻止纵火狂野心的人。\n\n若想生存，我们必须突破这些星系，夺取控制权。危机已至——温度仍在攀升。" # other empires learn about the core, forming a coalition war
+ infernals.1040.a: "我们必须阻止这一切！" # generic reply (declares war)
+ infernals.1040.a.tt: "§L一场无与伦比的危机即将席卷我们的星系。唯有新成立联盟的联合力量才能拯救我们。§!\n\n将组成反对危机的§Y联盟§!帝国，引发星系范围冲突。我们将§R对§Y[hyperthermia_empire.GetName]§!宣战§!。"
+ infernals.1040.b: "焚烧吧，弱者！" # Genocidals reply
+ infernals.1040.b.tt: "§L危机时刻，每个物种都应该自救。我们拥有独立解决的能力。§!"
+ infernals.1040.c: "他们其实和我们一样。" # Infernals reply
+ infernals.1040.c.tt: "§L§Y[hyperthermia_empire.GetName]§!的方法符合我们新星系的愿景。契合于此，我们或可幸免于看似灾难的全力冲击。§!"
+ infernals.1040.d: "这不是我们该担心的。" # neutral reply
+ infernals.1040.d.tt: "§L玩火的帝国司空见惯。此动荡终将过去，置身事外就好了。§!"
+
+ infernals.1042.name: "升级：§R危机已发§!"
+ infernals.1042.desc: "历史上伟大变革常伴随牺牲。然而，银河共同体将我方的工作视为不必要的威胁，并以联合军事同盟名义对我们动员。\n\n其目标直指灭绝，我们别无选择：任何接近星系核心或$galactic_crucible_4$的行为都会遭到压倒性武力的回应。\n\n我们的愿景已点燃恒星。让反对者迎战我们召唤的风暴吧。\n\n§H守住星系核心星系，我们就一定能取得胜利！§!"
+ infernals.1042.a: "结局已定。"
+
+ infernals.1043.name: "召集战役：§R危机已发§!"
+ infernals.1043.desc: "鉴于星系核心局势升级威胁，银河共同体联合采取行动反对§Y[hyperthermia_empire.GetName]§!，其激进加热星系行为威胁所有已知生命。\n\n若任其为所欲为，无数文明将陷灭绝危机。所谓§Y[hyperthermia_empire.GetName]§!已与必要联合的联盟成直接对立。\n\n战斗已发动，数万亿生命岌岌可危。\n\n§H夺取星系核心星系，否则将失去一切！§!"
+ infernals.1043.a: "舰队动员！"
+
+ infernals.1045.name: "与时间赛跑"
+ infernals.1045.desc1: "火风暴即将爆发。星系核心将喷发，铲除敌人并确立我们对群星的统治。\n\n然而星系拒绝接纳我们辉煌未来。通过新开超空间航路，他们密谋入侵集结地，颠覆我们的一切。目的何在？仅为守护那阴冷停滞的黑暗？\n\n我们绝不能允许。必须坚守核心线，直至火风暴点燃，将他们化为灰烬。" # last stage of global situation - crisis
+ infernals.1045.desc2: "星系核心持续升温，§Y[hyperthermia_empire.GetName]§!的纵火狂热助推火势。按此速度，火风暴将消灭所有反对者，几乎灭绝星系所有生命。\n\n不可沟通妥协。若想生存，必须攻破源头：星系核心星系，那里火力最旺。唯有如此，§Y[hyperthermia_empire.GetName]§!方能阻止。\n\n整个银河的命运悬于一线。是时候告诉§Y[hyperthermia_empire.GetName]§!，玩火者……必将自食其果。" # last stage of global situation - others
+ infernals.1045.a: "我们将坚守防线。"
+ infernals.1045.a.tooltip: "必须控制六大核心星系才能获胜。"
+ infernals.1045.b: "必须彻底扑灭他们。"
+ infernals.1045.b.tooltip: "必须袭击六大核心星系，摧毁§Y[hyperthermia_empire.GetName]§!的导管，否则我们将被焚毁。"
+
+ infernals.1055.name: "星系是我们的！"
+ infernals.1055.desc: "从星系核心到最外围的恒星，我们煽起了胜利火焰。火风暴已将敌人烧成灰烬。他们缺乏勇气与远见，无法拥抱我们所缔造的辉煌未来。星系属于我们。\n\n在这火与怒的新秩序里，行星被岩浆与光芒熔煮，由红巨星的火焰温度点亮。熵能涌流穿梭于每一星系，由我们采集、塑造。帝国日益富裕强盛……不可阻挡。\n\n我们吞噬并重塑星系，成为虚空中熊熊燃烧的统治灯塔。或许有朝一日，我们还将引燃其他星系。" # crisis won
+ infernals.1055.a: "这片新星系，我们志在必得。"
+ infernals.1055.b: "终将所有火焰融为一体。"
+ infernals.1055.c: "我们的火热母星不容弱者拖累。" #Scorched world heralds (genocidal Infernal)
+ infernals.1055.d: "我们的毅力终获回报。" #Infernal Fire Cult
+ infernals.1055.e: "终于，我们将寒冷与黑暗驱逐出星系。" #Other Infernals
+ infernals.1055.f: "最终，我们可怜的对手化为灰烬。" #Generic Genocidal
+
+ infernals.1052.name: "$galactic_crucible_4$被占领"
+ infernals.1052.desc: "随着§H[crucible_system.GetName]§!星系被占领，我们的军团夺取了那座环绕恒星建造的$galactic_crucible_4$。\n\n这座巨型建造物的沦陷，宣告了其缔造者以武力称霸星系的美梦破碎。"
+ infernals.1052.a: "摧毁它！"
+ infernals.1052.a.tt: "§Y$galactic_crucible_4$§!将被彻底毁坏，无法修复。"
+ infernals.1052.b: "我们可以利用这一点。"
+ infernals.1052.b.tt: "将§Y$galactic_crucible_4$§!转化为§Y$galactic_crucible_5$§!以生产$r_alloys$。"
+
+ infernals.1053.name: "$galactic_crucible_4$被占领"
+ infernals.1053.desc: "占领§H[crucible_system.GetName]§!系统揭露了§H[crucible_builders.GetName]§!的阴谋，他们企图通过前所未有的烈焰风暴彻底毁灭整个银河系。\n\n目前，那台可能引发大规模灭绝的机器已被暂停。战争一旦结束，我们应动用剩余资源与兵力，将这座巨型建筑彻底摧毁。"
+ infernals.1053.a: "我们必须尽快结束这场战争！"
+ infernals.1053.b: "多令人惊叹的建筑啊。"
+
+ infernals.1056.name: "银河重生"
+ infernals.1056.desc: "当我们忙于引燃星系时，§Y[hyperthermia_empire.GetName]§!已经将其永久重塑，把恒星变为了武器。\n\n现在，我们终于可以拥抱新的乌托邦，但随着他们对银河控制的加深，我们应密切监视他们的下一步行动。"
+ infernals.1056.a: "强大就会引发冲突。"
+ infernals.1056.b: "新的威胁已悄然滋生。"
+ infernals.1056.c: "出人意料的事态转折。"
+
+# Relic
+ r_crystallized_singularity: "结晶奇点"
+ r_crystallized_singularity_desc: "被焚烧的星系扭曲成怪诞的景象，奇点吐出诱人而灼热的波动。若不将其封印，这股炽热会莫名地吸引朝圣者，驱使他们走向最荒凉之地。站在焚光之前的人，愿放下尘世繁芜，只为更接近那纯粹的火焰。"
+ r_crystallized_singularity_effect_tt: "\n—§G10%§!或我方£physics_research£§Y$physics_research$§!收入同样产出$r_energy$。"
+ r_crystallized_singularity_ls_effect_tt: "—解锁在可殖民星球执行§Y$decision_gh_life_seeding$§!决策，创造新原始文明。"
+ crystallized_singularity_mod: "$r_crystallized_singularity$"
+ crystallized_singularity_mod_desc: "$r_crystallized_singularity_desc$"
+
+ decision_gh_life_seeding: "生命播种"
+ decision_gh_life_seeding_desc: "我们成功改造星系，导致多数行星物种迅速灭绝。如今，我们得以以自身形态重塑生命，开启新纪元。"
+ decision_gh_life_seeding_limit: "$TRIGGER_FAIL$§R该行星已拥有原始文明。§!"
+ decision_gh_life_seeding_colony: "$TRIGGER_FAIL$§R无法在被殖民地的星系内进行。§!"
+ decision_gh_life_seeding_effect: "以我们的形象创造一个原始文明。\n\n§H激活限制：§![from.gh_life_seeder_var]/3"
+
+# Grand Archive Specimen
+ infernal_burning_gem: "燃烧宝石"
+ infernal_burning_gem_desc_short: "这是[GetName]为利用熵能所创造的首批工作原型之一。"
+ infernal_burning_gem_desc_details: "对大多数视觉系统而言，这颗晶体碎片看似暗淡无光，其微弱的白色光泽掩盖了其中蕴藏的巨大能量。虽然可能已被更先进的技术取代，但其构造与特性仍有许多值得学习之处。"
+
+# Timeline
+ TIMELINE_EVENT_GH_START: "火风暴\n§L[GetDate]§!"
+ TIMELINE_EVENT_GH_START_TOOLTIP: "§H成为危机§!\n§Y危机事件§!\n\n[EVENT_TARGET_0.GetName]已点燃其统治，开始掌控星系命运。那些不共享此愿景者将陷入烈焰征服之路，只留下灰烬。"
+ TIMELINE_EVENT_GH_END: "吞噬烈焰\n§L[GetDate]§!"
+ TIMELINE_EVENT_GH_END_TOOLTIP: "§H星系败北§!\n§Y危机事件§!\n\n最初的炽热抱负已成为点燃星系的火花。反对者已化为灰烬，彻底从历史抹去了。"
+
+# Hyperthermia Terraformed Stars
+ sc_crisis_binary_1: "$sc_binary_1$"
+ sc_crisis_binary_2: "$sc_binary_1$"
+ sc_crisis_binary_5: "$sc_binary_1$"
+ sc_crisis_binary_7_8_9: "$sc_binary_1$"
+ sc_crisis_binary_10: "$sc_binary_1$"
+ sc_crisis_trinary_1: "$sc_trinary_1$"
+ sc_crisis_trinary_2: "$sc_trinary_1$"
+ sc_crisis_trinary_3: "$sc_trinary_1$"
+ sc_crisis_trinary_4: "$sc_trinary_1$"

@@ -23,6 +23,7 @@
  SPECIES_TRAIT_NECROID: "['concept_necroid_phenotype_traits']"
  SPECIES_TRAIT_AQUATIC: "['concept_aquatic_phenotype_traits']"
  SPECIES_TRAIT_TOXOID: "['concept_toxoid_phenotype_traits']"
+ SPECIES_TRAIT_INFERNAL: "['concept_infernal_phenotype_traits']"
  SPECIES_TRAIT_VOCATIONAL: "['concept_vocational_traits']"
  SPECIES_TRAIT_OVERTUNED: "['concept_overtuned_traits']"
  SPECIES_TRAIT_FLEETING_EXCELLENCE: "['concept_fleeting_excellence_traits']"
@@ -32,7 +33,7 @@
 
  trait_egg_laying: "卵生"
  trait_egg_laying_desc: "该物种的幼体发育不在母体中，而是在卵壳的保护之中进行。这一特质使其人口可以在物质充裕的时期快速增长。"
- trait_egg_laying_effect: "人口生长速度：当生活在当地$r_food$（或$r_minerals$）§G产出盈余§!的行星上时§G+15%§!"
+ trait_egg_laying_effect: "人口增长速度：当居住在拥有本地$r_food$（或同等）§G产出盈余§!的行星上时§G+15%§!"
  trait_egg_laying_portrait_override_tt: "或任何卵生物种"
 
  trait_seasonal_dormancy: "季节性休眠"
@@ -90,7 +91,7 @@
  trait_nascent_stage_desc: "该物种在早期发育阶段生产，导致幼体长期无法为社会做出贡献。在此期间，它们对智慧带来的责任和负担全然不知。"
  trait_nascent_stage_effect: "带有该特质的人口在新生的前§Y5§!为未开智状态。"
  trait_nascent_stage_portrait_override_tt: "或任何幼年期较长的物种"
- 
+
  trait_presapient_stage: "未开智"
  trait_presapient_stage_desc: "在一个短暂的无意识阶段后，这个物种很快就会成长为一个拥有完整智能的存在。"
 
@@ -180,7 +181,7 @@
  trait_ruler_apex_predator_tt: "从['concept_apex_predator_victories']中获得额外的 ['concept_apex_predator_effects',Insights]"
 
  concept_apex_predator_effects: "顶级掠食者洞见"
- concept_apex_predator_effects_desc: "§Y人形类§!：$mod_country_trade_produces_mult$§G+5%§!\n§Y哺乳类§!：$MOD_LOGISTIC_GROWTH_MULT$§G+5%§!\n§Y爬行类§!：$MOD_SHIP_SHIELD_HARDENING_ADD$§G+5%§!\n§Y鸟类§!：$MOD_SHIP_EVASION_ADD$§G+5%§!\n§Y节肢类§!：$MOD_SHIP_ARMOR_HARDENING_ADD$§G+5%§!\n§Y软体类§!：$MOD_SHIP_SENSOR_RANGE_ADD$§G+1§!\n§Y真菌类§!：$mod_country_food_produces_mult$§G+5%§!\n§Y植物类§!：$mod_country_energy_produces_mult$§G+5%§!\n§Y石质类§!：$mod_country_minerals_produces_mult$§G+5%§!\n§Y死灵类§!：$MOD_PLANET_CRIME_ADD$§G-10§!\n§Y水生类§!：$MOD_SHIP_HULL_ADD$§G+100§!\n§Y毒物类§!：$mod_country_exotic_gases_produces_mult$§G+10%§!\n§Y机械§!：$mod_country_alloys_produces_mult$§G+5%§!"
+ concept_apex_predator_effects_desc: "§Y人型生物类§!：$mod_country_trade_produces_mult$§G+5%§!\n§Y哺乳类§!：$MOD_LOGISTIC_GROWTH_MULT$§G+5%§!\n§Y爬行类§!：$MOD_SHIP_SHIELD_HARDENING_ADD$§G+5%§!\n§Y鸟类§!：$MOD_SHIP_EVASION_ADD$§G5%§!\n§Y节肢类§!：$MOD_SHIP_ARMOR_HARDENING_ADD$§G+5%§!\n§Y软体类§!：$MOD_SHIP_SENSOR_RANGE_ADD$§G+1§!\n§Y真菌类§!：$mod_country_food_produces_mult$§G+5%§!\n§Y植物类§!：$mod_country_energy_produces_mult$§G+5%§!\n§Y石质类§!：$mod_country_minerals_produces_mult$§G+5%§!\n§Y死灵类§!：$MOD_PLANET_CRIME_ADD$§G-10§!\n§Y水生类§!：$MOD_SHIP_HULL_ADD$§G+100§!\n§Y毒物类§!：$mod_country_exotic_gases_produces_mult$§G+10%§!\n§Y嗜热者§!：$mod_country_alloys_produces_mult$§G+5%§!\n§Y机械§!：$mod_country_alloys_produces_mult$§G+5%§!"
 
  concept_apex_predator_victories: "顶级掠食者胜利"
  concept_apex_predator_victories_desc: "顶级掠食者在以下情况下成长：\n$t$赢得§Y战争§!\n$t$使别国§Y臣服§!\n$t$让§Y银河共同体§!中的议案失败"
@@ -207,7 +208,7 @@
  evolutionary_predators_situation_desc: "随着不断与新物种遭遇，我们对各种独特的['concept_evopred_genetic_insights']进行分析、传播。一旦完成我们就可以演化，向我们的基因密码中永久性地增添新的正面§Y物种特质§!。"
  evolutionary_predators_situation_monthly_change_tooltip: "该§Y局势§!的进展取决于我们吞噬的['concept_evopred_genetic_insights']数量，也可以依据§Y应对方案§!加快推进速度。"
  evolutionary_predators_situation_outcome: "我们会基于现已吞噬的基因物质获取一个新的永久性物种特质。[Owner.GetConsumedGenes]"
- evopred_outcome_list: "\n我们已吞噬：[GetHumanoidGenes][GetMammalianGenes][GetReptilianGenes][GetAvianGenes][GetArthropoidGenes][GetMolluscoidGenes][GetFungoidGenes][GetPlantoidGenes][GetLithoidGenes][GetNecroidGenes][GetAquaticGenes][GetToxoidGenes]"
+ evopred_outcome_list: "\n我们已吞噬：[GetHumanoidGenes][GetMammalianGenes][GetReptilianGenes][GetAvianGenes][GetArthropoidGenes][GetMolluscoidGenes][GetFungoidGenes][GetPlantoidGenes][GetLithoidGenes][GetNecroidGenes][GetAquaticGenes][GetToxoidGenes][GetInfernalGenes]"
  humanoid_genes_list: "\n$t$['concept_humanoid_genes']"
  mammalian_genes_list: "\n$t$['concept_mammalian_genes']"
  reptilian_genes_list: "\n$t$['concept_reptilian_genes']"
@@ -220,6 +221,7 @@
  necroid_genes_list: "\n$t$['concept_necroid_genes']"
  aquatic_genes_list: "\n$t$['concept_aquatic_genes']"
  toxoid_genes_list: "\n$t$['concept_toxoid_genes']"
+ infernal_genes_list: "\n$t$['concept_infernal_genes']"
 
  concept_humanoid_genes: "人型类基因"
  concept_humanoid_genes_desc: "人形物种特质：\n$t$['trait:trait_familial']\n$t$['trait:trait_genetic_memory']"
@@ -245,6 +247,8 @@
  concept_aquatic_genes_desc: "水生物种特质：\n$t$['trait:trait_egg_laying']\n$t$['trait:trait_camouflage']\n$t$['trait:trait_chromalogs']"
  concept_toxoid_genes: "毒物类基因"
  concept_toxoid_genes_desc: "毒物物种特质\n$t$['trait:trait_acidic_vascularity']\n$t$['trait:trait_spare_organs']"
+ concept_infernal_genes: "嗜热者基因"
+ concept_infernal_genes_desc: "嗜热者物种特质：\n$t$['trait:trait_unbreakable_resolve']\n$t$['trait:trait_shell_slag']\n$t$['trait:trait_pyroclastic']\n$t$['trait:trait_crucible_community']"
  concept_evopred_genetic_insights: "基因洞见"
  concept_evopred_genetic_insights_desc: "§Y基因洞见可以通过如下方式获得：§!\n$t$—殖民新行星\n$t$—净化或将其他物种圈养为牲口\n$t$—在帝国中拥有奴隶或更好阶层的其他物种\n$t$—在['concept_council']雇佣外星领袖\n$t$—保有签有§Y基因什一税§!协议的附庸\n$t$—作为巨型企业，维持商业协议\n$t$—通过事件遭遇外星生命"
 
@@ -260,7 +264,7 @@
  evolutionary_predators_council: "内阁多样性"
  evolutionary_predators_subjects: "附属国多样性"
  evolutionary_predators_megacorp: "商业协议抽提"
- 
+
  evopred_small_progress: "推进 §Y演化适应§! 局势的进展 §G5%§!"
  evopred_medium_progress: "推进 §Y演化适应§! 局势的进展 §G10%§!"
  evopred_large_progress: "推进 §Y演化适应§! 局势的进展 §G20%§!" 
@@ -277,6 +281,7 @@
  evopred_necroid_extracted: "$evopred_base_extracted$§Y死灵类§!基因。"
  evopred_aquatic_extracted: "$evopred_base_extracted$§Y水生类§!基因。"
  evopred_toxoid_extracted: "$evopred_base_extracted$§Y毒物类§!基因。"
+ evopred_infernal_extracted: "§Y嗜热者§!$evopred_base_extracted$"
 
  subject_dna: "基因什一税"
  subject_dna_desc: "该条款指定附属国是否要向宗主国上交基因样本。"
@@ -305,6 +310,7 @@
  bio.1005.necroid: "死灵类的肉体也还是肉体。"
  bio.1005.aquatic: "水生类的适应力能在大海之外也带来生存策略。"
  bio.1005.toxoid: "毒物类真是§G酸爽开胃§!。"
+ bio.1005.infernal: "嗜热者§R会燃烧§!，但我们能处理好。"
  bio.1005.plasmic: "稳定等离子体基因将会是一场饕餮盛宴。"
  bio.1005.leviathan: "星系中的巨物们能教会我们些什么呢？"
  bio.1005.psionic: "灵能基因组中究竟是什么激发了这样的超凡认知力？"
@@ -1568,7 +1574,7 @@
  concept_leviathan_traits_desc: "星神兽特质是在击败星系中遭遇的星神兽并收获它们的基因物质之后获得的特质。包括：\n—['trait:trait_drake_scaled']\n—['trait:trait_voidling']\n—['trait:trait_tiyanki']"
 
  concept_phenotype_traits: "表型特质"
- concept_phenotype_traits_desc: "表型特质是一些特定物种外貌专属的物种特质。分为如下类别：$NEW_LINE$—['concept_humanoid_phenotype_traits']$NEW_LINE$—['concept_mammalian_phenotype_traits']$NEW_LINE$—['concept_reptilian_phenotype_traits']$NEW_LINE$—['concept_arthropoid_phenotype_traits']$NEW_LINE$—['concept_avian_phenotype_traits']$NEW_LINE$—['concept_molluscoid_phenotype_traits']$NEW_LINE$—['concept_plantoid_phenotype_traits']$NEW_LINE$—['concept_fungoid_phenotype_traits']$NEW_LINE$—['concept_lithoid_phenotype_traits']$NEW_LINE$—['concept_necroid_phenotype_traits']$NEW_LINE$—['concept_aquatic_phenotype_traits']$NEW_LINE$—['concept_toxoid_phenotype_traits']"
+ concept_phenotype_traits_desc: "表型特质是一些特定物种外貌专属的物种特质。分为如下类别：$NEW_LINE$—['concept_humanoid_phenotype_traits']$NEW_LINE$—['concept_mammalian_phenotype_traits']$NEW_LINE$—['concept_reptilian_phenotype_traits']$NEW_LINE$—['concept_arthropoid_phenotype_traits']$NEW_LINE$—['concept_avian_phenotype_traits']$NEW_LINE$—['concept_molluscoid_phenotype_traits']$NEW_LINE$—['concept_plantoid_phenotype_traits']$NEW_LINE$—['concept_fungoid_phenotype_traits']$NEW_LINE$—['concept_lithoid_phenotype_traits']$NEW_LINE$—['concept_necroid_phenotype_traits']$NEW_LINE$—['concept_aquatic_phenotype_traits']$NEW_LINE$—['concept_toxoid_phenotype_traits']$NEW_LINE$—['concept_infernal_phenotype_traits']"
 
  concept_humanoid_phenotype_traits: "人形物种特质"
  concept_humanoid_phenotype_traits_desc: "- ['trait:trait_familial']\n- ['trait:trait_genetic_memory']\n- ['trait:trait_nascent_stage']"
@@ -1594,6 +1600,8 @@
  concept_aquatic_phenotype_traits_desc: "- ['trait:trait_camouflage']\n- ['trait:trait_chromalogs']\n- ['trait:trait_egg_laying']\n- ['trait:trait_permeable_skin']"
  concept_toxoid_phenotype_traits: "毒物物种特质"
  concept_toxoid_phenotype_traits_desc: "- ['trait:trait_acidic_vascularity']\n- ['trait:trait_spare_organs']\n- ['trait:trait_hollow_bones']"
+ concept_infernal_phenotype_traits: "地狱物种特质"
+ concept_infernal_phenotype_traits_desc: "- ['trait:trait_shell_slag']\n- ['trait:trait_pyroclastic']\n- ['trait:trait_crucible_community']\n- ['trait:trait_plantoid_radiotrophic']"
 
  concept_automodding_habitability: "自动改造宜居性偏好特质"
  concept_automodding_habitability_plural: "自动改造宜居性偏好特质"
@@ -1602,12 +1610,12 @@
  automodding_habitability_tooltip_all: "['concept_automodding_habitability', $concept_automodding_habitability_plural$]将根据£pop£§H人口§!当前所生活的£planet£§Y行星类型§!进行自动调整"
 
  trait_auto_hab_preference: "诱变宜居性"
- trait_auto_hab_preference_tt_mod: "干燥气候宜居性：§Y$@auto_base|0%$§!\n潮湿气候宜居性：§Y$@auto_base|0%$§!\n寒冷气候宜居性：§Y$@auto_base|0%$§!\n$pc_nuked$宜居性：§Y$@auto_base|0%$§!"
+ trait_auto_hab_preference_tt_mod: "干燥气候宜居性：§Y$@auto_base|0%$§!\n$t$—潮湿气候宜居性：§Y$@auto_base|0%$§!\n$t$—寒冷气候宜居性：§Y$@auto_base|0%$§!\n$t$—$pc_nuked$宜居性：§Y$@auto_base|0%$§!\n$t$—$pc_volcanic$宜居性：§Y$@auto_base|0%$§!"
  trait_auto_hab_preference_tt_desc: "$automodding_habitability_tooltip_all$\n\n§Y$trait_auto_hab_preference$§!可从['concept_automodding_hab_preference']中挑选修正。"
  trait_auto_hab_preference_desc: "§L气候偏好通常由亿万年来的进化、设计，人工基因操纵所决定，但在这种情况下，逆转录病毒药物可以提供响应性环境适应力。§!"
 
  concept_automodding_hab_preference: "$trait_auto_hab_preference$特质列表"
- concept_automodding_hab_preference_desc: "普通：\n—['trait:trait_auto_dry_preference']\n—['trait:trait_auto_wet_preference']\n—['trait:trait_auto_cold_preference']\n\n特殊：\n—['trait:trait_auto_pc_nuked_preference']\n—['trait:trait_auto_pc_gaia_preference']\n—['trait:trait_auto_pc_hive_preference']\n\n人工：\n—['trait:trait_auto_pc_city_preference']\n—['trait:trait_auto_pc_relic_preference']\n—['trait:trait_auto_pc_habitat_preference']\n—['trait:trait_auto_pc_ringworld_habitable_preference']\n—['trait:trait_auto_pc_cosmogenesis_world_preference']"
+ concept_automodding_hab_preference_desc: "普通：\n—['trait:trait_auto_dry_preference']\n—['trait:trait_auto_wet_preference']\n—['trait:trait_auto_cold_preference']\n\n特殊：\n—['trait:trait_auto_pc_nuked_preference']\n—['trait:trait_auto_pc_gaia_preference']\n—['trait:trait_auto_pc_hive_preference']\n—['trait:trait_auto_pc_volcanic_preference']\n\n人工：\n—['trait:trait_auto_pc_city_preference']\n—['trait:trait_auto_pc_relic_preference']\n—['trait:trait_auto_pc_habitat_preference']\n—['trait:trait_auto_pc_ringworld_habitable_preference']\n—['trait:trait_auto_pc_cosmogenesis_world_preference']"
 
  auto_base_tt: "§G$@auto_base|0%$§!"
  auto_ideal_bonus_tt: "§G$@auto_ideal_bonus|0%$§!"
@@ -1615,22 +1623,22 @@
  auto_base_penalty_sum_tt: "§R$@auto_base_penalty_sum|0%$§!"
 
  trait_auto_wet_preference: "潮湿气候变异"
- trait_auto_wet_preference_tt: "干燥气候宜居性：$auto_base_penalty_sum_tt$\n潮湿气候宜居性：$auto_base_bonus_sum_tt$\n寒冷气候宜居性：$auto_base_penalty_sum_tt$\n$pc_nuked$宜居性：$auto_base_penalty_sum_tt$"
+ trait_auto_wet_preference_tt: "干燥气候宜居性：$auto_base_penalty_sum_tt$\n$t$—潮湿气候宜居性：$auto_base_bonus_sum_tt$\n$t$—寒冷气候宜居性：$auto_base_penalty_sum_tt$\n$t$—$pc_nuked$宜居性：$auto_base_penalty_sum_tt$\n$t$—$pc_volcanic$宜居性：$auto_base_penalty_sum_tt$"
  trait_auto_wet_preference_desc: "$trait_auto_hab_preference_desc$"
 
  trait_auto_cold_preference: "寒冷气候变异"
- trait_auto_cold_preference_tt: "干燥气候宜居性：$auto_base_penalty_sum_tt$\n潮湿气候宜居性：$auto_base_penalty_sum_tt$\n寒冷气候宜居性：$auto_base_bonus_sum_tt$\n$pc_nuked$宜居性：$auto_base_penalty_sum_tt$"
+ trait_auto_cold_preference_tt: "干燥气候宜居性：$auto_base_penalty_sum_tt$\n$t$—潮湿气候宜居性：$auto_base_penalty_sum_tt$\n$t$—寒冷气候宜居性：$auto_base_bonus_sum_tt$\n$t$—$pc_nuked$宜居性：$auto_base_penalty_sum_tt$\n$t$—$pc_volcanic$宜居性：$auto_base_penalty_sum_tt$"
  trait_auto_cold_preference_desc: "$trait_auto_hab_preference_desc$"
 
  trait_auto_dry_preference: "干燥气候变异"
- trait_auto_dry_preference_tt: "干燥气候宜居性：$auto_base_bonus_sum_tt$\n潮湿气候宜居性：$auto_base_penalty_sum_tt$\n寒冷气候宜居性：$auto_base_penalty_sum_tt$\n$pc_nuked$宜居性：$auto_base_penalty_sum_tt$"
+ trait_auto_dry_preference_tt: "干燥气候宜居性：$auto_base_bonus_sum_tt$\n$t$—潮湿气候宜居性：$auto_base_penalty_sum_tt$\n$t$—寒冷气候宜居性：$auto_base_penalty_sum_tt$\n$t$—$pc_nuked$宜居性：$auto_base_penalty_sum_tt$\n$t$—$pc_volcanic$宜居性：$auto_base_penalty_sum_tt$"
  trait_auto_dry_preference_desc: "$trait_auto_hab_preference_desc$"
 
  trait_auto_pc_nuked_preference: "$pc_nuked$变异"
- trait_auto_pc_nuked_preference_tt: "干燥气候宜居性：$auto_base_penalty_sum_tt$\n潮湿气候宜居性：$auto_base_penalty_sum_tt$\n寒冷气候宜居性：$auto_base_penalty_sum_tt$\n$pc_nuked$宜居性：$auto_base_bonus_sum_tt$"
+ trait_auto_pc_nuked_preference_tt: "干燥气候宜居性：$auto_base_penalty_sum_tt$\n$t$—潮湿气候宜居性：$auto_base_penalty_sum_tt$\n$t$—寒冷气候宜居性：$auto_base_penalty_sum_tt$\n$t$—$pc_nuked$宜居性：$auto_base_bonus_sum_tt$\n$t$—$pc_volcanic$宜居性：$auto_base_penalty_sum_tt$"
  trait_auto_pc_nuked_preference_desc: "$trait_auto_hab_preference_desc$"
 
- IDEAL_PREFERENCE_TT: "干燥气候宜居性：$auto_base_penalty_sum_tt$\n潮湿气候宜居性：$auto_base_penalty_sum_tt$\n寒冷气候宜居性：$auto_base_penalty_sum_tt$\n$pc_nuked$宜居性：$auto_base_penalty_sum_tt$"
+ IDEAL_PREFERENCE_TT: "干燥气候宜居性：$auto_base_penalty_sum_tt$\n$t$—潮湿气候宜居性：$auto_base_penalty_sum_tt$\n$t$—寒冷气候宜居性：$auto_base_penalty_sum_tt$\n$t$—$pc_nuked$宜居性：$auto_base_penalty_sum_tt$\n$t$—$pc_volcanic$宜居性：$auto_base_penalty_sum_tt$"
 
  trait_auto_pc_gaia_preference: "$pc_gaia$变异"
  trait_auto_pc_gaia_preference_tt: "$pc_gaia$宜居性：$auto_ideal_bonus_tt$\n$IDEAL_PREFERENCE_TT$"
@@ -1655,6 +1663,9 @@
  trait_auto_pc_cosmogenesis_world_preference: "$pc_cosmogenesis_world$变异"
  trait_auto_pc_cosmogenesis_world_preference_tt: "$pc_cosmogenesis_world$宜居性：$auto_ideal_bonus_tt$\n$IDEAL_PREFERENCE_TT$"
  trait_auto_pc_cosmogenesis_world_preference_desc: "$trait_auto_hab_preference_desc$"
+ trait_auto_pc_volcanic_preference: "$pc_volcanic$变异"
+ trait_auto_pc_volcanic_preference_tt: "干燥气候宜居性：$auto_base_penalty_sum_tt$\n$t$—潮湿气候宜居性：$auto_base_penalty_sum_tt$\n$t$—寒冷气候宜居性：$auto_base_penalty_sum_tt$\n$t$—$pc_nuked$宜居性：$auto_base_penalty_sum_tt$\n$t$—$pc_volcanic$宜居性：$auto_base_bonus_sum_tt$"
+ trait_auto_pc_volcanic_preference_desc: "$trait_auto_hab_preference_desc$"
 
  # Advanced Authorities
 
@@ -2501,14 +2512,14 @@
  SHIP_GRAPHICS_COSMO_CRISIS_WEAVER_DESC: "$SHIP_GRAPHICS_WEAVER_STAGE_1_DESC$"
  SHIP_GRAPHICS_COSMO_CRISIS_HARBINGER_DESC: "$SHIP_GRAPHICS_HARBINGER_STAGE_1_DESC$"
  SHIP_GRAPHICS_COSMO_CRISIS_STINGER_DESC: "$SHIP_GRAPHICS_STINGER_STAGE_1_DESC$"
- 
+
  unlocks_ship_2_bio: "解锁失落帝国的§Y颚蚁§!与§Y织蛛§!舰船科技。\n"
  menp_cosmo_ship_2_desc_bio: "通过扭曲时空联系，这些舰船超越了常规限制，它们紧凑船体下所蕴含的性能令那些遵循物理定律的普通舰船可望而不可及。"
  menp_cosmo_ship_3_desc_bio: "$tech_cosmogenesis_harbinger_desc$"
  unlocks_ship_3_bio: "解锁失落帝国的§Y孵后§!舰船科技"
  menp_cosmo_ship_4_desc_bio: "$tech_cosmogenesis_stinger_desc$"
  unlocks_ship_4_bio: "解锁失落帝国的§Y泰坦刺蜂§!舰船科技"
- 
+
  tech_cosmogenesis_mauler: "密文颚蚁"
  tech_cosmogenesis_mauler_desc: "通过有机体的时空维度超越法则，这种颚蚁的内部空间远大于其紧凑外观所见，塞入了高密度的肌肉组织。它的咬颚所能造成的伤害超出物理法则限制。"
  TECH_UNLOCK_COSMO_MAULER_CONSTRUCTION_TITLE: "§H解锁舰船类型：§!密文颚蚁"
@@ -2640,6 +2651,7 @@
  bio.3220.necroid: "给我们死灵类修饰。"
  bio.3220.aquatic: "给我们水生类修饰。"
  bio.3220.toxoid: "给我们毒物类修饰。"
+ bio.3220.infernal: "给我们嗜热者修饰。"
  bio.3220.psionic: "给我们灵能修饰。"
  bio.3220.evopred: "我们不会一直保持现状。"
  bio.3220.b: "我们不会因你的一时兴起就改变一个物种！"
@@ -2770,7 +2782,7 @@
  behemoth_crisis_level_5_req_tooltip: "£trigger_no£已完成§Y$BEHEMOTH_CRISIS_SPECIAL_PROJECT_4$§!§H$become_the_crisis_chain$§!特殊项目。"
 
  feral_insight: "野性洞见"
- feral_insight_name: "$feral_insight$"
+ feral_insight_name: "$feral_insight$："
  feral_insight_value: "£feral_insight£ $VAL|0$"
  feral_insight_current_value: "当前值：§Y$VALUE|0$§!"
  feral_insight_gaining: "完成§H危机目标§!以获得更多 £feral_insight£ §Y$feral_insight$§!。"
@@ -2966,7 +2978,7 @@
  biocrisis.190.tt: "我们会在30天后赢得游戏"
  biocrisis.190.b: "先等等，我们还没有准备好。"
  biocrisis.190.b.tt: "继续游玩当前国家。"
- 
+
  BEHEMOTH_TRANSFERENCE_PROJECT: "完成转变"
  BEHEMOTH_TRANSFERENCE_PROJECT_DESC: "我们与巨兽之交已有时日。彻底的转变已唾手可得，只待我们的一声令下。我们所即之处将是飞升之巅，所弃之物莫过于星域凡尘。肉体、重力，于我将再无挂碍。"
 
@@ -2986,7 +2998,7 @@
  biocrisis.196.desc: "数年前，噬天巨兽及其族群逃离了我们的星系。我们如释重负地看着这头本可能毁灭我们的野兽消失在无星的虚空之中。然后……无事发生。跨越了数十万光年之后，它就这么消失了。没有辐射，没有残影，没有引力涟漪。仿佛它从未存在过。"
  biocrisis.196.a: "我们必须弄清楚这件事。"
  UNSETTLING: "令人不安。"
- 
+
  biocrisis.197.name: "猎者之猎者，谁也？"
  biocrisis.197.desc: "揭秘噬天巨兽的命运耗费了数年时间，而我们至今仍一无所知。由于没有超空间航道能够到达那里，我们只能依靠理论和近乎疯狂的科学来猜测它生命最后时刻发生了什么。\n\n这只生物毫无畏惧，一味地继续飞翔。然后，转瞬之间，它的身形扭曲，像扭曲的布料一样向内盘旋，最终消失了。没有挣扎，没有踪迹。\n\n各种理论层出不穷：是新的超光速方式？或是隐藏到了深空裂缝或异常现象中？或者更令人担忧的是，被某种外部力量吞噬，化为乌有？无论真相如何，它都远远超出了我们的认知范围……甚至可能超出了我们的理解范围。"
  biocrisis.197.a: "最好别再去想它了。"
@@ -3553,13 +3565,13 @@
  mod_shipsize_behemoth_04_windup_mult: "$behemoth_04$ $MOD_SHIP_WINDUP_MULT$"
 
  evolve_to_unlock: "进化解锁$STAGE|Y$阶段"
- 
+
  r_voidspawn_myocardium: "虚空孳孽心肌"
  r_voidspawn_myocardium_desc: "几乎无敌的怪物，拥有不死之心。它邪恶的律动抵挡了我们的攻击，迫使我们陷入疯狂攻击状态。"
  eat_the_voidspawn: "§R吞噬此遗珍。§!"
  voidspawn_devourer: "虚空孳孽吞噬者"
 
- # Miscellaneous
+# Miscellaneous
 
  effect_random_existing_species_traits: "现存随机物种特质"
  effect_every_existing_species_traits: "现存所有物种特质"

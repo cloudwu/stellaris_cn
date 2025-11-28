@@ -23,6 +23,7 @@
  SPECIES_TRAIT_NECROID: "['concept_necroid_phenotype_traits']"
  SPECIES_TRAIT_AQUATIC: "['concept_aquatic_phenotype_traits']"
  SPECIES_TRAIT_TOXOID: "['concept_toxoid_phenotype_traits']"
+ SPECIES_TRAIT_INFERNAL: "['concept_infernal_phenotype_traits']"
  SPECIES_TRAIT_VOCATIONAL: "['concept_vocational_traits']"
  SPECIES_TRAIT_OVERTUNED: "['concept_overtuned_traits']"
  SPECIES_TRAIT_FLEETING_EXCELLENCE: "['concept_fleeting_excellence_traits']"
@@ -32,7 +33,7 @@
 
  trait_egg_laying: "Egg Laying"
  trait_egg_laying_desc: "The young of this species do not develop inside a parent, but inside the protective shell of an egg. This allows for rapid growth during times of plenty."
- trait_egg_laying_effect: "Pop Growth Speed: §G+15%§! while living on a planet with a local $r_food$ (or $r_minerals$) §GProduction Surplus§!"
+ trait_egg_laying_effect: "Pop Growth Speed: §G+15%§! while living on a planet with a local $r_food$ (or equivalent) §GProduction Surplus§!"
  trait_egg_laying_portrait_override_tt: "Or any oviparous species"
 
  trait_seasonal_dormancy: "Seasonal Dormancy"
@@ -180,7 +181,7 @@
  trait_ruler_apex_predator_tt: "Gains additional ['concept_apex_predator_effects',Insights] from ['concept_apex_predator_victories']."
 
  concept_apex_predator_effects: "Apex Predator Insights"
- concept_apex_predator_effects_desc: "§YHumanoids§!: $mod_country_trade_produces_mult$ §G+5%§!\n§YMammalians§!: $MOD_LOGISTIC_GROWTH_MULT$ §G+5%§!\n§YReptilians§!: $MOD_SHIP_SHIELD_HARDENING_ADD$ §G+5%§!\n§YAvians§!: $MOD_SHIP_EVASION_ADD$ §G5%§!\n§YArthropoids§!: $MOD_SHIP_ARMOR_HARDENING_ADD$ §G+5%§!\n§YMolluscoids§!: $MOD_SHIP_SENSOR_RANGE_ADD$ §G+1§!\n§YFungoids§!: $mod_country_food_produces_mult$ §G+5%§!\n§YPlantoid§!: $mod_country_energy_produces_mult$ §G+5%§!\n§YLithoids§!: $mod_country_minerals_produces_mult$ §G+5%§!\n§YNecroids§!: $MOD_PLANET_CRIME_ADD$ §G-10§!\n§YAquatics§!: $MOD_SHIP_HULL_ADD$ §G+100§!\n§YToxoids§!: $mod_country_exotic_gases_produces_mult$ §G+10%§!\n§YMachines§!: $mod_country_alloys_produces_mult$ §G+5%§!"
+ concept_apex_predator_effects_desc: "§YHumanoids§!: $mod_country_trade_produces_mult$ §G+5%§!\n§YMammalians§!: $MOD_LOGISTIC_GROWTH_MULT$ §G+5%§!\n§YReptilians§!: $MOD_SHIP_SHIELD_HARDENING_ADD$ §G+5%§!\n§YAvians§!: $MOD_SHIP_EVASION_ADD$ §G5%§!\n§YArthropoids§!: $MOD_SHIP_ARMOR_HARDENING_ADD$ §G+5%§!\n§YMolluscoids§!: $MOD_SHIP_SENSOR_RANGE_ADD$ §G+1§!\n§YFungoids§!: $mod_country_food_produces_mult$ §G+5%§!\n§YPlantoid§!: $mod_country_energy_produces_mult$ §G+5%§!\n§YLithoids§!: $mod_country_minerals_produces_mult$ §G+5%§!\n§YNecroids§!: $MOD_PLANET_CRIME_ADD$ §G-10§!\n§YAquatics§!: $MOD_SHIP_HULL_ADD$ §G+100§!\n§YToxoids§!: $mod_country_exotic_gases_produces_mult$ §G+10%§!\n§YThermophiles§!: $mod_country_alloys_produces_mult$ §G+5%§!\n§YMachines§!: $mod_country_alloys_produces_mult$ §G+5%§!"
 
  concept_apex_predator_victories: "Apex Predator Victories"
  concept_apex_predator_victories_desc: "The Apex Predator grows when:\n$t$Winning §YWars§!\n$t$§YSubjugating§! Others\n$t$Causing resolutions to fail in the §YGalactic Community§!"
@@ -207,7 +208,7 @@
  evolutionary_predators_situation_desc: "Unique ['concept_evopred_genetic_insights'] are analyzed and disseminated as we encounter new species. Once finished, we will evolve, permanently adding a new positive §YSpecies Trait§! to our own genetic code."
  evolutionary_predators_situation_monthly_change_tooltip: "The progress of this §YSituation§! is dependent on how many ['concept_evopred_genetic_insights'] we consume. It can progress faster depending on the §YApproach§!."
  evolutionary_predators_situation_outcome: "We will gain a new permanent species trait based on the genetic material we consumed. [Owner.GetConsumedGenes]"
- evopred_outcome_list: "\nWe have consumed:[GetHumanoidGenes][GetMammalianGenes][GetReptilianGenes][GetAvianGenes][GetArthropoidGenes][GetMolluscoidGenes][GetFungoidGenes][GetPlantoidGenes][GetLithoidGenes][GetNecroidGenes][GetAquaticGenes][GetToxoidGenes]"
+ evopred_outcome_list: "\nWe have consumed:[GetHumanoidGenes][GetMammalianGenes][GetReptilianGenes][GetAvianGenes][GetArthropoidGenes][GetMolluscoidGenes][GetFungoidGenes][GetPlantoidGenes][GetLithoidGenes][GetNecroidGenes][GetAquaticGenes][GetToxoidGenes][GetInfernalGenes]"
  humanoid_genes_list: "\n$t$['concept_humanoid_genes']"
  mammalian_genes_list: "\n$t$['concept_mammalian_genes']"
  reptilian_genes_list: "\n$t$['concept_reptilian_genes']"
@@ -220,6 +221,7 @@
  necroid_genes_list: "\n$t$['concept_necroid_genes']"
  aquatic_genes_list: "\n$t$['concept_aquatic_genes']"
  toxoid_genes_list: "\n$t$['concept_toxoid_genes']"
+ infernal_genes_list: "\n$t$['concept_infernal_genes']"
 
  concept_humanoid_genes: "Humanoid Genes"
  concept_humanoid_genes_desc: "Humanoid Species Traits:\n$t$['trait:trait_familial']\n$t$['trait:trait_genetic_memory']"
@@ -245,6 +247,8 @@
  concept_aquatic_genes_desc: "Aquatic Species Traits:\n$t$['trait:trait_egg_laying']\n$t$['trait:trait_camouflage']\n$t$['trait:trait_chromalogs']"
  concept_toxoid_genes: "Toxoid Genes"
  concept_toxoid_genes_desc: "Toxoid Species Traits:\n$t$['trait:trait_acidic_vascularity']\n$t$['trait:trait_spare_organs']"
+ concept_infernal_genes: "Thermophile Genes"
+ concept_infernal_genes_desc: "Thermophile Species Traits:\n$t$['trait:trait_unbreakable_resolve']\n$t$['trait:trait_shell_slag']\n$t$['trait:trait_pyroclastic']\n$t$['trait:trait_crucible_community']"
  concept_evopred_genetic_insights: "Genetic Insights"
  concept_evopred_genetic_insights_desc: "§YGenetic Insights can be gained by:§!\n$t$- Colonizing new planets\n$t$- Purging or keeping other species as Livestock\n$t$- Keeping other species within our Empire as slaves or better\n$t$- Employing alien leaders on our ['concept_council']\n$t$- Keeping vassals with §YGenetic Tithe§! Agreeement\n$t$- For Megacorps, maintaining Commercial Pacts\n$t$- Encountering alien life through events"
 
@@ -277,6 +281,7 @@
  evopred_necroid_extracted: "§YNecroid§! $evopred_base_extracted$"
  evopred_aquatic_extracted: "§YAquatic§! $evopred_base_extracted$"
  evopred_toxoid_extracted: "§YToxoid§! $evopred_base_extracted$"
+ evopred_infernal_extracted: "§YThermophile§! $evopred_base_extracted$"
 
  subject_dna: "DNA Tithe"
  subject_dna_desc: "This Term dictates whether or not the Subject sends samples of their DNA to their Overlord."
@@ -305,6 +310,7 @@
  bio.1005.necroid: "Necrotic flesh is still flesh."
  bio.1005.aquatic: "Aquatic adaptations offer survival strategies beyond the sea."
  bio.1005.toxoid: "The Toxoids are §Gsour§!."
+ bio.1005.infernal: "The Thermophiles §Rburn§!, but now we can handle it."
  bio.1005.plasmic: "Stabilizing Plasmic DNA would be an impressive feat."
  bio.1005.leviathan: "What can the Titans of the galaxy teach us?"
  bio.1005.psionic: "What within the Psionic genome fuels such cognitive prowess?"
@@ -1568,7 +1574,7 @@
  concept_leviathan_traits_desc: "Leviathan Traits are Species Traits that are acquired by defeating Leviathans encountered throughout the galaxy and harvesting their genetic material. They include:\n- ['trait:trait_drake_scaled'] \n- ['trait:trait_voidling'] \n- ['trait:trait_tiyanki']"
 
  concept_phenotype_traits: "Phenotype Traits"
- concept_phenotype_traits_desc: "Phenotype Traits are Species Traits that are restricted to certain Species Phenotypes. They belong to the following categories:$NEW_LINE$- ['concept_humanoid_phenotype_traits'] $NEW_LINE$- ['concept_mammalian_phenotype_traits'] $NEW_LINE$- ['concept_reptilian_phenotype_traits'] $NEW_LINE$- ['concept_arthropoid_phenotype_traits'] $NEW_LINE$- ['concept_avian_phenotype_traits'] $NEW_LINE$- ['concept_molluscoid_phenotype_traits']$NEW_LINE$- ['concept_plantoid_phenotype_traits'] $NEW_LINE$- ['concept_fungoid_phenotype_traits'] $NEW_LINE$- ['concept_lithoid_phenotype_traits'] $NEW_LINE$- ['concept_necroid_phenotype_traits'] $NEW_LINE$- ['concept_aquatic_phenotype_traits'] $NEW_LINE$- ['concept_toxoid_phenotype_traits'] "
+ concept_phenotype_traits_desc: "Phenotype Traits are Species Traits that are restricted to certain Species Phenotypes. They belong to the following categories:$NEW_LINE$- ['concept_humanoid_phenotype_traits'] $NEW_LINE$- ['concept_mammalian_phenotype_traits'] $NEW_LINE$- ['concept_reptilian_phenotype_traits'] $NEW_LINE$- ['concept_arthropoid_phenotype_traits'] $NEW_LINE$- ['concept_avian_phenotype_traits'] $NEW_LINE$- ['concept_molluscoid_phenotype_traits']$NEW_LINE$- ['concept_plantoid_phenotype_traits'] $NEW_LINE$- ['concept_fungoid_phenotype_traits'] $NEW_LINE$- ['concept_lithoid_phenotype_traits'] $NEW_LINE$- ['concept_necroid_phenotype_traits'] $NEW_LINE$- ['concept_aquatic_phenotype_traits'] $NEW_LINE$- ['concept_toxoid_phenotype_traits'] $NEW_LINE$- ['concept_infernal_phenotype_traits'] "
 
  concept_humanoid_phenotype_traits: "Humanoid Species Traits"
  concept_humanoid_phenotype_traits_desc: "- ['trait:trait_familial']\n- ['trait:trait_genetic_memory']\n- ['trait:trait_nascent_stage']"
@@ -1594,6 +1600,8 @@
  concept_aquatic_phenotype_traits_desc: "- ['trait:trait_camouflage']\n- ['trait:trait_chromalogs']\n- ['trait:trait_egg_laying']\n- ['trait:trait_permeable_skin']"
  concept_toxoid_phenotype_traits: "Toxoid Species Traits"
  concept_toxoid_phenotype_traits_desc: "- ['trait:trait_acidic_vascularity']\n- ['trait:trait_spare_organs']\n- ['trait:trait_hollow_bones']"
+ concept_infernal_phenotype_traits: "Infernal Species Traits"
+ concept_infernal_phenotype_traits_desc: "- ['trait:trait_shell_slag']\n- ['trait:trait_pyroclastic']\n- ['trait:trait_crucible_community']\n- ['trait:trait_plantoid_radiotrophic']"
 
  concept_automodding_habitability: "Auto-Modding Habitability Preference Trait"
  concept_automodding_habitability_plural: "Auto-Modding Habitability Preference Traits"
@@ -1602,12 +1610,12 @@
  automodding_habitability_tooltip_all: "['concept_automodding_habitability', $concept_automodding_habitability_plural$] automatically adjust to the £planet£ §YPlanet Class§! a £pop£ §HPops§! currently lives on."
 
  trait_auto_hab_preference: "Mutagenic Habitability"
- trait_auto_hab_preference_tt_mod: "Dry Climate Habitability: §Y$@auto_base|0%$§!\n$t$- Wet Climate Habitability: §Y$@auto_base|0%$§!\n$t$- Cold Climate Habitability: §Y$@auto_base|0%$§!\n$t$- $pc_nuked$ Habitability: §Y$@auto_base|0%$§!"
+ trait_auto_hab_preference_tt_mod: "Dry Climate Habitability: §Y$@auto_base|0%$§!\n$t$- Wet Climate Habitability: §Y$@auto_base|0%$§!\n$t$- Cold Climate Habitability: §Y$@auto_base|0%$§!\n$t$- $pc_nuked$ Habitability: §Y$@auto_base|0%$§!\n$t$- $pc_volcanic$ Habitability: §Y$@auto_base|0%$§!"
  trait_auto_hab_preference_tt_desc: "$automodding_habitability_tooltip_all$\n\n§Y$trait_auto_hab_preference$§! picks modifiers from the ['concept_automodding_hab_preference']."
  trait_auto_hab_preference_desc: "§LClimate preference is determined by eons of evolution, design, skillful genetic manipulation or, in this case, retroviral agents providing responsive environmental adaptations.§!"
 
  concept_automodding_hab_preference: "$trait_auto_hab_preference$ Trait List"
- concept_automodding_hab_preference_desc: "Regular:\n- ['trait:trait_auto_dry_preference']\n- ['trait:trait_auto_wet_preference']\n- ['trait:trait_auto_cold_preference']\n\nSpecial:\n- ['trait:trait_auto_pc_nuked_preference']\n- ['trait:trait_auto_pc_gaia_preference']\n- ['trait:trait_auto_pc_hive_preference']\n\nArtificial:\n- ['trait:trait_auto_pc_city_preference']\n- ['trait:trait_auto_pc_relic_preference']\n- ['trait:trait_auto_pc_habitat_preference']\n- ['trait:trait_auto_pc_ringworld_habitable_preference']\n- ['trait:trait_auto_pc_cosmogenesis_world_preference']"
+ concept_automodding_hab_preference_desc: "Regular:\n- ['trait:trait_auto_dry_preference']\n- ['trait:trait_auto_wet_preference']\n- ['trait:trait_auto_cold_preference']\n\nSpecial:\n- ['trait:trait_auto_pc_nuked_preference']\n- ['trait:trait_auto_pc_gaia_preference']\n- ['trait:trait_auto_pc_hive_preference']\n- ['trait:trait_auto_pc_volcanic_preference']\n\nArtificial:\n- ['trait:trait_auto_pc_city_preference']\n- ['trait:trait_auto_pc_relic_preference']\n- ['trait:trait_auto_pc_habitat_preference']\n- ['trait:trait_auto_pc_ringworld_habitable_preference']\n- ['trait:trait_auto_pc_cosmogenesis_world_preference']"
 
  auto_base_tt: "§G$@auto_base|0%$§!"
  auto_ideal_bonus_tt: "§G$@auto_ideal_bonus|0%$§!"
@@ -1615,22 +1623,22 @@
  auto_base_penalty_sum_tt: "§R$@auto_base_penalty_sum|0%$§!"
 
  trait_auto_wet_preference: "Wet Climate Mutations"
- trait_auto_wet_preference_tt: "Dry Climate Habitability: $auto_base_penalty_sum_tt$\n$t$- Wet Climate Habitability: $auto_base_bonus_sum_tt$\n$t$- Cold Climate Habitability: $auto_base_penalty_sum_tt$\n$t$- $pc_nuked$ Habitability: $auto_base_penalty_sum_tt$"
+ trait_auto_wet_preference_tt: "Dry Climate Habitability: $auto_base_penalty_sum_tt$\n$t$- Wet Climate Habitability: $auto_base_bonus_sum_tt$\n$t$- Cold Climate Habitability: $auto_base_penalty_sum_tt$\n$t$- $pc_nuked$ Habitability: $auto_base_penalty_sum_tt$\n$t$- $pc_volcanic$ Habitability: $auto_base_penalty_sum_tt$"
  trait_auto_wet_preference_desc: "$trait_auto_hab_preference_desc$"
 
  trait_auto_cold_preference: "Cold Climate Mutations"
- trait_auto_cold_preference_tt: "Dry Climate Habitability: $auto_base_penalty_sum_tt$\n$t$- Wet Climate Habitability: $auto_base_penalty_sum_tt$\n$t$- Cold Climate Habitability: $auto_base_bonus_sum_tt$\n$t$- $pc_nuked$ Habitability: $auto_base_penalty_sum_tt$"
+ trait_auto_cold_preference_tt: "Dry Climate Habitability: $auto_base_penalty_sum_tt$\n$t$- Wet Climate Habitability: $auto_base_penalty_sum_tt$\n$t$- Cold Climate Habitability: $auto_base_bonus_sum_tt$\n$t$- $pc_nuked$ Habitability: $auto_base_penalty_sum_tt$\n$t$- $pc_volcanic$ Habitability: $auto_base_penalty_sum_tt$"
  trait_auto_cold_preference_desc: "$trait_auto_hab_preference_desc$"
 
  trait_auto_dry_preference: "Dry Climate Mutations"
- trait_auto_dry_preference_tt: "Dry Climate Habitability: $auto_base_bonus_sum_tt$\n$t$- Wet Climate Habitability: $auto_base_penalty_sum_tt$\n$t$- Cold Climate Habitability: $auto_base_penalty_sum_tt$\n$t$- $pc_nuked$ Habitability: $auto_base_penalty_sum_tt$"
+ trait_auto_dry_preference_tt: "Dry Climate Habitability: $auto_base_bonus_sum_tt$\n$t$- Wet Climate Habitability: $auto_base_penalty_sum_tt$\n$t$- Cold Climate Habitability: $auto_base_penalty_sum_tt$\n$t$- $pc_nuked$ Habitability: $auto_base_penalty_sum_tt$\n$t$- $pc_volcanic$ Habitability: $auto_base_penalty_sum_tt$"
  trait_auto_dry_preference_desc: "$trait_auto_hab_preference_desc$"
 
  trait_auto_pc_nuked_preference: "$pc_nuked$ Mutations"
- trait_auto_pc_nuked_preference_tt: "Dry Climate Habitability: $auto_base_penalty_sum_tt$\n$t$- Wet Climate Habitability: $auto_base_penalty_sum_tt$\n$t$- Cold Climate Habitability: $auto_base_penalty_sum_tt$\n$t$- $pc_nuked$ Habitability: $auto_base_bonus_sum_tt$"
+ trait_auto_pc_nuked_preference_tt: "Dry Climate Habitability: $auto_base_penalty_sum_tt$\n$t$- Wet Climate Habitability: $auto_base_penalty_sum_tt$\n$t$- Cold Climate Habitability: $auto_base_penalty_sum_tt$\n$t$- $pc_nuked$ Habitability: $auto_base_bonus_sum_tt$\n$t$- $pc_volcanic$ Habitability: $auto_base_penalty_sum_tt$"
  trait_auto_pc_nuked_preference_desc: "$trait_auto_hab_preference_desc$"
 
- IDEAL_PREFERENCE_TT: "Dry Climate Habitability: $auto_base_penalty_sum_tt$\n$t$- Wet Climate Habitability: $auto_base_penalty_sum_tt$\n$t$- Cold Climate Habitability: $auto_base_penalty_sum_tt$\n$t$- $pc_nuked$ Habitability: $auto_base_penalty_sum_tt$"
+ IDEAL_PREFERENCE_TT: "Dry Climate Habitability: $auto_base_penalty_sum_tt$\n$t$- Wet Climate Habitability: $auto_base_penalty_sum_tt$\n$t$- Cold Climate Habitability: $auto_base_penalty_sum_tt$\n$t$- $pc_nuked$ Habitability: $auto_base_penalty_sum_tt$\n$t$- $pc_volcanic$ Habitability: $auto_base_penalty_sum_tt$"
 
  trait_auto_pc_gaia_preference: "$pc_gaia$ Mutations"
  trait_auto_pc_gaia_preference_tt: "$pc_gaia$ Habitability: $auto_ideal_bonus_tt$\n$t$- $IDEAL_PREFERENCE_TT$"
@@ -1655,6 +1663,9 @@
  trait_auto_pc_cosmogenesis_world_preference: "$pc_cosmogenesis_world$ Mutations"
  trait_auto_pc_cosmogenesis_world_preference_tt: "$pc_cosmogenesis_world$ Habitability: $auto_ideal_bonus_tt$\n$t$- $IDEAL_PREFERENCE_TT$"
  trait_auto_pc_cosmogenesis_world_preference_desc: "$trait_auto_hab_preference_desc$"
+ trait_auto_pc_volcanic_preference: "$pc_volcanic$ Mutations"
+ trait_auto_pc_volcanic_preference_tt: "Dry Climate Habitability: $auto_base_penalty_sum_tt$\n$t$- Wet Climate Habitability: $auto_base_penalty_sum_tt$\n$t$- Cold Climate Habitability: $auto_base_penalty_sum_tt$\n$t$- $pc_nuked$ Habitability: $auto_base_penalty_sum_tt$\n$t$- $pc_volcanic$ Habitability: $auto_base_bonus_sum_tt$"
+ trait_auto_pc_volcanic_preference_desc: "$trait_auto_hab_preference_desc$"
 
  # Advanced Authorities
 
@@ -2640,6 +2651,7 @@
  bio.3220.necroid: "Give us the necroid modification."
  bio.3220.aquatic: "Give us the aquatic modification."
  bio.3220.toxoid: "Give us the toxoid modification."
+ bio.3220.infernal: "Give us the thermophile modification."
  bio.3220.psionic: "Give us the psionic modification."
  bio.3220.evopred: "We wont stay the same for long."
  bio.3220.b: "We won't change a species on your whim!"
@@ -2770,7 +2782,7 @@
  behemoth_crisis_level_5_req_tooltip: "£trigger_no£ Has completed §Y$BEHEMOTH_CRISIS_SPECIAL_PROJECT_4$§! §H$become_the_crisis_chain$§! Special Project"
 
  feral_insight: "Feral Insight"
- feral_insight_name: "$feral_insight$"
+ feral_insight_name: "$feral_insight$:"
  feral_insight_value: "£feral_insight£ $VAL|0$"
  feral_insight_current_value: "Current Value: §Y$VALUE|0$§!"
  feral_insight_gaining: "Complete §HCrisis Objectives§! to gain more £feral_insight£ §Y$feral_insight$§!."

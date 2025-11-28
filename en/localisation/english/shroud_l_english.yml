@@ -1058,6 +1058,7 @@
  SACRIFICE_POP_GROUP_EFFECT: "$AMOUNT|Y$ £pop£ §HPops§! are sacrificed\n"
  OPEN_SHROUD_TAB_EFFECT: "Open the Shroud Tab"
  SET_AI_PREFERRED_PATRON_EFFECT_DEBUG: "Set $PATRON$ as $COUNTRY$'s preferred Shroud Patron" # Used only for debug purposes
+ effect_psionic_aura: "- $MOD_SHIP_FIRE_RATE_MULT$: §R-80%§!\n- $MOD_SHIP_SHIELD_MULT$: §R-100%§!\n- $mod_planet_jobs_produces_mult$: §R-30%§!\n- $mod_planet_pops_upkeep_mult$: §R+100%§!\n- $MOD_PLANET_BUILDING_TIME_MULT$: §R+100%§!"
 
 # Attunement
  ADD_ATTUNEMENT_PATRON_EFFECT: "Attunement to $PATRON$: $VALUE|Y$"
@@ -1295,7 +1296,7 @@
 # Economic categories
 #==========================
  planet_test_subjects: "Test Subject Jobs"
- planet_experiment_engineer: "[GetExperimentalEngineerPlural]"
+ planet_experiment_engineer: "Experiment Engineer Jobs"
  planet_production_overseers: "Production Overseer Jobs"
  shroud_envoys: "Shroud Envoys"
 
@@ -2411,6 +2412,8 @@
 
 # Pops
  mod_planet_pops_food_upkeep_mult: "Pop Food Upkeep"
+ mod_planet_pops_energy_upkeep_mult: "Pop Energy Upkeep"
+ mod_planet_pops_minerals_upkeep_mult: "Pop Minerals Upkeep"
 
  thought_police_established: "$decision_thought_police$"
  thought_police_established_desc: "Using scientific techniques to monitor the population's cognitive activity, Thought Police are detecting [Owner.GetCriminalDeviant] intent at an early stage and taking appropriate action before it manifests in actual behavior."
@@ -3339,7 +3342,7 @@
 #==========================
  trait_tankbound: "Tankbound"
  trait_tankbound_desc: "This species lives out its existence suspended in a vat of specialized bio-fluids. As such, they are heavily reliant on assistive equipment and incapable of engaging directly in physical work."
- trait_tankbound_effects: "§RCannot occupy Worker Jobs§!$TABBED_NEW_LINE$- §RCannot be recruited in Armies§!"
+ trait_tankbound_effects: "Pop Food (or equivalent) Upkeep: §G-50%§! $TABBED_NEW_LINE$- §RCannot occupy Worker Jobs§!$TABBED_NEW_LINE$- §RCannot be recruited in Armies§!"
  trait_tankbound_portrait_override_tt: "Requires a species confined to containment vessels"
 
  trait_robot_latent_psionic: "$trait_latent_psionic$"
@@ -5218,6 +5221,8 @@
  shroud.6700.desc.common: "We have instituted an immediate crackdown on all psionic practices on these worlds, completely neutralizing their abominable §H$PSIONIC_AURA$§!.\n\nIn the planet's principal metropolis lies a ruined tower known as the §H$SANCTUM_OF_THE_LOST$§!, once the high temple of the former empire's now-disgraced psionic cult. Our soldiers describe it as radiating a numinous, unsettling presence.\n\nThe innermost chamber of the structure houses a tightly sealed 'cocoon' emanating powerful levels of localized psi-radiation. Standard munitions have proven ineffective in breaching its exterior. Further investigation will be required to eliminate the potential threat this object poses to our continued safety."
  shroud.6700.desc.contact: "The conquest of §H[current_planet.GetName]§! marked our final victory against the §H[exiled_country.GetName]§!. $shroud.6700.desc.common$"
  shroud.6700.desc.no_contact: "In conquering §H[current_planet.GetName]§!, we gained control of territory once ruled by an empire known as the §H[exiled_country.GetName]§!. $shroud.6700.desc.common$"
+ shroud.6700.desc.contact_no_name: "The conquest of §H[current_planet.GetName]§! marked our final victory against the ?.$shroud.6700.desc.common$"
+ shroud.6700.desc.no_exiled: "In conquering §H[current_planet.GetName]§!, we gained control of territory once ruled by psionic zealots. $shroud.6700.desc.common$"
  shroud.6700.a: "Unsettling news... Investigate further."
 
  shroud.6705.name: "$psionic_threat_eliminated$"

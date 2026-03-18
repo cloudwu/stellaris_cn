@@ -47,6 +47,8 @@
  PERDITION_BEAM_TITAN:0 "$PERDITION_BEAM$"
  PERDITION_BEAM_ION:1 "离子炮"
  PERDITION_BEAM_DESC:0 "相连能量放大器导管的巨型阵列，能发射火力前所未有的光束。"
+ PERDITION_BEAM_FLEET_EFFECT: "§Y连带伤害：§!对位于目标的§G$@perdition_beam_collateral_range|0Y$§!范围内的全体舰船造成§G$@perdition_beam_fleet_damage|0G$§!伤害。"
+ ION_CANNON_FLEET_EFFECT: "§Y连带伤害：§!对位于目标的§G$@ion_cannon_fleet_damage|0G$§!范围内的全体舰船造成§G$@ion_cannon_collateral_range|0Y$§!伤害。"
 
  PLASMA_1:0 "等离子体喷射器"
  PLASMA_1_DESC:1 "$tech_plasma_1_desc$"
@@ -822,7 +824,7 @@
  COMBAT_COMPUTER_LINE_BASIC:0 "作战计算机（战列）"
  COMBAT_COMPUTER_ARTILLERY_BASIC:0 "作战计算机（火炮）"
  COMBAT_COMPUTER_CARRIER_BASIC:0 "作战计算机（航母）"
- COMBAT_COMPUTER_TORPEDO_BASIC:0 "作战计算机（鱼雷）"
+ COMBAT_COMPUTER_TORPEDO_BASIC:0 "作战电脑（攻城）"
  COMBAT_COMPUTER_PLATFORM_BASIC:0 "作战计算机（平台）"
  COMBAT_COMPUTER_SWARM_BASIC_DESC: "$tech_combat_computers_1_desc$"
  COMBAT_COMPUTER_PICKET_BASIC_DESC: "$tech_combat_computers_1_desc$"
@@ -837,7 +839,7 @@
  COMBAT_COMPUTER_LINE_ADVANCED:0 "先进型作战计算机（战列）"
  COMBAT_COMPUTER_ARTILLERY_ADVANCED:0 "先进型作战计算机（火炮）"
  COMBAT_COMPUTER_CARRIER_ADVANCED:0 "先进型作战计算机（航母）"
- COMBAT_COMPUTER_TORPEDO_ADVANCED:0 "先进型作战计算机（鱼雷）"
+ COMBAT_COMPUTER_TORPEDO_ADVANCED:0 "先进作战电脑（攻城）"
  COMBAT_COMPUTER_PLATFORM_ADVANCED:0 "先进型作战计算机（平台）"
  COMBAT_COMPUTER_SWARM_ADVANCED_DESC: "$tech_combat_computers_2_desc$"
  COMBAT_COMPUTER_PICKET_ADVANCED_DESC: "$tech_combat_computers_2_desc$"
@@ -852,7 +854,7 @@
  COMBAT_COMPUTER_LINE_SAPIENT:0 "智慧型作战计算机（战列）"
  COMBAT_COMPUTER_ARTILLERY_SAPIENT:0 "智慧型作战计算机（火炮）"
  COMBAT_COMPUTER_CARRIER_SAPIENT:0 "智慧型作战计算机（航母）"
- COMBAT_COMPUTER_TORPEDO_SAPIENT:0 "智慧型作战计算机（鱼雷）"
+ COMBAT_COMPUTER_TORPEDO_SAPIENT:0 "智慧作战电脑（攻城）"
  COMBAT_COMPUTER_PLATFORM_SAPIENT:0 "智慧型作战计算机（平台）"
  COMBAT_COMPUTER_SWARM_SAPIENT_DESC: "$tech_combat_computers_3_desc$"
  COMBAT_COMPUTER_PICKET_SAPIENT_DESC: "$tech_combat_computers_3_desc$"
@@ -867,7 +869,7 @@
  COMBAT_COMPUTER_LINE_AUTONOMOUS:0 "自主舰船智能（战列）"
  COMBAT_COMPUTER_ARTILLERY_AUTONOMOUS:0 "自主舰船智能（火炮）"
  COMBAT_COMPUTER_CARRIER_AUTONOMOUS:0 "自主舰船智能（航母）"
- COMBAT_COMPUTER_TORPEDO_AUTONOMOUS:0 "自主舰船智能（鱼雷）"
+ COMBAT_COMPUTER_TORPEDO_AUTONOMOUS:0 "自律舰船智能（攻城）"
  COMBAT_COMPUTER_PLATFORM_AUTONOMOUS:0 "自主舰船智能（平台）"
  COMBAT_COMPUTER_SWARM_AUTONOMOUS_DESC: "$tech_combat_computers_autonomous_desc$"
  COMBAT_COMPUTER_PICKET_AUTONOMOUS_DESC: "$tech_combat_computers_autonomous_desc$"
@@ -882,7 +884,7 @@
  COMBAT_COMPUTER_LINE_PRECOG:0 "预知接口（战列）"
  COMBAT_COMPUTER_ARTILLERY_PRECOG:0 "预知接口（火炮）"
  COMBAT_COMPUTER_CARRIER_PRECOG:0 "预知接口（航母）"
- COMBAT_COMPUTER_TORPEDO_PRECOG:0 "预知接口（鱼雷）"
+ COMBAT_COMPUTER_TORPEDO_PRECOG:0 "预知接口（攻城）"
  COMBAT_COMPUTER_PLATFORM_PRECOG:0 "预知接口（平台）"
  COMBAT_COMPUTER_SWARM_PRECOG_DESC: "$tech_precognition_interface_desc$"
  COMBAT_COMPUTER_PICKET_PRECOG_DESC: "$tech_precognition_interface_desc$"
@@ -907,13 +909,13 @@
 
  DEFAULT_BEHAVIOR_DESC:1 "§H混合战术：§!军舰会平衡进攻与防守。"
  SWARM_BEHAVIOR_DESC:2 "§H群集战术：§!舰船将直接冲向敌人，在他们最短程武器的射程范围内尽可能多地对敌人造成伤害。"
- ARTILLERY_BEHAVIOR_DESC:2 "§H火炮战术：§!舰船将停留在较远的距离上，使用最长射程的武器来攻击目标。"
+ ARTILLERY_BEHAVIOR_DESC:2 "§H炮击战术：§!舰船将停留在中距离上，使用长射程的武器来攻击目标。"
  CARRIER_BEHAVIOR_DESC:1 "§H航母战术：§!舰船会停留在其机库的最远交战半径上。"
  LINE_BEHAVIOR_DESC:2 "§H战列战术：§!舰船将推进到中距离并保持阵型目标。"
  PICKET_BEHAVIOR_DESC:2 "§H警戒战术：§!舰船将推进到中距离并尝试拦截迫近的敌舰。"
  PLATFORM_BEHAVIOR_DESC:2 "§H平台战术：§!防御平台将保持静止并向射程内的任何目标发动攻击。"
  COLOSSUS_BEHAVIOR_DESC:0 "§H忽视战术：§!此舰将无视一切进攻的敌人并完成当前的任务。"
- TORPEDO_BEHAVIOR_DESC:0 "§H鱼雷战术：§!舰船将直接冲向敌人进行扫射轰炸。"
+ TORPEDO_BEHAVIOR_DESC:0 "§H鱼雷战术：§!这类舰船将对敌人发起直线冲锋，通过扫射式攻击对付大型对手。该舰擅长地表轰炸。"
 
  USE_MAIN_TARGET_DESC:0 "武器目标：作战电脑的§Y主目标§!"
  WEAPON_COMPONENT_TARGET_TYPE_DESC:0 "武器目标：$TARGET_TYPE|Y$舰船"
@@ -3485,7 +3487,7 @@
  EXPLORE_BYPASS_INACTIVE:0 "$BYPASS$未被激活。"
  TRIGGER_TEST:0 "$CONDITION$ $TEXT$"
 
- PATCHNOTES: "§H点击§!打开Stellaris Wiki，阅读4.2版本的完整补丁日志"
+ PATCHNOTES: "§H点击§!前往Stellaris论坛，了解更多有关Open Beta的讯息"
 
  sys_unsurveyed:0 "未勘察的星系"
  sys_unclaimed:0 "未占据的星系"
@@ -3523,6 +3525,7 @@
  sys_trading_hub_gestalt:1 "资源再加工中心"
  strading_hub_gestalt:1 "资源再加工中心"
  sm_trading_hub_gestalt:1 "资源再加工中心"
+ sm_trading_hub_plural_gestalt: "资源再处理器"
  sm_trading_hub_gestalt_desc:1 "一个将外源材料安排进入内部生产流程的机构。\n"
 
  sm_offworld_trading_company_gestalt:1 "额外摄取区域"
@@ -3952,7 +3955,6 @@
  mod_country_trade_produces_mult: "每月$trade_with_icon$"
  mod_planet_jobs_trade_produces_mult: "£job£岗位产出的$trade_with_icon$"
  mod_planet_anglers_trade_produces_mult: "$job_angler_plural_with_icon$产出的$trade_with_icon$"
- mod_planet_augmentors_trade_produces_add: "每$pop_group_unit$$job_augmentor_plural_with_icon$产出的$trade_with_icon$"
 
  planet_criminals: "$pop_cat_criminal_plural$"
  criminal_plural_with_icon: "[criminal.GetIcon][criminal.GetNamePlural]"
@@ -4148,8 +4150,10 @@
  mod_pop_cat_complex_drone_bonus_workforce_mult: "$pop_cat_complex_drone_plural$$BONUS_WORKFORCE_FOR$"
  mod_pop_knight_commander_bonus_workforce_mult: "$job_knight_commander_plural$$BONUS_WORKFORCE_FOR$"
  mod_pop_enforcer_bonus_workforce_mult: "[enforcer.GetNamePlural]$BONUS_WORKFORCE_FOR$"
+ mod_pop_dystopian_enforcer_bonus_workforce_mult: "$mod_pop_enforcer_bonus_workforce_mult$"
  mod_pop_educator_bonus_workforce_mult: "$job_educator_plural$$BONUS_WORKFORCE_FOR$"
  mod_pop_telepath_bonus_workforce_mult: "[telepath.GetNamePlural]$BONUS_WORKFORCE_FOR$"
+ mod_pop_dystopian_telepath_bonus_workforce_mult: "$mod_pop_telepath_bonus_workforce_mult$"
  mod_pop_telepath_drone_bonus_workforce_mult: "[telepath_drone.GetNamePlural]$BONUS_WORKFORCE_FOR$"
  mod_pop_knight_bonus_workforce_mult: "[knight.GetNamePlural]$BONUS_WORKFORCE_FOR$"
  mod_pop_patrol_drone_bonus_workforce_mult: "[patrol_drone.GetNamePlural]$BONUS_WORKFORCE_FOR$"
@@ -4832,10 +4836,10 @@
  civilian_and_maintenance_drone_cat_bonus_workforce_mult_tt: "$t$- $civilian_and_maintenance_drone_cat_bonus_workforce_mult$$VARIABLE|1%=+$"
  roboticist_jobs_bonus_workforce_mult: "机器人$BONUS_WORKFORCE_FOR$"
  roboticist_jobs_bonus_workforce_mult_tt: "['concept_planet_roboticists']$BONUS_WORKFORCE_FOR$ ：$VARIABLE|1%=+$"
- everyone_but_dystopian_specialist_workforce_mult: "$MOD_POP_BONUS_WORKFORCE_MULT$"
- everyone_but_dystopian_specialist_workforce_tt: "$MOD_POP_BONUS_WORKFORCE_MULT$: $VARIABLE|1%=+$" 
  telepath_jobs_bonus_workforce_mult: "灵能使岗位$BONUS_WORKFORCE_FOR$"
  telepath_jobs_bonus_workforce_mult_tt: "$t$- ['concept_planet_telepaths']$BONUS_WORKFORCE_FOR$：$VARIABLE|1%=+$"
+ soldier_jobs_bonus_workforce_mult: "士兵岗位$BONUS_WORKFORCE_FOR$"
+ soldier_jobs_bonus_workforce_mult_tt: "$t$—['concept_planet_soldiers']$BONUS_WORKFORCE_FOR$：$VARIABLE|1%=+$"
 
  concept_planet_miners: "矿业岗位"
  concept_planet_miners_desc: "矿业岗位包括：$TABBED_NEW_LINE$—[miner.GetNamePlural]$TABBED_NEW_LINE$—[mining_drone.GetNamePlural]"
@@ -4869,6 +4873,8 @@
  concept_planet_telepaths_desc: "灵能使岗位包括：$TABBED_NEW_LINE$—$job_telepath_plural$$TABBED_NEW_LINE$—$job_telepath_drone_plural$"
  concept_planet_roboticists: "机器人专家岗位"
  concept_planet_roboticists_desc: "机器人专家岗位包括：$TABBED_NEW_LINE$—[roboticist.GetNamePlural]$TABBED_NEW_LINE$—[replicator.GetNamePlural]"
+ concept_planet_soldiers: "士兵岗位"
+ concept_planet_soldiers_desc: "士兵岗位包括：$TABBED_NEW_LINE$—[soldier.GetNamePlural]$TABBED_NEW_LINE$—[warrior_drone.GetNamePlural]$TABBED_NEW_LINE$—[knight.GetNamePlural]"
 
  #Scientist - Mandarin Language - Advisor Voice
  vo_venerable_scientist_voice: "科学家（£mandarin_advisor£）" #Do not change the mandarin_advisor text icon during translation
@@ -5060,6 +5066,24 @@
 
  zone_habitat_research_unity: "$zone_research_unity$"
  zone_habitat_research_unity_desc: "$zone_research_unity_desc$"
+ zone_habitat_rare_crystals: "$zone_rare_crystals$"
+ zone_habitat_rare_crystals_desc: "$zone_rare_crystals_desc$"
+ zone_habitat_volatile_motes: "$zone_volatile_motes$"
+ zone_habitat_volatile_motes_desc: "$zone_volatile_motes_desc$"
+ zone_habitat_exotic_gases: "$zone_exotic_gases$"
+ zone_habitat_exotic_gases_desc: "$zone_exotic_gases_desc$"
+
+ district_hab_mining_rare_crystals: "$district_hab_mining$"
+ district_hab_mining_rare_crystals_plural: "$district_hab_mining_plural$"
+ district_hab_mining_rare_crystals_desc: "$district_hab_mining_desc$"
+
+ district_hab_energy_volatile_motes: "$district_hab_energy$"
+ district_hab_energy_volatile_motes_plural: "$district_hab_energy_plural$"
+ district_hab_energy_volatile_motes_desc: "$district_hab_energy_desc$"
+
+ district_hab_energy_exotic_gases: "$district_hab_energy$"
+ district_hab_energy_exotic_gases_plural: "$district_hab_energy_plural$"
+ district_hab_energy_exotic_gases_desc: "$district_hab_energy_desc$"
 
  agriculture_0: "基础农场"
  agriculture_1: "农业工业化"
@@ -5148,6 +5172,12 @@
 
  zone_minerals_engineering: "科研后援（矿物）"
  zone_minerals_engineering_desc: "稳定的矿物供应，无论是外来的还是普通的，使我们的工程学家就能以别人想都不敢想的速度进行实验。"
+
+ zone_minerals_physics: "引力子矿脉"
+ zone_minerals_physics_desc: "在悬浮山深处采矿可获得蕴含引力子的基质。"
+ district_mining_physics: "$district_mining$"
+ district_mining_physics_plural: "$district_mining_plural$"
+ district_mining_physics_desc: "$district_mining_desc$"
 
  zone_urban_energy: "发电后援"
  zone_urban_minerals: "矿业后援"
@@ -5246,8 +5276,8 @@
 
  mod_pop_roboticist_bonus_workforce_mult: "$job_roboticist_plural$ 的岗位效率"
  mod_pop_identity_designer_bonus_workforce_mult: "$job_identity_designer_plural$$BONUS_WORKFORCE_FOR$"
- automation_tooltip: "每个自动化地区的建筑维护费：§R£energy£ $@b3_upkeep$§!"
- automation_2_tooltip: "每个自动化地区的建筑维护费： §R£energy£$@b4_upkeep$§!"
+ automation_tooltip: "解锁一些可将特定基础资源采集工作的一定比例进行自动化的建筑。"
+ automation_2_tooltip: "解锁一些可将特定基础资源采集工作的更高比例进行自动化的建筑。"
  automation_generator_tankbound_tooltip: "§R警告：此建筑在本区域不会实现自动化$job_technician_plural_with_icon$。该区的自动化已达到最大容量。§!"
  automation_mining_tankbound_tooltip: "§R警告：此建筑在本区域不会实现自动化$job_miner_plural_with_icon$。该区的自动化已达到最大容量。§!"
  automation_farming_tankbound_tooltip: "§R警告：此建筑在本区域不会实现自动化$job_farmer_plural_with_icon$。该区的自动化已达到最大容量。§!"
@@ -5255,6 +5285,19 @@
 
  automation_city_tooltip: "每个自动化地区的建筑维护费： §R£energy£$@b4_upkeep$§!"
  automation_city_2_tooltip: "每个自动化地区的建筑维护费： §R£energy£+$@b5_upkeep$§!"
+
+ building_automation_technician_1: "$building_automation_1$：$job_technician$"
+ building_automation_technician_1_desc: "$building_automation_1_desc$\n\n这座建筑将使一部分$job_technician$和$job_technician_drone$岗位自动化。"
+ building_automation_technician_2: "$building_automation_2$：$job_technician$"
+ building_automation_technician_2_desc: "$building_automation_2_desc$\n\n这座建筑将使一部分$job_technician$和$job_technician_drone$岗位自动化。"
+ building_automation_miner_1: "$building_automation_1$：$job_miner$"
+ building_automation_miner_1_desc: "$building_automation_1_desc$\n\n这座建筑将使一部分$job_miner$和$job_mining_drone$岗位自动化。"
+ building_automation_miner_2: "$building_automation_2$：$job_miner$"
+ building_automation_miner_2_desc: "$building_automation_2_desc$\n\n这座建筑将使一部分$job_miner$和$job_mining_drone$岗位自动化。"
+ building_automation_farmer_1: "$building_automation_1$：$job_farmer$"
+ building_automation_farmer_1_desc: "$building_automation_1_desc$\n\n这座建筑将使一部分$job_farmer$和$job_agri_drone$岗位自动化。"
+ building_automation_farmer_2: "$building_automation_2$：$job_farmer$"
+ building_automation_farmer_2_desc: "$building_automation_2_desc$\n\n这座建筑将使一部分$job_farmer$和$job_agri_drone$岗位自动化。"
 
  building_automation_city_1: "$building_automation_1$"
  building_automation_city_1_desc: "$building_automation_1_desc$"
@@ -5264,18 +5307,6 @@
  building_automation_urban_1_desc: "$building_automation_city_1_desc$"
  building_automation_urban_2: "$building_automation_city_2$"
  building_automation_urban_2_desc: "$building_automation_city_2_desc$" 
- building_automation_generator_1: "$building_automation_1$"
- building_automation_generator_1_desc: "$building_automation_1_desc$"
- building_automation_generator_2: "$building_automation_2$"
- building_automation_generator_2_desc: "$building_automation_2_desc$"
- building_automation_mining_1: "$building_automation_1$"
- building_automation_mining_1_desc: "$building_automation_1_desc$"
- building_automation_mining_2: "$building_automation_2$"
- building_automation_mining_2_desc: "$building_automation_2_desc$"
- building_automation_farming_1: "$building_automation_1$"
- building_automation_farming_1_desc: "$building_automation_1_desc$"
- building_automation_farming_2: "$building_automation_2$"
- building_automation_farming_2_desc: "$building_automation_2_desc$"
  building_automation_urban_arcology_1: "$building_automation_city_1$"
  building_automation_urban_arcology_1_desc: "$building_automation_city_1_desc$"
  building_automation_urban_arcology_2: "$building_automation_city_2$"
@@ -5291,6 +5322,19 @@
  TRANSFER_SPEED_FAST_TOOLTIP: "§H$TRANSFER_SPEED_FAST$§!\n这是游戏允许的最快速度。"
  TRANSFER_SPEED_COMPAT_TOOLTIP: "§H$TRANSFER_SPEED_COMPAT$§!\n如果快速转移存档时遇到问题，尝试使用这档速度。"
 
+ TELEMETRY_LABEL: "遥测"
+ TELEMETRY_OPTION_TOOLTIP: "如果启用，将发送额外的遥测数据以帮助改进游戏。"
+ TELEMETRY_OPTION_UNAVAILABLE_TOOLTIP: "在查阅法律文档前处于禁用状态。"
+ TELEMETRY_OPTION_ENABLED_TOOLTIP: "可选遥测已启用。"
+ TELEMETRY_OPTION_DISABLED_TOOLTIP: "可选遥测已禁用。"
+
  pop_cat_slave_unemployment2: "$pop_cat_slave_unemployment$"
  pop_cat_slave_unemployment2_plural: "$pop_cat_slave_unemployment_plural$"
  pop_cat_slave_unemployment2_desc: "$pop_cat_slave_unemployment_desc$"
+
+ are_you_sure: "确认"
+ are_you_sure_ban_long_desc: "您即将封禁$NAME|Y$。\n这将阻止其重新加入此大厅。"
+
+ accept_hotjoiner: "接受热接玩家"
+ decline_hotjoiner: "Decline hotjoining player" #TODO CD AUG-58373
+ ban_hotjoiner: "拒绝热接玩家，并禁止其再次加入该游戏。"

@@ -64,7 +64,7 @@
  allow_machine_worlds:3 "- §Y解锁环境改造选项：§!['concept_pc_machine']\n—§Y解锁£zone£区域特化：§!$zone_machine_replication$"
  describe_machine_worlds:7 "- 将§Y£district£乡村区域§!替换为§Y£district£中枢区域§!\n—增加所有£district£§Y区域§!\n的住房和岗位—§R大多有机物种不宜居住§!"
  allow_hive_worlds:1 "§H解锁环境改造选项：§!蜂巢星球\n§H解锁蜂巢星球地区特化：§!£zone£ $zone_spawning$"
- describe_hive_worlds:1 "对非蜂巢物种不宜居。\n£district£§Y蜂巢§!地区无数量限制\n所有£district£§Y地区§!提供的住房和岗位数量翻倍\n£pop£人口的资源产出：§G+10%§!\n住房使用：§G-10%§!\n§R将摧毁所有乡村地区§!"
+ describe_hive_worlds:1 "对非蜂巢物种不宜居。\n£district£§Y蜂巢§!地区无数量限制\n所有£district£§Y地区§!提供的住房和岗位数量翻倍\n£pop£人口的资源产出：§G+10%§!\n§R将摧毁所有乡村地区§!"
 
  ALLOW_PSI_CORPS:1 "解锁建筑：['building:building_psi_corps']"
  ALLOW_PSI_ARMIES:0 "可以征募§H$psionic_army_plural$§!。"
@@ -175,6 +175,7 @@
 
  trait_cybernetic:0 "义体化"
  trait_cybernetic_desc:0 "§L此种族大量运用神经机械学，其程度致其个体可被称为义体人。他们已经适应将有机身体部件替换成先进的义体版本。§!\n"
+ TRAIT_CYBORG_EFFECT: "将§Y50%§!的$food_with_icon$（或等价）维护费替换为$energy_with_icon$维护费。"
  trait_latent_psionic:0 "潜在灵能"
  trait_latent_psionic_desc:0 "§L此种族拥有潜在的灵能能力，虽然在大部分个体体内还是休眠状态。虽然非常稀有，但这些力量会在一些领袖身上体现。§!\n"
 
@@ -204,8 +205,7 @@
  trait_cyborg_learning_algorithms_desc:0 "§L复杂的自我学习算法，能够模拟单元神经丛的快速演化。§!\n"
  trait_cyborg_neural_limiters:0 "神经限位器"
  trait_cyborg_neural_limiters_desc:0 "§L通过限制劳工的认知能力我们就能促使他们专注于简单的任务。§!\n"
- trait_cyborg_mass_produced:0 "量产"
- trait_cyborg_mass_produced_desc:0 "§L流线型生产与模块化设计使单位可以前所未有地高效率量产。§!\n"
+ 
  trait_cyborg_custom_made:0 "定制"
  trait_cyborg_custom_made_desc:0 "§L每一个新单元都以前所未有地追求细节精心制作。这是一个工程和艺术的奇迹，但缺乏效率。§!\n"
  trait_cyborg_recycled:0 "循环利用"
@@ -219,7 +219,6 @@
  trait_cyborg_power_intensive:0 "能量密集"
  trait_cyborg_power_intensive_desc:0 "§L这些义体部件需要频繁地从外接电源充电。§!"
  TRAIT_POWER_INTENSIVE_EFFECT:0 "增加$r_energy$维护费§R+1§!"
- CYBORG_ENERGY_UPKEEP_EFFECT:0 "增加$r_energy$维护费§R+$@cyborg_energy_upkeep$§!"
 
  trait_psionic:0 "灵能"
  trait_psionic_desc: "[This.GetPsionicTraitDesc]"

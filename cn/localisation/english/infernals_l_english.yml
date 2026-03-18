@@ -82,22 +82,22 @@
  job_polytechnic_mentor_plural: "热工导师"
  job_polytechnic_mentor_desc: "拥有多样技能背景，导师帮助弥合学科间的差距，提高专业工人的工作效率。"
  mod_job_polytechnic_mentor_add: "$job_polytechnic_mentor$岗位"
- job_polytechnic_mentor_effect: "£job_polytechnic_mentor£$job_polytechnic_mentor_plural$增加其他岗位：$job_polytechnic_job_tt$"
+ job_polytechnic_mentor_effect: "£job_polytechnic_mentor£ $job_polytechnic_mentor_plural$由其他岗位增补。\n\n$job_polytechnic_job_tt$"
  concept_polytechnic_mentor: "$job_polytechnic_mentor_plural$"
- concept_polytechnic_mentor_desc: "£unity£$unity$来自£job_miner£$job_miner_plural$：§G+0.3§!\n—£physics_research£$physics_research$来自£job_technician£$job_technician_plural$：§G+0.3§!\n—£engineering_research£$engineering_research$来自£job_foundry£$job_foundry_plural$：§G+0.3§!\n—£society_research£$society_research$来自£job_artisan£$job_artisan_plural$：§G+0.3§!"
- job_polytechnic_job_tt: "$TABBED_NEW_LINE$£job_miner£['concept_planet_miners']生产£unity£§Y$unity$§!$TABBED_NEW_LINE$£job_technician£['concept_planet_technician']生产£physics_research£§Y$physics_research$§!$TABBED_NEW_LINE$£job_foundry£['concept_planet_metallurgists']生产£engineering_research£§Y$engineering_research$§!$TABBED_NEW_LINE$£job_artisan£['concept_planet_artisans']生产£society_research£§Y$society_research$§!"
+ concept_polytechnic_mentor_desc: "每$pop_group_unit$£pop£§H人口§!额外产出的资源\n（限制：每类别§Y4000§!£job£岗位）：\n—£job_miner£['concept_planet_miners']：§G+$@polytechnic_output$§!£unity£$unity$\n—£job_technician£['concept_planet_technician']：§G+$@polytechnic_output$§!£physics_research£$physics_research$\n—£job_foundry£['concept_planet_metallurgists']：§G+$@polytechnic_output$§!£engineering_research£$engineering_research$\n—£job_artisan£['concept_planet_artisans']：§G+$@polytechnic_output$§!£society_research£$society_research$"
+ job_polytechnic_job_tt: "$concept_polytechnic_mentor_desc$"
 
  job_polytechnic_drone: "熔岩碎屑子个体"
  job_polytechnic_drone_plural: "熔岩碎屑子个体"
  job_polytechnic_drone_desc: "子个体具备多样化技能背景，有助于弥合学科间的差距，提高专业工人的效率。"
  mod_job_polytechnic_drone_add: "$job_polytechnic_drone$岗位"
- job_polytechnic_drone_effect: "£job_polytechnic_drone£$job_polytechnic_drone_plural$增加其他岗位：$job_polytechnic_job_tt$"
+ job_polytechnic_drone_effect: "£job_polytechnic_drone£ $job_polytechnic_drone_plural$由其他岗位增补。\n\n$job_polytechnic_job_tt$"
  concept_polytechnic_drone: "$job_polytechnic_drone_plural$"
- concept_polytechnic_drone_desc: "£unity£$unity$来自£job_mining_drone£$job_mining_drone_plural$：§G+0.3§!\n—£physics_research£$physics_research$来自£job_technician_drone£$job_technician_drone_plural$：§G+0.3§!\n—£engineering_research£$engineering_research$来自£job_alloy_drone£$job_alloy_drone_plural$或£job_fabricator£$job_fabricator_plural$：§G+0.3§!"
+ concept_polytechnic_drone_desc: "$concept_polytechnic_mentor_desc$"
 
 # Origin - Red Giant
  origin_red_giant: "红巨星"
- origin_red_giant_desc: "这个文明正站在命运的十字路口：其星系中央的红巨星正在持续升温，炙烤着他们的家园。\n在找到原因并解决之前，他们是否能适应这恶劣的环境？或选择拥抱这股炙热之力，将那诡异、甚至可能不自然的变化化为己用？"
+ origin_red_giant_desc: "这个文明正站在命运的十字路口：其星系中央的红巨星正在持续升温，炙烤着他们的家园。\n\n在找到原因并解决之前，他们是否能适应这恶劣的环境？或选择拥抱这股炙热之力，将那诡异、甚至可能不自然的变化化为己用？"
  origin_tooltip_red_giant_effects: "—$HOMEWORLD$['concept_pc_volcanic']（规模：£planetsize£20）"
  START_SCREEN_RED_GIANT: "真相来得缓慢，却又骤然明了。\n\n我们的恒星正进入一个快速且异常的演变阶段。其能量输出已超出所有预期参数。光谱转变显示异常对流模式，其核聚变速率似乎在无相应质量损失情况下提升。\n\n迄今为止，我们与这股升温同步演化。但基础生物进化有其极限。\n\n若[capital_star.GetName]内正在进行的变化持续，母星将被焚毁。问题不再是“是否”，而是“何时”。"
  red_giant_start_NAME: "红巨星星系"
@@ -129,7 +129,7 @@
  cosmic_dawn_start_NAME: "新家园"
  cosmic_dawn_start_DESC: "这是使用$origin_cosmic_dawn$起源默认的初始星系。"
  concept_inf_cd_deposit: "$d_stasis_pods$"
- concept_inf_cd_deposit_desc: "已清除：\n$d_stasis_pods_tt$\n\n§L$d_stasis_pods_desc$§!"
+ concept_inf_cd_deposit_desc: "产出：£society_research£3.0\n清理时：\n$d_stasis_pods_tt$\n\n§L$d_stasis_pods_desc$§!"
  cosmic_dawn_districtsize: "$MOD_PLANET_MAX_DISTRICTS_ADD$：§G+1§!"
  cosmic_dawn_districtsize2: "$MOD_PLANET_MAX_DISTRICTS_ADD$：§G+2§!\n$d_cd_ancient_tunnels$§G+2§!"
  cosmic_dawn_tunnel_foundry: "每$foundry_jobs_bonus_workforce_mult$个$d_cd_ancient_tunnels$：§G+1%§!"
@@ -149,7 +149,8 @@
 # Civic - Scorched World Heralds
  civic_scorched_earth: "炙热星球先驱"
  civic_scorched_earth_desc: "热量渗透社会文化各方面，从传统礼仪到科技。他们视自身为星系之中的真正火焰霸主，向往仅适合嗜热生命存活的理想宇宙，而弱者只会拖累这一愿景的达成。"
- civic_scorched_earth_effects: "无法与其他物种展开§Y外交§!。\n无法进入§Y泛银河贸易市场§!。\n对其他物种授予§Y'$casus_belli_cb_blaze$'§!宣战理由。\n使用§Y$bombardment_firestorm$§!轰炸姿态轰炸时获得£unity£§Y$unity$§!。\n在行星上使用§Y$bombardment_seismic_bombing$§!轰炸姿态创建特殊阻挡器。"
+ civic_scorched_earth_effects: "—无法与§Y$trait_infernal_plural$§!展开§Y外交§!。\n—无法进入§Y泛银河贸易市场§!。\n—对其他物种获得§Y“$casus_belli_cb_blaze$”§!宣战理由。\n—以§Y$bombardment_firestorm$§!姿态轰炸时获得£unity£§Y$unity$§!\n—以§Y$bombardment_seismic_bombing$§!姿态轰炸时在所轰炸的行星上生成特殊地块障碍。\n—非['trait:trait_infernal']物种限定为§Y奴隶§!或更差生活标准。"
+ SCORCHED_HERALDS_ONLY_INF: "$TRIGGER_FAIL$§Y$civic_scorched_earth$§!的社会只容许['trait:trait_infernal']£pop£$POPS$。"
 
  civic_hive_scorched_earth: "纵火本能"
  civic_hive_scorched_earth_desc: "我们的炙热星球是行星进化巅峰。我们将点燃星系，并在火焰中生生不息！"
@@ -459,19 +460,19 @@
 
 # Councilors
  councilor_infernal_scorcher: "炽炎鼓舞者"
- councilor_infernal_scorcher_desc: "$councilor_infernal_scorcher$激励武装力量，确保各方对军事行动全力投入。"
+ councilor_infernal_scorcher_desc: "$TITLE$激励武装力量，确保各方对军事行动全力投入。"
  councilor_thermal_engineer: "热能工程师"
- councilor_thermal_engineer_desc: "$councilor_thermal_engineer$可解决极热环境下基础设施建设的技术难题。"
+ councilor_thermal_engineer_desc: "$TITLE$可解决极热环境下基础设施建设的技术难题。"
  councilor_corporate_thermal_engineer: "首席$councilor_thermal_engineer$"
- councilor_corporate_thermal_engineer_desc: "支付适当报酬后，$councilor_corporate_thermal_engineer$可解决极热环境下的建设技术难题。"
+ councilor_corporate_thermal_engineer_desc: "支付适当报酬后，$TITLE$可解决极热环境下的建设技术难题。"
  councilor_pyromanic_priest: "炽焰祭司"
- councilor_pyromanic_priest_desc: "$councilor_pyromanic_priest$激发对艰难环境的热爱，减少奢侈消费。"
+ councilor_pyromanic_priest_desc: "$TITLE$激发对艰难环境的热爱，减少奢侈消费。"
  councilor_imbuement_officer: "模拟监督者"
- councilor_imbuement_officer_desc: "$councilor_imbuement_officer$利用动态固体专业知识协助物理与工程研究。"
+ councilor_imbuement_officer_desc: "$TITLE$利用动态固体专业知识协助物理与工程研究。"
  councilor_synth_imbuement_officer: "模拟主机"
- councilor_synth_imbuement_officer_desc: "$councilor_synth_imbuement_officer$利用动态固体专业知识协助物理与工程研究。"
+ councilor_synth_imbuement_officer_desc: "$TITLE$利用动态固体专业知识协助物理与工程研究。"
  councilor_corporate_imbuement_officer: "模拟机构官员"
- councilor_corporate_imbuement_officer_desc: "$councilor_corporate_imbuement_officer$协调各方利益，促进物理与工程研究。"
+ councilor_corporate_imbuement_officer_desc: "$TITLE$协调各方利益，促进物理与工程研究。"
 
 # Bombardment Stances
  bombardment_firestorm: "火风暴"
@@ -635,6 +636,8 @@
  infernals.35.name: "没于烈焰"
  infernals.35.desc: "§H[from.GetName]§!地表崩裂，地壳破碎，难以承受的热浪从地底涌上。转变来得迅猛而彻底：群山崩溃，海洋沸腾，天空余烬弥漫。\n\n曾经繁盛的生物群系已不复存在，唯有极端生命体仍栖息于此。"
  mod_planet_pops_alloys_upkeep_mult: "人口合金维护费"
+ mod_planet_mentors_upkeep_mult: "$job_polytechnic_mentor$维护费"
+ planet_mentors: "行星导师"
 
 # Planet Smelter planet killer weapon
  tech_pk_smelter: "行星炼炉"

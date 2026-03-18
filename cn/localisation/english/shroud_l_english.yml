@@ -203,7 +203,7 @@
 
  auth_shroud_corporate_corporeal: "灵能董事会"
  auth_shroud_corporate_corporeal_desc: "如果浪费天幕馈赠的脑力优势就太愚蠢了。该企业以在周围文明建立$building_psionic_offices$闻名，进一步提高了星际交易的利润。"
- auth_shroud_corporate_corporeal_tt: "$corporeal_trait_tt$\n每$pop_group_unit$$job_telepath_swap_plural_with_icon$产出的$r_trade$：§G+$@corporate_government_telepaths_trade_value_mult|0%$§!\n$AVAILABLE_HOLDINGS$['building:building_psionic_offices']\n$mod_planet_branch_offices_influence_cost_mult$：§G-40%§!\n$mod_council_agenda_early_activation_cost_mult$：§G-25%§!\n$MOD_COUNCIL_AGENDA_COOLDOWN_MULT$：§G-25%§!\n$MOD_LEADER_SPECIES_EXP_GAIN$：§G+25%§!"
+ auth_shroud_corporate_corporeal_tt: "$corporeal_trait_tt$\n每$pop_group_unit$$job_telepath_swap_plural_with_icon$产出的$r_trade$：§G+$@corporate_government_telepaths_trade_value_mult|0%$§!\n['building:building_psionic_offices']产生的$MOD_PSIONIC_AURA_EFFECTIVENESS_MULT$：§G+2%§!\n$mod_planet_branch_offices_influence_cost_mult$：§G-40%§!\n$mod_council_agenda_early_activation_cost_mult$：§G-25%§!\n$MOD_COUNCIL_AGENDA_COOLDOWN_MULT$：§G-25%§!\n$MOD_LEADER_SPECIES_EXP_GAIN$：§G+25%§!"
  gov_shroud_corporeal_corporate: "$auth_shroud_corporate_corporeal$"
  gov_shroud_corporeal_corporate_desc: "$auth_shroud_corporate_corporeal_desc$"
 
@@ -546,7 +546,14 @@
 
  building_psionic_offices: "灵能办公室"
  building_psionic_offices_desc: "在实地接触外国人士时，能更有效地理解他们的思维方式，从而为双方达成最有利的贸易协议。"
- building_psionic_offices_tt: "\n每$pop_group_unit$$job_telepath_swap_plural_with_icon$生产的$trade_value_from$：§G+2%§!\n$TRIGGER_BRANCH_OFFICE_OWNER$获得一个每月强度$@psionic_offices_intensity|0+$的§Y$PSIONIC_AURA$§!\n§R殖民地拥有者释放的任何形式$PSIONIC_AURA$将优先于本建筑。§!"
+ building_psionic_offices_tt: "\n星系效果：\n$t$—$TRIGGER_BRANCH_OFFICE_OWNER$获得一个每月强度$@psionic_offices_intensity|0+$的§Y$PSIONIC_AURA$§!\n$t$—§R殖民地拥有者释放的$PSIONIC_AURA$将优先于本建筑。§!"
+
+ job_shroud_trader: "善感营销师"
+ job_shroud_trader_plural: "善感营销师"
+ job_shroud_trader_plural_with_icon: "£job_telepath£ $job_shroud_trader_plural$"
+ job_shroud_trader_desc: "这些专家洞察本地市场的情感风向，通过捕捉当下思潮动态促成交易并举办领导力前沿研讨会。"
+ mod_job_shroud_trader_add: "$job_shroud_trader$岗位"
+ mod_pop_shroud_trader_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ [shroud_trader.GetNamePlural]"
 
 #==========================
 # Buildings
@@ -711,21 +718,23 @@
 
  civic_entropy_drinkers: "饮熵者"
  civic_entropy_drinkers_desc: "$civic_ap_blockade_tt$\n\n该社会利用寄生心灵链接从闲散人口中汲取宝贵的新陈代谢。通过妥善收集来的能量可以重新分配给更重要的阶层。"
- civic_entropy_drinkers_effects: "允许以下§H$EDICTS$§!：$TABBED_NEW_LINE$—['edict:energy_drain',$edict_energy_drain$]$TABBED_NEW_LINE$—['edict:sanguine_council',$edict_sanguine_council$]$TABBED_NEW_LINE$—['edict:psychic_feast',$edict_psychic_feast$]\n可以建造：£building£['building:building_lifecrypt_1']。\n领袖天生具有['concept_leader_trait_psionic']特质。"
+ civic_entropy_drinkers_effects: "—允许以下§H$EDICTS$§!：$TABBED_NEW_LINE$—['edict:energy_drain',$edict_energy_drain$]$TABBED_NEW_LINE$—['edict:sanguine_council',$edict_sanguine_council$]$TABBED_NEW_LINE$—['edict:psychic_feast',$edict_psychic_feast$]\n—可以建造：£building£['building:building_lifecrypt_1']。\n—领袖天生具有['concept_leader_trait_psionic']特质。"
+ civic_entropy_drinkers_psionic_modifier: "—每$pop_group_unit$£pop£灵能人口产生的$energy_with_icon$：§G+0.5§!"
 
  civic_entropy_drinkers_machine: "能量汲取机"
  civic_entropy_drinkers_machine_desc: "$civic_ap_blockade_tt$\n\n能量分配恰当对确保高级机械的极致效率至关重要。所有的单元都是为该目标而设计，使其在必要时可以周期性超频关键节点。"
- civic_entropy_drinkers_machine_effects: "解锁以下§H$EDICTS$§!：$TABBED_NEW_LINE$—['edict:energy_drain',$edict_energy_drain$]$TABBED_NEW_LINE$—['edict:sanguine_council_machine',$edict_sanguine_council_machine$]$TABBED_NEW_LINE$—['edict:psychic_feast',$edict_psychic_feast$]\n可以建造：£building£['building:building_lifecrypt_machine_1']。\n领袖初始拥有['concept_leader_trait_psionic']特质。"
- civic_entropy_drinkers_machine_modifier: "—$mod_country_base_energy_produces_mult$£pop£人口：§G+0.1%§!"
+ civic_entropy_drinkers_machine_effects: "—解锁以下§H$EDICTS$§!：$TABBED_NEW_LINE$—['edict:energy_drain',$edict_energy_drain$]$TABBED_NEW_LINE$—['edict:sanguine_council_machine',$edict_sanguine_council_machine$]$TABBED_NEW_LINE$—['edict:psychic_feast',$edict_psychic_feast$]\n—可以建造：£building£['building:building_lifecrypt_machine_1']。\n—领袖初始拥有['concept_leader_trait_psionic']特质。"
 
  civic_entropy_drinkers_hive_mind: "寄生阶序"
  civic_entropy_drinkers_hive_mind_desc: "$civic_ap_blockade_tt$\n\n该集体利用寄生心灵链接从低级工蜂中汲取宝贵的新陈代谢。通过妥善收集来的能量可以重新分配给更重要的阶层。"
- civic_entropy_drinkers_hive_mind_effects: "解锁以下§H$EDICTS$§!：$TABBED_NEW_LINE$—['edict:energy_drain',$edict_energy_drain$]$TABBED_NEW_LINE$—['edict:sanguine_council',$edict_sanguine_council$]$TABBED_NEW_LINE$—['edict:psychic_feast',$edict_psychic_feast$]\n可以建造：£building£['building:building_lifecrypt_hive_mind_1']。\n领袖初始拥有['concept_leader_trait_psionic']特质。"
- civic_entropy_drinkers_hive_mind_modifier: "$civic_entropy_drinkers_machine_modifier$"
+ civic_entropy_drinkers_hive_mind_effects: "—解锁以下§H$EDICTS$§!：$TABBED_NEW_LINE$—['edict:energy_drain',$edict_energy_drain$]$TABBED_NEW_LINE$—['edict:sanguine_council',$edict_sanguine_council$]$TABBED_NEW_LINE$—['edict:psychic_feast',$edict_psychic_feast$]\n—可以建造：£building£['building:building_lifecrypt_hive_mind_1']。\n—领袖初始拥有['concept_leader_trait_psionic']特质。"
 
  civic_entropy_drinkers_corporate: "吸血企业"
  civic_entropy_drinkers_corporate_desc: "$civic_ap_blockade_tt$\n\n该$gov_megacorporation$利用寄生心灵链接从闲散人口中汲取宝贵的新陈代谢。通过妥善收集来的能量可以重新分配给高级主管人员。"
- civic_entropy_drinkers_corporate_effects: "解锁以下§H$EDICTS$§!：$TABBED_NEW_LINE$—['edict:energy_drain',$edict_energy_drain$]$TABBED_NEW_LINE$—['edict:sanguine_council',$edict_sanguine_council$]$TABBED_NEW_LINE$—['edict:psychic_feast',$edict_psychic_feast$]\n可以建造：£building£['building:building_lifecrypt_corporate_1']。\n领袖初始拥有['concept_leader_trait_psionic']特质。\n£building£ §Y$building_executive_retreat$§! $megacorp_civic_branch_office_building_effect$"
+ civic_entropy_drinkers_corporate_effects: "—解锁以下§H$EDICTS$§!：$TABBED_NEW_LINE$—['edict:energy_drain',$edict_energy_drain$]$TABBED_NEW_LINE$—['edict:sanguine_council',$edict_sanguine_council$]$TABBED_NEW_LINE$—['edict:psychic_feast',$edict_psychic_feast$]\n可以建造：£building£['building:building_lifecrypt_corporate_1']。\n—领袖初始拥有['concept_leader_trait_psionic']特质。\n—£building£§Y$building_executive_retreat$§!$megacorp_civic_branch_office_building_effect$"
+ has_not_begun_non_psionic_ascension: "尚未选择非§Y灵能飞升§!的其他路线"
+ has_not_begun_non_psionic_ascension_success: "$TRIGGER_PASS$$has_not_begun_non_psionic_ascension$"
+ has_not_begun_non_psionic_ascension_fail: "$TRIGGER_FAIL$$has_not_begun_non_psionic_ascension$"
 
 # Superstitious Beliefs
  civic_tooltip_not_superstitious_beliefs: "没有['concept_superstitious_beliefs_civics']类公民性"
@@ -808,7 +817,7 @@
 
  civic_corporate_chosen: "天选主管"
  civic_corporate_chosen_desc: "$civic_ap_blockade_tt$\n\n在历史的早期受到天幕的影响，该企业与某个强大的实体间签订了契约。"
- civic_corporate_chosen_effects: "$civic_chosen_effects$\n—£building£§Y$building_psionic_offices$§!$megacorp_civic_branch_office_building_effect$"
+ civic_corporate_chosen_effects: "$civic_chosen_effects$\n- The £building£ §Y$building_psionic_offices$§! $megacorp_civic_branch_office_building_effect$"
 
  civic_tooltip_not_chosen: "没有['concept_chosen_civics']类公民性"
  concept_chosen_civics: "天选"
@@ -853,14 +862,13 @@
 # Tankbound
  civic_tankbound: "罐中之体"
  civic_tankbound_desc: "该社会的成员在专门的生物溶液罐中度过一生。因此他们严重依赖辅助设备，无法直接从事体力劳动。"
- civic_tankbound_effects_base: "增加['trait:trait_tankbound']特质。\n乡村区的劳工岗位完全§Y自动化§!。\n['concept_colonist', $job_colonist$]岗位为$SPECIALISTS$。\n起始拥有['technology:tech_assembly_pattern', £engineering£$tech_assembly_pattern$]科技洞见。\n£district£§Y都市§!区拥有额外的§Y$job_production_overseer_with_icon$§!岗位。"
- civic_tankbound_effects: "$civic_tankbound_effects_base$$civic_tankbound_modifiers$"
- civic_tankbound_modifiers: "\n\n§E修正：§!$TABBED_NEW_LINE$—$mod_planet_jobs_upkeep_mult$：$@civic_tankbound_job_upkeep|0=-%$$TABBED_NEW_LINE$—$MOD_BONUS_AUTOMATED_WORKFORCE_MULT$：$@civic_tankbound_efficiency_mult|0=+%$$TABBED_NEW_LINE$—农业区能量币维护费：$@civic_tankbound_district_upkeep|0=-%$"
+ civic_tankbound_effects_base: "增加['trait:trait_tankbound']特质。\n乡村地区的劳工岗位完全§Y自动化§!。\n['concept_colonist', $job_colonist$]岗位为$SPECIALISTS$。\n£district£§Y城市§!地区拥有额外的§Y$job_production_overseer_with_icon$§!岗位。"
+ civic_tankbound_effects: "$civic_tankbound_effects_base$"
  civic_tankbound_negative_effects: "$t$—起始比正常少2K£pop£人口"
 
  civic_tankbound_corporate: "企业脑罐"
  civic_tankbound_corporate_desc: "该社会普遍采用了一种特化的实验性栖息罐产品。因此他们严重依赖辅助设备，无法直接从事体力劳动。"
- civic_tankbound_corporate_effects: "$civic_tankbound_effects_base$\n£building£§Y$building_virtual_entertainment_studios$§!$megacorp_civic_branch_office_building_effect$$civic_tankbound_modifiers$"
+ civic_tankbound_corporate_effects: "$civic_tankbound_effects_base$\nThe £building£ §Y$building_virtual_entertainment_studios$§! $megacorp_civic_branch_office_building_effect$"
 
  tankbound_efficiency_malus: "$civic_tankbound$"
  tankbound_corporate_efficiency_malus: "$civic_tankbound_corporate$"
@@ -868,6 +876,8 @@
  tech_assembly_pattern_tankbound_effect: "$MOD_BONUS_AUTOMATED_WORKFORCE_MULT$：$@civic_tankbound_efficiency_mult_halved|0=+%$"
  tech_construction_templates_tankbound: "$tech_construction_templates$"
  tech_construction_templates_tankbound_effect: "$tech_construction_templates_effect$\n$tech_assembly_pattern_tankbound_effect$"
+
+ tankbound_species_class_requirement: "拥有包含['trait:trait_tankbound']肖像的物种类别：\n$t$$BULLET_POINT$§Y$AQUATIC$§!\n$t$$BULLET_POINT$§Y$INF$§!\n$t$$BULLET_POINT$§Y$NECROID$§!\n$t$$BULLET_POINT$§Y$TOX$§!"
 
  automated_generator: "自动发电机"
  automated_farming: "自动农场"
@@ -883,9 +893,40 @@
  mod_planet_districts_hab_mining_energy_upkeep_add: "$planet_districts_hab_mining$能量币维护费" 
  MOD_BONUS_AUTOMATED_WORKFORCE_MULT: "自动劳动力效率"
 
- mod_job_technician_automated_workforce_mult: "$job_technician_plural_with_icon$$MOD_PLANET_DISTRICT_AUTOMATED_WORKFORCE$"
- mod_job_miner_automated_workforce_mult: "$job_miner_plural_with_icon$$MOD_PLANET_DISTRICT_AUTOMATED_WORKFORCE$"
- mod_job_farmer_automated_workforce_mult: "$job_farmer_plural_with_icon$$MOD_PLANET_DISTRICT_AUTOMATED_WORKFORCE$"
+ MOD_PLANET_AUTOMATED_WORKFORCE: "自动劳动力"
+ mod_job_technician_automated_workforce_mult: "$job_technician_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_miner_automated_workforce_mult: "$job_miner_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_farmer_automated_workforce_mult: "$job_farmer_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_agri_drone_automated_workforce_mult: "$job_agri_drone_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_artisan_automated_workforce_mult: "$job_artisan_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_artisan_drone_automated_workforce_mult: "$job_artisan_drone_swap_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_biologist_automated_workforce_mult: "$job_biologist_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_bureaucrat_automated_workforce_mult: "$job_bureaucrat_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_calculator_biologist_automated_workforce_mult: "$job_calculator_biologist_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_calculator_engineer_automated_workforce_mult: "$job_calculator_engineer_plural_with_icon$  $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_calculator_physicist_automated_workforce_mult: "$job_calculator_physicist_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_coordinator_automated_workforce_mult: "$job_coordinator_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_engineer_automated_workforce_mult: "$job_engineer_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_entertainer_automated_workforce_mult: "$job_entertainer_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_fabricator_automated_workforce_mult: "$job_fabricator_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_fe_acolyte_farm_automated_workforce_mult: "$job_fe_acolyte_farm_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_fe_acolyte_generator_automated_workforce_mult: "$job_fe_acolyte_generator_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_fe_acolyte_mine_automated_workforce_mult: "$job_fe_acolyte_mine_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_fe_archivist_automated_workforce_mult: "$job_fe_archivist_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_fe_augur_automated_workforce_mult: "$job_fe_augur_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_fe_protector_automated_workforce_mult: "$job_fe_protector_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_foundry_automated_workforce_mult: "$job_foundry_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_healthcare_automated_workforce_mult: "$job_healthcare_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_logistics_drone_automated_workforce_mult: "$job_logistics_drone_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_mining_drone_automated_workforce_mult: "$job_mining_drone_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_physicist_automated_workforce_mult: "$job_physicist_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_replicator_automated_workforce_mult: "$job_replicator_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_roboticist_automated_workforce_mult: "$job_roboticist_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_soldier_automated_workforce_mult: "$job_soldier_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_spawning_drone_automated_workforce_mult: "$job_spawning_drone_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_technician_drone_automated_workforce_mult: "$job_technician_drone_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_trader_automated_workforce_mult: "$job_trader_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_warrior_drone_automated_workforce_mult: "£job_warrior_drone£ $job_warrior_drone_plural$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
 
  civic_tooltip_not_tankbound: "没有['concept_tankbound_civics']类公民性"
  concept_tankbound_civics: "$civic_tankbound$"
@@ -1225,13 +1266,11 @@
  councilor_energy_curator: "能量典藏研究所"
  councilor_energy_curator_female: "$councilor_energy_curator$"
  councilor_energy_curator_desc: "$TITLE$负责把从广大人口中收集到的能量进行妥善分配。需要精心平衡才能避免下层社会的效率底下。"
- councilor_energy_curator_effect_tooltip: "—$MOD_LEADER_SPECIES_EXP_GAIN$：§G+5%§!\n—$mod_country_base_energy_produces_mult$：每$pop_group_unit$£pops£人口§G+0.02%§!"
 
 # Executive Thrall Manager
  councilor_executive_thrall_manager: "执行约束总监"
  councilor_executive_thrall_manager_female: "$councilor_executive_thrall_manager$"
  councilor_executive_thrall_manager_desc: "$TITLE$负责把从自愿的实习生中收集到的能量进行妥善分配。这些能量可以在高层及的业务经理手里获得充分利用。"
- councilor_executive_thrall_effect_tooltip: "—$MOD_LEADER_SPECIES_EXP_GAIN$：§G+5%§!\n—$mod_planet_jobs_trade_produces_mult$：每$pop_group_unit$£pops£人口§G+0.02%§!"
 
 # Conspirator Liaison
  councilor_secret_societies: "内应联络人"
@@ -1268,29 +1307,29 @@
  # Thought Warden (Mindwarden)
  councilor_mindwarden: "思想监官"
  councilor_mindwarden_female: "$councilor_mindwarden$"
- councilor_mindwarden_desc: "$councilor_mindwarden$是遏止灵能敌意和犯罪思想的最高权威。"
+ councilor_mindwarden_desc: "$TITLE$是遏止灵能敌意和犯罪思想的最高权威。"
  councilor_mindwarden_unlock_title: "§H由[mindwarden_enclave_country.GetName]解锁的内阁席位§!"
  councilor_mindwarden_conditional_tooltip: "领袖非灵能者"
 
 # Shroudspeaker
  councilor_chosen: "虚语者"
  councilor_chosen_female: "$councilor_chosen$"
- councilor_chosen_desc: "$councilor_chosen$负责通过与天幕内的GM管紧密调和来指导我们祭司的工作。"
+ councilor_chosen_desc: "$TITLE$负责通过与天幕内的GM管紧密调和来指导我们祭司的工作。"
 
 # Grand Preacher
  councilor_chosen_corporate: "大传道士"
  councilor_chosen_corporate_female: "$councilor_chosen_corporate$"
- councilor_chosen_corporate_desc: "$councilor_chosen_corporate$负责确保我们的祭祀的福音工作服务于最佳经济利益。"
+ councilor_chosen_corporate_desc: "$TITLE$负责确保我们的祭祀的福音工作服务于最佳经济利益。"
 
 # Grand Vessel
  councilor_grand_vessel: "大总罐"
  councilor_grand_vessel_female: "$councilor_grand_vessel$"
- councilor_grand_vessel_desc: "$councilor_grand_vessel$负责最大化自动设施的效率，并拥有使用我们社会中最大容器的特权。"
+ councilor_grand_vessel_desc: "$TITLE$负责最大化自动设施的效率，并拥有使用我们社会中最大容器的特权。"
 
 # Executive Vessel
  councilor_executive_vessel: "执行总罐"
  councilor_executive_vessel_female: "$councilor_executive_vessel$"
- councilor_executive_vessel_desc: "$councilor_executive_vessel$负责最大化自动设施的效益，并拥有使用我们企业中最大容器的特权。"
+ councilor_executive_vessel_desc: "$TITLE$负责最大化自动设施的效益，并拥有使用我们企业中最大容器的特权。"
 
 #==========================
 # Economic categories
@@ -2101,6 +2140,7 @@
  job_test_subject_desc: "这些个体被判有犯罪行为，因此作为技术实验的活体实验对象投入生产使用。"
  job_test_subject_effect_desc: "£job_test_subject£$job_test_subject_plural$用于产出$r_research$和$i_amenities$"
  mod_job_test_subject_add: "$job_test_subject$岗位"
+ mod_pop_test_subject_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ $job_test_subject_plural$"
 
  # Test Subjects (Gestalt)
  job_test_subject_drone: "实验用子个体"
@@ -2221,9 +2261,9 @@
  MESSAGE_AURA_MAX_INTENSITY_SETTING_the_instrument_of_desire: "$MESSAGE_PSIONIC_AURA_MAX_INTENSITY_TITLE$（$the_instrument_of_desire$）"
  MESSAGE_AURA_MAX_INTENSITY_SETTING_whisperers_in_the_void: "$MESSAGE_PSIONIC_AURA_MAX_INTENSITY_TITLE$（$whisperers_in_the_void$）"
  MESSAGE_PSIONIC_AURA_MAX_INTENSITY_DESC: "我们在§H$SYSTEM$§!系内的§Y$PSIONIC_AURA$§!已达强度峰值，显昭出了超主的恩赐。"
- aura_intensity_lost_level_tt: "$PSIONIC_AURA$强度等级：§R-1§!"
+ aura_intensity_lost_level_tt: "$PSIONIC_AURA$强度等级：§R-1§!\n$h_line$"
  MESSAGE_PSIONIC_AURA_MAX_INTENSITY_whisperers_in_the_void_DESC: "$MESSAGE_PSIONIC_AURA_MAX_INTENSITY_DESC$\n—获得$VALUE$研究点\n—$aura_intensity_lost_level_tt$"
- MESSAGE_PSIONIC_AURA_MAX_INTENSITY_the_eater_of_worlds_DESC: "$MESSAGE_PSIONIC_AURA_MAX_INTENSITY_DESC$\n—$SYSTEM$内显现护卫舰：§Y[GetEaterOfWorldsSpawnedCorvettesScaled]§!\n—$aura_intensity_lost_level_tt$"
+ MESSAGE_PSIONIC_AURA_MAX_INTENSITY_the_eater_of_worlds_DESC: "$MESSAGE_PSIONIC_AURA_MAX_INTENSITY_DESC$\n—末日强度：§G+1§!\n—当前末日强度：§Y[GetEaterOfWorldsDoomIntensity]/50§!\n—$aura_intensity_lost_level_tt$"
  MESSAGE_PSIONIC_AURA_MAX_INTENSITY_the_cradle_of_souls_DESC: "$MESSAGE_PSIONIC_AURA_MAX_INTENSITY_DESC$\n—$STARBASE$的防御平台：§G+5§!\n—$aura_intensity_lost_level_tt$"
  MESSAGE_PSIONIC_AURA_MAX_INTENSITY_the_instrument_of_desire_DESC: "$MESSAGE_PSIONIC_AURA_MAX_INTENSITY_DESC$\n—$SYSTEM$系内可用行星飞升：§G$VALUE$§!\n—$aura_intensity_lost_level_tt$"
  MESSAGE_PSIONIC_AURA_MAX_INTENSITY_the_composer_of_strands_DESC: "$MESSAGE_PSIONIC_AURA_MAX_INTENSITY_DESC$\n—$SYSTEM$系内增加$d_shroudstone$障碍：§Y$VALUE$§!\n—$aura_intensity_lost_level_tt$"
@@ -2623,11 +2663,19 @@
  tooth_eater_cap: "$tooth_eater$"
  tooth_eater_plural: "喰煞之齿"
  NAME_Tooth_Eater: "$tooth_eater$"
+ NAME_Fang_Eater: "喰煞尖牙"
+ NAME_Fang_Eater_Plural: "喰煞尖牙"
+ NAME_Tusk_Eater: "喰煞獠牙"
+ NAME_Tusk_Eater_Plural: "喰煞獠牙"
+ Name_Doom_Eater_Fleet: "喰煞末日"
+ EaterOfWorldsShipClasses_Battleships: "\n$t$—$NAME_Tusk_Eater_Plural$（战列舰）$EaterOfWorldsShipClasses_Cruisers$"
+ EaterOfWorldsShipClasses_Cruisers: "\n$t$——$NAME_Fang_Eater_Plural$（巡洋舰）$EaterOfWorldsShipClasses_Escorts$"
+ EaterOfWorldsShipClasses_Escorts: "\n$t$—$tooth_eater_plural$（护航舰）"
  NAME_Cradle_Station: "月窠之手"
 
  try_spread_aura_tt: "此§H$PSIONIC_AURA$§!将尝试散播至周边星系。"
  AURA_MAX_INTENSITY_HEADER: "§E最大强度效果：§!"
- eater_aura_effect_tt: "$try_spread_aura_tt$\n创建一支§Y10§!艘§H$NAME_Tooth_Eater$§!护卫舰组成的舰队。"
+ eater_aura_effect_tt: "$try_spread_aura_tt$\n末日强度将提升§G+1§!。"
  souls_aura_effect_tt: "$try_spread_aura_tt$\n在该星系的太空基地内，立即建造§Y5§!个§H防御平台§!，无需维护费。"
  composer_aura_effect_tt: "$try_spread_aura_tt$\n向该星系的所有殖民地增加2个§Y$d_shroudstone$天然障碍§!。"
  desire_aura_effect_tt: "$try_spread_aura_tt$\n该星系内所有殖民地§G+1§!§Y飞升等级§!，无视当前上限。"
@@ -3090,7 +3138,8 @@
 
  tr_psionics_shroud_psi_corps: "$tr_psionics_psi_corps$"
  tr_psionics_shroud_psi_corps_delayed: "$tr_psionics_psi_corps_delayed$"
- tr_psionics_shroud_psi_corps_situation_effects: "$tr_psionics_shroud_situation_during$解锁局势第二阶段\n\n$tr_psionics_psi_corps_desc$"
+ tr_psionics_shroud_psi_corps_situation_effects: "$tr_psionics_shroud_situation_during$解锁局势第二阶段\n$ALLOW_PSI_CORPS$\n\n$tr_psionics_shroud_situation_after$$tr_psionics_psi_corps_desc$"
+ ALLOW_PSI_CORPS_AND_PSI_OFFICES: "$ALLOW_PSI_CORPS$\n$AVAILABLE_HOLDINGS$ ['building:building_psionic_offices']"
 
  tr_psionics_shroud_great_awakening: "$tr_psionics_psionic_assimilation$"
  tr_psionics_shroud_great_awakening_delayed: "$tr_psionics_psionic_assimilation_delayed$"
@@ -3182,7 +3231,7 @@
  situation_experimental_testing_desc_lore: "通过召集囚禁的[Owner.GetIndividualNamePlural]并迫使其参加科学实验，我们就能显著提高科技进展的速度。"
  situation_experimental_testing_desc: "$situation_experimental_testing_desc_lore$\n\n§Y[Owner.GetTestSubjectPlural]的总数量§!：§G[Owner.GetNbTestSubjects]§!\n建造§H$building_experimentation_chambers_1$§!以获取§H$job_test_subject_plural$§!。"
  situation_experimental_testing_no_test_subject_desc: "£trigger_no£没有可用$job_test_subject$。"
- situation_experimental_testing_testing_lockdown_desc: "£trigger_no£$testing_lockdown$"
+ situation_experimental_testing_testing_lockdown_desc: "£trigger_no£ $testing_lockdown$"
 
  situation_experimental_testing_monthly_change_tooltip: "需要[GetTestSubjectPlural]用来推进这一研究项目。牺牲这些[Owner.GetIndividualNamePlural]就可以促进我们必要的科技进展。"
  situation_experimental_testing_monthly_change_mult_tooltip: "实验对象产生的局势进展"
@@ -3448,7 +3497,7 @@
  FORGE_OWN_PATH_ACTIVE_ACCORD: "力量"
  UNLOCKED_PASSIVE_ACCORDS: "§E赐予$PASSIVE_ACCORDS$§!"
  UNLOCKED_ACTIVE_ACCORDS: "§E获赐$ACTIVE_ACCORDS$§!"
- ACTIVE_ACCORD_COOLDOWN: "£time£$COOLDOWN|0H$"
+ ACTIVE_ACCORD_COOLDOWN: "£time£ $COOLDOWN|0H$"
 
 # Envoys
  PATRON_ENVOYS: "调和："
@@ -4530,8 +4579,8 @@
  ACCORD_HUNGER: "渴望"
  ACCORD_HUNGER_desc: "$the_eater_of_worlds_article_cap$渴望着战争。"
  ACCORD_DOOM: "末日"
- ACCORD_DOOM_desc: "我们将向最憎恶的仇敌释放$the_eater_of_worlds_article$的毁灭之意。"
- ACCORD_DOOM_TT: "自动与周边关系最差的帝国进入['concept_total_war']。\n将占领该帝国星球上所有的人口以§H$purge_sacrifice$§!的方式净化，其效果为：§R-1000%§!£happiness£§Y$HAPPINESS$§!、§G+5§!$i_unity$、§G+2§!$i_zro$。"
+ ACCORD_DOOM_desc: "我们将向仇敌释放$the_eater_of_worlds_article$的毁灭之意。"
+ ACCORD_DOOM_TT: "显昭§Y$Name_Doom_Eater_Fleet$§!舰队。\n\n该舰队的强度与§Y末日强度§!成正比。\n当前末日强度：§Y[GetEaterOfWorldsDoomIntensity]/50§!\n\n可用舰级：[GetEaterOfWorldsShipClasses]\n\n§R现存所有§Y$Name_Doom_Eater_Fleet$§!将会被解散。§!"
  ACCORD_DIGEST: "消化"
  ACCORD_DIGEST_desc: "$the_eater_of_worlds_article$无尽的食欲必须满足。"
  ACCORD_DIGEST_TT: "我方§H$PSIONIC_AURA$§!内的敌对行星增加§Y$DEVASTATION$§!：§G+$@accord_digest_devastation|0$§!\n我方§H$PSIONIC_AURA$§!内的敌对舰船损失§Y$HULL$§!和§Y$ARMOR$§!：§G$@accord_digest_ship_malus|0%$§!\n$ACCORD_LOOSE_INTENSITY$"
@@ -4767,9 +4816,6 @@
 #==========================
 # Mindwardens
 #==========================
- MINDWARDEN: "灵督"
- MINDWARDEN_plural: "灵督"
- MINDWARDEN_hand_plural: "$HUM_hand_plural$"
  MINDWARDEN_ENCLAVE: "$MINDWARDEN$"
  MINDWARDEN_ENCLAVE_plural: "$MINDWARDEN_plural$"
 
@@ -5333,7 +5379,13 @@
  shroud.6770.a: "摧毁这个万恶之源。"
  shroud.6770.b: "想方设法利用这个……东西。"
  destroyers_of_the_lost_modifier: "失落毁灭者"
- destroyers_of_the_lost_modifier_tt: "击败了一个灵能仇敌并摧毁了他们$PSIONIC_AURA$的源头，在经历了多年磨难后，现在全国士气高涨。"
+ destroyers_of_the_lost_modifier_tt: "获得§Y$living_standard_shroud_inoculation$§!生活标准的权限，在此标准下§Y灵能§!能力将被移除。"
+ destroyers_of_the_lost_modifier_desc: "击败了一个灵能仇敌并摧毁了他们$PSIONIC_AURA$的源头，在经历了多年磨难后，现在全国士气高涨。"
+
+ living_standard_shroud_inoculation: "天幕接种"
+ living_standard_shroud_inoculation_tooltip: "该物种正接受接种以对抗灵能辐射的有害影响。\n\n§R为预防进一步伤害，所有灵能特质将被移除。§!"
+ living_standard_shroud_inoculation_tooltip_delayed: "§L我们应确保这一物种的灵能安全。§!"
+
  psionic_heresy: "灵能异端"
 
  shroud.6780.name: "$r_the_lost_patron$"

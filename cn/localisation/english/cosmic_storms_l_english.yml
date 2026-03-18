@@ -163,11 +163,11 @@
  MOD_COUNTRY_STORM_REPELLING_ADD: "宇宙风暴驱斥效果"
  MOD_PLANET_STORM_DEVASTATION_MULT: "宇宙风暴行星破坏度降低"
  MOD_STORM_SHIP_HULL_BREAKER_MULT: "宇宙风暴对舰船防护的负面影响："
- MOD_SHIP_HULL_STORM_BREAKER_1: "$MOD_STORM_SHIP_HULL_BREAKER_MULT$ §G-50%§!"
- MOD_SHIP_HULL_STORM_BREAKER_2: "$MOD_STORM_SHIP_HULL_BREAKER_MULT$ §G-100%§!"
+ MOD_SHIP_HULL_STORM_BREAKER_1: "$MOD_STORM_SHIP_HULL_BREAKER_MULT$ §G-45%§!"
+ MOD_SHIP_HULL_STORM_BREAKER_2: "$MOD_STORM_SHIP_HULL_BREAKER_MULT$ §G-90%§!"
  MOD_SHIP_STORM_WEAPONS_MULT: "宇宙风暴对舰船武器的负面影响："
- MOD_SHIP_STORM_WEAPONS_1: "$MOD_SHIP_STORM_WEAPONS_MULT$ §G-50%§!"
- MOD_SHIP_STORM_WEAPONS_2: "$MOD_SHIP_STORM_WEAPONS_MULT$ §G-100%§!"
+ MOD_SHIP_STORM_WEAPONS_1: "$MOD_SHIP_STORM_WEAPONS_MULT$ §G-45%§!"
+ MOD_SHIP_STORM_WEAPONS_2: "$MOD_SHIP_STORM_WEAPONS_MULT$ §G-90%§!"
  MOD_PLANETARY_STORM_SHIELD_MULT: "宇宙风暴行星破坏效果降低：§G50%§!"
  MOD_STORM_REPELLENT_TIMED: "宇宙风暴驱斥场激活时长："
 
@@ -189,11 +189,11 @@
 
  building_storm_resistant_production: "风暴救援中心"
  building_storm_resistant_production_desc: "这个救援中心帮助当地居民消除宇宙风暴对行星生产的影响。通过高效沟通协作，$building_storm_resistant_production$快速部署救援小队，改善行星贸易环境。"
- building_storm_resistant_production_tt: "§Y$default_storm$§!对行星生产的负面惩罚减少§G25%§!。\n\n当§Y$default_storm$§!出现时：$TABBED_NEW_LINE$$mod_planet_miners_minerals_produces_add$：§G+1§!$TABBED_NEW_LINE$$mod_planet_farmers_food_produces_add$：§G+1§!$TABBED_NEW_LINE$$mod_planet_technician_energy_produces_add$：§G+1§!\n\n解锁行星决议§Y$decision_hunker_down$§!"
+ building_storm_resistant_production_tt: "§Y$default_storm$§!对行星生产的负面惩罚减少§G30%§!。\n\n当§Y$default_storm$§!出现时：$TABBED_NEW_LINE$$mod_planet_miners_minerals_produces_add$：§G+0.5§!$TABBED_NEW_LINE$$mod_planet_farmers_food_produces_add$：§G+0.5§!$TABBED_NEW_LINE$$mod_planet_technician_energy_produces_add$：§G+0.5§!\n\n解锁行星决议§Y$decision_hunker_down$§!"
 
  building_advanced_storm_resistant_production: "风暴抑制器"
  building_advanced_storm_resistant_production_desc: "在$building_storm_resistant_production$部署天气控制系统后，宇宙风暴的负面影响大为减轻。此外，救援队伍能更高效地部署，行星贸易也几乎不再受当地天气条件的影响。"
- building_advanced_storm_resistant_production_tt: "§Y$default_storm$§!对行星生产的负面惩罚减少§G40%§!。\n\n当§Y$default_storm$§!出现时：$TABBED_NEW_LINE$$mod_planet_miners_minerals_produces_add$：§G+2§!$TABBED_NEW_LINE$$mod_planet_farmers_food_produces_add$：§G+2§!$TABBED_NEW_LINE$$mod_planet_technician_energy_produces_add$：§G+2§!\n\n解锁行星决议§Y$decision_hunker_down$§!"
+ building_advanced_storm_resistant_production_tt: "§Y$default_storm$§!对行星生产的负面惩罚减少§G45%§!。\n\n当§Y$default_storm$§!出现时：$TABBED_NEW_LINE$$mod_planet_miners_minerals_produces_add$：§G+1§!$TABBED_NEW_LINE$$mod_planet_farmers_food_produces_add$：§G+1§!$TABBED_NEW_LINE$$mod_planet_technician_energy_produces_add$：§G+1§!\n\n解锁行星决议§Y$decision_hunker_down$§!"
 
  building_adakkaria_patriotic_institute: "爱国庆典学院"
  building_adakkaria_patriotic_institute_desc: "$building_adakkaria_patriotic_institute$是对情感状况有着先进见解的宝库。在这里，我们让我们的人民在抵御公约残酷的诱惑之歌时能够在内心培育风暴。"
@@ -260,6 +260,11 @@
  job_storm_duelist_effect_desc: "[entertainer.GetIcon] [entertainer.GetNamePlural] 将$r_consumer_goods$转化为$r_unity$$r_amenities$和£mod_country_naval_cap_add£§Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!"
  job_storm_duelist_with_icon: "£job_storm_duelist£ $job_storm_duelist$"
  job_storm_duelist_plural_with_icon: "£job_storm_duelist£ $job_storm_duelist_plural$"
+
+ reenactor: "$job_reenactor$"
+ job_reenactor: "历史再现员"
+ job_reenactor_plural: "历史再现员"
+ job_reenactor_desc: "这些专业的工作人员既是演员，又是博物馆的典藏员，还是战士，他们意识到理解过去的最好方式就是去亲身体验。"
 
 # Triggers
  count_system_within_storm_trigger: "风暴中的星系数$CONDITIONS$$IS_NOT$$COMPARATOR$$NUM|Y$"
@@ -432,7 +437,7 @@
 
  resolution_cosmic_storms_protection_initiative: "风暴调查倡议"
  resolution_cosmic_storms_protection_initiative_desc: "是时候主动出击了。鼓励创新能让我们更好地利用宇宙风暴带来的经济价值。"
- resolution_cosmic_storms_protection_initiative_tooltip: "$output_from_storm_protection_buildings$ §G+10%§!\n\n$unity_from_storms$ §G+1§!\n\n$storm_tech_draw_chance$ §G+50%§!"
+ resolution_cosmic_storms_protection_initiative_tooltip: "$output_from_storm_protection_buildings$ §G+5%§!\n\n$unity_from_storms$ §G+1§!\n\n$storm_tech_draw_chance$ §G+50%§!"
 
  resolution_cosmic_storms_protection_initiative_repeal: "废除$resolution_cosmic_storms_protection_initiative$"
  resolution_cosmic_storms_protection_initiative_repeal_desc: "$resolution_space_weather_exploitation_repeal_desc$"
@@ -440,7 +445,7 @@
 
  resolution_cosmic_storms_galactic_management: "星系风暴管理"
  resolution_cosmic_storms_galactic_management_desc: "抵御宇宙风暴促使我们提高效率，但仍有许多东西有待发掘。"
- resolution_cosmic_storms_galactic_management_tooltip: "$output_from_storm_protection_buildings$ §G+20%§! \n\n$storm_tech_cost$ §G-50%§! \n\n$storm_tech_draw_chance$ §G+75%§! \n\n$unity_from_storms$ §G+2§!"
+ resolution_cosmic_storms_galactic_management_tooltip: "$output_from_storm_protection_buildings$ §G+10%§! \n\n$storm_tech_cost$ §G-50%§! \n\n$storm_tech_draw_chance$ §G+75%§! \n\n$unity_from_storms$ §G+2§!"
 
  resolution_cosmic_storms_galactic_management_repeal: "废除$resolution_cosmic_storms_galactic_management$"
  resolution_cosmic_storms_galactic_management_repeal_desc: "$resolution_space_weather_exploitation_repeal_desc$"
@@ -448,7 +453,7 @@
 
  resolution_cosmic_storms_utilization_protocols: "风暴利用倡议"
  resolution_cosmic_storms_utilization_protocols_desc: "以后我们一定要针对宇宙风暴做好保护，但是也不能就此停止对于风暴的开发利用。"
- resolution_cosmic_storms_utilization_protocols_tooltip: "$output_from_storm_protection_buildings$§G+20%§! \n\n$storm_tech_draw_guaranteed$\n\n$unity_from_storms$§G+2§!\n\n$breach_galactic_law_intro$$TABBED_NEW_LINE$—舰船未配备§Y宇宙风暴防护§!"
+ resolution_cosmic_storms_utilization_protocols_tooltip: "$output_from_storm_protection_buildings$§G+10%§! \n\n$storm_tech_draw_guaranteed$\n\n$unity_from_storms$§G+2§!\n\n$breach_galactic_law_intro$$TABBED_NEW_LINE$—舰船未配备§Y宇宙风暴防护§!"
 
  resolution_cosmic_storms_utilization_protocols_repeal: "废除$resolution_cosmic_storms_utilization_protocols$"
  resolution_cosmic_storms_utilization_protocols_repeal_desc: "$resolution_space_weather_exploitation_repeal_desc$"
@@ -456,7 +461,7 @@
 
  resolution_cosmic_storms_manipulation_mandate: "风暴操纵指令"
  resolution_cosmic_storms_manipulation_mandate_desc: "我们有着主宰宇宙风暴的使命，自然力量本就该服务于我们。"
- resolution_cosmic_storms_manipulation_mandate_tooltip: "$output_from_storm_protection_buildings$§G+30%§!\n\n$storm_tech_cost$§G-80%§!\n\n$storm_tech_draw_guaranteed$\n\n$unity_from_storms$§G+3§!\n\n$breach_galactic_law_intro$$TABBED_NEW_LINE$——舰船未配备§Y宇宙风暴防护§!$TABBED_NEW_LINE$—行星未配备§Y宇宙风暴建筑§!"
+ resolution_cosmic_storms_manipulation_mandate_tooltip: "$output_from_storm_protection_buildings$§G+15%§!\n\n$storm_tech_cost$§G-80%§!\n\n$storm_tech_draw_guaranteed$\n\n$unity_from_storms$§G+3§!\n\n$breach_galactic_law_intro$$TABBED_NEW_LINE$——舰船未配备§Y宇宙风暴防护§!$TABBED_NEW_LINE$—行星未配备§Y宇宙风暴建筑§!"
 
  resolution_cosmic_storms_manipulation_mandate_repeal: "废除$resolution_cosmic_storms_manipulation_mandate$"
  resolution_cosmic_storms_manipulation_mandate_repeal_desc: "$resolution_space_weather_exploitation_repeal_desc$"
@@ -1280,7 +1285,7 @@
 
  origin_storm_chasers: "追风者"
  origin_storm_chasers_desc: "没有他们不敢面对的挑战，没有他们不愿追逐的线索，也没有他们会视若罔闻的风暴。\n\n从本质上来说，这是一个追求刺激的文明。即有好处也有坏处。"
- origin_tooltip_storm_chasers_effects: "—$LEADERS_TRAITS$['concept_storm_rider']\n—每座§Y风暴建筑§!产生的行星$mod_planet_jobs_unity_produces_mult$：§G$@storm_chasers_storm_building_unity_produces_mult|%0$§!\n—§Y$default_storm$§!出现在国境内的几率：§G+100%§!\n—获得§Y宇宙风暴科技§!研究选项的几率：§G+175%§!\n—拥有['concept_weather_forecasting_mode']\n—$ADDITIONAL_TECHNOLOGIES_STRING$$TABBED_NEW_LINE$—£physics£ ['technology:tech_storm_prediction_1']"
+ origin_tooltip_storm_chasers_effects: "—$LEADERS_TRAITS$['concept_storm_rider']\n—每座§Y风暴建筑§!产生的行星$mod_planet_jobs_unity_produces_mult$：§G$@storm_chasers_storm_building_unity_produces_mult|%0$§!\n—一旦所需科技研究完毕，首府建筑将自动提供§Y风暴庇护所§!修正。\n—§Y$default_storm$§!出现在国境内的几率：§G+100%§!\n—获得§Y宇宙风暴科技§!研究选项的几率：§G+175%§!\n—拥有['concept_weather_forecasting_mode']\n—$ADDITIONAL_TECHNOLOGIES_STRING$$TABBED_NEW_LINE$—£physics£ ['technology:tech_storm_prediction_1']"
 
  START_SCREEN_STORM_CHASERS: "无奔波不生活。生于灿烂，死于热烈——这一直以来就是我们的信条。当每条航迹都被燃尽，每座山峰都被攀登，然后呢？\n\n我们的行星常年风起云涌，各种风暴和洪水肆意挥洒。如果能找到利用这些独特条件的方法，我们就有机会召唤一场狂暴的宇宙风暴。\n\n我们早就已经征服了母星上的一切挑战，是时候尖啸着飞向深空了。这当然不会是一条坦途，但我们有一句老话：“有志者，惊事成！”"
 
@@ -1894,8 +1899,9 @@
 # Mountain in the Sky
  d_sky_mountain: "天空之山"
  d_sky_mountain_desc: "一座巨大的山脉悬挂在行星上层大气的稀薄空气中，暴露出崭新的矿藏。"
+ unlocks_zone_minerals_physics: "$t$解锁地区特化：§Y$zone_minerals_physics$§!"
  cstorms.1745.name: "$d_sky_mountain$"
- cstorms.1745.desc: "一场严重的§Y$gravity_storm$§!导致了§H[this.GetName]§!的地景发生了剧变。这场风暴强劲的重力波动将行星最高的山脉从构造架上剥离，径直提到了星球的上方。\n\n它现在仍然悬浮在上层大气中，由风暴的残余引力作用保持在高空。这一剧变扔地下基岩中以前无法开采的矿物贮藏暴露了出来，也为[owner.GetResearchers]提供了很多可以分析的资料。"
+ cstorms.1745.desc: "一场严重的§Y$gravity_storm$§!导致了§H[this.GetName]§!的地景发生了剧变。这场风暴强劲的重力波动将行星最高的山脉从构造架上剥离，径直提到了星球的上方。\n\n它现在仍然悬浮在上层大气中，由风暴的残余引力作用保持在高空。这一剧变使得地下基岩中以前无法开采的矿物贮藏暴露了出来，也为[owner.GetResearchers]提供了很多可以分析的资料。"
 
 # Melting Glaciers
  cstorms.1755.name: "融化的冰川"
@@ -2229,3 +2235,8 @@
  job_visionary: "技术先驱"
  job_visionary_plural: "技术先驱"
  job_visionary_desc: "不为先例所拘，也无谦卑之累，这些明日的梦想家将大胆的想象化为可售的现实。于真正的先驱而言，进步不仅是信条，更是商品。"
+
+ noble_merchant: "$job_noble_merchant$"
+ job_noble_merchant: "贵族"
+ job_noble_merchant_plural: "贵人"
+ job_noble_merchant_desc: "统治权并非由继承决定，而是由一个人的价值衡量；而衡量价值的最佳方式，难道不就是看资产负债表上的总额吗？"

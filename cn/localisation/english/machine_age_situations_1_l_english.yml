@@ -23,7 +23,8 @@
 
  situation_cyberization_ongoing_desc: "义体化进行中"
  situation_cyberization_pause_desc: "局势暂停"
- situation_augmentation_center_needed_desc: "£trigger_no£无可用的$building_augmentation_center$"
+ situation_augmentation_center_needed_desc: "§R£trigger_no£无可用的£building£ $building_augmentation_center$§!"
+ situation_augmentation_center_or_bazaar_needed_desc: "§R£trigger_no£无可用的£building£ $building_augmentation_center$或£building£ $building_augmentation_bazaars$！§!"
  situation_tests_paused_tt: "测试暂停"
  situation_destroyed_research_tt: "被毁的研究"
  situation_repeal_taxes_tt: "植入体税被禁止"
@@ -69,22 +70,21 @@
  job_augmentor_growth_effect_desc: "$job_augmentor_plural_with_icon$提供$r_engineering$、$r_amenities$和$m_pop_growth$"
  job_augmentor_merchant_effect_desc: "£job_augmentation_merchant£ $job_augmentation_merchant_plural$ 将 £consumer_goods£ §Y$consumer_goods$§! 转换为 £unity£ §Y$unity$§!，£mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!，以及 $r_trade$"
  mod_job_augmentor_add: "$job_augmentor$岗位"
- mod_job_augmentor_trade_add: "$mod_planet_augmentors_trade_produces_add$"
 
  planet_augmentors: "$job_augmentor$岗位"
- mod_planet_augmentors_upkeep_mult: "$job_augmentor_plural$维护费"
 
  job_augmentor_drone: "强化子个体"
  job_augmentor_drone_with_icon: "£job_augmentor_drone£ $job_augmentor_drone$"
  job_augmentor_drone_plural: "强化子个体"
  job_augmentor_drone_plural_with_icon: "£job_augmentor_drone£ $job_augmentor_drone_plural$"
+ job_augmentor_drone_desc: "$job_augmentor_drone_research_desc$"
  job_augmentor_drone_research_desc: "$job_augmentor_drone_plural$负责研究并设计义体植入体。"
  job_augmentor_drone_research_effect_desc: "£job_augmentor£$job_augmentor_drone_plural$产出$r_engineering$和$r_amenities$"
  job_augmentor_drone_assembly_desc: "$job_augmentor_drone_plural$将[Owner.Species.GetFleshTypeCyberCreed]与机械融为一体。"
  job_augmentor_drone_assembly_effect_desc: "$job_augmentor_drone_plural_with_icon$将产出$r_engineering$、$r_amenities$、$m_pop_growth$和$m_pop_assembly_organic$"
  mod_job_augmentor_drone_add: "$job_augmentor_drone$岗位"
  mod_job_augmentor_drone_per_pop: "每$VALUE$个人口提供§G+1§!个$job_augmentor_drone$岗位"
- mod_job_augmentor_drone_per_pop_short: "\n每$VALUE$£pop£提供§G+1§!个£mod_job_augmentor_drone_add£"
+ mod_job_augmentor_drone_per_pop_short: "\n每$VALUE$£pop£§G+1§!£mod_job_augmentor_drone_add£"
 
  mod_planet_jobs_specialist_unity_produces_mult: "$pop_cat_specialist$凝聚力产出"
  worker_unity_produces: "$pop_cat_worker$凝聚力产出"
@@ -94,7 +94,7 @@
 
  job_cyberdome_duelist: "超角斗士"
  job_cyberdome_duelist_plural: "超角斗士"
- job_cyberdome_duelist_plural_with_icon: "£job_cyberdome_duelist£ $job_cyberdome_duelist_plural$"
+ job_cyberdome_duelist_plural_with_icon: "£job_cyberdome_duelist£ $job_cyberdome_duelist_plural$"
  job_cyberdome_duelist_desc: "$job_cyberdome_duelist_plural$们在$building_cyberdome$中用最尖端的义体植入体一一进行角逐。"
  planet_job_cyberdome_duelist: "$job_cyberdome_duelist$岗位"
  mod_job_cyberdome_duelist_add: "$planet_job_cyberdome_duelist$"
@@ -104,7 +104,7 @@
 
  job_cyberdome_spectator: "观众"
  job_cyberdome_spectator_plural: "观众"
- job_cyberdome_spectator_plural_with_icon: "£job_cyberdome_spectator£ $job_cyberdome_spectator_plural$"
+ job_cyberdome_spectator_plural_with_icon: "£job_cyberdome_spectator£ $job_cyberdome_spectator_plural$"
  job_cyberdome_spectator_desc: "$job_cyberdome_spectator_plural$享受着$building_cyberdome$中的比赛。通过义体大脑观赛时，即便是在最便宜的坐席也能看到如此盛景，但如果允许神经广播的话则还可以以第一人称感受角斗士的体验。"
  planet_job_cyberdome_spectator: "$job_cyberdome_spectator$岗位"
  mod_job_cyberdome_spectator_add: "$planet_job_cyberdome_spectator$"
@@ -465,7 +465,7 @@
 
 # OLIGARCHIC
  cyber_oligarchic_lifespan_tt: "义体人内阁官员寿命：§G+40年§!"
- cyber_oligarchic_ruleroutput_tt: "每§Y100§!£pop£§H专家人口§!提升精英资源产出：§G+1%§!"
+ cyber_oligarchic_ruleroutput_tt: "每§Y100§!£pop£§H专家人口§!提升精英资源产出：§G+1%§!（最大§G+20%§!）"
 # Cyber Oligarchic Individualist
  auth_cyber_oligarchic_individualist: "超频寡头制"
  auth_cyber_oligarchic_individualist_desc: "通过远程超频专家生物芯片提升了生产力，而统治阶层则从中获益，获得了更多用于政治和休闲的时间。"
@@ -487,20 +487,20 @@
 
  energy_extortion_tt: "$extortion_tt_opener$ $r_energy$ $extortion_tt_finish$"
  minerals_extortion_tt: "$extortion_tt_opener$ $r_minerals$ $extortion_tt_finish$"
- food_extortion_tt: "$extortion_tt_opener$$r_food$（或 $r_minerals$）$extortion_tt_finish$"
+ food_extortion_tt: "$extortion_tt_opener$$r_food$（或等价物）$extortion_tt_finish$"
  alloys_extortion_tt: "$extortion_tt_opener$ $r_alloys$ $extortion_tt_finish$"
  consumer_goods_extortion_tt: "$extortion_tt_opener$ $r_consumer_goods$ $extortion_tt_finish$"
  physics_research_extortion_tt: "$extortion_tt_opener$ $r_physics$ $extortion_tt_finish$"
  society_research_extortion_tt: "$extortion_tt_opener$ $r_society$ $extortion_tt_finish$"
  engineering_research_extortion_tt: "$extortion_tt_opener$ $r_engineering$ $extortion_tt_finish$"
- crowdsourced_extortion_tt: "$extortion_tt_opener$更多£physics_research££society_research££engineering_research£研究点。"
- manifesti_crowdsourced_extortion_tt: "该派系可能产出更多£physics_research££society_research££engineering_research£研究点。"
+ crowdsourced_extortion_tt: "$extortion_tt_opener$更多£physics_research£ £society_research£ £engineering_research£研究点。"
+ manifesti_crowdsourced_extortion_tt: "该派系可能产出更多£physics_research£ £society_research£ £engineering_research£研究点。"
 
 # DICTATORIAL
 # Cyber Dictatorial Individualist
  auth_cyber_dictatorial_individualist: "网监独裁制"
  auth_cyber_dictatorial_individualist_desc: "强制植入为我们提供了强有力的控制和执法的工具，加强了政权对其臣民的控制。这种俗称为“独裁芯片”的植入体可以监视它们的宿主，并在出现问题时自动向当局发出警报。"
- auth_cyber_dictatorial_individualist_tt: "$unlock_edict_self_indictment_protocol$$NEW_LINE$[enforcer.GetIcon][enforcer.GetNamePlural]提升非强迫者 $MOD_POP_BONUS_WORKFORCE_MULT$ §G+2.5%§!"
+ auth_cyber_dictatorial_individualist_tt: "$unlock_edict_self_indictment_protocol$"
  gov_cyber_dictatorial_individualist: "$auth_cyber_dictatorial_individualist$"
  gov_cyber_dictatorial_individualist_desc: "$auth_cyber_dictatorial_individualist_desc$"
  concept_auth_cyber_dictatorial_individualist: "$auth_cyber_dictatorial_individualist$"
@@ -540,7 +540,7 @@
  concept_auth_cyber_dictatorial_collectivist_vacant: "$auth_cyber_dictatorial_collectivist$"
 
 # IMPERIAL
- auth_cyber_imperial_tt: "§Y£building£首府建筑§!提供额外的§Y£job_noble£$job_noble$岗位§!\n核心星域以外的幸福度：§R-10%§!"
+ auth_cyber_imperial_tt: "£job_politician£§Y$job_politician$§!岗位替换为£job_noble£§Y$job_noble$§!岗位\n§Y£building£首府建筑§!提供额外的§Y£job_noble£$job_noble$岗位§!\n核心星域以外的幸福度：§R-10%§!"
 
 # Cyber Imperial Individualist
  auth_cyber_imperial_individualist: "芯片组帝制"

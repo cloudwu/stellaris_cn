@@ -156,7 +156,8 @@
 
  origin_subterranean:0 "地底人"
  origin_subterranean_desc:4 "这个物种也许永远也不会知道自己的祖先为什么会迁移到地表以下。这究竟是出于一种自我保存的必要，或是为了追寻资源的富足？不管其目的为何，他们都成功地适应了环境，造就了一个对环境要求更加灵活的社会。"
- origin_tooltip_subterranean_effects:4 "- $SPECIES_TRAITS$['concept_cave_dweller']\n- ['concept_mining_district', £district£矿业区]：无上限"
+ origin_tooltip_subterranean_effects:4 "- $SPECIES_TRAITS$ ['concept_cave_dweller'] $origin_tooltip_subterranean_shared_effects$"
+ origin_tooltip_subterranean_shared_effects: "\n—['concept_mining_district', £district£矿业区]：无上限\n—解锁矿业区特化：£zone£§Y$zone_subterranean_urban$§!\n—母星初始拥有已建成的§Y$zone_subterranean_urban$§!£zone£。"
  trait_cave_dweller:0 "穴居者"
  trait_cave_dweller_desc:1 "§L该物种能在任何他们能找到的星球地下繁衍。§!"
  trait_cave_dweller_tooltip: "$MOD_BIO_LOGISTIC_GROWTH_MULT$：§R-10%§!"
@@ -165,7 +166,7 @@
  trait_robot_cave_dweller_tooltip: "$MOD_POP_ASSEMBLY_SPEED$：§R-10%§!"
  origin_subterranean_machines: "地底机械"
  origin_subterranean_machines_desc: "该这明已经完美地融入了地下的存在，其最初的驱动力或是是某种经过深思熟虑的自我保护，或是某种在深处寻找隐藏的丰富资源的指令。由此产生的机械适应性早已挖掘出了一个多功能且坚定不移的机器社群。"
- origin_tooltip_robot_subterranean_effects: "—$SPECIES_TRAITS$['concept_robot_cave_dweller']\n—['concept_mining_district',£district£矿业区]：无限制"
+ origin_tooltip_robot_subterranean_effects: "- $SPECIES_TRAITS$ ['concept_robot_cave_dweller'] $origin_tooltip_subterranean_shared_effects$"
 
  START_SCREEN_SUBTERRANEAN:1 "当[GetHomeWorldName]上的其他生命在只能在荒野中度过夜晚，我们的祖先很快学习到了在地下生活的智慧，地下为他们提供了阻挡猛烈阳光和剧烈气候的庇荫。\n\n$START_SCREEN_SUBTERRANEAN_END$"
  START_SCREEN_SUBTERRANEAN_PLANT:1 "[GetHomeWorldName]上的生命采取了一些完全不同的进化路线。和我们同处一个世界的其他生命形式不同，它们从阳光中汲取能量而我们从阴暗的地底获得营养，正如我们的[GetSpeciesAdj]先祖所做的那样。\n\n$START_SCREEN_SUBTERRANEAN_END$"

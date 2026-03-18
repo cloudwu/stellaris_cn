@@ -64,7 +64,7 @@
  allow_machine_worlds:3 "- §YUnlocks Terraforming Option:§! ['concept_pc_machine']\n- §YUnlocks £zone£ District Specialization:§! $zone_machine_replication$"
  describe_machine_worlds:7 "- Replaces §Y£district£ Rural Districts§! with specialized §Y£district£Nexus Districts§!\n- Increases Housing and Jobs from all £district£ §YDistricts§!\n- §RUninhabitable for most Organic Species§!"
  allow_hive_worlds:1 "§HUnlocks Terraforming Option:§! Hive World\n§HUnlocks Hive World District Specialization:§! £zone£ $zone_spawning$"
- describe_hive_worlds:1 "Uninhabitable for non-hive species.\nUnlimited £district£ §YHive§! Districts\nDoubles Housing and Jobs from all £district£ §YDistricts§!\n£pop£ Pop Resource Output: §G+10%§!\nHousing Usage: §G-10%§!\n§RRemoves all Rural Districts§!"
+ describe_hive_worlds:1 "Uninhabitable for non-hive species.\nUnlimited £district£ §YHive§! Districts\nDoubles Housing and Jobs from all £district£ §YDistricts§!\n£pop£ Pop Resource Output: §G+10%§!\n§RRemoves all Rural Districts§!"
 
  ALLOW_PSI_CORPS:1 "Unlocks Building: ['building:building_psi_corps']"
  ALLOW_PSI_ARMIES:0 "§H$psionic_army_plural$§! can now be recruited."
@@ -175,6 +175,7 @@
 
  trait_cybernetic:0 "Cybernetic"
  trait_cybernetic_desc:0 "§LThis species has embraced cybernetics on such a scale that its members may be considered cyborgs. They routinely replace their organic body parts with more advanced mechanical versions.§!\n"
+ TRAIT_CYBORG_EFFECT: "Replaces §Y50%§! of $food_with_icon$ (or equivalent) Upkeep with $energy_with_icon$ Upkeep"
  trait_latent_psionic:0 "Latent Psionic"
  trait_latent_psionic_desc:0 "§LThis species has latent psionic abilities, which are dormant in most of its members. Although quite rare, these powers will manifest in some leaders.§!\n"
 
@@ -204,8 +205,7 @@
  trait_cyborg_learning_algorithms_desc:0 "§LSophisticated, self-learning algorithms that stimulate the rapid evolution of a unit's neural clusters.§!\n"
  trait_cyborg_neural_limiters:0 "Neural Limiters"
  trait_cyborg_neural_limiters_desc:0 "§LBy limiting the cognitive abilities of our workers we can encourage them to focus on more menial tasks.§!\n"
- trait_cyborg_mass_produced:0 "Mass-Produced"
- trait_cyborg_mass_produced_desc:0 "§LStreamlined production cycles and modular designs allow for unit mass-production at an unprecedented rate.§!\n"
+ 
  trait_cyborg_custom_made:0 "Custom-Made"
  trait_cyborg_custom_made_desc:0 "§LEach new unit is crafted with unparalleled attention to detail. A marvel of engineering and art, but not very efficient.§!\n"
  trait_cyborg_recycled:0 "Recycled"
@@ -219,7 +219,6 @@
  trait_cyborg_power_intensive:0 "Power Intensive"
  trait_cyborg_power_intensive_desc:0 "§LThese cybernetic components require frequent recharging from an external power source.§!"
  TRAIT_POWER_INTENSIVE_EFFECT:0 "Increases $r_energy$ Upkeep by §R+1§!"
- CYBORG_ENERGY_UPKEEP_EFFECT:0 "Increases $r_energy$ Upkeep by §R+$@cyborg_energy_upkeep$§!"
 
  trait_psionic:0 "Psionic"
  trait_psionic_desc: "[This.GetPsionicTraitDesc]"

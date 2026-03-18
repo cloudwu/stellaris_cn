@@ -23,7 +23,7 @@
  situation_num_identity_complex_tt: "$building_identity_complex$"
  situation_digitization_ongoing_desc: "Synthesization Ongoing"
  situation_digitization_pause_desc: "$situation_cyberization_pause_desc$"
- situation_identity_complex_needed_desc: "£trigger_no£ No enabled $building_identity_complex$"
+ situation_identity_complex_needed_desc: "£trigger_no£ No enabled $building_identity_complex$"
  synth_positive_media_coverage_tt: "Positive Media Coverage"
  synth_negative_media_coverage_tt: "Negative Media Coverage"
 
@@ -53,7 +53,7 @@
 
  job_identity_designer: "Identity Designer"
  job_identity_designer_plural: "Identity Designers"
- job_identity_designer_plural_with_icon: "£job_identity_designer£ $job_identity_designer_plural$"
+ job_identity_designer_plural_with_icon: "£job_identity_designer£ $job_identity_designer_plural$"
  job_identity_designer_converter_desc: "$job_identity_designer_plural$ facilitate the conversion from a biological form to a digital identity, ensuring a pain-free transition process."
  job_identity_designer_converter_effect_desc: "$job_identity_designer_plural_with_icon$ provide $i_engineering$ and $i_amenities$"
  job_identity_designer_desc: "$job_identity_designer_plural$ intricately create new synthetic minds."
@@ -158,11 +158,11 @@
 
 # Deposits
  d_old_towns_no_icons: "Old Towns"
- d_old_towns: "£blocker£ $d_old_towns_no_icons$"
+ d_old_towns: "£blocker£ $d_old_towns_no_icons$"
  d_old_towns_desc: "This region is dominated by well-preserved cities that house members of our original species. By expending resources, we may encourage these holdouts to transition into machines."
  d_old_towns_custom_tooltip: "§Y[Owner.GetNumSynthOpposition] [Owner.GetMechanicalPopOrPops]§! created"
  d_biological_enclaves_no_icon: "Biological Enclaves"
- d_biological_enclaves: "£blocker£ $d_biological_enclaves_no_icon$"
+ d_biological_enclaves: "£blocker£ $d_biological_enclaves_no_icon$"
  d_biological_enclaves_desc: "This region is dominated by cities that house those who objected to synthetic transition."
  d_biological_enclaves_custom_tooltip: "§Y[Owner.GetNumSynthOpposition] [Owner.GetMechanicalPopOrPops]§! created"
 
@@ -185,15 +185,15 @@
  computation_core_production_name: "Production Streamlining"
  computation_core_production: "$computation_core_production_name$"
  computation_core_production_desc: "Utilize spare processing cycles to streamline production processes.$computation_core_production_tt$"
- computation_core_production_tt: "\n\n$EFFECTS_HEADER$ $NEW_LINE$- Every $pop_group_unit$ $pop_cat_civilian_plural$ increases §Y$BONUS_WORKFORCE_FOR$ Metallurgist§! and §YArtisan jobs§! by §G+0.5%§!"
+ computation_core_production_tt: "\n\n$EFFECTS_HEADER$ $NEW_LINE$- Every $pop_group_unit$ £job_roboticist£ $job_roboticist_plural$ and $job_identity_designer_plural_with_icon$ increases §Y$BONUS_WORKFORCE_FOR$ £job_foundry£ $job_foundry_plural$§! and §Y£job_artisan£ $job_artisan_plural$§! by §G+2.5%§!"
  computation_core_stability_name: "Stability Analysis"
  computation_core_stability: "$computation_core_stability_name$"
  computation_core_stability_desc: "Allocate resources for monitoring societal information flow for irregularities.$computation_core_stability_tt$"
- computation_core_stability_tt: "\n\n$EFFECTS_HEADER$ $NEW_LINE$- Every $pop_group_unit$ $pop_cat_civilian_plural$ increases §Y$bureaucrat_jobs_bonus_workforce_mult$§! by §G+0.5%§!"
+ computation_core_stability_tt: "\n\n$EFFECTS_HEADER$ $NEW_LINE$- Every $pop_group_unit$ £job_roboticist£ $job_roboticist_plural$ and $job_identity_designer_plural_with_icon$ increases §Y$BONUS_WORKFORCE_FOR$ £job_bureaucrat£ $job_bureaucrat_plural$§! by §G+2.5%§!"
  computation_core_research_name: "Research Processes"
  computation_core_research: "$computation_core_research_name$"
  computation_core_research_desc: "Designate additional processing cycles to performance intensive research servers.$computation_core_research_tt$"
- computation_core_research_tt: "\n\n$EFFECTS_HEADER$ $NEW_LINE$- Every $pop_group_unit$ $pop_cat_civilian_plural$ increases §Y$BONUS_WORKFORCE_FOR$ Physicist§!, §YBiologist§!, and §YEngineer jobs§! by §G+0.5%§!"
+ computation_core_research_tt: "\n\n$EFFECTS_HEADER$ $NEW_LINE$- Every $pop_group_unit$ £job_roboticist£ $job_roboticist_plural$ and $job_identity_designer_plural_with_icon$ increases §Y$BONUS_WORKFORCE_FOR$ £job_physicist£ $job_physicist_plural$§!, §Y£job_biologist£ $job_biologist_plural$§!, and §Y£job_engineer£ $job_engineer_plural$§! by §G+2.5%§!"
 
 # Technologies
  tech_identity_copy: "Identity Copies"
@@ -324,7 +324,7 @@
  synth.400.name: "A Perfect Copy" # Stage 4 - Start event
  synth.400.desc: "When we digitized our minds and uploaded them into synthetic bodies, we lost the ability to biologically reproduce. We must now create individuals by making copies of existing minds.\n\nAs our $job_identity_designer_plural$ continue their investigations, we will no doubt improve the process. After all, even the perfect copy is simple replication. To create a new mind, a new identity... Now there is a challenge."
  synth.400.a: "Let anyone claim free identity copies."
- synth.400.pop.tt: "$unlock_edict_tt$ ['concept_edict_optimized_identity_creation']\n\nEach §Y$job_identity_designer$§! now provides empire-wide:$TABBED_NEW_LINE$£mod_planet_pop_assembly_mult£ $MOD_POP_ASSEMBLY_SPEED$: §G+1§!\n\n"
+ synth.400.pop.tt: "$unlock_edict_tt$ ['concept_edict_optimized_identity_creation']\n\nEach §Y$job_identity_designer$§! now provides empire-wide:$TABBED_NEW_LINE$£mod_planet_pop_assembly_mult£ $MOD_POP_ASSEMBLY_SPEED$: §G+1§!\n\n"
  synth.400.b: "Charge the user for each copy."
 
  synth.405.name: "Diversifying Identities"
@@ -353,7 +353,7 @@
 # Synth Democratic Physical
  auth_synth_democratic_physical: "Democratic Transference"
  auth_synth_democratic_physical_desc: "This form of government affords unprecedented freedom of movement from one synthesized body to another, and is ready to deal with the additional cost it accrues."
- auth_synth_democratic_physical_tt: "$auth_democratic_election_tt$\nJob Efficiency for Specialists: §G+1%§! per £district£ District\nDistrict Upkeep §R+1%§! per £district£ District"
+ auth_synth_democratic_physical_tt: "$auth_democratic_election_tt$\nJob Efficiency for Specialists: §G+1%§! per £district£ District\nDistrict Upkeep §R+1%§! per £district£ District"
  concept_auth_synth_democratic_physical: "$auth_synth_democratic_physical$"
  gov_synth_democracy_physical: "$auth_synth_democratic_physical$"
  gov_synth_democracy_physical_desc: "$auth_synth_democratic_physical_desc$"

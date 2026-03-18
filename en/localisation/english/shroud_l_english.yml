@@ -142,7 +142,7 @@
 
  auth_shroud_imperial_transcendent: "Transcendent Imperium"
  auth_shroud_imperial_transcendent_desc: "The ruler uplifts our presence into a higher dimension. The raw power of the Shroud pours from the will of the imperial line and into the wanting minds of the populace."
- auth_shroud_imperial_transcendent_tt: "$transcendent_trait_tt$\n$imperial_heir$ gains additional effects:$TABBED_NEW_LINE$$scientist_plural_with_icon$ - §YArchaeological§! and §YAstral Rift Skill§!: $@transcendent_imperial_heir_skill|0=+$$TABBED_NEW_LINE$$official_plural_with_icon$ - $i_stability$: $@transcendent_imperial_heir_stability|0=+$$TABBED_NEW_LINE$$commander_plural_with_icon$ - §Y$HITPOINTS$§! and §Y$MOD_SHIP_SPEED_MULT$§!: $@transcendent_imperial_heir_mult|0=+%$\nWhenever £leader£ §Y$imperial_ruler$§! or §YHeir§! levels up, gain $i_unity$\n$MOD_ENVOY_IMPROVE_RELATIONS_MULT$: §G+50%§!\n$MOD_ENVOY_HARM_RELATIONS_MULT$: §G+50%§!\n$MOD_ENVOY_ATTUNEMENT_MULT$: §G+50%§!\n$MOD_PLANET_CRIME_ADD$: §R+20§!"
+ auth_shroud_imperial_transcendent_tt: "$transcendent_trait_tt$\n$imperial_heir$ gains additional effects:$TABBED_NEW_LINE$$scientist_plural_with_icon$ - §YArchaeological§! and §YAstral Rift Skill§!: $@transcendent_imperial_heir_skill|0=+$$TABBED_NEW_LINE$$official_plural_with_icon$ - $i_stability$: $@transcendent_imperial_heir_stability|0=+$$TABBED_NEW_LINE$$commander_plural_with_icon$ - §Y$HITPOINTS$§! and §Y$MOD_SHIP_SPEED_MULT$§!: $@transcendent_imperial_heir_mult|0=+%$\nWhenever £leader£ §Y$imperial_ruler$§! or §YHeir§! levels up, gain $i_unity$\n$MOD_ENVOY_IMPROVE_RELATIONS_MULT$: §G+50%§!\n$MOD_ENVOY_HARM_RELATIONS_MULT$: §G+50%§!\n$MOD_ENVOY_ATTUNEMENT_MULT$: §G+50%§!\n$MOD_PLANET_CRIME_ADD$: §R+20§!"
  gov_shroud_transcendent_imperial: "$auth_shroud_imperial_transcendent$"
  gov_shroud_transcendent_imperial_desc: "$auth_shroud_imperial_transcendent_desc$"
 
@@ -203,7 +203,7 @@
 
  auth_shroud_corporate_corporeal: "Board of Psychics"
  auth_shroud_corporate_corporeal_desc: "It would be foolish to squander the mental advantages the Shroud provides. This corporation is known for establishing $building_psionic_offices$ in neighboring civilizations, furthering the profitability of foreign trade deals."
- auth_shroud_corporate_corporeal_tt: "$corporeal_trait_tt$\n$r_trade$ per $pop_group_unit$ $job_telepath_swap_plural_with_icon$: §G+$@corporate_government_telepaths_trade_value_mult|0%$§!\n$AVAILABLE_HOLDINGS$ ['building:building_psionic_offices']\n$mod_planet_branch_offices_influence_cost_mult$: §G-40%§!\n$mod_council_agenda_early_activation_cost_mult$: §G-25%§!\n$MOD_COUNCIL_AGENDA_COOLDOWN_MULT$: §G-25%§!\n$MOD_LEADER_SPECIES_EXP_GAIN$: §G+25%§!"
+ auth_shroud_corporate_corporeal_tt: "$corporeal_trait_tt$\n$r_trade$ per $pop_group_unit$ $job_telepath_swap_plural_with_icon$: §G+$@corporate_government_telepaths_trade_value_mult|0%$§!\n$MOD_PSIONIC_AURA_EFFECTIVENESS_MULT$ from ['building:building_psionic_offices']: §G+2%§!\n$mod_planet_branch_offices_influence_cost_mult$: §G-40%§!\n$mod_council_agenda_early_activation_cost_mult$: §G-25%§!\n$MOD_COUNCIL_AGENDA_COOLDOWN_MULT$: §G-25%§!\n$MOD_LEADER_SPECIES_EXP_GAIN$: §G+25%§!"
  gov_shroud_corporeal_corporate: "$auth_shroud_corporate_corporeal$"
  gov_shroud_corporeal_corporate_desc: "$auth_shroud_corporate_corporeal_desc$"
 
@@ -427,7 +427,7 @@
  tech_psionic_lightning_desc: "By establishing a temporary psionic connection between one ship and another, a direct charge of mental power can be discharged to devastating effect. Such raw energy is capable of confusing ship systems and influencing the minds of the crew within."
  tech_bio_psionic_lightning: "$tech_psionic_lightning$"
 
- ship_terrify_tt: "Chance to ['concept_terrify'] Military Ships for £time£ §Y5-10§! Days, based on Target Ship Size."
+ ship_terrify_tt: "Chance to ['concept_terrify'] Military Ships for £time£ §Y5-10§! Days, based on Target Ship Size."
  concept_terrify: "Terrify"
  concept_terrify_desc: "Terrified ships will stop attacking and flee their attacker."
 
@@ -546,7 +546,14 @@
 
  building_psionic_offices: "Psionic Offices"
  building_psionic_offices_desc: "The complexities of foreign minds can be navigated more effectively while in their physical presence, allowing the most lucrative of trade deals to be established for both sides."
- building_psionic_offices_tt: "\n$trade_value_from$ per $pop_group_unit$ $job_telepath_swap_plural_with_icon$: §G+2%§!\nEmits a §Y$PSIONIC_AURA$§! for the $TRIGGER_BRANCH_OFFICE_OWNER$ with $@psionic_offices_intensity|0+$ Monthly Intensity\n§RAny means of $PSIONIC_AURA$ emission from the colony's owner takes priority over this building.§!"
+ building_psionic_offices_tt: "\nSystem Effects:\n$t$- Emits a §Y$PSIONIC_AURA$§! for the $TRIGGER_BRANCH_OFFICE_OWNER$ with $@psionic_offices_intensity|0+$ Monthly Intensity\n$t$- §RAny means of $PSIONIC_AURA$ emission from the colony's owner takes priority over this building.§!"
+
+ job_shroud_trader: "Empathic Marketer"
+ job_shroud_trader_plural: "Empathic Marketers"
+ job_shroud_trader_plural_with_icon: "£job_telepath£ $job_shroud_trader_plural$"
+ job_shroud_trader_desc: "These experts attune to the emotional zeitgeist in the local markets, striking deals and hosting seminars on current trends in thought leadership."
+ mod_job_shroud_trader_add: "$job_shroud_trader$ Jobs"
+ mod_pop_shroud_trader_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ [shroud_trader.GetNamePlural]"
 
 #==========================
 # Buildings
@@ -711,21 +718,23 @@
 
  civic_entropy_drinkers: "Entropy Drinkers"
  civic_entropy_drinkers_desc: "$civic_ap_blockade_tt$\n\nThis society drains valuable metabolism from idle population via parasitic psychic connections. Once properly collected, these energies can be redistributed to the more important classes."
- civic_entropy_drinkers_effects: "Enables the following §H$EDICTS$§!:$TABBED_NEW_LINE$- ['edict:energy_drain',$edict_energy_drain$]$TABBED_NEW_LINE$- ['edict:sanguine_council',$edict_sanguine_council$]$TABBED_NEW_LINE$- ['edict:psychic_feast',$edict_psychic_feast$]\nCan construct: £building£['building:building_lifecrypt_1'].\nLeaders start with the ['concept_leader_trait_psionic'] trait."
+ civic_entropy_drinkers_effects: "- Enables the following §H$EDICTS$§!:$TABBED_NEW_LINE$- ['edict:energy_drain',$edict_energy_drain$]$TABBED_NEW_LINE$- ['edict:sanguine_council',$edict_sanguine_council$]$TABBED_NEW_LINE$- ['edict:psychic_feast',$edict_psychic_feast$]\n- Can construct: £building£['building:building_lifecrypt_1'].\n- Leaders start with the ['concept_leader_trait_psionic'] trait."
+ civic_entropy_drinkers_psionic_modifier: "- $energy_with_icon$ per $pop_group_unit$ £pop£ Psionic Pops: §G+0.5§!"
 
  civic_entropy_drinkers_machine: "Energy Extractors"
  civic_entropy_drinkers_machine_desc: "$civic_ap_blockade_tt$\n\nThe proper allocation of energy is essential to ensuring ultimate efficiency of the greater machine. All units are designed with this purpose in mind, allowing the periodic overclocking of critical nodes as necessary."
- civic_entropy_drinkers_machine_effects: "Enables the following §H$EDICTS$§!:$TABBED_NEW_LINE$- ['edict:energy_drain',$edict_energy_drain$]$TABBED_NEW_LINE$- ['edict:sanguine_council_machine',$edict_sanguine_council_machine$]$TABBED_NEW_LINE$- ['edict:psychic_feast',$edict_psychic_feast$]\nCan construct: £building£['building:building_lifecrypt_machine_1'].\nLeaders start with the ['concept_leader_trait_psionic'] trait."
- civic_entropy_drinkers_machine_modifier: "- $mod_country_base_energy_produces_mult$ £pop£ Pops : §G+0.1%§!"
+ civic_entropy_drinkers_machine_effects: "- Enables the following §H$EDICTS$§!:$TABBED_NEW_LINE$- ['edict:energy_drain',$edict_energy_drain$]$TABBED_NEW_LINE$- ['edict:sanguine_council_machine',$edict_sanguine_council_machine$]$TABBED_NEW_LINE$- ['edict:psychic_feast',$edict_psychic_feast$]\n- Can construct: £building£['building:building_lifecrypt_machine_1'].\n- Leaders start with the ['concept_leader_trait_psionic'] trait."
 
  civic_entropy_drinkers_hive_mind: "Parasitic Caste"
  civic_entropy_drinkers_hive_mind_desc: "$civic_ap_blockade_tt$\n\nThis collective repurposes valuable metabolism from lesser drones via parasitic psychic connections. Once properly collected, these energies can be redistributed to the more important castes."
- civic_entropy_drinkers_hive_mind_effects: "Enables the following §H$EDICTS$§!:$TABBED_NEW_LINE$- ['edict:energy_drain',$edict_energy_drain$]$TABBED_NEW_LINE$- ['edict:sanguine_council',$edict_sanguine_council$]$TABBED_NEW_LINE$- ['edict:psychic_feast',$edict_psychic_feast$]\nCan construct: £building£['building:building_lifecrypt_hive_mind_1'].\nLeaders start with the ['concept_leader_trait_psionic'] trait."
- civic_entropy_drinkers_hive_mind_modifier: "$civic_entropy_drinkers_machine_modifier$"
+ civic_entropy_drinkers_hive_mind_effects: "- Enables the following §H$EDICTS$§!:$TABBED_NEW_LINE$- ['edict:energy_drain',$edict_energy_drain$]$TABBED_NEW_LINE$- ['edict:sanguine_council',$edict_sanguine_council$]$TABBED_NEW_LINE$- ['edict:psychic_feast',$edict_psychic_feast$]\n- Can construct: £building£['building:building_lifecrypt_hive_mind_1'].\n- Leaders start with the ['concept_leader_trait_psionic'] trait."
 
  civic_entropy_drinkers_corporate: "Corporate Vampires"
  civic_entropy_drinkers_corporate_desc: "$civic_ap_blockade_tt$\n\nThis $gov_megacorporation$ drains valuable metabolism from idle population via parasitic psychic connections. Once properly collected, these energies can be redistributed to senior management."
- civic_entropy_drinkers_corporate_effects: "Enables the following §H$EDICTS$§!:$TABBED_NEW_LINE$- ['edict:energy_drain',$edict_energy_drain$]$TABBED_NEW_LINE$- ['edict:sanguine_council',$edict_sanguine_council$]$TABBED_NEW_LINE$- ['edict:psychic_feast',$edict_psychic_feast$]\nCan construct: £building£['building:building_lifecrypt_corporate_1'].\nLeaders start with the ['concept_leader_trait_psionic'] trait.\nThe £building£ §Y$building_executive_retreat$§! $megacorp_civic_branch_office_building_effect$"
+ civic_entropy_drinkers_corporate_effects: "- Enables the following §H$EDICTS$§!:$TABBED_NEW_LINE$- ['edict:energy_drain',$edict_energy_drain$]$TABBED_NEW_LINE$- ['edict:sanguine_council',$edict_sanguine_council$]$TABBED_NEW_LINE$- ['edict:psychic_feast',$edict_psychic_feast$]\n- Can construct: £building£['building:building_lifecrypt_corporate_1'].\n-Leaders start with the ['concept_leader_trait_psionic'] trait.\n- The £building£ §Y$building_executive_retreat$§! $megacorp_civic_branch_office_building_effect$"
+ has_not_begun_non_psionic_ascension: "Does NOT have a non-§YPsionic Ascension§! Path"
+ has_not_begun_non_psionic_ascension_success: "$TRIGGER_PASS$$has_not_begun_non_psionic_ascension$"
+ has_not_begun_non_psionic_ascension_fail: "$TRIGGER_FAIL$$has_not_begun_non_psionic_ascension$"
 
 # Superstitious Beliefs
  civic_tooltip_not_superstitious_beliefs: "Does NOT have a ['concept_superstitious_beliefs_civics'] Civic"
@@ -782,7 +791,7 @@
 
  civic_secret_societies_corporate: "Influential Cartel"
  civic_secret_societies_corporate_desc: "This $gov_megacorporation$'s most powerful offices conduct extraplanetary operations on a strictly need-to-know basis. If you need to ask, you don't need to know."
- civic_secret_societies_corporate_effects: "Clandestine ['concept_ss_factions'] will emerge after contacting other empires.\nStarts with the ability to conduct ['concept_proxy_wars'].\n$job_bureaucrat_plural_with_icon$ will produce $i_unity$ per active and successful §YProxy War§!.\nStarts in ['concept_first_contact'] with two neighboring empires.\n$INFILTRATION_LEVEL$ gained on empires after §Y$first_contact$§!: §G+$@secret_society_infiltration_gain|0$§!\nThe £building£ §Y$building_corporate_embassy$§! $megacorp_civic_branch_office_building_effect$"
+ civic_secret_societies_corporate_effects: "Clandestine ['concept_ss_factions'] will emerge after contacting other empires.\nStarts with the ability to conduct ['concept_proxy_wars'].\n$job_bureaucrat_plural_with_icon$ will produce $i_unity$ per active and successful §YProxy War§!.\nStarts in ['concept_first_contact'] with two neighboring empires.\n$INFILTRATION_LEVEL$ gained on empires after §Y$first_contact$§!: §G+$@secret_society_infiltration_gain|0$§!\nThe £building£ §Y$building_corporate_embassy$§! $megacorp_civic_branch_office_building_effect$"
 
  shroud.5012.title: "Secret Societies Emerge"
  shroud.5012.desc: "Our suspicions have been justified. The [first_neighbor.GetAdjective] and [second_neighbor.GetAdjective] civilizations have confirmed they have been contacted through unofficial channels before more formal communications began.\n\nThese §HFactions§! now emerge from our own shadows and acknowledge their existence. Known as §H$pft_the_curtain$§!, §H$pft_the_masquerade$§! and §H$pft_the_grand_dance$§!, these once-secret organizations are now openly requesting formal dialogue with us.\n\nWhat they want, and how they know what they know, may never truly be understood by us. It may be in our best interest to operate within their demands."
@@ -798,7 +807,7 @@
  civic_chosen: "Chosen"
  civic_chosen_desc: "$civic_ap_blockade_tt$\n\nInfluenced by the Shroud in their early history, this society is bound to a pact of patronage with a powerful entity."
  civic_chosen_effects: "- Starts the game in contact with a §IShroud Patron§!.\n- $ADDITIONAL_TECHNOLOGIES_STRING$ £society£ ['technology:tech_psionic_aura']"
- civic_chosen_effects_additional: "- Gain $i_unity$ scaling with ['concept_attunement'] to the Shroud."
+ civic_chosen_effects_additional: "- Gain $i_unity$ scaling with ['concept_attunement'] to the Shroud"
 
  civic_hive_chosen: "Chosen Many"
  civic_hive_chosen_desc: "$civic_ap_blockade_tt$\n\nInfluenced by the Shroud in its early history, this collective is bound to a pact of patronage with a powerful entity."
@@ -808,7 +817,7 @@
 
  civic_corporate_chosen: "Chosen Executives"
  civic_corporate_chosen_desc: "$civic_ap_blockade_tt$\n\nSince their founding, this corporation has owed its success to a mysterious Shroud entity, and has been operating under a pact of patronage ever since."
- civic_corporate_chosen_effects: "$civic_chosen_effects$\n- The £building£ §Y$building_psionic_offices$§! $megacorp_civic_branch_office_building_effect$"
+ civic_corporate_chosen_effects: "$civic_chosen_effects$\n- The £building£ §Y$building_psionic_offices$§! $megacorp_civic_branch_office_building_effect$"
 
  civic_tooltip_not_chosen: "Does NOT have a ['concept_chosen_civics'] Civic"
  concept_chosen_civics: "Chosen"
@@ -853,14 +862,13 @@
 # Tankbound
  civic_tankbound: "Tankbound"
  civic_tankbound_desc: "This society's members live out their existences suspended in vats of specialized bio-fluids. As such, they are heavily reliant on assistive equipment and incapable of engaging directly in physical work."
- civic_tankbound_effects_base: "Adds the ['trait:trait_tankbound'] trait.\nRural Districts have their Worker Jobs fully §YAutomated§!.\n['concept_colonist', $job_colonist$] Jobs are $SPECIALISTS$.\nStart with insight on ['technology:tech_assembly_pattern', £engineering£$tech_assembly_pattern$] Technology.\n£district£ §YUrban§! Districts have additional §Y$job_production_overseer_with_icon$§! jobs."
- civic_tankbound_effects: "$civic_tankbound_effects_base$$civic_tankbound_modifiers$"
- civic_tankbound_modifiers: "\n\n§EModifiers:§!$TABBED_NEW_LINE$- $mod_planet_jobs_upkeep_mult$: $@civic_tankbound_job_upkeep|0=-%$$TABBED_NEW_LINE$- $MOD_BONUS_AUTOMATED_WORKFORCE_MULT$: $@civic_tankbound_efficiency_mult|0=+%$$TABBED_NEW_LINE$- Rural Districts Energy Upkeep: $@civic_tankbound_district_upkeep|0=-%$"
+ civic_tankbound_effects_base: "Adds the ['trait:trait_tankbound'] trait.\nRural Districts have their Worker Jobs fully §YAutomated§!.\n['concept_colonist', $job_colonist$] Jobs are $SPECIALISTS$.\n£district£ §YUrban§! Districts have additional §Y$job_production_overseer_with_icon$§! jobs."
+ civic_tankbound_effects: "$civic_tankbound_effects_base$"
  civic_tankbound_negative_effects: "$t$- Start with 2K fewer £pop£ Pops than normal"
 
  civic_tankbound_corporate: "Corporate Thinktank"
  civic_tankbound_corporate_desc: "This society universally adopted an experimental product in the form of specialized habitation vats. As a result, they are heavily reliant on assistive equipment and incapable of engaging directly in physical work."
- civic_tankbound_corporate_effects: "$civic_tankbound_effects_base$\nThe £building£ §Y$building_virtual_entertainment_studios$§! $megacorp_civic_branch_office_building_effect$$civic_tankbound_modifiers$"
+ civic_tankbound_corporate_effects: "$civic_tankbound_effects_base$\nThe £building£ §Y$building_virtual_entertainment_studios$§! $megacorp_civic_branch_office_building_effect$"
 
  tankbound_efficiency_malus: "$civic_tankbound$"
  tankbound_corporate_efficiency_malus: "$civic_tankbound_corporate$"
@@ -868,6 +876,8 @@
  tech_assembly_pattern_tankbound_effect: "$MOD_BONUS_AUTOMATED_WORKFORCE_MULT$: $@civic_tankbound_efficiency_mult_halved|0=+%$"
  tech_construction_templates_tankbound: "$tech_construction_templates$"
  tech_construction_templates_tankbound_effect: "$tech_construction_templates_effect$\n$tech_assembly_pattern_tankbound_effect$"
+
+ tankbound_species_class_requirement: "Has a Species Class containing a ['trait:trait_tankbound'] portrait:\n$t$$BULLET_POINT$§Y$AQUATIC$§!\n$t$$BULLET_POINT$§Y$INF$§!\n$t$$BULLET_POINT$§Y$NECROID$§!\n$t$$BULLET_POINT$§Y$TOX$§!"
 
  automated_generator: "Automated Generators"
  automated_farming: "Automated Farms"
@@ -883,9 +893,40 @@
  mod_planet_districts_hab_mining_energy_upkeep_add: "$planet_districts_hab_mining$ Energy Upkeep"
  MOD_BONUS_AUTOMATED_WORKFORCE_MULT: "Automated Workforce Efficiency"
 
- mod_job_technician_automated_workforce_mult: "$job_technician_plural_with_icon$ $MOD_PLANET_DISTRICT_AUTOMATED_WORKFORCE$"
- mod_job_miner_automated_workforce_mult: "$job_miner_plural_with_icon$ $MOD_PLANET_DISTRICT_AUTOMATED_WORKFORCE$"
- mod_job_farmer_automated_workforce_mult: "$job_farmer_plural_with_icon$ $MOD_PLANET_DISTRICT_AUTOMATED_WORKFORCE$"
+ MOD_PLANET_AUTOMATED_WORKFORCE: "Automated Workforce"
+ mod_job_technician_automated_workforce_mult: "$job_technician_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_miner_automated_workforce_mult: "$job_miner_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_farmer_automated_workforce_mult: "$job_farmer_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_agri_drone_automated_workforce_mult: "$job_agri_drone_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_artisan_automated_workforce_mult: "$job_artisan_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_artisan_drone_automated_workforce_mult: "$job_artisan_drone_swap_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_biologist_automated_workforce_mult: "$job_biologist_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_bureaucrat_automated_workforce_mult: "$job_bureaucrat_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_calculator_biologist_automated_workforce_mult: "$job_calculator_biologist_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_calculator_engineer_automated_workforce_mult: "$job_calculator_engineer_plural_with_icon$  $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_calculator_physicist_automated_workforce_mult: "$job_calculator_physicist_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_coordinator_automated_workforce_mult: "$job_coordinator_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_engineer_automated_workforce_mult: "$job_engineer_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_entertainer_automated_workforce_mult: "$job_entertainer_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_fabricator_automated_workforce_mult: "$job_fabricator_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_fe_acolyte_farm_automated_workforce_mult: "$job_fe_acolyte_farm_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_fe_acolyte_generator_automated_workforce_mult: "$job_fe_acolyte_generator_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_fe_acolyte_mine_automated_workforce_mult: "$job_fe_acolyte_mine_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_fe_archivist_automated_workforce_mult: "$job_fe_archivist_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_fe_augur_automated_workforce_mult: "$job_fe_augur_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_fe_protector_automated_workforce_mult: "$job_fe_protector_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_foundry_automated_workforce_mult: "$job_foundry_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_healthcare_automated_workforce_mult: "$job_healthcare_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_logistics_drone_automated_workforce_mult: "$job_logistics_drone_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_mining_drone_automated_workforce_mult: "$job_mining_drone_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_physicist_automated_workforce_mult: "$job_physicist_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_replicator_automated_workforce_mult: "$job_replicator_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_roboticist_automated_workforce_mult: "$job_roboticist_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_soldier_automated_workforce_mult: "$job_soldier_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_spawning_drone_automated_workforce_mult: "$job_spawning_drone_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_technician_drone_automated_workforce_mult: "$job_technician_drone_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_trader_automated_workforce_mult: "$job_trader_plural_with_icon$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
+ mod_job_warrior_drone_automated_workforce_mult: "£job_warrior_drone£ $job_warrior_drone_plural$ $MOD_PLANET_AUTOMATED_WORKFORCE$"
 
  civic_tooltip_not_tankbound: "Does NOT have a ['concept_tankbound_civics'] Civic"
  concept_tankbound_civics: "$civic_tankbound$"
@@ -1225,13 +1266,11 @@
  councilor_energy_curator: "Energy Curator"
  councilor_energy_curator_female: "$councilor_energy_curator$"
  councilor_energy_curator_desc: "The $TITLE$ is responsible for the proper allocation of energy collected from the general population. Careful balance is required in order to prevent inefficiency at the lowest levels of society."
- councilor_energy_curator_effect_tooltip: "- $MOD_LEADER_SPECIES_EXP_GAIN$: §G+5%§!\n- $mod_country_base_energy_produces_mult$ per $pop_group_unit$ £pops£ Pops: §G+0.02%§!"
 
 # Executive Thrall Manager
  councilor_executive_thrall_manager: "Executive Thrall Manager"
  councilor_executive_thrall_manager_female: "$councilor_executive_thrall_manager$"
  councilor_executive_thrall_manager_desc: "The $TITLE$ is responsible for the proper allocation of metabolism collected from willing interns. These energies can be put to better use in the higher levels of business management."
- councilor_executive_thrall_effect_tooltip: "- $MOD_LEADER_SPECIES_EXP_GAIN$: §G+5%§!\n- $mod_planet_jobs_trade_produces_mult$ per $pop_group_unit$ £pops£ Pops: §G+0.02%§!"
 
 # Conspirator Liaison
  councilor_secret_societies: "Conspirator Liaison"
@@ -1268,29 +1307,29 @@
  # Thought Warden (Mindwarden)
  councilor_mindwarden: "Thought Warden"
  councilor_mindwarden_female: "$councilor_mindwarden$"
- councilor_mindwarden_desc: "The $councilor_mindwarden$ is the highest authority in staunching the blight of psionic hostility and criminal thoughts."
+ councilor_mindwarden_desc: "The $TITLE$ is the highest authority in staunching the blight of psionic hostility and criminal thoughts."
  councilor_mindwarden_unlock_title: "§HCouncil Position from the [mindwarden_enclave_country.GetName]§!"
  councilor_mindwarden_conditional_tooltip: "Leader is not Psionic"
 
 # Shroudspeaker
  councilor_chosen: "Shroudspeaker"
  councilor_chosen_female: "$councilor_chosen$"
- councilor_chosen_desc: "The $councilor_chosen$ guides the work of our Priests by attuning closely to the sensations from within the Shroud."
+ councilor_chosen_desc: "The $TITLE$ guides the work of our Priests by attuning closely to the sensations from within the Shroud."
 
 # Grand Preacher
  councilor_chosen_corporate: "Grand Preacher"
  councilor_chosen_corporate_female: "$councilor_chosen_corporate$"
- councilor_chosen_corporate_desc: "The $councilor_chosen_corporate$ ensures the evangelical work of our Priests serves the best interests of our economy."
+ councilor_chosen_corporate_desc: "The $TITLE$ ensures the evangelical work of our Priests serves the best interests of our economy."
 
 # Grand Vessel
  councilor_grand_vessel: "Grand Vessel"
  councilor_grand_vessel_female: "$councilor_grand_vessel$"
- councilor_grand_vessel_desc: "The $councilor_grand_vessel$ is responsible for maximizing the efficiency of our automated facilities, and is given the privilege of occupying one of the largest containment units in our society."
+ councilor_grand_vessel_desc: "The $TITLE$ is responsible for maximizing the efficiency of our automated facilities, and is given the privilege of occupying one of the largest containment units in our society."
 
 # Executive Vessel
  councilor_executive_vessel: "Executive Vessel"
  councilor_executive_vessel_female: "$councilor_executive_vessel$"
- councilor_executive_vessel_desc: "The $councilor_executive_vessel$ is responsible for maximizing the profits of our automated facilities, and is given the privilege of occupying one of the largest executive containment suites in our society."
+ councilor_executive_vessel_desc: "The $TITLE$ is responsible for maximizing the profits of our automated facilities, and is given the privilege of occupying one of the largest executive containment suites in our society."
 
 #==========================
 # Economic categories
@@ -1759,7 +1798,7 @@
  shroud.2510.extra_default: "mild, symptomless aneurysms"
  shroud.2510.extra_machine: "overtaxed circuitry"
  shroud.2510.a: "The strong shall survive."
- shroud.2510.a_tt: "Chance of each owned colony losing 100 £pops£ §YPops§!: §R33%§!"
+ shroud.2510.a_tt: "Chance of each owned colony losing 100 £pops£ §YPops§!: §R33%§!"
  shroud.2510.b: "Invest in an [Owner.GetImplantName]."
  shroud.2510.c: "Let meditation calm our minds."
  shroud.2510.c_corporate: "Schedule psionic synergy training."
@@ -2101,6 +2140,7 @@
  job_test_subject_desc: "Convicted of criminal activity, these individuals have been put to productive use as live test subjects in technological experiments."
  job_test_subject_effect_desc: "£job_test_subject£ $job_test_subject_plural$ are used to produce $r_research$ and $i_amenities$"
  mod_job_test_subject_add: "$job_test_subject$ Jobs"
+ mod_pop_test_subject_bonus_workforce_mult: "$BONUS_WORKFORCE_FOR$ $job_test_subject_plural$"
 
  # Test Subjects (Gestalt)
  job_test_subject_drone: "Test Subject Drone"
@@ -2167,11 +2207,11 @@
  covenant_cradle_telepath_tt: "[GetCradleCovenantTelepathEffect]"
  covenant_cradle_telepath_default_tt: "$mod_pop_factions_produces_mult$ per $pop_group_unit$ $job_telepath_swap_plural_with_icon$: $@telepath_cradle_faction|0=+%$"
  covenant_cradle_telepath_gestalt_tt: "£unity£ $mod_planet_telepaths_unity_produces_mult$: $@telepath_cradle_unity|0=+%$"
- covenant_instrument_telepath_tt: "£mod_planet_amenities_add£ $MOD_PLANET_AMENITIES_ADD$ per $pop_group_unit$ $job_telepath_swap_plural_with_icon$: $@telepath_instrument_amenities|0=+$"
+ covenant_instrument_telepath_tt: "£mod_planet_amenities_add£ $MOD_PLANET_AMENITIES_ADD$ per $pop_group_unit$ $job_telepath_swap_plural_with_icon$: $@telepath_instrument_amenities|0=+$"
  covenant_composer_telepath_tt: "[GetComposerCovenantTelepathEffect]"
  covenant_composer_telepath_default_tt: "$MOD_LOGISTIC_GROWTH_MULT$ per $pop_group_unit$ $job_telepath_swap_plural_with_icon$: $@telepath_composer_growth|0=+%$"
  covenant_composer_telepath_gestalt_tt: "$MOD_POP_ASSEMBLY_SPEED$ per $pop_group_unit$ $job_telepath_swap_plural_with_icon$: $@telepath_composer_growth|0=+%$"
- covenant_whisperers_telepath_tt: "£research£ Research per $pop_group_unit$ $job_telepath_swap_plural_with_icon$: $@telepath_whisperers_research|0=+$"
+ covenant_whisperers_telepath_tt: "£research£ Research per $pop_group_unit$ $job_telepath_swap_plural_with_icon$: $@telepath_whisperers_research|0=+$"
 
 # Purge Sacrifice jobs
  job_purge_sacrifice: "$purge_sacrifice$"
@@ -2221,9 +2261,9 @@
  MESSAGE_AURA_MAX_INTENSITY_SETTING_the_instrument_of_desire: "$MESSAGE_PSIONIC_AURA_MAX_INTENSITY_TITLE$ ($the_instrument_of_desire$)"
  MESSAGE_AURA_MAX_INTENSITY_SETTING_whisperers_in_the_void: "$MESSAGE_PSIONIC_AURA_MAX_INTENSITY_TITLE$ ($whisperers_in_the_void$)"
  MESSAGE_PSIONIC_AURA_MAX_INTENSITY_DESC: "Our §Y$PSIONIC_AURA$§! in §H$SYSTEM$§! has reached maximum intensity and manifested a blessing from our Patron."
- aura_intensity_lost_level_tt: "$PSIONIC_AURA$ Intensity level: §R-1§!"
+ aura_intensity_lost_level_tt: "$PSIONIC_AURA$ Intensity level: §R-1§!\n$h_line$"
  MESSAGE_PSIONIC_AURA_MAX_INTENSITY_whisperers_in_the_void_DESC: "$MESSAGE_PSIONIC_AURA_MAX_INTENSITY_DESC$\n- Gain $VALUE$ Research\n- $aura_intensity_lost_level_tt$"
- MESSAGE_PSIONIC_AURA_MAX_INTENSITY_the_eater_of_worlds_DESC: "$MESSAGE_PSIONIC_AURA_MAX_INTENSITY_DESC$\n- Corvettes manifested in $SYSTEM$: §Y[GetEaterOfWorldsSpawnedCorvettesScaled]§!\n- $aura_intensity_lost_level_tt$"
+ MESSAGE_PSIONIC_AURA_MAX_INTENSITY_the_eater_of_worlds_DESC: "$MESSAGE_PSIONIC_AURA_MAX_INTENSITY_DESC$\n- Doom Intensity: §G+1§!\n- Current Doom Intensity: §Y[GetEaterOfWorldsDoomIntensity]/50§!\n- $aura_intensity_lost_level_tt$"
  MESSAGE_PSIONIC_AURA_MAX_INTENSITY_the_cradle_of_souls_DESC: "$MESSAGE_PSIONIC_AURA_MAX_INTENSITY_DESC$\n- Defense Platforms in $STARBASE$: §G+5§!\n- $aura_intensity_lost_level_tt$"
  MESSAGE_PSIONIC_AURA_MAX_INTENSITY_the_instrument_of_desire_DESC: "$MESSAGE_PSIONIC_AURA_MAX_INTENSITY_DESC$\n- Planetary Ascensions available in $SYSTEM$: §G$VALUE$§!\n- $aura_intensity_lost_level_tt$"
  MESSAGE_PSIONIC_AURA_MAX_INTENSITY_the_composer_of_strands_DESC: "$MESSAGE_PSIONIC_AURA_MAX_INTENSITY_DESC$\n- $d_shroudstone$ blockers added to $SYSTEM$: §Y$VALUE$§!\n- $aura_intensity_lost_level_tt$"
@@ -2623,17 +2663,25 @@
  tooth_eater_cap: "$tooth_eater$"
  tooth_eater_plural: "Teeth of the Eater"
  NAME_Tooth_Eater: "$tooth_eater$"
+ NAME_Fang_Eater: "Fang of the Eater"
+ NAME_Fang_Eater_Plural: "Fangs of the Eater"
+ NAME_Tusk_Eater: "Tusk of the Eater"
+ NAME_Tusk_Eater_Plural: "Tusks of the Eater"
+ Name_Doom_Eater_Fleet: "Doom of the Eater"
+ EaterOfWorldsShipClasses_Battleships: "\n$t$- $NAME_Tusk_Eater_Plural$ (Battleship) $EaterOfWorldsShipClasses_Cruisers$"
+ EaterOfWorldsShipClasses_Cruisers: "\n$t$- $NAME_Fang_Eater_Plural$ (Cruiser) $EaterOfWorldsShipClasses_Escorts$"
+ EaterOfWorldsShipClasses_Escorts: "\n$t$- $tooth_eater_plural$ (Escort)"
  NAME_Cradle_Station: "Hand of the Cradle"
 
  try_spread_aura_tt: "This §H$PSIONIC_AURA$§! will attempt to spread to nearby systems."
  AURA_MAX_INTENSITY_HEADER: "§EMax Intensity Effects:§!"
- eater_aura_effect_tt: "$try_spread_aura_tt$\nCreate a fleet of §Y10§! §H$NAME_Tooth_Eater$§! Corvettes."
+ eater_aura_effect_tt: "$try_spread_aura_tt$\nOur Doom Intensity will be increased by §G+1§!."
  souls_aura_effect_tt: "$try_spread_aura_tt$\nInstantly build §Y5§! §HDefense Platforms§! without upkeep in the Starbase of the system."
  composer_aura_effect_tt: "$try_spread_aura_tt$\nAdd 2 §Y$d_shroudstone$ Natural Blockers§! to all Colonies in the system."
  desire_aura_effect_tt: "$try_spread_aura_tt$\nEach Colony in the system gets §G+1§! §YAscension Tier§! regardless of existing cap."
  whisperers_aura_effect_tt: "$try_spread_aura_tt$\nGain £physics_research£ £society_research£ £engineering_research£ random research."
  end_aura_effect_tt: "$try_spread_aura_tt$\nThere is no limit to how far the §R$end_aura$§! can spread."
- END_AURA_CONSUME_TIME_LEFT_TT: "§RWill consume this system in§!: £time£ $MONTHS|0Y$ Months"
+ END_AURA_CONSUME_TIME_LEFT_TT: "§RWill consume this system in§!: £time£ $MONTHS|0Y$ Months"
 
  SYSTEM_AFFECTED_BY_PSIONIC_AURA_TT: "Emitted by §Y$COUNTRY$§!"
  SYSTEM_AFFECTED_BY_OUR_PSIONIC_AURA_TT: "Emitted by our Empire"
@@ -3090,12 +3138,13 @@
 
  tr_psionics_shroud_psi_corps: "$tr_psionics_psi_corps$"
  tr_psionics_shroud_psi_corps_delayed: "$tr_psionics_psi_corps_delayed$"
- tr_psionics_shroud_psi_corps_situation_effects: "$tr_psionics_shroud_situation_during$Unlocks Situation's Stage II\n\n$tr_psionics_psi_corps_desc$"
+ tr_psionics_shroud_psi_corps_situation_effects: "$tr_psionics_shroud_situation_during$Unlocks Situation's Stage II\n$ALLOW_PSI_CORPS$\n\n$tr_psionics_shroud_situation_after$$tr_psionics_psi_corps_desc$"
+ ALLOW_PSI_CORPS_AND_PSI_OFFICES: "$ALLOW_PSI_CORPS$\n$AVAILABLE_HOLDINGS$ ['building:building_psionic_offices']"
 
  tr_psionics_shroud_great_awakening: "$tr_psionics_psionic_assimilation$"
  tr_psionics_shroud_great_awakening_delayed: "$tr_psionics_psionic_assimilation_delayed$"
  tr_psionics_shroud_great_awakening_situation_effects: "$tr_psionics_shroud_situation_during$Unlocks Situation's Stage III\n\n§HAt Stage III of $situation_breach_shroud$\n§!All §Y$trait_latent_psionic$§! species will unlock their full psionic potential.\n\n$tr_psionics_shroud_situation_after$Allows §YPsionic Assimilation§! of other species, unlocking their latent abilities."
- require_breach_shroud_stage_2: "£trigger_no£ §Y$situation_breach_shroud$§! Situation must reach Stage II"
+ require_breach_shroud_stage_2: "£trigger_no£ §Y$situation_breach_shroud$§! Situation must reach Stage II"
 
  tr_psionics_shroud_telekinesis: "Telekinesis"
  tr_psionics_shroud_telekinesis_delayed: "The ability to move matter with sheer force of will transforms the very nature of our existence."
@@ -3121,7 +3170,7 @@
 #==========================
 # Rules
 #==========================
- contacting_great_patron: "£trigger_no£ Our ability to reach into the §HShroud§! is disrupted as we contact a §HGreater Patron§!."
+ contacting_great_patron: "£trigger_no£ Our ability to reach into the §HShroud§! is disrupted as we contact a §HGreater Patron§!."
 
 #==========================
 # Ships
@@ -3147,8 +3196,8 @@
  situation_breach_shroud_type: "§Y$situation_breach_shroud$§! Approach"
  situation_breach_shroud_monthly_change_tooltip: "$situation_monthly_change_tooltip_approaches_dependent$"
  situation_breach_shroud_progress_speed_desc: "£mod_breach_the_shroud_situation_progress_speed_mult£ $mod_breach_the_shroud_situation_progress_speed_mult$"
- situation_breach_shroud_psi_corps_needed_desc: "£trigger_no£ No $building_psi_corps$ established"
- situation_breach_shroud_great_awakening_needed_desc: "£trigger_no£ No $tr_psionics_shroud_great_awakening$ tradition"
+ situation_breach_shroud_psi_corps_needed_desc: "£trigger_no£ No $building_psi_corps$ established"
+ situation_breach_shroud_great_awakening_needed_desc: "£trigger_no£ No $tr_psionics_shroud_great_awakening$ tradition"
  situation_breach_shroud_shroud.2520.slowness: "Slowdown to limit $shroud.2520.name$"
  situation_breach_shroud_finish_effects: "We will fully realize our psionic potential, mastering dimensions beyond ordinary comprehension."
  situation_breach_shroud_finish_animator_contact: "$shroud_forged.310.b.tt$"
@@ -3173,7 +3222,7 @@
  approach_situation_beneficial_tooltip: "Higher chance of beneficial events."
  approach_situation_chaotic_tooltip: "Higher chance of chaotic events."
 
- d_shroudstone: "£blocker£ Shroudstone"
+ d_shroudstone: "£blocker£ Shroudstone"
  d_shroudstone_desc: "A remarkable mineral formation forged not by geologic processes, but by the action of $PSIONIC_AURA_PLURAL$."
 
 # Experimental Testing
@@ -3181,8 +3230,8 @@
  situation_experimental_testing_type: "Experimental Testing"
  situation_experimental_testing_desc_lore: "By gathering imprisoned [Owner.GetIndividualNamePlural] and subjecting them to scientific experiments, we can significantly increase the pace of our technological advancement."
  situation_experimental_testing_desc: "$situation_experimental_testing_desc_lore$\n\n§YTotal number of [Owner.GetTestSubjectPlural]§!: §G[Owner.GetNbTestSubjects]§!\nBuild §H$building_experimentation_chambers_1$§! to gain §H$job_test_subject_plural$§!."
- situation_experimental_testing_no_test_subject_desc: "£trigger_no£ No $job_test_subject$ available."
- situation_experimental_testing_testing_lockdown_desc: "£trigger_no£ $testing_lockdown$"
+ situation_experimental_testing_no_test_subject_desc: "£trigger_no£ No $job_test_subject$ available."
+ situation_experimental_testing_testing_lockdown_desc: "£trigger_no£ $testing_lockdown$"
 
  situation_experimental_testing_monthly_change_tooltip: "[GetTestSubjectPlural] are required to progress this research program. The sacrifice of these [Owner.GetIndividualNamePlural] will fuel our necessary technological advancement."
  situation_experimental_testing_monthly_change_mult_tooltip: "Situation Progress from Test Subjects"
@@ -3448,7 +3497,7 @@
  FORGE_OWN_PATH_ACTIVE_ACCORD: "Power"
  UNLOCKED_PASSIVE_ACCORDS: "§E$PASSIVE_ACCORDS$ Granted§!"
  UNLOCKED_ACTIVE_ACCORDS: "§E$ACTIVE_ACCORDS$ Granted§!"
- ACTIVE_ACCORD_COOLDOWN: "£time£ $COOLDOWN|0H$"
+ ACTIVE_ACCORD_COOLDOWN: "£time£ $COOLDOWN|0H$"
 
 # Envoys
  PATRON_ENVOYS: "Attune:"
@@ -3465,8 +3514,8 @@
  PATRON_ENVOYS_COUNT: "Envoys: $VALUES$"
 
 # Delve
- CANNOT_DELVE_COOLDOWN: "£trigger_no£ Time left until next available §HDelve§!: £time£$DAYS|Y$ day"
- CANNOT_DELVE_COOLDOWN_PLURAL: "£trigger_no£ Time left until next available §HDelve§!: £time£$DAYS|Y$ days"
+ CANNOT_DELVE_COOLDOWN: "£trigger_no£ Time left until next available §HDelve§!: £time£$DAYS|Y$ day"
+ CANNOT_DELVE_COOLDOWN_PLURAL: "£trigger_no£ Time left until next available §HDelve§!: £time£$DAYS|Y$ days"
  DELVING: "§HDelving§!"
  DELVING_TT: "Reach into the §HShroud§! to explore the psionic realm and commune with its entities."
  DELVING_COOLDOWN: "§EDelve Cooldown:§! £time£$DAYS|Y$ days"
@@ -4416,7 +4465,7 @@
  shroud.4700.desc: "$utopia.3304.desc.shroud$"
  shroud.4700.a: "Form a Covenant with $whisperers_in_the_void_color_article$."
  shroud.4700.b: "$shroud.reject_covenant$"
- shroud_whisperers_in_the_void_covenant_formed_effect: "$t$£unity£ $mod_country_base_unity_produces_add$: §R-15%§!"
+ shroud_whisperers_in_the_void_covenant_formed_effect: "$t$£unity£ $mod_country_base_unity_produces_add$: §R-15%§!"
 
  shroud.4705.desc.intro: "It is done. We have formed a Covenant with $whisperers_in_the_void_color_article$. Their will courses through the §H[root.GetName]§!.\n\nThe influence of our new patron has taken hold swiftly."
  shroud.4705.desc.outro: "Such is the price of this powerful bond. According to our [GetTelepathPlural], the Whisperers' greatest blessings are yet to come. Our direct communion with such a magnificent psionic entity will surely have been worth it."
@@ -4433,7 +4482,7 @@
  shroud.4710.desc: "$shroud.4510.desc.intro$$whisperers_in_the_void_color_article$$shroud.4510.desc.outro$"
  shroud.4710.a: "$utopia.2658.a$"
  shroud.4710.b: "Renounce $whisperers_in_the_void_color_article$."
- shroud_whisperers_in_the_void_covenant_accepted_effect: "$t$Monthly £research£ Research per $pop_group_unit$ $telepath_type_plural_with_icon$: $@telepath_whisperers_research|0=+$"
+ shroud_whisperers_in_the_void_covenant_accepted_effect: "$t$Monthly £research£ Research per $pop_group_unit$ $telepath_type_plural_with_icon$: $@telepath_whisperers_research|0=+$"
 
  # End of the Cycle
  shroud.4715.desc.intro: "It is done. We have formed a Covenant with $end_of_the_cycle_color_article$. As we took its bargain, our [GetTelepathPlural] spoke again: §R\"THE END BEGINS.\"§!"
@@ -4530,8 +4579,8 @@
  ACCORD_HUNGER: "Hunger"
  ACCORD_HUNGER_desc: "$the_eater_of_worlds_article_cap$ is ravenous for conflict."
  ACCORD_DOOM: "Doom"
- ACCORD_DOOM_desc: "We will unleash the destructive will of $the_eater_of_worlds_article$ upon our most hated enemy."
- ACCORD_DOOM_TT: "Automatically enter ['concept_total_war'] with the neighboring empire we have the worst relations with.\nSets all pops from that empire to be Purged by §H$purge_sacrifice$§! with the following effects: §R-1000%§! £happiness£ §Y$HAPPINESS$§!, §G+5§! $i_unity$, §G+2§! $i_zro$."
+ ACCORD_DOOM_desc: "We will unleash the destructive will of $the_eater_of_worlds_article$ upon our enemies."
+ ACCORD_DOOM_TT: "Manifests the §Y$Name_Doom_Eater_Fleet$§! fleet.\n\nThe strength of this fleet scales with §YDoom Intensity§!.\nCurrent Doom Intensity: §Y[GetEaterOfWorldsDoomIntensity]/50§!\n\nAvaliable Ship Classes: [GetEaterOfWorldsShipClasses]\n\n§RAny existing §Y$Name_Doom_Eater_Fleet$§! fleet will be dismissed.§!"
  ACCORD_DIGEST: "Digest"
  ACCORD_DIGEST_desc: "The limitless appetite of $the_eater_of_worlds_article$ must be sated."
  ACCORD_DIGEST_TT: "§Y$DEVASTATION$§! on war opponents' planets within our §H$PSIONIC_AURA$§!: §G+$@accord_digest_devastation|0$§!\n§Y$HULL$§! and §Y$ARMOR$§! of war opponents' ships within our §H$PSIONIC_AURA$§!: §G$@accord_digest_ship_malus|0%$§!\n$ACCORD_LOOSE_INTENSITY$"
@@ -4604,24 +4653,24 @@
  ACCORD_FRACTALIZATION_desc: "The $end_aura$ twists portions of our physical reality into the Shroud, granting unexplored volumes with which to spiral outward. Once these threads are established, they remain in place until the End arrives."
  ACCORD_FRACTALIZATION_TT: "§Y$mod_station_researchers_produces_mult$§! and §Y$mod_station_gatherers_produces_mult$§! within our §H$PSIONIC_AURA$§!: §G+100%§!"
  fractalization_effect_tt: "From §Y$ACCORD_FRACTALIZATION$§!:$TABBED_NEW_LINE$$mod_station_researchers_produces_mult$: §G+[GetFractalizationValue]%§!$TABBED_NEW_LINE$$mod_station_gatherers_produces_mult$: §G+[GetFractalizationValue]%§!"
- ACCORD_FRACTALIZATION_TRIGGER: "£trigger_no£ §R§Y$situation_end_of_the_cycle$§! §HSituation§! $stage_2$ has been reached§!"
+ ACCORD_FRACTALIZATION_TRIGGER: "£trigger_no£ §R§Y$situation_end_of_the_cycle$§! §HSituation§! $stage_2$ has been reached§!"
  ACCORD_CREATION: "Creation"
  ACCORD_CREATION_desc: "In these waning years, $end_of_the_cycle_article$'s grip on this reality strengthens. Whole worlds from other dimensions can be brought into this one, feeding even more into inevitable nothingness."
  ACCORD_CREATION_TT: "Create a §H$pc_gaia$§! with §H1000§! £pop£ §Y$POPS$§! in our £system£ §YCapital System§!."
- ACCORD_CREATION_TRIGGER: "£trigger_no£ §R§Y$situation_end_of_the_cycle$§! §HSituation§! has begun§!"
+ ACCORD_CREATION_TRIGGER: "£trigger_no£ §R§Y$situation_end_of_the_cycle$§! §HSituation§! has begun§!"
  ACCORD_DISTORTION: "Distortion"
  ACCORD_DISTORTION_desc: "$end_of_the_cycle_article_cap$'s influence warps the very fabric of space and time, opening new pathways with which to spread its will."
  ACCORD_DISTORTION_TT: "Our fleets can Hyper Jump at twice the range without suffering negative effects for the next §H$@distortion_accord_duration|0$§! years."
- ACCORD_DISTORTION_TRIGGER: "£trigger_no£ §R§Y$situation_end_of_the_cycle$§! §HSituation§! $stage_3$ has been reached§!"
+ ACCORD_DISTORTION_TRIGGER: "£trigger_no£ §R§Y$situation_end_of_the_cycle$§! §HSituation§! $stage_3$ has been reached§!"
  ACCORD_INTENSIFICATION: "Intensification"
  ACCORD_INTENSIFICATION_desc: "Nothing can stifle the inevitability of the $end_aura$. With great surge of will, the path to oblivion is laid open for all!"
  ACCORD_INTENSIFICATION_TT: "Increase §H$PSIONIC_AURA$§! Intensity gains by §G+50§! and disable all §H$SHROUD_SEAL_PLURAL$§! in the galaxy for 3 years."
- ACCORD_INTENSIFICATION_TRIGGER: "£trigger_no£ §R§Y$situation_end_of_the_cycle$§! §HSituation§! $stage_4$ has been reached§!"
+ ACCORD_INTENSIFICATION_TRIGGER: "£trigger_no£ §R§Y$situation_end_of_the_cycle$§! §HSituation§! $stage_4$ has been reached§!"
  ACCORD_INTENSIFICATION_TRIGGER_COOLDOWN: "§RThis $ACTIVE_ACCORD$ can't be reactivated until §Y[this.intensification_cooldown_timer]§!§!.\n\n"
  ACCORD_ANNIHILATION: "Annihilation"
  ACCORD_ANNIHILATION_desc: "Oblivion can never be sated, but its maw lies ever open."
  ACCORD_ANNIHILATION_TT: "§Y$situation_end_of_the_cycle$§! §HSituation§! Progress: §G-60§!"
- ACCORD_ANNIHILATION_TRIGGER: "£trigger_no£ §RMidpoint of the §Y$situation_end_of_the_cycle$§! §HSituation§! $stage_1$ has been reached§!"
+ ACCORD_ANNIHILATION_TRIGGER: "£trigger_no£ §RMidpoint of the §Y$situation_end_of_the_cycle$§! §HSituation§! $stage_1$ has been reached§!"
  ACCORD_ANNIHILATION_TRIGGER_ONCE: "$ACCORD_INTENSIFICATION_TRIGGER_ONCE$"
  ACCORD_ANNIHILATION_COST: " £basic_resources_alloys£ §Y9K§!"
  ACCORD_ANNIHILATION_COST_DISABLED: " £basic_resources_alloys£ §R9K§!"
@@ -4630,23 +4679,23 @@
  ACCORD_EXTERMINATION_TT: "£pop£ Pops killed throughout owned colonies: §R$@extermination_pop_loss|0$§!\n§Y$situation_end_of_the_cycle$§! §HSituation§! Progress: §G-120§!"
  ACCORD_EXTERMINATION_COST: "£pop£ §Y3K§!"
  ACCORD_EXTERMINATION_COST_DISABLED: "£pop£ §R3K§!"
- ACCORD_EXTERMINATION_TRIGGER: "£trigger_no£ §RMidpoint of the §Y$situation_end_of_the_cycle$§! §HSituation§! $stage_2$ has been reached§!"
- ACCORD_EXTERMINATION_TRIGGER_POP: "£trigger_no£ §RHave at least §Y$@extermination_pop_loss|0$§! £pop£ §HPops§!§!"
+ ACCORD_EXTERMINATION_TRIGGER: "£trigger_no£ §RMidpoint of the §Y$situation_end_of_the_cycle$§! §HSituation§! $stage_2$ has been reached§!"
+ ACCORD_EXTERMINATION_TRIGGER_POP: "£trigger_no£ §RHave at least §Y$@extermination_pop_loss|0$§! £pop£ §HPops§!§!"
  ACCORD_EXTERMINATION_TRIGGER_ONCE: "$ACCORD_INTENSIFICATION_TRIGGER_ONCE$"
  ACCORD_DESTRUCTION: "Destruction"
  ACCORD_DESTRUCTION_desc: "Homes are temporary; the favor of $end_of_the_cycle_article$ is eternal. The inevitability of nothingness exposes the redundancy of life."
  ACCORD_DESTRUCTION_TT: "An owned £colony£ colony with at least §Y$@destruction_planet_pop_min|0$§! £pop£ §HPops§! becomes a §H$pc_shrouded$§!.\n§Y$situation_end_of_the_cycle$§! §HSituation§! Progress: §G-180§!"
  ACCORD_DESTRUCTION_COST: "£colony£ §Y1§!"
  ACCORD_DESTRUCTION_COST_DISABLED: "£colony£ §R1§!"
- ACCORD_DESTRUCTION_TRIGGER: "£trigger_no£ §RMidpoint of the §Y$situation_end_of_the_cycle$§! §HSituation§! $stage_3$ has been reached§!"
- ACCORD_DESTRUCTION_TRIGGER_PLANET: "£trigger_no£ §ROwn a colony with at least §Y$@destruction_planet_pop_min|0$§! £pop£ §HPops§!§!"
+ ACCORD_DESTRUCTION_TRIGGER: "£trigger_no£ §RMidpoint of the §Y$situation_end_of_the_cycle$§! §HSituation§! $stage_3$ has been reached§!"
+ ACCORD_DESTRUCTION_TRIGGER_PLANET: "£trigger_no£ §ROwn a colony with at least §Y$@destruction_planet_pop_min|0$§! £pop£ §HPops§!§!"
  ACCORD_DESTRUCTION_TRIGGER_ONCE: "$ACCORD_INTENSIFICATION_TRIGGER_ONCE$"
  ACCORD_ERADICATION: "Eradication"
  ACCORD_ERADICATION_desc: "Those unable to see the necessity of oblivion shall be enlightened with uncompromising force."
  ACCORD_ERADICATION_TT: "Declares war with a ['concept_total_war'] §HCasus Belli§! against all non-Fallen Empires.\n§Y$situation_end_of_the_cycle$§! §HSituation§! Progress: §G-240§!"
  ACCORD_ERADICATION_COST: " £focus_conquest_yellow£"
  ACCORD_ERADICATION_COST_DISABLED: " £focus_conquest£"
- ACCORD_ERADICATION_TRIGGER: "£trigger_no£ §RMidpoint of the §Y$situation_end_of_the_cycle$§! §HSituation§! $stage_4$ has been reached§!"
+ ACCORD_ERADICATION_TRIGGER: "£trigger_no£ §RMidpoint of the §Y$situation_end_of_the_cycle$§! §HSituation§! $stage_4$ has been reached§!"
  ACCORD_ERADICATION_TRIGGER_ONCE: "$ACCORD_INTENSIFICATION_TRIGGER_ONCE$"
 
  animator_of_clay_modifier_tt: "$foundry_type_plural_with_icon$ Efficiency per $pop_group_unit$ $job_telepath_swap_plural_with_icon$: §G+$@animator_of_clay_metallurgist_mult|0%$§!"
@@ -4767,9 +4816,6 @@
 #==========================
 # Mindwardens
 #==========================
- MINDWARDEN: "Mindwarden"
- MINDWARDEN_plural: "Mindwardens"
- MINDWARDEN_hand_plural: "$HUM_hand_plural$"
  MINDWARDEN_ENCLAVE: "$MINDWARDEN$"
  MINDWARDEN_ENCLAVE_plural: "$MINDWARDEN_plural$"
 
@@ -4884,7 +4930,7 @@
  shroud.4260.a: "$shroud.mindwarden.back$"
  shroud.4260.b: "Recruit the §I$decision_thought_police$§!."
  mindwarden_decision_cooldown_tt: "§RWe will not be able to request this until §Y[root.mindwarden_decision_timer]§!.§!"
- mindwarden_decision_explanation: "Unlocks one £decision£ §YPlanetary Decision§!: §Y$decision_thought_police$§!"
+ mindwarden_decision_explanation: "Unlocks one £decision£ §YPlanetary Decision§!: §Y$decision_thought_police$§!"
  shroud.4262.desc: "Excellent. I think you will find their methods quite efficacious."
 
  shroud.4265.desc: "Indeed. Our collaborations have already revealed to us some areas of improvement that could be made to your military deployment strategies.\n\nWe mean no insult by this, of course; we simply specialize in these fields. We would be honored to assist such a valued partner in this matter, should you provide us adequate compensation."
@@ -5333,7 +5379,13 @@
  shroud.6770.a: "Destroy this abomination."
  shroud.6770.b: "Find a way to make use of this... thing."
  destroyers_of_the_lost_modifier: "Destroyers of the Lost"
- destroyers_of_the_lost_modifier_tt: "Defeating a psionic enemy, and destroying the apparent source of their $PSIONIC_AURA$, boosted morale in our empire after enduring years of torment."
+ destroyers_of_the_lost_modifier_tt: "Grants access to the §Y$living_standard_shroud_inoculation$§! Living Standard, under which §YPsionic§! abilities are removed."
+ destroyers_of_the_lost_modifier_desc: "Defeating a psionic enemy, and destroying the apparent source of their $PSIONIC_AURA$, boosted morale in our empire after enduring years of torment."
+
+ living_standard_shroud_inoculation: "Shroud Inoculation"
+ living_standard_shroud_inoculation_tooltip: "This species is being inoculated against the harmful effects of psi-radiation.\n\n§RTo prevent further harm, any Psionic traits will be removed.§!"
+ living_standard_shroud_inoculation_tooltip_delayed: "§LWe shall ensure the psionic safety of this species.§!"
+
  psionic_heresy: "Psionic Heresy"
 
  shroud.6780.name: "$r_the_lost_patron$"
@@ -5454,8 +5506,8 @@
  situation_breach_shroud_endbringers: "$situation_breach_shroud$"
  situation_breach_shroud_endbringers_type: "$situation_breach_shroud_type$"
  situation_breach_shroud_endbringers_monthly_change_tooltip: "$situation_breach_shroud_monthly_change_tooltip$"
- situation_breach_shroud_endbringers_cult_of_the_voice_needed_desc: "£trigger_no£ No $tr_psionics_endbringers_cult$ tradition\n£trigger_no£ No $building_chamber_of_silence$ building"
- situation_breach_shroud_endbringers_chamber_of_silence_needed_desc: "£trigger_yes£ Has $tr_psionics_endbringers_cult$ tradition\n£trigger_no£ No $building_chamber_of_silence$ building"
+ situation_breach_shroud_endbringers_cult_of_the_voice_needed_desc: "£trigger_no£ No $tr_psionics_endbringers_cult$ tradition\n£trigger_no£ No $building_chamber_of_silence$ building"
+ situation_breach_shroud_endbringers_chamber_of_silence_needed_desc: "£trigger_yes£ Has $tr_psionics_endbringers_cult$ tradition\n£trigger_no£ No $building_chamber_of_silence$ building"
 
  approach_situation_breach_shroud_endbringers_nothing: "$approach_situation_breach_shroud_nothing$"
  approach_situation_breach_shroud_endbringers_nothing_desc: "What will come, will come."
@@ -5547,7 +5599,7 @@
 
  trait_marked: "Marked"
  trait_marked_desc: "In a gruesome display of devotion, this species has branded its flesh with the mark of 'The End'. "
- trait_marked_unity_bonus: "£unity£ Produced per 100 £pops£ Pops : §G+0.06§!"
+ trait_marked_unity_bonus: "£unity£ Produced per 100 £pops£ Pops : §G+0.06§!"
 
  endbringers_sanity: "Sanity Amid Madness"
  endbringers_sanity_desc: "A powerful determination to maintain sanity keeps us from spiralling into the traps of madness."

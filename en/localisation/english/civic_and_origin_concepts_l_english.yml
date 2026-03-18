@@ -86,7 +86,7 @@
  concept_pc_nuked_desc: "- Base Habitability: §Y0%§!\n\n§L$pc_nuked_desc$§!"
 
  concept_survivor: "$trait_survivor$"
- concept_survivor_desc: "- Tomb World Habitability: §G+70%§!\n- Leader Lifespan: §G+10§! Years\n\n§L$trait_survivor_desc$§!"
+ concept_survivor_desc: "- Tomb World Habitability: §G+70%§!\n- Leader Lifespan: §G+10§! Years\n- $MOD_POP_HOUSING_USAGE_MULT$: §G-10%§!\n$MOD_POP_AMENITIES_USAGE_MULT$: §G-15%§!\n\n§L$trait_survivor_desc$§!"
 
  concept_robot_survivor: "$trait_robot_survivor$"
  concept_robot_survivor_desc: "- Tomb World Habitability: §G+70%§!\n- Leader Lifespan: §G+10§! Years\n\n§L$trait_robot_survivor_desc$§!"
@@ -237,8 +237,8 @@
 # Subterranean
  concept_cave_dweller: "$trait_cave_dweller$"
  concept_robot_cave_dweller: "$trait_robot_cave_dweller$"
- concept_cave_dweller_desc: "- $MOD_HABITABILITY_FLOOR_ADD$: §G50%§!\n- $mod_pop_miner_bonus_workforce_mult$: §G+15%§!\n- $MOD_SPECIES_EMPIRE_SIZE_MULT$: §R+10%§!\n- $MOD_BIO_LOGISTIC_GROWTH_MULT$: §R-20%§!\n\n§L$trait_cave_dweller_desc$§!"
- concept_robot_cave_dweller_desc: "- $MOD_HABITABILITY_FLOOR_ADD$: §G50%§!\n- $mod_pop_miner_bonus_workforce_mult$: §G+15%§!\n- $MOD_SPECIES_EMPIRE_SIZE_MULT$: §R+10%§!\n- $MOD_POP_ASSEMBLY_SPEED$: §R-20%§!\n\n§L$trait_robot_cave_dweller_desc$§!"
+ concept_cave_dweller_desc: "- $MOD_HABITABILITY_FLOOR_ADD$: §G50%§!\n- $mod_pop_miner_bonus_workforce_mult$: §G+15%§!\n- $MOD_SPECIES_EMPIRE_SIZE_MULT$: §R+10%§!\n- $MOD_BIO_LOGISTIC_GROWTH_MULT$: §R-10%§!\n\n§L$trait_cave_dweller_desc$§!"
+ concept_robot_cave_dweller_desc: "- $MOD_HABITABILITY_FLOOR_ADD$: §G50%§!\n- $mod_pop_miner_bonus_workforce_mult$: §G+15%§!\n- $MOD_SPECIES_EMPIRE_SIZE_MULT$: §R+10%§!\n- $MOD_POP_ASSEMBLY_SPEED$: §R-10%§!\n\n§L$trait_robot_cave_dweller_desc$§!"
 
  mod_mining_district_housing_add: "$MOD_PLANET_HOUSING_ADD$ from Mining Districts"
 
@@ -482,7 +482,7 @@
 # Lost Colony
 
  concept_colonial_spirit: "$colonial_spirit_mod$"
- concept_colonial_spirit_desc: "- $MOD_POP_HAPPINESS$: §G+10%§!\n- $MOD_PLANET_AMENITIES_MULT$: §G+15%§!\n- $mod_planet_jobs_produces_mult$: §G+15%§!\n- $MOD_POP_ENVIRONMENT_TOLERANCE$: §G+10%§!\n\n§L$colonial_spirit_mod_desc$§!"
+ concept_colonial_spirit_desc: "- $MOD_POP_HAPPINESS$: §G+10%§!\n- $MOD_FOUNDER_SPECIES_GROWTH_MULT$: §G+10%§!\n- $MOD_PLANET_AMENITIES_MULT$: §G+15%§!\n- $mod_planet_jobs_produces_mult$: §G+15%§!\n- $MOD_POP_ENVIRONMENT_TOLERANCE$: §G+10%§!\n\n§L$colonial_spirit_mod_desc$§!"
 
 # Necrophage
 
@@ -592,7 +592,7 @@
 
 # Primal Calling
  concept_untamed_wilds_mod: "$untamed_wilds$"
- concept_untamed_wilds_mod_desc: "- $MOD_PLANET_MAX_DISTRICTS_ADD$: §R$@untamed_wilds_districts|0$§!\n- $mod_planet_jobs_unity_produces_mult$: §G+15%§!\n- ['concept_ethic_based_jobs']: §G+100§!$TABBED_NEW_LINE$\t- per §Y20§! £pop£ §HPops§!: §G+1§!\n\n§L$untamed_wilds_desc$§!"
+ concept_untamed_wilds_mod_desc: "- $MOD_PLANET_MAX_DISTRICTS_ADD$: §R$@untamed_wilds_districts|0$§!\n- $mod_planet_jobs_unity_produces_mult$: §G+15%§!\n§L$untamed_wilds_desc$§!"
 
  concept_ethic_based_jobs: "Wrangler Jobs"
  concept_ethic_based_jobs_desc: "These Jobs are given depending on the Empire's stance towards Space Fauna.$TABBED_NEW_LINE$- ['concept_wrangler', £job_wrangler£ $job_wrangler$]$TABBED_NEW_LINE$- ['concept_rancher', £job_rancher£ $job_rancher$]$TABBED_NEW_LINE$- ['concept_trophy_hunter', £job_trophy_hunter£ $job_trophy_hunter$]$TABBED_NEW_LINE$- ['concept_animal_handler', £job_animal_handler£ $job_animal_handler$]$TABBED_NEW_LINE$- ['concept_beastfighter', £job_beastfighter£ $job_beastfighter$]"
@@ -666,7 +666,7 @@
 
 # Unplugged
  concept_cybernetic_traits: "Cybernetic"
- concept_cybernetic_traits_desc: "Cybernetic Traits provide specialized benefits compared to regular species traits at the cost of additional $r_energy$ upkeep."
+ concept_cybernetic_traits_desc: "Cybernetic Traits provide specialized benefits that can be used alongside Organic Traits."
 
 # Shroud-Forged
  concept_shroud_rift_deposit: "$d_shroud_rift_deposit$"

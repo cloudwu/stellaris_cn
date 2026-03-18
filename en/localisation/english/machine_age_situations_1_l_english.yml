@@ -23,7 +23,8 @@
 
  situation_cyberization_ongoing_desc: "Cyberization Ongoing"
  situation_cyberization_pause_desc: "Situation Paused"
- situation_augmentation_center_needed_desc: "£trigger_no£ No enabled $building_augmentation_center$"
+ situation_augmentation_center_needed_desc: "§R£trigger_no£No enabled £building£ $building_augmentation_center$!§!"
+ situation_augmentation_center_or_bazaar_needed_desc: "§R£trigger_no£No enabled £building£ $building_augmentation_center$ or £building£ $building_augmentation_bazaars$!§!"
  situation_tests_paused_tt: "Tests Paused"
  situation_destroyed_research_tt: "Destroyed Research"
  situation_repeal_taxes_tt: "Implant Taxes Repealed"
@@ -41,8 +42,8 @@
  situation_cyberization_triggered_modifier: "§Y$situation_cyberization$§! situation modifier added:\n"
  situation_cyberization_triggered_modifier_removed: "§Y$situation_cyberization$§! situation modifier removed:\n"
  augmentation_center_triggered_modifier: "§Y$building_augmentation_center$§! modifier added:\n"
- cyber_control_government_effects: "£unity£ Unity from £job£ Jobs: §G+10%§!"
- cyber_control_corporate_effects: "£consumer_goods£ Consumer Goods from £job£ Jobs: §G+10%§!"
+ cyber_control_government_effects: "£unity£ Unity from £job£ Jobs: §G+10%§!"
+ cyber_control_corporate_effects: "£consumer_goods£ Consumer Goods from £job£ Jobs: §G+10%§!"
  cyber_control_independent_effects: "Upkeep from £job£ Jobs: §G-5%§!"
 
 # Buildings
@@ -69,22 +70,21 @@
  job_augmentor_growth_effect_desc: "$job_augmentor_plural_with_icon$ provide $r_engineering$, $r_amenities$, and $m_pop_growth$"
  job_augmentor_merchant_effect_desc: "£job_augmentation_merchant£ $job_augmentation_merchant_plural$ turn £consumer_goods£ §Y$consumer_goods$§! into £unity£ §Y$unity$§!, £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!, and $r_trade$"
  mod_job_augmentor_add: "$job_augmentor$ Jobs"
- mod_job_augmentor_trade_add: "$mod_planet_augmentors_trade_produces_add$"
 
  planet_augmentors: "$job_augmentor$ Jobs"
- mod_planet_augmentors_upkeep_mult: "$job_augmentor_plural$ Upkeep"
 
  job_augmentor_drone: "Augmentor Drone"
  job_augmentor_drone_with_icon: "£job_augmentor_drone£ $job_augmentor_drone$"
  job_augmentor_drone_plural: "Augmentor Drones"
  job_augmentor_drone_plural_with_icon: "£job_augmentor_drone£ $job_augmentor_drone_plural$"
+ job_augmentor_drone_desc: "$job_augmentor_drone_research_desc$"
  job_augmentor_drone_research_desc: "$job_augmentor_drone_plural$ research and design cybernetic implants."
  job_augmentor_drone_research_effect_desc: "£job_augmentor£ $job_augmentor_drone_plural$ provide $r_engineering$ and $r_amenities$"
  job_augmentor_drone_assembly_desc: "$job_augmentor_drone_plural$ merge [Owner.Species.GetFleshTypeCyberCreed] and machine."
  job_augmentor_drone_assembly_effect_desc: "$job_augmentor_drone_plural_with_icon$ provide $r_engineering$, $r_amenities$, $m_pop_growth$, and $m_pop_assembly_organic$"
  mod_job_augmentor_drone_add: "$job_augmentor_drone$ Jobs"
  mod_job_augmentor_drone_per_pop: "§G+1§! $job_augmentor_drone$ Job per $VALUE$ Pops"
- mod_job_augmentor_drone_per_pop_short: "\n§G+1§! £mod_job_augmentor_drone_add£ per $VALUE$ £pop£"
+ mod_job_augmentor_drone_per_pop_short: "\n§G+1§! £mod_job_augmentor_drone_add£ per $VALUE$ £pop£"
 
  mod_planet_jobs_specialist_unity_produces_mult: "$pop_cat_specialist$ Unity Output"
  worker_unity_produces: "$pop_cat_worker$ Unity Output"
@@ -94,7 +94,7 @@
 
  job_cyberdome_duelist: "Hyper-Gladiator"
  job_cyberdome_duelist_plural: "Hyper-Gladiators"
- job_cyberdome_duelist_plural_with_icon: "£job_cyberdome_duelist£ $job_cyberdome_duelist_plural$"
+ job_cyberdome_duelist_plural_with_icon: "£job_cyberdome_duelist£ $job_cyberdome_duelist_plural$"
  job_cyberdome_duelist_desc: "$job_cyberdome_duelist_plural$ face off in the $building_cyberdome$, utilizing cutting-edge cybernetic implants."
  planet_job_cyberdome_duelist: "$job_cyberdome_duelist$ Jobs"
  mod_job_cyberdome_duelist_add: "$planet_job_cyberdome_duelist$"
@@ -104,7 +104,7 @@
 
  job_cyberdome_spectator: "Spectator"
  job_cyberdome_spectator_plural: "Spectators"
- job_cyberdome_spectator_plural_with_icon: "£job_cyberdome_spectator£ $job_cyberdome_spectator_plural$"
+ job_cyberdome_spectator_plural_with_icon: "£job_cyberdome_spectator£ $job_cyberdome_spectator_plural$"
  job_cyberdome_spectator_desc: "$job_cyberdome_spectator_plural$ enjoy games in the $building_cyberdome$. When witnessed via cyberbrain, even the cheapest seats provide a spectacle, but when neurocasting is enabled it's possible to experience gladiatorial combat in first person."
  planet_job_cyberdome_spectator: "$job_cyberdome_spectator$ Jobs"
  mod_job_cyberdome_spectator_add: "$planet_job_cyberdome_spectator$"
@@ -439,8 +439,8 @@
  futureshock_chain_title: "Future Shock"
  futureshock_chain_desc: "We refuse to settle for what nature provided, and instead strive to exceed the limits of the organic body. Our full-scale distribution of implants has encountered only minor issues, all of which can be easily resolved. The vast majority of the population is exhilarated by what their new cybernetics offer.\n\nWe truly stand on the precipice of greatness. What happens next remains to be seen."
 
- change_auth_tt: "Changes Authority: "
- keep_auth_tt: "Keeps Authority: "
+ change_auth_tt: "Changes Authority:"
+ keep_auth_tt: "Keeps Authority:"
  cyber_keep_auth_option: "Cyberization does not change who we are."
  unlock_edict_tt: "Unlocks Edict: "
  unlock_agenda_augmentation_product_launch: "Unlocks Agenda: §Y$council_agenda_agenda_augmentation_product_launch_name$§!"
@@ -465,7 +465,7 @@
 
 # OLIGARCHIC
  cyber_oligarchic_lifespan_tt: "Cyborg Councilor Lifespan: §G+40 Years§!"
- cyber_oligarchic_ruleroutput_tt: "Elite Resource Output per §Y100§! £pop£ §HSpecialist Pops§!: §G+1%§!"
+ cyber_oligarchic_ruleroutput_tt: "Elite Resource Output per §Y100§! £pop£ §HSpecialist Pops§!: §G+1%§! (Max. §G+20%§!)"
 # Cyber Oligarchic Individualist
  auth_cyber_oligarchic_individualist: "Oligarchic Overclocking"
  auth_cyber_oligarchic_individualist_desc: "Specialist biochips are remotely overclocked for increased production while the ruling strata reaps the benefits, allowing them to allocate more time to politics and leisure."
@@ -487,20 +487,20 @@
 
  energy_extortion_tt: "$extortion_tt_opener$ $r_energy$ $extortion_tt_finish$"
  minerals_extortion_tt: "$extortion_tt_opener$ $r_minerals$ $extortion_tt_finish$"
- food_extortion_tt: "$extortion_tt_opener$ $r_food$ (or $r_minerals$) $extortion_tt_finish$"
+ food_extortion_tt: "$extortion_tt_opener$ $r_food$ (or equivalent) $extortion_tt_finish$"
  alloys_extortion_tt: "$extortion_tt_opener$ $r_alloys$ $extortion_tt_finish$"
  consumer_goods_extortion_tt: "$extortion_tt_opener$ $r_consumer_goods$ $extortion_tt_finish$"
  physics_research_extortion_tt: "$extortion_tt_opener$ $r_physics$ $extortion_tt_finish$"
  society_research_extortion_tt: "$extortion_tt_opener$ $r_society$ $extortion_tt_finish$"
  engineering_research_extortion_tt: "$extortion_tt_opener$ $r_engineering$ $extortion_tt_finish$"
- crowdsourced_extortion_tt: "$extortion_tt_opener$ more £physics_research£ £society_research£ £engineering_research£ research."
- manifesti_crowdsourced_extortion_tt: "This faction might produce more £physics_research£ £society_research£ £engineering_research£ research."
+ crowdsourced_extortion_tt: "$extortion_tt_opener$ more £physics_research£ £society_research£ £engineering_research£ research."
+ manifesti_crowdsourced_extortion_tt: "This faction might produce more £physics_research£ £society_research£ £engineering_research£ research."
 
 # DICTATORIAL
 # Cyber Dictatorial Individualist
  auth_cyber_dictatorial_individualist: "Dictatorial Cybervision"
  auth_cyber_dictatorial_individualist_desc: "Mandatory implantation provides robust control and law enforcement tools, strengthening the regime's grip over its subjects. The colloquially named "dictator-chips" monitor their owners and alert the authorities automatically if trouble arises."
- auth_cyber_dictatorial_individualist_tt: "$unlock_edict_self_indictment_protocol$ $NEW_LINE$[enforcer.GetIcon] [enforcer.GetNamePlural] increase non-Enforcer $MOD_POP_BONUS_WORKFORCE_MULT$ by §G+2.5%§!"
+ auth_cyber_dictatorial_individualist_tt: "$unlock_edict_self_indictment_protocol$"
  gov_cyber_dictatorial_individualist: "$auth_cyber_dictatorial_individualist$"
  gov_cyber_dictatorial_individualist_desc: "$auth_cyber_dictatorial_individualist_desc$"
  concept_auth_cyber_dictatorial_individualist: "$auth_cyber_dictatorial_individualist$"
@@ -540,7 +540,7 @@
  concept_auth_cyber_dictatorial_collectivist_vacant: "$auth_cyber_dictatorial_collectivist$"
 
 # IMPERIAL
- auth_cyber_imperial_tt: "§Y£building£ Capital Buildings§! provide additional §Y£job_noble£ $job_noble$ Jobs§!\nHappiness Outside the Core Sector: §R-10%§!"
+ auth_cyber_imperial_tt: "£job_politician£ §Y$job_politician$§! Jobs are replaced with £job_noble£ §Y$job_noble$§! Jobs\n§Y£building£ Capital Buildings§! provide additional §Y£job_noble£ $job_noble$ Jobs§!\nHappiness Outside the Core Sector: §R-10%§!"
 
 # Cyber Imperial Individualist
  auth_cyber_imperial_individualist: "Imperial Chipset"
@@ -1227,7 +1227,7 @@
  gov_neural_chorus_desc: "Allowing for greater variance in thought and a wider range of emotional responses facilitates the creation of a 'Neural Chorus' - a great song of minds, as powerful as it is beautiful."
  auth_neural_chorus: "Neural Chorus"
  auth_neural_chorus_desc: "$gov_neural_chorus_desc$"
- auth_driven_neural_chorus_tt: "Cyborg Leader Starting Level: §G+1§!$NEW_LINE$Cyborg Leader Upkeep: §G-25%§! $NEW_LINE$£unity£ $unity$ from Cyborg Pops: §G+0.1§!"
+ auth_driven_neural_chorus_tt: "Cyborg Leader Starting Level: §G+1§!$NEW_LINE$Cyborg Leader Upkeep: §G-25%§! $NEW_LINE$£unity£ $unity$ from Cyborg Pops: §G+0.1§!"
  concept_auth_memory_aggregator: "$gov_memory_aggregator$"
  concept_auth_neural_chorus: "$gov_neural_chorus$"
  edict_aggregated_memory: "Aggregated Memory"

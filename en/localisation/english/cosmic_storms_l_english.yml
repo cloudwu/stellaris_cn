@@ -163,11 +163,11 @@
  MOD_COUNTRY_STORM_REPELLING_ADD: "Cosmic Storm Repulsion Effect"
  MOD_PLANET_STORM_DEVASTATION_MULT: "Planetary Cosmic Storm Devastation Reduction"
  MOD_STORM_SHIP_HULL_BREAKER_MULT: "Negative Effects from Cosmic Storms on Ship Defenses:"
- MOD_SHIP_HULL_STORM_BREAKER_1: "$MOD_STORM_SHIP_HULL_BREAKER_MULT$ §G-50%§!"
- MOD_SHIP_HULL_STORM_BREAKER_2: "$MOD_STORM_SHIP_HULL_BREAKER_MULT$ §G-100%§!"
+ MOD_SHIP_HULL_STORM_BREAKER_1: "$MOD_STORM_SHIP_HULL_BREAKER_MULT$ §G-45%§!"
+ MOD_SHIP_HULL_STORM_BREAKER_2: "$MOD_STORM_SHIP_HULL_BREAKER_MULT$ §G-90%§!"
  MOD_SHIP_STORM_WEAPONS_MULT: "Negative Effects from Cosmic Storms on Ship Weapons:"
- MOD_SHIP_STORM_WEAPONS_1: "$MOD_SHIP_STORM_WEAPONS_MULT$ §G-50%§!"
- MOD_SHIP_STORM_WEAPONS_2: "$MOD_SHIP_STORM_WEAPONS_MULT$ §G-100%§!"
+ MOD_SHIP_STORM_WEAPONS_1: "$MOD_SHIP_STORM_WEAPONS_MULT$ §G-45%§!"
+ MOD_SHIP_STORM_WEAPONS_2: "$MOD_SHIP_STORM_WEAPONS_MULT$ §G-90%§!"
  MOD_PLANETARY_STORM_SHIELD_MULT: "Planetary Cosmic Storm Devastation Effect Reduction: §G50%§!"
  MOD_STORM_REPELLENT_TIMED: "Cosmic Storm Repel Field Active for the Duration of: "
 
@@ -189,11 +189,11 @@
 
  building_storm_resistant_production: "Storm Relief Center"
  building_storm_resistant_production_desc: "This aid center assists local efforts to negate the impact of a cosmic storm on planetary production. Through efficient coordination and communication, the $building_storm_resistant_production$ allows for quick deployment of rescue teams, as well as improving the conditions for planet-wide trade."
- building_storm_resistant_production_tt: "Negative effects from §Y$default_storm$§! that affect planet production are reduced by §G25%§!.\n\nWhile a §Y$default_storm$§! is present:$TABBED_NEW_LINE$$mod_planet_miners_minerals_produces_add$: §G+1§! $TABBED_NEW_LINE$$mod_planet_farmers_food_produces_add$: §G+1§! $TABBED_NEW_LINE$$mod_planet_technician_energy_produces_add$: §G+1§! \n\nAllows Planetary Decision §Y$decision_hunker_down$§!"
+ building_storm_resistant_production_tt: "Negative effects from §Y$default_storm$§! that affect planet production are reduced by §G30%§!.\n\nWhile a §Y$default_storm$§! is present:$TABBED_NEW_LINE$$mod_planet_miners_minerals_produces_add$: §G+0.5§! $TABBED_NEW_LINE$$mod_planet_farmers_food_produces_add$: §G+0.5§! $TABBED_NEW_LINE$$mod_planet_technician_energy_produces_add$: §G+0.5§! \n\nAllows Planetary Decision §Y$decision_hunker_down$§!"
 
  building_advanced_storm_resistant_production: "Storm Nullifier"
  building_advanced_storm_resistant_production_desc: "By adding weather control systems to each $building_storm_resistant_production$, the negative effects of cosmic storms are significantly lessened. Additionally, rescue teams can be deployed even more efficiently and planetary trade is almost impervious to local weather conditions."
- building_advanced_storm_resistant_production_tt: "Negative effects from §Y$default_storm$§! that affect planet production are reduced by §G40%§!.\n\nWhile a §Y$default_storm$§! is present:$TABBED_NEW_LINE$$mod_planet_miners_minerals_produces_add$: §G+2§! $TABBED_NEW_LINE$$mod_planet_farmers_food_produces_add$: §G+2§! $TABBED_NEW_LINE$$mod_planet_technician_energy_produces_add$: §G+2§! \n\nAllows Planetary Decision §Y$decision_hunker_down$§!"
+ building_advanced_storm_resistant_production_tt: "Negative effects from §Y$default_storm$§! that affect planet production are reduced by §G45%§!.\n\nWhile a §Y$default_storm$§! is present:$TABBED_NEW_LINE$$mod_planet_miners_minerals_produces_add$: §G+1§! $TABBED_NEW_LINE$$mod_planet_farmers_food_produces_add$: §G+1§! $TABBED_NEW_LINE$$mod_planet_technician_energy_produces_add$: §G+1§! \n\nAllows Planetary Decision §Y$decision_hunker_down$§!"
 
  building_adakkaria_patriotic_institute: "Patriotic Institute of Celebration"
  building_adakkaria_patriotic_institute_desc: "The $building_adakkaria_patriotic_institute$ is a trove of advanced insights into the sentient condition. Here we empower people to cultivate their inner tempest while avoiding the luring song of the Convention's cruelty."
@@ -260,6 +260,11 @@
  job_storm_duelist_effect_desc: "[entertainer.GetIcon] [entertainer.GetNamePlural] turn $r_consumer_goods$ into $r_unity$ $r_amenities$, and £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!"
  job_storm_duelist_with_icon: "£job_storm_duelist£ $job_storm_duelist$"
  job_storm_duelist_plural_with_icon: "£job_storm_duelist£ $job_storm_duelist_plural$"
+
+ reenactor: "$job_reenactor$"
+ job_reenactor: "Historic Reenactor"
+ job_reenactor_plural: "Historic Reenactors"
+ job_reenactor_desc: "Part actor, part museum curator, part warrior, these specialists realize that the best way to understand the past is to experience it."
 
 # Triggers
  count_system_within_storm_trigger: "Number of systems within storm$CONDITIONS$ $IS_NOT$ $COMPARATOR$ $NUM|Y$"
@@ -432,7 +437,7 @@
 
  resolution_cosmic_storms_protection_initiative: "Storm Surveying Initiative"
  resolution_cosmic_storms_protection_initiative_desc: "It is time to be more proactive. Better innovation will help us to utilize the economic gains of the cosmic storms."
- resolution_cosmic_storms_protection_initiative_tooltip: "$output_from_storm_protection_buildings$ §G+10%§!\n\n$unity_from_storms$ §G+1§!\n\n$storm_tech_draw_chance$ §G+50%§!"
+ resolution_cosmic_storms_protection_initiative_tooltip: "$output_from_storm_protection_buildings$ §G+5%§!\n\n$unity_from_storms$ §G+1§!\n\n$storm_tech_draw_chance$ §G+50%§!"
 
  resolution_cosmic_storms_protection_initiative_repeal: "Repeal $resolution_cosmic_storms_protection_initiative$"
  resolution_cosmic_storms_protection_initiative_repeal_desc: "$resolution_space_weather_exploitation_repeal_desc$"
@@ -440,7 +445,7 @@
 
  resolution_cosmic_storms_galactic_management: "Galactic Storm Management"
  resolution_cosmic_storms_galactic_management_desc: "Weathering the cosmic storms has pushed us to increase our efficiency, but there is still so much more to be gained."
- resolution_cosmic_storms_galactic_management_tooltip: "$output_from_storm_protection_buildings$ §G+20%§! \n\n$storm_tech_cost$ §G-50%§! \n\n$storm_tech_draw_chance$ §G+75%§! \n\n$unity_from_storms$ §G+2§!"
+ resolution_cosmic_storms_galactic_management_tooltip: "$output_from_storm_protection_buildings$ §G+10%§! \n\n$storm_tech_cost$ §G-50%§! \n\n$storm_tech_draw_chance$ §G+75%§! \n\n$unity_from_storms$ §G+2§!"
 
  resolution_cosmic_storms_galactic_management_repeal: "Repeal $resolution_cosmic_storms_galactic_management$"
  resolution_cosmic_storms_galactic_management_repeal_desc: "$resolution_space_weather_exploitation_repeal_desc$"
@@ -448,7 +453,7 @@
 
  resolution_cosmic_storms_utilization_protocols: "Storm Utilization Protocols"
  resolution_cosmic_storms_utilization_protocols_desc: "It is no longer responsible for any of us to go without cosmic storm protection, and equally foolish not to take advantage of what the storms can offer."
- resolution_cosmic_storms_utilization_protocols_tooltip: "$output_from_storm_protection_buildings$ §G+20%§! \n\n$storm_tech_draw_guaranteed$\n\n$unity_from_storms$ §G+2§!\n\n$breach_galactic_law_intro$$TABBED_NEW_LINE$- Ships Without §YCosmic Storm Protection§!"
+ resolution_cosmic_storms_utilization_protocols_tooltip: "$output_from_storm_protection_buildings$ §G+10%§! \n\n$storm_tech_draw_guaranteed$\n\n$unity_from_storms$ §G+2§!\n\n$breach_galactic_law_intro$$TABBED_NEW_LINE$- Ships Without §YCosmic Storm Protection§!"
 
  resolution_cosmic_storms_utilization_protocols_repeal: "Repeal $resolution_cosmic_storms_utilization_protocols$"
  resolution_cosmic_storms_utilization_protocols_repeal_desc: "$resolution_space_weather_exploitation_repeal_desc$"
@@ -456,7 +461,7 @@
 
  resolution_cosmic_storms_manipulation_mandate: "Storm Manipulation Mandate"
  resolution_cosmic_storms_manipulation_mandate_desc: "We are called to dominate the cosmic storms. These forces of nature were meant to serve us."
- resolution_cosmic_storms_manipulation_mandate_tooltip: "$output_from_storm_protection_buildings$ §G+30%§! \n\n$storm_tech_cost$ §G-80%§!\n\n$storm_tech_draw_guaranteed$\n\n$unity_from_storms$ §G+3§!\n\n$breach_galactic_law_intro$$TABBED_NEW_LINE$- Ships Without §YCosmic Storm Protection§!$TABBED_NEW_LINE$- Planets Without §YCosmic Storm Buildings§!"
+ resolution_cosmic_storms_manipulation_mandate_tooltip: "$output_from_storm_protection_buildings$ §G+15%§! \n\n$storm_tech_cost$ §G-80%§!\n\n$storm_tech_draw_guaranteed$\n\n$unity_from_storms$ §G+3§!\n\n$breach_galactic_law_intro$$TABBED_NEW_LINE$- Ships Without §YCosmic Storm Protection§!$TABBED_NEW_LINE$- Planets Without §YCosmic Storm Buildings§!"
 
  resolution_cosmic_storms_manipulation_mandate_repeal: "Repeal $resolution_cosmic_storms_manipulation_mandate$"
  resolution_cosmic_storms_manipulation_mandate_repeal_desc: "$resolution_space_weather_exploitation_repeal_desc$"
@@ -1280,7 +1285,7 @@
 
  origin_storm_chasers: "Storm Chasers"
  origin_storm_chasers_desc: "There is no challenge they will not face, no lead they'll fail to chase - and no storm they will ignore.\n\nAt its core, this is a civilization seeking thrills. To its benefit, and to its detriment."
- origin_tooltip_storm_chasers_effects: "- $LEADERS_TRAITS$ ['concept_storm_rider']\n- Planet $mod_planet_jobs_unity_produces_mult$ per §YStorm Building§!: §G+$@storm_chasers_storm_building_unity_produces_mult|%0$§! \n- §Y$default_storm$§! Appearance Chance Within Borders: §G+100%§! \n- §YCosmic Storm Technology§! Research Option Chance: §G+175%§!\n- Access to the ['concept_weather_forecasting_mode']\n- $ADDITIONAL_TECHNOLOGIES_STRING$$TABBED_NEW_LINE$- £physics£ ['technology:tech_storm_prediction_1']"
+ origin_tooltip_storm_chasers_effects: "- $LEADERS_TRAITS$ ['concept_storm_rider']\n- Planet $mod_planet_jobs_unity_produces_mult$ per §YStorm Building§!: §G+$@storm_chasers_storm_building_unity_produces_mult|%0$§!\n- Capital Buildings automatically provide the modifiers of §YStorm Shelters§! once the required technologies are researched. \n- §Y$default_storm$§! Appearance Chance Within Borders: §G+100%§! \n- §YCosmic Storm Technology§! Research Option Chance: §G+175%§!\n- Access to the ['concept_weather_forecasting_mode']\n- $ADDITIONAL_TECHNOLOGIES_STRING$$TABBED_NEW_LINE$- £physics£ ['technology:tech_storm_prediction_1']"
 
  START_SCREEN_STORM_CHASERS: "What's life without the rush? Burn fast and die radically - that's always been our way. But when every trail is blazed and even the tallest peak is scaled, what next?\n\nOur planet has always been a stormy one, prone to tempests and deluges of all kinds. If we find ways to use these unique conditions, we have a chance to summon a raging cosmic storm.\n\nOur legendary forebears long since mastered the challenges of our homeworld. The time has come to blast off screaming into the void. It will not be easy, but as the old saying goes, "Only the bold can reach the horizon.""
 
@@ -1609,7 +1614,7 @@
  obsidian_lakes: "Obsidian Lakes"
  obsidian_lakes_desc: "Tectonic activity has caused magma lakes to cool into enormous sheets of obsidian, bringing valuable resources much closer to the surface."
  obsidian_lakes_volcanic: "$obsidian_lakes$"
- obsidian_lakes_volcanic_desc: "$obsidian_lakes_desc$"                                         
+ obsidian_lakes_volcanic_desc: "$obsidian_lakes_desc$"
  crimson_crawlers: "Crimson Crawlers"
  crimson_crawlers_tt: "§R$COLONIZATION_IMPOSSIBLE_CRIMSON_CRAWLERS$§!"
  crimson_crawlers_desc: "The planet's surface is a carpet of crimson due to the presence of trillions of tiny red insects. Despite their incredible numbers, they appear harmless, and have managed to establish a tenuous balance within the planet's ecosystem."
@@ -1892,10 +1897,11 @@
  cstorms.1735.desc: "The residual radiation from the recent §Y[this.GetAffectedStormType]§! has led to erratic geological activity across §H[this.GetName]§!.\n\nMost notably, the impact of the storm has rendered an active volcano extinct, cutting it off from its geological hotspot and severing the supply of magma.\n\nThese changes present us with new opportunities to develop the planet further, as the cooling magma opens up new lands."
 
 # Mountain in the Sky
- d_sky_mountain: "Mountain in the Sky"
- d_sky_mountain_desc: "A colossal mountain hangs suspended in the thin air of the planet's upper atmosphere, exposing fresh ore deposits."
+ d_sky_mountain: "Mountains in the Sky"
+ d_sky_mountain_desc: "A colossal mountain range hangs suspended in the thin air of the planet's upper atmosphere, exposing fresh ore deposits."
+ unlocks_zone_minerals_physics: "$t$Unlocks District Specialization: §Y$zone_minerals_physics$§!"
  cstorms.1745.name: "$d_sky_mountain$"
- cstorms.1745.desc: "A severe §Y$gravity_storm$§! caused an extraordinary transformation of §H[this.GetName]§!'s landscape. The storm's powerful gravitational fluctuations severed the planet's largest mountain from its tectonic shelf, lifting it vertically above the planet.\n\nIt remains suspended in the upper atmosphere, held aloft by a residual gravitational effect of the storm. This remarkable upheaval has exposed previously inaccessible ore reserves in the bedrock underneath, as well as providing [owner.GetResearchers] with much to analyze."
+ cstorms.1745.desc: "A severe §Y$gravity_storm$§! caused an extraordinary transformation of §H[this.GetName]§!'s landscape. The storm's powerful gravitational fluctuations severed the planet's largest mountain range from its tectonic shelf, lifting it vertically above the planet.\n\nIt remains suspended in the upper atmosphere, held aloft by a residual gravitational effect of the storm. This remarkable upheaval has exposed previously inaccessible ore reserves in the bedrock underneath, as well as providing [owner.GetResearchers] with much to analyze."
 
 # Melting Glaciers
  cstorms.1755.name: "Melting Glaciers"
@@ -2229,3 +2235,8 @@
  job_visionary: "Tech Visionary"
  job_visionary_plural: "Tech Visionaries"
  job_visionary_desc: "Unfettered by precedent and unburdened by humility, these dreamers of tomorrow transmute bold speculation into marketable reality. To a true visionary, progress is not merely a principle; it is a product."
+
+ noble_merchant: "$job_noble_merchant$"
+ job_noble_merchant: "Patrician"
+ job_noble_merchant_plural: "Patricians"
+ job_noble_merchant_desc: "The right to rule is determined not by inheritance, but by the measure of one's worth; and how better to measure your worth than by the sum total of the balance sheet?"
